@@ -940,6 +940,10 @@ function StaticList($source, $fixed) {
         if (P $r 'term')  { $html += '<span class="tag">' + (E (P $r 'term')) + ' term</span>' }
         if (P $r 'year')  { $html += '<span class="tag tag--year">' + (E (P $r 'year')) + '</span>' }
         if ((P $r 'answers') -eq 'yes') { $html += '<span class="tag tag--answers">Answers included</span>' }
+        # Only set on papers whose first page somebody has actually looked at.
+        if ((P $r 'clearScan') -eq 'yes') {
+            $html += '<span class="tag tag--clear" title="The first page of this PDF was checked on screen: straight, sharp, complete, and with no student name on it.">Clear scan</span>'
+        }
         $html += '</div><h3>'
         if ($target) {
             $e = ''

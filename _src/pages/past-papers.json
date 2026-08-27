@@ -28,9 +28,28 @@
         },
         {
           "type": "browse",
-          "heading": "Search and filter all papers",
+          "heading": "One clear paper from each grade",
           "source": "papers",
-          "filters": ["subject", "grade", "term", "year", "province", "sourceType", "type", "answers", "medium"]
+          "fixed": { "clearScan": "yes" },
+          "filters": ["grade", "term", "year", "province"],
+          "note": "Somebody opened each of these PDFs and looked at the first page before it was listed."
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What the “Clear scan” label means",
+          "text": [
+            "The papers above carry a **Clear scan** label. It is given only after a person has opened the PDF and looked at the first page on screen, and seen that it is straight, sharp, complete, printed rather than handwritten, and carries **no student name**.",
+            "It is not awarded because the text copies out neatly. That test proved misleading: two Grade 10 papers read perfectly as text, yet one is visibly tilted and the other has *Teacher Copy* written across it by hand. Both are still in the collection, and neither carries the label.",
+            "Every other paper on the site is still worth using. It simply has not been through that check yet."
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Search and filter every paper",
+          "source": "papers",
+          "filters": ["subject", "grade", "term", "year", "province", "sourceType", "type", "answers", "clearScan"],
+          "note": "The whole collection, including every Grade 10 paper."
         },
         {
           "type": "cards",

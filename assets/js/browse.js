@@ -19,7 +19,6 @@ import {
   esc,
   safeHref,
   loadData,
-  el,
   countLabel,
   optionsFrom,
   matchesFilters,
@@ -42,6 +41,7 @@ const LABELS = {
   province: "Province or zone",
   sourceType: "Set by",
   answers: "Answers available",
+  clearScan: "Scan quality",
   medium: "Medium",
   source: "Source",
   modelAnswers: "Model answers",
@@ -67,6 +67,7 @@ const VALUE_LABELS = {
     school: "A single school"
   },
   answers: { yes: "With answers", no: "Question paper only" },
+  clearScan: { yes: "Checked clear scans only" },
   term: { first: "First term", second: "Second term", third: "Third term" }
 };
 
@@ -118,6 +119,11 @@ function renderResult(record) {
   if (record.year) tags.push(`<span class="tag tag--year">${esc(record.year)}</span>`);
   if (record.paper) tags.push(`<span class="tag">Paper ${esc(record.paper)}</span>`);
   if (record.answers === "yes") tags.push(`<span class="tag tag--answers">Answers included</span>`);
+  // Only set on papers whose first page somebody has actually looked at.
+  if (record.clearScan === "yes")
+    tags.push(
+      `<span class="tag tag--clear" title="The first page of this PDF was checked on screen: straight, sharp, complete, and with no student name on it.">Clear scan</span>`
+    );
   if (record.medium) tags.push(`<span class="tag">${esc(humanise(record.medium))}</span>`);
 
   // "Set by" says whether a provincial department, a zonal office or a single
@@ -211,9 +217,17 @@ function emptyState(hasRecords) {
 
 /* -------------------------------------------------------------- browser */
 
+/* A page may hold more than one browser - for example a short "clear scans"
+   list above the full collection. Each needs its own control ids, or the
+   second browser's listeners bind to the first one's selects for every filter
+   key the two have in common, and those filters silently stop working. */
+let browserCount = 0;
+
 function setUpBrowser(container) {
   const source = container.getAttribute("data-source");
   if (!source) return;
+
+  const uid = "browse-" + ++browserCount;
 
   const fixed = JSON.parse(container.getAttribute("data-fixed") || "{}");
   const filterKeys = (container.getAttribute("data-filters") || "")
@@ -258,8 +272,8 @@ function setUpBrowser(container) {
 
     const search = `
       <div class="field">
-        <label for="browse-q">Search these resources</label>
-        <input type="search" id="browse-q" name="q" placeholder="Title, year or keyword" autocomplete="off">
+        <label for="${uid}-q">Search these resources</label>
+        <input type="search" id="${uid}-q" name="q" placeholder="Title, year or keyword" autocomplete="off">
       </div>`;
 
     const selects = filterKeys
@@ -271,8 +285,8 @@ function setUpBrowser(container) {
           .join("");
         return `
           <div class="field">
-            <label for="browse-${esc(key)}">${esc(LABELS[key] || humanise(key))}</label>
-            <select id="browse-${esc(key)}" name="${esc(key)}">
+            <label for="${uid}-${esc(key)}">${esc(LABELS[key] || humanise(key))}</label>
+            <select id="${uid}-${esc(key)}" name="${esc(key)}">
               <option value="">All</option>
               ${options}
             </select>
@@ -290,7 +304,8 @@ function setUpBrowser(container) {
         </div>
       </div>`;
 
-    const qInput = el("browse-q");
+    // Scoped to this browser's own controls, never document-wide.
+    const qInput = controlsNode.querySelector('input[name="q"]');
     if (qInput) {
       qInput.value = state.q || "";
       let timer = null;
@@ -304,7 +319,7 @@ function setUpBrowser(container) {
     }
 
     filterKeys.forEach((key) => {
-      const select = el(`browse-${key}`);
+      const select = controlsNode.querySelector(`select[name="${key}"]`);
       if (!select) return;
       if (state[key]) select.value = state[key];
       select.addEventListener("change", () => {
