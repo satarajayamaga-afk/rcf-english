@@ -33,18 +33,48 @@ import {
 const LABELS = {
   subject: "Subject",
   examination: "Examination",
+  grade: "Grade",
   level: "Grade or level",
   year: "Year",
   term: "Term",
   paper: "Paper number",
   type: "Resource type",
+  province: "Province or zone",
+  sourceType: "Set by",
+  answers: "Answers available",
   medium: "Medium",
   source: "Source",
+  modelAnswers: "Model answers",
   category: "Category",
   skill: "Skill",
   duration: "Lesson length",
   learnerLevel: "Learner level"
 };
+
+/* Values whose plain humanise() reading would be wrong or ugly. humanise()
+   would turn "ol-english" into "Ol English" and "provincial" into a bare word
+   that does not say what it means. */
+const VALUE_LABELS = {
+  subject: {
+    "ol-english": "O/L English",
+    "ol-literature": "O/L Literature",
+    "al-literature": "A/L Literature",
+    "general-english": "General English"
+  },
+  sourceType: {
+    provincial: "Provincial department",
+    zonal: "Zonal or divisional office",
+    school: "A single school"
+  },
+  answers: { yes: "With answers", no: "Question paper only" },
+  term: { first: "First term", second: "Second term", third: "Third term" }
+};
+
+function valueLabel(key, value) {
+  const map = VALUE_LABELS[key];
+  if (map && map[value]) return map[value];
+  return humanise(value);
+}
 
 const TYPE_LABELS = {
   lesson: "Lesson",
@@ -84,32 +114,64 @@ function renderResult(record) {
   const tags = [];
   if (record.type) tags.push(`<span class="tag tag--type">${esc(typeLabel(record.type))}</span>`);
   if (record.level) tags.push(`<span class="tag tag--level">${esc(humanise(record.level))}</span>`);
+  if (record.term) tags.push(`<span class="tag">${esc(valueLabel("term", record.term))}</span>`);
   if (record.year) tags.push(`<span class="tag tag--year">${esc(record.year)}</span>`);
   if (record.paper) tags.push(`<span class="tag">Paper ${esc(record.paper)}</span>`);
+  if (record.answers === "yes") tags.push(`<span class="tag tag--answers">Answers included</span>`);
   if (record.medium) tags.push(`<span class="tag">${esc(humanise(record.medium))}</span>`);
 
+  // "Set by" says whether a provincial department, a zonal office or a single
+  // school produced the paper. It is never RCF English.
+  const SET_BY = { provincial: "A provincial department", zonal: "A zonal or divisional office", school: "A school" };
+
   const meta = [];
-  if (record.subject) meta.push(`Subject: ${esc(humanise(record.subject))}`);
-  if (record.examination) meta.push(`Examination: ${esc(humanise(record.examination))}`);
-  if (record.source) meta.push(`Source: ${esc(record.source)}`);
-  if (record.fileSize) meta.push(`File size: ${esc(record.fileSize)}`);
+  if (record.subject) meta.push(`Subject: ${esc(valueLabel("subject", record.subject))}`);
+  if (record.province) meta.push(`Province or zone: ${esc(record.province)}`);
+  if (record.sourceType) meta.push(`Set by: ${esc(SET_BY[record.sourceType] || humanise(record.sourceType))}`);
+  if (record.source) meta.push(`Printed on the paper: ${esc(record.source)}`);
+  if (record.pages) meta.push(`Pages: ${esc(record.pages)}`);
+  if (record.fileSize) meta.push(`PDF, ${esc(record.fileSize)}`);
   if (record.updated) meta.push(`Updated: ${esc(formatDate(record.updated))}`);
 
   const actions = [];
   if (href) {
     actions.push(
-      `<a class="btn btn--sm btn--primary${external ? " ext" : ""}" href="${esc(href)}"${
+      `<a class="btn btn--sm btn--outline${external ? " ext" : ""}" href="${esc(href)}"${
         external ? ' target="_blank" rel="noopener"' : ""
-      }>${external ? "Open on the official site" : "Open resource"}</a>`
+      }>${external ? "View the paper" : "Open resource"}</a>`
+    );
+  }
+  // The download link goes straight to the PDF. The papers live in Google
+  // Drive, not in this repository, so this always leaves the site.
+  const dl = safeHref(record.download || "");
+  if (dl) {
+    actions.push(
+      `<a class="btn btn--sm btn--primary ext" href="${esc(dl)}" target="_blank" rel="noopener">Download PDF</a>`
     );
   }
   if (record.markingScheme) {
     const ms = safeHref(record.markingScheme);
-    if (ms) actions.push(`<a class="btn btn--sm btn--outline" href="${esc(ms)}">Marking scheme</a>`);
+    if (ms) {
+      const msExt = /^https?:/i.test(ms);
+      actions.push(
+        `<a class="btn btn--sm btn--outline${msExt ? " ext" : ""}" href="${esc(ms)}"${
+          msExt ? ' target="_blank" rel="noopener"' : ""
+        }>Marking scheme</a>`
+      );
+    }
   }
-  if (record.answers) {
-    const ans = safeHref(record.answers);
-    if (ans) actions.push(`<a class="btn btn--sm btn--outline" href="${esc(ans)}">Model answers</a>`);
+  // "answers" is a yes/no flag used by the filter. The link to a separate
+  // model-answer document, when there is one, lives in "modelAnswers".
+  if (record.modelAnswers) {
+    const ans = safeHref(record.modelAnswers);
+    if (ans) {
+      const ansExt = /^https?:/i.test(ans);
+      actions.push(
+        `<a class="btn btn--sm btn--outline${ansExt ? " ext" : ""}" href="${esc(ans)}"${
+          ansExt ? ' target="_blank" rel="noopener"' : ""
+        }>Model answers</a>`
+      );
+    }
   }
 
   const copyright = record.copyright
@@ -205,7 +267,7 @@ function setUpBrowser(container) {
         const values = optionsFrom(records, key);
         if (!values.length) return "";
         const options = values
-          .map((value) => `<option value="${esc(value)}">${esc(humanise(value))}</option>`)
+          .map((value) => `<option value="${esc(value)}">${esc(valueLabel(key, value))}</option>`)
           .join("");
         return `
           <div class="field">

@@ -30,7 +30,7 @@
           "type": "browse",
           "heading": "Search and filter all papers",
           "source": "papers",
-          "filters": ["subject", "examination", "level", "year", "term", "paper", "type", "medium", "source"]
+          "filters": ["subject", "grade", "term", "year", "province", "sourceType", "type", "answers", "medium"]
         },
         {
           "type": "cards",
@@ -69,6 +69,65 @@
       ]
     },
 
+    {
+      "slug": "past-papers/grade-10",
+      "title": "Grade 10 Papers",
+      "metaTitle": "Grade 10 English and Literature past papers | Past Papers | RCF English",
+      "description": "Grade 10 English Language and English Literature term test papers from provincial departments, zonal offices and schools, with filters for term, year, province or zone, source and marking schemes.",
+      "keywords": "grade 10 english papers, grade 10 literature papers, term test papers, provincial papers, marking schemes",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "scripts": ["browse"],
+      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
+      "backTo": { "label": "Past Papers", "url": "past-papers/" },
+      "hero": {
+        "text": "Grade 10 English Language and English Literature term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
+        "buttons": [
+          { "label": "How to use past papers well", "url": "past-papers/how-to-use/", "style": "btn--accent" },
+          { "label": "Copyright policy", "url": "copyright-policy/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this collection actually contains",
+          "text": [
+            "**The papers are heavily weighted to 2019.** That is the shape of the collection, not a gap in the filtering. Most of the papers gathered so far come from 2018 and 2019, and **there are no 2023 papers at all**. A few recent papers are included, and they are generally the clearest scans.",
+            "**The files are not stored on this website.** Each paper opens in Google Drive. *View the paper* reads it in your browser; *Download PDF* saves it. Nothing is copied onto this site.",
+            "**More papers are still being checked.** A paper is added only after somebody has opened the file and confirmed what is in it, so this list grows slowly and will keep growing."
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Grade 10 papers",
+          "source": "papers",
+          "fixed": { "grade": "10" },
+          "filters": ["subject", "term", "year", "province", "sourceType", "type", "answers"],
+          "note": "Every paper listed here was opened and checked before it was added."
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who set these papers",
+          "text": [
+            "These papers were set by **provincial departments of education, zonal and divisional offices, and schools**. The body printed on each paper is recorded on its card. **RCF English did not create any of them** and does not claim to.",
+            "Papers produced by private institutes, academies, tuition classes and publishers are deliberately **not** listed. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare before you practise",
+          "variant": "tint",
+          "items": [
+            { "title": "Grammar", "text": "Revise the structures these papers test before you sit one.", "url": "ol-english/grammar/" },
+            { "title": "Writing tasks", "text": "Every writing task in the paper, taught in six guided steps.", "url": "ol-english/guided-writing/" },
+            { "title": "Reading comprehension", "text": "How to work through the reading passages under time.", "url": "ol-english/reading-comprehension/" },
+            { "title": "How to use past papers", "text": "Getting real value from a paper instead of just finishing it.", "url": "past-papers/how-to-use/" }
+          ]
+        }
+      ]
+    },
     {
       "slug": "past-papers/how-to-use",
       "title": "How to Use Past Papers",

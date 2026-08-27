@@ -166,12 +166,50 @@ An official marking scheme belongs to the body that produced it.
 
 ## School and provincial papers
 
-A term-test paper belongs to the school or the teacher who set it.
+A term-test paper belongs to the body that set it — a provincial department, a
+zonal or divisional office, or a school.
 
-- Publish it only with permission from someone entitled to give it.
-- When a teacher offers their school's papers, ask them to confirm that they are
-  entitled to give that permission. Most are; some are not, and it is a fair question
-  that protects them as well as the site.
+### The decision that governs the Past Papers section
+
+Sri Lankan provincial and zonal papers almost always carry **"All Rights
+Reserved"** printed on them, in Sinhala, Tamil and English. They also circulate
+openly on educational websites across the country.
+
+R. C. Fernando has decided that this site may list papers set by a **provincial
+department, a zonal or divisional office, or a school**, on these conditions:
+
+- The site **links** to the file in Google Drive. It never hosts a copy, and no
+  PDF is committed to this repository.
+- The body printed on the paper is **recorded on the paper's card**, exactly as
+  printed.
+- The site **never** describes a provincial, zonal or school paper as something
+  RCF English created.
+
+This is a considered decision about a real and low risk, not a claim that
+permission has been granted. Linking to a file is a lighter act than
+republishing one. If a department ever objects, remove the paper at once and
+follow *If a complaint arrives* below.
+
+### Private institutes are excluded
+
+Papers produced by **private institutes, academies, tuition classes and
+publishers must not be listed at all.** They are commercial products and the
+argument above does not apply to them.
+
+**The publisher is rarely in the filename.** Files named "Thondamannaru
+Division" turned out to be *Thondamanaru Thanu Publications*, a commercial
+publisher whose name appears only on the page itself — and which reprints
+provincial papers in paid compilations. **Every paper must be opened and read
+before it is added.** A filename search is not enough.
+
+Excluded on this ground so far: Thondamanaru Thanu Publications, Oxford
+Publications, Oxford International, Panacea English Class, Sumex mock papers,
+CEETS Center and Colombo Resource Center.
+
+### When a teacher offers a school's papers
+
+- Ask them to confirm they are entitled to give that permission. Most are; some
+  are not, and it is a fair question that protects them as well as the site.
 - Record who gave permission and when.
 
 ---

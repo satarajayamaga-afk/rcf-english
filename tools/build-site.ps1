@@ -937,7 +937,9 @@ function StaticList($source, $fixed) {
         $html += '<li class="result"><span class="result__thumb" aria-hidden="true">' + (E (TypeLabel (P $r 'type'))) + '</span><div><div class="tag-row">'
         $html += '<span class="tag tag--type">' + (E (TypeLabel (P $r 'type'))) + '</span>'
         if (P $r 'level') { $html += '<span class="tag tag--level">' + (E (P $r 'level')) + '</span>' }
-        if (P $r 'year') { $html += '<span class="tag tag--year">' + (E (P $r 'year')) + '</span>' }
+        if (P $r 'term')  { $html += '<span class="tag">' + (E (P $r 'term')) + ' term</span>' }
+        if (P $r 'year')  { $html += '<span class="tag tag--year">' + (E (P $r 'year')) + '</span>' }
+        if ((P $r 'answers') -eq 'yes') { $html += '<span class="tag tag--answers">Answers included</span>' }
         $html += '</div><h3>'
         if ($target) {
             $e = ''
@@ -947,6 +949,50 @@ function StaticList($source, $fixed) {
         else { $html += (E (P $r 'title')) }
         $html += '</h3>'
         if (P $r 'description') { $html += '<p>' + (E (P $r 'description')) + '</p>' }
+
+        # Where the paper came from, how big it is, and how many pages if counted.
+        $meta = @()
+        if (P $r 'province')   { $meta += 'Province or zone: ' + (E (P $r 'province')) }
+        if (P $r 'sourceType') {
+            $setBy = switch ([string](P $r 'sourceType')) {
+                'provincial' { 'A provincial department' }
+                'zonal'      { 'A zonal or divisional office' }
+                'school'     { 'A school' }
+                default      { [string](P $r 'sourceType') }
+            }
+            $meta += 'Set by: ' + (E $setBy)
+        }
+        if (P $r 'source')   { $meta += 'Printed on the paper: ' + (E (P $r 'source')) }
+        if (P $r 'pages')    { $meta += 'Pages: ' + (E (P $r 'pages')) }
+        if (P $r 'fileSize') { $meta += 'PDF, ' + (E (P $r 'fileSize')) }
+        if ($meta.Count -gt 0) {
+            $html += '<div class="result__meta">'
+            foreach ($m in $meta) { $html += '<span>' + $m + '</span>' }
+            $html += '</div>'
+        }
+
+        $actions = @()
+        if ($target) {
+            $e = ''
+            if ($isExt) { $e = ' target="_blank" rel="noopener"' }
+            $cls = 'btn btn--sm btn--outline'
+            if ($isExt) { $cls += ' ext' }
+            $actions += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>View the paper</a>'
+        }
+        if (P $r 'download') {
+            $actions += '<a class="btn btn--sm btn--primary ext" href="' + (E (P $r 'download')) + '" target="_blank" rel="noopener">Download PDF</a>'
+        }
+        if (P $r 'markingScheme') {
+            $ms = [string](P $r 'markingScheme')
+            $msE = ''
+            $msCls = 'btn btn--sm btn--outline'
+            if ($ms -match '^https?:') { $msE = ' target="_blank" rel="noopener"'; $msCls += ' ext' }
+            $actions += '<a class="' + $msCls + '" href="' + (E (Url $ms)) + '"' + $msE + '>Marking scheme</a>'
+        }
+        if ($actions.Count -gt 0) {
+            $html += '<div class="result__actions">' + ($actions -join '') + '</div>'
+        }
+
         if (P $r 'copyright') { $html += '<p class="text-small text-muted mb-0">Copyright status: ' + (E (P $r 'copyright')) + '</p>' }
         $html += '</div></li>'
     }

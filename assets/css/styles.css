@@ -1092,6 +1092,8 @@ a:hover { color: var(--teal-700); }
 .tag--type { background: var(--navy-050); border-color: var(--navy-100); color: var(--navy-700); }
 .tag--level { background: var(--teal-050); border-color: var(--teal-100); color: var(--teal-800); }
 .tag--year { background: var(--gold-100); border-color: #efdcae; color: var(--gold-800); }
+/* A paper that comes with its marking scheme or answer key. */
+.tag--answers { background: var(--ok-100); border-color: #b6ded2; color: var(--ok-700); }
 
 /* Numbered feature list, e.g. the five-stage learning approach */
 .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; display: grid; gap: var(--sp-4); }
