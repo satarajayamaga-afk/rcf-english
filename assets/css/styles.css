@@ -338,6 +338,23 @@ a:hover { color: var(--teal-700); }
   gap: var(--sp-3);
 }
 
+/* Equal columns rather than a flex row, so three buttons never fall into a
+   lopsided two-plus-one arrangement. Stacked full width on a phone, then all
+   the same width and height side by side. */
+.btn-row--even {
+  display: grid;
+  gap: var(--sp-3);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px) {
+  .btn-row--even { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.btn-row--even .btn {
+  width: 100%;
+  text-align: center;
+  padding-inline: 0.9rem;
+}
+
 /* External link marker - never colour alone */
 .ext::after {
   content: "";
@@ -875,13 +892,75 @@ a:hover { color: var(--teal-700); }
   background: radial-gradient(circle, rgba(14, 124, 102, 0.36) 0%, rgba(14, 124, 102, 0) 68%);
   pointer-events: none;
 }
+/* Two columns from 980px up, so the right-hand side carries something useful
+   instead of sitting empty. One column below that. */
 .hero__inner {
   position: relative;
   z-index: 1;
   padding-block: var(--sp-7) var(--sp-8);
-  max-width: 62ch;
+  display: grid;
+  gap: var(--sp-6);
+  align-items: center;
 }
-@media (min-width: 900px) { .hero__inner { padding-block: var(--sp-8) var(--sp-9); } }
+.hero__main { max-width: 62ch; }
+
+@media (min-width: 980px) {
+  .hero__inner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(19rem, 0.85fr);
+    gap: var(--sp-7);
+    padding-block: var(--sp-8) var(--sp-9);
+  }
+}
+
+.hero__aside {
+  padding: var(--sp-5);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(2px);
+}
+.hero__aside-title {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+  margin-bottom: var(--sp-3);
+}
+.hero__aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-2);
+}
+.hero__aside li {
+  position: relative;
+  margin: 0;
+  padding-left: 1.4rem;
+  font-size: var(--step--1);
+  line-height: 1.55;
+  color: #c9d6e8;
+}
+.hero__aside li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--teal-600);
+}
+.hero__aside li strong { color: #fff; font-weight: 650; }
+.hero__aside-foot {
+  margin: var(--sp-4) 0 0;
+  padding-top: var(--sp-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.8rem;
+  color: #a9bcd6;
+}
 
 .hero h1 { color: #fff; margin-bottom: var(--sp-3); }
 .hero__tagline {

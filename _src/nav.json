@@ -235,7 +235,14 @@
       ]
     },
 
-    { "label": "RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "external": true, "note": "External bookshop" },
+    {
+      "label": "RCF Publications",
+      "url": "PUBLICATIONS_WEBSITE_URL",
+      "external": true,
+      "note": "External bookshop",
+      "_headerOnly": "On a desktop this lives as its own button in the header bar, so it is left out of the row of sections below to keep those on one line. On a telephone the header button is hidden, so it does appear in the slide-out menu. Either way there is exactly one route to it.",
+      "headerOnly": true
+    },
 
     {
       "label": "About Us",

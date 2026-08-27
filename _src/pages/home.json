@@ -16,7 +16,18 @@
       { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--ghost-light" },
       { "label": "Explore RCF Classes", "url": "rcf-classes/", "style": "btn--ghost-light" }
     ],
-    "note": "Looking for books and study guides? [Visit RCF Publications](PUBLICATIONS_WEBSITE_URL) — our separate bookshop website."
+    "note": "Looking for books and study guides? [RCF Publications](PUBLICATIONS_WEBSITE_URL) is our separate bookshop website.",
+    "aside": {
+      "title": "Who this is for",
+      "items": [
+        "**O/L and A/L students**, including private candidates preparing on their own",
+        "**Adults and independent learners** building everyday and working English",
+        "**Learners who need extra help**, with smaller steps and more guided practice",
+        "**Teachers and tuition teachers**, with lesson plans, worksheets and marking guides",
+        "**Parents**, who can see what is examined and what a good answer looks like"
+      ],
+      "footnote": "Free to read. No account, no advertising, nothing recorded."
+    }
   },
 
   "blocks": [
@@ -24,13 +35,13 @@
       "type": "cards",
       "heading": "Explore by category",
       "eyebrow": "Find your section",
-      "intro": ["Nine areas cover everything on RCF English. Each one opens onto lessons, practice and revision material for that subject."],
+      "intro": ["Explore nine subject areas, each offering lessons, practice activities and revision resources."],
       "columns": "3",
       "variant": "tint",
       "items": [
         { "title": "O/L English", "icon": "OL", "url": "ol-english/", "more": "Start here", "text": ["Grammar, vocabulary, reading and every writing task in the Ordinary Level paper, taught step by step."] },
         { "title": "O/L Literature", "icon": "LIT", "url": "ol-literature/", "more": "Start here", "text": ["Poetry, short stories, drama and novels, with a consistent method for context and essay answers."] },
-        { "title": "General English", "icon": "GE", "url": "general-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, written for adults and for learners starting again."] },
+        { "title": "General English", "icon": "GE", "url": "general-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, for adults and independent learners developing their confidence."] },
         { "title": "A/L Literature", "icon": "AL", "url": "al-literature/", "more": "Start here", "text": ["Critical appreciation, textual evidence and well-organised essay answers at Advanced Level."] },
         { "title": "Past Papers", "icon": "PP", "url": "past-papers/", "more": "Search papers", "text": ["Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."] },
         { "title": "Teacher Resources", "icon": "TR", "url": "teacher-resources/", "more": "For teachers", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
@@ -82,22 +93,6 @@
     },
 
     {
-      "type": "cards",
-      "heading": "Support for students and teachers",
-      "eyebrow": "Who this site is for",
-      "variant": "tint",
-      "columns": "3",
-      "items": [
-        { "title": "School and examination students", "text": ["Material for Grades 10 and 11, Advanced Level Literature and private candidates preparing on their own, arranged by paper and by task."], "url": "ol-english/", "more": "O/L English" },
-        { "title": "Adult and General English learners", "text": ["Practical English for daily life and work, explained simply, for adults returning to study and for learners who need to rebuild confidence."], "url": "general-english/", "more": "General English" },
-        { "title": "Learners who need extra help", "text": ["Smaller steps, more models, more guided practice, and writing tasks that are never set without preparation."], "url": "ol-english/guided-writing/", "more": "Guided writing" },
-        { "title": "Schoolteachers", "text": ["Lesson plans, worksheets, marking guides and assessment support that can be used directly in a classroom."], "url": "teacher-resources/", "more": "Teacher resources" },
-        { "title": "Tuition teachers", "text": ["Structured material for individual and small-group teaching, including answer development and revision strategies."], "url": "teacher-resources/revision-strategies/", "more": "Revision strategies" },
-        { "title": "Parents", "text": ["A clear view of what is examined, what a good answer looks like, and how to help at home without doing the work for your child."], "url": "how-to-use/", "more": "How to use this site" }
-      ]
-    },
-
-    {
       "type": "steps",
       "heading": "Our learning approach",
       "eyebrow": "Five stages",
@@ -136,30 +131,15 @@
     },
 
     {
-      "type": "publications",
-      "heading": "Books and study guides from RCF Publications",
-      "text": [
-        "RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials.",
-        "It operates through its own dedicated website, with its own ordering arrangements. RCF English links to it rather than duplicating it."
-      ],
-      "items": [
-        "Practical English support books",
-        "Literature study guides",
-        "Grammar and vocabulary resources",
-        "Examination revision materials",
-        "Books written for struggling learners"
-      ]
-    },
-
-    {
       "type": "cards",
       "heading": "Where would you like to start?",
       "eyebrow": "Next step",
-      "columns": "3",
+      "columns": "4",
       "items": [
         { "title": "I am preparing for an examination", "url": "past-papers/how-to-use/", "more": "Use past papers well", "text": ["Begin with the paper structure, then work through past and model papers with a marking guide beside you."] },
         { "title": "I want to improve my English", "url": "general-english/", "more": "General English", "text": ["Start with practical grammar and everyday English, and practise speaking and writing a little each day."] },
-        { "title": "I teach English", "url": "teacher-resources/", "more": "Teacher resources", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial classes."] }
+        { "title": "I teach English", "url": "teacher-resources/", "more": "Teacher resources", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial classes."] },
+        { "title": "I am helping my child", "url": "how-to-use/", "more": "How to use this site", "text": ["See what is examined, what a good answer looks like, and how to help at home without doing the work for them."] }
       ]
     }
   ]

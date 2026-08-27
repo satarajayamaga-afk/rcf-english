@@ -40,7 +40,7 @@ foreach ($file in $files) {
 
     # Curly quotes are the single commonest cause of a broken file, because
     # word processors insert them silently. Warn before trying to read it.
-    if ($text -match '[“”]\s*:' -or $text -match ':\s*[“”]') {
+    if ($text -match '[\u201C\u201D]\s*:' -or $text -match ':\s*[\u201C\u201D]') {
         Write-Host "   PROBLEM  $relative" -ForegroundColor Red
         Write-Host '            This file contains curly quotation marks around a name or' -ForegroundColor Yellow
         Write-Host '            value. JSON needs straight ones. Retype the quotes, or use' -ForegroundColor Yellow

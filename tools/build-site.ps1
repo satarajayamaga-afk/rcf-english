@@ -303,7 +303,6 @@ function MegaPanel($item, $index, $slug) {
             $ext = ''
             $soon = ''
             if (IsExternal $target) { $ext = ' target="_blank" rel="noopener" class="ext"' }
-            elseif (IsPub $target) { $soon = ' <span class="badge-soon">Coming soon</span>' }
             $html += '<li><a href="' + (E (Url $target)) + '"' + $current + $ext + '>' + (E (P $link 'label')) + $soon + '</a></li>'
         }
         $html += '</ul></div>'
@@ -319,6 +318,10 @@ function DesktopNav($slug) {
     $index = 0
     foreach ($item in $nav.items) {
         $index++
+        # Items with headerOnly have their own button in the header bar above,
+        # so they are left out of this row. Eleven sections did not fit on one
+        # line at ordinary laptop widths; nine fit with room to spare.
+        if ((P $item 'headerOnly') -eq $true) { continue }
         $label = [string](P $item 'label')
         $url = [string](P $item 'url' '')
         $groups = AsList (P $item 'groups')
@@ -428,7 +431,6 @@ function Header($slug) {
     $html += '<label class="visually-hidden" for="header-search-input">Search RCF English</label>'
     $html += '<input type="search" id="header-search-input" name="q" placeholder="Search lessons and papers"></form>'
     $html += '<div class="header-actions">'
-    $html += '<a class="header-link" href="' + (E (Url 'rcf-classes/')) + '">RCF Classes</a>'
     if (PubIsLive) {
         $html += '<a class="header-link header-link--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
     }
@@ -503,14 +505,14 @@ function Footer() {
         $html += '<li><a class="ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a></li>'
     }
     else {
-        $html += '<li><a href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + ' <span class="badge-soon badge-soon--footer">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span></a></li>'
+        $html += '<li><a href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a></li>'
     }
     $html += '<li><a href="' + (E (Url 'about/rcf-publications/')) + '">About RCF Publications</a></li>'
     $html += '<li><a href="' + (E (Url 'teacher-resources/rcf-publications-for-teachers/')) + '">Books for teachers</a></li>'
     $html += '</ul></div></div>'
 
     $html += '<div class="footer-bottom"><p>&copy; ' + $year + ' ' + (E $script:Config.siteName) + '. Materials on this site are for educational use.</p>'
-    $sep = if (PubIsLive) { ' is a separate website.' } else { ' is a separate website, not yet published.' }
+    $sep = if (PubIsLive) { ' is a separate website.' } else { ' is a separate website, coming soon.' }
     $html += '<p>' + (E $script:Config.publicationsName) + (E $sep) + '</p></div>'
     return $html + '</div></footer>'
 }
@@ -743,7 +745,7 @@ function RenderBlock($block) {
             foreach ($id in (AsList (P $block 'ids'))) {
                 $found = $quizzes | Where-Object { [string](P $_ 'id') -eq [string]$id }
                 if (-not $found) { [void]$script:Warnings.Add("Activity '$id' is used on '$($script:PageSlug)' but is not in data/quizzes.json") }
-                $html += '<div data-activity="' + (E $id) + '"><p class="text-muted">Loading activity…</p></div>'
+                $html += '<div data-activity="' + (E $id) + '"><p class="text-muted">Loading activity&hellip;</p></div>'
             }
             return $html + '</div></section>'
         }
@@ -756,7 +758,7 @@ function RenderBlock($block) {
             $filters = (AsList (P $block 'filters')) -join ','
             $html = (SectionOpen $block) + (SectionHead $block)
             $html += '<div class="browse" data-source="' + (E $source) + '" data-fixed="' + (E $fixedJson) + '" data-filters="' + (E $filters) + '">'
-            $html += '<div class="toolbar" data-controls><p class="text-muted mb-0">Filters load in a moment…</p></div>'
+            $html += '<div class="toolbar" data-controls><p class="text-muted mb-0">Filters load in a moment&hellip;</p></div>'
             $html += '<div class="results-bar"><p class="results-count" data-count>&nbsp;</p>'
             $html += '<p class="text-small text-muted mb-0">' + (E (P $block 'note' 'Only resources that RCF English is permitted to publish or link to are listed here.')) + '</p></div>'
             $html += '<p class="visually-hidden" role="status" aria-live="polite" data-live></p>'
@@ -1171,7 +1173,7 @@ function RenderForm($block) {
             $html += '<textarea id="' + $id + '" data-field="' + (E $name) + '"' + $required + '></textarea>'
         }
         elseif ($type -eq 'select') {
-            $html += '<select id="' + $id + '" data-field="' + (E $name) + '"' + $required + '><option value="">Please choose…</option>'
+            $html += '<select id="' + $id + '" data-field="' + (E $name) + '"' + $required + '><option value="">Please choose&hellip;</option>'
             foreach ($o in (AsList (P $f 'options'))) { $html += '<option value="' + (E $o) + '">' + (E $o) + '</option>' }
             $html += '</select>'
         }
@@ -1198,11 +1200,14 @@ function HeroSection($page) {
     $style = [string](P $hero 'style' 'page')
 
     if ($style -eq 'home') {
+        # Two columns on a wide screen so the right-hand side is not left empty,
+        # one column on anything narrower.
         $html = '<section class="hero"><div class="container hero__inner">'
+        $html += '<div class="hero__main">'
         $html += '<h1>' + (E (P $page 'title')) + '</h1>'
         $html += '<p class="hero__tagline">' + (E $script:Config.tagline) + '</p>'
         $html += '<p class="hero__text">' + (Inline (P $hero 'text')) + '</p>'
-        $html += '<div class="btn-row">'
+        $html += '<div class="btn-row btn-row--even">'
         foreach ($b in (AsList (P $hero 'buttons'))) {
             $target = [string](P $b 'url')
             $cls = 'btn ' + [string](P $b 'style' 'btn--accent')
@@ -1226,6 +1231,18 @@ function HeroSection($page) {
         $html += '</div>'
         $note = P $hero 'note'
         if ($note) { $html += '<p class="hero__note">' + (Inline $note) + '</p>' }
+        $html += '</div>'
+
+        $aside = P $hero 'aside'
+        if ($aside) {
+            $html += '<aside class="hero__aside" aria-labelledby="hero-aside-title">'
+            $html += '<h2 class="hero__aside-title" id="hero-aside-title">' + (E (P $aside 'title')) + '</h2><ul>'
+            foreach ($i in (AsList (P $aside 'items'))) { $html += '<li>' + (Inline $i) + '</li>' }
+            $html += '</ul>'
+            $foot = P $aside 'footnote'
+            if ($foot) { $html += '<p class="hero__aside-foot">' + (Inline $foot) + '</p>' }
+            $html += '</aside>'
+        }
         return $html + '</div></section>'
     }
 

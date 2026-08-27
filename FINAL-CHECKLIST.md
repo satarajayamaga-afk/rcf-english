@@ -147,9 +147,18 @@ Measured at each width by inspecting real element geometry.
 | **375 px** | ✅ |
 | **768 px** | ✅ |
 | **1024 px** | ✅ |
-| **1280 px** | ✅ All 11 menu items on one row *(fixed during testing)* |
+| **1240 px** | ✅ Desktop bar on one row; below this the mobile menu takes over |
+| **1280 px** | ✅ |
+| **1363 px** | ✅ The width at which "Contact" used to wrap. One row, 149px to spare |
+| **1366 px** | ✅ |
 | **1400 px** | ✅ |
 | **1600 px** | ✅ |
+| **1920 px** | ✅ |
+
+**Menu headroom.** The bar needs **1023px** of the **1172px** available — 149px, or
+13%, in hand. It previously needed 1144px, leaving only 28px, which is why it
+wrapped on some machines and not others: any slightly wider font rendering tipped it
+over. The margin is now large enough that font substitution cannot cause a wrap.
 
 Also checked: no text under 14px in body copy; every button and menu link at least
 40px high; tables become cards on narrow screens.
