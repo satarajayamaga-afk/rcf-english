@@ -30,7 +30,7 @@
           "type": "browse",
           "heading": "One clear paper from each grade",
           "source": "papers",
-          "fixed": { "clearScan": "yes" },
+          "fixed": { "featured": "yes" },
           "filters": ["grade", "term", "year", "province"],
           "note": "Somebody opened each of these PDFs and looked at the first page before it was listed."
         },
