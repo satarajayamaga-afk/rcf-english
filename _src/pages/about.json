@@ -34,11 +34,11 @@
           "heading": "How the parts fit together",
           "eyebrow": "The umbrella platform",
           "variant": "tint",
-          "intro": ["RCF English is the main platform. RCF Classes provides the teaching programmes. RCF Publications is a separate publishing and bookshop website."],
+          "intro": ["RCF English is the main platform. RCF Online Academy provides the teaching programmes. RCF Publications is a separate publishing and bookshop website."],
           "columns": "3",
           "items": [
             { "title": "RCF English", "text": ["The umbrella educational platform: lessons, past papers, revision material, teacher resources and interactive learning, free to use."], "url": "how-to-use/", "more": "How to use this site" },
-            { "title": "RCF Classes", "text": ["The teaching programmes: mainly online classes in English and Literature, conducted by R. C. Fernando."], "url": "rcf-classes/", "more": "See the classes" },
+            { "title": "RCF Online Academy", "text": ["The teaching programmes: mainly online classes in English and Literature, conducted by R. C. Fernando."], "url": "rcf-classes/", "more": "See the classes" },
             { "title": "RCF Publications", "text": ["The separate publishing and bookshop website: books, study guides, grammar resources and revision materials."], "url": "about/rcf-publications/", "more": "About the bookshop" }
           ]
         },
@@ -96,7 +96,7 @@
             "past papers and revision materials",
             "English teacher resources",
             "interactive learning activities",
-            "RCF Classes",
+            "RCF Online Academy",
             "RCF Publications"
           ]
         },
@@ -121,7 +121,7 @@
             { "title": "Our Educational Mission", "url": "about/mission/", "more": "Open" },
             { "title": "Our Teaching Approach", "url": "about/teaching-approach/", "more": "Open" },
             { "title": "Our Online Communities", "url": "about/online-communities/", "more": "Open" },
-            { "title": "RCF Classes", "url": "rcf-classes/", "more": "Open" },
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" },
             { "title": "RCF Publications", "url": "about/rcf-publications/", "more": "Open" },
             { "title": "Contact Us", "url": "contact/", "more": "Open" }
           ]
@@ -135,7 +135,7 @@
           "text": ["Questions about the platform, the classes or the resources are welcome from students, teachers and parents alike."],
           "buttons": [
             { "label": "Ask a question", "message": "Hello, I have a question about RCF English. " },
-            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." }
+            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." }
           ]
         }
       ]
@@ -186,7 +186,7 @@
           "heading": "Teaching today",
           "variant": "tint",
           "text": [
-            "R. C. Fernando currently conducts mainly online classes through RCF Classes. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
+            "R. C. Fernando currently conducts mainly online classes through RCF Online Academy. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
             "[See the classes](rcf-classes/) or [read about the teaching approach](about/teaching-approach/)."
           ]
         }
@@ -306,13 +306,13 @@
     {
       "slug": "about/teaching-approach",
       "title": "Our Teaching Approach",
-      "description": "How RCF English and RCF Classes teach: clear systematic explanation, guided practice before independent work, individual correction and additional support for learners in difficulty.",
+      "description": "How RCF English and RCF Online Academy teach: clear systematic explanation, guided practice before independent work, individual correction and additional support for learners in difficulty.",
       "keywords": "teaching approach, guided practice, individual correction, learner confidence",
       "kicker": "About Us",
       "kind": "page",
       "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
       "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "The same approach runs through the lessons on this site and the teaching in RCF Classes." },
+      "hero": { "text": "The same approach runs through the lessons on this site and the teaching in RCF Online Academy." },
       "blocks": [
         {
           "type": "prose",
@@ -359,7 +359,7 @@
           "items": [
             { "title": "In O/L English", "url": "ol-english/guided-writing/", "more": "Guided writing", "text": ["Every writing form — emails, notices, letters, paragraphs, essays, picture description, dialogue and speeches — follows the six-step method."] },
             { "title": "In Literature", "url": "ol-literature/developing-an-answer/", "more": "Developing an answer", "text": ["Point, evidence, explanation, effect and link: a structure a learner can use even when the text is difficult."] },
-            { "title": "In the classes", "url": "rcf-classes/", "more": "RCF Classes", "text": ["Explanation, guided practice, individual correction and regular revision, with extra support for learners in difficulty."] }
+            { "title": "In the classes", "url": "rcf-classes/", "more": "RCF Online Academy", "text": ["Explanation, guided practice, individual correction and regular revision, with extra support for learners in difficulty."] }
           ]
         }
       ]
@@ -452,7 +452,7 @@
           "variant": "tint",
           "title": "Two separate websites",
           "bullets": [
-            "**RCF English** — this site. Lessons, past papers, teacher resources, interactive practice and RCF Classes. Everything here is free to read.",
+            "**RCF English** — this site. Lessons, past papers, teacher resources, interactive practice and RCF Online Academy. Everything here is free to read.",
             "**RCF Publications** — a separate website. Books, study guides, eBooks, book samples, prices and ordering. It has its own terms and its own ordering arrangements.",
             "RCF English does not sell books and does not take payments of any kind. Links to RCF Publications are marked and open in a new tab."
           ]

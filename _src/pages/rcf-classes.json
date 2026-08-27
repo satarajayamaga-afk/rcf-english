@@ -2,8 +2,8 @@
   "pages": [
     {
       "slug": "rcf-classes",
-      "title": "RCF Classes",
-      "metaTitle": "RCF Classes | Online English and Literature classes | RCF English",
+      "title": "RCF Online Academy",
+      "metaTitle": "RCF Online Academy | Online English and Literature classes | RCF English",
       "description": "Online English and Literature classes conducted by R. C. Fernando: O/L English, O/L and A/L Literature, General English, Spoken English and revision classes. Ask on WhatsApp.",
       "keywords": "online English classes, O/L English class, Literature class, spoken English class, Sri Lanka, R. C. Fernando",
       "kicker": "Learn with a teacher",
@@ -20,10 +20,10 @@
       "blocks": [
         {
           "type": "prose",
-          "heading": "About RCF Classes",
+          "heading": "About RCF Online Academy",
           "text": [
-            "R. C. Fernando currently conducts mainly online classes through RCF Classes. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
-            "Online delivery enables RCF Classes to reach students beyond a single geographical area and provide access to specialised English and literature instruction across the country.",
+            "R. C. Fernando currently conducts mainly online classes through RCF Online Academy. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
+            "Online delivery enables RCF Online Academy to reach students beyond a single geographical area and provide access to specialised English and literature instruction across the country.",
             "He is a graduate in English of the University of Peradeniya, holds a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya, and is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA). [His full background is here](about/background/)."
           ]
         },
@@ -88,7 +88,7 @@
           "variant": "tint",
           "items": [
             { "title": "Choose a class", "text": ["Look through the courses above and decide which suits you. If you are not sure, say what you need and you will be advised."] },
-            { "title": "Contact RCF Classes through WhatsApp", "text": ["Use one of the buttons on this page. The message is written for you; you add your own details and press send."] },
+            { "title": "Contact RCF Online Academy through WhatsApp", "text": ["Use one of the buttons on this page. The message is written for you; you add your own details and press send."] },
             { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day, time and fee, and whether places are available."] },
             { "title": "Confirm registration", "text": ["Registration is confirmed by the teacher after this exchange. It is not automatic and nothing on this website registers you."] },
             { "title": "Receive joining instructions", "text": ["Once your place is confirmed you will be sent the joining details privately. These are never published on this website."] }
@@ -100,10 +100,10 @@
           "title": "WhatsApp",
           "text": ["Each button opens WhatsApp with a message already written. Read it, add anything you wish, and press send yourself. Nothing is sent from this website."],
           "buttons": [
-            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " },
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
-            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an RCF Class. The class I would like to join is: " }
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current class timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol at RCF Online Academy. The class I would like to join is: " }
           ]
         },
         {
@@ -130,7 +130,7 @@
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "How do I join a class?", "a": ["Choose a class, contact RCF Classes on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic and nothing on this website enrols you."] },
+            { "q": "How do I join a class?", "a": ["Choose a class, contact RCF Online Academy on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic and nothing on this website enrols you."] },
             { "q": "Why are the days, times and fees not shown for every class?", "a": ["Because they change, and publishing an out-of-date schedule helps nobody. Where a detail has not been settled, this site says so rather than inventing a figure. Ask on WhatsApp and you will be told what currently applies."] },
             { "q": "Are the classes online or in a classroom?", "a": ["Classes are conducted mainly online, which allows students in any part of the country to attend."] },
             { "q": "What do I need in order to attend?", "a": ["A device with an internet connection, a notebook and a pen. Spoken English classes also need a working microphone. Literature classes need the prescribed texts."] },
@@ -143,7 +143,7 @@
         },
         {
           "type": "cards",
-          "heading": "More about RCF Classes",
+          "heading": "More about RCF Online Academy",
           "columns": "4",
           "items": [
             { "title": "Timetables", "url": "rcf-classes/timetable/", "more": "Open" },
@@ -162,12 +162,12 @@
     {
       "slug": "rcf-classes/enrolment",
       "title": "Enrolment",
-      "description": "How to enrol in an RCF Class: the five steps, what you will be asked, what you will be told, and what happens after your place is confirmed.",
-      "keywords": "enrolment, how to join, registration, RCF Classes, WhatsApp",
-      "kicker": "RCF Classes",
+      "description": "How to enrol at RCF Online Academy: the five steps, what you will be asked, what you will be told, and what happens after your place is confirmed.",
+      "keywords": "enrolment, how to join, registration, RCF Online Academy, WhatsApp",
+      "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "Enrolment is a conversation, not a form. Nothing on this website registers you for anything." },
       "blocks": [
         {
@@ -175,7 +175,7 @@
           "heading": "The five steps",
           "items": [
             { "title": "Choose a class", "text": ["Look through the [available courses](rcf-classes/). If you are unsure which suits you, say what you need — your grade, your examination, or what you find difficult — and you will be advised."] },
-            { "title": "Contact RCF Classes through WhatsApp", "text": ["Use one of the buttons on this page. The message is written for you. Add your own details before sending it."] },
+            { "title": "Contact RCF Online Academy through WhatsApp", "text": ["Use one of the buttons on this page. The message is written for you. Add your own details before sending it."] },
             { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day and time, the fee, and whether places are available. This information is given directly rather than published, because it changes."] },
             { "title": "Confirm registration", "text": ["If the class suits you, confirm. **Registration is confirmed by the teacher.** It is not automatic, and no place is reserved by visiting this website."] },
             { "title": "Receive joining instructions", "text": ["Once your place is confirmed, joining details are sent to you privately. They are never published on this website."] }
@@ -202,9 +202,9 @@
           "title": "WhatsApp",
           "text": ["Choose the message that fits your situation. Read it, add your details, and press send yourself."],
           "buttons": [
-            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an RCF Class. The class I would like to join is: " },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " },
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol at RCF Online Academy. The class I would like to join is: " },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current class timetable." },
             { "label": "I am not sure which class suits me", "message": "Hello, I would like advice on which RCF Class would suit me. My grade or level is: " }
           ]
         },
@@ -238,12 +238,12 @@
     {
       "slug": "rcf-classes/timetable",
       "title": "Timetables",
-      "description": "The RCF Classes timetable. Days and times are published here once settled; otherwise you can request the current timetable on WhatsApp.",
-      "keywords": "class timetable, schedule, days and times, RCF Classes",
-      "kicker": "RCF Classes",
+      "description": "The RCF Online Academy timetable. Days and times are published here once settled; otherwise you can request the current timetable on WhatsApp.",
+      "keywords": "class timetable, schedule, days and times, RCF Online Academy",
+      "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "On a telephone the timetable appears as cards rather than a wide table, so nothing is squeezed off the edge of the screen." },
       "blocks": [
         {
@@ -267,8 +267,8 @@
           "title": "WhatsApp",
           "text": ["The timetable is sent directly, so it is always up to date."],
           "buttons": [
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " }
+            { "label": "Request the Timetable", "message": "Hello, please send me the current class timetable." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at the moment. The class I am interested in is: " }
           ]
         },
         {
@@ -287,12 +287,12 @@
     {
       "slug": "rcf-classes/upcoming",
       "title": "Upcoming Classes",
-      "description": "Classes opening soon at RCF Classes, including revision courses before examinations. Ask on WhatsApp to be told when registration opens.",
+      "description": "Classes opening soon at RCF Online Academy, including revision courses before examinations. Ask on WhatsApp to be told when registration opens.",
       "keywords": "upcoming classes, new classes, registration opening, revision courses",
-      "kicker": "RCF Classes",
+      "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "Courses whose registration is opening soon. If nothing here suits you, ask — new classes are often arranged around the students who want them." },
       "blocks": [
         {
@@ -316,8 +316,8 @@
           "title": "WhatsApp",
           "text": ["Send a message saying which class you are waiting for, and you will be told when registration opens."],
           "buttons": [
-            { "label": "Tell me when a class opens", "message": "Hello, I would like to be told when registration opens for an RCF Class. The class I am waiting for is: " },
-            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." }
+            { "label": "Tell me when a class opens", "message": "Hello, I would like to be told when registration opens for an Academy course. The class I am waiting for is: " },
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." }
           ]
         }
       ]
@@ -326,12 +326,12 @@
     {
       "slug": "rcf-classes/notices",
       "title": "Class Notices",
-      "description": "Notices for RCF Classes students: changes of time, revision announcements, holiday breaks and other messages.",
-      "keywords": "class notices, announcements, changes of time, RCF Classes",
-      "kicker": "RCF Classes",
+      "description": "Notices for RCF Online Academy students: changes of time, revision announcements, holiday breaks and other messages.",
+      "keywords": "class notices, announcements, changes of time, RCF Online Academy",
+      "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "Public announcements for class students. Anything private — joining links, personal messages, results — is sent directly and never published here." },
       "blocks": [
         {
@@ -365,12 +365,12 @@
     {
       "slug": "rcf-classes/student-resources",
       "title": "Student Resources",
-      "description": "The RCF English pages recommended alongside each RCF class, free and open to everyone whether or not they attend.",
+      "description": "The RCF English pages recommended alongside each Academy course, free and open to everyone whether or not they attend.",
       "keywords": "student resources, class materials, recommended pages, free resources",
-      "kicker": "RCF Classes",
+      "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "Everything on RCF English is free and open to everyone. These are the pages class students are pointed to most often." },
       "blocks": [
         {
@@ -451,12 +451,12 @@
     {
       "slug": "rcf-classes/faq",
       "title": "Frequently Asked Questions",
-      "description": "Answers to common questions about RCF Classes: joining, schedules and fees, what is needed, how classes are taught and what support is available.",
-      "keywords": "RCF Classes FAQ, questions, joining, fees, schedule",
-      "kicker": "RCF Classes",
+      "description": "Answers to common questions about RCF Online Academy: joining, schedules and fees, what is needed, how classes are taught and what support is available.",
+      "keywords": "RCF Online Academy FAQ, questions, joining, fees, schedule",
+      "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "If your question is not answered here, ask on WhatsApp — the answer is usually quicker than the search." },
       "blocks": [
         {
@@ -464,7 +464,7 @@
           "heading": "Joining a class",
           "faq": true,
           "items": [
-            { "q": "How do I join?", "a": ["Choose a class, contact RCF Classes on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic. See [Enrolment](rcf-classes/enrolment/)."] },
+            { "q": "How do I join?", "a": ["Choose a class, contact RCF Online Academy on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic. See [Enrolment](rcf-classes/enrolment/)."] },
             { "q": "Can I register on this website?", "a": ["No. This website has no server and no registration system. Nothing here reserves a place."] },
             { "q": "Is any payment taken on this website?", "a": ["No. RCF English does not take payments of any kind. Never enter payment details anywhere on this site."] },
             { "q": "Can I join in the middle of a course?", "a": ["It depends on the course and how far it has gone. Ask, and you will be told honestly whether joining now would work for you."] },
@@ -506,7 +506,7 @@
             { "q": "Do you teach students who are very weak in English?", "a": ["Yes. Additional support for learners experiencing difficulty is a particular emphasis of these classes and of this whole platform. Learners are not moved on before a step is secure."] },
             { "q": "I understand English but I cannot speak it. Can that be helped?", "a": ["Yes, and it is very common. Spoken English classes are built around exactly this: practice in real situations, with correction, in a setting where mistakes are expected rather than punished."] },
             { "q": "Can examination results be guaranteed?", "a": ["No, and nobody honest will guarantee them. Results depend on the student's own work. What the classes provide is clear teaching, guided practice, individual correction and regular revision."] },
-            { "q": "Are these classes connected to any school or government body?", "a": ["No. RCF Classes is an independent teaching programme and makes no claim of official approval or affiliation."] },
+            { "q": "Are these classes connected to any school or government body?", "a": ["No. RCF Online Academy is an independent teaching programme and makes no claim of official approval or affiliation."] },
             { "q": "Are the free resources on this site only for class students?", "a": ["No. Everything on RCF English is free and open to everyone, whether or not you attend a class."] }
           ]
         },
@@ -516,8 +516,8 @@
           "title": "WhatsApp",
           "text": ["Please say whether you are a student or a parent, and which class you are asking about."],
           "buttons": [
-            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
-            { "label": "Ask something else", "message": "Hello, I have a question about RCF Classes. " }
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." },
+            { "label": "Ask something else", "message": "Hello, I have a question about RCF Online Academy. " }
           ]
         }
       ]
@@ -526,26 +526,26 @@
     {
       "slug": "rcf-classes/contact",
       "title": "Contact the Teacher",
-      "description": "Contact RCF Classes directly on WhatsApp about courses, schedules, fees, availability, enrolment or a student's particular needs.",
-      "keywords": "contact teacher, RCF Classes, WhatsApp, enquiry",
-      "kicker": "RCF Classes",
+      "description": "Contact RCF Online Academy directly on WhatsApp about courses, schedules, fees, availability, enrolment or a student's particular needs.",
+      "keywords": "contact teacher, RCF Online Academy, WhatsApp, enquiry",
+      "kicker": "RCF Online Academy",
       "kind": "page",
       "scripts": ["forms"],
-      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
       "hero": { "text": "WhatsApp is the quickest way. Say who you are, what you need, and which class you are asking about." },
       "blocks": [
         {
           "type": "whatsapp",
-          "heading": "Message RCF Classes",
+          "heading": "Message RCF Online Academy",
           "title": "WhatsApp",
           "text": ["Each button opens WhatsApp with a message already written. Read it, add your details, and press send yourself. Nothing is sent from this website."],
           "buttons": [
-            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " },
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
-            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an RCF Class. The class I would like to join is: " },
-            { "label": "Ask about individual classes", "message": "Hello, I would like information about individual (one-to-one) classes with RCF Classes. The student's level and needs are: " },
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current class timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol at RCF Online Academy. The class I would like to join is: " },
+            { "label": "Ask about individual classes", "message": "Hello, I would like information about individual (one-to-one) classes with RCF Online Academy. The student's level and needs are: " },
             { "label": "My child needs extra help", "message": "Hello, my child needs additional help with English. Their grade is: ___ and what they find most difficult is: " }
           ]
         },
@@ -566,7 +566,7 @@
         {
           "type": "contactForm",
           "heading": "Or write by email",
-          "subject": "RCF Classes enquiry",
+          "subject": "RCF Online Academy enquiry",
           "mode": "email",
           "fields": [
             { "name": "Your name", "type": "text", "required": true },

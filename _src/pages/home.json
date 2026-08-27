@@ -2,7 +2,7 @@
   "slug": "",
   "title": "RCF English",
   "metaTitle": "RCF English | Clear English lessons, past papers and teacher resources",
-  "description": "Clear English lessons, practical revision resources and reliable teaching support for O/L English, O/L and A/L Literature and General English, with past papers, interactive practice and RCF Classes.",
+  "description": "Clear English lessons, practical revision resources and reliable teaching support for O/L English, O/L and A/L Literature and General English, with past papers, interactive practice and RCF Online Academy.",
   "keywords": "O/L English, O/L English Literature, A/L Literature, General English, past papers, model papers, guided writing, English teacher resources, Sri Lanka, online English classes",
   "kind": "page",
   "schema": "EducationalOrganization",
@@ -14,7 +14,7 @@
     "buttons": [
       { "label": "Explore Learning Resources", "url": "resources/", "style": "btn--accent" },
       { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--ghost-light" },
-      { "label": "Explore RCF Classes", "url": "rcf-classes/", "style": "btn--ghost-light" }
+      { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--ghost-light" }
     ],
     "note": "Looking for books and study guides? [RCF Publications](PUBLICATIONS_WEBSITE_URL) is our separate bookshop website.",
     "aside": {
@@ -46,7 +46,7 @@
         { "title": "Past Papers", "icon": "PP", "url": "past-papers/", "more": "Search papers", "text": ["Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."] },
         { "title": "Teacher Resources", "icon": "TR", "url": "teacher-resources/", "more": "For teachers", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
         { "title": "Interactive Learning", "icon": "IL", "url": "interactive/", "more": "Practise now", "text": ["Quizzes, gap-fill, matching, sentence ordering and error correction, with instant feedback."] },
-        { "title": "RCF Classes", "icon": "RC", "url": "rcf-classes/", "more": "See classes", "text": ["Online English and Literature classes conducted by R. C. Fernando. Ask about schedules on WhatsApp."] },
+        { "title": "RCF Online Academy", "icon": "RC", "url": "rcf-classes/", "more": "See classes", "text": ["Online English and Literature classes conducted by R. C. Fernando. Ask about schedules on WhatsApp."] },
         { "title": "RCF Publications", "icon": "BK", "url": "PUBLICATIONS_WEBSITE_URL", "text": ["Our separate bookshop website: practical books, study guides and examination revision materials."] }
       ]
     },
@@ -110,7 +110,7 @@
 
     {
       "type": "classes",
-      "heading": "Featured RCF Classes",
+      "heading": "Featured courses",
       "eyebrow": "Learn with a teacher",
       "intro": ["Online classes conducted by R. C. Fernando. Schedules, fees and available places are confirmed on WhatsApp, so the information you receive is always current."],
       "featured": true,

@@ -24,7 +24,7 @@
             { "title": "Past Papers", "url": "past-papers/", "more": "Open" },
             { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open" },
             { "title": "Interactive Learning", "url": "interactive/", "more": "Open" },
-            { "title": "RCF Classes", "url": "rcf-classes/", "more": "Open" }
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" }
           ]
         }
       ]
@@ -197,7 +197,7 @@
             { "heading": "The four learning sections", "text": ["[O/L English](ol-english/), [O/L Literature](ol-literature/), [General English](general-english/) and [A/L Literature](al-literature/). Each one has a landing page that explains the subject, and a menu of lessons underneath it."] },
             { "heading": "Past Papers", "text": ["[The Past Papers centre](past-papers/) holds past papers, model papers, marking schemes, revision papers and question banks, with filters for subject, year, paper and type."] },
             { "heading": "Teacher Resources", "text": ["[Teacher Resources](teacher-resources/) holds lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
-            { "heading": "RCF Classes", "text": ["[RCF Classes](rcf-classes/) describes the online classes conducted by R. C. Fernando, and how to ask about them on WhatsApp."] }
+            { "heading": "RCF Online Academy", "text": ["[RCF Online Academy](rcf-classes/) describes the online classes conducted by R. C. Fernando, and how to ask about them on WhatsApp."] }
           ]
         },
         {
@@ -260,7 +260,7 @@
     {
       "slug": "faq",
       "title": "Frequently Asked Questions",
-      "description": "Answers to common questions about RCF English: what it covers, who it is for, past papers and copyright, interactive activities, RCF Classes and RCF Publications.",
+      "description": "Answers to common questions about RCF English: what it covers, who it is for, past papers and copyright, interactive activities, RCF Online Academy and RCF Publications.",
       "keywords": "FAQ, questions, help, RCF English",
       "kicker": "Questions and answers",
       "kind": "page",
@@ -303,11 +303,11 @@
         },
         {
           "type": "accordion",
-          "heading": "RCF Classes",
+          "heading": "RCF Online Academy",
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "How do I join a class?", "a": ["Choose a class, contact RCF Classes on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."] },
+            { "q": "How do I join a class?", "a": ["Choose a class, contact RCF Online Academy on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."] },
             { "q": "Why are the days, times and fees not shown on the website?", "a": ["Because they change, and publishing an out-of-date schedule helps nobody. Where a detail has not been settled, the site says so honestly. Ask on WhatsApp and you will be told what currently applies."] },
             { "q": "Are the classes online or in a classroom?", "a": ["Classes are conducted mainly online, which allows students in any part of the country to attend."] },
             { "q": "What do I need in order to attend?", "a": ["A device with an internet connection, a notebook and a pen. Spoken English classes also need a working microphone."] }
@@ -331,7 +331,7 @@
           "text": ["If your question is not answered above, send a message. Please say whether you are a student, a teacher or a parent, so the reply is useful to you."],
           "buttons": [
             { "label": "Ask a general question", "message": "Hello, I have a question about RCF English. " },
-            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." }
+            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." }
           ]
         }
       ]
@@ -553,7 +553,7 @@
     {
       "slug": "terms",
       "title": "Terms of Use",
-      "description": "The terms on which RCF English material may be used, what is guaranteed and what is not, and how the site relates to RCF Classes and RCF Publications.",
+      "description": "The terms on which RCF English material may be used, what is guaranteed and what is not, and how the site relates to RCF Online Academy and RCF Publications.",
       "keywords": "terms of use, conditions, licence",
       "kicker": "Policy",
       "kind": "policy",
@@ -595,10 +595,10 @@
         },
         {
           "type": "prose",
-          "heading": "RCF Classes",
+          "heading": "RCF Online Academy",
           "variant": "tint",
           "text": [
-            "Class information on this site is descriptive. Nothing on this website constitutes an offer of a place, and no registration is completed on this website. A place is confirmed only by RCF Classes directly, after contact on WhatsApp.",
+            "Class information on this site is descriptive. Nothing on this website constitutes an offer of a place, and no registration is completed on this website. A place is confirmed only by RCF Online Academy directly, after contact on WhatsApp.",
             "Where a schedule, fee or number of places has not been settled, the site says so rather than guessing."
           ]
         },
@@ -720,7 +720,7 @@
           "text": ["Each button opens WhatsApp with a message already written. Read it, add your own details, and press send yourself. Nothing is sent from this website."],
           "buttons": [
             { "label": "General enquiry", "message": "Hello, I have a general enquiry about RCF English. " },
-            { "label": "Class enquiry", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Class enquiry", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." },
             { "label": "Teacher enquiry", "message": "Hello, I am an English teacher. I would like information about the teacher resources on RCF English. " },
             { "label": "Resource correction", "message": "Hello, I would like to report a mistake on the RCF English website. Page address: " },
             { "label": "Copyright request", "message": "Hello, I am writing about copyright in material published on RCF English. Page address: " },
@@ -736,7 +736,7 @@
           "items": [
             { "title": "General enquiries", "text": ["Questions about the site, its material, or how to use it."] },
             { "title": "Teacher enquiries", "text": ["Lesson plans, worksheets, marking, and the teacher resource groups."], "url": "teacher-resources/", "more": "Teacher resources" },
-            { "title": "Class enquiries", "text": ["Schedules, fees, availability and enrolment for RCF Classes."], "url": "rcf-classes/enrolment/", "more": "How to enrol" },
+            { "title": "Class enquiries", "text": ["Schedules, fees, availability and enrolment for RCF Online Academy."], "url": "rcf-classes/enrolment/", "more": "How to enrol" },
             { "title": "Resource corrections", "text": ["A wrong rule, a wrong example, a broken link or a fault on a page."], "url": "corrections/", "more": "Report it" },
             { "title": "Copyright requests", "text": ["Permission requests, and requests to take material down."], "url": "copyright-policy/", "more": "Read the policy" },
             { "title": "Publication enquiries", "text": ["Books, study guides and ordering are handled on the RCF Publications website."], "url": "about/rcf-publications/", "more": "About the bookshop" },
@@ -801,7 +801,7 @@
             { "title": "Past Papers", "url": "past-papers/", "more": "Open" },
             { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open" },
             { "title": "Interactive Learning", "url": "interactive/", "more": "Open" },
-            { "title": "RCF Classes", "url": "rcf-classes/", "more": "Open" }
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" }
           ]
         },
         {

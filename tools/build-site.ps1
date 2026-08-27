@@ -983,7 +983,7 @@ function RenderClasses($block) {
     if ($list.Count -eq 0) {
         $html += '<div class="empty-state"><h3>No class of this kind is listed at the moment</h3>'
         $html += '<p>New classes are added to this page as they are arranged. Please ask on WhatsApp what is available.</p>'
-        $msg = 'Hello, I would like to know which RCF Classes are available at the moment. Please send me the details.'
+        $msg = 'Hello, I would like to know which classes are running at the moment. Please send me the details.'
         $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<p class="mt-4"><a class="btn btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask which classes are running</a></p></div>'
         return $html + '</div></section>'
@@ -1035,7 +1035,7 @@ function RenderTimetable($block) {
     if ($withTimes.Count -eq 0) {
         $html += '<div class="callout callout--note"><p class="callout__title">Schedule to be announced</p>'
         $html += '<p class="mb-0">Class days and times have not been published yet. Ask on WhatsApp for the current timetable and you will be sent the details that apply to you.</p></div>'
-        $msg = 'Hello, please send me the current RCF Classes timetable.'
+        $msg = 'Hello, please send me the current class timetable.'
         $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<p class="mt-5"><a class="btn btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Request the timetable</a></p>'
         return $html + '</div></section>'
@@ -1130,7 +1130,7 @@ function RenderSearchBlock($block) {
             @('page', 'Pages and lessons'), @('past-paper', 'Past papers'), @('model-paper', 'Model papers'),
             @('marking-scheme', 'Marking schemes'), @('model-answer', 'Model answers'), @('worksheet', 'Worksheets'),
             @('teacher-resource', 'Teacher resources'), @('quiz', 'Interactive activities'),
-            @('literature-text', 'Literature texts'), @('class', 'RCF classes'), @('guidance', 'Examination guidance')
+            @('literature-text', 'Literature texts'), @('class', 'Academy courses'), @('guidance', 'Examination guidance')
         )) {
         $html += '<option value="' + $k[0] + '">' + $k[1] + '</option>'
     }
@@ -1298,7 +1298,7 @@ function StructuredData($page, $canonical) {
     }
     elseif ($kind -eq 'Course') {
         $blocks += @"
-{"@context":"https://schema.org","@type":"Course","name":$(JsonString $name),"description":$(JsonString $desc),"url":$(JsonString $canonical),"inLanguage":"en","provider":{"@type":"EducationalOrganization","name":"RCF Classes","url":$(JsonString $siteUrl)}}
+{"@context":"https://schema.org","@type":"Course","name":$(JsonString $name),"description":$(JsonString $desc),"url":$(JsonString $canonical),"inLanguage":"en","provider":{"@type":"EducationalOrganization","name":"RCF Online Academy","url":$(JsonString $siteUrl)}}
 "@
     }
     elseif ($kind -eq 'Article') {
@@ -1493,7 +1493,7 @@ foreach ($c in $classes) {
             description = [string](P $c 'description' '')
             url         = 'rcf-classes/'
             kind        = 'class'
-            section     = 'RCF Classes'
+            section     = 'RCF Online Academy'
             level       = [string](P $c 'level' '')
             keywords    = (@((P $c 'subject'), (P $c 'delivery'), (P $c 'groupFormat')) -join ' ')
         })

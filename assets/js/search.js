@@ -22,7 +22,7 @@ const KIND_LABEL = {
   "teacher-resource": "Teacher resource",
   quiz: "Interactive activity",
   "literature-text": "Literature text",
-  class: "RCF class",
+  class: "Academy course",
   guidance: "Examination guidance",
   policy: "Policy"
 };
