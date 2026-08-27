@@ -98,6 +98,17 @@ Full instructions are in **[HOW-TO-UPDATE.md](HOW-TO-UPDATE.md)**.
 
 RCF Publications is a separate website. Its address is stored in **one place**.
 
+> **While the bookshop has no address, the site says "Coming soon".**
+> A placeholder must never become a link, because it would lead nowhere. So
+> until `PUBLICATIONS_WEBSITE_URL` holds a real `https://` address, every place
+> that would link to the bookshop instead shows **Coming soon** and points to
+> [About RCF Publications](about/rcf-publications/), which explains what the
+> bookshop will offer. Nothing on the site is broken or dead.
+>
+> The moment you put a real address in and rebuild, all of them turn into
+> ordinary external links to the bookshop and every "Coming soon" marker
+> disappears by itself. You do not edit any page.
+
 1. Open `_src/config.json` in Notepad.
 2. Find this line:
 

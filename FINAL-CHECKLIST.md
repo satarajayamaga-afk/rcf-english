@@ -118,7 +118,10 @@ All ten activities across all seven types were opened and worked through.
 | Forms compose the message correctly | ✅ Subject line, then each field on its own line |
 | Forms are honest about having no server | ✅ Each says the message opens in WhatsApp or your email program, where **you** press send |
 | **Bookshop link driven by one config value** | ✅ Changing `PUBLICATIONS_WEBSITE_URL` in `_src/config.json` updated **all 558 references** across the site plus `site-config.js`. Tested, then restored to the placeholder. |
-| RCF Publications marked as an external bookshop | ✅ External icon, "(external bookshop, opens in a new tab)" for screen readers, `rel="noopener"` |
+| RCF Publications marked as an external bookshop | ✅ External icon, "(external bookshop, opens in a new tab)" for screen readers, `rel="noopener"` — once the bookshop has an address |
+| **No placeholder is ever left as a link** | ✅ While `PUBLICATIONS_WEBSITE_URL` holds no real address, the token appears **0 times** in the built pages. Every bookshop link becomes "Coming soon" and points at the page explaining the bookshop. Verified across all 137 pages. |
+| The "Coming soon" state reverses automatically | ✅ Setting a real address and rebuilding produced **558 external links and 0 "Coming soon" markers**, and removed the explanatory notices. Setting the placeholder back restored the "Coming soon" state exactly. No page was edited either way. |
+| "Visit the bookshop" buttons while unpublished | ✅ Rendered as plain markers that are not links, so nothing invites a click that would fail. On the page that explains the bookshop they do not link to that same page. |
 
 ## RCF Classes
 
@@ -235,6 +238,23 @@ These were real faults, found by testing and corrected:
 8. **Form error messages read awkwardly** — "Please fill in your name (required)."
    The "(required)" note is now stripped, and select fields say "choose" rather than
    "fill in".
+
+Found later, while making the bookshop link safe:
+
+9. **A hero button was silently dropped whenever a page had exactly one of them.**
+   Eleven pages were affected, including both bookshop pages and every RCF Classes
+   course page. The cause was in the build script: PowerShell unrolls a one-item
+   list on the way out of a function, so the count came back empty and the button
+   block was skipped. Fixed at the source, so every hero button now appears.
+10. **The main menu wrapped onto two rows on wide screens.** Above 1400px the bar
+    switched to roomier spacing, but the page container is capped at 1220px, so the
+    extra window width gave it no extra room. It wrapped silently rather than
+    overflowing, because the bar is allowed to wrap as a safety net. The roomier
+    variant has been removed; the eleven sections now sit on one row at every
+    desktop width from 1240px to 1920px.
+11. **Two "Coming soon" markers were unreadable on dark backgrounds** — 2.4:1 and
+    3.89:1 against the navy hero and the teal button. Both now use light text and
+    clear AA.
 
 ---
 

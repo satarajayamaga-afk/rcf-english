@@ -436,6 +436,7 @@
         ]
       },
       "blocks": [
+        { "type": "publicationsStatus" },
         {
           "type": "prose",
           "heading": "About RCF Publications",

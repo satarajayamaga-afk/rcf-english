@@ -608,6 +608,7 @@
         "buttons": [{ "label": "Visit RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "style": "btn--accent" }]
       },
       "blocks": [
+        { "type": "publicationsStatus" },
         {
           "type": "prose",
           "heading": "Free pages and published books",

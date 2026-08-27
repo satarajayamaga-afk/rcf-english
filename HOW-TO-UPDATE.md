@@ -91,6 +91,28 @@ Every bookshop link on the site — the menu, the home page, the footer, the "Fi
 related books" panels — now points at the real address. There are over 500 of them
 and you changed one line.
 
+### Before you have an address: "Coming soon"
+
+You do not have to do anything special while the bookshop is unpublished. The site
+handles it for you.
+
+A placeholder must never become a link, because a link that leads nowhere is worse
+than no link at all. So while `PUBLICATIONS_WEBSITE_URL` is not a real `https://`
+address, the site automatically:
+
+- shows **Coming soon** wherever the bookshop would have been linked;
+- sends those links to [About RCF Publications](about/rcf-publications/) instead,
+  which explains what the bookshop will offer;
+- turns the "Visit RCF Publications" buttons into plain markers that are not links;
+- adds a short notice to the two pages that describe the bookshop.
+
+The moment you paste in a real address and run `build.cmd`, all of that reverses on
+its own: the links become normal external links and every "Coming soon" marker
+disappears. **You never edit a page to make this happen.**
+
+If you want to see it work, put a real address in, run `build.cmd`, look at the site,
+then put the placeholder back and build again.
+
 ### Other settings in the same file
 
 | Setting | What it does |

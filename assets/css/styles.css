@@ -576,13 +576,9 @@ a:hover { color: var(--teal-700); }
     text-decoration: none;
     cursor: pointer;
   }
-  @media (min-width: 1400px) {
-    .main-nav__link,
-    .main-nav__button {
-      padding-inline: 0.72rem;
-      font-size: 0.9rem;
-    }
-  }
+  /* No roomier variant above this width: the container is capped at 1220px,
+     so a wider window gives the bar no extra space. Loosening the spacing
+     here made the eleven sections wrap onto a second row. */
   .main-nav__link:hover,
   .main-nav__button:hover {
     color: #fff;
@@ -1792,6 +1788,87 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+/* "Coming soon" — used wherever RCF Publications would be linked, until the
+   bookshop has a real published address. Deliberately quieter than the gold
+   "external bookshop" badge, because it marks something not yet available. */
+.badge-soon {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  border: 1px dashed var(--line-strong);
+  color: var(--ink-500);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.badge-soon--footer {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #b7c5d8;
+}
+
+/* A button-shaped marker that is deliberately not a link, because there is
+   nowhere for it to go yet. */
+.btn--soon {
+  background: transparent;
+  color: var(--ink-500);
+  border: 2px dashed var(--line-strong);
+  cursor: default;
+}
+/* On any dark ground the marker needs light text to stay readable. */
+.section--navy .btn--soon,
+.promo .btn--soon,
+.hero .btn--soon,
+.page-hero .btn--soon {
+  color: #c3cfe0;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+/* Inside a coloured button or on a dark ground the badge is small text, so it
+   takes plain white to clear the AA ratio. */
+.hero .badge-soon,
+.page-hero .badge-soon,
+.promo .badge-soon,
+.btn .badge-soon {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #ffffff;
+}
+.btn--soon:active { transform: none; }
+
+/* The bookshop entry in the header, while it is still to come. */
+.header-link--soon {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+  color: #c3cfe0;
+}
+.header-link--soon:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
+.header-link__soon {
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* In the desktop bar the eleven sections only just fit on one row, so the
+   marker is read out but not drawn. Sighted visitors see "Coming soon" on the
+   bookshop button in the header just above it, and in the About menu. */
+.main-nav__soon {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 

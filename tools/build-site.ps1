@@ -51,10 +51,15 @@ function P($obj, $name, $fallback = $null) {
     return $prop.Value
 }
 
+# Always hand back a real list, even when it holds a single item.
+#
+# The leading comma matters. Without it PowerShell unrolls a one-item array on
+# the way out of the function, so the caller receives the item itself and
+# .Count is empty rather than 1. That silently swallowed any hero button list
+# that contained exactly one button.
 function AsList($value) {
     if ($null -eq $value) { return @() }
-    if ($value -is [System.Array]) { return $value }
-    return @($value)
+    return , @($value)
 }
 
 function E($text) {
@@ -70,12 +75,39 @@ function JsonString($text) {
     return (ConvertTo-Json ([string]$text) -Compress)
 }
 
+# ---------------------------------------------------------- RCF Publications
+#
+# RCF Publications is a separate website. Until it has a real published
+# address, PUBLICATIONS_WEBSITE_URL in _src/config.json is left as a
+# placeholder - and a placeholder must never become a link, because it would
+# lead nowhere.
+#
+# So while the bookshop is not published, every link to it is turned into an
+# ordinary internal link to the page that explains what RCF Publications is,
+# marked "Coming soon". The moment a real https:// address is put in the
+# config file and the site is rebuilt, all of them become external links to
+# the bookshop. Nothing else has to be edited.
+
+function PubIsLive() {
+    return (([string]$script:Config.PUBLICATIONS_WEBSITE_URL) -match '^https?://')
+}
+
+function IsPub($value) {
+    return ([string]$value -eq 'PUBLICATIONS_WEBSITE_URL')
+}
+
+# The page that stands in for the bookshop until it is published.
+$script:PubFallback = 'about/rcf-publications/'
+
 # Turn a site-root path such as "ol-english/grammar/" into a link that works
 # from the page being written, whatever address the site is published at.
 function Url($value) {
     if ($null -eq $value) { return '' }
     $v = [string]$value
-    if ($v -eq 'PUBLICATIONS_WEBSITE_URL') { return $script:Config.PUBLICATIONS_WEBSITE_URL }
+    if (IsPub $v) {
+        if (PubIsLive) { return $script:Config.PUBLICATIONS_WEBSITE_URL }
+        $v = $script:PubFallback
+    }
     if ($v -match '^(https?:|mailto:|tel:|#)') { return $v }
     $v = $v -replace '^/', ''
     $query = ''
@@ -90,7 +122,22 @@ function Url($value) {
 
 function IsExternal($value) {
     $v = [string]$value
-    return ($v -eq 'PUBLICATIONS_WEBSITE_URL' -or $v -match '^https?:')
+    # A bookshop link is only external once the bookshop actually exists.
+    if (IsPub $v) { return (PubIsLive) }
+    return ($v -match '^https?:')
+}
+
+# The marker shown beside a bookshop link: "external bookshop" once it is
+# published, "Coming soon" until then.
+function PubBadge() {
+    if (PubIsLive) { return '<span class="badge-ext">External bookshop</span>' }
+    return '<span class="badge-soon">Coming soon</span>'
+}
+
+# Wording used in screen-reader-only notes and button labels.
+function PubNote() {
+    if (PubIsLive) { return ' (external bookshop, opens in a new tab)' }
+    return ' - the bookshop website is not published yet. This page explains what it will offer.'
 }
 
 # A very small inline notation so page files stay readable:
@@ -254,8 +301,10 @@ function MegaPanel($item, $index, $slug) {
             $current = ''
             if ($target.Trim('/') -eq $slug) { $current = ' aria-current="page"' }
             $ext = ''
+            $soon = ''
             if (IsExternal $target) { $ext = ' target="_blank" rel="noopener" class="ext"' }
-            $html += '<li><a href="' + (E (Url $target)) + '"' + $current + $ext + '>' + (E (P $link 'label')) + '</a></li>'
+            elseif (IsPub $target) { $soon = ' <span class="badge-soon">Coming soon</span>' }
+            $html += '<li><a href="' + (E (Url $target)) + '"' + $current + $ext + '>' + (E (P $link 'label')) + $soon + '</a></li>'
         }
         $html += '</ul></div>'
     }
@@ -289,7 +338,12 @@ function DesktopNav($slug) {
             $extra = ''
             if (IsExternal $url) {
                 $ext = ' target="_blank" rel="noopener"'
-                $extra = '<span class="visually-hidden"> (external bookshop, opens in a new tab)</span>'
+                $extra = '<span class="visually-hidden">' + (PubNote) + '</span>'
+            }
+            elseif (IsPub $url) {
+                # The bookshop is not published yet, so this points at the page
+                # explaining it, and says so rather than looking like a dead end.
+                $extra = '<span class="main-nav__soon">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span>'
             }
             $currentAttr = ''
             if ($current) { $currentAttr = ' aria-current="page"' }
@@ -322,7 +376,10 @@ function DrawerNav($slug) {
         if (IsExternal $url) {
             $ext = ' target="_blank" rel="noopener"'
             $cls += ' ext'
-            $extra = '<span class="visually-hidden"> (external bookshop, opens in a new tab)</span>'
+            $extra = '<span class="visually-hidden">' + (PubNote) + '</span>'
+        }
+        elseif (IsPub $url) {
+            $extra = ' <span class="badge-soon">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span>'
         }
         $html += '<a class="' + $cls + '" href="' + (E (Url $url)) + '"' + $currentAttr + $ext + '>' + (E $label) + $extra + '</a>'
 
@@ -372,7 +429,12 @@ function Header($slug) {
     $html += '<input type="search" id="header-search-input" name="q" placeholder="Search lessons and papers"></form>'
     $html += '<div class="header-actions">'
     $html += '<a class="header-link" href="' + (E (Url 'rcf-classes/')) + '">RCF Classes</a>'
-    $html += '<a class="header-link header-link--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external bookshop, opens in a new tab)</span></a>'
+    if (PubIsLive) {
+        $html += '<a class="header-link header-link--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
+    }
+    else {
+        $html += '<a class="header-link header-link--soon" href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + '<span class="header-link__soon">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span></a>'
+    }
     $html += '<button class="search-toggle" type="button" aria-expanded="false" aria-controls="mobile-search"><span class="visually-hidden">Search</span><span aria-hidden="true">&#128269;</span></button>'
     $html += '<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-drawer"><span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle__text">Menu</span></button>'
     $html += '</div></div>'
@@ -437,13 +499,19 @@ function Footer() {
     }
 
     $html += '<div class="footer-col"><h3>Bookshop</h3><ul>'
-    $html += '<li><a class="ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a></li>'
+    if (PubIsLive) {
+        $html += '<li><a class="ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a></li>'
+    }
+    else {
+        $html += '<li><a href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + ' <span class="badge-soon badge-soon--footer">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span></a></li>'
+    }
     $html += '<li><a href="' + (E (Url 'about/rcf-publications/')) + '">About RCF Publications</a></li>'
     $html += '<li><a href="' + (E (Url 'teacher-resources/rcf-publications-for-teachers/')) + '">Books for teachers</a></li>'
     $html += '</ul></div></div>'
 
     $html += '<div class="footer-bottom"><p>&copy; ' + $year + ' ' + (E $script:Config.siteName) + '. Materials on this site are for educational use.</p>'
-    $html += '<p>' + (E $script:Config.publicationsName) + ' is a separate website.</p></div>'
+    $sep = if (PubIsLive) { ' is a separate website.' } else { ' is a separate website, not yet published.' }
+    $html += '<p>' + (E $script:Config.publicationsName) + (E $sep) + '</p></div>'
     return $html + '</div></footer>'
 }
 
@@ -553,7 +621,7 @@ function RenderBlock($block) {
                 else { $html += '<h3>' + $title + '</h3>' }
                 $html += Paragraphs (P $item 'text')
                 $html += Bullets (P $item 'bullets')
-                if ($isExt) { $html += '<p class="mb-0"><span class="badge-ext">External bookshop</span></p>' }
+                if ($isExt -or (IsPub $target)) { $html += '<p class="mb-0">' + (PubBadge) + '</p>' }
                 elseif ($target) { $html += '<span class="card__more" aria-hidden="true">' + (E (P $item 'more' 'Open')) + '</span>' }
                 $html += '</div>'
             }
@@ -724,25 +792,73 @@ function RenderBlock($block) {
         }
 
         'publications' {
-            $url = $script:Config.PUBLICATIONS_WEBSITE_URL
+            $onFallbackPage = ($script:PageSlug -eq $script:PubFallback.Trim('/'))
             $html = (SectionOpen $block) + '<div class="promo"><div>'
-            $html += '<span class="section__eyebrow">Separate bookshop website</span>'
+            if (PubIsLive) { $html += '<span class="section__eyebrow">Separate bookshop website</span>' }
+            else { $html += '<span class="section__eyebrow">Separate bookshop website &mdash; coming soon</span>' }
             $html += '<h2>' + (E (P $block 'heading' 'RCF Publications')) + '</h2>'
             $html += Paragraphs (P $block 'text')
-            $html += '<div class="btn-row"><a class="btn btn--accent ext" href="' + (E $url) + '" target="_blank" rel="noopener">Visit ' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a>'
-            $html += '<a class="btn btn--ghost-light" href="' + (E (Url 'about/rcf-publications/')) + '">What RCF Publications produces</a></div></div>'
+            $html += '<div class="btn-row">'
+            if (PubIsLive) {
+                $html += '<a class="btn btn--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">Visit ' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a>'
+                if (-not $onFallbackPage) {
+                    $html += '<a class="btn btn--ghost-light" href="' + (E (Url $script:PubFallback)) + '">What ' + (E $script:Config.publicationsName) + ' produces</a>'
+                }
+            }
+            else {
+                # No address yet, so no link. A plain marker instead of a button
+                # that would lead nowhere.
+                $html += '<span class="btn btn--soon" aria-disabled="true">' + (E $script:Config.publicationsName) + ' &mdash; coming soon</span>'
+                if (-not $onFallbackPage) {
+                    $html += '<a class="btn btn--ghost-light" href="' + (E (Url $script:PubFallback)) + '">What ' + (E $script:Config.publicationsName) + ' will offer</a>'
+                }
+            }
+            $html += '</div></div>'
             $html += '<div class="promo__aside"><h3>You will find</h3><ul>'
             foreach ($i in (AsList (P $block 'items'))) { $html += '<li>' + (E $i) + '</li>' }
-            $html += '</ul><p class="text-small mb-0">RCF Publications is a separate website with its own ordering arrangements. This link opens it in a new tab.</p></div>'
+            $html += '</ul><p class="text-small mb-0">'
+            if (PubIsLive) {
+                $html += (E $script:Config.publicationsName) + ' is a separate website with its own ordering arrangements. This link opens it in a new tab.'
+            }
+            else {
+                $html += (E $script:Config.publicationsName) + ' will be a separate website with its own ordering arrangements. It has not been published yet, so there is nothing to link to at the moment.'
+            }
+            $html += '</p></div>'
             return $html + '</div></div></section>'
         }
 
+        'publicationsStatus' {
+            # Shown only while the bookshop has no published address. Once a
+            # real URL is put in _src/config.json, this block writes nothing
+            # at all and every bookshop link becomes a normal external link.
+            if (PubIsLive) { return '' }
+            $html = (SectionOpen $block)
+            $html += '<div class="callout callout--warn">'
+            $html += '<p class="callout__title">' + (E $script:Config.publicationsName) + ' is not open yet</p>'
+            $html += '<p>The bookshop has its own separate website, and that website has not been published. '
+            $html += 'Until it is, there is nothing to link to, so this site says <strong>Coming soon</strong> '
+            $html += 'wherever the bookshop would otherwise appear rather than offering a link that leads nowhere.</p>'
+            $html += '<p class="mb-0">Everything on RCF English is free to read and is unaffected. '
+            $html += 'To ask about books in the meantime, please <a href="' + (E (Url 'contact/')) + '">get in touch</a>.</p>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'relatedBooks' {
-            $url = $script:Config.PUBLICATIONS_WEBSITE_URL
             $html = (SectionOpen $block)
             $html += '<div class="related-books"><h3>' + (E (P $block 'heading' 'Find related books')) + '</h3>'
             $html += Paragraphs (P $block 'text')
-            $html += '<p class="mb-0"><a class="btn btn--sm btn--outline ext" href="' + (E $url) + '" target="_blank" rel="noopener">Browse ' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a></p>'
+            if (PubIsLive) {
+                $html += '<p class="mb-0"><a class="btn btn--sm btn--outline ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">Browse ' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a></p>'
+            }
+            else {
+                $html += '<p class="mb-0"><span class="badge-soon">Coming soon</span> '
+                $html += '<span class="text-small">' + (E $script:Config.publicationsName) + ' has not been published yet. '
+                if ($script:PageSlug -ne $script:PubFallback.Trim('/')) {
+                    $html += '<a href="' + (E (Url $script:PubFallback)) + '">See what it will offer</a>.'
+                }
+                $html += '</span></p>'
+            }
             return $html + '</div></div></section>'
         }
 
@@ -1092,7 +1208,20 @@ function HeroSection($page) {
             $cls = 'btn ' + [string](P $b 'style' 'btn--accent')
             $e = ''
             if (IsExternal $target) { $e = ' target="_blank" rel="noopener"'; $cls += ' ext' }
-            $html += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>' + (E (P $b 'label')) + '</a>'
+            if ((IsPub $target) -and -not (PubIsLive)) {
+                # No bookshop address yet. On the page that explains the
+                # bookshop this becomes a plain marker; anywhere else it leads
+                # to that page rather than to nothing.
+                if ($script:PageSlug -eq $script:PubFallback.Trim('/')) {
+                    $html += '<span class="btn btn--soon" aria-disabled="true">' + (E $script:Config.publicationsName) + ' &mdash; coming soon</span>'
+                }
+                else {
+                    $html += '<a class="btn ' + [string](P $b 'style' 'btn--accent') + '" href="' + (E (Url $script:PubFallback)) + '">' + (E (P $b 'label')) + ' <span class="badge-soon">Coming soon</span></a>'
+                }
+            }
+            else {
+                $html += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>' + (E (P $b 'label')) + '</a>'
+            }
         }
         $html += '</div>'
         $note = P $hero 'note'
@@ -1114,7 +1243,17 @@ function HeroSection($page) {
             $cls = 'btn ' + [string](P $b 'style' 'btn--ghost-light')
             $e = ''
             if (IsExternal $target) { $e = ' target="_blank" rel="noopener"'; $cls += ' ext' }
-            $html += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>' + (E (P $b 'label')) + '</a>'
+            if ((IsPub $target) -and -not (PubIsLive)) {
+                if ($script:PageSlug -eq $script:PubFallback.Trim('/')) {
+                    $html += '<span class="btn btn--soon" aria-disabled="true">' + (E $script:Config.publicationsName) + ' &mdash; coming soon</span>'
+                }
+                else {
+                    $html += '<a class="' + $cls + '" href="' + (E (Url $script:PubFallback)) + '">' + (E (P $b 'label')) + ' <span class="badge-soon">Coming soon</span></a>'
+                }
+            }
+            else {
+                $html += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>' + (E (P $b 'label')) + '</a>'
+            }
         }
         $html += '</div>'
     }
