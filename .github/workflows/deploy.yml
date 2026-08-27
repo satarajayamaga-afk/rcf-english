@@ -1,0 +1,105 @@
+name: Deploy RCF English to GitHub Pages
+
+# ---------------------------------------------------------------------------
+# What this does
+#
+#   Every time you push to the main branch, this publishes the website to
+#   GitHub Pages. There is no build step to go wrong: the pages in this
+#   repository are already finished HTML files, produced on your own computer
+#   by build.cmd. This workflow only checks them and copies them across.
+#
+# One-time setup on GitHub (see README.md):
+#   Settings -> Pages -> Build and deployment -> Source: "GitHub Actions"
+# ---------------------------------------------------------------------------
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deployment finish rather than cancelling it half-way.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check the data files and the pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check that every data file can be read
+        shell: pwsh
+        run: |
+          $problems = 0
+          Get-ChildItem -Path _src, data -Filter *.json -Recurse | ForEach-Object {
+            if ($_.Name -eq 'search-index.json') { return }
+            try {
+              $null = Get-Content $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json
+              Write-Host "OK       $($_.FullName)"
+            } catch {
+              Write-Host "PROBLEM  $($_.FullName) - $($_.Exception.Message)"
+              $script:problems++
+            }
+          }
+          if ($problems -gt 0) {
+            Write-Host "::error::$problems data file(s) could not be read. Run check.cmd on your computer."
+            exit 1
+          }
+
+      - name: Check that the site has actually been built
+        shell: pwsh
+        run: |
+          if (-not (Test-Path 'index.html')) {
+            Write-Host '::error::index.html is missing. Run build.cmd on your computer and commit the result.'
+            exit 1
+          }
+          $pages = (Get-ChildItem -Recurse -Filter index.html |
+                    Where-Object { $_.FullName -notmatch '\\_src\\|/_src/' }).Count
+          Write-Host "Pages found: $pages"
+          if ($pages -lt 10) {
+            Write-Host '::error::Very few pages were found. Did build.cmd finish successfully?'
+            exit 1
+          }
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect the files that make up the website
+        run: |
+          mkdir -p _publish
+          rsync -a ./ _publish/ \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '_publish' \
+            --exclude '_src' \
+            --exclude 'tools' \
+            --exclude '*.cmd' \
+            --exclude 'HOW-TO-UPDATE.md' \
+            --exclude 'FINAL-CHECKLIST.md' \
+            --exclude 'RESOURCE-PUBLISHING-POLICY.md'
+          touch _publish/.nojekyll
+          echo "Files to publish:"
+          find _publish -type f | wc -l
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _publish
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

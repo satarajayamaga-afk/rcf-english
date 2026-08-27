@@ -1,0 +1,594 @@
+{
+  "pages": [
+    {
+      "slug": "rcf-classes",
+      "title": "RCF Classes",
+      "metaTitle": "RCF Classes | Online English and Literature classes | RCF English",
+      "description": "Online English and Literature classes conducted by R. C. Fernando: O/L English, O/L and A/L Literature, General English, Spoken English and revision classes. Ask on WhatsApp.",
+      "keywords": "online English classes, O/L English class, Literature class, spoken English class, Sri Lanka, R. C. Fernando",
+      "kicker": "Learn with a teacher",
+      "kind": "page",
+      "schema": "Course",
+      "hero": {
+        "text": "Online classes in English and English Literature conducted by R. C. Fernando. Clear explanation, guided practice, individual correction and steady revision — with extra support for learners who are finding it difficult.",
+        "buttons": [
+          { "label": "Available courses", "url": "rcf-classes/#courses", "style": "btn--accent" },
+          { "label": "How to enrol", "url": "rcf-classes/enrolment/", "style": "btn--ghost-light" },
+          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About RCF Classes",
+          "text": [
+            "R. C. Fernando currently conducts mainly online classes through RCF Classes. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
+            "Online delivery enables RCF Classes to reach students beyond a single geographical area and provide access to specialised English and literature instruction across the country.",
+            "He is a graduate in English of the University of Peradeniya, holds a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya, and is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA). [His full background is here](about/background/)."
+          ]
+        },
+        {
+          "type": "classes",
+          "id": "courses",
+          "heading": "Available courses",
+          "eyebrow": "What is offered",
+          "variant": "tint",
+          "intro": ["Each card shows what is currently settled. Where a day, time, fee or number of places has not yet been decided, the card says so rather than guessing. Ask on WhatsApp and you will be told what applies now."]
+        },
+        {
+          "type": "steps",
+          "heading": "The teaching approach",
+          "eyebrow": "How the classes are taught",
+          "variant": "navy",
+          "intro": ["The same approach that runs through the lessons on this site. It is deliberately gradual, because most learners fail at writing and at literature answers through lack of preparation rather than lack of ability."],
+          "items": [
+            { "title": "Clear and systematic explanation", "text": ["One point at a time, in plain language, with the reason behind the rule and not only the rule."] },
+            { "title": "Guided practice before independent work", "text": ["No task is set cold. A model is studied, the structure is identified, and support is withdrawn step by step."] },
+            { "title": "Practical use of language", "text": ["English used for real purposes — writing a letter someone would actually send, saying something you would actually say."] },
+            { "title": "Individual correction and feedback", "text": ["Written work is corrected individually, with one clear instruction rather than a page of red."] },
+            { "title": "Examination preparation where relevant", "text": ["Paper structure, timing, answer development and past-paper practice, for those preparing for O/L or A/L."] },
+            { "title": "Regular revision", "text": ["Deliberate return to earlier work, spaced out, because that is what makes learning permanent."] },
+            { "title": "Confidence, and support for those in difficulty", "text": ["Extra help for learners who are struggling, without singling them out in front of others."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Who these classes are for",
+          "columns": "3",
+          "items": [
+            { "title": "O/L candidates", "text": ["Grade 10 and 11 students preparing for English and English Literature, including private candidates studying without a school."], "url": "rcf-classes/ol-english/", "more": "O/L English classes" },
+            { "title": "A/L Literature students", "text": ["Advanced Level students who need close reading, critical appreciation and well-organised essay answers."], "url": "rcf-classes/al-literature/", "more": "A/L Literature classes" },
+            { "title": "Adult learners", "text": ["Adults returning to English for work or daily life, and anyone rebuilding confidence after a long gap."], "url": "rcf-classes/general-english/", "more": "General English classes" },
+            { "title": "Learners who hesitate to speak", "text": ["People who understand English perfectly well but cannot bring themselves to use it."], "url": "rcf-classes/spoken-english/", "more": "Spoken English classes" },
+            { "title": "Students who need extra help", "text": ["Learners who need smaller steps, more models and more repetition — including in one-to-one classes."], "url": "rcf-classes/individual-classes/", "more": "Individual classes" },
+            { "title": "Students in rural and remote areas", "text": ["Online delivery means that specialised English and Literature teaching is not limited to one town."], "url": "rcf-classes/online-classes/", "more": "Online classes" }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Class formats",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Individual Classes", "url": "rcf-classes/individual-classes/", "more": "Open", "text": ["One-to-one teaching arranged around a single learner's needs and pace."] },
+            { "title": "Group Classes", "url": "rcf-classes/group-classes/", "more": "Open", "text": ["Small-group teaching, where learners benefit from other people's questions."] },
+            { "title": "Online Classes", "url": "rcf-classes/online-classes/", "more": "Open", "text": ["How the online classes work, and what you need in order to attend."] }
+          ]
+        },
+        {
+          "type": "timetable",
+          "heading": "Timetable",
+          "eyebrow": "Days and times",
+          "intro": ["Days and times are published here once they are settled. Nothing is invented — if the schedule is not shown, it has not been decided or announced yet."]
+        },
+        {
+          "type": "steps",
+          "heading": "How to enrol",
+          "eyebrow": "Five steps",
+          "variant": "tint",
+          "items": [
+            { "title": "Choose a class", "text": ["Look through the courses above and decide which suits you. If you are not sure, say what you need and you will be advised."] },
+            { "title": "Contact RCF Classes through WhatsApp", "text": ["Use one of the buttons on this page. The message is written for you; you add your own details and press send."] },
+            { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day, time and fee, and whether places are available."] },
+            { "title": "Confirm registration", "text": ["Registration is confirmed by the teacher after this exchange. It is not automatic and nothing on this website registers you."] },
+            { "title": "Receive joining instructions", "text": ["Once your place is confirmed you will be sent the joining details privately. These are never published on this website."] }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about the classes",
+          "title": "WhatsApp",
+          "text": ["Each button opens WhatsApp with a message already written. Read it, add anything you wish, and press send yourself. Nothing is sent from this website."],
+          "buttons": [
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an RCF Class. The class I would like to join is: " }
+          ]
+        },
+        {
+          "type": "notices",
+          "heading": "Class notices",
+          "eyebrow": "Announcements",
+          "variant": "tint",
+          "intro": ["Changes of time, revision announcements and other messages appear here. Students already enrolled also receive them directly."]
+        },
+        {
+          "type": "cards",
+          "heading": "Public student resources",
+          "columns": "3",
+          "intro": ["Everything on RCF English is free and open to everyone, whether or not you attend a class. These are the pages class students use most."],
+          "items": [
+            { "title": "Student Resources", "url": "rcf-classes/student-resources/", "more": "Open", "text": ["The pages recommended alongside each course."] },
+            { "title": "Interactive practice", "url": "interactive/", "more": "Open", "text": ["Ten self-marking activities across grammar, vocabulary, reading and correction."] },
+            { "title": "Past papers", "url": "past-papers/", "more": "Open", "text": ["Papers, model papers and marking guidance for timed practice."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Frequently asked questions",
+          "variant": "tint",
+          "faq": true,
+          "items": [
+            { "q": "How do I join a class?", "a": ["Choose a class, contact RCF Classes on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic and nothing on this website enrols you."] },
+            { "q": "Why are the days, times and fees not shown for every class?", "a": ["Because they change, and publishing an out-of-date schedule helps nobody. Where a detail has not been settled, this site says so rather than inventing a figure. Ask on WhatsApp and you will be told what currently applies."] },
+            { "q": "Are the classes online or in a classroom?", "a": ["Classes are conducted mainly online, which allows students in any part of the country to attend."] },
+            { "q": "What do I need in order to attend?", "a": ["A device with an internet connection, a notebook and a pen. Spoken English classes also need a working microphone. Literature classes need the prescribed texts."] },
+            { "q": "Are classes in English only?", "a": ["Classes are conducted in English, with explanation in simpler language where a learner needs it. Nobody is expected to understand everything immediately."] },
+            { "q": "Can I join in the middle of a course?", "a": ["It depends on the course and how far it has progressed. Ask on WhatsApp and you will be told honestly whether joining now would work for you."] },
+            { "q": "Is there individual attention in a group class?", "a": ["Written work is corrected individually in both group and individual classes. Learners who need more support than a group allows are usually better suited to individual classes."] },
+            { "q": "Do you teach students who are very weak in English?", "a": ["Yes. Support for learners experiencing difficulty is a particular emphasis of these classes, and of this whole platform."] },
+            { "q": "Will I be sent a meeting link?", "a": ["Joining instructions are sent privately once your place is confirmed. Meeting links and passwords are never published on this website."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More about RCF Classes",
+          "columns": "4",
+          "items": [
+            { "title": "Timetables", "url": "rcf-classes/timetable/", "more": "Open" },
+            { "title": "Upcoming Classes", "url": "rcf-classes/upcoming/", "more": "Open" },
+            { "title": "Class Notices", "url": "rcf-classes/notices/", "more": "Open" },
+            { "title": "Enrolment", "url": "rcf-classes/enrolment/", "more": "Open" },
+            { "title": "Student Resources", "url": "rcf-classes/student-resources/", "more": "Open" },
+            { "title": "Frequently Asked Questions", "url": "rcf-classes/faq/", "more": "Open" },
+            { "title": "Contact the Teacher", "url": "rcf-classes/contact/", "more": "Open" },
+            { "title": "About the founder", "url": "about/founder/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/enrolment",
+      "title": "Enrolment",
+      "description": "How to enrol in an RCF Class: the five steps, what you will be asked, what you will be told, and what happens after your place is confirmed.",
+      "keywords": "enrolment, how to join, registration, RCF Classes, WhatsApp",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "Enrolment is a conversation, not a form. Nothing on this website registers you for anything." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "The five steps",
+          "items": [
+            { "title": "Choose a class", "text": ["Look through the [available courses](rcf-classes/). If you are unsure which suits you, say what you need — your grade, your examination, or what you find difficult — and you will be advised."] },
+            { "title": "Contact RCF Classes through WhatsApp", "text": ["Use one of the buttons on this page. The message is written for you. Add your own details before sending it."] },
+            { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day and time, the fee, and whether places are available. This information is given directly rather than published, because it changes."] },
+            { "title": "Confirm registration", "text": ["If the class suits you, confirm. **Registration is confirmed by the teacher.** It is not automatic, and no place is reserved by visiting this website."] },
+            { "title": "Receive joining instructions", "text": ["Once your place is confirmed, joining details are sent to you privately. They are never published on this website."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "What you will be asked",
+          "text": ["So that you can have the answers ready, and get a useful reply the first time."],
+          "bullets": [
+            "Which class you are interested in.",
+            "Your grade or level — or, for General English, roughly what you can already do.",
+            "Whether you are preparing for an examination, and in which year.",
+            "Whether you would prefer individual or group classes.",
+            "Which days and times would be possible for you.",
+            "Anything you find particularly difficult, so the teaching can take account of it."
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Start here",
+          "title": "WhatsApp",
+          "text": ["Choose the message that fits your situation. Read it, add your details, and press send yourself."],
+          "buttons": [
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an RCF Class. The class I would like to join is: " },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "I am not sure which class suits me", "message": "Hello, I would like advice on which RCF Class would suit me. My grade or level is: " }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Questions about enrolling",
+          "faq": true,
+          "items": [
+            { "q": "Can I register on this website?", "a": ["No. This website has no server and no registration system. Enrolment is arranged directly with the teacher on WhatsApp, and a place is confirmed only by the teacher."] },
+            { "q": "Is any payment taken on this website?", "a": ["No. RCF English does not take payments of any kind, and no payment details should ever be entered anywhere on this site. Fee arrangements are discussed directly."] },
+            { "q": "How soon will I get a reply?", "a": ["Messages are answered as soon as possible. If you have not heard within a couple of days, please send a reminder — messages are occasionally missed."] },
+            { "q": "What if the class times do not suit me?", "a": ["Say so. Times are sometimes arranged around the students who want a particular class, especially for individual classes."] },
+            { "q": "Can I try a class before deciding?", "a": ["Ask. Whether this is possible depends on the course and where it has reached, and you will be told honestly."] },
+            { "q": "Can my parent make the enquiry for me?", "a": ["Of course. Please say who the student is, their grade, and what they need."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "variant": "tint",
+          "title": "Please note",
+          "bullets": [
+            "**Nothing on this website constitutes an offer of a place.** Class information here is descriptive.",
+            "**Do not send personal documents, identity numbers or payment details** in an enquiry message.",
+            "**Joining links and passwords are never published here** and are sent privately after confirmation."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/timetable",
+      "title": "Timetables",
+      "description": "The RCF Classes timetable. Days and times are published here once settled; otherwise you can request the current timetable on WhatsApp.",
+      "keywords": "class timetable, schedule, days and times, RCF Classes",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "On a telephone the timetable appears as cards rather than a wide table, so nothing is squeezed off the edge of the screen." },
+      "blocks": [
+        {
+          "type": "timetable",
+          "heading": "Current timetable",
+          "intro": ["Only classes whose days and times have actually been settled appear here. Nothing is invented; where a schedule has not been fixed, this page says so."]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "Why the timetable may be incomplete",
+          "text": [
+            "Class times are often arranged around the students who want a particular course, and they change from term to term. Publishing a schedule that later turns out to be wrong is worse than publishing none.",
+            "The current position is always available on WhatsApp, and you will be told exactly what applies to the class you are interested in."
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Get the current timetable",
+          "title": "WhatsApp",
+          "text": ["The timetable is sent directly, so it is always up to date."],
+          "buttons": [
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Related",
+          "columns": "3",
+          "items": [
+            { "title": "Upcoming Classes", "url": "rcf-classes/upcoming/", "more": "Open" },
+            { "title": "Class Notices", "url": "rcf-classes/notices/", "more": "Open" },
+            { "title": "Enrolment", "url": "rcf-classes/enrolment/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/upcoming",
+      "title": "Upcoming Classes",
+      "description": "Classes opening soon at RCF Classes, including revision courses before examinations. Ask on WhatsApp to be told when registration opens.",
+      "keywords": "upcoming classes, new classes, registration opening, revision courses",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "Courses whose registration is opening soon. If nothing here suits you, ask — new classes are often arranged around the students who want them." },
+      "blocks": [
+        {
+          "type": "classes",
+          "heading": "Opening soon",
+          "intro": ["These courses are offered. Where the schedule, fee or number of places has not been settled, the card says so rather than guessing."]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Revision courses before examinations",
+          "text": [
+            "Short revision courses are usually arranged in the months before the O/L and A/L examinations, covering paper structure, timing, answer development, common mistakes and practice on past and model papers.",
+            "Dates depend on the examination timetable for the year. Ask on WhatsApp to be told when the next one is arranged. [See revision classes](rcf-classes/revision/)."
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Be told when a class opens",
+          "title": "WhatsApp",
+          "text": ["Send a message saying which class you are waiting for, and you will be told when registration opens."],
+          "buttons": [
+            { "label": "Tell me when a class opens", "message": "Hello, I would like to be told when registration opens for an RCF Class. The class I am waiting for is: " },
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/notices",
+      "title": "Class Notices",
+      "description": "Notices for RCF Classes students: changes of time, revision announcements, holiday breaks and other messages.",
+      "keywords": "class notices, announcements, changes of time, RCF Classes",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "Public announcements for class students. Anything private — joining links, personal messages, results — is sent directly and never published here." },
+      "blocks": [
+        {
+          "type": "notices",
+          "heading": "Notices"
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "What is and is not published here",
+          "bullets": [
+            "**Published here:** changes of day or time, revision announcements, holiday breaks, and reminders that concern a whole class.",
+            "**Never published here:** meeting links, meeting passwords, students' names, telephone numbers, marks or results, or any personal message. Those are sent to enrolled students directly.",
+            "If you are enrolled and have not received a notice you were expecting, please [ask](rcf-classes/contact/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Related",
+          "columns": "3",
+          "items": [
+            { "title": "Timetables", "url": "rcf-classes/timetable/", "more": "Open" },
+            { "title": "Upcoming Classes", "url": "rcf-classes/upcoming/", "more": "Open" },
+            { "title": "Contact the Teacher", "url": "rcf-classes/contact/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/student-resources",
+      "title": "Student Resources",
+      "description": "The RCF English pages recommended alongside each RCF class, free and open to everyone whether or not they attend.",
+      "keywords": "student resources, class materials, recommended pages, free resources",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "Everything on RCF English is free and open to everyone. These are the pages class students are pointed to most often." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Open to everyone",
+          "text": [
+            "Nothing on this page requires enrolment, a login or a password. It is a reading list, not a private area.",
+            "Class materials that are specific to a course — worksheets set for a particular week, corrected work, joining details — are sent to enrolled students directly and are not published here."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "For O/L English students",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Syllabus and structure", "url": "ol-english/syllabus/", "more": "Open" },
+            { "title": "Grammar", "url": "ol-english/grammar/", "more": "Open" },
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Open" },
+            { "title": "Common mistakes", "url": "ol-english/common-mistakes/", "more": "Open" },
+            { "title": "Model questions", "url": "ol-english/model-questions/", "more": "Open" },
+            { "title": "Model answers", "url": "ol-english/model-answers/", "more": "Open" },
+            { "title": "Examination techniques", "url": "ol-english/examination-techniques/", "more": "Open" },
+            { "title": "Interactive revision", "url": "ol-english/interactive-revision/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "For Literature students",
+          "columns": "4",
+          "items": [
+            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
+            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Literary techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
+            { "title": "Important quotations", "url": "ol-literature/quotations/", "more": "Open" },
+            { "title": "Revision activities", "url": "ol-literature/revision-activities/", "more": "Open" },
+            { "title": "A/L answer development", "url": "al-literature/answer-development/", "more": "Open" },
+            { "title": "A/L critical appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "For General and Spoken English students",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Practical grammar", "url": "general-english/practical-grammar/", "more": "Open" },
+            { "title": "Practical conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open" },
+            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" },
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Self-assessment", "url": "general-english/self-assessment/", "more": "Open" },
+            { "title": "Interactive practice", "url": "general-english/interactive-practice/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "For everyone",
+          "columns": "3",
+          "items": [
+            { "title": "Past papers", "url": "past-papers/", "more": "Open", "text": ["Papers, model papers and marking guidance."] },
+            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open", "text": ["Timed practice, self-marking and rewriting."] },
+            { "title": "Interactive learning", "url": "interactive/", "more": "Open", "text": ["Ten activities that mark themselves and explain every answer."] }
+          ]
+        },
+        {
+          "type": "relatedBooks",
+          "variant": "tint",
+          "heading": "Find related books",
+          "text": ["RCF Publications produces study guides, grammar resources and examination-revision materials that work alongside these free pages. It is a separate website."]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/faq",
+      "title": "Frequently Asked Questions",
+      "description": "Answers to common questions about RCF Classes: joining, schedules and fees, what is needed, how classes are taught and what support is available.",
+      "keywords": "RCF Classes FAQ, questions, joining, fees, schedule",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "If your question is not answered here, ask on WhatsApp — the answer is usually quicker than the search." },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Joining a class",
+          "faq": true,
+          "items": [
+            { "q": "How do I join?", "a": ["Choose a class, contact RCF Classes on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic. See [Enrolment](rcf-classes/enrolment/)."] },
+            { "q": "Can I register on this website?", "a": ["No. This website has no server and no registration system. Nothing here reserves a place."] },
+            { "q": "Is any payment taken on this website?", "a": ["No. RCF English does not take payments of any kind. Never enter payment details anywhere on this site."] },
+            { "q": "Can I join in the middle of a course?", "a": ["It depends on the course and how far it has gone. Ask, and you will be told honestly whether joining now would work for you."] },
+            { "q": "Can my parent enquire for me?", "a": ["Yes. Please say who the student is, their grade, and what they need help with."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Schedules and fees",
+          "variant": "tint",
+          "faq": true,
+          "items": [
+            { "q": "Why are the days and times not shown for every class?", "a": ["Because they change, and an out-of-date timetable helps nobody. Times are also sometimes arranged around the students who want a particular class. Where nothing has been settled, this site says so rather than inventing a schedule."] },
+            { "q": "Why are the fees not published?", "a": ["Fees depend on the course, its length and its format, and they change. They are given directly, so that what you are told is what actually applies."] },
+            { "q": "How long is a class?", "a": ["It depends on the course. This is confirmed when you enquire, along with the day and time."] },
+            { "q": "What if the times do not suit me?", "a": ["Say so when you enquire. Alternative arrangements are sometimes possible, particularly for individual classes."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "How the classes work",
+          "faq": true,
+          "items": [
+            { "q": "Are the classes online or in a classroom?", "a": ["Classes are conducted mainly online, which allows students anywhere in the country to attend."] },
+            { "q": "What do I need in order to attend?", "a": ["A device with an internet connection, a notebook and a pen. Spoken English classes also need a working microphone. Literature classes need the prescribed texts."] },
+            { "q": "What if my internet connection is weak?", "a": ["Mention it when you enquire. It is a common situation and it is better discussed in advance than discovered in the first class."] },
+            { "q": "Are classes conducted in English?", "a": ["Yes, with explanation in simpler language where a learner needs it. Nobody is expected to understand everything immediately, and nobody is made to feel foolish for asking."] },
+            { "q": "Is written work corrected?", "a": ["Yes. Individual correction and feedback is one of the emphases of these classes, in both group and individual formats."] },
+            { "q": "Is there individual attention in a group class?", "a": ["Written work is corrected individually in both formats. A learner who needs more support than a group allows is usually better suited to individual classes."] },
+            { "q": "Will I be sent a meeting link?", "a": ["Joining instructions are sent privately once your place is confirmed. Links and passwords are never published on this website."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Support and expectations",
+          "variant": "tint",
+          "faq": true,
+          "items": [
+            { "q": "Do you teach students who are very weak in English?", "a": ["Yes. Additional support for learners experiencing difficulty is a particular emphasis of these classes and of this whole platform. Learners are not moved on before a step is secure."] },
+            { "q": "I understand English but I cannot speak it. Can that be helped?", "a": ["Yes, and it is very common. Spoken English classes are built around exactly this: practice in real situations, with correction, in a setting where mistakes are expected rather than punished."] },
+            { "q": "Can examination results be guaranteed?", "a": ["No, and nobody honest will guarantee them. Results depend on the student's own work. What the classes provide is clear teaching, guided practice, individual correction and regular revision."] },
+            { "q": "Are these classes connected to any school or government body?", "a": ["No. RCF Classes is an independent teaching programme and makes no claim of official approval or affiliation."] },
+            { "q": "Are the free resources on this site only for class students?", "a": ["No. Everything on RCF English is free and open to everyone, whether or not you attend a class."] }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Still have a question?",
+          "title": "WhatsApp",
+          "text": ["Please say whether you are a student or a parent, and which class you are asking about."],
+          "buttons": [
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Ask something else", "message": "Hello, I have a question about RCF Classes. " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/contact",
+      "title": "Contact the Teacher",
+      "description": "Contact RCF Classes directly on WhatsApp about courses, schedules, fees, availability, enrolment or a student's particular needs.",
+      "keywords": "contact teacher, RCF Classes, WhatsApp, enquiry",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "scripts": ["forms"],
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "WhatsApp is the quickest way. Say who you are, what you need, and which class you are asking about." },
+      "blocks": [
+        {
+          "type": "whatsapp",
+          "heading": "Message RCF Classes",
+          "title": "WhatsApp",
+          "text": ["Each button opens WhatsApp with a message already written. Read it, add your details, and press send yourself. Nothing is sent from this website."],
+          "buttons": [
+            { "label": "Ask About a Class", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in RCF Classes at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an RCF Class. The class I would like to join is: " },
+            { "label": "Ask about individual classes", "message": "Hello, I would like information about individual (one-to-one) classes with RCF Classes. The student's level and needs are: " },
+            { "label": "My child needs extra help", "message": "Hello, my child needs additional help with English. Their grade is: ___ and what they find most difficult is: " }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "What to include for a useful reply",
+          "bullets": [
+            "Whether you are the student or a parent.",
+            "The grade or level, and the examination year if there is one.",
+            "Which class you are interested in.",
+            "Whether you would prefer individual or group classes.",
+            "Which days and times would be possible.",
+            "What the student finds most difficult — this genuinely shapes the reply."
+          ]
+        },
+        {
+          "type": "contactForm",
+          "heading": "Or write by email",
+          "subject": "RCF Classes enquiry",
+          "mode": "email",
+          "fields": [
+            { "name": "Your name", "type": "text", "required": true },
+            { "name": "Your email address", "type": "email", "required": true },
+            { "name": "You are", "type": "select", "required": true, "options": ["The student", "A parent or guardian", "A teacher", "Other"] },
+            { "name": "Class you are interested in", "type": "select", "required": true, "options": ["O/L English", "O/L Literature", "A/L Literature", "General English", "Spoken English", "Revision classes", "Individual classes", "Not sure — please advise"] },
+            { "name": "Grade or level", "type": "text" },
+            { "name": "Days and times that would suit you", "type": "text" },
+            { "name": "Your message", "type": "textarea", "required": true, "hint": "What the student finds difficult is the most useful thing you can tell us." }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Please do not send",
+          "bullets": [
+            "Payment details of any kind. No payment is ever taken through this website.",
+            "Identity documents, birth certificates or index numbers.",
+            "Anything confidential about a third party."
+          ]
+        }
+      ]
+    }
+  ]
+}

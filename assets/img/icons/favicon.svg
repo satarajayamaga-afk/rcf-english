@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RCF English">
+  <title>RCF English</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e7c66"/>
+      <stop offset="1" stop-color="#08503f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="13" fill="#0f2647"/>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#g)"/>
+  <text x="32" y="42"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="27" font-weight="700" fill="#ffffff"
+        text-anchor="middle" letter-spacing="0.5">RCF</text>
+  <rect x="16" y="48" width="32" height="3" rx="1.5" fill="#e0a83c"/>
+</svg>

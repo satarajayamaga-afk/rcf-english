@@ -1,0 +1,34 @@
+{
+  "_readme": [
+    "LITERARY TEXTS - poems, short stories, plays and novels.",
+    "",
+    "Every text on RCF English is set out in the SAME fifteen sections, so students",
+    "always know where to look, and everything belonging to one text stays together.",
+    "",
+    "TO ADD A TEXT:",
+    "   1. Copy _src/pages/_template-literature-text.json to a new file in",
+    "      _src/pages/ol-literature/texts/ (or al-literature/texts/).",
+    "   2. Fill in the fifteen sections in that page file.",
+    "   3. Add a short entry to the list below so the text appears in the genre",
+    "      listings and in site search. The 'slug' must match the page's slug.",
+    "   4. Run build.cmd.",
+    "",
+    "COPYRIGHT - THIS MATTERS.",
+    "   Do NOT reproduce a complete copyrighted poem, story, play or novel, or a",
+    "   large part of one, without written permission. Summaries, analysis, themes,",
+    "   character notes, questions and model answers written by RCF English are your",
+    "   own work and may be published freely. Short quotations may be used for",
+    "   study and criticism; keep them short and always name the author.",
+    "   NEVER invent a quotation, a plot detail, a date or a fact about an author.",
+    "   If you are not certain of a quotation, check the text before publishing it.",
+    "",
+    "FIELDS:  slug (the page address), title, author, genre (poetry | short-story |",
+    "         drama | novel), level (O/L or A/L), summary (a list of short",
+    "         paragraphs), published.",
+    "",
+    "Texts such as Twilight of a Crane and Bringing Tony Home are added here in",
+    "exactly this way once their pages have been written and checked."
+  ],
+
+  "texts": []
+}

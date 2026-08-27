@@ -1,0 +1,285 @@
+{
+  "_HOW_TO_USE_THIS_TEMPLATE": [
+    "This file is a TEMPLATE. It is not published, because its name begins with an",
+    "underscore and the build script skips such files.",
+    "",
+    "TO ADD A LITERARY TEXT:",
+    "  1. Copy this file and give the copy a normal name, for example:",
+    "        _src/pages/ol-literature/texts/twilight-of-a-crane.json",
+    "     (Create the folders if they do not exist. Do NOT start the name with _ .)",
+    "  2. Change the \"slug\" to the address you want, for example:",
+    "        ol-literature/texts/twilight-of-a-crane",
+    "  3. Fill in the fifteen sections below. Delete any section you genuinely",
+    "     cannot complete yet - an empty section is better than an invented one.",
+    "  4. Add a short entry for the text in data/literature.json so that it appears",
+    "     in the genre listings and in site search. The 'slug' there must match the",
+    "     'slug' here.",
+    "  5. Run build.cmd.",
+    "",
+    "COPYRIGHT - READ THIS EVERY TIME:",
+    "  * Do NOT reproduce the complete poem, story, play or novel, or a large part",
+    "    of it, unless it is out of copyright or you have written permission.",
+    "  * Quotations must be SHORT, ACCURATE and used for study and criticism, with",
+    "    the author and work named.",
+    "  * NEVER invent a quotation, a plot detail, a date, or a fact about an author.",
+    "    If you are not certain, check the book before you publish it.",
+    "  * Summaries, analysis, themes, character notes, questions and model answers",
+    "    that you write yourself are your own work and may be published freely.",
+    "",
+    "The fifteen sections are already laid out below in the correct order. Keeping",
+    "the same order on every text page is the whole point: a student who has used",
+    "one text page then knows where to look on all the others."
+  ],
+
+  "slug": "ol-literature/texts/EXAMPLE-TEXT-SLUG",
+  "title": "Title of the Text",
+  "metaTitle": "Title of the Text | O/L Literature study guide | RCF English",
+  "description": "Summary, characters, themes, techniques, quotations, context questions, essay questions and model answers for [title] at O/L English Literature.",
+  "keywords": "title, author, O/L Literature, summary, themes, characters, model answers",
+  "kicker": "O/L Literature",
+  "kind": "literature-text",
+  "schema": "LearningResource",
+  "educationalLevel": "Ordinary Level",
+  "breadcrumbs": [
+    { "label": "O/L Literature", "url": "ol-literature/" },
+    { "label": "Prescribed Texts", "url": "ol-literature/texts/" }
+  ],
+  "backTo": { "label": "Prescribed Texts", "url": "ol-literature/texts/" },
+
+  "hero": {
+    "text": "One or two sentences saying what kind of text this is and what a student should watch for while reading it."
+  },
+
+  "blocks": [
+    {
+      "type": "callout",
+      "style": "legal",
+      "title": "About this study guide",
+      "bullets": [
+        "The complete text is **not** reproduced here. You will need your prescribed book.",
+        "Quotations are short and are used for study and criticism.",
+        "The summary, analysis, questions and model answers on this page were written by RCF English.",
+        "If you find anything here that does not match your copy of the text, please [report it](corrections/)."
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "text": [
+        "What kind of text this is, and where it sits in the course.",
+        "What a student should watch for as they read. Two or three sentences is enough."
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "author",
+      "heading": "2. Author or playwright",
+      "variant": "tint",
+      "text": [
+        "Who wrote it. **Verified facts only.** If you are not certain of a date, a place or a detail of a life, leave it out rather than guess.",
+        "Two or three sentences. A student does not need a biography; they need whatever helps them read the text."
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "background",
+      "heading": "3. Background",
+      "text": [
+        "When and where it was written, and anything a reader needs to know in order to make sense of it - a historical situation, a social custom, a literary convention.",
+        "Only what is needed. Background that does not help the reading is background that gets memorised instead of the text."
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "summary",
+      "heading": "4. Summary or plot",
+      "variant": "tint",
+      "text": ["What happens, in order, without interpretation mixed in. Keep analysis for the later sections."],
+      "parts": [
+        { "heading": "Opening", "text": ["..."] },
+        { "heading": "Development", "text": ["..."] },
+        { "heading": "Turning point", "text": ["..."] },
+        { "heading": "Ending", "text": ["..."] }
+      ]
+    },
+
+    {
+      "type": "terms",
+      "id": "characters",
+      "heading": "5. Characters",
+      "intro": ["Who each character is, what they want, how they change, and how they relate to the others. Prove each quality with an action rather than asserting it with an adjective."],
+      "items": [
+        { "term": "Character name", "definition": "Who they are and what they want.", "example": "How they change, and the moment that changes them." },
+        { "term": "Character name", "definition": "Who they are and what they want.", "example": "How they change, and the moment that changes them." }
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "themes",
+      "heading": "6. Themes",
+      "variant": "tint",
+      "text": [
+        "State each theme as a **full sentence that could be disagreed with**, not as a single word. *Poverty* is a topic; *the story shows how poverty narrows the choices of people who are otherwise capable* is a theme.",
+        "For each theme, list three moments in the text that carry it - early, middle and late - so that development can be argued."
+      ],
+      "parts": [
+        { "heading": "Theme one, as a sentence", "bullets": ["Moment early in the text", "Moment in the middle", "Moment near the end"] },
+        { "heading": "Theme two, as a sentence", "bullets": ["Moment early in the text", "Moment in the middle", "Moment near the end"] }
+      ]
+    },
+
+    {
+      "type": "terms",
+      "id": "techniques",
+      "heading": "7. Literary or dramatic techniques",
+      "intro": ["Name the technique, point to where it occurs, and say what it **does**. The third part is where the marks are."],
+      "items": [
+        { "term": "Technique", "definition": "Where it occurs in this text.", "example": "What it does to the reader or audience, and why the writer wanted that effect there." },
+        { "term": "Technique", "definition": "Where it occurs in this text.", "example": "What it does to the reader or audience, and why the writer wanted that effect there." }
+      ]
+    },
+
+    {
+      "type": "table",
+      "id": "quotations",
+      "heading": "8. Important quotations",
+      "variant": "tint",
+      "caption": "Ten short quotations, each chosen because it is useful for more than one question. Copy them exactly from the text - never from memory.",
+      "columns": ["Quotation", "Who and where", "What it is useful for"],
+      "rows": [
+        ["\"short quotation\"", "Speaker, and the point in the text", "Character / theme / technique it can answer"],
+        ["\"short quotation\"", "Speaker, and the point in the text", "Character / theme / technique it can answer"]
+      ]
+    },
+
+    {
+      "type": "accordion",
+      "id": "context-questions",
+      "heading": "9. Context questions",
+      "intro": ["Short questions on a printed extract, of the kind the paper asks. Keep every question that belongs to this text on this page."],
+      "items": [
+        { "q": "Extract 1", "a": ["Quote the short extract here (keeping within fair quotation), then the questions:"], "bullets": ["Who is speaking, and to whom?", "What has just happened?", "What does the underlined phrase suggest?", "What does this reveal about the speaker?"] }
+      ]
+    },
+
+    {
+      "type": "model",
+      "id": "context-answers",
+      "heading": "10. Concise context answers",
+      "intro": ["Model answers of the **right length**. Context answers should be short - one mark, one sentence."],
+      "items": [
+        {
+          "label": "Extract 1, answers",
+          "sample": ["1. ...", "2. ...", "3. ...", "4. ..."],
+          "notes": [
+            "Each answer matches the marks available.",
+            "Quotations are taken from the printed extract, exactly.",
+            "Nothing is retold that the examiner already knows."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "essay-questions",
+      "heading": "11. Essay questions",
+      "variant": "tint",
+      "text": ["Full questions on this text, of the kind the paper sets. Include some that quote an opinion and ask how far the student agrees."],
+      "numbered": [
+        "Essay question one.",
+        "Essay question two.",
+        "Essay question three.",
+        "Essay question four."
+      ]
+    },
+
+    {
+      "type": "model",
+      "id": "model-answers",
+      "heading": "12. Developed model answers",
+      "intro": ["A full essay answer, with notes explaining how it is built. Do not encourage memorisation - say so on the page."],
+      "items": [
+        {
+          "label": "Model essay answer",
+          "prompt": "Essay question one, repeated here.",
+          "sample": [
+            "Introduction: takes a position, and qualifies it.",
+            "Body paragraph one: point, evidence, explanation, effect, link.",
+            "Body paragraph two: a different point, not the first restated.",
+            "Body paragraph three: the complication, or the opposing view answered.",
+            "Conclusion: a judgement, not a summary."
+          ],
+          "notes": [
+            "Say why the introduction works.",
+            "Point out where the evidence appears and how short it is.",
+            "Point out the sentence that states the effect on the reader.",
+            "Point out where the essay meets an objection.",
+            "Point out that the conclusion decides something the introduction did not."
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "common-mistakes",
+      "heading": "13. Common student mistakes",
+      "variant": "tint",
+      "text": ["The errors students actually make **on this particular text** - not general advice, which is already on [Common Student Mistakes](ol-literature/common-mistakes/)."],
+      "bullets": [
+        "A misreading that recurs every year, and the correction.",
+        "A detail students consistently get wrong, and the correct detail.",
+        "A character students misjudge, and the evidence that corrects it."
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "revision",
+      "heading": "14. Revision exercises",
+      "text": ["Activities that require the student to produce something, rather than to reread."],
+      "numbered": [
+        "Reduce this text to one side of paper: one line per scene or chapter, characters in three words each, themes as full sentences.",
+        "Write your ten quotations and, beside each, the two different questions it could answer.",
+        "Take a one-sentence answer and rewrite it as five sentences: point, evidence, explanation, effect, link.",
+        "Read the opening and the ending one after the other and write a paragraph on what has changed."
+      ]
+    },
+
+    {
+      "type": "prose",
+      "id": "past-papers",
+      "heading": "15. Related past-paper questions",
+      "variant": "tint",
+      "text": ["Where this text has been examined before, so students can see the range of questions asked. Link to the [Past Papers centre](past-papers/ol-literature/) rather than copying papers here."],
+      "bullets": [
+        "Year - question, in brief.",
+        "Year - question, in brief."
+      ]
+    },
+
+    {
+      "type": "cards",
+      "heading": "Study this text further",
+      "columns": "3",
+      "items": [
+        { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+        { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
+        { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" }
+      ]
+    },
+
+    {
+      "type": "relatedBooks",
+      "heading": "Find related books",
+      "text": ["RCF Publications produces literature study guides with summaries, analysis, questions and model answers."]
+    }
+  ]
+}

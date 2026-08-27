@@ -1,0 +1,639 @@
+{
+  "pages": [
+    {
+      "slug": "teacher-resources",
+      "title": "Teacher Resources",
+      "metaTitle": "Teacher Resources | Lesson plans, worksheets and marking guides | RCF English",
+      "description": "Practical resources for English teachers: lesson plans, worksheets, teaching guides, classroom activities, remedial and mixed-ability support, assessment and marking guides.",
+      "keywords": "English teacher resources, lesson plans, worksheets, marking guides, remedial English, mixed ability teaching",
+      "kicker": "For teachers",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "teacher resource",
+      "scripts": ["browse"],
+      "hero": {
+        "text": "Material you can take into a classroom without rewriting it first, written by a teacher who has had to teach the same lessons to thirty-eight students at four different levels.",
+        "buttons": [
+          { "label": "Lesson plans", "url": "teacher-resources/lesson-plans/", "style": "btn--accent" },
+          { "label": "Slow-learner support", "url": "teacher-resources/slow-learner-support/", "style": "btn--ghost-light" },
+          { "label": "Marking guides", "url": "teacher-resources/marking-guides/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What this section is for",
+          "text": [
+            "Most teaching material assumes conditions that do not exist: a small class, a single level, a photocopier, and time to prepare. This section assumes the opposite, because that is what most English classrooms in Sri Lanka actually look like.",
+            "The emphasis throughout is on things that work with large mixed-ability classes, few materials and limited preparation time."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Planning and teaching",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["A workable lesson structure, and plans you can adapt."] },
+            { "title": "Worksheets", "url": "teacher-resources/worksheets/", "more": "Open", "text": ["Printable practice, and how to design your own."] },
+            { "title": "Teaching Guides", "url": "teacher-resources/teaching-guides/", "more": "Open", "text": ["How to teach the difficult topics: tenses, articles, writing."] },
+            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open", "text": ["Activities needing no materials and little preparation."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Supporting every learner",
+          "columns": "4",
+          "items": [
+            { "title": "Remedial English", "url": "teacher-resources/remedial-english/", "more": "Open", "text": ["Where to start with a student who has fallen far behind."] },
+            { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "Open", "text": ["Smaller steps, more models, more repetition — done deliberately."] },
+            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open", "text": ["One class, six levels, one teacher: what actually works."] },
+            { "title": "Guided Writing", "url": "teacher-resources/guided-writing/", "more": "Open", "text": ["Teaching writing so that weak learners can succeed at it."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Literature and assessment",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Literature Teaching", "url": "teacher-resources/literature-teaching/", "more": "Open" },
+            { "title": "Assessment", "url": "teacher-resources/assessment/", "more": "Open" },
+            { "title": "Marking Guides", "url": "teacher-resources/marking-guides/", "more": "Open" },
+            { "title": "Answer Development", "url": "teacher-resources/answer-development/", "more": "Open" },
+            { "title": "Revision Strategies", "url": "teacher-resources/revision-strategies/", "more": "Open" },
+            { "title": "Professional Reading", "url": "teacher-resources/professional-reading/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Downloadable teacher resources",
+          "source": "resources",
+          "fixed": { "category": "teacher-resources" },
+          "filters": ["type", "subject", "level", "skill", "duration", "learnerLevel"],
+          "intro": ["Files are listed here as they are prepared and approved. The written guidance in the pages above is available now, in full."]
+        },
+        {
+          "type": "cards",
+          "heading": "More for teachers",
+          "columns": "3",
+          "items": [
+            { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "more": "Open", "text": ["Everything downloadable, in one filterable list."] },
+            { "title": "RCF Publications for Teachers", "url": "teacher-resources/rcf-publications-for-teachers/", "more": "Open", "text": ["Books written for classroom and tuition teaching."] },
+            { "title": "The teacher resource groups", "url": "about/online-communities/", "more": "Open", "text": ["Telegram and WhatsApp resource groups for English teachers."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/lesson-plans",
+      "title": "Lesson Plans",
+      "description": "A lesson structure that works in a large mixed-ability English class, with worked plans for grammar, writing, reading and literature lessons.",
+      "keywords": "English lesson plans, lesson structure, teaching English, 40 minute lesson",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "scripts": ["browse"],
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "A plan that survives a real classroom has three qualities: it fits the period, it works if half the class has not done the homework, and it can be prepared in fifteen minutes." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "A lesson structure for a 40-minute period",
+          "intro": ["This shape works for almost any English lesson. The proportions matter more than the content: notice how little of it is the teacher talking."],
+          "items": [
+            { "title": "Settle and recall — 5 minutes", "text": ["Three questions on the previous lesson, written on the board before the students come in. Everyone writes answers. It settles the class, it revises, and it tells you in two minutes what was retained."] },
+            { "title": "Present — 8 minutes", "text": ["The new material, explained once, with examples on the board. Eight minutes is the limit for most classes. If it needs more, it needs splitting into two lessons."] },
+            { "title": "Model — 5 minutes", "text": ["Do one yourself, aloud, thinking aloud as you go: *I am looking at the word 'since', so I need the present perfect…* Showing your reasoning teaches far more than showing your answer."] },
+            { "title": "Guided practice — 10 minutes", "text": ["Students work with support: in pairs, with a framework, or with the first one done for them. You circulate. This is the part most often cut when time is short, and it is the part that must not be."] },
+            { "title": "Independent practice — 8 minutes", "text": ["Alone, without support. You now find out who has actually understood, while there is still time to do something about it."] },
+            { "title": "Check and close — 4 minutes", "text": ["Take answers from three or four students, correct the commonest error publicly, and state in one sentence what the lesson was about. Set homework that practises **this** lesson only."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Four worked plans",
+          "variant": "tint",
+          "items": [
+            { "q": "Grammar lesson — the present perfect (40 minutes)", "bullets": [
+              "**Recall (5):** Three sentences on the board in the simple past; students identify the time expression in each.",
+              "**Present (8):** Two columns — *I saw him yesterday* / *I have seen him*. Draw out from the class what has changed. Give the rule only after they have noticed the pattern.",
+              "**Model (5):** Do three items aloud, saying why each takes the form it does. Include one you deliberately get wrong and correct.",
+              "**Guided (10):** Ten sentences in pairs, the first three already done. Circulate; note the commonest error.",
+              "**Independent (8):** Five sentences alone, written in exercise books.",
+              "**Close (4):** Take three answers. Correct the commonest error publicly. Homework: five sentences about their own week using *since* and *for*."
+            ] },
+            { "q": "Writing lesson — notices (40 minutes)", "bullets": [
+              "**Recall (5):** Show a badly written notice on the board. *What is missing?* Students list.",
+              "**Present (8):** The five essential parts of a notice, on the board, numbered.",
+              "**Model (5):** Build a notice on the board with the class supplying the content, you supplying the form.",
+              "**Guided (10):** Students write a notice with the five parts already listed down the side of the page as headings.",
+              "**Independent (8):** A second notice, no headings supplied.",
+              "**Close (4):** Two students read theirs; class checks the five parts on their fingers. See [Notices](ol-english/notices/)."
+            ] },
+            { "q": "Reading lesson — comprehension (40 minutes)", "bullets": [
+              "**Recall (5):** Two vocabulary items from last lesson, used in new sentences.",
+              "**Present (8):** Read the passage aloud once while students follow. Then teach one strategy only — for example, reading the questions first.",
+              "**Model (5):** Answer question 1 aloud, showing where in the passage you found it and why you rejected the other possibility.",
+              "**Guided (10):** Questions 2–4 in pairs, with the relevant paragraph number given for each.",
+              "**Independent (8):** Questions 5–6 alone, with no paragraph numbers.",
+              "**Close (4):** Take answers. Ask *where did you find it?* rather than *is that right?* See [Reading Comprehension](ol-english/reading-comprehension/)."
+            ] },
+            { "q": "Literature lesson — developing an answer (40 minutes)", "bullets": [
+              "**Recall (5):** One question on the previous scene or chapter.",
+              "**Present (8):** Point, evidence, explanation, effect, link — the five parts, on the board.",
+              "**Model (5):** Build one paragraph on the board, sentence by sentence, labelling each part as you write it.",
+              "**Guided (10):** Give the class a point and a quotation; they write the explanation, effect and link.",
+              "**Independent (8):** A second point, with no quotation supplied.",
+              "**Close (4):** Read one strong paragraph aloud and ask the class to identify the five parts. See [How to Develop an Answer](ol-literature/developing-an-answer/)."
+            ] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Three things worth building into every plan",
+          "bullets": [
+            "**Write your objective as something the students will do**, not as something you will cover. Not *teach the present perfect* but *students write five correct sentences using since and for*. You can tell at the end whether it happened.",
+            "**Plan the extension before the lesson, not during it.** Two extra questions for the students who finish early, ready on the board. Without it, the fastest students spend ten minutes doing nothing.",
+            "**Plan what happens if they have not understood.** One alternative explanation, prepared in advance. Repeating the first explanation more loudly does not work."
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Downloadable lesson plans",
+          "variant": "tint",
+          "source": "resources",
+          "fixed": { "type": "lesson-plan" },
+          "filters": ["subject", "level", "skill", "duration", "learnerLevel"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Teaching Guides", "url": "teacher-resources/teaching-guides/", "more": "Open" },
+            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open" },
+            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/worksheets",
+      "title": "Worksheets",
+      "description": "Printable English worksheets, and practical guidance on designing worksheets that teach rather than merely occupy a class.",
+      "keywords": "English worksheets, printable, practice sheets, worksheet design",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "scripts": ["browse"],
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "A good worksheet teaches. A bad one keeps a class quiet for twenty minutes and changes nothing." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What separates a worksheet that teaches",
+          "numbered": [
+            "**The first item is done for them.** A worked example at the top removes the ambiguity about what is wanted, and it is the single cheapest improvement you can make to any worksheet.",
+            "**The items get harder.** A sheet of twenty items at identical difficulty helps nobody. Start easy so that the weakest students begin; end hard so that the strongest are still working.",
+            "**One skill per sheet.** A sheet mixing tenses, articles and prepositions tests; it does not teach. Teach one thing at a time.",
+            "**Answers where they can be found.** For homework, an answer key — on the back, or on the board next lesson. A student who cannot check has to wait a week to find out they were wrong, by which time the wrong version is learnt.",
+            "**Room to write.** Cramped worksheets produce cramped, unreadable answers, and they discourage the students who most need encouraging.",
+            "**A short instruction in plain English.** *Write the correct form of the verb in brackets.* Not a paragraph."
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Designing your own",
+          "variant": "tint",
+          "doTitle": "Do",
+          "do": [
+            "Put a worked example at the top",
+            "Number every item",
+            "Grade the difficulty from item 1 to the last",
+            "Use contexts your students recognise — their town, their school, their work",
+            "Leave two extension questions at the bottom for early finishers",
+            "Keep it to one side of paper"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Twenty items of identical difficulty",
+            "Mixing three grammar points on one sheet",
+            "Instructions longer than the exercise",
+            "Decorative borders that use up the writing space",
+            "Sentences copied from a book with no relevance to the students",
+            "A sheet with no way for the student to check their work"
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Downloadable worksheets",
+          "source": "resources",
+          "fixed": { "type": "worksheet" },
+          "filters": ["subject", "level", "skill", "learnerLevel"]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "If you have no photocopier",
+          "text": [
+            "Most English exercises can be written on the board and copied into exercise books, and the copying is not wasted time — students who write out a sentence engage with it more than students who fill a gap in a printed one.",
+            "For a graded sheet, write items 1–10 on the board and add *and now write three more of your own* at the end. The extension costs nothing to prepare and occupies the fastest students usefully."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open" },
+            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open" },
+            { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/teaching-guides",
+      "title": "Teaching Guides",
+      "description": "How to teach the topics students find hardest: tenses, articles, prepositions, sentence structure and the writing tasks, with the explanations that actually work.",
+      "keywords": "teaching guides, how to teach grammar, teaching tenses, teaching articles, teaching writing",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "scripts": ["browse"],
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Some topics defeat students year after year. Usually the problem is not the topic but the order in which it is presented." },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Guides to the difficult topics",
+          "items": [
+            { "q": "Teaching the tenses", "a": ["**The usual mistake:** presenting all twelve tenses as a table. Students memorise the table and cannot use any of them.", "**A better order:** teach tenses in pairs that contrast, and always with a time expression attached.", "First *I go* against *I am going* — habit against now. Then *I went* against *I was going*. Then, much later, *I saw him yesterday* against *I have seen him*.", "**The rule that saves most confusion:** teach the **time expression** as part of the tense. *Since* and *for* belong with the present perfect; *yesterday* and *last week* belong with the simple past, and cannot appear with it. Students who learn the pairing rarely make the classic *I have seen him yesterday* error."] },
+            { "q": "Teaching articles", "a": ["**The usual mistake:** giving all the rules at once. There are dozens, and no student holds them.", "**A better approach:** teach one question — *does my listener know which one I mean?* If yes, *the*. If no, *a* or *an*. That single question is right most of the time.", "Then add: *an* before a **vowel sound**, not a vowel letter. Practise *an hour*, *a university*, *an honest man*, *a one-day trip* until the sound principle is established.", "Leave the exceptions — institutions, meals, geographical names — until the main pattern is secure. Introduced early, they persuade students the whole thing is arbitrary."] },
+            { "q": "Teaching prepositions", "a": ["**The usual mistake:** treating them as a system to be reasoned about. Much of preposition use is arbitrary, and students who look for logic conclude they are stupid when they cannot find it.", "**Separate two categories explicitly.** Tell the class which is which — it removes a great deal of frustration.", "**Category 1, where there is a picture:** *at* is a point, *on* is a surface, *in* is inside. This works for time and place and can be drawn on the board.", "**Category 2, fixed partnerships:** *good at*, *interested in*, *depend on*, *apologise for*. These have no logic and must be learnt as whole phrases, like vocabulary. Teach five a week, in sentences."] },
+            { "q": "Teaching writing", "a": ["**The usual mistake:** setting the task and marking the result. The student who could already write does well; the student who could not learns only that they cannot.", "**Teach the form before the content.** Notices have five parts, letters have a fixed layout, essays have a shape. Form is teachable with certainty, and it is a large share of the marks.", "**Never set a writing task cold.** Understand the task, study a model, identify the structure, practise with guidance, then write alone. See [Guided Writing](teacher-resources/guided-writing/).", "**Mark one thing.** A script covered in corrections produces no change. One fault, clearly explained, with a rewrite of one paragraph, usually does."] },
+            { "q": "Teaching sentence structure", "a": ["**Start from what they already produce.** Take three sentences from their own written work and rebuild them on the board.", "**Teach joining before teaching complexity.** Most weak writing is a string of short sentences or one long comma-spliced chain. Teaching *and, but, so, because, although, which* deliberately, one a week, changes writing more than any other grammar teaching.", "**Use the sentence-combining exercise.** Give two short sentences; ask for three different ways of joining them. It is quick, it works at every level, and it can be done orally with a whole class."] },
+            { "q": "Teaching vocabulary", "a": ["**Five words a week, not fifty.** Each in a sentence the student writes about their own life.", "**Teach word families, not single words.** *decide, decision, decisive* — three words for the effort of one.", "**Teach prefixes and suffixes explicitly.** Twenty of them unlock hundreds of words, and they are teachable in six lessons.", "**Revisit deliberately.** Last week's five words at the start of each new week. Without the return, the words are gone by the end of the month."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A principle behind all of these",
+          "variant": "tint",
+          "text": [
+            "In every case above, the improvement comes from **reducing what is presented at once and increasing what is practised**.",
+            "The instinct under syllabus pressure is the opposite: to cover more, faster. But material covered and not practised is not taught, and the time is lost anyway — it simply gets lost later, in revision, when it is more expensive.",
+            "One point, thoroughly practised, is worth three points mentioned."
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Downloadable teaching guides",
+          "source": "resources",
+          "fixed": { "type": "teaching-guide" },
+          "filters": ["subject", "level", "skill"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Guided Writing", "url": "teacher-resources/guided-writing/", "more": "Open" },
+            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" },
+            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/classroom-activities",
+      "title": "Classroom Activities",
+      "description": "English classroom activities that need no materials and little preparation, for large classes, mixed abilities and short periods.",
+      "keywords": "classroom activities, English games, speaking activities, no materials, large classes",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Every activity here needs nothing but a board and a class. Most work with forty students, and most can be shortened to five minutes." },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Speaking activities",
+          "items": [
+            { "q": "Find someone who", "a": ["Write six statements on the board: *Find someone who walked to school today. Find someone who has a younger brother.* Students move and ask until they have a name for each.", "**Why it works:** every student speaks, the question form is practised repeatedly, and it takes six minutes. Adapt the statements to the grammar you are teaching."] },
+            { "q": "Two truths and a lie", "a": ["Each student says three sentences about themselves; the class guesses which is false.", "**Why it works:** it produces real questions and real listening, and students remember one another's sentences. Excellent for the past simple."] },
+            { "q": "The one-minute talk", "a": ["A topic on the board. Students speak to a partner for one minute without stopping. Then swap. Then repeat the same topic with a new partner for forty-five seconds.", "**Why it works:** the repetition with less time is the whole point — the second telling is always more fluent, and students hear themselves improve within four minutes."] },
+            { "q": "Describe and draw", "a": ["One student describes a simple picture or diagram; the partner draws it without looking. Then compare.", "**Why it works:** it forces precise use of position language, and the gap between the drawing and the original shows exactly where the description failed."] },
+            { "q": "Silent line-up", "a": ["Students arrange themselves in a line by birthday, or by distance travelled to school, without speaking English — then explain in English how they worked it out.", "**Why it works:** it separates the task from the language, so the language comes afterwards, when they have something to say."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Writing activities",
+          "variant": "tint",
+          "items": [
+            { "q": "Sentence combining", "a": ["Two short sentences on the board. Students write three different ways of joining them. Take answers; put the best on the board.", "**Why it works:** it teaches complex sentence structure without a single grammatical term, and it works at every level in the same class."] },
+            { "q": "The disappearing model", "a": ["Write a model notice or paragraph on the board. Read it together. Rub out five words; the class reads it again, supplying them. Rub out ten more. Continue until the board is empty and they are reciting it.", "**Why it works:** by the end the structure is internalised, and weak students who could not have written it can now produce it."] },
+            { "q": "Paragraph relay", "a": ["In fours: student 1 writes the topic sentence and passes the paper on; student 2 the supporting sentence; student 3 the example; student 4 the conclusion. Then read them out.", "**Why it works:** it makes the parts of a paragraph visible, and the joins that do not work are instructive."] },
+            { "q": "Correct the teacher", "a": ["Write a short paragraph on the board containing six deliberate errors. Students find and correct them in pairs.", "**Why it works:** students correct far more willingly than they self-correct, and the skill transfers. Use their own common errors."] },
+            { "q": "Write the question", "a": ["Give the answer; students write the question. *Answer: For about three years.* → *How long have you lived here?*", "**Why it works:** question formation is the weakest area for most learners and is rarely practised in isolation."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Reading and vocabulary activities",
+          "items": [
+            { "q": "Running dictation", "a": ["A short text on the wall at the back. One student runs, reads, returns and dictates; the partner writes. Then swap.", "**Why it works:** reading, memory, speaking, listening and writing in one activity, and the class is energised rather than restless."] },
+            { "q": "Prediction from the title", "a": ["Before reading, give only the title. Students write three things they expect the passage to contain. Then read and check.", "**Why it works:** it gives students a reason to read, and reading with a purpose is dramatically more effective than reading to answer questions afterwards."] },
+            { "q": "Word of the day, used", "a": ["One word on the board each day. The rule: it must be used in class, correctly, by five different students before the lesson ends.", "**Why it works:** the word gets used rather than copied, and students listen for one another's attempts."] },
+            { "q": "Odd one out", "a": ["Four words on the board; students decide which does not belong and justify it. Accept any answer that is defended.", "**Why it works:** the justification is the language practice, and because several answers are defensible, weaker students can succeed."] },
+            { "q": "Back to the board", "a": ["One student sits with their back to the board. A word is written; the class describes it without saying it. The student guesses.", "**Why it works:** it teaches the most valuable spoken skill there is — describing a word you do not have — and the whole class participates."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Making activities work in a class of forty",
+          "bullets": [
+            "**Demonstrate; do not explain.** Do one round yourself with a student in front of the class. Thirty seconds of demonstration beats two minutes of instruction.",
+            "**Set a time and keep to it.** *You have four minutes.* Activities without a stated limit expand and lose their energy.",
+            "**Pairs, not groups, when space is tight.** Pairs need no movement and double the amount of speaking.",
+            "**Always plan the ending.** How will you stop it and what will you do with the results? An activity that ends in noise and nothing teaches that activities are not serious."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" },
+            { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "Open" },
+            { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/remedial-english",
+      "title": "Remedial English",
+      "description": "Where to begin with a student who has fallen far behind in English: diagnosing the real gap, rebuilding in order, and keeping the student in the room.",
+      "keywords": "remedial English, catching up, weak students, basic English, diagnosis",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "A student in Grade 11 working at Grade 5 level cannot be helped by Grade 11 material delivered more slowly. Something has to be rebuilt." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "First, find the real gap",
+          "text": [
+            "Remedial teaching fails most often because it starts in the wrong place. The student is given easier Grade 11 work, which is still far beyond them, and the failure repeats.",
+            "Spend one lesson finding out what the student can actually do. Twenty minutes of diagnosis saves a term of misdirected effort."
+          ],
+          "numbered": [
+            "**Can they read aloud?** Give a simple paragraph. Listen for decoding, not comprehension. A student who cannot read the words has a different problem from one who reads them and understands nothing.",
+            "**Can they understand what they read?** Two simple questions on the same paragraph.",
+            "**Can they write a sentence?** *Write three sentences about your family.* Look at whether there is a verb, a subject, a capital and a full stop.",
+            "**Do they have any vocabulary?** Point at ten common objects. Ten out of ten and ten out of thirty are very different starting points.",
+            "**Can they hear English?** Say a simple sentence and ask them to repeat it. A student who cannot repeat cannot yet learn from listening."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Rebuilding, in order",
+          "variant": "tint",
+          "intro": ["Do not skip a stage because the student is fifteen and the material looks childish. Use adult contexts, but do not skip the stage."],
+          "items": [
+            { "title": "Sounds and letters", "text": ["If reading aloud fails, this is where you start. Letter-sound correspondences, then blending. It is slow and it is unavoidable."] },
+            { "title": "A core of words", "text": ["Two or three hundred of the commonest words, recognised instantly. These words make up a very large share of any English text, and a student who has to decode them can never read fluently."] },
+            { "title": "The simple sentence", "text": ["Subject, verb, object. *The boy kicked the ball.* Build, expand and vary this one pattern until it is secure."] },
+            { "title": "The present and the past", "text": ["Two tenses, no more, until both are reliable. Everything else can wait, and a student with two secure tenses can communicate."] },
+            { "title": "Joining sentences", "text": ["*And, but, because, so.* Four words that turn a list of statements into writing."] },
+            { "title": "Then, and only then, the syllabus", "text": ["Once the foundation holds, syllabus material becomes possible. Attempting it earlier wastes both the student's time and yours."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Keeping the student in the room",
+          "text": [
+            "The hardest part of remedial teaching is not academic. A student who has failed at English for six years has usually decided that they cannot do it, and that decision is doing more damage than any gap in their knowledge.",
+            "Some things that help, none of which are complicated:"
+          ],
+          "bullets": [
+            "**Give work they will succeed at, on the first day.** Success is the only thing that reopens a closed mind, and it must come immediately.",
+            "**Do not correct everything.** Correct one thing. A page returned covered in red confirms what they already believe.",
+            "**Show them the distance travelled.** Keep their first piece of work. Show it to them after two months. This is more persuasive than any encouragement you can offer.",
+            "**Never do it in front of the class.** Remedial work should be private. A student marked out publicly as needing it will refuse it.",
+            "**Use adult and age-appropriate contexts.** A fifteen-year-old reading about a cat and a mat has been humiliated, whatever the level is right for.",
+            "**Be patient with the pace, not with the effort.** Slow is fine. Not trying is not, and the distinction matters — it treats the student as capable."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Fifteen minutes, three times a week",
+          "text": [
+            "Remedial work is more effective in short, frequent sessions than in long ones. Fifteen minutes three times a week beats an hour on Saturday, for reasons of attention as much as memory.",
+            "If a full remedial programme is impossible in your circumstances, fifteen minutes before school, three days a week, will still produce visible change within a term."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "Open" },
+            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" },
+            { "title": "Guided Writing", "url": "teacher-resources/guided-writing/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/slow-learner-support",
+      "title": "Slow-Learner Support",
+      "description": "Practical classroom strategies for learners who need more time, smaller steps and more repetition, without separating them from the class.",
+      "keywords": "slow learners, learning support, smaller steps, repetition, differentiation",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Slower is not the same as less able. Most learners described as slow are learners who were moved on before the previous step was secure." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What these learners actually need",
+          "text": ["Three things, and they are not complicated. What is difficult is providing them consistently under syllabus pressure."],
+          "numbered": [
+            "**Smaller steps.** Not easier work — the same work, divided into more parts. A step that half the class takes in one move may need three moves for others.",
+            "**More models.** Where a strong learner needs one example, a slower learner may need four. This is not indulgence; it is how the pattern becomes visible.",
+            "**More repetition, spaced out.** The same point returned to next week, and the week after. A single well-taught lesson is not enough for these learners, and it never was."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Breaking a task into smaller steps",
+          "variant": "tint",
+          "intro": ["An example: the task is *write a formal letter of complaint*. For a slower learner, that is not one task but six."],
+          "items": [
+            { "title": "Read a complete model letter and answer three questions about it", "text": ["No writing yet. Comprehension of the form comes first."] },
+            { "title": "Label the parts of the model", "text": ["Address, date, greeting, opening, details, request, closing. Physically writing the labels on a copy."] },
+            { "title": "Put a jumbled letter in the right order", "text": ["The parts are given on separate strips; the student arranges them. Success is achievable and the structure is learnt."] },
+            { "title": "Complete a letter with gaps", "text": ["The frame is provided; the student supplies the content of two paragraphs."] },
+            { "title": "Write a letter with a plan supplied", "text": ["The four paragraph headings are given; the student writes the paragraphs."] },
+            { "title": "Write a letter with nothing supplied", "text": ["Only now. And by now, most of them can."] }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "In the classroom",
+          "doTitle": "Do",
+          "do": [
+            "Give the same task with more support, not a different and lesser task",
+            "Let them see a completed example before starting",
+            "Check understanding by asking them to explain the task back to you",
+            "Give one instruction at a time",
+            "Allow more time rather than less work where you can",
+            "Return to the same point in three weeks' time, deliberately",
+            "Praise the specific thing that improved"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Marking them out publicly as the slow group",
+            "Giving colouring or copying while others do real work",
+            "Repeating the same explanation more loudly",
+            "Correcting every error on a returned script",
+            "Assuming silence means understanding",
+            "Moving on because the syllabus requires it — the time is lost either way",
+            "Using childish material with adolescents"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Support that does not single anybody out",
+          "variant": "tint",
+          "text": [
+            "The most effective differentiation is invisible. Some ways to provide it:"
+          ],
+          "bullets": [
+            "**A worked first item on every worksheet.** Strong students ignore it; weak students need it. Nobody is marked out.",
+            "**Extension questions at the bottom, not easier ones at the top.** The differentiation happens at the fast end, where it is not stigmatising.",
+            "**Pair deliberately.** A slower learner paired with a patient stronger one gains an explanation in language closer to their own; the stronger learner gains from having to explain.",
+            "**Word banks on the board.** Available to everyone, used mainly by those who need them.",
+            "**Sentence starters for writing tasks.** *One reason is…* *This shows that…* Given to the whole class; taken up by those who need them.",
+            "**Ask the easier question first**, and direct it to the student who needs the success. Done naturally, no one notices."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The thing that matters most",
+          "text": [
+            "Keep the student's earliest piece of work. Show it to them after two months.",
+            "A learner who has been slow for years is convinced they cannot improve, and no amount of encouragement changes that conviction. Their own handwriting from September, held next to their handwriting from November, does."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Remedial English", "url": "teacher-resources/remedial-english/", "more": "Open" },
+            { "title": "Guided Writing", "url": "teacher-resources/guided-writing/", "more": "Open" },
+            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/mixed-ability-teaching",
+      "title": "Mixed-Ability Teaching",
+      "description": "How to teach one English class containing six different levels: task design, grouping, questioning and the practical strategies that work in large classes.",
+      "keywords": "mixed ability, differentiation, large classes, grouping, task design",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Every English class is a mixed-ability class. The question is only whether the teaching acknowledges it." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The impossible situation, stated honestly",
+          "text": [
+            "Forty students. Six of them could sit the examination today. Eight cannot write a correct simple sentence. The rest are spread between. One teacher, forty minutes, and a syllabus.",
+            "There is no arrangement that serves all forty perfectly. What follows is not a solution but a set of practical compromises that work better than teaching to the middle and hoping."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Five strategies that work",
+          "variant": "tint",
+          "items": [
+            { "title": "Open tasks instead of graded worksheets", "text": ["*Write about your journey to school* can be answered in three sentences or thirty. Everyone succeeds at their own level, in one task, with no preparation of multiple versions. This is the single most useful technique in a mixed class."] },
+            { "title": "One task, tiered support", "text": ["The same question for everyone, with support available: sentence starters on the board, a word bank, a worked example. Students take what they need, and nobody is publicly assigned to a level."] },
+            { "title": "Extension built in, not improvised", "text": ["Two harder questions on the board from the start. Without them, the fastest six students are unoccupied for ten minutes of every lesson — which is also where most classroom disruption begins."] },
+            { "title": "Deliberate pairing", "text": ["Not friendship pairs and not random pairs. Pair a strong student with a middling one, and a middling one with a weaker one. A very strong student paired with a very weak one usually helps neither."] },
+            { "title": "Targeted questioning", "text": ["Decide before the lesson which question goes to which student. Give the accessible question to the student who needs a success, and the demanding one to the student who needs stretching. Done naturally, the class does not notice, and every student is asked something they can engage with."] }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Making one task work at three levels",
+          "columns": ["Task", "For those who need support", "For those who need stretching"],
+          "rows": [
+            ["Write a notice", "Five headings supplied down the page", "Add: write a second notice cancelling the first"],
+            ["Comprehension passage", "Paragraph number given for each question", "Add: what does the writer think, and how do you know?"],
+            ["Write a paragraph", "Topic sentence supplied", "Add: rewrite it from the opposite point of view"],
+            ["Grammar exercise", "First three items completed", "Add: write three items of your own for a partner"],
+            ["Describe a picture", "Ten words listed on the board", "Add: what happened just before this moment?"],
+            ["Literature: a character", "Three quotations supplied", "Add: which of these three is most revealing, and why?"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Grouping: when, and when not",
+          "variant": "tint",
+          "bullets": [
+            "**Mixed groups** for discussion, activities and projects. Weaker students hear better English; stronger students consolidate by explaining.",
+            "**Similar-ability groups** for short, focused practice on a specific weakness — and only briefly. Permanent ability groups become permanent identities, and students placed in the bottom one stop trying.",
+            "**Pairs** for most things, in a large class. No movement, no noise, and twice as much speaking as any group activity.",
+            "**Change the groups regularly.** Whatever system you use, if it never changes it becomes a hierarchy the students believe in."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "One realistic ambition per lesson",
+          "text": [
+            "You cannot move forty students forward at their own pace every lesson. What you can do is decide, before each lesson, which group this lesson is genuinely aimed at — and make sure that over a fortnight each group has had its turn.",
+            "That is achievable, and it is far better than the alternative, which is aiming permanently at the middle and losing both ends."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open" },
+            { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "Open" },
+            { "title": "Assessment", "url": "teacher-resources/assessment/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

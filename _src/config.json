@@ -1,0 +1,28 @@
+{
+  "_comment": "RCF English - single source of truth for site-wide settings. Edit the values below, then run build.cmd. See HOW-TO-UPDATE.md.",
+
+  "siteName": "RCF English",
+  "tagline": "Learn clearly. Practise confidently. Progress steadily.",
+  "shortDescription": "Clear English lessons, practical revision resources and reliable teaching support for learners and teachers.",
+  "locale": "en_LK",
+  "lang": "en",
+  "themeColor": "#0f2647",
+
+  "siteUrl": "https://your-username.github.io/rcf-english",
+  "_siteUrlNote": "Used only for canonical URLs, Open Graph tags and sitemap.xml. Page-to-page links are relative, so the site works at any address. Change this to your custom domain when you have one.",
+
+  "PUBLICATIONS_WEBSITE_URL": "PUBLICATIONS_WEBSITE_URL",
+  "_publicationsNote": "Replace the placeholder above with the published address of the RCF Publications bookshop, for example https://your-username.github.io/rcf-ebook-publications/ . Nothing else needs to change - every publications link on the site reads this one value.",
+  "publicationsName": "RCF Publications",
+
+  "whatsappDisplay": "070 439 5240",
+  "whatsappInternational": "94704395240",
+
+  "email": "rcfdegreenotes@gmail.com",
+
+  "founderName": "R. C. Fernando",
+  "country": "Sri Lanka",
+  "countryCode": "LK",
+
+  "buildNote": "Generated files are written to the project root by tools/build-site.ps1. Do not edit generated .html files by hand - your changes would be overwritten on the next build."
+}

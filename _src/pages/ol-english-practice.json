@@ -1,0 +1,640 @@
+{
+  "pages": [
+    {
+      "slug": "ol-english/model-questions",
+      "title": "Model Questions",
+      "description": "Practice questions for every O/L English task type: comprehension, grammar, vocabulary, notices, emails, letters, paragraphs, essays, picture description, dialogue and speech.",
+      "keywords": "O/L English model questions, practice questions, writing tasks, revision",
+      "kicker": "O/L English",
+      "kind": "guidance",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Questions to practise on, arranged by task. Write them by hand, to time, and correct them with the checklist from the matching lesson." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "How to use these questions",
+          "bullets": [
+            "Read the lesson for that task first. These questions are for **step five** — writing independently — not for step one.",
+            "Write by hand. You will write the examination by hand.",
+            "Set a timer. Practising without time pressure prepares you for an examination that has it.",
+            "Correct your own work afterwards with the checklist from the lesson. This matters more than doing another question."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Notices",
+          "variant": "tint",
+          "items": [
+            { "q": "Ten notice questions", "bullets": [
+              "Write a notice announcing that the school will be closed for two days for repairs to the electrical system.",
+              "As secretary of the Science Society, write a notice inviting members to a talk by a visiting speaker.",
+              "Write a notice informing students that applications are open for the school prefects' board.",
+              "As librarian, write a notice reminding students to return all borrowed books before the term ends.",
+              "Write a notice announcing a blood donation campaign to be held at your school.",
+              "As secretary of the Sports Council, write a notice about trials for the school cricket team.",
+              "Write a notice informing parents of a meeting to discuss the new school timetable.",
+              "Write a notice announcing that a mobile telephone found on the premises may be claimed at the office.",
+              "As president of the Environmental Club, write a notice about a tree-planting programme.",
+              "Write a notice announcing that the inter-house athletics meet has been postponed, with the new date."
+            ] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Emails",
+          "items": [
+            { "q": "Ten email questions", "bullets": [
+              "Write an email to your principal requesting permission to organise an English quiz competition.",
+              "Write an email to a bookshop enquiring whether a particular title is in stock, its price, and whether it can be delivered.",
+              "Write an email to your class teacher explaining your absence for three days and asking about missed work.",
+              "Write an email to a friend inviting them to your sister's wedding, giving the date, place and time.",
+              "Write an email to the manager of a hotel enquiring about rooms and rates for a school trip.",
+              "Write an email to the editor of a school magazine submitting an article, and describing what it is about.",
+              "Write an email to a former teacher thanking them for their help before your examination.",
+              "Write an email to a company complaining that a delivered item was damaged, and asking for a replacement.",
+              "Write an email to a cousin abroad describing a festival you recently celebrated.",
+              "Write an email to your school's old boys' or old girls' association asking how to become a member."
+            ] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Letters",
+          "variant": "tint",
+          "items": [
+            { "q": "Ten letter questions", "bullets": [
+              "Write to the Divisional Secretary about the poor condition of a road used by schoolchildren.",
+              "Write to the editor of a newspaper about the need for a public library in your area.",
+              "Write to your principal requesting permission to start a school English newspaper.",
+              "Write to a shop manager complaining about a faulty item and requesting a refund.",
+              "Write to the Medical Officer of Health about mosquito breeding in your neighbourhood.",
+              "Write to a friend who has moved to another town, describing your new class teacher.",
+              "Write to your uncle thanking him for a gift and telling him your examination plans.",
+              "Write to a hotel making a reservation for your family, giving dates and requirements.",
+              "Write to the chief occupant of a house advertised for rent, enquiring about the terms.",
+              "Write to a younger cousin who is discouraged about studies, encouraging them."
+            ] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Paragraphs and essays",
+          "items": [
+            { "q": "Twelve paragraph topics", "bullets": [
+              "The value of reading a newspaper every day",
+              "Why students should learn to cook",
+              "A tradition in my family",
+              "The best advice I have been given",
+              "Why school sports matter",
+              "The problem of rubbish in our town",
+              "A place I would like to visit",
+              "How the internet has changed studying",
+              "The person I turn to for help",
+              "Why kindness costs nothing",
+              "An old building near my home",
+              "The importance of drinking clean water"
+            ] },
+            { "q": "Twelve essay titles", "bullets": [
+              "The importance of learning English in Sri Lanka today",
+              "Village life and city life",
+              "Should students be given fewer examinations?",
+              "The advantages and disadvantages of social media",
+              "An experience I shall never forget",
+              "The person I admire most",
+              "How our school could be improved",
+              "Is technology making us lazy?",
+              "The role of women in society today",
+              "A day that did not go as planned",
+              "Should school uniforms be compulsory?",
+              "The greatest problem facing young people today"
+            ] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Picture description, dialogue and speech",
+          "variant": "tint",
+          "items": [
+            { "q": "Picture description practice", "a": ["Because a picture cannot be reproduced here, use pictures from any newspaper, magazine or textbook. Choose ones with several people doing different things, which give you more to organise."], "bullets": [
+              "A busy market, described in about 100 words",
+              "A railway station platform",
+              "A classroom during a lesson",
+              "A village scene after heavy rain",
+              "A family preparing for a celebration",
+              "A road accident scene, described factually",
+              "A beach on a public holiday",
+              "Workers at a building site"
+            ] },
+            { "q": "Ten dialogue questions", "bullets": [
+              "A student and a librarian about a book that is not available",
+              "A passenger and a bus conductor about incorrect change",
+              "Two friends deciding how to spend a free Saturday",
+              "A customer and a shopkeeper returning a faulty item",
+              "A student and a class teacher about joining a school society",
+              "A patient and a receptionist making an appointment",
+              "A parent and a child about spending too long on the telephone",
+              "Two students discussing how to prepare for an examination",
+              "A tourist asking a local resident for directions",
+              "A student and a bank officer about opening a savings account"
+            ] },
+            { "q": "Eight speech questions", "bullets": [
+              "A speech at the opening of your school's English Day",
+              "A farewell speech to a teacher who is retiring",
+              "A speech to your school on the importance of reading",
+              "A speech welcoming a new principal",
+              "A speech at a prize-giving, thanking parents and teachers",
+              "A speech on protecting the environment, to a school assembly",
+              "A speech encouraging younger students before their examination",
+              "A speech at a school society's annual general meeting, reviewing the year"
+            ] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["Full answers to compare against, with notes."] },
+            { "title": "Interactive Revision", "url": "ol-english/interactive-revision/", "more": "Open", "text": ["Grammar, vocabulary and comprehension activities that mark themselves."] },
+            { "title": "Past Papers", "url": "past-papers/ol-english/", "more": "Open", "text": ["Once you are confident, work on complete papers under timed conditions."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/model-answers",
+      "title": "Model Answers",
+      "description": "Full O/L English model answers with notes explaining why each one works: notice, formal email, formal letter, paragraph, essay and picture description.",
+      "keywords": "O/L English model answers, sample answers, worked examples, writing",
+      "kicker": "O/L English",
+      "kind": "guidance",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Answers to take apart, not to memorise. Under every one is a set of notes explaining what makes it work." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Read this before you read the answers",
+          "bullets": [
+            "These are **teaching materials written by RCF English**. They are not official answers, and they are not the only acceptable answers.",
+            "**Do not memorise them.** An answer copied from a website into an examination script is easy for an examiner to spot and does not fit the question you were actually asked.",
+            "Use them the way a carpenter uses a finished chair: to see how the joints are made.",
+            "Read the notes under each answer. The notes are the lesson; the answer is only the example."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to study a model answer",
+          "variant": "tint",
+          "numbered": [
+            "Read the question, and give yourself two minutes to plan an answer of your own before you look at the model.",
+            "Read the model once for what it says.",
+            "Read it again and mark the parts: where does it open, where is the main information, where does it close?",
+            "Read the notes and check whether you had spotted each point yourself.",
+            "Cover the model and write your own answer to the same question.",
+            "Compare, and note the **one** thing you would change. One improvement made is worth ten noticed."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 1 — Notice",
+          "items": [
+            {
+              "label": "Notice",
+              "prompt": "As the secretary of the Environmental Club, write a notice inviting students to take part in a tree-planting programme.",
+              "sample": [
+                "**ST JOHN'S COLLEGE — ENVIRONMENTAL CLUB**",
+                "**NOTICE**",
+                "5 September",
+                "**TREE-PLANTING PROGRAMME**",
+                "The Environmental Club will conduct a tree-planting programme in the school grounds on Saturday, 20 September, from 8 a.m. to 11 a.m.",
+                "Students of all grades may take part. Saplings and tools will be provided by the club. Participants are requested to come in games clothes and to bring a bottle of water.",
+                "Those who wish to join should give their names to the undersigned before Wednesday, 17 September.",
+                "N. Dissanayake",
+                "Secretary, Environmental Club"
+              ],
+              "notes": [
+                "All the essential parts are present: organisation, NOTICE, date, heading, body, name and position.",
+                "The first line of the body answers what, when and where in a single sentence.",
+                "The second paragraph answers who may come and what they must bring — the practical questions a reader will have.",
+                "The third paragraph gives the action required and a deadline with a day and a date.",
+                "There is no greeting and no closing phrase, because a notice has neither.",
+                "The whole thing is under eighty words. A notice should be short."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 2 — Formal email",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Formal email",
+              "prompt": "Write an email to the manager of a bookshop enquiring about books for O/L English revision, and asking about prices and delivery to your town.",
+              "sample": [
+                "**Subject:** Enquiry about O/L English revision books",
+                "Dear Sir or Madam,",
+                "I am a Grade 11 student preparing for the G.C.E. Ordinary Level examination, and I am writing to enquire about revision books for English.",
+                "I should like to know which titles you have for O/L English grammar and writing practice, and whether you also stock books of past papers with answers. If you could send me the titles and the current prices, I should be grateful.",
+                "I live in Weliketiya, which is some distance from your shop. Could you also let me know whether you deliver books to this area, what the delivery charge would be, and how long delivery normally takes?",
+                "Thank you for your assistance. I look forward to your reply.",
+                "Yours faithfully,",
+                "A. Bandara"
+              ],
+              "notes": [
+                "The subject line states the purpose in six words.",
+                "*Dear Sir or Madam* is used because the reader's name is unknown, so the closing is *Yours faithfully*.",
+                "The first sentence establishes who the writer is and why they are writing. The reader now knows how to answer.",
+                "The questions are grouped by subject: books and prices in one paragraph, delivery in the next. Grouping questions makes them easy to answer, and an easy question gets a quicker reply.",
+                "Each question is specific. *Please send details* would have been much weaker.",
+                "The tone is polite and formal throughout, with full forms rather than short forms."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 3 — Paragraph",
+          "items": [
+            {
+              "label": "Paragraph",
+              "prompt": "Write a paragraph about a person who has influenced you.",
+              "sample": [
+                "The person who has influenced me most is my grandmother, although she never went beyond Grade 8 at school. She could not help me with my homework, but she taught me something I have found more useful: how to keep going when a thing is difficult. When I failed my first term test in mathematics and refused to open the book again, she did not scold me and she did not comfort me. She simply sat beside me every evening for a month with her own knitting, saying nothing, until sitting at that table became ordinary again. My marks improved slowly, but what changed permanently was my belief that a bad result is a starting point rather than a verdict. I have used that lesson far more often than anything I learnt in a classroom."
+              ],
+              "notes": [
+                "The topic sentence names the person and hints at something unexpected — that she was uneducated — which makes the reader want the next sentence.",
+                "The paragraph has **one** idea: what this person taught the writer. It does not wander into her cooking, her health or her other grandchildren.",
+                "The detail is concrete and specific: a failed mathematics test, a month of evenings, her knitting. Concrete detail is what separates a strong paragraph from a general one.",
+                "The writing shows rather than tells. It never says *she was patient*; it describes her sitting there for a month, which is more convincing.",
+                "The concluding sentence lifts the paragraph from an anecdote to a point, and does not merely repeat the opening."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 4 — Essay",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Argumentative essay",
+              "prompt": "Should students be given homework every day? Give your opinion.",
+              "sample": [
+                "Almost every school day ends with the same instruction, and almost every student greets it with the same sigh. Homework is so ordinary a part of school life that it is rarely questioned at all. Yet the question is worth asking, because the amount of homework a student is given each day has a direct effect on both their learning and their health. In my view homework is valuable, but daily homework in every subject is not.",
+                "The argument for homework is a strong one. A lesson heard once is easily lost, and work done at home is often the only time a student practises alone, without a teacher standing by. In language learning this is particularly true: nobody has ever learnt to write English by watching someone else write it. Homework also builds the habit of working without supervision, which every student will need after school, whatever they go on to do.",
+                "The difficulty is not homework itself but its quantity. A student taking nine subjects, each teacher assigning work \"for tomorrow\", may face four hours of it after a seven-hour school day and a long journey home. At that point the purpose is defeated. Work done at eleven o'clock at night by an exhausted student teaches nothing; it is copied, rushed, or left undone, and the student learns only to feel guilty. Sleep, exercise and family time are not luxuries taken away from study — they are the conditions that make study possible.",
+                "There is also a fairness question that is easily forgotten. Not every home is a place where homework can be done. A student with electricity, a table and a quiet room is not competing on equal terms with one who shares a single room with five people, or who must help in a shop until closing time. Homework set carelessly widens a gap that school is supposed to narrow.",
+                "My conclusion is therefore not that homework should be abolished, but that it should be limited and coordinated. A reasonable amount, set by agreement between teachers rather than by each teacher separately, and designed to be finished in an hour, would give students the benefit of independent practice without the exhaustion and the unfairness. Homework should be a tool, not a habit; and like every tool, it works best when it is used deliberately."
+              ],
+              "notes": [
+                "The introduction narrows from a general observation to the specific question, and ends with a clear position. The position is genuinely arguable rather than *there are both advantages and disadvantages*.",
+                "Each body paragraph has one job: paragraph two argues for homework, paragraph three against too much of it, paragraph four raises fairness.",
+                "The essay **answers the opposing view rather than ignoring it**. This is what an argumentative essay is judged on.",
+                "Concrete detail again does the work: nine subjects, four hours, eleven o'clock, a shared room. Compare how much weaker *too much homework is bad for students* would be.",
+                "The conclusion does not repeat the introduction. It moves to a practical proposal and closes with a short, memorable sentence.",
+                "The linking is varied — *The argument for*, *The difficulty is*, *There is also*, *My conclusion is therefore* — rather than *Firstly, Secondly, Thirdly*."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More models elsewhere on the site",
+          "columns": "3",
+          "items": [
+            { "title": "Formal letter model", "url": "ol-english/letters/", "more": "Open", "text": ["A full letter to an official, with notes."] },
+            { "title": "Picture description model", "url": "ol-english/picture-description/", "more": "Open", "text": ["A 100-word description with notes on its order."] },
+            { "title": "Dialogue and speech models", "url": "ol-english/dialogue-and-speech-writing/", "more": "Open", "text": ["A full dialogue and a speech, with notes on both."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/examination-techniques",
+      "title": "Examination Techniques",
+      "description": "Practical examination technique for O/L English: reading the question properly, dividing your time, planning briefly, and using the last ten minutes well.",
+      "keywords": "exam technique, O/L English, time management, reading the question, checking answers",
+      "kicker": "O/L English",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Every year, students lose more marks to poor technique than to poor English. Technique can be fixed in a week." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The four failures that cost most marks",
+          "text": ["Almost every avoidable loss of marks in an English paper falls into one of these four."],
+          "numbered": [
+            "**Not answering the question that was asked.** The student answers a question they prepared for, or answers half of a two-part question.",
+            "**Running out of time.** A long, careful answer to question two, and nothing at all for question four.",
+            "**Ignoring the form.** Writing a notice as a letter, or an email as an essay. The English may be excellent; the marks are not.",
+            "**Not checking.** Ten minutes of checking recovers marks that took an hour to earn."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Reading the question properly",
+          "variant": "tint",
+          "items": [
+            { "title": "Read it twice", "text": ["Once quickly, once with a pen in your hand. The second reading is where you notice the word you missed."] },
+            { "title": "Underline the instruction words", "text": ["*Describe*, *explain*, *compare*, *give two reasons*, *in your own words*, *in about 100 words*, *write a letter to*. Each of these changes what a correct answer looks like."] },
+            { "title": "Count the parts", "text": ["*Explain what happened and say how you felt* is two tasks. Write a small **(2)** in the margin so you cannot forget the second one."] },
+            { "title": "Look at the marks", "text": ["A one-mark question wants a few words. A five-mark question wants five points, or one point developed five ways. The marks tell you the length."] },
+            { "title": "Note the form and the reader", "text": ["Before writing, say to yourself: *This is a formal letter to a stranger.* That single sentence prevents the most expensive mistakes."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Dividing your time",
+          "text": [
+            "Do this in the first two minutes, before you write anything.",
+            "Then obey the clock. If your time for a question is finished, stop and move on, even mid-sentence if necessary; you can return at the end. An unattempted question scores nothing, and nothing is the lowest score there is."
+          ],
+          "numbered": [
+            "Note the total working time and subtract ten minutes for checking.",
+            "Divide the remainder between the questions in proportion to their marks.",
+            "Write the **finishing time** for each question in the margin of your answer sheet — not the number of minutes, the actual clock time. Under pressure, arithmetic is the first thing to go."
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "In the hall",
+          "variant": "tint",
+          "doTitle": "Do",
+          "do": [
+            "Attempt every question, even briefly.",
+            "Number your answers exactly as the paper numbers its questions.",
+            "Leave a line between answers so the examiner can see where one ends.",
+            "Cross out rough work with a single line — never scribble over it.",
+            "Write legibly, especially in the last fifteen minutes.",
+            "Keep going when you are stuck on one item; come back to it."
+          ],
+          "dontTitle": "Do not",
+          "dont": [
+            "Write a long introduction before answering.",
+            "Answer more questions than required, hoping for the best marks to be counted.",
+            "Rewrite an answer neatly — you do not have time, and marks are for content and accuracy.",
+            "Spend the last ten minutes writing more instead of checking.",
+            "Panic over one difficult item; it is worth a small number of marks.",
+            "Leave anything blank."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "The last ten minutes",
+          "text": ["Do not use them to write more. Use them in this order — the items at the top recover the most marks for the least effort."],
+          "items": [
+            "Have I **attempted every question** and every part of every question?",
+            "Are my **answer numbers** correct and clear?",
+            "In each piece of writing, is the **form** the one that was asked for?",
+            "Check the **verbs**: read each sentence looking only at the verb, and at whether it agrees with its subject.",
+            "Check the **plurals**: *informations*, *advices*, *equipments*, *furnitures* do not exist.",
+            "Check **a, an, the** — the errors most students make most often.",
+            "Check **capital letters** at the start of sentences, and on names, days, months and places.",
+            "Check **full stops** — especially that two sentences have not been joined with a comma.",
+            "Check the **spellings you know you get wrong**. Everyone has five or six; learn yours.",
+            "Is my **name and index number** on the paper?"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "In the week before",
+          "variant": "tint",
+          "bullets": [
+            "**Do one complete paper under full examination conditions.** Not a section — a whole paper, timed, by hand, in one sitting. This is the single most useful thing you can do, and most students never do it.",
+            "**Rewrite one answer you did badly.** Rewriting one weak answer teaches more than writing three new ones.",
+            "**Re-read your own corrected work**, not new material. Your own mistakes are the most efficient thing you can revise.",
+            "**Sleep.** A tired brain reads questions carelessly, and careless reading is the largest single cause of lost marks."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Open" },
+            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/common-mistakes",
+      "title": "Common Student Mistakes",
+      "description": "The English errors that cost O/L students the most marks, each shown wrong and right, with the reason behind the correction and practice to fix them.",
+      "keywords": "common mistakes English, common errors, O/L English, grammar errors, correction",
+      "kicker": "O/L English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "The same errors appear year after year. Fix ten of them and your writing improves more than it would from a month of new material." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to use this page",
+          "text": [
+            "Do not read it all at once. Take one table, find two examples of that error in your own recent written work, and correct them. Repeat with the next table tomorrow.",
+            "An error you have found in your own writing is fixed; an error you have only read about is not."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Verbs and tenses",
+          "variant": "tint",
+          "columns": ["Wrong", "Right", "Why"],
+          "rows": [
+            ["She don't like tea.", "She **doesn't** like tea.", "With he, she or it, the negative is *doesn't*."],
+            ["He go to school daily.", "He **goes** to school daily.", "Third person singular takes *-s* in the simple present."],
+            ["I am living here since 2018.", "I **have lived** here since 2018.", "*Since* with a continuing situation needs the present perfect."],
+            ["I have seen him yesterday.", "I **saw** him yesterday.", "Do not use the present perfect with a finished time."],
+            ["He did not went home.", "He did not **go** home.", "After *did*, the main verb returns to its base form."],
+            ["She is having two brothers.", "She **has** two brothers.", "*Have* meaning possession is not used in the continuous."],
+            ["I am knowing the answer.", "I **know** the answer.", "State verbs are not used in the continuous."],
+            ["The work is completing.", "The work **is being completed**.", "The work does not complete itself; the passive is needed."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Nouns, articles and agreement",
+          "columns": ["Wrong", "Right", "Why"],
+          "rows": [
+            ["He gave me many informations.", "He gave me **much information**.", "*Information* is uncountable and has no plural."],
+            ["I need some advices.", "I need some **advice**.", "*Advice* is uncountable. *Advise* is the verb."],
+            ["The furnitures are new.", "The **furniture is** new.", "*Furniture* is uncountable and takes a singular verb."],
+            ["Every students must attend.", "Every **student** must attend.", "*Every* is followed by a singular noun."],
+            ["One of my friend is a doctor.", "One of my **friends** is a doctor.", "*One of* is followed by a plural noun."],
+            ["He is engineer.", "He is **an** engineer.", "A singular countable noun needs an article."],
+            ["I waited for a hour.", "I waited for **an** hour.", "*Hour* begins with a vowel sound, so *an* is used."],
+            ["The box of books are heavy.", "The box of books **is** heavy.", "The verb agrees with *box*, not with *books*."],
+            ["Each of the boys have a bag.", "Each of the boys **has** a bag.", "*Each* is singular."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Prepositions and word partnerships",
+          "variant": "tint",
+          "columns": ["Wrong", "Right", "Why"],
+          "rows": [
+            ["We discussed about the matter.", "We **discussed** the matter.", "*Discuss* takes a direct object with no preposition."],
+            ["He is good in mathematics.", "He is good **at** mathematics.", "The fixed partnership is *good at*."],
+            ["She married with a doctor.", "She **married** a doctor.", "*Marry* takes a direct object. *Married to* is used with *be*."],
+            ["I am waiting my friend.", "I am waiting **for** my friend.", "*Wait* is followed by *for*."],
+            ["Listen the teacher.", "**Listen to** the teacher.", "*Listen* is followed by *to* when there is an object."],
+            ["He returned back home.", "He **returned** home.", "*Return* already contains the idea of *back*."],
+            ["Repeat it again.", "**Repeat** it.", "*Repeat* already means to do it again."],
+            ["I look forward to hear from you.", "I look forward to **hearing** from you.", "Here *to* is a preposition, so the *-ing* form follows."],
+            ["Congratulations for your success.", "Congratulations **on** your success.", "The fixed partnership is *congratulate on*."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Sentence structure",
+          "columns": ["Wrong", "Right", "Why"],
+          "rows": [
+            ["He asked me where do I live.", "He asked me where **I live**.", "Reported questions use normal statement order."],
+            ["Although it rained, but we went.", "**Although** it rained, we went.", "Do not use *although* and *but* together."],
+            ["Because he was ill. He did not come.", "**Because he was ill, he did not come.**", "A *because* clause cannot stand alone as a sentence."],
+            ["I like reading, I read every day.", "I like reading**;** I read every day.", "Two sentences cannot be joined with only a comma."],
+            ["If it will rain, we will stay.", "If it **rains**, we will stay.", "*Will* does not go in the if-clause."],
+            ["He is more taller than me.", "He is **taller** than me.", "Do not use *more* with an *-er* comparative."],
+            ["It is the most best answer.", "It is the **best** answer.", "*Best* is already superlative."],
+            ["Being a rainy day, we stayed home.", "**As it was a rainy day**, we stayed home.", "The original leaves the participle without a proper subject."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Words that are confused",
+          "variant": "tint",
+          "columns": ["Wrong", "Right", "Why"],
+          "rows": [
+            ["Its raining heavily.", "**It's** raining heavily.", "*It's* means *it is*. *Its* shows possession."],
+            ["Their going to the shop.", "**They're** going to the shop.", "*They're* means *they are*."],
+            ["He gave me a good advise.", "He gave me good **advice**.", "*Advice* is the noun; *advise* is the verb."],
+            ["I loose my pen often.", "I **lose** my pen often.", "*Lose* is the verb; *loose* means not tight."],
+            ["The principle called us.", "The **principal** called us.", "*Principal* is the head; *principle* is a rule or belief."],
+            ["Everyday I read.", "**Every day** I read.", "*Everyday* as one word is an adjective, as in *everyday clothes*."],
+            ["He is my cousin brother.", "He is my **cousin**.", "*Cousin brother* is not used in standard English."],
+            ["Please revert back to me.", "Please **reply** to me.", "*Revert* means to return to a previous state, not to reply."]
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise correcting errors",
+          "intro": ["Each sentence contains one mistake. Rewrite the whole sentence correctly."],
+          "ids": ["error-correction-1"]
+        },
+        {
+          "type": "prose",
+          "heading": "Build your own error list",
+          "variant": "tint",
+          "text": [
+            "Everyone has a personal set of about six errors that they make repeatedly. They are not the same for everyone, and a general list can never replace your own.",
+            "Take the last three pieces of written work you had corrected. Write down every error, and count how often each kind appears. The two or three that appear most often are your list. Put it inside the cover of your exercise book and check every piece of writing against it before you hand it in.",
+            "Students who do this usually eliminate their commonest error within a month."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Grammar", "url": "ol-english/grammar/", "more": "Open", "text": ["The rules behind these corrections."] },
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Open", "text": ["The correction checklist to use on your own work."] },
+            { "title": "Interactive Revision", "url": "ol-english/interactive-revision/", "more": "Open", "text": ["More practice that marks itself."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/interactive-revision",
+      "title": "Interactive Revision",
+      "description": "Free interactive O/L English revision: grammar quizzes, fill-in-the-blank, sentence ordering, vocabulary matching, reading comprehension and error correction, all marked instantly.",
+      "keywords": "O/L English revision, interactive quiz, grammar practice, revision activities",
+      "kicker": "O/L English",
+      "kind": "quiz",
+      "schema": "LearningResource",
+      "resourceType": "interactive activity",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Practice that marks itself and explains every answer. No login, nothing recorded, and you can start any activity again." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "A revision method that works",
+          "bullets": [
+            "**Read the lesson first**, then do the activity. Practice after an explanation teaches far more than practice instead of one.",
+            "**Answer before you look.** Getting it wrong and then reading why is one of the most effective ways to learn.",
+            "**Read every explanation**, including for the answers you got right — you may have been right for the wrong reason.",
+            "**Repeat after a few days.** Coming back to the same activity later is what moves knowledge into permanent memory."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Grammar",
+          "variant": "tint",
+          "intro": ["Tenses and prepositions — two of the most heavily tested areas of the paper. Study [Grammar](ol-english/grammar/) alongside these."],
+          "ids": ["grammar-tenses-1", "grammar-prepositions-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Articles and verb forms",
+          "intro": ["Type the missing word. These are gap-fill items of the kind found in Paper I."],
+          "ids": ["gap-articles-1", "gap-verb-forms-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Sentence ordering",
+          "variant": "tint",
+          "intro": ["Word order carries meaning in English. This activity works with a keyboard as well as by touch."],
+          "ids": ["order-sentences-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Reading comprehension",
+          "intro": ["A full passage with six questions, in the style of Paper I. Study [Reading Comprehension](ol-english/reading-comprehension/) first."],
+          "ids": ["reading-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Vocabulary",
+          "variant": "tint",
+          "ids": ["vocab-match-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Error correction",
+          "intro": ["The errors that appear most often in students' written work. Study [Common Student Mistakes](ol-english/common-mistakes/) alongside this."],
+          "ids": ["error-correction-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "More practice",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "All interactive activities", "url": "interactive/", "more": "Open", "text": ["Every activity on the site, including the literature ones."] },
+            { "title": "Model Questions", "url": "ol-english/model-questions/", "more": "Open", "text": ["Writing questions to practise by hand."] },
+            { "title": "Past Papers", "url": "past-papers/ol-english/", "more": "Open", "text": ["Complete papers for timed practice."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

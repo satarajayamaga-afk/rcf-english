@@ -1,0 +1,823 @@
+{
+  "pages": [
+    {
+      "slug": "general-english/reading",
+      "title": "Reading",
+      "description": "How to read English for meaning without stopping at every word: choosing the right material, three reading speeds, and reading for pleasure as language practice.",
+      "keywords": "reading in English, reading skills, extensive reading, skimming, scanning",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Reading is the cheapest, quietest and most effective English practice there is — and the one most learners abandon after two pages." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Why most people give up",
+          "text": [
+            "They choose something too difficult, meet six unknown words in the first paragraph, look up all six, lose the thread, and conclude that their English is not good enough for reading.",
+            "The remedy is simple and slightly counter-intuitive: **read something easier than you think you should.** If you meet more than about five unknown words on a page, the text is too hard for reading practice, however interesting it is."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Three reading speeds, for three purposes",
+          "variant": "tint",
+          "items": [
+            { "title": "Skimming — for the gist", "text": ["Move your eye quickly down the page to find out what it is about. Read the first sentence of each paragraph and little else. Use this on a newspaper page to decide what is worth reading properly."] },
+            { "title": "Scanning — for one piece of information", "text": ["You already know what you are looking for: a time, a price, a name. Do not read; hunt. Use this on timetables, notices, forms and advertisements."] },
+            { "title": "Careful reading — for full understanding", "text": ["Slow, every word, going back when necessary. Use it for instructions, contracts, official letters — and for the one or two paragraphs of a longer text that actually matter."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The rule about unknown words",
+          "text": [
+            "**Do not stop.** Read to the end of the paragraph first. Very often the next sentence explains the word, or makes it unnecessary.",
+            "If a word appears three times and you still do not know it, then look it up — it is clearly important. Otherwise leave it. Understanding ninety per cent of a page you enjoyed is worth far more than understanding one hundred per cent of a paragraph that defeated you."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "What to read",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Newspapers", "text": ["Start with short news items rather than editorials. News writing is deliberately plain, and the same words recur, which is exactly what a learner needs."] },
+            { "title": "Graded readers", "text": ["Books written at a controlled level of difficulty. There is no shame in reading a simplified book; there is real harm in abandoning a difficult one."] },
+            { "title": "Anything about your own work", "text": ["You already know the subject, so the context does half the work. Reading in a field you know is the fastest way to build useful vocabulary."] },
+            { "title": "Children's and young people's fiction", "text": ["Simple language, strong stories, and written to keep the reader turning pages — which is the quality that matters most for practice."] },
+            { "title": "Notices, forms and instructions", "text": ["Unglamorous, and the most immediately useful reading you can do. Read the small print of things you have already signed."] },
+            { "title": "Anything you would read in your own language", "text": ["Interest defeats difficulty. A learner reading about something they love will finish; a learner reading an approved text will not."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Twenty minutes, six days a week",
+          "text": [
+            "Twenty minutes of reading you enjoy, six days a week, will do more for your English in a year than any course you can buy.",
+            "Keep the book where you will see it. Read at the same time each day. Do not take notes, do not look words up, and do not test yourself. Just read."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Vocabulary", "url": "general-english/vocabulary/", "more": "Open" },
+            { "title": "Writing", "url": "general-english/writing/", "more": "Open" },
+            { "title": "Interactive practice", "url": "general-english/interactive-practice/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/writing",
+      "title": "Writing",
+      "description": "Practical English writing for adults: messages, emails, forms, complaints and short letters, with the plain-writing rules that make a reply more likely.",
+      "keywords": "English writing, emails, messages, forms, complaints, practical writing",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Most adult writing in English is short: a message, an email, a form, a complaint. Short writing has its own rules, and they are easy to learn." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Six rules for writing that gets read",
+          "numbered": [
+            "**Say what you want in the first sentence.** Readers decide in five seconds whether to keep reading. *I am writing to ask whether…* is a good opening; *I hope this email finds you well* is not, because it says nothing.",
+            "**One idea to a paragraph.** Three short paragraphs are read; one long one is skimmed.",
+            "**Short sentences.** If a sentence has more than about twenty words, look for the place to cut it in two. There usually is one.",
+            "**Plain words.** *Use*, not *utilise*. *Help*, not *assistance*. Formal writing is not writing with longer words in it.",
+            "**Say exactly what you want to happen.** *Could you send the receipt by Friday?* A request the reader has to work out is a request that gets ignored.",
+            "**Read it once before sending.** Just once, aloud if you can. You will catch something every time."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "The same message, twice",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "A complaint about a delivery",
+              "sample": [
+                "**Unclear version**",
+                "Dear Sir, I hope you are well. I am writing regarding a matter which has caused me considerable inconvenience relating to an order which was placed by me on your website some time back and which has not been received in a satisfactory condition as expected, and I would request you to kindly look into this matter and do the needful at your earliest convenience.",
+                "**Clear version**",
+                "Dear Sir or Madam,",
+                "I ordered a table lamp from your website on 3 August (order number 41827). It arrived on 9 August with the glass shade broken.",
+                "I have kept the packaging and can send photographs if they would help.",
+                "Could you please send a replacement, or refund the price of 4,500 rupees? I should be grateful for a reply within a week.",
+                "Yours faithfully,",
+                "S. Fernando"
+              ],
+              "notes": [
+                "The unclear version is one sentence of seventy words. The reader has to reach the end before learning what happened, and even then does not know what is wanted.",
+                "The clear version gives the facts first — what, when, what went wrong — with the order number, which is what the reader actually needs in order to help.",
+                "It offers evidence without insisting on it.",
+                "It states the two acceptable outcomes plainly, and gives a time.",
+                "It is polite without being apologetic. Long apologetic openings weaken a complaint.",
+                "*Do the needful* and *at your earliest convenience* have been removed. Both are understood locally but tell the reader nothing."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Openings and closings for common situations",
+          "columns": ["Situation", "Opening", "Closing"],
+          "rows": [
+            ["Asking for information", "I am writing to ask about…", "I look forward to hearing from you."],
+            ["Applying for something", "I wish to apply for…", "I should be glad to provide any further information."],
+            ["Complaining", "I am writing about an order placed on…", "I should be grateful for a reply within a week."],
+            ["Apologising", "I am sorry that I was unable to…", "Please accept my apologies for the inconvenience."],
+            ["Thanking", "Thank you for…", "Thank you once again for your help."],
+            ["Making an arrangement", "I am writing to confirm…", "Please let me know if this is not convenient."],
+            ["To someone you know well", "Hope you are well. Quick question —", "Thanks! / See you soon."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Filling in forms",
+          "variant": "tint",
+          "bullets": [
+            "**Read the whole form before writing anything.** Later questions often change how you should answer earlier ones.",
+            "**Block capitals** unless the form says otherwise, and use black ink.",
+            "**Surname** is your family name. **Given name** or **first name** is your personal name. Getting these the wrong way round causes real difficulty later.",
+            "**Date of birth** — check whether the form wants day/month/year or month/day/year.",
+            "**N/A** means *not applicable* — use it rather than leaving a box empty, so it is clear you did not overlook it.",
+            "**Sign and date** where asked. An unsigned form is usually returned.",
+            "**Keep a copy or a photograph** of everything you submit."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "O/L email and letter lessons", "url": "ol-english/emails/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/listening",
+      "title": "Listening",
+      "description": "How to understand spoken English at real speed: why fast speech is hard, what to listen for, and a practical daily listening routine.",
+      "keywords": "listening skills, understanding spoken English, connected speech, listening practice",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "\"They speak too fast\" is almost never the real problem. The real problem is that spoken English does not sound like written English." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Why fluent speech is hard to follow",
+          "text": ["Three things happen in natural speech that never happen on a page. Once you know about them, listening becomes far easier."],
+          "numbered": [
+            "**Words run together.** *What do you want* becomes something like *Whaddya want*. You are listening for four words and hearing two.",
+            "**Small words disappear.** *To*, *of*, *and*, *a*, *the*, *for* are swallowed almost completely. *Fish and chips* becomes *fish 'n' chips*.",
+            "**Sounds change at the joins.** *Did you* becomes *didja*. *Would you* becomes *wouldja*. *Ten pounds* becomes something closer to *tem pounds*."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "The key habit",
+          "text": [
+            "**Listen for the strong words, not for every word.** In *I'm going to the market to buy some vegetables*, only *going*, *market*, *buy* and *vegetables* are said strongly — and those four words carry the whole meaning.",
+            "Trying to catch every word is what makes listening exhausting and unsuccessful. Catch the strong ones and let your brain fill in the rest, exactly as it does in your own language."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "A daily listening routine",
+          "items": [
+            { "title": "Ten minutes a day, not an hour a week", "text": ["Listening improves with frequency, not with duration. Ten minutes every day beats a long session on Sunday."] },
+            { "title": "Listen once without stopping", "text": ["Whatever you understand, you understand. Do not pause, do not rewind."] },
+            { "title": "Listen again with the text if you have one", "text": ["Reading while listening shows you exactly which words you missed, and why. This is the most useful single exercise for listening."] },
+            { "title": "Listen a third time without the text", "text": ["You will now hear things that were invisible the first time. This third listening is where the improvement actually happens."] },
+            { "title": "Repeat difficult phrases aloud", "text": ["Saying a phrase the way a native speaker said it makes you able to hear it next time. Listening and speaking improve together."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "What to listen to",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "News bulletins", "text": ["Clear, careful speech, and you often know the story already, which does half the work of understanding it."] },
+            { "title": "Anything with subtitles", "text": ["Watch with subtitles first, then again without. The second viewing is the practice."] },
+            { "title": "Interviews and conversation", "text": ["Harder than the news because it is unscripted, with interruptions and hesitations — which is what real listening is like."] },
+            { "title": "Songs you like", "text": ["Read the words while listening. Songs stay in the memory, and so does the language in them."] },
+            { "title": "Podcasts for learners", "text": ["Spoken more slowly and clearly, and usually with a transcript."] },
+            { "title": "Real conversation around you", "text": ["Listen to English being spoken near you without joining in. There is no pressure, and no need to reply."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When you do not understand",
+          "text": ["Have these ready and use them without embarrassment. Asking is a skill, not a failure."],
+          "bullets": [
+            "*Sorry, I did not catch that.*",
+            "*Could you say that again, more slowly, please?*",
+            "*Do you mean…?* — repeat back what you think you heard.",
+            "*What does … mean?*",
+            "*Could you spell that, please?* — invaluable for names and addresses.",
+            "*Could you write it down for me?*"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/speaking",
+      "title": "Speaking",
+      "description": "How to move from understanding English to speaking it: dealing with the fear of mistakes, keeping a conversation going, and practising when you have nobody to talk to.",
+      "keywords": "speaking English, fluency, confidence, conversation, speaking practice",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Most people who say they cannot speak English can, in fact, speak it. What they cannot do is begin." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The real obstacle",
+          "text": [
+            "Very few adult learners lack the words. What stops them is the moment before speaking: the fear of the mistake, of the pause, of the look on the listener's face.",
+            "It is worth saying plainly: **that fear is the problem, and it is a bigger problem than your grammar.** A learner who speaks badly for a year ends the year speaking well. A learner who waits until their English is ready is still waiting.",
+            "Nobody learnt to walk without falling. Nobody learns a language without getting it wrong in front of somebody."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Practising when you have nobody to talk to",
+          "variant": "tint",
+          "items": [
+            { "title": "Narrate what you are doing", "text": ["Out loud, alone. *I am making tea. The water is boiling. I have forgotten where the sugar is.* It feels ridiculous and it works, because the difficulty is producing speech, not knowing words."] },
+            { "title": "Read aloud, five minutes daily", "text": ["This trains your mouth to make English shapes at speed. It is the closest thing to speaking practice that requires no other person."] },
+            { "title": "Record a two-minute answer", "text": ["Choose a question — *Describe your journey to work* — and record yourself answering. Listen back. Record it again. The second attempt is always better, and the improvement is real."] },
+            { "title": "Rehearse the conversation you are going to have", "text": ["Before the bank, the interview, the telephone call, say your part aloud twice. Rehearsal removes most of the fear, because the words are already in your mouth."] },
+            { "title": "Have imaginary arguments", "text": ["Take a position and argue it aloud for two minutes. Arguing produces more fluent, less careful language than describing does, which is exactly what you want."] },
+            { "title": "Then find one real person", "text": ["A colleague, a relative, a friend at the same level. Twenty minutes a week with one person will change your speaking more than anything above."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Phrases that keep you speaking",
+          "text": ["Fluency is not speed. It is the ability to keep going. These phrases buy you time without silence, and fluent speakers of every language use them constantly."],
+          "parts": [
+            { "heading": "Thinking time", "bullets": ["*Well, let me think for a moment…*", "*That is an interesting question.*", "*How can I put this…*", "*Actually, I am not sure.*"] },
+            { "heading": "When you cannot find the word", "bullets": ["*It is a kind of…*", "*It is the thing you use for…*", "*I do not know the English word — it is like a…*", "*Sorry, what is the word for…?*"] },
+            { "heading": "Correcting yourself", "bullets": ["*Sorry, I mean…*", "*Let me say that again.*", "*What I am trying to say is…*"] },
+            { "heading": "Keeping it going", "bullets": ["*And what about you?*", "*Really? What happened then?*", "*I see what you mean, but…*", "*Can I ask you something?*"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Describing the word you do not know",
+          "text": [
+            "This is the most valuable speaking skill of all, and it is rarely taught. When you do not know a word, **describe it**, and keep talking.",
+            "*I need the thing you use to open a tin.* You will get the tin opener, and you will also get the word, because the person you are talking to will supply it. Nothing was lost, and something was gained."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open", "text": ["Model conversations for real situations."] },
+            { "title": "Spoken English", "url": "general-english/spoken-english/", "more": "Open" },
+            { "title": "Spoken English classes", "url": "rcf-classes/spoken-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/everyday-english",
+      "title": "Everyday English",
+      "description": "The English of daily life: shops, buses, appointments, directions, the telephone, neighbours and small talk, with the phrases used most often.",
+      "keywords": "everyday English, daily life, shopping, directions, appointments, small talk",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Ordinary life needs a surprisingly small number of phrases. Learn these and most days will look after themselves." },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Situation by situation",
+          "items": [
+            { "q": "Greetings and small talk", "bullets": ["*Good morning. How are you?* — *Very well, thank you. And you?*", "*How is everything?* — *Not too bad, thanks.*", "*Nice weather today.* / *It looks like rain.*", "*How is your family?*", "*Nice to meet you.* (first time) / *Nice to see you again.*", "*I must go now — see you later.*"] },
+            { "q": "Shopping", "bullets": ["*How much is this?* / *How much are these?*", "*Do you have this in a larger size?*", "*Could I see that one, please?*", "*Do you accept cards?*", "*Could I have a receipt, please?*", "*I would like to return this — it does not fit.*", "*Is there a discount on this?*"] },
+            { "q": "Travel and directions", "bullets": ["*Does this bus go to Kandy?*", "*One return ticket to Galle, please.*", "*What time does the next train leave?*", "*Excuse me, could you tell me the way to the hospital?*", "*Is it far from here?* — *About ten minutes' walk.*", "*Turn left at the junction and it is on your right.*", "*I think I am lost. Could you help me?*"] },
+            { "q": "Appointments", "bullets": ["*I would like to make an appointment, please.*", "*Are you free on Tuesday morning?*", "*I am afraid I cannot come on Friday. Could we change it?*", "*I am running about fifteen minutes late.*", "*Sorry to keep you waiting.*", "*Shall we say ten o'clock, then?*"] },
+            { "q": "On the telephone", "bullets": ["*Good morning. Could I speak to Mr Perera, please?*", "*Speaking.* (when it is you)", "*Hold on a moment, please. I will put you through.*", "*I am afraid he is not in at the moment. Can I take a message?*", "*Could you ask her to call me back? My number is…*", "*Sorry, the line is not very clear. Could you repeat that?*"] },
+            { "q": "At the doctor's", "bullets": ["*I have had a headache since yesterday.*", "*It hurts here.* / *It has been getting worse.*", "*I am allergic to…*", "*How often should I take this?*", "*Do I need to come back?*"] },
+            { "q": "With neighbours", "bullets": ["*Sorry to trouble you, but…*", "*Would you mind if I…?*", "*Could you keep an eye on the house while we are away?*", "*Thank you very much — that was very kind of you.*", "*Do not mention it.* / *It was no trouble at all.*"] },
+            { "q": "Apologising and thanking", "bullets": ["*I am very sorry — that was my fault.*", "*I do apologise for the delay.*", "*Excuse me* (to get attention or to pass) / *Sorry* (when you have done something)", "*Thank you very much indeed.*", "*You are welcome.* / *Not at all.* / *That is quite all right.*"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Three phrases that solve almost anything",
+          "bullets": [
+            "**\"Could you…, please?\"** — the politest and most useful request in English. It works for everything.",
+            "**\"I am afraid…\"** — softens any refusal or bad news. *I am afraid I cannot.* *I am afraid we are closed.*",
+            "**\"Sorry, could you say that again, please?\"** — never be embarrassed by this one. Everyone uses it, including people who grew up speaking English."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Politeness in English",
+          "text": [
+            "English marks politeness mainly by adding words rather than by changing them. The more words you use, the more polite it sounds.",
+            "*Give me a pen* is an order. *Could you give me a pen?* is a request. *Could you possibly lend me a pen for a moment?* is very polite indeed. None is more grammatical than the others; they differ only in courtesy.",
+            "As a general rule, use more words with strangers and people in authority, and fewer with friends and family. If you are unsure, more is safer than fewer."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/spoken-english",
+      "title": "Spoken English",
+      "description": "How spoken English differs from written English: contractions, fillers, incomplete sentences, and the informal patterns that make speech sound natural.",
+      "keywords": "spoken English, informal English, contractions, fillers, natural speech",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Many learners sound stiff not because their English is poor, but because they are speaking written English aloud." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Spoken English is a different dialect",
+          "text": [
+            "Real speech is full of things that would be marked wrong in an examination: unfinished sentences, repetitions, contractions, and words like *well*, *actually* and *you know* that carry no meaning at all.",
+            "These are not errors. They are how the language is spoken, and using them is what makes speech sound natural rather than recited."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Written English and spoken English",
+          "variant": "tint",
+          "columns": ["Written", "Spoken", "Note"],
+          "rows": [
+            ["I do not know.", "I don't know.", "Contractions are normal in speech. Not using them sounds formal or emphatic."],
+            ["I would like to go.", "I'd like to go.", "*I'd, you'd, he'd, we'd* are all ordinary in speech."],
+            ["Yes, I have.", "Yeah. / Mm-hm.", "Short responses are normal and not rude."],
+            ["That is correct.", "That's right.", "Speech prefers the shorter, commoner word."],
+            ["I am unable to attend.", "I can't make it.", "Everyday speech uses phrasal verbs constantly."],
+            ["Could you repeat that?", "Sorry, what was that?", "Both are polite. The second is more natural in conversation."],
+            ["It is very good.", "It's really good.", "*Really* is far commoner than *very* in speech."],
+            ["I disagree.", "Hmm, I'm not sure about that.", "English speakers often disagree indirectly."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Fillers and what they are for",
+          "text": [
+            "*Well…*, *Actually…*, *You know…*, *I mean…*, *Right…*, *So…* These words carry almost no meaning, and yet fluent speech is full of them.",
+            "They exist to give the speaker a moment to think without falling silent, and to soften what comes next. *Well…* before a disagreement makes it gentler. *Actually…* signals that you are about to correct something.",
+            "Use a few. Do not use them in every sentence. They are the seasoning, not the meal."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Phrasal verbs: the vocabulary of speech",
+          "variant": "tint",
+          "text": ["Spoken English prefers a common verb plus a small word to a single formal one. Learning thirty phrasal verbs will make you sound far more natural than learning three hundred long words."],
+          "bullets": [
+            "**find out** (discover) — *I'll find out and let you know.*",
+            "**put off** (postpone) — *They've put off the meeting.*",
+            "**get on with** (continue, or have a good relationship) — *We get on with each other well.*",
+            "**turn up** (arrive, often unexpectedly) — *He turned up an hour late.*",
+            "**look after** (take care of) — *Could you look after the shop for an hour?*",
+            "**give up** (stop trying) — *Don't give up now.*",
+            "**work out** (calculate, or end well) — *It worked out in the end.*",
+            "**come across** (find by chance) — *I came across an old photograph.*",
+            "**sort out** (resolve) — *We'll sort it out tomorrow.*",
+            "**take over** (assume control) — *She's taking over the department.*"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "When to keep it formal",
+          "text": [
+            "Spoken informality belongs in conversation, not everywhere. In a job interview, a formal presentation or a serious complaint, use fewer contractions, fewer fillers and more complete sentences.",
+            "The skill is not choosing one register and staying in it. It is being able to move between them, and knowing which the situation calls for."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open" },
+            { "title": "Spoken English classes", "url": "rcf-classes/spoken-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/workplace-english",
+      "title": "Workplace English",
+      "description": "English for work: interviews, meetings, emails, telephone calls, asking for help, disagreeing politely and giving bad news clearly.",
+      "keywords": "workplace English, business English, job interview, meetings, work emails",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Workplace English is mostly a small set of situations repeated. Prepare for the situations and the language comes with them." },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Job interviews",
+          "items": [
+            { "q": "Questions you will almost certainly be asked", "bullets": ["*Tell me about yourself.* — Ninety seconds: what you do now, what you did before, why you are here. Not your life history.", "*Why do you want this job?* — Something about **them**, not only about you. Show you know what the organisation does.", "*What are your strengths?* — Two strengths, each with an example of when it mattered.", "*What is your weakness?* — Name a real one, then say what you are doing about it. A false weakness is transparent.", "*Where do you see yourself in five years?* — Show ambition that fits this job, not a plan to leave it.", "*Do you have any questions for us?* — Always have two. Having none suggests you are not interested."] },
+            { "q": "Useful phrases", "bullets": ["*In my previous position, I was responsible for…*", "*I have about four years of experience in…*", "*One example of that would be when…*", "*I am particularly interested in this role because…*", "*That is a good question. Let me think for a moment.*", "*Could I just clarify what you mean by…?*", "*Thank you for your time. I am very interested in the position.*"] },
+            { "q": "If you do not understand a question", "a": ["Ask. It is far better than answering the wrong question. *Sorry, could you rephrase that?* or *Do you mean… ?* Interviewers do not think less of a candidate who checks; they think less of one who guesses and rambles."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Meetings",
+          "variant": "tint",
+          "items": [
+            { "q": "Getting into the conversation", "bullets": ["*Could I add something here?*", "*May I say something about that?*", "*Sorry — just one point on that.*", "*Before we move on, could I ask…?*"] },
+            { "q": "Agreeing and disagreeing", "bullets": ["*I agree entirely.* / *That is a good point.*", "*I see what you mean, but…* — the standard polite disagreement.", "*I am not sure I agree. My concern is…*", "*I take your point, although…*", "**Note:** in English-speaking workplaces, direct contradiction (*You are wrong*) is unusual. Disagreement is normally softened, and the softening is expected."] },
+            { "q": "Being clear about actions", "bullets": ["*So, to summarise: I will do X, and you will do Y.*", "*Could we agree a deadline for that?*", "*Who will take responsibility for this?*", "*Can I confirm that in writing afterwards?*"] },
+            { "q": "When you did not follow", "bullets": ["*Sorry, I did not catch that last point.*", "*Could you go over that again?*", "*Just so I am clear — are you saying that…?*"] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Email at work",
+          "items": [
+            { "q": "The rules", "bullets": ["**A subject line that says what it is about.** *Question* is useless; *Leave request for 12–14 September* is useful.", "**Say what you want in the first sentence.**", "**One subject per email.** Two subjects in one email means one of them gets forgotten.", "**Say what you want to happen and by when.**", "**Read it once before sending.** Especially anything written when you were annoyed."] },
+            { "q": "Useful openings", "bullets": ["*I am writing to ask about…*", "*Further to our conversation this morning,…*", "*Thank you for your email. To answer your question,…*", "*I am sorry for the delay in replying.*", "*Just a quick note to confirm…*"] },
+            { "q": "Useful closings", "bullets": ["*Please let me know if you need anything further.*", "*I look forward to hearing from you.*", "*Many thanks for your help.*", "*Kind regards,* (safe for almost every situation)"] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Three things worth being able to say at work",
+          "variant": "tint",
+          "parts": [
+            { "heading": "Asking for help without sounding incapable", "bullets": ["*Could I ask your advice on something?*", "*I want to make sure I do this correctly — could you show me once?*", "*I have tried X and Y. Is there something I am missing?*"] },
+            { "heading": "Saying no, or not yet", "bullets": ["*I would like to, but I am fully committed until Thursday.*", "*I can do that if we move the other deadline. Which would you prefer?*", "*I am afraid that is not going to be possible by Friday.*"] },
+            { "heading": "Giving bad news", "bullets": ["*I am afraid there is a problem with…* — say it early, not at the end.", "*The delivery will be two days late. I am arranging a replacement supplier.* — problem, then what you are doing about it.", "Never hide bad news in the middle of a long paragraph. It is always discovered, and always worse when it is."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Writing", "url": "general-english/writing/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/english-for-adults",
+      "title": "English for Adults",
+      "description": "How adults actually learn a language, what is different from school learning, and how to make progress in a working week without a classroom.",
+      "keywords": "English for adults, adult learners, learning as an adult, study plan, motivation",
+      "kicker": "General English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "You are not too old, you are not too late, and you did not miss your chance at school. What you do have is less time and more self-consciousness — and both can be worked with." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What is different about learning as an adult",
+          "text": ["Adults are often told they learn languages worse than children. That is only partly true, and the differences cut both ways."],
+          "parts": [
+            { "heading": "Harder for adults", "bullets": ["Less time, and less of it uninterrupted.", "Far more self-consciousness. A child is not embarrassed by a mistake; an adult usually is.", "Fewer opportunities to be a beginner in public.", "Pronunciation habits from your first language are more settled."] },
+            { "heading": "Easier for adults", "bullets": ["You already understand how language works — grammar terms, sentence structure, the idea of tense.", "You can study deliberately instead of waiting to absorb.", "You know why you are learning, which is the strongest motivation there is.", "You have a large stock of ideas to express. A child learning English has to learn the ideas too."] }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "A realistic weekly plan",
+          "variant": "tint",
+          "intro": ["Four to five hours a week, in pieces small enough to survive a bad week. A plan you keep to is better than a plan that impresses."],
+          "items": [
+            { "title": "Reading: 20 minutes, six days", "text": ["Something you enjoy, at a level where you meet fewer than five unknown words a page. Do not look words up. This is the foundation."] },
+            { "title": "Listening: 10 minutes, six days", "text": ["News, a podcast, a programme with subtitles. Once without stopping, then again if you have time."] },
+            { "title": "Speaking: 10 minutes, six days", "text": ["Read aloud, narrate what you are doing, or record a two-minute answer to a question. Alone is fine."] },
+            { "title": "Vocabulary: 5 new words a week", "text": ["Each written in a sentence about your own life, said aloud five times, and reviewed at the start of the next week."] },
+            { "title": "Writing: one piece a week", "text": ["A short email, a paragraph, a description of your week. One piece, checked once, is enough."] },
+            { "title": "One real conversation a week", "text": ["Twenty minutes with one person. This is the part most people skip, and it is worth more than all the rest together."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "About the fear of speaking",
+          "text": [
+            "If you have been laughed at for your English, or corrected in front of others, that memory is doing more damage to your learning than any gap in your grammar. It is worth naming it.",
+            "Two things help. First, choose one safe person to practise with — someone who will not correct you unless you ask. Second, notice that a listener who understood you has understood you, whatever the grammar was doing. Communication succeeded. That is the whole purpose.",
+            "Progress is not measured by how few mistakes you make. It is measured by how much you can do."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to tell that you are improving",
+          "variant": "tint",
+          "text": ["Progress in a language is invisible from day to day, which is why so many adults give up believing they have made none. Look for these instead."],
+          "bullets": [
+            "You hesitate less before speaking, even if the English is not better.",
+            "You understand more of a conversation you are not part of.",
+            "You read a page without looking anything up.",
+            "You correct yourself while speaking, without stopping.",
+            "You dream, count, or swear in English occasionally.",
+            "Someone asks you a question in English and you answer without first translating it.",
+            "**Keep a note of the date on which each of these first happens.** It is the only reliable record of progress you will have."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Self-Assessment", "url": "general-english/self-assessment/", "more": "Open" },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "General English classes", "url": "rcf-classes/general-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/practical-conversations",
+      "title": "Practical Conversations",
+      "description": "Model conversations for real situations: introductions, telephone calls, interviews, workplace exchanges, travel, appointments, shopping, requests and complaints.",
+      "keywords": "English conversations, dialogues, model conversations, real situations, practice",
+      "kicker": "General English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Read each one aloud. Then cover one side and say that part yourself. Then have the conversation for real." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to use these",
+          "numbered": [],
+          "bullets": [
+            "**Read the whole conversation aloud**, both parts, twice.",
+            "**Cover one side** and speak that part from memory. Get it roughly right, not perfectly.",
+            "**Change the details** — a different day, a different item, a different problem. This is where the learning happens.",
+            "**Use it for real within a week.** A rehearsed conversation used once becomes permanent."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Introductions",
+          "variant": "tint",
+          "items": [
+            { "q": "Meeting someone for the first time", "bullets": ["**A:** Good morning. I do not think we have met. I am Kamal Perera.", "**B:** Nice to meet you, Mr Perera. I am Anushka Silva. I work in the accounts section.", "**A:** Nice to meet you too. Have you been here long?", "**B:** About six months. And you?", "**A:** I joined last week, actually. I am still finding my way around.", "**B:** Well, if you need anything, my desk is just along the corridor.", "**A:** Thank you, that is very kind."] },
+            { "q": "Introducing two people", "bullets": ["**A:** Malini, have you met Rohan? Rohan, this is Malini — she runs the training programme.", "**B:** Nice to meet you, Rohan.", "**C:** Nice to meet you too. I have heard about the programme — it sounds interesting.", "**B:** Come and see us any time. We are on the second floor."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "On the telephone",
+          "items": [
+            { "q": "Calling an office", "bullets": ["**A:** Good morning, Silva and Company.", "**B:** Good morning. Could I speak to Mrs Jayasinghe, please?", "**A:** May I ask who is calling?", "**B:** My name is Nimal Fernando. I am calling about an invoice.", "**A:** One moment, please. I will put you through. … I am afraid she is in a meeting. Can I take a message?", "**B:** Yes, please. Could you ask her to call me back on 077 123 4567?", "**A:** 077 123 4567. And that was Mr Fernando?", "**B:** That is right. Thank you very much.", "**A:** Not at all. Goodbye."] },
+            { "q": "When the line is bad", "bullets": ["**A:** Sorry, I did not catch that. The line is not very clear.", "**B:** I said the meeting has been moved to Thursday.", "**A:** Sorry — Tuesday or Thursday?", "**B:** Thursday. T for Thomas.", "**A:** Thursday. Got it. Thank you."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Shopping and complaints",
+          "variant": "tint",
+          "items": [
+            { "q": "In a shop", "bullets": ["**A:** Excuse me, do you have this shirt in a larger size?", "**B:** Let me check. … Yes, we have it in large and extra large.", "**A:** Could I see the large one, please? … How much is it?", "**B:** Two thousand four hundred rupees.", "**A:** Is there a discount if I take two?", "**B:** I can give you ten per cent on two.", "**A:** All right, I will take two. Do you accept cards?", "**B:** Yes, certainly. Would you like a bag?"] },
+            { "q": "Returning something", "bullets": ["**A:** Good afternoon. I bought this kettle here on Saturday and it has stopped working.", "**B:** I am sorry to hear that. Do you have the receipt?", "**A:** Yes, here it is.", "**B:** Thank you. Would you prefer a replacement or a refund?", "**A:** A replacement, please, if you have the same model.", "**B:** We do. I will get one from the store room. It will take about five minutes.", "**A:** That is fine, thank you."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Appointments and travel",
+          "items": [
+            { "q": "Making an appointment", "bullets": ["**A:** Good morning. I would like to make an appointment with Dr Weerasinghe, please.", "**B:** Certainly. Have you been here before?", "**A:** No, this is the first time.", "**B:** Then I will need your name and telephone number. … When would suit you?", "**A:** Would Wednesday afternoon be possible?", "**B:** We have three fifteen or four thirty on Wednesday.", "**A:** Three fifteen, please.", "**B:** That is booked. Please come ten minutes early to complete the form."] },
+            { "q": "Asking for directions", "bullets": ["**A:** Excuse me, could you tell me the way to the post office?", "**B:** Yes — go straight on to the traffic lights, then turn left. It is about a hundred metres along, on your right, opposite the bank.", "**A:** Straight on, left at the lights, opposite the bank. Is it far?", "**B:** No, about five minutes' walk.", "**A:** Thank you very much."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "At work",
+          "variant": "tint",
+          "items": [
+            { "q": "Asking for help", "bullets": ["**A:** Sorry to disturb you — do you have a moment?", "**B:** Of course. What is it?", "**A:** I am preparing the monthly report and I am not sure which figures go in the second column.", "**B:** Ah — those are the totals from the previous month, not this one.", "**A:** That would explain it. Could I show you what I have done, just to be sure?", "**B:** Yes, bring it over."] },
+            { "q": "Explaining a delay", "bullets": ["**A:** I am afraid there is a problem with the Friday deadline.", "**B:** What has happened?", "**A:** The supplier has not sent the figures we need. I have chased them twice.", "**B:** How long do you think it will take?", "**A:** If they send them tomorrow, I can finish by Monday. I have started the sections that do not depend on them.", "**B:** All right. Let me know tomorrow either way."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" },
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Spoken English classes", "url": "rcf-classes/spoken-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/self-assessment",
+      "title": "Self-Assessment",
+      "description": "Find out honestly what you can already do in English and what to work on next, using can-do statements rather than a test or a score.",
+      "keywords": "self assessment, English level, can do statements, A1 A2 B1 B2, level check",
+      "kicker": "General English",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Not a test, and not a score. A list of things you can either do or not do yet — which is far more useful." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About these levels",
+          "text": [
+            "The labels **A1**, **A2**, **B1** and **B2** are used here as a rough guide to difficulty only. RCF English does **not** claim formal alignment with the Common European Framework of Reference, and nothing on this page provides an official level or a certificate.",
+            "Use it to decide what to study next. Do not use it to decide what you are worth."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use this page",
+          "numbered": [
+            "Read each statement and answer honestly: **yes, easily** / **yes, with difficulty** / **not yet**.",
+            "Find the first group in which you have more than two *not yet* answers. That is where to start work.",
+            "Do not skip a group because it looks easy. Gaps in the earlier groups are what make the later ones difficult.",
+            "Come back in three months and do it again. The change is the point, not the label."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "A1 — Beginner",
+          "variant": "tint",
+          "items": [
+            { "q": "Can you do these?", "bullets": ["Introduce yourself and say where you are from and what you do.", "Understand and use simple greetings and farewells.", "Ask for and give a telephone number, an address and a date.", "Order food or buy something in a shop using simple phrases.", "Understand very slow, clear speech about familiar things.", "Fill in a simple form with your personal details.", "Ask simple questions: *Where is…? How much is…? What time…?*", "Write a short, simple message such as *I will be late. Sorry.*"] },
+            { "q": "If several are 'not yet'", "a": ["Start with [Practical Grammar](general-english/practical-grammar/) — the word-order section — and [Everyday English](general-english/everyday-english/). Learn phrases whole rather than building them from rules."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "A2 — Elementary",
+          "items": [
+            { "q": "Can you do these?", "bullets": ["Describe your family, your work and your daily routine.", "Talk about the past: what you did yesterday, last week, last year.", "Make and change an appointment on the telephone.", "Understand the main point of a short, clear announcement.", "Read a short newspaper item and say what it is about.", "Write a short personal email or letter.", "Explain what is wrong when something you bought is faulty.", "Give simple directions to someone who is lost."] },
+            { "q": "If several are 'not yet'", "a": ["Work on [Practical Grammar](general-english/practical-grammar/) — the tenses — and [Practical Conversations](general-english/practical-conversations/). Begin reading for twenty minutes a day."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "B1 — Intermediate",
+          "variant": "tint",
+          "items": [
+            { "q": "Can you do these?", "bullets": ["Keep a conversation going for several minutes without long pauses.", "Explain a problem clearly and say what you would like done about it.", "Understand most of a news bulletin on a familiar subject.", "Read a newspaper article and follow the argument.", "Write a clear email of about 150 words asking for something.", "Give reasons and opinions, and say why you disagree.", "Understand a telephone conversation with someone you do not know.", "Follow a work meeting and contribute to it."] },
+            { "q": "If several are 'not yet'", "a": ["Work on [Speaking](general-english/speaking/), [Listening](general-english/listening/) and [Workplace English](general-english/workplace-english/). This is the level at which regular real conversation matters most."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "B2 — Upper intermediate",
+          "items": [
+            { "q": "Can you do these?", "bullets": ["Take part in a discussion with several people speaking at natural speed.", "Argue a case, respond to counter-arguments, and change your position when convinced.", "Understand most television and radio without subtitles.", "Read a full article or a chapter without a dictionary.", "Write a clear, well-organised letter of complaint or application.", "Explain something technical from your own work to someone outside it.", "Recognise when someone is being ironic, or polite rather than sincere.", "Adjust how formal you are according to who you are speaking to."] },
+            { "q": "If several are 'not yet'", "a": ["Work on [Spoken English](general-english/spoken-english/) for natural informal patterns, and [Writing](general-english/writing/) for organisation. At this level, wide reading and real conversation do more than any exercise."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The honest measure",
+          "text": [
+            "Levels matter far less than this question: **is there something you can do in English this month that you could not do three months ago?**",
+            "Write down what it is. That single sentence, repeated every three months, is a truer record of your English than any test result."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "English for Adults", "url": "general-english/english-for-adults/", "more": "Open" },
+            { "title": "Interactive Practice", "url": "general-english/interactive-practice/", "more": "Open" },
+            { "title": "General English classes", "url": "rcf-classes/general-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/interactive-practice",
+      "title": "Interactive Practice",
+      "description": "Free interactive General English practice: grammar, articles, verb forms, sentence order, vocabulary matching, reading and error correction, all marked instantly.",
+      "keywords": "English practice, interactive exercises, grammar quiz, vocabulary practice, free",
+      "kicker": "General English",
+      "kind": "quiz",
+      "schema": "LearningResource",
+      "resourceType": "interactive activity",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Practice that marks itself and explains every answer. Nothing is recorded, nothing is scored against you, and you can start again as often as you like." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Grammar",
+          "intro": ["Tenses and prepositions — the two areas that most often cause confusion in everyday English."],
+          "ids": ["grammar-tenses-1", "grammar-prepositions-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Articles and verb forms",
+          "variant": "tint",
+          "ids": ["gap-articles-1", "gap-verb-forms-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Word order",
+          "intro": ["English word order is fixed, and getting it right is what makes you understood the first time."],
+          "ids": ["order-sentences-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Vocabulary",
+          "variant": "tint",
+          "ids": ["vocab-match-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Reading",
+          "intro": ["A short passage with six questions. Read it once quickly, then answer."],
+          "ids": ["reading-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Error correction",
+          "variant": "tint",
+          "intro": ["Each sentence has one mistake. Rewrite it correctly. Study [Common Mistakes](general-english/common-mistakes/) alongside this."],
+          "ids": ["error-correction-1"]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Your privacy",
+          "text": ["These activities run entirely inside your browser. Your answers are not sent anywhere, are not saved, and nobody sees them. See the [Privacy Policy](privacy/)."]
+        }
+      ]
+    }
+  ]
+}

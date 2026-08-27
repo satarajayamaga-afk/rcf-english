@@ -1,0 +1,1171 @@
+{
+  "pages": [
+    {
+      "slug": "ol-english/guided-writing",
+      "title": "Guided Writing",
+      "description": "The six-step guided writing method used throughout RCF English: understand the task, study a model, identify the structure, complete guided steps, write independently, then use a correction checklist.",
+      "keywords": "guided writing, O/L English writing, writing method, model answer, correction checklist",
+      "kicker": "O/L English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "educationalLevel": "Ordinary Level",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": {
+        "text": "Read this page before any other writing page. Every writing lesson on RCF English follows these six steps, in this order, for a reason.",
+        "buttons": [
+          { "label": "Emails", "url": "ol-english/emails/", "style": "btn--ghost-light" },
+          { "label": "Letters", "url": "ol-english/letters/", "style": "btn--ghost-light" },
+          { "label": "Essay Writing", "url": "ol-english/essay-writing/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Why weak writers stay weak",
+          "text": [
+            "A learner is told to write a letter. They have not been shown what a letter of that kind looks like, or how it is put together. They write something, it is marked, they are told it was poor, and they conclude that they cannot write English.",
+            "Very often the problem was never ability. A stage was missing. Nobody showed them the shape of the thing before asking them to build one.",
+            "**On this site, no writing task is set without preparation.** That is what guided writing means: the support is real at the start, and is taken away deliberately, step by step, as you become able to work without it."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The six steps",
+          "variant": "navy",
+          "intro": ["Every writing page on RCF English is arranged in these six sections. Work through them in order. Do not jump to step five."],
+          "items": [
+            { "title": "Understand the task", "text": ["What kind of writing is it? Who is the reader? What is it for? How long should it be? If you cannot say these four things in your own words, you are not ready to write. This step takes two minutes and saves twenty."] },
+            { "title": "Study a model", "text": ["Read a good example of the same task. Read it twice: once for what it says, once for how it is built. A model is not something to copy — it is something to take apart."] },
+            { "title": "Identify the structure", "text": ["Mark the parts of the model. Where does it open? Where does the main information sit? Where does it close? What does each paragraph do? The structure, not the words, is what you will reuse."] },
+            { "title": "Complete guided steps", "text": ["Now write, but with help. Fill in a framework, complete half-written sentences, or write one paragraph at a time to a given instruction. You are practising the structure, not yet the whole task."] },
+            { "title": "Write independently", "text": ["Now do the whole task alone, to time, without the model in front of you. This is the fifth step, not the first."] },
+            { "title": "Use a correction checklist", "text": ["Read your own work against a checklist and correct it yourself. This is the step most learners skip, and it is the step that produces the most improvement. Marking your own work is a skill, and it can be learnt."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The four questions to ask before writing anything",
+          "text": ["Whatever the task — email, notice, letter, paragraph, essay, description, dialogue or speech — begin by answering these."],
+          "numbered": [
+            "**What form is it?** A notice looks nothing like an essay. The form is usually stated in the question, and it decides your layout.",
+            "**Who is the reader?** A principal, a friend, a newspaper, a general audience. The reader decides how formal your language must be.",
+            "**What is the purpose?** To inform, invite, request, complain, thank, apologise, describe, persuade. The purpose decides your opening and your closing.",
+            "**How long?** If a word limit is given, keep near it. Well under loses content marks; far over wastes time you need elsewhere."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Reader and purpose decide the language",
+          "variant": "tint",
+          "caption": "The same request, written for three different readers.",
+          "columns": ["Reader", "Register", "How you would write it"],
+          "rows": [
+            ["A close friend", "Informal", "Can you send me the notes? Thanks!"],
+            ["A teacher you know", "Polite, semi-formal", "Could you please send me the notes for last week's lesson?"],
+            ["The principal, in writing", "Formal", "I should be grateful if you would arrange for the notes to be sent to me."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Planning: four lines, one minute",
+          "text": [
+            "A plan is not a rough draft. You do not have time to write anything twice. A plan is four short lines listing what each paragraph will contain, in order.",
+            "For example, for a letter asking the principal to repair the school library:"
+          ],
+          "bullets": [
+            "**Para 1** — who I am, why I am writing",
+            "**Para 2** — what the problem is: leaking roof, damaged books",
+            "**Para 3** — why it matters: students cannot use the library before the examination",
+            "**Para 4** — the request, and a polite close"
+          ]
+        },
+        {
+          "type": "prose",
+          "text": [
+            "That plan took under a minute. It guarantees four paragraphs, in a sensible order, with a proper ending. Most weak answers fail on exactly those three things."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "The general correction checklist",
+          "variant": "tint",
+          "intro": ["Each writing page has its own checklist as well. Use this one for every piece of writing you do."],
+          "items": [
+            "Have I written the **form** asked for — email, notice, letter, essay, speech, dialogue?",
+            "Is the **tone** right for the reader?",
+            "Have I used **every detail** given in the question, and not invented content that contradicts it?",
+            "Is it roughly the **length** asked for?",
+            "Is each **paragraph** about one idea, and are the paragraphs clearly separated?",
+            "Do my **subjects and verbs agree**? (Read each sentence looking only at the verb.)",
+            "Are my **tenses** consistent, and correct for the time I am writing about?",
+            "Have I checked **a, an, the** — the article errors are the ones I make most often?",
+            "Are all **plurals** correct? (*informations*, *advices*, *equipments* do not exist.)",
+            "Does every sentence begin with a **capital letter** and end with a **full stop**?",
+            "Are **names, days, months and places** capitalised?",
+            "Have I checked the **spelling** of the words I always get wrong?",
+            "Can the examiner **read my handwriting**, including the last paragraph?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Now apply the method",
+          "columns": "4",
+          "intro": ["Each of these pages follows the six steps for one kind of writing."],
+          "items": [
+            { "title": "Emails", "url": "ol-english/emails/", "more": "Open" },
+            { "title": "Notices", "url": "ol-english/notices/", "more": "Open" },
+            { "title": "Letters", "url": "ol-english/letters/", "more": "Open" },
+            { "title": "Paragraph Writing", "url": "ol-english/paragraph-writing/", "more": "Open" },
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
+            { "title": "Picture Description", "url": "ol-english/picture-description/", "more": "Open" },
+            { "title": "Dialogue and Speech", "url": "ol-english/dialogue-and-speech-writing/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "For teachers",
+          "text": ["The same six-step sequence is set out for classroom use, with guidance on how to withdraw the support gradually, on the [Guided Writing page for teachers](teacher-resources/guided-writing/)."]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/emails",
+      "title": "Writing Emails",
+      "description": "How to write formal and informal emails for the O/L English paper: layout, subject line, opening, body, closing, with a model, guided practice and a correction checklist.",
+      "keywords": "email writing, formal email, informal email, O/L English, guided writing",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "An email is short, but it has a fixed shape. Learn the shape and this becomes one of the most reliable tasks on the paper." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Step 1 — Understand the task",
+          "eyebrow": "Step 1 of 6",
+          "text": ["Before writing a single word, answer the four questions."],
+          "bullets": [
+            "**Form:** an email. It needs a subject line, a greeting, a body in short paragraphs and a closing.",
+            "**Reader:** are you writing to a friend, or to someone in authority such as a principal, a manager or an official? This decides everything about your language.",
+            "**Purpose:** to inform, to invite, to request, to apologise, to complain or to thank. The purpose sets your first sentence.",
+            "**Length:** normally short. If a word limit is given, keep close to it."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Formal or informal?",
+          "variant": "tint",
+          "caption": "Match your language to your reader. Mixing the two is one of the commonest faults.",
+          "columns": ["", "Formal email", "Informal email"],
+          "rows": [
+            ["Greeting", "Dear Sir / Dear Madam / Dear Mr Perera,", "Dear Kamal, / Hi Kamal,"],
+            ["Opening", "I am writing to… / I should be grateful if…", "How are you? / I hope you are well."],
+            ["Language", "Full forms: I am, do not, cannot", "Short forms are fine: I'm, don't, can't"],
+            ["Requests", "Could you please… / I should be grateful if you would…", "Can you… / Could you…"],
+            ["Closing", "Yours faithfully (Dear Sir/Madam), Yours sincerely (named person)", "Best wishes, / Love, / See you soon,"],
+            ["Signature", "Your full name, and your position if relevant", "Your first name"]
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model",
+          "eyebrow": "Step 2 of 6",
+          "intro": ["Read it twice. The first time for what it says; the second time for how it is built."],
+          "items": [
+            {
+              "label": "Formal email",
+              "prompt": "You are the secretary of your school's English Literary Association. Write an email to the principal requesting permission to hold an inter-house speech competition, giving the date, the place and the reason.",
+              "sample": [
+                "**Subject:** Permission to hold an inter-house speech competition",
+                "Dear Sir,",
+                "I am writing on behalf of the English Literary Association to request your permission to hold an inter-house speech competition.",
+                "We should like to hold the competition in the school hall on Friday, 18 September, from 2 p.m. to 4 p.m. The purpose is to give students of all three houses an opportunity to practise public speaking in English before the annual prize-giving.",
+                "The association will make all the arrangements, and two teachers of the English department have kindly agreed to act as judges. We shall ensure that the hall is left in order.",
+                "I should be grateful if you would kindly grant us permission.",
+                "Yours faithfully,",
+                "K. Perera",
+                "Secretary, English Literary Association"
+              ],
+              "notes": [
+                "The subject line states the purpose in a few words. It is not a sentence and takes no full stop.",
+                "*Dear Sir* is used because the reader is addressed by position, not by name — so the closing must be *Yours faithfully*.",
+                "The first sentence says who is writing and why. There is no long introduction.",
+                "The second paragraph gives all the details asked for in the question: the date, the place and the reason.",
+                "The third paragraph anticipates the reader's likely concerns — arrangements, supervision, tidiness — which is what makes it a persuasive request rather than a bare one.",
+                "The fourth paragraph makes the request explicitly. A request that is only implied is often refused.",
+                "The signature gives the name and the position, because the writer wrote in an official capacity."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 3 — Identify the structure",
+          "eyebrow": "Step 3 of 6",
+          "variant": "tint",
+          "text": ["Strip the model down to its skeleton. This is what you will reuse, whatever the topic."],
+          "numbered": [
+            "**Subject line** — the purpose in a few words.",
+            "**Greeting** — matched to the reader.",
+            "**Paragraph 1** — who you are (if the reader does not know) and why you are writing.",
+            "**Paragraph 2** — the details: what, when, where, and any facts the question supplies.",
+            "**Paragraph 3** — anything that supports the purpose: reasons, reassurances, arrangements.",
+            "**Paragraph 4** — the request, invitation or conclusion, stated plainly.",
+            "**Closing and name** — matched to the greeting."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 4 — Guided practice",
+          "eyebrow": "Step 4 of 6",
+          "text": [
+            "Do not write a whole email yet. Complete these steps first. Write them out by hand.",
+            "**Task:** Your class is organising a shramadana campaign to clean the school garden. Write an email to your class teacher informing her and requesting permission."
+          ],
+          "numbered": [
+            "Write the **subject line** only. Six words at most.",
+            "Write the **greeting** and the **closing** that go together. (Careful — you know the teacher's name, so which closing is correct?)",
+            "Write **one sentence** stating who you are and why you are writing.",
+            "List **four details** you must include: the date, the time, the place, and what will be done.",
+            "Write **one sentence** giving a reason why permission should be granted.",
+            "Write **one sentence** making the request politely."
+          ]
+        },
+        {
+          "type": "prose",
+          "text": [
+            "Now put those pieces together in order and read the result aloud. You have written an email without ever facing a blank page."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 5 — Write independently",
+          "eyebrow": "Step 5 of 6",
+          "variant": "tint",
+          "text": [
+            "Close this page. Take a fresh sheet, set a timer for fifteen minutes, and write one of these in full without looking back at the model."
+          ],
+          "bullets": [
+            "**Formal:** Write an email to the manager of a bookshop asking whether a particular book is available, what it costs, and whether it can be sent to your town.",
+            "**Formal:** Write an email to your principal apologising for your absence for three days and asking how you may catch up with the missed work.",
+            "**Informal:** Write an email to a friend in another town inviting them to spend the school holidays with your family, and telling them what you plan to do.",
+            "**Informal:** Write an email to a cousin thanking them for a birthday present and telling them your news."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Step 6 — Correction checklist for emails",
+          "eyebrow": "Step 6 of 6",
+          "items": [
+            "Is there a **subject line**, and does it state the purpose in a few words?",
+            "Does the **greeting** match the reader — *Dear Sir* / *Dear Mr Perera* / *Dear Kamal*?",
+            "Does the **closing match the greeting**? (*Dear Sir* → *Yours faithfully*; *Dear Mr Perera* → *Yours sincerely*.)",
+            "Is the **first sentence** about why I am writing, not about the weather?",
+            "Have I included **every detail given in the question**?",
+            "Are the paragraphs **short and separate**, one idea in each?",
+            "Is the **register consistent** — no *Hi* in a formal email, no *I should be grateful* to a friend?",
+            "Have I made the **request or purpose explicit**, rather than leaving the reader to guess it?",
+            "Is my **name** at the end?",
+            "Have I checked verbs, articles, plurals, capital letters and full stops?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Letters", "url": "ol-english/letters/", "more": "Open", "text": ["The longer relative of the email, with addresses and a stricter layout."] },
+            { "title": "Notices", "url": "ol-english/notices/", "more": "Open", "text": ["Shorter still, and the marks are easy once you know the form."] },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["More full answers with notes explaining why they work."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/notices",
+      "title": "Writing Notices",
+      "description": "How to write a notice for the O/L English paper: the five essential parts, layout, language, a model, guided practice and a correction checklist.",
+      "keywords": "notice writing, O/L English notice, announcement, guided writing",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "A notice is the shortest writing task on the paper and one of the most reliable. Learn the five parts and you can write one in five minutes." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Step 1 — Understand the task",
+          "eyebrow": "Step 1 of 6",
+          "text": [
+            "A notice is pinned on a board. The reader is walking past. They will give it a few seconds, and they must come away knowing **what** is happening, **when**, **where** and **what to do about it**.",
+            "That fact decides everything. A notice is not a letter and not an essay. It has no greeting, no *Dear*, no *Yours faithfully*, and no long sentences."
+          ],
+          "bullets": [
+            "**Form:** a notice, laid out in a box or with clear separate lines.",
+            "**Reader:** everyone who passes the board — students, teachers, members of a club.",
+            "**Purpose:** to announce, invite, warn or instruct.",
+            "**Length:** short. Usually about fifty words is plenty."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The five essential parts",
+          "variant": "tint",
+          "text": ["A notice that is missing one of these is incomplete, however good the English is."],
+          "numbered": [
+            "**Name of the organisation or school** — at the top.",
+            "**The word NOTICE**, or a clear heading in capitals.",
+            "**The date** on which the notice is issued.",
+            "**A short heading** saying what it is about.",
+            "**The body**: what, when, where, who it is for, and what to do.",
+            "**The name and position of the person issuing it**, at the end."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model",
+          "eyebrow": "Step 2 of 6",
+          "items": [
+            {
+              "label": "Notice",
+              "prompt": "You are the secretary of the school English Day Committee. Write a notice inviting students of Grades 9, 10 and 11 to take part in an English Day essay competition.",
+              "sample": [
+                "**MAHINDA COLLEGE — ENGLISH DAY COMMITTEE**",
+                "**NOTICE**",
+                "12 August",
+                "**ENGLISH DAY ESSAY COMPETITION**",
+                "An essay competition will be held as part of English Day. Students of Grades 9, 10 and 11 may take part.",
+                "Topic: \"The book that changed my thinking\". Essays should not exceed 500 words and must be the student's own work.",
+                "Entries must be handed to the undersigned on or before Friday, 29 August. Prizes will be awarded on English Day.",
+                "S. Jayawardena",
+                "Secretary, English Day Committee"
+              ],
+              "notes": [
+                "Every one of the five essential parts is present, and in the usual order.",
+                "The heading tells the reader in four words whether this notice concerns them.",
+                "The information is grouped: what it is, then the conditions, then what to do and by when.",
+                "Sentences are short. There is no *We are very happy to inform all of you that…* — a notice has no room for it.",
+                "The deadline is stated with a day and a date, so it cannot be misread.",
+                "*The undersigned* is a useful formal expression meaning *the person who has signed below*."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 3 — Identify the structure",
+          "eyebrow": "Step 3 of 6",
+          "text": ["Notice how little is decoration and how much is information. Copy the skeleton, not the words."],
+          "bullets": [
+            "**Line 1:** organisation",
+            "**Line 2:** NOTICE",
+            "**Line 3:** date",
+            "**Line 4:** heading, in capitals",
+            "**Body:** two or three short paragraphs — the event, the conditions, the action required",
+            "**End:** name, then position"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The language of notices",
+          "variant": "tint",
+          "text": ["Notices use a particular kind of English. These are the phrases worth learning."],
+          "bullets": [
+            "*A meeting will be held on…* / *A competition will be conducted…*",
+            "*All members are requested to…* / *Students are kindly requested to…*",
+            "*Entries must be handed in on or before…*",
+            "*Those who wish to participate should give their names to…*",
+            "*For further details, contact the undersigned.*",
+            "*Attendance is compulsory.* / *All are welcome.*"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 4 — Guided practice",
+          "eyebrow": "Step 4 of 6",
+          "text": ["**Task:** The school library will be closed for three days for stock-taking. Write a notice as the librarian."],
+          "numbered": [
+            "Write the **organisation line** and the word NOTICE.",
+            "Write today's **date**.",
+            "Write a **heading of four words or fewer** in capitals.",
+            "Write **one sentence** saying what will happen and when.",
+            "Write **one sentence** telling readers what they must do about it — for example, returning borrowed books before the closure.",
+            "Write the **name and position** at the end."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 5 — Write independently",
+          "eyebrow": "Step 5 of 6",
+          "variant": "tint",
+          "text": ["Ten minutes, one sheet, no looking back at the model. Choose one."],
+          "bullets": [
+            "A notice announcing a shramadana campaign to clean the school premises next Saturday.",
+            "A notice inviting students to join the new English Speakers' Club, giving the day, time and place of the first meeting.",
+            "A notice informing students that a lost wristwatch has been handed in and may be claimed from the office.",
+            "A notice announcing that the inter-house sports meet has been postponed because of the weather, and giving the new date."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Step 6 — Correction checklist for notices",
+          "eyebrow": "Step 6 of 6",
+          "items": [
+            "Are all **five essential parts** present — organisation, NOTICE, date, heading, body, name and position?",
+            "Is the **heading** short and in capitals?",
+            "Does the body answer **what, when, where and who for**?",
+            "Does it say **what the reader must do**, and by when?",
+            "Are the sentences **short**?",
+            "Have I avoided a **greeting and a closing** — a notice has neither?",
+            "Have I avoided **first-person chattiness** such as *I am very happy to tell you*?",
+            "Is it near the **length** asked for?",
+            "Is the layout **clear on the page**, with the parts on separate lines?",
+            "Have I checked capital letters, spelling and full stops?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Emails", "url": "ol-english/emails/", "more": "Open" },
+            { "title": "Letters", "url": "ol-english/letters/", "more": "Open" },
+            { "title": "Model Questions", "url": "ol-english/model-questions/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/letters",
+      "title": "Writing Letters",
+      "description": "Formal and informal letter writing for O/L English: layout, addresses, openings and closings, useful phrases, a model, guided practice and a correction checklist.",
+      "keywords": "letter writing, formal letter, informal letter, O/L English, yours faithfully, yours sincerely",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "Letters carry a large share of the writing marks, and much of what is tested is layout — which means much of it can be learnt with certainty." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Step 1 — Understand the task",
+          "eyebrow": "Step 1 of 6",
+          "text": [
+            "The first decision is formal or informal, and the question always tells you. A letter to a principal, a manager, an editor, a government officer or a stranger is **formal**. A letter to a friend or a relative is **informal**.",
+            "Once you have decided, everything else follows: the layout, the greeting, the language and the closing all come as a set. Mixing the sets is the single commonest fault in letter answers."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The two sets, side by side",
+          "variant": "tint",
+          "columns": ["", "Formal letter", "Informal letter"],
+          "rows": [
+            ["Your address", "Top right (or top left, used consistently)", "Top right"],
+            ["Date", "Below your address", "Below your address"],
+            ["Reader's address", "On the left, below the date", "Not needed"],
+            ["Greeting", "Dear Sir, / Dear Madam, / Dear Mr Silva,", "Dear Amali, / My dear Father,"],
+            ["Opening", "I am writing to…", "I hope this letter finds you well."],
+            ["Language", "Full forms, no slang, polite requests", "Natural, friendly, short forms allowed"],
+            ["Closing", "Yours faithfully (Sir/Madam) — Yours sincerely (named)", "With love, / Your loving friend, / Best wishes,"],
+            ["Signature", "Full name below the closing", "First name"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The rule students most often get wrong",
+          "text": [
+            "If you begin **Dear Sir** or **Dear Madam** — because you do not name the reader — you must end **Yours faithfully**.",
+            "If you begin with the reader's name, such as **Dear Mr Silva**, you must end **Yours sincerely**.",
+            "A useful memory aid: you cannot be *sincere* with someone whose name you do not know."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model",
+          "eyebrow": "Step 2 of 6",
+          "items": [
+            {
+              "label": "Formal letter of request",
+              "prompt": "Write a letter to the Divisional Secretary of your area requesting that a street light be repaired on the road leading to your school.",
+              "sample": [
+                "45 Temple Road,",
+                "Weliketiya.",
+                "18 August 2026",
+                "The Divisional Secretary,",
+                "Divisional Secretariat,",
+                "Weliketiya.",
+                "Dear Sir,",
+                "**Request for the repair of a street light on Temple Road**",
+                "I am writing to bring to your notice the condition of the street light at the junction of Temple Road and Station Road, which has not been working for the past two months.",
+                "This junction is used every morning and evening by a large number of schoolchildren, and by workers returning after dark. Since the light failed, the junction has become very dark, and there have already been two minor accidents there. Residents are also concerned about the safety of children attending evening classes.",
+                "I should therefore be grateful if you would kindly arrange for the light to be repaired at an early date. If any further information is required, I shall be glad to provide it.",
+                "Thank you for your attention to this matter.",
+                "Yours faithfully,",
+                "R. Wijesinghe"
+              ],
+              "notes": [
+                "The writer's address and the date come first, then the reader's address, then the greeting.",
+                "A short subject heading after the greeting is good practice in a formal letter and helps the reader immediately.",
+                "Paragraph 1 states the problem in one sentence. It does not begin with an apology or a preamble.",
+                "Paragraph 2 gives the reasons why it matters, with concrete detail — schoolchildren, workers, two accidents. Concrete detail is what makes a request persuasive.",
+                "Paragraph 3 makes the request explicitly and offers cooperation.",
+                "*Dear Sir* is matched correctly by *Yours faithfully*.",
+                "The tone is firm but courteous throughout. A complaint written angrily reads as unreasonable and loses marks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 3 — Identify the structure",
+          "eyebrow": "Step 3 of 6",
+          "variant": "tint",
+          "text": ["Every formal letter you write in the examination can use this skeleton."],
+          "numbered": [
+            "Your address, then the date.",
+            "The reader's address.",
+            "Greeting, and a short subject heading.",
+            "**Paragraph 1:** why you are writing, in one sentence.",
+            "**Paragraph 2:** the details and the reasons, with concrete facts.",
+            "**Paragraph 3:** what you want to happen.",
+            "**Paragraph 4:** a short courteous close.",
+            "Closing phrase and your name."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Useful phrases worth learning",
+          "parts": [
+            { "heading": "Formal openings", "bullets": ["I am writing to enquire about…", "I am writing to bring to your notice…", "I wish to apply for the post of…", "I should like to draw your attention to…"] },
+            { "heading": "Formal requests", "bullets": ["I should be grateful if you would kindly…", "I would request you to…", "Could you please arrange for…", "I look forward to hearing from you."] },
+            { "heading": "Informal openings", "bullets": ["I hope this letter finds you well.", "It was good to hear from you.", "I am sorry I did not write earlier.", "How are you and everyone at home?"] },
+            { "heading": "Informal closings", "bullets": ["Do write soon.", "Give my regards to your parents.", "I am looking forward to seeing you.", "Take care of yourself."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 4 — Guided practice",
+          "eyebrow": "Step 4 of 6",
+          "variant": "tint",
+          "text": ["**Task:** Write to the manager of a shop complaining that a bag you bought there tore within a week, and asking for a replacement."],
+          "numbered": [
+            "Write **your address** and **the date** in the correct position.",
+            "Write the **reader's address** and the **greeting**, and note down the closing that must go with it.",
+            "Write a **subject heading** of six words or fewer.",
+            "Write **one sentence** stating what you bought, when and where.",
+            "Write **two sentences** describing what went wrong, factually and without anger.",
+            "Write **one sentence** stating exactly what you want — replacement, repair or refund.",
+            "Write the **closing** and your name."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 5 — Write independently",
+          "eyebrow": "Step 5 of 6",
+          "text": ["Twenty-five minutes, by hand, no model in front of you. Choose one."],
+          "bullets": [
+            "**Formal:** Write to the editor of a newspaper about the problem of rubbish being dumped near a school, suggesting what should be done.",
+            "**Formal:** Write to the principal of your school requesting permission to start an English Speakers' Club, explaining how it would be run.",
+            "**Formal:** Write to a bookshop enquiring about books for O/L English revision, asking about prices and delivery.",
+            "**Informal:** Write to a friend describing a memorable journey you made recently.",
+            "**Informal:** Write to a cousin who has failed an examination, encouraging them."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Step 6 — Correction checklist for letters",
+          "eyebrow": "Step 6 of 6",
+          "variant": "tint",
+          "items": [
+            "Have I chosen the right kind — **formal or informal** — for the reader given?",
+            "Is my **address** and the **date** in place?",
+            "For a formal letter, is the **reader's address** included?",
+            "Does the **closing match the greeting** — *Dear Sir* with *Yours faithfully*, a name with *Yours sincerely*?",
+            "Does **paragraph 1** say why I am writing?",
+            "Have I given **concrete details** rather than vague statements?",
+            "Have I said **plainly what I want to happen**?",
+            "Is the **tone** courteous, even if I am complaining?",
+            "Are the **paragraphs separate**, one idea in each?",
+            "Have I signed with my **name**?",
+            "Have I checked verbs, articles, plurals, capitals and full stops?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" },
+            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/paragraph-writing",
+      "title": "Paragraph Writing",
+      "description": "How to write a well-developed English paragraph: topic sentence, supporting detail, example and conclusion, with a model, guided practice and a correction checklist.",
+      "keywords": "paragraph writing, topic sentence, supporting sentences, O/L English",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "Learn to write one good paragraph and you have learnt to write an essay, because an essay is a small number of good paragraphs in a sensible order." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Step 1 — Understand the task",
+          "eyebrow": "Step 1 of 6",
+          "text": [
+            "A paragraph is a group of sentences about **one idea**. That is the whole definition, and almost every weak paragraph breaks it — by containing three ideas, or by containing one idea repeated three times.",
+            "In the examination you may be asked to write a single paragraph on a given topic, or paragraphs may form part of a longer piece. The skill is the same."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The four parts of a paragraph",
+          "variant": "tint",
+          "items": [
+            { "title": "Topic sentence", "text": ["The first sentence states the idea of the paragraph. A reader who reads only this sentence should know what the paragraph is about."] },
+            { "title": "Supporting sentences", "text": ["Two or three sentences that explain, prove or expand the idea. This is where most marks are gained, and where weak paragraphs are thinnest."] },
+            { "title": "Example or detail", "text": ["One concrete instance. *Many students find it difficult* is vague; *In my class of forty, only six had a dictionary at home* is not. Detail is what makes writing convincing."] },
+            { "title": "Concluding sentence", "text": ["A closing sentence that completes the thought or links to what follows. Without it a paragraph stops rather than ends."] }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model",
+          "eyebrow": "Step 2 of 6",
+          "items": [
+            {
+              "label": "Paragraph",
+              "prompt": "Write a paragraph on the importance of reading outside the school textbook.",
+              "sample": [
+                "Reading outside the school textbook is one of the most useful habits a student can form. A textbook is written to be examined, so it gives information in the shortest possible form; a story or an article, by contrast, shows language being used naturally, and the reader absorbs sentence patterns and vocabulary without having to memorise them. The effect is gradual but unmistakable. A student who reads a newspaper column or a short story every week for a year will write more fluently at the end of it than one who has spent the same year underlining a textbook, and will usually understand examination passages more quickly as well. For a language, wide reading is not a distraction from study; it is study."
+              ],
+              "notes": [
+                "The **topic sentence** states the idea plainly: reading outside the textbook is useful.",
+                "The **supporting sentences** explain *why*, by contrasting two kinds of reading. They give a reason, not merely a restatement.",
+                "The **detail** is concrete: a column or a story every week, for a year.",
+                "The **concluding sentence** completes the thought and does not simply repeat the opening.",
+                "Every sentence belongs to the one idea. Nothing about libraries, examinations or teachers has been allowed to wander in."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 3 — Identify the structure",
+          "eyebrow": "Step 3 of 6",
+          "text": ["Read the model again and label its sentences: **1** topic, **2–3** support, **4** detail, **5** conclusion. Do the same with any paragraph you meet in a comprehension passage. Once you can see the structure in other people's writing, it appears in your own."]
+        },
+        {
+          "type": "prose",
+          "heading": "Joining sentences properly",
+          "variant": "tint",
+          "text": ["The links between sentences are what make a paragraph read as one thought rather than a list. Use them, but do not use one in every sentence."],
+          "bullets": [
+            "**Adding:** also, in addition, moreover, furthermore",
+            "**Giving an example:** for example, for instance, such as",
+            "**Contrasting:** however, on the other hand, nevertheless, by contrast",
+            "**Cause and effect:** therefore, as a result, consequently, because of this",
+            "**Sequencing:** first, then, afterwards, finally",
+            "**Concluding:** in short, in conclusion, to sum up"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 4 — Guided practice",
+          "eyebrow": "Step 4 of 6",
+          "text": ["**Topic:** The problem of plastic waste in our town."],
+          "numbered": [
+            "Write **one topic sentence** naming the problem. Do not describe it yet.",
+            "Write **two sentences** explaining why it is a problem.",
+            "Write **one sentence** giving a concrete detail — a place, a quantity, something you have actually seen.",
+            "Write **one concluding sentence**.",
+            "Now read your five sentences in order. Add **one linking word** where the join is weakest — and only there."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 5 — Write independently",
+          "eyebrow": "Step 5 of 6",
+          "variant": "tint",
+          "text": ["Ten minutes for one paragraph. Choose a topic and write without a plan on paper — by now the four parts should be the plan."],
+          "bullets": [
+            "The value of learning a second language",
+            "A person who has influenced me",
+            "Why school libraries matter",
+            "The advantages and disadvantages of the mobile telephone",
+            "A festival celebrated in my area"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Step 6 — Correction checklist for paragraphs",
+          "eyebrow": "Step 6 of 6",
+          "items": [
+            "Is there **one idea** in this paragraph, and only one?",
+            "Does the **first sentence** state that idea?",
+            "Do the supporting sentences **explain**, rather than repeat the topic sentence in other words?",
+            "Is there at least one **concrete detail**?",
+            "Does the paragraph **end**, rather than stop?",
+            "Have I used linking words **where they help**, and not in every sentence?",
+            "Are my sentences of **varied length** — not all short, not all long?",
+            "Have I checked verbs, articles, plurals, capitals and full stops?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open", "text": ["Several paragraphs, organised."] },
+            { "title": "Picture Description", "url": "ol-english/picture-description/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/essay-writing",
+      "title": "Essay Writing",
+      "description": "How to plan, organise and finish an O/L English essay in the time available: essay types, structure, introductions and conclusions, a model, guided practice and a correction checklist.",
+      "keywords": "essay writing, O/L English essay, essay structure, introduction, conclusion, planning",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "An essay is not a long paragraph. It is a small number of paragraphs, each doing a different job, arranged in an order you decided before you began." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Step 1 — Understand the task",
+          "eyebrow": "Step 1 of 6",
+          "text": ["Essay titles fall into a few types, and the type decides the shape of your answer. Identify it before you plan."]
+        },
+        {
+          "type": "table",
+          "heading": "Essay types and their shapes",
+          "variant": "tint",
+          "columns": ["Type", "Example title", "Shape"],
+          "rows": [
+            ["Descriptive", "A rainy day in my village", "Organised by place or by time, appealing to the senses"],
+            ["Narrative", "An experience I shall never forget", "Beginning, complication, climax, ending"],
+            ["Discursive", "The advantages and disadvantages of social media", "One side, the other side, then your judgement"],
+            ["Argumentative", "Should homework be abolished?", "Your position, your reasons, the opposing view answered, conclusion"],
+            ["Expository", "How a bill becomes a law", "Steps or aspects in a logical order"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The five-paragraph shape",
+          "text": [
+            "For most examination essays this shape is reliable, and you can plan it in a minute.",
+            "The number of body paragraphs may be two, three or four. What must not change is that each body paragraph has **one** job."
+          ],
+          "numbered": [
+            "**Introduction** — say what the essay is about and, where relevant, what you will argue. Three or four sentences.",
+            "**Body paragraph 1** — the first main point, developed.",
+            "**Body paragraph 2** — the second main point, developed.",
+            "**Body paragraph 3** — the third main point, or the opposing view, developed.",
+            "**Conclusion** — your judgement or final thought. Three or four sentences. No new information."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model",
+          "eyebrow": "Step 2 of 6",
+          "items": [
+            {
+              "label": "Discursive essay (opening and closing paragraphs)",
+              "prompt": "The mobile telephone has done more harm than good to school students. Do you agree?",
+              "sample": [
+                "**Introduction**",
+                "Few objects have entered our daily lives as quickly as the mobile telephone. In a single generation it has moved from a rare luxury to something almost every household owns, and school students are among its heaviest users. Whether this has helped or harmed them is now argued in staffrooms and at home. In my view the telephone itself is neither good nor harmful; what matters is whether a student controls it or is controlled by it.",
+                "**Conclusion**",
+                "The mobile telephone has therefore brought both real benefits and real dangers, and the balance between them is not decided by the instrument. A student who uses it to find a word, to send work to a teacher and to keep in touch with family gains from it; a student who cannot leave it alone during study loses far more than time. The task before parents and teachers is not to condemn the telephone but to teach the habits that make it useful."
+              ],
+              "notes": [
+                "The introduction begins with a general observation, narrows to the specific question, and ends with the writer's position. This funnel shape works for almost any essay title.",
+                "The position stated at the end of the introduction is genuinely arguable, not a bland *there are advantages and disadvantages*.",
+                "The conclusion answers the question directly. It does not introduce a new argument.",
+                "It also does not simply repeat the introduction in other words. It carries the argument one step further, to what should be done.",
+                "Both paragraphs are short. In an examination essay, length belongs in the body, not at the two ends."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 3 — Identify the structure",
+          "eyebrow": "Step 3 of 6",
+          "variant": "tint",
+          "text": [
+            "Take the model apart. The introduction does three things: a general opening, a narrowing to the question, a statement of position. The conclusion does three things: a summary judgement, a balancing of the two sides, a forward-looking closing sentence.",
+            "Practise those two paragraphs on their own. Students who can write a good introduction and a good conclusion under pressure are rarely the ones who run out of time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 4 — Guided practice",
+          "eyebrow": "Step 4 of 6",
+          "text": ["**Title:** Should school uniforms be compulsory?"],
+          "numbered": [
+            "Write a **four-line plan** — one line for each of the four paragraphs you will write. Nothing but the idea of each.",
+            "Write the **introduction** only: one general sentence, one narrowing sentence, one sentence giving your position.",
+            "Write **body paragraph 1**: topic sentence, two supporting sentences, one concrete detail.",
+            "Write the **topic sentence only** of body paragraph 2, making sure it is a different idea from paragraph 1.",
+            "Write the **conclusion**: your judgement, a balancing sentence, a closing thought.",
+            "Now write body paragraph 2 in full, and read the whole essay aloud."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 5 — Write independently",
+          "eyebrow": "Step 5 of 6",
+          "text": ["Thirty-five minutes, by hand, with five minutes at the end reserved for checking. Choose one."],
+          "bullets": [
+            "The person I admire most",
+            "Village life and city life",
+            "The importance of learning English in Sri Lanka today",
+            "Should students be given fewer examinations?",
+            "A day that did not go as planned",
+            "How our school could be improved"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Step 6 — Correction checklist for essays",
+          "eyebrow": "Step 6 of 6",
+          "variant": "tint",
+          "items": [
+            "Have I **answered the title given**, and not a similar title I would have preferred?",
+            "Does the **introduction** narrow to the question and state a position?",
+            "Does each **body paragraph** have one idea and a topic sentence?",
+            "Have I given **concrete detail** — examples, not only generalisations?",
+            "For a discursive or argumentative essay, have I **acknowledged the other side**?",
+            "Does the **conclusion** answer the question and add no new information?",
+            "Are the paragraphs **clearly separated** on the page?",
+            "Are my **linking words** varied, and not repeated at the start of every paragraph?",
+            "Is the essay near the **required length**?",
+            "Have I left time to **check the verbs, articles, plurals and spelling**?",
+            "Is the **handwriting readable to the end**?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" },
+            { "title": "Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Open" },
+            { "title": "Paper II", "url": "ol-english/paper-ii/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/picture-description",
+      "title": "Picture Description",
+      "description": "How to describe a picture in the O/L English paper: an organised order, useful position and guessing language, a model, guided practice and a correction checklist.",
+      "keywords": "picture description, describing a picture, O/L English, prepositions of place",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "The mark is not for seeing the picture. It is for describing it in an order a reader can follow." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Step 1 — Understand the task",
+          "eyebrow": "Step 1 of 6",
+          "text": [
+            "You are given a picture and asked to describe it, often in a set number of words. The examiner cannot see whether you have understood the picture except through the order and the accuracy of your sentences.",
+            "The commonest weak answer is a list: *There is a man. There is a tree. There is a bus.* Everything true, nothing organised, few marks."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "An order that always works",
+          "variant": "tint",
+          "items": [
+            { "title": "General statement", "text": ["One sentence saying what the picture shows as a whole. *The picture shows a busy market in a small town in the early morning.*"] },
+            { "title": "Setting", "text": ["Where and when. Indoors or outdoors, town or village, time of day, weather, season."] },
+            { "title": "Foreground", "text": ["The people and objects nearest the viewer, and what they are doing. Use the present continuous."] },
+            { "title": "Background", "text": ["What is further away — buildings, hills, the road, the sky."] },
+            { "title": "Impression", "text": ["One closing sentence about the mood or what the picture suggests. *The scene gives an impression of cheerful confusion.*"] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The language you need",
+          "parts": [
+            { "heading": "Position", "bullets": ["in the foreground / in the background / in the centre", "on the left / on the right / at the top / at the bottom", "next to, beside, behind, in front of, between, among, under, above", "in the distance / nearby"] },
+            { "heading": "Actions in progress", "bullets": ["A woman **is selling** vegetables.", "Two children **are running** towards the gate.", "Several people **are waiting** for the bus."] },
+            { "heading": "Careful guessing", "text": ["You cannot know what is happening, so do not state it as fact. Use language of appearance instead — this is often where the better marks lie."], "bullets": ["It appears to be early morning.", "The man seems to be a fisherman.", "They look as though they are waiting for someone.", "It is probably a school day, since the children are in uniform.", "Judging by the umbrellas, it may have rained earlier."] }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model",
+          "eyebrow": "Step 2 of 6",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Picture description",
+              "prompt": "Describe the picture in about 100 words. (The picture shows a village bus halt in the morning.)",
+              "sample": [
+                "The picture shows a village bus halt on what appears to be an ordinary school morning.",
+                "The halt stands beside a narrow tarred road, with paddy fields stretching away on the right and a row of small shops on the left. In the foreground, four schoolchildren in white uniforms are waiting, two of them reading from a book held between them. Beside them an elderly woman is sitting on the low wall with a cloth bag on her lap. A young man is standing at the edge of the road, looking down it as though the bus is late. In the background a bullock cart is moving slowly towards the shops, and the sky is bright and cloudless.",
+                "The scene gives an impression of unhurried, everyday village life."
+              ],
+              "notes": [
+                "The first sentence is a general statement, and it already uses careful guessing: *appears to be*.",
+                "The description then moves in a fixed order — setting, foreground, background — so the reader can build the picture in their mind.",
+                "Position words carry the organisation: *beside*, *on the right*, *on the left*, *in the foreground*, *beside them*, *in the background*.",
+                "Actions are in the present continuous, which is correct for a picture: *are waiting*, *is sitting*, *is moving*.",
+                "*As though the bus is late* is an inference, correctly marked as one rather than stated as fact.",
+                "The closing sentence gives an overall impression, which lifts the answer above a list."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 3 — Identify the structure",
+          "eyebrow": "Step 3 of 6",
+          "text": ["Mark the model: sentence 1 is the general statement; the long middle paragraph moves setting → foreground → background; the last sentence gives the impression. Notice that the middle paragraph never jumps backwards. Once the description has moved to the background, it stays there."]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 4 — Guided practice",
+          "eyebrow": "Step 4 of 6",
+          "variant": "tint",
+          "text": ["Take any photograph — in a newspaper, in a textbook, or on a wall at home — and do this."],
+          "numbered": [
+            "Write **one general sentence** about what it shows.",
+            "Write **two sentences** about the setting: where, when, what the weather is like.",
+            "Write **three sentences** about the foreground, using the present continuous and at least two position words.",
+            "Write **two sentences** about the background.",
+            "Write **one sentence** giving your overall impression, using *seems*, *appears* or *gives an impression of*.",
+            "Count your words. If the task asked for 100 and you have 140, cut the two least important sentences."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Step 5 — Write independently",
+          "eyebrow": "Step 5 of 6",
+          "text": ["Fifteen minutes, about 100 words, on a picture you have not described before. Do it three times in a week, with three different pictures. This task improves faster with repetition than almost any other."]
+        },
+        {
+          "type": "checklist",
+          "heading": "Step 6 — Correction checklist for picture description",
+          "eyebrow": "Step 6 of 6",
+          "variant": "tint",
+          "items": [
+            "Does my first sentence say **what the picture shows as a whole**?",
+            "Have I followed a clear **order** — setting, foreground, background?",
+            "Have I used at least **four position words**?",
+            "Are the actions in the **present continuous**?",
+            "Have I used **careful guessing language** (*seems*, *appears*, *as though*) rather than stating what I cannot know?",
+            "Have I described only **what is in the picture**, without inventing a story around it?",
+            "Is there a **closing sentence** giving an impression?",
+            "Am I near the **word limit**?",
+            "Have I checked articles — *a man*, *the woman*, *the road* — which are heavily used in description?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Paragraph Writing", "url": "ol-english/paragraph-writing/", "more": "Open" },
+            { "title": "Grammar: prepositions", "url": "ol-english/grammar/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/dialogue-and-speech-writing",
+      "title": "Dialogue and Speech Writing",
+      "description": "How to write natural dialogue and a well-shaped speech for the O/L English paper, with models, guided practice and correction checklists for both.",
+      "keywords": "dialogue writing, speech writing, O/L English, conversation, public speaking",
+      "kicker": "O/L English writing",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
+      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+      "hero": { "text": "Two tasks, one page. Both are spoken English written down — and both are marked down when they sound like an essay read aloud." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Part One: Dialogue",
+          "eyebrow": "Step 1 of 6 — Understand the task",
+          "text": [
+            "A dialogue is a conversation between two people, written as speech. You are usually given the situation, the two speakers and the purpose.",
+            "The mark is for **natural conversation**. Two people do not take turns delivering paragraphs. They interrupt, ask, hesitate, agree and disagree."
+          ],
+          "bullets": [
+            "**Layout:** the speaker's name, then a colon, then what they say. Start a new line for each new speaker.",
+            "**Length:** usually eight to twelve exchanges is enough.",
+            "**Language:** short forms (*I'm*, *don't*, *can't*), short sentences, and real question forms."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model dialogue",
+          "eyebrow": "Step 2 of 6",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Dialogue",
+              "prompt": "Write a dialogue between a student and a librarian about borrowing a book that is not on the shelf.",
+              "sample": [
+                "**Student:** Excuse me, could you help me? I'm looking for a book on English grammar, but I can't find it on the shelf.",
+                "**Librarian:** Do you know the title, or just the subject?",
+                "**Student:** It's called *Practical English Grammar*. My teacher said the library has two copies.",
+                "**Librarian:** Let me check. … Yes, we have two, but both are out at the moment. One is due back on Friday.",
+                "**Student:** Oh. I need it before Thursday, though. We have a test.",
+                "**Librarian:** I see. In that case, would a similar book help? There's a reference copy that can't be borrowed, but you may use it here.",
+                "**Student:** That would be all right, I suppose. How long can I sit and read?",
+                "**Librarian:** Until five o'clock. Bring your library card and I'll take it out of the reference section for you.",
+                "**Student:** Thank you very much. Could you also put my name down for the other copy on Friday?",
+                "**Librarian:** Certainly. What's your name and grade?",
+                "**Student:** Sanduni Perera, Grade 11 B.",
+                "**Librarian:** Right. I'll keep it aside for you on Friday morning."
+              ],
+              "notes": [
+                "It begins in the middle of the situation. There is no *Good morning, how are you? I am fine, thank you* — that wastes exchanges and marks.",
+                "Each speaker's turn is short. Notice that not one of them is more than two sentences.",
+                "The conversation **develops**: a problem, a complication (the test on Thursday), an alternative offered, and an arrangement made. A dialogue that goes nowhere gains few marks.",
+                "Short forms are used throughout, because this is speech: *I'm*, *can't*, *there's*, *I'll*.",
+                "The exchanges are genuinely responsive — each line answers the one before it, rather than continuing a speech.",
+                "It ends on a resolution, not in mid-air."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Steps 3 to 6 — Dialogue",
+          "eyebrow": "Structure, practice and checking",
+          "text": [
+            "**Step 3 — the structure:** an opening that starts inside the situation; a problem raised; a complication; a solution offered; an arrangement; a close.",
+            "**Step 4 — guided practice:** write only the first four exchanges of a dialogue between a passenger and a bus conductor about being given the wrong change. Then only the last four, ending in a resolution. Then join them.",
+            "**Step 5 — write independently:** a dialogue between two friends deciding how to spend a free Saturday, or between a student and a class teacher about joining a school society.",
+            "**Step 6 — check it against this list:**"
+          ],
+          "items": [
+            "Is the **layout** right — name, colon, speech, new line for each speaker?",
+            "Are the turns **short**?",
+            "Does each line **respond** to the one before it?",
+            "Does the conversation **develop and reach a resolution**?",
+            "Have I used **short forms** and natural spoken English?",
+            "Have I avoided a long polite opening that wastes exchanges?",
+            "Are the **question forms** correct? (*Do you know…?* not *You know…?*)"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Part Two: Speech",
+          "eyebrow": "Step 1 of 6 — Understand the task",
+          "text": [
+            "A speech is written to be **heard**, not read. That single fact governs everything: short sentences, direct address to the audience, repetition for emphasis, and a clear signposted structure so the listener never gets lost.",
+            "You are usually given the occasion, the audience and the topic. All three matter."
+          ],
+          "bullets": [
+            "**Address the audience directly** at the start, and again during the speech.",
+            "**Signpost** where you are going: *There are three things I want to say this morning.*",
+            "**Use questions** to the audience — a listener wakes up when asked something.",
+            "**Repeat key phrases** deliberately. In writing, repetition is a fault; in a speech it is a technique."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Step 2 — Study a model speech",
+          "eyebrow": "Step 2 of 6",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Speech (opening and closing)",
+              "prompt": "You are the president of the school English Society. Deliver a short speech at the opening of English Day.",
+              "sample": [
+                "**Opening**",
+                "Respected Principal, teachers, and my dear friends.",
+                "Good morning. It is a privilege to open our English Day this year.",
+                "May I begin with a question? How many of you have ever kept quiet in class, not because you did not know the answer, but because you were afraid of saying it wrongly in English? Look around you. You are not alone, and that is exactly why we are here today.",
+                "I want to say three short things this morning: why English matters to us, what stops us using it, and what this Society intends to do about it.",
+                "**Closing**",
+                "So let me end where I began. The fear of making a mistake is the single greatest obstacle between us and the English we are all capable of. Nobody in this hall learnt to walk without falling, and nobody learns a language without getting it wrong first.",
+                "Speak it badly today, and you will speak it well next year. Say nothing today, and next year you will still be silent.",
+                "Let this English Day be the day we decide to be wrong out loud. Thank you."
+              ],
+              "notes": [
+                "The greeting is appropriate to the occasion and to the people present, and comes first.",
+                "The opening question involves the audience immediately, and it is a question they can all answer privately to themselves.",
+                "The speaker signposts the structure clearly — *three short things* — so the listener knows where the speech is going.",
+                "The closing returns to the opening idea. Returning to your beginning is one of the most effective ways to end anything spoken.",
+                "The two contrasting sentences near the end are deliberately parallel in structure. Parallelism is heard even when it is not noticed.",
+                "It ends with a short memorable line, then *Thank you*. It does not trail away."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Steps 3 to 6 — Speech",
+          "eyebrow": "Structure, practice and checking",
+          "text": [
+            "**Step 3 — the structure:** greeting; an opening that catches attention; a signpost of what is coming; two or three developed points; a closing that returns to the opening; thanks.",
+            "**Step 4 — guided practice:** write only the greeting and the first three sentences of a speech welcoming a new principal. Then only the closing four sentences. Then the signpost sentence that would join them.",
+            "**Step 5 — write independently:** a speech to your school on the importance of reading, or a farewell speech to a teacher who is leaving. Read it aloud when you have finished — a speech that is hard to say aloud is not yet finished.",
+            "**Step 6 — check it against this list:**"
+          ],
+          "items": [
+            "Have I **greeted the audience** appropriately for the occasion?",
+            "Does the opening **catch attention** in the first three sentences?",
+            "Have I **signposted** what the speech will cover?",
+            "Are the sentences **short enough to say aloud** in one breath?",
+            "Have I **addressed the audience directly** during the speech, not only at the start?",
+            "Does the closing **return to the opening idea**?",
+            "Does it end with a **short memorable sentence**, and thanks?",
+            "Have I read it **aloud** and removed anything that was awkward to say?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Spoken English", "url": "general-english/spoken-english/", "more": "Open", "text": ["Speaking practice for real situations."] },
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

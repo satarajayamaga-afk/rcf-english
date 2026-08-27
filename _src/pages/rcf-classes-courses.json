@@ -1,0 +1,748 @@
+{
+  "pages": [
+    {
+      "slug": "rcf-classes/ol-english",
+      "title": "O/L English Classes",
+      "description": "Online O/L English classes conducted by R. C. Fernando: grammar, vocabulary, reading and every writing task in the paper, with guided practice and individual correction.",
+      "keywords": "O/L English class, online English class, Grade 11 English tuition, Ordinary Level",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "Systematic preparation for the Ordinary Level English paper, taught in the order the paper is arranged, with nothing set before it has been shown.",
+        "buttons": [{ "label": "Ask about this class", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What the course covers",
+          "text": ["The whole paper, in a sequence that builds. Grammar and vocabulary are taught because the writing needs them, not as separate subjects to be memorised."],
+          "bullets": [
+            "**Paper structure and examination technique** — knowing the shape of the paper before revising anything.",
+            "**Grammar** — tenses, articles, prepositions, agreement, voice, reported speech and conditionals, each with the reason behind the rule.",
+            "**Vocabulary** — building words that can actually be used, and working out unfamiliar words from context.",
+            "**Reading comprehension** — reading under time pressure and answering the question that was actually asked.",
+            "**Every writing task** — guided writing, emails, notices, letters, paragraphs, essays, picture description, dialogue and speech.",
+            "**Model questions and model answers** — with individual correction of written work.",
+            "**Past-paper practice** — timed, marked, and with one answer rewritten each time."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This class",
+          "variant": "tint",
+          "course": "ol-english",
+          "intro": ["Where a day, time, fee or number of places has not been settled, the card says so rather than guessing. The current position is always available on WhatsApp."]
+        },
+        {
+          "type": "steps",
+          "heading": "How writing is taught",
+          "eyebrow": "The six steps",
+          "intro": ["Weak writers stay weak because they are asked to write before they have been shown how. In this class, no writing task is set cold."],
+          "layout": "row",
+          "items": [
+            { "title": "Understand the task", "text": ["What form, which reader, what purpose, what length."] },
+            { "title": "Study a model", "text": ["A good example, read twice — for content, then for construction."] },
+            { "title": "Identify the structure", "text": ["The parts labelled. The skeleton is what transfers."] },
+            { "title": "Practise with guidance", "text": ["Frames, partial tasks, one paragraph at a time."] },
+            { "title": "Write independently", "text": ["Alone, to time, with the model removed."] },
+            { "title": "Correct it yourself", "text": ["Against a checklist, before it is handed in."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "O/L English section", "url": "ol-english/", "more": "Open" },
+            { "title": "Syllabus and structure", "url": "ol-english/syllabus/", "more": "Open" },
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Open" },
+            { "title": "Grammar", "url": "ol-english/grammar/", "more": "Open" },
+            { "title": "Common mistakes", "url": "ol-english/common-mistakes/", "more": "Open" },
+            { "title": "Model answers", "url": "ol-english/model-answers/", "more": "Open" },
+            { "title": "Interactive revision", "url": "ol-english/interactive-revision/", "more": "Open" },
+            { "title": "Past papers", "url": "past-papers/ol-english/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about O/L English classes",
+          "title": "WhatsApp",
+          "text": ["The message is written for you. Add the student's grade and examination year before sending."],
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about O/L English Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the O/L English class at the moment." },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in the O/L English class. The student's grade and examination year are: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/ol-literature",
+      "title": "O/L Literature Classes",
+      "description": "Online O/L English Literature classes: close study of the prescribed texts, context and essay answers, and individual correction of written work.",
+      "keywords": "O/L Literature class, English Literature tuition, online literature class",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "Close study of the prescribed poems, short stories, plays and novels, with a method for building answers that works whatever the question turns out to be.",
+        "buttons": [{ "label": "Ask about this class", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What the course covers",
+          "text": [
+            "Every prescribed text is worked through in the same fifteen sections used across this site, so that students always know where they are and what they still lack.",
+            "The emphasis is on producing answers rather than receiving them. A class that memorises the teacher's reading cannot handle a question worded differently — and examination questions are always worded differently."
+          ],
+          "bullets": [
+            "**Each prescribed text**, read whole first, then studied closely.",
+            "**Context questions** — placing an extract, and judging how long an answer should be.",
+            "**Essay questions** — reading the question, planning, and building an argument.",
+            "**Answer development** — point, evidence, explanation, effect, link, drilled until automatic.",
+            "**Themes, characters and techniques** — expressed as arguable sentences, not as lists of words.",
+            "**Quotations** — ten per text, chosen for usefulness and learnt aloud.",
+            "**Individual correction** of written answers, with one paragraph rewritten each time.",
+            "**Past-paper questions** on the prescribed texts."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This class",
+          "variant": "tint",
+          "course": "ol-literature"
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "You will need the prescribed texts",
+          "text": [
+            "Copyrighted literary texts are not reproduced on this website or supplied by the class. Students need their own copies of the prescribed books.",
+            "Prescribed texts are set by the examination authority and change from time to time. **Check the current official syllabus for your own examination year.**"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "columns": "4",
+          "items": [
+            { "title": "O/L Literature section", "url": "ol-literature/", "more": "Open" },
+            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
+            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Literary techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
+            { "title": "Important quotations", "url": "ol-literature/quotations/", "more": "Open" },
+            { "title": "Revision activities", "url": "ol-literature/revision-activities/", "more": "Open" },
+            { "title": "Past papers", "url": "past-papers/ol-literature/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about O/L Literature classes",
+          "variant": "tint",
+          "title": "WhatsApp",
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about O/L Literature Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the O/L Literature class at the moment." },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in the O/L Literature class. The student's grade and examination year are: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/al-literature",
+      "title": "A/L Literature Classes",
+      "description": "Online A/L English Literature classes: close reading, critical appreciation of unseen passages, textual evidence and well-organised essay answers.",
+      "keywords": "A/L Literature class, Advanced Level Literature tuition, critical appreciation class",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "Advanced Level Literature taught as a set of abilities to be built, not a set of readings to be received: close reading, evidence, effect, argument and essay organisation.",
+        "buttons": [{ "label": "Ask about this class", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What the course covers",
+          "bullets": [
+            "**The prescribed texts**, read whole first, then studied closely across the two years.",
+            "**Close reading** — what a passage is doing at the level of the sentence and the word.",
+            "**Critical appreciation of unseen poems and passages** — one a fortnight, timed, because this skill improves only with repetition.",
+            "**Selecting evidence** — going straight to the two or three moments that answer a question.",
+            "**Analysing effect** — the sentence most candidates never write, and where the higher marks live.",
+            "**Developing an argument** — qualifying, complicating, and meeting the strongest objection.",
+            "**Essay organisation** — an introduction that takes a position and a conclusion that judges.",
+            "**Critical approaches**, used as questions to ask a text rather than labels to attach to it.",
+            "**Examination technique** — choosing questions, dividing time, and the final ten minutes."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This class",
+          "variant": "tint",
+          "course": "al-literature"
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Prescribed texts and your own copies",
+          "text": [
+            "Students need their own copies of the prescribed texts. Copyrighted works are not reproduced on this website or supplied by the class.",
+            "Prescribed texts change periodically. **Confirm the list for your own examination year against the current official syllabus.**"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "columns": "4",
+          "items": [
+            { "title": "A/L Literature section", "url": "al-literature/", "more": "Open" },
+            { "title": "Answer development", "url": "al-literature/answer-development/", "more": "Open" },
+            { "title": "Critical appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
+            { "title": "Essay questions", "url": "al-literature/essay-questions/", "more": "Open" },
+            { "title": "Literary theory", "url": "al-literature/literary-theory/", "more": "Open" },
+            { "title": "Model answers", "url": "al-literature/model-answers/", "more": "Open" },
+            { "title": "Examination guidance", "url": "al-literature/examination-guidance/", "more": "Open" },
+            { "title": "Past papers", "url": "past-papers/al-literature/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about A/L Literature classes",
+          "variant": "tint",
+          "title": "WhatsApp",
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about A/L Literature Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the A/L Literature class at the moment." },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in the A/L Literature class. My examination year is: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/general-english",
+      "title": "General English Classes",
+      "description": "Online General English classes for adults and independent learners: practical grammar, everyday vocabulary, reading, writing, and the confidence to use English.",
+      "keywords": "General English class, English for adults, practical English course, online",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "English for daily life, work and study. No examination, no marks, and no one is made to feel foolish for a mistake.",
+        "buttons": [{ "label": "Ask about this class", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Who this is for",
+          "text": [
+            "Adults who studied English at school and have forgotten most of it. School leavers who need English for work. People who understand English but hesitate to use it. Anyone who has been told, once too often, that their English is not good enough.",
+            "The class assumes nothing about what you already know, and it does not begin by testing you."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the course covers",
+          "variant": "tint",
+          "bullets": [
+            "**Practical grammar** — the part that stops people understanding you, taught without technical terms.",
+            "**Word order and question forms** — the two things that most often require a sentence to be repeated.",
+            "**Everyday vocabulary** — shops, travel, appointments, the telephone, health, money and work.",
+            "**Reading** — for meaning, without stopping at every unknown word.",
+            "**Writing** — messages, emails, forms and short letters that get a reply.",
+            "**Listening** — understanding real speech at real speed.",
+            "**Speaking** — the hardest step, practised in a setting where mistakes are expected.",
+            "**Pronunciation** — word stress and rhythm, which matter far more than accent."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This class",
+          "course": "general-english"
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "About the fear of speaking",
+          "text": [
+            "For most adult learners the largest obstacle is not grammar. It is the memory of being laughed at, or corrected in front of others.",
+            "Nobody learns a language without getting it wrong first, and a listener who understood you has understood you, whatever the grammar was doing. That is the working assumption of this class."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "columns": "4",
+          "items": [
+            { "title": "General English section", "url": "general-english/", "more": "Open" },
+            { "title": "Practical grammar", "url": "general-english/practical-grammar/", "more": "Open" },
+            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" },
+            { "title": "Practical conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "English for adults", "url": "general-english/english-for-adults/", "more": "Open" },
+            { "title": "Self-assessment", "url": "general-english/self-assessment/", "more": "Open" },
+            { "title": "Interactive practice", "url": "general-english/interactive-practice/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about General English classes",
+          "title": "WhatsApp",
+          "text": ["If you are not sure what your level is, say roughly what you can and cannot do. That is more useful than a label."],
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about General English Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the General English class at the moment." },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in the General English class. What I would like to improve most is: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/spoken-english",
+      "title": "Spoken English Classes",
+      "description": "Online Spoken English classes built around real situations: introductions, telephone calls, interviews, workplace conversation, travel and everyday exchanges.",
+      "keywords": "spoken English class, speaking practice, conversation class, fluency, confidence",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "For people who understand English perfectly well and cannot bring themselves to speak it. That is a common situation, and it is a solvable one.",
+        "buttons": [{ "label": "Ask about this class", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What the class works on",
+          "text": ["Speaking is practised in situations you will actually meet, because language learnt in a situation is recalled in that situation."],
+          "bullets": [
+            "**Introductions and small talk** — meeting someone, introducing two people, keeping a short exchange going.",
+            "**Telephone calls** — asking for someone, taking a message, dealing with a bad line.",
+            "**Interviews** — the questions that are always asked, and how to answer them.",
+            "**Workplace conversation** — asking for help, disagreeing politely, explaining a delay.",
+            "**Travel, shopping and appointments** — the exchanges of ordinary life.",
+            "**Requests and complaints** — being firm and courteous at the same time.",
+            "**Fluency strategies** — thinking time, self-correction, and describing a word you do not know.",
+            "**Pronunciation** — word stress and sentence rhythm, which decide whether you are understood."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This class",
+          "variant": "tint",
+          "course": "spoken-english"
+        },
+        {
+          "type": "prose",
+          "heading": "How the class is run",
+          "numbered": [
+            "**Everyone speaks in every class.** A speaking class in which the teacher does most of the talking is not a speaking class.",
+            "**Correction is individual and immediate**, but not constant. Being corrected in the middle of every sentence is what makes people stop speaking.",
+            "**Situations are rehearsed before they are performed.** You are shown a model conversation, then you adapt it, then you improvise from it.",
+            "**Repetition is deliberate.** The same conversation is done twice with different partners; the second attempt is always more fluent, and hearing your own improvement is the point.",
+            "**Mistakes are expected.** A class where nobody makes an error is a class where nobody is trying anything difficult."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "What you need",
+          "text": ["A device with a **working microphone**, a quiet place if possible, and a notebook. A camera is not essential."]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "columns": "4",
+          "items": [
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "Spoken English", "url": "general-english/spoken-english/", "more": "Open" },
+            { "title": "Practical conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open" },
+            { "title": "Listening", "url": "general-english/listening/", "more": "Open" },
+            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" },
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Common mistakes", "url": "general-english/common-mistakes/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about Spoken English classes",
+          "title": "WhatsApp",
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about Spoken English Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Spoken English class at the moment." },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in the Spoken English class. The situations I most need English for are: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/revision",
+      "title": "Revision Classes",
+      "description": "Short, focused revision courses before the O/L and A/L examinations: paper structure, timing, answer development, common mistakes and past-paper practice.",
+      "keywords": "revision class, exam revision, O/L revision, A/L revision, past paper practice",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "Short courses in the months before the examination, for candidates who have covered the syllabus and need to convert what they know into marks.",
+        "buttons": [{ "label": "Ask about revision classes", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a revision course does",
+          "text": [
+            "It does not teach the syllabus again. It works on the gap between what a candidate knows and what appears on their script — which is where most of the available marks are lost.",
+            "Every year, students lose more marks to poor technique than to poor English."
+          ],
+          "bullets": [
+            "**Paper structure** — what is asked, in what order, and what each task is worth.",
+            "**Timing** — dividing the working time, writing finishing times in the margin, and stopping when the time stops.",
+            "**Reading the question** — instruction words, multi-part questions, and answering what was asked.",
+            "**Answer development** — turning a one-line response into a full, marked answer.",
+            "**Common mistakes** — the errors that recur year after year, and each student's own personal list.",
+            "**Past and model papers** — worked under real conditions, marked, with one answer rewritten each time.",
+            "**The last ten minutes** — the checks that recover marks it took an hour to earn."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This class",
+          "variant": "tint",
+          "course": "revision",
+          "intro": ["Revision courses are arranged around the examination timetable for the year, so their dates are confirmed on WhatsApp rather than published in advance."]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Who a revision course suits",
+          "bullets": [
+            "**Suits:** a candidate who has covered the syllabus and is losing marks to timing, question-reading or undeveloped answers.",
+            "**Suits:** a private candidate preparing without a school, who has had little chance to write under examination conditions.",
+            "**Does not suit:** a candidate who has not yet covered the material. A revision course cannot replace a year of teaching, and pretending otherwise helps nobody. In that situation a full course, or individual classes, would be more honest advice — and you will be told so."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "columns": "4",
+          "items": [
+            { "title": "O/L examination techniques", "url": "ol-english/examination-techniques/", "more": "Open" },
+            { "title": "O/L common mistakes", "url": "ol-english/common-mistakes/", "more": "Open" },
+            { "title": "A/L examination guidance", "url": "al-literature/examination-guidance/", "more": "Open" },
+            { "title": "A/L common mistakes", "url": "al-literature/common-mistakes/", "more": "Open" },
+            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" },
+            { "title": "Past papers centre", "url": "past-papers/", "more": "Open" },
+            { "title": "Model answers", "url": "ol-english/model-answers/", "more": "Open" },
+            { "title": "Interactive revision", "url": "ol-english/interactive-revision/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about revision classes",
+          "variant": "tint",
+          "title": "WhatsApp",
+          "text": ["Say which examination and which year, so you can be told when the next course is arranged."],
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about RCF revision classes. My examination and year are: " },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in a revision class at the moment. My examination is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in a revision class. My examination and year are: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/individual-classes",
+      "title": "Individual Classes",
+      "description": "One-to-one online English and Literature teaching arranged around a single learner: the pace, the content and the amount of correction decided by what that learner needs.",
+      "keywords": "individual classes, one to one, private tuition, personal English class",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "One learner, one teacher, and a course shaped around what that learner actually needs rather than around a syllabus timetable.",
+        "buttons": [{ "label": "Ask about individual classes", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "When individual teaching is the right choice",
+          "bullets": [
+            "**When a learner needs smaller steps than a group can allow.** Nothing is moved on until it is secure, and no one is left behind while the class continues.",
+            "**When there is a specific gap.** A student strong at everything except writing does not need a whole course; they need six weeks on writing.",
+            "**When a learner will not speak in front of others.** For many adults this is the deciding factor, and it is a good reason.",
+            "**When times are difficult.** Individual classes can often be arranged around work or school commitments.",
+            "**When a student has fallen a long way behind.** Remedial work needs diagnosis and a rebuilt foundation, and both need individual attention.",
+            "**When a candidate is preparing alone.** Private candidates often have nobody to correct their written work, which is the thing they most need."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "Individual classes",
+          "variant": "tint",
+          "format": "individual"
+        },
+        {
+          "type": "steps",
+          "heading": "How an individual course is arranged",
+          "items": [
+            { "title": "A conversation first", "text": ["What the learner can already do, what they find difficult, and what they need it for. This is the most important part and it costs nothing."] },
+            { "title": "An honest starting point", "text": ["Sometimes the honest answer is that a group class would serve you better, or cost you less. You will be told so."] },
+            { "title": "A plan for the first six weeks", "text": ["What will be covered, in what order, and what the learner should be able to do at the end of it."] },
+            { "title": "Written work every week", "text": ["Corrected individually, with one clear instruction rather than a page of corrections, and one paragraph rewritten."] },
+            { "title": "Review, and change if it is not working", "text": ["A plan that is not producing progress is changed. That is the advantage of teaching one person."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "For learners who need extra help",
+          "text": [
+            "Additional support for learners experiencing difficulty is a particular emphasis of these classes. A student who has failed at English for years has usually decided that they cannot do it, and that decision does more damage than any gap in their knowledge.",
+            "The first aim, in that situation, is work the learner will succeed at — immediately, in the first class. Everything else follows from that."
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about individual classes",
+          "title": "WhatsApp",
+          "text": ["The most useful thing you can tell us is what the learner finds most difficult."],
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about individual (one-to-one) classes with RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether individual classes are available at the moment. The subject and level are: " },
+            { "label": "My child needs extra help", "message": "Hello, my child needs additional help with English. Their grade is: ___ and what they find most difficult is: " },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in individual classes. The subject, level and what I need help with are: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/group-classes",
+      "title": "Group Classes",
+      "description": "Small-group online English and Literature classes: explanation, guided practice and correction, with the benefit of hearing other learners' questions and answers.",
+      "keywords": "group classes, small group tuition, online English group class",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "Small-group teaching, where a good deal of the learning comes from other people's questions — including the ones you would not have thought to ask.",
+        "buttons": [{ "label": "Ask about group classes", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a group class gives you",
+          "bullets": [
+            "**Other people's questions.** Most learners hesitate to ask; in a group, somebody else asks the thing you were unsure about.",
+            "**Other people's answers.** Hearing a classmate get something half-right, and hearing it corrected, teaches more than hearing only correct answers.",
+            "**Comparison.** Seeing another student's answer to the same question is one of the quickest ways to understand what a better answer looks like.",
+            "**Discussion.** Literature in particular benefits from disagreement, and disagreement needs more than one student.",
+            "**Speaking practice** with someone other than the teacher.",
+            "**Momentum.** A weekly class with other people is easier to keep to than a private arrangement that can always be postponed."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "Group classes",
+          "variant": "tint",
+          "format": "group"
+        },
+        {
+          "type": "prose",
+          "heading": "Individual attention within a group",
+          "text": [
+            "Written work is corrected **individually** in group classes as well as in one-to-one classes. That is where most of the personal teaching happens, and it does not depend on class size.",
+            "What a group cannot provide is a pace set by one learner. A student who needs substantially smaller steps than the rest of the group is usually better served by [individual classes](rcf-classes/individual-classes/), and you will be told so honestly rather than enrolled in the wrong thing."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Which format suits you",
+          "columns": "2",
+          "items": [
+            { "title": "A group class is probably right if…", "bullets": ["You are roughly at the same level as the rest of the class", "You learn well from discussion", "You want regular, structured weekly teaching", "Cost matters", "You would like speaking practice with other learners"] },
+            { "title": "An individual class is probably right if…", "bullets": ["You need a much slower or much faster pace", "You have one specific gap rather than a general need", "You will not speak in front of others", "Your available times are unusual", "You are preparing alone as a private candidate"], "url": "rcf-classes/individual-classes/", "more": "Individual classes" }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about group classes",
+          "variant": "tint",
+          "title": "WhatsApp",
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about group classes with RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in a group class at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in a group class. The class I would like to join is: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/online-classes",
+      "title": "Online Classes",
+      "description": "How the online classes at RCF Classes work: what you need, how a lesson runs, how written work is corrected, and what happens if your connection is weak.",
+      "keywords": "online classes, online English class, virtual class, how it works, internet",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": {
+        "text": "Classes are conducted mainly online, which means specialised English and Literature teaching is not limited to one town.",
+        "buttons": [{ "label": "Ask about online classes", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Why online",
+          "text": [
+            "Online delivery enables RCF Classes to reach students beyond a single geographical area and provide access to specialised English and literature instruction across the country.",
+            "For a student in a rural or remote area, the alternative is often no specialised teaching at all, or a long journey. That is the reason, and it is a good one."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "What you need",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "A device", "text": ["A telephone, tablet or computer. A larger screen is easier for reading texts, but a telephone works."] },
+            { "title": "An internet connection", "text": ["Steady enough for audio. Video can usually be switched off if the connection is weak."] },
+            { "title": "A notebook and pen", "text": ["Written work is done by hand, because the examination is written by hand."] },
+            { "title": "A microphone", "text": ["Essential for Spoken English classes; useful in all of them, since a silent student cannot be corrected."] }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a lesson runs",
+          "items": [
+            { "title": "Recall", "text": ["A few questions on the previous lesson. It settles the class and shows at once what has been retained."] },
+            { "title": "Explanation", "text": ["One point at a time, in plain language, with the reason behind the rule."] },
+            { "title": "A model", "text": ["Worked through aloud, with the reasoning shown rather than only the answer."] },
+            { "title": "Guided practice", "text": ["Students work with support and are corrected as they go."] },
+            { "title": "Independent work", "text": ["Alone, without the model, which is where it becomes clear who has understood."] },
+            { "title": "Written work set", "text": ["Sent in, corrected individually, and returned with one clear instruction and one paragraph to rewrite."] }
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "Classes conducted online",
+          "variant": "tint",
+          "delivery": "online"
+        },
+        {
+          "type": "accordion",
+          "heading": "Practical questions",
+          "faq": true,
+          "items": [
+            { "q": "What if my connection is weak?", "a": ["Say so before you enrol. It is a common situation and better discussed in advance. Switching off video usually solves it; where it does not, other arrangements can sometimes be made."] },
+            { "q": "What if I miss a class?", "a": ["Tell the teacher. What can be done depends on the course, and you will be told honestly rather than reassured vaguely."] },
+            { "q": "How do I send written work?", "a": ["Usually a photograph of your handwritten work. Writing by hand matters — the examination is written by hand, and typing does not build the same speed or legibility."] },
+            { "q": "How do I get the meeting link?", "a": ["It is sent to you privately once your place is confirmed. Links and passwords are never published on this website."] },
+            { "q": "Can I use a telephone rather than a computer?", "a": ["Yes. Many students do. A larger screen helps when reading long literary texts, but it is not essential."] },
+            { "q": "Is the class recorded?", "a": ["Ask when you enquire. Whether recordings are available depends on the course, and you will be told what actually applies rather than a general policy."] }
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about online classes",
+          "title": "WhatsApp",
+          "buttons": [
+            { "label": "Ask About This Class", "message": "Hello, I would like information about online classes with RCF Classes. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in an online class at the moment. The class I am interested in is: " },
+            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Classes timetable." },
+            { "label": "Enrol via WhatsApp", "message": "Hello, I would like to enrol in an online class. The class I would like to join is: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-classes/physical-classes",
+      "title": "Physical Classes",
+      "description": "Information about physical classroom teaching at RCF Classes. Classes are currently conducted mainly online.",
+      "keywords": "physical classes, classroom teaching, in person class",
+      "kicker": "RCF Classes",
+      "kind": "page",
+      "noindex": true,
+      "breadcrumbs": [{ "label": "RCF Classes", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Classes", "url": "rcf-classes/" },
+      "hero": { "text": "Classes are currently conducted mainly online. This page is here so that physical classes can be listed the moment they are arranged." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Currently taught online",
+          "text": [
+            "R. C. Fernando currently conducts mainly **online** classes through RCF Classes, which allows students in any part of the country to attend.",
+            "No venue, day or fee for a physical class is stated on this website, because none has been arranged. Rather than publish a location that does not exist, this page says so plainly.",
+            "If you are looking for a class now, see [Online Classes](rcf-classes/online-classes/)."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "Physical classes",
+          "variant": "tint",
+          "delivery": "physical"
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask whether a physical class is possible",
+          "title": "WhatsApp",
+          "text": ["If there is genuine demand in a particular area, it is worth asking. You will be given an honest answer rather than an encouraging one."],
+          "buttons": [
+            { "label": "Ask About Physical Classes", "message": "Hello, I would like to know whether physical (classroom) classes are available. My area is: " },
+            { "label": "Ask About Online Classes", "message": "Hello, I would like information about online classes with RCF Classes. Please send me the schedule, fees and registration details." }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Note for the site owner",
+          "text": [
+            "This page is hidden from the menus and from search engines while physical classes are not being held. To make it visible, open `data/classes.json`, find the course with `\"id\": \"physical\"` and change `\"published\": false` to `\"published\": true`; add the real class entries with their venue, day and time; remove `\"noindex\": true` from this page in `_src/pages/rcf-classes-courses.json`; then run `build.cmd`."
+          ]
+        }
+      ]
+    }
+  ]
+}

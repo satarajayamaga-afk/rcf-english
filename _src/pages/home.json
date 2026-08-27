@@ -1,0 +1,166 @@
+{
+  "slug": "",
+  "title": "RCF English",
+  "metaTitle": "RCF English | Clear English lessons, past papers and teacher resources",
+  "description": "Clear English lessons, practical revision resources and reliable teaching support for O/L English, O/L and A/L Literature and General English, with past papers, interactive practice and RCF Classes.",
+  "keywords": "O/L English, O/L English Literature, A/L Literature, General English, past papers, model papers, guided writing, English teacher resources, Sri Lanka, online English classes",
+  "kind": "page",
+  "schema": "EducationalOrganization",
+  "scripts": ["browse"],
+
+  "hero": {
+    "style": "home",
+    "text": "Clear English lessons, practical revision resources and reliable teaching support for learners and teachers. Everything is organised by subject and by task, so you can find what you need and start work straight away.",
+    "buttons": [
+      { "label": "Explore Learning Resources", "url": "resources/", "style": "btn--accent" },
+      { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--ghost-light" },
+      { "label": "Explore RCF Classes", "url": "rcf-classes/", "style": "btn--ghost-light" }
+    ],
+    "note": "Looking for books and study guides? [Visit RCF Publications](PUBLICATIONS_WEBSITE_URL) — our separate bookshop website."
+  },
+
+  "blocks": [
+    {
+      "type": "cards",
+      "heading": "Explore by category",
+      "eyebrow": "Find your section",
+      "intro": ["Nine areas cover everything on RCF English. Each one opens onto lessons, practice and revision material for that subject."],
+      "columns": "3",
+      "variant": "tint",
+      "items": [
+        { "title": "O/L English", "icon": "OL", "url": "ol-english/", "more": "Start here", "text": ["Grammar, vocabulary, reading and every writing task in the Ordinary Level paper, taught step by step."] },
+        { "title": "O/L Literature", "icon": "LIT", "url": "ol-literature/", "more": "Start here", "text": ["Poetry, short stories, drama and novels, with a consistent method for context and essay answers."] },
+        { "title": "General English", "icon": "GE", "url": "general-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, written for adults and for learners starting again."] },
+        { "title": "A/L Literature", "icon": "AL", "url": "al-literature/", "more": "Start here", "text": ["Critical appreciation, textual evidence and well-organised essay answers at Advanced Level."] },
+        { "title": "Past Papers", "icon": "PP", "url": "past-papers/", "more": "Search papers", "text": ["Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."] },
+        { "title": "Teacher Resources", "icon": "TR", "url": "teacher-resources/", "more": "For teachers", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
+        { "title": "Interactive Learning", "icon": "IL", "url": "interactive/", "more": "Practise now", "text": ["Quizzes, gap-fill, matching, sentence ordering and error correction, with instant feedback."] },
+        { "title": "RCF Classes", "icon": "RC", "url": "rcf-classes/", "more": "See classes", "text": ["Online English and Literature classes conducted by R. C. Fernando. Ask about schedules on WhatsApp."] },
+        { "title": "RCF Publications", "icon": "BK", "url": "PUBLICATIONS_WEBSITE_URL", "text": ["Our separate bookshop website: practical books, study guides and examination revision materials."] }
+      ]
+    },
+
+    {
+      "type": "cards",
+      "heading": "Featured resources",
+      "eyebrow": "A good place to begin",
+      "intro": ["If you are not sure where to start, these are the pages students and teachers use most."],
+      "columns": "3",
+      "items": [
+        { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Learn the method", "text": ["The six-step method used throughout this site: understand, study a model, find the structure, practise with guidance, write alone, then correct."] },
+        { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Build better answers", "text": ["Turn a one-line response into a full paragraph: point, evidence, explanation, effect and link."] },
+        { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Check your work", "text": ["The errors that cost marks most often in O/L English, with the correct form beside each one."] },
+        { "title": "Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Plan your paper", "text": ["Reading the question, dividing your time, planning briefly and leaving time to check."] },
+        { "title": "Interactive Practice", "url": "interactive/", "more": "Try an activity", "text": ["Grammar, vocabulary, reading and error-correction activities that mark themselves and explain the answer."] },
+        { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "For teachers", "text": ["Practical classroom strategies for learners who need more time, smaller steps and more repetition."] }
+      ]
+    },
+
+    {
+      "type": "browse",
+      "heading": "Latest resources",
+      "eyebrow": "Recently added",
+      "variant": "tint",
+      "intro": ["Worksheets, revision sheets and other files are listed here as they are approved for publication. Written lessons appear in the subject sections above."],
+      "source": "resources",
+      "filters": ["category", "type", "level", "skill"],
+      "note": "Only resources RCF English created, may distribute with permission, or may link from an official source are listed."
+    },
+
+    {
+      "type": "cards",
+      "heading": "Interactive learning",
+      "eyebrow": "Practise, do not only read",
+      "intro": ["Every activity marks itself at once, explains the answer, keeps a score and can be started again. No login, no accounts, nothing recorded."],
+      "columns": "4",
+      "items": [
+        { "title": "Grammar quiz", "url": "interactive/#grammar", "more": "Try it", "text": ["Multiple-choice questions on tenses, prepositions and sentence structure."] },
+        { "title": "Fill in the blank", "url": "interactive/#gap", "more": "Try it", "text": ["Articles and verb forms, typed into the space, marked as soon as you finish."] },
+        { "title": "Vocabulary matching", "url": "interactive/#match", "more": "Try it", "text": ["Match a word or a literary term to its meaning."] },
+        { "title": "Error correction", "url": "interactive/#error", "more": "Try it", "text": ["Find the one mistake in a sentence and rewrite it correctly."] }
+      ]
+    },
+
+    {
+      "type": "cards",
+      "heading": "Support for students and teachers",
+      "eyebrow": "Who this site is for",
+      "variant": "tint",
+      "columns": "3",
+      "items": [
+        { "title": "School and examination students", "text": ["Material for Grades 10 and 11, Advanced Level Literature and private candidates preparing on their own, arranged by paper and by task."], "url": "ol-english/", "more": "O/L English" },
+        { "title": "Adult and General English learners", "text": ["Practical English for daily life and work, explained simply, for adults returning to study and for learners who need to rebuild confidence."], "url": "general-english/", "more": "General English" },
+        { "title": "Learners who need extra help", "text": ["Smaller steps, more models, more guided practice, and writing tasks that are never set without preparation."], "url": "ol-english/guided-writing/", "more": "Guided writing" },
+        { "title": "Schoolteachers", "text": ["Lesson plans, worksheets, marking guides and assessment support that can be used directly in a classroom."], "url": "teacher-resources/", "more": "Teacher resources" },
+        { "title": "Tuition teachers", "text": ["Structured material for individual and small-group teaching, including answer development and revision strategies."], "url": "teacher-resources/revision-strategies/", "more": "Revision strategies" },
+        { "title": "Parents", "text": ["A clear view of what is examined, what a good answer looks like, and how to help at home without doing the work for your child."], "url": "how-to-use/", "more": "How to use this site" }
+      ]
+    },
+
+    {
+      "type": "steps",
+      "heading": "Our learning approach",
+      "eyebrow": "Five stages",
+      "variant": "navy",
+      "intro": ["Every lesson on RCF English follows the same progression. It is deliberately gradual, because most learners fail at writing not through lack of ability but through lack of preparation."],
+      "layout": "row",
+      "items": [
+        { "title": "Understand", "text": ["Receive a clear explanation of the lesson or the task, in plain language."] },
+        { "title": "Observe", "text": ["Study a useful model and see exactly how it is put together."] },
+        { "title": "Practise", "text": ["Complete activities with guidance, one step at a time."] },
+        { "title": "Apply", "text": ["Use what you have learnt independently, without the model in front of you."] },
+        { "title": "Review", "text": ["Find your own mistakes with a checklist, correct them, and strengthen what you know."] }
+      ]
+    },
+
+    {
+      "type": "classes",
+      "heading": "Featured RCF Classes",
+      "eyebrow": "Learn with a teacher",
+      "intro": ["Online classes conducted by R. C. Fernando. Schedules, fees and available places are confirmed on WhatsApp, so the information you receive is always current."],
+      "featured": true,
+      "limit": 3
+    },
+
+    {
+      "type": "prose",
+      "variant": "tint",
+      "heading": "About RCF English",
+      "eyebrow": "The platform",
+      "text": [
+        "RCF English is a comprehensive educational platform created to bring together English-language learning, literature education, examination support, teacher resources, online classes and educational publications in one accessible place.",
+        "It serves school students, O/L and A/L learners, adult learners, English teachers, tuition teachers and parents. Particular attention is given to learners who require additional guidance, including those in rural and remote areas with limited access to dependable educational resources.",
+        "The platform was founded by **R. C. Fernando**, an experienced English teacher and lecturer, a graduate in English of the University of Peradeniya with a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya.",
+        "[Read the full About Us page](about/) or [meet the founder](about/founder/)."
+      ]
+    },
+
+    {
+      "type": "publications",
+      "heading": "Books and study guides from RCF Publications",
+      "text": [
+        "RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials.",
+        "It operates through its own dedicated website, with its own ordering arrangements. RCF English links to it rather than duplicating it."
+      ],
+      "items": [
+        "Practical English support books",
+        "Literature study guides",
+        "Grammar and vocabulary resources",
+        "Examination revision materials",
+        "Books written for struggling learners"
+      ]
+    },
+
+    {
+      "type": "cards",
+      "heading": "Where would you like to start?",
+      "eyebrow": "Next step",
+      "columns": "3",
+      "items": [
+        { "title": "I am preparing for an examination", "url": "past-papers/how-to-use/", "more": "Use past papers well", "text": ["Begin with the paper structure, then work through past and model papers with a marking guide beside you."] },
+        { "title": "I want to improve my English", "url": "general-english/", "more": "General English", "text": ["Start with practical grammar and everyday English, and practise speaking and writing a little each day."] },
+        { "title": "I teach English", "url": "teacher-resources/", "more": "Teacher resources", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial classes."] }
+      ]
+    }
+  ]
+}

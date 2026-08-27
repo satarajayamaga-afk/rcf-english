@@ -1,0 +1,972 @@
+{
+  "pages": [
+    {
+      "slug": "ol-literature/developing-an-answer",
+      "title": "How to Develop an Answer",
+      "description": "The point-evidence-explanation-effect-link structure behind every good Literature answer, shown step by step from a one-line response to a full paragraph.",
+      "keywords": "developing an answer, PEE, point evidence explanation, literature essay paragraph",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Most students know the answer. What they lose marks for is stopping after the first sentence of it. This page is about the four sentences that follow." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The problem, exactly",
+          "text": [
+            "A student is asked how a writer presents a character. They write: *The writer shows that he is proud.* That is correct. It earns very little.",
+            "The marks are not for knowing that he is proud. They are for showing **where** the text says so, **how** the writing conveys it, and **what difference** it makes. Those are three separate things, and each has to be written down."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The five parts of a developed answer",
+          "variant": "navy",
+          "items": [
+            { "title": "Point", "text": ["Answer the question in one sentence. Not an introduction — the actual answer. *The writer presents him as a man whose pride is stronger than his judgement.*"] },
+            { "title": "Evidence", "text": ["Give the proof: a short quotation, or a precise reference to a moment. Keep quotations short — a few words is usually enough, and long quotations waste examination time."] },
+            { "title": "Explanation", "text": ["Explain how the evidence supports the point. Look at the actual words: a particular verb, an image, a repetition, a silence."] },
+            { "title": "Effect", "text": ["Say what it does to the reader or the audience. This is the sentence weak answers never contain, and it is where the higher marks live."] },
+            { "title": "Link", "text": ["Connect it to the question, or to the wider text. One sentence: how this contributes to the theme, the character's development, or the writer's purpose."] }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "The same answer, developed four times",
+          "intro": ["The example is invented for illustration, so that the method can be shown without quoting a copyrighted text. Watch the answer grow."],
+          "items": [
+            {
+              "label": "Stage 1 — Point only (very few marks)",
+              "prompt": "How does the writer present the father in this extract?",
+              "sample": ["The writer presents the father as a proud man."],
+              "notes": ["Correct, and almost worthless. There is no evidence and no explanation. An examiner cannot tell whether the student has read the text or guessed."]
+            },
+            {
+              "label": "Stage 2 — Point and evidence",
+              "prompt": "How does the writer present the father in this extract?",
+              "sample": [
+                "The writer presents the father as a proud man. When his son offers him money, he says, \"I have managed thirty years without it.\""
+              ],
+              "notes": ["Better. There is now proof. But the quotation has been left to speak for itself, and it does not — the student has not said what in it shows pride."]
+            },
+            {
+              "label": "Stage 3 — Point, evidence and explanation",
+              "prompt": "How does the writer present the father in this extract?",
+              "sample": [
+                "The writer presents the father as a proud man. When his son offers him money, he says, \"I have managed thirty years without it.\" The reply does not refuse the money directly; instead it turns the offer into a comment on his own endurance, and the precise figure of \"thirty years\" suggests a man who has been counting."
+              ],
+              "notes": ["Now the words themselves are being examined — the indirect refusal, and the exactness of *thirty years*. This is the level most students can reach with practice, and it earns solid marks."]
+            },
+            {
+              "label": "Stage 4 — All five parts (full marks available)",
+              "prompt": "How does the writer present the father in this extract?",
+              "sample": [
+                "The writer presents the father as a proud man whose pride has become a way of keeping his son at a distance. When the son offers him money, he says, \"I have managed thirty years without it.\" The reply does not refuse the money directly; instead it turns the offer into a comment on his own endurance, and the precise figure of \"thirty years\" suggests a man who has been counting, and who has waited for the chance to say so. The effect on the reader is uncomfortable rather than admiring: we recognise the dignity, but we also see that the son has been refused something more than money. This prepares us for the silence between them in the final scene, which the writer never explains and never needs to."
+              ],
+              "notes": [
+                "**Point** — the opening sentence answers the question, and answers it with an argument (*pride has become a way of keeping his son at a distance*), not merely a label.",
+                "**Evidence** — one short quotation. Nine words.",
+                "**Explanation** — the actual language is examined: the indirectness, the precision of the number.",
+                "**Effect** — *uncomfortable rather than admiring* tells the examiner what the writing does to a reader. This sentence is the difference between a good answer and a very good one.",
+                "**Link** — the final sentence connects the moment to the rest of the text.",
+                "The whole paragraph is five sentences. It is not long. Length is not what is being rewarded — development is."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Sentence starters for each part",
+          "variant": "tint",
+          "text": ["Use these while you are learning the structure. Stop using them once the structure has become a habit — an answer built entirely of formulas reads mechanically."],
+          "parts": [
+            { "heading": "Point", "bullets": ["The writer presents…", "The poet suggests that…", "At this moment the play shows…"] },
+            { "heading": "Evidence", "bullets": ["This is shown when…", "The phrase \"…\" indicates…", "When she refuses to…"] },
+            { "heading": "Explanation", "bullets": ["The word \"…\" implies…", "By choosing to… rather than…, the writer…", "The repetition of \"…\" emphasises…"] },
+            { "heading": "Effect", "bullets": ["The effect on the reader is…", "This makes the audience feel…", "We are therefore led to…"] },
+            { "heading": "Link", "bullets": ["This prepares us for…", "The same idea returns when…", "This contributes to the theme of…"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "A practice exercise that works",
+          "text": [
+            "Take any one-sentence answer you have written before and rewrite it as five sentences, one for each part. Do this three times a week for a fortnight.",
+            "It is dull, and it is the single most reliable way to raise a Literature mark, because the failure to develop is almost always the reason the mark was low."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Context Questions", "url": "ol-literature/context-questions/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-literature/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/context-questions",
+      "title": "Context Questions",
+      "description": "How to answer O/L Literature context questions on a printed extract: what each kind of question wants, how long each answer should be, and the errors that waste time.",
+      "keywords": "context questions, extract questions, O/L Literature, short answers",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Context answers should be short. Students lose more marks here by writing too much than by writing too little." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a context question is",
+          "text": [
+            "A short extract from a text you have studied is printed, followed by several short questions. They test whether you can **place** the extract, **understand** what is happening at that moment, and **comment** briefly on the language.",
+            "The marks per question are small. Match your answer to the marks, and move on."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The kinds of context question, and what each wants",
+          "variant": "tint",
+          "columns": ["Question type", "What it wants", "How long"],
+          "rows": [
+            ["Who is speaking, and to whom?", "The names, and their relationship if it is relevant", "One sentence"],
+            ["Where does this occur in the text?", "The stage of the story, not the page number", "One sentence"],
+            ["What has just happened?", "The immediately preceding event, not a summary of the book", "One or two sentences"],
+            ["What does the speaker mean?", "The meaning in plain words, in this situation", "One or two sentences"],
+            ["Explain the underlined phrase", "The literal meaning plus what it suggests here", "Two sentences"],
+            ["What does this reveal about the character?", "A quality, plus the words that show it", "Two or three sentences"],
+            ["Identify the technique and its effect", "Name it, quote it, say what it does", "Two or three sentences"],
+            ["What happens next?", "The immediate consequence, briefly", "One or two sentences"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The method",
+          "numbered": [
+            "**Read the whole extract before any question.** Place it in the text in your own mind first.",
+            "**Read all the questions before answering.** They often move in order through the extract, and a later question sometimes tells you how to read an earlier one.",
+            "**Look at the marks.** One mark is one point. Three marks is three points, or one point developed.",
+            "**Answer only what is asked.** Extra material cannot gain marks, can contradict you, and costs time.",
+            "**Quote from the extract, not from memory.** The extract is printed in front of you. Use it, and copy it exactly.",
+            "**Answer in complete sentences** unless a single word is clearly what is wanted."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Short answers, correctly judged",
+          "variant": "tint",
+          "intro": ["The extract referred to is invented for illustration. Watch how short a full-mark answer can be."],
+          "items": [
+            {
+              "label": "One-mark question",
+              "prompt": "Who is speaking these words, and to whom? (1 mark)",
+              "sample": ["The father is speaking to his son."],
+              "notes": ["One mark, one sentence. Anything more is wasted time. Some students write a paragraph here and then run short at the three-mark question below."]
+            },
+            {
+              "label": "Two-mark question",
+              "prompt": "What has just happened before this moment? (2 marks)",
+              "sample": ["The son has returned home after several years away and has offered his father money. The father has not yet spoken since he entered the house."],
+              "notes": ["Two marks, two facts, two clauses. The answer stays in the immediate context and does not summarise the whole story."]
+            },
+            {
+              "label": "Three-mark question",
+              "prompt": "What does the phrase \"thirty years\" suggest about the father? (3 marks)",
+              "sample": [
+                "It suggests that he has been counting the years of his own struggle, and has been waiting for an opportunity to say so.",
+                "The precision of the figure makes the remark sound rehearsed, which implies long-held resentment rather than a reply made on the spur of the moment.",
+                "It therefore reveals a pride that has hardened over time into a grievance."
+              ],
+              "notes": [
+                "Three marks, three developed points, each in its own sentence.",
+                "Notice that the answer moves from what the words say, to what they imply, to what they reveal — the same movement as point, explanation, effect, compressed.",
+                "It is still short. Three sentences is a complete three-mark answer."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Habits that gain and lose marks",
+          "doTitle": "Do",
+          "do": [
+            "Match the length of the answer to the marks.",
+            "Quote from the printed extract, exactly.",
+            "Answer in your own words where explanation is asked for.",
+            "Answer every question, even briefly.",
+            "Number your answers to match the paper."
+          ],
+          "dontTitle": "Do not",
+          "dont": [
+            "Summarise the whole text when asked what has just happened.",
+            "Write a paragraph for a one-mark question.",
+            "Copy long stretches of the extract instead of explaining.",
+            "Give two alternative answers and hope one is right — the examiner may mark the first.",
+            "Leave the last question because time ran out on the first."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Common Student Mistakes", "url": "ol-literature/common-mistakes/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/essay-questions",
+      "title": "Essay Questions",
+      "description": "How to read, plan and write an O/L Literature essay: understanding the question, choosing evidence, structuring paragraphs and reaching a real conclusion.",
+      "keywords": "literature essay, essay questions, O/L Literature, planning, argument, evidence",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "A Literature essay is an argument supported by evidence. It is not a retelling, and it is not everything you know about the text." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "Reading the question properly",
+          "items": [
+            { "title": "Find the instruction word", "text": ["*Discuss*, *examine*, *how far do you agree*, *show how*, *compare*, *what is the significance of*. Each demands a different shape. *How far do you agree* requires you to take a position and to consider the other side; *show how* requires method rather than opinion."] },
+            { "title": "Find the subject", "text": ["Is the question about a character, a theme, a relationship, a technique or a moment? Underline it. Then check every paragraph you write against it."] },
+            { "title": "Notice the limits", "text": ["*In the first half*, *in the opening scene*, *in this poem*. A question limited to part of a text becomes wrong when answered from the whole of it."] },
+            { "title": "Rewrite the question as a statement", "text": ["*How far do you agree that the father's pride destroys his family?* becomes *The father's pride destroys his family — to this extent.* Now you can see what you have to argue."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Planning: five minutes, well spent",
+          "variant": "tint",
+          "text": ["Do not write an essay plan in sentences. Write it like this, in five lines."],
+          "numbered": [
+            "**My answer in one sentence** — this becomes the last sentence of your introduction.",
+            "**Paragraph 1 idea + evidence** — a point, and the moment in the text that proves it.",
+            "**Paragraph 2 idea + evidence** — a different point, not the same one restated.",
+            "**Paragraph 3 idea + evidence** — often the complication, the opposing view, or the development late in the text.",
+            "**Conclusion** — the judgement you will reach, decided **before** you begin writing."
+          ]
+        },
+        {
+          "type": "prose",
+          "text": [
+            "That plan takes four or five minutes and prevents the two commonest disasters: an essay with no argument, and an essay that stops because the time ran out rather than because it had finished."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The shape of the essay",
+          "parts": [
+            { "heading": "Introduction (three or four sentences)", "text": ["Name the text and the writer. Address the question directly. End with your position. Do **not** write a biography of the author, and do not begin *In this essay I am going to…*"] },
+            { "heading": "Body paragraphs (three or four)", "text": ["Each one point, developed using [point, evidence, explanation, effect, link](ol-literature/developing-an-answer/). Each should begin with the point, not with an event."] },
+            { "heading": "The paragraph that raises the other side", "text": ["For *how far do you agree* questions, one paragraph should consider the opposite case honestly and then answer it. An essay that ignores the obvious counter-argument looks as though it has not noticed it."] },
+            { "heading": "Conclusion (three or four sentences)", "text": ["Answer the question. Not a summary of your paragraphs — a judgement. It should be possible for a reader to tell from your conclusion alone what you actually think."] }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "An introduction and a conclusion, compared",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Weak and strong introductions",
+              "prompt": "How far do you agree that the father's pride is the cause of the family's suffering?",
+              "sample": [
+                "**Weak:** In this essay I am going to discuss the father's pride. The father is a very important character in this story. There are many things to say about him. First I will discuss his character.",
+                "**Strong:** The father's pride is the most visible cause of the family's suffering, but it is not, in the end, the deepest one. The writer shows a man whose refusal of help is real and damaging, yet also shows the poverty and the loss of work that made such a refusal feel necessary to him. Pride is therefore better understood as the form his suffering takes than as its origin."
+              ],
+              "notes": [
+                "The weak introduction announces; it does not argue. It could have been written without reading the text.",
+                "The strong introduction takes a position in its first sentence and immediately qualifies it — *but it is not, in the end, the deepest one*. A qualified position is what *how far do you agree* is asking for.",
+                "It also, in three sentences, tells the examiner what the whole essay will argue. That is what an introduction is for."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Checklist for a Literature essay",
+          "items": [
+            "Have I answered the **question set**, and not a similar question I had prepared?",
+            "Does my introduction take a **position**?",
+            "Does every paragraph **begin with a point**, not with an event?",
+            "Does every paragraph contain **evidence** — a short quotation or a precise reference?",
+            "Have I explained **how** the writing works, not only what it says?",
+            "Have I said what the **effect** on the reader or audience is?",
+            "Have I considered the **other side**, where the question invites it?",
+            "Does my conclusion give a **judgement**, not a summary?",
+            "Have I avoided **retelling the story**?",
+            "Are my quotations **short and accurate**?",
+            "Have I named the writer and used the **present tense** for what happens in the text?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Model Answers", "url": "ol-literature/model-answers/", "more": "Open" },
+            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
+            { "title": "Important Quotations", "url": "ol-literature/quotations/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/model-answers",
+      "title": "Model Answers",
+      "description": "O/L Literature model answers with notes: how a context answer and a full essay answer are built, and how to study a model without memorising it.",
+      "keywords": "literature model answers, sample essay, worked answer, O/L Literature",
+      "kicker": "O/L Literature",
+      "kind": "guidance",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Models to take apart. Under each one, notes explaining what makes it work." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Read this first",
+          "bullets": [
+            "These are **teaching materials written by RCF English**, not official answers, and not the only acceptable answers.",
+            "**Do not memorise them.** A memorised answer does not fit the question you are actually asked, and examiners recognise it immediately.",
+            "The examples on this page use an **invented text**, so that the method can be shown without reproducing a copyrighted work. Model answers on the individual [text pages](ol-literature/texts/) refer to the real prescribed texts.",
+            "The notes are the lesson. The answer is only the example."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 1 — A three-mark context answer",
+          "items": [
+            {
+              "label": "Context answer",
+              "prompt": "What does the mother's silence in this scene reveal about her relationship with her husband? (3 marks)",
+              "sample": [
+                "Her silence shows that she has learnt that speaking will change nothing.",
+                "She does not contradict him even when she is described as looking at the door, which suggests that she has already decided to act rather than to argue.",
+                "The relationship therefore appears to be one in which she has stopped seeking agreement, and this prepares the reader for her departure in the following chapter."
+              ],
+              "notes": [
+                "Three marks, three sentences. The answer does not sprawl.",
+                "Sentence one gives the point. Sentence two gives the evidence and explains it. Sentence three gives the effect and links forward.",
+                "The evidence is precise — *looking at the door* — without needing a long quotation.",
+                "Nothing is retold. The reader of the answer is assumed to know the scene."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 2 — A full essay answer",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Essay answer (invented text, for illustration)",
+              "prompt": "How far do you agree that the father's pride is the cause of his family's suffering?",
+              "sample": [
+                "The father's pride is the most visible cause of the family's suffering, but it is not, in the end, the deepest one. The writer shows a man whose refusal of help is real and damaging, yet also shows the poverty and the loss of work that made such a refusal feel necessary to him. Pride is therefore better understood as the form his suffering takes than as its origin.",
+                "The most obvious damage certainly comes from his refusals. When his son offers him money, he replies, \"I have managed thirty years without it,\" turning a simple offer into a statement about his own endurance. The precision of the figure makes the reply sound rehearsed, as though he has been waiting years for the chance to say it. The effect on the reader is uncomfortable rather than admiring: we recognise his dignity, but we also see that his son has been refused something more than money. From this point the two men speak to each other only through the mother.",
+                "The writer, however, is careful to show where the pride came from. In the second chapter we learn that he was dismissed after twenty-two years without explanation, and that he continued to leave the house each morning at the same hour for a month afterwards so that the neighbours would not know. A man who will walk out of his own door every morning to protect his family's reputation is not simply vain. His pride is presented as a defence built in a particular situation, and the writer expects the reader to see it as such before judging him.",
+                "It would be too easy, though, to excuse him entirely. The novel makes clear that the defence outlives the danger. By the final section the family's circumstances have improved, and yet he refuses the same help he refused years earlier, when it would have made a real difference. His silence towards his son is described as \"a habit he no longer remembered choosing\", and that phrase is the writer's judgement on him: pride which began as protection has become something automatic, and it is this automatic quality, not the pride itself, that does the lasting harm.",
+                "The suffering of the family therefore has two causes working together, and the writer refuses to separate them neatly. Poverty and humiliation created the pride; the pride outlived them and hardened into silence. To say simply that pride caused the suffering would be to accept the view of the neighbours in the novel, who see only the refusals. The reader, who has been shown the month of empty mornings, is asked to reach a more difficult conclusion: that the father is both the author of his family's unhappiness and one of its victims."
+              ],
+              "notes": [
+                "**The introduction takes a position and qualifies it immediately.** That is exactly what *how far do you agree* asks for.",
+                "**Each body paragraph begins with a point**, never with an event: *The most obvious damage…*, *The writer, however, is careful…*, *It would be too easy, though…*",
+                "**The structure is an argument, not a list.** Paragraph two agrees with the question; paragraph three complicates it; paragraph four answers the complication. The essay moves.",
+                "**Quotations are short** — nine words and seven words. Two quotations are enough for an essay of this length.",
+                "**The effect on the reader is stated explicitly** more than once: *uncomfortable rather than admiring*, *asked to reach a more difficult conclusion*.",
+                "**The conclusion judges.** It does not summarise the paragraphs; it decides between them, and its final sentence says something the introduction did not.",
+                "**The tense is the present throughout** for what happens in the text: *he replies*, *the writer shows*, *the novel makes clear*.",
+                "Notice the length: five paragraphs. This is achievable in the time available. Higher marks come from development, not from volume."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use a model answer properly",
+          "numbered": [
+            "Read the question and plan your own answer for five minutes before reading the model.",
+            "Read the model once for the argument. What position does it take?",
+            "Read it again and mark the five parts in each paragraph: point, evidence, explanation, effect, link.",
+            "Read the notes and see how many you had spotted.",
+            "Cover the model and write your own answer to the same question.",
+            "Compare, and identify **one** thing to change next time."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "How Teachers Can Mark Answers", "url": "ol-literature/marking-answers/", "more": "Open" },
+            { "title": "Revision Activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/marking-answers",
+      "title": "How Teachers Can Mark Answers",
+      "description": "A practical approach for teachers marking O/L Literature answers, so that a student learns from the mark: what to look for, how to comment, and how to set the next step.",
+      "keywords": "marking literature answers, teacher marking, feedback, assessment, O/L Literature",
+      "kicker": "For teachers",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "A mark tells a student where they are. A comment tells them what to do next. Only the second one improves anything." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The problem with most marking",
+          "text": [
+            "A script comes back covered in red, with *Develop!*, *Explain more*, *Vague* and a mark out of twenty. The student reads the mark, looks at the red, feels defeated, and learns nothing.",
+            "The difficulty is not that the comments are wrong. It is that they describe a fault without describing a remedy. *Develop* tells a student that something is missing; it does not tell them what to write instead."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "A marking method that teaches",
+          "variant": "tint",
+          "items": [
+            { "title": "Read the whole answer once without a pen", "text": ["Decide what the student was trying to argue before you begin correcting. Marking sentence by sentence produces comments on sentences and no comment on the answer."] },
+            { "title": "Mark the strongest sentence in the answer", "text": ["Underline it and write **\"This.\"** Students rarely know which of their own sentences was the good one. Showing them is the fastest way to get more of the same."] },
+            { "title": "Choose one fault, not all of them", "text": ["A script with eleven corrections produces no change. A script with one, clearly explained, usually does. Choose the fault that is costing the most marks."] },
+            { "title": "Write the remedy as an instruction, not a diagnosis", "text": ["Not *needs development*, but: **\"After each quotation, add one sentence beginning 'The effect on the reader is…'\"** A student can act on that tomorrow."] },
+            { "title": "Give the mark, and say what would raise it by two", "text": ["**\"14. To reach 16, begin each paragraph with a point rather than with an event.\"** The specific next step matters more than the number."] },
+            { "title": "Require a rewrite of one paragraph only", "text": ["Not the whole essay. One paragraph, rewritten properly, teaches more than a second full essay marked the same way."] }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What to look for, in order of importance",
+          "columns": ["Look for", "Question to ask", "If it is missing"],
+          "rows": [
+            ["Answering the question", "Does every paragraph relate to the question set?", "This costs the most marks of anything. Address it first."],
+            ["Argument", "Is there a position, or only a description?", "Ask the student to write their answer as one sentence, then use it as the introduction's last line."],
+            ["Evidence", "Is there a short quotation or precise reference in each paragraph?", "Set a rule: no paragraph without evidence."],
+            ["Explanation", "Does the student examine the actual words?", "Ask for one sentence about a single word in the quotation."],
+            ["Effect", "Is the reader or audience mentioned?", "Give the sentence starter: \"The effect on the reader is…\""],
+            ["Structure", "Does each paragraph open with a point?", "Ask for the first sentence of each paragraph to be rewritten only."],
+            ["Retelling", "Is the student narrating?", "Ask them to cross out every sentence that only says what happens, and count what is left."],
+            ["Accuracy of language", "Are there errors that obscure meaning?", "Mark only those. Do not mark every error in a Literature answer."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Marking a class set in a reasonable time",
+          "variant": "tint",
+          "numbered": [
+            "**Read five scripts first without marking any.** You will see the pattern of the class, and the common fault will become obvious.",
+            "**Teach the common fault to the whole class**, before returning the scripts. Fifteen minutes of teaching saves thirty individual comments.",
+            "**Then mark individually, one comment each.** Because the common fault has been taught, your individual comment can address what is particular to that student.",
+            "**Keep a note of each student's one fault.** At the next piece of work, mark that first and say whether it has improved. A student who sees that you remembered takes the comment far more seriously."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The comment that works better than any other",
+          "text": [
+            "Write a question in the margin instead of a correction: **\"What effect does this have on the reader?\"**, **\"How do you know?\"**, **\"Which word tells you that?\"**",
+            "A question requires an answer, and answering it is the work that produces improvement. A correction requires nothing, and usually gets nothing."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More for teachers",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Marking Guides", "url": "teacher-resources/marking-guides/", "more": "Open" },
+            { "title": "Answer Development", "url": "teacher-resources/answer-development/", "more": "Open" },
+            { "title": "Literature Teaching", "url": "teacher-resources/literature-teaching/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/themes",
+      "title": "Themes",
+      "description": "How to identify, express and argue a literary theme at O/L: the difference between a topic and a theme, and how to build a theme answer with evidence.",
+      "keywords": "literary themes, theme in literature, O/L Literature, theme essay",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "A theme is not a word. It is a sentence — a claim about life that the text makes, and that you can argue about." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Topic and theme are not the same thing",
+          "text": [
+            "*Poverty* is a topic. *Love* is a topic. *War* is a topic. None of them can be agreed or disagreed with, and none of them can be argued for.",
+            "A **theme** is what the text says about the topic. Turn the word into a sentence and you have a theme you can write an essay about."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From topic to theme",
+          "variant": "tint",
+          "columns": ["Topic (weak)", "Theme (strong)"],
+          "rows": [
+            ["Poverty", "The novel shows how poverty narrows the choices of people who are otherwise capable."],
+            ["Love", "The play suggests that love which demands obedience is not love at all."],
+            ["War", "The poem presents war not as heroism but as a bureaucracy that consumes ordinary people."],
+            ["Family", "The story argues that families can protect and imprison a person with the same actions."],
+            ["Tradition", "The text suggests that tradition survives because it gives people a role, even when the role costs them."],
+            ["Ambition", "The play shows ambition destroying first the thing it wanted and then the person who wanted it."]
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to find a theme in a text",
+          "items": [
+            { "title": "Ask what the text keeps returning to", "text": ["A theme is not mentioned once. Look for what appears in several different places: a repeated image, a repeated situation, a question asked more than once."] },
+            { "title": "Look at what characters want and cannot have", "text": ["Themes usually live in the gap between desire and possibility. What does each main character want? What stops them? The answer to the second question is often the theme."] },
+            { "title": "Look at the ending", "text": ["What the writer chooses to reward, punish or leave unresolved tells you what the text believes. An ending that refuses to resolve is itself a statement."] },
+            { "title": "Write it as a full sentence", "text": ["Begin *The writer suggests that…* and finish the sentence. If you cannot finish it, you have a topic, not a theme."] },
+            { "title": "Find three moments that support it", "text": ["Early, middle and late in the text. Three moments across the whole text let you show development, which is what higher marks reward."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Writing a theme answer",
+          "variant": "tint",
+          "text": [
+            "A theme essay goes wrong in a predictable way: the student names the theme, then retells the parts of the story where it appears. The result is a summary with a label on top.",
+            "Build it instead as an argument that develops. Each paragraph should show the theme **at a different stage** of the text and say what has changed."
+          ],
+          "numbered": [
+            "**Introduction:** state the theme as a sentence, and say how the text develops it.",
+            "**Paragraph 1:** the theme as it first appears — early in the text, usually in a simple form.",
+            "**Paragraph 2:** the theme complicated — a moment where it is questioned, or where a character resists it.",
+            "**Paragraph 3:** the theme at the end — what the text finally suggests, and whether it resolves the question.",
+            "**Conclusion:** what the writer wants the reader to take away, and whether the text argues it or merely presents it."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "A useful discipline",
+          "text": [
+            "For each prescribed text, write your themes on one page as complete sentences beginning *The writer suggests that…*, with three moments listed under each.",
+            "That single page will serve almost every theme question you can be asked on that text, and it takes an hour to make."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Characters", "url": "ol-literature/characters/", "more": "Open" },
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Important Quotations", "url": "ol-literature/quotations/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/characters",
+      "title": "Characters",
+      "description": "How to write about literary characters at O/L: how writers reveal character, tracking change, main and minor characters, and avoiding lists of adjectives.",
+      "keywords": "character analysis, characterisation, O/L Literature, character development",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Characters are made of words. A character answer that never looks at the words is describing a person who does not exist." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The five ways a writer reveals character",
+          "text": ["When you are asked how a character is *presented*, these five are what you are being asked about."],
+          "numbered": [
+            "**What they say** — and how. Long speeches or short answers? Questions or orders? Do they evade?",
+            "**What they do** — especially what they do when it costs them something. A single decision reveals more than a page of description.",
+            "**What they think**, where the text gives us access. Compare it with what they say aloud; the gap is usually the point.",
+            "**What others say about them** — and whether the text shows that judgement to be fair.",
+            "**What the writer says directly** — description, and the words chosen for it. Notice whether the narrator is sympathetic, neutral or hostile."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Do not write a list of adjectives",
+          "variant": "tint",
+          "text": [
+            "*He is brave, kind, honest and hardworking* is the commonest weak character answer. It is a list of labels, none of which is proved, and it would fit a hundred characters in a hundred books.",
+            "Replace each adjective with **an action and its meaning**. Instead of *he is brave*, write: *he goes back into the burning shed for the goat, although he had already been told to leave, which shows a courage that does not calculate the risk first.*",
+            "One proved quality is worth more than four asserted ones."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Tracking a character across a text",
+          "items": [
+            { "title": "Where do they begin?", "text": ["Note their situation, their attitude, and how the writer first presents them. First impressions in literature are usually arranged deliberately."] },
+            { "title": "What changes them?", "text": ["Find the moment. Most character questions are really about this moment, whatever their wording."] },
+            { "title": "What do they do differently afterwards?", "text": ["Change must be shown in behaviour, not only stated. Find the action after the turning point that would have been impossible before it."] },
+            { "title": "Where do they end?", "text": ["Compare the last appearance with the first. This comparison, done properly, can carry an entire essay."] },
+            { "title": "And if they do not change?", "text": ["That is equally worth writing about. A character who cannot change while everyone around them does is often the point of the text."] }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Useful terms",
+          "variant": "tint",
+          "items": [
+            { "term": "Protagonist", "definition": "The central character whose choices drive the text. Not necessarily likeable, and not necessarily the narrator." },
+            { "term": "Antagonist", "definition": "The force in opposition. It may be a person, a system, a place, or something inside the protagonist." },
+            { "term": "Foil", "definition": "A character who contrasts with another and, by the contrast, shows us something about them.", "example": "A cautious brother makes a reckless one visible." },
+            { "term": "Round and flat characters", "definition": "A round character is complex and capable of surprising us; a flat one is built from a single quality. Minor characters are often flat on purpose." },
+            { "term": "Static and dynamic characters", "definition": "A dynamic character changes; a static one does not. Both are deliberate choices by the writer." },
+            { "term": "Characterisation", "definition": "The methods by which a writer creates a character — the five ways listed above. Use this word when the question asks *how* a character is presented." }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Two things to avoid",
+          "bullets": [
+            "**Do not judge characters as though they were your neighbours.** *She was wrong to leave her family* is a moral opinion, not literary analysis. Ask instead what the writer wants us to feel about her leaving, and how the text produces that feeling.",
+            "**Do not confuse a narrator with the author.** A first-person narrator may be mistaken, biased or lying. Asking whether you trust the narrator is often the most rewarding question you can ask."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Drama", "url": "ol-literature/drama/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/literary-techniques",
+      "title": "Literary Techniques",
+      "description": "The literary and dramatic techniques needed at O/L, each defined, illustrated and — most importantly — linked to the effect you must explain.",
+      "keywords": "literary techniques, literary devices, simile, metaphor, imagery, irony, symbolism",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Naming the technique earns one mark. Explaining what it does earns the rest. This page is mostly about the rest." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The three-part rule",
+          "text": [
+            "Whenever you write about a technique, write three things: **name it, quote it, explain its effect.**",
+            "Most students do the first two. The mark is in the third. *The poet uses a metaphor* is not analysis; *the metaphor turns the gate's noise into a cry of pain, so the homecoming feels unwelcoming before anything has happened* is."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Comparison and image",
+          "variant": "tint",
+          "items": [
+            { "term": "Simile", "definition": "A comparison using *like* or *as*.", "example": "Ask what the comparison brings with it. Comparing a crowd to a river suggests movement and force; comparing it to a herd suggests something else entirely." },
+            { "term": "Metaphor", "definition": "A comparison that speaks of one thing as though it were another, without *like* or *as*.", "example": "Stronger than a simile because it does not admit that it is a comparison. Ask why the writer wanted the identification to be complete." },
+            { "term": "Personification", "definition": "Giving human qualities or actions to something not human.", "example": "Ask why the writer wanted that thing to seem alive — usually to make it threatening, sympathetic, or watchful." },
+            { "term": "Imagery", "definition": "Language appealing to the senses.", "example": "Never write only \"the writer uses imagery\". Say what kind — visual, of sound, of touch — and what the images have in common." },
+            { "term": "Symbol", "definition": "An object or action standing for a larger idea.", "example": "Argue for your reading rather than assuming it. A symbol usually gathers meaning through repetition, so trace where it appears." },
+            { "term": "Contrast and juxtaposition", "definition": "Two things placed side by side so that each shows up the other.", "example": "A celebration described immediately after a funeral is not decoration; it is an argument being made by arrangement." }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Sound and structure",
+          "items": [
+            { "term": "Alliteration", "definition": "Repetition of the same consonant sound at the start of nearby words.", "example": "Say what the sound does: hard consonants can suggest force or anger, soft ones calm or secrecy." },
+            { "term": "Assonance", "definition": "Repetition of vowel sounds within nearby words.", "example": "Long vowels slow a line down; short ones quicken it." },
+            { "term": "Onomatopoeia", "definition": "A word whose sound imitates its meaning — *crash*, *hiss*, *murmur*.", "example": "Ask whether the sounds are pleasant or harsh, and what that suggests about the scene." },
+            { "term": "Repetition", "definition": "A word, phrase or structure used again deliberately.", "example": "It may suggest obsession, insistence, ritual or monotony. Say which — the word \"emphasises\" alone is too vague to score." },
+            { "term": "Enjambment", "definition": "A sentence continuing past the end of a line without a pause.", "example": "It can create speed or breathlessness, or spring a small surprise where the meaning turns at the line break." },
+            { "term": "Caesura", "definition": "A strong pause within a line.", "example": "It stops the reader mid-line, often at a moment of hesitation or shock." },
+            { "term": "Structure", "definition": "How the whole text is arranged — stanzas, chapters, acts, time order.", "example": "Structural comments are highly valued and rarely made. Ask why this text is in this order." }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Meaning, voice and drama",
+          "variant": "tint",
+          "items": [
+            { "term": "Irony", "definition": "A contrast between what is said or expected and what is actually the case.", "example": "Distinguish verbal irony (saying the opposite of what is meant) from situational irony (an outcome opposite to what was expected)." },
+            { "term": "Dramatic irony", "definition": "The audience knows something a character does not.", "example": "Say what it makes the audience feel — dread, pity, discomfort. That feeling is the effect you are being asked about." },
+            { "term": "Tone", "definition": "The attitude the writing takes to its subject.", "example": "Be precise. Not \"sad\", but wistful, bitter, resigned or defiant." },
+            { "term": "Mood or atmosphere", "definition": "The feeling created in the reader.", "example": "Tone belongs to the writer; mood belongs to the reader. Examination questions sometimes ask for one and receive the other." },
+            { "term": "Foreshadowing", "definition": "An early hint of something that comes later.", "example": "Once you know the ending, reread the opening. Foreshadowing is almost always there, and noticing it makes an answer look attentive." },
+            { "term": "Soliloquy and aside", "definition": "A character alone speaking their thoughts; a short remark heard only by the audience.", "example": "Both create intimacy between a character and the audience that other characters do not share." },
+            { "term": "Hyperbole", "definition": "Deliberate exaggeration.", "example": "Ask whether it is comic, desperate or self-deceiving — exaggeration usually tells you something about the speaker." },
+            { "term": "Understatement", "definition": "Deliberately saying less than is meant.", "example": "Often more powerful than exaggeration, especially about grief or fear, because the reader supplies what is left out." }
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise naming and matching",
+          "intro": ["Naming the technique correctly is the first step. These two activities practise exactly that."],
+          "ids": ["literature-terms-1", "vocab-match-literature-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Poetry", "url": "ol-literature/poetry/", "more": "Open" },
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Important Quotations", "url": "ol-literature/quotations/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/quotations",
+      "title": "Important Quotations",
+      "description": "How to choose, learn and use quotations in O/L Literature answers: why ten short quotations beat fifty long ones, and how to weave them into a sentence.",
+      "keywords": "quotations, quoting in literature essays, learning quotes, evidence",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Ten short quotations you can use in three different answers are worth more than fifty you can only half remember." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "How many, and how long",
+          "text": [
+            "**Ten per text is enough.** Students who try to learn fifty end up with fifty approximate versions, and an approximate quotation is worse than none: it is an inaccuracy the examiner can see.",
+            "**Keep them short.** Between three and ten words is ideal. A long quotation eats examination time, fills your page with someone else's words rather than your analysis, and usually contains more than the point requires.",
+            "**Choose for usefulness, not for beauty.** The best quotation to learn is not the most striking line in the text; it is the one that can serve a character question, a theme question and a technique question."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Choosing your ten",
+          "variant": "tint",
+          "items": [
+            { "title": "One that establishes each main character", "text": ["Usually something they say, early, that turns out to define them."] },
+            { "title": "One for each main theme", "text": ["A line where the theme is most concentrated — often a moment where a character states or refuses something."] },
+            { "title": "Two from turning points", "text": ["The moments after which nothing can go back. Almost every essay question touches one of these."] },
+            { "title": "Two that show technique clearly", "text": ["A striking image, or a piece of dialogue whose form is as revealing as its content."] },
+            { "title": "One from the opening and one from the ending", "text": ["These two together let you write about the whole shape of a text, which is worth a great deal."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use a quotation in a sentence",
+          "text": [
+            "Do not drop a quotation in on its own line and expect it to argue for you. Weave it into your own sentence so that the sentence still makes grammatical sense when read aloud.",
+            "This is called embedding, and it is one of the clearest signals of a competent Literature answer."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Dropped, and embedded",
+          "items": [
+            {
+              "label": "Compare these",
+              "sample": [
+                "**Dropped in (weak):** The father is proud. \"I have managed thirty years without it.\" This shows he is proud.",
+                "**Embedded (strong):** The father's refusal — \"I have managed thirty years without it\" — turns his son's offer into an occasion for measuring his own endurance.",
+                "**Embedded, shorter still:** By counting \"thirty years\" the father converts a simple offer into a verdict on his own life."
+              ],
+              "notes": [
+                "In the weak version the quotation sits alone and does no work. The sentence before it and the sentence after it say the same thing.",
+                "In the strong version the quotation is part of the writer's own sentence, and the sentence is doing the analysis.",
+                "In the third version only two words are quoted, and they carry the whole point. Very short quotations, used precisely, are the mark of a confident answer.",
+                "Use double quotation marks, copy the words exactly, and use three dots (…) if you leave anything out of the middle."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Learning them so they stay",
+          "variant": "tint",
+          "numbered": [
+            "**Write each quotation on a card, with the reason you chose it on the back** — not the meaning, the *use*: *character, pride, ch.4*.",
+            "**Say them aloud.** Quotations learnt silently are recalled approximately; quotations learnt aloud are recalled exactly.",
+            "**Test yourself backwards.** Look at the reason and recall the quotation, not the other way round. That is the direction you will need it in the examination.",
+            "**Use each one in a written sentence at least twice.** A quotation you have used is remembered; a quotation you have only read is not.",
+            "**If you cannot recall it exactly, refer to it instead.** *When the father refuses the money by counting his years* is honest and gains credit. A misquotation does not."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "A note on this site and quotations",
+          "text": [
+            "RCF English does not reproduce complete copyrighted texts. Quotations on text pages are short, accurate and used for study and criticism, with the author and work named.",
+            "**Nothing is invented.** Where a quotation cannot be verified against the text, it is not published. If you find a quotation on this site that does not match your prescribed book, please [report it](corrections/) — that is exactly the kind of error worth telling us about."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-literature/model-answers/", "more": "Open" },
+            { "title": "Revision Activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/common-mistakes",
+      "title": "Common Student Mistakes",
+      "description": "The mistakes that cost O/L Literature students the most marks — retelling the story, naming techniques without effects, unsupported claims — and how to correct each one.",
+      "keywords": "literature mistakes, common errors, retelling, O/L Literature, essay faults",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Ten faults account for most of the marks lost in Literature. Every one of them can be corrected in a fortnight." },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "The ten faults, and their remedies",
+          "items": [
+            { "q": "1. Retelling the story instead of answering", "a": ["**The fault:** the answer narrates events from the beginning. The examiner already knows the text.", "**The test:** does each paragraph begin with a point, or with an event? If your paragraphs begin *Then he goes to…*, you are narrating.", "**The remedy:** rewrite only the first sentence of each paragraph so that it makes a claim. The rest of the paragraph usually improves by itself."] },
+            { "q": "2. Naming a technique without explaining its effect", "a": ["**The fault:** *The poet uses imagery and alliteration here.* True, and worth almost nothing.", "**The remedy:** after every technique you name, write one sentence beginning **\"The effect on the reader is…\"** Do this every time until it becomes automatic."] },
+            { "q": "3. Making claims without evidence", "a": ["**The fault:** *The mother is the strongest character in the play.* Perhaps — but why should the examiner believe you?", "**The remedy:** a rule with no exceptions: **no paragraph without a short quotation or a precise reference.**"] },
+            { "q": "4. Quoting too much", "a": ["**The fault:** four lines quoted, one line of comment. Your page fills with someone else's words, and the marks are for yours.", "**The remedy:** cut every quotation to ten words or fewer. If you cannot, quote two separate short pieces instead."] },
+            { "q": "5. Answering the question you prepared, not the one asked", "a": ["**The fault:** a memorised essay on the character is delivered when the question asked about the relationship.", "**The remedy:** write the question at the top of your plan and, after each paragraph, glance at it. If the paragraph does not serve the question, it is not helping you."] },
+            { "q": "6. Treating characters as real people", "a": ["**The fault:** *She should not have left her husband.* This is a moral opinion about a person who does not exist.", "**The remedy:** ask instead what the **writer** wants us to feel about her leaving, and which words produce that feeling."] },
+            { "q": "7. Confusing the narrator with the author", "a": ["**The fault:** assuming that the *I* of a poem or story is the writer, and that everything the narrator says is true.", "**The remedy:** ask whether the narrator can be trusted. Sometimes the gap between what the narrator believes and what the reader sees is the whole point of the text."] },
+            { "q": "8. Writing in the past tense about the text", "a": ["**The fault:** *He went to the house and then he said…*", "**The remedy:** use the present tense for what happens in a text: *He goes to the house and says…*, *the writer shows*, *the poem suggests*. Use the past only for real historical events."] },
+            { "q": "9. Introductions that say nothing", "a": ["**The fault:** *In this essay I am going to discuss… There are many things to say about this character.*", "**The remedy:** delete the announcement and begin with your answer. Your introduction should end with a position that could be disagreed with."] },
+            { "q": "10. Conclusions that only summarise", "a": ["**The fault:** *In conclusion, I have discussed the three points above.*", "**The remedy:** a conclusion must judge. It should contain something the introduction did not — the decision you reached by writing the essay."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The single most useful exercise",
+          "variant": "tint",
+          "text": [
+            "Take one of your own marked Literature answers. Cross out every sentence that only says what happens in the text.",
+            "Look at what is left. That is your actual answer, and its length usually explains your mark better than any comment written on the page.",
+            "Now rewrite one paragraph, obeying two rules: begin with a point, and include one short quotation with its effect explained. Students who do this once a week for a month generally see the difference in their next mark."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Model Answers", "url": "ol-literature/model-answers/", "more": "Open" },
+            { "title": "Revision Activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/revision-activities",
+      "title": "Revision Activities",
+      "description": "Practical O/L Literature revision activities for students working alone or in a class, plus interactive practice on literary terms and techniques.",
+      "keywords": "literature revision, revision activities, O/L Literature, quiz, group revision",
+      "kicker": "O/L Literature",
+      "kind": "quiz",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Revision that only re-reads notes achieves very little. Every activity here requires you to produce something." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Interactive practice",
+          "intro": ["Two activities on literary terms and techniques — the vocabulary you need before any analysis is possible."],
+          "ids": ["literature-terms-1", "vocab-match-literature-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Activities to do on paper, alone",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "The one-page text summary", "text": ["Reduce a whole text to one side of paper: one line per chapter or scene, the main characters in three words each, and three themes as full sentences. If it will not fit on one page, you do not yet know the text well enough."] },
+            { "title": "Ten quotations, ten uses", "text": ["Write your ten chosen quotations. Beside each, write the two different questions it could answer. A quotation useful for only one question is a poor choice; replace it."] },
+            { "title": "The five-sentence drill", "text": ["Take any old one-sentence answer and rewrite it in five sentences: point, evidence, explanation, effect, link. Three times a week for a fortnight."] },
+            { "title": "First page, last page", "text": ["Read the opening and the closing of a text one after the other and write a paragraph on what has changed. This exercise answers a surprising number of essay questions."] },
+            { "title": "Cross out the story", "text": ["Take a marked answer and cross out every sentence that only narrates. What remains is your real answer. Rewrite one paragraph of it properly."] },
+            { "title": "Question rewriting", "text": ["Take five past essay questions and rewrite each as a statement you could agree or disagree with. This is how you learn to see what a question is actually asking."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Activities for a class or a study group",
+          "columns": "3",
+          "items": [
+            { "title": "Quotation auction", "text": ["Each student brings three quotations. The group decides which are most useful and why. Arguing about usefulness teaches selection better than being told."] },
+            { "title": "Hot-seating a character", "text": ["One student answers questions in role as a character; the rest must challenge every answer with evidence from the text. Nothing exposes shallow reading faster."] },
+            { "title": "Paragraph relay", "text": ["One student writes the point, passes it on; the next writes the evidence; the next the explanation; the next the effect. Then the group discusses the joins."] },
+            { "title": "Mark a model answer", "text": ["Give the class a deliberately average answer and ask them to mark it and justify the mark. Students who have marked once write differently afterwards."] },
+            { "title": "Theme sentences", "text": ["Give each group a topic word and ten minutes to turn it into a theme sentence supported by three moments in the text. Compare the sentences produced."] },
+            { "title": "Silent scene", "text": ["For drama: act a scene with no words, only movement and position. The class then explains what was communicated and how — which is exactly what stagecraft questions ask."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "The last month",
+          "bullets": [
+            "**Revise your own written answers, not new notes.** Your corrected work is the most efficient revision material you own.",
+            "**Write one full essay per text, timed.** One is enough if you correct it properly.",
+            "**Rewrite one weak paragraph a day.** Fifteen minutes, and it compounds.",
+            "**Recite your ten quotations aloud twice a week.** Aloud, not silently.",
+            "**Do not read a new study guide in the final fortnight.** It will make you anxious and teach you nothing you can use in time."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "All interactive activities", "url": "interactive/", "more": "Open" },
+            { "title": "Past Papers", "url": "past-papers/ol-literature/", "more": "Open" },
+            { "title": "Common Student Mistakes", "url": "ol-literature/common-mistakes/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

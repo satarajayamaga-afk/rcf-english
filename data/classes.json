@@ -1,0 +1,241 @@
+{
+  "_readme": [
+    "RCF Classes - the single place where class information is kept.",
+    "",
+    "TWO LISTS ARE IN THIS FILE:",
+    "  courses  - the KINDS of class offered. Set \"published\": false to hide a kind",
+    "             completely. Hidden kinds disappear from the menu and from the site,",
+    "             so there are never empty pages for classes that are not offered.",
+    "  classes  - the ACTUAL classes. Add one entry per class you are running.",
+    "",
+    "NEVER write a day, time, fee, location or number of places that has not been",
+    "decided. Leave the field out, or use one of these honest phrases:",
+    "     \"Schedule to be announced\"",
+    "     \"Fees available on request\"",
+    "     \"Registration opening soon\"",
+    "",
+    "registration may be: open | soon | waitlist | closed",
+    "delivery may be:     online | physical | hybrid",
+    "groupFormat may be:  individual | group",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+
+  "courses": [
+    {
+      "id": "ol-english",
+      "title": "O/L English Classes",
+      "published": true
+    },
+    {
+      "id": "ol-literature",
+      "title": "O/L Literature Classes",
+      "published": true
+    },
+    {
+      "id": "al-literature",
+      "title": "A/L Literature Classes",
+      "published": true
+    },
+    {
+      "id": "general-english",
+      "title": "General English Classes",
+      "published": true
+    },
+    {
+      "id": "spoken-english",
+      "title": "Spoken English Classes",
+      "published": true
+    },
+    {
+      "id": "revision",
+      "title": "Revision Classes",
+      "published": true
+    },
+    {
+      "id": "individual",
+      "title": "Individual Classes",
+      "published": true
+    },
+    {
+      "id": "group",
+      "title": "Group Classes",
+      "published": true
+    },
+    {
+      "id": "online",
+      "title": "Online Classes",
+      "published": true
+    },
+    {
+      "id": "physical",
+      "title": "Physical Classes",
+      "published": false,
+      "_note": "Hidden. Classes are conducted mainly online at present. Change to true only when physical classes are actually being held, and add the real venue to the class entries below."
+    }
+  ],
+
+  "classes": [
+    {
+      "id": "ol-english-online",
+      "course": "ol-english",
+      "title": "O/L English",
+      "subject": "O/L English",
+      "level": "Grades 10 and 11",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Systematic preparation for the Ordinary Level English paper, covering grammar, vocabulary, reading comprehension and every writing task in the examination, with guided practice before independent work."
+      ],
+      "audience": "School candidates and private candidates preparing for O/L English",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English, with explanation in simple language where needed",
+      "materials": "A notebook, a pen and a device with an internet connection",
+      "featured": true,
+      "published": true
+    },
+    {
+      "id": "ol-literature-online",
+      "course": "ol-literature",
+      "title": "O/L English Literature",
+      "subject": "O/L English Literature",
+      "level": "Grades 10 and 11",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Close study of the prescribed poems, short stories, plays and novels, with practice in context answers and full essay answers, and individual correction of written work."
+      ],
+      "audience": "Students taking O/L English Literature",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "materials": "The prescribed texts, a notebook and a device with an internet connection",
+      "featured": true,
+      "published": true
+    },
+    {
+      "id": "al-literature-online",
+      "course": "al-literature",
+      "title": "A/L English Literature",
+      "subject": "A/L English Literature",
+      "level": "Advanced Level",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Advanced Level Literature: close reading, critical appreciation, selecting and using textual evidence, and building well-organised essay answers under examination conditions."
+      ],
+      "audience": "Advanced Level students of English Literature",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "materials": "The prescribed texts and a device with an internet connection",
+      "featured": true,
+      "published": true
+    },
+    {
+      "id": "general-english-online",
+      "course": "general-english",
+      "title": "General English",
+      "subject": "General English",
+      "level": "Beginner to intermediate",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Practical English for daily life, study and work: grammar you actually use, everyday vocabulary, reading and writing, and the confidence to use English without fear of mistakes."
+      ],
+      "audience": "Adult learners, school leavers and anyone rebuilding their English",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English, explained simply",
+      "materials": "A notebook and a device with an internet connection",
+      "published": true
+    },
+    {
+      "id": "spoken-english-online",
+      "course": "spoken-english",
+      "title": "Spoken English",
+      "subject": "Spoken English",
+      "level": "Beginner to intermediate",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Speaking practice built around real situations: introductions, telephone calls, interviews, workplace conversation, travel and everyday social exchanges, with correction and pronunciation guidance."
+      ],
+      "audience": "Adults and older students who understand English but hesitate to speak",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "materials": "A device with a working microphone",
+      "published": true
+    },
+    {
+      "id": "revision-online",
+      "course": "revision",
+      "title": "Examination Revision",
+      "subject": "O/L English, O/L Literature and A/L Literature",
+      "level": "Examination candidates",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Short, focused revision courses before the examination: paper structure, timing, answer development, common mistakes and practice on past and model papers."
+      ],
+      "audience": "Candidates in their examination year, including private candidates",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "materials": "Past papers and a notebook",
+      "published": true
+    },
+    {
+      "id": "individual-online",
+      "course": "individual",
+      "title": "Individual Classes",
+      "subject": "English or Literature, according to need",
+      "level": "Any level",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "One-to-one teaching arranged around a single learner: the pace, the content and the amount of correction are all decided by what that learner needs. Suitable for students who need extra help, and for adults who prefer to learn privately."
+      ],
+      "audience": "Learners who need individual attention or a flexible time",
+      "delivery": "online",
+      "groupFormat": "individual",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "published": true
+    },
+    {
+      "id": "group-online",
+      "course": "group",
+      "title": "Group Classes",
+      "subject": "English and Literature",
+      "level": "Any level",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "Small-group teaching in which learners work through explanations, guided practice and correction together. Group classes give learners the benefit of hearing other people's questions and answers."
+      ],
+      "audience": "Students who learn well alongside others",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "To be announced",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "published": true
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "_comment": "RCF English main navigation. 'url' values are folder paths relative to the site root. The build script checks that every link here points at a page that really exists, so the menu can never contain a broken link.",
+
+  "items": [
+    { "label": "Home", "url": "" },
+
+    {
+      "label": "O/L English",
+      "url": "ol-english/",
+      "summary": "Grammar, vocabulary, reading and step-by-step guided writing for the Ordinary Level English examination.",
+      "groups": [
+        { "title": "Start here", "links": [
+          { "label": "Overview", "url": "ol-english/" },
+          { "label": "Syllabus and Examination Structure", "url": "ol-english/syllabus/" },
+          { "label": "Paper I", "url": "ol-english/paper-i/" },
+          { "label": "Paper II", "url": "ol-english/paper-ii/" }
+        ]},
+        { "title": "Language skills", "links": [
+          { "label": "Grammar", "url": "ol-english/grammar/" },
+          { "label": "Vocabulary", "url": "ol-english/vocabulary/" },
+          { "label": "Reading Comprehension", "url": "ol-english/reading-comprehension/" }
+        ]},
+        { "title": "Writing", "links": [
+          { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
+          { "label": "Emails", "url": "ol-english/emails/" },
+          { "label": "Notices", "url": "ol-english/notices/" },
+          { "label": "Letters", "url": "ol-english/letters/" },
+          { "label": "Paragraph Writing", "url": "ol-english/paragraph-writing/" },
+          { "label": "Essay Writing", "url": "ol-english/essay-writing/" },
+          { "label": "Picture Description", "url": "ol-english/picture-description/" },
+          { "label": "Dialogue and Speech Writing", "url": "ol-english/dialogue-and-speech-writing/" }
+        ]},
+        { "title": "Practice and revision", "links": [
+          { "label": "Model Questions", "url": "ol-english/model-questions/" },
+          { "label": "Model Answers", "url": "ol-english/model-answers/" },
+          { "label": "Examination Techniques", "url": "ol-english/examination-techniques/" },
+          { "label": "Common Student Mistakes", "url": "ol-english/common-mistakes/" },
+          { "label": "Interactive Revision", "url": "ol-english/interactive-revision/" },
+          { "label": "O/L English Past Papers", "url": "past-papers/ol-english/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "O/L Literature",
+      "url": "ol-literature/",
+      "summary": "A consistent way to study every poem, short story, play and novel, and a clear method for building full answers.",
+      "groups": [
+        { "title": "Start here", "links": [
+          { "label": "Overview", "url": "ol-literature/" },
+          { "label": "Syllabus", "url": "ol-literature/syllabus/" },
+          { "label": "Prescribed Texts", "url": "ol-literature/texts/" }
+        ]},
+        { "title": "Genres", "links": [
+          { "label": "Poetry", "url": "ol-literature/poetry/" },
+          { "label": "Short Stories", "url": "ol-literature/short-stories/" },
+          { "label": "Drama", "url": "ol-literature/drama/" },
+          { "label": "Novels", "url": "ol-literature/novels/" }
+        ]},
+        { "title": "Answering questions", "links": [
+          { "label": "Context Questions", "url": "ol-literature/context-questions/" },
+          { "label": "Essay Questions", "url": "ol-literature/essay-questions/" },
+          { "label": "Model Answers", "url": "ol-literature/model-answers/" },
+          { "label": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/" },
+          { "label": "How Teachers Can Mark Answers", "url": "ol-literature/marking-answers/" }
+        ]},
+        { "title": "Study tools", "links": [
+          { "label": "Themes", "url": "ol-literature/themes/" },
+          { "label": "Characters", "url": "ol-literature/characters/" },
+          { "label": "Literary Techniques", "url": "ol-literature/literary-techniques/" },
+          { "label": "Important Quotations", "url": "ol-literature/quotations/" },
+          { "label": "Common Student Mistakes", "url": "ol-literature/common-mistakes/" },
+          { "label": "Revision Activities", "url": "ol-literature/revision-activities/" },
+          { "label": "O/L Literature Past Papers", "url": "past-papers/ol-literature/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "General English",
+      "url": "general-english/",
+      "summary": "Practical English for everyday life, work and study, for adult learners and anyone rebuilding their confidence.",
+      "groups": [
+        { "title": "Core English", "links": [
+          { "label": "Overview", "url": "general-english/" },
+          { "label": "Practical Grammar", "url": "general-english/practical-grammar/" },
+          { "label": "Vocabulary", "url": "general-english/vocabulary/" },
+          { "label": "Pronunciation", "url": "general-english/pronunciation/" },
+          { "label": "Common Mistakes", "url": "general-english/common-mistakes/" }
+        ]},
+        { "title": "The four skills", "links": [
+          { "label": "Reading", "url": "general-english/reading/" },
+          { "label": "Writing", "url": "general-english/writing/" },
+          { "label": "Listening", "url": "general-english/listening/" },
+          { "label": "Speaking", "url": "general-english/speaking/" }
+        ]},
+        { "title": "English in use", "links": [
+          { "label": "Everyday English", "url": "general-english/everyday-english/" },
+          { "label": "Spoken English", "url": "general-english/spoken-english/" },
+          { "label": "Workplace English", "url": "general-english/workplace-english/" },
+          { "label": "English for Adults", "url": "general-english/english-for-adults/" },
+          { "label": "Practical Conversations", "url": "general-english/practical-conversations/" }
+        ]},
+        { "title": "Check your progress", "links": [
+          { "label": "Self-Assessment", "url": "general-english/self-assessment/" },
+          { "label": "Interactive Practice", "url": "general-english/interactive-practice/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "A/L Literature",
+      "url": "al-literature/",
+      "summary": "Advanced Level English Literature: close reading, critical appreciation and well-organised essay answers.",
+      "groups": [
+        { "title": "Start here", "links": [
+          { "label": "Overview", "url": "al-literature/" },
+          { "label": "Syllabus", "url": "al-literature/syllabus/" },
+          { "label": "Prescribed Texts", "url": "al-literature/prescribed-texts/" }
+        ]},
+        { "title": "Genres", "links": [
+          { "label": "Poetry", "url": "al-literature/poetry/" },
+          { "label": "Drama", "url": "al-literature/drama/" },
+          { "label": "Fiction", "url": "al-literature/fiction/" },
+          { "label": "Prose", "url": "al-literature/prose/" }
+        ]},
+        { "title": "Writing answers", "links": [
+          { "label": "Context Questions", "url": "al-literature/context-questions/" },
+          { "label": "Essay Questions", "url": "al-literature/essay-questions/" },
+          { "label": "Critical Appreciation", "url": "al-literature/critical-appreciation/" },
+          { "label": "Model Answers", "url": "al-literature/model-answers/" },
+          { "label": "Answer Development", "url": "al-literature/answer-development/" }
+        ]},
+        { "title": "Study and revision", "links": [
+          { "label": "Literary Theory", "url": "al-literature/literary-theory/" },
+          { "label": "Literary Techniques", "url": "al-literature/literary-techniques/" },
+          { "label": "Examination Guidance", "url": "al-literature/examination-guidance/" },
+          { "label": "Common Student Mistakes", "url": "al-literature/common-mistakes/" },
+          { "label": "A/L Literature Past Papers", "url": "past-papers/al-literature/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "Past Papers",
+      "url": "past-papers/",
+      "summary": "A searchable centre for past papers, model papers, marking schemes and revision papers.",
+      "groups": [
+        { "title": "By subject", "links": [
+          { "label": "All Papers and Filters", "url": "past-papers/" },
+          { "label": "O/L English Papers", "url": "past-papers/ol-english/" },
+          { "label": "O/L Literature Papers", "url": "past-papers/ol-literature/" },
+          { "label": "A/L Literature Papers", "url": "past-papers/al-literature/" }
+        ]},
+        { "title": "By paper type", "links": [
+          { "label": "Model Papers", "url": "past-papers/model-papers/" },
+          { "label": "School Term-Test Papers", "url": "past-papers/term-test-papers/" },
+          { "label": "Provincial Papers", "url": "past-papers/provincial-papers/" },
+          { "label": "Revision Papers", "url": "past-papers/revision-papers/" },
+          { "label": "Question Banks", "url": "past-papers/question-banks/" }
+        ]},
+        { "title": "Answers and guidance", "links": [
+          { "label": "Marking Schemes", "url": "past-papers/marking-schemes/" },
+          { "label": "Model Answers", "url": "past-papers/model-answers/" },
+          { "label": "How to Use Past Papers", "url": "past-papers/how-to-use/" },
+          { "label": "Copyright and Resource Policy", "url": "copyright-policy/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "Teacher Resources",
+      "url": "teacher-resources/",
+      "summary": "Lesson plans, worksheets, marking guides and practical support for classroom and tuition teachers.",
+      "groups": [
+        { "title": "Planning and teaching", "links": [
+          { "label": "Overview", "url": "teacher-resources/" },
+          { "label": "Lesson Plans", "url": "teacher-resources/lesson-plans/" },
+          { "label": "Worksheets", "url": "teacher-resources/worksheets/" },
+          { "label": "Teaching Guides", "url": "teacher-resources/teaching-guides/" },
+          { "label": "Classroom Activities", "url": "teacher-resources/classroom-activities/" }
+        ]},
+        { "title": "Supporting every learner", "links": [
+          { "label": "Remedial English", "url": "teacher-resources/remedial-english/" },
+          { "label": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/" },
+          { "label": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/" },
+          { "label": "Guided Writing", "url": "teacher-resources/guided-writing/" }
+        ]},
+        { "title": "Literature and assessment", "links": [
+          { "label": "Literature Teaching", "url": "teacher-resources/literature-teaching/" },
+          { "label": "Assessment", "url": "teacher-resources/assessment/" },
+          { "label": "Marking Guides", "url": "teacher-resources/marking-guides/" },
+          { "label": "Answer Development", "url": "teacher-resources/answer-development/" },
+          { "label": "Revision Strategies", "url": "teacher-resources/revision-strategies/" }
+        ]},
+        { "title": "More for teachers", "links": [
+          { "label": "Professional Reading", "url": "teacher-resources/professional-reading/" },
+          { "label": "Teacher Downloads", "url": "teacher-resources/downloads/" },
+          { "label": "RCF Publications for Teachers", "url": "teacher-resources/rcf-publications-for-teachers/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "RCF Classes",
+      "url": "rcf-classes/",
+      "summary": "Online English and Literature classes conducted by R. C. Fernando. Ask about schedules and fees on WhatsApp.",
+      "groups": [
+        { "title": "Courses", "links": [
+          { "label": "Classes Overview", "url": "rcf-classes/" },
+          { "label": "O/L English Classes", "url": "rcf-classes/ol-english/", "course": "ol-english" },
+          { "label": "O/L Literature Classes", "url": "rcf-classes/ol-literature/", "course": "ol-literature" },
+          { "label": "A/L Literature Classes", "url": "rcf-classes/al-literature/", "course": "al-literature" },
+          { "label": "General English Classes", "url": "rcf-classes/general-english/", "course": "general-english" },
+          { "label": "Spoken English Classes", "url": "rcf-classes/spoken-english/", "course": "spoken-english" },
+          { "label": "Revision Classes", "url": "rcf-classes/revision/", "course": "revision" }
+        ]},
+        { "title": "Class formats", "links": [
+          { "label": "Individual Classes", "url": "rcf-classes/individual-classes/", "course": "individual" },
+          { "label": "Group Classes", "url": "rcf-classes/group-classes/", "course": "group" },
+          { "label": "Online Classes", "url": "rcf-classes/online-classes/", "course": "online" },
+          { "label": "Physical Classes", "url": "rcf-classes/physical-classes/", "course": "physical" }
+        ]},
+        { "title": "Schedule and notices", "links": [
+          { "label": "Timetables", "url": "rcf-classes/timetable/" },
+          { "label": "Upcoming Classes", "url": "rcf-classes/upcoming/" },
+          { "label": "Class Notices", "url": "rcf-classes/notices/" }
+        ]},
+        { "title": "Joining a class", "links": [
+          { "label": "Enrolment", "url": "rcf-classes/enrolment/" },
+          { "label": "Student Resources", "url": "rcf-classes/student-resources/" },
+          { "label": "Frequently Asked Questions", "url": "rcf-classes/faq/" },
+          { "label": "Contact the Teacher", "url": "rcf-classes/contact/" }
+        ]}
+      ]
+    },
+
+    { "label": "RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "external": true, "note": "External bookshop" },
+
+    {
+      "label": "About Us",
+      "url": "about/",
+      "summary": "Who runs RCF English, the qualifications behind it and how its parts fit together.",
+      "groups": [
+        { "title": "About the platform", "links": [
+          { "label": "About RCF English", "url": "about/" },
+          { "label": "Our Educational Mission", "url": "about/mission/" },
+          { "label": "Our Teaching Approach", "url": "about/teaching-approach/" }
+        ]},
+        { "title": "About the founder", "links": [
+          { "label": "Our Founder", "url": "about/founder/" },
+          { "label": "Academic and Professional Background", "url": "about/background/" },
+          { "label": "Our Online Communities", "url": "about/online-communities/" }
+        ]},
+        { "title": "Our services", "links": [
+          { "label": "RCF Classes", "url": "rcf-classes/" },
+          { "label": "RCF Publications", "url": "about/rcf-publications/" },
+          { "label": "Contact Us", "url": "contact/" }
+        ]}
+      ]
+    },
+
+    { "label": "Contact", "url": "contact/" }
+  ],
+
+  "footer": [
+    { "title": "Learn", "links": [
+      { "label": "O/L English", "url": "ol-english/" },
+      { "label": "O/L Literature", "url": "ol-literature/" },
+      { "label": "General English", "url": "general-english/" },
+      { "label": "A/L Literature", "url": "al-literature/" },
+      { "label": "Interactive Learning", "url": "interactive/" }
+    ]},
+    { "title": "Resources", "links": [
+      { "label": "Past Papers", "url": "past-papers/" },
+      { "label": "All Resources", "url": "resources/" },
+      { "label": "Teacher Resources", "url": "teacher-resources/" },
+      { "label": "Search the Site", "url": "search/" },
+      { "label": "How to Use This Site", "url": "how-to-use/" }
+    ]},
+    { "title": "RCF", "links": [
+      { "label": "RCF Classes", "url": "rcf-classes/" },
+      { "label": "About Us", "url": "about/" },
+      { "label": "Contact", "url": "contact/" },
+      { "label": "Frequently Asked Questions", "url": "faq/" }
+    ]},
+    { "title": "Policies", "links": [
+      { "label": "Copyright and Resource Policy", "url": "copyright-policy/" },
+      { "label": "Corrections and Takedown Requests", "url": "corrections/" },
+      { "label": "Privacy Policy", "url": "privacy/" },
+      { "label": "Terms of Use", "url": "terms/" },
+      { "label": "Accessibility Statement", "url": "accessibility/" }
+    ]}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "_readme": [
+    "CLASS NOTICES shown on the RCF Classes notices page.",
+    "",
+    "Use these for changes of time, revision announcements, holiday breaks and",
+    "similar messages. Delete a notice when it is no longer relevant.",
+    "",
+    "NEVER put a meeting link, a meeting password or a student's name, telephone",
+    "number or result in this file. Everything here is published on the internet.",
+    "",
+    "FIELDS:  id, date (e.g. 26 August 2026), title, text (a list of paragraphs),",
+    "         published (false hides it).",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+
+  "notices": []
+}

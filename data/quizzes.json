@@ -1,0 +1,528 @@
+{
+  "_readme": [
+    "INTERACTIVE ACTIVITIES",
+    "",
+    "Seven kinds of activity are available. Set \"type\" to one of:",
+    "   mcq      multiple choice          questions[] with prompt, options[], answer, explanation",
+    "   reading  passage + questions      passage[], passageTitle, then questions[] as for mcq",
+    "   gap      fill in the blank        questions[] with sentence (use ____ for the space),",
+    "                                     answer (a word, or a list of acceptable words), hint",
+    "   order    put parts in order       questions[] with prompt, parts[] IN THE CORRECT ORDER",
+    "                                     (the website shuffles them for the student)",
+    "   match    match word to meaning    pairs[] with term and meaning",
+    "   error    correct the mistake      questions[] with sentence, answer (the corrected",
+    "                                     sentence, or a list of acceptable versions), explanation",
+    "",
+    "'answer' in mcq and reading is the POSITION of the correct option, counting",
+    "from 0. So 0 is the first option, 1 the second, 2 the third, 3 the fourth.",
+    "",
+    "'page' tells site search which page the activity lives on.",
+    "",
+    "Every activity automatically gets instructions, immediate feedback, a score",
+    "and a 'Start again' button. Nothing a student types is stored or sent anywhere.",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+
+  "activities": [
+    {
+      "id": "grammar-tenses-1",
+      "type": "mcq",
+      "title": "Tenses: choosing the right form",
+      "description": "Ten questions on the tenses most often tested at Ordinary Level.",
+      "page": "ol-english/grammar/",
+      "keywords": "tenses present past perfect continuous grammar quiz",
+      "questions": [
+        {
+          "prompt": "Nimal ____ to school every day.",
+          "options": ["go", "goes", "going", "is go"],
+          "answer": 1,
+          "explanation": "The simple present is used for a habit. With he, she or it, the verb takes -s: Nimal goes."
+        },
+        {
+          "prompt": "Look! The bus ____ .",
+          "options": ["comes", "came", "is coming", "has come"],
+          "answer": 2,
+          "explanation": "The present continuous describes something happening at this moment. The word Look! tells you it is happening now."
+        },
+        {
+          "prompt": "I ____ my homework already, so I can play now.",
+          "options": ["finish", "finished", "have finished", "am finishing"],
+          "answer": 2,
+          "explanation": "The present perfect joins a past action to the present. The word already is a common signal for it."
+        },
+        {
+          "prompt": "While I ____ , the telephone rang.",
+          "options": ["cook", "was cooking", "have cooked", "cooks"],
+          "answer": 1,
+          "explanation": "Use the past continuous for the longer action that was already going on, and the simple past for the shorter action that interrupted it."
+        },
+        {
+          "prompt": "She ____ in Kandy since 2015.",
+          "options": ["lives", "lived", "has lived", "is living"],
+          "answer": 2,
+          "explanation": "Since names a starting point in the past and the situation continues, so the present perfect is used."
+        },
+        {
+          "prompt": "We ____ the museum last Friday.",
+          "options": ["visit", "visited", "have visited", "are visiting"],
+          "answer": 1,
+          "explanation": "Last Friday is a finished time, so the simple past is correct. Do not use the present perfect with a finished time expression."
+        },
+        {
+          "prompt": "By the time we arrived, the film ____ .",
+          "options": ["started", "has started", "had started", "starts"],
+          "answer": 2,
+          "explanation": "The past perfect shows which of two past actions happened first. The film started before you arrived."
+        },
+        {
+          "prompt": "If it rains tomorrow, we ____ the match.",
+          "options": ["cancel", "will cancel", "cancelled", "would cancel"],
+          "answer": 1,
+          "explanation": "In the first conditional the if-clause uses the simple present and the main clause uses will."
+        },
+        {
+          "prompt": "The results ____ next week.",
+          "options": ["will announce", "will be announced", "announced", "have announced"],
+          "answer": 1,
+          "explanation": "The results do not announce anything; something is done to them, so the passive will be announced is needed."
+        },
+        {
+          "prompt": "He ____ television when his father came home.",
+          "options": ["watched", "watches", "was watching", "has watched"],
+          "answer": 2,
+          "explanation": "The past continuous describes the action in progress; the simple past came describes the shorter action that broke into it."
+        }
+      ]
+    },
+
+    {
+      "id": "grammar-prepositions-1",
+      "type": "mcq",
+      "title": "Prepositions: in, on, at and the rest",
+      "description": "Eight questions on prepositions of time, place and movement.",
+      "page": "ol-english/grammar/",
+      "keywords": "prepositions in on at grammar quiz",
+      "questions": [
+        {
+          "prompt": "The examination begins ____ 8.30 in the morning.",
+          "options": ["in", "on", "at", "from"],
+          "answer": 2,
+          "explanation": "Use at with a clock time: at 8.30, at noon, at midnight."
+        },
+        {
+          "prompt": "My birthday is ____ May.",
+          "options": ["at", "in", "on", "by"],
+          "answer": 1,
+          "explanation": "Use in with months, seasons and years: in May, in December, in 2026."
+        },
+        {
+          "prompt": "We have a test ____ Monday.",
+          "options": ["in", "at", "on", "to"],
+          "answer": 2,
+          "explanation": "Use on with days and dates: on Monday, on 15 March."
+        },
+        {
+          "prompt": "She is very good ____ mathematics.",
+          "options": ["in", "at", "on", "with"],
+          "answer": 1,
+          "explanation": "Good at is a fixed pairing. We say good at a subject or a skill."
+        },
+        {
+          "prompt": "Please listen ____ the instructions carefully.",
+          "options": ["at", "on", "to", "for"],
+          "answer": 2,
+          "explanation": "Listen is followed by to when there is an object: listen to the teacher, listen to music."
+        },
+        {
+          "prompt": "The book is ____ the shelf.",
+          "options": ["on", "in", "at", "into"],
+          "answer": 0,
+          "explanation": "Use on for a surface. The shelf is a flat surface, so the book rests on it."
+        },
+        {
+          "prompt": "He has been waiting ____ two hours.",
+          "options": ["since", "for", "from", "during"],
+          "answer": 1,
+          "explanation": "Use for with a length of time (for two hours) and since with a starting point (since ten o'clock)."
+        },
+        {
+          "prompt": "I apologised ____ being late.",
+          "options": ["of", "on", "for", "about"],
+          "answer": 2,
+          "explanation": "Apologise for is the usual pairing: apologise for a mistake, apologise for being late."
+        }
+      ]
+    },
+
+    {
+      "id": "gap-articles-1",
+      "type": "gap",
+      "title": "Articles: a, an and the",
+      "description": "Type the missing article in each space.",
+      "page": "ol-english/grammar/",
+      "keywords": "articles a an the fill in the blank",
+      "questions": [
+        {
+          "sentence": "My father is ____ engineer.",
+          "answer": "an",
+          "hint": "The next word begins with a vowel sound.",
+          "explanation": "Use an before a vowel sound: an engineer, an hour, an umbrella."
+        },
+        {
+          "sentence": "She bought ____ new bicycle yesterday.",
+          "answer": "a",
+          "explanation": "Use a before a consonant sound, and when the thing is mentioned for the first time."
+        },
+        {
+          "sentence": "____ sun rises in the east.",
+          "answer": ["the", "The"],
+          "explanation": "Use the before something there is only one of, such as the sun, the moon and the sky."
+        },
+        {
+          "sentence": "I waited for ____ hour at the bus stand.",
+          "answer": "an",
+          "hint": "Listen to the sound, not the letter.",
+          "explanation": "Hour begins with the letter h, but the h is silent, so the word starts with a vowel sound and takes an."
+        },
+        {
+          "sentence": "He is ____ most careful student in the class.",
+          "answer": ["the", "The"],
+          "explanation": "Superlatives take the: the most careful, the best, the tallest."
+        },
+        {
+          "sentence": "We saw ____ elephant near the tank. ",
+          "answer": "an",
+          "explanation": "Elephant begins with a vowel sound, so an is used."
+        },
+        {
+          "sentence": "Colombo is ____ capital of Sri Lanka.",
+          "answer": ["the", "The"],
+          "explanation": "There is only one capital, so the is used."
+        },
+        {
+          "sentence": "Would you like ____ cup of tea?",
+          "answer": "a",
+          "explanation": "One of several cups, mentioned for the first time, so a is correct."
+        }
+      ]
+    },
+
+    {
+      "id": "gap-verb-forms-1",
+      "type": "gap",
+      "title": "Verb forms: putting the verb in the right shape",
+      "description": "Write the correct form of the verb given in brackets.",
+      "page": "ol-english/grammar/",
+      "keywords": "verb forms tenses fill in the blank practice",
+      "questions": [
+        {
+          "sentence": "The children ____ (play) in the garden now.",
+          "answer": ["are playing"],
+          "hint": "Something happening at this moment.",
+          "explanation": "The word now signals the present continuous: are playing."
+        },
+        {
+          "sentence": "Water ____ (boil) at 100 degrees Celsius.",
+          "answer": ["boils"],
+          "explanation": "A general truth takes the simple present. With water (it), the verb takes -s."
+        },
+        {
+          "sentence": "I ____ (not see) him since Tuesday.",
+          "answer": ["have not seen", "haven't seen", "have not seen him"],
+          "explanation": "Since points to a starting time and the situation continues, so the present perfect is used."
+        },
+        {
+          "sentence": "They ____ (finish) the work before the rain started.",
+          "answer": ["had finished"],
+          "explanation": "The past perfect shows the action that happened first of two past actions."
+        },
+        {
+          "sentence": "The letter ____ (write) by the principal.",
+          "answer": ["was written", "is written"],
+          "explanation": "The letter did not write anything, so the passive is needed: was written by the principal."
+        },
+        {
+          "sentence": "She enjoys ____ (read) detective stories.",
+          "answer": ["reading"],
+          "explanation": "After enjoy, the verb takes the -ing form: enjoy reading, enjoy swimming."
+        }
+      ]
+    },
+
+    {
+      "id": "order-sentences-1",
+      "type": "order",
+      "title": "Sentence ordering: building a correct sentence",
+      "description": "Put the parts in the right order to make a correct English sentence.",
+      "page": "ol-english/grammar/",
+      "keywords": "sentence order word order syntax activity",
+      "questions": [
+        {
+          "prompt": "Make a correct sentence:",
+          "parts": ["My younger sister", "goes", "to the library", "every Saturday"],
+          "explanation": "English usually follows subject, verb, object or place, then time."
+        },
+        {
+          "prompt": "Make a correct sentence:",
+          "parts": ["The principal", "has already", "informed", "the parents"],
+          "explanation": "Already comes between the auxiliary verb has and the main verb informed."
+        },
+        {
+          "prompt": "Make a correct question:",
+          "parts": ["How long", "have you", "been waiting", "at the bus stand?"],
+          "explanation": "Question word, then auxiliary, then subject, then the rest of the verb."
+        },
+        {
+          "prompt": "Make a correct sentence:",
+          "parts": ["Although it was raining heavily,", "the students", "reached the school", "on time"],
+          "explanation": "A sentence that begins with although needs a complete main clause after the comma."
+        },
+        {
+          "prompt": "Make a correct sentence:",
+          "parts": ["If you revise regularly,", "you will", "remember", "much more"],
+          "explanation": "In the first conditional the if-clause comes first, followed by a comma and the will-clause."
+        }
+      ]
+    },
+
+    {
+      "id": "vocab-match-1",
+      "type": "match",
+      "title": "Everyday vocabulary: match the word to its meaning",
+      "description": "Ten useful words that appear often in reading passages and in daily life.",
+      "page": "general-english/vocabulary/",
+      "keywords": "vocabulary meaning matching everyday words",
+      "pairs": [
+        { "term": "postpone", "meaning": "to move something to a later time" },
+        { "term": "reliable", "meaning": "able to be trusted to do what is expected" },
+        { "term": "shortage", "meaning": "a situation in which there is not enough of something" },
+        { "term": "encourage", "meaning": "to give someone confidence or support to do something" },
+        { "term": "expensive", "meaning": "costing a lot of money" },
+        { "term": "generous", "meaning": "willing to give more than is usual or expected" },
+        { "term": "urgent", "meaning": "needing attention immediately" },
+        { "term": "improve", "meaning": "to become better, or to make something better" },
+        { "term": "permanent", "meaning": "lasting for a long time, not temporary" },
+        { "term": "reduce", "meaning": "to make something smaller in size or amount" }
+      ]
+    },
+
+    {
+      "id": "vocab-match-literature-1",
+      "type": "match",
+      "title": "Literary terms: match the term to its meaning",
+      "description": "The terms students are most often asked to name and explain in Literature answers.",
+      "page": "ol-literature/literary-techniques/",
+      "keywords": "literary terms simile metaphor imagery matching literature",
+      "pairs": [
+        { "term": "simile", "meaning": "a comparison of two different things using like or as" },
+        { "term": "metaphor", "meaning": "a comparison that speaks of one thing as though it actually were another" },
+        { "term": "personification", "meaning": "giving human qualities or actions to something that is not human" },
+        { "term": "imagery", "meaning": "language that appeals to the senses and creates a picture in the mind" },
+        { "term": "alliteration", "meaning": "the repetition of the same consonant sound at the start of nearby words" },
+        { "term": "irony", "meaning": "a contrast between what is said or expected and what is actually the case" },
+        { "term": "symbol", "meaning": "an object or action that stands for a larger idea beyond itself" },
+        { "term": "soliloquy", "meaning": "a speech in which a character alone on stage reveals their thoughts" },
+        { "term": "stanza", "meaning": "a group of lines in a poem, separated from other groups" },
+        { "term": "theme", "meaning": "a central idea about life that a work explores" }
+      ]
+    },
+
+    {
+      "id": "reading-1",
+      "type": "reading",
+      "title": "Reading comprehension: The village library",
+      "description": "Read the passage, then answer the six questions. This is the kind of passage used in Paper I.",
+      "page": "ol-english/reading-comprehension/",
+      "keywords": "reading comprehension passage questions practice",
+      "passageTitle": "The village library",
+      "passage": [
+        "For many years the small village of Weliketiya had no library of its own. The nearest one was in the town, eleven kilometres away, and the bus that went there ran only twice a day. Children who wanted a book to read outside their school textbooks had to depend on the few volumes their teachers were able to lend them.",
+        "In 2019 a retired postmaster named Mr Alwis offered the front room of his house to the village. He had a large table, four chairs and, most importantly, patience. Villagers were asked to give any books they could spare. Within three months more than six hundred books had been collected, and the room was opened every evening from four o'clock until seven.",
+        "The library was not run by anybody official. Mr Alwis kept a simple notebook in which borrowers wrote their name, the title of the book and the date. There were no fines. If a book came back late, he said nothing; if it did not come back at all, he wrote the title on a separate page and hoped that one day it would return. Surprisingly, most books did.",
+        "What changed the village was not the number of books but the habit. Children who had never owned a story book began to read one every week. Parents who had left school early came in the evenings and borrowed simple books in English. Two of the older students began reading aloud to the youngest children on Saturday mornings, and that arrangement continues today."
+      ],
+      "questions": [
+        {
+          "prompt": "Before 2019, why was it difficult for the children of Weliketiya to borrow books?",
+          "options": [
+            "The village library was closed for repairs.",
+            "The nearest library was far away and the bus was infrequent.",
+            "The children were not allowed to join the town library.",
+            "Their teachers refused to lend them books."
+          ],
+          "answer": 1,
+          "explanation": "The first paragraph says the nearest library was eleven kilometres away and the bus ran only twice a day."
+        },
+        {
+          "prompt": "What did Mr Alwis give to the village?",
+          "options": [
+            "Six hundred books from his own collection",
+            "Money to build a library building",
+            "The front room of his house, and his time",
+            "A bus service to the town library"
+          ],
+          "answer": 2,
+          "explanation": "He offered the front room of his house, together with a table, chairs and patience. The books came from the villagers."
+        },
+        {
+          "prompt": "How were the books collected?",
+          "options": [
+            "They were bought with money raised in the village.",
+            "They were sent by the town library.",
+            "Villagers gave books they could spare.",
+            "The school donated its old textbooks."
+          ],
+          "answer": 2,
+          "explanation": "The second paragraph states that villagers were asked to give any books they could spare."
+        },
+        {
+          "prompt": "What does the writer suggest about Mr Alwis's way of running the library?",
+          "options": [
+            "It was strict and carefully controlled.",
+            "It was trusting and informal.",
+            "It was expensive to maintain.",
+            "It was unpopular with the villagers."
+          ],
+          "answer": 1,
+          "explanation": "There were no fines, records were kept in a simple notebook, and late books were met with silence. This shows a trusting, informal manner."
+        },
+        {
+          "prompt": "According to the last paragraph, what mattered most about the library?",
+          "options": [
+            "The size of the collection",
+            "The reading habit it created",
+            "The money it saved the village",
+            "The fact that it was free"
+          ],
+          "answer": 1,
+          "explanation": "The writer says plainly that what changed the village was not the number of books but the habit."
+        },
+        {
+          "prompt": "Which word in the passage means 'happening or existing without an official arrangement'?",
+          "options": ["retired", "spare", "official", "informal"],
+          "answer": 3,
+          "explanation": "Informal is the word that matches this meaning. The passage tells us the library was not run by anybody official."
+        }
+      ]
+    },
+
+    {
+      "id": "literature-terms-1",
+      "type": "mcq",
+      "title": "Literature: naming the technique",
+      "description": "Eight questions asking you to name the technique a writer has used. Naming the technique correctly is the first step in every good Literature answer.",
+      "page": "ol-literature/literary-techniques/",
+      "keywords": "literary techniques simile metaphor quiz literature",
+      "questions": [
+        {
+          "prompt": "'The classroom was as quiet as a temple at dawn.' Which technique is used?",
+          "options": ["Metaphor", "Simile", "Personification", "Irony"],
+          "answer": 1,
+          "explanation": "The comparison uses the word as, so it is a simile. A metaphor would say the classroom was a temple."
+        },
+        {
+          "prompt": "'The wind pushed open the door and walked into the room.' Which technique is used?",
+          "options": ["Personification", "Alliteration", "Simile", "Symbol"],
+          "answer": 0,
+          "explanation": "The wind is given the human actions of pushing and walking, so this is personification."
+        },
+        {
+          "prompt": "'Silent shadows slipped across the sand.' Which technique is most obvious?",
+          "options": ["Metaphor", "Irony", "Alliteration", "Soliloquy"],
+          "answer": 2,
+          "explanation": "The s sound is repeated at the start of several nearby words, which is alliteration."
+        },
+        {
+          "prompt": "A fire officer's own house burns down. In literary terms this is an example of:",
+          "options": ["Imagery", "Irony", "Metaphor", "Symbol"],
+          "answer": 1,
+          "explanation": "There is a sharp contrast between what we would expect and what actually happens, which is irony."
+        },
+        {
+          "prompt": "A character alone on stage speaks his private thoughts aloud to the audience. This is a:",
+          "options": ["Dialogue", "Monologue between characters", "Soliloquy", "Chorus"],
+          "answer": 2,
+          "explanation": "A soliloquy is spoken by a character who is alone, revealing thoughts the other characters do not hear."
+        },
+        {
+          "prompt": "'Her hands were rough maps of forty harvests.' Which technique is used?",
+          "options": ["Simile", "Metaphor", "Alliteration", "Rhyme"],
+          "answer": 1,
+          "explanation": "The hands are spoken of as though they actually were maps, with no like or as, so it is a metaphor."
+        },
+        {
+          "prompt": "In a story, a broken watch that the father keeps for thirty years stands for time that cannot be recovered. The watch is being used as a:",
+          "options": ["Symbol", "Simile", "Setting", "Narrator"],
+          "answer": 0,
+          "explanation": "An object that stands for a larger idea beyond itself is a symbol."
+        },
+        {
+          "prompt": "Which of these best defines a theme?",
+          "options": [
+            "The order in which events happen",
+            "The place where the story is set",
+            "A central idea about life that the work explores",
+            "The person telling the story"
+          ],
+          "answer": 2,
+          "explanation": "A theme is an idea about life, such as loss, duty or the cost of ambition. The order of events is plot; the place is setting; the person telling it is the narrator."
+        }
+      ]
+    },
+
+    {
+      "id": "error-correction-1",
+      "type": "error",
+      "title": "Error correction: find the mistake and put it right",
+      "description": "Each sentence has one mistake. Rewrite the whole sentence correctly.",
+      "page": "ol-english/common-mistakes/",
+      "keywords": "error correction common mistakes grammar editing",
+      "questions": [
+        {
+          "sentence": "She don't like cold weather.",
+          "answer": ["She doesn't like cold weather", "She does not like cold weather"],
+          "explanation": "With he, she or it, the negative is doesn't, not don't."
+        },
+        {
+          "sentence": "I am living here since 2018.",
+          "answer": ["I have lived here since 2018", "I have been living here since 2018"],
+          "explanation": "Since with a continuing situation needs the present perfect, not the present continuous."
+        },
+        {
+          "sentence": "He is more taller than his brother.",
+          "answer": ["He is taller than his brother"],
+          "explanation": "Do not use more together with an -er comparative. Taller is already the comparative form."
+        },
+        {
+          "sentence": "The informations you gave me were useful.",
+          "answer": [
+            "The information you gave me was useful",
+            "The information you gave me was very useful"
+          ],
+          "explanation": "Information is uncountable. It has no plural and takes a singular verb."
+        },
+        {
+          "sentence": "We discussed about the problem yesterday.",
+          "answer": ["We discussed the problem yesterday"],
+          "explanation": "Discuss is followed directly by its object. Do not add about."
+        },
+        {
+          "sentence": "Every students must bring a pen.",
+          "answer": ["Every student must bring a pen"],
+          "explanation": "Every is followed by a singular noun: every student, every day, every question."
+        },
+        {
+          "sentence": "He asked me where do I live.",
+          "answer": ["He asked me where I live", "He asked me where I lived"],
+          "explanation": "In reported questions the word order returns to normal statement order, and do is dropped."
+        },
+        {
+          "sentence": "I look forward to hear from you.",
+          "answer": ["I look forward to hearing from you"],
+          "explanation": "In look forward to, the word to is a preposition, so the verb after it takes the -ing form."
+        }
+      ]
+    }
+  ]
+}

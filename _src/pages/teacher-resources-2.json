@@ -1,0 +1,662 @@
+{
+  "pages": [
+    {
+      "slug": "teacher-resources/guided-writing",
+      "title": "Guided Writing for Teachers",
+      "description": "How to teach writing so that weaker learners can succeed: the six-step sequence, how to withdraw support gradually, and the mistakes that keep weak writers weak.",
+      "keywords": "teaching guided writing, scaffolding, writing instruction, withdrawing support",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "The commonest way to teach writing badly is to set the task and mark the result. The student who could already write does well; the one who could not learns that they cannot." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The principle",
+          "text": [
+            "Guided writing means that the support is **real at the beginning** and **withdrawn deliberately**, step by step, until the student is writing unaided.",
+            "The withdrawal is the part that is usually missed. Support that is never removed produces students who can only write with a frame in front of them; support that is never given produces students who cannot start."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The six steps, and what the teacher does in each",
+          "variant": "navy",
+          "items": [
+            { "title": "Understand the task", "text": ["**Teacher:** ask four questions and require answers — what form, which reader, what purpose, what length. Do not accept nods. A student who cannot state the task cannot do it."] },
+            { "title": "Study a model", "text": ["**Teacher:** provide a good example and read it with the class twice — once for content, once for construction. Resist explaining; ask the class what they notice."] },
+            { "title": "Identify the structure", "text": ["**Teacher:** have the class label the parts of the model physically. The labelled skeleton, not the words, is what transfers to the next task."] },
+            { "title": "Complete guided steps", "text": ["**Teacher:** set partial tasks — order the jumbled parts, complete the frame, write one paragraph only. This is where the lesson time should mostly go."] },
+            { "title": "Write independently", "text": ["**Teacher:** remove the model and the frame. To time. This is step five, not step one, and only now do you find out what has been learnt."] },
+            { "title": "Correction checklist", "text": ["**Teacher:** provide the checklist and require self-correction **before** collecting the work. Students who mark their own work first hand in better work and read your comments more carefully."] }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Withdrawing support across a term",
+          "variant": "tint",
+          "caption": "The same writing form, taught over five lessons. Notice how the support decreases.",
+          "columns": ["Lesson", "What the student is given", "What the student produces"],
+          "rows": [
+            ["1", "A complete model, plus questions on it", "Nothing written — understanding only"],
+            ["2", "The model, cut into parts", "The parts in the correct order, labelled"],
+            ["3", "A frame with headings and half-written sentences", "The missing content"],
+            ["4", "A plan with paragraph headings only", "The full piece"],
+            ["5", "The question alone, to time", "The full piece, unaided"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Four mistakes that keep weak writers weak",
+          "bullets": [
+            "**Setting the task cold.** *Write a letter of complaint. You have thirty minutes.* This measures; it does not teach.",
+            "**Correcting everything.** A script covered in red produces no change and confirms the student's belief about themselves. Choose one fault.",
+            "**Never withdrawing the frame.** A student who has only ever written with a frame will fail the moment it is absent — which is in the examination.",
+            "**Marking without requiring a rewrite.** A correction that is read and not acted on is forgotten by the next lesson. Require one paragraph rewritten, and check it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to do with the collected work",
+          "numbered": [
+            "**Read five scripts before marking any.** The class's common fault will become obvious, and you can teach it once instead of writing it thirty times.",
+            "**Teach the common fault to the whole class**, before returning the scripts.",
+            "**Then mark individually, one comment each** — one fault, written as an instruction rather than a diagnosis. Not *needs development* but *add one sentence after each example beginning 'This shows that…'*",
+            "**Give the mark, and say what would raise it.** *12. To reach 15, put the date on the notice and keep the sentences shorter.*",
+            "**Require one paragraph rewritten**, and look at it. This is the step that produces the improvement."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Student-facing pages you can use in class",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Open" },
+            { "title": "Notices", "url": "ol-english/notices/", "more": "Open" },
+            { "title": "Emails", "url": "ol-english/emails/", "more": "Open" },
+            { "title": "Letters", "url": "ol-english/letters/", "more": "Open" },
+            { "title": "Paragraph Writing", "url": "ol-english/paragraph-writing/", "more": "Open" },
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
+            { "title": "Picture Description", "url": "ol-english/picture-description/", "more": "Open" },
+            { "title": "Model Questions", "url": "ol-english/model-questions/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/literature-teaching",
+      "title": "Literature Teaching",
+      "description": "How to teach English Literature so that students argue rather than retell: reading a text with a class, teaching analysis, and preventing memorised answers.",
+      "keywords": "teaching literature, poetry teaching, drama in class, analysis, close reading",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "The great danger in Literature teaching is that students memorise your reading instead of learning to produce their own." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The dictated-notes problem",
+          "text": [
+            "It is quick, it feels productive, and it is understandable under syllabus pressure: dictate the themes, the characters and a model answer, and move on.",
+            "The result is a class that can reproduce your reading and cannot handle a question worded differently. And examination questions are always worded differently.",
+            "The alternative takes longer per text but produces students who can answer any question — which is faster overall, because it removes the need to prepare a memorised answer for every possible question."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Teaching a text with a class",
+          "variant": "tint",
+          "items": [
+            { "title": "Read it whole, first, without stopping", "text": ["Read it, or have it read, straight through. Analysis before the class knows the ending is analysis of the wrong things."] },
+            { "title": "Establish what happens before what it means", "text": ["A one-line summary of each scene or chapter, produced by the class, not given to them. It takes one lesson and it becomes their revision document."] },
+            { "title": "Teach one moment closely", "text": ["Take one passage and spend a whole lesson on it. What is the effect of this word? Why is this placed here? Students learn the method from one thorough demonstration far better than from ten summaries."] },
+            { "title": "Ask them to find, not to receive", "text": ["*Find three moments that show the father's pride.* Then compare what different students chose and argue about which is strongest. The arguing is the teaching."] },
+            { "title": "Build answers together, on the board", "text": ["Point, evidence, explanation, effect, link — written up sentence by sentence with the class supplying each part."] },
+            { "title": "Then let them disagree with you", "text": ["Invite a reading that opposes yours and require evidence for it. A class that has argued about a text can answer any question on it."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Practical techniques",
+          "items": [
+            { "q": "For poetry", "bullets": ["Read aloud twice before any discussion, and have students read too.", "Ask *where does the poem turn?* before asking what it means.", "Give a poem with the last stanza removed; ask students to predict it, then compare. This teaches more about structure than any explanation.", "Ban the word *nice*, and ban *the poet uses imagery* without a following sentence."] },
+            { "q": "For drama", "bullets": ["Stand it up. Two students, two chairs, one exchange. What an audience sees becomes obvious immediately.", "Ask *who is on stage and silent?* — it is the question students never think to ask.", "Play a scene twice with different staging and ask what changed.", "Insist on *the audience* rather than *the reader* in all written work."] },
+            { "q": "For fiction", "bullets": ["Track one character across the text on a single sheet: where they start, what changes them, where they end.", "Compare the first page and the last page. This exercise answers a great many essay questions.", "Ask *who is telling us this, and do we trust them?* early and often."] },
+            { "q": "For all texts", "bullets": ["Ten quotations per text, chosen for usefulness, learnt aloud.", "One full essay per text, timed, marked properly, one paragraph rewritten.", "Mark a specimen answer as a class — students who have marked once write differently afterwards."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "variant": "tint",
+          "title": "Accuracy matters especially here",
+          "text": [
+            "Never give a class a quotation you have not checked, a biographical fact you are not sure of, or a critical view you cannot source. Students reproduce what teachers say, in examinations, with confidence.",
+            "*It has often been argued that…* is honest and sufficient. An invented critic or a misremembered quotation is passed on to forty students at once."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Student-facing pages you can use in class",
+          "columns": "4",
+          "items": [
+            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
+            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Literary techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
+            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
+            { "title": "Characters", "url": "ol-literature/characters/", "more": "Open" },
+            { "title": "Revision activities", "url": "ol-literature/revision-activities/", "more": "Open" },
+            { "title": "How teachers can mark answers", "url": "ol-literature/marking-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/assessment",
+      "title": "Assessment",
+      "description": "Assessing English usefully: what to assess and how often, quick checks that take two minutes, and the difference between assessment that measures and assessment that teaches.",
+      "keywords": "assessment, formative assessment, testing English, checking understanding",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Most assessment measures. The useful kind changes what you do next — and it usually takes two minutes, not a period." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Two kinds, and the ratio between them",
+          "parts": [
+            { "heading": "Assessment that measures", "text": ["Term tests, examinations, marks and grades. Necessary, reported, and largely too late to act on. It tells you what happened."] },
+            { "heading": "Assessment that teaches", "text": ["The two-minute check in the middle of a lesson that tells you whether to move on or to explain again. It costs almost nothing and it changes the next ten minutes.", "**Most classrooms do far too much of the first and almost none of the second.**"] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Quick checks that take two minutes",
+          "variant": "tint",
+          "items": [
+            { "q": "Show me", "a": ["*Hold up one finger if this sentence is correct, two if it is wrong.* Read four sentences. In ninety seconds you know exactly how many of the class have understood — and, crucially, **which** ones."] },
+            { "q": "The exit sentence", "a": ["In the last two minutes: *Write one sentence using the present perfect on a slip of paper. Put it on my table as you leave.* You read forty slips in five minutes and you know precisely where to start next lesson."] },
+            { "q": "Explain it to your partner", "a": ["*Tell your partner in your own words when we use 'since' and when we use 'for'.* Walk round and listen. What they say to each other is a truer measure than what they say to you."] },
+            { "q": "The deliberate error", "a": ["Write a sentence on the board containing the error you have just taught against. *Is this right?* The class's reaction tells you immediately whether it landed."] },
+            { "q": "Traffic lights", "a": ["*Put your hand flat on the desk if you are confident, on its side if you are unsure, in a fist if you are lost.* Less exposing than raising a hand, and far more honest."] },
+            { "q": "One-minute paper", "a": ["At the end of a topic: *What is the most important thing you learnt? What is still unclear?* Two lines. It takes ten minutes to read a class set and often reveals a misunderstanding you had no idea existed."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Designing a test that is worth setting",
+          "numbered": [
+            "**Test what you taught.** A test containing material not covered measures memory of the textbook, not learning.",
+            "**Include some easy items.** A test on which the weakest students score nothing tells you nothing about them and teaches them only that they are hopeless.",
+            "**Include some demanding items.** A test everyone completes easily tells you nothing about the strongest.",
+            "**Test skills, not only facts.** *Write a notice* tells you more than *list the five parts of a notice*.",
+            "**Mark it quickly.** A test returned three weeks later has lost most of its value; the students have moved on and cannot remember what they were thinking.",
+            "**Teach from the results.** Take the ten minutes to go through the two commonest errors with the whole class. Without that, the test was measurement only."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "The most useful record you can keep",
+          "text": [
+            "Not a mark book — a list of **each student's one recurring fault**. One line per student.",
+            "At the next piece of work, look for that fault first, and tell the student whether it has improved. A student who sees that you remembered their particular difficulty takes your comment far more seriously than any mark.",
+            "It takes one page and it changes how marking feels for both of you."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Marking Guides", "url": "teacher-resources/marking-guides/", "more": "Open" },
+            { "title": "Answer Development", "url": "teacher-resources/answer-development/", "more": "Open" },
+            { "title": "Revision Strategies", "url": "teacher-resources/revision-strategies/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/marking-guides",
+      "title": "Marking Guides",
+      "description": "How to mark English written work so that students improve: what to mark, what to ignore, how to word a comment, and how to get through a class set in a reasonable time.",
+      "keywords": "marking guides, marking English, feedback, correcting written work",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "scripts": ["browse"],
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Marking everything produces no improvement and takes all weekend. Marking one thing produces improvement and takes an evening." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Why heavy marking fails",
+          "text": [
+            "A script returned covered in red is not read; it is glanced at and put away. The student sees a page of failure, not a set of instructions, and there are too many corrections to act on any of them.",
+            "The teacher, meanwhile, has spent four hours producing this effect.",
+            "The remedy is not to care less. It is to mark **selectively and instructively**: choose the fault that is costing the most marks, explain the remedy as an action, and require one rewrite."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "A marking method",
+          "variant": "tint",
+          "items": [
+            { "title": "Read five scripts before marking any", "text": ["The class's common fault emerges immediately. You can then teach it once to everybody instead of writing it thirty times."] },
+            { "title": "Teach the common fault before returning the work", "text": ["Fifteen minutes of teaching replaces thirty individual comments, and it is better teaching because it is public and can be discussed."] },
+            { "title": "Underline the best sentence and write 'This.'", "text": ["Students genuinely do not know which of their own sentences was good. Showing them is the fastest way to get more of it, and it changes the emotional temperature of the whole script."] },
+            { "title": "Choose one fault to correct", "text": ["The one costing the most marks. Ignore the rest this time — they will have their turn."] },
+            { "title": "Write the remedy as an instruction", "text": ["Not *develop your ideas* but *after each example, add one sentence beginning 'This shows that…'* The student can act on the second one tomorrow."] },
+            { "title": "Give the mark and the route to a better one", "text": ["*14. To reach 16, begin each paragraph with a point rather than an event.*"] },
+            { "title": "Require one paragraph rewritten", "text": ["Not the whole piece. One paragraph, and look at it. This is where the improvement actually occurs."] }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Comments that work, and comments that do not",
+          "columns": ["Instead of", "Write", "Because"],
+          "rows": [
+            ["Develop!", "Add one sentence after each example beginning \"This shows that…\"", "The second is an action, not a diagnosis"],
+            ["Vague", "Which word in the quotation tells you this?", "A question requires an answer, and answering is the work"],
+            ["Grammar!", "Check every verb: does it match its subject?", "It says what to do and where to look"],
+            ["Good", "Your second paragraph is your strongest — you explained the effect", "Specific praise can be repeated deliberately"],
+            ["Too short", "You made three points. Choose the strongest and give it five sentences", "It converts quantity into a method"],
+            ["Not relevant", "Read the question again. Does this paragraph answer it?", "It makes the student diagnose, which teaches"],
+            ["Wrong", "This is nearly right. What happens to the verb after \"did\"?", "It preserves the student's willingness to try"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A simple marking code",
+          "variant": "tint",
+          "text": [
+            "Marking symbols in the margin rather than corrections in the text force the student to find and fix the error themselves — which is the point.",
+            "Teach the code once, put it on the wall, and use it consistently."
+          ],
+          "bullets": [
+            "**sp** — spelling",
+            "**gr** — grammar",
+            "**T** — wrong tense",
+            "**WW** — wrong word",
+            "**WO** — word order",
+            "**P** — punctuation",
+            "**^** — something is missing",
+            "**//** — start a new paragraph here",
+            "**?** — I do not understand this sentence",
+            "**✓** — this is good (use it as often as the others)"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Getting through a class set",
+          "bullets": [
+            "**Set a time per script and keep to it.** Four minutes. A timer helps more than willpower.",
+            "**Do not mark every piece of written work in full.** Some work can be self-corrected against a checklist, some peer-marked, some collected and skimmed for the common fault only. Full marking three times a term, done properly, beats weekly marking done exhaustedly.",
+            "**Require self-correction before collection.** Students who have checked their own work against a checklist hand in better work, and you spend your time on things that matter."
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "Downloadable marking guidance",
+          "source": "resources",
+          "fixed": { "subcategory": "marking" },
+          "filters": ["subject", "level", "type"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "How teachers can mark Literature answers", "url": "ol-literature/marking-answers/", "more": "Open" },
+            { "title": "Answer Development", "url": "teacher-resources/answer-development/", "more": "Open" },
+            { "title": "Assessment", "url": "teacher-resources/assessment/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/answer-development",
+      "title": "Answer Development",
+      "description": "How to teach students to develop an answer rather than stopping after one sentence: the five-part structure, classroom techniques and a fortnightly drill that works.",
+      "keywords": "answer development, teaching PEE, developing answers, extended writing",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "The commonest reason for a low mark in a written answer is not error. It is that the answer stopped after the first sentence." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What students are actually failing to do",
+          "text": [
+            "Asked how a writer presents a character, a student writes *The writer shows that he is proud.* Correct, and worth almost nothing.",
+            "They are not failing to understand. They are failing to say **where** it is shown, **how** the writing shows it, and **what difference** it makes. Those are three separate sentences, and no student produces them by being told to *develop*.",
+            "The remedy is to teach the structure explicitly, practise it in isolation, and require it until it becomes automatic."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Teaching the five parts",
+          "variant": "tint",
+          "items": [
+            { "title": "Name them, on the board, permanently", "text": ["Point, evidence, explanation, effect, link. Write them on a poster and leave them up all year. Refer to them by name in every lesson."] },
+            { "title": "Build one paragraph together", "text": ["On the board, sentence by sentence, labelling each part as it is written. Take the content from the class. Do this several times before asking anyone to do it alone."] },
+            { "title": "Give four parts, ask for one", "text": ["Supply the point, evidence, explanation and link; ask only for the effect sentence. Then vary which part is missing. This isolates the difficulty."] },
+            { "title": "Give the point and evidence only", "text": ["Students supply explanation, effect and link. This is the stage most classes can reach within a fortnight."] },
+            { "title": "Give the question only", "text": ["The whole paragraph, unaided."] },
+            { "title": "Then require it every time", "text": ["A paragraph without evidence, or without an effect sentence, goes back. Consistency is what turns a technique into a habit."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Classroom techniques",
+          "items": [
+            { "q": "The five-sentence drill", "a": ["Take any one-sentence answer — a student's own, from a previous piece of work — and rewrite it as five sentences, one per part. Ten minutes, twice a week.", "It is repetitive and slightly dull, and it is the most reliable way to raise written answers that exists. Most classes show a visible difference within a month."] },
+            { "q": "The effect auction", "a": ["Give the class a quotation. Each student writes one sentence beginning *The effect on the reader is…* Read several aloud; the class decides which is most precise and why.", "Arguing about precision teaches more than being given a precise example."] },
+            { "q": "Highlight the parts", "a": ["Give students a strong model paragraph and five colours. They mark point, evidence, explanation, effect and link.", "When a colour is missing from their own work, they can see it. This is far more effective than being told the sentence is absent."] },
+            { "q": "Paragraph relay", "a": ["In fours, each student writes one part and passes the paper on. Then the group reads the result and discusses the joins.", "It makes the structure physical, and the awkward joins are the lesson."] },
+            { "q": "The 'but' sentence", "a": ["For older students: require one sentence per paragraph beginning *It would be possible to read this as… but…*", "This single requirement turns description into argument and is the largest available improvement at Advanced Level."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Sentence starters to display",
+          "variant": "tint",
+          "text": ["Put these on the wall. Students use them until they no longer need them, which is exactly the right relationship to have with a scaffold."],
+          "parts": [
+            { "heading": "Point", "bullets": ["The writer presents…", "The poet suggests that…", "At this moment the play shows…"] },
+            { "heading": "Evidence", "bullets": ["This is shown when…", "The phrase \"…\" indicates…"] },
+            { "heading": "Explanation", "bullets": ["The word \"…\" implies…", "By choosing to… rather than…, the writer…"] },
+            { "heading": "Effect", "bullets": ["The effect on the reader is…", "This makes the audience feel…"] },
+            { "heading": "Link", "bullets": ["This prepares us for…", "This contributes to the theme of…"] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Student-facing pages",
+          "columns": "3",
+          "items": [
+            { "title": "How to develop an answer (O/L)", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Answer development (A/L)", "url": "al-literature/answer-development/", "more": "Open" },
+            { "title": "Model answers", "url": "ol-literature/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/revision-strategies",
+      "title": "Revision Strategies",
+      "description": "How to run English revision that works: spacing, retrieval practice, revising students' own work, and what to do in the final month.",
+      "keywords": "revision strategies, exam preparation, spaced practice, retrieval, final month",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Most revision consists of rereading, which feels productive and achieves very little. Two changes fix most of it." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The two changes",
+          "numbered": [
+            "**Retrieval instead of rereading.** Getting information *out* of memory strengthens it far more than putting it in again. A student who closes the book and writes what they remember learns several times more than one who reads the page again — even though the second feels more comfortable and looks more like work.",
+            "**Spacing instead of massing.** The same total time, spread over four sessions across a fortnight, produces much better retention than one long session. Returning to a topic after you have begun to forget it is precisely what makes it stick."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Building revision into ordinary teaching",
+          "variant": "tint",
+          "intro": ["Revision does not have to wait for a revision term. These cost almost no lesson time."],
+          "items": [
+            { "title": "Start every lesson with three recall questions", "text": ["On the board before the students enter. One from last lesson, one from last week, one from last term. Five minutes, every lesson, and it is spaced retrieval practice built into the routine."] },
+            { "title": "Return to old topics deliberately", "text": ["When teaching the passive, use sentences about a topic taught two months ago. Two things are revised at once and neither costs extra time."] },
+            { "title": "Set homework on last month's work", "text": ["Not on today's. Homework on today's lesson tests short-term memory; homework on last month's builds long-term memory."] },
+            { "title": "Test little and often", "text": ["A five-question quiz every Friday, unmarked and self-corrected, does more than a long test each term."] },
+            { "title": "Make students produce, not recognise", "text": ["*Write three sentences using the present perfect* rather than *choose the correct option*. Production is retrieval; recognition mostly is not."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to do in the final month",
+          "bullets": [
+            "**Revise their own corrected work**, not new material. A student's own marked scripts are the most efficient revision documents in existence, and they are usually never looked at again.",
+            "**One complete paper a week, under real conditions**, marked and discussed.",
+            "**Rewrite one weak answer**, rather than writing new ones. Rewriting teaches; producing more does not.",
+            "**Drill the cheap marks.** Notice layout, letter closings, answering all parts of a question, checking verbs and plurals. These are marks available for attention alone, and in the final month they are the fastest gains on the paper.",
+            "**Stop introducing new material.** Anything begun in the last three weeks will not be secure by the examination and displaces revision of things that would have been.",
+            "**Talk about sleep and timing.** A tired student misreads questions, and misreading questions is the single largest cause of lost marks."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "variant": "tint",
+          "title": "Three popular revision activities that do very little",
+          "bullets": [
+            "**Copying out notes neatly.** It feels productive and is almost entirely passive. If notes must be rewritten, require them to be *condensed* — a page reduced to five lines demands real processing.",
+            "**Reading a study guide cover to cover.** Recognition is mistaken for knowledge, and the student discovers the difference in the examination.",
+            "**Long unmarked practice papers.** Doing a paper without marking it is doing the least useful half of the exercise. Better one paper marked and rewritten than four abandoned."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" },
+            { "title": "Assessment", "url": "teacher-resources/assessment/", "more": "Open" },
+            { "title": "Literature revision activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/professional-reading",
+      "title": "Professional Reading",
+      "description": "What is worth reading as an English teacher, how to find reliable material without a library, and how to use professional communities well.",
+      "keywords": "professional reading, teacher development, ELT reading, professional communities",
+      "kicker": "Teacher Resources",
+      "kind": "teacher-resource",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Teachers are given a great deal of advice and very little time. This page is about spending that little time well." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What is worth your time",
+          "text": ["Rather than listing titles that may be unavailable where you are, here are the **kinds** of reading that repay the effort, and how to judge what you find."],
+          "parts": [
+            { "heading": "Practical methodology", "text": ["Books and articles about how to teach a specific thing — writing, vocabulary, mixed-ability classes. Judge them by one test: **does it tell me what to do on Monday?** Material that only describes principles is interesting and rarely changes anything."] },
+            { "heading": "Applied linguistics, in small doses", "text": ["Understanding how second languages are actually acquired changes how you interpret your students' errors. An error is usually evidence of a developing system, not of carelessness, and that single realisation changes how a teacher marks."] },
+            { "heading": "Examiners' reports and official syllabus documents", "text": ["The most underused professional reading available. They tell you exactly what candidates did badly and why. Read them before planning a year, not after."] },
+            { "heading": "Writing about assessment and feedback", "text": ["Which is worth more than most methodology, because marking consumes more teacher time than anything else and is the part most often done in the least effective way."] },
+            { "heading": "Literature and language for their own sake", "text": ["A teacher who is still a reader teaches differently. This is not professional development in the formal sense, and it may matter more than anything that is."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Judging what you find",
+          "variant": "tint",
+          "text": ["A great deal of teaching advice circulates online, and much of it is confident and wrong. Three questions filter most of it out."],
+          "numbered": [
+            "**Does it work in a class of forty?** A great deal of published methodology assumes twelve students and a photocopier. If a technique cannot survive your actual conditions, it is not advice for you.",
+            "**Does it tell me what to do, or only what to believe?** *Learners should be at the centre of the lesson* is not actionable. *Give the class four minutes in pairs before taking any answers* is.",
+            "**Is the evidence anything more than one enthusiastic teacher?** A technique that worked once for someone else may still be worth trying. Just try it as an experiment, and judge by what happens in your own room."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Using professional communities well",
+          "text": [
+            "For many teachers, the most accessible professional development is a group of other teachers. RCF has run Facebook groups for English learning and teaching for around a decade, and exclusive Telegram and WhatsApp resource groups for English teachers. [Read about them](about/online-communities/).",
+            "Groups repay a little discipline, though:"
+          ],
+          "bullets": [
+            "**Save what you want to keep, immediately.** A worksheet shared on Monday is unreachable by Friday. Download it and file it the moment you see it.",
+            "**Ask specific questions.** *Any ideas for teaching writing?* gets nothing useful. *My Grade 10 class can write paragraphs but cannot join them — what has worked for you?* gets real answers.",
+            "**Answer other people's questions.** Explaining your own practice is the cheapest professional development there is, and it is the thing that most improves it.",
+            "**Check before you pass material on.** A worksheet with an error in it, forwarded to two hundred teachers, reaches several thousand students."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "The most valuable professional habit",
+          "text": [
+            "Keep a single page for each class: **what worked, what did not, and what I will change.** Three lines after a lesson that went unusually well or unusually badly.",
+            "After a year it is the most useful professional document you own, because it is about your students, your subject and your conditions — which no book can be."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Our online communities", "url": "about/online-communities/", "more": "Open" },
+            { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "more": "Open" },
+            { "title": "RCF Publications for teachers", "url": "teacher-resources/rcf-publications-for-teachers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/downloads",
+      "title": "Teacher Downloads",
+      "description": "All downloadable teacher resources in one filterable list: lesson plans, worksheets, teaching guides, marking guidance and revision material.",
+      "keywords": "teacher downloads, printable resources, lesson plans, worksheets",
+      "kicker": "Teacher Resources",
+      "kind": "page",
+      "scripts": ["browse"],
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Everything downloadable for teachers, in one place, with filters for subject, level, skill, lesson length and learner level." },
+      "blocks": [
+        {
+          "type": "browse",
+          "heading": "All teacher downloads",
+          "source": "resources",
+          "fixed": { "category": "teacher-resources" },
+          "filters": ["type", "subject", "level", "skill", "duration", "learnerLevel"]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "variant": "tint",
+          "title": "Using these resources",
+          "bullets": [
+            "Material created by RCF English may be **printed, copied and used freely for teaching**, with acknowledgement.",
+            "It may not be republished as your own work, sold, or included in anything sold, without written permission.",
+            "Please do not remove the attribution. It is how other teachers find the rest of the material.",
+            "See the [Terms of Use](terms/) and the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Guidance available now as pages",
+          "text": ["Every page below is complete and can be used or printed today, whether or not a downloadable file exists yet."],
+          "bullets": [
+            "[Lesson Plans](teacher-resources/lesson-plans/) — a lesson structure and four worked plans",
+            "[Worksheets](teacher-resources/worksheets/) — how to design worksheets that teach",
+            "[Teaching Guides](teacher-resources/teaching-guides/) — how to teach the difficult topics",
+            "[Classroom Activities](teacher-resources/classroom-activities/) — fifteen activities needing no materials",
+            "[Guided Writing](teacher-resources/guided-writing/) — the six-step sequence and how to withdraw support",
+            "[Marking Guides](teacher-resources/marking-guides/) — a marking method and a marking code",
+            "[Assessment](teacher-resources/assessment/) — quick checks that take two minutes",
+            "[Revision Strategies](teacher-resources/revision-strategies/) — retrieval, spacing and the final month"
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Request a resource",
+          "title": "WhatsApp",
+          "text": ["If there is something you need for your classes that is not here, say so. Requests genuinely determine what is prepared next."],
+          "buttons": [
+            { "label": "Request a teacher resource", "message": "Hello, I am an English teacher. I would like to request a teaching resource. What I need is: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/rcf-publications-for-teachers",
+      "title": "RCF Publications for Teachers",
+      "description": "How the books published by RCF Publications support classroom and tuition teaching, alongside the free resources on RCF English.",
+      "keywords": "books for teachers, teaching books, study guides, RCF Publications",
+      "kicker": "Teacher Resources",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": {
+        "text": "RCF Publications is a separate bookshop website. This page explains what it publishes for teachers and how it fits with the free material here.",
+        "buttons": [{ "label": "Visit RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "style": "btn--accent" }]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Free pages and published books",
+          "text": [
+            "Everything on RCF English is free to read and use. RCF Publications produces books that are sold separately, on its own website, with its own ordering arrangements.",
+            "The two are meant to work together rather than to duplicate one another. The free pages give you method — how to teach a topic, how to mark, how to structure a lesson. The books give you material organised in sequence, which is what you need when you are building a scheme of work rather than planning a single lesson."
+          ]
+        },
+        {
+          "type": "publications",
+          "heading": "What RCF Publications produces",
+          "text": [
+            "Practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials, designed to support classroom teaching, tuition classes, independent study and learning at home.",
+            "Many place particular emphasis on simplified explanations, guided writing, practical exercises, revision and support for struggling learners — the same priorities that run through this site."
+          ],
+          "items": [
+            "Practical English support materials",
+            "Literature study guides",
+            "Grammar resources",
+            "Examination-revision materials",
+            "Books written for struggling learners",
+            "eBooks and book samples"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Which is useful for what",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Planning a scheme of work", "text": ["A book gives you a sequence already worked out, which saves the term of planning that building your own would take."] },
+            { "title": "Planning tomorrow's lesson", "text": ["The free [teaching guides](teacher-resources/teaching-guides/) and [lesson plans](teacher-resources/lesson-plans/) are quicker for a single lesson."], "url": "teacher-resources/lesson-plans/", "more": "Lesson plans" },
+            { "title": "Students who need extra support", "text": ["Books with simplified explanations and guided writing let a struggling student work at home at their own pace, which a worksheet cannot."], "url": "teacher-resources/slow-learner-support/", "more": "Slow-learner support" },
+            { "title": "Literature teaching", "text": ["Study guides give summaries, analysis and questions in one place; the free [literature teaching guidance](teacher-resources/literature-teaching/) covers how to teach with them."], "url": "teacher-resources/literature-teaching/", "more": "Literature teaching" },
+            { "title": "Examination revision", "text": ["Revision books, used alongside the free [revision strategies](teacher-resources/revision-strategies/) and [past paper guidance](past-papers/how-to-use/)."], "url": "teacher-resources/revision-strategies/", "more": "Revision strategies" },
+            { "title": "Recommending to parents", "text": ["Parents frequently ask what to buy. A single suggested title is more useful to them than a reading list."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Two separate websites",
+          "bullets": [
+            "**RCF English** — this site. Free lessons, past papers, teacher resources, interactive practice and RCF Classes.",
+            "**RCF Publications** — a separate website with its own terms. Books, prices, samples and ordering are handled there.",
+            "RCF English does not sell books and does not take payments of any kind. Links to RCF Publications are marked and open in a new tab."
+          ]
+        }
+      ]
+    }
+  ]
+}

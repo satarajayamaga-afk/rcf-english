@@ -1,0 +1,747 @@
+{
+  "pages": [
+    {
+      "slug": "ol-english",
+      "title": "O/L English",
+      "metaTitle": "O/L English | Grammar, reading and guided writing | RCF English",
+      "description": "Ordinary Level English: grammar, vocabulary, reading comprehension and every writing task in the paper, taught step by step with models, guided practice and correction checklists.",
+      "keywords": "O/L English, Ordinary Level English, Grade 11 English, guided writing, English paper I, English paper II",
+      "kicker": "Ordinary Level",
+      "kind": "page",
+      "schema": "LearningResource",
+      "educationalLevel": "Ordinary Level, Grades 10 and 11",
+      "resourceType": "course section",
+      "hero": {
+        "text": "Everything you need for the Ordinary Level English paper, arranged the way the paper is arranged. Start with the syllabus so you know the shape of the examination, then work through the skills and the writing tasks.",
+        "buttons": [
+          { "label": "Start with the syllabus", "url": "ol-english/syllabus/", "style": "btn--accent" },
+          { "label": "Guided writing method", "url": "ol-english/guided-writing/", "style": "btn--ghost-light" },
+          { "label": "O/L English past papers", "url": "past-papers/ol-english/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What this section is for",
+          "text": [
+            "O/L English is a language paper, not a memory paper. You cannot learn it by heart the night before. What you can do is understand how each task works, see a good example of it, practise it with help, and then do it alone.",
+            "That is exactly how this section is organised. Nothing here asks you to write a complete answer before you have been shown how it is built."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Know the paper",
+          "eyebrow": "Start here",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Syllabus and Examination Structure", "url": "ol-english/syllabus/", "more": "Open", "text": ["What the examination covers, how it is divided, and how to check the requirements for your own year."] },
+            { "title": "Paper I", "url": "ol-english/paper-i/", "more": "Open", "text": ["The shorter, faster tasks: comprehension, grammar, vocabulary and short guided writing. How to work through them without losing time."] },
+            { "title": "Paper II", "url": "ol-english/paper-ii/", "more": "Open", "text": ["The longer writing tasks and extended comprehension. How to plan, divide your time, and finish."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Language skills",
+          "eyebrow": "The foundation",
+          "columns": "3",
+          "items": [
+            { "title": "Grammar", "url": "ol-english/grammar/", "more": "Open", "text": ["Tenses, articles, prepositions, subject-verb agreement, active and passive, reported speech and conditionals, with the reason behind each rule."] },
+            { "title": "Vocabulary", "url": "ol-english/vocabulary/", "more": "Open", "text": ["How to build vocabulary that you can actually use, and how to work out an unfamiliar word from the sentence around it."] },
+            { "title": "Reading Comprehension", "url": "ol-english/reading-comprehension/", "more": "Open", "text": ["How to read a passage under time pressure and answer the question that was actually asked."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Writing, task by task",
+          "eyebrow": "The six-step method",
+          "variant": "tint",
+          "intro": ["Each writing page follows the same six steps. Read [Guided Writing](ol-english/guided-writing/) first — it explains the method that every other writing page uses."],
+          "columns": "4",
+          "items": [
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "The method", "text": ["The method itself. Read this before the others."] },
+            { "title": "Emails", "url": "ol-english/emails/", "more": "Open", "text": ["Formal and informal email, with the layout examiners expect."] },
+            { "title": "Notices", "url": "ol-english/notices/", "more": "Open", "text": ["Short, complete and correctly laid out. Easy marks if you know the form."] },
+            { "title": "Letters", "url": "ol-english/letters/", "more": "Open", "text": ["Formal and informal letters, addresses, openings and closings."] },
+            { "title": "Paragraph Writing", "url": "ol-english/paragraph-writing/", "more": "Open", "text": ["One idea, developed properly, in one paragraph."] },
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open", "text": ["Planning, paragraphing and finishing an essay in the time available."] },
+            { "title": "Picture Description", "url": "ol-english/picture-description/", "more": "Open", "text": ["Describing what you see in an organised order, not at random."] },
+            { "title": "Dialogue and Speech Writing", "url": "ol-english/dialogue-and-speech-writing/", "more": "Open", "text": ["Natural dialogue, and a speech with a clear opening, middle and close."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Practice and revision",
+          "columns": "3",
+          "items": [
+            { "title": "Model Questions", "url": "ol-english/model-questions/", "more": "Open", "text": ["Practice questions in the style of the paper, for every task type."] },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["Full answers with notes explaining why each one works."] },
+            { "title": "Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Open", "text": ["Reading the question, dividing time, planning briefly, and checking."] },
+            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Open", "text": ["The errors that cost marks most often, with the correct form beside each."] },
+            { "title": "Interactive Revision", "url": "ol-english/interactive-revision/", "more": "Open", "text": ["Activities that mark themselves and explain the answer."] },
+            { "title": "O/L English Past Papers", "url": "past-papers/ol-english/", "more": "Open", "text": ["Past papers, model papers and marking schemes for O/L English."] }
+          ]
+        },
+        {
+          "type": "relatedBooks",
+          "variant": "tint",
+          "heading": "Find related books",
+          "text": ["RCF Publications produces practical O/L English support materials, grammar resources and examination-revision books, with simplified explanations and guided writing for learners who need extra help."]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/syllabus",
+      "title": "Syllabus and Examination Structure",
+      "description": "How the Ordinary Level English examination is organised, what each paper tests, and how to check the exact requirements for your examination year.",
+      "keywords": "O/L English syllabus, examination structure, paper I, paper II, Grade 11",
+      "kicker": "O/L English",
+      "kind": "guidance",
+      "schema": "LearningResource",
+      "educationalLevel": "Ordinary Level",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Before you revise anything, know the shape of the paper. Students lose marks every year not because they lack English, but because a task surprised them." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Check the official syllabus for your year",
+          "text": [
+            "Examination formats, the number of questions and the marks allocated to them are set by the examination authority and are revised from time to time. This page describes the examination as a teacher describes it, so that you understand what is being tested and why.",
+            "**Always confirm the exact format, question numbers and mark allocation for your own examination year against the current official syllabus and the instructions on the paper itself.** Do not rely on any website, including this one, for those particulars."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the examination is testing",
+          "text": [
+            "The O/L English paper tests whether you can *use* English, not whether you can recite facts about it. Broadly, it asks four things of you."
+          ],
+          "numbered": [
+            "**Can you understand written English?** Reading passages, notices, advertisements, tables and short texts, and answering questions on them.",
+            "**Do you control the language?** Grammar, sentence structure, vocabulary and spelling, tested both in separate tasks and inside your writing.",
+            "**Can you write for a purpose and a reader?** A notice for a noticeboard, an email to a principal, a letter to a friend, an essay for an examiner. Each has its own form.",
+            "**Can you organise what you write?** Ideas in a sensible order, joined properly, with a beginning and an end."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How the examination is divided",
+          "variant": "tint",
+          "text": [
+            "The examination is set in two papers, normally taken on the same day.",
+            "The tasks differ in kind between the papers, and so should the way you work through them. [Paper I](ol-english/paper-i/) and [Paper II](ol-english/paper-ii/) each have a page of their own."
+          ],
+          "parts": [
+            {
+              "heading": "Paper I",
+              "text": ["The shorter tasks. Reading and understanding, vocabulary, grammar and structured short writing. There are many separate items, each worth a small number of marks, and speed matters. Leaving a whole task blank here is expensive, because those marks were the easiest on the paper."]
+            },
+            {
+              "heading": "Paper II",
+              "text": ["The longer tasks. Extended writing, where you are judged on content, organisation, accuracy and appropriateness together, and longer reading. Fewer items, more marks each, and planning matters."]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What to prepare for each area",
+          "caption": "A revision plan by skill area. Follow the link for the lesson.",
+          "columns": ["Area", "What is tested", "Where to study it"],
+          "rows": [
+            ["Reading comprehension", "Finding information, understanding meaning in context, working out what is implied", "[Reading Comprehension](ol-english/reading-comprehension/)"],
+            ["Grammar", "Tenses, articles, prepositions, agreement, voice, reported speech, conditionals", "[Grammar](ol-english/grammar/)"],
+            ["Vocabulary", "Word meaning, word formation, correct word choice, spelling", "[Vocabulary](ol-english/vocabulary/)"],
+            ["Guided writing", "Writing to a given form and purpose with the details supplied", "[Guided Writing](ol-english/guided-writing/)"],
+            ["Notices and emails", "Short functional writing in the correct layout", "[Notices](ol-english/notices/) and [Emails](ol-english/emails/)"],
+            ["Letters", "Formal and informal letters, correct openings and closings", "[Letters](ol-english/letters/)"],
+            ["Paragraph and essay", "Developing ideas, organising, joining and finishing", "[Paragraph Writing](ol-english/paragraph-writing/) and [Essay Writing](ol-english/essay-writing/)"],
+            ["Picture description", "Describing in an organised order", "[Picture Description](ol-english/picture-description/)"],
+            ["Dialogue and speech", "Natural conversation, and a speech with a clear shape", "[Dialogue and Speech Writing](ol-english/dialogue-and-speech-writing/)"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Building a revision plan",
+          "text": [
+            "A plan that a tired student can actually follow is better than a perfect plan that collapses in a week. Three principles are enough."
+          ],
+          "numbered": [
+            "**Work on tasks, not on \"English\".** \"Revise English\" is not a plan. \"Learn the layout of a formal letter and write one\" is.",
+            "**Practise writing by hand, timed.** You will write the examination by hand under time pressure. Practise the way you will perform.",
+            "**Correct what you write.** A piece of writing you never check teaches you very little. Use the checklist at the end of each writing lesson."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Paper I", "url": "ol-english/paper-i/", "more": "Open", "text": ["How to work through the shorter tasks without running out of time."] },
+            { "title": "Paper II", "url": "ol-english/paper-ii/", "more": "Open", "text": ["How to plan and complete the longer writing."] },
+            { "title": "Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Open", "text": ["Timing, reading the question and checking your work."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/paper-i",
+      "title": "Paper I",
+      "description": "How to approach Paper I of the O/L English examination: the shorter reading, grammar, vocabulary and structured writing tasks, and how to work through them without losing time.",
+      "keywords": "O/L English paper I, comprehension, grammar tasks, exam technique",
+      "kicker": "O/L English",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Paper I is where the most easily won marks are — and where they are most easily lost, by running out of time." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What Paper I is like",
+          "text": [
+            "Paper I is made up of a number of separate tasks, each fairly short. You may be asked to read a notice, a table, an advertisement or a short passage and answer questions on it; to complete sentences with the correct grammatical form; to choose or supply the right word; to match items; or to write something short to a given instruction.",
+            "The individual items carry small numbers of marks. That has two consequences. First, no single item is worth agonising over. Second, the marks add up quickly, so an unfinished paper is a serious loss.",
+            "The exact tasks and their order vary between years. Check the paper itself, and the current official syllabus, for your own examination."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to work through Paper I",
+          "variant": "tint",
+          "items": [
+            { "title": "Read the instructions on the paper first", "text": ["Two minutes spent seeing what is on the paper is not wasted. You will know how many tasks there are and roughly how long each can take."] },
+            { "title": "Do the tasks you find easiest first", "text": ["There is usually no requirement to answer in order. Securing the marks you are confident of protects you against running short of time later."] },
+            { "title": "Give each item a fixed share of time", "text": ["Divide the working time by the number of tasks. When a task's time is up, move on, even if it is not perfect. You can return to it."] },
+            { "title": "Never leave a blank", "text": ["An empty space scores nothing with certainty. A reasonable attempt may score. If you truly do not know, put down your best guess and move on."] },
+            { "title": "Keep five minutes at the end", "text": ["Use them to fill any gaps and to check spellings, capital letters and full stops — the errors that are cheapest to fix and most expensive to leave."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task by task",
+          "parts": [
+            { "heading": "Reading and understanding", "text": ["Read the question before the passage, so you know what you are looking for. Answer in your own words unless told otherwise, and answer only what was asked. See [Reading Comprehension](ol-english/reading-comprehension/)."] },
+            { "heading": "Grammar items", "text": ["Read the whole sentence before choosing the form — the clue is often at the other end of it. Look for time expressions such as *since*, *already*, *last week* and *now*, which point directly at the tense required. See [Grammar](ol-english/grammar/)."] },
+            { "heading": "Vocabulary items", "text": ["If the word is unfamiliar, use the sentence around it. Is the word positive or negative? Is it a person, a thing, an action or a quality? That is often enough to choose correctly. See [Vocabulary](ol-english/vocabulary/)."] },
+            { "heading": "Short guided writing", "text": ["The details you need are given to you. Your job is to put them into the correct form, not to invent new content. Use every detail supplied, and no more. See [Guided Writing](ol-english/guided-writing/)."] }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "In the examination hall",
+          "variant": "tint",
+          "doTitle": "Do",
+          "do": [
+            "Write clearly. An answer the examiner cannot read cannot be marked.",
+            "Answer in complete sentences where the question calls for it.",
+            "Use the exact number of words if a limit is given.",
+            "Check that you have answered every part of a multi-part question.",
+            "Number your answers to match the question paper exactly."
+          ],
+          "dontTitle": "Do not",
+          "dont": [
+            "Copy whole sentences from the passage when asked to answer in your own words.",
+            "Spend ten minutes on an item worth one mark.",
+            "Leave an item blank because you are not certain.",
+            "Write a long answer to a question that asks for one word.",
+            "Forget to go back to the items you skipped."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Practise Paper I skills",
+          "columns": "3",
+          "items": [
+            { "title": "Interactive activities", "url": "interactive/", "more": "Practise", "text": ["Grammar, vocabulary and comprehension activities that mark themselves."] },
+            { "title": "Model Questions", "url": "ol-english/model-questions/", "more": "Open", "text": ["Practice questions in the style of the paper."] },
+            { "title": "Past papers", "url": "past-papers/ol-english/", "more": "Open", "text": ["Work under timed conditions once you are confident of the tasks."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/paper-ii",
+      "title": "Paper II",
+      "description": "How to approach Paper II of the O/L English examination: the longer writing tasks and extended comprehension, with advice on planning, timing and finishing.",
+      "keywords": "O/L English paper II, essay, letter, extended writing, exam technique",
+      "kicker": "O/L English",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Paper II rewards planning. Five minutes of thinking before you write is worth more than five minutes of extra writing at the end." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What Paper II is like",
+          "text": [
+            "Paper II contains the longer work: extended writing tasks, and reading passages with fuller questions. There are fewer items than in Paper I, and each carries more marks.",
+            "In extended writing you are not marked on content alone. Examiners look at what you say, how you organise it, how accurately you use English, and whether the form and tone suit the task you were given. A letter of complaint written as a message to a friend loses marks however good the English is.",
+            "The exact tasks and choices vary between years. Read the paper carefully and check the current official syllabus for your own examination."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The five minutes before you write",
+          "variant": "tint",
+          "intro": ["This is the habit that separates a good Paper II from a disappointing one."],
+          "items": [
+            { "title": "Read every option before choosing", "text": ["Where there is a choice, read them all. The first that catches your eye is not always the one you have most to say about."] },
+            { "title": "Underline the instruction words", "text": ["*Describe*, *explain*, *give your opinion*, *write a letter to*, *in about 100 words*. These words tell you the form, the purpose and the length. Missing one of them costs marks that had nothing to do with your English."] },
+            { "title": "Decide who you are writing to", "text": ["The reader decides the tone. A principal, a newspaper editor, a friend and a general examiner audience each require different language."] },
+            { "title": "Make a four-line plan", "text": ["Not sentences — just the idea for each paragraph, in order. This is the whole plan, and it takes a minute."] },
+            { "title": "Note your ending before you begin", "text": ["Most weak answers stop rather than finish, because the writer ran out of time and thought. Decide the last idea first, and you will always land properly."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Dividing your time",
+          "text": [
+            "Work out, before you start, how many minutes each question deserves — roughly in proportion to its marks — and write the finishing time for each one at the top of your answer sheet.",
+            "Then keep to it. A brilliant answer to question two and nothing at all for question three will always score less than two adequate answers. Every year, students lose more marks to poor time management than to poor English."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Before you hand in Paper II",
+          "variant": "tint",
+          "items": [
+            "Have I answered the required number of questions, and no fewer?",
+            "Have I used the form asked for — letter, email, essay, speech, dialogue?",
+            "Is the tone right for the reader?",
+            "Have I kept roughly to the length given?",
+            "Are my paragraphs separate and each about one idea?",
+            "Have I checked the verbs, the plurals, the capital letters and the full stops?",
+            "Is my handwriting legible throughout, including at the end when I was hurrying?"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare for the writing tasks",
+          "columns": "4",
+          "items": [
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "The method", "text": ["Read this first."] },
+            { "title": "Letters", "url": "ol-english/letters/", "more": "Open", "text": ["Formal and informal."] },
+            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open", "text": ["Planning and paragraphing."] },
+            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["Full answers, explained."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/grammar",
+      "title": "Grammar",
+      "description": "O/L English grammar explained with the reason behind each rule: tenses, articles, prepositions, subject-verb agreement, active and passive, reported speech and conditionals.",
+      "keywords": "O/L English grammar, tenses, articles, prepositions, subject verb agreement, passive voice, reported speech, conditionals",
+      "kicker": "O/L English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "educationalLevel": "Ordinary Level",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Grammar is easier to remember when you know why the rule exists. Each section below gives the rule, the reason and an example — then you practise it." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "How to use this page",
+          "text": [
+            "Do not try to read all of it at once. Take one section, read it, then do the matching activity at the bottom of the page. Come back to the same section a few days later.",
+            "Grammar learnt in one long sitting is forgotten in one short week."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "The tenses",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "Simple present — habits and general truths",
+              "a": [
+                "Use it for something that happens regularly, or that is always true: *He walks to school. Water boils at 100 degrees.*",
+                "The trap is the third person. With **he, she** or **it**, the verb takes **-s**: *she writes*, *it works*, *Nimal goes*. With **I, you, we, they** it does not: *they write*.",
+                "In the negative and the question, the **-s** moves onto *does*, and the main verb loses it: *She does not write* (not *does not writes*); *Does she write?*"
+              ]
+            },
+            {
+              "q": "Present continuous — happening now",
+              "a": [
+                "**am / is / are + verb-ing**, for something in progress at this moment, or around this period: *She is reading. They are building a new bridge.*",
+                "Signal words: *now, at the moment, look!, listen!, today, this week*.",
+                "Some verbs are not normally used in the continuous because they describe a state rather than an action: *know, believe, understand, like, want, need, belong*. We say *I know the answer*, not *I am knowing the answer*."
+              ]
+            },
+            {
+              "q": "Simple past — a finished action at a finished time",
+              "a": [
+                "Use it when the action is over and the time is over: *We visited the museum last Friday. He was born in Galle.*",
+                "Signal words: *yesterday, last week, in 2019, ago, then*.",
+                "Regular verbs add **-ed**. Irregular verbs must simply be learnt: *go — went*, *write — wrote*, *bring — brought*, *teach — taught*. Learning ten a week is a realistic and worthwhile habit."
+              ]
+            },
+            {
+              "q": "Past continuous — the longer action interrupted",
+              "a": [
+                "**was / were + verb-ing**: *While I was cooking, the telephone rang.*",
+                "The longer background action takes the past continuous; the shorter action that breaks into it takes the simple past. Getting these the right way round is one of the most commonly tested points in the paper."
+              ]
+            },
+            {
+              "q": "Present perfect — the past that still matters now",
+              "a": [
+                "**have / has + past participle**: *I have finished my homework. She has lived in Kandy since 2015.*",
+                "Use it when the exact time is not given or not important, or when the situation continues: *for* a length of time, *since* a starting point, and with *already, just, yet, never, ever*.",
+                "**The commonest error:** do not use the present perfect with a finished time expression. *I have seen him yesterday* is wrong; it must be *I saw him yesterday*."
+              ]
+            },
+            {
+              "q": "Past perfect — the earlier of two past actions",
+              "a": [
+                "**had + past participle**: *By the time we arrived, the film had started.*",
+                "It exists only to show order. If two past events are mentioned and one clearly happened first, the earlier one takes *had*. If the order is already obvious from *before* or *after*, the simple past is usually enough."
+              ]
+            },
+            {
+              "q": "The future",
+              "a": [
+                "**will + verb** — a decision made now, a prediction, an offer: *I will help you.*",
+                "**going to + verb** — a plan already made, or something you can see coming: *She is going to study medicine. Look at those clouds — it is going to rain.*",
+                "**Present continuous** — a fixed arrangement with a time: *We are meeting the principal at four o'clock.*"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Articles: a, an and the",
+          "items": [
+            {
+              "q": "When to use a or an",
+              "a": [
+                "Use **a** or **an** with a singular countable noun that is one of many, or that you mention for the first time: *I saw a bird. She bought a book.*",
+                "Choose by **sound**, not by letter. Use **an** before a vowel sound: *an apple, an hour* (the *h* is silent), *an honest man*. Use **a** before a consonant sound: *a university* (it begins with a *y* sound), *a European country*, *a one-day trip*."
+              ]
+            },
+            {
+              "q": "When to use the",
+              "a": [
+                "Use **the** when the reader already knows which one you mean: because you have mentioned it before (*I saw a bird. The bird was injured.*), because there is only one (*the sun, the sky, the principal of our school*), or because you are being specific (*the book on the table*).",
+                "Also with superlatives (*the best, the tallest*), with ordinals (*the first, the second*), and with names of rivers, seas, mountain ranges and groups of islands."
+              ]
+            },
+            {
+              "q": "When to use no article at all",
+              "a": [
+                "With plural and uncountable nouns used in general: *Books are expensive. Water is essential. Children need sleep.*",
+                "With most names of people, towns, countries, streets and languages: *Nimal, Colombo, Sri Lanka, Galle Road, English.*",
+                "With meals, and with certain places used for their purpose: *We had lunch. He went to school* (as a student). Compare *She went to the school* (the building, perhaps as a visitor)."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Prepositions",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "in, on and at for time",
+              "a": [
+                "**at** for a clock time: *at 8.30, at noon, at midnight*.",
+                "**on** for a day or a date: *on Monday, on 15 March, on my birthday*.",
+                "**in** for a longer period: *in May, in 2026, in the morning, in the rainy season*.",
+                "A useful picture: **at** is a point, **on** is a day-sized surface, **in** is something you are inside."
+              ]
+            },
+            {
+              "q": "in, on and at for place",
+              "a": [
+                "**at** for a point or a place thought of as a point: *at the bus stand, at the door, at home*.",
+                "**on** for a surface or a line: *on the table, on the wall, on the second floor, on the road to Kandy*.",
+                "**in** for an enclosed space or an area: *in the box, in the room, in Colombo, in Sri Lanka*."
+              ]
+            },
+            {
+              "q": "Words that always take a particular preposition",
+              "a": [
+                "These simply have to be learnt, because there is no rule behind them. The most useful for the examination:",
+                "*good at, bad at, interested in, afraid of, proud of, tired of, famous for, responsible for, similar to, different from, married to, depend on, insist on, listen to, belong to, apologise for, suffer from, congratulate on, prevent from*."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Agreement, voice, reported speech and conditionals",
+          "items": [
+            {
+              "q": "Subject-verb agreement",
+              "a": [
+                "The verb agrees with the subject, not with the nearest noun. In *The box of books is heavy*, the subject is *box*, so the verb is *is*.",
+                "*Each, every, everyone, someone, nobody, either, neither* are singular: *Every student has a book. Nobody was absent.*",
+                "Uncountable nouns are singular: *information, advice, furniture, luggage, news, equipment*. We say *The news is good*, and *information*, never *informations*.",
+                "Two subjects joined by *and* take a plural verb. Joined by *or* or *nor*, the verb agrees with the nearer one: *Neither the students nor the teacher was informed.*"
+              ]
+            },
+            {
+              "q": "Active and passive voice",
+              "a": [
+                "Active: the subject does the action — *The principal announced the results.* Passive: the subject receives it — *The results were announced by the principal.*",
+                "Form the passive with **be + past participle**, keeping the tense: *announces — is announced*, *announced — was announced*, *will announce — will be announced*, *has announced — has been announced*.",
+                "Use the passive when the doer is unknown, unimportant or obvious: *The library was built in 1998. My bicycle has been stolen.* Do not use it merely to sound formal — in ordinary writing the active is usually clearer."
+              ]
+            },
+            {
+              "q": "Reported speech",
+              "a": [
+                "When the reporting verb is in the past, the tense usually moves one step back: *present → past*, *past → past perfect*, *will → would*, *can → could*, *may → might*.",
+                "*\"I am tired,\" she said.* → *She said that she was tired.*",
+                "Time and place words shift too: *now → then, today → that day, tomorrow → the next day, here → there, this → that*.",
+                "**Questions lose the question form.** *\"Where do you live?\" he asked.* → *He asked where I lived.* — not *where did I live*. This is one of the most frequent errors in the paper.",
+                "Commands and requests use the infinitive: *\"Close the door,\" he said.* → *He told me to close the door.*"
+              ]
+            },
+            {
+              "q": "Conditionals",
+              "a": [
+                "**Zero** — something always true: *If you heat water, it boils.* (present + present)",
+                "**First** — a real future possibility: *If it rains tomorrow, we will cancel the match.* (present + will)",
+                "**Second** — imaginary or unlikely: *If I had a million rupees, I would build a library.* (past + would)",
+                "**Third** — the past, which cannot now be changed: *If I had studied harder, I would have passed.* (past perfect + would have)",
+                "**Never put *will* in the if-clause.** *If it will rain* is wrong; it is *If it rains*."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Now practise",
+          "variant": "tint",
+          "intro": ["Do one activity at a time, and read the explanation for every answer — including the ones you got right."],
+          "ids": ["grammar-tenses-1", "grammar-prepositions-1", "gap-articles-1", "gap-verb-forms-1", "order-sentences-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Open", "text": ["The grammar errors that appear most often in students' writing."] },
+            { "title": "Vocabulary", "url": "ol-english/vocabulary/", "more": "Open", "text": ["Building words you can actually use."] },
+            { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Open", "text": ["Putting the grammar to work in real writing tasks."] }
+          ]
+        },
+        {
+          "type": "relatedBooks",
+          "heading": "Find related books",
+          "text": ["RCF Publications produces grammar resources and practical English support materials with simplified explanations and graded exercises."]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/vocabulary",
+      "title": "Vocabulary",
+      "description": "How to build O/L English vocabulary you can actually use, work out unfamiliar words from context, and avoid the word-choice errors that cost marks.",
+      "keywords": "O/L English vocabulary, word meaning, context clues, word formation, spelling",
+      "kicker": "O/L English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "A long list of words you cannot use is worth less than fifty words you can. This page is about the second kind." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Knowing a word means four things",
+          "text": ["Students often say they \"know\" a word when they only recognise it. To use a word in the examination you need all four of these."],
+          "numbered": [
+            "**Meaning** — what it refers to.",
+            "**Spelling** — because a misspelt word in your writing costs marks.",
+            "**Grammar** — is it a noun, a verb, an adjective? *He is a success. He succeeded. He is successful.* Choosing the wrong form is a very common error.",
+            "**Company** — which words go with it. We *make* a mistake but *do* homework; we are *interested in*, not *interested for*."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Working out a word you do not know",
+          "variant": "tint",
+          "intro": ["In the examination there is no dictionary. But a passage usually contains enough evidence to work out an unfamiliar word — and comprehension questions often test exactly this."],
+          "items": [
+            { "title": "Decide what kind of word it is", "text": ["Is it naming something, describing something, or doing something? The words around it will tell you. *The room was **spacious**.* — after *was*, describing *room*, so it is an adjective."] },
+            { "title": "Look for a positive or negative signal", "text": ["*Although he was tired, he remained **cheerful**.* The word *although* signals a contrast with *tired*, so *cheerful* must be positive."] },
+            { "title": "Look for an explanation nearby", "text": ["Writers often explain a difficult word immediately: *The village was **isolated** — far from any town, with no bus service and no shop.* The explanation follows the dash."] },
+            { "title": "Look inside the word", "text": ["*un-, in-, dis-, mis-* reverse a meaning: *unhappy, incorrect, disagree, misunderstand*. *-less* means without: *careless, homeless*. *-ful* means full of: *careful, helpful*. Knowing twenty prefixes and suffixes unlocks hundreds of words."] },
+            { "title": "Test your guess in the sentence", "text": ["Put your guessed meaning back into the sentence. If the sentence now makes sense, your guess is probably close enough to answer the question."] }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Word building: one root, several words",
+          "intro": ["Examination items often ask for a different form of a given word. Learn words in families rather than singly."],
+          "items": [
+            { "term": "decide (verb)", "definition": "decision (noun), decisive (adjective), decisively (adverb)", "example": "They decided quickly. It was a wise decision." },
+            { "term": "succeed (verb)", "definition": "success (noun), successful (adjective), successfully (adverb)", "example": "She succeeded. Her success was deserved. She was successful." },
+            { "term": "explain (verb)", "definition": "explanation (noun), explanatory (adjective)", "example": "He explained the rule. His explanation was clear." },
+            { "term": "advise (verb)", "definition": "advice (noun) — note the different spelling and sound", "example": "He advised me. His advice was useful." },
+            { "term": "strong (adjective)", "definition": "strength (noun), strengthen (verb), strongly (adverb)", "example": "A strong wall. The strength of the wall. They strengthened it." },
+            { "term": "able (adjective)", "definition": "ability (noun), enable (verb), unable (opposite)", "example": "She is able to swim. Her ability is remarkable." }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Words that are easily confused",
+          "variant": "tint",
+          "caption": "These pairs account for a large share of vocabulary errors in student writing.",
+          "columns": ["Word", "Meaning", "Example"],
+          "rows": [
+            ["**advice** / **advise**", "advice is the noun; advise is the verb", "Take my advice. I advise you to rest."],
+            ["**affect** / **effect**", "affect is usually the verb; effect is usually the noun", "The rain affected the match. It had a bad effect."],
+            ["**its** / **it's**", "its shows possession; it's means it is", "The dog wagged its tail. It's raining."],
+            ["**their** / **there** / **they're**", "belonging to them / in that place / they are", "Their house is there. They're inside."],
+            ["**lose** / **loose**", "lose means to no longer have; loose means not tight", "Do not lose the key. The screw is loose."],
+            ["**practice** / **practise**", "practice is the noun; practise is the verb", "Daily practice helps. Practise every day."],
+            ["**stationary** / **stationery**", "not moving / writing materials", "The bus was stationary. Buy stationery."],
+            ["**principal** / **principle**", "head of a school, or main / a rule or belief", "The principal spoke. A matter of principle."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A method that actually works",
+          "text": [
+            "Reading is the only reliable way to build a large vocabulary, but reading alone is slow. Add three habits to it."
+          ],
+          "numbered": [
+            "**Keep a small notebook, not a long list.** Five new words a week, each written in a sentence of your own. Fifty words a week that you never use will be gone by the end of the month.",
+            "**Write the word in a sentence about your own life.** *The bus was overcrowded this morning* will stay with you; *overcrowded: too full* will not.",
+            "**Come back to old pages.** Look at last week's five words at the start of each new week. Repetition after a gap is what moves a word into permanent memory."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise vocabulary",
+          "variant": "tint",
+          "ids": ["vocab-match-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Reading Comprehension", "url": "ol-english/reading-comprehension/", "more": "Open", "text": ["Where working out words from context is directly tested."] },
+            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Open", "text": ["Word-choice errors and how to avoid them."] },
+            { "title": "General English vocabulary", "url": "general-english/vocabulary/", "more": "Open", "text": ["Everyday and workplace vocabulary for wider use."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-english/reading-comprehension",
+      "title": "Reading Comprehension",
+      "description": "How to read an O/L English passage under time pressure, understand what is stated and what is implied, and answer the question that was actually asked.",
+      "keywords": "reading comprehension, O/L English, passage questions, inference, own words",
+      "kicker": "O/L English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
+      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "hero": { "text": "Most comprehension marks are lost not because the passage was hard, but because the answer did not match the question." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "How to work through a passage",
+          "items": [
+            { "title": "Read the questions first", "text": ["Two minutes on the questions before the passage tells you what to look for. You then read with a purpose instead of reading blindly and reading again."] },
+            { "title": "Read the passage once, quickly", "text": ["Do not stop at every unfamiliar word. You are looking for the shape of it: what it is about, who is in it, what happens, what the writer thinks."] },
+            { "title": "Take one question at a time, and find the place", "text": ["Almost every answer lives in a particular sentence or two. Go back and find that place before you write anything. Answering from memory is where errors come from."] },
+            { "title": "Underline the instruction word in the question", "text": ["*Name*, *state*, *give two reasons*, *explain*, *in your own words*, *why*. This word decides the shape and the length of your answer."] },
+            { "title": "Answer, then check it against the question", "text": ["Read your answer beside the question. Does it answer that question, and all parts of it? Would someone who had not read the passage understand your answer?"] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The three kinds of question",
+          "variant": "tint",
+          "parts": [
+            {
+              "heading": "1. Questions where the answer is stated",
+              "text": ["The answer is in the passage in plain words. Find it, and give it accurately. *How far was the nearest library?* — *Eleven kilometres.* Do not add anything; extra material cannot gain marks and may contradict you."]
+            },
+            {
+              "heading": "2. Questions where the answer is implied",
+              "text": ["The passage does not say it, but it shows it. *What does the passage suggest about Mr Alwis?* The passage never calls him trusting, but it tells you he kept no fines and said nothing about late books. Your answer names the quality **and** points to the evidence: *He was trusting: he charged no fines and said nothing when books came back late.*"]
+            },
+            {
+              "heading": "3. Questions about language",
+              "text": ["*Find a word which means…*, *What does 'it' refer to?*, *Why does the writer use…?* For a word, check that your choice is the same part of speech as the definition given. For a reference word such as *it*, *this* or *they*, look at the sentence before, and check by reading the sentence with your answer put in place of the word."]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "A worked example",
+          "intro": ["From the passage about a village library, used in the interactive activity below."],
+          "items": [
+            {
+              "label": "Question and answer",
+              "prompt": "What does the writer suggest about the way Mr Alwis ran the library? Give a reason for your answer.",
+              "sample": [
+                "He ran it in a trusting and informal way.",
+                "He kept only a simple notebook in which borrowers wrote their own names, he charged no fines, and when a book came back late he said nothing."
+              ],
+              "notes": [
+                "The first sentence answers the question directly and immediately. Do not begin with a long introduction.",
+                "The second sentence gives the evidence, because the question asked for a reason.",
+                "The evidence is put in the student's own words, not copied whole from the passage.",
+                "Nothing else is added. There is no comment on whether this was a good way to run a library, because that was not asked."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "The habits that gain and lose marks",
+          "doTitle": "Do",
+          "do": [
+            "Answer in your own words when the question asks you to.",
+            "Give the exact number of points asked for — *two reasons* means two.",
+            "Use complete sentences unless a single word is asked for.",
+            "Go back to the passage for every answer.",
+            "Check that a *why* question is answered with a reason, not a description."
+          ],
+          "dontTitle": "Do not",
+          "dont": [
+            "Copy a long sentence from the passage and hope it contains the answer.",
+            "Write everything you know about the topic in case the answer is somewhere inside it.",
+            "Answer from general knowledge instead of from the passage.",
+            "Leave a question because the passage seemed difficult — the answer is usually easier than the passage.",
+            "Ignore the marks: a question worth four marks needs more than a four-word answer."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise on a passage",
+          "variant": "tint",
+          "ids": ["reading-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Vocabulary", "url": "ol-english/vocabulary/", "more": "Open", "text": ["Working out unfamiliar words from the sentence around them."] },
+            { "title": "Paper I", "url": "ol-english/paper-i/", "more": "Open", "text": ["Where the shorter comprehension tasks appear."] },
+            { "title": "Past papers", "url": "past-papers/ol-english/", "more": "Open", "text": ["Practise on real passages under timed conditions."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

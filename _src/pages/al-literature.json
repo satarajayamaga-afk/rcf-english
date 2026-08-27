@@ -1,0 +1,494 @@
+{
+  "pages": [
+    {
+      "slug": "al-literature",
+      "title": "A/L Literature",
+      "metaTitle": "A/L English Literature | Critical appreciation and essay answers | RCF English",
+      "description": "Advanced Level English Literature: close reading, selecting textual evidence, explaining technique, analysing effects, developing arguments and organising complete essays.",
+      "keywords": "A/L English Literature, Advanced Level Literature, critical appreciation, literary theory, essay answers",
+      "kicker": "Advanced Level",
+      "kind": "page",
+      "schema": "LearningResource",
+      "educationalLevel": "Advanced Level",
+      "hero": {
+        "text": "At Advanced Level the question is no longer whether you have understood the text. It is whether you can argue about it, with evidence, in an essay that holds together.",
+        "buttons": [
+          { "label": "Answer development", "url": "al-literature/answer-development/", "style": "btn--accent" },
+          { "label": "Critical appreciation", "url": "al-literature/critical-appreciation/", "style": "btn--ghost-light" },
+          { "label": "Past papers", "url": "past-papers/al-literature/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "The six abilities A/L Literature asks for",
+          "variant": "navy",
+          "intro": ["Everything in this section is built to take you through these six, in order. Most students are strong at the first and weak at the last three, which is where the marks are decided."],
+          "items": [
+            { "title": "Understanding", "text": ["Knowing what the text says, what happens, and what a passage means in its place in the whole work."] },
+            { "title": "Selecting evidence", "text": ["Given a question, going straight to the two or three moments that answer it — and leaving out the many that do not."] },
+            { "title": "Explaining technique", "text": ["Saying how the writing works: the choice of word, image, structure, form, voice."] },
+            { "title": "Analysing effects", "text": ["Saying what that technique does to a reader, and why the writer wanted that effect there."] },
+            { "title": "Developing arguments", "text": ["Building a case that moves, qualifies itself, meets the obvious objection, and arrives somewhere."] },
+            { "title": "Organising a complete essay", "text": ["An introduction that takes a position, paragraphs that each do one job, and a conclusion that judges."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Start here",
+          "columns": "3",
+          "items": [
+            { "title": "Overview and Syllabus", "url": "al-literature/syllabus/", "more": "Open", "text": ["What the examination tests and how to plan two years of reading."] },
+            { "title": "Prescribed Texts", "url": "al-literature/prescribed-texts/", "more": "Open", "text": ["The texts on this site, and how to check the list for your own year."] },
+            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open", "text": ["Timing, choosing questions, and what examiners reward."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "By genre",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Poetry", "url": "al-literature/poetry/", "more": "Open", "text": ["Form, voice, and reading a poem closely enough to argue about it."] },
+            { "title": "Drama", "url": "al-literature/drama/", "more": "Open", "text": ["Text and performance, structure, and the audience's knowledge."] },
+            { "title": "Fiction", "url": "al-literature/fiction/", "more": "Open", "text": ["Narration, focalisation, time and the shaping of sympathy."] },
+            { "title": "Prose", "url": "al-literature/prose/", "more": "Open", "text": ["Non-fictional and expository prose: argument, tone and rhetoric."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Writing answers",
+          "columns": "3",
+          "items": [
+            { "title": "Context Questions", "url": "al-literature/context-questions/", "more": "Open" },
+            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
+            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
+            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
+            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" },
+            { "title": "Common Student Mistakes", "url": "al-literature/common-mistakes/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Study tools",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Literary Theory", "url": "al-literature/literary-theory/", "more": "Open", "text": ["Critical approaches, used carefully and without jargon."] },
+            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open", "text": ["The advanced vocabulary of analysis, each term tied to its effect."] },
+            { "title": "A/L Literature Past Papers", "url": "past-papers/al-literature/", "more": "Open", "text": ["Past and model papers for timed practice."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Copyright and accuracy",
+          "bullets": [
+            "Complete copyrighted texts are not reproduced here. Quotations are short and used for study and criticism, with the author and work named.",
+            "**Nothing is invented.** No quotation, no biographical fact, no date and no textual detail appears on this site unless it can be verified. Where something is uncertain, it is not stated.",
+            "If you find an error, please [report it](corrections/)."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "al-literature/syllabus",
+      "title": "Syllabus",
+      "description": "How A/L English Literature is examined, what each kind of question tests, and how to plan two years of reading, note-making and essay practice.",
+      "keywords": "A/L Literature syllabus, examination structure, planning revision, Advanced Level",
+      "kicker": "A/L Literature",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
+      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
+      "hero": { "text": "Two years is long enough to read everything twice and write two dozen essays. It is not long enough to leave either until the final term." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Check the official syllabus for your year",
+          "text": [
+            "Prescribed texts, the structure of the papers and the choices offered are set by the examination authority and are revised from time to time.",
+            "**Confirm the prescribed texts and the format for your own examination year against the current official syllabus.** This page explains what the examination is testing and how to prepare; it is not an official statement of the requirements."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the examination is testing",
+          "text": ["Whatever the exact format, an Advanced Level Literature paper tests these things, and it is worth knowing which of them you are weak at."],
+          "numbered": [
+            "**Knowledge of the prescribed texts** — accurate, detailed and available under pressure.",
+            "**Close reading** — the ability to say what a particular passage is doing, at the level of the sentence and the word.",
+            "**Critical appreciation of an unseen passage or poem** — the same skill, applied without preparation.",
+            "**Argument** — taking a position on a question and sustaining it with evidence.",
+            "**Context and awareness of interpretation** — knowing that a text has been read in different ways, and being able to weigh those readings rather than merely list them."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "A two-year plan",
+          "variant": "tint",
+          "items": [
+            { "title": "First term: read everything once", "text": ["Every prescribed text, straight through, without notes. You cannot analyse a book whose ending you do not know. Reading everything early also tells you which texts you will find hard."] },
+            { "title": "First year: second readings and notes", "text": ["Reread with a pencil. Build your own notes for each text — not copied notes. Twelve to fifteen quotations per text, each chosen because it serves more than one question."] },
+            { "title": "First year: begin unseen practice", "text": ["One unseen poem or passage a fortnight, written in forty minutes. Unseen appreciation improves only with repetition and cannot be crammed."] },
+            { "title": "Second year: essays", "text": ["One full essay a fortnight, timed, on a real question. Correct each one properly and rewrite one paragraph. Twenty well-corrected essays are worth more than a hundred read study guides."] },
+            { "title": "Second year: comparison and criticism", "text": ["Start putting texts beside one another, and start reading what critics have said. Note where you disagree — a disagreement you can defend is worth more in an essay than a critic's name."] },
+            { "title": "Final term: your own work", "text": ["Revise your own corrected essays and your own notes. Do not begin new study guides in the last month; they cause anxiety and teach nothing you can use in time."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to make notes that survive two years",
+          "bullets": [
+            "**One page per text**, and everything else subordinate to it: the shape of the work, its main figures, three or four themes as full sentences.",
+            "**A quotation page**, with the *use* of each quotation written beside it, not the meaning.",
+            "**A structure page** — how the work is divided, and why. Structural comments are highly rewarded and rarely made.",
+            "**A disagreement page** — where you disagree with the standard reading, and what evidence supports you. This is where original essays come from.",
+            "Notes copied from a guide are forgotten within a term. Notes you made yourself are not."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Prescribed Texts", "url": "al-literature/prescribed-texts/", "more": "Open" },
+            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
+            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "al-literature/prescribed-texts",
+      "title": "Prescribed Texts",
+      "description": "A/L English Literature texts on RCF English, each set out in the same fifteen sections, and how to check the prescribed list for your own examination year.",
+      "keywords": "A/L Literature prescribed texts, set texts, syllabus texts",
+      "kicker": "A/L Literature",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
+      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
+      "hero": { "text": "Prescribed texts change. This page is built so that texts can be added and removed without disturbing anything else on the site." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "The list changes — check it",
+          "text": [
+            "The prescribed texts for A/L English Literature are set by the examination authority and are revised periodically. **Always confirm the list for your own examination year against the current official syllabus.**",
+            "Do not prepare a text because a website, a study guide or an older student's notes include it. Every year some candidates lose a great deal of work this way."
+          ]
+        },
+        {
+          "type": "literature",
+          "heading": "Texts on RCF English",
+          "level": "A/L",
+          "intro": ["Each text page follows the same fifteen-section structure used throughout the site, so that everything belonging to one text stays together."]
+        },
+        {
+          "type": "prose",
+          "heading": "What each text page contains",
+          "variant": "tint",
+          "numbered": [
+            "Introduction — what the work is, and what to watch for.",
+            "Author or playwright — verified facts only.",
+            "Background — when and where written, and the context a reader needs.",
+            "Summary or plot — what happens, in order.",
+            "Characters — who they are, what they want, how they change.",
+            "Themes — stated as arguable sentences, not as single words.",
+            "Literary or dramatic techniques — named, illustrated, and tied to effect.",
+            "Important quotations — short, accurate, and chosen for usefulness.",
+            "Context questions — on printed extracts.",
+            "Concise context answers — of the right length.",
+            "Essay questions — of the kind the paper sets.",
+            "Developed model answers — with notes on how each is built.",
+            "Common student mistakes — on this particular text.",
+            "Revision exercises.",
+            "Related past-paper questions."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Preparing a text that is not yet on this site",
+          "text": [
+            "Use the fifteen sections as your own note-making structure. Build them yourself, in that order, in a notebook for each text.",
+            "This is not a second-best option. Notes you construct yourself are recalled far more reliably than notes you read, and building them **is** the revision."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "al-literature/poetry",
+      "title": "Poetry",
+      "description": "Reading poetry at Advanced Level: form and its meaning, voice and speaker, sound, syntax, and how to build an argument about a poem.",
+      "keywords": "A/L poetry, close reading, form, voice, prosody, poetic analysis",
+      "kicker": "A/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
+      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
+      "hero": { "text": "At this level, saying what a poem means is the beginning of the answer. The answer is about how the poem makes that meaning." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Five questions to ask of any poem",
+          "numbered": [
+            "**Who is speaking, to whom, and in what situation?** Never assume the speaker is the poet. The gap between speaker and poet is often the poem's entire method.",
+            "**What is the poem's argument?** Most poems move: from a position to a modified position, from a question to an answer, from confidence to doubt. Find the movement and you have the essay.",
+            "**Where does it turn?** A *but*, a *yet*, a question, a change of tense, a change of address, a shift in the length of the lines. Poems turn, and the turn is usually the point.",
+            "**What does the form do?** A sonnet's fourteen lines, a stanza that breaks the pattern, a line left short — form is meaningful, and at A/L you are expected to say how.",
+            "**What is the syntax doing?** Where do the sentences end? Do they match the lines or fight them? A sentence that runs across four lines behaves quite differently from four end-stopped lines."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Form as meaning, not as decoration",
+          "variant": "tint",
+          "text": [
+            "Weak A/L answers identify the form and stop: *This is a sonnet with fourteen lines.* True and worthless.",
+            "Strong answers say what the form **does**. A sonnet promises resolution within fourteen lines; a poem that fails to resolve inside them is making a point by failing. A regular stanza pattern broken once, late, draws the eye exactly where the poet wants it. A poem in couplets sounds settled, even complacent — which a poet may use ironically.",
+            "Ask always: **what would be lost if this were written as prose?** Whatever your answer is, that is what to write about."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Vocabulary you are expected to use accurately",
+          "items": [
+            { "term": "Speaker and persona", "definition": "The voice of the poem, which may be a constructed character distinct from the poet.", "example": "A dramatic monologue depends entirely on the reader seeing more than the speaker does." },
+            { "term": "Volta", "definition": "The turn in a poem, especially in a sonnet, where the argument changes direction.", "example": "Locating the volta accurately is one of the quickest ways to show real reading." },
+            { "term": "Enjambment and end-stopping", "definition": "Whether a sentence runs past the line ending or stops with it.", "example": "Sustained enjambment can create urgency or breathlessness; a sudden end-stop after it lands heavily." },
+            { "term": "Caesura", "definition": "A strong pause within a line.", "example": "It can enact hesitation, interruption or a break in composure." },
+            { "term": "Metre", "definition": "The underlying rhythmic pattern — iambic, trochaic, and so on.", "example": "You are not usually required to scan formally, but you are expected to notice where the metre is disturbed and to say what the disturbance does." },
+            { "term": "Diction and register", "definition": "The kind of words chosen — plain or elaborate, formal or colloquial, abstract or concrete.", "example": "A shift in register mid-poem is always deliberate. Ask what it signals." },
+            { "term": "Tone", "definition": "The speaker's attitude to the subject.", "example": "Be precise. Not \"sad\" but elegiac, or bitter, or resigned, or wry — and show which words establish it." },
+            { "term": "Ambiguity", "definition": "A word or phrase that sustains more than one meaning at once.", "example": "At A/L, an ambiguity is not a problem to be resolved. Holding both meanings and showing why the poem wants both is precisely the skill being tested." }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Building an argument about a poem",
+          "variant": "tint",
+          "text": [
+            "Do not write a guided tour: *In the first stanza… In the second stanza… In the third stanza…* A stanza-by-stanza walk is description, not argument, and it is the commonest weakness in A/L poetry answers.",
+            "Instead, decide what you want to argue about the poem, and organise the paragraphs by **idea**, drawing evidence from wherever in the poem it happens to be. A paragraph may quite properly use the second line and the last line together.",
+            "Your introduction should contain a sentence that could be disagreed with by an intelligent reader. If nobody could disagree with it, it is not an argument."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
+            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open" },
+            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "al-literature/drama",
+      "title": "Drama",
+      "description": "Studying drama at Advanced Level: text and performance, dramatic structure, stagecraft, language, and the relationship between audience knowledge and effect.",
+      "keywords": "A/L drama, play analysis, stagecraft, dramatic structure, performance",
+      "kicker": "A/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
+      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
+      "hero": { "text": "A play is a score, not a novel. The best answers keep asking what an audience in a theatre would see, hear and know." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Text and performance",
+          "text": [
+            "A play exists twice: as words on a page and as an event in a theatre. Examiners consistently reward candidates who remember the second.",
+            "This does not require you to have seen a production. It requires you to keep asking a set of questions that a reader of a novel never has to ask."
+          ],
+          "bullets": [
+            "**Who is on stage, and who is absent?** A silent presence changes every line spoken.",
+            "**What does the audience know that a character does not?** Dramatic irony charges every subsequent line.",
+            "**What is physically done?** An object handed over, a letter burned, a door closed. Stage action makes arguments that dialogue does not have to state.",
+            "**Where does the scene, act or play end?** Endings are chosen. Ask what the audience is left holding.",
+            "**How long is a speech?** A character allowed forty lines and one allowed four are being treated very differently by the dramatist."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Structure",
+          "variant": "tint",
+          "text": [
+            "Structural argument is the surest way to lift a drama answer, and it is the thing most candidates never attempt.",
+            "Ask how the play is built. Where is its midpoint, and what happens there? Which scenes are placed next to each other, and does the juxtaposition comment on either? Is there a pattern of scenes — public alternating with private, for instance — and what does that pattern do?",
+            "A play that places a comic scene immediately after a death is not lightening the mood. It is arguing something about the relation between the two, and saying what that argument is will always be rewarded."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Terms to use precisely",
+          "items": [
+            { "term": "Dramatic irony", "definition": "The audience knows what a character does not.", "example": "Do not stop at naming it. Say what it makes the audience feel, and what the dramatist gains from producing that feeling at that moment." },
+            { "term": "Soliloquy and aside", "definition": "Direct access to a mind; a remark heard only by the audience.", "example": "Ask whether the soliloquy is honest. A character alone may still be deceiving themselves." },
+            { "term": "Exposition", "definition": "How the necessary background reaches the audience.", "example": "Clumsy exposition is a fault; skilful exposition — information delivered while something else is happening — is worth praising specifically." },
+            { "term": "Peripeteia", "definition": "A reversal of fortune or situation.", "example": "Locate it exactly. Much of a tragedy's meaning depends on what causes the reversal and whether the character sees it coming." },
+            { "term": "Catharsis", "definition": "The purging of pity and fear that tragedy is traditionally said to produce.", "example": "Use it only if you can say something about how this play produces it, or fails or refuses to." },
+            { "term": "Stagecraft", "definition": "The dramatist's use of the physical resources of the theatre — space, movement, entrances, properties, light, silence.", "example": "Stage directions are part of the text and may be quoted." },
+            { "term": "Subtext", "definition": "What is meant but not said.", "example": "Look for characters who answer a question with another question, change the subject, or fall silent." },
+            { "term": "Register and idiolect", "definition": "How individual characters speak differently from one another.", "example": "A character whose vocabulary changes across a play is being shown to change." }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "Two habits examiners reward",
+          "bullets": [
+            "**Write *the audience*, not *the reader*.** It signals immediately that you understand the form.",
+            "**Consider alternatives in staging.** *A production that plays this scene with the two characters at opposite ends of the stage would emphasise…* This shows you understand that a play's meaning is realised, not fixed, and it is one of the clearest marks of an advanced answer."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open" },
+            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
+            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "al-literature/fiction",
+      "title": "Fiction",
+      "description": "Studying novels and short fiction at Advanced Level: narration and focalisation, the handling of time, free indirect style, structure and the shaping of sympathy.",
+      "keywords": "A/L fiction, novel analysis, narrator, focalisation, free indirect style, structure",
+      "kicker": "A/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
+      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
+      "hero": { "text": "The most useful question you can ask of any novel: who is telling me this, how much do they know, and how much do I trust them?" },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Narration: the central question",
+          "text": ["Everything you are told in a novel comes through somebody. Identifying who, and with what limitations, is the foundation of nearly every fiction answer."],
+          "parts": [
+            { "heading": "First person", "text": ["The narrator is a character. You know only what they know, and you are exposed to their bias. Always ask: **is this narrator reliable?** Where the reader can see more than the narrator does, that gap is the novel's chief instrument."] },
+            { "heading": "Third person limited", "text": ["The narration follows one character's perspective. Other characters are seen from outside, which shapes sympathy powerfully. Ask whose mind you are inside, and — just as important — whose you are kept out of."] },
+            { "heading": "Third person omniscient", "text": ["The narrator may enter any mind and comment freely. Ask what the narrating voice is like: sympathetic, ironic, detached, judging. An omniscient narrator is a character too."] },
+            { "heading": "Shifting narration", "text": ["Where a novel changes narrator or perspective, that change is an argument. Ask what each perspective can see that the others cannot."] }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Terms worth having",
+          "variant": "tint",
+          "items": [
+            { "term": "Focalisation", "definition": "Whose perspective the narration adopts at a given moment, which may differ from who is speaking.", "example": "A third-person narrator may focalise through a child, so that the reader understands what the child does not." },
+            { "term": "Free indirect style", "definition": "Third-person narration that takes on a character's own words and idiom without quotation marks.", "example": "It lets a narrator be inside and outside a character at once, and is often the vehicle for irony. Being able to identify it accurately is a genuine mark of advanced reading." },
+            { "term": "Unreliable narrator", "definition": "A narrator whose account the reader is invited to doubt.", "example": "The evidence is usually internal: contradictions, over-insistence, gaps, or a version of events that the other characters' behaviour does not support." },
+            { "term": "Analepsis and prolepsis", "definition": "Flashback and flash-forward.", "example": "Ask why the information is placed here rather than in chronological order. Usually the answer is irony or suspense." },
+            { "term": "Duration and pace", "definition": "How much text is given to how much time.", "example": "Ten pages on one afternoon and one sentence on ten years is a statement about what matters in this novel." },
+            { "term": "Setting as meaning", "definition": "Place and period doing argumentative work, not scene-setting.", "example": "A house that becomes harder to heat as the family's fortunes fall is not description; it is the theme, made physical." },
+            { "term": "Motif", "definition": "A recurring image, object or phrase that accumulates meaning through repetition.", "example": "Trace where a motif appears. Its meaning at the end is rarely its meaning at the start." }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Handling a long text in an examination",
+          "text": [
+            "You cannot quote widely from a novel under pressure, and you should not try. What you need is a small set of precisely located moments.",
+            "For each theme and each main character, fix **three moments** — early, middle and late. Three moments across the book let you argue about development, which is what higher marks reward. A single moment, however well analysed, cannot show change.",
+            "Precise reference is worth as much as quotation. *When she refuses the money at the railway station* is eight words and demonstrates command of the text. *At one point in the novel* demonstrates the opposite."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "variant": "tint",
+          "title": "The two commonest failures",
+          "bullets": [
+            "**Narrating instead of arguing.** Every paragraph should open with a claim. If a paragraph opens with an event, rewrite the opening sentence.",
+            "**Treating characters as people rather than as constructions.** *She should not have married him* is a moral opinion. *The novel arranges our sympathies so that we understand the marriage while regretting it* is literary criticism."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Literary Theory", "url": "al-literature/literary-theory/", "more": "Open" },
+            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
+            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "al-literature/prose",
+      "title": "Prose",
+      "description": "Studying non-fictional and expository prose at Advanced Level: argument, structure, tone, rhetoric and the analysis of a prose passage.",
+      "keywords": "A/L prose, non-fiction, essay analysis, rhetoric, tone, argument",
+      "kicker": "A/L Literature",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
+      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
+      "hero": { "text": "Non-fictional prose is written to persuade, explain or record. Analysing it means showing how it does that — and whether it is fair." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What to look for in a prose passage",
+          "numbered": [
+            "**Purpose.** Is the writer explaining, persuading, describing, remembering, attacking or defending? Everything else follows from this.",
+            "**Audience.** Who is being addressed, and how can you tell? Assumed knowledge, shared values and forms of address all give it away.",
+            "**Voice.** What kind of person does the writing construct itself as being — authoritative, modest, angry, amused, reasonable? The voice is chosen.",
+            "**Structure of the argument.** Where is the claim made? Where is the evidence? Is the strongest point first or last? Is a concession made, and what does it buy?",
+            "**Sentence movement.** Long accumulating sentences and short blunt ones do different work. A short sentence after several long ones lands like a verdict.",
+            "**Diction.** Which words are loaded? A writer who calls a group *concerned residents* rather than *protesters* has made an argument without appearing to."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Rhetorical devices, and what they achieve",
+          "variant": "tint",
+          "items": [
+            { "term": "Rhetorical question", "definition": "A question asked for effect, not for an answer.", "example": "It makes the reader supply the conclusion themselves, which is more persuasive than being told it." },
+            { "term": "Tricolon", "definition": "A group of three.", "example": "Three sounds complete and memorable in English. Notice when a writer sets up a three and then breaks it — the break is emphatic." },
+            { "term": "Anaphora", "definition": "Repeating the same opening words in successive clauses.", "example": "It builds rhythm and insistence, and marks a passage as public and spoken in character." },
+            { "term": "Antithesis", "definition": "Balanced opposition within a sentence.", "example": "It makes a claim sound reasoned and inevitable, whether or not it is." },
+            { "term": "Concession", "definition": "Admitting part of the opposing case.", "example": "It purchases the reader's trust cheaply, and makes the writer seem fair. Ask what is conceded and, more revealingly, what is not." },
+            { "term": "Understatement and irony", "definition": "Saying less than is meant, or the opposite.", "example": "Both invite the reader into complicity — the reader who understands feels clever, and an agreeing reader is a persuaded reader." },
+            { "term": "Appeal to authority, emotion and reason", "definition": "The three classical means of persuasion.", "example": "Identify which the passage relies on most, and whether the reliance is honest." }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Writing about a prose passage",
+          "text": [
+            "Organise by **effect**, not by paragraph. Do not walk through the passage from top to bottom; group your observations into two or three effects the writing achieves, and draw evidence from anywhere in the passage.",
+            "Be prepared to evaluate. At A/L you may legitimately say that an argument is more persuasive than it is sound, or that a concession is a rhetorical move rather than a real one. That kind of judgement, supported by evidence, is exactly what advanced analysis of prose means."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
+            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open" },
+            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

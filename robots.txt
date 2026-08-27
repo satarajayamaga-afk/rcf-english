@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Source folders are not content
+Disallow: /_src/
+Disallow: /tools/
+
+Sitemap: https://your-username.github.io/rcf-english/sitemap.xml

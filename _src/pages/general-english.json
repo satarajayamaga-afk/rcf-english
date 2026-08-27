@@ -1,0 +1,465 @@
+{
+  "pages": [
+    {
+      "slug": "general-english",
+      "title": "General English",
+      "metaTitle": "General English | Practical English for life and work | RCF English",
+      "description": "Practical General English for adults and independent learners: everyday grammar, vocabulary, pronunciation, reading, writing, listening, speaking, workplace English and self-assessment.",
+      "keywords": "General English, practical English, adult English learners, spoken English, workplace English, everyday English",
+      "kicker": "For everyday life",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "course section",
+      "hero": {
+        "text": "English for the situations you actually meet: at the counter, on the telephone, at an interview, in an email, with a stranger asking for directions. No examination, no marks — just English you can use.",
+        "buttons": [
+          { "label": "Start with practical grammar", "url": "general-english/practical-grammar/", "style": "btn--accent" },
+          { "label": "Check your level", "url": "general-english/self-assessment/", "style": "btn--ghost-light" },
+          { "label": "Interactive practice", "url": "general-english/interactive-practice/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Who this section is for",
+          "text": [
+            "For adults who studied English at school and have forgotten most of it. For school leavers who need English for work. For people who understand English perfectly well but cannot bring themselves to speak it. For anyone who has been told, once too often, that their English is not good enough.",
+            "**Nothing here is graded, marked or examined.** You are not competing with anybody, and the only measure that matters is whether you can do something today that you could not do last month."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The one thing that matters most",
+          "text": [
+            "The largest single obstacle for most adult learners is not grammar. It is the fear of making a mistake in front of someone.",
+            "Nobody has ever learnt a language without getting it wrong first, and a listener who understands you has understood you, whatever the grammar was doing. Speak imperfectly today and you will speak well next year; say nothing today and next year you will still be silent."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Core English",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Practical Grammar", "url": "general-english/practical-grammar/", "more": "Open", "text": ["Only the grammar you need in order to say what you mean, explained without technical terms."] },
+            { "title": "Vocabulary", "url": "general-english/vocabulary/", "more": "Open", "text": ["Words for everyday life, the workplace and travel, and a method for remembering them."] },
+            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open", "text": ["Being understood: sounds, word stress and the rhythm of English sentences."] },
+            { "title": "Common Mistakes", "url": "general-english/common-mistakes/", "more": "Open", "text": ["The errors adult learners make most often, with the correct form beside each."] },
+            { "title": "Self-Assessment", "url": "general-english/self-assessment/", "more": "Open", "text": ["Find out honestly what you can already do, and what to work on next."] },
+            { "title": "Interactive Practice", "url": "general-english/interactive-practice/", "more": "Open", "text": ["Activities that mark themselves and explain every answer."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The four skills",
+          "columns": "4",
+          "items": [
+            { "title": "Reading", "url": "general-english/reading/", "more": "Open", "text": ["Reading for meaning without stopping at every word."] },
+            { "title": "Writing", "url": "general-english/writing/", "more": "Open", "text": ["Messages, emails, forms and short letters that get a reply."] },
+            { "title": "Listening", "url": "general-english/listening/", "more": "Open", "text": ["Understanding real speech, at real speed."] },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open", "text": ["Getting from understanding to speaking — the hardest step, and the most rewarding."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "English in use",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open", "text": ["Shops, buses, appointments, directions, telephone calls and the small exchanges of daily life."] },
+            { "title": "Spoken English", "url": "general-english/spoken-english/", "more": "Open", "text": ["Fluency, hesitation, repair phrases and how to keep a conversation going."] },
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open", "text": ["Interviews, meetings, emails, telephone calls and asking for what you need at work."] },
+            { "title": "English for Adults", "url": "general-english/english-for-adults/", "more": "Open", "text": ["How adults actually learn a language, and how to make time for it in a working week."] },
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open", "text": ["Model conversations for the situations that come up most often."] },
+            { "title": "RCF Classes", "url": "rcf-classes/general-english/", "more": "Open", "text": ["If you would rather learn with a teacher, online General English and Spoken English classes are available."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About levels on this site",
+          "text": [
+            "Some material here is labelled **A1**, **A2**, **B1** or **B2** to give you a rough idea of difficulty: A1 and A2 for beginners and elementary learners, B1 and B2 for intermediate and upper-intermediate.",
+            "These labels are a guide only. RCF English does **not** claim that its material is formally aligned to the Common European Framework of Reference, and no test on this site provides a CEFR certificate or an official level."
+          ]
+        },
+        {
+          "type": "relatedBooks",
+          "variant": "tint",
+          "heading": "Find related books",
+          "text": ["RCF Publications produces practical English support materials and grammar resources written for independent learners and adults, with simplified explanations and everyday examples."]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/practical-grammar",
+      "title": "Practical Grammar",
+      "description": "The grammar adult learners actually need, explained without technical terms: word order, tenses in everyday use, questions, negatives, articles and useful patterns.",
+      "keywords": "practical grammar, everyday grammar, English for adults, word order, questions",
+      "kicker": "General English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "You do not need all of English grammar. You need the part that stops people understanding you — and that part is smaller than you think." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What actually stops communication",
+          "text": [
+            "Many grammar errors are harmless. If you say *I have went yesterday*, everyone knows exactly what you mean. It is worth correcting eventually, but it is not urgent.",
+            "A small number of errors genuinely cause confusion, and those are the ones to fix first. They are listed below, in order of how much trouble they cause."
+          ],
+          "numbered": [
+            "**Word order**, especially in questions. *You are going where?* often needs repeating; *Where are you going?* does not.",
+            "**Time.** If the listener cannot tell whether you mean yesterday, today or tomorrow, the message fails completely.",
+            "**Negatives.** Getting a *not* into the wrong place can reverse your meaning.",
+            "**Singular and plural**, where the number actually matters — *one ticket* or *two tickets*.",
+            "Everything else, which is worth fixing but rarely prevents understanding."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "1. Word order",
+          "variant": "tint",
+          "text": ["English word order is fixed, and this is a gift: once you know the pattern, you can say almost anything."],
+          "parts": [
+            { "heading": "Statements", "text": ["**Who — does — what — where — when.**"], "bullets": ["*I bought a shirt at the market yesterday.*", "*She sends the report to the manager every Friday.*", "Place before time. *At the market yesterday*, not *yesterday at the market*."] },
+            { "heading": "Questions", "text": ["Two patterns cover nearly everything."], "bullets": ["**With a question word:** *Where **do** you work?* *When **does** the bus leave?* *Why **did** she call?*", "**Yes or no:** *Do you work here? Is she at home? Can you help me?*", "**Remember:** after *do*, *does* or *did*, the main verb has no ending. *Where did you went* → *Where did you go?*"] },
+            { "heading": "Negatives", "text": ["Put *not* after the helping verb."], "bullets": ["*I **do not** know.* / *I don't know.*", "*She **is not** coming.* / *She isn't coming.*", "*They **have not** arrived.* / *They haven't arrived.*", "If there is no helping verb, use *do*, *does* or *did*: *He works* → *He doesn't work.*"] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "2. Talking about time",
+          "text": ["Five tenses will carry you through almost every conversation you will ever have."],
+          "parts": [
+            { "heading": "Now", "bullets": ["*I **am waiting** for the bus.* — happening this minute", "*I **work** in a bank.* — true generally"] },
+            { "heading": "The past", "bullets": ["*I **went** to Kandy last week.* — finished, and the time is finished", "*I **have been** to Kandy.* — at some time, the time not important"] },
+            { "heading": "The future", "bullets": ["*I **will** call you tonight.* — deciding now", "*I **am going to** start a course.* — already planned", "*I **am meeting** her at four.* — a fixed arrangement"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "A rescue that always works",
+          "text": [
+            "If you are not sure of a tense, **say the time word**. *Yesterday I go to the market* is not correct English, but nobody will misunderstand it.",
+            "Time words are the safety net: *yesterday, last week, now, at the moment, tomorrow, next month, already, still, since Monday.* Use them freely while your tenses are settling."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Patterns worth learning as whole phrases",
+          "intro": ["Do not build these from rules. Learn them complete, the way you learnt a song."],
+          "items": [
+            { "term": "Could you…?", "definition": "A polite request. The most useful phrase in the language.", "example": "Could you repeat that, please? Could you help me for a moment?" },
+            { "term": "I would like…", "definition": "Polite wanting. Far better than *I want*, which can sound abrupt.", "example": "I would like two tickets to Colombo, please." },
+            { "term": "Do you mind if I…?", "definition": "Asking permission politely.", "example": "Do you mind if I sit here? Do you mind if I open the window?" },
+            { "term": "I am afraid…", "definition": "Softens bad news or a refusal.", "example": "I am afraid I cannot come on Sunday." },
+            { "term": "Shall I…? / Would you like me to…?", "definition": "Offering help.", "example": "Shall I carry that for you? Would you like me to explain again?" },
+            { "term": "I am not sure, but I think…", "definition": "Saying something without claiming certainty.", "example": "I am not sure, but I think the office closes at four." },
+            { "term": "What do you mean by…?", "definition": "Asking for clarification without embarrassment.", "example": "What do you mean by 'the application form'?" },
+            { "term": "Let me check and get back to you.", "definition": "Buying time. Invaluable at work.", "example": "Let me check the file and get back to you this afternoon." }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "3. Articles: a, an, the",
+          "variant": "tint",
+          "text": [
+            "Articles cause endless anxiety and almost never cause misunderstanding. Learn the simple version and stop worrying about the rest.",
+            "If in doubt, use **the** with something specific and **a** with something general. You will be right most of the time, and understood every time."
+          ],
+          "bullets": [
+            "**a / an** — one of many, or mentioned for the first time: *I need a pen. She is a teacher.*",
+            "**an** before a vowel *sound*: *an apple, an hour, an honest man*.",
+            "**the** — when the listener knows which one: *Pass me the pen* (the one here), *the sun*, *the manager of our branch*.",
+            "**nothing** — with plural or uncountable things in general: *Books are expensive. Water is free.*"
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise",
+          "ids": ["gap-articles-1", "grammar-prepositions-1", "order-sentences-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Common Mistakes", "url": "general-english/common-mistakes/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/vocabulary",
+      "title": "Vocabulary",
+      "description": "Everyday, workplace and travel vocabulary for General English, with a practical method for learning words so that they stay and can actually be used.",
+      "keywords": "English vocabulary, everyday words, workplace vocabulary, learning words",
+      "kicker": "General English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Two thousand words used confidently will take you further than ten thousand words recognised vaguely." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "A method that works for adults",
+          "items": [
+            { "title": "Five words a week, not fifty", "text": ["Fifty words a week produces fifty half-known words and a sense of failure. Five words, properly learnt, are five words you own."] },
+            { "title": "Write each one in a sentence about your own life", "text": ["Not the dictionary sentence — yours. *The bus was overcrowded this morning* will stay with you. *Overcrowded: too full* will not."] },
+            { "title": "Learn the word's company", "text": ["Words travel in groups. Learn *make a mistake*, *do homework*, *take a decision*, *heavy rain* — not just the single word."] },
+            { "title": "Say it aloud five times", "text": ["A word you have only read is a word you will hesitate over. Saying it puts it in your mouth as well as your memory."] },
+            { "title": "Come back to it", "text": ["Look at last week's words at the start of each new week. Repetition after a gap is what makes a word permanent."] },
+            { "title": "Use it within three days", "text": ["In a conversation, a message, or a note to yourself. A word used once is remembered; a word only studied is not."] }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Everyday vocabulary you will use this week",
+          "variant": "tint",
+          "columns": ["Situation", "Words and phrases worth knowing"],
+          "rows": [
+            ["Shopping", "How much is this? Do you have a smaller size? Can I pay by card? Could I have a receipt? Is there a discount?"],
+            ["Travel", "return ticket, one way, platform, departure, delayed, seat number, luggage, Does this bus go to…?"],
+            ["Appointments", "make an appointment, cancel, postpone, reschedule, I am running late, Are you free on…?"],
+            ["Health", "I have a headache, a temperature, a prescription, a check-up, How long will it take to heal?"],
+            ["Money", "deposit, withdraw, balance, instalment, receipt, refund, an account, a fee"],
+            ["Directions", "Turn left at the junction, opposite, next to, straight on, about ten minutes' walk, Is it far?"],
+            ["The telephone", "Could I speak to…? Speaking. Hold on a moment. The line is bad. Could you call back?"],
+            ["Difficulty", "Sorry, I did not catch that. Could you say that more slowly? What does … mean? Could you spell it?"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Learn word families, not single words",
+          "text": ["One root gives you four or five words. This is the cheapest vocabulary you will ever gain."],
+          "bullets": [
+            "**decide** (verb) — **decision** (noun) — **decisive** (adjective)",
+            "**succeed** — **success** — **successful** — **successfully**",
+            "**employ** — **employer** — **employee** — **employment** — **unemployed**",
+            "**advise** (verb) — **advice** (noun) — **adviser**",
+            "**able** — **ability** — **enable** — **unable**",
+            "**agree** — **agreement** — **disagree** — **disagreement**"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Prefixes and suffixes: hundreds of words for very little effort",
+          "variant": "tint",
+          "bullets": [
+            "**un-, in-, im-, dis-, mis-** reverse a meaning: *unhappy, incorrect, impossible, disagree, misunderstand*",
+            "**re-** means again: *rewrite, rebuild, reconsider*",
+            "**over-** and **under-** mean too much and too little: *overcrowded, overcooked, underpaid, underestimate*",
+            "**-less** means without: *careless, homeless, useless*",
+            "**-ful** means full of: *careful, helpful, powerful*",
+            "**-er, -or, -ist** make the person who does it: *teacher, actor, dentist*",
+            "**-tion, -ment, -ness** make a noun: *decision, agreement, kindness*"
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise",
+          "ids": ["vocab-match-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Reading", "url": "general-english/reading/", "more": "Open" },
+            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/pronunciation",
+      "title": "Pronunciation",
+      "description": "Practical English pronunciation for being understood: word stress, sentence rhythm, difficult sounds and why an accent is not a problem.",
+      "keywords": "English pronunciation, word stress, sentence stress, accent, being understood",
+      "kicker": "General English",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "The goal is not to sound English. The goal is to be understood the first time, without repeating yourself." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "First, about accent",
+          "text": [
+            "**Your accent is not a fault.** English is spoken as a first or second language across the world, in a great many accents, and no one of them is the correct one. A Sri Lankan English accent is a legitimate English accent.",
+            "What matters is **intelligibility** — whether a listener understands you without effort. That depends far more on word stress and rhythm than on individual sounds, which is why this page begins with stress."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "1. Word stress — the most important thing on this page",
+          "text": [
+            "Every English word of more than one syllable has one syllable said more strongly than the others. Put the stress in the wrong place and a listener may not recognise the word at all, even if every sound was correct.",
+            "**PHO-to-graph** — **pho-TO-gra-pher** — **pho-to-GRAPH-ic.** Same root, three different stresses.",
+            "When you learn a new word, mark where the stress falls, and say it aloud with the stress exaggerated. That single habit improves intelligibility more than any other."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Stress changes the word",
+          "variant": "tint",
+          "caption": "The same spelling, stressed differently, becomes a different part of speech.",
+          "columns": ["Noun (stress first)", "Verb (stress second)", "Example"],
+          "rows": [
+            ["**RE**-cord", "re-**CORD**", "I keep a record. / Please record the meeting."],
+            ["**PRE**-sent", "pre-**SENT**", "A birthday present. / He will present the report."],
+            ["**IN**-crease", "in-**CREASE**", "An increase in prices. / Prices increase every year."],
+            ["**CON**-duct", "con-**DUCT**", "Good conduct. / She will conduct the class."],
+            ["**OB**-ject", "ob-**JECT**", "A heavy object. / I object to that."],
+            ["**PER**-mit", "per-**MIT**", "A travel permit. / They do not permit it."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "2. Sentence rhythm",
+          "text": [
+            "English does not give every word equal weight. The words carrying the meaning are said strongly; the small connecting words are swallowed.",
+            "*I'm **GO**-ing to the **MAR**-ket to buy some **VE**-ge-ta-bles.* The words *to*, *the*, *some* almost disappear.",
+            "This is why fast English sounds like one long word to a learner: you are listening for the small words, and they are not there to hear. Listen for the strong ones instead, and the meaning arrives.",
+            "It also works the other way. If you say every word with equal weight, your English is understandable but tiring to listen to. Letting the small words weaken makes you sound far more fluent than any change of accent would."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "3. Sounds worth practising",
+          "variant": "tint",
+          "text": ["These are the distinctions that most often cause a listener to hesitate. Practise each pair aloud, slowly, then in a sentence."],
+          "bullets": [
+            "**/v/ and /w/** — *vine* and *wine*, *very* and *wary*. For **v**, the top teeth touch the bottom lip; for **w**, the lips round and the teeth do not touch.",
+            "**/θ/ and /ð/** — the two *th* sounds: *think*, *three*, *both* (voiceless) and *this*, *that*, *mother* (voiced). The tongue tip is between the teeth.",
+            "**/p/, /t/, /k/ at the start of a word** — these need a small puff of air in English: *pen*, *time*, *cat*. Hold your hand in front of your mouth and feel it.",
+            "**Long and short vowels** — *ship* and *sheep*, *full* and *fool*, *bit* and *beat*. The difference is real and it changes the word.",
+            "**Final consonants** — English keeps them: *want* not *wan*, *asked* not *ask*, *helped* not *help*. Dropping the ending often removes the tense.",
+            "**Consonant clusters** — *strengths*, *asked*, *texts*, *twelfths*. Practise slowly, keeping every consonant, then speed up."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "A ten-minute daily practice",
+          "items": [
+            { "title": "Read aloud for five minutes", "text": ["Anything — a newspaper, a page of a book. Reading aloud daily is the single most effective pronunciation exercise there is."] },
+            { "title": "Record yourself once a week", "text": ["Read the same short passage each week on your telephone and listen back. You will hear things you cannot hear while speaking."] },
+            { "title": "Shadow a speaker", "text": ["Play a short clip of clear English and speak along with it, half a second behind, copying the rhythm rather than the words."] },
+            { "title": "Exaggerate the stress", "text": ["When practising alone, overdo the stressed syllable. In real speech it will come out about right."] },
+            { "title": "Slow down", "text": ["Speaking slightly slower than feels natural makes you far easier to understand, and gives you time to find your words. Speed is not fluency."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "Listening", "url": "general-english/listening/", "more": "Open" },
+            { "title": "Spoken English classes", "url": "rcf-classes/spoken-english/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "general-english/common-mistakes",
+      "title": "Common Mistakes",
+      "description": "The English mistakes adult and General English learners make most often, each shown wrong and right with the reason, including mistakes that are not really mistakes.",
+      "keywords": "common English mistakes, adult learners, errors, corrections",
+      "kicker": "General English",
+      "kind": "lesson",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
+      "backTo": { "label": "General English", "url": "general-english/" },
+      "hero": { "text": "Fix the ones that stop people understanding you. Fix the rest later, or never." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Not every mistake is urgent",
+          "text": [
+            "Errors fall into two groups: those that break communication and those that merely mark you as a learner. Correct the first group deliberately. Let the second group go for now — they will improve on their own with use, and worrying about them is what stops people speaking."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Mistakes that cause real confusion",
+          "variant": "tint",
+          "columns": ["Wrong", "Right", "Why it matters"],
+          "rows": [
+            ["You are going where?", "**Where are you going?**", "Question word order. The listener often has to ask again."],
+            ["Yesterday I am going to town.", "Yesterday I **went** to town.", "The time is contradicted by the verb, so the listener is confused."],
+            ["I am here since two hours.", "I **have been** here **for** two hours.", "*Since* needs a starting point; *for* needs a length of time."],
+            ["Tomorrow I went to Colombo.", "Tomorrow I **am going** to Colombo.", "Past verb with a future time word. The listener cannot tell when."],
+            ["He no come today.", "He **is not coming** today. / He **did not come** today.", "Without a helping verb the time is lost entirely."],
+            ["I want two ticket.", "I want two **tickets**.", "Where the number matters, the plural matters."],
+            ["Open the light.", "**Switch on** the light.", "*Open* is understood in Sri Lanka but not everywhere; *switch on* always is."],
+            ["I am having a headache since morning.", "I **have had** a headache since morning.", "*Have* meaning possession or condition is not used in the continuous."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Mistakes worth correcting, but not urgent",
+          "columns": ["Wrong", "Right", "Why"],
+          "rows": [
+            ["He don't like it.", "He **doesn't** like it.", "Third person negative."],
+            ["She is more taller.", "She is **taller**.", "*More* is not used with an *-er* comparative."],
+            ["I discussed about it.", "I **discussed** it.", "*Discuss* takes no preposition."],
+            ["Give me some informations.", "Give me some **information**.", "*Information* has no plural."],
+            ["I am agree with you.", "I **agree** with you.", "*Agree* is already the verb."],
+            ["Please revert back.", "Please **reply**.", "*Revert* means to return to a previous state."],
+            ["He is my cousin brother.", "He is my **cousin**.", "*Cousin brother* is not used in standard English."],
+            ["Do the needful.", "Please **do what is necessary**.", "Understood regionally, but unclear to many readers."],
+            ["I am staying in Colombo since 2020.", "I **have been living** in Colombo since 2020.", "*Since* with a continuing situation."],
+            ["Myself Kamal.", "**My name is Kamal.** / **I am Kamal.**", "*Myself* cannot introduce you."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Three habits that fix more than any rule",
+          "variant": "tint",
+          "numbered": [
+            "**Say the time word.** *Yesterday, tomorrow, last week, already, since Monday.* Even if the tense is wrong, the listener knows when you mean.",
+            "**Finish your consonants.** *Asked*, not *ask*. *Wanted*, not *want*. Dropping the ending often removes the tense entirely, and this is a very common cause of misunderstanding.",
+            "**Ask when you do not understand.** *Sorry, could you say that again more slowly?* is perfect English, and using it is a sign of competence, not of weakness."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise correcting",
+          "ids": ["error-correction-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Practical Grammar", "url": "general-english/practical-grammar/", "more": "Open" },
+            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "Self-Assessment", "url": "general-english/self-assessment/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

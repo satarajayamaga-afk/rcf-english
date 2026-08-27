@@ -1,0 +1,489 @@
+{
+  "pages": [
+    {
+      "slug": "about",
+      "title": "About RCF English",
+      "metaTitle": "About Us | RCF English",
+      "description": "RCF English is an umbrella educational platform bringing together English learning, literature education, examination support, teacher resources, online classes and educational publishing.",
+      "keywords": "about RCF English, R. C. Fernando, English education Sri Lanka, educational platform",
+      "kicker": "About Us",
+      "kind": "page",
+      "schema": "EducationalOrganization",
+      "hero": {
+        "text": "One platform bringing together English-language learning, literature education, examination support, teacher resources, online classes and educational publications.",
+        "buttons": [
+          { "label": "Our Founder", "url": "about/founder/", "style": "btn--accent" },
+          { "label": "Academic Background", "url": "about/background/", "style": "btn--ghost-light" },
+          { "label": "Contact Us", "url": "contact/", "style": "btn--ghost-light" }
+        ]
+      },
+      "breadcrumbs": [],
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Welcome to RCF English",
+          "text": [
+            "RCF English is a comprehensive educational platform created to bring together English-language learning, literature education, examination support, teacher resources, online classes and educational publications in one accessible place.",
+            "The platform serves school students, O/L and A/L learners, adult learners, English teachers, tuition teachers and parents. Particular attention is given to learners who require additional guidance, including those in rural and remote areas with limited access to dependable educational resources.",
+            "RCF English is guided by a simple principle: English should be explained clearly, practised systematically and applied confidently. Its resources therefore combine straightforward explanations, relevant models, guided activities, independent practice and opportunities for revision and self-correction."
+          ]
+        },
+
+        {
+          "type": "cards",
+          "heading": "How the parts fit together",
+          "eyebrow": "The umbrella platform",
+          "variant": "tint",
+          "intro": ["RCF English is the main platform. RCF Classes provides the teaching programmes. RCF Publications is a separate publishing and bookshop website."],
+          "columns": "3",
+          "items": [
+            { "title": "RCF English", "text": ["The umbrella educational platform: lessons, past papers, revision material, teacher resources and interactive learning, free to use."], "url": "how-to-use/", "more": "How to use this site" },
+            { "title": "RCF Classes", "text": ["The teaching programmes: mainly online classes in English and Literature, conducted by R. C. Fernando."], "url": "rcf-classes/", "more": "See the classes" },
+            { "title": "RCF Publications", "text": ["The separate publishing and bookshop website: books, study guides, grammar resources and revision materials."], "url": "about/rcf-publications/", "more": "About the bookshop" }
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "Our Founder",
+          "eyebrow": "In brief",
+          "text": [
+            "RCF English was founded by **R. C. Fernando**, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
+            "He is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya, together with a TESOL qualification from the University of Peradeniya. He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
+            "[Read more about our founder](about/founder/) or [see his academic and professional background in full](about/background/)."
+          ]
+        },
+
+        {
+          "type": "steps",
+          "heading": "Our Educational Approach",
+          "eyebrow": "Five stages",
+          "variant": "navy",
+          "intro": [
+            "RCF English believes that successful learning requires more than presenting information. Learners should be shown how to understand a task, study an effective model, practise with guidance, work independently and identify their own mistakes."
+          ],
+          "layout": "row",
+          "items": [
+            { "title": "Understand", "text": ["Receive a clear explanation of the lesson or task."] },
+            { "title": "Observe", "text": ["Study useful examples and models."] },
+            { "title": "Practise", "text": ["Complete activities with appropriate guidance."] },
+            { "title": "Apply", "text": ["Use the knowledge independently."] },
+            { "title": "Review", "text": ["Identify mistakes, make corrections and strengthen understanding."] }
+          ]
+        },
+
+        {
+          "type": "prose",
+          "text": [
+            "This gradual progression is particularly important in writing, where many learners struggle when they are asked to produce complete answers without sufficient preparation. RCF English therefore gives special attention to guided writing, answer development, model responses and self-correction.",
+            "[Read more about our teaching approach](about/teaching-approach/)."
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "Bringing Our Services Together",
+          "eyebrow": "One umbrella platform",
+          "variant": "tint",
+          "text": [
+            "RCF English brings together the major areas of R. C. Fernando's educational work within one umbrella platform:"
+          ],
+          "bullets": [
+            "O/L English",
+            "O/L English Literature",
+            "General English",
+            "A/L Literature",
+            "past papers and revision materials",
+            "English teacher resources",
+            "interactive learning activities",
+            "RCF Classes",
+            "RCF Publications"
+          ]
+        },
+
+        {
+          "type": "prose",
+          "variant": "tint",
+          "text": [
+            "By bringing these services together, RCF English aims to make them easier to find, use and share. The website represents a continuation and expansion of work that began in classrooms and developed through Facebook, Telegram and WhatsApp educational communities.",
+            "Through RCF English, R. C. Fernando hopes to extend the reach of these services further, assist learners and educators throughout Sri Lanka, and build a growing national platform for dependable English-language education.",
+            "[Read about our online communities](about/online-communities/)."
+          ]
+        },
+
+        {
+          "type": "cards",
+          "heading": "Read more",
+          "columns": "4",
+          "items": [
+            { "title": "Our Founder", "url": "about/founder/", "more": "Open" },
+            { "title": "Academic and Professional Background", "url": "about/background/", "more": "Open" },
+            { "title": "Our Educational Mission", "url": "about/mission/", "more": "Open" },
+            { "title": "Our Teaching Approach", "url": "about/teaching-approach/", "more": "Open" },
+            { "title": "Our Online Communities", "url": "about/online-communities/", "more": "Open" },
+            { "title": "RCF Classes", "url": "rcf-classes/", "more": "Open" },
+            { "title": "RCF Publications", "url": "about/rcf-publications/", "more": "Open" },
+            { "title": "Contact Us", "url": "contact/", "more": "Open" }
+          ]
+        },
+
+        {
+          "type": "whatsapp",
+          "heading": "Talk to us",
+          "variant": "tint",
+          "title": "WhatsApp",
+          "text": ["Questions about the platform, the classes or the resources are welcome from students, teachers and parents alike."],
+          "buttons": [
+            { "label": "Ask a question", "message": "Hello, I have a question about RCF English. " },
+            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Classes. Please send me the schedule, fees and registration details." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "about/founder",
+      "title": "Our Founder",
+      "description": "R. C. Fernando, founder of RCF English: an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching.",
+      "keywords": "R. C. Fernando, founder, English teacher, lecturer, Sri Lanka",
+      "kicker": "About Us",
+      "kind": "page",
+      "schema": "Article",
+      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
+      "backTo": { "label": "About Us", "url": "about/" },
+      "hero": { "text": "RCF English was founded by R. C. Fernando, an experienced English teacher and lecturer." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "R. C. Fernando",
+          "text": [
+            "RCF English was founded by R. C. Fernando, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
+            "He has been a long-standing contributor to the development and sharing of English educational resources. His work extends beyond classroom teaching to teacher support, online learning communities, educational publishing and the preparation of practical learning materials."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The work in four parts",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Classroom teaching", "text": ["Several decades of work as a teacher and lecturer, in English language and in English Literature."] },
+            { "title": "Teacher support", "text": ["Resources, guidance and professional communities for English teachers."], "url": "about/online-communities/", "more": "Online communities" },
+            { "title": "Educational publishing", "text": ["Practical books, study guides and revision materials through RCF Publications."], "url": "about/rcf-publications/", "more": "RCF Publications" },
+            { "title": "Learning materials", "text": ["Explanations, models, guided activities and practice material prepared for learners at every level."], "url": "resources/", "more": "Resources" }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Qualifications in brief",
+          "text": [
+            "R. C. Fernando is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya. He has also obtained a TESOL qualification from the University of Peradeniya. He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
+            "[The full academic and professional background is set out here](about/background/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teaching today",
+          "variant": "tint",
+          "text": [
+            "R. C. Fernando currently conducts mainly online classes through RCF Classes. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
+            "[See the classes](rcf-classes/) or [read about the teaching approach](about/teaching-approach/)."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "about/background",
+      "title": "Academic and Professional Background",
+      "description": "The academic qualifications and professional preparation behind RCF English: a degree in English from the University of Peradeniya, an MA in Linguistics from the University of Kelaniya and a TESOL qualification.",
+      "keywords": "University of Peradeniya, University of Kelaniya, MA Linguistics, TESOL, CALSDA, qualifications",
+      "kicker": "About Us",
+      "kind": "page",
+      "schema": "Article",
+      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
+      "backTo": { "label": "About Us", "url": "about/" },
+      "hero": { "text": "Academic scholarship in English and linguistics, professional training in language teaching, and several decades of classroom experience." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Academic and Professional Background",
+          "text": [
+            "R. C. Fernando is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya. He has also obtained a TESOL qualification from the University of Peradeniya, further strengthening his professional preparation in English-language teaching.",
+            "He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
+            "His academic grounding in English, advanced study in linguistics and professional training in TESOL complement the practical knowledge he has gained through several decades of work as a teacher and lecturer. This combination of academic scholarship and classroom experience informs his approach to teaching, educational-resource development and publishing."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Qualifications",
+          "eyebrow": "Academic and professional",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Degree in English", "text": ["University of Peradeniya."] },
+            { "title": "Master of Arts in Linguistics", "text": ["University of Kelaniya."] },
+            { "title": "TESOL qualification", "text": ["University of Peradeniya."] },
+            { "title": "Associate Member, CALSDA", "text": ["Colombo Association of Language Skills and Dramatic Art."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why this matters for the material on this site",
+          "text": [
+            "A degree in English supports the literature teaching: the reading of poetry, drama and fiction, and the kind of close attention to a text that a good Literature answer needs.",
+            "Advanced study in linguistics supports the language teaching: an understanding of how English actually works, rather than a list of rules to be memorised, which is why the grammar explanations on this site try to give the reason as well as the rule.",
+            "TESOL training supports the teaching of English to learners for whom it is not a first language, which describes most of the students this platform is built for.",
+            "Several decades in classrooms supply what qualifications alone cannot: knowledge of where learners actually go wrong, and of what genuinely helps them."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "A note on claims",
+          "text": [
+            "The qualifications and memberships listed on this page are the ones held. RCF English does not claim any qualification, award, appointment or approval that it does not hold, and makes no claim of government endorsement or official status of any kind."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "about/mission",
+      "title": "Our Educational Mission",
+      "description": "The mission of RCF English: to make English learning clear, practical and accessible, to support learners who need additional guidance, and to strengthen English and literature teaching.",
+      "keywords": "educational mission, aims, English education, accessible learning",
+      "kicker": "About Us",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
+      "backTo": { "label": "About Us", "url": "about/" },
+      "hero": { "text": "What this platform is for, stated plainly." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Our Mission",
+          "text": ["The mission of RCF English is to:"],
+          "bullets": [
+            "make English learning clear, practical and accessible;",
+            "provide dependable resources for students and teachers;",
+            "support learners who require additional guidance;",
+            "strengthen English and literature teaching;",
+            "help students prepare confidently for examinations;",
+            "promote guided and independent learning;",
+            "use digital technology to extend educational opportunities;",
+            "support teachers through resources and professional communities; and",
+            "connect learners with suitable classes, publications and educational materials."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "What that means in practice",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Clear before clever", "text": ["An explanation that a struggling learner can follow is worth more than one that impresses a strong learner. Every lesson here is written for the student who has not understood it yet."] },
+            { "title": "Guided before independent", "text": ["No writing task is set without preparation. A learner is shown the task, given a model, walked through the structure, and only then asked to write alone."], "url": "ol-english/guided-writing/", "more": "Guided writing" },
+            { "title": "Free at the point of use", "text": ["Every lesson, past paper and activity on this site is free. A learner in a rural school should not be shut out of good material because of what it costs."] },
+            { "title": "Teachers as well as students", "text": ["A teacher who is supported teaches better. Lesson plans, marking guides and assessment material are given the same care as the student material."], "url": "teacher-resources/", "more": "Teacher resources" },
+            { "title": "Honest about what is known", "text": ["Where a fact is not certain, this site says so. Where a schedule or a fee has not been decided, it says that too, rather than inventing a figure."] },
+            { "title": "Built to reach people", "text": ["Pages are light, work on slow connections and old devices, and can be used with a keyboard or a screen reader."], "url": "accessibility/", "more": "Accessibility" }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "What this platform does not claim",
+          "bullets": [
+            "It does not promise examination results. Results depend on the student's own work.",
+            "It is not endorsed by, approved by or affiliated with any government department or examination authority.",
+            "It does not present its model answers as official answers."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "about/teaching-approach",
+      "title": "Our Teaching Approach",
+      "description": "How RCF English and RCF Classes teach: clear systematic explanation, guided practice before independent work, individual correction and additional support for learners in difficulty.",
+      "keywords": "teaching approach, guided practice, individual correction, learner confidence",
+      "kicker": "About Us",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
+      "backTo": { "label": "About Us", "url": "about/" },
+      "hero": { "text": "The same approach runs through the lessons on this site and the teaching in RCF Classes." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What the teaching emphasises",
+          "text": ["His teaching approach emphasises:"],
+          "bullets": [
+            "clear and systematic explanation;",
+            "guided practice before independent work;",
+            "practical use of language;",
+            "examination preparation where relevant;",
+            "individual correction and feedback;",
+            "regular revision;",
+            "development of confidence; and",
+            "additional support for learners experiencing difficulty."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The five stages, in detail",
+          "variant": "tint",
+          "intro": ["RCF English believes that successful learning requires more than presenting information. Learners should be shown how to understand a task, study an effective model, practise with guidance, work independently and identify their own mistakes."],
+          "items": [
+            { "title": "Understand", "text": ["Receive a clear explanation of the lesson or task. If a learner cannot say in their own words what the task is asking for, no amount of writing practice will help. This stage is not skipped, even when it seems obvious."] },
+            { "title": "Observe", "text": ["Study useful examples and models. A model is not something to copy; it is something to take apart. The learner is shown *why* each part of the model is there before being asked to produce anything similar."] },
+            { "title": "Practise", "text": ["Complete activities with appropriate guidance. The support is real at first — a structure, a set of prompts, a partly written answer — and is reduced deliberately as the learner becomes able to work without it."] },
+            { "title": "Apply", "text": ["Use the knowledge independently, without the model in front of you. This is the stage at which many courses begin. Here it is the fourth stage, not the first."] },
+            { "title": "Review", "text": ["Identify mistakes, make corrections and strengthen understanding. A checklist is provided for each kind of writing, so that self-correction becomes a habit rather than something only a teacher can do."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why writing gets special attention",
+          "text": [
+            "This gradual progression is particularly important in writing, where many learners struggle when they are asked to produce complete answers without sufficient preparation. RCF English therefore gives special attention to guided writing, answer development, model responses and self-correction.",
+            "A weak learner asked to \"write a letter\" with no preparation will usually produce something poor, be marked down, and conclude that they cannot write. Very often the problem was not ability but a missing stage. That is the mistake this approach is designed to avoid.",
+            "[See how guided writing works in practice](ol-english/guided-writing/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The same approach across the site",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "In O/L English", "url": "ol-english/guided-writing/", "more": "Guided writing", "text": ["Every writing form — emails, notices, letters, paragraphs, essays, picture description, dialogue and speeches — follows the six-step method."] },
+            { "title": "In Literature", "url": "ol-literature/developing-an-answer/", "more": "Developing an answer", "text": ["Point, evidence, explanation, effect and link: a structure a learner can use even when the text is difficult."] },
+            { "title": "In the classes", "url": "rcf-classes/", "more": "RCF Classes", "text": ["Explanation, guided practice, individual correction and regular revision, with extra support for learners in difficulty."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "about/online-communities",
+      "title": "Our Online Communities",
+      "description": "How R. C. Fernando built Facebook groups for English learning and teaching, and later exclusive Telegram and WhatsApp resource groups for English teachers.",
+      "keywords": "Facebook groups, Telegram, WhatsApp, English teachers, professional community",
+      "kicker": "About Us",
+      "kind": "page",
+      "schema": "Article",
+      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
+      "backTo": { "label": "About Us", "url": "about/" },
+      "hero": { "text": "This platform did not begin with a website. It began with teachers helping one another online, roughly a decade ago." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Building Online Resource Communities",
+          "text": [
+            "Approximately a decade ago, when online educational resources were far less widely available and artificial intelligence had not yet transformed the creation and distribution of learning materials, R. C. Fernando established several Facebook groups devoted to English learning and teaching.",
+            "These communities provided teachers and learners with access to educational materials, professional guidance and opportunities to exchange knowledge. For many members — particularly those with limited access to books, training and other educational support — the resources shared through these groups became a valuable source of assistance.",
+            "Recognising the need for more immediate professional support, he later created exclusive Telegram and WhatsApp resource groups for English teachers. Through these communities, teachers can obtain useful materials, exchange ideas and receive timely guidance relating to classroom teaching, lesson preparation, assessment and other professional needs.",
+            "These initiatives reflect a continuing commitment to using available technology to connect educators, share knowledge and make helpful resources more widely accessible."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "How the communities work",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Facebook groups", "text": ["Open communities for English learning and teaching, where materials, guidance and questions are shared between teachers and learners."] },
+            { "title": "Telegram and WhatsApp groups", "text": ["Exclusive resource groups for English teachers, for materials and timely professional guidance on teaching, lesson preparation and assessment."] },
+            { "title": "RCF English", "text": ["This website is the continuation of that work: the same materials and guidance, organised so that they can be found again rather than scrolled past."], "url": "teacher-resources/", "more": "Teacher resources" }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why a website as well",
+          "text": [
+            "A messaging group is excellent for immediate help and poor at keeping anything. A worksheet shared in a group on Monday is unreachable by Friday, and a teacher who joins next year never sees it at all.",
+            "RCF English exists to hold that material properly: arranged by subject, by task and by level, searchable, and available to anyone without joining anything.",
+            "The website represents a continuation and expansion of work that began in classrooms and developed through Facebook, Telegram and WhatsApp educational communities."
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Teachers: ask about the resource groups",
+          "variant": "tint",
+          "title": "WhatsApp",
+          "text": ["The Telegram and WhatsApp groups for English teachers are professional communities. If you teach English and would like to know more about them, send a message saying where and what you teach."],
+          "buttons": [
+            { "label": "Ask about the teacher groups", "message": "Hello, I am an English teacher and I would like to know about the RCF teacher resource groups on Telegram and WhatsApp. I teach: " }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "about/rcf-publications",
+      "title": "RCF Publications",
+      "description": "RCF Publications is the separate publishing and bookshop website associated with RCF English, producing practical educational books, study guides and revision materials.",
+      "keywords": "RCF Publications, books, study guides, English books, bookshop",
+      "kicker": "About Us",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
+      "backTo": { "label": "About Us", "url": "about/" },
+      "hero": {
+        "text": "RCF Publications is a separate website. This page explains what it publishes and how it relates to RCF English.",
+        "buttons": [
+          { "label": "Visit RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "style": "btn--accent" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About RCF Publications",
+          "text": [
+            "RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials.",
+            "The publications are designed to support classroom teaching, tuition classes, independent study and learning at home. Many place particular emphasis on simplified explanations, guided writing, practical exercises, revision and support for struggling learners.",
+            "RCF Publications operates through its own dedicated website, which visitors can access from RCF English."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "variant": "tint",
+          "title": "Two separate websites",
+          "bullets": [
+            "**RCF English** — this site. Lessons, past papers, teacher resources, interactive practice and RCF Classes. Everything here is free to read.",
+            "**RCF Publications** — a separate website. Books, study guides, eBooks, book samples, prices and ordering. It has its own terms and its own ordering arrangements.",
+            "RCF English does not sell books and does not take payments of any kind. Links to RCF Publications are marked and open in a new tab."
+          ]
+        },
+        {
+          "type": "publications",
+          "heading": "What RCF Publications produces",
+          "text": [
+            "Practical educational books written from classroom experience rather than assembled from other books, with the same emphasis on clear explanation and guided practice that runs through this site.",
+            "Ordering, prices, samples and payment are all handled on the RCF Publications website."
+          ],
+          "items": [
+            "Practical English support materials",
+            "Literature study guides",
+            "Grammar resources",
+            "Examination-revision materials",
+            "eBooks and book samples",
+            "Books written for struggling learners"
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Books alongside the free material",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "For classroom teaching", "text": ["Material a teacher can build a scheme of work around, used together with the free lesson plans and worksheets on this site."], "url": "teacher-resources/rcf-publications-for-teachers/", "more": "Books for teachers" },
+            { "title": "For tuition and home study", "text": ["Structured books for a learner working through a subject in order, rather than dipping into separate pages."] },
+            { "title": "For struggling learners", "text": ["Simplified explanations, guided writing and practical exercises, prepared for learners who need smaller steps."], "url": "teacher-resources/slow-learner-support/", "more": "Slow-learner support" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "pages": [
+    {
+      "slug": "ol-literature",
+      "title": "O/L Literature",
+      "metaTitle": "O/L English Literature | Poetry, stories, drama and novels | RCF English",
+      "description": "O/L English Literature: a consistent way to study every poem, short story, play and novel, with context answers, essay answers, themes, characters, techniques and revision.",
+      "keywords": "O/L English Literature, poetry, short stories, drama, novels, context questions, essay questions, model answers",
+      "kicker": "Ordinary Level",
+      "kind": "page",
+      "schema": "LearningResource",
+      "educationalLevel": "Ordinary Level",
+      "hero": {
+        "text": "Literature is not a memory subject either. It asks you to read closely, choose evidence, explain an effect and build an argument — and every one of those can be taught.",
+        "buttons": [
+          { "label": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "style": "btn--accent" },
+          { "label": "Prescribed texts", "url": "ol-literature/texts/", "style": "btn--ghost-light" },
+          { "label": "Past papers", "url": "past-papers/ol-literature/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Every text, set out the same way",
+          "text": [
+            "Students lose time hunting for information, because every book and every website arranges its notes differently. On RCF English, **every** poem, short story, play and novel is set out in the same fifteen sections, in the same order.",
+            "Once you have used one text page, you know exactly where to look in all the others. Everything belonging to one text — its summary, its themes, its quotations, its questions and its answers — stays together on that text's own page."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The fifteen sections",
+          "variant": "navy",
+          "intro": ["This is the order used on every text page on this site."],
+          "items": [
+            { "title": "Introduction", "text": ["What the text is, and what to look out for."] },
+            { "title": "Author or playwright", "text": ["Who wrote it. Facts only, never invented."] },
+            { "title": "Background", "text": ["When and where it was written, and what a reader needs to know."] },
+            { "title": "Summary or plot", "text": ["What happens, in order."] },
+            { "title": "Characters", "text": ["Who they are, what they want, and how they change."] },
+            { "title": "Themes", "text": ["The ideas about life the text explores."] },
+            { "title": "Literary or dramatic techniques", "text": ["How the writer achieves the effects."] },
+            { "title": "Important quotations", "text": ["Short, accurate, with what each one is useful for."] },
+            { "title": "Context questions", "text": ["Short questions on a given extract."] },
+            { "title": "Concise context answers", "text": ["Model answers of the right length."] },
+            { "title": "Essay questions", "text": ["Full questions of the kind asked in the paper."] },
+            { "title": "Developed model answers", "text": ["Full answers with notes explaining why they work."] },
+            { "title": "Common student mistakes", "text": ["The errors made most often on this text."] },
+            { "title": "Revision exercises", "text": ["Activities to check what has actually stayed."] },
+            { "title": "Related past-paper questions", "text": ["Where this text has been examined before."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "By genre",
+          "eyebrow": "Find your text",
+          "columns": "4",
+          "items": [
+            { "title": "Poetry", "url": "ol-literature/poetry/", "more": "Open", "text": ["How to read a poem, and the poems set out in the fifteen sections."] },
+            { "title": "Short Stories", "url": "ol-literature/short-stories/", "more": "Open", "text": ["Plot, character, narration and the way a short story turns."] },
+            { "title": "Drama", "url": "ol-literature/drama/", "more": "Open", "text": ["Reading a play as performance, not only as text."] },
+            { "title": "Novels", "url": "ol-literature/novels/", "more": "Open", "text": ["Handling a long text without drowning in detail."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Answering questions",
+          "eyebrow": "Where the marks are",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Context Questions", "url": "ol-literature/context-questions/", "more": "Open", "text": ["Short questions on an extract, and how long each answer should be."] },
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open", "text": ["Reading the question, planning, and building an argument."] },
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open", "text": ["Point, evidence, explanation, effect, link — the structure behind every good answer."] },
+            { "title": "Model Answers", "url": "ol-literature/model-answers/", "more": "Open", "text": ["Full answers with notes."] },
+            { "title": "How Teachers Can Mark Answers", "url": "ol-literature/marking-answers/", "more": "Open", "text": ["For teachers: marking so that the student learns from the mark."] },
+            { "title": "Common Student Mistakes", "url": "ol-literature/common-mistakes/", "more": "Open", "text": ["Story-telling instead of answering, and the other habitual faults."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Study tools",
+          "columns": "4",
+          "items": [
+            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
+            { "title": "Characters", "url": "ol-literature/characters/", "more": "Open" },
+            { "title": "Literary Techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
+            { "title": "Important Quotations", "url": "ol-literature/quotations/", "more": "Open" },
+            { "title": "Syllabus", "url": "ol-literature/syllabus/", "more": "Open" },
+            { "title": "Prescribed Texts", "url": "ol-literature/texts/", "more": "Open" },
+            { "title": "Revision Activities", "url": "ol-literature/revision-activities/", "more": "Open" },
+            { "title": "Past Papers", "url": "past-papers/ol-literature/", "more": "Open" }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "variant": "tint",
+          "title": "Copyright and literary texts",
+          "text": [
+            "RCF English does not reproduce complete copyrighted poems, stories, plays or novels. What you will find here is original study material — summaries, analysis, themes, character notes, questions and model answers — with short quotations used for study and criticism.",
+            "You will still need your prescribed book. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "relatedBooks",
+          "heading": "Find related books",
+          "text": ["RCF Publications produces literature study guides for O/L English Literature, with summaries, analysis, questions and model answers."]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/syllabus",
+      "title": "Syllabus",
+      "description": "How the O/L English Literature examination is organised, what context and essay questions ask for, and how to plan revision across the prescribed texts.",
+      "keywords": "O/L Literature syllabus, examination structure, context questions, essay questions",
+      "kicker": "O/L Literature",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "What the examination asks of you, and how to organise a year of revision around it." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Check the official syllabus for your year",
+          "text": [
+            "The prescribed texts, the structure of the paper and the choices offered are set by the examination authority and change from time to time.",
+            "**Confirm the prescribed texts and the format for your own examination year against the current official syllabus.** This page explains what the examination is testing and how to prepare for it; it is not an official statement of the requirements, and no website should be treated as one."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Literature actually tests",
+          "text": ["Whatever the exact format, a Literature paper is testing four abilities. Every question is one of these in some combination."],
+          "numbered": [
+            "**Do you know the text?** Not every word of it, but what happens, who is involved, and where the important moments are.",
+            "**Can you find the right evidence?** Given a question, can you go to the part of the text that answers it, and quote or refer to it accurately?",
+            "**Can you explain how the writing works?** Naming a technique is worth little; explaining its effect on the reader is worth a great deal.",
+            "**Can you build an argument?** A Literature essay is an argument with evidence, not a retelling of the story."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The two kinds of question",
+          "variant": "tint",
+          "parts": [
+            { "heading": "Context questions", "text": ["A short extract is printed, followed by several short questions. They test whether you can place the extract in the text, understand what is happening at that moment, and comment briefly on the language. Answers are **short** — often one or two sentences. Writing a paragraph where a sentence is wanted wastes time you need elsewhere. See [Context Questions](ol-literature/context-questions/)."] },
+            { "heading": "Essay questions", "text": ["A statement or a question about a whole text, to be answered in a full essay with evidence from the text. These carry the largest marks and reward planning. See [Essay Questions](ol-literature/essay-questions/)."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to organise a year",
+          "numbered": [
+            "**Read each prescribed text once, straight through, without notes.** You need the shape of it in your head before analysis will mean anything.",
+            "**Then read it again with a pencil.** Mark the moments that matter: turning points, decisions, changes in a character, striking language.",
+            "**Build the fifteen sections for each text yourself**, in your own notebook. Building your own notes teaches you more than reading someone else's.",
+            "**Learn ten short quotations per text**, chosen because each is useful for two or three different questions.",
+            "**Write one full essay per text**, timed, and correct it against a checklist.",
+            "**In the last month, revise your own written answers**, not new material."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Prescribed Texts", "url": "ol-literature/texts/", "more": "Open" },
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "Revision Activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/texts",
+      "title": "Prescribed Texts",
+      "description": "The O/L English Literature texts on RCF English, each set out in the same fifteen sections, with everything belonging to a text kept together on its own page.",
+      "keywords": "O/L Literature prescribed texts, set texts, poems, short stories, plays, novels",
+      "kicker": "O/L Literature",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Each text has its own page, arranged in the same fifteen sections, so that everything belonging to that poem, story, play or novel stays in one place." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Prescribed texts change",
+          "text": [
+            "The list of prescribed texts is set by the examination authority and is revised from time to time. **Always check the current official syllabus for your own examination year.** Do not prepare a text simply because a website, a guide or an older sibling's notes include it."
+          ]
+        },
+        {
+          "type": "literature",
+          "heading": "Texts on RCF English",
+          "level": "O/L",
+          "intro": ["Texts appear here as their pages are written and checked. Each one follows the fifteen-section structure described below."]
+        },
+        {
+          "type": "steps",
+          "heading": "What every text page contains",
+          "variant": "tint",
+          "items": [
+            { "title": "Introduction", "text": ["What kind of text this is and what to watch for as you read."] },
+            { "title": "Author or playwright", "text": ["Who wrote it. Only what is known and verifiable — nothing is invented."] },
+            { "title": "Background", "text": ["When and where it was written, and any context a reader needs in order to make sense of it."] },
+            { "title": "Summary or plot", "text": ["What happens, in order, without interpretation mixed in."] },
+            { "title": "Characters", "text": ["Who each character is, what they want, how they change, and how they relate to the others."] },
+            { "title": "Themes", "text": ["The ideas about life the text explores, each with the moments in the text that carry it."] },
+            { "title": "Literary or dramatic techniques", "text": ["Imagery, symbolism, irony, structure, stagecraft — each named, explained, and tied to its effect."] },
+            { "title": "Important quotations", "text": ["Short and accurate, each with a note on which questions it can be used for."] },
+            { "title": "Context questions", "text": ["Short questions on printed extracts, of the kind the paper asks."] },
+            { "title": "Concise context answers", "text": ["Model answers of the right length — short, because context answers should be short."] },
+            { "title": "Essay questions", "text": ["Full questions on the text, of the kind the paper asks."] },
+            { "title": "Developed model answers", "text": ["Full essay answers with notes explaining how each is built."] },
+            { "title": "Common student mistakes", "text": ["The errors students actually make on this particular text."] },
+            { "title": "Revision exercises", "text": ["Activities to check what has stayed, rather than what was merely read."] },
+            { "title": "Related past-paper questions", "text": ["Where this text has been examined, so you can see the range of questions asked."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "What is and is not reproduced",
+          "bullets": [
+            "**Not reproduced:** complete copyrighted poems, stories, plays or novels, or large parts of them. You will need your prescribed book.",
+            "**Reproduced:** short quotations, used for study and criticism, with the author and work named.",
+            "**Original work by RCF English:** summaries, character notes, themes, analysis, questions, model answers and revision exercises.",
+            "Nothing on a text page is invented. Where a fact about an author or a text is not certain, it is not stated. See the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/poetry",
+      "title": "Poetry",
+      "description": "How to read and answer questions on poetry at O/L: form, sound, imagery, speaker and tone, with a method for approaching any poem, seen or unseen.",
+      "keywords": "O/L Literature poetry, how to read a poem, imagery, tone, stanza, rhyme",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "Most students can say what a poem is about. Marks are given for saying how it does what it does." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "A method for reading any poem",
+          "intro": ["Use this on a prescribed poem and on an unseen one. It takes about ten minutes."],
+          "items": [
+            { "title": "Read it aloud, twice", "text": ["Poetry is written for the ear. Reading aloud reveals rhythm, pauses and emphasis that silent reading hides — and often reveals the meaning too."] },
+            { "title": "Ask: who is speaking, and to whom?", "text": ["The speaker of a poem is not automatically the poet. Ask what kind of person is speaking, in what situation, and to whom. This one question answers a surprising number of examination questions."] },
+            { "title": "Find the turn", "text": ["Most poems change direction somewhere: a *but*, a *yet*, a question, a change of tense, a change of tone. Find that moment and you have usually found the heart of the poem."] },
+            { "title": "Mark the pictures", "text": ["Underline every image — anything you can see, hear, touch, taste or smell. Then ask what they have in common. Images in a poem are rarely random; they usually belong to one or two families."] },
+            { "title": "Listen for the sound", "text": ["Where does the poem speed up or slow down? Are the lines long or short? Does it rhyme, and where does the rhyme break? Sound carries meaning in poetry."] },
+            { "title": "Say the poem's point in one sentence", "text": ["If you cannot, you do not yet understand it. If you can, you have your essay's thesis."] }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "The terms you need, and what to do with them",
+          "variant": "tint",
+          "intro": ["Naming a technique gains almost nothing. Naming it, quoting it and explaining its effect gains the mark. The third part is the one students leave out."],
+          "items": [
+            { "term": "Imagery", "definition": "Language that appeals to the senses. Ask what kind of images the poet uses — natural, violent, domestic, religious — because the pattern is usually meaningful.", "example": "Instead of \"the poet uses imagery\", write \"the images are all of machinery and noise, which makes the village feel invaded rather than merely changed\"." },
+            { "term": "Simile and metaphor", "definition": "Comparisons — with *like* or *as* for a simile, without for a metaphor. Always ask what the comparison brings with it.", "example": "Comparing grief to a stone suggests weight and coldness, and something that will not dissolve." },
+            { "term": "Personification", "definition": "Giving human qualities to something not human. Ask why the poet wanted that thing to seem alive.", "example": "A river that \"argues\" with its banks is being made restless and wilful." },
+            { "term": "Tone", "definition": "The attitude the poem takes to its subject: angry, tender, mocking, resigned, celebratory. Tone questions are common and are usually answered too vaguely.", "example": "Rather than \"the tone is sad\", identify it more exactly: bitter, wistful, resigned, defiant." },
+            { "term": "Stanza and form", "definition": "How the poem is divided, and whether the divisions match the movement of thought.", "example": "A poem whose last stanza is shorter than the others often does so to close abruptly or to leave something unfinished." },
+            { "term": "Rhythm and metre", "definition": "The beat of the lines. You do not need technical scansion at O/L; you do need to notice when the rhythm changes.", "example": "A smooth rhythm broken by a short, hard line usually marks a shock or a decision." },
+            { "term": "Rhyme", "definition": "Repeated sounds at line ends. What matters is the pattern and, especially, where the pattern breaks.", "example": "A regular rhyme scheme that fails in the final couplet can suggest that order has collapsed." },
+            { "term": "Enjambment", "definition": "A sentence running over the end of a line without a pause.", "example": "It can create speed, breathlessness, or a small surprise as the meaning turns at the line break." },
+            { "term": "Repetition", "definition": "A word, phrase or structure used again deliberately.", "example": "Repetition can suggest obsession, insistence, monotony or ritual — say which." },
+            { "term": "Symbol", "definition": "An object standing for a larger idea.", "example": "A closed gate may stand for exclusion, or for protection, depending on how the poem treats it. Argue for your reading; do not assume it." }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Turning observation into an answer",
+          "intro": ["The example lines below are invented for the purpose of illustration, so that the method can be shown without quoting from a copyrighted poem."],
+          "items": [
+            {
+              "label": "From notice to answer",
+              "prompt": "Suppose a poem's speaker describes a returning soldier and the line reads: *The gate still opens on its rusted cry.*",
+              "sample": [
+                "**Weak answer:** The poet uses imagery here. It shows that the gate is old.",
+                "**Strong answer:** The gate's noise is described as a \"rusted cry\", a metaphor that gives the gate a human voice and makes its sound one of pain rather than of welcome. The word \"still\" tells us that nothing at home has changed, and the contrast with the soldier, who has changed entirely, is left for the reader to feel rather than being stated. The homecoming is therefore made uneasy from the first line, before anything at all has happened."
+              ],
+              "notes": [
+                "The strong answer **quotes exactly** — two words are enough. Long quotations waste time.",
+                "It **names** the technique (metaphor) but does not stop there.",
+                "It **explains the effect**: a human voice, pain rather than welcome.",
+                "It notices a **small word** — *still* — which is where much of the meaning in poetry lives.",
+                "It connects the detail to the **whole poem**: the homecoming is uneasy from the start.",
+                "The weak answer is not wrong. It simply stops at the point where the marks begin."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "The commonest poetry mistake",
+          "text": [
+            "Writing about the subject of the poem instead of the poem. An answer that describes what happens to the speaker, without once looking at a word the poet chose, cannot reach the higher marks however fluent it is.",
+            "The test: does your answer contain at least two short quotations, each explained? If not, it is about the subject, not the poem."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Literary Techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
+            { "title": "Context Questions", "url": "ol-literature/context-questions/", "more": "Open" },
+            { "title": "Prescribed Texts", "url": "ol-literature/texts/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/short-stories",
+      "title": "Short Stories",
+      "description": "How to study short stories for O/L Literature: plot and structure, character, narration, setting, and the turn on which a short story depends.",
+      "keywords": "O/L Literature short stories, plot, narrator, character, setting, climax",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "A short story has no room to waste. Everything in it is there for a reason — which is exactly what examination questions are about." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What to notice in a short story",
+          "numbered": [
+            "**Where does it begin?** A short story usually begins as late as possible, close to the moment of change. Ask what the writer has left out, and why.",
+            "**Who is telling it?** First person (*I*) puts you inside one mind and limits what you can know. Third person can move between characters or stay with one. The choice always affects your sympathy.",
+            "**Where does it turn?** Almost every short story has one moment after which nothing can go back to how it was. Find it. Most essay questions circle around it.",
+            "**How does it end?** Short stories often end without resolving everything. An unresolved ending is a deliberate choice, not a failure, and saying what it leaves open is often worth marks.",
+            "**What is the setting doing?** In a short story, setting is rarely decoration. Heat, rain, a cramped room or a long road usually carry meaning."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The parts of a short story",
+          "variant": "tint",
+          "columns": ["Part", "What it does", "Question to ask"],
+          "rows": [
+            ["Exposition", "Establishes who, where and when", "How quickly does the writer get through it?"],
+            ["Complication", "Introduces the problem or tension", "What exactly changes, and who causes it?"],
+            ["Rising action", "Increases the pressure", "What is at stake, and for whom?"],
+            ["Climax", "The moment of greatest tension or decision", "What is decided here that cannot be undone?"],
+            ["Falling action", "The consequences", "Who has to live with the result?"],
+            ["Resolution", "How things are left", "What is settled, and what is deliberately not?"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Character in a short story",
+          "text": [
+            "There is no space for a full life history, so a short-story writer shows character in small ways: one decision, one refusal, one gesture, one thing a character notices when others do not.",
+            "In an answer, therefore, do not describe a character in adjectives. Take one action and explain what it reveals. *He was kind* is worth little. *He gives away the last of his rice without mentioning it to anyone, which shows a generosity that does not want to be seen* is worth a great deal more, because it is grounded in the text."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Narration and point of view",
+          "variant": "tint",
+          "bullets": [
+            "**First person** — *I*. Immediate and intimate, but you only know what the narrator knows, and the narrator may be mistaken or unfair. Always ask whether you trust them.",
+            "**Third person limited** — the story follows one character's perspective. You see others only from the outside.",
+            "**Third person omniscient** — the narrator can enter any mind. Ask whose mind the writer chooses to enter, and whose is kept closed to us.",
+            "**A useful examination question to be ready for:** *How would the story be different if it were told by another character?* The answer is always about sympathy and about what would be hidden."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "The commonest short-story mistake",
+          "text": [
+            "Retelling the story. An answer that narrates events from beginning to end, however accurately, is not answering a question. The examiner knows the story.",
+            "**The test:** could someone who had not read the story understand your answer? If yes, you may be summarising. Could someone who had read it learn something from you? If no, you are certainly summarising."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Characters", "url": "ol-literature/characters/", "more": "Open" },
+            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
+            { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/drama",
+      "title": "Drama",
+      "description": "How to study a play for O/L Literature: reading drama as performance, dramatic techniques, stagecraft, conflict, dialogue and dramatic irony.",
+      "keywords": "O/L Literature drama, play, stagecraft, dramatic irony, soliloquy, conflict",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "A play is not a story with the speech marks removed. It was written to be watched, and the best answers remember that." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Read it as performance",
+          "text": [
+            "When you read a play, keep asking what an audience would **see** and **hear**, not only what they would be told.",
+            "This one habit lifts drama answers immediately, because it produces the observations that examiners reward: who is on stage and who is absent, who speaks most, who is silent, what the audience knows that a character does not."
+          ],
+          "bullets": [
+            "**Who is on stage?** A character who is present but silent is doing something. Ask what.",
+            "**Who leaves, and when?** Entrances and exits are the punctuation of a play.",
+            "**What does the audience know?** If they know more than a character, every line that character speaks becomes charged.",
+            "**What is physically happening?** An object handed over, a door closed, a light dimmed — stage action carries meaning that dialogue does not have to state.",
+            "**Where does the act or scene end?** Writers end scenes at their most uncomfortable moment. Ask why this one."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Dramatic techniques",
+          "variant": "tint",
+          "items": [
+            { "term": "Dramatic irony", "definition": "The audience knows something a character does not. Everything that character then says takes on a second meaning.", "example": "Ask what the audience feels — pity, dread, amusement — and say so. That feeling is the effect you are being asked to explain." },
+            { "term": "Soliloquy", "definition": "A character alone on stage speaks their thoughts aloud.", "example": "It gives the audience direct access to a mind. Ask whether what is said matches how the character behaves in company." },
+            { "term": "Aside", "definition": "A short remark heard by the audience but not by the other characters.", "example": "It creates complicity between a character and the audience, and often reveals a hidden intention." },
+            { "term": "Conflict", "definition": "The opposition that drives the play — between characters, within a character, or between a character and their circumstances.", "example": "Identify which kind. Many plays run two conflicts at once, one external and one internal." },
+            { "term": "Stage directions", "definition": "The author's instructions about setting, movement, gesture and tone.", "example": "They are part of the text and may be quoted. A direction such as *she does not look at him* can be worth a paragraph." },
+            { "term": "Climax", "definition": "The point of highest tension, after which the direction of the play changes.", "example": "Locate it precisely. Many essay questions are really asking about the approach to it or the fall from it." },
+            { "term": "Tragedy and comedy", "definition": "Broad forms shaping expectation: tragedy moving towards loss, comedy towards restoration.", "example": "A play that mixes them does so deliberately. Comic relief in a serious play usually sharpens what follows rather than softening it." },
+            { "term": "Symbolism on stage", "definition": "An object, a place or a piece of costume that carries meaning beyond itself.", "example": "Because an audience sees it repeatedly, a stage object gathers meaning through the play." }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Writing about dialogue",
+          "text": [
+            "In a play, everything you know about a character comes from what they say, how they say it, what they avoid saying, and what others say about them.",
+            "When you quote dialogue, comment on **how** it is spoken as well as what it means. Is the line short or long? Is it a question, an order, an evasion? Does the character interrupt, or get interrupted? Does the character ever fall silent?",
+            "A character who answers a direct question with another question is telling you something. Say what."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "A phrase worth using",
+          "text": [
+            "Get into the habit of writing *the audience* rather than *the reader* when answering on drama: **\"the audience is made to feel…\"**, **\"the audience already knows…\"**, **\"the audience watches him promise something we know he cannot do.\"**",
+            "It is a small change that makes an answer sound like the work of someone who understands what a play is."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Literary Techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
+            { "title": "Characters", "url": "ol-literature/characters/", "more": "Open" },
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "ol-literature/novels",
+      "title": "Novels",
+      "description": "How to study a novel for O/L Literature without drowning in detail: structure, character development, setting, narration, themes and choosing evidence.",
+      "keywords": "O/L Literature novel, chapters, character development, narration, theme, evidence",
+      "kicker": "O/L Literature",
+      "kind": "lesson",
+      "schema": "LearningResource",
+      "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
+      "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
+      "hero": { "text": "The difficulty with a novel is not understanding it. It is remembering it, and finding the right ten lines out of three hundred pages." },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "How to make a long text manageable",
+          "items": [
+            { "title": "Read it once without stopping", "text": ["Do not take notes on a first reading. Get the whole shape into your head. Notes taken before you know how a novel ends are usually notes about the wrong things."] },
+            { "title": "Make a one-line chapter list", "text": ["One line per chapter, no more. Six words each. This single page will be worth more in the last week of revision than fifty pages of notes."] },
+            { "title": "Track each main character across the book", "text": ["Three columns: where they start, what changes them, where they end. A character who does not change is also worth noting, and why."] },
+            { "title": "Collect ten quotations, no more", "text": ["Short ones. Choose each because it is useful for more than one question. Ten well-chosen quotations beat fifty half-remembered ones."] },
+            { "title": "Write the themes down as sentences, not words", "text": ["*Poverty* is not a theme; it is a topic. *The novel shows how poverty narrows the choices available to people who are otherwise capable* is a theme, and it can be argued."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing evidence in a long text",
+          "variant": "tint",
+          "text": [
+            "The commonest weakness in novel answers is evidence that is vague: *at one point in the story*, *later on*, *in the end*. Vague evidence suggests you cannot find the place, and examiners read it that way.",
+            "Precise evidence does not require a long quotation. *When she refuses the money at the railway station* is precise, and it is only eight words. Two or three short, exact references are stronger than one long quotation.",
+            "For each theme you prepare, fix **three moments** in the novel that show it — early, middle and late. Three moments across the book let you show development, which is what higher marks are given for."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Structure and narration",
+          "bullets": [
+            "**How is the novel divided?** Parts, chapters, sections, time jumps. Divisions usually mark stages in the argument of the book, not only in its plot.",
+            "**Is the story told in order?** If not, ask what is gained by telling it out of order. Usually it is either suspense or irony.",
+            "**Who narrates, and how much do they know?** The same questions as for a short story, but with more room for the narrator's attitude to show itself.",
+            "**Where does the novel begin and end?** The first page and the last page of a novel are rarely accidental. Compare them; the comparison often answers a whole essay question by itself."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "variant": "tint",
+          "title": "The commonest novel mistake",
+          "text": [
+            "Answering a question about a theme by telling the story from the beginning. The examiner is not checking whether you read the book; they are checking whether you can argue about it.",
+            "**A simple discipline:** every paragraph of your essay should begin with a point, not with an event. If a paragraph opens with *Then he goes to…*, rewrite the opening sentence."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
+            { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" },
+            { "title": "Important Quotations", "url": "ol-literature/quotations/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}
