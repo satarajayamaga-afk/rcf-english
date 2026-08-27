@@ -20,25 +20,25 @@ Where something was **not** tested, it says so.
 |---|---|
 | Dependencies installed | **Not applicable.** There are none. The site is built by Windows PowerShell, which is already on the machine. No Node.js, npm, Python or package manager is used or required. |
 | Development server runs | ✅ `preview.cmd` starts a local server and serves the site. Falls back to the next free port if one is busy. |
-| Production build runs | ✅ `build.cmd` completes: **137 pages** written, search index of **153 entries**, `sitemap.xml` (135 URLs), `robots.txt`, `.nojekyll` and `assets/js/site-config.js` generated. |
+| Production build runs | ✅ `build.cmd` completes: **133 pages** written, search index of **148 entries**, `sitemap.xml` (132 URLs), `robots.txt`, `.nojekyll` and `assets/js/site-config.js` generated. |
 | Build errors and warnings | ✅ Build finishes with **no errors and no warnings**. |
 | Data files valid | ✅ `check.cmd` reports all **26** JSON files readable. |
 
-## Links and structure — all 137 pages, not a sample
+## Links and structure — all 133 pages, not a sample
 
 | Check | Result |
 |---|---|
 | Broken internal links | ✅ **43,467 internal links checked, none broken.** This runs automatically on every build and the build fails if any link is wrong. |
-| Unique page titles | ✅ 137 pages, **137 unique titles**. (Duplicates were found and fixed by folding the section name into the title.) |
-| Meta description on every page | ✅ 137 / 137 |
-| Canonical URL on every page | ✅ 137 / 137 |
-| Exactly one `<h1>` per page | ✅ 137 / 137 |
-| `lang="en"` on every page | ✅ 137 / 137 |
-| Skip-to-content link and `<main>` landmark | ✅ 137 / 137 |
-| No empty or placeholder `href` | ✅ 137 / 137 |
-| Every image has `alt` | ✅ 137 / 137 |
-| External links open safely (`target="_blank"` + `rel="noopener"`) | ✅ 137 / 137 |
-| Every form control has a label | ✅ 137 / 137 |
+| Unique page titles | ✅ 133 pages, **133 unique titles**. (Duplicates were found and fixed by folding the section name into the title.) |
+| Meta description on every page | ✅ 133 / 133 |
+| Canonical URL on every page | ✅ 133 / 133 |
+| Exactly one `<h1>` per page | ✅ 133 / 133 |
+| `lang="en"` on every page | ✅ 133 / 133 |
+| Skip-to-content link and `<main>` landmark | ✅ 133 / 133 |
+| No empty or placeholder `href` | ✅ 133 / 133 |
+| Every image has `alt` | ✅ 133 / 133 |
+| External links open safely (`target="_blank"` + `rel="noopener"`) | ✅ 133 / 133 |
+| Every form control has a label | ✅ 133 / 133 |
 | Structured data (JSON-LD) parses | ✅ Valid on all pages. `EducationalOrganization`, `LearningResource`, `Course`, `Article`, `WebPage`, `BreadcrumbList` and `FAQPage` as appropriate. |
 | Heading order (no skipped levels) | ✅ Checked; no jumps found. |
 
@@ -119,22 +119,22 @@ All ten activities across all seven types were opened and worked through.
 | Forms are honest about having no server | ✅ Each says the message opens in WhatsApp or your email program, where **you** press send |
 | **Bookshop link driven by one config value** | ✅ Changing `PUBLICATIONS_WEBSITE_URL` in `_src/config.json` updated **all 558 references** across the site plus `site-config.js`. Tested, then restored to the placeholder. |
 | RCF Publications marked as an external bookshop | ✅ External icon, "(external bookshop, opens in a new tab)" for screen readers, `rel="noopener"` — once the bookshop has an address |
-| **No placeholder is ever left as a link** | ✅ While `PUBLICATIONS_WEBSITE_URL` holds no real address, the token appears **0 times** in the built pages. Every bookshop link becomes "Coming soon" and points at the page explaining the bookshop. Verified across all 137 pages. |
+| **No placeholder is ever left as a link** | ✅ While `PUBLICATIONS_WEBSITE_URL` holds no real address, the token appears **0 times** in the built pages. Every bookshop link becomes "Coming soon" and points at the page explaining the bookshop. Verified across all 133 pages. |
 | The "Coming soon" state reverses automatically | ✅ Setting a real address and rebuilding produced **558 external links and 0 "Coming soon" markers**, and removed the explanatory notices. Setting the placeholder back restored the "Coming soon" state exactly. No page was edited either way. |
 | "Visit the bookshop" buttons while unpublished | ✅ Rendered as plain markers that are not links, so nothing invites a click that would fail. On the page that explains the bookshop they do not link to that same page. |
 
-## RCF Classes
+## RCF Online Academy
 
 | Check | Result |
 |---|---|
 | Class cards render from `data/classes.json` | ✅ |
-| Unavailable class types are hidden, not shown empty | ✅ `physical` is `"published": false`, so it is absent from every menu and from the sitemap |
+| Unavailable courses are hidden, not shown empty | ✅ Setting `"published": false` on a course removes it from the menu, the site and the sitemap, so there is never an empty page for a course that is not being taught |
 | Honest placeholders | ✅ "Schedule to be announced", "Fees available on request", "Registration opening soon" — no invented day, time, fee, location or number of places anywhere |
 | Timetable — desktop | ✅ Tested with temporary schedule data: proper table, `<caption>`, `scope="col"` and `scope="row"` |
 | Timetable — mobile | ✅ Becomes **cards** below 720px; no sideways scrolling |
 | Timetable — nothing scheduled | ✅ Falls back to an honest "Schedule to be announced" panel with a WhatsApp button |
 | Temporary test data removed | ✅ Verified: no test schedule remains |
-| Five-step enrolment shown | ✅ And it states plainly that registration is not automatic |
+| Five-step registration shown | ✅ And it states plainly that nothing on the website registers anybody; a place is confirmed by the teacher |
 | No private information published | ✅ No meeting links, passwords, student names or results anywhere |
 
 ## Responsive layout
@@ -196,10 +196,10 @@ Also checked: no text under 14px in body copy; every button and menu link at lea
 | Check | Result |
 |---|---|
 | No root-absolute paths | ✅ 0 occurrences of `href="/…"` or `src="/…"` |
-| Relative depth prefixes correct | ✅ 0 mismatches across 137 pages |
+| Relative depth prefixes correct | ✅ 0 mismatches across 133 pages |
 | **Served under a sub-path** | ✅ Served at `http://localhost:8130/rcf-english/`, exactly as a GitHub Pages project site. CSS, JavaScript, icons, navigation, search, activities and filters all worked. No console errors. |
 | 404 page | ✅ Uses absolute links deliberately, so it works at any address |
-| `sitemap.xml` | ✅ 135 URLs. Correctly excludes the 404 page and the hidden Physical Classes page |
+| `sitemap.xml` | ✅ 132 URLs. Correctly excludes the 404 page and any course hidden with `"published": false` |
 | `robots.txt` | ✅ Disallows `/_src/` and `/tools/`, points at the sitemap |
 | GitHub Actions workflow | ✅ Present. Validates the data files and confirms the site is built before publishing. **Not yet run** — it can only run once the repository exists on GitHub. |
 
@@ -243,7 +243,7 @@ These were real faults, found by testing and corrected:
    eyebrow and a navy heading on a dark background. Both now use light colours.
 7. **Fifteen pages shared a title with another page** (four pages called "Model
    Answers", three "Common Student Mistakes", and so on). The section name is now
-   folded into the title, giving 137 unique titles.
+   folded into the title, giving 133 unique titles.
 8. **Form error messages read awkwardly** — "Please fill in your name (required)."
    The "(required)" note is now stripped, and select fields say "choose" rather than
    "fill in".
@@ -251,7 +251,7 @@ These were real faults, found by testing and corrected:
 Found later, while making the bookshop link safe:
 
 9. **A hero button was silently dropped whenever a page had exactly one of them.**
-   Eleven pages were affected, including both bookshop pages and every RCF Classes
+   Eleven pages were affected, including both bookshop pages and every RCF Online Academy
    course page. The cause was in the build script: PowerShell unrolls a one-item
    list on the way out of a function, so the count came back empty and the button
    block was skipped. Fixed at the source, so every hero button now appears.

@@ -204,37 +204,29 @@
     {
       "label": "RCF Online Academy",
       "url": "rcf-classes/",
-      "summary": "Online English and Literature classes conducted by R. C. Fernando. Ask about schedules and fees on WhatsApp.",
+      "summary": "Elocution diplomas prepared for the CALSDA examinations, and Literature courses from Grade 9 to Advanced Level, conducted online by R. C. Fernando.",
+      "_urlNote": "The addresses stay under rcf-classes/ so that links already shared do not break.",
       "groups": [
-        { "title": "Courses", "links": [
-          { "label": "Classes Overview", "url": "rcf-classes/" },
-          { "label": "O/L English Classes", "url": "rcf-classes/ol-english/", "course": "ol-english" },
-          { "label": "O/L Literature Classes", "url": "rcf-classes/ol-literature/", "course": "ol-literature" },
-          { "label": "A/L Literature Classes", "url": "rcf-classes/al-literature/", "course": "al-literature" },
-          { "label": "General English Classes", "url": "rcf-classes/general-english/", "course": "general-english" },
-          { "label": "Spoken English Classes", "url": "rcf-classes/spoken-english/", "course": "spoken-english" },
-          { "label": "Revision Classes", "url": "rcf-classes/revision/", "course": "revision" }
+        { "title": "Start here", "links": [
+          { "label": "Academy Overview", "url": "rcf-classes/" }
         ]},
-        { "title": "Class formats", "links": [
-          { "label": "Individual Classes", "url": "rcf-classes/individual-classes/", "course": "individual" },
-          { "label": "Group Classes", "url": "rcf-classes/group-classes/", "course": "group" },
-          { "label": "Online Classes", "url": "rcf-classes/online-classes/", "course": "online" },
-          { "label": "Physical Classes", "url": "rcf-classes/physical-classes/", "course": "physical" }
+        { "title": "Elocution diplomas", "links": [
+          { "label": "Primary Elocution Teachers' Diploma", "url": "rcf-classes/primary-elocution-teachers-diploma/", "course": "primary-elocution" },
+          { "label": "Associate Diploma", "url": "rcf-classes/associate-diploma/", "course": "associate-diploma" }
         ]},
-        { "title": "Schedule and notices", "links": [
-          { "label": "Timetables", "url": "rcf-classes/timetable/" },
-          { "label": "Upcoming Classes", "url": "rcf-classes/upcoming/" },
-          { "label": "Class Notices", "url": "rcf-classes/notices/" }
+        { "title": "Literature courses", "links": [
+          { "label": "Grade 9 Literature", "url": "rcf-classes/grade-9-literature/", "course": "grade-9-literature" },
+          { "label": "Grade 10 Literature", "url": "rcf-classes/grade-10-literature/", "course": "grade-10-literature" },
+          { "label": "O/L Literature", "url": "rcf-classes/ol-literature/", "course": "ol-literature" },
+          { "label": "A/L Literature", "url": "rcf-classes/al-literature/", "course": "al-literature" }
         ]},
-        { "title": "Joining a class", "links": [
-          { "label": "Enrolment", "url": "rcf-classes/enrolment/" },
-          { "label": "Student Resources", "url": "rcf-classes/student-resources/" },
-          { "label": "Frequently Asked Questions", "url": "rcf-classes/faq/" },
-          { "label": "Contact the Teacher", "url": "rcf-classes/contact/" }
+        { "title": "Joining", "links": [
+          { "label": "Registration", "url": "rcf-classes/registration/" },
+          { "label": "Our Staff", "url": "rcf-classes/our-staff/" },
+          { "label": "Contact on WhatsApp", "url": "rcf-classes/contact/" }
         ]}
       ]
     },
-
     {
       "label": "RCF Publications",
       "url": "PUBLICATIONS_WEBSITE_URL",

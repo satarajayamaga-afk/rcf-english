@@ -25,11 +25,11 @@ no server, no database, no login and no monthly cost.
 | **Past Papers** | A filterable centre for past papers, model papers, marking schemes, revision papers and question banks |
 | **Teacher Resources** | Lesson plans, worksheets, teaching guides, remedial and mixed-ability support, marking and assessment |
 | **Interactive Learning** | Ten self-marking activities across seven activity types |
-| **RCF Classes** | Online English and Literature classes, timetable, enrolment and WhatsApp enquiry |
+| **RCF Online Academy** | Two CALSDA preparatory elocution diplomas, four Literature courses, registration, staff and WhatsApp enquiry |
 | **About Us** | The platform, the founder, qualifications, mission, teaching approach, online communities |
 | **Policies** | Copyright, corrections and takedown, privacy, terms, accessibility |
 
-**137 pages.** Every internal link is checked automatically each time the site is built.
+**133 pages.** Every internal link is checked automatically each time the site is built.
 
 **RCF Publications is a separate website.** RCF English links to it and never
 duplicates it. See *Setting the bookshop address* below.
@@ -68,7 +68,7 @@ RCF-English/
 │   └─ pages/                 one file per group of pages
 │
 ├─ data/                  ← THE LISTS YOU EDIT
-│   ├─ classes.json           RCF Classes
+│   ├─ classes.json           RCF Online Academy
 │   ├─ papers.json            past papers and model papers
 │   ├─ resources.json         worksheets and downloads
 │   ├─ quizzes.json           the interactive activities

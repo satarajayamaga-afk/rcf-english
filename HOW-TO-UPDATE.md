@@ -125,37 +125,84 @@ then put the placeholder back and build again.
 
 ---
 
-## Task 2 — Update RCF Classes
+## Task 2 — Update RCF Online Academy
+
+> ### Before editing anything about the two elocution diplomas
+>
+> The **Primary Elocution Teachers' Diploma** and the **Associate Diploma** are
+> set, examined and awarded by **CALSDA** (the Colombo Association of Language
+> Skills and Dramatic Art). RCF Online Academy runs six-month **preparatory
+> courses** for those examinations.
+>
+> Never write anything saying or suggesting that the Academy awards a diploma,
+> or that it is an official representative, agent or branch of CALSDA.
+>
+> Never state CALSDA entry requirements, syllabus content, examination dates or
+> CALSDA's own fees on this website. They belong to CALSDA, they change, and
+> candidates must confirm them with CALSDA directly.
 
 Open **`data/classes.json`**. It contains two lists.
 
-### Hiding a kind of class you do not offer
+### The six courses
 
-The `courses` list controls which **kinds** of class exist. To hide one completely,
-set `"published": false`:
+The `courses` list controls which courses exist. There are six:
+
+| `id` | Course |
+|---|---|
+| `primary-elocution` | Primary Elocution Teachers' Diploma (CALSDA preparatory) |
+| `associate-diploma` | Associate Diploma, the Higher Elocution Diploma (CALSDA preparatory) |
+| `grade-9-literature` | Grade 9 Literature |
+| `grade-10-literature` | Grade 10 Literature |
+| `ol-literature` | O/L Literature |
+| `al-literature` | A/L Literature |
+
+### Hiding a course you are not currently teaching
+
+Set `"published": false` on it:
 
 ```json
 {
-  "id": "physical",
-  "title": "Physical Classes",
+  "id": "grade-9-literature",
+  "title": "Grade 9 Literature",
   "published": false
 }
 ```
 
-A hidden kind disappears from the menus and from search. This is why there are no
-empty pages for classes that are not being taught. `physical` is hidden by default,
-because classes are currently conducted mainly online.
+A hidden course disappears from the menu, from the site and from search. This is why
+there is never an empty page for a course that is not being taught.
 
-### Adding a real class
-
-Add an entry to the `classes` list:
+If you hide a course, remove it from the registration form as well. That list lives in
+**`_src/pages/rcf-classes.json`**, on the `registration` page, in the `Course` field:
 
 ```json
 {
-  "id": "ol-english-2027",
-  "course": "ol-english",
-  "title": "O/L English 2027",
-  "subject": "O/L English",
+  "name": "Course",
+  "type": "select",
+  "required": true,
+  "options": [
+    "Primary Elocution Teachers' Diploma (CALSDA preparatory)",
+    "Associate Diploma, Higher Elocution Diploma (CALSDA preparatory)",
+    "Grade 9 Literature",
+    "Grade 10 Literature",
+    "O/L Literature",
+    "A/L Literature",
+    "Not sure, please advise"
+  ]
+}
+```
+
+Keep *Not sure, please advise* as the last option so that nobody is forced to guess.
+
+### Adding or editing a class
+
+Each course has an entry in the `classes` list. This is where the real details go:
+
+```json
+{
+  "id": "ol-literature-online",
+  "course": "ol-literature",
+  "title": "O/L Literature",
+  "subject": "English Literature",
   "level": "Grades 10 and 11",
   "teacher": "R. C. Fernando",
   "description": ["One or two sentences about the class."],
