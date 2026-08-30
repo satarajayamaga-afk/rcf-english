@@ -292,6 +292,138 @@
         { "kind": "match", "prompt": "Match each item to the rule that applies to it.", "pairs": [ { "term": "Dictionary", "meaning": "Use it in the library only" }, { "term": "Late book", "meaning": "A fine of five rupees a day" }, { "term": "Library book", "meaning": "Never write in it" } ], "explanation": "Each rule in the talk applies to one of these." },
         { "kind": "short", "prompt": "What are students asked to do about their voices?", "answer": ["keep them low", "keep your voices low", "keep low", "speak quietly", "be quiet", "keep voices low"], "explanation": "The librarian asks students to keep their voices low." }
       ]
+    },
+    {
+      "id": "l08-1",
+      "grade": 8,
+      "rate": 0.92,
+      "title": "The weather report",
+      "description": "A radio weather forecast for several regions. Competency level 3.4: listens and transfers the needed information into other forms.",
+      "instructions": "Listen to the forecast and fill in the weather chart. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a weather forecast on the radio." },
+        { "speaker": "Presenter", "text": "Good morning. Here is the weather forecast for today, the ninth of June." },
+        { "speaker": "Presenter", "text": "In the Western Province, heavy showers are expected in the afternoon. Please carry an umbrella." },
+        { "speaker": "Presenter", "text": "The Central Province will be misty in the early morning, but the sky will clear by midday." },
+        { "speaker": "Presenter", "text": "In the Northern Province the day will be dry and hot, with temperatures reaching thirty four degrees." },
+        { "speaker": "Presenter", "text": "Strong winds are expected along the southern coast, so fishermen are advised not to go out to sea." },
+        { "speaker": "Presenter", "text": "That is all for now. The next forecast will be broadcast at one o'clock." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the weather chart.", "lines": [ { "label": "Western Province:", "answer": ["heavy showers", "showers", "rain", "heavy rain"] }, { "label": "Central Province (early morning):", "answer": ["misty", "mist", "mistiness", "misty weather"] }, { "label": "Northern Province temperature:", "answer": ["34", "thirty four", "34 degrees", "thirty four degrees"] } ], "explanation": "Heavy showers in the west, mist in the central hills, and thirty four degrees in the north." },
+        { "kind": "mcq", "prompt": "When will the Central Province sky clear?", "options": ["Early morning", "By midday", "In the evening", "It will not clear"], "answer": 1, "explanation": "The presenter says the sky will clear by midday." },
+        { "kind": "mcq", "prompt": "Why are fishermen advised not to go out to sea?", "options": ["Because of heavy rain", "Because of strong winds", "Because of mist", "Because of the heat"], "answer": 1, "explanation": "Strong winds are expected along the southern coast." },
+        { "kind": "short", "prompt": "What are people in the Western Province advised to carry?", "answer": ["an umbrella", "umbrella", "umbrellas"], "explanation": "The presenter says, 'Please carry an umbrella.'" },
+        { "kind": "match", "prompt": "Match each region to its weather.", "pairs": [ { "term": "Western Province", "meaning": "Heavy afternoon showers" }, { "term": "Central Province", "meaning": "Misty, then clearing" }, { "term": "Northern Province", "meaning": "Dry and hot" }, { "term": "Southern coast", "meaning": "Strong winds" } ], "explanation": "Each region is given one distinct kind of weather in the forecast." },
+        { "kind": "gap", "prompt": "Complete: The next forecast will be broadcast at ____ o'clock.", "answer": ["one", "1"], "explanation": "The presenter says the next forecast is at one o'clock." }
+      ]
+    },
+    {
+      "id": "l08-2",
+      "grade": 8,
+      "rate": 0.92,
+      "title": "At the dentist",
+      "description": "A dentist gives a patient advice and instructions. Competency level 3.2: listens and follows instructions and responds to requests.",
+      "instructions": "Listen to the conversation and follow the advice given. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a conversation at a dental clinic." },
+        { "speaker": "Dentist", "text": "Good afternoon, Menaka. How long have you had this pain?" },
+        { "speaker": "Menaka", "text": "For about five days, doctor. It becomes worse when I drink something cold." },
+        { "speaker": "Dentist", "text": "I see. One of your back teeth has a small cavity. It must be filled." },
+        { "speaker": "Menaka", "text": "Will it hurt?" },
+        { "speaker": "Dentist", "text": "No. The area will be numbed first, so you will feel almost nothing." },
+        { "speaker": "Dentist", "text": "After the filling, do not eat anything for one hour. Avoid very hot and very cold drinks for two days." },
+        { "speaker": "Dentist", "text": "Brush twice a day, and come back in six months for a check-up." },
+        { "speaker": "Menaka", "text": "Thank you, doctor. I will remember all of that." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "How long has Menaka had the pain?", "options": ["Two days", "Five days", "One week", "Six months"], "answer": 1, "explanation": "She says she has had it for about five days." },
+        { "kind": "mcq", "prompt": "What makes the pain worse?", "options": ["Chewing hard food", "Drinking something cold", "Brushing her teeth", "Speaking loudly"], "answer": 1, "explanation": "She says it becomes worse when she drinks something cold." },
+        { "kind": "sequence", "prompt": "Put the dentist's instructions in the order he gives them.", "items": ["Do not eat for one hour", "Avoid very hot and very cold drinks for two days", "Brush twice a day", "Return in six months"], "explanation": "The dentist gives these four instructions in this order after explaining the filling." },
+        { "kind": "note", "prompt": "Complete the patient's card.", "lines": [ { "label": "Problem:", "answer": ["cavity", "a cavity", "small cavity", "a small cavity"] }, { "label": "No eating for:", "answer": ["one hour", "1 hour", "an hour", "one", "1"] }, { "label": "Next check-up in:", "answer": ["six months", "6 months", "six", "6"] } ], "explanation": "A small cavity must be filled; no eating for one hour; a check-up in six months." },
+        { "kind": "short", "prompt": "Why does the dentist say it will not hurt?", "answer": ["the area will be numbed", "it will be numbed", "the area is numbed first", "because it will be numbed", "numbed"], "explanation": "The dentist says the area will be numbed first, so she will feel almost nothing." },
+        { "kind": "gap", "prompt": "Complete: The tooth with the cavity is one of her ____ teeth.", "answer": ["back"], "explanation": "The dentist says one of her back teeth has a small cavity." }
+      ]
+    },
+    {
+      "id": "l08-3",
+      "grade": 8,
+      "rate": 0.92,
+      "title": "How paper is made",
+      "description": "A short explanation of a process, told in the passive voice. Competency levels 3.3 and 3.4, and competency level 6.1, the passive voice in simple tenses.",
+      "instructions": "Listen to the explanation of how paper is made. Put the stages in order and answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a talk about how paper is made." },
+        { "speaker": "Speaker", "text": "Have you ever wondered how paper is made? The process is simpler than most people think." },
+        { "speaker": "Speaker", "text": "First, trees are cut down and the logs are taken to a factory." },
+        { "speaker": "Speaker", "text": "At the factory, the bark is removed and the wood is chopped into very small chips." },
+        { "speaker": "Speaker", "text": "The chips are then mixed with water and chemicals until a soft grey pulp is formed." },
+        { "speaker": "Speaker", "text": "The pulp is spread onto a wide moving screen, where most of the water drains away." },
+        { "speaker": "Speaker", "text": "Finally, the sheet is pressed and dried, and the paper is rolled up ready to be cut." },
+        { "speaker": "Speaker", "text": "Today, a great deal of paper is also made from waste paper that has been collected and cleaned." }
+      ],
+      "questions": [
+        { "kind": "sequence", "prompt": "Put the stages of paper making in order.", "items": ["Trees are cut down", "The bark is removed", "The chips are mixed with water and chemicals", "The pulp is spread on a screen", "The sheet is pressed and dried"], "explanation": "The talk moves through these five stages in order, each described in the passive voice." },
+        { "kind": "gap", "prompt": "Complete: At the factory, the ____ is removed from the logs.", "answer": ["bark"], "explanation": "The speaker says the bark is removed and the wood is chopped into chips." },
+        { "kind": "mcq", "prompt": "What is mixed with the wood chips?", "options": ["Sand and oil", "Water and chemicals", "Glue and dye", "Air and steam"], "answer": 1, "explanation": "The chips are mixed with water and chemicals to form pulp." },
+        { "kind": "short", "prompt": "What colour is the pulp?", "answer": ["grey", "gray", "soft grey", "soft gray"], "explanation": "The talk describes a soft grey pulp." },
+        { "kind": "mcq", "prompt": "What happens on the wide moving screen?", "options": ["The pulp is coloured", "Most of the water drains away", "The paper is cut", "The chips are washed"], "answer": 1, "explanation": "The pulp is spread onto the screen, where most of the water drains away." },
+        { "kind": "mcq", "prompt": "What else is paper made from today?", "options": ["Cotton cloth", "Waste paper", "Rice straw", "Banana leaves"], "answer": 1, "explanation": "The speaker says a great deal of paper is also made from waste paper that has been collected and cleaned." }
+      ]
+    },
+    {
+      "id": "l08-4",
+      "grade": 8,
+      "rate": 0.92,
+      "title": "A report on the school garden",
+      "description": "A student reports to the class on a project. Competency level 3.3: listens to a text for specific information.",
+      "instructions": "Listen to the report and note the details. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a student reporting on a school project." },
+        { "speaker": "Student", "text": "Good morning. I am going to report on our school garden project, which began in January." },
+        { "speaker": "Student", "text": "Twenty two students from Grade eight took part. We were given a small plot behind the science room." },
+        { "speaker": "Student", "text": "In the first month the soil was dug and cleared. It was very hard work because the ground had not been used for years." },
+        { "speaker": "Student", "text": "We then planted tomatoes, beans and a row of chillies." },
+        { "speaker": "Student", "text": "Unfortunately, the tomatoes were eaten by insects, so we had to plant them a second time." },
+        { "speaker": "Student", "text": "By April we had harvested nearly six kilograms of beans, which were given to the school kitchen." },
+        { "speaker": "Student", "text": "Next term we hope to add a compost bin so that nothing is wasted." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the project record.", "lines": [ { "label": "Project began in:", "answer": ["January", "january"] }, { "label": "Number of students:", "answer": ["22", "twenty two", "twenty-two"] }, { "label": "Weight of beans harvested:", "answer": ["six kilograms", "6 kilograms", "6 kg", "six kg", "6", "six"] } ], "explanation": "The project began in January with twenty two students and produced nearly six kilograms of beans." },
+        { "kind": "mcq", "prompt": "Where is the garden plot?", "options": ["Beside the playground", "Behind the science room", "In front of the office", "Next to the library"], "answer": 1, "explanation": "The student says they were given a small plot behind the science room." },
+        { "kind": "mcq", "prompt": "Why did the students have to plant tomatoes twice?", "options": ["The seeds were old", "The first plants were eaten by insects", "There was too much rain", "The soil was too hard"], "answer": 1, "explanation": "The tomatoes were eaten by insects, so they were planted a second time." },
+        { "kind": "sequence", "prompt": "Put the stages of the project in order.", "items": ["The soil was dug and cleared", "Tomatoes, beans and chillies were planted", "The tomatoes were eaten by insects", "The beans were harvested"], "explanation": "The report follows this order from January through to April." },
+        { "kind": "short", "prompt": "Who received the beans?", "answer": ["the school kitchen", "school kitchen", "the kitchen", "kitchen"], "explanation": "The beans were given to the school kitchen." },
+        { "kind": "gap", "prompt": "Complete: Next term they hope to add a ____ bin.", "answer": ["compost"], "explanation": "The student says they hope to add a compost bin so that nothing is wasted." }
+      ]
+    },
+    {
+      "id": "l08-5",
+      "grade": 8,
+      "rate": 0.92,
+      "title": "Booking the community hall",
+      "description": "A caller arranges to hire a hall. Competency level 3.4: listens and transfers the needed information into other forms.",
+      "instructions": "Listen to the conversation and complete the booking form. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a telephone conversation about hiring a hall." },
+        { "speaker": "Clerk", "text": "Good morning, community hall office." },
+        { "speaker": "Caller", "text": "Good morning. I would like to book the hall for a music competition." },
+        { "speaker": "Clerk", "text": "Certainly. On what date?" },
+        { "speaker": "Caller", "text": "Saturday the fifteenth of November, from two in the afternoon until six." },
+        { "speaker": "Clerk", "text": "That is four hours. The charge is one thousand five hundred rupees for each hour." },
+        { "speaker": "Caller", "text": "And is a deposit required?" },
+        { "speaker": "Clerk", "text": "Yes. Half of the total must be paid when the booking is made, and the rest on the day." },
+        { "speaker": "Caller", "text": "I understand. My name is Fathima Rizwan, and my number is zero seven seven, four five six, seven eight nine zero." },
+        { "speaker": "Clerk", "text": "Thank you. The hall will be held for you until Friday." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the booking form.", "lines": [ { "label": "Date:", "answer": ["15th November", "15 November", "fifteenth of november", "november 15", "15th of november"] }, { "label": "Start time:", "answer": ["two", "2", "2 p.m.", "two o'clock", "2.00", "2pm"] }, { "label": "Finish time:", "answer": ["six", "6", "6 p.m.", "six o'clock", "6.00", "6pm"] }, { "label": "Name:", "answer": ["Fathima Rizwan", "fathima rizwan", "fathima"] } ], "explanation": "The booking is for Saturday the fifteenth of November, two until six, in the name of Fathima Rizwan." },
+        { "kind": "mcq", "prompt": "For how many hours is the hall booked?", "options": ["Two", "Three", "Four", "Six"], "answer": 2, "explanation": "From two until six is four hours, as the clerk confirms." },
+        { "kind": "short", "prompt": "What is the charge for each hour?", "answer": ["1500 rupees", "one thousand five hundred rupees", "1500", "rs 1500", "one thousand five hundred"], "explanation": "The clerk says one thousand five hundred rupees for each hour." },
+        { "kind": "mcq", "prompt": "How much must be paid when the booking is made?", "options": ["The whole amount", "Half of the total", "One hour's charge", "Nothing at all"], "answer": 1, "explanation": "Half of the total is paid at booking and the rest on the day." },
+        { "kind": "mcq", "prompt": "What is the hall being used for?", "options": ["A wedding", "A music competition", "A school prize giving", "A public meeting"], "answer": 1, "explanation": "The caller says she wants to book the hall for a music competition." },
+        { "kind": "gap", "prompt": "Complete: The hall will be held for the caller until ____.", "answer": ["Friday", "friday"], "explanation": "The clerk says the hall will be held until Friday." }
+      ]
     }
   ]
 }
