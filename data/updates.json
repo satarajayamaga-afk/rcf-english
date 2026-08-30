@@ -1,0 +1,119 @@
+{
+  "_readme": [
+    "WHAT'S NEW - the update cards on the home page.",
+    "",
+    "HOW THE SECTION IS BUILT",
+    "  The newest past-paper card is NOT written here. It is generated at build",
+    "  time from data/papers.json: the build finds the most recent published",
+    "  year, counts the papers and names the grades. Add a paper and the card",
+    "  updates itself. Nothing to edit.",
+    "",
+    "  The entries below are for things that are not in any other data file -",
+    "  a new section of the site, a new course, a new book. They are merged with",
+    "  the generated paper card, sorted by date, newest first, and the home page",
+    "  shows the first six.",
+    "",
+    "FIELDS",
+    "   id           short name, no spaces",
+    "   date         2026-08-28. Sorting and the NEW label both use this.",
+    "   title        what the card says",
+    "   description  ONE sentence. Two makes the card too tall.",
+    "   url          a page on this site. The build fails if it does not exist,",
+    "                so a broken card cannot reach the website.",
+    "   linkLabel    Explore | View details   (default: Explore)",
+    "   published    false hides the card without deleting the record",
+    "",
+    "THE NEW LABEL",
+    "  Added automatically to any entry dated within 90 days of the newest",
+    "  entry. Nothing to set by hand, and it fades out on its own.",
+    "",
+    "NEVER add an entry pointing at an unpublished resource, or at a Google",
+    "Drive file whose sharing is not 'Anyone with the link - Viewer'.",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+
+  "items": [
+    {
+      "id": "worksheets-by-grade",
+      "date": "2026-08-28",
+      "title": "Sixty worksheets, Grades 6 to 11",
+      "description": "Ten printable worksheets for every grade from 6 to 11, covering reading, writing and grammar, each with an answer key and written by RCF English.",
+      "url": "teacher-resources/worksheets-by-grade/",
+      "linkLabel": "Explore",
+      "published": true
+    },
+    {
+      "id": "primary-english-section",
+      "date": "2026-08-28",
+      "title": "Primary English",
+      "description": "A whole new section for younger children: alphabet practice, ten-minute activities, poems, short reading passages and games that mark themselves.",
+      "url": "primary-english/",
+      "linkLabel": "Explore",
+      "published": true
+    },
+    {
+      "id": "primary-activities",
+      "date": "2026-08-28",
+      "title": "Seven new interactive activities",
+      "description": "Letter sounds, first words, rhyming, word meanings, sentence order and a reading passage, each one marking itself and explaining every answer.",
+      "url": "primary-english/games/",
+      "linkLabel": "Explore",
+      "published": true
+    },
+    {
+      "id": "grade-5-scholarship",
+      "date": "2026-08-27",
+      "title": "Grade 5 Scholarship English",
+      "description": "English-medium language practice for scholarship candidates, with an honest account of the part of the examination this site can help with.",
+      "url": "primary-english/grade-5-scholarship/",
+      "linkLabel": "View details",
+      "published": true
+    },
+    {
+      "id": "literature-orientation",
+      "date": "2026-08-26",
+      "title": "Literature Orientation: One-Month Course for New Teachers",
+      "description": "A one-month online course for teachers new to English Literature: planning a lesson, teaching a poem, a story and a play, and marking written answers usefully.",
+      "url": "rcf-classes/literature-orientation/",
+      "linkLabel": "View details",
+      "published": true
+    },
+    {
+      "id": "student-classes",
+      "date": "2026-08-25",
+      "title": "Grade 9 and Grade 10 English Literature classes",
+      "description": "Two of the four Student Classes at RCF Online Academy, taking a student from first close reading through to the Ordinary Level texts.",
+      "url": "rcf-classes/grade-9-literature/",
+      "linkLabel": "View details",
+      "published": true
+    },
+    {
+      "id": "ol-al-literature-classes",
+      "date": "2026-08-24",
+      "title": "O/L and A/L Literature classes",
+      "description": "Examination-year Literature taught online: texts studied in full, answers written under timed conditions and every piece corrected individually.",
+      "url": "rcf-classes/ol-literature/",
+      "linkLabel": "View details",
+      "published": true
+    },
+    {
+      "id": "rcf-publications",
+      "date": "2026-08-20",
+      "title": "RCF Publications",
+      "description": "The support books and study guides written by R. C. Fernando, sold separately through the RCF Publications bookshop.",
+      "url": "about/rcf-publications/",
+      "linkLabel": "Explore",
+      "published": true
+    },
+    {
+      "id": "teacher-resources-refresh",
+      "date": "2026-08-18",
+      "title": "Teacher Resources",
+      "description": "Lesson plans, worksheets, marking guides and practical classroom support, gathered in one place for teachers of English and Literature.",
+      "url": "teacher-resources/",
+      "linkLabel": "Explore",
+      "published": true
+    }
+  ]
+}

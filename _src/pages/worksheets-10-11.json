@@ -1,0 +1,382 @@
+{
+  "_readme": [
+    "WORKSHEETS BY GRADE - Grade 10 and Grade 11.",
+    "The hub page and Grades 6 and 7 are in worksheets-6-7.json.",
+    "Grades 8 and 9 are in worksheets-8-9.json.",
+    "",
+    "These two grades are examination years, so the worksheets are closer to",
+    "examination tasks and the marking notes talk about marks.",
+    "",
+    "Everything here was written for RCF English. No past paper question is",
+    "reproduced. Where a task resembles an examination task it was written from",
+    "scratch to the same shape.",
+    "",
+    "After editing, run build.cmd."
+  ],
+
+  "pages": [
+    {
+      "slug": "teacher-resources/worksheets-by-grade/grade-10",
+      "title": "Grade 10 Worksheets",
+      "metaTitle": "Grade 10 English Worksheets | English Teachers Resources | RCF English",
+      "description": "Ten printable Grade 10 English worksheets with answer keys: complex sentences, participles, articles, subject-verb agreement, three reading passages and three writing tasks.",
+      "keywords": "grade 10 English worksheets, complex sentences, participle phrases, subject verb agreement, grade 10 comprehension, O/L English writing",
+      "kicker": "Worksheets by Grade",
+      "kind": "page",
+      "breadcrumbs": [
+        { "label": "English Teachers Resources", "url": "teacher-resources/" },
+        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+      ],
+      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "hero": {
+        "text": "Ten worksheets for Grade 10: four grammar, three reading and three writing, each with the answers."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About these two grades",
+          "text": [
+            "Grades 10 and 11 are the Ordinary Level years, so these worksheets are shaped like examination tasks and the marking notes talk in marks.",
+            "**No past paper question is reproduced here.** Where a task resembles an examination task, it was written from scratch to the same shape."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Grammar",
+          "eyebrow": "Worksheets 1 to 4",
+          "items": [
+            {
+              "q": "Worksheet 1 — Subject-verb agreement, the hard cases",
+              "a": [
+                "**Focus:** the constructions that trip candidates up in the examination.",
+                "**Task.** Choose the correct verb.",
+                "1. The list of items (is / are) on the desk. 2. Neither the teacher nor the pupils (was / were) present. 3. Each of the boys (has / have) a book. 4. The number of applicants (has / have) risen. 5. A number of applicants (has / have) withdrawn. 6. Mathematics (is / are) my weakest subject. 7. The committee (is / are) divided in its opinion. 8. Ten kilometres (is / are) a long walk. 9. There (was / were) several reasons for the delay. 10. Everybody in both classes (was / were) informed.",
+                "**Answers.** 1. is 2. were 3. has 4. has 5. have 6. is 7. is 8. is 9. were 10. was.",
+                "**Teaching note.** Two pairs do the teaching. In 1, the subject is *list*, not *items* — cross out the phrase between and the verb becomes obvious. In 4 and 5, *the number* is singular and *a number* means *several*, so it is plural. Question 2 follows the nearer subject, *pupils*."
+              ]
+            },
+            {
+              "q": "Worksheet 2 — Simple, compound and complex sentences",
+              "a": [
+                "**Focus:** identifying and building the three sentence types, and varying them in writing.",
+                "**Task A.** Say whether each sentence is simple, compound or complex.",
+                "1. The rain stopped. 2. The rain stopped and the children went outside. 3. When the rain stopped, the children went outside. 4. Although he was tired, he finished the work. 5. He was tired but he finished the work.",
+                "**Task B.** Rewrite each pair as one complex sentence, using the word in brackets.",
+                "6. The bus was late. I missed the meeting. (because) 7. She studied hard. She failed. (although) 8. Finish the work. You may go home. (when) 9. The book was expensive. I bought it. (even though) 10. He arrived. Everyone had left. (by the time)",
+                "**Answers.** A: 1. simple 2. compound 3. complex 4. complex 5. compound. B: 6. I missed the meeting because the bus was late. 7. Although she studied hard, she failed. 8. When you finish the work, you may go home. 9. Even though the book was expensive, I bought it. 10. By the time he arrived, everyone had left.",
+                "**Teaching note.** A paragraph of nothing but simple sentences reads like a list; a paragraph of nothing but complex sentences is exhausting. Ask them to check one of their own paragraphs and count each type."
+              ]
+            },
+            {
+              "q": "Worksheet 3 — Participle phrases and dangling modifiers",
+              "a": [
+                "**Focus:** joining sentences economically, and avoiding the error that follows.",
+                "**Task A.** Join using a participle phrase.",
+                "1. He opened the door. He saw the visitor. 2. She was walking along the beach. She found a shell. 3. They had finished the examination. They went home. 4. The child was frightened by the noise. The child began to cry. 5. I did not know the answer. I said nothing.",
+                "**Task B.** Correct the dangling modifier in each sentence.",
+                "6. Walking to school, the rain began to fall. 7. Having eaten breakfast, the bus was missed. 8. Being very old, I could hardly read the writing. 9. Running down the road, my bag fell open. 10. While watching television, the doorbell rang.",
+                "**Answers.** A: 1. Opening the door, he saw the visitor. 2. Walking along the beach, she found a shell. 3. Having finished the examination, they went home. 4. Frightened by the noise, the child began to cry. 5. Not knowing the answer, I said nothing. B (accept any correct version): 6. As I was walking to school, the rain began to fall. 7. Having eaten breakfast, I missed the bus. 8. The document being very old, I could hardly read the writing. 9. Running down the road, I felt my bag fall open. 10. While I was watching television, the doorbell rang.",
+                "**Teaching note.** Question 6 is the one to read aloud. Ask who was walking to school. The rain, apparently. Once a class laughs at that, they see the error everywhere."
+              ]
+            },
+            {
+              "q": "Worksheet 4 — Articles and quantifiers at speed",
+              "a": [
+                "**Focus:** the small words that leak marks all through the paper.",
+                "**Task A.** Fill in *a*, *an*, *the* or leave blank.",
+                "1. ____ honesty is ____ best policy. 2. She plays ____ piano and ____ cricket. 3. We went to ____ hospital to visit my aunt. 4. ____ Mount Everest is in ____ Himalayas. 5. He is ____ engineer at ____ factory near our house.",
+                "**Task B.** Choose the correct quantifier.",
+                "6. There isn't (much / many) time left. 7. (Few / A few) pupils attended, which was disappointing. 8. I have (little / a little) money, so we can take a bus. 9. (Fewer / Less) students applied this year. 10. She has (fewer / less) patience than her sister.",
+                "**Answers.** A: 1. — / the 2. the / — 3. the 4. — / the 5. an / the (or *a* if the factory is being mentioned for the first time). B: 6. much 7. Few 8. a little 9. Fewer 10. less.",
+                "**Teaching note.** *Few* means almost none; *a few* means some. Questions 7 and 8 are a pair — one is a complaint, the other is good news, and the article is the only difference. *Fewer* counts, *less* measures."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Reading",
+          "eyebrow": "Worksheets 5 to 7",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "Worksheet 5 — Examination-style comprehension",
+              "a": [
+                "**Focus:** a full comprehension task with marks allocated, as in the paper.",
+                "**Passage.** *For thirty years the tannery had employed half the village. When it closed, the owners said the machinery was obsolete and the market had moved abroad, and both statements were true. What neither statement explained was why nobody had been told until the Friday.*",
+                "*Some families left within a month. Others waited, on the reasonable assumption that a building of that size would not be allowed to stand empty for long. It stood empty for nine years.*",
+                "*What eventually came was not another factory but a training college, and the village found itself with a different kind of population: young, temporary, and from elsewhere. The shops adapted quickly. The cricket club did not, and folded in its fiftieth year.*",
+                "**Questions.** 1. How long had the tannery operated, and how many villagers did it employ? (2 marks) 2. Give the two reasons the owners offered for closing. (2 marks) 3. What criticism does the writer make of the owners? (2 marks) 4. Why did some families stay? (2 marks) 5. Explain the contrast in the final paragraph between the shops and the cricket club. (3 marks) 6. What does *temporary* suggest about the new population, and why did that matter to the village? (3 marks)",
+                "**Answers.** 1. Thirty years; half the village. (1 + 1) 2. The machinery was obsolete; the market had moved abroad. (1 + 1) 3. That nobody was told until the Friday — the closure was announced without warning. (2) 4. They assumed a building that size would soon be used again. (2) 5. The shops changed what they sold to suit young newcomers and survived; the cricket club depended on long-term residents who had gone, so it could not adapt and closed after fifty years. (3) 6. That the newcomers would leave again, so they did not put down roots; the village gained customers but not members, which is why an institution needing commitment failed while businesses needing only custom did not. (3)",
+                "**Marking note.** Sixteen marks. Questions 5 and 6 carry the highest marks and need explanation, not retrieval. A candidate who quotes the last two sentences without saying *why* earns one mark of the three."
+              ]
+            },
+            {
+              "q": "Worksheet 6 — Vocabulary in context",
+              "a": [
+                "**Focus:** deducing meaning, and choosing the closest word rather than a roughly similar one.",
+                "**Passage.** *The proposal was received with a **tepid** welcome. Committee members praised its **prudence** while quietly noting that it **curtailed** the very programme they had spent two years defending. The chairman, **adept** at reading a room, adjourned before anyone was obliged to vote, and the matter was **deferred** to a meeting that was never held.*",
+                "**Questions.** 1. Give the meaning of each word in bold as it is used here: tepid, prudence, curtailed, adept, deferred. 2. Which word tells you the welcome was polite but unenthusiastic? 3. Why did the chairman adjourn? 4. What does *a meeting that was never held* tell you about the outcome? 5. Replace *curtailed* with a word of the opposite meaning and say how the sentence changes.",
+                "**Answers.** 1. tepid — lukewarm, unenthusiastic; prudence — caution, careful good sense; curtailed — cut short, reduced; adept — skilful; deferred — postponed. 2. tepid. 3. He could tell the committee was unwilling to support it and did not want to force a vote that would expose the division. 4. That the proposal was quietly dropped without ever being formally rejected. 5. *Extended* or *expanded* — the committee's objection disappears, since the proposal would then strengthen rather than cut the programme they had defended.",
+                "**Marking note.** In question 1 insist on the meaning *as used here*. *Prudence* has a dictionary meaning; what matters is that the praise was faint."
+              ]
+            },
+            {
+              "q": "Worksheet 7 — Note-making and summary",
+              "a": [
+                "**Focus:** taking structured notes, then turning them into continuous prose.",
+                "**Passage.** *Coral reefs cover less than one per cent of the ocean floor but support roughly a quarter of all marine species. They protect coastlines by absorbing wave energy before it reaches the shore, and in many countries they are the foundation of both fishing and tourism. Reefs are, however, unusually sensitive. A rise of one or two degrees in sea temperature, sustained for a few weeks, causes corals to expel the algae that feed them and turn white — a process called bleaching. A bleached reef is not dead and can recover, but only if the temperature falls and the reef is not disturbed further. Repeated bleaching, pollution from the land and destructive fishing together make recovery far less likely.*",
+                "**Task A.** Complete the notes.",
+                "*1. Importance of reefs: (a) ______ (b) ______ (c) ______*",
+                "*2. Cause of bleaching: ______*",
+                "*3. What bleaching is: ______*",
+                "*4. Conditions for recovery: (a) ______ (b) ______*",
+                "*5. Three things that prevent recovery: ______*",
+                "**Task B.** Using your notes, write a summary of the passage in no more than 60 words.",
+                "**Answers.** A: 1. (a) support about a quarter of marine species (b) protect coastlines by absorbing wave energy (c) support fishing and tourism. 2. A sustained rise of one or two degrees in sea temperature over a few weeks. 3. Corals expel the algae that feed them and turn white. 4. (a) the temperature falls (b) the reef is not disturbed further. 5. Repeated bleaching, pollution from the land, destructive fishing.",
+                "B model (58 words): *Coral reefs occupy under one per cent of the ocean floor yet support a quarter of marine species, shield coastlines from waves and sustain fishing and tourism. A sustained rise of one or two degrees makes corals expel their algae and whiten. Bleached reefs can recover if temperatures fall and they are left undisturbed, but repeated bleaching, pollution and destructive fishing prevent it.*",
+                "**Marking note.** Mark the summary against the notes: five points, ten marks, plus two for staying inside the word limit. A summary that adds an opinion loses marks even if the writing is good."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Writing",
+          "eyebrow": "Worksheets 8 to 10",
+          "items": [
+            {
+              "q": "Worksheet 8 — Guided writing from notes",
+              "a": [
+                "**Focus:** turning bare notes into connected prose without adding or losing information.",
+                "**Task.** Using the notes below, write a paragraph of about 100 words. Do not add information that is not in the notes.",
+                "*Notes: school library — opened 1998 — 4,000 books at start — now 22,000 — computer catalogue added 2019 — open 8 a.m. to 3 p.m. — 3 librarians — reading room seats 40 — busiest during examination terms — annual book sale funds new purchases*",
+                "**Model answer.** *The school library was opened in 1998 with a collection of four thousand books. It now holds twenty-two thousand, and a computer catalogue, installed in 2019, allows pupils to find a title in moments. The library is open from eight in the morning until three in the afternoon and is staffed by three librarians. Its reading room seats forty, and every seat is taken during the examination terms, when demand is at its highest. New books are bought largely with the proceeds of the annual book sale.*",
+                "**Marking guide.** Five marks for including every note; three for linking them into continuous prose rather than a list; two for accuracy; two for not inventing anything. Twelve marks.",
+                "**Teaching note.** The commonest fault is inventing detail — *the library is very beautiful*. Cross it out. The second commonest is writing nine separate sentences with no links at all."
+              ]
+            },
+            {
+              "q": "Worksheet 9 — An essay: argument",
+              "a": [
+                "**Focus:** a four-paragraph argument that answers the question set.",
+                "**Task.** Write an essay of about 250 words on: *Examinations are a poor way of measuring what a pupil has learnt. Do you agree?*",
+                "**Plan to follow.** Paragraph 1: state your position in one sentence and say what the essay will argue. Paragraph 2: the strongest argument for your position, with an example. Paragraph 3: the strongest argument against, honestly stated, and your answer to it. Paragraph 4: conclude by returning to the question.",
+                "**Model answer.** *I agree in part. Examinations measure something real, but they measure a narrow band of it, and we treat the result as though it described the whole pupil.*",
+                "*The central problem is that an examination rewards performance on one morning. A pupil who has read widely for two years but sleeps badly the night before will score below one who memorised model answers for six weeks. The second pupil has demonstrated diligence and a good memory, which are worth something, but not the understanding the paper claims to test.*",
+                "*Against this it must be said that no fairer method has been found. Continuous assessment favours pupils whose parents can help at home, and teacher judgement, however honest, is open to influence. An examination is at least the same paper, at the same hour, for everyone, and that impartiality is not a small thing.*",
+                "*My conclusion is therefore narrower than the statement. Examinations are not a poor way of measuring learning; they are a fair way of measuring a small part of it. The failure lies not in the examination but in our habit of reading a single grade as though it were a complete account of a person.*",
+                "**Marking guide.** Content and argument 8; structure and paragraphing 4; language accuracy 5; range of vocabulary and sentence variety 3. Twenty marks.",
+                "**Teaching note.** Paragraph 3 is where the marks are. An essay that never states the other side is not an argument, and candidates who leave it out cap themselves at about half."
+              ]
+            },
+            {
+              "q": "Worksheet 10 — A description with a controlling impression",
+              "a": [
+                "**Focus:** describing so that every detail supports one dominant impression.",
+                "**Task.** Write about 200 words describing a place at a particular moment. Choose one impression — emptiness, busyness, decay, welcome — and make every detail serve it. Do not name the impression anywhere in the writing.",
+                "**Model answer (impression: emptiness).** *The ticket window is shuttered, and the timetable behind the glass is two years out of date. Someone has corrected the 4.15 in pen, though the pen ran out halfway through the figure.*",
+                "*Three benches face the line. The middle one has lost a slat, and the gap has been there long enough for grass to grow up through it. On the wall above, a poster advertises a cricket match played last March; the corner has lifted and curls forward, and it moves slightly whenever a lorry passes on the road behind.*",
+                "*The platform clock works. It is the only thing here that does, and its second hand is loud enough to count. Between one lorry and the next there is nothing else to hear at all.*",
+                "*A goods train goes through at twenty past without slowing. For a few seconds the noise fills the whole station, the poster lifts and drops, and the grass in the bench bends flat. Then it is gone, and the clock is the loudest thing again.*",
+                "**Marking guide.** Five marks for a single consistent impression; five for specific, concrete detail; three for not naming the impression; four for controlled sentences and paragraphing; three for vocabulary. Twenty marks.",
+                "**Teaching note.** Ask the class to read a partner's piece and write down the impression in one word. If they cannot, the piece has not worked, and that is a more useful verdict than any mark you could give it."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 11 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-11/", "more": "Open" },
+            { "title": "Grade 9 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-9/", "more": "Open" },
+            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/worksheets-by-grade/grade-11",
+      "title": "Grade 11 Worksheets",
+      "metaTitle": "Grade 11 English Worksheets | English Teachers Resources | RCF English",
+      "description": "Ten printable Grade 11 English worksheets with answer keys: error correction, register, cohesion, mixed grammar revision, examination-style comprehension and full writing tasks.",
+      "keywords": "grade 11 English worksheets, O/L English revision, error correction worksheet, register, cohesion, O/L comprehension practice",
+      "kicker": "Worksheets by Grade",
+      "kind": "page",
+      "breadcrumbs": [
+        { "label": "English Teachers Resources", "url": "teacher-resources/" },
+        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+      ],
+      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "hero": {
+        "text": "Ten worksheets for Grade 11, the examination year: four grammar, three reading and three writing, each with the answers."
+      },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Grammar",
+          "eyebrow": "Worksheets 1 to 4",
+          "items": [
+            {
+              "q": "Worksheet 1 — Error correction against the clock",
+              "a": [
+                "**Focus:** finding and fixing the errors candidates actually make. Allow ten minutes.",
+                "**Task.** Each sentence has one error. Find it and write the correct sentence.",
+                "1. He is one of the best student in the class. 2. I am living here since 2019. 3. She did not went to school yesterday. 4. The furnitures were delivered on Monday. 5. He asked me that where I was going. 6. Neither of the answers are correct. 7. I am looking forward to meet you. 8. She is married with a doctor. 9. He explained me the problem. 10. If I would have known, I would have come. 11. The teacher made us to write an essay. 12. He is more taller than his brother.",
+                "**Answers.** 1. one of the best students 2. I have been living here since 2019 3. She did not go to school yesterday 4. The furniture was delivered on Monday 5. He asked me where I was going 6. Neither of the answers is correct 7. I am looking forward to meeting you 8. She is married to a doctor 9. He explained the problem to me 10. If I had known, I would have come 11. The teacher made us write an essay 12. He is taller than his brother.",
+                "**Teaching note.** Ask each pupil to keep a personal list of the ones they got wrong and to check that list before every piece of written work. The same three or four errors recur for each individual, and a personal list beats a general one every time."
+              ]
+            },
+            {
+              "q": "Worksheet 2 — Register: formal and informal",
+              "a": [
+                "**Focus:** matching the language to the reader — tested in every writing task.",
+                "**Task A.** Rewrite each sentence in formal English.",
+                "1. I want to tell you about a problem we've got. 2. Sorry, but I can't come. 3. Thanks a lot for your help. 4. Can you send me the stuff? 5. We need to sort this out fast.",
+                "**Task B.** Say whether each opening suits a letter to a friend, a letter to the editor, or a job application.",
+                "6. *I am writing to apply for the post advertised in yesterday's newspaper.* 7. *You'll never guess what happened at school today.* 8. *I wish to draw the attention of the authorities to a matter of public concern.* 9. *Hope you're keeping well.* 10. *I should be grateful if you would consider my application.*",
+                "**Answers.** A (accept reasonable variants): 1. I wish to bring a problem to your attention. 2. I regret that I shall be unable to attend. 3. I am most grateful for your assistance. 4. I should be grateful if you would send me the documents. 5. This matter requires prompt attention. B: 6. job application 7. friend 8. letter to the editor 9. friend 10. job application.",
+                "**Teaching note.** Contractions, phrasal verbs and vague words like *stuff* and *things* are the three markers of informal writing. Once candidates can spot those three, they can adjust register reliably."
+              ]
+            },
+            {
+              "q": "Worksheet 3 — Cohesion: linking a paragraph together",
+              "a": [
+                "**Focus:** the words that hold a paragraph together, and pronoun reference.",
+                "**Task A.** Fill each gap with a suitable linking word or phrase. Do not use any word twice.",
+                "*The scheme was popular from the start. (1) ____, it had been designed with the users rather than the department in mind. (2) ____, it was simple: one form, one office, one visit. (3) ____ its success, funding was withdrawn after eighteen months. (4) ____ the department claimed the scheme was too costly, no figures were ever published. (5) ____, the office closed in March.*",
+                "**Task B.** Say what each underlined word refers to.",
+                "*The committee rejected the plan because **it** was too expensive. **This** angered the residents, who had worked on **it** for a year. **They** wrote to the newspaper, and **that** was how the story became public.*",
+                "**Answers.** A (accept sensible alternatives): 1. This was because / The reason was that 2. Moreover / In addition 3. Despite 4. Although 5. Consequently / In the end. B: *it* (first) = the plan; *This* = the rejection of the plan; *it* (second) = the plan; *They* = the residents; *that* = writing to the newspaper.",
+                "**Teaching note.** Task B is worth more time than it looks. Unclear pronoun reference is one of the commonest reasons an examiner cannot follow a candidate's answer, and candidates rarely notice it in their own work."
+              ]
+            },
+            {
+              "q": "Worksheet 4 — Mixed revision",
+              "a": [
+                "**Focus:** everything from Grades 6 to 11 in one sheet, as a diagnostic. Allow fifteen minutes.",
+                "**Task.** Choose or supply the correct form.",
+                "1. By the time we arrived, the film ____ (already start). 2. He would rather ____ (walk) than take the bus. 3. It is high time we ____ (leave). 4. Hardly ____ he sat down when the telephone rang. 5. Not only ____ she sing, but she also plays the violin. 6. The book, ____ cover was torn, belonged to my father. 7. She insisted ____ paying for the meal. 8. He is accustomed ____ working late. 9. Unless you hurry, you ____ (miss) the train. 10. I would rather you ____ (not tell) him. 11. Scarcely had the bell rung ____ the pupils rushed out. 12. It was such a difficult question ____ nobody could answer it.",
+                "**Answers.** 1. had already started 2. walk 3. left 4. had 5. does 6. whose 7. on 8. to 9. will miss 10. did not tell 11. when 12. that.",
+                "**Teaching note.** Use this as a diagnostic in the first week of the year and again in the last. Mark it out of twelve both times and let each pupil see their own two scores. Nothing motivates revision like visible improvement."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Reading",
+          "eyebrow": "Worksheets 5 to 7",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "Worksheet 5 — Timed comprehension",
+              "a": [
+                "**Focus:** a full comprehension under examination conditions. Allow twenty-five minutes.",
+                "**Passage.** *My grandmother kept accounts in a school exercise book for fifty-one years. Every rupee that entered or left the house is in those pages, written in a hand that grew smaller as the years went on, as though she were trying to make the book last.*",
+                "*She was not wealthy and the sums are mostly small: kerosene, thread, a bus fare to the hospital, four annas for a child's slate. But the book is not really about money. Read across a decade and you can see a son's school fees begin and end, a daughter's wedding approach and pass, and the year the fees stop altogether, which was the year my uncle died.*",
+                "*She never spoke about any of this. She was of a generation that considered feeling a private matter and expenditure a public one, and so the record she left is a record of what she did rather than what she felt. It is, I think, the more truthful for it. Anyone can say they loved their children. Fifty-one years of school fees, entered in a shrinking hand, is a harder thing to claim falsely.*",
+                "**Questions.** 1. For how long did the grandmother keep accounts, and in what? (2) 2. Why does the writer suggest her handwriting grew smaller? (2) 3. Give two examples of the kind of expense recorded. (2) 4. What can be learnt by reading across a decade? (3) 5. Explain what the writer means by *considered feeling a private matter and expenditure a public one*. (3) 6. Why does the writer think the record is *the more truthful* for containing no feeling? (4)",
+                "**Answers.** 1. Fifty-one years; a school exercise book. 2. To save space, so the single book would last. 3. Any two of: kerosene, thread, a bus fare to the hospital, a child's slate, school fees. 4. Family events appear through the money: school fees starting and ending, a wedding approaching and passing, and the year fees stopped, which was when the uncle died. 5. She thought emotions should not be displayed but money should be openly and accurately recorded — so she wrote down what she spent and never what she felt. 6. Because a statement of love costs nothing to make and cannot be checked, while fifty-one years of recorded sacrifice is evidence of it. The actions prove what words could only assert.",
+                "**Marking note.** Sixteen marks. Question 6 is worth four and needs the contrast between saying and doing. A candidate who only writes *because actions speak louder than words* earns one."
+              ]
+            },
+            {
+              "q": "Worksheet 6 — Fact, opinion and bias in a news report",
+              "a": [
+                "**Focus:** separating what is reported from what is implied.",
+                "**Passage.** *The council's decision to close the Wellawatte branch library has been met with what officials describe as \"limited concern\". A petition organised by residents attracted 1,340 signatures over three weeks. The council states that use of the branch had fallen by 12 per cent over five years and that the nearest alternative is 4.5 kilometres away. A spokesman said the closure would allow resources to be \"redeployed where they are genuinely needed\". No date has been set for the transfer of the collection.*",
+                "**Questions.** 1. List three facts stated in the passage. (3) 2. Whose opinion is *limited concern*, and what evidence in the passage sits awkwardly beside it? (3) 3. What is the effect of the quotation marks around *limited concern*? (2) 4. What does the word *genuinely* imply about the council's view of the library? (2) 5. What important information is missing that a reader would want? (2) 6. Is this report neutral? Support your answer with two pieces of evidence. (3)",
+                "**Answers.** 1. Any three: 1,340 signatures; the petition ran three weeks; use fell 12 per cent over five years; the nearest alternative is 4.5 km away; no date is set. 2. The officials'. The petition of 1,340 signatures in three weeks suggests concern was not limited. 3. They distance the writer from the phrase — the report attributes it rather than endorsing it, hinting that it may not be accurate. 4. That the council regards the library as not genuinely needed, dismissing its users' view of its value. 5. Accept: how many people used the branch in absolute terms; what happens to the collection; when it closes; the cost saved. 6. Not entirely. The quotation marks invite scepticism, and the petition figure is placed immediately after the phrase it undercuts. Accept a well-argued case that it is neutral because both sides' positions are reported.",
+                "**Marking note.** Fifteen marks. Question 3 is the discriminator: candidates who see the function of quotation marks are reading, not skimming."
+              ]
+            },
+            {
+              "q": "Worksheet 7 — Two texts on one subject",
+              "a": [
+                "**Focus:** comparing purpose, audience and tone across two texts.",
+                "**Text A — from a tourist brochure.** *Discover the timeless charm of the hill country, where emerald tea gardens roll away to the horizon and the air is cool and clean. Wander among the pickers, share their laughter, and take home memories that will last a lifetime.*",
+                "**Text B — from a labour report.** *Pluckers on hill-country estates are required to meet a daily quota, typically 18 to 20 kilogrammes. Work begins at 7.30 a.m. and continues in all weathers. Housing on many estates consists of line rooms built in the colonial period, and access to piped water is inconsistent.*",
+                "**Questions.** 1. What is the purpose of each text? (2) 2. Who is each written for? (2) 3. Pick one word from Text A and one from Text B that show the difference in tone. (2) 4. Both texts describe the same people. Explain how differently they present them. (4) 5. Which text would you trust for information, and why? (2) 6. Write two sentences about tea pluckers that would be acceptable in both texts. (3)",
+                "**Answers.** 1. A: to persuade people to visit; B: to inform about working conditions. 2. A: prospective tourists; B: officials, researchers, policymakers or the general public. 3. A: *charm*, *emerald*, *laughter*; B: *quota*, *required*, *inconsistent*. 4. A presents them as part of the scenery — cheerful, picturesque, there to be visited; it gives them no work, no hours and no conditions. B presents them as workers with quotas, fixed hours and inadequate housing, and gives no impression of their feelings at all. A removes the labour; B removes the person. 5. B, because it gives specific figures and makes no emotional appeal. Accept a case for caution about B's own purpose if argued. 6. Model: *Tea pluckers work on hill-country estates, beginning early in the morning. They pick leaf by hand, and their work is central to the region's economy.*",
+                "**Marking note.** Fifteen marks. Question 4 carries four and needs both halves — what each text includes and what each leaves out."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Writing",
+          "eyebrow": "Worksheets 8 to 10",
+          "items": [
+            {
+              "q": "Worksheet 8 — A formal letter of complaint",
+              "a": [
+                "**Focus:** complaining effectively — firm, factual and specific.",
+                "**Task.** Write a letter of about 150 words to the manager of a bookshop. You ordered a set of six textbooks four weeks ago and paid in full. Only four have arrived, one is damaged, and two telephone calls have not been returned. Request a specific remedy.",
+                "**Model answer.** *18, Lake Road, Nugegoda. 20th August 2026.*",
+                "*The Manager, Vidya Book House, Colombo 4.*",
+                "*Dear Sir or Madam,*",
+                "*Order No. 4471 — incomplete and damaged delivery*",
+                "*I placed the above order for six textbooks on 23rd July and paid the full amount of Rs. 8,400 at the time of ordering.*",
+                "*Four books were delivered on 5th August. Two titles are still outstanding, and one of the four that arrived, the Grade 11 science text, has a torn spine and detached pages.*",
+                "*I telephoned your office on 8th and 14th August. On both occasions I was told that someone would return my call, and on neither occasion did anyone do so.*",
+                "*I should be grateful if you would despatch the two outstanding titles and a replacement for the damaged book within seven days, or refund Rs. 4,200 in respect of the three books I have not received in usable condition.*",
+                "*Yours faithfully,*  *K. Wijesinghe*",
+                "**Marking guide.** Two marks for layout; one for subject line; two for the facts in order with dates and figures; two for a firm but civil tone; two for a specific remedy with a deadline; two for accuracy; one for length. Twelve marks.",
+                "**Teaching note.** The three things that make a complaint work are dates, figures and a stated remedy. A letter that only expresses annoyance earns few marks and, in life, gets no result."
+              ]
+            },
+            {
+              "q": "Worksheet 9 — An article for the school magazine",
+              "a": [
+                "**Focus:** an engaging opening, a developed middle and an ending that lands.",
+                "**Task.** Write an article of about 250 words for the school magazine on: *The one thing I would change about our school.* Give it a title. Open in a way that makes the reader continue, argue one change only, and end with something worth remembering.",
+                "**Model answer.** *THE FIFTEEN MINUTES WE THROW AWAY*",
+                "*Every morning, between the second bell and the start of the first period, this school loses fifteen minutes. I have timed it. The bell goes at 7.30. Teaching begins, on a good day, at 7.45.*",
+                "*The time disappears into the ordinary business of a school: the register, notices read aloud that were already on the board, a class of forty settling into thirty-eight chairs. None of it is anybody's fault. All of it is avoidable.*",
+                "*Fifteen minutes a day is seventy-five minutes a week. Over a school year it comes to roughly forty-five hours, which is more than a whole term of one subject. We would not tolerate losing a term of mathematics. We tolerate it every year without noticing, because we lose it in fifteen-minute pieces.*",
+                "*What I would change is simple. Move the register to the end of the day, when the room is settled and nobody is learning anything anyway. Put notices on a single board by the gate and expect pupils to read them, as we expect them to read everything else.*",
+                "*I am not asking for a longer day. I am asking for the day we already have.*",
+                "**Marking guide.** Three marks for a title and an opening that earns attention; six for one argument genuinely developed with evidence; three for an effective ending; four for structure and paragraphing; four for accuracy and range. Twenty marks.",
+                "**Teaching note.** The commonest failure is listing five changes instead of arguing one. The task says *the one thing*, and a candidate who ignores that has not answered the question, however well they write."
+              ]
+            },
+            {
+              "q": "Worksheet 10 — Full examination writing practice",
+              "a": [
+                "**Focus:** choosing, planning and writing under time pressure. Allow forty minutes for the whole sheet.",
+                "**Task.** Choose ONE of the following and write about 250 words. Spend five minutes planning before you begin.",
+                "*(a) An account of a day that did not go as expected.*",
+                "*(b) A speech to your class on why reading matters more than it appears to.*",
+                "*(c) An article: Should schools teach pupils how to manage money?*",
+                "*(d) A description of a person you know well, without naming their profession or relationship to you.*",
+                "**The five-minute plan — teach this before the writing.**",
+                "1. Underline the key words in the question. Two minutes wasted here saves ten later. 2. Decide your ending first. Writing towards a known ending is far easier than discovering one at word 240. 3. Write four short paragraph headings, not sentences. 4. Note three specific details you intend to use — a name, a number, an object. 5. Begin.",
+                "**Marking guide.** Content and relevance 8; organisation and paragraphing 4; language accuracy 5; vocabulary and sentence variety 3. Twenty marks.",
+                "**Marking note for the teacher.** Mark the plan as well as the essay, at least for the first few attempts. A candidate whose plan bears no relation to what they wrote has not learnt to plan, and telling them so early is worth more than a comment on their vocabulary.",
+                "**Teaching note.** Option (d) is the one to push at able candidates. Describing a person without the two easiest labels forces them to characterise through behaviour, which is precisely the skill Literature will ask for."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" },
+            { "title": "Grade 10 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-10/", "more": "Open" },
+            { "title": "O/L English", "url": "ol-english/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

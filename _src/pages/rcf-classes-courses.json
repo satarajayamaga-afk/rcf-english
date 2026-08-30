@@ -480,6 +480,100 @@
           ]
         }
       ]
+    },
+
+    {
+      "slug": "rcf-classes/literature-orientation",
+      "title": "Literature Orientation: One-Month Course for New Teachers",
+      "metaTitle": "Literature Orientation: One-Month Course for New Teachers | RCF Online Academy",
+      "description": "A one-month online orientation course at RCF Online Academy for teachers new to teaching English Literature: planning a lesson, teaching a text, and marking written answers.",
+      "keywords": "Literature orientation, new teachers, teacher training, teaching English Literature, one-month course, online course Sri Lanka",
+      "kicker": "RCF Online Academy",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "hero": {
+        "text": "A one-month online course for teachers who are new to English Literature, or who have been asked to take a Literature class for the first time.",
+        "buttons": [
+          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
+          { "label": "Enquire on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What the course is",
+          "text": [
+            "A **one-month orientation course**, conducted online by R. C. Fernando, for teachers coming to English Literature for the first time.",
+            "Its purpose is practical. A teacher who has not taught Literature before is usually confident about the texts and unsure about everything else: how to plan the lesson, what to do with a poem for forty minutes, and how to mark an answer fairly and usefully. The course works through those questions in order."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the course covers",
+          "variant": "tint",
+          "bullets": [
+            "**Planning a Literature lesson** — what belongs in one lesson, and what should be left for the next.",
+            "**Teaching a poem, a short story and a play** — how each is approached differently, and why.",
+            "**Reading a text with a class** — reading it whole first, then studying it closely.",
+            "**Showing students how an answer is built** — point, evidence, explanation, effect and link, and how to teach it rather than name it.",
+            "**Context and essay questions** — what each asks for, and how long an answer should be.",
+            "**Marking written work** — correcting individually, with one clear instruction rather than a page of red.",
+            "**Helping students who are struggling**, without singling them out in front of the class."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Who it is for",
+          "bullets": [
+            "Teachers **new to teaching English Literature**.",
+            "Teachers of English **asked to take a Literature class for the first time**.",
+            "Teachers returning to Literature after a long gap who would like a structured refresher.",
+            "Trainee and probationary teachers preparing to take a Literature class."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This course",
+          "variant": "tint",
+          "course": "literature-orientation",
+          "intro": ["The course is conducted online. Where a day, time or fee has not been settled, the card says so rather than guessing. Ask on WhatsApp and you will be told what currently applies."]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "What this course is not",
+          "bullets": [
+            "It is **not a teaching qualification**, and no certificate of qualification is awarded.",
+            "It is **not a course in the prescribed texts**. It is about how Literature is taught, and the method applies whichever texts are set for your year.",
+            "It does **not replace official teacher training** provided by an employer or a training institution."
+          ]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about this course",
+          "title": "WhatsApp",
+          "text": ["The message is written for you. Add anything you would like to ask before sending it."],
+          "buttons": [
+            { "label": "Enquire on WhatsApp", "message": "Hello, I would like information about the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. Please send me the schedule, fees and registration details." },
+            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy." },
+            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. My name and the school or class I teach are: " }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Free pages that go with this course",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Literature teaching", "url": "teacher-resources/literature-teaching/", "more": "Open" },
+            { "title": "Marking guides", "url": "teacher-resources/marking-guides/", "more": "Open" },
+            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
+            { "title": "How teachers can mark answers", "url": "ol-literature/marking-answers/", "more": "Open" }
+          ]
+        }
+      ]
     }
   ]
 }

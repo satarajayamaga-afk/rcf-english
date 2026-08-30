@@ -2,8 +2,8 @@
   "pages": [
     {
       "slug": "teacher-resources",
-      "title": "Teacher Resources",
-      "metaTitle": "Teacher Resources | Lesson plans, worksheets and marking guides | RCF English",
+      "title": "English Teachers Resources",
+      "metaTitle": "English Teachers Resources | Lesson plans, worksheets and marking guides | RCF English",
       "description": "Practical resources for English teachers: lesson plans, worksheets, teaching guides, classroom activities, remedial and mixed-ability support, assessment and marking guides.",
       "keywords": "English teacher resources, lesson plans, worksheets, marking guides, remedial English, mixed ability teaching",
       "kicker": "For teachers",
@@ -36,6 +36,7 @@
           "items": [
             { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["A workable lesson structure, and plans you can adapt."] },
             { "title": "Worksheets", "url": "teacher-resources/worksheets/", "more": "Open", "text": ["Printable practice, and how to design your own."] },
+            { "title": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/", "more": "60 worksheets", "text": ["Ten worksheets for each grade from 6 to 11, covering reading, writing and grammar, each with an answer key."] },
             { "title": "Teaching Guides", "url": "teacher-resources/teaching-guides/", "more": "Open", "text": ["How to teach the difficult topics: tenses, articles, writing."] },
             { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open", "text": ["Activities needing no materials and little preparation."] }
           ]
@@ -95,8 +96,8 @@
       "kind": "teacher-resource",
       "schema": "LearningResource",
       "scripts": ["browse"],
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "A plan that survives a real classroom has three qualities: it fits the period, it works if half the class has not done the homework, and it can be prepared in fifteen minutes." },
       "blocks": [
         {
@@ -190,8 +191,8 @@
       "kicker": "Teacher Resources",
       "kind": "teacher-resource",
       "scripts": ["browse"],
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "A good worksheet teaches. A bad one keeps a class quiet for twenty minutes and changes nothing." },
       "blocks": [
         {
@@ -267,8 +268,8 @@
       "kicker": "Teacher Resources",
       "kind": "teacher-resource",
       "scripts": ["browse"],
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "Some topics defeat students year after year. Usually the problem is not the topic but the order in which it is presented." },
       "blocks": [
         {
@@ -320,8 +321,8 @@
       "keywords": "classroom activities, English games, speaking activities, no materials, large classes",
       "kicker": "Teacher Resources",
       "kind": "teacher-resource",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "Every activity here needs nothing but a board and a class. Most work with forty students, and most can be shortened to five minutes." },
       "blocks": [
         {
@@ -390,8 +391,8 @@
       "keywords": "remedial English, catching up, weak students, basic English, diagnosis",
       "kicker": "Teacher Resources",
       "kind": "teacher-resource",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "A student in Grade 11 working at Grade 5 level cannot be helped by Grade 11 material delivered more slowly. Something has to be rebuilt." },
       "blocks": [
         {
@@ -469,8 +470,8 @@
       "keywords": "slow learners, learning support, smaller steps, repetition, differentiation",
       "kicker": "Teacher Resources",
       "kind": "teacher-resource",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "Slower is not the same as less able. Most learners described as slow are learners who were moved on before the previous step was secure." },
       "blocks": [
         {
@@ -566,8 +567,8 @@
       "keywords": "mixed ability, differentiation, large classes, grouping, task design",
       "kicker": "Teacher Resources",
       "kind": "teacher-resource",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": { "text": "Every English class is a mixed-ability class. The question is only whether the teaching acknowledges it." },
       "blocks": [
         {

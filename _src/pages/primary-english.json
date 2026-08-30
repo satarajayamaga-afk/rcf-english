@@ -1,0 +1,793 @@
+{
+  "_readme": [
+    "PRIMARY ENGLISH - for children roughly Grade 1 to Grade 5.",
+    "",
+    "Two rules matter more here than anywhere else on the site.",
+    "",
+    "1. COPYRIGHT. Children's poems and stories are in copyright like anything",
+    "   else. Only two kinds of verse appear on these pages: traditional rhymes",
+    "   that are long out of copyright, and verses written for RCF English.",
+    "   Every poem says which it is. Never paste in a poem from a schoolbook,",
+    "   a website or a WhatsApp group.",
+    "",
+    "2. THE GRADE 5 SCHOLARSHIP. The examination is sat in the child's medium",
+    "   of instruction, and it covers far more than English. This site helps",
+    "   with the English-medium language work only. Never suggest that these",
+    "   pages prepare a child for the whole examination, and never promise a",
+    "   result or a place at any school.",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+
+  "pages": [
+    {
+      "slug": "primary-english",
+      "title": "Primary English",
+      "metaTitle": "Primary English | Alphabet, reading, poems and games | RCF English",
+      "description": "Primary English for children: alphabet practice, classroom and home activities, poems, short reading comprehensions, interactive games, and English-medium Grade 5 Scholarship practice.",
+      "keywords": "primary English, alphabet practice, children English, reading comprehension for kids, English poems for children, grade 5 scholarship English, Sri Lanka",
+      "kicker": "For younger learners",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "course section",
+      "hero": {
+        "text": "English for children who are still building it: the letters, the sounds, the first words, the first sentences, and the first whole page read without help.",
+        "buttons": [
+          { "label": "Start with the alphabet", "url": "primary-english/alphabet/", "style": "btn--accent" },
+          { "label": "Play a game", "url": "primary-english/games/", "style": "btn--ghost-light" },
+          { "label": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Who this section is for",
+          "text": [
+            "Children roughly between Grade 1 and Grade 5, and the adults sitting beside them. Some of these pages are for the child to work through; others are for a parent or teacher to use with the child. Each page says which it is at the top.",
+            "The order is deliberate. Letters before words, words before sentences, sentences before paragraphs. A child who is rushed past a step usually has to come back to it later, and by then it is harder, because they have decided they are bad at English."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Ten minutes a day beats an hour on Sunday",
+          "text": [
+            "Young children learn language in short, frequent bursts. Ten minutes every day will do more than one long session at the weekend, and it is far easier to keep up.",
+            "Stop while the child is still enjoying it. Ending a session one minute early is what makes them willing to start again tomorrow."
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "sections",
+          "heading": "What is in this section",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Alphabet Practice", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter shapes, letter sounds, capitals and small letters, and how to hold a pencil."] },
+            { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Things to do with a child: no materials, little preparation, ten minutes each."] },
+            { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Traditional rhymes and verses written for this site, with what to do with each."] },
+            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["Short passages with questions, getting longer a little at a time."] },
+            { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["Activities that mark themselves and say why an answer was wrong."] },
+            { "title": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "more": "Open", "text": ["The English-medium language work, practised honestly and without pressure."] }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "The order we teach in",
+          "eyebrow": "Why the pages are arranged this way",
+          "variant": "navy",
+          "intro": ["Nothing here is new or clever. It is the ordinary order, followed properly, which is rarer than it sounds."],
+          "items": [
+            { "title": "The letter shapes", "text": ["A child must be able to see the difference between b and d, and between capital and small letters, before spelling means anything."] },
+            { "title": "The letter sounds", "text": ["The sound a letter makes, not only its name. A child who knows only names cannot sound out a new word."] },
+            { "title": "Blending sounds into words", "text": ["c-a-t said slowly, then quickly, then as one word. This is the single step that turns a child into a reader."] },
+            { "title": "Whole words by sight", "text": ["The common words that do not sound out neatly - the, was, said, one - learnt as shapes."] },
+            { "title": "Sentences", "text": ["Capital letter, words in order, full stop. Read first, then written."] },
+            { "title": "Short passages", "text": ["Four or five sentences, then a question that cannot be answered without reading them."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the poems on this site",
+          "bullets": [
+            "Children's poems are protected by copyright in the same way as any other writing.",
+            "Only two kinds of verse appear here: **traditional rhymes that are long out of copyright**, and **verses written for RCF English**. Each poem says which it is.",
+            "If your child's schoolbook has a poem in it, use the book. We cannot reproduce it here, and neither can anybody else without permission."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Where to go next",
+          "columns": "4",
+          "items": [
+            { "title": "Interactive Learning", "url": "interactive/", "more": "Open", "text": ["Activities across the whole site, for every level."] },
+            { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open", "text": ["Lesson plans, worksheets and marking guidance."] },
+            { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["Where a child is heading after the primary years."] },
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open", "text": ["Classes taught online by R. C. Fernando."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/alphabet",
+      "title": "Alphabet Practice",
+      "metaTitle": "Alphabet Practice | Primary English | RCF English",
+      "description": "Alphabet practice for children: letter shapes, letter sounds, capital and small letters, the letters most often confused, and how to practise writing them.",
+      "keywords": "alphabet practice, letter sounds, phonics, capital and small letters, handwriting for children, primary English",
+      "kicker": "Primary English",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Twenty-six letters, each with a shape, a name and a sound. Get these firm and everything after them is easier."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Name and sound are not the same thing",
+          "text": [
+            "The letter **b** has a name, *bee*, and a sound, *b* as in *bat*. Children are usually taught the names first, and then find they cannot read, because words are built from sounds and not from names.",
+            "Teach both, but when you are sounding out a word, use the sound. *c-a-t* works. *see-ay-tee* does not."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The letters children confuse most",
+          "variant": "tint",
+          "intro": ["These six cause most of the trouble. They are worth extra practice on their own, away from the rest of the alphabet."],
+          "columns": ["Pair", "Why it is confusing", "What helps"],
+          "rows": [
+            ["b and d", "The same shape, facing opposite ways.", "Make a fist with each hand, thumbs up. The left hand makes a b, the right makes a d. The word 'bed' has a b at one end and a d at the other, like a bed with a headboard at each end."],
+            ["p and q", "Again the same shape reversed, below the line this time.", "Practise them in words rather than alone: pen, put, queen, quick. A q in English is almost always followed by u."],
+            ["m and n", "Same shape, different number of humps.", "m has two humps and two sounds in 'mmm'. Count the humps aloud."],
+            ["i and j", "Both have a dot; j goes below the line.", "Write them side by side. The j has a tail that hangs down, like a hook."],
+            ["u and v", "Curved bottom against pointed bottom.", "u is a cup you could drink from. v has a sharp point and would spill."],
+            ["Capital I and small l", "In many typefaces they look identical.", "Show them inside words: I am, a little lamp. Context settles it, and children learn to use context."]
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to practise one letter",
+          "eyebrow": "About ten minutes",
+          "intro": ["The same five steps work for every letter. Do one letter at a time and do not move on until the child can do step five without help."],
+          "items": [
+            { "title": "Look at it", "text": ["Show the capital and the small letter together: **A a**. Say the name. Say the sound."] },
+            { "title": "Find it", "text": ["Look for the letter on a page, a packet, a signboard, anywhere. Finding it in the real world matters more than finding it on a worksheet."] },
+            { "title": "Trace it", "text": ["Draw it large with a finger in the air, then on the table, then on paper. Big movements first, small ones later."] },
+            { "title": "Write it", "text": ["Three or four times, no more. A whole page of the same letter teaches nothing after the fourth one and makes the child hate it."] },
+            { "title": "Use it", "text": ["Say three words beginning with that sound. Then let the child say three. If they can do this, the letter is learnt."] }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Handwriting",
+          "variant": "tint",
+          "do": {
+            "title": "Do",
+            "items": [
+              "Let the child hold the pencil between thumb and first two fingers, resting on the middle finger.",
+              "Start each letter at the top, except for **d** and **e**, which start in the middle.",
+              "Use paper with lines once the shapes are steady.",
+              "Praise the best letter on the line, and ask for one more like it."
+            ]
+          },
+          "dont": {
+            "title": "Do not",
+            "items": [
+              "Do not correct the grip constantly. Show it once, then leave it alone for a week.",
+              "Do not fill a whole page with one letter.",
+              "Do not rub out the child's work in front of them. Ask for a better one beside it instead.",
+              "Do not begin joined-up writing until single letters are formed correctly."
+            ]
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Blending: the step that makes a reader",
+          "text": [
+            "Once a child knows most letter sounds, they can begin to blend. Say each sound in a short word slowly, then say them faster, then say the word.",
+            "Start with three-letter words where every letter makes its ordinary sound: *cat, dog, pin, sun, bed, top, hat, red, cup, man*.",
+            "Do not start with words like *said*, *one* or *come*. Those break the rules, and they are learnt later as whole shapes."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise the letters",
+          "eyebrow": "Marks itself",
+          "variant": "tint",
+          "ids": ["primary-letter-sounds", "primary-first-words"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Ten-minute things to do once the letters are steady."] },
+            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["The first short passages, with questions."] },
+            { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme makes sounds easier to hear."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/activities",
+      "title": "Primary Activities",
+      "metaTitle": "Primary English Activities | Ten-minute activities for children | RCF English",
+      "description": "Practical English activities for children aged roughly six to eleven: speaking, listening, vocabulary, reading and writing games needing no materials and little preparation.",
+      "keywords": "primary English activities, classroom activities for children, English games no materials, vocabulary activities, speaking activities primary",
+      "kicker": "Primary English",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Fifteen activities that need no materials beyond a pencil and paper, take about ten minutes each, and work with one child or thirty."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "How to use these",
+          "text": [
+            "Each activity says what it practises and roughly how long it takes. None needs printing, buying or preparing the night before.",
+            "They work at home with one child and in a classroom with a whole grade. Where a class version differs, it is noted."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Speaking and listening",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "1. I spy with a sound",
+              "a": [
+                "**Practises:** letter sounds, vocabulary. **Time:** 5 minutes.",
+                "Say: *I spy with my little eye something beginning with mmm.* Use the **sound**, not the letter name. The child looks around the room and guesses.",
+                "Swap over and let the child choose. Their turn matters more than yours, because choosing a word means finding its first sound themselves.",
+                "**In class:** in pairs, two minutes each way."
+              ]
+            },
+            {
+              "q": "2. What is missing",
+              "a": [
+                "**Practises:** vocabulary, memory, listening. **Time:** 5 minutes.",
+                "Put five or six ordinary objects on the table. Name them together. The child closes their eyes; take one away. *What is missing?*",
+                "The child must answer in a whole sentence: *The spoon is missing.* Not just *spoon*.",
+                "Add objects as it gets easy. Eight is hard; ten is very hard."
+              ]
+            },
+            {
+              "q": "3. Twenty questions",
+              "a": [
+                "**Practises:** question forms, thinking aloud. **Time:** 10 minutes.",
+                "Think of an animal, an object or a person. The child asks questions that can be answered only yes or no. *Is it an animal? Does it live in water? Is it bigger than a dog?*",
+                "This is the fastest way to teach question word order, because a badly formed question gets no useful answer and the child fixes it themselves."
+              ]
+            },
+            {
+              "q": "4. Tell it in three sentences",
+              "a": [
+                "**Practises:** sequencing, speaking in sentences. **Time:** 5 minutes.",
+                "Ask the child to tell you something that happened today in exactly three sentences: what happened first, what happened next, what happened at the end.",
+                "Three is the useful number. One is too easy and five turns into rambling."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Words and spelling",
+          "items": [
+            {
+              "q": "5. Word ladders",
+              "a": [
+                "**Practises:** spelling patterns, sounds. **Time:** 10 minutes.",
+                "Write a three-letter word. Change one letter to make a new word. Keep going: *cat, cot, cop, top, tap, tip*.",
+                "The child sees that changing one letter changes one sound. That is the whole of early spelling in one activity."
+              ]
+            },
+            {
+              "q": "6. How many words in this word",
+              "a": [
+                "**Practises:** letters, spelling, patience. **Time:** 10 minutes.",
+                "Write a long word on the paper - *elephant*, *breakfast*, *playground*. The child makes as many smaller words as they can from its letters.",
+                "*elephant* gives ten, heat, plane, and more. Count them together at the end and try to beat the number next time."
+              ]
+            },
+            {
+              "q": "7. The alphabet shopping list",
+              "a": [
+                "**Practises:** vocabulary, alphabet order, memory. **Time:** 10 minutes.",
+                "*I went to the shop and I bought an apple.* The next person adds something beginning with b, and repeats the list from the start.",
+                "**In class:** in groups of five or six, so the wait is short."
+              ]
+            },
+            {
+              "q": "8. Odd one out",
+              "a": [
+                "**Practises:** vocabulary, categories, reasoning. **Time:** 5 minutes.",
+                "Say four words: *apple, banana, carrot, mango*. Which is the odd one out, and why?",
+                "The answer is carrot, because it is a vegetable. But if the child says *banana, because the others are round*, accept it. The reason matters more than the word."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Reading and writing",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "9. Read the room",
+              "a": [
+                "**Practises:** reading in the real world. **Time:** 10 minutes.",
+                "Find and read ten pieces of English that are not in a book: a label, a signboard, a bus, a shop name, a packet, a poster.",
+                "Children who only ever read schoolbooks think reading is a school activity. It is not."
+              ]
+            },
+            {
+              "q": "10. Mixed-up sentence",
+              "a": [
+                "**Practises:** word order, capital letters, full stops. **Time:** 5 minutes.",
+                "Write a sentence with the words in the wrong order: *garden the in playing children are the*. The child writes it correctly.",
+                "Insist on the capital letter and the full stop every time. That habit is worth more than the exercise."
+              ]
+            },
+            {
+              "q": "11. What happens next",
+              "a": [
+                "**Practises:** writing, imagination, sentences. **Time:** 10 minutes.",
+                "Give the first sentence of a story: *The gate was open, and the dog was gone.* The child writes the next three sentences.",
+                "Three sentences, not a page. A short piece finished is worth more than a long piece abandoned."
+              ]
+            },
+            {
+              "q": "12. Draw what I read",
+              "a": [
+                "**Practises:** listening, reading for detail. **Time:** 10 minutes.",
+                "Read a short description slowly: *There is a small house with two windows and a red door. A tall tree stands on the left.* The child draws exactly what they hear.",
+                "Compare the drawing with the words at the end. Every difference is a detail that was missed, and the child can see it themselves."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "For a whole class",
+          "items": [
+            {
+              "q": "13. Line up by letter",
+              "a": [
+                "**Practises:** alphabet order, cooperation. **Time:** 5 minutes.",
+                "The class lines up in alphabetical order by first name, without the teacher directing them. They have to talk to each other in English to do it."
+              ]
+            },
+            {
+              "q": "14. Silent sentence",
+              "a": [
+                "**Practises:** word order, working together. **Time:** 10 minutes.",
+                "Give six children one word each from a sentence. Without speaking, they arrange themselves in the right order at the front of the class.",
+                "The rest of the class reads the sentence aloud when they think it is right."
+              ]
+            },
+            {
+              "q": "15. Two truths and one lie",
+              "a": [
+                "**Practises:** speaking, listening, questioning. **Time:** 10 minutes.",
+                "Each child says three sentences about themselves. Two are true and one is not. The others ask questions and guess which is which.",
+                "Quiet children usually join in with this one, because everybody gets exactly three sentences and nobody has to keep going."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "A note for teachers",
+          "text": [
+            "These are activities, not a syllabus. They practise things a child has already met; they do not teach them for the first time.",
+            "More structured material for the classroom is in [Teacher Resources](teacher-resources/), including lesson plans and worksheets."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/poems",
+      "title": "Poems",
+      "metaTitle": "Poems for Children | Primary English | RCF English",
+      "description": "Traditional rhymes and verses written for RCF English, with what to do with each one: hearing rhyme, learning by heart, and talking about what a poem says.",
+      "keywords": "poems for children, nursery rhymes, traditional rhymes, rhyming words, primary English poems, poetry for kids",
+      "kicker": "Primary English",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Rhyme teaches a child to hear the inside of a word. That is why poems come before paragraphs."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Where these poems come from",
+          "bullets": [
+            "The traditional rhymes below are **long out of copyright** and may be used freely.",
+            "The other verses were **written for RCF English** and may be copied and used for teaching, with acknowledgement.",
+            "**No poem from a schoolbook or another website appears here.** Children's poems are in copyright like any other writing. If a poem is set for your child's class, use the book it is printed in."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why rhyme matters before reading",
+          "text": [
+            "A child who can hear that *cat* and *hat* end the same way has noticed that a word is made of parts. That noticing is what makes sounding out possible.",
+            "This is why rhymes are taught to very young children everywhere, in every language. It is not decoration. It is the groundwork."
+          ]
+        },
+        {
+          "type": "quote",
+          "heading": "A traditional rhyme",
+          "eyebrow": "Out of copyright",
+          "variant": "tint",
+          "text": "Rain, rain, go away, / Come again another day.",
+          "cite": "Traditional"
+        },
+        {
+          "type": "prose",
+          "heading": "What to do with that one",
+          "bullets": [
+            "**Say it together** four or five times until the child joins in without being asked.",
+            "**Find the rhyme:** *away* and *day*. Ask for two more words that end the same way - *play, say, stay, today*.",
+            "**Change a word:** *Snow, snow, go away.* Children find this very funny, and changing a word is the first step towards writing one.",
+            "**Say it in different voices:** loud, whispered, slow, fast. Repetition stops feeling like repetition."
+          ]
+        },
+        {
+          "type": "quote",
+          "heading": "Written for RCF English",
+          "eyebrow": "Free to copy for teaching, with acknowledgement",
+          "text": "The bus is late, the bus is slow, / The bus is full, but in we go. / I hold the rail, I count to ten, / And here is school. We're late again.",
+          "cite": "Written for RCF English"
+        },
+        {
+          "type": "prose",
+          "heading": "What to do with that one",
+          "bullets": [
+            "**Find the rhymes:** *slow* and *go*, *ten* and *again*. Ask which pair rhymes better, and why. There is no wrong answer, and the question makes the child listen.",
+            "**Count the beats** by clapping. Most lines have eight. A child who feels the beat will read poetry aloud properly for the rest of their life.",
+            "**Ask what happens:** who is speaking? Where are they going? How do they feel about it? Four lines are enough to have a real conversation about.",
+            "**Write the next two lines** together, keeping the rhyme."
+          ]
+        },
+        {
+          "type": "quote",
+          "heading": "Written for RCF English",
+          "eyebrow": "For the youngest children",
+          "variant": "tint",
+          "text": "One crow on the wire, / Two crows on the gate, / Three crows in the mango tree, / Four crows on my plate! / Five crows and my lunch is gone - / Next time I won't be late.",
+          "cite": "Written for RCF English"
+        },
+        {
+          "type": "prose",
+          "heading": "What to do with that one",
+          "bullets": [
+            "**Count on fingers** as you say it. Number words and rhyme together are easier than either alone.",
+            "**Act it out.** One child is the crow, one guards the plate.",
+            "**Draw it,** one picture for each line. Then put the pictures in order without the words."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Learning a poem by heart",
+          "eyebrow": "Four short sessions, not one long one",
+          "intro": ["Learning a few lines by heart gives a child a store of English they own outright. Spread it over four days."],
+          "items": [
+            { "title": "Day one: hear it", "text": ["You say the whole poem three or four times. The child only listens. No pressure to join in."] },
+            { "title": "Day two: join in", "text": ["Say it together. Stop before the last word of each line and let the child supply it. The rhyme will help them."] },
+            { "title": "Day three: take turns", "text": ["You say one line, the child says the next. Then swap, so they get the lines they did not have yesterday."] },
+            { "title": "Day four: say it alone", "text": ["The child says the whole poem. Prompt with the first word of a line if they stop; do not say the line for them."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Talking about a poem",
+          "text": [
+            "Three questions work with almost any poem, at any age: **What is happening? Which words do you like? How does it make you feel?**",
+            "There is no wrong answer to any of them, which is why children will answer. The habit of having an opinion about a text, and giving a reason for it, is exactly what Literature will ask for later."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["From four lines of verse to four lines of prose."] },
+            { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["Rhyme and sound activities that mark themselves."] },
+            { "title": "O/L Literature", "url": "ol-literature/", "more": "Open", "text": ["Where this leads, several years from now."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/reading",
+      "title": "Short Reading Comprehensions",
+      "metaTitle": "Short Reading Comprehensions | Primary English | RCF English",
+      "description": "Short reading passages for primary children with questions, arranged from easiest to hardest, and guidance on how to help a child answer without answering for them.",
+      "keywords": "reading comprehension for children, short passages, primary reading, comprehension questions, English reading practice kids",
+      "kicker": "Primary English",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Four passages, getting a little longer each time. Every passage and every question here was written for this site."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "How to use these",
+          "text": [
+            "Read the passage **twice** before looking at the questions. Once to find out what it says, and once to notice the details.",
+            "Answer in whole sentences. *He was hungry* teaches more than *hungry*, and it is the habit every later examination will expect."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Passage 1: The lost slipper",
+          "eyebrow": "About 40 words",
+          "variant": "tint",
+          "text": [
+            "Nimal could find only one slipper. He looked under the bed. He looked behind the door. At last he found it in the garden. The puppy was sitting on it, and would not move."
+          ],
+          "bullets": [
+            "How many slippers could Nimal find at first?",
+            "Name two places he looked.",
+            "Where was the slipper in the end?",
+            "Why do you think the puppy would not move?"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Passage 2: The bus to town",
+          "eyebrow": "About 60 words",
+          "text": [
+            "The bus was full, so Amma and I stood near the door. A woman with a basket of mangoes was sitting near us. When an old man got on at the next stop, she stood up and gave him her seat. She held her basket on her arm for the rest of the journey, and she did not complain once."
+          ],
+          "bullets": [
+            "Why did Amma and the writer stand?",
+            "What was in the woman's basket?",
+            "What did the woman do when the old man got on?",
+            "What kind of person do you think the woman is? Give one reason from the passage."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Passage 3: The kite",
+          "eyebrow": "About 80 words",
+          "variant": "tint",
+          "text": [
+            "Sithara made her kite from two sticks, a sheet of blue paper and a long piece of string. Her brother said it would never fly. She took it to the paddy field in the evening, when the wind was strong, and ran with it until her arms ached.",
+            "The kite went up. It went higher than the coconut trees, and then higher than the temple roof. Her brother stopped laughing and asked whether she would make one for him."
+          ],
+          "bullets": [
+            "What three things did Sithara use to make her kite?",
+            "What did her brother say at the beginning?",
+            "Find two things in the passage that the kite flew higher than.",
+            "How do you think Sithara felt at the end? Which words in the passage make you think so?"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Passage 4: The power cut",
+          "eyebrow": "About 100 words",
+          "text": [
+            "The lights went out just as we sat down to eat. Thatha found the candles in the kitchen drawer, and Amma lit two of them and put them on the table. For a while nobody spoke, because everything looked strange and yellow.",
+            "Then my grandmother began to tell us about the village where she grew up, where there had been no electricity at all. She talked about carrying water, and about doing her homework by a small lamp. My sister and I listened without interrupting, which almost never happens.",
+            "When the lights came back on an hour later, we were disappointed."
+          ],
+          "bullets": [
+            "When exactly did the lights go out?",
+            "Who found the candles, and who lit them?",
+            "Why did nobody speak at first?",
+            "Why were the children disappointed when the lights came back on? Answer in one full sentence.",
+            "The writer says the children listened 'without interrupting, which almost never happens'. What does this tell you about them?"
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Helping without giving the answer",
+          "eyebrow": "For a parent or teacher",
+          "variant": "tint",
+          "intro": ["When a child is stuck, the temptation is to tell them. Four questions will nearly always get them there themselves."],
+          "items": [
+            { "title": "Where in the passage would we look?", "text": ["Not the answer, but the place. Most wrong answers come from answering out of memory instead of looking."] },
+            { "title": "Read that sentence again, aloud.", "text": ["Reading aloud slows a child down enough to notice what is actually written."] },
+            { "title": "What does the question word want?", "text": ["*Why* wants a reason. *Where* wants a place. *How many* wants a number. Half of all lost marks are answers to a different question."] },
+            { "title": "Now say it as a whole sentence.", "text": ["Once they have the answer in their head, make them say it properly before they write it."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The last question in each passage",
+          "text": [
+            "In every passage above, the final question has no single right answer. It asks the child what they think, and for a reason from the text.",
+            "Those questions matter most. Finding a fact is a skill a child will have for a few years; supporting an opinion with evidence is one they will use for the rest of their life."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "A passage that marks itself",
+          "ids": ["primary-reading-1"]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/games",
+      "title": "Interactive Activities and Games",
+      "metaTitle": "Interactive English Activities and Games | Primary English | RCF English",
+      "description": "Interactive English activities for primary children: letter sounds, first words, rhyming, word order and a short reading passage. Each one marks itself and explains the answer.",
+      "keywords": "interactive English games children, primary English activities online, letter sounds game, rhyming game, English quiz for kids",
+      "kicker": "Primary English",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Activities that mark themselves, say why an answer was wrong, and can be started again as often as a child likes."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Nothing is stored",
+          "text": [
+            "No score, name or answer is saved or sent anywhere. Nothing here needs an account, and nothing asks a child for personal information.",
+            "Play as many times as you like. Starting again is part of how these work."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Letters and sounds",
+          "eyebrow": "Start here",
+          "ids": ["primary-letter-sounds", "primary-first-words"]
+        },
+        {
+          "type": "activities",
+          "heading": "Words and rhyme",
+          "variant": "tint",
+          "ids": ["primary-rhyming-words", "primary-word-meanings"]
+        },
+        {
+          "type": "activities",
+          "heading": "Sentences and reading",
+          "ids": ["primary-sentence-order", "primary-reading-1"]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Getting one wrong is the useful part",
+          "text": [
+            "Every activity explains the answer after each question, whether the child was right or not. The explanation is where the learning happens.",
+            "If a child gets several wrong in one activity, do not move on to a harder one. Do the same activity again tomorrow."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More activities",
+          "columns": "3",
+          "items": [
+            { "title": "Interactive Learning", "url": "interactive/", "more": "Open", "text": ["Every activity on the site, for every level."] },
+            { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Away from the screen: fifteen things to do with paper and a pencil."] },
+            { "title": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "more": "Open", "text": ["English-medium practice for scholarship candidates."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/grade-5-scholarship",
+      "title": "Grade 5 Scholarship",
+      "metaTitle": "Grade 5 Scholarship English | English-medium practice | RCF English",
+      "description": "English-medium language practice for Grade 5 Scholarship candidates: vocabulary, grammar, short comprehension and verbal reasoning, with an honest account of what this site does and does not cover.",
+      "keywords": "grade 5 scholarship English, shishyathwa English medium, scholarship exam practice, verbal reasoning primary, grade 5 English practice Sri Lanka",
+      "kicker": "Primary English",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "English-medium language practice for children preparing for the Grade 5 Scholarship Examination — and a clear account of the part of it this site can actually help with."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "What this page covers, and what it does not",
+          "bullets": [
+            "The Grade 5 Scholarship Examination is set and conducted by the **Department of Examinations**. RCF English has no connection with it and does not speak for it.",
+            "The examination is sat **in the child's medium of instruction**. These pages are for children sitting it **in the English medium**.",
+            "The examination covers **much more than English**, including mathematics and general knowledge. **This site helps with the English language work only.** It is not full scholarship preparation.",
+            "**No result and no school place is promised or implied.** Confirm the syllabus, the format and the dates for your child's year with the Department of Examinations or your child's school."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The English-medium language work",
+          "text": [
+            "For a child sitting the paper in English, part of it tests ordinary English language ability: understanding words, using them correctly, and reading a short passage carefully enough to answer a question about it.",
+            "That part is what this site can help with, and it is worth practising, because it is the part where careful reading earns marks that guessing does not."
+          ],
+          "bullets": [
+            "**Vocabulary** — knowing what a word means, and which word fits a sentence.",
+            "**Grammar in use** — choosing the right form without needing to name the rule.",
+            "**Short comprehension** — reading four or five sentences and answering exactly what was asked.",
+            "**Verbal reasoning** — opposites, categories, analogies and odd-one-out, in English."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "A word about pressure",
+          "text": [
+            "This examination puts real pressure on nine and ten year olds, and a great deal of it comes from adults rather than from the paper.",
+            "A child who is frightened reads worse, not better. Short sessions, ordinary praise and a clear statement that you will not be disappointed in them will do more for the result than an extra hour of past papers.",
+            "**Whatever happens in this examination, it decides very little.** Plenty of children who did not win a place have done extremely well afterwards, and it is worth saying so out loud to your child."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to practise in the last few months",
+          "eyebrow": "Four habits",
+          "variant": "tint",
+          "items": [
+            { "title": "Read something every day", "text": ["Ten minutes of anything in English. A story, a newspaper page, the back of a packet. Reading widely does more for vocabulary than any word list."] },
+            { "title": "Practise reading the question", "text": ["Most lost marks at this age are answers to a question the child did not read properly. Ask them to say what the question wants before they answer it."] },
+            { "title": "Work to time, but only sometimes", "text": ["Once a week, do a short set against a clock so the feeling is familiar. The rest of the week, work slowly and carefully."] },
+            { "title": "Go back over the wrong ones", "text": ["Doing a hundred new questions teaches less than understanding ten wrong ones. Keep a page of the mistakes that keep coming back."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Question types, and what each is really testing",
+          "variant": "tint",
+          "bullets": [
+            "**Choose the correct word** — tests whether the child knows the shade of meaning, not just the word. *big, huge, enormous* are not interchangeable.",
+            "**Opposites** — tests vocabulary breadth. Practise in pairs, always aloud.",
+            "**Odd one out** — tests categories. Always ask the child *why*, because the reason is the skill.",
+            "**Analogies** — *hand is to glove as foot is to ___*. Tests relationships between words. Say the relationship aloud first: *a glove goes on a hand*.",
+            "**Short comprehension** — tests careful reading. The answer is in the passage; the difficulty is noticing it.",
+            "**Sentence completion** — tests grammar in use. The child should read the whole sentence with their answer in it, to hear whether it sounds right."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Practise the English work",
+          "eyebrow": "Marks itself and explains each answer",
+          "ids": ["scholarship-english-practice", "primary-word-meanings"]
+        },
+        {
+          "type": "cards",
+          "heading": "Related pages",
+          "columns": "3",
+          "items": [
+            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["Four passages with questions, getting longer."] },
+            { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["All the primary activities in one place."] },
+            { "title": "Past Papers", "url": "past-papers/", "more": "Open", "text": ["Papers for the later examinations, from Grade 10 upwards."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Looking for scholarship past papers?",
+          "text": [
+            "This site does not host Grade 5 Scholarship past papers. Those papers belong to the Department of Examinations, and RCF English does not have permission to republish them.",
+            "The [Past Papers](past-papers/) section covers the later examinations, and the [Copyright and Resource Policy](copyright-policy/) explains the rule this site works to."
+          ]
+        }
+      ]
+    }
+  ]
+}

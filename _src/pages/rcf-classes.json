@@ -14,13 +14,13 @@
       "slug": "rcf-classes",
       "title": "RCF Online Academy",
       "metaTitle": "RCF Online Academy | Elocution diplomas and Literature courses | RCF English",
-      "description": "RCF Online Academy: six-month preparatory courses for the CALSDA elocution diplomas, and English Literature courses from Grade 9 to Advanced Level, conducted online by R. C. Fernando.",
-      "keywords": "RCF Online Academy, CALSDA elocution diploma, Primary Elocution Teachers Diploma, Associate Diploma, Grade 9 Literature, Grade 10 Literature, O/L Literature, A/L Literature, online classes Sri Lanka",
+      "description": "RCF Online Academy: six-month preparatory courses for the CALSDA elocution diplomas, English Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by R. C. Fernando.",
+      "keywords": "RCF Online Academy, CALSDA elocution diploma, Primary Elocution Teachers Diploma, Associate Diploma, Grade 9 Literature, Grade 10 Literature, O/L Literature, A/L Literature, Literature orientation for new teachers, teacher training, online classes Sri Lanka",
       "kicker": "Learn with a teacher",
       "kind": "page",
       "schema": "Course",
       "hero": {
-        "text": "Six courses, taught online by R. C. Fernando: two professional preparatory courses for the CALSDA elocution diploma examinations, and four English Literature courses from Grade 9 to Advanced Level.",
+        "text": "Seven courses, taught online by R. C. Fernando: two professional preparatory courses for the CALSDA elocution diploma examinations, four English Literature courses from Grade 9 to Advanced Level, and a one-month orientation course for teachers new to Literature.",
         "buttons": [
           { "label": "Our courses", "url": "rcf-classes/#courses", "style": "btn--accent" },
           { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--ghost-light" },
@@ -75,7 +75,7 @@
 
         {
           "type": "cards",
-          "heading": "Literature courses",
+          "heading": "Student Classes",
           "eyebrow": "Grade 9 to Advanced Level",
           "intro": ["Four courses following a student through school Literature, each taught the same way: read the text whole, study it closely, then practise answers and have them corrected individually."],
           "columns": "4",
@@ -84,6 +84,23 @@
             { "title": "Grade 10 Literature", "url": "rcf-classes/grade-10-literature/", "more": "Course details", "text": ["The first year of the Ordinary Level course, at a pace that allows the texts to be studied properly."] },
             { "title": "O/L Literature", "url": "rcf-classes/ol-literature/", "more": "Course details", "text": ["Examination year: texts completed, answers written to time, every piece corrected."] },
             { "title": "A/L Literature", "url": "rcf-classes/al-literature/", "more": "Course details", "text": ["Close reading, critical appreciation of unseen passages, and well-organised essay answers."] }
+          ]
+        },
+
+        {
+          "type": "cards",
+          "heading": "Teacher Training",
+          "eyebrow": "For teachers new to Literature",
+          "variant": "tint",
+          "intro": ["Courses for teachers rather than students. Conducted online, in the same practical way as the rest of the Academy."],
+          "columns": "2",
+          "items": [
+            {
+              "title": "Literature Orientation: One-Month Course for New Teachers",
+              "url": "rcf-classes/literature-orientation/",
+              "more": "Course details",
+              "text": ["A one-month online course for teachers new to English Literature: planning a lesson, teaching a poem, a story and a play, and marking written answers usefully."]
+            }
           ]
         },
 
@@ -186,7 +203,7 @@
           "type": "steps",
           "heading": "The five steps",
           "items": [
-            { "title": "Choose a course", "text": ["The six courses are listed on the [Academy overview](rcf-classes/). If you are unsure which suits you, choose *Not sure, please advise* below and say what you have already done."] },
+            { "title": "Choose a course", "text": ["The seven courses are listed on the [Academy overview](rcf-classes/). If you are unsure which suits you, choose *Not sure, please advise* below and say what you have already done."] },
             { "title": "Send the message", "text": ["Fill in the form below and it writes your message for you, then opens WhatsApp. Read it, then press send yourself."] },
             { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day and time, the fee, and whether places are available. This is given directly rather than published, because it changes."] },
             { "title": "Confirm registration", "text": ["If the course suits you, confirm. **Registration is confirmed by the teacher.** It is not automatic, and no place is reserved by visiting this website."] },
@@ -213,6 +230,7 @@
                 "Grade 10 Literature",
                 "O/L Literature",
                 "A/L Literature",
+                "Literature Orientation: One-Month Course for New Teachers",
                 "Not sure, please advise"
               ]
             },
@@ -298,7 +316,7 @@
           "heading": "R. C. Fernando",
           "eyebrow": "Founder and teacher",
           "text": [
-            "R. C. Fernando is an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. He founded RCF English and teaches all six courses at RCF Online Academy.",
+            "R. C. Fernando is an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. He founded RCF English and teaches all seven courses at RCF Online Academy.",
             "His work extends beyond classroom teaching to teacher support, online learning communities, educational publishing and the preparation of practical learning materials. [More about the founder](about/founder/)."
           ]
         },
@@ -343,7 +361,7 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Our courses", "url": "rcf-classes/", "more": "Academy overview", "text": ["Two elocution diplomas and four Literature courses."] },
+            { "title": "Our courses", "url": "rcf-classes/", "more": "Academy overview", "text": ["Two elocution diplomas, four Literature courses and a one-month orientation course for new teachers."] },
             { "title": "Registration", "url": "rcf-classes/registration/", "more": "Register now", "text": ["The five steps, and the form that writes your message."] },
             { "title": "Our teaching approach", "url": "about/teaching-approach/", "more": "Open", "text": ["The method that runs through every course and every lesson on this site."] }
           ]
@@ -420,6 +438,7 @@
                 "Grade 10 Literature",
                 "O/L Literature",
                 "A/L Literature",
+                "Literature Orientation: One-Month Course for New Teachers",
                 "Not sure, please advise"
               ]
             },
@@ -655,7 +674,7 @@
             { "q": "What if my internet connection is weak?", "a": ["Mention it when you enquire. It is a common situation and better discussed in advance than discovered in the first class."] },
             { "q": "Will I be sent a meeting link?", "a": ["Joining instructions are sent privately once your place is confirmed. Links and passwords are never published on this website."] },
             { "q": "Can examination results be guaranteed?", "a": ["No, and nobody honest will guarantee them. Results depend on the candidate's own work. What the courses provide is clear teaching, guided practice, individual correction and regular revision."] },
-            { "q": "Who teaches the courses?", "a": ["All six courses are taught by R. C. Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
+            { "q": "Who teaches the courses?", "a": ["All seven courses are taught by R. C. Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
           ]
         },
         {

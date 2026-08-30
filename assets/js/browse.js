@@ -92,8 +92,32 @@ const TYPE_LABELS = {
   "class": "Class",
   "revision-paper": "Revision paper",
   "question-bank": "Question bank",
-  guidance: "Examination guidance"
+  guidance: "Examination guidance",
+  textbook: "Textbook",
+  "teachers-guide": "Teachers' guide",
+  "study-pack": "Study pack"
 };
+
+// The button under a card names the thing it opens: a book is not a paper.
+const VIEW_LABELS = {
+  textbook: "View the book",
+  "teachers-guide": "View the guide",
+  "teaching-guide": "View the guide",
+  "study-pack": "View the study pack",
+  "past-paper": "View the paper",
+  "model-paper": "View the paper",
+  "revision-paper": "View the paper",
+  "marking-scheme": "View the marking scheme",
+  "model-answer": "View the model answer",
+  "question-bank": "View the question bank",
+  worksheet: "View the worksheet",
+  "lesson-plan": "View the lesson plan",
+  "literature-text": "View the text"
+};
+
+function viewLabel(value) {
+  return VIEW_LABELS[value] || "View the resource";
+}
 
 function typeLabel(value) {
   return TYPE_LABELS[value] || (value ? String(value) : "Resource");
@@ -144,7 +168,7 @@ function renderResult(record) {
     actions.push(
       `<a class="btn btn--sm btn--outline${external ? " ext" : ""}" href="${esc(href)}"${
         external ? ' target="_blank" rel="noopener"' : ""
-      }>${external ? "View the paper" : "Open resource"}</a>`
+      }>${external ? viewLabel(record.type) : "Open resource"}</a>`
     );
   }
   // The download link goes straight to the PDF. The papers live in Google

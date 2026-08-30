@@ -40,7 +40,8 @@
     { "id": "grade-9-literature",  "title": "Grade 9 Literature", "published": true },
     { "id": "grade-10-literature", "title": "Grade 10 Literature", "published": true },
     { "id": "ol-literature",       "title": "O/L Literature", "published": true },
-    { "id": "al-literature",       "title": "A/L Literature", "published": true }
+    { "id": "al-literature",       "title": "A/L Literature", "published": true },
+    { "id": "literature-orientation", "title": "Literature Orientation: One-Month Course for New Teachers", "published": true }
   ],
 
   "classes": [
@@ -174,6 +175,28 @@
       "materials": "The prescribed texts and a device with an internet connection",
       "whatsappMessage": "Hello, I would like information about the A/L Literature course at RCF Online Academy. Please send me the schedule, fees and registration details.",
       "featured": true,
+      "published": true
+    },
+    {
+      "id": "literature-orientation-online",
+      "course": "literature-orientation",
+      "title": "Literature Orientation: One-Month Course for New Teachers",
+      "subject": "Teaching English Literature",
+      "level": "Teacher training",
+      "teacher": "R. C. Fernando",
+      "description": [
+        "A one-month orientation course for teachers who are new to teaching English Literature, and for teachers asked to take a Literature class for the first time.",
+        "It covers how a Literature lesson is planned and taught, how students are shown to build an answer rather than retell a story, and how written answers are marked and corrected."
+      ],
+      "audience": "Teachers new to teaching English Literature, and teachers taking a Literature class for the first time",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "One month",
+      "fee": "Contact us for details",
+      "registration": "soon",
+      "language": "English",
+      "materials": "A notebook and a device with an internet connection",
+      "whatsappMessage": "Hello, I would like information about the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. Please send me the schedule, fees and registration details.",
       "published": true
     }
   ]

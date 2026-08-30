@@ -1,0 +1,54 @@
+{
+  "_readme": [
+    "The full What's New page. The home page shows the first six updates; this",
+    "page shows all of them (limit 100).",
+    "",
+    "The cards themselves come from data/updates.json plus a past-paper card",
+    "generated from data/papers.json. Nothing on this page is written here.",
+    "",
+    "After editing data/updates.json, run build.cmd."
+  ],
+
+  "pages": [
+    {
+      "slug": "updates",
+      "title": "What's New",
+      "metaTitle": "What's New | Recent additions to RCF English",
+      "description": "Everything recently added to RCF English: new sections, new courses at RCF Online Academy, new interactive activities and the latest school term-test papers.",
+      "keywords": "what's new, recent updates, new past papers, new courses, RCF English updates",
+      "kicker": "Recently added",
+      "kind": "page",
+      "hero": {
+        "text": "Everything recently added to the site, newest first."
+      },
+      "blocks": [
+        {
+          "type": "updates",
+          "heading": "All updates",
+          "limit": 100
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "How this page stays current",
+          "text": [
+            "The past-paper card is generated from the papers actually published on this site. Add a paper and this page updates itself when the site is next built.",
+            "Resources whose Google Drive sharing has not been settled are held back and never appear here."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Go to a section",
+          "variant": "tint",
+          "columns": "4",
+          "items": [
+            { "title": "Primary English", "url": "primary-english/", "more": "Open" },
+            { "title": "Past Papers", "url": "past-papers/", "more": "Open" },
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" },
+            { "title": "All Resources", "url": "resources/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}

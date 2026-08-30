@@ -137,7 +137,9 @@ function PubBadge() {
 # Wording used in screen-reader-only notes and button labels.
 function PubNote() {
     if (PubIsLive) { return ' (external bookshop, opens in a new tab)' }
-    return ' - the bookshop website is not published yet. This page explains what it will offer.'
+    # Describes where the link goes. The page itself explains that the
+    # bookshop website is not open yet, so the link text need not repeat it.
+    return ' (about RCF Publications)'
 }
 
 # A very small inline notation so page files stay readable:
@@ -258,6 +260,7 @@ $quizzes = @(DataList 'quizzes' 'activities')
 $listening = @(DataList 'listening' 'tests')
 $literature = @(DataList 'literature' 'texts')
 $notices = @(DataList 'notices' 'notices')
+$updates = @(DataList 'updates' 'items')
 
 $publishedCourseIds = @()
 foreach ($c in $courses) { if ((P $c 'published' $true) -eq $true) { $publishedCourseIds += [string](P $c 'id') } }
@@ -329,12 +332,19 @@ function DesktopNav($slug) {
         $current = NavItemIsCurrent $item $slug
         $classAttr = 'main-nav__item'
         if ($current) { $classAttr += ' main-nav__item--current' }
+        if ($groups.Count -gt 0) { $classAttr += ' main-nav__item--has-menu' }
         $html += '<li class="' + $classAttr + '">'
 
         if ($groups.Count -gt 0) {
             $panelId = 'mega-' + $index
-            $html += '<button type="button" class="main-nav__button" aria-expanded="false" aria-controls="' + $panelId + '">'
-            $html += (E $label) + '<span class="main-nav__caret" aria-hidden="true"></span></button>'
+            # The label is a link to the section's own page; only the caret beside
+            # it opens the dropdown. Clicking the words must never be a dead end.
+            $parentCurrent = ''
+            if ($url.Trim('/') -eq $slug) { $parentCurrent = ' aria-current="page"' }
+            $html += '<a class="main-nav__link" href="' + (E (Url $url)) + '"' + $parentCurrent + '>' + (E $label) + '</a>'
+            $html += '<button type="button" class="main-nav__button main-nav__button--caret" aria-expanded="false" aria-controls="' + $panelId + '">'
+            $html += '<span class="main-nav__caret" aria-hidden="true"></span>'
+            $html += '<span class="visually-hidden">Show ' + (E $label) + ' pages</span></button>'
             $html += MegaPanel $item $index $slug
         }
         else {
@@ -383,7 +393,8 @@ function DrawerNav($slug) {
             $extra = '<span class="visually-hidden">' + (PubNote) + '</span>'
         }
         elseif (IsPub $url) {
-            $extra = ' <span class="badge-soon">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span>'
+            # Same as the header button: a real page to go to, so no badge.
+            $extra = '<span class="visually-hidden">' + (PubNote) + '</span>'
         }
         $html += '<a class="' + $cls + '" href="' + (E (Url $url)) + '"' + $currentAttr + $ext + '>' + (E $label) + $extra + '</a>'
 
@@ -436,7 +447,12 @@ function Header($slug) {
         $html += '<a class="header-link header-link--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
     }
     else {
-        $html += '<a class="header-link header-link--soon" href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + '<span class="header-link__soon">Coming soon</span><span class="visually-hidden">' + (PubNote) + '</span></a>'
+        # The bookshop has no published address yet, so this goes to the page
+        # that explains RCF Publications. It is a real destination, so it is
+        # not badged "Coming soon" in the header - the page says where things
+        # stand. Put a real https:// address in _src/config.json and this
+        # becomes an external link to the bookshop on the next build.
+        $html += '<a class="header-link header-link--accent" href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
     }
     $html += '<button class="search-toggle" type="button" aria-expanded="false" aria-controls="mobile-search"><span class="visually-hidden">Search</span><span aria-hidden="true">&#128269;</span></button>'
     $html += '<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-drawer"><span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle__text">Menu</span></button>'
@@ -828,6 +844,10 @@ function RenderBlock($block) {
             return (RenderClasses $block)
         }
 
+        'updates' {
+            return (RenderUpdates $block)
+        }
+
         'timetable' {
             return (RenderTimetable $block)
         }
@@ -960,7 +980,8 @@ function TypeLabel($value) {
         'past-paper' = 'Past paper'; 'model-paper' = 'Model paper'; 'marking-scheme' = 'Marking scheme';
         'model-answer' = 'Model answer'; 'worksheet' = 'Worksheet'; 'lesson-plan' = 'Lesson plan';
         'revision-paper' = 'Revision paper'; 'question-bank' = 'Question bank'; 'lesson' = 'Lesson';
-        'teaching-guide' = 'Teaching guide'; 'guidance' = 'Examination guidance'; 'article' = 'Article'
+        'teaching-guide' = 'Teaching guide'; 'guidance' = 'Examination guidance'; 'article' = 'Article';
+        'textbook' = 'Textbook'; 'teachers-guide' = 'Teachers'' guide'; 'study-pack' = 'Study pack'
     }
     $key = [string]$value
     if ($map.ContainsKey($key)) { return $map[$key] }
@@ -1070,6 +1091,100 @@ function ClassStatus($value) {
         'closed' { return @('closed', 'Registration closed') }
         default { return @('soon', 'Registration opening soon') }
     }
+}
+
+# --- What's New -------------------------------------------------------------
+# The newest past-paper card is generated here from data/papers.json rather
+# than written by hand, so adding a paper refreshes the home page by itself.
+# Unpublished papers and unpublished resources can never reach this list.
+function PaperUpdateEntry() {
+    $live = @($papers | Where-Object { (P $_ 'published' $true) -ne $false })
+    if ($live.Count -eq 0) { return $null }
+
+    $dated = @($live | Where-Object { [string](P $_ 'year') -match '^\d{4}$' })
+    if ($dated.Count -eq 0) { return $null }
+
+    # Walk back from the newest year until the card can honestly say "grades",
+    # so a year holding a single paper does not produce a thin card.
+    $allYears = @($dated | ForEach-Object { [int](P $_ 'year') } | Sort-Object -Unique -Descending)
+    $recent = @()
+    $usedYears = @()
+    foreach ($y in $allYears) {
+        $recent += @($dated | Where-Object { [int](P $_ 'year') -eq $y })
+        $usedYears += $y
+        if ($recent.Count -ge 4 -and (@($recent | ForEach-Object { [string](P $_ 'grade') } | Sort-Object -Unique)).Count -ge 2) { break }
+    }
+
+    $grades = @($recent | ForEach-Object { [string](P $_ 'grade') } | Where-Object { $_ } | Sort-Object { [int]$_ } -Unique)
+    if ($grades.Count -eq 0) { return $null }
+
+    if ($grades.Count -eq 1) { $gradeText = "Grade $($grades[0])" }
+    else {
+        $last = $grades[-1]
+        $head = $grades[0..($grades.Count - 2)] -join ', '
+        $gradeText = "Grades $head and $last"
+    }
+    $count = $recent.Count
+    $paperWord = if ($count -eq 1) { 'paper' } else { 'papers' }
+    $newestYear = $usedYears[0]
+    $yearText = if ($usedYears.Count -eq 1) { "$newestYear" } else { "$($usedYears[-1]) to $newestYear" }
+
+    return [pscustomobject]@{
+        id          = 'latest-papers'
+        date        = (Get-Date).ToString('yyyy-MM-dd')
+        title       = "New term-test papers, $yearText"
+        description = "$count school term-test $paperWord for $gradeText, each linked from its original source and listed with the body that set it."
+        url         = 'past-papers/'
+        linkLabel   = 'Explore'
+        published   = $true
+    }
+}
+
+function RenderUpdates($block) {
+    $limit = [int](P $block 'limit' 6)
+    if ($limit -lt 1) { $limit = 6 }
+
+    $list = @($updates | Where-Object { (P $_ 'published' $true) -ne $false })
+    $generated = PaperUpdateEntry
+    if ($null -ne $generated) { $list = @($generated) + $list }
+
+    $list = @($list | Sort-Object { [string](P $_ 'date') } -Descending)
+    if ($list.Count -eq 0) { return '' }
+
+    # "New" means added in the last 90 days in real terms, measured from the
+    # build date, so the label fades on its own if the site is left alone.
+    $cutoff = (Get-Date).AddDays(-90)
+
+    $shown = @($list | Select-Object -First $limit)
+
+    $html = (SectionOpen $block) + (SectionHead $block)
+    $html += '<ul class="updates" role="list">'
+    foreach ($u in $shown) {
+        $title = [string](P $u 'title')
+        $url   = [string](P $u 'url')
+        $label = [string](P $u 'linkLabel' 'Explore')
+        $date  = [string](P $u 'date')
+
+        $isNew = $true
+        if ($null -ne $cutoff) {
+            try { $isNew = ([datetime]$date) -ge $cutoff } catch { $isNew = $true }
+        }
+
+        $html += '<li class="update-card">'
+        if ($isNew) { $html += '<p class="update-card__flag"><span class="update-flag">New</span></p>' }
+        $html += '<h3 class="update-card__title"><a href="' + (E (Url $url)) + '">' + (E $title) + '</a></h3>'
+        $html += '<p class="update-card__text">' + (Inline (P $u 'description')) + '</p>'
+        $html += '<p class="update-card__more"><span class="more-link" aria-hidden="true">' + (E $label) + '</span></p>'
+        $html += '</li>'
+    }
+    $html += '</ul>'
+
+    $allUrl = P $block 'allUrl'
+    if ($allUrl) {
+        $allLabel = [string](P $block 'allLabel' 'View all updates')
+        $html += '<p class="updates__all"><a class="btn btn--ghost" href="' + (E (Url ([string]$allUrl))) + '">' + (E $allLabel) + '</a></p>'
+    }
+    return $html + '</div></section>'
 }
 
 function RenderClasses($block) {

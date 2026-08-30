@@ -5,6 +5,27 @@
     { "label": "Home", "url": "" },
 
     {
+      "label": "Primary English",
+      "url": "primary-english/",
+      "summary": "English for younger children: the alphabet, first words, poems, short reading passages, games, and Grade 5 Scholarship language practice.",
+      "groups": [
+        { "title": "Start here", "links": [
+          { "label": "Overview", "url": "primary-english/" },
+          { "label": "Alphabet Practice", "url": "primary-english/alphabet/" }
+        ]},
+        { "title": "Practice and play", "links": [
+          { "label": "Primary Activities", "url": "primary-english/activities/" },
+          { "label": "Poems", "url": "primary-english/poems/" },
+          { "label": "Short Reading Comprehensions", "url": "primary-english/reading/" },
+          { "label": "Interactive Activities and Games", "url": "primary-english/games/" }
+        ]},
+        { "title": "Examinations", "links": [
+          { "label": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/" }
+        ]}
+      ]
+    },
+
+    {
       "label": "O/L English",
       "url": "ol-english/",
       "summary": "Grammar, vocabulary, reading and step-by-step guided writing for the Ordinary Level English examination.",
@@ -147,6 +168,7 @@
       "summary": "A searchable centre for past papers, model papers, marking schemes and revision papers.",
       "groups": [
         { "title": "By subject", "links": [
+          { "label": "Grade 6-11 Resources", "url": "grades/" },
           { "label": "All Papers and Filters", "url": "past-papers/" },
           { "label": "Grade 10 Papers", "url": "past-papers/grade-10/" },
           { "label": "O/L English Papers", "url": "past-papers/ol-english/" },
@@ -178,6 +200,7 @@
           { "label": "Overview", "url": "teacher-resources/" },
           { "label": "Lesson Plans", "url": "teacher-resources/lesson-plans/" },
           { "label": "Worksheets", "url": "teacher-resources/worksheets/" },
+          { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
           { "label": "Teaching Guides", "url": "teacher-resources/teaching-guides/" },
           { "label": "Classroom Activities", "url": "teacher-resources/classroom-activities/" }
         ]},
@@ -205,7 +228,7 @@
     {
       "label": "RCF Online Academy",
       "url": "rcf-classes/",
-      "summary": "Elocution diplomas prepared for the CALSDA examinations, and Literature courses from Grade 9 to Advanced Level, conducted online by R. C. Fernando.",
+      "summary": "Elocution diplomas prepared for the CALSDA examinations, Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by R. C. Fernando.",
       "_urlNote": "The addresses stay under rcf-classes/ so that links already shared do not break.",
       "groups": [
         { "title": "Start here", "links": [
@@ -215,11 +238,14 @@
           { "label": "Primary Elocution Teachers' Diploma", "url": "rcf-classes/primary-elocution-teachers-diploma/", "course": "primary-elocution" },
           { "label": "Associate Diploma", "url": "rcf-classes/associate-diploma/", "course": "associate-diploma" }
         ]},
-        { "title": "Literature courses", "links": [
+        { "title": "Student Classes", "links": [
           { "label": "Grade 9 Literature", "url": "rcf-classes/grade-9-literature/", "course": "grade-9-literature" },
           { "label": "Grade 10 Literature", "url": "rcf-classes/grade-10-literature/", "course": "grade-10-literature" },
           { "label": "O/L Literature", "url": "rcf-classes/ol-literature/", "course": "ol-literature" },
           { "label": "A/L Literature", "url": "rcf-classes/al-literature/", "course": "al-literature" }
+        ]},
+        { "title": "Teacher Training", "links": [
+          { "label": "Literature Orientation for New Teachers", "url": "rcf-classes/literature-orientation/", "course": "literature-orientation" }
         ]},
         { "title": "Joining", "links": [
           { "label": "Registration", "url": "rcf-classes/registration/" },
@@ -265,6 +291,7 @@
 
   "footer": [
     { "title": "Learn", "links": [
+      { "label": "Primary English", "url": "primary-english/" },
       { "label": "O/L English", "url": "ol-english/" },
       { "label": "O/L Literature", "url": "ol-literature/" },
       { "label": "General English", "url": "general-english/" },

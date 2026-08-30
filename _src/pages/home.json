@@ -32,13 +32,24 @@
 
   "blocks": [
     {
+      "type": "updates",
+      "heading": "What's New",
+      "eyebrow": "Recently added",
+      "intro": ["The newest work on the site. The past-paper card below writes itself from the papers actually published, so it is never out of date."],
+      "limit": 6,
+      "allUrl": "updates/",
+      "allLabel": "View all updates"
+    },
+
+    {
       "type": "cards",
       "heading": "Explore by category",
       "eyebrow": "Find your section",
-      "intro": ["Explore nine subject areas, each offering lessons, practice activities and revision resources."],
+      "intro": ["Explore ten subject areas, each offering lessons, practice activities and revision resources."],
       "columns": "3",
       "variant": "tint",
       "items": [
+        { "title": "Primary English", "icon": "PE", "url": "primary-english/", "more": "Start here", "text": ["Alphabet practice, ten-minute activities, poems, short reading passages and games for younger children."] },
         { "title": "O/L English", "icon": "OL", "url": "ol-english/", "more": "Start here", "text": ["Grammar, vocabulary, reading and every writing task in the Ordinary Level paper, taught step by step."] },
         { "title": "O/L Literature", "icon": "LIT", "url": "ol-literature/", "more": "Start here", "text": ["Poetry, short stories, drama and novels, with a consistent method for context and essay answers."] },
         { "title": "General English", "icon": "GE", "url": "general-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, for adults and independent learners developing their confidence."] },

@@ -1,0 +1,365 @@
+{
+  "_readme": [
+    "WORKSHEETS BY GRADE - Grade 8 and Grade 9.",
+    "The hub page and Grades 6 and 7 are in worksheets-6-7.json.",
+    "Grades 10 and 11 are in worksheets-10-11.json.",
+    "",
+    "Everything here was written for RCF English. Nothing is copied.",
+    "",
+    "After editing, run build.cmd."
+  ],
+
+  "pages": [
+    {
+      "slug": "teacher-resources/worksheets-by-grade/grade-8",
+      "title": "Grade 8 Worksheets",
+      "metaTitle": "Grade 8 English Worksheets | English Teachers Resources | RCF English",
+      "description": "Ten printable Grade 8 English worksheets with answer keys: modals, passive voice, word building, punctuation, three reading passages and three writing tasks. Written by RCF English.",
+      "keywords": "grade 8 English worksheets, modals worksheet, passive voice worksheet, grade 8 comprehension, grade 8 writing",
+      "kicker": "Worksheets by Grade",
+      "kind": "page",
+      "breadcrumbs": [
+        { "label": "English Teachers Resources", "url": "teacher-resources/" },
+        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+      ],
+      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "hero": {
+        "text": "Ten worksheets for Grade 8: four grammar, three reading and three writing, each with the answers."
+      },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Grammar",
+          "eyebrow": "Worksheets 1 to 4",
+          "items": [
+            {
+              "q": "Worksheet 1 — Modal verbs: can, must, should, may",
+              "a": [
+                "**Focus:** choosing the modal that carries the right meaning.",
+                "**Task A.** Fill in *can*, *must*, *should* or *may*.",
+                "1. You ____ wear a helmet when riding. It is the law. 2. ____ I borrow your pen, please? 3. She ____ speak three languages. 4. You ____ see a doctor about that cough. 5. Passengers ____ not smoke on the bus.",
+                "**Task B.** Rewrite each sentence with the modal in brackets, keeping the meaning sensible.",
+                "6. It is necessary for you to submit the form today. (must) 7. It is a good idea for him to apologise. (should) 8. Is it permitted for us to leave early? (may) 9. She has the ability to swim well. (can) 10. It is forbidden to park here. (must not)",
+                "**Answers.** A: 1. must 2. May 3. can 4. should 5. must. B: 6. You must submit the form today. 7. He should apologise. 8. May we leave early? 9. She can swim well. 10. You must not park here.",
+                "**Teaching note.** The distinction worth drilling is **must** (obligation) against **should** (advice). Questions 1 and 4 sit side by side for exactly that reason."
+              ]
+            },
+            {
+              "q": "Worksheet 2 — The passive voice",
+              "a": [
+                "**Focus:** turning an active sentence into a passive one, and knowing when it is worth doing.",
+                "**Task A.** Rewrite in the passive.",
+                "1. The teacher marked the papers. 2. Somebody has stolen my bicycle. 3. They build these houses of clay. 4. The principal will announce the results. 5. Farmers grow tea in the hill country.",
+                "**Task B.** Rewrite in the active.",
+                "6. The window was broken by the boy. 7. The letter has been posted by my sister. 8. The prizes are given by the chief guest. 9. The road is being repaired by the council. 10. The song was sung by the choir.",
+                "**Answers.** A: 1. The papers were marked by the teacher. 2. My bicycle has been stolen. 3. These houses are built of clay. 4. The results will be announced by the principal. 5. Tea is grown in the hill country. B: 6. The boy broke the window. 7. My sister has posted the letter. 8. The chief guest gives the prizes. 9. The council is repairing the road. 10. The choir sang the song.",
+                "**Teaching note.** In 2 and 5 the doer is dropped, and that is the real use of the passive: when who did it is unknown or does not matter. Ask the class why *by somebody* would be silly in question 2."
+              ]
+            },
+            {
+              "q": "Worksheet 3 — Prefixes and suffixes",
+              "a": [
+                "**Focus:** building words, and noticing that a suffix can change the word class.",
+                "**Task A.** Add a prefix to make the opposite.",
+                "1. ____happy 2. ____possible 3. ____legal 4. ____regular 5. ____agree 6. ____correct 7. ____polite 8. ____honest",
+                "**Task B.** Change the word in brackets to fit the sentence.",
+                "9. Her ____ (kind) surprised everyone. 10. He spoke very ____ (soft). 11. The film was ____ (excite). 12. We need a ____ (decide) today. 13. This medicine is ____ (harm) if taken correctly. 14. His ____ (fail) taught him a great deal.",
+                "**Answers.** A: 1. un- 2. im- 3. il- 4. ir- 5. dis- 6. in- 7. im- 8. dis-. B: 9. kindness 10. softly 11. exciting 12. decision 13. harmless 14. failure.",
+                "**Teaching note.** The pattern in A is worth naming: *im-* before p and m, *il-* before l, *ir-* before r. It is not arbitrary, and children remember rules better than lists."
+              ]
+            },
+            {
+              "q": "Worksheet 4 — Punctuation: commas, apostrophes and speech marks",
+              "a": [
+                "**Focus:** the three punctuation marks that cost the most marks at this level.",
+                "**Task.** Rewrite each sentence with the punctuation put right.",
+                "1. my brothers bicycle is new 2. we bought bread butter eggs and milk 3. where are you going asked the teacher 4. its raining so the match wont start 5. the girls books were left in the hall 6. yes said Nimal I finished it yesterday 7. although it was late we decided to walk 8. the dogs tail was wagging 9. i said stop shouting at once 10. after the rain stopped the children went outside",
+                "**Answers.** 1. My brother's bicycle is new. 2. We bought bread, butter, eggs and milk. 3. \"Where are you going?\" asked the teacher. 4. It's raining, so the match won't start. 5. The girls' books were left in the hall. 6. \"Yes,\" said Nimal, \"I finished it yesterday.\" 7. Although it was late, we decided to walk. 8. The dog's tail was wagging. 9. I said, \"Stop shouting at once!\" 10. After the rain stopped, the children went outside.",
+                "**Teaching note.** Question 5 is the one to discuss: *girls'* means more than one girl. Write *the girl's books* beside it and ask what changed."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Reading",
+          "eyebrow": "Worksheets 5 to 7",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "Worksheet 5 — The wrong bus",
+              "a": [
+                "**Focus:** following a sequence and drawing a conclusion from it.",
+                "**Passage.** *Chamari boarded the 6.40 bus as she did every morning. She noticed nothing until the bus turned left at the clock tower instead of right. The conductor explained that the route had changed a week earlier and that a notice had been pasted at the halt. She had walked past that halt fourteen times without reading it.*",
+                "**Questions.** 1. What time was the bus? 2. Where did Chamari notice something was wrong? 3. What had changed? 4. How had passengers been told? 5. Why had Chamari not known? 6. What does the last sentence suggest about her? 7. What is the lesson of the passage, in one sentence?",
+                "**Answers.** 1. 6.40. 2. At the clock tower, when the bus turned left instead of right. 3. The bus route. 4. By a notice pasted at the halt. 5. She had never read the notice. 6. That she is unobservant, or that she does things out of habit without paying attention. 7. Accept any sensible version of: it is worth reading notices, or habit stops us noticing what has changed.",
+                "**Marking note.** Question 6 asks what the sentence *suggests*. A child who writes *she walked past fourteen times* has copied, not answered."
+              ]
+            },
+            {
+              "q": "Worksheet 6 — A letter to the editor",
+              "a": [
+                "**Focus:** identifying opinion, and separating it from fact.",
+                "**Passage.** *Sir — The junction near our school has no pedestrian crossing. Last month two children were knocked down there, and one is still in hospital. Traffic moves at speed because the road is straight and wide. I believe the authorities have ignored this problem for far too long, and I am certain that a crossing would cost less than the treatment of a single injured child. — Concerned Parent, Kadawatha.*",
+                "**Questions.** 1. What is missing at the junction? 2. What happened last month? 3. Why does traffic move quickly there? 4. Write down one FACT from the letter. 5. Write down one OPINION from the letter. 6. Which words tell you sentence five is an opinion? 7. What does the writer want to happen?",
+                "**Answers.** 1. A pedestrian crossing. 2. Two children were knocked down; one is still in hospital. 3. The road is straight and wide. 4. Any of: there is no crossing; two children were knocked down; one is in hospital; the road is straight and wide. 5. Either: the authorities have ignored the problem for too long; or a crossing would cost less than treating one injured child. 6. *I believe* and *I am certain*. 7. A pedestrian crossing to be built at the junction.",
+                "**Marking note.** Question 6 is the heart of the sheet. Signal phrases — *I believe*, *I think*, *surely*, *clearly* — are how a reader spots opinion, and they will need this at Ordinary Level."
+              ]
+            },
+            {
+              "q": "Worksheet 7 — A table and a paragraph",
+              "a": [
+                "**Focus:** taking information from a table and from prose, and combining the two.",
+                "**Table — rainfall in millimetres.** *January: Colombo 90, Kandy 105, Jaffna 75. April: Colombo 230, Kandy 190, Jaffna 60. October: Colombo 350, Kandy 245, Jaffna 220.*",
+                "**Paragraph.** *Two monsoons cross the island. The south-west monsoon brings rain to the western and central areas between May and September, while the north-east monsoon brings rain to the north and east between December and February. October and November are wet almost everywhere.*",
+                "**Questions.** 1. Which town had the most rain in October? 2. Which town had the least rain in April? 3. In which of the three months did Kandy get more rain than Colombo? 4. Which monsoon affects Jaffna most? 5. Using the table and the paragraph together, explain why Jaffna's April figure is so low. 6. Which month in the table best matches the sentence about October and November?",
+                "**Answers.** 1. Colombo, with 350 mm. 2. Jaffna, with 60 mm. 3. January, 105 against 90. 4. The north-east monsoon. 5. April falls between the two monsoons for Jaffna: the north-east monsoon has ended in February and the south-west monsoon does not reach the north. 6. October, when all three towns have high figures.",
+                "**Marking note.** Question 5 is the only one that needs both sources. Award it double if you are giving marks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Writing",
+          "eyebrow": "Worksheets 8 to 10",
+          "items": [
+            {
+              "q": "Worksheet 8 — An informal letter",
+              "a": [
+                "**Focus:** the layout of a friendly letter, and keeping the tone informal.",
+                "**Task.** Write a letter of about 100 words to a friend who has moved to another town. Tell them one piece of news from school, ask two questions about their new school, and invite them to visit.",
+                "**Model answer.** *42, Station Road, Gampaha. 12th August 2026.*",
+                "*Dear Sanduni,*",
+                "*How are you settling in? We all miss you here, especially in the mornings when nobody argues about the window seat.*",
+                "*Our class won the inter-house drama competition last week. Malithi forgot her lines completely and made something up, and the judges said it was the best part of the play.*",
+                "*What is your new school like? Have you made friends yet? Write and tell me everything.*",
+                "*The August holidays begin on the twentieth. Please come and stay for a few days — my mother says you are very welcome.*",
+                "*Your friend,*  *Ishara*",
+                "**Marking guide.** Two marks for address and date; one for the greeting; one for the closing; two for the news; two for the two questions; one for the invitation; one for informal tone. Ten marks.",
+                "**Teaching note.** The commonest error is a formal tone: *I am writing to inform you*. Ask them to read it aloud and decide whether they would say it to a friend."
+              ]
+            },
+            {
+              "q": "Worksheet 9 — A short report",
+              "a": [
+                "**Focus:** reporting what happened, in order, without opinion.",
+                "**Task.** You are the secretary of the school English Society. Write a report of about 120 words on a poetry recitation held last Friday. Include: when and where it was held, how many took part, who won, and what happened at the end.",
+                "**Model answer.** *REPORT ON THE POETRY RECITATION COMPETITION*",
+                "*The annual poetry recitation competition of the English Society was held on Friday 8th August at 2.00 p.m. in the school hall.*",
+                "*Twenty-six pupils from Grades 8 to 11 took part. Each competitor recited one prescribed poem and one of their own choice. The panel of three judges was chaired by Mrs Perera of the English Department.*",
+                "*The first place was won by Thilini Fernando of Grade 10, with Ravindu Silva of Grade 9 second and Aysha Nazeer of Grade 8 third.*",
+                "*The principal distributed the prizes at 4.15 p.m. and thanked the judges. The meeting closed with a vote of thanks proposed by the secretary.*",
+                "**Marking guide.** Two marks for a heading; two for date, time and place; two for the number and range of competitors; two for the results; two for the closing events; two for a factual tone throughout. Twelve marks.",
+                "**Teaching note.** Cross out every opinion you find — *it was very enjoyable*, *everyone was excited*. A report records; it does not review."
+              ]
+            },
+            {
+              "q": "Worksheet 10 — Paragraph: for and against",
+              "a": [
+                "**Focus:** presenting both sides before giving a view.",
+                "**Task.** Write three paragraphs of about 60 words each on: *Should pupils be allowed to bring mobile telephones to school?* Paragraph one: arguments for. Paragraph two: arguments against. Paragraph three: your own view, with a reason.",
+                "**Model answer.** *Those in favour argue that a telephone is a safety measure. A pupil who misses the bus or falls ill can reach a parent at once, and a parent who is delayed can send word. Telephones are also useful for schoolwork: a dictionary, a calculator and a camera for copying notes from the board are all in one pocket.*",
+                "*Those against point out that telephones are the most effective distraction ever invented. A pupil scrolling under the desk is not listening, and the teacher often cannot tell. There is also the question of theft, and of the unkindness that spreads quickly through a class group when nobody is watching.*",
+                "*In my view telephones should be allowed into school but collected at the start of the day and returned at the end. That keeps the safety of the journey, which is the strongest argument for them, and removes the distraction, which is the strongest argument against.*",
+                "**Marking guide.** Three marks for two genuine arguments on each side; two for the paragraph division; two for a view that follows from what came before; two for accurate sentences; one for length. Ten marks.",
+                "**Teaching note.** The third paragraph must answer the first two. A view that ignores everything above it is where most marks are lost, at every level from here to Advanced Level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 9 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-9/", "more": "Open" },
+            { "title": "Grade 7 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-7/", "more": "Open" },
+            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/worksheets-by-grade/grade-9",
+      "title": "Grade 9 Worksheets",
+      "metaTitle": "Grade 9 English Worksheets | English Teachers Resources | RCF English",
+      "description": "Ten printable Grade 9 English worksheets with answer keys: reported speech, relative clauses, conditionals, linking words, three reading passages and three writing tasks.",
+      "keywords": "grade 9 English worksheets, reported speech worksheet, relative clauses, conditionals, grade 9 comprehension, grade 9 writing",
+      "kicker": "Worksheets by Grade",
+      "kind": "page",
+      "breadcrumbs": [
+        { "label": "English Teachers Resources", "url": "teacher-resources/" },
+        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+      ],
+      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "hero": {
+        "text": "Ten worksheets for Grade 9: four grammar, three reading and three writing, each with the answers."
+      },
+      "blocks": [
+        {
+          "type": "accordion",
+          "heading": "Grammar",
+          "eyebrow": "Worksheets 1 to 4",
+          "items": [
+            {
+              "q": "Worksheet 1 — Reported speech: statements",
+              "a": [
+                "**Focus:** the tense shift, and the changes to pronouns and time words.",
+                "**Task A.** Put into reported speech.",
+                "1. \"I am tired,\" she said. 2. \"We have finished the work,\" they said. 3. \"I will come tomorrow,\" he said. 4. \"I saw her yesterday,\" Nimal said. 5. \"We are living in Kandy now,\" they said.",
+                "**Task B.** Put into direct speech.",
+                "6. She said that she was leaving the next day. 7. He said that he had lost his keys. 8. They said that they could not help us. 9. She told me that she liked the book. 10. He said that he would telephone that evening.",
+                "**Answers.** A: 1. She said (that) she was tired. 2. They said they had finished the work. 3. He said he would come the next day. 4. Nimal said he had seen her the day before. 5. They said they were living in Kandy then. B: 6. \"I am leaving tomorrow,\" she said. 7. \"I have lost my keys,\" he said. 8. \"We cannot help you,\" they said. 9. \"I like the book,\" she told me. 10. \"I will telephone this evening,\" he said.",
+                "**Teaching note.** Three things move together: the tense goes back one step, the pronouns change to fit the new speaker, and the time words change (*tomorrow* to *the next day*). Ask the class to mark all three changes in question 3 in different colours."
+              ]
+            },
+            {
+              "q": "Worksheet 2 — Reported questions and commands",
+              "a": [
+                "**Focus:** word order in reported questions, and the infinitive in reported commands.",
+                "**Task A.** Report these questions.",
+                "1. \"Where do you live?\" he asked. 2. \"Have you finished?\" she asked me. 3. \"What time does the bus leave?\" they asked. 4. \"Why are you late?\" the teacher asked. 5. \"Did you see the notice?\" he asked.",
+                "**Task B.** Report these commands and requests.",
+                "6. \"Close the door,\" she said. 7. \"Please help me,\" he said. 8. \"Do not touch that,\" the guard said. 9. \"Wait here,\" she told us. 10. \"Bring your book tomorrow,\" the teacher said.",
+                "**Answers.** A: 1. He asked where I lived. 2. She asked me whether I had finished. 3. They asked what time the bus left. 4. The teacher asked why I was late. 5. He asked whether I had seen the notice. B: 6. She told me to close the door. 7. He asked me to help him. 8. The guard told us not to touch that. 9. She told us to wait there. 10. The teacher told us to bring our books the next day.",
+                "**Teaching note.** The single biggest error is keeping question word order: *He asked where did I live.* Once the question is reported it is no longer a question, so the word order returns to normal and *do* disappears."
+              ]
+            },
+            {
+              "q": "Worksheet 3 — Relative clauses: who, which, that, whose, where",
+              "a": [
+                "**Focus:** joining two sentences with a relative pronoun, and choosing the right one.",
+                "**Task A.** Fill in the correct relative pronoun.",
+                "1. The man ____ lives next door is a doctor. 2. The book ____ I borrowed was excellent. 3. This is the girl ____ father owns the shop. 4. The village ____ I was born is very small. 5. The bicycle ____ was stolen has been found.",
+                "**Task B.** Join each pair into one sentence.",
+                "6. I met a woman. She teaches at your school. 7. We visited a temple. It was built four hundred years ago. 8. That is the boy. His brother won the prize. 9. This is the room. My grandfather was born in it. 10. I read a book. You recommended it.",
+                "**Answers.** A: 1. who 2. which/that 3. whose 4. where 5. which/that. B: 6. I met a woman who teaches at your school. 7. We visited a temple which was built four hundred years ago. 8. That is the boy whose brother won the prize. 9. This is the room where my grandfather was born. 10. I read the book which you recommended.",
+                "**Teaching note.** *Whose* is the one they avoid. Question 3 and question 8 sit together deliberately: both show possession, and neither works with *who*."
+              ]
+            },
+            {
+              "q": "Worksheet 4 — Conditionals: first, second and third",
+              "a": [
+                "**Focus:** the three patterns, and what each one means about likelihood.",
+                "**Task A.** Complete with the correct form.",
+                "1. If it rains, we ____ (stay) at home. 2. If I ____ (have) more time, I would learn to play the violin. 3. If she had studied harder, she ____ (pass) the examination. 4. If you heat water to 100 degrees, it ____ (boil). 5. If I ____ (be) you, I would apologise.",
+                "**Task B.** Say which type each sentence is (zero, first, second or third) and what it tells you.",
+                "6. If I win the scholarship, I will go to Colombo. 7. If I had known, I would have told you. 8. If you mix blue and yellow, you get green. 9. If I were rich, I would build a library. 10. If he arrives late, the door will be locked.",
+                "**Answers.** A: 1. will stay 2. had 3. would have passed 4. boils 5. were. B: 6. First — a real possibility in the future. 7. Third — the past, and it did not happen. 8. Zero — always true. 9. Second — imaginary or unlikely. 10. First — a real possibility.",
+                "**Teaching note.** The meaning matters more than the label. In 7, ask what actually happened: *I did not know, and I did not tell you.* Once they can say that, the form follows."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Reading",
+          "eyebrow": "Worksheets 5 to 7",
+          "variant": "tint",
+          "items": [
+            {
+              "q": "Worksheet 5 — The interview",
+              "a": [
+                "**Focus:** attitude — working out what the writer feels without being told.",
+                "**Passage.** *The office was cool and very quiet. I had rehearsed my answers for a week, and by the time the door opened I could recite them without thinking, which turned out to be the difficulty. The woman behind the desk did not ask a single question I had prepared for. She asked what I had read recently, and whether I had enjoyed it. I heard myself talking for four minutes about a book I had not thought about in years, and when I stopped she was smiling.*",
+                "**Questions.** 1. How had the writer prepared? 2. Why was that preparation a difficulty? 3. What did the woman actually ask about? 4. How long did the writer speak? 5. What does *I heard myself talking* suggest about the writer's state of mind? 6. Do you think the interview went well? Give two pieces of evidence. 7. Choose one word to describe the writer's feeling at the start, and one for the end.",
+                "**Answers.** 1. By rehearsing answers for a week until they were automatic. 2. Because the rehearsed answers were useless — none of the prepared questions came up. 3. What the writer had read recently and whether they enjoyed it. 4. Four minutes. 5. That the writer was speaking without planning, surprised at themselves — a sign of nerves giving way to genuine interest. 6. Accept: she was smiling at the end; the writer spoke naturally and at length. 7. Accept: anxious or over-prepared at the start; relieved, surprised or pleased at the end.",
+                "**Marking note.** Question 6 must have evidence. This is the exact skill the Ordinary Level comprehension will test two years from now."
+              ]
+            },
+            {
+              "q": "Worksheet 6 — Two accounts of one event",
+              "a": [
+                "**Focus:** comparing two versions and noticing where they disagree.",
+                "**Account A.** *The match was ruined by the weather. Rain stopped play twice, the outfield was slow, and our batsmen never settled. The final margin of eleven runs flattered the other side, who were fortunate to bat when conditions were at their best.*",
+                "**Account B.** *A hard-fought match ended in an eleven-run win. Both sides faced two rain interruptions and the same slow outfield. Our bowlers held their nerve at the close, and the victory was thoroughly deserved.*",
+                "**Questions.** 1. What was the winning margin? 2. How many rain interruptions were there? 3. On which two facts do the accounts agree? 4. On what do they disagree? 5. Which account was written by a supporter of the losing side? How do you know? 6. Find one word from each account that shows the writer's bias. 7. Which account would you trust more, and why?",
+                "**Answers.** 1. Eleven runs. 2. Two. 3. The margin and the number of interruptions; also the slow outfield. 4. Whether the result was deserved or lucky, and whether both sides faced the same conditions. 5. Account A — it calls the margin *flattering*, says the other side was *fortunate*, and blames the weather. 6. A: *ruined*, *flattered*, *fortunate*. B: *hard-fought*, *thoroughly deserved*. 7. Accept either with a reason. B is more even-handed because it grants both sides the same conditions; a pupil who argues A is closer to the truth must show why.",
+                "**Marking note.** There is no single right answer to 7. Mark the reasoning, not the choice."
+              ]
+            },
+            {
+              "q": "Worksheet 7 — Summary practice",
+              "a": [
+                "**Focus:** reducing a passage to its main points without losing the meaning.",
+                "**Passage.** *Sri Lanka's rail network was built in the nineteenth century to carry coffee, and later tea, from the hill country to the port at Colombo. Passengers were an afterthought. The line to Kandy opened in 1867 and was extended to Nanu Oya, and later Badulla, over the following decades. Building it was slow and dangerous work: the track had to be cut into steep hillsides, and in places it climbs more than a thousand metres in a few dozen kilometres. Today the same line carries far more tourists than tea, and the journey that was once an industrial necessity is now considered one of the most beautiful in Asia.*",
+                "**Questions.** 1. Why was the railway originally built? 2. When did the Kandy line open? 3. Name two difficulties in building it. 4. What does the line mainly carry today? 5. Summarise the passage in no more than 40 words.",
+                "**Answers.** 1. To carry coffee, and later tea, from the hill country to Colombo port. 2. 1867. 3. Cutting track into steep hillsides; the steep climb of over a thousand metres in a short distance. Accept *slow and dangerous work*. 4. Tourists. 5. Model: *Sri Lanka's hill-country railway was built in the nineteenth century to move coffee and tea to Colombo. Construction was slow and dangerous on steep slopes. The Kandy line opened in 1867. Today it carries mainly tourists and is admired for its beauty.* (39 words.)",
+                "**Marking note.** For question 5 mark four things: purpose, difficulty, date, present use. A summary that keeps the pretty last sentence but loses the purpose has missed the passage."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Writing",
+          "eyebrow": "Worksheets 8 to 10",
+          "items": [
+            {
+              "q": "Worksheet 8 — A formal letter of request",
+              "a": [
+                "**Focus:** formal layout and formal tone.",
+                "**Task.** Write a letter of about 120 words to the Principal requesting permission for your class to visit a museum. Give the date, the purpose, the number of pupils, and the teacher who will accompany you.",
+                "**Model answer.** *The Class Monitor, Grade 9B, Central College, Kurunegala. 14th August 2026.*",
+                "*The Principal, Central College, Kurunegala.*",
+                "*Dear Sir,*",
+                "*Request for permission to visit the National Museum*",
+                "*I write on behalf of Grade 9B to request permission for our class to visit the National Museum in Colombo on Friday 5th September 2026.*",
+                "*We are studying the chapter on ancient irrigation, and the museum's collection would allow us to see the objects we have only read about. Thirty-two pupils would take part.*",
+                "*Mrs Perera of the English Department has kindly agreed to accompany us, and a second teacher would join us if required. We would leave at 7.00 a.m. and return by 4.00 p.m.*",
+                "*I should be grateful if you would consider this request.*",
+                "*Yours faithfully,*  *Ravindu Silva, Class Monitor*",
+                "**Marking guide.** Two marks for both addresses and the date; one for the subject line; one for *Dear Sir* with *Yours faithfully*; four for the four required details; two for formal tone; two for accuracy. Twelve marks.",
+                "**Teaching note.** *Dear Sir* pairs with *Yours faithfully*; *Dear Mr Perera* pairs with *Yours sincerely*. Pupils mix these every year and it is a free mark once learnt."
+              ]
+            },
+            {
+              "q": "Worksheet 9 — A speech",
+              "a": [
+                "**Focus:** writing to be heard rather than read.",
+                "**Task.** Write a speech of about 150 words to be delivered at the school assembly, persuading pupils to take part in a tree-planting campaign. Open by addressing the audience, give two reasons, and end with a clear call to act.",
+                "**Model answer.** *Respected Principal, teachers and dear friends,*",
+                "*Next Friday our school will plant one hundred saplings along the boundary wall, and I am here to ask every one of you to take part.*",
+                "*I want to give you two reasons. The first you can see for yourselves: our playground has almost no shade, and by ten o'clock the heat drives everyone indoors. Trees planted this year will shade the pupils who follow us.*",
+                "*The second reason is simpler. Planting a tree takes ten minutes. Very few useful things in this world can be done in ten minutes, and fewer still last fifty years.*",
+                "*Some of you will say that one sapling makes no difference. One does not. One hundred, planted by one school, repeated by every school in this district, does.*",
+                "*Bring a trowel on Friday. I will see you at the wall.*",
+                "**Marking guide.** Two marks for addressing the audience; four for two developed reasons; two for a clear call to action; two for spoken rhythm — short sentences, direct address; two for accuracy. Twelve marks.",
+                "**Teaching note.** Make them read it aloud. Anything they stumble over is a sentence that is too long for a speech."
+              ]
+            },
+            {
+              "q": "Worksheet 10 — A narrative with a set opening",
+              "a": [
+                "**Focus:** shaping a story with a beginning, a turn and an ending.",
+                "**Task.** Write a story of about 200 words beginning with this sentence: *The envelope had been under the door since morning, and nobody had touched it.*",
+                "**Model answer.** *The envelope had been under the door since morning, and nobody had touched it. My mother had seen it, stepped over it and gone to work. My brother had noticed it, decided it was not addressed to him, and left it there.*",
+                "*By four o'clock I could not bear it any longer. There was no stamp and no address, only my grandfather's name in handwriting that sloped uphill.*",
+                "*My grandfather had not received a letter in eleven years. He read the newspaper each morning, complained about it, and slept in the afternoon, and nothing else ever happened to him.*",
+                "*When he came in from the garden I held it out. He looked at the writing for a long moment before he took it, and he did not open it in front of me.*",
+                "*He sat on the step with the envelope on his knee until it grew dark. Then he came inside, put it in his shirt pocket, and asked what was for dinner, exactly as though it were an ordinary evening.*",
+                "*He never told us who it was from. But he read the newspaper differently after that, and he stopped complaining about it.*",
+                "**Marking guide.** Four marks for a clear beginning, turn and ending; three for detail that does work rather than decorating; three for controlled paragraphing; three for accurate, varied sentences; two for an ending that is not merely *and then I woke up*. Fifteen marks.",
+                "**Teaching note.** Ban two endings before they start: waking from a dream, and the whole thing turning out to be a story someone was reading. Both are used to avoid finishing, and both cost marks at every level above this one."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 10 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-10/", "more": "Open" },
+            { "title": "Grade 8 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-8/", "more": "Open" },
+            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+          ]
+        }
+      ]
+    }
+  ]
+}
