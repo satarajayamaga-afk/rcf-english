@@ -688,6 +688,140 @@
         { "kind": "mcq", "prompt": "On what condition might the principal still change the timetable?", "options": ["If the students request it", "If both teachers agree in writing", "If the term has not begun", "If there is a free room"], "answer": 1, "explanation": "He says she has been known to make small adjustments if both teachers agree in writing." },
         { "kind": "mcq", "prompt": "What does Mrs Perera decide to do?", "options": ["Accept the timetable", "Write to the principal that evening", "Ask the students to choose", "Swap without permission"], "answer": 1, "explanation": "She says, 'Then I shall write this evening. It is worth trying.'" }
       ]
+    },
+    {
+      "id": "l11-1",
+      "grade": 11,
+      "rate": 1,
+      "title": "A debate: has social media helped or harmed young people?",
+      "description": "Two speakers argue opposing cases before a chairperson. Competency levels 3.6 and 8.16: listens and reports information, and follows a debate.",
+      "instructions": "Listen to the debate and follow each speaker's argument. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Chair", "text": "The motion is that social media has done more harm than good to young people. Speaking for the motion, Nilanka." },
+        { "speaker": "Nilanka", "text": "Thank you. My case rests on one word: attention. A generation has been trained to expect something new every few seconds." },
+        { "speaker": "Nilanka", "text": "Reading a chapter, sitting an examination, listening to a teacher: all of these require the very thing that these applications are designed to break." },
+        { "speaker": "Nilanka", "text": "I am not claiming that young people are foolish. I am claiming that they are being acted upon by companies with far greater resources than they have." },
+        { "speaker": "Chair", "text": "Speaking against the motion, Ashen." },
+        { "speaker": "Ashen", "text": "My friend describes young people as if they were clay. They are not. The same platforms he condemns have taught thousands of students to code, to draw and to speak a second language." },
+        { "speaker": "Ashen", "text": "Moreover, the harm he describes is not new. The same was said of television, and of the novel before it." },
+        { "speaker": "Ashen", "text": "What has genuinely changed is that a student in a distant village now has the same library as a student in Colombo. I would not surrender that lightly." },
+        { "speaker": "Chair", "text": "Thank you both. The house will now vote." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "On what single idea does Nilanka rest his case?", "options": ["Cost", "Attention", "Privacy", "Health"], "answer": 1, "explanation": "He says, 'My case rests on one word: attention.'" },
+        { "kind": "mcq", "prompt": "What does Nilanka say he is NOT claiming?", "options": ["That companies are powerful", "That young people are foolish", "That attention matters", "That examinations are difficult"], "answer": 1, "explanation": "He explicitly says he is not claiming that young people are foolish, only that they are being acted upon." },
+        { "kind": "mcq", "prompt": "What does Ashen mean by 'as if they were clay'?", "options": ["That young people are fragile", "That young people are shaped passively, with no will of their own", "That young people are dirty", "That young people are creative"], "answer": 1, "explanation": "He is objecting that Nilanka's argument treats young people as things moulded by others rather than as people who choose." },
+        { "kind": "match", "prompt": "Match each speaker to the argument they make.", "pairs": [ { "term": "Nilanka", "meaning": "The applications are designed to break concentration" }, { "term": "Ashen", "meaning": "The same fears were expressed about television and the novel" } ], "explanation": "Nilanka argues from attention; Ashen argues that the alarm is not new." },
+        { "kind": "short", "prompt": "According to Ashen, what has genuinely changed?", "answer": ["a student in a village has the same library as a student in colombo", "access to the same library", "students everywhere have the same library", "equal access to information", "the same library"], "explanation": "He says a student in a distant village now has the same library as a student in Colombo." },
+        { "kind": "mcq", "prompt": "Which best describes the structure of this debate?", "options": ["Both speakers agree", "One states a harm, the other disputes both the harm and its novelty", "Both speakers discuss cost", "The chair gives the main argument"], "answer": 1, "explanation": "Nilanka argues harm; Ashen disputes the harm and adds that such fears are not new." }
+      ]
+    },
+    {
+      "id": "l11-2",
+      "grade": 11,
+      "rate": 1,
+      "title": "A careers talk",
+      "description": "An extended talk to be summarised in note form. Competency level 3.8: takes notes from oral presentations.",
+      "instructions": "Listen and take notes as the speaker moves through each section. Complete the note frame and answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a careers talk given to Grade eleven students." },
+        { "speaker": "Speaker", "text": "Good morning. I have been asked to speak about choosing a path after the Ordinary Level examination. I shall cover three things: streams, timing, and a mistake I see every year." },
+        { "speaker": "Speaker", "text": "First, streams. You will choose between science, commerce, arts and technology. Each opens some doors and closes others, but far fewer than students imagine." },
+        { "speaker": "Speaker", "text": "Secondly, timing. Applications for most Advanced Level classes close in the third week of January. If you wait for your results before enquiring, you will already be late." },
+        { "speaker": "Speaker", "text": "Thirdly, the mistake. Every year, students choose a stream because a friend has chosen it. Within one term, one of the two is unhappy, and it is usually the follower." },
+        { "speaker": "Speaker", "text": "Consequently, my advice is this: write down what you actually enjoy doing for two hours without being told to. That list is more useful than any ranking of subjects." },
+        { "speaker": "Speaker", "text": "Finally, do speak to somebody already doing the course. Prospectuses describe what a subject should be. A student will tell you what it is." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the note frame.", "lines": [ { "label": "Number of sections:", "answer": ["three", "3"] }, { "label": "Applications close in:", "answer": ["third week of January", "January", "the third week of january", "3rd week of january"] }, { "label": "The common mistake:", "answer": ["choosing a stream because a friend chose it", "following a friend", "choosing what a friend chose", "copying a friend", "choosing because of a friend"] } ], "explanation": "Three sections; applications close in the third week of January; the mistake is following a friend's choice." },
+        { "kind": "sequence", "prompt": "Put the three announced sections in order.", "items": ["Streams", "Timing", "A common mistake"], "explanation": "The speaker announces this order at the start and follows it with First, Secondly and Thirdly." },
+        { "kind": "mcq", "prompt": "What does the speaker say about the doors a stream closes?", "options": ["It closes most doors", "It closes far fewer than students imagine", "It closes no doors at all", "It depends on the school"], "answer": 1, "explanation": "Each stream opens some doors and closes others, but far fewer than students imagine." },
+        { "kind": "mcq", "prompt": "Why should students not wait for their results before enquiring?", "options": ["Results are often delayed", "Applications will already have closed", "Teachers will be on leave", "Fees increase later"], "answer": 1, "explanation": "Applications close in the third week of January, so waiting makes a student late." },
+        { "kind": "short", "prompt": "What does the speaker advise students to write down?", "answer": ["what you enjoy doing for two hours without being told to", "what they enjoy doing", "what you actually enjoy doing", "what you enjoy for two hours", "things you enjoy doing"], "explanation": "He advises writing down what you actually enjoy doing for two hours without being told to." },
+        { "kind": "mcq", "prompt": "What is the difference the speaker draws between a prospectus and a student?", "options": ["One is free, the other is not", "A prospectus says what a subject should be; a student says what it is", "A prospectus is more accurate", "A student knows the examination better"], "answer": 1, "explanation": "That contrast is stated directly in the closing lines." }
+      ]
+    },
+    {
+      "id": "l11-3",
+      "grade": 11,
+      "rate": 1,
+      "title": "An interview with a writer",
+      "description": "A longer interview in which much is implied. Competency levels 5.7 and 5.8: infers ellipted and implied information.",
+      "instructions": "Listen carefully. Several answers depend on what is suggested rather than stated. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to an interview with a novelist." },
+        { "speaker": "Interviewer", "text": "Your first novel took eleven years. The second took nine months. What changed?" },
+        { "speaker": "Writer", "text": "I stopped waiting to feel ready." },
+        { "speaker": "Interviewer", "text": "That sounds simple." },
+        { "speaker": "Writer", "text": "It is simple. It is not easy. For eleven years I believed that a better version of myself would one day sit down and write the book. He never arrived, and I got tired of waiting for him." },
+        { "speaker": "Interviewer", "text": "Some critics have called the second novel rushed." },
+        { "speaker": "Writer", "text": "Some critics called the first one overworked. One learns to hold both remarks loosely." },
+        { "speaker": "Interviewer", "text": "Do you read your reviews?" },
+        { "speaker": "Writer", "text": "I read them the way one presses a bruise. Knowing better does not stop you." },
+        { "speaker": "Interviewer", "text": "And the third book?" },
+        { "speaker": "Writer", "text": "It is being written. Slowly, but it is being written, which is a different thing from being planned." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "What does the writer say changed between the two novels?", "options": ["He found a better publisher", "He stopped waiting to feel ready", "He moved to a quieter house", "He began writing full time"], "answer": 1, "explanation": "His answer is direct: 'I stopped waiting to feel ready.'" },
+        { "kind": "mcq", "prompt": "What does 'He never arrived' refer to?", "options": ["A publisher", "The better version of himself he was waiting to become", "A co-writer", "An editor"], "answer": 1, "explanation": "He describes believing a better version of himself would one day write the book, and that person never came." },
+        { "kind": "mcq", "prompt": "What does the writer imply by mentioning that critics called the first novel overworked?", "options": ["The critics were right about both books", "Opposite criticisms cancel out, so neither should be taken too seriously", "He agrees the second was rushed", "Critics never read his work"], "answer": 1, "explanation": "He follows it with 'One learns to hold both remarks loosely', suggesting contradictory criticism should not be weighted heavily." },
+        { "kind": "mcq", "prompt": "What does 'I read them the way one presses a bruise' tell you?", "options": ["He enjoys reviews", "He reads them knowing it will hurt, and cannot stop", "He never reads reviews", "He reads them quickly"], "answer": 1, "explanation": "Pressing a bruise is deliberately causing yourself small pain; he adds that knowing better does not stop you." },
+        { "kind": "short", "prompt": "What distinction does the writer draw at the end about the third book?", "answer": ["being written is different from being planned", "written not planned", "it is being written rather than planned", "the difference between written and planned", "being written is not being planned"], "explanation": "He says it is being written, 'which is a different thing from being planned'." },
+        { "kind": "mcq", "prompt": "Which word best describes the writer's tone throughout?", "options": ["Boastful", "Wry and self-aware", "Angry", "Indifferent"], "answer": 1, "explanation": "His answers are dry, honest about his own weaknesses, and lightly humorous rather than proud or bitter." }
+      ]
+    },
+    {
+      "id": "l11-4",
+      "grade": 11,
+      "rate": 1,
+      "title": "A committee meeting",
+      "description": "A meeting in which decisions are made and reported. Competency levels 3.6 and 6.11: reports information, and reported speech.",
+      "instructions": "Listen to the meeting and follow what is decided. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to part of a school welfare committee meeting." },
+        { "speaker": "Chair", "text": "Item three: the condition of the science laboratory. Mr Fernando, you inspected it." },
+        { "speaker": "Mr Fernando", "text": "I did. Four of the twelve gas taps are leaking, and the emergency shower has not worked since last year." },
+        { "speaker": "Chair", "text": "Has this been reported before?" },
+        { "speaker": "Mr Fernando", "text": "Twice. I was told in March that the parts had been ordered. When I asked again in July, I was told the same thing." },
+        { "speaker": "Mrs Silva", "text": "Then perhaps we should stop asking and start writing. A letter from this committee carries more weight than a conversation in a corridor." },
+        { "speaker": "Chair", "text": "Agreed. Mrs Silva, would you draft it? Mr Fernando, please photograph the taps and attach the photographs." },
+        { "speaker": "Mrs Silva", "text": "I shall have it ready by Monday. I would suggest we also copy it to the zonal office." },
+        { "speaker": "Chair", "text": "Noted. And until the shower is repaired, practical work involving acids is suspended. Is that accepted?" },
+        { "speaker": "Mr Fernando", "text": "Accepted." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the minutes.", "lines": [ { "label": "Leaking gas taps:", "answer": ["four", "4", "4 of 12", "four of twelve"] }, { "label": "Letter to be drafted by:", "answer": ["Mrs Silva", "mrs silva", "silva"] }, { "label": "Letter ready by:", "answer": ["Monday", "monday"] } ], "explanation": "Four taps leak; Mrs Silva will draft the letter and have it ready by Monday." },
+        { "kind": "mcq", "prompt": "How long has the emergency shower been broken?", "options": ["Since March", "Since July", "Since last year", "Since Monday"], "answer": 2, "explanation": "Mr Fernando says it has not worked since last year." },
+        { "kind": "mcq", "prompt": "What was Mr Fernando told when he asked in July?", "options": ["That the parts had arrived", "The same thing he was told in March", "That there was no money", "That the shower was fixed"], "answer": 1, "explanation": "He says, 'When I asked again in July, I was told the same thing.'" },
+        { "kind": "mcq", "prompt": "Why does Mrs Silva suggest writing rather than asking?", "options": ["Because nobody is available to ask", "Because a committee letter carries more weight", "Because the principal prefers letters", "Because it is a school rule"], "answer": 1, "explanation": "She says a letter from the committee carries more weight than a conversation in a corridor." },
+        { "kind": "short", "prompt": "What is Mr Fernando asked to do?", "answer": ["photograph the taps", "take photographs of the taps", "photograph the taps and attach the photographs", "take photos of the taps", "photograph them"], "explanation": "The chair asks him to photograph the taps and attach the photographs to the letter." },
+        { "kind": "mcq", "prompt": "What is suspended until the shower is repaired?", "options": ["All laboratory work", "Practical work involving acids", "Committee meetings", "Science classes"], "answer": 1, "explanation": "The chair suspends practical work involving acids until the shower is repaired." }
+      ]
+    },
+    {
+      "id": "l11-5",
+      "grade": 11,
+      "rate": 1,
+      "title": "Advice before the examination",
+      "description": "A teacher gives structured advice, signalled by discourse markers. Competency levels 3.7 and 3.8: recognizes discourse markers and takes notes from an oral presentation.",
+      "instructions": "Listen to the advice and note the main points. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a teacher speaking to a class before the Ordinary Level examination." },
+        { "speaker": "Teacher", "text": "You have six weeks. I want to say four things, and none of them is about working harder." },
+        { "speaker": "Teacher", "text": "First, work in shorter periods. Forty minutes of full attention is worth more than three hours of turning pages while thinking about something else." },
+        { "speaker": "Teacher", "text": "Secondly, write. You cannot revise writing by reading. If the paper asks you to write a letter, you must have written letters, not read about them." },
+        { "speaker": "Teacher", "text": "Thirdly, and this is the one you will ignore: sleep. A tired candidate misreads the question. Almost every serious mistake I have marked began with misreading." },
+        { "speaker": "Teacher", "text": "Finally, in the hall itself, read the whole paper before you write a single word. Two minutes spent reading will save you twenty." },
+        { "speaker": "Teacher", "text": "In short: shorter sessions, actual writing, proper sleep, and read before you answer. That is all I have." }
+      ],
+      "questions": [
+        { "kind": "sequence", "prompt": "Put the teacher's four pieces of advice in the order given.", "items": ["Work in shorter periods", "Practise writing, not just reading", "Get proper sleep", "Read the whole paper before writing"], "explanation": "The markers First, Secondly, Thirdly and Finally set out the four in this order." },
+        { "kind": "mcq", "prompt": "What does the teacher say at the start about his advice?", "options": ["It is about working harder", "None of it is about working harder", "It is only for weak students", "It applies to one subject only"], "answer": 1, "explanation": "He says, 'I want to say four things, and none of them is about working harder.'" },
+        { "kind": "note", "prompt": "Complete the notes.", "lines": [ { "label": "Time left:", "answer": ["six weeks", "6 weeks", "six", "6"] }, { "label": "Length of a good study session:", "answer": ["40 minutes", "forty minutes", "40", "forty"] }, { "label": "Minutes spent reading the paper:", "answer": ["two", "2", "two minutes", "2 minutes"] } ], "explanation": "Six weeks remain; forty minutes of full attention; two minutes reading the paper saves twenty." },
+        { "kind": "mcq", "prompt": "Why does the teacher say you cannot revise writing by reading?", "options": ["Reading is boring", "Writing is a skill that must be practised, not studied", "Books are unreliable", "There is not enough time"], "answer": 1, "explanation": "He says if the paper asks you to write a letter, you must have written letters, not read about them." },
+        { "kind": "mcq", "prompt": "Which piece of advice does the teacher predict students will ignore?", "options": ["Shorter sessions", "Writing practice", "Sleep", "Reading the paper"], "answer": 2, "explanation": "He introduces it with 'and this is the one you will ignore: sleep.'" },
+        { "kind": "short", "prompt": "According to the teacher, how does almost every serious mistake begin?", "answer": ["misreading", "misreading the question", "with misreading", "by misreading the question"], "explanation": "He says almost every serious mistake he has marked began with misreading." }
+      ]
     }
   ]
 }
