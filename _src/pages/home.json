@@ -12,7 +12,8 @@
     "style": "home",
     "text": "Clear English lessons, practical revision resources and reliable teaching support for learners and teachers. Everything is organised by subject and by task, so you can find what you need and start work straight away.",
     "buttons": [
-      { "label": "Explore Learning Resources", "url": "resources/", "style": "btn--accent" },
+      { "label": "Grade 6-11 English Resources", "url": "grades/", "style": "btn--accent" },
+      { "label": "English Teacher Resources", "url": "teacher-resources/", "style": "btn--ghost-light" },
       { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--ghost-light" },
       { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--ghost-light" }
     ],
