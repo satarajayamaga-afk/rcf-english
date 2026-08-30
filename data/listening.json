@@ -424,6 +424,142 @@
         { "kind": "mcq", "prompt": "What is the hall being used for?", "options": ["A wedding", "A music competition", "A school prize giving", "A public meeting"], "answer": 1, "explanation": "The caller says she wants to book the hall for a music competition." },
         { "kind": "gap", "prompt": "Complete: The hall will be held for the caller until ____.", "answer": ["Friday", "friday"], "explanation": "The clerk says the hall will be held until Friday." }
       ]
+    },
+    {
+      "id": "l09-1",
+      "grade": 9,
+      "rate": 0.95,
+      "title": "An interview with a wildlife officer",
+      "description": "A radio interview about elephants and farmland. Competency levels 3.3 and 3.4: listens for specific information and transfers it into other forms.",
+      "instructions": "Listen to the interview and complete the notes. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a radio interview with a wildlife officer." },
+        { "speaker": "Interviewer", "text": "Mr Bandara, you have worked with elephants for many years. What is the biggest problem today?" },
+        { "speaker": "Officer", "text": "The biggest problem is that the forest is shrinking. Elephants need a great deal of space, and that space is being taken for farming and building." },
+        { "speaker": "Interviewer", "text": "And what happens when an elephant enters a village?" },
+        { "speaker": "Officer", "text": "Usually it is looking for food. Crops are easier to find than wild plants, so the animal returns again and again." },
+        { "speaker": "Interviewer", "text": "What is being done about it?" },
+        { "speaker": "Officer", "text": "Electric fences have been put up around several villages, and they work well when they are properly maintained. The difficulty is that many are not." },
+        { "speaker": "Interviewer", "text": "Is there anything the villagers themselves can do?" },
+        { "speaker": "Officer", "text": "Yes. Growing crops that elephants dislike, such as citrus and chillies, has helped in some districts. But it takes patience, and results are not seen in a single season." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the notes on the interview.", "lines": [ { "label": "Main problem:", "answer": ["the forest is shrinking", "forest is shrinking", "shrinking forest", "loss of forest", "the shrinking forest"] }, { "label": "Why elephants enter villages:", "answer": ["looking for food", "to find food", "for food", "food"] }, { "label": "Crops elephants dislike:", "answer": ["citrus and chillies", "citrus and chilies", "citrus, chillies", "chillies and citrus"] } ], "explanation": "The forest is shrinking; elephants come for food; citrus and chillies are crops they dislike." },
+        { "kind": "mcq", "prompt": "Why is the forest getting smaller?", "options": ["Because of forest fires", "Because land is taken for farming and building", "Because of disease in the trees", "Because of drought"], "answer": 1, "explanation": "The officer says the space is being taken for farming and building." },
+        { "kind": "mcq", "prompt": "Why do electric fences often fail?", "options": ["They are too short", "They are not properly maintained", "Elephants are not afraid of them", "They cost too much"], "answer": 1, "explanation": "The officer says they work well when properly maintained, but many are not." },
+        { "kind": "short", "prompt": "Why does an elephant return to a village again and again?", "answer": ["crops are easier to find", "crops are easier to find than wild plants", "food is easier to find", "because crops are easy to find", "easy food"], "explanation": "Crops are easier to find than wild plants, so the animal comes back." },
+        { "kind": "mcq", "prompt": "What does the officer suggest about the crop solution?", "options": ["It works immediately", "It needs patience and takes more than one season", "It has failed everywhere", "It is too expensive for villagers"], "answer": 1, "explanation": "He says it takes patience and results are not seen in a single season." },
+        { "kind": "gap", "prompt": "Complete: Electric ____ have been put up around several villages.", "answer": ["fences", "fencing"], "explanation": "The officer says electric fences have been put up around several villages." }
+      ]
+    },
+    {
+      "id": "l09-2",
+      "grade": 9,
+      "rate": 0.95,
+      "title": "Making plans for Saturday",
+      "description": "Two friends discuss what to do, without stating everything directly. Competency levels 5.7 and 5.8: infers ellipted information and infers implied information.",
+      "instructions": "Listen carefully. Some things are suggested rather than said. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to two friends making plans." },
+        { "speaker": "Ishara", "text": "So, Saturday. The new film starts at four." },
+        { "speaker": "Ravindu", "text": "Four. Hmm." },
+        { "speaker": "Ishara", "text": "You do not sound very keen." },
+        { "speaker": "Ravindu", "text": "No, no, it is fine. It is just that my cousin's almsgiving is at eleven, and these things never finish when they say they will." },
+        { "speaker": "Ishara", "text": "Ah. Then perhaps the six o'clock show instead?" },
+        { "speaker": "Ravindu", "text": "That would be safer. Although then I would have to leave straight after, because of the last bus." },
+        { "speaker": "Ishara", "text": "You could stay at my place. My mother would be glad; she has been asking after you since the examinations." },
+        { "speaker": "Ravindu", "text": "Has she? Then that settles it. Six o'clock." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "Why is Ravindu unsure about the four o'clock show?", "options": ["He does not like the film", "He may still be at the almsgiving", "He has no money", "He has to study"], "answer": 1, "explanation": "He says the almsgiving is at eleven and 'these things never finish when they say they will', implying he may not be free by four." },
+        { "kind": "mcq", "prompt": "What does 'Four. Hmm.' suggest about Ravindu's feelings?", "options": ["He is delighted", "He has a difficulty he has not yet explained", "He did not hear her", "He wants an earlier show"], "answer": 1, "explanation": "The short reply and Ishara's response, 'You do not sound very keen', show hesitation before he gives his reason." },
+        { "kind": "short", "prompt": "What problem would Ravindu have after the six o'clock show?", "answer": ["the last bus", "catching the last bus", "he would miss the last bus", "getting home", "the bus"], "explanation": "He says he would have to leave straight after because of the last bus." },
+        { "kind": "mcq", "prompt": "Why does Ishara mention her mother?", "options": ["To change the subject", "To make staying overnight sound welcome", "To warn him her mother is strict", "To ask about the examinations"], "answer": 1, "explanation": "She offers her place to stay and adds that her mother would be glad, which removes his objection politely." },
+        { "kind": "mcq", "prompt": "What have the friends finally agreed to do?", "options": ["Go to the four o'clock show", "Go to the six o'clock show", "Meet at the almsgiving", "Not go at all"], "answer": 1, "explanation": "Ravindu ends with 'Then that settles it. Six o'clock.'" },
+        { "kind": "mcq", "prompt": "What is implied by 'Has she?'", "options": ["Ravindu is annoyed", "Ravindu is pleased and a little surprised", "Ravindu did not understand", "Ravindu doubts Ishara"], "answer": 1, "explanation": "He immediately agrees afterwards, so the short question shows pleased surprise, not doubt." }
+      ]
+    },
+    {
+      "id": "l09-3",
+      "grade": 9,
+      "rate": 0.95,
+      "title": "A young athlete is interviewed",
+      "description": "A school athlete answers questions after a competition. Competency levels 3.3 and 3.4: listens for specific information and transfers it into other forms.",
+      "instructions": "Listen to the interview and complete the record card. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to an interview after a school athletics meet." },
+        { "speaker": "Reporter", "text": "Congratulations, Thilini. You have just won the eight hundred metres. How does it feel?" },
+        { "speaker": "Thilini", "text": "Thank you. It still does not feel real. My time was two minutes and nineteen seconds, which is my best so far." },
+        { "speaker": "Reporter", "text": "How long have you been training?" },
+        { "speaker": "Thilini", "text": "Three years. I began when I was in Grade six, though I only started training seriously last year." },
+        { "speaker": "Reporter", "text": "What does a normal week look like?" },
+        { "speaker": "Thilini", "text": "I run five mornings a week before school, and on Saturdays I do exercises for strength. Sunday is a rest day." },
+        { "speaker": "Reporter", "text": "Has it been difficult with school work?" },
+        { "speaker": "Thilini", "text": "It was, at first. My teachers were worried that my marks would fall. But I learnt to do my homework earlier in the evening, and now it is manageable." },
+        { "speaker": "Reporter", "text": "And what is next?" },
+        { "speaker": "Thilini", "text": "The provincial meet in August. I have been told that the qualifying time is two minutes fifteen, so I have work to do." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the athlete's record card.", "lines": [ { "label": "Event:", "answer": ["800 metres", "eight hundred metres", "800m", "800", "eight hundred"] }, { "label": "Winning time:", "answer": ["2 minutes 19 seconds", "2.19", "2:19", "two minutes and nineteen seconds", "two nineteen"] }, { "label": "Years training:", "answer": ["three", "3", "three years", "3 years"] } ], "explanation": "She won the eight hundred metres in two minutes nineteen, after three years of training." },
+        { "kind": "mcq", "prompt": "When did Thilini begin running?", "options": ["Last year", "In Grade six", "In Grade eight", "This year"], "answer": 1, "explanation": "She began in Grade six, though she only started training seriously last year." },
+        { "kind": "match", "prompt": "Match each day to what she does.", "pairs": [ { "term": "Weekday mornings", "meaning": "Running before school" }, { "term": "Saturday", "meaning": "Strength exercises" }, { "term": "Sunday", "meaning": "Rest" } ], "explanation": "She runs five mornings a week, does strength work on Saturdays and rests on Sunday." },
+        { "kind": "mcq", "prompt": "What were her teachers worried about?", "options": ["That she would be injured", "That her marks would fall", "That she would miss classes", "That she trained too little"], "answer": 1, "explanation": "She says her teachers were worried that her marks would fall." },
+        { "kind": "short", "prompt": "How did she solve the problem with school work?", "answer": ["doing homework earlier in the evening", "homework earlier", "she did her homework earlier", "doing homework earlier", "by doing homework earlier"], "explanation": "She learnt to do her homework earlier in the evening." },
+        { "kind": "gap", "prompt": "Complete: The qualifying time for the provincial meet is two minutes ____.", "answer": ["fifteen", "15"], "explanation": "She says she has been told the qualifying time is two minutes fifteen." }
+      ]
+    },
+    {
+      "id": "l09-4",
+      "grade": 9,
+      "rate": 0.95,
+      "title": "At the bus halt",
+      "description": "A short scene in which feelings are shown rather than stated. Competency level 5.8: infers implied information.",
+      "instructions": "Listen carefully to what is said and to what is left unsaid. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a conversation at a bus halt." },
+        { "speaker": "Kumudu", "text": "You are up early." },
+        { "speaker": "Anura", "text": "Interview." },
+        { "speaker": "Kumudu", "text": "Ah. The one at the bank?" },
+        { "speaker": "Anura", "text": "The third one at the bank." },
+        { "speaker": "Kumudu", "text": "Well. Third time is the charm, they say." },
+        { "speaker": "Anura", "text": "They say a great many things. I have pressed this shirt twice." },
+        { "speaker": "Kumudu", "text": "It looks very smart." },
+        { "speaker": "Anura", "text": "Does it? Good. My sister said the collar was crooked, and now I cannot stop thinking about the collar." },
+        { "speaker": "Kumudu", "text": "Your bus is coming. Nobody will be looking at your collar, Anura." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "How many times has Anura been interviewed at the bank?", "options": ["Once", "Twice", "This is the third time", "It is not stated"], "answer": 2, "explanation": "He corrects Kumudu with 'The third one at the bank', so this is his third interview there." },
+        { "kind": "mcq", "prompt": "What does 'They say a great many things' suggest about Anura's mood?", "options": ["He is confident", "He is impatient with easy encouragement", "He did not hear Kumudu", "He is amused"], "answer": 1, "explanation": "He dismisses the proverb, which shows he is too anxious to be comforted by a saying." },
+        { "kind": "short", "prompt": "What detail shows that Anura is nervous about his appearance?", "answer": ["he pressed the shirt twice", "pressing the shirt twice", "he has pressed the shirt twice", "the shirt twice", "he cannot stop thinking about the collar"], "explanation": "Pressing one shirt twice, and being unable to stop thinking about the collar, both show nervousness." },
+        { "kind": "mcq", "prompt": "Why does Anura keep thinking about the collar?", "options": ["It is torn", "His sister said it was crooked", "It is the wrong colour", "The bus conductor mentioned it"], "answer": 1, "explanation": "He says his sister said the collar was crooked, and now he cannot stop thinking about it." },
+        { "kind": "mcq", "prompt": "What is Kumudu trying to do in the last line?", "options": ["Hurry Anura away", "Reassure Anura", "Criticise Anura's shirt", "Change the subject"], "answer": 1, "explanation": "Saying nobody will be looking at his collar is meant to calm him before he boards." },
+        { "kind": "mcq", "prompt": "Which word best describes Anura in this scene?", "options": ["Careless", "Anxious", "Cheerful", "Angry"], "answer": 1, "explanation": "The short replies, the twice-pressed shirt and the worry about the collar all point to anxiety." }
+      ]
+    },
+    {
+      "id": "l09-5",
+      "grade": 9,
+      "rate": 0.95,
+      "title": "A talk on saving water",
+      "description": "A short talk with facts and advice. Competency levels 3.4 and 3.6: transfers information into other forms and reports information.",
+      "instructions": "Listen to the talk and complete the notes. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a talk given at a school assembly." },
+        { "speaker": "Speaker", "text": "Good morning. I want to talk about something we all use and rarely think about: water." },
+        { "speaker": "Speaker", "text": "A tap left running while you brush your teeth wastes about six litres a minute." },
+        { "speaker": "Speaker", "text": "A dripping tap may seem harmless, but it can waste as much as fifteen litres in a single day." },
+        { "speaker": "Speaker", "text": "Here is what you can do. Turn the tap off while brushing. Report any leaking tap to the office at once." },
+        { "speaker": "Speaker", "text": "Water the school garden in the early morning or late evening, because in the middle of the day most of it simply evaporates." },
+        { "speaker": "Speaker", "text": "None of these actions is difficult. Together, though, they would save this school thousands of litres every term." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the notes on water waste.", "lines": [ { "label": "Running tap wastes (per minute):", "answer": ["6 litres", "six litres", "6", "six"] }, { "label": "Dripping tap wastes (per day):", "answer": ["15 litres", "fifteen litres", "15", "fifteen"] } ], "explanation": "A running tap wastes about six litres a minute; a dripping tap up to fifteen litres a day." },
+        { "kind": "sequence", "prompt": "Put the speaker's three pieces of advice in the order they are given.", "items": ["Turn the tap off while brushing", "Report leaking taps to the office", "Water the garden early or late"], "explanation": "The advice is given in this order after the two facts about waste." },
+        { "kind": "mcq", "prompt": "Why should the garden not be watered at midday?", "options": ["The plants are damaged by heat", "Most of the water evaporates", "The water pressure is low", "Students are in class"], "answer": 1, "explanation": "The speaker says most of it simply evaporates in the middle of the day." },
+        { "kind": "short", "prompt": "What should you do if you find a leaking tap?", "answer": ["report it to the office", "report it", "tell the office", "report to the office", "report any leaking tap to the office"], "explanation": "The speaker says to report any leaking tap to the office at once." },
+        { "kind": "mcq", "prompt": "What is the speaker's main point at the end?", "options": ["Water is expensive", "Small actions together save a great deal", "The school wastes too much money", "Students do not care about water"], "answer": 1, "explanation": "None of the actions is difficult, but together they would save thousands of litres every term." },
+        { "kind": "gap", "prompt": "Complete: Together these actions would save thousands of litres every ____.", "answer": ["term"], "explanation": "The speaker ends by saying thousands of litres every term." }
+      ]
     }
   ]
 }
