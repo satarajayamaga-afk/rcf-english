@@ -560,6 +560,134 @@
         { "kind": "mcq", "prompt": "What is the speaker's main point at the end?", "options": ["Water is expensive", "Small actions together save a great deal", "The school wastes too much money", "Students do not care about water"], "answer": 1, "explanation": "None of the actions is difficult, but together they would save thousands of litres every term." },
         { "kind": "gap", "prompt": "Complete: Together these actions would save thousands of litres every ____.", "answer": ["term"], "explanation": "The speaker ends by saying thousands of litres every term." }
       ]
+    },
+    {
+      "id": "l10-1",
+      "grade": 10,
+      "rate": 1,
+      "title": "A presentation on plastic waste",
+      "description": "A structured talk to be summarised in note form. Competency level 3.8: takes notes from oral presentations.",
+      "instructions": "Listen to the presentation and take notes as you listen. Complete the note frame and answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a student presentation on plastic waste." },
+        { "speaker": "Presenter", "text": "Good afternoon. My presentation has three parts: the scale of the problem, its causes, and what can realistically be done." },
+        { "speaker": "Presenter", "text": "Firstly, the scale. It has been estimated that a single family in this town throws away about four kilograms of plastic every week." },
+        { "speaker": "Presenter", "text": "Secondly, the causes. Most of that plastic has been used only once. Packaging, shopping bags and water bottles account for the greater part of it." },
+        { "speaker": "Presenter", "text": "However, blaming shoppers alone would be unfair, since very few products are sold without packaging in the first place." },
+        { "speaker": "Presenter", "text": "Thirdly, solutions. Cloth bags are the obvious step, but they are only effective if they are actually carried. A bag left at home helps nobody." },
+        { "speaker": "Presenter", "text": "Furthermore, if refill stations had been introduced ten years ago, a great deal of this waste would have been avoided." },
+        { "speaker": "Presenter", "text": "In conclusion, the problem is large but not hopeless. Small habits, repeated daily, are worth more than one grand gesture." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the note frame for this presentation.", "lines": [ { "label": "Number of parts:", "answer": ["three", "3"] }, { "label": "Plastic per family per week:", "answer": ["4 kilograms", "four kilograms", "4 kg", "four kg", "4", "four"] }, { "label": "Obvious solution named:", "answer": ["cloth bags", "cloth bag", "reusable bags"] } ], "explanation": "The talk has three parts; a family throws away about four kilograms a week; cloth bags are the obvious step." },
+        { "kind": "sequence", "prompt": "Put the three parts of the presentation in the order announced.", "items": ["The scale of the problem", "The causes", "What can be done"], "explanation": "The presenter announces the order at the start and follows it with Firstly, Secondly and Thirdly." },
+        { "kind": "mcq", "prompt": "Which three things account for most of the plastic?", "options": ["Toys, tools and furniture", "Packaging, shopping bags and water bottles", "Pipes, buckets and crates", "Clothing, shoes and bags"], "answer": 1, "explanation": "The presenter names packaging, shopping bags and water bottles." },
+        { "kind": "mcq", "prompt": "Why does the presenter say blaming shoppers alone would be unfair?", "options": ["Shoppers cannot afford cloth bags", "Very few products are sold without packaging", "Shoppers are not told about the problem", "Shops refuse cloth bags"], "answer": 1, "explanation": "Very few products are sold without packaging in the first place, so the choice is not entirely the shopper's." },
+        { "kind": "mcq", "prompt": "What does the presenter mean by 'A bag left at home helps nobody'?", "options": ["Cloth bags are useless", "A solution only works if it is actually used", "Bags should be stored at home", "Shops should provide bags"], "answer": 1, "explanation": "Cloth bags are effective only if they are carried, so the habit matters as much as the object." },
+        { "kind": "short", "prompt": "According to the conclusion, what is worth more than one grand gesture?", "answer": ["small habits repeated daily", "small habits", "daily habits", "small daily habits", "small habits, repeated daily"], "explanation": "The final line says small habits, repeated daily, are worth more than one grand gesture." }
+      ]
+    },
+    {
+      "id": "l10-2",
+      "grade": 10,
+      "rate": 1,
+      "title": "A discussion about school uniforms",
+      "description": "Three speakers put different views. Competency level 3.6: listens and reports information.",
+      "instructions": "Listen to the discussion and follow who says what. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to three students discussing school uniforms." },
+        { "speaker": "Chair", "text": "Our topic today is whether school uniforms should be compulsory. Dinesh, your view first." },
+        { "speaker": "Dinesh", "text": "I am in favour. A uniform hides the difference between a rich family and a poor one. Without it, some students would be judged every morning by what they were wearing." },
+        { "speaker": "Chair", "text": "Hasini?" },
+        { "speaker": "Hasini", "text": "I disagree, though not entirely. My objection is not to uniforms but to the way the rule is enforced. Students are punished for the length of a sleeve while nobody asks whether they have eaten." },
+        { "speaker": "Chair", "text": "Nuwan, you have been quiet." },
+        { "speaker": "Nuwan", "text": "I can see both sides. On the one hand, Dinesh is right that a uniform levels things. On the other hand, Hasini is right that the rule is often applied without thought. Perhaps the uniform should stay and the punishments should go." },
+        { "speaker": "Chair", "text": "So we have agreement on the principle and disagreement on the practice. Thank you all." }
+      ],
+      "questions": [
+        { "kind": "match", "prompt": "Match each speaker to the view they express.", "pairs": [ { "term": "Dinesh", "meaning": "Uniforms hide differences in wealth" }, { "term": "Hasini", "meaning": "The problem is how the rule is enforced" }, { "term": "Nuwan", "meaning": "Keep the uniform but drop the punishments" } ], "explanation": "Each speaker takes a distinct position, which the chair sums up at the end." },
+        { "kind": "mcq", "prompt": "What is Hasini's objection?", "options": ["Uniforms are too expensive", "Uniforms are uncomfortable", "The rule is enforced without thought for bigger problems", "Uniforms look old-fashioned"], "answer": 2, "explanation": "She says students are punished for the length of a sleeve while nobody asks whether they have eaten." },
+        { "kind": "mcq", "prompt": "Which phrases show Nuwan is balancing two views?", "options": ["Firstly and secondly", "On the one hand and on the other hand", "In conclusion and finally", "For example and such as"], "answer": 1, "explanation": "On the one hand and on the other hand are the discourse markers used to weigh two sides." },
+        { "kind": "short", "prompt": "According to Dinesh, what would happen without uniforms?", "answer": ["students would be judged by what they wear", "some students would be judged by their clothes", "students would be judged every morning by what they were wearing", "they would be judged by clothes", "judged by what they wear"], "explanation": "He says some students would be judged every morning by what they were wearing." },
+        { "kind": "mcq", "prompt": "How does the chair sum up the discussion?", "options": ["Everyone agrees completely", "Everyone disagrees completely", "Agreement on the principle, disagreement on the practice", "The question cannot be answered"], "answer": 2, "explanation": "The chair says there is agreement on the principle and disagreement on the practice." },
+        { "kind": "mcq", "prompt": "What does Hasini mean by 'I disagree, though not entirely'?", "options": ["She agrees with everything Dinesh said", "She rejects only part of the argument", "She has no opinion", "She wants to change the topic"], "answer": 1, "explanation": "She goes on to say her objection is not to uniforms themselves but to how the rule is enforced." }
+      ]
+    },
+    {
+      "id": "l10-3",
+      "grade": 10,
+      "rate": 1,
+      "title": "A news report on the floods",
+      "description": "A radio news bulletin with figures and instructions. Competency levels 3.4 and 3.6: transfers information into other forms and reports information.",
+      "instructions": "Listen to the bulletin and complete the report summary. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a radio news bulletin." },
+        { "speaker": "Newsreader", "text": "Heavy rain has continued for a third day in the Ratnapura district, and several low-lying areas have been flooded." },
+        { "speaker": "Newsreader", "text": "According to the Disaster Management Centre, about two thousand four hundred families have been affected." },
+        { "speaker": "Newsreader", "text": "Eleven schools have been closed and are being used as temporary shelters." },
+        { "speaker": "Newsreader", "text": "The main road to Balangoda has been blocked by a landslide since yesterday evening. Engineers say it will be cleared within two days." },
+        { "speaker": "Newsreader", "text": "Residents have been advised not to cross flowing water, even where it appears shallow." },
+        { "speaker": "Newsreader", "text": "Meanwhile, relief supplies are being distributed from the divisional secretariat, and a helpline has been opened." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the news summary.", "lines": [ { "label": "District affected:", "answer": ["Ratnapura", "ratnapura"] }, { "label": "Families affected:", "answer": ["2400", "2,400", "two thousand four hundred", "about 2400"] }, { "label": "Schools closed:", "answer": ["11", "eleven"] } ], "explanation": "About two thousand four hundred families in the Ratnapura district are affected and eleven schools have closed." },
+        { "kind": "mcq", "prompt": "What are the closed schools being used for?", "options": ["Storing relief goods", "Temporary shelters", "Emergency classrooms", "Medical camps"], "answer": 1, "explanation": "The bulletin says they are being used as temporary shelters." },
+        { "kind": "mcq", "prompt": "Why is the main road to Balangoda blocked?", "options": ["Flooding", "A landslide", "A fallen bridge", "Road repairs"], "answer": 1, "explanation": "The road has been blocked by a landslide since yesterday evening." },
+        { "kind": "short", "prompt": "How long will it take to clear the road?", "answer": ["two days", "2 days", "within two days", "within 2 days"], "explanation": "Engineers say it will be cleared within two days." },
+        { "kind": "mcq", "prompt": "What warning is given to residents?", "options": ["Do not travel at night", "Do not cross flowing water", "Boil all drinking water", "Stay away from schools"], "answer": 1, "explanation": "Residents are advised not to cross flowing water, even where it appears shallow." },
+        { "kind": "gap", "prompt": "Complete: Relief supplies are being distributed from the divisional ____.", "answer": ["secretariat"], "explanation": "The bulletin says supplies are being distributed from the divisional secretariat." }
+      ]
+    },
+    {
+      "id": "l10-4",
+      "grade": 10,
+      "rate": 1,
+      "title": "Signposts in a talk",
+      "description": "A talk in which the linking words carry the structure. Competency level 3.7: recognizes discourse markers.",
+      "instructions": "Listen to how the speaker signals each new idea. Answer the questions about those signals, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a short talk about learning a language." },
+        { "speaker": "Speaker", "text": "People often ask me how long it takes to learn English. To begin with, that is the wrong question." },
+        { "speaker": "Speaker", "text": "The right question is what you want to do with it. For example, ordering a meal and writing a report are not the same skill at all." },
+        { "speaker": "Speaker", "text": "Moreover, the two are learnt in different ways. One is picked up by speaking; the other has to be studied." },
+        { "speaker": "Speaker", "text": "Nevertheless, both improve with the same habit: daily use, even for ten minutes." },
+        { "speaker": "Speaker", "text": "On the other hand, daily use alone is not enough if the same mistakes are repeated. Correction matters." },
+        { "speaker": "Speaker", "text": "To sum up, decide what you need, practise it daily, and let someone correct you." }
+      ],
+      "questions": [
+        { "kind": "match", "prompt": "Match each signal word to what it tells the listener.", "pairs": [ { "term": "To begin with", "meaning": "A first point is coming" }, { "term": "For example", "meaning": "An illustration follows" }, { "term": "Moreover", "meaning": "A further, similar point follows" }, { "term": "Nevertheless", "meaning": "Something contrasting follows" }, { "term": "To sum up", "meaning": "The talk is being closed" } ], "explanation": "Each marker tells the listener what kind of idea is coming next, before the idea itself arrives." },
+        { "kind": "mcq", "prompt": "What does the speaker say is the wrong question?", "options": ["What you want to do with English", "How long it takes to learn English", "Whether English is difficult", "Who should teach English"], "answer": 1, "explanation": "The speaker says 'how long does it take' is the wrong question." },
+        { "kind": "mcq", "prompt": "Which two activities are given as an example of different skills?", "options": ["Reading and writing", "Ordering a meal and writing a report", "Listening and speaking", "Spelling and grammar"], "answer": 1, "explanation": "The speaker contrasts ordering a meal with writing a report." },
+        { "kind": "mcq", "prompt": "What idea does 'On the other hand' introduce here?", "options": ["A further reason to practise daily", "A limitation of daily practice", "A summary of the talk", "An example of a mistake"], "answer": 1, "explanation": "It introduces the point that daily use is not enough if the same mistakes are repeated." },
+        { "kind": "sequence", "prompt": "Put the speaker's three final pieces of advice in order.", "items": ["Decide what you need", "Practise it daily", "Let someone correct you"], "explanation": "The closing summary gives the three in this order." },
+        { "kind": "gap", "prompt": "Complete: Both skills improve with daily use, even for ____ minutes.", "answer": ["ten", "10"], "explanation": "The speaker says daily use, even for ten minutes." }
+      ]
+    },
+    {
+      "id": "l10-5",
+      "grade": 10,
+      "rate": 1,
+      "title": "A staff room conversation",
+      "description": "Two teachers work through a timetable problem. Competency levels 3.3 and 5.8: listens for specific information and infers what is implied.",
+      "instructions": "Listen to the conversation and follow the problem being solved. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to two teachers in a staff room." },
+        { "speaker": "Mrs Perera", "text": "Have you seen the new timetable? I have Grade ten for English on Friday, last period." },
+        { "speaker": "Mr Jayasuriya", "text": "Ah. The graveyard slot." },
+        { "speaker": "Mrs Perera", "text": "Exactly. They have had double mathematics before it, and by then nothing goes in." },
+        { "speaker": "Mr Jayasuriya", "text": "Could you swap? I have them Wednesday morning for geography." },
+        { "speaker": "Mrs Perera", "text": "That would be ideal, but the timetable was finalised last week. If we had spoken to the principal before the meeting, it would have been changed easily." },
+        { "speaker": "Mr Jayasuriya", "text": "It may still be possible. She has been known to make small adjustments, if both teachers agree in writing." },
+        { "speaker": "Mrs Perera", "text": "Then I shall write this evening. It is worth trying. The alternative is a whole term of Friday afternoons." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "What does Mr Jayasuriya mean by 'the graveyard slot'?", "options": ["A lesson nobody is timetabled for", "The last period, when students are least alert", "A lesson held outdoors", "The first period of the day"], "answer": 1, "explanation": "It is his name for Friday last period, and Mrs Perera agrees that by then nothing goes in." },
+        { "kind": "mcq", "prompt": "Why is that period especially difficult?", "options": ["The room is too small", "The students have had double mathematics before it", "It clashes with sports", "The lesson is too short"], "answer": 1, "explanation": "She says they have had double mathematics before it." },
+        { "kind": "short", "prompt": "What subject does Mr Jayasuriya teach the same class?", "answer": ["geography"], "explanation": "He says he has them Wednesday morning for geography." },
+        { "kind": "mcq", "prompt": "What does the sentence beginning 'If we had spoken to the principal…' tell you?", "options": ["They did speak to her and it worked", "They did not speak to her in time", "They will speak to her tomorrow", "The principal refused"], "answer": 1, "explanation": "It is a Type 3 conditional, describing something that did not happen. They did not speak to her before the meeting." },
+        { "kind": "mcq", "prompt": "On what condition might the principal still change the timetable?", "options": ["If the students request it", "If both teachers agree in writing", "If the term has not begun", "If there is a free room"], "answer": 1, "explanation": "He says she has been known to make small adjustments if both teachers agree in writing." },
+        { "kind": "mcq", "prompt": "What does Mrs Perera decide to do?", "options": ["Accept the timetable", "Write to the principal that evening", "Ask the students to choose", "Swap without permission"], "answer": 1, "explanation": "She says, 'Then I shall write this evening. It is worth trying.'" }
+      ]
     }
   ]
 }
