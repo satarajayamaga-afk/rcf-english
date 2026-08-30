@@ -26,6 +26,317 @@
 
   "activities": [
     {
+      "id": "g06-functional-texts",
+      "type": "reading",
+      "title": "Grade 6: reading a timetable",
+      "description": "Competency levels 3.1 and 3.2 (2026 syllabus): reads a simple functional text related to real life, extracts the information conveyed and uses it appropriately.",
+      "page": "grades/grade-6/",
+      "keywords": "grade 6 english reading functional text timetable competency 3.1 3.2",
+      "passageTitle": "Bus times from Kandy to Matale",
+      "passage": [
+        "MORNING BUSES - KANDY TO MATALE",
+        "Bus 593 leaves at 6.30 a.m. and arrives at 7.15 a.m.",
+        "Bus 594 leaves at 7.00 a.m. and arrives at 7.50 a.m.",
+        "Bus 596 leaves at 8.15 a.m. and arrives at 9.10 a.m.",
+        "Note: Bus 594 does not run on Sundays."
+      ],
+      "questions": [
+        { "prompt": "Which bus takes the longest time to reach Matale?", "options": ["Bus 593", "Bus 594", "Bus 596", "They all take the same time"], "answer": 2, "explanation": "Bus 596 leaves at 8.15 and arrives at 9.10, which is 55 minutes. Bus 593 takes 45 minutes and Bus 594 takes 50 minutes." },
+        { "prompt": "It is Sunday morning. Nimali must be in Matale by 8.00 a.m. Which bus should she take?", "options": ["Bus 593", "Bus 594", "Bus 596", "No bus can get her there in time"], "answer": 0, "explanation": "Bus 594 does not run on Sundays, and Bus 596 arrives too late. Bus 593 arrives at 7.15 a.m." },
+        { "prompt": "How many buses leave Kandy before 8.00 a.m.?", "options": ["One", "Two", "Three", "None"], "answer": 1, "explanation": "Bus 593 leaves at 6.30 and Bus 594 at 7.00. Bus 596 leaves at 8.15, which is after 8.00." },
+        { "prompt": "Where would you most likely see a text like this?", "options": ["In a story book", "At a bus stand", "In a letter to a friend", "On a food label"], "answer": 1, "explanation": "A timetable is a functional text. It gives information people need in order to do something, so it is displayed where travellers will see it." }
+      ]
+    },
+    {
+      "id": "g06-forms-and-lists",
+      "type": "gap",
+      "title": "Grade 6: filling in a form",
+      "description": "Competency level 4.1 (2026 syllabus): writes simple texts to convey information to fulfil the needs of immediacy in personal and official contexts, using forms with limited titles.",
+      "page": "grades/grade-6/",
+      "keywords": "grade 6 english form filling personal information competency 4.1 4.3",
+      "questions": [
+        { "sentence": "A form asks for your ____ name. This is the name your family shares.", "answer": ["family", "last", "surname"], "hint": "It is the name that comes last in Sri Lankan school registers." },
+        { "sentence": "Date of ____: 14th March 2014.", "answer": ["birth"], "hint": "The day you were born." },
+        { "sentence": "The form asks for your ____ number so the school can telephone your home.", "answer": ["contact", "telephone", "phone"], "hint": "Something the school can call." },
+        { "sentence": "Under ____, you would write: 15 Temple Road, Gampaha.", "answer": ["address"], "hint": "Where you live." },
+        { "sentence": "Write a ____ of five things you need for school tomorrow.", "answer": ["list"], "hint": "Items written one under the other." },
+        { "sentence": "Name with ____: R. M. Perera.", "answer": ["initials"], "hint": "The first letters of your other names." }
+      ]
+    },
+    {
+      "id": "g06-poems",
+      "type": "reading",
+      "title": "Grade 6: reading a simple poem",
+      "description": "Competency levels 3.5 and 3.6 (2026 syllabus): reads a simple literary text, extracts the information conveyed and uses it appropriately. Poems of 4 to 16 lines on topics of interest.",
+      "page": "grades/grade-6/",
+      "keywords": "grade 6 english poem literary text rhyme competency 3.5 3.6 5.2",
+      "passageTitle": "The Rain Tree",
+      "passage": [
+        "The old rain tree beside our gate",
+        "Has stood there since before I came.",
+        "It holds the sunlight like a plate",
+        "And whispers something like my name.",
+        "",
+        "When heavy clouds begin to break",
+        "And every road becomes a stream,",
+        "Its wide green arms are all I take",
+        "To keep me dry, and let me dream."
+      ],
+      "questions": [
+        { "prompt": "Which two words at the ends of lines rhyme with each other?", "options": ["gate and came", "came and name", "plate and stream", "break and dream"], "answer": 1, "explanation": "Came and name rhyme. So do gate and plate, and break and take." },
+        { "prompt": "How does the poet use the tree when it rains?", "options": ["To climb up and escape the water", "As shelter to stay dry", "To collect rainwater in a plate", "To find the way home"], "answer": 1, "explanation": "The poet says the tree's wide green arms keep him dry." },
+        { "prompt": "The poem says the tree has 'wide green arms'. What does it really mean?", "options": ["The tree has real arms", "The tree's branches spread out widely", "Someone is standing in the tree", "The tree is painted green"], "answer": 1, "explanation": "Arms is used to describe the branches. The poet writes about the tree as if it were a person." },
+        { "prompt": "How does the poet feel about the tree?", "options": ["Afraid of it", "Fond of it", "Bored by it", "Angry with it"], "answer": 1, "explanation": "The tree whispers something like his name and shelters him. These are warm, friendly ideas." }
+      ]
+    },
+    {
+      "id": "g07-past-continuous",
+      "type": "gap",
+      "title": "Grade 7: past continuous and future continuous",
+      "description": "Competency level 6.1: constructs simple sentences using the past continuous form and the future continuous form (Grade 7, Term 2).",
+      "page": "grades/grade-7/",
+      "keywords": "grade 7 english past continuous future continuous tense competency 6.1",
+      "questions": [
+        { "sentence": "At six o'clock yesterday evening, Amali ____ (study) for her test.", "answer": ["was studying"], "hint": "One person, in the past, and the action was going on at that time." },
+        { "sentence": "The children ____ (play) in the garden when it started to rain.", "answer": ["were playing"], "hint": "More than one child, so use were." },
+        { "sentence": "This time tomorrow, we ____ (travel) to Nuwara Eliya.", "answer": ["will be travelling", "will be traveling"], "hint": "An action that will be going on at a time in the future." },
+        { "sentence": "I ____ (not listen) when the teacher gave the instructions.", "answer": ["was not listening", "wasn't listening"], "hint": "Put not between was and the -ing word." },
+        { "sentence": "Were you ____ (wait) for the bus when I saw you?", "answer": ["waiting"], "hint": "After Were you, use only the -ing word." },
+        { "sentence": "Next Monday at nine, the students ____ (sit) the term test.", "answer": ["will be sitting"], "hint": "Future continuous: will be plus the -ing word." }
+      ]
+    },
+    {
+      "id": "g07-modals",
+      "type": "mcq",
+      "title": "Grade 7: using modals",
+      "description": "Competency level 6.3: uses modals meaningfully, limited to can, would, must and should (Grade 7, Term 2).",
+      "page": "grades/grade-7/",
+      "keywords": "grade 7 english modals can would must should competency 6.3",
+      "questions": [
+        { "prompt": "Choose the best word: 'You ____ wear your helmet. It is the law.'", "options": ["can", "would", "must", "should"], "answer": 2, "explanation": "Must is used when something is necessary or required. A law leaves no choice." },
+        { "prompt": "Choose the best word: 'Ravi ____ swim very well. He learnt when he was five.'", "options": ["can", "must", "should", "would"], "answer": 0, "explanation": "Can shows ability, that is, something a person is able to do." },
+        { "prompt": "Choose the best word: 'You look tired. You ____ go to bed early tonight.'", "options": ["can", "must", "should", "would"], "answer": 2, "explanation": "Should gives advice. It is a suggestion, not an order." },
+        { "prompt": "Choose the best word: '____ you please pass me the dictionary?'", "options": ["Must", "Would", "Should", "Ought"], "answer": 1, "explanation": "Would you please is a polite way of asking someone to do something." },
+        { "prompt": "Which sentence uses the modal correctly?", "options": ["She must to finish her homework.", "She must finishing her homework.", "She must finish her homework.", "She musts finish her homework."], "answer": 2, "explanation": "A modal is followed by the plain form of the verb, with no to, no -ing and no -s." },
+        { "prompt": "Choose the best word: 'It is raining hard. We ____ take an umbrella.'", "options": ["can", "should", "would", "must not"], "answer": 1, "explanation": "Should is the sensible advice here. There is no law forcing them, but it is wise." }
+      ]
+    },
+    {
+      "id": "g07-conjunctions",
+      "type": "gap",
+      "title": "Grade 7: joining words",
+      "description": "Competency level 6.8: uses conjunctions appropriately, limited to and, but, or, while, when, after, before and because (Grade 7, Term 2).",
+      "page": "grades/grade-7/",
+      "keywords": "grade 7 english conjunctions joining words because while competency 6.8",
+      "questions": [
+        { "sentence": "I wanted to play cricket, ____ it began to rain.", "answer": ["but"], "hint": "The second part is the opposite of what you expected." },
+        { "sentence": "We stayed at home ____ the roads were flooded.", "answer": ["because"], "hint": "It gives the reason." },
+        { "sentence": "Wash your hands ____ you eat.", "answer": ["before"], "hint": "Washing comes first, eating comes second." },
+        { "sentence": "My mother was cooking ____ I was doing my homework.", "answer": ["while"], "hint": "Two actions going on at the same time." },
+        { "sentence": "Would you like tea ____ coffee?", "answer": ["or"], "hint": "A choice between two things." },
+        { "sentence": "____ the bell rang, all the children ran out.", "answer": ["When", "After"], "hint": "It tells you the time that something happened." }
+      ]
+    },
+    {
+      "id": "g08-past-perfect",
+      "type": "gap",
+      "title": "Grade 8: the past perfect tense",
+      "description": "Competency level 6.1: constructs simple sentences using the past perfect form, in positive, negative, positive question and negative question forms (Grade 8, Term 2).",
+      "page": "grades/grade-8/",
+      "keywords": "grade 8 english past perfect tense had competency 6.1",
+      "questions": [
+        { "sentence": "When we reached the hall, the concert ____ (already begin).", "answer": ["had already begun"], "hint": "It began first, then we reached. Use had plus the third form of the verb." },
+        { "sentence": "Sunil ____ (not finish) his homework before the teacher came.", "answer": ["had not finished", "hadn't finished"], "hint": "Put not between had and the third form." },
+        { "sentence": "Had you ____ (eat) before you left home?", "answer": ["eaten"], "hint": "After Had you, use the third form of eat." },
+        { "sentence": "She could not enter because she ____ (lose) her ticket.", "answer": ["had lost"], "hint": "Losing the ticket happened before she could not enter." },
+        { "sentence": "By the time the bus arrived, everyone ____ (go) home.", "answer": ["had gone"], "hint": "The third form of go is gone." },
+        { "sentence": "I did not recognise him because I ____ (never meet) him before.", "answer": ["had never met"], "hint": "Never goes between had and the third form." }
+      ]
+    },
+    {
+      "id": "g08-passive-simple",
+      "type": "error",
+      "title": "Grade 8: the passive voice in simple tenses",
+      "description": "Competency level 6.1: constructs simple sentences in the passive voice in the simple present, simple past and simple future (Grade 8, Terms 2 and 3).",
+      "page": "grades/grade-8/",
+      "keywords": "grade 8 english passive voice simple present past future competency 6.1",
+      "questions": [
+        { "sentence": "The classroom is clean by the students every morning.", "answer": ["The classroom is cleaned by the students every morning."], "explanation": "The passive needs the third form of the verb. Clean becomes cleaned after is." },
+        { "sentence": "The letters was posted yesterday.", "answer": ["The letters were posted yesterday."], "explanation": "Letters is plural, so the verb must be were, not was." },
+        { "sentence": "This bridge was build in 1962.", "answer": ["This bridge was built in 1962."], "explanation": "The third form of build is built, not build." },
+        { "sentence": "The results will announced next week.", "answer": ["The results will be announced next week."], "explanation": "The future passive is will be plus the third form. The word be is missing." },
+        { "sentence": "Rice is grow in many parts of Sri Lanka.", "answer": ["Rice is grown in many parts of Sri Lanka."], "explanation": "The third form of grow is grown." },
+        { "sentence": "The windows was broken by the storm.", "answer": ["The windows were broken by the storm."], "explanation": "Windows is plural, so use were." }
+      ]
+    },
+    {
+      "id": "g08-reflexive-pronouns",
+      "type": "gap",
+      "title": "Grade 8: reflexive pronouns",
+      "description": "Competency level 6.2: uses pronouns appropriately, with reflexive pronouns introduced in Grade 8, Term 1.",
+      "page": "grades/grade-8/",
+      "keywords": "grade 8 english reflexive pronouns myself yourself competency 6.2",
+      "questions": [
+        { "sentence": "I cut ____ while I was slicing the mango.", "answer": ["myself"], "hint": "The person who did it and the person hurt are the same: I." },
+        { "sentence": "The little boy dressed ____ without any help.", "answer": ["himself"], "hint": "One boy." },
+        { "sentence": "We enjoyed ____ at the school concert.", "answer": ["ourselves"], "hint": "More than one person, and the word is we." },
+        { "sentence": "Nadeesha wrote the whole essay ____.", "answer": ["herself"], "hint": "One girl, and it means with nobody's help." },
+        { "sentence": "Be careful, children, or you will hurt ____.", "answer": ["yourselves"], "hint": "More than one person being spoken to." },
+        { "sentence": "The cat washed ____ in the sunlight.", "answer": ["itself"], "hint": "An animal or thing, not a person." }
+      ]
+    },
+    {
+      "id": "g09-passive-past-future",
+      "type": "gap",
+      "title": "Grade 9: passive voice, past and future",
+      "description": "Competency level 6.1: constructs simple sentences in the passive voice in the past tense and the future tense, in affirmative, negative and interrogative forms (Grade 9, Term 2).",
+      "page": "grades/grade-9/",
+      "keywords": "grade 9 english passive voice past future competency 6.1",
+      "questions": [
+        { "sentence": "Change to the passive: 'The gardener planted these trees.' These trees ____ by the gardener.", "answer": ["were planted"], "hint": "Trees is plural and the time is past." },
+        { "sentence": "Change to the passive: 'They will repair the road.' The road ____ soon.", "answer": ["will be repaired"], "hint": "Future passive: will be plus the third form." },
+        { "sentence": "Change to the passive: 'Someone stole my bicycle.' My bicycle ____ last night.", "answer": ["was stolen"], "hint": "The third form of steal is stolen." },
+        { "sentence": "The prizes will not be ____ (give) today.", "answer": ["given"], "hint": "The third form of give." },
+        { "sentence": "____ the letters posted yesterday?", "answer": ["Were"], "hint": "Letters is plural and the time is past." },
+        { "sentence": "Change to the passive: 'The principal will open the new library.' The new library ____ by the principal.", "answer": ["will be opened"], "hint": "Will be plus the third form of open." }
+      ]
+    },
+    {
+      "id": "g09-reported-speech",
+      "type": "error",
+      "title": "Grade 9: reported speech, statements",
+      "description": "Competency level 6.11: uses reported speech accurately, beginning with reported statements (Grade 9, Term 3).",
+      "page": "grades/grade-9/",
+      "keywords": "grade 9 english reported speech indirect statements competency 6.11",
+      "questions": [
+        { "sentence": "He said that he is very tired.", "answer": ["He said that he was very tired."], "explanation": "When the reporting verb is in the past, the present tense moves back to the past. Is becomes was." },
+        { "sentence": "She told that she had finished her work.", "answer": ["She said that she had finished her work.", "She told me that she had finished her work."], "explanation": "Told must be followed by a person. Use said that, or told me that." },
+        { "sentence": "They said that they will come tomorrow.", "answer": ["They said that they would come the next day.", "They said that they would come the following day."], "explanation": "Will becomes would, and tomorrow becomes the next day in reported speech." },
+        { "sentence": "The teacher said that the earth was round.", "answer": ["The teacher said that the earth is round."], "explanation": "A fact that is always true keeps the present tense, even after a past reporting verb." },
+        { "sentence": "Amara said that she can swim across the river.", "answer": ["Amara said that she could swim across the river."], "explanation": "Can becomes could in reported speech." },
+        { "sentence": "He said that he saw her yesterday.", "answer": ["He said that he had seen her the day before."], "explanation": "The simple past moves back to the past perfect, and yesterday becomes the day before." }
+      ]
+    },
+    {
+      "id": "g09-inference",
+      "type": "reading",
+      "title": "Grade 9: reading between the lines",
+      "description": "Competency levels 5.7 and 5.8: infers ellipted information and infers implied information (Grade 9, Terms 2 and 3).",
+      "page": "grades/grade-9/",
+      "keywords": "grade 9 english inference implied information reading competency 5.7 5.8",
+      "passageTitle": "The empty seat",
+      "passage": [
+        "Kumari arrived at the classroom before anyone else, as she always did. She set her bag down and looked at the desk by the window. The chair was still pushed in, exactly as it had been on Monday, and on Tuesday, and on every day since.",
+        "She took out her books and arranged them slowly. When the others came in, laughing about a cricket match, nobody looked at the window.",
+        "At the interval, Miss Fernando called her aside. 'You may move to the front if you would like,' she said gently. Kumari shook her head.",
+        "'She might come back,' Kumari said."
+      ],
+      "questions": [
+        { "prompt": "What can you work out about the person who sat by the window?", "options": ["She has moved to the front of the class", "She has been absent for several days", "She is late that morning only", "She is sitting there already"], "answer": 1, "explanation": "The chair has been pushed in since Monday and on every day since. That tells us she has been away for some time, without the writer saying so." },
+        { "prompt": "Why does Miss Fernando offer Kumari a seat at the front?", "options": ["Kumari has done something wrong", "Kumari cannot see the board", "Miss Fernando thinks Kumari is lonely", "The window seat is broken"], "answer": 2, "explanation": "She speaks gently and offers a change. The kindness suggests she has noticed Kumari sitting alone beside an empty desk." },
+        { "prompt": "What does Kumari's answer tell you about how she feels?", "options": ["She is angry with her friend", "She is still hoping her friend will return", "She does not care where she sits", "She wants to change classes"], "answer": 1, "explanation": "'She might come back' shows hope. Kumari refuses to move because moving would mean giving that hope up." },
+        { "prompt": "The others came in 'laughing about a cricket match'. Why has the writer included this?", "options": ["To show the match was important", "To show the others enjoy cricket", "To contrast their cheerfulness with Kumari's mood", "To explain why the class was late"], "answer": 2, "explanation": "Their laughter sits beside Kumari's quietness. The contrast makes her feeling stand out, without the writer naming it." }
+      ]
+    },
+    {
+      "id": "g10-passive-perfect",
+      "type": "gap",
+      "title": "Grade 10: passive voice in perfect and continuous forms",
+      "description": "Competency level 6.1: constructs sentences in the passive voice in the present and past continuous, and the present, past and future perfect (Grade 10, Terms 1, 2 and 3).",
+      "page": "grades/grade-10/",
+      "keywords": "grade 10 english passive voice perfect continuous competency 6.1",
+      "questions": [
+        { "sentence": "Present perfect passive: The report ____ (complete) by the committee.", "answer": ["has been completed"], "hint": "Has been plus the third form." },
+        { "sentence": "Past perfect passive: The tickets ____ (sell) before we arrived.", "answer": ["had been sold"], "hint": "Had been plus the third form." },
+        { "sentence": "Present continuous passive: The road ____ (widen) at the moment.", "answer": ["is being widened"], "hint": "Is being plus the third form." },
+        { "sentence": "Past continuous passive: The house ____ (paint) when I visited.", "answer": ["was being painted"], "hint": "Was being plus the third form." },
+        { "sentence": "Future perfect passive: By December the work ____ (finish).", "answer": ["will have been finished"], "hint": "Will have been plus the third form." },
+        { "sentence": "Present perfect passive: Many trees ____ (cut) down in this area.", "answer": ["have been cut"], "hint": "Trees is plural, so use have been." }
+      ]
+    },
+    {
+      "id": "g10-if-type-3",
+      "type": "mcq",
+      "title": "Grade 10: If Type 3",
+      "description": "Competency level 6.10: identifies 'If' Type 3, the conditional used for things that did not happen (Grade 10, Term 3).",
+      "page": "grades/grade-10/",
+      "keywords": "grade 10 english conditional if type 3 third conditional competency 6.10",
+      "questions": [
+        { "prompt": "Complete: 'If I ____ harder, I would have passed the examination.'", "options": ["study", "studied", "had studied", "will study"], "answer": 2, "explanation": "Type 3 uses if plus the past perfect: if I had studied." },
+        { "prompt": "Complete: 'If she had left earlier, she ____ the train.'", "options": ["would catch", "would have caught", "will catch", "had caught"], "answer": 1, "explanation": "The second half of a Type 3 sentence uses would have plus the third form." },
+        { "prompt": "What does 'If we had known, we would have helped' tell you?", "options": ["They knew and they helped", "They did not know, so they did not help", "They will know and will help", "They know but will not help"], "answer": 1, "explanation": "Type 3 describes the opposite of what really happened. They did not know, so no help was given." },
+        { "prompt": "Which sentence is a correct Type 3 conditional?", "options": ["If he had come, I would tell him.", "If he came, I would have told him.", "If he had come, I would have told him.", "If he comes, I would have told him."], "answer": 2, "explanation": "Type 3 needs the past perfect after if, and would have plus the third form in the other half." },
+        { "prompt": "Complete: 'If the driver had not braked, there ____ an accident.'", "options": ["would be", "will be", "would have been", "had been"], "answer": 2, "explanation": "Would have been is the Type 3 form. The accident did not in fact happen." },
+        { "prompt": "Which of these is NOT a Type 3 sentence?", "options": ["If I had seen you, I would have waved.", "If it had rained, the match would have stopped.", "If you had asked, I would have agreed.", "If you ask, I will agree."], "answer": 3, "explanation": "The last one is Type 1. It uses the present tense and will, and describes something still possible." }
+      ]
+    },
+    {
+      "id": "g10-discourse-markers",
+      "type": "gap",
+      "title": "Grade 10: discourse markers",
+      "description": "Competency level 3.7: recognizes discourse markers, the words and phrases that signal how ideas connect (Grade 10, Term 3).",
+      "page": "grades/grade-10/",
+      "keywords": "grade 10 english discourse markers however therefore linking words competency 3.7",
+      "questions": [
+        { "sentence": "The scheme was expensive. ____, it saved many lives.", "answer": ["However", "Nevertheless"], "hint": "The second idea contrasts with the first." },
+        { "sentence": "It rained heavily all week. ____, the match was cancelled.", "answer": ["Therefore", "Consequently"], "hint": "The second idea is the result of the first." },
+        { "sentence": "____, I would like to thank the principal for inviting me.", "answer": ["Firstly", "First"], "hint": "It signals the first point in a speech." },
+        { "sentence": "The soil here is poor. ____, there is very little rainfall.", "answer": ["Moreover", "Furthermore"], "hint": "It adds a second, similar point." },
+        { "sentence": "____, the project succeeded because the villagers themselves ran it.", "answer": ["Finally", "Lastly"], "hint": "It signals the last point, summing up." },
+        { "sentence": "Some students prefer science. ____ the other hand, others are drawn to the arts.", "answer": ["On"], "hint": "The phrase is on the other hand." }
+      ]
+    },
+    {
+      "id": "g11-conditionals",
+      "type": "mcq",
+      "title": "Grade 11: conditional clauses",
+      "description": "Competency level 6.10: uses the conditional clauses appropriately, covering Types 1, 2 and 3 together (Grade 11, Term 1).",
+      "page": "grades/grade-11/",
+      "keywords": "grade 11 english conditionals if clauses type 1 2 3 competency 6.10",
+      "questions": [
+        { "prompt": "Complete: 'If it rains tomorrow, we ____ the trip.'", "options": ["cancelled", "will cancel", "would cancel", "would have cancelled"], "answer": 1, "explanation": "Type 1 describes something that may really happen: if plus the present, then will plus the plain verb." },
+        { "prompt": "Complete: 'If I ____ the President, I would change the education system.'", "options": ["am", "will be", "were", "had been"], "answer": 2, "explanation": "Type 2 imagines something untrue now. Were is used with all subjects in this pattern." },
+        { "prompt": "Which type is this? 'If she had studied medicine, she would have become a doctor.'", "options": ["Type 1", "Type 2", "Type 3", "It is not a conditional"], "answer": 2, "explanation": "Past perfect after if, and would have plus the third form. That is Type 3, about something that did not happen." },
+        { "prompt": "Complete: 'If you heat water to 100 degrees, it ____.'", "options": ["boils", "will have boiled", "would boil", "had boiled"], "answer": 0, "explanation": "For something always true, both halves use the present tense. This is sometimes called the zero conditional." },
+        { "prompt": "Which sentence is correct?", "options": ["If I will see him, I will tell him.", "If I see him, I will tell him.", "If I saw him, I will tell him.", "If I had seen him, I will tell him."], "answer": 1, "explanation": "Will is not used after if in a Type 1 sentence. The if half takes the present tense." },
+        { "prompt": "Complete: 'If we had left on time, we ____ stuck in this traffic now.'", "options": ["will not be", "would not be", "would not have been", "had not been"], "answer": 1, "explanation": "The if half is Type 3 but the result is about now, so it takes would not be. Mixed conditionals like this appear at Grade 11." }
+      ]
+    },
+    {
+      "id": "g11-reported-speech",
+      "type": "error",
+      "title": "Grade 11: reported questions and commands",
+      "description": "Competency level 6.11: uses reported speech accurately, extended to reported questions, commands and requests (Grade 11, Term 1).",
+      "page": "grades/grade-11/",
+      "keywords": "grade 11 english reported speech questions commands requests competency 6.11",
+      "questions": [
+        { "sentence": "He asked me where did I live.", "answer": ["He asked me where I lived."], "explanation": "A reported question takes normal word order, not question order. Did disappears and the verb moves to the past." },
+        { "sentence": "She asked me that I was ready.", "answer": ["She asked me if I was ready.", "She asked me whether I was ready."], "explanation": "A yes or no question is reported with if or whether, never with that." },
+        { "sentence": "The teacher told us open our books.", "answer": ["The teacher told us to open our books."], "explanation": "A reported command uses told plus a person plus to plus the verb." },
+        { "sentence": "He asked me what was my name.", "answer": ["He asked me what my name was."], "explanation": "In a reported question the subject comes before the verb: what my name was." },
+        { "sentence": "She requested me don't tell anyone.", "answer": ["She requested me not to tell anyone.", "She asked me not to tell anyone."], "explanation": "A negative request is reported with not to plus the plain verb." },
+        { "sentence": "The officer asked him why he has come late.", "answer": ["The officer asked him why he had come late."], "explanation": "After a past reporting verb, the present perfect moves back to the past perfect." }
+      ]
+    },
+    {
+      "id": "g11-word-class",
+      "type": "match",
+      "title": "Grade 11: affixes and word class",
+      "description": "Competency levels 4.4 and 4.7: uses affixes to change the word class and the meaning of words, and uses nouns, verbs, adjectives and adverbs appropriately (Grade 11, Term 1).",
+      "page": "grades/grade-11/",
+      "keywords": "grade 11 english affixes prefixes suffixes word class competency 4.4 4.7",
+      "pairs": [
+        { "term": "strength", "meaning": "the noun formed from the adjective strong" },
+        { "term": "strengthen", "meaning": "the verb meaning to make stronger" },
+        { "term": "successful", "meaning": "the adjective formed from the noun success" },
+        { "term": "successfully", "meaning": "the adverb telling you how something was done" },
+        { "term": "unnecessary", "meaning": "the opposite of necessary, formed with a prefix" },
+        { "term": "disagreement", "meaning": "the noun meaning a failure to agree" },
+        { "term": "carelessness", "meaning": "the noun formed from careless" },
+        { "term": "misunderstand", "meaning": "the verb meaning to understand wrongly" }
+      ]
+    },
+    {
       "id": "grammar-tenses-1",
       "type": "mcq",
       "title": "Tenses: choosing the right form",
@@ -522,6 +833,149 @@
           "answer": ["I look forward to hearing from you"],
           "explanation": "In look forward to, the word to is a preposition, so the verb after it takes the -ing form."
         }
+      ]
+    },
+    {
+      "id": "primary-letter-sounds",
+      "type": "mcq",
+      "title": "Letter sounds: which sound does the word begin with?",
+      "description": "Ten questions on the first sound of a word. For children who are learning to sound out.",
+      "page": "primary-english/alphabet/",
+      "keywords": "letter sounds phonics first sound alphabet primary beginners",
+      "questions": [
+        { "prompt": "Which sound does the word 'sun' begin with?", "options": ["s", "c", "z", "n"], "answer": 0, "explanation": "Sun begins with the s sound. The letter c can also make an s sound, but sun is spelt with s." },
+        { "prompt": "Which sound does the word 'mango' begin with?", "options": ["n", "m", "b", "w"], "answer": 1, "explanation": "Mango begins with m. Put your lips together and hum: mmm." },
+        { "prompt": "Which sound does the word 'kite' begin with?", "options": ["t", "g", "k", "i"], "answer": 2, "explanation": "Kite begins with k. The letter c makes the same sound in cat." },
+        { "prompt": "Which sound does the word 'elephant' begin with?", "options": ["e", "l", "f", "a"], "answer": 0, "explanation": "Elephant begins with the short e sound, as in egg." },
+        { "prompt": "Which word begins with the same sound as 'dog'?", "options": ["ball", "door", "top", "goat"], "answer": 1, "explanation": "Door and dog both begin with d. Goat begins with g, which is a different sound." },
+        { "prompt": "Which word begins with the same sound as 'fish'?", "options": ["van", "phone", "five", "shop"], "answer": 2, "explanation": "Five begins with f, like fish. Phone also sounds like f, but it is spelt with ph, which comes later." },
+        { "prompt": "Which sound does the word 'tree' begin with?", "options": ["d", "t", "r", "th"], "answer": 1, "explanation": "Tree begins with t. The r comes second, so you hear t-r at the start." },
+        { "prompt": "Which word does NOT begin with the b sound?", "options": ["bus", "book", "day", "bag"], "answer": 2, "explanation": "Day begins with d. Remember that b and d face opposite ways." },
+        { "prompt": "Which sound does the word 'rain' begin with?", "options": ["n", "l", "w", "r"], "answer": 3, "explanation": "Rain begins with r." },
+        { "prompt": "Which word begins with the same sound as 'pen'?", "options": ["ball", "paper", "ten", "queen"], "answer": 1, "explanation": "Paper begins with p, like pen. Ball begins with b, which is made in the same place in the mouth but with your voice on." }
+      ]
+    },
+    {
+      "id": "primary-first-words",
+      "type": "gap",
+      "title": "First words: finish the word",
+      "description": "Ten short words to complete. Say the sounds aloud, then write the whole word.",
+      "page": "primary-english/alphabet/",
+      "keywords": "blending three letter words spelling primary phonics cvc",
+      "questions": [
+        { "sentence": "The animal that says miaow is a ____.", "answer": ["cat"], "hint": "c - a - t" },
+        { "sentence": "You sleep on a ____ at night.", "answer": ["bed"], "hint": "b - e - d" },
+        { "sentence": "The ____ is hot and yellow in the sky.", "answer": ["sun"], "hint": "s - u - n" },
+        { "sentence": "You drink tea from a ____.", "answer": ["cup"], "hint": "c - u - p" },
+        { "sentence": "A baby dog is called a ____.", "answer": ["pup", "puppy"], "hint": "p - u - p" },
+        { "sentence": "You wear a ____ on your head.", "answer": ["hat", "cap"], "hint": "h - a - t" },
+        { "sentence": "A ____ has ten legs and lives near the sea.", "answer": ["crab"], "hint": "c - r - a - b" },
+        { "sentence": "The colour of blood is ____.", "answer": ["red"], "hint": "r - e - d" },
+        { "sentence": "You write with a ____.", "answer": ["pen", "pencil"], "hint": "p - e - n" },
+        { "sentence": "A ____ swims in water and has fins.", "answer": ["fish"], "hint": "f - i - sh. The last two letters make one sound." }
+      ]
+    },
+    {
+      "id": "primary-rhyming-words",
+      "type": "mcq",
+      "title": "Rhyming words: which one rhymes?",
+      "description": "Ten questions on hearing the end of a word. Say each word aloud before you choose.",
+      "page": "primary-english/games/",
+      "keywords": "rhyme rhyming words sounds primary poems ending sounds",
+      "questions": [
+        { "prompt": "Which word rhymes with 'cat'?", "options": ["cot", "hat", "cut", "car"], "answer": 1, "explanation": "Cat and hat both end with the -at sound. Cot and cut change the middle sound." },
+        { "prompt": "Which word rhymes with 'day'?", "options": ["dry", "dog", "play", "den"], "answer": 2, "explanation": "Day and play both end with the -ay sound." },
+        { "prompt": "Which word rhymes with 'tree'?", "options": ["try", "bee", "true", "them"], "answer": 1, "explanation": "Tree and bee both end with the long ee sound." },
+        { "prompt": "Which word rhymes with 'night'?", "options": ["nice", "not", "light", "name"], "answer": 2, "explanation": "Night and light both end with the -ight sound, even though it is spelt oddly." },
+        { "prompt": "Which word rhymes with 'moon'?", "options": ["man", "spoon", "morning", "mud"], "answer": 1, "explanation": "Moon and spoon both end with the -oon sound." },
+        { "prompt": "Which word does NOT rhyme with 'ring'?", "options": ["sing", "king", "wing", "rain"], "answer": 3, "explanation": "Rain does not rhyme with ring. It begins with the same sound, which is not the same thing as rhyming." },
+        { "prompt": "Which word rhymes with 'boat'?", "options": ["bat", "coat", "bought", "book"], "answer": 1, "explanation": "Boat and coat both end with the -oat sound." },
+        { "prompt": "Which word rhymes with 'star'?", "options": ["stir", "store", "car", "start"], "answer": 2, "explanation": "Star and car both end with the -ar sound. Start has an extra t at the end." },
+        { "prompt": "Which word rhymes with 'rain'?", "options": ["ran", "train", "rin", "run"], "answer": 1, "explanation": "Rain and train both end with the -ain sound." },
+        { "prompt": "Which two words rhyme: bell, ball, well?", "options": ["bell and ball", "ball and well", "bell and well", "none of them"], "answer": 2, "explanation": "Bell and well both end with the -ell sound. Ball has a different middle sound." }
+      ]
+    },
+    {
+      "id": "primary-word-meanings",
+      "type": "match",
+      "title": "Word meanings: match the word to what it means",
+      "description": "Ten words that come up often in primary reading, matched to their meanings.",
+      "page": "primary-english/games/",
+      "keywords": "vocabulary meanings primary children words matching scholarship",
+      "pairs": [
+        { "term": "enormous", "meaning": "very, very big" },
+        { "term": "silent", "meaning": "making no sound at all" },
+        { "term": "brave", "meaning": "not afraid to do something difficult" },
+        { "term": "gentle", "meaning": "kind and careful, not rough" },
+        { "term": "ancient", "meaning": "very old" },
+        { "term": "delicious", "meaning": "tasting very good" },
+        { "term": "exhausted", "meaning": "extremely tired" },
+        { "term": "curious", "meaning": "wanting to know more about something" },
+        { "term": "generous", "meaning": "happy to give things to other people" },
+        { "term": "narrow", "meaning": "not wide" }
+      ]
+    },
+    {
+      "id": "primary-sentence-order",
+      "type": "order",
+      "title": "Sentence order: put the words in the right order",
+      "description": "Eight mixed-up sentences. Remember the capital letter at the start and the full stop at the end.",
+      "page": "primary-english/games/",
+      "keywords": "word order sentences primary capital letter full stop writing",
+      "questions": [
+        { "prompt": "Put these words in order to make a sentence.", "parts": ["The", "children", "are", "playing", "in", "the", "garden."] },
+        { "prompt": "Put these words in order to make a sentence.", "parts": ["My", "mother", "cooked", "rice", "for", "lunch."] },
+        { "prompt": "Put these words in order to make a sentence.", "parts": ["A", "small", "bird", "sat", "on", "the", "wall."] },
+        { "prompt": "Put these words in order to make a sentence.", "parts": ["We", "walk", "to", "school", "every", "morning."] },
+        { "prompt": "Put these words in order to make a question.", "parts": ["Where", "is", "my", "school", "bag?"] },
+        { "prompt": "Put these words in order to make a sentence.", "parts": ["The", "rain", "started", "before", "we", "reached", "home."] },
+        { "prompt": "Put these words in order to make a sentence.", "parts": ["My", "sister", "can", "swim", "very", "well."] },
+        { "prompt": "Put these words in order to make a question.", "parts": ["Did", "you", "finish", "your", "homework?"] }
+      ]
+    },
+    {
+      "id": "primary-reading-1",
+      "type": "reading",
+      "title": "Reading: The mango tree",
+      "description": "A short passage with six questions. Read it twice before you begin.",
+      "page": "primary-english/reading/",
+      "keywords": "reading comprehension primary short passage children questions",
+      "passageTitle": "The mango tree",
+      "passage": [
+        "There was an old mango tree behind our house. It was taller than the roof, and its branches came right up to my bedroom window.",
+        "Every April the tree was full of mangoes, and every April the crows got there before we did. Thatha said we should pick them early, while they were still a little green. I wanted to wait until they were sweet.",
+        "One morning I woke up and counted eleven crows on the branches. By the evening there were no mangoes left at all.",
+        "The next year I picked them early."
+      ],
+      "questions": [
+        { "prompt": "Where was the mango tree?", "options": ["In front of the house", "Behind the house", "Beside the road", "In the garden of the school"], "answer": 1, "explanation": "The first sentence says the tree was behind our house." },
+        { "prompt": "How do we know the tree was very tall?", "options": ["It was older than the house", "It was taller than the roof", "It had many branches", "It gave a lot of shade"], "answer": 1, "explanation": "The passage says it was taller than the roof, and its branches reached the bedroom window." },
+        { "prompt": "In which month was the tree full of mangoes?", "options": ["March", "April", "May", "June"], "answer": 1, "explanation": "The passage says every April the tree was full of mangoes." },
+        { "prompt": "What did Thatha want to do?", "options": ["Pick the mangoes early", "Wait until they were sweet", "Chase the crows away", "Cut down the tree"], "answer": 0, "explanation": "Thatha said they should pick them early, while they were still a little green." },
+        { "prompt": "How many crows did the writer count?", "options": ["Seven", "Nine", "Eleven", "Twelve"], "answer": 2, "explanation": "The writer counted eleven crows on the branches that morning." },
+        { "prompt": "Why did the writer pick the mangoes early the next year?", "options": ["Because the mangoes tasted better green", "Because Thatha told them to again", "Because the crows had eaten them all the year before", "Because the tree was cut down"], "answer": 2, "explanation": "The crows ate every mango in one day, so the following year the writer took Thatha's advice." }
+      ]
+    },
+    {
+      "id": "scholarship-english-practice",
+      "type": "mcq",
+      "title": "Grade 5 Scholarship: English language practice",
+      "description": "Twelve questions of the kind that test English in the English-medium paper: vocabulary, opposites, categories, analogies and grammar in use.",
+      "page": "primary-english/grade-5-scholarship/",
+      "keywords": "grade 5 scholarship English practice verbal reasoning opposites analogies vocabulary",
+      "questions": [
+        { "prompt": "Choose the word closest in meaning to 'enormous'.", "options": ["tiny", "huge", "heavy", "empty"], "answer": 1, "explanation": "Enormous means very big, so huge is closest. Heavy is about weight, not size." },
+        { "prompt": "Choose the opposite of 'ancient'.", "options": ["old", "modern", "broken", "famous"], "answer": 1, "explanation": "Ancient means very old, so its opposite is modern." },
+        { "prompt": "Which is the odd one out?", "options": ["rose", "jasmine", "mango", "orchid"], "answer": 2, "explanation": "Rose, jasmine and orchid are flowers. Mango is a fruit." },
+        { "prompt": "Hand is to glove as foot is to ___.", "options": ["leg", "shoe", "walk", "toe"], "answer": 1, "explanation": "A glove goes on a hand, so a shoe goes on a foot. Say the relationship aloud first." },
+        { "prompt": "Choose the correct word: The two brothers helped ___ with the work.", "options": ["each other", "themselves", "one another's", "them"], "answer": 0, "explanation": "Each other is used when there are two people. One another is generally used for more than two." },
+        { "prompt": "Which sentence is written correctly?", "options": ["she went to the market", "She went to the Market.", "She went to the market.", "she Went to the market"], "answer": 2, "explanation": "A sentence begins with a capital letter and ends with a full stop. Market is a common noun, so it does not need a capital." },
+        { "prompt": "Choose the word closest in meaning to 'exhausted'.", "options": ["hungry", "very tired", "angry", "late"], "answer": 1, "explanation": "Exhausted means extremely tired." },
+        { "prompt": "Which is the odd one out?", "options": ["train", "bus", "road", "aeroplane"], "answer": 2, "explanation": "Train, bus and aeroplane carry people. A road is the place you travel on, not a vehicle." },
+        { "prompt": "Doctor is to hospital as teacher is to ___.", "options": ["student", "book", "school", "lesson"], "answer": 2, "explanation": "A doctor works in a hospital, so a teacher works in a school. The relationship is person to workplace." },
+        { "prompt": "Choose the correct word: There ___ five books on the table.", "options": ["is", "are", "was", "has"], "answer": 1, "explanation": "Five books is plural, so the verb is are." },
+        { "prompt": "Choose the opposite of 'generous'.", "options": ["kind", "selfish", "quiet", "poor"], "answer": 1, "explanation": "A generous person gives freely; a selfish person does not. Poor is about money, not willingness." },
+        { "prompt": "Which word completes the sentence best? The road was so ___ that only one car could pass at a time.", "options": ["long", "narrow", "busy", "old"], "answer": 1, "explanation": "Only one car being able to pass tells you the road was narrow. Read the whole sentence with your answer in it to check." }
       ]
     }
   ]

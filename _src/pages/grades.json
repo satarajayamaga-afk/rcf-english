@@ -1,0 +1,257 @@
+{
+  "pages": [
+    {
+      "slug": "grades",
+      "title": "Grade 6-11 Resources",
+      "metaTitle": "Grade 6-11 English resources and syllabus practice | RCF English",
+      "description": "Interactive English practice for Grades 6 to 11, with three activities for each grade built from the competency levels of the school syllabus for that grade.",
+      "keywords": "grade 6 english, grade 7 english, grade 8 english, grade 9 english, grade 10 english, grade 11 english, competency levels, syllabus practice, Sri Lanka",
+      "kicker": "By grade",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "hero": {
+        "text": "Interactive English practice for Grades 6 to 11. Each grade has three activities, and every one of them is tied to a numbered competency level from the syllabus that grade actually follows. Each activity marks itself and explains the answer.",
+        "buttons": [
+          { "label": "Browse past papers", "url": "past-papers/", "style": "btn--accent" },
+          { "label": "All interactive activities", "url": "interactive/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Where these activities come from",
+          "text": [
+            "Every activity on these pages is built from **the competency levels of the school syllabus**, not from examination papers. Each one names the competency level it practises, so you can check it against your own term notes.",
+            "Note that Grades 6 and 7 are not following the same syllabus. **Grade 6 has moved to the new 2026 syllabus**, which is organised by skill — listening, speaking, reading, writing and literary appreciation — and is grouped around text types rather than grammar topics. **Grades 7 to 11 remain on the earlier syllabus**, built around eight competencies covering sounds, mechanics of writing, listening, vocabulary, reading, grammar, written communication and speaking.",
+            "This matters when comparing grades: the same number means different things on either side of that line. Competency level 5.4 in Grade 8 is not competency level 5.4 in Grade 6."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Choose your grade",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 6", "text": "Reading a timetable, filling in a form, and reading a simple poem. New 2026 syllabus.", "url": "grades/grade-6/" },
+            { "title": "Grade 7", "text": "Past and future continuous, modals, and joining words.", "url": "grades/grade-7/" },
+            { "title": "Grade 8", "text": "The past perfect, the passive voice, and reflexive pronouns.", "url": "grades/grade-8/" },
+            { "title": "Grade 9", "text": "Passive past and future, reported statements, and reading between the lines.", "url": "grades/grade-9/" },
+            { "title": "Grade 10", "text": "The passive in perfect and continuous forms, If Type 3, and discourse markers.", "url": "grades/grade-10/" },
+            { "title": "Grade 11", "text": "All three conditionals, reported questions and commands, and word class.", "url": "grades/grade-11/" }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "When you have finished practising",
+          "columns": "3",
+          "items": [
+            { "title": "Sit a real paper", "text": "Term test papers from provincial departments and zonal offices, by grade.", "url": "past-papers/" },
+            { "title": "O/L English lessons", "text": "Every writing task and grammar area taught in guided steps.", "url": "ol-english/" },
+            { "title": "More activities", "text": "The whole set of self-marking activities on the site.", "url": "interactive/" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-6",
+      "title": "Grade 6 English",
+      "metaTitle": "Grade 6 English practice, new 2026 syllabus | RCF English",
+      "description": "Three interactive Grade 6 English activities built from the new 2026 syllabus: reading a functional text, filling in a form, and reading a simple poem.",
+      "keywords": "grade 6 english, new 2026 syllabus, functional text, form filling, simple poem, competency levels",
+      "kicker": "Grade 6-11 Resources",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
+      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
+      "hero": { "text": "Grade 6 follows the new 2026 syllabus, which is organised by skill rather than by grammar topic. These three activities cover reading a functional text, writing in an official context, and reading a literary text. Each one names the competency level it practises." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Grade 6 is on the new syllabus",
+          "text": [
+            "From 2026, Grade 6 works to a syllabus organised around five competencies — listening, speaking, reading, writing and literary appreciation — with texts grouped as functional, informational or literary. The competency numbers here do not match those used in Grades 7 to 11."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Grade 6 English practice",
+          "intro": ["Reading a timetable, filling in a form, and reading a simple poem. These follow competency levels 3.1, 3.2, 3.5, 3.6 and 4.1 of the 2026 syllabus."],
+          "ids": ["g06-functional-texts", "g06-forms-and-lists", "g06-poems"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 7", "text": "Continuous tenses and modals.", "url": "grades/grade-7/" },
+            { "title": "Grade 6 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
+            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-7",
+      "title": "Grade 7 English",
+      "metaTitle": "Grade 7 English grammar practice | RCF English",
+      "description": "Three interactive Grade 7 grammar activities built from the syllabus: past and future continuous, modals, and conjunctions.",
+      "keywords": "grade 7 english grammar, past continuous, future continuous, modals, conjunctions, competency levels",
+      "kicker": "Grade 6-11 Resources",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
+      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
+      "hero": { "text": "Three areas the Grade 7 syllabus sets for Term 2: the continuous tenses, the four modals, and the joining words. Each activity marks itself and explains why an answer is right." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Grade 7 grammar practice",
+          "intro": ["Past and future continuous, the modals can, would, must and should, and the joining words. These follow competency levels 6.1, 6.3 and 6.8."],
+          "ids": ["g07-past-continuous", "g07-modals", "g07-conjunctions"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 8", "text": "The past perfect and the passive voice.", "url": "grades/grade-8/" },
+            { "title": "Grade 7 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
+            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-8",
+      "title": "Grade 8 English",
+      "metaTitle": "Grade 8 English grammar practice | RCF English",
+      "description": "Three interactive Grade 8 grammar activities built from the syllabus: the past perfect tense, the passive voice in simple tenses, and reflexive pronouns.",
+      "keywords": "grade 8 english grammar, past perfect, passive voice, reflexive pronouns, competency levels",
+      "kicker": "Grade 6-11 Resources",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
+      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
+      "hero": { "text": "Grade 8 is where the passive voice is introduced. The syllabus sets it in the simple present, simple past and simple future across Terms 2 and 3, alongside the past perfect. Get these right here and Grades 9 and 10 become much easier." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Grade 8 grammar practice",
+          "intro": ["The past perfect tense, the passive voice in the simple tenses, and reflexive pronouns. These follow competency levels 6.1 and 6.2."],
+          "ids": ["g08-past-perfect", "g08-passive-simple", "g08-reflexive-pronouns"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 9", "text": "The passive extended, and reported speech.", "url": "grades/grade-9/" },
+            { "title": "Grade 8 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
+            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-9",
+      "title": "Grade 9 English",
+      "metaTitle": "Grade 9 English grammar practice | RCF English",
+      "description": "Three interactive Grade 9 activities built from the syllabus: the passive voice in past and future, reported statements, and inferring implied information.",
+      "keywords": "grade 9 english grammar, passive voice, reported speech, inference, implied information, competency levels",
+      "kicker": "Grade 6-11 Resources",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
+      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
+      "hero": { "text": "Grade 9 extends the passive voice and introduces reported speech. It also asks something new of readers: working out what a text implies but never actually says. That last skill carries marks right through to O/L." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Grade 9 English practice",
+          "intro": ["The passive voice in past and future, reported statements, and reading between the lines. These follow competency levels 6.1, 6.11, 5.7 and 5.8."],
+          "ids": ["g09-passive-past-future", "g09-reported-speech", "g09-inference"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 10", "text": "The passive completed, and If Type 3.", "url": "grades/grade-10/" },
+            { "title": "Grade 9 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
+            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-10",
+      "title": "Grade 10 English",
+      "metaTitle": "Grade 10 English grammar practice | RCF English",
+      "description": "Three interactive Grade 10 activities built from the syllabus: the passive voice in perfect and continuous forms, If Type 3, and discourse markers.",
+      "keywords": "grade 10 english grammar, passive voice perfect continuous, if type 3, third conditional, discourse markers, competency levels",
+      "kicker": "Grade 6-11 Resources",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
+      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
+      "hero": { "text": "Grade 10 completes the passive voice. Having met it in the simple tenses at Grade 8 and the past and future at Grade 9, the syllabus now works through every perfect and continuous form. O/L preparation begins here in earnest." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Grade 10 grammar practice",
+          "intro": ["The passive voice in perfect and continuous forms, If Type 3, and discourse markers. These follow competency levels 6.1, 6.10 and 3.7."],
+          "ids": ["g10-passive-perfect", "g10-if-type-3", "g10-discourse-markers"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Grade 11", "text": "All three conditionals, and reported questions.", "url": "grades/grade-11/" },
+            { "title": "Grade 10 papers", "text": "Term test papers for this grade, by province and term.", "url": "past-papers/grade-10/" },
+            { "title": "O/L English", "text": "The full O/L course, task by task.", "url": "ol-english/" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-11",
+      "title": "Grade 11 English",
+      "metaTitle": "Grade 11 English grammar practice | RCF English",
+      "description": "Three interactive Grade 11 activities built from the syllabus: conditional clauses of all types, reported questions and commands, and affixes and word class.",
+      "keywords": "grade 11 english grammar, conditionals, reported speech questions commands, affixes word class, O/L English, competency levels",
+      "kicker": "Grade 6-11 Resources",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
+      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
+      "hero": { "text": "The O/L year. Grade 11 consolidates rather than introduces: the conditionals are brought together, reported speech is extended to questions and commands, and word building is revisited. All three are areas where marks are thrown away by habit rather than by difficulty." },
+      "blocks": [
+        {
+          "type": "activities",
+          "heading": "Grade 11 grammar practice",
+          "intro": ["Conditional clauses of all types, reported questions and commands, and changing the class of a word. These follow competency levels 6.10, 6.11, 4.4 and 4.7."],
+          "ids": ["g11-conditionals", "g11-reported-speech", "g11-word-class"]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "O/L English", "text": "Syllabus, Paper I and II, and every writing task.", "url": "ol-english/" },
+            { "title": "Past papers", "text": "Sit a real paper under timed conditions.", "url": "past-papers/" },
+            { "title": "Common mistakes", "text": "The errors examiners see most often.", "url": "ol-english/common-mistakes/" }
+          ]
+        }
+      ]
+    }
+  ]
+}
