@@ -165,6 +165,133 @@
         { "kind": "mcq", "prompt": "Why had the kitten run away?", "options": ["It was hungry", "It was frightened by the storm", "It was following Tharu", "The story does not say"], "answer": 1, "explanation": "The neighbour says her kitten had run away in the storm." },
         { "kind": "gap", "prompt": "Complete: The neighbour said Tharu may ____ the kitten whenever she likes.", "answer": ["visit", "see"], "explanation": "The neighbour smiles and says, 'You may visit her whenever you like.'" }
       ]
+    },
+    {
+      "id": "l07-1",
+      "grade": 7,
+      "rate": 0.9,
+      "title": "Directions to the post office",
+      "description": "One person asks another the way. Competency level 3.2: listens and follows instructions and responds to requests.",
+      "instructions": "Listen to the directions and follow them carefully. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a visitor asking for directions." },
+        { "speaker": "Visitor", "text": "Excuse me. Could you tell me the way to the post office, please?" },
+        { "speaker": "Local", "text": "Certainly. Walk straight down this road until you come to the traffic lights." },
+        { "speaker": "Local", "text": "At the lights, turn left. You will pass a bakery on your right." },
+        { "speaker": "Local", "text": "Keep walking until you see a large temple. The post office is just opposite the temple." },
+        { "speaker": "Visitor", "text": "Thank you. Is it far?" },
+        { "speaker": "Local", "text": "About ten minutes on foot. It closes at four, so you have plenty of time." },
+        { "speaker": "Visitor", "text": "That is very kind of you. Thank you." }
+      ],
+      "questions": [
+        { "kind": "sequence", "prompt": "Put the directions in the correct order.", "items": ["Walk straight to the traffic lights", "Turn left at the lights", "Pass the bakery on your right", "Look for the large temple"], "explanation": "The directions are given in this order: straight to the lights, left, past the bakery, then the temple." },
+        { "kind": "mcq", "prompt": "Which way must the visitor turn at the traffic lights?", "options": ["Right", "Left", "Straight on", "Back the way she came"], "answer": 1, "explanation": "The local says, 'At the lights, turn left.'" },
+        { "kind": "mcq", "prompt": "Where exactly is the post office?", "options": ["Next to the bakery", "Behind the temple", "Opposite the temple", "At the traffic lights"], "answer": 2, "explanation": "The post office is just opposite the temple." },
+        { "kind": "gap", "prompt": "Complete: The walk takes about ____ minutes.", "answer": ["ten", "10"], "explanation": "The local says it is about ten minutes on foot." },
+        { "kind": "short", "prompt": "At what time does the post office close?", "answer": ["four", "4", "4 o'clock", "four o'clock", "4pm", "4 p.m."], "explanation": "The local says it closes at four." },
+        { "kind": "mcq", "prompt": "On which side of the road is the bakery?", "options": ["On the left", "On the right", "Straight ahead", "It is not mentioned"], "answer": 1, "explanation": "After turning left, the visitor will pass a bakery on her right." }
+      ]
+    },
+    {
+      "id": "l07-2",
+      "grade": 7,
+      "rate": 0.9,
+      "title": "An announcement at the railway station",
+      "description": "A public announcement about train times and platforms. Competency level 3.1: responds to simple announcements.",
+      "instructions": "Listen to the announcement and complete the notes. Then answer the questions and submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to an announcement at a railway station." },
+        { "speaker": "Announcer", "text": "Attention, please. The intercity train to Badulla will depart from platform three at ten forty five." },
+        { "speaker": "Announcer", "text": "This train is running twenty minutes late. We are sorry for the delay." },
+        { "speaker": "Announcer", "text": "Passengers travelling to Kandy should go to platform one. That train leaves on time at eleven o'clock." },
+        { "speaker": "Announcer", "text": "Please do not leave your luggage unattended at any time." },
+        { "speaker": "Announcer", "text": "Thank you for travelling with us." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the notes about the two trains.", "lines": [ { "label": "Badulla train — platform:", "answer": ["three", "3", "platform three", "platform 3"] }, { "label": "Badulla train — departure time:", "answer": ["10.45", "ten forty five", "10:45", "1045"] }, { "label": "Kandy train — platform:", "answer": ["one", "1", "platform one", "platform 1"] } ], "explanation": "The Badulla train leaves platform three at ten forty five; the Kandy train leaves from platform one." },
+        { "kind": "mcq", "prompt": "How late is the Badulla train?", "options": ["Ten minutes", "Twenty minutes", "Thirty minutes", "It is on time"], "answer": 1, "explanation": "The announcer says the train is running twenty minutes late." },
+        { "kind": "mcq", "prompt": "Which train is running on time?", "options": ["The Badulla train", "The Kandy train", "Both trains", "Neither train"], "answer": 1, "explanation": "The Kandy train leaves on time at eleven o'clock." },
+        { "kind": "short", "prompt": "At what time does the Kandy train leave?", "answer": ["eleven", "11", "11 o'clock", "eleven o'clock", "11.00"], "explanation": "The announcement says it leaves at eleven o'clock." },
+        { "kind": "mcq", "prompt": "What are passengers warned not to do?", "options": ["Run on the platform", "Leave luggage unattended", "Board the wrong train", "Stand near the edge"], "answer": 1, "explanation": "The announcer says not to leave luggage unattended at any time." },
+        { "kind": "gap", "prompt": "Complete: The train to Badulla is an ____ train.", "answer": ["intercity", "inter-city"], "explanation": "The announcement calls it the intercity train to Badulla." }
+      ]
+    },
+    {
+      "id": "l07-3",
+      "grade": 7,
+      "rate": 0.9,
+      "title": "How to make a paper bookmark",
+      "description": "A teacher explains a craft activity step by step. Competency level 3.2: listens and follows instructions.",
+      "instructions": "Listen to the instructions carefully. Put the steps in order and answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a teacher explaining how to make a bookmark." },
+        { "speaker": "Teacher", "text": "Today we are going to make a paper bookmark. You will need card, scissors, glue and coloured pencils." },
+        { "speaker": "Teacher", "text": "First, cut a strip of card about twenty centimetres long and five centimetres wide." },
+        { "speaker": "Teacher", "text": "Next, draw a simple design along one side. Do not colour it yet." },
+        { "speaker": "Teacher", "text": "Then colour your design carefully, keeping inside the lines." },
+        { "speaker": "Teacher", "text": "After that, make a small hole at the top with a pencil point." },
+        { "speaker": "Teacher", "text": "Finally, thread a piece of ribbon through the hole and tie a knot. Your bookmark is ready." }
+      ],
+      "questions": [
+        { "kind": "sequence", "prompt": "Put the steps in the order the teacher gives them.", "items": ["Cut a strip of card", "Draw a design", "Colour the design", "Make a hole at the top", "Thread the ribbon"], "explanation": "The teacher uses First, Next, Then, After that and Finally to mark the five steps in order." },
+        { "kind": "note", "prompt": "Complete the notes about the strip of card.", "lines": [ { "label": "Length:", "answer": ["20 centimetres", "twenty centimetres", "20cm", "20 cm", "twenty"] }, { "label": "Width:", "answer": ["5 centimetres", "five centimetres", "5cm", "5 cm", "five"] } ], "explanation": "The strip is about twenty centimetres long and five centimetres wide." },
+        { "kind": "match", "prompt": "Match each material to what it is used for.", "pairs": [ { "term": "Scissors", "meaning": "Cutting the strip of card" }, { "term": "Coloured pencils", "meaning": "Colouring the design" }, { "term": "Ribbon", "meaning": "Threading through the hole" } ], "explanation": "Each material has one clear use in the instructions." },
+        { "kind": "mcq", "prompt": "What are students told NOT to do when they draw the design?", "options": ["Use a pencil", "Colour it straight away", "Draw on both sides", "Make it too large"], "answer": 1, "explanation": "The teacher says, 'Do not colour it yet.'" },
+        { "kind": "short", "prompt": "What is used to make the hole?", "answer": ["a pencil point", "pencil point", "pencil", "a pencil"], "explanation": "The teacher says to make a small hole with a pencil point." },
+        { "kind": "mcq", "prompt": "What is the last thing you do?", "options": ["Colour the design", "Cut the card", "Tie a knot in the ribbon", "Make the hole"], "answer": 2, "explanation": "Finally, you thread the ribbon through and tie a knot." }
+      ]
+    },
+    {
+      "id": "l07-4",
+      "grade": 7,
+      "rate": 0.9,
+      "title": "A telephone call about a lost bag",
+      "description": "A caller reports a lost bag to an office. Competency level 3.3: listens to a simple text for specific information.",
+      "instructions": "Listen to the telephone call and note the details. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a telephone call to a bus depot office." },
+        { "speaker": "Officer", "text": "Good evening, lost property office. How may I help you?" },
+        { "speaker": "Caller", "text": "Good evening. I think I left my bag on the number one hundred and thirty eight bus this afternoon." },
+        { "speaker": "Officer", "text": "I see. Can you describe the bag?" },
+        { "speaker": "Caller", "text": "It is a dark blue backpack with a broken zip on the front pocket." },
+        { "speaker": "Officer", "text": "And what was inside it?" },
+        { "speaker": "Caller", "text": "Two school books, a lunch box and a pair of spectacles in a brown case." },
+        { "speaker": "Officer", "text": "We do have a blue backpack here. Please come tomorrow morning after nine and bring your identity card." },
+        { "speaker": "Caller", "text": "Thank you so much. I will come at half past nine." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the lost property record.", "lines": [ { "label": "Bus number:", "answer": ["138", "one hundred and thirty eight"] }, { "label": "Colour of bag:", "answer": ["dark blue", "blue"] }, { "label": "Type of bag:", "answer": ["backpack", "back pack", "a backpack"] } ], "explanation": "The caller lost a dark blue backpack on the number 138 bus." },
+        { "kind": "mcq", "prompt": "What is wrong with the bag?", "options": ["A torn strap", "A broken zip on the front pocket", "A missing handle", "A stain on the side"], "answer": 1, "explanation": "The caller says it has a broken zip on the front pocket." },
+        { "kind": "match", "prompt": "Match each item to where it was or what it looked like.", "pairs": [ { "term": "School books", "meaning": "There were two of them" }, { "term": "Spectacles", "meaning": "In a brown case" }, { "term": "Identity card", "meaning": "Must be brought tomorrow" } ], "explanation": "The bag held two school books, a lunch box and spectacles in a brown case. The identity card must be brought to collect the bag." },
+        { "kind": "short", "prompt": "At what time will the caller come?", "answer": ["half past nine", "9.30", "9:30", "half past 9"], "explanation": "The caller says, 'I will come at half past nine.'" },
+        { "kind": "mcq", "prompt": "What must the caller bring to collect the bag?", "options": ["The bus ticket", "An identity card", "A photograph", "Nothing at all"], "answer": 1, "explanation": "The officer asks the caller to bring an identity card." },
+        { "kind": "gap", "prompt": "Complete: Besides books and spectacles, the bag contained a ____ box.", "answer": ["lunch"], "explanation": "The caller lists two school books, a lunch box and spectacles." }
+      ]
+    },
+    {
+      "id": "l07-5",
+      "grade": 7,
+      "rate": 0.9,
+      "title": "Library rules",
+      "description": "The librarian explains how the school library works. Competency levels 3.3 and 3.4: listens for specific information and transfers it into other forms.",
+      "instructions": "Listen to the librarian and complete the notes. Answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a librarian speaking to new students." },
+        { "speaker": "Librarian", "text": "Welcome to the school library. Let me explain a few simple rules." },
+        { "speaker": "Librarian", "text": "Each student may borrow two books at a time. You may keep them for fourteen days." },
+        { "speaker": "Librarian", "text": "If a book is returned late, there is a small fine of five rupees for each day." },
+        { "speaker": "Librarian", "text": "Reference books, such as dictionaries and atlases, may be used here but cannot be taken home." },
+        { "speaker": "Librarian", "text": "The library is open from seven thirty in the morning until four in the afternoon, Monday to Friday." },
+        { "speaker": "Librarian", "text": "Please keep your voices low, and never write in a library book." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the notes about borrowing.", "lines": [ { "label": "Books allowed at one time:", "answer": ["two", "2"] }, { "label": "Number of days:", "answer": ["fourteen", "14", "14 days", "fourteen days"] }, { "label": "Fine per day:", "answer": ["five rupees", "5 rupees", "rs 5", "5", "five"] } ], "explanation": "Two books, for fourteen days, with a five rupee fine for each day a book is late." },
+        { "kind": "mcq", "prompt": "Which books may NOT be taken home?", "options": ["Story books", "Reference books", "New books", "Books in English"], "answer": 1, "explanation": "Reference books such as dictionaries and atlases may be used in the library but not taken home." },
+        { "kind": "note", "prompt": "Complete the notes about opening hours.", "lines": [ { "label": "Opens at:", "answer": ["7.30", "seven thirty", "7:30", "half past seven"] }, { "label": "Closes at:", "answer": ["four", "4", "4 o'clock", "four o'clock", "4.00"] } ], "explanation": "The library opens at seven thirty in the morning and closes at four in the afternoon." },
+        { "kind": "mcq", "prompt": "On which days is the library open?", "options": ["Every day", "Monday to Friday", "Monday to Saturday", "Weekends only"], "answer": 1, "explanation": "The librarian says Monday to Friday." },
+        { "kind": "match", "prompt": "Match each item to the rule that applies to it.", "pairs": [ { "term": "Dictionary", "meaning": "Use it in the library only" }, { "term": "Late book", "meaning": "A fine of five rupees a day" }, { "term": "Library book", "meaning": "Never write in it" } ], "explanation": "Each rule in the talk applies to one of these." },
+        { "kind": "short", "prompt": "What are students asked to do about their voices?", "answer": ["keep them low", "keep your voices low", "keep low", "speak quietly", "be quiet", "keep voices low"], "explanation": "The librarian asks students to keep their voices low." }
+      ]
     }
   ]
 }
