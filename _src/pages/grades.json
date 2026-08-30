@@ -10,7 +10,7 @@
       "kind": "page",
       "scripts": ["quiz"],
       "hero": {
-        "text": "Interactive English practice for Grades 6 to 11. Each grade has three activities, and every one of them is tied to a numbered competency level from the syllabus that grade actually follows. Each activity marks itself and explains the answer.",
+        "text": "Interactive English practice for Grades 6 to 11. Each grade provides three interactive language activities and five complete listening tests, every one of them aligned with a numbered competency level from the syllabus that grade actually follows. Everything marks itself and explains the answer.",
         "buttons": [
           { "label": "Browse past papers", "url": "past-papers/", "style": "btn--accent" },
           { "label": "All interactive activities", "url": "interactive/", "style": "btn--ghost-light" }
@@ -24,7 +24,8 @@
           "text": [
             "Every activity on these pages is built from **the competency levels of the school syllabus**, not from examination papers. Each one names the competency level it practises, so you can check it against your own term notes.",
             "Note that Grades 6 and 7 are not following the same syllabus. **Grade 6 has moved to the new 2026 syllabus**, which is organised by skill — listening, speaking, reading, writing and literary appreciation — and is grouped around text types rather than grammar topics. **Grades 7 to 11 remain on the earlier syllabus**, built around eight competencies covering sounds, mechanics of writing, listening, vocabulary, reading, grammar, written communication and speaking.",
-            "This matters when comparing grades: the same number means different things on either side of that line. Competency level 5.4 in Grade 8 is not competency level 5.4 in Grade 6."
+            "This matters when comparing grades: the same number means different things on either side of that line. Competency level 5.4 in Grade 8 is not competency level 5.4 in Grade 6.",
+            "The listening tests are read aloud using the English voice your own device provides, so the voices may sound different on a computer and on a phone. The words and the questions are the same everywhere."
           ]
         },
         {
@@ -33,12 +34,12 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 6", "text": "Reading a timetable, filling in a form, and reading a simple poem. New 2026 syllabus.", "url": "grades/grade-6/" },
-            { "title": "Grade 7", "text": "Past and future continuous, modals, and joining words.", "url": "grades/grade-7/" },
-            { "title": "Grade 8", "text": "The past perfect, the passive voice, and reflexive pronouns.", "url": "grades/grade-8/" },
-            { "title": "Grade 9", "text": "Passive past and future, reported statements, and reading between the lines.", "url": "grades/grade-9/" },
-            { "title": "Grade 10", "text": "The passive in perfect and continuous forms, If Type 3, and discourse markers.", "url": "grades/grade-10/" },
-            { "title": "Grade 11", "text": "All three conditionals, reported questions and commands, and word class.", "url": "grades/grade-11/" }
+            { "title": "Grade 6", "text": "Reading a timetable, filling in a form, and a simple poem. Listening: conversations, an announcement and a story. New 2026 syllabus.", "url": "grades/grade-6/" },
+            { "title": "Grade 7", "text": "Past and future continuous, modals, and joining words. Listening: directions, announcements and spoken instructions.", "url": "grades/grade-7/" },
+            { "title": "Grade 8", "text": "The past perfect, the passive voice, and reflexive pronouns. Listening: a weather forecast, a process and a spoken report.", "url": "grades/grade-8/" },
+            { "title": "Grade 9", "text": "Passive past and future, reported statements, and reading between the lines. Listening: interviews, and inferring what is implied.", "url": "grades/grade-9/" },
+            { "title": "Grade 10", "text": "The passive in perfect and continuous forms, If Type 3, and discourse markers. Listening: presentations, a discussion and note-taking.", "url": "grades/grade-10/" },
+            { "title": "Grade 11", "text": "All three conditionals, reported questions and commands, and word class. Listening: a debate, a committee meeting and an interview.", "url": "grades/grade-11/" }
           ]
         },
         {
