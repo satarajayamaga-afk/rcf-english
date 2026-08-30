@@ -255,6 +255,7 @@ if ($script:Data.ContainsKey('classes')) { $courses = AsList (P $script:Data['cl
 $papers = @(DataList 'papers' 'items')
 $resources = @(DataList 'resources' 'items')
 $quizzes = @(DataList 'quizzes' 'activities')
+$listening = @(DataList 'listening' 'tests')
 $literature = @(DataList 'literature' 'texts')
 $notices = @(DataList 'notices' 'notices')
 
@@ -746,6 +747,17 @@ function RenderBlock($block) {
                 $found = $quizzes | Where-Object { [string](P $_ 'id') -eq [string]$id }
                 if (-not $found) { [void]$script:Warnings.Add("Activity '$id' is used on '$($script:PageSlug)' but is not in data/quizzes.json") }
                 $html += '<div data-activity="' + (E $id) + '"><p class="text-muted">Loading activity&hellip;</p></div>'
+            }
+            return $html + '</div></section>'
+        }
+
+        'listening' {
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<noscript><div class="noscript-note"><p class="mb-0">The listening tests need JavaScript, because the passage is read aloud by the browser itself. Please switch JavaScript on, or ask your teacher for the printed transcript.</p></div></noscript>'
+            foreach ($id in (AsList (P $block 'ids'))) {
+                $found = $listening | Where-Object { [string](P $_ 'id') -eq [string]$id }
+                if (-not $found) { [void]$script:Warnings.Add("Listening test '$id' is used on '$($script:PageSlug)' but is not in data/listening.json") }
+                $html += '<div data-listening="' + (E $id) + '"><p class="text-muted">Loading listening test&hellip;</p></div>'
             }
             return $html + '</div></section>'
         }

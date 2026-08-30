@@ -1968,6 +1968,141 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   .card--link:hover { transform: none; }
 }
 
+
+/* ==========================================================================
+   Listening tests
+   The passage is spoken by the browser's own speech engine, so there is no
+   audio element to style. The controls below are ordinary buttons.
+   ========================================================================== */
+
+.listening {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: var(--sp-5);
+  margin-bottom: var(--sp-5);
+}
+.listening__title { margin: 0 0 var(--sp-2); color: var(--navy-800); }
+.listening__meta { font-size: var(--step--1); color: var(--ink-700); margin: 0 0 var(--sp-4); }
+
+.listening__instructions {
+  padding: var(--sp-3) var(--sp-4);
+  border-left: 3px solid var(--navy-600);
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--sp-4);
+}
+.listening__instructions h4 { margin: 0 0 var(--sp-1); font-size: var(--step--1); color: var(--navy-800); }
+.listening__instructions p { margin: 0; font-size: var(--step--1); }
+
+.listening__player {
+  padding: var(--sp-4);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--navy-050);
+  margin-bottom: var(--sp-5);
+}
+.listening__modes { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-bottom: var(--sp-3); }
+.listening__modes .btn { min-height: 44px; }
+.listening__modes .btn.is-on {
+  background: var(--navy-700);
+  border-color: var(--navy-700);
+  color: #fff;
+}
+.listening__limit { margin: 0 0 var(--sp-3); font-size: var(--step--1); }
+.listening__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+}
+/* Controls stack on a narrow phone so nothing is cut off. */
+@media (max-width: 480px) {
+  .listening__controls { display: grid; grid-template-columns: 1fr; }
+  .listening__controls .btn { width: 100%; }
+}
+.listening__controls .btn { min-height: 48px; }
+.listening__speed { display: flex; align-items: center; gap: 0.5rem; font-size: var(--step--1); }
+.listening__speed select {
+  min-height: 44px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font-family: inherit;
+}
+.listening__status { margin: var(--sp-3) 0 0; font-size: var(--step--1); color: var(--ink-700); }
+
+.qlist { list-style: none; margin: 0; padding: 0; }
+.q__prompt { font-weight: 650; color: var(--navy-800); margin: 0 0 var(--sp-3); }
+.q__feedback { margin-top: var(--sp-2); font-size: var(--step--1); }
+.q__feedback:empty { display: none; }
+.q.is-right { border-left: 3px solid var(--ok-700); padding-left: var(--sp-3); }
+.q.is-wrong { border-left: 3px solid var(--err-700); padding-left: var(--sp-3); }
+.q.is-right .q__feedback { color: var(--ok-700); }
+.q.is-wrong .q__feedback { color: var(--err-700); }
+
+.note, .match, .sequence { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+.note__row, .match__row, .sequence__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+}
+.note__row label, .match__term { min-width: 9rem; font-weight: 600; }
+.note__row input, .match__row select, .sequence__row select {
+  min-height: 44px;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font-family: inherit;
+  /* min-width:0 lets a long option shrink instead of pushing the row wider
+     than the screen; max-width keeps it inside its parent on any width. */
+  min-width: 0;
+  max-width: 100%;
+}
+.note__row input { flex: 1 1 12rem; }
+.match__row select { flex: 1 1 14rem; }
+.sequence__row select { flex: 0 0 5rem; }
+.sequence__text { flex: 1 1 12rem; }
+
+/* On a phone the term and its dropdown stack, so a long meaning never forces
+   the page to scroll sideways. */
+@media (max-width: 560px) {
+  .note__row, .match__row { display: grid; grid-template-columns: 1fr; gap: 0.35rem; }
+  .note__row label, .match__term { min-width: 0; }
+  .note__row input, .match__row select { width: 100%; }
+}
+
+.listening__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--line);
+}
+.listening__actions .btn { min-height: 48px; }
+
+.listening__score { margin-top: var(--sp-4); font-size: var(--step--1); }
+.listening__score:empty { display: none; }
+.listening__score.is-high { color: var(--ok-700); }
+.listening__score.is-mid { color: var(--ink-700); }
+.listening__score.is-low { color: var(--err-700); }
+
+.listening__transcript {
+  margin-top: var(--sp-5);
+  padding: var(--sp-4);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-alt);
+}
+.listening__transcript:focus { outline: 2px solid var(--navy-600); outline-offset: 2px; }
+.listening__transcript h4 { margin: 0 0 var(--sp-2); color: var(--navy-800); }
+.listening__transcript p { margin: 0 0 var(--sp-2); }
+
 @media print {
   .site-header,
   .site-footer,
