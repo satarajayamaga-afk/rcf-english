@@ -1,0 +1,170 @@
+{
+  "_readme": [
+    "LISTENING TESTS",
+    "",
+    "PLAYBACK. Each test is spoken by the browser's own speech engine unless it",
+    "has an \"audio\" field, in which case that recording is played instead:",
+    "",
+    "    \"audio\": \"downloads/listening/l07-1.mp3\"",
+    "",
+    "Adding that one field switches a test from browser speech to a recording.",
+    "Nothing else in the test changes, so MP3s can replace speech one test at a",
+    "time whenever recordings become available.",
+    "",
+    "MODES. Every test offers Practice (replay freely) and Formal test (the",
+    "recording plays twice only). The student chooses; the default is Practice.",
+    "",
+    "Fields for each test:",
+    "   id           used by <div data-listening=\"ID\"> on a page",
+    "   grade        6 to 11",
+    "   rate         base speaking rate. Lower is slower and clearer. The",
+    "                speed control multiplies this, so a Grade 6 passage stays",
+    "                slower than a Grade 11 one at every setting.",
+    "   instructions what the student is told to do",
+    "   script[]     speaker + text. Distinct speakers get distinct voices where",
+    "                the device offers more than one English voice.",
+    "   questions[]  see the six kinds below",
+    "",
+    "Question kinds:",
+    "   mcq        prompt, options[], answer (position from 0), explanation",
+    "   gap        prompt, answer (word or list of acceptable words), explanation",
+    "   short      prompt, answer (or list), explanation",
+    "   note       prompt, lines[] each with label and answer, explanation",
+    "   match      prompt, pairs[] with term and meaning, explanation",
+    "   sequence   prompt, items[] IN THE CORRECT ORDER, explanation",
+    "",
+    "The transcript is built from script[] and is written into the page only",
+    "after the student submits. After editing this file, run build.cmd."
+  ],
+
+  "tests": [
+    {
+      "id": "l06-1",
+      "grade": 6,
+      "rate": 0.85,
+      "title": "At the school office",
+      "description": "A short conversation between a student and the school clerk. Competency levels 1.1 and 1.2 (2026 syllabus): listens to a simple functional text and extracts the information conveyed.",
+      "instructions": "Listen to the conversation and answer the questions. Submit to see your score, the answers and the transcript.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a conversation at the school office." },
+        { "speaker": "Clerk", "text": "Good morning. How can I help you?" },
+        { "speaker": "Dilini", "text": "Good morning, madam. I have come to collect a form for the sports meet." },
+        { "speaker": "Clerk", "text": "Certainly. What is your name and your class?" },
+        { "speaker": "Dilini", "text": "My name is Dilini Perera. I am in Grade six B." },
+        { "speaker": "Clerk", "text": "Here is the form. Please bring it back before Friday, signed by your parent." },
+        { "speaker": "Dilini", "text": "Thank you very much, madam. Should I bring anything else?" },
+        { "speaker": "Clerk", "text": "Yes. Bring one photograph as well. A small one is enough." },
+        { "speaker": "Dilini", "text": "I will bring both on Thursday. Thank you." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "Why has Dilini come to the office?", "options": ["To pay a fee", "To collect a form for the sports meet", "To meet the principal", "To return a library book"], "answer": 1, "explanation": "She says she has come to collect a form for the sports meet." },
+        { "kind": "gap", "prompt": "Complete: Dilini is in Grade six ____.", "answer": ["B", "b"], "explanation": "She says she is in Grade six B." },
+        { "kind": "mcq", "prompt": "By when must the form be returned?", "options": ["Before Thursday", "Before Friday", "Before Monday", "The same day"], "answer": 1, "explanation": "The clerk says to bring it back before Friday." },
+        { "kind": "short", "prompt": "What must a parent do to the form?", "answer": ["sign it", "sign", "signed it", "sign the form"], "explanation": "The clerk says the form must be signed by a parent." },
+        { "kind": "note", "prompt": "Complete the notes about what Dilini must bring.", "lines": [ { "label": "Item 1:", "answer": ["form", "the form", "signed form"] }, { "label": "Item 2:", "answer": ["photograph", "a photograph", "photo", "one photograph"] } ], "explanation": "She must bring the signed form and one small photograph." },
+        { "kind": "mcq", "prompt": "On which day does Dilini say she will bring both things?", "options": ["Wednesday", "Thursday", "Friday", "Saturday"], "answer": 1, "explanation": "She says, 'I will bring both on Thursday.'" }
+      ]
+    },
+    {
+      "id": "l06-2",
+      "grade": 6,
+      "rate": 0.85,
+      "title": "A school announcement",
+      "description": "An announcement made over the school public address system. Competency levels 1.1 and 1.2 (2026 syllabus): listens to a simple functional text and uses its information.",
+      "instructions": "Listen to the announcement. Complete the notes and answer the questions, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to an announcement at a school." },
+        { "speaker": "Teacher", "text": "Good afternoon, students. Please listen carefully. The inter-house athletics meet will be held on the twenty second of September." },
+        { "speaker": "Teacher", "text": "It will begin at eight o'clock in the morning at the main playground." },
+        { "speaker": "Teacher", "text": "All students must wear their house colours and bring a water bottle and a cap." },
+        { "speaker": "Teacher", "text": "Students who wish to take part in the long jump should give their names to Mr Silva before Wednesday." },
+        { "speaker": "Teacher", "text": "Parents are welcome. Thank you." }
+      ],
+      "questions": [
+        { "kind": "note", "prompt": "Complete the notes about the athletics meet.", "lines": [ { "label": "Date:", "answer": ["22nd September", "22 September", "twenty second of September", "september 22", "22nd of september"] }, { "label": "Starting time:", "answer": ["8 o'clock", "eight o'clock", "8.00 a.m.", "8 am", "8.00", "eight"] }, { "label": "Place:", "answer": ["main playground", "the main playground", "playground"] } ], "explanation": "The announcement gives the date as the twenty second of September, the time as eight o'clock in the morning, and the place as the main playground." },
+        { "kind": "mcq", "prompt": "What must all students wear?", "options": ["School uniform", "Their house colours", "Sports shoes only", "A white shirt"], "answer": 1, "explanation": "The teacher says all students must wear their house colours." },
+        { "kind": "match", "prompt": "Match each item to the reason it is mentioned.", "pairs": [ { "term": "Water bottle", "meaning": "Something every student must bring" }, { "term": "Mr Silva", "meaning": "The teacher who takes names for the long jump" }, { "term": "Wednesday", "meaning": "The day by which names must be given" } ], "explanation": "Students must bring a water bottle and a cap; names for the long jump go to Mr Silva before Wednesday." },
+        { "kind": "mcq", "prompt": "Who is welcome to attend?", "options": ["Only students", "Only teachers", "Parents", "Nobody from outside"], "answer": 2, "explanation": "The announcement ends by saying parents are welcome." },
+        { "kind": "short", "prompt": "Apart from a water bottle, what else must students bring?", "answer": ["a cap", "cap", "hat"], "explanation": "The teacher says to bring a water bottle and a cap." },
+        { "kind": "mcq", "prompt": "Which event needs students to give their names in advance?", "options": ["The relay", "The long jump", "The high jump", "All events"], "answer": 1, "explanation": "Only the long jump is mentioned as needing names in advance." }
+      ]
+    },
+    {
+      "id": "l06-3",
+      "grade": 6,
+      "rate": 0.85,
+      "title": "Meet my family",
+      "description": "A student describes the people in her family. Competency levels 1.3 and 1.4 (2026 syllabus): listens to a simple informational text and uses the information conveyed.",
+      "instructions": "Listen to Sanduni describing her family, then answer the questions and submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a student talking about her family." },
+        { "speaker": "Sanduni", "text": "Hello. My name is Sanduni and I live in Kurunegala. There are five people in my family." },
+        { "speaker": "Sanduni", "text": "My father is a farmer. He grows vegetables and he leaves the house very early every morning." },
+        { "speaker": "Sanduni", "text": "My mother is a teacher at a primary school. She teaches small children and she loves singing." },
+        { "speaker": "Sanduni", "text": "My elder brother, Kasun, is seventeen. He plays cricket for his school team." },
+        { "speaker": "Sanduni", "text": "My little sister, Ruwani, is only four years old. She is always asking questions." },
+        { "speaker": "Sanduni", "text": "We also have a dog called Kalu. He sleeps under the mango tree all day." }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "How many people are there in Sanduni's family?", "options": ["Three", "Four", "Five", "Six"], "answer": 2, "explanation": "She says there are five people in her family. Kalu is a dog, not a person." },
+        { "kind": "match", "prompt": "Match each person to what is said about them.", "pairs": [ { "term": "Father", "meaning": "Grows vegetables" }, { "term": "Mother", "meaning": "Teaches small children" }, { "term": "Kasun", "meaning": "Plays cricket for his school" }, { "term": "Ruwani", "meaning": "Is always asking questions" } ], "explanation": "Each family member is given one clear detail in the passage." },
+        { "kind": "gap", "prompt": "Complete: Sanduni lives in ____.", "answer": ["Kurunegala", "kurunegala"], "explanation": "She says she lives in Kurunegala." },
+        { "kind": "short", "prompt": "How old is Ruwani?", "answer": ["four", "4", "four years old", "4 years old"], "explanation": "Sanduni says her little sister is only four years old." },
+        { "kind": "mcq", "prompt": "Where does the dog sleep?", "options": ["Inside the house", "Under the mango tree", "On the road", "In the garden shed"], "answer": 1, "explanation": "She says Kalu sleeps under the mango tree all day." },
+        { "kind": "short", "prompt": "What does Sanduni's mother love doing?", "answer": ["singing", "sing", "she loves singing"], "explanation": "The passage says her mother loves singing." }
+      ]
+    },
+    {
+      "id": "l06-4",
+      "grade": 6,
+      "rate": 0.85,
+      "title": "Getting ready for a trip",
+      "description": "A mother and son plan what to pack. Competency levels 1.1 and 1.2 (2026 syllabus): listens to a simple functional text and uses its information creatively.",
+      "instructions": "Listen to the conversation. Put the events in order, complete the notes, then submit.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a mother and her son getting ready for a trip." },
+        { "speaker": "Mother", "text": "Nuwan, we are leaving for Anuradhapura tomorrow. Have you packed your bag?" },
+        { "speaker": "Nuwan", "text": "Not yet, amma. What should I take?" },
+        { "speaker": "Mother", "text": "First, put in two shirts and two pairs of trousers. Then add your toothbrush and a towel." },
+        { "speaker": "Nuwan", "text": "Can I take my camera?" },
+        { "speaker": "Mother", "text": "Yes, but pack it last, at the top, so that it does not get crushed." },
+        { "speaker": "Nuwan", "text": "What time will we leave?" },
+        { "speaker": "Mother", "text": "The bus goes at six in the morning, so we must wake up at half past four." },
+        { "speaker": "Nuwan", "text": "That is very early. I will go to bed straight after dinner." }
+      ],
+      "questions": [
+        { "kind": "sequence", "prompt": "Put the packing steps in the order the mother gives them.", "items": ["Shirts and trousers", "Toothbrush and towel", "Camera"], "explanation": "She says to put in clothes first, then the toothbrush and towel, and to pack the camera last." },
+        { "kind": "note", "prompt": "Complete the notes about the journey.", "lines": [ { "label": "Destination:", "answer": ["Anuradhapura", "anuradhapura"] }, { "label": "Bus leaves at:", "answer": ["six", "6", "6 a.m.", "six in the morning", "6.00", "six o'clock"] }, { "label": "Wake up at:", "answer": ["half past four", "4.30", "4:30", "half past 4"] } ], "explanation": "They are going to Anuradhapura; the bus leaves at six and they must wake at half past four." },
+        { "kind": "mcq", "prompt": "Why must the camera be packed at the top?", "options": ["So it is easy to find", "So it does not get crushed", "Because the bag is full", "Because it is heavy"], "answer": 1, "explanation": "The mother says to pack it last, at the top, so that it does not get crushed." },
+        { "kind": "gap", "prompt": "Complete: Nuwan must pack two shirts and two pairs of ____.", "answer": ["trousers"], "explanation": "The mother says two shirts and two pairs of trousers." },
+        { "kind": "short", "prompt": "What does Nuwan say he will do straight after dinner?", "answer": ["go to bed", "sleep", "go to sleep", "bed"], "explanation": "He says he will go to bed straight after dinner because they must wake up early." },
+        { "kind": "mcq", "prompt": "Has Nuwan packed his bag when the conversation begins?", "options": ["Yes, completely", "Yes, but only partly", "No, not yet", "He has lost his bag"], "answer": 2, "explanation": "He answers, 'Not yet, amma.'" }
+      ]
+    },
+    {
+      "id": "l06-5",
+      "grade": 6,
+      "rate": 0.85,
+      "title": "The lost kitten",
+      "description": "A short story read aloud. Competency levels 1.5 and 1.6 (2026 syllabus): listens to a simple literary text and uses its information creatively.",
+      "instructions": "Listen to the story, then answer the questions and submit to see your score and the transcript.",
+      "script": [
+        { "speaker": "Narrator", "text": "Listen to a short story." },
+        { "speaker": "Narrator", "text": "One rainy evening, Tharu heard a small sound near the gate. It was thin and high, like a whistle." },
+        { "speaker": "Narrator", "text": "She took an umbrella and went out. Under the hedge, wet and shivering, sat a tiny grey kitten." },
+        { "speaker": "Narrator", "text": "Tharu carried it inside and dried it with an old cloth. Her mother warmed a little milk." },
+        { "speaker": "Narrator", "text": "The kitten drank everything and then fell asleep in Tharu's lap." },
+        { "speaker": "Narrator", "text": "The next morning, a neighbour knocked at the door. She was looking for her kitten, which had run away in the storm." },
+        { "speaker": "Narrator", "text": "Tharu was sad to give it back. But the neighbour smiled and said, 'You may visit her whenever you like.'" }
+      ],
+      "questions": [
+        { "kind": "mcq", "prompt": "What was the weather like when Tharu heard the sound?", "options": ["Hot and dry", "Rainy", "Windy but clear", "Very cold"], "answer": 1, "explanation": "The story begins on a rainy evening." },
+        { "kind": "sequence", "prompt": "Put the events in the order they happen in the story.", "items": ["Tharu hears a sound near the gate", "She finds a kitten under the hedge", "Her mother warms some milk", "A neighbour knocks at the door"], "explanation": "The story moves from hearing the sound, to finding the kitten, to the milk, and then to the next morning." },
+        { "kind": "short", "prompt": "What colour was the kitten?", "answer": ["grey", "gray"], "explanation": "The story says it was a tiny grey kitten." },
+        { "kind": "mcq", "prompt": "How did Tharu feel when she had to give the kitten back?", "options": ["Angry", "Sad", "Relieved", "Frightened"], "answer": 1, "explanation": "The story says Tharu was sad to give it back." },
+        { "kind": "mcq", "prompt": "Why had the kitten run away?", "options": ["It was hungry", "It was frightened by the storm", "It was following Tharu", "The story does not say"], "answer": 1, "explanation": "The neighbour says her kitten had run away in the storm." },
+        { "kind": "gap", "prompt": "Complete: The neighbour said Tharu may ____ the kitten whenever she likes.", "answer": ["visit", "see"], "explanation": "The neighbour smiles and says, 'You may visit her whenever you like.'" }
+      ]
+    }
+  ]
+}
