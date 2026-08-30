@@ -1970,6 +1970,38 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 
 
 /* ==========================================================================
+   Grade resources list
+   Built from data/resources.json. One row per approved resource, filtered by
+   grade, publication status and the signed-out access check.
+   ========================================================================== */
+
+.gres { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+.gres__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin: 0;
+  padding: var(--sp-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.gres__main { flex: 1 1 18rem; min-width: 0; }
+.gres__title { margin: 0 0 var(--sp-1); font-size: var(--step-0); color: var(--navy-800); }
+.gres__meta { margin: 0; font-size: var(--step--1); color: var(--ink-700); }
+.gres__source { margin: var(--sp-1) 0 0; font-size: var(--step--1); color: var(--ink-500); }
+.gres__go { margin: 0; flex: 0 0 auto; }
+.gres__go .btn { min-height: 44px; }
+
+/* On a phone the row stacks and the button spans the full width. */
+@media (max-width: 560px) {
+  .gres__item { display: grid; grid-template-columns: 1fr; }
+  .gres__go, .gres__go .btn { width: 100%; text-align: center; }
+}
+
+/* ==========================================================================
    Listening tests
    The passage is spoken by the browser's own speech engine, so there is no
    audio element to style. The controls below are ordinary buttons.

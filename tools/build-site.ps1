@@ -751,6 +751,52 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'grade-resources' {
+            # Reads data/resources.json and shows only entries that are published,
+            # match this page's grade, and have passed the signed-out access check.
+            # Nothing is hard-coded: a future approved entry appears automatically.
+            $want = [string](P $block 'grade')
+            $found = @()
+            foreach ($r in $resources) {
+                if ((P $r 'published' $false) -ne $true) { continue }
+                if ([string](P $r 'anonymousAccess') -ne 'verified') { continue }
+                if ([string](P $r 'level') -ne $want) { continue }
+                $found += $r
+            }
+            # A grade with no approved resources shows no section at all.
+            if ($found.Count -eq 0) { return '' }
+
+            $labels = @{
+                'textbook' = "Pupil's Book"; 'teachers-guide' = "Teacher's Guide"
+                'study-pack' = 'Study pack'; 'scheme-of-work' = 'Scheme of work'
+                'practice-paper' = 'Practice papers'; 'past-paper' = 'Past paper'
+            }
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<ul class="gres">'
+            foreach ($r in $found) {
+                $t = [string](P $r 'type')
+                $typeLabel = if ($labels.ContainsKey($t)) { $labels[$t] } else { $t }
+                $html += '<li class="gres__item">'
+                $html += '<div class="gres__main"><h3 class="gres__title">' + (E ([string](P $r 'title'))) + '</h3>'
+                $meta = @()
+                if ($typeLabel) { $meta += (E $typeLabel) }
+                # Year and term are shown only when the data actually carries them.
+                $yr = [string](P $r 'year'); $tm = [string](P $r 'term')
+                if ($yr -and $tm) { $meta += (E ($tm.Substring(0,1).ToUpper() + $tm.Substring(1) + ' term ' + $yr)) }
+                elseif ($yr) { $meta += (E $yr) }
+                if ($meta.Count) { $html += '<p class="gres__meta">' + ($meta -join ' &middot; ') + '</p>' }
+                $src = [string](P $r 'author')
+                if ($src) { $html += '<p class="gres__source">' + (E $src) + '</p>' }
+                $html += '</div>'
+                $url = [string](P $r 'url')
+                if ($url) {
+                    $html += '<p class="gres__go"><a class="btn btn--sm btn--outline" href="' + (E $url) + '" rel="noopener">View or download</a></p>'
+                }
+                $html += '</li>'
+            }
+            return $html + '</ul></div></section>'
+        }
+
         'listening' {
             $html = (SectionOpen $block) + (SectionHead $block)
             $html += '<noscript><div class="noscript-note"><p class="mb-0">The listening tests need JavaScript, because the passage is read aloud by the browser itself. Please switch JavaScript on, or ask your teacher for the printed transcript.</p></div></noscript>'
