@@ -23,9 +23,9 @@
     {
       "slug": "primary-english",
       "title": "Primary English",
-      "metaTitle": "Primary English | Alphabet, reading, poems and games | RCF English",
-      "description": "Primary English for children: alphabet practice, classroom and home activities, poems, short reading comprehensions, interactive games, and English-medium Grade 5 Scholarship practice.",
-      "keywords": "primary English, alphabet practice, children English, reading comprehension for kids, English poems for children, grade 5 scholarship English, Sri Lanka",
+      "metaTitle": "Primary English | Grade 1 to Grade 5 | RCF English",
+      "description": "Primary English for Sri Lankan schools, Grade 1 to Grade 5, following the primary English syllabus: alphabet practice, activities, poems, reading, games and Grade 5 Scholarship practice.",
+      "keywords": "primary English Sri Lanka, grade 1 English, grade 2 English, grade 3 English, grade 4 English, grade 5 English, alphabet practice, grade 5 scholarship English",
       "kicker": "For younger learners",
       "kind": "page",
       "schema": "LearningResource",
@@ -58,8 +58,26 @@
         },
         {
           "type": "cards",
+          "heading": "Choose a grade",
+          "eyebrow": "Grade 1 to Grade 5",
+          "intro": ["Each grade follows the primary English syllabus. If you would rather browse by activity, the section below does that instead - both routes reach the same material."],
+          "columns": "3",
+          "items": [
+            { "title": "Grade 1", "icon": "G1", "text": ["First words and sounds.", "**Resources in preparation.**"] },
+            { "title": "Grade 2", "icon": "G2", "text": ["Reading short sentences.", "**Resources in preparation.**"] },
+            { "title": "Grade 3", "url": "primary-english/grade-3/", "icon": "G3", "more": "Open", "text": ["Alphabet sounds, words of three or four letters, and sentences of up to five words."] },
+            { "title": "Grade 4", "url": "primary-english/grade-4/", "icon": "G4", "more": "Open", "text": ["Pronouns, numbers to 50, and writing with capital letters and full stops."] },
+            { "title": "Grade 5", "url": "primary-english/grade-5/", "icon": "G5", "more": "Open", "text": ["Three tenses, everyday texts, and writing accurate simple sentences."] }
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "cards",
           "id": "sections",
-          "heading": "What is in this section",
+          "heading": "Browse by skill",
           "variant": "tint",
           "columns": "3",
           "items": [

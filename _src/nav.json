@@ -9,8 +9,13 @@
       "url": "primary-english/",
       "summary": "English for younger children: the alphabet, first words, poems, short reading passages, games, and Grade 5 Scholarship language practice.",
       "groups": [
-        { "title": "Start here", "links": [
+        { "title": "By grade", "links": [
           { "label": "Overview", "url": "primary-english/" },
+          { "label": "Grade 3", "url": "primary-english/grade-3/" },
+          { "label": "Grade 4", "url": "primary-english/grade-4/" },
+          { "label": "Grade 5", "url": "primary-english/grade-5/" }
+        ]},
+        { "title": "By activity", "links": [
           { "label": "Alphabet Practice", "url": "primary-english/alphabet/" }
         ]},
         { "title": "Practice and play", "links": [
@@ -129,6 +134,37 @@
       ]
     },
 
+    {
+      "label": "Practical English",
+      "url": "practical-english/",
+      "summary": "Everyday, spoken and workplace English for adults and independent learners. Not an examination subject.",
+      "groups": [
+        { "title": "Foundations", "links": [
+          { "label": "Overview", "url": "practical-english/" },
+          { "label": "Practical Grammar", "url": "practical-english/practical-grammar/" },
+          { "label": "Vocabulary", "url": "practical-english/vocabulary/" },
+          { "label": "Pronunciation", "url": "practical-english/pronunciation/" },
+          { "label": "Common Mistakes", "url": "practical-english/common-mistakes/" }
+        ]},
+        { "title": "The four skills", "links": [
+          { "label": "Reading", "url": "practical-english/reading/" },
+          { "label": "Writing", "url": "practical-english/writing/" },
+          { "label": "Listening", "url": "practical-english/listening/" },
+          { "label": "Speaking", "url": "practical-english/speaking/" }
+        ]},
+        { "title": "English in use", "links": [
+          { "label": "Everyday English", "url": "practical-english/everyday-english/" },
+          { "label": "Spoken English", "url": "practical-english/spoken-english/" },
+          { "label": "Practical Conversations", "url": "practical-english/practical-conversations/" },
+          { "label": "Workplace English", "url": "practical-english/workplace-english/" },
+          { "label": "English for Adults", "url": "practical-english/english-for-adults/" }
+        ]},
+        { "title": "Practice", "links": [
+          { "label": "Self-Assessment", "url": "practical-english/self-assessment/" },
+          { "label": "Interactive Practice", "url": "practical-english/interactive-practice/" }
+        ]}
+      ]
+    },
     {
       "label": "A/L Literature",
       "url": "al-literature/",
@@ -262,30 +298,6 @@
       "_headerOnly": "On a desktop this lives as its own button in the header bar, so it is left out of the row of sections below to keep those on one line. On a telephone the header button is hidden, so it does appear in the slide-out menu. Either way there is exactly one route to it.",
       "headerOnly": true
     },
-
-    {
-      "label": "About Us",
-      "url": "about/",
-      "summary": "Who runs RCF English, the qualifications behind it and how its parts fit together.",
-      "groups": [
-        { "title": "About the platform", "links": [
-          { "label": "About RCF English", "url": "about/" },
-          { "label": "Our Educational Mission", "url": "about/mission/" },
-          { "label": "Our Teaching Approach", "url": "about/teaching-approach/" }
-        ]},
-        { "title": "About the founder", "links": [
-          { "label": "Our Founder", "url": "about/founder/" },
-          { "label": "Academic and Professional Background", "url": "about/background/" },
-          { "label": "Our Online Communities", "url": "about/online-communities/" }
-        ]},
-        { "title": "Our services", "links": [
-          { "label": "RCF Online Academy", "url": "rcf-classes/" },
-          { "label": "RCF Publications", "url": "about/rcf-publications/" },
-          { "label": "Contact Us", "url": "contact/" }
-        ]}
-      ]
-    },
-
     {
       "label": "More",
       "url": "premium-resources/",
@@ -302,11 +314,20 @@
         ]},
         { "title": "Advertising", "links": [
           { "label": "Special Offers", "url": "promotions/", "note": "Sponsored tuition and course listings" }
+        ]},
+        { "title": "About RCF English", "links": [
+          { "label": "About RCF English", "url": "about/" },
+          { "label": "Our Educational Mission", "url": "about/mission/" },
+          { "label": "Our Teaching Approach", "url": "about/teaching-approach/" },
+          { "label": "Our Founder", "url": "about/founder/" },
+          { "label": "Academic and Professional Background", "url": "about/background/" },
+          { "label": "Our Online Communities", "url": "about/online-communities/" }
+        ]},
+        { "title": "Get in touch", "links": [
+          { "label": "Contact Us", "url": "contact/" }
         ]}
       ]
-    },
-
-    { "label": "Contact", "url": "contact/" }
+    }
   ],
 
   "footer": [

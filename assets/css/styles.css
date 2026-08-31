@@ -1473,6 +1473,9 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
     font-weight: 700;
     color: var(--navy-800);
   }
+  /* The value must be a single flex item; without this wrapper each inline
+     <strong> or <em> became its own column and could not wrap. */
+  table.stacked td > .td__v { flex: 1 1 auto; min-width: 0; }
 }
 
 /* 11. Filters, search and result lists ----------------------------------- */
@@ -2105,27 +2108,36 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 
 
 /* ==========================================================================
-   Portrait: photograph beside an introduction
-   Stacked and centred on a phone, two columns from 720px. The image keeps
-   its natural proportions; nothing is cropped by CSS.
+   Portrait: a small square photograph with the introduction wrapping round it
+   Centred above the text on a phone; floated to the upper right from 720px.
+   The source is square, so the square frame crops nothing.
    ========================================================================== */
 
-.portrait { display: grid; grid-template-columns: 1fr; gap: var(--sp-5); align-items: center; }
+.portrait { display: block; }
+.portrait::after { content: ""; display: table; clear: both; }
+
 @media (min-width: 720px) {
-  /* The photograph is prominent but does not dominate: it takes a fixed
-     comfortable column while the text takes the rest. */
-  .portrait { grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: var(--sp-6); align-items: center; }
+  /* Small square portrait at the upper right, with the biography
+     wrapping down its left and continuing underneath. */
+  .portrait__figure {
+    float: right;
+    width: 144px;
+    margin: 0 0 var(--sp-4) var(--sp-5);
+  }
 }
 
-.portrait__figure { margin: 0; justify-self: center; max-width: 17rem; width: 100%; }
+.portrait__figure { margin: 0 auto var(--sp-4); width: 144px; max-width: 100%; }
 .portrait__img {
   display: block;
-  width: 100%;
-  height: auto;              /* natural proportions, never stretched */
+  width: 144px;
+  height: 144px;
+  /* The source photograph is 800x800, already square, so a square
+     frame crops nothing: the full face, head and shoulders remain. */
+  object-fit: cover;
   border-radius: var(--radius-sm);
   background: var(--surface);
   border: 1px solid var(--line);
-  box-shadow: 0 2px 10px rgba(11, 28, 52, 0.10);
+  box-shadow: 0 1px 4px rgba(11, 28, 52, 0.10);
 }
 .portrait__caption {
   margin: var(--sp-2) 0 0;
@@ -2138,13 +2150,14 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .portrait__role { margin: 0 0 var(--sp-3); font-size: var(--step--1); color: var(--gold-800); font-weight: 600; }
 .portrait__body p { margin: 0 0 var(--sp-3); }
 .portrait__body p:last-child { margin-bottom: 0; }
-.portrait__go { margin-top: var(--sp-3); }
+.portrait__go { margin-top: var(--sp-3); clear: both; }
 .portrait__go .btn { min-height: 44px; }
 
 @media (max-width: 719px) {
-  .portrait { text-align: center; }
-  .portrait__body { text-align: left; }
-  .portrait__figure { max-width: 14rem; }
+  /* No wrapping on a narrow screen: the portrait sits centred above
+     the biography so the text keeps a full-width measure. */
+  .portrait__figure { float: none; width: 132px; margin: 0 auto var(--sp-4); }
+  .portrait__img { width: 132px; height: 132px; }
 }
 
 /* ==========================================================================
@@ -2668,23 +2681,16 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .ad--offer { border-left: 3px solid var(--navy-600); }
 
 /* --- Destination cards carrying a photograph ------------------------------
-   Used only where a real photograph has been supplied. The image sits full
-   bleed at the top of the card, so the padding moves onto the text instead.
-   The card stays one flex column, so a pair of them still match in height
-   however long the two descriptions are. */
-.dcard--photo {
-  padding: 0;
-  overflow: hidden;
-}
-.dcard--photo > *:not(.dcard__media) {
-  padding-inline: var(--sp-5);
-}
-.dcard--photo > .dcard__title { padding-top: var(--sp-4); }
-.dcard--photo > .dcard__more { padding-bottom: var(--sp-5); margin-top: auto; }
-
+   Illustrations stay small and purposeful: a 96x72 thumbnail above the
+   title, never a banner across the card or across the page. 96x72 is 4:3,
+   the proportion of the supplied photographs, so nothing is cropped. */
 .dcard__media {
   display: block;
-  aspect-ratio: 4 / 3;
+  width: 96px;
+  height: 72px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
   background: var(--navy-900);
 }
 .dcard__media img {
@@ -2697,9 +2703,92 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
    so the picture must not swallow the click. */
 .dcard--photo .dcard__media { pointer-events: none; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .dcard--photo .dcard__media img { transition: transform 0.25s ease; }
-  @media (hover: hover) {
-    .dcard--photo:hover .dcard__media img { transform: scale(1.03); }
+
+/* ==========================================================================
+   Advertisement placeholder
+   A reserved space, not an advertisement. There is no advertising code in
+   this project. It is styled to be unmistakably NOT a learning card: dashed
+   rather than solid, hatched rather than coloured, no shadow, no hover lift,
+   no arrow, and not clickable. It sits between major sections only.
+   ========================================================================== */
+
+.adslot {
+  display: grid;
+  place-items: center;
+  margin: var(--sp-6) 0;
+  border: 1px dashed #b9c2d0;
+  border-radius: var(--radius-sm);
+  background: repeating-linear-gradient(45deg,
+    #f7f9fc, #f7f9fc 10px, #f2f5fa 10px, #f2f5fa 20px);
+  min-height: 100px;
+}
+@media (min-width: 720px) {
+  .adslot--between { min-height: 90px; }
+}
+.adslot__label {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* Must clear 4.5:1 against the hatched ground. #8a97a8 measured 2.82:1. */
+  color: var(--ink-500);
+}
+/* Never wider than the screen, and never breaking out of its container. */
+.adslot { max-width: 100%; }
+/* A card for something genuinely not ready yet. It stays visible so the
+   section reads as complete, but it is not a link and offers no affordance
+   suggesting it can be opened. Muted rather than hidden. */
+.card--soon {
+  background: var(--surface-alt);
+  border-style: dashed;
+  cursor: default;
+}
+.card--soon h3 { color: var(--ink-700); }
+.card--soon .card__icon { background: var(--navy-100); color: var(--ink-700); }
+.card--soon .card__note {
+  display: inline-block;
+  margin-top: var(--sp-2);
+  font-size: var(--step--1);
+  font-weight: 650;
+  color: var(--ink-700);
+}
+
+.gres__warn { margin: 0.35rem 0 0; }
+
+/* Text for screen readers only. Not display:none, which would hide it from
+   assistive technology too. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Stacked tables on narrow phones ---------------------------------------- */
+
+/* Between 600px and 719px the 42% label column still leaves a readable value.
+   Below 600px it does not - on a 390px phone the value is squeezed into a
+   ribbon three or four words wide. Put the label above the value instead and
+   give the value the whole width of the card. The desktop table is untouched;
+   this lives inside the stacked breakpoint only. */
+@media (max-width: 599px) {
+  table.stacked td {
+    display: block;
+    padding: 0.7rem 0.9rem;
   }
+  table.stacked td::before {
+    display: block;
+    flex: none;
+    margin-bottom: 0.2rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--ink-500);
+  }
+  table.stacked td > .td__v { display: block; }
 }

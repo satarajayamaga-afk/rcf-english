@@ -1,11 +1,11 @@
 {
   "pages": [
     {
-      "slug": "general-english",
-      "title": "General English",
-      "metaTitle": "General English | Practical English for life and work | RCF English",
-      "description": "Practical General English for adults and independent learners: everyday grammar, vocabulary, pronunciation, reading, writing, listening, speaking, workplace English and self-assessment.",
-      "keywords": "General English, practical English, adult English learners, spoken English, workplace English, everyday English",
+      "slug": "practical-english",
+      "title": "Practical English",
+      "metaTitle": "Practical English | Everyday, spoken and workplace English | RCF English",
+      "description": "Practical English for adults and independent learners: everyday grammar, vocabulary, pronunciation, reading, writing, listening, speaking, workplace English and self-assessment.",
+      "keywords": "practical English, adult English learners, spoken English, workplace English, everyday English, English for adults",
       "kicker": "For everyday life",
       "kind": "page",
       "schema": "LearningResource",
@@ -13,9 +13,9 @@
       "hero": {
         "text": "English for the situations you actually meet: at the counter, on the telephone, at an interview, in an email, with a stranger asking for directions. No examination, no marks — just English you can use.",
         "buttons": [
-          { "label": "Start with practical grammar", "url": "general-english/practical-grammar/", "style": "btn--accent" },
-          { "label": "Check your level", "url": "general-english/self-assessment/", "style": "btn--ghost-light" },
-          { "label": "Interactive practice", "url": "general-english/interactive-practice/", "style": "btn--ghost-light" }
+          { "label": "Start with practical grammar", "url": "practical-english/practical-grammar/", "style": "btn--accent" },
+          { "label": "Check your level", "url": "practical-english/self-assessment/", "style": "btn--ghost-light" },
+          { "label": "Interactive practice", "url": "practical-english/interactive-practice/", "style": "btn--ghost-light" }
         ]
       },
       "blocks": [
@@ -42,12 +42,12 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Practical Grammar", "url": "general-english/practical-grammar/", "more": "Open", "text": ["Only the grammar you need in order to say what you mean, explained without technical terms."] },
-            { "title": "Vocabulary", "url": "general-english/vocabulary/", "more": "Open", "text": ["Words for everyday life, the workplace and travel, and a method for remembering them."] },
-            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open", "text": ["Being understood: sounds, word stress and the rhythm of English sentences."] },
-            { "title": "Common Mistakes", "url": "general-english/common-mistakes/", "more": "Open", "text": ["The errors adult learners make most often, with the correct form beside each."] },
-            { "title": "Self-Assessment", "url": "general-english/self-assessment/", "more": "Open", "text": ["Find out honestly what you can already do, and what to work on next."] },
-            { "title": "Interactive Practice", "url": "general-english/interactive-practice/", "more": "Open", "text": ["Activities that mark themselves and explain every answer."] }
+            { "title": "Practical Grammar", "url": "practical-english/practical-grammar/", "more": "Open", "text": ["Only the grammar you need in order to say what you mean, explained without technical terms."] },
+            { "title": "Vocabulary", "url": "practical-english/vocabulary/", "more": "Open", "text": ["Words for everyday life, the workplace and travel, and a method for remembering them."] },
+            { "title": "Pronunciation", "url": "practical-english/pronunciation/", "more": "Open", "text": ["Being understood: sounds, word stress and the rhythm of English sentences."] },
+            { "title": "Common Mistakes", "url": "practical-english/common-mistakes/", "more": "Open", "text": ["The errors adult learners make most often, with the correct form beside each."] },
+            { "title": "Self-Assessment", "url": "practical-english/self-assessment/", "more": "Open", "text": ["Find out honestly what you can already do, and what to work on next."] },
+            { "title": "Interactive Practice", "url": "practical-english/interactive-practice/", "more": "Open", "text": ["Activities that mark themselves and explain every answer."] }
           ]
         },
         {
@@ -55,10 +55,10 @@
           "heading": "The four skills",
           "columns": "4",
           "items": [
-            { "title": "Reading", "url": "general-english/reading/", "more": "Open", "text": ["Reading for meaning without stopping at every word."] },
-            { "title": "Writing", "url": "general-english/writing/", "more": "Open", "text": ["Messages, emails, forms and short letters that get a reply."] },
-            { "title": "Listening", "url": "general-english/listening/", "more": "Open", "text": ["Understanding real speech, at real speed."] },
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open", "text": ["Getting from understanding to speaking — the hardest step, and the most rewarding."] }
+            { "title": "Reading", "url": "practical-english/reading/", "more": "Open", "text": ["Reading for meaning without stopping at every word."] },
+            { "title": "Writing", "url": "practical-english/writing/", "more": "Open", "text": ["Messages, emails, forms and short letters that get a reply."] },
+            { "title": "Listening", "url": "practical-english/listening/", "more": "Open", "text": ["Understanding real speech, at real speed."] },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open", "text": ["Getting from understanding to speaking — the hardest step, and the most rewarding."] }
           ]
         },
         {
@@ -67,12 +67,12 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open", "text": ["Shops, buses, appointments, directions, telephone calls and the small exchanges of daily life."] },
-            { "title": "Spoken English", "url": "general-english/spoken-english/", "more": "Open", "text": ["Fluency, hesitation, repair phrases and how to keep a conversation going."] },
-            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open", "text": ["Interviews, meetings, emails, telephone calls and asking for what you need at work."] },
-            { "title": "English for Adults", "url": "general-english/english-for-adults/", "more": "Open", "text": ["How adults actually learn a language, and how to make time for it in a working week."] },
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open", "text": ["Model conversations for the situations that come up most often."] },
-            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses", "text": ["The Academy teaches elocution diploma preparation and English Literature. These General English pages are free to use whether or not you take a course."] }
+            { "title": "Everyday English", "url": "practical-english/everyday-english/", "more": "Open", "text": ["Shops, buses, appointments, directions, telephone calls and the small exchanges of daily life."] },
+            { "title": "Spoken English", "url": "practical-english/spoken-english/", "more": "Open", "text": ["Fluency, hesitation, repair phrases and how to keep a conversation going."] },
+            { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Open", "text": ["Interviews, meetings, emails, telephone calls and asking for what you need at work."] },
+            { "title": "English for Adults", "url": "practical-english/english-for-adults/", "more": "Open", "text": ["How adults actually learn a language, and how to make time for it in a working week."] },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open", "text": ["Model conversations for the situations that come up most often."] },
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses", "text": ["The Academy teaches elocution diploma preparation and English Literature. These Practical English pages are free to use whether or not you take a course."] }
           ]
         },
         {
@@ -94,16 +94,16 @@
     },
 
     {
-      "slug": "general-english/practical-grammar",
+      "slug": "practical-english/practical-grammar",
       "title": "Practical Grammar",
       "description": "The grammar adult learners actually need, explained without technical terms: word order, tenses in everyday use, questions, negatives, articles and useful patterns.",
       "keywords": "practical grammar, everyday grammar, English for adults, word order, questions",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
       "schema": "LearningResource",
       "scripts": ["quiz"],
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "You do not need all of English grammar. You need the part that stops people understanding you — and that part is smaller than you think." },
       "blocks": [
         {
@@ -193,25 +193,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Common Mistakes", "url": "general-english/common-mistakes/", "more": "Open" },
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" }
+            { "title": "Common Mistakes", "url": "practical-english/common-mistakes/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" }
           ]
         }
       ]
     },
 
     {
-      "slug": "general-english/vocabulary",
+      "slug": "practical-english/vocabulary",
       "title": "Vocabulary",
-      "description": "Everyday, workplace and travel vocabulary for General English, with a practical method for learning words so that they stay and can actually be used.",
+      "description": "Everyday, workplace and travel vocabulary for practical English, with a practical method for learning words so that they stay and can actually be used.",
       "keywords": "English vocabulary, everyday words, workplace vocabulary, learning words",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
       "schema": "LearningResource",
       "scripts": ["quiz"],
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Two thousand words used confidently will take you further than ten thousand words recognised vaguely." },
       "blocks": [
         {
@@ -279,24 +279,24 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
-            { "title": "Reading", "url": "general-english/reading/", "more": "Open" },
-            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" }
+            { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Open" },
+            { "title": "Reading", "url": "practical-english/reading/", "more": "Open" },
+            { "title": "Everyday English", "url": "practical-english/everyday-english/", "more": "Open" }
           ]
         }
       ]
     },
 
     {
-      "slug": "general-english/pronunciation",
+      "slug": "practical-english/pronunciation",
       "title": "Pronunciation",
       "description": "Practical English pronunciation for being understood: word stress, sentence rhythm, difficult sounds and why an accent is not a problem.",
       "keywords": "English pronunciation, word stress, sentence stress, accent, being understood",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "The goal is not to sound English. The goal is to be understood the first time, without repeating yourself." },
       "blocks": [
         {
@@ -373,8 +373,8 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
-            { "title": "Listening", "url": "general-english/listening/", "more": "Open" },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" },
+            { "title": "Listening", "url": "practical-english/listening/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
         }
@@ -382,15 +382,15 @@
     },
 
     {
-      "slug": "general-english/common-mistakes",
+      "slug": "practical-english/common-mistakes",
       "title": "Common Mistakes",
-      "description": "The English mistakes adult and General English learners make most often, each shown wrong and right with the reason, including mistakes that are not really mistakes.",
+      "description": "The English mistakes adult and practical English learners make most often, each shown wrong and right with the reason, including mistakes that are not really mistakes.",
       "keywords": "common English mistakes, adult learners, errors, corrections",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
       "scripts": ["quiz"],
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Fix the ones that stop people understanding you. Fix the rest later, or never." },
       "blocks": [
         {
@@ -454,9 +454,9 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Practical Grammar", "url": "general-english/practical-grammar/", "more": "Open" },
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
-            { "title": "Self-Assessment", "url": "general-english/self-assessment/", "more": "Open" }
+            { "title": "Practical Grammar", "url": "practical-english/practical-grammar/", "more": "Open" },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" },
+            { "title": "Self-Assessment", "url": "practical-english/self-assessment/", "more": "Open" }
           ]
         }
       ]

@@ -1,14 +1,14 @@
 {
   "pages": [
     {
-      "slug": "general-english/reading",
+      "slug": "practical-english/reading",
       "title": "Reading",
       "description": "How to read English for meaning without stopping at every word: choosing the right material, three reading speeds, and reading for pleasure as language practice.",
       "keywords": "reading in English, reading skills, extensive reading, skimming, scanning",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Reading is the cheapest, quietest and most effective English practice there is — and the one most learners abandon after two pages." },
       "blocks": [
         {
@@ -65,23 +65,23 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Vocabulary", "url": "general-english/vocabulary/", "more": "Open" },
-            { "title": "Writing", "url": "general-english/writing/", "more": "Open" },
-            { "title": "Interactive practice", "url": "general-english/interactive-practice/", "more": "Open" }
+            { "title": "Vocabulary", "url": "practical-english/vocabulary/", "more": "Open" },
+            { "title": "Writing", "url": "practical-english/writing/", "more": "Open" },
+            { "title": "Interactive practice", "url": "practical-english/interactive-practice/", "more": "Open" }
           ]
         }
       ]
     },
 
     {
-      "slug": "general-english/writing",
+      "slug": "practical-english/writing",
       "title": "Writing",
       "description": "Practical English writing for adults: messages, emails, forms, complaints and short letters, with the plain-writing rules that make a reply more likely.",
       "keywords": "English writing, emails, messages, forms, complaints, practical writing",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Most adult writing in English is short: a message, an email, a form, a complaint. Short writing has its own rules, and they are easy to learn." },
       "blocks": [
         {
@@ -158,8 +158,8 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
+            { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
             { "title": "O/L email and letter lessons", "url": "ol-english/emails/", "more": "Open" }
           ]
         }
@@ -167,14 +167,14 @@
     },
 
     {
-      "slug": "general-english/listening",
+      "slug": "practical-english/listening",
       "title": "Listening",
       "description": "How to understand spoken English at real speed: why fast speech is hard, what to listen for, and a practical daily listening routine.",
       "keywords": "listening skills, understanding spoken English, connected speech, listening practice",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "\"They speak too fast\" is almost never the real problem. The real problem is that spoken English does not sound like written English." },
       "blocks": [
         {
@@ -240,23 +240,23 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
-            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open" },
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" }
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" },
+            { "title": "Pronunciation", "url": "practical-english/pronunciation/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" }
           ]
         }
       ]
     },
 
     {
-      "slug": "general-english/speaking",
+      "slug": "practical-english/speaking",
       "title": "Speaking",
       "description": "How to move from understanding English to speaking it: dealing with the fear of mistakes, keeping a conversation going, and practising when you have nobody to talk to.",
       "keywords": "speaking English, fluency, confidence, conversation, speaking practice",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Most people who say they cannot speak English can, in fact, speak it. What they cannot do is begin." },
       "blocks": [
         {
@@ -307,8 +307,8 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open", "text": ["Model conversations for real situations."] },
-            { "title": "Spoken English", "url": "general-english/spoken-english/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open", "text": ["Model conversations for real situations."] },
+            { "title": "Spoken English", "url": "practical-english/spoken-english/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
         }
@@ -316,14 +316,14 @@
     },
 
     {
-      "slug": "general-english/everyday-english",
+      "slug": "practical-english/everyday-english",
       "title": "Everyday English",
       "description": "The English of daily life: shops, buses, appointments, directions, the telephone, neighbours and small talk, with the phrases used most often.",
       "keywords": "everyday English, daily life, shopping, directions, appointments, small talk",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Ordinary life needs a surprisingly small number of phrases. Learn these and most days will look after themselves." },
       "blocks": [
         {
@@ -365,23 +365,23 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
-            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" }
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
+            { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Open" },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" }
           ]
         }
       ]
     },
 
     {
-      "slug": "general-english/spoken-english",
+      "slug": "practical-english/spoken-english",
       "title": "Spoken English",
       "description": "How spoken English differs from written English: contractions, fillers, incomplete sentences, and the informal patterns that make speech sound natural.",
       "keywords": "spoken English, informal English, contractions, fillers, natural speech",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Many learners sound stiff not because their English is poor, but because they are speaking written English aloud." },
       "blocks": [
         {
@@ -450,8 +450,8 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
-            { "title": "Pronunciation", "url": "general-english/pronunciation/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
+            { "title": "Pronunciation", "url": "practical-english/pronunciation/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
         }
@@ -459,14 +459,14 @@
     },
 
     {
-      "slug": "general-english/workplace-english",
+      "slug": "practical-english/workplace-english",
       "title": "Workplace English",
       "description": "English for work: interviews, meetings, emails, telephone calls, asking for help, disagreeing politely and giving bad news clearly.",
       "keywords": "workplace English, business English, job interview, meetings, work emails",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Workplace English is mostly a small set of situations repeated. Prepare for the situations and the language comes with them." },
       "blocks": [
         {
@@ -513,23 +513,23 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Writing", "url": "general-english/writing/", "more": "Open" },
-            { "title": "Practical Conversations", "url": "general-english/practical-conversations/", "more": "Open" },
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" }
+            { "title": "Writing", "url": "practical-english/writing/", "more": "Open" },
+            { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" }
           ]
         }
       ]
     },
 
     {
-      "slug": "general-english/english-for-adults",
+      "slug": "practical-english/english-for-adults",
       "title": "English for Adults",
       "description": "How adults actually learn a language, what is different from school learning, and how to make progress in a working week without a classroom.",
       "keywords": "English for adults, adult learners, learning as an adult, study plan, motivation",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "You are not too old, you are not too late, and you did not miss your chance at school. What you do have is less time and more self-consciousness — and both can be worked with." },
       "blocks": [
         {
@@ -585,8 +585,8 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Self-Assessment", "url": "general-english/self-assessment/", "more": "Open" },
-            { "title": "Speaking", "url": "general-english/speaking/", "more": "Open" },
+            { "title": "Self-Assessment", "url": "practical-english/self-assessment/", "more": "Open" },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
         }
@@ -594,15 +594,15 @@
     },
 
     {
-      "slug": "general-english/practical-conversations",
+      "slug": "practical-english/practical-conversations",
       "title": "Practical Conversations",
       "description": "Model conversations for real situations: introductions, telephone calls, interviews, workplace exchanges, travel, appointments, shopping, requests and complaints.",
       "keywords": "English conversations, dialogues, model conversations, real situations, practice",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Read each one aloud. Then cover one side and say that part yourself. Then have the conversation for real." },
       "blocks": [
         {
@@ -665,8 +665,8 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Everyday English", "url": "general-english/everyday-english/", "more": "Open" },
-            { "title": "Workplace English", "url": "general-english/workplace-english/", "more": "Open" },
+            { "title": "Everyday English", "url": "practical-english/everyday-english/", "more": "Open" },
+            { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
         }
@@ -674,14 +674,14 @@
     },
 
     {
-      "slug": "general-english/self-assessment",
+      "slug": "practical-english/self-assessment",
       "title": "Self-Assessment",
       "description": "Find out honestly what you can already do in English and what to work on next, using can-do statements rather than a test or a score.",
       "keywords": "self assessment, English level, can do statements, A1 A2 B1 B2, level check",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Not a test, and not a score. A list of things you can either do or not do yet — which is far more useful." },
       "blocks": [
         {
@@ -709,7 +709,7 @@
           "variant": "tint",
           "items": [
             { "q": "Can you do these?", "bullets": ["Introduce yourself and say where you are from and what you do.", "Understand and use simple greetings and farewells.", "Ask for and give a telephone number, an address and a date.", "Order food or buy something in a shop using simple phrases.", "Understand very slow, clear speech about familiar things.", "Fill in a simple form with your personal details.", "Ask simple questions: *Where is…? How much is…? What time…?*", "Write a short, simple message such as *I will be late. Sorry.*"] },
-            { "q": "If several are 'not yet'", "a": ["Start with [Practical Grammar](general-english/practical-grammar/) — the word-order section — and [Everyday English](general-english/everyday-english/). Learn phrases whole rather than building them from rules."] }
+            { "q": "If several are 'not yet'", "a": ["Start with [Practical Grammar](practical-english/practical-grammar/) — the word-order section — and [Everyday English](practical-english/everyday-english/). Learn phrases whole rather than building them from rules."] }
           ]
         },
         {
@@ -717,7 +717,7 @@
           "heading": "A2 — Elementary",
           "items": [
             { "q": "Can you do these?", "bullets": ["Describe your family, your work and your daily routine.", "Talk about the past: what you did yesterday, last week, last year.", "Make and change an appointment on the telephone.", "Understand the main point of a short, clear announcement.", "Read a short newspaper item and say what it is about.", "Write a short personal email or letter.", "Explain what is wrong when something you bought is faulty.", "Give simple directions to someone who is lost."] },
-            { "q": "If several are 'not yet'", "a": ["Work on [Practical Grammar](general-english/practical-grammar/) — the tenses — and [Practical Conversations](general-english/practical-conversations/). Begin reading for twenty minutes a day."] }
+            { "q": "If several are 'not yet'", "a": ["Work on [Practical Grammar](practical-english/practical-grammar/) — the tenses — and [Practical Conversations](practical-english/practical-conversations/). Begin reading for twenty minutes a day."] }
           ]
         },
         {
@@ -726,7 +726,7 @@
           "variant": "tint",
           "items": [
             { "q": "Can you do these?", "bullets": ["Keep a conversation going for several minutes without long pauses.", "Explain a problem clearly and say what you would like done about it.", "Understand most of a news bulletin on a familiar subject.", "Read a newspaper article and follow the argument.", "Write a clear email of about 150 words asking for something.", "Give reasons and opinions, and say why you disagree.", "Understand a telephone conversation with someone you do not know.", "Follow a work meeting and contribute to it."] },
-            { "q": "If several are 'not yet'", "a": ["Work on [Speaking](general-english/speaking/), [Listening](general-english/listening/) and [Workplace English](general-english/workplace-english/). This is the level at which regular real conversation matters most."] }
+            { "q": "If several are 'not yet'", "a": ["Work on [Speaking](practical-english/speaking/), [Listening](practical-english/listening/) and [Workplace English](practical-english/workplace-english/). This is the level at which regular real conversation matters most."] }
           ]
         },
         {
@@ -734,7 +734,7 @@
           "heading": "B2 — Upper intermediate",
           "items": [
             { "q": "Can you do these?", "bullets": ["Take part in a discussion with several people speaking at natural speed.", "Argue a case, respond to counter-arguments, and change your position when convinced.", "Understand most television and radio without subtitles.", "Read a full article or a chapter without a dictionary.", "Write a clear, well-organised letter of complaint or application.", "Explain something technical from your own work to someone outside it.", "Recognise when someone is being ironic, or polite rather than sincere.", "Adjust how formal you are according to who you are speaking to."] },
-            { "q": "If several are 'not yet'", "a": ["Work on [Spoken English](general-english/spoken-english/) for natural informal patterns, and [Writing](general-english/writing/) for organisation. At this level, wide reading and real conversation do more than any exercise."] }
+            { "q": "If several are 'not yet'", "a": ["Work on [Spoken English](practical-english/spoken-english/) for natural informal patterns, and [Writing](practical-english/writing/) for organisation. At this level, wide reading and real conversation do more than any exercise."] }
           ]
         },
         {
@@ -752,8 +752,8 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "English for Adults", "url": "general-english/english-for-adults/", "more": "Open" },
-            { "title": "Interactive Practice", "url": "general-english/interactive-practice/", "more": "Open" },
+            { "title": "English for Adults", "url": "practical-english/english-for-adults/", "more": "Open" },
+            { "title": "Interactive Practice", "url": "practical-english/interactive-practice/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
         }
@@ -761,17 +761,17 @@
     },
 
     {
-      "slug": "general-english/interactive-practice",
+      "slug": "practical-english/interactive-practice",
       "title": "Interactive Practice",
-      "description": "Free interactive General English practice: grammar, articles, verb forms, sentence order, vocabulary matching, reading and error correction, all marked instantly.",
+      "description": "Free interactive practical English practice: grammar, articles, verb forms, sentence order, vocabulary matching, reading and error correction, all marked instantly.",
       "keywords": "English practice, interactive exercises, grammar quiz, vocabulary practice, free",
-      "kicker": "General English",
+      "kicker": "Practical English",
       "kind": "quiz",
       "schema": "LearningResource",
       "resourceType": "interactive activity",
       "scripts": ["quiz"],
-      "breadcrumbs": [{ "label": "General English", "url": "general-english/" }],
-      "backTo": { "label": "General English", "url": "general-english/" },
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
       "hero": { "text": "Practice that marks itself and explains every answer. Nothing is recorded, nothing is scored against you, and you can start again as often as you like." },
       "blocks": [
         {
@@ -808,7 +808,7 @@
           "type": "activities",
           "heading": "Error correction",
           "variant": "tint",
-          "intro": ["Each sentence has one mistake. Rewrite it correctly. Study [Common Mistakes](general-english/common-mistakes/) alongside this."],
+          "intro": ["Each sentence has one mistake. Rewrite it correctly. Study [Common Mistakes](practical-english/common-mistakes/) alongside this."],
           "ids": ["error-correction-1"]
         },
         {

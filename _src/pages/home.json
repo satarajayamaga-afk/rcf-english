@@ -65,6 +65,11 @@
     },
 
     {
+      "type": "adslot",
+      "placement": "between"
+    },
+
+    {
       "type": "updates",
       "heading": "What's New",
       "eyebrow": "Recently added",
@@ -85,7 +90,7 @@
         { "title": "Primary English", "icon": "PE", "url": "primary-english/", "more": "Start here", "text": ["Alphabet practice, ten-minute activities, poems, short reading passages and games for younger children."] },
         { "title": "O/L English", "icon": "OL", "url": "ol-english/", "more": "Start here", "text": ["Grammar, vocabulary, reading and every writing task in the Ordinary Level paper, taught step by step."] },
         { "title": "O/L Literature", "icon": "LIT", "url": "ol-literature/", "more": "Start here", "text": ["Poetry, short stories, drama and novels, with a consistent method for context and essay answers."] },
-        { "title": "General English", "icon": "GE", "url": "general-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, for adults and independent learners developing their confidence."] },
+        { "title": "Practical English", "icon": "PE", "url": "practical-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, for adults and independent learners developing their confidence."] },
         { "title": "A/L Literature", "icon": "AL", "url": "al-literature/", "more": "Start here", "text": ["Critical appreciation, textual evidence and well-organised essay answers at Advanced Level."] },
         { "title": "Past Papers", "icon": "PP", "url": "past-papers/", "more": "Search papers", "text": ["Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."] },
         { "title": "Teacher Resources", "icon": "TR", "url": "teacher-resources/", "more": "For teachers", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
@@ -184,7 +189,7 @@
       "columns": "4",
       "items": [
         { "title": "I am preparing for an examination", "url": "past-papers/how-to-use/", "more": "Use past papers well", "text": ["Begin with the paper structure, then work through past and model papers with a marking guide beside you."] },
-        { "title": "I want to improve my English", "url": "general-english/", "more": "General English", "text": ["Start with practical grammar and everyday English, and practise speaking and writing a little each day."] },
+        { "title": "I want to improve my English", "url": "practical-english/", "more": "General English", "text": ["Start with practical grammar and everyday English, and practise speaking and writing a little each day."] },
         { "title": "I teach English", "url": "teacher-resources/", "more": "Teacher resources", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial classes."] },
         { "title": "I am helping my child", "url": "how-to-use/", "more": "How to use this site", "text": ["See what is examined, what a good answer looks like, and how to help at home without doing the work for them."] }
       ]

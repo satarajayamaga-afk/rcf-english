@@ -1,0 +1,217 @@
+{
+  "_readme": [
+    "PRIMARY ENGLISH BY GRADE - GRADES 3, 4 AND 5",
+    "---------------------------------------------------------------------",
+    "There are deliberately NO Grade 1 or Grade 2 pages. The Drive holds no",
+    "Grade 1 or Grade 2 syllabus, Pupil's Book or Teacher's Guide, so there",
+    "is nothing to build a page from. Both grades stay VISIBLE on the",
+    "Primary English hub as non-clickable cards marked 'Resources in",
+    "preparation'. Do not create pages for them until real material exists.",
+    "",
+    "Every statement on the three pages below is taken from the NIE English",
+    "Language Teachers' Guide for THAT grade. Nothing is carried across from",
+    "one grade to another, and nothing is generic.",
+    "",
+    "  Grade 3 - Teachers' Guide Grade 03, first edition 2017, from 2018",
+    "  Grade 4 - Teachers' Guide Grade 04",
+    "  Grade 5 - Teachers' Guide Grade 05, first edition 2020",
+    "",
+    "Primary English uses FOUR competencies organised by skill:",
+    "  1 Listening   2 Speaking   3 Reading   4 Writing",
+    "This is a third framework, separate from Grade 6 (2026) and from",
+    "Grades 7-11. Never carry a primary competency number upward.",
+    "",
+    "Grade 5 Scholarship stays at primary-english/grade-5-scholarship/ and",
+    "is linked from Grade 5, never merged into ordinary syllabus work."
+  ],
+
+  "pages": [
+    {
+      "slug": "primary-english/grade-3",
+      "title": "Grade 3 English",
+      "metaTitle": "Grade 3 English | Primary English | RCF English",
+      "description": "Grade 3 English following the NIE primary syllabus: alphabet sounds, words of three or four letters, sentences of up to five words, capital letters and full stops.",
+      "keywords": "Grade 3 English Sri Lanka, primary English grade 3, alphabet sounds, this that, capital letters",
+      "kicker": "Primary English",
+      "kind": "page",
+      "hero": { "text": "Grade 3 English: the year the letters become words, and the words become short sentences." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What Grade 3 covers",
+          "text": [
+            "Grade 3 works in four skill competencies — **listening, speaking, reading and writing**. Alphabet work, vocabulary, language patterns, poems and games are not separate subjects; they sit inside those four.",
+            "The year is built on very short units of language. Words of **three or four letters**, lists of **five to ten known words**, and reading sentences that do **not exceed five words**."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The four competencies in Grade 3",
+          "columns": ["Skill", "What the syllabus asks for at this grade"],
+          "rows": [
+            ["Listening", "Identifying the sound each letter of the alphabet makes, and matching letters to sounds aloud."],
+            ["Speaking", "Verbally matching the letters of the alphabet; naming nouns and verbs from the child's immediate surroundings."],
+            ["Reading", "Reading a list of five to ten known words. Reading and understanding **this** and **that** in context. Simple texts with sentences of no more than five words."],
+            ["Writing", "Writing the letters of the alphabet independently. Beginning a sentence with a capital letter, writing a name with a capital first letter, and ending with a full stop."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Vocabulary and language patterns",
+          "text": [
+            "Grade 3 introduces **article–noun** and **adjective–noun** combinations, and the verbs that go with everyday surroundings. Numbers are used up to a total of **twenty**, with the ordinals **1st, 2nd, 3rd** and *the last*. Shapes in the immediate environment are named and described.",
+            "Source: *English Language Teachers' Guide, Grade 03*, Department of English, National Institute of Education, Maharagama, first edition 2017, to be implemented from 2018."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Activities for this grade",
+          "eyebrow": "What we already have",
+          "columns": "3",
+          "items": [
+            { "title": "Alphabet and phonics", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter names against letter sounds, and blending sounds into words — the Grade 3 starting point."] },
+            { "title": "Poems and rhymes", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme makes the sounds of English easier to hear, which is what listening asks for here."] },
+            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Letter, word and sentence activities that mark themselves."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Still being prepared for Grade 3",
+          "text": [
+            "Graded word lists of five to ten words, **this/that** practice, and writing exercises for capital letters and full stops are being prepared against the Grade 3 Teacher's Guide. They will appear here as each is checked."
+          ]
+        },
+        { "type": "adslot", "placement": "between" }
+      ]
+    },
+
+    {
+      "slug": "primary-english/grade-4",
+      "title": "Grade 4 English",
+      "metaTitle": "Grade 4 English | Primary English | RCF English",
+      "description": "Grade 4 English following the NIE primary syllabus: short and long vowel sounds, personal and possessive pronouns, numbers to 50, and writing with correct punctuation.",
+      "keywords": "Grade 4 English Sri Lanka, primary English grade 4, pronouns, vowel sounds, ordinals",
+      "kicker": "Primary English",
+      "kind": "page",
+      "hero": { "text": "Grade 4 English: longer sentences, pronouns used accurately, and writing that is properly punctuated." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What Grade 4 covers",
+          "text": [
+            "The same four competencies continue — **listening, speaking, reading and writing** — but the language widens. Grade 4 is where pronouns, polite requests and larger numbers are expected to be used correctly rather than merely recognised."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The four competencies in Grade 4",
+          "columns": ["Skill", "What the syllabus asks for at this grade"],
+          "rows": [
+            ["Listening", "Understanding questions about personal information, likes and dislikes, abilities, polite offers and requests, and simple instructions and directions. Recognising cardinal numbers 0–50 and ordinals to 31st."],
+            ["Speaking", "Pronouncing short and long vowel sounds correctly. Using personal, possessive and object pronouns. Introducing others, describing animals and places, expressing feelings, asking and answering about likes and abilities."],
+            ["Reading", "Reading aloud words with short and long vowel sounds. Extracting specific information — names, things, places, numbers — from texts of five to eight sentences."],
+            ["Writing", "Copying words with correct letter formation, size and spacing. Using the **period and the question mark** appropriately. Writing simple sentences with correct spacing between words."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Vocabulary and language patterns",
+          "text": [
+            "Grade 4 works with **SV, SVO and SVC sentence patterns** through controlled writing, and with nouns, verbs, adjectives and adverbs in sentences. Shapes, distances and measurements are named, and there is a defined strand of **science and technology vocabulary** — operating a computer, tablet or telephone, and talking about plants, animals and insects in the immediate environment.",
+            "Source: *English Language Teachers' Guide, Grade 04*, Department of English, National Institute of Education, Maharagama."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Activities for this grade",
+          "eyebrow": "What we already have",
+          "columns": "3",
+          "items": [
+            { "title": "Reading", "url": "primary-english/reading/", "more": "Open", "text": ["Short passages with questions — the five-to-eight sentence length Grade 4 expects."] },
+            { "title": "Listening and speaking", "url": "primary-english/activities/", "more": "Open", "text": ["Ten-minute speaking and listening activities needing no materials."] },
+            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Word and sentence activities that explain every answer."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Still being prepared for Grade 4",
+          "text": [
+            "Pronoun practice, short and long vowel work, and number and ordinal exercises are being prepared against the Grade 4 Teacher's Guide."
+          ]
+        },
+        { "type": "adslot", "placement": "between" }
+      ]
+    },
+
+    {
+      "slug": "primary-english/grade-5",
+      "title": "Grade 5 English",
+      "metaTitle": "Grade 5 English | Primary English | RCF English",
+      "description": "Grade 5 English following the NIE primary syllabus: three tenses, everyday texts such as notices and timetables, and writing accurate simple sentences.",
+      "keywords": "Grade 5 English Sri Lanka, primary English grade 5, simple present past continuous, notices timetables",
+      "kicker": "Primary English",
+      "kind": "page",
+      "hero": { "text": "Grade 5 English: three tenses, the texts of everyday life, and writing that is accurate on its own." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What Grade 5 covers",
+          "text": [
+            "Grade 5 draws the primary years together. The four competencies are unchanged, but the texts become the ones children meet outside the classroom, and writing is expected to be accurate without help."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The four competencies in Grade 5",
+          "columns": ["Skill", "What the syllabus asks for at this grade"],
+          "rows": [
+            ["Listening", "Responding to questions on familiar topics, both information and confirmation questions, using **Who, When, What** and **Where**. Following announcements, dialogues, verbal messages and instructions."],
+            ["Speaking", "Pronouncing words, phrases and sentences properly, including the vowel rules — silent **e** as in *cake*, and two vowel letters making one sound. Using personal pronouns in sentences."],
+            ["Reading", "Reading the texts of daily life: **notices, leaflets, train and bus timetables, brochures, restaurant menus, advertisements and recipes**, as well as posters and labels."],
+            ["Writing", "Writing simple sentences on a given topic accurately, with correct **spelling, spacing between words and punctuation**. Copying addresses, lists of names and shopping lists."]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Tenses and text types",
+          "text": [
+            "Grade 5 texts use three tenses: **simple present, simple past and present continuous**. The text types named are simple descriptions, informative texts, short stories, announcements, invitations, poems and dialogues.",
+            "Source: *English Language Teachers' Guide, Grade 05*, Department of English, National Institute of Education, Maharagama, first edition 2020."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Scholarship English is a separate thing",
+          "text": [
+            "The Grade 5 Scholarship examination is not the ordinary Grade 5 English syllabus, and the two are never mixed here. The scholarship work has its own page: [Grade 5 Scholarship](primary-english/grade-5-scholarship/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Activities for this grade",
+          "eyebrow": "What we already have",
+          "columns": "3",
+          "items": [
+            { "title": "Reading", "url": "primary-english/reading/", "more": "Open", "text": ["Passages with questions, at the length expected by the end of primary."] },
+            { "title": "Listening and speaking", "url": "primary-english/activities/", "more": "Open", "text": ["Speaking and listening activities for a class or a single child."] },
+            { "title": "Poems and rhymes", "url": "primary-english/poems/", "more": "Open", "text": ["Poems to read, learn and talk about."] },
+            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Self-marking practice across the primary skills."] },
+            { "title": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "more": "Separate", "text": ["The scholarship English work, kept apart from the ordinary syllabus."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Still being prepared for Grade 5",
+          "text": [
+            "Practice on the three tenses, and reading work built on notices, timetables, menus and recipes, are being prepared against the Grade 5 Teacher's Guide."
+          ]
+        },
+        { "type": "adslot", "placement": "between" }
+      ]
+    }
+  ]
+}

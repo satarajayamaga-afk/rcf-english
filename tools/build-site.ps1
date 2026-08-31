@@ -659,6 +659,9 @@ function RenderBlock($block) {
                 $isExt = IsExternal $target
                 $cardCls = 'card'
                 if ($target) { $cardCls += ' card--link' }
+                # No address yet: the card still shows, but it is plainly
+                # not a link and carries no "Open" affordance.
+                else { $cardCls += ' card--soon' }
                 if (P $item 'accent') { $cardCls += ' card--accent' }
                 $html += '<div class="' + $cardCls + '">'
                 $icon = P $item 'icon'
@@ -764,19 +767,26 @@ function RenderBlock($block) {
             $stacked = ''
             if ((P $block 'stacked' $true) -eq $true) { $stacked = ' stacked' }
             $cols = AsList (P $block 'columns')
-            $html += '<div class="table-wrap"><table class="data' + $stacked + '">'
+            # The stacked mobile layout sets display:block on the table elements,
+            # which strips the table role from the accessibility tree. Explicit
+            # ARIA roles keep the headers and cells related for screen readers.
+            $html += '<div class="table-wrap"><table role="table" class="data' + $stacked + '">'
             $caption = P $block 'caption'
             if ($caption) { $html += '<caption>' + (Inline $caption) + '</caption>' }
-            $html += '<thead><tr>'
-            foreach ($c in $cols) { $html += '<th scope="col">' + (E $c) + '</th>' }
-            $html += '</tr></thead><tbody>'
+            $html += '<thead role="rowgroup"><tr role="row">'
+            foreach ($c in $cols) { $html += '<th role="columnheader" scope="col">' + (E $c) + '</th>' }
+            $html += '</tr></thead><tbody role="rowgroup">'
             foreach ($row in (AsList (P $block 'rows'))) {
-                $html += '<tr>'
+                $html += '<tr role="row">'
                 $i = 0
                 foreach ($cell in (AsList $row)) {
                     $label = ''
                     if ($i -lt $cols.Count) { $label = ' data-label="' + (E $cols[$i]) + '"' }
-                    $html += '<td' + $label + '>' + (Inline $cell) + '</td>'
+                    # The stacked mobile layout makes the td a flex container, so any
+                    # inline element in the cell became its own flex item and was pushed
+                    # into an unwrappable extra column. Wrapping the value keeps the cell
+                    # to exactly two items: the ::before label and this span.
+                    $html += '<td role="cell"' + $label + '><span class="td__v">' + (Inline $cell) + '</span></td>'
                     $i++
                 }
                 $html += '</tr>'
@@ -852,6 +862,20 @@ function RenderBlock($block) {
             $html += '<p class="paypanel__small">This website cannot check a bank transfer by itself, so every payment is confirmed by a person. Never send an online banking password, PIN, one-time code or card number to anyone, including us.</p>'
             $html += '</div></details>'
             return $html + '</div></section>'
+        }
+
+        'adslot' {
+            # A reserved, clearly labelled advertising space. It carries no
+            # advertising code of any kind: it is an empty styled box, and it
+            # is deliberately unlike a learning card - dashed, uncoloured, not
+            # clickable - so it can never be mistaken for a resource or a
+            # navigation button. Sits between major sections, never inside a
+            # card grid and never beside a download button.
+            $place = [string](P $block 'placement' 'between')
+            $html = '<div class="adslot adslot--' + (E $place) + '" role="complementary" aria-label="Advertisement space">'
+            $html += '<span class="adslot__label">Advertisement</span>'
+            $html += '</div>'
+            return $html
         }
 
         'destinations' {
@@ -1208,10 +1232,22 @@ function RenderBlock($block) {
                 if ($meta.Count) { $html += '<p class="gres__meta">' + ($meta -join ' &middot; ') + '</p>' }
                 $src = [string](P $r 'author')
                 if ($src) { $html += '<p class="gres__source">' + (E $src) + '</p>' }
-                $html += '</div>'
                 $url = [string](P $r 'url')
+                # A handful of official government PDFs are served over plain HTTP
+                # because the department publishes no HTTPS endpoint at all. The link
+                # is kept because it works and the source is official, but the reader
+                # is told plainly that the connection is not encrypted.
+                if ($url -match '^http://') {
+                    $html += '<p class="gres__warn"><span class="tag tag--http" title="This official government site is served over plain HTTP, not HTTPS. The link still works; the connection to that site is not encrypted.">Official site, no HTTPS</span></p>'
+                }
+                $html += '</div>'
                 if ($url) {
-                    $html += '<p class="gres__go"><a class="btn btn--sm btn--outline" href="' + (E $url) + '" rel="noopener">View or download</a></p>'
+                    # Opens in a new tab so the reader keeps their place on the site.
+                    # noopener/noreferrer: never hand the destination a referrer or a
+                    # handle back to this window, least of all over plain HTTP.
+                    $extraLabel = '<span class="sr-only"> (opens in a new tab)</span>'
+                    if ($url -match '^http://') { $extraLabel = '<span class="sr-only"> (opens in a new tab; connection not encrypted)</span>' }
+                    $html += '<p class="gres__go"><a class="btn btn--sm btn--outline" href="' + (E $url) + '" target="_blank" rel="noopener noreferrer">View or download' + $extraLabel + '</a></p>'
                 }
                 $html += '</li>'
             }
@@ -1996,6 +2032,32 @@ function BuildPage($page) {
     # The 404 page is served in place of any address, so its links must be
     # absolute - a relative link would be resolved against the missing address.
     if ((P $page 'absoluteLinks') -eq $true) { $script:Root = $script:Config.siteUrl.TrimEnd('/') + '/' }
+    # A compatibility page: the address still works, but the content has
+    # moved. GitHub Pages cannot issue a 301, so the canonical tag carries
+    # the ranking, the refresh moves a browser, and the visible link works
+    # without JavaScript and for anyone who lands mid-transfer.
+    if ([string](P $page "kind") -eq "redirect") {
+        $to = [string](P $page "redirectTo")
+        $abs = $script:Config.siteUrl.TrimEnd("/") + "/" + $to
+        $t   = [string](P $page "title")
+        $h  = "<!doctype html><html lang=`"en`"><head><meta charset=`"utf-8`">"
+        $h += "<meta name=`"viewport`" content=`"width=device-width, initial-scale=1`">"
+        $h += "<title>" + (E $t) + " has moved | " + (E $script:Config.siteName) + "</title>"
+        $h += "<link rel=`"canonical`" href=`"" + (E $abs) + "`">"
+        $h += "<meta name=`"robots`" content=`"noindex, follow`">"
+        $h += "<meta http-equiv=`"refresh`" content=`"0; url=" + (E $abs) + "`">"
+        $h += "<style>body{font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;"
+        $h += "margin:0;padding:3rem 1.25rem;max-width:34rem;color:#12263f}a{color:#25497a}</style>"
+        $h += "</head><body><h1>This page has moved</h1>"
+        $h += "<p>&ldquo;" + (E $t) + "&rdquo; is now at a new address.</p>"
+        $h += "<p><a href=`"" + (E $abs) + "`">Go to " + (E $t) + "</a></p>"
+        $h += "</body></html>"
+        $dir = Join-Path $ProjectRoot ($slug -replace "/", "\")
+        if (-not (Test-Path $dir)) { [void](New-Item -ItemType Directory -Path $dir -Force) }
+        [System.IO.File]::WriteAllText((Join-Path $dir "index.html"), $h, $utf8)
+        return (Join-Path $dir "index.html")
+    }
+
     $script:FaqEntries = New-Object System.Collections.ArrayList
 
     $title = [string](P $page 'title')

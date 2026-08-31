@@ -1,0 +1,96 @@
+{
+  "_readme": [
+    "G.C.E. A/L GENERAL ENGLISH - SUBJECT 13",
+    "---------------------------------------------------------------------",
+    "This is Subject 13, the A/L General English subject sat in Grades 12",
+    "and 13. It is NOT Subject 73 (A/L English Literature), and it is NOT",
+    "the practical/adult English that now lives at practical-english/.",
+    "",
+    "The section is deliberately small. The Drive audit found 10 provincial",
+    "papers pending source verification, 1 marking scheme, no model papers",
+    "and no syllabus document. Rather than pad the section out, the pages",
+    "say plainly what is being prepared.",
+    "",
+    "The redirect pages below preserve the old general-english/* addresses,",
+    "which held practical English content before the split. GitHub Pages",
+    "cannot issue a 301, so each emits a canonical tag, a meta refresh and a",
+    "visible link. They are excluded from the sitemap and the search index."
+  ],
+
+  "pages": [
+    {
+      "slug": "general-english",
+      "title": "General English",
+      "metaTitle": "G.C.E. A/L General English (Subject 13) | RCF English",
+      "description": "G.C.E. Advanced Level General English, Subject 13, for Grades 12 and 13: past papers, marking schemes and examination guidance.",
+      "keywords": "A/L General English, subject 13, Grade 12 English, Grade 13 English, General English past papers Sri Lanka",
+      "kicker": "G.C.E. A/L",
+      "kind": "page",
+      "breadcrumbs": [],
+      "backTo": { "label": "Home", "url": "" },
+      "hero": {
+        "text": "G.C.E. Advanced Level General English, Subject 13, taken in Grades 12 and 13. This is a separate subject from A/L English Literature, and separate again from the practical English pages."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Three different things called English",
+          "text": [
+            "**General English (Subject 13)** is the A/L subject on this page, sat by students in Grades 12 and 13 alongside their main subjects.",
+            "**English Literature (Subject 73)** is a different A/L subject, with its own prescribed texts. It is in [A/L Literature](al-literature/).",
+            "**Practical English** is not an examination subject at all. It is everyday, spoken and workplace English for adults and independent learners, and it is in [Practical English](practical-english/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What this section will hold",
+          "text": [
+            "General English is assessed in two papers. The work is language rather than literature: grammar and vocabulary in use, reading comprehension, and writing for a purpose.",
+            "This section is being built from provincial and zonal papers whose sources are being verified before anything is published."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Resources in preparation",
+          "text": [
+            "Past papers, marking schemes and examination guidance for General English are being checked and prepared. They will appear here as each source is confirmed.",
+            "Nothing is listed yet, because a paper is only published once we are sure of where it came from and that it may be shared."
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "cards",
+          "heading": "In the meantime",
+          "eyebrow": "Related sections",
+          "columns": "3",
+          "items": [
+            { "title": "A/L Literature", "url": "al-literature/", "more": "Open", "text": ["Subject 73, the other A/L English subject, with its own prescribed texts."] },
+            { "title": "Practical English", "url": "practical-english/", "more": "Open", "text": ["Everyday, spoken and workplace English for adults and independent learners."] },
+            { "title": "Past Papers", "url": "past-papers/", "more": "Open", "text": ["Papers already published across the site, with filters by year and type."] }
+          ]
+        }
+      ]
+    },
+
+    { "slug": "general-english/practical-grammar",     "title": "Practical Grammar",       "kind": "redirect", "noindex": true, "redirectTo": "practical-english/practical-grammar/" },
+    { "slug": "general-english/vocabulary",            "title": "Vocabulary",              "kind": "redirect", "noindex": true, "redirectTo": "practical-english/vocabulary/" },
+    { "slug": "general-english/pronunciation",         "title": "Pronunciation",           "kind": "redirect", "noindex": true, "redirectTo": "practical-english/pronunciation/" },
+    { "slug": "general-english/common-mistakes",       "title": "Common Mistakes",         "kind": "redirect", "noindex": true, "redirectTo": "practical-english/common-mistakes/" },
+    { "slug": "general-english/self-assessment",       "title": "Self-Assessment",         "kind": "redirect", "noindex": true, "redirectTo": "practical-english/self-assessment/" },
+    { "slug": "general-english/interactive-practice",  "title": "Interactive Practice",    "kind": "redirect", "noindex": true, "redirectTo": "practical-english/interactive-practice/" },
+    { "slug": "general-english/reading",               "title": "Reading",                 "kind": "redirect", "noindex": true, "redirectTo": "practical-english/reading/" },
+    { "slug": "general-english/writing",               "title": "Writing",                 "kind": "redirect", "noindex": true, "redirectTo": "practical-english/writing/" },
+    { "slug": "general-english/listening",             "title": "Listening",               "kind": "redirect", "noindex": true, "redirectTo": "practical-english/listening/" },
+    { "slug": "general-english/speaking",              "title": "Speaking",                "kind": "redirect", "noindex": true, "redirectTo": "practical-english/speaking/" },
+    { "slug": "general-english/everyday-english",      "title": "Everyday English",        "kind": "redirect", "noindex": true, "redirectTo": "practical-english/everyday-english/" },
+    { "slug": "general-english/spoken-english",        "title": "Spoken English",          "kind": "redirect", "noindex": true, "redirectTo": "practical-english/spoken-english/" },
+    { "slug": "general-english/workplace-english",     "title": "Workplace English",       "kind": "redirect", "noindex": true, "redirectTo": "practical-english/workplace-english/" },
+    { "slug": "general-english/english-for-adults",    "title": "English for Adults",      "kind": "redirect", "noindex": true, "redirectTo": "practical-english/english-for-adults/" },
+    { "slug": "general-english/practical-conversations","title": "Practical Conversations","kind": "redirect", "noindex": true, "redirectTo": "practical-english/practical-conversations/" }
+  ]
+}
