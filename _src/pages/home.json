@@ -26,11 +26,44 @@
         "**Teachers and tuition teachers**, with lesson plans, worksheets and marking guides",
         "**Parents**, who can see what is examined and what a good answer looks like"
       ],
-      "footnote": "Free to read. No account, no advertising, nothing recorded."
+      "footnote": "Free to read, no account required. No tracking and no behavioural advertising. Paid educational listings are clearly marked Sponsored."
     }
   },
 
   "blocks": [
+    {
+      "type": "destinations",
+      "heading": "Paid materials and opportunities",
+      "eyebrow": "Books, resources and offers",
+      "intro": ["The lessons, past papers and teacher resources on this website are free to read. These three are separate and paid: books published by RCF Publications, downloadable resource collections, and sponsored listings placed by other teachers and institutes."],
+      "items": [
+        {
+          "title": "RCF Publications",
+          "text": "Complete books and ebooks for students, teachers and English learners.",
+          "url": "rcf-publications/",
+          "more": "Browse books",
+          "style": "publications",
+          "icon": "BK"
+        },
+        {
+          "title": "Premium Resources",
+          "text": "Lesson plans, worksheets, model papers and practical resource collections.",
+          "url": "premium-resources/",
+          "more": "Browse collections",
+          "style": "premium",
+          "icon": "PR"
+        },
+        {
+          "title": "Special Offers",
+          "text": "Paid listings from tuition classes, teacher-training courses and educational programmes. Every listing is marked Sponsored.",
+          "url": "promotions/",
+          "more": "See tuition and course listings",
+          "style": "promo",
+          "icon": "TP"
+        }
+      ]
+    },
+
     {
       "type": "updates",
       "heading": "What's New",
@@ -57,8 +90,8 @@
         { "title": "Past Papers", "icon": "PP", "url": "past-papers/", "more": "Search papers", "text": ["Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."] },
         { "title": "Teacher Resources", "icon": "TR", "url": "teacher-resources/", "more": "For teachers", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
         { "title": "Interactive Learning", "icon": "IL", "url": "interactive/", "more": "Practise now", "text": ["Quizzes, gap-fill, matching, sentence ordering and error correction, with instant feedback."] },
-        { "title": "RCF Online Academy", "icon": "RC", "url": "rcf-classes/", "more": "See classes", "text": ["Online English and Literature classes conducted by R. C. Fernando. Ask about schedules on WhatsApp."] },
-        { "title": "RCF Publications", "icon": "BK", "url": "PUBLICATIONS_WEBSITE_URL", "text": ["Our separate bookshop website: practical books, study guides and examination revision materials."] }
+        { "title": "RCF Online Academy", "icon": "RC", "url": "rcf-classes/", "more": "See classes", "text": ["Online English and Literature classes conducted by Rohana Fernando. Ask about schedules on WhatsApp."] },
+        { "title": "RCF Publications", "icon": "BK", "url": "PUBLICATIONS_WEBSITE_URL", "text": ["Practical books, study guides and examination revision materials published by RCF Publications."] }
       ]
     },
 
@@ -85,6 +118,9 @@
       "variant": "tint",
       "intro": ["Worksheets, revision sheets and other files are listed here as they are approved for publication. Written lessons appear in the subject sections above."],
       "source": "resources",
+      "limit": 8,
+      "allUrl": "resources/",
+      "allLabel": "View all resources",
       "filters": ["category", "type", "level", "skill"],
       "note": "Only resources RCF English created, may distribute with permission, or may link from an official source are listed."
     },
@@ -123,7 +159,7 @@
       "type": "classes",
       "heading": "Featured courses",
       "eyebrow": "Learn with a teacher",
-      "intro": ["Online classes conducted by R. C. Fernando. Schedules, fees and available places are confirmed on WhatsApp, so the information you receive is always current."],
+      "intro": ["Online classes conducted by Rohana Fernando. Schedules, fees and available places are confirmed on WhatsApp, so the information you receive is always current."],
       "featured": true,
       "limit": 3
     },
@@ -136,7 +172,7 @@
       "text": [
         "RCF English is a comprehensive educational platform created to bring together English-language learning, literature education, examination support, teacher resources, online classes and educational publications in one accessible place.",
         "It serves school students, O/L and A/L learners, adult learners, English teachers, tuition teachers and parents. Particular attention is given to learners who require additional guidance, including those in rural and remote areas with limited access to dependable educational resources.",
-        "The platform was founded by **R. C. Fernando**, an experienced English teacher and lecturer, a graduate in English of the University of Peradeniya with a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya.",
+        "The platform was founded by **Rohana Fernando**, an experienced English teacher and lecturer, a graduate in English of the University of Peradeniya with a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya.",
         "[Read the full About Us page](about/) or [meet the founder](about/founder/)."
       ]
     },

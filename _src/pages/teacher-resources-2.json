@@ -604,7 +604,7 @@
       "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
       "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
       "hero": {
-        "text": "RCF Publications is a separate bookshop website. This page explains what it publishes for teachers and how it fits with the free material here.",
+        "text": "RCF Publications is a separate section of this website. This page explains what it publishes for teachers and how it fits with the free material here.",
         "buttons": [{ "label": "Visit RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "style": "btn--accent" }]
       },
       "blocks": [
@@ -613,7 +613,7 @@
           "type": "prose",
           "heading": "Free pages and published books",
           "text": [
-            "Everything on RCF English is free to read and use. RCF Publications produces books that are sold separately, on its own website, with its own ordering arrangements.",
+            "Everything in the free sections of RCF English is free to read and use. RCF Publications produces books that are sold separately, in their own section of this website, with their own ordering arrangements.",
             "The two are meant to work together rather than to duplicate one another. The free pages give you method — how to teach a topic, how to mark, how to structure a lesson. The books give you material organised in sequence, which is what you need when you are building a scheme of work rather than planning a single lesson."
           ]
         },
@@ -650,11 +650,11 @@
         {
           "type": "callout",
           "style": "note",
-          "title": "Two separate websites",
+          "title": "Two separate sections",
           "bullets": [
             "**RCF English** — this site. Free lessons, past papers, teacher resources, interactive practice and RCF Online Academy.",
-            "**RCF Publications** — a separate website with its own terms. Books, prices, samples and ordering are handled there.",
-            "RCF English does not sell books and does not take payments of any kind. Links to RCF Publications are marked and open in a new tab."
+            "**RCF Publications** — a separate section of this website with its own terms. Books, prices, samples and ordering are handled there.",
+            "Books are paid for by bank transfer arranged directly with RCF and verified by a person. No payment is processed on this website and no card details are ever requested."
           ]
         }
       ]

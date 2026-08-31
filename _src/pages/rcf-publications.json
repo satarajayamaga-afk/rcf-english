@@ -1,0 +1,67 @@
+{
+  "_readme": [
+    "RCF Publications: the section for COMPLETE books and ebooks.",
+    "",
+    "This is not the same thing as Premium Resources. Books belong here;",
+    "worksheet, lesson-plan and model-paper collections belong in",
+    "_src/pages/premium-resources.json and its two subsections.",
+    "",
+    "The existing 'About RCF Publications' page at about/rcf-publications/",
+    "is a separate, older page and is left exactly as it was. This section",
+    "sits alongside it and links to it."
+  ],
+
+  "pages": [
+    {
+      "slug": "rcf-publications",
+      "title": "RCF Publications",
+      "metaTitle": "RCF Publications | Books and Ebooks | RCF English",
+      "description": "Complete books and ebooks published by RCF Publications for students, teachers and English learners, including study guides, teacher manuals and spoken English titles.",
+      "keywords": "RCF Publications, English books Sri Lanka, ebooks, study guides, teacher manuals, spoken English books, literature books",
+      "kicker": "Books and ebooks",
+      "kind": "page",
+      "backTo": { "label": "Home", "url": "" },
+      "hero": {
+        "text": "Explore complete books and ebooks published by RCF Publications for students, teachers and English learners.",
+        "buttons": [
+          { "label": "About RCF Publications", "url": "about/rcf-publications/", "style": "btn--ghost-light" },
+          { "label": "Premium Resources", "url": "premium-resources/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Books, not resource packs",
+          "text": [
+            "This section lists **complete published titles**: books, ebooks, published study guides and teacher manuals published as books.",
+            "Downloadable collections of worksheets, lesson plans and model papers are a different thing, and they live in [Premium Resources](premium-resources/)."
+          ]
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Published titles",
+          "eyebrow": "Catalogue"
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "publication",
+          "heading": "How to pay for a book",
+          "eyebrow": "Bank transfer",
+          "intro": ["Open the panel below when you are ready to buy a title. Include the book's product code so we know which one you have paid for."]
+        },
+        {
+          "type": "cards",
+          "heading": "Related sections",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "About RCF Publications", "text": "What the bookshop produces and how it relates to the free website.", "url": "about/rcf-publications/" },
+            { "title": "Premium Resources", "text": "Downloadable worksheet, lesson-plan and model-paper collections.", "url": "premium-resources/" },
+            { "title": "Free resources", "text": "Lessons, past papers and activities, free to use with no account.", "url": "resources/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

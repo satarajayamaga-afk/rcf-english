@@ -89,8 +89,23 @@ function JsonString($text) {
 # the bookshop. Nothing else has to be edited.
 
 function PubIsLive() {
+    $v = [string]$script:Config.PUBLICATIONS_WEBSITE_URL
+    # Live means "we have somewhere real to send people". That can be an
+    # internal section of this website or, one day, an external bookshop.
+    # Only the untouched placeholder counts as not-live.
+    return ($v -and $v -ne 'PUBLICATIONS_WEBSITE_URL')
+}
+
+# True only when the destination is a different website. Internal sections
+# must not be given an external-link marker or opened in a new tab.
+function PubIsExternal() {
     return (([string]$script:Config.PUBLICATIONS_WEBSITE_URL) -match '^https?://')
 }
+
+# Attributes and wording that only make sense for an off-site link.
+function PubExtClass() { if (PubIsExternal) { return ' ext' } else { return '' } }
+function PubExtAttrs() { if (PubIsExternal) { return ' target="_blank" rel="noopener"' } else { return '' } }
+function PubExtNote()  { if (PubIsExternal) { return ' (external website, opens in a new tab)' } else { return '' } }
 
 function IsPub($value) {
     return ([string]$value -eq 'PUBLICATIONS_WEBSITE_URL')
@@ -105,8 +120,11 @@ function Url($value) {
     if ($null -eq $value) { return '' }
     $v = [string]$value
     if (IsPub $v) {
-        if (PubIsLive) { return $script:Config.PUBLICATIONS_WEBSITE_URL }
-        $v = $script:PubFallback
+        # Assign rather than return, so an internal destination goes on to
+        # get the usual root prefix and is checked by the link checker.
+        # An external https:// address still returns early just below.
+        if (PubIsLive) { $v = [string]$script:Config.PUBLICATIONS_WEBSITE_URL }
+        else { $v = $script:PubFallback }
     }
     if ($v -match '^(https?:|mailto:|tel:|#)') { return $v }
     $v = $v -replace '^/', ''
@@ -122,21 +140,23 @@ function Url($value) {
 
 function IsExternal($value) {
     $v = [string]$value
-    # A bookshop link is only external once the bookshop actually exists.
-    if (IsPub $v) { return (PubIsLive) }
+    # The bookshop is only an external link when it lives on another site.
+    if (IsPub $v) { return (PubIsExternal) }
     return ($v -match '^https?:')
 }
 
 # The marker shown beside a bookshop link: "external bookshop" once it is
 # published, "Coming soon" until then.
 function PubBadge() {
-    if (PubIsLive) { return '<span class="badge-ext">External bookshop</span>' }
+    if (PubIsExternal) { return '<span class="badge-ext">External bookshop</span>' }
+    if (PubIsLive) { return '' }
     return '<span class="badge-soon">Coming soon</span>'
 }
 
 # Wording used in screen-reader-only notes and button labels.
 function PubNote() {
-    if (PubIsLive) { return ' (external bookshop, opens in a new tab)' }
+    if (PubIsExternal) { return ' (external bookshop, opens in a new tab)' }
+    if (PubIsLive) { return '' }
     # Describes where the link goes. The page itself explains that the
     # bookshop website is not open yet, so the link text need not repeat it.
     return ' (about RCF Publications)'
@@ -258,6 +278,19 @@ $papers = @(DataList 'papers' 'items')
 $resources = @(DataList 'resources' 'items')
 $quizzes = @(DataList 'quizzes' 'activities')
 $listening = @(DataList 'listening' 'tests')
+$premiumProducts = @(DataList 'premium-products' 'products')
+# Books and resource collections are two separate catalogues, deliberately.
+$publicationBooks = @(DataList 'publications' 'books')
+$promoAds = @(DataList 'promotions' 'ads')
+$promoPackages = @(DataList 'promotions' 'packages')
+# RCF's own offers, kept apart from the third-party ads above because
+# they are not paid advertisements and carry no Sponsored label.
+$promoOffers = @(DataList 'promotions' 'offers')
+# Bank details are read from one file only. Never copy them into a page.
+$paymentConfig = $null
+if ($script:Data.ContainsKey('payments')) { $paymentConfig = $script:Data['payments'] }
+$paymentBank = if ($paymentConfig) { $paymentConfig.bank } else { $null }
+$paymentPurposes = @(DataList 'payments' 'purposes')
 $literature = @(DataList 'literature' 'texts')
 $notices = @(DataList 'notices' 'notices')
 $updates = @(DataList 'updates' 'items')
@@ -299,7 +332,9 @@ function MegaPanel($item, $index, $slug) {
             $links += $link
         }
         if ($links.Count -eq 0) { continue }
-        $html += '<div class="mega__group"><h3>' + (E (P $group 'title')) + '</h3><ul>'
+        # A menu group label is not a page heading. Using <h3> here put 74
+        # phantom headings ahead of the real <h1> in the document outline.
+        $html += '<div class="mega__group" role="group" aria-label="' + (E (P $group 'title')) + '"><p class="mega__group-title">' + (E (P $group 'title')) + '</p><ul>'
         foreach ($link in $links) {
             $target = [string](P $link 'url' '')
             $current = ''
@@ -414,7 +449,8 @@ function DrawerNav($slug) {
                     $links += $link
                 }
                 if ($links.Count -eq 0) { continue }
-                $html += '<div class="drawer-nav__group"><h3>' + (E (P $group 'title')) + '</h3><ul>'
+                # Same as the desktop mega panel: a label, not a heading.
+                $html += '<div class="drawer-nav__group" role="group" aria-label="' + (E (P $group 'title')) + '"><p class="drawer-nav__group-title">' + (E (P $group 'title')) + '</p><ul>'
                 foreach ($link in $links) {
                     $target = [string](P $link 'url' '')
                     $c = ''
@@ -444,7 +480,7 @@ function Header($slug) {
     $html += '<input type="search" id="header-search-input" name="q" placeholder="Search lessons and papers"></form>'
     $html += '<div class="header-actions">'
     if (PubIsLive) {
-        $html += '<a class="header-link header-link--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
+        $html += '<a class="header-link header-link--accent' + (PubExtClass) + '" href="' + (E (Url 'PUBLICATIONS_WEBSITE_URL')) + '"' + (PubExtAttrs) + '>' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
     }
     else {
         # The bookshop has no published address yet, so this goes to the page
@@ -519,7 +555,7 @@ function Footer() {
 
     $html += '<div class="footer-col"><h3>Bookshop</h3><ul>'
     if (PubIsLive) {
-        $html += '<li><a class="ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a></li>'
+        $html += '<li><a class="' + ((PubExtClass).Trim()) + '" href="' + (E (Url 'PUBLICATIONS_WEBSITE_URL')) + '"' + (PubExtAttrs) + '>' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a></li>'
     }
     else {
         $html += '<li><a href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a></li>'
@@ -529,7 +565,7 @@ function Footer() {
     $html += '</ul></div></div>'
 
     $html += '<div class="footer-bottom"><p>&copy; ' + $year + ' ' + (E $script:Config.siteName) + '. Materials on this site are for educational use.</p>'
-    $sep = if (PubIsLive) { ' is a separate website.' } else { ' is a separate website, coming soon.' }
+    $sep = if (PubIsExternal) { ' is a separate website.' } elseif (PubIsLive) { ' is a separate section of this website.' } else { ' is a separate section of this website, coming soon.' }
     $html += '<p>' + (E $script:Config.publicationsName) + (E $sep) + '</p></div>'
     return $html + '</div></footer>'
 }
@@ -633,7 +669,7 @@ function RenderBlock($block) {
                     $note = ''
                     if ($isExt) {
                         $e = ' target="_blank" rel="noopener" class="ext"'
-                        $note = '<span class="visually-hidden"> (external website, opens in a new tab)</span>'
+                        $note = '<span class="visually-hidden">' + (PubExtNote) + '</span>'
                     }
                     $html += '<h3><a href="' + (E (Url $target)) + '"' + $e + '>' + $title + $note + '</a></h3>'
                 }
@@ -767,6 +803,375 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'payment-instructions' {
+            # Bank details live in exactly one place, data/payments.json, and
+            # are read from there by every page that needs them. They are
+            # never shown on the homepage, and they stay inside a closed
+            # panel until the visitor chooses to open it.
+            $wantId = [string](P $block 'purpose' 'premium')
+            $purpose = $null
+            foreach ($p in $paymentPurposes) { if ([string](P $p 'id') -eq $wantId) { $purpose = $p } }
+            if ($null -eq $purpose) { return '' }
+
+            $bank = $paymentBank
+            $waNum = [string]$paymentConfig.whatsappInternational
+            $waShow = [string]$paymentConfig.whatsappDisplay
+            $template = [string](P $purpose 'template')
+            $waHref = 'https://wa.me/' + $waNum + '?text=' + [uri]::EscapeDataString($template)
+
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<details class="paypanel">'
+            $html += '<summary class="paypanel__summary"><span class="paypanel__label">Payment Instructions</span>'
+            $html += '<span class="paypanel__hint">' + (E ([string](P $purpose 'title'))) + '</span></summary>'
+            $html += '<div class="paypanel__body">'
+
+            $html += '<dl class="paybank">'
+            $html += '<div class="paybank__row"><dt>Account holder</dt><dd><strong>' + (E ([string]$bank.accountHolder)) + '</strong></dd></div>'
+            $html += '<div class="paybank__row"><dt>Bank</dt><dd>' + (E ([string]$bank.bankName)) + '</dd></div>'
+            $html += '<div class="paybank__row"><dt>Branch</dt><dd>' + (E ([string]$bank.branch)) + '</dd></div>'
+            $html += '<div class="paybank__row"><dt>Account number</dt><dd>' + (E ([string]$bank.accountNumber)) + '</dd></div>'
+            $html += '<div class="paybank__row"><dt>Amount</dt><dd>' + (E ([string](P $purpose 'amountLabel'))) + '</dd></div>'
+            $html += '<div class="paybank__row"><dt>Reference</dt><dd>' + (E ([string](P $purpose 'referenceLabel'))) + '</dd></div>'
+            $html += '</dl>'
+
+            $html += '<div class="callout callout--warn paypanel__notice"><p class="mb-0">' + (E ([string]$paymentConfig.notice)) + '</p></div>'
+
+            $sendWith = AsList (P $purpose 'sendWith')
+            if ($sendWith.Count) {
+                $html += '<h3 class="paypanel__h">Send these with your receipt</h3><ul class="paylist">'
+                foreach ($s in $sendWith) { $html += '<li>' + (E ([string]$s)) + '</li>' }
+                $html += '</ul>'
+            }
+            $note = [string](P $purpose 'note')
+            if ($note) { $html += '<p class="paypanel__note">' + (E $note) + '</p>' }
+
+            $html += '<p class="paypanel__go"><a class="btn btn--whatsapp" href="' + (E $waHref) + '" target="_blank" rel="noopener">'
+            $html += 'Send payment receipt through WhatsApp<span class="visually-hidden"> on ' + (E $waShow) + '</span></a></p>'
+            $html += '<p class="paypanel__small">The button opens WhatsApp on ' + (E $waShow) + ' with the details already written out. Attach your receipt as a picture in the same conversation.</p>'
+
+            $html += '<p class="paypanel__small">This website cannot check a bank transfer by itself, so every payment is confirmed by a person. Never send an online banking password, PIN, one-time code or card number to anyone, including us.</p>'
+            $html += '</div></details>'
+            return $html + '</div></section>'
+        }
+
+        'destinations' {
+            # Two large homepage cards. The whole card is clickable, but the
+            # link lives on the title only, so keyboard users get one tab
+            # stop per card rather than two.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<ul class="dcards">'
+            foreach ($d in (AsList (P $block 'items'))) {
+                $style = [string](P $d 'style' 'premium')
+                $hasImg = [bool]([string](P $d 'image'))
+                $html += '<li class="dcard dcard--' + (E $style) + $(if ($hasImg) { ' dcard--photo' } else { '' }) + '">'
+                # A photograph if one has been supplied for this card,
+                # otherwise a short letter mark in the style used elsewhere.
+                # The image is decorative beside the title it sits with, so
+                # an empty alt keeps it out of the screen-reader's way unless
+                # a real description is given in the page file.
+                $img = [string](P $d 'image')
+                $icon = [string](P $d 'icon')
+                if ($img) {
+                    $w = [string](P $d 'imageWidth')
+                    $h = [string](P $d 'imageHeight')
+                    $dim = ''
+                    if ($w -and $h) { $dim = ' width="' + (E $w) + '" height="' + (E $h) + '"' }
+                    $html += '<span class="dcard__media"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $d 'imageAlt'))) + '"' + $dim + ' loading="lazy" decoding="async"></span>'
+                }
+                elseif ($icon) { $html += '<span class="dcard__icon" aria-hidden="true">' + (E $icon) + '</span>' }
+                $html += '<h3 class="dcard__title"><a href="' + (E (Url ([string](P $d 'url')))) + '">' + (E ([string](P $d 'title'))) + '</a></h3>'
+                $html += '<p class="dcard__text">' + (E ([string](P $d 'text'))) + '</p>'
+                $html += '<p class="dcard__more" aria-hidden="true">' + (E ([string](P $d 'more' 'Open'))) + ' &rarr;</p>'
+                $html += '</li>'
+            }
+            return $html + '</ul></div></section>'
+        }
+
+        'portrait' {
+            # A photograph beside a short introduction. Two columns on a
+            # desktop, stacked and centred on a phone. The image keeps its
+            # natural proportions and is never cropped by CSS.
+            $img = [string](P $block 'image')
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="portrait">'
+            if ($img) {
+                $wAttr = [string](P $block 'width'); $hAttr = [string](P $block 'height')
+                $dims = ''
+                if ($wAttr -and $hAttr) { $dims = ' width="' + (E $wAttr) + '" height="' + (E $hAttr) + '"' }
+                $html += '<figure class="portrait__figure">'
+                $html += '<img class="portrait__img" src="' + (E (Url $img)) + '" alt="' + (E ([string](P $block 'alt'))) + '"' + $dims + ' loading="eager" decoding="async">'
+                $cap = [string](P $block 'caption')
+                if ($cap) { $html += '<figcaption class="portrait__caption">' + (E $cap) + '</figcaption>' }
+                $html += '</figure>'
+            }
+            $html += '<div class="portrait__body">'
+            $nm = [string](P $block 'name')
+            if ($nm) { $html += '<p class="portrait__name">' + (E $nm) + '</p>' }
+            $role = [string](P $block 'role')
+            if ($role) { $html += '<p class="portrait__role">' + (E $role) + '</p>' }
+            $html += Paragraphs (P $block 'text')
+            foreach ($b in (AsList (P $block 'buttons'))) {
+                $html += '<p class="portrait__go"><a class="btn btn--sm btn--outline" href="' + (E (Url ([string](P $b 'url')))) + '">' + (E ([string](P $b 'label'))) + '</a></p>'
+            }
+            $html += '</div></div>'
+            return $html + '</div></section>'
+        }
+
+        'publications-catalogue' {
+            # Complete books and ebooks from data/publications.json. This is
+            # a different section from Premium Resources and reads a
+            # different file: books here, resource collections there.
+            $books = @()
+            foreach ($b in $publicationBooks) { if ((P $b 'published' $true) -eq $true) { $books += $b } }
+
+            $html = (SectionOpen $block) + (SectionHead $block)
+            if ($books.Count -eq 0) {
+                $html += '<div class="callout callout--note"><p class="callout__title">Titles are being prepared</p>'
+                $html += '<p>The catalogue is being prepared. Titles, sample pages and prices will be published here as each book is ready.</p>'
+                $html += '<p class="mb-0">In the meantime, <a href="' + (E (Url 'about/rcf-publications/')) + '">About RCF Publications</a> explains what we publish, and you are welcome to <a href="' + (E (Url 'contact/')) + '">ask us about a particular title</a>.</p></div>'
+                return $html + '</div></section>'
+            }
+
+            $html += '<ul class="pcards pcards--books">'
+            foreach ($b in $books) {
+                $html += '<li class="pcard pcard--book">'
+                $img = [string](P $b 'image')
+                if ($img) {
+                    $html += '<div class="pcard__cover"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $b 'imageAlt'))) + '" loading="lazy" decoding="async"></div>'
+                }
+                $html += '<div class="pcard__body">'
+                $badge = [string](P $b 'badge')
+                if ($badge) { $html += '<p class="pcard__badge">' + (E $badge) + '</p>' }
+                $html += '<h3 class="pcard__title">' + (E ([string](P $b 'title'))) + '</h3>'
+                $auth = [string](P $b 'author'); if ($auth) { $html += '<p class="pcard__author">by ' + (E $auth) + '</p>' }
+                $cat = [string](P $b 'category')
+                if ($cat) { $html += '<p class="pcard__tags"><span class="pcard__tag">' + (E $cat) + '</span></p>' }
+                $meta = @()
+                $aud = [string](P $b 'audience'); if ($aud) { $meta += (E $aud) }
+                $fmt = [string](P $b 'format');   if ($fmt) { $meta += (E $fmt) }
+                if ($meta.Count) { $html += '<p class="pcard__meta">' + ($meta -join ' &middot; ') + '</p>' }
+                $d = [string](P $b 'description'); if ($d) { $html += '<p class="pcard__text">' + (E $d) + '</p>' }
+                $code = [string](P $b 'code')
+                if ($code) { $html += '<p class="pcard__code">Product code: <strong>' + (E $code) + '</strong></p>' }
+                $price = [string](P $b 'price'); if ($price) { $html += '<p class="pcard__price">' + (E $price) + '</p>' }
+                $html += '</div>'
+                $u = [string](P $b 'url')
+                if ($u) {
+                    $label = [string](P $b 'buttonLabel' 'View details')
+                    $html += '<p class="pcard__go"><a class="btn btn--sm btn--accent" href="' + (E (Url $u)) + '">' + (E $label) + '<span class="visually-hidden">, ' + (E ([string](P $b 'title'))) + '</span></a></p>'
+                }
+                $html += '</li>'
+            }
+            return $html + '</ul></div></section>'
+        }
+
+        'premium-products' {
+            # Paid resources from data/premium-products.json. Nothing is
+            # invented: when the list is empty the section says so plainly
+            # instead of showing pretend products.
+            # 'category' limits the list to student or teacher resources.
+            # Leave it out to show every published resource.
+            $wantCat = [string](P $block 'category')
+            $items = @()
+            foreach ($p in $premiumProducts) {
+                if ((P $p 'published' $true) -ne $true) { continue }
+                if ($wantCat -and ([string](P $p 'category') -ne $wantCat)) { continue }
+                $items += $p
+            }
+
+            $html = (SectionOpen $block) + (SectionHead $block)
+            if ($items.Count -eq 0) {
+                $html += '<div class="callout callout--note"><p class="callout__title">Resources are being prepared</p>'
+                $html += '<p>These resource collections are being prepared. Each one will be listed here with a full description and its price as it becomes available.</p>'
+                $html += '<p class="mb-0">For current rates, or to ask about a particular resource, please <a href="' + (E (Url 'contact/')) + '">contact us</a>. Everything in the free sections of this website stays free and is unaffected.</p></div>'
+                return $html + '</div></section>'
+            }
+
+            $html += '<ul class="pcards">'
+            foreach ($p in $items) {
+                $badge = [string](P $p 'badge')
+                $html += '<li class="pcard">'
+                $img = [string](P $p 'image')
+                if ($img) {
+                    $html += '<div class="pcard__cover"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $p 'imageAlt'))) + '" loading="lazy" decoding="async"></div>'
+                }
+                $html += '<div class="pcard__body">'
+                if ($badge) { $html += '<p class="pcard__badge">' + (E $badge) + '</p>' }
+                $html += '<h3 class="pcard__title">' + (E ([string](P $p 'title'))) + '</h3>'
+                # Grade, skill and type are the things a buyer scans for.
+                $tags = @()
+                foreach ($f in @('grade','skill','resourceType','purpose')) {
+                    $v = [string](P $p $f); if ($v) { $tags += '<span class="pcard__tag">' + (E $v) + '</span>' }
+                }
+                if ($tags.Count) { $html += '<p class="pcard__tags">' + ($tags -join '') + '</p>' }
+                $meta = @()
+                $qty = [string](P $p 'quantity'); if ($qty) { $meta += (E $qty) }
+                $aud = [string](P $p 'audience'); if ($aud) { $meta += (E $aud) }
+                $fmt = [string](P $p 'format');   if ($fmt) { $meta += (E $fmt) }
+                if ($meta.Count) { $html += '<p class="pcard__meta">' + ($meta -join ' &middot; ') + '</p>' }
+                # The product code is what identifies a purchase in WhatsApp.
+                $code = [string](P $p 'code')
+                if ($code) { $html += '<p class="pcard__code">Product code: <strong>' + (E $code) + '</strong></p>' }
+                $desc = [string](P $p 'description'); if ($desc) { $html += '<p class="pcard__text">' + (E $desc) + '</p>' }
+                $src = [string](P $p 'source'); if ($src) { $html += '<p class="pcard__source">Sold by ' + (E $src) + '</p>' }
+                if ((P $p 'affiliate') -eq $true) {
+                    $html += '<p class="pcard__note">RCF English may earn a commission on this product.</p>'
+                }
+                $price = [string](P $p 'price'); if ($price) { $html += '<p class="pcard__price">' + (E $price) + '</p>' }
+                $html += '</div>'
+                $u = [string](P $p 'url')
+                if ($u) {
+                    $label = [string](P $p 'buttonLabel' 'View details')
+                    $html += '<p class="pcard__go"><a class="btn btn--sm btn--accent" href="' + (E (Url $u)) + '">' + (E $label) + '<span class="visually-hidden">, ' + (E ([string](P $p 'title'))) + '</span></a></p>'
+                }
+                $html += '</li>'
+            }
+            return $html + '</ul></div></section>'
+        }
+
+        'promo-packages' {
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<ul class="ppacks">'
+            foreach ($k in $promoPackages) {
+                $html += '<li class="ppack"><h3 class="ppack__name">' + (E ([string](P $k 'name'))) + '</h3>'
+                $html += '<p class="ppack__duration">' + (E ([string](P $k 'duration'))) + '</p>'
+                $html += '<p class="ppack__price">' + (E ([string](P $k 'price'))) + '</p>'
+                $html += '<p class="ppack__summary">' + (E ([string](P $k 'summary'))) + '</p></li>'
+            }
+            return $html + '</ul></div></section>'
+        }
+
+        'offers' {
+            # RCF's own offers on its own products, filtered by category.
+            # These are not paid advertisements, so no Sponsored label is
+            # shown. Same date and status rules as the advertisements, so an
+            # offer can be scheduled ahead and expires on its own.
+            $wantCat = [string](P $block 'category')
+            $today = [datetime]::Today
+            $live = @()
+            foreach ($o in $promoOffers) {
+                if ([string](P $o 'status') -ne 'active') { continue }
+                if ($wantCat -and ([string](P $o 'category') -ne $wantCat)) { continue }
+                $sd = $null; $ed = $null
+                $sdRaw = [string](P $o 'startDate')
+                $edRaw = [string](P $o 'expiryDate')
+                if ($sdRaw) { try { $sd = [datetime]::ParseExact($sdRaw, 'yyyy-MM-dd', $null) } catch { $sd = $null } }
+                if ($edRaw) { try { $ed = [datetime]::ParseExact($edRaw, 'yyyy-MM-dd', $null) } catch { $ed = $null } }
+                if ($null -ne $sd -and $today -lt $sd) { continue }
+                if ($null -ne $ed -and $today -gt $ed) { continue }
+                $live += $o
+            }
+            $ordered = @($live | Where-Object { (P $_ 'featured') -eq $true }) + @($live | Where-Object { (P $_ 'featured') -ne $true })
+
+            $html = (SectionOpen $block) + (SectionHead $block)
+            if ($ordered.Count -eq 0) {
+                $t = [string](P $block 'emptyTitle' 'No offers at the moment')
+                $x = [string](P $block 'emptyText' 'There is nothing running just now. Any offer will be published here, with its own dates and conditions.')
+                $html += '<div class="callout callout--note"><p class="callout__title">' + (E $t) + '</p>'
+                $html += '<p' + $(if (P $block 'emptyLinkUrl') { '' } else { ' class="mb-0"' }) + '>' + (E $x) + '</p>'
+                $lu = [string](P $block 'emptyLinkUrl')
+                if ($lu) {
+                    $ll = [string](P $block 'emptyLinkLabel' 'Find out more')
+                    $html += '<p class="mb-0"><a class="btn btn--sm btn--outline" href="' + (E (Url $lu)) + '">' + (E $ll) + '</a></p>'
+                }
+                $html += '</div>'
+                return $html + '</div></section>'
+            }
+
+            $html += '<ul class="ads" data-offers>'
+            foreach ($o in $ordered) {
+                $feat = ((P $o 'featured') -eq $true)
+                $ed = [string](P $o 'expiryDate')
+                $html += '<li class="ad ad--offer' + $(if ($feat) { ' ad--featured' } else { '' }) + '" data-offer-expiry="' + (E $ed) + '">'
+                $html += '<div class="ad__body"><p class="ad__labels">'
+                $html += '<span class="ad__offer">RCF offer</span>'
+                if ($feat) { $html += '<span class="ad__featured">Featured</span>' }
+                $html += '</p>'
+                $html += '<h3 class="ad__title">' + (E ([string](P $o 'title'))) + '</h3>'
+                $d = [string](P $o 'description'); if ($d) { $html += '<p class="ad__text">' + (E $d) + '</p>' }
+                $rows = @()
+                foreach ($pair in @(@('terms','Conditions'), @('expiryDate','Ends'))) {
+                    $v = [string](P $o $pair[0])
+                    if ($v) { $rows += '<div class="ad__row"><dt>' + $pair[1] + '</dt><dd>' + (E $v) + '</dd></div>' }
+                }
+                if ($rows.Count) { $html += '<dl class="ad__facts">' + ($rows -join '') + '</dl>' }
+                $html += '</div>'
+                $lk = [string](P $o 'url')
+                if ($lk) {
+                    $ll = [string](P $o 'linkLabel' 'See the offer')
+                    $html += '<p class="ad__go"><a class="btn btn--sm btn--accent" href="' + (E (Url $lk)) + '">' + (E $ll) + '<span class="visually-hidden">: ' + (E ([string](P $o 'title'))) + '</span></a></p>'
+                }
+                $html += '</li>'
+            }
+            return $html + '</ul></div></section>'
+        }
+
+        'promotions' {
+            # Advertisements from data/promotions.json. An advertisement is
+            # shown only when status is 'active' AND today is inside its
+            # start and expiry dates. The expiry date is also written into
+            # the page so the visitor's own browser can hide a listing that
+            # has run out since the site was last built.
+            $today = [datetime]::Today
+            $live = @()
+            foreach ($a in $promoAds) {
+                if ([string](P $a 'status') -ne 'active') { continue }
+                $sd = $null; $ed = $null
+                $sdRaw = [string](P $a 'startDate')
+                $edRaw = [string](P $a 'expiryDate')
+                if ($sdRaw) { try { $sd = [datetime]::ParseExact($sdRaw, 'yyyy-MM-dd', $null) } catch { $sd = $null } }
+                if ($edRaw) { try { $ed = [datetime]::ParseExact($edRaw, 'yyyy-MM-dd', $null) } catch { $ed = $null } }
+                if ($null -ne $sd -and $today -lt $sd) { continue }
+                if ($null -ne $ed -and $today -gt $ed) { continue }
+                $live += $a
+            }
+            # Featured first, otherwise the order in the file is kept.
+            $ordered = @($live | Where-Object { (P $_ 'featured') -eq $true }) + @($live | Where-Object { (P $_ 'featured') -ne $true })
+
+            $html = (SectionOpen $block) + (SectionHead $block)
+            if ($ordered.Count -eq 0) {
+                $html += '<div class="callout callout--note"><p class="callout__title">No listings at the moment</p>'
+                $html += '<p>There are no advertisements running just now. When teachers and institutes book a listing it will appear here.</p>'
+                $html += '<p class="mb-0">If you teach, you are welcome to advertise. The packages and the steps are further down this page.</p></div>'
+                return $html + '</div></section>'
+            }
+
+            $html += '<ul class="ads" data-ads>'
+            foreach ($a in $ordered) {
+                $feat = ((P $a 'featured') -eq $true)
+                $ed = [string](P $a 'expiryDate')
+                $html += '<li class="ad' + $(if ($feat) { ' ad--featured' } else { '' }) + '" data-ad-expiry="' + (E $ed) + '">'
+                $img = [string](P $a 'image')
+                if ($img) {
+                    $html += '<div class="ad__poster"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $a 'imageAlt'))) + '" loading="lazy" decoding="async"></div>'
+                }
+                $html += '<div class="ad__body"><p class="ad__labels">'
+                $html += '<span class="ad__sponsored">Sponsored<span class="visually-hidden"> listing, this is a paid advertisement</span></span>'
+                if ($feat) { $html += '<span class="ad__featured">Featured</span>' }
+                $html += '</p>'
+                $html += '<h3 class="ad__title">' + (E ([string](P $a 'courseTitle'))) + '</h3>'
+                $html += '<p class="ad__by">' + (E ([string](P $a 'advertiser'))) + '</p>'
+                $rows = @()
+                foreach ($pair in @(@('audience','For'), @('mode','Class'), @('location','Where'), @('schedule','When'))) {
+                    $v = [string](P $a $pair[0])
+                    if ($v) { $rows += '<div class="ad__row"><dt>' + $pair[1] + '</dt><dd>' + (E $v) + '</dd></div>' }
+                }
+                if ($rows.Count) { $html += '<dl class="ad__facts">' + ($rows -join '') + '</dl>' }
+                $d = [string](P $a 'description'); if ($d) { $html += '<p class="ad__text">' + (E $d) + '</p>' }
+                $html += '</div><p class="ad__go">'
+                $wa = [string](P $a 'whatsapp')
+                if ($wa) { $html += '<a class="btn btn--sm btn--accent" href="https://wa.me/' + (E $wa) + '" rel="noopener">WhatsApp<span class="visually-hidden"> ' + (E ([string](P $a 'advertiser'))) + '</span></a>' }
+                $ph = [string](P $a 'phone')
+                if ($ph) { $html += '<a class="btn btn--sm btn--outline" href="tel:' + (E ($ph -replace '\s','')) + '">' + (E $ph) + '</a>' }
+                $lk = [string](P $a 'link')
+                if ($lk) { $html += '<a class="btn btn--sm btn--outline" href="' + (E (Url $lk)) + '" rel="noopener">View details<span class="visually-hidden">, ' + (E ([string](P $a 'courseTitle'))) + '</span></a>' }
+                $html += '</p></li>'
+            }
+            $html += '</ul>'
+            $html += '<p class="ads-empty" data-ads-empty hidden>All current listings have now run out. New advertisements will appear here when they are booked.</p>'
+            return $html + '</div></section>'
+        }
+
         'grade-resources' {
             # Reads data/resources.json and shows only entries that are published,
             # match this page's grade, and have passed the signed-out access check.
@@ -831,12 +1236,18 @@ function RenderBlock($block) {
             if ($fixed) { $fixedJson = (ConvertTo-Json $fixed -Compress) }
             $filters = (AsList (P $block 'filters')) -join ','
             $html = (SectionOpen $block) + (SectionHead $block)
-            $html += '<div class="browse" data-source="' + (E $source) + '" data-fixed="' + (E $fixedJson) + '" data-filters="' + (E $filters) + '">'
+            $limit = [int](P $block 'limit' 0)
+            $html += '<div class="browse" data-source="' + (E $source) + '" data-fixed="' + (E $fixedJson) + '" data-filters="' + (E $filters) + '" data-limit="' + $limit + '">'
             $html += '<div class="toolbar" data-controls><p class="text-muted mb-0">Filters load in a moment&hellip;</p></div>'
             $html += '<div class="results-bar"><p class="results-count" data-count>&nbsp;</p>'
             $html += '<p class="text-small text-muted mb-0">' + (E (P $block 'note' 'Only resources that RCF English is permitted to publish or link to are listed here.')) + '</p></div>'
             $html += '<p class="visually-hidden" role="status" aria-live="polite" data-live></p>'
-            $html += StaticList $source $fixed
+            $html += StaticList $source $fixed $limit
+            $allUrl = [string](P $block 'allUrl')
+            if ($allUrl) {
+                $allLabel = [string](P $block 'allLabel' 'View all resources')
+                $html += '<p class="browse__all" data-all><a class="btn btn--outline" href="' + (E (Url $allUrl)) + '">' + (E $allLabel) + '</a></p>'
+            }
             return $html + '</div></div></section>'
         }
 
@@ -874,13 +1285,13 @@ function RenderBlock($block) {
         'publications' {
             $onFallbackPage = ($script:PageSlug -eq $script:PubFallback.Trim('/'))
             $html = (SectionOpen $block) + '<div class="promo"><div>'
-            if (PubIsLive) { $html += '<span class="section__eyebrow">Separate bookshop website</span>' }
+            if (PubIsLive) { $html += '<span class="section__eyebrow">' + $(if (PubIsExternal) { 'Separate bookshop website' } else { 'Books and ebooks' }) + '</span>' }
             else { $html += '<span class="section__eyebrow">Separate bookshop website &mdash; coming soon</span>' }
             $html += '<h2>' + (E (P $block 'heading' 'RCF Publications')) + '</h2>'
             $html += Paragraphs (P $block 'text')
             $html += '<div class="btn-row">'
             if (PubIsLive) {
-                $html += '<a class="btn btn--accent ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">Visit ' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a>'
+                $html += '<a class="btn btn--accent' + (PubExtClass) + '" href="' + (E (Url 'PUBLICATIONS_WEBSITE_URL')) + '"' + (PubExtAttrs) + '>Visit ' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubExtNote) + '</span></a>'
                 if (-not $onFallbackPage) {
                     $html += '<a class="btn btn--ghost-light" href="' + (E (Url $script:PubFallback)) + '">What ' + (E $script:Config.publicationsName) + ' produces</a>'
                 }
@@ -897,8 +1308,11 @@ function RenderBlock($block) {
             $html += '<div class="promo__aside"><h3>You will find</h3><ul>'
             foreach ($i in (AsList (P $block 'items'))) { $html += '<li>' + (E $i) + '</li>' }
             $html += '</ul><p class="text-small mb-0">'
-            if (PubIsLive) {
+            if (PubIsExternal) {
                 $html += (E $script:Config.publicationsName) + ' is a separate website with its own ordering arrangements. This link opens it in a new tab.'
+            }
+            elseif (PubIsLive) {
+                $html += (E $script:Config.publicationsName) + ' is a separate section of this website, with its own ordering arrangements.'
             }
             else {
                 $html += (E $script:Config.publicationsName) + ' will be a separate website with its own ordering arrangements. It has not been published yet, so there is nothing to link to at the moment.'
@@ -929,7 +1343,7 @@ function RenderBlock($block) {
             $html += '<div class="related-books"><h3>' + (E (P $block 'heading' 'Find related books')) + '</h3>'
             $html += Paragraphs (P $block 'text')
             if (PubIsLive) {
-                $html += '<p class="mb-0"><a class="btn btn--sm btn--outline ext" href="' + (E $script:Config.PUBLICATIONS_WEBSITE_URL) + '" target="_blank" rel="noopener">Browse ' + (E $script:Config.publicationsName) + '<span class="visually-hidden"> (external website, opens in a new tab)</span></a></p>'
+                $html += '<p class="mb-0"><a class="btn btn--sm btn--outline' + (PubExtClass) + '" href="' + (E (Url 'PUBLICATIONS_WEBSITE_URL')) + '"' + (PubExtAttrs) + '>Browse ' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubExtNote) + '</span></a></p>'
             }
             else {
                 $html += '<p class="mb-0"><span class="badge-soon">Coming soon</span> '
@@ -989,7 +1403,7 @@ function TypeLabel($value) {
     return ((Get-Culture).TextInfo.ToTitleCase(($key -replace '[-_]', ' ')))
 }
 
-function StaticList($source, $fixed) {
+function StaticList($source, $fixed, $limit = 0) {
     $records = @()
     if ($source -eq 'papers') { $records = $papers }
     elseif ($source -eq 'resources') { $records = $resources }
@@ -1009,8 +1423,13 @@ function StaticList($source, $fixed) {
         '<p>Approved resources will appear on this page as they are added. You can <a href="' + (E (Url 'search/')) + '">search the whole site</a> or <a href="' + (E (Url 'contact/')) + '">ask for a particular resource</a>.</p></div>'
     }
 
+    # A long list buries everything under it. Where a page asks for a limit,
+    # only that many are written into the page and a button offers the rest.
+    $shown = $records
+    if ($limit -gt 0 -and $records.Count -gt $limit) { $shown = @($records | Select-Object -First $limit) }
+
     $html = '<ul class="result-list" data-results>'
-    foreach ($r in $records) {
+    foreach ($r in $shown) {
         $target = [string](P $r 'url' (P $r 'file' ''))
         $isExt = $target -match '^https?:'
         $html += '<li class="result"><span class="result__thumb" aria-hidden="true">' + (E (TypeLabel (P $r 'type'))) + '</span><div><div class="tag-row">'
@@ -1020,6 +1439,11 @@ function StaticList($source, $fixed) {
         if (P $r 'year')  { $html += '<span class="tag tag--year">' + (E (P $r 'year')) + '</span>' }
         if ((P $r 'answers') -eq 'yes') { $html += '<span class="tag tag--answers">Answers included</span>' }
         # Only set on papers whose first page somebody has actually looked at.
+        # edupub.gov.lk serves no HTTPS at all, so the link has to stay
+        # http://. Say so plainly rather than leave it looking accidental.
+        if ($target -match '^http://') {
+            $html += '<span class="tag tag--http" title="This official government site is served over plain HTTP, not HTTPS. The link still works; the connection to that site is not encrypted.">Official site, no HTTPS</span>'
+        }
         if ((P $r 'clearScan') -eq 'yes') {
             $html += '<span class="tag tag--clear" title="The first page of this PDF was checked on screen: straight, sharp, complete, and with no student name on it.">Clear scan</span>'
         }

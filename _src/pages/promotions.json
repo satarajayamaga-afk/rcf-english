@@ -1,0 +1,168 @@
+{
+  "pages": [
+    {
+      "slug": "promotions",
+      "title": "Special Offers",
+      "metaTitle": "Special Offers | Tuition, Courses and Promotions | RCF English",
+      "description": "Discover tuition classes, educational courses, sponsored opportunities and current promotions. Paid advertisements are clearly labelled Sponsored.",
+      "keywords": "special offers, tuition classes Sri Lanka, English classes, online tutors, teacher training courses, examination preparation, educational programmes, book offers, course discounts",
+      "kicker": "Offers and promotions",
+      "kind": "page",
+      "scripts": ["promotions", "forms"],
+      "breadcrumbs": [],
+      "backTo": { "label": "Home", "url": "" },
+      "hero": {
+        "text": "Discover tuition classes, educational courses, sponsored opportunities and current promotions. Offers on our own books, resources and courses are listed separately from paid advertisements placed by other teachers and institutes.",
+        "buttons": [
+          { "label": "Advertise with us", "url": "promotions/#advertise", "style": "btn--accent" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Please read before contacting an advertiser",
+          "text": [
+            "Advertisements on this page are paid promotional listings. RCF English provides advertising space but does not guarantee enrolment, examination results or the quality of services offered. Students and parents should verify course details directly with the advertiser before making a payment."
+          ]
+        },
+        {
+          "type": "promotions",
+          "heading": "Tuition & Course Promotions",
+          "eyebrow": "Paid advertisements",
+          "id": "tuition-promotions",
+          "intro": [
+            "Every listing here is a paid advertisement and carries a **Sponsored** label. A listing marked **Featured** has paid for a more prominent position; it does not mean RCF English recommends it above the others."
+          ]
+        },
+        {
+          "type": "offers",
+          "category": "publications",
+          "heading": "RCF Publications Offers",
+          "eyebrow": "Books and ebooks",
+          "id": "publications-offers",
+          "intro": ["Offers on books and ebooks published by RCF Publications. These are our own offers, not paid advertisements."],
+          "emptyTitle": "No book offers at the moment",
+          "emptyText": "There is no offer running on RCF Publications titles just now. Any offer will be published here with its own dates and conditions.",
+          "emptyLinkUrl": "rcf-publications/",
+          "emptyLinkLabel": "Browse RCF Publications"
+        },
+        {
+          "type": "offers",
+          "category": "premium",
+          "heading": "Premium Resource Offers",
+          "eyebrow": "Resource collections",
+          "id": "premium-offers",
+          "variant": "tint",
+          "intro": ["Offers on downloadable resource collections for students and for English teachers."],
+          "emptyTitle": "No resource offers at the moment",
+          "emptyText": "There is no offer running on Premium Resource collections just now. Any offer will be published here with its own dates and conditions.",
+          "emptyLinkUrl": "premium-resources/",
+          "emptyLinkLabel": "Browse Premium Resources"
+        },
+        {
+          "type": "offers",
+          "category": "academy",
+          "heading": "RCF Online Academy Offers",
+          "eyebrow": "Classes and courses",
+          "id": "academy-offers",
+          "intro": ["Offers on English and Literature courses taught by Rohana Fernando through RCF Online Academy."],
+          "emptyTitle": "No course offers at the moment",
+          "emptyText": "There is no offer running on RCF Online Academy courses just now. Schedules, fees and available places are always confirmed on WhatsApp.",
+          "emptyLinkUrl": "rcf-classes/",
+          "emptyLinkLabel": "See the courses"
+        },
+        {
+          "type": "promo-packages",
+          "heading": "Advertise Your Class or Course",
+          "eyebrow": "Packages",
+          "id": "advertise",
+          "intro": [
+            "Three options are available. Rates are not published here because they are reviewed from time to time, so please ask for the current figure before you plan."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How an advertisement is published",
+          "eyebrow": "Five steps",
+          "variant": "navy",
+          "layout": "row",
+          "items": [
+            { "title": "You send the details", "text": ["Send your class information and your poster using the enquiry below."] },
+            { "title": "We review it", "text": ["We check that the advertisement is educational, clear and accurate."] },
+            { "title": "The fee is paid", "text": ["The advertising fee is paid in advance of publication."] },
+            { "title": "It is published", "text": ["Your listing appears for the period you have paid for."] },
+            { "title": "It ends", "text": ["At the end of the period the listing is removed or marked expired."] }
+          ]
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "advert",
+          "heading": "Paying for your listing",
+          "eyebrow": "Bank transfer",
+          "intro": ["The advertising fee is paid before the listing is published. Open the panel below for the account details."]
+        },
+        {
+          "type": "contactForm",
+          "heading": "Submit an Advertisement",
+          "variant": "tint",
+          "subject": "RCF English - advertising enquiry",
+          "mode": "whatsapp",
+          "intro": [
+            "Fill this in and it will open WhatsApp with your details written out, ready for you to send. Nothing is stored on this website and nothing is published until we have agreed it with you."
+          ],
+          "fields": [
+            { "name": "Teacher or institute name", "type": "text", "required": true },
+            { "name": "Contact person", "type": "text", "required": true },
+            { "name": "Email address", "type": "email", "required": true },
+            { "name": "Telephone or WhatsApp number", "type": "text", "required": true },
+            { "name": "Subject or course", "type": "text", "required": true },
+            { "name": "Grades or target audience", "type": "text", "required": true },
+            { "name": "Class type", "type": "select", "required": true, "options": ["Online", "In person", "Both online and in person"] },
+            { "name": "Location", "type": "text" },
+            { "name": "Package", "type": "select", "required": true, "options": ["Weekly Listing, 7 days", "Monthly Listing, 30 days", "Featured Promotion", "Not sure, please advise"] },
+            { "name": "Preferred starting date", "type": "text" },
+            { "name": "Advertisement description", "type": "textarea", "required": true },
+            { "name": "Poster", "type": "text" },
+            { "name": "I confirm the information above is accurate", "type": "select", "required": true, "options": ["Yes, it is accurate"] },
+            { "name": "I agree that RCF English may publish the contact details I have given", "type": "select", "required": true, "options": ["Yes, they may be published"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Sending your poster",
+          "text": [
+            "The form above cannot carry an image, because this website has no server to receive one. Send your poster as a picture in the same WhatsApp conversation once the message opens, or attach it to an email to us.",
+            "Posters are shown whole and are never cropped, so wording printed on your poster will not be cut off."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Advertising Policy",
+          "eyebrow": "The rules we follow",
+          "items": [
+            { "title": "Advertisements must relate to education", "text": ["Classes, courses, workshops, tuition and educational programmes. Anything unrelated to education is declined."] },
+            { "title": "Information must be truthful and current", "text": ["Qualifications, schedules, fees and contact details are the advertiser's responsibility, and they must be accurate on the day the advertisement runs."] },
+            { "title": "We may decline an advertisement", "text": ["RCF English may reject an advertisement that is misleading, inappropriate or of poor quality. We would rather run fewer advertisements than run bad ones."] },
+            { "title": "Payment comes before publication", "text": ["The advertising fee is paid in advance. The fee pays for the listing to be displayed. It does not buy students, and it does not guarantee that anyone will enrol."] },
+            { "title": "Listings end when the period ends", "text": ["At the end of the paid period the advertisement is removed or marked expired. Renewing requires another payment and a confirmation from you."] },
+            { "title": "We may remove an advertisement early", "text": ["If a serious inaccuracy comes to light, or complaints are received, RCF English may take a listing down before its period ends."] },
+            { "title": "No implied endorsement", "text": ["An advertisement must not suggest that RCF English endorses, recommends or is associated with the advertiser. Sponsored and Featured listings are always labelled so readers can tell what they are looking at."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Elsewhere on this site",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "RCF Online Academy", "text": "The classes taught by RCF English itself, which are not advertisements.", "url": "rcf-classes/" },
+            { "title": "Premium Resources", "text": "Paid books, guides and teaching resources.", "url": "premium-resources/" },
+            { "title": "Free resources", "text": "Lessons, past papers and activities, free to use.", "url": "resources/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

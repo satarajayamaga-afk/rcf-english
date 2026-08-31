@@ -72,46 +72,36 @@ end: `ol-english/grammar/`, `past-papers/`, `about/founder/`.
 
 ---
 
-## Task 1 — Change the bookshop address
+## Task 1 — Where RCF Publications lives
 
-The RCF Publications address is stored in **one place only**.
+RCF Publications is a **section of this website**, not a separate site. Its address
+is stored in one place only.
 
 1. Open **`_src/config.json`**.
-2. Find:
+2. You will find:
    ```json
-   "PUBLICATIONS_WEBSITE_URL": "PUBLICATIONS_WEBSITE_URL",
+   "PUBLICATIONS_WEBSITE_URL": "rcf-publications/",
    ```
-3. Replace the second one with the real address:
-   ```json
-   "PUBLICATIONS_WEBSITE_URL": "https://your-username.github.io/rcf-ebook-publications/",
-   ```
-4. Save, then run `build.cmd`.
+3. Leave it alone unless the bookshop ever moves to a website of its own.
 
-Every bookshop link on the site — the menu, the home page, the footer, the "Find
-related books" panels — now points at the real address. There are over 500 of them
-and you changed one line.
+Every publications link on the site — the menu, the home page, the footer, the
+"Find related books" panels — follows that one line. There are over 500 of them.
 
-### Before you have an address: "Coming soon"
+### If it ever becomes a separate website
 
-You do not have to do anything special while the bookshop is unpublished. The site
-handles it for you.
+Put a full address in instead:
 
-A placeholder must never become a link, because a link that leads nowhere is worse
-than no link at all. So while `PUBLICATIONS_WEBSITE_URL` is not a real `https://`
-address, the site automatically:
+```json
+"PUBLICATIONS_WEBSITE_URL": "https://example.org/bookshop/",
+```
 
-- shows **Coming soon** wherever the bookshop would have been linked;
-- sends those links to [About RCF Publications](about/rcf-publications/) instead,
-  which explains what the bookshop will offer;
-- turns the "Visit RCF Publications" buttons into plain markers that are not links;
-- adds a short notice to the two pages that describe the bookshop.
+Because the value now begins with `https://`, the site changes its own behaviour
+on the next `build.cmd`: every publications link becomes an external link, opens
+in a new tab, gains the external-link marker, and the wording that calls it "a
+section of this website" changes to "a separate website". **You never edit a page
+to make this happen.**
 
-The moment you paste in a real address and run `build.cmd`, all of that reverses on
-its own: the links become normal external links and every "Coming soon" marker
-disappears. **You never edit a page to make this happen.**
-
-If you want to see it work, put a real address in, run `build.cmd`, look at the site,
-then put the placeholder back and build again.
+Setting it back to `rcf-publications/` reverses all of it.
 
 ### Other settings in the same file
 
@@ -551,7 +541,70 @@ anywhere.
 
 ---
 
-## Task 8 — Change how the site looks
+## Task 8 — Special Offers and advertisements
+
+The **Special Offers** page at `promotions/` holds four separate sections. All of
+them read from **`data/promotions.json`**, and all of them show a professional
+"nothing at the moment" panel while they are empty. **Never type an offer or an
+advertisement straight into a page.**
+
+| Section on the page | Comes from | What belongs there |
+|---|---|---|
+| Tuition & Course Promotions | `ads` | Paid advertisements from other teachers and institutes |
+| RCF Publications Offers | `offers`, category `publications` | Our own offers on books and ebooks |
+| Premium Resource Offers | `offers`, category `premium` | Our own offers on resource collections |
+| RCF Online Academy Offers | `offers`, category `academy` | Our own offers on courses |
+
+The difference matters. An entry in `ads` is somebody else's paid advertisement and
+is automatically labelled **Sponsored**. An entry in `offers` is our own promotion
+and is labelled **RCF offer**. The two must never be mixed up.
+
+### Adding one of our own offers
+
+Add an entry to the `offers` list:
+
+```json
+{
+  "id": "grammar-book-launch",
+  "category": "publications",
+  "status": "active",
+  "title": "",
+  "description": "",
+  "terms": "",
+  "startDate": "2026-09-01",
+  "expiryDate": "2026-09-30",
+  "featured": false,
+  "url": "rcf-publications/",
+  "linkLabel": "Browse the catalogue"
+}
+```
+
+- `category` must be exactly `publications`, `premium` or `academy`. Anything else
+  and the offer appears nowhere at all.
+- It shows only when `status` is `active` **and** today falls inside the dates.
+- Both dates may be left empty. An empty `startDate` means "from now"; an empty
+  `expiryDate` means "until you remove it".
+- `featured: true` sorts it to the top of its own section.
+
+### How an offer ends by itself
+
+Two things retire an offer, and you need neither of them to remember a date:
+
+1. **At the next build**, an offer past its `expiryDate` is left out of the page.
+2. **In the visitor's browser**, an offer that ran out since the last build is
+   hidden using their own clock.
+
+That second step matters because this is a static website with no server. Nothing
+can run at midnight to retire a listing, so the page retires it on arrival instead.
+
+### Ending one early
+
+Change `"status": "active"` to `"status": "draft"` and build. Do not delete the
+entry — keeping it means you can run the same offer again later.
+
+---
+
+## Task 9 — Change how the site looks
 
 Open **`assets/css/styles.css`**. The colours are all at the very top:
 

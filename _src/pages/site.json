@@ -197,7 +197,7 @@
             { "heading": "The four learning sections", "text": ["[O/L English](ol-english/), [O/L Literature](ol-literature/), [General English](general-english/) and [A/L Literature](al-literature/). Each one has a landing page that explains the subject, and a menu of lessons underneath it."] },
             { "heading": "Past Papers", "text": ["[The Past Papers centre](past-papers/) holds past papers, model papers, marking schemes, revision papers and question banks, with filters for subject, year, paper and type."] },
             { "heading": "Teacher Resources", "text": ["[Teacher Resources](teacher-resources/) holds lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
-            { "heading": "RCF Online Academy", "text": ["[RCF Online Academy](rcf-classes/) describes the online classes conducted by R. C. Fernando, and how to ask about them on WhatsApp."] }
+            { "heading": "RCF Online Academy", "text": ["[RCF Online Academy](rcf-classes/) describes the online classes conducted by Rohana Fernando, and how to ask about them on WhatsApp."] }
           ]
         },
         {
@@ -273,7 +273,7 @@
           "items": [
             { "q": "What is RCF English?", "a": ["RCF English is an educational platform that brings together English-language learning, literature education, examination support, teacher resources, online classes and links to educational publications in one place."] },
             { "q": "Who is it for?", "a": ["School students, O/L and A/L learners, adult English learners, private candidates, schoolteachers, tuition teachers and parents. Particular attention is given to learners who need additional guidance, including those in rural and remote areas."] },
-            { "q": "Who runs it?", "a": ["RCF English was founded by R. C. Fernando, an experienced English teacher and lecturer. His qualifications and background are set out on the [Academic and Professional Background](about/background/) page."] },
+            { "q": "Who runs it?", "a": ["RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer. His qualifications and background are set out on the [Academic and Professional Background](about/background/) page."] },
             { "q": "Does it cost anything?", "a": ["No. Everything on this website is free to read and use. Books and study guides are sold separately through RCF Publications, which is a different website with its own ordering arrangements."] },
             { "q": "Is RCF English connected to any government body?", "a": ["No. RCF English is an independent educational platform. It is not endorsed by, approved by or affiliated with any government department or examination authority, and it makes no claim to be."] }
           ]
@@ -319,8 +319,8 @@
           "faq": true,
           "items": [
             { "q": "What is RCF Publications?", "a": ["RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials."] },
-            { "q": "Is it part of this website?", "a": ["No. RCF Publications operates through its own dedicated website. Links to it from RCF English open in a new tab and are marked as leaving this site."] },
-            { "q": "How do I buy a book?", "a": ["Ordering is arranged on the RCF Publications website. RCF English does not sell books and does not take payments of any kind."] }
+            { "q": "Is it part of this website?", "a": ["Yes. RCF Publications is a section of this website, kept separate from the free material so that paid and free resources are never confused."] },
+            { "q": "How do I buy a book?", "a": ["Choose the title, then follow the payment instructions on the page. Payment is by bank transfer, and you send the receipt through WhatsApp. No payment is processed on this website and no card details are ever requested."] }
           ]
         },
         {
@@ -356,7 +356,7 @@
           "numbered": [
             "RCF English created the resource itself.",
             "The copyright holder has given permission for it to be distributed.",
-            "R. C. Fernando has personally approved its publication.",
+            "Rohana Fernando has personally approved its publication.",
             "It can lawfully be linked — not copied — from the official website that publishes it."
           ]
         },
@@ -492,7 +492,7 @@
     {
       "slug": "privacy",
       "title": "Privacy Policy",
-      "description": "What RCF English does and does not collect. There are no accounts, no tracking scripts and no advertising cookies on this website.",
+      "description": "What RCF English does and does not collect. There are no accounts, no tracking scripts and no advertising cookies. Sponsored listings and bank-transfer payments are explained in full.",
       "keywords": "privacy policy, cookies, data protection",
       "kicker": "Policy",
       "kind": "policy",
@@ -503,7 +503,27 @@
           "heading": "What this website collects",
           "text": [
             "**Nothing.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login, no database and no server-side program that could record a visit.",
-            "In particular, this website does not use analytics or tracking scripts, does not use advertising or advertising cookies, does not set cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you."
+            "In particular, this website does not use analytics or tracking scripts, does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you.",
+            "The site does carry paid educational listings and sells books and resource collections. Neither of those changes the paragraph above, and both are explained in the two sections that follow."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Sponsored listings",
+          "text": [
+            "Tuition classes and courses run by other people can be advertised on this site as paid listings. Every one of them is clearly marked **Sponsored**, and paid listings are kept in their own section, never mixed into the free lessons or resources.",
+            "These listings are plain text and pictures written into the site. They are not served by an advertising network. Nothing about you is sent to an advertiser, no advertising cookie is set, and what you see does not change according to who you are or what you have looked at before.",
+            "RCF English does not endorse an advertiser by accepting a listing. Anything you arrange with one is between you and them."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Buying books, resources and advertising",
+          "variant": "tint",
+          "text": [
+            "Books, resource collections, advertising and class fees are paid for by bank transfer, arranged directly with RCF. The site shows you the account details and what to write on the transfer; your bank handles the payment, not this website.",
+            "**No payment is processed here.** There is no checkout, no payment gateway and no card processing. You will never be asked on this site for a card number, an online-banking password, a PIN, a one-time code or an identity-document number, and you should never enter one anywhere on it.",
+            "Because a static website cannot verify a deposit, every payment is checked by a person. You send the receipt through WhatsApp, and what you send in that message reaches RCF through WhatsApp rather than through this site."
           ]
         },
         {
@@ -529,14 +549,14 @@
           "variant": "tint",
           "text": [
             "This website is published through GitHub Pages. Like any web host, GitHub processes the requests your browser makes in order to deliver the pages, and its own terms govern that processing. RCF English does not receive or keep any of it.",
-            "RCF English links to other websites, including RCF Publications and, where a paper is linked rather than copied, official examination sources. Once you follow such a link you are on a different website, with its own privacy practices. Links that leave this site are marked, and open in a new tab."
+            "RCF English links to other websites — chiefly official examination sources, where a paper is linked rather than copied. Once you follow such a link you are on a different website, with its own privacy practices. Links that leave this site are marked, and open in a new tab. Some official Sri Lankan government sites are served over plain HTTP rather than HTTPS; where that is so, the link is marked. RCF Publications is not an external link: it is a section of this website."
           ]
         },
         {
           "type": "prose",
           "heading": "Children",
           "text": [
-            "Much of this material is intended for school students. Since nothing is collected from anybody, nothing is collected from children either. No account can be created, and no personal detail is requested anywhere on the site."
+            "Much of this material is intended for school students. Since nothing is collected from anybody, nothing is collected from children either. No account can be created, and no personal detail is requested anywhere on the site. Purchases and class registrations are arranged by an adult through WhatsApp and a bank transfer, away from this website."
           ]
         },
         {
@@ -606,7 +626,7 @@
           "type": "prose",
           "heading": "RCF Publications and other websites",
           "text": [
-            "RCF Publications is a separate website with its own terms and its own ordering arrangements. RCF English does not sell books and does not take payments of any kind.",
+            "RCF Publications is a separate section of this website with its own ordering arrangements. Books, resource collections and advertising are paid for by bank transfer arranged directly with RCF and verified by a person. No payment is processed on this website, no card details are requested, and nothing is charged automatically.",
             "RCF English is not responsible for the content of any other website it links to, including official sources for past papers."
           ]
         },

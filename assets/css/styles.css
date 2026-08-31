@@ -566,12 +566,21 @@ a:hover { color: var(--teal-700); }
     background: var(--navy-900);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
-  /* Eleven top-level sections is a lot for one row. The bar is tightened to
-     fit them at 1240px and upwards; wrapping is allowed as a guarantee so
-     that the page can never scroll sideways, whatever the label lengths. */
+  /* The bar gets a wider container than the body text. Twelve sections do
+     not fit inside the 1220px reading measure, and from about 1363px up
+     that space was sitting unused on either side of the row. Widening the
+     container is the fix; squeezing the font or the padding is not. */
+  .main-nav > .container {
+    max-width: 1600px;
+    padding-inline: var(--sp-4);
+  }
+  /* Twelve top-level sections on one row, and they must stay on one row.
+     Wrapping is switched off deliberately: below the breakpoint above the
+     bar is hidden altogether and the drawer takes over, so a second row
+     can never appear. Measure before adding a thirteenth section. */
   .main-nav__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: stretch;
     list-style: none;
     margin: 0;
@@ -587,9 +596,9 @@ a:hover { color: var(--teal-700); }
     gap: 0.3rem;
     height: 100%;
     min-height: 46px;
-    /* Eleven sections have to sit on one row at 1240px, the width at which
-       this bar replaces the drawer. That is what sets the padding and the
-       font size below; loosening either wraps the row onto a second line. */
+    /* Comfortable spacing, affordable because the bar is no longer confined
+       to the body container. Check the row still fits at 1240px, the width
+       at which this bar replaces the drawer, before loosening it further. */
     padding: 0.5rem 0.4rem;
     background: none;
     border: 0;
@@ -602,9 +611,8 @@ a:hover { color: var(--teal-700); }
     text-decoration: none;
     cursor: pointer;
   }
-  /* No roomier variant above this width: the container is capped at 1220px,
-     so a wider window gives the bar no extra space. Loosening the spacing
-     here made the eleven sections wrap onto a second row. */
+  /* The bar keeps growing with the window up to 1600px, so a wider screen
+     genuinely gives the row more room rather than none. */
   .main-nav__link:hover,
   .main-nav__button:hover {
     color: #fff;
@@ -686,7 +694,8 @@ a:hover { color: var(--teal-700); }
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--sp-5);
   }
-  .mega__group h3 {
+  .mega__group h3,
+  .mega__group .mega__group-title {
     font-family: var(--font-body);
     font-size: 0.72rem;
     font-weight: 700;
@@ -851,7 +860,8 @@ a:hover { color: var(--teal-700); }
 }
 .drawer-nav__panel[hidden] { display: none; }
 .drawer-nav__group + .drawer-nav__group { margin-top: var(--sp-4); }
-.drawer-nav__group h3 {
+.drawer-nav__group h3,
+.drawer-nav__group .drawer-nav__group-title {
   font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 700;
@@ -2095,6 +2105,355 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 
 
 /* ==========================================================================
+   Portrait: photograph beside an introduction
+   Stacked and centred on a phone, two columns from 720px. The image keeps
+   its natural proportions; nothing is cropped by CSS.
+   ========================================================================== */
+
+.portrait { display: grid; grid-template-columns: 1fr; gap: var(--sp-5); align-items: center; }
+@media (min-width: 720px) {
+  /* The photograph is prominent but does not dominate: it takes a fixed
+     comfortable column while the text takes the rest. */
+  .portrait { grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: var(--sp-6); align-items: center; }
+}
+
+.portrait__figure { margin: 0; justify-self: center; max-width: 17rem; width: 100%; }
+.portrait__img {
+  display: block;
+  width: 100%;
+  height: auto;              /* natural proportions, never stretched */
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 10px rgba(11, 28, 52, 0.10);
+}
+.portrait__caption {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-500);
+  text-align: center;
+}
+.portrait__body { min-width: 0; }
+.portrait__name { margin: 0; font-size: var(--step-2); font-weight: 700; color: var(--navy-800); line-height: 1.2; }
+.portrait__role { margin: 0 0 var(--sp-3); font-size: var(--step--1); color: var(--gold-800); font-weight: 600; }
+.portrait__body p { margin: 0 0 var(--sp-3); }
+.portrait__body p:last-child { margin-bottom: 0; }
+.portrait__go { margin-top: var(--sp-3); }
+.portrait__go .btn { min-height: 44px; }
+
+@media (max-width: 719px) {
+  .portrait { text-align: center; }
+  .portrait__body { text-align: left; }
+  .portrait__figure { max-width: 14rem; }
+}
+
+/* ==========================================================================
+   Payment instructions panel
+   Bank details come from data/payments.json and are written in one place
+   only. The panel stays closed until the visitor opens it, so account
+   details are never sitting on the page uninvited, and never on the
+   homepage at all.
+   ========================================================================== */
+
+.paypanel {
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--navy-700);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.paypanel__summary {
+  cursor: pointer;
+  padding: var(--sp-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--sp-2) var(--sp-3);
+  min-height: 48px;
+}
+.paypanel__summary::-webkit-details-marker { display: none; }
+.paypanel__summary::marker { content: ""; }
+.paypanel__label { font-weight: 700; color: var(--navy-800); }
+.paypanel__label::before { content: "\25B8"; margin-right: 0.5rem; color: var(--navy-600); }
+.paypanel[open] .paypanel__label::before { content: "\25BE"; }
+.paypanel__hint { font-size: var(--step--1); color: var(--ink-500); }
+.paypanel__summary:focus-visible { outline: 3px solid var(--navy-600); outline-offset: -3px; }
+.paypanel__body { padding: 0 var(--sp-4) var(--sp-4); }
+
+.paybank {
+  margin: 0 0 var(--sp-4);
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.paybank__row { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; padding: 0.6rem var(--sp-3); }
+.paybank__row:nth-child(odd) { background: var(--surface-alt); }
+.paybank__row dt { flex: 0 0 9rem; margin: 0; color: var(--ink-500); font-size: var(--step--1); }
+.paybank__row dd { margin: 0; font-size: var(--step--1); }
+/* The account number is the value people copy, so it is set in a monospaced
+   face at a comfortable size to reduce mis-reading. */
+.paybank__row:nth-child(4) dd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: var(--step-0); letter-spacing: 0.04em; }
+
+.paypanel__notice { margin: 0 0 var(--sp-4); }
+.paypanel__h { margin: 0 0 var(--sp-2); font-size: var(--step-0); color: var(--navy-800); }
+.paylist { margin: 0 0 var(--sp-3); padding-left: 1.2rem; font-size: var(--step--1); }
+.paylist li { margin-bottom: 0.2rem; }
+.paypanel__note { margin: 0 0 var(--sp-3); font-size: var(--step--1); color: var(--ink-700); }
+.paypanel__go { margin: 0 0 var(--sp-2); }
+.paypanel__go .btn { min-height: 48px; }
+.paypanel__small { margin: 0 0 var(--sp-2); font-size: var(--step--1); color: var(--ink-500); }
+.paypanel__small:last-child { margin-bottom: 0; }
+
+@media (max-width: 560px) {
+  .paybank__row { display: grid; grid-template-columns: 1fr; gap: 0.15rem; }
+  .paybank__row dt { flex: none; }
+  .paypanel__go .btn { width: 100%; text-align: center; }
+}
+
+/* ==========================================================================
+   Homepage destination cards
+   Two large cards below the main hero buttons. One navy, one gold: the two
+   accents already used across the site, so they are easy to tell apart
+   without introducing a new colour. The whole card is clickable, but only
+   the title holds a real link, so there is one tab stop per card.
+   ========================================================================== */
+
+.dcards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-4);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 720px) {
+  .dcards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.dcard {
+  position: relative;
+  margin: 0;
+  padding: var(--sp-5);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  /* Equal height whatever the text length. */
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+/* The global heading rule paints every h1-h6 navy. On a navy or teal card
+   that made the title invisible, so the heading must take its colour from
+   the card instead. The link then inherits from the heading. */
+.dcard__title { margin: 0; font-size: var(--step-1); color: inherit; }
+.dcard__title a { color: inherit; text-decoration: none; }
+/* Hover, focus and visited must not repaint it either: the generic a:hover
+   rule carries the same specificity, so these state rules are explicit. */
+.dcard__title a:link,
+.dcard__title a:visited,
+.dcard__title a:hover,
+.dcard__title a:focus,
+.dcard__title a:active { color: inherit; }
+/* The whole card becomes the click target. */
+.dcard__title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+.dcard__text { margin: 0; font-size: var(--step--1); }
+.dcard__more { margin: 0; font-weight: 650; font-size: var(--step--1); }
+
+/* Three commercial destinations sit side by side, so each needs a distinct
+   accent while staying inside the brand palette. */
+@media (min-width: 900px) {
+  .dcards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.dcard__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem; height: 2.1rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Books: solid navy. */
+.dcard--publications { background: var(--navy-800); color: #fff; }
+.dcard--publications .dcard__text { color: #d7e0ee; }
+.dcard--publications .dcard__more { color: var(--gold-400); }
+.dcard--publications .dcard__icon { background: rgba(255,255,255,0.16); color: #fff; }
+
+/* Resource collections: deep teal, clearly not the book card. */
+.dcard--premium { background: var(--ok-700); color: #fff; }
+.dcard--premium .dcard__text { color: #d5ece6; }
+.dcard--premium .dcard__more { color: #ffffff; }
+.dcard--premium .dcard__icon { background: rgba(255,255,255,0.18); color: #fff; }
+
+/* Advertising: light gold, deliberately the lightest of the three. */
+.dcard--promo { background: var(--gold-100); color: var(--navy-900); border-color: var(--gold-400); }
+.dcard--promo .dcard__text { color: var(--gold-800); }
+.dcard--promo .dcard__more { color: var(--gold-800); }
+.dcard--promo .dcard__icon { background: var(--gold-400); color: var(--navy-900); }
+
+/* The two Premium Resources categories: same family, still distinguishable. */
+.dcard--student { background: var(--navy-700); color: #fff; }
+.dcard--student .dcard__text { color: #d7e0ee; }
+.dcard--student .dcard__more { color: var(--gold-400); }
+.dcard--student .dcard__icon { background: rgba(255,255,255,0.16); color: #fff; }
+
+.dcard--teacher { background: var(--ok-700); color: #fff; }
+.dcard--teacher .dcard__text { color: #d5ece6; }
+.dcard--teacher .dcard__more { color: #ffffff; }
+.dcard--teacher .dcard__icon { background: rgba(255,255,255,0.18); color: #fff; }
+/* Only two cards on the Premium landing page, so keep them at two across. */
+.dcards--pair { grid-template-columns: 1fr; }
+@media (min-width: 720px) { .dcards--pair { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Product card extras: tags, code and author. */
+.pcard__tags { margin: 0 0 var(--sp-2); display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.pcard__tag {
+  display: inline-block; padding: 0.1rem 0.45rem; border-radius: 999px;
+  background: var(--navy-050); color: var(--navy-700);
+  border: 1px solid var(--navy-100);
+  font-size: var(--step--1); font-weight: 600;
+}
+.pcard__author { margin: 0 0 var(--sp-2); font-size: var(--step--1); color: var(--ink-700); font-style: italic; }
+.pcard__code { margin: var(--sp-2) 0 0; font-size: var(--step--1); color: var(--ink-500); }
+.pcard__code strong { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--ink-900); }
+
+/* Hover lift on pointer devices only, so a phone tap does not leave a card
+   stuck in a hover state. */
+@media (hover: hover) {
+  .dcard:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(11, 28, 52, 0.18); }
+}
+/* Pressed state, and a focus ring that is visible on both backgrounds. */
+.dcard:active { transform: translateY(0); }
+.dcard:has(a:focus-visible) { outline: 3px solid var(--gold-400); outline-offset: 3px; }
+.dcard--promo:has(a:focus-visible) { outline-color: var(--navy-700); }
+/* Fallback for browsers without :has() - the link itself still shows a ring. */
+.dcard__title a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+
+/* ==========================================================================
+   Premium product cards
+   ========================================================================== */
+
+.pcards { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+@media (min-width: 640px) { .pcards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .pcards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.pcard {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  overflow: hidden;
+}
+/* Covers keep their proportions; nothing is cropped away. */
+.pcard__cover { background: var(--surface-alt); }
+.pcard__cover img { display: block; width: 100%; height: auto; }
+.pcard__body { padding: var(--sp-4); flex: 1 1 auto; }
+.pcard__badge {
+  display: inline-block; margin: 0 0 var(--sp-2);
+  padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--gold-100); color: var(--gold-800);
+  font-size: var(--step--1); font-weight: 700;
+}
+.pcard__title { margin: 0 0 var(--sp-1); font-size: var(--step-0); color: var(--navy-800); }
+.pcard__meta { margin: 0 0 var(--sp-2); font-size: var(--step--1); color: var(--ink-700); }
+.pcard__text { margin: 0 0 var(--sp-2); font-size: var(--step--1); }
+.pcard__source, .pcard__note { margin: 0; font-size: var(--step--1); color: var(--ink-500); }
+.pcard__price { margin: var(--sp-2) 0 0; font-weight: 700; color: var(--navy-800); }
+.pcard__go { margin: 0; padding: var(--sp-4); border-top: 1px solid var(--line); background: var(--surface-alt); }
+.pcard__go .btn { width: 100%; text-align: center; min-height: 44px; }
+
+/* ==========================================================================
+   Advertising packages
+   ========================================================================== */
+
+.ppacks { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+@media (min-width: 720px) { .ppacks { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.ppack {
+  margin: 0; padding: var(--sp-4);
+  border: 1px solid var(--line); border-left: 3px solid var(--gold-400);
+  border-radius: var(--radius-sm); background: var(--surface);
+}
+.ppack__name { margin: 0 0 var(--sp-1); font-size: var(--step-0); color: var(--navy-800); }
+.ppack__duration { margin: 0; font-size: var(--step--1); color: var(--ink-500); }
+.ppack__price { margin: var(--sp-2) 0; font-weight: 700; color: var(--gold-800); }
+.ppack__summary { margin: 0; font-size: var(--step--1); }
+
+/* ==========================================================================
+   Advertisement listings
+   ========================================================================== */
+
+.ads { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+@media (min-width: 860px) { .ads { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.ad {
+  margin: 0; display: flex; flex-direction: column;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--surface); overflow: hidden;
+}
+.ad[hidden] { display: none; }
+.ad--featured { border-color: var(--gold-400); border-width: 2px; }
+/* Posters are shown whole, so wording printed on them is never cut off. */
+.ad__poster { background: var(--surface-alt); }
+.ad__poster img { display: block; width: 100%; height: auto; }
+.ad__body { padding: var(--sp-4); flex: 1 1 auto; }
+.ad__labels { margin: 0 0 var(--sp-2); display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.ad__sponsored, .ad__featured {
+  display: inline-block; padding: 0.12rem 0.5rem; border-radius: 999px;
+  font-size: var(--step--1); font-weight: 700;
+}
+.ad__sponsored { background: var(--surface-tint); color: var(--ink-700); border: 1px solid var(--line-strong); }
+.ad__featured { background: var(--gold-100); color: var(--gold-800); border: 1px solid var(--gold-400); }
+.ad__title { margin: 0 0 var(--sp-1); font-size: var(--step-0); color: var(--navy-800); }
+.ad__by { margin: 0 0 var(--sp-3); font-size: var(--step--1); color: var(--ink-700); font-weight: 600; }
+.ad__facts { margin: 0 0 var(--sp-3); display: grid; gap: 0.25rem; }
+.ad__row { display: flex; gap: 0.6rem; font-size: var(--step--1); }
+.ad__row dt { flex: 0 0 4.5rem; color: var(--ink-500); margin: 0; }
+.ad__row dd { margin: 0; }
+.ad__text { margin: 0; font-size: var(--step--1); }
+.ad__go {
+  margin: 0; padding: var(--sp-4); border-top: 1px solid var(--line);
+  background: var(--surface-alt); display: flex; flex-wrap: wrap; gap: var(--sp-2);
+}
+.ad__go .btn { min-height: 44px; }
+@media (max-width: 560px) { .ad__go, .ad__go .btn { width: 100%; text-align: center; } }
+
+.ads-empty {
+  padding: var(--sp-4); border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm); background: var(--surface-alt);
+  font-size: var(--step--1);
+}
+.ads-empty[hidden] { display: none; }
+
+.ads-filters {
+  display: flex; flex-wrap: wrap; align-items: end; gap: var(--sp-3);
+  margin-bottom: var(--sp-4); padding: var(--sp-4);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--surface-alt);
+}
+.ads-filters__field { display: flex; flex-direction: column; gap: 0.25rem; font-size: var(--step--1); }
+.ads-filters__field select {
+  min-height: 44px; min-width: 0; max-width: 100%;
+  padding: 0.35rem 0.55rem; border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm); background: #fff; font-family: inherit;
+}
+.ads-filters .btn { min-height: 44px; }
+.ads-filters__count { margin: 0; font-size: var(--step--1); color: var(--ink-700); flex-basis: 100%; }
+@media (max-width: 560px) {
+  .ads-filters { display: grid; grid-template-columns: 1fr; }
+  .ads-filters .btn { width: 100%; }
+}
+
+/* ==========================================================================
    Grade resources list
    Built from data/resources.json. One row per approved resource, filtered by
    grade, publication status and the signed-out access check.
@@ -2274,4 +2633,73 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   .hero, .page-hero { background: #fff !important; color: #000 !important; }
   .hero h1, .page-hero h1 { color: #000 !important; }
   .page-hero p, .hero__text { color: #333 !important; }
+}
+
+/* The homepage shows a short list of resources with this button below it.
+   It hides itself as soon as a filter or a search narrows the list. */
+.browse__all {
+  margin-top: var(--sp-5);
+  text-align: center;
+}
+.browse__all[hidden] { display: none; }
+
+/* Marks a link to an official site that offers no HTTPS. Amber, not red:
+   the link works, and the caution is about the other site, not ours. */
+.tag--http {
+  background: var(--gold-100);
+  color: var(--warn-700);
+  border-color: var(--gold-400);
+}
+
+/* An RCF offer is our own promotion, not a paid advertisement, so it
+   gets its own label and must never be mistaken for a Sponsored one. */
+.ad__offer {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--navy-100);
+  color: var(--navy-800);
+  border: 1px solid var(--navy-600);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.ad--offer { border-left: 3px solid var(--navy-600); }
+
+/* --- Destination cards carrying a photograph ------------------------------
+   Used only where a real photograph has been supplied. The image sits full
+   bleed at the top of the card, so the padding moves onto the text instead.
+   The card stays one flex column, so a pair of them still match in height
+   however long the two descriptions are. */
+.dcard--photo {
+  padding: 0;
+  overflow: hidden;
+}
+.dcard--photo > *:not(.dcard__media) {
+  padding-inline: var(--sp-5);
+}
+.dcard--photo > .dcard__title { padding-top: var(--sp-4); }
+.dcard--photo > .dcard__more { padding-bottom: var(--sp-5); margin-top: auto; }
+
+.dcard__media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--navy-900);
+}
+.dcard__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* The whole card is already clickable through the title's ::after overlay,
+   so the picture must not swallow the click. */
+.dcard--photo .dcard__media { pointer-events: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .dcard--photo .dcard__media img { transition: transform 0.25s ease; }
+  @media (hover: hover) {
+    .dcard--photo:hover .dcard__media img { transform: scale(1.03); }
+  }
 }

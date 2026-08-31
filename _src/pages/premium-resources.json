@@ -1,0 +1,177 @@
+{
+  "_readme": [
+    "Premium Resources: downloadable resource COLLECTIONS.",
+    "",
+    "Three pages live here:",
+    "  premium-resources            the landing page, two category cards",
+    "  premium-resources/student    Student Resources",
+    "  premium-resources/teachers   English Teacher Resources",
+    "",
+    "Complete books and ebooks are a different section and belong in",
+    "_src/pages/rcf-publications.json.",
+    "",
+    "Note that teacher-resources/ is the FREE teacher area and is a",
+    "different thing from premium-resources/teachers/. Both pages say so."
+  ],
+
+  "pages": [
+    {
+      "slug": "premium-resources",
+      "title": "Premium Resources",
+      "metaTitle": "Premium Resources | RCF English",
+      "description": "Downloadable resource collections for classroom teaching, independent practice, revision and assessment, arranged for students and for English teachers.",
+      "keywords": "premium english resources, worksheet collections, lesson plan collections, model papers, revision packs, Sri Lanka",
+      "kicker": "Paid resources",
+      "kind": "page",
+      "backTo": { "label": "Home", "url": "" },
+      "hero": {
+        "text": "Download carefully prepared resource collections for classroom teaching, independent practice, revision and assessment.",
+        "buttons": [
+          { "label": "Browse free resources", "url": "resources/", "style": "btn--ghost-light" },
+          { "label": "RCF Publications", "url": "rcf-publications/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "destinations",
+          "heading": "Choose a category",
+          "eyebrow": "Two collections",
+          "intro": ["Resources are grouped by who they are for. Both categories are paid, and both are separate from the free material on this website."],
+          "items": [
+            {
+              "title": "Student Resources",
+              "text": "Practice, revision and examination resources arranged by grade and skill.",
+              "url": "premium-resources/student/",
+              "more": "Browse student resources",
+              "style": "student",
+              "image": "assets/img/premium-student-resources.webp",
+              "imageAlt": "A secondary-school student working through written exercises at a desk at home, with a notebook, worksheets and a tablet",
+              "imageWidth": "1448",
+              "imageHeight": "1086"
+            },
+            {
+              "title": "English Teacher Resources",
+              "text": "Ready-to-use lesson plans, worksheets, assessments and classroom resource collections.",
+              "url": "premium-resources/teachers/",
+              "more": "Browse teacher resources",
+              "style": "teacher",
+              "image": "assets/img/premium-teacher-resources.webp",
+              "imageAlt": "An English teacher laying out lesson materials and worksheets across a desk while planning a lesson",
+              "imageWidth": "1448",
+              "imageHeight": "1086"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Collections, not books",
+          "text": [
+            "This section holds **downloadable collections**: worksheet packs, lesson-plan collections, model-paper collections, revision packs and similar.",
+            "Complete books and ebooks are a separate section, [RCF Publications](rcf-publications/)."
+          ]
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "premium",
+          "heading": "How to pay",
+          "eyebrow": "Bank transfer",
+          "intro": ["Open the panel below when you are ready to buy. Include the resource's product code so we know exactly what you have paid for."]
+        }
+      ]
+    },
+
+    {
+      "slug": "premium-resources/student",
+      "title": "Student Resources",
+      "metaTitle": "Student English Resources | RCF English",
+      "description": "Paid downloadable practice, revision and examination resources for students, arranged by grade and skill, from Primary through to Advanced Level.",
+      "keywords": "student english resources, worksheet packs, revision packs, model papers, examination practice, grade 6 to 11",
+      "kicker": "Premium Resources",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Premium Resources", "url": "premium-resources/" }],
+      "backTo": { "label": "Premium Resources", "url": "premium-resources/" },
+      "hero": {
+        "text": "Practice, revision and examination resources arranged by grade and skill. These are paid downloads, separate from the free material on this website."
+      },
+      "blocks": [
+        {
+          "type": "premium-products",
+          "category": "student",
+          "heading": "Student resource collections",
+          "eyebrow": "Catalogue",
+          "intro": ["Grade groups run from Primary through Grades 6 to 9, G.C.E. O/L and G.C.E. A/L. Skills covered include reading, writing, grammar, vocabulary, listening, speaking, literature and examination practice."]
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "premium",
+          "heading": "How to pay",
+          "eyebrow": "Bank transfer",
+          "intro": ["Include the resource title and its product code so we can identify your purchase."]
+        },
+        {
+          "type": "cards",
+          "heading": "Elsewhere",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "English Teacher Resources", "text": "The paid collections for teachers.", "url": "premium-resources/teachers/" },
+            { "title": "Free Grade 6-11 resources", "text": "Activities, listening tests and downloads, free to use.", "url": "grades/" },
+            { "title": "RCF Publications", "text": "Complete books and ebooks.", "url": "rcf-publications/" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "premium-resources/teachers",
+      "title": "English Teacher Resources",
+      "metaTitle": "Premium Resources for English Teachers | RCF English",
+      "description": "Paid downloadable lesson-plan collections, competency-based worksheets, assessment packs and classroom activity collections for English teachers.",
+      "keywords": "english teacher resources, lesson plan collections, competency based worksheets, assessment packs, classroom activities, marking guides",
+      "kicker": "Premium Resources",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Premium Resources", "url": "premium-resources/" }],
+      "backTo": { "label": "Premium Resources", "url": "premium-resources/" },
+      "hero": {
+        "text": "Ready-to-use lesson plans, worksheets, assessments and classroom resource collections. These are paid downloads."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "This is the paid teacher area",
+          "text": [
+            "RCF English has **two** teacher areas, and they are not the same. This one holds paid collections.",
+            "The free one is [Teacher Resources](teacher-resources/): lesson plans, worksheets, marking guides and teaching notes that cost nothing and always will."
+          ]
+        },
+        {
+          "type": "premium-products",
+          "category": "teacher",
+          "heading": "Teacher resource collections",
+          "eyebrow": "Catalogue",
+          "intro": ["Collections are grouped by grade, competency, skill and classroom purpose: teaching, practice, assessment, remedial support, revision and teacher development."]
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "premium",
+          "heading": "How to pay",
+          "eyebrow": "Bank transfer",
+          "intro": ["Include the resource title and its product code so we can identify your purchase."]
+        },
+        {
+          "type": "cards",
+          "heading": "Elsewhere",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Free Teacher Resources", "text": "The free teaching area: lesson plans, worksheets and marking guides.", "url": "teacher-resources/" },
+            { "title": "Student Resources", "text": "The paid collections for students.", "url": "premium-resources/student/" },
+            { "title": "RCF Publications", "text": "Complete books and ebooks.", "url": "rcf-publications/" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -228,7 +228,7 @@
     {
       "label": "RCF Online Academy",
       "url": "rcf-classes/",
-      "summary": "Elocution diplomas prepared for the CALSDA examinations, Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by R. C. Fernando.",
+      "summary": "Elocution diplomas prepared for the CALSDA examinations, Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by Rohana Fernando.",
       "_urlNote": "The addresses stay under rcf-classes/ so that links already shared do not break.",
       "groups": [
         { "title": "Start here", "links": [
@@ -256,9 +256,9 @@
     },
     {
       "label": "RCF Publications",
-      "url": "PUBLICATIONS_WEBSITE_URL",
-      "external": true,
-      "note": "External bookshop",
+      "url": "rcf-publications/",
+      "external": false,
+      "note": "Books and ebooks",
       "_headerOnly": "On a desktop this lives as its own button in the header bar, so it is left out of the row of sections below to keep those on one line. On a telephone the header button is hidden, so it does appear in the slide-out menu. Either way there is exactly one route to it.",
       "headerOnly": true
     },
@@ -282,6 +282,26 @@
           { "label": "RCF Online Academy", "url": "rcf-classes/" },
           { "label": "RCF Publications", "url": "about/rcf-publications/" },
           { "label": "Contact Us", "url": "contact/" }
+        ]}
+      ]
+    },
+
+    {
+      "label": "More",
+      "url": "premium-resources/",
+      "summary": "Books published by RCF Publications, paid downloadable resource collections, and advertisements for tuition classes and courses offered by others.",
+      "groups": [
+        { "title": "Books and ebooks", "links": [
+          { "label": "RCF Publications", "url": "rcf-publications/" },
+          { "label": "About RCF Publications", "url": "about/rcf-publications/" }
+        ]},
+        { "title": "Premium Resources", "links": [
+          { "label": "All Premium Resources", "url": "premium-resources/" },
+          { "label": "Student Resources", "url": "premium-resources/student/" },
+          { "label": "English Teacher Resources", "url": "premium-resources/teachers/" }
+        ]},
+        { "title": "Advertising", "links": [
+          { "label": "Special Offers", "url": "promotions/", "note": "Sponsored tuition and course listings" }
         ]}
       ]
     },

@@ -259,6 +259,10 @@ function setUpBrowser(container) {
     .map((s) => s.trim())
     .filter(Boolean);
 
+  // The homepage shows a short list with a "View all" button under it.
+  // Without this the script would re-render every record and undo that.
+  const limit = parseInt(container.getAttribute("data-limit") || "0", 10) || 0;
+  const allNode = container.querySelector("[data-all]");
   const listNode = container.querySelector("[data-results]");
   const countNode = container.querySelector("[data-count]");
   const controlsNode = container.querySelector("[data-controls]");
@@ -281,13 +285,22 @@ function setUpBrowser(container) {
         matchesText(record, term, ["title", "description", "keywords", "subject", "type", "source"])
     );
 
-    listNode.innerHTML = matched.length
-      ? matched.map(renderResult).join("")
+    // A limit applies only to the unfiltered list. Once somebody searches
+    // or filters, they asked for those results, so show all of them.
+    const filtering = Boolean(term) || Object.keys(active).length > 0;
+    const capped = limit > 0 && !filtering && matched.length > limit;
+    const visible = capped ? matched.slice(0, limit) : matched;
+    if (allNode) allNode.hidden = !(limit > 0 && !filtering && matched.length > limit);
+    listNode.innerHTML = visible.length
+      ? visible.map(renderResult).join("")
       : emptyState(records.length > 0);
-    listNode.className = matched.length ? "result-list" : "";
+    listNode.className = visible.length ? "result-list" : "";
 
-    if (countNode) countNode.textContent = countLabel(matched.length);
-    announce(liveNode, `${countLabel(matched.length)} shown.`);
+    const label = capped
+      ? `Showing ${visible.length} of ${countLabel(matched.length)}`
+      : countLabel(matched.length);
+    if (countNode) countNode.textContent = label;
+    announce(liveNode, `${label} shown.`);
     updateQuery(state);
   }
 

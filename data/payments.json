@@ -1,0 +1,113 @@
+{
+  "_readme": [
+    "PAYMENT INSTRUCTIONS - ONE CENTRAL FILE",
+    "",
+    "The bank details below are written here ONCE and are read by every page",
+    "that shows payment instructions. Change them here and they change",
+    "everywhere. Do not copy bank details into any page file.",
+    "",
+    "TO UPDATE YOUR BANK DETAILS, edit the \"bank\" section below.",
+    "After editing, run build.cmd.",
+    "",
+    "---------------------------------------------------------------------",
+    "WHERE THESE DETAILS APPEAR",
+    "---------------------------------------------------------------------",
+    "premium   Premium Resources page, for buying materials.",
+    "advert    Tuition & Course Promotions page, for advertising payments.",
+    "classes   RCF Online Academy, for class fees.",
+    "",
+    "They are never shown on the homepage. A visitor sees them only after",
+    "choosing a paid product, an advertising package or a class.",
+    "",
+    "---------------------------------------------------------------------",
+    "WHAT THIS DELIBERATELY DOES NOT DO",
+    "---------------------------------------------------------------------",
+    "This website is a set of plain files with no server, so it cannot check",
+    "whether a bank transfer has arrived. Every payment is therefore verified",
+    "by a person. Nothing here asks for, stores or displays an online banking",
+    "password, a PIN, a one-time code, card details or an identity document",
+    "number, and nothing should ever be added that does.",
+    "",
+    "---------------------------------------------------------------------",
+    "THE AMOUNT FIELD",
+    "---------------------------------------------------------------------",
+    "\"amountLabel\" is what visitors are told to pay. It is left as a plain",
+    "instruction rather than a figure, because prices are agreed case by",
+    "case. Put a real figure here when you are ready to publish one."
+  ],
+
+  "bank": {
+    "accountHolder": "R. C. Fernando",
+    "bankName": "Bank of Ceylon (BOC)",
+    "branch": "Akurana",
+    "accountNumber": "6665477"
+  },
+
+  "whatsappDisplay": "070 439 5240",
+  "whatsappInternational": "94704395240",
+
+  "notice": "Please verify that the account holder is shown as R. C. Fernando before completing the transfer. After payment, send the receipt through WhatsApp with your name, telephone number, and the product or advertising package purchased. Orders and advertisements are processed only after payment verification.",
+
+  "purposes": [
+    {
+      "id": "publication",
+      "title": "Paying for a book or ebook",
+      "amountLabel": "Contact us for current rates",
+      "referenceLabel": "Your name, followed by the book title and its code",
+      "sendWith": [
+        "Your full name",
+        "Your telephone number",
+        "The book title and its product code, for example PUB-001",
+        "A photograph or screenshot of the payment receipt"
+      ],
+      "template": "RCF Publication Payment\nBuyer's name:\nBook title:\nProduct code:\nAmount paid:\nTelephone number:",
+      "note": "The product code is printed on each book card. Including it lets us identify the title straight away."
+    },
+    {
+      "id": "premium",
+      "title": "Paying for a premium resource",
+      "amountLabel": "Contact us for current rates",
+      "referenceLabel": "Your name, followed by the resource title and its code",
+      "sendWith": [
+        "Your full name",
+        "Your telephone number",
+        "The resource title and its product code, for example STU-001 or TCH-001",
+        "Whether it is a Student Resource or a Teacher Resource",
+        "A photograph or screenshot of the payment receipt"
+      ],
+      "template": "Premium Resource Payment\nBuyer's name:\nResource title:\nProduct code:\nCategory: Student Resource / Teacher Resource\nAmount paid:\nTelephone number:",
+      "note": "The product code is printed on each resource card. Including it lets us identify exactly what you have bought."
+    },
+    {
+      "id": "advert",
+      "title": "Paying for an advertisement",
+      "amountLabel": "Contact us for current rates",
+      "referenceLabel": "Your name or institute name, followed by the package",
+      "sendWith": [
+        "Your full name or institute name",
+        "Your telephone number",
+        "Which package you are paying for: Weekly Listing, Monthly Listing or Featured Promotion",
+        "A photograph or screenshot of the payment receipt"
+      ],
+      "template": "RCF Advertisement Payment\nName or institute:\nTelephone number:\nPackage (Weekly Listing / Monthly Listing / Featured Promotion):\nAmount paid:",
+      "note": "Please state clearly which package you are paying for. Without it we cannot tell how long your listing should run."
+    },
+    {
+      "id": "classes",
+      "title": "Paying class fees",
+      "amountLabel": "The monthly fee confirmed by your teacher on WhatsApp",
+      "referenceLabel": "Student name, followed by the class and the month",
+      "sendWith": [
+        "The student's full name",
+        "The class or course name",
+        "The grade, if it applies",
+        "The month the payment is for",
+        "The amount paid",
+        "A telephone or WhatsApp number",
+        "A photograph or screenshot of the payment receipt"
+      ],
+      "template": "RCF Class Fee Payment\nStudent name:\nClass/course:\nGrade:\nPayment month:\nAmount paid:\nTelephone number:",
+      "note": "Class registration and access continue to be confirmed by a person after the payment has been checked."
+    }
+  ]
+}

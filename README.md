@@ -29,10 +29,11 @@ no server, no database, no login and no monthly cost.
 | **About Us** | The platform, the founder, qualifications, mission, teaching approach, online communities |
 | **Policies** | Copyright, corrections and takedown, privacy, terms, accessibility |
 
-**133 pages.** Every internal link is checked automatically each time the site is built.
+**162 pages.** Every internal link is checked automatically each time the site is built.
 
-**RCF Publications is a separate website.** RCF English links to it and never
-duplicates it. See *Setting the bookshop address* below.
+**RCF Publications is a section of this website**, kept apart from the free
+material so that paid and free resources are never confused. See *Where RCF
+Publications lives* below.
 
 ---
 
@@ -94,40 +95,25 @@ Full instructions are in **[HOW-TO-UPDATE.md](HOW-TO-UPDATE.md)**.
 
 ---
 
-## Setting the bookshop address
+## Where RCF Publications lives
 
-RCF Publications is a separate website. Its address is stored in **one place**.
+RCF Publications is a **section of this website**, not a separate site. Its address
+is stored in **one place**: `_src/config.json`.
 
-> **While the bookshop has no address, the site says "Coming soon".**
-> A placeholder must never become a link, because it would lead nowhere. So
-> until `PUBLICATIONS_WEBSITE_URL` holds a real `https://` address, every place
-> that would link to the bookshop instead shows **Coming soon** and points to
-> [About RCF Publications](about/rcf-publications/), which explains what the
-> bookshop will offer. Nothing on the site is broken or dead.
->
-> The moment you put a real address in and rebuild, all of them turn into
-> ordinary external links to the bookshop and every "Coming soon" marker
-> disappears by itself. You do not edit any page.
+```json
+"PUBLICATIONS_WEBSITE_URL": "rcf-publications/",
+```
 
-1. Open `_src/config.json` in Notepad.
-2. Find this line:
+Leave it as it is. Every publications link across the site — the menu, the home
+page, the footer, the "Find related books" panels and the teacher pages — follows
+that one line. There are over 550 of them.
 
-   ```json
-   "PUBLICATIONS_WEBSITE_URL": "PUBLICATIONS_WEBSITE_URL",
-   ```
-
-3. Replace the second `PUBLICATIONS_WEBSITE_URL` with the real address, keeping the
-   quotation marks:
-
-   ```json
-   "PUBLICATIONS_WEBSITE_URL": "https://satarajayamaga-afk.github.io/rcf-ebook-publications/",
-   ```
-
-4. Save the file and double-click `build.cmd`.
-
-That single change updates **every** link to the bookshop across the whole site —
-the menu, the home page, the footer, the "Find related books" panels and the teacher
-pages. There are over 550 of them and you changed one line.
+> **If the bookshop ever moves to a website of its own,** put the full address in
+> instead (`https://…`). Because the value then begins with `https://`, the next
+> `build.cmd` turns every publications link into an external link that opens in a
+> new tab with the external-link marker, and changes the wording that calls it "a
+> section of this website" to "a separate website". Setting it back to
+> `rcf-publications/` reverses all of it. You never edit a page to make this happen.
 
 ### Other settings in the same file
 

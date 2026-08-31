@@ -11,7 +11,7 @@
   "siteUrl": "https://satarajayamaga-afk.github.io/rcf-english",
   "_siteUrlNote": "Used only for canonical URLs, Open Graph tags and sitemap.xml. Page-to-page links are relative, so the site works at any address. Change this to your custom domain when you have one.",
 
-  "PUBLICATIONS_WEBSITE_URL": "PUBLICATIONS_WEBSITE_URL",
+  "PUBLICATIONS_WEBSITE_URL": "rcf-publications/",
   "_publicationsNote": "Replace the placeholder above with the published address of the RCF Publications bookshop, for example https://satarajayamaga-afk.github.io/rcf-ebook-publications/ . Nothing else needs to change - every publications link on the site reads this one value.",
   "publicationsName": "RCF Publications",
 
@@ -20,7 +20,7 @@
 
   "email": "rcfdegreenotes@gmail.com",
 
-  "founderName": "R. C. Fernando",
+  "founderName": "Rohana Fernando",
   "country": "Sri Lanka",
   "countryCode": "LK",
 

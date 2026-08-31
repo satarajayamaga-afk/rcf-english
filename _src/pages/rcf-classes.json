@@ -14,16 +14,17 @@
       "slug": "rcf-classes",
       "title": "RCF Online Academy",
       "metaTitle": "RCF Online Academy | Elocution diplomas and Literature courses | RCF English",
-      "description": "RCF Online Academy: six-month preparatory courses for the CALSDA elocution diplomas, English Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by R. C. Fernando.",
+      "description": "RCF Online Academy: six-month preparatory courses for the CALSDA elocution diplomas, English Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by Rohana Fernando.",
       "keywords": "RCF Online Academy, CALSDA elocution diploma, Primary Elocution Teachers Diploma, Associate Diploma, Grade 9 Literature, Grade 10 Literature, O/L Literature, A/L Literature, Literature orientation for new teachers, teacher training, online classes Sri Lanka",
       "kicker": "Learn with a teacher",
       "kind": "page",
       "schema": "Course",
       "hero": {
-        "text": "Seven courses, taught online by R. C. Fernando: two professional preparatory courses for the CALSDA elocution diploma examinations, four English Literature courses from Grade 9 to Advanced Level, and a one-month orientation course for teachers new to Literature.",
+        "text": "Seven courses, taught online by Rohana Fernando: two professional preparatory courses for the CALSDA elocution diploma examinations, four English Literature courses from Grade 9 to Advanced Level, and a one-month orientation course for teachers new to Literature.",
         "buttons": [
           { "label": "Our courses", "url": "rcf-classes/#courses", "style": "btn--accent" },
           { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--ghost-light" },
+          { "label": "Pay Class Fees", "url": "rcf-classes/#class-fees", "style": "btn--ghost-light" },
           { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
         ]
       },
@@ -33,7 +34,7 @@
           "heading": "About the Academy",
           "text": [
             "RCF Online Academy is the teaching arm of RCF English. Courses are conducted online, which allows students anywhere in the country to attend rather than only those within reach of one town.",
-            "All courses are taught by **R. C. Fernando**, a graduate in English of the University of Peradeniya, holder of a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya, and an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA). [More about our staff](rcf-classes/our-staff/)."
+            "All courses are taught by **Rohana Fernando**, a graduate in English of the University of Peradeniya, holder of a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya, and an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA). [More about our staff](rcf-classes/our-staff/)."
           ]
         },
 
@@ -177,6 +178,14 @@
             { "title": "Questions", "url": "rcf-classes/faq/", "more": "Open" },
             { "title": "About the founder", "url": "about/founder/", "more": "Open" }
           ]
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "classes",
+          "heading": "Class Fees",
+          "eyebrow": "Paying for a course",
+          "id": "class-fees",
+          "intro": ["Class fees are paid by bank transfer. Open the panel below for the account details and for what to send with your receipt. A place is confirmed by a person once the payment has been checked."]
         }
       ]
     },
@@ -283,7 +292,7 @@
           "faq": true,
           "items": [
             { "q": "Can I register on this website?", "a": ["No. This website has no server and no registration system. Registration is arranged directly with the teacher on WhatsApp, and a place is confirmed only by the teacher."] },
-            { "q": "Is any payment taken here?", "a": ["No. RCF English does not take payments of any kind, and no payment details should ever be entered anywhere on this site."] },
+            { "q": "Is any payment taken here?", "a": ["No payment is processed on this website. Class fees are paid by bank transfer arranged directly with the teacher and verified by a person. Never enter card details, passwords, PINs or one-time codes anywhere on this site."] },
             { "q": "Does registering for an elocution course enter me for the CALSDA examination?", "a": ["No. The course prepares you for the examination. Entering the examination itself is arranged by you with CALSDA, and their entry requirements and dates are matters for them."] },
             { "q": "Can I join after a course has started?", "a": ["It depends on the course and how far it has progressed. The two elocution courses run for six months as a sequence, so joining late is more difficult. Ask, and you will be told honestly whether it would work for you."] },
             { "q": "Can my parent register for me?", "a": ["Of course. Please say who the student is, their grade or level, and what they need help with."] },
@@ -297,8 +306,8 @@
       "slug": "rcf-classes/our-staff",
       "title": "Our Staff",
       "metaTitle": "Our Staff | RCF Online Academy",
-      "description": "Who teaches at RCF Online Academy: R. C. Fernando, a graduate in English of the University of Peradeniya with an MA in Linguistics, a TESOL qualification and Associate Membership of CALSDA.",
-      "keywords": "our staff, teachers, R. C. Fernando, qualifications, CALSDA, RCF Online Academy",
+      "description": "Who teaches at RCF Online Academy: Rohana Fernando, a graduate in English of the University of Peradeniya with an MA in Linguistics, a TESOL qualification and Associate Membership of CALSDA.",
+      "keywords": "our staff, teachers, Rohana Fernando, qualifications, CALSDA, RCF Online Academy",
       "kicker": "RCF Online Academy",
       "kind": "page",
       "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
@@ -313,10 +322,10 @@
       "blocks": [
         {
           "type": "prose",
-          "heading": "R. C. Fernando",
+          "heading": "Rohana Fernando",
           "eyebrow": "Founder and teacher",
           "text": [
-            "R. C. Fernando is an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. He founded RCF English and teaches all seven courses at RCF Online Academy.",
+            "Rohana Fernando is an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. He founded RCF English and teaches all seven courses at RCF Online Academy.",
             "His work extends beyond classroom teaching to teacher support, online learning communities, educational publishing and the preparation of practical learning materials. [More about the founder](about/founder/)."
           ]
         },
@@ -610,7 +619,7 @@
         {
           "type": "relatedBooks",
           "heading": "Find related books",
-          "text": ["RCF Publications produces study guides, grammar resources and examination-revision materials that work alongside these free pages. It is a separate website."]
+          "text": ["RCF Publications produces study guides, grammar resources and examination-revision materials that work alongside these free pages. It is a separate section of this website."]
         }
       ]
     },
@@ -659,7 +668,7 @@
           "items": [
             { "q": "How do I register?", "a": ["Choose a course, then use the [registration page](rcf-classes/registration/) or a WhatsApp button. You will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."] },
             { "q": "Why are the days, times and fees not published?", "a": ["Because they change, and an out-of-date timetable helps nobody. Times are also sometimes arranged around the students who want a particular course. Where nothing has been settled, this site says so rather than inventing a schedule."] },
-            { "q": "Is any payment taken on this website?", "a": ["No. RCF English does not take payments of any kind. Never enter payment details anywhere on this site."] },
+            { "q": "Is any payment taken on this website?", "a": ["No payment is processed on this website. Fees are paid by bank transfer using the instructions on the class-fees panel, and the receipt is sent through WhatsApp. Never enter card details, passwords, PINs or one-time codes anywhere on this site."] },
             { "q": "Can I join in the middle of a course?", "a": ["It depends on the course and how far it has gone. The elocution courses run as a six-month sequence, so joining late is more difficult. Ask, and you will be told honestly."] }
           ]
         },
@@ -674,7 +683,7 @@
             { "q": "What if my internet connection is weak?", "a": ["Mention it when you enquire. It is a common situation and better discussed in advance than discovered in the first class."] },
             { "q": "Will I be sent a meeting link?", "a": ["Joining instructions are sent privately once your place is confirmed. Links and passwords are never published on this website."] },
             { "q": "Can examination results be guaranteed?", "a": ["No, and nobody honest will guarantee them. Results depend on the candidate's own work. What the courses provide is clear teaching, guided practice, individual correction and regular revision."] },
-            { "q": "Who teaches the courses?", "a": ["All seven courses are taught by R. C. Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
+            { "q": "Who teaches the courses?", "a": ["All seven courses are taught by Rohana Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
           ]
         },
         {

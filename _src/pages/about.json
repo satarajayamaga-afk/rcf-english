@@ -5,7 +5,7 @@
       "title": "About RCF English",
       "metaTitle": "About Us | RCF English",
       "description": "RCF English is an umbrella educational platform bringing together English learning, literature education, examination support, teacher resources, online classes and educational publishing.",
-      "keywords": "about RCF English, R. C. Fernando, English education Sri Lanka, educational platform",
+      "keywords": "about RCF English, Rohana Fernando, English education Sri Lanka, educational platform",
       "kicker": "About Us",
       "kind": "page",
       "schema": "EducationalOrganization",
@@ -34,12 +34,12 @@
           "heading": "How the parts fit together",
           "eyebrow": "The umbrella platform",
           "variant": "tint",
-          "intro": ["RCF English is the main platform. RCF Online Academy provides the teaching programmes. RCF Publications is a separate publishing and bookshop website."],
+          "intro": ["RCF English is the main platform. RCF Online Academy provides the teaching programmes. RCF Publications is the publishing and bookshop section of this website."],
           "columns": "3",
           "items": [
             { "title": "RCF English", "text": ["The umbrella educational platform: lessons, past papers, revision material, teacher resources and interactive learning, free to use."], "url": "how-to-use/", "more": "How to use this site" },
-            { "title": "RCF Online Academy", "text": ["The teaching programmes: mainly online classes in English and Literature, conducted by R. C. Fernando."], "url": "rcf-classes/", "more": "See the classes" },
-            { "title": "RCF Publications", "text": ["The separate publishing and bookshop website: books, study guides, grammar resources and revision materials."], "url": "about/rcf-publications/", "more": "About the bookshop" }
+            { "title": "RCF Online Academy", "text": ["The teaching programmes: mainly online classes in English and Literature, conducted by Rohana Fernando."], "url": "rcf-classes/", "more": "See the classes" },
+            { "title": "RCF Publications", "text": ["The publishing and bookshop section: books, study guides, grammar resources and revision materials."], "url": "about/rcf-publications/", "more": "About the bookshop" }
           ]
         },
 
@@ -48,7 +48,7 @@
           "heading": "Our Founder",
           "eyebrow": "In brief",
           "text": [
-            "RCF English was founded by **R. C. Fernando**, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
+            "RCF English was founded by **Rohana Fernando**, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
             "He is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya, together with a TESOL qualification from the University of Peradeniya. He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
             "[Read more about our founder](about/founder/) or [see his academic and professional background in full](about/background/)."
           ]
@@ -86,7 +86,7 @@
           "eyebrow": "One umbrella platform",
           "variant": "tint",
           "text": [
-            "RCF English brings together the major areas of R. C. Fernando's educational work within one umbrella platform:"
+            "RCF English brings together the major areas of Rohana Fernando's educational work within one umbrella platform:"
           ],
           "bullets": [
             "O/L English",
@@ -106,7 +106,7 @@
           "variant": "tint",
           "text": [
             "By bringing these services together, RCF English aims to make them easier to find, use and share. The website represents a continuation and expansion of work that began in classrooms and developed through Facebook, Telegram and WhatsApp educational communities.",
-            "Through RCF English, R. C. Fernando hopes to extend the reach of these services further, assist learners and educators throughout Sri Lanka, and build a growing national platform for dependable English-language education.",
+            "Through RCF English, Rohana Fernando hopes to extend the reach of these services further, assist learners and educators throughout Sri Lanka, and build a growing national platform for dependable English-language education.",
             "[Read about our online communities](about/online-communities/)."
           ]
         },
@@ -144,20 +144,37 @@
     {
       "slug": "about/founder",
       "title": "Our Founder",
-      "description": "R. C. Fernando, founder of RCF English: an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching.",
-      "keywords": "R. C. Fernando, founder, English teacher, lecturer, Sri Lanka",
+      "description": "Rohana Fernando, founder of RCF English and RCF Publications: an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching.",
+      "keywords": "Rohana Fernando, founder, RCF English, RCF Publications, English teacher, lecturer, Sri Lanka",
       "kicker": "About Us",
       "kind": "page",
       "schema": "Article",
       "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
       "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "RCF English was founded by R. C. Fernando, an experienced English teacher and lecturer." },
+      "hero": { "text": "RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer." },
       "blocks": [
         {
-          "type": "prose",
-          "heading": "R. C. Fernando",
+          "type": "portrait",
+          "image": "assets/img/founder-rohana-fernando.jpg",
+          "alt": "Rohana Fernando, founder of RCF English and RCF Publications",
+          "width": "800",
+          "height": "800",
+          "name": "Rohana Fernando",
+          "role": "Founder, RCF English and RCF Publications",
+          "caption": "Rohana Fernando",
           "text": [
-            "RCF English was founded by R. C. Fernando, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
+            "An English teacher and lecturer of several decades' standing, who founded RCF English to put clear, practical English teaching within reach of learners anywhere in the country.",
+            "He teaches mainly online today, and writes the books and study guides published through RCF Publications."
+          ],
+          "buttons": [
+            { "label": "Full academic and professional background", "url": "about/background/" }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "About Rohana Fernando",
+          "text": [
+            "RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
             "He has been a long-standing contributor to the development and sharing of English educational resources. His work extends beyond classroom teaching to teacher support, online learning communities, educational publishing and the preparation of practical learning materials."
           ]
         },
@@ -177,7 +194,7 @@
           "type": "prose",
           "heading": "Qualifications in brief",
           "text": [
-            "R. C. Fernando is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya. He has also obtained a TESOL qualification from the University of Peradeniya. He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
+            "Rohana Fernando is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya. He has also obtained a TESOL qualification from the University of Peradeniya. He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
             "[The full academic and professional background is set out here](about/background/)."
           ]
         },
@@ -186,7 +203,7 @@
           "heading": "Teaching today",
           "variant": "tint",
           "text": [
-            "R. C. Fernando currently conducts mainly online classes through RCF Online Academy. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
+            "Rohana Fernando currently conducts mainly online classes through RCF Online Academy. These classes allow him to share the knowledge and practical experience developed over his long academic and professional career with learners regardless of their location.",
             "[See the classes](rcf-classes/) or [read about the teaching approach](about/teaching-approach/)."
           ]
         }
@@ -209,7 +226,7 @@
           "type": "prose",
           "heading": "Academic and Professional Background",
           "text": [
-            "R. C. Fernando is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya. He has also obtained a TESOL qualification from the University of Peradeniya, further strengthening his professional preparation in English-language teaching.",
+            "Rohana Fernando is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya. He has also obtained a TESOL qualification from the University of Peradeniya, further strengthening his professional preparation in English-language teaching.",
             "He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
             "His academic grounding in English, advanced study in linguistics and professional training in TESOL complement the practical knowledge he has gained through several decades of work as a teacher and lecturer. This combination of academic scholarship and classroom experience informs his approach to teaching, educational-resource development and publishing."
           ]
@@ -368,7 +385,7 @@
     {
       "slug": "about/online-communities",
       "title": "Our Online Communities",
-      "description": "How R. C. Fernando built Facebook groups for English learning and teaching, and later exclusive Telegram and WhatsApp resource groups for English teachers.",
+      "description": "How Rohana Fernando built Facebook groups for English learning and teaching, and later exclusive Telegram and WhatsApp resource groups for English teachers.",
       "keywords": "Facebook groups, Telegram, WhatsApp, English teachers, professional community",
       "kicker": "About Us",
       "kind": "page",
@@ -381,7 +398,7 @@
           "type": "prose",
           "heading": "Building Online Resource Communities",
           "text": [
-            "Approximately a decade ago, when online educational resources were far less widely available and artificial intelligence had not yet transformed the creation and distribution of learning materials, R. C. Fernando established several Facebook groups devoted to English learning and teaching.",
+            "Approximately a decade ago, when online educational resources were far less widely available and artificial intelligence had not yet transformed the creation and distribution of learning materials, Rohana Fernando established several Facebook groups devoted to English learning and teaching.",
             "These communities provided teachers and learners with access to educational materials, professional guidance and opportunities to exchange knowledge. For many members — particularly those with limited access to books, training and other educational support — the resources shared through these groups became a valuable source of assistance.",
             "Recognising the need for more immediate professional support, he later created exclusive Telegram and WhatsApp resource groups for English teachers. Through these communities, teachers can obtain useful materials, exchange ideas and receive timely guidance relating to classroom teaching, lesson preparation, assessment and other professional needs.",
             "These initiatives reflect a continuing commitment to using available technology to connect educators, share knowledge and make helpful resources more widely accessible."
@@ -423,14 +440,14 @@
     {
       "slug": "about/rcf-publications",
       "title": "RCF Publications",
-      "description": "RCF Publications is the separate publishing and bookshop website associated with RCF English, producing practical educational books, study guides and revision materials.",
+      "description": "RCF Publications is the publishing and bookshop section of RCF English, producing practical educational books, study guides and revision materials.",
       "keywords": "RCF Publications, books, study guides, English books, bookshop",
       "kicker": "About Us",
       "kind": "page",
       "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
       "backTo": { "label": "About Us", "url": "about/" },
       "hero": {
-        "text": "RCF Publications is a separate website. This page explains what it publishes and how it relates to RCF English.",
+        "text": "RCF Publications is a separate section of this website. This page explains what it publishes and how it relates to RCF English.",
         "buttons": [
           { "label": "Visit RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "style": "btn--accent" }
         ]
@@ -443,18 +460,18 @@
           "text": [
             "RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials.",
             "The publications are designed to support classroom teaching, tuition classes, independent study and learning at home. Many place particular emphasis on simplified explanations, guided writing, practical exercises, revision and support for struggling learners.",
-            "RCF Publications operates through its own dedicated website, which visitors can access from RCF English."
+            "RCF Publications has its own section of this website, where the catalogue, prices and ordering instructions are kept separate from the free material."
           ]
         },
         {
           "type": "callout",
           "style": "note",
           "variant": "tint",
-          "title": "Two separate websites",
+          "title": "Two separate sections",
           "bullets": [
             "**RCF English** — this site. Lessons, past papers, teacher resources, interactive practice and RCF Online Academy. Everything here is free to read.",
-            "**RCF Publications** — a separate website. Books, study guides, eBooks, book samples, prices and ordering. It has its own terms and its own ordering arrangements.",
-            "RCF English does not sell books and does not take payments of any kind. Links to RCF Publications are marked and open in a new tab."
+            "**RCF Publications** — a separate section of this website. Books, study guides, eBooks, book samples, prices and ordering. It has its own terms and its own ordering arrangements.",
+            "Books are paid for by bank transfer arranged directly with RCF and verified by a person. No payment is processed on this website and no card details are ever requested."
           ]
         },
         {
