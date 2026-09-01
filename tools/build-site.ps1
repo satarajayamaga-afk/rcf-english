@@ -2256,15 +2256,35 @@ function BuildPage($page) {
     $keywords = P $page 'keywords'
     if ($keywords) { $head += '<meta name="keywords" content="' + (E $keywords) + '">' }
     if ((P $page 'noindex') -eq $true) { $head += '<meta name="robots" content="noindex, follow">' }
+    # What Facebook, WhatsApp and LinkedIn show when the page is shared. A
+    # page may override the wording and the picture with ogTitle,
+    # ogDescription, ogImage and ogImageAlt without touching what the browser
+    # tab and the search snippet say. Pages that set none of them are
+    # unchanged. Sharing sites need a full address for the picture, never a
+    # relative path, so ogImage is written out against siteUrl.
+    $ogTitle = [string](P $page 'ogTitle' $metaTitle)
+    $ogDescription = [string](P $page 'ogDescription' $description)
+    $ogImagePath = [string](P $page 'ogImage' 'assets/img/social/og-image.png')
+    $ogImage = $script:Config.siteUrl.TrimEnd('/') + '/' + $ogImagePath.TrimStart('/')
+    $ogImageAlt = [string](P $page 'ogImageAlt' 'RCF English - clear English lessons and practical revision resources')
+
     $head += '<meta property="og:type" content="website">'
     $head += '<meta property="og:site_name" content="' + (E $script:Config.siteName) + '">'
     $head += '<meta property="og:locale" content="' + (E $script:Config.locale) + '">'
-    $head += '<meta property="og:title" content="' + (E $metaTitle) + '">'
-    $head += '<meta property="og:description" content="' + (E $description) + '">'
+    $head += '<meta property="og:title" content="' + (E $ogTitle) + '">'
+    $head += '<meta property="og:description" content="' + (E $ogDescription) + '">'
     $head += '<meta property="og:url" content="' + (E $canonical) + '">'
-    $head += '<meta property="og:image" content="' + (E ($script:Config.siteUrl.TrimEnd('/') + '/assets/img/social/og-image.png')) + '">'
-    $head += '<meta property="og:image:alt" content="RCF English - clear English lessons and practical revision resources">'
+    $head += '<meta property="og:image" content="' + (E $ogImage) + '">'
+    $head += '<meta property="og:image:secure_url" content="' + (E $ogImage) + '">'
+    $head += '<meta property="og:image:type" content="image/png">'
+    $head += '<meta property="og:image:width" content="1200">'
+    $head += '<meta property="og:image:height" content="630">'
+    $head += '<meta property="og:image:alt" content="' + (E $ogImageAlt) + '">'
     $head += '<meta name="twitter:card" content="summary_large_image">'
+    $head += '<meta name="twitter:title" content="' + (E $ogTitle) + '">'
+    $head += '<meta name="twitter:description" content="' + (E $ogDescription) + '">'
+    $head += '<meta name="twitter:image" content="' + (E $ogImage) + '">'
+    $head += '<meta name="twitter:image:alt" content="' + (E $ogImageAlt) + '">'
     $head += '<link rel="icon" href="' + (E ($script:Root + 'assets/img/icons/favicon.svg')) + '" type="image/svg+xml">'
     $head += '<link rel="apple-touch-icon" href="' + (E ($script:Root + 'assets/img/icons/apple-touch-icon.png')) + '">'
     $head += '<link rel="manifest" href="' + (E ($script:Root + 'manifest.webmanifest')) + '">'
