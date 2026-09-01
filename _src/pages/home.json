@@ -6,7 +6,23 @@
   "keywords": "O/L English, O/L English Literature, A/L Literature, General English, past papers, model papers, guided writing, English teacher resources, Sri Lanka, online English classes",
   "kind": "page",
   "schema": "EducationalOrganization",
-  "scripts": ["browse"],
+  "scripts": ["browse", "countdown"],
+
+  "topBlocks": [
+    {
+      "type": "countdown",
+      "eyebrow": "Something big is coming to English education",
+      "brand": "RCF English",
+      "tagline": "A New Era for English Teachers & Learners Begins",
+      "target": "2026-09-17T18:00:00+05:30",
+      "lines": [
+        "One destination. A world of English resources.",
+        "Built for teachers. Created for learners. Open to the world."
+      ],
+      "launchLabel": "Launching 17 September 2026 · 6.00 p.m.",
+      "launchDate": "2026-09-17T18:00:00+05:30"
+    }
+  ],
 
   "hero": {
     "style": "home",
@@ -15,7 +31,8 @@
       { "label": "Grade 6-11 English Resources", "url": "grades/", "style": "btn--accent" },
       { "label": "English Teacher Resources", "url": "teacher-resources/", "style": "btn--ghost-light" },
       { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--ghost-light" },
-      { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--ghost-light" }
+      { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--ghost-light" },
+      { "label": "Explore RCF Publications", "url": "rcf-publications/", "style": "btn--gold" }
     ],
     "aside": {
       "title": "Who this is for",

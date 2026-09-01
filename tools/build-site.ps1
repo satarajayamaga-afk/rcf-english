@@ -878,6 +878,57 @@ function RenderBlock($block) {
             return $html
         }
 
+        'countdown' {
+            # The pre-launch countdown band that sits above the homepage hero.
+            # The four numbers are written by assets/js/countdown.js from the
+            # visitor's own clock, so the page stays correct without a server
+            # and without anything being sent anywhere.
+            #
+            # Accessibility: the digits change every second, which would make a
+            # screen reader talk over itself, so the clock itself is hidden from
+            # assistive technology and a quieter live region carries the same
+            # information in words, updated once a minute.
+            $target = [string](P $block 'target')
+            $units = @(
+                @{ key = 'days'; label = 'Days' },
+                @{ key = 'hours'; label = 'Hours' },
+                @{ key = 'minutes'; label = 'Minutes' },
+                @{ key = 'seconds'; label = 'Seconds' }
+            )
+            $html = '<section class="countdown" aria-labelledby="countdown-title">'
+            $html += '<div class="container countdown__inner">'
+
+            $eyebrow = P $block 'eyebrow'
+            if ($eyebrow) { $html += '<p class="countdown__eyebrow">' + (E $eyebrow) + '</p>' }
+            $brand = P $block 'brand'
+            if ($brand) { $html += '<p class="countdown__brand">' + (E $brand) + '</p>' }
+            $tagline = P $block 'tagline'
+            if ($tagline) { $html += '<p class="countdown__tagline" id="countdown-title">' + (Inline $tagline) + '</p>' }
+
+            $html += '<div class="countdown__clock" data-countdown="' + (E $target) + '" aria-hidden="true">'
+            foreach ($u in $units) {
+                $html += '<div class="cdu">'
+                $html += '<span class="cdu__num" data-cd="' + $u.key + '">--</span>'
+                $html += '<span class="cdu__label">' + $u.label + '</span>'
+                $html += '</div>'
+            }
+            $html += '</div>'
+            $html += '<p class="sr-only" data-cd-status role="status"></p>'
+
+            foreach ($line in (AsList (P $block 'lines'))) {
+                $html += '<p class="countdown__line">' + (Inline $line) + '</p>'
+            }
+            $when = P $block 'launchLabel'
+            if ($when) {
+                $iso = [string](P $block 'launchDate' '')
+                $timeAttr = ''
+                if ($iso) { $timeAttr = ' datetime="' + (E $iso) + '"' }
+                $html += '<p class="countdown__date"><time' + $timeAttr + '>' + (E $when) + '</time></p>'
+            }
+
+            return $html + '</div></section>'
+        }
+
         'destinations' {
             # Two large homepage cards. The whole card is clickable, but the
             # link lives on the title only, so keyboard users get one tab
@@ -945,8 +996,16 @@ function RenderBlock($block) {
             # Complete books and ebooks from data/publications.json. This is
             # a different section from Premium Resources and reads a
             # different file: books here, resource collections there.
+            # bookCategory lets one page show several labelled shelves.
+            $wantCat = [string](P $block 'bookCategory')
+            $wantChan = [string](P $block 'bookChannel')
             $books = @()
-            foreach ($b in $publicationBooks) { if ((P $b 'published' $true) -eq $true) { $books += $b } }
+            foreach ($b in $publicationBooks) {
+                if ((P $b 'published' $true) -ne $true) { continue }
+                if ($wantCat -and ([string](P $b 'category')) -ne $wantCat) { continue }
+                if ($wantChan -and ([string](P $b 'channel' 'pdf')) -ne $wantChan) { continue }
+                $books += $b
+            }
 
             $html = (SectionOpen $block) + (SectionHead $block)
             if ($books.Count -eq 0) {
@@ -963,6 +1022,13 @@ function RenderBlock($block) {
                 if ($img) {
                     $html += '<div class="pcard__cover"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $b 'imageAlt'))) + '" loading="lazy" decoding="async"></div>'
                 }
+                else {
+                    # No cover supplied yet. A labelled placeholder, never a
+                    # substitute image: an unrelated picture would misrepresent
+                    # the book.
+                    $html += '<div class="pcard__cover pcard__cover--placeholder" role="img" aria-label="Cover image for ' + (E ([string](P $b 'title'))) + ' has not been supplied yet">'
+                    $html += '<span class="pcard__coverlabel">Cover to follow</span></div>'
+                }
                 $html += '<div class="pcard__body">'
                 $badge = [string](P $b 'badge')
                 if ($badge) { $html += '<p class="pcard__badge">' + (E $badge) + '</p>' }
@@ -975,14 +1041,46 @@ function RenderBlock($block) {
                 $fmt = [string](P $b 'format');   if ($fmt) { $meta += (E $fmt) }
                 if ($meta.Count) { $html += '<p class="pcard__meta">' + ($meta -join ' &middot; ') + '</p>' }
                 $d = [string](P $b 'description'); if ($d) { $html += '<p class="pcard__text">' + (E $d) + '</p>' }
+                $cn = [string](P $b 'coverNote')
+                if ($cn) { $html += '<p class="pcard__covernote">' + (E $cn) + '</p>' }
                 $code = [string](P $b 'code')
                 if ($code) { $html += '<p class="pcard__code">Product code: <strong>' + (E $code) + '</strong></p>' }
-                $price = [string](P $b 'price'); if ($price) { $html += '<p class="pcard__price">' + (E $price) + '</p>' }
-                $html += '</div>'
-                $u = [string](P $b 'url')
-                if ($u) {
-                    $label = [string](P $b 'buttonLabel' 'View details')
-                    $html += '<p class="pcard__go"><a class="btn btn--sm btn--accent" href="' + (E (Url $u)) + '">' + (E $label) + '<span class="visually-hidden">, ' + (E ([string](P $b 'title'))) + '</span></a></p>'
+                # ---- availability and purchase -------------------------------
+                # A title is only offered for sale when availability says so.
+                # Anything else shows a plain 'in preparation' marker and NO
+                # button, so an unfinished book can never look purchasable.
+                $avail   = [string](P $b 'availability' 'in-preparation')
+                $channel = [string](P $b 'channel' 'pdf')
+                $amazon  = [string](P $b 'amazonUrl')
+                if ($avail -eq 'available') {
+                    if ($channel -eq 'kindle' -or $channel -eq 'paperback') {
+                        # Never a local price for a Kindle or paperback edition:
+                        # it is sold by the retailer, not by us.
+                        if ($amazon -match '^https?://') {
+                            $html += '</div><p class="pcard__go"><a class="btn btn--sm btn--accent ext" href="' + (E $amazon) + '" target="_blank" rel="noopener noreferrer">View on Amazon<span class="visually-hidden">, ' + (E ([string](P $b 'title'))) + ', opens in a new tab</span></a></p>'
+                        }
+                        else {
+                            $html += '<p class="pcard__note">Available on Amazon. <strong>The purchase link is still to be supplied</strong>, so no button is shown yet.</p></div>'
+                        }
+                    }
+                    else {
+                        $price = [string](P $b 'price')
+                        if ($price) { $html += '<p class="pcard__price">' + (E $price) + '</p>' }
+                        $html += '<p class="pcard__note">Instant delivery after payment confirmation.</p></div>'
+                        $wa = 'https://wa.me/' + [string]($script:Config.whatsappInternational)
+                        # A message naming this exact book, its code and its
+                        # price, so a buyer never has to explain what they want
+                        # and payments can be reconciled to a title.
+                        $code2 = [string](P $b 'code')
+                        $msg = 'Hello, I would like to purchase the ' + [string](P $b 'title')
+                        if ($code2) { $msg += ' (' + $code2 + ')' }
+                        if ($price) { $msg += '. ' + $price }
+                        $msg += '. Please send me the payment instructions.'
+                        $html += '<p class="pcard__go"><a class="btn btn--sm btn--whatsapp" href="' + (E ($wa + '?text=' + [uri]::EscapeDataString($msg))) + '" target="_blank" rel="noopener noreferrer">Buy on WhatsApp ' + (E $script:Config.whatsappDisplay) + '<span class="visually-hidden">, ' + (E ([string](P $b 'title'))) + ', opens in a new tab</span></a></p>'
+                    }
+                }
+                else {
+                    $html += '<p class="pcard__note pcard__note--soon">In preparation. Not yet available for purchase.</p></div>'
                 }
                 $html += '</li>'
             }
@@ -1198,22 +1296,34 @@ function RenderBlock($block) {
 
         'grade-resources' {
             # Reads data/resources.json and shows only entries that are published,
-            # match this page's grade, and have passed the signed-out access check.
-            # Nothing is hard-coded: a future approved entry appears automatically.
-            $want = [string](P $block 'grade')
+            # match this page's filters, and have passed the signed-out access check.
+            # Filters are ANDed; any may be omitted. "grade" is kept as the original
+            # name for the level filter so the Grades 6-11 pages need no edit.
+            $wantLevel   = [string](P $block 'grade')
+            $wantSubject = [string](P $block 'subject')
+            $wantExam    = [string](P $block 'examination')
+            $wantType    = [string](P $block 'resourceType')
+            $wantSub     = [string](P $block 'subcategory')
             $found = @()
             foreach ($r in $resources) {
                 if ((P $r 'published' $false) -ne $true) { continue }
                 if ([string](P $r 'anonymousAccess') -ne 'verified') { continue }
-                if ([string](P $r 'level') -ne $want) { continue }
+                if ($wantLevel   -and [string](P $r 'level')       -ne $wantLevel)   { continue }
+                if ($wantSubject -and [string](P $r 'subject')     -ne $wantSubject) { continue }
+                if ($wantExam    -and [string](P $r 'examination') -ne $wantExam)    { continue }
+                if ($wantType    -and [string](P $r 'type')        -ne $wantType)    { continue }
+                if ($wantSub     -and [string](P $r 'subcategory') -ne $wantSub)     { continue }
                 $found += $r
             }
-            # A grade with no approved resources shows no section at all.
             if ($found.Count -eq 0) { return '' }
 
             $labels = @{
                 'textbook' = "Pupil's Book"; 'teachers-guide' = "Teacher's Guide"
                 'study-pack' = 'Study pack'; 'scheme-of-work' = 'Scheme of work'
+                'marking-scheme' = 'Marking scheme'; 'model-paper' = 'Model paper'
+                'syllabus' = 'Syllabus'; 'resource-book' = 'Resource book'
+                'worksheet' = 'Worksheet'; 'lesson-plan' = 'Lesson plan'
+                'anthology' = 'Anthology'; 'seminar' = 'Seminar handout'
                 'practice-paper' = 'Practice papers'; 'past-paper' = 'Past paper'
             }
             $html = (SectionOpen $block) + (SectionHead $block)
@@ -1225,6 +1335,9 @@ function RenderBlock($block) {
                 $html += '<div class="gres__main"><h3 class="gres__title">' + (E ([string](P $r 'title'))) + '</h3>'
                 $meta = @()
                 if ($typeLabel) { $meta += (E $typeLabel) }
+                # The card must name the level and the subject, not just the type,
+                # because these lists now appear on subject pages as well as grade pages.
+                $lvl = [string](P $r 'level'); if ($lvl) { $meta += (E $lvl) }
                 # Year and term are shown only when the data actually carries them.
                 $yr = [string](P $r 'year'); $tm = [string](P $r 'term')
                 if ($yr -and $tm) { $meta += (E ($tm.Substring(0,1).ToUpper() + $tm.Substring(1) + ' term ' + $yr)) }
@@ -1232,6 +1345,9 @@ function RenderBlock($block) {
                 if ($meta.Count) { $html += '<p class="gres__meta">' + ($meta -join ' &middot; ') + '</p>' }
                 $src = [string](P $r 'author')
                 if ($src) { $html += '<p class="gres__source">' + (E $src) + '</p>' }
+                # Every card states where the material came from and on what terms.
+                $rights = [string](P $r 'copyright')
+                if ($rights) { $html += '<p class="gres__rights">' + (E $rights) + '</p>' }
                 $url = [string](P $r 'url')
                 # A handful of official government PDFs are served over plain HTTP
                 # because the department publishes no HTTPS endpoint at all. The link
@@ -1247,7 +1363,7 @@ function RenderBlock($block) {
                     # handle back to this window, least of all over plain HTTP.
                     $extraLabel = '<span class="sr-only"> (opens in a new tab)</span>'
                     if ($url -match '^http://') { $extraLabel = '<span class="sr-only"> (opens in a new tab; connection not encrypted)</span>' }
-                    $html += '<p class="gres__go"><a class="btn btn--sm btn--outline" href="' + (E $url) + '" target="_blank" rel="noopener noreferrer">View or download' + $extraLabel + '</a></p>'
+                    $html += '<p class="gres__go"><a class="btn btn--sm btn--outline" href="' + (E (Url $url)) + '" target="_blank" rel="noopener noreferrer">View or download' + $extraLabel + '</a></p>'
                 }
                 $html += '</li>'
             }
@@ -1378,6 +1494,41 @@ function RenderBlock($block) {
             $html = (SectionOpen $block)
             $html += '<div class="related-books"><h3>' + (E (P $block 'heading' 'Find related books')) + '</h3>'
             $html += Paragraphs (P $block 'text')
+            # An optional list of book ids from data/publications.json. Named
+            # titles are shown as compact cards so a reader sees WHICH book is
+            # meant. Covers and availability come from that one file, so a
+            # cover added there appears on every page that names the book.
+            $picked = @()
+            foreach ($id in (AsList (P $block 'books'))) {
+                    foreach ($b in $publicationBooks) {
+                        if (([string](P $b 'id')) -eq ([string]$id) -and (P $b 'published' $true) -eq $true) { $picked += $b }
+                    }
+            }
+            if ($picked.Count) {
+                    $html += '<ul class="minibooks">'
+                    foreach ($b in $picked) {
+                        $html += '<li class="minibook">'
+                        $bimg = [string](P $b 'image')
+                        if ($bimg) {
+                            $html += '<img class="minibook__cover" src="' + (E (Url $bimg)) + '" alt="' + (E ([string](P $b 'imageAlt'))) + '" loading="lazy" decoding="async">'
+                        }
+                        else {
+                            $html += '<span class="minibook__cover minibook__cover--placeholder" aria-hidden="true"></span>'
+                        }
+                        $html += '<span class="minibook__body">'
+                        $html += '<span class="minibook__title">' + (E ([string](P $b 'title'))) + '</span>'
+                        $why = [string](P $b 'audience')
+                        if ($why) { $html += '<span class="minibook__meta">' + (E $why) + '</span>' }
+                        if (([string](P $b 'availability' 'in-preparation')) -eq 'available') {
+                            $html += '<a class="minibook__link" href="' + (E (Url 'rcf-publications/')) + '">See it in RCF Publications</a>'
+                        }
+                        else {
+                            $html += '<span class="minibook__soon">In preparation</span>'
+                        }
+                        $html += '</span></li>'
+                    }
+                $html += '</ul>'
+            }
             if (PubIsLive) {
                 $html += '<p class="mb-0"><a class="btn btn--sm btn--outline' + (PubExtClass) + '" href="' + (E (Url 'PUBLICATIONS_WEBSITE_URL')) + '"' + (PubExtAttrs) + '>Browse ' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubExtNote) + '</span></a></p>'
             }
@@ -2081,7 +2232,10 @@ function BuildPage($page) {
     if ($slug -ne '') { $canonical += $slug + '/' }
 
     # Body first, so blocks can collect FAQ entries before the head is written.
+    # "topBlocks" is for the rare band that has to sit above the hero rather
+    # than below it. Pages without one are untouched.
     $body = ''
+    $body += RenderBlocks (P $page 'topBlocks')
     $body += HeroSection $page
     $body += Breadcrumbs $page
     $body += RenderBlocks (P $page 'blocks')

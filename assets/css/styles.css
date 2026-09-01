@@ -1450,6 +1450,14 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   table.stacked th,
   table.stacked td { display: block; width: 100%; }
   table.stacked thead { position: absolute; left: -9999px; }
+  /* A caption keeps display:table-caption even when the table itself becomes
+     a block, and then collapses to the width of the widest word - about 50px
+     on a phone. It must be made a block so it can use the full width. */
+  table.stacked caption {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
   table.stacked tr {
     margin-bottom: var(--sp-4);
     border: 1px solid var(--line);
@@ -2791,4 +2799,351 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
     color: var(--ink-500);
   }
   table.stacked td > .td__v { display: block; }
+}
+
+/* Book cover placeholders and purchase notes ----------------------------- */
+
+/* Shown until a real cover is supplied. Deliberately a labelled box and not
+   a stand-in picture: an unrelated image would misrepresent the book. */
+.pcard__cover--placeholder {
+  display: grid;
+  place-items: center;
+  /* A real cover keeps its own 2:3 shape. An empty placeholder at that
+     height would leave roughly 500px of hatching per card and make the
+     catalogue unreadable, so the stand-in is capped and centred. */
+  aspect-ratio: 2 / 3;
+  max-height: 200px;
+  max-width: 134px;
+  margin-inline: auto;
+  background: repeating-linear-gradient(45deg, #f7f9fc, #f7f9fc 10px, #f2f5fa 10px, #f2f5fa 20px);
+  border: 1px dashed #b9c2d0;
+  border-radius: var(--radius-sm);
+}
+.pcard__coverlabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink-500);
+  text-align: center;
+  padding: 0 var(--sp-2);
+}
+.pcard__note {
+  font-size: 0.85rem;
+  color: var(--ink-700);
+  margin: 0.35rem 0 0;
+}
+.pcard__note--soon {
+  font-weight: 600;
+  color: var(--ink-500);
+}
+/* Named book recommendations inside a topic page ------------------------- */
+
+.minibooks {
+  list-style: none;
+  margin: var(--sp-4) 0 var(--sp-4);
+  padding: 0;
+  display: grid;
+  gap: var(--sp-3);
+}
+.minibook {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: flex-start;
+  padding: var(--sp-3);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+.minibook__cover {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+}
+.minibook__cover--placeholder {
+  background: repeating-linear-gradient(45deg, #f7f9fc, #f7f9fc 8px, #f2f5fa 8px, #f2f5fa 16px);
+  border-style: dashed;
+}
+.minibook__body { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.minibook__title { font-weight: 700; color: var(--navy-800); }
+.minibook__meta { font-size: 0.82rem; color: var(--ink-500); }
+.minibook__soon {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-500);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.minibook__link { font-size: 0.85rem; font-weight: 600; }
+/* Real book covers -------------------------------------------------------- */
+
+/* Supplied covers vary from 0.63 to 0.84 in aspect ratio. A fixed frame with
+   object-fit: contain shows every one of them whole: nothing is cropped,
+   stretched or recoloured, which is a condition of using the owner's art. */
+.pcard__cover img,
+img.pcard__cover {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+}
+.minibook__cover {
+  object-fit: contain;
+  background: var(--surface-alt);
+}
+.pcard__covernote {
+  font-size: 0.78rem;
+  color: var(--ink-500);
+  font-style: italic;
+  margin: 0.3rem 0 0;
+}
+/* Gold hero button, matching the header's RCF Publications accent ---------- */
+
+/* Used for the homepage "Explore RCF Publications" button so the commercial
+   area is visually distinct from the free sections, and consistent with the
+   gold header button that leads to the same place. */
+.btn--gold {
+  background: var(--gold-400);
+  color: var(--navy-900);
+  border-color: var(--gold-400);
+}
+.btn--gold:hover,
+.btn--gold:focus-visible {
+  background: #eebc5d;
+  border-color: #eebc5d;
+  color: var(--navy-900);
+}
+/* Book price, gold accent ------------------------------------------------- */
+
+/* Sits directly above the purchase button. Gold marks it as the commercial
+   action without shouting; the border keeps it legible on the card ground. */
+.pcard__price {
+  display: inline-block;
+  margin: 0.5rem 0 0;
+  padding: 0.28rem 0.7rem;
+  background: var(--gold-100);
+  border: 1px solid #efdcae;
+  border-radius: var(--radius-sm);
+  color: var(--gold-800);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* 16. Pre-launch countdown ------------------------------------------------
+
+   A band above the homepage hero, sized to about the upper half of the
+   screen so the page continues visibly below it rather than becoming a
+   coming-soon screen. Same navy-and-gold identity as the hero, one shade
+   deeper, with a gold hairline where the two meet.
+
+   The numbers are the point of the section, so they are set as large as
+   the narrowest supported screen allows: four across from 720px up, two
+   by two below that, which keeps them big instead of shrinking them to
+   fit. Tabular figures stop the digits jumping as the seconds tick.
+   -------------------------------------------------------------------------- */
+
+.countdown {
+  position: relative;
+  background:
+    radial-gradient(120% 90% at 50% -10%, rgba(14, 124, 102, 0.30) 0%, rgba(14, 124, 102, 0) 60%),
+    linear-gradient(175deg, #081527 0%, var(--navy-900) 55%, #071f2c 100%);
+  color: #eaf0f8;
+  border-bottom: 1px solid rgba(224, 168, 60, 0.45);
+  overflow: hidden;
+}
+
+.countdown__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: clamp(19rem, 48vh, 31rem);
+  padding-block: clamp(1.5rem, 3.4vh, 2.5rem);
+}
+
+.countdown__eyebrow {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(0.66rem, 0.58rem + 0.34vw, 0.84rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+
+.countdown__brand {
+  margin: var(--sp-3) 0 0;
+  font-family: var(--font-head);
+  font-size: clamp(1.9rem, 1.25rem + 3.1vw, 4rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.countdown__tagline {
+  margin: var(--sp-2) 0 0;
+  /* Wide enough to hold the line on one row on a laptop; it wraps, balanced,
+     on a phone. */
+  max-width: 56ch;
+  text-wrap: balance;
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.35rem);
+  line-height: 1.35;
+  color: #c9d6e8;
+}
+
+/* The clock ---------------------------------------------------------------- */
+
+.countdown__clock {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sp-3);
+  width: 100%;
+  max-width: 60rem;
+  margin: clamp(0.9rem, 2.2vw, 1.4rem) 0 0;
+}
+
+@media (min-width: 720px) {
+  .countdown__clock { gap: var(--sp-5); }
+}
+
+.cdu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: clamp(0.55rem, 1.3vw, 0.85rem) 0.35rem clamp(0.45rem, 1vw, 0.7rem);
+  border-radius: var(--radius-lg, 14px);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.cdu__num {
+  display: block;
+  font-family: var(--font-head);
+  /* As large as the screen allows. Width sets the size on a phone; the
+     11vh term stops a short laptop window filling itself with digits and
+     pushing the rest of the homepage out of sight. */
+  font-size: clamp(2.9rem, min(1.5rem + 7.2vw, 11vh), 6.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  color: #fff;
+  /* Keeps the box steady while the digits change, without forcing a width
+     so wide that three-digit days would overflow the cell. */
+  min-width: 2ch;
+  text-align: center;
+  text-shadow: 0 2px 18px rgba(14, 124, 102, 0.45);
+}
+
+.cdu__label {
+  display: block;
+  margin-top: clamp(0.3rem, 0.9vw, 0.6rem);
+  font-family: var(--font-body);
+  font-size: clamp(0.6rem, 0.52rem + 0.28vw, 0.78rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+
+/* Supporting lines --------------------------------------------------------- */
+
+.countdown__line {
+  margin: var(--sp-4) 0 0;
+  max-width: 66ch;
+  text-wrap: balance;
+  font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.2rem);
+  line-height: 1.5;
+  color: #c9d6e8;
+}
+.countdown__line + .countdown__line { margin-top: var(--sp-2); }
+
+.countdown__date {
+  margin: var(--sp-4) 0 0;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid rgba(224, 168, 60, 0.5);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 0.72rem + 0.28vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+
+/* Once the date passes, countdown.js swaps the clock for a single line. */
+.countdown__live {
+  margin: clamp(1.35rem, 3.5vw, 2.5rem) 0 0;
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 1.1rem + 2.4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+@media (max-width: 560px) {
+  /* Phones. Four across in one row rather than two by two: it holds the
+     numbers at very nearly the same size while removing a whole row from
+     the band, so the hero below it is still on the first screen. Every
+     other measurement tightens too. */
+  /* No fixed floor on a short phone — the content sets the height there. On a
+     tall phone the band grows back towards half the screen rather than
+     floating in the top third. */
+  .countdown__inner { padding-block: var(--sp-4); min-height: 46vh; }
+  .countdown__eyebrow { letter-spacing: 0.13em; font-size: 0.63rem; }
+  .countdown__brand { margin-top: var(--sp-2); }
+  .countdown__tagline { margin-top: var(--sp-1); }
+
+  .countdown__clock {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.3rem;
+    margin-top: var(--sp-4);
+  }
+  .cdu { padding: 0.4rem 0.1rem 0.35rem; }
+  .cdu__num { font-size: clamp(2.1rem, 13.5vw, 3.4rem); }
+  .cdu__label {
+    margin-top: 0.25rem;
+    font-size: 0.53rem;
+    letter-spacing: 0.08em;
+  }
+
+  .countdown__line { margin-top: var(--sp-3); }
+  .countdown__line + .countdown__line { margin-top: var(--sp-1); }
+  /* The pill carries the date and the hour, which is long for a phone. A
+     little less tracking keeps it on one line instead of leaving "p.m."
+     stranded on a second row. */
+  .countdown__date {
+    margin-top: var(--sp-3);
+    padding: 0.35rem 0.85rem;
+    font-size: clamp(0.62rem, 2.95vw, 0.78rem);
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Smallest phones: the cards lose their padding before the numbers lose
+     their size. */
+  .countdown__clock { gap: var(--sp-2); }
+  .cdu { padding-inline: 0.15rem; }
+}
+
+@media print {
+  .countdown { background: none; color: #000; border-bottom: 1px solid #999; }
+  .countdown__inner { min-height: 0; padding-block: var(--sp-4); }
+  .cdu__num, .countdown__brand { color: #000; text-shadow: none; }
+  .cdu__label, .countdown__eyebrow, .countdown__date { color: #444; }
 }
