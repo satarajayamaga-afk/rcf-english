@@ -63,7 +63,7 @@
           "intro": ["Each grade follows the primary English syllabus. If you would rather browse by activity, the section below does that instead - both routes reach the same material."],
           "columns": "3",
           "items": [
-            { "title": "Grade 1", "icon": "G1", "text": ["First words and sounds.", "**Resources in preparation.**"] },
+            { "title": "Grade 1", "icon": "G1", "url": "primary-english/grade-1/", "more": "Open", "text": ["Oral English through 16 themes, with an activity book and model papers."] },
             { "title": "Grade 2", "icon": "G2", "text": ["Reading short sentences.", "**Resources in preparation.**"] },
             { "title": "Grade 3", "url": "primary-english/grade-3/", "icon": "G3", "more": "Open", "text": ["Alphabet sounds, words of three or four letters, and sentences of up to five words."] },
             { "title": "Grade 4", "url": "primary-english/grade-4/", "icon": "G4", "more": "Open", "text": ["Pronouns, numbers to 50, and writing with capital letters and full stops."] },
@@ -124,6 +124,12 @@
             { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["Where a child is heading after the primary years."] },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open", "text": ["Classes taught online by Rohana Fernando."] }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["lets-talk-primary"],
+          "heading": "A book of spoken English lessons for the primary classroom",
+          "text": ["Forty ready-to-run lessons for teachers of the primary grades, each planned to fit a single period."]
         }
       ]
     },

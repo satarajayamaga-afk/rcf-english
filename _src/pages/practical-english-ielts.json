@@ -1,0 +1,220 @@
+{
+  "_readme": [
+    "IELTS SECTION",
+    "---------------------------------------------------------------------",
+    "Every word here is written by RCF English. No Cambridge material, no",
+    "practice tests from other publishers, and no scanned books are used or",
+    "linked. The IELTS files in the project Drive are all commercial",
+    "products (Cambridge practice tests, examiner ebooks, downloaded test",
+    "collections) and cannot lawfully be republished, so none of them",
+    "appears here.",
+    "",
+    "External links point only to the official test owners, and each one was",
+    "checked and returned HTTP 200 before it was added:",
+    "  ielts.org",
+    "  ielts.org/take-a-test/preparation-resources",
+    "  ielts.org/take-a-test/preparation-resources/sample-test-questions",
+    "  ielts.idp.com/srilanka",
+    "British Council is named in the text but not linked, because its site",
+    "could not be reached from the build machine to verify the address.",
+    "",
+    "Facts that change - fees, exact session lengths, centre lists - are",
+    "deliberately not stated. Readers are sent to ielts.org for those."
+  ],
+
+  "pages": [
+    {
+      "slug": "practical-english/ielts",
+      "title": "IELTS",
+      "metaTitle": "IELTS Preparation | Practical English | RCF English",
+      "description": "What IELTS actually tests, the difference between Academic and General Training, how the nine bands work, and the mistakes Sri Lankan candidates make most often.",
+      "keywords": "IELTS Sri Lanka, IELTS preparation, IELTS bands, IELTS academic general training, IELTS speaking writing listening reading",
+      "kicker": "Practical English",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
+      "hero": { "text": "IELTS does not test how much English you know. It tests how well you use it under time pressure, in four fixed formats — which is a different skill, and one you can practise." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Who actually needs IELTS",
+          "text": [
+            "In Sri Lanka most candidates sit IELTS for one of four reasons: **study abroad**, **skilled migration**, a **professional registration** overseas, or a **visa requirement**. Each of those wants a different score, and some want a minimum in every single module rather than an overall figure.",
+            "**Find out your required score before you begin preparing.** A candidate who needs 6.0 overall and a candidate who needs 7.0 in each band are preparing for two different examinations, and the second one usually needs months longer. Ask the university, the regulator or the visa authority directly — not an agent, and not a friend who sat it three years ago."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Academic or General Training?",
+          "caption": "Listening and Speaking are identical in both. Only Reading and Writing differ. Choosing the wrong one is a wasted fee.",
+          "columns": ["", "Academic", "General Training"],
+          "rows": [
+            ["Usually taken for", "University and professional registration", "Migration, work, and some secondary or vocational study"],
+            ["Listening", "The same test in both", "The same test in both"],
+            ["Reading", "Three long texts of the kind found in journals and serious newspapers", "Short workplace and everyday texts first, then one longer passage"],
+            ["Writing Task 1", "Describe a graph, chart, table, map or process in about 150 words", "Write a letter — formal, semi-formal or personal — in about 150 words"],
+            ["Writing Task 2", "An essay of about 250 words. The same task type in both.", "An essay of about 250 words, usually on a slightly more everyday topic"],
+            ["Speaking", "The same test in both", "The same test in both"]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "The four modules, and what each is really testing",
+          "items": [
+            {
+              "q": "Listening — about 30 minutes, 40 questions",
+              "a": [
+                "Four recordings, moving from everyday conversation to an academic talk. **You hear each one once.**",
+                "**What it is really testing:** whether you can follow while continuing to read ahead. Most marks are lost not because the candidate failed to understand, but because they were still deciding on question 7 while the recording answered question 8.",
+                "**Read the questions in the gaps.** Underline what kind of answer each needs — a number, a name, a date, a plural noun. Knowing the shape of the answer before you hear it is most of the skill.",
+                "**Spelling and grammar count.** *Wendesday* is wrong. A plural written as a singular is wrong. If a question says *no more than two words*, three words scores zero however correct the meaning.",
+                "**On paper you get transfer time at the end; on computer you do not.** Know which format you are sitting, because it changes how you work."
+              ]
+            },
+            {
+              "q": "Reading — 60 minutes, 40 questions",
+              "a": [
+                "**There is no extra transfer time.** Write answers straight onto the answer sheet as you go.",
+                "**What it is really testing:** locating information quickly, not reading beautifully. You are not expected to understand every word — you are expected to find the part that answers the question and to read *that* part carefully.",
+                "**Roughly twenty minutes per passage,** and the third is usually the hardest. Candidates who read passage one thoroughly and run out of time on passage three lose more marks than they gained.",
+                "**True / False / Not Given is where Sri Lankan candidates lose most.** *False* means the text says the opposite. *Not Given* means the text does not say. If you are arguing from general knowledge or from what is probably true, the answer is Not Given.",
+                "**Never leave a blank.** There is no penalty for a wrong answer."
+              ]
+            },
+            {
+              "q": "Writing — 60 minutes, two tasks",
+              "a": [
+                "**Task 1** about 150 words, **Task 2** about 250 words. Task 2 carries roughly **twice** the weight of Task 1, so give it about forty of the sixty minutes.",
+                "**Do Task 2 first if you are short of time** — it is worth more. But do both: an unattempted task is a very heavy penalty.",
+                "**Under the word count is penalised. Over it is not** — but a 400-word essay usually contains more errors and worse organisation, so length is not a strategy.",
+                "**Task 1 Academic is description, not opinion.** Report what the figures show, select the significant features, compare. Do not explain why the trend happened and do not say whether it is good.",
+                "**Task 1 General Training is a letter, and register decides the mark.** Decide first whether it is formal, semi-formal or personal, then keep that register from *Dear* to the sign-off. Mixing them is the commonest error.",
+                "**Task 2 must answer the question that was asked.** A prepared essay on the general topic, however well written, scores badly if it does not address the specific instruction — *discuss both views*, *to what extent do you agree*, *what are the causes and solutions*."
+              ]
+            },
+            {
+              "q": "Speaking — 11 to 14 minutes, three parts",
+              "a": [
+                "**Part 1:** familiar questions about yourself, your home, your work or study. Four to five minutes.",
+                "**Part 2:** a card with a topic. **One minute to prepare**, then speak for **one to two minutes** without interruption. Use the preparation minute to write four or five words, not sentences.",
+                "**Part 3:** a discussion connected to the Part 2 topic, but more abstract. This is where higher bands are won or lost.",
+                "**What it is really testing:** fluency, range, accuracy and pronunciation — not opinions. There are no right answers and the examiner does not care whether they agree with you.",
+                "**A Sri Lankan accent is not a problem.** Pronunciation is marked on whether you are understood, not on whether you sound British or Australian. Trying to fake an accent usually makes candidates harder to understand, not easier.",
+                "**Do not answer in one word, and do not recite.** A memorised answer is recognised immediately and marked down. Extend naturally: give the answer, then one reason or one example."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The nine bands, in plain words",
+          "caption": "You receive a band for each module and an overall band. Half bands are used.",
+          "columns": ["Band", "Official term", "What it means in practice"],
+          "rows": [
+            ["9", "Expert user", "Full command. Rare, and not required by most universities."],
+            ["8", "Very good user", "Occasional slips only. Handles complex argument well."],
+            ["7", "Good user", "Generally accurate, occasional errors. A common professional-registration requirement."],
+            ["6", "Competent user", "Effective command despite inaccuracies. A common undergraduate requirement."],
+            ["5", "Modest user", "Partial command; copes with overall meaning in familiar situations."],
+            ["4", "Limited user", "Basic competence in familiar situations only."],
+            ["3", "Extremely limited user", "Conveys and understands only general meaning in very familiar situations."],
+            ["2", "Intermittent user", "No real communication except the most basic information."],
+            ["1", "Non-user", "No ability beyond a few isolated words."],
+            ["0", "Did not attempt", "No answerable information provided."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "How the overall band is worked out",
+          "text": [
+            "Your four module scores are **averaged**, then rounded to the nearest whole or half band.",
+            "A score ending in **.25 rounds up to the next half band**; a score ending in **.75 rounds up to the next whole band**. So 6.25 becomes **6.5**, and 6.75 becomes **7.0**. Anything lower rounds down: 6.125 becomes **6.0**.",
+            "**This is why one weak module is expensive.** Three 7s and a 5.5 average to 6.625, which rounds to 6.5 — not 7. If you need 7 overall, the module you avoid practising is the one that decides your result."
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Preparing sensibly",
+          "doTitle": "Do",
+          "do": [
+            "Find out the exact score you need, in each module, before you start",
+            "Sit one complete timed test early, to find out where you actually are",
+            "Practise under the real time limit — untimed practice teaches the wrong habit",
+            "Learn the instructions by heart so you do not spend test time reading them",
+            "Write Task 2 essays by hand if you are sitting the paper test",
+            "Read something in English every day that you did not choose for the exam",
+            "Book the test only when your practice scores are consistently at or above your target"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Memorising model answers — examiners identify them quickly and mark them down",
+            "Learning long \"impressive\" words you cannot use accurately; a wrong big word costs more than a right small one",
+            "Practising only your strongest module because it feels good",
+            "Treating IELTS as a general English course — it is a test-format skill",
+            "Booking the test to \"see what happens\", which is an expensive way to find out",
+            "Believing anyone who guarantees a band score"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The mistakes we see most often",
+          "text": [
+            "**Preparing for the wrong test.** Candidates who need General Training practising Academic Task 1 graphs for weeks. Check which one your purpose requires, and check it in writing.",
+            "**Ignoring the word count.** Under 150 or under 250 words is penalised every time, and under pressure most candidates write less than they think. Learn what 250 of your own words looks like on the page.",
+            "**Answering the topic instead of the question** in Task 2. The topic might be technology; the question might be *do the advantages outweigh the disadvantages*. Those need different essays.",
+            "**Silence in Speaking Part 2.** One minute of preparation feels short, so candidates start speaking without a plan and stop after forty seconds. Four words on the paper is enough to keep going for two minutes.",
+            "**Treating Not Given as False** in Reading. They are different answers and mixing them can cost several bands' worth of marks across a paper."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Where to get official practice material",
+          "text": [
+            "**We do not host IELTS practice tests here, and we will not.** The IELTS papers in circulation online are almost all Cambridge copyright, and copying them would be theft from the people who wrote them — whatever the site you found them on.",
+            "The test owners publish genuine free practice material themselves. Use it in preference to anything else, because it is the only material written to the real specification:",
+            "**[Official IELTS preparation resources](https://ielts.org/take-a-test/preparation-resources)** and **[official sample test questions](https://ielts.org/take-a-test/preparation-resources/sample-test-questions)** at [ielts.org](https://ielts.org/).",
+            "**Booking in Sri Lanka:** IELTS is administered here by **IDP** and the **British Council**. IDP's Sri Lanka page is at [ielts.idp.com/srilanka](https://ielts.idp.com/srilanka). For the British Council, search for their Sri Lanka examinations page directly — we have not linked it because we could not verify the exact address at the time of writing.",
+            "Confirm **fees, test dates, formats and centre locations on the official sites**. Those change, and anything we printed here would be out of date before you read it."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "What RCF English offers, honestly",
+          "text": [
+            "This page is **guidance on the test and how to approach it**, written from experience of what Sri Lankan candidates get wrong. It is free and it is ours.",
+            "We do **not** currently publish IELTS practice papers, model answers or graded writing feedback on this site. If we add them they will be written by RCF English, not copied from a coursebook.",
+            "The general English work in [Practical English](practical-english/) — grammar, vocabulary, pronunciation and the four skills — is useful preparation, because a candidate whose English improves scores better than one who only learns test tricks."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Practice, module by module",
+          "eyebrow": "IELTS practice",
+          "columns": "4",
+          "items": [
+            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the shape of the answer, and the traps that cost marks."] },
+            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, worked through, plus timing."] },
+            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] },
+            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Twelve original cue cards and Part 1 and 3 question banks."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Build the English underneath the test",
+          "eyebrow": "Elsewhere on this site",
+          "columns": "4",
+          "items": [
+            { "title": "Writing", "url": "practical-english/writing/", "more": "Open", "text": ["Paragraphs, structure and the habits that make Task 2 easier."] },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open", "text": ["Extending an answer beyond one sentence."] },
+            { "title": "Listening", "url": "practical-english/listening/", "more": "Open", "text": ["Following English at natural speed."] },
+            { "title": "Reading", "url": "practical-english/reading/", "more": "Open", "text": ["Finding information quickly in a long text."] }
+          ]
+        },
+        { "type": "adslot", "placement": "between" }
+      ]
+    }
+  ]
+}

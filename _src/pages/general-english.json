@@ -47,7 +47,9 @@
             { "title": "Pronunciation", "url": "practical-english/pronunciation/", "more": "Open", "text": ["Being understood: sounds, word stress and the rhythm of English sentences."] },
             { "title": "Common Mistakes", "url": "practical-english/common-mistakes/", "more": "Open", "text": ["The errors adult learners make most often, with the correct form beside each."] },
             { "title": "Self-Assessment", "url": "practical-english/self-assessment/", "more": "Open", "text": ["Find out honestly what you can already do, and what to work on next."] },
-            { "title": "Interactive Practice", "url": "practical-english/interactive-practice/", "more": "Open", "text": ["Activities that mark themselves and explain every answer."] }
+            { "title": "Interactive Practice", "url": "practical-english/interactive-practice/", "more": "Open", "text": ["Activities that mark themselves and explain every answer."] },
+            { "title": "IELTS", "url": "practical-english/ielts/", "more": "Open", "text": ["What the test actually measures, the four modules, the nine bands, and where to get official practice."] },
+            { "title": "Cambridge Exams", "url": "practical-english/cambridge-exams/", "more": "Open", "text": ["Young Learners, the A2 Key to C2 Proficiency ladder, and the teaching qualifications TKT, CELTA and DELTA."] }
           ]
         },
         {
@@ -85,7 +87,17 @@
           ]
         },
         {
+          "type": "callout",
+          "style": "note",
+          "title": "More resources coming soon",
+          "text": [
+            "The lessons and practice on these pages are written by RCF English and are complete. What is not here yet is a library of downloadable spoken-English worksheets, dialogues and audio.",
+            "We have deliberately not filled this section with files found elsewhere. Ready-made spoken English and IELTS material is almost all commercial or belongs to another institution, and republishing it here would breach copyright. **This section will grow with material written for RCF English.**"
+          ]
+        },
+        {
           "type": "relatedBooks",
+          "books": ["english-for-workplace", "receptionists-manual", "english-for-caregivers"],
           "variant": "tint",
           "heading": "Find related books",
           "text": ["RCF Publications produces practical English support materials and grammar resources written for independent learners and adults, with simplified explanations and everyday examples."]
@@ -197,6 +209,12 @@
             { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
             { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["grammar-practice-book"],
+          "heading": "Graded grammar practice in book form",
+          "text": ["A grammar practice book with explanations and answers, for independent study or classroom use."]
         }
       ]
     },

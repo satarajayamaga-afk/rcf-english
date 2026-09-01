@@ -40,8 +40,52 @@
         },
         {
           "type": "publications-catalogue",
-          "heading": "Published titles",
-          "eyebrow": "Catalogue"
+          "heading": "School English support books",
+          "eyebrow": "Catalogue",
+          "text": ["Grade-by-grade companions for pupils who have fallen behind and need to rebuild English without falling further behind."],
+          "bookCategory": "School English support books"
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Grammar and examination support",
+          "eyebrow": "Catalogue",
+          "text": ["Grammar practice and quick reference for the Ordinary Level."],
+          "bookCategory": "Grammar and examination support"
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Spoken English",
+          "eyebrow": "Catalogue",
+          "text": ["Ready-to-run spoken English lessons for the primary classroom."],
+          "bookCategory": "Spoken English"
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Literature study guides",
+          "eyebrow": "Catalogue",
+          "text": ["Full study guides to prescribed texts, with examination guidance and model answers."],
+          "bookCategory": "Literature study guides"
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Professional and workplace English",
+          "eyebrow": "Catalogue",
+          "text": ["English for particular kinds of work, for adults already in a job or preparing for one."],
+          "bookCategory": "Professional and workplace English"
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Teacher-development books",
+          "eyebrow": "Catalogue",
+          "text": ["Books written for teachers rather than pupils."],
+          "bookCategory": "Teacher-development books"
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Kindle and paperback publications",
+          "eyebrow": "Sold through Amazon",
+          "text": ["The titles below also appear above under their own subject. They are listed again here because they are sold through Amazon rather than by us: they carry no local price, and a View on Amazon button will appear on each as soon as its product link is supplied."],
+          "bookChannel": "kindle"
         },
         {
           "type": "payment-instructions",

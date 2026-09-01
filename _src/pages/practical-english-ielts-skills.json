@@ -1,0 +1,570 @@
+{
+  "_readme": [
+    "IELTS PRACTICE - FOUR MODULES",
+    "---------------------------------------------------------------------",
+    "Every practice item on these four pages was written by RCF English.",
+    "No Cambridge material, no coursebook extracts, no scanned papers, and",
+    "nothing copied from another site.",
+    "",
+    "External links point only to the official test owner and each returned",
+    "HTTP 200 when it was added:",
+    "  ielts.org/take-a-test/preparation-resources/sample-test-questions",
+    "  .../sample-test-questions/academic-test",
+    "  .../sample-test-questions/general-training-test",
+    "  two official band-scored example-response PDFs on ielts.org/cdn/",
+    "",
+    "The official sample tasks are LINKED, never copied. If a link breaks,",
+    "replace it from ielts.org rather than hosting a copy."
+  ],
+
+  "pages": [
+    {
+      "slug": "practical-english/ielts/listening",
+      "title": "IELTS Listening Practice",
+      "metaTitle": "IELTS Listening Practice | RCF English",
+      "description": "IELTS Listening: how the four sections work, predicting the shape of the answer, the traps that cost marks, and where to find official free sample tasks.",
+      "keywords": "IELTS listening practice, IELTS listening tips, IELTS listening answers, IELTS Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": { "text": "You hear it once. Everything that matters in IELTS Listening follows from that one fact." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "The four recordings",
+          "text": [
+            "**Section 1** is a conversation about everyday matters — booking something, arranging something, asking for details. It is the easiest, and it is where careless candidates give away marks they cannot afford.",
+            "**Section 2** is one speaker on a familiar topic: a tour, an announcement, instructions about a place.",
+            "**Section 3** is a discussion between two to four people, usually students and a tutor. The speakers interrupt and disagree, which is what makes it hard.",
+            "**Section 4** is an academic lecture with one speaker and no break. It is the most demanding stretch of the test."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The one habit worth building: predict the shape of the answer",
+          "text": [
+            "Before the recording starts you get time to read the questions. Do not read them for meaning — read them for **what kind of word must go in the gap**. Write the shape in the margin.",
+            "This is the difference between hearing a word and recognising it as the answer."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Practice: what shape of answer does each gap need?",
+          "caption": "Written by RCF English. Cover the right column, decide the shape yourself, then check.",
+          "columns": ["The question says", "So the answer must be"],
+          "rows": [
+            ["The class begins at ................", "A time. Listen for a clock time, and write it in one consistent format."],
+            ["Bring a ................ and a notebook.", "A singular countable noun — an object you can carry."],
+            ["The library closes on ................", "A day of the week, or a date."],
+            ["It costs ................ per person.", "An amount of money, with the currency."],
+            ["Ask for ................ at reception.", "A person's name. Expect it to be spelled out."],
+            ["The tour lasts ................", "A length of time — a number plus *minutes* or *hours*."],
+            ["Members receive a ................ discount.", "A percentage or a number."],
+            ["The room is on the ................ floor.", "An ordinal: *first, second, ground*."],
+            ["Complete the form in ................ letters.", "An adjective — almost certainly *capital* or *block*."],
+            ["The deposit is refunded within ................ days.", "A number."],
+            ["Students must not ................ in the laboratory.", "A verb in the base form."],
+            ["The equipment is kept in the ................", "A place or container — a noun, probably with *the* already given."]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "The traps that actually cost marks",
+          "items": [
+            {
+              "q": "The speaker corrects themselves",
+              "a": [
+                "This is the single most common trap in Section 1. *So that's Tuesday the fourteenth — sorry, no, the fifteenth.* The answer is **the fifteenth**.",
+                "Listen for the correction words: *sorry, actually, I mean, no wait, or rather*. When you hear one, the answer you already wrote is wrong.",
+                "**Practise this deliberately.** Write the first number you hear, then be ready to cross it out."
+              ]
+            },
+            {
+              "q": "Spelling, and words that are spelled out",
+              "a": [
+                "Names and addresses are usually spelled aloud. If you cannot write letters at speaking speed you will lose these marks no matter how good your English is.",
+                "**Drill the confusable letters** until they are automatic: **A / E / I**, **B / P / V**, **G / J**, **M / N**, **S / F**.",
+                "A misspelled answer is **wrong**, even when the examiner can tell what you meant. *Wendsday*, *Febuary*, *acommodation* all score zero."
+              ]
+            },
+            {
+              "q": "Word limits and plurals",
+              "a": [
+                "*No more than two words and/or a number* means exactly that. Three words scores zero however right the meaning.",
+                "*A number* counts as one item; *twenty-five* written in words is still one word if hyphenated.",
+                "**Singular for plural is wrong.** If the recording says *tickets* and you write *ticket*, you lose the mark. Listen to the end of the word.",
+                "Do not add words that are already printed. If the question reads *in the ................ room* do not write *in the staff room*."
+              ]
+            },
+            {
+              "q": "Distractors in Sections 3 and 4",
+              "a": [
+                "In a discussion, two speakers will offer options and one will be rejected. The rejected option is mentioned **first and most clearly** — that is the point of it.",
+                "Listen for the turn: *but*, *however*, *actually I think*, *on the other hand*, *in the end we decided*.",
+                "**Never answer from the first thing you recognise.** Wait for the sentence that settles it."
+              ]
+            },
+            {
+              "q": "Losing your place",
+              "a": [
+                "If you miss one, **leave it and move on immediately**. Candidates who stay on a missed answer lose the next three as well. One mark becomes four.",
+                "Keep your eye on the question you are expecting next, not the one you lost.",
+                "At the very end, fill every blank. There is no penalty for a wrong guess."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Official free listening practice",
+          "text": [
+            "The test owner publishes free sample listening tasks — one for each question type, with answer keys and full transcripts.",
+            "**[Academic sample test questions](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)** · **[General Training sample test questions](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/general-training-test)**",
+            "The listening section is identical in both, so use either. **Use the transcript only after you have answered**, never while listening — reading along teaches nothing about listening."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The other three modules",
+          "eyebrow": "IELTS",
+          "columns": "3",
+          "items": [
+            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, and the timing that decides your band."] },
+            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] },
+            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Cue cards and question banks written for practice."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/reading",
+      "title": "IELTS Reading Practice",
+      "metaTitle": "IELTS Reading Practice | RCF English",
+      "description": "IELTS Reading: the timing that decides your band, a reliable method for True, False and Not Given, and where to find official free sample tasks.",
+      "keywords": "IELTS reading practice, true false not given, IELTS reading timing, IELTS Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": { "text": "Sixty minutes, forty questions, no transfer time at the end. Reading is not a test of reading — it is a test of finding." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Timing decides more than vocabulary does",
+          "text": [
+            "Three passages, sixty minutes, and **no extra time to copy answers**. Write onto the answer sheet as you go.",
+            "**Twenty minutes each**, and stop when the twenty minutes are gone even if you have not finished. The third passage carries as many marks as the first, and candidates who read passage one carefully and rush passage three routinely lose eight or nine marks doing it.",
+            "**Do not read the passage first.** Read the questions, then go looking. The passage is a reference book, not a story."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "True, False, Not Given — where Sri Lankan candidates lose most",
+          "text": [
+            "This one question type accounts for more lost marks than any other. The rule is short and people still get it wrong under pressure, because they answer from knowledge instead of from the text."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The decision, in three lines",
+          "caption": "Written by RCF English. Apply it mechanically. Your opinion and your general knowledge are irrelevant.",
+          "columns": ["Answer", "When to choose it", "The test to apply"],
+          "rows": [
+            ["TRUE", "The text states this, in different words.", "Can you point at the sentence that says it? Put your finger on it."],
+            ["FALSE", "The text states the **opposite**.", "Can you point at a sentence that contradicts it? Contradiction, not absence."],
+            ["NOT GIVEN", "The text neither says it nor contradicts it.", "You searched and it is simply not there. This is an answer, not a failure."]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Practice: decide the answer, then check your reasoning",
+          "items": [
+            {
+              "q": "Text: \"The museum opened in 1923 and was extended twice, in 1961 and 1998.\"",
+              "a": [
+                "**Statement A:** *The museum has been extended more than once.* → **TRUE.** Two extensions are stated.",
+                "**Statement B:** *The museum opened in 1932.* → **FALSE.** The text says 1923; that is a contradiction.",
+                "**Statement C:** *The 1998 extension was more expensive than the 1961 one.* → **NOT GIVEN.** Cost is never mentioned. It may well be true in reality — that is not the question."
+              ]
+            },
+            {
+              "q": "Text: \"Most researchers now accept the theory, although a small number continue to question it.\"",
+              "a": [
+                "**Statement A:** *The theory is universally accepted.* → **FALSE.** *A small number continue to question it* contradicts *universally*.",
+                "**Statement B:** *Some researchers still disagree with the theory.* → **TRUE.** Same meaning, different words.",
+                "**Statement C:** *Those who question the theory work mainly in Europe.* → **NOT GIVEN.** No location is given."
+              ]
+            },
+            {
+              "q": "Text: \"The company introduced flexible hours in 2015. Staff turnover fell sharply the following year.\"",
+              "a": [
+                "**Statement A:** *Staff turnover fell in 2016.* → **TRUE.** *The following year* after 2015.",
+                "**Statement B:** *Flexible hours caused the fall in staff turnover.* → **NOT GIVEN.** The text places the two facts side by side; it does not claim one caused the other. This trap catches strong candidates constantly.",
+                "**The lesson:** two facts in sequence are not a stated cause. Watch for it."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Working through a passage",
+          "doTitle": "Do",
+          "do": [
+            "Read the questions before the passage",
+            "Underline the name, date, number or unusual word in each question, and hunt for that",
+            "Answer in the order the questions come — most types follow the passage order",
+            "Write the answer on the answer sheet immediately",
+            "Guess every remaining blank in the last two minutes",
+            "Accept Not Given as a normal, frequent answer"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Reading the whole passage first, which uses a third of your time",
+            "Stopping at an unknown word — you rarely need it",
+            "Choosing an answer because the same word appears; test writers plant matching words deliberately",
+            "Answering from what you know about the topic",
+            "Leaving anything blank",
+            "Spending more than twenty minutes on any one passage"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Official free reading practice",
+          "text": [
+            "The test owner publishes a free sample task for **every reading question type** — True/False/Not Given, matching features, matching headings, sentence and summary completion, multiple choice — each with an answer key.",
+            "**[Academic reading sample tasks](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)** · **[General Training reading sample tasks](https://ielts.org/take-a-test/preparation-resources/sample-test-questions/general-training-test)**",
+            "**Academic and General Training reading are different tests.** Practise the one you are actually sitting."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The other three modules",
+          "eyebrow": "IELTS",
+          "columns": "3",
+          "items": [
+            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the answer, and the traps in each section."] },
+            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] },
+            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Cue cards and question banks written for practice."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/writing",
+      "title": "IELTS Writing Practice",
+      "metaTitle": "IELTS Writing Practice, Task 1 and Task 2 | RCF English",
+      "description": "IELTS Writing: what Task 1 and Task 2 require, how the time divides, original practice prompts for both tasks, and official band-scored example answers.",
+      "keywords": "IELTS writing task 1, IELTS writing task 2, IELTS essay questions, IELTS letter writing, IELTS Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": { "text": "Two tasks, sixty minutes, and one of them is worth twice the other. Most candidates divide the time as though they were equal." },
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "How the hour should divide",
+          "caption": "Task 2 carries roughly twice the weight of Task 1. Plan accordingly.",
+          "columns": ["Task", "Minimum words", "Time to spend", "Worth"],
+          "rows": [
+            ["Task 1 — Academic: describe a graph, chart, table, map or process. General Training: write a letter.", "150", "About 20 minutes", "One third"],
+            ["Task 2 — an essay answering a specific question.", "250", "About 40 minutes", "Two thirds"]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Task 1 Academic — describing data",
+          "items": [
+            {
+              "q": "What the examiner wants, and what candidates give instead",
+              "a": [
+                "**Wanted:** an overview of the main features, the significant comparisons, and accurate figures used as support.",
+                "**Given instead:** every single number in the chart, in the order they appear, with no overview. That is the most common Band 5 answer.",
+                "**Never explain why**, and never say whether the trend is good or bad. That is Task 2 thinking and it earns nothing here."
+              ]
+            },
+            {
+              "q": "A four-part structure that always works",
+              "a": [
+                "**1. Introduction (one sentence).** Paraphrase the question. Do not copy it word for word.",
+                "**2. Overview (two sentences).** The two or three biggest things a person would notice — the highest, the lowest, the biggest change, the overall direction. **This paragraph earns the most marks and is the one candidates omit.**",
+                "**3. Detail paragraph one.** The first group of data, with figures.",
+                "**4. Detail paragraph two.** The rest, with figures and comparisons.",
+                "Signal the overview so the examiner cannot miss it: *Overall, ...*",
+              "**The language of change — verbs, degree adverbs, prepositions and comparison — is set out with practice data and two full model answers on [Describing Graphs and Charts](practical-english/ielts/graphs/).**"
+              ]
+            },
+            {
+              "q": "Ten original Task 1 Academic prompts",
+              "a": [
+                "Written by RCF English for practice. Sketch the data yourself, or use them to rehearse the structure and language.",
+                "1. A line graph showing rice production in three districts between 2000 and 2020.",
+                "2. A bar chart comparing mobile phone ownership in five countries in 2010 and 2020.",
+                "3. A pie chart showing how an average household spends its monthly income.",
+                "4. A table showing rainfall and temperature in four Sri Lankan towns across a year.",
+                "5. A line graph showing tourist arrivals month by month over two years.",
+                "6. Two maps of a town centre, in 1990 and today.",
+                "7. A process diagram showing how tea is produced, from picking to packing.",
+                "8. A bar chart showing the number of students choosing each A/L stream over ten years.",
+                "9. A line graph showing internet users in urban and rural areas over fifteen years.",
+                "10. A table comparing average working hours in six countries."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Task 1 General Training — letters",
+          "items": [
+            {
+              "q": "Register decides the mark",
+              "a": [
+                "Decide **formal, semi-formal or personal** before you write a word, and hold it to the end. Mixing registers is the commonest failure in GT Task 1.",
+                "**Formal** — to someone you do not know, by role: *Dear Sir or Madam* → *Yours faithfully*. No contractions.",
+                "**Semi-formal** — to someone you know by name in a working relationship: *Dear Mr Perera* → *Yours sincerely*.",
+                "**Personal** — to a friend or family member: *Dear Nimal* → *Best wishes*. Contractions are fine and expected.",
+                "**Cover all three bullet points.** Missing one caps your band regardless of how good the English is."
+              ]
+            },
+            {
+              "q": "Eight original letter prompts",
+              "a": [
+                "Written by RCF English. Each has three points, as the real task does.",
+                "1. **Formal.** Write to a college requesting a copy of a certificate you have lost. Say which course, explain how it was lost, ask what the procedure is.",
+                "2. **Formal.** Write to a bank about a charge on your account you do not recognise. Give the date and amount, explain why you dispute it, say what you want done.",
+                "3. **Semi-formal.** Write to your manager requesting three days' leave. Give the dates, the reason, and how your work will be covered.",
+                "4. **Semi-formal.** Write to a landlord about a repair. Describe the problem, say how long it has continued, request a date for the repair.",
+                "5. **Personal.** Write to a friend who has moved abroad. Say what has changed at home, ask about their new job, invite them to visit.",
+                "6. **Personal.** Write to a cousin thanking them for a wedding gift. Say what it was, how you are using it, and when you hope to meet.",
+                "7. **Formal.** Write to a newspaper about a problem with public transport in your area. Describe it, explain the effect, suggest a solution.",
+                "8. **Semi-formal.** Write to a course tutor explaining that you will miss a class. Give the reason, ask what you will miss, ask how to catch up."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Task 2 — the essay",
+          "items": [
+            {
+              "q": "Answer the question that was asked",
+              "a": [
+                "Four instructions come up again and again, and each needs a **different essay**. A prepared essay on the topic scores badly if it answers the wrong instruction.",
+                "**Discuss both views and give your own opinion.** You must cover both sides *and* state your view. Missing either caps the band.",
+                "**To what extent do you agree or disagree?** Take a position and hold it. A fence-sitting essay reads as having no argument.",
+                "**What are the causes, and what solutions can you suggest?** Two jobs. Give roughly equal space to each.",
+                "**Do the advantages outweigh the disadvantages?** Not a list of both — a judgement about which is greater, argued."
+              ]
+            },
+            {
+              "q": "A structure that fits 250 words in 40 minutes",
+              "a": [
+                "**Introduction (2 sentences).** Paraphrase the question; state what your essay will do.",
+                "**Body paragraph 1 (about 90 words).** One idea. State it, explain it, give one example.",
+                "**Body paragraph 2 (about 90 words).** A second idea, same shape.",
+                "**Conclusion (2 sentences).** Restate your position. Introduce nothing new.",
+                "**Two well-developed paragraphs beat four thin ones.** Examiners reward development, not the number of ideas.",
+                "**Spend five minutes planning.** Candidates who plan finish; candidates who begin writing immediately usually run out of argument at 180 words."
+              ]
+            },
+            {
+              "q": "Fifteen original Task 2 questions",
+              "a": [
+                "Written by RCF English, grouped by instruction type so you can practise each kind.",
+                "**Discuss both views and give your own opinion.**",
+                "1. Some believe children should begin learning a foreign language in primary school; others think secondary school is soon enough.",
+                "2. Some think public money should fund the arts; others think it should go only to essential services.",
+                "3. Some say examinations are the fairest way to measure ability; others prefer continuous assessment.",
+                "4. Some believe city life offers more opportunity; others believe village life is healthier.",
+                "**To what extent do you agree or disagree?**",
+                "5. Technology has made people less able to think for themselves.",
+                "6. University education should be free for every student who qualifies.",
+                "7. Working from home is better for employees than working in an office.",
+                "8. Traditional skills and crafts will disappear unless governments protect them.",
+                "**Causes and solutions.**",
+                "9. Traffic congestion is worsening in many cities. What causes it and what can be done?",
+                "10. Fewer young people are entering teaching. Why, and how might it be addressed?",
+                "11. Many students leave school with poor English despite years of study. Why, and what would help?",
+                "12. Rates of childhood obesity are rising. What are the causes and the remedies?",
+                "**Do the advantages outweigh the disadvantages?**",
+                "13. More people are choosing to live alone.",
+                "14. Tourism has grown rapidly in many developing countries.",
+                "15. Most shopping is moving online."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Official example answers with band scores and examiner comments",
+          "text": [
+            "This is the most useful free IELTS writing material that exists, and most candidates never see it: **real candidate answers, marked, with the examiner's reasoning printed underneath.** Reading why an answer got 6 rather than 7 teaches more than any list of tips.",
+            "**[Academic Writing — example responses with band scores and examiner comments (PDF, ielts.org)](https://ielts.org/cdn/computer-delivered-sample-tests-academic-writing/ielts-academic-writing-example-responses-to-parts-1-and-2-with-band-scores-and-examiner-comments.pdf)**",
+            "**[General Training Writing — example responses with band scores and examiner comments (PDF, ielts.org)](https://ielts.org/cdn/computer-delivered-sample-tests-general-training-writing/ielts-general-training-writing-example-responses-to-parts-1-and-2-with-band-scores-and-examiner-comments.pdf)**",
+            "Both are published free by the test owner and are linked here, not copied."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The other three modules",
+          "eyebrow": "IELTS",
+          "columns": "3",
+          "items": [
+            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the answer, and the traps in each section."] },
+            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, and the timing that decides your band."] },
+            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Cue cards and question banks written for practice."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/speaking",
+      "title": "IELTS Speaking Practice",
+      "metaTitle": "IELTS Speaking Practice, Cue Cards and Questions | RCF English",
+      "description": "IELTS Speaking: the three parts explained, how to extend an answer, and original RCF practice question banks and cue cards for Parts 1, 2 and 3.",
+      "keywords": "IELTS speaking practice, IELTS cue cards, IELTS speaking part 2, IELTS speaking questions, IELTS Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "guidance",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": { "text": "Eleven to fourteen minutes with one examiner. They are not testing your opinions, your job, or whether you sound British. They are testing whether you can keep going." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "How to extend an answer",
+          "text": [
+            "Almost every low speaking band comes from answers that stop too soon. The fix is a habit, not vocabulary.",
+            "**Answer, then reason, then example.** Three sentences, every time, until it is automatic.",
+            "*Do you enjoy cooking?* — **Answer:** *Not really, to be honest.* **Reason:** *I work late and I'm usually too tired to start.* **Example:** *Last night I just heated something from the fridge and ate it standing up.*",
+            "That is a Band 7 shape. The vocabulary is ordinary; the structure is what earns the mark."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Part 1 — familiar questions, four to five minutes",
+          "items": [
+            {
+              "q": "Practice question bank (original)",
+              "a": [
+                "Written by RCF English. Record yourself answering ten a day using answer–reason–example.",
+                "**Home and where you live:** Do you live in a house or a flat? What is your favourite room? What would you change about your home? Is your area a good place for children?",
+                "**Work or study:** What do you do? Why did you choose it? What is the hardest part? What would you like to do in five years?",
+                "**Free time:** What do you do after work? Has that changed since you were younger? Do you prefer to relax alone or with people?",
+                "**Food:** What did you eat today? Do you cook? Has food in Sri Lanka changed since you were a child?",
+                "**Travel:** How do you get to work? Do you enjoy long journeys? Which country would you most like to visit?",
+                "**Technology:** How often do you use your phone? What would you find hardest to give up? Do you read on paper or on a screen?",
+                "**Weather and seasons:** What weather do you like best? Does the weather change how you feel? What do people do here when it rains?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Part 2 — the cue card, one to two minutes",
+          "items": [
+            {
+              "q": "How to use the one minute of preparation",
+              "a": [
+                "Write **four or five words**, not sentences. Sentences cannot be written in a minute and reading them aloud sounds memorised.",
+                "One word per bullet point, plus one for how you will finish.",
+                "**Speak until they stop you.** Finishing at forty seconds costs marks; being interrupted at two minutes costs nothing.",
+                "If you run dry, go back to the last bullet and add a reason or a comparison: *and it's quite different from ...*"
+              ]
+            },
+            {
+              "q": "Twelve original cue cards",
+              "a": [
+                "Written by RCF English in the standard format. Give yourself one minute, then speak for two.",
+                "**1.** Describe a teacher who influenced you. Say who they were, what they taught, what they did, and why you still remember them.",
+                "**2.** Describe a journey that did not go as planned. Say where you were going, what went wrong, what you did, and how you felt afterwards.",
+                "**3.** Describe something you own that is important to you. Say what it is, how you got it, how you use it, and why it matters.",
+                "**4.** Describe a skill you would like to learn. Say what it is, why you want it, how you would learn it, and how it would change things.",
+                "**5.** Describe a place in your town you would show a visitor. Say where it is, what is there, what you do there, and why you chose it.",
+                "**6.** Describe a decision you found difficult. Say what it was, why it was hard, what you decided, and whether you were right.",
+                "**7.** Describe a meal you remember well. Say what it was, who you were with, where it was, and why you remember it.",
+                "**8.** Describe a time you helped someone. Say who they were, what they needed, what you did, and how it turned out.",
+                "**9.** Describe a book, film or programme you would recommend. Say what it is, what happens, who would like it, and why.",
+                "**10.** Describe something you learned outside school. Say what it was, who taught you, how you learned it, and whether you still use it.",
+                "**11.** Describe a festival or celebration in your country. Say what it is, when it happens, what people do, and what you enjoy about it.",
+                "**12.** Describe a change you would like to see in your area. Say what it is, why it is needed, who would benefit, and how it might happen."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Part 3 — the discussion, four to five minutes",
+          "items": [
+            {
+              "q": "What changes in Part 3",
+              "a": [
+                "The questions stop being about **you** and start being about **people in general**. This is where Band 7 and above is decided.",
+                "You are expected to speculate, compare, and consider another view — not to know facts. *I'm not certain, but I would imagine ...* is a perfectly good answer.",
+                "**Useful shapes:** *It depends on ... / In the past ... whereas now ... / Some people would argue ... but I think ... / It's likely to ...*",
+                "Say *that's an interesting question* only once, if at all. Examiners hear it forty times a day."
+              ]
+            },
+            {
+              "q": "Original Part 3 follow-up questions",
+              "a": [
+                "Written by RCF English, grouped to follow the cue cards above.",
+                "**Education (follows cue card 1 or 10):** Should teachers be respected more than they are? How has teaching changed in the last thirty years? Is it better to learn from a person or from the internet?",
+                "**Travel (follows 2 or 5):** Why do people travel less as they get older? Has tourism helped or harmed places in your country? Will people travel less in future?",
+                "**Possessions (follows 3 or 7):** Do people own too many things now? Why do some objects matter more than their value? Are people less careful with possessions than they were?",
+                "**Change and community (follows 6 or 12):** Who should be responsible for improving a neighbourhood — residents or government? Why do people resist change? Do small changes matter as much as large ones?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "In the test itself",
+          "doTitle": "Do",
+          "do": [
+            "Speak more than the examiner does",
+            "Ask them to repeat a question if you did not hear it — this is allowed and costs nothing",
+            "Correct yourself naturally if you notice an error, then continue",
+            "Use the words you actually control accurately",
+            "Speak at your normal speed"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Reciting a memorised answer — examiners identify it within a sentence",
+            "One-word answers, even to a yes/no question",
+            "Imitating a British or American accent; being understood is what is marked",
+            "Long silences while you search for a perfect word — say the ordinary one",
+            "Asking the examiner whether your answer was good"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Official speaking sample material",
+          "text": [
+            "The test owner publishes free sample speaking tasks showing the real format of all three parts: **[official sample test questions](https://ielts.org/take-a-test/preparation-resources/sample-test-questions)**.",
+            "The speaking test is **identical in Academic and General Training**, so any official sample applies to you.",
+            "The cue cards and question banks above are written by RCF English for practice. They are not real examination questions, and no genuine test material is reproduced anywhere on this site."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The other three modules",
+          "eyebrow": "IELTS",
+          "columns": "3",
+          "items": [
+            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the answer, and the traps in each section."] },
+            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, and the timing that decides your band."] },
+            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

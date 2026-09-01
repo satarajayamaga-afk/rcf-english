@@ -80,6 +80,12 @@
           ]
         },
         {
+          "type": "grade-resources",
+          "heading": "Official papers, marking schemes and guides",
+          "eyebrow": "Downloads",
+          "subject": "English Literature",
+          "examination": "al"
+        },        {
           "type": "callout",
           "style": "legal",
           "title": "Copyright and accuracy",
@@ -105,6 +111,43 @@
       "blocks": [
         {
           "type": "callout",
+          "style": "info",
+          "title": "This is Subject 73",
+          "text": [
+            "G.C.E. Advanced Level **English Literature is Subject 73**. The National Institute of Education labels the subject simply *English* in its own documents, which is why some official papers and guides appear under that name.",
+            "Subject 73 has **two papers**. Paper I carries the literature questions on the prescribed texts. Paper II is the language component, covering composition, comprehension and precis. Both belong to Subject 73 and both are examined as part of this subject.",
+            "**Subject 13 is a different subject** — G.C.E. A/L General English, taken alongside your main subjects. Its papers are on the [General English](general-english/) pages, not here."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The official syllabus",
+          "text": [
+            "The current syllabus is the *English Language Syllabus, Grades 12 and 13*, issued by the **Department of English, National Institute of Education, Maharagama**, for implementation **from 2017**. Despite its title, its objectives are entirely literary.",
+            "It sets out **13 competencies** broken into **51 competency levels**, and divides the teaching into **Part 1 and Part 2**."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "How the teaching time is divided",
+          "columns": ["Part", "Periods", "What it covers"],
+          "rows": [
+            ["Part 1", "220", "The main body of the course: the prescribed poetry, drama, fiction and prose, and the competencies built on them."],
+            ["Part 2", "80", "The remaining competencies, taken alongside and after Part 1."],
+            ["Total", "300", "The full two-year allocation across Grades 12 and 13."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "On editions, and on the term plan",
+          "text": [
+            "The syllabus instructs that students use **Penguin Classics for the drama and the novels**, and refers teachers to the **Oxford** edition for Fugard. There is no single official anthology for A/L, unlike O/L.",
+            "The syllabus gives **period allocations, not a termwise breakdown**. Any term-by-term sequence on this site is therefore labelled an **RCF suggested teaching plan** and is not official."
+          ]
+        },
+        {
+          "type": "callout",
           "style": "warn",
           "title": "Check the official syllabus for your year",
           "text": [
@@ -125,7 +168,13 @@
           ]
         },
         {
-          "type": "steps",
+          "type": "grade-resources",
+          "heading": "Official Subject 73 documents",
+          "eyebrow": "Downloads",
+          "subject": "English Literature",
+          "examination": "al"
+        },
+        {          "type": "steps",
           "heading": "A two-year plan",
           "variant": "tint",
           "items": [
@@ -211,6 +260,51 @@
           ]
         },
         {
+          "type": "prose",
+          "heading": "The prescribed poetry",
+          "text": [
+            "The poems below are the twenty-four set for A/L English Literature under the **2017 cycle**, listed in the order the official NIE *Anthology of Poetry* gives them.",
+            "**We do not reproduce the poems here.** The anthology prints them in full under permissions granted to the National Institute of Education — Larkin's *Money*, for instance, appears by permission of Faber and Faber. Those permissions belong to the NIE, not to this website. Use the anthology issued by your school, and check the list against the syllabus for your own examination year."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The twenty-four prescribed poems",
+          "caption": "Compiled from the contents of the official NIE Anthology of Poetry, G.C.E. (A/L) English, to be implemented from 2017. A list of titles is a fact, not a reproduction.",
+          "columns": ["#", "Poem", "Poet"],
+          "rows": [
+            ["1", "Sonnet 73 — *That time of year thou mayst in me behold*", "William Shakespeare"],
+            ["2", "Sonnet 141 — *In faith, I do not love thee with mine eyes*", "William Shakespeare"],
+            ["3", "Batter My Heart (Holy Sonnet 14)", "John Donne"],
+            ["4", "Song: Go and Catch a Falling Star", "John Donne"],
+            ["5", "To the Memory of Mr Oldham", "John Dryden"],
+            ["6", "Extract from Canto 3, The Rape of the Lock", "Alexander Pope"],
+            ["7", "The Chimney Sweeper (Songs of Innocence)", "William Blake"],
+            ["8", "Ode to a Nightingale", "John Keats"],
+            ["9", "A Slumber Did My Spirit Seal", "William Wordsworth"],
+            ["10", "To a Snowdrop", "William Wordsworth"],
+            ["11", "Remember", "Christina Rossetti"],
+            ["12", "Among School Children", "W. B. Yeats"],
+            ["13", "Spring and Fall (To a Young Child)", "Gerard Manley Hopkins"],
+            ["14", "Design", "Robert Frost"],
+            ["15", "Suicide in the Trenches", "Siegfried Sassoon"],
+            ["16", "Morning at the Window", "T. S. Eliot"],
+            ["17", "Money", "Philip Larkin"],
+            ["18", "The Cathedral Builders", "John Ormond"],
+            ["19", "An Introduction", "Kamala Das"],
+            ["20", "An Unknown Girl", "Moniza Alvi"],
+            ["21", "Phenomenal Woman", "Maya Angelou"],
+            ["22", "The Fisherman Mourned by His Wife", "Patrick Fernando"],
+            ["23", "Animal Crackers", "Richard de Zoysa"],
+            ["24", "Explosion", "Vivimarie Vanderpoorten"]
+          ]
+        },
+        {          "type": "grade-resources",
+          "heading": "The NIE resource book",
+          "eyebrow": "Downloads",
+          "subject": "English Literature",
+          "examination": "al"
+        },        {
           "type": "callout",
           "style": "tip",
           "title": "Preparing a text that is not yet on this site",

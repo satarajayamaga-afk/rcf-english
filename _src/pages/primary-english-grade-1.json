@@ -1,0 +1,130 @@
+{
+  "_readme": [
+    "GRADE 1 ENGLISH",
+    "---------------------------------------------------------------------",
+    "This page exists because real, inspected Grade 1 material now exists.",
+    "Every resource listed here was opened and read before being catalogued;",
+    "none was classified from its filename. Two files supplied in the Grade 1",
+    "folder were deliberately left out:",
+    "",
+    "  - 'English - Grade 1 - Model Paper.pdf' is a private institute paper",
+    "    (AZIIE, Tellipalai, Jaffna) carrying a telephone number and a",
+    "    Facebook address on every page.",
+    "  - 'Grade+1-1 වාරය වාර සටහන්.pdf' is a Sinhala-medium whole-curriculum",
+    "    term plan (mathematics, Sinhala, environment, Buddhism, Tamil) ending",
+    "    in a principal's approval block. An internal school document, and",
+    "    not an English resource.",
+    "",
+    "The resource cards come from data/resources.json, filtered by",
+    "level 'Grade 1' and subcategory. Adding a new approved file there makes",
+    "it appear here automatically."
+  ],
+
+  "pages": [
+    {
+      "slug": "primary-english/grade-1",
+      "title": "Grade 1 English",
+      "metaTitle": "Grade 1 English | Primary English | RCF English",
+      "description": "Grade 1 English: what the year covers, and the sixteen themes of the Activity Based Oral English syllabus shared by Grades 1 and 2.",
+      "keywords": "Grade 1 English Sri Lanka, primary English grade 1, activity based oral English, grade 1 model paper, grade 1 activity book",
+      "kicker": "Primary English",
+      "kind": "page",
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": { "text": "Grade 1 English: the first words, the first sounds, and the first time a child hears that English is something you can play with." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What Grade 1 covers",
+          "text": [
+            "In Grade 1 English is taught **orally**, inside the Environment Related Activities lesson rather than as a subject of its own. Children meet English through **themes they already know** — the school, the home, animals in the garden, water, the sky, food, transport — and learn a small set of words and one or two sentence patterns for each.",
+            "Almost everything is done through **songs, games, listening and speaking**. Reading and writing at this stage means recognising letter shapes and forming them, not reading passages."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "The syllabus that governs Grade 1 English",
+          "text": [
+            "Grade 1 and Grade 2 share one syllabus: **Activity Based Oral English**, issued by the Department of English at the National Institute of Education. It is organised into **16 themes**, and for each theme it names the vocabulary, the sentence structures, and the songs, games and activities used to teach them.",
+            "It is a **teacher training syllabus** — written for the primary teacher who takes ERA, not for the child. Parents may still find it useful, because it shows exactly which words and phrases a Grade 1 child is expected to meet."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The 16 themes, in syllabus order",
+          "caption": "From the Activity Based Oral English syllabus outline. Grade 1 and Grade 2 cover the same themes at different depths.",
+          "columns": ["Theme", "What the child learns to say"],
+          "rows": [
+            ["1. We and the school", "Greetings, and asking and giving a name: *Good morning*, *What's your name?*, *I'm ...*"],
+            ["2. Our home", "Family words, and the polite phrases: *Thank you*, *You're welcome*, *Good night*."],
+            ["3. Animals that come into the garden", "Animal and colour words, and *Do you have a pet?* with *yes* and *no*."],
+            ["4. Play with water", "Verbs for what we do with water: *I wash*, *I drink*, *I eat*."],
+            ["5. Sinhala and Hindu New Year period", "Words for clothes, sweets and cleaning, and *Mother has ...*, *I like ...*"],
+            ["6. The sky we see", "Sun, moon, stars, clouds and colours, with *What colour is the ...?*"],
+            ["7. Things we eat and drink", "Food words, and expressing likes: *I like ... and ...*"],
+            ["8. How information is received", "Polite forms and personal information: *My name is ...*, *I'm sorry*."],
+            ["9. Changes in the environment", "Weather and tidiness words, with *It's ...* and the articles *a* and *an*."],
+            ["10. Likes and dislikes", "Places and foods, with *I like ...*"],
+            ["11. How we get our needs", "Asking politely: *Please give me ...*, *Can I have ...*, *Here you are*."],
+            ["12. Transport", "Vehicles and traffic lights, with *I see ...*, *I come by ...*"],
+            ["13. Play with light", "Light and dark words, with *It's ...* and *Is it ...?*"],
+            ["14. Places where people work", "Jobs and workplaces, with *He is ...*, *She is ...*, *What is she?*"],
+            ["15. Different places in the environment", "Garden and field words, with *There's ...* and *There are ...*"],
+            ["16. People who help us", "Simple commands and polite requests: *Can you help me?*, *Thank you very much*."]
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Syllabus and Teacher's Guides",
+          "eyebrow": "Download",
+          "grade": "Grade 1",
+          "subcategory": "teachers-guides"
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Workbooks and worksheets",
+          "eyebrow": "Download",
+          "grade": "Grade 1",
+          "subcategory": "workbooks"
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Vocabulary and classroom language",
+          "eyebrow": "Download",
+          "grade": "Grade 1",
+          "subcategory": "vocabulary"
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Assessments and model papers",
+          "eyebrow": "Download",
+          "grade": "Grade 1",
+          "subcategory": "assessments"
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Downloads are awaiting permission checks",
+          "text": [
+            "We have Grade 1 material in hand — the NIE oral English syllabus, a zonal activity book, model papers and a primary word list. **None of it is offered for download yet.**",
+            "Crediting an author or an education office is not the same as having permission to republish their work. Each file is being checked for ownership and redistribution permission first, and we will link to the official source wherever one exists rather than host a second copy.",
+            "The teaching content on this page is written by RCF English and is free to use."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Also useful for a Grade 1 child",
+          "eyebrow": "Elsewhere on this site",
+          "columns": "3",
+          "items": [
+            { "title": "Alphabet Practice", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter shapes, letter sounds, capitals and small letters, and how to hold a pencil."] },
+            { "title": "Poems and rhymes", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme is how the sounds of English are learned before the spelling is."] },
+            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Short activities that mark themselves and explain every answer."] }
+          ]
+        },
+        { "type": "adslot", "placement": "between" }
+      ]
+    }
+  ]
+}

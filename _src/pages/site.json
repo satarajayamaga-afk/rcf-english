@@ -347,6 +347,27 @@
       "hero": { "text": "This page sets out, plainly, what RCF English will and will not publish. It applies to every past paper, worksheet, model answer and literary extract on the site." },
       "blocks": [
         {
+          "type": "callout",
+          "style": "info",
+          "title": "Reporting a copyright concern",
+          "text": [
+            "RCF English respects intellectual-property rights. If you are a copyright owner and believe that any material available through this website has been used improperly, please [contact us](contact/) with the resource title and evidence of ownership. We will investigate and, where appropriate, remove or correct the material promptly.",
+            "This notice is how an owner reaches us. It is **not** permission to publish copyrighted material, and we do not treat it as one: a resource is checked for ownership and redistribution permission **before** it goes on the site, not after a complaint arrives."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How a resource is classified before it is published",
+          "text": [
+            "Every file offered here falls into one of these groups, and only the first three are ever published:",
+            "**1. Written by RCF English.** Our own lessons, notes and practice material.",
+            "**2. Official Sri Lankan government material clearly released for public access.** Where an official page or download exists we **link to it** rather than host a second copy.",
+            "**3. Third-party material with explicit permission to redistribute.**",
+            "Everything else is held back: commercial books, scans of books, copyrighted workbooks, files with no stated author, and material made by other teachers or institutions without permission. **Crediting an author or an education office is not permission.** Anything uncertain is marked *Copyright and permission review required* and stays unpublished until ownership is confirmed.",
+            "Our own books are a separate case. Books published by RCF Publications are sold through their retailer and may be enrolled in schemes that require the digital edition to remain exclusive to that shop. We therefore show the cover, the description and a link to buy, and we do **not** place the complete book on this site, even while it is on a free promotion."
+          ]
+        },
+        {
           "type": "prose",
           "heading": "The rule we work by",
           "text": [

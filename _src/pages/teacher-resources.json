@@ -35,6 +35,8 @@
           "columns": "4",
           "items": [
             { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["A workable lesson structure, and plans you can adapt."] },
+            { "title": "Classroom Management", "url": "teacher-resources/classroom-management/", "more": "Open", "text": ["Rules and routines, classes of forty, attention, behaviour, pair work and transitions."] },
+            { "title": "Lesson Plan Template", "url": "teacher-resources/lesson-plan-template/", "more": "Open", "text": ["A blank plan, an observation checklist and a self-evaluation form, free to print."] },
             { "title": "Worksheets", "url": "teacher-resources/worksheets/", "more": "Open", "text": ["Printable practice, and how to design your own."] },
             { "title": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/", "more": "60 worksheets", "text": ["Ten worksheets for each grade from 6 to 11, covering reading, writing and grammar, each with an answer key."] },
             { "title": "Teaching Guides", "url": "teacher-resources/teaching-guides/", "more": "Open", "text": ["How to teach the difficult topics: tenses, articles, writing."] },
@@ -83,6 +85,12 @@
             { "title": "RCF Publications for Teachers", "url": "teacher-resources/rcf-publications-for-teachers/", "more": "Open", "text": ["Books written for classroom and tuition teaching."] },
             { "title": "The teacher resource groups", "url": "about/online-communities/", "more": "Open", "text": ["Telegram and WhatsApp resource groups for English teachers."] }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["ai-for-english-teachers", "lets-talk-primary"],
+          "heading": "Books for teachers",
+          "text": ["RCF Publications produces books written for teachers rather than pupils."]
         }
       ]
     },
@@ -111,6 +119,84 @@
             { "title": "Guided practice — 10 minutes", "text": ["Students work with support: in pairs, with a framework, or with the first one done for them. You circulate. This is the part most often cut when time is short, and it is the part that must not be."] },
             { "title": "Independent practice — 8 minutes", "text": ["Alone, without support. You now find out who has actually understood, while there is still time to do something about it."] },
             { "title": "Check and close — 4 minutes", "text": ["Take answers from three or four students, correct the commonest error publicly, and state in one sentence what the lesson was about. Set homework that practises **this** lesson only."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Writing a learning outcome that is worth writing",
+          "items": [
+            {
+              "q": "One outcome, one observable verb",
+              "a": [
+                "An outcome states what the **pupil** will be able to do, not what you will cover. *Teaching the past tense* is a topic; *pupils will be able to write five sentences about last weekend using the simple past* is an outcome.",
+                "Use a verb you can see: **write, say, list, match, ask, label, retell, correct**. Avoid *understand, know, appreciate, be aware of* — you cannot observe any of them in forty minutes, so you cannot tell whether the lesson worked.",
+                "**Add the quantity and the condition.** Not *pupils will write sentences* but *pupils will write five sentences, using the word bank on the board*. Now you know at 4.00 p.m. whether it happened.",
+                "One outcome per lesson. Two if they are genuinely linked. A plan listing five outcomes for forty minutes is a plan that has not been thought about."
+              ]
+            },
+            {
+              "q": "Allocating the time honestly",
+              "a": [
+                "Plan for **thirty-four working minutes** in a forty-minute period. The register, settling and the walk between rooms take the rest, every single day.",
+                "Give the largest block to pupils **producing** language, not to you presenting it. If presentation exceeds ten minutes, the lesson has become a lecture.",
+                "Write the clock time, not the duration, in the margin: *2.15 start pair work.* Durations drift; clock times tell you immediately that you are four minutes behind.",
+                "**Plan the last five minutes first.** Decide how you will check learning, then build backwards. Lessons that run out of time always lose the check, which is the only part that told you anything."
+              ]
+            },
+            {
+              "q": "Choosing teaching aids that survive a real classroom",
+              "a": [
+                "The best aid is the one you will actually have. In most classrooms that is **the blackboard, your voice, the pupils themselves, and paper**.",
+                "**Realia beats pictures, pictures beat words.** A real bus ticket, a real medicine label, a real leaflet from a shop teaches register and layout better than any drawing.",
+                "**Flashcards on quarter-sheets last for years** and work at the back of a class of forty. Laminate the set you use most.",
+                "**Pupils are an aid.** Two children at the front acting a dialogue is a listening resource that needs no electricity.",
+                "If you plan around a projector or speakers, always plan the version without them too. That version is the one you will teach."
+              ]
+            },
+            {
+              "q": "Differentiation, planned rather than improvised",
+              "a": [
+                "**For pupils who struggle:** give the first sentence, supply a word bank, reduce the number required rather than the difficulty, pair them with a middle-ability partner, allow the answer orally before it is written.",
+                "**For pupils who are ahead:** change the task, not the quantity — same story from another character's viewpoint, rewrite it in a different tense, turn the paragraph into a dialogue, write the three questions they would ask the writer.",
+                "Write both lines into the plan **before** the lesson. Differentiation invented at 2.30 p.m. in front of a bored fast finisher is not differentiation.",
+                "**Mark against the outcome only.** If the outcome was the simple past, mark the simple past. Returning a weak pupil's work covered in corrections for spelling, articles and handwriting teaches them only that English is not for them."
+              ]
+            },
+            {
+              "q": "Formative assessment and exit activities",
+              "a": [
+                "Formative assessment is simply **finding out before it is too late**. It needs no marking and no forms.",
+                "**Hold-up answers.** Everyone writes the answer large and holds it up. You read forty responses in ten seconds.",
+                "**Thumbs on the desk** — up, sideways, down — for *I could do this on my own / with help / not yet*. Low, quick and surprisingly honest if you never punish a thumb-down.",
+                "**Exit sentence.** One sentence using today's language, said at the door or written on a slip as they leave. The slips take four minutes to read and tell you exactly what tomorrow must start with.",
+                "**Three names.** Before the bell, ask yourself which three pupils you are unsure about. Check those three first tomorrow."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "A worked 80-minute (double period) plan",
+          "caption": "Grade 9, writing a formal letter of request. A double period is not two lessons joined; it is one lesson with a longer production stage and a compulsory break in the middle.",
+          "columns": ["Time", "Stage", "What happens"],
+          "rows": [
+            ["0–5", "Entry task", "On the board: *Write three things you would ask the principal for, if you could ask for anything.* Register taken while they write."],
+            ["5–12", "Lead-in and purpose", "Two or three ideas read out. You establish that a request in writing needs a reason, not only a want. The outcome is stated aloud and written on the board."],
+            ["12–25", "Presentation", "A real letter of request on the board or a handout. Pupils identify the parts: address, date, salutation, subject line, the request, the reason, the close. They copy the skeleton, not the whole letter."],
+            ["25–35", "Guided practice", "Whole class builds one paragraph together on the board. You supply the polite forms: *I should be grateful if you would ...*, *May I request ...*"],
+            ["35–40", "Break in the middle", "Stand, stretch, a two-minute spelling chain. A double period without a break loses the second half."],
+            ["40–60", "Independent writing", "Each pupil writes their own letter. You walk the fixed route. Word bank stays on the board for those who need it; the extension is to add a second paragraph anticipating an objection."],
+            ["60–72", "Peer check and redraft", "In pairs, using a three-point checklist on the board: is the subject line clear, is there a reason, is the close correct? Pupils correct their own work; you do not collect a first draft."],
+            ["72–80", "Feedback and exit", "Two letters read aloud. You correct the one pattern that went wrong most often. Exit: each pupil says one polite request form aloud at the door."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Blank template, observation checklist and self-evaluation form",
+          "text": [
+            "A blank lesson-plan template, a lesson-observation checklist and a teacher self-evaluation form are on the [Lesson Plan Template](teacher-resources/lesson-plan-template/) page.",
+            "All three were written by RCF English, so there is no permission to seek: print them, photocopy them for your department, or retype them with your own school's heading."
           ]
         },
         {
@@ -380,6 +466,12 @@
             { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "Open" },
             { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open" }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["lets-talk-primary"],
+          "heading": "A book of ready-to-run lessons",
+          "text": ["Forty spoken English lessons for the primary classroom, each planned to fit one period and to need no special materials."]
         }
       ]
     },
@@ -556,6 +648,12 @@
             { "title": "Guided Writing", "url": "teacher-resources/guided-writing/", "more": "Open" },
             { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["grade-6-english-made-easy", "slow-learners-g7", "slow-learners-g8", "slow-learners-g9", "slow-learners-g10", "slow-learners-g11"],
+          "heading": "Books written for exactly this",
+          "text": ["RCF Publications produces a support book for each grade from 6 to 11, written for pupils who have fallen behind and need to rebuild English slowly."]
         }
       ]
     },

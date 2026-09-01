@@ -21,6 +21,13 @@
       },
       "blocks": [
         {
+          "type": "grade-resources",
+          "heading": "Syllabus documents, guides and study packs",
+          "eyebrow": "Downloads",
+          "subject": "English",
+          "examination": "ol"
+        },
+        {
           "type": "prose",
           "heading": "What this section is for",
           "text": [
@@ -84,6 +91,7 @@
         },
         {
           "type": "relatedBooks",
+          "books": ["grammar-practice-book", "slow-learners-g10", "slow-learners-g11"],
           "variant": "tint",
           "heading": "Find related books",
           "text": ["RCF Publications produces practical O/L English support materials, grammar resources and examination-revision books, with simplified explanations and guided writing for learners who need extra help."]
@@ -537,6 +545,7 @@
         },
         {
           "type": "relatedBooks",
+          "books": ["grammar-practice-book", "grammar-quick-reference"],
           "heading": "Find related books",
           "text": ["RCF Publications produces grammar resources and practical English support materials with simplified explanations and graded exercises."]
         }

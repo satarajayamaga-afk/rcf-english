@@ -549,6 +549,12 @@
       "hero": { "text": "Everything downloadable for teachers, in one place, with filters for subject, level, skill, lesson length and learner level." },
       "blocks": [
         {
+          "type": "grade-resources",
+          "heading": "Teachers' Guides, study packs and schemes of work",
+          "eyebrow": "Downloads",
+          "subject": "English"
+        },
+        {
           "type": "browse",
           "heading": "All teacher downloads",
           "source": "resources",

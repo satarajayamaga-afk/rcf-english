@@ -93,6 +93,13 @@
           ]
         },
         {
+          "type": "grade-resources",
+          "heading": "Syllabus, guides and papers to download",
+          "eyebrow": "Downloads",
+          "subject": "English Literature",
+          "examination": "ol"
+        },
+        {
           "type": "callout",
           "style": "legal",
           "variant": "tint",
@@ -104,6 +111,7 @@
         },
         {
           "type": "relatedBooks",
+          "books": ["twilight-crane-guide"],
           "heading": "Find related books",
           "text": ["RCF Publications produces literature study guides for O/L English Literature, with summaries, analysis, questions and model answers."]
         }
@@ -121,6 +129,37 @@
       "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
       "hero": { "text": "What the examination asks of you, and how to organise a year of revision around it." },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "The official syllabus",
+          "text": [
+            "The subject is **Appreciation of English Literary Texts**, taken in Grades 10 and 11 and examined at the Ordinary Level. The syllabus is issued by the **Department of English, National Institute of Education, Maharagama**, on the cycle running **from 2015**.",
+            "It organises the prescribed poems, short stories, drama and novels by **theme rather than by genre**, and builds the teaching on a **four-level reading model** that moves from literal understanding through inference and appreciation to personal response."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "School Based Assessment on the novels",
+          "text": [
+            "One of the three prescribed novels is **assessed internally by the school as well as being examined**, and the teacher chooses which. This is a requirement of the syllabus itself, so check with your teacher early which novel your school has taken for School Based Assessment."
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "School Based Assessment plans to download",
+          "eyebrow": "Downloads",
+          "subject": "English Literature",
+          "examination": "ol",
+          "subcategory": "assessment"
+        },        {
+          "type": "callout",
+          "style": "note",
+          "title": "On the termwise plan",
+          "text": [
+            "The Teacher's Guide sets out competencies and an assessment structure, but **it does not give an official term-by-term breakdown**. Any term sequence shown on this site is an **RCF suggested teaching plan**, not an official one."
+          ]
+        },
         {
           "type": "callout",
           "style": "warn",
@@ -187,6 +226,60 @@
       "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
       "hero": { "text": "Each text has its own page, arranged in the same fifteen sections, so that everything belonging to that poem, story, play or novel stays in one place." },
       "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "The prescribed anthology",
+          "text": [
+            "The prescribed texts are collected in the anthology issued for this subject. **We do not host a copy of it, and we will not.**",
+            "This is not caution for its own sake. The anthology reproduces the set works **in full**, and about half of them are still in copyright — among them Szymborska, Prévert in Reggie Siriwardena's translation, Yasmine Gooneratne, Kumar Sangakkara, Sonali Deraniyagala, Junji Kinoshita, Maya Angelou and John Agard. Several of those writers, or their estates, are still earning from this work. Putting the scan online would take that from them.",
+            "**Use the copy issued by your school, or buy the authorised edition.** The complete prescribed list is set out below so that you know exactly what you need, and a text list is a fact rather than someone's property."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The prescribed texts, in syllabus order",
+          "caption": "The full O/L prescribed list: twenty poems in five themes, four prose texts, two dramas and three novels. Confirm against the official syllabus for your own examination year.",
+          "columns": ["Section", "Title", "Author"],
+          "rows": [
+            ["Poetry — Nature", "To the Nile", "John Keats"],
+            ["Poetry — Nature", "A Bird Came Down the Walk", "Emily Dickinson"],
+            ["Poetry — Nature", "The Eagle", "Alfred, Lord Tennyson"],
+            ["Poetry — Nature", "To the Evening Star", "William Blake"],
+            ["Poetry — Conflict", "War is Kind", "Stephen Crane"],
+            ["Poetry — Conflict", "The Terrorist, He's Watching", "Wisława Szymborska"],
+            ["Poetry — Conflict", "Farewell to Barn and Stack and Tree", "A. E. Housman"],
+            ["Poetry — Conflict", "Breakfast", "Jacques Prévert, translated by Reggie Siriwardena"],
+            ["Poetry — Society", "Once Upon a Time", "Gabriel Okara"],
+            ["Poetry — Society", "I Know Why the Caged Bird Sings", "Maya Angelou"],
+            ["Poetry — Society", "Richard Cory", "Edwin Arlington Robinson"],
+            ["Poetry — Society", "Big Match, 1983", "Yasmine Gooneratne"],
+            ["Poetry — Life", "The Earthen Goblet", "Harindranath Chattopadhyaya"],
+            ["Poetry — Life", "Father and Son", "Cat Stevens"],
+            ["Poetry — Life", "Fear", "Gabriela Mistral"],
+            ["Poetry — Life", "Clown's Wife", "John Agard"],
+            ["Poetry — Humour", "The Camel's Hump", "Rudyard Kipling"],
+            ["Poetry — Humour", "Upside Down", "Alexander Kushner"],
+            ["Poetry — Humour", "The Huntsman", "Edward Lowbury"],
+            ["Poetry — Humour", "Two's Company", "Raymond Wilson"],
+            ["Prose", "The Nightingale and the Rose", "Oscar Wilde"],
+            ["Prose", "The Lahore Attack", "Kumar Sangakkara"],
+            ["Prose", "The Lumber Room", "Saki (H. H. Munro)"],
+            ["Prose", "An extract from *Wave*", "Sonali Deraniyagala"],
+            ["Drama", "Twilight of a Crane", "Junji Kinoshita"],
+            ["Drama", "The Bear", "Anton Chekhov"],
+            ["Novel", "The Prince and the Pauper", "Mark Twain"],
+            ["Novel", "Bringing Tony Home", "Tissa Abeysekara"],
+            ["Novel", "The Vendor of Sweets", "R. K. Narayan"]
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Official O/L Literature documents",
+          "eyebrow": "Downloads",
+          "subject": "English Literature",
+          "examination": "ol"
+        },
         {
           "type": "callout",
           "style": "warn",
@@ -475,6 +568,12 @@
             { "title": "Characters", "url": "ol-literature/characters/", "more": "Open" },
             { "title": "Essay Questions", "url": "ol-literature/essay-questions/", "more": "Open" }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["twilight-crane-guide"],
+          "heading": "A full study guide to this play",
+          "text": ["RCF Publications produces a comprehensive study guide to Twilight of a Crane, covering plot, characters, themes, symbolism and examination answers."]
         }
       ]
     },

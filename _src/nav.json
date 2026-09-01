@@ -5,12 +5,22 @@
     { "label": "Home", "url": "" },
 
     {
+      "label": "RCF Publications",
+      "url": "rcf-publications/",
+      "external": false,
+      "note": "Books and ebooks",
+      "_headerOnly": "On a desktop this lives as its own button in the header bar, so it is left out of the row of sections below to keep those on one line. On a telephone the header button is hidden, so it does appear in the slide-out menu. Either way there is exactly one route to it.",
+      "headerOnly": true
+    },
+
+    {
       "label": "Primary English",
       "url": "primary-english/",
       "summary": "English for younger children: the alphabet, first words, poems, short reading passages, games, and Grade 5 Scholarship language practice.",
       "groups": [
         { "title": "By grade", "links": [
           { "label": "Overview", "url": "primary-english/" },
+          { "label": "Grade 1", "url": "primary-english/grade-1/" },
           { "label": "Grade 3", "url": "primary-english/grade-3/" },
           { "label": "Grade 4", "url": "primary-english/grade-4/" },
           { "label": "Grade 5", "url": "primary-english/grade-5/" }
@@ -105,31 +115,14 @@
     {
       "label": "General English",
       "url": "general-english/",
-      "summary": "Practical English for everyday life, work and study, for adult learners and anyone rebuilding their confidence.",
+      "summary": "G.C.E. A/L General English, Subject 13, taken in Grades 12 and 13 alongside your main subjects.",
       "groups": [
-        { "title": "Core English", "links": [
-          { "label": "Overview", "url": "general-english/" },
-          { "label": "Practical Grammar", "url": "general-english/practical-grammar/" },
-          { "label": "Vocabulary", "url": "general-english/vocabulary/" },
-          { "label": "Pronunciation", "url": "general-english/pronunciation/" },
-          { "label": "Common Mistakes", "url": "general-english/common-mistakes/" }
+        { "title": "Subject 13", "links": [
+          { "label": "Overview, papers and marking schemes", "url": "general-english/" }
         ]},
-        { "title": "The four skills", "links": [
-          { "label": "Reading", "url": "general-english/reading/" },
-          { "label": "Writing", "url": "general-english/writing/" },
-          { "label": "Listening", "url": "general-english/listening/" },
-          { "label": "Speaking", "url": "general-english/speaking/" }
-        ]},
-        { "title": "English in use", "links": [
-          { "label": "Everyday English", "url": "general-english/everyday-english/" },
-          { "label": "Spoken English", "url": "general-english/spoken-english/" },
-          { "label": "Workplace English", "url": "general-english/workplace-english/" },
-          { "label": "English for Adults", "url": "general-english/english-for-adults/" },
-          { "label": "Practical Conversations", "url": "general-english/practical-conversations/" }
-        ]},
-        { "title": "Check your progress", "links": [
-          { "label": "Self-Assessment", "url": "general-english/self-assessment/" },
-          { "label": "Interactive Practice", "url": "general-english/interactive-practice/" }
+        { "title": "Not this subject", "links": [
+          { "label": "A/L Literature (Subject 73)", "url": "al-literature/" },
+          { "label": "Practical English", "url": "practical-english/" }
         ]}
       ]
     },
@@ -161,7 +154,14 @@
         ]},
         { "title": "Practice", "links": [
           { "label": "Self-Assessment", "url": "practical-english/self-assessment/" },
-          { "label": "Interactive Practice", "url": "practical-english/interactive-practice/" }
+          { "label": "Interactive Practice", "url": "practical-english/interactive-practice/" },
+          { "label": "Cambridge Exams (TKT, YLE, FCE)", "url": "practical-english/cambridge-exams/" },
+          { "label": "IELTS", "url": "practical-english/ielts/" },
+          { "label": "IELTS Listening", "url": "practical-english/ielts/listening/" },
+          { "label": "IELTS Reading", "url": "practical-english/ielts/reading/" },
+          { "label": "IELTS Writing", "url": "practical-english/ielts/writing/" },
+          { "label": "IELTS Graphs and Charts", "url": "practical-english/ielts/graphs/" },
+          { "label": "IELTS Speaking", "url": "practical-english/ielts/speaking/" }
         ]}
       ]
     },
@@ -234,6 +234,7 @@
       "groups": [
         { "title": "Planning and teaching", "links": [
           { "label": "Overview", "url": "teacher-resources/" },
+          { "label": "Classroom Management", "url": "teacher-resources/classroom-management/" },
           { "label": "Lesson Plans", "url": "teacher-resources/lesson-plans/" },
           { "label": "Worksheets", "url": "teacher-resources/worksheets/" },
           { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
@@ -290,14 +291,7 @@
         ]}
       ]
     },
-    {
-      "label": "RCF Publications",
-      "url": "rcf-publications/",
-      "external": false,
-      "note": "Books and ebooks",
-      "_headerOnly": "On a desktop this lives as its own button in the header bar, so it is left out of the row of sections below to keep those on one line. On a telephone the header button is hidden, so it does appear in the slide-out menu. Either way there is exactly one route to it.",
-      "headerOnly": true
-    },
+
     {
       "label": "More",
       "url": "premium-resources/",

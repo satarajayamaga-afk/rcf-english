@@ -517,6 +517,12 @@
             { "title": "Practical Conversations", "url": "practical-english/practical-conversations/", "more": "Open" },
             { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["english-for-workplace", "receptionists-manual", "english-for-caregivers"],
+          "heading": "Books for English at work",
+          "text": ["RCF Publications produces books for particular kinds of work, written for adults already in a job or preparing for one."]
         }
       ]
     },
@@ -589,6 +595,12 @@
             { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open" },
             { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Our courses" }
           ]
+        },
+        {
+          "type": "relatedBooks",
+          "books": ["english-for-workplace", "receptionists-manual", "english-for-caregivers"],
+          "heading": "Books written for adult learners",
+          "text": ["Practical English books for adults in work, or preparing for it."]
         }
       ]
     },
