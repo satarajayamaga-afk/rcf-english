@@ -2,21 +2,23 @@
 #  Draws the RCF English launch card used when the homepage is shared on
 #  Facebook, WhatsApp, LinkedIn and similar.
 #
-#  Output: assets/img/social/og-countdown.png, 1200 x 630.
+#  Output: assets/img/social/og-live-countdown.png, 1200 x 630.
 #
 #  Composition notes
 #
-#  The four blocks are the point of the picture, so they sit high and near
-#  the middle. Everything that matters is kept inside the central 630 x 630
+#  The panel is the point of the picture, so it sits high and near the
+#  middle. Everything that matters is kept inside the central 630 x 630
 #  square, which is what survives when a service crops the card to a square
 #  or to a portrait shape in a mobile feed. The full 1200 x 630 is what
 #  Facebook shows in the ordinary landscape link preview.
 #
-#  The blocks carry the launch moment - 17, 09, 2026, 6 PM - and NOT a
-#  number of days remaining. These services cache a preview picture for a
-#  long time, so a remaining-days figure would be wrong within a day and
-#  would stay wrong in every share already made. The live ticking clock is
-#  on the page itself, which is where the card sends people.
+#  The panel says the countdown is LIVE and invites the reader to come and
+#  watch it. It carries no running figure, and it deliberately no longer
+#  carries the date on its own: these services cache a preview for a long
+#  time, so a number of days would be wrong within a day, and a bare date
+#  read as an ordinary announcement rather than as something ticking. The
+#  real clock is on the page, which is where the card sends people. The
+#  date stays in the gold pill underneath.
 #
 #  Run it with:  powershell -ExecutionPolicy Bypass -File tools\make-social-image.ps1
 #  Only needed if the wording or the launch date changes.
@@ -25,7 +27,7 @@
 Add-Type -AssemblyName System.Drawing
 
 $root = Split-Path -Parent $PSScriptRoot
-$out = Join-Path $root 'assets\img\social\og-countdown.png'
+$out = Join-Path $root 'assets\img\social\og-live-countdown.png'
 
 $W = 1200
 $H = 630
@@ -155,58 +157,52 @@ Draw-Tracked $g $nameText $nameFont $whiteBrush ($markX + $markSize + $gapAfterM
 $eyebrowFont = New-Object System.Drawing.Font('Segoe UI', 17, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
 Draw-Tracked $g 'SOMETHING BIG IS COMING TO ENGLISH EDUCATION' $eyebrowFont $goldBrush $cx 128 3
 
-# ------------------------------------------------------------- the blocks
+# --------------------------------------------------------- the live panel
 
-# Four blocks in the shape the website uses. They are the largest thing on
-# the card and they sit inside the central square, so a square or portrait
-# crop keeps all four.
-$blocks = @(
-    @{ value = '17'; label = 'DAY' },
-    @{ value = '09'; label = 'MONTH' },
-    @{ value = '2026'; label = 'YEAR' }
-)
+# The panel is drawn in the same material as the countdown blocks on the
+# website - same translucent fill, same border, same corner - so it still
+# reads as a timer face. What it says is that the clock is live and where
+# to watch it, because a cached picture cannot show a running figure. The
+# date sat here before and read as an ordinary launch announcement.
 
-$blockW = 178
-$blockH = 238
-$blockGap = 16
-$stripW = ($blockW * $blocks.Count) + ($blockGap * ($blocks.Count - 1))
-$stripX = $cx - ($stripW / 2)
-$stripY = 170
-
-$blockFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(20, 255, 255, 255))
-$blockPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(46, 255, 255, 255), 1.5)
-$labelFont = New-Object System.Drawing.Font('Segoe UI', 16, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-
-# Each value is set as large as its block can hold. A fixed size would let a
-# four-figure year run over the edge of the block and into its neighbour.
-function Fit-Font($graphics, [string]$text, [single]$maxWidth, [single]$startSize) {
+# Each value is set as large as its box can hold, so nothing can run over
+# the edge whatever the wording is changed to later.
+function Fit-Font($graphics, [string]$text, [single]$maxWidth, [single]$startSize, $style) {
     $size = $startSize
-    while ($size -gt 24) {
-        $f = New-Object System.Drawing.Font('Georgia', $size, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+    while ($size -gt 20) {
+        $f = New-Object System.Drawing.Font('Georgia', $size, $style, [System.Drawing.GraphicsUnit]::Pixel)
         $w = $graphics.MeasureString($text, $f, [System.Drawing.PointF]::new(0, 0), [System.Drawing.StringFormat]::GenericTypographic).Width
         if ($w -le $maxWidth) { return $f }
         $f.Dispose()
         $size -= 2
     }
-    return (New-Object System.Drawing.Font('Georgia', 24, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel))
+    return (New-Object System.Drawing.Font('Georgia', 20, $style, [System.Drawing.GraphicsUnit]::Pixel))
 }
 
-for ($i = 0; $i -lt $blocks.Count; $i++) {
-    $bx = $stripX + ($i * ($blockW + $blockGap))
-    $path = New-RoundedPath $bx $stripY $blockW $blockH 18
-    $g.FillPath($blockFill, $path)
-    $g.DrawPath($blockPen, $path)
+$panelW = 600
+$panelH = 178
+$panelX = $cx - ($panelW / 2)
+$panelY = 172
 
-    $v = [string]$blocks[$i].value
-    $f = Fit-Font $g $v ($blockW - 30) 100
-    # Sit each value on the same baseline whatever size it came out at.
-    $vy = $stripY + 40 + ((100 - $f.Size) * 0.62)
-    Draw-Centred $g $v $f $whiteBrush ($bx + ($blockW / 2)) $vy
-    $f.Dispose()
+$blockFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(20, 255, 255, 255))
+$blockPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(46, 255, 255, 255), 1.5)
+$panel = New-RoundedPath $panelX $panelY $panelW $panelH 20
+$g.FillPath($blockFill, $panel)
+$g.DrawPath($blockPen, $panel)
 
-    Draw-Tracked $g ([string]$blocks[$i].label) $labelFont $goldBrush ($bx + ($blockW / 2)) ($stripY + 190) 2
-    $path.Dispose()
-}
+$liveFont = Fit-Font $g 'LIVE COUNTDOWN' ($panelW - 70) 86 ([System.Drawing.FontStyle]::Bold)
+Draw-Tracked $g 'LIVE COUNTDOWN' $liveFont $whiteBrush $cx ($panelY + 26) 2
+
+$unitsFont = New-Object System.Drawing.Font('Segoe UI', 21, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$dot = ' ' + [char]0x00B7 + ' '
+$unitsText = 'DAYS' + $dot + 'HOURS' + $dot + 'MINUTES' + $dot + 'SECONDS'
+Draw-Tracked $g $unitsText $unitsFont $goldBrush $cx ($panelY + 124) 3
+
+# ---------------------------------------------------------- the invitation
+
+$tapFont = New-Object System.Drawing.Font('Segoe UI', 25, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$mistBrush = New-Object System.Drawing.SolidBrush($mist)
+Draw-Tracked $g 'TAP TO WATCH THE LIVE COUNTDOWN' $tapFont $mistBrush $cx 392 3
 
 # ------------------------------------------------------------- the gold pill
 
@@ -220,7 +216,7 @@ $pillTextW = Measure-Tracked $g $pillText $pillFont 3
 $pillW = $pillTextW + 64
 $pillH = 58
 $pillX = $cx - ($pillW / 2)
-$pillY = 462
+$pillY = 452
 $pill = New-RoundedPath $pillX $pillY $pillW $pillH ($pillH / 2)
 $pillFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(28, 224, 168, 60))
 $g.FillPath($pillFill, $pill)
@@ -241,7 +237,7 @@ $bmp.Save($out, [System.Drawing.Imaging.ImageFormat]::Png)
 
 foreach ($d in @($g, $bmp, $bg, $glow, $glowPath, $navyBrush, $markGrad, $markFont, $whiteBrush, $goldBrush,
         $nameFont, $eyebrowFont, $lineFont, $mistBrush, $pillFont, $goldPen, $pillFill, $footPen,
-        $outer, $inner, $pill, $blockFill, $blockPen, $labelFont)) {
+        $outer, $inner, $pill, $blockFill, $blockPen, $liveFont, $unitsFont, $tapFont, $mistBrush)) {
     if ($d -and $d.Dispose) { $d.Dispose() }
 }
 
