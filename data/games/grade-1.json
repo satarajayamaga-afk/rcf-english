@@ -245,7 +245,7 @@
             "questions": [ { "picture": "grandmother.svg", "ask": "Who is this?", "options": ["grandmother", "mother", "sister"], "answer": 0 }, { "picture": "grandfather.svg", "ask": "Who is this?", "options": ["father", "grandfather", "brother"], "answer": 1 }, { "picture": "wheelchair.svg", "ask": "What is this?", "options": ["a walking stick", "a bicycle", "a wheel chair"], "answer": 2 }, { "picture": "walking-stick.svg", "ask": "What is this?", "options": ["a walking stick", "a broom", "a pencil"], "answer": 0 } ] } ] },
         { "id": "t16-can-you-help", "title": "Can You Help Me?", "icon": "icon-rainbow.svg", "activities": [
           { "id": "g1-t16-help-order", "type": "order", "title": "Ask for Help", "instructions": "Tap the words in the right order.", "minutes": 4,
-            "sentences": [ { "words": ["Can", "you", "help", "me?"], "hint": "Start with Can." }, { "words": ["Thank", "you", "very", "much."], "hint": "Start with Thank." }, { "words": ["Let's", "go", "home."], "hint": "Start with Let's." }, { "words": ["Well", "done!"], "hint": "Two words only." } ] } ] } ] }
+            "sentences": [ { "words": ["Can", "you", "help", "me?"], "hint": "Start with Can." }, { "words": ["Thank", "you", "very", "much."], "hint": "Start with Thank." }, { "words": ["Let's", "go", "home."], "hint": "Start with Let's." }, { "words": ["Pass", "the", "ball."], "hint": "Start with Pass." } ] } ] } ] }
   ],
   "topics": [
     {
