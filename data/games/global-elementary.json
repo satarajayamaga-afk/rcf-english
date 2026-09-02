@@ -9,17 +9,128 @@
   "blurb": "Longer sentences, spelling and first grammar.",
   "icon": "icon-target.svg",
   "english": "international",
-  "topicsStatus": "planned",
+  "topicsStatus": "complete",
   "topics": [
-    { "id": "jobs-and-occupations", "title": "Jobs and Occupations", "icon": "icon-gears.svg", "activities": [] },
-    { "id": "places-in-town", "title": "Places in Town", "icon": "school.svg", "activities": [] },
-    { "id": "daily-routines", "title": "Daily Routines", "icon": "sun.svg", "activities": [] },
-    { "id": "hobbies-and-sports", "title": "Hobbies and Sports", "icon": "icon-trophy.svg", "activities": [] },
-    { "id": "prepositions", "title": "Prepositions", "icon": "icon-blocks.svg", "activities": [] },
-    { "id": "articles", "title": "a, an and the", "icon": "icon-abc.svg", "activities": [] },
-    { "id": "pronouns", "title": "Pronouns", "icon": "icon-brain.svg", "activities": [] },
-    { "id": "question-words", "title": "Question Words", "icon": "icon-puzzle.svg", "activities": [] },
-    { "id": "spelling", "title": "Spelling", "icon": "icon-pencil.svg", "activities": [] },
-    { "id": "simple-present", "title": "Simple Present", "icon": "icon-notebook.svg", "activities": [] }
+    {
+      "id": "jobs-and-occupations",
+      "title": "Jobs and Occupations",
+      "icon": "icon-gears.svg",
+      "activities": [
+        { "id": "gl-el-jobs-match", "type": "match", "title": "Match the Job", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "doctor.svg", "word": "doctor" }, { "picture": "nurse.svg", "word": "nurse" }, { "picture": "teacher.svg", "word": "teacher" }, { "picture": "farmer.svg", "word": "farmer" }, { "picture": "carpenter.svg", "word": "carpenter" }, { "picture": "postman.svg", "word": "postal worker" } ] },
+        { "id": "gl-el-jobs-quiz", "type": "quiz", "title": "Who Does This Work?", "instructions": "Read the question. Tap the right person.", "minutes": 4,
+          "questions": [ { "picture": "doctor.svg", "ask": "Who helps you when you are ill?", "options": ["a doctor", "a carpenter", "a driver"], "answer": 0 }, { "picture": "carpenter.svg", "ask": "Who makes things from wood?", "options": ["a tailor", "a carpenter", "a farmer"], "answer": 1 }, { "picture": "tailor.svg", "ask": "Who makes and mends clothes?", "options": ["a nurse", "a driver", "a tailor"], "answer": 2 }, { "picture": "farmer.svg", "ask": "Who grows the food we eat?", "options": ["a farmer", "a teacher", "a postal worker"], "answer": 0 }, { "picture": "policeman.svg", "ask": "Who keeps people safe?", "options": ["a carpenter", "a police officer", "a tailor"], "answer": 1 } ] },
+        { "id": "gl-el-jobs-missing", "type": "missing", "title": "What Do They Do?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "teacher.svg", "sentence": "A teacher ___ in a school.", "options": ["works", "work", "working"], "answer": 0 }, { "picture": "nurse.svg", "sentence": "Nurses ___ in a hospital.", "options": ["works", "work", "working"], "answer": 1 }, { "picture": "driver.svg", "sentence": "A driver ___ a bus.", "options": ["drive", "driving", "drives"], "answer": 2 }, { "picture": "farmer.svg", "sentence": "Farmers ___ rice and vegetables.", "options": ["grow", "grows", "growing"], "answer": 0 } ] }
+      ]
+    },
+    {
+      "id": "places-in-town",
+      "title": "Places in Town",
+      "icon": "school.svg",
+      "activities": [
+        { "id": "gl-el-places-match", "type": "match", "title": "Match the Place", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "hospital.svg", "word": "hospital" }, { "picture": "library.svg", "word": "library" }, { "picture": "market.svg", "word": "market" }, { "picture": "post-office.svg", "word": "post office" }, { "picture": "railway-station.svg", "word": "railway station" }, { "picture": "carpark.svg", "word": "car park" } ] },
+        { "id": "gl-el-places-quiz", "type": "quiz", "title": "Where Do You Go?", "instructions": "Read the question. Tap the right place.", "minutes": 4,
+          "questions": [ { "picture": "post-office.svg", "ask": "Where do you post a letter?", "options": ["at the post office", "at the library", "at the station"], "answer": 0 }, { "picture": "market.svg", "ask": "Where do you buy fresh vegetables?", "options": ["at the hospital", "at the market", "at the car park"], "answer": 1 }, { "picture": "railway-station.svg", "ask": "Where do you catch a train?", "options": ["at the airport", "at the bus stop", "at the railway station"], "answer": 2 }, { "picture": "library.svg", "ask": "Where can you read and borrow books?", "options": ["at the library", "at the market", "at the hospital"], "answer": 0 }, { "picture": "airport.svg", "ask": "Where do aeroplanes take off?", "options": ["at the station", "at the airport", "at the church"], "answer": 1 } ] },
+        { "id": "gl-el-places-order", "type": "order", "title": "Asking the Way", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["Where", "is", "the", "library,", "please?"], "hint": "Start with Where." }, { "words": ["Turn", "left", "at", "the", "corner."], "hint": "Start with Turn." }, { "words": ["It", "is", "next", "to", "the", "market."], "hint": "Start with It." }, { "words": ["Go", "straight", "on."], "hint": "Start with Go." } ] }
+      ]
+    },
+    {
+      "id": "daily-routines",
+      "title": "Daily Routines",
+      "icon": "clock.svg",
+      "activities": [
+        { "id": "gl-el-routine-order", "type": "order", "title": "My Day", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["I", "get", "up", "at", "seven."], "hint": "Start with I." }, { "words": ["She", "brushes", "her", "teeth."], "hint": "Start with She." }, { "words": ["We", "have", "breakfast", "together."], "hint": "Start with We." }, { "words": ["He", "goes", "to", "bed", "early."], "hint": "Start with He." } ] },
+        { "id": "gl-el-routine-quiz", "type": "quiz", "title": "When Do You Do It?", "instructions": "Read the question. Tap the right answer.", "minutes": 4,
+          "questions": [ { "picture": "bed.svg", "ask": "When do you get up?", "options": ["in the morning", "at midnight", "in the evening"], "answer": 0 }, { "picture": "toothbrush.svg", "ask": "When do you brush your teeth?", "options": ["once a week", "twice a day", "once a year"], "answer": 1 }, { "picture": "bread.svg", "ask": "What is the first meal of the day?", "options": ["dinner", "lunch", "breakfast"], "answer": 2 }, { "picture": "school.svg", "ask": "Where do you go on a weekday morning?", "options": ["to school", "to bed", "to the airport"], "answer": 0 } ] },
+        { "id": "gl-el-routine-sort", "type": "sort", "title": "Morning or Evening?", "instructions": "Tap a picture, then tap the right basket.", "minutes": 4,
+          "buckets": [ { "id": "morning", "title": "In the morning", "icon": "sun.svg" }, { "id": "evening", "title": "In the evening", "icon": "moon.svg" } ],
+          "items": [ { "text": "get up", "picture": "sun.svg", "bucket": "morning" }, { "text": "breakfast", "picture": "bread.svg", "bucket": "morning" }, { "text": "go to school", "picture": "schoolbag.svg", "bucket": "morning" }, { "text": "go to bed", "picture": "bed.svg", "bucket": "evening" }, { "text": "the moon comes out", "picture": "moon.svg", "bucket": "evening" }, { "text": "switch on the lamp", "picture": "lamp.svg", "bucket": "evening" } ] }
+      ]
+    },
+    {
+      "id": "hobbies-and-sports",
+      "title": "Hobbies and Sports",
+      "icon": "icon-trophy.svg",
+      "activities": [
+        { "id": "gl-el-sports-match", "type": "match", "title": "Match the Sport", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "football.svg", "word": "football" }, { "picture": "tennis.svg", "word": "tennis" }, { "picture": "cricket.svg", "word": "cricket" }, { "picture": "swim.svg", "word": "swimming" }, { "picture": "dance.svg", "word": "dancing" }, { "picture": "book.svg", "word": "reading" } ] },
+        { "id": "gl-el-hobby-missing", "type": "missing", "title": "I Like ...ing", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "swim.svg", "sentence": "I like ___ in the sea.", "options": ["swimming", "swim", "swims"], "answer": 0 }, { "picture": "book.svg", "sentence": "She loves ___ stories.", "options": ["read", "reading", "reads"], "answer": 1 }, { "picture": "football.svg", "sentence": "They enjoy ___ football.", "options": ["play", "plays", "playing"], "answer": 2 }, { "picture": "dance.svg", "sentence": "My hobby ___ dancing.", "options": ["is", "are", "am"], "answer": 0 } ] },
+        { "id": "gl-el-sports-quiz", "type": "quiz", "title": "Which Sport?", "instructions": "Read the clue. Tap the sport.", "minutes": 3,
+          "questions": [ { "picture": "football.svg", "ask": "Eleven players, one ball, two goals. Which sport?", "options": ["football", "tennis", "swimming"], "answer": 0 }, { "picture": "tennis.svg", "ask": "Two players, a racket each, a net between them.", "options": ["cricket", "tennis", "football"], "answer": 1 }, { "picture": "cricket.svg", "ask": "A bat, a ball and three stumps.", "options": ["tennis", "swimming", "cricket"], "answer": 2 }, { "picture": "swim.svg", "ask": "You do this in a pool or the sea.", "options": ["swimming", "cricket", "reading"], "answer": 0 } ] }
+      ]
+    },
+    {
+      "id": "prepositions",
+      "title": "Prepositions",
+      "icon": "prep-on.svg",
+      "activities": [
+        { "id": "gl-el-prep-match", "type": "match", "title": "Match the Position", "instructions": "Look at the ball and the box. Tap a picture, then tap its word.", "minutes": 4,
+          "pairs": [ { "picture": "prep-on.svg", "word": "on" }, { "picture": "prep-in.svg", "word": "in" }, { "picture": "prep-under.svg", "word": "under" }, { "picture": "prep-next-to.svg", "word": "next to" }, { "picture": "prep-in-front.svg", "word": "in front of" } ] },
+        { "id": "gl-el-prep-quiz", "type": "quiz", "title": "Where Is the Ball?", "instructions": "Look at the picture. Tap the right sentence.", "minutes": 4,
+          "questions": [ { "picture": "prep-on.svg", "ask": "Where is the ball?", "options": ["It is on the box.", "It is in the box.", "It is under the box."], "answer": 0 }, { "picture": "prep-under.svg", "ask": "Where is the ball?", "options": ["It is on the box.", "It is under the box.", "It is next to the box."], "answer": 1 }, { "picture": "prep-in.svg", "ask": "Where is the ball?", "options": ["It is under the box.", "It is next to the box.", "It is in the box."], "answer": 2 }, { "picture": "prep-next-to.svg", "ask": "Where is the ball?", "options": ["It is next to the box.", "It is in the box.", "It is on the box."], "answer": 0 }, { "picture": "prep-in-front.svg", "ask": "Where is the ball?", "options": ["It is under the box.", "It is in front of the box.", "It is on the box."], "answer": 1 } ] },
+        { "id": "gl-el-prep-missing", "type": "missing", "title": "Choose the Preposition", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "bed.svg", "sentence": "The cat is sleeping ___ the bed.", "options": ["on", "of", "to"], "answer": 0 }, { "picture": "school.svg", "sentence": "I go ___ school every day.", "options": ["in", "to", "at"], "answer": 1 }, { "picture": "clock.svg", "sentence": "We start ___ eight o'clock.", "options": ["on", "in", "at"], "answer": 2 }, { "picture": "house.svg", "sentence": "She lives ___ a small town.", "options": ["in", "on", "at"], "answer": 0 } ] }
+      ]
+    },
+    {
+      "id": "articles",
+      "title": "a, an and the",
+      "icon": "icon-abc.svg",
+      "activities": [
+        { "id": "gl-el-articles-missing", "type": "missing", "title": "a or an?", "instructions": "Tap a or an.", "minutes": 3,
+          "items": [ { "picture": "apple.svg", "sentence": "I ate ___ apple.", "options": ["a", "an"], "answer": 1 }, { "picture": "book.svg", "sentence": "She read ___ book.", "options": ["a", "an"], "answer": 0 }, { "picture": "owl.svg", "sentence": "We saw ___ owl.", "options": ["a", "an"], "answer": 1 }, { "picture": "elephant.svg", "sentence": "That is ___ elephant.", "options": ["a", "an"], "answer": 1 }, { "picture": "car.svg", "sentence": "He has ___ car.", "options": ["a", "an"], "answer": 0 }, { "picture": "egg.svg", "sentence": "I want ___ egg.", "options": ["a", "an"], "answer": 1 } ] },
+        { "id": "gl-el-the-missing", "type": "missing", "title": "a, an or the?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "sun.svg", "sentence": "___ sun is very bright today.", "options": ["A", "An", "The"], "answer": 2 }, { "picture": "doll.svg", "sentence": "She bought ___ doll yesterday.", "options": ["a", "an", "the"], "answer": 0 }, { "picture": "orange.svg", "sentence": "Would you like ___ orange?", "options": ["a", "an", "the"], "answer": 1 }, { "picture": "moon.svg", "sentence": "Look at ___ moon!", "options": ["a", "an", "the"], "answer": 2 } ] }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "title": "Pronouns",
+      "icon": "icon-brain.svg",
+      "activities": [
+        { "id": "gl-el-pronouns-missing", "type": "missing", "title": "He, She, It or They?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "boy.svg", "sentence": "This is Omar. ___ is my friend.", "options": ["He", "She", "It"], "answer": 0 }, { "picture": "girl.svg", "sentence": "This is Aisha. ___ is my sister.", "options": ["He", "She", "They"], "answer": 1 }, { "picture": "cat.svg", "sentence": "Look at the cat. ___ is sleeping.", "options": ["He", "She", "It"], "answer": 2 }, { "picture": "sheep.svg", "sentence": "The sheep are in the field. ___ are eating.", "options": ["They", "It", "He"], "answer": 0 }, { "picture": "father.svg", "sentence": "My father is a driver. I help ___.", "options": ["she", "him", "it"], "answer": 1 } ] },
+        { "id": "gl-el-possessive-quiz", "type": "quiz", "title": "My, Your, His or Her?", "instructions": "Read the sentence. Tap the right word.", "minutes": 4,
+          "questions": [ { "picture": "schoolbag.svg", "ask": "This bag belongs to me. It is ___ bag.", "options": ["my", "your", "his"], "answer": 0 }, { "picture": "boy.svg", "ask": "This is Ravi. That is ___ bicycle.", "options": ["her", "his", "their"], "answer": 1 }, { "picture": "girl.svg", "ask": "This is Lena. That is ___ book.", "options": ["his", "its", "her"], "answer": 2 }, { "picture": "house.svg", "ask": "The house belongs to them. It is ___ house.", "options": ["their", "our", "her"], "answer": 0 } ] }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question Words",
+      "icon": "icon-puzzle.svg",
+      "activities": [
+        { "id": "gl-el-question-missing", "type": "missing", "title": "Which Question Word?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "clock.svg", "sentence": "___ is it? It is three o'clock.", "options": ["What time", "Who", "Where"], "answer": 0 }, { "picture": "school.svg", "sentence": "___ do you go every morning? To school.", "options": ["Who", "Where", "Why"], "answer": 1 }, { "picture": "teacher.svg", "sentence": "___ is that? That is my teacher.", "options": ["Where", "When", "Who"], "answer": 2 }, { "picture": "calendar.svg", "sentence": "___ is your birthday? In June.", "options": ["When", "Who", "How"], "answer": 0 }, { "picture": "bus.svg", "sentence": "___ do you get to school? By bus.", "options": ["Who", "How", "What"], "answer": 1 }, { "picture": "umbrella.svg", "sentence": "___ do you need an umbrella? Because it is raining.", "options": ["Who", "When", "Why"], "answer": 2 } ] },
+        { "id": "gl-el-question-order", "type": "order", "title": "Build the Question", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["Where", "do", "you", "live?"], "hint": "Start with Where." }, { "words": ["What", "is", "your", "name?"], "hint": "Start with What." }, { "words": ["How", "old", "are", "you?"], "hint": "Start with How." }, { "words": ["When", "does", "the", "film", "start?"], "hint": "Start with When." } ] }
+      ]
+    },
+    {
+      "id": "spelling",
+      "title": "Spelling",
+      "icon": "icon-pencil.svg",
+      "activities": [
+        { "id": "gl-el-spelling-quiz", "type": "quiz", "title": "Which Spelling Is Right?", "instructions": "Look at the picture. Tap the correct spelling.", "minutes": 4,
+          "questions": [ { "picture": "elephant.svg", "ask": "Which spelling is right?", "options": ["elephant", "elefant", "eliphant"], "answer": 0 }, { "picture": "butterfly.svg", "ask": "Which spelling is right?", "options": ["buterfly", "butterfly", "butterflie"], "answer": 1 }, { "picture": "umbrella.svg", "ask": "Which spelling is right?", "options": ["umbrela", "umberella", "umbrella"], "answer": 2 }, { "picture": "bicycle.svg", "ask": "Which spelling is right?", "options": ["bicycle", "bycicle", "bicicle"], "answer": 0 }, { "picture": "rabbit.svg", "ask": "Which spelling is right?", "options": ["rabit", "rabbit", "rabbitt"], "answer": 1 }, { "picture": "banana.svg", "ask": "Which spelling is right?", "options": ["bannana", "bananna", "banana"], "answer": 2 } ] },
+        { "id": "gl-el-spelling-missing", "type": "missing", "title": "Find the Missing Letters", "instructions": "Tap the letters that complete the word.", "minutes": 4,
+          "items": [ { "picture": "school.svg", "sentence": "sch__l", "options": ["oo", "uu", "ou"], "answer": 0 }, { "picture": "bread.svg", "sentence": "br__d", "options": ["ee", "ea", "ai"], "answer": 1 }, { "picture": "house.svg", "sentence": "h__se", "options": ["oa", "au", "ou"], "answer": 2 }, { "picture": "train.svg", "sentence": "tr__n", "options": ["ai", "ea", "ie"], "answer": 0 }, { "picture": "moon.svg", "sentence": "m__n", "options": ["ou", "oo", "oa"], "answer": 1 } ] }
+      ]
+    },
+    {
+      "id": "simple-present",
+      "title": "Simple Present",
+      "icon": "icon-notebook.svg",
+      "activities": [
+        { "id": "gl-el-present-missing", "type": "missing", "title": "Add -s or Not?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "girl.svg", "sentence": "She ___ to school every day.", "options": ["walks", "walk", "walking"], "answer": 0 }, { "picture": "boy.svg", "sentence": "They ___ football on Saturdays.", "options": ["plays", "play", "playing"], "answer": 1 }, { "picture": "cat.svg", "sentence": "My cat ___ a lot.", "options": ["sleep", "sleeping", "sleeps"], "answer": 2 }, { "picture": "father.svg", "sentence": "We ___ dinner at seven.", "options": ["have", "has", "having"], "answer": 0 }, { "picture": "bird.svg", "sentence": "A bird ___ in the sky.", "options": ["fly", "flies", "flying"], "answer": 1 } ] },
+        { "id": "gl-el-present-quiz", "type": "quiz", "title": "Do or Does?", "instructions": "Read the question. Tap the right word.", "minutes": 3,
+          "questions": [ { "picture": "girl.svg", "ask": "___ she like music?", "options": ["Does", "Do", "Is"], "answer": 0 }, { "picture": "boy.svg", "ask": "___ they live near you?", "options": ["Does", "Do", "Is"], "answer": 1 }, { "picture": "teacher.svg", "ask": "___ your teacher speak English?", "options": ["Do", "Are", "Does"], "answer": 2 }, { "picture": "dog.svg", "ask": "___ you have a pet?", "options": ["Do", "Does", "Is"], "answer": 0 } ] }
+      ]
+    }
   ]
 }

@@ -9,17 +9,133 @@
   "blurb": "Everyday words and very short sentences.",
   "icon": "icon-sprout.svg",
   "english": "international",
-  "topicsStatus": "planned",
+  "topicsStatus": "complete",
   "topics": [
-    { "id": "my-home", "title": "My Home", "icon": "house.svg", "activities": [] },
-    { "id": "school-and-classroom", "title": "School and Classroom", "icon": "icon-notebook.svg", "activities": [] },
-    { "id": "clothes", "title": "Clothes", "icon": "tshirt.svg", "activities": [] },
-    { "id": "weather-and-seasons", "title": "Weather and Seasons", "icon": "cloud.svg", "activities": [] },
-    { "id": "transport", "title": "Transport", "icon": "bus.svg", "activities": [] },
-    { "id": "action-words", "title": "Action Words", "icon": "ball.svg", "activities": [] },
-    { "id": "feelings-and-emotions", "title": "Feelings and Emotions", "icon": "shape-heart.svg", "activities": [] },
-    { "id": "opposites", "title": "Opposites", "icon": "icon-puzzle.svg", "activities": [] },
-    { "id": "singular-and-plural", "title": "Singular and Plural", "icon": "icon-blocks.svg", "activities": [] },
-    { "id": "rhyming-words", "title": "Rhyming Words", "icon": "drum.svg", "activities": [] }
+    {
+      "id": "my-home",
+      "title": "My Home",
+      "icon": "house.svg",
+      "activities": [
+        { "id": "gl-e-home-match", "type": "match", "title": "Match the Home Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "house.svg", "word": "house" }, { "picture": "door.svg", "word": "door" }, { "picture": "window.svg", "word": "window" }, { "picture": "roof.svg", "word": "roof" }, { "picture": "bed.svg", "word": "bed" }, { "picture": "table.svg", "word": "table" } ] },
+        { "id": "gl-e-home-quiz", "type": "quiz", "title": "Where Is It?", "instructions": "Read the question. Tap the right answer.", "minutes": 3,
+          "questions": [ { "picture": "bed.svg", "ask": "Where do you sleep?", "options": ["in a bed", "on a table", "in a bucket"], "answer": 0 }, { "picture": "door.svg", "ask": "What do you open to go in?", "options": ["a window", "a door", "a roof"], "answer": 1 }, { "picture": "chair.svg", "ask": "What do you sit on?", "options": ["a roof", "a door", "a chair"], "answer": 2 }, { "picture": "window.svg", "ask": "What do you look through?", "options": ["a window", "a bed", "a table"], "answer": 0 } ] },
+        { "id": "gl-e-home-memory", "type": "memory", "title": "Home Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "bed.svg", "b": "bed" }, { "a": "door.svg", "b": "door" }, { "a": "window.svg", "b": "window" }, { "a": "table.svg", "b": "table" }, { "a": "chair.svg", "b": "chair" }, { "a": "lamp.svg", "b": "lamp" } ] }
+      ]
+    },
+    {
+      "id": "school-and-classroom",
+      "title": "School and Classroom",
+      "icon": "icon-notebook.svg",
+      "activities": [
+        { "id": "gl-e-school-match", "type": "match", "title": "Match the School Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "pencil.svg", "word": "pencil" }, { "picture": "pen.svg", "word": "pen" }, { "picture": "book.svg", "word": "book" }, { "picture": "ruler.svg", "word": "ruler" }, { "picture": "eraser.svg", "word": "rubber" }, { "picture": "schoolbag.svg", "word": "school bag" } ] },
+        { "id": "gl-e-school-quiz", "type": "quiz", "title": "In the Classroom", "instructions": "Read the question. Tap the right answer.", "minutes": 3,
+          "questions": [ { "picture": "eraser.svg", "ask": "What do you use to rub out a mistake?", "options": ["a rubber", "a ruler", "a pen"], "answer": 0 }, { "picture": "ruler.svg", "ask": "What do you use to draw a straight line?", "options": ["a book", "a ruler", "a bag"], "answer": 1 }, { "picture": "blackboard.svg", "ask": "What does the teacher write on?", "options": ["a chair", "a window", "the board"], "answer": 2 }, { "picture": "library.svg", "ask": "Where do you borrow books?", "options": ["in the library", "in the playground", "in the kitchen"], "answer": 0 } ] },
+        { "id": "gl-e-school-memory", "type": "memory", "title": "Classroom Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "pencil.svg", "b": "pencil" }, { "a": "pen.svg", "b": "pen" }, { "a": "ruler.svg", "b": "ruler" }, { "a": "eraser.svg", "b": "rubber" }, { "a": "desk.svg", "b": "desk" }, { "a": "clock.svg", "b": "clock" } ] }
+      ]
+    },
+    {
+      "id": "clothes",
+      "title": "Clothes",
+      "icon": "tshirt.svg",
+      "activities": [
+        { "id": "gl-e-clothes-match", "type": "match", "title": "Match the Clothes Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "tshirt.svg", "word": "t-shirt" }, { "picture": "jeans.svg", "word": "trousers" }, { "picture": "skirt.svg", "word": "skirt" }, { "picture": "shoes.svg", "word": "shoes" }, { "picture": "socks.svg", "word": "socks" }, { "picture": "hat.svg", "word": "hat" } ] },
+        { "id": "gl-e-clothes-quiz", "type": "quiz", "title": "What Do You Wear?", "instructions": "Read the question. Tap the right answer.", "minutes": 3,
+          "questions": [ { "picture": "shoes.svg", "ask": "What do you wear on your feet?", "options": ["shoes", "a hat", "a scarf"], "answer": 0 }, { "picture": "hat.svg", "ask": "What do you wear on your head?", "options": ["socks", "a hat", "shoes"], "answer": 1 }, { "picture": "scarf.svg", "ask": "What do you wear when it is cold?", "options": ["a t-shirt", "sunglasses", "a scarf"], "answer": 2 }, { "picture": "sunglasses.svg", "ask": "What do you wear when the sun is bright?", "options": ["sunglasses", "a scarf", "socks"], "answer": 0 } ] },
+        { "id": "gl-e-clothes-memory", "type": "memory", "title": "Clothes Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "tshirt.svg", "b": "t-shirt" }, { "a": "skirt.svg", "b": "skirt" }, { "a": "shoes.svg", "b": "shoes" }, { "a": "socks.svg", "b": "socks" }, { "a": "scarf.svg", "b": "scarf" }, { "a": "belt.svg", "b": "belt" } ] }
+      ]
+    },
+    {
+      "id": "weather-and-seasons",
+      "title": "Weather and Seasons",
+      "icon": "cloud.svg",
+      "activities": [
+        { "id": "gl-e-weather-match", "type": "match", "title": "Match the Weather", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "sun.svg", "word": "sunny" }, { "picture": "cloud.svg", "word": "cloudy" }, { "picture": "rain.svg", "word": "rainy" }, { "picture": "snowflake.svg", "word": "snowy" } ] },
+        { "id": "gl-e-weather-quiz", "type": "quiz", "title": "What Is the Weather Like?", "instructions": "Look at the picture. Tap the right sentence.", "minutes": 3,
+          "questions": [ { "picture": "sun.svg", "ask": "What is the weather like?", "options": ["It is sunny.", "It is snowy.", "It is rainy."], "answer": 0 }, { "picture": "snowflake.svg", "ask": "What is the weather like?", "options": ["It is hot.", "It is snowy.", "It is dry."], "answer": 1 }, { "picture": "rain.svg", "ask": "It is raining. What do you take?", "options": ["a kite", "sunglasses", "an umbrella"], "answer": 2 }, { "picture": "snowflake.svg", "ask": "It is snowing. What do you wear?", "options": ["a scarf", "a t-shirt", "sandals"], "answer": 0 } ] },
+        { "id": "gl-e-weather-sort", "type": "sort", "title": "Hot Weather or Cold Weather?", "instructions": "Tap a picture, then tap the right basket.", "minutes": 4,
+          "buckets": [ { "id": "hot", "title": "Hot weather", "icon": "sun.svg" }, { "id": "cold", "title": "Cold weather", "icon": "snowflake.svg" } ],
+          "items": [ { "text": "sun", "picture": "sun.svg", "bucket": "hot" }, { "text": "sunglasses", "picture": "sunglasses.svg", "bucket": "hot" }, { "text": "ice cream", "picture": "ice-cream.svg", "bucket": "hot" }, { "text": "snow", "picture": "snowflake.svg", "bucket": "cold" }, { "text": "scarf", "picture": "scarf.svg", "bucket": "cold" }, { "text": "tea", "picture": "tea.svg", "bucket": "cold" } ] }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Transport",
+      "icon": "bus.svg",
+      "activities": [
+        { "id": "gl-e-transport-match", "type": "match", "title": "Match the Vehicle", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "bus.svg", "word": "bus" }, { "picture": "car.svg", "word": "car" }, { "picture": "train.svg", "word": "train" }, { "picture": "bicycle.svg", "word": "bicycle" }, { "picture": "boat.svg", "word": "boat" }, { "picture": "aeroplane.svg", "word": "aeroplane" } ] },
+        { "id": "gl-e-transport-sort", "type": "sort", "title": "Land, Water or Air?", "instructions": "Tap a vehicle, then tap the right basket.", "minutes": 4,
+          "buckets": [ { "id": "land", "title": "On land", "icon": "car.svg" }, { "id": "water", "title": "On water", "icon": "boat.svg" }, { "id": "air", "title": "In the air", "icon": "cloud.svg" } ],
+          "items": [ { "text": "bus", "picture": "bus.svg", "bucket": "land" }, { "text": "car", "picture": "car.svg", "bucket": "land" }, { "text": "train", "picture": "train.svg", "bucket": "land" }, { "text": "bicycle", "picture": "bicycle.svg", "bucket": "land" }, { "text": "boat", "picture": "boat.svg", "bucket": "water" }, { "text": "aeroplane", "picture": "aeroplane.svg", "bucket": "air" } ] },
+        { "id": "gl-e-transport-quiz", "type": "quiz", "title": "How Do You Travel?", "instructions": "Read the question. Tap the right answer.", "minutes": 3,
+          "questions": [ { "picture": "aeroplane.svg", "ask": "How do you travel to another country?", "options": ["by aeroplane", "by bicycle", "on foot"], "answer": 0 }, { "picture": "train.svg", "ask": "Where does a train stop?", "options": ["at the airport", "at the station", "at the car park"], "answer": 1 }, { "picture": "bicycle.svg", "ask": "What has two wheels and no engine?", "options": ["a bus", "a car", "a bicycle"], "answer": 2 } ] }
+      ]
+    },
+    {
+      "id": "action-words",
+      "title": "Action Words",
+      "icon": "run.svg",
+      "activities": [
+        { "id": "gl-e-actions-match", "type": "match", "title": "Match the Action", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "run.svg", "word": "run" }, { "picture": "jump.svg", "word": "jump" }, { "picture": "swim.svg", "word": "swim" }, { "picture": "dance.svg", "word": "dance" } ] },
+        { "id": "gl-e-actions-quiz", "type": "quiz", "title": "What Are They Doing?", "instructions": "Look at the picture. Tap the right sentence.", "minutes": 3,
+          "questions": [ { "picture": "run.svg", "ask": "What is he doing?", "options": ["He is running.", "He is swimming.", "He is reading."], "answer": 0 }, { "picture": "swim.svg", "ask": "What is she doing?", "options": ["She is dancing.", "She is swimming.", "She is jumping."], "answer": 1 }, { "picture": "dance.svg", "ask": "What is she doing?", "options": ["She is running.", "She is sleeping.", "She is dancing."], "answer": 2 }, { "picture": "jump.svg", "ask": "What is he doing?", "options": ["He is jumping.", "He is swimming.", "He is writing."], "answer": 0 } ] },
+        { "id": "gl-e-actions-order", "type": "order", "title": "Build the Sentence", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["I", "can", "swim."], "hint": "Start with I." }, { "words": ["She", "is", "dancing", "now."], "hint": "Start with She." }, { "words": ["We", "run", "in", "the", "park."], "hint": "Start with We." }, { "words": ["They", "jump", "very", "high."], "hint": "Start with They." } ] }
+      ]
+    },
+    {
+      "id": "feelings-and-emotions",
+      "title": "Feelings and Emotions",
+      "icon": "face-happy.svg",
+      "activities": [
+        { "id": "gl-e-feelings-match", "type": "match", "title": "Match the Feeling", "instructions": "Tap a face. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "face-happy.svg", "word": "happy" }, { "picture": "face-sad.svg", "word": "sad" }, { "picture": "face-angry.svg", "word": "angry" }, { "picture": "face-afraid.svg", "word": "scared" }, { "picture": "face-tired.svg", "word": "tired" }, { "picture": "face-sleepy.svg", "word": "sleepy" } ] },
+        { "id": "gl-e-feelings-quiz", "type": "quiz", "title": "How Do They Feel?", "instructions": "Read the sentence. Tap how they feel.", "minutes": 4,
+          "questions": [ { "picture": "face-happy.svg", "ask": "Ana got a present. How does she feel?", "options": ["happy", "angry", "tired"], "answer": 0 }, { "picture": "face-sad.svg", "ask": "Ravi lost his ball. How does he feel?", "options": ["happy", "sad", "sleepy"], "answer": 1 }, { "picture": "face-tired.svg", "ask": "Mei played all day. How does she feel?", "options": ["scared", "angry", "tired"], "answer": 2 }, { "picture": "face-afraid.svg", "ask": "Tom heard a loud noise at night. How does he feel?", "options": ["scared", "happy", "hungry"], "answer": 0 } ] },
+        { "id": "gl-e-feelings-order", "type": "order", "title": "Say How You Feel", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["I", "am", "very", "happy."], "hint": "Start with I." }, { "words": ["How", "do", "you", "feel?"], "hint": "Start with How." }, { "words": ["She", "is", "not", "sad."], "hint": "Start with She." } ] }
+      ]
+    },
+    {
+      "id": "opposites",
+      "title": "Opposites",
+      "icon": "icon-puzzle.svg",
+      "activities": [
+        { "id": "gl-e-opposites-quiz", "type": "quiz", "title": "What Is the Opposite?", "instructions": "Read the word. Tap its opposite.", "minutes": 4,
+          "questions": [ { "picture": "elephant.svg", "ask": "The opposite of big is ...", "options": ["small", "tall", "long"], "answer": 0 }, { "picture": "sun.svg", "ask": "The opposite of hot is ...", "options": ["dry", "cold", "bright"], "answer": 1 }, { "picture": "moon.svg", "ask": "The opposite of night is ...", "options": ["dark", "late", "day"], "answer": 2 }, { "picture": "face-happy.svg", "ask": "The opposite of happy is ...", "options": ["sad", "kind", "quiet"], "answer": 0 }, { "picture": "door.svg", "ask": "The opposite of open is ...", "options": ["new", "closed", "wide"], "answer": 1 }, { "picture": "snowflake.svg", "ask": "The opposite of wet is ...", "options": ["cool", "soft", "dry"], "answer": 2 } ] },
+        { "id": "gl-e-opposites-match", "type": "match", "title": "Match the Opposite", "instructions": "Tap a picture. Then tap the opposite word.", "minutes": 3,
+          "pairs": [ { "picture": "sun.svg", "word": "cold" }, { "picture": "elephant.svg", "word": "small" }, { "picture": "moon.svg", "word": "day" }, { "picture": "face-sad.svg", "word": "happy" } ] }
+      ]
+    },
+    {
+      "id": "singular-and-plural",
+      "title": "Singular and Plural",
+      "icon": "icon-blocks.svg",
+      "activities": [
+        { "id": "gl-e-plural-missing", "type": "missing", "title": "One or More Than One?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "cat.svg", "sentence": "I have one ___.", "options": ["cat", "cats"], "answer": 0 }, { "picture": "book.svg", "sentence": "She has three ___.", "options": ["book", "books"], "answer": 1 }, { "picture": "apple.svg", "sentence": "There is an ___ on the table.", "options": ["apple", "apples"], "answer": 0 }, { "picture": "shoes.svg", "sentence": "These ___ are new.", "options": ["shoe", "shoes"], "answer": 1 }, { "picture": "bus.svg", "sentence": "Two ___ are at the stop.", "options": ["bus", "buses"], "answer": 1 }, { "picture": "foot.svg", "sentence": "You have two ___.", "options": ["foot", "feet"], "answer": 1 } ] },
+        { "id": "gl-e-plural-quiz", "type": "quiz", "title": "Make It Plural", "instructions": "Read the word. Tap the plural.", "minutes": 3,
+          "questions": [ { "picture": "dog.svg", "ask": "one dog, two ...", "options": ["dogs", "doges", "dog"], "answer": 0 }, { "picture": "boy.svg", "ask": "one child, two ...", "options": ["childs", "children", "childrens"], "answer": 1 }, { "picture": "fish.svg", "ask": "one fish, two ...", "options": ["fishs", "fishies", "fish"], "answer": 2 }, { "picture": "mouse.svg", "ask": "one mouse, two ...", "options": ["mice", "mouses", "mouse"], "answer": 0 }, { "picture": "sheep.svg", "ask": "one sheep, two ...", "options": ["sheeps", "sheep", "sheepes"], "answer": 1 } ] }
+      ]
+    },
+    {
+      "id": "rhyming-words",
+      "title": "Rhyming Words",
+      "icon": "drum.svg",
+      "activities": [
+        { "id": "gl-e-rhyme-quiz", "type": "quiz", "title": "Which Word Rhymes?", "instructions": "Read the word. Tap the word that rhymes with it.", "minutes": 4,
+          "questions": [ { "picture": "cat.svg", "ask": "Which word rhymes with cat?", "options": ["hat", "cup", "dog"], "answer": 0 }, { "picture": "sun.svg", "ask": "Which word rhymes with sun?", "options": ["sit", "fun", "san"], "answer": 1 }, { "picture": "tree.svg", "ask": "Which word rhymes with tree?", "options": ["try", "toe", "bee"], "answer": 2 }, { "picture": "bed.svg", "ask": "Which word rhymes with bed?", "options": ["red", "bad", "bird"], "answer": 0 }, { "picture": "star.svg", "ask": "Which word rhymes with star?", "options": ["store", "car", "sir"], "answer": 1 }, { "picture": "boat.svg", "ask": "Which word rhymes with boat?", "options": ["bat", "bit", "coat"], "answer": 2 } ] },
+        { "id": "gl-e-rhyme-match", "type": "match", "title": "Match the Rhyme", "instructions": "Tap a picture. Then tap the word that rhymes.", "minutes": 3,
+          "pairs": [ { "picture": "cat.svg", "word": "mat" }, { "picture": "moon.svg", "word": "spoon" }, { "picture": "bed.svg", "word": "head" }, { "picture": "snake.svg", "word": "cake" } ] }
+      ]
+    }
   ]
 }

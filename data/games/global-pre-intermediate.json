@@ -9,14 +9,107 @@
   "blurb": "Building sentences, reading and real conversations.",
   "icon": "icon-trophy.svg",
   "english": "international",
-  "topicsStatus": "planned",
+  "topicsStatus": "complete",
   "topics": [
-    { "id": "nature-and-environment", "title": "Nature and Environment", "icon": "tree.svg", "activities": [] },
-    { "id": "adjectives", "title": "Adjectives", "icon": "icon-palette.svg", "activities": [] },
-    { "id": "simple-past", "title": "Simple Past", "icon": "icon-folders.svg", "activities": [] },
-    { "id": "sentence-building", "title": "Sentence Building", "icon": "icon-blocks.svg", "activities": [] },
-    { "id": "reading-comprehension", "title": "Reading Comprehension", "icon": "book.svg", "activities": [] },
-    { "id": "everyday-conversations", "title": "Everyday Conversations", "icon": "telephone.svg", "activities": [] },
-    { "id": "british-english-vocabulary", "title": "British English Vocabulary", "icon": "globe.svg", "activities": [] }
+    {
+      "id": "nature-and-environment",
+      "title": "Nature and Environment",
+      "icon": "tree.svg",
+      "activities": [
+        { "id": "gl-p-nature-match", "type": "match", "title": "Match the Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "waterfall.svg", "word": "waterfall" }, { "picture": "pond.svg", "word": "pond" }, { "picture": "roots.svg", "word": "roots" }, { "picture": "solar-panel.svg", "word": "solar panel" }, { "picture": "recycle.svg", "word": "recycling" }, { "picture": "snowflake.svg", "word": "snow" } ] },
+        { "id": "gl-p-nature-quiz", "type": "quiz", "title": "Looking After the Planet", "instructions": "Read the question. Tap the best answer.", "minutes": 4,
+          "questions": [ { "picture": "recycle.svg", "ask": "What can you do with an empty glass bottle?", "options": ["Recycle it.", "Throw it in the river.", "Burn it."], "answer": 0 }, { "picture": "solar-panel.svg", "ask": "Where does solar energy come from?", "options": ["from coal", "from the sun", "from the sea"], "answer": 1 }, { "picture": "tree.svg", "ask": "Why are trees important?", "options": ["They make noise.", "They cost money.", "They give us clean air."], "answer": 2 }, { "picture": "tap.svg", "ask": "How can you save water at home?", "options": ["Turn the tap off while brushing.", "Leave the tap running.", "Water the road."], "answer": 0 } ] },
+        { "id": "gl-p-nature-sort", "type": "sort", "title": "Helps or Harms the Planet?", "instructions": "Tap a picture, then tap the right basket.", "minutes": 4,
+          "buckets": [ { "id": "helps", "title": "Helps the planet", "icon": "icon-sprout.svg" }, { "id": "harms", "title": "Harms the planet", "icon": "dustbin.svg" } ],
+          "items": [ { "text": "planting trees", "picture": "tree.svg", "bucket": "helps" }, { "text": "recycling", "picture": "recycle.svg", "bucket": "helps" }, { "text": "solar power", "picture": "solar-panel.svg", "bucket": "helps" }, { "text": "cycling to school", "picture": "bicycle.svg", "bucket": "helps" }, { "text": "wasting water", "picture": "tap.svg", "bucket": "harms" }, { "text": "dropping litter", "picture": "dustbin.svg", "bucket": "harms" } ] }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "title": "Adjectives",
+      "icon": "icon-palette.svg",
+      "activities": [
+        { "id": "gl-p-adj-missing", "type": "missing", "title": "Choose the Adjective", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "elephant.svg", "sentence": "An elephant is a very ___ animal.", "options": ["large", "quiet", "sweet"], "answer": 0 }, { "picture": "ice-cream.svg", "sentence": "The ice cream was cold and ___.", "options": ["loud", "sweet", "heavy"], "answer": 1 }, { "picture": "snowflake.svg", "sentence": "It was a ___ winter morning.", "options": ["hot", "dry", "freezing"], "answer": 2 }, { "picture": "waterfall.svg", "sentence": "The waterfall was ___ and noisy.", "options": ["beautiful", "tiny", "silent"], "answer": 0 } ] },
+        { "id": "gl-p-comparative-quiz", "type": "quiz", "title": "Bigger, Faster, Better", "instructions": "Read the sentence. Tap the right form.", "minutes": 4,
+          "questions": [ { "picture": "elephant.svg", "ask": "An elephant is ___ than a mouse.", "options": ["bigger", "big", "biggest"], "answer": 0 }, { "picture": "train.svg", "ask": "A train is ___ than a bicycle.", "options": ["fast", "faster", "fastest"], "answer": 1 }, { "picture": "sun.svg", "ask": "Today is the ___ day of the year.", "options": ["hotter", "hot", "hottest"], "answer": 2 }, { "picture": "book.svg", "ask": "This book is ___ than that one.", "options": ["more interesting", "most interesting", "interesting"], "answer": 0 } ] },
+        { "id": "gl-p-adj-order", "type": "order", "title": "Describe It", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["She", "has", "a", "small", "red", "bag."], "hint": "Start with She." }, { "words": ["It", "was", "a", "cold", "morning."], "hint": "Start with It." }, { "words": ["The", "old", "house", "is", "beautiful."], "hint": "Start with The." } ] }
+      ]
+    },
+    {
+      "id": "simple-past",
+      "title": "Simple Past",
+      "icon": "icon-folders.svg",
+      "activities": [
+        { "id": "gl-p-past-missing", "type": "missing", "title": "What Happened Yesterday?", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "football.svg", "sentence": "We ___ football yesterday.", "options": ["played", "play", "playing"], "answer": 0 }, { "picture": "book.svg", "sentence": "She ___ the whole book last week.", "options": ["reads", "read", "reading"], "answer": 1 }, { "picture": "school.svg", "sentence": "They ___ to school by bus this morning.", "options": ["go", "goes", "went"], "answer": 2 }, { "picture": "bread.svg", "sentence": "I ___ breakfast at seven o'clock.", "options": ["had", "have", "having"], "answer": 0 }, { "picture": "swim.svg", "sentence": "He ___ in the sea last summer.", "options": ["swims", "swam", "swimming"], "answer": 1 } ] },
+        { "id": "gl-p-past-quiz", "type": "quiz", "title": "Regular or Irregular?", "instructions": "Read the verb. Tap its past form.", "minutes": 4,
+          "questions": [ { "picture": "run.svg", "ask": "The past of run is ...", "options": ["ran", "runned", "runs"], "answer": 0 }, { "picture": "dance.svg", "ask": "The past of dance is ...", "options": ["danc", "danced", "dancing"], "answer": 1 }, { "picture": "eyes.svg", "ask": "The past of see is ...", "options": ["seed", "sawed", "saw"], "answer": 2 }, { "picture": "doll.svg", "ask": "The past of buy is ...", "options": ["bought", "buyed", "buys"], "answer": 0 }, { "picture": "pen.svg", "ask": "The past of write is ...", "options": ["writed", "wrote", "written"], "answer": 1 } ] },
+        { "id": "gl-p-past-order", "type": "order", "title": "Tell the Story", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["We", "went", "to", "the", "beach."], "hint": "Start with We." }, { "words": ["It", "rained", "all", "day."], "hint": "Start with It." }, { "words": ["She", "found", "her", "lost", "keys."], "hint": "Start with She." } ] }
+      ]
+    },
+    {
+      "id": "sentence-building",
+      "title": "Sentence Building",
+      "icon": "icon-blocks.svg",
+      "activities": [
+        { "id": "gl-p-build-order", "type": "order", "title": "Build a Longer Sentence", "instructions": "Tap the words in the right order.", "minutes": 5,
+          "sentences": [ { "words": ["My", "brother", "plays", "cricket", "every", "Saturday."], "hint": "Start with My." }, { "words": ["We", "always", "have", "dinner", "together."], "hint": "Start with We." }, { "words": ["The", "children", "were", "playing", "outside."], "hint": "Start with The." }, { "words": ["I", "would", "like", "some", "water,", "please."], "hint": "Start with I." } ] },
+        { "id": "gl-p-join-quiz", "type": "quiz", "title": "and, but or because?", "instructions": "Read the sentence. Tap the joining word.", "minutes": 4,
+          "questions": [ { "picture": "apple.svg", "ask": "I like apples ___ I like bananas.", "options": ["and", "but", "because"], "answer": 0 }, { "picture": "rain.svg", "ask": "I wanted to play ___ it was raining.", "options": ["and", "but", "so"], "answer": 1 }, { "picture": "umbrella.svg", "ask": "She took an umbrella ___ it was raining.", "options": ["and", "but", "because"], "answer": 2 }, { "picture": "bed.svg", "ask": "He was tired ___ he went to bed early.", "options": ["so", "but", "because"], "answer": 0 } ] },
+        { "id": "gl-p-build-missing", "type": "missing", "title": "Finish the Sentence", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "girl.svg", "sentence": "There ___ a girl waiting outside.", "options": ["is", "are", "am"], "answer": 0 }, { "picture": "book.svg", "sentence": "There ___ many books on the shelf.", "options": ["is", "are", "was"], "answer": 1 }, { "picture": "clock.svg", "sentence": "We have ___ time before the train leaves.", "options": ["many", "few", "enough"], "answer": 2 }, { "picture": "water.svg", "sentence": "Is there ___ water in the bottle?", "options": ["any", "many", "a"], "answer": 0 } ] }
+      ]
+    },
+    {
+      "id": "reading-comprehension",
+      "title": "Reading Comprehension",
+      "icon": "book.svg",
+      "activities": [
+        { "id": "gl-p-read-market", "type": "quiz", "title": "A Morning at the Market", "instructions": "Read the story, then answer.", "minutes": 5,
+          "shuffleQuestions": false,
+          "questions": [
+            { "passage": "Every Saturday, Amara and her grandmother walk to the market. They leave the house at seven o'clock, before it gets hot. Grandmother buys vegetables and fruit, and Amara carries the bag. Her favourite part is the flower stall at the end of the row. Last Saturday they bought yellow flowers for the kitchen table.", "ask": "When do they go to the market?", "options": ["Every Saturday", "Every Sunday", "Every morning"], "answer": 0 },
+            { "passage": "Every Saturday, Amara and her grandmother walk to the market. They leave the house at seven o'clock, before it gets hot. Grandmother buys vegetables and fruit, and Amara carries the bag. Her favourite part is the flower stall at the end of the row. Last Saturday they bought yellow flowers for the kitchen table.", "ask": "Why do they leave at seven o'clock?", "options": ["The market closes early.", "Because it gets hot later.", "The bus comes at seven."], "answer": 1 },
+            { "passage": "Every Saturday, Amara and her grandmother walk to the market. They leave the house at seven o'clock, before it gets hot. Grandmother buys vegetables and fruit, and Amara carries the bag. Her favourite part is the flower stall at the end of the row. Last Saturday they bought yellow flowers for the kitchen table.", "ask": "What does Amara do at the market?", "options": ["She buys the vegetables.", "She sells flowers.", "She carries the bag."], "answer": 2 },
+            { "passage": "Every Saturday, Amara and her grandmother walk to the market. They leave the house at seven o'clock, before it gets hot. Grandmother buys vegetables and fruit, and Amara carries the bag. Her favourite part is the flower stall at the end of the row. Last Saturday they bought yellow flowers for the kitchen table.", "ask": "What did they buy last Saturday?", "options": ["Yellow flowers", "A kitchen table", "A new bag"], "answer": 0 }
+          ] },
+        { "id": "gl-p-read-school", "type": "quiz", "title": "Diego's New School", "instructions": "Read the story, then answer.", "minutes": 5,
+          "shuffleQuestions": false,
+          "questions": [
+            { "passage": "Diego moved to a new town in September. On his first day at school he was nervous, because he did not know anybody. At lunchtime a boy called Tomas asked him to join a football game. Diego was not very good at football, but everybody laughed and cheered anyway. By the end of the week he had three new friends.", "ask": "When did Diego move?", "options": ["In September", "In June", "At the weekend"], "answer": 0 },
+            { "passage": "Diego moved to a new town in September. On his first day at school he was nervous, because he did not know anybody. At lunchtime a boy called Tomas asked him to join a football game. Diego was not very good at football, but everybody laughed and cheered anyway. By the end of the week he had three new friends.", "ask": "Why was he nervous?", "options": ["He was late.", "He did not know anybody.", "He had lost his bag."], "answer": 1 },
+            { "passage": "Diego moved to a new town in September. On his first day at school he was nervous, because he did not know anybody. At lunchtime a boy called Tomas asked him to join a football game. Diego was not very good at football, but everybody laughed and cheered anyway. By the end of the week he had three new friends.", "ask": "What did Tomas do?", "options": ["He laughed at Diego.", "He showed him the classroom.", "He asked Diego to play football."], "answer": 2 },
+            { "passage": "Diego moved to a new town in September. On his first day at school he was nervous, because he did not know anybody. At lunchtime a boy called Tomas asked him to join a football game. Diego was not very good at football, but everybody laughed and cheered anyway. By the end of the week he had three new friends.", "ask": "How did the week end for Diego?", "options": ["He had three new friends.", "He moved again.", "He stopped playing football."], "answer": 0 }
+          ] }
+      ]
+    },
+    {
+      "id": "everyday-conversations",
+      "title": "Everyday Conversations",
+      "icon": "telephone.svg",
+      "activities": [
+        { "id": "gl-p-convo-quiz", "type": "quiz", "title": "What Would You Say?", "instructions": "Read the situation. Tap the best thing to say.", "minutes": 4,
+          "questions": [ { "picture": "market.svg", "ask": "You want to buy something in a shop. You say ...", "options": ["Excuse me, how much is this?", "Give me that.", "Where are you from?"], "answer": 0 }, { "picture": "telephone.svg", "ask": "You answer the telephone. You say ...", "options": ["Go away.", "Hello, who is speaking?", "I am busy now."], "answer": 1 }, { "picture": "bus-stop.svg", "ask": "You do not know the way. You say ...", "options": ["You are wrong.", "I am lost, goodbye.", "Excuse me, could you help me, please?"], "answer": 2 }, { "picture": "cake.svg", "ask": "Someone gives you a present. You say ...", "options": ["Thank you very much.", "Is that all?", "I have one already."], "answer": 0 }, { "picture": "face-sad.svg", "ask": "You step on someone's foot. You say ...", "options": ["Never mind.", "I am so sorry.", "That was your fault."], "answer": 1 } ] },
+        { "id": "gl-p-convo-order", "type": "order", "title": "Say It Properly", "instructions": "Tap the words in the right order.", "minutes": 4,
+          "sentences": [ { "words": ["Could", "you", "help", "me,", "please?"], "hint": "Start with Could." }, { "words": ["Nice", "to", "meet", "you."], "hint": "Start with Nice." }, { "words": ["Would", "you", "like", "a", "drink?"], "hint": "Start with Would." }, { "words": ["See", "you", "tomorrow!"], "hint": "Start with See." } ] }
+      ]
+    },
+    {
+      "id": "british-english-vocabulary",
+      "title": "British English Vocabulary",
+      "icon": "globe.svg",
+      "activities": [
+        { "id": "gl-p-british-quiz", "type": "quiz", "title": "British or American?", "instructions": "Read the American word. Tap the British word for it.", "minutes": 4,
+          "questions": [ { "picture": "eraser.svg", "ask": "Americans say eraser. In British English it is a ...", "options": ["rubber", "duster", "cleaner"], "answer": 0 }, { "picture": "biscuit.svg", "ask": "Americans say cookie. In British English it is a ...", "options": ["cracker", "biscuit", "bun"], "answer": 1 }, { "picture": "football.svg", "ask": "Americans say soccer. In British English it is ...", "options": ["rugby", "netball", "football"], "answer": 2 }, { "picture": "jeans.svg", "ask": "Americans say pants. In British English they are ...", "options": ["trousers", "shorts", "jeans"], "answer": 0 }, { "picture": "staircase.svg", "ask": "Americans say elevator. In British English it is a ...", "options": ["escalator", "lift", "stairway"], "answer": 1 }, { "picture": "torch.svg", "ask": "Americans say flashlight. In British English it is a ...", "options": ["lamp", "candle", "torch"], "answer": 2 } ] },
+        { "id": "gl-p-british-match", "type": "match", "title": "Match the British Word", "instructions": "Tap a picture. Then tap the British word.", "minutes": 3,
+          "pairs": [ { "picture": "eraser.svg", "word": "rubber" }, { "picture": "torch.svg", "word": "torch" }, { "picture": "biscuit.svg", "word": "biscuit" }, { "picture": "jeans.svg", "word": "trousers" }, { "picture": "carpark.svg", "word": "car park" } ] },
+        { "id": "gl-p-british-missing", "type": "missing", "title": "Finish the British Sentence", "instructions": "Tap the word that fits the gap.", "minutes": 4,
+          "items": [ { "picture": "market.svg", "sentence": "Please join the ___ and wait your turn.", "options": ["queue", "line", "row"], "answer": 0 }, { "picture": "leaf.svg", "sentence": "The leaves turn brown in ___.", "options": ["fall", "autumn", "winter"], "answer": 1 }, { "picture": "post-office.svg", "sentence": "I will ___ the letter tomorrow.", "options": ["mail", "ship", "post"], "answer": 2 }, { "picture": "airport.svg", "sentence": "We are going on ___ to Spain.", "options": ["holiday", "vacation", "travel"], "answer": 0 } ] }
+      ]
+    }
   ]
 }

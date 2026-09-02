@@ -9,86 +9,119 @@
   "blurb": "First words and pictures. No reading needed.",
   "icon": "icon-rainbow.svg",
   "english": "international",
-  "topicsStatus": "in-progress",
+  "topicsStatus": "complete",
   "topics": [
     {
       "id": "animals-and-pets",
       "title": "Animals and Pets",
       "icon": "icon-paw.svg",
       "activities": [
-        {
-          "id": "gl-b-animals-match",
-          "type": "match",
-          "title": "Match the Animal",
-          "instructions": "Tap a picture. Then tap its word.",
-          "minutes": 3,
-          "pairs": [
-            { "picture": "cat.svg", "word": "cat" },
-            { "picture": "dog.svg", "word": "dog" },
-            { "picture": "rabbit.svg", "word": "rabbit" },
-            { "picture": "bird.svg", "word": "bird" },
-            { "picture": "fish.svg", "word": "fish" },
-            { "picture": "elephant.svg", "word": "elephant" }
-          ]
-        },
-        {
-          "id": "gl-b-animals-quiz",
-          "type": "quiz",
-          "title": "What Animal Is It?",
-          "instructions": "Look at the picture. Tap the right word.",
-          "minutes": 3,
-          "questions": [
-            { "picture": "cat.svg", "ask": "What is this?", "options": ["cat", "dog", "bird"], "answer": 0 },
-            { "picture": "frog.svg", "ask": "What is this?", "options": ["fish", "frog", "goat"], "answer": 1 },
-            { "picture": "elephant.svg", "ask": "What is this?", "options": ["goat", "cow", "elephant"], "answer": 2 },
-            { "picture": "duck.svg", "ask": "What is this?", "options": ["duck", "hen", "bird"], "answer": 0 },
-            { "picture": "bee.svg", "ask": "What is this?", "options": ["butterfly", "bee", "bird"], "answer": 1 },
-            { "picture": "goat.svg", "ask": "What is this?", "options": ["cow", "dog", "goat"], "answer": 2 }
-          ]
-        },
-        {
-          "id": "gl-b-animals-memory",
-          "type": "memory",
-          "title": "Animal Pairs",
-          "instructions": "Turn over two cards. Find a picture and its word.",
-          "minutes": 4,
-          "pairs": [
-            { "a": "cat.svg", "b": "cat" },
-            { "a": "dog.svg", "b": "dog" },
-            { "a": "rabbit.svg", "b": "rabbit" },
-            { "a": "duck.svg", "b": "duck" },
-            { "a": "frog.svg", "b": "frog" },
-            { "a": "bee.svg", "b": "bee" }
-          ]
-        },
-        {
-          "id": "gl-b-animals-sort",
-          "type": "sort",
-          "title": "Pets or Wild Animals?",
-          "instructions": "Tap an animal, then tap the right basket.",
-          "minutes": 4,
-          "buckets": [
-            { "id": "pet", "title": "Pets", "icon": "house.svg" },
-            { "id": "wild", "title": "Wild animals", "icon": "tree.svg" }
-          ],
-          "items": [
-            { "text": "cat", "picture": "cat.svg", "bucket": "pet" },
-            { "text": "dog", "picture": "dog.svg", "bucket": "pet" },
-            { "text": "rabbit", "picture": "rabbit.svg", "bucket": "pet" },
-            { "text": "fish", "picture": "fish.svg", "bucket": "pet" },
-            { "text": "elephant", "picture": "elephant.svg", "bucket": "wild" },
-            { "text": "frog", "picture": "frog.svg", "bucket": "wild" },
-            { "text": "bee", "picture": "bee.svg", "bucket": "wild" }
-          ]
-        }
+        { "id": "gl-b-animals-match", "type": "match", "title": "Match the Animal", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "cat.svg", "word": "cat" }, { "picture": "dog.svg", "word": "dog" }, { "picture": "rabbit.svg", "word": "rabbit" }, { "picture": "bird.svg", "word": "bird" }, { "picture": "fish.svg", "word": "fish" }, { "picture": "elephant.svg", "word": "elephant" } ] },
+        { "id": "gl-b-animals-quiz", "type": "quiz", "title": "What Animal Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+          "questions": [ { "picture": "cat.svg", "ask": "What is this?", "options": ["cat", "dog", "bird"], "answer": 0 }, { "picture": "frog.svg", "ask": "What is this?", "options": ["fish", "frog", "goat"], "answer": 1 }, { "picture": "elephant.svg", "ask": "What is this?", "options": ["goat", "cow", "elephant"], "answer": 2 }, { "picture": "duck.svg", "ask": "What is this?", "options": ["duck", "hen", "bird"], "answer": 0 }, { "picture": "bee.svg", "ask": "What is this?", "options": ["butterfly", "bee", "bird"], "answer": 1 }, { "picture": "goat.svg", "ask": "What is this?", "options": ["cow", "dog", "goat"], "answer": 2 } ] },
+        { "id": "gl-b-animals-memory", "type": "memory", "title": "Animal Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "cat.svg", "b": "cat" }, { "a": "dog.svg", "b": "dog" }, { "a": "rabbit.svg", "b": "rabbit" }, { "a": "duck.svg", "b": "duck" }, { "a": "frog.svg", "b": "frog" }, { "a": "bee.svg", "b": "bee" } ] },
+        { "id": "gl-b-animals-sort", "type": "sort", "title": "Pets or Wild Animals?", "instructions": "Tap an animal, then tap the right basket.", "minutes": 4,
+          "buckets": [ { "id": "pet", "title": "Pets", "icon": "house.svg" }, { "id": "wild", "title": "Wild animals", "icon": "tree.svg" } ],
+          "items": [ { "text": "cat", "picture": "cat.svg", "bucket": "pet" }, { "text": "dog", "picture": "dog.svg", "bucket": "pet" }, { "text": "rabbit", "picture": "rabbit.svg", "bucket": "pet" }, { "text": "fish", "picture": "fish.svg", "bucket": "pet" }, { "text": "elephant", "picture": "elephant.svg", "bucket": "wild" }, { "text": "frog", "picture": "frog.svg", "bucket": "wild" }, { "text": "bee", "picture": "bee.svg", "bucket": "wild" } ] }
       ]
     },
-    { "id": "colours-and-shapes", "title": "Colours and Shapes", "icon": "icon-palette.svg", "activities": [] },
-    { "id": "numbers", "title": "Numbers 1 to 10", "icon": "icon-numbers.svg", "activities": [] },
-    { "id": "my-family", "title": "My Family", "icon": "shape-heart.svg", "activities": [] },
-    { "id": "my-body", "title": "My Body", "icon": "icon-brain.svg", "activities": [] },
-    { "id": "food-and-drinks", "title": "Food and Drinks", "icon": "apple.svg", "activities": [] },
-    { "id": "toys", "title": "Toys", "icon": "ball.svg", "activities": [] },
-    { "id": "alphabet-and-phonics", "title": "Alphabet and Phonics", "icon": "icon-abc.svg", "activities": [] }
+    {
+      "id": "colours-and-shapes",
+      "title": "Colours and Shapes",
+      "icon": "icon-palette.svg",
+      "activities": [
+        { "id": "gl-b-colours-match", "type": "match", "title": "Match the Colour", "instructions": "Tap a colour. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "colour-red.svg", "word": "red" }, { "picture": "colour-blue.svg", "word": "blue" }, { "picture": "colour-green.svg", "word": "green" }, { "picture": "colour-yellow.svg", "word": "yellow" }, { "picture": "colour-orange.svg", "word": "orange" }, { "picture": "colour-purple.svg", "word": "purple" } ] },
+        { "id": "gl-b-shapes-match", "type": "match", "title": "Match the Shape", "instructions": "Tap a shape. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "shape-circle.svg", "word": "circle" }, { "picture": "shape-square.svg", "word": "square" }, { "picture": "shape-triangle.svg", "word": "triangle" }, { "picture": "shape-rectangle.svg", "word": "rectangle" }, { "picture": "shape-star.svg", "word": "star" }, { "picture": "shape-heart.svg", "word": "heart" } ] },
+        { "id": "gl-b-colours-quiz", "type": "quiz", "title": "What Colour Is It?", "instructions": "Look at the picture. Tap the right colour.", "minutes": 3,
+          "questions": [ { "picture": "colour-black.svg", "ask": "What colour is it?", "options": ["black", "brown", "blue"], "answer": 0 }, { "picture": "colour-white.svg", "ask": "What colour is it?", "options": ["yellow", "white", "grey"], "answer": 1 }, { "picture": "colour-brown.svg", "ask": "What colour is it?", "options": ["orange", "red", "brown"], "answer": 2 }, { "picture": "shape-heart.svg", "ask": "What shape is it?", "options": ["heart", "star", "circle"], "answer": 0 }, { "picture": "shape-rectangle.svg", "ask": "What shape is it?", "options": ["square", "rectangle", "triangle"], "answer": 1 } ] },
+        { "id": "gl-b-colours-memory", "type": "memory", "title": "Colour Pairs", "instructions": "Turn over two cards. Find a colour and its word.", "minutes": 4,
+          "pairs": [ { "a": "colour-red.svg", "b": "red" }, { "a": "colour-blue.svg", "b": "blue" }, { "a": "colour-green.svg", "b": "green" }, { "a": "colour-yellow.svg", "b": "yellow" }, { "a": "colour-purple.svg", "b": "purple" }, { "a": "colour-orange.svg", "b": "orange" } ] }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers 1 to 10",
+      "icon": "icon-numbers.svg",
+      "activities": [
+        { "id": "gl-b-numbers-match", "type": "match", "title": "Match the Number", "instructions": "Tap a number. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "num-1.svg", "word": "one" }, { "picture": "num-2.svg", "word": "two" }, { "picture": "num-3.svg", "word": "three" }, { "picture": "num-4.svg", "word": "four" }, { "picture": "num-5.svg", "word": "five" } ] },
+        { "id": "gl-b-numbers-quiz", "type": "quiz", "title": "How Many?", "instructions": "Count the dots. Tap the right word.", "minutes": 3,
+          "questions": [ { "picture": "num-3.svg", "ask": "How many dots?", "options": ["three", "two", "four"], "answer": 0 }, { "picture": "num-5.svg", "ask": "How many dots?", "options": ["four", "five", "three"], "answer": 1 }, { "picture": "num-2.svg", "ask": "How many dots?", "options": ["four", "one", "two"], "answer": 2 }, { "picture": "num-4.svg", "ask": "How many dots?", "options": ["four", "five", "two"], "answer": 0 }, { "picture": "num-1.svg", "ask": "How many dots?", "options": ["three", "one", "five"], "answer": 1 } ] },
+        { "id": "gl-b-numbers-missing", "type": "missing", "title": "What Comes Next?", "instructions": "Tap the number that fits the gap.", "minutes": 3,
+          "items": [ { "sentence": "one, two, ___, four", "options": ["three", "five", "six"], "answer": 0 }, { "sentence": "five, six, ___, eight", "options": ["nine", "seven", "four"], "answer": 1 }, { "sentence": "seven, eight, nine, ___", "options": ["six", "eleven", "ten"], "answer": 2 }, { "sentence": "two, four, ___, eight", "options": ["six", "five", "seven"], "answer": 0 }, { "sentence": "ten, nine, ___, seven", "options": ["six", "eight", "five"], "answer": 1 } ] }
+      ]
+    },
+    {
+      "id": "my-family",
+      "title": "My Family",
+      "icon": "shape-heart.svg",
+      "activities": [
+        { "id": "gl-b-family-match", "type": "match", "title": "Match the Family Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "mother.svg", "word": "mother" }, { "picture": "father.svg", "word": "father" }, { "picture": "sister.svg", "word": "sister" }, { "picture": "brother.svg", "word": "brother" }, { "picture": "baby.svg", "word": "baby" }, { "picture": "grandmother.svg", "word": "grandmother" } ] },
+        { "id": "gl-b-family-quiz", "type": "quiz", "title": "Who Is This?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+          "questions": [ { "picture": "grandfather.svg", "ask": "Who is this?", "options": ["grandfather", "father", "brother"], "answer": 0 }, { "picture": "aunt.svg", "ask": "Who is this?", "options": ["mother", "aunt", "sister"], "answer": 1 }, { "picture": "uncle.svg", "ask": "Who is this?", "options": ["father", "brother", "uncle"], "answer": 2 }, { "picture": "baby.svg", "ask": "Who is this?", "options": ["baby", "boy", "girl"], "answer": 0 } ] },
+        { "id": "gl-b-family-memory", "type": "memory", "title": "Family Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "mother.svg", "b": "mother" }, { "a": "father.svg", "b": "father" }, { "a": "sister.svg", "b": "sister" }, { "a": "brother.svg", "b": "brother" }, { "a": "aunt.svg", "b": "aunt" }, { "a": "uncle.svg", "b": "uncle" } ] }
+      ]
+    },
+    {
+      "id": "my-body",
+      "title": "My Body",
+      "icon": "hand.svg",
+      "activities": [
+        { "id": "gl-b-body-match", "type": "match", "title": "Match the Body Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "eyes.svg", "word": "eyes" }, { "picture": "ears.svg", "word": "ears" }, { "picture": "mouth.svg", "word": "mouth" }, { "picture": "nose.svg", "word": "nose" }, { "picture": "hand.svg", "word": "hand" }, { "picture": "foot.svg", "word": "foot" } ] },
+        { "id": "gl-b-body-quiz", "type": "quiz", "title": "What Do We Use?", "instructions": "Read the question. Tap the right part.", "minutes": 3,
+          "questions": [ { "picture": "eyes.svg", "ask": "We see with our ...", "options": ["eyes", "ears", "nose"], "answer": 0 }, { "picture": "ears.svg", "ask": "We hear with our ...", "options": ["mouth", "ears", "hands"], "answer": 1 }, { "picture": "nose.svg", "ask": "We smell with our ...", "options": ["eyes", "feet", "nose"], "answer": 2 }, { "picture": "foot.svg", "ask": "We walk on our ...", "options": ["feet", "hands", "ears"], "answer": 0 }, { "picture": "mouth.svg", "ask": "We eat with our ...", "options": ["nose", "mouth", "eyes"], "answer": 1 } ] },
+        { "id": "gl-b-body-memory", "type": "memory", "title": "Body Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "eyes.svg", "b": "eyes" }, { "a": "ears.svg", "b": "ears" }, { "a": "mouth.svg", "b": "mouth" }, { "a": "nose.svg", "b": "nose" }, { "a": "hand.svg", "b": "hand" }, { "a": "foot.svg", "b": "foot" } ] }
+      ]
+    },
+    {
+      "id": "food-and-drinks",
+      "title": "Food and Drinks",
+      "icon": "apple.svg",
+      "activities": [
+        { "id": "gl-b-food-match", "type": "match", "title": "Match the Food", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "apple.svg", "word": "apple" }, { "picture": "banana.svg", "word": "banana" }, { "picture": "bread.svg", "word": "bread" }, { "picture": "egg.svg", "word": "egg" }, { "picture": "rice.svg", "word": "rice" }, { "picture": "cake.svg", "word": "cake" } ] },
+        { "id": "gl-b-drinks-match", "type": "match", "title": "Match the Drink", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "milk.svg", "word": "milk" }, { "picture": "water.svg", "word": "water" }, { "picture": "tea.svg", "word": "tea" }, { "picture": "cup.svg", "word": "cup" } ] },
+        { "id": "gl-b-food-sort", "type": "sort", "title": "Eat It or Drink It?", "instructions": "Tap a picture, then tap the right basket.", "minutes": 4,
+          "buckets": [ { "id": "eat", "title": "We eat it", "icon": "apple.svg" }, { "id": "drink", "title": "We drink it", "icon": "cup.svg" } ],
+          "items": [ { "text": "bread", "picture": "bread.svg", "bucket": "eat" }, { "text": "rice", "picture": "rice.svg", "bucket": "eat" }, { "text": "apple", "picture": "apple.svg", "bucket": "eat" }, { "text": "egg", "picture": "egg.svg", "bucket": "eat" }, { "text": "milk", "picture": "milk.svg", "bucket": "drink" }, { "text": "water", "picture": "water.svg", "bucket": "drink" }, { "text": "tea", "picture": "tea.svg", "bucket": "drink" } ] },
+        { "id": "gl-b-food-quiz", "type": "quiz", "title": "What Food Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+          "questions": [ { "picture": "watermelon.svg", "ask": "What is this?", "options": ["watermelon", "apple", "orange"], "answer": 0 }, { "picture": "grapes.svg", "ask": "What is this?", "options": ["banana", "grapes", "pear"], "answer": 1 }, { "picture": "carrot.svg", "ask": "What is this?", "options": ["potato", "onion", "carrot"], "answer": 2 }, { "picture": "ice-cream.svg", "ask": "What is this?", "options": ["ice cream", "cake", "bread"], "answer": 0 } ] }
+      ]
+    },
+    {
+      "id": "toys",
+      "title": "Toys",
+      "icon": "ball.svg",
+      "activities": [
+        { "id": "gl-b-toys-match", "type": "match", "title": "Match the Toy", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+          "pairs": [ { "picture": "ball.svg", "word": "ball" }, { "picture": "doll.svg", "word": "doll" }, { "picture": "drum.svg", "word": "drum" }, { "picture": "balloon.svg", "word": "balloon" }, { "picture": "kite.svg", "word": "kite" }, { "picture": "bear.svg", "word": "teddy bear" } ] },
+        { "id": "gl-b-toys-quiz", "type": "quiz", "title": "Which Toy Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+          "questions": [ { "picture": "doll.svg", "ask": "What is this?", "options": ["doll", "teddy bear", "ball"], "answer": 0 }, { "picture": "drum.svg", "ask": "What is this?", "options": ["kite", "drum", "balloon"], "answer": 1 }, { "picture": "kite.svg", "ask": "What flies in the wind?", "options": ["a drum", "a ball", "a kite"], "answer": 2 }, { "picture": "ball.svg", "ask": "What can you kick?", "options": ["a ball", "a doll", "a balloon"], "answer": 0 } ] },
+        { "id": "gl-b-toys-memory", "type": "memory", "title": "Toy Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+          "pairs": [ { "a": "ball.svg", "b": "ball" }, { "a": "doll.svg", "b": "doll" }, { "a": "drum.svg", "b": "drum" }, { "a": "balloon.svg", "b": "balloon" }, { "a": "kite.svg", "b": "kite" }, { "a": "bear.svg", "b": "teddy bear" } ] }
+      ]
+    },
+    {
+      "id": "alphabet-and-phonics",
+      "title": "Alphabet and Phonics",
+      "icon": "icon-abc.svg",
+      "activities": [
+        { "id": "gl-b-phonics-quiz", "type": "quiz", "title": "Which Letter Does It Start With?", "instructions": "Look at the picture. Tap the first letter.", "minutes": 3,
+          "questions": [ { "picture": "apple.svg", "ask": "apple starts with ...", "options": ["a", "e", "u"], "answer": 0 }, { "picture": "ball.svg", "ask": "ball starts with ...", "options": ["d", "b", "p"], "answer": 1 }, { "picture": "cat.svg", "ask": "cat starts with ...", "options": ["s", "k", "c"], "answer": 2 }, { "picture": "doll.svg", "ask": "doll starts with ...", "options": ["d", "b", "t"], "answer": 0 }, { "picture": "egg.svg", "ask": "egg starts with ...", "options": ["a", "e", "i"], "answer": 1 }, { "picture": "fish.svg", "ask": "fish starts with ...", "options": ["v", "s", "f"], "answer": 2 } ] },
+        { "id": "gl-b-phonics-quiz2", "type": "quiz", "title": "More First Sounds", "instructions": "Look at the picture. Tap the first letter.", "minutes": 3,
+          "questions": [ { "picture": "moon.svg", "ask": "moon starts with ...", "options": ["m", "n", "w"], "answer": 0 }, { "picture": "sun.svg", "ask": "sun starts with ...", "options": ["c", "s", "z"], "answer": 1 }, { "picture": "tree.svg", "ask": "tree starts with ...", "options": ["d", "p", "t"], "answer": 2 }, { "picture": "house.svg", "ask": "house starts with ...", "options": ["h", "a", "o"], "answer": 0 }, { "picture": "owl.svg", "ask": "owl starts with ...", "options": ["a", "o", "u"], "answer": 1 }, { "picture": "rabbit.svg", "ask": "rabbit starts with ...", "options": ["l", "b", "r"], "answer": 2 } ] },
+        { "id": "gl-b-endsound-quiz", "type": "quiz", "title": "Which Letter Does It End With?", "instructions": "Look at the picture. Tap the last letter.", "minutes": 3,
+          "questions": [ { "picture": "cat.svg", "ask": "cat ends with ...", "options": ["t", "c", "a"], "answer": 0 }, { "picture": "dog.svg", "ask": "dog ends with ...", "options": ["d", "g", "o"], "answer": 1 }, { "picture": "sun.svg", "ask": "sun ends with ...", "options": ["s", "u", "n"], "answer": 2 }, { "picture": "bed.svg", "ask": "bed ends with ...", "options": ["d", "b", "e"], "answer": 0 } ] }
+      ]
+    }
   ]
 }

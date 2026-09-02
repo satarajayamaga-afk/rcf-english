@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="snowflake">
+  <g stroke="#4cc9f0" stroke-width="8" stroke-linecap="round">
+    <path d="M60 8 v104 M16 34 l88 52 M104 34 l-88 52"/>
+  </g>
+  <g stroke="#8ecae6" stroke-width="6" stroke-linecap="round">
+    <path d="M60 26 l-14 -12 M60 26 l14 -12 M60 94 l-14 12 M60 94 l14 12"/>
+    <path d="M32 42 l-18 2 M32 42 l-2 -18 M88 78 l18 -2 M88 78 l2 18"/>
+    <path d="M88 42 l18 2 M88 42 l2 -18 M32 78 l-18 -2 M32 78 l-2 18"/>
+  </g>
+  <circle cx="60" cy="60" r="9" fill="#e0f7ff"/>
+</svg>
