@@ -2,26 +2,12 @@
 #  Draws the RCF English launch card used when the homepage is shared on
 #  Facebook, WhatsApp, LinkedIn and similar.
 #
-#  Output: assets/img/social/og-countdown-boxes.png, 1200 x 630.
+#  Output: assets/img/social/og-launch-card.png, 1200 x 630, the size those
+#  services expect.
 #
-#  Composition notes
-#
-#  Four boxes in the shape the website's clock uses, and they are the
-#  dominant thing on the card. They are sized to the 1.91:1 frame, which is
-#  what Facebook shows in an ordinary feed link preview: at that ratio the
-#  picture is not cropped at all, so all four are fully visible without the
-#  reader opening anything.
-#
-#  The boxes carry the unit words, not figures. A picture is cached for a
-#  long time by these services, so any number printed here would freeze at
-#  the moment it was drawn and then be wrong for as long as the card is
-#  shared. The words say plainly that the clock counts days, hours, minutes
-#  and seconds; the running figures are on the page, which is where the
-#  card sends people. The date and hour stay in the gold pill underneath.
-#
-#  Note the trade-off: boxes wide enough to hold SECONDS legibly are wider
-#  than a square crop. In the 1.91:1 feed preview all four are whole; in a
-#  square crop the outer two are trimmed.
+#  It deliberately carries NO countdown numbers. Facebook caches a preview
+#  image for a long time, so a number baked into the picture would go stale
+#  and then be wrong in every share that had already been made.
 #
 #  Run it with:  powershell -ExecutionPolicy Bypass -File tools\make-social-image.ps1
 #  Only needed if the wording or the launch date changes.
@@ -30,7 +16,7 @@
 Add-Type -AssemblyName System.Drawing
 
 $root = Split-Path -Parent $PSScriptRoot
-$out = Join-Path $root 'assets\img\social\og-countdown-boxes.png'
+$out = Join-Path $root 'assets\img\social\og-launch-card.png'
 
 $W = 1200
 $H = 630
@@ -64,181 +50,116 @@ function New-RoundedPath([single]$x, [single]$y, [single]$w, [single]$h, [single
     return $p
 }
 
-function Measure-Tracked($graphics, [string]$text, $font, [single]$track) {
-    $fmt = [System.Drawing.StringFormat]::GenericTypographic
-    $one = $graphics.MeasureString('nn', $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width
-    $two = $graphics.MeasureString('n n', $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width
-    $spaceW = [Math]::Max(($two - $one), ($font.Size * 0.25))
-    $total = 0
-    foreach ($ch in $text.ToCharArray()) {
-        if ($ch -eq ' ') { $total += $spaceW + $track }
-        else { $total += $graphics.MeasureString([string]$ch, $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width + $track }
-    }
-    return ($total - $track)
-}
-
-# Draws text centred on $cx with even letter spacing.
+# Draws text centred on $cx with even letter spacing, and returns its width.
 function Draw-Tracked($graphics, [string]$text, $font, $brush, [single]$cx, [single]$y, [single]$track) {
     $fmt = [System.Drawing.StringFormat]::GenericTypographic
+    # A space measured on its own comes back as almost nothing under
+    # GenericTypographic, which would run the words together. Measure it
+    # between two letters instead and subtract them.
     $one = $graphics.MeasureString('nn', $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width
     $two = $graphics.MeasureString('n n', $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width
     $spaceW = [Math]::Max(($two - $one), ($font.Size * 0.25))
-    $total = Measure-Tracked $graphics $text $font $track
-    $x = $cx - ($total / 2)
+    $widths = @()
+    $total = 0
     foreach ($ch in $text.ToCharArray()) {
         if ($ch -eq ' ') {
-            $x += $spaceW + $track
-            continue
+            $w = $spaceW
         }
-        $graphics.DrawString([string]$ch, $font, $brush, [System.Drawing.PointF]::new($x, $y), $fmt)
-        $x += $graphics.MeasureString([string]$ch, $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width + $track
+        else {
+            $w = $graphics.MeasureString([string]$ch, $font, [System.Drawing.PointF]::new(0, 0), $fmt).Width
+        }
+        $widths += $w
+        $total += $w + $track
     }
+    $total -= $track
+    $x = $cx - ($total / 2)
+    for ($i = 0; $i -lt $text.Length; $i++) {
+        $graphics.DrawString([string]$text[$i], $font, $brush, [System.Drawing.PointF]::new($x, $y), $fmt)
+        $x += $widths[$i] + $track
+    }
+    return $total
 }
 
 function Draw-Centred($graphics, [string]$text, $font, $brush, [single]$cx, [single]$y) {
     $fmt = New-Object System.Drawing.StringFormat
     $fmt.Alignment = [System.Drawing.StringAlignment]::Center
-    $graphics.DrawString($text, $font, $brush, [System.Drawing.RectangleF]::new(($cx - 600), $y, 1200, 200), $fmt)
+    $graphics.DrawString($text, $font, $brush, [System.Drawing.RectangleF]::new(0, $y, $W, 200), $fmt)
     $fmt.Dispose()
 }
 
 # ------------------------------------------------------------- background
 
 $bgRect = New-Object System.Drawing.Rectangle(0, 0, $W, $H)
-$bg = New-Object System.Drawing.Drawing2D.LinearGradientBrush($bgRect, $navyTop, $navyEnd, 100.0)
+# Built from the rectangle and an angle, so the gradient spans the whole
+# card. A short gradient vector would tile and leave a diagonal seam.
+$bg = New-Object System.Drawing.Drawing2D.LinearGradientBrush(
+    $bgRect, $navyTop, $navyEnd, 100.0)
 $blend = New-Object System.Drawing.Drawing2D.ColorBlend(3)
 $blend.Colors = @($navyTop, $navyMid, $navyEnd)
 $blend.Positions = @(0.0, 0.55, 1.0)
 $bg.InterpolationColors = $blend
 $g.FillRectangle($bg, $bgRect)
 
-# The teal glow sits behind the blocks rather than at the very top, so the
-# focus of the picture is where the blocks are.
+# The teal glow the countdown band carries above its numbers.
 $glowPath = New-Object System.Drawing.Drawing2D.GraphicsPath
-$glowPath.AddEllipse(($W / 2) - 660, -180, 1320, 820)
+$glowPath.AddEllipse(($W / 2) - 620, -430, 1240, 900)
 $glow = New-Object System.Drawing.Drawing2D.PathGradientBrush($glowPath)
-$glow.CenterPoint = New-Object System.Drawing.PointF(($W / 2), 250)
-$glow.CenterColor = [System.Drawing.Color]::FromArgb(86, $teal)
+$glow.CenterPoint = New-Object System.Drawing.PointF(($W / 2), 40)
+$glow.CenterColor = [System.Drawing.Color]::FromArgb(78, $teal)
 $glow.SurroundColors = @([System.Drawing.Color]::FromArgb(0, $teal))
 $g.FillPath($glow, $glowPath)
 
-$cx = $W / 2
+# ------------------------------------------------------------- brand mark
 
-# --------------------------------------------- lockup: mark and the name
+$markSize = 104
+$markX = ($W - $markSize) / 2
+$markY = 74
 
-# Mark and wordmark on one line, so the top of the card costs 90px, not 210.
-$markSize = 62
-$nameFont = New-Object System.Drawing.Font('Georgia', 60, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$nameText = 'RCF ENGLISH'
-$nameW = Measure-Tracked $g $nameText $nameFont 2
-$gapAfterMark = 24
-$lockupW = $markSize + $gapAfterMark + $nameW
-$markX = $cx - ($lockupW / 2)
-$markY = 40
-
-$outer = New-RoundedPath $markX $markY $markSize $markSize 13
+$outer = New-RoundedPath $markX $markY $markSize $markSize 22
 $navyBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(15, 38, 71))
 $g.FillPath($navyBrush, $outer)
 
-$inner = New-RoundedPath ($markX + 4) ($markY + 4) ($markSize - 8) ($markSize - 8) 10
+$inner = New-RoundedPath ($markX + 7) ($markY + 7) ($markSize - 14) ($markSize - 14) 16
 $markGrad = New-Object System.Drawing.Drawing2D.LinearGradientBrush(
     (New-Object System.Drawing.Point([int]$markX, [int]$markY)),
     (New-Object System.Drawing.Point([int]($markX + $markSize), [int]($markY + $markSize))),
     $teal, $tealDark)
 $g.FillPath($markGrad, $inner)
 
-$markFont = New-Object System.Drawing.Font('Georgia', 19, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$markFont = New-Object System.Drawing.Font('Georgia', 30, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
 $whiteBrush = New-Object System.Drawing.SolidBrush($white)
-Draw-Centred $g 'RCF' $markFont $whiteBrush ($markX + ($markSize / 2)) ($markY + 14)
+Draw-Centred $g 'RCF' $markFont $whiteBrush ($W / 2) ($markY + 24)
+
 $goldBrush = New-Object System.Drawing.SolidBrush($gold)
-$g.FillPath($goldBrush, (New-RoundedPath ($markX + ($markSize / 2) - 15) ($markY + 42) 30 3 1.5))
+$g.FillPath($goldBrush, (New-RoundedPath (($W / 2) - 26) ($markY + 70) 52 5 2.5))
 
-Draw-Tracked $g $nameText $nameFont $whiteBrush ($markX + $markSize + $gapAfterMark + ($nameW / 2)) ($markY + 3) 2
+# ------------------------------------------------------------------ words
 
-# ---------------------------------------------------------------- eyebrow
+# 1. The name, the largest thing on the card.
+$nameFont = New-Object System.Drawing.Font('Georgia', 96, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+[void](Draw-Tracked $g 'RCF ENGLISH' $nameFont $whiteBrush ($W / 2) 218 3)
 
-$eyebrowFont = New-Object System.Drawing.Font('Segoe UI', 17, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-Draw-Tracked $g 'SOMETHING BIG IS COMING TO ENGLISH EDUCATION' $eyebrowFont $goldBrush $cx 128 3
+# 2. The promise.
+$lineFont = New-Object System.Drawing.Font('Georgia', 40, [System.Drawing.FontStyle]::Italic, [System.Drawing.GraphicsUnit]::Pixel)
+$mistBrush = New-Object System.Drawing.SolidBrush($mist)
+Draw-Centred $g 'Something Big Is Coming to English Education' $lineFont $mistBrush ($W / 2) 350
 
-# --------------------------------------------------------- the live panel
-
-# The panel is drawn in the same material as the countdown blocks on the
-# website - same translucent fill, same border, same corner - so it still
-# reads as a timer face. What it says is that the clock is live and where
-# to watch it, because a cached picture cannot show a running figure. The
-# date sat here before and read as an ordinary launch announcement.
-
-# Each value is set as large as its box can hold, so nothing can run over
-# the edge whatever the wording is changed to later.
-function Fit-Font($graphics, [string]$text, [single]$maxWidth, [single]$startSize, $style) {
-    $size = $startSize
-    while ($size -gt 20) {
-        $f = New-Object System.Drawing.Font('Georgia', $size, $style, [System.Drawing.GraphicsUnit]::Pixel)
-        $w = $graphics.MeasureString($text, $f, [System.Drawing.PointF]::new(0, 0), [System.Drawing.StringFormat]::GenericTypographic).Width
-        if ($w -le $maxWidth) { return $f }
-        $f.Dispose()
-        $size -= 2
-    }
-    return (New-Object System.Drawing.Font('Georgia', 20, $style, [System.Drawing.GraphicsUnit]::Pixel))
+# 3. The date, in the gold pill the countdown uses.
+$pillFont = New-Object System.Drawing.Font('Segoe UI', 26, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$pillText = 'LAUNCHING 17 SEPTEMBER 2026'
+$fmtT = [System.Drawing.StringFormat]::GenericTypographic
+$pillTextW = 0
+foreach ($ch in $pillText.ToCharArray()) {
+    $pillTextW += $g.MeasureString([string]$ch, $pillFont, [System.Drawing.PointF]::new(0, 0), $fmtT).Width + 3
 }
-
-$units = @('DAYS', 'HOURS', 'MINUTES', 'SECONDS')
-
-$blockW = 236
-$blockH = 220
-$blockGap = 20
-$stripW = ($blockW * 4) + ($blockGap * 3)
-$stripX = $cx - ($stripW / 2)
-$stripY = 172
-
-$blockFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(20, 255, 255, 255))
-$blockPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(46, 255, 255, 255), 1.5)
-
-# One size for all four, taken from the longest word, because a timer whose
-# faces are set at different sizes stops looking like a timer.
-$unitFont = $null
-foreach ($u in $units) {
-    $f = Fit-Font $g $u ($blockW - 44) 74 ([System.Drawing.FontStyle]::Bold)
-    if (($null -eq $unitFont) -or ($f.Size -lt $unitFont.Size)) {
-        if ($unitFont) { $unitFont.Dispose() }
-        $unitFont = $f
-    }
-    else { $f.Dispose() }
-}
-
-for ($i = 0; $i -lt $units.Count; $i++) {
-    $bx = $stripX + ($i * ($blockW + $blockGap))
-    $path = New-RoundedPath $bx $stripY $blockW $blockH 20
-    $g.FillPath($blockFill, $path)
-    $g.DrawPath($blockPen, $path)
-
-    Draw-Centred $g $units[$i] $unitFont $whiteBrush ($bx + ($blockW / 2)) ($stripY + 66)
-
-    # The gold rule stands where the unit label sits on the website, so the
-    # face keeps the same rhythm as the real clock.
-    $g.FillPath($goldBrush, (New-RoundedPath ($bx + ($blockW / 2) - 34) ($stripY + 158) 68 4 2))
-    $path.Dispose()
-}
-
-# ------------------------------------------------------------- the gold pill
-
-# Sized to sit inside the central square as well, so a square crop keeps the
-# whole launch date rather than shearing the first and last words off it.
-$pillFont = New-Object System.Drawing.Font('Segoe UI', 21, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-# The middle dot is written by code point so the file stays plain ASCII and
-# PowerShell cannot mis-read it.
-$pillText = 'LAUNCHING 17 SEPTEMBER 2026 ' + [char]0x00B7 + ' 6.00 P.M.'
-$pillTextW = Measure-Tracked $g $pillText $pillFont 3
-$pillW = $pillTextW + 64
-$pillH = 58
-$pillX = $cx - ($pillW / 2)
+$pillW = $pillTextW + 76
+$pillH = 66
+$pillX = ($W - $pillW) / 2
 $pillY = 452
 $pill = New-RoundedPath $pillX $pillY $pillW $pillH ($pillH / 2)
-$pillFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(28, 224, 168, 60))
-$g.FillPath($pillFill, $pill)
-$goldPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(165, $gold), 2)
+$goldPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(150, $gold), 2)
 $g.DrawPath($goldPen, $pill)
-Draw-Tracked $g $pillText $pillFont $goldBrush $cx ($pillY + 17) 3
+[void](Draw-Tracked $g $pillText $pillFont $goldBrush ($W / 2) ($pillY + 18) 3)
 
 # ---------------------------------------------------- gold rule at the foot
 
@@ -252,8 +173,7 @@ if (-not (Test-Path $dir)) { [void](New-Item -ItemType Directory -Path $dir -For
 $bmp.Save($out, [System.Drawing.Imaging.ImageFormat]::Png)
 
 foreach ($d in @($g, $bmp, $bg, $glow, $glowPath, $navyBrush, $markGrad, $markFont, $whiteBrush, $goldBrush,
-        $nameFont, $eyebrowFont, $lineFont, $mistBrush, $pillFont, $goldPen, $pillFill, $footPen,
-        $outer, $inner, $pill, $blockFill, $blockPen, $unitFont)) {
+        $nameFont, $lineFont, $mistBrush, $pillFont, $goldPen, $footPen, $outer, $inner, $pill)) {
     if ($d -and $d.Dispose) { $d.Dispose() }
 }
 
