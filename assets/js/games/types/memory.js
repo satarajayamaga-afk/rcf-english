@@ -21,6 +21,10 @@ export default {
 
     const el = document.createElement("div");
     el.className = "gz-memory";
+    // The card count drives the shape of the board. Three columns suit a
+    // phone; a laptop lays the same twelve cards out six by two, which reads
+    // as a board rather than a column you have to scroll.
+    el.dataset.cards = String(cards.length);
     el.style.setProperty("--gz-cols", cards.length > 12 ? 4 : 3);
     el.innerHTML = cards.map((card, index) => `
       <button type="button" class="gz-card" data-key="${card.key}" data-index="${index}" aria-label="Card ${index + 1}, face down">

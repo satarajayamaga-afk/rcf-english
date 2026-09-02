@@ -44,6 +44,34 @@ async function loadGrade(n) {
   return data || null;
 }
 
+/**
+ * Bring the game itself to the top of the screen when it opens.
+ *
+ * The page heading and breadcrumbs are useful when choosing a game and only
+ * in the way once one is being played: on a 768px laptop they take a fifth of
+ * the screen. Scrolling the board up means the whole of it is visible without
+ * the child scrolling during play.
+ */
+/**
+ * While a game is being played the page heading and the breadcrumbs are just
+ * height: on a 768px laptop they take a fifth of the screen and push the
+ * board below the fold. Marking the body puts them away for the duration, so
+ * the board is on screen without anyone having to scroll. They come back the
+ * moment the child leaves the game.
+ *
+ * This is done by hiding rather than by scrolling on purpose. Scrolling can
+ * be undone by the reader or by the browser restoring a position; hiding
+ * cannot.
+ */
+function showBoard(mount) {
+  document.body.classList.add("gz-playing");
+  try { mount.scrollIntoView({ block: "start", behavior: "smooth" }); } catch { /* nothing to do */ }
+}
+
+function hideBoard() {
+  document.body.classList.remove("gz-playing");
+}
+
 /** The theme colours live on the .gz-page wrapper, which paints the whole
     background, so set it there rather than on the mount inside it. */
 function setTheme(mount, theme) {
@@ -129,10 +157,10 @@ async function renderGrade(mount, gradeNumber) {
     play(activity, mount, {
       types,
       nextTitle: next ? next.title : "",
-      onExit: () => { history.replaceState(null, "", location.pathname); list(); window.scrollTo({ top: 0 }); },
+      onExit: () => { hideBoard(); history.replaceState(null, "", location.pathname); list(); window.scrollTo({ top: 0 }); },
       onNext: () => open(next.id)
     });
-    window.scrollTo({ top: 0 });
+    showBoard(mount);
   }
 
   mount.addEventListener("click", (event) => {
