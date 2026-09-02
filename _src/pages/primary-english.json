@@ -33,12 +33,29 @@
       "hero": {
         "text": "English for children who are still building it: the letters, the sounds, the first words, the first sentences, and the first whole page read without help.",
         "buttons": [
-          { "label": "Start with the alphabet", "url": "primary-english/alphabet/", "style": "btn--accent" },
-          { "label": "Play a game", "url": "primary-english/games/", "style": "btn--ghost-light" },
+          { "label": "Open the Primary Game Zone", "url": "primary-english/game-zone/", "style": "btn--accent" },
+          { "label": "Start with the alphabet", "url": "primary-english/alphabet/", "style": "btn--ghost-light" },
+          { "label": "More activities and games", "url": "primary-english/games/", "style": "btn--ghost-light" },
           { "label": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "style": "btn--ghost-light" }
         ]
       },
       "blocks": [
+        {
+          "type": "cards",
+          "heading": "Play the games",
+          "eyebrow": "New",
+          "columns": "1",
+          "intro": ["Six kinds of English game for Grades 1 to 5. Each one takes three to five minutes, works on a phone, and keeps your stars when you come back."],
+          "items": [
+            {
+              "title": "Primary Game Zone",
+              "icon": "GZ",
+              "text": "Picture matching, memory pairs, quizzes, sorting, sentence building and missing words - one colourful set for each grade.",
+              "url": "primary-english/game-zone/",
+              "more": "Open the Game Zone"
+            }
+          ]
+        },
         {
           "type": "prose",
           "heading": "Who this section is for",

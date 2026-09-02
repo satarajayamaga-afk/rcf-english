@@ -22,7 +22,27 @@
   --gz-edge: rgba(35, 35, 63, 0.14);
   background: linear-gradient(180deg, #fff6dd 0%, #eef3ff 100%);
   padding: var(--sp-5) 0 var(--sp-7);
+
+  /* Android Chrome enlarges text in blocks it decides are wide ("font
+     boosting"), which bursts fixed-size boxes such as the memory cards on a
+     real phone even though a desktop emulator shows nothing wrong. Turning
+     it off keeps the sizes we actually chose. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  /* A last guard. Nothing here should reach past the screen, but if one word
+     ever does, it is clipped rather than dragging the whole page sideways.
+     `clip` does not create a scroll container, so it cannot trap the page. */
+  overflow-x: clip;
 }
+
+/* The classic cause of sideways scroll: a grid or flex child refuses to
+   shrink below its content. Every child in here may shrink. */
+.gz-page *,
+.gz-page *::before,
+.gz-page *::after { min-width: 0; }
+
+.gz-page img, .gz-page svg { max-width: 100%; }
 @supports (background: color-mix(in srgb, red 50%, blue)) {
   .gz-page {
     background:
@@ -197,12 +217,17 @@
 
 /* Game: matching ---------------------------------------------------------- */
 
-.gz-match { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
-.gz-match__col { display: grid; gap: var(--sp-3); align-content: start; }
+.gz-match { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--sp-2); }
+@media (min-width: 420px) { .gz-match { gap: var(--sp-3); } }
+.gz-match__col { display: grid; gap: var(--sp-2); align-content: start; min-width: 0; }
 .gz-tile {
   border: 3px solid #e6eaf2; border-radius: 18px; background: #fff; cursor: pointer;
-  padding: var(--sp-3); min-height: 72px; display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-body); font-size: 1.1rem; font-weight: 700; color: var(--gz-ink);
+  padding: var(--sp-2); min-height: 68px; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-body); font-weight: 700; color: var(--gz-ink);
+  /* Words such as "elephant" must shrink and wrap inside the tile rather than
+     widening the column. */
+  font-size: clamp(0.85rem, 3.6vw, 1.1rem);
+  overflow-wrap: anywhere; hyphens: auto; text-align: center;
   transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
 }
 .gz-tile .gz-pic { max-width: 64px; }
@@ -212,7 +237,10 @@
 
 /* Game: memory ------------------------------------------------------------ */
 
-.gz-memory { display: grid; grid-template-columns: repeat(var(--gz-cols, 3), 1fr); gap: var(--sp-2); }
+/* The board fits the screen it is given: narrow phones get fewer, larger
+   cards instead of a fixed three or four that spill over the edge. */
+.gz-memory { display: grid; grid-template-columns: repeat(auto-fit, minmax(78px, 1fr)); gap: var(--sp-2); }
+@media (min-width: 420px) { .gz-memory { grid-template-columns: repeat(var(--gz-cols, 3), minmax(0, 1fr)); } }
 .gz-card { position: relative; aspect-ratio: 4 / 5; border: 0; border-radius: 16px; cursor: pointer; background: transparent; padding: 0; }
 .gz-card__back, .gz-card__front {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
@@ -243,8 +271,9 @@
 .gz-quiz__pic .gz-pic, .gz-missing__pic .gz-pic { max-width: 130px; }
 .gz-quiz__passage { max-width: 46ch; margin: 0 auto var(--sp-3); color: var(--ink-700); }
 .gz-quiz__ask { font-family: var(--font-head); font-size: 1.4rem; margin: var(--sp-3) 0; color: var(--gz-ink); }
-.gz-quiz__options, .gz-missing__options { display: grid; gap: var(--sp-3); grid-template-columns: 1fr; max-width: 30rem; margin: 0 auto; }
-@media (min-width: 520px) { .gz-quiz__options, .gz-missing__options { grid-template-columns: repeat(2, 1fr); } }
+.gz-quiz__options, .gz-missing__options { display: grid; gap: var(--sp-3); grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin: 0 auto; }
+@media (min-width: 520px) { .gz-quiz__options, .gz-missing__options { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.gz-opt { overflow-wrap: anywhere; }
 .gz-opt {
   border: 3px solid #e6eaf2; border-radius: 16px; background: #fff; cursor: pointer;
   min-height: 60px; padding: 0.8rem 1rem;
@@ -255,7 +284,10 @@
 .gz-opt.is-wrong { border-color: #e5383b; background: #fdeaea; color: #9d2226; animation: gz-shake 0.35s ease; }
 .gz-opt:disabled { cursor: default; }
 
-.gz-missing__sentence { font-size: 1.35rem; font-weight: 600; color: var(--gz-ink); margin: var(--sp-4) 0; line-height: 1.9; }
+.gz-missing__sentence {
+  font-size: clamp(1.05rem, 4.4vw, 1.35rem); font-weight: 600; color: var(--gz-ink);
+  margin: var(--sp-4) 0; line-height: 1.9; overflow-wrap: anywhere;
+}
 .gz-gap {
   display: inline-block; min-width: 5.5rem; padding: 0.1rem 0.7rem; margin: 0 0.2rem;
   border-bottom: 4px solid var(--gz-1); border-radius: 6px; font-weight: 800; color: var(--gz-2);
@@ -269,8 +301,9 @@
 .gz-chip {
   display: inline-flex; align-items: center; gap: 0.4rem; touch-action: none;
   border: 3px solid #e6eaf2; border-radius: 999px; background: #fff; cursor: grab;
-  padding: 0.5rem 0.9rem; min-height: 52px;
+  padding: 0.5rem 0.8rem; min-height: 52px; max-width: 100%;
   font-family: var(--font-body); font-weight: 700; color: var(--gz-ink);
+  font-size: clamp(0.85rem, 3.6vw, 1rem); overflow-wrap: anywhere;
 }
 .gz-chip .gz-pic { max-width: 34px; margin: 0; }
 .gz-chip.is-held { border-color: var(--gz-1); background: #fff8e2; transform: scale(1.06); }
@@ -278,8 +311,9 @@
 .gz-chip.is-placed { border-color: #2d9d5c; background: #e8f8ee; cursor: default; }
 .gz-chip.is-wrong { animation: gz-shake 0.35s ease; border-color: #e5383b; }
 
-.gz-sort__buckets { display: grid; gap: var(--sp-3); grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 700px) { .gz-sort__buckets { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); } }
+.gz-sort__buckets { display: grid; gap: var(--sp-2); grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); }
+@media (min-width: 700px) { .gz-sort__buckets { gap: var(--sp-3); grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); } }
+.gz-bucket__title { overflow-wrap: anywhere; }
 .gz-bucket { border: 3px dashed #d6dced; border-radius: 20px; padding: var(--sp-3); background: #fbfcff; min-height: 150px; }
 .gz-bucket.is-target { border-color: var(--gz-1); }
 .gz-bucket.is-over { border-color: var(--gz-2); background: #fff8e2; border-style: solid; }
@@ -302,8 +336,9 @@
 .gz-order__pool { display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; }
 .gz-word {
   border: 3px solid #e6eaf2; border-radius: 14px; background: #fff; cursor: pointer;
-  padding: 0.6rem 0.9rem; min-height: 52px;
-  font-family: var(--font-body); font-size: 1.05rem; font-weight: 700; color: var(--gz-ink);
+  padding: 0.6rem 0.8rem; min-height: 52px; max-width: 100%;
+  font-family: var(--font-body); font-weight: 700; color: var(--gz-ink);
+  font-size: clamp(0.9rem, 3.8vw, 1.05rem); overflow-wrap: anywhere;
 }
 .gz-word:hover, .gz-word:focus-visible { border-color: var(--gz-1); background: #fff8e2; }
 .gz-order__tools { margin-top: var(--sp-4); }
