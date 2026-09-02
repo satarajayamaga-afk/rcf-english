@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="banknote">
+  <rect x="6" y="30" width="108" height="60" rx="8" fill="#38b000"/>
+  <rect x="14" y="38" width="92" height="44" rx="5" fill="none" stroke="#a7c957" stroke-width="3"/>
+  <circle cx="60" cy="60" r="17" fill="#a7c957"/>
+  <text x="60" y="68" font-family="Verdana,DejaVu Sans,sans-serif" font-size="20" font-weight="bold" fill="#2d6a4f" text-anchor="middle">50</text>
+  <circle cx="26" cy="60" r="6" fill="#a7c957"/><circle cx="94" cy="60" r="6" fill="#a7c957"/>
+</svg>

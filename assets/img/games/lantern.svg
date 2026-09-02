@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="lantern">
+  <path d="M60 6 v14" stroke="#8b5e34" stroke-width="4"/>
+  <path d="M60 20 L98 52 60 84 22 52z" fill="#e63946"/>
+  <path d="M60 20 L98 52 60 84z" fill="#f4796b"/>
+  <path d="M22 52 h76 M60 20 v64" stroke="#ffd60a" stroke-width="3"/>
+  <path d="M36 74 v18 M60 84 v22 M84 74 v18" stroke="#ffc300" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="36" cy="94" r="5" fill="#ffd60a"/><circle cx="60" cy="108" r="5" fill="#ffd60a"/><circle cx="84" cy="94" r="5" fill="#ffd60a"/>
+</svg>
