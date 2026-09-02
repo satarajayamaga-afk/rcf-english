@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "grade": 1,
+  "title": "Grade 1",
+  "theme": "sunshine",
+  "blurb": "Pictures, first words and sounds. Tap and play.",
+  "icon": "sun.svg",
+  "topics": [
+    {
+      "id": "animals",
+      "title": "Animals",
+      "icon": "icon-paw.svg",
+      "activities": [
+        {
+          "id": "g1-animals-match",
+          "type": "match",
+          "title": "Match the Animal",
+          "instructions": "Tap a picture. Then tap its word.",
+          "minutes": 3,
+          "pairs": [
+            { "picture": "cat.svg", "word": "cat" },
+            { "picture": "dog.svg", "word": "dog" },
+            { "picture": "bird.svg", "word": "bird" },
+            { "picture": "fish.svg", "word": "fish" },
+            { "picture": "cow.svg", "word": "cow" },
+            { "picture": "elephant.svg", "word": "elephant" }
+          ]
+        },
+        {
+          "id": "g1-animals-memory",
+          "type": "memory",
+          "title": "Animal Pairs",
+          "instructions": "Turn over two cards. Find the picture and its word.",
+          "minutes": 4,
+          "pairs": [
+            { "a": "rabbit.svg", "b": "rabbit" },
+            { "a": "frog.svg", "b": "frog" },
+            { "a": "bee.svg", "b": "bee" },
+            { "a": "duck.svg", "b": "duck" },
+            { "a": "hen.svg", "b": "hen" },
+            { "a": "goat.svg", "b": "goat" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colours",
+      "title": "Colours and Shapes",
+      "icon": "icon-palette.svg",
+      "activities": [
+        {
+          "id": "g1-colours-match",
+          "type": "match",
+          "title": "Match the Colour",
+          "instructions": "Tap a colour. Then tap its word.",
+          "minutes": 3,
+          "pairs": [
+            { "picture": "colour-red.svg", "word": "red" },
+            { "picture": "colour-blue.svg", "word": "blue" },
+            { "picture": "colour-green.svg", "word": "green" },
+            { "picture": "colour-yellow.svg", "word": "yellow" },
+            { "picture": "colour-orange.svg", "word": "orange" },
+            { "picture": "colour-purple.svg", "word": "purple" }
+          ]
+        },
+        {
+          "id": "g1-shapes-quiz",
+          "type": "quiz",
+          "title": "What Shape Is It?",
+          "instructions": "Look at the picture. Tap the right word.",
+          "minutes": 3,
+          "questions": [
+            { "picture": "shape-circle.svg", "ask": "What shape is this?", "options": ["circle", "square", "star"], "answer": 0 },
+            { "picture": "shape-square.svg", "ask": "What shape is this?", "options": ["triangle", "square", "circle"], "answer": 1 },
+            { "picture": "shape-star.svg", "ask": "What shape is this?", "options": ["star", "heart", "square"], "answer": 0 },
+            { "picture": "shape-heart.svg", "ask": "What shape is this?", "options": ["circle", "star", "heart"], "answer": 2 },
+            { "picture": "shape-triangle.svg", "ask": "What shape is this?", "options": ["triangle", "square", "circle"], "answer": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-sounds",
+      "title": "First Sounds",
+      "icon": "icon-abc.svg",
+      "activities": [
+        {
+          "id": "g1-first-sounds-quiz",
+          "type": "quiz",
+          "title": "Which Letter Does It Start With?",
+          "instructions": "Look at the picture. Tap the first letter.",
+          "minutes": 3,
+          "questions": [
+            { "picture": "apple.svg", "ask": "apple starts with...", "options": ["a", "b", "c"], "answer": 0 },
+            { "picture": "balloon.svg", "ask": "balloon starts with...", "options": ["d", "b", "p"], "answer": 1 },
+            { "picture": "cat.svg", "ask": "cat starts with...", "options": ["s", "k", "c"], "answer": 2 },
+            { "picture": "drum.svg", "ask": "drum starts with...", "options": ["d", "t", "b"], "answer": 0 },
+            { "picture": "egg.svg", "ask": "egg starts with...", "options": ["a", "e", "i"], "answer": 1 },
+            { "picture": "fish.svg", "ask": "fish starts with...", "options": ["v", "f", "s"], "answer": 1 }
+          ]
+        }
+      ]
+    }
+  ]
+}

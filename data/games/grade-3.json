@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "grade": 3,
+  "title": "Grade 3",
+  "theme": "meadow",
+  "blurb": "More words, plurals and sentences that grow.",
+  "icon": "icon-sprout.svg",
+  "topics": [
+    {
+      "id": "one-and-many",
+      "title": "One and Many",
+      "icon": "icon-numbers.svg",
+      "activities": [
+        {
+          "id": "g3-plurals-quiz",
+          "type": "quiz",
+          "title": "One or Many?",
+          "instructions": "Choose the right word for more than one.",
+          "minutes": 4,
+          "questions": [
+            { "picture": "cat.svg", "ask": "More than one cat is...", "options": ["cats", "cates", "cat's"], "answer": 0 },
+            { "picture": "bus.svg", "ask": "More than one bus is...", "options": ["buss", "buses", "busies"], "answer": 1 },
+            { "picture": "book.svg", "ask": "More than one book is...", "options": ["bookes", "book", "books"], "answer": 2 },
+            { "picture": "flower.svg", "ask": "More than one flower is...", "options": ["flowers", "flowes", "flower"], "answer": 0 },
+            { "picture": "fish.svg", "ask": "More than one fish is...", "options": ["fishs", "fish", "fishies"], "answer": 1 },
+            { "picture": "house.svg", "ask": "More than one house is...", "options": ["housen", "house", "houses"], "answer": 2 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sorting-words",
+      "title": "Sorting Words",
+      "icon": "icon-basket.svg",
+      "activities": [
+        {
+          "id": "g3-animals-sort",
+          "type": "sort",
+          "title": "Farm or Wild?",
+          "instructions": "Tap an animal, then tap the right basket. You can drag them too.",
+          "minutes": 4,
+          "buckets": [
+            { "id": "farm", "title": "On the farm", "icon": "cow.svg" },
+            { "id": "wild", "title": "In the wild", "icon": "elephant.svg" }
+          ],
+          "items": [
+            { "text": "cow", "picture": "cow.svg", "bucket": "farm" },
+            { "text": "hen", "picture": "hen.svg", "bucket": "farm" },
+            { "text": "goat", "picture": "goat.svg", "bucket": "farm" },
+            { "text": "duck", "picture": "duck.svg", "bucket": "farm" },
+            { "text": "elephant", "picture": "elephant.svg", "bucket": "wild" },
+            { "text": "frog", "picture": "frog.svg", "bucket": "wild" },
+            { "text": "bee", "picture": "bee.svg", "bucket": "wild" },
+            { "text": "fish", "picture": "fish.svg", "bucket": "wild" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "making-sentences",
+      "title": "Making Sentences",
+      "icon": "icon-notebook.svg",
+      "activities": [
+        {
+          "id": "g3-sentence-order",
+          "type": "order",
+          "title": "Put the Sentence in Order",
+          "instructions": "Tap the words in order. Tap a word again to take it back.",
+          "minutes": 4,
+          "sentences": [
+            { "words": ["My", "sister", "reads", "a", "book"], "hint": "Who does it? Start there." },
+            { "words": ["The", "children", "play", "in", "the", "garden"] },
+            { "words": ["We", "walk", "to", "school", "every", "day"] },
+            { "words": ["The", "bird", "builds", "a", "nest"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

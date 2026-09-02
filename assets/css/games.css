@@ -1,0 +1,347 @@
+/* ==========================================================================
+   RCF English - Primary Game Zone
+
+   Loaded only on Game Zone pages, so the rest of the site carries none of
+   its weight.
+
+   Full colour, phone first. Every grade has its own bright theme set by two
+   custom properties on a [data-theme] wrapper, so the whole section
+   recolours from one place and still reads as one RCF English product.
+
+   Cards use a solid colour edge and a chunky offset shadow rather than a
+   soft blur: it looks like a sticker or a board-game piece, it survives a
+   cheap screen, and it costs nothing to paint. There are no photographs and
+   no extra web fonts here, and the whole illustration set is under 20 KB.
+   ========================================================================== */
+
+.gz-page {
+  --gz-1: #ffb703;
+  --gz-2: #fb8500;
+  --gz-ink: #23233f;
+  --gz-card: #ffffff;
+  --gz-edge: rgba(35, 35, 63, 0.14);
+  background: linear-gradient(180deg, #fff6dd 0%, #eef3ff 100%);
+  padding: var(--sp-5) 0 var(--sp-7);
+}
+@supports (background: color-mix(in srgb, red 50%, blue)) {
+  .gz-page {
+    background:
+      radial-gradient(70% 55% at 12% 0%, color-mix(in srgb, var(--gz-1) 45%, transparent) 0%, transparent 60%),
+      radial-gradient(60% 50% at 96% 8%, color-mix(in srgb, var(--gz-2) 40%, transparent) 0%, transparent 55%),
+      linear-gradient(180deg, #fffdf6 0%, #f4f7ff 100%);
+  }
+}
+
+[data-theme="sunshine"] { --gz-1: #ffc300; --gz-2: #ff8500; }
+[data-theme="sky"]      { --gz-1: #4cc9f0; --gz-2: #4361ee; }
+[data-theme="meadow"]   { --gz-1: #70e000; --gz-2: #2d9d5c; }
+[data-theme="berry"]    { --gz-1: #f72585; --gz-2: #7209b7; }
+[data-theme="sunset"]   { --gz-1: #ff8c42; --gz-2: #e5383b; }
+
+/* Pictures ---------------------------------------------------------------- */
+
+.gz-pic { width: 100%; height: auto; max-width: 96px; display: block; margin: 0 auto; }
+.gz-pic--char { font-size: 2.6rem; line-height: 1; width: auto; }
+/* Words where a picture might have been: a card face that reads "gives
+   freely" is text, not an illustration, and must be sized as text. */
+.gz-words { display: block; font-weight: 800; line-height: 1.2; overflow-wrap: anywhere; }
+
+/* The five doors ---------------------------------------------------------- */
+
+.gz-doors { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+@media (min-width: 560px) { .gz-doors { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .gz-doors { grid-template-columns: repeat(5, 1fr); } }
+
+.gz-door {
+  display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+  padding: var(--sp-5) var(--sp-4);
+  border-radius: 22px;
+  background: linear-gradient(165deg, var(--gz-1), var(--gz-2));
+  color: #fff; text-decoration: none; text-align: center;
+  box-shadow: 0 8px 0 rgba(35, 35, 63, 0.22);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.gz-door:hover, .gz-door:focus-visible { transform: translateY(-4px); box-shadow: 0 12px 0 rgba(35, 35, 63, 0.22); }
+.gz-door:active { transform: translateY(2px); box-shadow: 0 4px 0 rgba(35, 35, 63, 0.22); }
+.gz-door__badge { font-size: 2.6rem; line-height: 1; }
+.gz-door__badge .gz-pic {
+  max-width: 62px; background: rgba(255, 255, 255, 0.9); border-radius: 50%; padding: 6px;
+  box-shadow: 0 3px 0 rgba(35, 35, 63, 0.16);
+}
+.gz-door__grade { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; }
+.gz-door__blurb { font-size: 0.9rem; opacity: 0.95; }
+.gz-door__meta { display: flex; gap: 0.6rem; margin-top: 0.4rem; font-size: 0.8rem; font-weight: 700; }
+.gz-door__count, .gz-door__stars { background: rgba(255, 255, 255, 0.25); border-radius: 999px; padding: 0.15rem 0.6rem; }
+
+/* Grade page -------------------------------------------------------------- */
+
+.gz-gradehead__stars {
+  display: inline-block; margin: 0; padding: 0.3rem 0.9rem; border-radius: 999px;
+  background: linear-gradient(165deg, var(--gz-1), var(--gz-2)); color: #fff;
+  font-weight: 800; box-shadow: 0 4px 0 rgba(35, 35, 63, 0.2);
+}
+.gz-topic { margin-top: var(--sp-6); }
+.gz-topic__title {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-family: var(--font-head); font-size: 1.35rem; color: var(--gz-ink); margin-bottom: var(--sp-3);
+}
+.gz-topic__icon { font-size: 1.8rem; flex: none; }
+.gz-topic__icon .gz-pic { max-width: 40px; }
+
+.gz-cards { display: grid; gap: var(--sp-3); grid-template-columns: 1fr; }
+@media (min-width: 520px) { .gz-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 860px) { .gz-cards { grid-template-columns: repeat(3, 1fr); } }
+
+.gz-gamecard {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem;
+  min-height: 112px; padding: var(--sp-4);
+  border: 0; border-radius: 18px; cursor: pointer; text-align: left;
+  background: var(--gz-card); color: var(--gz-ink);
+  box-shadow: 0 6px 0 var(--gz-2), 0 6px 0 1px var(--gz-edge);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.gz-gamecard:hover, .gz-gamecard:focus-visible { transform: translateY(-3px); box-shadow: 0 9px 0 var(--gz-2), 0 9px 0 1px var(--gz-edge); }
+.gz-gamecard:active { transform: translateY(3px); box-shadow: 0 3px 0 var(--gz-2), 0 3px 0 1px var(--gz-edge); }
+.gz-gamecard__type {
+  font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #fff; background: linear-gradient(165deg, var(--gz-1), var(--gz-2));
+  border-radius: 999px; padding: 0.2rem 0.65rem;
+}
+.gz-gamecard__title { font-family: var(--font-head); font-size: 1.15rem; font-weight: 700; }
+.gz-gamecard__foot { display: flex; justify-content: space-between; width: 100%; margin-top: auto; align-items: center; }
+.gz-gamecard__time { font-size: 0.8rem; color: var(--ink-500); font-weight: 600; }
+.gz-gamecard__stars span { color: #d9dde5; font-size: 1rem; }
+.gz-gamecard__stars .is-on { color: var(--gz-1); }
+.gz-gamecard--big { min-height: 140px; }
+.gz-gamecard--big .gz-gamecard__title { font-size: 1.4rem; }
+
+/* The game shell ---------------------------------------------------------- */
+
+.gz-game {
+  background: var(--gz-card); border-radius: 22px; padding: var(--sp-5) var(--sp-4) var(--sp-4);
+  box-shadow: 0 8px 0 var(--gz-2), 0 8px 0 1px var(--gz-edge);
+  position: relative; overflow: hidden;
+}
+/* A band of the grade colour across the top, so the play area belongs to the
+   grade rather than being a white sheet. */
+.gz-game::before {
+  content: ""; position: absolute; inset: 0 0 auto; height: 10px;
+  background: linear-gradient(90deg, var(--gz-1), var(--gz-2));
+}
+.gz-game__bar {
+  display: flex; align-items: flex-start; gap: var(--sp-3);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  border-radius: 16px;
+}
+.gz-game__titles { flex: 1; min-width: 0; }
+.gz-game__title { font-family: var(--font-head); font-size: 1.3rem; margin: 0; color: var(--gz-ink); }
+.gz-game__how { margin: 0.2rem 0 0; font-size: 0.92rem; color: var(--ink-700); }
+.gz-icon-btn {
+  flex: none; width: 48px; height: 48px; border-radius: 14px; border: 0; cursor: pointer;
+  font-size: 1.3rem; line-height: 1; background: #eef1f7; color: var(--gz-ink);
+}
+.gz-icon-btn:hover, .gz-icon-btn:focus-visible { background: var(--gz-1); color: #fff; }
+
+.gz-meter { display: flex; align-items: center; gap: var(--sp-3); margin: var(--sp-4) 0; }
+.gz-meter__track { flex: 1; height: 14px; border-radius: 999px; background: #e9edf5; overflow: hidden; }
+.gz-meter__fill { height: 100%; width: 0; border-radius: 999px; background: linear-gradient(90deg, var(--gz-1), var(--gz-2)); transition: width 0.35s ease; }
+.gz-meter__score { margin: 0; font-weight: 800; color: var(--gz-ink); white-space: nowrap; }
+.gz-meter__word { font-size: 0.78rem; font-weight: 600; color: var(--ink-500); }
+
+/* The stage carries a soft wash of the grade colour, so no screen is ever a
+   plain white worksheet. */
+.gz-stage {
+  min-height: 42vh; border-radius: 18px; padding: var(--sp-4) var(--sp-3);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.35));
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+.gz-page { position: relative; }
+.gz-game { background: linear-gradient(180deg, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.82) 100%); }
+@supports (background: color-mix(in srgb, red 50%, blue)) {
+  .gz-game { background: linear-gradient(180deg, #fff 0%, color-mix(in srgb, var(--gz-1) 12%, #fff) 100%); }
+  .gz-stage { background: linear-gradient(180deg, #fff, color-mix(in srgb, var(--gz-1) 9%, #fff)); }
+}
+
+/* The burst of feedback --------------------------------------------------- */
+
+.gz-flash {
+  position: absolute; inset-inline: 0; top: 40%; text-align: center;
+  font-family: var(--font-head); font-size: 2rem; font-weight: 700;
+  opacity: 0; pointer-events: none; transform: scale(0.7);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.gz-flash.is-on { opacity: 1; transform: scale(1); }
+.gz-flash--good { color: #2d9d5c; text-shadow: 0 2px 0 #fff, 0 0 22px rgba(45, 157, 92, 0.35); }
+.gz-flash--bad { color: #e5383b; text-shadow: 0 2px 0 #fff; }
+
+/* Results ----------------------------------------------------------------- */
+
+.gz-done { text-align: center; padding: var(--sp-5) 0; }
+.gz-done__stars { margin: 0; font-size: 3rem; line-height: 1; }
+.gz-star { color: #dfe4ec; }
+.gz-star.is-on { color: var(--gz-1); animation: gz-pop 0.4s ease both; }
+.gz-star.is-on:nth-child(2) { animation-delay: 0.12s; }
+.gz-star.is-on:nth-child(3) { animation-delay: 0.24s; }
+.gz-done__praise { font-family: var(--font-head); font-size: 1.8rem; margin: var(--sp-3) 0 0; color: var(--gz-ink); }
+.gz-done__count { margin: 0.3rem 0 var(--sp-5); color: var(--ink-700); font-weight: 600; }
+.gz-done__buttons { display: flex; flex-wrap: wrap; gap: var(--sp-3); justify-content: center; }
+
+.gz-btn {
+  border: 0; border-radius: 14px; cursor: pointer; padding: 0.8rem 1.3rem;
+  font-family: var(--font-body); font-size: 1rem; font-weight: 800; min-height: 52px;
+  background: linear-gradient(165deg, var(--gz-1), var(--gz-2)); color: #fff;
+  box-shadow: 0 5px 0 rgba(35, 35, 63, 0.22);
+}
+.gz-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgba(35, 35, 63, 0.22); }
+.gz-btn--ghost { background: #eef1f7; color: var(--gz-ink); box-shadow: 0 5px 0 #d7dde8; }
+
+/* Game: matching ---------------------------------------------------------- */
+
+.gz-match { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+.gz-match__col { display: grid; gap: var(--sp-3); align-content: start; }
+.gz-tile {
+  border: 3px solid #e6eaf2; border-radius: 18px; background: #fff; cursor: pointer;
+  padding: var(--sp-3); min-height: 72px; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-body); font-size: 1.1rem; font-weight: 700; color: var(--gz-ink);
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+.gz-tile .gz-pic { max-width: 64px; }
+.gz-tile.is-picked { border-color: var(--gz-1); background: #fff8e2; transform: scale(1.04); }
+.gz-tile.is-done { border-color: #2d9d5c; background: #e8f8ee; opacity: 0.75; cursor: default; }
+.gz-tile.is-wrong { animation: gz-shake 0.35s ease; border-color: #e5383b; }
+
+/* Game: memory ------------------------------------------------------------ */
+
+.gz-memory { display: grid; grid-template-columns: repeat(var(--gz-cols, 3), 1fr); gap: var(--sp-2); }
+.gz-card { position: relative; aspect-ratio: 4 / 5; border: 0; border-radius: 16px; cursor: pointer; background: transparent; padding: 0; }
+.gz-card__back, .gz-card__front {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  border-radius: 16px; backface-visibility: hidden; transition: transform 0.32s ease;
+  font-weight: 800; padding: 0.35rem; text-align: center;
+  /* Card faces hold anything from "bee" to "gives freely", so the text has to
+     shrink and wrap rather than run over the edge. */
+  font-size: clamp(0.68rem, 3.1vw, 1rem);
+  line-height: 1.15; overflow-wrap: anywhere; hyphens: auto;
+}
+.gz-card__back {
+  background: linear-gradient(165deg, var(--gz-1), var(--gz-2)); color: #fff; font-size: 1.8rem;
+  box-shadow: 0 5px 0 rgba(35, 35, 63, 0.2);
+}
+.gz-card__front { background: #fff; color: var(--gz-ink); transform: rotateY(180deg); border: 3px solid #e6eaf2; }
+.gz-card__front .gz-pic { max-width: 76%; }
+.gz-card.is-open .gz-card__back, .gz-card.is-found .gz-card__back { transform: rotateY(180deg); }
+.gz-card.is-open .gz-card__front, .gz-card.is-found .gz-card__front { transform: rotateY(360deg); }
+.gz-card.is-found .gz-card__front { border-color: #2d9d5c; background: #e8f8ee; }
+
+/* Game: quiz and missing word --------------------------------------------- */
+
+.gz-quiz, .gz-missing { text-align: center; }
+.gz-quiz__count, .gz-missing__count, .gz-order__count {
+  font-size: 0.8rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ink-500); margin: 0 0 var(--sp-3);
+}
+.gz-quiz__pic .gz-pic, .gz-missing__pic .gz-pic { max-width: 130px; }
+.gz-quiz__passage { max-width: 46ch; margin: 0 auto var(--sp-3); color: var(--ink-700); }
+.gz-quiz__ask { font-family: var(--font-head); font-size: 1.4rem; margin: var(--sp-3) 0; color: var(--gz-ink); }
+.gz-quiz__options, .gz-missing__options { display: grid; gap: var(--sp-3); grid-template-columns: 1fr; max-width: 30rem; margin: 0 auto; }
+@media (min-width: 520px) { .gz-quiz__options, .gz-missing__options { grid-template-columns: repeat(2, 1fr); } }
+.gz-opt {
+  border: 3px solid #e6eaf2; border-radius: 16px; background: #fff; cursor: pointer;
+  min-height: 60px; padding: 0.8rem 1rem;
+  font-family: var(--font-body); font-size: 1.1rem; font-weight: 700; color: var(--gz-ink);
+}
+.gz-opt:hover:enabled, .gz-opt:focus-visible { border-color: var(--gz-1); background: #fff8e2; }
+.gz-opt.is-right { border-color: #2d9d5c; background: #e8f8ee; color: #1b6b43; }
+.gz-opt.is-wrong { border-color: #e5383b; background: #fdeaea; color: #9d2226; animation: gz-shake 0.35s ease; }
+.gz-opt:disabled { cursor: default; }
+
+.gz-missing__sentence { font-size: 1.35rem; font-weight: 600; color: var(--gz-ink); margin: var(--sp-4) 0; line-height: 1.9; }
+.gz-gap {
+  display: inline-block; min-width: 5.5rem; padding: 0.1rem 0.7rem; margin: 0 0.2rem;
+  border-bottom: 4px solid var(--gz-1); border-radius: 6px; font-weight: 800; color: var(--gz-2);
+  background: #fff8e2;
+}
+.gz-gap.is-filled { background: #e8f8ee; border-color: #2d9d5c; color: #1b6b43; animation: gz-pop 0.35s ease both; }
+
+/* Game: sorting ----------------------------------------------------------- */
+
+.gz-sort__items { display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; min-height: 60px; margin-bottom: var(--sp-4); }
+.gz-chip {
+  display: inline-flex; align-items: center; gap: 0.4rem; touch-action: none;
+  border: 3px solid #e6eaf2; border-radius: 999px; background: #fff; cursor: grab;
+  padding: 0.5rem 0.9rem; min-height: 52px;
+  font-family: var(--font-body); font-weight: 700; color: var(--gz-ink);
+}
+.gz-chip .gz-pic { max-width: 34px; margin: 0; }
+.gz-chip.is-held { border-color: var(--gz-1); background: #fff8e2; transform: scale(1.06); }
+.gz-chip.is-dragging { position: relative; z-index: 5; cursor: grabbing; box-shadow: 0 10px 18px rgba(35, 35, 63, 0.25); }
+.gz-chip.is-placed { border-color: #2d9d5c; background: #e8f8ee; cursor: default; }
+.gz-chip.is-wrong { animation: gz-shake 0.35s ease; border-color: #e5383b; }
+
+.gz-sort__buckets { display: grid; gap: var(--sp-3); grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 700px) { .gz-sort__buckets { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); } }
+.gz-bucket { border: 3px dashed #d6dced; border-radius: 20px; padding: var(--sp-3); background: #fbfcff; min-height: 150px; }
+.gz-bucket.is-target { border-color: var(--gz-1); }
+.gz-bucket.is-over { border-color: var(--gz-2); background: #fff8e2; border-style: solid; }
+.gz-bucket__head { display: flex; align-items: center; gap: 0.5rem; margin-bottom: var(--sp-2); }
+.gz-bucket__head .gz-pic { max-width: 36px; margin: 0; }
+.gz-bucket__title { font-family: var(--font-head); font-weight: 700; color: var(--gz-ink); }
+.gz-bucket__drop { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+
+/* Game: sentence ordering -------------------------------------------------- */
+
+.gz-order { text-align: center; }
+.gz-order__hint { color: var(--ink-700); margin: 0 0 var(--sp-3); }
+.gz-order__line {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; align-items: center;
+  min-height: 72px; padding: var(--sp-3); margin-bottom: var(--sp-4);
+  border: 3px dashed #d6dced; border-radius: 18px; background: #fbfcff;
+}
+.gz-order__line.is-right { border-style: solid; border-color: #2d9d5c; background: #e8f8ee; }
+.gz-order__line.is-wrong { border-color: #e5383b; animation: gz-shake 0.35s ease; }
+.gz-order__pool { display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; }
+.gz-word {
+  border: 3px solid #e6eaf2; border-radius: 14px; background: #fff; cursor: pointer;
+  padding: 0.6rem 0.9rem; min-height: 52px;
+  font-family: var(--font-body); font-size: 1.05rem; font-weight: 700; color: var(--gz-ink);
+}
+.gz-word:hover, .gz-word:focus-visible { border-color: var(--gz-1); background: #fff8e2; }
+.gz-order__tools { margin-top: var(--sp-4); }
+
+/* Teacher Mode ------------------------------------------------------------- */
+
+.gz-teacher__row { display: grid; gap: var(--sp-3); grid-template-columns: 1fr; margin-bottom: var(--sp-4); }
+@media (min-width: 560px) { .gz-teacher__row { grid-template-columns: repeat(2, 1fr); } }
+.gz-field { display: grid; gap: 0.3rem; font-weight: 700; color: var(--gz-ink); }
+.gz-field select {
+  min-height: 56px; border-radius: 14px; border: 3px solid #e6eaf2; padding: 0 0.8rem;
+  font-family: var(--font-body); font-size: 1.05rem; background: #fff; color: var(--gz-ink);
+}
+.gz-teacher__note { margin-top: var(--sp-4); color: var(--ink-500); font-size: 0.9rem; }
+
+/* On a classroom screen the game fills the display and the rest gets out of
+   the way. Escape brings the menu back. */
+body.gz-classroom .site-header,
+body.gz-classroom .site-footer,
+body.gz-classroom .breadcrumbs,
+body.gz-classroom .page-hero,
+body.gz-classroom .adslot { display: none !important; }
+body.gz-classroom .gz-page { padding-top: var(--sp-3); }
+body.gz-classroom .gz-game { box-shadow: none; }
+body.gz-classroom .gz-game__title { font-size: 2rem; }
+body.gz-classroom .gz-opt, body.gz-classroom .gz-word, body.gz-classroom .gz-tile { font-size: 1.5rem; min-height: 84px; }
+body.gz-classroom .gz-quiz__ask { font-size: 2.2rem; }
+body.gz-classroom .gz-pic { max-width: 150px; }
+
+.gz-error { padding: var(--sp-5); background: #fdeaea; border-radius: 16px; color: #9d2226; font-weight: 700; }
+
+/* Motion ------------------------------------------------------------------- */
+
+@keyframes gz-pop { 0% { transform: scale(0.4); opacity: 0; } 70% { transform: scale(1.18); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes gz-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .gz-door, .gz-gamecard, .gz-tile, .gz-card__back, .gz-card__front, .gz-meter__fill, .gz-flash { transition: none; }
+  .gz-star.is-on, .gz-gap.is-filled { animation: none; }
+  .gz-tile.is-wrong, .gz-opt.is-wrong, .gz-chip.is-wrong, .gz-order__line.is-wrong { animation: none; }
+}

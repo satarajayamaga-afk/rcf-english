@@ -929,6 +929,26 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'game-zone' {
+            # Mounts the Primary Game Zone. The build writes an empty, themed
+            # container; assets/js/game-zone.js fills it from data/games/*.json.
+            # Everything a child sees is drawn from those data files, so new
+            # games are added by writing JSON, never by editing a page.
+            $mode = [string](P $block 'mode' 'hub')
+            $grade = [string](P $block 'grade' '')
+            $theme = [string](P $block 'theme' 'sunshine')
+            $gradeAttr = ''
+            if ($grade) { $gradeAttr = ' data-grade="' + (E $grade) + '"' }
+
+            $html = '<section class="gz-page" data-theme="' + (E $theme) + '"><div class="container">'
+            $html += '<div data-game-zone="' + (E $mode) + '"' + $gradeAttr + '>'
+            $html += '<p class="gz-loading">Loading the games&hellip;</p>'
+            $html += '</div>'
+            $html += '<noscript><p class="gz-error">These games need JavaScript switched on. '
+            $html += 'Everything else on RCF English works without it.</p></noscript>'
+            return $html + '</div></section>'
+        }
+
         'destinations' {
             # Two large homepage cards. The whole card is clickable, but the
             # link lives on the title only, so keyboard users get one tab
@@ -2289,6 +2309,11 @@ function BuildPage($page) {
     $head += '<link rel="apple-touch-icon" href="' + (E ($script:Root + 'assets/img/icons/apple-touch-icon.png')) + '">'
     $head += '<link rel="manifest" href="' + (E ($script:Root + 'manifest.webmanifest')) + '">'
     $head += '<link rel="stylesheet" href="' + (E ($script:Root + 'assets/css/styles.css')) + '">'
+    # A page may ask for an extra stylesheet of its own, so a big section like
+    # the Game Zone does not put its weight on the other 190 pages.
+    foreach ($sheet in (AsList (P $page 'styles'))) {
+        $head += '<link rel="stylesheet" href="' + (E ($script:Root + 'assets/css/' + $sheet + '.css')) + '">'
+    }
     $head += '<script src="' + (E ($script:Root + 'assets/js/site-config.js')) + '"></script>'
     $head += StructuredData $page $canonical
 

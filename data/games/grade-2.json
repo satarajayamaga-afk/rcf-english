@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "grade": 2,
+  "title": "Grade 2",
+  "theme": "sky",
+  "blurb": "Pictures and short sentences you can read.",
+  "icon": "icon-rainbow.svg",
+  "topics": [
+    {
+      "id": "things-around-us",
+      "title": "Things Around Us",
+      "icon": "house.svg",
+      "activities": [
+        {
+          "id": "g2-things-match",
+          "type": "match",
+          "title": "Match the Thing",
+          "instructions": "Tap a picture. Then tap its word.",
+          "minutes": 3,
+          "pairs": [
+            { "picture": "house.svg", "word": "house" },
+            { "picture": "tree.svg", "word": "tree" },
+            { "picture": "book.svg", "word": "book" },
+            { "picture": "bus.svg", "word": "bus" },
+            { "picture": "ball.svg", "word": "ball" },
+            { "picture": "flower.svg", "word": "flower" }
+          ]
+        },
+        {
+          "id": "g2-things-memory",
+          "type": "memory",
+          "title": "Find the Pairs",
+          "instructions": "Turn over two cards. Find the picture and its word.",
+          "minutes": 4,
+          "pairs": [
+            { "a": "sun.svg", "b": "sun" },
+            { "a": "cake.svg", "b": "cake" },
+            { "a": "drum.svg", "b": "drum" },
+            { "a": "apple.svg", "b": "apple" },
+            { "a": "balloon.svg", "b": "balloon" },
+            { "a": "egg.svg", "b": "egg" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "short-sentences",
+      "title": "Short Sentences",
+      "icon": "icon-pencil.svg",
+      "activities": [
+        {
+          "id": "g2-simple-missing",
+          "type": "missing",
+          "title": "Finish the Sentence",
+          "instructions": "Tap the word that fits the gap.",
+          "minutes": 3,
+          "items": [
+            { "picture": "sun.svg", "sentence": "The sun ___ hot.", "options": ["is", "are", "am"], "answer": 0 },
+            { "picture": "cat.svg", "sentence": "The cat ___ on the mat.", "options": ["sits", "sit", "sitting"], "answer": 0 },
+            { "picture": "bird.svg", "sentence": "Birds ___ in the sky.", "options": ["flies", "fly", "flew"], "answer": 1 },
+            { "picture": "apple.svg", "sentence": "I ___ an apple every day.", "options": ["eats", "eat", "ate"], "answer": 1 },
+            { "picture": "ball.svg", "sentence": "We ___ with the ball.", "options": ["plays", "playing", "play"], "answer": 2 }
+          ]
+        },
+        {
+          "id": "g2-first-words-order",
+          "type": "order",
+          "title": "Build the Sentence",
+          "instructions": "Tap the words in order to make a sentence.",
+          "minutes": 3,
+          "sentences": [
+            { "words": ["I", "like", "my", "dog"], "hint": "Start with I." },
+            { "words": ["The", "sun", "is", "hot"], "hint": "Start with The." },
+            { "words": ["We", "go", "to", "school"], "hint": "Start with We." },
+            { "words": ["She", "has", "a", "red", "ball"], "hint": "Start with She." }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="drum">
+  <rect x="18" y="46" width="84" height="42" rx="8" fill="#e63946"/>
+  <ellipse cx="60" cy="46" rx="42" ry="14" fill="#f1faee"/>
+  <ellipse cx="60" cy="46" rx="34" ry="10" fill="#fff"/>
+  <path d="M22 54 l20 26 M42 52 l-20 30 M62 52 l20 30 M82 54 l-20 26" stroke="#ffd60a" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="60" cy="88" rx="42" ry="12" fill="#c1121f"/>
+  <path d="M84 20 l16 22" stroke="#7f5539" stroke-width="6" stroke-linecap="round"/><circle cx="84" cy="18" r="8" fill="#f1faee"/>
+  <path d="M30 22 l-12 24" stroke="#7f5539" stroke-width="6" stroke-linecap="round"/><circle cx="31" cy="20" r="8" fill="#f1faee"/>
+</svg>

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "grade": 5,
+  "title": "Grade 5",
+  "theme": "sunset",
+  "blurb": "Reading, grammar and Scholarship-style challenges.",
+  "icon": "icon-trophy.svg",
+  "topics": [
+    {
+      "id": "reading",
+      "title": "Reading and Understanding",
+      "icon": "book.svg",
+      "activities": [
+        {
+          "id": "g5-reading-quiz",
+          "type": "quiz",
+          "title": "Read and Answer",
+          "instructions": "Read the passage, then answer the questions.",
+          "minutes": 5,
+          "shuffleQuestions": false,
+          "questions": [
+            {
+              "passage": "Nimal woke early. The rain had stopped in the night, and the road to the market was covered in puddles. He carried his father's basket carefully, stepping around the water so the vegetables would stay dry.",
+              "ask": "When did the rain stop?",
+              "options": ["In the morning", "In the night", "At the market"],
+              "answer": 1
+            },
+            {
+              "passage": "Nimal woke early. The rain had stopped in the night, and the road to the market was covered in puddles. He carried his father's basket carefully, stepping around the water so the vegetables would stay dry.",
+              "ask": "Why did Nimal step around the puddles?",
+              "options": ["To keep the vegetables dry", "To walk faster", "To reach his friend"],
+              "answer": 0
+            },
+            {
+              "passage": "Nimal woke early. The rain had stopped in the night, and the road to the market was covered in puddles. He carried his father's basket carefully, stepping around the water so the vegetables would stay dry.",
+              "ask": "The word 'carefully' tells us how Nimal...",
+              "options": ["felt", "carried the basket", "woke up"],
+              "answer": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "title": "Grammar Challenge",
+      "icon": "icon-brain.svg",
+      "activities": [
+        {
+          "id": "g5-prepositions-missing",
+          "type": "missing",
+          "title": "The Missing Word",
+          "instructions": "Tap the word that completes the sentence correctly.",
+          "minutes": 5,
+          "items": [
+            { "sentence": "The book is ___ the table.", "options": ["in", "on", "at"], "answer": 1 },
+            { "sentence": "We have lived here ___ 2019.", "options": ["since", "for", "from"], "answer": 0 },
+            { "sentence": "She is good ___ mathematics.", "options": ["in", "on", "at"], "answer": 2 },
+            { "sentence": "If it rains, we ___ stay at home.", "options": ["will", "would", "were"], "answer": 0 },
+            { "sentence": "The letter was written ___ my sister.", "options": ["from", "by", "with"], "answer": 1 },
+            { "sentence": "Neither the teacher nor the students ___ present.", "options": ["was", "were", "is"], "answer": 1 }
+          ]
+        },
+        {
+          "id": "g5-word-groups-sort",
+          "type": "sort",
+          "title": "Sort the Word Groups",
+          "instructions": "Tap a word, then tap the group it belongs to.",
+          "minutes": 5,
+          "buckets": [
+            { "id": "weather", "title": "Weather" },
+            { "id": "feelings", "title": "Feelings" },
+            { "id": "jobs", "title": "Jobs" }
+          ],
+          "items": [
+            { "text": "thunder", "bucket": "weather" },
+            { "text": "drizzle", "bucket": "weather" },
+            { "text": "breeze", "bucket": "weather" },
+            { "text": "anxious", "bucket": "feelings" },
+            { "text": "delighted", "bucket": "feelings" },
+            { "text": "curious", "bucket": "feelings" },
+            { "text": "engineer", "bucket": "jobs" },
+            { "text": "carpenter", "bucket": "jobs" },
+            { "text": "nurse", "bucket": "jobs" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentence-building",
+      "title": "Sentence Building",
+      "icon": "icon-blocks.svg",
+      "activities": [
+        {
+          "id": "g5-sentence-order",
+          "type": "order",
+          "title": "Rebuild the Longer Sentence",
+          "instructions": "Tap the words in order. Read it back to check it sounds right.",
+          "minutes": 5,
+          "sentences": [
+            { "words": ["The", "old", "fisherman", "mended", "his", "net", "by", "the", "shore"] },
+            { "words": ["Although", "it", "was", "raining", "the", "children", "walked", "to", "school"], "hint": "Begin with the joining word." },
+            { "words": ["My", "grandmother", "told", "us", "a", "story", "about", "her", "village"] },
+            { "words": ["The", "letter", "which", "arrived", "yesterday", "was", "from", "my", "cousin"] }
+          ]
+        },
+        {
+          "id": "g5-vocabulary-memory",
+          "type": "memory",
+          "title": "Word and Meaning Pairs",
+          "instructions": "Turn over two cards. Match each word with its meaning.",
+          "minutes": 5,
+          "pairs": [
+            { "a": "enormous", "b": "very big" },
+            { "a": "ancient", "b": "very old" },
+            { "a": "weary", "b": "very tired" },
+            { "a": "generous", "b": "gives freely" },
+            { "a": "cautious", "b": "very careful" },
+            { "a": "furious", "b": "very angry" }
+          ]
+        }
+      ]
+    }
+  ]
+}

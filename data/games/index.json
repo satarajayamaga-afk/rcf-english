@@ -1,0 +1,42 @@
+{
+  "_readme": [
+    "THE GAME CATALOGUE",
+    "---------------------------------------------------------------------",
+    "One machine-readable list of every content pack. Any front end - the",
+    "website today, the RCF Learning Flutter app later - reads this file",
+    "first to discover what exists, instead of having grade numbers and",
+    "file names written into its code.",
+    "",
+    "A 'pack' is one grade file plus the illustrations its activities name.",
+    "A pack is self-contained: bundle it with an app, or download it once,",
+    "and every game in it plays with no connection at all.",
+    "",
+    "See CONTENT-SCHEMA.md for the exact shape of a pack and the rules of",
+    "each game type."
+  ],
+
+  "schemaVersion": 1,
+  "catalogue": "rcf-primary-game-zone",
+  "updated": "2026-09-02",
+
+  "imageBase": "assets/img/games/",
+  "imageFormat": "svg",
+
+  "gameTypes": ["match", "memory", "quiz", "sort", "order", "missing"],
+
+  "packs": [
+    { "id": "grade-1", "grade": 1, "title": "Grade 1", "theme": "sunshine", "file": "data/games/grade-1.json" },
+    { "id": "grade-2", "grade": 2, "title": "Grade 2", "theme": "sky",      "file": "data/games/grade-2.json" },
+    { "id": "grade-3", "grade": 3, "title": "Grade 3", "theme": "meadow",   "file": "data/games/grade-3.json" },
+    { "id": "grade-4", "grade": 4, "title": "Grade 4", "theme": "berry",    "file": "data/games/grade-4.json" },
+    { "id": "grade-5", "grade": 5, "title": "Grade 5", "theme": "sunset",   "file": "data/games/grade-5.json" }
+  ],
+
+  "themes": {
+    "sunshine": { "from": "#ffc300", "to": "#ff8500" },
+    "sky":      { "from": "#4cc9f0", "to": "#4361ee" },
+    "meadow":   { "from": "#70e000", "to": "#2d9d5c" },
+    "berry":    { "from": "#f72585", "to": "#7209b7" },
+    "sunset":   { "from": "#ff8c42", "to": "#e5383b" }
+  }
+}

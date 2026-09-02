@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "grade": 4,
+  "title": "Grade 4",
+  "theme": "berry",
+  "blurb": "Word classes, verbs and longer sentences.",
+  "icon": "icon-target.svg",
+  "topics": [
+    {
+      "id": "kinds-of-words",
+      "title": "Kinds of Words",
+      "icon": "icon-folders.svg",
+      "activities": [
+        {
+          "id": "g4-word-class-sort",
+          "type": "sort",
+          "title": "Naming, Doing, Describing",
+          "instructions": "Tap a word, then tap the right basket. You can drag them too.",
+          "minutes": 5,
+          "buckets": [
+            { "id": "noun", "title": "Naming words" },
+            { "id": "verb", "title": "Doing words" },
+            { "id": "adj", "title": "Describing words" }
+          ],
+          "items": [
+            { "text": "teacher", "bucket": "noun" },
+            { "text": "village", "bucket": "noun" },
+            { "text": "river", "bucket": "noun" },
+            { "text": "jump", "bucket": "verb" },
+            { "text": "write", "bucket": "verb" },
+            { "text": "carry", "bucket": "verb" },
+            { "text": "happy", "bucket": "adj" },
+            { "text": "heavy", "bucket": "adj" },
+            { "text": "bright", "bucket": "adj" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "title": "Verbs at Work",
+      "icon": "icon-gears.svg",
+      "activities": [
+        {
+          "id": "g4-verbs-missing",
+          "type": "missing",
+          "title": "Choose the Right Verb",
+          "instructions": "Tap the word that fits the sentence.",
+          "minutes": 4,
+          "items": [
+            { "sentence": "My father ___ to work every morning.", "options": ["go", "goes", "going"], "answer": 1 },
+            { "sentence": "The girls ___ singing in the hall.", "options": ["is", "was", "are"], "answer": 2 },
+            { "sentence": "Yesterday we ___ to the market.", "options": ["walk", "walked", "walking"], "answer": 1 },
+            { "sentence": "She ___ her homework before dinner.", "options": ["finish", "finishes", "finishing"], "answer": 1 },
+            { "sentence": "The rain ___ heavily last night.", "options": ["fall", "falls", "fell"], "answer": 2 },
+            { "sentence": "They ___ not seen that film.", "options": ["has", "have", "had been"], "answer": 1 }
+          ]
+        },
+        {
+          "id": "g4-opposites-quiz",
+          "type": "quiz",
+          "title": "Opposites Challenge",
+          "instructions": "Choose the word that means the opposite.",
+          "minutes": 4,
+          "questions": [
+            { "ask": "The opposite of heavy is...", "options": ["light", "hard", "tall"], "answer": 0 },
+            { "ask": "The opposite of ancient is...", "options": ["old", "modern", "quiet"], "answer": 1 },
+            { "ask": "The opposite of arrive is...", "options": ["reach", "enter", "leave"], "answer": 2 },
+            { "ask": "The opposite of generous is...", "options": ["selfish", "kind", "gentle"], "answer": 0 },
+            { "ask": "The opposite of shallow is...", "options": ["narrow", "deep", "wide"], "answer": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "longer-sentences",
+      "title": "Longer Sentences",
+      "icon": "icon-puzzle.svg",
+      "activities": [
+        {
+          "id": "g4-sentence-order",
+          "type": "order",
+          "title": "Rebuild the Sentence",
+          "instructions": "Tap the words in order to rebuild the sentence.",
+          "minutes": 4,
+          "sentences": [
+            { "words": ["The", "farmer", "carried", "a", "heavy", "basket"] },
+            { "words": ["Our", "teacher", "reads", "a", "story", "every", "Friday"] },
+            { "words": ["The", "bus", "stopped", "near", "the", "old", "bridge"] },
+            { "words": ["My", "brother", "wants", "to", "become", "a", "doctor"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

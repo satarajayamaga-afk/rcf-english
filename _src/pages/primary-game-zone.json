@@ -1,0 +1,177 @@
+{
+  "_readme": [
+    "PRIMARY GAME ZONE",
+    "---------------------------------------------------------------------",
+    "Seven pages: a hub, one per grade, and Teacher Mode. Each carries an",
+    "empty themed container; assets/js/game-zone.js fills it from the JSON",
+    "in data/games/. Adding a game means editing data/games/grade-N.json —",
+    "no page here changes, and no JavaScript changes.",
+    "",
+    "The 'styles' key loads assets/css/games.css on these pages only, so the",
+    "other 190 pages carry none of the Game Zone's weight.",
+    "",
+    "Illustrations live in assets/img/games/ as original SVG artwork, about",
+    "0.6 KB each. Any picture named in a data file can be swapped for a",
+    "better one by replacing that file."
+  ],
+
+  "pages": [
+    {
+      "slug": "primary-english/game-zone",
+      "title": "Primary Game Zone",
+      "metaTitle": "Primary Game Zone | Games for Grades 1-5 | RCF English",
+      "description": "Colourful English games for Grades 1 to 5: picture matching, memory pairs, quizzes, sorting, sentence building and missing words. Free, and they work on a phone.",
+      "keywords": "English games for children Sri Lanka, primary English games, grade 1 english game, grade 5 english game, free english games for kids",
+      "kicker": "Primary English",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": { "text": "Six kinds of English game for Grades 1 to 5. Every game takes three to five minutes, works on a phone, and keeps your stars when you come back." },
+      "blocks": [
+        { "type": "game-zone", "mode": "hub", "theme": "sunshine" },
+        {
+          "type": "cards",
+          "heading": "How the Game Zone works",
+          "columns": "3",
+          "items": [
+            { "title": "Pick your grade", "icon": "1", "text": "Each grade has its own colour and its own games, from first words in Grade 1 to Scholarship-style challenges in Grade 5." },
+            { "title": "Play for a few minutes", "icon": "2", "text": "Every game is short. Wrong answers cost nothing: you simply try again until the sentence is right." },
+            { "title": "Collect your stars", "icon": "3", "text": "Finish a game to earn up to three stars. Your stars stay on your own device. Nothing is sent anywhere and no account is needed." }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "For teachers",
+          "text": [
+            "**Teacher Mode** opens any game large on a classroom screen: choose the grade, then the topic, then the game. Press Escape to come back to the list.",
+            "The games need no login, no plugin and no connection once the page has loaded, so they work on a school projector or a phone passed around a group."
+          ]
+        },
+        {
+          "type": "cards",
+          "columns": "1",
+          "items": [
+            {
+              "title": "Open Teacher Mode",
+              "icon": "TM",
+              "text": "Grade, then topic, then game — opened large for the class.",
+              "url": "primary-english/game-zone/teacher/",
+              "more": "Open Teacher Mode"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/game-zone/grade-1",
+      "title": "Grade 1 Games",
+      "metaTitle": "Grade 1 English Games | Primary Game Zone | RCF English",
+      "description": "Grade 1 English games: match animals and colours to their words, find memory pairs, and name shapes and first sounds.",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      ],
+      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
+      "hero": { "text": "Pictures, first words and sounds. Tap a game to start." },
+      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "1", "theme": "sunshine" }]
+    },
+
+    {
+      "slug": "primary-english/game-zone/grade-2",
+      "title": "Grade 2 Games",
+      "metaTitle": "Grade 2 English Games | Primary Game Zone | RCF English",
+      "description": "Grade 2 English games: match everyday things to their words, find memory pairs, finish short sentences and build them word by word.",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      ],
+      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
+      "hero": { "text": "Pictures and short sentences you can read. Tap a game to start." },
+      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "2", "theme": "sky" }]
+    },
+
+    {
+      "slug": "primary-english/game-zone/grade-3",
+      "title": "Grade 3 Games",
+      "metaTitle": "Grade 3 English Games | Primary Game Zone | RCF English",
+      "description": "Grade 3 English games: singular and plural, sorting animals into groups, and putting sentences in the right order.",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      ],
+      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
+      "hero": { "text": "More words, plurals and sentences that grow. Tap a game to start." },
+      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "3", "theme": "meadow" }]
+    },
+
+    {
+      "slug": "primary-english/game-zone/grade-4",
+      "title": "Grade 4 Games",
+      "metaTitle": "Grade 4 English Games | Primary Game Zone | RCF English",
+      "description": "Grade 4 English games: naming, doing and describing words, choosing the right verb, opposites, and rebuilding longer sentences.",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      ],
+      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
+      "hero": { "text": "Word classes, verbs and longer sentences. Tap a game to start." },
+      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "4", "theme": "berry" }]
+    },
+
+    {
+      "slug": "primary-english/game-zone/grade-5",
+      "title": "Grade 5 Games",
+      "metaTitle": "Grade 5 English Games | Primary Game Zone | RCF English",
+      "description": "Grade 5 English games: reading comprehension, prepositions and tenses, word groups, vocabulary pairs and long sentence building.",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      ],
+      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
+      "hero": { "text": "Reading, grammar and Scholarship-style challenges. Tap a game to start." },
+      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "5", "theme": "sunset" }]
+    },
+
+    {
+      "slug": "primary-english/game-zone/teacher",
+      "title": "Teacher Mode",
+      "metaTitle": "Teacher Mode | Primary Game Zone | RCF English",
+      "description": "Choose a grade, a topic and a game, and open it large on a classroom screen. No login and no connection needed once the page has loaded.",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      ],
+      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
+      "hero": { "text": "Choose a grade, then a topic, then a game. It opens large enough for the back of the room. Press Escape to come back." },
+      "blocks": [{ "type": "game-zone", "mode": "teacher", "theme": "meadow" }]
+    }
+  ]
+}
