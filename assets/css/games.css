@@ -480,3 +480,17 @@ body.gz-classroom .gz-pic { max-width: 150px; }
 .gz-unit.is-soon:hover, .gz-unit.is-soon:focus-visible { transform: none; box-shadow: 0 3px 0 var(--gz-2), 0 3px 0 1px var(--gz-edge); }
 .gz-unit.is-soon .gz-unit__no { background: #dfe4ea; color: var(--ink-500); }
 .gz-unit.is-soon .gz-unit__meta { font-style: italic; }
+
+/* Global English collection ------------------------------------------------
+   The same doors and cards, with two additions: the CEFR band on a level
+   door (small, for the adult choosing, not the child playing) and a topic
+   that is listed but not written yet. */
+.gz-door__cefr {
+  position: absolute; top: 10px; right: 12px;
+  font-size: 0.66rem; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--gz-ink); opacity: 0.55;
+}
+.gz-door { position: relative; }
+.gz-topic--soon { opacity: 0.72; }
+.gz-topic--soon .gz-topic__title { font-size: 1.02rem; }
+.gz-topic--soon .gz-note { margin: 0.2rem 0 0; font-style: italic; }

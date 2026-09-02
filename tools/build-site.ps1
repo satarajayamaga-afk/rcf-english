@@ -936,9 +936,11 @@ function RenderBlock($block) {
             # games are added by writing JSON, never by editing a page.
             $mode = [string](P $block 'mode' 'hub')
             $grade = [string](P $block 'grade' '')
+            $pack = [string](P $block 'pack' '')
             $theme = [string](P $block 'theme' 'sunshine')
             $gradeAttr = ''
             if ($grade) { $gradeAttr = ' data-grade="' + (E $grade) + '"' }
+            if ($pack) { $gradeAttr += ' data-pack="' + (E $pack) + '"' }
 
             $html = '<section class="gz-page" data-theme="' + (E $theme) + '"><div class="container">'
             $html += '<div data-game-zone="' + (E $mode) + '"' + $gradeAttr + '>'

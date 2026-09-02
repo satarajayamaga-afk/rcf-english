@@ -13,127 +13,239 @@
   "unitsStatus": "in-progress",
   "units": [
     { "id": "theme-1", "number": 1, "title": "We and the School", "icon": "icon-abc.svg",
-      "outcomes": ["Words from the theme", "Greet someone", "What's your name?", "I'm ..."], "topics": [] },
+      "outcomes": ["Words from the theme", "Greet someone", "What's your name?", "I'm ..."],
+      "topics": [
+        { "id": "t1-school-words", "title": "School Words", "icon": "icon-notebook.svg", "activities": [
+          { "id": "g1-t1-school-match", "type": "match", "title": "Match the School Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "school.svg", "word": "school" }, { "picture": "teacher.svg", "word": "teacher" }, { "picture": "bell.svg", "word": "bell" }, { "picture": "vase.svg", "word": "vase" }, { "picture": "book.svg", "word": "book" }, { "picture": "pencil.svg", "word": "pencil" } ] },
+          { "id": "g1-t1-school-quiz", "type": "quiz", "title": "What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "bell.svg", "ask": "What is this?", "options": ["bell", "book", "vase"], "answer": 0 }, { "picture": "teacher.svg", "ask": "Who is this?", "options": ["mother", "teacher", "doctor"], "answer": 1 }, { "picture": "vase.svg", "ask": "What is this?", "options": ["bell", "pencil", "vase"], "answer": 2 }, { "picture": "school.svg", "ask": "What is this?", "options": ["school", "house", "shop"], "answer": 0 }, { "picture": "pencil.svg", "ask": "What is this?", "options": ["book", "pencil", "bell"], "answer": 1 } ] },
+          { "id": "g1-t1-school-memory", "type": "memory", "title": "School Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "school.svg", "b": "school" }, { "a": "teacher.svg", "b": "teacher" }, { "a": "bell.svg", "b": "bell" }, { "a": "vase.svg", "b": "vase" }, { "a": "book.svg", "b": "book" }, { "a": "pencil.svg", "b": "pencil" } ] } ] },
+        { "id": "t1-greetings", "title": "Saying Hello", "icon": "icon-rainbow.svg", "activities": [
+          { "id": "g1-t1-greet-missing", "type": "missing", "title": "Finish the Greeting", "instructions": "Tap the word that fits the gap.", "minutes": 3,
+            "items": [ { "sentence": "Good ___, teacher.", "options": ["morning", "school", "book"], "answer": 0 }, { "sentence": "___ your name?", "options": ["I'm", "What's", "Thank"], "answer": 1 }, { "sentence": "___ Nisal.", "options": ["What's", "Good", "I'm"], "answer": 2 }, { "sentence": "Thank ___.", "options": ["you", "name", "good"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-2", "number": 2, "title": "Our Home", "icon": "house.svg",
-      "outcomes": ["Words from the theme", "Thank you / You're welcome", "Good morning, afternoon, evening, night"], "topics": [] },
+      "outcomes": ["Words from the theme", "Thank you / You're welcome", "Good morning, afternoon, evening, night"],
+      "topics": [
+        { "id": "t2-family", "title": "My Family", "icon": "shape-heart.svg", "activities": [
+          { "id": "g1-t2-family-match", "type": "match", "title": "Match the Family Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "father.svg", "word": "father" }, { "picture": "mother.svg", "word": "mother" }, { "picture": "brother.svg", "word": "brother" }, { "picture": "sister.svg", "word": "sister" } ] },
+          { "id": "g1-t2-family-quiz", "type": "quiz", "title": "Who Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "father.svg", "ask": "Who is this?", "options": ["father", "brother", "sister"], "answer": 0 }, { "picture": "mother.svg", "ask": "Who is this?", "options": ["sister", "mother", "father"], "answer": 1 }, { "picture": "brother.svg", "ask": "Who is this?", "options": ["mother", "sister", "brother"], "answer": 2 }, { "picture": "sister.svg", "ask": "Who is this?", "options": ["sister", "father", "brother"], "answer": 0 } ] },
+          { "id": "g1-t2-family-memory", "type": "memory", "title": "Family Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "father.svg", "b": "father" }, { "a": "mother.svg", "b": "mother" }, { "a": "brother.svg", "b": "brother" }, { "a": "sister.svg", "b": "sister" }, { "a": "house.svg", "b": "home" } ] } ] },
+        { "id": "t2-pets", "title": "Pets at Home", "icon": "icon-paw.svg", "activities": [
+          { "id": "g1-t2-pets-match", "type": "match", "title": "Match the Pet", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "cat.svg", "word": "cat" }, { "picture": "dog.svg", "word": "dog" }, { "picture": "rabbit.svg", "word": "rabbit" }, { "picture": "fish.svg", "word": "fish" }, { "picture": "parrot.svg", "word": "parrot" } ] } ] },
+        { "id": "t2-good-morning", "title": "Good Morning, Good Night", "icon": "sun.svg", "activities": [
+          { "id": "g1-t2-greet-quiz", "type": "quiz", "title": "What Do You Say?", "instructions": "Look at the picture. Tap what you say.", "minutes": 3,
+            "questions": [ { "picture": "sun.svg", "ask": "You see your teacher in the morning. What do you say?", "options": ["Good morning.", "Good night.", "Good bye."], "answer": 0 }, { "picture": "moon.svg", "ask": "You go to bed. What do you say?", "options": ["Good morning.", "Good night.", "Thank you."], "answer": 1 }, { "picture": "cake.svg", "ask": "Mother gives you cake. What do you say?", "options": ["Good night.", "Good morning.", "Thank you."], "answer": 2 }, { "picture": "house.svg", "ask": "Your friend says thank you. What do you say?", "options": ["You're welcome.", "Good night.", "Good morning."], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-3", "number": 3, "title": "Animals that Come into the Garden", "icon": "icon-paw.svg",
       "outcomes": ["Animal words", "Colours", "Do you have a pet? Yes / No"],
       "topics": [
-        {
-          "id": "t3-animal-words",
-          "title": "Animal Words",
-          "icon": "icon-paw.svg",
-          "activities": [
-            {
-              "id": "g1-t3-animals-match",
-              "type": "match",
-              "title": "Match the Garden Animal",
-              "instructions": "Tap a picture. Then tap its word.",
-              "minutes": 3,
-              "pairs": [
-                { "picture": "dog.svg", "word": "dog" },
-                { "picture": "cat.svg", "word": "cat" },
-                { "picture": "cow.svg", "word": "cow" },
-                { "picture": "crow.svg", "word": "crow" },
-                { "picture": "butterfly.svg", "word": "butterfly" },
-                { "picture": "hen.svg", "word": "hen" }
-              ]
-            },
-            {
-              "id": "g1-t3-animals-quiz",
-              "type": "quiz",
-              "title": "What Animal Is It?",
-              "instructions": "Look at the picture. Tap the right word.",
-              "minutes": 3,
-              "questions": [
-                { "picture": "dog.svg", "ask": "What is this?", "options": ["dog", "cow", "hen"], "answer": 0 },
-                { "picture": "cat.svg", "ask": "What is this?", "options": ["crow", "cat", "cow"], "answer": 1 },
-                { "picture": "cow.svg", "ask": "What is this?", "options": ["hen", "cat", "cow"], "answer": 2 },
-                { "picture": "crow.svg", "ask": "What is this?", "options": ["crow", "butterfly", "dog"], "answer": 0 },
-                { "picture": "butterfly.svg", "ask": "What is this?", "options": ["hen", "butterfly", "cat"], "answer": 1 },
-                { "picture": "hen.svg", "ask": "What is this?", "options": ["cow", "crow", "hen"], "answer": 2 }
-              ]
-            },
-            {
-              "id": "g1-t3-animals-memory",
-              "type": "memory",
-              "title": "Garden Animal Pairs",
-              "instructions": "Turn over two cards. Find a picture and its word.",
-              "minutes": 4,
-              "pairs": [
-                { "a": "dog.svg", "b": "dog" },
-                { "a": "cat.svg", "b": "cat" },
-                { "a": "cow.svg", "b": "cow" },
-                { "a": "crow.svg", "b": "crow" },
-                { "a": "butterfly.svg", "b": "butterfly" },
-                { "a": "hen.svg", "b": "hen" }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "t3-colours",
-          "title": "Colours",
-          "icon": "icon-palette.svg",
-          "activities": [
-            {
-              "id": "g1-t3-colours-match",
-              "type": "match",
-              "title": "Match the Colour",
-              "instructions": "Tap a colour. Then tap its word.",
-              "minutes": 3,
-              "pairs": [
-                { "picture": "colour-red.svg", "word": "red" },
-                { "picture": "colour-blue.svg", "word": "blue" },
-                { "picture": "colour-black.svg", "word": "black" },
-                { "picture": "colour-white.svg", "word": "white" },
-                { "picture": "colour-brown.svg", "word": "brown" }
-              ]
-            },
-            {
-              "id": "g1-t3-colours-quiz",
-              "type": "quiz",
-              "title": "What Colour Is It?",
-              "instructions": "Look at the colour. Tap the right word.",
-              "minutes": 3,
-              "questions": [
-                { "picture": "colour-red.svg", "ask": "What colour is it?", "options": ["red", "blue", "brown"], "answer": 0 },
-                { "picture": "colour-blue.svg", "ask": "What colour is it?", "options": ["black", "blue", "white"], "answer": 1 },
-                { "picture": "colour-black.svg", "ask": "What colour is it?", "options": ["brown", "white", "black"], "answer": 2 },
-                { "picture": "colour-white.svg", "ask": "What colour is it?", "options": ["white", "red", "blue"], "answer": 0 },
-                { "picture": "colour-brown.svg", "ask": "What colour is it?", "options": ["blue", "brown", "black"], "answer": 1 }
-              ]
-            }
-          ]
-        }
-      ]
-    },
+        { "id": "t3-animal-words", "title": "Animal Words", "icon": "icon-paw.svg", "activities": [
+          { "id": "g1-t3-animals-match", "type": "match", "title": "Match the Garden Animal", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "dog.svg", "word": "dog" }, { "picture": "cat.svg", "word": "cat" }, { "picture": "cow.svg", "word": "cow" }, { "picture": "crow.svg", "word": "crow" }, { "picture": "butterfly.svg", "word": "butterfly" }, { "picture": "hen.svg", "word": "hen" } ] },
+          { "id": "g1-t3-animals-quiz", "type": "quiz", "title": "What Animal Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "dog.svg", "ask": "What is this?", "options": ["dog", "cow", "hen"], "answer": 0 }, { "picture": "cat.svg", "ask": "What is this?", "options": ["crow", "cat", "cow"], "answer": 1 }, { "picture": "cow.svg", "ask": "What is this?", "options": ["hen", "cat", "cow"], "answer": 2 }, { "picture": "crow.svg", "ask": "What is this?", "options": ["crow", "butterfly", "dog"], "answer": 0 }, { "picture": "butterfly.svg", "ask": "What is this?", "options": ["hen", "butterfly", "cat"], "answer": 1 }, { "picture": "hen.svg", "ask": "What is this?", "options": ["cow", "crow", "hen"], "answer": 2 } ] },
+          { "id": "g1-t3-animals-memory", "type": "memory", "title": "Garden Animal Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "dog.svg", "b": "dog" }, { "a": "cat.svg", "b": "cat" }, { "a": "cow.svg", "b": "cow" }, { "a": "crow.svg", "b": "crow" }, { "a": "butterfly.svg", "b": "butterfly" }, { "a": "hen.svg", "b": "hen" } ] } ] },
+        { "id": "t3-colours", "title": "Colours", "icon": "icon-palette.svg", "activities": [
+          { "id": "g1-t3-colours-match", "type": "match", "title": "Match the Colour", "instructions": "Tap a colour. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "colour-red.svg", "word": "red" }, { "picture": "colour-blue.svg", "word": "blue" }, { "picture": "colour-black.svg", "word": "black" }, { "picture": "colour-white.svg", "word": "white" }, { "picture": "colour-brown.svg", "word": "brown" } ] },
+          { "id": "g1-t3-colours-quiz", "type": "quiz", "title": "What Colour Is It?", "instructions": "Look at the colour. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "colour-red.svg", "ask": "What colour is it?", "options": ["red", "blue", "brown"], "answer": 0 }, { "picture": "colour-blue.svg", "ask": "What colour is it?", "options": ["black", "blue", "white"], "answer": 1 }, { "picture": "colour-black.svg", "ask": "What colour is it?", "options": ["brown", "white", "black"], "answer": 2 }, { "picture": "colour-white.svg", "ask": "What colour is it?", "options": ["white", "red", "blue"], "answer": 0 }, { "picture": "colour-brown.svg", "ask": "What colour is it?", "options": ["blue", "brown", "black"], "answer": 1 } ] } ] } ] },
+
     { "id": "theme-4", "number": 4, "title": "Play with Water", "icon": "colour-blue.svg",
-      "outcomes": ["Water words", "I wash ... / I eat ... / I drink ..."], "topics": [] },
+      "outcomes": ["Water words", "I wash ... / I eat ... / I drink ..."],
+      "topics": [
+        { "id": "t4-water-words", "title": "Water Words", "icon": "colour-blue.svg", "activities": [
+          { "id": "g1-t4-water-match", "type": "match", "title": "Match the Water Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "water.svg", "word": "water" }, { "picture": "soap.svg", "word": "soap" }, { "picture": "basin.svg", "word": "basin" }, { "picture": "flower.svg", "word": "flower" }, { "picture": "fish.svg", "word": "fish" } ] },
+          { "id": "g1-t4-water-quiz", "type": "quiz", "title": "What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "soap.svg", "ask": "What is this?", "options": ["soap", "water", "basin"], "answer": 0 }, { "picture": "basin.svg", "ask": "What is this?", "options": ["flower", "basin", "soap"], "answer": 1 }, { "picture": "water.svg", "ask": "What is this?", "options": ["soap", "fish", "water"], "answer": 2 }, { "picture": "colour-blue.svg", "ask": "What colour is water?", "options": ["blue", "red", "green"], "answer": 0 } ] } ] },
+        { "id": "t4-i-wash", "title": "I Wash, I Eat, I Drink", "icon": "icon-target.svg", "activities": [
+          { "id": "g1-t4-verbs-missing", "type": "missing", "title": "Finish the Sentence", "instructions": "Tap the word that fits the gap.", "minutes": 3,
+            "items": [ { "picture": "soap.svg", "sentence": "I ___ my hands.", "options": ["wash", "eat", "drink"], "answer": 0 }, { "picture": "water.svg", "sentence": "I ___ water.", "options": ["wash", "drink", "eat"], "answer": 1 }, { "picture": "rice.svg", "sentence": "I ___ rice.", "options": ["drink", "wash", "eat"], "answer": 2 }, { "picture": "milk.svg", "sentence": "I ___ milk.", "options": ["drink", "wash", "eat"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-5", "number": 5, "title": "Sinhala and Hindu New Year Period", "icon": "cake.svg",
-      "outcomes": ["New Year words", "Mother has ...", "I like ..."], "topics": [] },
+      "outcomes": ["New Year words", "Mother has ...", "I like ..."],
+      "topics": [
+        { "id": "t5-new-year", "title": "New Year Things", "icon": "cake.svg", "activities": [
+          { "id": "g1-t5-newyear-match", "type": "match", "title": "Match the New Year Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "cake.svg", "word": "cake" }, { "picture": "sweets.svg", "word": "sweets" }, { "picture": "biscuit.svg", "word": "biscuit" }, { "picture": "banana.svg", "word": "plantain" }, { "picture": "shirt.svg", "word": "shirt" }, { "picture": "frock.svg", "word": "frock" } ] },
+          { "id": "g1-t5-newyear-quiz", "type": "quiz", "title": "What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "cake.svg", "ask": "What is this?", "options": ["cake", "biscuit", "shirt"], "answer": 0 }, { "picture": "sweets.svg", "ask": "What is this?", "options": ["frock", "sweets", "cake"], "answer": 1 }, { "picture": "frock.svg", "ask": "What is this?", "options": ["shirt", "cake", "frock"], "answer": 2 }, { "picture": "shirt.svg", "ask": "What is this?", "options": ["shirt", "frock", "sweets"], "answer": 0 }, { "picture": "biscuit.svg", "ask": "What is this?", "options": ["cake", "biscuit", "plantain"], "answer": 1 } ] },
+          { "id": "g1-t5-newyear-memory", "type": "memory", "title": "New Year Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "cake.svg", "b": "cake" }, { "a": "sweets.svg", "b": "sweets" }, { "a": "biscuit.svg", "b": "biscuit" }, { "a": "shirt.svg", "b": "shirt" }, { "a": "frock.svg", "b": "frock" } ] } ] },
+        { "id": "t5-mother-has", "title": "Mother Has, I Like", "icon": "shape-heart.svg", "activities": [
+          { "id": "g1-t5-like-missing", "type": "missing", "title": "Finish the Sentence", "instructions": "Tap the word that fits the gap.", "minutes": 3,
+            "items": [ { "picture": "frock.svg", "sentence": "Mother ___ a new frock.", "options": ["has", "have", "is"], "answer": 0 }, { "picture": "cake.svg", "sentence": "I ___ cake.", "options": ["has", "like", "am"], "answer": 1 }, { "picture": "sweets.svg", "sentence": "I like ___.", "options": ["shirt", "school", "sweets"], "answer": 2 }, { "picture": "shirt.svg", "sentence": "Father ___ a new shirt.", "options": ["has", "like", "am"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-6", "number": 6, "title": "The Sky We See", "icon": "sun.svg",
-      "outcomes": ["Sky words", "Ask with What", "What colour is the ...?"], "topics": [] },
+      "outcomes": ["Sky words", "Ask with What", "What colour is the ...?"],
+      "topics": [
+        { "id": "t6-sky-words", "title": "In the Sky", "icon": "sun.svg", "activities": [
+          { "id": "g1-t6-sky-match", "type": "match", "title": "Match the Sky Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "sun.svg", "word": "sun" }, { "picture": "moon.svg", "word": "moon" }, { "picture": "star.svg", "word": "star" }, { "picture": "cloud.svg", "word": "cloud" }, { "picture": "rain.svg", "word": "rain" }, { "picture": "kite.svg", "word": "kite" } ] },
+          { "id": "g1-t6-sky-quiz", "type": "quiz", "title": "What Is in the Sky?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "sun.svg", "ask": "What is this?", "options": ["sun", "moon", "star"], "answer": 0 }, { "picture": "moon.svg", "ask": "What is this?", "options": ["cloud", "moon", "kite"], "answer": 1 }, { "picture": "cloud.svg", "ask": "What is this?", "options": ["rain", "star", "cloud"], "answer": 2 }, { "picture": "kite.svg", "ask": "What is this?", "options": ["kite", "bird", "sun"], "answer": 0 }, { "picture": "aeroplane.svg", "ask": "What is this?", "options": ["bird", "aeroplane", "kite"], "answer": 1 }, { "picture": "bird.svg", "ask": "What is this?", "options": ["kite", "cloud", "bird"], "answer": 2 } ] },
+          { "id": "g1-t6-sky-memory", "type": "memory", "title": "Sky Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "sun.svg", "b": "sun" }, { "a": "moon.svg", "b": "moon" }, { "a": "star.svg", "b": "star" }, { "a": "cloud.svg", "b": "cloud" }, { "a": "rain.svg", "b": "rain" }, { "a": "kite.svg", "b": "kite" } ] } ] },
+        { "id": "t6-what-colour", "title": "What Colour Is the Sky?", "icon": "icon-palette.svg", "activities": [
+          { "id": "g1-t6-colour-quiz", "type": "quiz", "title": "What Colour Is It?", "instructions": "Look at the picture. Tap the right colour.", "minutes": 3,
+            "questions": [ { "picture": "sun.svg", "ask": "What colour is the sun?", "options": ["yellow", "blue", "black"], "answer": 0 }, { "picture": "cloud.svg", "ask": "What colour is the cloud?", "options": ["red", "white", "brown"], "answer": 1 }, { "picture": "moon.svg", "ask": "What colour is the night sky?", "options": ["yellow", "green", "black"], "answer": 2 }, { "picture": "colour-blue.svg", "ask": "What colour is the sky in the day?", "options": ["blue", "brown", "black"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-7", "number": 7, "title": "Things We Eat and Drink", "icon": "apple.svg",
-      "outcomes": ["Food and drink words", "I like ... and ...", "I eat / drink ... in the morning"], "topics": [] },
+      "outcomes": ["Food and drink words", "I like ... and ...", "I eat / drink ... in the morning"],
+      "topics": [
+        { "id": "t7-food-words", "title": "Food Words", "icon": "apple.svg", "activities": [
+          { "id": "g1-t7-food-match", "type": "match", "title": "Match the Food", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "rice.svg", "word": "rice" }, { "picture": "bread.svg", "word": "bread" }, { "picture": "mango.svg", "word": "mango" }, { "picture": "pineapple.svg", "word": "pineapple" }, { "picture": "papaya.svg", "word": "papaw" }, { "picture": "fish.svg", "word": "fish" } ] },
+          { "id": "g1-t7-food-quiz", "type": "quiz", "title": "What Food Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "rice.svg", "ask": "What is this?", "options": ["rice", "bread", "fish"], "answer": 0 }, { "picture": "mango.svg", "ask": "What is this?", "options": ["papaw", "mango", "pineapple"], "answer": 1 }, { "picture": "pineapple.svg", "ask": "What is this?", "options": ["mango", "banana", "pineapple"], "answer": 2 }, { "picture": "bread.svg", "ask": "What is this?", "options": ["bread", "rice", "cake"], "answer": 0 }, { "picture": "milk.svg", "ask": "What is this?", "options": ["water", "milk", "tea"], "answer": 1 }, { "picture": "papaya.svg", "ask": "What is this?", "options": ["mango", "orange", "papaw"], "answer": 2 } ] },
+          { "id": "g1-t7-food-memory", "type": "memory", "title": "Food Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "rice.svg", "b": "rice" }, { "a": "bread.svg", "b": "bread" }, { "a": "mango.svg", "b": "mango" }, { "a": "pineapple.svg", "b": "pineapple" }, { "a": "fish.svg", "b": "fish" }, { "a": "milk.svg", "b": "milk" } ] } ] },
+        { "id": "t7-eat-or-drink", "title": "Eat or Drink?", "icon": "icon-basket.svg", "activities": [
+          { "id": "g1-t7-eatdrink-sort", "type": "sort", "title": "Do We Eat It or Drink It?", "instructions": "Tap a picture, then tap the right basket.", "minutes": 4,
+            "buckets": [ { "id": "eat", "title": "We eat it", "icon": "apple.svg" }, { "id": "drink", "title": "We drink it", "icon": "water.svg" } ],
+            "items": [ { "text": "rice", "picture": "rice.svg", "bucket": "eat" }, { "text": "bread", "picture": "bread.svg", "bucket": "eat" }, { "text": "mango", "picture": "mango.svg", "bucket": "eat" }, { "text": "fish", "picture": "fish.svg", "bucket": "eat" }, { "text": "milk", "picture": "milk.svg", "bucket": "drink" }, { "text": "water", "picture": "water.svg", "bucket": "drink" }, { "text": "tea", "picture": "tea.svg", "bucket": "drink" } ] },
+          { "id": "g1-t7-like-missing", "type": "missing", "title": "I Like Rice and Curry", "instructions": "Tap the word that fits the gap.", "minutes": 3,
+            "items": [ { "picture": "rice.svg", "sentence": "I ___ rice and curry.", "options": ["like", "has", "am"], "answer": 0 }, { "picture": "milk.svg", "sentence": "I ___ milk in the morning.", "options": ["eat", "drink", "wash"], "answer": 1 }, { "picture": "bread.svg", "sentence": "I ___ bread in the morning.", "options": ["drink", "wash", "eat"], "answer": 2 }, { "picture": "mango.svg", "sentence": "I like mango ___ papaw.", "options": ["and", "is", "the"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-8", "number": 8, "title": "How Information is Received", "icon": "icon-notebook.svg",
-      "outcomes": ["Polite words", "What's your name? My name is ...", "I'm sorry"], "topics": [] },
+      "outcomes": ["Polite words", "What's your name? My name is ...", "I'm sorry"],
+      "topics": [
+        { "id": "t8-news", "title": "How News Comes to Us", "icon": "icon-notebook.svg", "activities": [
+          { "id": "g1-t8-news-match", "type": "match", "title": "Match the Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "television.svg", "word": "television" }, { "picture": "radio.svg", "word": "radio" }, { "picture": "telephone.svg", "word": "telephone" }, { "picture": "newspaper.svg", "word": "newspaper" }, { "picture": "book.svg", "word": "book" } ] },
+          { "id": "g1-t8-news-memory", "type": "memory", "title": "News Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "television.svg", "b": "television" }, { "a": "radio.svg", "b": "radio" }, { "a": "telephone.svg", "b": "telephone" }, { "a": "newspaper.svg", "b": "newspaper" }, { "a": "book.svg", "b": "book" } ] } ] },
+        { "id": "t8-face", "title": "Eyes, Ears and Mouth", "icon": "icon-brain.svg", "activities": [
+          { "id": "g1-t8-face-quiz", "type": "quiz", "title": "Which Part Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "eyes.svg", "ask": "What are these?", "options": ["eyes", "ears", "mouth"], "answer": 0 }, { "picture": "ears.svg", "ask": "What are these?", "options": ["eyes", "ears", "mouth"], "answer": 1 }, { "picture": "mouth.svg", "ask": "What is this?", "options": ["eyes", "ears", "mouth"], "answer": 2 }, { "picture": "eyes.svg", "ask": "We see with our ...", "options": ["eyes", "ears", "mouth"], "answer": 0 }, { "picture": "ears.svg", "ask": "We hear with our ...", "options": ["eyes", "ears", "mouth"], "answer": 1 } ] } ] },
+        { "id": "t8-polite", "title": "Polite Words", "icon": "icon-rainbow.svg", "activities": [
+          { "id": "g1-t8-polite-missing", "type": "missing", "title": "Finish the Polite Word", "instructions": "Tap the word that fits the gap.", "minutes": 3,
+            "items": [ { "sentence": "___ you.", "options": ["Thank", "Sorry", "Hello"], "answer": 0 }, { "sentence": "___ me.", "options": ["Thank", "Excuse", "Good"], "answer": 1 }, { "sentence": "My ___ is Nisal.", "options": ["good", "thank", "name"], "answer": 2 }, { "sentence": "I'm ___.", "options": ["sorry", "name", "excuse"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-9", "number": 9, "title": "Changes in the Environment", "icon": "icon-sprout.svg",
-      "outcomes": ["Weather and tidiness words", "It's ...", "a / an"], "topics": [] },
+      "outcomes": ["Weather and tidiness words", "It's ...", "a / an"],
+      "topics": [
+        { "id": "t9-keep-clean", "title": "Keeping Our Place Clean", "icon": "icon-sprout.svg", "activities": [
+          { "id": "g1-t9-clean-match", "type": "match", "title": "Match the Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "broom.svg", "word": "broom" }, { "picture": "dustbin.svg", "word": "dustbin" }, { "picture": "umbrella.svg", "word": "umbrella" }, { "picture": "rain.svg", "word": "rain" }, { "picture": "flower.svg", "word": "flower" } ] },
+          { "id": "g1-t9-clean-quiz", "type": "quiz", "title": "What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "broom.svg", "ask": "What is this?", "options": ["broom", "dustbin", "umbrella"], "answer": 0 }, { "picture": "dustbin.svg", "ask": "What is this?", "options": ["broom", "dustbin", "basin"], "answer": 1 }, { "picture": "umbrella.svg", "ask": "What is this?", "options": ["kite", "broom", "umbrella"], "answer": 2 }, { "picture": "broom.svg", "ask": "We sweep with a ...", "options": ["broom", "dustbin", "umbrella"], "answer": 0 } ] } ] },
+        { "id": "t9-its", "title": "It's Hot, It's Cold", "icon": "sun.svg", "activities": [
+          { "id": "g1-t9-weather-quiz", "type": "quiz", "title": "How Is It Today?", "instructions": "Look at the picture. Tap the right words.", "minutes": 3,
+            "questions": [ { "picture": "sun.svg", "ask": "How is it today?", "options": ["It's hot.", "It's cold.", "It's wet."], "answer": 0 }, { "picture": "cloud.svg", "ask": "How is it today?", "options": ["It's hot.", "It's cold.", "It's clean."], "answer": 1 }, { "picture": "rain.svg", "ask": "How is it today?", "options": ["It's hot.", "It's dry.", "It's wet."], "answer": 2 }, { "picture": "flower.svg", "ask": "How is the garden?", "options": ["It's beautiful.", "It's cold.", "It's wet."], "answer": 0 } ] } ] },
+        { "id": "t9-a-an", "title": "a or an", "icon": "icon-abc.svg", "activities": [
+          { "id": "g1-t9-aan-missing", "type": "missing", "title": "a or an?", "instructions": "Tap a or an.", "minutes": 3,
+            "items": [ { "picture": "umbrella.svg", "sentence": "This is ___ umbrella.", "options": ["a", "an"], "answer": 1 }, { "picture": "broom.svg", "sentence": "This is ___ broom.", "options": ["a", "an"], "answer": 0 }, { "picture": "apple.svg", "sentence": "This is ___ apple.", "options": ["a", "an"], "answer": 1 }, { "picture": "dustbin.svg", "sentence": "This is ___ dustbin.", "options": ["a", "an"], "answer": 0 }, { "picture": "egg.svg", "sentence": "This is ___ egg.", "options": ["a", "an"], "answer": 1 }, { "picture": "flower.svg", "sentence": "This is ___ flower.", "options": ["a", "an"], "answer": 0 } ] } ] } ] },
+
     { "id": "theme-10", "number": 10, "title": "Likes and Dislikes", "icon": "shape-heart.svg",
-      "outcomes": ["Words for things at school", "I like ..."], "topics": [] },
+      "outcomes": ["Words for things at school", "I like ..."],
+      "topics": [
+        { "id": "t10-things-i-like", "title": "Things I Like", "icon": "shape-heart.svg", "activities": [
+          { "id": "g1-t10-like-match", "type": "match", "title": "Match the Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "ice-cream.svg", "word": "ice cream" }, { "picture": "biscuit.svg", "word": "biscuit" }, { "picture": "banana.svg", "word": "plantain" }, { "picture": "tea.svg", "word": "tea" }, { "picture": "cake.svg", "word": "cake" } ] },
+          { "id": "g1-t10-like-quiz", "type": "quiz", "title": "What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "ice-cream.svg", "ask": "What is this?", "options": ["ice cream", "cake", "tea"], "answer": 0 }, { "picture": "tea.svg", "ask": "What is this?", "options": ["milk", "tea", "water"], "answer": 1 }, { "picture": "biscuit.svg", "ask": "What is this?", "options": ["cake", "bread", "biscuit"], "answer": 2 }, { "picture": "banana.svg", "ask": "What is this?", "options": ["plantain", "mango", "papaw"], "answer": 0 } ] },
+          { "id": "g1-t10-like-memory", "type": "memory", "title": "Things I Like Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "ice-cream.svg", "b": "ice cream" }, { "a": "biscuit.svg", "b": "biscuit" }, { "a": "tea.svg", "b": "tea" }, { "a": "cake.svg", "b": "cake" }, { "a": "book.svg", "b": "book" } ] } ] },
+        { "id": "t10-i-like", "title": "I Like ...", "icon": "icon-abc.svg", "activities": [
+          { "id": "g1-t10-like-order", "type": "order", "title": "Build the Sentence", "instructions": "Tap the words in the right order.", "minutes": 4,
+            "sentences": [ { "words": ["I", "like", "ice", "cream."], "hint": "Start with I." }, { "words": ["I", "like", "my", "school."], "hint": "Start with I." }, { "words": ["I", "like", "my", "friends."], "hint": "Start with I." }, { "words": ["I", "like", "the", "playground."], "hint": "Start with I." } ] } ] } ] },
+
     { "id": "theme-11", "number": 11, "title": "How We Get Our Needs", "icon": "icon-basket.svg",
-      "outcomes": ["Shopping words", "Please give me ...", "Can I have ...?", "Here you are"], "topics": [] },
+      "outcomes": ["Shopping words", "Please give me ...", "Can I have ...?", "Here you are"],
+      "topics": [
+        { "id": "t11-in-the-shop", "title": "In the Shop", "icon": "icon-basket.svg", "activities": [
+          { "id": "g1-t11-shop-match", "type": "match", "title": "Match the Shopping Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "potato.svg", "word": "potato" }, { "picture": "carrot.svg", "word": "carrot" }, { "picture": "coconut.svg", "word": "coconut" }, { "picture": "egg.svg", "word": "egg" }, { "picture": "rice.svg", "word": "rice" }, { "picture": "fish.svg", "word": "fish" } ] },
+          { "id": "g1-t11-shop-quiz", "type": "quiz", "title": "What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "potato.svg", "ask": "What is this?", "options": ["potato", "carrot", "coconut"], "answer": 0 }, { "picture": "carrot.svg", "ask": "What is this?", "options": ["potato", "carrot", "egg"], "answer": 1 }, { "picture": "coconut.svg", "ask": "What is this?", "options": ["potato", "mango", "coconut"], "answer": 2 }, { "picture": "egg.svg", "ask": "What is this?", "options": ["egg", "coconut", "rice"], "answer": 0 } ] } ] },
+        { "id": "t11-school-things", "title": "My School Things", "icon": "icon-pencil.svg", "activities": [
+          { "id": "g1-t11-things-match", "type": "match", "title": "Match My School Thing", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "schoolbag.svg", "word": "school bag" }, { "picture": "lunchbox.svg", "word": "lunch box" }, { "picture": "pencil.svg", "word": "pencil" }, { "picture": "book.svg", "word": "book" }, { "picture": "shirt.svg", "word": "shirt" } ] } ] },
+        { "id": "t11-please", "title": "Asking Politely", "icon": "icon-rainbow.svg", "activities": [
+          { "id": "g1-t11-please-order", "type": "order", "title": "Ask Politely", "instructions": "Tap the words in the right order.", "minutes": 4,
+            "sentences": [ { "words": ["Please", "give", "me", "a", "book."], "hint": "Start with Please." }, { "words": ["Can", "I", "have", "a", "pencil?"], "hint": "Start with Can." }, { "words": ["Here", "you", "are."], "hint": "Start with Here." }, { "words": ["Thank", "you", "very", "much."], "hint": "Start with Thank." } ] } ] } ] },
+
     { "id": "theme-12", "number": 12, "title": "Transport", "icon": "bus.svg",
-      "outcomes": ["Vehicle words", "I see ...", "This is a ...", "I come by ..."], "topics": [] },
+      "outcomes": ["Vehicle words", "I see ...", "This is a ...", "I come by ..."],
+      "topics": [
+        { "id": "t12-vehicles", "title": "Vehicles", "icon": "bus.svg", "activities": [
+          { "id": "g1-t12-vehicles-match", "type": "match", "title": "Match the Vehicle", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "bus.svg", "word": "bus" }, { "picture": "car.svg", "word": "car" }, { "picture": "van.svg", "word": "van" }, { "picture": "train.svg", "word": "train" }, { "picture": "boat.svg", "word": "boat" }, { "picture": "bicycle.svg", "word": "bicycle" } ] },
+          { "id": "g1-t12-vehicles-quiz", "type": "quiz", "title": "What Vehicle Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "bus.svg", "ask": "What is this?", "options": ["bus", "van", "car"], "answer": 0 }, { "picture": "train.svg", "ask": "What is this?", "options": ["bus", "train", "boat"], "answer": 1 }, { "picture": "boat.svg", "ask": "What is this?", "options": ["car", "train", "boat"], "answer": 2 }, { "picture": "bicycle.svg", "ask": "What is this?", "options": ["bicycle", "car", "van"], "answer": 0 }, { "picture": "aeroplane.svg", "ask": "What is this?", "options": ["boat", "aeroplane", "train"], "answer": 1 }, { "picture": "van.svg", "ask": "What is this?", "options": ["bus", "car", "van"], "answer": 2 } ] },
+          { "id": "g1-t12-vehicles-memory", "type": "memory", "title": "Vehicle Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "bus.svg", "b": "bus" }, { "a": "car.svg", "b": "car" }, { "a": "van.svg", "b": "van" }, { "a": "train.svg", "b": "train" }, { "a": "boat.svg", "b": "boat" }, { "a": "bicycle.svg", "b": "bicycle" } ] } ] },
+        { "id": "t12-traffic-lights", "title": "Traffic Lights", "icon": "traffic-lights.svg", "activities": [
+          { "id": "g1-t12-traffic-quiz", "type": "quiz", "title": "Stop, Get Ready, Go", "instructions": "Look at the light. Tap what it tells us.", "minutes": 3,
+            "questions": [ { "picture": "colour-red.svg", "ask": "The light is red. What do we do?", "options": ["Stop.", "Go.", "Get ready."], "answer": 0 }, { "picture": "colour-green.svg", "ask": "The light is green. What do we do?", "options": ["Stop.", "Go.", "Get ready."], "answer": 1 }, { "picture": "colour-yellow.svg", "ask": "The light is yellow. What do we do?", "options": ["Stop.", "Go.", "Get ready."], "answer": 2 }, { "picture": "traffic-lights.svg", "ask": "What is this?", "options": ["traffic lights", "a bus", "a train"], "answer": 0 } ] } ] },
+        { "id": "t12-i-see", "title": "I See a Bus", "icon": "icon-abc.svg", "activities": [
+          { "id": "g1-t12-isee-order", "type": "order", "title": "Build the Sentence", "instructions": "Tap the words in the right order.", "minutes": 4,
+            "sentences": [ { "words": ["I", "see", "a", "bus."], "hint": "Start with I." }, { "words": ["This", "is", "a", "car."], "hint": "Start with This." }, { "words": ["I", "come", "by", "train."], "hint": "Start with I." }, { "words": ["I", "walk", "to", "school."], "hint": "Start with I." } ] } ] } ] },
+
     { "id": "theme-13", "number": 13, "title": "Play with Light", "icon": "shape-star.svg",
-      "outcomes": ["Light and dark words", "It's ...", "Is it ...?"], "topics": [] },
+      "outcomes": ["Light and dark words", "It's ...", "Is it ...?"],
+      "topics": [
+        { "id": "t13-light-words", "title": "Light Words", "icon": "bulb.svg", "activities": [
+          { "id": "g1-t13-light-match", "type": "match", "title": "Match the Light Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "sun.svg", "word": "sun" }, { "picture": "moon.svg", "word": "moon" }, { "picture": "star.svg", "word": "star" }, { "picture": "torch.svg", "word": "torch" }, { "picture": "lamp.svg", "word": "lamp" }, { "picture": "bulb.svg", "word": "bulb" } ] },
+          { "id": "g1-t13-light-quiz", "type": "quiz", "title": "What Gives Us Light?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "torch.svg", "ask": "What is this?", "options": ["torch", "lamp", "bulb"], "answer": 0 }, { "picture": "lamp.svg", "ask": "What is this?", "options": ["torch", "lamp", "star"], "answer": 1 }, { "picture": "bulb.svg", "ask": "What is this?", "options": ["moon", "lamp", "bulb"], "answer": 2 }, { "picture": "sun.svg", "ask": "What gives us light in the day?", "options": ["the sun", "the moon", "a torch"], "answer": 0 } ] },
+          { "id": "g1-t13-light-memory", "type": "memory", "title": "Light Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "sun.svg", "b": "sun" }, { "a": "moon.svg", "b": "moon" }, { "a": "star.svg", "b": "star" }, { "a": "torch.svg", "b": "torch" }, { "a": "lamp.svg", "b": "lamp" }, { "a": "bulb.svg", "b": "bulb" } ] } ] },
+        { "id": "t13-day-night", "title": "Day or Night?", "icon": "moon.svg", "activities": [
+          { "id": "g1-t13-daynight-sort", "type": "sort", "title": "Day or Night?", "instructions": "Tap a picture, then tap the right basket.", "minutes": 4,
+            "buckets": [ { "id": "day", "title": "In the day", "icon": "sun.svg" }, { "id": "night", "title": "At night", "icon": "moon.svg" } ],
+            "items": [ { "text": "sun", "picture": "sun.svg", "bucket": "day" }, { "text": "bird", "picture": "bird.svg", "bucket": "day" }, { "text": "kite", "picture": "kite.svg", "bucket": "day" }, { "text": "moon", "picture": "moon.svg", "bucket": "night" }, { "text": "star", "picture": "star.svg", "bucket": "night" }, { "text": "lamp", "picture": "lamp.svg", "bucket": "night" }, { "text": "torch", "picture": "torch.svg", "bucket": "night" } ] } ] } ] },
+
     { "id": "theme-14", "number": 14, "title": "Places Where People Work", "icon": "icon-gears.svg",
-      "outcomes": ["Work and worker words", "He is ... / She is ...", "What is she / he?"], "topics": [] },
+      "outcomes": ["Work and worker words", "He is ... / She is ...", "What is she / he?"],
+      "topics": [
+        { "id": "t14-workers", "title": "People at Work", "icon": "icon-gears.svg", "activities": [
+          { "id": "g1-t14-workers-match", "type": "match", "title": "Match the Worker", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "farmer.svg", "word": "farmer" }, { "picture": "nurse.svg", "word": "nurse" }, { "picture": "doctor.svg", "word": "doctor" }, { "picture": "driver.svg", "word": "driver" }, { "picture": "postman.svg", "word": "postman" }, { "picture": "teacher.svg", "word": "teacher" } ] },
+          { "id": "g1-t14-workers-quiz", "type": "quiz", "title": "What Is He? What Is She?", "instructions": "Look at the picture. Tap the right answer.", "minutes": 3,
+            "questions": [ { "picture": "farmer.svg", "ask": "What is he?", "options": ["He is a farmer.", "He is a doctor.", "He is a driver."], "answer": 0 }, { "picture": "nurse.svg", "ask": "What is she?", "options": ["She is a teacher.", "She is a nurse.", "She is a farmer."], "answer": 1 }, { "picture": "postman.svg", "ask": "What is he?", "options": ["He is a doctor.", "He is a driver.", "He is a postman."], "answer": 2 }, { "picture": "teacher.svg", "ask": "What is she?", "options": ["She is a teacher.", "She is a nurse.", "She is a farmer."], "answer": 0 } ] },
+          { "id": "g1-t14-workers-memory", "type": "memory", "title": "Worker Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "farmer.svg", "b": "farmer" }, { "a": "nurse.svg", "b": "nurse" }, { "a": "doctor.svg", "b": "doctor" }, { "a": "driver.svg", "b": "driver" }, { "a": "postman.svg", "b": "postman" }, { "a": "teacher.svg", "b": "teacher" } ] } ] },
+        { "id": "t14-who-works", "title": "Who Does This Work?", "icon": "icon-target.svg", "activities": [
+          { "id": "g1-t14-who-quiz", "type": "quiz", "title": "Who Does This Work?", "instructions": "Read the question. Tap the right worker.", "minutes": 4,
+            "questions": [ { "ask": "Who works in the paddy field?", "options": ["a farmer", "a postman", "a nurse"], "answer": 0 }, { "ask": "Who brings us letters?", "options": ["a driver", "a postman", "a teacher"], "answer": 1 }, { "ask": "Who helps us in school?", "options": ["a farmer", "a driver", "a teacher"], "answer": 2 }, { "ask": "Who drives the bus?", "options": ["a driver", "a doctor", "a farmer"], "answer": 0 }, { "ask": "Who helps us when we are sick?", "options": ["a postman", "a nurse", "a driver"], "answer": 1 } ] } ] } ] },
+
     { "id": "theme-15", "number": 15, "title": "Different Places in the Environment", "icon": "tree.svg",
-      "outcomes": ["Garden and field words", "There's ...", "There are ..."], "topics": [] },
+      "outcomes": ["Garden and field words", "There's ...", "There are ..."],
+      "topics": [
+        { "id": "t15-garden", "title": "In the Garden", "icon": "tree.svg", "activities": [
+          { "id": "g1-t15-garden-match", "type": "match", "title": "Match the Garden Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "tree.svg", "word": "tree" }, { "picture": "leaf.svg", "word": "leaf" }, { "picture": "stone.svg", "word": "stone" }, { "picture": "flower.svg", "word": "flower" }, { "picture": "mango.svg", "word": "mango" }, { "picture": "coconut.svg", "word": "coconut" } ] },
+          { "id": "g1-t15-garden-quiz", "type": "quiz", "title": "What Is in the Garden?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "leaf.svg", "ask": "What is this?", "options": ["leaf", "flower", "stone"], "answer": 0 }, { "picture": "stone.svg", "ask": "What is this?", "options": ["tree", "stone", "leaf"], "answer": 1 }, { "picture": "orange.svg", "ask": "What is this?", "options": ["mango", "coconut", "orange"], "answer": 2 }, { "picture": "tree.svg", "ask": "What is this?", "options": ["tree", "leaf", "flower"], "answer": 0 } ] },
+          { "id": "g1-t15-garden-memory", "type": "memory", "title": "Garden Pairs", "instructions": "Turn over two cards. Find a picture and its word.", "minutes": 4,
+            "pairs": [ { "a": "tree.svg", "b": "tree" }, { "a": "leaf.svg", "b": "leaf" }, { "a": "stone.svg", "b": "stone" }, { "a": "flower.svg", "b": "flower" }, { "a": "orange.svg", "b": "orange" } ] } ] },
+        { "id": "t15-there-is", "title": "There's and There Are", "icon": "icon-abc.svg", "activities": [
+          { "id": "g1-t15-there-missing", "type": "missing", "title": "Is or Are?", "instructions": "Tap the word that fits the gap.", "minutes": 3,
+            "items": [ { "picture": "tree.svg", "sentence": "There ___ a tree in the garden.", "options": ["is", "are"], "answer": 0 }, { "picture": "flower.svg", "sentence": "There ___ many flowers.", "options": ["is", "are"], "answer": 1 }, { "picture": "stone.svg", "sentence": "There ___ a stone here.", "options": ["is", "are"], "answer": 0 }, { "picture": "leaf.svg", "sentence": "There ___ green leaves.", "options": ["is", "are"], "answer": 1 } ] } ] } ] },
+
     { "id": "theme-16", "number": 16, "title": "People Who Help Us", "icon": "icon-brain.svg",
-      "outcomes": ["Helping words", "I can't ...", "Can you help me ...?", "Thank you very much"], "topics": [] }
+      "outcomes": ["Helping words", "I can't ...", "Can you help me ...?", "Thank you very much"],
+      "topics": [
+        { "id": "t16-helpers", "title": "People Who Help Us", "icon": "shape-heart.svg", "activities": [
+          { "id": "g1-t16-helpers-match", "type": "match", "title": "Match the Word", "instructions": "Tap a picture. Then tap its word.", "minutes": 3,
+            "pairs": [ { "picture": "grandmother.svg", "word": "grandmother" }, { "picture": "grandfather.svg", "word": "grandfather" }, { "picture": "doctor.svg", "word": "doctor" }, { "picture": "nurse.svg", "word": "nurse" }, { "picture": "wheelchair.svg", "word": "wheel chair" }, { "picture": "walking-stick.svg", "word": "walking stick" } ] },
+          { "id": "g1-t16-helpers-quiz", "type": "quiz", "title": "Who Is It? What Is It?", "instructions": "Look at the picture. Tap the right word.", "minutes": 3,
+            "questions": [ { "picture": "grandmother.svg", "ask": "Who is this?", "options": ["grandmother", "mother", "sister"], "answer": 0 }, { "picture": "grandfather.svg", "ask": "Who is this?", "options": ["father", "grandfather", "brother"], "answer": 1 }, { "picture": "wheelchair.svg", "ask": "What is this?", "options": ["a walking stick", "a bicycle", "a wheel chair"], "answer": 2 }, { "picture": "walking-stick.svg", "ask": "What is this?", "options": ["a walking stick", "a broom", "a pencil"], "answer": 0 } ] } ] },
+        { "id": "t16-can-you-help", "title": "Can You Help Me?", "icon": "icon-rainbow.svg", "activities": [
+          { "id": "g1-t16-help-order", "type": "order", "title": "Ask for Help", "instructions": "Tap the words in the right order.", "minutes": 4,
+            "sentences": [ { "words": ["Can", "you", "help", "me?"], "hint": "Start with Can." }, { "words": ["Thank", "you", "very", "much."], "hint": "Start with Thank." }, { "words": ["Let's", "go", "home."], "hint": "Start with Let's." }, { "words": ["Well", "done!"], "hint": "Two words only." } ] } ] } ] }
   ],
   "topics": [
     {

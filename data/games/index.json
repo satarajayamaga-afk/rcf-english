@@ -7,9 +7,23 @@
     "first to discover what exists, instead of having grade numbers and",
     "file names written into its code.",
     "",
-    "A 'pack' is one grade file plus the illustrations its activities name.",
+    "There are TWO collections, and they never mix:",
+    "",
+    "  packs        the Sri Lankan Pupil's Book collection, organised",
+    "               Grade > Unit > Topic > Game, built strictly from the",
+    "               official Pupil's Books and syllabuses.",
+    "",
+    "  globalPacks  the Global English collection, organised",
+    "               Level > Topic/Skill > Game. International/British",
+    "               English, no Sri Lankan grade labels, no curriculum",
+    "               claims. Levels are child-facing; the CEFR band is",
+    "               recorded for adults and is not shown to children.",
+    "",
+    "A 'pack' is one file plus the illustrations its activities name.",
     "A pack is self-contained: bundle it with an app, or download it once,",
-    "and every game in it plays with no connection at all.",
+    "and every game in it plays with no connection at all. Both collections",
+    "use the same game engines, the same illustration set and the same",
+    "scoring, so neither needs code of its own.",
     "",
     "See CONTENT-SCHEMA.md for the exact shape of a pack and the rules of",
     "each game type."
@@ -30,6 +44,13 @@
     { "id": "grade-3", "grade": 3, "title": "Grade 3", "theme": "meadow",   "file": "data/games/grade-3.json" },
     { "id": "grade-4", "grade": 4, "title": "Grade 4", "theme": "berry",    "file": "data/games/grade-4.json" },
     { "id": "grade-5", "grade": 5, "title": "Grade 5", "theme": "sunset",   "file": "data/games/grade-5.json" }
+  ],
+
+  "globalPacks": [
+    { "id": "global-beginner",         "level": 1, "title": "Beginner",         "cefr": "Pre-A1", "theme": "sunshine", "file": "data/games/global-beginner.json" },
+    { "id": "global-early-learner",    "level": 2, "title": "Early Learner",    "cefr": "A1",     "theme": "meadow",   "file": "data/games/global-early-learner.json" },
+    { "id": "global-elementary",       "level": 3, "title": "Elementary",       "cefr": "A1-A2",  "theme": "sky",      "file": "data/games/global-elementary.json" },
+    { "id": "global-pre-intermediate", "level": 4, "title": "Pre-Intermediate", "cefr": "A2",     "theme": "berry",    "file": "data/games/global-pre-intermediate.json" }
   ],
 
   "themes": {

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "kind": "global",
+  "id": "global-beginner",
+  "level": 1,
+  "title": "Beginner",
+  "cefr": "Pre-A1",
+  "theme": "sunshine",
+  "blurb": "First words and pictures. No reading needed.",
+  "icon": "icon-rainbow.svg",
+  "english": "international",
+  "topicsStatus": "in-progress",
+  "topics": [
+    {
+      "id": "animals-and-pets",
+      "title": "Animals and Pets",
+      "icon": "icon-paw.svg",
+      "activities": [
+        {
+          "id": "gl-b-animals-match",
+          "type": "match",
+          "title": "Match the Animal",
+          "instructions": "Tap a picture. Then tap its word.",
+          "minutes": 3,
+          "pairs": [
+            { "picture": "cat.svg", "word": "cat" },
+            { "picture": "dog.svg", "word": "dog" },
+            { "picture": "rabbit.svg", "word": "rabbit" },
+            { "picture": "bird.svg", "word": "bird" },
+            { "picture": "fish.svg", "word": "fish" },
+            { "picture": "elephant.svg", "word": "elephant" }
+          ]
+        },
+        {
+          "id": "gl-b-animals-quiz",
+          "type": "quiz",
+          "title": "What Animal Is It?",
+          "instructions": "Look at the picture. Tap the right word.",
+          "minutes": 3,
+          "questions": [
+            { "picture": "cat.svg", "ask": "What is this?", "options": ["cat", "dog", "bird"], "answer": 0 },
+            { "picture": "frog.svg", "ask": "What is this?", "options": ["fish", "frog", "goat"], "answer": 1 },
+            { "picture": "elephant.svg", "ask": "What is this?", "options": ["goat", "cow", "elephant"], "answer": 2 },
+            { "picture": "duck.svg", "ask": "What is this?", "options": ["duck", "hen", "bird"], "answer": 0 },
+            { "picture": "bee.svg", "ask": "What is this?", "options": ["butterfly", "bee", "bird"], "answer": 1 },
+            { "picture": "goat.svg", "ask": "What is this?", "options": ["cow", "dog", "goat"], "answer": 2 }
+          ]
+        },
+        {
+          "id": "gl-b-animals-memory",
+          "type": "memory",
+          "title": "Animal Pairs",
+          "instructions": "Turn over two cards. Find a picture and its word.",
+          "minutes": 4,
+          "pairs": [
+            { "a": "cat.svg", "b": "cat" },
+            { "a": "dog.svg", "b": "dog" },
+            { "a": "rabbit.svg", "b": "rabbit" },
+            { "a": "duck.svg", "b": "duck" },
+            { "a": "frog.svg", "b": "frog" },
+            { "a": "bee.svg", "b": "bee" }
+          ]
+        },
+        {
+          "id": "gl-b-animals-sort",
+          "type": "sort",
+          "title": "Pets or Wild Animals?",
+          "instructions": "Tap an animal, then tap the right basket.",
+          "minutes": 4,
+          "buckets": [
+            { "id": "pet", "title": "Pets", "icon": "house.svg" },
+            { "id": "wild", "title": "Wild animals", "icon": "tree.svg" }
+          ],
+          "items": [
+            { "text": "cat", "picture": "cat.svg", "bucket": "pet" },
+            { "text": "dog", "picture": "dog.svg", "bucket": "pet" },
+            { "text": "rabbit", "picture": "rabbit.svg", "bucket": "pet" },
+            { "text": "fish", "picture": "fish.svg", "bucket": "pet" },
+            { "text": "elephant", "picture": "elephant.svg", "bucket": "wild" },
+            { "text": "frog", "picture": "frog.svg", "bucket": "wild" },
+            { "text": "bee", "picture": "bee.svg", "bucket": "wild" }
+          ]
+        }
+      ]
+    },
+    { "id": "colours-and-shapes", "title": "Colours and Shapes", "icon": "icon-palette.svg", "activities": [] },
+    { "id": "numbers", "title": "Numbers 1 to 10", "icon": "icon-numbers.svg", "activities": [] },
+    { "id": "my-family", "title": "My Family", "icon": "shape-heart.svg", "activities": [] },
+    { "id": "my-body", "title": "My Body", "icon": "icon-brain.svg", "activities": [] },
+    { "id": "food-and-drinks", "title": "Food and Drinks", "icon": "apple.svg", "activities": [] },
+    { "id": "toys", "title": "Toys", "icon": "ball.svg", "activities": [] },
+    { "id": "alphabet-and-phonics", "title": "Alphabet and Phonics", "icon": "icon-abc.svg", "activities": [] }
+  ]
+}

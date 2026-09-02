@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "global",
+  "id": "global-elementary",
+  "level": 3,
+  "title": "Elementary",
+  "cefr": "A1-A2",
+  "theme": "sky",
+  "blurb": "Longer sentences, spelling and first grammar.",
+  "icon": "icon-target.svg",
+  "english": "international",
+  "topicsStatus": "planned",
+  "topics": [
+    { "id": "jobs-and-occupations", "title": "Jobs and Occupations", "icon": "icon-gears.svg", "activities": [] },
+    { "id": "places-in-town", "title": "Places in Town", "icon": "school.svg", "activities": [] },
+    { "id": "daily-routines", "title": "Daily Routines", "icon": "sun.svg", "activities": [] },
+    { "id": "hobbies-and-sports", "title": "Hobbies and Sports", "icon": "icon-trophy.svg", "activities": [] },
+    { "id": "prepositions", "title": "Prepositions", "icon": "icon-blocks.svg", "activities": [] },
+    { "id": "articles", "title": "a, an and the", "icon": "icon-abc.svg", "activities": [] },
+    { "id": "pronouns", "title": "Pronouns", "icon": "icon-brain.svg", "activities": [] },
+    { "id": "question-words", "title": "Question Words", "icon": "icon-puzzle.svg", "activities": [] },
+    { "id": "spelling", "title": "Spelling", "icon": "icon-pencil.svg", "activities": [] },
+    { "id": "simple-present", "title": "Simple Present", "icon": "icon-notebook.svg", "activities": [] }
+  ]
+}

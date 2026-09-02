@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "global",
+  "id": "global-early-learner",
+  "level": 2,
+  "title": "Early Learner",
+  "cefr": "A1",
+  "theme": "meadow",
+  "blurb": "Everyday words and very short sentences.",
+  "icon": "icon-sprout.svg",
+  "english": "international",
+  "topicsStatus": "planned",
+  "topics": [
+    { "id": "my-home", "title": "My Home", "icon": "house.svg", "activities": [] },
+    { "id": "school-and-classroom", "title": "School and Classroom", "icon": "icon-notebook.svg", "activities": [] },
+    { "id": "clothes", "title": "Clothes", "icon": "tshirt.svg", "activities": [] },
+    { "id": "weather-and-seasons", "title": "Weather and Seasons", "icon": "cloud.svg", "activities": [] },
+    { "id": "transport", "title": "Transport", "icon": "bus.svg", "activities": [] },
+    { "id": "action-words", "title": "Action Words", "icon": "ball.svg", "activities": [] },
+    { "id": "feelings-and-emotions", "title": "Feelings and Emotions", "icon": "shape-heart.svg", "activities": [] },
+    { "id": "opposites", "title": "Opposites", "icon": "icon-puzzle.svg", "activities": [] },
+    { "id": "singular-and-plural", "title": "Singular and Plural", "icon": "icon-blocks.svg", "activities": [] },
+    { "id": "rhyming-words", "title": "Rhyming Words", "icon": "drum.svg", "activities": [] }
+  ]
+}

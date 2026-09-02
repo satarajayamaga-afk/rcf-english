@@ -29,6 +29,19 @@ const TYPE_LABEL = {
   sort: "Sorting", order: "Sentences", missing: "Missing word"
 };
 
+/* The two collections. They share every engine, every illustration and every
+   rule of scoring; all that differs is how the content is organised and what
+   the doors on the hub say.
+
+     pupils-book   Grade > Unit > Topic > Game, from the Sri Lankan books
+     global        Level > Topic/Skill > Game, international English
+
+   Declared before start() runs, because start() reads it. */
+const GLOBAL_LEVELS = [
+  "global-beginner", "global-early-learner",
+  "global-elementary", "global-pre-intermediate"
+];
+
 const root = document.querySelector("[data-game-zone]");
 if (root) start(root);
 
@@ -36,12 +49,18 @@ async function start(mount) {
   const mode = mount.dataset.gameZone;
   if (mode === "hub") return renderHub(mount);
   if (mode === "teacher") return renderTeacher(mount);
-  return renderGrade(mount, Number(mount.dataset.grade || 1));
+  if (mode === "global-hub") return renderGlobalHub(mount);
+  if (mode === "global-level") return renderPack(mount, mount.dataset.pack);
+  return renderPack(mount, `grade-${Number(mount.dataset.grade || 1)}`);
+}
+
+async function loadPack(id) {
+  const data = await loadData(`games/${id}`);
+  return data || null;
 }
 
 async function loadGrade(n) {
-  const data = await loadData(`games/grade-${n}`);
-  return data || null;
+  return loadPack(`grade-${n}`);
 }
 
 /**
@@ -117,25 +136,72 @@ async function renderHub(mount) {
     </div>`;
 }
 
-/* ---------------------------------------------------------------- grade */
+/* --------------------------------------------------------- global hub */
 
-async function renderGrade(mount, gradeNumber) {
-  const grade = await loadGrade(gradeNumber);
+/**
+ * The four doors of the Global English collection.
+ *
+ * Children see the level name only. The CEFR band is recorded in the data for
+ * teachers and parents and is shown small, because "Pre-A1" means nothing to a
+ * six-year-old and a great deal to the adult choosing for them.
+ */
+async function renderGlobalHub(mount) {
+  const packs = [];
+  for (const id of GLOBAL_LEVELS) {
+    const p = await loadPack(id);
+    if (p) packs.push(p);
+  }
+  mount.innerHTML = `
+    <div class="gz-doors">
+      ${packs.map((p) => {
+        const ids = (p.topics || []).flatMap((t) => (t.activities || []).map((a) => a.id));
+        const stars = progress.starsForGrade(ids);
+        return `
+        <a class="gz-door" data-theme="${esc(p.theme)}" href="${esc(p.id.replace(/^global-/, ""))}/">
+          <span class="gz-door__badge">${pictureHTML(p.icon, "")}</span>
+          <span class="gz-door__grade">${esc(p.title)}</span>
+          <span class="gz-door__blurb">${esc(p.blurb || "")}</span>
+          <span class="gz-door__meta">
+            <span class="gz-door__count">${ids.length ? `${ids.length} games` : "In preparation"}</span>
+            <span class="gz-door__stars">${stars}<span aria-hidden="true">★</span></span>
+          </span>
+          <span class="gz-door__cefr">${esc(p.cefr || "")}</span>
+        </a>`;
+      }).join("")}
+    </div>`;
+}
+
+/* ----------------------------------------------------------------- pack */
+
+async function renderPack(mount, packId) {
+  const grade = await loadPack(packId);
   if (!grade) {
-    mount.innerHTML = `<p class="gz-error">The games for this grade could not be loaded.</p>`;
+    mount.innerHTML = `<p class="gz-error">The games for this page could not be loaded.</p>`;
     return;
   }
+  const isGlobal = grade.kind === "global";
   setTheme(mount, grade.theme);
   const all = activitiesOf(grade);
   let currentUnit = null;   // the unit being worked through, if any
 
-  /** One topic and its game cards. Used by both the unit view and practice. */
+  /** One topic and its game cards. Used by the unit view, practice and levels. */
   function topicHTML(topic) {
+    const activities = topic.activities || [];
+    const head = `<h2 class="gz-topic__title"><span class="gz-topic__icon" aria-hidden="true">${pictureHTML(topic.icon, "")}</span>${esc(topic.title)}</h2>`;
+    // A topic that is listed but not written yet says so, rather than showing
+    // an empty shelf where the games should be.
+    if (!activities.length) {
+      return `
+        <section class="gz-topic gz-topic--soon">
+          ${head}
+          <p class="gz-note">Games for this topic are being written.</p>
+        </section>`;
+    }
     return `
         <section class="gz-topic">
-          <h2 class="gz-topic__title"><span class="gz-topic__icon" aria-hidden="true">${pictureHTML(topic.icon, "")}</span>${esc(topic.title)}</h2>
+          ${head}
           <div class="gz-cards">
-            ${(topic.activities || []).map((a) => {
+            ${activities.map((a) => {
               const saved = progress.get(a.id);
               return `
               <button type="button" class="gz-gamecard" data-play="${esc(a.id)}">
@@ -214,8 +280,8 @@ async function renderGrade(mount, gradeNumber) {
       <div class="gz-gradehead">
         <p class="gz-gradehead__stars">${stars}<span aria-hidden="true">★</span> collected</p>
       </div>
-      ${unitsHTML()}
-      ${(grade.topics || []).length ? `
+      ${isGlobal ? "" : unitsHTML()}
+      ${!isGlobal && (grade.topics || []).length ? `
         <section class="gz-practice">
           <h2 class="gz-section-title">Practice games</h2>
           <p class="gz-note">Extra games that are not tied to a unit.</p>

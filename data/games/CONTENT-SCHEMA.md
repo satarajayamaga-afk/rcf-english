@@ -24,11 +24,46 @@ every game in it plays with no connection.
 | File | What it is |
 |---|---|
 | `index.json` | the catalogue: which packs exist, where they are, the theme colours |
-| `grade-1.json` … `grade-5.json` | the packs |
+| `grade-1.json` … `grade-5.json` | the Pupil's Book packs |
+| `global-beginner.json` … `global-pre-intermediate.json` | the Global English packs |
 | `../../assets/img/games/*.svg` | the illustration set, about 0.6 KB each |
 
 A front end should read `index.json` first and never hard-code grade numbers or
 file names.
+
+---
+
+## 1a. Two collections
+
+`index.json` holds **two separate lists**, and content never moves between them.
+
+| | `packs` | `globalPacks` |
+|---|---|---|
+| Audience | Sri Lankan primary schools | anyone learning English |
+| Hierarchy | Grade → Unit → Topic → Game | Level → Topic/Skill → Game |
+| Source of truth | the official Pupil's Book or syllabus | written for the topic itself |
+| Labels | "Grade 3, Unit 4" | "Elementary", never a grade number |
+| English | as the Sri Lankan books teach it | International/British English |
+
+A global pack is marked `"kind": "global"` and carries `level` (1–4), a
+child-facing `title` (Beginner, Early Learner, Elementary, Pre-Intermediate)
+and a `cefr` band (`Pre-A1`, `A1`, `A1-A2`, `A2`). **The CEFR band is for
+adults**: show it to a teacher or parent choosing a level, never as the label a
+child navigates by.
+
+Global packs have **no `units`** — their `topics` array *is* the level's
+contents, so a global pack is simply a pack whose games are not tied to any
+book. Everything else is identical: the same six engines, the same
+illustrations, the same scoring, the same progress store. Neither collection
+needs code of its own.
+
+Global content must be culturally inclusive: names, foods, homes and situations
+should come from many parts of the world, and Sri Lanka-specific references
+belong in the Pupil's Book packs, not here.
+
+A topic that is listed but not yet written keeps an empty `activities` array.
+The front end shows it in place with "Games for this topic are being written",
+so the planned shape of a level is visible without pretending the games exist.
 
 ---
 

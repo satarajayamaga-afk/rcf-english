@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "global",
+  "id": "global-pre-intermediate",
+  "level": 4,
+  "title": "Pre-Intermediate",
+  "cefr": "A2",
+  "theme": "berry",
+  "blurb": "Building sentences, reading and real conversations.",
+  "icon": "icon-trophy.svg",
+  "english": "international",
+  "topicsStatus": "planned",
+  "topics": [
+    { "id": "nature-and-environment", "title": "Nature and Environment", "icon": "tree.svg", "activities": [] },
+    { "id": "adjectives", "title": "Adjectives", "icon": "icon-palette.svg", "activities": [] },
+    { "id": "simple-past", "title": "Simple Past", "icon": "icon-folders.svg", "activities": [] },
+    { "id": "sentence-building", "title": "Sentence Building", "icon": "icon-blocks.svg", "activities": [] },
+    { "id": "reading-comprehension", "title": "Reading Comprehension", "icon": "book.svg", "activities": [] },
+    { "id": "everyday-conversations", "title": "Everyday Conversations", "icon": "telephone.svg", "activities": [] },
+    { "id": "british-english-vocabulary", "title": "British English Vocabulary", "icon": "globe.svg", "activities": [] }
+  ]
+}

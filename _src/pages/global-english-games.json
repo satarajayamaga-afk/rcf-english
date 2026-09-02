@@ -1,0 +1,125 @@
+{
+  "_readme": [
+    "GLOBAL ENGLISH GAMES",
+    "---------------------------------------------------------------------",
+    "The international-facing half of the Game Zone: five pages, a hub and",
+    "one per level. These are NOT the Sri Lankan Pupil's Book games and must",
+    "never be labelled with Sri Lankan grade numbers or presented as part of",
+    "that curriculum.",
+    "",
+    "Organised Level > Topic/Skill > Game. The child-facing levels are",
+    "Beginner, Early Learner, Elementary and Pre-Intermediate; the CEFR band",
+    "(Pre-A1 / A1 / A2) is carried in the data for teachers and parents.",
+    "",
+    "International/British English throughout. Content comes from",
+    "data/games/global-*.json and uses exactly the same six engines, the",
+    "same illustrations and the same scoring as the Pupil's Book games."
+  ],
+
+  "pages": [
+    {
+      "slug": "english-games",
+      "title": "Free English Games for Kids",
+      "metaTitle": "Free English Games for Kids | Vocabulary, Phonics and Grammar | RCF English",
+      "description": "Free online English games for children and ESL learners: vocabulary, phonics, spelling, grammar and sentence building. Four levels, plays on any phone, no account needed.",
+      "keywords": "free english games for kids, esl games for children, english vocabulary games, phonics games, english grammar games for kids, learn english games online free",
+      "kicker": "Global English Games",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "hero": { "text": "Free English games for children learning English anywhere in the world. Vocabulary, phonics, spelling, grammar and sentence building, in four levels. Every game takes three to five minutes and works on a phone." },
+      "blocks": [
+        { "type": "game-zone", "mode": "global-hub", "theme": "sky" },
+        {
+          "type": "cards",
+          "heading": "How these games work",
+          "columns": "3",
+          "items": [
+            { "title": "Choose a level", "icon": "1", "text": "Beginner for first words and pictures, then Early Learner, Elementary and Pre-Intermediate. Each level tells you its CEFR band if you want it." },
+            { "title": "Choose a topic", "icon": "2", "text": "Animals, family, food, colours, clothes, weather, jobs, feelings, phonics, spelling, grammar, sentence building and more." },
+            { "title": "Play and collect stars", "icon": "3", "text": "Up to three stars a game. Stars stay on your own device: nothing is sent anywhere and no account is needed." }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "heading": "Two collections, one Game Zone",
+          "text": "These Global English games are for learners anywhere. If you are following the Sri Lankan primary syllabus, the Primary Game Zone has games built unit by unit from the official Pupil's Books instead."
+        },
+        { "type": "buttons", "items": [ { "label": "Primary Game Zone (Sri Lankan syllabus)", "url": "primary-english/game-zone/" } ] }
+      ]
+    },
+
+    {
+      "slug": "english-games/beginner",
+      "title": "Beginner English Games",
+      "metaTitle": "Beginner English Games for Kids | First Words and Pictures | RCF English",
+      "description": "Free beginner English games for young children: animals, colours, numbers, family, body, food, toys and first phonics. Pictures throughout, no reading needed.",
+      "keywords": "beginner english games for kids, first english words game, pre-a1 english games, english games for 4 year olds, picture word games english",
+      "kicker": "Global English Games",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
+      "backTo": { "label": "English Games", "url": "english-games/" },
+      "hero": { "text": "First words and pictures. Nothing here needs reading, so a child can play before they can read. CEFR Pre-A1." },
+      "blocks": [
+        { "type": "game-zone", "mode": "global-level", "pack": "global-beginner", "theme": "sunshine" }
+      ]
+    },
+
+    {
+      "slug": "english-games/early-learner",
+      "title": "Early Learner English Games",
+      "metaTitle": "Early Learner English Games | Home, School, Clothes and Weather | RCF English",
+      "description": "Free English games for early learners: home, school, clothes, weather, transport, action words, feelings, opposites, plurals and rhyming words.",
+      "keywords": "easy english games for children, a1 english games, esl games beginners, english vocabulary games kids, opposites game english",
+      "kicker": "Global English Games",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
+      "backTo": { "label": "English Games", "url": "english-games/" },
+      "hero": { "text": "Everyday words and very short sentences, for children who know their first English words. CEFR A1." },
+      "blocks": [
+        { "type": "game-zone", "mode": "global-level", "pack": "global-early-learner", "theme": "meadow" }
+      ]
+    },
+
+    {
+      "slug": "english-games/elementary",
+      "title": "Elementary English Games",
+      "metaTitle": "Elementary English Games | Grammar, Spelling and Question Words | RCF English",
+      "description": "Free elementary English games: jobs, places in town, daily routines, hobbies, prepositions, articles, pronouns, question words, spelling and the simple present.",
+      "keywords": "elementary english games, english grammar games for kids, prepositions game english, question words game, english spelling games free",
+      "kicker": "Global English Games",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
+      "backTo": { "label": "English Games", "url": "english-games/" },
+      "hero": { "text": "Longer sentences, spelling and first grammar, for children who can read simple English. CEFR A1 to A2." },
+      "blocks": [
+        { "type": "game-zone", "mode": "global-level", "pack": "global-elementary", "theme": "sky" }
+      ]
+    },
+
+    {
+      "slug": "english-games/pre-intermediate",
+      "title": "Pre-Intermediate English Games",
+      "metaTitle": "Pre-Intermediate English Games | Sentence Building and Reading | RCF English",
+      "description": "Free pre-intermediate English games: adjectives, the simple past, sentence building, short reading comprehension, everyday conversations and British English vocabulary.",
+      "keywords": "pre-intermediate english games, english sentence building games, simple past game english, reading comprehension games kids, british english vocabulary",
+      "kicker": "Global English Games",
+      "kind": "page",
+      "styles": ["games"],
+      "scripts": ["game-zone"],
+      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
+      "backTo": { "label": "English Games", "url": "english-games/" },
+      "hero": { "text": "Building sentences, reading short texts and holding real conversations. CEFR A2." },
+      "blocks": [
+        { "type": "game-zone", "mode": "global-level", "pack": "global-pre-intermediate", "theme": "berry" }
+      ]
+    }
+  ]
+}

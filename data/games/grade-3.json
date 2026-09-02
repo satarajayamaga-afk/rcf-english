@@ -1,13 +1,34 @@
-﻿{
+{
   "schemaVersion": 1,
   "grade": 3,
   "title": "Grade 3",
   "theme": "meadow",
   "blurb": "More words, plurals and sentences that grow.",
   "icon": "icon-sprout.svg",
-  "book": null,
-  "unitsStatus": "awaiting-source",
-  "units": [],
+  "book": {
+    "title": "English Pupil's Book Grade 3 (new syllabus)",
+    "publisher": "Educational Publications Department",
+    "note": "Supplied 2026-09-02. 8 units. Unit titles and outcomes read from the book itself."
+  },
+  "unitsStatus": "in-progress",
+  "units": [
+    { "id": "unit-1", "number": 1, "title": "I, Myself and Me", "icon": "icon-abc.svg",
+      "outcomes": ["Hello! I'm ...", "What's your name?", "Numbers one to five", "How old are you? I'm seven.", "Where do you live? I live in ..."], "topics": [] },
+    { "id": "unit-2", "number": 2, "title": "Home Sweet Home", "icon": "house.svg",
+      "outcomes": ["How are you? / How do you do?", "Words for the home", "It is ... (describing)"], "topics": [] },
+    { "id": "unit-3", "number": 3, "title": "Our School", "icon": "icon-notebook.svg",
+      "outcomes": ["School and classroom words", "On Monday we have ...", "How much is a pen?", "Reading and role-play"], "topics": [] },
+    { "id": "unit-4", "number": 4, "title": "My Food Bag", "icon": "icon-basket.svg",
+      "outcomes": ["Food and vegetable words", "Do you like ...?", "Can I help you?", "Making a food bag"], "topics": [] },
+    { "id": "unit-5", "number": 5, "title": "Animal Friends", "icon": "icon-paw.svg",
+      "outcomes": ["Animal names", "Where do you live? (animal homes)", "I like ... What do you like?", "An animal poem and song"], "topics": [] },
+    { "id": "unit-6", "number": 6, "title": "Clothes We Wear", "icon": "tshirt.svg",
+      "outcomes": ["Clothes words", "... is ready for a party / school / picnic", "A frock with ...", "Reading the time"], "topics": [] },
+    { "id": "unit-7", "number": 7, "title": "Playing Is Fun", "icon": "ball.svg",
+      "outcomes": ["Games and toys", "How many toys?", "Counting on, counting back, two by two, five by five", "Where's ...?"], "topics": [] },
+    { "id": "unit-8", "number": 8, "title": "The World Around Me", "icon": "globe.svg",
+      "outcomes": ["Plants and what grows underground", "How do we get water? We get water from ...", "Soap water is ... / Muddy water is ...", "Float or sink?"], "topics": [] }
+  ],
   "topics": [
     {
       "id": "one-and-many",
