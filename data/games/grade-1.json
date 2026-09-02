@@ -5,6 +5,136 @@
   "theme": "sunshine",
   "blurb": "Pictures, first words and sounds. Tap and play.",
   "icon": "sun.svg",
+  "book": {
+    "title": "Activity Based Oral English, Syllabus for Grades 1 & 2",
+    "publisher": "Department of English, National Institute of Education",
+    "note": "Supplied 2026-09-02. 16 themes, with a separate Grade 1 column giving objectives, vocabulary and structures. Grade 1 games use the Grade 1 column only."
+  },
+  "unitsStatus": "in-progress",
+  "units": [
+    { "id": "theme-1", "number": 1, "title": "We and the School", "icon": "icon-abc.svg",
+      "outcomes": ["Words from the theme", "Greet someone", "What's your name?", "I'm ..."], "topics": [] },
+    { "id": "theme-2", "number": 2, "title": "Our Home", "icon": "house.svg",
+      "outcomes": ["Words from the theme", "Thank you / You're welcome", "Good morning, afternoon, evening, night"], "topics": [] },
+    { "id": "theme-3", "number": 3, "title": "Animals that Come into the Garden", "icon": "icon-paw.svg",
+      "outcomes": ["Animal words", "Colours", "Do you have a pet? Yes / No"],
+      "topics": [
+        {
+          "id": "t3-animal-words",
+          "title": "Animal Words",
+          "icon": "icon-paw.svg",
+          "activities": [
+            {
+              "id": "g1-t3-animals-match",
+              "type": "match",
+              "title": "Match the Garden Animal",
+              "instructions": "Tap a picture. Then tap its word.",
+              "minutes": 3,
+              "pairs": [
+                { "picture": "dog.svg", "word": "dog" },
+                { "picture": "cat.svg", "word": "cat" },
+                { "picture": "cow.svg", "word": "cow" },
+                { "picture": "crow.svg", "word": "crow" },
+                { "picture": "butterfly.svg", "word": "butterfly" },
+                { "picture": "hen.svg", "word": "hen" }
+              ]
+            },
+            {
+              "id": "g1-t3-animals-quiz",
+              "type": "quiz",
+              "title": "What Animal Is It?",
+              "instructions": "Look at the picture. Tap the right word.",
+              "minutes": 3,
+              "questions": [
+                { "picture": "dog.svg", "ask": "What is this?", "options": ["dog", "cow", "hen"], "answer": 0 },
+                { "picture": "cat.svg", "ask": "What is this?", "options": ["crow", "cat", "cow"], "answer": 1 },
+                { "picture": "cow.svg", "ask": "What is this?", "options": ["hen", "cat", "cow"], "answer": 2 },
+                { "picture": "crow.svg", "ask": "What is this?", "options": ["crow", "butterfly", "dog"], "answer": 0 },
+                { "picture": "butterfly.svg", "ask": "What is this?", "options": ["hen", "butterfly", "cat"], "answer": 1 },
+                { "picture": "hen.svg", "ask": "What is this?", "options": ["cow", "crow", "hen"], "answer": 2 }
+              ]
+            },
+            {
+              "id": "g1-t3-animals-memory",
+              "type": "memory",
+              "title": "Garden Animal Pairs",
+              "instructions": "Turn over two cards. Find a picture and its word.",
+              "minutes": 4,
+              "pairs": [
+                { "a": "dog.svg", "b": "dog" },
+                { "a": "cat.svg", "b": "cat" },
+                { "a": "cow.svg", "b": "cow" },
+                { "a": "crow.svg", "b": "crow" },
+                { "a": "butterfly.svg", "b": "butterfly" },
+                { "a": "hen.svg", "b": "hen" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3-colours",
+          "title": "Colours",
+          "icon": "icon-palette.svg",
+          "activities": [
+            {
+              "id": "g1-t3-colours-match",
+              "type": "match",
+              "title": "Match the Colour",
+              "instructions": "Tap a colour. Then tap its word.",
+              "minutes": 3,
+              "pairs": [
+                { "picture": "colour-red.svg", "word": "red" },
+                { "picture": "colour-blue.svg", "word": "blue" },
+                { "picture": "colour-black.svg", "word": "black" },
+                { "picture": "colour-white.svg", "word": "white" },
+                { "picture": "colour-brown.svg", "word": "brown" }
+              ]
+            },
+            {
+              "id": "g1-t3-colours-quiz",
+              "type": "quiz",
+              "title": "What Colour Is It?",
+              "instructions": "Look at the colour. Tap the right word.",
+              "minutes": 3,
+              "questions": [
+                { "picture": "colour-red.svg", "ask": "What colour is it?", "options": ["red", "blue", "brown"], "answer": 0 },
+                { "picture": "colour-blue.svg", "ask": "What colour is it?", "options": ["black", "blue", "white"], "answer": 1 },
+                { "picture": "colour-black.svg", "ask": "What colour is it?", "options": ["brown", "white", "black"], "answer": 2 },
+                { "picture": "colour-white.svg", "ask": "What colour is it?", "options": ["white", "red", "blue"], "answer": 0 },
+                { "picture": "colour-brown.svg", "ask": "What colour is it?", "options": ["blue", "brown", "black"], "answer": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "id": "theme-4", "number": 4, "title": "Play with Water", "icon": "colour-blue.svg",
+      "outcomes": ["Water words", "I wash ... / I eat ... / I drink ..."], "topics": [] },
+    { "id": "theme-5", "number": 5, "title": "Sinhala and Hindu New Year Period", "icon": "cake.svg",
+      "outcomes": ["New Year words", "Mother has ...", "I like ..."], "topics": [] },
+    { "id": "theme-6", "number": 6, "title": "The Sky We See", "icon": "sun.svg",
+      "outcomes": ["Sky words", "Ask with What", "What colour is the ...?"], "topics": [] },
+    { "id": "theme-7", "number": 7, "title": "Things We Eat and Drink", "icon": "apple.svg",
+      "outcomes": ["Food and drink words", "I like ... and ...", "I eat / drink ... in the morning"], "topics": [] },
+    { "id": "theme-8", "number": 8, "title": "How Information is Received", "icon": "icon-notebook.svg",
+      "outcomes": ["Polite words", "What's your name? My name is ...", "I'm sorry"], "topics": [] },
+    { "id": "theme-9", "number": 9, "title": "Changes in the Environment", "icon": "icon-sprout.svg",
+      "outcomes": ["Weather and tidiness words", "It's ...", "a / an"], "topics": [] },
+    { "id": "theme-10", "number": 10, "title": "Likes and Dislikes", "icon": "shape-heart.svg",
+      "outcomes": ["Words for things at school", "I like ..."], "topics": [] },
+    { "id": "theme-11", "number": 11, "title": "How We Get Our Needs", "icon": "icon-basket.svg",
+      "outcomes": ["Shopping words", "Please give me ...", "Can I have ...?", "Here you are"], "topics": [] },
+    { "id": "theme-12", "number": 12, "title": "Transport", "icon": "bus.svg",
+      "outcomes": ["Vehicle words", "I see ...", "This is a ...", "I come by ..."], "topics": [] },
+    { "id": "theme-13", "number": 13, "title": "Play with Light", "icon": "shape-star.svg",
+      "outcomes": ["Light and dark words", "It's ...", "Is it ...?"], "topics": [] },
+    { "id": "theme-14", "number": 14, "title": "Places Where People Work", "icon": "icon-gears.svg",
+      "outcomes": ["Work and worker words", "He is ... / She is ...", "What is she / he?"], "topics": [] },
+    { "id": "theme-15", "number": 15, "title": "Different Places in the Environment", "icon": "tree.svg",
+      "outcomes": ["Garden and field words", "There's ...", "There are ..."], "topics": [] },
+    { "id": "theme-16", "number": 16, "title": "People Who Help Us", "icon": "icon-brain.svg",
+      "outcomes": ["Helping words", "I can't ...", "Can you help me ...?", "Thank you very much"], "topics": [] }
+  ],
   "topics": [
     {
       "id": "animals",

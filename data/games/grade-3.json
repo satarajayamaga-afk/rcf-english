@@ -1,10 +1,13 @@
-{
+﻿{
   "schemaVersion": 1,
   "grade": 3,
   "title": "Grade 3",
   "theme": "meadow",
   "blurb": "More words, plurals and sentences that grow.",
   "icon": "icon-sprout.svg",
+  "book": null,
+  "unitsStatus": "awaiting-source",
+  "units": [],
   "topics": [
     {
       "id": "one-and-many",

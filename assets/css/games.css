@@ -429,3 +429,54 @@ body.gz-classroom .gz-pic { max-width: 150px; }
   .gz-star.is-on, .gz-gap.is-filled { animation: none; }
   .gz-tile.is-wrong, .gz-opt.is-wrong, .gz-chip.is-wrong, .gz-order__line.is-wrong { animation: none; }
 }
+
+/* Units ------------------------------------------------------------------- */
+
+.gz-section-title {
+  font-family: var(--font-head); font-size: 1.25rem; color: var(--gz-ink);
+  margin: var(--sp-6) 0 var(--sp-2);
+}
+.gz-note { margin: 0 0 var(--sp-3); color: var(--ink-700); font-size: 0.92rem; }
+
+.gz-unitgrid { display: grid; gap: var(--sp-3); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 560px) { .gz-unitgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 900px) { .gz-unitgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.gz-unit {
+  display: flex; align-items: center; gap: var(--sp-3); text-align: left; cursor: pointer;
+  padding: var(--sp-3) var(--sp-4); border: 0; border-radius: 18px;
+  background: var(--gz-card); color: var(--gz-ink); min-height: 76px;
+  box-shadow: 0 6px 0 var(--gz-2), 0 6px 0 1px var(--gz-edge);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.gz-unit:hover, .gz-unit:focus-visible { transform: translateY(-3px); box-shadow: 0 9px 0 var(--gz-2), 0 9px 0 1px var(--gz-edge); }
+.gz-unit:active { transform: translateY(3px); box-shadow: 0 3px 0 var(--gz-2), 0 3px 0 1px var(--gz-edge); }
+.gz-unit__no {
+  flex: none; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px;
+  background: linear-gradient(165deg, var(--gz-1), var(--gz-2)); color: #fff;
+  font-family: var(--font-head); font-size: 1.3rem; font-weight: 700;
+}
+.gz-unit__body { display: grid; gap: 0.15rem; min-width: 0; }
+.gz-unit__title { font-family: var(--font-head); font-size: 1.05rem; font-weight: 700; overflow-wrap: anywhere; }
+.gz-unit__meta { font-size: 0.8rem; color: var(--ink-500); font-weight: 600; }
+
+.gz-unithead { margin-bottom: var(--sp-4); }
+.gz-unithead__label {
+  margin: var(--sp-3) 0 0; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gz-2);
+}
+.gz-unithead__title { font-family: var(--font-head); font-size: 1.5rem; margin: 0.1rem 0 0; color: var(--gz-ink); }
+.gz-outcomes {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2); list-style: none; margin: var(--sp-3) 0 0; padding: 0;
+}
+.gz-outcomes li {
+  background: #fff; border: 2px solid var(--gz-edge); border-radius: 999px;
+  padding: 0.25rem 0.7rem; font-size: 0.82rem; font-weight: 700; color: var(--gz-ink);
+}
+
+/* A unit whose games are not built yet: visible in the book order, but plainly
+   not ready, and not clickable. */
+.gz-unit.is-soon { opacity: 0.62; cursor: default; box-shadow: 0 3px 0 var(--gz-2), 0 3px 0 1px var(--gz-edge); }
+.gz-unit.is-soon:hover, .gz-unit.is-soon:focus-visible { transform: none; box-shadow: 0 3px 0 var(--gz-2), 0 3px 0 1px var(--gz-edge); }
+.gz-unit.is-soon .gz-unit__no { background: #dfe4ea; color: var(--ink-500); }
+.gz-unit.is-soon .gz-unit__meta { font-style: italic; }

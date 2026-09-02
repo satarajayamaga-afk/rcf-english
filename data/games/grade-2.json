@@ -1,10 +1,13 @@
-{
+﻿{
   "schemaVersion": 1,
   "grade": 2,
   "title": "Grade 2",
   "theme": "sky",
   "blurb": "Pictures and short sentences you can read.",
   "icon": "icon-rainbow.svg",
+  "book": null,
+  "unitsStatus": "awaiting-source",
+  "units": [],
   "topics": [
     {
       "id": "things-around-us",

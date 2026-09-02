@@ -34,6 +34,8 @@ file names.
 
 ## 2. Pack shape
 
+The permanent hierarchy is **Grade → Unit → Topic/Skill → Game**.
+
 ```jsonc
 {
   "schemaVersion": 1,
@@ -41,12 +43,34 @@ file names.
   "title": "Grade 1",
   "theme": "sunshine",          // key into index.json → themes
   "blurb": "One line for the grade card.",
-  "icon": "🌞",
+  "icon": "sun.svg",
+
+  // Which book the unit games are built from. null until one is supplied.
+  "book": null,
+  // awaiting-source | in-progress | complete
+  "unitsStatus": "awaiting-source",
+
+  // BOOK-ALIGNED GAMES. One entry per unit of the Pupil's Book, in book order.
+  "units": [
+    {
+      "id": "unit-1",           // stable, used in the address bar
+      "number": 1,
+      "title": "My School",     // the unit's own title, from the book
+      "icon": "icon-abc.svg",
+      "outcomes": [             // optional, for the teacher: what the unit teaches
+        "Classroom objects", "Is this a...? Yes it is."
+      ],
+      "topics": [ /* as below */ ]
+    }
+  ],
+
+  // PRACTICE GAMES. Not tied to any unit. This is where the sample games that
+  // were built to test the engine live, and where any general practice can go.
   "topics": [
     {
       "id": "animals",          // lowercase, no spaces, stable: used in addresses
       "title": "Animals",
-      "icon": "🐘",
+      "icon": "icon-paw.svg",
       "activities": [ /* section 3 */ ]
     }
   ]
@@ -55,6 +79,36 @@ file names.
 
 `schemaVersion` must be checked. A front end that meets a version it does not
 know should skip the pack rather than guess.
+
+**`units` and `topics` are both optional and both may be present.** A pack with
+only `topics` is what every grade looks like today: practice games and no book
+games yet. A pack with `units` filled in shows those first, because a teacher
+looking for "Unit 4" wants Unit 4.
+
+### Where unit content comes from
+
+Unit games are built **only** from the actual Pupil's Book for that grade —
+its vocabulary, grammar, language functions, reading and sentence work. Nothing
+is written from memory or from a general idea of what a grade covers. Until the
+book for a grade has been supplied and read, that grade keeps
+`"unitsStatus": "awaiting-source"` and an empty `units` array, and the front end
+says so rather than pretending.
+
+A grade may be part-way through: `"unitsStatus": "in-progress"` means the book is
+supplied and every unit is listed in book order, but only some of them have games
+yet. A unit whose `topics` are still empty is shown in place, dimmed, marked
+"Coming soon" and not openable, so the book order stays visible and nothing is
+overstated.
+
+Record the source in `book` once it is supplied:
+
+```jsonc
+"book": {
+  "title": "Pupil's Book Grade 1",
+  "publisher": "Educational Publications Department",
+  "note": "Supplied 2026-09-02. Units 1-12."
+}
+```
 
 ---
 

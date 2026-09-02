@@ -79,8 +79,15 @@ function setTheme(mount, theme) {
   page.dataset.theme = theme || "sunshine";
 }
 
+/** Every activity in a pack, units first, then the practice topics. */
 function activitiesOf(grade) {
-  return (grade.topics || []).flatMap((t) => t.activities || []);
+  const fromUnits = (grade.units || []).flatMap((u) => (u.topics || []).flatMap((t) => t.activities || []));
+  const fromTopics = (grade.topics || []).flatMap((t) => t.activities || []);
+  return fromUnits.concat(fromTopics);
+}
+
+function unitActivities(unit) {
+  return (unit.topics || []).flatMap((t) => t.activities || []);
 }
 
 /* ------------------------------------------------------------------ hub */
@@ -120,14 +127,11 @@ async function renderGrade(mount, gradeNumber) {
   }
   setTheme(mount, grade.theme);
   const all = activitiesOf(grade);
+  let currentUnit = null;   // the unit being worked through, if any
 
-  function list() {
-    const stars = progress.starsForGrade(all.map((a) => a.id));
-    mount.innerHTML = `
-      <div class="gz-gradehead">
-        <p class="gz-gradehead__stars">${stars}<span aria-hidden="true">★</span> collected</p>
-      </div>
-      ${(grade.topics || []).map((topic) => `
+  /** One topic and its game cards. Used by both the unit view and practice. */
+  function topicHTML(topic) {
+    return `
         <section class="gz-topic">
           <h2 class="gz-topic__title"><span class="gz-topic__icon" aria-hidden="true">${pictureHTML(topic.icon, "")}</span>${esc(topic.title)}</h2>
           <div class="gz-cards">
@@ -145,7 +149,78 @@ async function renderGrade(mount, gradeNumber) {
               </button>`;
             }).join("")}
           </div>
-        </section>`).join("")}`;
+        </section>`;
+  }
+
+  /** The units of the Pupil's Book, each one a door into its own games. */
+  function unitsHTML() {
+    const units = grade.units || [];
+    if (!units.length) {
+      const waiting = grade.unitsStatus === "awaiting-source";
+      return `
+        <section class="gz-units">
+          <h2 class="gz-section-title">Pupil's Book units</h2>
+          <p class="gz-note">${waiting
+            ? "Unit games are built from the Pupil's Book itself. This grade's book has not been supplied yet, so there are none here."
+            : "Unit games for this grade are being prepared."}</p>
+        </section>`;
+    }
+    return `
+      <section class="gz-units">
+        <h2 class="gz-section-title">Pupil's Book units</h2>
+        ${grade.book && grade.book.title ? `<p class="gz-note">From <strong>${esc(grade.book.title)}</strong>.</p>` : ""}
+        <div class="gz-unitgrid">
+          ${units.map((u) => {
+            const acts = unitActivities(u);
+            const stars = progress.starsForGrade(acts.map((a) => a.id));
+            const ready = acts.length > 0;
+            return `
+            <button type="button" class="gz-unit${ready ? "" : " is-soon"}" data-unit="${esc(u.id)}"${ready ? "" : " disabled"}>
+              <span class="gz-unit__no">${esc(String(u.number))}</span>
+              <span class="gz-unit__body">
+                <span class="gz-unit__title">${esc(u.title)}</span>
+                <span class="gz-unit__meta">${ready
+                  ? `${acts.length} game${acts.length === 1 ? "" : "s"}${stars ? ` &middot; ${stars}★` : ""}`
+                  : "Coming soon"}</span>
+              </span>
+            </button>`;
+          }).join("")}
+        </div>
+      </section>`;
+  }
+
+  function unitView(unitId) {
+    const unit = (grade.units || []).find((u) => u.id === unitId);
+    if (!unit) return list();
+    currentUnit = unitId;
+    history.replaceState(null, "", `?u=${encodeURIComponent(unitId)}`);
+    mount.innerHTML = `
+      <div class="gz-unithead">
+        <button type="button" class="gz-btn gz-btn--ghost" data-units-back>All units</button>
+        <p class="gz-unithead__label">Unit ${esc(String(unit.number))}</p>
+        <h2 class="gz-unithead__title">${esc(unit.title)}</h2>
+        ${(unit.outcomes || []).length
+          ? `<ul class="gz-outcomes">${unit.outcomes.map((o) => `<li>${esc(o)}</li>`).join("")}</ul>` : ""}
+      </div>
+      ${(unit.topics || []).map(topicHTML).join("")}`;
+    window.scrollTo({ top: 0 });
+  }
+
+  function list() {
+    const stars = progress.starsForGrade(all.map((a) => a.id));
+    currentUnit = null;
+    history.replaceState(null, "", location.pathname);
+    mount.innerHTML = `
+      <div class="gz-gradehead">
+        <p class="gz-gradehead__stars">${stars}<span aria-hidden="true">★</span> collected</p>
+      </div>
+      ${unitsHTML()}
+      ${(grade.topics || []).length ? `
+        <section class="gz-practice">
+          <h2 class="gz-section-title">Practice games</h2>
+          <p class="gz-note">Extra games that are not tied to a unit.</p>
+        </section>` : ""}
+      ${(grade.topics || []).map(topicHTML).join("")}`;
   }
 
   function open(id) {
@@ -157,7 +232,14 @@ async function renderGrade(mount, gradeNumber) {
     play(activity, mount, {
       types,
       nextTitle: next ? next.title : "",
-      onExit: () => { hideBoard(); history.replaceState(null, "", location.pathname); list(); window.scrollTo({ top: 0 }); },
+      // Leaving a game returns to wherever the child came from: the unit they
+      // were working through, or the grade list.
+      onExit: () => {
+        hideBoard();
+        if (currentUnit) unitView(currentUnit);
+        else { history.replaceState(null, "", location.pathname); list(); }
+        window.scrollTo({ top: 0 });
+      },
       onNext: () => open(next.id)
     });
     showBoard(mount);
@@ -165,11 +247,17 @@ async function renderGrade(mount, gradeNumber) {
 
   mount.addEventListener("click", (event) => {
     const card = event.target.closest("[data-play]");
-    if (card) open(card.dataset.play);
+    if (card) { open(card.dataset.play); return; }
+    const unit = event.target.closest("[data-unit]");
+    if (unit) { unitView(unit.dataset.unit); return; }
+    if (event.target.closest("[data-units-back]")) list();
   });
 
-  const wanted = new URLSearchParams(location.search).get("a");
-  if (wanted && all.some((a) => a.id === wanted)) open(wanted);
+  const params = new URLSearchParams(location.search);
+  const wantedGame = params.get("a");
+  const wantedUnit = params.get("u");
+  if (wantedGame && all.some((a) => a.id === wantedGame)) open(wantedGame);
+  else if (wantedUnit && (grade.units || []).some((u) => u.id === wantedUnit)) unitView(wantedUnit);
   else list();
 }
 

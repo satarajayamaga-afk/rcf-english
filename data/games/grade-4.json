@@ -1,10 +1,13 @@
-{
+﻿{
   "schemaVersion": 1,
   "grade": 4,
   "title": "Grade 4",
   "theme": "berry",
   "blurb": "Word classes, verbs and longer sentences.",
   "icon": "icon-target.svg",
+  "book": null,
+  "unitsStatus": "awaiting-source",
+  "units": [],
   "topics": [
     {
       "id": "kinds-of-words",
