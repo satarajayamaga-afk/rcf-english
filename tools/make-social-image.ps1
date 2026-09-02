@@ -2,23 +2,26 @@
 #  Draws the RCF English launch card used when the homepage is shared on
 #  Facebook, WhatsApp, LinkedIn and similar.
 #
-#  Output: assets/img/social/og-live-countdown.png, 1200 x 630.
+#  Output: assets/img/social/og-countdown-boxes.png, 1200 x 630.
 #
 #  Composition notes
 #
-#  The panel is the point of the picture, so it sits high and near the
-#  middle. Everything that matters is kept inside the central 630 x 630
-#  square, which is what survives when a service crops the card to a square
-#  or to a portrait shape in a mobile feed. The full 1200 x 630 is what
-#  Facebook shows in the ordinary landscape link preview.
+#  Four boxes in the shape the website's clock uses, and they are the
+#  dominant thing on the card. They are sized to the 1.91:1 frame, which is
+#  what Facebook shows in an ordinary feed link preview: at that ratio the
+#  picture is not cropped at all, so all four are fully visible without the
+#  reader opening anything.
 #
-#  The panel says the countdown is LIVE and invites the reader to come and
-#  watch it. It carries no running figure, and it deliberately no longer
-#  carries the date on its own: these services cache a preview for a long
-#  time, so a number of days would be wrong within a day, and a bare date
-#  read as an ordinary announcement rather than as something ticking. The
-#  real clock is on the page, which is where the card sends people. The
-#  date stays in the gold pill underneath.
+#  The boxes carry the unit words, not figures. A picture is cached for a
+#  long time by these services, so any number printed here would freeze at
+#  the moment it was drawn and then be wrong for as long as the card is
+#  shared. The words say plainly that the clock counts days, hours, minutes
+#  and seconds; the running figures are on the page, which is where the
+#  card sends people. The date and hour stay in the gold pill underneath.
+#
+#  Note the trade-off: boxes wide enough to hold SECONDS legibly are wider
+#  than a square crop. In the 1.91:1 feed preview all four are whole; in a
+#  square crop the outer two are trimmed.
 #
 #  Run it with:  powershell -ExecutionPolicy Bypass -File tools\make-social-image.ps1
 #  Only needed if the wording or the launch date changes.
@@ -27,7 +30,7 @@
 Add-Type -AssemblyName System.Drawing
 
 $root = Split-Path -Parent $PSScriptRoot
-$out = Join-Path $root 'assets\img\social\og-live-countdown.png'
+$out = Join-Path $root 'assets\img\social\og-countdown-boxes.png'
 
 $W = 1200
 $H = 630
@@ -179,30 +182,43 @@ function Fit-Font($graphics, [string]$text, [single]$maxWidth, [single]$startSiz
     return (New-Object System.Drawing.Font('Georgia', 20, $style, [System.Drawing.GraphicsUnit]::Pixel))
 }
 
-$panelW = 600
-$panelH = 178
-$panelX = $cx - ($panelW / 2)
-$panelY = 172
+$units = @('DAYS', 'HOURS', 'MINUTES', 'SECONDS')
+
+$blockW = 236
+$blockH = 220
+$blockGap = 20
+$stripW = ($blockW * 4) + ($blockGap * 3)
+$stripX = $cx - ($stripW / 2)
+$stripY = 172
 
 $blockFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(20, 255, 255, 255))
 $blockPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(46, 255, 255, 255), 1.5)
-$panel = New-RoundedPath $panelX $panelY $panelW $panelH 20
-$g.FillPath($blockFill, $panel)
-$g.DrawPath($blockPen, $panel)
 
-$liveFont = Fit-Font $g 'LIVE COUNTDOWN' ($panelW - 70) 86 ([System.Drawing.FontStyle]::Bold)
-Draw-Tracked $g 'LIVE COUNTDOWN' $liveFont $whiteBrush $cx ($panelY + 26) 2
+# One size for all four, taken from the longest word, because a timer whose
+# faces are set at different sizes stops looking like a timer.
+$unitFont = $null
+foreach ($u in $units) {
+    $f = Fit-Font $g $u ($blockW - 44) 74 ([System.Drawing.FontStyle]::Bold)
+    if (($null -eq $unitFont) -or ($f.Size -lt $unitFont.Size)) {
+        if ($unitFont) { $unitFont.Dispose() }
+        $unitFont = $f
+    }
+    else { $f.Dispose() }
+}
 
-$unitsFont = New-Object System.Drawing.Font('Segoe UI', 21, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$dot = ' ' + [char]0x00B7 + ' '
-$unitsText = 'DAYS' + $dot + 'HOURS' + $dot + 'MINUTES' + $dot + 'SECONDS'
-Draw-Tracked $g $unitsText $unitsFont $goldBrush $cx ($panelY + 124) 3
+for ($i = 0; $i -lt $units.Count; $i++) {
+    $bx = $stripX + ($i * ($blockW + $blockGap))
+    $path = New-RoundedPath $bx $stripY $blockW $blockH 20
+    $g.FillPath($blockFill, $path)
+    $g.DrawPath($blockPen, $path)
 
-# ---------------------------------------------------------- the invitation
+    Draw-Centred $g $units[$i] $unitFont $whiteBrush ($bx + ($blockW / 2)) ($stripY + 66)
 
-$tapFont = New-Object System.Drawing.Font('Segoe UI', 25, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$mistBrush = New-Object System.Drawing.SolidBrush($mist)
-Draw-Tracked $g 'TAP TO WATCH THE LIVE COUNTDOWN' $tapFont $mistBrush $cx 392 3
+    # The gold rule stands where the unit label sits on the website, so the
+    # face keeps the same rhythm as the real clock.
+    $g.FillPath($goldBrush, (New-RoundedPath ($bx + ($blockW / 2) - 34) ($stripY + 158) 68 4 2))
+    $path.Dispose()
+}
 
 # ------------------------------------------------------------- the gold pill
 
@@ -237,7 +253,7 @@ $bmp.Save($out, [System.Drawing.Imaging.ImageFormat]::Png)
 
 foreach ($d in @($g, $bmp, $bg, $glow, $glowPath, $navyBrush, $markGrad, $markFont, $whiteBrush, $goldBrush,
         $nameFont, $eyebrowFont, $lineFont, $mistBrush, $pillFont, $goldPen, $pillFill, $footPen,
-        $outer, $inner, $pill, $blockFill, $blockPen, $liveFont, $unitsFont, $tapFont, $mistBrush)) {
+        $outer, $inner, $pill, $blockFill, $blockPen, $unitFont)) {
     if ($d -and $d.Dispose) { $d.Dispose() }
 }
 
