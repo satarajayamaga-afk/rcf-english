@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="clock">
+  <circle cx="60" cy="62" r="50" fill="#e63946"/>
+  <circle cx="60" cy="62" r="42" fill="#f8f9fa"/>
+  <path d="M60 24 v8 M98 62 h-8 M60 100 v-8 M22 62 h8" stroke="#3d3a4b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M60 62 V36" stroke="#3d3a4b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M60 62 l24 14" stroke="#4361ee" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="60" cy="62" r="6" fill="#3d3a4b"/>
+  <rect x="52" y="4" width="16" height="10" rx="4" fill="#8d99ae"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="desk">
+  <path d="M8 42 L60 26 112 42 60 58z" fill="#c9862b"/>
+  <path d="M8 42 v10 L60 68 v-10z" fill="#a4693f"/>
+  <path d="M112 42 v10 L60 68 v-10z" fill="#8b5e34"/>
+  <rect x="16" y="56" width="9" height="48" rx="4" fill="#8b5e34"/>
+  <rect x="95" y="56" width="9" height="48" rx="4" fill="#8b5e34"/>
+  <rect x="52" y="66" width="9" height="42" rx="4" fill="#a4693f"/>
+  <rect x="30" y="30" width="26" height="10" rx="3" fill="#f8f9fa" transform="rotate(-8 43 35)"/>
+</svg>
