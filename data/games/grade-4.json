@@ -1,13 +1,38 @@
-﻿{
+{
   "schemaVersion": 1,
   "grade": 4,
   "title": "Grade 4",
   "theme": "berry",
   "blurb": "Word classes, verbs and longer sentences.",
   "icon": "icon-target.svg",
-  "book": null,
-  "unitsStatus": "awaiting-source",
-  "units": [],
+  "book": {
+    "title": "English Pupil's Book Grade 4",
+    "publisher": "Educational Publications Department",
+    "note": "Supplied 2026-09-02. 10 units. Unit titles and outcomes taken from the book itself."
+  },
+  "unitsStatus": "in-progress",
+  "units": [
+    { "id": "unit-1", "number": 1, "title": "My Family and Friends", "icon": "house.svg",
+      "outcomes": ["Hello, how are you? / I'm fine", "I'm ... / I live in ...", "This is ... / These are ...", "He is ... / She is ...", "Parts of the body", "It has ..."], "topics": [] },
+    { "id": "unit-2", "number": 2, "title": "Our Beautiful Garden", "icon": "flower.svg",
+      "outcomes": ["Garden and plant words", "There is ... / There are ...", "Garden tools", "Listen and do: following instructions"], "topics": [] },
+    { "id": "unit-3", "number": 3, "title": "Places Around Me", "icon": "bus.svg",
+      "outcomes": ["Places in the town", "What's in picture ...?", "Directions: turn left, turn right", "Where do ...? / Where is ...?", "I go to ..."], "topics": [] },
+    { "id": "unit-4", "number": 4, "title": "Joy of Work", "icon": "icon-gears.svg",
+      "outcomes": ["Occupations and workplaces", "What do you do?", "Let's ...", "Giving instructions: Press ..., Select ..."], "topics": [] },
+    { "id": "unit-5", "number": 5, "title": "Our Festivals", "icon": "balloon.svg",
+      "outcomes": ["Festival names", "... is in (month)", "What are you doing? / Where are you going?", "I take ...", "Wishes and greeting cards"], "topics": [] },
+    { "id": "unit-6", "number": 6, "title": "Let's Go Shopping", "icon": "icon-basket.svg",
+      "outcomes": ["Shop words and prices", "This / These, That / Those", "Can I help you?", "How much is ...?", "How many ...?", "Question mark and full stop"], "topics": [] },
+    { "id": "unit-7", "number": 7, "title": "My Calendar", "icon": "icon-numbers.svg",
+      "outcomes": ["Days of the week", "Today is ...", "Months of the year", "before ... / after ...", "When is your birthday?", "Weather words", "Telling the time"], "topics": [] },
+    { "id": "unit-8", "number": 8, "title": "Playing Games", "icon": "ball.svg",
+      "outcomes": ["Action words: hop, skip, walk, run", "What can you do? / We can ...", "verb + ing: What are you doing?", "Hobbies and likes"], "topics": [] },
+    { "id": "unit-9", "number": 9, "title": "Good Practices", "icon": "icon-sprout.svg",
+      "outcomes": ["Good practices at school and at home", "May I ...? / Excuse me", "How are you? / How about you?", "I eat ... / I don't eat ...", "Let's plant and protect trees"], "topics": [] },
+    { "id": "unit-10", "number": 10, "title": "Happy Days", "icon": "sun.svg",
+      "outcomes": ["Feelings: hungry, thirsty, happy, sleepy, tired", "Are you ...? Yes / No", "Is this ...?", "Riddles: What is it?", "Inviting a friend", "Did you enjoy ...? / What did you do?"], "topics": [] }
+  ],
   "topics": [
     {
       "id": "kinds-of-words",

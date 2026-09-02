@@ -1,13 +1,38 @@
-﻿{
+{
   "schemaVersion": 1,
   "grade": 5,
   "title": "Grade 5",
   "theme": "sunset",
   "blurb": "Reading, grammar and Scholarship-style challenges.",
   "icon": "icon-trophy.svg",
-  "book": null,
-  "unitsStatus": "awaiting-source",
-  "units": [],
+  "book": {
+    "title": "English Pupil's Book Grade 5",
+    "publisher": "Educational Publications Department",
+    "note": "First print 2019, ISBN 978-955-25-0064-0. Supplied 2026-09-02. 10 units, from the book's own contents page."
+  },
+  "unitsStatus": "in-progress",
+  "units": [
+    { "id": "unit-1", "number": 1, "title": "Our Motherland Sri Lanka", "icon": "icon-rainbow.svg",
+      "outcomes": ["Words about Sri Lanka", "Where do you come from? / I'm from ...", "What's your province?", "I take part in ...", "Places and food of Sri Lanka"], "topics": [] },
+    { "id": "unit-2", "number": 2, "title": "Nature Is Our Friend", "icon": "tree.svg",
+      "outcomes": ["Parts of a tree", "a / an / the", "What do trees need?", "The boy who cried wolf", "Rhyming sounds"], "topics": [] },
+    { "id": "unit-3", "number": 3, "title": "Caring and Sharing", "icon": "shape-heart.svg",
+      "outcomes": ["Feeling words: happy, sunny, rainy, noisy", "How do you feel?", "This is ... / He is from ...", "His / her hobby is ...", "Helping and donating"], "topics": [] },
+    { "id": "unit-4", "number": 4, "title": "Let's Celebrate", "icon": "cake.svg",
+      "outcomes": ["What do you celebrate? / We celebrate ...", "Festivals of Sri Lanka", "Reading a notice: date, time, items", "Inviting and planning"], "topics": [] },
+    { "id": "unit-5", "number": 5, "title": "Let's Enjoy Sports", "icon": "ball.svg",
+      "outcomes": ["Names of sports and games", "What are you looking at?", "My favourite game and sportsperson", "Ordinal numbers: 1st, 2nd, 3rd", "He was ... / He took part in ..."], "topics": [] },
+    { "id": "unit-6", "number": 6, "title": "Healthy Living", "icon": "apple.svg",
+      "outcomes": ["Healthy food words", "Riddles: Who am I?", "I'm ...", "Wash your hands before / after ...", "Keeping clean and healthy"], "topics": [] },
+    { "id": "unit-7", "number": 7, "title": "A Day at the Fair", "icon": "icon-basket.svg",
+      "outcomes": ["Words at the fair", "How much is / are ...?", "It's ... / They are ...", "is / are", "Putting a question in order", "Reading a poster"], "topics": [] },
+    { "id": "unit-8", "number": 8, "title": "Safety First", "icon": "icon-target.svg",
+      "outcomes": ["Safety at home and at school", "Where's ...? / Is he absent?", "True or false", "Avoiding sports injuries", "Traffic lights and road safety"], "topics": [] },
+    { "id": "unit-9", "number": 9, "title": "Around the World", "icon": "globe.svg",
+      "outcomes": ["Greetings in different languages", "I'm from ... / We come from ...", "Nationalities", "Countries around the world", "Making a difference in the world"], "topics": [] },
+    { "id": "unit-10", "number": 10, "title": "Our Future", "icon": "icon-sprout.svg",
+      "outcomes": ["on, under, in, next to, in front of", "Where is ...? / Where are ...?", "Zero waste", "Using solar power", "Looking after the future"], "topics": [] }
+  ],
   "topics": [
     {
       "id": "reading",
