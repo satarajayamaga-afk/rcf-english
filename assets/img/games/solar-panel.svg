@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="solar panel">
+  <circle cx="94" cy="22" r="14" fill="#ffd60a"/>
+  <path d="M94 2 v-2 M112 12 l4 -2 M112 34 l4 2" stroke="#ffc300" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 82 L28 44 h64 l18 38z" fill="#1d3557"/>
+  <g stroke="#4cc9f0" stroke-width="2.5">
+    <path d="M22 70 h80 M16 82 h92 M30 58 h64"/>
+    <path d="M48 44 l-10 38 M68 44 l6 38 M88 44 l14 38"/>
+  </g>
+  <rect x="54" y="82" width="12" height="30" rx="4" fill="#8d99ae"/>
+  <rect x="34" y="108" width="52" height="8" rx="4" fill="#6c757d"/>
+</svg>

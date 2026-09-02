@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="tennis">
+  <ellipse cx="46" cy="42" rx="30" ry="34" fill="none" stroke="#4361ee" stroke-width="9" transform="rotate(-30 46 42)"/>
+  <g transform="rotate(-30 46 42)" stroke="#e9ecef" stroke-width="2.5">
+    <path d="M28 22 v40 M40 16 v52 M52 16 v52 M64 22 v40"/>
+    <path d="M20 30 h52 M18 42 h56 M20 54 h52"/>
+  </g>
+  <rect x="62" y="70" width="14" height="46" rx="7" fill="#3d3a4b" transform="rotate(-30 69 93)"/>
+  <circle cx="96" cy="34" r="16" fill="#ffd60a"/>
+  <path d="M82 26 q14 8 0 16 M110 26 q-14 8 0 16" stroke="#f8f9fa" stroke-width="3" fill="none"/>
+</svg>
