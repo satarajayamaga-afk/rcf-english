@@ -2,7 +2,7 @@
 #  Draws the RCF English launch card used when the homepage is shared on
 #  Facebook, WhatsApp, LinkedIn and similar.
 #
-#  Output: assets/img/social/og-launch-card.png, 1200 x 630, the size those
+#  Output: assets/img/social/og-launch-card-6pm.png, 1200 x 630, the size those
 #  services expect.
 #
 #  It deliberately carries NO countdown numbers. Facebook caches a preview
@@ -16,7 +16,7 @@
 Add-Type -AssemblyName System.Drawing
 
 $root = Split-Path -Parent $PSScriptRoot
-$out = Join-Path $root 'assets\img\social\og-launch-card.png'
+$out = Join-Path $root 'assets\img\social\og-launch-card-6pm.png'
 
 $W = 1200
 $H = 630
@@ -146,7 +146,9 @@ Draw-Centred $g 'Something Big Is Coming to English Education' $lineFont $mistBr
 
 # 3. The date, in the gold pill the countdown uses.
 $pillFont = New-Object System.Drawing.Font('Segoe UI', 26, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$pillText = 'LAUNCHING 17 SEPTEMBER 2026'
+# The middle dot is written by code point so the file stays plain ASCII and
+# PowerShell cannot mis-read it.
+$pillText = 'LAUNCHING 17 SEPTEMBER 2026 ' + [char]0x00B7 + ' 6.00 P.M.'
 $fmtT = [System.Drawing.StringFormat]::GenericTypographic
 $pillTextW = 0
 foreach ($ch in $pillText.ToCharArray()) {
