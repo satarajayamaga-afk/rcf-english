@@ -441,7 +441,7 @@
           "heading": "Term-test papers",
           "source": "papers",
           "fixed": { "examination": "school-term-test" },
-          "filters": ["subject", "level", "year", "term", "paper", "medium", "source"]
+          "filters": ["grade", "subject", "level", "year", "term", "paper", "medium", "source"]
         },
         {
           "type": "callout",
@@ -473,7 +473,7 @@
           "heading": "Provincial papers",
           "source": "papers",
           "fixed": { "examination": "provincial" },
-          "filters": ["subject", "level", "year", "term", "paper", "medium", "source"]
+          "filters": ["grade", "subject", "level", "year", "term", "paper", "medium", "source"]
         },
         {
           "type": "callout",

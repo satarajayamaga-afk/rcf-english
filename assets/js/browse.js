@@ -23,6 +23,7 @@ import {
   optionsFrom,
   matchesFilters,
   matchesText,
+  matchesQuery,
   queryParams,
   updateQuery,
   formatDate,
@@ -282,7 +283,7 @@ function setUpBrowser(container) {
     const matched = records.filter(
       (record) =>
         matchesFilters(record, active) &&
-        matchesText(record, term, ["title", "description", "keywords", "subject", "type", "source"])
+        matchesQuery(record, term, ["title", "description", "keywords", "subject", "type", "source", "grade", "term", "year", "province", "level", "medium", "sourceType", "examination"])
     );
 
     // A limit applies only to the unfiltered list. Once somebody searches

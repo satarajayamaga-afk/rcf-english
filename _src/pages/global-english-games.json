@@ -46,7 +46,13 @@
           "heading": "Two collections, one Game Zone",
           "text": "These Global English games are for learners anywhere. If you are following the Sri Lankan primary syllabus, the Primary Game Zone has games built unit by unit from the official Pupil's Books instead."
         },
-        { "type": "buttons", "items": [ { "label": "Primary Game Zone (Sri Lankan syllabus)", "url": "primary-english/game-zone/" } ] }
+        {
+          "type": "cards",
+          "columns": "1",
+          "items": [
+            { "title": "Primary Game Zone (Sri Lankan syllabus)", "icon": "★", "url": "primary-english/game-zone/", "accent": "yes", "text": "Games built unit by unit from the official Grade 1 to Grade 5 Pupil's Books." }
+          ]
+        }
       ]
     },
 

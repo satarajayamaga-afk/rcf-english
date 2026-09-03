@@ -1990,7 +1990,32 @@ function RenderSearchBlock($block) {
         )) {
         $html += '<option value="' + $k[0] + '">' + $k[1] + '</option>'
     }
-    $html += '</select></div></div>'
+    $html += '</select></div>'
+
+    # Paper filters. Their options come from data/papers.json itself, so a
+    # filter can never offer a value that no paper has, and adding a paper for
+    # a new grade or province makes that option appear on its own.
+    $gradeOpts = @($papers | ForEach-Object { [string](P $_ 'grade' '') } | Where-Object { $_ } |
+        Select-Object -Unique | Sort-Object { [int]$_ })
+    $yearOpts = @($papers | ForEach-Object { [string](P $_ 'year' '') } | Where-Object { $_ } |
+        Select-Object -Unique | Sort-Object -Descending)
+    $provOpts = @($papers | ForEach-Object { [string](P $_ 'province' '') } | Where-Object { $_ } |
+        Select-Object -Unique | Sort-Object)
+    $html += '<div class="field"><label for="search-grade">Grade</label><select id="search-grade"><option value="">Any grade</option>'
+    foreach ($g in $gradeOpts) { $html += '<option value="' + (E $g) + '">Grade ' + (E $g) + '</option>' }
+    $html += '</select></div>'
+    $html += '<div class="field"><label for="search-term">Term</label><select id="search-term"><option value="">Any term</option>'
+    foreach ($t in @(@('first', 'First term'), @('second', 'Second term'), @('third', 'Third term'))) {
+        $html += '<option value="' + $t[0] + '">' + $t[1] + '</option>'
+    }
+    $html += '</select></div>'
+    $html += '<div class="field"><label for="search-year">Year</label><select id="search-year"><option value="">Any year</option>'
+    foreach ($y in $yearOpts) { $html += '<option value="' + (E $y) + '">' + (E $y) + '</option>' }
+    $html += '</select></div>'
+    $html += '<div class="field"><label for="search-province">Province or zone</label><select id="search-province"><option value="">Anywhere</option>'
+    foreach ($p in $provOpts) { $html += '<option value="' + (E $p) + '">' + (E $p) + '</option>' }
+    $html += '</select></div>'
+    $html += '</div>'
     $html += '<div class="btn-row"><button type="submit" class="btn btn--accent">Search</button>'
     $html += '<button type="button" class="btn btn--outline" id="search-reset">Reset</button></div>'
     $html += '</div></form>'
@@ -2372,6 +2397,69 @@ Say "  Pages written: $written" 'Green'
 # ---------------------------------------------- extra search index entries --
 
 $script:Root = ''
+
+# A paper is found by the way people actually ask for it, not by the way its
+# filename happens to read. Every structured field is written into the search
+# text together with the forms a visitor is likely to type, so that "Grade 7
+# second term", "grade 7 term 2" and "gr 7 2nd term" all reach the same paper.
+# The structured fields are emitted separately as well, for the filters.
+function PaperSearchWords($r) {
+    $w = New-Object System.Collections.Generic.List[string]
+    $grade = [string](P $r 'grade' '')
+    if ($grade) {
+        $names = @{ '1'='one'; '2'='two'; '3'='three'; '4'='four'; '5'='five'; '6'='six'; '7'='seven';
+                    '8'='eight'; '9'='nine'; '10'='ten'; '11'='eleven'; '12'='twelve'; '13'='thirteen' }
+        $w.Add("grade $grade"); $w.Add("gr $grade"); $w.Add("g$grade")
+        if ($names.ContainsKey($grade)) { $w.Add("grade " + $names[$grade]) }
+    }
+    $term = [string](P $r 'term' '')
+    if ($term) {
+        $n = @{ 'first'='1'; 'second'='2'; 'third'='3' }
+        $w.Add("$term term"); $w.Add("term $($n[$term])")
+        $ord = @{ 'first'='1st'; 'second'='2nd'; 'third'='3rd' }
+        $w.Add("$($ord[$term]) term")
+        if ($term -eq 'third') { $w.Add('year end'); $w.Add('end of year') }
+    }
+    $exam = [string](P $r 'examination' '')
+    $subject = [string](P $r 'subject' '')
+    # 'ol-english' is used across this file to mean the English language
+    # subject, including in Grade 4 papers, so it cannot on its own mean the
+    # O/L examination. Only a paper actually sat at O/L earns the O/L words,
+    # or a search for "O/L" returns primary term tests.
+    if ($exam -eq 'ol' -or $grade -eq '11') {
+        $w.Add('ol'); $w.Add('o/l'); $w.Add('ordinary level')
+    }
+    if ($exam -eq 'al' -or $subject -match '^al-' -or $subject -eq 'general-english') {
+        $w.Add('al'); $w.Add('a/l'); $w.Add('advanced level')
+    }
+    if ($subject -match 'literature') { $w.Add('literature'); $w.Add('english literature') }
+    if ($subject -match 'english' -and $subject -notmatch 'literature') { $w.Add('english language') }
+    $prov = [string](P $r 'province' '')
+    if ($prov) {
+        $w.Add($prov)
+        # "Western Province" should also be found by "western", and
+        # "Trincomalee Zone" by "trincomalee".
+        $w.Add(($prov -replace '\s+(Province|Zone|Division|District)$', ''))
+    }
+    foreach ($f in 'sourceType', 'medium', 'source', 'level', 'year', 'keywords') {
+        $v = [string](P $r $f ''); if ($v) { $w.Add($v) }
+    }
+    $paperNo = [string](P $r 'paper' '')
+    if ($paperNo) { $w.Add("paper $paperNo") }
+    $type = [string](P $r 'type' 'past-paper')
+    $w.Add(($type -replace '-', ' '))
+    switch ($type) {
+        'past-paper'     { $w.Add('past paper'); $w.Add('term test'); $w.Add('exam paper') }
+        'model-paper'    { $w.Add('model paper'); $w.Add('practice paper') }
+        'marking-scheme' { $w.Add('marking scheme'); $w.Add('answers'); $w.Add('answer key') }
+        'model-answer'   { $w.Add('model answer'); $w.Add('answers') }
+        'revision-paper' { $w.Add('revision paper') }
+        'question-bank'  { $w.Add('question bank') }
+    }
+    if ((P $r 'answers' '') -eq 'yes') { $w.Add('answers'); $w.Add('with answers') }
+    ($w | Where-Object { $_ } | Select-Object -Unique) -join ' '
+}
+
 foreach ($r in $papers) {
     if ((P $r 'published' $true) -eq $false) { continue }
     [void]$script:SearchIndex.Add([pscustomobject][ordered]@{
@@ -2381,7 +2469,12 @@ foreach ($r in $papers) {
             kind        = [string](P $r 'type' 'past-paper')
             section     = 'Past Papers'
             level       = [string](P $r 'level' '')
-            keywords    = (@((P $r 'keywords'), (P $r 'subject'), (P $r 'year')) -join ' ')
+            keywords    = (PaperSearchWords $r)
+            grade       = [string](P $r 'grade' '')
+            year        = [string](P $r 'year' '')
+            term        = [string](P $r 'term' '')
+            province    = [string](P $r 'province' '')
+            paperType   = [string](P $r 'type' 'past-paper')
         })
 }
 foreach ($r in $resources) {

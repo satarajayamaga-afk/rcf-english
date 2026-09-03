@@ -142,6 +142,54 @@ export function matchesFilters(record, filters) {
   });
 }
 
+/* Shared query normalisation. The search page and every browse list use this,
+   so "Grade 7 second term", "gr 7 term 2" and "Grade Seven 2nd Term" behave
+   the same wherever they are typed. It lives here rather than being duplicated
+   because the two had drifted apart: the browse lists never learned the
+   synonyms at all, and neither knew that "7" should not match 2017. */
+const NUMBER_WORDS = {
+  one: "1", two: "2", three: "3", four: "4", five: "5", six: "6", seven: "7",
+  eight: "8", nine: "9", ten: "10", eleven: "11", twelve: "12", thirteen: "13"
+};
+
+export function normaliseQuery(raw) {
+  let q = ` ${String(raw || "").toLowerCase()} `;
+  q = q.replace(/\bordinary\s+level\b/g, " ol ").replace(/\bo\s*\/\s*l\b/g, " ol ");
+  q = q.replace(/\badvanced\s+level\b/g, " al ").replace(/\ba\s*\/\s*l\b/g, " al ");
+  q = q.replace(/[^a-z0-9]+/g, " ");
+  q = q.replace(/\bgr\s*(\d{1,2})\b/g, " grade $1 ").replace(/\bg\s*(\d{1,2})\b/g, " grade $1 ");
+  q = q.replace(/\bgrade\s+([a-z]+)\b/g, (m, w) => (NUMBER_WORDS[w] ? ` grade ${NUMBER_WORDS[w]} ` : m));
+  const ORDINAL = { 1: "first", 2: "second", 3: "third" };
+  // "term 2", "term two", "2nd term", "second term" and "two term" are one
+  // request. Written words are handled as well as digits, because a person
+  // typing "grade seven term two" has spelled both numbers out.
+  q = q.replace(/\bterm\s+(one|two|three)\b/g, (m, w) => ` ${ORDINAL[NUMBER_WORDS[w]]} term `);
+  q = q.replace(/\b(one|two|three)\s+term\b/g, (m, w) => ` ${ORDINAL[NUMBER_WORDS[w]]} term `);
+  q = q.replace(/\bterm\s*([123])\b/g, (m, n) => ` ${ORDINAL[n]} term `);
+  q = q.replace(/\b([123])\s*(?:st|nd|rd)?\s+term\b/g, (m, n) => ` ${ORDINAL[n]} term `);
+  q = q.replace(/\b1st\b/g, " first ").replace(/\b2nd\b/g, " second ").replace(/\b3rd\b/g, " third ");
+  q = q.replace(/\byear\s+end\b/g, " third term ");
+  return q.split(/\s+/).filter(Boolean);
+}
+
+/** Word-aware match: "west" finds "western", but "7" never matches 2017. */
+export function matchesQuery(record, term, fields) {
+  const words = normaliseQuery(term);
+  if (!words.length) return true;
+  const hay = fields
+    .map((f) => {
+      const v = record[f];
+      return Array.isArray(v) ? v.join(" ") : v || "";
+    })
+    .join(" ")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+  return words.every((w) =>
+    /^\d+$/.test(w) ? hay.includes(w) : hay.some((h) => h === w || h.startsWith(w)));
+}
+
 /** Simple word-based text search across chosen fields. */
 export function matchesText(record, term, fields) {
   if (!term) return true;
