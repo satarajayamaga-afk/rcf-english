@@ -17,7 +17,12 @@
           { "label": "Global English Overview", "url": "global-english/" }
         ]},
         { "title": "GCSE (United Kingdom)", "links": [
-          { "label": "GCSE English", "url": "global-english/gcse/" }
+          { "label": "GCSE English", "url": "global-english/gcse/" },
+          { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+          { "label": "AQA Paper 1", "url": "global-english/gcse/aqa/paper-1/" },
+          { "label": "AQA Paper 2", "url": "global-english/gcse/aqa/paper-2/" },
+          { "label": "AQA Past Papers and Model Papers", "url": "global-english/gcse/aqa/papers/" },
+          { "label": "AQA Revision Strategies", "url": "global-english/gcse/aqa/revision/" }
         ]},
         { "title": "International GCSE", "links": [
           { "label": "IGCSE English", "url": "global-english/igcse/" },

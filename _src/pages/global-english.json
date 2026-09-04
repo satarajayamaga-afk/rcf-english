@@ -257,6 +257,32 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "AQA GCSE English Language: developed in full",
+          "level": "h2",
+          "columns": "3",
+          "variant": "tint",
+          "intro": [
+            "AQA is the first board developed here, one qualification at a time. Every figure on these pages was read from AQA's own specification and specimen materials."
+          ],
+          "items": [
+            { "title": "AQA English Language overview", "url": "global-english/gcse/aqa/", "more": "Start here", "text": ["Both papers, all ten questions, the marks, the assessment objectives and the timings printed on the paper."] },
+            { "title": "Paper 1", "url": "global-english/gcse/aqa/paper-1/", "more": "Open", "text": ["Explorations in Creative Reading and Writing: one fiction source, four reading questions and a creative writing task."] },
+            { "title": "Paper 1 question by question", "url": "global-english/gcse/aqa/paper-1/questions/", "more": "Open", "text": ["Questions 1 to 4 with an original extract, worked examples and practice."] },
+            { "title": "Paper 1 creative writing", "url": "global-english/gcse/aqa/paper-1/creative-writing/", "more": "Open", "text": ["Question 5: description and narrative, and how 24 plus 16 marks are earned."] },
+            { "title": "Paper 2", "url": "global-english/gcse/aqa/paper-2/", "more": "Open", "text": ["Writers' Viewpoints and Perspectives: two sources from different centuries."] },
+            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "more": "Open", "text": ["Questions 1 to 4, including the 12-mark language question and the 16-mark comparison."] },
+            { "title": "Paper 2 viewpoint writing", "url": "global-english/gcse/aqa/paper-2/writing/", "more": "Open", "text": ["Question 5: articles, letters, speeches and essays that argue a case."] },
+            { "title": "Language analysis", "url": "global-english/gcse/aqa/language-analysis/", "more": "Open", "text": ["What to notice, what to name, and how to write about effect."] },
+            { "title": "Comparing viewpoints", "url": "global-english/gcse/aqa/comparing-viewpoints/", "more": "Open", "text": ["The paragraph shape for the 16-mark comparison question."] },
+            { "title": "Planning answers", "url": "global-english/gcse/aqa/planning-answers/", "more": "Open", "text": ["Which paragraph shape each of the ten questions wants."] },
+            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "more": "Open", "text": ["The habits that cost the most marks, and the fixes."] },
+            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "more": "Open", "text": ["How to revise an examination with no set texts, with a six-week plan."] },
+            { "title": "Past papers and model papers", "url": "global-english/gcse/aqa/papers/", "more": "Open", "text": ["Official AQA papers, mark schemes and examiner reports, plus the RCF model paper."] },
+            { "title": "Practice and model answers", "url": "global-english/gcse/aqa/practice/", "more": "Open", "text": ["Original tasks with model answers, indexed by question."] }
+          ]
+        },
+        {
           "type": "table",
           "id": "papers",
           "heading": "GCSE English past papers and mark schemes",
