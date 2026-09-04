@@ -5,6 +5,38 @@
     { "label": "Home", "url": "" },
 
     {
+      "label": "Global English",
+      "url": "global-english/",
+      "note": "GCSE, IGCSE and Cambridge English",
+      "_headerOnly": "Sits as its own button in the header bar rather than in the section row below. Eleven sections do not fit on one line at ordinary laptop widths, so adding this one to the row would have wrapped the menu. On a telephone the header buttons are hidden and this appears in the slide-out menu with all its pages.",
+      "headerOnly": true,
+      "headerStyle": "global",
+      "summary": "English qualifications taken outside Sri Lanka: GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, and the Cambridge English Qualifications.",
+      "groups": [
+        { "title": "Start here", "links": [
+          { "label": "Global English Overview", "url": "global-english/" }
+        ]},
+        { "title": "GCSE (United Kingdom)", "links": [
+          { "label": "GCSE English", "url": "global-english/gcse/" }
+        ]},
+        { "title": "International GCSE", "links": [
+          { "label": "IGCSE English", "url": "global-english/igcse/" },
+          { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
+          { "label": "IGCSE ESL Reading and Writing Paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/" },
+          { "label": "IGCSE ESL Writing Formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/" },
+          { "label": "IGCSE ESL Model Answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/" },
+          { "label": "IGCSE ESL Speaking Test", "url": "global-english/igcse/english-as-a-second-language/speaking-test/" }
+        ]},
+        { "title": "Cambridge English", "links": [
+          { "label": "Cambridge English Qualifications", "url": "global-english/cambridge-english/" }
+        ]},
+        { "title": "Skills", "links": [
+          { "label": "English Skills", "url": "global-english/skills/" }
+        ]}
+      ]
+    },
+
+    {
       "label": "RCF Publications",
       "url": "rcf-publications/",
       "external": false,

@@ -479,6 +479,32 @@ function Header($slug) {
     $html += '<label class="visually-hidden" for="header-search-input">Search RCF English</label>'
     $html += '<input type="search" id="header-search-input" name="q" placeholder="Search lessons and papers"></form>'
     $html += '<div class="header-actions">'
+
+    # Nav items marked headerOnly get their own button here instead of a place
+    # in the section row below, which does not have room for another item at
+    # laptop widths. RCF Publications is handled separately just after, because
+    # its address depends on whether the bookshop is published yet.
+    foreach ($item in $nav.items) {
+        if ((P $item 'headerOnly') -ne $true) { continue }
+        $itemUrl = [string](P $item 'url' '')
+        # RCF Publications is rendered by the block just below, which knows
+        # whether the bookshop has a published address yet. Without this test
+        # it was drawn twice: once plainly here and once as the gold button.
+        if ((P $item 'label') -eq $script:Config.publicationsName) { continue }
+        if (IsPub $itemUrl) { continue }
+        $style = [string](P $item 'headerStyle' '')
+        $cls = 'header-link'
+        if ($style) { $cls += ' header-link--' + $style }
+        if (NavItemIsCurrent $item $slug) { $cls += ' is-current' }
+        $currentAttr = ''
+        if ($itemUrl.Trim('/') -eq $slug) { $currentAttr = ' aria-current="page"' }
+        $noteText = [string](P $item 'note' '')
+        $noteHtml = ''
+        if ($noteText) { $noteHtml = '<span class="header-link__note">' + (E $noteText) + '</span>' }
+        $html += '<a class="' + $cls + '" href="' + (E (Url $itemUrl)) + '"' + $currentAttr + '>'
+        $html += '<span class="header-link__label">' + (E (P $item 'label')) + '</span>' + $noteHtml + '</a>'
+    }
+
     if (PubIsLive) {
         $html += '<a class="header-link header-link--accent' + (PubExtClass) + '" href="' + (E (Url 'PUBLICATIONS_WEBSITE_URL')) + '"' + (PubExtAttrs) + '>' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
     }
@@ -1425,6 +1451,10 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'paperLibrary' {
+            return (RenderPaperLibrary $block)
+        }
+
         'classes' {
             return (RenderClasses $block)
         }
@@ -1696,7 +1726,14 @@ function StaticList($source, $fixed, $limit = 0) {
             $actions += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>View the paper</a>'
         }
         if (P $r 'download') {
-            $actions += '<a class="btn btn--sm btn--primary ext" href="' + (E (P $r 'download')) + '" target="_blank" rel="noopener">Download PDF</a>'
+            # Through Url() like every other href. Papers hosted on this site
+            # were otherwise linked relative to the current directory, which
+            # made "Download PDF" answer 404 on every one of them.
+            $d = [string](P $r 'download')
+            $dCls = 'btn btn--sm btn--primary'
+            $dAttr = ''
+            if ($d -match '^https?:') { $dCls += ' ext'; $dAttr = ' target="_blank" rel="noopener"' }
+            $actions += '<a class="' + $dCls + '" href="' + (E (Url $d)) + '"' + $dAttr + '>Download PDF</a>'
         }
         if (P $r 'markingScheme') {
             $ms = [string](P $r 'markingScheme')
@@ -1713,6 +1750,435 @@ function StaticList($source, $fixed, $limit = 0) {
         $html += '</div></li>'
     }
     return $html + '</ul>'
+}
+
+# ============================================================ Paper library
+#
+# The old past-paper page handed the visitor one long list and a row of eight
+# filters, and answered "No results found" whenever the words they typed did
+# not appear in a filename. That is the wrong job for the reader to be doing.
+#
+# The library below inverts it. Every paper is placed in exactly one visible
+# section - Grade 1 to Grade 13, O/L Literature or A/L Literature - the whole
+# section is shown as soon as it is chosen, and the only filter inside a
+# section is the year. Nothing has to be typed to see papers.
+
+$script:PaperSectionOrder = @(
+    @{ key = 'grade-1';       label = 'Grade 1';         short = '1' },
+    @{ key = 'grade-2';       label = 'Grade 2';         short = '2' },
+    @{ key = 'grade-3';       label = 'Grade 3';         short = '3' },
+    @{ key = 'grade-4';       label = 'Grade 4';         short = '4' },
+    @{ key = 'grade-5';       label = 'Grade 5';         short = '5' },
+    @{ key = 'grade-6';       label = 'Grade 6';         short = '6' },
+    @{ key = 'grade-7';       label = 'Grade 7';         short = '7' },
+    @{ key = 'grade-8';       label = 'Grade 8';         short = '8' },
+    @{ key = 'grade-9';       label = 'Grade 9';         short = '9' },
+    @{ key = 'grade-10';      label = 'Grade 10';        short = '10' },
+    @{ key = 'grade-11';      label = 'Grade 11';        short = '11' },
+    @{ key = 'grade-12';      label = 'Grade 12';        short = '12' },
+    @{ key = 'grade-13';      label = 'Grade 13';        short = '13' },
+    @{ key = 'ol-literature'; label = 'O/L Literature';  short = 'O/L Lit' },
+    @{ key = 'al-literature'; label = 'A/L Literature';  short = 'A/L Lit' }
+)
+
+# A one-line explanation under each section heading, so a visitor who lands on
+# Grade 11 understands why the O/L papers are sitting in it.
+$script:PaperSectionNote = @{
+    'grade-11'      = 'Grade 11 English term tests together with the G.C.E. O/L English Language papers, model papers and marking schemes, because O/L is sat at the end of Grade 11.'
+    'grade-13'      = 'Grade 13 papers together with A/L General English, which is sat at the end of Grade 13.'
+    'ol-literature' = 'English Literature papers for Grades 10 and 11 and for the G.C.E. O/L Literature examination.'
+    'al-literature' = 'Advanced Level English Literature papers, including the language paper and unseen appreciation.'
+}
+
+# Which single section a paper belongs in. A paper is never placed in two
+# sections: the literature subjects win over the grade number, because a
+# reader looking for a Grade 10 literature paper looks under Literature.
+function PaperSectionKey($r) {
+    $subject = [string](P $r 'subject' '')
+    if ($subject -eq 'al-literature') { return 'al-literature' }
+    if ($subject -eq 'ol-literature') { return 'ol-literature' }
+
+    $grade = ([string](P $r 'grade' '')).Trim()
+    if ($grade -match '^(1[0-3]|[1-9])$') { return 'grade-' + $grade }
+
+    # No grade recorded. O/L is sat at the end of Grade 11 and A/L General
+    # English at the end of Grade 13, so these belong there rather than being
+    # dropped for want of a grade field.
+    $level = [string](P $r 'level' '')
+    $exam = [string](P $r 'examination' '')
+    if ($level -eq 'O/L' -or $exam -eq 'ol') { return 'grade-11' }
+    if ($level -match 'Advanced' -or $exam -eq 'al' -or $subject -eq 'general-english') { return 'grade-13' }
+    return ''
+}
+
+# The Google Drive file id, used only to make certain the same PDF is never
+# listed twice under two different titles.
+function PaperFileKey($r) {
+    foreach ($field in @('url', 'download', 'file')) {
+        $u = [string](P $r $field '')
+        if ($u -match '/d/([A-Za-z0-9_-]{10,})') { return 'drive:' + $Matches[1] }
+        if ($u -match '[?&]id=([A-Za-z0-9_-]{10,})') { return 'drive:' + $Matches[1] }
+    }
+    $u = [string](P $r 'url' (P $r 'file' ''))
+    if ($u) { return 'url:' + $u.ToLower() }
+    return 'id:' + [string](P $r 'id' '')
+}
+
+# Papers are grouped by year, newest first. A paper with no confirmed year is
+# still shown - it goes to the end under "Year not specified" - never hidden.
+function PaperYearRank($r) {
+    $y = ([string](P $r 'year' '')).Trim()
+    if ($y -match '^(\d{4})') { return [int]$Matches[1] }
+    return -1
+}
+
+function PaperYearLabel($r) {
+    $y = ([string](P $r 'year' '')).Trim()
+    if ($y) { return $y }
+    return 'Year not specified'
+}
+
+# What the card shows on the "Term or examination" line.
+function PaperTermExamLabel($r) {
+    $term = [string](P $r 'term' '')
+    $exam = [string](P $r 'examination' '')
+    $bits = @()
+    switch ($term) {
+        'first'  { $bits += 'First term' }
+        'second' { $bits += 'Second term' }
+        'third'  { $bits += 'Third term' }
+    }
+    switch ($exam) {
+        'ol'              { $bits += 'G.C.E. O/L examination' }
+        'al'              { $bits += 'G.C.E. A/L examination' }
+        'model'           { $bits += 'Model paper' }
+        'provincial'      { $bits += 'Provincial examination' }
+        'school-term-test' { if ($bits.Count -eq 0) { $bits += 'School term test' } else { $bits += 'test' } }
+    }
+    if ($bits.Count -eq 0) { return 'Not stated on the paper' }
+    if ($bits.Count -eq 2 -and $bits[1] -eq 'test') { return $bits[0] + ' test' }
+    return ($bits -join ' &middot; ')
+}
+
+# Province, zone or school. Where the paper itself names its source that is
+# the more exact answer, so it is preferred over the province field.
+function PaperPlaceLabel($r) {
+    $source = [string](P $r 'source' '')
+    $prov = [string](P $r 'province' '')
+    if ($source -and $prov -and ($source -ne $prov)) { return $source }
+    if ($source) { return $source }
+    if ($prov) { return $prov }
+    return 'Not recorded'
+}
+
+function PaperSubjectLabel($value) {
+    switch ([string]$value) {
+        'ol-english'      { return 'English Language' }
+        'ol-literature'   { return 'English Literature' }
+        'al-literature'   { return 'A/L English Literature' }
+        'general-english' { return 'A/L General English' }
+        default           { return 'English' }
+    }
+}
+
+function PaperMediumLabel($value) {
+    $v = [string]$value
+    if (-not $v) { return 'Not recorded' }
+    return ((Get-Culture).TextInfo.ToTitleCase($v.Replace('-', ' ')))
+}
+
+# Everything a reader might reasonably type, kept on the card so the internal
+# search still finds a paper by its filename - without a filename ever being
+# what the visitor has to guess.
+function PaperCardSearch($r) {
+    $bits = @(
+        [string](P $r 'title' ''),
+        [string](P $r 'description' ''),
+        [string](P $r 'province' ''),
+        [string](P $r 'source' ''),
+        [string](P $r 'year' ''),
+        [string](P $r 'id' '')
+    )
+    $u = [string](P $r 'url' (P $r 'file' ''))
+    if ($u -match '/([^/?#]+\.pdf)') { $bits += $Matches[1].Replace('-', ' ') }
+
+    # The alternative wordings a person actually types. PaperSearchWords does
+    # the same job for the site-wide index, but it is defined below the page
+    # loop and so is not callable from here.
+    $grade = ([string](P $r 'grade' '')).Trim()
+    if ($grade) { $bits += "grade $grade"; $bits += "gr $grade"; $bits += "g$grade" }
+    $term = [string](P $r 'term' '')
+    if ($term) {
+        $n = @{ 'first' = '1st'; 'second' = '2nd'; 'third' = '3rd' }
+        $bits += "$term term"; $bits += "$($n[$term]) term"
+        if ($term -eq 'third') { $bits += 'year end' }
+    }
+    $exam = [string](P $r 'examination' '')
+    $subject = [string](P $r 'subject' '')
+    if ($exam -eq 'ol' -or $grade -eq '11') { $bits += 'ol o/l ordinary level' }
+    if ($exam -eq 'al' -or $subject -match '^al-' -or $subject -eq 'general-english') { $bits += 'al a/l advanced level' }
+    if ($subject -match 'literature') { $bits += 'literature english literature' }
+
+    return (($bits | Where-Object { $_ }) -join ' ').ToLower()
+}
+
+function PaperCard($r) {
+    $target = [string](P $r 'url' (P $r 'file' ''))
+    $isExt = $target -match '^https?:'
+    $year = ([string](P $r 'year' '')).Trim()
+
+    $html = '<li class="paper-card" data-paper-card data-year="' + (E $year) + '" data-search="' + (E (PaperCardSearch $r)) + '">'
+
+    # Tag row - the year first, because that is what a visitor scans for.
+    $html += '<div class="tag-row">'
+    if ($year) { $html += '<span class="tag tag--year">' + (E $year) + '</span>' }
+    else { $html += '<span class="tag tag--undated">Year not specified</span>' }
+    $html += '<span class="tag tag--type">' + (E (TypeLabel (P $r 'type'))) + '</span>'
+    if ((P $r 'answers') -eq 'yes') { $html += '<span class="tag tag--answers">Answers included</span>' }
+    if ((P $r 'clearScan') -eq 'yes') {
+        $html += '<span class="tag tag--clear" title="The first page of this PDF was checked on screen: straight, sharp, complete, and with no student name on it.">Clear scan</span>'
+    }
+    if ($target -match '^http://') {
+        $html += '<span class="tag tag--http" title="This official government site is served over plain HTTP, not HTTPS. The link still works; the connection to that site is not encrypted.">Official site, no HTTPS</span>'
+    }
+    $html += '</div>'
+
+    $html += '<h4 class="paper-card__title">' + (E (P $r 'title' 'Untitled paper')) + '</h4>'
+
+    # The five facts the reader was promised, always in the same order and
+    # always present, so the cards line up and nothing looks missing.
+    $html += '<dl class="paper-card__facts">'
+    $html += '<div><dt>Year</dt><dd>' + (E (PaperYearLabel $r)) + '</dd></div>'
+    $html += '<div><dt>Term or examination</dt><dd>' + (PaperTermExamLabel $r) + '</dd></div>'
+    $html += '<div><dt>Province, zone or school</dt><dd>' + (E (PaperPlaceLabel $r)) + '</dd></div>'
+    $html += '<div><dt>Subject and paper type</dt><dd>' + (E (PaperSubjectLabel (P $r 'subject'))) + ' &mdash; ' + (E (TypeLabel (P $r 'type'))) + '</dd></div>'
+    $html += '<div><dt>Medium</dt><dd>' + (E (PaperMediumLabel (P $r 'medium'))) + '</dd></div>'
+    $html += '</dl>'
+
+    $html += '<div class="paper-card__actions">'
+    if ($target) {
+        $e = ''
+        $cls = 'btn btn--sm btn--outline'
+        if ($isExt) { $e = ' target="_blank" rel="noopener"'; $cls += ' ext' }
+        $html += '<a class="' + $cls + '" href="' + (E (Url $target)) + '"' + $e + '>View paper<span class="visually-hidden">: ' + (E (P $r 'title' '')) + '</span></a>'
+    }
+    # The download link must go through Url() like every other href. Most
+    # papers live in Google Drive and are absolute, which hid the fault: the
+    # PDFs that are hosted here were being linked relative to the current
+    # directory, so "Download PDF" answered 404 on all of them.
+    $dl = [string](P $r 'download' '')
+    if ($dl) {
+        $dlExt = $dl -match '^https?:'
+        $dlCls = 'btn btn--sm btn--primary'
+        $dlAttr = ' download'
+        if ($dlExt) { $dlCls += ' ext'; $dlAttr = ' target="_blank" rel="noopener" download' }
+        $html += '<a class="' + $dlCls + '" href="' + (E (Url $dl)) + '"' + $dlAttr + '>Download PDF<span class="visually-hidden">: ' + (E (P $r 'title' '')) + '</span></a>'
+    }
+    if (P $r 'markingScheme') {
+        $ms = [string](P $r 'markingScheme')
+        $msE = ''
+        $msCls = 'btn btn--sm btn--outline'
+        if ($ms -match '^https?:') { $msE = ' target="_blank" rel="noopener"'; $msCls += ' ext' }
+        $html += '<a class="' + $msCls + '" href="' + (E (Url $ms)) + '"' + $msE + '>Marking scheme</a>'
+    }
+    $html += '</div>'
+
+    $fs = [string](P $r 'fileSize' '')
+    $foot = @()
+    if ($fs) { $foot += 'PDF, ' + (E $fs) }
+    if (P $r 'pages') { $foot += (E (P $r 'pages')) + ' pages' }
+    if (P $r 'copyright') { $foot += (E (P $r 'copyright')) }
+    if ($foot.Count -gt 0) {
+        $html += '<p class="paper-card__foot">' + ($foot -join ' &middot; ') + '</p>'
+    }
+
+    return $html + '</li>'
+}
+
+function RenderPaperLibrary($block) {
+    $records = @($papers | Where-Object { (P $_ 'published' $true) -ne $false })
+
+    # A sub-page narrows the library to one subject or one kind of paper. The
+    # section chooser and the year filter then work exactly as they do on the
+    # main page, over the narrower set.
+    $fixed = P $block 'fixed'
+    if ($fixed) {
+        foreach ($prop in $fixed.PSObject.Properties) {
+            $key = $prop.Name
+            $want = [string]$prop.Value
+            $records = @($records | Where-Object { [string](P $_ $key) -eq $want })
+        }
+    }
+
+    # Same PDF, two titles, one card. Nothing is dropped silently: a duplicate
+    # is reported as a build warning so the data file can be tidied.
+    $seen = @{}
+    $unique = New-Object System.Collections.ArrayList
+    foreach ($r in $records) {
+        $k = PaperFileKey $r
+        if ($seen.ContainsKey($k)) {
+            [void]$script:Warnings.Add("Paper '$([string](P $r 'id'))' points at the same file as '$($seen[$k])' and was left out of the library to avoid a duplicate card")
+            continue
+        }
+        $seen[$k] = [string](P $r 'id')
+        [void]$unique.Add($r)
+    }
+
+    # Every paper must land somewhere. If one does not, say so loudly rather
+    # than quietly losing it.
+    $buckets = @{}
+    foreach ($s in $script:PaperSectionOrder) { $buckets[$s.key] = New-Object System.Collections.ArrayList }
+    foreach ($r in $unique) {
+        $key = PaperSectionKey $r
+        if (-not $key -or -not $buckets.ContainsKey($key)) {
+            [void]$script:Warnings.Add("Paper '$([string](P $r 'id'))' could not be placed in any library section and is not shown")
+            continue
+        }
+        [void]$buckets[$key].Add($r)
+    }
+
+    $total = 0
+    foreach ($s in $script:PaperSectionOrder) { $total += $buckets[$s.key].Count }
+
+    # Which sections this page shows. The main library keeps every grade,
+    # including one with nothing in it yet, because a reader looking for
+    # Grade 5 deserves to be told rather than left wondering. A narrowed page
+    # drops the sections that cannot contain anything: "Model papers: Grade 9,
+    # none yet" would be noise, not information.
+    $keepEmpty = [bool](P $block 'keepEmpty' (-not $fixed))
+    $sections = @($script:PaperSectionOrder | Where-Object { $keepEmpty -or $buckets[$_.key].Count -gt 0 })
+
+    # With one section left there is nothing to choose between, so the chooser
+    # is dropped and the papers are listed straight away. A page may also ask
+    # for that directly with "chooser": false.
+    $wantChooser = [bool](P $block 'chooser' $true)
+    $useChooser = $wantChooser -and $sections.Count -gt 1
+
+    $html = (SectionOpen $block 'section--library') + (SectionHead $block)
+
+    if ($total -eq 0) {
+        $html += '<div class="empty-state"><h3>Nothing has been published here yet</h3>'
+        $html += '<p>A paper appears here only once it may lawfully be linked and its first page has been checked. '
+        $html += 'You can <a href="' + (E (Url 'past-papers/')) + '">browse the whole paper library</a> or '
+        $html += '<a href="' + (E (Url 'contact/')) + '">ask for a particular paper</a>.</p></div>'
+        return $html + '</div></section>'
+    }
+
+    $singleAttr = ''
+    if (-not $useChooser) { $singleAttr = ' data-single="all"' }
+    $html += '<div class="paperlib" data-paperlib data-total="' + $total + '"' + $singleAttr + '>'
+
+    # ---- the section chooser
+    if ($useChooser) {
+        $html += '<nav class="paperlib__nav" aria-label="Choose a grade or literature section">'
+        $html += '<ul class="paperlib__tabs">'
+        foreach ($s in $sections) {
+            $n = $buckets[$s.key].Count
+            $cls = 'paperlib__tab'
+            if ($n -eq 0) { $cls += ' paperlib__tab--empty' }
+            $countText = if ($n -eq 1) { '1 paper' } elseif ($n -eq 0) { 'None yet' } else { "$n papers" }
+            $html += '<li><a class="' + $cls + '" href="#papers-' + (E $s.key) + '" data-section="' + (E $s.key) + '">'
+            $html += '<span class="paperlib__tab-name">' + (E $s.label) + '</span>'
+            $html += '<span class="paperlib__tab-count">' + (E $countText) + '</span></a></li>'
+        }
+        $html += '</ul></nav>'
+    }
+
+    # ---- the year filter, revealed by the script once a section is chosen
+    $html += '<div class="paperlib__filter" data-paperlib-filter hidden>'
+    $html += '<div class="paperlib__filter-head"><h3 data-paperlib-heading>All papers</h3>'
+    $html += '<p class="paperlib__filter-count" data-paperlib-count>&nbsp;</p></div>'
+    $html += '<div class="paperlib__filter-controls">'
+    $html += '<div class="field"><label for="paperlib-year">Search by year</label>'
+    $html += '<input type="search" id="paperlib-year" data-paperlib-year inputmode="numeric" autocomplete="off" placeholder="For example 2024"></div>'
+    $html += '<div class="paperlib__years" data-paperlib-years role="group" aria-label="Jump to a year"></div>'
+    $html += '<button type="button" class="btn btn--sm btn--outline" data-paperlib-clear hidden>Show every year</button>'
+    $html += '</div></div>'
+    $html += '<p class="visually-hidden" role="status" aria-live="polite" data-paperlib-live></p>'
+
+    # ---- what each panel holds. With a chooser that is one section each.
+    #      Without one there is a single list, and it must hold every paper on
+    #      the page, not merely the first section's - otherwise a Grade 10
+    #      page would quietly drop its six literature papers.
+    $panels = New-Object System.Collections.ArrayList
+    if ($useChooser) {
+        foreach ($s in $sections) {
+            [void]$panels.Add(@{
+                    key   = $s.key
+                    label = $s.label
+                    note  = $(if ($script:PaperSectionNote.ContainsKey($s.key)) { $script:PaperSectionNote[$s.key] } else { '' })
+                    items = @($buckets[$s.key])
+                })
+        }
+    }
+    else {
+        $merged = New-Object System.Collections.ArrayList
+        foreach ($s in $sections) { foreach ($r in $buckets[$s.key]) { [void]$merged.Add($r) } }
+        # "all", not the first section's key: an id of "papers-grade-1" on the
+        # model-papers page would name a section that is not what the panel
+        # holds, and would be a misleading anchor to link anyone to.
+        [void]$panels.Add(@{
+                key   = 'all'
+                label = [string](P $block 'sectionLabel' (P $block 'heading' 'All papers'))
+                note  = [string](P $block 'sectionNote' '')
+                items = @($merged)
+            })
+    }
+
+    # ---- the sections themselves, written into the page so they work and are
+    #      indexed with the script switched off
+    $html += '<div class="paperlib__panels" data-paperlib-panels>'
+    foreach ($s in $panels) {
+        $list = @($s.items)
+        $html += '<section class="paperlib__panel" id="papers-' + (E $s.key) + '" data-panel="' + (E $s.key) + '" tabindex="-1">'
+        $html += '<h3 class="paperlib__panel-title">' + (E $s.label) + '</h3>'
+        if ($s.note) {
+            $html += '<p class="paperlib__panel-note">' + (E $s.note) + '</p>'
+        }
+
+        if ($list.Count -eq 0) {
+            $html += '<div class="empty-state"><h4>No ' + (E $s.label) + ' papers have been published yet</h4>'
+            $html += '<p>This section is real and waiting. A paper appears here only once it may lawfully be linked and its first page has been checked. '
+            $html += '<a href="' + (E (Url 'contact/')) + '">Ask for a ' + (E $s.label) + ' paper</a> and it moves up the queue.</p></div>'
+            $html += '</section>'
+            continue
+        }
+
+        # Newest year first; undated papers last, but present.
+        $sorted = @($list | Sort-Object -Property @{ Expression = { PaperYearRank $_ }; Descending = $true },
+                                                  @{ Expression = { [string](P $_ 'term' 'z') }; Descending = $true },
+                                                  @{ Expression = { [string](P $_ 'title' '') } })
+        $groups = @()
+        $order = New-Object System.Collections.ArrayList
+        $byYear = @{}
+        foreach ($r in $sorted) {
+            $y = ([string](P $r 'year' '')).Trim()
+            if (-not $byYear.ContainsKey($y)) { $byYear[$y] = New-Object System.Collections.ArrayList; [void]$order.Add($y) }
+            [void]$byYear[$y].Add($r)
+        }
+
+        foreach ($y in $order) {
+            $items = @($byYear[$y])
+            $label = if ($y) { $y } else { 'Year not specified' }
+            $countText = if ($items.Count -eq 1) { '1 paper' } else { "$($items.Count) papers" }
+            $html += '<div class="paperlib__year" data-year-group="' + (E $y) + '">'
+            $html += '<h4 class="paperlib__year-head"><span>' + (E $label) + '</span><span class="paperlib__year-count">' + (E $countText) + '</span></h4>'
+            $html += '<ul class="paper-cards">'
+            foreach ($r in $items) { $html += (PaperCard $r) }
+            $html += '</ul></div>'
+        }
+
+        # Shown by the script only when a typed year matches nothing here.
+        $html += '<div class="empty-state paperlib__noyear" data-paperlib-noyear hidden>'
+        $html += '<h4>No paper from that year in ' + (E $s.label) + '</h4>'
+        $html += '<p data-paperlib-noyear-text></p>'
+        $html += '<p><button type="button" class="btn btn--sm btn--outline" data-paperlib-clear>Show every ' + (E $s.label) + ' paper</button></p></div>'
+        $html += '</section>'
+    }
+    $html += '</div>'
+
+    $html += '</div></div></section>'
+    return $html
 }
 
 function ClassStatus($value) {

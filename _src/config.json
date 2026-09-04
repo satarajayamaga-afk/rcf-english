@@ -8,8 +8,8 @@
   "lang": "en",
   "themeColor": "#0f2647",
 
-  "siteUrl": "https://satarajayamaga-afk.github.io/rcf-english",
-  "_siteUrlNote": "Used only for canonical URLs, Open Graph tags and sitemap.xml. Page-to-page links are relative, so the site works at any address. Change this to your custom domain when you have one.",
+  "siteUrl": "https://rcfenglish.com",
+  "_siteUrlNote": "The custom domain. Used for canonical URLs, Open Graph tags and sitemap.xml. Page-to-page links are relative, so the site still works at any address, but search engines are told this is the real one. The CNAME file in the project root must hold the same domain - GitHub Pages reads it from there.",
 
   "PUBLICATIONS_WEBSITE_URL": "rcf-publications/",
   "_publicationsNote": "Replace the placeholder above with the published address of the RCF Publications bookshop, for example https://satarajayamaga-afk.github.io/rcf-ebook-publications/ . Nothing else needs to change - every publications link on the site reads this one value.",

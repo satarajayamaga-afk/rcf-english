@@ -486,6 +486,58 @@ a:hover { color: var(--teal-700); }
 }
 .header-link--accent:hover { background: #eebc5d; color: var(--navy-900); }
 
+/* Global English. It sits in the header bar rather than the section row
+   below, because that row is already full at laptop widths and an eleventh
+   item wrapped it onto two lines. Below 900px every header-link is hidden and
+   the item appears in the slide-out menu instead, with all of its pages. */
+.header-link--global {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  line-height: 1.15;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+.header-link--global::before {
+  content: "\1F30D";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.header-link--global .header-link__label { font-weight: 700; letter-spacing: 0.01em; }
+.header-link--global .header-link__note {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #a9c2e2;
+  letter-spacing: 0.02em;
+}
+.header-link--global:hover,
+.header-link--global:focus-visible {
+  background: var(--teal-700);
+  border-color: var(--teal-600);
+  color: #fff;
+}
+.header-link--global:hover .header-link__note,
+.header-link--global:focus-visible .header-link__note { color: #cdeee4; }
+.header-link--global.is-current {
+  background: var(--teal-700);
+  border-color: var(--teal-600);
+  color: #fff;
+}
+.header-link--global.is-current .header-link__note { color: #cdeee4; }
+
+/* The two header buttons plus the search box need real room. Between 900px
+   and 1100px the note under "Global English" is what has to go, not the
+   button itself. */
+@media (max-width: 1100px) {
+  .header-link--global .header-link__note { display: none; }
+  .header-link--global { flex-direction: row; align-items: center; padding-block: 0.5rem; }
+}
+
 .search-toggle,
 .nav-toggle {
   display: inline-flex;
@@ -1622,6 +1674,178 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   color: var(--ink-700);
 }
 
+/* 11b. Past paper library -------------------------------------------------
+   Choose a grade or literature section, then optionally a year. The section
+   chooser is the main interface; there is no title search to guess at. */
+
+.paperlib { display: grid; gap: var(--sp-5); }
+
+/* --- the section chooser */
+.paperlib__tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-3);
+  /* Two columns on the narrowest phone, growing to a wide row on a desktop. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr));
+}
+.paperlib__tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-height: 4.25rem;
+  padding: var(--sp-3) var(--sp-3);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--navy-800);
+  text-decoration: none;
+  text-align: left;
+  box-shadow: var(--shadow-1);
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.paperlib__tab:hover,
+.paperlib__tab:focus-visible {
+  border-color: var(--teal-600);
+  background: var(--teal-050);
+  transform: translateY(-1px);
+}
+.paperlib__tab-name { font-weight: 700; font-size: var(--step-0); line-height: 1.25; }
+.paperlib__tab-count { font-size: 0.75rem; color: var(--ink-500); font-weight: 600; }
+.paperlib__tab.is-current {
+  border-color: var(--navy-700);
+  background: var(--navy-800);
+  color: #fff;
+  box-shadow: var(--shadow-2);
+}
+.paperlib__tab.is-current .paperlib__tab-count { color: #cfe0f5; }
+/* An empty section still shows. It says so, rather than disappearing. */
+.paperlib__tab--empty { border-style: dashed; color: var(--ink-500); box-shadow: none; }
+.paperlib__tab--empty .paperlib__tab-name { font-weight: 600; }
+
+/* --- the year filter */
+.paperlib__filter {
+  display: grid;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-5);
+  border: 1px solid var(--navy-100);
+  border-radius: var(--radius-lg);
+  background: var(--navy-050);
+}
+.paperlib__filter-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--sp-3); }
+.paperlib__filter-head h3 { margin: 0; font-size: var(--step-2); color: var(--navy-800); }
+.paperlib__filter-count { margin: 0; font-weight: 650; color: var(--teal-700); }
+.paperlib__filter-controls { display: grid; gap: var(--sp-3); align-items: end; }
+.paperlib__filter-controls .field { max-width: 16rem; }
+.paperlib__years { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.paperlib__year-chip {
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--navy-700);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.paperlib__year-chip:hover { border-color: var(--teal-600); background: var(--teal-050); }
+.paperlib__year-chip.is-current {
+  background: var(--teal-700);
+  border-color: var(--teal-700);
+  color: #fff;
+}
+
+/* --- a section of papers */
+.paperlib__panel { scroll-margin-top: calc(var(--header-h) + 1rem); }
+.paperlib__panel:focus { outline: none; }
+.paperlib__panel + .paperlib__panel { margin-top: var(--sp-7); }
+.paperlib__panel-title { font-size: var(--step-3); margin-bottom: var(--sp-2); }
+/* Once the script is driving the page the filter panel names the section, so
+   this heading would say it a second time. It is kept in the document for
+   screen readers and for the plain no-script stack of sections. */
+.paperlib.is-live .paperlib__panel-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.paperlib.is-live .paperlib__panel-note { margin-top: 0; }
+.paperlib__panel-note { color: var(--ink-500); font-size: var(--step--1); max-width: var(--measure); }
+.paperlib__year { margin-top: var(--sp-5); }
+.paperlib__year-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  margin: 0 0 var(--sp-3);
+  padding-bottom: var(--sp-2);
+  border-bottom: 2px solid var(--navy-100);
+  font-size: var(--step-1);
+  color: var(--navy-800);
+}
+.paperlib__year-count { font-size: 0.8rem; font-weight: 600; color: var(--ink-500); font-family: var(--font-body); }
+
+/* --- the cards */
+.paper-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-4);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr));
+}
+.paper-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-4) var(--sp-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+.paper-card__title {
+  font-size: var(--step-1);
+  line-height: 1.3;
+  margin: 0 0 var(--sp-3);
+  color: var(--navy-800);
+}
+.paper-card__facts { margin: 0 0 var(--sp-4); display: grid; gap: var(--sp-2); font-size: var(--step--1); }
+.paper-card__facts > div { display: grid; grid-template-columns: 10.5rem 1fr; gap: var(--sp-2); }
+.paper-card__facts dt { color: var(--ink-500); font-weight: 600; }
+.paper-card__facts dd { margin: 0; color: var(--ink-900); }
+.paper-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: auto;
+  padding-top: var(--sp-2);
+}
+.paper-card__foot { margin: var(--sp-3) 0 0; font-size: 0.78rem; color: var(--ink-300); }
+.tag--undated { background: var(--surface-alt); border-color: var(--line-strong); color: var(--ink-500); }
+
+@media (max-width: 40rem) {
+  .paperlib__tabs { grid-template-columns: repeat(2, 1fr); }
+  .paperlib__tab { min-height: 3.75rem; padding: var(--sp-3) var(--sp-2); }
+  .paperlib__filter { padding: var(--sp-4) var(--sp-4); }
+  .paperlib__filter-controls .field { max-width: none; }
+  .paper-card { padding: var(--sp-4); }
+  /* Two narrow columns would break "Province, zone or school" onto four
+     lines, so the label sits above its value on a phone. */
+  .paper-card__facts > div { grid-template-columns: 1fr; gap: 0; }
+  .paper-card__facts dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .paper-card__actions .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+@media (min-width: 48rem) {
+  .paperlib__filter-controls { grid-template-columns: auto 1fr auto; }
+}
+
 /* 12. Interactive activities --------------------------------------------- */
 
 .activity {
@@ -2654,6 +2878,32 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   .hero, .page-hero { background: #fff !important; color: #000 !important; }
   .hero h1, .page-hero h1 { color: #000 !important; }
   .page-hero p, .hero__text { color: #333 !important; }
+
+  /* Printing a practice paper. The aim is a sheet a student can write on and
+     a teacher can mark, so anything that only works on screen is dropped and
+     nothing that belongs to one exercise is split across two pages. */
+  .paperlib__nav,
+  .paperlib__filter,
+  .browse__all,
+  .adslot,
+  .whatsapp-panel { display: none !important; }
+  /* A closed <details> prints as a bare heading, which loses the answer
+     underneath it. On paper every question and answer should be readable. */
+  details.accordion > .accordion__body { display: block !important; }
+  details.accordion > summary { list-style: none; font-weight: 700; }
+  .section { padding-block: 0.6rem !important; }
+  .section h2 { break-after: avoid; break-inside: avoid; }
+  .section h3, .section h4 { break-after: avoid; }
+  .prose p, .prose li { orphans: 3; widows: 3; }
+  table.data { break-inside: auto; }
+  table.data tr { break-inside: avoid; }
+  table.data thead { display: table-header-group; }
+  /* The exercise texts run long; keep each numbered question whole. */
+  .prose ol > li, .prose ul > li { break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; word-break: break-all; }
+  /* Inside a table that would be ruinous, and the caption already names the
+     source, so links in tables print as plain text. */
+  table.data a[href^="http"]::after { content: none; }
 }
 
 /* The homepage shows a short list of resources with this button below it.

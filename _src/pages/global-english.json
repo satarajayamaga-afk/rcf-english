@@ -1,0 +1,764 @@
+{
+  "_comment": "Global English - English qualifications taken outside Sri Lanka. Every factual claim here (board, syllabus or specification code, paper name, duration, marks, weighting, validity years) was read from the examination board's own published specification. Nothing on these pages reproduces specification text, question papers or mark schemes: they are summarised, and the official source is linked. If you update a code or a paper structure, check the board's site first and change the 'checked' wording in the same edit.",
+
+  "pages": [
+    {
+      "slug": "global-english",
+      "title": "Global English",
+      "metaTitle": "Global English: GCSE, IGCSE and Cambridge English Guides | RCF English",
+      "description": "Guides to GCSE English, International GCSE English and the Cambridge English Qualifications. Every page names the board, the code and the years it covers.",
+      "keywords": "GCSE English, IGCSE English, Cambridge IGCSE English as a Second Language, international GCSE English language, Cambridge English qualifications, English exam guides",
+      "kicker": "International qualifications",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guide",
+      "educationalLevel": "Secondary",
+      "hero": {
+        "text": "English qualifications taken outside Sri Lanka, explained by an English teacher rather than by a marketing page. Choose your qualification, check the board and the code, and work through the papers one exercise at a time.",
+        "buttons": [
+          { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/", "style": "btn--accent" },
+          { "label": "GCSE English", "url": "global-english/gcse/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "**Global English is the part of RCF English written for learners and teachers outside Sri Lanka.** It covers four things: GCSE English in the United Kingdom, International GCSE English taken in schools worldwide, the Cambridge English Qualifications from Pre A1 Starters to C2 Proficiency, and the four English skills that sit underneath all of them."
+        },
+        {
+          "type": "prose",
+          "heading": "Which qualification are you actually taking?",
+          "level": "h2",
+          "text": [
+            "This is the question that causes the most trouble, and it is worth two minutes now. GCSE and International GCSE are **not the same qualification**, they are set by different boards, and a revision guide written for one will mislead you if you are sitting the other. The same is true of the two Cambridge IGCSE English syllabuses: First Language English and English as a Second Language are separate qualifications with separate papers."
+          ],
+          "parts": [
+            {
+              "heading": "Find your qualification on your own paperwork",
+              "level": "h3",
+              "text": [
+                "Your school entered you for a specific syllabus or specification. The code is printed on your statement of entry, on the front of every past paper you are given, and usually on your textbook. It looks like `0510`, `8700`, `4EA1` or `J351`. Once you have that code you can stop guessing, because every guide on this site is filed under it."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The main English qualifications at a glance",
+          "level": "h2",
+          "caption": "Board names and codes as published by each board. Follow the links for the full specification.",
+          "columns": ["Qualification", "Board", "Code", "Where it is usually taken"],
+          "rows": [
+            ["GCSE English Language", "AQA", "8700", "Schools in England"],
+            ["GCSE English Literature", "AQA", "8702", "Schools in England"],
+            ["GCSE English Language", "Pearson Edexcel", "1EN0", "Schools in England"],
+            ["GCSE English Literature", "Pearson Edexcel", "1ET0", "Schools in England"],
+            ["GCSE English Language", "OCR", "J351", "Schools in England"],
+            ["GCSE English Literature", "OCR", "J352", "Schools in England"],
+            ["GCSE English Language", "Eduqas (WJEC)", "C700QS", "England and Wales"],
+            ["GCSE English Literature", "Eduqas (WJEC)", "C720QS", "England and Wales"],
+            ["IGCSE First Language English", "Cambridge International", "0500 / 0990", "International schools worldwide"],
+            ["IGCSE English as a Second Language", "Cambridge International", "0510 / 0511 / 0991 / 0993", "International schools worldwide"],
+            ["IGCSE Literature in English", "Cambridge International", "0475 / 0992", "International schools worldwide"],
+            ["International GCSE English Language A", "Pearson Edexcel", "4EA1", "International schools worldwide"],
+            ["International GCSE English Language B", "Pearson Edexcel", "4EB1", "International schools worldwide"],
+            ["International GCSE English Literature", "Pearson Edexcel", "4ET1", "International schools worldwide"],
+            ["International GCSE English Language", "OxfordAQA", "9270", "International schools worldwide"],
+            ["International GCSE English Literature", "OxfordAQA", "9275", "International schools worldwide"],
+            ["International GCSE English as a Second Language", "OxfordAQA", "9280", "International schools worldwide"]
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The four areas",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "GCSE English",
+              "icon": "GCSE",
+              "url": "global-english/gcse/",
+              "more": "Open GCSE English",
+              "text": ["GCSE English Language and GCSE English Literature, with the AQA, Pearson Edexcel, OCR and Eduqas routes kept separate because their papers differ."]
+            },
+            {
+              "title": "International GCSE (IGCSE)",
+              "icon": "IGCSE",
+              "url": "global-english/igcse/",
+              "more": "Open IGCSE English",
+              "text": ["Cambridge International, Pearson Edexcel and OxfordAQA International GCSE English. Cambridge IGCSE English as a Second Language is developed in full."]
+            },
+            {
+              "title": "Cambridge English Qualifications",
+              "icon": "CAM",
+              "url": "global-english/cambridge-english/",
+              "more": "Open Cambridge English",
+              "text": ["The graded ladder from Pre A1 Starters through A2 Key, B1 Preliminary, B2 First and C1 Advanced to C2 Proficiency."]
+            },
+            {
+              "title": "English Skills",
+              "icon": "SKILL",
+              "url": "global-english/skills/",
+              "more": "Open English Skills",
+              "text": ["Reading, writing, grammar and vocabulary, speaking and listening, taught in a way that transfers between examinations."]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "How the factual claims on these pages are made",
+          "text": [
+            "Every paper name, duration, mark total, weighting and assessment objective on these pages was read from the examination board's own current specification, and the page says which years that specification covers.",
+            "Specifications, question papers and mark schemes are the property of the boards. This site **summarises** them and links to the official document. It does not reproduce them, and it does not host copies of them.",
+            "Where a board changes a syllabus, the guide states the old and the new arrangement separately rather than blending them. If you find something out of date, [tell us](contact/) and it will be corrected."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "What is finished, and what is not",
+          "text": [
+            "**Finished:** Cambridge IGCSE English as a Second Language, developed in full - the qualification guide, the Reading and Writing paper exercise by exercise, the writing formats, model answers and the Speaking test.",
+            "**Being developed:** the GCSE English Language and GCSE English Literature clusters, the remaining International GCSE syllabuses, and the Cambridge English Qualifications. The hub pages for those are real overviews with the correct codes and official links; the question-by-question guides beneath them are still being written.",
+            "One qualification is developed properly before the next is started. That is slower than publishing an outline of everything at once, and it is the reason these pages can be trusted."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Common questions about international English qualifications",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "What is the difference between GCSE and IGCSE English?",
+              "a": [
+                "They are different qualifications. GCSE English is regulated in England and graded 9 to 1; International GCSE is designed for international schools and is offered by Cambridge International, Pearson Edexcel and OxfordAQA. The papers, the set texts and the assessment objectives are not the same, so revision material written for one does not reliably fit the other. Universities and employers treat them as comparable, but you must revise for the one you are entered for."
+              ]
+            },
+            {
+              "q": "Is IGCSE English as a Second Language easier than First Language English?",
+              "a": [
+                "It is not a weaker version of the same paper; it is a different qualification with a different purpose. Cambridge IGCSE English as a Second Language assesses reading, writing, listening and speaking for learners who use English alongside another first language. Cambridge IGCSE First Language English (0500 or 0990) assesses reading and writing only and expects a first-language command of style. Which one suits a learner is a decision for the school, not a matter of difficulty alone."
+              ]
+            },
+            {
+              "q": "How do I find my syllabus or specification code?",
+              "a": [
+                "Look at your statement of entry, the front cover of any past paper your teacher gives you, or your textbook. The code is a short number such as 0510, 8700, 4EA1 or J351. Every guide on this site is filed under the code, so once you have it you can be certain you are reading about your own paper."
+              ]
+            },
+            {
+              "q": "Can I download past papers and mark schemes from this site?",
+              "a": [
+                "Not for the international qualifications. Examination boards own their past papers and mark schemes, and Cambridge International distributes many of them only to registered schools through the School Support Hub. These guides link to the official source instead, and provide original RCF practice tasks with answers that you may use freely."
+              ]
+            },
+            {
+              "q": "Are the practice questions on these pages real examination questions?",
+              "a": [
+                "No. Every practice task on this site is written by RCF English in the style and format of the examination. They are clearly labelled as original RCF practice. Real examination questions belong to the boards and are linked, not copied."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Also on RCF English",
+          "level": "h2",
+          "items": [
+            { "title": "Practical English", "url": "practical-english/", "text": ["Everyday, spoken and workplace English for adults and independent learners."] },
+            { "title": "IELTS preparation", "url": "practical-english/ielts/", "text": ["Listening, reading, writing, speaking and the graph task, explained step by step."] },
+            { "title": "Interactive practice", "url": "interactive/", "text": ["Quizzes, gap-fill, matching and error correction with instant feedback."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/gcse",
+      "title": "GCSE English",
+      "metaTitle": "GCSE English Language and Literature: Boards, Papers and Codes | RCF English",
+      "description": "A clear guide to GCSE English Language and GCSE English Literature: the AQA, Pearson Edexcel, OCR and Eduqas specifications, their codes, paper structures and official specification links.",
+      "keywords": "GCSE English Language, GCSE English Literature, AQA 8700, AQA 8702, Edexcel 1EN0, OCR J351, Eduqas GCSE English, GCSE English revision",
+      "kicker": "Global English",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guide",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
+      "backTo": { "label": "Global English", "url": "global-english/" },
+      "hero": {
+        "text": "GCSE English is two separate qualifications, English Language and English Literature, and four boards set them differently. Find your board first, then the paper structure follows."
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "**GCSE English Language and GCSE English Literature are two different GCSEs, and most students in England sit both.** English Language is assessed on unseen texts and your own writing; English Literature is assessed on set texts you have studied, plus unseen poetry. Neither has coursework: both are examined at the end of the course."
+        },
+        {
+          "type": "prose",
+          "heading": "The four boards, and why the difference matters",
+          "level": "h2",
+          "text": [
+            "AQA, Pearson Edexcel, OCR and Eduqas (part of WJEC) all offer GCSE English Language and GCSE English Literature. All four are regulated to the same standard and graded 9 to 1, so no board is 'easier'. What differs is the shape of the papers - how many there are, how long they last, which texts are set, and how the marks are divided."
+          ],
+          "bullets": [
+            "A revision video or model answer written for AQA Paper 1 Question 5 does not describe any question on the OCR paper.",
+            "Set texts for English Literature are chosen by your school from the board's list, so two schools using the same board may still study different novels.",
+            "Spoken Language is assessed at GCSE English Language, but as a **separate endorsement** that does not count towards your 9-1 grade."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "GCSE English specification codes",
+          "level": "h2",
+          "caption": "Codes as published by each board. Check your statement of entry to confirm which one you are sitting.",
+          "columns": ["Board", "English Language", "English Literature", "Official specification"],
+          "rows": [
+            ["AQA", "8700", "8702", "[Language](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification) and [Literature](https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification)"],
+            ["Pearson Edexcel", "1EN0", "1ET0", "[Language](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html) and [Literature](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-literature-2015.html)"],
+            ["OCR", "J351", "J352", "[Language](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/) and [Literature](https://www.ocr.org.uk/qualifications/gcse/english-literature-j352-from-2015/)"],
+            ["Eduqas (WJEC)", "C700QS", "C720QS", "[Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/) and [Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "AQA GCSE English Language (8700): the papers",
+          "level": "h2",
+          "caption": "Summarised from the AQA specification at a glance for 8700. Confirm against the [official specification](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/specification-at-a-glance) before relying on it.",
+          "columns": ["Paper", "Title", "Time", "Marks", "Weighting"],
+          "rows": [
+            ["Paper 1", "Explorations in Creative Reading and Writing", "1 hour 45 minutes", "80", "50% of the GCSE"],
+            ["Paper 2", "Writers' Viewpoints and Perspectives", "1 hour 45 minutes", "80", "50% of the GCSE"],
+            ["Non-examination assessment", "Spoken Language", "Set and marked by the teacher during the course", "Not applicable", "Separate endorsement, 0% of the GCSE"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What each AQA Language paper asks of you",
+          "level": "h2",
+          "parts": [
+            {
+              "heading": "Paper 1: reading fiction, then writing your own",
+              "level": "h3",
+              "text": [
+                "The reading section works from one literature fiction text. The writing section asks for a piece of descriptive or narrative writing - this is the paper where a well-planned short description earns more than a rushed adventure story."
+              ]
+            },
+            {
+              "heading": "Paper 2: reading two non-fiction texts, then writing to a viewpoint",
+              "level": "h3",
+              "text": [
+                "The reading section uses one non-fiction text and one literary non-fiction text, normally from different centuries, and asks you to compare. The writing section asks you to present a point of view, so the form - a letter, an article, a speech - matters as much as the argument."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "id": "papers",
+          "heading": "GCSE English past papers and mark schemes",
+          "level": "h2",
+          "caption": "Every link goes to the examination board's own past-paper page. Papers and mark schemes belong to the boards; this site links to them and does not host copies. Older series are often restricted to registered centres.",
+          "columns": ["Board", "Qualification", "Code", "Official past papers and mark schemes"],
+          "rows": [
+            ["AQA", "GCSE English Language", "8700", "[AQA 8700 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8700/assessment-resources)"],
+            ["AQA", "GCSE English Literature", "8702", "[AQA 8702 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8702/assessment-resources)"],
+            ["Pearson Edexcel", "GCSE English Language", "1EN0", "[Edexcel English Language](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html)"],
+            ["Pearson Edexcel", "GCSE English Literature", "1ET0", "[Edexcel English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-literature-2015.html)"],
+            ["OCR", "GCSE English Language", "J351", "[OCR J351](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/)"],
+            ["OCR", "GCSE English Literature", "J352", "[OCR J352](https://www.ocr.org.uk/qualifications/gcse/english-literature-j352-from-2015/)"],
+            ["Eduqas (WJEC)", "GCSE English Language", "C700QS", "[Eduqas English Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/)"],
+            ["Eduqas (WJEC)", "GCSE English Literature", "C720QS", "[Eduqas English Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "About these paper links",
+          "text": [
+            "GCSE English Language and English Literature are **not tiered**: there is no Foundation or Higher paper in either subject, so every candidate sits the same papers. Tiering applies to some other GCSE subjects, not to these.",
+            "Examination boards own their question papers, mark schemes and examiner reports. This site links to the official page and never copies, re-uploads or mirrors them, and it does not link to sites that republish them without permission.",
+            "Original RCF model papers for GCSE will follow the format now being trialled for [Cambridge IGCSE English as a Second Language](global-english/igcse/english-as-a-second-language/papers/), once that template has been checked."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Resources being developed",
+          "text": [
+            "The question-by-question GCSE guides - creative writing, transactional writing, reading analysis, the Literature essay method, poetry comparison and unseen poetry - are being written now, one at a time, and will appear under this page as each is finished. Original RCF model papers for GCSE English Language and GCSE English Literature are part of that work.",
+            "Rather than publish a shelf of thin pages, this hub gives you the codes, the paper shapes and the official links today. In the meantime the [Cambridge IGCSE English as a Second Language guide](global-english/igcse/english-as-a-second-language/) is complete, and much of its writing-format teaching - articles, reports, reviews, formal and informal letters - transfers directly to GCSE transactional writing."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "GCSE English questions",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "How many GCSE English exams are there?",
+              "a": [
+                "If you are entered for both GCSEs, you normally sit four written papers: two for English Language and two for English Literature. The Spoken Language endorsement is assessed separately by your teacher during the course and is reported alongside your grade rather than inside it. Exact numbers depend on your board, so check your specification code."
+              ]
+            },
+            {
+              "q": "Which GCSE English board is the easiest?",
+              "a": [
+                "None of them. All four boards are regulated to a common standard and grade boundaries are set each year so that the same performance earns the same grade whichever board set the paper. What differs is the format, and the best board for you is the one your school teaches, because the teaching is matched to the paper."
+              ]
+            },
+            {
+              "q": "Do I have to read the whole book for GCSE English Literature?",
+              "a": [
+                "Yes. English Literature is a closed-book examination on most papers, which means you write about texts you have read in full and can quote from memory. Summaries are useful for revision but cannot replace reading, because the questions reward specific detail and personal response."
+              ]
+            },
+            {
+              "q": "Does the Spoken Language endorsement affect my GCSE grade?",
+              "a": [
+                "No. At AQA, and at the other boards, Spoken Language is reported as a separate endorsement graded Pass, Merit or Distinction, with a 0% weighting towards the 9-1 grade for GCSE English Language. It still appears on your certificate, so it is worth preparing for."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
+            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes."] },
+            { "title": "English skills", "url": "global-english/skills/", "text": ["Reading, writing, grammar and vocabulary, speaking and listening."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/igcse",
+      "title": "International GCSE English",
+      "metaTitle": "IGCSE English: Cambridge, Edexcel and OxfordAQA Syllabuses | RCF English",
+      "description": "Cambridge, Pearson Edexcel and OxfordAQA International GCSE English compared: every syllabus code, the papers behind it, and links to the official specifications.",
+      "keywords": "IGCSE English, Cambridge IGCSE English as a Second Language, IGCSE First Language English 0500, IGCSE Literature in English 0475, Edexcel International GCSE English 4EA1, OxfordAQA International GCSE English",
+      "kicker": "Global English",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guide",
+      "educationalLevel": "International GCSE",
+      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
+      "backTo": { "label": "Global English", "url": "global-english/" },
+      "hero": {
+        "text": "Three boards offer International GCSE English, and Cambridge alone offers four different English syllabuses. This page tells you which one you are taking before you revise for the wrong paper.",
+        "buttons": [
+          { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/", "style": "btn--accent" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "**International GCSE English is not one qualification.** Cambridge International, Pearson Edexcel and OxfordAQA each set their own, and within Cambridge there are separate syllabuses for first-language English, second-language English and literature. Find your code before anything else."
+        },
+        {
+          "type": "prose",
+          "heading": "The Cambridge International syllabuses",
+          "level": "h2",
+          "text": [
+            "Cambridge publishes each syllabus as a dated document covering a stated block of examination years, so a syllabus is only correct for the years printed on its cover. Cambridge also runs paired versions of the same syllabus with different grading: an A*-G version and a (9-1) version. The content is the same; only the grade scale differs."
+          ],
+          "parts": [
+            {
+              "heading": "English as a Second Language: 0510, 0511, 0991 and 0993",
+              "level": "h3",
+              "text": [
+                "Four codes, one subject. The pairs differ in how speaking is treated and how the qualification is graded. **0510** and **0993** are the Speaking Endorsement versions, where the speaking mark is reported separately and does not count towards the written grade. **0511** and **0991** are the Count-in Speaking versions, where it does. 0510 and 0511 are graded A* to G; 0991 and 0993 are graded 9 to 1.",
+                "This is the syllabus developed in full on this site. [Open the complete guide](global-english/igcse/english-as-a-second-language/)."
+              ]
+            },
+            {
+              "heading": "First Language English: 0500 and 0990",
+              "level": "h3",
+              "text": [
+                "For learners whose first language is English, or who use English at that level. Assessed on reading and writing rather than on set literary texts. Not interchangeable with English as a Second Language - a candidate is entered for one or the other, and Cambridge does not allow both in the same series."
+              ]
+            },
+            {
+              "heading": "Literature in English: 0475 and 0992",
+              "level": "h3",
+              "text": [
+                "Set poetry, prose and drama texts, studied in full and examined by essay and passage-based questions. Chosen by the school from Cambridge's set-text list, so two schools taking 0475 may study different texts in the same year."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "International GCSE English syllabus and specification codes",
+          "level": "h2",
+          "caption": "Codes as published by each board. Follow the link for the official page and the current specification document.",
+          "columns": ["Board", "Qualification", "Code", "Official page"],
+          "rows": [
+            ["Cambridge International", "IGCSE English as a Second Language (Speaking Endorsement)", "0510", "[Cambridge 0510](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-oral-endorsement-0510/)"],
+            ["Cambridge International", "IGCSE English as a Second Language (Count-in Speaking)", "0511", "[Cambridge 0511](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-count-in-oral-0511/)"],
+            ["Cambridge International", "IGCSE (9-1) English as a Second Language (Count-in Speaking)", "0991", "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
+            ["Cambridge International", "IGCSE (9-1) English as a Second Language (Speaking Endorsement)", "0993", "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
+            ["Cambridge International", "IGCSE First Language English", "0500 / 0990", "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
+            ["Cambridge International", "IGCSE Literature in English", "0475", "[Cambridge 0475](https://www.cambridgeinternational.org/programmes-and-qualifications/english-literature-0475/)"],
+            ["Cambridge International", "IGCSE (9-1) Literature in English", "0992", "[Cambridge 0992](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-literature-0992/)"],
+            ["Pearson Edexcel", "International GCSE English Language A", "4EA1", "[Edexcel English Language A](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-language-a-2016.html)"],
+            ["Pearson Edexcel", "International GCSE English Language B", "4EB1", "[Edexcel International GCSEs](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses.html)"],
+            ["Pearson Edexcel", "International GCSE English Literature", "4ET1", "[Edexcel English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-literature-2016.html)"],
+            ["OxfordAQA", "International GCSE English Language", "9270", "[OxfordAQA 9270](https://www.oxfordaqa.com/qualifications/international-gcse-english-language/)"],
+            ["OxfordAQA", "International GCSE English Literature", "9275", "[OxfordAQA English](https://www.oxfordaqa.com/subjects/english/)"],
+            ["OxfordAQA", "International GCSE English as a Second Language", "9280", "[OxfordAQA 9280](https://www.oxfordaqa.com/qualifications/international-gcse-english-as-a-second-language/)"]
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Cambridge IGCSE English as a Second Language: the complete guide",
+          "level": "h2",
+          "columns": "3",
+          "variant": "tint",
+          "items": [
+            { "title": "Qualification guide", "url": "global-english/igcse/english-as-a-second-language/", "more": "Start here", "text": ["Codes, components, durations, marks, assessment objectives and grading, with the 2027-2029 changes set out separately."] },
+            { "title": "Reading and Writing paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/", "more": "Open", "text": ["All six exercises, what each one asks, how the marks are split, and how to work through the paper in two hours."] },
+            { "title": "Writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "more": "Open", "text": ["Informal email, article, report, review and essay: structure, register and openings that work."] },
+            { "title": "Model answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/", "more": "Open", "text": ["Original RCF answers at full marks and at middle marks, with the examiner's reasoning written out."] },
+            { "title": "Speaking test", "url": "global-english/igcse/english-as-a-second-language/speaking-test/", "more": "Open", "text": ["The interview, short talk and discussion, how long each part lasts, and the topics that come up."] }
+          ]
+        },
+        {
+          "type": "table",
+          "id": "papers",
+          "heading": "International GCSE English past papers and specimen materials",
+          "level": "h2",
+          "caption": "Every link goes to the board's own page. Cambridge publishes a selection of recent papers, mark schemes and examiner reports openly; the full archive is on the School Support Hub for registered Cambridge schools. This site links and never hosts copies.",
+          "columns": ["Board", "Qualification", "Code", "Official papers"],
+          "rows": [
+            ["Cambridge International", "IGCSE English as a Second Language (Speaking Endorsement)", "0510", "[0510 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-oral-endorsement-0510/past-papers/)"],
+            ["Cambridge International", "IGCSE English as a Second Language (Count-in Speaking)", "0511", "[0511 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-count-in-oral-0511/past-papers/)"],
+            ["Cambridge International", "IGCSE Literature in English", "0475", "[0475 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/english-literature-0475/past-papers/)"],
+            ["Cambridge International", "IGCSE (9-1) Literature in English", "0992", "[0992 qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-literature-0992/)"],
+            ["Cambridge International", "IGCSE First Language English", "0500 / 0990", "[Cambridge programmes and qualifications](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
+            ["Pearson Edexcel", "International GCSE English Language A", "4EA1", "[English Language A](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-language-a-2016.html)"],
+            ["Pearson Edexcel", "International GCSE English Literature", "4ET1", "[English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-literature-2016.html)"],
+            ["OxfordAQA", "International GCSE English Language", "9270", "[OxfordAQA 9270](https://www.oxfordaqa.com/qualifications/international-gcse-english-language/)"],
+            ["OxfordAQA", "International GCSE English as a Second Language", "9280", "[OxfordAQA 9280](https://www.oxfordaqa.com/qualifications/international-gcse-english-as-a-second-language/)"]
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Papers for Cambridge IGCSE English as a Second Language",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Official papers, specimen papers and mark schemes",
+              "url": "global-english/igcse/english-as-a-second-language/papers/",
+              "more": "Open the paper library",
+              "text": ["Cambridge past papers, mark schemes, examiner reports, specimen papers and both current syllabuses, each linked to its official source and labelled with the syllabus, component and years."]
+            },
+            {
+              "title": "RCF Model Paper 1 and marking guide",
+              "url": "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/",
+              "more": "Open the model paper",
+              "text": ["A complete original practice paper in the current format: six exercises, 60 marks, two hours, with a full marking guide and model answers. Unofficial RCF practice material, clearly labelled."]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Resources being developed",
+          "text": [
+            "Guides to Cambridge IGCSE First Language English (0500 and 0990), Cambridge IGCSE Literature in English (0475 and 0992), and the Pearson Edexcel and OxfordAQA International GCSE routes are in preparation, each with its own paper library and original RCF model paper.",
+            "They will be published one qualification at a time, in the same depth as the English as a Second Language guide, rather than as a set of outlines. RCF Model Paper 1 is the template being checked before the rest are written."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "International GCSE English questions",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "What is the difference between Cambridge IGCSE 0510 and 0511?",
+              "a": [
+                "The difference is what happens to the speaking mark. In 0510, English as a Second Language (Speaking Endorsement), speaking is assessed and reported separately on the certificate, graded 1 to 5, and does not contribute to the overall grade for the written components. In 0511, English as a Second Language (Count-in Speaking), the speaking mark counts towards the overall grade. The teaching content and the written papers are the same."
+              ]
+            },
+            {
+              "q": "What is the difference between 0510 and 0993?",
+              "a": [
+                "Only the grade scale. 0510 is graded A* to G; 0993 is the Cambridge IGCSE (9-1) version of the same Speaking Endorsement syllabus and is graded 9 to 1. Schools choose the version that suits the grading their students need. The papers are the same."
+              ]
+            },
+            {
+              "q": "Can I take Cambridge IGCSE First Language English and English as a Second Language together?",
+              "a": [
+                "No. Cambridge lists First Language English (0500 and 0990) among the syllabuses that cannot be combined with English as a Second Language in a single examination series, along with the other English as a Second Language codes, English as an Additional Language (0472 and 0772) and the O Level English syllabuses (1123 and 1158). Your school enters you for one."
+              ]
+            },
+            {
+              "q": "Where can I get Cambridge IGCSE English past papers?",
+              "a": [
+                "Cambridge International distributes past papers, mark schemes, examiner reports and specimen answers through the School Support Hub, which registered Cambridge schools can access. Ask your teacher or your school's examinations officer. Specimen papers for new syllabuses are published openly on the Cambridge International website. This site does not host copies of them."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
+            { "title": "GCSE English", "url": "global-english/gcse/", "text": ["The four English boards and their paper structures."] },
+            { "title": "English skills", "url": "global-english/skills/", "text": ["Reading, writing, grammar and vocabulary, speaking and listening."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/cambridge-english",
+      "title": "Cambridge English Qualifications",
+      "metaTitle": "Cambridge English Qualifications: A2 Key to C2 Proficiency | RCF English",
+      "description": "An overview of the Cambridge English Qualifications, from the Young Learners tests through A2 Key, B1 Preliminary, B2 First and C1 Advanced to C2 Proficiency, and how they map to the CEFR.",
+      "keywords": "Cambridge English qualifications, A2 Key, B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency, Cambridge Young Learners English, CEFR levels",
+      "kicker": "Global English",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guide",
+      "educationalLevel": "A1 to C2",
+      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
+      "backTo": { "label": "Global English", "url": "global-english/" },
+      "hero": {
+        "text": "A ladder of examinations rather than a single test. Each one certifies a level of the Common European Framework, and the certificate does not expire."
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "**The Cambridge English Qualifications run from Pre A1 Starters to C2 Proficiency.** Unlike IELTS, which reports a band score from one sitting, these are level examinations: you prepare for a particular level, and the certificate states that you reached it."
+        },
+        {
+          "type": "table",
+          "heading": "The qualifications and their levels",
+          "level": "h2",
+          "caption": "Levels as published by Cambridge English. See the [official exams and tests pages](https://www.cambridgeenglish.org/exams-and-tests/) for entry details, fees and dates.",
+          "columns": ["Qualification", "CEFR level", "Usually taken by"],
+          "rows": [
+            ["Pre A1 Starters", "Pre A1", "Young learners meeting written English for the first time"],
+            ["A1 Movers", "A1", "Young learners after Starters"],
+            ["A2 Flyers", "A2", "Young learners completing the Young Learners ladder"],
+            ["A2 Key", "A2", "Learners proving everyday basic English"],
+            ["B1 Preliminary", "B1", "Learners working or studying in everyday English"],
+            ["B2 First", "B2", "Learners needing English for work or study at upper-intermediate level"],
+            ["C1 Advanced", "C1", "Learners applying to universities or professional roles"],
+            ["C2 Proficiency", "C2", "Learners demonstrating English at the highest level"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How these differ from a school qualification",
+          "level": "h2",
+          "bullets": [
+            "**They are not tied to a school year.** A candidate takes the level they are ready for, at any age.",
+            "**They do not expire.** A Cambridge English certificate has no stated validity period, unlike some tests taken for visa purposes.",
+            "**They test four skills every time.** Reading, writing, listening and speaking are assessed at every level, including the Young Learners tests.",
+            "**Schools versions exist** for some levels, using topics drawn from school life rather than the workplace, but the certificate is the same."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Resources being developed",
+          "text": [
+            "Level-by-level preparation guides for A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency are in preparation, along with the Young Learners tests.",
+            "Until they are published, RCF English already has substantial material that transfers: the [Cambridge exams page](practical-english/cambridge-exams/) in Practical English, and the four-skills pages for [reading](practical-english/reading/), [writing](practical-english/writing/), [listening](practical-english/listening/) and [speaking](practical-english/speaking/)."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Cambridge English questions",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "Which Cambridge English exam should I take?",
+              "a": [
+                "Take the one at the level you can already almost reach. If you can hold an everyday conversation and read simple articles, B1 Preliminary is realistic; if you are reading unadapted articles and writing structured essays, B2 First is the right target. Entering a level far above your current English produces a fail rather than a stretch, because these are level examinations rather than banded tests."
+              ]
+            },
+            {
+              "q": "Do Cambridge English certificates expire?",
+              "a": [
+                "Cambridge English states that its qualifications do not have an expiry date. Some universities and employers nevertheless prefer evidence of English from the last two or three years, so check the requirements of the institution you are applying to."
+              ]
+            },
+            {
+              "q": "Is B2 First the same as IELTS 6.5?",
+              "a": [
+                "They are not the same test and cannot be swapped freely. Cambridge publishes a comparison of its qualifications against the CEFR and against IELTS scores, and B2 First sits in the same broad region as the middle IELTS bands. Always check the exact requirement of the university or employer, because they specify the test as well as the score."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Cambridge exams in Practical English", "url": "practical-english/cambridge-exams/", "text": ["Existing RCF material on TKT, YLE and FCE preparation."] },
+            { "title": "IELTS preparation", "url": "practical-english/ielts/", "text": ["The other route many international learners take."] },
+            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/skills",
+      "title": "English Skills",
+      "metaTitle": "English Skills: Reading, Writing, Grammar, Speaking and Listening | RCF English",
+      "description": "The four English skills and the grammar and vocabulary beneath them, taught so that the method transfers between GCSE, International GCSE and the Cambridge English Qualifications.",
+      "keywords": "English reading skills, English writing skills, English grammar and vocabulary, English speaking practice, English listening practice, English skills for exams",
+      "kicker": "Global English",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guide",
+      "educationalLevel": "Secondary",
+      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
+      "backTo": { "label": "Global English", "url": "global-english/" },
+      "hero": {
+        "text": "Examinations change; the skills underneath them do not. What you learn about finding implied meaning, or about opening a formal letter, is worth marks on every board."
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "**Every English qualification on this site tests the same five things:** reading, writing, grammar and vocabulary, speaking and listening. The papers differ in wording and format, but a student who can locate implied meaning in a text can do it for AQA, for Cambridge and for B2 First."
+        },
+        {
+          "type": "cards",
+          "heading": "Skills pages already published on RCF English",
+          "level": "h2",
+          "columns": "3",
+          "variant": "tint",
+          "items": [
+            { "title": "Reading", "url": "practical-english/reading/", "more": "Open", "text": ["Reading for gist, for detail and for the writer's attitude, with practice passages."] },
+            { "title": "Writing", "url": "practical-english/writing/", "more": "Open", "text": ["Planning, paragraphing and the formats examiners expect."] },
+            { "title": "Grammar", "url": "practical-english/practical-grammar/", "more": "Open", "text": ["The grammar that changes marks: tenses, articles, agreement and sentence variety."] },
+            { "title": "Vocabulary", "url": "practical-english/vocabulary/", "more": "Open", "text": ["Building a usable range rather than memorising word lists."] },
+            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open", "text": ["Developing answers, keeping a conversation going and controlling pronunciation."] },
+            { "title": "Listening", "url": "practical-english/listening/", "more": "Open", "text": ["Listening for specific information, opinion and implication."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where each skill earns its marks",
+          "level": "h2",
+          "parts": [
+            {
+              "heading": "Reading",
+              "level": "h3",
+              "text": ["Almost every reading question falls into one of four types: find a stated fact, follow an idea across a text, select detail for a purpose, or work out what is implied but not said. Cambridge names these R1 to R4 in the IGCSE English as a Second Language syllabus. Once you can name the type of question in front of you, you know what kind of answer earns the mark."]
+            },
+            {
+              "heading": "Writing",
+              "level": "h3",
+              "text": ["Marks divide into content and language on almost every board. Content is task fulfilment and the development of ideas; language is range, accuracy and organisation. A candidate who answers only the prompts, without developing them, caps their own content mark however clean the grammar is."]
+            },
+            {
+              "heading": "Speaking and listening",
+              "level": "h3",
+              "text": ["Both reward development. A one-sentence answer in a speaking test, or a single-word note in a listening exercise, is usually not wrong - it is simply not enough. The [IGCSE speaking test guide](global-english/igcse/english-as-a-second-language/speaking-test/) shows what developing an answer looks like in practice."]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The same skill, examined four ways",
+          "level": "h2",
+          "caption": "Where a skill is tested in each qualification. Practising the skill once serves all of them; practising the format has to be done separately.",
+          "columns": ["Skill", "GCSE English Language", "Cambridge IGCSE ESL", "Cambridge English Qualifications"],
+          "rows": [
+            ["Reading", "Both papers, on unseen fiction and non-fiction", "Four exercises in Component 1", "A reading paper at every level"],
+            ["Writing", "Both papers: descriptive or narrative, and viewpoint writing", "Two exercises in Component 1, 120-160 words each", "A writing paper at every level"],
+            ["Speaking", "A separate endorsement, not part of the 9-1 grade", "Component 3, 10-15 minutes, recorded", "A speaking test at every level, usually in pairs"],
+            ["Listening", "Not assessed", "Component 2, about 50 minutes", "A listening paper at every level"]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Revising a skill rather than a paper",
+          "level": "h2",
+          "doTitle": "This transfers between examinations",
+          "dontTitle": "This does not",
+          "do": [
+            "Recognising the four kinds of reading question: stated fact, idea across a text, selected detail, implied meaning.",
+            "Planning a piece of writing against its prompts before starting to write.",
+            "Knowing the shape of a report, an article, a review and a formal letter.",
+            "Developing a spoken answer with a reason and an example instead of stopping at one sentence.",
+            "Listening for the speaker's attitude, not only for the facts."
+          ],
+          "dont": [
+            "Timings and mark totals, which differ on every paper.",
+            "Word counts: 120-160 words for IGCSE ESL is not the GCSE expectation.",
+            "Whether listening is assessed at all - at GCSE it is not.",
+            "Learned model answers, which lose content marks the moment the task changes.",
+            "Question numbering and command words, which are specific to each board."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Resources being developed",
+          "text": [
+            "Skills pages written specifically for the international examinations - rather than the Practical English pages linked above, which are aimed at adult and independent learners - are being written alongside each qualification guide.",
+            "The first of them are already published inside the [Cambridge IGCSE English as a Second Language guide](global-english/igcse/english-as-a-second-language/): the [Reading and Writing paper](global-english/igcse/english-as-a-second-language/reading-and-writing/) covers the reading question types, [writing formats](global-english/igcse/english-as-a-second-language/writing-formats/) covers the five written forms, and the [speaking test](global-english/igcse/english-as-a-second-language/speaking-test/) covers developing an answer."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Questions about English skills",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "Which English skill should I work on first?",
+              "a": [
+                "Whichever carries the most marks on your own paper and is furthest from where you need to be. For Cambridge IGCSE English as a Second Language that is usually the Reading and Writing paper, because it is 70% of the qualification. For GCSE English Language, reading and writing are weighted equally across the two papers and listening is not assessed at all."
+              ]
+            },
+            {
+              "q": "Does reading books actually improve exam marks?",
+              "a": [
+                "It improves the underlying skill, which shows up most in writing: range of vocabulary, sentence variety and a sense of how a paragraph is built. It does not by itself teach you the format of a report or how a multiple-matching question works. Both are needed, and only one of them can be done the week before the exam."
+              ]
+            },
+            {
+              "q": "How can I practise speaking if I have nobody to practise with?",
+              "a": [
+                "Record yourself answering a question for two minutes, then listen back once. Most candidates hear the same two things immediately: answers that stop too early, and a flat delivery. Both improve quickly once you have heard them. The [speaking test guide](global-english/igcse/english-as-a-second-language/speaking-test/) has five practice topics you can use this way."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
+            { "title": "IGCSE ESL writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "text": ["Email, article, report, review and essay, with model openings."] },
+            { "title": "Interactive practice", "url": "interactive/", "text": ["Quizzes and activities with instant feedback."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,13 +4,13 @@
       "slug": "past-papers",
       "title": "Past Papers",
       "metaTitle": "Past Papers | O/L English, Literature and A/L papers | RCF English",
-      "description": "A searchable centre for O/L English, O/L Literature and A/L Literature past papers, model papers, marking schemes, revision papers and question banks, with filters.",
+      "description": "Past papers, model papers, marking schemes, revision papers and question banks arranged by grade and by literature section. Choose a section, then a year.",
       "keywords": "past papers, model papers, marking schemes, O/L English papers, A/L Literature papers, revision papers",
       "kicker": "Resource centre",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "hero": {
-        "text": "Past papers, model papers, marking schemes, revision papers and question banks in one filterable place. Filter by subject, examination, year, term, paper, type, medium and source.",
+        "text": "Choose your grade or literature section and every paper in it appears at once. There is no long title to type. If you want one year only, enter it — for example 2024.",
         "buttons": [
           { "label": "How to use past papers well", "url": "past-papers/how-to-use/", "style": "btn--accent" },
           { "label": "Copyright policy", "url": "copyright-policy/", "style": "btn--ghost-light" }
@@ -27,29 +27,22 @@
           ]
         },
         {
-          "type": "browse",
-          "heading": "One clear paper from each grade",
-          "source": "papers",
-          "fixed": { "featured": "yes" },
-          "filters": ["grade", "term", "year", "province"],
-          "note": "Somebody opened each of these PDFs and looked at the first page before it was listed."
+          "type": "paperLibrary",
+          "id": "library",
+          "heading": "Choose your grade or literature section",
+          "intro": [
+            "Every paper on this site sits in exactly one of the sections below, and choosing a section shows **all** of it — no title, province, term or subject has to be typed. Papers are listed newest year first, and any paper whose year is not printed on it appears under *Year not specified* rather than being left out."
+          ]
         },
         {
           "type": "callout",
           "style": "info",
           "title": "What the “Clear scan” label means",
           "text": [
-            "The papers above carry a **Clear scan** label. It is given only after a person has opened the PDF and looked at the first page on screen, and seen that it is straight, sharp, complete, printed rather than handwritten, and carries **no student name**.",
+            "Some papers carry a **Clear scan** label. It is given only after a person has opened the PDF and looked at the first page on screen, and seen that it is straight, sharp, complete, printed rather than handwritten, and carries **no student name**.",
             "It is not awarded because the text copies out neatly. That test proved misleading: two Grade 10 papers read perfectly as text, yet one is visibly tilted and the other has *Teacher Copy* written across it by hand. Both are still in the collection, and neither carries the label.",
             "Every other paper on the site is still worth using. It simply has not been through that check yet."
           ]
-        },
-        {
-          "type": "browse",
-          "heading": "Search and filter every paper",
-          "source": "papers",
-          "filters": ["subject", "grade", "term", "year", "province", "sourceType", "type", "answers", "clearScan"],
-          "note": "The whole collection, including every Grade 10 paper."
         },
         {
           "type": "cards",
@@ -92,11 +85,11 @@
       "slug": "past-papers/grade-10",
       "title": "Grade 10 Papers",
       "metaTitle": "Grade 10 English and Literature past papers | Past Papers | RCF English",
-      "description": "Grade 10 English Language and English Literature term test papers from provincial departments, zonal offices and schools, with filters for term, year, province or zone, source and marking schemes.",
+      "description": "Every Grade 10 English Language and English Literature term test paper on the site, from provincial departments, zonal offices and schools, listed newest year first.",
       "keywords": "grade 10 english papers, grade 10 literature papers, term test papers, provincial papers, marking schemes",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": {
@@ -118,12 +111,12 @@
           ]
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Grade 10 papers",
-          "source": "papers",
           "fixed": { "grade": "10" },
-          "filters": ["subject", "term", "year", "province", "sourceType", "type", "answers"],
-          "note": "Every paper listed here was opened and checked before it was added."
+          "chooser": false,
+          "sectionLabel": "Grade 10",
+          "sectionNote": "Every Grade 10 paper on the site, English Language and English Literature together, newest year first. Enter a year to see only that year."
         },
         {
           "type": "callout",
@@ -242,21 +235,22 @@
     {
       "slug": "past-papers/ol-english",
       "title": "O/L English Past Papers",
-      "description": "Past papers, model papers and revision material for the O/L English Language examination, filterable by year, paper, type and source.",
+      "description": "Past papers, model papers and revision material for O/L English Language, arranged by grade from Grade 1 to Grade 11, newest year first.",
       "keywords": "O/L English past papers, Ordinary Level English papers, model papers, Grade 11",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Papers for the Ordinary Level English Language examination. Study the task before you attempt the paper — the lessons are linked below." },
       "blocks": [
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "O/L English papers",
-          "source": "papers",
-          "fixed": { "subject": "ol-english" },
-          "filters": ["examination", "level", "year", "term", "paper", "type", "medium", "source"]
+          "intro": [
+            "Choose a grade to see every English Language paper for it. Grade 11 holds the O/L examination papers themselves, because O/L is sat at the end of Grade 11."
+          ],
+          "fixed": { "subject": "ol-english" }
         },
         {
           "type": "cards",
@@ -280,11 +274,11 @@
     {
       "slug": "past-papers/ol-literature",
       "title": "O/L Literature Past Papers",
-      "description": "Past papers, model papers and revision material for O/L English Literature, filterable by year, paper, type and source.",
+      "description": "Every O/L English Literature paper on the site, for Grades 10 and 11 and for the examination itself, listed newest year first.",
       "keywords": "O/L Literature past papers, English Literature papers, context questions, essay questions",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Papers for O/L English Literature. Remember that a Literature paper depends on the prescribed texts of its year — check which texts a paper was set on before using it." },
@@ -303,11 +297,10 @@
           "examination": "ol"
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "O/L Literature papers",
-          "source": "papers",
           "fixed": { "subject": "ol-literature" },
-          "filters": ["examination", "level", "year", "term", "paper", "type", "medium", "source"]
+          "sectionNote": "Every O/L English Literature paper on the site, for Grades 10 and 11 and for the examination itself, newest year first."
         },
         {
           "type": "cards",
@@ -331,11 +324,11 @@
     {
       "slug": "past-papers/al-literature",
       "title": "A/L Literature Past Papers",
-      "description": "Past papers, model papers and revision material for A/L English Literature, filterable by year, paper, type and source.",
+      "description": "Every Advanced Level English Literature paper on the site, including the language paper and unseen appreciation, listed newest year first.",
       "keywords": "A/L Literature past papers, Advanced Level Literature, critical appreciation papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Papers for Advanced Level English Literature. Unseen appreciation questions from any year are useful, whatever the prescribed texts were." },
@@ -357,11 +350,10 @@
           "examination": "al"
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "A/L Literature papers",
-          "source": "papers",
           "fixed": { "subject": "al-literature" },
-          "filters": ["examination", "level", "year", "term", "paper", "type", "medium", "source"]
+          "sectionNote": "Every Advanced Level English Literature paper on the site, newest year first."
         },
         {
           "type": "cards",
@@ -389,7 +381,7 @@
       "keywords": "model papers, practice papers, mock papers, English, Literature",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Papers written in the style of the examination. Useful when you have exhausted the real papers, or want practice on a specific format." },
@@ -404,11 +396,12 @@
           ]
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Model papers",
-          "source": "papers",
           "fixed": { "type": "model-paper" },
-          "filters": ["subject", "level", "year", "paper", "medium", "source"]
+          "chooser": false,
+          "sectionLabel": "Model papers",
+          "sectionNote": "Every model paper on the site, from Grade 1 to O/L, newest year first. The grade each one is for is printed on its card."
         },
         {
           "type": "cards",
@@ -431,17 +424,18 @@
       "keywords": "term test papers, school papers, first term, second term, third term",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Term-test papers are shorter than the examination and are often better graded for practice during the year." },
       "blocks": [
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Term-test papers",
-          "source": "papers",
-          "fixed": { "examination": "school-term-test" },
-          "filters": ["grade", "subject", "level", "year", "term", "paper", "medium", "source"]
+          "intro": [
+            "Choose a grade or literature section to see every first, second and third term paper for it."
+          ],
+          "fixed": { "examination": "school-term-test" }
         },
         {
           "type": "callout",
@@ -463,17 +457,18 @@
       "keywords": "provincial papers, provincial examination, English papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Provincial papers are usually closer to the national examination in style and standard than school papers, which makes them valuable practice." },
       "blocks": [
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Provincial papers",
-          "source": "papers",
-          "fixed": { "examination": "provincial" },
-          "filters": ["grade", "subject", "level", "year", "term", "paper", "medium", "source"]
+          "intro": [
+            "Choose a grade or literature section to see every paper set at provincial level for it. The province is named on each card."
+          ],
+          "fixed": { "examination": "provincial" }
         },
         {
           "type": "callout",
@@ -492,7 +487,7 @@
       "keywords": "revision papers, practice papers, skill practice, short papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "A full paper takes three hours and a whole afternoon to use properly. A revision paper takes thirty minutes, which means you will actually do it." },
@@ -507,11 +502,12 @@
           ]
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Revision papers",
-          "source": "papers",
           "fixed": { "type": "revision-paper" },
-          "filters": ["subject", "level", "year", "medium", "source"]
+          "chooser": false,
+          "sectionLabel": "Revision papers",
+          "sectionNote": "Every revision paper on the site. The grade each one is for is printed on its card."
         },
         {
           "type": "cards",
@@ -534,17 +530,18 @@
       "keywords": "question bank, practice questions, task questions, topic questions",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "When you have just learnt how a task works, you do not want a whole paper. You want ten questions on that one task." },
       "blocks": [
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Question banks",
-          "source": "papers",
           "fixed": { "type": "question-bank" },
-          "filters": ["subject", "level", "medium", "source"]
+          "chooser": false,
+          "sectionLabel": "Question banks",
+          "sectionNote": "Every question bank on the site. The grade each one is for is printed on its card."
         },
         {
           "type": "cards",
@@ -567,7 +564,7 @@
       "keywords": "marking schemes, marking guidance, answer schemes, how to mark",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "A marking scheme is the most useful document in revision — and the most misused." },
@@ -582,11 +579,12 @@
           ]
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Marking schemes and guidance",
-          "source": "papers",
           "fixed": { "type": "marking-scheme" },
-          "filters": ["subject", "level", "year", "paper", "medium", "source"]
+          "chooser": false,
+          "sectionLabel": "Marking schemes",
+          "sectionNote": "Every marking scheme on the site that may lawfully be published or linked, newest year first. The grade and subject are printed on each card."
         },
         {
           "type": "prose",
@@ -620,7 +618,7 @@
       "keywords": "model answers, sample answers, worked answers, past papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["paper-library"],
       "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
       "backTo": { "label": "Past Papers", "url": "past-papers/" },
       "hero": { "text": "Answers to compare your own against — for structure, not for wording." },
@@ -637,11 +635,12 @@
           ]
         },
         {
-          "type": "browse",
+          "type": "paperLibrary",
           "heading": "Model answers by paper",
-          "source": "papers",
           "fixed": { "type": "model-answer" },
-          "filters": ["subject", "level", "year", "paper", "source"]
+          "chooser": false,
+          "sectionLabel": "Model answers",
+          "sectionNote": "Every model answer document on the site, newest year first. The paper each one belongs to is named on its card."
         },
         {
           "type": "cards",

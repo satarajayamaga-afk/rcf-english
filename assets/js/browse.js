@@ -132,8 +132,20 @@ function humanise(value) {
 
 /* ------------------------------------------------------------ rendering */
 
+/* A path in the data files is written from the site root ("past-papers/files/
+   x.pdf"), not from the page it happens to be listed on. Without ROOT in
+   front, that resolved against the current directory instead, so a paper
+   hosted on this site answered 404 from every page except the home page.
+   Links that already carry a scheme are left exactly as they are. */
+function localHref(value) {
+  const href = safeHref(value || "");
+  if (!href) return "";
+  if (/^(https?:|mailto:|tel:|#|\/)/i.test(href)) return href;
+  return ROOT + href;
+}
+
 function renderResult(record) {
-  const href = safeHref(record.url || record.file || "");
+  const href = localHref(record.url || record.file || "");
   const external = /^https?:/i.test(href);
   const title = esc(record.title || "Untitled resource");
 
@@ -174,14 +186,14 @@ function renderResult(record) {
   }
   // The download link goes straight to the PDF. The papers live in Google
   // Drive, not in this repository, so this always leaves the site.
-  const dl = safeHref(record.download || "");
+  const dl = localHref(record.download || "");
   if (dl) {
     actions.push(
       `<a class="btn btn--sm btn--primary ext" href="${esc(dl)}" target="_blank" rel="noopener">Download PDF</a>`
     );
   }
   if (record.markingScheme) {
-    const ms = safeHref(record.markingScheme);
+    const ms = localHref(record.markingScheme);
     if (ms) {
       const msExt = /^https?:/i.test(ms);
       actions.push(
@@ -194,7 +206,7 @@ function renderResult(record) {
   // "answers" is a yes/no flag used by the filter. The link to a separate
   // model-answer document, when there is one, lives in "modelAnswers".
   if (record.modelAnswers) {
-    const ans = safeHref(record.modelAnswers);
+    const ans = localHref(record.modelAnswers);
     if (ans) {
       const ansExt = /^https?:/i.test(ans);
       actions.push(

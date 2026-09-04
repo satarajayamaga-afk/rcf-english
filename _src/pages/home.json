@@ -86,6 +86,45 @@
 
     {
       "type": "cards",
+      "id": "global-english",
+      "heading": "Explore Global English",
+      "eyebrow": "New section for international learners",
+      "variant": "navy",
+      "columns": "2",
+      "intro": [
+        "RCF English now covers the English qualifications taken outside Sri Lanka. Each guide names the examination board and the syllabus or specification code, states the years it is valid for, and links to the board's own specification and specimen papers."
+      ],
+      "items": [
+        {
+          "title": "Global English",
+          "icon": "GE",
+          "url": "global-english/",
+          "accent": true,
+          "more": "Open Global English",
+          "text": ["GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, the Cambridge English Qualifications, and the four English skills."],
+          "bullets": [
+            "AQA, Pearson Edexcel, OCR and Eduqas routes named separately",
+            "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes",
+            "Original RCF practice tasks, with answers"
+          ]
+        },
+        {
+          "title": "Cambridge IGCSE English as a Second Language",
+          "icon": "ESL",
+          "url": "global-english/igcse/english-as-a-second-language/",
+          "more": "Open the guide",
+          "text": ["The first qualification developed in full: syllabuses 0510, 0511, 0991 and 0993, exercise by exercise, with model answers and practice."],
+          "bullets": [
+            "Reading and Writing paper, all six exercises",
+            "Writing formats: email, article, report, review, essay",
+            "Speaking test structure and how it is marked"
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "cards",
       "heading": "Explore by category",
       "eyebrow": "Find your section",
       "intro": ["Explore ten subject areas, each offering lessons, practice activities and revision resources."],

@@ -320,6 +320,70 @@
         "keywords":  "English practice, interactive exercises, grammar quiz, vocabulary practice, free"
     },
     {
+        "title":  "Global English",
+        "description":  "Guides to GCSE English, International GCSE English and the Cambridge English Qualifications. Every page names the board, the code and the years it covers.",
+        "url":  "global-english/",
+        "kind":  "page",
+        "section":  "International qualifications",
+        "keywords":  "GCSE English, IGCSE English, Cambridge IGCSE English as a Second Language, international GCSE English language, Cambridge English qualifications, English exam guides"
+    },
+    {
+        "title":  "GCSE English",
+        "description":  "A clear guide to GCSE English Language and GCSE English Literature: the AQA, Pearson Edexcel, OCR and Eduqas specifications, their codes, paper structures and official specification links.",
+        "url":  "global-english/gcse/",
+        "kind":  "page",
+        "section":  "Global English",
+        "keywords":  "GCSE English Language, GCSE English Literature, AQA 8700, AQA 8702, Edexcel 1EN0, OCR J351, Eduqas GCSE English, GCSE English revision"
+    },
+    {
+        "title":  "International GCSE English",
+        "description":  "Cambridge, Pearson Edexcel and OxfordAQA International GCSE English compared: every syllabus code, the papers behind it, and links to the official specifications.",
+        "url":  "global-english/igcse/",
+        "kind":  "page",
+        "section":  "Global English",
+        "keywords":  "IGCSE English, Cambridge IGCSE English as a Second Language, IGCSE First Language English 0500, IGCSE Literature in English 0475, Edexcel International GCSE English 4EA1, OxfordAQA International GCSE English"
+    },
+    {
+        "title":  "Cambridge English Qualifications",
+        "description":  "An overview of the Cambridge English Qualifications, from the Young Learners tests through A2 Key, B1 Preliminary, B2 First and C1 Advanced to C2 Proficiency, and how they map to the CEFR.",
+        "url":  "global-english/cambridge-english/",
+        "kind":  "page",
+        "section":  "Global English",
+        "keywords":  "Cambridge English qualifications, A2 Key, B1 Preliminary, B2 First, C1 Advanced, C2 Proficiency, Cambridge Young Learners English, CEFR levels"
+    },
+    {
+        "title":  "English Skills",
+        "description":  "The four English skills and the grammar and vocabulary beneath them, taught so that the method transfers between GCSE, International GCSE and the Cambridge English Qualifications.",
+        "url":  "global-english/skills/",
+        "kind":  "page",
+        "section":  "Global English",
+        "keywords":  "English reading skills, English writing skills, English grammar and vocabulary, English speaking practice, English listening practice, English skills for exams"
+    },
+    {
+        "title":  "IGCSE ESL Past Papers and Model Papers",
+        "description":  "Cambridge IGCSE ESL past papers, specimen papers and mark schemes linked to their official source, plus an original RCF model paper with marking guide.",
+        "url":  "global-english/igcse/english-as-a-second-language/papers/",
+        "kind":  "page",
+        "section":  "Cambridge IGCSE ESL",
+        "keywords":  "Cambridge IGCSE English past papers, IGCSE ESL past papers, IGCSE 0510 mark scheme, IGCSE ESL specimen paper, IGCSE English model paper, IGCSE ESL practice paper"
+    },
+    {
+        "title":  "RCF Model Paper 1: IGCSE ESL Reading and Writing",
+        "description":  "A complete original practice paper for Cambridge IGCSE English as a Second Language Reading and Writing: six exercises, 60 marks, two hours. Written by RCF English. Unofficial practice material.",
+        "url":  "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/",
+        "kind":  "page",
+        "section":  "Unofficial original RCF practice material",
+        "keywords":  "IGCSE ESL model paper, IGCSE English practice paper, Cambridge IGCSE 0510 practice, IGCSE reading and writing practice, IGCSE English mock paper"
+    },
+    {
+        "title":  "RCF Model Paper 1: Marking Guide",
+        "description":  "Answers, accepted alternatives and marking criteria for RCF Model Paper 1, an original Cambridge IGCSE English as a Second Language practice paper, with a full model answer for each writing task.",
+        "url":  "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1-mark-scheme/",
+        "kind":  "page",
+        "section":  "Unofficial original RCF practice material",
+        "keywords":  "IGCSE ESL answers, IGCSE English mark scheme practice, IGCSE model paper answers, IGCSE ESL marking guide, IGCSE English writing marking criteria"
+    },
+    {
         "title":  "Free English Games for Kids",
         "description":  "Free online English games for children and ESL learners: vocabulary, phonics, spelling, grammar and sentence building. Four levels, plays on any phone, no account needed.",
         "url":  "english-games/",
@@ -358,6 +422,46 @@
         "kind":  "page",
         "section":  "Global English Games",
         "keywords":  "pre-intermediate english games, english sentence building games, simple past game english, reading comprehension games kids, british english vocabulary"
+    },
+    {
+        "title":  "Cambridge IGCSE English as a Second Language",
+        "description":  "Cambridge IGCSE English as a Second Language (0510, 0511, 0991, 0993): the three components, their durations, marks and assessment objectives, explained in full.",
+        "url":  "global-english/igcse/english-as-a-second-language/",
+        "kind":  "page",
+        "section":  "International GCSE",
+        "keywords":  "IGCSE English as a Second Language, Cambridge IGCSE ESL 0510, 0511, 0991, 0993, IGCSE ESL papers, IGCSE ESL syllabus, IGCSE English second language revision"
+    },
+    {
+        "title":  "IGCSE ESL Reading and Writing Paper",
+        "description":  "What each of the six exercises in the IGCSE ESL Reading and Writing paper asks, the marks it carries, and how to spend the two hours.",
+        "url":  "global-english/igcse/english-as-a-second-language/reading-and-writing/",
+        "kind":  "page",
+        "section":  "Cambridge IGCSE ESL",
+        "keywords":  "IGCSE ESL reading and writing, IGCSE English question types, how to answer IGCSE English questions, Cambridge IGCSE 0510 paper 1, IGCSE ESL exercise 3 notes, IGCSE ESL multiple matching"
+    },
+    {
+        "title":  "IGCSE ESL Writing Formats",
+        "description":  "Informal email, article, report, review and essay for IGCSE ESL: the shape each one needs, model openings, and original practice tasks.",
+        "url":  "global-english/igcse/english-as-a-second-language/writing-formats/",
+        "kind":  "page",
+        "section":  "Cambridge IGCSE ESL",
+        "keywords":  "IGCSE English writing formats, informal email writing IGCSE, IGCSE article writing, IGCSE report writing, IGCSE review writing, formal letter report article review email writing"
+    },
+    {
+        "title":  "IGCSE ESL Model Answers",
+        "description":  "Original RCF model answers for the Cambridge IGCSE English as a Second Language writing exercises, written at full marks and at middle marks, with the examiner\u0027s reasoning set out beside each one.",
+        "url":  "global-english/igcse/english-as-a-second-language/model-answers/",
+        "kind":  "page",
+        "section":  "Cambridge IGCSE ESL",
+        "keywords":  "IGCSE English model answers, IGCSE ESL sample answers, IGCSE English writing example answers, IGCSE email model answer, IGCSE report model answer"
+    },
+    {
+        "title":  "IGCSE ESL Speaking Test",
+        "description":  "The Cambridge IGCSE English as a Second Language speaking test explained: the five stages, how long each lasts, which parts are assessed, the topics that come up, and original RCF practice cards.",
+        "url":  "global-english/igcse/english-as-a-second-language/speaking-test/",
+        "kind":  "page",
+        "section":  "Cambridge IGCSE ESL",
+        "keywords":  "IGCSE English speaking topics, IGCSE ESL speaking test, Cambridge IGCSE speaking exam, IGCSE speaking short talk, IGCSE speaking test marks"
     },
     {
         "title":  "Grade 6-11 Resources",
@@ -729,7 +833,7 @@
     },
     {
         "title":  "Past Papers",
-        "description":  "A searchable centre for O/L English, O/L Literature and A/L Literature past papers, model papers, marking schemes, revision papers and question banks, with filters.",
+        "description":  "Past papers, model papers, marking schemes, revision papers and question banks arranged by grade and by literature section. Choose a section, then a year.",
         "url":  "past-papers/",
         "kind":  "page",
         "section":  "Resource centre",
@@ -737,7 +841,7 @@
     },
     {
         "title":  "Grade 10 Papers",
-        "description":  "Grade 10 English Language and English Literature term test papers from provincial departments, zonal offices and schools, with filters for term, year, province or zone, source and marking schemes.",
+        "description":  "Every Grade 10 English Language and English Literature term test paper on the site, from provincial departments, zonal offices and schools, listed newest year first.",
         "url":  "past-papers/grade-10/",
         "kind":  "page",
         "section":  "Past Papers",
@@ -753,7 +857,7 @@
     },
     {
         "title":  "O/L English Past Papers",
-        "description":  "Past papers, model papers and revision material for the O/L English Language examination, filterable by year, paper, type and source.",
+        "description":  "Past papers, model papers and revision material for O/L English Language, arranged by grade from Grade 1 to Grade 11, newest year first.",
         "url":  "past-papers/ol-english/",
         "kind":  "page",
         "section":  "Past Papers",
@@ -761,7 +865,7 @@
     },
     {
         "title":  "O/L Literature Past Papers",
-        "description":  "Past papers, model papers and revision material for O/L English Literature, filterable by year, paper, type and source.",
+        "description":  "Every O/L English Literature paper on the site, for Grades 10 and 11 and for the examination itself, listed newest year first.",
         "url":  "past-papers/ol-literature/",
         "kind":  "page",
         "section":  "Past Papers",
@@ -769,7 +873,7 @@
     },
     {
         "title":  "A/L Literature Past Papers",
-        "description":  "Past papers, model papers and revision material for A/L English Literature, filterable by year, paper, type and source.",
+        "description":  "Every Advanced Level English Literature paper on the site, including the language paper and unseen appreciation, listed newest year first.",
         "url":  "past-papers/al-literature/",
         "kind":  "page",
         "section":  "Past Papers",
@@ -3832,6 +3936,118 @@
         "term":  "",
         "province":  "",
         "paperType":  "model-answer"
+    },
+    {
+        "title":  "O/L English Literature - Third Term Test 2025 - Western Province",
+        "description":  "Set by the Western Province. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1Ynn6T0oGhjr7PNnRac1Dgk-UapplZtbA/view",
+        "kind":  "past-paper",
+        "section":  "Past Papers",
+        "level":  "Grade 11",
+        "keywords":  "grade 11 gr 11 g11 grade eleven third term term 3 3rd term year end end of year ol o/l ordinary level literature english literature Western Province Western provincial english Grade 11 2025 past paper term test exam paper",
+        "grade":  "11",
+        "year":  "2025",
+        "term":  "third",
+        "province":  "Western Province",
+        "paperType":  "past-paper"
+    },
+    {
+        "title":  "O/L English Literature - Grade 11 - Third Term Test 2025 - Southern Province",
+        "description":  "Set by the Southern Province. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1US3su9yy8PrgguT_Di1OMDDIvsuoao-T/view",
+        "kind":  "past-paper",
+        "section":  "Past Papers",
+        "level":  "Grade 11",
+        "keywords":  "grade 11 gr 11 g11 grade eleven third term term 3 3rd term year end end of year ol o/l ordinary level literature english literature Southern Province Southern provincial english Grade 11 2025 past paper term test exam paper",
+        "grade":  "11",
+        "year":  "2025",
+        "term":  "third",
+        "province":  "Southern Province",
+        "paperType":  "past-paper"
+    },
+    {
+        "title":  "O/L English Literature - Grade 11 - Third Term Test 2025 - Trincomalee Zone",
+        "description":  "Set by the Trincomalee Zone. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1VTHZ9jxSHNw8Iywwc4kTAJiHQoxxZOGw/view",
+        "kind":  "past-paper",
+        "section":  "Past Papers",
+        "level":  "Grade 11",
+        "keywords":  "grade 11 gr 11 g11 grade eleven third term term 3 3rd term year end end of year ol o/l ordinary level literature english literature Trincomalee Zone Trincomalee zonal english Grade 11 2025 past paper term test exam paper",
+        "grade":  "11",
+        "year":  "2025",
+        "term":  "third",
+        "province":  "Trincomalee Zone",
+        "paperType":  "past-paper"
+    },
+    {
+        "title":  "O/L English Literature - Grade 11 - Third Term Test 2025 - Northern Province",
+        "description":  "Set by the Northern Province. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1nym3Ni7rlLeBurHS9loIwOaXGnYfZAWE/view",
+        "kind":  "past-paper",
+        "section":  "Past Papers",
+        "level":  "Grade 11",
+        "keywords":  "grade 11 gr 11 g11 grade eleven third term term 3 3rd term year end end of year ol o/l ordinary level literature english literature Northern Province Northern provincial english Grade 11 2025 past paper term test exam paper",
+        "grade":  "11",
+        "year":  "2025",
+        "term":  "third",
+        "province":  "Northern Province",
+        "paperType":  "past-paper"
+    },
+    {
+        "title":  "O/L English - Practice Paper 2022 - North Central Province",
+        "description":  "Set by the North Central Province. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1KxU3U_r80R56-sM4bI-l19ePACglLITJ/view",
+        "kind":  "model-paper",
+        "section":  "Past Papers",
+        "level":  "O/L",
+        "keywords":  "english language North Central Province North Central provincial english O/L 2022 model paper practice paper",
+        "grade":  "",
+        "year":  "2022",
+        "term":  "",
+        "province":  "North Central Province",
+        "paperType":  "model-paper"
+    },
+    {
+        "title":  "O/L English Study Pack",
+        "description":  "Set by the school. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1h81EpFkyoYMK4cBbCNeToOnhY0I4fjFg/view",
+        "kind":  "question-bank",
+        "section":  "Past Papers",
+        "level":  "O/L",
+        "keywords":  "ol o/l ordinary level english language english O/L question bank",
+        "grade":  "",
+        "year":  "",
+        "term":  "",
+        "province":  "",
+        "paperType":  "question-bank"
+    },
+    {
+        "title":  "O/L English Revision Tute",
+        "description":  "Set by the school. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1iZHZC1Frud4fDARyrFvWaaSGJqYN8Ccm/view",
+        "kind":  "revision-paper",
+        "section":  "Past Papers",
+        "level":  "O/L",
+        "keywords":  "ol o/l ordinary level english language english O/L revision paper",
+        "grade":  "",
+        "year":  "",
+        "term":  "",
+        "province":  "",
+        "paperType":  "revision-paper"
+    },
+    {
+        "title":  "Grade 8 English - Zonal Education Activity Book - Mannar Zone",
+        "description":  "Set by the Mannar Zone. Linked from Google Drive; the link was tested anonymously and returns this paper.",
+        "url":  "https://drive.google.com/file/d/1nDCnW8fcv8PPdmL53UY210yDm_n1ZBrN/view",
+        "kind":  "question-bank",
+        "section":  "Past Papers",
+        "level":  "Grade 8",
+        "keywords":  "grade 8 gr 8 g8 grade eight english language Mannar Zone Mannar zonal english Grade 8 2021 question bank",
+        "grade":  "8",
+        "year":  "2021",
+        "term":  "",
+        "province":  "Mannar Zone",
+        "paperType":  "question-bank"
     },
     {
         "title":  "Grade 6 English Pupil\u0027s Book",
