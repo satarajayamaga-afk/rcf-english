@@ -329,6 +329,25 @@ a:hover { color: var(--teal-700); }
 .btn--whatsapp { background: var(--teal-700); color: #fff; border-color: var(--teal-700); }
 .btn--whatsapp:hover { background: var(--teal-800); border-color: var(--teal-800); color: #fff; }
 
+/* Hero button family. On the navy hero the buttons used to be one teal, one
+   loud gold and three identical translucent ghosts, so four of the five looked
+   like the same control. These give each destination its own colour while
+   staying inside the navy-teal palette, so they read as a set rather than as
+   decoration. All are tested for contrast against white text. */
+.btn--sea { background: var(--navy-600); color: #fff; border-color: #3a5f96; }
+.btn--sea:hover { background: #24508d; border-color: #5a7cb0; color: #fff; }
+
+.btn--pine { background: var(--teal-800); color: #fff; border-color: #1d6b58; }
+.btn--pine:hover { background: #0a6350; border-color: #2f8570; color: #fff; }
+
+.btn--slate { background: #2b4a6f; color: #fff; border-color: #4a6b91; }
+.btn--slate:hover { background: #345780; border-color: #6a89ad; color: #fff; }
+
+/* Muted amber for the bookshop. The bright gold read as an alert rather than
+   a link; this is the same hue two steps deeper, with white text. */
+.btn--sand { background: var(--gold-600); color: #fff; border-color: #c58f1f; }
+.btn--sand:hover { background: #c68d16; border-color: #dda945; color: #fff; }
+
 .btn--sm { min-height: 40px; padding: 0.4rem 0.9rem; font-size: var(--step--1); }
 .btn--block { width: 100%; }
 
@@ -479,11 +498,16 @@ a:hover { color: var(--teal-700); }
 .header-link:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
 @media (min-width: 900px) { .header-link { display: inline-flex; } }
 
+/* RCF Publications. The bright gold shouted against the navy bar and pulled
+   the eye away from the navigation; this is the same hue two steps deeper,
+   with white text, so it still marks the bookshop as different without
+   dominating the header. */
 .header-link--accent {
-  background: var(--gold-400);
-  color: var(--navy-900);
+  background: var(--gold-600);
+  color: #fff;
+  border-color: #c58f1f;
 }
-.header-link--accent:hover { background: #eebc5d; color: var(--navy-900); }
+.header-link--accent:hover { background: #c68d16; border-color: #dda945; color: #fff; }
 
 /* Global English. It sits in the header bar rather than the section row
    below, because that row is already full at laptop widths and an eleventh
@@ -557,38 +581,61 @@ a:hover { color: var(--teal-700); }
 .search-toggle:hover,
 .nav-toggle:hover { background: rgba(255, 255, 255, 0.2); }
 
-/* Global search button. It is an <a>, so it needs the link colour removed and
-   the focus ring kept. Deliberately larger and higher-contrast than the menu
-   button beside it: search is the control most visitors reach for first, and
-   the old icon-only version was too small to notice. Visible at every width;
-   above 1240px the header search field takes over and the button steps aside. */
+/* Global search button. It is an <a>, so the link colour and underline are
+   removed. It deliberately matches the Menu button beside it exactly: same
+   height, same padding, same font, same border radius - the two read as a
+   pair. Visible at every width; above 1240px the header search field takes
+   over and the button steps aside. */
 .search-toggle {
   text-decoration: none;
   white-space: nowrap;
-  min-height: 52px;
-  min-width: 52px;
-  gap: 0.55rem;
-  padding: 0.55rem 1.1rem;
-  font-size: var(--step-0);
-  font-weight: 700;
-  background: var(--gold-400);
-  color: var(--navy-800);
-  border-color: var(--gold-400);
+  background: var(--navy-600);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
 }
 .search-toggle:hover,
 .search-toggle:focus-visible {
   text-decoration: none;
-  background: #eab84f;
-  border-color: #eab84f;
-  color: var(--navy-800);
+  background: var(--navy-700);
+  border-color: #fff;
+  color: #fff;
 }
-.search-toggle__icon { font-size: 1.3rem; line-height: 1; }
 
-/* On the narrowest phones the label goes but the button stays big enough to
-   hit comfortably. */
-@media (max-width: 400px) {
-  .search-toggle__text { display: none; }
-  .search-toggle { padding-inline: 0.7rem; }
+/* The lens is drawn as an SVG mask rather than set as an emoji, so it takes
+   the button's own colour and sits on the same optical baseline as the Menu
+   bars beside it. */
+.search-toggle__icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/%3E%3C/svg%3E");
+  mask: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/%3E%3C/svg%3E");
+}
+
+/* Search and Menu are a matched pair, so they are sized together.
+   "Search" is the wider word, so a shared minimum width keeps them measuring
+   the same once both labels show. Two labelled buttons plus the brand need
+   about 500px of header, so below that both labels are hidden and the pair
+   sit as 44px squares instead - which also matches. Hiding the labels visually
+   rather than removing them keeps them available to screen readers. */
+@media (min-width: 500px) {
+  .search-toggle,
+  .nav-toggle { min-width: 96px; }
+}
+@media (max-width: 499px) {
+  .search-toggle__text,
+  .nav-toggle__text {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 }
 @media (min-width: 1240px) { .search-toggle { display: none; } }
 

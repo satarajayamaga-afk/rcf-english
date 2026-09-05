@@ -34,7 +34,7 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["A workable lesson structure, and plans you can adapt."] },
+            { "title": "Lesson Plan Guidance", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["A workable lesson structure, and plans you can adapt."] },
             { "title": "Classroom Management", "url": "teacher-resources/classroom-management/", "more": "Open", "text": ["Rules and routines, classes of forty, attention, behaviour, pair work and transitions."] },
             { "title": "Lesson Plan Template", "url": "teacher-resources/lesson-plan-template/", "more": "Open", "text": ["A blank plan, an observation checklist and a self-evaluation form, free to print."] },
             { "title": "Worksheets", "url": "teacher-resources/worksheets/", "more": "Open", "text": ["Printable practice, and how to design your own."] },
@@ -97,7 +97,7 @@
 
     {
       "slug": "teacher-resources/lesson-plans",
-      "title": "Lesson Plans",
+      "title": "Lesson Plan Guidance",
       "description": "A lesson structure that works in a large mixed-ability English class, with worked plans for grammar, writing, reading and literature lessons.",
       "keywords": "English lesson plans, lesson structure, teaching English, 40 minute lesson",
       "kicker": "Teacher Resources",
@@ -250,11 +250,16 @@
         },
         {
           "type": "browse",
-          "heading": "Downloadable lesson plans",
+          "heading": "Downloadable planning documents",
           "variant": "tint",
           "source": "resources",
           "fixed": { "type": "lesson-plan" },
-          "filters": ["subject", "level", "skill", "duration", "learnerLevel"]
+          "filters": ["subject", "level", "skill", "duration", "learnerLevel"],
+          "note": "Files are added here as they are prepared and approved.",
+          "intro": [
+            "**The four worked plans above are on this page itself** - they are written out in full and do not need downloading. What follows is the small number of planning documents available as files.",
+            "For ready-made teaching material by grade, see [Study Packs](teacher-resources/study-packs/) and [Worksheets by Grade](teacher-resources/worksheets-by-grade/)."
+          ]
         },
         {
           "type": "cards",
@@ -338,7 +343,7 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open" },
+            { "title": "Lesson Plan Guidance", "url": "teacher-resources/lesson-plans/", "more": "Open" },
             { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open" },
             { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "more": "Open" }
           ]
@@ -464,7 +469,7 @@
           "items": [
             { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open" },
             { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "Open" },
-            { "title": "Lesson Plans", "url": "teacher-resources/lesson-plans/", "more": "Open" }
+            { "title": "Lesson Plan Guidance", "url": "teacher-resources/lesson-plans/", "more": "Open" }
           ]
         },
         {

@@ -355,128 +355,312 @@
     {
       "slug": "al-literature/model-answers",
       "title": "Model Answers",
-      "metaTitle": "A/L English Literature Model Answers and the Marking Grid | RCF English",
-      "description": "A/L English model answers in the format the marking scheme uses: 8-mark context questions marked on identification, relevance, literary features and language.",
-      "keywords": "A/L English literature model answers, context question 8 marks, A/L English marking scheme, literary features marks, A/L literature essay",
+      "metaTitle": "A/L English Literature Model Answers: Context and Essay Format | RCF English",
+      "description": "A/L English model answers built on the marking grid: identification, relevance to plot, character and theme, literary features and language, with four context answers and four essays.",
+      "keywords": "A/L English literature model answers, context question 8 marks, A/L literature essay, marking scheme format, Othello Tess context answer",
       "kicker": "A/L Literature",
       "kind": "guidance",
       "schema": "LearningResource",
       "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
       "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Answers written the way the marking grid is actually built - identification, relevance, literary features and language, all four earning marks at once." },
+      "hero": { "text": "Eight model answers - one context and one essay for poetry, the short story, the novel and drama - built on the four criteria the marking grid actually uses." },
       "blocks": [
         {
           "type": "callout",
           "style": "note",
           "title": "Read this first",
           "bullets": [
-            "These are **teaching materials written by RCF English**. They are not official answers.",
-            "**The format and the marking grid follow the official marking scheme** for G.C.E. A/L English, checked against the 2019 scheme.",
-            "**Prescribed texts change.** The passages used here are from Shakespeare, which is out of copyright and safe to quote. Check the current syllabus for your own year's texts.",
-            "**Do not memorise these.** The examiners' own scheme warns explicitly about memorised stock answers - see the note below."
+            "**The marking grid and question format are taken from the official marking scheme** for G.C.E. A/L English.",
+            "The **answers** are written by RCF English. They are not official answers and not the only acceptable ones.",
+            "**Prescribed texts change from year to year.** Check your own year's syllabus; the method transfers to any text.",
+            "**Do not memorise these.** The examiners' own scheme warns about memorised stock answers - see the note below."
           ]
         },
         {
           "type": "table",
           "heading": "How an 8-mark context question is marked",
           "level": "h2",
-          "caption": "The four criteria from the official marking grid. All four are marked on the same answer at the same time, which is why a single well-written paragraph outscores a list.",
+          "caption": "Part A of Paper 1 carries four context questions of 8 marks each. All four criteria are assessed on the same answer at the same time.",
           "stacked": true,
           "columns": ["Criterion", "Marks", "What earns them"],
           "rows": [
-            ["Identification of text, author, context", "**1**", "Naming the work, the writer and where the passage falls. The scheme notes that this basic identification is **required before the other categories can be considered at all**."],
-            ["Relevance to text, theme, plot, character", "**3**", "The largest single block. How the passage matters to the work as a whole - what it reveals, what it sets up, what it turns."],
-            ["Literary features", "**1**", "Style, vocabulary, tone, and figures of speech - **integrated into the argument**, not listed separately."],
-            ["Language", "**3**", "Your own English: accuracy, coherence and persuasiveness. Equal in weight to relevance."],
-            ["**Total**", "**8**", "Part A carries **four context questions of 8 marks each**."]
+            ["Identification of text, author, context", "**1**", "The work, the writer, the speaker, the listener, and where the passage falls. The scheme states this basic identification is **required before the other categories can be considered at all**."],
+            ["Relevance to text, theme, plot, character", "**3**", "The largest block. What the passage reveals, what it turns, what it sets up."],
+            ["Literary features", "**1**", "Style, vocabulary, tone and devices - **integrated into the argument**, not listed."],
+            ["Language", "**3**", "Your own English: accuracy, coherence, persuasiveness. Equal in weight to relevance."],
+            ["**Total**", "**8**", "Four questions of 8 marks each in Part A."]
           ]
         },
         {
           "type": "callout",
           "style": "tip",
-          "title": "Two warnings the examiners put in the scheme themselves",
+          "title": "Two warnings the examiners wrote into the scheme themselves",
           "text": [
-            "**On listing literary devices.** The scheme states that candidates are *not* specifically asked to identify literary features, and instructs examiners to stop awarding marks merely because a device is named. Its words are worth taking seriously: integrating this analysis into an answer *deserves more credit than a separate listing of devices used, which is both mechanical and irrelevant*.",
-            "So: never end an answer with *The literary devices used are simile, metaphor and personification.* Write instead about what a particular word or image does, and the mark comes automatically.",
-            "**On memorised answers.** The scheme records that the note above was added to address a problem identified during marking - candidates relying on **memorised stock answers, especially to the context questions**. An answer that has clearly been learned in advance and bent to fit will be recognised.",
-            "**Language is worth three of the eight marks** - as much as relevance. A brilliant reading in poor English cannot reach the top band. Equally, the scheme warns that accuracy counts for little if the sample is too short to judge, so a two-sentence answer cannot score well however correct it is."
+            "**On listing devices.** The scheme states that candidates are *not* asked to identify literary features, and instructs examiners to stop awarding marks merely because a device is named. Its own words: integrating the analysis *deserves more credit than a separate listing of devices used, which is both mechanical and irrelevant*.",
+            "So never close with *The devices used are simile, metaphor and irony.* Say what a particular word or image does, and the literary-features mark comes automatically.",
+            "**On memorised answers.** The scheme records that this note was added to address candidates relying on **memorised stock answers, especially to the context questions**. An answer bent to fit is recognised.",
+            "**Language is three of the eight marks** - as much as relevance. The scheme also warns that accuracy counts for little if the sample is too short to judge, so a two-sentence answer cannot score well however correct it is."
           ]
         },
         {
+          "type": "callout",
+          "style": "info",
+          "title": "The shape that fits the grid",
+          "text": [
+            "Because the grid has four criteria, the safest answer has four movements. Many teachers set them out under headings; in the examination you may write them as connected paragraphs instead, which reads better and earns the language mark more easily. Either way the order is the same:",
+            "**1. Identification** - work, writer, speaker, listener, point in the action. **2. Relevance to the plot** - what this moment turns or sets up. **3. Relevance to the characters** - what it reveals about each person involved. **4. Relevance to the themes** - named themes, each tied to the passage.",
+            "**Literary features are woven through 2, 3 and 4**, never added as a fifth list.",
+            "Aim for **250 to 350 words**. That is enough writing for the language mark to be judged, and it fits the time you have for four of them."
+          ]
+        },
+
+        {
           "type": "model",
-          "heading": "Model 1 - an 8-mark context answer",
+          "heading": "Context 1 - Poetry",
           "level": "h2",
           "items": [
             {
-              "label": "Context question, 8 marks",
-              "prompt": "Comment briefly on the following passage, explaining its significance to the play from which it is taken.\n\n\"Let husbands know, / Their wives have sense like them; they see and smell, / And have their palates both for sweet and sour / As husbands have. ... Then let them use us well: else let them know, / The ills we do, their ills instruct us so.\"",
+              "label": "8 marks",
+              "prompt": "Comment briefly on the following lines, explaining their significance to the poem from which they are taken.\n\n\"Thou wast not born for death, immortal Bird! / No hungry generations tread thee down; / The voice I hear this passing night was heard / In ancient days by emperor and clown\"",
               "sample": [
-                "These lines are spoken by Emilia to Desdemona in Act 4 Scene 3 of Shakespeare's *Othello*, in reply to Desdemona's naive question as to whether there are women who would betray their husbands. They come immediately before the murder, in the quiet domestic scene where Desdemona prepares for bed.",
-                "Emilia's characteristic common sense is forcefully present here. She argues that women stray because their husbands treat them badly, and that women possess the same appetites and frailties as men: they \"see and smell\", and have palates \"both for sweet and sour\". The insistence is on shared physical humanity, and the rhetorical question and answer structure - *Is it sport? I think it is* - gives the argument the momentum of something worked out and long held.",
-                "What is paradoxical, and what gives the passage its significance, is that Emilia perceives gendered double standards with complete clarity in general while remaining entirely blind to her own husband's machinations. Shakespeare dramatises the deeply entrenched nature of these ideologies: it is harder to see the injustice of one's own marriage than to state the broad principle.",
-                "The passage is also doubly ironic in relation to the tragedy about to unfold. In Emilia's account women do err, with cause, and are punished by men. Desdemona is destroyed for precisely the opposite reason - she is so far from the temptations Emilia describes that she cannot imagine being suspected, and so takes none of the precautions that suspicion would demand. The speech therefore sharpens the audience's sense of the injustice of the final scene while appearing only to discuss marriage in general terms."
+                "These lines open the seventh stanza of John Keats's *Ode to a Nightingale*, spoken by the poem's speaker at the point where his imagined flight to the bird reaches its furthest extent, immediately before the word \"forlorn\" tolls him back to himself.",
+                "Their function in the poem is to state the contrast the whole ode has been building towards. The speaker has spent six stanzas longing to escape a world in which \"youth grows pale, and spectre-thin, and dies\", and here he finally names what the nightingale possesses and he does not: continuity. The bird is addressed directly as \"immortal Bird\", and the apostrophe matters - he is no longer describing the nightingale but appealing to it, which marks the highest point of his identification with it.",
+                "The claim is, strictly speaking, false: this individual bird will die. What is immortal is the song, passed unchanged from generation to generation, and the speaker's willingness to blur bird and song shows how far his imagination has carried him from fact. This is why the collapse of the next stanza is so abrupt; the vision has been pushed until it can no longer bear its own weight.",
+                "The phrase \"hungry generations\" compresses the poem's central idea into two words. It makes time itself predatory, something that consumes the living, and sets human beings in a devouring succession against the single continuous voice of the bird. The pairing of \"emperor and clown\" then flattens all human distinction: rank, wealth and power are irrelevant to the song, which has outlasted every listener equally.",
+                "The significance of the passage is therefore that it is both the ode's peak and the cause of its fall. In reaching for the bird's immortality the speaker has claimed something no living creature has, and the very completeness of the claim is what makes his return to \"my sole self\" inevitable."
               ],
               "notes": [
-                "**Identification comes first and is complete** - speaker, listener, play, act and scene, and where it falls in the action. That is the one mark, and the scheme says the rest cannot be credited without it.",
-                "**Relevance is the biggest block of marks, so it gets the most space.** Two full paragraphs on what the passage reveals and how it relates to the tragedy: three of the eight marks live here.",
-                "**Literary features are integrated, never listed.** The rhetorical question structure and the appeal to the senses are discussed *as they do their work in the argument*. There is no sentence beginning *The literary devices used are...*, and the scheme explicitly prefers it this way.",
-                "**Continuous analytical prose.** Not headings, not bullet points, not an (a)/(b)/(c) structure. This is where A/L differs sharply from O/L, where the context answers are short labelled parts.",
-                "**The length is judged for the language mark.** Around 320 words gives the examiner enough writing to assess coherence and accuracy, which is worth three marks. A short answer cannot earn them.",
-                "**It ends on significance, not summary.** The final sentence says what the speech does to the audience's response to the ending - which is precisely what *explaining its significance* asked for."
+                "**Identification is complete in the first sentence** - poem, poet, position in the structure, and what happens immediately after. That is the gateway mark.",
+                "**Relevance occupies three paragraphs**, because it is worth three of the eight marks. It covers the poem's argument, the speaker's psychology, and the passage's structural function.",
+                "**The literary features are inside the argument.** Apostrophe, the metaphor in *hungry generations*, and the levelling effect of *emperor and clown* are each analysed for what they do - never listed.",
+                "**The answer takes a position of its own** - that the claim is false and that its falseness causes the collapse. Examiners reward a reading, not a summary.",
+                "**About 330 words**, enough for the three language marks to be assessed."
               ]
             }
           ]
         },
         {
           "type": "model",
-          "heading": "Model 2 - the same question answered badly",
+          "heading": "Context 2 - Short story",
           "level": "h2",
           "variant": "tint",
           "items": [
             {
-              "label": "What loses marks, and why",
-              "prompt": "The same Othello passage, answered in the way the examiners' note warns about.",
+              "label": "8 marks",
+              "prompt": "Comment briefly on the following passage, explaining its significance to the short story from which it is taken.\n\n\"What do these foreigners know about our ancient Sinhala culture? I have given Kusuma so much! I have been like a mother to her. Is it too much to ask a little gratitude in return!\"",
               "sample": [
-                "This passage is taken from *Othello* written by William Shakespeare. Emilia is the speaker.",
-                "In this passage Emilia says that wives have senses like their husbands. She says they can see and smell. She says they have palates for sweet and sour. Then she says that husbands should use them well. If not, the wives will do ills because the husbands taught them.",
-                "The literary devices used in this passage are: rhetorical question, repetition, metaphor, and imagery. The rhetorical question is \"Is it sport?\" The repetition is \"I think\". These devices make the passage more effective and beautiful.",
-                "In conclusion, this is a very important passage in the play and it shows the theme of women in society."
+                "These words are spoken by Loku Naenda in Chithra Fernando's short story *Action and Reaction*, during the conversation on the verandah after Kusuma's wish to marry Piyadasa has been revealed, and in reply to Mahinda's attempt to offer a different view.",
+                "The outburst is the turning point of the story. Until now Loku Naenda's authority over the household has been exercised quietly and has looked like kindness; here it is stated aloud as a debt to be repaid, and the conflict between her and the younger generation becomes open. From this moment she acts to separate Kusuma from Piyadasa, and the resentment that will shape the rest of the story begins.",
+                "It reveals a great deal about her. She genuinely believes herself generous - \"I have been like a mother to her\" - and cannot see that generosity offered on condition of obedience is a form of control. Her dismissal of \"these foreigners\" shows how she defends her position: any idea that threatens her authority is reclassified as alien, and therefore need not be answered. Mahinda's silence afterwards measures how effectively this works. Kusuma, who does not speak at all in the passage, is defined here entirely by what is said about her, which is precisely the position she is trying to escape.",
+                "Several of the story's themes converge. Gratitude is presented as a currency in which the powerful are always owed; tradition is used not as a value but as an argument that cannot be contradicted; and the hierarchy of the household is exposed as depending on the silence of those lower in it.",
+                "The rhetorical questions carry the passage's tone. They are addressed to no one and expect no answer, and their function is to make disagreement sound like ingratitude - which is why the exclamation marks, three in four sentences, read less as emotion than as pressure. The irony is that a woman insisting she has been like a mother is at this moment acting entirely for herself."
               ],
               "notes": [
-                "**Identification is incomplete.** Play and author are given, but not the listener, the act and scene, or the point in the action - and the scheme treats identification as the gateway to the other categories.",
-                "**The second paragraph is paraphrase, not relevance.** It restates the passage line by line in weaker English. It says nothing about what the speech reveals about Emilia, or how it relates to Desdemona's death. Most of the three relevance marks are simply not attempted.",
-                "**The third paragraph is exactly what the scheme condemns** - a separate list of devices, named and then asserted to make the passage *more effective and beautiful* without saying what any of them does. The scheme's own word for this is *mechanical*.",
-                "**\"This is a very important passage\" is not significance.** It is a claim with no content. The question asked *why* it matters.",
-                "**The language mark suffers too.** The sentences are short, repetitive and structurally identical - *She says... She says... She says...* - so even where the English is accurate, it cannot be called coherent or persuasive.",
-                "**The tragedy of this answer is that the writer knows the passage.** Every fact in it is correct. It is the shape that loses the marks."
+                "**The plot, character and theme paragraphs are clearly separated**, which is how the three relevance marks are most reliably earned. If you prefer headings in a practice answer, use them - but connected paragraphs read better and help the language mark.",
+                "**Every character in the passage is accounted for**, including Kusuma, who is silent. Noticing who does *not* speak is often the strongest observation available.",
+                "**The literary features come last and are analysed, not listed:** the rhetorical questions, the exclamation marks, and the irony are each given a function.",
+                "**Short embedded quotations only.** The passage is printed on the paper; you do not need to copy it out."
               ]
             }
           ]
         },
         {
-          "type": "checklist",
-          "heading": "Check your own context answer",
+          "type": "model",
+          "heading": "Context 3 - Novel",
           "level": "h2",
           "items": [
-            "Have you named the work, the writer, the speaker, the listener and the point in the action?",
-            "Have you spent most of your answer on why the passage matters to the whole work?",
-            "Is every comment on style attached to an effect, rather than listed at the end?",
-            "Have you written enough for your English to be judged - a substantial paragraph or more, not two sentences?",
-            "Does your last sentence explain significance rather than assert importance?",
-            "Would this answer fit any other passage? If it would, it is a memorised answer and will be recognised."
+            {
+              "label": "8 marks",
+              "prompt": "Comment briefly on the following passage, explaining its significance to the novel from which it is taken.\n\n\"Here she dipped her hand into the basin, and fervently drew an immense cross upon the baby with her forefinger, continuing with the customary sentences as to his manfully fighting against sin, the world, and the devil, and being a faithful soldier and servant unto his life's end.\"",
+              "sample": [
+                "This passage occurs in Phase the Second of Thomas Hardy's *Tess of the d'Urbervilles*, when Tess, refused the help of the church, baptises her dying child Sorrow herself at night in the bedroom, watched by her younger brothers and sisters.",
+                "Its place in the novel is pivotal. The baptism is the last act of Tess's brief motherhood, and the child's death immediately afterwards closes the consequences of Alec's violation and releases her into the second half of the book. It also marks the point at which Tess stops appealing to institutions and begins to act on her own moral judgement, which is the movement the rest of the novel follows to its end.",
+                "The scene defines her character more sharply than any description could. She is shown as devout but not obedient: she performs the rite exactly, in the church's own words, while defying the church's refusal to grant it. That combination - reverence towards the meaning of the ritual, indifference towards the authority that owns it - is the essence of Hardy's Tess, and it is what makes her both sympathetic and doomed in the society he describes.",
+                "The passage carries the novel's central irony. The words of the baptism call the infant to fight \"manfully\" against \"sin, the world, and the devil\", yet this child is himself regarded by that world as the product of sin, and the woman speaking them has been condemned by the same standard. Hardy sets institutional morality and genuine moral feeling directly against each other, and the institution is the one found wanting - a judgement reinforced by the novel's subtitle, *A Pure Woman*.",
+                "The style does the work quietly. The formal liturgical phrasing, borrowed intact from the Prayer Book, sits against the domestic reality of a basin and a forefinger, and the gap between the grandeur of the language and the poverty of the means is where the pathos lies. The adverb \"fervently\" and the adjective \"immense\" are the only words that belong to Tess rather than to the ritual, and both measure the intensity she brings to it."
+              ],
+              "notes": [
+                "**Identification names the phase, not just the novel.** For a long novel, saying where in the structure the passage falls is part of the identification mark.",
+                "**The relevance paragraphs move outward** - plot, then character, then theme - which is the order the grid lists and the easiest for an examiner to follow.",
+                "**The irony is explained rather than named.** Saying *Hardy uses irony here* earns nothing; showing that the baptismal words condemn the child they are meant to save earns the literary-features mark and supports the theme.",
+                "**The final paragraph analyses register** - liturgical language against domestic detail. Style is a literary feature, and often the richest one available in prose."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Context 4 - Drama",
+          "level": "h2",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "8 marks",
+              "prompt": "Comment briefly on the following passage, explaining its significance to the play from which it is taken.\n\n\"Let husbands know, / Their wives have sense like them; they see and smell, / And have their palates both for sweet and sour / As husbands have. ... Then let them use us well: else let them know, / The ills we do, their ills instruct us so.\"",
+              "sample": [
+                "Emilia speaks these lines to Desdemona in Act 4 Scene 3 of Shakespeare's *Othello*, in the bedchamber scene in which Desdemona is prepared for the bed she will be murdered in, and in answer to her mistress's question as to whether any woman would truly betray her husband.",
+                "The speech does two things to the plot. It is the last sustained conversation before the murder, and its placing means the audience hears an argument about the injustice of men's treatment of women immediately before watching the most extreme instance of it. It also establishes Emilia's independence of judgement, which is what makes her later denunciation of Iago dramatically credible: a woman who has thought this clearly about husbands in general will not be silenced about her own.",
+                "The contrast between the two women is the point. Desdemona's question is genuinely innocent; Emilia's answer is worldly, practical and entirely unshocked. Yet the irony runs deeper than the contrast suggests, because Emilia sees the general injustice with complete clarity while remaining wholly blind to her own husband's plotting - and she is at this moment in possession of the handkerchief that will destroy Desdemona. Shakespeare shows that understanding a principle and recognising it in one's own life are different capacities.",
+                "The passage therefore carries the play's treatment of gender and reputation to its clearest statement. Emilia argues that women share the appetites and frailties of men and should be judged by the same standard; the tragedy proceeds on the opposite assumption, that a wife's fidelity is her whole worth, and Desdemona dies of it.",
+                "The argument is built out of the body and the senses - \"they see and smell\", \"palates both for sweet and sour\" - which grounds an abstract claim about justice in something no listener can deny. The rhetorical question and answer pattern gives the speech the momentum of a case long rehearsed, and the final couplet turns it into a warning: the wrongs women commit are taught to them by the wrongs done to them."
+              ],
+              "notes": [
+                "**Identification includes the dramatic situation** - the bedchamber, the preparation for the bed she dies in. In drama, *where in the action* often matters more than act and scene numbers.",
+                "**The strongest observation is the double irony**, and it is placed in the middle where the relevance marks are concentrated: Emilia understands the general case and misses the particular one, while holding the handkerchief.",
+                "**The final paragraph handles style** - sensory grounding, the question-and-answer structure, the closing couplet - each attached to an effect on the listener.",
+                "**No device list, no plot summary.** Every sentence either identifies, argues relevance, or analyses method."
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "The essay questions",
+          "level": "h2",
+          "text": [
+            "Essay answers are marked on the same principles: a clear position, developed argument, textual evidence, and English good enough to carry it. What changes is the scale - you have room for a proper introduction, four or five developed paragraphs and a conclusion that judges rather than repeats.",
+            "The four essays below cover the same four genres."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 1 - Poetry",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Essay",
+              "prompt": "Examine how youth is presented in two poems of your choice.",
+              "sample": [
+                "Youth is rarely presented in poetry as a simple stage of life; it is more often the point from which loss is measured. In Keats's *Ode to a Nightingale* youth is idealised as a condition of freedom from suffering, longed for and unreachable; in Yeats's *Among School Children* it is examined from old age with a mixture of nostalgia and philosophical doubt. Together the two poems show youth first as an object of desire and then as a problem of understanding.",
+                "Keats presents youth chiefly by presenting its destruction. The world he wishes to leave is one \"Where youth grows pale, and spectre-thin, and dies\", and the compression of that line - three stages of decline in six words - makes youth something that is happening to be lost rather than something possessed. What he longs for is not his own youth but a state outside time altogether, which is why the nightingale, \"not born for death\", becomes its emblem. Youth in this ode is defined negatively: it is whatever the \"weariness, the fever, and the fret\" is not.",
+                "Yeats begins from the opposite position. He is \"a sixty-year-old smiling public man\" walking through a schoolroom, and youth is in front of him, embodied in children he watches. The poem's movement is from observation to recollection: the children prompt him to imagine the woman he loved as a girl, and then to wonder \"if she stood so at that age\". Youth here is not longed for but reconstructed, and the reconstruction is admitted to be uncertain.",
+                "The difference sharpens when each poet considers what youth becomes. Keats stops at the fact of decay. Yeats presses further and asks whether a mother, shown her infant as he will be \"with sixty or more winters on its head\", would think the birth worth the cost - a question that refuses the consolation of nostalgia altogether. Where Keats mourns the loss of youth, Yeats doubts whether youth and age are even the same person.",
+                "This is why the two poems end so differently. Keats's vision collapses; the word \"forlorn\" returns him to \"my sole self\", and the ode closes on uncertainty about whether the escape was vision or dream. Yeats resolves his question instead by dissolving it. The chestnut tree that is neither \"the leaf, the blossom or the bole\" and the dancer who cannot be known from the dance propose that youth is not a separable stage at all, but one aspect of a whole that only exists entire.",
+                "Both poets therefore treat youth as inseparable from time, but they draw opposite conclusions from it. Keats's youth is precious because it ends, and his poem enacts the longing to stop it. Yeats's is unintelligible when taken by itself, and his poem works towards an acceptance in which nothing needs to be stopped. The first is an elegy for a condition; the second is an argument that the condition was never separate enough to mourn."
+              ],
+              "notes": [
+                "**The introduction states a comparative thesis**, not a plan. It says what the two poems together demonstrate, which gives the essay a destination.",
+                "**Every paragraph handles both poems or explicitly advances the comparison.** Writing three paragraphs on Keats and then three on Yeats is the commonest structural failure in comparison questions.",
+                "**Quotations are short and analysed**, never dropped in. *Three stages of decline in six words* is analysis; quoting the line alone is not.",
+                "**The conclusion distinguishes rather than summarises** - elegy against argument - and says something the introduction did not.",
+                "**Around 570 words.** Long enough to develop, short enough to write under examination conditions with three other answers to produce."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 2 - Short story and Essay 3 - Novel",
+          "level": "h2",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "Short story: essay",
+              "prompt": "In *Action and Reaction*, Chithra Fernando presents kindness and control as difficult to tell apart. Discuss.",
+              "sample": [
+                "The story's power comes from the fact that Loku Naenda is not a villain. She has genuinely fed, housed and raised Kusuma, and she genuinely believes herself generous. Fernando's achievement is to show that these things are true at the same time as the control they conceal, and that neither the character nor those around her can easily separate the two.",
+                "The difficulty is built into the household itself. Kusuma's position - taken in, provided for, given a place - is one in which every kindness creates an obligation, and the obligation is never stated until it is broken. Only when Kusuma wishes to marry does the arrangement become visible, and by then it is too late to renegotiate it.",
+                "Loku Naenda's own language shows she cannot see the difference. \"I have been like a mother to her\" is offered as evidence of love, but it is produced as an argument, in a quarrel, to defeat an opposing view. Kindness recalled as a debt has already stopped being kindness, and the fact that she does not notice this is the point.",
+                "Fernando is careful not to make the younger generation simply right. Mahinda's modern ideas are sincere but untested, and he retreats as soon as he is opposed. The story does not offer the reader an easy position from which to judge, which is why the ending resists resolution: the household continues, the debt continues, and nothing is settled by anyone naming it.",
+                "The title states the theme. Every action in the story produces a reaction that is disproportionate to it and outside anyone's control - a wish to marry produces an outburst, an outburst produces resentment, resentment produces separation. What is difficult to tell apart is not only kindness and control but cause and consequence, and Fernando leaves both entangled."
+              ],
+              "notes": [
+                "**It refuses the easy reading.** An essay arguing simply that Loku Naenda is cruel would be less good than one arguing that she cannot tell the difference - and the second is closer to what the story does.",
+                "**The counter-case is given weight.** Mahinda is not allowed to be straightforwardly right, which prevents the essay collapsing into old-versus-new.",
+                "**The title is used as evidence in the final paragraph.** Where a title carries meaning, saving it for the end gives the conclusion something to do."
+              ]
+            },
+            {
+              "label": "Novel: essay",
+              "prompt": "Tess Durbeyfield was a victim of ignorance, failing to fathom the dangers surrounding her, unaided by those around her. Discuss.",
+              "sample": [
+                "The statement is true, but it is only half of Hardy's case. Tess is indeed ignorant of the dangers surrounding her, and she is indeed unaided; what the novel adds is that the ignorance is not hers alone, and that the failure to aid her is systematic rather than accidental.",
+                "Her own ignorance is real and is repeatedly shown. She does not understand what Alec wants, does not understand what claiming kin with the d'Urbervilles will mean, and does not understand that Angel's idealism will not survive her confession. Hardy is careful to present this as inexperience rather than stupidity: she is intelligent, has been a pupil-teacher, and reasons clearly whenever she has the facts. What she lacks is knowledge of the world, and she has no means of acquiring it.",
+                "The novel is far harder on those who should have supplied it. Her parents send her to Trantridge out of vanity and greed, and her mother, who knows exactly what the risk is, says nothing - later excusing herself with the remark that it was nature's law. The church refuses her child baptism and then refuses him consecrated ground. Angel, who has been forgiven a comparable past, cannot forgive hers. At each point an institution or a person with more knowledge than Tess withholds it.",
+                "Hardy's larger argument is that this withholding is not incidental but structural. A society that keeps young women ignorant of sexual danger in the name of purity, and then destroys them for encountering it, has arranged the trap it punishes them for falling into. The subtitle *A Pure Woman* is Hardy's direct challenge to that arrangement, and the novel's outrage is directed at the arrangement rather than at any single character.",
+                "It is worth resisting the reading that makes Tess wholly passive. She refuses Alec's money, walks to Emminster to plead her case, works at Flintcomb-Ash rather than beg, and finally acts with terrible decisiveness. Her tragedy is not that she never acts but that every action available to her has been narrowed in advance by what she was never told.",
+                "Tess is therefore a victim of ignorance in a fuller sense than the statement allows: her own, certainly, but chiefly of an ignorance deliberately maintained around her, and of a society that treated the maintaining of it as virtue."
+              ],
+              "notes": [
+                "**It agrees and then extends.** *True, but only half the case* is a stronger opening than either flat agreement or contradiction, and it gives the essay somewhere to go.",
+                "**The fifth paragraph is a genuine qualification** that resists the essay's own argument. Examiners reward a candidate who can see the weakness in their own reading.",
+                "**Evidence is specific throughout** - Trantridge, the baptism, Emminster, Flintcomb-Ash - and none of it is retold at length.",
+                "**The conclusion redefines the question's key word** rather than repeating the answer."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 4 - Drama",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Essay",
+              "prompt": "In *Othello*, Iago succeeds not because he is clever but because everyone around him wants to believe him. Discuss.",
+              "sample": [
+                "Iago is clever, and the play makes no attempt to pretend otherwise. But his cleverness is largely a matter of timing and restraint, and it would achieve nothing without the far more important fact the statement identifies: everyone he deceives has a reason of their own for believing him.",
+                "His technique is almost entirely negative. He rarely asserts; he withholds. \"Ha! I like not that\" and \"Indeed?\" are not accusations but invitations, and Othello supplies the accusation himself. Iago's most quoted warning against jealousy is delivered as advice against the very thing he is producing. He is, in effect, letting his victims argue themselves into the conclusion he wants, and this is why he can say with some justice that he has told no lies.",
+                "This works because Othello is already prepared to believe it. He is older than his wife, a foreigner in Venice, and has married in secret against her father's will - and Brabantio's parting warning, that a daughter who deceived her father may deceive her husband, has been planted before Iago says anything at all. Iago does not create Othello's insecurity; he locates it, and applies pressure to a fracture that was there when he arrived.",
+                "The same is true of everyone else. Roderigo believes because he wants Desdemona and has no other route to her. Cassio confides because he is ashamed and needs a friend who will not judge him. Emilia hands over the handkerchief because she wants, for once, to please a husband who never notices her. In each case the belief serves a need the character already had, and Iago's contribution is to be present when it is felt.",
+                "The play insists on this by making Iago's own motives incoherent. He offers the promotion, then suspicion of his wife, then a general hatred - explanations that do not add up and are not meant to. Coleridge's phrase about motiveless malignity points at something real: Shakespeare declines to give him a sufficient cause, because a sufficient cause would make him the origin of the tragedy rather than its occasion.",
+                "That is finally why the statement is right in substance if not in emphasis. Iago is a brilliant opportunist, but the tragedy is not caused by his brilliance; it is caused by a society whose assumptions about race, gender and reputation make his suggestions plausible. His last line - \"Demand me nothing: what you know, you know\" - refuses the explanation the survivors want, and leaves them holding a knowledge that was theirs to begin with."
+              ],
+              "notes": [
+                "**It concedes the opposing term immediately** - *Iago is clever* - then reframes. Answers that simply deny the premise sound like disagreement for its own sake.",
+                "**The third and fourth paragraphs do the essay's real work**, showing the pattern repeated across four characters. Demonstrating a pattern is stronger than analysing one instance well.",
+                "**Critical reference is used lightly and put to work.** Coleridge is invoked for one point and dropped. Name-dropping criticism without using it earns nothing at A/L.",
+                "**The final quotation is chosen for its function**, not its fame: it refuses explanation, which is exactly the essay's argument."
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "dodont",
+          "heading": "Common pitfalls",
+          "level": "h2",
+          "do": [
+            "Identify fully: work, writer, speaker, listener and point in the action.",
+            "Give most of a context answer to relevance - it carries three of the eight marks.",
+            "Attach every stylistic comment to an effect.",
+            "Write enough for your English to be judged - three of the eight marks are language.",
+            "Take a position in an essay and hold it to the last sentence."
+          ],
+          "dont": [
+            "End with a list of literary devices. The scheme calls this mechanical and irrelevant.",
+            "Reproduce a memorised answer - the scheme says examiners are watching for exactly this.",
+            "Paraphrase the passage line by line. Paraphrase is not relevance.",
+            "Write two sentences and stop; too short a sample cannot earn the language marks.",
+            "Retell the plot of the novel or play. Assume the examiner knows it."
           ]
         },
         {
           "type": "prose",
-          "heading": "How to use a model answer properly",
+          "heading": "Language tips",
+          "level": "h2",
+          "text": ["Three of the eight marks on every context question are for your own English, and the essays are judged the same way. These are the habits that protect them."],
+          "bullets": [
+            "**Use the present tense for the text and the past for its composition.** *Emilia argues that...*, but *Shakespeare wrote Othello in...*.",
+            "**Vary your sentence length deliberately.** A short sentence after two long ones reads as control, and control is what *coherent and persuasive* means in the grid.",
+            "**Embed quotations inside your own sentences** rather than introducing them with a colon each time. *The world he wishes to leave is one \"where youth grows pale\"* reads better than *Keats says: \"where youth grows pale\"*.",
+            "**Prefer the precise ordinary word to the impressive one.** *Withholds* is better than *utilises the technique of withholding*.",
+            "**Do not open with a general definition.** *Literature has always explored the human condition* wastes the sentence the examiner reads most carefully.",
+            "**Hedge honestly.** *This suggests*, *the effect is*, *it seems* are stronger than *this clearly proves*, because they show judgement rather than assertion."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Organisation tips",
           "level": "h2",
           "numbered": [
-            "Read the passage and plan your own answer for five minutes before reading the model.",
-            "Write down the four criteria and decide where each of your sentences would earn its marks.",
-            "Read the model once for the argument, then again for the structure.",
-            "Read the weak version and find the four things it fails to do.",
-            "Cover both and write your own answer to the same passage, to time.",
-            "Compare, and identify **one** thing to change next time."
+            "**Divide your time by the marks before you write anything.** Four context questions of equal weight should take equal time; going over on the first leaves you writing the fourth in five minutes.",
+            "**Plan a context answer in thirty seconds** using the grid itself: identification, plot, character, theme. If you can name one thing under each, you have a complete answer.",
+            "**Plan an essay in three minutes.** A position, four points, and the evidence for each. Write the position down - essays drift when the writer has not fixed it.",
+            "**Put your strongest point third, not first.** An essay that builds is more persuasive than one that front-loads and fades.",
+            "**Paragraph on ideas, not on characters or texts.** In a comparison, a paragraph should compare; in a single-text essay, it should advance the argument one step.",
+            "**Leave five minutes to read your work back.** Tense slips, missing quotation marks and unfinished sentences are the cheapest marks to recover on the paper."
           ]
         },
         {

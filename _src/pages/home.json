@@ -17,10 +17,10 @@
     "text": "Clear English lessons, practical revision resources and reliable teaching support for learners and teachers. Everything is organised by subject and by task, so you can find what you need and start work straight away.",
     "buttons": [
       { "label": "Grade 6-11 English Resources", "url": "grades/", "style": "btn--accent" },
-      { "label": "English Teacher Resources", "url": "teacher-resources/", "style": "btn--ghost-light" },
-      { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--ghost-light" },
-      { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--ghost-light" },
-      { "label": "Explore RCF Publications", "url": "rcf-publications/", "style": "btn--gold" }
+      { "label": "English Teacher Resources", "url": "teacher-resources/", "style": "btn--sea" },
+      { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--pine" },
+      { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--slate" },
+      { "label": "Explore RCF Publications", "url": "rcf-publications/", "style": "btn--sand" }
     ],
     "aside": {
       "title": "Who this is for",

@@ -332,159 +332,330 @@
     {
       "slug": "ol-literature/model-answers",
       "title": "Model Answers",
-      "metaTitle": "O/L Literature Model Answers in the Real Paper Format | RCF English",
-      "description": "O/L Appreciation of English Literary Texts model answers written in the format the marking scheme actually uses: 1+2+2 context answers, the 10-mark extract question and 15-mark essays.",
-      "keywords": "O/L literature model answers, appreciation of English literary texts, context question format, 15 mark essay literature, O/L literature marking scheme",
+      "metaTitle": "O/L Literature Model Answers: Context and Essay, Marking Scheme Format | RCF English",
+      "description": "O/L Appreciation of English Literary Texts model answers in the real paper format: four-part context answers, the Section B novel extract, and 15-mark essays on all four genres.",
+      "keywords": "O/L literature model answers, appreciation of English literary texts, context question format, section B novel extract, O/L literature essay answers",
       "kicker": "O/L Literature",
       "kind": "guidance",
       "schema": "LearningResource",
       "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
       "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
-      "hero": { "text": "Answers written in the shape the marking scheme expects - not essays where phrases are wanted, and not phrases where an essay is wanted." },
+      "hero": { "text": "Eight model answers - one context and one essay for each of poetry, prose, drama and the novel - written to the mark allocations the paper actually uses." },
       "blocks": [
         {
           "type": "callout",
           "style": "note",
           "title": "Read this first",
           "bullets": [
-            "These are **teaching materials written by RCF English**. They are not official answers and not the only acceptable ones.",
-            "**The format on this page follows the official marking scheme**, checked against the G.C.E. O/L *Appreciation of English Literary Texts* marking scheme. Mark splits and question shapes are taken from it.",
-            "**Do not memorise these.** A memorised answer does not fit the question actually asked, and examiners recognise it at once.",
-            "Quotations are taken only from texts that are **out of copyright**. The method works identically for the texts still in copyright."
+            "**The question formats and mark splits on this page are taken from real papers**, checked against the G.C.E. O/L *Appreciation of English Literary Texts* government paper and marking scheme.",
+            "The **answers** are written by RCF English. They are not official answers and not the only acceptable ones.",
+            "**Do not memorise them.** Marking schemes accept several wordings; what they do not accept is an answer that does not fit the question asked.",
+            "Quotations are from texts that are **out of copyright**. Prescribed texts change, so check your own year's syllabus."
           ]
         },
         {
           "type": "table",
-          "heading": "The paper, and what each question is worth",
+          "heading": "Paper I: what you are actually asked",
           "level": "h2",
-          "caption": "Structure from the official marking scheme. Check the current syllabus for the prescribed texts of your year, which change from time to time.",
+          "caption": "Structure taken from the government paper. Paper I carries 40 marks; 10 minutes additional reading time is given before the three hours begin.",
           "stacked": true,
-          "columns": ["Question", "Marks", "What it asks for"],
+          "columns": ["Part", "Marks", "What it contains"],
           "rows": [
-            ["Question 1, short extracts", "**5 marks each**", "Several short extracts, each with parts **(a) 1 mark**, **(b) 2 marks** and **(c) 2 marks**. Answers are phrases and sentences, not paragraphs."],
-            ["Question 1, longer extract", "**10 marks**", "One longer passage with parts (i) to (iv), usually 2 or 3 marks each, including a 'in your own words' explanation part."],
-            ["Poetry", "**15 marks**", "One essay question on a prescribed poem."],
-            ["Drama", "**15 marks**", "One essay question on a prescribed play."],
-            ["Prose", "**15 marks**", "One essay question on a prescribed prose text."],
-            ["Fiction", "**15 marks**", "One essay question on a prescribed fiction text."],
-            ["**In total**", "-", "Answer **Question 1 and four others**, selecting **one from each** of Poetry, Drama, Prose and Fiction - **five questions in all**."]
+            ["**Section A - Poetry**", "5 + 5", "Two extracts. **Answer all.**"],
+            ["**Section A - Prose**", "5 + 5", "Two extracts. **Answer all.**"],
+            ["**Section A - Drama**", "5 + 5", "Two extracts. **Answer all.**"],
+            ["**Section B - Novels**", "10", "One longer extract. **Select EITHER (1), (2) OR (3)** and answer all the questions under it."],
+            ["**Paper I total**", "**40**", "Section A is compulsory in full; only Section B offers a choice."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The two question shapes, and their exact mark splits",
+          "level": "h2",
+          "caption": "Learn these two shapes and you know in advance how long every answer must be.",
+          "stacked": true,
+          "columns": ["", "Section A context (5 marks)", "Section B novel extract (10 marks)"],
+          "rows": [
+            ["Part (a) / (i)", "**1 mark** - Name the poem / work / play. Name the poet / author / writer.", "**2 marks** - When and where does the incident take place?"],
+            ["Part (b) / (ii)", "**1 mark** - Who is referred to as 'he' / 'they' / 'you'? Or: to whom is it spoken?", "**2 marks** - Briefly describe the speaker's emotions."],
+            ["Part (c) / (iii)", "**1 mark** - Name a literary device / when is it said / what is meant by a phrase.", "**1 + 1 mark** - Explain the meaning of two phrases as used in the extract."],
+            ["Part (d) / (iv)", "**2 marks** - Theme, significance, character or emotions.", "**4 marks** - Comment briefly on the significant theme or themes."],
+            ["**Total**", "**5**", "**10**"]
           ]
         },
         {
           "type": "callout",
           "style": "tip",
-          "title": "The single most common formatting mistake",
+          "title": "The three rules that follow from those mark splits",
           "text": [
-            "**Writing a paragraph where the marking scheme wants a phrase.** Part (a) of a context question is worth **one mark** and asks only for the text and the writer. The scheme awards that mark for the name of the work and the name of the author. A beautifully written sentence explaining the background earns exactly the same one mark, and costs you three minutes you needed for a 15-mark essay.",
-            "**And writing a phrase where the scheme wants an argument.** A 15-mark essay answer marked against a list of indicative points needs a developed response with textual evidence, not four bullet points.",
-            "Match the shape of the answer to the marks. That alone moves many candidates up a grade."
+            "**One mark means a few words.** Parts (a), (b) and (c) are worth one mark each. The answer is a name, a person, or a device - not a sentence explaining your reasoning. Six context questions, three one-mark parts each: eighteen of your forty marks are won or lost in single phrases.",
+            "**Two marks means two things.** Part (d) is worth two, so give two ideas, or one idea plus its support. A single word will not earn two marks; a paragraph will not earn three.",
+            "**Four marks means the only place you write at length.** Part (iv) of the Section B extract is the one part of Paper I that wants developed comment. Name more than one theme and tie each to the passage.",
+            "Answer the six Section A extracts in about **eight minutes each**, and leave twenty minutes for Section B."
           ]
         },
+
         {
           "type": "model",
-          "heading": "Model 1 - a 5-mark context answer",
+          "heading": "Context 1 - Poetry",
           "level": "h2",
           "items": [
             {
-              "label": "Context question, (a) 1 + (b) 2 + (c) 2 = 5 marks",
-              "prompt": "\"And the affrighted steed ran on alone.\"\n(a) From where are these lines taken? Who wrote them?\n(b) What does the action in the line indicate? Why does the steed run away?\n(c) What is the theme reflected in the line?",
+              "label": "5 marks: 1 + 1 + 1 + 2",
+              "prompt": "\"He stirred his velvet head / Like one in danger, cautious\"\n(a) Name the poem from which these lines are taken. Name the poet. (01 mark)\n(b) Who is referred to as 'He' in these lines? (01 mark)\n(c) Name a literary device used in these lines. (01 mark)\n(d) Why does the speaker assume that 'He' is cautious? (02 marks)",
               "sample": [
-                "**(a)** *War is Kind.* Stephen Crane. **(1 mark)**",
-                "**(b)** The rider has been shot and has fallen from the horse; the soldier has been killed on the battlefield. The horse runs because it is frightened and now uncontrolled, with no rider to hold it. **(2 marks)**",
-                "**(c)** The horror and brutality of war; the reality of war as destruction rather than glory. **(2 marks)**"
+                "**(a)** *A Bird Came Down the Walk.* Emily Dickinson. **(1)**",
+                "**(b)** The bird. **(1)**",
+                "**(c)** Simile - *like one in danger*. (*Metaphor* - \"velvet head\" - is also acceptable.) **(1)**",
+                "**(d)** The bird moves its head quickly and watchfully, the way a creature behaves when it senses a threat; and the speaker, who is watching it closely, is the danger it senses. Its caution shows it is aware of being observed. **(2)**"
               ],
               "notes": [
-                "**Part (a) is two names and nothing else.** Title and author. One mark. No sentence is needed and no extra credit exists for writing one.",
-                "**Part (b) answers both halves of the question.** It asks what the action indicates *and* why the horse runs. Two marks, so two things. Candidates who answer only the first half lose a mark they had.",
-                "**Part (c) offers the theme in a short phrase, and gives an alternative.** Marking schemes for this paper list several acceptable wordings separated by slashes - *the horror of war / the brutality of war / the reality of war*. One clear phrase earns the marks.",
-                "**Total length: about forty words for five marks.** That is the correct proportion. An answer three times as long scores the same and costs you an essay paragraph elsewhere.",
-                "**No introduction, no 'In this poem the poet is trying to say...'.** The examiner wants the answer, not a run-up to it."
+                "**(a) is two names.** Nothing else earns anything. Write the poem, write the poet, move on.",
+                "**(b) is two words.** *The bird.* Candidates who write *He refers to the bird which the speaker sees walking down the path* get the same one mark and lose thirty seconds.",
+                "**(c) asks you to NAME a device, not to explain it.** One mark. Give the name and, if you have room, the two or three words it applies to. Giving a second device is harmless and useful insurance if the first is wrong.",
+                "**(d) is worth two, so it has two parts:** what the bird does, and why the speaker reads it as caution. Notice the answer connects the caution to the observer - that is the inference the two marks are for.",
+                "**Total: about fifty words for five marks.** That is the correct size."
               ]
             }
           ]
         },
         {
           "type": "model",
-          "heading": "Model 2 - a 10-mark longer extract answer",
+          "heading": "Context 2 - Prose (short story)",
           "level": "h2",
           "variant": "tint",
           "items": [
             {
-              "label": "Longer extract, parts (i) to (iv)",
-              "prompt": "From *The Lumber Room* by Saki: \"You often tell me not to, and now I tell you that you may,\" came the voice from the rain-water tank, rather impatiently.\n(i) What is the situation described? (ii) Why does the speaker answer in this way? (iii) Explain \"rather impatiently\" in your own words. (iv) Describe the character revealed here.",
+              "label": "5 marks: 1 + 1 + 1 + 2",
+              "prompt": "\"...but for some days past he had practised with the key of the schoolroom door... he did not believe in trusting too much to luck and accident\"\n(a) From which work are these lines taken? Name the author. (01 mark)\n(b) Who is referred to as 'he' in these lines? (01 mark)\n(c) What characteristics are expressed about 'he' in these lines? (01 mark)\n(d) Briefly explain the significance of these lines to the prose from which they are taken. (02 marks)",
               "sample": [
-                "**(i)** The aunt has fallen into the rain-water tank in the gooseberry garden and is calling to Nicholas to fetch a ladder. Nicholas pretends not to believe that she is his aunt, since she has forbidden him to enter the garden. **(2 marks)**",
-                "**(ii)** She had told him he was not allowed into the garden, so by her own rule he must not come. He uses her own instruction against her, and enjoys doing so. **(2 marks)**",
-                "**(iii)** Showing slight annoyance; sounding a little irritated at having to explain herself. **(2 marks)**",
-                "**(iv)** Nicholas is intelligent, quick-witted and calculating. He is in control of the situation and turns his punishment to his own advantage, showing self-possession beyond his years and a certain lack of pity. **(4 marks)**"
+                "**(a)** *The Lumber Room.* Saki (H. H. Munro). **(1)**",
+                "**(b)** Nicholas. **(1)**",
+                "**(c)** He is careful, patient and calculating; he plans ahead. **(1)**",
+                "**(d)** The lines show that Nicholas's entry into the lumber room is not a lucky accident but the result of days of preparation. This is significant because it explains how a small boy is able to outwit his aunt throughout the story: his success comes from planning, not from chance, and the whole plot depends on it. **(2)**"
               ],
               "notes": [
-                "**Each part is answered to its own mark value.** Two marks gets two points; four marks gets a fuller answer of three or four descriptive terms with support.",
-                "**\"In your own words\" means exactly that.** Part (iii) must not repeat the phrase from the passage. Candidates who write *she was rather impatient* score nothing, because nothing has been explained.",
-                "**Character parts want a list of qualities, not a story.** Part (iv) names four qualities. Retelling what Nicholas did earns no marks that naming his cleverness would not have earned faster.",
-                "**Numbering matters.** Answer (i), (ii), (iii), (iv) under those numbers. An undivided paragraph containing all four answers makes the examiner hunt for them, and marks get missed.",
-                "*The Lumber Room* is out of copyright, so it can be quoted here in full safety."
+                "**(a) - give the author's pen name and real name if you know both.** *Saki* alone is accepted; *Saki (H. H. Munro)* is safer.",
+                "**(c) asks for characteristics - so give adjectives.** Three short ones earn the mark more reliably than one, because the scheme lists several acceptable words and you only need to hit one.",
+                "**(d) is the two-mark part, and 'significance' means 'why it matters to the whole story'** - not what the lines say. An answer that paraphrases the quotation scores nothing here.",
+                "The two marks are earned by two moves: **what the detail shows** (preparation, not luck) and **why that matters** (it explains how he beats the aunt)."
               ]
             }
           ]
         },
         {
           "type": "model",
-          "heading": "Model 3 - a 15-mark essay answer",
+          "heading": "Context 3 - Drama",
           "level": "h2",
           "items": [
             {
-              "label": "Essay, 15 marks",
-              "prompt": "In *The Lumber Room*, despite ill-treatment, Nicholas remains happy. Support your answer with examples from the text.",
+              "label": "5 marks: 1 + 1 + 1 + 2",
+              "prompt": "\"I've locked myself in, and will be true to you till the grave, and you... aren't you ashamed, you bad child?\"\n(a) Name the play from which these lines are taken. Name the writer. (01 mark)\n(b) To whom does the speaker say these lines? (01 mark)\n(c) What is meant by \"I've locked myself in\"? (01 mark)\n(d) Briefly describe the speaker's character as presented in these lines. (02 marks)",
               "sample": [
-                "Nicholas remains happy throughout the story, and he does so because he is never actually in the position of victim that his aunt believes him to be in. From the first incident he is in control of the action, and the ill-treatment she designs for him becomes the opportunity he wanted.",
-                "The aunt's treatment of him is genuinely unkind. She excludes him from the expedition to Jagborough as a punishment, forbids him the gooseberry garden, and sets herself to guard it for the afternoon. Her intention is that he should feel his exclusion.",
-                "Nicholas, however, has planned for this. He pretends that he wishes to enter the gooseberry garden, knowing that the aunt will then station herself there to prevent him. Having drawn her outside, he is left free to enter the lumber room, which is what he wanted from the beginning. His punishment is therefore what gives him his opportunity, and he arranges it himself.",
-                "Inside the lumber room his happiness is real and not merely triumphant. The tapestry of the huntsman and the stag holds him because he can imagine into it: he wonders whether the four wolves will attack the man or the stag, and invents the rest of the story for himself. His creativity, imagination and taste keep him happy in a room the aunt regards as a place of dust and punishment.",
-                "When the aunt falls into the rain-water tank, he completes his victory in a very controlled manner. He refuses to fetch the ladder on the grounds that she herself forbade him the garden, and he does so calmly, using her own rule against her. He is not punished for this; instead he has effectively punished her.",
-                "The contrast at the end makes the point plainly. Nicholas sits at tea, still thinking about the huntsman and the stag, while the aunt is silent and depressed. He is happy because he has out-thought a dull-witted and unimaginative adult, and because he possesses something she does not: an imagination that can make any room, even a locked one, interesting."
+                "**(a)** *The Bear.* Anton Chekhov. **(1)**",
+                "**(b)** To her dead husband, Nicolai Mihailovitch, whose portrait she is addressing. **(1)**",
+                "**(c)** That she has shut herself away from society and refuses to leave the house or see anyone since her husband's death. **(1)**",
+                "**(d)** Popova is presented as dramatic and self-consciously devoted, making a public performance of her mourning; and at the same time reproachful and self-righteous, since she scolds her dead husband for his unfaithfulness even while vowing to be true to him. The contradiction makes her faithfulness look more like pride than grief. **(2)**"
               ],
               "notes": [
-                "**It answers the exact statement.** The question offers a proposition - *despite ill-treatment, Nicholas remains happy* - and the essay agrees with it and explains why, rather than writing generally about the story.",
-                "**Textual evidence in every paragraph.** The marking scheme for this paper lists indicative points and then requires textual evidence for them. Jagborough, the gooseberry garden, the tapestry, the rain-water tank, the tea table: five specific references.",
-                "**It covers the points a scheme would list** - his confidence and creativity, the aunt's cruelty, his manipulation of her, his enjoyment inside the room, his lack of punishment, the contrasted moods at the end - but in connected prose, not as a list.",
-                "**No retelling.** The plot appears only where it is evidence for a claim. An answer that narrates the story from beginning to end will not score well however accurate it is.",
-                "**Length is realistic.** Six short paragraphs, about 380 words. You have four of these to write plus Question 1, so an essay of this size is what the time actually allows.",
-                "**Present tense throughout** for what happens in the text: *he pretends*, *the aunt falls*, *he refuses*."
+                "**(b) is the trap in drama extracts.** The words are spoken aloud, but not to another living character. Candidates who answer *to Luka* or *to Smirnov* lose an easy mark.",
+                "**(c) asks what a phrase means, not what it symbolises.** Give the literal sense - she has shut herself indoors - in one sentence.",
+                "**(d) is worth two, so give two qualities that pull against each other.** *Devoted* on its own is thin; *devoted yet reproachful* shows you have read the line rather than remembered the character.",
+                "In *The Bear*, almost every extract rewards noticing the gap between what Popova says and what she does. Look for it."
               ]
             }
           ]
         },
         {
+          "type": "model",
+          "heading": "Context 4 - Section B, the novel extract",
+          "level": "h2",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "10 marks: 2 + 2 + (1 + 1) + 4",
+              "prompt": "From *The Prince and the Pauper*: the Recognition Procession, in which Tom Canty, riding as king, sees his mother in the crowd, denies her, and is then overwhelmed with shame.\n(i) When and where does the incident take place? (02 marks)\n(ii) Briefly describe the speaker's emotions presented in the passage. (02 marks)\n(iii) Explain the meaning of these phrases as used in the extract: (a) \"his senses swam in a delirium of pleasure\" (01 mark) (b) \"withered his stolen royalty\" (01 mark)\n(iv) Comment briefly on the significant theme or themes represented in the passage. (04 marks)",
+              "sample": [
+                "**(i)** During the Recognition Procession through the City of London, on the day before the coronation, while Tom Canty is riding through the streets as king. **(2)**",
+                "**(ii)** At first he is excited, proud and intoxicated by the crowd's attention. When he recognises his mother he feels shock and panic, and after the guard strikes her away he feels shame, guilt and worthlessness, so that his grandeur means nothing to him. **(2)**",
+                "**(iii) (a)** He was dizzy with delight; the excitement was so great that he could hardly think clearly. **(1)**",
+                "**(iii) (b)** His royal position, which was not truly his, lost all its value and pride in that moment. **(1)**",
+                "**(iv)** Several themes come together here.",
+                "**Appearance and reality:** Tom wears the outward show of kingship but is not a king, and the passage strips the show away in an instant.",
+                "**Identity:** the involuntary gesture of his hand betrays who he really is, showing that identity cannot be put on and off with clothing.",
+                "**Guilt and conscience:** his denial of his mother is the moral centre of the passage, and his shame shows that his conscience is not corrupted by his new position.",
+                "**Class and power:** the officer's casual violence towards a poor woman shows how the powerless are treated, and Tom, who has just come from that class, can do nothing to stop it. **(4)**"
+              ],
+              "notes": [
+                "**(i) asks for two things - when AND where - so give both.** Two marks, two pieces of information. *In London* alone is half an answer.",
+                "**(ii) is a sequence, not a single feeling.** The emotions change inside the passage: pride, then shock, then shame. Tracking the change is what earns both marks.",
+                "**(iii) tests whether you can put an image into plain English.** Do not repeat the phrase and do not analyse it. *Delirium of pleasure* becomes *dizzy with delight*. One mark each, one sentence each.",
+                "**(iv) is worth four marks and is the only part of Paper I where you write at length.** Name several themes, label them, and attach each to something in the passage. Four separate labelled points is the safest shape - it is easy to mark and hard to miss.",
+                "**Do not retell the extract.** The examiner has just read it. Every sentence must add a theme or explain one."
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "Paper II: the essay questions",
+          "level": "h2",
+          "text": [
+            "Paper II is answered in a separate booklet. You answer **one essay from each genre section** - Poetry, Drama, Prose and Fiction - each worth **15 marks**.",
+            "The marking scheme for these does not print a model essay. It prints a **list of indicative points**, and then says that candidates are expected to provide **textual evidence** for them, and that an answer arguing the opposite case is equally acceptable if it is supported. That tells you exactly what an answer needs: a position, several developed points, and evidence for each."
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 1 - Poetry",
+          "level": "h2",
+          "items": [
+            {
+              "label": "15 marks",
+              "prompt": "Discuss Emily Dickinson's *A Bird Came Down the Walk* as a minute observation of nature.",
+              "sample": [
+                "Dickinson's poem is built almost entirely out of close watching. The speaker does not tell us that nature is beautiful; she records exactly what one bird does over the space of a minute, and the beauty and the strangeness both come out of the accuracy of that record.",
+                "The observation begins with something most poets would leave out. The bird \"bit an Angleworm in halves / And ate the fellow, raw\". This is not a decorative image of nature but a small act of violence, noticed and reported without comment. By refusing to soften it, Dickinson establishes that she is watching rather than admiring.",
+                "The detail then becomes finer still. The bird drinks \"a Dew / From a convenient Grass\", hops sideways to let a beetle pass, and glances about with eyes that \"looked like frightened Beads\". Each of these is something that can only be seen by someone standing very still and very close. The simile of the beads is exact: it captures the roundness, the hardness and the quick shine of a bird's eye in three words.",
+                "The description also gives the bird a character. It is cautious - it \"stirred his velvet head / Like one in danger\" - and it is self-possessed, refusing the crumb the speaker offers and leaving on its own terms. Dickinson observes behaviour closely enough to infer a temperament from it, which is what raises the poem above simple description.",
+                "The final stanza changes the scale without breaking the method. The bird's flight is compared to oars dividing the ocean and to butterflies leaping \"off Banks of Noon\", and the movement becomes silent, smooth and enormous. The observation has not stopped; it has simply followed the bird out of the small world of the garden path into the air.",
+                "The poem is therefore a minute observation in both senses of the word: it covers about a minute of a bird's life, and it records that minute in very small detail. What Dickinson demonstrates is that close attention is itself a way of understanding nature - the bird is never explained, only watched, and the watching is enough."
+              ],
+              "notes": [
+                "**It answers the exact wording.** The question says *minute observation*, and the essay keeps returning to the closeness of the watching rather than writing generally about nature poetry.",
+                "**Quotations are short and frequent** - five of them, none longer than a line. The scheme requires textual evidence, and short quotations let you use more of them.",
+                "**Each paragraph makes one point and develops it:** the unsoftened violence, the fineness of detail, the inferred character, the change of scale.",
+                "**The last paragraph does something extra.** It picks up the double meaning of *minute* - the question's own word - which is the kind of touch that separates a good answer from a routine one.",
+                "**About 400 words, six short paragraphs.** You have four of these to write, so this is the realistic size."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 2 - Prose",
+          "level": "h2",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "15 marks",
+              "prompt": "In *The Lumber Room*, despite ill-treatment, Nicholas remains happy. Support your answer with examples from the text.",
+              "sample": [
+                "Nicholas is happy throughout the story, and he is happy because he is never really the victim his aunt believes him to be. She designs a punishment for him; he uses it as the opportunity he had been waiting for.",
+                "The ill-treatment is real enough. The aunt excludes him from the trip to Jagborough as a punishment for the affair of the frog in his bread-and-milk, forbids him the gooseberry garden, and appoints herself its guard for the afternoon. Her purpose is that he should feel shut out while the other children enjoy themselves.",
+                "But Nicholas has prepared. He had \"practised with the key of the schoolroom door\" for some days, because he \"did not believe in trusting too much to luck and accident\". He then pretends to want the gooseberry garden, knowing the aunt will post herself there, and so draws her out of the house. His punishment is what frees him, and he has arranged it himself.",
+                "His happiness inside the lumber room is genuine rather than merely triumphant. The tapestry of the huntsman and the stag absorbs him completely: he wonders whether the four wolves will attack the man or the stag, and constructs the rest of the story for himself. It is his imagination, not his victory over his aunt, that makes the afternoon a pleasure.",
+                "When the aunt falls into the rain-water tank, he finishes the business calmly. He refuses to fetch the ladder on the ground that she herself had forbidden him the garden, and tells her that the Evil One is speaking, since he was taught she would never tell him an untruth. He is not punished for any of it.",
+                "The contrast at tea makes the point. Nicholas sits silent, still thinking about the huntsman and the stag, while the aunt sits in \"frozen muteness\". He remains happy because he possesses two things she does not: a plan, and an imagination that can make a locked and dusty room the most interesting place in the house."
+              ],
+              "notes": [
+                "**It agrees with the statement and explains the mechanism.** The question offers a proposition; a good answer says why it is true, not merely that it is.",
+                "**Six specific references** - the frog, Jagborough, the practised key, the tapestry, the rain-water tank, the tea table. The scheme asks for textual evidence and this is what that means.",
+                "**Two quotations only, both short.** At O/L you do not need many, but you do need the right ones.",
+                "**The plot appears only as evidence.** There is no retelling. This is the commonest reason good candidates score in the middle band.",
+                "**Present tense throughout**, and the final sentence answers the question directly rather than summarising the paragraphs."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 3 - Drama",
+          "level": "h2",
+          "items": [
+            {
+              "label": "15 marks",
+              "prompt": "Both Smirnov and Popova in *The Bear* have similar characteristics. Do you agree? Support your answer with detailed reference to the play.",
+              "sample": [
+                "I agree. Chekhov sets Smirnov and Popova against each other as opposites - a rude creditor and a grieving widow - but the comedy depends on the audience gradually seeing how alike they are, and the ending only works because they are.",
+                "Both are theatrical about their own feelings. Popova announces that she has shut herself in and will be true to her husband \"till the grave\", and says so to his portrait, with the servant listening. Smirnov announces his own woes just as loudly, declaring how many women have wronged him and how he has finished with them for ever. Neither is content to feel something privately.",
+                "Both are also proud to the point of absurdity. Popova will not receive a visitor because it would break the performance of her mourning; Smirnov will not leave without his money because leaving would look like a defeat. The whole quarrel continues past the point of sense because neither will be the first to give way.",
+                "Their tempers are the clearest similarity. Popova, who has spent the play presenting herself as broken and gentle, accepts the challenge to a duel without hesitation and demands pistols; the woman who could not bear to see anyone is suddenly ready to shoot a stranger in her own garden. Smirnov's admiration at that moment - he calls her a woman he can respect - is the first honest thing either of them says.",
+                "Both, finally, change their declared positions completely within a single scene. Popova has sworn lifelong fidelity to a dead husband who, as she herself admits, was unfaithful to her; Smirnov has sworn never to fall in love again. Within minutes of the duel both vows are abandoned, and the speed of the reversal shows that neither belief was as fixed as its owner claimed.",
+                "The similarity is therefore the point of the play. Two people who insist loudly on incompatible principles turn out to share the same temperament - impulsive, proud, and more interested in the drama of their own feelings than in the feelings themselves - and it is precisely this likeness that makes the ending believable rather than absurd."
+              ],
+              "notes": [
+                "**The question says *do you agree*, so the first word of the answer is a position.** An essay that lists similarities without ever agreeing has not answered.",
+                "**Each paragraph takes one shared characteristic** - theatricality, pride, temper, changeability - and shows it in both characters. Never write about one character and then the other.",
+                "**The marking scheme accepts a refutation too**, provided evidence is given. If you argue that they are different, you must support it as fully as this supports the agreement.",
+                "**The last paragraph explains why the similarity matters** to the play as a whole. Fifteen-mark answers that end with a judgement rather than a summary read as complete."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Essay 4 - Fiction (the novel)",
+          "level": "h2",
+          "variant": "tint",
+          "items": [
+            {
+              "label": "15 marks",
+              "prompt": "What challenges do Edward Tudor and Tom Canty face in *The Prince and the Pauper* when they change their identities? Support your answer with examples from the text.",
+              "sample": [
+                "When the two boys exchange clothes they discover that identity is not simply a matter of appearance, and each faces a different kind of difficulty: Tom must learn to perform a role he does not understand, while Edward must survive in a world that will not believe him.",
+                "Tom's first challenge is ignorance of court custom. He does not know the ceremonies of the dining table, the order of precedence, or how to behave towards courtiers and servants, and every small mistake risks exposure. He is also frightened of being discovered and punished as an impostor, so he must conceal his terror while appearing to command.",
+                "His deeper challenge is moral rather than practical. He is asked to judge the accused - among them a woman and her daughters condemned to burn - and must decide questions of life and death with no training and no authority he believes in. His success in saving them shows a natural justice that the court has lost, but it costs him great fear.",
+                "Tom's hardest moment, however, is personal. When his mother recognises him in the Recognition Procession, he denies her: \"I do not know you, woman!\" The shame that follows withers what the narrator calls his \"stolen royalty\", and shows that the challenge of a false identity is not only being found out but what one becomes while keeping it up.",
+                "Edward's challenges are physical and constant. He is beaten by John Canty, forced among robbers and beggars, made to endure the hermit who intends to kill him, and treated cruelly at Hendon Hall and in prison. Above all, nobody believes him: the more insistently he declares himself king, the madder he appears, and his rank becomes the very reason he is mocked.",
+                "Yet his ordeal is also his education. Because no one takes him for a prince, he sees the cruelty of the law, the treatment of the poor and the conditions of the prisons as no king could otherwise have seen them, and it is this knowledge that later makes him a merciful ruler.",
+                "The challenges therefore mirror each other. Tom must learn to be believed when he is not the king; Edward must be disbelieved although he is. Both find that identity depends far more on what others are willing to accept than on what a person truly is - and both are changed by the discovery."
+              ],
+              "notes": [
+                "**The question asks about both characters, so the essay is organised in two halves with a linking conclusion.** Answering only about Edward, or only about Tom, halves the marks available.",
+                "**Within each half the challenges are ranked** - practical, then moral, then personal for Tom; physical, then the disbelief, then the education for Edward. Ranking shows control of the material.",
+                "**Concrete examples throughout:** the dining table, the condemned women, the Recognition Procession, John Canty, the hermit, Hendon Hall, the prison. The scheme lists points of exactly this kind and expects them to be evidenced.",
+                "**The conclusion finds the pattern** rather than repeating the list: the two experiences are inversions of each other. That single observation is worth more than another paragraph of examples."
+              ]
+            }
+          ]
+        },
+
+        {
           "type": "dodont",
-          "heading": "Format rules that come straight from the marking scheme",
+          "heading": "Common pitfalls",
           "level": "h2",
           "do": [
-            "Label your answers (a), (b), (c) or (i) to (iv) exactly as the question does.",
-            "Give the number of points the marks ask for - two marks, two points.",
-            "Name the text and the author in full for the identification mark.",
-            "Use short quotations or close references as evidence in 15-mark answers.",
-            "Answer five questions: Question 1, then one each from Poetry, Drama, Prose and Fiction."
+            "Label every part exactly as the paper does: (a), (b), (c), (d) or (i) to (iv).",
+            "Give the number of points the marks ask for - one mark, one phrase; two marks, two ideas.",
+            "Name both the work and the writer in the identification part, every time.",
+            "Answer all six Section A extracts - Section A has no choice in it.",
+            "Choose your Section B novel before you start writing, and read all its parts first."
           ],
           "dont": [
-            "Write a paragraph for a one-mark identification.",
-            "Repeat the words of the passage when asked to explain in your own words.",
-            "Retell the plot in a 15-mark essay.",
-            "Answer two questions from one section and none from another - the rubric requires one from each.",
-            "Reproduce a memorised answer that does not fit the question asked."
+            "Write a paragraph for a one-mark part. Eighteen of Paper I's forty marks are one-mark parts.",
+            "Repeat the words of the extract when asked to explain a phrase in your own words.",
+            "Retell the story in a 15-mark essay - the examiner knows it.",
+            "Answer two questions from one genre section in Paper II and none from another.",
+            "Leave any part blank. There is no penalty for a wrong answer, so a guess costs nothing."
           ]
         },
         {
           "type": "prose",
-          "heading": "How to use a model answer properly",
+          "heading": "Language tips",
+          "level": "h2",
+          "text": ["Marking schemes for this subject accept several wordings, but they cannot give marks for an answer they cannot follow. These habits cost nothing and protect marks."],
+          "bullets": [
+            "**Write about the text in the present tense.** *Nicholas hides in the lumber room*, not *hid*. Slipping between tenses is the commonest language fault in Literature scripts.",
+            "**Name characters and works exactly.** *Popova*, not *the woman*; *The Bear*, not *the drama we studied*. Underline or italicise titles if you can.",
+            "**Use short quotations, and put them in quotation marks.** Three or four words is usually enough, and a short accurate quotation is worth far more than a long approximate one.",
+            "**Do not begin an essay with a definition.** *Literature is a mirror of society* earns nothing. Begin with your position on the question asked.",
+            "**Avoid absolute claims you cannot support** - *everyone agrees*, *this proves*. *This suggests* and *this shows* are safer and just as strong.",
+            "**Keep sentences short when the idea is complicated.** A clear simple sentence always outscores a tangled long one."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Organisation tips",
           "level": "h2",
           "numbered": [
-            "Read the question and plan your own answer for five minutes before reading the model.",
-            "Check the mark value first, and decide the shape your answer should take.",
-            "Read the model once for the argument. What position does it take?",
-            "Read the notes and see how many of the points you had spotted.",
-            "Cover the model and write your own answer to the same question, to time.",
-            "Compare, and identify **one** thing to change next time."
+            "**Use the ten minutes of additional reading time properly.** Read the whole paper, choose your Section B extract, and decide which essay you will answer in each genre before the three hours begin.",
+            "**Do Section A first and fast.** Six extracts at about eight minutes each leaves twenty minutes for Section B and protects the essay time.",
+            "**Plan each essay in two minutes.** Three or four points, each with the example you will use. An essay planned in two minutes is written in twenty; an unplanned one takes thirty and repeats itself.",
+            "**One idea to a paragraph.** Start with the point, then the example, then what it shows. Four such paragraphs plus an opening position and a closing judgement is a complete 15-mark answer.",
+            "**Keep to the same order as the paper** so the examiner can find your answers, and number them clearly.",
+            "**Leave five minutes at the end** to check tenses, titles and names - the cheapest marks on the paper."
           ]
         },
         {
