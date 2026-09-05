@@ -69,16 +69,17 @@
           "caption": "Unofficial original RCF practice material, written in the format of the current specification. Not examination papers.",
           "columns": ["Paper", "Type", "Modelled on", "Format", "Open"],
           "rows": [
+            ["RCF Model Paper 1", "RCF original model paper", "Pearson Edexcel GCSE English Language 1EN0, Paper 1", "1 hour 45 minutes, 64 marks, one 19th-century fiction extract and an imaginative writing task", "[Question paper](global-english/gcse/edexcel/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/edexcel/papers/rcf-model-paper-1-mark-scheme/)"],
             ["RCF Model Paper 2", "RCF original model paper", "Pearson Edexcel GCSE English Language 1EN0, Paper 2", "2 hours 5 minutes, 96 marks, two unseen non-fiction texts and a transactional writing task", "[Question paper](global-english/gcse/edexcel/papers/rcf-model-paper-2/) and [marking guide](global-english/gcse/edexcel/papers/rcf-model-paper-2-mark-scheme/)"]
           ]
         },
         {
           "type": "callout",
           "style": "note",
-          "title": "Why Paper 2 first for Edexcel",
+          "title": "Both Edexcel papers now have a model paper",
           "text": [
-            "Paper 2 carries 96 of the 160 marks and 60% of the qualification, and it is the paper with the question type students find hardest - the two-part Question 7. It is the more useful practice paper of the two.",
-            "An Edexcel Paper 1 model paper needs an original 19th-century fiction extract and will follow.",
+            "Paper 2 was built first because it carries 96 of the 160 marks and 60% of the qualification, and because it contains the question type students find hardest - the two-part Question 7.",
+            "There is now also an [Edexcel Paper 1 model paper](global-english/gcse/edexcel/papers/rcf-model-paper-1/), built on an original 19th-century fiction extract, with its own marking guide.",
             "There is also an [AQA Paper 2 model paper](global-english/gcse/aqa/papers/rcf-model-paper-2/), which pairs a 19th-century source with a modern one. That pairing belongs to AQA's format, not Edexcel's - Edexcel puts its 19th-century text on Paper 1."
           ]
         },
