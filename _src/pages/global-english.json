@@ -102,6 +102,13 @@
               "url": "global-english/skills/",
               "more": "Open English Skills",
               "text": ["Reading, writing, grammar and vocabulary, speaking and listening, taught in a way that transfers between examinations."]
+            },
+            {
+              "title": "Edexcel graded curriculum",
+              "icon": "Y1-9",
+              "url": "global-english/edexcel-international-curriculum/",
+              "more": "Open the Edexcel curriculum",
+              "text": ["Pearson's year-by-year English curriculum for international schools, Years 1 to 9, with the Year 6 and Year 9 Achievement Tests. Taught in school rather than examined at the end of two years - and often confused with International GCSE."]
             }
           ]
         },
@@ -280,6 +287,22 @@
             { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "more": "Open", "text": ["How to revise an examination with no set texts, with a six-week plan."] },
             { "title": "Past papers and model papers", "url": "global-english/gcse/aqa/papers/", "more": "Open", "text": ["Official AQA papers, mark schemes and examiner reports, plus the RCF model paper."] },
             { "title": "Practice and model answers", "url": "global-english/gcse/aqa/practice/", "more": "Open", "text": ["Original tasks with model answers, indexed by question."] }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Pearson Edexcel GCSE English Language (1EN0)",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "intro": [
+            "The second board. Edexcel divides the subject differently from AQA: the nineteenth-century text sits on Paper 1 with the fiction, and Paper 2 pairs a twentieth-century non-fiction text with a twenty-first-century one. Every figure below was read from the Edexcel specification, Issue 6."
+          ],
+          "items": [
+            { "title": "Edexcel English Language overview", "url": "global-english/gcse/edexcel/", "more": "Start here", "text": ["Both written papers, the spoken language endorsement, the assessment objectives and how 1EN0 differs from International GCSE 4EA1."] },
+            { "title": "Paper 1: Fiction and Imaginative Writing", "url": "global-english/gcse/edexcel/paper-1/", "more": "Open", "text": ["1EN0/01: a nineteenth-century fiction extract, four reading questions worth 24 marks, and imaginative writing worth 40."] },
+            { "title": "Paper 2: Non-fiction and Transactional Writing", "url": "global-english/gcse/edexcel/paper-2/", "more": "Open", "text": ["1EN0/02: two unseen non-fiction texts, seven reading questions worth 56 marks, and transactional writing worth 40."] },
+            { "title": "Past papers and model papers", "url": "global-english/gcse/edexcel/papers/", "more": "Open", "text": ["Official Pearson papers, mark schemes and exemplar scripts, plus the original RCF Paper 2 model paper."] }
           ]
         },
         {

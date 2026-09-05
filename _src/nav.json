@@ -22,7 +22,11 @@
           { "label": "AQA Paper 1", "url": "global-english/gcse/aqa/paper-1/" },
           { "label": "AQA Paper 2", "url": "global-english/gcse/aqa/paper-2/" },
           { "label": "AQA Past Papers and Model Papers", "url": "global-english/gcse/aqa/papers/" },
-          { "label": "AQA Revision Strategies", "url": "global-english/gcse/aqa/revision/" }
+          { "label": "AQA Revision Strategies", "url": "global-english/gcse/aqa/revision/" },
+          { "label": "Edexcel English Language (1EN0)", "url": "global-english/gcse/edexcel/" },
+          { "label": "Edexcel Paper 1", "url": "global-english/gcse/edexcel/paper-1/" },
+          { "label": "Edexcel Paper 2", "url": "global-english/gcse/edexcel/paper-2/" },
+          { "label": "Edexcel Past Papers and Model Papers", "url": "global-english/gcse/edexcel/papers/" }
         ]},
         { "title": "International GCSE", "links": [
           { "label": "IGCSE English", "url": "global-english/igcse/" },
@@ -34,6 +38,11 @@
         ]},
         { "title": "Cambridge English", "links": [
           { "label": "Cambridge English Qualifications", "url": "global-english/cambridge-english/" }
+        ]},
+        { "title": "Edexcel graded curriculum", "links": [
+          { "label": "iPrimary and iLowerSecondary", "url": "global-english/edexcel-international-curriculum/" },
+          { "label": "iPrimary English (Years 1-6)", "url": "global-english/edexcel-international-curriculum/iprimary/" },
+          { "label": "iLowerSecondary English (Years 7-9)", "url": "global-english/edexcel-international-curriculum/ilowersecondary/" }
         ]},
         { "title": "Skills", "links": [
           { "label": "English Skills", "url": "global-english/skills/" }
@@ -200,7 +209,10 @@
           { "label": "IELTS Reading", "url": "practical-english/ielts/reading/" },
           { "label": "IELTS Writing", "url": "practical-english/ielts/writing/" },
           { "label": "IELTS Graphs and Charts", "url": "practical-english/ielts/graphs/" },
-          { "label": "IELTS Speaking", "url": "practical-english/ielts/speaking/" }
+          { "label": "IELTS Speaking", "url": "practical-english/ielts/speaking/" },
+          { "label": "IELTS Practice Test 1", "url": "practical-english/ielts/practice-test-1/" },
+          { "label": "IELTS Practice Test Answers", "url": "practical-english/ielts/practice-test-1/answers/" },
+          { "label": "10 IELTS Model Essays", "url": "practical-english/ielts/model-essays/" }
         ]}
       ]
     },

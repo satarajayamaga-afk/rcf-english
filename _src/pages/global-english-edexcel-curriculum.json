@@ -1,0 +1,600 @@
+{
+  "_comment": "Pearson Edexcel iPrimary and iLowerSecondary English. EVERY figure here was read from primary sources: the Pearson Edexcel International Award in Primary English specification (JEH11), Issue 1, May 2018, for the iPrimary structure, timings and AO percentages; and the official LEH11/01 question paper P67630A (Summer 2022) for the iLowerSecondary structure, timings and section marks. Curriculum strands come from Pearson's own published iPrimary and iLowerSecondary English Curriculum Overview documents. Nothing is copied from Pearson: figures are facts, and all practice material is original RCF work. Detailed curriculum objectives are released only to subscribing centres and are NOT reproduced here.",
+
+  "pages": [
+    {
+      "slug": "global-english/edexcel-international-curriculum",
+      "title": "Edexcel iPrimary and iLowerSecondary English",
+      "metaTitle": "Edexcel iPrimary and iLowerSecondary English: Years 1 to 9 Guide | RCF English",
+      "description": "A guide to Pearson Edexcel iPrimary English (JEH11) and iLowerSecondary English (LEH11): the year-by-year curriculum, the Year 6 and Year 9 Achievement Tests, and how to prepare.",
+      "keywords": "Edexcel iPrimary English, iLowerSecondary English, JEH11, LEH11, Edexcel Year 6 Achievement Test, Edexcel Year 9 English test, Edexcel international primary curriculum",
+      "kicker": "Global English",
+      "kind": "page",
+      "schema": "Course",
+      "resourceType": "guide",
+      "educationalLevel": "Primary and lower secondary",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" }
+      ],
+      "backTo": { "label": "Global English", "url": "global-english/" },
+      "hero": {
+        "text": "Pearson's year-by-year English curriculum for international schools, from Year 1 to Year 9, and the two external tests that sit at the end of each stage.",
+        "buttons": [
+          { "label": "iPrimary: Years 1 to 6", "url": "global-english/edexcel-international-curriculum/iprimary/", "style": "btn--accent" },
+          { "label": "iLowerSecondary: Years 7 to 9", "url": "global-english/edexcel-international-curriculum/ilowersecondary/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "This is a curriculum, not a single examination",
+          "text": [
+            "Parents often say *my child does Edexcel* and mean one of several quite different things. The Edexcel **graded curriculum** described on these pages runs year by year from Year 1 to Year 9 and is taught in school; it is not the same as an International GCSE, which is a two-year qualification taken at the end of Year 11.",
+            "There are external tests, but only **two** in nine years: one at the end of Year 6 and one at the end of Year 9. Everything between them is taught and assessed inside the school."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The two stages at a glance",
+          "level": "h2",
+          "caption": "All figures read from the Pearson Edexcel International Award in Primary English specification (JEH11, Issue 1, May 2018) and from the official LEH11/01 question paper (Summer 2022).",
+          "columns": ["", "iPrimary English", "iLowerSecondary English"],
+          "rows": [
+            ["Full qualification title", "Pearson Edexcel International Award in Primary English", "Pearson Edexcel International Award in Lower Secondary English"],
+            ["Specification code", "**JEH11**", "**LEH11**"],
+            ["Paper code", "JEH11/01", "LEH11/01"],
+            ["Year groups", "Years 1 to 6", "Years 7 to 9"],
+            ["First teaching / first assessment", "2018 / June 2019", "2018 / 2019"],
+            ["External test taken at the end of", "Year 6", "Year 9"],
+            ["Time allowed", "1 hour 30 minutes", "1 hour 45 minutes"],
+            ["Total marks", "60", "70"],
+            ["Texts", "Two, on a theme: one non-fiction, one fiction. **Pre-released** at least four weeks before the test.", "Three, on a theme: two non-fiction, one fiction. **Unseen**, in a Source Booklet with the paper."],
+            ["Dictionaries", "Not allowed", "Not allowed"],
+            ["Curriculum strands", "Three: Spoken Language, Reading, Writing", "Two: Reading and Writing, with Speaking and Listening woven through both"],
+            ["Progresses to", "iLowerSecondary English", "International GCSE English, from Year 10"],
+            ["Full guide", "[iPrimary English](global-english/edexcel-international-curriculum/iprimary/)", "[iLowerSecondary English](global-english/edexcel-international-curriculum/ilowersecondary/)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The one difference that changes how you prepare",
+          "text": [
+            "**iPrimary texts are pre-released.** The two Year 6 texts are published by Pearson at least four weeks before the test, and Pearson's own guidance recommends that schools spend around two weeks of lesson time - eight to ten hours - working on them. A Year 6 child who has not seen the texts before test day is at a serious and entirely avoidable disadvantage.",
+            "**iLowerSecondary texts are unseen.** The three Year 9 texts arrive in a Source Booklet with the paper. Preparation therefore has to be about method rather than about content.",
+            "Parents moving a child between schools should check which stage their child is in and whether the school has downloaded the pre-release."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "How this guide handles Pearson's material",
+          "text": [
+            "**Facts are stated; documents are linked, never copied.** Codes, timings, mark totals and assessment-objective weightings are facts about the qualification and are given here with their source. Pearson's curriculum documents, schemes of work, past papers and mark schemes belong to Pearson and are not reproduced on this site.",
+            "**The detailed year-by-year learning objectives are not published here.** Pearson releases the full curriculum only to subscribing centres, and it is theirs to release. What follows is the published structure, plus RCF English's own guidance and original practice material.",
+            "**RCF English is not affiliated with, endorsed by or approved by Pearson Edexcel.**"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Official Pearson pages",
+          "level": "h2",
+          "caption": "Every link opens an official Pearson page. Past papers and mark schemes for both tests are published on the qualification pages.",
+          "columns": ["What", "Official source"],
+          "rows": [
+            ["iPrimary curriculum, all subjects", "[Pearson Edexcel iPrimary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum.html)"],
+            ["iPrimary English (2018), JEH11 - specification and materials", "[iPrimary Curriculum English (2018)](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/english-2018.html)"],
+            ["iLowerSecondary curriculum, all subjects", "[Pearson Edexcel iLowerSecondary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum.html)"],
+            ["iLowerSecondary English (2018), LEH11 - specification and materials", "[International Lower Secondary Curriculum - English](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum/english-2018.html)"],
+            ["About the international primary curriculum", "[About the Edexcel International Primary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/about.html)"]
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The two stages in full",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "iPrimary English: Years 1 to 6",
+              "url": "global-english/edexcel-international-curriculum/iprimary/",
+              "more": "Open the guide",
+              "text": ["The three strands and all fourteen sub-strands, the JEH11/01 test section by section, the assessment objectives with their exact weightings, and how to use the pre-release properly."],
+              "bullets": ["60 marks in 1 hour 30 minutes", "Reading 30, Grammar and punctuation 15, Writing 15", "Original RCF practice material"]
+            },
+            {
+              "title": "iLowerSecondary English: Years 7 to 9",
+              "url": "global-english/edexcel-international-curriculum/ilowersecondary/",
+              "more": "Open the guide",
+              "text": ["The two strands and their sub-strands, the LEH11/01 test verified from an official paper, and a method for handling three unseen texts in seventy minutes."],
+              "bullets": ["70 marks in 1 hour 45 minutes", "Reading 40, Writing 30", "Original RCF practice material"]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Common questions",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "Is the Edexcel iPrimary curriculum the same as an International GCSE?",
+              "a": [
+                "No. iPrimary covers Years 1 to 6 and iLowerSecondary covers Years 7 to 9. International GCSE is a separate two-year qualification taken in Years 10 and 11.",
+                "The three are designed to run into one another - iPrimary prepares for iLowerSecondary, which prepares for International GCSE English, either as a first language or as a second language - but they are different qualifications with different codes and different examinations."
+              ]
+            },
+            {
+              "q": "Who is the Edexcel iPrimary English curriculum designed for?",
+              "a": [
+                "Pearson states that it is designed for students who are **not** native speakers of English but who study most of their other subjects in English. It combines approaches from a first-language English curriculum with the progression and scaffolding that English-as-an-additional-language learners need.",
+                "This matters for parents choosing a school in a country such as Sri Lanka: the curriculum assumes English is the medium of instruction, not the home language."
+              ]
+            },
+            {
+              "q": "How many external examinations are there between Year 1 and Year 9?",
+              "a": [
+                "Two: the Year 6 Achievement Test (JEH11/01) and the Year 9 Achievement Test (LEH11/01).",
+                "Schools also use internal Progress Tests in other years, but those are set and marked within the school rather than externally certificated."
+              ]
+            },
+            {
+              "q": "Can I download the full curriculum objectives?",
+              "a": [
+                "Only through a subscribing school. Pearson publishes free overview documents describing the strands and giving sample objectives, and it publishes the specification, past papers and mark schemes openly. The complete year-by-year curriculum, schemes of work and lesson plans are released to centres that subscribe to the programme.",
+                "This site does not reproduce them. If you need them, ask your child's school, which will have them if it is registered."
+              ]
+            },
+            {
+              "q": "Where can I find past papers for the Year 9 test?",
+              "a": [
+                "On the [official iLowerSecondary English page](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum/english-2018.html), where Pearson publishes question papers and mark schemes for past series.",
+                "Use the mark schemes rather than only the papers. A Year 9 student who reads how the 30-mark writing task is actually marked will gain more than one who does another paper unmarked."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "iPrimary English", "url": "global-english/edexcel-international-curriculum/iprimary/", "text": ["Years 1 to 6 in full."] },
+            { "title": "iLowerSecondary English", "url": "global-english/edexcel-international-curriculum/ilowersecondary/", "text": ["Years 7 to 9 in full."] },
+            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["What comes next, from Year 10."] },
+            { "title": "Global English overview", "url": "global-english/", "text": ["Every international English qualification covered here."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/edexcel-international-curriculum/iprimary",
+      "title": "Edexcel iPrimary English: Years 1 to 6",
+      "metaTitle": "Edexcel iPrimary English JEH11: Curriculum and Year 6 Test | RCF English",
+      "description": "Pearson Edexcel iPrimary English (JEH11) explained: the three curriculum strands, the Year 6 Achievement Test section by section, assessment objectives and practice material.",
+      "keywords": "iPrimary English JEH11, Edexcel Year 6 Achievement Test English, iPrimary English curriculum strands, Edexcel primary English pre-release texts",
+      "kicker": "Edexcel graded curriculum",
+      "kind": "page",
+      "schema": "Course",
+      "resourceType": "guide",
+      "educationalLevel": "Primary",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" }
+      ],
+      "backTo": { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" },
+      "hero": {
+        "text": "Six years of curriculum, three strands, and one external test at the end of it - taken on two texts the school has already had for a month."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Sources for the figures on this page",
+          "text": [
+            "Every figure below was read from the **Pearson Edexcel International Award in Primary English specification (JEH11), Issue 1, May 2018**, and from Pearson's published iPrimary English Curriculum Overview.",
+            "Pearson's documents are linked, not copied. The detailed year-by-year learning objectives are released to subscribing centres and are not reproduced here.",
+            "RCF English is not affiliated with, endorsed by or approved by Pearson Edexcel."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The qualification at a glance",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Field", "Detail"],
+          "rows": [
+            ["Full title", "Pearson Edexcel International Award in Primary English"],
+            ["Specification code", "JEH11"],
+            ["Paper code", "JEH11/01"],
+            ["Assessment", "One externally-set achievement test"],
+            ["Time allowed", "1 hour 30 minutes"],
+            ["Total marks", "60"],
+            ["Availability", "June"],
+            ["First teaching / first assessment", "September 2018 / June 2019"],
+            ["Dictionaries", "Not allowed"],
+            ["Year groups taught", "Years 1 to 6"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The curriculum: three strands",
+          "level": "h2",
+          "text": [
+            "The iPrimary English curriculum is organised into six year groups, each building on the last. It contains **three main strands**, each divided into sub-strands. The strand names below are Pearson's; the commentary on each is RCF English's own."
+          ],
+          "parts": [
+            {
+              "heading": "1. Spoken Language",
+              "level": "h3",
+              "text": ["Two sub-strands. This strand is not directly examined in the Year 6 test, which is written - but it underpins both of the others, and schools that treat it as optional tend to produce children who read accurately and write thinly."],
+              "bullets": [
+                "**Receptive Language** - listening, following and understanding.",
+                "**Expressive Language** - speaking, explaining, discussing and presenting."
+              ]
+            },
+            {
+              "heading": "2. Reading",
+              "level": "h3",
+              "text": ["Six sub-strands, one of which stops after Year 3. This is the largest strand and it carries half of the marks in the Year 6 test."],
+              "bullets": [
+                "**Word Reading and Phonics** (up to Year 3) - decoding, letter-sound relationships, blending.",
+                "**Word Reading and Accuracy** - reading unfamiliar words correctly and fluently.",
+                "**Literal Comprehension** - finding information that is actually stated.",
+                "**Inferential Comprehension** - working out what is implied but not said. This is where most marks are won and lost.",
+                "**Text Structure and Purpose** - how a text is organised, and why.",
+                "**Grammar for Reading** - using grammatical knowledge to understand meaning."
+              ]
+            },
+            {
+              "heading": "3. Writing",
+              "level": "h3",
+              "text": ["Six sub-strands. Note how much of this strand is technical accuracy rather than composition - which matches the test, where grammar, punctuation and spelling carry a quarter of the total mark on their own."],
+              "bullets": [
+                "**Transcription and Phonics** - spelling and the sound-to-letter knowledge behind it.",
+                "**Vocabulary** - the range of words available and choosing between them.",
+                "**Composition** - planning, drafting and shaping a piece of writing.",
+                "**Handwriting and Word Processing** - legible handwriting and keyboard skills.",
+                "**Grammar for Writing** - sentence construction and control.",
+                "**Punctuation** - accuracy and its effect on meaning."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The Year 6 Achievement Test: JEH11/01",
+          "level": "h2",
+          "caption": "Section marks, assessment objectives and recommended timings, all from the JEH11 specification. The recommended timings total 90 minutes exactly.",
+          "columns": ["Section", "Marks", "Assessment objectives", "Recommended time", "What it contains"],
+          "rows": [
+            ["A: Reading (non-fiction)", "part of 30", "RAO1 to RAO5", "20 minutes", "Questions on the pre-released non-fiction text. Closed and short-open response."],
+            ["A: Reading (fiction)", "part of 30", "RAO1 to RAO5", "30 minutes", "Questions on the pre-released fiction text. Closed and short-open response."],
+            ["B: Grammar and punctuation", "15", "GAO1", "15 minutes", "Short-response questions, all based on the **fiction** text from Section A."],
+            ["C: Writing", "15", "WAO1, WAO2, WAO3", "25 minutes", "A single extended writing task, related to the theme of the Section A texts."],
+            ["**Total**", "**60**", "-", "**90 minutes**", "All questions in every section are compulsory."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Assessment objectives and their exact weightings",
+          "level": "h2",
+          "caption": "Percentages of the whole qualification, from the JEH11 specification. Reading accounts for 50%, grammar and punctuation for 25%, and writing for 25%.",
+          "columns": ["Code", "Objective", "% of the qualification"],
+          "rows": [
+            ["RAO1", "Retrieve information, events or ideas from texts", "8%"],
+            ["RAO2", "Deduce, infer or interpret information, events or ideas from texts", "**15%**"],
+            ["RAO3", "Identify and comment on the structure and organisation of texts", "5%"],
+            ["RAO4", "Explore the writers' use of language, at word and sentence level", "8%"],
+            ["RAO5", "Consider the writers' purposes and viewpoints, and the overall effect of the text on the reader", "14%"],
+            ["GAO1", "Demonstrate how accurate use of grammar, punctuation and spelling contribute to meaning", "**25%**"],
+            ["WAO1", "Write a response appropriate to task, audience and purpose", "8%"],
+            ["WAO2", "Organise writing by sequencing and structuring information appropriately and coherently", "7%"],
+            ["WAO3", "Communicate meaning in writing through the use of accurate grammar, punctuation and spelling", "10%"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "What those percentages tell you to teach",
+          "text": [
+            "**Grammar and punctuation is the single largest objective at 25%** - larger than any reading objective and equal to the whole of writing. A quarter of this qualification rests on accuracy, and it is the most improvable thing on the list.",
+            "**Inference (RAO2, 15%) is the largest reading objective**, and it is three times the size of structure (RAO3, 5%). A child who can find stated facts but cannot say what a character is feeling will lose far more than one who cannot label a subheading.",
+            "**Accurate writing (WAO3, 10%) outweighs task and audience (WAO1, 8%) and organisation (WAO2, 7%).** In the 15-mark writing task, correctness matters more than ambition. A short, well-punctuated piece scores better than a long, exciting, error-strewn one."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Using the pre-release properly",
+          "level": "h2",
+          "intro": [
+            "The two Section A texts are published by Pearson at least **four weeks** before the test. Pearson's own guidance recommends that schools give the pre-release around **two weeks of lesson time, eight to ten hours**. The following sequence follows that guidance."
+          ],
+          "items": [
+            { "title": "Get the texts and read them yourself first", "text": ["Before any lesson. You cannot direct a child's attention to what matters in a text you met the same morning."] },
+            { "title": "Read them aloud, with expression", "text": ["Pearson recommends this explicitly. Children who have heard a text read well understand its tone, and tone is what RAO5 - 14% of the qualification - asks about."] },
+            { "title": "Work on vocabulary in context and in isolation", "text": ["Both. A child should know what a word means in the sentence where it appears **and** be able to say what it means on its own, because the test asks both ways."] },
+            { "title": "Interrogate the writer's language and purpose", "text": ["Why this word and not a plainer one? Who was this written for? What does the writer want the reader to feel? That is RAO4 and RAO5, 22% between them."] },
+            { "title": "Look at the non-fiction text for audience, purpose and presentation", "text": ["Headings, captions, images, layout - what each is doing and why it was put there."] },
+            { "title": "Make sure every child has their own copy", "text": ["To annotate, argue with and take home."] },
+            { "title": "Be clear about what happens on the day", "text": ["A clean **Source Booklet** containing both texts is supplied with the paper. **Marked-up copies of the pre-release are not permitted in the examination room.** Children who have relied on their annotations rather than on knowing the text can be badly caught out, so practise at least once with clean copies."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "The practice material below is original RCF work",
+          "text": [
+            "The activities that follow were written by RCF English. They are **not** Pearson materials, not past questions, and not sample assessment materials. They are written to rehearse the skills the assessment objectives name.",
+            "For official sample assessment materials and past papers, use the [iPrimary English page](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/english-2018.html) on the Pearson website."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Original RCF practice: the four skills the test rewards most",
+          "level": "h2",
+          "intro": ["Four short activities, each aimed at one of the heaviest assessment objectives. They can be used with any text, including the pre-release."],
+          "items": [
+            {
+              "title": "Inference ladder (RAO2, 15%)",
+              "text": [
+                "Take any sentence from a story and ask three questions in order, always in this order:",
+                "**1. What does it say?** (literal - the child repeats it) **2. What does it tell us that it does not say?** (inference) **3. How do you know?** (evidence)",
+                "Example, on an original sentence: *Ravi checked the clock for the fourth time and moved his bag onto his lap.*",
+                "It says he checked the clock and moved his bag. It tells us he is anxious and expecting to leave soon. We know because *the fourth time* shows repetition, and moving a bag onto your lap is what people do just before standing up.",
+                "**Why it works:** step three is the one children skip, and it is the one the mark scheme rewards. A child who answers *he was nervous* with no evidence will not get the mark."
+              ]
+            },
+            {
+              "title": "Two-column word work (RAO4, 8%)",
+              "text": [
+                "Draw two columns. In the left, write the word the writer used. In the right, write the plainest word that would have done the same job.",
+                "*trudged* / *walked*. *whispered* / *said*. *ancient* / *old*.",
+                "Then ask one question only: **what is lost if we swap them?**",
+                "**Why it works:** it turns *the writer uses powerful vocabulary* - a sentence that earns nothing - into a statement about effect, which is what RAO4 asks for."
+              ]
+            },
+            {
+              "title": "Punctuation repair (GAO1, 25%)",
+              "text": [
+                "Give a child a short passage with the punctuation removed and ask them to put it back. Then - and this is the part that matters - ask them to explain **one** choice.",
+                "*the door was open which was strange because ravi had locked it that morning at least he thought he had*",
+                "**Why it works:** GAO1 is the largest single objective in the qualification, and it asks how punctuation *contributes to meaning*, not whether it is present. A child who can say *the comma is there because the second part explains the first* is answering the actual objective."
+              ]
+            },
+            {
+              "title": "Fifteen-mark discipline (WAO1 to WAO3, 25%)",
+              "text": [
+                "Set a writing task related to a text the child has read, and allow exactly **25 minutes** - the recommended time for Section C. Require three things and mark only those three:",
+                "**1.** Does it do what the task asked, for the right reader? (WAO1) **2.** Is it in a sensible order, with paragraphs? (WAO2) **3.** Is it accurate? (WAO3)",
+                "**Why it works:** children given an open writing task write until they are stopped. Section C is 15 marks in 25 minutes, and a controlled, correct, well-ordered piece of moderate length is exactly what those 15 marks are for."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Preparing a Year 6 class",
+          "level": "h2",
+          "do": [
+            "Download the pre-release the day it appears and plan two weeks around it.",
+            "Spend most of your reading time on inference, which is the largest reading objective.",
+            "Practise at least once with clean, unannotated copies of the texts.",
+            "Teach punctuation as something that changes meaning, not as a list of rules.",
+            "Time the writing task at 25 minutes so children learn what that feels like."
+          ],
+          "dont": [
+            "Treat the pre-release as optional or leave it to the last week.",
+            "Let children rely on annotations they will not be allowed to bring in.",
+            "Spend equal time on all five reading objectives - they are worth 8, 15, 5, 8 and 14 per cent.",
+            "Reward long writing. Fifteen marks does not need three pages.",
+            "Use a dictionary in practice tests. They are not allowed in the real one."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "iLowerSecondary English", "url": "global-english/edexcel-international-curriculum/ilowersecondary/", "text": ["Years 7 to 9, and the Year 9 test."] },
+            { "title": "Edexcel curriculum overview", "url": "global-english/edexcel-international-curriculum/", "text": ["Both stages compared."] },
+            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["Where this leads from Year 10."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/edexcel-international-curriculum/ilowersecondary",
+      "title": "Edexcel iLowerSecondary English: Years 7 to 9",
+      "metaTitle": "Edexcel iLowerSecondary English LEH11: Curriculum and Year 9 Test | RCF English",
+      "description": "Pearson Edexcel iLowerSecondary English (LEH11) explained: the two curriculum strands, the Year 9 Achievement Test verified from an official paper, and practice material.",
+      "keywords": "iLowerSecondary English LEH11, Edexcel Year 9 English test, LEH11/01, iLowerSecondary English curriculum, Edexcel lower secondary English",
+      "kicker": "Edexcel graded curriculum",
+      "kind": "page",
+      "schema": "Course",
+      "resourceType": "guide",
+      "educationalLevel": "Lower secondary",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" }
+      ],
+      "backTo": { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" },
+      "hero": {
+        "text": "Three years, two strands, and a Year 9 test that puts three unseen texts in front of a student and gives them seventy minutes."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Sources for the figures on this page",
+          "text": [
+            "The test structure, timings and section marks below were read directly from an **official Pearson question paper: LEH11/01, Summer 2022 (P67630A)**, published on the Pearson website. The curriculum strands come from Pearson's published iLowerSecondary English Curriculum Overview.",
+            "Pearson's papers are linked, never copied, and no paper-sharing site is linked from this page. The detailed year-by-year curriculum objectives are released to subscribing centres and are not reproduced here.",
+            "RCF English is not affiliated with, endorsed by or approved by Pearson Edexcel."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The qualification at a glance",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Field", "Detail"],
+          "rows": [
+            ["Full title", "Pearson Edexcel International Award in Lower Secondary English"],
+            ["Specification code", "LEH11"],
+            ["Paper code", "LEH11/01"],
+            ["Assessment", "One externally-set achievement test, taken at the end of Year 9"],
+            ["Time allowed", "1 hour 45 minutes"],
+            ["Total marks", "70"],
+            ["Sections", "Section A Reading, 40 marks. Section B Writing, 30 marks. Both compulsory."],
+            ["Texts", "Three, linked by a theme, supplied **unseen** in a Source Booklet with the paper"],
+            ["Dictionaries", "Not allowed"],
+            ["First teaching / first assessment", "2018 / 2019"],
+            ["Year groups taught", "Years 7 to 9"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The curriculum: two strands",
+          "level": "h2",
+          "text": [
+            "The iLowerSecondary English curriculum is organised into three year groups. It contains **two main strands**, each divided into sub-strands, with **Speaking and Listening woven through both** rather than standing as a strand of its own. The strand names below are Pearson's."
+          ],
+          "parts": [
+            {
+              "heading": "1. Reading",
+              "level": "h3",
+              "text": ["Four sub-strands, carrying 40 of the 70 marks in the Year 9 test."],
+              "bullets": [
+                "**Reading for Meaning** - understanding what a text says and implies.",
+                "**Responding to Texts** - forming and supporting a personal and then a critical response.",
+                "**Text Structure** - how a text is built and why it is built that way.",
+                "**Language Use** - the writer's choices at word and sentence level, and their effects."
+              ]
+            },
+            {
+              "heading": "2. Writing",
+              "level": "h3",
+              "text": ["Three sub-strands, carrying 30 marks in a single extended task."],
+              "bullets": [
+                "**Writing Processes** - planning, drafting, revising and proofreading.",
+                "**Whole Text** - shape, structure, paragraphing and coherence across a whole piece.",
+                "**Language Use** - vocabulary, sentence variety, grammar, punctuation and spelling."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "How the curriculum grows across Years 7, 8 and 9",
+          "text": [
+            "Pearson's published sample objectives show the same skills returning each year in a steadily more demanding form. The clearest example is the response objective, which moves through three stages:",
+            "**Year 7** - *identify* a writer's intention and viewpoint; express a **personal** response; make **simple** comparisons between two texts.",
+            "**Year 8** - *explore* a writer's intention and viewpoint; express a **critical** response by considering the text's features and their effects; make **developed** comparisons, including across different genres.",
+            "**Year 9** - *respond to* a writer's intention and viewpoint; **develop** a critical response; select a **range** of relevant, focused evidence.",
+            "The progression to notice is from *personal* to *critical*, and from *simple* to *developed* comparison. A Year 9 student still writing *I liked this text because it was interesting* is answering a Year 7 objective."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The Year 9 Achievement Test: LEH11/01",
+          "level": "h2",
+          "caption": "Verified from the official Summer 2022 paper. The recommended timings printed on the paper total 105 minutes exactly.",
+          "columns": ["Section", "Marks", "Recommended time", "What it contains"],
+          "rows": [
+            ["A: Reading", "40", "1 hour 10 minutes", "Questions on three unseen texts linked by a theme - typically two non-fiction and one fiction - supplied in a Source Booklet. Question types include multiple choice answered with a cross in a box, short response and extended response."],
+            ["B: Writing", "30", "35 minutes", "One extended writing task, with bullet points to guide content."],
+            ["**Total**", "**70**", "**1 hour 45 minutes**", "All questions in both sections are compulsory."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Three pieces of advice printed on the paper itself",
+          "text": [
+            "The official paper prints its own advice, and it is worth taking literally.",
+            "**\"It is recommended that you read one text at a time and answer the questions on this text.\"** Students who read all three texts first, then start answering, lose time and confuse the texts. Read Text 1, answer the questions on Text 1, then move on.",
+            "**\"Try to answer every question.\"** There is no penalty for a wrong answer, so a blank is a guaranteed nought.",
+            "**\"There may be more space than you need.\"** The size of the answer box is not a hint about the length of the answer. Students routinely pad a two-mark answer to fill the space and lose time they need in Section B."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "The practice material below is original RCF work",
+          "text": [
+            "The activities that follow were written by RCF English. They are **not** Pearson materials, not past questions, and not sample assessment materials.",
+            "For official past papers and mark schemes, use the [iLowerSecondary English page](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum/english-2018.html) on the Pearson website."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Original RCF practice: preparing for three unseen texts",
+          "level": "h2",
+          "intro": ["The Year 9 texts are unseen, so preparation cannot be about content. It has to be about a method that works on any text put in front of you."],
+          "items": [
+            {
+              "title": "The four-minute first read",
+              "text": [
+                "Give a student any unfamiliar article and exactly four minutes. At the end they must write, without looking back, four things: **who wrote it, who for, what they want the reader to think, and one word that gave it away.**",
+                "**Why it works:** Section A gives about 23 minutes per text including the questions, so the first read has to be fast and purposeful. This drills the habit of reading for viewpoint from the first sentence, which is what the *Responding to Texts* and *Language Use* sub-strands both depend on."
+              ]
+            },
+            {
+              "title": "Personal to critical",
+              "text": [
+                "Take any response a student has written and make them rewrite it once, under one rule: **remove every use of *I* and replace it with a statement about the text.**",
+                "*I found the ending sad* becomes *The ending is made sad by the short final sentence, which stops the story before the reader is ready.*",
+                "**Why it works:** this is exactly the Year 7 to Year 9 progression Pearson describes - personal response to critical response. It is the single largest jump in the whole curriculum and most students make it by accident, late, or not at all."
+              ]
+            },
+            {
+              "title": "Comparison in one sentence",
+              "text": [
+                "Give a student two short texts on the same subject and allow them **one sentence** to compare the writers' viewpoints. The sentence must contain both writers and one point of difference.",
+                "*Where the first writer treats the change as a loss, the second treats it as overdue.*",
+                "**Why it works:** *developed comparison* is a Year 8 and 9 objective, and students fail it by writing a paragraph about one text followed by a paragraph about the other. Forcing both into one sentence makes genuine comparison unavoidable. Once they can do it in one sentence they can expand it; the reverse never works."
+              ]
+            },
+            {
+              "title": "Thirty-five minutes, three checks",
+              "text": [
+                "Set an extended writing task with bullet points, allow exactly **35 minutes**, and require five of those minutes to be spent at the end on three checks only: **sentence endings, paragraph breaks, and one repeated word replaced.**",
+                "**Why it works:** 30 marks is a large share of the paper for a single task, and *Language Use* sits inside the Writing strand alongside structure. Five minutes of checking recovers more marks than five minutes of extra content, and students will not do it unless it is timetabled."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Year 9 readiness checklist",
+          "level": "h2",
+          "items": [
+            "Can the student read an unfamiliar text and state its viewpoint in under five minutes?",
+            "Do their responses discuss the text rather than their own feelings about it?",
+            "Can they compare two writers in a single sentence?",
+            "Do they select short, focused evidence rather than copying out long quotations?",
+            "Have they written a 30-mark task in 35 minutes, with clean copies and no dictionary?",
+            "Do they leave answers blank? (They should not - there is no penalty for a wrong answer.)"
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "iPrimary English", "url": "global-english/edexcel-international-curriculum/iprimary/", "text": ["Years 1 to 6, and the Year 6 test."] },
+            { "title": "Edexcel curriculum overview", "url": "global-english/edexcel-international-curriculum/", "text": ["Both stages compared."] },
+            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["What Year 10 leads to."] },
+            { "title": "Edexcel GCSE English Language", "url": "global-english/gcse/edexcel/", "text": ["The United Kingdom route, for comparison."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

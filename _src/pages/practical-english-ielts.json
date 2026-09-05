@@ -203,6 +203,29 @@
         },
         {
           "type": "cards",
+          "heading": "A complete test, and ten model essays",
+          "eyebrow": "New",
+          "columns": "2",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "IELTS Academic Practice Test 1",
+              "url": "practical-english/ielts/practice-test-1/",
+              "more": "Sit the test",
+              "text": ["A full original test: four Listening parts with transcripts, three Reading passages, both Writing tasks and the Speaking test - with a complete answer key, an indicative band conversion and model answers."],
+              "bullets": ["80 Listening and Reading answers, each explained", "Model answers for Task 1, Task 2 and all three Speaking parts", "Everything written by RCF English"]
+            },
+            {
+              "title": "10 Task 2 model essays",
+              "url": "practical-english/ielts/model-essays/",
+              "more": "Open the essays",
+              "text": ["Ten original essays covering all five Task 2 question types, each with a plan, the full essay, notes on exactly what earns the marks, the language worth borrowing and a variation to try."],
+              "bullets": ["Opinion, discussion, advantages, problems, two-part", "No invented statistics in any model", "Written to be studied, not memorised"]
+            }
+          ]
+        },
+        {
+          "type": "cards",
           "heading": "Build the English underneath the test",
           "eyebrow": "Elsewhere on this site",
           "columns": "4",

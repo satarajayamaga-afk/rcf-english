@@ -70,7 +70,8 @@
           "caption": "Unofficial original RCF practice material, written in the format of the current AQA specification. Not examination papers.",
           "columns": ["Paper", "Type", "Modelled on", "Format", "Open"],
           "rows": [
-            ["RCF Model Paper 1", "RCF original model paper", "AQA GCSE English Language 8700, Paper 1", "1 hour 45 minutes, 80 marks, four reading questions and one writing task", "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/)"]
+            ["RCF Model Paper 1", "RCF original model paper", "AQA GCSE English Language 8700, Paper 1", "1 hour 45 minutes, 80 marks, four reading questions and one writing task", "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/)"],
+            ["RCF Model Paper 2", "RCF original model paper", "AQA GCSE English Language 8700, Paper 2", "1 hour 45 minutes, 80 marks, two linked non-fiction sources from the 19th and 21st centuries", "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-2/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-2-mark-scheme/)"]
           ]
         },
         {
@@ -97,12 +98,35 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "RCF Model Paper 2",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Question paper",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-2/",
+              "more": "Open the paper",
+              "text": ["Two linked original non-fiction sources on cold-water swimming - one written in a nineteenth-century voice, one a 2023 column - and five questions in the AQA Paper 2 structure."],
+              "bullets": ["Section A: 4, 8, 12 and 16 marks", "Section B: 40 marks, viewpoint article", "Prints cleanly on paper"]
+            },
+            {
+              "title": "Marking guide",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-2-mark-scheme/",
+              "more": "Open the marking guide",
+              "text": ["Answers to Question 1, indicative content for Questions 2 to 4, band descriptions in plain English, and full model answers for the comparison and the article."],
+              "bullets": ["Written by RCF English, not by AQA", "Bands described, not reproduced", "Model answers with the reasoning explained"]
+            }
+          ]
+        },
+        {
           "type": "callout",
           "style": "note",
-          "title": "More papers, and the other boards",
+          "title": "The other boards",
           "text": [
-            "RCF Model Paper 1 is deliberately the only one so far. Its format is being checked before it becomes the template for a Paper 2 model paper and for the other boards.",
-            "Pearson Edexcel, OCR and Eduqas GCSE English Language will follow, each with the same structure: verified official links first, then an original model paper once the template is settled."
+            "Model Papers 1 and 2 now cover both AQA written papers. Paper 2 is where the nineteenth-century source sits on this specification: AQA pairs an older non-fiction text with a modern one and asks you to compare the two writers' viewpoints.",
+            "Pearson Edexcel is under way - see the [Edexcel model paper](global-english/gcse/edexcel/papers/rcf-model-paper-2/), which follows Edexcel's own format and therefore pairs a twentieth-century text with a twenty-first-century one. OCR and Eduqas will follow, each with the same structure: verified official links first, then an original model paper."
           ]
         },
         {
@@ -197,7 +221,8 @@
             ["Paper 2 Q5", "40", "A full original model article with the reasoning explained, and a practice speech task", "[Viewpoint writing](global-english/gcse/aqa/paper-2/writing/)"],
             ["Language analysis", "8 and 12", "The same quotation answered at three levels, so you can see what separates the bands", "[Language analysis](global-english/gcse/aqa/language-analysis/)"],
             ["Comparison", "16", "A full worked comparison across two sources, with the weighing sentences marked", "[Comparing viewpoints](global-english/gcse/aqa/comparing-viewpoints/)"],
-            ["A whole paper", "80", "A complete original paper in the Paper 1 format, with a marking guide", "[RCF Model Paper 1](global-english/gcse/aqa/papers/rcf-model-paper-1/)"]
+            ["A whole paper", "80", "A complete original paper in the Paper 1 format, with a marking guide", "[RCF Model Paper 1](global-english/gcse/aqa/papers/rcf-model-paper-1/)"],
+            ["A whole paper", "80", "A complete original paper in the Paper 2 format, with two linked sources and a marking guide", "[RCF Model Paper 2](global-english/gcse/aqa/papers/rcf-model-paper-2/)"]
           ]
         },
         {
