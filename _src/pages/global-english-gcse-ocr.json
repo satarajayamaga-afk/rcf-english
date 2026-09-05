@@ -1,0 +1,669 @@
+{
+  "_comment": "OCR GCSE (9-1) English Language J351. EVERY figure verified from OCR's own documents: the specification-at-a-glance page and PDF (322620) for component structure, text types and section content; the J351/01 and J351/02 mark schemes for per-question marks, level bands and the complete AO weighting grid; the J351/02 sample assessment material for the paper's front-cover instructions. AO wording is quoted from OCR's mark schemes. Nothing of OCR's is reproduced beyond short factual phrases: no question, passage or mark-scheme descriptor is copied. Practice material is original RCF work and labelled as such.",
+
+  "pages": [
+    {
+      "slug": "global-english/gcse/ocr",
+      "title": "OCR GCSE English Language",
+      "metaTitle": "OCR GCSE English Language J351: Components, Marks and Timing | RCF English",
+      "description": "OCR GCSE English Language J351 explained: both components, every question and its marks, the assessment objective weightings, and the spoken language endorsement.",
+      "keywords": "OCR GCSE English Language, J351, OCR English Language components, OCR J351/01, OCR J351/02, OCR English Language assessment objectives",
+      "kicker": "GCSE English Language",
+      "kind": "page",
+      "schema": "Course",
+      "resourceType": "guide",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "GCSE English", "url": "global-english/gcse/" }
+      ],
+      "backTo": { "label": "GCSE English", "url": "global-english/gcse/" },
+      "hero": {
+        "text": "Two papers of exactly the same shape, two hours each, eighty marks each. Once you see the pattern, OCR is the most predictable of the four boards.",
+        "buttons": [
+          { "label": "Component 01", "url": "global-english/gcse/ocr/component-1/", "style": "btn--accent" },
+          { "label": "Component 02", "url": "global-english/gcse/ocr/component-2/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Where these figures come from",
+          "text": [
+            "Every figure on this page was read from **OCR's own published documents**: the J351 specification and specification-at-a-glance, and the J351/01 and J351/02 mark schemes.",
+            "OCR's specification, papers and mark schemes are **linked, never copied**. No question, passage or mark-scheme wording is reproduced here beyond short factual phrases, and no paper-sharing site is linked.",
+            "**RCF English is not affiliated with, endorsed by or approved by OCR.**"
+          ]
+        },
+        {
+          "type": "lead",
+          "text": [
+            "OCR built J351 around a deliberate idea: **the two papers mirror each other.** Both last two hours, both are worth 80 marks and 50% of the grade, both split evenly into an hour of reading and an hour of writing, and both assess all six assessment objectives. Even the question shape is the same on each - four marks of short answers, a six-mark question, a twelve-mark question and an eighteen-mark comparison.",
+            "What changes between them is the *material*: Component 01 gives you non-fiction across two centuries and asks for non-fiction writing; Component 02 gives you literary texts from the modern period and asks for creative writing. Learn the skeleton once and it works twice."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The qualification at a glance",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Field", "Detail"],
+          "rows": [
+            ["Board and specification", "OCR GCSE (9-1) English Language, **J351**"],
+            ["Total assessment time", "4 hours"],
+            ["Component 01", "Communicating information and ideas. 2 hours, 80 marks, 50%"],
+            ["Component 02", "Exploring effects and impact. 2 hours, 80 marks, 50%"],
+            ["Spoken language", "**J351/03 or J351/04**. Non-exam assessment, separately endorsed."],
+            ["Texts in Component 01", "Two unseen **non-fiction** texts: one 19th century, one 20th or 21st century"],
+            ["Texts in Component 02", "Two unseen **prose or literary non-fiction** texts, 20th and/or 21st century"],
+            ["Where the texts are", "In an Insert supplied with the paper. Both papers are entirely unseen."],
+            ["Extended response", "Questions marked with an **asterisk (*)** also assess the quality of extended response."],
+            ["Guided learning hours", "140"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "One choice a school makes that affects both papers",
+          "text": [
+            "OCR states that the combination of texts in Component 02 **depends on the combination chosen for Component 1**. Component 02 uses prose fiction and/or literary non-fiction, and which mix appears is linked to what Component 01 used.",
+            "In practice this means the two papers are designed as a pair rather than independently, which is one more reason to prepare them together rather than one at a time."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "How the two papers mirror each other",
+          "level": "h2",
+          "caption": "Marks read from the J351/01 and J351/02 mark schemes. Both Section A totals are 40 and both Section B totals are 40.",
+          "columns": ["", "Component 01", "Component 02"],
+          "rows": [
+            ["Section A title", "Reading meaning and effects", "Reading meaning and effects"],
+            ["Section A time and marks", "About 1 hour, 40 marks (25%)", "About 1 hour, 40 marks (25%)"],
+            ["Short-answer questions", "2 + 2 marks", "2 + 2 marks"],
+            ["Six-mark question", "Synthesising information from **both** texts", "Language and structure in **Text 1**"],
+            ["Twelve-mark question", "Language and structure in **one** text", "Language and structure in **Text 2**"],
+            ["Eighteen-mark question", "Comparison, critically evaluating both texts (12 AO4 + 6 AO3)", "Comparison, critically evaluating both texts (12 AO4 + 6 AO3)"],
+            ["Section B title", "Writing for audience, impact and purpose", "Writing imaginatively and creatively"],
+            ["Section B time and marks", "About 1 hour, 40 marks (25%)", "About 1 hour, 40 marks (25%)"],
+            ["Section B task", "**One** non-fiction task from a choice of two", "**One** creative task from a choice of two"],
+            ["Section B mark split", "24 marks AO5 + 16 marks AO6", "24 marks AO5 + 16 marks AO6"],
+            ["Full guide", "[Component 01](global-english/gcse/ocr/component-1/)", "[Component 02](global-english/gcse/ocr/component-2/)"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Assessment objectives and their exact weightings",
+          "level": "h2",
+          "caption": "The complete AO grid, read from OCR's mark schemes. Percentages are of the whole qualification and each column totals 50%.",
+          "columns": ["AO", "What it asks for", "Component 01", "Component 02", "Total"],
+          "rows": [
+            ["AO1", "Identify and interpret explicit and implicit information and ideas; select and synthesise evidence from different texts", "6.25%", "2.5%", "8.75%"],
+            ["AO2", "Explain, comment on and analyse how writers use language and structure to achieve effects and influence readers, using relevant subject terminology", "7.5%", "11.25%", "**18.75%**"],
+            ["AO3", "Compare writers' ideas and perspectives, and how these are conveyed, across two or more texts", "3.75%", "3.75%", "7.5%"],
+            ["AO4", "Evaluate texts critically and support this with appropriate textual references", "7.5%", "7.5%", "15%"],
+            ["AO5", "Communicate clearly, effectively and imaginatively, adapting tone, style and register; organise information and ideas using structural and grammatical features", "15%", "15%", "**30%**"],
+            ["AO6", "Use a range of vocabulary and sentence structures for clarity, purpose and effect, with accurate spelling and punctuation", "10%", "10%", "20%"],
+            ["**Total**", "-", "**50%**", "**50%**", "**100%**"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "What that grid tells you to do",
+          "text": [
+            "**Writing is half the qualification.** AO5 and AO6 together are 50% - exactly as much as all four reading objectives combined. Students who treat the writing section as the thing they do after the reading are gambling with half their grade.",
+            "**AO6 alone is 20%.** A fifth of this GCSE is vocabulary range, sentence variety, spelling and punctuation. That is the most improvable 20% in the whole qualification and it needs no set text and no wider reading.",
+            "**AO2 is the biggest reading objective at 18.75%**, and it is concentrated in Component 02 (11.25% there against 7.5% in Component 01). If a student is weak at writing about language and structure, Component 02 is where it will cost most.",
+            "**AO3, comparison, is only 7.5%** - yet it feels like the hardest thing on the paper. It is worth six marks inside the eighteen-mark question on each paper. Do not let it eat revision time out of proportion to its weight."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The spoken language endorsement",
+          "level": "h2",
+          "text": [
+            "Entered as **J351/03 or J351/04**. It is a compulsory requirement of the course, but it does not affect the GCSE grade."
+          ],
+          "bullets": [
+            "**One spoken presentation per candidate** - a talk, debate, speech or dialogue - after which the student listens and responds to questions and feedback.",
+            "**Internally assessed by the centre and externally monitored by OCR.** A sample of **up to 30 presentations must be video recorded** for monitoring.",
+            "Reported as a separate grade: **Pass, Merit, Distinction or Not Classified**.",
+            "The marks **do not contribute to the overall GCSE grade**, and the endorsement appears separately on the certificate.",
+            "OCR notes that the assessment criteria and arrangements for spoken language are **consistent across all examination boards** - so guidance written for AQA or Edexcel applies here too."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The OCR pages here",
+          "level": "h2",
+          "columns": "3",
+          "variant": "tint",
+          "items": [
+            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "more": "Open", "text": ["Communicating information and ideas: two non-fiction texts across two centuries, and non-fiction writing."] },
+            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "more": "Open", "text": ["Exploring effects and impact: modern literary texts, and creative writing."] },
+            { "title": "Past papers", "url": "global-english/gcse/ocr/papers/", "more": "Open", "text": ["Official OCR papers, mark schemes and examiners' reports, linked to source."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Common questions about OCR English Language",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "Is OCR English Language easier than AQA?",
+              "a": [
+                "No board is easier - grade boundaries are set so that the same standard earns the same grade. But the papers are shaped differently, and OCR's shape suits some students.",
+                "OCR's distinctive feature is symmetry: both papers run to the same pattern of 2, 2, 6, 12 and 18 marks in Section A, then a 40-mark writing task. AQA's two papers have different question structures from each other. A student who benefits from one repeated routine may find OCR easier to prepare for, even though the standard is the same."
+              ]
+            },
+            {
+              "q": "Which paper has the 19th-century text?",
+              "a": [
+                "**Component 01.** It gives two unseen non-fiction texts, one from the 19th century and one from the 20th or 21st.",
+                "Component 02 uses prose or literary non-fiction from the 20th and 21st centuries only - so if a student is anxious about older language, all of that pressure sits on Component 01."
+              ]
+            },
+            {
+              "q": "Are the texts released in advance?",
+              "a": [
+                "No. Both papers are entirely unseen, and the texts arrive in an Insert with the question paper. There are no set texts and nothing to learn by heart.",
+                "This is different from some other qualifications - Edexcel's iPrimary tests, for example, pre-release their texts. OCR GCSE does not."
+              ]
+            },
+            {
+              "q": "How much choice is there in the writing section?",
+              "a": [
+                "One task from a choice of two, on both papers. The tasks are connected to the theme of the reading section, and bullet points are provided for support.",
+                "On Component 01 the task will have a specified form, audience and purpose. On Component 02 it may be narrative, descriptive or autobiographical writing."
+              ]
+            },
+            {
+              "q": "Do presentation and layout earn marks in the writing task?",
+              "a": [
+                "No. OCR states plainly that **presentational and visual features are not assessed** - on either paper.",
+                "So a student writing a leaflet or an article should not spend time drawing boxes, headings and columns. The marks are for AO5 (24) and AO6 (16): communication, organisation, vocabulary, sentence structure, spelling and punctuation."
+              ]
+            },
+            {
+              "q": "What does the asterisk next to a question mean?",
+              "a": [
+                "The paper states that **quality of extended response will be assessed in questions marked with an asterisk (*)**. In practice these are the longer questions, where how well the answer is constructed and expressed counts alongside what it says.",
+                "It is a signal to write in developed, connected paragraphs rather than in a list of separate points."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "text": ["Question by question, with methods."] },
+            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "text": ["Question by question, with methods."] },
+            { "title": "Past papers", "url": "global-english/gcse/ocr/papers/", "text": ["Official OCR materials."] },
+            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards compared."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/gcse/ocr/component-1",
+      "title": "OCR Component 01: Communicating Information and Ideas",
+      "metaTitle": "OCR J351/01 Communicating Information and Ideas: Questions and Marks | RCF English",
+      "description": "OCR GCSE English Language Component 01 (J351/01) explained: every question with its marks, the 19th-century text, and how to handle the synthesis and comparison questions.",
+      "keywords": "OCR J351/01, OCR component 1 English Language, OCR synthesis question, OCR 19th century non-fiction, OCR English Language paper 1",
+      "kicker": "OCR GCSE English Language",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guidance",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "GCSE English", "url": "global-english/gcse/" },
+        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" }
+      ],
+      "backTo": { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+      "hero": {
+        "text": "Two non-fiction texts a century or more apart, forty marks of reading, and forty marks for one piece of your own non-fiction. Two hours."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Where these figures come from",
+          "text": [
+            "Marks and structure read from OCR's specification-at-a-glance and the **J351/01 mark scheme**. OCR's materials are linked, never copied. RCF English is not affiliated with, endorsed by or approved by OCR."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Component 01 at a glance",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Field", "Detail"],
+          "rows": [
+            ["Paper code", "J351/01"],
+            ["Title", "Communicating information and ideas"],
+            ["Time", "2 hours"],
+            ["Marks", "80"],
+            ["Weighting", "50% of the GCSE"],
+            ["Texts", "Two unseen **non-fiction** texts: one 19th century, one 20th or 21st century, in an Insert"],
+            ["Section A", "Reading meaning and effects. About 1 hour, 40 marks."],
+            ["Section B", "Writing for audience, impact and purpose. About 1 hour, 40 marks."],
+            ["Section B choice", "One task from a choice of two"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section A, question by question",
+          "level": "h2",
+          "text": [
+            "Forty marks in about an hour. The marks below are OCR's; the method attached to each is RCF English's own."
+          ],
+          "parts": [
+            {
+              "heading": "The short answers: 2 marks + 2 marks",
+              "level": "h3",
+              "text": [
+                "Two short questions on one text - typically *give two things* and *explain two reasons*. AO1: identifying and interpreting information and ideas.",
+                "**Method.** One mark per point, so give exactly the number asked for and no more. Where the question says *give*, a short quotation or a close paraphrase is enough; where it says *explain*, you must add why. Stay strictly inside the line references.",
+                "**Time:** about 5 minutes for both. Students routinely spend fifteen. These are four marks out of eighty."
+              ]
+            },
+            {
+              "heading": "The six-mark question: synthesis",
+              "level": "h3",
+              "text": [
+                "This is the question that distinguishes Component 01 from Component 02. It asks you to **synthesise information from both texts** - to combine what the two say about the same thing, rather than analyse how either says it.",
+                "**Method.** Every sentence should contain both texts. *Both writers describe crowded conditions, but where the first counts people, the second counts smells.* Do not write a paragraph on Text 1 followed by a paragraph on Text 2; that is a summary of each, not a synthesis of both.",
+                "**This is not the comparison question.** Synthesis is about *what the texts say*; the eighteen-mark question later is about *how they say it and how well*. Confusing the two is the single most common error on this paper.",
+                "**Time:** about 8 minutes."
+              ]
+            },
+            {
+              "heading": "The twelve-mark question: language and structure",
+              "level": "h3",
+              "text": [
+                "On **one** of the texts. AO2: explain, comment on and analyse how the writer uses language and structure to achieve effects and influence readers, using relevant subject terminology.",
+                "**Method.** Three developed paragraphs beat six thin ones. Take a short quotation, say what the choice does to the reader, then take it one step further - what it implies, or what it stops the reader from thinking. The mark scheme's top band asks for *analysis* rather than *explanation*, and the difference is that second step.",
+                "**Terminology is required but not rewarded on its own.** Naming a metaphor earns nothing; saying what this particular metaphor does earns the mark. Use the term, then move past it in the same sentence.",
+                "**Time:** about 20 minutes."
+              ]
+            },
+            {
+              "heading": "The eighteen-mark question: comparison and critical evaluation",
+              "level": "h3",
+              "text": [
+                "The biggest question in Section A, and it is marked in two parts that are added together: **12 marks for AO4** (evaluate texts critically, supported by textual references) and **6 marks for AO3** (compare writers' ideas and perspectives, and how these are conveyed).",
+                "**Method.** Because AO4 is worth twice AO3, the bulk of the answer must be *evaluation* - judging how effectively each writer achieves what they set out to do - with comparison as the frame that holds it together. An answer that compares neatly but never evaluates loses twelve of the eighteen marks.",
+                "**Both texts in every paragraph.** Then, in each paragraph, say which writer does it better and why. That last sentence is where AO4 lives, and it is the sentence most answers leave out.",
+                "**Time:** about 25 minutes."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section B: writing for audience, impact and purpose",
+          "level": "h2",
+          "text": [
+            "One non-fiction task from a choice of two, worth 40 marks: **24 for AO5** and **16 for AO6**. About an hour, and it is worth exactly as much as the whole reading section.",
+            "OCR specifies that the task is connected to the reading theme, has a **specified form, audience and purpose**, and is supported by bullet points. It may ask you to describe, explain, inform, instruct, argue or persuade."
+          ],
+          "bullets": [
+            "**Read the form, audience and purpose and obey all three.** They are stated, not implied. A letter to a head teacher and an article for a local paper are different registers, and AO5 explicitly credits *adapting tone, style and register*.",
+            "**Use the bullet points as a plan.** They are there for support and they map onto a sensible paragraph structure. Ignoring them wastes a free plan.",
+            "**Do not draw the layout.** OCR states that presentational and visual features are **not assessed**. Boxes, columns, mastheads and bullet-pointed leaflets earn nothing and cost minutes.",
+            "**Protect the 16 AO6 marks.** A fifth of the whole qualification is vocabulary range, sentence variety, spelling and punctuation. Leave five minutes to check sentence endings, paragraph breaks and any word you are unsure of.",
+            "**Length.** Around 400 to 500 words of controlled writing beats 800 rushed ones. AO6 is easier to lose than AO5 is to gain."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "A timing plan for Component 01",
+          "text": [
+            "**0-5 min** read the Insert once, quickly, for what each text is about and who wrote it for whom.",
+            "**5-10 min** short answers (4 marks).",
+            "**10-18 min** synthesis (6 marks).",
+            "**18-38 min** language and structure (12 marks).",
+            "**38-60 min** comparison and evaluation (18 marks).",
+            "**60-115 min** Section B writing, including five minutes planning and five minutes checking.",
+            "**115-120 min** final check of the writing task only. Do not go back to Section A - the marks there are already spent."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "The practice below is original RCF material",
+          "text": [
+            "Written by RCF English, not by OCR. Not a past question and not sample assessment material. For official papers see the [OCR papers page](global-english/gcse/ocr/papers/)."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Original RCF practice: the two questions students get wrong",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Synthesis drill: one sentence, two texts",
+              "text": [
+                "Find any two short non-fiction pieces on the same subject - two news reports, two reviews, two travel descriptions. Give yourself **five sentences** and one rule: **every sentence must refer to both texts.**",
+                "*Both accounts describe the same street, but where the first records what it sells, the second records what it smells of.*",
+                "**Why it works:** the six-mark synthesis question fails when students write about each text in turn. Forcing both into one sentence makes that impossible. Once the habit is formed it transfers straight into the eighteen-mark question."
+              ]
+            },
+            {
+              "title": "Evaluation drill: the missing last sentence",
+              "text": [
+                "Take any comparison paragraph you have written and add exactly one sentence to the end, beginning: **\"The more effective of the two here is...\"** - then say why, in terms of what each writer was trying to do.",
+                "**Why it works:** AO4 is worth 12 of the 18 marks on the comparison question and it is the objective most answers never address. Students compare accurately and then stop, one sentence short of two thirds of the marks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "text": ["The literary paper, and creative writing."] },
+            { "title": "OCR past papers", "url": "global-english/gcse/ocr/papers/", "text": ["Official papers, mark schemes and examiners' reports."] },
+            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": ["Both components and the AO grid."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/gcse/ocr/component-2",
+      "title": "OCR Component 02: Exploring Effects and Impact",
+      "metaTitle": "OCR J351/02 Exploring Effects and Impact: Questions and Marks | RCF English",
+      "description": "OCR GCSE English Language Component 02 (J351/02) explained: every question with its marks, the two literary texts, and the 40-mark creative writing task.",
+      "keywords": "OCR J351/02, OCR component 2 English Language, OCR creative writing task, OCR English Language paper 2, OCR literary texts",
+      "kicker": "OCR GCSE English Language",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "guidance",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "GCSE English", "url": "global-english/gcse/" },
+        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" }
+      ],
+      "backTo": { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+      "hero": {
+        "text": "The same skeleton as Component 01, but the language question is asked twice - once on each text - and the writing is your own."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Where these figures come from",
+          "text": [
+            "Marks and structure read from OCR's specification-at-a-glance, the **J351/02 sample assessment material** and the **J351/02 mark scheme**. OCR's materials are linked, never copied. RCF English is not affiliated with, endorsed by or approved by OCR."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Component 02 at a glance",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Field", "Detail"],
+          "rows": [
+            ["Paper code", "J351/02"],
+            ["Title", "Exploring effects and impact"],
+            ["Time", "2 hours"],
+            ["Marks", "80"],
+            ["Weighting", "50% of the GCSE"],
+            ["Texts", "Two unseen **prose or literary non-fiction** texts, 20th and/or 21st century, in an Insert"],
+            ["Section A", "Reading meaning and effects. About 1 hour, 40 marks. **All** questions compulsory."],
+            ["Section B", "Writing imaginatively and creatively. About 1 hour, 40 marks. **One** task from a choice of two."],
+            ["Extended response", "Questions marked with an asterisk (*) also assess quality of extended response"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "The one structural difference from Component 01",
+          "text": [
+            "Component 01 asks a **synthesis** question worth 6 marks and then **one** language question worth 12.",
+            "Component 02 asks the language question **twice** - 6 marks on Text 1 and 12 marks on Text 2. There is no synthesis question here.",
+            "That is why AO2 is worth 11.25% on this paper against 7.5% on Component 01. If a student struggles to write about *how* a writer achieves an effect, this is the paper where it costs most - eighteen of the forty reading marks depend on it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section A, question by question",
+          "level": "h2",
+          "parts": [
+            {
+              "heading": "The short answers: 2 marks + 2 marks",
+              "level": "h3",
+              "text": [
+                "On Text 1, within stated line references - typically *give two phrases that show...* and *explain two reasons why...*. AO1.",
+                "**Method.** One mark per point. Give the number asked for, no more. For *give*, quote or paraphrase closely; for *explain*, add the reason. Never stray outside the line numbers - material from elsewhere in the text earns nothing.",
+                "**Time:** 5 minutes."
+              ]
+            },
+            {
+              "heading": "The six-mark question: language and structure in Text 1",
+              "level": "h3",
+              "text": [
+                "AO2, on a stated section of Text 1, with subject terminology required.",
+                "**Method.** Two developed points, not six brief ones. Quotation, effect on the reader, then one step further. The mark scheme's bands move from *commentary* through *explanation* to *analysis*, and what separates them is depth on a small number of points rather than coverage of many.",
+                "**Time:** 10 minutes."
+              ]
+            },
+            {
+              "heading": "The twelve-mark question: language and structure in Text 2",
+              "level": "h3",
+              "text": [
+                "The same skill, a different text, twice the marks - so roughly twice the material: three to four developed points.",
+                "**Structure is half the objective and usually the neglected half.** Where does the focus shift? What does the writer withhold, and until when? Why does the piece end where it does? Answers that only discuss word choice are working at half the assessment objective.",
+                "**Time:** 20 minutes."
+              ]
+            },
+            {
+              "heading": "The eighteen-mark question: comparison and critical evaluation",
+              "level": "h3",
+              "text": [
+                "As on Component 01: marked **out of 12 for AO4** and **out of 6 for AO3**, added together, using both texts.",
+                "**Method.** Evaluation carries twice the weight of comparison, so every paragraph should end with a judgement about which writer achieves more and why - not merely a statement that the two differ.",
+                "**Use short quotations from both texts.** The question requires textual reference for AO4, and long copied quotations eat the time you need for Section B.",
+                "**Time:** 25 minutes."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section B: writing imaginatively and creatively",
+          "level": "h2",
+          "text": [
+            "One task from a choice of two, worth 40 marks - **24 for AO5** and **16 for AO6** - in about an hour. OCR specifies that the task is connected to the reading theme, is supported by bullet points, and may be **narrative, descriptive or autobiographical** writing."
+          ],
+          "bullets": [
+            "**Choose the task you can finish, not the one that sounds most interesting.** A controlled description of a single scene will outscore an ambitious three-part story that runs out of time in the second part.",
+            "**Narrow the scope hard.** Most high-scoring creative writing at GCSE covers minutes, not years, and one place rather than several. Small subject, close attention.",
+            "**Structure earns AO5 marks.** Decide before you start where the piece turns and how it ends. An ending that simply stops is the commonest way to lose marks in the top band.",
+            "**Presentational features are not assessed** on this paper either - so no titles in fancy lettering, no illustrations, no layout.",
+            "**Protect the 16 AO6 marks.** Vary sentence length deliberately; check punctuation of dialogue if you use any; leave five minutes at the end. Accuracy is 40% of this task's marks."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "A timing plan for Component 02",
+          "text": [
+            "**0-5 min** read the Insert once for what happens and who is telling it.",
+            "**5-10 min** short answers (4 marks).",
+            "**10-20 min** six-mark language question on Text 1.",
+            "**20-40 min** twelve-mark language question on Text 2.",
+            "**40-60 min** eighteen-mark comparison and evaluation.",
+            "**60-115 min** Section B, including five minutes planning and five minutes checking.",
+            "**115-120 min** check the writing only."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "The practice below is original RCF material",
+          "text": [
+            "Written by RCF English, not by OCR. Not a past question and not sample assessment material. For official papers see the [OCR papers page](global-english/gcse/ocr/papers/)."
+          ]
+        },
+        {
+          "type": "activities",
+          "heading": "Original RCF practice: the skills this paper leans on",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Structure hunt (AO2, the neglected half)",
+              "text": [
+                "Take any short story or memoir extract. Without discussing a single word choice, answer four questions: **Where does the focus change? What is withheld, and until when? What is the shortest paragraph, and why is it short? Why does it end here rather than three lines later?**",
+                "**Why it works:** AO2 is *language and structure*, and it is worth 11.25% of the whole qualification on this paper. Most students write about language only, which caps them at half the objective. Banning word-level comment for one exercise forces the other half into view."
+              ]
+            },
+            {
+              "title": "Sixty seconds, one place",
+              "text": [
+                "Write a description of a single place over a period of no more than **one minute**, in 350 words, with **nothing happening**. No plot, no dialogue, no arrival or departure.",
+                "**Why it works:** the 24 AO5 marks reward control and shaping, and the commonest failure in GCSE creative writing is trying to cover too much. Removing plot entirely forces attention onto sentence variety, precision and structure - which is exactly what the top band describes."
+              ]
+            },
+            {
+              "title": "Evaluation sentence stems",
+              "text": [
+                "For the eighteen-mark question, practise ending each paragraph with one of these, completed honestly:",
+                "*The first writer succeeds more fully here because...* / *This works for the second writer in a way it would not for the first, since...* / *Both attempt the same effect, but only one...*",
+                "**Why it works:** AO4 is 12 of the 18 marks and it requires judgement, not description. Students who have rehearsed the sentence shape produce the judgement under pressure; students who have not, describe both texts and stop."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "text": ["The non-fiction paper, with the 19th-century text."] },
+            { "title": "OCR past papers", "url": "global-english/gcse/ocr/papers/", "text": ["Official papers, mark schemes and examiners' reports."] },
+            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": ["Both components and the AO grid."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/gcse/ocr/papers",
+      "title": "OCR English Language Past Papers",
+      "metaTitle": "OCR GCSE English Language J351 Past Papers and Mark Schemes | RCF English",
+      "description": "Official OCR GCSE English Language J351 past papers, mark schemes and sample assessment materials, linked to their source on ocr.org.uk.",
+      "keywords": "OCR J351 past papers, OCR English Language mark scheme, OCR GCSE English past papers, J351/01 past paper, J351/02 mark scheme",
+      "kicker": "OCR GCSE English Language",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "past papers",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "GCSE English", "url": "global-english/gcse/" },
+        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" }
+      ],
+      "backTo": { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+      "hero": {
+        "text": "OCR publishes its specification, sample assessment materials and mark schemes openly. They are linked here as they are."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "How papers are handled here",
+          "text": [
+            "**Official papers are linked, never copied.** OCR owns its question papers, source material, mark schemes and examiners' reports. Every official item below opens on ocr.org.uk. This site hosts no copy of any of them and links to no paper-sharing site.",
+            "**RCF English is not affiliated with, endorsed by or approved by OCR.** OCR owns its name, logo and assessment materials, none of which appears on any RCF material."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Official OCR materials",
+          "level": "h2",
+          "caption": "Every link opens an official OCR page or document. OCR decides what is published openly and may move items; the qualification page is the reliable starting point.",
+          "columns": ["Type", "Component", "Official source"],
+          "rows": [
+            ["Qualification page: specification, past papers, mark schemes and reports", "Both", "[OCR GCSE English Language J351](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/)"],
+            ["Specification at a glance", "Both", "[Specification at a glance](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/specification-at-a-glance/)"],
+            ["Full accredited specification", "Both", "[J351 specification PDF](https://www.ocr.org.uk/Images/168996-specification-accredited-gcse-english-language-j351.pdf)"],
+            ["One-page summary of both components", "Both", "[English Language at a glance PDF](https://www.ocr.org.uk/Images/322620-gcse-english-language-at-a-glance-.pdf)"],
+            ["Sample assessment material", "Component 02", "[J351/02 sample assessment material](https://www.ocr.org.uk/images/169264-unit-j351-02-exploring-effects-and-impact-sample-assessment-material.pdf)"],
+            ["Mark scheme", "Component 01", "[J351/01 mark scheme](https://www.ocr.org.uk/Images/515790-j351-01-markscheme.pdf)"],
+            ["Administration, entry codes and deadlines", "Both", "[Administration](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/administration/)"],
+            ["Schemes of work", "Both", "[Scheme of work](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/scheme-of-work/)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Read the mark schemes, not just the papers",
+          "text": [
+            "OCR's mark schemes set out the level descriptors for every question - what separates a *commentary* from an *explanation* from an *analysis* on the AO2 questions, and how the eighteen-mark question is marked as 12 for AO4 plus 6 for AO3 and then added.",
+            "A student who reads the eighteen-mark descriptors once, before attempting the question, will understand why evaluation matters more than comparison. A student who does three more papers without ever reading them will keep making the same error and never know why."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Original RCF model paper",
+          "text": [
+            "There is not yet an RCF model paper for OCR J351. AQA and Edexcel each have one - see the [AQA Paper 2 model paper](global-english/gcse/aqa/papers/rcf-model-paper-2/) and the [Edexcel Paper 2 model paper](global-english/gcse/edexcel/papers/rcf-model-paper-2/) - and an OCR pair will follow the same pattern: original texts, verified structure, a separate marking guide and clear labelling as unofficial practice material.",
+            "In the meantime, the AQA Paper 2 model paper is useful practice for OCR Component 01, since both pair a 19th-century non-fiction text with a modern one. The mark allocations differ, so use it for the reading skills rather than for timing."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Questions about OCR past papers",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "Where can I get OCR English Language past papers free?",
+              "a": [
+                "From OCR itself. Past papers, mark schemes and examiners' reports are published on the [J351 qualification page](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/), and sample assessment materials and the specification are free to download.",
+                "Some recent series are restricted to registered centres for a period after the examination. Your school will have access; ask a teacher rather than looking for the paper on a sharing site."
+              ]
+            },
+            {
+              "q": "How many past papers should I do?",
+              "a": [
+                "Fewer than most students think, and each one properly. Two papers done under timed conditions and then marked carefully against OCR's mark scheme are worth more than six papers attempted and never marked.",
+                "Because both OCR components share the same question shape - 2, 2, 6, 12, 18 then a 40-mark writing task - practice on one paper transfers directly to the other, which means you need less material than you would for a board with two differently-shaped papers."
+              ]
+            },
+            {
+              "q": "Can I use AQA or Edexcel papers to practise for OCR?",
+              "a": [
+                "For skills, yes. For timing and structure, no.",
+                "All four boards assess the same six assessment objectives, so analysis of language and structure, comparison and evaluation all transfer. But the mark allocations and question wording differ, and practising to another board's timings will leave you badly paced. Use other boards' papers for reading practice and OCR's own for full mock conditions."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": ["Both components and the AO grid."] },
+            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "text": ["Question by question."] },
+            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "text": ["Question by question."] },
+            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards compared."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

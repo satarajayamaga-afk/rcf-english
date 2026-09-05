@@ -306,6 +306,22 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "OCR GCSE English Language (J351)",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "intro": [
+            "The third board. OCR's distinctive feature is symmetry: both components run to the same question shape - 2, 2, 6, 12 and 18 marks of reading, then a 40-mark writing task - so preparation for one transfers directly to the other. Figures read from OCR's specification and mark schemes."
+          ],
+          "items": [
+            { "title": "OCR English Language overview", "url": "global-english/gcse/ocr/", "more": "Start here", "text": ["Both components, the complete assessment-objective grid with exact weightings, and the spoken language endorsement."] },
+            { "title": "Component 01: Communicating information and ideas", "url": "global-english/gcse/ocr/component-1/", "more": "Open", "text": ["J351/01: two unseen non-fiction texts, one 19th century, plus a 40-mark non-fiction writing task."] },
+            { "title": "Component 02: Exploring effects and impact", "url": "global-english/gcse/ocr/component-2/", "more": "Open", "text": ["J351/02: two unseen modern literary texts, and a 40-mark creative writing task."] },
+            { "title": "Past papers", "url": "global-english/gcse/ocr/papers/", "more": "Open", "text": ["Official OCR papers, mark schemes, sample assessment materials and schemes of work."] }
+          ]
+        },
+        {
           "type": "table",
           "id": "papers",
           "heading": "GCSE English past papers and mark schemes",

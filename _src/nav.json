@@ -26,7 +26,11 @@
           { "label": "Edexcel English Language (1EN0)", "url": "global-english/gcse/edexcel/" },
           { "label": "Edexcel Paper 1", "url": "global-english/gcse/edexcel/paper-1/" },
           { "label": "Edexcel Paper 2", "url": "global-english/gcse/edexcel/paper-2/" },
-          { "label": "Edexcel Past Papers and Model Papers", "url": "global-english/gcse/edexcel/papers/" }
+          { "label": "Edexcel Past Papers and Model Papers", "url": "global-english/gcse/edexcel/papers/" },
+          { "label": "OCR English Language (J351)", "url": "global-english/gcse/ocr/" },
+          { "label": "OCR Component 01", "url": "global-english/gcse/ocr/component-1/" },
+          { "label": "OCR Component 02", "url": "global-english/gcse/ocr/component-2/" },
+          { "label": "OCR Past Papers", "url": "global-english/gcse/ocr/papers/" }
         ]},
         { "title": "International GCSE", "links": [
           { "label": "IGCSE English", "url": "global-english/igcse/" },
