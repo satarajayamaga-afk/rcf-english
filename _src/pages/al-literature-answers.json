@@ -355,85 +355,128 @@
     {
       "slug": "al-literature/model-answers",
       "title": "Model Answers",
-      "description": "A/L Literature model answers with detailed notes: an essay introduction, a fully developed body paragraph and a conclusion that judges rather than summarises.",
-      "keywords": "A/L Literature model answers, sample essay, worked example",
+      "metaTitle": "A/L English Literature Model Answers and the Marking Grid | RCF English",
+      "description": "A/L English model answers in the format the marking scheme uses: 8-mark context questions marked on identification, relevance, literary features and language.",
+      "keywords": "A/L English literature model answers, context question 8 marks, A/L English marking scheme, literary features marks, A/L literature essay",
       "kicker": "A/L Literature",
       "kind": "guidance",
       "schema": "LearningResource",
       "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
       "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Answers to dismantle. The notes matter more than the prose." },
+      "hero": { "text": "Answers written the way the marking grid is actually built - identification, relevance, literary features and language, all four earning marks at once." },
       "blocks": [
         {
           "type": "callout",
-          "style": "warn",
+          "style": "note",
           "title": "Read this first",
           "bullets": [
-            "These are **teaching materials written by RCF English**, not official answers, and not the only acceptable answers.",
-            "**Do not memorise them.** At Advanced Level a memorised answer is unmistakable, and it will not fit the question you are set.",
-            "The examples use an **invented text**, so that method can be demonstrated without reproducing a copyrighted work. Model answers on individual [text pages](al-literature/prescribed-texts/) refer to real prescribed texts.",
-            "**Nothing on this site invents a quotation, a critic or a textual fact.**"
+            "These are **teaching materials written by RCF English**. They are not official answers.",
+            "**The format and the marking grid follow the official marking scheme** for G.C.E. A/L English, checked against the 2019 scheme.",
+            "**Prescribed texts change.** The passages used here are from Shakespeare, which is out of copyright and safe to quote. Check the current syllabus for your own year's texts.",
+            "**Do not memorise these.** The examiners' own scheme warns explicitly about memorised stock answers - see the note below."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "How an 8-mark context question is marked",
+          "level": "h2",
+          "caption": "The four criteria from the official marking grid. All four are marked on the same answer at the same time, which is why a single well-written paragraph outscores a list.",
+          "stacked": true,
+          "columns": ["Criterion", "Marks", "What earns them"],
+          "rows": [
+            ["Identification of text, author, context", "**1**", "Naming the work, the writer and where the passage falls. The scheme notes that this basic identification is **required before the other categories can be considered at all**."],
+            ["Relevance to text, theme, plot, character", "**3**", "The largest single block. How the passage matters to the work as a whole - what it reveals, what it sets up, what it turns."],
+            ["Literary features", "**1**", "Style, vocabulary, tone, and figures of speech - **integrated into the argument**, not listed separately."],
+            ["Language", "**3**", "Your own English: accuracy, coherence and persuasiveness. Equal in weight to relevance."],
+            ["**Total**", "**8**", "Part A carries **four context questions of 8 marks each**."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Two warnings the examiners put in the scheme themselves",
+          "text": [
+            "**On listing literary devices.** The scheme states that candidates are *not* specifically asked to identify literary features, and instructs examiners to stop awarding marks merely because a device is named. Its words are worth taking seriously: integrating this analysis into an answer *deserves more credit than a separate listing of devices used, which is both mechanical and irrelevant*.",
+            "So: never end an answer with *The literary devices used are simile, metaphor and personification.* Write instead about what a particular word or image does, and the mark comes automatically.",
+            "**On memorised answers.** The scheme records that the note above was added to address a problem identified during marking - candidates relying on **memorised stock answers, especially to the context questions**. An answer that has clearly been learned in advance and bent to fit will be recognised.",
+            "**Language is worth three of the eight marks** - as much as relevance. A brilliant reading in poor English cannot reach the top band. Equally, the scheme warns that accuracy counts for little if the sample is too short to judge, so a two-sentence answer cannot score well however correct it is."
           ]
         },
         {
           "type": "model",
-          "heading": "Model 1 — An introduction",
+          "heading": "Model 1 - an 8-mark context answer",
+          "level": "h2",
           "items": [
             {
-              "label": "Introduction",
-              "prompt": "\"The father's pride is the cause of the family's destruction.\" How far do you agree?",
+              "label": "Context question, 8 marks",
+              "prompt": "Comment briefly on the following passage, explaining its significance to the play from which it is taken.\n\n\"Let husbands know, / Their wives have sense like them; they see and smell, / And have their palates both for sweet and sour / As husbands have. ... Then let them use us well: else let them know, / The ills we do, their ills instruct us so.\"",
               "sample": [
-                "The father's pride is the most visible cause of the family's destruction, and the novel invites us at first to accept that account of it. But the invitation is a trap, and the second half of the book withdraws it. What we are shown is a defence constructed in a particular emergency — the dismissal, the month of empty mornings — which survives the emergency and continues to operate when nothing threatens it any longer. The destruction is caused less by pride than by the persistence of a habit after its reason has gone; and it is the novel's refusal to let us settle on the simpler explanation that makes it more than a study of a difficult man."
+                "These lines are spoken by Emilia to Desdemona in Act 4 Scene 3 of Shakespeare's *Othello*, in reply to Desdemona's naive question as to whether there are women who would betray their husbands. They come immediately before the murder, in the quiet domestic scene where Desdemona prepares for bed.",
+                "Emilia's characteristic common sense is forcefully present here. She argues that women stray because their husbands treat them badly, and that women possess the same appetites and frailties as men: they \"see and smell\", and have palates \"both for sweet and sour\". The insistence is on shared physical humanity, and the rhetorical question and answer structure - *Is it sport? I think it is* - gives the argument the momentum of something worked out and long held.",
+                "What is paradoxical, and what gives the passage its significance, is that Emilia perceives gendered double standards with complete clarity in general while remaining entirely blind to her own husband's machinations. Shakespeare dramatises the deeply entrenched nature of these ideologies: it is harder to see the injustice of one's own marriage than to state the broad principle.",
+                "The passage is also doubly ironic in relation to the tragedy about to unfold. In Emilia's account women do err, with cause, and are punished by men. Desdemona is destroyed for precisely the opposite reason - she is so far from the temptations Emilia describes that she cannot imagine being suspected, and so takes none of the precautions that suspicion would demand. The speech therefore sharpens the audience's sense of the injustice of the final scene while appearing only to discuss marriage in general terms."
               ],
               "notes": [
-                "**It takes a position in the first clause**, then complicates it in the second sentence. Four sentences, and the whole argument is visible.",
-                "*The invitation is a trap* is a claim about the novel's **method**, not only about its content. Comments on how a text manages its reader are highly rewarded.",
-                "Two pieces of evidence are already referred to precisely — the dismissal, the month of empty mornings — without a single quotation. Precise reference can do the work of quotation.",
-                "The last clause states what is at stake in the reading, which gives the essay somewhere to arrive.",
-                "There is no *In this essay I shall*, no biography, and no definition of pride."
+                "**Identification comes first and is complete** - speaker, listener, play, act and scene, and where it falls in the action. That is the one mark, and the scheme says the rest cannot be credited without it.",
+                "**Relevance is the biggest block of marks, so it gets the most space.** Two full paragraphs on what the passage reveals and how it relates to the tragedy: three of the eight marks live here.",
+                "**Literary features are integrated, never listed.** The rhetorical question structure and the appeal to the senses are discussed *as they do their work in the argument*. There is no sentence beginning *The literary devices used are...*, and the scheme explicitly prefers it this way.",
+                "**Continuous analytical prose.** Not headings, not bullet points, not an (a)/(b)/(c) structure. This is where A/L differs sharply from O/L, where the context answers are short labelled parts.",
+                "**The length is judged for the language mark.** Around 320 words gives the examiner enough writing to assess coherence and accuracy, which is worth three marks. A short answer cannot earn them.",
+                "**It ends on significance, not summary.** The final sentence says what the speech does to the audience's response to the ending - which is precisely what *explaining its significance* asked for."
               ]
             }
           ]
         },
         {
           "type": "model",
-          "heading": "Model 2 — A body paragraph",
+          "heading": "Model 2 - the same question answered badly",
+          "level": "h2",
           "variant": "tint",
           "items": [
             {
-              "label": "Body paragraph",
+              "label": "What loses marks, and why",
+              "prompt": "The same Othello passage, answered in the way the examiners' note warns about.",
               "sample": [
-                "The clearest evidence for the conventional reading is the refusal scene, and it is worth putting the case at its strongest. When the son offers money, the father answers, \"I have managed thirty years without it\" — a reply which does not decline the offer so much as convert it into an occasion for measuring his own endurance. The precision of the figure is the telling detail: a man who has been counting has been rehearsing, and the reply arrives with the smoothness of something long prepared. The effect on the reader is discomfort rather than admiration, and the discomfort is directed at him. If the novel ended here, the proposition in the question would be unanswerable.",
-                "It does not end here, and the second half insists on the history behind that smoothness. We learn in the following chapter that the father, dismissed after twenty-two years, continued for a month to leave the house at his usual hour so that the neighbours should not know. The detail is given without comment, which is characteristic: the narrator declines to tell us how to take it. But its effect is to reframe every refusal that follows. A man who has walked out of his own door each morning into nothing has learnt that dignity must be manufactured daily, and the refusal of his son's money is the same manufacture, continued past the point of necessity."
+                "This passage is taken from *Othello* written by William Shakespeare. Emilia is the speaker.",
+                "In this passage Emilia says that wives have senses like their husbands. She says they can see and smell. She says they have palates for sweet and sour. Then she says that husbands should use them well. If not, the wives will do ills because the husbands taught them.",
+                "The literary devices used in this passage are: rhetorical question, repetition, metaphor, and imagery. The rhetorical question is \"Is it sport?\" The repetition is \"I think\". These devices make the passage more effective and beautiful.",
+                "In conclusion, this is a very important passage in the play and it shows the theme of women in society."
               ],
               "notes": [
-                "**The strongest version of the opposing case is put first**, deliberately and fairly. An essay that only defeats a weak version of the counter-argument convinces nobody.",
-                "*If the novel ended here, the proposition would be unanswerable* — this concedes fully, which makes the reversal that follows far more powerful.",
-                "**The reversal is structural**, not merely another example: the argument turns on where in the novel the evidence appears.",
-                "*The detail is given without comment, which is characteristic* — an observation about narrative technique, which is exactly the register of A/L analysis.",
-                "**Two short quotations in two substantial paragraphs.** Quantity of quotation is never the measure.",
-                "The final sentence performs the reframing rather than announcing it."
+                "**Identification is incomplete.** Play and author are given, but not the listener, the act and scene, or the point in the action - and the scheme treats identification as the gateway to the other categories.",
+                "**The second paragraph is paraphrase, not relevance.** It restates the passage line by line in weaker English. It says nothing about what the speech reveals about Emilia, or how it relates to Desdemona's death. Most of the three relevance marks are simply not attempted.",
+                "**The third paragraph is exactly what the scheme condemns** - a separate list of devices, named and then asserted to make the passage *more effective and beautiful* without saying what any of them does. The scheme's own word for this is *mechanical*.",
+                "**\"This is a very important passage\" is not significance.** It is a claim with no content. The question asked *why* it matters.",
+                "**The language mark suffers too.** The sentences are short, repetitive and structurally identical - *She says... She says... She says...* - so even where the English is accurate, it cannot be called coherent or persuasive.",
+                "**The tragedy of this answer is that the writer knows the passage.** Every fact in it is correct. It is the shape that loses the marks."
               ]
             }
           ]
         },
         {
-          "type": "model",
-          "heading": "Model 3 — A conclusion",
+          "type": "checklist",
+          "heading": "Check your own context answer",
+          "level": "h2",
           "items": [
-            {
-              "label": "Conclusion",
-              "sample": [
-                "To say that pride destroys this family is therefore to repeat the judgement of the neighbours, who see the refusals and not the mornings. The novel has been careful to give the reader both, and the difference between what the neighbours know and what we know is the measure of what it is asking of us. Its subject is not a fault of character but the afterlife of an injury: the way a defence outlasts the danger, and goes on defending against people who were never the threat. The father is at once the author of his family's unhappiness and its longest sufferer, and the novel declines, rightly, to resolve that into a verdict."
-              ],
-              "notes": [
-                "**It judges.** It does not summarise the paragraphs; it decides what the essay has established.",
-                "It returns to the question's proposition and gives a precise account of what is wrong with it.",
-                "*The difference between what the neighbours know and what we know* is a comment on the reader's position — a genuinely critical observation, arrived at rather than asserted.",
-                "The final clause holds a tension open instead of collapsing it. At A/L, refusing a false resolution is a strength, provided the refusal is argued.",
-                "**No new evidence is introduced.** Everything here has been earned by the body of the essay."
-              ]
-            }
+            "Have you named the work, the writer, the speaker, the listener and the point in the action?",
+            "Have you spent most of your answer on why the passage matters to the whole work?",
+            "Is every comment on style attached to an effect, rather than listed at the end?",
+            "Have you written enough for your English to be judged - a substantial paragraph or more, not two sentences?",
+            "Does your last sentence explain significance rather than assert importance?",
+            "Would this answer fit any other passage? If it would, it is a memorised answer and will be recognised."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use a model answer properly",
+          "level": "h2",
+          "numbered": [
+            "Read the passage and plan your own answer for five minutes before reading the model.",
+            "Write down the four criteria and decide where each of your sentences would earn its marks.",
+            "Read the model once for the argument, then again for the structure.",
+            "Read the weak version and find the four things it fails to do.",
+            "Cover both and write your own answer to the same passage, to time.",
+            "Compare, and identify **one** thing to change next time."
           ]
         },
         {
@@ -442,9 +485,9 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Common Student Mistakes", "url": "al-literature/common-mistakes/", "more": "Open" }
+            { "title": "Context Questions", "url": "al-literature/context-questions/", "more": "Open" },
+            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
+            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" }
           ]
         }
       ]

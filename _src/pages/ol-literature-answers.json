@@ -332,84 +332,158 @@
     {
       "slug": "ol-literature/model-answers",
       "title": "Model Answers",
-      "description": "O/L Literature model answers with notes: how a context answer and a full essay answer are built, and how to study a model without memorising it.",
-      "keywords": "literature model answers, sample essay, worked answer, O/L Literature",
+      "metaTitle": "O/L Literature Model Answers in the Real Paper Format | RCF English",
+      "description": "O/L Appreciation of English Literary Texts model answers written in the format the marking scheme actually uses: 1+2+2 context answers, the 10-mark extract question and 15-mark essays.",
+      "keywords": "O/L literature model answers, appreciation of English literary texts, context question format, 15 mark essay literature, O/L literature marking scheme",
       "kicker": "O/L Literature",
       "kind": "guidance",
       "schema": "LearningResource",
       "breadcrumbs": [{ "label": "O/L Literature", "url": "ol-literature/" }],
       "backTo": { "label": "O/L Literature", "url": "ol-literature/" },
-      "hero": { "text": "Models to take apart. Under each one, notes explaining what makes it work." },
+      "hero": { "text": "Answers written in the shape the marking scheme expects - not essays where phrases are wanted, and not phrases where an essay is wanted." },
       "blocks": [
         {
           "type": "callout",
-          "style": "warn",
+          "style": "note",
           "title": "Read this first",
           "bullets": [
-            "These are **teaching materials written by RCF English**, not official answers, and not the only acceptable answers.",
-            "**Do not memorise them.** A memorised answer does not fit the question you are actually asked, and examiners recognise it immediately.",
-            "The examples on this page use an **invented text**, so that the method can be shown without reproducing a copyrighted work. Model answers on the individual [text pages](ol-literature/texts/) refer to the real prescribed texts.",
-            "The notes are the lesson. The answer is only the example."
+            "These are **teaching materials written by RCF English**. They are not official answers and not the only acceptable ones.",
+            "**The format on this page follows the official marking scheme**, checked against the G.C.E. O/L *Appreciation of English Literary Texts* marking scheme. Mark splits and question shapes are taken from it.",
+            "**Do not memorise these.** A memorised answer does not fit the question actually asked, and examiners recognise it at once.",
+            "Quotations are taken only from texts that are **out of copyright**. The method works identically for the texts still in copyright."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The paper, and what each question is worth",
+          "level": "h2",
+          "caption": "Structure from the official marking scheme. Check the current syllabus for the prescribed texts of your year, which change from time to time.",
+          "stacked": true,
+          "columns": ["Question", "Marks", "What it asks for"],
+          "rows": [
+            ["Question 1, short extracts", "**5 marks each**", "Several short extracts, each with parts **(a) 1 mark**, **(b) 2 marks** and **(c) 2 marks**. Answers are phrases and sentences, not paragraphs."],
+            ["Question 1, longer extract", "**10 marks**", "One longer passage with parts (i) to (iv), usually 2 or 3 marks each, including a 'in your own words' explanation part."],
+            ["Poetry", "**15 marks**", "One essay question on a prescribed poem."],
+            ["Drama", "**15 marks**", "One essay question on a prescribed play."],
+            ["Prose", "**15 marks**", "One essay question on a prescribed prose text."],
+            ["Fiction", "**15 marks**", "One essay question on a prescribed fiction text."],
+            ["**In total**", "-", "Answer **Question 1 and four others**, selecting **one from each** of Poetry, Drama, Prose and Fiction - **five questions in all**."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The single most common formatting mistake",
+          "text": [
+            "**Writing a paragraph where the marking scheme wants a phrase.** Part (a) of a context question is worth **one mark** and asks only for the text and the writer. The scheme awards that mark for the name of the work and the name of the author. A beautifully written sentence explaining the background earns exactly the same one mark, and costs you three minutes you needed for a 15-mark essay.",
+            "**And writing a phrase where the scheme wants an argument.** A 15-mark essay answer marked against a list of indicative points needs a developed response with textual evidence, not four bullet points.",
+            "Match the shape of the answer to the marks. That alone moves many candidates up a grade."
           ]
         },
         {
           "type": "model",
-          "heading": "Model 1 — A three-mark context answer",
+          "heading": "Model 1 - a 5-mark context answer",
+          "level": "h2",
           "items": [
             {
-              "label": "Context answer",
-              "prompt": "What does the mother's silence in this scene reveal about her relationship with her husband? (3 marks)",
+              "label": "Context question, (a) 1 + (b) 2 + (c) 2 = 5 marks",
+              "prompt": "\"And the affrighted steed ran on alone.\"\n(a) From where are these lines taken? Who wrote them?\n(b) What does the action in the line indicate? Why does the steed run away?\n(c) What is the theme reflected in the line?",
               "sample": [
-                "Her silence shows that she has learnt that speaking will change nothing.",
-                "She does not contradict him even when she is described as looking at the door, which suggests that she has already decided to act rather than to argue.",
-                "The relationship therefore appears to be one in which she has stopped seeking agreement, and this prepares the reader for her departure in the following chapter."
+                "**(a)** *War is Kind.* Stephen Crane. **(1 mark)**",
+                "**(b)** The rider has been shot and has fallen from the horse; the soldier has been killed on the battlefield. The horse runs because it is frightened and now uncontrolled, with no rider to hold it. **(2 marks)**",
+                "**(c)** The horror and brutality of war; the reality of war as destruction rather than glory. **(2 marks)**"
               ],
               "notes": [
-                "Three marks, three sentences. The answer does not sprawl.",
-                "Sentence one gives the point. Sentence two gives the evidence and explains it. Sentence three gives the effect and links forward.",
-                "The evidence is precise — *looking at the door* — without needing a long quotation.",
-                "Nothing is retold. The reader of the answer is assumed to know the scene."
+                "**Part (a) is two names and nothing else.** Title and author. One mark. No sentence is needed and no extra credit exists for writing one.",
+                "**Part (b) answers both halves of the question.** It asks what the action indicates *and* why the horse runs. Two marks, so two things. Candidates who answer only the first half lose a mark they had.",
+                "**Part (c) offers the theme in a short phrase, and gives an alternative.** Marking schemes for this paper list several acceptable wordings separated by slashes - *the horror of war / the brutality of war / the reality of war*. One clear phrase earns the marks.",
+                "**Total length: about forty words for five marks.** That is the correct proportion. An answer three times as long scores the same and costs you an essay paragraph elsewhere.",
+                "**No introduction, no 'In this poem the poet is trying to say...'.** The examiner wants the answer, not a run-up to it."
               ]
             }
           ]
         },
         {
           "type": "model",
-          "heading": "Model 2 — A full essay answer",
+          "heading": "Model 2 - a 10-mark longer extract answer",
+          "level": "h2",
           "variant": "tint",
           "items": [
             {
-              "label": "Essay answer (invented text, for illustration)",
-              "prompt": "How far do you agree that the father's pride is the cause of his family's suffering?",
+              "label": "Longer extract, parts (i) to (iv)",
+              "prompt": "From *The Lumber Room* by Saki: \"You often tell me not to, and now I tell you that you may,\" came the voice from the rain-water tank, rather impatiently.\n(i) What is the situation described? (ii) Why does the speaker answer in this way? (iii) Explain \"rather impatiently\" in your own words. (iv) Describe the character revealed here.",
               "sample": [
-                "The father's pride is the most visible cause of the family's suffering, but it is not, in the end, the deepest one. The writer shows a man whose refusal of help is real and damaging, yet also shows the poverty and the loss of work that made such a refusal feel necessary to him. Pride is therefore better understood as the form his suffering takes than as its origin.",
-                "The most obvious damage certainly comes from his refusals. When his son offers him money, he replies, \"I have managed thirty years without it,\" turning a simple offer into a statement about his own endurance. The precision of the figure makes the reply sound rehearsed, as though he has been waiting years for the chance to say it. The effect on the reader is uncomfortable rather than admiring: we recognise his dignity, but we also see that his son has been refused something more than money. From this point the two men speak to each other only through the mother.",
-                "The writer, however, is careful to show where the pride came from. In the second chapter we learn that he was dismissed after twenty-two years without explanation, and that he continued to leave the house each morning at the same hour for a month afterwards so that the neighbours would not know. A man who will walk out of his own door every morning to protect his family's reputation is not simply vain. His pride is presented as a defence built in a particular situation, and the writer expects the reader to see it as such before judging him.",
-                "It would be too easy, though, to excuse him entirely. The novel makes clear that the defence outlives the danger. By the final section the family's circumstances have improved, and yet he refuses the same help he refused years earlier, when it would have made a real difference. His silence towards his son is described as \"a habit he no longer remembered choosing\", and that phrase is the writer's judgement on him: pride which began as protection has become something automatic, and it is this automatic quality, not the pride itself, that does the lasting harm.",
-                "The suffering of the family therefore has two causes working together, and the writer refuses to separate them neatly. Poverty and humiliation created the pride; the pride outlived them and hardened into silence. To say simply that pride caused the suffering would be to accept the view of the neighbours in the novel, who see only the refusals. The reader, who has been shown the month of empty mornings, is asked to reach a more difficult conclusion: that the father is both the author of his family's unhappiness and one of its victims."
+                "**(i)** The aunt has fallen into the rain-water tank in the gooseberry garden and is calling to Nicholas to fetch a ladder. Nicholas pretends not to believe that she is his aunt, since she has forbidden him to enter the garden. **(2 marks)**",
+                "**(ii)** She had told him he was not allowed into the garden, so by her own rule he must not come. He uses her own instruction against her, and enjoys doing so. **(2 marks)**",
+                "**(iii)** Showing slight annoyance; sounding a little irritated at having to explain herself. **(2 marks)**",
+                "**(iv)** Nicholas is intelligent, quick-witted and calculating. He is in control of the situation and turns his punishment to his own advantage, showing self-possession beyond his years and a certain lack of pity. **(4 marks)**"
               ],
               "notes": [
-                "**The introduction takes a position and qualifies it immediately.** That is exactly what *how far do you agree* asks for.",
-                "**Each body paragraph begins with a point**, never with an event: *The most obvious damage…*, *The writer, however, is careful…*, *It would be too easy, though…*",
-                "**The structure is an argument, not a list.** Paragraph two agrees with the question; paragraph three complicates it; paragraph four answers the complication. The essay moves.",
-                "**Quotations are short** — nine words and seven words. Two quotations are enough for an essay of this length.",
-                "**The effect on the reader is stated explicitly** more than once: *uncomfortable rather than admiring*, *asked to reach a more difficult conclusion*.",
-                "**The conclusion judges.** It does not summarise the paragraphs; it decides between them, and its final sentence says something the introduction did not.",
-                "**The tense is the present throughout** for what happens in the text: *he replies*, *the writer shows*, *the novel makes clear*.",
-                "Notice the length: five paragraphs. This is achievable in the time available. Higher marks come from development, not from volume."
+                "**Each part is answered to its own mark value.** Two marks gets two points; four marks gets a fuller answer of three or four descriptive terms with support.",
+                "**\"In your own words\" means exactly that.** Part (iii) must not repeat the phrase from the passage. Candidates who write *she was rather impatient* score nothing, because nothing has been explained.",
+                "**Character parts want a list of qualities, not a story.** Part (iv) names four qualities. Retelling what Nicholas did earns no marks that naming his cleverness would not have earned faster.",
+                "**Numbering matters.** Answer (i), (ii), (iii), (iv) under those numbers. An undivided paragraph containing all four answers makes the examiner hunt for them, and marks get missed.",
+                "*The Lumber Room* is out of copyright, so it can be quoted here in full safety."
               ]
             }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Model 3 - a 15-mark essay answer",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Essay, 15 marks",
+              "prompt": "In *The Lumber Room*, despite ill-treatment, Nicholas remains happy. Support your answer with examples from the text.",
+              "sample": [
+                "Nicholas remains happy throughout the story, and he does so because he is never actually in the position of victim that his aunt believes him to be in. From the first incident he is in control of the action, and the ill-treatment she designs for him becomes the opportunity he wanted.",
+                "The aunt's treatment of him is genuinely unkind. She excludes him from the expedition to Jagborough as a punishment, forbids him the gooseberry garden, and sets herself to guard it for the afternoon. Her intention is that he should feel his exclusion.",
+                "Nicholas, however, has planned for this. He pretends that he wishes to enter the gooseberry garden, knowing that the aunt will then station herself there to prevent him. Having drawn her outside, he is left free to enter the lumber room, which is what he wanted from the beginning. His punishment is therefore what gives him his opportunity, and he arranges it himself.",
+                "Inside the lumber room his happiness is real and not merely triumphant. The tapestry of the huntsman and the stag holds him because he can imagine into it: he wonders whether the four wolves will attack the man or the stag, and invents the rest of the story for himself. His creativity, imagination and taste keep him happy in a room the aunt regards as a place of dust and punishment.",
+                "When the aunt falls into the rain-water tank, he completes his victory in a very controlled manner. He refuses to fetch the ladder on the grounds that she herself forbade him the garden, and he does so calmly, using her own rule against her. He is not punished for this; instead he has effectively punished her.",
+                "The contrast at the end makes the point plainly. Nicholas sits at tea, still thinking about the huntsman and the stag, while the aunt is silent and depressed. He is happy because he has out-thought a dull-witted and unimaginative adult, and because he possesses something she does not: an imagination that can make any room, even a locked one, interesting."
+              ],
+              "notes": [
+                "**It answers the exact statement.** The question offers a proposition - *despite ill-treatment, Nicholas remains happy* - and the essay agrees with it and explains why, rather than writing generally about the story.",
+                "**Textual evidence in every paragraph.** The marking scheme for this paper lists indicative points and then requires textual evidence for them. Jagborough, the gooseberry garden, the tapestry, the rain-water tank, the tea table: five specific references.",
+                "**It covers the points a scheme would list** - his confidence and creativity, the aunt's cruelty, his manipulation of her, his enjoyment inside the room, his lack of punishment, the contrasted moods at the end - but in connected prose, not as a list.",
+                "**No retelling.** The plot appears only where it is evidence for a claim. An answer that narrates the story from beginning to end will not score well however accurate it is.",
+                "**Length is realistic.** Six short paragraphs, about 380 words. You have four of these to write plus Question 1, so an essay of this size is what the time actually allows.",
+                "**Present tense throughout** for what happens in the text: *he pretends*, *the aunt falls*, *he refuses*."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Format rules that come straight from the marking scheme",
+          "level": "h2",
+          "do": [
+            "Label your answers (a), (b), (c) or (i) to (iv) exactly as the question does.",
+            "Give the number of points the marks ask for - two marks, two points.",
+            "Name the text and the author in full for the identification mark.",
+            "Use short quotations or close references as evidence in 15-mark answers.",
+            "Answer five questions: Question 1, then one each from Poetry, Drama, Prose and Fiction."
+          ],
+          "dont": [
+            "Write a paragraph for a one-mark identification.",
+            "Repeat the words of the passage when asked to explain in your own words.",
+            "Retell the plot in a 15-mark essay.",
+            "Answer two questions from one section and none from another - the rubric requires one from each.",
+            "Reproduce a memorised answer that does not fit the question asked."
           ]
         },
         {
           "type": "prose",
           "heading": "How to use a model answer properly",
+          "level": "h2",
           "numbered": [
             "Read the question and plan your own answer for five minutes before reading the model.",
+            "Check the mark value first, and decide the shape your answer should take.",
             "Read the model once for the argument. What position does it take?",
-            "Read it again and mark the five parts in each paragraph: point, evidence, explanation, effect, link.",
-            "Read the notes and see how many you had spotted.",
-            "Cover the model and write your own answer to the same question.",
+            "Read the notes and see how many of the points you had spotted.",
+            "Cover the model and write your own answer to the same question, to time.",
             "Compare, and identify **one** thing to change next time."
           ]
         },
@@ -419,9 +493,9 @@
           "variant": "tint",
           "columns": "3",
           "items": [
+            { "title": "Context Questions", "url": "ol-literature/context-questions/", "more": "Open" },
             { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
-            { "title": "How Teachers Can Mark Answers", "url": "ol-literature/marking-answers/", "more": "Open" },
-            { "title": "Revision Activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+            { "title": "How Teachers Can Mark Answers", "url": "ol-literature/marking-answers/", "more": "Open" }
           ]
         }
       ]

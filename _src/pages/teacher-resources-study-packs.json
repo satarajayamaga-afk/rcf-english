@@ -1,0 +1,162 @@
+{
+  "_comment": "Study Packs page under Teacher Resources. Every pack listed comes from data/resources.json with subcategory 'study-packs'. All 17 packs added from the Drive 'packs' folder on 5 September 2026 had their sharing checked individually with the Drive permissions call and were all 'anyone / reader' - recorded as anonymousAccess: verified. Three files in that folder were exact byte-for-byte duplicates of others and were not catalogued. Grades 1, 2, 12 and 13 have no pack in the folder and are shown honestly as having none rather than being padded with unrelated material.",
+
+  "pages": [
+    {
+      "slug": "teacher-resources/study-packs",
+      "title": "Study Packs",
+      "metaTitle": "Free English Study Packs, Grade 1 to Grade 13 | RCF English",
+      "description": "Downloadable English self-learning and study packs for Sri Lankan school grades, from primary through to Ordinary Level, with a filterable list and a grade-by-grade guide.",
+      "keywords": "English study packs, self learning pack, Way Forward pack, grade 6 study pack, O/L English study pack, free English packs Sri Lanka",
+      "kicker": "Teacher Resources",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "study packs",
+      "educationalLevel": "Grade 1 to Grade 13",
+      "breadcrumbs": [
+        { "label": "Teacher Resources", "url": "teacher-resources/" }
+      ],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": {
+        "text": "Complete English study packs, free to download. Self-learning material issued by provincial education departments and the Ministry, collected here grade by grade."
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": [
+            "A study pack is a whole term's work in one file: lessons, reading passages, practice exercises and, in some packs, answers. Most of these were produced so that children could keep working when schools were closed, which is why they explain things rather than simply setting tasks.",
+            "That makes them unusually useful now - for a child catching up, for a teacher who needs ready-made material, and for a parent who wants to see what is actually covered in a year."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Where these come from, and how they are handled",
+          "text": [
+            "These packs were produced by **provincial departments of education and the Ministry of Education in Sri Lanka** and distributed free to schools. They are **linked here, not re-hosted** - every download opens the file at its own source.",
+            "**Every link was checked individually before publication.** Each file was confirmed to be shared as *Anyone with the link - Viewer*, so it opens for any visitor and cannot be altered by anyone reaching it.",
+            "Nothing in this section is RCF English's own commercial material, and no paid resource appears here. If you own the rights to something listed and want it removed, please use the [corrections and takedown page](corrections/)."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What is available, grade by grade",
+          "level": "h2",
+          "caption": "Honest coverage. Where a grade has no pack, it is listed as having none rather than being filled with unrelated material.",
+          "columns": ["Grade", "Packs available", "What they contain"],
+          "rows": [
+            ["Grade 1", "**None yet**", "No Grade 1 pack has been supplied. Primary English lessons and activities are on the [Primary English](primary-english/) pages."],
+            ["Grade 2", "**None yet**", "No Grade 2 pack has been supplied. See [Primary English](primary-english/) for lessons and activities."],
+            ["Grade 3", "2", "A full self-learning activities pack, and a shorter Southern Province pack. Picture tasks, first reading passages, handwriting and sentence work."],
+            ["Grade 4", "1", "Self-learning activities: vocabulary, short reading passages, guided writing and grammar."],
+            ["Grade 5", "1", "Self-learning activities for the Scholarship year: comprehension, vocabulary and structured writing."],
+            ["Grade 6", "2", "Way Forward packs for the first and third terms, keyed to the pupil's book by competency level."],
+            ["Grade 7", "4", "Way Forward first and third term packs, a Ministry self-study pack, and a general Grade 7 pack."],
+            ["Grade 8", "3", "Way Forward first and third term packs, and a separate self-learning pack."],
+            ["Grade 9", "3", "Way Forward first-term and 2021 packs, and a general Grade 9 pack."],
+            ["Grade 10", "2", "Way Forward first and third term packs for the first Ordinary Level year."],
+            ["Grade 11", "7", "The largest group: Way Forward first and third term packs, an O/L study pack, an acceleration kit, a Sabaragamuwa self-learning pack, and two literature packs."],
+            ["Grade 12", "**None yet**", "No pack has been supplied. For A/L General English see [General English](general-english/); for Literature see [A/L Literature](al-literature/)."],
+            ["Grade 13", "**None yet**", "No pack has been supplied. See [General English](general-english/) and [A/L Literature](al-literature/)."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Grades 1, 2, 12 and 13",
+          "text": [
+            "There are no study packs for these four grades in the collection supplied. Rather than pad the list with material that does not belong, they are shown as empty.",
+            "If packs for these grades exist, add them to the shared **packs** folder and they can be catalogued and published in the next update."
+          ]
+        },
+        {
+          "type": "browse",
+          "heading": "All study packs",
+          "level": "h2",
+          "source": "resources",
+          "fixed": { "subcategory": "study-packs" },
+          "filters": ["level", "subject", "term", "year"],
+          "note": "Every pack listed here has had its sharing checked and opens for any visitor.",
+          "intro": [
+            "Filter by grade, subject or term. Each entry opens the pack at its own source; nothing is re-hosted on this site."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Getting the most out of a study pack",
+          "level": "h2",
+          "intro": ["These are long documents, and working straight through one from page one is the least effective way to use it."],
+          "items": [
+            { "title": "Find the contents page first", "text": ["Almost every pack has one. Decide which two or three units the child actually needs before printing or reading anything."] },
+            { "title": "Use them to fill a specific gap", "text": ["A pack is at its best when a child has missed a topic or never understood one. Work the unit that covers it, not the whole book."] },
+            { "title": "Do the exercises on paper", "text": ["The packs were written to be worked through with a pen. Reading the explanations without doing the tasks teaches very little."] },
+            { "title": "Check whether the pack contains answers", "text": ["Some do and some do not. Where a separate answer key exists it is listed as its own entry in the list above."] },
+            { "title": "Match the term to the time of year", "text": ["First-term and third-term packs cover different units. Using the wrong one will not match what the class is doing."] },
+            { "title": "Print only what you need", "text": ["Several packs are over 10 MB and run to a hundred pages or more. File sizes are shown on every entry so you can judge before downloading on a phone."] }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Common questions",
+          "level": "h2",
+          "faq": true,
+          "items": [
+            {
+              "q": "Are these free?",
+              "a": [
+                "Yes, entirely. They were produced by government education departments and distributed free to schools, and they are linked here at no charge.",
+                "Nothing on this page is a paid RCF resource. RCF English's own books are in a separate [RCF Publications](rcf-publications/) section."
+              ]
+            },
+            {
+              "q": "Do I need a Google account to download them?",
+              "a": [
+                "No. Every file was checked before being listed and is shared so that anyone with the link can view and download it, whether signed in or not.",
+                "If a link ever fails to open, please tell us through the [contact page](contact/) - it usually means the owner has changed the sharing setting."
+              ]
+            },
+            {
+              "q": "What is the difference between a study pack and a past paper?",
+              "a": [
+                "A study pack **teaches**: it explains a topic, gives examples and then sets practice. A past paper **tests** what has already been learned.",
+                "Use packs during the year to learn and revise, and [past papers](past-papers/) closer to the examination to practise under time. Doing past papers before the material has been taught mostly produces discouragement."
+              ]
+            },
+            {
+              "q": "Which pack should a Grade 11 student start with?",
+              "a": [
+                "For a student who is broadly on track, the O/L English Study Pack is the most compact overview of the paper and its question types.",
+                "For a student who is behind, the O/L English Acceleration Kit is designed exactly for that situation. The Sabaragamuwa self-learning pack is the fullest of the three and best used across a whole term rather than in a final revision push."
+              ]
+            },
+            {
+              "q": "Can teachers photocopy these for a class?",
+              "a": [
+                "These were issued by education departments for exactly that purpose, so classroom use is what they were made for.",
+                "They remain the property of the issuing department. Use them with pupils freely; do not republish them as your own or sell them."
+              ]
+            },
+            {
+              "q": "Why do some grades have several packs?",
+              "a": [
+                "Different provinces produced their own material, and packs were issued term by term. Grade 11 has the most because it is the Ordinary Level examination year and received the most attention.",
+                "Where two packs cover the same grade, they are usually complementary rather than alternatives - check the term and the province shown on each entry."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "text": ["Everything downloadable, in one filterable list."] },
+            { "title": "Worksheets by grade", "url": "teacher-resources/worksheets-by-grade/", "text": ["Shorter printable material, grade by grade."] },
+            { "title": "Past Papers", "url": "past-papers/", "text": ["Papers, marking schemes and model answers."] },
+            { "title": "Teacher Resources", "url": "teacher-resources/", "text": ["Lesson plans, guides and classroom support."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

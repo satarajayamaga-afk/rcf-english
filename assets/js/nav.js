@@ -240,9 +240,12 @@
   /* --------------------------------------- small-screen search disclosure */
 
   var searchToggle = document.querySelector(".search-toggle");
-  on(searchToggle, "click", function () {
+  on(searchToggle, "click", function (event) {
     var form = document.getElementById(searchToggle.getAttribute("aria-controls"));
+    /* The control is a real link to the search page. If the inline panel is
+       missing, let the link do its job rather than swallowing the click. */
     if (!form) return;
+    if (event && event.preventDefault) event.preventDefault();
     var open = searchToggle.getAttribute("aria-expanded") === "true";
     searchToggle.setAttribute("aria-expanded", open ? "false" : "true");
     form.hidden = open;

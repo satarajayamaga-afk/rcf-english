@@ -516,7 +516,11 @@ function Header($slug) {
         # becomes an external link to the bookshop on the next build.
         $html += '<a class="header-link header-link--accent" href="' + (E (Url $script:PubFallback)) + '">' + (E $script:Config.publicationsName) + '<span class="visually-hidden">' + (PubNote) + '</span></a>'
     }
-    $html += '<button class="search-toggle" type="button" aria-expanded="false" aria-controls="mobile-search"><span class="visually-hidden">Search</span><span aria-hidden="true">&#128269;</span></button>'
+    # Global search control. It is a real link to the search page, so it works
+    # with JavaScript off; nav.js intercepts the click and opens the inline
+    # panel instead when it can. Visible at every width - the label is dropped
+    # on the narrowest phones but the button itself never disappears.
+    $html += '<a class="search-toggle" href="' + (E (Url 'search/')) + '" aria-expanded="false" aria-controls="mobile-search"><span class="search-toggle__icon" aria-hidden="true">&#128269;</span><span class="search-toggle__text">Search</span></a>'
     $html += '<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-drawer"><span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle__text">Menu</span></button>'
     $html += '</div></div>'
 
