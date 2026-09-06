@@ -322,6 +322,22 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "Eduqas GCSE English Language (C700QS)",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "intro": [
+            "The fourth board, and the only one that divides its papers by **century** rather than by kind of text. Component 1 is twentieth-century literature; Component 2 pairs a nineteenth-century non-fiction text with a twenty-first-century one. Figures read from the Summary of Assessment table in the Eduqas specification."
+          ],
+          "items": [
+            { "title": "Eduqas English Language overview", "url": "global-english/gcse/eduqas/", "more": "Start here", "text": ["Both components with their durations and weightings, the reading and writing split, and the spoken language endorsement."] },
+            { "title": "Component 1: 20th Century Literature and Creative Prose", "url": "global-english/gcse/eduqas/component-1/", "more": "Open", "text": ["One unseen 20th-century prose extract and a creative writing task. 1 hour 45 minutes, 40%."] },
+            { "title": "Component 2: 19th and 21st Century Non-Fiction", "url": "global-english/gcse/eduqas/component-2/", "more": "Open", "text": ["Two non-fiction texts two centuries apart, and transactional writing. 2 hours, 60%."] },
+            { "title": "Past papers", "url": "global-english/gcse/eduqas/papers/", "more": "Open", "text": ["Official Eduqas papers, mark schemes and annotated exemplar answers."] }
+          ]
+        },
+        {
           "type": "table",
           "id": "papers",
           "heading": "GCSE English past papers and mark schemes",
