@@ -388,8 +388,14 @@ a:hover { color: var(--teal-700); }
 @media (min-width: 560px) {
   .btn-row--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+/* On a wide screen the buttons used to be forced onto a single row with
+   grid-auto-flow: column, which works for three or four but crushes five. In
+   the hero the row is only about 575px wide, so five columns came out at
+   105px each and every label wrapped to five lines. Giving each button a
+   minimum width instead lets the row break where it has to - five buttons
+   become three and two - and no label is ever squeezed. */
 @media (min-width: 900px) {
-  .btn-row--even { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); grid-template-columns: none; }
+  .btn-row--even { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
 }
 .btn-row--even .btn {
   width: 100%;
