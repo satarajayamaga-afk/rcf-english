@@ -736,6 +736,42 @@ function RenderBlock($block) {
             return $html + '</ul></div></section>'
         }
 
+        'dialogue' {
+            # Spoken-English conversations that play out turn by turn. Every
+            # line is written into the page as ordinary readable markup, so
+            # the whole dialogue is there with JavaScript switched off; the
+            # script hides the lines and adds the controls only once it runs.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            foreach ($item in (AsList (P $block 'items'))) {
+                $speakers = @(AsList (P $item 'speakers'))
+                $html += '<div class="dlg" data-dialogue>'
+                $html += '<div class="dlg__head"><h3 class="dlg__title">' + (E (P $item 'title' 'Conversation')) + '</h3>'
+                $setting = [string](P $item 'setting' '')
+                if ($setting) { $html += '<p class="dlg__setting">' + (Inline $setting) + '</p>' }
+                $html += '</div>'
+                $html += '<ol class="dlg__lines" data-dialogue-lines>'
+                foreach ($line in (AsList (P $item 'lines'))) {
+                    $who = [string](P $line 'speaker' '')
+                    $idx = [array]::IndexOf($speakers, $who)
+                    if ($idx -lt 0) { $idx = 0 }
+                    $side = if ($idx % 2 -eq 0) { 'a' } else { 'b' }
+                    $html += '<li class="dlg__line dlg__line--' + $side + '" data-speaker="' + (E $who) + '">'
+                    $html += '<span class="dlg__who">' + (E $who) + '</span>'
+                    $html += '<span class="dlg__bubble">' + (Inline ([string](P $line 'text' ''))) + '</span>'
+                    $note = [string](P $line 'note' '')
+                    if ($note) { $html += '<span class="dlg__note">' + (Inline $note) + '</span>' }
+                    $html += '</li>'
+                }
+                $html += '</ol>'
+                $takeaway = AsList (P $item 'notes')
+                if ($takeaway.Count -gt 0) {
+                    $html += '<div class="dlg__takeaway"><h4>What to notice</h4>' + (Bullets $takeaway) + '</div>'
+                }
+                $html += '</div>'
+            }
+            return $html + '</div></section>'
+        }
+
         'dodont' {
             $html = (SectionOpen $block) + (SectionHead $block)
             $html += '<div class="do-dont"><div class="do-dont__col do-dont__col--do"><h3>' + (E (P $block 'doTitle' 'Do this')) + '</h3>'

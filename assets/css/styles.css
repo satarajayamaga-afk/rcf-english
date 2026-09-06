@@ -3285,3 +3285,89 @@ img.pcard__cover {
   font-size: 0.95rem;
 }
 
+
+/* --- Spoken English dialogues -------------------------------------------- */
+/* Lines are written into the page visible, so the conversation reads normally
+   with JavaScript off. The script adds .is-armed to hide them and play them
+   back one turn at a time. */
+
+.dlg {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #fff;
+  padding: var(--sp-4);
+  margin-block: var(--sp-4);
+}
+.dlg__title { margin: 0 0 0.25rem; font-size: var(--step-1); }
+.dlg__setting { margin: 0 0 var(--sp-3); color: var(--ink-600); font-size: var(--step--1); font-style: italic; }
+
+.dlg__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--sp-3);
+}
+.dlg__speed { display: inline-flex; align-items: center; gap: 0.4rem; font-size: var(--step--1); color: var(--ink-700); }
+.dlg__speed select { min-height: 40px; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); padding: 0.2rem 0.5rem; }
+.dlg__status { flex-basis: 100%; margin: 0; font-size: var(--step--1); color: var(--ink-600); }
+
+.dlg__lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--sp-3); }
+
+.dlg__line { display: grid; gap: 0.2rem; max-width: 42rem; }
+.dlg__line--a { justify-items: start; }
+.dlg__line--b { justify-items: end; margin-left: auto; text-align: right; }
+
+.dlg__who { font-size: var(--step--1); font-weight: 700; color: var(--ink-600); }
+
+.dlg__bubble {
+  display: inline-block;
+  padding: 0.6rem 0.9rem;
+  border-radius: 14px;
+  line-height: 1.5;
+  background: var(--navy-050);
+  border: 1px solid var(--line);
+  color: var(--ink-900);
+}
+.dlg__line--b .dlg__bubble { background: var(--teal-050); border-color: var(--teal-100); }
+
+.dlg__note { font-size: var(--step--1); color: var(--ink-600); font-style: italic; }
+
+.dlg__takeaway { margin-top: var(--sp-4); padding-top: var(--sp-3); border-top: 1px solid var(--line); }
+.dlg__takeaway h4 { margin: 0 0 var(--sp-2); font-size: var(--step-0); }
+
+/* Playback states. Only applied once the script has armed the dialogue, so
+   these can never hide content from a visitor without JavaScript. */
+.dlg.is-armed .dlg__line { display: none; }
+.dlg.is-armed .dlg__line.is-shown { display: grid; animation: dlg-in 260ms ease-out both; }
+.dlg__line.is-active .dlg__bubble { border-color: var(--teal-600); box-shadow: 0 0 0 3px var(--teal-050); }
+
+@keyframes dlg-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* The pause between turns, shown as the three dots people expect. */
+.dlg__typing { display: flex; gap: 4px; padding: 0.7rem 0.9rem; width: max-content; background: var(--navy-050); border: 1px solid var(--line); border-radius: 14px; }
+.dlg__typing--b { margin-left: auto; background: var(--teal-050); border-color: var(--teal-100); }
+.dlg__typing span { width: 7px; height: 7px; border-radius: 50%; background: var(--ink-600); opacity: 0.45; animation: dlg-dot 1.1s infinite; }
+.dlg__typing span:nth-child(2) { animation-delay: 0.18s; }
+.dlg__typing span:nth-child(3) { animation-delay: 0.36s; }
+
+@keyframes dlg-dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.35; }
+  30% { transform: translateY(-4px); opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dlg.is-armed .dlg__line.is-shown { animation: none; }
+  .dlg__typing span { animation: none; }
+}
+
+@media print {
+  .dlg__controls, .dlg__typing { display: none !important; }
+  .dlg.is-armed .dlg__line { display: grid !important; }
+  .dlg__line--b { margin-left: 0; text-align: left; justify-items: start; }
+}

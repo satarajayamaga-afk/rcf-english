@@ -375,6 +375,7 @@
 
     {
       "slug": "practical-english/spoken-english",
+      "scripts": ["dialogue"],
       "title": "Spoken English",
       "description": "How spoken English differs from written English: contractions, fillers, incomplete sentences, and the informal patterns that make speech sound natural.",
       "keywords": "spoken English, informal English, contractions, fillers, natural speech",
@@ -442,6 +443,99 @@
           "text": [
             "Spoken informality belongs in conversation, not everywhere. In a job interview, a formal presentation or a serious complaint, use fewer contractions, fewer fillers and more complete sentences.",
             "The skill is not choosing one register and staying in it. It is being able to move between them, and knowing which the situation calls for."
+          ]
+        },
+        {
+          "type": "dialogue",
+          "heading": "Four conversations, played out",
+          "level": "h2",
+          "intro": [
+            "These are written the way people actually speak, hesitations included. Press **Play conversation** and each turn arrives in time, spoken aloud where your device has a voice for it - so you hear the rhythm, not just the words.",
+            "Every line is on the page already, so you can simply read them if you prefer."
+          ],
+          "items": [
+            {
+              "title": "1. Small talk with a neighbour",
+              "setting": "Two neighbours meet at the gate. Neither has anything in particular to say, which is the point.",
+              "speakers": ["Dilani", "Mr Perera"],
+              "lines": [
+                { "speaker": "Dilani", "text": "Oh, morning! I didn't see you there.", "note": "*Oh* buys half a second. It is not a mistake." },
+                { "speaker": "Mr Perera", "text": "Morning, morning. Off early today?" },
+                { "speaker": "Dilani", "text": "Yeah, I've got to drop my sister at the station, so... a bit of a rush, actually.", "note": "*Got to* not *have to*. *So...* trails off instead of finishing - normal in speech." },
+                { "speaker": "Mr Perera", "text": "Ah, right. Which train is she catching?" },
+                { "speaker": "Dilani", "text": "The seven-forty, I think? If we make it.", "note": "Rising *I think?* softens a plain fact into something less final." },
+                { "speaker": "Mr Perera", "text": "You'll make it. Traffic's not bad yet." },
+                { "speaker": "Dilani", "text": "Hope so. Right - I'd better get on. See you later!", "note": "*Right* signals the end. *Get on* is a phrasal verb doing the work of *leave*." },
+                { "speaker": "Mr Perera", "text": "Go on, off you go. Take care." }
+              ],
+              "notes": [
+                "**Nobody exchanges information.** The whole point of small talk is to be friendly, not to communicate facts, so the content is thin on purpose.",
+                "**Contractions throughout** - *I didn't*, *I've got to*, *Traffic's*, *You'll*, *I'd better*. Written English would expand these and the exchange would sound stiff.",
+                "**Turns are short.** Nobody speaks for more than a sentence or two. Learners who prepare long answers in advance sound like they are reading."
+              ]
+            },
+            {
+              "title": "2. Returning something to a shop",
+              "setting": "A customer wants a refund. The transaction is ordinary; the language is careful.",
+              "speakers": ["Customer", "Shop assistant"],
+              "lines": [
+                { "speaker": "Customer", "text": "Sorry to bother you - I was hoping to return this.", "note": "The apology comes first. Requests in English are almost always softened." },
+                { "speaker": "Shop assistant", "text": "Of course. Is there a problem with it?" },
+                { "speaker": "Customer", "text": "It just doesn't really fit, that's all. It's not faulty or anything.", "note": "*Just*, *really*, *that's all* all reduce the force of a complaint." },
+                { "speaker": "Shop assistant", "text": "No problem at all. Have you got the receipt with you?" },
+                { "speaker": "Customer", "text": "I do, yes - hang on, let me just find it.", "note": "*Hang on* and *let me just* fill the pause while she searches." },
+                { "speaker": "Shop assistant", "text": "Take your time." },
+                { "speaker": "Customer", "text": "Here we go. Sorry, it was right at the bottom of my bag." },
+                { "speaker": "Shop assistant", "text": "That's fine. Right, I'll put that through for you now. Would you like it back on the card?", "note": "*Put through* - a phrasal verb where written English would say *process*." },
+                { "speaker": "Customer", "text": "On the card's fine, thanks. That's really kind of you." }
+              ],
+              "notes": [
+                "**The customer apologises twice** for something entirely reasonable. In English this is politeness, not weakness, and its absence sounds abrupt.",
+                "**Phrasal verbs do the work:** *hang on*, *put through*, *find it*. The formal alternatives - *wait*, *process*, *locate* - would sound like a written notice read aloud.",
+                "**Nothing is a full sentence.** *On the card's fine, thanks.* Answering in fragments is correct here; a complete sentence would sound oddly formal."
+              ]
+            },
+            {
+              "title": "3. Disagreeing with a friend",
+              "setting": "Two students disagree about a film. Watch how far the disagreement is softened before it is stated.",
+              "speakers": ["Amal", "Shanika"],
+              "lines": [
+                { "speaker": "Amal", "text": "So what did you think? I thought it was brilliant." },
+                { "speaker": "Shanika", "text": "Hmm. Yeah, I mean, it was good...", "note": "*Yeah... but* is coming. The agreement is a run-up to the disagreement." },
+                { "speaker": "Amal", "text": "But?" },
+                { "speaker": "Shanika", "text": "I don't know, I just felt it went on a bit? Like, the last half hour especially.", "note": "*I don't know* and the rising *a bit?* make the criticism provisional rather than final." },
+                { "speaker": "Amal", "text": "Really? I didn't notice that at all." },
+                { "speaker": "Shanika", "text": "No, fair enough - maybe it's just me. I was pretty tired by then, to be honest.", "note": "She offers a way out of the disagreement by blaming herself." },
+                { "speaker": "Amal", "text": "No, no, I can see what you mean about the ending. It did drag a bit.", "note": "He concedes partly. Both move towards each other rather than settling it." },
+                { "speaker": "Shanika", "text": "Right? Anyway - it was worth seeing. I'm glad we went." }
+              ],
+              "notes": [
+                "**Nobody says \"I disagree\".** Direct contradiction is rare between friends; the disagreement arrives wrapped in *I don't know*, *maybe*, *a bit*, *just*.",
+                "**Both sides give ground.** Shanika blames her tiredness, Amal admits the ending dragged. The conversation ends closer than it started.",
+                "**\"Anyway\" closes the subject.** It signals that the topic is finished and no one needs to win."
+              ]
+            },
+            {
+              "title": "4. The same speaker in a job interview",
+              "setting": "Shanika again, three weeks later. Compare her English here with conversation 3.",
+              "speakers": ["Interviewer", "Shanika"],
+              "lines": [
+                { "speaker": "Interviewer", "text": "Thank you for coming in. Could you tell us a little about your current role?" },
+                { "speaker": "Shanika", "text": "Certainly. I have been working as a teaching assistant for the past two years, mainly with Grade 9 and 10 classes.", "note": "*Certainly*, and *I have been* rather than *I've been*. Fewer contractions is the clearest marker of a formal register." },
+                { "speaker": "Interviewer", "text": "And what would you say has been your main achievement there?" },
+                { "speaker": "Shanika", "text": "I would say the reading programme I set up last year. Attendance was poor when I started, and by the end of the term most of the class were attending regularly.", "note": "A complete, structured answer - situation, then result. Nothing trails off." },
+                { "speaker": "Interviewer", "text": "That's interesting. What was the difficulty at the start?" },
+                { "speaker": "Shanika", "text": "The main difficulty was persuading students that it was worth their time. I found that asking them to choose the books themselves made a considerable difference.", "note": "*Considerable* rather than *big*. Formal speech reaches for the more precise word." },
+                { "speaker": "Interviewer", "text": "Thank you. Do you have any questions for us?" },
+                { "speaker": "Shanika", "text": "Yes, I do. Could you tell me how the department supports teachers who are new to the school?" }
+              ],
+              "notes": [
+                "**This is the same person as conversation 3.** Nothing about her English has improved; she has changed register, which is the actual skill.",
+                "**Almost no contractions, no fillers, no trailing off.** Every answer is complete and finishes where it means to.",
+                "**Fuller vocabulary:** *considerable* for *big*, *persuading* for *getting them to*, *supports* for *helps out*. The phrasal verbs largely disappear.",
+                "**But it is still speech.** She says *I would say* and *I found that*, which are spoken, not written, formulas. Formal is not the same as writing an essay aloud."
+              ]
+            }
           ]
         },
         {

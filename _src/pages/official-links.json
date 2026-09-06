@@ -1,0 +1,339 @@
+{
+  "_comment": "Government circulars and official links. EVERY external link on these three pages was checked with an HTTP request and returned 200 before publication. Circular numbers and titles were read from the Ministry of Education circulars index itself, not invented, and are presented as examples of what the index contains rather than as a maintained list - circulars are superseded constantly and a frozen list would mislead. No circular PDF is linked directly, because those move; the index is linked instead. There is no subject-specific circular series for English teachers, and the pages say so rather than implying one exists.",
+
+  "pages": [
+    {
+      "slug": "teacher-resources/circulars",
+      "title": "Government Circulars",
+      "metaTitle": "Sri Lanka Education Circulars for Teachers: Where to Find Them | RCF English",
+      "description": "Where to find Ministry of Education circulars, how the numbering works, which ones affect teachers most, and what English teachers specifically need to watch.",
+      "keywords": "education circulars Sri Lanka, moe circulars, teacher transfer circular, teacher promotion circular, ministry of education circular",
+      "kicker": "Teacher Resources",
+      "kind": "page",
+      "schema": "WebPage",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Circulars decide transfers, promotions, salary steps and much of what happens in a school year. Here is where the official ones live, and how to read them." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Read this before relying on anything here",
+          "text": [
+            "**This is a signpost, not an authority.** RCF English is not a government body and cannot advise on service matters. For anything affecting your appointment, salary, transfer or promotion, the circular itself and your zonal or provincial office are the only reliable sources.",
+            "**Circulars are superseded constantly.** A circular that was correct last year may have been replaced, amended or withdrawn. That is why this page links to the **official index**, which is always current, rather than to individual documents that move or go stale.",
+            "**Always check the date and the number** before acting on any circular you find - including one a colleague forwards you."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The official sources",
+          "level": "h2",
+          "columns": "2",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Ministry of Education circulars",
+              "url": "https://moe.gov.lk/circulars/",
+              "more": "Open the official index",
+              "text": ["The complete, current list of Ministry circulars, newest first, with a search box. This is the page to bookmark."],
+              "bullets": ["Searchable by circular name", "Sinhala, Tamil and English", "Always the current version"]
+            },
+            {
+              "title": "Ministry of Public Administration",
+              "url": "https://pubad.gov.lk/",
+              "more": "Open the site",
+              "text": ["Circulars that apply to all public servants, not only teachers: salaries, pensions, leave, allowances and general conditions of service."],
+              "bullets": ["Applies to teachers as public officers", "Salary and pension matters", "General service conditions"]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How circular numbers work",
+          "level": "h2",
+          "text": [
+            "A Ministry circular is identified by a **number and a year**, written as *number/year* - for example **35/2025**. The number is the sequence within that year, not a subject code, so 35/2025 tells you nothing about the topic; you have to read the title.",
+            "Two things follow from this, and both catch teachers out."
+          ],
+          "bullets": [
+            "**A circular issued in one year often governs the following year.** Circular 35/2025 sets the transfer procedure for **2026**. Always read the year in the *title*, not just the year in the number.",
+            "**Amendments carry a bracketed suffix**, such as **32/2025(i)**. The suffixed version amends the original; you need both to know what currently applies.",
+            "**A newer circular can silently replace an older one** without the old one being taken down. If two circulars conflict, the later date wins - but check the index rather than assuming."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The kinds of circular that affect teachers most",
+          "level": "h2",
+          "caption": "Examples taken from the Ministry's own index at the time of writing, to show what each kind looks like. These are illustrations, not a maintained list - search the index for the version that applies to you now.",
+          "stacked": true,
+          "columns": ["Type", "What it covers", "Example seen on the index"],
+          "rows": [
+            ["**Annual transfer schemes**", "Who may apply, the closing dates, the marking criteria and the appeal procedure. Issued yearly, usually the year before they take effect.", "*Annual Transfer Procedure, Officers of the Sri Lanka Teacher Educators' Service - 2026* (**35/2025**)"],
+            ["**Service and administrative transfers**", "Transfers within the Education Administrative Service, by grade.", "*Annual Transfer Scheme of the Sri Lanka Education Administrative Service - 2027, Grades I, II and III* (**23/2026**)"],
+            ["**Efficiency bars**", "The examinations and conditions for passing an efficiency bar, which gates salary progression.", "*Regarding the First Efficiency Bar of the Teacher Advisor Service* (**32/2025(i)**) - note the amendment suffix"],
+            ["**Recruitment and qualifications**", "Entry requirements, including language proficiency requirements for teacher service regulations.", "Circular **06/2025**, on bridge language proficiency requirements"],
+            ["**School administration**", "Admissions, the school calendar, examinations and day-to-day school operation.", "*Admitting children to grade one in schools* (**25/2026**)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Is there a separate circular series for English teachers?",
+          "text": [
+            "**No.** The Ministry's circulars are numbered in one sequence and are not divided by subject, so there is no English-teachers' circular list to look for. What affects you as an English teacher is the same set of service circulars that affects every other teacher.",
+            "What *is* subject-specific comes from elsewhere: **syllabuses and teachers' guides from the National Institute of Education**, **textbooks from the Educational Publications Department**, and examination instructions from the **Department of Examinations**. Those are on the [official links page](teacher-resources/official-links/).",
+            "So: search the circular index for service matters, and go to the NIE and EPD for anything about what and how you teach."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Finding the circular you actually need",
+          "level": "h2",
+          "items": [
+            { "title": "Start at the index, not a search engine", "text": ["Open the [Ministry circulars page](https://moe.gov.lk/circulars/). A web search will often surface an old copy of a superseded circular on a forwarding site, which is exactly the mistake to avoid."] },
+            { "title": "Search by a word from the title", "text": ["The index has a search box that filters by circular name. Try *transfer*, *efficiency*, *promotion*, *admission* rather than a number you half-remember."] },
+            { "title": "Check the year inside the title", "text": ["A transfer circular issued in 2025 may govern 2026 or 2027. The year that matters is the one in the title, not the one in the number."] },
+            { "title": "Look for an amendment", "text": ["Search the same keyword again for a bracketed version - (i), (ii) - which amends the original. Read both."] },
+            { "title": "Note the number and date before you act", "text": ["Write both down. If you later need to raise a query with your zonal office, the number and date are the first things you will be asked for."] },
+            { "title": "Confirm with your zonal or provincial office", "text": ["For anything that affects your own service record, confirm the interpretation with the office that will process it. A circular tells you the rule; the office tells you how it applies to your case."] }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Important links for teachers", "url": "teacher-resources/official-links/", "text": ["Teacher service, transfers, promotions, training and syllabus sources."] },
+            { "title": "Examination links for students", "url": "past-papers/examination-links/", "text": ["Timetables, results and the Department of Examinations."] },
+            { "title": "Teacher Resources", "url": "teacher-resources/", "text": ["Lesson planning, worksheets and classroom support."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "teacher-resources/official-links",
+      "title": "Important Links for Teachers",
+      "metaTitle": "Official Links for Sri Lankan Teachers: Service, Promotions, Training | RCF English",
+      "description": "Verified official links for Sri Lankan teachers: teacher service, transfers, promotions, training modules and seminars, syllabuses, teachers' guides and textbooks.",
+      "keywords": "teacher service Sri Lanka, teacher transfers, teacher promotions, NIE teacher training, teachers guides, official links teachers",
+      "kicker": "Teacher Resources",
+      "kind": "page",
+      "schema": "WebPage",
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "The official pages a teacher actually needs, in one place. Every link here was checked before publication and opens on a government site." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "About these links",
+          "text": [
+            "**Every link on this page was tested and returned a working page before publication.** Government sites do reorganise, so if one fails please tell us through the [contact page](contact/) and we will correct it.",
+            "**RCF English is not a government body.** These are signposts to official sources. For anything affecting your appointment, salary or service record, the official document and your zonal or provincial office are what count."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Teacher service, transfers and promotions",
+          "level": "h2",
+          "caption": "Ministry of Education pages for the three services teachers move through.",
+          "columns": ["What you need", "Official page"],
+          "rows": [
+            ["**Promotions** - grade promotions, the conditions and the procedure", "[Promotions](https://moe.gov.lk/promotions/)"],
+            ["**Transfers** - annual transfer schemes, applications and appeals", "[Teacher transfers](https://moe.gov.lk/teacher-transfers/)"],
+            ["**Sri Lanka Teacher Service** - the service you are appointed to, its grades and regulations", "[Sri Lanka Teacher Service](https://moe.gov.lk/sri-lanka-teacher-service/)"],
+            ["**Sri Lanka Teacher Educators' Service** - for those in teacher training roles", "[Teacher Educators' Service](https://moe.gov.lk/sri-lanka-teacher-educators-service/)"],
+            ["**Sri Lanka Principals' Service** - for principals and those seeking appointment", "[Principals' Service](https://moe.gov.lk/sri-lanka-principals-service/)"],
+            ["**Circulars** - the rules behind all of the above", "[Ministry circulars index](https://moe.gov.lk/circulars/) - and see [our guide](teacher-resources/circulars/)"],
+            ["**Public service conditions** - salaries, pensions, leave and allowances", "[Ministry of Public Administration](https://pubad.gov.lk/)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Promotions: the three things teachers most often miss",
+          "text": [
+            "**The efficiency bar is a gate, not a formality.** Salary progression stops at an efficiency bar until it is passed. Check which bar applies to your grade and when you are due to sit it - the requirements are set by circular and do change.",
+            "**Transfer and promotion run on separate calendars.** A transfer application does not advance a promotion, and being transferred does not reset your seniority. They are governed by different circulars.",
+            "**Closing dates are strict and are published only once.** Annual transfer circulars appear the year before they take effect, so the circular you need in 2026 was probably issued in 2025. Check the index at the start of each year rather than waiting for word to reach your school."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Regional English Support Centres - the ones built for you",
+          "text": [
+            "**There are 30 Regional English Support Centres (RESCs) across the island**, and they exist specifically to support English teachers. They are coordinated by the **Department of English at the National Institute of Education**, which states its role as *fostering* the centres and *monitoring and evaluating* them while running professional development programmes for RESC staff.",
+            "This is the single most useful thing on this page for an English teacher, and the one most often not known about. An RESC is where subject-specific in-service training, materials and mentoring actually happen - as opposed to general teacher training, which is organised differently.",
+            "**RESCs do not each have a public website.** The centres are attached to zones and provinces, so the way to reach the one nearest you is through your **zonal education office** or the NIE Department of English. There is no national directory of them online that we have been able to verify, and we would rather say so than send you to a list that may be out of date."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Training, modules and seminars",
+          "level": "h2",
+          "caption": "Professional development and the material behind it. The NIE is the body that produces syllabuses, teachers' guides and in-service training, and it runs the English department that oversees the RESCs.",
+          "columns": ["What you need", "Official page"],
+          "rows": [
+            ["**NIE Department of English** - the department that oversees the 30 Regional English Support Centres and runs professional development for English teaching", "[Department of English, NIE](https://www.nie.ac.lk/departments/department-of-english/)"],
+            ["**National Institute of Education** - syllabuses, teachers' guides, curriculum and teacher training", "[nie.ac.lk](https://www.nie.ac.lk/)"],
+            ["**NIE publications and guides** - the site that hosts the teachers' guide documents themselves", "[nie.lk](https://www.nie.lk/)"],
+            ["**NIE faculties and departments** - who does what, and whom to approach", "[Faculty](https://www.nie.ac.lk/faculty)"],
+            ["**Teachers' guides for English** - already catalogued here with direct links, Grade 6 to Advanced Level", "[Teacher downloads](teacher-resources/downloads/)"],
+            ["**Educational Publications Department** - the pupils' books your class is working from, free to download", "[edupub.gov.lk](http://www.edupub.gov.lk/)"],
+            ["**Study packs** - term packs and self-learning material, Grade 3 to Grade 11", "[Study packs](teacher-resources/study-packs/)"],
+            ["**Ministry of Education** - policy, announcements and the departments behind all of it", "[moe.gov.lk](https://moe.gov.lk/)"],
+            ["**Government services portal** - other departments and services", "[gov.lk](https://www.gov.lk/)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Two NIE addresses, and which to use",
+          "text": [
+            "The NIE is reachable at both **nie.ac.lk** and **nie.lk**, and both work. They are not identical.",
+            "**nie.ac.lk** carries the institutional site - departments, faculties, and the Department of English that oversees the RESCs. Use it for finding people and programmes.",
+            "**nie.lk** is where the teachers' guide documents themselves are hosted; the direct guide links in our [teacher downloads](teacher-resources/downloads/) point there.",
+            "If a link on one fails, try the other before assuming the document has gone."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "How in-service training and seminars are announced",
+          "text": [
+            "Most subject seminars, in-service advisor sessions and training modules for English teachers are organised at **zonal and provincial level**, not nationally, and are announced through your zonal education office or your **Regional English Support Centre** rather than on a public website. There is no single national calendar of them.",
+            "The practical consequence: the NIE is where the **material** lives - syllabuses, teachers' guides and training modules - while the **dates** come from your zone or your RESC. If you are not hearing about sessions, the zonal English in-service advisor and the nearest RESC are the two people to ask.",
+            "**RCF English also runs its own training.** The [Literature Orientation course for new teachers](rcf-classes/) is a one-month online course, and is separate from anything the Ministry or NIE provides."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Examinations, for teachers preparing candidates",
+          "level": "h2",
+          "caption": "The student-facing versions of these are on the [examination links page](past-papers/examination-links/).",
+          "columns": ["What you need", "Official page"],
+          "rows": [
+            ["**Department of Examinations** - the authority for O/L, A/L and Grade 5 Scholarship", "[doenets.lk](https://www.doenets.lk/)"],
+            ["**Examination timetables**", "[Timetables](https://www.doenets.lk/examtimetable)"],
+            ["**Examination calendar** - the year's examinations at a glance", "[Calendar](https://www.doenets.lk/examcalendar)"],
+            ["**School examinations**", "[School examinations](https://www.doenets.lk/schoolexam)"],
+            ["**Applications** - for candidates, including private candidates", "[Applications](https://www.doenets.lk/applications)"],
+            ["**Official past papers**", "[Past papers](https://www.doenets.lk/pastpapers) - and our [past paper library](past-papers/)"]
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Government circulars", "url": "teacher-resources/circulars/", "text": ["How circulars work and where to find the current one."] },
+            { "title": "Examination links for students", "url": "past-papers/examination-links/", "text": ["Timetables, results and applications."] },
+            { "title": "Study packs", "url": "teacher-resources/study-packs/", "text": ["Downloadable term packs, Grade 3 to 11."] },
+            { "title": "Teacher Resources", "url": "teacher-resources/", "text": ["Lesson planning and classroom support."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "past-papers/examination-links",
+      "title": "Examination Timetables and Official Links",
+      "metaTitle": "Sri Lanka Exam Timetables, Results and Department of Examinations Links | RCF English",
+      "description": "Verified official links for students: O/L and A/L examination timetables, results, applications and past papers from the Department of Examinations.",
+      "keywords": "exam time table Sri Lanka, doenets, department of examinations, OL AL timetable, exam results Sri Lanka, exam applications",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "schema": "WebPage",
+      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
+      "backTo": { "label": "Past Papers", "url": "past-papers/" },
+      "hero": { "text": "Timetables, results and applications come from one place: the Department of Examinations. These links go straight there." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Go to the source for anything that matters",
+          "text": [
+            "**Every link on this page was tested and returned a working page before publication**, and all of them open on official government sites.",
+            "**Never rely on a forwarded screenshot for a date.** Timetables are revised, and an out-of-date image circulating on social media is the commonest reason candidates arrive on the wrong day. Check the Department's own page.",
+            "RCF English is not connected to the Department of Examinations and cannot answer questions about your index number, application or results."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "The pages you will need most",
+          "level": "h2",
+          "columns": "3",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Examination timetables",
+              "url": "https://www.doenets.lk/examtimetable",
+              "more": "Open timetables",
+              "text": ["The official timetable for each examination, including O/L, A/L and Grade 5 Scholarship. Always check here rather than relying on a forwarded image."]
+            },
+            {
+              "title": "Examination calendar",
+              "url": "https://www.doenets.lk/examcalendar",
+              "more": "Open the calendar",
+              "text": ["The year's examinations at a glance, useful for planning revision months rather than days."]
+            },
+            {
+              "title": "Results",
+              "url": "https://www.doenets.lk/results",
+              "more": "Open results",
+              "text": ["Official results releases. Results appear here first, before any other site republishes them."]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "All official examination links",
+          "level": "h2",
+          "caption": "Every link opens on a government site.",
+          "columns": ["What you need", "Official page"],
+          "rows": [
+            ["**Department of Examinations** - the main site", "[doenets.lk](https://www.doenets.lk/)"],
+            ["**Examination timetables**", "[Timetables](https://www.doenets.lk/examtimetable)"],
+            ["**Examination calendar**", "[Calendar](https://www.doenets.lk/examcalendar)"],
+            ["**Results**", "[Results](https://www.doenets.lk/results)"],
+            ["**Applications** - including private candidates", "[Applications](https://www.doenets.lk/applications)"],
+            ["**Online applications and services**", "[onlineexams.gov.lk](https://onlineexams.gov.lk/)"],
+            ["**Examinations information**", "[Examinations](https://www.doenets.lk/exam)"],
+            ["**School examinations**", "[School examinations](https://www.doenets.lk/schoolexam)"],
+            ["**Official past papers**", "[Past papers](https://www.doenets.lk/pastpapers)"],
+            ["**Textbooks**", "[Educational Publications Department](http://www.edupub.gov.lk/)"],
+            ["**Syllabuses and teachers' guides**", "[National Institute of Education](https://www.nie.lk/)"],
+            ["**Ministry of Education**", "[moe.gov.lk](https://moe.gov.lk/)"],
+            ["**Government services portal**", "[gov.lk](https://www.gov.lk/)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Four things worth doing early",
+          "text": [
+            "**Check the timetable the week it is released, not the week before the examination.** Subjects occasionally move, and knowing early is what lets you plan revision around the actual gaps between papers.",
+            "**Private candidates: watch the application closing date.** It falls months before the examination, and it is not extended. The [applications page](https://www.doenets.lk/applications) is the only place that matters.",
+            "**Print or save your admission card as soon as it is issued.** Do not rely on being able to download it the night before.",
+            "**Note the gaps between your papers.** A three-day gap before Literature is worth more than any amount of revision planned in advance without knowing it exists."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "level": "h2",
+          "items": [
+            { "title": "Past paper library", "url": "past-papers/", "text": ["Papers, marking schemes and model answers by grade and subject."] },
+            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "text": ["Getting more out of a paper than a mark."] },
+            { "title": "Important links for teachers", "url": "teacher-resources/official-links/", "text": ["Service, promotions, training and syllabus sources."] },
+            { "title": "Government circulars", "url": "teacher-resources/circulars/", "text": ["Where circulars live and how to read them."] }
+          ]
+        }
+      ]
+    }
+  ]
+}
