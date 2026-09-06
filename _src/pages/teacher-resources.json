@@ -78,6 +78,32 @@
         },
         {
           "type": "cards",
+          "heading": "Circulars, service and official information",
+          "eyebrow": "For your service, not your classroom",
+          "variant": "tint",
+          "columns": "2",
+          "intro": [
+            "Circulars decide transfers, promotions and salary steps, and most of what teachers need is published on government sites that are hard to search. These two pages are signposts to the official sources, with every link checked."
+          ],
+          "items": [
+            {
+              "title": "Government Circulars",
+              "url": "teacher-resources/circulars/",
+              "more": "How to find the current one",
+              "text": ["How Ministry circular numbering works, the five kinds that affect teachers, and how to find the version that applies now rather than a superseded copy."],
+              "bullets": ["Links the always-current official index", "Explains amendments and year-in-title traps", "Why there is no English-teachers' circular series"]
+            },
+            {
+              "title": "Important Links for Teachers",
+              "url": "teacher-resources/official-links/",
+              "more": "Service, promotions and training",
+              "text": ["Teacher service, transfers, promotions, the Establishments Code, the Service Minute, the ten Efficiency Bar modules, and the Regional English Support Centres."],
+              "bullets": ["Every link tested before publication", "The two documents that govern your service", "NIE, EPD and the 30 RESCs"]
+            }
+          ]
+        },
+        {
+          "type": "cards",
           "heading": "More for teachers",
           "columns": "3",
           "items": [
