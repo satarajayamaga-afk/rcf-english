@@ -182,20 +182,21 @@
               "label": "Original RCF model answer (289 words)",
               "prompt": "Some people believe that developments in technology will make teachers unnecessary within a few decades. To what extent do you agree or disagree?",
               "sample": [
-                "The claim that technology will shortly make teachers redundant has been made in some form since the arrival of educational television, and it has never yet come true. I disagree with it, although I think one part of the prediction is correct and deserves to be taken seriously.",
-                "The part that is correct concerns the delivery of information. A recorded explanation by an outstanding teacher can be paused, repeated and watched by millions, and it is almost always better than an average explanation delivered live to thirty people. Software can also mark, drill and adapt the difficulty of practice questions faster and more patiently than any person. If teaching consisted of transmitting content and setting exercises, the prediction would be sound.",
-                "But that is not what most of the work is. The difficult part of teaching is diagnosis: working out which particular misunderstanding is preventing this specific student from progressing, when the student usually cannot say what it is and often does not know. A good teacher infers it from a wrong answer, a hesitation, or a question that reveals a gap three topics further back. Adaptive software can identify which question was failed; it is much weaker at identifying why. The second irreplaceable element is motivation. Most students work because someone they do not want to disappoint is expecting the work, and no amount of technology has yet produced that relationship.",
-                "It is also worth noting the evidence of the last twenty years. Very large sums have been invested in educational technology, and the effect on the number of teachers employed has been negligible.",
-                "In my view, therefore, technology will continue to take over the parts of teaching that can be standardised, and this will change what teachers spend their days doing. It will not remove the need for them."
+                "Some people believe that technology will soon make teachers unnecessary. I disagree with this view, although I accept that one part of it is true.",
+                "The part that is true concerns information. A recorded lesson by an excellent teacher can be paused, repeated and watched by thousands of students. Software can also mark exercises and change their difficulty, and it does this faster and more patiently than any person. If teaching were only about explaining content and setting practice, the prediction would probably be correct.",
+                "However, this is not what most of a teacher's work involves. The hardest part of teaching is working out why a particular student is stuck. Students often cannot explain the problem themselves, and sometimes they do not know what it is. A good teacher notices it from a wrong answer, a long pause, or a question that shows a gap from an earlier topic. Software can see which question was answered wrongly, but it is much weaker at seeing why.",
+                "The second thing technology cannot replace is motivation. Most students work because someone they respect is expecting the work from them. No program has yet created that kind of relationship, and I do not think one will do so soon.",
+                "It is also worth looking at the evidence of recent years. Governments and schools have spent very large sums on educational technology, and yet the number of teachers employed has not fallen.",
+                "In my opinion, therefore, technology will keep taking over the parts of teaching that can be made routine. This will change what teachers do each day, but it will not remove the need for them."
               ],
               "notes": [
-                "**The position is stated in the first paragraph and never wavers** - *I disagree ... although one part is correct*. That is a precise answer to *to what extent*, not a fence-sit.",
-                "**The concession comes first and is generous.** Paragraph two argues the opposing case properly, including a conditional that concedes everything - *If teaching consisted of transmitting content, the prediction would be sound*. Granting the strongest version of the other side is what separates a Band 8 argument from a Band 6 one.",
-                "**The central paragraph makes one distinction and develops it** - between delivering information and diagnosing a misunderstanding - and then supports it with the mechanism (*a hesitation, or a question that reveals a gap three topics further back*).",
-                "**The short fourth paragraph is deliberate.** A one-sentence-idea paragraph after three long ones varies the rhythm and reads as control. It also supplies evidence without inventing a statistic.",
-                "**No fabricated data.** *Very large sums* and *negligible* are honest and cost nothing; *$13 billion* and *2.7%* would have earned no extra marks and risked implausibility.",
-                "**The conclusion moves the position slightly forward** rather than repeating it: the job changes rather than disappears. Conclusions that merely restate the introduction in synonyms read as padding.",
-                "**289 words.** Comfortably above 250 and below the point where accuracy starts to suffer."
+                "**The position is clear from the second sentence** - *I disagree with this view, although I accept that one part of it is true.* That is a precise answer to *to what extent*, not a fence-sit.",
+                "**The concession comes first and is generous.** The second paragraph argues the opposing case properly and ends with a conditional that grants it everything: *If teaching were only about explaining content and setting practice, the prediction would probably be correct.* Granting the other side its strongest form is what lifts an essay above Band 6.",
+                "**The central paragraph makes one distinction and develops it** - between passing on information and working out why a student is stuck - and then shows the mechanism: *a wrong answer, a long pause, or a question that shows a gap from an earlier topic.*",
+                "**The fourth paragraph is deliberately short.** A brief paragraph after three longer ones varies the rhythm and reads as control. It also supplies evidence without inventing a statistic.",
+                "**No invented data.** *Very large sums* and *has not fallen* are honest and cost nothing. A figure like *$13 billion* would earn no extra marks and might be wrong.",
+                "**The conclusion moves the position forward** rather than repeating it: the job changes rather than disappears. Conclusions that restate the introduction in synonyms read as padding.",
+                "**272 words, and sentences of about fifteen words on average.** This is deliberately a Band 7 to 7.5 model, not a Band 9 one. Long sentences and rare vocabulary are not what moves you up; answering the exact question, conceding fairly and developing two ideas properly are."
               ]
             }
           ]
@@ -205,11 +206,11 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "has been made in some form since", "def": "A way of dating an argument that signals perspective without claiming a statistic." },
-            { "term": "although I think one part of the prediction is correct", "def": "The standard construction for a partial position. It answers *to what extent* exactly." },
-            { "term": "If X consisted of Y, the prediction would be sound", "def": "A second conditional used to concede. Shows grammatical range and generosity at the same time." },
-            { "term": "It is also worth noting", "def": "Introduces supporting evidence without the heaviness of *Furthermore, it is important to note that*." },
-            { "term": "the parts of teaching that can be standardised", "def": "A precise noun phrase doing the work that a vague word like *aspects* would not." }
+            { "term": "I disagree with this view, although I accept that one part of it is true.", "def": "The standard shape for a partial position. It answers *to what extent* exactly, and it is easy to reuse." },
+            { "term": "If teaching were only about X, the prediction would probably be correct.", "def": "A second conditional used to concede. It shows a complex structure and generosity at the same time." },
+            { "term": "However, this is not what most of a teacher's work involves.", "def": "A clean pivot from the concession back to your own case." },
+            { "term": "It is also worth looking at the evidence of recent years.", "def": "Introduces supporting evidence without the heaviness of *Furthermore, it is important to note that*." },
+            { "term": "In my opinion, therefore,", "def": "Signals the conclusion and the opinion together. Examiners look for the opinion to be unmistakable." }
           ]
         },
         {
@@ -304,20 +305,20 @@
               "label": "Original RCF model answer (294 words)",
               "prompt": "Some people believe that university education should be free for all students. Others argue that students should pay towards the cost of their own studies. Discuss both these views and give your own opinion.",
               "sample": [
-                "Arguments about tuition fees are rarely arguments about whether higher education is valuable. They are arguments about who benefits from it, and therefore who ought to pay. Both of the usual positions capture something true, and I believe a sensible policy has to combine them.",
-                "Those who favour free provision make two strong points. The first is access. If a degree costs a large sum at the point of entry, the students most likely to be deterred are those from families with no experience of higher education and no savings to fall back on, and they will be deterred by the fear of the debt rather than by its actual terms. The second is that society as a whole gains from an educated population: everyone benefits from competent doctors, engineers and teachers, whether or not they attended university themselves.",
-                "The opposing case is also serious, and it is usually misrepresented. Graduates do, on average, earn substantially more over a lifetime than non-graduates, and a system funded entirely from general taxation asks people who did not go to university, and who typically earn less, to pay for those who did. Free provision sounds egalitarian, but its effects are not straightforwardly so.",
-                "My own view takes the strongest element of each. Nobody should have to find money in order to begin a degree, because that is the point at which access is lost. But those who go on to earn a great deal because of that degree should contribute more than those who do not - which means repayment through the tax system, tied to income and written off if the income never arrives.",
-                "The principle, in short, is that the cost should follow the benefit, but that it should never be presented as a bill to an eighteen-year-old."
+                "Arguments about university fees are not really arguments about whether education is valuable. They are arguments about who gains from it, and therefore who should pay. Both sides have a fair point, and I believe a good system needs to combine them.",
+                "Those who support free education make two strong arguments. The first is access. If a degree costs a large sum at the start, the students most likely to be put off are those from families with no experience of university and no savings. They are frightened by the idea of the debt, even before they look at the terms. The second argument is that society as a whole benefits. Everyone gains from having good doctors, engineers and teachers, whether or not they went to university themselves.",
+                "The opposite view is also serious. Graduates earn considerably more over a lifetime than non-graduates. A system paid for entirely out of general taxation therefore asks people who did not go to university, and who usually earn less, to pay for those who did. Free education sounds fair, but its effects are not always fair.",
+                "My own view takes the strongest part of each argument. Nobody should have to find money in order to start a degree, because that is the point at which access is lost. However, those who later earn a great deal because of that degree should pay back more than those who do not. This means repaying through the tax system, according to income, and writing the debt off if the income never comes.",
+                "In short, the cost should follow the benefit. What it should never be is a bill handed to an eighteen-year-old."
               ],
               "notes": [
-                "**Both views are given real weight, and the second is defended, not knocked down.** *The opposing case is also serious, and it is usually misrepresented* is the sentence that lifts this essay - it signals a candidate who is thinking rather than reciting.",
-                "**The opinion is a genuine third position**, not a shrug. Examiners accept a synthesis, provided it is stated clearly and argued for. *It depends on the situation* would not qualify.",
-                "**The introduction reframes the question** rather than repeating it. Identifying what the argument is *really* about - who benefits, therefore who pays - gives the whole essay a spine.",
-                "**Each paragraph develops a mechanism, not just a claim.** The access point is not left at *poor students can't afford it*; it explains that the deterrent is the fear of debt rather than the terms of it.",
-                "**The counter-intuitive point earns marks:** *Free provision sounds egalitarian, but its effects are not straightforwardly so.* Complexity handled in one sentence.",
-                "**The conclusion states a principle**, which is more valuable than a summary, and the final clause gives it an image to land on.",
-                "**294 words**, four body ideas across three paragraphs, no invented figures - *on average, earn substantially more* is honest and sufficient."
+                "**Both views get real weight, and the second is defended rather than knocked down.** *The opposite view is also serious* is the sentence that lifts this essay: it signals a candidate who is thinking rather than reciting.",
+                "**The opinion is a genuine third position**, not a shrug. Examiners accept a middle position, provided it is stated clearly and argued for. *It depends on the situation* would not qualify.",
+                "**The introduction reframes the question** instead of repeating it. Saying what the argument is really about - who gains, and therefore who pays - gives the whole essay a spine.",
+                "**Each paragraph explains a mechanism, not just a claim.** The access point is not left at *poor students cannot afford it*; it explains that what deters them is fear of the debt, before they even look at the terms.",
+                "**One sentence handles complexity well:** *Free education sounds fair, but its effects are not always fair.* Distinguishing an intention from its result is worth more than any long word.",
+                "**The conclusion states a principle** rather than a summary, and the last sentence gives it something concrete to land on.",
+                "**276 words, sentences of about fourteen words.** Aimed at Band 7 to 7.5. Notice there is no rare vocabulary anywhere in it - the marks come from structure and from answering both instructions."
               ]
             }
           ]
@@ -327,11 +328,11 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "Arguments about X are rarely arguments about Y. They are arguments about Z.", "def": "A reframing opening. Far stronger than *This is a controversial topic nowadays.*" },
-            { "term": "The opposing case is also serious, and it is usually misrepresented", "def": "Signals genuine engagement with the other side. Very difficult for an examiner to read as memorised." },
-            { "term": "sounds egalitarian, but its effects are not straightforwardly so", "def": "Distinguishes intention from consequence - a distinction that lifts many essays." },
-            { "term": "My own view takes the strongest element of each", "def": "The clean way to introduce a synthesis position in a discussion essay." },
-            { "term": "The principle, in short, is that", "def": "A conclusion opener that promises a principle rather than a summary." }
+            { "term": "Arguments about X are not really arguments about Y. They are arguments about Z.", "def": "A reframing opening. Far stronger than *This is a controversial topic nowadays.*" },
+            { "term": "The opposite view is also serious.", "def": "Signals genuine engagement with the other side, and is very hard to read as memorised." },
+            { "term": "sounds fair, but its effects are not always fair", "def": "Separates what something is meant to do from what it actually does." },
+            { "term": "My own view takes the strongest part of each argument.", "def": "The clean way to introduce a middle position in a discussion essay." },
+            { "term": "In short, the cost should follow the benefit.", "def": "A conclusion that gives a principle rather than a summary." }
           ]
         },
         {
@@ -435,20 +436,20 @@
               "label": "Original RCF model answer (283 words)",
               "prompt": "An increasing number of people now work from home rather than travelling to an office. Do the advantages of this development outweigh the disadvantages?",
               "sample": [
-                "Working from home has moved in a few years from an unusual arrangement to an ordinary one. On balance I think its advantages are the greater, although this depends heavily on the kind of work involved and on how experienced the worker is.",
-                "The clearest advantage is the recovery of time. A daily commute of an hour each way consumes roughly ten hours a week, and that time is not merely lost but actively unpleasant, which is why people who stop commuting report improvements in wellbeing out of proportion to the hours saved. The second advantage is control over when demanding work is done. Offices impose a common rhythm on everybody, and it suits some people badly; at home, a person who thinks clearly early in the morning can use that time instead of spending it on a train.",
-                "The main disadvantage is the loss of unplanned contact. A great deal of useful information moves through workplaces informally - an overheard remark, a question asked in passing, the correction of a small misunderstanding before it becomes a large one. None of this survives a calendar. The cost falls most heavily on people who are new to a job or early in a career, who learn largely by watching others and by asking questions too small to justify arranging a meeting.",
-                "That disadvantage is real, but it seems to me more tractable than the alternative. Organisations can bring people together deliberately - a fixed day each week, longer periods together for new staff - and recover much of what is lost. Nothing comparable can be done about a commute.",
-                "For most established workers in most office-based roles, therefore, the advantages clearly outweigh the disadvantages, provided that employers take the isolation of newer colleagues seriously."
+                "Working from home has changed in a few years from an unusual arrangement into an ordinary one. In my view its advantages are greater, although this depends a great deal on the type of work and on how experienced the worker is.",
+                "The clearest advantage is the time that is saved. A journey of an hour each way uses about ten hours a week. That time is not simply lost; it is also unpleasant, which is why people who stop travelling to work often report feeling much better than the saved hours alone would explain. A second advantage is control. Offices force everyone into the same daily rhythm, and this suits some people badly. At home, someone who thinks clearly early in the morning can use that time for difficult work instead of spending it on a train.",
+                "The main disadvantage is the loss of unplanned contact. A great deal of useful information moves around an office informally: a remark overheard, a quick question, a small misunderstanding corrected before it grows. None of this happens in a calendar. The cost falls most heavily on people who are new to a job, because they learn by watching others and by asking questions that are too small to arrange a meeting for.",
+                "That disadvantage is real, but it seems to me easier to solve than the alternative. Companies can bring people together on purpose, with a fixed day each week or longer periods together for new staff, and recover much of what is lost. Nothing similar can be done about a daily journey.",
+                "For most experienced workers in most office jobs, therefore, the advantages clearly outweigh the disadvantages, provided that employers take the isolation of newer colleagues seriously."
               ],
               "notes": [
-                "**The verdict appears in the introduction** and is repeated in the conclusion, with the same condition attached both times. The question asks *do they outweigh?* and the essay answers it twice.",
-                "**A qualified verdict is still a verdict.** *On balance ... although this depends on the kind of work* is a clear answer. What would fail is *there are advantages and disadvantages on both sides*.",
-                "**The third body paragraph is the one that earns Band 8**, because it does the actual weighing rather than leaving the reader to do it. Most candidates list advantages, list disadvantages, and then assert a conclusion that nothing in the essay supports.",
-                "**The comparison is made on a stated criterion** - which problem can be solved - rather than on volume of points. That is genuine analysis.",
-                "**Concrete illustration without invented data:** *ten hours a week* is arithmetic from the essay's own premise, not a statistic about the world.",
-                "**Precise vocabulary used sparingly:** *tractable*, *out of proportion to*, *impose a common rhythm*. One well-chosen word per paragraph beats a decorated sentence.",
-                "**283 words**, three body paragraphs, and the shortest is the decisive one."
+                "**The verdict is in the introduction** and repeated in the conclusion, with the same condition attached both times. The question asks *do they outweigh?* and the essay answers it twice.",
+                "**A qualified verdict is still a verdict.** *In my view its advantages are greater, although this depends a great deal on the type of work* is a clear answer. What would fail is *there are advantages and disadvantages on both sides*.",
+                "**The fourth paragraph is what earns the higher band**, because it does the weighing rather than leaving the reader to do it. Most candidates list advantages, list disadvantages, then assert a conclusion nothing in the essay supports.",
+                "**The comparison is made on a stated criterion** - which problem can actually be solved - rather than on the number of points.",
+                "**Concrete illustration without invented data:** *about ten hours a week* is arithmetic from the essay's own premise, not a statistic about the world.",
+                "**Plain vocabulary throughout.** There is no unusual word anywhere in this essay, and it would still score well, because Task Response and Coherence are two of the four criteria.",
+                "**286 words.** Aimed at Band 7 to 7.5, with the decisive paragraph deliberately the shortest."
               ]
             }
           ]
@@ -458,11 +459,11 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "On balance I think its advantages are the greater, although", "def": "The verdict sentence. Learn this shape: verdict, then condition." },
-            { "term": "out of proportion to the hours saved", "def": "Expresses that an effect exceeds its apparent cause - useful in a great many essays." },
-            { "term": "None of this survives a calendar.", "def": "A short sentence after a long list. Rhythm is part of Coherence." },
-            { "term": "more tractable than the alternative", "def": "*Tractable* means solvable. Precise and uncommon without being obscure." },
-            { "term": "provided that", "def": "Attaches a condition to a verdict cleanly, and is more accurate here than *if*." }
+            { "term": "In my view its advantages are greater, although this depends a great deal on", "def": "The verdict sentence. Learn the shape: verdict first, then the condition." },
+            { "term": "That time is not simply lost; it is also unpleasant", "def": "A semicolon used correctly to join two related statements - a cheap way to show range." },
+            { "term": "None of this happens in a calendar.", "def": "A short sentence after a long list. Rhythm is part of Coherence and Cohesion." },
+            { "term": "easier to solve than the alternative", "def": "Names the criterion you are weighing on, which is what turns a list into a verdict." },
+            { "term": "provided that", "def": "Attaches a condition to a verdict cleanly, and is more precise here than *if*." }
           ]
         },
         {
@@ -556,19 +557,19 @@
               "label": "Original RCF model answer (291 words)",
               "prompt": "Traffic congestion is becoming worse in many large cities. What problems does this cause, and what measures could be taken to address it?",
               "sample": [
-                "Congestion is one of the few urban problems that reliably gets worse as cities get richer, and the standard response to it - building more road capacity - has a long record of failure. Its effects are serious, but the measures that work are reasonably well understood.",
-                "The most obvious problem is the loss of time. Hours spent stationary are hours not spent working, resting or with a family, and because the delay falls on deliveries and tradespeople as well as commuters, the cost passes into the price of almost everything a city consumes. The second problem is air quality: vehicles in slow-moving traffic emit far more per kilometre than vehicles moving freely, and the pollution is concentrated exactly where people live. The third problem is the least obvious and the most damaging. Congestion makes buses slow and unpredictable, since a bus stuck in traffic arrives late and eventually stops being worth catching, and every passenger it loses to a car makes the traffic slightly worse. The system pushes itself in the wrong direction.",
-                "The measures that work follow from that. The first is to charge for road space at the times when it is scarce, as several cities now do; this reduces the least necessary journeys, which are a surprisingly large share of them, and raises money that can be spent on the alternatives. The second is to give buses and cycles physical priority - separate lanes that traffic cannot enter - so that public transport escapes the congestion rather than sitting in it. Reliability, more than cost or comfort, is what persuades people to leave a car at home.",
-                "What does not work is building more roads, because the new capacity is filled by journeys that were previously not worth making. Congestion is a pricing problem, and pricing is where the solution has to start."
+                "Traffic congestion is one of the few city problems that reliably becomes worse as a country becomes richer. The usual answer, which is to build more roads, has a long record of failure. The effects of congestion are serious, but the measures that actually work are reasonably well understood.",
+                "The most obvious problem is lost time. Hours spent sitting in traffic are hours not spent working, resting or with a family. Because the delay also affects deliveries and tradespeople, the cost is passed on in the price of almost everything a city buys. The second problem is air quality. Vehicles in slow traffic produce far more pollution per kilometre than vehicles moving freely, and that pollution is concentrated exactly where people live. The third problem is the least obvious. Congestion makes buses slow and unreliable, so a bus that is stuck in traffic arrives late and eventually stops being worth catching. Every passenger it loses to a car makes the traffic slightly worse, so the problem feeds itself.",
+                "The measures that work follow from these problems. The first is to charge for road space at the busiest times, as several cities now do. This reduces the least necessary journeys, which are a surprisingly large share of the total, and it raises money that can be spent on the alternatives. The second is to give buses and cycles their own lanes, so that public transport escapes the congestion instead of sitting in it. Reliability, more than cost or comfort, is what persuades people to leave a car at home.",
+                "What does not work is building more roads, because the new space is filled by journeys that were not worth making before. Congestion is a pricing problem, and pricing is where any solution has to begin."
               ],
               "notes": [
-                "**The two halves are balanced.** Three problems, two solutions, roughly equal space. An essay that spends 200 words on problems and 60 on solutions loses Task Response marks even if the problems are brilliantly described.",
-                "**Every solution answers a problem that was named.** Road pricing answers the loss of time and funds the alternatives; bus lanes answer the third problem directly. Nothing floats free.",
-                "**The third problem is a feedback loop, not a list item** - congestion makes buses slow, which pushes people into cars, which worsens congestion. Showing a mechanism is what lifts this above the standard *pollution, stress, accidents* list.",
-                "**The essay has one genuine insight and saves it for the end**: new capacity generates new traffic. Placing it in the final paragraph gives the conclusion something to do.",
-                "**Hedged honestly:** *a surprisingly large share of them*, *as several cities now do*. Neither invents a number, and both sound informed.",
-                "**Cohesion is carried by meaning, not by connectives.** There is no *Firstly, Secondly, Moreover, In addition*. The paragraphs connect because each one follows from the last - which is what the Coherence criterion actually rewards.",
-                "**291 words.**"
+                "**The two halves are balanced.** Three problems, two solutions, roughly equal space. An essay that spends 200 words on problems and 60 on solutions loses Task Response marks even if the problems are described well.",
+                "**Every solution answers a problem that was named.** Road pricing answers the lost time and pays for the alternatives; bus lanes answer the third problem directly. Nothing floats free.",
+                "**The third problem is a feedback loop, not a list item** - congestion makes buses slow, which pushes people into cars, which worsens congestion. Showing a mechanism lifts this above the usual *pollution, stress, accidents* list.",
+                "**The essay saves its best idea for the end:** new road space fills up with journeys that were not worth making before. Placing it last gives the conclusion something to do.",
+                "**Hedged honestly:** *a surprisingly large share*, *as several cities now do*. Neither invents a number, and both sound informed.",
+                "**Cohesion comes from meaning, not connectives.** There is no *Firstly, Secondly, Moreover*. Each paragraph follows from the last, which is what the Coherence criterion actually rewards.",
+                "**294 words**, sentences of about sixteen words. Band 7 to 7.5."
               ]
             }
           ]
@@ -578,11 +579,11 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "has a long record of failure", "def": "Dismisses an option with authority and without a statistic." },
-            { "term": "the cost passes into the price of almost everything", "def": "Traces a consequence one step further than the obvious. This is *extension*, and it is what examiners reward." },
-            { "term": "The system pushes itself in the wrong direction.", "def": "Names a feedback loop in seven words." },
-            { "term": "The measures that work follow from that.", "def": "A transition that makes the second half depend on the first, instead of starting a new list." },
-            { "term": "journeys that were previously not worth making", "def": "Expresses induced demand in plain English, without the term." }
+            { "term": "has a long record of failure", "def": "Dismisses an option with authority and without needing a statistic." },
+            { "term": "the cost is passed on in the price of almost everything a city buys", "def": "Follows a consequence one step further than the obvious. This is *extension*, and examiners reward it." },
+            { "term": "so the problem feeds itself", "def": "Names a feedback loop in four words." },
+            { "term": "The measures that work follow from these problems.", "def": "A transition that makes the second half depend on the first, instead of starting a new list." },
+            { "term": "journeys that were not worth making before", "def": "Explains induced demand in plain English, without needing the term." }
           ]
         },
         {
@@ -685,20 +686,20 @@
               "label": "Original RCF model answer (296 words)",
               "prompt": "Children in many countries now spend several hours a day looking at screens. Why has this happened, and do you think it is a negative development?",
               "sample": [
-                "Children spend far longer in front of screens than they did a generation ago, for reasons that have as much to do with the world outside the screen as with the devices themselves. I do think the scale of it is harmful, though not for the reason usually given.",
-                "There are two main causes. The first is that these products are designed to be difficult to stop using. Games and video platforms are built by large teams whose explicit purpose is to extend the time each user spends with them, and a child's self-control is no match for that. The second cause is less discussed. The alternatives have quietly disappeared. Children in many countries are no longer allowed to roam unsupervised as they once were, streets carry more traffic, unstructured outdoor play has been squeezed by anxiety about safety, and parents themselves work longer and are less available. A screen is what remains when the other options have been closed off.",
-                "My concern is not principally about what children see on screens, which is the usual worry. It is about what the hours would otherwise have contained. Long stretches of unsupervised, slightly boring time are where children learn to negotiate with each other, to invent games, to be bored and then to solve boredom themselves. That capacity is built through practice, and the practice is what has been displaced.",
-                "It would be unreasonable, though, to treat all screen use as identical. A child learning to edit video, message a distant grandparent or follow a subject far beyond the school curriculum is doing something genuinely valuable, and adults who use screens all day are poorly placed to be absolute about it.",
+                "Children today spend far longer looking at screens than children did a generation ago. The reasons have as much to do with the world around the screen as with the devices themselves. I do think the scale of it is harmful, though not for the reason people usually give.",
+                "There are two main causes. The first is that these products are designed to be difficult to stop using. Games and video sites are built by large teams whose job is to increase the time each user spends on them, and a child's self-control is no match for that. The second cause is discussed far less. The alternatives have quietly disappeared. Children in many countries are no longer allowed to roam on their own as they once were, streets carry more traffic, free outdoor play has been reduced by worries about safety, and parents themselves work longer hours. A screen is what is left when the other choices have been closed off.",
+                "My own concern is not mainly about what children see on screens, which is the usual worry. It is about what those hours would otherwise have contained. Long stretches of unsupervised, slightly boring time are where children learn to negotiate with each other, to invent games, and to be bored and then solve their own boredom. That ability is built by practice, and it is the practice that has been lost.",
+                "It would be unreasonable, though, to treat all screen use as the same. A child who is learning to edit video, messaging a grandparent far away, or following a subject well beyond the school syllabus is doing something genuinely valuable. Adults who use screens all day are also in a poor position to be strict about it.",
                 "My view, then, is that the problem lies in the quantity and in what it replaces, rather than in the activity itself."
               ],
               "notes": [
-                "**Both questions are answered in the introduction**, one clause each. An examiner reading only the first paragraph can already see that the essay is on task.",
-                "**The two halves get comparable space** - one paragraph for the causes, two for the opinion, because the opinion is where the argument lives. Neither half is left with a single sentence.",
+                "**Both questions are answered in the introduction**, one clause each. An examiner reading only the first paragraph can see the essay is on task.",
+                "**The two halves get comparable space** - one paragraph on the causes, two on the opinion, because the opinion is where the argument lives. Neither half is left with a single sentence.",
                 "**The second cause is the interesting one**, and the essay says so. Anyone can write that devices are addictive; noticing that the alternatives have been withdrawn is the observation that reads as thought rather than recall.",
-                "**The opinion has a precise shape:** harmful because of *displacement*, not because of *content*. Naming which version of the worry you hold is far stronger than *it has both positive and negative effects*.",
-                "**The concession is genuine and includes the writer.** *Adults who use screens all day are poorly placed to be absolute about it* is honest, slightly self-implicating, and impossible to mistake for a memorised sentence.",
-                "**Concrete detail throughout:** *edit video, message a distant grandparent*, *to be bored and then to solve boredom themselves*. Specificity is what distinguishes Band 8 content from Band 6 content.",
-                "**296 words.**"
+                "**The opinion has a precise shape:** harmful because of what it *replaces*, not because of what children *see*. Saying which version of the worry you hold is far stronger than *it has both positive and negative effects*.",
+                "**The concession is genuine and includes the writer.** *Adults who use screens all day are also in a poor position to be strict about it* is honest, slightly self-implicating, and impossible to mistake for a memorised sentence.",
+                "**Concrete detail throughout:** *edit video*, *messaging a grandparent far away*, *to be bored and then solve their own boredom*. Specificity is what separates a Band 7 body paragraph from a Band 6 one.",
+                "**311 words** - at the top of the sensible range. Band 7 to 7.5."
               ]
             }
           ]
@@ -708,11 +709,11 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "for reasons that have as much to do with X as with Y", "def": "Answers a *why* question and previews the essay's structure in one clause." },
-            { "term": "though not for the reason usually given", "def": "Promises the reader something they have not already thought of, and obliges you to deliver it." },
-            { "term": "The second cause is less discussed.", "def": "Signals that the essay is ranking its own points rather than listing them." },
-            { "term": "A screen is what remains when the other options have been closed off.", "def": "Summarises a paragraph in one image." },
-            { "term": "It would be unreasonable, though, to treat all X as identical.", "def": "The standard opener for a concession paragraph." }
+            { "term": "The reasons have as much to do with X as with Y.", "def": "Answers a *why* question and previews the structure in one clause." },
+            { "term": "though not for the reason people usually give", "def": "Promises the reader something they have not already thought of, and obliges you to deliver it." },
+            { "term": "The second cause is discussed far less.", "def": "Signals that you are ranking your own points rather than listing them." },
+            { "term": "A screen is what is left when the other choices have been closed off.", "def": "Summarises a whole paragraph in one image." },
+            { "term": "It would be unreasonable, though, to treat all X as the same.", "def": "The standard opener for a concession paragraph." }
           ]
         },
         {
