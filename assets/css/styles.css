@@ -365,6 +365,12 @@ a:hover { color: var(--teal-700); }
 .btn--moss { background: var(--green-600); color: #fff; border-color: #58a06f; }
 .btn--moss:hover { background: var(--green-700); border-color: #58a06f; color: #fff; }
 
+/* Petrol, for Global English. A blue-green that sits between the navies and
+   the teals without matching either, so the sixth hero button is still its
+   own colour. White on it is 7.2:1. */
+.btn--petrol { background: #1b5f75; color: #fff; border-color: #3d8299; }
+.btn--petrol:hover { background: #164e60; border-color: #55a0b8; color: #fff; }
+
 .btn--sm { min-height: 40px; padding: 0.4rem 0.9rem; font-size: var(--step--1); }
 .btn--block { width: 100%; }
 
@@ -381,6 +387,10 @@ a:hover { color: var(--teal-700); }
   display: grid;
   gap: var(--sp-3);
   grid-template-columns: 1fr;
+  /* Every row as tall as the tallest, so buttons match across rows and not
+     just within one. Without this a two-line row sits beside a three-line row
+     and the block looks ragged at the widths where the grid breaks unevenly. */
+  grid-auto-rows: 1fr;
 }
 /* Two across on a tablet, then all of them across on a wide screen. This
    keeps the row even for three or four buttons, instead of leaving a lone
