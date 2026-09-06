@@ -38,11 +38,25 @@
   --teal-100: #d9efe9;
   --teal-050: #eef8f5;
 
-  /* Accent - warm gold, used sparingly */
+  /* Green - a third green beside the teals, for the bookshop */
+  --green-700: #2b6540;
+  --green-600: #35774a;
+  --green-500: #3d8a56;
+
+  /* Accent - warm gold, used sparingly.
+     gold-400 was #e0a83c, which read as an alert rather than an accent and
+     pulled the eye away from the navy and teal the site is built on. It is
+     now a step deeper and less saturated. The focus ring keeps the old bright
+     value on its own token below, because a focus indicator has to stay
+     loud - that is its whole job. */
   --gold-800: #7d5205;
   --gold-600: #b07c12;
-  --gold-400: #e0a83c;
+  --gold-400: #c2913f;
   --gold-100: #fbf0d8;
+
+  /* Focus indicator. Deliberately not tied to the brand accent, so toning the
+     accent down can never quietly weaken keyboard visibility. */
+  --focus-ring: #e0a83c;
 
   /* Neutrals */
   --ink-900: #14202e;
@@ -182,7 +196,7 @@ abbr[title] { text-decoration-thickness: 1px; text-underline-offset: 2px; }
 
 /* Focus - always visible, never removed */
 :focus-visible {
-  outline: 3px solid var(--gold-400);
+  outline: 3px solid var(--focus-ring);
   outline-offset: 2px;
   border-radius: 3px;
 }
@@ -343,10 +357,13 @@ a:hover { color: var(--teal-700); }
 .btn--slate { background: #2b4a6f; color: #fff; border-color: #4a6b91; }
 .btn--slate:hover { background: #345780; border-color: #6a89ad; color: #fff; }
 
-/* Muted amber for the bookshop. The bright gold read as an alert rather than
-   a link; this is the same hue two steps deeper, with white text. */
-.btn--sand { background: var(--gold-600); color: #fff; border-color: #c58f1f; }
-.btn--sand:hover { background: #c68d16; border-color: #dda945; color: #fff; }
+/* A third green for the bookshop, warmer and a step lighter than the two
+   teals beside it, so the five hero buttons still read as one family without
+   any two looking alike. Contrast against white text is 5.4:1, above the 4.5
+   minimum for normal text. Hover darkens rather than lightens: lightening
+   dropped white-on-green to 4.2:1, below the AA threshold. */
+.btn--moss { background: var(--green-600); color: #fff; border-color: #58a06f; }
+.btn--moss:hover { background: var(--green-700); border-color: #58a06f; color: #fff; }
 
 .btn--sm { min-height: 40px; padding: 0.4rem 0.9rem; font-size: var(--step--1); }
 .btn--block { width: 100%; }
@@ -498,16 +515,16 @@ a:hover { color: var(--teal-700); }
 .header-link:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
 @media (min-width: 900px) { .header-link { display: inline-flex; } }
 
-/* RCF Publications. The bright gold shouted against the navy bar and pulled
-   the eye away from the navigation; this is the same hue two steps deeper,
-   with white text, so it still marks the bookshop as different without
-   dominating the header. */
+/* RCF Publications. Gold shouted against the navy bar and pulled the eye away
+   from the navigation. This is the same green the bookshop button on the home
+   hero uses, so the two routes to the bookshop now look like each other and
+   the header stays inside the navy-teal-green palette. */
 .header-link--accent {
-  background: var(--gold-600);
+  background: var(--green-600);
   color: #fff;
-  border-color: #c58f1f;
+  border-color: var(--green-500);
 }
-.header-link--accent:hover { background: #c68d16; border-color: #dda945; color: #fff; }
+.header-link--accent:hover { background: var(--green-700); border-color: #58a06f; color: #fff; }
 
 /* Global English. It sits in the header bar rather than the section row
    below, because that row is already full at laptop widths and an eleventh
@@ -1218,7 +1235,7 @@ a:hover { color: var(--teal-700); }
 }
 .card--link:focus-within {
   border-color: var(--teal-600);
-  outline: 3px solid var(--gold-400);
+  outline: 3px solid var(--focus-ring);
   outline-offset: 2px;
 }
 .card--link a:focus-visible { outline: none; }
@@ -2658,7 +2675,7 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 }
 /* Pressed state, and a focus ring that is visible on both backgrounds. */
 .dcard:active { transform: translateY(0); }
-.dcard:has(a:focus-visible) { outline: 3px solid var(--gold-400); outline-offset: 3px; }
+.dcard:has(a:focus-visible) { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
 .dcard--promo:has(a:focus-visible) { outline-color: var(--navy-700); }
 /* Fallback for browsers without :has() - the link itself still shows a ring. */
 .dcard__title a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
@@ -3236,20 +3253,6 @@ img.pcard__cover {
 }
 /* Gold hero button, matching the header's RCF Publications accent ---------- */
 
-/* Used for the homepage "Explore RCF Publications" button so the commercial
-   area is visually distinct from the free sections, and consistent with the
-   gold header button that leads to the same place. */
-.btn--gold {
-  background: var(--gold-400);
-  color: var(--navy-900);
-  border-color: var(--gold-400);
-}
-.btn--gold:hover,
-.btn--gold:focus-visible {
-  background: #eebc5d;
-  border-color: #eebc5d;
-  color: var(--navy-900);
-}
 /* Book price, gold accent ------------------------------------------------- */
 
 /* Sits directly above the purchase button. Gold marks it as the commercial
