@@ -30,6 +30,43 @@
         },
         {
           "type": "cards",
+          "heading": "Circulars, service and official information",
+          "eyebrow": "For your service, not your classroom",
+          "variant": "tint",
+          "columns": "2",
+          "intro": [
+            "Circulars decide transfers, promotions and salary steps, and most of what teachers need is published on government sites that are hard to search. These two pages are signposts to the official sources, with every link checked."
+          ],
+          "items": [
+            {
+              "title": "Government Circulars",
+              "url": "teacher-resources/circulars/",
+              "more": "How to find the current one",
+              "text": ["How Ministry circular numbering works, the five kinds that affect teachers, and how to find the version that applies now rather than a superseded copy."],
+              "bullets": ["Links the always-current official index", "Explains amendments and year-in-title traps", "Why there is no English-teachers' circular series"]
+            },
+            {
+              "title": "Important Links for Teachers",
+              "url": "teacher-resources/official-links/",
+              "more": "Service, promotions and training",
+              "text": ["Teacher service, transfers, promotions, the Establishments Code, the Service Minute, the ten Efficiency Bar modules, and the Regional English Support Centres."],
+              "bullets": ["Every link tested before publication", "The two documents that govern your service", "NIE, EPD and the 30 RESCs"]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Ask a question and get an answer the same day",
+          "text": [
+            "Rohana Fernando runs a **Telegram group** and a **WhatsApp group** for English teachers, and answers questions in them personally. If you need a worksheet, a past paper, a marking scheme or a straight answer about a text or an examination requirement, you can ask for it and usually have it the same day.",
+            "**The WhatsApp group is full at present**, because WhatsApp limits group size. To ask for a place when one opens, send a message to **070 439 5240** saying that you teach English and where.",
+            "**The Telegram group has room.** To request membership, contact **Miss Sankapali** or **Miss Dinu Samadhi** through Messenger.",
+            "[More about the teacher groups](about/online-communities/)"
+          ]
+        },
+        {
+          "type": "cards",
           "heading": "Planning and teaching",
           "variant": "tint",
           "columns": "4",
@@ -78,38 +115,12 @@
         },
         {
           "type": "cards",
-          "heading": "Circulars, service and official information",
-          "eyebrow": "For your service, not your classroom",
-          "variant": "tint",
-          "columns": "2",
-          "intro": [
-            "Circulars decide transfers, promotions and salary steps, and most of what teachers need is published on government sites that are hard to search. These two pages are signposts to the official sources, with every link checked."
-          ],
-          "items": [
-            {
-              "title": "Government Circulars",
-              "url": "teacher-resources/circulars/",
-              "more": "How to find the current one",
-              "text": ["How Ministry circular numbering works, the five kinds that affect teachers, and how to find the version that applies now rather than a superseded copy."],
-              "bullets": ["Links the always-current official index", "Explains amendments and year-in-title traps", "Why there is no English-teachers' circular series"]
-            },
-            {
-              "title": "Important Links for Teachers",
-              "url": "teacher-resources/official-links/",
-              "more": "Service, promotions and training",
-              "text": ["Teacher service, transfers, promotions, the Establishments Code, the Service Minute, the ten Efficiency Bar modules, and the Regional English Support Centres."],
-              "bullets": ["Every link tested before publication", "The two documents that govern your service", "NIE, EPD and the 30 RESCs"]
-            }
-          ]
-        },
-        {
-          "type": "cards",
           "heading": "More for teachers",
           "columns": "3",
           "items": [
             { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "more": "Open", "text": ["Everything downloadable, in one filterable list."] },
             { "title": "RCF Publications for Teachers", "url": "teacher-resources/rcf-publications-for-teachers/", "more": "Open", "text": ["Books written for classroom and tuition teaching."] },
-            { "title": "The teacher resource groups", "url": "about/online-communities/", "more": "Open", "text": ["Telegram and WhatsApp resource groups for English teachers."] }
+            { "title": "The teacher resource groups", "url": "about/online-communities/", "more": "How to join", "text": ["Telegram and WhatsApp groups where English teachers' questions are answered promptly and requested resources are shared the same day."] }
           ]
         },
         {

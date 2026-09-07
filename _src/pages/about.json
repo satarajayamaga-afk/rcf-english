@@ -44,9 +44,16 @@
         },
 
         {
-          "type": "prose",
+          "type": "portrait",
           "heading": "Our Founder",
           "eyebrow": "In brief",
+          "image": "assets/img/founder-rohana-fernando.jpg",
+          "alt": "Rohana Fernando, founder of RCF English and RCF Publications",
+          "width": "800",
+          "height": "800",
+          "name": "Rohana Fernando",
+          "role": "Founder, RCF English and RCF Publications",
+          "caption": "Rohana Fernando",
           "text": [
             "RCF English was founded by **Rohana Fernando**, an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. Throughout his career, he has sought to make English education clearer, more practical and more accessible to students, teachers and independent learners.",
             "He is a graduate in English from the University of Peradeniya and holds a Master of Arts in Linguistics from the University of Kelaniya, together with a TESOL qualification from the University of Peradeniya. He is an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA).",
@@ -422,6 +429,48 @@
             "A messaging group is excellent for immediate help and poor at keeping anything. A worksheet shared in a group on Monday is unreachable by Friday, and a teacher who joins next year never sees it at all.",
             "RCF English exists to hold that material properly: arranged by subject, by task and by level, searchable, and available to anyone without joining anything.",
             "The website represents a continuation and expansion of work that began in classrooms and developed through Facebook, Telegram and WhatsApp educational communities."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Joining the teacher groups",
+          "eyebrow": "How to request membership",
+          "level": "h2",
+          "variant": "tint",
+          "columns": "2",
+          "intro": [
+            "Both groups are run personally by Rohana Fernando. Questions from English teachers are answered promptly, and requested resources are shared promptly - the point of the groups is that a teacher who needs something for tomorrow's lesson can ask for it today."
+          ],
+          "items": [
+            {
+              "title": "WhatsApp group",
+              "more": "Currently full",
+              "text": [
+                "**The WhatsApp group is full at present.** WhatsApp limits how many members a group may hold, so places open only when someone leaves.",
+                "To ask for a place, send a WhatsApp message to **070 439 5240** saying that you teach English, and where. You will be added when a place becomes free."
+              ],
+              "bullets": ["Send a WhatsApp message to 070 439 5240", "Say that you teach English, and where", "Places open as members leave"]
+            },
+            {
+              "title": "Telegram group",
+              "more": "Open to English teachers",
+              "text": [
+                "Telegram has no practical limit on group size, so this is the group to ask for if the WhatsApp one is full.",
+                "To request membership, contact **Miss Sankapali** or **Miss Dinu Samadhi** through Messenger."
+              ],
+              "bullets": ["Contact Miss Sankapali through Messenger", "or Miss Dinu Samadhi through Messenger", "No waiting list"]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What the groups are actually for",
+          "text": [
+            "**Answers, quickly.** A teacher can ask a question about grammar, a text, a marking decision or an examination requirement and get a reply the same day rather than waiting for the next in-service session.",
+            "**Resources on request.** If you need a worksheet, a past paper, a marking scheme or a set of model answers for a particular lesson, ask in the group and it will be shared if it exists.",
+            "**They are professional groups**, for people who teach English. They are not general discussion groups and they are not for advertising.",
+            "Much of what circulates in the groups ends up here on the website in a permanent, searchable form - the [study packs](teacher-resources/study-packs/), the [teacher downloads](teacher-resources/downloads/) and the [past paper library](past-papers/) all began as things teachers asked for."
           ]
         },
         {
