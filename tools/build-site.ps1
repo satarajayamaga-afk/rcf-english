@@ -2605,6 +2605,30 @@ function BookSheet($pg, $extra) {
     return $h + '</div>'
 }
 
+# The hand that opens the book.
+#
+# One hand, not two: a second hand has nothing to do but sit there, and a hand
+# with nothing to do reads as a sticker rather than as somebody opening a book.
+# This one comes in from the right, takes the edge of the cover and carries it
+# across, which is the movement a person actually makes.
+#
+# It is drawn out of rounded rectangles rather than freehand curves, because at
+# this size four separate fingers are the only thing that makes a shape read as
+# a hand at all. Anything more detailed turns into a smudge.
+function BookHands() {
+    $h = '<div class="hbook__hands" data-hbook-hands aria-hidden="true">'
+    $h += '<svg class="hbook__hand" viewBox="0 0 140 120" focusable="false" aria-hidden="true">'
+    $h += '<rect class="hbook__arm"    x="92" y="50" width="52" height="42" rx="19"/>'
+    $h += '<rect class="hbook__palm"   x="44" y="42" width="54" height="54" rx="19"/>'
+    $h += '<rect class="hbook__thumb"  x="50" y="24" width="13" height="32" rx="6.5" transform="rotate(-24 56 40)"/>'
+    $h += '<rect class="hbook__finger" x="17" y="45" width="40" height="12" rx="6"/>'
+    $h += '<rect class="hbook__finger" x="12" y="58" width="45" height="12.5" rx="6.25"/>'
+    $h += '<rect class="hbook__finger" x="15" y="71" width="42" height="12" rx="6"/>'
+    $h += '<rect class="hbook__finger" x="23" y="83" width="34" height="11" rx="5.5"/>'
+    $h += '</svg>'
+    return $h + '</div>'
+}
+
 function HeroBook($fig) {
     $pages = AsList (P $fig 'pages')
     if ($pages.Count -lt 4 -or ($pages.Count % 2) -ne 0) {
@@ -2613,20 +2637,31 @@ function HeroBook($fig) {
     }
     $leaves = ($pages.Count - 2) / 2
 
+    $cover = P $fig 'cover'
+    $imprint = [string](P $cover 'imprint' $script:Config.publicationsName)
+    $covTitle = [string](P $cover 'title' $script:Config.siteName)
+    $covLine = [string](P $cover 'line' $script:Config.tagline)
+
+    # The book starts closed. The script opens it and then takes the class off
+    # again; if the script never runs, the stylesheet has the open book as its
+    # resting state and nothing is ever hidden.
     $h = '<div class="hbook" data-hbook aria-hidden="true">'
     $h += '<div class="hbook__scene">'
     $h += '<div class="hbook__float">'
     $h += '<div class="hbook__book" data-hbook-book>'
-    $h += '<span class="hbook__cover"></span>'
 
-    # The two fixed pages: the first one the reader sees on the left, and the
-    # last one, which is uncovered when every leaf has turned.
-    $h += '<div class="hbook__page hbook__page--verso">' + (BookSheet $pages[0] ' hbook__sheet--verso') + '</div>'
+    # The two boards. The left one is only there once the book is open.
+    $h += '<span class="hbook__cover hbook__cover--left"></span>'
+    $h += '<span class="hbook__cover hbook__cover--right"></span>'
+
+    # The last page, uncovered when every leaf has turned.
     $h += '<div class="hbook__page hbook__page--recto">' + (BookSheet $pages[$pages.Count - 1] ' hbook__sheet--recto') + '</div>'
 
     # The leaves, stacked with the first on top. Each sits a fraction of a
     # pixel above the one below so the browser has a real depth order to sort
-    # by rather than two pages in the same plane.
+    # by rather than two pages in the same plane. Because the translate comes
+    # after the rotation, a leaf that has turned lands underneath the leaves
+    # that turned before it, which is what paper does.
     for ($i = 0; $i -lt $leaves; $i++) {
         $front = $pages[(2 * $i) + 1]
         $back  = $pages[(2 * $i) + 2]
@@ -2637,9 +2672,24 @@ function HeroBook($fig) {
         $h += '</div>'
     }
 
+    # The front board is hinged like a leaf: the jacket on the outside and the
+    # first page on the inside, so opening the cover is the same movement as
+    # turning a page and lands the reader on the opening spread.
+    $bz = [math]::Round(($leaves + 1) * 0.6, 2)
+    $h += '<div class="hbook__board" data-hbook-board style="--z:' + $bz + 'px">'
+    $h += '<div class="hbook__side hbook__side--front"><div class="hbook__jacket">'
+    if ($imprint) { $h += '<span class="hbook__imprint">' + (E $imprint) + '</span>' }
+    $h += '<span class="hbook__jackettitle">' + (E $covTitle) + '</span>'
+    $h += '<span class="hbook__rule"></span>'
+    if ($covLine) { $h += '<span class="hbook__jacketline">' + (E $covLine) + '</span>' }
+    $h += '</div></div>'
+    $h += '<div class="hbook__side hbook__side--back">' + (BookSheet $pages[0] ' hbook__sheet--verso') + '</div>'
+    $h += '</div>'
+
     $h += '<span class="hbook__ribbon"></span>'
     $h += '</div></div>'
     $h += '<span class="hbook__shadow"></span>'
+    $h += (BookHands)
     $h += '</div></div>'
     return $h
 }

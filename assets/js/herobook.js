@@ -3,13 +3,16 @@
 
    The book is already in the page and already looks like a book before this
    script runs: an open spread, floating, with its first two pages showing.
-   All this adds is the turning.
+   All this adds is the opening and the turning.
 
    It turns one leaf, then waits a few seconds before turning the next, so a
    page goes over every five to eight seconds, which is the pace of somebody
    reading rather than somebody flicking. When it reaches the last page it
    waits a little longer and comes back the other way, so the loop never has
    to snap back to the start.
+
+   A hand comes in and opens the cover once, when the page is first looked at,
+   and then the turning begins.
 
    It stops when you point at it, when the hero is scrolled out of sight, when
    the tab is in the background, and altogether if the visitor has asked for
@@ -23,9 +26,20 @@ const PAUSE_MIN = 4000;
 const PAUSE_MAX = 6500;
 const PAUSE_END = 8500;    /* the longer look at the first and last spread */
 
-const TILT_Y = 7;          /* degrees the book swings with the pointer */
-const TILT_X = 5;
-const REST_X = 23;         /* the tilt it sits at, matching the stylesheet */
+const TILT_Y = 3;          /* degrees the book swings with the pointer */
+const TILT_X = 3;
+const REST_X = 11;         /* the tilt it sits at, matching the stylesheet */
+
+/* requestAnimationFrame does not fire while a tab is in the background, so
+   anything the sequence depends on gets a timer behind it. Without that, a
+   visitor who looks away at the wrong moment is left with a book that never
+   opens. */
+function nextFrame(fn) {
+  let done = false;
+  const go = () => { if (done) return; done = true; fn(); };
+  requestAnimationFrame(() => requestAnimationFrame(go));
+  setTimeout(go, 120);
+}
 
 function pause(atEnd) {
   if (atEnd) return PAUSE_END;
@@ -47,6 +61,8 @@ function setUpBook(root) {
   let held = false;      /* the pointer is on the book */
   let onScreen = true;
   let running = false;
+  let opened = false;   /* the cover has been opened, so turning may begin */
+  let dueAt = 0;        /* when the next page is due to go over */
 
   function clear() {
     if (timer) { clearTimeout(timer); timer = null; }
@@ -58,14 +74,21 @@ function setUpBook(root) {
   }
 
   function start() {
-    if (running || REDUCED.matches || held || !onScreen || document.hidden) return;
+    if (!opened || running || REDUCED.matches || held || !onScreen || document.hidden) return;
     running = true;
-    schedule(false);
+    /* Carry on the wait from where it was interrupted rather than beginning it
+       again. Somewhere that stops and starts this often - a tab being switched
+       back and forth, a preview pane throttling itself - would otherwise clear
+       the timer before it ever came round, and the book would sit there. */
+    const left = dueAt ? Math.max(200, dueAt - Date.now()) : null;
+    schedule(false, left);
   }
 
-  function schedule(atEnd) {
+  function schedule(atEnd, ms) {
     clear();
-    timer = setTimeout(turn, pause(atEnd));
+    const delay = (ms === null || ms === undefined) ? pause(atEnd) : ms;
+    dueAt = Date.now() + delay;
+    timer = setTimeout(turn, delay);
   }
 
   function turn() {
@@ -179,7 +202,56 @@ function setUpBook(root) {
     REDUCED.addEventListener("change", motionChanged);
   }
 
-  start();
+  /* ------------------------------------------------------------- opening */
+
+  /* Once, when the page is first drawn, the book is shown shut and a pair of
+     hands comes in and opens the cover. After that the hands go and the
+     turning begins. The markup ships open, so this shuts it first and only
+     if there is any point: no hands for reduced motion, and none for a book
+     that is off screen or not on a screen wide enough to show it. */
+  function openTheBook(then) {
+    /* Below 980px there is no book on the page at all, and nobody who has
+       asked for reduced motion wants a hand moving about. */
+    if (REDUCED.matches || getComputedStyle(root).display === "none") { then(); return; }
+
+    /* A page opened in a background tab should still get its opening when the
+       visitor gets round to looking at it, rather than having happened while
+       they were somewhere else. */
+    if (document.hidden) {
+      const later = () => {
+        if (document.hidden) return;
+        document.removeEventListener("visibilitychange", later);
+        openTheBook(then);
+      };
+      document.addEventListener("visibilitychange", later);
+      return;
+    }
+
+    /* The page is delivered with the book open, so shutting it has to happen
+       without animating or the visitor watches it close before it opens. The
+       class goes on with transitions suppressed and they are let back in on
+       the next frame. */
+    root.classList.add("is-shut", "is-instant");
+
+    nextFrame(() => {
+      root.classList.remove("is-instant");
+      setTimeout(() => {
+        root.classList.add("is-reaching");                 /* the hand arrives */
+
+        setTimeout(() => {
+          root.classList.remove("is-shut");                /* cover swings */
+
+          setTimeout(() => {
+            root.classList.add("is-opened");
+            root.classList.remove("is-reaching");          /* the hand lets go */
+            setTimeout(then, 700);
+          }, 1300);
+        }, 800);
+      }, 550);
+    });
+  }
+
+  openTheBook(() => { opened = true; start(); });
 }
 
 document.querySelectorAll("[data-hbook]").forEach(setUpBook);
