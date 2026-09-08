@@ -39,6 +39,49 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "Why an ebook",
+          "eyebrow": "What you get that print cannot give you",
+          "level": "h2",
+          "variant": "tint",
+          "columns": "3",
+          "intro": [
+            "A comprehensive printed resource is expensive to produce and awkward to carry. These titles give you the same teaching and learning material at a fraction of the cost, and add several things a printed book simply cannot do."
+          ],
+          "items": [
+            {
+              "title": "Clickable contents",
+              "text": ["The contents page is live. Click a poem, a topic or a sub-topic and you are taken straight to it - no page-turning, no index at the back."],
+              "bullets": ["Every entry is a link", "A Home button on each page returns you to the contents", "Find any section in one tap"]
+            },
+            {
+              "title": "No watermark",
+              "text": ["The pages are supplied clean. Nothing is stamped across the text, so the book is comfortable to read on screen and clear to print."],
+              "bullets": ["Readable on a phone", "Prints without a grey wash", "Comfortable for long study sessions"]
+            },
+            {
+              "title": "Print only what you need",
+              "text": ["Print or photocopy the pages for a particular lesson rather than carrying a whole book, subject to the copyright terms."],
+              "bullets": ["Useful for lesson preparation", "One poem or one section at a time", "No need to buy multiple copies"]
+            },
+            {
+              "title": "Affordable",
+              "text": ["A printed book of the same depth would cost several times as much. Most titles here are **Rs. 500/=**."],
+              "bullets": ["No printing or delivery cost", "Same material, lower price", "Buy more than one for the price of a single printed book"]
+            },
+            {
+              "title": "Delivered immediately",
+              "text": ["There is no waiting for a courier and nothing to collect. The file arrives and you can start using it the same day."],
+              "bullets": ["Useful when a lesson is tomorrow", "Nothing to go out of stock", "Keep a copy on every device you use"]
+            },
+            {
+              "title": "Searchable",
+              "text": ["Use your reader's search to find a quotation, a technique or a poet's name anywhere in the book in a moment."],
+              "bullets": ["Search the whole book at once", "Jump between related sections", "Nothing to flick through"]
+            }
+          ]
+        },
+        {
           "type": "publications-catalogue",
           "heading": "School English support books",
           "eyebrow": "Catalogue",
