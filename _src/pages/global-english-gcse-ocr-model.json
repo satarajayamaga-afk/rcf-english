@@ -1,0 +1,611 @@
+{
+  "_comment": "OCR J351 Component 01 model paper and marking guide. The structure follows the figures already established and sourced on global-english/gcse/ocr/component-1/: 2 hours, 80 marks, two unseen non-fiction texts in an Insert (one 19th century, one 20th or 21st), Section A reading 40 marks in five questions worth 2, 2, 6, 12 and 18, the 18-mark question marked as 12 AO4 plus 6 AO3, and Section B writing 40 marks from a choice of two, split 24 AO5 and 16 AO6. BOTH TEXTS ARE ORIGINAL RCF ENGLISH COMPOSITIONS. Text 1 is written in a nineteenth-century voice; it is not the work of any nineteenth-century writer and is not an extract from any real speech, pamphlet or newspaper. No OCR question, passage or mark-scheme descriptor is reproduced anywhere on these two pages.",
+
+  "pages": [
+    {
+      "slug": "global-english/gcse/ocr/papers/rcf-model-component-1",
+      "title": "RCF Model Paper: OCR Component 01",
+      "metaTitle": "OCR J351/01 Practice Paper with Answers | RCF English",
+      "description": "A complete original OCR GCSE English Language Component 01 practice paper: two unseen non-fiction texts from 1861 and 2024, five reading questions and a writing task, 80 marks.",
+      "keywords": "OCR J351 practice paper, OCR component 01 mock paper, OCR synthesis question practice, OCR 18 mark comparison practice, OCR English Language model paper",
+      "kicker": "Unofficial original RCF practice material",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "practice paper",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "GCSE English", "url": "global-english/gcse/" },
+        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+        { "label": "Past papers", "url": "global-english/gcse/ocr/papers/" }
+      ],
+      "backTo": { "label": "Past papers", "url": "global-english/gcse/ocr/papers/" },
+      "hero": {
+        "text": "Two texts about the same building, written a hundred and sixty years apart. Five reading questions, one writing task, eighty marks, two hours."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": [
+            "This is **not** an OCR examination paper, past paper or sample assessment material. It is original practice material written by RCF English.",
+            "It follows the published structure of **OCR GCSE (9-1) English Language J351, Component 01: Communicating information and ideas**: 2 hours, 80 marks, two unseen non-fiction texts in an Insert, Section A reading worth 40 marks in questions of 2, 2, 6, 12 and 18 marks, and Section B writing worth 40 marks from a choice of two tasks.",
+            "**Text 1 is an original composition written in a nineteenth-century voice.** It is not the work of any nineteenth-century writer and is not an extract from any real speech, pamphlet or newspaper. Both texts were written for this paper.",
+            "**RCF English is not affiliated with, endorsed by or approved by OCR.** For official papers, mark schemes and examiners' reports see the [past papers page](global-english/gcse/ocr/papers/)."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Paper details",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Field", "Detail"],
+          "rows": [
+            ["Written by", "RCF English (original practice material)"],
+            ["Modelled on", "OCR GCSE (9-1) English Language, specification J351, Component 01"],
+            ["Component title it follows", "Communicating information and ideas"],
+            ["Time allowed", "2 hours"],
+            ["Maximum mark", "80"],
+            ["Sections", "Section A Reading, 40 marks. Section B Writing, 40 marks."],
+            ["Texts", "Text 1, nineteenth century. Text 2, twenty-first century. Both non-fiction, both original RCF compositions."],
+            ["Theme linking the texts", "The public library, and what people actually use it for"],
+            ["Section B", "One task from a choice of two"],
+            ["Advice", "About one hour on each section. Read both texts and all the questions before you begin."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Before you start",
+          "text": [
+            "Work to time: 2 hours, no dictionary. The two hours are split evenly, so the 40-mark writing task is worth exactly as much as the whole reading section.",
+            "The marking guide is on a [separate page](global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme/). Do not open it until you have finished.",
+            "To print this paper, use your browser's print command and choose Save as PDF if you want a file."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "A note on which text carries which question",
+          "text": [
+            "On this paper the two short answers are set on Text 2 and the twelve-mark language question on Text 1. OCR may set them the other way round, so do not learn the order - learn the question types.",
+            "What never changes is that the six-mark question uses **both** texts and is about *what they say*, and the eighteen-mark question uses **both** texts and is about *how well they say it*."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Text 1",
+          "level": "h2",
+          "text": [
+            "**An original RCF composition written in a nineteenth-century voice.** It is presented as an address to the ratepayers of a northern manufacturing town in 1861, reported in the local newspaper, in which a councillor argues that the town should adopt the Free Libraries Act."
+          ],
+          "parts": [
+            {
+              "heading": "The Question of a Free Library",
+              "level": "h3",
+              "text": [
+                "**1** Gentlemen, - I am aware that I have been described in this room as a man who wishes to spend your money upon novels, and I had better begin by admitting that I do wish to spend your money, though not upon novels.",
+                "**4** The proposal before you is a penny in the pound. For that penny you would have a building, warmed and lighted, open from eight in the morning until ten at night, containing books which any man in this town might read without paying and without asking anybody's permission. I have heard three objections to it, and I shall take them in their order.",
+                "**10** The first is that the working man does not want books. I would answer that in Manchester, where the experiment has been tried, the reading room was used last year by eleven thousand persons, of whom the greater number were working men, and that the committee there has twice been obliged to enlarge the premises. A want which has to be enlarged twice in four years is not an imaginary one.",
+                "**17** The second objection is that he would read the wrong ones. I confess I find this the strangest of the three. We do not say of a man who has never eaten that he must not be fed until he can be trusted to choose his dinner. He will read what is put before him; what is put before him is a matter for the committee; and the committee, gentlemen, is you.",
+                "**23** The third objection is the honest one, and it is the penny. I shall not pretend that the sum is nothing to a man who counts pennies, for I have counted them myself. But I would ask those gentlemen who feel it most keenly to consider what else the penny buys. It buys, in this town, a very great deal of gin. I am told that the public houses of this parish take more upon a single Saturday than the library would cost the parish in a year, and I have never once heard it argued in this room that the working man cannot afford *that*.",
+                "**32** I will put the case at its lowest, since the highest has been laughed at. I do not say that a library will make men virtuous. I say that upon a wet evening in February a man who is out of work has, at present, the choice of a cold room or a warm public house, and that we propose to offer him a third door. Whether he goes through it is his affair. That it should be standing there is ours.",
+                "**39** I move that the Act be adopted."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Text 2",
+          "level": "h2",
+          "text": [
+            "**An original RCF composition.** It is presented as a piece written in 2024 by a librarian in a small branch library, published on a website that carries writing about working life."
+          ],
+          "parts": [
+            {
+              "heading": "The Warm Room",
+              "level": "h3",
+              "text": [
+                "**1** People ask what I do all day and I have stopped trying to answer, because the honest version sounds either boring or invented.",
+                "**3** This morning, before eleven, I have renewed a large-print novel for a woman who has read every other one we own; explained twice that we cannot print in colour; found a man the form he needed and then, because the form was impossible, filled most of it in with him; told a toddler that we do not lick the dinosaur book; and helped a woman of about seventy send her first email, which was to her grandson, and which took forty minutes and was three lines long. In none of that did anybody borrow anything, and I would say all of it was library work.",
+                "**12** The thing nobody outside the building quite understands is how little of this is about reading. We are the last indoor place in this town centre where a person can sit down for two hours without buying something. That is the whole of it, and everything else follows from that one fact: the man with the form, the students in September, the four regulars who arrive at ten past nine for the newspapers, the mother who comes in with a pushchair because it is raining and there is nowhere else to be.",
+                "**20** In winter it is more obvious. We had a hundred and forty people through the door on the coldest day in January, and I know, because I was watching, that a good number of them took nothing at all off the shelves. Nobody says *I am here because my heating is off*. They say they are looking for something and cannot remember what it is called.",
+                "**26** I am supposed to have opinions about this. The council would prefer the figures to be about issues - books out, books back - because issues can be counted and warmth cannot. And issues are down. I am not going to pretend otherwise. But I have started keeping a tally of my own, which is not official and would embarrass everybody if it were, of the number of conversations in a day that go on longer than the task required. It runs at about thirty.",
+                "**34** I do not want to make this sound noble. Half of it is admin and a quarter of it is the printer. But when people write that libraries are finished because everybody has the internet at home, I would like to put them behind my desk for one Tuesday. Not everybody has the internet at home. Not everybody has a home that is warm at eleven in the morning. And there is nobody else left doing this, which is either an argument for us or an indictment of everything else, and most days I am too busy to work out which."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section A: Reading",
+          "level": "h2",
+          "text": [
+            "Answer **all** the questions in this section. You are advised to spend about **1 hour** on this section. **[40 marks]**"
+          ],
+          "parts": [
+            {
+              "heading": "Question 1 [2 marks]",
+              "level": "h3",
+              "text": [
+                "Look again at **lines 3 to 11 of Text 2**.",
+                "**Give two** things the writer did in the library before eleven o'clock that morning.",
+                "**[2 marks]**"
+              ]
+            },
+            {
+              "heading": "Question 2 [2 marks]",
+              "level": "h3",
+              "text": [
+                "Look again at **lines 12 to 25 of Text 2**.",
+                "**Explain two** reasons the writer gives for saying that people come to the library for something other than books.",
+                "**[2 marks]**"
+              ]
+            },
+            {
+              "heading": "Question 3 [6 marks]",
+              "level": "h3",
+              "text": [
+                "Both writers describe people who use a library for something other than reading.",
+                "Using information from **both texts**, **synthesise** what the two writers say about these people and about why they come.",
+                "**[6 marks]**"
+              ]
+            },
+            {
+              "heading": "Question 4 [12 marks]",
+              "level": "h3",
+              "text": [
+                "**Text 1 only.**",
+                "**Explore** how the writer uses **language and structure** to persuade the ratepayers to vote for the library. Support your answer with reference to the text.",
+                "**[12 marks]**"
+              ]
+            },
+            {
+              "heading": "Question 5 [18 marks]",
+              "level": "h3",
+              "text": [
+                "**Both texts.**",
+                "*\"Neither of these writers is really arguing about books.\"*",
+                "How far do you agree, and how convincingly does each writer make their case?",
+                "In your answer you should:",
+                "**[18 marks]**"
+              ],
+              "bullets": [
+                "compare the two writers' ideas and perspectives, and how these are conveyed;",
+                "evaluate how effectively each writer achieves what they set out to do;",
+                "support what you say with quotations from **both** texts."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "How the 18 marks divide",
+          "text": [
+            "Question 5 is marked in two parts which are added together: **12 marks for evaluating the texts critically** and **6 marks for comparing the writers' ideas and perspectives**.",
+            "Evaluation is worth twice comparison. An answer that compares the two texts neatly but never judges how well either writer does what they are trying to do is giving away twelve of the eighteen marks."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section B: Writing",
+          "level": "h2",
+          "text": [
+            "Answer **one** question in this section. You are advised to spend about **1 hour**, including planning and checking. **[40 marks]**",
+            "Twenty-four marks are for content and organisation, and sixteen for vocabulary, sentence structure, spelling and punctuation. Presentational features such as columns, boxes and headings are **not** assessed on this component, so do not spend time drawing them."
+          ],
+          "parts": [
+            {
+              "heading": "Either Question 6 [40 marks]",
+              "level": "h3",
+              "text": [
+                "Your local council has proposed closing the branch library in your area.",
+                "Write a **speech** to be delivered at a public meeting, **persuading** the councillors present to keep it open.",
+                "In your speech you could write about:",
+                "**[40 marks]**"
+              ],
+              "bullets": [
+                "who uses the library, and what they use it for;",
+                "what would be lost if it closed;",
+                "the objections you expect, and your answers to them."
+              ]
+            },
+            {
+              "heading": "Or Question 7 [40 marks]",
+              "level": "h3",
+              "text": [
+                "A website for young people is running a series called *What that place is actually for*.",
+                "Write an **article** for the site **explaining** to readers of your own age what a public library is for now, and whether it still matters.",
+                "In your article you could write about:",
+                "**[40 marks]**"
+              ],
+              "bullets": [
+                "what people your age think a library is;",
+                "what happens there that they may not know about;",
+                "what you think it is really for."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "A timing plan for this paper",
+          "text": [
+            "**0-5 min** read both texts once, quickly, for what each is about and who wrote it for whom.",
+            "**5-10 min** Questions 1 and 2 (4 marks). Do not spend fifteen minutes here; students routinely do.",
+            "**10-18 min** Question 3, synthesis (6 marks).",
+            "**18-38 min** Question 4, language and structure (12 marks).",
+            "**38-60 min** Question 5, comparison and evaluation (18 marks).",
+            "**60-115 min** Section B, including five minutes planning and five minutes checking.",
+            "**115-120 min** read your writing back for sentence endings, paragraph breaks and anything you were unsure how to spell."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "items": [
+            { "title": "Marking guide for this paper", "url": "global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme/", "text": "Answers, band descriptions in plain English, and full model answers for Questions 4, 5 and 6." },
+            { "title": "Component 01 method", "url": "global-english/gcse/ocr/component-1/", "text": "How to approach each question type, and where the marks actually sit." },
+            { "title": "Official OCR papers", "url": "global-english/gcse/ocr/papers/", "text": "OCR's own past papers, mark schemes and examiners' reports." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme",
+      "title": "RCF Model Paper: OCR Component 01 Marking Guide",
+      "metaTitle": "OCR J351/01 Practice Paper: Answers and Marking Guide | RCF English",
+      "description": "Answers, indicative content, plain-English band descriptions and full model answers for the RCF original OCR GCSE English Language Component 01 practice paper.",
+      "keywords": "OCR J351 answers, OCR synthesis model answer, OCR 18 mark question model answer, OCR component 01 marking guide",
+      "kicker": "Unofficial original RCF practice material",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "marking guide",
+      "educationalLevel": "GCSE",
+      "breadcrumbs": [
+        { "label": "Global English", "url": "global-english/" },
+        { "label": "GCSE English", "url": "global-english/gcse/" },
+        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+        { "label": "Past papers", "url": "global-english/gcse/ocr/papers/" }
+      ],
+      "backTo": { "label": "RCF Model Paper: OCR Component 01", "url": "global-english/gcse/ocr/papers/rcf-model-component-1/" },
+      "hero": {
+        "text": "Answers for all five reading questions, what separates a good answer from a middling one, and full model answers for the twelve-mark, the eighteen-mark and the speech."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": [
+            "This marking guide accompanies [the RCF model paper for OCR Component 01](global-english/gcse/ocr/papers/rcf-model-component-1/), original practice material written by RCF English.",
+            "It is **not** an OCR mark scheme. The band descriptions below are RCF English's own plain-English account of how the marks divide; no OCR mark scheme wording is reproduced. For the authoritative standard, use OCR's own mark schemes and examiners' reports, linked on the [past papers page](global-english/gcse/ocr/papers/).",
+            "RCF English is not affiliated with, endorsed by or approved by OCR."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Question 1: two things (2 marks)",
+          "level": "h2",
+          "text": [
+            "One mark for each correct point, up to two. A short quotation or a close paraphrase is enough - the question says *give*, not *explain*, so no development is required and none is credited."
+          ],
+          "bullets": [
+            "renewed a large-print novel for a woman who has read all the others;",
+            "explained twice that the library cannot print in colour;",
+            "found a man the form he needed;",
+            "helped him fill most of it in;",
+            "told a toddler not to lick a book;",
+            "helped an older woman send her first email.",
+            "**Any two of the above.** Do not credit a third: writing six answers when two are asked for wastes time and earns nothing."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "The commonest way to lose these two marks",
+          "text": [
+            "Straying outside the line references. Everything before line 3 and after line 11 is out of bounds here, however relevant it looks.",
+            "Bundling two points into one sentence so it is unclear whether two separate things have been given. Write them as two numbered points."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Question 2: two reasons, explained (2 marks)",
+          "level": "h2",
+          "text": [
+            "One mark for each reason, up to two. This question says *explain*, so a lifted quotation on its own is not enough: the answer must say what the detail shows."
+          ],
+          "bullets": [
+            "**Shelter and warmth.** The library is \"the last indoor place in this town centre where a person can sit down for two hours without buying something\", so people come simply for somewhere to be - which is why the mother with the pushchair comes in when it rains.",
+            "**Cold at home.** On the coldest day in January a hundred and forty people came in and \"a good number of them took nothing at all off the shelves\", which shows they came for the heating rather than the books - and the writer notes that nobody admits this.",
+            "**Company.** The four regulars come at ten past nine for the newspapers and the writer's private tally records about thirty conversations a day that run on longer than the task needed, which suggests people come to speak to somebody.",
+            "**Practical help.** The man with the form and the woman sending her first email come because they need a task done that they cannot do alone.",
+            "**Any two, each with the *because* attached.**"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Question 3: synthesis (6 marks)",
+          "level": "h2",
+          "text": [
+            "This question is about **what the two texts say**, not how they say it. Every sentence should contain both texts. A paragraph on Text 1 followed by a paragraph on Text 2 is a summary of each, not a synthesis of both, and is capped low however good the detail.",
+            "**What the marks reward:** points that genuinely combine the two texts; a range of points rather than one idea repeated; short supporting detail from each; and clear connective writing that keeps both texts in view."
+          ],
+          "parts": [
+            {
+              "heading": "Indicative content",
+              "level": "h3",
+              "text": [
+                "The list below is not exhaustive and no answer needs all of it."
+              ],
+              "bullets": [
+                "**Both writers say that warmth is a reason people come.** The councillor imagines a man choosing between \"a cold room or a warm public house\" and offers the library as \"a third door\"; the librarian counts a hundred and forty people on the coldest day in January and calls her piece *The Warm Room*.",
+                "**Both describe people who are not there to read.** The councillor's man is out of work on a wet February evening; the librarian's visitors \"took nothing at all off the shelves\".",
+                "**Both note that the users are poor rather than bookish.** Text 1 addresses the needs of \"the working man\" whose objectors doubt he wants books at all; Text 2 points out that \"not everybody has the internet at home\".",
+                "**Both accept that the library will not transform anybody.** \"I do not say that a library will make men virtuous\" sits beside \"I do not want to make this sound noble.\"",
+                "**Both are arguing against people who count.** The councillor answers ratepayers worried about a penny in the pound; the librarian answers a council that would \"prefer the figures to be about issues\".",
+                "**They differ on how open they are about it.** The councillor states the warmth argument as his case; the librarian reports that her visitors will not admit it, and says they claim to be \"looking for something\" instead."
+              ]
+            },
+            {
+              "heading": "What separates the bands here",
+              "level": "h3",
+              "bullets": [
+                "**Low.** Retells one text, then the other. Detail may be accurate but the texts never meet.",
+                "**Middle.** Combines the texts, but the same idea is made two or three times over - usually the warmth point - so the range is narrow.",
+                "**High.** Several distinct combined points, each supported briefly from both texts, including at least one point of *difference* as well as similarity. Six marks is a short answer: about eight minutes and three or four sentences of real synthesis."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Question 3: model answer",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Original RCF model answer (about 160 words, roughly 8 minutes)",
+              "prompt": "Using information from both texts, synthesise what the two writers say about people who use a library for something other than reading, and about why they come.",
+              "sample": [
+                "Both writers agree that a large part of a library's use has nothing to do with borrowing, and both identify warmth as the reason. The councillor pictures a man out of work in February choosing between \"a cold room or a warm public house\" and offers the library as \"a third door\", while the librarian records a hundred and forty people on the coldest day in January, \"a good number of them\" taking nothing off the shelves at all. In both accounts the people concerned are poor rather than bookish: Text 1 is answering an objection that the working man does not want books, and Text 2 points out that \"not everybody has the internet at home\". The difference is in how openly it is said. The councillor makes the warmth his argument and states it to the room; the librarian reports that her visitors will not admit it, and say instead that they are \"looking for something\" they cannot name."
+              ],
+              "notes": [
+                "**Both texts appear in every sentence.** No sentence could be moved to a paragraph about one text alone.",
+                "**Three distinct points, not one point three times:** warmth, poverty, and a difference in candour.",
+                "**Quotations are three or four words long.** At six marks there is no room for longer ones.",
+                "**The last two sentences are a difference, not a similarity.** Synthesis includes noticing where two accounts diverge, and it is the quickest way to lift an answer out of the middle band.",
+                "**No analysis of method.** Not one word here is about how the writers write. That belongs to Questions 4 and 5, and spending it here earns nothing twice over."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Question 4: language and structure (12 marks)",
+          "level": "h2",
+          "text": [
+            "Text 1 only. The question asks how the writer persuades, so every point should end at the ratepayer in the room, not at the technique.",
+            "**Terminology is required but not rewarded on its own.** Naming a tricolon earns nothing; saying what this particular tricolon does to a listener earns the mark. Use the term and move past it in the same sentence."
+          ],
+          "parts": [
+            {
+              "heading": "Indicative content: what is there to find",
+              "level": "h3",
+              "bullets": [
+                "**The concession that opens the speech.** \"I do wish to spend your money, though not upon novels\" takes the hostile description and half-accepts it, which disarms the objection before it can be made again.",
+                "**The structure is the argument.** Three objections are announced and then answered in order - \"The first is\", \"The second objection is\", \"The third objection is the honest one\" - so the speech sounds like a man working through a list rather than a man pleading. A listener can follow it without notes.",
+                "**Numbers used as proof.** \"eleven thousand persons\", \"twice been obliged to enlarge\", \"a penny in the pound\". The specificity is doing persuasive work: it makes the case sound audited rather than hoped for.",
+                "**The analogy about dinner.** \"We do not say of a man who has never eaten that he must not be fed until he can be trusted to choose his dinner\" reduces the second objection to an absurdity without ever calling anybody absurd.",
+                "**The direct address that turns the objection back.** \"the committee, gentlemen, is you\" - the sentence ends on the single word that makes the audience responsible.",
+                "**The gin comparison.** Placing the library's cost beside what \"the public houses of this parish take upon a single Saturday\" is an argument by proportion, and the italicised *that* at the end of the paragraph does the work of a raised eyebrow.",
+                "**The deliberate lowering at the end.** \"I will put the case at its lowest\" and \"I do not say that a library will make men virtuous\" give up the grand claim, so that the modest one which follows is harder to dismiss.",
+                "**The final metaphor and the two short sentences after it.** \"a third door\", then \"Whether he goes through it is his affair. That it should be standing there is ours.\" The balance of *his* against *ours* places the decision squarely with the men in the room."
+              ]
+            },
+            {
+              "heading": "What separates the bands here",
+              "level": "h3",
+              "bullets": [
+                "**Low.** Features are spotted and named. *He uses a rhetorical question. He uses a metaphor.* No effect, or an effect asserted rather than argued.",
+                "**Middle.** Effects are explained, usually one step: *this makes the reader think the library is important.* Accurate but general - the comment would fit almost any persuasive text.",
+                "**High.** Analysis takes a second step: what the choice implies, or what it prevents the listener from thinking. Structure is treated as seriously as language. Three developed paragraphs, not six thin ones."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Question 4: model answer",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Original RCF model answer (about 420 words, roughly 20 minutes)",
+              "prompt": "Explore how the writer of Text 1 uses language and structure to persuade the ratepayers to vote for the library.",
+              "sample": [
+                "The speech is built to sound like arithmetic rather than appeal, and its structure does most of that work. The speaker announces that he has \"heard three objections to it, and I shall take them in their order\", and then does exactly that, opening three consecutive paragraphs with \"The first\", \"The second objection\" and \"The third objection is the honest one\". A listener can follow this without notes, which matters in a room; but the effect is also rhetorical, because a man who lists his opponents' arguments and answers them in turn appears to have nothing to hide. By the time the third objection arrives, the audience has been trained to expect it to be answered too.",
+                "Within that frame the writer persuades chiefly by conceding. He begins by admitting the charge against him - \"I do wish to spend your money, though not upon novels\" - and the clause after the comma retrieves everything the clause before it gave away. The same move returns at the end: \"I will put the case at its lowest\", \"I do not say that a library will make men virtuous\". Giving up the grand claim is a calculated loss, because it leaves him holding only the modest claim, and a modest claim is far harder to laugh at than a noble one. The concession is not weakness; it is the removal of everything an opponent might have attacked.",
+                "His evidence is deliberately countable. \"Eleven thousand persons\", \"twice been obliged to enlarge\", \"a penny in the pound\": the figures are precise, and precision reads as verification even when the listener cannot check it. The gin comparison works the same way by proportion rather than principle - the public houses \"take more upon a single Saturday than the library would cost the parish in a year\" - and the italicised *that* which closes the paragraph substitutes for an argument entirely, inviting the room to notice its own inconsistency without being accused of it. The dinner analogy performs a similar trick on the second objection, reducing it to absurdity while the speaker remains scrupulously polite.",
+                "The ending abandons argument for image. The man out of work has \"the choice of a cold room or a warm public house\", and the library is offered as \"a third door\" - a metaphor plain enough to be remembered on the walk home. Two short sentences follow, balanced against each other: \"Whether he goes through it is his affair. That it should be standing there is ours.\" The antithesis of *his* against *ours* is the whole motion in nine words, and it leaves the ratepayers holding not a request but a duty."
+              ],
+              "notes": [
+                "**Four paragraphs, each with one controlling idea:** structure, concession, evidence, ending. Not a list of devices.",
+                "**Structure is analysed first**, not tacked on at the end. On a twelve-mark question that names structure, half-ignoring it costs marks that language analysis cannot make up.",
+                "**Every point lands on the listener.** \"harder to laugh at\", \"without being accused of it\", \"remembered on the walk home\" - the effect is always on the person in the room.",
+                "**The second step is visible.** The concession paragraph does not stop at *this makes him seem honest*; it argues that the concession removes the ground an opponent would have stood on.",
+                "**Terminology is used and passed:** antithesis, metaphor, analogy - each named in the same sentence that says what it does.",
+                "**Quotations are short and embedded**, which is what makes 420 words possible in twenty minutes."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Question 5: comparison and critical evaluation (18 marks)",
+          "level": "h2",
+          "text": [
+            "Twelve of these marks are for **evaluating the texts critically** and six for **comparing ideas and perspectives**. Evaluation is worth twice comparison, so the bulk of the answer must judge how well each writer does what they set out to do, with comparison as the frame that holds it together.",
+            "**The sentence most answers leave out** is the one that says which writer does it better, and why. Put one at the end of every paragraph."
+          ],
+          "parts": [
+            {
+              "heading": "Indicative content",
+              "level": "h3",
+              "bullets": [
+                "**Both writers are arguing about warmth, shelter and company rather than books** - the statement in the question is largely true of both, and the strongest answers say so and then complicate it.",
+                "**The councillor knows he is doing it and says so.** \"I do not say that a library will make men virtuous\" is a deliberate retreat to the strongest ground.",
+                "**The librarian is less certain.** She is \"supposed to have opinions about this\", keeps an unofficial tally, and ends admitting she is \"too busy to work out which\" - a refusal to conclude that is either honest or evasive, and can be argued either way.",
+                "**Books are not entirely absent.** Text 1 does defend the reading itself against the charge that the working man would \"read the wrong ones\", and Text 2 opens with a woman who has read every large-print novel in the building. An answer that notices this is testing the statement rather than agreeing with it.",
+                "**Purpose changes what counts as effective.** Text 1 must win a vote in a room that night; Text 2 must persuade a reader who has no vote at all. The councillor's certainty is a tool; the librarian's uncertainty is also a tool.",
+                "**Method and audience.** The speech is public, structured and rhetorical because it is spoken to opponents. The article is private, digressive and confiding because it is read by strangers who are not yet hostile.",
+                "**Where each is vulnerable.** The councillor's evidence is second-hand - \"I am told\" - and his image of the working man is one he has constructed for the occasion. The librarian's tally is admittedly unofficial, and her final sentence declines the argument she has spent the piece building."
+              ]
+            },
+            {
+              "heading": "What separates the bands here",
+              "level": "h3",
+              "bullets": [
+                "**Low.** Two texts described in turn. Little or no judgement of effectiveness. This can score well within the six comparison marks and almost nothing within the twelve for evaluation.",
+                "**Middle.** Genuine comparison throughout, with evaluation appearing occasionally and usually as assertion: *this is very effective*.",
+                "**High.** Evaluation is continuous and reasoned - effective *for whom*, *for what purpose*, and *at what cost*. The statement in the question is tested rather than accepted, and the answer is willing to find a weakness in each text."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Question 5: model answer",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Original RCF model answer (about 600 words, roughly 25 minutes)",
+              "prompt": "\"Neither of these writers is really arguing about books.\" How far do you agree, and how convincingly does each writer make their case?",
+              "sample": [
+                "The statement is very largely true, and both writers seem to know it. The councillor spends thirty lines on cost, objections and gin, and reaches his actual case only in the last paragraph, where the library becomes \"a third door\" for a man choosing between a cold room and a public house. The librarian is blunter still: \"how little of this is about reading\". What separates them is not whether books are the point but how much each is prepared to admit, and that difference turns out to decide how convincing each of them is.",
+                "The councillor is the more effective of the two at what he is actually doing, which is winning a vote in a hostile room that evening. His structure is engineered for listeners: three objections announced, then answered in the order promised, so the audience can follow him without notes and cannot accuse him of avoiding anything. His concessions are the sharpest tool he has. \"I do wish to spend your money, though not upon novels\" and \"I do not say that a library will make men virtuous\" both surrender the extravagant claim in order to keep the modest one, and a modest claim is much harder to ridicule. Set against the librarian, who concedes almost too much - \"Half of it is admin and a quarter of it is the printer\" - the councillor concedes strategically while she concedes constitutionally. His is the more useful technique in a room; hers is the more disarming on a page.",
+                "Where the councillor is weakest is exactly where he sounds strongest. His evidence is second-hand: \"I am told\" carries the gin comparison, and the Manchester figures arrive without a source. His working man, out of work on a wet February evening, is a construction assembled for the occasion, and a hostile ratepayer could say so. The librarian's evidence is first-hand and specific to the point of awkwardness - the toddler and the dinosaur book, the three-line email that took forty minutes - and it is more convincing precisely because it is too small and too odd to have been invented for an argument. Where he asserts what the working man needs, she reports what a hundred and forty people did on one January day, and notes that not one of them would say why.",
+                "That observation is the strongest moment in either text, and it is an argument neither writer quite makes explicit: the reason people come is the reason they will not state. The councillor solves this by stating it for them, confidently, in the third person. The librarian leaves it unstated because she is writing about people she will see again on Tuesday. Both choices are defensible; but the councillor's produces a rousing speech that a reader may distrust, and the librarian's produces an account a reader believes and cannot vote on.",
+                "It is worth resisting the statement slightly. Text 1 does defend reading itself, at length, against the charge that the working man would \"read the wrong ones\", and the dinner analogy there is the cleverest thing in the speech. Text 2 opens with a woman who has read every large-print novel the library owns. Books are not absent from either; they are simply not what is being argued *about*.",
+                "Overall the councillor is more convincing as advocacy and the librarian more convincing as testimony, and the difference is one of purpose rather than skill. He must move a vote and therefore cannot afford doubt; she is describing a job and can afford nothing else. Her closing sentence gives up the argument entirely - \"most days I am too busy to work out which\" - and it is a measure of how well she has written the preceding page that this reads as honesty rather than as a failure to finish."
+              ],
+              "notes": [
+                "**Both texts are in every paragraph**, which is what secures the six comparison marks without a separate comparison section.",
+                "**Evaluation is continuous, and it is the point of each paragraph**, not a closing sentence bolted on. Paragraphs two, three and six all judge, and all say *for what purpose*.",
+                "**Each writer is found a weakness.** The councillor's second-hand evidence, the librarian's refusal to conclude. Answers that admire both texts uniformly do not reach the top of the evaluation marks.",
+                "**The statement in the question is tested.** Paragraph five pushes back on it. Agreeing completely with a quotation is rarely the strongest available answer.",
+                "**Effectiveness is measured against purpose, not taste.** The answer never says one text is better written; it says each is better at a different job.",
+                "**Roughly two-thirds of the words do evaluation**, which matches the 12-to-6 split of the marks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Section B: the writing task (40 marks)",
+          "level": "h2",
+          "text": [
+            "Twenty-four marks are for content and organisation and sixteen for vocabulary, sentence structure, spelling and punctuation. Those sixteen are a fifth of the whole paper, and they are easier to lose than the twenty-four are to gain.",
+            "**Form, audience and purpose are stated, not implied.** A speech to councillors and an article for a young readership are different registers, and adapting tone and register is explicitly part of what the content marks reward."
+          ],
+          "parts": [
+            {
+              "heading": "What the 24 content and organisation marks reward",
+              "level": "h3",
+              "bullets": [
+                "A clear line of argument that a reader can state in one sentence after finishing.",
+                "Paragraphs that develop rather than repeat, in an order that could not be shuffled.",
+                "Register held steadily to the stated audience - councillors, or readers your own age.",
+                "The bullet points used as a plan. They map onto a sensible structure and ignoring them throws away a free one.",
+                "Deliberate openings and endings. The last sentence is the one the marker reads immediately before writing the mark."
+              ]
+            },
+            {
+              "heading": "What the 16 technical marks reward",
+              "level": "h3",
+              "bullets": [
+                "Sentences of varied length and structure, used for effect rather than by accident.",
+                "Vocabulary chosen for precision, not for length.",
+                "Accurate punctuation, particularly of sentence endings - comma splices are the commonest single fault at this level.",
+                "Correct spelling, including of words you chose to use. A word you are unsure of is only worth risking if the right one will not do.",
+                "Paragraphing that is visible on the page."
+              ]
+            },
+            {
+              "heading": "Length",
+              "level": "h3",
+              "text": [
+                "Around 400 to 500 words of controlled writing beats 800 rushed ones. There are no marks for volume, and every extra sentence is another chance to lose a technical mark.",
+                "Presentational features are **not** assessed on this component. Do not draw boxes, columns or a masthead."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "model",
+          "heading": "Question 6: model answer",
+          "level": "h2",
+          "items": [
+            {
+              "label": "Original RCF model answer - a speech (about 480 words)",
+              "prompt": "Your local council has proposed closing the branch library in your area. Write a speech to be delivered at a public meeting, persuading the councillors present to keep it open.",
+              "sample": [
+                "Councillors, thank you for hearing me. I want to begin by agreeing with you, because I think you are being told something that is true and I do not want to waste your evening pretending otherwise.",
+                "Borrowing is down. It has been down for nine years. If the question before you tonight is whether fewer people take books out of that building than took them out in 2015, then the answer is yes, and no speech of mine can change it. So I am not going to argue about that figure. I am going to argue that it is the wrong figure.",
+                "Let me tell you what happens in that building on an ordinary Tuesday, because I have been in it on a good many of them. There is a man who comes in at half past nine to apply for jobs, because the application is online and he does not have the internet. There is a woman who brings her daughter after school because the flat is one room and the child cannot think in it. There are four regulars at the newspapers who, between them, speak to nobody else all day. There is a girl in Year 11 at the table by the window every evening in May, and she is there because at home there are three younger brothers and one television. None of those five people will appear in your borrowing figures. All five of them will appear somewhere else in your budget if that door is locked.",
+                "I know what the objection is. The objection is that a council is not a charity and cannot keep a building open on sentiment. I accept that entirely. So let me put it in the terms you are obliged to use. What is the cost of the man not getting the job? What is the cost of the girl not getting the grades? You will not find those numbers on the same page as the borrowing figures, but they are real, and they will be paid by this council eventually, at a considerably worse rate.",
+                "I would also ask you to notice what is disappearing around that library. The bank went in 2019. The post office moved into the back of a shop. There is now precisely one place in this town centre where a person may sit down for two hours and not be asked to buy anything, and you are being invited to close it. When it has gone there will be nothing to replace it, because nothing that replaces it can be free.",
+                "I am not asking you to believe that a library transforms lives. I have never seen one do that. I am asking you to accept something much smaller and much harder to argue with: that for a few hundred people in this town it is the only warm, quiet, unpaid room they have, and that once it is shut it will not be reopened.",
+                "You can lock that door on Friday. I would ask you, instead, to leave it standing open, and to count what happens behind it properly."
+              ],
+              "notes": [
+                "**It concedes first.** The opening paragraph gives the councillors their strongest fact - borrowing is down - and then reframes it. Persuasive writing that ignores the obvious objection reads as though it has not thought about it.",
+                "**The bullet points are all covered** - who uses it, what would be lost, the objections and the answers - but the essay is not organised as three bullets. That is what using a plan looks like, rather than obeying one.",
+                "**The five people are concrete and countable.** Specific invented detail persuades where general claims do not: *one room*, *three younger brothers and one television*.",
+                "**The register is right for the audience.** \"Let me put it in the terms you are obliged to use\" speaks to councillors, not to a general reader.",
+                "**Sentence variety is deliberate.** Long accumulating sentences in the Tuesday paragraph, then short flat ones in the last: *You can lock that door on Friday.*",
+                "**It ends on an instruction, not a summary.** The last sentence asks for one specific thing.",
+                "**About 480 words.** Written to be read aloud in roughly three and a half minutes, which is what a speech at a public meeting actually gets."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "The faults that cost most on this paper",
+          "level": "h2",
+          "do": [
+            "Answer Question 3 with both texts in every sentence.",
+            "Judge effectiveness in Question 5, in every paragraph, and say for what purpose.",
+            "Give exactly the number of points asked for in Questions 1 and 2.",
+            "Analyse structure in Question 4, not only language.",
+            "Leave five minutes at the end for sentence endings and spelling.",
+            "Obey the stated form, audience and purpose in Section B."
+          ],
+          "dont": [
+            "Do not summarise Text 1 and then Text 2 in the synthesis question. It is the single commonest error on this component.",
+            "Do not confuse Question 3 with Question 5. Synthesis is *what they say*; the eighteen-mark question is *how well they say it*.",
+            "Do not spend fifteen minutes on the four short marks.",
+            "Do not name devices without saying what they do.",
+            "Do not draw columns, boxes or headings in Section B. Presentation is not assessed and it costs minutes.",
+            "Do not write 800 rushed words when 450 controlled ones score higher."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related pages",
+          "items": [
+            { "title": "The paper itself", "url": "global-english/gcse/ocr/papers/rcf-model-component-1/", "text": "Both texts and all seven questions, for working under timed conditions." },
+            { "title": "Component 01 method", "url": "global-english/gcse/ocr/component-1/", "text": "How to approach each question type, and where the marks actually sit." },
+            { "title": "Official OCR papers", "url": "global-english/gcse/ocr/papers/", "text": "OCR's own past papers, mark schemes and examiners' reports." },
+            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": "Both components and the full assessment objective grid." }
+          ]
+        }
+      ]
+    }
+  ]
+}

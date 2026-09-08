@@ -289,8 +289,8 @@
           "style": "legal",
           "title": "Where these figures come from",
           "text": [
-            "Duration and weighting read from the Summary of Assessment table in the Eduqas specification. Eduqas materials are linked, never copied. RCF English is not affiliated with, endorsed by or approved by Eduqas or WJEC.",
-            "**Per-question mark allocations are not stated here**, because they were not verified from the specification. Use the [past papers](global-english/gcse/eduqas/papers/) for the exact marks."
+            "Duration and weighting read from the Summary of Assessment table in the Eduqas specification. The **per-question mark allocations below** come from Eduqas's own [Component 2 additional assessment materials](https://www.eduqas.co.uk/media/fkopbmoc/5-component-2-additional-assessment-materials.pdf), which prints each question with its tariff in brackets, and whose front cover states the two section totals and the timing for the writing section. Eduqas materials are linked, never copied. RCF English is not affiliated with, endorsed by or approved by Eduqas or WJEC.",
+            "**One figure below is not Eduqas's.** The 20 marks shown against each of the two writing tasks is not stated in that document. Eduqas gives Section B as 40 marks and advises 30 minutes on each of the two questions; splitting it evenly is an inference, and it is marked as one. Check a [past paper](global-english/gcse/eduqas/papers/) before relying on it."
           ]
         },
         {
@@ -317,6 +317,33 @@
             "Pairing a nineteenth-century text with a twenty-first-century one is not decoration. It is what makes comparison possible: two writers on a related subject, separated by two centuries of changed assumptions about class, gender, science, empire and what may be said in public.",
             "**The nineteenth-century text is the one to prepare for.** Its sentences are longer, its vocabulary is less familiar, and its tone is often formal in a way that can read as cold or pompous to a modern ear when it is neither. Reading a few nineteenth-century letters, speeches, travel accounts or newspaper columns before the examination is the single most useful preparation for this paper.",
             "**Do not mistake unfamiliarity for difficulty of thought.** A Victorian writer arguing for better drains is making a plain argument in an ornate register. Translate the register in your head and the argument is usually straightforward."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Where the 80 marks sit",
+          "level": "h2",
+          "stacked": true,
+          "caption": "The reading tariffs are the shape Eduqas prints in its own Component 2 assessment materials. The 20 marks against each writing task is an inference from two equally timed tasks sharing 40 marks, not a published figure.",
+          "columns": ["Question", "Marks", "What it asks for"],
+          "rows": [
+            ["A1 (a) (b) (c)", "1 + 1 + 1", "Retrieval from the first text. One fact each, written plainly."],
+            ["A2", "10", "How the writer shows something about the first text. The question names *what he says* and *language, tone and structure*, and both halves must be answered."],
+            ["A3 (a) (b) (c)", "1 + 1 + 1", "Retrieval from the second text."],
+            ["A4", "10", "**Evaluation.** *How well* does the text convey the writer's feelings? Not what the feelings are, but how successfully they are conveyed."],
+            ["A5", "4", "Short synthesis across **both** texts. Information, not analysis - there are no marks for method here."],
+            ["A6", "10", "Comparison across **both** texts: the subject itself, and how each writer gets their feelings across."],
+            ["Section A total", "40", "About one hour."],
+            ["B1 and B2", "40 (about 20 each)", "Two transactional or persuasive tasks, about 30 minutes each: five minutes planning, twenty-five writing."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The two questions students most often misread",
+          "text": [
+            "**A4 is an evaluation question, not a feelings question.** The marks are in the words *how well*. An answer that lists what the writer feels, however accurately, has answered only the first of the two bullets.",
+            "**A5 is worth four marks and wants facts.** Analysing language here earns nothing, and it costs the time A6 needs. Five minutes is enough."
           ]
         },
         {
@@ -427,12 +454,39 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "RCF Model Paper: Component 2",
+          "eyebrow": "Original practice material",
+          "level": "h2",
+          "variant": "tint",
+          "columns": "2",
+          "intro": [
+            "An original paper in the Component 2 structure: two unseen non-fiction texts about fighting a fire, one a 2023 newspaper feature and one written in the voice of an 1867 diary, followed by two transactional writing tasks. Two hours, eighty marks. Neither text is taken from any real publication; both were written for this paper."
+          ],
+          "items": [
+            {
+              "title": "Question paper",
+              "url": "global-english/gcse/eduqas/papers/rcf-model-component-2/",
+              "more": "Open the paper",
+              "text": ["Both texts and all eight questions, in the Component 2 structure, for working under timed conditions."],
+              "bullets": ["Section A: 1+1+1, 10, 1+1+1, 10, 4 and 10", "Section B: two tasks, 40 marks", "Prints cleanly on paper"]
+            },
+            {
+              "title": "Marking guide",
+              "url": "global-english/gcse/eduqas/papers/rcf-model-component-2-mark-scheme/",
+              "more": "Open the marking guide",
+              "text": ["Answers for all six reading questions, plain-English band descriptions, and full model answers for the evaluation question, the comparison and the letter."],
+              "bullets": ["What separates the bands, per question", "Why each model answer works", "The faults that cost most marks"]
+            }
+          ]
+        },
+        {
           "type": "callout",
           "style": "note",
-          "title": "Original RCF model paper",
+          "title": "The other boards",
           "text": [
-            "There is not yet an RCF model paper for Eduqas. AQA and Edexcel each have a pair - see the [AQA Paper 2 model paper](global-english/gcse/aqa/papers/rcf-model-paper-2/) and the [Edexcel model papers](global-english/gcse/edexcel/papers/) - and an Eduqas pair will follow the same pattern: original texts, verified structure, a separate marking guide and clear labelling as unofficial practice material.",
-            "In the meantime the **AQA Paper 2 model paper** is the closest fit for Eduqas Component 2, since it also pairs a nineteenth-century non-fiction source with a modern one. The mark allocations differ, so use it for the reading skills rather than for timing."
+            "All four boards now have at least one RCF model paper: the [AQA Paper 2 model paper](global-english/gcse/aqa/papers/rcf-model-paper-2/), the [Edexcel model papers](global-english/gcse/edexcel/papers/) and the [OCR Component 01 model paper](global-english/gcse/ocr/papers/rcf-model-component-1/).",
+            "The AQA Paper 2 model paper is also useful practice for Eduqas Component 2, since both pair a nineteenth-century non-fiction text with a modern one and both end in a comparison. The question tariffs differ, so use it for the reading skills rather than for the timing."
           ]
         },
         {
