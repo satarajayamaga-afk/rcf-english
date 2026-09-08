@@ -2581,6 +2581,69 @@ function RenderForm($block) {
 
 # ============================================================ page writing ==
 
+# An open book for the right-hand column of the home hero. It is decoration
+# and nothing else: every word on it is said properly elsewhere on the page,
+# so it is hidden from assistive technology, it is not printed, and the
+# stylesheet keeps it out of the way below 980px where the hero is a single
+# column. The animation lives in assets/js/herobook.js and only starts if the
+# visitor has not asked for reduced motion.
+#
+# Pages are given in reading order. The first is the left page of the opening
+# spread, the last is the right page of the closing spread, and the pages in
+# between pair up into leaves: each leaf carries the page a reader sees before
+# the turn on its front and the page they see afterwards on its back.
+function BookSheet($pg, $extra) {
+    $h = '<div class="hbook__sheet' + $extra + '">'
+    $t = [string](P $pg 'title')
+    if ($t) { $h += '<span class="hbook__title">' + (E $t) + '</span>' }
+    $lines = AsList (P $pg 'lines')
+    if ($lines.Count) {
+        $h += '<span class="hbook__rule"></span><span class="hbook__lines">'
+        foreach ($l in $lines) { $h += '<span>' + (E $l) + '</span>' }
+        $h += '</span>'
+    }
+    return $h + '</div>'
+}
+
+function HeroBook($fig) {
+    $pages = AsList (P $fig 'pages')
+    if ($pages.Count -lt 4 -or ($pages.Count % 2) -ne 0) {
+        [void]$script:Warnings.Add("The hero book on page '$($script:PageSlug)' needs an even number of pages, at least four, but has $($pages.Count). It was left out.")
+        return ''
+    }
+    $leaves = ($pages.Count - 2) / 2
+
+    $h = '<div class="hbook" data-hbook aria-hidden="true">'
+    $h += '<div class="hbook__scene">'
+    $h += '<div class="hbook__float">'
+    $h += '<div class="hbook__book" data-hbook-book>'
+    $h += '<span class="hbook__cover"></span>'
+
+    # The two fixed pages: the first one the reader sees on the left, and the
+    # last one, which is uncovered when every leaf has turned.
+    $h += '<div class="hbook__page hbook__page--verso">' + (BookSheet $pages[0] ' hbook__sheet--verso') + '</div>'
+    $h += '<div class="hbook__page hbook__page--recto">' + (BookSheet $pages[$pages.Count - 1] ' hbook__sheet--recto') + '</div>'
+
+    # The leaves, stacked with the first on top. Each sits a fraction of a
+    # pixel above the one below so the browser has a real depth order to sort
+    # by rather than two pages in the same plane.
+    for ($i = 0; $i -lt $leaves; $i++) {
+        $front = $pages[(2 * $i) + 1]
+        $back  = $pages[(2 * $i) + 2]
+        $z = [math]::Round(($leaves - $i) * 0.6, 2)
+        $h += '<div class="hbook__leaf" data-hbook-leaf style="--z:' + $z + 'px">'
+        $h += '<div class="hbook__side hbook__side--front">' + (BookSheet $front ' hbook__sheet--recto') + '</div>'
+        $h += '<div class="hbook__side hbook__side--back">' + (BookSheet $back ' hbook__sheet--verso') + '</div>'
+        $h += '</div>'
+    }
+
+    $h += '<span class="hbook__ribbon"></span>'
+    $h += '</div></div>'
+    $h += '<span class="hbook__shadow"></span>'
+    $h += '</div></div>'
+    return $h
+}
+
 function HeroSection($page) {
     $hero = P $page 'hero'
     if (-not $hero) { return '' }
@@ -2620,16 +2683,28 @@ function HeroSection($page) {
         if ($note) { $html += '<p class="hero__note">' + (Inline $note) + '</p>' }
         $html += '</div>'
 
+        # The right-hand column. The hero grid has two columns, so the book and
+        # the aside have to be handed to it as one child or the second of them
+        # drops onto a row of its own.
+        $figHtml = ''
+        $figure = P $hero 'figure'
+        if ($figure -and ([string](P $figure 'type')) -eq 'book') { $figHtml = HeroBook $figure }
+
+        $asideHtml = ''
         $aside = P $hero 'aside'
         if ($aside) {
-            $html += '<aside class="hero__aside" aria-labelledby="hero-aside-title">'
-            $html += '<h2 class="hero__aside-title" id="hero-aside-title">' + (E (P $aside 'title')) + '</h2><ul>'
-            foreach ($i in (AsList (P $aside 'items'))) { $html += '<li>' + (Inline $i) + '</li>' }
-            $html += '</ul>'
+            $asideHtml = '<aside class="hero__aside" aria-labelledby="hero-aside-title">'
+            $asideHtml += '<h2 class="hero__aside-title" id="hero-aside-title">' + (E (P $aside 'title')) + '</h2><ul>'
+            foreach ($i in (AsList (P $aside 'items'))) { $asideHtml += '<li>' + (Inline $i) + '</li>' }
+            $asideHtml += '</ul>'
             $foot = P $aside 'footnote'
-            if ($foot) { $html += '<p class="hero__aside-foot">' + (Inline $foot) + '</p>' }
-            $html += '</aside>'
+            if ($foot) { $asideHtml += '<p class="hero__aside-foot">' + (Inline $foot) + '</p>' }
+            $asideHtml += '</aside>'
         }
+
+        if ($figHtml -and $asideHtml) { $html += '<div class="hero__side">' + $figHtml + $asideHtml + '</div>' }
+        else { $html += $figHtml + $asideHtml }
+
         return $html + '</div></section>'
     }
 

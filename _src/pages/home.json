@@ -10,7 +10,7 @@
   "ogTitle": "RCF English | English Learning & Teaching Resources",
   "ogDescription": "RCF English brings together curriculum resources, O/L & A/L Literature, Practical English, past papers, teacher resources, interactive learning and RCF Publications. Free to read, no account required.",
 
-  "scripts": ["browse"],
+  "scripts": ["browse", "herobook"],
 
   "hero": {
     "style": "home",
@@ -23,6 +23,31 @@
       { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--slate" },
       { "label": "Explore RCF Publications", "url": "rcf-publications/", "style": "btn--moss" }
     ],
+    "figure": {
+      "type": "book",
+      "_note": [
+        "A decorative open book for the right-hand column of the home hero.",
+        "It says nothing the page does not already say in words, so it is",
+        "hidden from screen readers and from print, it does not appear below",
+        "980px where the hero is a single column, and it holds still for",
+        "anyone who has asked for reduced motion.",
+        "",
+        "Pages are listed in reading order. The first is the left page of the",
+        "opening spread and the last is the right page of the closing one;",
+        "the rest are paired into leaves, so an even number is required and",
+        "at least four."
+      ],
+      "pages": [
+        { "title": "RCF English", "lines": ["Learn • Practise • Progress"] },
+        { "title": "Study", "lines": ["Grammar", "Literature", "Writing", "Reading"] },
+        { "title": "Explore", "lines": ["Learn", "Practise", "Master"] },
+        { "title": "Papers", "lines": ["Past Papers", "Model Answers", "Marking Schemes"] },
+        { "title": "Teachers", "lines": ["Lesson Plans", "Worksheets", "Study Packs"] },
+        { "title": "Practical", "lines": ["Spoken English", "IELTS", "Global English"] },
+        { "title": "Examinations", "lines": ["O/L English", "O/L Literature", "A/L Literature"] },
+        { "title": "RCF English", "lines": ["Free to read.", "No account required."] }
+      ]
+    },
     "aside": {
       "title": "Who this is for",
       "items": [

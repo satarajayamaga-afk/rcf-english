@@ -1120,6 +1120,14 @@ a:hover { color: var(--teal-700); }
   }
 }
 
+/* When the hero carries a decorative figure as well as the aside, the two go
+   into the right-hand column together. */
+.hero__side {
+  display: grid;
+  gap: var(--sp-5);
+  align-content: center;
+}
+
 .hero__aside {
   padding: var(--sp-5);
   border-radius: var(--radius-lg);
@@ -1213,6 +1221,232 @@ a:hover { color: var(--teal-700); }
   margin-bottom: 0;
 }
 .page-hero .btn-row { margin-top: var(--sp-5); }
+
+
+/* 8b. The hero book ------------------------------------------------------- */
+
+/* An open book built out of ordinary elements and CSS 3D transforms. There is
+   no library behind it and no canvas: the pages are divs, the turn is a
+   rotation about the spine, and the shading is a gradient whose opacity rides
+   along with that rotation.
+
+   It is decoration. The markup is hidden from assistive technology, it is not
+   printed, it does not exist below 980px where the hero becomes one column,
+   and it holds still for anyone who has asked for reduced motion. If the
+   script never runs, what remains is a still open book on its first spread,
+   which is a perfectly good thing to leave behind. */
+
+.hbook {
+  display: none;
+  /* A page standing on end reaches well above the book itself, so the top of
+     the column is left clear for it. */
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 980px) {
+  .hbook { display: block; }
+}
+
+.hbook__scene {
+  position: relative;
+  width: 100%;
+  max-width: 21rem;
+  margin-inline: auto;
+  aspect-ratio: 3 / 2;
+  perspective: 1500px;
+  perspective-origin: 50% 32%;
+}
+
+/* The float is kept on its own element so that the tilt on the book below can
+   be rewritten by the pointer without fighting the animation. */
+.hbook__float {
+  position: absolute;
+  inset: 0;
+  animation: hbook-float 7s ease-in-out infinite;
+}
+
+@keyframes hbook-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-7px); }
+}
+
+.hbook__book {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--tilt-x, 23deg)) rotateY(var(--tilt-y, 0deg)) rotateZ(-1.2deg);
+  transition: transform 900ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* The board the pages sit on: a little larger than the block of paper, in the
+   navy of the rest of the hero with a thin gold edge. */
+.hbook__cover {
+  position: absolute;
+  inset: -3.5% -2.5%;
+  border-radius: 3px 7px 7px 3px;
+  background:
+    linear-gradient(100deg, #0d2140 0%, #14345c 46%, #0d2140 52%, #14345c 58%, #0b1c34 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(194, 145, 63, 0.42),
+    inset 0 0 22px rgba(0, 0, 0, 0.5);
+  transform: translateZ(-3px);
+}
+
+/* The two halves of paper that never move. */
+.hbook__page {
+  position: absolute;
+  top: 2%;
+  width: 50%;
+  height: 96%;
+  backface-visibility: hidden;
+}
+.hbook__page--verso { left: 0; transform: translateZ(-2px); }
+.hbook__page--recto { left: 50%; transform: translateZ(0); }
+
+/* A leaf: one sheet of paper with a page printed on each side, hinged at the
+   spine. --z stacks it above the leaves beneath. Because the translate comes
+   after the rotation, a leaf that has turned lands underneath the leaves that
+   turned before it, which is what paper does. */
+.hbook__leaf {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  width: 50%;
+  height: 96%;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transform: rotateY(var(--turn, 0deg)) translateZ(var(--z, 1px));
+  transition: transform 1750ms cubic-bezier(0.55, 0.03, 0.28, 1);
+}
+.hbook__leaf.is-turned { --turn: -179deg; }
+
+/* While a leaf is in the air it casts a little of itself on what is below. */
+.hbook__leaf.is-turning { z-index: 5; }
+.hbook__leaf.is-turning .hbook__side {
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.42);
+}
+
+.hbook__side {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 1px 5px 5px 1px;
+  overflow: hidden;
+}
+.hbook__side--back { transform: rotateY(180deg); border-radius: 5px 1px 1px 5px; }
+
+/* The paper itself. */
+.hbook__sheet {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.34rem;
+  padding: 8% 9%;
+  border-radius: inherit;
+  background:
+    linear-gradient(180deg, #fbf7ec 0%, #f4eddc 100%);
+  color: #14345c;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Paper is not lit evenly. It is darker in the gutter beside the spine and
+   very slightly brighter at the outer edge, and that alone does most of the
+   work of making this read as a book rather than two rectangles. */
+.hbook__sheet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.hbook__sheet--verso::before {
+  background:
+    linear-gradient(to left, rgba(20, 30, 48, 0.26) 0%, rgba(20, 30, 48, 0) 26%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 18%);
+}
+.hbook__sheet--recto::before {
+  background:
+    linear-gradient(to right, rgba(20, 30, 48, 0.26) 0%, rgba(20, 30, 48, 0) 26%),
+    linear-gradient(to left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 18%);
+}
+.hbook__sheet--verso { border-radius: 5px 1px 1px 5px; }
+.hbook__sheet--recto { border-radius: 1px 5px 5px 1px; }
+
+.hbook__title {
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  color: #0f2647;
+}
+.hbook__rule {
+  width: 1.5rem;
+  height: 1px;
+  background: var(--gold-400);
+  opacity: 0.85;
+}
+.hbook__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.16rem;
+  font-size: 0.56rem;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  color: #3c5a7a;
+}
+
+/* The ribbon, tucked into the gutter and falling past the foot of the book. */
+.hbook__ribbon {
+  position: absolute;
+  top: 8%;
+  left: calc(50% - 1.5px);
+  width: 3px;
+  height: 100%;
+  border-radius: 0 0 2px 2px;
+  background: linear-gradient(180deg, #d9a648 0%, var(--gold-400) 62%, #96702c 100%);
+  transform: translateZ(2.6px);
+  opacity: 0.9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* The book is above the ground, so the ground has something on it. */
+.hbook__shadow {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: 2%;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(3, 12, 24, 0.5) 0%, rgba(3, 12, 24, 0) 70%);
+  filter: blur(3px);
+  animation: hbook-shadow 7s ease-in-out infinite;
+}
+
+@keyframes hbook-shadow {
+  0%, 100% { transform: scaleX(1);    opacity: 0.85; }
+  50%      { transform: scaleX(0.92); opacity: 0.6; }
+}
+
+/* Hovering stops the book so it can be looked at. */
+.hbook.is-held .hbook__float,
+.hbook.is-held .hbook__shadow { animation-play-state: paused; }
+
+/* Nothing moves for a visitor who has asked for that, and the pointer tilt is
+   dropped as well: the book is simply an open book on its first spread. */
+@media (prefers-reduced-motion: reduce) {
+  .hbook__float,
+  .hbook__shadow { animation: none; }
+  .hbook__book,
+  .hbook__leaf { transition: none; }
+}
+
+/* Paper does not need a picture of paper. */
+@media print { .hbook { display: none !important; } }
 
 /* 9. Cards and grids ----------------------------------------------------- */
 

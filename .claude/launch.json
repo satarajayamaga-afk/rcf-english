@@ -4,7 +4,7 @@
     {
       "name": "rcf-english",
       "runtimeExecutable": "powershell.exe",
-      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "tools/local-preview-server.ps1", "-NoBrowser"],
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "tools/local-preview-server.ps1"],
       "port": 8124
     }
   ]
