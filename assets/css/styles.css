@@ -848,6 +848,81 @@ a:hover { color: var(--teal-700); }
   border-color: var(--gold-400);
 }
 
+/* The crystal, desktop ---------------------------------------------------- */
+
+/* Above 1240px the Search button is display:none and this field replaces it,
+   so the crystal on the button is on a control the widest screens never draw.
+   The light has to be here too, or the site animates on a phone and sits still
+   on a laptop - which is exactly what it did.
+
+   It runs around the edge rather than behind the field. A wash behind the text
+   would work for the white input text, which measures 5.1:1 even under the
+   brightest arc, but the placeholder is #a9bcd6 and already only measures
+   4.44:1 against the focused background before any light is added. Putting the
+   cone behind it drops that to 2.66:1. An edge costs no contrast at all.
+
+   The angle turns, not the element. Rotating a box here would need overflow
+   hidden on the form, and the form's child is an input carrying the global
+   :focus-visible outline - overflow hidden would clip a focus indicator, which
+   is not a trade worth making for decoration. */
+
+@property --crystal-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes crystal-edge {
+  to { --crystal-angle: 360deg; }
+}
+
+/* Guarded: without mask compositing the ring cannot be cut out of the cone,
+   and the pseudo-element would cover the field instead of edging it. Browsers
+   that lack it keep the plain border they have now. */
+@supports ((mask-composite: exclude) or (-webkit-mask-composite: xor)) {
+  @media (min-width: 1240px) {
+    .header-search::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      border-radius: var(--radius-sm);
+      padding: 1px;
+      background: conic-gradient(
+        from var(--crystal-angle),
+        rgba(158, 217, 239, 0.32) 0deg,
+        rgba(158, 217, 239, 0.95) 55deg,
+        rgba(255, 255, 255, 0.85) 78deg,
+        rgba(158, 217, 239, 0.9) 100deg,
+        rgba(158, 217, 239, 0.32) 155deg,
+        rgba(158, 217, 239, 0.32) 205deg,
+        rgba(158, 217, 239, 0.6) 250deg,
+        rgba(158, 217, 239, 0.32) 305deg,
+        rgba(158, 217, 239, 0.32) 360deg
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      animation: crystal-edge 14s linear infinite;
+    }
+
+    /* The turning light is the border now, so the static one steps aside. */
+    .header-search input {
+      position: relative;
+      z-index: 1;
+      border-color: transparent;
+    }
+    /* Focus still has to read as focus, so it takes its border back. */
+    .header-search input:focus { border-color: var(--gold-400); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-search::before { animation: none; }
+}
+
 /* --- Desktop main navigation bar --- */
 
 .main-nav { display: none; }
