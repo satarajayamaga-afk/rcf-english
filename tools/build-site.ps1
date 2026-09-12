@@ -594,6 +594,7 @@ function Footer() {
     $html += '<li><a href="' + (E (Url 'teacher-resources/rcf-publications-for-teachers/')) + '">Books for teachers</a></li>'
     $html += '</ul></div></div>'
 
+    $html += '<p class="footer-top"><a href="#top">Back to top</a></p>'
     $html += '<div class="footer-bottom"><p>&copy; ' + $year + ' ' + (E $script:Config.siteName) + '. Materials on this site are for educational use.</p>'
     $sep = if (PubIsExternal) { ' is a separate website.' } elseif (PubIsLive) { ' is a separate section of this website.' } else { ' is a separate section of this website, coming soon.' }
     $html += '<p>' + (E $script:Config.publicationsName) + (E $sep) + '</p></div>'
@@ -2983,10 +2984,23 @@ function BuildPage($page) {
     $html = '<!doctype html>' + "`n"
     $html += '<html lang="' + (E $script:Config.lang) + '">' + "`n<head>`n" + $head + "`n</head>`n"
     $html += '<body data-root="' + (E $script:Root) + '">' + "`n"
+    # The target the "back to top" control returns to. It sits before the skip
+    # link so that a keyboard user who uses the control lands above everything
+    # and their next Tab is "Skip to main content", which is what being at the
+    # top of the page should mean.
+    $html += '<span id="top" tabindex="-1"></span>' + "`n"
     $html += '<a class="skip-link" href="#main">Skip to main content</a>' + "`n"
     $html += Header $slug + "`n"
     $html += '<main id="main" tabindex="-1">' + "`n" + $body + "`n</main>`n"
     $html += Footer + "`n"
+    # The floating control. It is an enhancement: it ships hidden and the script
+    # reveals it once there is something to scroll back from, so a visitor
+    # without JavaScript is never shown a control. The footer link above is the
+    # one that always works.
+    $html += '<a class="to-top" href="#top" data-to-top hidden>'
+    $html += '<svg class="to-top__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">'
+    $html += '<path d="M12 19V6M6 12l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'
+    $html += '</svg><span class="visually-hidden">Back to top</span></a>' + "`n"
     $html += $scripts + "`n</body>`n</html>`n"
 
     # Where to write it

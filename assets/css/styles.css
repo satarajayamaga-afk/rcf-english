@@ -1587,6 +1587,66 @@ a:hover { color: var(--teal-700); }
   .hbook__hands { display: none; }
 }
 
+
+/* Back to top ------------------------------------------------------------- */
+
+/* Two controls, on purpose. The footer link is ordinary markup and works for
+   everybody, including with JavaScript off and in a screen reader reading the
+   page in order. The floating button is the convenience: it ships hidden and
+   the script reveals it once there is enough page behind you to want it. */
+
+.footer-top {
+  margin: var(--sp-5) 0 0;
+  text-align: right;
+}
+.footer-top a {
+  display: inline-block;
+  padding: 0.35rem 0;
+  font-size: var(--step--1);
+  color: #c9d6e8;
+}
+
+/* The floating button sits below the sticky header (z-index 100) and below the
+   mobile drawer (150), so it can never cover the navigation. */
+.to-top {
+  position: fixed;
+  right: clamp(0.75rem, 2.5vw, 1.5rem);
+  bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  /* 2.75rem is 44px, the smallest comfortable touch target. */
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--navy-800);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 18px rgba(3, 12, 24, 0.3);
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: opacity 200ms ease, transform 200ms ease, background-color 200ms ease;
+}
+.to-top[hidden] { display: none; }
+.to-top.is-shown { opacity: 1; transform: none; }
+.to-top:hover { background: var(--navy-900); color: #fff; }
+.to-top:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.to-top__icon { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: none; }
+}
+
+/* Nothing to return to on paper. */
+@media print {
+  .to-top { display: none !important; }
+  .footer-top { display: none; }
+}
+
 /* Paper does not need a picture of paper. */
 @media print { .hbook { display: none !important; } }
 

@@ -255,3 +255,77 @@
     }
   });
 })();
+
+/* ==========================================================================
+   Back to top
+
+   The button ships hidden and appears once there is a screenful or so behind
+   you, so short pages never show a control with nothing to do.
+
+   The jump itself is the browser's, because the element really is a link to
+   #top - all this adds is the smooth scroll where that is wanted, and moving
+   keyboard focus to the top of the document afterwards. A link that moves the
+   view without moving focus leaves a keyboard user tabbing on from wherever
+   they were, which is the bug most back-to-top buttons have.
+   ========================================================================== */
+
+(function () {
+  "use strict";
+
+  var button = document.querySelector("[data-to-top]");
+  if (!button) return;
+
+  var target = document.getElementById("top");
+  var SHOW_AFTER = 600;
+  var shown = false;
+  var ticking = false;
+
+  function reduced() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  function apply() {
+    ticking = false;
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var want = y > SHOW_AFTER;
+    if (want === shown) return;
+    shown = want;
+    if (want) {
+      button.hidden = false;
+      /* One frame between removing [hidden] and adding the class, or the
+         transition has nothing to animate from. */
+      window.requestAnimationFrame(function () {
+        button.classList.add("is-shown");
+      });
+    } else {
+      button.classList.remove("is-shown");
+      /* Keep it out of the tab order once it has faded, but not before, or it
+         disappears mid-transition. */
+      window.setTimeout(function () {
+        if (!shown) button.hidden = true;
+      }, 220);
+    }
+  }
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(apply);
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  apply();
+
+  button.addEventListener("click", function (event) {
+    /* Let a modified click (new tab, new window) behave normally. */
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduced() ? "auto" : "smooth" });
+    if (target && target.focus) target.focus({ preventScroll: true });
+    /* Drop the fragment rather than leaving #top in the address bar. */
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  });
+})();
