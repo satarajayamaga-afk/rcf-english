@@ -610,6 +610,7 @@ a:hover { color: var(--teal-700); }
   font-size: var(--step--1);
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
 }
 .search-toggle:hover,
 .nav-toggle:hover { background: rgba(255, 255, 255, 0.2); }
@@ -648,6 +649,40 @@ a:hover { color: var(--teal-700); }
   mask: no-repeat center / contain
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/%3E%3C/svg%3E");
 }
+
+/* The lens tilts and lifts a little when you point at the button, the way a
+   magnifier does when it is picked up, and the whole button presses down when
+   it is clicked. 0.18s is the duration the Menu bars beside it already use, so
+   the pair still move at the same speed as each other.
+
+   The motion is on the icon rather than the button so the label does not shift
+   under the pointer, and it is driven by hovering the button rather than the
+   icon, so the whole target responds. */
+.search-toggle__icon {
+  transition: transform 0.18s ease;
+  transform-origin: 55% 45%;
+}
+.search-toggle:hover .search-toggle__icon,
+.search-toggle:focus-visible .search-toggle__icon {
+  transform: rotate(-12deg) scale(1.09);
+}
+
+/* A press, for both buttons. Small enough to feel rather than to watch. */
+.search-toggle:active,
+.nav-toggle:active { transform: translateY(1px); }
+.search-toggle:active .search-toggle__icon { transform: rotate(-12deg) scale(1.02); }
+
+@media (prefers-reduced-motion: reduce) {
+  .search-toggle,
+  .nav-toggle,
+  .search-toggle__icon { transition: none; }
+  .search-toggle:hover .search-toggle__icon,
+  .search-toggle:focus-visible .search-toggle__icon,
+  .search-toggle:active .search-toggle__icon { transform: none; }
+  .search-toggle:active,
+  .nav-toggle:active { transform: none; }
+}
+
 
 /* Search and Menu are a matched pair, so they are sized together.
    "Search" is the wider word, so a shared minimum width keeps them measuring
