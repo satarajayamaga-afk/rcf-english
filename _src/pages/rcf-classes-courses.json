@@ -5,9 +5,14 @@
     "The two elocution courses are PREPARATORY. Wording on those pages must never",
     "suggest that RCF Online Academy awards a diploma, or that it represents",
     "CALSDA officially. CALSDA sets the examinations and awards the diplomas.",
-    "Entry requirements, syllabus content, examination dates and CALSDA fees are",
-    "not stated here, because they belong to CALSDA and candidates must confirm",
-    "them with CALSDA directly.",
+    "Syllabus content and examination dates are not stated here, because they",
+    "belong to CALSDA and candidates must confirm them with CALSDA directly.",
+    "",
+    "TWO EXCEPTIONS, both on the Associate Diploma page and both added at the",
+    "owner's instruction: the entry qualification, and CALSDA's examination fee.",
+    "Each is labelled as CALSDA's rather than the Academy's, and each carries the",
+    "instruction to confirm it with CALSDA. If CALSDA changes either figure this",
+    "page goes stale, so check it when the fee is reviewed.",
     "",
     "The page addresses stay under rcf-classes/ so links already shared keep working."
   ],
@@ -155,13 +160,6 @@
           ]
         },
         {
-          "type": "banner",
-          "image": "assets/img/classes/associate-diploma-banner.jpg",
-          "width": "1200",
-          "height": "675",
-          "alt": "Promotional banner for the CALSDA Associate Diploma preparatory course, showing a teacher speaking during an online class"
-        },
-        {
           "type": "prose",
           "heading": "About the diploma",
           "level": "h2",
@@ -181,7 +179,7 @@
             ["Course length", "Six months, online"],
             ["Who it is for", "Holders of the Primary Elocution Diploma"],
             ["Monthly fee", "Rs. 5,000, payable to RCF Online Academy for the preparatory course"],
-            ["Examination fee", "Rs. 10,000. This is **CALSDA's fee for the examination**, not the Academy's, and should be confirmed with CALSDA."],
+            ["Examination fee", "Rs. 15,000. This is **CALSDA's fee for the examination**, not the Academy's, and should be confirmed with CALSDA."],
             ["Class day and time", "**Being confirmed.** Please ask on WhatsApp before making arrangements."],
             ["Places", "Limited"]
           ]
