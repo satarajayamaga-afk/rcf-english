@@ -31,6 +31,12 @@
   --navy-100: #e6ecf5;
   --navy-050: #f2f5fa;
 
+  /* Crystal - a pale ice blue, used only for the light that turns inside the
+     search button. It sits at about 196 degrees of hue, between the navy at
+     213 and the teal at 168, so it bridges the two brand colours rather than
+     introducing a fourth one. */
+  --ice-300: #9ed9ef;
+
   /* Brand - teal / emerald */
   --teal-800: #08503f;
   --teal-700: #0b6b58;
@@ -648,6 +654,91 @@ a:hover { color: var(--teal-700); }
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/%3E%3C/svg%3E");
   mask: no-repeat center / contain
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/%3E%3C/svg%3E");
+}
+
+
+/* The crystal ------------------------------------------------------------ */
+
+/* A pale blue light turns slowly inside the button, the way light moves across
+   a cut stone: two arcs of ice blue with a narrower white one between them, on
+   a cone that rotates once every fourteen seconds.
+
+   The alpha values are capped deliberately, and the cap is set by the two
+   layers together rather than by either alone. The turning cone and the fixed
+   sheen above it compound: the bright arc on its own measures 5.3:1 against
+   the white label, but with the sheen over it that falls to 3.8:1, which fails
+   AA. At the values used here the worst point of the whole rotation measures
+   4.74:1 at rest and 5.48:1 on hover, both above the 4.5:1 minimum. Raising
+   any stop means re-checking the stack, not just that stop. */
+.search-toggle {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-color: rgba(158, 217, 239, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.search-toggle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* A square wider than the button's diagonal, so no corner is ever left
+     uncovered as the cone turns. */
+  width: 240%;
+  aspect-ratio: 1;
+  z-index: 0;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg,
+    rgba(158, 217, 239, 0) 0deg,
+    rgba(158, 217, 239, 0.24) 55deg,
+    rgba(255, 255, 255, 0.16) 78deg,
+    rgba(158, 217, 239, 0.22) 100deg,
+    rgba(158, 217, 239, 0) 155deg,
+    rgba(158, 217, 239, 0) 205deg,
+    rgba(158, 217, 239, 0.16) 250deg,
+    rgba(158, 217, 239, 0) 305deg,
+    rgba(158, 217, 239, 0) 360deg
+  );
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: search-crystal 14s linear infinite;
+}
+
+/* A fixed sheen over the top edge, so the surface reads as glass rather than
+   as a flat panel with something moving behind it. */
+.search-toggle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 58%);
+}
+
+/* The label and the lens sit above both layers. */
+.search-toggle__icon,
+.search-toggle__text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Approaching the button makes the light move faster and the edge brighten. */
+.search-toggle:hover::before,
+.search-toggle:focus-visible::before { animation-duration: 5s; }
+.search-toggle:hover,
+.search-toggle:focus-visible { border-color: rgba(158, 217, 239, 0.95); }
+
+@keyframes search-crystal {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Nothing turns for a visitor who has asked for stillness. The cone stays
+   where it is, so the button keeps its crystalline colouring without moving. */
+@media (prefers-reduced-motion: reduce) {
+  .search-toggle::before { animation: none; }
+  .search-toggle:hover::before,
+  .search-toggle:focus-visible::before { animation: none; }
 }
 
 /* The lens tilts and lifts a little when you point at the button, the way a
