@@ -3096,6 +3096,31 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
    The source is square, so the square frame crops nothing.
    ========================================================================== */
 
+
+/* Promotional banner ------------------------------------------------------ */
+
+/* The site's own artwork, full width of the content column. It keeps its own
+   proportions and is never cropped. Because the text in artwork like this is
+   not real text, the page around it has to carry the same information in
+   prose - the banner is the picture, not the copy. */
+.banner {
+  margin: 0 0 var(--sp-5);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.banner__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner__caption {
+  padding: var(--sp-3) var(--sp-4);
+  font-size: var(--step--1);
+  color: var(--ink-700);
+}
+
 .portrait { display: block; }
 .portrait::after { content: ""; display: table; clear: both; }
 

@@ -41,7 +41,8 @@
     { "id": "grade-10-literature", "title": "Grade 10 Literature", "published": true },
     { "id": "ol-literature",       "title": "O/L Literature", "published": true },
     { "id": "al-literature",       "title": "A/L Literature", "published": true },
-    { "id": "literature-orientation", "title": "Literature Orientation: One-Month Course for New Teachers", "published": true }
+    { "id": "literature-orientation", "title": "Literature Orientation: One-Month Course for New Teachers", "published": true },
+    { "id": "ielts",              "title": "IELTS Training", "published": true }
   ],
 
   "classes": [
@@ -83,7 +84,7 @@
       "delivery": "online",
       "groupFormat": "group",
       "duration": "Six months",
-      "fee": "Fees available on request",
+      "fee": "Rs. 5,000 a month",
       "registration": "soon",
       "language": "English",
       "materials": "A notebook, a device with an internet connection and a working microphone",
@@ -131,6 +132,29 @@
       "language": "English",
       "materials": "The prescribed texts, a notebook and a device with an internet connection",
       "whatsappMessage": "Hello, I would like information about the Grade 10 Literature course at RCF Online Academy. Please send me the schedule, fees and registration details.",
+      "published": true
+    },
+    {
+      "id": "ielts-online",
+      "course": "ielts",
+      "title": "IELTS Training",
+      "subject": "IELTS preparation",
+      "level": "Individual course",
+      "teacher": "Rohana Fernando",
+      "description": [
+        "A three-month IELTS course taught one to one, covering all four skills - listening, reading, writing and speaking.",
+        "Because it is individual, lessons are arranged at times that suit the candidate, and the work is aimed at the skills that particular candidate needs rather than at a fixed class syllabus."
+      ],
+      "audience": "Candidates preparing for IELTS",
+      "delivery": "online",
+      "groupFormat": "individual",
+      "duration": "Three months",
+      "fee": "Fees available on request",
+      "registration": "open",
+      "language": "English",
+      "materials": "A notebook, a device with an internet connection and a working microphone",
+      "whatsappMessage": "Hello, I would like information about the one-to-one IELTS course at RCF Online Academy. Please send me the available lesson times, fees and registration details.",
+      "featured": true,
       "published": true
     },
     {

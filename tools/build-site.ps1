@@ -1051,6 +1051,30 @@ function RenderBlock($block) {
             return $html + '</ul></div></section>'
         }
 
+        'banner' {
+            # A full-width promotional image. Unlike the advert poster this is
+            # the site's own material, so it carries no "Sponsored" label.
+            #
+            # A banner of this kind usually has its selling points set INTO the
+            # artwork, where they cannot be read by a screen reader, searched,
+            # translated or selected. The rule here is that the page must still
+            # make sense with the image switched off: put the facts in prose
+            # blocks around it and let this carry the picture. The alt text
+            # describes the image; it is not the place to re-type the offer.
+            $img = [string](P $block 'image')
+            if (-not $img) { return '' }
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<figure class="banner">'
+            $wAttr = [string](P $block 'width'); $hAttr = [string](P $block 'height')
+            $dims = ''
+            if ($wAttr -and $hAttr) { $dims = ' width="' + (E $wAttr) + '" height="' + (E $hAttr) + '"' }
+            $html += '<img class="banner__img" src="' + (E (Url $img)) + '" alt="' + (E ([string](P $block 'alt'))) + '"' + $dims + ' loading="lazy" decoding="async">'
+            $cap = [string](P $block 'caption')
+            if ($cap) { $html += '<figcaption class="banner__caption">' + (Inline $cap) + '</figcaption>' }
+            $html += '</figure>'
+            return $html + '</div></section>'
+        }
+
         'portrait' {
             # A photograph beside a short introduction. Two columns on a
             # desktop, stacked and centred on a phone. The image keeps its

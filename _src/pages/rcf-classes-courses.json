@@ -44,6 +44,23 @@
           ]
         },
         {
+          "type": "banner",
+          "image": "assets/img/classes/primary-elocution-diploma-banner.jpg",
+          "width": "1200",
+          "height": "675",
+          "alt": "Promotional banner for the CALSDA Primary Elocution Diploma preparatory course, showing a teacher speaking during an online class"
+        },
+        {
+          "type": "prose",
+          "heading": "About the diploma",
+          "level": "h2",
+          "text": [
+            "With the Government preparing to introduce a new policy requiring tuition teachers to possess suitable professional qualifications, this is the ideal time to strengthen your credentials.",
+            "This six-month online course is designed for **English teachers, spoken English tuition masters and aspiring elocution teachers**. It develops the practical skills needed to teach pronunciation, fluency, voice, public speaking and confident communication - and to prepare students for elocution examinations.",
+            "**New online batches commence every three months.** Prepare for a recognised CALSDA professional qualification, and for the changing requirements of the tuition sector."
+          ]
+        },
+        {
           "type": "prose",
           "heading": "What the course is",
           "text": [
@@ -138,6 +155,38 @@
           ]
         },
         {
+          "type": "banner",
+          "image": "assets/img/classes/associate-diploma-banner.jpg",
+          "width": "1200",
+          "height": "675",
+          "alt": "Promotional banner for the CALSDA Associate Diploma preparatory course, showing a teacher speaking during an online class"
+        },
+        {
+          "type": "prose",
+          "heading": "About the diploma",
+          "level": "h2",
+          "text": [
+            "Take the next step in your elocution journey with this advanced six-month online course. Designed for **holders of the Primary Elocution Diploma**, it develops higher-level skills in drama, lyrical verse, sonnets, prepared reading, voice production, the physiology of speech, literary analysis and teaching methodology.",
+            "Ideal for aspiring performers and professional elocution teachers who wish to deepen their knowledge and strengthen their qualifications.",
+            "**Enrolment is limited.** WhatsApp **070 439 5240** for details."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Fees and entry",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["", "Detail"],
+          "rows": [
+            ["Course length", "Six months, online"],
+            ["Who it is for", "Holders of the Primary Elocution Diploma"],
+            ["Monthly fee", "Rs. 5,000, payable to RCF Online Academy for the preparatory course"],
+            ["Examination fee", "Rs. 10,000. This is **CALSDA's fee for the examination**, not the Academy's, and should be confirmed with CALSDA."],
+            ["Class day and time", "**Being confirmed.** Please ask on WhatsApp before making arrangements."],
+            ["Places", "Limited"]
+          ]
+        },
+        {
           "type": "prose",
           "heading": "What the course is",
           "text": [
@@ -195,6 +244,81 @@
       ]
     },
 
+    {
+      "slug": "rcf-classes/ielts",
+      "title": "IELTS Training",
+      "metaTitle": "One-to-One IELTS Training | RCF Online Academy",
+      "description": "A three-month one-to-one IELTS course at RCF Online Academy covering listening, reading, writing and speaking, with lessons arranged at times that suit the candidate.",
+      "keywords": "IELTS class Sri Lanka, one to one IELTS, online IELTS training, IELTS listening reading writing speaking, IELTS preparation Rohana Fernando",
+      "kicker": "RCF Online Academy",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "hero": {
+        "text": "A three-month IELTS course taught one to one, covering all four skills, with lessons arranged at times that suit you.",
+        "buttons": [
+          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
+          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "banner",
+          "image": "assets/img/classes/ielts-training-banner.jpg",
+          "width": "1200",
+          "height": "675",
+          "alt": "Promotional banner for one-to-one IELTS training, showing a candidate in an online lesson with a headset and notes"
+        },
+        {
+          "type": "prose",
+          "heading": "What the course is",
+          "level": "h2",
+          "text": [
+            "A **three-month course, taught one to one**. Because there is no class to keep pace with, the lessons are arranged at times that suit you and the work is aimed at the skills you actually need rather than at a fixed syllabus."
+          ],
+          "bullets": [
+            "**Individual one-to-one classes**",
+            "**Conveniently arranged lesson times**",
+            "**All four IELTS skills** - listening, reading, writing and speaking",
+            "**Personal feedback and targeted practice**",
+            "**Flexible online learning**"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "About IELTS itself",
+          "text": [
+            "**IELTS is owned and administered by the IELTS partners** - the British Council, IDP: IELTS Australia and Cambridge University Press & Assessment. RCF Online Academy prepares candidates for the test and is not a test centre, and is not affiliated with, endorsed by or approved by the IELTS partners.",
+            "**Test dates, fees, identification requirements and registration are matters for the test centre.** Book your test through an official centre and confirm the requirements with them directly."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This course",
+          "course": "ielts",
+          "intro": ["Where a time or fee has not been settled, the card says so rather than guessing. The current position is always available on WhatsApp."]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about this course",
+          "message": "Hello, I would like information about the one-to-one IELTS course at RCF Online Academy. Please send me the available lesson times, fees and registration details."
+        },
+        {
+          "type": "cards",
+          "heading": "Free IELTS pages that go with this course",
+          "level": "h2",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "IELTS guidance", "url": "practical-english/ielts/", "text": "The test explained, band by band, free to read." },
+            { "title": "A full practice test", "url": "practical-english/ielts/practice-test-1/", "text": "A complete original practice test with answers." },
+            { "title": "Model essays", "url": "practical-english/ielts/model-essays/", "text": "Ten Task 2 essays written at band 7 to 7.5." }
+          ]
+        }
+      ]
+    },
     {
       "slug": "rcf-classes/grade-9-literature",
       "title": "Grade 9 Literature",
@@ -358,6 +482,23 @@
       },
       "blocks": [
         {
+          "type": "banner",
+          "image": "assets/img/classes/literature-paper-classes-banner.jpg",
+          "width": "1200",
+          "height": "675",
+          "alt": "Promotional banner for the O/L and A/L Literature paper classes, showing a student writing answers during an online lesson"
+        },
+        {
+          "type": "prose",
+          "heading": "The paper class",
+          "level": "h2",
+          "text": [
+            "An intensive **three-month course**, which normally begins three months before the examination. Students receive practical training in answering techniques, planning responses and writing complete examination answers under expert guidance.",
+            "Classes focus on developing well-structured, relevant and well-supported answers, with individual correction and feedback.",
+            "**Enrol early: each class is strictly limited to ten students.** The monthly fee is **Rs. 5,000**. For enquiries, WhatsApp **070 439 5240**."
+          ]
+        },
+        {
           "type": "prose",
           "heading": "What the course covers",
           "bullets": [
@@ -429,6 +570,23 @@
         ]
       },
       "blocks": [
+        {
+          "type": "banner",
+          "image": "assets/img/classes/literature-paper-classes-banner.jpg",
+          "width": "1200",
+          "height": "675",
+          "alt": "Promotional banner for the O/L and A/L Literature paper classes, showing a student writing answers during an online lesson"
+        },
+        {
+          "type": "prose",
+          "heading": "The paper class",
+          "level": "h2",
+          "text": [
+            "An intensive **three-month course**, which normally begins three months before the examination. Students receive practical training in answering techniques, planning responses and writing complete examination answers under expert guidance.",
+            "Classes focus on developing well-structured, relevant and well-supported answers, with individual correction and feedback.",
+            "**Enrol early: each class is strictly limited to ten students.** The monthly fee is **Rs. 5,000**. For enquiries, WhatsApp **070 439 5240**."
+          ]
+        },
         {
           "type": "prose",
           "heading": "What the course covers",
