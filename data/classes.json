@@ -42,7 +42,8 @@
     { "id": "ol-literature",       "title": "O/L Literature", "published": true },
     { "id": "al-literature",       "title": "A/L Literature", "published": true },
     { "id": "literature-orientation", "title": "Literature Orientation: One-Month Course for New Teachers", "published": true },
-    { "id": "ielts",              "title": "IELTS Training", "published": true }
+    { "id": "ielts",              "title": "IELTS Training", "published": true },
+    { "id": "tkt",                "title": "TKT: Teaching Knowledge Test", "published": true }
   ],
 
   "classes": [
@@ -154,6 +155,29 @@
       "language": "English",
       "materials": "A notebook, a device with an internet connection and a working microphone",
       "whatsappMessage": "Hello, I would like information about the one-to-one IELTS course at RCF Online Academy. Please send me the available lesson times, fees and registration details.",
+      "featured": true,
+      "published": true
+    },
+    {
+      "id": "tkt-online",
+      "course": "tkt",
+      "title": "TKT: Teaching Knowledge Test",
+      "subject": "English teaching methodology",
+      "level": "Professional preparatory course",
+      "teacher": "Rohana Fernando",
+      "description": [
+        "A six-month course preparing candidates for all three modules of the Cambridge Teaching Knowledge Test (TKT).",
+        "The TKT is awarded by Cambridge University Press & Assessment. RCF Online Academy prepares candidates for it and is not a test centre."
+      ],
+      "audience": "Aspiring and practising English teachers",
+      "delivery": "online",
+      "groupFormat": "group",
+      "duration": "Six months",
+      "fee": "Fees available on request",
+      "registration": "soon",
+      "language": "English",
+      "materials": "A notebook, a device with an internet connection and a working microphone",
+      "whatsappMessage": "Hello, I would like information about the TKT (Teaching Knowledge Test) course at RCF Online Academy. Please send me the starting date of the new batch, the fees and registration details.",
       "featured": true,
       "published": true
     },

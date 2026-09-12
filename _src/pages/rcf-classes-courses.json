@@ -318,6 +318,78 @@
       ]
     },
     {
+      "slug": "rcf-classes/tkt",
+      "title": "TKT: Teaching Knowledge Test",
+      "metaTitle": "TKT Teaching Knowledge Test Course | RCF Online Academy",
+      "description": "A six-month online course at RCF Online Academy preparing aspiring and practising English teachers for all three modules of the Cambridge Teaching Knowledge Test (TKT).",
+      "keywords": "TKT course Sri Lanka, Teaching Knowledge Test, Cambridge TKT modules 1 2 3, TKT preparation online, English teacher qualification",
+      "kicker": "RCF Online Academy",
+      "kind": "page",
+      "schema": "Course",
+      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
+      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "hero": {
+        "text": "A six-month course preparing English teachers for all three modules of the Cambridge Teaching Knowledge Test.",
+        "buttons": [
+          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
+          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who awards the TKT",
+          "bullets": [
+            "The **Teaching Knowledge Test is a Cambridge English qualification, awarded by Cambridge University Press & Assessment.**",
+            "**RCF Online Academy does not award it.** It conducts a preparatory course for candidates who intend to sit the TKT modules.",
+            "**RCF Online Academy is not a test centre** and is not affiliated with, endorsed by or approved by Cambridge. The examinations are taken through an authorised centre - in Sri Lanka, through the British Council.",
+            "Examination dates, entry and fees are matters for the test centre. Please confirm them with the centre directly."
+          ]
+        },
+        {
+          "type": "banner",
+          "image": "assets/img/classes/tkt-banner.jpg",
+          "width": "1200",
+          "height": "675",
+          "alt": "Promotional banner for the TKT Teaching Knowledge Test course, showing a teacher leading a small group of adult trainees"
+        },
+        {
+          "type": "prose",
+          "heading": "About the course",
+          "level": "h2",
+          "text": [
+            "Prepare for the **Cambridge Teaching Knowledge Test (TKT)** and strengthen your professional teaching knowledge.",
+            "This **six-month course covers all three TKT modules** and is ideal for aspiring and practising English teachers seeking a recognised qualification. Examinations are conducted through the British Council.",
+            "WhatsApp **070 439 5240** for the new batch starting date."
+          ]
+        },
+        {
+          "type": "classes",
+          "heading": "This course",
+          "course": "tkt",
+          "intro": ["The starting date of each new batch is given on WhatsApp rather than fixed here, so this page never shows a date that has already passed."]
+        },
+        {
+          "type": "whatsapp",
+          "heading": "Ask about this course",
+          "message": "Hello, I would like information about the TKT (Teaching Knowledge Test) course at RCF Online Academy. Please send me the starting date of the new batch, the fees and registration details."
+        },
+        {
+          "type": "cards",
+          "heading": "Free teacher pages that go with this course",
+          "level": "h2",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "Teacher resources", "url": "teacher-resources/", "text": "Lesson plans guidance, worksheets and classroom materials." },
+            { "title": "Literature Orientation", "url": "rcf-classes/literature-orientation/", "text": "The Academy's one-month course for new teachers." },
+            { "title": "RCF Online Academy", "url": "rcf-classes/", "text": "Every course the Academy runs." }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "rcf-classes/grade-9-literature",
       "title": "Grade 9 Literature",
       "metaTitle": "Grade 9 Literature course | RCF Online Academy",
