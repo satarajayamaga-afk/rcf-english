@@ -128,7 +128,8 @@
           "title": "What is finished, and what is not",
           "text": [
             "**Finished:** Cambridge IGCSE English as a Second Language, developed in full - the qualification guide, the Reading and Writing paper exercise by exercise, the writing formats, model answers and the Speaking test. Cambridge IGCSE First Language English (0500 and 0990) - the components, the assessment objectives, both written papers question by question and the 2027 changes. All four GCSE English Language boards - AQA, Pearson Edexcel, OCR and Eduqas - with guidance and at least one original model paper each.",
-            "**Being developed:** GCSE English Literature, Cambridge IGCSE Literature in English, the Pearson Edexcel and OxfordAQA International GCSE routes, and the Cambridge English Qualifications. The hub pages for those are real overviews with the correct codes and official links; the question-by-question guides beneath them are still being written.",
+            "**Also finished:** the Cambridge English Qualifications ladder at [B1 Preliminary](global-english/cambridge-english/b1-preliminary/), [B2 First](global-english/cambridge-english/b2-first/) and [C1 Advanced](global-english/cambridge-english/c1-advanced/), each with its papers, its scoring model and its published grade boundaries.",
+            "**Being developed:** GCSE English Literature, Cambridge IGCSE Literature in English, the Pearson Edexcel and OxfordAQA International GCSE routes, and the remaining Cambridge English levels - A2 Key, C2 Proficiency and the Young Learners tests. The hub pages for those are real overviews with the correct codes and official links; the question-by-question guides beneath them are still being written.",
             "One qualification is developed properly before the next is started. That is slower than publishing an outline of everything at once, and it is the reason these pages can be trusted."
           ]
         },
@@ -621,7 +622,12 @@
       "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
       "backTo": { "label": "Global English", "url": "global-english/" },
       "hero": {
-        "text": "A ladder of examinations rather than a single test. Each one certifies a level of the Common European Framework, and the certificate does not expire."
+        "text": "A ladder of examinations rather than a single test. Each one certifies a level of the Common European Framework, and the certificate does not expire.",
+        "buttons": [
+          { "label": "B2 First", "url": "global-english/cambridge-english/b2-first/", "style": "btn--accent" },
+          { "label": "C1 Advanced", "url": "global-english/cambridge-english/c1-advanced/", "style": "btn--ghost-light" },
+          { "label": "B1 Preliminary", "url": "global-english/cambridge-english/b1-preliminary/", "style": "btn--ghost-light" }
+        ]
       },
       "blocks": [
         {
@@ -657,12 +663,70 @@
           ]
         },
         {
+          "type": "cards",
+          "heading": "Level guides",
+          "eyebrow": "The three most often asked for",
+          "level": "h2",
+          "variant": "tint",
+          "columns": "3",
+          "intro": [
+            "Each guide gives the papers with their durations and parts, how the components are scored, the published grade boundaries, and a method for each paper."
+          ],
+          "items": [
+            {
+              "title": "B1 Preliminary",
+              "url": "global-english/cambridge-english/b1-preliminary/",
+              "more": "Open B1 Preliminary",
+              "text": ["Four papers, each worth exactly a quarter. The cleanest arithmetic on the ladder."],
+              "bullets": ["Reading, Writing, Listening, Speaking", "25% each", "Grade A certifies B2"]
+            },
+            {
+              "title": "B2 First",
+              "url": "global-english/cambridge-english/b2-first/",
+              "more": "Open B2 First",
+              "text": ["Four papers but five scored components, because Use of English is counted separately."],
+              "bullets": ["Reading and Use of English is 40%", "Five components at 20% each", "Grade A certifies C1"]
+            },
+            {
+              "title": "C1 Advanced",
+              "url": "global-english/cambridge-english/c1-advanced/",
+              "more": "Open C1 Advanced",
+              "text": ["Eight parts in the Reading and Use of English paper, and the first level where a score can earn no certificate."],
+              "bullets": ["Five components at 20% each", "Grade A certifies C2", "142-159 earns no certificate"]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Grades across the ladder",
+          "level": "h2",
+          "caption": "Scores and levels as published by Cambridge English on its [results page](https://www.cambridgeenglish.org/exams-and-tests/qualifications/results/). Every examination certifies a level above its own at Grade A, and most certify the level below at the lowest band.",
+          "columns": ["Qualification", "Grade A", "Grade B", "Grade C", "Lowest certificated band"],
+          "rows": [
+            ["**A2 Key**", "140-150 (B1)", "133-139 (A2)", "120-132 (A2)", "100-119 - Level A1"],
+            ["**B1 Preliminary**", "160-170 (B2)", "153-159 (B1)", "140-152 (B1)", "120-139 - Level A2"],
+            ["**B2 First**", "180-190 (C1)", "173-179 (B2)", "160-172 (B2)", "140-159 - Level B1"],
+            ["**C1 Advanced**", "200-210 (C2)", "193-199 (C1)", "180-192 (C1)", "160-179 - Level B2"],
+            ["**C2 Proficiency**", "220-230 (C2)", "213-219 (C2)", "200-212 (C2)", "180-199 - Level C1"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to read that table before you choose a level",
+          "text": [
+            "**Every one of these examinations can certify the level above it.** A Grade A at B2 First certifies C1, which is the same level a Grade C at C1 Advanced certifies. If C1 is what you need and you are on the boundary, entering B2 First is a real option rather than a retreat.",
+            "**Most of them also catch you.** A score below the target level still produces a certificate one level down at A2 Key, B1 Preliminary, B2 First and C2 Proficiency.",
+            "**C1 Advanced is the exception.** Scores between 142 and 159 are reported on the Statement of Results but earn no certificate at all. It is the one level on this ladder where entering unready can leave you with nothing."
+          ]
+        },
+        {
           "type": "callout",
           "style": "note",
-          "title": "Resources being developed",
+          "title": "Still being written",
           "text": [
-            "Level-by-level preparation guides for A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency are in preparation, along with the Young Learners tests.",
-            "Until they are published, RCF English already has substantial material that transfers: the [Cambridge exams page](practical-english/cambridge-exams/) in Practical English, and the four-skills pages for [reading](practical-english/reading/), [writing](practical-english/writing/), [listening](practical-english/listening/) and [speaking](practical-english/speaking/)."
+            "Dedicated guides for **A2 Key**, **C2 Proficiency** and the **Young Learners tests** (Pre A1 Starters, A1 Movers, A2 Flyers) are still to come. Their grade boundaries are in the table above.",
+            "Material that already transfers to any level: the [Cambridge exams page](practical-english/cambridge-exams/) in Practical English, and the four-skills pages for [reading](practical-english/reading/), [writing](practical-english/writing/), [listening](practical-english/listening/) and [speaking](practical-english/speaking/)."
           ]
         },
         {
