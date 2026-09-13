@@ -2360,12 +2360,29 @@ function PaperCardSearch($r) {
     return (($bits | Where-Object { $_ }) -join ' ').ToLower()
 }
 
+# The library's "kind of paper" filter. Marking schemes and model answers sit
+# together because a reader looking for one is usually happy with the other.
+function PaperKindKey($type) {
+    switch -Regex ([string]$type) {
+        '^past-paper$' { return 'past' }
+        '^model-paper$' { return 'model' }
+        '^(marking-scheme|model-answer)$' { return 'answers' }
+        '^(revision-paper|question-bank|practice-paper)$' { return 'revision' }
+        default { return 'other' }
+    }
+}
+
 function PaperCard($r) {
     $target = [string](P $r 'url' (P $r 'file' ''))
     $isExt = $target -match '^https?:'
     $year = ([string](P $r 'year' '')).Trim()
 
-    $html = '<li class="paper-card" data-paper-card data-year="' + (E $year) + '" data-search="' + (E (PaperCardSearch $r)) + '">'
+    $kind = PaperKindKey (P $r 'type')
+    $term = ([string](P $r 'term' '')).Trim().ToLower()
+    if ($term -notin @('first', 'second', 'third')) { $term = '' }
+    $place = ([string](P $r 'province' '')).Trim()
+    $placeType = ([string](P $r 'sourceType' '')).Trim().ToLower()
+    $html = '<li class="paper-card" data-paper-card data-year="' + (E $year) + '" data-term="' + (E $term) + '" data-kind="' + (E $kind) + '" data-place="' + (E $place) + '" data-place-type="' + (E $placeType) + '" data-search="' + (E (PaperCardSearch $r)) + '">'
 
     # Tag row - the year first, because that is what a visitor scans for.
     $html += '<div class="tag-row">'
@@ -2530,7 +2547,8 @@ function RenderPaperLibrary($block) {
     $html += '<div class="field"><label for="paperlib-year">Search by year</label>'
     $html += '<input type="search" id="paperlib-year" data-paperlib-year inputmode="numeric" autocomplete="off" placeholder="For example 2024"></div>'
     $html += '<div class="paperlib__years" data-paperlib-years role="group" aria-label="Jump to a year"></div>'
-    $html += '<button type="button" class="btn btn--sm btn--outline" data-paperlib-clear hidden>Show every year</button>'
+    $html += '<div class="paperlib__facets" data-paperlib-facets hidden></div>'
+    $html += '<button type="button" class="btn btn--sm btn--outline" data-paperlib-clear hidden>Clear filters</button>'
     $html += '</div></div>'
     $html += '<p class="visually-hidden" role="status" aria-live="polite" data-paperlib-live></p>'
 
@@ -2608,7 +2626,7 @@ function RenderPaperLibrary($block) {
 
         # Shown by the script only when a typed year matches nothing here.
         $html += '<div class="empty-state paperlib__noyear" data-paperlib-noyear hidden>'
-        $html += '<h4>No paper from that year in ' + (E $s.label) + '</h4>'
+        $html += '<h4>No paper in ' + (E $s.label) + ' matches those choices</h4>'
         $html += '<p data-paperlib-noyear-text></p>'
         $html += '<p><button type="button" class="btn btn--sm btn--outline" data-paperlib-clear>Show every ' + (E $s.label) + ' paper</button></p></div>'
         $html += '</section>'

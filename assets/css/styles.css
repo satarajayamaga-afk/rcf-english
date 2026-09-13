@@ -2508,6 +2508,16 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
   color: #fff;
 }
 
+/* Term, kind of paper and place: one row under the year controls, built by
+   the script from what the section holds. */
+.paperlib__facets {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: var(--sp-3);
+}
+.paperlib__filter-controls .paperlib__facet { max-width: none; }
+
 /* --- a section of papers */
 .paperlib__panel { scroll-margin-top: calc(var(--header-h) + 1rem); }
 .paperlib__panel:focus { outline: none; }
