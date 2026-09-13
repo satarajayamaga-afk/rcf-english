@@ -1586,6 +1586,46 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'flashcards' {
+            # A printable flashcard maker. The sets are written into the page
+            # as plain tables, so without JavaScript a teacher can still copy
+            # the words; the script turns them into cards ready to cut out.
+            # Sets come from the block itself and, when asked, from the
+            # vocabulary lists of the listening tests.
+            $sets = New-Object System.Collections.ArrayList
+            foreach ($s in (AsList (P $block 'sets'))) {
+                $pairs = @()
+                foreach ($it in (AsList (P $s 'items'))) {
+                    $parts = ([string]$it).Split('=', 2)
+                    $pairs += , @($parts[0].Trim(), $(if ($parts.Count -gt 1) { $parts[1].Trim() } else { '' }))
+                }
+                [void]$sets.Add(@{ id = [string](P $s 'id'); group = [string](P $s 'group' 'Ready-made sets'); label = [string](P $s 'label'); pairs = $pairs })
+            }
+            if ([bool](P $block 'listeningSets' $false)) {
+                foreach ($t in @($listening | Sort-Object { [int](P $_ 'grade' 0) }, { [string](P $_ 'id') })) {
+                    $v = AsList (P $t 'vocabulary')
+                    if ($v.Count -eq 0) { continue }
+                    $pairs = @()
+                    foreach ($w in $v) { $pairs += , @([string](P $w 'word'), [string](P $w 'meaning')) }
+                    [void]$sets.Add(@{ id = [string](P $t 'id'); group = 'Listening Laboratory words'; label = 'Grade ' + [string](P $t 'grade') + ': ' + [string](P $t 'title'); pairs = $pairs })
+                }
+            }
+
+            $html = (SectionOpen $block 'flashcards') + (SectionHead $block)
+            $html += '<div class="flash" data-flash>'
+            $html += '<div class="flash__app" data-flash-app hidden></div>'
+            $html += '<div class="flash__sets" data-flash-sets>'
+            foreach ($s in $sets) {
+                $html += '<details class="flash__set" data-set="' + (E $s.id) + '" data-group="' + (E $s.group) + '" data-label="' + (E $s.label) + '">'
+                $html += '<summary>' + (E $s.label) + ' <span class="text-muted">(' + $s.pairs.Count + ' cards)</span></summary>'
+                $html += '<table class="flash__table"><tbody>'
+                foreach ($p in $s.pairs) { $html += '<tr><th scope="row">' + (E $p[0]) + '</th><td>' + (E $p[1]) + '</td></tr>' }
+                $html += '</tbody></table></details>'
+            }
+            $html += '</div></div>'
+            return $html + '</div></section>'
+        }
+
         'pathways' {
             # "Start here": a few big, plain routes for visitors who would
             # rather not open a large menu, especially on a phone. Each route
