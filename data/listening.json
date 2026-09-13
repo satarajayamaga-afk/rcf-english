@@ -27,7 +27,7 @@
     "   source       \"textbook\" for a test built from a Pupil's Book or Workbook",
     "                listening activity. Its description must name the grade, book,",
     "                unit and activity. The texts come from the listening texts",
-    "                document the owner supplied (Grades 6-9).",
+    "                documents the owner supplied (Grades 6-11).",
     "   vocabulary[] word + meaning. Shown under \"Before you listen\", and on the",
     "                printable worksheet. Pick words that help, never ones",
     "                that give an answer away.",
@@ -5517,6 +5517,2414 @@
           ],
           "answer": 1,
           "explanation": "The X axis represents the subjects."
+        }
+      ]
+    },
+    {
+      "id": "pb10-u01-a03",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Six people and how they look (Unit 1, Activity 3)",
+      "description": "From the Grade 10 English Pupil's Book, Unit 1, Activity 3: Listen to the description and identify each person. The book has pictures; here you answer questions about the same details.",
+      "instructions": "Listen to the description of six people and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Mr. Lalith Vitharana is a lecturer of mathematics in a leading university. He is married to Mrs. Ramya Vitharana. She usually wears sarees in the Kandyan style. She is a teacher and usually carries two bags with her."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Mrs. Madini Balan and Mrs. Sarojini Silva too wear sarees, but they always wear them in the Indian way. Mrs. Madini Balan wears a pottu and wears flowers in her hair. Mrs. Sarojini Silva is a fashionable lady. She usually puts up hairstyles and used to carry a handbag with her."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Mr. Ravi Balan, Mr. Mohomad Razik and Mr. Lalith Vitharana prefer wearing long-sleeved shirts and trousers of different shades of brown."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Mr. Ravi Balan wears his moustache proudly, and he always wears checked long-sleeved shirts. Mr. Lalith Vitharana wears a well-maintained beard, and Mr. Razik's beard is quite long."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Mr. Mohomad Razik is a businessman, and he carries a bag wherever he goes. Mr. Ravi Balan does not like to carry anything with him. Mr. Lalith Vitharana always carries some books with him."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Can you name them correctly now?"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Who wears a saree in the Kandyan style and carries two bags?",
+          "options": [
+            "Mrs. Ramya Vitharana",
+            "Mrs. Madini Balan",
+            "Mrs. Sarojini Silva"
+          ],
+          "answer": 0,
+          "explanation": "Mrs. Ramya Vitharana wears sarees in the Kandyan style and carries two bags."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who wears a pottu and flowers in her hair?",
+          "options": [
+            "Mrs. Sarojini Silva",
+            "Mrs. Madini Balan",
+            "Mrs. Ramya Vitharana"
+          ],
+          "answer": 1,
+          "explanation": "Mrs. Madini Balan wears a pottu and flowers in her hair."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who carries a handbag?",
+          "options": [
+            "Mrs. Sarojini Silva",
+            "Mrs. Madini Balan",
+            "Mr. Mohomad Razik"
+          ],
+          "answer": 0,
+          "explanation": "Mrs. Sarojini Silva, the fashionable lady, carries a handbag."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who has a moustache and wears checked shirts?",
+          "options": [
+            "Mr. Lalith Vitharana",
+            "Mr. Ravi Balan",
+            "Mr. Mohomad Razik"
+          ],
+          "answer": 1,
+          "explanation": "Mr. Ravi Balan wears his moustache proudly and always wears checked long-sleeved shirts."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who has a long beard and carries a bag?",
+          "options": [
+            "Mr. Mohomad Razik",
+            "Mr. Lalith Vitharana",
+            "Mr. Ravi Balan"
+          ],
+          "answer": 0,
+          "explanation": "Mr. Razik's beard is quite long, and he carries a bag wherever he goes."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who has a well-maintained beard and carries books?",
+          "options": [
+            "Mr. Ravi Balan",
+            "Mr. Mohomad Razik",
+            "Mr. Lalith Vitharana"
+          ],
+          "answer": 2,
+          "explanation": "Mr. Lalith Vitharana wears a well-maintained beard and always carries some books."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does Mr. Lalith Vitharana do?",
+          "options": [
+            "He is a businessman",
+            "He is a lecturer of mathematics",
+            "He is a teacher"
+          ],
+          "answer": 1,
+          "explanation": "He is a lecturer of mathematics in a leading university."
+        }
+      ]
+    },
+    {
+      "id": "pb10-u03-a02",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Mike and Lisa's holiday itinerary (Unit 3, Activity 2)",
+      "description": "From the Grade 10 English Pupil's Book, Unit 3, Activity 2: Listen to the text and fill in the itinerary.",
+      "instructions": "Listen to the travel plan and complete the itinerary.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Mike Wilson is coming to Sri Lanka on a two-week vacation with his wife Lisa. They hope to arrive in Colombo on the 20th of June."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They plan to travel to Kandy on the 21st and hope to stop at the Pinnawala elephant orphanage in the morning. They hope to reach Kandy in time for lunch at 1 p.m. at the Citydel Hotel. In the evening they plan to go to the Temple of the Tooth Relic for the evening pooja at 6 o'clock, after which they will go for a walk around the Kandy lake and stop for dinner at Lanka Foods, a restaurant well known for Sri Lankan food."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Next, they hope to travel to Sigiriya. On the 22nd of June, they will be in Sigiriya and will be climbing the Sigiriya Rock in the morning. They will return to their hotel for lunch and spend the rest of the day relaxing at the hotel."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They will spend the next three days in Anuradhapura, visiting all the historical sites in the area. On the 26th, they will make the long trip to Galle. The following day they hope to visit the Galle Fort and other historical sites in the morning. They hope to spend the evening on the beach."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On the 1st of July, they will return to Colombo. They hope to visit the local gift shops in Colombo on the 2nd of July, and the Gangarama temple on the evening of the same day."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Mike and Lisa hope to spend the last day of their stay at the Continental Hotel and spend the evening at the beach. They will leave Sri Lanka at 5 a.m. on the 4th of July."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Complete the itinerary.",
+          "lines": [
+            {
+              "label": "Arrive in Colombo (date):",
+              "answer": [
+                "20th of june",
+                "20th june",
+                "20 june",
+                "june 20",
+                "the 20th of june",
+                "june 20th"
+              ]
+            },
+            {
+              "label": "21 June, morning: stop at the Pinnawala elephant",
+              "answer": [
+                "orphanage"
+              ]
+            },
+            {
+              "label": "21 June, 6 p.m.: Temple of the Tooth Relic for the evening",
+              "answer": [
+                "pooja",
+                "puja"
+              ]
+            },
+            {
+              "label": "22 June, morning: climb the",
+              "answer": [
+                "sigiriya rock",
+                "sigiriya",
+                "rock"
+              ]
+            },
+            {
+              "label": "Number of days in Anuradhapura:",
+              "answer": [
+                "3",
+                "three"
+              ]
+            },
+            {
+              "label": "2 July, evening: visit the ____ temple",
+              "answer": [
+                "gangarama"
+              ]
+            }
+          ],
+          "explanation": "Arrive 20 June; Pinnawala orphanage and Kandy on the 21st; Sigiriya on the 22nd; three days in Anuradhapura; Galle from the 26th; Colombo from 1 July, Gangarama on the 2nd; leave on 4 July."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where will they have lunch in Kandy?",
+          "options": [
+            "Lanka Foods",
+            "The Citydel Hotel",
+            "The Continental Hotel"
+          ],
+          "answer": 1,
+          "explanation": "Lunch at 1 p.m. at the Citydel Hotel. Lanka Foods is for dinner."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "When will they travel to Galle?",
+          "options": [
+            "On the 26th of June",
+            "On the 22nd of June",
+            "On the 1st of July"
+          ],
+          "answer": 0,
+          "explanation": "On the 26th, they will make the long trip to Galle."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "When and at what time will they leave Sri Lanka?",
+          "options": [
+            "5 a.m. on the 4th of July",
+            "5 p.m. on the 3rd of July",
+            "5 a.m. on the 1st of July"
+          ],
+          "answer": 0,
+          "explanation": "They will leave Sri Lanka at 5 a.m. on the 4th of July."
+        }
+      ]
+    },
+    {
+      "id": "pb10-u06-a07",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Talking about books (Unit 6, Activity 7)",
+      "description": "From the Grade 10 English Pupil's Book, Unit 6, Activity 7: Listen to the dialogue and underline the correct answer.",
+      "instructions": "Listen to Abdul and Nethmini outside the library and choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Abdul",
+          "text": "Hello Nethmini! What's that book you were reading in the library? You seemed very, very interested in it."
+        },
+        {
+          "speaker": "Nethmini",
+          "text": "Hello Abdul! I was reading The Adventures of Huckleberry Finn. It is an adventure story. I really liked it."
+        },
+        {
+          "speaker": "Abdul",
+          "text": "Mmm, sounds interesting, but I prefer classics. Have you read Oliver Twist?"
+        },
+        {
+          "speaker": "Nethmini",
+          "text": "Oliver Twist? I've heard about it. Who is the writer?"
+        },
+        {
+          "speaker": "Abdul",
+          "text": "Don't tell me you haven't heard about Charles Dickens! He is famous all over the world. I just finished reading one of his best hits. Here, I borrowed Oliver Twist for two weeks."
+        },
+        {
+          "speaker": "Nethmini",
+          "text": "Oh! It's a big book. You will definitely need two weeks to finish it."
+        },
+        {
+          "speaker": "Abdul",
+          "text": "By the way, tell me about this adventure story of yours."
+        },
+        {
+          "speaker": "Nethmini",
+          "text": "Mark Twain is the writer. Huckleberry Finn, the runaway, goes through many adventures along with Jim, the escaped slave, to find their freedom together."
+        },
+        {
+          "speaker": "Abdul",
+          "text": "Mmm. Will try it next time. See you!"
+        },
+        {
+          "speaker": "Nethmini",
+          "text": "Bye!"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Abdul is going to read ...",
+          "options": [
+            "Oliver Twist",
+            "Huckleberry Finn"
+          ],
+          "answer": 0,
+          "explanation": "I borrowed Oliver Twist for two weeks."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Nethmini likes ...",
+          "options": [
+            "adventure stories",
+            "classics"
+          ],
+          "answer": 0,
+          "explanation": "She was reading an adventure story and really liked it. Abdul prefers classics."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Oliver Twist was written by ...",
+          "options": [
+            "Mark Twain",
+            "Charles Dickens"
+          ],
+          "answer": 1,
+          "explanation": "Charles Dickens. Mark Twain wrote Huckleberry Finn."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Abdul ... the book.",
+          "options": [
+            "bought",
+            "borrowed"
+          ],
+          "answer": 1,
+          "explanation": "I borrowed Oliver Twist."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Abdul can keep the book for ... weeks.",
+          "options": [
+            "two",
+            "three"
+          ],
+          "answer": 0,
+          "explanation": "I borrowed Oliver Twist for two weeks."
+        }
+      ]
+    },
+    {
+      "id": "pb10-u08-a07",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "How to make Kurakkan pittu (Unit 8, Activity 7)",
+      "description": "From the Grade 10 English Pupil's Book, Unit 8, Activity 7: Listen to the interview with a chef and fill in the missing information in the recipe.",
+      "instructions": "Listen to the radio interview and complete the recipe for Kurakkan pittu.",
+      "script": [
+        {
+          "speaker": "Presenter",
+          "text": "Good morning everybody! Welcome to another exciting programme of Master Chef. As usual we have our master chef Channa David with us today. Good morning, Mr. David!"
+        },
+        {
+          "speaker": "Mr. David",
+          "text": "Good morning!"
+        },
+        {
+          "speaker": "Presenter",
+          "text": "So, Mr. David, what do you have in store for us today?"
+        },
+        {
+          "speaker": "Mr. David",
+          "text": "Yes, Niluka. As you said that there had been many requests from our listeners for Sri Lankan recipes, I thought of telling them how to prepare Kurakkan pittu."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "Mmm. Sounds interesting. To begin with, what are the ingredients for this dish?"
+        },
+        {
+          "speaker": "Mr. David",
+          "text": "We need Kurakkan flour, water and salt only."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "Can you repeat it, please?"
+        },
+        {
+          "speaker": "Mr. David",
+          "text": "Kurakkan flour, water and salt."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "OK. Now, how do you prepare it?"
+        },
+        {
+          "speaker": "Mr. David",
+          "text": "First, put the flour in a clay pot with a wide mouth. Sprinkle a little bit of water and salt, and start mixing the flour with your hand. Keep sprinkling water and mixing the flour. Sweep the hand in a circular movement. Continue this for a few minutes."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "Afterwards?"
+        },
+        {
+          "speaker": "Mr. David",
+          "text": "Pour some water into another clay pot and tie a clean cloth covering the mouth. Put the dough on top of the cloth. Then cover the pittu dough with another pot and put the pot on the fire. Within half an hour the pittu will be ready."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Ingredients",
+          "lines": [
+            {
+              "label": "1.",
+              "answer": [
+                "kurakkan flour",
+                "flour"
+              ]
+            },
+            {
+              "label": "2.",
+              "answer": [
+                "water"
+              ]
+            },
+            {
+              "label": "3.",
+              "answer": [
+                "salt"
+              ]
+            }
+          ],
+          "explanation": "Kurakkan flour, water and salt only. Any order is accepted in the book; here write them in the order the chef says them."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Sprinkle a little ____ and salt and start mixing the flour.",
+          "answer": [
+            "water",
+            "bit of water"
+          ],
+          "explanation": "Sprinkle a little bit of water and salt."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Continue this for a ____ minutes.",
+          "answer": [
+            "few"
+          ],
+          "explanation": "Continue this for a few minutes."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Pour some water into another clay pot and tie a clean ____ covering the mouth.",
+          "answer": [
+            "cloth"
+          ],
+          "explanation": "Tie a clean cloth covering the mouth."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Now put the pot on ____.",
+          "answer": [
+            "fire",
+            "the fire"
+          ],
+          "explanation": "Put the pot on the fire."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How long does the pittu take to be ready?",
+          "options": [
+            "About ten minutes",
+            "Within half an hour",
+            "About an hour"
+          ],
+          "answer": 1,
+          "explanation": "Within half an hour the pittu will be ready."
+        }
+      ]
+    },
+    {
+      "id": "pb10-u09-a06",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "The annual trip (Unit 9, Activity 6)",
+      "description": "From the Grade 10 English Pupil's Book, Unit 9, Activity 6: Listen to the dialogue and fill in the gaps.",
+      "instructions": "Listen to Inura and Vikum and choose the correct words.",
+      "script": [
+        {
+          "speaker": "Inura",
+          "text": "Hello Vikum! Why didn't you come to the afternoon class on Friday? I didn't see you there."
+        },
+        {
+          "speaker": "Vikum",
+          "text": "We went on our annual trip. We visited Pasikuda."
+        },
+        {
+          "speaker": "Inura",
+          "text": "Sounds interesting! Where is that? I've never been there."
+        },
+        {
+          "speaker": "Vikum",
+          "text": "It's in Batticaloa District, in the Eastern Province."
+        },
+        {
+          "speaker": "Inura",
+          "text": "Isn't it far?"
+        },
+        {
+          "speaker": "Vikum",
+          "text": "It's 288 km from Colombo. We left Kelaniya at about 4 a.m."
+        },
+        {
+          "speaker": "Inura",
+          "text": "Why did you select that place, Vikum? Is there anything interesting to see?"
+        },
+        {
+          "speaker": "Vikum",
+          "text": "It is very important as a place of tourist attraction. It has a fine beach. We saw the beauty of this beach and were fascinated by it."
+        },
+        {
+          "speaker": "Inura",
+          "text": "Lucky you! Didn't you take any photographs?"
+        },
+        {
+          "speaker": "Vikum",
+          "text": "Oh, there's a lot! I will bring them next Friday."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The students visited ...",
+          "options": [
+            "Nilaweli",
+            "Pasikuda"
+          ],
+          "answer": 1,
+          "explanation": "We visited Pasikuda."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "It is in the ... District.",
+          "options": [
+            "Batticaloa",
+            "Mannar"
+          ],
+          "answer": 0,
+          "explanation": "It's in Batticaloa District."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "It is ... km away from Colombo.",
+          "options": [
+            "218",
+            "288"
+          ],
+          "answer": 1,
+          "explanation": "It's 288 km from Colombo."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "It is very important as a place of ...",
+          "options": [
+            "historical value",
+            "tourist attraction"
+          ],
+          "answer": 1,
+          "explanation": "It is very important as a place of tourist attraction."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The students were fascinated by the beauty of the ...",
+          "options": [
+            "jungle",
+            "beach"
+          ],
+          "answer": 1,
+          "explanation": "We saw the beauty of this beach and were fascinated by it."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "At what time did they leave Kelaniya?",
+          "options": [
+            "About 4 a.m.",
+            "About 6 a.m.",
+            "About 4 p.m."
+          ],
+          "answer": 0,
+          "explanation": "We left Kelaniya at about 4 a.m."
+        }
+      ]
+    },
+    {
+      "id": "pb10-u11-a08",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Taking a telephone message (Unit 11, Activity 8)",
+      "description": "From the Grade 10 English Pupil's Book, Unit 11: Listen to the telephone conversation and fill in the message form. The listening texts document lists this as Activity 7; in the book it is Activity 8.",
+      "instructions": "Listen to the telephone conversation and complete the message form.",
+      "script": [
+        {
+          "speaker": "Ms. Silva",
+          "text": "Hello, good morning! May I speak to Mr. Gurusinghe, please? I tried to call him yesterday, but I couldn't get through. Why was that?"
+        },
+        {
+          "speaker": "Secretary",
+          "text": "Yesterday was a holiday, madam. Could you hold on for a minute? I'll put you through to Mr. Gurusinghe."
+        },
+        {
+          "speaker": "Ms. Silva",
+          "text": "Oh yes, I forgot that it was a holiday yesterday. Thanks!"
+        },
+        {
+          "speaker": "Secretary",
+          "text": "Sorry, madam, Mr. Gurusinghe is at a meeting right now. Would you like to leave a message?"
+        },
+        {
+          "speaker": "Ms. Silva",
+          "text": "Yes, please. Can you tell Mr. Gurusinghe to return my call? My phone number is 0 1 3 2 5 6 7 4 3 2."
+        },
+        {
+          "speaker": "Secretary",
+          "text": "Sure. I'll tell him. He'll get back to you as soon as possible."
+        },
+        {
+          "speaker": "Ms. Silva",
+          "text": "Thank you."
+        },
+        {
+          "speaker": "Secretary",
+          "text": "You're welcome."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Message form",
+          "lines": [
+            {
+              "label": "Caller:",
+              "answer": [
+                "ms. silva",
+                "ms silva",
+                "mrs. silva",
+                "mrs silva",
+                "silva",
+                "miss silva"
+              ]
+            },
+            {
+              "label": "For whom:",
+              "answer": [
+                "mr. gurusinghe",
+                "mr gurusinghe",
+                "gurusinghe"
+              ]
+            },
+            {
+              "label": "Contact no:",
+              "answer": [
+                "0132567432",
+                "013 256 7432",
+                "013-2567432",
+                "0132 567432"
+              ]
+            }
+          ],
+          "explanation": "Ms. Silva called for Mr. Gurusinghe; her number is 0132567432."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Message:",
+          "options": [
+            "Please return Ms. Silva's call",
+            "The meeting has been cancelled",
+            "Ms. Silva will call again tomorrow"
+          ],
+          "answer": 0,
+          "explanation": "Can you tell Mr. Gurusinghe to return my call?"
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why couldn't Ms. Silva get through yesterday?",
+          "options": [
+            "The line was busy",
+            "It was a holiday",
+            "Mr. Gurusinghe was ill"
+          ],
+          "answer": 1,
+          "explanation": "Yesterday was a holiday, madam."
+        }
+      ]
+    },
+    {
+      "id": "wb10-u01-a05",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "What's in a name? (Workbook, Unit 1, Activity 5)",
+      "description": "From the Grade 10 English Workbook, Unit 1, Activity 5. The questions here are RCF English's.",
+      "instructions": "Listen to Santhosh talking about names and answer the questions.",
+      "script": [
+        {
+          "speaker": "Santhosh",
+          "text": "There should be a meaning to every name. However, each name should carry a meaning which will describe the qualities of the person."
+        },
+        {
+          "speaker": "Santhosh",
+          "text": "First, let me tell you about myself. I always like to spend my time happily. So my name, Santhosh, suits me."
+        },
+        {
+          "speaker": "Santhosh",
+          "text": "My sister, Chanchala, is always slow in her work. But, according to her name, she should be active. Therefore, I have a doubt about the suitability of her name. However, she likes to help others."
+        },
+        {
+          "speaker": "Santhosh",
+          "text": "Her best friend is Kathika. She is very talkative and is a member of the school debating team. So, I feel that her ambition to become a lawyer suits her well."
+        },
+        {
+          "speaker": "Santhosh",
+          "text": "My best friend has a beautiful name. The meaning of his name is 'intelligent'. Honestly, he is an intelligent boy. So, his name, Arivan, suits him. I have another friend whose name is Akil. In Arabic it means intelligent too."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Why does the name Santhosh suit the speaker?",
+          "options": [
+            "He is always active",
+            "He likes to spend his time happily",
+            "He is very intelligent"
+          ],
+          "answer": 1,
+          "explanation": "I always like to spend my time happily. So my name, Santhosh, suits me."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why does Santhosh doubt that his sister's name suits her?",
+          "options": [
+            "She is always slow in her work",
+            "She talks too much",
+            "She does not like helping others"
+          ],
+          "answer": 0,
+          "explanation": "Chanchala is always slow, but her name says she should be active."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does Kathika want to become?",
+          "options": [
+            "A teacher",
+            "A lawyer",
+            "A journalist"
+          ],
+          "answer": 1,
+          "explanation": "Her ambition to become a lawyer suits her well."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the notes.",
+          "lines": [
+            {
+              "label": "The name meaning 'intelligent' of Santhosh's best friend:",
+              "answer": [
+                "arivan"
+              ]
+            },
+            {
+              "label": "Another name meaning 'intelligent', in Arabic:",
+              "answer": [
+                "akil",
+                "aqil"
+              ]
+            }
+          ],
+          "explanation": "Arivan and Akil both mean intelligent."
+        }
+      ]
+    },
+    {
+      "id": "wb10-u03-a05",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "At the airport check-in (Workbook, Unit 3, Activity 5)",
+      "description": "From the Grade 10 English Workbook, Unit 3, Activity 5: At the airport. The questions here are RCF English's.",
+      "instructions": "Listen to Mr. Piyal at the check-in desk and answer the questions.",
+      "script": [
+        {
+          "speaker": "Officer",
+          "text": "Good morning."
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Good morning! Am I at the right desk?"
+        },
+        {
+          "speaker": "Officer",
+          "text": "Well, sir, what is your flight number?"
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "I'm afraid that I don't know it. But I'm going to fly to China."
+        },
+        {
+          "speaker": "Officer",
+          "text": "Yes, sir, you're at the right desk. Would you mind giving me your passport and flight ticket, please?"
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Here you are."
+        },
+        {
+          "speaker": "Officer",
+          "text": "Thank you. And can you give me the flight ticket, please?"
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Oh, this one. Here you are."
+        },
+        {
+          "speaker": "Officer",
+          "text": "Thank you. Have you got any luggage to check in, sir?"
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Well, only these three suitcases. This one is for hand luggage."
+        },
+        {
+          "speaker": "Officer",
+          "text": "Which one do you prefer, a window or an aisle seat?"
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "I prefer a window seat, please."
+        },
+        {
+          "speaker": "Officer",
+          "text": "Here are your hand luggage and your boarding card. Your seat is 24A."
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Thank you. May I know about the boarding time and the gate number?"
+        },
+        {
+          "speaker": "Officer",
+          "text": "The plane is boarding in 25 minutes, and your gate number is 14."
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Did you give me my passport back?"
+        },
+        {
+          "speaker": "Officer",
+          "text": "Yes, I folded it along with the other documents."
+        },
+        {
+          "speaker": "Mr. Piyal",
+          "text": "Oh, I'm sorry, it's here. Thank you very much. Goodbye."
+        },
+        {
+          "speaker": "Officer",
+          "text": "You are welcome, sir, and have a good flight!"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Where is Mr. Piyal flying to?",
+          "options": [
+            "Japan",
+            "China",
+            "India"
+          ],
+          "answer": 1,
+          "explanation": "I'm going to fly to China."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How many suitcases does he have, including hand luggage?",
+          "options": [
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "answer": 1,
+          "explanation": "Only these three suitcases. This one is for hand luggage."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which seat does he prefer?",
+          "options": [
+            "An aisle seat",
+            "A window seat",
+            "A seat near the exit"
+          ],
+          "answer": 1,
+          "explanation": "I prefer a window seat, please."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete his boarding details.",
+          "lines": [
+            {
+              "label": "Seat number:",
+              "answer": [
+                "24a",
+                "24 a"
+              ]
+            },
+            {
+              "label": "Gate number:",
+              "answer": [
+                "14",
+                "fourteen"
+              ]
+            },
+            {
+              "label": "Boarding in (minutes):",
+              "answer": [
+                "25",
+                "twenty-five",
+                "twenty five"
+              ]
+            }
+          ],
+          "explanation": "Seat 24A, gate 14, boarding in 25 minutes."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where was his passport?",
+          "options": [
+            "He had left it at home",
+            "The officer kept it",
+            "Folded with his other documents"
+          ],
+          "answer": 2,
+          "explanation": "I folded it along with the other documents."
+        }
+      ]
+    },
+    {
+      "id": "wb10-u04-a02",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "An English proficiency interview (Workbook, Unit 4, Activity 2)",
+      "description": "From the Grade 10 English Workbook, Unit 4, Activity 2: Listen to the dialogue and fill in the data sheet. The data sheet here is RCF English's version.",
+      "instructions": "Shakthi is interviewed to test his English. Listen and complete the data sheet.",
+      "script": [
+        {
+          "speaker": "Shakthi",
+          "text": "Good morning, madam. May I come in?"
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Good morning! Please sit down. How are you?"
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "I'm fine, thank you, madam."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Tell me your name with initials, please. And your first name?"
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "I'm M. T. N. S. Peris. I have two first names, Niridu Shakthi. I prefer Shakthi."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Shakthi, tell me about your best friend."
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "My best friend is Chamuditha. We are in the same class. He is dark but pleasant. He is kind and very helpful."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Okay, Shakthi, tell me the things you do in your leisure time."
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "My hobby is reading books. I prefer to read novels on adventures."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Name a recently read novel."
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "Madol Doowa, by Mr. Martin Wickramasinghe."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Can you please tell me the story in brief, in four or five sentences?"
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "The main character of the story is Upali. Jinna is his friend. One day they ran away from home. After facing many challenges, finally they could cultivate the small island called Madol Doowa."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Why do you prefer reading adventures?"
+        },
+        {
+          "speaker": "Shakthi",
+          "text": "Because my aspiration is to be a journalist. For that I need a rich set of vocabulary. Reading adventures makes my thinking positive, and I like the excitement throughout the adventures."
+        },
+        {
+          "speaker": "Examiner",
+          "text": "Shakthi, now study this picture for 30 seconds and talk about it. You will get 2 minutes to talk about it."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Data sheet",
+          "lines": [
+            {
+              "label": "Name with initials: M. T. N. S.",
+              "answer": [
+                "peris"
+              ]
+            },
+            {
+              "label": "Preferred first name:",
+              "answer": [
+                "shakthi"
+              ]
+            },
+            {
+              "label": "Best friend:",
+              "answer": [
+                "chamuditha"
+              ]
+            },
+            {
+              "label": "Hobby: reading",
+              "answer": [
+                "books",
+                "novels",
+                "adventure novels"
+              ]
+            },
+            {
+              "label": "Novel recently read:",
+              "answer": [
+                "madol doowa",
+                "madoldoowa"
+              ]
+            },
+            {
+              "label": "Ambition: to be a",
+              "answer": [
+                "journalist"
+              ]
+            }
+          ],
+          "explanation": "M. T. N. S. Peris, known as Shakthi; best friend Chamuditha; reads adventure novels; recently read Madol Doowa; wants to be a journalist."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who wrote Madol Doowa?",
+          "options": [
+            "Martin Wickramasinghe",
+            "Munidasa Cumaratunga",
+            "Kumaratunga Munidasa"
+          ],
+          "answer": 0,
+          "explanation": "Madol Doowa, by Mr. Martin Wickramasinghe."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How long does Shakthi get to talk about the picture?",
+          "options": [
+            "30 seconds",
+            "2 minutes",
+            "5 minutes"
+          ],
+          "answer": 1,
+          "explanation": "Study it for 30 seconds; you will get 2 minutes to talk about it."
+        }
+      ]
+    },
+    {
+      "id": "wb10-u05-a02",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "A mixed soya curry (Workbook, Unit 5, Activity 2)",
+      "description": "From the Grade 10 English Workbook, Unit 5, Activity 2. The questions here are RCF English's.",
+      "instructions": "Listen to the recipe and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "I am going to tell you how to make a mixed soya curry. Listen carefully."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "First, collect the following ingredients: 1 cup each of grated cabbage and carrot, 1 chopped spring onion, 2 chopped green chillies, 3 to 4 crushed garlic flakes, 1 tablespoon of soya sauce, salt to taste, 1 teaspoon of dried red chilli flakes, a pinch of mustard, and oil."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Now let's see how to make it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Soak the soya nuggets in boiling water for 5 to 10 minutes till it boils. Strain the water and squeeze the nuggets."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Now, heat oil in a separate pan. Put in the mustard, garlic, green chillies and spring onions."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Add the vegetables and salt, and leave it for 3 minutes."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Add the dried red chilli flakes and the boiled soya nuggets, and mix well."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Cook the soya curry for 2 to 3 minutes. Serve hot."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Which vegetables are grated?",
+          "options": [
+            "Cabbage and carrot",
+            "Carrot and beans",
+            "Cabbage and leeks"
+          ],
+          "answer": 0,
+          "explanation": "1 cup each of grated cabbage and carrot."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How much soya sauce is needed?",
+          "options": [
+            "1 teaspoon",
+            "1 tablespoon",
+            "1 cup"
+          ],
+          "answer": 1,
+          "explanation": "1 tablespoon of soya sauce."
+        },
+        {
+          "kind": "sequence",
+          "prompt": "Put the steps in order.",
+          "items": [
+            "Soak the soya nuggets in boiling water",
+            "Strain the water and squeeze the nuggets",
+            "Heat oil and add mustard, garlic, chillies and spring onions",
+            "Add the vegetables and salt and leave for 3 minutes",
+            "Add chilli flakes and nuggets and mix well",
+            "Cook for 2 to 3 minutes and serve hot"
+          ],
+          "explanation": "Soak, strain, fry the spices, add vegetables, add nuggets, cook and serve."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the details.",
+          "lines": [
+            {
+              "label": "Number of green chillies:",
+              "answer": [
+                "2",
+                "two"
+              ]
+            },
+            {
+              "label": "Minutes to leave the vegetables:",
+              "answer": [
+                "3",
+                "three"
+              ]
+            }
+          ],
+          "explanation": "Two chopped green chillies; leave the vegetables for 3 minutes."
+        }
+      ]
+    },
+    {
+      "id": "wb10-u05-a06",
+      "grade": 10,
+      "rate": 1,
+      "source": "textbook",
+      "title": "A message for Father (Workbook, Unit 5, Activity 6)",
+      "description": "From the Grade 10 English Workbook, Unit 5, Activity 6: Listen to the telephone conversation and take down the message.",
+      "instructions": "You are Farhana. The call is for your father. Listen and take down the message.",
+      "script": [
+        {
+          "speaker": "Mr. Radhan",
+          "text": "Hello, good afternoon!"
+        },
+        {
+          "speaker": "Farhana",
+          "text": "Hello, good afternoon!"
+        },
+        {
+          "speaker": "Mr. Radhan",
+          "text": "Can I speak to Mr. Vidusha?"
+        },
+        {
+          "speaker": "Farhana",
+          "text": "I'm afraid he is out at the moment. May I know who is calling?"
+        },
+        {
+          "speaker": "Mr. Radhan",
+          "text": "It's Radhan, from the post office. Can you pass a message?"
+        },
+        {
+          "speaker": "Farhana",
+          "text": "Sure, Mr. Radhan. I'm his daughter, Farhana, speaking."
+        },
+        {
+          "speaker": "Mr. Radhan",
+          "text": "OK, can you tell him that there is a parcel for him from China?"
+        },
+        {
+          "speaker": "Farhana",
+          "text": "A parcel from China to be collected, am I right?"
+        },
+        {
+          "speaker": "Mr. Radhan",
+          "text": "Yes, and please ask him to come on a weekday during the working hours."
+        },
+        {
+          "speaker": "Farhana",
+          "text": "OK, Mr. Radhan, thank you very much for calling. I'll convey the message to my father."
+        },
+        {
+          "speaker": "Mr. Radhan",
+          "text": "That's fine. And ask him to bring his National Identity Card or passport. Bye!"
+        },
+        {
+          "speaker": "Farhana",
+          "text": "I will. Thank you. Bye."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Message",
+          "lines": [
+            {
+              "label": "For:",
+              "answer": [
+                "mr. vidusha",
+                "mr vidusha",
+                "vidusha",
+                "father",
+                "my father"
+              ]
+            },
+            {
+              "label": "From: Mr. Radhan, from the",
+              "answer": [
+                "post office",
+                "the post office"
+              ]
+            },
+            {
+              "label": "A parcel has come from:",
+              "answer": [
+                "china"
+              ]
+            },
+            {
+              "label": "Bring his National Identity Card or",
+              "answer": [
+                "passport",
+                "his passport"
+              ]
+            }
+          ],
+          "explanation": "For Mr. Vidusha from Mr. Radhan at the post office: a parcel from China; bring the NIC or passport."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "When should he come to collect it?",
+          "options": [
+            "On a weekday during working hours",
+            "On Saturday morning",
+            "Any time before 8 p.m."
+          ],
+          "answer": 0,
+          "explanation": "Please ask him to come on a weekday during the working hours."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c01-a09",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Rules for road users (Chapter 1, Activity 9)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 1: Our Responsibilities, Activity 9: Put the numbers of the rules against the different types of users.",
+      "instructions": "Listen to seven road rules. For each rule, choose who it is mainly for.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "One. Use passenger restraints such as seat belts."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two. Wear helmets when riding. They play a major role in safety."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Three. Board the bus only after it has come to a complete halt. Don't rush in or push others."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Four. Be careful in driving or riding in areas where there are children, especially near schools and playgrounds."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Five. Cross the road at marked crossings, such as pedestrian crossings and traffic signals, wherever possible."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Six. Stand at the edge of the crossing and wait for the traffic to stop."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Seven. Using a mobile phone will reduce your awareness of what is happening around you while driving your vehicle."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Rule 1 (seat belts) is for ...",
+          "options": [
+            "Pedestrians",
+            "Motor cyclists",
+            "Car drivers and passengers",
+            "Bus passengers only"
+          ],
+          "answer": 2,
+          "explanation": "Passenger restraints such as seat belts are for car drivers and passengers."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rule 2 (helmets) is for ...",
+          "options": [
+            "Motor cyclists",
+            "Pedestrians",
+            "Bus drivers"
+          ],
+          "answer": 0,
+          "explanation": "Wear helmets when riding."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rule 3 (board the bus after it halts) is for ...",
+          "options": [
+            "Car passengers",
+            "Bus passengers",
+            "Motor cyclists"
+          ],
+          "answer": 1,
+          "explanation": "Board the bus only after it has come to a complete halt."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rule 4 (care near schools) is for ...",
+          "options": [
+            "Pedestrians only",
+            "Everyone who drives or rides",
+            "Bus passengers"
+          ],
+          "answer": 1,
+          "explanation": "Be careful in driving or riding near children: all drivers and riders."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rules 5 and 6 (crossings) are for ...",
+          "options": [
+            "Pedestrians",
+            "Car drivers",
+            "Motor cyclists"
+          ],
+          "answer": 0,
+          "explanation": "Crossing at marked crossings and waiting at the edge are rules for pedestrians."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rule 7 (mobile phones) is for ...",
+          "options": [
+            "Pedestrians",
+            "Everyone who drives a vehicle",
+            "Bus passengers"
+          ],
+          "answer": 1,
+          "explanation": "While driving your vehicle: motor cyclists, car drivers and bus drivers."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c02-a07",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "The school assembly programme (Chapter 2, Activity 7)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 2: Facing Challenges, Activity 7: Listen to the short announcements and number the events of the programme in order.",
+      "instructions": "Listen to the four announcements and put the events of the assembly in order.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Now we have come to the end of the assembly. Let's get ready to sing the school song."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "It is time to listen to a song. I call upon Nithya to sing a song."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "First and foremost, we must do the religious observances."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "The morning thought will be delivered by Sujith as the second item in the agenda."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "sequence",
+          "prompt": "Number the events of the programme in order.",
+          "items": [
+            "Religious observances",
+            "Morning thought",
+            "Song by Nithya",
+            "School song"
+          ],
+          "explanation": "Religious observances come first, the morning thought is second, the school song ends the assembly, so Nithya's song is third."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who delivers the morning thought?",
+          "options": [
+            "Nithya",
+            "Sujith",
+            "The principal"
+          ],
+          "answer": 1,
+          "explanation": "The morning thought will be delivered by Sujith."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c03-a02",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Cricket commentary from Galle (Chapter 3, Activity 2)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 3: Great Lanka, Activity 2: Listen to the narration and complete the blanks.",
+      "instructions": "Listen to the cricket commentators and complete the blanks.",
+      "script": [
+        {
+          "speaker": "John",
+          "text": "We are in Galle right now. The Galle Stadium is set in an ideal place for us to get a beautiful view of the sea. We will show you some video clips of different places and people that our video team has recorded. The first one is on stilt fishing. One needs special skills to sit on a stilt and engage in fishing. You know, David, before I leave, I'll find a way to get onto one."
+        },
+        {
+          "speaker": "David",
+          "text": "Best of luck, John."
+        },
+        {
+          "speaker": "John",
+          "text": "Yesterday, on the rest day of the series, we had a chance to fly around this beautiful island and enjoy its wonderful scenery. I could not believe my eyes when I saw the greenery as we flew through the Central Province of the country. We also visited Anuradhapura and Polonnaruwa, where we had the opportunity to see the proud history of this country. Later that afternoon we stopped at Trincomalee and tasted a delicious Sri Lankan lunch, which consisted of wonderful curries made using some of the best and richest spices found here in the country."
+        },
+        {
+          "speaker": "David",
+          "text": "With that short account of this great country, we will now look at the match summary. Yes, Sri Lanka won the toss and elected to bat first, and scored 365 runs for 6 wickets and declared, inviting England to bat. When the match stopped for the lunch break, England were 23 for 1 wicket, and trail by 489. We'll be back in a few minutes, and until then, stay tuned."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The match is being played in ...",
+          "options": [
+            "Pallekele",
+            "Sooriyawewa",
+            "Dambulla",
+            "Galle"
+          ],
+          "answer": 3,
+          "explanation": "We are in Galle right now."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "... is the special fishing technique mentioned in the narration.",
+          "options": [
+            "Netting",
+            "Angling",
+            "Stilt fishing",
+            "Spearing"
+          ],
+          "answer": 2,
+          "explanation": "The first one is on stilt fishing."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The commentators visited different places on the ... of the match.",
+          "options": [
+            "first day",
+            "second day",
+            "rest day",
+            "third day"
+          ],
+          "answer": 2,
+          "explanation": "Yesterday, on the rest day of the series."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "... are the commentators.",
+          "options": [
+            "Jack and David",
+            "Boon and John",
+            "David and James",
+            "David and John"
+          ],
+          "answer": 3,
+          "explanation": "David and John."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "When flying over the country they saw the ... of the country.",
+          "options": [
+            "inhabitants",
+            "greenery",
+            "vegetables",
+            "cultivators"
+          ],
+          "answer": 1,
+          "explanation": "I saw the greenery as we flew through the Central Province."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "They visited ... and stopped at ... for lunch.",
+          "options": [
+            "Galle / Polonnaruwa",
+            "Polonnaruwa / Trincomalee",
+            "Colombo / Galle",
+            "Trincomalee / Colombo"
+          ],
+          "answer": 1,
+          "explanation": "They visited Anuradhapura and Polonnaruwa, and stopped at Trincomalee for lunch."
+        },
+        {
+          "kind": "note",
+          "prompt": "B) Match summary",
+          "lines": [
+            {
+              "label": "____ won the toss.",
+              "answer": [
+                "sri lanka"
+              ]
+            },
+            {
+              "label": "Sri Lanka scored ____ runs.",
+              "answer": [
+                "365"
+              ]
+            },
+            {
+              "label": "England have lost ____ wicket/s.",
+              "answer": [
+                "1",
+                "one"
+              ]
+            },
+            {
+              "label": "____ trail by 489 runs.",
+              "answer": [
+                "england"
+              ]
+            }
+          ],
+          "explanation": "Sri Lanka won the toss and scored 365; England lost 1 wicket and trail by 489."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c04-a09",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "A water supply interruption (Chapter 4, Activity 9)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 4: For a Better Tomorrow, Activity 9: Listen to the announcement and select the correct answer.",
+      "instructions": "Listen to the announcement and select the correct answers.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "This announcement is from Nuwara Eliya Municipal Council."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "There will be a water supply interruption in Maskeliya, High Forest and Nanuoya areas on the 13th of November 2015, from 8 a.m. to 5 p.m., due to the cleaning of the storage tanks."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "We regret the inconvenience caused to the consumers. Please store some water in advance for your use during the shut-off."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "This announcement is issued by:",
+          "options": [
+            "Colombo South Municipal Council",
+            "Nuwara Eliya Municipal Council"
+          ],
+          "answer": 1,
+          "explanation": "This announcement is from Nuwara Eliya Municipal Council."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "This announcement is about:",
+          "options": [
+            "a power interruption",
+            "a water supply interruption"
+          ],
+          "answer": 1,
+          "explanation": "There will be a water supply interruption."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The areas that will be affected are:",
+          "options": [
+            "Giragama, Kiribathkumbura and Elugoda",
+            "Maskeliya, High Forest and Nanuoya"
+          ],
+          "answer": 1,
+          "explanation": "Maskeliya, High Forest and Nanuoya areas."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The date of the interruption is:",
+          "options": [
+            "30th of November",
+            "13th of November"
+          ],
+          "answer": 1,
+          "explanation": "On the 13th of November 2015."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The time of the interruption is:",
+          "options": [
+            "From 8 a.m. to 5 p.m.",
+            "10 a.m. to 2 p.m."
+          ],
+          "answer": 0,
+          "explanation": "From 8 a.m. to 5 p.m."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why will the water be cut?",
+          "options": [
+            "To repair a broken pipe",
+            "To clean the storage tanks",
+            "Because of the dry weather"
+          ],
+          "answer": 1,
+          "explanation": "Due to the cleaning of the storage tanks."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c05-a04",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "The cricket scholarship (Chapter 5, Activity 4)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 5: Best Use of Time, Activity 4: Listen and jot down the important points about the cricket scholarship.",
+      "instructions": "Listen to the representative from the Ministry of Education and complete Samith's notes.",
+      "script": [
+        {
+          "speaker": "Representative",
+          "text": "Hello, talented children. I'm a representative from the Ministry of Education. We offer 5 scholarships each year for the best-performing young cricketers emerging from Sri Lanka. So, we look forward to offering this scholarship opportunity to the best of the best."
+        },
+        {
+          "speaker": "Representative",
+          "text": "This is what you have to do. First, complete the application we give you today. When completing it, you have to make sure you fill in all 21 required pieces of information. Make sure that you paste a one-inch colour photograph on the top right-hand corner."
+        },
+        {
+          "speaker": "Representative",
+          "text": "The age limit for this scholarship is between 15 and 21 years. After submitting this application, you'd better engage in thorough practice, since there will be two tests for each applicant: first a practical test, and there will also be a fitness test."
+        },
+        {
+          "speaker": "Representative",
+          "text": "OK, now let me give you some information about the scholarship. This scholarship is to improve your talents and skills in cricket, and if you are selected you are entitled to an 8-month scholarship, which covers all your expenses, including a return air ticket, food and lodging, facilities to study, a monthly allowance of 1000 US dollars, medical facilities and, more than anything else, the opportunity to get coaching from well-known world-class cricket coaches and the opportunity to meet the world-class cricketers."
+        },
+        {
+          "speaker": "Representative",
+          "text": "Hope you are excited to apply for this cricket scholarship."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Samith's notes",
+          "lines": [
+            {
+              "label": "1. Number of scholarships offered:",
+              "answer": [
+                "5",
+                "five"
+              ]
+            },
+            {
+              "label": "2. Number of areas to be completed in the application:",
+              "answer": [
+                "21",
+                "twenty-one",
+                "twenty one"
+              ]
+            },
+            {
+              "label": "3. Where to paste the photograph:",
+              "answer": [
+                "top right hand corner",
+                "top right-hand corner",
+                "the top right hand corner",
+                "the top right-hand corner",
+                "top right corner",
+                "on the top right hand corner"
+              ]
+            },
+            {
+              "label": "4. Age limit (e.g. 10 to 12):",
+              "answer": [
+                "15 to 21",
+                "15-21",
+                "between 15 and 21",
+                "15 - 21",
+                "15 to 21 years"
+              ]
+            },
+            {
+              "label": "6. Duration of the scholarship:",
+              "answer": [
+                "8 months",
+                "eight months",
+                "8 month",
+                "8"
+              ]
+            },
+            {
+              "label": "8. Monthly allowance:",
+              "answer": [
+                "1000 usd",
+                "usd 1000",
+                "1000 us dollars",
+                "1000 dollars",
+                "$1000",
+                "1000"
+              ]
+            }
+          ],
+          "explanation": "5 scholarships; 21 areas; photograph top right-hand corner; ages 15-21; 8 months; 1000 USD a month."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "5. Tests to be faced by the applicants:",
+          "options": [
+            "A written test and an interview",
+            "A practical test and a fitness test",
+            "A fitness test only"
+          ],
+          "answer": 1,
+          "explanation": "First a practical test, and there will also be a fitness test."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "7. Which of these is NOT one of the facilities?",
+          "options": [
+            "A return air ticket",
+            "Food and lodging",
+            "A new cricket kit"
+          ],
+          "answer": 2,
+          "explanation": "The facilities are a return air ticket, food and lodging, study facilities, an allowance, medical facilities and coaching. A cricket kit is not mentioned."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c06-a13",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Booking cinema tickets (Chapter 6, Activity 13)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 6: A Moment of Fun, Activities 12 and 13. The conversation from Activity 12 is read first, then the six sentences.",
+      "instructions": "Listen to the telephone conversation, then decide whether each sentence is true or false.",
+      "script": [
+        {
+          "speaker": "Ticket Clerk",
+          "text": "Good evening, Star Theatre."
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "Good evening. Can I reserve some tickets for the 2.30 show of The Mountain Adventures on the 10th?"
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "I'm sorry, madam. They are all sold out."
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "Is that so? Do you have any tickets available for the other shows?"
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "Yes, madam. There are tickets available for the 4.30 and 6.30 shows."
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "That's great. Could you tell me the prices, please?"
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "Certainly. Balcony tickets are 300 rupees. The others are priced at 150 and 250 rupees."
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "Is there a booking fee?"
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "No, madam."
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "I'd like to book four 250-rupee tickets."
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "May I know your name, please?"
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "Ganeshan. G, A, N, E, S, H, A, N."
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "How would you like to pay? In cash or by credit card?"
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "In cash. Can I pay when I collect the tickets?"
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "Yes, madam. Please purchase your tickets before 5.30 p.m., otherwise this booking will be cancelled."
+        },
+        {
+          "speaker": "Mrs. Ganeshan",
+          "text": "I understand. Thank you."
+        },
+        {
+          "speaker": "Ticket Clerk",
+          "text": "You're welcome. Have a nice day!"
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Now listen to six sentences."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "One. Mrs. Ganeshan made the telephone call to reserve some train tickets."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two. The 2.30 show is fully booked on the 10th."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Three. Balcony tickets are cheaper than the other tickets."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Four. There is a booking fee of fifty rupees."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Five. A credit card payment option is available in this theatre."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Six. Reserved tickets should be collected one day in advance."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "1. Mrs. Ganeshan made the telephone call to reserve some train tickets.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "She called Star Theatre to reserve cinema tickets."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "2. The 2.30 show is fully booked on the 10th.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "I'm sorry, madam. They are all sold out."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "3. Balcony tickets are cheaper than the other tickets.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Balcony tickets are 300 rupees; the others are 150 and 250 rupees."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "4. There is a booking fee of fifty rupees.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Is there a booking fee? No, madam."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "5. A credit card payment option is available in this theatre.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "explanation": "In cash or by credit card?"
+        },
+        {
+          "kind": "mcq",
+          "prompt": "6. Reserved tickets should be collected one day in advance.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "explanation": "Tickets must be purchased before 5.30 p.m., not a day in advance."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c07-a02",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Shashi's family (Chapter 7, Activity 2)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 7: A Simple Living, Activity 2: Listen and choose the correct answer.",
+      "instructions": "Listen to the description of Shashi's family and choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Shashi is a 16-year-old boy. He is the eldest in the family. Shashi's father, Mr. Raj, works as a security officer. Geetha, Shashi's mother, works as an office assistant, so she has to leave home early every day to go to work. Radha is Shashi's sister, who is 12 years old. All the family members lead a simple and a happy life."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On Sunday morning, everybody was at home. They were doing different tasks. Shashi's father irons all the clothes during the weekend. Radha was helping her mother in the kitchen to cook lunch. Shashi was mending his pair of shoes."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Suddenly, there was an announcement on the radio. It informed that there would be a power cut in the evening. So they hurriedly finished their tasks before the power cut."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Shashi is a ... year-old boy.",
+          "options": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "answer": 1,
+          "explanation": "Shashi is a 16-year-old boy."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "He is the ... in the family.",
+          "options": [
+            "only child",
+            "youngest",
+            "eldest",
+            "middle child"
+          ],
+          "answer": 2,
+          "explanation": "He is the eldest in the family."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Shashi's father is a ...",
+          "options": [
+            "Supervisor",
+            "Security Guard",
+            "Security Officer",
+            "Office Assistant"
+          ],
+          "answer": 2,
+          "explanation": "Mr. Raj works as a security officer."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Shashi's mother is an/a ...",
+          "options": [
+            "Representative",
+            "Office Assistant",
+            "Executive",
+            "Manager"
+          ],
+          "answer": 1,
+          "explanation": "Geetha works as an office assistant."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Shashi's sister is ... years old.",
+          "options": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "answer": 0,
+          "explanation": "Radha is 12 years old."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The radio announcement was about a ...",
+          "options": [
+            "water cut",
+            "power cut",
+            "bus strike",
+            "train strike"
+          ],
+          "answer": 1,
+          "explanation": "There would be a power cut in the evening."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What was Shashi doing on Sunday morning?",
+          "options": [
+            "Ironing clothes",
+            "Cooking lunch",
+            "Mending his shoes"
+          ],
+          "answer": 2,
+          "explanation": "Shashi was mending his pair of shoes."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c09-a04",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Lost in the Bermuda Triangle (Chapter 9, Activity 4)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 9: Enigma, Activity 4: Listen to the report and complete the data sheet.",
+      "instructions": "Listen to the report and complete the data sheet.",
+      "script": [
+        {
+          "speaker": "Reporter",
+          "text": "The following aircraft are reported to have gone missing in the Bermuda Triangle. The report states as follows."
+        },
+        {
+          "speaker": "Reporter",
+          "text": "The flight took off at 2.08 p.m. on the afternoon of December 5, 1945, in order to fly a routine triangular flight pattern over the heart of the northern Bahamas. It should have been but a 2-hour and 15-minute flight. It was a very easy navigational hop, and they were hemmed in by many distinctive landmarks."
+        },
+        {
+          "speaker": "Reporter",
+          "text": "When messages were stopped at about 3.40 p.m., the flight was lost, and the flight leader, Lieutenant Charles Taylor, believed his compasses were malfunctioning."
+        },
+        {
+          "speaker": "Reporter",
+          "text": "There should have been little cause to worry. The standard procedure for any lost flight over sea was to fly west until they find the coast. The sun was clearly to the west this late in the afternoon."
+        },
+        {
+          "speaker": "Reporter",
+          "text": "There were 5 aircraft involved. One of them had to have a working compass. After trying a couple of different courses, the flight leader finally said they would head west until they reached the beach or ran out of gas."
+        },
+        {
+          "speaker": "Reporter",
+          "text": "Seven hours after they had taken off for their short flight, their voices trailed off into the night forever. No trace would ever be found."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Data sheet",
+          "lines": [
+            {
+              "label": "a) Take-off time:",
+              "answer": [
+                "2.08 pm",
+                "2:08 pm",
+                "2.08 p.m.",
+                "2:08 p.m.",
+                "2.08",
+                "2:08"
+              ]
+            },
+            {
+              "label": "b) Date (year):",
+              "answer": [
+                "1945"
+              ]
+            },
+            {
+              "label": "d) Duration of the flight:",
+              "answer": [
+                "2 hours 15 minutes",
+                "2 hours and 15 minutes",
+                "two hours fifteen minutes",
+                "2 hrs 15 mins",
+                "2 hour 15 minutes",
+                "2 hours 15 mins"
+              ]
+            },
+            {
+              "label": "e) Time of the last message:",
+              "answer": [
+                "3.40 pm",
+                "3:40 pm",
+                "3.40 p.m.",
+                "3:40 p.m.",
+                "3.40",
+                "3:40",
+                "about 3.40 pm",
+                "about 3.40 p.m."
+              ]
+            },
+            {
+              "label": "i) Number of aircraft:",
+              "answer": [
+                "5",
+                "five"
+              ]
+            }
+          ],
+          "explanation": "Took off at 2.08 p.m. on 5 December 1945; a 2-hour 15-minute flight; last message about 3.40 p.m.; five aircraft."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "c) Location:",
+          "options": [
+            "Over the northern Bahamas",
+            "Near the coast of Florida",
+            "Over the Pacific Ocean"
+          ],
+          "answer": 0,
+          "explanation": "A triangular flight pattern over the heart of the northern Bahamas."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "f) Flight leader:",
+          "options": [
+            "Lt. Charles Taylor",
+            "Captain James Taylor",
+            "Lt. Charles Wynne"
+          ],
+          "answer": 0,
+          "explanation": "The flight leader, Lieutenant Charles Taylor."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "g) Problem:",
+          "options": [
+            "The engines failed",
+            "He believed his compasses were malfunctioning",
+            "They ran into a storm"
+          ],
+          "answer": 1,
+          "explanation": "He believed his compasses were malfunctioning."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "h) Standard procedure for a lost flight over sea:",
+          "options": [
+            "Fly west until they find the coast",
+            "Circle until help arrives",
+            "Fly east towards the sun"
+          ],
+          "answer": 0,
+          "explanation": "Fly west until they find the coast."
+        }
+      ]
+    },
+    {
+      "id": "pb11-c10-a12",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "Joining the library (Chapter 10, Activity 12)",
+      "description": "From the Grade 11 English Pupil's Book, Chapter 10: Choices in Life, Activity 12: Listen to the dialogue and underline the correct answer.",
+      "instructions": "Listen to the dialogue between the Library Assistant and Ganesh and choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Library Assistant",
+          "text": "Good morning, sir. May I help you?"
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "Good morning. I am looking for some books on Electronics, and I would also like to become a member."
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "Oh! Sure. We have plenty of material on Physics. Come this way and please have a look."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "Oh! There is quite a stock. Now, may I know the requirements for membership?"
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "Well. First you need to fill in this application form. Then your class teacher has to certify your application, and finally your application has to be counter-signed by the principal of your school."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "By the way, what is the membership fee?"
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "It is five hundred rupees for a year."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "How many books can I take at one time?"
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "Mmm, two books."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "How long can I keep them?"
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "Two weeks. After that there is a late fee of five rupees per book per day."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "Oh! I see. Tell me, do you have any other facilities?"
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "Yes. We have a reference section."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "That's good! Are you open on Sundays?"
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "No. We are open from Monday to Saturday from 9.30 a.m. to 6 p.m. We are closed on public holidays too."
+        },
+        {
+          "speaker": "Ganesh",
+          "text": "That suits me fine. I will come tomorrow with the application. Thank you very much. You've been a great help."
+        },
+        {
+          "speaker": "Library Assistant",
+          "text": "You are most welcome. Good day!"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Ganesh is looking for books on ...",
+          "options": [
+            "Engineering",
+            "Electronics",
+            "Literature"
+          ],
+          "answer": 1,
+          "explanation": "I am looking for some books on Electronics."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The application for membership should be counter-signed by the ...",
+          "options": [
+            "Principal",
+            "Class teacher",
+            "Ganesh"
+          ],
+          "answer": 0,
+          "explanation": "The class teacher certifies it; the principal counter-signs it."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The annual membership fee is ...",
+          "options": [
+            "Rs. 500",
+            "Rs. 100",
+            "Rs. 5"
+          ],
+          "answer": 0,
+          "explanation": "It is five hundred rupees for a year."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Ganesh can borrow ... at a time.",
+          "options": [
+            "one book",
+            "two books",
+            "three books"
+          ],
+          "answer": 1,
+          "explanation": "Two books."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The library is closed on ...",
+          "options": [
+            "Monday",
+            "Saturday",
+            "Sunday"
+          ],
+          "answer": 2,
+          "explanation": "Open Monday to Saturday; not open on Sundays."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is the late fee?",
+          "options": [
+            "Five rupees per book per day",
+            "Fifty rupees a week",
+            "Five hundred rupees"
+          ],
+          "answer": 0,
+          "explanation": "A late fee of five rupees per book per day."
+        }
+      ]
+    },
+    {
+      "id": "wb11-c02-a06",
+      "grade": 11,
+      "rate": 1,
+      "source": "textbook",
+      "title": "A meeting with the principal (Workbook, Chapter 2, Activity 6)",
+      "description": "From the Grade 11 English Workbook, Chapter 2: Facing Challenges, Activity 6: Listen to the announcement and fill in the blanks.",
+      "instructions": "Listen to the announcement and fill in the blanks.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Attention, please!"
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Class leaders of all the grade 11 classes are asked to gather in the main hall immediately after this announcement for a short meeting with the principal."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "I repeat. Class leaders of all the grade 11 classes are asked to gather in the main hall immediately after this announcement for a short meeting with the principal."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Attention please!",
+          "lines": [
+            {
+              "label": "____ of all the grade 11 classes",
+              "answer": [
+                "class leaders"
+              ]
+            },
+            {
+              "label": "are asked to ____ in the main hall",
+              "answer": [
+                "gather"
+              ]
+            },
+            {
+              "label": "____ after this announcement",
+              "answer": [
+                "immediately"
+              ]
+            },
+            {
+              "label": "for a ____ meeting",
+              "answer": [
+                "short"
+              ]
+            },
+            {
+              "label": "with the ____",
+              "answer": [
+                "principal"
+              ]
+            }
+          ],
+          "explanation": "Class leaders of all the grade 11 classes are asked to gather in the main hall immediately after this announcement for a short meeting with the principal."
         }
       ]
     }

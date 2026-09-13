@@ -375,6 +375,18 @@
           "ids": ["l10-1", "l10-2", "l10-3", "l10-4", "l10-5"]
         },
         {
+          "type": "listening",
+          "id": "textbook-listening",
+          "heading": "Grade 10 Pupil's Book listening activities",
+          "eyebrow": "From your textbook",
+          "variant": "tint",
+          "intro": [
+            "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
+            "Each test names the unit and activity in the Grade 10 Pupil's Book or Workbook. For the Workbook activities, the questions are RCF English's."
+          ],
+          "ids": ["pb10-u01-a03", "pb10-u03-a02", "pb10-u06-a07", "pb10-u08-a07", "pb10-u09-a06", "pb10-u11-a08", "wb10-u01-a05", "wb10-u03-a05", "wb10-u04-a02", "wb10-u05-a02", "wb10-u05-a06"]
+        },
+        {
           "type": "grade-resources",
           "heading": "Grade 10 resources to download",
           "eyebrow": "Downloads",
@@ -431,6 +443,18 @@
             "Choose **Practice** to replay freely, or **Formal test** for examination conditions. Each test starts with five words to learn. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test prints as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 3.6, 3.7 and 3.8, with inference at 5.7 and 5.8."
           ],
           "ids": ["l11-1", "l11-2", "l11-3", "l11-4", "l11-5"]
+        },
+        {
+          "type": "listening",
+          "id": "textbook-listening",
+          "heading": "Grade 11 Pupil's Book listening activities",
+          "eyebrow": "From your textbook",
+          "variant": "tint",
+          "intro": [
+            "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
+            "Each test names the chapter and activity in the Grade 11 Pupil's Book or Workbook. The two stress activities (Pupil's Book Chapter 8 and Workbook Chapter 4) are not here, because a device voice cannot stress a chosen word."
+          ],
+          "ids": ["pb11-c01-a09", "pb11-c02-a07", "pb11-c03-a02", "pb11-c04-a09", "pb11-c05-a04", "pb11-c06-a13", "pb11-c07-a02", "pb11-c09-a04", "pb11-c10-a12", "wb11-c02-a06"]
         },
         {
           "type": "grade-resources",
