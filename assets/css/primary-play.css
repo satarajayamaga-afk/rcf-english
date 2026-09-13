@@ -231,6 +231,24 @@
   justify-self: start;
 }
 
+.songs__volume {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-self: start;
+  min-height: 44px;
+  font-weight: 600;
+  color: var(--navy-800);
+}
+.songs__volume select {
+  min-height: 44px;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font: inherit;
+}
+
 .song {
   position: relative;
   padding: var(--sp-4) var(--sp-5);

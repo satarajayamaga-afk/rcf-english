@@ -6,20 +6,30 @@
    music box rather than a keyboard. There are no audio files, so nothing to
    download, nothing to licence and nothing to go missing.
 
-   It is deliberately quiet. A classroom or a sitting room may have a child's
-   page open beside other things, and the sound should sit under a teacher's
-   voice, not over it. Nothing plays until the visitor has pressed a button,
+   It is gentle rather than loud, but it must carry on a phone or laptop
+   speaker in a classroom, so there are three volume levels (remembered on the
+   device) and a limiter that stops overlapping notes from crackling. Nothing plays until the visitor has pressed a button,
    and the mute choice is remembered.
 --------------------------------------------------------------------------- */
 
 const KEY = "rcf-play-muted";
+const VOL_KEY = "rcf-play-volume";
+/* Loudness choices for the master level. "Medium" is the default. */
+export const VOLUMES = { quiet: 0.45, medium: 0.8, loud: 1 };
 const NAMES = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
 
 let ctx = null;
 let master = null;
 let muted = false;
+let volume = "medium";
 
-try { muted = window.localStorage.getItem(KEY) === "1"; } catch (e) { /* storage blocked */ }
+try {
+  muted = window.localStorage.getItem(KEY) === "1";
+  const v = window.localStorage.getItem(VOL_KEY);
+  if (v && VOLUMES[v]) volume = v;
+} catch (e) { /* storage blocked */ }
+
+const level = () => (muted ? 0 : VOLUMES[volume]);
 
 /* "C4", "F#4", "Bb3" -> frequency in hertz. */
 function frequency(note) {
@@ -36,7 +46,16 @@ export const Tones = {
   setMuted(value) {
     muted = !!value;
     try { window.localStorage.setItem(KEY, muted ? "1" : "0"); } catch (e) { /* storage blocked */ }
-    if (master && ctx) master.gain.setTargetAtTime(muted ? 0 : 0.5, ctx.currentTime, 0.02);
+    if (master && ctx) master.gain.setTargetAtTime(level(), ctx.currentTime, 0.02);
+  },
+
+  get volume() { return volume; },
+
+  setVolume(name) {
+    if (!VOLUMES[name]) return;
+    volume = name;
+    try { window.localStorage.setItem(VOL_KEY, name); } catch (e) { /* storage blocked */ }
+    if (master && ctx) master.gain.setTargetAtTime(level(), ctx.currentTime, 0.02);
   },
 
   /* The audio context is created on first use, which is always inside a click
@@ -47,8 +66,17 @@ export const Tones = {
       if (!AC) return null;
       ctx = new AC();
       master = ctx.createGain();
-      master.gain.value = muted ? 0 : 0.5;
-      master.connect(ctx.destination);
+      master.gain.value = level();
+      // A gentle limiter: notes that overlap at the end of one and the start
+      // of the next can add up, and this keeps them from crackling.
+      const limiter = ctx.createDynamicsCompressor();
+      limiter.threshold.value = -10;
+      limiter.knee.value = 8;
+      limiter.ratio.value = 6;
+      limiter.attack.value = 0.003;
+      limiter.release.value = 0.15;
+      master.connect(limiter);
+      limiter.connect(ctx.destination);
     }
     if (ctx.state === "suspended") ctx.resume();
     return ctx;
@@ -63,7 +91,7 @@ export const Tones = {
    * One note. Returns the oscillators so a caller can stop a whole song early.
    * `when` is in audio-context seconds; `length` is how long the note rings.
    */
-  note(name, when, length, level = 0.2) {
+  note(name, when, length, peak = 0.45) {
     const c = this.ensure();
     const f = frequency(name);
     if (!c || !f || muted) return [];
@@ -73,7 +101,7 @@ export const Tones = {
 
     const env = c.createGain();
     env.gain.setValueAtTime(0.0001, t);
-    env.gain.exponentialRampToValueAtTime(level, t + 0.015);
+    env.gain.exponentialRampToValueAtTime(peak, t + 0.015);
     env.gain.exponentialRampToValueAtTime(0.0001, t + ring);
 
     const body = c.createOscillator();
@@ -84,7 +112,9 @@ export const Tones = {
     shimmer.type = "triangle";
     shimmer.frequency.value = f * 2;
     const shimmerLevel = c.createGain();
-    shimmerLevel.gain.value = 0.12;
+    // Small phone and laptop speakers barely reproduce the low sine, so the
+    // octave above carries most of what a child actually hears.
+    shimmerLevel.gain.value = 0.35;
 
     body.connect(env);
     shimmer.connect(shimmerLevel);
@@ -103,7 +133,7 @@ export const Tones = {
     const c = this.ensure();
     if (!c || muted) return;
     const t = c.currentTime + 0.02;
-    this.note("E5", t, 0.35, 0.12);
-    this.note("G5", t + 0.13, 0.55, 0.12);
+    this.note("E5", t, 0.35, 0.3);
+    this.note("G5", t + 0.13, 0.55, 0.3);
   }
 };

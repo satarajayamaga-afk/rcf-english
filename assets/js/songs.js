@@ -121,7 +121,7 @@ function setUp(article) {
             markLine(line);
             bob();
           }, (at + 0.12) * 1000));
-          if (c) oscillators.push(...Tones.note(s.note, origin + at, length * 0.92, 0.2));
+          if (c) oscillators.push(...Tones.note(s.note, origin + at, length * 0.92));
           t += length;
         });
       });
@@ -204,6 +204,24 @@ if (soundSwitch) {
     if (Tones.muted) { stopActive(); Speech.cancel(); }
     paint();
   });
+
+  /* Volume: a classroom needs more than a quiet sitting room. */
+  const vol = document.createElement("label");
+  vol.className = "songs__volume";
+  vol.innerHTML = `<span>Volume</span>
+    <select>
+      <option value="quiet">Quiet</option>
+      <option value="medium">Medium</option>
+      <option value="loud">Loud</option>
+    </select>`;
+  const volSel = vol.querySelector("select");
+  volSel.value = Tones.volume;
+  volSel.addEventListener("change", () => {
+    Tones.setVolume(volSel.value);
+    if (Tones.muted) { Tones.setMuted(false); paint(); }
+    Tones.chime();
+  });
+  soundSwitch.after(vol);
 }
 
 /* Leaving the page or hiding the tab stops a song mid-verse rather than
