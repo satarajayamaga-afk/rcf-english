@@ -24,6 +24,9 @@
     "   script[]     speaker + text. Distinct speakers get distinct voices where",
     "                the device offers more than one English voice.",
     "   questions[]  see the six kinds below",
+    "   vocabulary[] word + meaning. Shown under \"Before you listen\", and on the",
+    "                printable worksheet. Pick words that help, never ones",
+    "                that give an answer away.",
     "",
     "Question kinds:",
     "   mcq        prompt, options[], answer (position from 0), explanation",
@@ -45,6 +48,13 @@
       "title": "At the school office",
       "description": "A short conversation between a student and the school clerk. Competency levels 1.1 and 1.2 (2026 syllabus): listens to a simple functional text and extracts the information conveyed.",
       "instructions": "Listen to the conversation and answer the questions. Submit to see your score, the answers and the transcript.",
+      "vocabulary": [
+        { "word": "clerk", "meaning": "a person who works in an office and keeps records" },
+        { "word": "certainly", "meaning": "yes, of course" },
+        { "word": "parent", "meaning": "a mother or a father" },
+        { "word": "madam", "meaning": "a polite word used when speaking to a woman" },
+        { "word": "enough", "meaning": "as much as is needed" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a conversation at the school office." },
         { "speaker": "Clerk", "text": "Good morning. How can I help you?" },
@@ -72,6 +82,13 @@
       "title": "A school announcement",
       "description": "An announcement made over the school public address system. Competency levels 1.1 and 1.2 (2026 syllabus): listens to a simple functional text and uses its information.",
       "instructions": "Listen to the announcement. Complete the notes and answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "announcement", "meaning": "an important message told to a group of people" },
+        { "word": "inter-house", "meaning": "between the houses (teams) of a school" },
+        { "word": "athletics", "meaning": "running, jumping and throwing sports" },
+        { "word": "wish", "meaning": "to want to do something" },
+        { "word": "welcome", "meaning": "happily invited to come" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to an announcement at a school." },
         { "speaker": "Teacher", "text": "Good afternoon, students. Please listen carefully. The inter-house athletics meet will be held on the twenty second of September." },
@@ -96,6 +113,13 @@
       "title": "Meet my family",
       "description": "A student describes the people in her family. Competency levels 1.3 and 1.4 (2026 syllabus): listens to a simple informational text and uses the information conveyed.",
       "instructions": "Listen to Sanduni describing her family, then answer the questions and submit.",
+      "vocabulary": [
+        { "word": "farmer", "meaning": "a person who grows crops or keeps animals" },
+        { "word": "primary school", "meaning": "a school for young children" },
+        { "word": "elder", "meaning": "older" },
+        { "word": "team", "meaning": "a group of players who play together" },
+        { "word": "early", "meaning": "near the beginning of the day" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a student talking about her family." },
         { "speaker": "Sanduni", "text": "Hello. My name is Sanduni and I live in Kurunegala. There are five people in my family." },
@@ -121,6 +145,13 @@
       "title": "Getting ready for a trip",
       "description": "A mother and son plan what to pack. Competency levels 1.1 and 1.2 (2026 syllabus): listens to a simple functional text and uses its information creatively.",
       "instructions": "Listen to the conversation. Put the events in order, complete the notes, then submit.",
+      "vocabulary": [
+        { "word": "trip", "meaning": "a journey to a place and back" },
+        { "word": "packed", "meaning": "put things into a bag for a journey" },
+        { "word": "tomorrow", "meaning": "the day after today" },
+        { "word": "early", "meaning": "before the usual time" },
+        { "word": "straight after", "meaning": "immediately after" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a mother and her son getting ready for a trip." },
         { "speaker": "Mother", "text": "Nuwan, we are leaving for Anuradhapura tomorrow. Have you packed your bag?" },
@@ -148,6 +179,13 @@
       "title": "The lost kitten",
       "description": "A short story read aloud. Competency levels 1.5 and 1.6 (2026 syllabus): listens to a simple literary text and uses its information creatively.",
       "instructions": "Listen to the story, then answer the questions and submit to see your score and the transcript.",
+      "vocabulary": [
+        { "word": "whistle", "meaning": "a high sound made by blowing" },
+        { "word": "shivering", "meaning": "shaking because you are cold" },
+        { "word": "lap", "meaning": "the top of your legs when you sit down" },
+        { "word": "tiny", "meaning": "very small" },
+        { "word": "cloth", "meaning": "a piece of material" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a short story." },
         { "speaker": "Narrator", "text": "One rainy evening, Tharu heard a small sound near the gate. It was thin and high, like a whistle." },
@@ -173,6 +211,13 @@
       "title": "Directions to the post office",
       "description": "One person asks another the way. Competency level 3.2: listens and follows instructions and responds to requests.",
       "instructions": "Listen to the directions and follow them carefully. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "directions", "meaning": "information about how to get to a place" },
+        { "word": "excuse me", "meaning": "polite words used to get someone's attention" },
+        { "word": "far", "meaning": "a long way away" },
+        { "word": "plenty of", "meaning": "a lot of, more than enough" },
+        { "word": "on foot", "meaning": "walking" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a visitor asking for directions." },
         { "speaker": "Visitor", "text": "Excuse me. Could you tell me the way to the post office, please?" },
@@ -199,6 +244,13 @@
       "title": "An announcement at the railway station",
       "description": "A public announcement about train times and platforms. Competency level 3.1: responds to simple announcements.",
       "instructions": "Listen to the announcement and complete the notes. Then answer the questions and submit.",
+      "vocabulary": [
+        { "word": "attention", "meaning": "careful listening" },
+        { "word": "depart", "meaning": "to leave" },
+        { "word": "delay", "meaning": "a time when something happens later than planned" },
+        { "word": "passengers", "meaning": "people travelling on a train or bus" },
+        { "word": "travelling", "meaning": "going from one place to another" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to an announcement at a railway station." },
         { "speaker": "Announcer", "text": "Attention, please. The intercity train to Badulla will depart from platform three at ten forty five." },
@@ -223,6 +275,13 @@
       "title": "How to make a paper bookmark",
       "description": "A teacher explains a craft activity step by step. Competency level 3.2: listens and follows instructions.",
       "instructions": "Listen to the instructions carefully. Put the steps in order and answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "bookmark", "meaning": "something kept in a book to mark your page" },
+        { "word": "glue", "meaning": "a sticky substance for joining things" },
+        { "word": "simple", "meaning": "easy, not complicated" },
+        { "word": "carefully", "meaning": "with care and attention" },
+        { "word": "ready", "meaning": "finished and able to be used" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a teacher explaining how to make a bookmark." },
         { "speaker": "Teacher", "text": "Today we are going to make a paper bookmark. You will need card, scissors, glue and coloured pencils." },
@@ -248,6 +307,13 @@
       "title": "A telephone call about a lost bag",
       "description": "A caller reports a lost bag to an office. Competency level 3.3: listens to a simple text for specific information.",
       "instructions": "Listen to the telephone call and note the details. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "lost property", "meaning": "things people have left behind and lost" },
+        { "word": "depot", "meaning": "a place where buses are kept" },
+        { "word": "describe", "meaning": "to say what something is like" },
+        { "word": "inside", "meaning": "in, within" },
+        { "word": "I see", "meaning": "I understand" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a telephone call to a bus depot office." },
         { "speaker": "Officer", "text": "Good evening, lost property office. How may I help you?" },
@@ -275,6 +341,13 @@
       "title": "Library rules",
       "description": "The librarian explains how the school library works. Competency levels 3.3 and 3.4: listens for specific information and transfers it into other forms.",
       "instructions": "Listen to the librarian and complete the notes. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "librarian", "meaning": "a person who works in a library" },
+        { "word": "borrow", "meaning": "to take something and give it back later" },
+        { "word": "atlas", "meaning": "a book of maps" },
+        { "word": "at a time", "meaning": "together, at once" },
+        { "word": "returned", "meaning": "given back" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a librarian speaking to new students." },
         { "speaker": "Librarian", "text": "Welcome to the school library. Let me explain a few simple rules." },
@@ -300,6 +373,13 @@
       "title": "The weather report",
       "description": "A radio weather forecast for several regions. Competency level 3.4: listens and transfers the needed information into other forms.",
       "instructions": "Listen to the forecast and fill in the weather chart. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "forecast", "meaning": "a statement about what the weather will be" },
+        { "word": "temperature", "meaning": "how hot or cold something is" },
+        { "word": "broadcast", "meaning": "sent out on radio or television" },
+        { "word": "expected", "meaning": "thought likely to happen" },
+        { "word": "advised", "meaning": "told what is best to do" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a weather forecast on the radio." },
         { "speaker": "Presenter", "text": "Good morning. Here is the weather forecast for today, the ninth of June." },
@@ -325,6 +405,13 @@
       "title": "At the dentist",
       "description": "A dentist gives a patient advice and instructions. Competency level 3.2: listens and follows instructions and responds to requests.",
       "instructions": "Listen to the conversation and follow the advice given. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "dental clinic", "meaning": "a place where a dentist treats teeth" },
+        { "word": "pain", "meaning": "the feeling when part of the body hurts" },
+        { "word": "filled", "meaning": "closed with a special material" },
+        { "word": "check-up", "meaning": "an examination to see that everything is healthy" },
+        { "word": "remember", "meaning": "to keep something in your mind" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a conversation at a dental clinic." },
         { "speaker": "Dentist", "text": "Good afternoon, Menaka. How long have you had this pain?" },
@@ -352,6 +439,13 @@
       "title": "How paper is made",
       "description": "A short explanation of a process, told in the passive voice. Competency levels 3.3 and 3.4, and competency level 6.1, the passive voice in simple tenses.",
       "instructions": "Listen to the explanation of how paper is made. Put the stages in order and answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "process", "meaning": "a series of steps to make something" },
+        { "word": "wondered", "meaning": "wanted to know" },
+        { "word": "factory", "meaning": "a building where goods are made" },
+        { "word": "logs", "meaning": "thick pieces cut from a tree" },
+        { "word": "rolled up", "meaning": "turned over and over into a tube shape" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a talk about how paper is made." },
         { "speaker": "Speaker", "text": "Have you ever wondered how paper is made? The process is simpler than most people think." },
@@ -378,6 +472,13 @@
       "title": "A report on the school garden",
       "description": "A student reports to the class on a project. Competency level 3.3: listens to a text for specific information.",
       "instructions": "Listen to the report and note the details. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "project", "meaning": "a planned piece of work" },
+        { "word": "plot", "meaning": "a small piece of land" },
+        { "word": "report", "meaning": "to tell people what has happened" },
+        { "word": "unfortunately", "meaning": "sadly, by bad luck" },
+        { "word": "took part", "meaning": "joined in" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a student reporting on a school project." },
         { "speaker": "Student", "text": "Good morning. I am going to report on our school garden project, which began in January." },
@@ -404,6 +505,13 @@
       "title": "Booking the community hall",
       "description": "A caller arranges to hire a hall. Competency level 3.4: listens and transfers the needed information into other forms.",
       "instructions": "Listen to the conversation and complete the booking form. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "book", "meaning": "to arrange to use something on a certain date" },
+        { "word": "hall", "meaning": "a large room for meetings and events" },
+        { "word": "charge", "meaning": "the money you must pay" },
+        { "word": "deposit", "meaning": "part of the money, paid in advance" },
+        { "word": "held", "meaning": "kept for someone" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a telephone conversation about hiring a hall." },
         { "speaker": "Clerk", "text": "Good morning, community hall office." },
@@ -432,6 +540,13 @@
       "title": "An interview with a wildlife officer",
       "description": "A radio interview about elephants and farmland. Competency levels 3.3 and 3.4: listens for specific information and transfers it into other forms.",
       "instructions": "Listen to the interview and complete the notes. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "wildlife", "meaning": "wild animals and plants" },
+        { "word": "interview", "meaning": "a meeting where someone is asked questions" },
+        { "word": "space", "meaning": "room or area" },
+        { "word": "districts", "meaning": "areas of a country" },
+        { "word": "dislike", "meaning": "to not like" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a radio interview with a wildlife officer." },
         { "speaker": "Interviewer", "text": "Mr Bandara, you have worked with elephants for many years. What is the biggest problem today?" },
@@ -459,6 +574,13 @@
       "title": "Making plans for Saturday",
       "description": "Two friends discuss what to do, without stating everything directly. Competency levels 5.7 and 5.8: infers ellipted information and infers implied information.",
       "instructions": "Listen carefully. Some things are suggested rather than said. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "keen", "meaning": "wanting very much to do something" },
+        { "word": "cousin", "meaning": "the child of your aunt or uncle" },
+        { "word": "safer", "meaning": "less likely to cause a problem" },
+        { "word": "asking after", "meaning": "asking how somebody is" },
+        { "word": "settles it", "meaning": "makes the final decision" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to two friends making plans." },
         { "speaker": "Ishara", "text": "So, Saturday. The new film starts at four." },
@@ -486,6 +608,13 @@
       "title": "A young athlete is interviewed",
       "description": "A school athlete answers questions after a competition. Competency levels 3.3 and 3.4: listens for specific information and transfers it into other forms.",
       "instructions": "Listen to the interview and complete the record card. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "congratulations", "meaning": "words said when someone does well" },
+        { "word": "training", "meaning": "practising regularly for a sport" },
+        { "word": "seriously", "meaning": "with real effort and care" },
+        { "word": "manageable", "meaning": "possible to deal with" },
+        { "word": "qualifying time", "meaning": "the time you must reach to enter the next race" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to an interview after a school athletics meet." },
         { "speaker": "Reporter", "text": "Congratulations, Thilini. You have just won the eight hundred metres. How does it feel?" },
@@ -515,6 +644,13 @@
       "title": "At the bus halt",
       "description": "A short scene in which feelings are shown rather than stated. Competency level 5.8: infers implied information.",
       "instructions": "Listen carefully to what is said and to what is left unsaid. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "interview", "meaning": "a meeting where you are asked questions for a job" },
+        { "word": "smart", "meaning": "neat and well dressed" },
+        { "word": "charm", "meaning": "something that brings good luck" },
+        { "word": "halt", "meaning": "a place where buses stop" },
+        { "word": "nobody", "meaning": "no person" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a conversation at a bus halt." },
         { "speaker": "Kumudu", "text": "You are up early." },
@@ -543,6 +679,13 @@
       "title": "A talk on saving water",
       "description": "A short talk with facts and advice. Competency levels 3.4 and 3.6: transfers information into other forms and reports information.",
       "instructions": "Listen to the talk and complete the notes. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "assembly", "meaning": "a meeting of the whole school" },
+        { "word": "wastes", "meaning": "uses more than is needed" },
+        { "word": "dripping", "meaning": "falling in small drops" },
+        { "word": "rarely", "meaning": "not often" },
+        { "word": "harmless", "meaning": "not causing any damage" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a talk given at a school assembly." },
         { "speaker": "Speaker", "text": "Good morning. I want to talk about something we all use and rarely think about: water." },
@@ -568,6 +711,13 @@
       "title": "A presentation on plastic waste",
       "description": "A structured talk to be summarised in note form. Competency level 3.8: takes notes from oral presentations.",
       "instructions": "Listen to the presentation and take notes as you listen. Complete the note frame and answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "presentation", "meaning": "a talk given to a group, often with information" },
+        { "word": "estimated", "meaning": "roughly calculated" },
+        { "word": "realistically", "meaning": "in a way that can actually be done" },
+        { "word": "refill station", "meaning": "a place where you fill your own bottle or container" },
+        { "word": "conclusion", "meaning": "the last part of a talk" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a student presentation on plastic waste." },
         { "speaker": "Presenter", "text": "Good afternoon. My presentation has three parts: the scale of the problem, its causes, and what can realistically be done." },
@@ -594,6 +744,13 @@
       "title": "A discussion about school uniforms",
       "description": "Three speakers put different views. Competency level 3.6: listens and reports information.",
       "instructions": "Listen to the discussion and follow who says what. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "compulsory", "meaning": "something you must do" },
+        { "word": "in favour", "meaning": "supporting an idea" },
+        { "word": "objection", "meaning": "a reason for not agreeing" },
+        { "word": "entirely", "meaning": "completely" },
+        { "word": "levels", "meaning": "makes equal" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to three students discussing school uniforms." },
         { "speaker": "Chair", "text": "Our topic today is whether school uniforms should be compulsory. Dinesh, your view first." },
@@ -620,6 +777,13 @@
       "title": "A news report on the floods",
       "description": "A radio news bulletin with figures and instructions. Competency levels 3.4 and 3.6: transfers information into other forms and reports information.",
       "instructions": "Listen to the bulletin and complete the report summary. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "bulletin", "meaning": "a short news report" },
+        { "word": "low-lying", "meaning": "lower than the land around it" },
+        { "word": "affected", "meaning": "changed or harmed by something" },
+        { "word": "relief supplies", "meaning": "food and goods given to people in trouble" },
+        { "word": "helpline", "meaning": "a telephone number people can call for help" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a radio news bulletin." },
         { "speaker": "Newsreader", "text": "Heavy rain has continued for a third day in the Ratnapura district, and several low-lying areas have been flooded." },
@@ -645,6 +809,13 @@
       "title": "Signposts in a talk",
       "description": "A talk in which the linking words carry the structure. Competency level 3.7: recognizes discourse markers.",
       "instructions": "Listen to how the speaker signals each new idea. Answer the questions about those signals, then submit.",
+      "vocabulary": [
+        { "word": "signpost", "meaning": "a word or phrase that shows where a talk is going" },
+        { "word": "habit", "meaning": "something you do regularly" },
+        { "word": "skill", "meaning": "an ability to do something well" },
+        { "word": "correction", "meaning": "showing what is wrong and putting it right" },
+        { "word": "picked up", "meaning": "learnt without studying" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a short talk about learning a language." },
         { "speaker": "Speaker", "text": "People often ask me how long it takes to learn English. To begin with, that is the wrong question." },
@@ -670,6 +841,13 @@
       "title": "A staff room conversation",
       "description": "Two teachers work through a timetable problem. Competency levels 3.3 and 5.8: listens for specific information and infers what is implied.",
       "instructions": "Listen to the conversation and follow the problem being solved. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "staff room", "meaning": "the room where teachers rest and work" },
+        { "word": "timetable", "meaning": "a list of lessons and their times" },
+        { "word": "finalised", "meaning": "completed and decided" },
+        { "word": "adjustments", "meaning": "small changes" },
+        { "word": "ideal", "meaning": "perfect for the purpose" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to two teachers in a staff room." },
         { "speaker": "Mrs Perera", "text": "Have you seen the new timetable? I have Grade ten for English on Friday, last period." },
@@ -696,6 +874,13 @@
       "title": "A debate: has social media helped or harmed young people?",
       "description": "Two speakers argue opposing cases before a chairperson. Competency levels 3.6 and 8.16: listens and reports information, and follows a debate.",
       "instructions": "Listen to the debate and follow each speaker's argument. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "motion", "meaning": "the idea that a debate argues for or against" },
+        { "word": "condemns", "meaning": "says something is very bad" },
+        { "word": "platforms", "meaning": "websites or apps where people share things" },
+        { "word": "generation", "meaning": "all the people born around the same time" },
+        { "word": "surrender", "meaning": "to give up" }
+      ],
       "script": [
         { "speaker": "Chair", "text": "The motion is that social media has done more harm than good to young people. Speaking for the motion, Nilanka." },
         { "speaker": "Nilanka", "text": "Thank you. My case rests on one word: attention. A generation has been trained to expect something new every few seconds." },
@@ -723,6 +908,13 @@
       "title": "A careers talk",
       "description": "An extended talk to be summarised in note form. Competency level 3.8: takes notes from oral presentations.",
       "instructions": "Listen and take notes as the speaker moves through each section. Complete the note frame and answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "path", "meaning": "a way forward in life" },
+        { "word": "enquiring", "meaning": "asking for information" },
+        { "word": "consequently", "meaning": "as a result" },
+        { "word": "ranking", "meaning": "a list placed in order from best to worst" },
+        { "word": "opens doors", "meaning": "creates chances or choices for later" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a careers talk given to Grade eleven students." },
         { "speaker": "Speaker", "text": "Good morning. I have been asked to speak about choosing a path after the Ordinary Level examination. I shall cover three things: streams, timing, and a mistake I see every year." },
@@ -748,6 +940,13 @@
       "title": "An interview with a writer",
       "description": "A longer interview in which much is implied. Competency levels 5.7 and 5.8: infers ellipted and implied information.",
       "instructions": "Listen carefully. Several answers depend on what is suggested rather than stated. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "novelist", "meaning": "a person who writes novels" },
+        { "word": "overworked", "meaning": "worked on for too long" },
+        { "word": "reviews", "meaning": "written opinions of a book" },
+        { "word": "bruise", "meaning": "a dark mark on the skin after being hit" },
+        { "word": "loosely", "meaning": "not tightly" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to an interview with a novelist." },
         { "speaker": "Interviewer", "text": "Your first novel took eleven years. The second took nine months. What changed?" },
@@ -777,6 +976,13 @@
       "title": "A committee meeting",
       "description": "A meeting in which decisions are made and reported. Competency levels 3.6 and 6.11: reports information, and reported speech.",
       "instructions": "Listen to the meeting and follow what is decided. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "welfare", "meaning": "health and happiness" },
+        { "word": "inspected", "meaning": "looked at carefully to check" },
+        { "word": "emergency shower", "meaning": "a shower used at once if chemicals touch the skin" },
+        { "word": "draft", "meaning": "to write the first version of" },
+        { "word": "suspended", "meaning": "stopped for a time" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to part of a school welfare committee meeting." },
         { "speaker": "Chair", "text": "Item three: the condition of the science laboratory. Mr Fernando, you inspected it." },
@@ -805,6 +1011,13 @@
       "title": "Advice before the examination",
       "description": "A teacher gives structured advice, signalled by discourse markers. Competency levels 3.7 and 3.8: recognizes discourse markers and takes notes from an oral presentation.",
       "instructions": "Listen to the advice and note the main points. Answer the questions, then submit.",
+      "vocabulary": [
+        { "word": "revise", "meaning": "to study again before an examination" },
+        { "word": "candidate", "meaning": "a person sitting an examination" },
+        { "word": "serious", "meaning": "important and harmful" },
+        { "word": "full attention", "meaning": "complete focus on one thing" },
+        { "word": "hall", "meaning": "here, the examination room" }
+      ],
       "script": [
         { "speaker": "Narrator", "text": "Listen to a teacher speaking to a class before the Ordinary Level examination." },
         { "speaker": "Teacher", "text": "You have six weeks. I want to say four things, and none of them is about working harder." },

@@ -77,6 +77,42 @@
     },
 
     {
+      "slug": "listening-lab",
+      "title": "Listening Laboratory",
+      "description": "Free English listening tests for Grades 6 to 11: words to learn before you listen, a choice of accent, practice or examination conditions, automatic marking, the transcript, and a printable worksheet with an answer key.",
+      "keywords": "English listening test, listening practice Sri Lanka, O/L listening, Grade 6 listening, Grade 11 listening, listening worksheet",
+      "kicker": "Interactive learning",
+      "kind": "page",
+      "scripts": ["listening"],
+      "breadcrumbs": [{ "label": "Interactive Learning", "url": "interactive/" }],
+      "hero": {
+        "text": "Thirty listening tests from Grade 6 to Grade 11. Learn the key words, listen in practice or under examination conditions, and see your score with the answers explained.",
+        "buttons": [
+          { "label": "How to listen well", "url": "practical-english/listening/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "steps",
+          "heading": "How each test works",
+          "items": [
+            { "title": "Before you listen", "text": ["Read the five useful words and their meanings. Press **Hear it** to hear how each one is said."] },
+            { "title": "Choose how to listen", "text": ["**Practice** lets you replay as often as you like, slow the speed down, and open the transcript if you are stuck. **Formal test** plays the passage twice only, as in an examination, and keeps the transcript back until you submit."] },
+            { "title": "Answer and submit", "text": ["The test marks itself at once and explains every answer. Nothing you type is sent anywhere, and no sign-in is needed."] },
+            { "title": "Print it for class", "text": ["Teachers can print any test as a worksheet for students, or with the answer key and transcript on a separate page."] }
+          ]
+        },
+        {
+          "type": "listening-lab",
+          "id": "tests",
+          "heading": "Choose a test",
+          "eyebrow": "Level 1 Foundation (Grades 6–7) · Level 2 Intermediate (8–9) · Level 3 Advanced (10–11)",
+          "intro": ["Each test is read aloud by your own phone or computer. The accents on offer are the English voices your device has, so they differ from one device to another."]
+        }
+      ]
+    },
+
+    {
       "slug": "interactive",
       "title": "Interactive Learning",
       "description": "Free interactive English practice: grammar quizzes, fill-in-the-blank, sentence ordering, vocabulary matching, reading comprehension, literature terms and error correction.",
@@ -100,6 +136,13 @@
             "Read every explanation, including the ones for answers you got right.",
             "Do the activity a second time a few days later. That is when it settles."
           ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "variant": "tint",
+          "title": "New: the Listening Laboratory",
+          "text": ["Thirty listening tests for Grades 6 to 11, with words to learn first, a choice of accent, examination conditions and printable worksheets. [Open the Listening Laboratory](listening-lab/)."]
         },
         {
           "type": "activities",

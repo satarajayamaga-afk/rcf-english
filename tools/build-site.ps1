@@ -1586,6 +1586,45 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'listening-lab' {
+            # Every listening test in one place, chosen by grade or level and
+            # opened on this page. Without JavaScript each card links to the
+            # grade page, where the same test lives.
+            $tests = @($listening | Sort-Object { [int](P $_ 'grade' 0) }, { [string](P $_ 'id') })
+            $html = (SectionOpen $block 'listening-lab') + (SectionHead $block)
+            $html += '<div class="lab" data-listening-lab>'
+            $html += '<div class="lab__filters" data-lab-filters hidden>'
+            $html += '<div class="lab__chips" role="group" aria-label="Show tests for"><button type="button" class="lab__chip is-on" aria-pressed="true" data-lab-grade="">All grades</button>'
+            foreach ($g in @($tests | ForEach-Object { [int](P $_ 'grade' 0) } | Sort-Object -Unique)) {
+                $html += '<button type="button" class="lab__chip" aria-pressed="false" data-lab-grade="' + $g + '">Grade ' + $g + '</button>'
+            }
+            $html += '</div><p class="lab__count" role="status" aria-live="polite" data-lab-count></p></div>'
+            $html += '<ul class="lab__list">'
+            foreach ($t in $tests) {
+                $g = [int](P $t 'grade' 0)
+                $lv = $(if ($g -le 7) { @(1, 'Level 1 &middot; Foundation') } elseif ($g -le 9) { @(2, 'Level 2 &middot; Intermediate') } else { @(3, 'Level 3 &middot; Advanced') })
+                $id = [string](P $t 'id')
+                $speakers = @((AsList (P $t 'script')) | ForEach-Object { [string](P $_ 'speaker') } | Where-Object { $_ -ne 'Narrator' } | Sort-Object -Unique).Count
+                $qs = (AsList (P $t 'questions')).Count
+                $words = (AsList (P $t 'vocabulary')).Count
+                $html += '<li class="lab__card" data-lab-card data-grade="' + $g + '">'
+                $html += '<div class="tag-row"><span class="tag tag--level">Grade ' + $g + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span></div>'
+                $html += '<h3 class="lab__title">' + (E (P $t 'title')) + '</h3>'
+                $meta = @("$qs questions")
+                if ($speakers) { $meta += $(if ($speakers -eq 1) { '1 speaker' } else { "$speakers speakers" }) }
+                if ($words) { $meta += "$words words to learn first" }
+                $html += '<p class="lab__meta">' + ($meta -join ' &middot; ') + '</p>'
+                $html += '<a class="btn btn--sm btn--accent" data-lab-open="' + (E $id) + '" href="' + (E (Url "grades/grade-$g/#listening")) + '">Take this test<span class="visually-hidden">: ' + (E (P $t 'title')) + '</span></a>'
+                $html += '</li>'
+            }
+            $html += '</ul>'
+            $html += '<div class="lab__stage" id="lab-test" tabindex="-1" data-lab-stage hidden>'
+            $html += '<p class="lab__back"><button type="button" class="btn btn--sm btn--outline" data-lab-close>&larr; Back to all tests</button></p>'
+            $html += '<div data-lab-slot></div></div>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'grade-dashboard' {
             # Everything a grade has, counted, at the top of the grade page. The
             # counts come from the same records as the resource finder, so the

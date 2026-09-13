@@ -3775,6 +3775,135 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .listening__transcript h4 { margin: 0 0 var(--sp-2); color: var(--navy-800); }
 .listening__transcript p { margin: 0 0 var(--sp-2); }
 
+/* --- listening laboratory: level, vocabulary, worksheet */
+.listening__tags { margin: 0 0 var(--sp-3); }
+.listening__level--1 { background: #e7f5ef; border-color: #b9e0cf; color: #0b5e4c; }
+.listening__level--2 { background: #fdf3df; border-color: #ecd4a2; color: #6e4d10; }
+.listening__level--3 { background: #f7e9ea; border-color: #e3c0c4; color: #7a2a33; }
+
+.lvocab {
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.lvocab summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--navy-800);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.lvocab__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+.lvocab__item {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) 1fr auto;
+  gap: var(--sp-3);
+  align-items: center;
+  padding: var(--sp-2) 0;
+  border-top: 1px solid var(--line);
+}
+.lvocab__word { font-weight: 700; color: var(--navy-800); }
+.lvocab__meaning { color: var(--ink-700); font-size: var(--step--1); }
+.lvocab__say {
+  min-height: 36px;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy-700);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.lvocab__say:hover { border-color: var(--teal-600); background: var(--teal-050); }
+@media (max-width: 30rem) {
+  .lvocab__item { grid-template-columns: 1fr auto; }
+  .lvocab__meaning { grid-column: 1 / -1; grid-row: 2; }
+}
+
+.listening__print {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+  font-size: var(--step--1);
+  color: var(--ink-700);
+}
+
+/* --- the listening laboratory page */
+.lab__filters { display: grid; gap: var(--sp-2); margin-bottom: var(--sp-4); }
+.lab__chips { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.lab__chip {
+  min-height: 44px;
+  padding: 0.35rem 0.95rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--navy-700);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.lab__chip:hover { border-color: var(--teal-600); background: var(--teal-050); }
+.lab__chip.is-on { background: var(--teal-700); border-color: var(--teal-700); color: #fff; }
+.lab__count { margin: 0; font-weight: 650; color: var(--teal-700); }
+.lab__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--sp-4);
+}
+.lab__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 2px 10px rgba(15, 38, 71, 0.05);
+}
+.lab__card .tag-row { margin: 0; }
+.lab__title { margin: 0; font-size: var(--step-1); color: var(--navy-800); }
+.lab__meta { margin: 0 0 var(--sp-2); font-size: var(--step--1); color: var(--ink-700); flex: 1; }
+.lab__card .btn { align-self: flex-start; }
+.lab__stage { scroll-margin-top: calc(var(--header-h) + 1rem); }
+.lab__stage:focus { outline: none; }
+.lab__back { margin: 0 0 var(--sp-3); }
+
+/* The printable worksheet exists only while printing. */
+.lw { display: none; }
+@media print {
+  .is-printing-worksheet body > *:not(.lw) { display: none !important; }
+  .is-printing-worksheet .lw { display: block; font-size: 11pt; color: #000; }
+  .lw h1 { font-size: 18pt; margin: 0 0 4pt; }
+  .lw h2 { font-size: 13pt; margin: 14pt 0 6pt; }
+  .lw__brand { font-size: 9pt; letter-spacing: 0.05em; text-transform: uppercase; margin: 0 0 4pt; }
+  .lw__head { border-bottom: 1.5pt solid #000; padding-bottom: 6pt; margin-bottom: 10pt; }
+  .lw__head p { margin: 2pt 0; }
+  .lw__who { margin-top: 8pt !important; }
+  .lw__line { display: inline-block; min-width: 55%; border-bottom: 1pt solid #000; height: 1.1em; vertical-align: bottom; }
+  .lw__line--short { min-width: 20%; }
+  .lw__vocab, .lw__match { border-collapse: collapse; width: 100%; }
+  .lw__vocab th, .lw__vocab td, .lw__match td { border: 0.75pt solid #777; padding: 3pt 6pt; text-align: left; vertical-align: top; }
+  .lw__vocab th { width: 28%; }
+  .lw__box { width: 2.2em; }
+  .lw__qs { list-style: none; padding: 0; }
+  .lw__qs > li { margin: 0 0 12pt; break-inside: avoid; }
+  .lw__opts { margin: 4pt 0 0 1.4em; }
+  .lw__hint { font-size: 9pt; font-style: italic; margin: 3pt 0 0; }
+  .lw__key { break-before: page; }
+  .lw__foot { margin-top: 16pt; font-size: 8.5pt; color: #444; }
+}
+
 @media print {
   .site-header,
   .site-footer,
