@@ -4620,3 +4620,53 @@ html.reading-contrast .page-hero :where(h1, p, span), html.reading-contrast .sit
 .my__stars { color: #b7791f; }
 html.reading-contrast .site-header a, html.reading-contrast .site-header :where(span, strong, small) { color: #fff !important; }
 html.reading-contrast .site-header .btn, html.reading-contrast .site-header button { background: #000 !important; color: #fff !important; border-color: #fff !important; }
+
+/* --- worksheet and test generator */
+.wsgen__form { display: grid; gap: var(--sp-4); }
+.wsgen__step { margin: 0; padding: var(--sp-4); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
+.wsgen__step legend { padding: 0 0.4rem; font-weight: 700; color: var(--navy-800); }
+.wsgen__step .field { max-width: 22rem; margin: 0; }
+.wsgen__topics { display: grid; gap: var(--sp-2); grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); }
+.wsgen__topic { display: flex; gap: 0.6rem; align-items: flex-start; padding: var(--sp-2); border: 1px solid var(--line); border-radius: var(--radius-sm); cursor: pointer; }
+.wsgen__topic input { margin-top: 0.3rem; }
+.wsgen__topic-meta { display: block; font-size: 0.8rem; color: var(--ink-700); }
+.wsgen__types, .wsgen__checks { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-4); }
+.wsgen__types label, .wsgen__checks label { display: flex; gap: 0.45rem; align-items: center; min-height: 36px; }
+.wsgen__grid { display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin-bottom: var(--sp-3); }
+.wsgen__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; }
+.wsgen__status { margin: 0; font-weight: 650; color: var(--teal-700); }
+.ws { margin-top: var(--sp-5); }
+.ws__page { padding: var(--sp-5); border: 1px solid var(--line-strong); background: #fff; color: #000; margin-bottom: var(--sp-4); box-shadow: 0 4px 16px rgba(15, 38, 71, 0.08); }
+.ws__head { border-bottom: 2px solid #000; padding-bottom: var(--sp-2); margin-bottom: var(--sp-3); }
+.ws__school { margin: 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.ws__title { margin: 0.2rem 0; font-size: 1.5rem; color: #000; }
+.ws__who { display: flex; flex-wrap: wrap; gap: var(--sp-4); margin: var(--sp-2) 0 0; }
+.ws__fill { display: inline-block; min-width: 12rem; border-bottom: 1px solid #000; height: 1em; }
+.ws__fill--short { min-width: 6rem; }
+.ws__total { margin: var(--sp-2) 0 0; font-weight: 700; }
+.ws__section h2 { font-size: 1.1rem; margin: var(--sp-4) 0 var(--sp-1); color: #000; }
+.ws__instruction { margin: 0 0 var(--sp-2); font-style: italic; }
+.ws__qs > li { margin: 0 0 0.8rem; break-inside: avoid; }
+.ws__opts { margin: 0.3rem 0 0 1.2rem; display: flex; flex-wrap: wrap; gap: 0.2rem 1.6rem; }
+.ws__opts li { margin: 0; }
+.ws__blank { display: inline-block; min-width: 7rem; border-bottom: 1px solid #000; }
+.ws__line { display: block; border-bottom: 1px solid #000; height: 1.8em; }
+.ws__part { white-space: nowrap; }
+.ws__hint, .ws__mark { color: #333; font-size: 0.9em; }
+.ws__passage { padding: var(--sp-3); border: 1px solid #999; margin-bottom: var(--sp-2); }
+.ws__passage-title { font-weight: 700; margin: 0 0 0.4rem; }
+.ws__passage p { margin: 0 0 0.4rem; }
+.ws__match { border-collapse: collapse; width: 100%; margin-bottom: var(--sp-2); }
+.ws__match th, .ws__match td { border: 1px solid #777; padding: 0.3rem 0.5rem; text-align: left; }
+.ws__box { width: 3rem; }
+.ws__foot { margin: var(--sp-4) 0 0; font-size: 0.75rem; color: #444; }
+.ws__key-title { font-size: 1.2rem; margin: 0 0 var(--sp-2); color: #000; }
+.ws__key-section h3 { font-size: 1rem; margin: var(--sp-3) 0 0.3rem; }
+.ws__key-list { margin: 0; padding-left: 2rem; columns: 2; }
+@media print {
+  .is-printing-ws body * { visibility: hidden; }
+  .is-printing-ws .ws, .is-printing-ws .ws * { visibility: visible; }
+  .is-printing-ws .ws { position: absolute; left: 0; top: 0; width: 100%; margin: 0; }
+  .is-printing-ws .ws__page { border: 0; box-shadow: none; padding: 0; margin: 0; }
+  .is-printing-ws .ws__page--key { break-before: page; }
+}

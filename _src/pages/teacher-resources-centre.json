@@ -15,6 +15,37 @@
   ],
   "pages": [
     {
+      "slug": "teacher-resources/worksheet-generator",
+      "title": "Worksheet and Test Generator",
+      "metaTitle": "English Worksheet and Test Generator with Answer Key | RCF English",
+      "description": "Make a printable English worksheet or short test in a minute: choose the grade, topics and competency levels, question types and number of questions, and print it with a separate answer key.",
+      "keywords": "English worksheet generator, test generator with answer key, printable grammar worksheet, Grade 6 to 11 English test maker, Sri Lanka English teacher",
+      "kicker": "Teacher Resources",
+      "kind": "page",
+      "scripts": ["worksheet-generator"],
+      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "hero": { "text": "Choose a level, the topics and the kinds of question, and the generator builds a printable worksheet or short test with a separate answer key. Make it again for a different mix of the same questions." },
+      "blocks": [
+        {
+          "type": "app",
+          "mount": "wsgen",
+          "heading": "Build a worksheet",
+          "noscript": "The generator needs JavaScript. Printable worksheets with answer keys are also on [Worksheets by Grade](teacher-resources/worksheets-by-grade/)."
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Where the questions come from",
+          "text": [
+            "Every question is from the RCF English interactive activities, written by RCF English and free to copy for classroom use. Topics show their competency levels where the activity names them.",
+            "The bank is small and grows as activities are added. If you ask for more questions than the chosen topics hold, the worksheet says so rather than repeating questions."
+          ]
+        }
+      ]
+    },
+
+    {
       "slug": "teacher-resources/rubrics",
       "title": "Assessment Rubrics for English",
       "metaTitle": "Printable English Assessment Rubrics: Writing, Speaking, Reading Aloud, Literature | RCF English",
