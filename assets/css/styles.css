@@ -4530,3 +4530,93 @@ img.pcard__cover {
 /* Listening Laboratory: a test built from a Pupil's Book or Workbook activity. */
 .tag--textbook { background: #eef3fb; border-color: #c9d6ea; color: #1f3f6e; }
 .lab__filters .lab__chips + .lab__chips { margin-top: var(--sp-1); }
+
+/* ==========================================================================
+   Personal features: save button, reading options, offline update note
+   ========================================================================== */
+.breadcrumbs .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-2); }
+.save-page {
+  min-height: 36px;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--navy-700);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.save-page[aria-pressed="true"] { background: #fdf3df; border-color: #e3c27a; color: #6e4d10; }
+.save-page span { color: #b7791f; }
+
+.reading-tools { position: fixed; left: 1rem; bottom: 1rem; z-index: 60; }
+.reading-tools__toggle {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: var(--navy-800);
+  color: #fff;
+  font: 700 1rem/1 var(--font-head);
+  box-shadow: 0 4px 14px rgba(15, 38, 71, 0.25);
+  cursor: pointer;
+}
+.reading-tools__panel {
+  position: absolute; left: 0; bottom: 58px;
+  width: min(18rem, calc(100vw - 2rem));
+  padding: var(--sp-3);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 10px 30px rgba(15, 38, 71, 0.2);
+  display: grid; gap: var(--sp-2);
+}
+.reading-tools__title { margin: 0; font-weight: 700; color: var(--navy-800); }
+.reading-tools__row { display: flex; gap: 0.35rem; }
+.reading-tools__row button, .reading-tools__read {
+  min-height: 40px; padding: 0.25rem 0.7rem;
+  border: 1px solid var(--line-strong); border-radius: var(--radius-sm);
+  background: #fff; color: var(--navy-800); font: inherit; font-weight: 650; cursor: pointer;
+}
+.reading-tools__row button[aria-pressed="true"] { background: var(--navy-800); border-color: var(--navy-800); color: #fff; }
+.reading-tools__check { display: flex; gap: 0.5rem; align-items: center; min-height: 36px; font-size: 0.92rem; }
+.reading-tools__note { margin: 0; font-size: 0.78rem; color: var(--ink-700); }
+.is-being-read { background: #fff3c4 !important; outline: 2px solid #e3b341; outline-offset: 2px; border-radius: 3px; }
+@media print { .reading-tools, .save-page, .update-note { display: none !important; } }
+
+html.reading-large { font-size: calc(100% * var(--reading-scale, 1)); }
+html.reading-spacing body { letter-spacing: 0.03em; word-spacing: 0.12em; line-height: 1.9; }
+html.reading-spacing p, html.reading-spacing li { max-width: 70ch; }
+html.reading-contrast body { background: #fff; color: #000; }
+html.reading-contrast :where(p, li, td, th, dd, dt, label, span, small, .text-muted) { color: #000 !important; }
+html.reading-contrast a { color: #0000b3 !important; text-decoration: underline !important; }
+html.reading-contrast :where(.card, .callout, .section--tint, .activity, .listening, .paper-card, .fres, .lab__card) { background: #fff !important; border-color: #000 !important; }
+html.reading-contrast :where(.btn, button) { border-width: 2px !important; }
+html.reading-contrast :focus-visible { outline: 3px solid #000 !important; outline-offset: 2px; }
+html.reading-contrast .page-hero, html.reading-contrast .site-header, html.reading-contrast .site-footer { background: #000 !important; }
+html.reading-contrast .page-hero :where(h1, p, span), html.reading-contrast .site-footer :where(a, p, h3, li) { color: #fff !important; }
+
+.update-note {
+  position: fixed; right: 1rem; bottom: 5rem; z-index: 70;
+  max-width: 20rem; padding: var(--sp-3);
+  border-radius: var(--radius-md); background: var(--navy-800); color: #fff;
+  box-shadow: 0 10px 30px rgba(15, 38, 71, 0.3);
+}
+.update-note button { margin-left: 0.4rem; min-height: 36px; border: 0; border-radius: var(--radius-sm); background: #fff; color: var(--navy-800); font: inherit; font-weight: 700; cursor: pointer; padding: 0.2rem 0.6rem; }
+
+/* --- My RCF English */
+.app--my { display: grid; gap: var(--sp-4); grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); align-items: start; }
+.my__card { padding: var(--sp-4) var(--sp-5); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
+.my__card h2 { margin: 0 0 var(--sp-3); font-size: var(--step-1); color: var(--navy-800); display: flex; align-items: center; gap: 0.5rem; }
+.my__card--quiet { background: var(--surface-alt); }
+.my__count { font-size: 0.8rem; padding: 0.1rem 0.5rem; border-radius: 999px; background: var(--navy-050); color: var(--navy-700); }
+.my__grade { max-width: 18rem; }
+.my__links { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-3); }
+.my__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-1); }
+.my__item { display: grid; grid-template-columns: 1fr auto; gap: 0 var(--sp-2); padding: var(--sp-2) 0; border-top: 1px solid var(--line); }
+.my__item a { font-weight: 650; }
+.my__meta { grid-column: 1; font-size: 0.8rem; color: var(--ink-700); }
+.my__remove { grid-column: 2; grid-row: 1 / span 2; align-self: center; min-height: 36px; padding: 0.2rem 0.6rem; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: #fff; font: inherit; font-size: 0.82rem; cursor: pointer; }
+.my__stars { color: #b7791f; }
+html.reading-contrast .site-header a, html.reading-contrast .site-header :where(span, strong, small) { color: #fff !important; }
+html.reading-contrast .site-header .btn, html.reading-contrast .site-header button { background: #000 !important; color: #fff !important; border-color: #fff !important; }

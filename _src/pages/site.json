@@ -302,6 +302,46 @@
     },
 
     {
+      "slug": "my",
+      "title": "My RCF English",
+      "description": "Your own RCF English page: choose your grade once, find your saved pages, recently viewed pages and practice stars. Kept on your device only, with no account.",
+      "keywords": "my RCF English, saved pages, bookmarks, recently viewed, my grade",
+      "kicker": "Your page",
+      "kind": "page",
+      "noindex": true,
+      "scripts": ["my"],
+      "hero": { "text": "Choose your grade once, save the pages you use most, and pick up where you left off. Everything here stays on this device: there is no account and nothing is sent anywhere." },
+      "blocks": [
+        {
+          "type": "app",
+          "mount": "my",
+          "noscript": "My RCF English needs JavaScript, because it reads what your browser has saved. You can still use [the grade pages](grades/) and [the resource finder](resources/)."
+        }
+      ]
+    },
+
+    {
+      "slug": "offline",
+      "title": "You are offline",
+      "description": "This page has not been saved on your device yet. Pages you have opened before can still be read without a connection.",
+      "kicker": "No connection",
+      "kind": "page",
+      "noindex": true,
+      "hero": { "text": "This page has not been opened on this device before, so there is no copy of it to show without a connection." },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What you can still do",
+          "text": [
+            "Pages you have already opened on this device are kept, so they can be read again offline. Try going back, or open one from [My RCF English](my/).",
+            "Interactive activities and listening tests on pages you have opened will also work offline, because they run in your browser.",
+            "When your connection returns, reload this page."
+          ]
+        }
+      ]
+    },
+
+    {
       "slug": "faq",
       "title": "Frequently Asked Questions",
       "description": "Answers to common questions about RCF English: what it covers, who it is for, past papers and copyright, interactive activities, RCF Online Academy and RCF Publications.",

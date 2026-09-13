@@ -1616,6 +1616,19 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'app' {
+            # A mount point for an interactive tool whose script builds the
+            # interface: "mount" names the data- attribute the script looks
+            # for, and "noscript" says what to do without JavaScript.
+            $mount = [string](P $block 'mount')
+            if ($mount -notmatch '^[a-z][a-z0-9-]*$') { [void]$script:Warnings.Add("app block on '$($script:PageSlug)' has an invalid mount name"); return '' }
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="app app--' + $mount + '" data-' + $mount + '>'
+            $html += '<noscript><div class="noscript-note"><p class="mb-0">' + (Inline (P $block 'noscript' 'This tool needs JavaScript. Please switch it on to use it.')) + '</p></div></noscript>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'exam-timer' {
             $html = (SectionOpen $block 'exam-timer') + (SectionHead $block)
             $html += '<div class="xtimer" data-xtimer><noscript><p>The timer needs JavaScript. A watch or a phone alarm set to the time printed on the paper works just as well.</p></noscript></div>'
@@ -3634,9 +3647,13 @@ function BuildPage($page) {
         $head += '<link rel="stylesheet" href="' + (E ($script:Root + 'assets/css/' + $sheet + '.css')) + '">'
     }
     $head += '<script src="' + (E ($script:Root + 'assets/js/site-config.js')) + '"></script>'
+    # Reading options are applied before the page paints, so a visitor who
+    # chose large text never sees the page jump from small to large.
+    $head += '<script>try{var r=JSON.parse(localStorage.getItem("rcf-reading")||"{}"),h=document.documentElement,s=[1,1.15,1.3][r.size||0]||1;if(r.size){h.classList.add("reading-large");h.style.setProperty("--reading-scale",s)}if(r.contrast)h.classList.add("reading-contrast");if(r.spacing)h.classList.add("reading-spacing")}catch(e){}</script>'
     $head += StructuredData $page $canonical
 
     $scripts = '<script src="' + (E ($script:Root + 'assets/js/nav.js')) + '" defer></script>'
+    $scripts += '<script src="' + (E ($script:Root + 'assets/js/personal.js')) + '" defer></script>'
     foreach ($m in (AsList (P $page 'scripts'))) {
         $scripts += '<script type="module" src="' + (E ($script:Root + 'assets/js/' + $m + '.js')) + '"></script>'
     }
@@ -3905,6 +3922,21 @@ if ($script:Warnings.Count -gt 0) {
     Write-Host ''
     Write-Host '  Warnings:' -ForegroundColor Yellow
     $script:Warnings | Sort-Object -Unique | ForEach-Object { Write-Host "    $_" -ForegroundColor Yellow }
+}
+
+# The service worker's cache name follows the content of the styles, scripts
+# and data, so visitors are offered the new version only when something they
+# would see has actually changed.
+$swPath = Join-Path $ProjectRoot 'sw.js'
+if (Test-Path $swPath) {
+    $sha = [System.Security.Cryptography.SHA1]::Create()
+    $files = @(Get-ChildItem (Join-Path $ProjectRoot 'assets/css') -Filter *.css) + @(Get-ChildItem (Join-Path $ProjectRoot 'assets/js') -Filter *.js) + @(Get-ChildItem (Join-Path $ProjectRoot 'data') -Filter *.json)
+    $ms = New-Object System.IO.MemoryStream
+    foreach ($f in ($files | Sort-Object FullName)) { $b = [System.IO.File]::ReadAllBytes($f.FullName); $ms.Write($b, 0, $b.Length) }
+    $hash = (($sha.ComputeHash($ms.ToArray()) | ForEach-Object { $_.ToString('x2') }) -join '').Substring(0, 12)
+    $sw = [System.IO.File]::ReadAllText($swPath)
+    $sw2 = [regex]::Replace($sw, 'const VERSION = "[^"]*";', "const VERSION = `"rcf-$hash`";")
+    if ($sw2 -ne $sw) { [System.IO.File]::WriteAllText($swPath, $sw2, (New-Object System.Text.UTF8Encoding($false))) }
 }
 
 Say ''
