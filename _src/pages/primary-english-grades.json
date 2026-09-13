@@ -36,6 +36,7 @@
       "kind": "page",
       "hero": { "text": "Grade 3 English: the year the letters become words, and the words become short sentences." },
       "blocks": [
+        { "type": "grade-dashboard", "grade": 3 },
         {
           "type": "prose",
           "heading": "What Grade 3 covers",
@@ -96,6 +97,7 @@
       "kind": "page",
       "hero": { "text": "Grade 4 English: longer sentences, pronouns used accurately, and writing that is properly punctuated." },
       "blocks": [
+        { "type": "grade-dashboard", "grade": 4 },
         {
           "type": "prose",
           "heading": "What Grade 4 covers",
@@ -155,6 +157,7 @@
       "kind": "page",
       "hero": { "text": "Grade 5 English: three tenses, the texts of everyday life, and writing that is accurate on its own." },
       "blocks": [
+        { "type": "grade-dashboard", "grade": 5 },
         {
           "type": "prose",
           "heading": "What Grade 5 covers",

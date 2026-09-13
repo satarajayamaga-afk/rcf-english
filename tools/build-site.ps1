@@ -1586,6 +1586,64 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'grade-dashboard' {
+            # Everything a grade has, counted, at the top of the grade page. The
+            # counts come from the same records as the resource finder, so the
+            # number on a tile is exactly the number the tile's link shows. A
+            # tile with nothing behind it is left out rather than shown as a
+            # dead end, and no count is ever estimated.
+            $g = [int](P $block 'grade' 0)
+            if ($g -lt 1) { return '' }
+            $mine = @(FinderRecords | Where-Object { @($_.grades) -contains $g })
+            $count = { param($pred) @($mine | Where-Object $pred).Count }
+
+            # Things that live on this page rather than in the catalogue.
+            $grammar = 0
+            $grammarId = ''
+            $listeningTests = 0
+            $listeningId = ''
+            foreach ($b in (AsList $script:PageBlocks)) {
+                $bt = [string](P $b 'type')
+                if ($bt -eq 'activities') { $grammar += (AsList (P $b 'ids')).Count; if (-not $grammarId) { $grammarId = [string](P $b 'id') } }
+                if ($bt -eq 'listening' -and -not $listeningId) { $listeningId = [string](P $b 'id') }
+            }
+            if ($listeningId) { $listeningTests = @($listening | Where-Object { [int](P $_ 'grade' 0) -eq $g }).Count }
+
+            $finder = "resources/?grade=$g"
+            $tiles = @(
+                @{ label = 'Textbooks'; n = (& $count { $_.group -eq 'textbooks' }); href = "$finder&type=textbooks" },
+                @{ label = "Teacher's guides and plans"; n = (& $count { $_.group -eq 'guides' }); href = "$finder&type=guides" },
+                @{ label = 'First term'; n = (& $count { $_.term -eq 'first' }); href = "$finder&term=first" },
+                @{ label = 'Second term'; n = (& $count { $_.term -eq 'second' }); href = "$finder&term=second" },
+                @{ label = 'Third term'; n = (& $count { $_.term -eq 'third' }); href = "$finder&term=third" },
+                @{ label = 'Past and model papers'; n = (& $count { $_.group -eq 'papers' }); href = "$finder&type=papers" },
+                @{ label = 'Marking schemes and answers'; n = (& $count { $_.group -eq 'answers' }); href = "$finder&type=answers" },
+                @{ label = 'Study packs'; n = (& $count { $_.group -eq 'study-packs' }); href = "$finder&type=study-packs" },
+                @{ label = 'Practice activities'; n = $grammar; href = $(if ($grammarId) { "#$grammarId" } else { '' }); unit = 'activity' },
+                @{ label = 'Listening tests'; n = $listeningTests; href = $(if ($listeningId) { "#$listeningId" } else { '' }); unit = 'test' },
+                @{ label = 'RCF Publications'; n = (& $count { $_.access -eq 'premium' }); href = "$finder&access=premium"; unit = 'book' }
+            )
+
+            $html = (SectionOpen $block 'grade-dash') + '<div class="grade-dash__head">'
+            $html += '<div><span class="section__eyebrow">Grade ' + $g + ' at a glance</span>'
+            $html += '<h2 class="grade-dash__total"><span class="grade-dash__num">' + $mine.Count + '</span> resources available</h2></div>'
+            if ($mine.Count) { $html += '<a class="btn btn--accent" href="' + (E (Url $finder)) + '">See them all in the resource finder</a>' }
+            $html += '</div><ul class="grade-dash__tiles">'
+            foreach ($t in $tiles) {
+                if ($t.n -lt 1 -or -not $t.href) { continue }
+                $unit = 'resource'
+                if ($t.unit) { $unit = $t.unit }
+                $plural = $unit + 's'
+                if ($unit -eq 'activity') { $plural = 'activities' }
+                $noun = $(if ($t.n -eq 1) { $unit } else { $plural })
+                $href = $t.href
+                if ($href -notmatch '^#') { $href = Url $href }
+                $html += '<li><a class="grade-dash__tile" href="' + (E $href) + '"><span class="grade-dash__n">' + $t.n + '</span><span class="grade-dash__label">' + (E $t.label) + '</span><span class="visually-hidden">: ' + $t.n + ' ' + $noun + '</span></a></li>'
+            }
+            $html += '</ul>'
+            return $html + '</div></section>'
+        }
+
         'finder' {
             return (RenderFinder $block)
         }
@@ -1856,7 +1914,9 @@ function FinderRow($fields) {
     return [pscustomobject]$fields
 }
 
+$script:FinderCache = $null
 function FinderRecords() {
+    if ($null -ne $script:FinderCache) { return $script:FinderCache }
     $today = Get-Date
     $rows = New-Object System.Collections.ArrayList
 
@@ -1953,11 +2013,12 @@ function FinderRecords() {
     }
 
     $order = $script:FinderTypeOrder
-    return @($rows | Sort-Object `
+    $script:FinderCache = @($rows | Sort-Object `
         @{ Expression = { if (@($_.grades).Count) { @($_.grades)[0] } else { 99 } } },
         @{ Expression = { [array]::IndexOf($order, $_.group) } },
         @{ Expression = { $_.year }; Descending = $true },
         @{ Expression = { $_.title } })
+    return $script:FinderCache
 }
 
 function RenderFinder($block) {
@@ -3229,6 +3290,7 @@ function StructuredData($page, $canonical) {
 function BuildPage($page) {
     $slug = $page._slug
     $script:PageSlug = $slug
+    $script:PageBlocks = AsList (P $page 'blocks')
     if ((P $page 'flat') -eq $true) { $script:Root = '' } else { $script:Root = RootFor $slug }
     # The 404 page is served in place of any address, so its links must be
     # absolute - a relative link would be resolved against the missing address.

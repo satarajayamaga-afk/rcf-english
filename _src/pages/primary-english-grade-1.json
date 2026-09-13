@@ -33,6 +33,7 @@
       "backTo": { "label": "Primary English", "url": "primary-english/" },
       "hero": { "text": "Grade 1 English: the first words, the first sounds, and the first time a child hears that English is something you can play with." },
       "blocks": [
+        { "type": "grade-dashboard", "grade": 1 },
         {
           "type": "prose",
           "heading": "What Grade 1 covers",

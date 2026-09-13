@@ -3120,6 +3120,50 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 
 
 
+
+/* Grade dashboard ---------------------------------------------------------- */
+
+/* A count of everything a grade has, as a row of tiles at the top of the grade
+   page. Each tile is a link, to the resource finder with the right filters
+   already chosen, or to the section further down the same page. */
+.grade-dash { padding-block: var(--sp-5); background: var(--navy-050); border-bottom: 1px solid var(--line); }
+.grade-dash__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+.grade-dash__total { margin: 0.15rem 0 0; font-size: var(--step-2); color: var(--navy-800); }
+.grade-dash__num { color: var(--teal-700); }
+.grade-dash__tiles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: var(--sp-2);
+}
+.grade-dash__tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  height: 100%;
+  min-height: 44px;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #fff;
+  color: var(--ink-900);
+  text-decoration: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.grade-dash__tile:hover { border-color: var(--teal-600); box-shadow: 0 4px 12px rgba(15, 38, 71, 0.08); }
+.grade-dash__n { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; line-height: 1.1; color: var(--navy-800); }
+.grade-dash__label { font-size: var(--step--1); color: var(--ink-700); line-height: 1.3; }
+@media (prefers-reduced-motion: reduce) { .grade-dash__tile { transition: none; } }
+
 /* Resource finder ---------------------------------------------------------- */
 
 /* One search-and-filter panel over every resource, paper, listening set and
