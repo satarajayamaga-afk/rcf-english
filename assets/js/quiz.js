@@ -14,6 +14,19 @@
    one is useful, a running score and a reset button. Nothing is sent anywhere:
    no login, no accounts, no personal information, no cookies.
 
+   SUPPORT LEVELS (chosen by the student, remembered on the device)
+     guided     hints shown, instant feedback, and a "clue" button on each
+                question (removes two wrong choices, shows a first letter...)
+     standard   hints shown, instant feedback
+     challenge  no hints and no feedback until "Check my answers"
+   Questions (except reading questions, which follow the passage) and answer
+   choices are shuffled each time. "Try the wrong ones again" repeats only the
+   questions missed. "Print my result" prints a result sheet.
+
+   PROGRESS STARS are kept in this browser only (localStorage):
+     3 stars 90% or more, 2 stars 70% or more, 1 star 50% or more,
+   with the best result and the level it was earned at.
+
    Mount an activity with:  <div data-activity="grammar-tenses-1"></div>
    ========================================================================== */
 
@@ -59,16 +72,115 @@ function scoreNote(percent) {
   return "Read the lesson again, then start this activity a second time.";
 }
 
+/* --------------------------------------------------- levels and progress */
+
+const LEVELS = [
+  { key: "guided", label: "Guided", note: "Hints, instant feedback, and a clue button on every question." },
+  { key: "standard", label: "Standard", note: "Hints and instant feedback." },
+  { key: "challenge", label: "Challenge", note: "No hints. Nothing is marked until you select Check my answers." }
+];
+const LEVEL_KEY = "rcf-activity-level";
+const PROGRESS_KEY = "rcf-activity-progress";
+
+const store = {
+  get(key, fallback) {
+    try { const v = window.localStorage.getItem(key); return v == null ? fallback : v; } catch (e) { return fallback; }
+  },
+  set(key, value) {
+    try { window.localStorage.setItem(key, value); } catch (e) { /* not kept */ }
+  }
+};
+
+function currentLevel() {
+  const v = store.get(LEVEL_KEY, "standard");
+  return LEVELS.some((l) => l.key === v) ? v : "standard";
+}
+
+function readProgress() {
+  try { return JSON.parse(store.get(PROGRESS_KEY, "{}")) || {}; } catch (e) { return {}; }
+}
+
+function starsFor(percent) {
+  if (percent >= 90) return 3;
+  if (percent >= 70) return 2;
+  if (percent >= 50) return 1;
+  return 0;
+}
+
+function starText(n) {
+  return "★".repeat(n) + "☆".repeat(3 - n);
+}
+
+/* Only a full attempt counts towards stars: a retry of two missed questions
+   scoring 100% is not the same as the whole activity at 100%. */
+function recordResult(activity, percent, level) {
+  const all = readProgress();
+  const prev = all[activity.id] || { best: -1, stars: 0 };
+  const stars = starsFor(percent);
+  const rank = { guided: 0, standard: 1, challenge: 2 };
+  const better = percent > prev.best || (percent === prev.best && rank[level] > rank[prev.level || "guided"]);
+  if (better) {
+    all[activity.id] = { best: percent, stars, level, date: new Date().toISOString().slice(0, 10) };
+    store.set(PROGRESS_KEY, JSON.stringify(all));
+  }
+  return { stars, improved: better && percent > Math.max(prev.best, -1), prev };
+}
+
+/* Options such as "None of them" must stay last to make sense. */
+const FIXED_LAST = /^(none|all|both|neither)\b.*\b(them|these|those|above)$/i;
+
+/* A copy of the activity for one attempt: questions (and pairs) chosen,
+   ordered and with their answer choices shuffled. Every type's own code only
+   ever looks at this copy, so marking stays consistent with what is shown. */
+function prepare(activity, level, onlyOriginal) {
+  const copy = Object.assign({}, activity);
+  const keepOrder = activity.type === "reading";
+  const pick = (list) => {
+    let items = list.map((item, i) => Object.assign({}, item, { __orig: i }));
+    if (onlyOriginal) items = items.filter((item) => onlyOriginal.includes(item.__orig));
+    if (!keepOrder && level !== "guided") items = shuffle(items);
+    return items;
+  };
+  if (Array.isArray(activity.questions)) {
+    copy.questions = pick(activity.questions).map((q) => {
+      const out = Object.assign({}, q);
+      if (level === "challenge") delete out.hint;
+      if (Array.isArray(q.options)) {
+        const opts = q.options.map((text, i) => ({ text, i }));
+        const last = opts.filter((o) => FIXED_LAST.test(String(o.text).trim()));
+        const moving = shuffle(opts.filter((o) => !last.includes(o)));
+        const order = moving.concat(last);
+        out.options = order.map((o) => o.text);
+        out.answer = order.findIndex((o) => o.i === Number(q.answer));
+      }
+      return out;
+    });
+  }
+  if (Array.isArray(activity.pairs)) copy.pairs = pick(activity.pairs);
+  return copy;
+}
+
 /* --------------------------------------------------------------- shell */
 
-function shell(activity, bodyHtml, instructions) {
+function shell(activity, bodyHtml, instructions, state) {
   const id = esc(activity.id);
+  const level = state.level;
+  const progress = readProgress()[activity.id];
+  const levelButtons = LEVELS.map(
+    (l) => `<button type="button" class="activity__level-btn${l.key === level ? " is-on" : ""}" data-level="${l.key}" aria-pressed="${l.key === level}">${l.label}</button>`
+  ).join("");
+  const levelNote = (LEVELS.find((l) => l.key === level) || LEVELS[1]).note;
   return `
-    <section class="activity" id="activity-${id}" data-activity-id="${id}">
+    <section class="activity activity--${level}" id="activity-${id}" data-activity-id="${id}" data-level="${level}">
       <header class="activity__head">
         <h3 id="activity-${id}-title">${esc(activity.title)}</h3>
         ${activity.description ? `<p>${esc(activity.description)}</p>` : ""}
         <p class="activity__instructions"><strong>What to do:</strong> ${esc(instructions)}</p>
+        <div class="activity__tools">
+          <div class="activity__levels" role="group" aria-label="Support level">${levelButtons}</div>
+          <p class="activity__stars" data-stars>${progress ? `<span aria-hidden="true">${starText(progress.stars)}</span> <span>Best ${progress.best}% (${esc(progress.level)})</span>` : "Not tried on this device yet"}</p>
+        </div>
+        <p class="activity__level-note">${esc(levelNote)}${state.retry ? ` <strong>Repeating the ${state.retry} ${state.retry === 1 ? "question" : "questions"} you missed.</strong>` : ""}</p>
       </header>
       <div class="activity__body">${bodyHtml}</div>
       <footer class="activity__foot">
@@ -77,10 +189,178 @@ function shell(activity, bodyHtml, instructions) {
           <span class="score__note"></span>
         </p>
         <button type="button" class="btn btn--sm btn--accent" data-check>Check my answers</button>
+        <button type="button" class="btn btn--sm btn--outline" data-retry-wrong hidden>Try the wrong ones again</button>
+        <span class="activity__print" data-print-wrap hidden>
+          <label>Name for the printout <input type="text" data-result-name autocomplete="name" maxlength="60"></label>
+          <button type="button" class="btn btn--sm btn--outline" data-print-result>Print my result</button>
+        </span>
         <button type="button" class="btn btn--sm btn--outline" data-reset>${RESET_LABEL}</button>
       </footer>
       <p class="visually-hidden" role="status" aria-live="polite" data-live></p>
     </section>`;
+}
+
+/* -------------------------------------------------------------- clues */
+
+/* Guided level only. Each clue can be used once per question. */
+function addClues(root, activity) {
+  const t = activity.type;
+  if (t === "mcq" || t === "reading" || t === "gap" || t === "error" || t === "order") {
+    root.querySelectorAll(".q").forEach((q) => {
+      const index = Number(q.dataset.question);
+      const question = activity.questions[index];
+      const label =
+        t === "gap" ? "Clue: first letter" :
+        t === "error" ? "Clue: which word is wrong?" :
+        t === "order" ? "Clue: place the first part" :
+        "Clue: remove two wrong answers";
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "activity__clue";
+      btn.textContent = label;
+      const out = document.createElement("span");
+      out.className = "activity__clue-out";
+      btn.addEventListener("click", () => {
+        btn.disabled = true;
+        if (t === "mcq" || t === "reading") {
+          const wrong = shuffle(Array.from(q.querySelectorAll(".option")).filter((o) => Number(o.dataset.option) !== question.answer)).slice(0, 2);
+          wrong.forEach((o) => { o.classList.add("is-removed"); o.querySelector("input").disabled = true; });
+          out.textContent = "Two wrong answers have been removed.";
+        } else if (t === "gap") {
+          const answer = String(Array.isArray(question.answer) ? question.answer[0] : question.answer);
+          out.textContent = `It begins with “${answer.charAt(0)}” and has ${answer.length} letters.`;
+        } else if (t === "error") {
+          const answer = String(Array.isArray(question.answer) ? question.answer[0] : question.answer);
+          const a = normalise(question.sentence).split(" ");
+          const b = normalise(answer).split(" ");
+          let i = 0;
+          while (i < a.length && i < b.length && a[i] === b[i]) i++;
+          out.textContent = i < a.length ? `Look closely at “${question.sentence.split(/\s+/)[i] || a[i]}”.` : "Look closely at the end of the sentence.";
+        } else if (t === "order") {
+          const list = q.querySelector("[data-order]");
+          const first = list.querySelector('li[data-index="0"]');
+          if (first) { list.insertBefore(first, list.firstElementChild); refreshOrderButtons(list); }
+          out.textContent = "The first part is now in place.";
+        }
+        announce(root.querySelector("[data-live]"), out.textContent);
+      });
+      const where = q.querySelector("[data-feedback]");
+      const wrap = document.createElement("p");
+      wrap.className = "activity__clue-row";
+      wrap.append(btn, out);
+      q.insertBefore(wrap, where);
+    });
+  }
+  if (t === "match") {
+    const foot = root.querySelector(".match-grid");
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "activity__clue";
+    btn.textContent = "Clue: fill in one match";
+    btn.addEventListener("click", () => {
+      const rows = Array.from(root.querySelectorAll(".match-row")).filter((row) => Number(row.querySelector("select").value) !== Number(row.dataset.question) || row.querySelector("select").value === "");
+      if (!rows.length) { btn.disabled = true; return; }
+      const row = rows[0];
+      const select = row.querySelector("select");
+      select.value = String(row.dataset.question);
+      select.dispatchEvent(new Event("change"));
+      select.disabled = true;
+      if (rows.length === 1) btn.disabled = true;
+    });
+    const wrap = document.createElement("p");
+    wrap.className = "activity__clue-row";
+    wrap.append(btn);
+    foot.after(wrap);
+  }
+}
+
+/* ------------------------------------------------------------ results */
+
+function wrongOriginals(root, activity) {
+  const t = activity.type;
+  const out = [];
+  if (t === "match") {
+    root.querySelectorAll(".match-row").forEach((row) => {
+      const i = Number(row.dataset.question);
+      const s = row.querySelector("[data-match]");
+      if (s.value === "" || Number(s.value) !== i) out.push(activity.pairs[i].__orig);
+    });
+    return out;
+  }
+  root.querySelectorAll(".q").forEach((q) => {
+    const i = Number(q.dataset.question);
+    const question = activity.questions[i];
+    let right = false;
+    if (t === "mcq" || t === "reading") {
+      const c = q.querySelector("input:checked");
+      right = Boolean(c) && Number(c.value) === question.answer;
+    } else if (t === "gap") {
+      right = accepts(question.answer).includes(normalise(q.querySelector(".gap-input").value));
+    } else if (t === "error") {
+      right = accepts(question.answer).includes(normalise(q.querySelector("[data-answer]").value));
+    } else if (t === "order") {
+      right = Array.prototype.every.call(q.querySelector("[data-order]").children, (li, k) => Number(li.dataset.index) === k);
+    }
+    if (!right) out.push(question.__orig);
+  });
+  return out;
+}
+
+function resultRows(root, activity) {
+  const t = activity.type;
+  if (t === "match") {
+    return Array.from(root.querySelectorAll(".match-row")).map((row) => {
+      const i = Number(row.dataset.question);
+      const s = row.querySelector("[data-match]");
+      const given = s.value === "" ? "(no answer)" : s.options[s.selectedIndex].text;
+      return { q: activity.pairs[i].term, given, correct: activity.pairs[i].meaning, right: s.value !== "" && Number(s.value) === i };
+    });
+  }
+  return Array.from(root.querySelectorAll(".q")).map((q) => {
+    const i = Number(q.dataset.question);
+    const question = activity.questions[i];
+    if (t === "mcq" || t === "reading") {
+      const c = q.querySelector("input:checked");
+      return { q: question.prompt, given: c ? question.options[Number(c.value)] : "(no answer)", correct: question.options[question.answer], right: Boolean(c) && Number(c.value) === question.answer };
+    }
+    if (t === "gap" || t === "error") {
+      const input = q.querySelector(".gap-input, [data-answer]");
+      const answer = Array.isArray(question.answer) ? question.answer[0] : question.answer;
+      return { q: question.sentence, given: input.value.trim() || "(no answer)", correct: answer, right: accepts(question.answer).includes(normalise(input.value)) };
+    }
+    const list = q.querySelector("[data-order]");
+    const given = Array.prototype.map.call(list.children, (li) => li.querySelector(".order-list__text").textContent).join(" ");
+    return { q: question.prompt, given, correct: question.parts.join(" "), right: Array.prototype.every.call(list.children, (li, k) => Number(li.dataset.index) === k) };
+  });
+}
+
+function printResult(root, activity, state, correct, total) {
+  const percent = total ? Math.round((correct / total) * 100) : 0;
+  const rows = resultRows(root, activity);
+  const levelLabel = (LEVELS.find((l) => l.key === state.level) || {}).label || "";
+  const nameInput = root.querySelector("[data-result-name]");
+  const name = nameInput ? nameInput.value.trim() : "";
+  const sheet = document.createElement("div");
+  sheet.className = "qprint";
+  sheet.innerHTML = `
+    <p class="qprint__brand">RCF English · Activity result</p>
+    <h1>${esc(activity.title)}</h1>
+    <p>${name ? `Name: <strong>${esc(name)}</strong> · ` : ""}Date: ${esc(new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }))} · Level: ${esc(levelLabel)}${state.retry ? " (repeat of missed questions)" : ""}</p>
+    <p class="qprint__score">Score: <strong>${correct} / ${total}</strong> (${percent}%) ${state.retry ? "" : `<span aria-hidden="true">${starText(starsFor(percent))}</span>`}</p>
+    <table><thead><tr><th>#</th><th>Question</th><th>Answer given</th><th>Correct answer</th><th></th></tr></thead><tbody>
+    ${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.q)}</td><td>${esc(r.given)}</td><td>${esc(r.correct)}</td><td>${r.right ? "✓" : "✗"}</td></tr>`).join("")}
+    </tbody></table>
+    <p class="qprint__foot">rcfenglish.com · Results are not stored anywhere except on the device used.</p>`;
+  document.body.appendChild(sheet);
+  document.documentElement.classList.add("is-printing-result");
+  const done = () => {
+    document.documentElement.classList.remove("is-printing-result");
+    sheet.remove();
+    window.removeEventListener("afterprint", done);
+  };
+  window.addEventListener("afterprint", done);
+  window.print();
+  window.setTimeout(() => document.addEventListener("pointerdown", done, { once: true }), 1000);
 }
 
 /* ---------------------------------------------------------------- types */
@@ -118,6 +398,7 @@ const TYPES = {
     wire(root, activity) {
       root.querySelectorAll('input[type="radio"]').forEach((input) => {
         input.addEventListener("change", () => {
+          if (root.dataset.level === "challenge") return;
           const fieldset = input.closest(".q");
           mark(fieldset, activity, Number(fieldset.dataset.question));
           updateScore(root, activity);
@@ -190,6 +471,7 @@ const TYPES = {
     wire(root, activity) {
       root.querySelectorAll(".gap-input").forEach((input) => {
         input.addEventListener("blur", () => {
+          if (root.dataset.level === "challenge") return;
           if (input.value.trim()) {
             markGap(input.closest(".q"), activity);
             updateScore(root, activity);
@@ -326,6 +608,7 @@ const TYPES = {
     wire(root, activity) {
       root.querySelectorAll("[data-match]").forEach((select) => {
         select.addEventListener("change", () => {
+          if (root.dataset.level === "challenge") return;
           const row = select.closest(".match-row");
           const index = Number(row.dataset.question);
           if (select.value === "") {
@@ -393,6 +676,7 @@ const TYPES = {
           }
         });
         input.addEventListener("blur", () => {
+          if (root.dataset.level === "challenge") return;
           if (input.value.trim()) {
             markError(input.closest(".q"), activity);
             updateScore(root, activity);
@@ -528,34 +812,102 @@ function updateScore(root, activity) {
 
 /* ------------------------------------------------------------- mounting */
 
-function mount(node, activity) {
-  const type = TYPES[activity.type];
+function mount(node, source, options) {
+  const type = TYPES[source.type];
   if (!type) {
     node.innerHTML = `<div class="callout callout--warn"><p class="mb-0">This activity type (“${esc(
-      activity.type
+      source.type
     )}”) is not recognised.</p></div>`;
     return;
   }
 
-  node.innerHTML = shell(activity, type.render(activity), activity.instructions || type.instructions);
+  const opts = options || {};
+  const state = { level: opts.level || currentLevel(), retry: opts.only ? opts.only.length : 0 };
+  const activity = prepare(source, state.level, opts.only);
+
+  node.innerHTML = shell(activity, type.render(activity), activity.instructions || type.instructions, state);
   const root = node.querySelector(".activity");
   type.wire(root, activity);
+  if (state.level === "guided") addClues(root, activity);
 
-  root.querySelector("[data-check]").addEventListener("click", () => {
-    type.check(root, activity);
-    updateScore(root, activity);
-    const first = root.querySelector('[data-feedback]:not([hidden])');
-    if (first) first.scrollIntoView({ block: "nearest" });
-  });
-
-  root.querySelector("[data-reset]").addEventListener("click", () => {
-    mount(node, activity);
+  const focusHeading = () => {
     const heading = node.querySelector(".activity__head h3");
     if (heading) {
       heading.setAttribute("tabindex", "-1");
       heading.focus();
     }
+  };
+
+  root.querySelectorAll(".activity__level-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (btn.dataset.level === state.level) return;
+      store.set(LEVEL_KEY, btn.dataset.level);
+      mount(node, source, { level: btn.dataset.level });
+      const again = node.querySelector(`.activity__level-btn[data-level="${btn.dataset.level}"]`);
+      if (again) again.focus();
+    });
   });
+
+  root.querySelector("[data-check]").addEventListener("click", () => {
+    type.check(root, activity);
+    updateScore(root, activity);
+
+    const total = type.total(activity);
+    const correct = type.correct(root, activity);
+    const percent = total ? Math.round((correct / total) * 100) : 0;
+    const note = root.querySelector(".score__note");
+    if (!state.retry) {
+      const result = recordResult(source, percent, state.level);
+      const best = readProgress()[source.id];
+      const stars = root.querySelector("[data-stars]");
+      if (best && stars) stars.innerHTML = `<span aria-hidden="true">${starText(best.stars)}</span> <span>Best ${best.best}% (${esc(best.level)})</span>`;
+      if (note) {
+        const earned = result.stars
+          ? ` You earned ${result.stars} ${result.stars === 1 ? "star" : "stars"}${result.improved && result.prev.best >= 0 ? ", a new best" : ""}.`
+          : "";
+        note.textContent += earned;
+      }
+    } else if (note) {
+      note.textContent += " (Repeat of missed questions: stars are awarded for a full attempt.)";
+    }
+
+    const wrong = wrongOriginals(root, activity);
+    const retryBtn = root.querySelector("[data-retry-wrong]");
+    retryBtn.hidden = wrong.length === 0 || wrong.length === total || (source.type === "match" && wrong.length < 2);
+    retryBtn.textContent = `Try the ${wrong.length === 1 ? "wrong one" : `${wrong.length} wrong ones`} again`;
+    retryBtn.onclick = () => { mount(node, source, { level: state.level, only: wrong }); focusHeading(); };
+
+    root.querySelector("[data-print-wrap]").hidden = false;
+    root.querySelector("[data-print-result]").onclick = () => printResult(root, activity, state, correct, total);
+
+    announce(root.querySelector("[data-live]"), `Score: ${correct} out of ${total}.`);
+    const first = root.querySelector('[data-feedback]:not([hidden])');
+    if (first) first.scrollIntoView({ block: "nearest" });
+  });
+
+  root.querySelector("[data-reset]").addEventListener("click", () => {
+    mount(node, source, { level: state.level });
+    focusHeading();
+  });
+}
+
+/* A short line above the first activity on a page with several: the stars
+   earned on this page, on this device. */
+function pageProgress(mountsOnPage, activities) {
+  if (mountsOnPage.length < 2) return;
+  const ids = mountsOnPage.map((n) => n.getAttribute("data-activity")).filter((id) => activities.has(id));
+  const bar = document.createElement("p");
+  bar.className = "activity-progress";
+  bar.setAttribute("role", "status");
+  const paint = () => {
+    const p = readProgress();
+    const stars = ids.reduce((sum, id) => sum + ((p[id] && p[id].stars) || 0), 0);
+    const done = ids.filter((id) => p[id]).length;
+    bar.innerHTML = `<span aria-hidden="true">★</span> <strong>${stars} of ${ids.length * 3} stars</strong> on this page · ${done} of ${ids.length} activities tried <span class="text-muted">(saved on this device only)</span>`;
+  };
+  paint();
+  mountsOnPage[0].before(bar);
+  document.addEventListener("click", (e) => { if (e.target.closest("[data-check]")) setTimeout(paint, 0); });
 }
 
 const mounts = Array.prototype.slice.call(document.querySelectorAll("[data-activity]"));
@@ -570,5 +922,6 @@ if (mounts.length) {
         node.innerHTML = `<div class="callout callout--note"><p class="mb-0">This activity has not been added yet.</p></div>`;
       }
     });
+    pageProgress(mounts.filter((n) => byId.has(n.getAttribute("data-activity"))), byId);
   });
 }
