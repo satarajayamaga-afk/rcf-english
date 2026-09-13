@@ -63,6 +63,77 @@
 
   "blocks": [
     {
+      "type": "pathways",
+      "id": "start-here",
+      "heading": "Start here",
+      "eyebrow": "Choose the route that fits you",
+      "items": [
+        {
+          "title": "I am a Primary Student",
+          "sub": "Grades 1 to 5",
+          "icon": "🎒",
+          "style": "primary",
+          "url": "primary-english/",
+          "more": "Go to Primary English",
+          "links": [
+            { "label": "Grade 1", "url": "primary-english/grade-1/", "note": "The themes of the Activity Based Oral English syllabus" },
+            { "label": "Watch and Write the alphabet", "url": "primary-english/alphabet/watch-and-write/", "note": "See each letter written, then trace it" },
+            { "label": "Songs for Grade 2", "url": "primary-english/songs/", "note": "Sing along with the words lighting up" },
+            { "label": "Grades 3, 4 and 5", "url": "primary-english/grade-3/", "note": "Following the NIE primary syllabus" },
+            { "label": "Games and activities", "url": "primary-english/games/" }
+          ]
+        },
+        {
+          "title": "I am a Secondary Student",
+          "sub": "Grades 6 to 11",
+          "icon": "📘",
+          "style": "secondary",
+          "url": "grades/",
+          "more": "Choose your grade",
+          "links": [
+            { "label": "Grade 6", "url": "grades/grade-6/" },
+            { "label": "Grade 7", "url": "grades/grade-7/" },
+            { "label": "Grade 8", "url": "grades/grade-8/" },
+            { "label": "Grade 9", "url": "grades/grade-9/" },
+            { "label": "Grade 10", "url": "grades/grade-10/" },
+            { "label": "Grade 11", "url": "grades/grade-11/" },
+            { "label": "Listening Laboratory", "url": "listening-lab/", "note": "Thirty listening tests that mark themselves" }
+          ]
+        },
+        {
+          "title": "I am an English Teacher",
+          "sub": "Lessons, papers and training",
+          "icon": "✏️",
+          "style": "teacher",
+          "url": "teacher-resources/",
+          "more": "Go to Teacher Resources",
+          "links": [
+            { "label": "Lesson plans", "url": "teacher-resources/lesson-plans/" },
+            { "label": "Marking guides", "url": "teacher-resources/marking-guides/" },
+            { "label": "Remedial and slow-learner support", "url": "teacher-resources/remedial-english/" },
+            { "label": "Teacher resources in the finder", "url": "resources/?for=teacher", "note": "Guides, plans and papers by grade" },
+            { "label": "TKT preparation course", "url": "rcf-classes/tkt/" }
+          ]
+        },
+        {
+          "title": "I am Preparing for O/L or A/L",
+          "sub": "Examination revision",
+          "icon": "🎓",
+          "style": "exam",
+          "url": "past-papers/",
+          "more": "Browse past papers",
+          "links": [
+            { "label": "O/L English", "url": "ol-english/" },
+            { "label": "O/L Literature", "url": "ol-literature/" },
+            { "label": "A/L General English", "url": "general-english/" },
+            { "label": "A/L Literature", "url": "al-literature/" },
+            { "label": "How to use past papers well", "url": "past-papers/how-to-use/" }
+          ]
+        }
+      ]
+    },
+
+    {
       "type": "destinations",
       "heading": "Paid materials and opportunities",
       "eyebrow": "Books, resources and offers",

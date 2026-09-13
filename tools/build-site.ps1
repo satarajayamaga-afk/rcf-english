@@ -1586,6 +1586,35 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'pathways' {
+            # "Start here": a few big, plain routes for visitors who would
+            # rather not open a large menu, especially on a phone. Each route
+            # is a <details> so a phone shows four tiles and opens only the one
+            # tapped; on a wide screen nav.js opens them all.
+            $html = (SectionOpen $block 'pathways') + (SectionHead $block)
+            $html += '<ul class="pathways__grid">'
+            foreach ($r in (AsList (P $block 'items'))) {
+                $style = [string](P $r 'style' '')
+                $html += '<li><details class="pathway' + $(if ($style) { ' pathway--' + (E $style) } else { '' }) + '" data-pathway>'
+                $html += '<summary class="pathway__summary">'
+                if (P $r 'icon') { $html += '<span class="pathway__icon" aria-hidden="true">' + (E (P $r 'icon')) + '</span>' }
+                $html += '<span class="pathway__text"><span class="pathway__title">' + (E (P $r 'title')) + '</span>'
+                if (P $r 'sub') { $html += '<span class="pathway__sub">' + (E (P $r 'sub')) + '</span>' }
+                $html += '</span><span class="pathway__chev" aria-hidden="true"></span></summary>'
+                $html += '<div class="pathway__body"><ul class="pathway__links">'
+                foreach ($l in (AsList (P $r 'links'))) {
+                    $html += '<li><a href="' + (E (Url (P $l 'url'))) + '">' + (E (P $l 'label')) + '</a>'
+                    if (P $l 'note') { $html += '<span class="pathway__note">' + (E (P $l 'note')) + '</span>' }
+                    $html += '</li>'
+                }
+                $html += '</ul>'
+                if (P $r 'url') { $html += '<a class="btn btn--sm btn--accent pathway__main" href="' + (E (Url (P $r 'url'))) + '">' + (E (P $r 'more' 'Start here')) + '</a>' }
+                $html += '</div></details></li>'
+            }
+            $html += '</ul>'
+            return $html + '</div></section>'
+        }
+
         'listening-lab' {
             # Every listening test in one place, chosen by grade or level and
             # opened on this page. Without JavaScript each card links to the

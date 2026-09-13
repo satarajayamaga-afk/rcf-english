@@ -329,3 +329,14 @@
     }
   });
 })();
+
+/* "Start here" routes on the home page. A phone shows four closed tiles and
+   opens the one tapped; a wide screen has room for all four, so they start
+   open. Nothing is lost without the script: every route still opens by tap. */
+(function () {
+  var routes = document.querySelectorAll("[data-pathway]");
+  if (!routes.length || !window.matchMedia) return;
+  if (window.matchMedia("(min-width: 900px)").matches) {
+    Array.prototype.forEach.call(routes, function (d) { d.open = true; });
+  }
+})();

@@ -3174,6 +3174,75 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .grade-dash__label { font-size: var(--step--1); color: var(--ink-700); line-height: 1.3; }
 @media (prefers-reduced-motion: reduce) { .grade-dash__tile { transition: none; } }
 
+/* Start here routes --------------------------------------------------------- */
+.pathways__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+  gap: var(--sp-3);
+  align-items: start;
+}
+.pathway {
+  --route: var(--navy-800);
+  --route-tint: var(--navy-050);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--route);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 2px 10px rgba(15, 38, 71, 0.05);
+}
+.pathway--primary { --route: #0e7c66; --route-tint: #eaf6f2; }
+.pathway--secondary { --route: #1f5fa8; --route-tint: #ecf3fb; }
+.pathway--teacher { --route: #8a5a12; --route-tint: #fbf3e4; }
+.pathway--exam { --route: #7a2a4f; --route-tint: #f8edf2; }
+.pathway__summary {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-height: 4.25rem;
+  padding: var(--sp-3) var(--sp-4);
+  cursor: pointer;
+  list-style: none;
+  border-radius: var(--radius-md);
+}
+.pathway__summary::-webkit-details-marker { display: none; }
+.pathway__summary:hover { background: var(--route-tint); }
+.pathway__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--route-tint);
+  font-size: 1.45rem;
+  line-height: 1;
+}
+.pathway__text { flex: 1; display: grid; gap: 0.1rem; }
+.pathway__title { font-family: var(--font-head); font-weight: 700; font-size: var(--step-1); color: var(--route); line-height: 1.2; }
+.pathway__sub { font-size: var(--step--1); color: var(--ink-700); }
+.pathway__chev {
+  flex: none;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-right: 2px solid var(--route);
+  border-bottom: 2px solid var(--route);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  margin-right: 0.25rem;
+}
+.pathway[open] .pathway__chev { transform: rotate(-135deg); }
+.pathway__body { padding: 0 var(--sp-4) var(--sp-4); }
+.pathway__links { list-style: none; margin: 0 0 var(--sp-3); padding: 0; }
+.pathway__links li { padding: 0.45rem 0; border-top: 1px solid var(--line); }
+.pathway__links a { font-weight: 650; color: var(--route); text-decoration: none; }
+.pathway__links a:hover, .pathway__links a:focus-visible { text-decoration: underline; }
+.pathway__note { display: block; font-size: 0.82rem; color: var(--ink-700); }
+.pathway__main { background: var(--route); border-color: var(--route); color: #fff; }
+@media (prefers-reduced-motion: reduce) { .pathway__chev { transition: none; } }
+
 /* Resource finder ---------------------------------------------------------- */
 
 /* One search-and-filter panel over every resource, paper, listening set and
