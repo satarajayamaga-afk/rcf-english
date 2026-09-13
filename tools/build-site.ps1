@@ -2464,6 +2464,17 @@ function PaperCard($r) {
     if ($target -match '^http://') {
         $html += '<span class="tag tag--http" title="This official government site is served over plain HTTP, not HTTPS. The link still works; the connection to that site is not encrypted.">Official site, no HTTPS</span>'
     }
+    if ([string](P $r 'medium') -eq 'english') { $html += '<span class="tag">English medium</span>' }
+    # Only where the Drive link was actually opened without signing in.
+    if ([string](P $r 'sourceChecked') -eq 'drive-link-verified-anonymously') {
+        $html += '<span class="tag tag--checked" title="This Google Drive link was opened without signing in and the file was there.">Link checked</span>'
+    }
+    # "added" is optional. Without a recorded date nothing is called new.
+    $added = [string](P $r 'added' '')
+    $addedOn = [datetime]::MinValue
+    if ($added -and [datetime]::TryParse($added, [ref]$addedOn) -and ((Get-Date) - $addedOn).TotalDays -le 30) {
+        $html += '<span class="tag tag--new">Newly added</span>'
+    }
     $html += '</div>'
 
     $html += '<h4 class="paper-card__title">' + (E (P $r 'title' 'Untitled paper')) + '</h4>'

@@ -61,6 +61,8 @@
                     "   markingScheme  address of the marking scheme, if there is one",
                     "   related        [\"id-of-another-paper\"]",
                     "   published      false hides the record without deleting it",
+                    "   added          the date the paper was published here, e.g. 2026-09-13.",
+                    "                  It shows as Newly added for 30 days. Leave it out if unknown.",
                     "",
                     "THE \u0027CLEAR SCAN\u0027 LABEL - DO NOT SET IT WITHOUT LOOKING",
                     "  Set \"clearScan\": \"yes\" ONLY after somebody has actually looked at the",

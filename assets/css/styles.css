@@ -1941,6 +1941,8 @@ a:hover { color: var(--teal-700); }
 .tag--answers { background: var(--ok-100); border-color: #b6ded2; color: var(--ok-700); }
 /* Only on papers whose first page a person has actually looked at. */
 .tag--clear { background: var(--navy-100); border-color: #c3d2e6; color: var(--navy-700); }
+.tag--checked { background: var(--teal-050); border-color: #bfe3d8; color: var(--teal-700); }
+.tag--new { background: var(--gold-100); border-color: #ecd4a2; color: var(--gold-800); }
 
 /* Numbered feature list, e.g. the five-stage learning approach */
 .steps { list-style: none; margin: 0; padding: 0; counter-reset: step; display: grid; gap: var(--sp-4); }
