@@ -45,7 +45,8 @@ function competencyOf(a) {
 }
 
 function topicName(a) {
-  return String(a.title).replace(/^Grade \d+:\s*/i, "");
+  const t = String(a.title).replace(/^Grade \d+:\s*/i, "");
+  return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
 function shuffle(list) {

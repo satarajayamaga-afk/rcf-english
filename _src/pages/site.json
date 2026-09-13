@@ -113,6 +113,37 @@
     },
 
     {
+      "slug": "writing-practice",
+      "title": "Writing Practice",
+      "metaTitle": "English Writing Practice with a Checklist: Notices, Letters, Emails, Essays, Reports | RCF English",
+      "description": "Type your answer to an English writing task and check it: word count, paragraphs, capital letters, repeated words, linking words and the format of letters, notices and emails, with a self-check checklist and a printout for your teacher.",
+      "keywords": "English writing practice, O/L essay practice, letter writing practice, notice writing, A/L General English writing, writing checklist",
+      "kicker": "Interactive learning",
+      "kind": "page",
+      "scripts": ["writing-practice"],
+      "breadcrumbs": [{ "label": "Interactive Learning", "url": "interactive/" }],
+      "hero": { "text": "Choose a task, write your answer, then check it. The website points out things a computer can check; your teacher marks what matters most: your ideas and your English." },
+      "blocks": [
+        {
+          "type": "app",
+          "mount": "writing",
+          "heading": "Write and check",
+          "noscript": "Writing practice needs JavaScript. You can still use the guides to [guided writing](ol-english/guided-writing/) and [essay writing](ol-english/essay-writing/)."
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to use the checks well",
+          "bullets": [
+            "Write the whole answer first, without checking. Then check it once, fix what it shows, and read it through yourself.",
+            "A tick from the website does not mean the answer is good. It means those simple things are in place.",
+            "Print your answer with the checklist and give it to your teacher. Their marking is the one that counts."
+          ]
+        }
+      ]
+    },
+
+    {
       "slug": "interactive",
       "title": "Interactive Learning",
       "description": "Free interactive English practice: grammar quizzes, fill-in-the-blank, sentence ordering, vocabulary matching, reading comprehension, literature terms and error correction.",

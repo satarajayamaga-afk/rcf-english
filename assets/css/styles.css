@@ -4670,3 +4670,36 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
   .is-printing-ws .ws__page { border: 0; box-shadow: none; padding: 0; margin: 0; }
   .is-printing-ws .ws__page--key { break-before: page; }
 }
+
+/* --- writing practice */
+.wp { display: grid; gap: var(--sp-3); max-width: 52rem; }
+.wp__choose { max-width: 26rem; margin: 0; }
+.wp__task { padding: var(--sp-3) var(--sp-4); border-left: 4px solid var(--teal-600); background: var(--teal-050); border-radius: var(--radius-sm); }
+.wp__task p { margin: 0; }
+.wp__level { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--teal-700); margin-bottom: 0.25rem !important; }
+.wp__write, .wp__own { margin: 0; }
+.wp__write textarea, .wp__own textarea { width: 100%; font: inherit; font-size: 1.05rem; line-height: 1.7; padding: var(--sp-3); }
+.wp__counts { margin: 0; font-weight: 650; color: var(--navy-700); }
+.wp__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; }
+.wp__panel { padding: var(--sp-4); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
+.wp__panel h3 { margin: 0 0 var(--sp-1); color: var(--navy-800); }
+.wp__notes, .wp__checklist { list-style: none; margin: var(--sp-2) 0 0; padding: 0; display: grid; gap: var(--sp-2); }
+.wp__note { display: flex; gap: 0.6rem; align-items: flex-start; }
+.wp__icon { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 0.85rem; }
+.wp__note--ok .wp__icon { background: #e3f4ec; color: #0b5e4c; }
+.wp__note--fix .wp__icon { background: #fdf0d8; color: #7a4d00; }
+.wp__checklist label { display: flex; gap: 0.5rem; align-items: flex-start; }
+.wp__checklist input { margin-top: 0.35rem; }
+.wp-print { display: none; }
+@media print {
+  .is-printing-writing body * { visibility: hidden; }
+  .is-printing-writing .wp-print, .is-printing-writing .wp-print * { visibility: visible; }
+  .is-printing-writing .wp-print { display: block; position: absolute; left: 0; top: 0; width: 100%; color: #000; font-size: 11pt; }
+  .is-printing-writing .reading-tools, .is-printing-writing .to-top { display: none !important; }
+  .wp-print h1 { font-size: 16pt; margin: 2pt 0 6pt; }
+  .wp-print__brand { font-size: 8.5pt; text-transform: uppercase; margin: 0; }
+  .wp-print__answer { border: 0.6pt solid #666; padding: 8pt; margin: 8pt 0; line-height: 1.9; }
+  .wp-print__table { width: 100%; border-collapse: collapse; }
+  .wp-print__table th, .wp-print__table td { border: 0.6pt solid #666; padding: 6pt; text-align: left; height: 22pt; }
+  .wp-print__foot { margin-top: 10pt; }
+}
