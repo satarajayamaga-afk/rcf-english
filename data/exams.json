@@ -1,0 +1,24 @@
+{
+  "_readme": [
+    "EXAMINATION DATES FOR THE COUNTDOWN",
+    "",
+    "Fill in 'date' ONLY when the Department of Examinations has officially",
+    "announced the start of that examination, and put the address of the",
+    "announcement in 'source'. Never estimate a date from earlier years.",
+    "",
+    "While 'date' is empty the countdown says the date has not been announced",
+    "and lets the student enter their own date, which is kept on their device.",
+    "",
+    "   id       ol | al",
+    "   name     what the visitor sees",
+    "   year     the examination year, e.g. 2026",
+    "   date     YYYY-MM-DD, the first day of the examination",
+    "   source   the official announcement (required when date is set)",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+  "exams": [
+    { "id": "ol", "name": "G.C.E. Ordinary Level examination", "year": "", "date": "", "source": "" },
+    { "id": "al", "name": "G.C.E. Advanced Level examination", "year": "", "date": "", "source": "" }
+  ]
+}

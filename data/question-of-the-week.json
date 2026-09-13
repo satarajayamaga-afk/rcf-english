@@ -1,0 +1,250 @@
+{
+  "_readme": [
+    "QUESTION OF THE WEEK",
+    "",
+    "Each entry is shown for the week beginning on its 'week' date (a Monday).",
+    "When the last entry's week is over, the most recent entry stays up until a",
+    "new one is added, and earlier ones appear under 'Earlier questions'.",
+    "",
+    "Every question, passage, poem and model answer here must be written by",
+    "RCF English. Do not copy questions from official or other papers. The",
+    "marking notes explain what earns credit; they are NOT the official",
+    "marking scheme and must never be described as one.",
+    "",
+    "   week      YYYY-MM-DD, a Monday",
+    "   level     ol | al",
+    "   subject   e.g. O/L English, A/L General English, O/L Literature",
+    "   skill     e.g. Writing a notice",
+    "   title     short heading",
+    "   question  paragraphs (markdown: **bold**, *italic*)",
+    "   passage   optional paragraphs shown in a box before the question",
+    "   answer    the model answer, paragraphs",
+    "   notes     marking notes: what earns credit and common mistakes",
+    "",
+    "After editing this file, run build.cmd."
+  ],
+  "questions": [
+    {
+      "week": "2026-09-14",
+      "level": "ol",
+      "subject": "O/L English",
+      "skill": "Writing a notice",
+      "title": "A notice for a tree-planting day",
+      "question": [
+        "Your school Environment Society is organising a tree-planting day. As its secretary, write a **notice** of about **50 words** for the school notice board.",
+        "Include: the purpose, the date, time and place, what students should bring, and whom to contact."
+      ],
+      "answer": [
+        "**NOTICE**",
+        "**Environment Society, [School name]**",
+        "**Tree-Planting Day**",
+        "Help us make our school greener! The Environment Society will plant fifty saplings along the school boundary on Saturday, 3rd October, from 8.00 a.m. to 11.00 a.m. Please meet at the main gate. Bring a water bottle, a cap and a small garden tool if you have one.",
+        "Contact: N. Perera (Grade 11A)",
+        "N. Perera, Secretary, Environment Society — 21st September"
+      ],
+      "notes": [
+        "**Content:** credit goes to each required point that is clearly given: purpose, date, time, place, what to bring, contact. A missing point costs more than a spelling mistake.",
+        "**Format:** a notice needs the word NOTICE, the name of the organisation, a clear heading, the writer's name and position, and the date of issue.",
+        "**Length:** about 50 words means roughly 40 to 60 in the body. A notice that becomes a letter (*Dear students, I am writing to...*) is the commonest format error.",
+        "**Language:** short, direct sentences. An imperative such as *Bring a water bottle* is correct and appropriate here."
+      ]
+    },
+    {
+      "week": "2026-09-14",
+      "level": "al",
+      "subject": "A/L General English",
+      "skill": "Summary writing",
+      "title": "Shorten a paragraph without losing its meaning",
+      "passage": [
+        "Many young people today believe that success depends mainly on talent, and that those who are not born with a gift for a subject should simply give it up. However, research on learning suggests a different picture. People who improve steadily are usually those who practise regularly, look carefully at their mistakes, and ask for advice from others. Talent may help a person to begin quickly, but it rarely carries anyone very far without effort. In fact, students who believe that ability can grow tend to keep trying when work becomes difficult, while those who believe it is fixed are more likely to stop."
+      ],
+      "question": [
+        "Summarise the paragraph above in **about 40 words**, using your own words as far as possible."
+      ],
+      "answer": [
+        "Although many young people think success comes mainly from natural talent, steady improvement usually results from regular practice, learning from mistakes and seeking advice. Talent only gives an early start, and students who believe ability can develop persevere longer than those who think it is fixed. (45 words)"
+      ],
+      "notes": [
+        "**Main points to include:** (1) the common belief that talent decides success; (2) improvement comes from practice, studying mistakes and asking advice; (3) talent helps only at the start; (4) believing ability can grow makes students persist.",
+        "**Own words:** change the wording, not the meaning. *Seeking advice* for *ask for advice from others* shows understanding; copying whole phrases does not.",
+        "**Leave out:** examples, repetition and phrases such as *In fact* or *research suggests a different picture* that add no new point.",
+        "**Common mistake:** adding an opinion (*This is true because...*). A summary reports the writer's ideas only."
+      ]
+    },
+    {
+      "week": "2026-09-21",
+      "level": "ol",
+      "subject": "O/L English",
+      "skill": "Grammar: the passive voice",
+      "title": "Change these sentences into the passive",
+      "question": [
+        "Rewrite each sentence in the **passive voice**. Keep the same tense.",
+        "1. The prefect rings the bell at 7.30 every morning.",
+        "2. The students painted the classroom walls last week.",
+        "3. The principal will open the new library tomorrow.",
+        "4. Someone has stolen my bicycle.",
+        "5. The teachers are checking the answer scripts now."
+      ],
+      "answer": [
+        "1. The bell is rung (by the prefect) at 7.30 every morning.",
+        "2. The classroom walls were painted by the students last week.",
+        "3. The new library will be opened by the principal tomorrow.",
+        "4. My bicycle has been stolen.",
+        "5. The answer scripts are being checked (by the teachers) now."
+      ],
+      "notes": [
+        "**The rule:** object of the active sentence + the correct form of *be* in the same tense + past participle.",
+        "**Tense of be:** simple present *is/are*; simple past *was/were*; future *will be*; present perfect *has/have been*; present continuous *is/are being*.",
+        "**When to leave out 'by':** when the doer is unknown or obvious, as in sentence 4. *My bicycle has been stolen by someone* is not wrong, but it is weak.",
+        "**Common mistakes:** *The bell is ring* (the past participle is *rung*); *The walls was painted* (plural subject needs *were*)."
+      ]
+    },
+    {
+      "week": "2026-09-21",
+      "level": "al",
+      "subject": "A/L General English",
+      "skill": "Error correction",
+      "title": "Find and correct the error",
+      "question": [
+        "Each sentence contains **one** error. Rewrite the sentence correctly.",
+        "1. Neither the manager nor his assistants was present at the meeting.",
+        "2. She has been working in this company since five years.",
+        "3. If I would have known about the delay, I would have taken a taxi.",
+        "4. The informations given in the leaflet are out of date.",
+        "5. He is one of those students who always tries to help others."
+      ],
+      "answer": [
+        "1. Neither the manager nor his assistants **were** present at the meeting.",
+        "2. She has been working in this company **for** five years.",
+        "3. If I **had known** about the delay, I would have taken a taxi.",
+        "4. The **information** given in the leaflet **is** out of date.",
+        "5. He is one of those students who always **try** to help others."
+      ],
+      "notes": [
+        "**1.** With *neither...nor*, the verb agrees with the nearer subject: *assistants* is plural.",
+        "**2.** *Since* takes a point in time (*since 2021*); *for* takes a length of time (*for five years*).",
+        "**3.** The third conditional uses *had + past participle* in the *if* clause, never *would have*.",
+        "**4.** *Information* is uncountable: no plural *-s*, and a singular verb.",
+        "**5.** *Who* refers to *those students*, so its verb is plural. Many careful writers still get this wrong, which is why it is often tested."
+      ]
+    },
+    {
+      "week": "2026-09-28",
+      "level": "ol",
+      "subject": "O/L English",
+      "skill": "Reading comprehension",
+      "title": "The library under the stairs",
+      "passage": [
+        "When Ms Jayawardena arrived at the village school, the only books were locked in a cupboard in the principal's office. Children were not allowed to touch them in case they were damaged. She asked for permission to move them to the empty space under the staircase, and the principal agreed, although he did not expect the idea to last.",
+        "With the help of a carpenter who was also a parent, she built three low shelves. Students from Grade 9 made a cardboard sign and a simple borrowing book. Within a month, the younger children were spending their interval there, and some parents began donating old newspapers and magazines.",
+        "By the end of the year, a few books had been torn, but far more had been read. The principal, who had once worried about damage, asked her to write a request to the zonal office for more books."
+      ],
+      "question": [
+        "1. Where were the books kept before Ms Jayawardena arrived?",
+        "2. Why were children not allowed to touch them?",
+        "3. Who helped to build the shelves?",
+        "4. Find a word in paragraph 2 that means *giving as a gift*.",
+        "5. How did the principal's attitude change? Give evidence from the passage."
+      ],
+      "answer": [
+        "1. In a locked cupboard in the principal's office.",
+        "2. Because the school was afraid they would be damaged.",
+        "3. A carpenter who was also a parent (and Grade 9 students made the sign and borrowing book).",
+        "4. donating",
+        "5. At first he did not expect the library to last and worried about damage, but by the end of the year he supported it and asked her to request more books from the zonal office."
+      ],
+      "notes": [
+        "**Questions 1 to 3** test finding information. Short, exact answers are best; copying the whole paragraph is not.",
+        "**Question 4:** the word must be in the stated paragraph and in the same form. *Donate* would lose credit if the passage uses *donating*.",
+        "**Question 5** is worth more because it asks for two things: the change (before and after) and evidence. Answers that describe only the end lose half the credit."
+      ]
+    },
+    {
+      "week": "2026-09-28",
+      "level": "al",
+      "subject": "A/L Literature",
+      "skill": "Unseen poetry",
+      "title": "An unseen poem: 'Rain on the Tin Roof'",
+      "passage": [
+        "*Rain on the Tin Roof* (an unseen poem written for this question by RCF English)",
+        "At first a knock, polite and small,",
+        "a stranger testing at the door;",
+        "then fists, then drums, then no pause at all,",
+        "the whole sky falling on the floor.",
+        "",
+        "My mother lifts her head and smiles.",
+        "The paddy drinks. The well will rise.",
+        "Tonight the noise is worth the miles",
+        "of dry and dust-white August skies."
+      ]
+    ,
+      "question": [
+        "How does the poet present the arrival of the rain, and how does the mood change between the two stanzas? Refer closely to language and technique."
+      ],
+      "answer": [
+        "The poet presents the rain's arrival as a growing visitor. In the first stanza it is personified as *a stranger* who knocks *polite and small*, suggesting caution and unfamiliarity after a long dry season. The sequence *then fists, then drums, then no pause at all* builds through repetition and rising force, and the listing imitates the quickening sound on the roof until the hyperbole *the whole sky falling on the floor* makes the rain overwhelming.",
+        "In the second stanza the mood turns from noise and near-alarm to relief. The short, calm sentences *The paddy drinks. The well will rise.* slow the rhythm and show the practical value of the rain for a farming household. The mother's smile turns the sound into good news. The final lines weigh the noise against *miles / of dry and dust-white August skies*: the long vowels and the image of dust suggest weeks of hardship, so the rain becomes welcome rather than threatening."
+      ],
+      "notes": [
+        "**Credit for:** identifying a technique (personification, repetition, hyperbole, sentence length, imagery), quoting it briefly, and explaining its **effect**. Naming a device without explaining it earns little.",
+        "**Answer the whole question:** both *how the rain is presented* and *how the mood changes*. Many answers do the first well and forget the second.",
+        "**Structure:** one paragraph per stanza works well here, with a sentence linking them.",
+        "**Common mistake:** retelling the poem (*First the rain comes, then the mother smiles*). Every sentence should say how or why, not only what."
+      ]
+    },
+    {
+      "week": "2026-10-05",
+      "level": "ol",
+      "subject": "O/L Literature",
+      "skill": "Context question technique",
+      "title": "Answering 'Who said this, to whom, and when?'",
+      "passage": [
+        "An extract written for practice by RCF English:",
+        "*\"Keep the change,\" said the old man, pressing the coin back into the boy's hand. \"You carried my bag all the way from the market. That is worth more than a bus fare.\"*"
+      ],
+      "question": [
+        "Imagine this extract is from a short story you have studied.",
+        "(a) Who is speaking, and to whom?",
+        "(b) What has just happened?",
+        "(c) What does this speech show about the speaker's character?"
+      ],
+      "answer": [
+        "(a) The old man is speaking to the boy.",
+        "(b) The boy has carried the old man's bag from the market and has tried to return a coin, which the old man presses back into his hand.",
+        "(c) The old man is grateful and generous. He values the boy's effort more than money, saying that the help *is worth more than a bus fare*, and he insists on rewarding him rather than accepting the coin back."
+      ],
+      "notes": [
+        "**Parts (a) and (b)** want precise facts: names (or clear descriptions), and the situation immediately before the words. Long background retelling wastes time.",
+        "**Part (c)** carries the most credit. Give a quality (*generous*, *grateful*), then **evidence** from the extract, then a brief explanation.",
+        "**In the examination**, use the characters' names and the situation from your prescribed text. This practice extract is original so that the technique can be shown without reproducing any set text."
+      ]
+    },
+    {
+      "week": "2026-10-05",
+      "level": "al",
+      "subject": "A/L General English",
+      "skill": "Letter to the editor",
+      "title": "Plan a letter about roadside litter",
+      "question": [
+        "Litter along the roads in your town has become a serious problem. Write a **letter to the editor** of a newspaper (about **200 words**) describing the problem, its effects, and two practical solutions.",
+        "For this week, write a **plan** and an **opening paragraph** only."
+      ],
+      "answer": [
+        "**Plan**",
+        "Paragraph 1: reason for writing; the problem in one sentence (roadside litter along the main road and near the bus stand).",
+        "Paragraph 2: the effects: blocked drains and flooding after rain, mosquitoes, a poor impression on visitors.",
+        "Paragraph 3: solution 1: covered bins at bus halts, emptied on a fixed schedule by the council.",
+        "Paragraph 4: solution 2: school and community clean-up days, with fines for dumping enforced.",
+        "Paragraph 5: closing appeal to readers and the authorities.",
+        "**Opening paragraph**",
+        "Sir, I write to draw attention to the litter that now lines the main road through our town, particularly near the bus stand and the market. Plastic bags, food wrappers and bottles are thrown from vehicles and left by passers-by, and the problem has grown steadily worse over the past year."
+      ],
+      "notes": [
+        "**Format:** a letter to the editor opens with *Sir* or *Dear Editor* and ends with the writer's name and town. The writer's address and date appear at the top.",
+        "**Planning earns its time:** a five-paragraph plan guarantees that the problem, the effects and **two** solutions are all covered. Letters written without a plan often give one solution only.",
+        "**Tone:** formal and reasonable. Complaints that insult the council lose the reader's sympathy.",
+        "**Opening:** state the purpose in the first sentence. *I am writing this letter to tell you about something* delays the point."
+      ]
+    }
+  ]
+}

@@ -3950,6 +3950,66 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .lab__stage:focus { outline: none; }
 .lab__back { margin: 0 0 var(--sp-3); }
 
+/* --- examination centre: countdown, timer, timetable, question of the week */
+.xcount, .xtimer, .xplan, .qweek__item {
+  padding: var(--sp-4) var(--sp-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+.xcount__lead { margin: 0 0 var(--sp-3); }
+.xcount__own .field { max-width: 16rem; }
+.xcount__big { margin: var(--sp-3) 0 0; font-size: var(--step-1); color: var(--navy-800); }
+.xcount__big:empty { display: none; }
+.xcount__num { font-family: var(--font-head); font-size: 3rem; font-weight: 700; line-height: 1; color: var(--teal-700); margin-right: 0.35rem; }
+.xcount__sub { display: block; margin-top: 0.3rem; font-size: var(--step--1); color: var(--ink-700); }
+
+.xtimer__set { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: end; }
+.xtimer__set .field { width: 7rem; margin: 0; }
+.xtimer__read { display: flex; gap: 0.5rem; align-items: center; min-height: 44px; }
+.xtimer__face { margin: var(--sp-4) 0; padding: var(--sp-4); border-radius: var(--radius-md); background: var(--navy-050); text-align: center; }
+.xtimer__phase { margin: 0; font-weight: 650; color: var(--navy-700); }
+.xtimer__clock { margin: 0.2rem 0 var(--sp-3); font-family: var(--font-head); font-size: clamp(2.6rem, 9vw, 4.2rem); font-weight: 700; font-variant-numeric: tabular-nums; color: var(--navy-800); line-height: 1.1; }
+.xtimer.is-low .xtimer__clock { color: var(--err-700); }
+.xtimer__bar { height: 8px; border-radius: 999px; background: #dfe6f0; overflow: hidden; }
+.xtimer__bar span { display: block; height: 100%; width: 0; background: var(--teal-700); transition: width 0.25s linear; }
+.xtimer.is-low .xtimer__bar span { background: var(--err-700); }
+.xtimer__buttons { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+
+.xplan__form { display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.xplan__form textarea { width: 100%; font: inherit; }
+.xplan__nums { display: grid; gap: var(--sp-2); }
+.xplan__nums .field { margin: 0; }
+.xplan__check { display: flex; gap: 0.5rem; align-items: center; min-height: 44px; }
+.xplan__bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--sp-3); margin: var(--sp-4) 0 var(--sp-3); }
+.xplan__summary { margin: 0; font-weight: 650; color: var(--teal-700); }
+.xplan__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.xplan__table { border-collapse: collapse; width: 100%; min-width: 40rem; font-size: var(--step--1); }
+.xplan__table caption { text-align: left; font-weight: 650; margin-bottom: var(--sp-2); }
+.xplan__table th, .xplan__table td { border: 1px solid var(--line-strong); padding: 0.45rem 0.5rem; text-align: center; vertical-align: middle; }
+.xplan__table thead th { background: var(--navy-050); color: var(--navy-800); }
+.xplan__weak { background: var(--gold-100); font-weight: 650; }
+.xplan__free { color: var(--ink-700); font-style: italic; }
+@media print {
+  .is-printing-plan body * { visibility: hidden; }
+  .is-printing-plan .xplan__out, .is-printing-plan .xplan__out * { visibility: visible; }
+  .is-printing-plan .xplan__out { position: absolute; left: 0; top: 0; width: 100%; }
+  .is-printing-plan .xplan__table { min-width: 0; font-size: 10pt; }
+}
+
+.qweek { display: grid; gap: var(--sp-3); }
+.qweek__title { margin: var(--sp-2) 0 var(--sp-3); color: var(--navy-800); }
+.qweek__passage { margin: 0 0 var(--sp-3); padding: var(--sp-3) var(--sp-4); border-left: 4px solid var(--gold-400); background: #fffdf6; border-radius: var(--radius-sm); }
+.qweek__passage p { margin: 0 0 0.35rem; }
+.qweek__gap { height: 0.5rem; margin: 0 !important; }
+.qweek__question p { margin: 0 0 0.4rem; }
+.qweek__reveal { margin-top: var(--sp-3); border-top: 1px solid var(--line); padding-top: var(--sp-2); }
+.qweek__reveal summary { cursor: pointer; font-weight: 700; color: var(--teal-700); min-height: 44px; display: flex; align-items: center; }
+.qweek__answer, .qweek__notes { padding: var(--sp-2) 0 0; }
+.qweek__archive-title { font-size: var(--step-0); margin: var(--sp-2) 0; }
+.qweek__archive ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-1); }
+.qweek__old { background: none; border: 0; padding: 0.35rem 0; font: inherit; color: var(--navy-700); text-decoration: underline; cursor: pointer; text-align: left; min-height: 44px; }
+
 /* --- flashcard maker */
 .flash__table { border-collapse: collapse; margin: var(--sp-2) 0 var(--sp-3); }
 .flash__table th, .flash__table td { padding: 0.25rem 0.6rem; border-bottom: 1px solid var(--line); text-align: left; }

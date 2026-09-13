@@ -270,6 +270,7 @@
         { "title": "By subject", "links": [
           { "label": "Grade 6‑11 Resources", "url": "grades/" },
           { "label": "All Papers and Filters", "url": "past-papers/" },
+          { "label": "Examination Centre (O/L and A/L)", "url": "exam-centre/" },
           { "label": "Grade 10 Papers", "url": "past-papers/grade-10/" },
           { "label": "O/L English Papers", "url": "past-papers/ol-english/" },
           { "label": "O/L Literature Papers", "url": "past-papers/ol-literature/" },
@@ -412,6 +413,7 @@
     ]},
     { "title": "Resources", "links": [
       { "label": "Past Papers", "url": "past-papers/" },
+      { "label": "Examination Centre", "url": "exam-centre/" },
       { "label": "All Resources", "url": "resources/" },
       { "label": "Teacher Resources", "url": "teacher-resources/" },
       { "label": "Search the Site", "url": "search/" },

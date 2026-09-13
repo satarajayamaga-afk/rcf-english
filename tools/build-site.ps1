@@ -1586,6 +1586,91 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'exam-countdown' {
+            # Counts down only to a date the Department of Examinations has
+            # announced (data/exams.json). Until then it says so, and lets the
+            # student count down to a date of their own, kept on their device.
+            $examId = [string](P $block 'exam')
+            $exam = @(DataList 'exams' 'exams') | Where-Object { [string](P $_ 'id') -eq $examId } | Select-Object -First 1
+            if (-not $exam) { [void]$script:Warnings.Add("exam-countdown on '$($script:PageSlug)' names exam '$examId', which is not in data/exams.json"); return '' }
+            $date = [string](P $exam 'date' '')
+            $source = [string](P $exam 'source' '')
+            if ($date -and -not $source) {
+                [void]$script:Warnings.Add("data/exams.json: '$examId' has a date but no source, so the date is not shown")
+                $date = ''
+            }
+            $name = [string](P $exam 'name')
+            $html = (SectionOpen $block 'exam-count') + (SectionHead $block)
+            $html += '<div class="xcount" data-xcount data-exam="' + (E $examId) + '" data-date="' + (E $date) + '" data-name="' + (E $name) + '">'
+            if ($date) {
+                $html += '<p class="xcount__lead">The <strong>' + (E $name) + '</strong> begins on <strong data-xcount-date>' + (E $date) + '</strong>.</p>'
+                $html += '<p class="xcount__big" data-xcount-out aria-live="polite"></p>'
+                $html += '<p class="text-small text-muted">Date from the <a href="' + (E (Url $source)) + '" target="_blank" rel="noopener" class="ext">official announcement</a>. Always confirm with your school or the Department of Examinations.</p>'
+            }
+            else {
+                $html += '<p class="xcount__lead">The date of the next <strong>' + (E $name) + '</strong> has not been announced here yet. It will appear once the Department of Examinations publishes it. Until then, enter the date you have been given and count down to that.</p>'
+                $html += '<div class="xcount__own" data-xcount-own hidden><div class="field"><label for="xcount-' + (E $examId) + '">My examination date</label><input type="date" id="xcount-' + (E $examId) + '" data-xcount-input></div></div>'
+                $html += '<p class="xcount__big" data-xcount-out aria-live="polite"></p>'
+            }
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
+        'exam-timer' {
+            $html = (SectionOpen $block 'exam-timer') + (SectionHead $block)
+            $html += '<div class="xtimer" data-xtimer><noscript><p>The timer needs JavaScript. A watch or a phone alarm set to the time printed on the paper works just as well.</p></noscript></div>'
+            return $html + '</div></section>'
+        }
+
+        'study-timetable' {
+            $subjects = AsList (P $block 'subjects')
+            $html = (SectionOpen $block 'study-timetable') + (SectionHead $block)
+            $html += '<div class="xplan" data-xplan data-subjects="' + (E (($subjects | ForEach-Object { [string]$_ }) -join '|')) + '"><noscript><p>The timetable maker needs JavaScript. On paper: list your subjects, give the weakest two an extra session each week, and never study one subject for more than two sessions in a row.</p></noscript></div>'
+            return $html + '</div></section>'
+        }
+
+        'question-week' {
+            # Every question for this level is written into the page. Without
+            # JavaScript the newest one that has started is shown; the script
+            # picks the current week on the visitor's own date.
+            $level = [string](P $block 'level')
+            $today = (Get-Date).ToString('yyyy-MM-dd')
+            $all = @(DataList 'question-of-the-week' 'questions' | Where-Object { [string](P $_ 'level') -eq $level } | Sort-Object { [string](P $_ 'week') } -Descending)
+            if ($all.Count -eq 0) { return '' }
+            $current = @($all | Where-Object { [string](P $_ 'week') -le $today }) | Select-Object -First 1
+            if (-not $current) { $current = $all[-1] }
+            $html = (SectionOpen $block 'qweek') + (SectionHead $block)
+            $html += '<div class="qweek" data-qweek>'
+            $i = 0
+            foreach ($q in $all) {
+                $week = [string](P $q 'week')
+                $isCurrent = [object]::ReferenceEquals($q, $current)
+                $weekLabel = $week
+                $wd = [datetime]::MinValue
+                if ([datetime]::TryParse($week, [ref]$wd)) { $weekLabel = $wd.ToString('d MMMM yyyy', [Globalization.CultureInfo]::InvariantCulture) }
+                $html += '<article class="qweek__item" data-week="' + (E $week) + '"' + $(if (-not $isCurrent) { ' hidden' } else { '' }) + ' aria-labelledby="qw-' + $level + '-' + $i + '">'
+                $html += '<div class="tag-row"><span class="tag tag--level">' + (E (P $q 'subject')) + '</span><span class="tag">' + (E (P $q 'skill')) + '</span><span class="tag tag--year">Week of ' + (E $weekLabel) + '</span></div>'
+                $html += '<h3 class="qweek__title" id="qw-' + $level + '-' + $i + '">' + (E (P $q 'title')) + '</h3>'
+                $passage = AsList (P $q 'passage')
+                if ($passage.Count) {
+                    $html += '<div class="qweek__passage">'
+                    foreach ($line in $passage) { if ([string]$line) { $html += '<p>' + (Inline $line) + '</p>' } else { $html += '<p class="qweek__gap" aria-hidden="true"></p>' } }
+                    $html += '</div>'
+                }
+                $html += '<div class="qweek__question">' + (Paragraphs (P $q 'question')) + '</div>'
+                $html += '<details class="qweek__reveal"><summary>Show the model answer</summary><div class="qweek__answer">' + (Paragraphs (P $q 'answer')) + '</div></details>'
+                $html += '<details class="qweek__reveal"><summary>How it would be marked</summary><div class="qweek__notes">' + (Paragraphs (P $q 'notes')) + '<p class="text-small text-muted">Marking notes written by RCF English to explain what earns credit. They are not an official marking scheme.</p></div></details>'
+                $html += '</article>'
+                $i++
+            }
+            if ($all.Count -gt 1) {
+                $html += '<div class="qweek__archive" data-qweek-archive hidden><h3 class="qweek__archive-title">Earlier questions</h3><ul data-qweek-list></ul></div>'
+            }
+            $html += '<p class="text-small text-muted">Try the question before opening the answer. Every question, passage and poem here was written by RCF English.</p>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'flashcards' {
             # A printable flashcard maker. The sets are written into the page
             # as plain tables, so without JavaScript a teacher can still copy

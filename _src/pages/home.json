@@ -120,14 +120,16 @@
           "sub": "Examination revision",
           "icon": "🎓",
           "style": "exam",
-          "url": "past-papers/",
-          "more": "Browse past papers",
+          "url": "exam-centre/",
+          "more": "Go to the Examination Centre",
           "links": [
+            { "label": "O/L Examination Centre", "url": "exam-centre/ol/", "note": "Countdown, weekly question, timed practice" },
+            { "label": "A/L Examination Centre", "url": "exam-centre/al/" },
             { "label": "O/L English", "url": "ol-english/" },
             { "label": "O/L Literature", "url": "ol-literature/" },
             { "label": "A/L General English", "url": "general-english/" },
             { "label": "A/L Literature", "url": "al-literature/" },
-            { "label": "How to use past papers well", "url": "past-papers/how-to-use/" }
+            { "label": "Past papers", "url": "past-papers/" }
           ]
         }
       ]
