@@ -1,0 +1,350 @@
+{
+  "_readme": [
+    "Two interactive primary pages: letter formation for Grade 1 and songs for Grade 2.",
+    "",
+    "Grade 1 and Grade 2 share one NIE syllabus, Activity Based Oral English, organised into 16 themes. The songs are chosen to go with those themes; the syllabus names songs to use but the ones here are RCF English's, so each is labelled 'goes with' a theme rather than 'from' it.",
+    "",
+    "SONG WORDS AND TUNES. Four sets of words are written for RCF English and set to traditional tunes that are long out of copyright: Frere Jacques, Row Row Row Your Boat, Mary Had a Little Lamb and Old MacDonald Had a Farm. Twinkle, Twinkle, Little Star uses Jane Taylor's words of 1806 and its traditional tune. Do not add a song whose words or tune are still in copyright - The Wheels on the Bus, for example, is a 1939 song and is not free to use.",
+    "",
+    "SONG LINE FORMAT. Each line is space-separated tokens: text:note:beats. Beats are in quarter notes. A token ending in '-' joins the next syllable of the same word; one ending in '=' joins it with a visible hyphen. The build warns on a malformed token.",
+    "",
+    "The generator reads page files as UTF-8, so emoji and accented letters are written directly."
+  ],
+
+  "pages": [
+    {
+      "slug": "primary-english/alphabet/watch-and-write",
+      "title": "Watch and Write: the Alphabet",
+      "metaTitle": "Watch and Write the Alphabet: Letter Formation for Grade 1 | RCF English",
+      "description": "An animated alphabet for Grade 1: watch each capital and small letter drawn stroke by stroke on copy-book lines, hear its name and a word for it, then trace it yourself.",
+      "keywords": "alphabet letter formation, how to write letters Grade 1, animated alphabet writing, trace the alphabet, capital and small letters, Sri Lanka Grade 1 English",
+      "kicker": "Primary English - Grade 1",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "interactive activity",
+      "educationalLevel": "Grade 1",
+      "styles": ["primary-play"],
+      "scripts": ["alphabet-writer"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Alphabet Practice", "url": "primary-english/alphabet/" }
+      ],
+      "backTo": { "label": "Alphabet Practice", "url": "primary-english/alphabet/" },
+      "hero": {
+        "text": "Watch each letter being written, one stroke at a time, on the same four lines as a copy book. Then have a go yourself."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to use the board",
+          "text": [
+            "**1. Watch.** Press *Watch* and follow the pencil point. The numbers show where each stroke starts.",
+            "**2. Say it.** Say the letter's name, and the word, with the board.",
+            "**3. Air-write.** Draw the letter in the air with a finger, big, in the same order.",
+            "**4. Your turn.** Press *Your turn* and trace over the dotted letter. Then write it in a copy book."
+          ]
+        },
+        {
+          "type": "alphabet-writer",
+          "heading": "Watch and write",
+          "level": "h2",
+          "letters": [
+            { "letter": "A", "name": "ay", "word": "apple", "emoji": "🍎" },
+            { "letter": "B", "name": "bee", "word": "ball", "emoji": "⚽" },
+            { "letter": "C", "name": "see", "word": "cat", "emoji": "🐈" },
+            { "letter": "D", "name": "dee", "word": "dog", "emoji": "🐕" },
+            { "letter": "E", "name": "ee", "word": "egg", "emoji": "🥚" },
+            { "letter": "F", "name": "ef", "word": "fish", "emoji": "🐟" },
+            { "letter": "G", "name": "jee", "word": "goat", "emoji": "🐐" },
+            { "letter": "H", "name": "aitch", "word": "hat", "emoji": "👒" },
+            { "letter": "I", "name": "eye", "word": "insect", "emoji": "🐞" },
+            { "letter": "J", "name": "jay", "word": "juice", "emoji": "🧃" },
+            { "letter": "K", "name": "kay", "word": "kite", "emoji": "🪁" },
+            { "letter": "L", "name": "el", "word": "lion", "emoji": "🦁" },
+            { "letter": "M", "name": "em", "word": "mango", "emoji": "🥭" },
+            { "letter": "N", "name": "en", "word": "nose", "emoji": "👃" },
+            { "letter": "O", "name": "oh", "word": "orange", "emoji": "🍊" },
+            { "letter": "P", "name": "pee", "word": "parrot", "emoji": "🦜" },
+            { "letter": "Q", "name": "cue", "word": "queen", "emoji": "👑" },
+            { "letter": "R", "name": "ar", "word": "rabbit", "emoji": "🐇" },
+            { "letter": "S", "name": "es", "word": "sun", "emoji": "☀️" },
+            { "letter": "T", "name": "tee", "word": "tree", "emoji": "🌳" },
+            { "letter": "U", "name": "you", "word": "umbrella", "emoji": "☂️" },
+            { "letter": "V", "name": "vee", "word": "van", "emoji": "🚐" },
+            { "letter": "W", "name": "double you", "word": "water", "emoji": "💧" },
+            { "letter": "X", "name": "ex", "word": "fox", "emoji": "🦊" },
+            { "letter": "Y", "name": "why", "word": "yellow", "emoji": "🟡" },
+            { "letter": "Z", "name": "zed", "word": "zebra", "emoji": "🦓" }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why the starting point matters",
+          "level": "h2",
+          "text": [
+            "A child who starts every letter in the right place and moves the pencil the right way will join letters easily later on. A child who starts at the bottom of an *o*, or draws a *d* as a stick and then a circle, has a habit that has to be unlearned - and unlearning is much slower than learning it right the first time.",
+            "That is why the board numbers every stroke and moves a pencil point along it. The finished shape matters less than the way it is made."
+          ],
+          "bullets": [
+            "**Most letters start at the top.** Straight lines usually go down, not up.",
+            "**Round letters start at the top right and go anticlockwise** - *c, a, d, g, o, q* all begin the same way, so learn *c* first.",
+            "**Small letters sit on the red line.** Their bodies reach the dashed middle line; tall letters like *b, d, h, k, l* go up to the top line, and tails on *g, j, p, q, y* drop to the bottom line."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "A letter's name is not its sound",
+          "text": [
+            "The board says each letter's **name** - *bee* for B - and a word that starts with it. It does not try to say the letter's **sound** on its own, because a computer voice cannot say a clean /b/ without adding a vowel to it, and a wrong sound is worse than none.",
+            "Say the sounds yourself, clipped and short. [Alphabet Practice](primary-english/alphabet/) explains the difference and shows how to practise sounds. The word *fox* is used for X because very few everyday words start with the sound X makes."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Alphabet Practice", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter names, letter sounds, and the letters children mix up."] },
+            { "title": "Sing and Learn: Songs for Grade 2", "url": "primary-english/songs/", "more": "Open", "text": ["Five short songs to sing, with the words lighting up in time."] },
+            { "title": "Grade 1", "url": "primary-english/grade-1/", "more": "Open", "text": ["The 16 themes of Activity Based Oral English."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/songs",
+      "title": "Sing and Learn: Songs for Grade 2",
+      "metaTitle": "English Songs for Grade 2 with Words and Tunes | RCF English",
+      "description": "Five short English songs for Grade 2, with the words lighting up in time to a gentle tune. Greetings, the sky, animals, the weather and washing hands, following the Activity Based Oral English themes.",
+      "keywords": "English songs for Grade 2, action songs for children, Grade 2 English Sri Lanka, Activity Based Oral English songs, nursery rhymes with words, sing along English",
+      "kicker": "Primary English - Grade 2",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "interactive activity",
+      "educationalLevel": "Grade 2",
+      "styles": ["primary-play"],
+      "scripts": ["songs"],
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Five short songs to sing together. Press play, follow the words as they light up, and sing along."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "About these songs",
+          "text": [
+            "Grade 1 and Grade 2 share one syllabus, *Activity Based Oral English*, and each of its themes uses songs to teach words and sentence patterns. Each song here goes with one of those themes, so it works in Grade 1 as well.",
+            "**The tunes are traditional and very old**, so they are free for anyone to use. The words of *Twinkle, Twinkle, Little Star* were written by Jane Taylor in 1806. The words of the other four were written for RCF English."
+          ]
+        },
+        {
+          "type": "songs",
+          "heading": "The songs",
+          "level": "h2",
+          "items": [
+            {
+              "id": "hello-teacher",
+              "title": "Hello, Teacher",
+              "emoji": "👋",
+              "tempo": 104,
+              "theme": "Goes with Theme 1: *We and the school*",
+              "tune": "Tune: *Frère Jacques* (traditional)",
+              "words": "Words: RCF English",
+              "verses": [
+                {
+                  "emoji": "👋",
+                  "lines": [
+                    "Hel-:C4:1 lo,:D4:1 tea-:E4:1 cher,:C4:1",
+                    "hel-:C4:1 lo,:D4:1 tea-:E4:1 cher,:C4:1",
+                    "How:E4:1 are:F4:1 you?:G4:2",
+                    "How:E4:1 are:F4:1 you?:G4:2",
+                    "We:G4:0.5 are:A4:0.5 hap-:G4:0.5 py,:F4:0.5 thank:E4:1 you,:C4:1",
+                    "we:G4:0.5 are:A4:0.5 hap-:G4:0.5 py,:F4:0.5 thank:E4:1 you.:C4:1",
+                    "How:C4:1 are:G3:1 you?:C4:2",
+                    "How:C4:1 are:G3:1 you?:C4:2"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "twinkle",
+              "title": "Twinkle, Twinkle, Little Star",
+              "emoji": "⭐",
+              "tempo": 96,
+              "theme": "Goes with Theme 6: *The sky we see*",
+              "tune": "Tune: traditional",
+              "words": "Words: Jane Taylor, 1806",
+              "verses": [
+                {
+                  "emoji": "⭐",
+                  "lines": [
+                    "Twin-:C4:1 kle,:C4:1 twin-:G4:1 kle,:G4:1 lit-:A4:1 tle:A4:1 star,:G4:2",
+                    "How:F4:1 I:F4:1 won-:E4:1 der:E4:1 what:D4:1 you:D4:1 are!:C4:2",
+                    "Up:G4:1 a-:G4:1 bove:F4:1 the:F4:1 world:E4:1 so:E4:1 high,:D4:2",
+                    "Like:G4:1 a:G4:1 dia-:F4:1 mond:F4:1 in:E4:1 the:E4:1 sky.:D4:2",
+                    "Twin-:C4:1 kle,:C4:1 twin-:G4:1 kle,:G4:1 lit-:A4:1 tle:A4:1 star,:G4:2",
+                    "How:F4:1 I:F4:1 won-:E4:1 der:E4:1 what:D4:1 you:D4:1 are!:C4:2"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "old-macdonald",
+              "title": "Old MacDonald Had a Farm",
+              "emoji": "🐄",
+              "tempo": 120,
+              "theme": "Goes with Theme 3: *Animals that come into the garden*",
+              "tune": "Tune: traditional",
+              "words": "Words: traditional",
+              "verses": [
+                {
+                  "emoji": "🐄",
+                  "lines": [
+                    "Old:G4:1 Mac-:G4:1 Don-:G4:1 ald:D4:1 had:E4:1 a:E4:1 farm,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:3",
+                    "And:D4:1 on:G4:1 that:G4:1 farm:G4:1 he:D4:1 had:E4:1 a:E4:1 cow,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:3",
+                    "With:D4:0.5 a:D4:0.5 moo:G4:1 moo:G4:1 here,:G4:1 and:D4:0.5 a:D4:0.5 moo:G4:1 moo:G4:1 there,:G4:2",
+                    "here:G4:0.5 a:G4:0.5 moo,:G4:1 there:G4:0.5 a:G4:0.5 moo,:G4:1 ev-:G4:0.5 ery-:G4:0.5 where:G4:0.5 a:G4:0.5 moo:G4:1 moo.:G4:1",
+                    "Old:G4:1 Mac-:G4:1 Don-:G4:1 ald:D4:1 had:E4:1 a:E4:1 farm,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:4"
+                  ]
+                },
+                {
+                  "emoji": "🦆",
+                  "lines": [
+                    "Old:G4:1 Mac-:G4:1 Don-:G4:1 ald:D4:1 had:E4:1 a:E4:1 farm,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:3",
+                    "And:D4:1 on:G4:1 that:G4:1 farm:G4:1 he:D4:1 had:E4:1 a:E4:1 duck,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:3",
+                    "With:D4:0.5 a:D4:0.5 quack:G4:1 quack:G4:1 here,:G4:1 and:D4:0.5 a:D4:0.5 quack:G4:1 quack:G4:1 there,:G4:2",
+                    "here:G4:0.5 a:G4:0.5 quack,:G4:1 there:G4:0.5 a:G4:0.5 quack,:G4:1 ev-:G4:0.5 ery-:G4:0.5 where:G4:0.5 a:G4:0.5 quack:G4:1 quack.:G4:1",
+                    "Old:G4:1 Mac-:G4:1 Don-:G4:1 ald:D4:1 had:E4:1 a:E4:1 farm,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:4"
+                  ]
+                },
+                {
+                  "emoji": "🐕",
+                  "lines": [
+                    "Old:G4:1 Mac-:G4:1 Don-:G4:1 ald:D4:1 had:E4:1 a:E4:1 farm,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:3",
+                    "And:D4:1 on:G4:1 that:G4:1 farm:G4:1 he:D4:1 had:E4:1 a:E4:1 dog,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:3",
+                    "With:D4:0.5 a:D4:0.5 woof:G4:1 woof:G4:1 here,:G4:1 and:D4:0.5 a:D4:0.5 woof:G4:1 woof:G4:1 there,:G4:2",
+                    "here:G4:0.5 a:G4:0.5 woof,:G4:1 there:G4:0.5 a:G4:0.5 woof,:G4:1 ev-:G4:0.5 ery-:G4:0.5 where:G4:0.5 a:G4:0.5 woof:G4:1 woof.:G4:1",
+                    "Old:G4:1 Mac-:G4:1 Don-:G4:1 ald:D4:1 had:E4:1 a:E4:1 farm,:D4:2",
+                    "E=:B4:1 I=:B4:1 E=:A4:1 I=:A4:1 O!:G4:4"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "weather",
+              "title": "The Weather Song",
+              "emoji": "🌧️",
+              "tempo": 100,
+              "theme": "Goes with Theme 9: *Changes in the environment*",
+              "tune": "Tune: *Row, Row, Row Your Boat* (traditional)",
+              "words": "Words: RCF English",
+              "verses": [
+                {
+                  "emoji": "🌧️",
+                  "lines": [
+                    "Rain,:C4:1.5 rain,:C4:1.5 rain:C4:1 comes:D4:0.5 down,:E4:1.5",
+                    "on:E4:1 the:D4:0.5 roof:E4:1 and:F4:0.5 ground.:G4:3",
+                    "Pit-:C5:0.5 ter:C5:0.5 pat-:C5:0.5 ter,:G4:0.5 pit-:G4:0.5 ter:G4:0.5 pat-:E4:0.5 ter,:E4:0.5 pit-:E4:0.5 ter:C4:0.5 pat-:C4:0.5 ter,:C4:0.5",
+                    "It's:G4:1 a:F4:0.5 rain-:E4:1 y:D4:0.5 day!:C4:3"
+                  ]
+                },
+                {
+                  "emoji": "☀️",
+                  "lines": [
+                    "Sun,:C4:1.5 sun,:C4:1.5 sun:C4:1 comes:D4:0.5 out,:E4:1.5",
+                    "shin-:E4:1 ing:D4:0.5 all:E4:1 a-:F4:0.5 round.:G4:3",
+                    "Warm:C5:0.5 and:C5:0.5 bright,:C5:0.5 warm:G4:0.5 and:G4:0.5 bright,:G4:0.5 warm:E4:0.5 and:E4:0.5 bright,:E4:0.5 warm:C4:0.5 and:C4:0.5 bright,:C4:0.5",
+                    "It's:G4:1 a:F4:0.5 sun-:E4:1 ny:D4:0.5 day!:C4:3"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "wash-my-hands",
+              "title": "This Is How I Wash My Hands",
+              "emoji": "🧼",
+              "tempo": 110,
+              "theme": "Goes with Theme 4: *Play with water*",
+              "tune": "Tune: *Mary Had a Little Lamb* (traditional)",
+              "words": "Words: RCF English",
+              "verses": [
+                {
+                  "emoji": "🧼",
+                  "lines": [
+                    "This:E4:1 is:D4:1 how:C4:1 I:D4:1 wash:E4:1 my:E4:1 hands,:E4:2",
+                    "wash:D4:1 my:D4:1 hands,:D4:2 wash:E4:1 my:G4:1 hands,:G4:2",
+                    "This:E4:1 is:D4:1 how:C4:1 I:D4:1 wash:E4:1 my:E4:1 hands,:E4:1",
+                    "with:E4:1 soap:D4:1 and:D4:1 wa-:E4:1 ter:D4:1 too.:C4:4"
+                  ]
+                },
+                {
+                  "emoji": "🪥",
+                  "lines": [
+                    "This:E4:1 is:D4:1 how:C4:1 I:D4:1 brush:E4:1 my:E4:1 teeth,:E4:2",
+                    "brush:D4:1 my:D4:1 teeth,:D4:2 brush:E4:1 my:G4:1 teeth,:G4:2",
+                    "This:E4:1 is:D4:1 how:C4:1 I:D4:1 brush:E4:1 my:E4:1 teeth,:E4:1",
+                    "each:E4:1 mor-:D4:1 ning:D4:1 and:E4:1 each:D4:1 night.:C4:4"
+                  ]
+                },
+                {
+                  "emoji": "🥛",
+                  "lines": [
+                    "This:E4:1 is:D4:1 how:C4:1 I:D4:1 drink:E4:1 my:E4:1 milk,:E4:2",
+                    "drink:D4:1 my:D4:1 milk,:D4:2 drink:E4:1 my:G4:1 milk,:G4:2",
+                    "This:E4:1 is:D4:1 how:C4:1 I:D4:1 drink:E4:1 my:E4:1 milk,:E4:1",
+                    "I:E4:1 drink:D4:1 it:D4:1 from:E4:1 my:D4:1 cup.:C4:4"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Teaching a song",
+          "eyebrow": "Five short steps",
+          "variant": "tint",
+          "items": [
+            { "title": "Listen first", "text": ["Play the tune once while the children just listen and watch the words light up."] },
+            { "title": "Say the words", "text": ["Press *Say the words*, or say them yourself, slowly, a line at a time. Children repeat each line."] },
+            { "title": "Sing slowly", "text": ["Tick *Slower* and sing along. Point to the words as they light up."] },
+            { "title": "Add actions", "text": ["Wave for *hello*, wiggle fingers for *twinkle*, rub hands for *wash*. Actions help children remember the words."] },
+            { "title": "Sing it again", "text": ["Untick *Slower* once the song is known. Children love singing a song they know well - repeat it on later days."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About the sound",
+          "text": [
+            "The tune is played as soft, quiet notes made by the browser itself - there are no audio files to download. Nothing plays until you press a button, and the sound switch at the top of the songs turns it off.",
+            "**The tune has no singing voice. The children do the singing.** That is what makes it an action song rather than a video to watch."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "Watch and Write: the Alphabet", "url": "primary-english/alphabet/watch-and-write/", "more": "Open", "text": ["Every letter drawn stroke by stroke, then traced."] },
+            { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Short rhymes to say aloud and learn by heart."] },
+            { "title": "Primary Game Zone", "url": "primary-english/game-zone/", "more": "Open", "text": ["Games for Grades 1 to 5."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

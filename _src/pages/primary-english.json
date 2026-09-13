@@ -81,7 +81,7 @@
           "columns": "3",
           "items": [
             { "title": "Grade 1", "icon": "G1", "url": "primary-english/grade-1/", "more": "Open", "text": ["Oral English through 16 themes, with an activity book and model papers."] },
-            { "title": "Grade 2", "icon": "G2", "text": ["Reading short sentences.", "**Resources in preparation.**"] },
+            { "title": "Grade 2", "icon": "G2", "url": "primary-english/songs/", "more": "Sing the songs", "text": ["Songs to sing along with, following the Activity Based Oral English themes.", "**Full Grade 2 resources in preparation.**"] },
             { "title": "Grade 3", "url": "primary-english/grade-3/", "icon": "G3", "more": "Open", "text": ["Alphabet sounds, words of three or four letters, and sentences of up to five words."] },
             { "title": "Grade 4", "url": "primary-english/grade-4/", "icon": "G4", "more": "Open", "text": ["Pronouns, numbers to 50, and writing with capital letters and full stops."] },
             { "title": "Grade 5", "url": "primary-english/grade-5/", "icon": "G5", "more": "Open", "text": ["Three tenses, everyday texts, and writing accurate simple sentences."] }
@@ -245,6 +245,7 @@
           "heading": "Next",
           "columns": "3",
           "items": [
+            { "title": "Watch and Write: the Alphabet", "url": "primary-english/alphabet/watch-and-write/", "more": "Open", "text": ["Watch every letter drawn stroke by stroke, then trace it."] },
             { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Ten-minute things to do once the letters are steady."] },
             { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["The first short passages, with questions."] },
             { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme makes sounds easier to hear."] }
@@ -544,6 +545,7 @@
           "heading": "Next",
           "columns": "3",
           "items": [
+            { "title": "Sing and Learn: Songs for Grade 2", "url": "primary-english/songs/", "more": "Open", "text": ["Five short songs with the words lighting up in time to the tune."] },
             { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["From four lines of verse to four lines of prose."] },
             { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["Rhyme and sound activities that mark themselves."] },
             { "title": "O/L Literature", "url": "ol-literature/", "more": "Open", "text": ["Where this leads, several years from now."] }

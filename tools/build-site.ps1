@@ -1051,6 +1051,76 @@ function RenderBlock($block) {
             return $html + '</ul></div></section>'
         }
 
+        'alphabet-writer' {
+            # Grade 1 letter formation. The markup is the complete alphabet as
+            # a plain list, each letter with a word for it, so the page is
+            # useful with JavaScript off and when printed. The script builds the
+            # writing board from this list; the stroke shapes live in the script.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="abc" data-abc><ul class="abc__list">'
+            foreach ($it in (AsList (P $block 'letters'))) {
+                $L = [string](P $it 'letter')
+                $em = [string](P $it 'emoji')
+                $wd = [string](P $it 'word')
+                $html += '<li class="abc__item" data-letter="' + (E $L) + '" data-name="' + (E ([string](P $it 'name'))) + '" data-word="' + (E $wd) + '" data-emoji="' + (E $em) + '">'
+                $html += '<span class="abc__pair">' + (E $L.ToUpper()) + (E $L.ToLower()) + '</span>'
+                if ($em) { $html += '<span aria-hidden="true">' + (E $em) + '</span>' }
+                $html += '<span class="abc__word">' + (E $wd) + '</span></li>'
+            }
+            $html += '</ul></div>'
+            return $html + '</div></section>'
+        }
+
+        'songs' {
+            # Songs with the words set out line by line. Each line is written as
+            # space-separated tokens of the form  text:note:beats  so the page
+            # carries the melody as well as the words. A token ending in "-"
+            # joins the next syllable of the same word (the hyphen is dropped);
+            # one ending in "=" joins it and keeps a visible hyphen, for things
+            # like E-I-E-I-O. The words are readable without the script.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="songs">'
+            $html += '<button type="button" class="songs__sound" data-songs-sound hidden></button>'
+            foreach ($s in (AsList (P $block 'items'))) {
+                $id = [string](P $s 'id')
+                $html += '<article class="song" data-song id="song-' + (E $id) + '" data-tempo="' + (E ([string](P $s 'tempo' '100'))) + '">'
+                $html += '<header class="song__head"><span class="song__stage" aria-hidden="true"><span class="song__emoji">' + (E ([string](P $s 'emoji'))) + '</span></span><div>'
+                $html += '<h3 class="song__title">' + (E ([string](P $s 'title'))) + '</h3>'
+                $meta = @()
+                foreach ($k in @('theme', 'tune', 'words')) {
+                    $v = [string](P $s $k)
+                    if ($v) { $meta += (Inline $v) }
+                }
+                if ($meta.Count) { $html += '<p class="song__meta">' + ($meta -join ' <span aria-hidden="true">&middot;</span> ') + '</p>' }
+                $html += '</div></header><div class="song__verses">'
+                foreach ($v in (AsList (P $s 'verses'))) {
+                    $html += '<div class="song__verse" data-emoji="' + (E ([string](P $v 'emoji'))) + '">'
+                    foreach ($ln in (AsList (P $v 'lines'))) {
+                        $tokens = @(([string]$ln).Trim() -split '\s+' | Where-Object { $_ })
+                        $html += '<p class="song__line">'
+                        for ($i = 0; $i -lt $tokens.Count; $i++) {
+                            $parts = $tokens[$i] -split ':'
+                            if ($parts.Count -ne 3) {
+                                [void]$script:Warnings.Add("Song '$id' on page '$($script:PageSlug)' has a malformed token '$($tokens[$i])' - expected text:note:beats")
+                                continue
+                            }
+                            $txt = $parts[0]
+                            $join = $false
+                            if ($txt.EndsWith('-')) { $txt = $txt.Substring(0, $txt.Length - 1); $join = $true }
+                            elseif ($txt.EndsWith('=')) { $txt = $txt.Substring(0, $txt.Length - 1) + '-'; $join = $true }
+                            $html += '<span class="syl" data-n="' + (E $parts[1]) + '" data-b="' + (E $parts[2]) + '">' + (E $txt) + '</span>'
+                            if (-not $join -and $i -lt $tokens.Count - 1) { $html += ' ' }
+                        }
+                        $html += '</p>'
+                    }
+                    $html += '</div>'
+                }
+                $html += '</div></article>'
+            }
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'banner' {
             # A full-width promotional image. Unlike the advert poster this is
             # the site's own material, so it carries no "Sponsored" label.

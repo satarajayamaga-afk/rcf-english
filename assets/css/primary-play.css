@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Primary play: the Grade 1 alphabet board and the Grade 2 songs.
+
+   Loaded only by the two pages that use it, so none of this weight falls on
+   the rest of the site. Motion is small and slow on purpose - these pages are
+   for five- to seven-year-olds, often in a classroom, and anything busy pulls
+   attention away from the letter or the words.
+   ========================================================================== */
+
+/* ------------------------------------------------------------ alphabet */
+
+/* Without the script: the whole alphabet as a readable list. */
+.abc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: var(--sp-2);
+}
+.abc__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.abc__pair { font-family: var(--font-head); font-size: 1.4rem; font-weight: 700; color: var(--navy-800); }
+.abc__word { color: var(--ink-700); }
+
+/* With the script the list is replaced by the board. */
+.abc--ready .abc__list { display: none; }
+
+.abc__app {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: var(--sp-4);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, #f6f9fd, #fff);
+  border: 1px solid var(--line);
+}
+
+.abc__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+.abc__case { display: flex; gap: 0.35rem; }
+
+.abc__chip {
+  min-height: 44px;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--navy-800);
+  font-weight: 600;
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+.abc__chip[aria-pressed="true"] {
+  background: var(--navy-800);
+  border-color: var(--navy-800);
+  color: #fff;
+}
+
+.abc__stage {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.abc__nav {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--navy-800);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.abc__board {
+  position: relative;
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  aspect-ratio: 120 / 130;
+  border-radius: var(--radius-md);
+  background: #fffdf5;
+  box-shadow: inset 0 0 0 1px #e8dfc6, 0 6px 18px rgba(15, 38, 71, 0.08);
+  overflow: hidden;
+}
+.abc__svg { display: block; width: 100%; height: 100%; }
+
+/* The copy-book lines: two firm, a dashed middle, a faint tail line. */
+.abc__rule { stroke: #8fb0d6; stroke-width: 0.6; }
+.abc__rule--mid { stroke-dasharray: 2 2; }
+.abc__rule--base { stroke: #d98c8c; stroke-width: 0.7; }
+.abc__rule--desc { stroke: #c9d8ea; }
+
+.abc__stroke {
+  fill: none;
+  stroke: var(--navy-800);
+  stroke-width: 5.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.is-tracing .abc__stroke {
+  stroke: #b7c4d6;
+  stroke-width: 4;
+  stroke-dasharray: 0.1 6.5;
+}
+
+.abc__start circle { fill: #0e7c66; }
+.abc__start text {
+  fill: #fff;
+  font: 700 5px/1 system-ui, sans-serif;
+  text-anchor: middle;
+}
+.abc__start.is-now circle { fill: #c2913f; }
+
+.abc__pen {
+  fill: #e8704f;
+  stroke: #fff;
+  stroke-width: 1.2;
+  opacity: 0;
+}
+.abc__pen.is-on { opacity: 1; }
+
+.abc__trace {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.abc__caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.2rem;
+  margin: var(--sp-3) 0;
+  text-align: center;
+}
+.abc__cap-emoji { font-size: 2rem; }
+.abc__cap-letter {
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--navy-800);
+}
+.abc__cap-word { font-size: var(--step-1); color: var(--ink-700); }
+
+.abc__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+}
+.abc__btn {
+  min-height: 44px;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--navy-800);
+  font-weight: 700;
+  cursor: pointer;
+}
+.abc__btn--main { background: #0e7c66; border-color: #0e7c66; color: #fff; }
+.abc__btn[aria-pressed="true"] { background: var(--navy-800); border-color: var(--navy-800); color: #fff; }
+
+.abc__picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 0.35rem;
+  margin-top: var(--sp-4);
+}
+.abc__pick {
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--navy-800);
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.abc__pick.is-on { background: #c2913f; border-color: #c2913f; color: #fff; }
+
+
+/* On a phone the arrows move under the board, so the board can use the full
+   width. Tracing with a finger needs the room far more than the arrows need to
+   sit beside it. */
+@media (max-width: 480px) {
+  .abc__app { padding: var(--sp-3); }
+  .abc__stage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "board board" "prev next";
+    row-gap: var(--sp-2);
+  }
+  .abc__board { grid-area: board; max-width: none; }
+  .abc__nav[data-step="-1"] { grid-area: prev; justify-self: start; }
+  .abc__nav[data-step="1"] { grid-area: next; justify-self: end; }
+}
+
+/* -------------------------------------------------------------- songs */
+
+.songs { display: grid; gap: var(--sp-5); }
+
+.songs__sound {
+  min-height: 44px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--navy-800);
+  font-weight: 600;
+  cursor: pointer;
+  justify-self: start;
+}
+
+.song {
+  position: relative;
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(15, 38, 71, 0.06);
+}
+
+.song__head { display: flex; align-items: center; gap: var(--sp-3); }
+.song__stage {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff, #e6f3f8);
+  box-shadow: inset 0 0 0 1px #d4e6ee;
+}
+.song__emoji { font-size: 2.1rem; line-height: 1; }
+.song__title { margin: 0; color: var(--navy-800); }
+.song__meta { margin: 0.15rem 0 0; font-size: var(--step--1); color: var(--ink-700); }
+
+.song__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  margin: var(--sp-3) 0;
+}
+.song__btn {
+  min-height: 44px;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  color: var(--navy-800);
+  font-weight: 700;
+  cursor: pointer;
+}
+.song__btn--play { background: #0e7c66; border-color: #0e7c66; color: #fff; }
+.song__btn--stop { background: var(--navy-800); border-color: var(--navy-800); color: #fff; }
+.song__slow { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; font-size: var(--step--1); }
+
+.song__verses { display: grid; gap: var(--sp-3); }
+.song__verse { padding-left: 0.2rem; }
+.song__line {
+  margin: 0.1rem 0;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--navy-800);
+  transition: background-color 0.25s ease;
+}
+.song__line.is-current { background: #eef5fb; }
+
+.syl {
+  display: inline-block;
+  border-radius: 0.35rem;
+  transition: background-color 0.12s ease, transform 0.12s ease;
+}
+.syl.is-on {
+  background: #fbe7b5;
+  transform: translateY(-2px);
+}
+
+/* A gentle nod of the picture on each note. */
+.song__stage.is-bob { animation: song-bob 0.32s ease-out; }
+@keyframes song-bob {
+  0% { transform: translateY(0) scale(1); }
+  45% { transform: translateY(-4px) scale(1.06); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* A small musical note drifting up while the tune plays. */
+.song--playing .song__stage::after {
+  content: "\266A";
+  position: absolute;
+  top: -0.2rem;
+  right: -0.4rem;
+  font-size: 1rem;
+  color: #0e7c66;
+  animation: song-note 1.8s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes song-note {
+  0% { transform: translate(0, 6px); opacity: 0; }
+  30% { opacity: 0.9; }
+  100% { transform: translate(8px, -22px); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .syl, .song__line { transition: none; }
+  .syl.is-on { transform: none; }
+  .song__stage.is-bob { animation: none; }
+  .song--playing .song__stage::after { animation: none; content: none; }
+}
+
+@media print {
+  .abc__app, .song__controls, .songs__sound { display: none !important; }
+  .abc--ready .abc__list { display: grid; }
+}
