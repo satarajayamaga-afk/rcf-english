@@ -24,6 +24,10 @@
     "   script[]     speaker + text. Distinct speakers get distinct voices where",
     "                the device offers more than one English voice.",
     "   questions[]  see the six kinds below",
+    "   source       \"textbook\" for a test built from a Pupil's Book or Workbook",
+    "                listening activity. Its description must name the grade, book,",
+    "                unit and activity. The texts come from the listening texts",
+    "                document the owner supplied (Grades 6-9).",
     "   vocabulary[] word + meaning. Shown under \"Before you listen\", and on the",
     "                printable worksheet. Pick words that help, never ones",
     "                that give an answer away.",
@@ -1034,6 +1038,4486 @@
         { "kind": "mcq", "prompt": "Why does the teacher say you cannot revise writing by reading?", "options": ["Reading is boring", "Writing is a skill that must be practised, not studied", "Books are unreliable", "There is not enough time"], "answer": 1, "explanation": "He says if the paper asks you to write a letter, you must have written letters, not read about them." },
         { "kind": "mcq", "prompt": "Which piece of advice does the teacher predict students will ignore?", "options": ["Shorter sessions", "Writing practice", "Sleep", "Reading the paper"], "answer": 2, "explanation": "He introduces it with 'and this is the one you will ignore: sleep.'" },
         { "kind": "short", "prompt": "According to the teacher, how does almost every serious mistake begin?", "answer": ["misreading", "misreading the question", "with misreading", "by misreading the question"], "explanation": "He says almost every serious mistake he has marked began with misreading." }
+      ]
+    },
+    {
+      "id": "pb06-u03-a08",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "Follow the directions (Unit 3, Activity 8)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 3, Activity 8.1: Listen, follow the directions and name the buildings. The book's map is not needed here: listen and write which building has each number.",
+      "instructions": "Listen to the directions. Write the name of the building for each number, and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "You are in Sea Street now. The hospital is on your left. That is number one in your map."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Go along that road and turn to Upper Street. The building on your left is the pharmacy."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Go along that road until you find the playground on your left. It is number three."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "You can see a junction. Mark it with a star. Turn right from the junction to the Station Road."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Go along the road until you find another junction. Mark it with two stars. Turn to your right. It is the Market Road."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "You can see a clock tower on your right. It is number two."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Go along the road. You will enter the Sea Street again. Turn left. The first building on your left is the bank. It is number four."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Pass the bank. You will see a cafe. Behind the cafe is the market. It is building number five. You can buy fresh fruits and vegetables there."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Name the buildings.",
+          "lines": [
+            {
+              "label": "Number 1:",
+              "answer": [
+                "hospital",
+                "the hospital"
+              ]
+            },
+            {
+              "label": "Number 2:",
+              "answer": [
+                "clock tower",
+                "the clock tower",
+                "clocktower"
+              ]
+            },
+            {
+              "label": "Number 3:",
+              "answer": [
+                "playground",
+                "the playground",
+                "play ground"
+              ]
+            },
+            {
+              "label": "Number 4:",
+              "answer": [
+                "bank",
+                "the bank"
+              ]
+            },
+            {
+              "label": "Number 5:",
+              "answer": [
+                "market",
+                "the market"
+              ]
+            }
+          ],
+          "explanation": "1 hospital, 2 clock tower, 3 playground, 4 bank, 5 market."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which building is on your left when you turn into Upper Street?",
+          "options": [
+            "The bank",
+            "The pharmacy",
+            "The cafe"
+          ],
+          "answer": 1,
+          "explanation": "The building on your left is the pharmacy."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How do you mark the second junction?",
+          "options": [
+            "With one star",
+            "With two stars",
+            "With a circle"
+          ],
+          "answer": 1,
+          "explanation": "Mark it with two stars."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is behind the cafe?",
+          "options": [
+            "The market",
+            "The bank",
+            "The hospital"
+          ],
+          "answer": 0,
+          "explanation": "Behind the cafe is the market."
+        }
+      ]
+    },
+    {
+      "id": "pb06-u04-a07",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "A message from Mother (Unit 4, Activity 7)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 4, Activity 7: Listen and Answer. Govinda and Vigneshvari find a message from their mother on the kitchen table.",
+      "instructions": "Listen to Mother's message. For each item, choose Yes if they have to do it, or No if they do not.",
+      "script": [
+        {
+          "speaker": "Mother",
+          "text": "Dear son and daughter, I'm leaving for work a little early today."
+        },
+        {
+          "speaker": "Mother",
+          "text": "First, have lunch. Wash the plates and dishes. Handle them carefully."
+        },
+        {
+          "speaker": "Mother",
+          "text": "Don't wash pans. I'll wash them when I come home after work."
+        },
+        {
+          "speaker": "Mother",
+          "text": "Keep the serviettes in the right place. There are some biscuits in a canister."
+        },
+        {
+          "speaker": "Mother",
+          "text": "Remind grandma to prepare tea around 3.00 p.m. Enjoy the biscuits while having tea."
+        },
+        {
+          "speaker": "Mother",
+          "text": "Don't wait till I return to take a wash. Mother."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Prepare lunch.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Mother does not ask them to prepare lunch, only to have it."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Have lunch.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "First, have lunch."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Wash plates.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Wash the plates and dishes."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Wash dishes.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Wash the plates and dishes."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Handle pans carefully.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "They are told not to wash the pans at all. It is the plates and dishes they must handle carefully."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Wash pans.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Don't wash pans. I'll wash them when I come home."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Handle plates carefully.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Wash the plates and dishes. Handle them carefully."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Keep the used serviettes on the table.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Keep the serviettes in the right place."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Keep the biscuits in a tin.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "The biscuits are already in a canister; they are to enjoy them with tea."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Prepare coffee.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Coffee is not mentioned."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Prepare tea.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "They must remind grandma to prepare tea. Grandma prepares it."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Eat biscuits with tea.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Enjoy the biscuits while having tea."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Take a wash.",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Don't wait till I return to take a wash."
+        }
+      ]
+    },
+    {
+      "id": "pb06-u04-a08",
+      "grade": 6,
+      "rate": 0.8,
+      "source": "textbook",
+      "title": "Words that sound alike (Unit 4, Activity 8)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 4, Activity 8: Listen and Write. Your teacher reads eight words.",
+      "instructions": "Listen to each word. Choose the word you heard that belongs with each word list.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Listen to these words."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number one. tell."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number two. leg."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number three. mend."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number four. men."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number five. bent."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number six. deck."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number seven. mess."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Number eight. wet."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "match",
+          "prompt": "Match each word list with the word you heard.",
+          "pairs": [
+            {
+              "term": "ten, hen, then",
+              "meaning": "men"
+            },
+            {
+              "term": "beg, peg",
+              "meaning": "leg"
+            },
+            {
+              "term": "jet, net, let",
+              "meaning": "wet"
+            },
+            {
+              "term": "less, bless, stress",
+              "meaning": "mess"
+            },
+            {
+              "term": "well, fell, smell",
+              "meaning": "tell"
+            },
+            {
+              "term": "neck, peck, wreck",
+              "meaning": "deck"
+            },
+            {
+              "term": "send, lend, trend",
+              "meaning": "mend"
+            },
+            {
+              "term": "sent, lent, tent, went",
+              "meaning": "bent"
+            }
+          ],
+          "explanation": "Each word rhymes with the words in its list: men/ten, leg/beg, wet/jet, mess/less, tell/well, deck/neck, mend/send, bent/sent."
+        }
+      ]
+    },
+    {
+      "id": "pb06-u06-a03",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "Rajan's day (Unit 6, Activity 3)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 6, Activity 3: Listen to your teacher and put a tick or a cross.",
+      "instructions": "Listen to the description of Rajan's afternoon and evening. Mark each sentence right or wrong.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Rajan returns home from school at 2 o'clock. Then he eats his lunch and takes a rest."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "At about 3 o'clock, his friends Samith and Sameer come to play with him. Often they play cricket. Sometimes they ride their bicycles."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "At 4.30 Rajan comes home. Then he drinks his tea, takes a shower, and does his homework."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "At 5.30 he watches his favourite cartoon programme with his sister. After that, he studies again for an hour. Then he spends time with his family."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They have their dinner at 7.30 and go to bed at 9 o'clock."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Rajan returns home from school at 2 o'clock.",
+          "options": [
+            "Right (tick)",
+            "Wrong (cross)"
+          ],
+          "answer": 0,
+          "explanation": "Rajan returns home from school at 2 o'clock."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rajan's friends come to study with him.",
+          "options": [
+            "Right (tick)",
+            "Wrong (cross)"
+          ],
+          "answer": 1,
+          "explanation": "His friends come to play with him."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rajan does his homework in the evening.",
+          "options": [
+            "Right (tick)",
+            "Wrong (cross)"
+          ],
+          "answer": 0,
+          "explanation": "After his tea and shower he does his homework."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rajan and his sister play badminton in the evening.",
+          "options": [
+            "Right (tick)",
+            "Wrong (cross)"
+          ],
+          "answer": 1,
+          "explanation": "At 5.30 he watches a cartoon programme with his sister."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Rajan's family has their dinner at 8 o'clock.",
+          "options": [
+            "Right (tick)",
+            "Wrong (cross)"
+          ],
+          "answer": 1,
+          "explanation": "They have their dinner at 7.30."
+        }
+      ]
+    },
+    {
+      "id": "pb06-u07-a03",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "What was the weather like? (Unit 7, Activity 3)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 7, Activity 3: Listen to the description and name the symbols.",
+      "instructions": "Listen to the description of the weather. Write the weather for each day and time.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Today is Monday and it is windy. The weather forecast says that it will rain in the evening. No thundering will occur during the day."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "But yesterday was a sunny day. In the afternoon it was a little cloudy."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Last Tuesday, there was a thunder shower at about 7.00 a.m. The rain started in the afternoon of the same day. It was so cold."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Generally, it is cold in December."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Write the weather.",
+          "lines": [
+            {
+              "label": "Sunday:",
+              "answer": [
+                "sunny",
+                "sun",
+                "a sunny day"
+              ]
+            },
+            {
+              "label": "Monday:",
+              "answer": [
+                "windy",
+                "wind"
+              ]
+            },
+            {
+              "label": "Tuesday (morning):",
+              "answer": [
+                "thunder shower",
+                "a thunder shower",
+                "thunder",
+                "thundershower",
+                "thunder and rain",
+                "thunderstorm"
+              ]
+            },
+            {
+              "label": "Monday (evening):",
+              "answer": [
+                "rain",
+                "rainy",
+                "raining"
+              ]
+            },
+            {
+              "label": "Tuesday (afternoon):",
+              "answer": [
+                "rain",
+                "rainy",
+                "raining",
+                "cold and rainy",
+                "rainy and cold"
+              ]
+            },
+            {
+              "label": "Sunday (afternoon):",
+              "answer": [
+                "cloudy",
+                "a little cloudy",
+                "cloud"
+              ]
+            }
+          ],
+          "explanation": "Yesterday (Sunday) was sunny and a little cloudy in the afternoon. Today (Monday) is windy with rain forecast for the evening. Last Tuesday had a thunder shower in the morning and rain in the afternoon."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which day is today?",
+          "options": [
+            "Sunday",
+            "Monday",
+            "Tuesday"
+          ],
+          "answer": 1,
+          "explanation": "Today is Monday."
+        }
+      ]
+    },
+    {
+      "id": "pb06-u10-a03",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "Maheshwari's visit (Unit 10, Activity 3)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 10, Activity 3: Listen to your teacher and fill in the blanks.",
+      "instructions": "Listen to the sentences. Write the missing word in each one. Each sentence is read twice.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Maheshwari visited her grandmother with her family."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They took a train to Kilinochchi."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They played with her friends."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Maheshwari visited several important places."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Grandmother prepared a tasty sweetmeat for them."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Listen again."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Maheshwari visited her grandmother with her family."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They took a train to Kilinochchi."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They played with her friends."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Maheshwari visited several important places."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Grandmother prepared a tasty sweetmeat for them."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "gap",
+          "prompt": "Maheshwari ____ her grandmother with her family.",
+          "answer": [
+            "visited"
+          ],
+          "explanation": "Maheshwari visited her grandmother."
+        },
+        {
+          "kind": "gap",
+          "prompt": "They ____ a train to Kilinochchi.",
+          "answer": [
+            "took"
+          ],
+          "explanation": "They took a train. Take becomes took in the past."
+        },
+        {
+          "kind": "gap",
+          "prompt": "They ____ with her friends.",
+          "answer": [
+            "played"
+          ],
+          "explanation": "They played with her friends."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Maheshwari ____ several important places.",
+          "answer": [
+            "visited"
+          ],
+          "explanation": "Maheshwari visited several important places."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Grandmother ____ a tasty sweetmeat for them.",
+          "answer": [
+            "prepared"
+          ],
+          "explanation": "Grandmother prepared a tasty sweetmeat."
+        }
+      ]
+    },
+    {
+      "id": "pb06-u11-a08",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "A baby zebra is born (Unit 11, Activity 8)",
+      "description": "From the Grade 6 English Pupil's Book, Unit 11, Activity 8: Listen to the news item and complete the grid. The news item does not say the month of birth, so that row is left out.",
+      "instructions": "Listen to the news item and complete the grid.",
+      "script": [
+        {
+          "speaker": "Narrator",
+          "text": "Zebra baby born in Sri Lanka National Zoo."
+        },
+        {
+          "speaker": "Narrator",
+          "text": "A baby zebra was born yesterday in Sri Lanka's National Zoo in Dehiwela after 17 years, the zoo authorities announced."
+        },
+        {
+          "speaker": "Narrator",
+          "text": "The baby was born to a zebra couple brought to Sri Lanka in 2008 from Xiangjang Safari Park in China. The mother and father are around 5 years old now."
+        },
+        {
+          "speaker": "Narrator",
+          "text": "The baby is in good health, the zoo sources said. There are 5 zebras in Dehiwela Zoo now with the newborn, who is expected to be an attraction for the visitors to the zoo."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Complete the grid.",
+          "lines": [
+            {
+              "label": "Place of birth: Dehiwela",
+              "answer": [
+                "zoo",
+                "national zoo",
+                "the national zoo",
+                "the zoo",
+                "zoo in dehiwela"
+              ]
+            },
+            {
+              "label": "The country of the baby zebra's parents:",
+              "answer": [
+                "china"
+              ]
+            },
+            {
+              "label": "Parents' age (years):",
+              "answer": [
+                "5",
+                "five",
+                "around 5",
+                "around five",
+                "about 5",
+                "about five"
+              ]
+            },
+            {
+              "label": "Number of zebras in the zoo:",
+              "answer": [
+                "5",
+                "five"
+              ]
+            }
+          ],
+          "explanation": "Born in Dehiwela Zoo; parents from China, about 5 years old; there are now 5 zebras in the zoo."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "When did a zebra last have a baby at the zoo?",
+          "options": [
+            "Last year",
+            "17 years ago",
+            "In 2008"
+          ],
+          "answer": 1,
+          "explanation": "The baby was born after 17 years."
+        }
+      ]
+    },
+    {
+      "id": "wb06-u06-a04",
+      "grade": 6,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "My penfriend Amodini (Workbook, Unit 6, Activity 4)",
+      "description": "From the Grade 6 English Workbook, Unit 6, Activity 4. The questions here are RCF English's.",
+      "instructions": "Listen to the description of a penfriend and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "All the students in my class are my friends. I have some other friends in my village too. All of them are from Sri Lanka."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "I have a very special friend. She is not a Sri Lankan. She is from India. I have not seen her. She is my only penfriend from India."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Her name is Amodini and she is twelve years old. She can speak four languages. They are Tamil, Hindi, Bangla and English."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "She likes to learn Japanese also, but she does not have any language classes nearby to learn Japanese."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "She likes Sri Lankan tea very much. Anyway, she often drinks soft drinks. Her favourite food is rice and curry, like ourselves. She does not like to eat meat."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Her favourite game is netball. But she does not play badminton or cricket."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Amodini is a good reader. She reads books very often. When she is free, she writes essays and short stories. She has sent me some of her stories. They are enjoyable."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "She wants to become a writer one day. I think she will become a famous writer in future."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Complete the notes about the penfriend.",
+          "lines": [
+            {
+              "label": "Name:",
+              "answer": [
+                "amodini"
+              ]
+            },
+            {
+              "label": "Country:",
+              "answer": [
+                "india"
+              ]
+            },
+            {
+              "label": "Age:",
+              "answer": [
+                "12",
+                "twelve",
+                "twelve years old",
+                "12 years old",
+                "12 years"
+              ]
+            },
+            {
+              "label": "Favourite game:",
+              "answer": [
+                "netball"
+              ]
+            }
+          ],
+          "explanation": "Amodini is twelve, from India, and her favourite game is netball."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How many languages can Amodini speak?",
+          "options": [
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "answer": 2,
+          "explanation": "Tamil, Hindi, Bangla and English: four languages."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which language would she like to learn?",
+          "options": [
+            "Japanese",
+            "Sinhala",
+            "French"
+          ],
+          "answer": 0,
+          "explanation": "She likes to learn Japanese, but there are no classes nearby."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does she NOT like to eat?",
+          "options": [
+            "Rice and curry",
+            "Meat",
+            "Vegetables"
+          ],
+          "answer": 1,
+          "explanation": "She does not like to eat meat."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does she want to become?",
+          "options": [
+            "A teacher",
+            "A netball player",
+            "A writer"
+          ],
+          "answer": 2,
+          "explanation": "She wants to become a writer one day."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u01-a02",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Kaveesha's water magic (Unit 1, Activity 2)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 1, Activity 2, page 2: Listen and underline the correct answer.",
+      "instructions": "Listen to the instructions for a magic trick and choose the correct answer to complete each sentence.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "To do this you will need a glass and a piece of cardboard."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "First, fill the glass right to the top with water. Next, put the cardboard over the mouth of the glass. Hold on to the cardboard tightly."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Make sure that no air bubbles enter the glass. Then, turn the glass upside down. After that, take away your hand holding the cardboard."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "If the magic is done properly, the water stays in place even when the glass of water is upside down. The air pressure manages to hold the cardboard in place."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "You need ...",
+          "options": [
+            "a glass and a piece of cardboard.",
+            "a glass and a piece of paper."
+          ],
+          "answer": 0,
+          "explanation": "You will need a glass and a piece of cardboard."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Fill the glass ...",
+          "options": [
+            "with sand.",
+            "with water."
+          ],
+          "answer": 1,
+          "explanation": "Fill the glass right to the top with water."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Put the cardboard ...",
+          "options": [
+            "over the mouth of the glass.",
+            "into the glass."
+          ],
+          "answer": 0,
+          "explanation": "Put the cardboard over the mouth of the glass."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "You should ...",
+          "options": [
+            "let air bubbles enter the glass.",
+            "not let air bubbles enter the glass."
+          ],
+          "answer": 1,
+          "explanation": "Make sure that no air bubbles enter the glass."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Turn the glass ...",
+          "options": [
+            "to a side.",
+            "upside down."
+          ],
+          "answer": 1,
+          "explanation": "Turn the glass upside down."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What holds the cardboard in place?",
+          "options": [
+            "Your hand",
+            "The air pressure",
+            "Glue"
+          ],
+          "answer": 1,
+          "explanation": "The air pressure manages to hold the cardboard in place."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u02-a08",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Thamal's garden (Unit 2, Activity 8)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 2, Activity 8, page 20: Listen and label the places in the plan of Thamal's garden.",
+      "instructions": "Listen to the description of Thamal's garden and answer the questions about where each place is.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "This is Thamal's garden. As you enter the garden, there are five oval-shaped cement steps that lead to the house."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "His house is in the middle of the garden. To the left of the entrance to the house, there is a square-shaped pond. On the same side, there is a garden bench a few metres away from it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On the opposite side of the house, there is a well."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "At the back end of the house, there is a rectangular-shaped flowerbed with two mango trees right beside it."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "What leads from the entrance to the house?",
+          "options": [
+            "A path of stones",
+            "Five oval-shaped cement steps",
+            "A row of mango trees"
+          ],
+          "answer": 1,
+          "explanation": "There are five oval-shaped cement steps that lead to the house."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where is the house?",
+          "options": [
+            "In the middle of the garden",
+            "At the back of the garden",
+            "Near the entrance"
+          ],
+          "answer": 0,
+          "explanation": "His house is in the middle of the garden."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What shape is the pond?",
+          "options": [
+            "Round",
+            "Oval",
+            "Square"
+          ],
+          "answer": 2,
+          "explanation": "There is a square-shaped pond."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which place is on the same side as the pond?",
+          "options": [
+            "The well",
+            "The garden bench",
+            "The flowerbed"
+          ],
+          "answer": 1,
+          "explanation": "On the same side, there is a garden bench a few metres away from it."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where is the well?",
+          "options": [
+            "On the opposite side of the house from the pond",
+            "Behind the flowerbed",
+            "Next to the steps"
+          ],
+          "answer": 0,
+          "explanation": "On the opposite side of the house, there is a well."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the sentence.",
+          "lines": [
+            {
+              "label": "At the back of the house there is a flowerbed with two ____ trees beside it.",
+              "answer": [
+                "mango"
+              ]
+            }
+          ],
+          "explanation": "A rectangular flowerbed with two mango trees right beside it."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u03-a07",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "At the playground (Unit 3, Activity 7)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 3, Activity 7, page 28: Listen to a passage about a picture of a playground.",
+      "instructions": "Listen to the description of the playground and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "This is a picture of a playground. There are some boys playing a game of volleyball in the middle of the playground."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On the right end of the playground, a couple of children are flying kites."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "A group of people are watching the volleyball game. They are in the bottom end of the playground. There are a dozen water bottles near them."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On the right corner of the playground, there are a group of people doing their physical exercises."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "What game are the boys playing in the middle of the playground?",
+          "options": [
+            "Cricket",
+            "Volleyball",
+            "Football"
+          ],
+          "answer": 1,
+          "explanation": "Some boys are playing a game of volleyball in the middle."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What are the children at the right end doing?",
+          "options": [
+            "Flying kites",
+            "Running a race",
+            "Doing exercises"
+          ],
+          "answer": 0,
+          "explanation": "A couple of children are flying kites."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where are the people watching the game?",
+          "options": [
+            "At the top end",
+            "In the middle",
+            "At the bottom end"
+          ],
+          "answer": 2,
+          "explanation": "They are in the bottom end of the playground."
+        },
+        {
+          "kind": "gap",
+          "prompt": "There are a ____ water bottles near the people watching.",
+          "answer": [
+            "dozen",
+            "12",
+            "twelve"
+          ],
+          "explanation": "There are a dozen water bottles near them."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What are the people in the right corner doing?",
+          "options": [
+            "Watching volleyball",
+            "Physical exercises",
+            "Eating lunch"
+          ],
+          "answer": 1,
+          "explanation": "A group of people are doing their physical exercises."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u03-a16",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "The Marvels Carnival and Exhibition (Unit 3, Activity 16)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 3, Activity 16, page 38: Listen to the announcement and name the places on the map.",
+      "instructions": "Listen to the announcement about the exhibition and answer the questions about where each stall is.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Welcome to the Marvels Carnival and Exhibition! This year, the Carnival and the Exhibition will provide you a wonderful experience that you have never seen before."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Let me introduce you to the stalls we have on the Exhibition grounds. As you enter the Exhibition Hall, you will see our Information Desk, where you can obtain any information on the Carnival and the Exhibition."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "There is a flight of stairs on the right side of the Information Desk. When you climb up to the first floor, you will find the Auditorium right in front of you."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "The Craft Stall is right next to the Auditorium. The Plant Stall is located opposite the Craft Stall. When you pass through the Plant Stall, you can go to the Magic World. You have to be careful, because you may be in for some surprises."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Opposite the Auditorium, there is a Food Stall. You can refresh yourself before going into the Auditorium to watch the circus."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "On the ground floor, you can visit the Horror House and the Ocean World. The Horror House is on the opposite side of the Education Stall. Right next to the Horror House, on the same side, is the Ocean World."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "What do you see as you enter the Exhibition Hall?",
+          "options": [
+            "The Food Stall",
+            "The Information Desk",
+            "The Auditorium"
+          ],
+          "answer": 1,
+          "explanation": "As you enter, you will see the Information Desk."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where are the stairs?",
+          "options": [
+            "On the right side of the Information Desk",
+            "Behind the Food Stall",
+            "Next to the Ocean World"
+          ],
+          "answer": 0,
+          "explanation": "There is a flight of stairs on the right side of the Information Desk."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which stall is right next to the Auditorium?",
+          "options": [
+            "The Plant Stall",
+            "The Craft Stall",
+            "The Food Stall"
+          ],
+          "answer": 1,
+          "explanation": "The Craft Stall is right next to the Auditorium."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which place do you reach by passing through the Plant Stall?",
+          "options": [
+            "The Magic World",
+            "The Horror House",
+            "The Ocean World"
+          ],
+          "answer": 0,
+          "explanation": "When you pass through the Plant Stall, you can go to the Magic World."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is opposite the Auditorium?",
+          "options": [
+            "The Craft Stall",
+            "The Food Stall",
+            "The Education Stall"
+          ],
+          "answer": 1,
+          "explanation": "Opposite the Auditorium, there is a Food Stall."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which place is right next to the Horror House?",
+          "options": [
+            "The Ocean World",
+            "The Education Stall",
+            "The Plant Stall"
+          ],
+          "answer": 0,
+          "explanation": "Right next to the Horror House, on the same side, is the Ocean World."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "On which floor are the Horror House and the Ocean World?",
+          "options": [
+            "The first floor",
+            "The ground floor"
+          ],
+          "answer": 1,
+          "explanation": "On the ground floor, you can visit the Horror House and the Ocean World."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u04-a10",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Changes to the timetable (Unit 4, Activity 10)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 4, Activity 10, page 46: Listen to your teacher and make the changes to the timetable of Grade 7 B.",
+      "instructions": "Listen to the changes to the timetable and write the new subject for each period.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "There is a change in your timetable. You are requested to make these changes in it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The third period on Monday should be changed as science, and the seventh period as religion."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There's no change for Tuesday."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On Wednesday, the third period should be Sinhala, and the fifth period should be changed as science."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "On Thursday, you will get double periods for P.T.S. That means you have P.T.S. in the third and fourth periods, and Tamil in the last period."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The timetable for Friday remains the same."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Write the new subjects.",
+          "lines": [
+            {
+              "label": "Monday, period 3:",
+              "answer": [
+                "science"
+              ]
+            },
+            {
+              "label": "Monday, period 7:",
+              "answer": [
+                "religion"
+              ]
+            },
+            {
+              "label": "Wednesday, period 3:",
+              "answer": [
+                "sinhala"
+              ]
+            },
+            {
+              "label": "Wednesday, period 5:",
+              "answer": [
+                "science"
+              ]
+            },
+            {
+              "label": "Thursday, periods 3 and 4:",
+              "answer": [
+                "pts",
+                "p.t.s.",
+                "p.t.s",
+                "p t s"
+              ]
+            },
+            {
+              "label": "Thursday, last period:",
+              "answer": [
+                "tamil"
+              ]
+            }
+          ],
+          "explanation": "Monday: 3 Science, 7 Religion. Wednesday: 3 Sinhala, 5 Science. Thursday: 3 and 4 P.T.S., last period Tamil."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "On which days is there no change?",
+          "options": [
+            "Monday and Friday",
+            "Tuesday and Friday",
+            "Tuesday and Thursday"
+          ],
+          "answer": 1,
+          "explanation": "There's no change for Tuesday, and Friday remains the same."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u05-a09",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "The history of toys (Unit 5, Activity 9)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 5, Activity 9, page 53: Listen to descriptions about the history of some toys and amusements and match A with B.",
+      "instructions": "Listen to the descriptions and match each toy or amusement with the correct fact.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Fireworks. Gunpowder was invented in China, probably about 2000 years ago. The Chinese used gunpowder to make fireworks."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Ferris wheel. The Ferris wheel is a large amusement-park ride that is made of a big, vertical wheel that slowly turns around. The Ferris wheel was invented by George Washington Ferris Junior in 1893."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Kaleidoscope. A kaleidoscope is a tube you look into that makes beautiful, colourful patterns using mirrors. The kaleidoscope was invented by the Scottish physicist Sir David Brewster in 1816."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Dolls. Dolls are considered the oldest known toy. Dolls have been found in Egyptian tombs from the twenty-first century B.C."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Crossword puzzle. The crossword puzzle is a word game. It was invented by Arthur Wynne in 1913. The first crossword puzzle by Wynne was published in a U.S. newspaper called the New York World on December 21, 1913."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "match",
+          "prompt": "Match A with B.",
+          "pairs": [
+            {
+              "term": "Fireworks",
+              "meaning": "Invented in China about 2000 years ago"
+            },
+            {
+              "term": "Ferris wheel",
+              "meaning": "Invented by George Washington Ferris Jr. in 1893"
+            },
+            {
+              "term": "Kaleidoscope",
+              "meaning": "Invented by Sir David Brewster in 1816"
+            },
+            {
+              "term": "Crossword puzzles",
+              "meaning": "Invented by Arthur Wynne in 1913"
+            }
+          ],
+          "explanation": "Fireworks: China, about 2000 years ago. Ferris wheel: Ferris, 1893. Kaleidoscope: Brewster, 1816. Crossword: Wynne, 1913."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which toy is said to be the oldest known toy?",
+          "options": [
+            "The kaleidoscope",
+            "Dolls",
+            "Fireworks"
+          ],
+          "answer": 1,
+          "explanation": "Dolls are considered the oldest known toy."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u06-a05",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "How to identify fresh food (Unit 6, Activity 5)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 6, Activity 5, page 59: Listen to your teacher and complete the table.",
+      "instructions": "Listen to the guidelines and match each guideline with the type of food item.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "One. Fresh green leaves are crisp and green in colour. Avoid limp, yellowish leaves."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two. When placed in a pot of cold water, fresh eggs sink to the bottom."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Three. Fresh fruits always smell delicious. They are smooth and only slightly soft."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Four. Fresh vegetables are firm and crisp-looking. Their colour is healthy too."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "match",
+          "prompt": "Complete the table: match each guideline with the type of food item.",
+          "pairs": [
+            {
+              "term": "Should be crisp and green.",
+              "meaning": "Green leaves"
+            },
+            {
+              "term": "Should sink to the bottom when put in a pot of cold water.",
+              "meaning": "Eggs"
+            },
+            {
+              "term": "Should be sweet smelling and not too soft.",
+              "meaning": "Fruits"
+            },
+            {
+              "term": "Should be firm and crisp.",
+              "meaning": "Vegetables"
+            }
+          ],
+          "explanation": "Leaves are crisp and green; eggs sink; fruits smell delicious and are only slightly soft; vegetables are firm and crisp."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u06-a12",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "A rabies vaccination clinic (Unit 6, Activity 12)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 6, Activity 12, page 67: Listen to the announcement and complete the required information.",
+      "instructions": "Listen to the announcement and complete the information.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Rabies is a deadly disease. Please get your dog immunised."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Your attention, please! The M.O.H. Office, Teldeniya, will hold a free rabies vaccination clinic for dogs aged three months or older."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "This clinic will be held on Saturday, the 3rd of October, from 9 a.m. to 11 a.m. at the office premises."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "What is the announcement about?",
+          "options": [
+            "A free rabies vaccination clinic for dogs",
+            "A dog show",
+            "A health talk for parents"
+          ],
+          "answer": 0,
+          "explanation": "A free rabies vaccination clinic for dogs."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the information.",
+          "lines": [
+            {
+              "label": "Day:",
+              "answer": [
+                "saturday"
+              ]
+            },
+            {
+              "label": "Date (e.g. 5th of May):",
+              "answer": [
+                "3rd of october",
+                "3rd october",
+                "3 october",
+                "october 3",
+                "the 3rd of october",
+                "3rd of oct",
+                "3rd oct",
+                "october 3rd"
+              ]
+            },
+            {
+              "label": "Place: M.O.H. Office,",
+              "answer": [
+                "teldeniya"
+              ]
+            },
+            {
+              "label": "How old the dogs should be: three months or",
+              "answer": [
+                "older",
+                "more",
+                "above"
+              ]
+            }
+          ],
+          "explanation": "Saturday, the 3rd of October, 9 a.m. to 11 a.m., at the M.O.H. Office, Teldeniya, for dogs aged three months or older."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "At what time does the clinic start?",
+          "options": [
+            "9 a.m.",
+            "10 a.m.",
+            "11 a.m."
+          ],
+          "answer": 0,
+          "explanation": "From 9 a.m. to 11 a.m."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u07-a13",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Tin Tan's house (Unit 7, Activity 13)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 7, Activity 13, page 81: Listen to the text and underline the correct answer.",
+      "instructions": "Listen to the description of Tin Tan's house and choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Tin Tan's house is on an island. You can go there by boat or helicopter."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "His house is very big. There are 20 bedrooms and 15 other rooms. Video screens are everywhere on the walls in all the rooms."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There is a big kitchen with modern items. There's also a beautiful library with lots of interesting books and maps. You can read many adventurous stories if you visit there."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "It has a large dining room, and about 800 people can sit together. It has an underground garage to park many vehicles. Tin Tan lives here with his dog called Broowy."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There are very old and huge trees in the garden. They are full of fruits and flowers. You can play many games among the trees if you visit there. There are lots of animals and birds roaming freely in the garden."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The mountain behind the house is a beautiful sight. There is a nice balcony to enjoy the beauty of the surroundings. It is a beautiful place! Do you like to visit?"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The house belongs to ...",
+          "options": [
+            "Tin Tan",
+            "Tin Ton",
+            "Tin Tin"
+          ],
+          "answer": 0,
+          "explanation": "Tin Tan's house is on an island."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How can you go there?",
+          "options": [
+            "by boat",
+            "by helicopter",
+            "by boat or helicopter"
+          ],
+          "answer": 2,
+          "explanation": "You can go there by boat or helicopter."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The number of bedrooms is ...",
+          "options": [
+            "20",
+            "12",
+            "15"
+          ],
+          "answer": 0,
+          "explanation": "There are 20 bedrooms and 15 other rooms."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "... are on the wall of each room.",
+          "options": [
+            "Framed pictures",
+            "Clocks",
+            "Wall hangings",
+            "Video screens"
+          ],
+          "answer": 3,
+          "explanation": "Video screens are everywhere on the walls in all the rooms."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The library contains ...",
+          "options": [
+            "books only",
+            "books and maps",
+            "books and newspapers",
+            "maps only"
+          ],
+          "answer": 1,
+          "explanation": "A library with lots of interesting books and maps."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How many people can sit in the dining room?",
+          "options": [
+            "18",
+            "80",
+            "800"
+          ],
+          "answer": 2,
+          "explanation": "About 800 people can sit together."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Broowy is his ...",
+          "options": [
+            "brother",
+            "friendly dog",
+            "neighbour"
+          ],
+          "answer": 1,
+          "explanation": "Tin Tan lives here with his dog called Broowy."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What can you see behind the house?",
+          "options": [
+            "a valley",
+            "a lake",
+            "a mountain",
+            "a farm"
+          ],
+          "answer": 2,
+          "explanation": "The mountain behind the house is a beautiful sight."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u09-a15",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Three friends and three bags (Unit 9, Activity 15)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 9, Activity 15, page 105. The book asks you to match people and bags with pictures; here you answer questions about the same details.",
+      "instructions": "Listen to the descriptions of three friends and three bags, and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Mihiri, Ruvini and Samadhi are friends. Mihiri is the tallest. Both Ruvini and Samadhi have long hair. Samadhi's hair is longer than Mihiri's."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There are three bags on the table. Manjula's bag is big, with short shoulder straps. Athula's bag is smaller than Manjula's and has longer shoulder straps. Rizvi's bag is the biggest."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Who is the tallest?",
+          "options": [
+            "Mihiri",
+            "Ruvini",
+            "Samadhi"
+          ],
+          "answer": 0,
+          "explanation": "Mihiri is the tallest."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Whose hair is longer than Mihiri's?",
+          "options": [
+            "Samadhi's",
+            "Nobody's"
+          ],
+          "answer": 0,
+          "explanation": "Samadhi's hair is longer than Mihiri's."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Whose bag is the biggest?",
+          "options": [
+            "Manjula's",
+            "Athula's",
+            "Rizvi's"
+          ],
+          "answer": 2,
+          "explanation": "Rizvi's bag is the biggest."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which bag has short shoulder straps?",
+          "options": [
+            "Manjula's",
+            "Athula's",
+            "Rizvi's"
+          ],
+          "answer": 0,
+          "explanation": "Manjula's bag is big, with short shoulder straps."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is true about Athula's bag?",
+          "options": [
+            "It is the biggest",
+            "It is smaller than Manjula's and has longer straps",
+            "It has no straps"
+          ],
+          "answer": 1,
+          "explanation": "Athula's bag is smaller than Manjula's and has longer shoulder straps."
+        }
+      ]
+    },
+    {
+      "id": "pb07-u10-a09",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Endangered species (Unit 10, Activity 9)",
+      "description": "From the Grade 7 English Pupil's Book, Unit 10, Activity 9, page 115: Listen to Vishwa's presentation and identify the animals.",
+      "instructions": "Listen to Vishwa's presentation on endangered species. Match each animal with the letter of its description.",
+      "script": [
+        {
+          "speaker": "Vishwa",
+          "text": "A. This animal is the largest species in the cat family. Its length is about 3 metres and it has a large tail. It is carnivorous. It is the national animal of Bangladesh, India, Vietnam, Malaysia and South Korea. This is an endangered species."
+        },
+        {
+          "speaker": "Vishwa",
+          "text": "B. It is a reptile. It lives in or around water. It has a shell. Its colour may vary. It can walk and swim. It moves very slowly."
+        },
+        {
+          "speaker": "Vishwa",
+          "text": "C. This is another endangered species. It has a thick wool coat. It is a bear native to China. It's black and white. There are black patches around its eyes. It eats bamboo."
+        },
+        {
+          "speaker": "Vishwa",
+          "text": "D. It is the largest mammal. It is threatened by environmental change. It lives in the ocean. Its weight is about 200 tons."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "match",
+          "prompt": "Fill in the grid with the correct letter.",
+          "pairs": [
+            {
+              "term": "Turtle",
+              "meaning": "B"
+            },
+            {
+              "term": "Panda",
+              "meaning": "C"
+            },
+            {
+              "term": "Tiger",
+              "meaning": "A"
+            },
+            {
+              "term": "Blue whale",
+              "meaning": "D"
+            }
+          ],
+          "explanation": "A is the tiger (largest cat), B the turtle (reptile with a shell), C the panda (black and white bear that eats bamboo), D the blue whale (largest mammal)."
+        }
+      ]
+    },
+    {
+      "id": "wb07-u03-a14",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Vihanga's town, Vijayagama (Workbook, Unit 3, Activity 14)",
+      "description": "From the Grade 7 English Workbook, Unit 3, Activity 14, page 27: Listen to the description and complete the map. Here you answer questions about the same places.",
+      "instructions": "Listen to the description of the town and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Vihanga lives in Vijayagama. It is a small town. Write 'Vijayagama' on top of the box given."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There is a town hall in the middle of the town. The temple is on the left-hand side of it. It is numbered as 3. Write 'temple' there."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There is a clock tower opposite the town hall. It is a circle. Write the two letters C and T inside it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The small circle closer to it is a mosque. Draw a crescent inside the small circle."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The rectangles shown closer to the clock tower are houses. Put H inside all of them."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "There is a common well. The rectangle with number 1 is a park. Write 'park' inside it. The other rectangle closer to the well is a house. Put H inside it. There are some houses opposite the well too. Put H inside all those rectangles."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Find 4 and write 'post office' in it. Write 'school' in the rectangle numbered as 2."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The small rectangle closer to 5 is a shop. Write 'shop' in it. The biggest rectangle given is the river. Write 'river' inside it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The rectangle next to 4 is a kovil. Write 'kovil' in it. The square given in between the town hall and 6 is a church. Write 'church' in it."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Which place has each number?",
+          "lines": [
+            {
+              "label": "Number 1:",
+              "answer": [
+                "park",
+                "a park",
+                "the park"
+              ]
+            },
+            {
+              "label": "Number 2:",
+              "answer": [
+                "school",
+                "a school",
+                "the school"
+              ]
+            },
+            {
+              "label": "Number 3:",
+              "answer": [
+                "temple",
+                "a temple",
+                "the temple"
+              ]
+            },
+            {
+              "label": "Number 4:",
+              "answer": [
+                "post office",
+                "the post office",
+                "a post office",
+                "postoffice"
+              ]
+            }
+          ],
+          "explanation": "1 park, 2 school, 3 temple, 4 post office."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is in the middle of the town?",
+          "options": [
+            "The clock tower",
+            "The town hall",
+            "The river"
+          ],
+          "answer": 1,
+          "explanation": "There is a town hall in the middle of the town."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What do you draw inside the small circle, the mosque?",
+          "options": [
+            "A star",
+            "A crescent",
+            "The letter H"
+          ],
+          "answer": 1,
+          "explanation": "Draw a crescent inside the small circle."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which is the biggest rectangle?",
+          "options": [
+            "The river",
+            "The park",
+            "The school"
+          ],
+          "answer": 0,
+          "explanation": "The biggest rectangle given is the river."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is next to the post office (number 4)?",
+          "options": [
+            "A church",
+            "A kovil",
+            "A shop"
+          ],
+          "answer": 1,
+          "explanation": "The rectangle next to 4 is a kovil."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where is the church?",
+          "options": [
+            "Between the town hall and 6",
+            "Next to the well",
+            "Opposite the school"
+          ],
+          "answer": 0,
+          "explanation": "The square in between the town hall and 6 is a church."
+        }
+      ]
+    },
+    {
+      "id": "wb07-u05-a04",
+      "grade": 7,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Tyrannosaurus rex (Workbook, Unit 5, Activity 4)",
+      "description": "From the Grade 7 English Workbook, Unit 5, Activity 4, pages 37-38: Listen to the paragraph and complete the diagram.",
+      "instructions": "Listen to the paragraph and complete the diagram of Tyrannosaurus rex.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Tyrannosaurus rex was a large dinosaur. It was a meat-eater that walked on two legs."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "It had a huge head, a strong body and a powerful tail. Its legs were strong, with bird-like feet and three toes."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Its arms were short and tiny. There were two fingers on each hand."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "It was a fierce hunter who used its sharp teeth and claws to catch its prey."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Complete the diagram.",
+          "lines": [
+            {
+              "label": "A ____ dinosaur",
+              "answer": [
+                "large"
+              ]
+            },
+            {
+              "label": "ate ____",
+              "answer": [
+                "meat"
+              ]
+            },
+            {
+              "label": "a ____ tail",
+              "answer": [
+                "powerful"
+              ]
+            },
+            {
+              "label": "short, tiny ____",
+              "answer": [
+                "arms"
+              ]
+            },
+            {
+              "label": "____ fingers (on each hand)",
+              "answer": [
+                "two",
+                "2"
+              ]
+            },
+            {
+              "label": "bird-like ____",
+              "answer": [
+                "feet"
+              ]
+            },
+            {
+              "label": "____ toes",
+              "answer": [
+                "three",
+                "3"
+              ]
+            },
+            {
+              "label": "a ____ head",
+              "answer": [
+                "huge"
+              ]
+            },
+            {
+              "label": "walked on ____",
+              "answer": [
+                "two legs",
+                "2 legs"
+              ]
+            }
+          ],
+          "explanation": "A large meat-eating dinosaur with a huge head, powerful tail, short tiny arms, two fingers, bird-like feet and three toes; it walked on two legs."
+        }
+      ]
+    },
+    {
+      "id": "pb08-u01-a05",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "Packing for a field trip (Unit 1, Activity 1.5)",
+      "description": "From the Grade 8 English Pupil's Book, Unit 1, Activity 1.5: Listen and find the items they discussed.",
+      "instructions": "Themiya and Thenuka are packing for a scout field trip. Listen and decide whether each item was discussed.",
+      "script": [
+        {
+          "speaker": "Mother",
+          "text": "First think about your clothes. Pack enough clothes for the entire trip. Think of the possible changes in the weather. Remember to take an extra uniform with you. You should take soap, your toothbrushes, combs and toothpaste too. Don't forget your flip-flops, boots and caps."
+        },
+        {
+          "speaker": "Themiya",
+          "text": "Mother, we were given a separate list of items to take with us. We can pack them later."
+        },
+        {
+          "speaker": "Mother",
+          "text": "Good. How about the compass?"
+        },
+        {
+          "speaker": "Thenuka",
+          "text": "We don't want it this time."
+        },
+        {
+          "speaker": "Themiya",
+          "text": "Thenuka, did you take enough water and a torch?"
+        },
+        {
+          "speaker": "Thenuka",
+          "text": "Yes, I did. Now, we'll check everything."
+        },
+        {
+          "speaker": "Mother",
+          "text": "Carry on with your work. Themiya, give me the contact number of your teacher before you leave."
+        },
+        {
+          "speaker": "Thenuka",
+          "text": "Here's the number, Mother."
+        },
+        {
+          "speaker": "Mother",
+          "text": "That's good."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Was soap discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "You should take soap."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Were cups discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Cups are not mentioned."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Was a compass discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Mother asks about the compass; Thenuka says they don't want it this time. It was discussed, though not packed."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Was washing powder discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Washing powder is not mentioned."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Was a torch discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Did you take enough water and a torch?"
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Was a mirror discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "A mirror is not mentioned."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Were boots discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "explanation": "Don't forget your flip-flops, boots and caps."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Was a mobile phone discussed?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 1,
+          "explanation": "Mother asks for the teacher's contact number, but a mobile phone is not mentioned."
+        }
+      ]
+    },
+    {
+      "id": "pb08-u02-a08",
+      "grade": 8,
+      "rate": 0.85,
+      "source": "textbook",
+      "title": "Follow the letter directions (Unit 2, Activity 2.8)",
+      "description": "From the Grade 8 English Pupil's Book, Unit 2, Activity 2.8: Listen to your teacher and follow the instructions. Have a pencil and paper ready.",
+      "instructions": "Write the word as you are told, and change it step by step. Pause the recording whenever you need time.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Start with the caterpillar and follow the directions to see where you end up."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "One. Write down: CATERPILLAR. C, A, T, E, R, P, I, L, L, A, R."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two. Take out all of the A's."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Three. Change the I to a T."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Four. Take out the seventh letter."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Five. Replace the P with B."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Six. Add Y to the end of the word."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Seven. Take out the first consonant."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Eight. Bring B to the front of the word."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Nine. Write U between the first and the second letter."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Ten. Take out the eighth letter."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Eleven. Write F to be the seventh letter."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Twelve. Move the sixth letter to be the fourth letter."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Thirteen. Where did you end up?"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Write the letters you have at each stage.",
+          "lines": [
+            {
+              "label": "After step 2:",
+              "answer": [
+                "ctrpillr",
+                "cterpillr"
+              ]
+            },
+            {
+              "label": "After step 6:",
+              "answer": [
+                "cterbtlry"
+              ]
+            },
+            {
+              "label": "At the end (step 12):",
+              "answer": [
+                "butterfly"
+              ]
+            }
+          ],
+          "explanation": "CATERPILLAR, then CTERPILLR (no A's), CTERPTLLR, CTERPTLR, CTERBTLR, CTERBTLRY, TERBTLRY, BTERTLRY, BUTERTLRY, BUTERTLY, BUTERTFLY and finally BUTTERFLY."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where did you end up?",
+          "options": [
+            "A butterfly",
+            "A caterpillar",
+            "A beetle"
+          ],
+          "answer": 0,
+          "explanation": "The caterpillar becomes a BUTTERFLY."
+        }
+      ]
+    },
+    {
+      "id": "pb08-u04-a07",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "Three friends, four flats (Unit 4, Activity 4.7)",
+      "description": "From the Grade 8 English Pupil's Book, Unit 4, Activity 4.7: Listen and label the building. Here you answer questions about who and what is where.",
+      "instructions": "Listen to the description of the building and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Mr Silva, Mr Raj and Mr Kumar have been good friends for years. Every Sunday, they get together for a chat and they often go to the nearest park for a walk."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "They live in flats in the same building, and they are close to each other. There are four flats in the building, and they are above the shops."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The first shop is below Mr Silva's flat, and it's the bookshop. Mr Raj lives in between Mr Silva's and Mr Kumar's flats."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The Cobblers, a shoe shop, is below the flat where Mr Kumar lives. The Knitters, a clothes shop, is the middle one."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Nobody lives in the flat which is next to Mr Kumar's flat. They sold it and went abroad."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The staircase is at the space which is next to the Cobblers. So, Mr Silva has to pass Mr Raj's and Mr Kumar's flats to come down."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "When their friends or relations visit their places for the first time, they have to go around the building to find the entrance."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Which shop is below Mr Silva's flat?",
+          "options": [
+            "The bookshop",
+            "The Knitters",
+            "The Cobblers"
+          ],
+          "answer": 0,
+          "explanation": "The first shop is below Mr Silva's flat, and it's the bookshop."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who lives in between Mr Silva and Mr Kumar?",
+          "options": [
+            "Nobody",
+            "Mr Raj",
+            "The shopkeeper"
+          ],
+          "answer": 1,
+          "explanation": "Mr Raj lives in between Mr Silva's and Mr Kumar's flats."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What kind of shop is the Cobblers?",
+          "options": [
+            "A clothes shop",
+            "A shoe shop",
+            "A bookshop"
+          ],
+          "answer": 1,
+          "explanation": "The Cobblers, a shoe shop, is below Mr Kumar's flat."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which shop is in the middle?",
+          "options": [
+            "The Knitters",
+            "The Cobblers",
+            "The bookshop"
+          ],
+          "answer": 0,
+          "explanation": "The Knitters, a clothes shop, is the middle one."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why is the flat next to Mr Kumar's empty?",
+          "options": [
+            "It is being painted",
+            "The owners sold it and went abroad",
+            "It is used as a store room"
+          ],
+          "answer": 1,
+          "explanation": "They sold it and went abroad."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where is the staircase?",
+          "options": [
+            "Next to the bookshop",
+            "Next to the Cobblers",
+            "In the middle of the building"
+          ],
+          "answer": 1,
+          "explanation": "The staircase is at the space next to the Cobblers."
+        }
+      ]
+    },
+    {
+      "id": "pb08-u05-a09",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "Final boarding call (Unit 5, Activity 5.9)",
+      "description": "From the Grade 8 English Pupil's Book, Unit 5, Activity 5.9: Listen to the airport announcement and complete the information.",
+      "instructions": "Listen to the airport announcement and complete the information.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "This is the final boarding call for passengers booked on flight 432A to Colombo."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "The flight is ready to depart at 08.35 a.m. Please proceed to gate 3 immediately."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "The final checks are being completed, and the captain will order the doors of the aircraft to close in approximately five minutes' time."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "I repeat. This is the final boarding call. Thank you."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Time of the day:",
+          "options": [
+            "morning",
+            "afternoon",
+            "evening"
+          ],
+          "answer": 0,
+          "explanation": "The flight departs at 08.35 a.m."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Type of the announcement:",
+          "options": [
+            "Pre-boarding",
+            "Final boarding",
+            "Pre-flight"
+          ],
+          "answer": 1,
+          "explanation": "This is the final boarding call."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the information.",
+          "lines": [
+            {
+              "label": "Flight number:",
+              "answer": [
+                "432a",
+                "432 a"
+              ]
+            },
+            {
+              "label": "Destination:",
+              "answer": [
+                "colombo"
+              ]
+            },
+            {
+              "label": "Gate number:",
+              "answer": [
+                "3",
+                "three",
+                "gate 3"
+              ]
+            },
+            {
+              "label": "Minutes until the aircraft doors close:",
+              "answer": [
+                "5",
+                "five",
+                "five minutes",
+                "5 minutes"
+              ]
+            }
+          ],
+          "explanation": "Flight 432A to Colombo, gate 3, doors closing in about five minutes."
+        }
+      ]
+    },
+    {
+      "id": "pb08-u06-a08",
+      "grade": 8,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "Draw my village (Unit 6, Activity 6.8)",
+      "description": "From the Grade 8 English Pupil's Book, Unit 6, Activity 6.8: Listen to your teacher and draw a picture of your village. You may draw as you listen; the questions check the details.",
+      "instructions": "Listen to the instructions for drawing a village and answer the questions.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "Draw my village."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "One. Draw a medium-sized circle in the middle of your paper. Label it 'lake'."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two. Draw a large square below the circle. Label it 'paddy field'."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Three. Draw two rows of smaller rectangles, ten on each side of the square. Keep the same distance between them. They should not touch the sides of the square."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Four. Draw a medium-sized triangle above the circle. The bottom of the triangle should not touch the top of the circle. Label it 'a religious place'."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Five. Draw ten small trees around the triangle."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Six. Draw a small triangle to the left of the medium-sized circle. Label it 'mountain'."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "What does the medium-sized circle show?",
+          "options": [
+            "A lake",
+            "A mountain",
+            "A paddy field"
+          ],
+          "answer": 0,
+          "explanation": "Draw a medium-sized circle in the middle. Label it lake."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What shape is the paddy field, and where is it?",
+          "options": [
+            "A large square below the circle",
+            "A triangle above the circle",
+            "A rectangle beside the lake"
+          ],
+          "answer": 0,
+          "explanation": "Draw a large square below the circle. Label it paddy field."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How many smaller rectangles are there on each side of the square?",
+          "options": [
+            "Five",
+            "Ten",
+            "Twenty"
+          ],
+          "answer": 1,
+          "explanation": "Two rows of smaller rectangles, ten on each side of the square."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is the medium-sized triangle above the circle?",
+          "options": [
+            "A religious place",
+            "A mountain",
+            "A house"
+          ],
+          "answer": 0,
+          "explanation": "Label it a religious place."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where do the ten small trees go?",
+          "options": [
+            "Around the lake",
+            "Around the triangle",
+            "Along the paddy field"
+          ],
+          "answer": 1,
+          "explanation": "Draw ten small trees around the triangle."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where is the mountain?",
+          "options": [
+            "To the left of the circle",
+            "Below the square",
+            "To the right of the triangle"
+          ],
+          "answer": 0,
+          "explanation": "Draw a small triangle to the left of the medium-sized circle. Label it mountain."
+        }
+      ]
+    },
+    {
+      "id": "pb08-u08-a12",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "Welcome to Bangkok (Unit 8, Activity 8.12)",
+      "description": "From the Grade 8 English Pupil's Book, Unit 8, Activity 8.12, and Workbook, Unit 8, Activity 8: Listen to the airline announcement and select the correct words.",
+      "instructions": "Listen to the airline announcement and select the correct words.",
+      "script": [
+        {
+          "speaker": "Cabin crew",
+          "text": "Ladies and gentlemen, welcome to Bangkok International Airport. The local time is 5.35 p.m., and we have arrived on time."
+        },
+        {
+          "speaker": "Cabin crew",
+          "text": "We have fine weather and clear skies, and the temperature is 25 degrees Celsius. For your safety, please remain seated until the Fasten Seat Belts sign is turned off. After that, you are free to move about."
+        },
+        {
+          "speaker": "Cabin crew",
+          "text": "Passengers heading for Tokyo by flight JL 7014, please proceed to terminal D."
+        },
+        {
+          "speaker": "Cabin crew",
+          "text": "Ladies and gentlemen, thank you for joining Sri Lankan Airlines on this trip. We look forward to seeing you again in the future. Have a nice stay."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Airport:",
+          "options": [
+            "Colombo",
+            "Bangkok"
+          ],
+          "answer": 1,
+          "explanation": "Welcome to Bangkok International Airport."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Time:",
+          "options": [
+            "6.00 a.m.",
+            "5.35 p.m."
+          ],
+          "answer": 1,
+          "explanation": "The local time is 5.35 p.m."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Weather:",
+          "options": [
+            "Fine",
+            "Rainy"
+          ],
+          "answer": 0,
+          "explanation": "We have fine weather and clear skies."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Temperature:",
+          "options": [
+            "28 degrees",
+            "25 degrees"
+          ],
+          "answer": 1,
+          "explanation": "The temperature is 25 degrees Celsius."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Tokyo flight number:",
+          "options": [
+            "JL 5423",
+            "JL 7014"
+          ],
+          "answer": 1,
+          "explanation": "Passengers heading for Tokyo by flight JL 7014."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Terminal:",
+          "options": [
+            "B",
+            "D"
+          ],
+          "answer": 1,
+          "explanation": "Please proceed to terminal D."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Airline:",
+          "options": [
+            "Sri Lankan Airlines",
+            "Japan Airlines"
+          ],
+          "answer": 0,
+          "explanation": "Thank you for joining Sri Lankan Airlines."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u01-a05",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "The Early Bird programme (Workbook, Unit 1, Activity 5)",
+      "description": "From the Grade 8 English Workbook, Unit 1, Activity 5: Listen to part of a radio programme.",
+      "instructions": "Listen to the radio programme. Complete the information card and choose the most suitable answers.",
+      "script": [
+        {
+          "speaker": "Shanuka",
+          "text": "Hello, good morning! This is Shanuka from WOW FM with Geetha, welcoming you to the Early Bird programme from studio number two."
+        },
+        {
+          "speaker": "Geetha",
+          "text": "Hello, good morning everybody. I'm Geetha. The time now is two minutes past seven."
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "It's a nice day today in and around our radio station, and thank you for tuning in to WOW FM."
+        },
+        {
+          "speaker": "Geetha",
+          "text": "I hope you all started the day happily."
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "Yes, if you know how to organise yourself for the day ahead, you will enjoy a wonderful day."
+        },
+        {
+          "speaker": "Geetha",
+          "text": "That's right. Having all the things ready the night before is the key to enjoying a wonderful day. What do you think, Shanuka?"
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "Yes, Geetha. Ask yourself, what do I need for tomorrow? What do you say, Geetha?"
+        },
+        {
+          "speaker": "Geetha",
+          "text": "I can give you a list of important things you can do to organise yourself for the day."
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "All right, dear friends, listen carefully."
+        },
+        {
+          "speaker": "Geetha",
+          "text": "Set your clothes ready the night before. There can be torn ones to be attended to, and clothes to be ironed. More than anything else, it's difficult to select a suit in a hurry."
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "It's also important to check your bag and the necessary documents."
+        },
+        {
+          "speaker": "Geetha",
+          "text": "Meanwhile, ladies will have to plan the next day's cooking depending on the schedule of the day and the availability of time. Is there anything else, Shanuka?"
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "Sketch the plan of the next day. If you fear that you might forget something, you ought to write it down as a reminder on a piece of paper and keep it at hand. What else, Geetha?"
+        },
+        {
+          "speaker": "Geetha",
+          "text": "Yes, Shanuka, having a good night's sleep is also important. We also need to start the day early, keeping a margin for the delays likely to happen. So, I think we have covered almost every point."
+        },
+        {
+          "speaker": "Shanuka",
+          "text": "Well, beginning the day with a positive mind and carrying out the plan will bring you success for the day."
+        },
+        {
+          "speaker": "Geetha",
+          "text": "Hope this will be useful for you. All right, it's time for a short commercial break."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Complete the information card.",
+          "lines": [
+            {
+              "label": "Radio station: ____ FM",
+              "answer": [
+                "wow"
+              ]
+            },
+            {
+              "label": "Studio number:",
+              "answer": [
+                "2",
+                "two"
+              ]
+            },
+            {
+              "label": "Programme:",
+              "answer": [
+                "early bird",
+                "the early bird",
+                "early bird programme",
+                "the early bird programme"
+              ]
+            }
+          ],
+          "explanation": "WOW FM, studio number two, the Early Bird programme."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who are the radio presenters?",
+          "options": [
+            "Shanuka and Geetha",
+            "Shanuka and Themiya",
+            "Geetha and Suresh"
+          ],
+          "answer": 0,
+          "explanation": "This is Shanuka from WOW FM with Geetha."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The key to a successful day is ...",
+          "options": [
+            "write down the plan of the day",
+            "plan everything the previous night",
+            "writing the important things"
+          ],
+          "answer": 1,
+          "explanation": "Having all the things ready the night before is the key."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The clothes should be arranged the day before mainly because ...",
+          "options": [
+            "they might need to be ironed",
+            "there can be torn ones",
+            "it's difficult to select one in a hurry"
+          ],
+          "answer": 2,
+          "explanation": "More than anything else, it's difficult to select a suit in a hurry."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "A written piece of paper at hand will help to remind ...",
+          "options": [
+            "things that can be forgotten",
+            "the plan of the day",
+            "things that can be forgotten and the plan of the day"
+          ],
+          "answer": 0,
+          "explanation": "If you fear you might forget something, write it down as a reminder."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "It is necessary to start the day early, leaving a margin to ...",
+          "options": [
+            "avoid delays that are likely to happen",
+            "chat with the neighbour",
+            "polish shoes"
+          ],
+          "answer": 0,
+          "explanation": "Start the day early, keeping a margin for the delays likely to happen."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u02-a03",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "The Ceylon jungle fowl (Workbook, Unit 2, Activity 3)",
+      "description": "From the Grade 8 English Workbook, Unit 2, Activity 3: Listen to the dialogue and complete the information sheet.",
+      "instructions": "Listen to Jeewaka and Suresh talking about a scrap book, and complete the information sheet.",
+      "script": [
+        {
+          "speaker": "Jeewaka",
+          "text": "Suresh, this is my scrap book. Hope you'll like it."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Wow! It looks nice. You've done a great job."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Thanks, Suresh. Let me show you through. Do you know anything about this bird?"
+        },
+        {
+          "speaker": "Suresh",
+          "text": "You mean this red one?"
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "That's right."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "It's the jungle fowl. Actually, it's the Ceylon jungle fowl."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Yes, you got it. Do you know anything special about it?"
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Anything special? You mean?"
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Yes, this bird is a very special bird to our country."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Oh yes, it's the national bird of Sri Lanka."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Aha, you're very clever. Did you notice anything about its feathers?"
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Of course. They are of two colours, bronze and gold. What a nice colour combination!"
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Yes, nature is so wonderful."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Look, its tail is different."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Yes, Suresh. It's got long, arching black feathers on its tail."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "What a wonderful bird! Nature has brought all the colours together."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "You're right, Suresh. They shimmer with blue, purple and green in good light."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Yes, Jeewaka. Its head adds a majestic look, with large fleshy wattles and the comb on top."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Yeah. They make it more attractive."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Unfortunately, we don't find them here."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "No, they are common in dry zone jungles or dense scrub. They can find food there. Weed seeds, berries, various fleshy leaves, buds, and small animals like crickets, centipedes and termites are some of their favourite food."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Great! You know a lot about this bird."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Thank you, Suresh!"
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Jeewaka, will you lend me this book for a couple of days?"
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "Of course. Here you are."
+        },
+        {
+          "speaker": "Suresh",
+          "text": "Thank you very much. I'll protect it."
+        },
+        {
+          "speaker": "Jeewaka",
+          "text": "You're welcome! Yes, please do protect it."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Complete the information sheet.",
+          "lines": [
+            {
+              "label": "Name of the bird: Ceylon jungle ____",
+              "answer": [
+                "fowl"
+              ]
+            },
+            {
+              "label": "Speciality: the national ____ of Sri Lanka",
+              "answer": [
+                "bird"
+              ]
+            }
+          ],
+          "explanation": "The Ceylon jungle fowl is the national bird of Sri Lanka."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Feathers:",
+          "options": [
+            "bronze and gold",
+            "red and black",
+            "blue and green"
+          ],
+          "answer": 0,
+          "explanation": "They are of two colours, bronze and gold."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Tail:",
+          "options": [
+            "short brown feathers",
+            "long, arching black feathers",
+            "white and gold feathers"
+          ],
+          "answer": 1,
+          "explanation": "It's got long, arching black feathers on its tail."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Head:",
+          "options": [
+            "a small crest",
+            "large fleshy wattles and a comb on top",
+            "a long curved beak"
+          ],
+          "answer": 1,
+          "explanation": "Large fleshy wattles and the comb on top."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Habitat:",
+          "options": [
+            "wet zone forests",
+            "dry zone jungles or dense scrub",
+            "paddy fields near the coast"
+          ],
+          "answer": 1,
+          "explanation": "They are common in dry zone jungles or dense scrub."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which of these is NOT given as its food?",
+          "options": [
+            "Berries",
+            "Termites",
+            "Fish"
+          ],
+          "answer": 2,
+          "explanation": "Weed seeds, berries, leaves, buds, crickets, centipedes and termites are named. Fish is not."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u02-a05",
+      "grade": 8,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "An origami twirling bird (Workbook, Unit 2, Activity 5)",
+      "description": "From the Grade 8 English Workbook, Unit 2, Activity 5: Listen and number the steps of making an origami twirling bird.",
+      "instructions": "Listen to the instructions and put the steps in the correct order.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "One. Take a 3 by 3 origami paper, or any paper printed on one side."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two. Keep the white side up and fold in half, as shown in the picture."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Three. You will get a triangular shape. Next, fold in half again, crease and open."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Four. Then, you can fold the top of the model down past the baseline of the model."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Five. Next, fold the whole model in half, and it is like a boat turned upside down."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Six. Now, you can rotate the model, and it is standing up."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Seven. Then fold down the top flap along the line shown, repeating the same thing on the flap behind."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Eight. You can make the bird sit horizontally by folding the wings back upwards."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Nine. The twirling bird is complete, and you can make it fly when you throw it like a paper plane. It will tumble in circles."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "sequence",
+          "prompt": "Put the steps in order.",
+          "items": [
+            "Take a square of origami paper",
+            "Fold it in half with the white side up",
+            "Fold the triangle in half again, crease and open",
+            "Fold the top down past the baseline",
+            "Fold the whole model in half like an upside-down boat",
+            "Rotate the model so it stands up",
+            "Fold down the top flap on both sides",
+            "Fold the wings back upwards",
+            "Throw it like a paper plane"
+          ],
+          "explanation": "The steps follow the order in which they were read, one to nine."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does the finished bird do when you throw it?",
+          "options": [
+            "It glides straight",
+            "It tumbles in circles",
+            "It falls flat"
+          ],
+          "answer": 1,
+          "explanation": "It will tumble in circles."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u03-a09",
+      "grade": 8,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "At the teller machine (Workbook, Unit 3, Activity 9)",
+      "description": "From the Grade 8 English Workbook, Unit 3, Activity 9: Listen to the instructions shown in a teller machine and number the pictures in order.",
+      "instructions": "Listen to the teller machine instructions and put the steps in the correct order.",
+      "script": [
+        {
+          "speaker": "Machine",
+          "text": "One. Please insert your card."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Two. Please select your language."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Three. Please enter your Personal Identification Number, your PIN."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Four. Please select the desired transaction."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Five. Select the type of account."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Six. Enter the amount in rupees."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Seven. Press if correct."
+        },
+        {
+          "speaker": "Machine",
+          "text": "Eight. Do you want a receipt for this transaction?"
+        },
+        {
+          "speaker": "Machine",
+          "text": "Nine. Please take your cash. Please take your card. Thank you. Come again."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "sequence",
+          "prompt": "Number the screens in order.",
+          "items": [
+            "Insert your card",
+            "Select your language",
+            "Enter your PIN",
+            "Select the transaction",
+            "Select the type of account",
+            "Enter the amount",
+            "Press if correct",
+            "Choose whether you want a receipt",
+            "Take your cash and your card"
+          ],
+          "explanation": "Card, language, PIN, transaction, account type, amount, confirm, receipt, then take your cash and card."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does PIN stand for?",
+          "options": [
+            "Personal Identification Number",
+            "Private Internet Number",
+            "Payment Information Note"
+          ],
+          "answer": 0,
+          "explanation": "Please enter your Personal Identification Number."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u03-a11",
+      "grade": 8,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "When a call does not go through (Workbook, Unit 3, Activity 11)",
+      "description": "From the Grade 8 English Workbook, Unit 3, Activity 11: Listen to the messages you get when you fail to contact a telephone number.",
+      "instructions": "Listen to each recorded message. Decide which kind of problem it describes.",
+      "script": [
+        {
+          "speaker": "Recorded message",
+          "text": "Message one. The mobile you called is currently switched off or not reachable. Kindly try again later."
+        },
+        {
+          "speaker": "Recorded message",
+          "text": "Message two. Incorrect number. Please check the number and try again."
+        },
+        {
+          "speaker": "Recorded message",
+          "text": "Message three. The number you dialled is busy right now. Please try again later."
+        },
+        {
+          "speaker": "Recorded message",
+          "text": "Message four. The number you called is not connected. Please check the number before calling again."
+        },
+        {
+          "speaker": "Recorded message",
+          "text": "Message five. The number you are trying to reach is currently unavailable. Please try again later."
+        },
+        {
+          "speaker": "Recorded message",
+          "text": "Message six. The number you are calling is currently busy now."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Message 1:",
+          "options": [
+            "Switched off or no signal",
+            "Line is busy",
+            "Wrong number"
+          ],
+          "answer": 0,
+          "explanation": "Switched off or not reachable."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Message 2:",
+          "options": [
+            "Switched off or no signal",
+            "Line is busy",
+            "Wrong number"
+          ],
+          "answer": 2,
+          "explanation": "Incorrect number: check the number."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Message 3:",
+          "options": [
+            "Switched off or no signal",
+            "Line is busy",
+            "Wrong number"
+          ],
+          "answer": 1,
+          "explanation": "The number is busy."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Message 4:",
+          "options": [
+            "Switched off or no signal",
+            "Line is busy",
+            "Wrong number"
+          ],
+          "answer": 2,
+          "explanation": "Not connected: check the number before calling again."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Message 5:",
+          "options": [
+            "Switched off or no signal",
+            "Line is busy",
+            "Wrong number"
+          ],
+          "answer": 0,
+          "explanation": "Currently unavailable: the phone cannot be reached."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Message 6:",
+          "options": [
+            "Switched off or no signal",
+            "Line is busy",
+            "Wrong number"
+          ],
+          "answer": 1,
+          "explanation": "The number is currently busy."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u07-a10",
+      "grade": 8,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "The mouse and the frog (Workbook, Unit 7, Activity 10)",
+      "description": "From the Grade 8 English Workbook, Unit 7, Activity 10: Listen to the story and order the pictures. Here the pictures are described in words.",
+      "instructions": "Listen to the story and put the events in the correct order.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "A story from Africa."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "A mouse and a frog were good friends. Every day the frog visited the mouse and spent some time with him. But the mouse never visited the frog's home, the pond."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Little by little, the frog began to hate the mouse for not visiting him. So he decided to do something about it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "One day, he secretly tied one end of a string around his own leg, and tied the other end to the mouse's tail. Then he dived into his pond, dragging the mouse behind him."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "As they were both in the water, the frog tried to free himself, but he couldn't. After a few minutes, the mouse was drowned in the pond."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "After a while, the mouse's body floated to the top of the pond. A hawk saw the body. He grabbed it and flew to his nest. Unfortunately, the frog was also dragged along."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "That was the end of the frog too. The hawk had them both for his meal."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Don't dig a pit for your enemy; you may fall into it yourself."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "sequence",
+          "prompt": "Put the events in order.",
+          "items": [
+            "The frog visits the mouse every day",
+            "The frog ties a string to his leg and the mouse's tail",
+            "The frog dives into the pond, dragging the mouse",
+            "The mouse drowns",
+            "A hawk grabs the mouse's body",
+            "The hawk eats them both"
+          ],
+          "explanation": "Friendship, the string, the dive, the drowning, the hawk, and the end of both."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why did the frog begin to hate the mouse?",
+          "options": [
+            "The mouse ate his food",
+            "The mouse never visited his home",
+            "The mouse laughed at him"
+          ],
+          "answer": 1,
+          "explanation": "The mouse never visited the frog's home, the pond."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is the moral of the story?",
+          "options": [
+            "Don't dig a pit for your enemy; you may fall into it yourself",
+            "Slow and steady wins the race",
+            "A friend in need is a friend indeed"
+          ],
+          "answer": 0,
+          "explanation": "Don't dig a pit for your enemy; you may fall into it yourself."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u07-a12",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "A fire drill (Workbook, Unit 7, Activity 12)",
+      "description": "From the Grade 8 English Workbook, Unit 7, Activity 12: Listen to the announcement and select answers.",
+      "instructions": "Listen carefully to the instructions in the announcement and select the answers.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Your attention please. We are going to conduct a fire drill. I repeat, this is a fire drill."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Students, please line up in front of your classes and proceed to the playground. Please be quick and calm."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Teachers, please guide the students in the primary section through the herb garden and the basketball court. The other students should use the main path."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Students and teachers on the 2nd and 3rd floors and in the auditorium, please use the stairs. I repeat, do not use the lift. Use the stairs."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Please wait in the playground for further instructions. Thank you."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "This announcement is about a ...",
+          "options": [
+            "school assembly",
+            "fire drill"
+          ],
+          "answer": 1,
+          "explanation": "We are going to conduct a fire drill."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Students should line up ...",
+          "options": [
+            "in the corridor",
+            "in front of the class"
+          ],
+          "answer": 1,
+          "explanation": "Line up in front of your classes."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Students should assemble in the ...",
+          "options": [
+            "playground",
+            "main hall"
+          ],
+          "answer": 0,
+          "explanation": "Proceed to the playground."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Primary students should use the path through ...",
+          "options": [
+            "the herb garden and the basketball court",
+            "the netball court"
+          ],
+          "answer": 0,
+          "explanation": "Through the herb garden and the basketball court."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Students in the classes upstairs and the auditorium should ...",
+          "options": [
+            "take the stairs",
+            "use the lift"
+          ],
+          "answer": 0,
+          "explanation": "Do not use the lift. Use the stairs."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u08-a05",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "A three-day tour (Workbook, Unit 8, Activity 5)",
+      "description": "From the Grade 8 English Workbook, Unit 8, Activity 5: Listen to a tour guide and underline the places they plan to visit.",
+      "instructions": "Listen to the tour guide explaining the plan of the trip and answer the questions.",
+      "script": [
+        {
+          "speaker": "Raj",
+          "text": "Good morning, and welcome to Sri Lanka! I'm Raj, and I'm your guide for the trip. Here's our plan for the next three days."
+        },
+        {
+          "speaker": "Raj",
+          "text": "We'll be leaving for Anuradhapura at 9 o'clock this morning. Anuradhapura is an ancient capital of Sri Lanka. There you will be able to see the sacred Bo Tree and many stupas."
+        },
+        {
+          "speaker": "Raj",
+          "text": "Tomorrow we'll leave for Sigiriya. It's a rock fortress built by King Kasyapa. The Sigiriya frescoes are world famous. In the afternoon we'll go to Kaudulla National Park. We will be able to see elephants, peacocks, deer and many other animals there."
+        },
+        {
+          "speaker": "Raj",
+          "text": "On the third day we will visit the Dambulla rock temple. There are five caves containing many statues of Lord Buddha. After that we will visit the spice gardens in Matale and head back to the hotel."
+        },
+        {
+          "speaker": "Raj",
+          "text": "We hope you will enjoy the trip. Please enjoy your breakfast and board the bus by 8.45. Thank you."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Which place will they visit on the first day?",
+          "options": [
+            "Anuradhapura",
+            "Sigiriya",
+            "Dambulla"
+          ],
+          "answer": 0,
+          "explanation": "We'll be leaving for Anuradhapura at 9 o'clock this morning."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which two places will they visit on the second day?",
+          "options": [
+            "Sigiriya and Kaudulla National Park",
+            "Dambulla and Matale",
+            "Kandy and Sigiriya"
+          ],
+          "answer": 0,
+          "explanation": "Sigiriya, then Kaudulla National Park in the afternoon."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which place is NOT part of the plan?",
+          "options": [
+            "The spice gardens in Matale",
+            "The Dambulla rock temple",
+            "Yala National Park"
+          ],
+          "answer": 2,
+          "explanation": "Yala is not mentioned; Kaudulla National Park is."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the details.",
+          "lines": [
+            {
+              "label": "The rock fortress was built by King",
+              "answer": [
+                "kasyapa",
+                "kashyapa"
+              ]
+            },
+            {
+              "label": "Number of caves at Dambulla:",
+              "answer": [
+                "5",
+                "five"
+              ]
+            },
+            {
+              "label": "Board the bus by (time):",
+              "answer": [
+                "8.45",
+                "8:45",
+                "8.45 am",
+                "8:45 am",
+                "8.45 a.m.",
+                "quarter to nine"
+              ]
+            }
+          ],
+          "explanation": "Sigiriya was built by King Kasyapa; Dambulla has five caves; board the bus by 8.45."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u09-a04",
+      "grade": 8,
+      "rate": 0.92,
+      "source": "textbook",
+      "title": "My friend Chamod (Workbook, Unit 9, Activity 4)",
+      "description": "From the Grade 8 English Workbook, Unit 9, Activity 4: Listen to Amal speak about his friend Chamod.",
+      "instructions": "Listen to Amal speak about his friend Chamod and do the exercises.",
+      "script": [
+        {
+          "speaker": "Amal",
+          "text": "I think I'm so lucky to have a friend like Chamod. In fact, the two of us have a lot in common. For instance, we share a keen interest in music and sports."
+        },
+        {
+          "speaker": "Amal",
+          "text": "Chamod always helps me when I have a problem, especially with my schoolwork. He's very good at English, so I often discuss our English homework with him. He reads a lot in English, and whenever he learns any new words, he usually shares them with me."
+        },
+        {
+          "speaker": "Amal",
+          "text": "Another thing that I like about Chamod is that he almost never speaks ill of anybody. Something he always says is that there's something good, something positive, in every one of us."
+        },
+        {
+          "speaker": "Amal",
+          "text": "And he rarely loses his temper, so he is easy to get on with. When Chamod and I get together, we sometimes listen to music, and of course we sing along too."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Amal and Chamod are interested in ...",
+          "options": [
+            "music and reading",
+            "music and sport",
+            "sports and homework"
+          ],
+          "answer": 1,
+          "explanation": "We share a keen interest in music and sports."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Chamod always speaks ... of others.",
+          "options": [
+            "well",
+            "ill",
+            "insultingly"
+          ],
+          "answer": 0,
+          "explanation": "He almost never speaks ill of anybody; he sees something good in everyone."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Chamod is very ____ at English.",
+          "answer": [
+            "good"
+          ],
+          "explanation": "He's very good at English."
+        },
+        {
+          "kind": "gap",
+          "prompt": "He ____ gets angry.",
+          "answer": [
+            "rarely",
+            "seldom",
+            "hardly ever",
+            "almost never"
+          ],
+          "explanation": "He rarely loses his temper."
+        },
+        {
+          "kind": "gap",
+          "prompt": "Amal discusses his English ____ with Chamod.",
+          "answer": [
+            "homework"
+          ],
+          "explanation": "I often discuss our English homework with him."
+        }
+      ]
+    },
+    {
+      "id": "wb08-u10-a04",
+      "grade": 8,
+      "rate": 0.9,
+      "source": "textbook",
+      "title": "The hungry fox (Workbook, Unit 10, Activity 4)",
+      "description": "From the Grade 8 English Workbook, Unit 10, Activity 4: Listen to the story and put the pictures in the correct order. Here the pictures are described in words.",
+      "instructions": "Listen to the story and put the events in the correct order.",
+      "script": [
+        {
+          "speaker": "Teacher",
+          "text": "One day, a hungry fox walked through the forest, looking for something to eat. However hard he tried, the fox couldn't find any food. In the end, he went to the edge of the forest, where he saw a huge tree with a hole in it."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The fox ran near the tree and peeped into the hole. He saw a parcel inside the hole. The hungry fox felt very happy, thinking that the parcel might have food in it. So he crept right into the hole and tore open the parcel. The fox was overjoyed to find some tasty food in the parcel."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Two woodcutters, who had come to the forest to cut down some trees, had left the parcel of food there. They were going to eat it for their lunch."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "The fox began to eat the food in the parcel greedily. After he had eaten it all, he felt rather thirsty. He thought he would leave the hole and drink some water from a nearby stream."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "No matter how hard he tried, the fox couldn't get out of the hole. He had eaten too much and, as a result, had grown too fat to squeeze out through the hole."
+        },
+        {
+          "speaker": "Teacher",
+          "text": "Just then, the fox heard some footsteps approaching the hole."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "sequence",
+          "prompt": "Put the events in order.",
+          "items": [
+            "The hungry fox looks for food in the forest",
+            "He sees a tree with a hole in it",
+            "He creeps into the hole and opens a parcel",
+            "He eats all the food greedily",
+            "He cannot squeeze out of the hole",
+            "He hears footsteps coming"
+          ],
+          "explanation": "Searching, the tree, the parcel, eating, stuck, and the footsteps."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Who had left the parcel of food?",
+          "options": [
+            "A hunter",
+            "Two woodcutters",
+            "A farmer"
+          ],
+          "answer": 1,
+          "explanation": "Two woodcutters had left the parcel of food there for their lunch."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why couldn't the fox get out of the hole?",
+          "options": [
+            "The hole was blocked",
+            "He had grown too fat from eating",
+            "He was too tired"
+          ],
+          "answer": 1,
+          "explanation": "He had eaten too much and grown too fat to squeeze out."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u01-a09",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "The talent show results (Unit 1, Activity 9)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 1, Activity 9: Listen to the announcement and choose the correct answer.",
+      "instructions": "Listen to the announcement and choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Good afternoon, everybody. In a few seconds, we are going to announce the winners of the Talent Show held at Kandalanda Vidyalaya today. The panel of judges had a hard time making their final decisions, as there were so many talented contestants."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "The first place in the singing competition goes to Malith Weerakoon, while the second and third places have been won by Jeevika Balachandran and Kevin Cabral respectively."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "I'm sure you will all agree that one of the key attractions of today's programme was the Mime Show. The first place in it goes to Tharusha Padmindu, who did a brilliant mime of a motorcyclist, while Sudesh Bhathiya has won the second place for his hilarious mime of a tightrope walker. And the third place goes to Sujan Kuruppu."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Now let me move on to the poetry competition."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The event mentioned is a ...",
+          "options": [
+            "debate",
+            "talent show",
+            "prize giving"
+          ],
+          "answer": 1,
+          "explanation": "The winners of the Talent Show."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "It was held at a ...",
+          "options": [
+            "theatre",
+            "town hall",
+            "school"
+          ],
+          "answer": 2,
+          "explanation": "Held at Kandalanda Vidyalaya, a school."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The third place in the singing competition was won by ...",
+          "options": [
+            "Malith Weerakoon",
+            "Sujan Kuruppu",
+            "Kevin Cabral"
+          ],
+          "answer": 2,
+          "explanation": "Second and third places: Jeevika Balachandran and Kevin Cabral respectively."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Tharusha Padmindu did a mime of a ...",
+          "options": [
+            "tightrope walker",
+            "motorcyclist",
+            "traffic policeman"
+          ],
+          "answer": 1,
+          "explanation": "A brilliant mime of a motorcyclist."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which competition will be announced next?",
+          "options": [
+            "Dancing",
+            "Poetry",
+            "Drama"
+          ],
+          "answer": 1,
+          "explanation": "Now let me move on to the poetry competition."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u02-a06",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "At the bank (Unit 2, Activity 6)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 2, Activity 6, with the table in Workbook, Unit 2, Activity 2.",
+      "instructions": "Listen to the conversation between the bank clerk and the customer and select the correct answers.",
+      "script": [
+        {
+          "speaker": "Customer",
+          "text": "Excuse me, I need to deposit some money."
+        },
+        {
+          "speaker": "Bank clerk",
+          "text": "Certainly. Have you filled in the deposit slip?"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes, here you are."
+        },
+        {
+          "speaker": "Bank clerk",
+          "text": "Just a moment, madam. You haven't signed the slip. Please sign here."
+        },
+        {
+          "speaker": "Customer",
+          "text": "Oh, sorry. Here?"
+        },
+        {
+          "speaker": "Bank clerk",
+          "text": "Yes, that's right."
+        },
+        {
+          "speaker": "Customer",
+          "text": "I'd like some of the money in 500-rupee notes, please."
+        },
+        {
+          "speaker": "Bank clerk",
+          "text": "How many 500-rupee notes do you need?"
+        },
+        {
+          "speaker": "Customer",
+          "text": "About four."
+        },
+        {
+          "speaker": "Bank clerk",
+          "text": "Sure. Here you are. Five thousand rupees."
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thank you. Can I also pay the bills here?"
+        },
+        {
+          "speaker": "Bank clerk",
+          "text": "Sorry. You have to go to counter number 3."
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thank you."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The customer needs to ...",
+          "options": [
+            "deposit money",
+            "withdraw money"
+          ],
+          "answer": 0,
+          "explanation": "I need to deposit some money."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The customer had ...",
+          "options": [
+            "signed the slip",
+            "not signed the slip"
+          ],
+          "answer": 1,
+          "explanation": "You haven't signed the slip."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The customer needs some of the money in ...",
+          "options": [
+            "1000-rupee notes",
+            "500-rupee notes"
+          ],
+          "answer": 1,
+          "explanation": "I'd like some of the money in 500-rupee notes."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The clerk hands over ...",
+          "options": [
+            "5000 rupees",
+            "ten thousand rupees"
+          ],
+          "answer": 0,
+          "explanation": "Here you are. Five thousand rupees."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The customer also needs to ...",
+          "options": [
+            "cash a cheque",
+            "pay some bills"
+          ],
+          "answer": 1,
+          "explanation": "Can I also pay the bills here?"
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Where can the customer pay the bills?",
+          "options": [
+            "At the same counter",
+            "At counter number 3",
+            "At the post office"
+          ],
+          "answer": 1,
+          "explanation": "You have to go to counter number 3."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u03-a04",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "Leadership qualities (Unit 3, Activity 4)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 3, Activity 4, with Workbook, Unit 3, Activity 3. The last question is RCF English's.",
+      "instructions": "Listen to the dialogue between Ajayan and Nipuna and choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Nipuna",
+          "text": "Hello, Ajayan, you seem to be busy."
+        },
+        {
+          "speaker": "Ajayan",
+          "text": "Yes, I am getting ready to deliver a speech on leadership qualities, and I've been reading on this topic."
+        },
+        {
+          "speaker": "Nipuna",
+          "text": "So, what have you found?"
+        },
+        {
+          "speaker": "Ajayan",
+          "text": "I've found many qualities that a leader is expected to have. In fact, I've found more than twenty."
+        },
+        {
+          "speaker": "Nipuna",
+          "text": "So, are you going to use them all?"
+        },
+        {
+          "speaker": "Ajayan",
+          "text": "Oh no, it's not possible. I'll take only ten of them."
+        },
+        {
+          "speaker": "Nipuna",
+          "text": "I think you can talk about punctuality, discipline, confidence and being positive."
+        },
+        {
+          "speaker": "Ajayan",
+          "text": "Yes, I've added all of these. But, since some qualities are similar, I'm thinking of taking them off the list."
+        },
+        {
+          "speaker": "Nipuna",
+          "text": "What are they?"
+        },
+        {
+          "speaker": "Ajayan",
+          "text": "Being optimistic and understanding."
+        },
+        {
+          "speaker": "Nipuna",
+          "text": "Well, that's better, because I think you should talk only about the most important qualities."
+        },
+        {
+          "speaker": "Ajayan",
+          "text": "Yes, otherwise I will have to deliver my speech for an entire day."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The speech is on ...",
+          "options": [
+            "leadership",
+            "leadership qualities",
+            "challenges faced by a leader"
+          ],
+          "answer": 1,
+          "explanation": "A speech on leadership qualities."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The number of qualities Ajayan found is ...",
+          "options": [
+            "10",
+            "more than twenty",
+            "more than ten"
+          ],
+          "answer": 1,
+          "explanation": "I've found more than twenty."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Ajayan is going to talk about ...",
+          "options": [
+            "only 5 of them",
+            "only 7 of them",
+            "only ten of them"
+          ],
+          "answer": 2,
+          "explanation": "I'll take only ten of them."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Ajayan is not going to add all the qualities because some of them are ...",
+          "options": [
+            "similar",
+            "overlapping",
+            "not practical"
+          ],
+          "answer": 0,
+          "explanation": "Since some qualities are similar, I'm thinking of taking them off the list."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which qualities is Ajayan thinking of taking off the list?",
+          "options": [
+            "Punctuality and discipline",
+            "Being optimistic and understanding",
+            "Confidence and being positive"
+          ],
+          "answer": 1,
+          "explanation": "Being optimistic and understanding."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u05-a15",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "When the printer is not working (Unit 5, Activity 15)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 5, Activity 15, with the flow chart in Workbook, Unit 5, Activity 10.",
+      "instructions": "Listen to the description of how to fix a printer problem and complete the flow chart.",
+      "script": [
+        {
+          "speaker": "Speaker",
+          "text": "When my computer printer is not working, the first thing I do is check the three lights on the top. These three lights indicate the problem with the printer."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "The first light there is called the error indicator. If this light is on, it indicates a problem such as a paper jam or an empty toner cartridge."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "The second light refers to tray 1. If it is on, the tray is empty and you have to load paper into that tray."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "The third light is tray 2. If it is on, paper must be added to the number 2 tray."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "Finally, if none of the lights are on and the printer still does not work, you have to check the power supply."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "If there is no problem with that too, it is better to get the service of a technician to look into the problem."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "match",
+          "prompt": "Complete the flow chart: match each situation with what it means or what to do.",
+          "pairs": [
+            {
+              "term": "If the error light is lit",
+              "meaning": "Paper jam or empty toner cartridge"
+            },
+            {
+              "term": "If the light for tray 1 is lit",
+              "meaning": "The main tray is empty: load paper"
+            },
+            {
+              "term": "If the light for tray 2 is lit",
+              "meaning": "Paper must be added to tray 2"
+            },
+            {
+              "term": "If none of the lights are on and the printer does not work",
+              "meaning": "Check the power supply"
+            },
+            {
+              "term": "If there is no problem with the power supply",
+              "meaning": "Get the help of a technician"
+            }
+          ],
+          "explanation": "Error light: jam or toner. Tray 1 light: tray 1 empty. Tray 2 light: add paper to tray 2. No lights: check power. Power fine: call a technician."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What is the first thing to do when the printer is not working?",
+          "options": [
+            "Call a technician",
+            "Check the three lights on the top",
+            "Switch it off"
+          ],
+          "answer": 1,
+          "explanation": "The first thing I do is check the three lights on the top."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u07-a05",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "Strange animal habitats (Unit 7, Activity 5)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 7, Activity 5: Listen to a documentary on the strange habitats of four animals.",
+      "instructions": "Listen to the documentary. Put the animals in the order you hear them, then choose the correct answers.",
+      "script": [
+        {
+          "speaker": "Presenter",
+          "text": "You are going to listen to an interesting documentary on animal life."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "First, let me tell you something about jellyfish. At present, tourists are attracted to Palau, a country which consists of a group of islands in the western Pacific Ocean, to see the sight of millions of golden jellyfish. The jellyfish is known to be a sea creature. However, the type of jellyfish found in Palau's lake has adjusted itself to living in a lake. It's believed that around 12,000 years ago, a group of jellyfish were trapped in the lake when sea levels rose, and the present variety could be related to them."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "Now let me tell you something interesting about the African bullfrog, which lives in the savanna of Africa, where it gets very hot and dry. Do you know that, in order to prevent its skin from drying out in the hot African climate, the African bullfrog buries itself 6 to 8 inches underground? It then creates a cocoon and stays in this cocoon for up to 7 years while it waits for rain."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "And there are also talented architects in the animal world. Carrier snails make mobile castles by mounting pebbles and shells on their cases. It can take a snail ten hours to mount each new object, with the help of sticky secretions. Once it is over, it becomes a magnificent castle."
+        },
+        {
+          "speaker": "Presenter",
+          "text": "Finally, I would like to show you a picture of a male weaver bird found in Namibia. It builds a waterproof nest from blades of grass that dry in the sun. Amazing architecture, isn't it?"
+        }
+      ],
+      "questions": [
+        {
+          "kind": "sequence",
+          "prompt": "[A] Number the animals in the order you hear about them.",
+          "items": [
+            "Golden jellyfish",
+            "African bullfrog",
+            "Carrier snail",
+            "Weaver bird"
+          ],
+          "explanation": "Jellyfish, bullfrog, carrier snail, then the weaver bird."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The strange thing about the jellyfish mentioned here is that ...",
+          "options": [
+            "they are not in the sea.",
+            "they are in the Pacific Ocean.",
+            "they are trapped in a net."
+          ],
+          "answer": 0,
+          "explanation": "They have adjusted to living in a lake."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The African bullfrog buries itself underground for many years in order to ...",
+          "options": [
+            "protect itself from dangerous animals in Africa.",
+            "hunt small insects in the savannah.",
+            "protect its skin from very hot weather in Africa."
+          ],
+          "answer": 2,
+          "explanation": "To prevent its skin from drying out in the hot African climate."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Carrier snails use ... to decorate their cases.",
+          "options": [
+            "pebbles and gems",
+            "shells and pebbles",
+            "pebbles and sand"
+          ],
+          "answer": 1,
+          "explanation": "By mounting pebbles and shells on their cases."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The nest of the weaver bird found in Namibia ...",
+          "options": [
+            "cannot be damaged by water.",
+            "is made of sticks and twigs.",
+            "is made by female birds."
+          ],
+          "answer": 0,
+          "explanation": "It builds a waterproof nest from blades of grass. It is a male weaver bird."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The documentary is about the strange habitats of a variety of ...",
+          "options": [
+            "jellyfish, frogs, spiders and weaver birds.",
+            "jellyfish, weaver birds, snails and frogs.",
+            "jellyfish, snakes, snails and weaver birds."
+          ],
+          "answer": 1,
+          "explanation": "Jellyfish, a bullfrog, carrier snails and a weaver bird."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u08-a06",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "The upcycling competition (Unit 8, Activity 6)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 8, Activity 6: Listen to the announcement about the winners of an upcycling competition. Here the pictures are described in words.",
+      "instructions": "Listen to the announcement and match each creation with the place it won.",
+      "script": [
+        {
+          "speaker": "Announcer",
+          "text": "Now we are ready to announce the winners of the upcycling competition. I must say it's truly amazing to see how old things have been given a new twist. There were so many creative and innovative ideas that our panel of judges had a hard time deciding the winners."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "First, let's give away the consolation prizes for those who've won the 4th and 5th places. The fifth place in the upcycling competition goes to grade 7A for the idea of turning old Lego pieces into a key holder. The 4th place goes to grade 6B for creating candles out of bottle caps. Please give a big hand to Grade 7A and 6B."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Next we have the winners of the third place. They have created plant pots out of used jam jars. Yes, the 3rd place goes to grade 5C."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Now this is a truly innovative idea. They have turned a used bicycle wheel into a magnificent wall clock. Yes, the 2nd place in the competition goes to grade 8A. Please put your hands together for them."
+        },
+        {
+          "speaker": "Announcer",
+          "text": "Finally, we come to the grandest moment today. We are ready to announce the winners of the 2017 school upcycling competition. This wonderful creation shows just how resourceful and creative our students can be. The first place goes to grade 9, for turning an old set of barrels into a beautiful drum set. Please give them a big round of applause."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "match",
+          "prompt": "Match each creation with its place.",
+          "pairs": [
+            {
+              "term": "A drum set made from old barrels",
+              "meaning": "1st place"
+            },
+            {
+              "term": "A wall clock made from a bicycle wheel",
+              "meaning": "2nd place"
+            },
+            {
+              "term": "Plant pots made from used jam jars",
+              "meaning": "3rd place"
+            },
+            {
+              "term": "Candles made from bottle caps",
+              "meaning": "4th place"
+            },
+            {
+              "term": "A key holder made from old Lego pieces",
+              "meaning": "5th place"
+            }
+          ],
+          "explanation": "1st grade 9 drum set, 2nd 8A wall clock, 3rd 5C plant pots, 4th 6B candles, 5th 7A key holder."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Which class won the second place?",
+          "options": [
+            "Grade 5C",
+            "Grade 8A",
+            "Grade 6B"
+          ],
+          "answer": 1,
+          "explanation": "The 2nd place goes to grade 8A."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u09-a13",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "At the doctor's (Unit 9, Activity 13)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 9, Activity 13: Listen to a dialogue between a doctor and a patient and select the correct answer.",
+      "instructions": "Listen to the dialogue between a doctor and a patient and select the correct answers.",
+      "script": [
+        {
+          "speaker": "Doctor",
+          "text": "Hello, what seems to be the problem?"
+        },
+        {
+          "speaker": "Patient",
+          "text": "I have a sore throat and a runny nose."
+        },
+        {
+          "speaker": "Doctor",
+          "text": "Have you got a fever?"
+        },
+        {
+          "speaker": "Patient",
+          "text": "No. But I have a headache."
+        },
+        {
+          "speaker": "Doctor",
+          "text": "How long have you had these symptoms?"
+        },
+        {
+          "speaker": "Patient",
+          "text": "For two days."
+        },
+        {
+          "speaker": "Doctor",
+          "text": "Let's see. Open your mouth, please. I think you've got the flu."
+        },
+        {
+          "speaker": "Patient",
+          "text": "Will I have to rest for a long time?"
+        },
+        {
+          "speaker": "Doctor",
+          "text": "No. Take these tablets three times a day after meals. Drink plenty of fluids and stay in bed. You'll be fine in about two days."
+        },
+        {
+          "speaker": "Patient",
+          "text": "Okay. Thanks."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "The patient's symptoms are ...",
+          "options": [
+            "a sore throat, a headache and a runny nose.",
+            "stomach ache, vomiting and a skin rash."
+          ],
+          "answer": 0,
+          "explanation": "A sore throat, a runny nose and a headache."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The patient has ...",
+          "options": [
+            "high fever.",
+            "no fever."
+          ],
+          "answer": 1,
+          "explanation": "Have you got a fever? No."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The patient has had the symptoms for ...",
+          "options": [
+            "a week.",
+            "two days."
+          ],
+          "answer": 1,
+          "explanation": "For two days."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The patient should take the medicine ... times a day.",
+          "options": [
+            "two",
+            "three"
+          ],
+          "answer": 1,
+          "explanation": "Take these tablets three times a day after meals."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "The patient should drink ...",
+          "options": [
+            "plenty of water and other fluids.",
+            "only a glass of water at a time."
+          ],
+          "answer": 0,
+          "explanation": "Drink plenty of fluids."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does the doctor think the illness is?",
+          "options": [
+            "The flu",
+            "Dengue",
+            "A stomach infection"
+          ],
+          "answer": 0,
+          "explanation": "I think you've got the flu."
+        }
+      ]
+    },
+    {
+      "id": "pb09-u10-a04",
+      "grade": 9,
+      "rate": 0.95,
+      "source": "textbook",
+      "title": "Favourite optional subjects (Unit 10, Activity 4)",
+      "description": "From the Grade 9 English Pupil's Book, Unit 10, Activity 4, with the graph in Workbook, Unit 10, Activity 3.",
+      "instructions": "Listen to the description of a survey and complete the numbers for the graph.",
+      "script": [
+        {
+          "speaker": "Speaker",
+          "text": "Recently, a survey was done to find the favourite optional subjects selected by a group of students. 42 grade 9 students were included in this survey, and they were asked to write down the 3 optional subjects they plan to study when they are in grade 10."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "The graph represents the findings of this survey. The X axis represents the subjects, while the Y axis represents the number of students."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "According to the results, the most favourite subject is Sinhala Literature. Twelve students from the group have decided to select Sinhala Literature as one of their optional subjects."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "The number of students who wish to follow the optional subject English Literature is lower than the number of students who like to select Sinhala Literature. It is only 8."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "When studying the findings of the survey, it is found that an equal number of students prefer to study Design Technology and Information Technology in grade 10. It is 6 in number."
+        },
+        {
+          "speaker": "Speaker",
+          "text": "More students like to select Home Science than English Literature. The number of students who prefer Home Science is 10. This number is less than the number of students who wish to study Sinhala Literature."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "note",
+          "prompt": "Label the graph: how many students chose each subject?",
+          "lines": [
+            {
+              "label": "Sinhala Literature:",
+              "answer": [
+                "12",
+                "twelve"
+              ]
+            },
+            {
+              "label": "English Literature:",
+              "answer": [
+                "8",
+                "eight"
+              ]
+            },
+            {
+              "label": "Design Technology:",
+              "answer": [
+                "6",
+                "six"
+              ]
+            },
+            {
+              "label": "Information Technology:",
+              "answer": [
+                "6",
+                "six"
+              ]
+            },
+            {
+              "label": "Home Science:",
+              "answer": [
+                "10",
+                "ten"
+              ]
+            }
+          ],
+          "explanation": "Sinhala Literature 12, Home Science 10, English Literature 8, Design Technology 6, Information Technology 6."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How many students took part in the survey?",
+          "options": [
+            "12",
+            "42",
+            "32"
+          ],
+          "answer": 1,
+          "explanation": "42 grade 9 students were included in this survey."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does the X axis show?",
+          "options": [
+            "The number of students",
+            "The subjects",
+            "The grades"
+          ],
+          "answer": 1,
+          "explanation": "The X axis represents the subjects."
+        }
       ]
     }
   ]

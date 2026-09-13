@@ -86,7 +86,7 @@
       "scripts": ["listening"],
       "breadcrumbs": [{ "label": "Interactive Learning", "url": "interactive/" }],
       "hero": {
-        "text": "Thirty listening tests from Grade 6 to Grade 11. Learn the key words, listen in practice or under examination conditions, and see your score with the answers explained.",
+        "text": "Seventy-five listening tests for Grades 6 to 11, including the listening activities from the Grade 6 to 9 Pupil's Books and Workbooks. Learn the key words, listen in practice or under examination conditions, and see your score with the answers explained.",
         "buttons": [
           { "label": "How to listen well", "url": "practical-english/listening/", "style": "btn--ghost-light" }
         ]
@@ -96,7 +96,7 @@
           "type": "steps",
           "heading": "How each test works",
           "items": [
-            { "title": "Before you listen", "text": ["Read the five useful words and their meanings. Press **Hear it** to hear how each one is said."] },
+            { "title": "Before you listen", "text": ["Most RCF English tests start with five useful words and their meanings. Press **Hear it** to hear how each one is said. The Pupil's Book activities name the unit and activity in your textbook."] },
             { "title": "Choose how to listen", "text": ["**Practice** lets you replay as often as you like, slow the speed down, and open the transcript if you are stuck. **Formal test** plays the passage twice only, as in an examination, and keeps the transcript back until you submit."] },
             { "title": "Answer and submit", "text": ["The test marks itself at once and explains every answer. Nothing you type is sent anywhere, and no sign-in is needed."] },
             { "title": "Print it for class", "text": ["Teachers can print any test as a worksheet for students, or with the answer key and transcript on a separate page."] }
@@ -142,7 +142,7 @@
           "style": "tip",
           "variant": "tint",
           "title": "New: the Listening Laboratory",
-          "text": ["Thirty listening tests for Grades 6 to 11, with words to learn first, a choice of accent, examination conditions and printable worksheets. [Open the Listening Laboratory](listening-lab/)."]
+          "text": ["Seventy-five listening tests for Grades 6 to 11, including the Pupil's Book listening activities, with words to learn first, a choice of accent, examination conditions and printable worksheets. [Open the Listening Laboratory](listening-lab/)."]
         },
         {
           "type": "activities",

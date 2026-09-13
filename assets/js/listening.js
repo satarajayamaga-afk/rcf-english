@@ -458,6 +458,7 @@ function render(root, test) {
         <span class="tag listening__level listening__level--${level.n}">${esc(level.label)}</span>
         <span class="tag">${test.questions.length} questions</span>
         ${speakers ? `<span class="tag">${speakers === 1 ? "1 speaker" : `${speakers} speakers`}</span>` : ""}
+        ${test.source === "textbook" ? `<span class="tag tag--textbook">Pupil's Book activity</span>` : ""}
         <span class="tag">${hasAudio ? "Recorded audio" : "Read aloud by your device"}</span>
       </div>
       <p class="listening__meta">${esc(test.description)}</p>
@@ -756,6 +757,8 @@ function wireForm(root, test) {
 function setUpLab(lab, list) {
   const cards = Array.from(lab.querySelectorAll("[data-lab-card]"));
   const chips = Array.from(lab.querySelectorAll("[data-lab-grade]"));
+  const sourceChips = Array.from(lab.querySelectorAll("[data-lab-source]"));
+  let source = "";
   const count = lab.querySelector("[data-lab-count]");
   const stage = lab.querySelector("[data-lab-stage]");
   const slot = lab.querySelector("[data-lab-slot]");
@@ -775,12 +778,17 @@ function setUpLab(lab, list) {
     grade = value;
     let n = 0;
     cards.forEach((c) => {
-      const on = !grade || c.dataset.grade === grade;
+      const on = (!grade || c.dataset.grade === grade) && (!source || c.dataset.source === source);
       c.hidden = !on;
       if (on) n += 1;
     });
     chips.forEach((b) => {
       const on = b.dataset.labGrade === grade;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    sourceChips.forEach((b) => {
+      const on = b.dataset.labSource === source;
       b.classList.toggle("is-on", on);
       b.setAttribute("aria-pressed", on ? "true" : "false");
     });
@@ -816,6 +824,7 @@ function setUpLab(lab, list) {
   }
 
   chips.forEach((b) => b.addEventListener("click", () => { filter(b.dataset.labGrade); writeUrl(""); }));
+  sourceChips.forEach((b) => b.addEventListener("click", () => { source = b.dataset.labSource; filter(grade); writeUrl(""); }));
   lab.addEventListener("click", (event) => {
     const link = event.target.closest("[data-lab-open]");
     if (link) { event.preventDefault(); open(link.dataset.labOpen); }

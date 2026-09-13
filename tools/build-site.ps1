@@ -1744,7 +1744,7 @@ function RenderBlock($block) {
             # Every listening test in one place, chosen by grade or level and
             # opened on this page. Without JavaScript each card links to the
             # grade page, where the same test lives.
-            $tests = @($listening | Sort-Object { [int](P $_ 'grade' 0) }, { [string](P $_ 'id') })
+            $tests = @($listening | Sort-Object { [int](P $_ 'grade' 0) }, { if ([string](P $_ 'source') -eq 'textbook') { 1 } else { 0 } }, { [string](P $_ 'id') })
             $html = (SectionOpen $block 'listening-lab') + (SectionHead $block)
             $html += '<div class="lab" data-listening-lab>'
             $html += '<div class="lab__filters" data-lab-filters hidden>'
@@ -1752,7 +1752,11 @@ function RenderBlock($block) {
             foreach ($g in @($tests | ForEach-Object { [int](P $_ 'grade' 0) } | Sort-Object -Unique)) {
                 $html += '<button type="button" class="lab__chip" aria-pressed="false" data-lab-grade="' + $g + '">Grade ' + $g + '</button>'
             }
-            $html += '</div><p class="lab__count" role="status" aria-live="polite" data-lab-count></p></div>'
+            $html += '</div>'
+            if (@($tests | Where-Object { [string](P $_ 'source') -eq 'textbook' }).Count) {
+                $html += '<div class="lab__chips" role="group" aria-label="Kind of test"><button type="button" class="lab__chip is-on" aria-pressed="true" data-lab-source="">All tests</button><button type="button" class="lab__chip" aria-pressed="false" data-lab-source="textbook">Pupil&#39;s Book activities</button><button type="button" class="lab__chip" aria-pressed="false" data-lab-source="rcf">RCF English tests</button></div>'
+            }
+            $html += '<p class="lab__count" role="status" aria-live="polite" data-lab-count></p></div>'
             $html += '<ul class="lab__list">'
             foreach ($t in $tests) {
                 $g = [int](P $t 'grade' 0)
@@ -1761,8 +1765,9 @@ function RenderBlock($block) {
                 $speakers = @((AsList (P $t 'script')) | ForEach-Object { [string](P $_ 'speaker') } | Where-Object { $_ -ne 'Narrator' } | Sort-Object -Unique).Count
                 $qs = (AsList (P $t 'questions')).Count
                 $words = (AsList (P $t 'vocabulary')).Count
-                $html += '<li class="lab__card" data-lab-card data-grade="' + $g + '">'
-                $html += '<div class="tag-row"><span class="tag tag--level">Grade ' + $g + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span></div>'
+                $src = $(if ([string](P $t 'source') -eq 'textbook') { 'textbook' } else { 'rcf' })
+                $html += '<li class="lab__card" data-lab-card data-grade="' + $g + '" data-source="' + $src + '">'
+                $html += '<div class="tag-row"><span class="tag tag--level">Grade ' + $g + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span>' + $(if ($src -eq 'textbook') { '<span class="tag tag--textbook">Pupil&#39;s Book activity</span>' } else { '' }) + '</div>'
                 $html += '<h3 class="lab__title">' + (E (P $t 'title')) + '</h3>'
                 $meta = @("$qs questions")
                 if ($speakers) { $meta += $(if ($speakers -eq 1) { '1 speaker' } else { "$speakers speakers" }) }

@@ -4526,3 +4526,7 @@ img.pcard__cover {
   .dlg.is-armed .dlg__line { display: grid !important; }
   .dlg__line--b { margin-left: 0; text-align: left; justify-items: start; }
 }
+
+/* Listening Laboratory: a test built from a Pupil's Book or Workbook activity. */
+.tag--textbook { background: #eef3fb; border-color: #c9d6ea; color: #1f3f6e; }
+.lab__filters .lab__chips + .lab__chips { margin-top: var(--sp-1); }
