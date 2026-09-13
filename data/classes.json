@@ -50,6 +50,9 @@
     {
       "id": "primary-elocution-online",
       "course": "primary-elocution",
+      "page": "rcf-classes/primary-elocution-teachers-diploma/",
+      "image": "assets/img/classes/primary-elocution-diploma-banner.jpg",
+      "imageAlt": "Poster for the CALSDA Primary Elocution Diploma course, showing a teacher speaking during an online class",
       "title": "Primary Elocution Teachers' Diploma",
       "subject": "Elocution and speech training",
       "level": "Professional preparatory course",
@@ -73,6 +76,7 @@
     {
       "id": "associate-diploma-online",
       "course": "associate-diploma",
+      "page": "rcf-classes/associate-diploma/",
       "title": "Associate Diploma (Higher Elocution Diploma)",
       "subject": "Elocution and speech training",
       "level": "Professional preparatory course",
@@ -96,6 +100,7 @@
     {
       "id": "grade-9-literature-online",
       "course": "grade-9-literature",
+      "page": "rcf-classes/grade-9-literature/",
       "title": "Grade 9 Literature",
       "subject": "English Literature",
       "level": "Grade 9",
@@ -117,6 +122,7 @@
     {
       "id": "grade-10-literature-online",
       "course": "grade-10-literature",
+      "page": "rcf-classes/grade-10-literature/",
       "title": "Grade 10 Literature",
       "subject": "English Literature",
       "level": "Grade 10",
@@ -138,6 +144,9 @@
     {
       "id": "ielts-online",
       "course": "ielts",
+      "page": "rcf-classes/ielts/",
+      "image": "assets/img/classes/ielts-training-banner.jpg",
+      "imageAlt": "Poster for one-to-one IELTS training, showing a candidate in an online lesson with a headset and notes",
       "title": "IELTS Training",
       "subject": "IELTS preparation",
       "level": "Individual course",
@@ -161,6 +170,9 @@
     {
       "id": "tkt-online",
       "course": "tkt",
+      "page": "rcf-classes/tkt/",
+      "image": "assets/img/classes/tkt-banner.jpg",
+      "imageAlt": "Poster for the TKT Teaching Knowledge Test course, showing a teacher leading a small group of adult trainees",
       "title": "TKT: Teaching Knowledge Test",
       "subject": "English teaching methodology",
       "level": "Professional preparatory course",
@@ -184,6 +196,9 @@
     {
       "id": "ol-literature-online",
       "course": "ol-literature",
+      "page": "rcf-classes/ol-literature/",
+      "image": "assets/img/classes/literature-paper-classes-banner.jpg",
+      "imageAlt": "Poster for the O/L and A/L Literature paper classes, showing a student writing answers during an online lesson",
       "title": "O/L Literature",
       "subject": "O/L English Literature",
       "level": "Ordinary Level, Grade 11",
@@ -206,6 +221,9 @@
     {
       "id": "al-literature-online",
       "course": "al-literature",
+      "page": "rcf-classes/al-literature/",
+      "image": "assets/img/classes/literature-paper-classes-banner.jpg",
+      "imageAlt": "Poster for the O/L and A/L Literature paper classes, showing a student writing answers during an online lesson",
       "title": "A/L Literature",
       "subject": "A/L English Literature",
       "level": "Advanced Level",
@@ -228,6 +246,7 @@
     {
       "id": "literature-orientation-online",
       "course": "literature-orientation",
+      "page": "rcf-classes/literature-orientation/",
       "title": "Literature Orientation: One-Month Course for New Teachers",
       "subject": "Teaching English Literature",
       "level": "Teacher training",

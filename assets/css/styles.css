@@ -2838,6 +2838,28 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .class-facts dt { flex: 0 0 40%; font-weight: 650; color: var(--ink-500); }
 .class-facts dd { margin: 0; color: var(--ink-900); }
 
+/* Courses shown in full: poster, then the details straight beneath it. One
+   course under another rather than a grid, because a poster needs the width
+   and the details read better as a column than squeezed beside it. */
+.class-features { display: grid; gap: var(--sp-6); max-width: 52rem; }
+.class-feature { display: grid; gap: 0; }
+.class-feature__poster {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  overflow: hidden;
+  background: var(--surface-alt);
+}
+.class-feature__poster img { display: block; width: 100%; height: auto; }
+/* The details card joins the poster above it into one piece. A course with no
+   poster keeps the ordinary rounded card. */
+.class-feature__poster + .class-feature__body { border-top-left-radius: 0; border-top-right-radius: 0; }
+@media (min-width: 720px) {
+  .class-feature__body .class-facts { grid-template-columns: 1fr 1fr; column-gap: var(--sp-5); }
+  .class-feature__body .class-facts dt { flex-basis: 45%; }
+}
+
 .timetable-cards { display: grid; gap: var(--sp-4); }
 @media (min-width: 720px) { .timetable-cards { display: none; } }
 .timetable-table { display: none; }

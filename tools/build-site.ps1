@@ -2423,12 +2423,24 @@ function RenderUpdates($block) {
 
 function RenderClasses($block) {
     $filterCourse = P $block 'course'
+    $filterCourses = AsList (P $block 'courses')
     $filterFormat = P $block 'format'
     $filterDelivery = P $block 'delivery'
     $featuredOnly = (P $block 'featured') -eq $true
+    # "feature" shows each course as its poster followed directly by its
+    # details, one course under another, so a visitor can read everything on
+    # the page instead of opening each course in turn. The default is the
+    # compact grid of cards.
+    $feature = ([string](P $block 'layout')) -eq 'feature'
 
     $list = @($classes | Where-Object { (P $_ 'published' $true) -ne $false })
     if ($filterCourse) { $list = @($list | Where-Object { [string](P $_ 'course') -eq [string]$filterCourse }) }
+    if ($filterCourses.Count) {
+        # Keep the order the page asks for, not the order of the data file.
+        $ordered = @()
+        foreach ($id in $filterCourses) { $ordered += @($list | Where-Object { [string](P $_ 'course') -eq [string]$id }) }
+        $list = $ordered
+    }
     if ($filterFormat) { $list = @($list | Where-Object { [string](P $_ 'groupFormat') -eq [string]$filterFormat }) }
     if ($filterDelivery) { $list = @($list | Where-Object { [string](P $_ 'delivery') -eq [string]$filterDelivery }) }
     if ($featuredOnly) { $list = @($list | Where-Object { (P $_ 'featured') -eq $true }) }
@@ -2446,11 +2458,29 @@ function RenderClasses($block) {
         return $html + '</div></section>'
     }
 
-    $html += '<div class="grid grid--3">'
+    if ($feature) { $html += '<div class="class-features">' } else { $html += '<div class="grid grid--3">' }
+    $shownPosters = @{}
     foreach ($c in $list) {
         $title = [string](P $c 'title')
         $status = ClassStatus (P $c 'registration')
-        $html += '<article class="card class-card"><div class="tag-row">'
+        $img = [string](P $c 'image')
+
+        if ($feature) {
+            $html += '<article class="class-feature">'
+            # Two courses can share one poster - O/L and A/L Literature do - and
+            # the same poster twice in a row reads as a mistake, so it is shown
+            # once, above the first course that uses it.
+            if ($img -and -not $shownPosters.ContainsKey($img)) {
+                $shownPosters[$img] = $true
+                $html += '<figure class="class-feature__poster"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $c 'imageAlt'))) + '" width="1200" height="675" loading="lazy" decoding="async"></figure>'
+            }
+            $html += '<div class="card class-card class-feature__body">'
+        }
+        else {
+            $html += '<article class="card class-card">'
+        }
+
+        $html += '<div class="tag-row">'
         $html += '<span class="class-card__status" data-status="' + $status[0] + '">' + (E $status[1]) + '</span>'
         if (P $c 'delivery') { $html += '<span class="tag tag--type">' + (E ((Get-Culture).TextInfo.ToTitleCase([string](P $c 'delivery')))) + '</span>' }
         if (P $c 'groupFormat') { $html += '<span class="tag">' + (E ((Get-Culture).TextInfo.ToTitleCase([string](P $c 'groupFormat')))) + '</span>' }
@@ -2478,8 +2508,13 @@ function RenderClasses($block) {
         $html += '</dl>'
         $msg = [string](P $c 'whatsappMessage' ("Hello, I would like information about $title. Please send me the schedule, fees and registration details."))
         $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
-        $html += '<div class="btn-row"><a class="btn btn--sm btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask about this class</a></div>'
-        $html += '</article>'
+        $html += '<div class="btn-row"><a class="btn btn--sm btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask about this class</a>'
+        $page = [string](P $c 'page')
+        if ($feature -and $page) {
+            $html += '<a class="btn btn--sm btn--outline" href="' + (E (Url $page)) + '">Full course page<span class="visually-hidden">: ' + (E $title) + '</span></a>'
+        }
+        $html += '</div>'
+        if ($feature) { $html += '</div></article>' } else { $html += '</article>' }
     }
     return $html + '</div></div></section>'
 }

@@ -14,13 +14,13 @@
       "slug": "rcf-classes",
       "title": "RCF Online Academy",
       "metaTitle": "RCF Online Academy | Elocution diplomas and Literature courses | RCF English",
-      "description": "RCF Online Academy: six-month preparatory courses for the CALSDA elocution diplomas, English Literature courses from Grade 9 to Advanced Level, and a one-month Literature orientation course for new teachers, conducted online by Rohana Fernando.",
+      "description": "RCF Online Academy: preparatory courses for the CALSDA elocution diplomas, English Literature classes from Grade 9 to Advanced Level, one-to-one IELTS training, and teacher training including TKT, all taught online.",
       "keywords": "RCF Online Academy, CALSDA elocution diploma, Primary Elocution Teachers Diploma, Associate Diploma, Grade 9 Literature, Grade 10 Literature, O/L Literature, A/L Literature, Literature orientation for new teachers, teacher training, online classes Sri Lanka",
       "kicker": "Learn with a teacher",
       "kind": "page",
       "schema": "Course",
       "hero": {
-        "text": "Seven courses, taught online by Rohana Fernando: two professional preparatory courses for the CALSDA elocution diploma examinations, four English Literature courses from Grade 9 to Advanced Level, and a one-month orientation course for teachers new to Literature.",
+        "text": "Elocution diploma courses, Literature classes from Grade 9 to Advanced Level, IELTS and teacher training, all taught online by Rohana Fernando.",
         "buttons": [
           { "label": "Our courses", "url": "rcf-classes/#courses", "style": "btn--accent" },
           { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--ghost-light" },
@@ -37,29 +37,15 @@
             "All courses are taught by **Rohana Fernando**, a graduate in English of the University of Peradeniya, holder of a Master of Arts in Linguistics from the University of Kelaniya and a TESOL qualification from the University of Peradeniya, and an Associate Member of the Colombo Association of Language Skills and Dramatic Art (CALSDA). [More about our staff](rcf-classes/our-staff/)."
           ]
         },
-
         {
-          "type": "cards",
+          "type": "classes",
           "id": "courses",
+          "layout": "feature",
           "heading": "Elocution diplomas",
           "eyebrow": "Professional preparatory courses",
           "variant": "tint",
           "intro": ["Two six-month courses preparing candidates for the diploma examinations of the Colombo Association of Language Skills and Dramatic Art (CALSDA)."],
-          "columns": "2",
-          "items": [
-            {
-              "title": "Primary Elocution Teachers' Diploma",
-              "url": "rcf-classes/primary-elocution-teachers-diploma/",
-              "more": "Course details",
-              "text": ["A six-month professional preparatory course for candidates sitting the CALSDA Primary Elocution Teachers' Diploma examination."]
-            },
-            {
-              "title": "Associate Diploma",
-              "url": "rcf-classes/associate-diploma/",
-              "more": "Course details",
-              "text": ["The higher elocution diploma. A six-month professional preparatory course for candidates sitting the CALSDA Associate Diploma examination."]
-            }
-          ]
+          "courses": ["primary-elocution", "associate-diploma"]
         },
 
         {
@@ -75,34 +61,30 @@
         },
 
         {
-          "type": "cards",
-          "heading": "Student Classes",
+          "type": "classes",
+          "layout": "feature",
+          "heading": "Literature classes",
           "eyebrow": "Grade 9 to Advanced Level",
-          "intro": ["Four courses following a student through school Literature, each taught the same way: read the text whole, study it closely, then practise answers and have them corrected individually."],
-          "columns": "4",
-          "items": [
-            { "title": "Grade 9 Literature", "url": "rcf-classes/grade-9-literature/", "more": "Course details", "text": ["The habits that make Ordinary Level straightforward: reading closely, finding evidence, explaining an effect."] },
-            { "title": "Grade 10 Literature", "url": "rcf-classes/grade-10-literature/", "more": "Course details", "text": ["The first year of the Ordinary Level course, at a pace that allows the texts to be studied properly."] },
-            { "title": "O/L Literature", "url": "rcf-classes/ol-literature/", "more": "Course details", "text": ["Examination year: texts completed, answers written to time, every piece corrected."] },
-            { "title": "A/L Literature", "url": "rcf-classes/al-literature/", "more": "Course details", "text": ["Close reading, critical appreciation of unseen passages, and well-organised essay answers."] }
-          ]
+          "intro": ["Courses following a student through school Literature, each taught the same way: read the text whole, study it closely, then practise answers and have them corrected individually."],
+          "courses": ["grade-9-literature", "grade-10-literature", "ol-literature", "al-literature"]
         },
 
         {
-          "type": "cards",
-          "heading": "Teacher Training",
-          "eyebrow": "For teachers new to Literature",
+          "type": "classes",
+          "layout": "feature",
+          "heading": "Examination preparation",
+          "eyebrow": "International English tests",
           "variant": "tint",
-          "intro": ["Courses for teachers rather than students. Conducted online, in the same practical way as the rest of the Academy."],
-          "columns": "2",
-          "items": [
-            {
-              "title": "Literature Orientation: One-Month Course for New Teachers",
-              "url": "rcf-classes/literature-orientation/",
-              "more": "Course details",
-              "text": ["A one-month online course for teachers new to English Literature: planning a lesson, teaching a poem, a story and a play, and marking written answers usefully."]
-            }
-          ]
+          "courses": ["ielts"]
+        },
+
+        {
+          "type": "classes",
+          "layout": "feature",
+          "heading": "Teacher training",
+          "eyebrow": "For practising and new teachers",
+          "intro": ["Courses for teachers rather than students, conducted online in the same practical way as the rest of the Academy."],
+          "courses": ["tkt", "literature-orientation"]
         },
 
         {
@@ -119,14 +101,6 @@
             { "title": "Regular revision", "text": ["Deliberate return to earlier work, spaced out, because that is what makes learning permanent."] },
             { "title": "Confidence, and support for those in difficulty", "text": ["Extra help for students who are struggling, without singling them out in front of others."] }
           ]
-        },
-
-        {
-          "type": "classes",
-          "heading": "All courses at a glance",
-          "eyebrow": "Current position",
-          "variant": "tint",
-          "intro": ["Where a day, time, fee or number of places has not been settled, the card says so rather than guessing. Ask on WhatsApp and you will be told what currently applies."]
         },
 
         {
@@ -212,7 +186,7 @@
           "type": "steps",
           "heading": "The five steps",
           "items": [
-            { "title": "Choose a course", "text": ["The seven courses are listed on the [Academy overview](rcf-classes/). If you are unsure which suits you, choose *Not sure, please advise* below and say what you have already done."] },
+            { "title": "Choose a course", "text": ["Every course is listed on the [Academy overview](rcf-classes/), with its poster and details. If you are unsure which suits you, choose *Not sure, please advise* below and say what you have already done."] },
             { "title": "Send the message", "text": ["Fill in the form below and it writes your message for you, then opens WhatsApp. Read it, then press send yourself."] },
             { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day and time, the fee, and whether places are available. This is given directly rather than published, because it changes."] },
             { "title": "Confirm registration", "text": ["If the course suits you, confirm. **Registration is confirmed by the teacher.** It is not automatic, and no place is reserved by visiting this website."] },
@@ -325,7 +299,7 @@
           "heading": "Rohana Fernando",
           "eyebrow": "Founder and teacher",
           "text": [
-            "Rohana Fernando is an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. He founded RCF English and teaches all seven courses at RCF Online Academy.",
+            "Rohana Fernando is an experienced English teacher and lecturer who has devoted several decades to English-language learning and teaching. He founded RCF English and teaches every course at RCF Online Academy.",
             "His work extends beyond classroom teaching to teacher support, online learning communities, educational publishing and the preparation of practical learning materials. [More about the founder](about/founder/)."
           ]
         },
@@ -683,7 +657,7 @@
             { "q": "What if my internet connection is weak?", "a": ["Mention it when you enquire. It is a common situation and better discussed in advance than discovered in the first class."] },
             { "q": "Will I be sent a meeting link?", "a": ["Joining instructions are sent privately once your place is confirmed. Links and passwords are never published on this website."] },
             { "q": "Can examination results be guaranteed?", "a": ["No, and nobody honest will guarantee them. Results depend on the candidate's own work. What the courses provide is clear teaching, guided practice, individual correction and regular revision."] },
-            { "q": "Who teaches the courses?", "a": ["All seven courses are taught by Rohana Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
+            { "q": "Who teaches the courses?", "a": ["Every course is taught by Rohana Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
           ]
         },
         {
