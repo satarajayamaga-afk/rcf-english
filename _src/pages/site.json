@@ -33,11 +33,11 @@
     {
       "slug": "resources",
       "title": "All Learning Resources",
-      "description": "Every downloadable and linked resource on RCF English in one filterable list: worksheets, revision sheets, lesson plans, model answers and teaching guides.",
+      "description": "Find any resource on RCF English in one place: past papers, marking schemes, worksheets, study packs, textbooks, teacher guides, listening tests and ebooks, filtered by grade, term, type and audience.",
       "keywords": "English resources, worksheets, downloads, revision sheets, lesson plans",
       "kicker": "Resource centre",
       "kind": "page",
-      "scripts": ["browse"],
+      "scripts": ["finder"],
       "hero": {
         "text": "Files you can open, print or download. Written lessons live in the subject sections; this page lists the resources that exist as separate files or as links to an official source.",
         "buttons": [
@@ -47,10 +47,11 @@
       },
       "blocks": [
         {
-          "type": "browse",
-          "heading": "Browse and filter",
-          "source": "resources",
-          "filters": ["category", "type", "subject", "level", "skill", "learnerLevel"]
+          "type": "finder",
+          "heading": "Find a resource",
+          "eyebrow": "Papers, worksheets, study packs, textbooks, guides, listening and ebooks",
+          "intro": ["Choose a grade, a term or a kind of resource, or type what you are looking for. Every result says what it is, who it is for and how big the file is, with a button to view or download it."],
+          "pageSize": 24
         },
         {
           "type": "callout",

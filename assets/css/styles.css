@@ -3119,6 +3119,65 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
    ========================================================================== */
 
 
+
+/* Resource finder ---------------------------------------------------------- */
+
+/* One search-and-filter panel over every resource, paper, listening set and
+   ebook. Results are a single column: each one says what it is, who it is for
+   and how big it is, with View and Download buttons that are large enough to
+   press on a phone. */
+.finder__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: var(--sp-3);
+  align-items: end;
+  padding: var(--sp-4);
+  margin-bottom: var(--sp-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-alt);
+}
+.finder__field { display: grid; gap: 0.3rem; }
+.finder__field--q { grid-column: 1 / -1; }
+.finder__field label { font-size: var(--step--1); font-weight: 650; color: var(--ink-700); }
+.finder__field input,
+.finder__field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  font: inherit;
+}
+.finder__reset { min-height: 44px; }
+.finder__count { font-weight: 650; color: var(--navy-800); margin: 0 0 var(--sp-3); }
+.finder__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+.fres {
+  display: grid;
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+.fres[hidden] { display: none; }
+@media (min-width: 720px) {
+  .fres { grid-template-columns: 1fr auto; align-items: center; }
+}
+.fres__title { margin: 0.35rem 0 0.2rem; font-size: var(--step-0); }
+.fres__meta { margin: 0; font-size: var(--step--1); color: var(--ink-700); }
+.fres__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.fres__actions .btn { min-height: 44px; display: inline-flex; align-items: center; }
+.fres__free { color: var(--ok-700); background: var(--ok-100); }
+.fres__premium { color: var(--gold-800); background: var(--gold-100); }
+.fres__new { color: #fff; background: var(--teal-700); }
+.finder__empty { padding: var(--sp-4); border: 1px dashed var(--line-strong); border-radius: var(--radius-md); }
+.finder__more { margin-top: var(--sp-4); text-align: center; }
+/* Without the script there is no Show more, so the whole list is shown. */
+.finder:not(.finder--ready) .fres[hidden] { display: grid; }
+@media print { .finder__controls, .finder__more, .fres__actions { display: none !important; } }
+
 /* Promotional banner ------------------------------------------------------ */
 
 /* The site's own artwork, full width of the content column. It keeps its own

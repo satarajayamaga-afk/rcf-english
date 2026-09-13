@@ -1586,6 +1586,10 @@ function RenderBlock($block) {
             return $html + '</div></div></section>'
         }
 
+        'finder' {
+            return (RenderFinder $block)
+        }
+
         'paperLibrary' {
             return (RenderPaperLibrary $block)
         }
@@ -1775,6 +1779,244 @@ function TypeLabel($value) {
     if ($map.ContainsKey($key)) { return $map[$key] }
     if (-not $key) { return 'Resource' }
     return ((Get-Culture).TextInfo.ToTitleCase(($key -replace '[-_]', ' ')))
+}
+
+# ---------------------------------------------------------------------------
+# The resource finder: one list across the resource catalogue, the paper
+# catalogue, the listening tests and the RCF Publications ebooks, reduced to a
+# single shape so one set of filters works across all of them.
+#
+# Everything is written into the page as a plain list, so it is complete and
+# readable with JavaScript off and visible to search engines. assets/js/
+# finder.js adds the filters on top by reading the data- attributes.
+#
+# A label is shown only where a record actually says it is true. Most papers
+# do not record whether answers are included or whether the scan was checked,
+# so those papers simply carry no label - the finder never guesses.
+# ---------------------------------------------------------------------------
+
+function FinderGrades($record) {
+    $out = @()
+    $g = [string](P $record 'grade')
+    if ($g -match '^\d+$') { $out += [int]$g }
+    $lvl = [string](P $record 'level')
+    foreach ($m in [regex]::Matches($lvl, '\b(\d{1,2})\b')) {
+        $n = [int]$m.Groups[1].Value
+        if ($n -ge 1 -and $n -le 13) { $out += $n }
+    }
+    if ($lvl -match 'O/L|Ordinary') { $out += 11 }
+    if ($lvl -match 'A/L|Advanced') { $out += 12; $out += 13 }
+    return @($out | Sort-Object -Unique)
+}
+
+function FinderArea($subject) {
+    $s = ([string]$subject).ToLower()
+    if ($s -match 'literature') { return 'literature' }
+    if ($s -match 'general') { return 'general' }
+    return 'english'
+}
+
+function FinderTypeGroup($type) {
+    switch -regex ([string]$type) {
+        '^(past-paper|model-paper|revision-paper|practice-paper|question-bank)$' { return 'papers' }
+        '^(marking-scheme|model-answer)$' { return 'answers' }
+        '^(worksheet|resource-book|workbook|vocabulary)$' { return 'worksheets' }
+        '^study-pack$' { return 'study-packs' }
+        '^textbook$' { return 'textbooks' }
+        '^(teachers-guide|scheme-of-work|lesson-plan|syllabus)$' { return 'guides' }
+    }
+    return 'other'
+}
+
+$script:FinderTypeOrder = @('papers', 'answers', 'worksheets', 'study-packs', 'textbooks', 'guides', 'listening', 'ebooks', 'other')
+
+function FinderFileType($target) {
+    $t = ([string]$target).ToLower()
+    if (-not $t) { return '' }
+    if ($t -match 'drive\.google\.com|docs\.google\.com') { return 'Google Drive' }
+    if ($t -match '\.pdf($|\?)') { return 'PDF' }
+    if ($t -match '\.docx?($|\?)') { return 'Word' }
+    if ($t -match '\.pptx?($|\?)') { return 'PowerPoint' }
+    if ($t -match '^https?:') { return 'Website' }
+    return 'Page'
+}
+
+# A local file's real size, read from disk, where the record gives none.
+function FinderLocalSize($target) {
+    $t = [string]$target
+    if (-not $t -or $t -match '^https?:' -or $t -notmatch '\.(pdf|docx?|pptx?)$') { return '' }
+    $path = Join-Path $ProjectRoot ($t -replace '/', '\')
+    if (-not (Test-Path -LiteralPath $path)) { return '' }
+    $bytes = (Get-Item -LiteralPath $path).Length
+    if ($bytes -ge 1MB) { return ('{0:0.0} MB' -f ($bytes / 1MB)) }
+    return ('{0:0} KB' -f [math]::Max(1, $bytes / 1KB))
+}
+
+function FinderRow($fields) {
+    return [pscustomobject]$fields
+}
+
+function FinderRecords() {
+    $today = Get-Date
+    $rows = New-Object System.Collections.ArrayList
+
+    foreach ($r in @($resources | Where-Object { (P $_ 'published' $true) -ne $false })) {
+        $group = FinderTypeGroup (P $r 'type')
+        $audience = 'student'
+        if ($group -eq 'guides') { $audience = 'teacher' }
+        elseif ($group -in @('papers', 'answers', 'study-packs', 'textbooks')) { $audience = 'both' }
+        elseif ([string](P $r 'category') -eq 'teacher-resources') { $audience = 'teacher' }
+        $labels = @()
+        if ([string](P $r 'anonymousAccess') -eq 'verified') { $labels += 'Link checked' }
+        $added = [string](P $r 'added')
+        $d = [datetime]::MinValue
+        if ($added -and [datetime]::TryParse($added, [ref]$d) -and ($today - $d).TotalDays -le 14) { $labels += 'New' }
+        $url = [string](P $r 'url')
+        $dl = [string](P $r 'download')
+        $ftTarget = $url
+        if ($dl) { $ftTarget = $dl }
+        [void]$rows.Add((FinderRow @{
+            title = [string](P $r 'title'); desc = [string](P $r 'description')
+            grades = @(FinderGrades $r); area = (FinderArea (P $r 'subject')); term = ''
+            group = $group; typeLabel = (TypeLabel (P $r 'type')); audience = $audience; access = 'free'
+            year = ''; level = [string](P $r 'level')
+            url = $url; download = $dl; fileType = (FinderFileType $ftTarget)
+            size = [string](P $r 'fileSize'); source = [string](P $r 'author'); labels = $labels
+            words = ((AsList (P $r 'keywords')) -join ' ')
+        }))
+    }
+
+    foreach ($r in @($papers | Where-Object { (P $_ 'published' $true) -ne $false })) {
+        $group = FinderTypeGroup (P $r 'type')
+        $url = [string](P $r 'url')
+        $dl = [string](P $r 'download')
+        $ftTarget = $url
+        if ($dl) { $ftTarget = $dl }
+        $size = [string](P $r 'fileSize')
+        if (-not $size) { $size = FinderLocalSize $ftTarget }
+        $labels = @()
+        if ((P $r 'answers') -eq 'yes') { $labels += 'Answers included' }
+        if ((P $r 'clearScan') -eq 'yes') { $labels += 'Clear scan' }
+        if ([string](P $r 'medium') -eq 'english') { $labels += 'English medium' }
+        $src = [string](P $r 'province')
+        if (-not $src) { $src = [string](P $r 'source') }
+        [void]$rows.Add((FinderRow @{
+            title = [string](P $r 'title'); desc = [string](P $r 'description')
+            grades = @(FinderGrades $r); area = (FinderArea (P $r 'subject')); term = [string](P $r 'term')
+            group = $group; typeLabel = (TypeLabel (P $r 'type')); audience = 'both'; access = 'free'
+            year = [string](P $r 'year'); level = [string](P $r 'level')
+            url = $url; download = $dl; fileType = (FinderFileType $ftTarget)
+            size = $size; source = $src; labels = $labels
+            words = ([string](P $r 'examination') + ' ' + [string](P $r 'paper'))
+        }))
+    }
+
+    # Listening: one entry per grade, pointing at the grade page that holds
+    # the tests, rather than thirty entries a visitor cannot open on their own.
+    $tests = @(DataList 'listening' 'tests')
+    foreach ($grp in ($tests | Group-Object { [string](P $_ 'grade') } | Sort-Object { [int]$_.Name })) {
+        $g = [int]$grp.Name
+        [void]$rows.Add((FinderRow @{
+            title = "Grade $g listening tests"; desc = "$($grp.Count) listening tests read aloud on the page, with questions that mark themselves."
+            grades = @($g); area = 'english'; term = ''
+            group = 'listening'; typeLabel = 'Listening'; audience = 'student'; access = 'free'
+            year = ''; level = "Grade $g"
+            url = "grades/grade-$g/"; download = ''; fileType = 'Interactive'
+            size = ''; source = ''; labels = @()
+            words = 'listening audio'
+        }))
+    }
+
+    # Ebooks - the one premium kind of material on the site.
+    $books = @()
+    $books = $publicationBooks
+    foreach ($b in $books) {
+        if ((P $b 'published' $true) -eq $false) { continue }
+        if ([string](P $b 'availability') -ne 'available') { continue }
+        $aud = [string](P $b 'audience')
+        $audience = 'student'
+        if ($aud -match 'teacher' -and $aud -match 'student|learner') { $audience = 'both' }
+        elseif ($aud -match 'teacher') { $audience = 'teacher' }
+        $cat = [string](P $b 'category')
+        $price = [string](P $b 'price')
+        $labels = @()
+        if ($price) { $labels += $price }
+        [void]$rows.Add((FinderRow @{
+            title = [string](P $b 'title'); desc = [string](P $b 'description')
+            grades = @(FinderGrades ([pscustomobject]@{ level = $aud })); area = (FinderArea "$cat $aud"); term = ''
+            group = 'ebooks'; typeLabel = 'Ebook'; audience = $audience; access = 'premium'
+            year = ''; level = $aud
+            url = 'rcf-publications/'; download = ''; fileType = [string](P $b 'format' 'Ebook')
+            size = ''; source = 'RCF Publications'; labels = $labels
+            words = $cat
+        }))
+    }
+
+    $order = $script:FinderTypeOrder
+    return @($rows | Sort-Object `
+        @{ Expression = { if (@($_.grades).Count) { @($_.grades)[0] } else { 99 } } },
+        @{ Expression = { [array]::IndexOf($order, $_.group) } },
+        @{ Expression = { $_.year }; Descending = $true },
+        @{ Expression = { $_.title } })
+}
+
+function RenderFinder($block) {
+    $rows = @(FinderRecords)
+    $html = (SectionOpen $block) + (SectionHead $block)
+    $html += '<div class="finder" data-finder data-page-size="' + (E ([string](P $block 'pageSize' '24'))) + '">'
+    $html += '<div class="finder__controls" data-finder-controls></div>'
+    $html += '<p class="finder__count" data-finder-count>' + $rows.Count + ' resources</p>'
+    $html += '<p class="visually-hidden" role="status" aria-live="polite" data-finder-live></p>'
+    $html += '<ul class="finder__list" data-finder-list>'
+    foreach ($r in $rows) {
+        $gradesAttr = ' ' + ((@($r.grades) | ForEach-Object { [string]$_ }) -join ' ') + ' '
+        $termText = ''
+        if ($r.term) { $termText = "$($r.term) term" }
+        $text = (@($r.title, $r.desc, $r.level, $r.source, $r.typeLabel, $r.words, $termText, $r.year) -join ' ')
+        $html += '<li class="fres" data-grades="' + (E $gradesAttr) + '" data-area="' + $r.area + '" data-term="' + (E $r.term) + '" data-type="' + $r.group + '" data-audience="' + $r.audience + '" data-access="' + $r.access + '" data-year="' + (E $r.year) + '" data-text="' + (E $text) + '">'
+        $html += '<div class="fres__main"><div class="tag-row">'
+        $html += '<span class="tag tag--type">' + (E $r.typeLabel) + '</span>'
+        if ($r.access -eq 'premium') { $html += '<span class="tag fres__premium">Premium</span>' } else { $html += '<span class="tag fres__free">Free</span>' }
+        if ($r.level) { $html += '<span class="tag tag--level">' + (E $r.level) + '</span>' }
+        if ($r.term) { $html += '<span class="tag">' + (E ((Get-Culture).TextInfo.ToTitleCase($r.term))) + ' term</span>' }
+        if ($r.year) { $html += '<span class="tag tag--year">' + (E $r.year) + '</span>' }
+        foreach ($l in @($r.labels)) {
+            $cls = 'tag'
+            if ($l -eq 'Answers included') { $cls = 'tag tag--answers' }
+            elseif ($l -eq 'Clear scan') { $cls = 'tag tag--clear' }
+            elseif ($l -eq 'New') { $cls = 'tag fres__new' }
+            $html += '<span class="' + $cls + '">' + (E $l) + '</span>'
+        }
+        $html += '</div>'
+        $extAttr = ''
+        if ($r.url -match '^https?:') { $extAttr = ' target="_blank" rel="noopener"' }
+        $html += '<h3 class="fres__title">'
+        if ($r.url) { $html += '<a href="' + (E (Url $r.url)) + '"' + $extAttr + '>' + (E $r.title) + '</a>' } else { $html += (E $r.title) }
+        $html += '</h3>'
+        $meta = @()
+        if ($r.fileType) { $meta += (E $r.fileType) }
+        if ($r.size) { $meta += (E $r.size) }
+        if ($r.source) { $meta += (E $r.source) }
+        if ($meta.Count) { $html += '<p class="fres__meta">' + ($meta -join ' &middot; ') + '</p>' }
+        $html += '</div><div class="fres__actions">'
+        if ($r.url) {
+            $viewLabel = 'View'
+            if ($r.group -eq 'listening') { $viewLabel = 'Open' }
+            elseif ($r.access -eq 'premium') { $viewLabel = 'See the book' }
+            $html += '<a class="btn btn--sm btn--accent" href="' + (E (Url $r.url)) + '"' + $extAttr + '>' + $viewLabel + '<span class="visually-hidden">: ' + (E $r.title) + '</span></a>'
+        }
+        if ($r.download -and $r.download -ne $r.url) {
+            $dlExt = ''
+            if ($r.download -match '^https?:') { $dlExt = ' target="_blank" rel="noopener"' }
+            $html += '<a class="btn btn--sm btn--outline" href="' + (E (Url $r.download)) + '"' + $dlExt + '>Download<span class="visually-hidden">: ' + (E $r.title) + '</span></a>'
+        }
+        $html += '</div></li>'
+    }
+    $html += '</ul>'
+    $html += '<p class="finder__empty" data-finder-empty hidden>Nothing matches those choices. Try removing a filter, or <a href="' + (E (Url 'search/')) + '">search the whole site</a>.</p>'
+    $html += '<p class="finder__more"><button type="button" class="btn btn--outline" data-finder-more hidden>Show more</button></p>'
+    $html += '</div>'
+    return $html + '</div></section>'
 }
 
 function StaticList($source, $fixed, $limit = 0) {
