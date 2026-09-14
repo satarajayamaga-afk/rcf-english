@@ -3199,6 +3199,7 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 .pathway--secondary { --route: #1f5fa8; --route-tint: #ecf3fb; }
 .pathway--teacher { --route: #8a5a12; --route-tint: #fbf3e4; }
 .pathway--exam { --route: #7a2a4f; --route-tint: #f8edf2; }
+.pathway--global { --route: #2d5d74; --route-tint: #eaf3f7; }
 .pathway__summary {
   display: flex;
   align-items: center;

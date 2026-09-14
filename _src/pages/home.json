@@ -131,6 +131,22 @@
             { "label": "A/L Literature", "url": "al-literature/" },
             { "label": "Past papers", "url": "past-papers/" }
           ]
+        },
+        {
+          "title": "I am a Cambridge, Edexcel or GCSE Student",
+          "sub": "International English examinations",
+          "icon": "🌍",
+          "style": "global",
+          "url": "global-english/",
+          "more": "Go to Global English",
+          "links": [
+            { "label": "GCSE English Language", "url": "global-english/gcse/", "note": "AQA, Edexcel, OCR and Eduqas" },
+            { "label": "Edexcel GCSE English Language", "url": "global-english/gcse/edexcel/" },
+            { "label": "Cambridge IGCSE First Language English", "url": "global-english/igcse/first-language-english/" },
+            { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
+            { "label": "Cambridge English: B1 Preliminary, B2 First, C1 Advanced", "url": "global-english/cambridge-english/" },
+            { "label": "Pearson Edexcel iPrimary and iLowerSecondary", "url": "global-english/edexcel-international-curriculum/" }
+          ]
         }
       ]
     },
