@@ -85,12 +85,12 @@ function setUp(root) {
   const form = document.createElement("form");
   form.className = "finder__form";
   form.setAttribute("role", "search");
-  form.addEventListener("submit", (e) => e.preventDefault());
+  form.addEventListener("submit", (e) => { e.preventDefault(); if (applyInterpretation()) apply(); });
 
   const qId = `finder-q-${++uid}`;
   const qWrap = document.createElement("div");
   qWrap.className = "finder__field finder__field--q";
-  qWrap.innerHTML = `<label for="${qId}">Keywords</label><input id="${qId}" type="search" placeholder="e.g. grade 8 term 2 writing" autocomplete="off">`;
+  qWrap.innerHTML = `<label for="${qId}">Keywords, or ask</label><input id="${qId}" type="search" placeholder="e.g. Grade 8 second term papers with marking schemes" autocomplete="off" enterkeyhint="search"><span class="finder__tip">Type a request and press Enter to set the filters for you.</span>`;
   form.appendChild(qWrap);
   const qInput = qWrap.querySelector("input");
 
@@ -141,6 +141,87 @@ function setUp(root) {
       else url.searchParams.delete(k);
     });
     window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+  }
+
+  /* Plain-language requests. "Find Grade 8 second term papers with marking
+     schemes" sets Grade 8, Second term and Papers, and keeps any words it
+     did not recognise as keywords. It only ever sets filters this list
+     already offers, so it cannot point at something that is not here. */
+  const understood = document.createElement("p");
+  understood.className = "finder__understood";
+  understood.setAttribute("aria-live", "polite");
+  understood.hidden = true;
+  controls.appendChild(understood);
+
+  const RULES = [
+    { facet: "type", value: "answers", re: /\b(marking schemes?|answer (keys?|sheets?)|model answers?|answers?)\b/ },
+    { facet: "type", value: "papers", re: /\b(past papers?|model papers?|term tests?|test papers?|question papers?|papers?|exams? papers?)\b/ },
+    { facet: "type", value: "worksheets", re: /\b(worksheets?|exercises?)\b/ },
+    { facet: "type", value: "study-packs", re: /\b(study packs?|self[- ]?learning packs?|packs?)\b/ },
+    { facet: "type", value: "textbooks", re: /\b(text ?books?|pupil'?s books?|work ?books?)\b/ },
+    { facet: "type", value: "guides", re: /\b(teacher'?s? guides?|lesson plans?|guides?)\b/ },
+    { facet: "type", value: "listening", re: /\b(listening|audio)\b/ },
+    { facet: "type", value: "ebooks", re: /\b(e-?books?|publications?)\b/ },
+    { facet: "area", value: "literature", re: /\bliterature\b/ },
+    { facet: "area", value: "general", re: /\bgeneral english\b/ },
+    { facet: "for", value: "teacher", re: /\b(for )?teachers?\b/ },
+    { facet: "for", value: "student", re: /\b(for )?(students?|pupils?)\b/ },
+    { facet: "access", value: "free", re: /\bfree\b/ },
+    { facet: "access", value: "premium", re: /\b(premium|paid)\b/ }
+  ];
+  const FILLER = /\b(find|show|me|i|want|need|looking|look|for|some|any|all|the|a|an|of|on|with|and|to|please|get|give|resources?|materials?|activities|activity|english)\b/g;
+
+  function interpret(raw) {
+    let text = ` ${String(raw || "").toLowerCase()} `;
+    const set = {};
+    // Grade: "grade 8", "gr 8", "g8", "grade eight", "O/L" (11), "A/L" (12 and 13 share a list).
+    const g = normaliseQuery(text).join(" ").match(/\bgrade (\d{1,2})\b/);
+    if (g) set.grade = g[1];
+    else if (/\bo\s*\/\s*l\b|\bordinary level\b/.test(text)) set.grade = "11";
+    else if (/\ba\s*\/\s*l\b|\badvanced level\b/.test(text)) set.grade = "12";
+    text = text.replace(/\b(grade|gr|g)\s*(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen)\b/g, " ")
+      .replace(/\bo\s*\/\s*l\b|\bordinary level\b|\ba\s*\/\s*l\b|\badvanced level\b/g, " ");
+    const t = normaliseQuery(text).join(" ").match(/\b(first|second|third) term\b/);
+    if (t) set.term = t[1];
+    text = text.replace(/\b(term\s*(1|2|3|one|two|three)|(1st|2nd|3rd|first|second|third|one|two|three)\s+term|year end)\b/g, " ");
+    // "papers with marking schemes" asks for papers; the answers are what
+    // the person hopes comes with them, not a separate kind of resource.
+    if (/\bpapers?\b/.test(text) && /\bwith (the )?(marking schemes?|answers?|answer keys?)\b/.test(text)) {
+      set.type = "papers";
+      text = text.replace(/\bwith (the )?(marking schemes?|answers?|answer keys?)\b/g, " ").replace(/\b(past |model |question |test )?papers?\b/g, " ");
+    }
+    RULES.forEach((rule) => {
+      if (set[rule.facet]) return;
+      if (rule.re.test(text)) { set[rule.facet] = rule.value; text = text.replace(rule.re, " "); }
+    });
+    const rest = text.replace(FILLER, " ").replace(/[^a-z0-9' ]+/g, " ").replace(/\s+/g, " ").trim();
+    return { set, rest };
+  }
+
+  function applyInterpretation() {
+    const raw = qInput.value.trim();
+    if (raw.split(/\s+/).length < 2) { understood.hidden = true; return false; }
+    const { set, rest } = interpret(raw);
+    const labels = [];
+    Object.keys(set).forEach((k) => {
+      const sel = selects[k];
+      if (!sel || !Array.from(sel.options).some((o) => o.value === set[k])) return;
+      sel.value = set[k];
+      labels.push(sel.options[sel.selectedIndex].text);
+    });
+    if (!labels.length) { understood.hidden = true; return false; }
+    qInput.value = rest;
+    understood.innerHTML = `Understood as: <strong>${labels.map((l) => l.replace(/[<>&]/g, "")).join(" · ")}</strong>${rest ? ` with the keywords “${rest.replace(/[<>&"]/g, "")}”` : ""}. <button type="button" class="finder__undo">Undo</button>`;
+    understood.hidden = false;
+    const before = raw;
+    understood.querySelector("button").addEventListener("click", () => {
+      Object.keys(selects).forEach((k) => { selects[k].value = ""; });
+      qInput.value = before;
+      understood.hidden = true;
+      apply();
+      qInput.focus();
+    });
+    return true;
   }
 
   function matches(r, s) {

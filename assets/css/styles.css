@@ -4703,3 +4703,10 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
   .wp-print__table th, .wp-print__table td { border: 0.6pt solid #666; padding: 6pt; text-align: left; height: 22pt; }
   .wp-print__foot { margin-top: 10pt; }
 }
+.finder__tip { display: block; margin-top: 0.25rem; font-size: 0.78rem; color: var(--ink-700); }
+.finder__understood { margin: var(--sp-2) 0 0; padding: var(--sp-2) var(--sp-3); border-radius: var(--radius-sm); background: var(--teal-050); color: var(--ink-900); font-size: var(--step--1); }
+.finder__undo { margin-left: 0.4rem; min-height: 32px; padding: 0.1rem 0.6rem; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: #fff; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.lab__groups { display: grid; gap: var(--sp-6); }
+.lab__group-title { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 var(--sp-1); font-size: var(--step-2); color: var(--navy-800); }
+.lab__group-count { font-size: 0.85rem; padding: 0.1rem 0.55rem; border-radius: 999px; background: var(--navy-050); color: var(--navy-700); font-weight: 700; }
+.lab__group-note { margin: 0 0 var(--sp-3); color: var(--ink-700); font-size: var(--step--1); }

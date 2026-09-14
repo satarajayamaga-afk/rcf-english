@@ -762,7 +762,8 @@ function setUpLab(lab, list) {
   const count = lab.querySelector("[data-lab-count]");
   const stage = lab.querySelector("[data-lab-stage]");
   const slot = lab.querySelector("[data-lab-slot]");
-  const listNode = lab.querySelector(".lab__list");
+  const listNode = lab.querySelector("[data-lab-groups]") || lab.querySelector(".lab__list");
+  const groups = Array.from(lab.querySelectorAll("[data-lab-group]"));
   lab.querySelector("[data-lab-filters]").hidden = false;
 
   let grade = "";
@@ -791,6 +792,13 @@ function setUpLab(lab, list) {
       const on = b.dataset.labSource === source;
       b.classList.toggle("is-on", on);
       b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    // Each group shows how many of its tests match, and hides itself when none do.
+    groups.forEach((grp) => {
+      const shown = grp.querySelectorAll("[data-lab-card]:not([hidden])").length;
+      grp.hidden = shown === 0;
+      const c = grp.querySelector("[data-lab-group-count]");
+      if (c) c.textContent = String(shown);
     });
     count.textContent = n === 1 ? "1 listening test" : `${n} listening tests`;
   }

@@ -1766,12 +1766,22 @@ function RenderBlock($block) {
                 $html += '<button type="button" class="lab__chip" aria-pressed="false" data-lab-grade="' + $g + '">Grade ' + $g + '</button>'
             }
             $html += '</div>'
-            if (@($tests | Where-Object { [string](P $_ 'source') -eq 'textbook' }).Count) {
-                $html += '<div class="lab__chips" role="group" aria-label="Kind of test"><button type="button" class="lab__chip is-on" aria-pressed="true" data-lab-source="">All tests</button><button type="button" class="lab__chip" aria-pressed="false" data-lab-source="textbook">Pupil&#39;s Book activities</button><button type="button" class="lab__chip" aria-pressed="false" data-lab-source="rcf">RCF English tests</button></div>'
-            }
             $html += '<p class="lab__count" role="status" aria-live="polite" data-lab-count></p></div>'
+            # Two groups, as on the grade pages: the Pupil's Book activities first,
+            # then the extra tests written by RCF English.
+            $groups = @(
+                @{ key = 'textbook'; heading = "Pupil's Book Listening Tests"; note = 'The listening activities from the Grade 6 to 11 Pupil&#39;s Books and Workbooks. Each test names the unit and activity in the book.'; anchor = 'textbook-listening' },
+                @{ key = 'rcf'; heading = 'Extra Listening Tests'; note = 'More listening practice beyond the textbook, written by RCF English, each with words to learn before you listen.'; anchor = 'listening' }
+            )
+            $html += '<div class="lab__groups" data-lab-groups>'
+            foreach ($grp in $groups) {
+            $inGroup = @($tests | Where-Object { $(if ([string](P $_ 'source') -eq 'textbook') { 'textbook' } else { 'rcf' }) -eq $grp.key })
+            if ($inGroup.Count -eq 0) { continue }
+            $html += '<section class="lab__group" data-lab-group="' + $grp.key + '" aria-labelledby="lab-group-' + $grp.key + '">'
+            $html += '<h3 class="lab__group-title" id="lab-group-' + $grp.key + '">' + (E $grp.heading) + ' <span class="lab__group-count" data-lab-group-count>' + $inGroup.Count + '</span></h3>'
+            $html += '<p class="lab__group-note">' + $grp.note + '</p>'
             $html += '<ul class="lab__list">'
-            foreach ($t in $tests) {
+            foreach ($t in $inGroup) {
                 $g = [int](P $t 'grade' 0)
                 $lv = $(if ($g -le 7) { @(1, 'Level 1 &middot; Foundation') } elseif ($g -le 9) { @(2, 'Level 2 &middot; Intermediate') } else { @(3, 'Level 3 &middot; Advanced') })
                 $id = [string](P $t 'id')
@@ -1780,16 +1790,19 @@ function RenderBlock($block) {
                 $words = (AsList (P $t 'vocabulary')).Count
                 $src = $(if ([string](P $t 'source') -eq 'textbook') { 'textbook' } else { 'rcf' })
                 $html += '<li class="lab__card" data-lab-card data-grade="' + $g + '" data-source="' + $src + '">'
-                $html += '<div class="tag-row"><span class="tag tag--level">Grade ' + $g + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span>' + $(if ($src -eq 'textbook') { '<span class="tag tag--textbook">Pupil&#39;s Book activity</span>' } else { '' }) + '</div>'
-                $html += '<h3 class="lab__title">' + (E (P $t 'title')) + '</h3>'
+                $html += '<div class="tag-row"><span class="tag tag--level">Grade ' + $g + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span></div>'
+                $html += '<h4 class="lab__title">' + (E (P $t 'title')) + '</h4>'
                 $meta = @("$qs questions")
                 if ($speakers) { $meta += $(if ($speakers -eq 1) { '1 speaker' } else { "$speakers speakers" }) }
                 if ($words) { $meta += "$words words to learn first" }
                 $html += '<p class="lab__meta">' + ($meta -join ' &middot; ') + '</p>'
-                $html += '<a class="btn btn--sm btn--accent" data-lab-open="' + (E $id) + '" href="' + (E (Url "grades/grade-$g/#listening")) + '">Take this test<span class="visually-hidden">: ' + (E (P $t 'title')) + '</span></a>'
+                $html += '<a class="btn btn--sm btn--accent" data-lab-open="' + (E $id) + '" href="' + (E (Url "grades/grade-$g/#$($grp.anchor)")) + '">Take this test<span class="visually-hidden">: ' + (E (P $t 'title')) + '</span></a>'
                 $html += '</li>'
             }
             $html += '</ul>'
+            $html += '</section>'
+            }
+            $html += '</div>'
             $html += '<div class="lab__stage" id="lab-test" tabindex="-1" data-lab-stage hidden>'
             $html += '<p class="lab__back"><button type="button" class="btn btn--sm btn--outline" data-lab-close>&larr; Back to all tests</button></p>'
             $html += '<div data-lab-slot></div></div>'
@@ -1811,14 +1824,20 @@ function RenderBlock($block) {
             # Things that live on this page rather than in the catalogue.
             $grammar = 0
             $grammarId = ''
-            $listeningTests = 0
-            $listeningId = ''
+            $listeningBook = 0
+            $listeningExtra = 0
+            $bookId = ''
+            $extraId = ''
             foreach ($b in (AsList $script:PageBlocks)) {
                 $bt = [string](P $b 'type')
                 if ($bt -eq 'activities') { $grammar += (AsList (P $b 'ids')).Count; if (-not $grammarId) { $grammarId = [string](P $b 'id') } }
-                if ($bt -eq 'listening' -and -not $listeningId) { $listeningId = [string](P $b 'id') }
+                if ($bt -eq 'listening') {
+                    $ids = @(); foreach ($x in (AsList (P $b 'ids'))) { $ids += [string]$x }
+                    $inBlock = @($listening | Where-Object { $ids -contains [string](P $_ 'id') })
+                    if (@($inBlock | Where-Object { [string](P $_ 'source') -eq 'textbook' }).Count) { $listeningBook += $inBlock.Count; if (-not $bookId) { $bookId = [string](P $b 'id') } }
+                    else { $listeningExtra += $inBlock.Count; if (-not $extraId) { $extraId = [string](P $b 'id') } }
+                }
             }
-            if ($listeningId) { $listeningTests = @($listening | Where-Object { [int](P $_ 'grade' 0) -eq $g }).Count }
 
             $finder = "resources/?grade=$g"
             $tiles = @(
@@ -1831,7 +1850,8 @@ function RenderBlock($block) {
                 @{ label = 'Marking schemes and answers'; n = (& $count { $_.group -eq 'answers' }); href = "$finder&type=answers" },
                 @{ label = 'Study packs'; n = (& $count { $_.group -eq 'study-packs' }); href = "$finder&type=study-packs" },
                 @{ label = 'Practice activities'; n = $grammar; href = $(if ($grammarId) { "#$grammarId" } else { '' }); unit = 'activity' },
-                @{ label = 'Listening tests'; n = $listeningTests; href = $(if ($listeningId) { "#$listeningId" } else { '' }); unit = 'test' },
+                @{ label = "Pupil's Book listening tests"; n = $listeningBook; href = $(if ($bookId) { "#$bookId" } else { '' }); unit = 'test' },
+                @{ label = 'Extra listening tests'; n = $listeningExtra; href = $(if ($extraId) { "#$extraId" } else { '' }); unit = 'test' },
                 @{ label = 'RCF Publications'; n = (& $count { $_.access -eq 'premium' }); href = "$finder&access=premium"; unit = 'book' }
             )
 
@@ -2182,19 +2202,24 @@ function FinderRecords() {
         }))
     }
 
-    # Listening: one entry per grade, pointing at the grade page that holds
-    # the tests, rather than thirty entries a visitor cannot open on their own.
+    # Listening: two entries per grade, kept apart as on the grade pages: the
+    # Pupil's Book listening tests and the extra tests written by RCF English.
+    # Each points at its own section of the grade page.
     $tests = @(DataList 'listening' 'tests')
-    foreach ($grp in ($tests | Group-Object { [string](P $_ 'grade') } | Sort-Object { [int]$_.Name })) {
-        $g = [int]$grp.Name
+    foreach ($grp in ($tests | Group-Object { [string](P $_ 'grade') + '|' + $(if ([string](P $_ 'source') -eq 'textbook') { 'a-textbook' } else { 'b-extra' }) } | Sort-Object { [int]($_.Name.Split('|')[0]) }, { $_.Name.Split('|')[1] })) {
+        $g = [int]($grp.Name.Split('|')[0])
+        $isBook = $grp.Name.EndsWith('textbook')
+        $lTitle = $(if ($isBook) { "Grade $g Pupil's Book listening tests" } else { "Grade $g extra listening tests" })
+        $lDesc = $(if ($isBook) { "$($grp.Count) listening activities from the Grade $g Pupil's Book and Workbook, read aloud on the page, with questions that mark themselves." } else { "$($grp.Count) extra listening tests written by RCF English, read aloud on the page, with words to learn first and questions that mark themselves." })
+        $lAnchor = $(if ($isBook) { 'textbook-listening' } else { 'listening' })
         [void]$rows.Add((FinderRow @{
-            title = "Grade $g listening tests"; desc = "$($grp.Count) listening tests read aloud on the page, with questions that mark themselves."
+            title = $lTitle; desc = $lDesc
             grades = @($g); area = 'english'; term = ''
             group = 'listening'; typeLabel = 'Listening'; audience = 'student'; access = 'free'
             year = ''; level = "Grade $g"
-            url = "grades/grade-$g/"; download = ''; fileType = 'Interactive'
+            url = "grades/grade-$g/#$lAnchor"; download = ''; fileType = 'Interactive'
             size = ''; source = ''; labels = @()
-            words = 'listening audio'
+            words = $(if ($isBook) { 'listening audio pupils book textbook workbook' } else { 'listening audio extra practice' })
         }))
     }
 
