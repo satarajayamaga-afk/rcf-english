@@ -1,6 +1,5 @@
 {
   "_comment": "IELTS Academic Practice Test 1 - Writing and Speaking. Original RCF English work. Task 1 uses a TABLE, which is one of the visual types genuinely used in IELTS Academic Task 1, so the task works on a text-only page and prints correctly. All figures are invented for the exercise and the page says so. Format verified against the published IELTS format: Writing 60 minutes, Task 1 at least 150 words in about 20 minutes worth one third of the marks, Task 2 at least 250 words in about 40 minutes worth two thirds; Speaking 11-14 minutes, Part 2 has one minute preparation and one to two minutes speaking.",
-
   "pages": [
     {
       "slug": "practical-english/ielts/practice-test-1/writing",
@@ -14,11 +13,23 @@
       "resourceType": "practice test",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Practice Test 1", "url": "practical-english/ielts/practice-test-1/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Practice Test 1",
+          "url": "practical-english/ielts/practice-test-1/"
+        }
       ],
-      "backTo": { "label": "Practice Test 1", "url": "practical-english/ielts/practice-test-1/" },
+      "backTo": {
+        "label": "Practice Test 1",
+        "url": "practical-english/ielts/practice-test-1/"
+      },
       "hero": {
         "text": "Two tasks, sixty minutes, and one of them is worth twice as much as the other. Most candidates spend their time the wrong way round."
       },
@@ -49,22 +60,53 @@
           "level": "h2",
           "text": [
             "*You should spend about 20 minutes on this task.*",
-            "The table below shows the number of visitors, in thousands, to four types of tourist attraction in one country in 2005, 2012 and 2019.",
+            "The chart below shows the number of visitors, in thousands, to four types of tourist attraction in one country in 2005, 2012 and 2019.",
             "**Summarise the information by selecting and reporting the main features, and make comparisons where relevant.**",
             "*Write at least 150 words.*"
           ]
         },
         {
-          "type": "table",
-          "heading": "Visitors to four types of tourist attraction (thousands)",
-          "level": "h3",
+          "type": "chart",
+          "kind": "bar",
+          "title": "Visitors to four types of tourist attraction in one country, 2005, 2012 and 2019 (thousands)",
           "caption": "Figures invented for this practice task.",
-          "columns": ["Type of attraction", "2005", "2012", "2019"],
-          "rows": [
-            ["Museums and galleries", "6,800", "9,100", "12,400"],
-            ["Theme parks", "5,400", "5,900", "5,500"],
-            ["National parks", "4,200", "5,600", "8,300"],
-            ["Historic houses", "3,100", "2,700", "2,200"]
+          "categoryLabel": "Type of attraction",
+          "yLabel": "Visitors (thousands)",
+          "yMax": 15000,
+          "categories": [
+            "Museums and galleries",
+            "Theme parks",
+            "National parks",
+            "Historic houses"
+          ],
+          "series": [
+            {
+              "name": "2005",
+              "values": [
+                6800,
+                5400,
+                4200,
+                3100
+              ]
+            },
+            {
+              "name": "2012",
+              "values": [
+                9100,
+                5900,
+                5600,
+                2700
+              ]
+            },
+            {
+              "name": "2019",
+              "values": [
+                12400,
+                5500,
+                8300,
+                2200
+              ]
+            }
           ]
         },
         {
@@ -117,14 +159,31 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Speaking", "url": "practical-english/ielts/practice-test-1/speaking/", "text": ["Three parts, 11 to 14 minutes."] },
-            { "title": "IELTS Writing guidance", "url": "practical-english/ielts/writing/", "text": ["Both tasks and the marking criteria in detail."] },
-            { "title": "IELTS graphs and charts", "url": "practical-english/ielts/graphs/", "text": ["The language for describing every Task 1 visual type."] }
+            {
+              "title": "Speaking",
+              "url": "practical-english/ielts/practice-test-1/speaking/",
+              "text": [
+                "Three parts, 11 to 14 minutes."
+              ]
+            },
+            {
+              "title": "IELTS Writing guidance",
+              "url": "practical-english/ielts/writing/",
+              "text": [
+                "Both tasks and the marking criteria in detail."
+              ]
+            },
+            {
+              "title": "IELTS graphs and charts",
+              "url": "practical-english/ielts/graphs/",
+              "text": [
+                "The language for describing every Task 1 visual type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/practice-test-1/speaking",
       "title": "IELTS Practice Test 1: Speaking",
@@ -137,11 +196,23 @@
       "resourceType": "practice test",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Practice Test 1", "url": "practical-english/ielts/practice-test-1/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Practice Test 1",
+          "url": "practical-english/ielts/practice-test-1/"
+        }
       ],
-      "backTo": { "label": "Practice Test 1", "url": "practical-english/ielts/practice-test-1/" },
+      "backTo": {
+        "label": "Practice Test 1",
+        "url": "practical-english/ielts/practice-test-1/"
+      },
       "hero": {
         "text": "Eleven to fourteen minutes with one examiner, in three parts. The Speaking test is the same for Academic and General Training."
       },
@@ -159,12 +230,32 @@
           "heading": "How the Speaking test runs",
           "level": "h2",
           "stacked": true,
-          "columns": ["Part", "Time", "What happens"],
+          "columns": [
+            "Part",
+            "Time",
+            "What happens"
+          ],
           "rows": [
-            ["Part 1: Introduction and interview", "4 to 5 minutes", "The examiner checks your identity, then asks questions about yourself and two or three familiar topics."],
-            ["Part 2: Long turn", "3 to 4 minutes", "You are given a card, paper and a pencil. You have 1 minute to prepare, then speak for 1 to 2 minutes. The examiner may ask one or two short follow-up questions."],
-            ["Part 3: Discussion", "4 to 5 minutes", "A two-way discussion of more abstract questions connected to the Part 2 topic."],
-            ["Marking", "-", "Fluency and Coherence, Lexical Resource, Grammatical Range and Accuracy, and Pronunciation - each worth 25%."]
+            [
+              "Part 1: Introduction and interview",
+              "4 to 5 minutes",
+              "The examiner checks your identity, then asks questions about yourself and two or three familiar topics."
+            ],
+            [
+              "Part 2: Long turn",
+              "3 to 4 minutes",
+              "You are given a card, paper and a pencil. You have 1 minute to prepare, then speak for 1 to 2 minutes. The examiner may ask one or two short follow-up questions."
+            ],
+            [
+              "Part 3: Discussion",
+              "4 to 5 minutes",
+              "A two-way discussion of more abstract questions connected to the Part 2 topic."
+            ],
+            [
+              "Marking",
+              "-",
+              "Fluency and Coherence, Lexical Resource, Grammatical Range and Accuracy, and Pronunciation - each worth 25%."
+            ]
           ]
         },
         {
@@ -292,9 +383,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Answers and model answers", "url": "practical-english/ielts/practice-test-1/answers/", "text": ["The whole test, marked and explained."] },
-            { "title": "IELTS Speaking guidance", "url": "practical-english/ielts/speaking/", "text": ["The three parts and how to prepare for each."] },
-            { "title": "10 model Task 2 essays", "url": "practical-english/ielts/model-essays/", "text": ["Every essay type, with the reasoning shown."] }
+            {
+              "title": "Answers and model answers",
+              "url": "practical-english/ielts/practice-test-1/answers/",
+              "text": [
+                "The whole test, marked and explained."
+              ]
+            },
+            {
+              "title": "IELTS Speaking guidance",
+              "url": "practical-english/ielts/speaking/",
+              "text": [
+                "The three parts and how to prepare for each."
+              ]
+            },
+            {
+              "title": "10 model Task 2 essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "Every essay type, with the reasoning shown."
+              ]
+            }
           ]
         }
       ]

@@ -606,9 +606,41 @@ function Footer() {
 
 function RenderBlocks($blocks) {
     $html = ''
-    foreach ($block in (AsList $blocks)) { $html += (RenderBlock $block) }
-    return $html
+    foreach ($block in (AsList $blocks)) {
+        # A block can depend on whether visitor statistics are switched on, so
+        # the privacy policy always describes what the site actually does.
+        $when = P $block 'whenAnalytics'
+        if ($null -ne $when -and [bool]$when -ne [bool]$script:AnalyticsOn) { continue }
+        $html += (RenderBlock $block)
+    }
+    return $html.Replace('[[analytics-service]]', $script:AnalyticsName)
 }
+
+# Visitor statistics. Both supported services are cookieless and record page
+# views only. Nothing is added to any page until an ID is set in config.json.
+$script:AnalyticsOn = $false
+$script:AnalyticsHtml = ''
+$script:AnalyticsName = ''
+$analyticsCfg = P $script:Config 'analytics'
+if ($analyticsCfg) {
+    $aProvider = ([string](P $analyticsCfg 'provider' '')).ToLowerInvariant()
+    $aId = ([string](P $analyticsCfg 'id' '')).Trim()
+    if ($aId -and $aProvider -eq 'cloudflare') {
+        if ($aId -notmatch '^[A-Za-z0-9]+$') { throw "config.json analytics.id does not look like a Cloudflare Web Analytics token" }
+        $script:AnalyticsHtml = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=''{"token": "' + $aId + '"}''></script>'
+        $script:AnalyticsName = 'Cloudflare Web Analytics'
+        $script:AnalyticsOn = $true
+    }
+    elseif ($aId -and $aProvider -eq 'goatcounter') {
+        if ($aId -notmatch '^[a-z0-9-]+$') { throw "config.json analytics.id does not look like a GoatCounter site code" }
+        $script:AnalyticsHtml = '<script data-goatcounter="https://' + $aId + '.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>'
+        $script:AnalyticsName = 'GoatCounter'
+        $script:AnalyticsOn = $true
+    }
+    elseif ($aId) { throw "config.json analytics.provider must be 'cloudflare' or 'goatcounter'" }
+}
+
+function AnalyticsTag { return $script:AnalyticsHtml }
 
 function SectionOpen($block, $extraClass = '') {
     $variant = [string](P $block 'variant' '')
@@ -1125,6 +1157,8 @@ function RenderBlock($block) {
             $html += '</div>'
             return $html + '</div></section>'
         }
+
+        'chart' { return RenderChart $block }
 
         'banner' {
             # A full-width promotional image. Unlike the advert poster this is
@@ -2734,6 +2768,345 @@ function PaperCard($r) {
     return $html + '</li>'
 }
 
+# ---------------------------------------------------------------------------
+# Charts drawn as inline SVG from data in the page file, for IELTS Writing
+# Task 1 and anywhere else a chart helps. Kinds:
+#   line     categories[] (x axis) + series[{name, values[]}]
+#   bar      categories[] + series[{name, values[]}] (grouped bars)
+#   pie      pies[{title, slices[{label, value}]}] (one or more pies)
+#   process  steps[{title, note}] in order
+#   map      panels[{title, items[{label, shape, x, y, w, h, points}]}]
+#            on a 100 x 70 grid; shapes: building, green, water, road, bridge
+# Every chart is followed by its figures as a table inside <details>, so the
+# numbers can be checked and are available to screen readers.
+# ---------------------------------------------------------------------------
+
+$script:ChartColours = @('#1f5fa8', '#d9822b', '#2a9d8f', '#8e5ea2', '#c0392b', '#6b7a8f')
+$script:ChartMarkers = @('circle', 'square', 'triangle', 'diamond', 'circle', 'square')
+
+function Num($n) { return ([double]$n).ToString('0.##', [Globalization.CultureInfo]::InvariantCulture) }
+
+# Figures a reader sees: 12400 is shown as 12,400.
+function Figure($n) { return ([double]$n).ToString('#,0.##', [Globalization.CultureInfo]::InvariantCulture) }
+
+function NiceMax($max) {
+    if ($max -le 0) { return 10 }
+    $pow = [Math]::Pow(10, [Math]::Floor([Math]::Log10($max)))
+    foreach ($m in @(1, 1.2, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10)) {
+        if ($m * $pow -ge $max) { return $m * $pow }
+    }
+    return 10 * $pow
+}
+
+function ChartValue($v) {
+    return [double](([string]$v) -replace '[^0-9.\-]', '')
+}
+
+function SvgText($x, $y, $text, $attrs = '') {
+    return '<text x="' + (Num $x) + '" y="' + (Num $y) + '"' + $attrs + '>' + (E $text) + '</text>'
+}
+
+function WrapLabel($text, $max) {
+    $words = ([string]$text).Split(' ')
+    $lines = New-Object System.Collections.ArrayList
+    $line = ''
+    foreach ($w in $words) {
+        if ($line -and ($line.Length + 1 + $w.Length) -gt $max) { [void]$lines.Add($line); $line = $w }
+        elseif ($line) { $line += ' ' + $w }
+        else { $line = $w }
+    }
+    if ($line) { [void]$lines.Add($line) }
+    return , $lines
+}
+
+function Marker($shape, $x, $y, $colour) {
+    switch ($shape) {
+        'square' { return '<rect x="' + (Num ($x - 4.5)) + '" y="' + (Num ($y - 4.5)) + '" width="9" height="9" fill="' + $colour + '"/>' }
+        'triangle' { return '<polygon points="' + (Num $x) + ',' + (Num ($y - 6)) + ' ' + (Num ($x + 5.5)) + ',' + (Num ($y + 4)) + ' ' + (Num ($x - 5.5)) + ',' + (Num ($y + 4)) + '" fill="' + $colour + '"/>' }
+        'diamond' { return '<polygon points="' + (Num $x) + ',' + (Num ($y - 6)) + ' ' + (Num ($x + 6)) + ',' + (Num $y) + ' ' + (Num $x) + ',' + (Num ($y + 6)) + ' ' + (Num ($x - 6)) + ',' + (Num $y) + '" fill="' + $colour + '"/>' }
+        default { return '<circle cx="' + (Num $x) + '" cy="' + (Num $y) + '" r="4.5" fill="' + $colour + '"/>' }
+    }
+}
+
+function ChartDataTable($block) {
+    $kind = [string](P $block 'kind')
+    $unit = [string](P $block 'unit' '')
+    $html = '<details class="chart__data"><summary>Show the figures as a table</summary><div class="table-wrap"><table class="data">'
+    if ($kind -eq 'line' -or $kind -eq 'bar') {
+        $cats = (AsList (P $block 'categories'))
+        $series = (AsList (P $block 'series'))
+        $html += '<thead><tr><th scope="col">' + (E (P $block 'categoryLabel' '')) + '</th>'
+        foreach ($s in $series) { $html += '<th scope="col">' + (E (P $s 'name')) + '</th>' }
+        $html += '</tr></thead><tbody>'
+        for ($i = 0; $i -lt $cats.Count; $i++) {
+            $html += '<tr><th scope="row">' + (E $cats[$i]) + '</th>'
+            foreach ($s in $series) { $html += '<td>' + (E ((AsList (P $s 'values'))[$i])) + '</td>' }
+            $html += '</tr>'
+        }
+        $html += '</tbody>'
+    }
+    elseif ($kind -eq 'pie') {
+        $pies = (AsList (P $block 'pies'))
+        $labels = New-Object System.Collections.ArrayList
+        foreach ($p in $pies) { foreach ($sl in (AsList (P $p 'slices'))) { if (-not $labels.Contains([string](P $sl 'label'))) { [void]$labels.Add([string](P $sl 'label')) } } }
+        $html += '<thead><tr><th scope="col">Category</th>'
+        foreach ($p in $pies) { $html += '<th scope="col">' + (E (P $p 'title')) + '</th>' }
+        $html += '</tr></thead><tbody>'
+        foreach ($l in $labels) {
+            $html += '<tr><th scope="row">' + (E $l) + '</th>'
+            foreach ($p in $pies) {
+                $sl = $null
+                foreach ($cand in (AsList (P $p 'slices'))) { if ([string](P $cand 'label') -eq $l) { $sl = $cand; break } }
+                $html += '<td>' + $(if ($sl) { (E (P $sl 'value')) + $unit } else { '-' }) + '</td>'
+            }
+            $html += '</tr>'
+        }
+        $html += '</tbody>'
+    }
+    elseif ($kind -eq 'process') {
+        $html += '<thead><tr><th scope="col">Stage</th><th scope="col">What happens</th></tr></thead><tbody>'
+        $n = 1
+        foreach ($s in (AsList (P $block 'steps'))) { $html += '<tr><th scope="row">' + $n + '. ' + (E (P $s 'title')) + '</th><td>' + (E (P $s 'note' '')) + '</td></tr>'; $n++ }
+        $html += '</tbody>'
+    }
+    elseif ($kind -eq 'map') {
+        $panels = (AsList (P $block 'panels'))
+        $html += '<thead><tr>'
+        foreach ($p in $panels) { $html += '<th scope="col">' + (E (P $p 'title')) + '</th>' }
+        $html += '</tr></thead><tbody><tr>'
+        foreach ($p in $panels) {
+            $names = New-Object System.Collections.ArrayList
+            foreach ($it in (AsList (P $p 'items'))) { if ([string](P $it 'label')) { [void]$names.Add([string](P $it 'label')) } }
+            $html += '<td>' + (E ($names -join '; ')) + '</td>'
+        }
+        $html += '</tr></tbody>'
+    }
+    return $html + '</table></div></details>'
+}
+
+function RenderChartSvg($block) {
+    $kind = [string](P $block 'kind')
+    $title = [string](P $block 'title' '')
+    $unit = [string](P $block 'unit' '')
+    $svg = ''
+
+    if ($kind -eq 'line' -or $kind -eq 'bar') {
+        $cats = (AsList (P $block 'categories'))
+        $series = (AsList (P $block 'series'))
+        $W = 660; $H = 400; $L = 64; $R = $(if ($kind -eq 'line') { 130 } else { 20 }); $T = 50; $B = 58
+        $max = 0
+        foreach ($s in $series) { foreach ($v in (AsList (P $s 'values'))) { $n = ChartValue $v; if ($n -gt $max) { $max = $n } } }
+        $yMax = [double](P $block 'yMax' (NiceMax $max))
+        if ($yMax -ge 10000) { $L = 84 }
+        $plotW = $W - $L - $R; $plotH = $H - $T - $B
+        $svg += '<svg class="chart__svg" viewBox="0 0 ' + $W + ' ' + $H + '" role="img" aria-labelledby="{ID}-t">'
+        $svg += '<title id="{ID}-t">' + (E $title) + '</title>'
+        # grid and y axis
+        $ticks = 5
+        for ($k = 0; $k -le $ticks; $k++) {
+            $val = $yMax * $k / $ticks
+            $y = $T + $plotH - ($plotH * $k / $ticks)
+            $svg += '<line x1="' + $L + '" x2="' + ($L + $plotW) + '" y1="' + (Num $y) + '" y2="' + (Num $y) + '" class="chart__grid"/>'
+            $svg += SvgText ($L - 8) ($y + 4) (Figure $val) ' class="chart__tick" text-anchor="end"'
+        }
+        if (P $block 'yLabel') { $svg += '<text class="chart__axis-label" transform="translate(16 ' + (Num ($T + $plotH / 2)) + ') rotate(-90)" text-anchor="middle">' + (E (P $block 'yLabel')) + '</text>' }
+        $svg += '<line x1="' + $L + '" x2="' + ($L + $plotW) + '" y1="' + ($T + $plotH) + '" y2="' + ($T + $plotH) + '" class="chart__axis"/>'
+        $n = $cats.Count
+        if ($kind -eq 'line') {
+            $step = $(if ($n -gt 1) { $plotW / ($n - 1) } else { 0 })
+            for ($i = 0; $i -lt $n; $i++) { $svg += SvgText ($L + $step * $i) ($T + $plotH + 22) $cats[$i] ' class="chart__tick" text-anchor="middle"' }
+            $si = 0
+            $ends = @()
+            foreach ($s in $series) {
+                $c = $script:ChartColours[$si % 6]
+                $vals = (AsList (P $s 'values'))
+                $pts = @()
+                for ($i = 0; $i -lt $vals.Count; $i++) { $pts += (Num ($L + $step * $i)) + ',' + (Num ($T + $plotH - $plotH * (ChartValue $vals[$i]) / $yMax)) }
+                $dash = $(if ($si % 3 -eq 1) { ' stroke-dasharray="8 5"' } elseif ($si % 3 -eq 2) { ' stroke-dasharray="2 4"' } else { '' })
+                $svg += '<polyline points="' + ($pts -join ' ') + '" fill="none" stroke="' + $c + '" stroke-width="3"' + $dash + ' stroke-linejoin="round"/>'
+                for ($i = 0; $i -lt $vals.Count; $i++) { $svg += Marker $script:ChartMarkers[$si % 6] ($L + $step * $i) ($T + $plotH - $plotH * (ChartValue $vals[$i]) / $yMax) $c }
+                $ends += @{ y = ($T + $plotH - $plotH * (ChartValue $vals[$vals.Count - 1]) / $yMax); name = [string](P $s 'name'); c = $c }
+                $si++
+            }
+            # direct labels at the line ends, nudged apart so they never overlap
+            $ends = @($ends | Sort-Object { $_.y })
+            for ($i = 1; $i -lt $ends.Count; $i++) { if ($ends[$i].y - $ends[$i - 1].y -lt 16) { $ends[$i].y = $ends[$i - 1].y + 16 } }
+            foreach ($e in $ends) { $svg += SvgText ($L + $plotW + 10) ($e.y + 4) $e.name (' class="chart__series-label" fill="' + $e.c + '"') }
+        }
+        else {
+            $groupW = $plotW / [Math]::Max($n, 1)
+            $barW = [Math]::Min(34, ($groupW * 0.78) / [Math]::Max($series.Count, 1))
+            for ($i = 0; $i -lt $n; $i++) {
+                $gx = $L + $groupW * $i + ($groupW - $barW * $series.Count) / 2
+                $si = 0
+                foreach ($s in $series) {
+                    $v = ChartValue ((AsList (P $s 'values'))[$i])
+                    $h = $plotH * $v / $yMax
+                    $x = $gx + $barW * $si
+                    $svg += '<rect x="' + (Num $x) + '" y="' + (Num ($T + $plotH - $h)) + '" width="' + (Num ($barW - 2)) + '" height="' + (Num $h) + '" fill="' + $script:ChartColours[$si % 6] + '"><title>' + (E (P $s 'name')) + ', ' + (E $cats[$i]) + ': ' + (E ((AsList (P $s 'values'))[$i])) + $unit + '</title></rect>'
+                    if ($barW -ge 18) { $svg += SvgText ($x + ($barW - 2) / 2) ($T + $plotH - $h - 5) (Figure $v) ' class="chart__value" text-anchor="middle"' }
+                    $si++
+                }
+                $lines = WrapLabel $cats[$i] 14
+                $ly = $T + $plotH + 18
+                foreach ($ln in $lines) { $svg += SvgText ($L + $groupW * $i + $groupW / 2) $ly $ln ' class="chart__tick" text-anchor="middle"'; $ly += 14 }
+            }
+            # legend
+            $lx = $L
+            $si = 0
+            foreach ($s in $series) {
+                $svg += '<rect x="' + (Num $lx) + '" y="16" width="14" height="14" fill="' + $script:ChartColours[$si % 6] + '"/>'
+                $svg += SvgText ($lx + 20) 28 (P $s 'name') ' class="chart__legend"'
+                $lx += 34 + ([string](P $s 'name')).Length * 7.5
+                $si++
+            }
+        }
+        $svg += '</svg>'
+    }
+    elseif ($kind -eq 'pie') {
+        $pies = (AsList (P $block 'pies'))
+        $colourOf = @{}
+        $ci = 0
+        foreach ($p in $pies) { foreach ($sl in (AsList (P $p 'slices'))) { $lab = [string](P $sl 'label'); if (-not $colourOf.ContainsKey($lab)) { $colourOf[$lab] = $script:ChartColours[$ci % 6]; $ci++ } } }
+        $cellW = 320; $W = $cellW * $pies.Count; $H = 420; $r = 110
+        $svg += '<svg class="chart__svg" viewBox="0 0 ' + $W + ' ' + $H + '" role="img" aria-labelledby="{ID}-t">'
+        $svg += '<title id="{ID}-t">' + (E $title) + '</title>'
+        $pi = 0
+        foreach ($p in $pies) {
+            $cx = $cellW * $pi + $cellW / 2; $cy = 160
+            $svg += SvgText $cx 28 (P $p 'title') ' class="chart__pie-title" text-anchor="middle"'
+            $slices = (AsList (P $p 'slices'))
+            $total = 0; foreach ($sl in $slices) { $total += ChartValue (P $sl 'value') }
+            $angle = -[Math]::PI / 2
+            foreach ($sl in $slices) {
+                $v = ChartValue (P $sl 'value')
+                $sweep = 2 * [Math]::PI * $v / $total
+                $x1 = $cx + $r * [Math]::Cos($angle); $y1 = $cy + $r * [Math]::Sin($angle)
+                $x2 = $cx + $r * [Math]::Cos($angle + $sweep); $y2 = $cy + $r * [Math]::Sin($angle + $sweep)
+                $large = $(if ($sweep -gt [Math]::PI) { 1 } else { 0 })
+                $lab = [string](P $sl 'label')
+                $svg += '<path d="M' + (Num $cx) + ',' + (Num $cy) + ' L' + (Num $x1) + ',' + (Num $y1) + ' A' + $r + ',' + $r + ' 0 ' + $large + ' 1 ' + (Num $x2) + ',' + (Num $y2) + ' Z" fill="' + $colourOf[$lab] + '" stroke="#fff" stroke-width="2"><title>' + (E $lab) + ': ' + (E (P $sl 'value')) + $unit + '</title></path>'
+                if ($sweep -gt 0.32) {
+                    $mid = $angle + $sweep / 2
+                    $svg += SvgText ($cx + $r * 0.64 * [Math]::Cos($mid)) ($cy + $r * 0.64 * [Math]::Sin($mid) + 5) ((Num $v) + $unit) ' class="chart__slice" text-anchor="middle"'
+                }
+                $angle += $sweep
+            }
+            # legend under each pie, in slice order
+            $ly = $cy + $r + 30
+            foreach ($sl in $slices) {
+                $lab = [string](P $sl 'label')
+                $svg += '<rect x="' + (Num ($cx - 95)) + '" y="' + (Num ($ly - 11)) + '" width="13" height="13" fill="' + $colourOf[$lab] + '"/>'
+                $svg += SvgText ($cx - 76) $ly ($lab + '  ' + (Num (ChartValue (P $sl 'value'))) + $unit) ' class="chart__legend"'
+                $ly += 19
+            }
+            $pi++
+        }
+        $svg += '</svg>'
+    }
+    elseif ($kind -eq 'process') {
+        $steps = (AsList (P $block 'steps'))
+        $perRow = [int](P $block 'perRow' 3)
+        $boxW = 176; $boxH = 92; $gapX = 44; $gapY = 46; $padX = 20; $padY = 20
+        $rows = [Math]::Ceiling($steps.Count / $perRow)
+        $W = $padX * 2 + $perRow * $boxW + ($perRow - 1) * $gapX
+        $H = $padY * 2 + $rows * $boxH + ($rows - 1) * $gapY
+        $svg += '<svg class="chart__svg" viewBox="0 0 ' + $W + ' ' + $H + '" role="img" aria-labelledby="{ID}-t">'
+        $svg += '<title id="{ID}-t">' + (E $title) + '</title>'
+        $svg += '<defs><marker id="{ID}-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f2647"/></marker></defs>'
+        $pos = @()
+        for ($i = 0; $i -lt $steps.Count; $i++) {
+            $row = [Math]::Floor($i / $perRow)
+            $colIdx = $i % $perRow
+            # rows run left to right, then right to left, like a snake, so each arrow is short
+            if ($row % 2 -eq 1) { $colIdx = $perRow - 1 - $colIdx }
+            $x = $padX + $colIdx * ($boxW + $gapX); $y = $padY + $row * ($boxH + $gapY)
+            $pos += @{ x = $x; y = $y; row = $row }
+            $svg += '<rect x="' + $x + '" y="' + $y + '" width="' + $boxW + '" height="' + $boxH + '" rx="10" class="chart__box"/>'
+            $svg += '<circle cx="' + ($x + 18) + '" cy="' + ($y + 18) + '" r="12" class="chart__step-n"/>'
+            $svg += SvgText ($x + 18) ($y + 22.5) ($i + 1) ' class="chart__step-num" text-anchor="middle"'
+            $svg += SvgText ($x + 38) ($y + 24) (P $steps[$i] 'title') ' class="chart__step-title"'
+            $ny = $y + 46
+            foreach ($ln in (WrapLabel (P $steps[$i] 'note' '') 24)) { $svg += SvgText ($x + 12) $ny $ln ' class="chart__step-note"'; $ny += 15 }
+        }
+        for ($i = 0; $i -lt $steps.Count - 1; $i++) {
+            $a = $pos[$i]; $b = $pos[$i + 1]
+            if ($a.row -eq $b.row) {
+                if ($b.x -gt $a.x) { $x1 = $a.x + $boxW; $x2 = $b.x } else { $x1 = $a.x; $x2 = $b.x + $boxW }
+                $yy = $a.y + $boxH / 2
+                $svg += '<line x1="' + (Num ($x1 + 4)) + '" y1="' + $yy + '" x2="' + (Num ($x2 - 4)) + '" y2="' + $yy + '" class="chart__arrow" marker-end="url(#{ID}-arrow)"/>'
+            }
+            else {
+                $xx = $a.x + $boxW / 2
+                $svg += '<line x1="' + $xx + '" y1="' + ($a.y + $boxH + 4) + '" x2="' + $xx + '" y2="' + ($b.y - 4) + '" class="chart__arrow" marker-end="url(#{ID}-arrow)"/>'
+            }
+        }
+        $svg += '</svg>'
+    }
+    elseif ($kind -eq 'map') {
+        $panels = (AsList (P $block 'panels'))
+        $cellW = 330; $gridW = 300; $gridH = 210; $scale = 3
+        $W = $cellW * $panels.Count; $H = 280
+        $svg += '<svg class="chart__svg" viewBox="0 0 ' + $W + ' ' + $H + '" role="img" aria-labelledby="{ID}-t">'
+        $svg += '<title id="{ID}-t">' + (E $title) + '</title>'
+        $pi = 0
+        foreach ($p in $panels) {
+            $ox = $cellW * $pi + 15; $oy = 44
+            $svg += SvgText ($ox + $gridW / 2) 28 (P $p 'title') ' class="chart__pie-title" text-anchor="middle"'
+            $svg += '<rect x="' + $ox + '" y="' + $oy + '" width="' + $gridW + '" height="' + $gridH + '" class="chart__map-bg"/>'
+            $items = (AsList (P $p 'items'))
+            # draw in layers: water and green first, then roads, then buildings, then labels
+            foreach ($layer in @('water', 'green', 'road', 'bridge', 'building')) {
+                foreach ($it in $items) {
+                    $shape = [string](P $it 'shape' 'building')
+                    if ($shape -ne $layer) { continue }
+                    $x = $ox + $scale * [double](P $it 'x' 0); $y = $oy + $scale * [double](P $it 'y' 0)
+                    $w = $scale * [double](P $it 'w' 10); $h = $scale * [double](P $it 'h' 6)
+                    switch ($shape) {
+                        'water' { $svg += '<rect x="' + (Num $x) + '" y="' + (Num $y) + '" width="' + (Num $w) + '" height="' + (Num $h) + '" class="chart__map-water"/>' }
+                        'green' { $svg += '<rect x="' + (Num $x) + '" y="' + (Num $y) + '" width="' + (Num $w) + '" height="' + (Num $h) + '" rx="6" class="chart__map-green"/>' }
+                        'road' { $svg += '<rect x="' + (Num $x) + '" y="' + (Num $y) + '" width="' + (Num $w) + '" height="' + (Num $h) + '" class="chart__map-road"/>' }
+                        'bridge' { $svg += '<rect x="' + (Num $x) + '" y="' + (Num $y) + '" width="' + (Num $w) + '" height="' + (Num $h) + '" class="chart__map-bridge"/>' }
+                        default { $svg += '<rect x="' + (Num $x) + '" y="' + (Num $y) + '" width="' + (Num $w) + '" height="' + (Num $h) + '" rx="2" class="chart__map-building"/>' }
+                    }
+                }
+            }
+            foreach ($it in $items) {
+                $lab = [string](P $it 'label' '')
+                if (-not $lab) { continue }
+                $x = $ox + $scale * [double](P $it 'x' 0); $y = $oy + $scale * [double](P $it 'y' 0)
+                $w = $scale * [double](P $it 'w' 10); $h = $scale * [double](P $it 'h' 6)
+                $lx = $x + $w / 2
+                $lines = WrapLabel $lab 12
+                $ly = $y + $h / 2 - (($lines.Count - 1) * 13) / 2 + 4
+                $cls = $(if ([string](P $it 'shape' 'building') -eq 'building') { 'chart__map-label chart__map-label--light' } else { 'chart__map-label' })
+                foreach ($ln in $lines) { $svg += SvgText $lx $ly $ln (' class="' + $cls + '" text-anchor="middle"'); $ly += 13 }
+            }
+            # compass
+            # sits above the map, level with the panel title, so it never covers a feature
+            $nx = $ox + $gridW - 10; $ny = 22
+            $svg += '<path d="M' + $nx + ',' + ($ny - 14) + ' L' + ($nx + 7) + ',' + ($ny + 6) + ' L' + $nx + ',' + ($ny + 1) + ' L' + ($nx - 7) + ',' + ($ny + 6) + ' Z" fill="#0f2647"/>'
+            $svg += SvgText $nx ($ny + 20) 'N' ' class="chart__tick" text-anchor="middle"'
+            $pi++
+        }
+        $svg += '</svg>'
+    }
+    return $svg
+}
+
+function RenderChart($block) {
+    $script:ChartCount = [int]$script:ChartCount + 1
+    $id = 'chart-' + $script:ChartCount
+    $html = (SectionOpen $block) + (SectionHead $block)
+    $html += '<figure class="chart chart--' + (E (P $block 'kind')) + '">'
+    if (P $block 'title') { $html += '<figcaption class="chart__title">' + (Inline (P $block 'title')) + '</figcaption>' }
+    $html += '<div class="chart__frame">' + ((RenderChartSvg $block) -replace '\{ID\}', $id) + '</div>'
+    if (P $block 'caption') { $html += '<p class="chart__caption">' + (Inline (P $block 'caption')) + '</p>' }
+    $html += ChartDataTable $block
+    $html += '</figure>'
+    return $html + '</div></section>'
+}
+
 function RenderPaperLibrary($block) {
     $records = @($papers | Where-Object { (P $_ 'published' $true) -ne $false })
 
@@ -3753,6 +4126,7 @@ function BuildPage($page) {
     # chose large text never sees the page jump from small to large.
     $head += '<script>try{var r=JSON.parse(localStorage.getItem("rcf-reading")||"{}"),h=document.documentElement,s=[1,1.15,1.3][r.size||0]||1;if(r.size){h.classList.add("reading-large");h.style.setProperty("--reading-scale",s)}if(r.contrast)h.classList.add("reading-contrast");if(r.spacing)h.classList.add("reading-spacing")}catch(e){}</script>'
     $head += StructuredData $page $canonical
+    $head += AnalyticsTag
 
     $scripts = '<script src="' + (E ($script:Root + 'assets/js/nav.js')) + '" defer></script>'
     $scripts += '<script src="' + (E ($script:Root + 'assets/js/personal.js')) + '" defer></script>'

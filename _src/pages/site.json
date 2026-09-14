@@ -7,29 +7,66 @@
       "keywords": "search, find a lesson, find a past paper, RCF English search",
       "kicker": "Find what you need",
       "kind": "page",
-      "scripts": ["search"],
-      "hero": { "text": "Type a word or two. Results cover lessons, articles, past papers, model papers, worksheets, interactive activities, teacher resources, literature texts, classes and examination guidance." },
+      "scripts": [
+        "search"
+      ],
+      "hero": {
+        "text": "Type a word or two. Results cover lessons, articles, past papers, model papers, worksheets, interactive activities, teacher resources, literature texts, classes and examination guidance."
+      },
       "blocks": [
-        { "type": "search" },
+        {
+          "type": "search"
+        },
         {
           "type": "cards",
           "heading": "Or browse by section",
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "O/L English", "url": "ol-english/", "more": "Open" },
-            { "title": "O/L Literature", "url": "ol-literature/", "more": "Open" },
-            { "title": "Practical English", "url": "practical-english/", "more": "Open" },
-            { "title": "A/L Literature", "url": "al-literature/", "more": "Open" },
-            { "title": "Past Papers", "url": "past-papers/", "more": "Open" },
-            { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open" },
-            { "title": "Interactive Learning", "url": "interactive/", "more": "Open" },
-            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" }
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open"
+            },
+            {
+              "title": "O/L Literature",
+              "url": "ol-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Practical English",
+              "url": "practical-english/",
+              "more": "Open"
+            },
+            {
+              "title": "A/L Literature",
+              "url": "al-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Past Papers",
+              "url": "past-papers/",
+              "more": "Open"
+            },
+            {
+              "title": "Teacher Resources",
+              "url": "teacher-resources/",
+              "more": "Open"
+            },
+            {
+              "title": "Interactive Learning",
+              "url": "interactive/",
+              "more": "Open"
+            },
+            {
+              "title": "RCF Online Academy",
+              "url": "rcf-classes/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "resources",
       "title": "All Learning Resources",
@@ -37,12 +74,22 @@
       "keywords": "English resources, worksheets, downloads, revision sheets, lesson plans",
       "kicker": "Resource centre",
       "kind": "page",
-      "scripts": ["finder"],
+      "scripts": [
+        "finder"
+      ],
       "hero": {
         "text": "Files you can open, print or download. Written lessons live in the subject sections; this page lists the resources that exist as separate files or as links to an official source.",
         "buttons": [
-          { "label": "Past Papers centre", "url": "past-papers/", "style": "btn--ghost-light" },
-          { "label": "Teacher Resources", "url": "teacher-resources/", "style": "btn--ghost-light" }
+          {
+            "label": "Past Papers centre",
+            "url": "past-papers/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Teacher Resources",
+            "url": "teacher-resources/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -50,7 +97,9 @@
           "type": "finder",
           "heading": "Find a resource",
           "eyebrow": "Papers, worksheets, study packs, textbooks, guides, listening and ebooks",
-          "intro": ["Choose a grade, a term or a kind of resource, or type what you are looking for. Every result says what it is, who it is for and how big the file is, with a button to view or download it."],
+          "intro": [
+            "Choose a grade, a term or a kind of resource, or type what you are looking for. Every result says what it is, who it is for and how big the file is, with a button to view or download it."
+          ],
           "pageSize": 24
         },
         {
@@ -68,14 +117,34 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Search the whole site", "url": "search/", "more": "Search", "text": ["Lessons, papers, activities, classes and policies, all in one place."] },
-            { "title": "Interactive activities", "url": "interactive/", "more": "Practise", "text": ["Practice that marks itself and explains each answer."] },
-            { "title": "Ask for a resource", "url": "contact/", "more": "Contact us", "text": ["If something you need is missing, say so. Requests help decide what is prepared next."] }
+            {
+              "title": "Search the whole site",
+              "url": "search/",
+              "more": "Search",
+              "text": [
+                "Lessons, papers, activities, classes and policies, all in one place."
+              ]
+            },
+            {
+              "title": "Interactive activities",
+              "url": "interactive/",
+              "more": "Practise",
+              "text": [
+                "Practice that marks itself and explains each answer."
+              ]
+            },
+            {
+              "title": "Ask for a resource",
+              "url": "contact/",
+              "more": "Contact us",
+              "text": [
+                "If something you need is missing, say so. Requests help decide what is prepared next."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "listening-lab",
       "title": "Listening Laboratory",
@@ -83,12 +152,23 @@
       "keywords": "English listening test, listening practice Sri Lanka, O/L listening, Grade 6 listening, Grade 11 listening, listening worksheet",
       "kicker": "Interactive learning",
       "kind": "page",
-      "scripts": ["listening"],
-      "breadcrumbs": [{ "label": "Interactive Learning", "url": "interactive/" }],
+      "scripts": [
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Interactive Learning",
+          "url": "interactive/"
+        }
+      ],
       "hero": {
         "text": "Ninety-six listening tests for Grades 6 to 11, including the listening activities from the Grade 6 to 11 Pupil's Books and Workbooks. Learn the key words, listen in practice or under examination conditions, and see your score with the answers explained.",
         "buttons": [
-          { "label": "How to listen well", "url": "practical-english/listening/", "style": "btn--ghost-light" }
+          {
+            "label": "How to listen well",
+            "url": "practical-english/listening/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -96,10 +176,30 @@
           "type": "steps",
           "heading": "How each test works",
           "items": [
-            { "title": "Before you listen", "text": ["Most RCF English tests start with five useful words and their meanings. Press **Hear it** to hear how each one is said. The Pupil's Book activities name the unit and activity in your textbook."] },
-            { "title": "Choose how to listen", "text": ["**Practice** lets you replay as often as you like, slow the speed down, and open the transcript if you are stuck. **Formal test** plays the passage twice only, as in an examination, and keeps the transcript back until you submit."] },
-            { "title": "Answer and submit", "text": ["The test marks itself at once and explains every answer. Nothing you type is sent anywhere, and no sign-in is needed."] },
-            { "title": "Print it for class", "text": ["Teachers can print any test as a worksheet for students, or with the answer key and transcript on a separate page."] }
+            {
+              "title": "Before you listen",
+              "text": [
+                "Most RCF English tests start with five useful words and their meanings. Press **Hear it** to hear how each one is said. The Pupil's Book activities name the unit and activity in your textbook."
+              ]
+            },
+            {
+              "title": "Choose how to listen",
+              "text": [
+                "**Practice** lets you replay as often as you like, slow the speed down, and open the transcript if you are stuck. **Formal test** plays the passage twice only, as in an examination, and keeps the transcript back until you submit."
+              ]
+            },
+            {
+              "title": "Answer and submit",
+              "text": [
+                "The test marks itself at once and explains every answer. Nothing you type is sent anywhere, and no sign-in is needed."
+              ]
+            },
+            {
+              "title": "Print it for class",
+              "text": [
+                "Teachers can print any test as a worksheet for students, or with the answer key and transcript on a separate page."
+              ]
+            }
           ]
         },
         {
@@ -107,11 +207,12 @@
           "id": "tests",
           "heading": "Choose a test",
           "eyebrow": "Level 1 Foundation (Grades 6–7) · Level 2 Intermediate (8–9) · Level 3 Advanced (10–11)",
-          "intro": ["Each test is read aloud by your own phone or computer. The accents on offer are the English voices your device has, so they differ from one device to another."]
+          "intro": [
+            "Each test is read aloud by your own phone or computer. The accents on offer are the English voices your device has, so they differ from one device to another."
+          ]
         }
       ]
     },
-
     {
       "slug": "writing-practice",
       "title": "Writing Practice",
@@ -120,9 +221,18 @@
       "keywords": "English writing practice, O/L essay practice, letter writing practice, notice writing, A/L General English writing, writing checklist",
       "kicker": "Interactive learning",
       "kind": "page",
-      "scripts": ["writing-practice"],
-      "breadcrumbs": [{ "label": "Interactive Learning", "url": "interactive/" }],
-      "hero": { "text": "Choose a task, write your answer, then check it. The website points out things a computer can check; your teacher marks what matters most: your ideas and your English." },
+      "scripts": [
+        "writing-practice"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Interactive Learning",
+          "url": "interactive/"
+        }
+      ],
+      "hero": {
+        "text": "Choose a task, write your answer, then check it. The website points out things a computer can check; your teacher marks what matters most: your ideas and your English."
+      },
       "blocks": [
         {
           "type": "app",
@@ -142,7 +252,6 @@
         }
       ]
     },
-
     {
       "slug": "interactive",
       "title": "Interactive Learning",
@@ -152,7 +261,9 @@
       "kind": "page",
       "schema": "LearningResource",
       "resourceType": "interactive activity",
-      "scripts": ["quiz"],
+      "scripts": [
+        "quiz"
+      ],
       "hero": {
         "text": "Seven kinds of activity, all free. Each one gives you instructions, marks your answer as soon as you give it, explains why, keeps a score and can be started again. Nothing you type is stored, and no account is needed."
       },
@@ -173,15 +284,22 @@
           "style": "tip",
           "variant": "tint",
           "title": "New: the Listening Laboratory",
-          "text": ["Ninety-six listening tests for Grades 6 to 11, including the Pupil's Book listening activities, with words to learn first, a choice of accent, examination conditions and printable worksheets. [Open the Listening Laboratory](listening-lab/)."]
+          "text": [
+            "Ninety-six listening tests for Grades 6 to 11, including the Pupil's Book listening activities, with words to learn first, a choice of accent, examination conditions and printable worksheets. [Open the Listening Laboratory](listening-lab/)."
+          ]
         },
         {
           "type": "activities",
           "heading": "Grammar: multiple choice",
           "id": "grammar",
           "eyebrow": "Activity 1 and 2",
-          "intro": ["Choose the correct form. Each answer is explained, so a wrong choice still teaches you the rule."],
-          "ids": ["grammar-tenses-1", "grammar-prepositions-1"]
+          "intro": [
+            "Choose the correct form. Each answer is explained, so a wrong choice still teaches you the rule."
+          ],
+          "ids": [
+            "grammar-tenses-1",
+            "grammar-prepositions-1"
+          ]
         },
         {
           "type": "activities",
@@ -189,16 +307,25 @@
           "id": "gap",
           "variant": "tint",
           "eyebrow": "Activity 3 and 4",
-          "intro": ["Type the missing word. Spelling matters; capital letters do not."],
-          "ids": ["gap-articles-1", "gap-verb-forms-1"]
+          "intro": [
+            "Type the missing word. Spelling matters; capital letters do not."
+          ],
+          "ids": [
+            "gap-articles-1",
+            "gap-verb-forms-1"
+          ]
         },
         {
           "type": "activities",
           "heading": "Sentence ordering",
           "id": "order",
           "eyebrow": "Activity 5",
-          "intro": ["Put the parts of the sentence in the right order using the up and down buttons. This activity works with a keyboard as well as with a mouse or a finger."],
-          "ids": ["order-sentences-1"]
+          "intro": [
+            "Put the parts of the sentence in the right order using the up and down buttons. This activity works with a keyboard as well as with a mouse or a finger."
+          ],
+          "ids": [
+            "order-sentences-1"
+          ]
         },
         {
           "type": "activities",
@@ -206,16 +333,25 @@
           "id": "match",
           "variant": "tint",
           "eyebrow": "Activity 6 and 7",
-          "intro": ["Match each word or term to its meaning. The second activity covers the literary terms most often needed in Literature answers."],
-          "ids": ["vocab-match-1", "vocab-match-literature-1"]
+          "intro": [
+            "Match each word or term to its meaning. The second activity covers the literary terms most often needed in Literature answers."
+          ],
+          "ids": [
+            "vocab-match-1",
+            "vocab-match-literature-1"
+          ]
         },
         {
           "type": "activities",
           "heading": "Reading comprehension",
           "id": "reading",
           "eyebrow": "Activity 8",
-          "intro": ["Read the passage, then answer the questions. This is the kind of passage and question used in Paper I."],
-          "ids": ["reading-1"]
+          "intro": [
+            "Read the passage, then answer the questions. This is the kind of passage and question used in Paper I."
+          ],
+          "ids": [
+            "reading-1"
+          ]
         },
         {
           "type": "activities",
@@ -223,16 +359,24 @@
           "id": "literature",
           "variant": "tint",
           "eyebrow": "Activity 9",
-          "intro": ["Naming the technique correctly is the first step in every good Literature answer. These questions practise exactly that."],
-          "ids": ["literature-terms-1"]
+          "intro": [
+            "Naming the technique correctly is the first step in every good Literature answer. These questions practise exactly that."
+          ],
+          "ids": [
+            "literature-terms-1"
+          ]
         },
         {
           "type": "activities",
           "heading": "Error correction",
           "id": "error",
           "eyebrow": "Activity 10",
-          "intro": ["Each sentence contains one mistake. Rewrite the whole sentence correctly. These are the errors that appear most often in students' work."],
-          "ids": ["error-correction-1"]
+          "intro": [
+            "Each sentence contains one mistake. Rewrite the whole sentence correctly. These are the errors that appear most often in students' work."
+          ],
+          "ids": [
+            "error-correction-1"
+          ]
         },
         {
           "type": "callout",
@@ -247,14 +391,31 @@
           "type": "related",
           "heading": "Lessons that go with these activities",
           "items": [
-            { "title": "O/L English Grammar", "url": "ol-english/grammar/", "text": ["The rules behind the grammar activities, explained with examples."] },
-            { "title": "Reading Comprehension", "url": "ol-english/reading-comprehension/", "text": ["How to read a passage and find the answer the question is really asking for."] },
-            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "text": ["The errors in the correction activity, with the reason each one is wrong."] }
+            {
+              "title": "O/L English Grammar",
+              "url": "ol-english/grammar/",
+              "text": [
+                "The rules behind the grammar activities, explained with examples."
+              ]
+            },
+            {
+              "title": "Reading Comprehension",
+              "url": "ol-english/reading-comprehension/",
+              "text": [
+                "How to read a passage and find the answer the question is really asking for."
+              ]
+            },
+            {
+              "title": "Common Student Mistakes",
+              "url": "ol-english/common-mistakes/",
+              "text": [
+                "The errors in the correction activity, with the reason each one is wrong."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "how-to-use",
       "title": "How to Use This Site",
@@ -262,17 +423,41 @@
       "keywords": "how to use RCF English, site guide, help",
       "kicker": "Getting started",
       "kind": "page",
-      "hero": { "text": "RCF English holds a great deal of material. This page shows you how it is arranged and how to find what you need quickly." },
+      "hero": {
+        "text": "RCF English holds a great deal of material. This page shows you how it is arranged and how to find what you need quickly."
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "How the site is arranged",
-          "text": ["There are four learning sections, one resource centre, one section for teachers, and one for classes."],
+          "text": [
+            "There are four learning sections, one resource centre, one section for teachers, and one for classes."
+          ],
           "parts": [
-            { "heading": "The four learning sections", "text": ["[O/L English](ol-english/), [O/L Literature](ol-literature/), [General English](practical-english/) and [A/L Literature](al-literature/). Each one has a landing page that explains the subject, and a menu of lessons underneath it."] },
-            { "heading": "Past Papers", "text": ["[The Past Papers centre](past-papers/) holds past papers, model papers, marking schemes, revision papers and question banks, with filters for subject, year, paper and type."] },
-            { "heading": "Teacher Resources", "text": ["[Teacher Resources](teacher-resources/) holds lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
-            { "heading": "RCF Online Academy", "text": ["[RCF Online Academy](rcf-classes/) describes the online classes conducted by Rohana Fernando, and how to ask about them on WhatsApp."] }
+            {
+              "heading": "The four learning sections",
+              "text": [
+                "[O/L English](ol-english/), [O/L Literature](ol-literature/), [General English](practical-english/) and [A/L Literature](al-literature/). Each one has a landing page that explains the subject, and a menu of lessons underneath it."
+              ]
+            },
+            {
+              "heading": "Past Papers",
+              "text": [
+                "[The Past Papers centre](past-papers/) holds past papers, model papers, marking schemes, revision papers and question banks, with filters for subject, year, paper and type."
+              ]
+            },
+            {
+              "heading": "Teacher Resources",
+              "text": [
+                "[Teacher Resources](teacher-resources/) holds lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."
+              ]
+            },
+            {
+              "heading": "RCF Online Academy",
+              "text": [
+                "[RCF Online Academy](rcf-classes/) describes the online classes conducted by Rohana Fernando, and how to ask about them on WhatsApp."
+              ]
+            }
           ]
         },
         {
@@ -280,9 +465,24 @@
           "heading": "Three ways to find something",
           "variant": "tint",
           "items": [
-            { "title": "Use the menu", "text": ["Every main section opens a menu of its pages. On a telephone, tap **Menu**, then tap the arrow beside a section to open it."] },
-            { "title": "Use search", "text": ["[Search](search/) covers everything on the site. Every result tells you whether it is a lesson, a past paper, an activity, a class or a policy."] },
-            { "title": "Follow the trail", "text": ["Every page shows a trail at the top telling you where you are, and a link back to the section you came from."] }
+            {
+              "title": "Use the menu",
+              "text": [
+                "Every main section opens a menu of its pages. On a telephone, tap **Menu**, then tap the arrow beside a section to open it."
+              ]
+            },
+            {
+              "title": "Use search",
+              "text": [
+                "[Search](search/) covers everything on the site. Every result tells you whether it is a lesson, a past paper, an activity, a class or a policy."
+              ]
+            },
+            {
+              "title": "Follow the trail",
+              "text": [
+                "Every page shows a trail at the top telling you where you are, and a link back to the section you came from."
+              ]
+            }
           ]
         },
         {
@@ -290,9 +490,30 @@
           "heading": "If you are a student",
           "columns": "3",
           "items": [
-            { "title": "Start with the syllabus page", "url": "ol-english/syllabus/", "more": "O/L English syllabus", "text": ["Know the shape of the paper before you revise. It tells you what to spend your time on."] },
-            { "title": "Learn writing step by step", "url": "ol-english/guided-writing/", "more": "Guided writing", "text": ["Never begin a writing task by writing. Understand it, study a model, find the structure, then write."] },
-            { "title": "Practise, then check", "url": "interactive/", "more": "Interactive activities", "text": ["Do an activity, read every explanation, and repeat it a few days later."] }
+            {
+              "title": "Start with the syllabus page",
+              "url": "ol-english/syllabus/",
+              "more": "O/L English syllabus",
+              "text": [
+                "Know the shape of the paper before you revise. It tells you what to spend your time on."
+              ]
+            },
+            {
+              "title": "Learn writing step by step",
+              "url": "ol-english/guided-writing/",
+              "more": "Guided writing",
+              "text": [
+                "Never begin a writing task by writing. Understand it, study a model, find the structure, then write."
+              ]
+            },
+            {
+              "title": "Practise, then check",
+              "url": "interactive/",
+              "more": "Interactive activities",
+              "text": [
+                "Do an activity, read every explanation, and repeat it a few days later."
+              ]
+            }
           ]
         },
         {
@@ -301,9 +522,30 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Lesson plans and worksheets", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["Material you can take into a classroom without rewriting it first."] },
-            { "title": "Marking and assessment", "url": "teacher-resources/marking-guides/", "more": "Open", "text": ["How to mark an answer so the student learns from the mark, not only from the number."] },
-            { "title": "Learners who need more help", "url": "teacher-resources/slow-learner-support/", "more": "Open", "text": ["Smaller steps, more models, more repetition, and how to organise a mixed-ability class."] }
+            {
+              "title": "Lesson plans and worksheets",
+              "url": "teacher-resources/lesson-plans/",
+              "more": "Open",
+              "text": [
+                "Material you can take into a classroom without rewriting it first."
+              ]
+            },
+            {
+              "title": "Marking and assessment",
+              "url": "teacher-resources/marking-guides/",
+              "more": "Open",
+              "text": [
+                "How to mark an answer so the student learns from the mark, not only from the number."
+              ]
+            },
+            {
+              "title": "Learners who need more help",
+              "url": "teacher-resources/slow-learner-support/",
+              "more": "Open",
+              "text": [
+                "Smaller steps, more models, more repetition, and how to organise a mixed-ability class."
+              ]
+            }
           ]
         },
         {
@@ -311,9 +553,30 @@
           "heading": "If you are a parent",
           "columns": "3",
           "items": [
-            { "title": "See what is examined", "url": "ol-english/syllabus/", "more": "Open", "text": ["The structure of the paper, in plain language, so you know what your child is preparing for."] },
-            { "title": "See what a good answer looks like", "url": "ol-english/model-answers/", "more": "Open", "text": ["Model answers with notes explaining why each one works."] },
-            { "title": "Help without doing the work", "url": "ol-english/guided-writing/", "more": "Open", "text": ["Ask your child to explain the structure of a task before they write. Explaining is what fixes learning."] }
+            {
+              "title": "See what is examined",
+              "url": "ol-english/syllabus/",
+              "more": "Open",
+              "text": [
+                "The structure of the paper, in plain language, so you know what your child is preparing for."
+              ]
+            },
+            {
+              "title": "See what a good answer looks like",
+              "url": "ol-english/model-answers/",
+              "more": "Open",
+              "text": [
+                "Model answers with notes explaining why each one works."
+              ]
+            },
+            {
+              "title": "Help without doing the work",
+              "url": "ol-english/guided-writing/",
+              "more": "Open",
+              "text": [
+                "Ask your child to explain the structure of a task before they write. Explaining is what fixes learning."
+              ]
+            }
           ]
         },
         {
@@ -322,16 +585,40 @@
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "Do I need to create an account?", "a": ["No. Nothing on RCF English requires an account, a login or a password. The interactive activities run inside your own browser."] },
-            { "q": "Does the site work on a telephone?", "a": ["Yes. Every page is designed for small screens first, including the timetable, which appears as cards rather than a wide table on a telephone."] },
-            { "q": "Will it work on a slow connection?", "a": ["It should. The pages are plain files with no heavy libraries, no video and no tracking scripts, so they load quickly even on a weak signal."] },
-            { "q": "Can I print a lesson?", "a": ["Yes. Use your browser's print command. The menus, buttons and footer are removed automatically so that only the lesson is printed."] },
-            { "q": "Is everything free?", "a": ["Everything on RCF English is free to read and use. Books and study guides are sold separately through RCF Publications, which is a different website."] }
+            {
+              "q": "Do I need to create an account?",
+              "a": [
+                "No. Nothing on RCF English requires an account, a login or a password. The interactive activities run inside your own browser."
+              ]
+            },
+            {
+              "q": "Does the site work on a telephone?",
+              "a": [
+                "Yes. Every page is designed for small screens first, including the timetable, which appears as cards rather than a wide table on a telephone."
+              ]
+            },
+            {
+              "q": "Will it work on a slow connection?",
+              "a": [
+                "It should. The pages are plain files with no heavy libraries, no video and no advertising scripts, so they load quickly even on a weak signal."
+              ]
+            },
+            {
+              "q": "Can I print a lesson?",
+              "a": [
+                "Yes. Use your browser's print command. The menus, buttons and footer are removed automatically so that only the lesson is printed."
+              ]
+            },
+            {
+              "q": "Is everything free?",
+              "a": [
+                "Everything on RCF English is free to read and use. Books and study guides are sold separately through RCF Publications, which is a different website."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "my",
       "title": "My RCF English",
@@ -340,8 +627,12 @@
       "kicker": "Your page",
       "kind": "page",
       "noindex": true,
-      "scripts": ["my"],
-      "hero": { "text": "Choose your grade once, save the pages you use most, and pick up where you left off. Everything here stays on this device: there is no account and nothing is sent anywhere." },
+      "scripts": [
+        "my"
+      ],
+      "hero": {
+        "text": "Choose your grade once, save the pages you use most, and pick up where you left off. Everything here stays on this device: there is no account and nothing is sent anywhere."
+      },
       "blocks": [
         {
           "type": "app",
@@ -350,7 +641,6 @@
         }
       ]
     },
-
     {
       "slug": "offline",
       "title": "You are offline",
@@ -358,7 +648,9 @@
       "kicker": "No connection",
       "kind": "page",
       "noindex": true,
-      "hero": { "text": "This page has not been opened on this device before, so there is no copy of it to show without a connection." },
+      "hero": {
+        "text": "This page has not been opened on this device before, so there is no copy of it to show without a connection."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -371,7 +663,6 @@
         }
       ]
     },
-
     {
       "slug": "site-status",
       "title": "Site Status",
@@ -379,7 +670,9 @@
       "keywords": "RCF English site status, what's new, sections in progress",
       "kicker": "About this website",
       "kind": "page",
-      "hero": { "text": "A plain account of what is on the site now, what is still being built, and what is waiting for a decision. The counts below are made by the site itself each time it is published." },
+      "hero": {
+        "text": "A plain account of what is on the site now, what is still being built, and what is waiting for a decision. The counts below are made by the site itself each time it is published."
+      },
       "blocks": [
         {
           "type": "site-status",
@@ -389,32 +682,75 @@
           "type": "table",
           "heading": "Tools and features",
           "stacked": true,
-          "columns": ["Feature", "Status"],
+          "columns": [
+            "Feature",
+            "Status"
+          ],
           "rows": [
-            ["[Resource finder](resources/), with plain-language requests", "Complete"],
-            ["[Grade pages](grades/) with an at-a-glance summary", "Complete: Grades 1, 3, 4, 5 and 6 to 11"],
-            ["[Past paper library](past-papers/) by grade, term, kind of paper, province and year", "Complete; papers are added as they are approved"],
-            ["[Listening Laboratory](listening-lab/): Pupil's Book and extra listening tests", "Complete for Grades 6 to 11. Two Grade 11 word-stress activities are not included, because a device voice cannot stress a chosen word"],
-            ["[Examination Centre](exam-centre/) with countdown, timer, study timetable and Question of the Week", "Complete. The countdown shows an official date only once it has been announced"],
-            ["[Interactive activities](interactive/) with levels, stars, retry and printable results", "Complete"],
-            ["[Writing Practice](writing-practice/)", "Complete"],
-            ["[Teacher Resource Centre](teacher-resources/): rubrics, term-test plans, flashcards, worksheet generator", "Complete"],
-            ["[My RCF English](my/), saved pages, recently viewed, reading options, offline reading", "Complete"],
-            ["Places remaining and student testimonials on course pages", "Ready: shown as soon as they are entered"],
-            ["Automatic ebook sales through PayHere", "Waiting: needs a PayHere merchant account"],
-            ["[Refund and Return Policy](rcf-publications/refund-policy/) and [Terms and Conditions](rcf-publications/terms/) for RCF Publications", "Complete"],
-            ["Sinhala and Tamil versions of key pages", "Waiting: needs translations"]
+            [
+              "[Resource finder](resources/), with plain-language requests",
+              "Complete"
+            ],
+            [
+              "[Grade pages](grades/) with an at-a-glance summary",
+              "Complete: Grades 1, 3, 4, 5 and 6 to 11"
+            ],
+            [
+              "[Past paper library](past-papers/) by grade, term, kind of paper, province and year",
+              "Complete; papers are added as they are approved"
+            ],
+            [
+              "[Listening Laboratory](listening-lab/): Pupil's Book and extra listening tests",
+              "Complete for Grades 6 to 11. Two Grade 11 word-stress activities are not included, because a device voice cannot stress a chosen word"
+            ],
+            [
+              "[Examination Centre](exam-centre/) with countdown, timer, study timetable and Question of the Week",
+              "Complete. The countdown shows an official date only once it has been announced"
+            ],
+            [
+              "[Interactive activities](interactive/) with levels, stars, retry and printable results",
+              "Complete"
+            ],
+            [
+              "[Writing Practice](writing-practice/)",
+              "Complete"
+            ],
+            [
+              "[Teacher Resource Centre](teacher-resources/): rubrics, term-test plans, flashcards, worksheet generator",
+              "Complete"
+            ],
+            [
+              "[My RCF English](my/), saved pages, recently viewed, reading options, offline reading",
+              "Complete"
+            ],
+            [
+              "Places remaining and student testimonials on course pages",
+              "Ready: shown as soon as they are entered"
+            ],
+            [
+              "Automatic ebook sales through PayHere",
+              "Waiting: needs a PayHere merchant account"
+            ],
+            [
+              "[Refund and Return Policy](rcf-publications/refund-policy/) and [Terms and Conditions](rcf-publications/terms/) for RCF Publications",
+              "Complete"
+            ],
+            [
+              "Sinhala and Tamil versions of key pages",
+              "Waiting: needs translations"
+            ]
           ]
         },
         {
           "type": "callout",
           "style": "tip",
           "title": "Found something broken or missing?",
-          "text": ["Every resource in the [resource finder](resources/) has a **Report a problem** link. You can also [send a correction](corrections/) or [ask for a resource](contact/)."]
+          "text": [
+            "Every resource in the [resource finder](resources/) has a **Report a problem** link. You can also [send a correction](corrections/) or [ask for a resource](contact/)."
+          ]
         }
       ]
     },
-
     {
       "slug": "faq",
       "title": "Frequently Asked Questions",
@@ -422,18 +758,45 @@
       "keywords": "FAQ, questions, help, RCF English",
       "kicker": "Questions and answers",
       "kind": "page",
-      "hero": { "text": "If your question is not answered here, please [contact us](contact/) and ask." },
+      "hero": {
+        "text": "If your question is not answered here, please [contact us](contact/) and ask."
+      },
       "blocks": [
         {
           "type": "accordion",
           "heading": "About RCF English",
           "faq": true,
           "items": [
-            { "q": "What is RCF English?", "a": ["RCF English is an educational platform that brings together English-language learning, literature education, examination support, teacher resources, online classes and links to educational publications in one place."] },
-            { "q": "Who is it for?", "a": ["School students, O/L and A/L learners, adult English learners, private candidates, schoolteachers, tuition teachers and parents. Particular attention is given to learners who need additional guidance, including those in rural and remote areas."] },
-            { "q": "Who runs it?", "a": ["RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer. His qualifications and background are set out on the [Academic and Professional Background](about/background/) page."] },
-            { "q": "Does it cost anything?", "a": ["No. Everything on this website is free to read and use. Books and study guides are sold separately through RCF Publications, which is a different website with its own ordering arrangements."] },
-            { "q": "Is RCF English connected to any government body?", "a": ["No. RCF English is an independent educational platform. It is not endorsed by, approved by or affiliated with any government department or examination authority, and it makes no claim to be."] }
+            {
+              "q": "What is RCF English?",
+              "a": [
+                "RCF English is an educational platform that brings together English-language learning, literature education, examination support, teacher resources, online classes and links to educational publications in one place."
+              ]
+            },
+            {
+              "q": "Who is it for?",
+              "a": [
+                "School students, O/L and A/L learners, adult English learners, private candidates, schoolteachers, tuition teachers and parents. Particular attention is given to learners who need additional guidance, including those in rural and remote areas."
+              ]
+            },
+            {
+              "q": "Who runs it?",
+              "a": [
+                "RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer. His qualifications and background are set out on the [Academic and Professional Background](about/background/) page."
+              ]
+            },
+            {
+              "q": "Does it cost anything?",
+              "a": [
+                "No. Everything on this website is free to read and use. Books and study guides are sold separately through RCF Publications, which is a different website with its own ordering arrangements."
+              ]
+            },
+            {
+              "q": "Is RCF English connected to any government body?",
+              "a": [
+                "No. RCF English is an independent educational platform. It is not endorsed by, approved by or affiliated with any government department or examination authority, and it makes no claim to be."
+              ]
+            }
           ]
         },
         {
@@ -442,11 +805,36 @@
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "Which subjects are covered?", "a": ["O/L English, O/L English Literature, General English and A/L English Literature, together with past papers, teacher resources and interactive practice."] },
-            { "q": "Why can I not find a past paper I am looking for?", "a": ["Because RCF English publishes only what it is entitled to publish. A paper appears here if RCF English created it, if the copyright holder has permitted its distribution, if it has been personally approved, or if it can lawfully be linked from the official source. Papers that do not meet one of these tests are not published, even if copies of them exist elsewhere."] },
-            { "q": "Are the model answers official answers?", "a": ["No. Model answers on this site are written by RCF English to show how an answer can be built and why it works. They are teaching material, not official marking scheme answers, and they are not the only acceptable answers."] },
-            { "q": "Can I use this material in my classroom?", "a": ["Yes, for teaching. Material created by RCF English may be used and printed for classroom and study purposes with acknowledgement. Please do not republish it as your own or sell it. See the [Terms of Use](terms/)."] },
-            { "q": "Are complete poems, stories and plays reproduced here?", "a": ["No. Copyrighted literary texts are not reproduced in full. RCF English provides summaries, analysis, themes, character notes, questions and model answers, with short quotations where they are needed for study and criticism."] }
+            {
+              "q": "Which subjects are covered?",
+              "a": [
+                "O/L English, O/L English Literature, General English and A/L English Literature, together with past papers, teacher resources and interactive practice."
+              ]
+            },
+            {
+              "q": "Why can I not find a past paper I am looking for?",
+              "a": [
+                "Because RCF English publishes only what it is entitled to publish. A paper appears here if RCF English created it, if the copyright holder has permitted its distribution, if it has been personally approved, or if it can lawfully be linked from the official source. Papers that do not meet one of these tests are not published, even if copies of them exist elsewhere."
+              ]
+            },
+            {
+              "q": "Are the model answers official answers?",
+              "a": [
+                "No. Model answers on this site are written by RCF English to show how an answer can be built and why it works. They are teaching material, not official marking scheme answers, and they are not the only acceptable answers."
+              ]
+            },
+            {
+              "q": "Can I use this material in my classroom?",
+              "a": [
+                "Yes, for teaching. Material created by RCF English may be used and printed for classroom and study purposes with acknowledgement. Please do not republish it as your own or sell it. See the [Terms of Use](terms/)."
+              ]
+            },
+            {
+              "q": "Are complete poems, stories and plays reproduced here?",
+              "a": [
+                "No. Copyrighted literary texts are not reproduced in full. RCF English provides summaries, analysis, themes, character notes, questions and model answers, with short quotations where they are needed for study and criticism."
+              ]
+            }
           ]
         },
         {
@@ -454,9 +842,24 @@
           "heading": "Interactive activities",
           "faq": true,
           "items": [
-            { "q": "Do the activities record my answers?", "a": ["No. The activities run entirely inside your browser. Nothing is sent anywhere, nothing is saved once you close the page, and no personal information is collected."] },
-            { "q": "Do they work on a telephone?", "a": ["Yes. All the activities are designed for touch as well as for a mouse and a keyboard, including the sentence-ordering activity, which uses buttons rather than dragging."] },
-            { "q": "Can I do an activity more than once?", "a": ["Yes. Every activity has a Start again button, and repeating an activity a few days later is one of the most useful things you can do."] }
+            {
+              "q": "Do the activities record my answers?",
+              "a": [
+                "No. The activities run entirely inside your browser. Nothing is sent anywhere, nothing is saved once you close the page, and no personal information is collected."
+              ]
+            },
+            {
+              "q": "Do they work on a telephone?",
+              "a": [
+                "Yes. All the activities are designed for touch as well as for a mouse and a keyboard, including the sentence-ordering activity, which uses buttons rather than dragging."
+              ]
+            },
+            {
+              "q": "Can I do an activity more than once?",
+              "a": [
+                "Yes. Every activity has a Start again button, and repeating an activity a few days later is one of the most useful things you can do."
+              ]
+            }
           ]
         },
         {
@@ -465,10 +868,30 @@
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "How do I join a class?", "a": ["Choose a class, contact RCF Online Academy on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."] },
-            { "q": "Why are the days, times and fees not shown on the website?", "a": ["Because they change, and publishing an out-of-date schedule helps nobody. Where a detail has not been settled, the site says so honestly. Ask on WhatsApp and you will be told what currently applies."] },
-            { "q": "Are the classes online or in a classroom?", "a": ["Classes are conducted mainly online, which allows students in any part of the country to attend."] },
-            { "q": "What do I need in order to attend?", "a": ["A device with an internet connection, a notebook and a pen. Spoken English classes also need a working microphone."] }
+            {
+              "q": "How do I join a class?",
+              "a": [
+                "Choose a class, contact RCF Online Academy on WhatsApp, and you will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."
+              ]
+            },
+            {
+              "q": "Why are the days, times and fees not shown on the website?",
+              "a": [
+                "Because they change, and publishing an out-of-date schedule helps nobody. Where a detail has not been settled, the site says so honestly. Ask on WhatsApp and you will be told what currently applies."
+              ]
+            },
+            {
+              "q": "Are the classes online or in a classroom?",
+              "a": [
+                "Classes are conducted mainly online, which allows students in any part of the country to attend."
+              ]
+            },
+            {
+              "q": "What do I need in order to attend?",
+              "a": [
+                "A device with an internet connection, a notebook and a pen. Spoken English classes also need a working microphone."
+              ]
+            }
           ]
         },
         {
@@ -476,9 +899,24 @@
           "heading": "RCF Publications",
           "faq": true,
           "items": [
-            { "q": "What is RCF Publications?", "a": ["RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials."] },
-            { "q": "Is it part of this website?", "a": ["Yes. RCF Publications is a section of this website, kept separate from the free material so that paid and free resources are never confused."] },
-            { "q": "How do I buy a book?", "a": ["Choose the title, then follow the payment instructions on the page. Payment is by bank transfer, and you send the receipt through WhatsApp. No payment is processed on this website and no card details are ever requested."] }
+            {
+              "q": "What is RCF Publications?",
+              "a": [
+                "RCF Publications is the publishing and bookshop division associated with RCF English. It produces practical educational books, English support materials, literature study guides, grammar resources and examination-revision materials."
+              ]
+            },
+            {
+              "q": "Is it part of this website?",
+              "a": [
+                "Yes. RCF Publications is a section of this website, kept separate from the free material so that paid and free resources are never confused."
+              ]
+            },
+            {
+              "q": "How do I buy a book?",
+              "a": [
+                "Choose the title, then follow the payment instructions on the page. Payment is by bank transfer, and you send the receipt through WhatsApp. No payment is processed on this website and no card details are ever requested."
+              ]
+            }
           ]
         },
         {
@@ -486,15 +924,22 @@
           "heading": "Still have a question?",
           "variant": "tint",
           "title": "Ask on WhatsApp",
-          "text": ["If your question is not answered above, send a message. Please say whether you are a student, a teacher or a parent, so the reply is useful to you."],
+          "text": [
+            "If your question is not answered above, send a message. Please say whether you are a student, a teacher or a parent, so the reply is useful to you."
+          ],
           "buttons": [
-            { "label": "Ask a general question", "message": "Hello, I have a question about RCF English. " },
-            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." }
+            {
+              "label": "Ask a general question",
+              "message": "Hello, I have a question about RCF English. "
+            },
+            {
+              "label": "Ask about classes",
+              "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "copyright-policy",
       "title": "Copyright and Resource Policy",
@@ -502,7 +947,9 @@
       "keywords": "copyright policy, resource policy, permission, takedown",
       "kicker": "Policy",
       "kind": "policy",
-      "hero": { "text": "This page sets out, plainly, what RCF English will and will not publish. It applies to every past paper, worksheet, model answer and literary extract on the site." },
+      "hero": {
+        "text": "This page sets out, plainly, what RCF English will and will not publish. It applies to every past paper, worksheet, model answer and literary extract on the site."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -604,7 +1051,6 @@
         }
       ]
     },
-
     {
       "slug": "corrections",
       "title": "Corrections and Takedown Requests",
@@ -612,17 +1058,36 @@
       "keywords": "correction, mistake, takedown, copyright complaint, broken link",
       "kicker": "Tell us",
       "kind": "policy",
-      "scripts": ["forms"],
-      "hero": { "text": "Mistakes happen. A correction sent today improves the material for everyone who uses it tomorrow, so please do send it." },
+      "scripts": [
+        "forms"
+      ],
+      "hero": {
+        "text": "Mistakes happen. A correction sent today improves the material for everyone who uses it tomorrow, so please do send it."
+      },
       "blocks": [
         {
           "type": "cards",
           "heading": "What would you like to report?",
           "columns": "3",
           "items": [
-            { "title": "A mistake in a lesson", "text": ["A wrong rule, a wrong example, a spelling error, or an explanation that does not make sense. Please give the page address and quote the sentence."] },
-            { "title": "A broken link or a technical fault", "text": ["A link that leads nowhere, a page that will not open, an activity that does not work, or a layout problem on your device."] },
-            { "title": "A copyright concern", "text": ["Material you believe has been published without the right to do so. Please read the section below before writing, so the request can be acted on at once."] }
+            {
+              "title": "A mistake in a lesson",
+              "text": [
+                "A wrong rule, a wrong example, a spelling error, or an explanation that does not make sense. Please give the page address and quote the sentence."
+              ]
+            },
+            {
+              "title": "A broken link or a technical fault",
+              "text": [
+                "A link that leads nowhere, a page that will not open, an activity that does not work, or a layout problem on your device."
+              ]
+            },
+            {
+              "title": "A copyright concern",
+              "text": [
+                "Material you believe has been published without the right to do so. Please read the section below before writing, so the request can be acted on at once."
+              ]
+            }
           ]
         },
         {
@@ -648,30 +1113,66 @@
           "subject": "RCF English - correction or takedown request",
           "mode": "email",
           "fields": [
-            { "name": "Your name", "type": "text", "required": true },
-            { "name": "Your email address", "type": "email", "required": true, "hint": "So that a reply can reach you." },
-            { "name": "Type of report", "type": "select", "required": true, "options": ["Mistake in a lesson", "Broken link or technical fault", "Copyright concern", "Something else"] },
-            { "name": "Address of the page concerned", "type": "text", "required": true, "hint": "Copy it from the address bar of your browser." },
-            { "name": "What is wrong", "type": "textarea", "required": true, "hint": "Please quote the sentence or describe the material precisely." }
+            {
+              "name": "Your name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "Your email address",
+              "type": "email",
+              "required": true,
+              "hint": "So that a reply can reach you."
+            },
+            {
+              "name": "Type of report",
+              "type": "select",
+              "required": true,
+              "options": [
+                "Mistake in a lesson",
+                "Broken link or technical fault",
+                "Copyright concern",
+                "Something else"
+              ]
+            },
+            {
+              "name": "Address of the page concerned",
+              "type": "text",
+              "required": true,
+              "hint": "Copy it from the address bar of your browser."
+            },
+            {
+              "name": "What is wrong",
+              "type": "textarea",
+              "required": true,
+              "hint": "Please quote the sentence or describe the material precisely."
+            }
           ]
         },
         {
           "type": "whatsapp",
           "heading": "Or send it on WhatsApp",
           "title": "WhatsApp",
-          "text": ["For a quick correction, WhatsApp is often easiest. Please include the page address."],
+          "text": [
+            "For a quick correction, WhatsApp is often easiest. Please include the page address."
+          ],
           "buttons": [
-            { "label": "Report a mistake", "message": "Hello, I would like to report a mistake on the RCF English website. Page address: " },
-            { "label": "Report a broken link", "message": "Hello, I found a broken link on the RCF English website. Page address: " }
+            {
+              "label": "Report a mistake",
+              "message": "Hello, I would like to report a mistake on the RCF English website. Page address: "
+            },
+            {
+              "label": "Report a broken link",
+              "message": "Hello, I found a broken link on the RCF English website. Page address: "
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "privacy",
       "title": "Privacy Policy",
-      "description": "What RCF English does and does not collect: no accounts, no tracking scripts and no advertising cookies; what your own browser keeps on your device; and how details you give when buying from RCF Publications are used.",
+      "description": "What RCF English does and does not collect: no accounts and no advertising cookies; how visits are counted anonymously; what your own browser keeps on your device; and how details you give when buying from RCF Publications are used.",
       "keywords": "privacy policy, cookies, data protection",
       "kicker": "Policy",
       "kind": "policy",
@@ -686,6 +1187,28 @@
             "**Nothing is sent to RCF English while you use the site.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login, no database and no server-side program that could record a visit.",
             "In particular, this website does not use analytics or tracking scripts, does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you.",
             "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
+          ],
+          "whenAnalytics": false
+        },
+        {
+          "type": "prose",
+          "heading": "What this website collects",
+          "whenAnalytics": true,
+          "text": [
+            "**RCF English does not know who you are.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login and no database of visitors.",
+            "This website does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you. It does count visits anonymously, as explained under *Visitor statistics* below.",
+            "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Visitor statistics",
+          "whenAnalytics": true,
+          "text": [
+            "To find out which lessons and resources are used, and which need improving, this site counts page visits with **[[analytics-service]]**, a statistics service that does not use cookies.",
+            "**What is counted:** the page you viewed, the website that sent you (if any), the general type of device and browser, the approximate country, and how quickly the page loaded.",
+            "**What is not collected:** no cookies are set and nothing is stored on your device for statistics. RCF English sees only totals, such as how many times a page was viewed. It never sees your IP address, your name or anything else that identifies you, and the statistics are not used to follow you across other websites or for advertising.",
+            "If your browser or a content blocker stops the statistics script, nothing changes: every page works exactly the same."
           ]
         },
         {
@@ -798,7 +1321,6 @@
         }
       ]
     },
-
     {
       "slug": "terms",
       "title": "Terms of Use",
@@ -806,7 +1328,9 @@
       "keywords": "terms of use, conditions, licence",
       "kicker": "Policy",
       "kind": "policy",
-      "hero": { "text": "Plain terms for a free educational website. By using RCF English you accept them." },
+      "hero": {
+        "text": "Plain terms for a free educational website. By using RCF English you accept them."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -869,7 +1393,6 @@
         }
       ]
     },
-
     {
       "slug": "accessibility",
       "title": "Accessibility Statement",
@@ -877,7 +1400,9 @@
       "keywords": "accessibility statement, WCAG, screen reader, keyboard navigation",
       "kicker": "Policy",
       "kind": "policy",
-      "hero": { "text": "This site is built so that it can be used by people who navigate with a keyboard, who use a screen reader, who need large text, or who are on a small or old device." },
+      "hero": {
+        "text": "This site is built so that it can be used by people who navigate with a keyboard, who use a screen reader, who need large text, or who are on a small or old device."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -936,16 +1461,35 @@
           "subject": "RCF English - accessibility barrier",
           "mode": "email",
           "fields": [
-            { "name": "Your name", "type": "text", "required": true },
-            { "name": "Your email address", "type": "email", "required": true },
-            { "name": "Page address", "type": "text", "required": true },
-            { "name": "What you were using", "type": "text", "hint": "For example: NVDA with Firefox, or a telephone with the text enlarged." },
-            { "name": "What went wrong", "type": "textarea", "required": true }
+            {
+              "name": "Your name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "Your email address",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "Page address",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "What you were using",
+              "type": "text",
+              "hint": "For example: NVDA with Firefox, or a telephone with the text enlarged."
+            },
+            {
+              "name": "What went wrong",
+              "type": "textarea",
+              "required": true
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "contact",
       "title": "Contact",
@@ -953,12 +1497,22 @@
       "keywords": "contact, WhatsApp, email, enquiries, RCF English",
       "kicker": "Get in touch",
       "kind": "page",
-      "scripts": ["forms"],
+      "scripts": [
+        "forms"
+      ],
       "hero": {
         "text": "The quickest way to reach RCF English is WhatsApp. Please say who you are — student, teacher or parent — and what you need, so the reply is genuinely useful.",
         "buttons": [
-          { "label": "Ask about classes", "url": "rcf-classes/contact/", "style": "btn--ghost-light" },
-          { "label": "Report a mistake", "url": "corrections/", "style": "btn--ghost-light" }
+          {
+            "label": "Ask about classes",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Report a mistake",
+            "url": "corrections/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -966,15 +1520,38 @@
           "type": "whatsapp",
           "heading": "Choose the kind of enquiry",
           "title": "WhatsApp",
-          "text": ["Each button opens WhatsApp with a message already written. Read it, add your own details, and press send yourself. Nothing is sent from this website."],
+          "text": [
+            "Each button opens WhatsApp with a message already written. Read it, add your own details, and press send yourself. Nothing is sent from this website."
+          ],
           "buttons": [
-            { "label": "General enquiry", "message": "Hello, I have a general enquiry about RCF English. " },
-            { "label": "Class enquiry", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Teacher enquiry", "message": "Hello, I am an English teacher. I would like information about the teacher resources on RCF English. " },
-            { "label": "Resource correction", "message": "Hello, I would like to report a mistake on the RCF English website. Page address: " },
-            { "label": "Copyright request", "message": "Hello, I am writing about copyright in material published on RCF English. Page address: " },
-            { "label": "Publication enquiry", "message": "Hello, I would like information about books from RCF Publications. " },
-            { "label": "Technical problem", "message": "Hello, I have found a technical problem on the RCF English website. Page address, device and browser: " }
+            {
+              "label": "General enquiry",
+              "message": "Hello, I have a general enquiry about RCF English. "
+            },
+            {
+              "label": "Class enquiry",
+              "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Teacher enquiry",
+              "message": "Hello, I am an English teacher. I would like information about the teacher resources on RCF English. "
+            },
+            {
+              "label": "Resource correction",
+              "message": "Hello, I would like to report a mistake on the RCF English website. Page address: "
+            },
+            {
+              "label": "Copyright request",
+              "message": "Hello, I am writing about copyright in material published on RCF English. Page address: "
+            },
+            {
+              "label": "Publication enquiry",
+              "message": "Hello, I would like information about books from RCF Publications. "
+            },
+            {
+              "label": "Technical problem",
+              "message": "Hello, I have found a technical problem on the RCF English website. Page address, device and browser: "
+            }
           ]
         },
         {
@@ -983,14 +1560,68 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "General enquiries", "text": ["Questions about the site, its material, or how to use it."] },
-            { "title": "Teacher enquiries", "text": ["Lesson plans, worksheets, marking, and the teacher resource groups."], "url": "teacher-resources/", "more": "Teacher resources" },
-            { "title": "Class enquiries", "text": ["Schedules, fees, availability and registration for RCF Online Academy."], "url": "rcf-classes/registration/", "more": "How to enrol" },
-            { "title": "Resource corrections", "text": ["A wrong rule, a wrong example, a broken link or a fault on a page."], "url": "corrections/", "more": "Report it" },
-            { "title": "Copyright requests", "text": ["Permission requests, and requests to take material down."], "url": "copyright-policy/", "more": "Read the policy" },
-            { "title": "Publication enquiries", "text": ["Books, study guides and ordering are handled on the RCF Publications website."], "url": "about/rcf-publications/", "more": "About the bookshop" },
-            { "title": "Technical problems", "text": ["A page that will not load, an activity that will not run, a layout fault."], "url": "corrections/", "more": "Report it" },
-            { "title": "Accessibility barriers", "text": ["Anything that makes the site hard to use with a keyboard, a screen reader or magnification."], "url": "accessibility/", "more": "Accessibility" }
+            {
+              "title": "General enquiries",
+              "text": [
+                "Questions about the site, its material, or how to use it."
+              ]
+            },
+            {
+              "title": "Teacher enquiries",
+              "text": [
+                "Lesson plans, worksheets, marking, and the teacher resource groups."
+              ],
+              "url": "teacher-resources/",
+              "more": "Teacher resources"
+            },
+            {
+              "title": "Class enquiries",
+              "text": [
+                "Schedules, fees, availability and registration for RCF Online Academy."
+              ],
+              "url": "rcf-classes/registration/",
+              "more": "How to enrol"
+            },
+            {
+              "title": "Resource corrections",
+              "text": [
+                "A wrong rule, a wrong example, a broken link or a fault on a page."
+              ],
+              "url": "corrections/",
+              "more": "Report it"
+            },
+            {
+              "title": "Copyright requests",
+              "text": [
+                "Permission requests, and requests to take material down."
+              ],
+              "url": "copyright-policy/",
+              "more": "Read the policy"
+            },
+            {
+              "title": "Publication enquiries",
+              "text": [
+                "Books, study guides and ordering are handled on the RCF Publications website."
+              ],
+              "url": "about/rcf-publications/",
+              "more": "About the bookshop"
+            },
+            {
+              "title": "Technical problems",
+              "text": [
+                "A page that will not load, an activity that will not run, a layout fault."
+              ],
+              "url": "corrections/",
+              "more": "Report it"
+            },
+            {
+              "title": "Accessibility barriers",
+              "text": [
+                "Anything that makes the site hard to use with a keyboard, a screen reader or magnification."
+              ],
+              "url": "accessibility/",
+              "more": "Accessibility"
+            }
           ]
         },
         {
@@ -999,11 +1630,48 @@
           "subject": "RCF English enquiry",
           "mode": "email",
           "fields": [
-            { "name": "Your name", "type": "text", "required": true },
-            { "name": "Your email address", "type": "email", "required": true },
-            { "name": "You are a", "type": "select", "required": true, "options": ["Student", "Parent", "Schoolteacher", "Tuition teacher", "Adult learner", "Other"] },
-            { "name": "Kind of enquiry", "type": "select", "required": true, "options": ["General enquiry", "Teacher enquiry", "Class enquiry", "Resource correction", "Copyright request", "Publication enquiry", "Technical problem"] },
-            { "name": "Your message", "type": "textarea", "required": true }
+            {
+              "name": "Your name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "Your email address",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "You are a",
+              "type": "select",
+              "required": true,
+              "options": [
+                "Student",
+                "Parent",
+                "Schoolteacher",
+                "Tuition teacher",
+                "Adult learner",
+                "Other"
+              ]
+            },
+            {
+              "name": "Kind of enquiry",
+              "type": "select",
+              "required": true,
+              "options": [
+                "General enquiry",
+                "Teacher enquiry",
+                "Class enquiry",
+                "Resource correction",
+                "Copyright request",
+                "Publication enquiry",
+                "Technical problem"
+              ]
+            },
+            {
+              "name": "Your message",
+              "type": "textarea",
+              "required": true
+            }
           ]
         },
         {
@@ -1019,7 +1687,6 @@
         }
       ]
     },
-
     {
       "slug": "404",
       "flat": true,
@@ -1033,8 +1700,16 @@
       "hero": {
         "text": "The address you followed does not lead to a page on this site. It may have been moved, or the address may have been typed or copied incompletely.",
         "buttons": [
-          { "label": "Go to the home page", "url": "", "style": "btn--accent" },
-          { "label": "Search the site", "url": "search/", "style": "btn--ghost-light" }
+          {
+            "label": "Go to the home page",
+            "url": "",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Search the site",
+            "url": "search/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -1043,14 +1718,46 @@
           "heading": "Try one of these instead",
           "columns": "4",
           "items": [
-            { "title": "O/L English", "url": "ol-english/", "more": "Open" },
-            { "title": "O/L Literature", "url": "ol-literature/", "more": "Open" },
-            { "title": "Practical English", "url": "practical-english/", "more": "Open" },
-            { "title": "A/L Literature", "url": "al-literature/", "more": "Open" },
-            { "title": "Past Papers", "url": "past-papers/", "more": "Open" },
-            { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open" },
-            { "title": "Interactive Learning", "url": "interactive/", "more": "Open" },
-            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" }
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open"
+            },
+            {
+              "title": "O/L Literature",
+              "url": "ol-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Practical English",
+              "url": "practical-english/",
+              "more": "Open"
+            },
+            {
+              "title": "A/L Literature",
+              "url": "al-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Past Papers",
+              "url": "past-papers/",
+              "more": "Open"
+            },
+            {
+              "title": "Teacher Resources",
+              "url": "teacher-resources/",
+              "more": "Open"
+            },
+            {
+              "title": "Interactive Learning",
+              "url": "interactive/",
+              "more": "Open"
+            },
+            {
+              "title": "RCF Online Academy",
+              "url": "rcf-classes/",
+              "more": "Open"
+            }
           ]
         },
         {
@@ -1058,7 +1765,9 @@
           "style": "tip",
           "variant": "tint",
           "title": "Was there a link to this page somewhere on the site?",
-          "text": ["If you arrived here by following a link on RCF English itself, that is a fault worth knowing about. Please [report it](corrections/) with the address of the page you came from."]
+          "text": [
+            "If you arrived here by following a link on RCF English itself, that is a fault worth knowing about. Please [report it](corrections/) with the address of the page you came from."
+          ]
         }
       ]
     }

@@ -20,6 +20,12 @@
 
   "email": "rcfdegreenotes@gmail.com",
 
+  "analytics": {
+    "provider": "cloudflare",
+    "id": ""
+  },
+  "_analyticsNote": "Visitor statistics. Leave id empty and no statistics script is added to any page. For Cloudflare Web Analytics (free, no cookies): sign in at dash.cloudflare.com, open Analytics & Logs > Web Analytics, add the site rcfenglish.com, choose the JavaScript snippet, and copy only the token value from it into id. For GoatCounter instead, set provider to goatcounter and id to your site code (the xxx in xxx.goatcounter.com). Then run build.cmd. The privacy policy switches its wording automatically.",
+
   "founderName": "Rohana Fernando",
   "country": "Sri Lanka",
   "countryCode": "LK",

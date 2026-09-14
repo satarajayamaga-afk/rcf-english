@@ -4728,3 +4728,39 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
 .status-counts { list-style: none; margin: var(--sp-4) 0 var(--sp-2); padding: 0; display: grid; gap: var(--sp-2); grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
 .status-counts li { padding: var(--sp-3); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
 .status-counts__n { display: block; font-family: var(--font-head); font-size: 1.8rem; font-weight: 700; color: var(--navy-800); }
+
+/* ==========================================================================
+   Charts drawn from data (IELTS Writing Task 1 and elsewhere)
+   ========================================================================== */
+.chart { margin: 0; padding: var(--sp-4); border: 1px solid var(--line); border-radius: var(--radius-md); background: #fff; }
+.chart__title { font-family: var(--font-head); font-weight: 700; font-size: var(--step-1); color: var(--navy-800); margin-bottom: var(--sp-2); }
+.chart__frame { overflow-x: auto; }
+.chart__svg { display: block; width: 100%; height: auto; min-width: 520px; max-width: 760px; margin: 0 auto; font-family: var(--font-body); }
+.chart--pie .chart__svg, .chart--map .chart__svg { min-width: 460px; }
+.chart__grid { stroke: #e3e8ef; stroke-width: 1; }
+.chart__axis { stroke: #8a94a6; stroke-width: 1.5; }
+.chart__tick { font-size: 13px; fill: #3d4a5c; }
+.chart__axis-label { font-size: 13px; fill: #3d4a5c; font-weight: 600; }
+.chart__legend { font-size: 13px; fill: #1f2937; }
+.chart__value { font-size: 11px; fill: #1f2937; }
+.chart__series-label { font-size: 13px; font-weight: 700; }
+.chart__pie-title { font-size: 16px; font-weight: 700; fill: #0f2647; }
+.chart__slice { font-size: 13px; font-weight: 700; fill: #fff; }
+.chart__box { fill: #f3f7fc; stroke: #1f5fa8; stroke-width: 1.5; }
+.chart__step-n { fill: #1f5fa8; }
+.chart__step-num { font-size: 13px; font-weight: 700; fill: #fff; }
+.chart__step-title { font-size: 15px; font-weight: 700; fill: #0f2647; }
+.chart__step-note { font-size: 13px; fill: #3d4a5c; }
+.chart__arrow { stroke: #0f2647; stroke-width: 2; }
+.chart__map-bg { fill: #f6f3ea; stroke: #b8b2a0; }
+.chart__map-water { fill: #9cc7e6; }
+.chart__map-green { fill: #a9d18e; }
+.chart__map-road { fill: #c9ced6; }
+.chart__map-bridge { fill: #7a5a3a; }
+.chart__map-building { fill: #4a5a70; }
+.chart__map-label { font-size: 12px; font-weight: 700; fill: #1f2937; }
+.chart__map-label--light { fill: #fff; }
+.chart__caption { margin: var(--sp-2) 0 0; font-size: var(--step--1); color: var(--ink-700); }
+.chart__data { margin-top: var(--sp-2); }
+.chart__data summary { cursor: pointer; font-weight: 650; color: var(--teal-700); min-height: 40px; display: flex; align-items: center; }
+@media print { .chart__data { display: none; } .chart { border: 0; padding: 0; } }

@@ -2,45 +2,120 @@
   "_readme": [
     "IELTS TASK 1 - DESCRIBING GRAPHS AND CHARTS",
     "---------------------------------------------------------------------",
-    "Written by RCF English. Every practice task, every figure and both",
-    "model answers are ours.",
+    "A hub page and six tutorial pages (line, bar, pie, table, process,",
+    "maps). Written by RCF English: every task, figure, diagram and model",
+    "answer is ours.",
     "",
-    "THE FIGURES ARE INVENTED FOR PRACTICE. They are not real statistics",
-    "and the page says so plainly in two places. Do not quote them as fact",
-    "and do not attach a country or an institution to them.",
+    "THE FIGURES ARE INVENTED FOR PRACTICE. Each page says so. Do not quote",
+    "them as fact or attach a country or institution to them.",
     "",
-    "Data is presented as TABLES rather than chart images on purpose:",
-    "  - no image assets to load on a slow connection",
-    "  - readable on a 375px phone, where a chart image is not",
-    "  - screen-reader accessible",
-    "  - describing a table uses exactly the same language as describing",
-    "    the chart drawn from it",
-    "A learner who wants the visual can sketch it from the table, which is",
-    "itself useful practice.",
+    "Charts are 'chart' blocks drawn as inline SVG by the build, with the",
+    "figures also available as a table under each chart (screen readers,",
+    "and learners who prefer numbers). No image files.",
     "",
-    "Model answers were checked against their own data figure by figure."
+    "Every model answer was checked against its own data figure by figure.",
+    "If you change a figure, check the model answer and the key features."
   ],
-
   "pages": [
     {
       "slug": "practical-english/ielts/graphs",
       "title": "Describing Graphs and Charts",
       "metaTitle": "IELTS Task 1: Describing Graphs and Charts | RCF English",
-      "description": "The language of describing data for IELTS Academic Writing Task 1: verbs and nouns of change, degree, prepositions, comparison, five practice tasks with data, and two full model answers.",
+      "description": "IELTS Academic Writing Task 1: six complete tutorials with drawn line graphs, bar charts, pie charts, tables, process diagrams and maps, plus the overview, the language of change, tenses and a self-check.",
       "keywords": "IELTS task 1 graphs, describing charts IELTS, line graph vocabulary, IELTS academic writing task 1, describing trends English",
       "kicker": "IELTS",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
-      "backTo": { "label": "IELTS Writing", "url": "practical-english/ielts/writing/" },
-      "hero": { "text": "Most candidates already know the words *rise* and *fall*. What separates a 6 from a 7 is knowing which grammar each one takes, and choosing what not to mention." },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
+      ],
+      "backTo": {
+        "label": "IELTS Writing",
+        "url": "practical-english/ielts/writing/"
+      },
+      "hero": {
+        "text": "Most candidates already know the words *rise* and *fall*. What separates a 6 from a 7 is writing a clear overview, choosing what not to mention, and knowing which grammar each word takes. Choose a tutorial below.",
+        "buttons": [
+          {
+            "label": "Choose a tutorial",
+            "url": "practical-english/ielts/graphs/#tutorials",
+            "style": "btn--accent"
+          }
+        ]
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "warn",
           "title": "About the figures on this page",
           "text": [
-            "**All the data below is invented by RCF English for practice.** It is not real, it describes no real country or organisation, and it must not be quoted as fact.",
+            "**Every figure and diagram in these tutorials is invented by RCF English for practice.** Nothing describes a real country, town or dataset, and it must not be quoted as fact.",
             "Its only purpose is to give you something accurate to write about. Real Task 1 questions use real data, but the language you need is identical."
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "tutorials",
+          "heading": "Six tutorials, one for every kind of Task 1 visual",
+          "eyebrow": "Start here",
+          "columns": "3",
+          "variant": "tint",
+          "intro": "Each tutorial has a drawn chart, a step-by-step method, the language for that chart type, a model answer, Band 5 and Band 7 sentences compared, common mistakes, and a second task with its own model answer.",
+          "items": [
+            {
+              "title": "1. Line graph",
+              "url": "practical-english/ielts/graphs/line-graph/",
+              "more": "Open tutorial",
+              "text": [
+                "Change over time: trends, peaks and sudden falls."
+              ]
+            },
+            {
+              "title": "2. Bar chart",
+              "url": "practical-english/ielts/graphs/bar-chart/",
+              "more": "Open tutorial",
+              "text": [
+                "Comparing categories, and how they change."
+              ]
+            },
+            {
+              "title": "3. Pie charts",
+              "url": "practical-english/ielts/graphs/pie-charts/",
+              "more": "Open tutorial",
+              "text": [
+                "Shares of a whole, and how they change."
+              ]
+            },
+            {
+              "title": "4. Table",
+              "url": "practical-english/ielts/graphs/table/",
+              "more": "Open tutorial",
+              "text": [
+                "Many figures: select, group and compare."
+              ]
+            },
+            {
+              "title": "5. Process diagram",
+              "url": "practical-english/ielts/graphs/process-diagram/",
+              "more": "Open tutorial",
+              "text": [
+                "Stages in order, in the passive voice."
+              ]
+            },
+            {
+              "title": "6. Maps",
+              "url": "practical-english/ielts/graphs/maps/",
+              "more": "Open tutorial",
+              "text": [
+                "What has changed in a place, and where."
+              ]
+            }
           ]
         },
         {
@@ -53,53 +128,39 @@
           ]
         },
         {
-          "type": "table",
-          "heading": "Verbs and nouns of change — and the grammar each takes",
-          "caption": "Written by RCF English. The right-hand column is where marks are actually lost.",
-          "columns": ["Verb form", "Noun form", "How it is used"],
-          "rows": [
-            ["rise / rose / risen", "a rise", "*Sales rose.* — no object. Never *sales rose the profit*."],
-            ["increase", "an increase", "*Numbers increased **to** 500* (endpoint) · *increased **by** 200* (amount)."],
-            ["grow / grew", "growth", "*growth* is uncountable — *a rapid growth* is wrong; write *rapid growth*."],
-            ["fall / fell / fallen", "a fall", "*Prices fell **to** 40.* Never *fell down*."],
-            ["decline", "a decline", "Slightly formal; good for gradual movement."],
-            ["decrease", "a decrease", "*decreased **from** 90 **to** 60*."],
-            ["drop", "a drop", "Suggests suddenness. *A sharp drop.*"],
-            ["plummet", "—", "A very steep fall. Use once at most, or it sounds rehearsed."],
-            ["fluctuate", "a fluctuation", "Up and down with no clear direction."],
-            ["remain stable / level off / plateau", "—", "*Numbers levelled off at 200* — stopped changing after a period of change."],
-            ["peak", "a peak", "*Sales peaked at 500 in 2018* — the highest point, with the year."],
-            ["reach a low of", "a low", "*Figures reached a low of 12.*"],
-            ["overtake", "—", "*Mobile phones overtook televisions in 2014* — passed another category."],
-            ["double / triple", "—", "*The figure doubled* — no *by*. *Doubled by two* is wrong."]
-          ]
-        },
-        {
-          "type": "table",
-          "heading": "Saying how much, and how fast",
-          "caption": "Pair one adjective with a noun, or one adverb with a verb. Both say the same thing — use each shape at least once.",
-          "columns": ["Degree", "Adjective + noun", "Verb + adverb"],
-          "rows": [
-            ["Very large", "a dramatic rise · a sharp increase", "rose dramatically · increased sharply"],
-            ["Large", "a significant increase · a considerable fall", "increased significantly · fell considerably"],
-            ["Moderate", "a steady rise · a gradual decline", "rose steadily · declined gradually"],
-            ["Small", "a slight fall · a marginal increase", "fell slightly · increased marginally"],
-            ["Very small", "a negligible change", "barely changed"],
-            ["Fast", "a rapid increase", "increased rapidly"],
-            ["Slow", "a slow decline", "declined slowly"]
-          ]
-        },
-        {
-          "type": "table",
-          "heading": "Prepositions — the commonest errors we see",
-          "caption": "These four lines cost more marks than any vocabulary gap.",
-          "columns": ["Write this", "Not this", "Why"],
-          "rows": [
-            ["rose **by** 30", "rose **with** 30", "*by* = the size of the change. *with* is a first-language habit."],
-            ["rose **to** 500", "rose **until** 500", "*to* = the endpoint reached."],
-            ["**from** 2010 **to** 2020 · **between** 2010 **and** 2020", "*from 2010 until 2020* · *between 2010 to 2020*", "*from...to* and *between...and* are fixed pairs. Do not mix them."],
-            ["**in** 2015 · **at** 40% · **at** its peak", "*on 2015* · *in 40%*", "Years take *in*; values take *at*."],
-            ["**a** rise **of** 20%", "*a rise of 20% points* (unless it truly is percentage points)", "A rise *of* an amount; a rise *to* a level."]
+          "type": "steps",
+          "heading": "The 20-minute method for every Task 1",
+          "items": [
+            {
+              "title": "Understand (1 minute)",
+              "text": [
+                "What is measured, in what unit, and over what time? The time decides your tense."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "The biggest, the smallest, the fastest change, anything that overtakes, anything that stays the same."
+              ]
+            },
+            {
+              "title": "Plan (2 minutes)",
+              "text": [
+                "Introduction, overview, two body paragraphs. Decide which data goes in which body paragraph."
+              ]
+            },
+            {
+              "title": "Write (12 minutes)",
+              "text": [
+                "About 170 to 190 words. Each claim supported by one or two figures."
+              ]
+            },
+            {
+              "title": "Check (3 minutes)",
+              "text": [
+                "Tense, articles, prepositions (*by*, *to*, *from*), units, and word count."
+              ]
+            }
           ]
         },
         {
@@ -114,133 +175,252 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "Practice 1 — a line graph, given as a table",
-          "text": [
-            "**The task:** *The table below shows the number of visitors, in thousands, arriving from three regions between 2015 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.*",
-            "Sketch it as a line graph first if that helps — three lines, six points each."
+          "type": "table",
+          "heading": "The overview: the paragraph that decides your band",
+          "intro": "Without a clear overview, Task Achievement is held down however good the English. The overview gives the general picture, with no figures.",
+          "columns": [
+            "Visual",
+            "Weak overview",
+            "Strong overview"
+          ],
+          "rows": [
+            [
+              "Line graph",
+              "*Overall, Asia was 380 in 2019.*",
+              "*Overall, arrivals from all three regions rose until 2019 and then collapsed, with Asia the largest source throughout.*"
+            ],
+            [
+              "Bar chart",
+              "*Overall, there are five items.*",
+              "*Overall, ownership of every item rose, and the mobile phone overtook the television as the most common.*"
+            ],
+            [
+              "Pie charts",
+              "*Overall, food is 45% and 30%.*",
+              "*Overall, food remained the largest expense, but its share fell, while housing, transport and education all took a greater share.*"
+            ],
+            [
+              "Table",
+              "*Overall, the table has many numbers.*",
+              "*Overall, social media dominated young people's free time, whereas television was the main activity for older groups.*"
+            ],
+            [
+              "Process",
+              "*Overall, tea is made in a factory.*",
+              "*Overall, there are seven stages, beginning with plucking and ending with packing.*"
+            ],
+            [
+              "Maps",
+              "*Overall, there are many changes.*",
+              "*Overall, the town centre has become more residential and greener, although the river and main road are unchanged.*"
+            ]
           ]
         },
         {
           "type": "table",
-          "heading": "Visitors by region, in thousands (practice data)",
-          "stacked": false,
-          "caption": "Invented by RCF English for practice. Not real statistics.",
-          "columns": ["Year", "Europe", "Asia", "The Americas"],
+          "heading": "Verbs and nouns of change — and the grammar each takes",
+          "caption": "Written by RCF English. The right-hand column is where marks are actually lost.",
+          "columns": [
+            "Verb form",
+            "Noun form",
+            "How it is used"
+          ],
           "rows": [
-            ["2015", "120", "200", "40"],
-            ["2016", "135", "240", "42"],
-            ["2017", "150", "300", "45"],
-            ["2018", "165", "355", "47"],
-            ["2019", "170", "380", "50"],
-            ["2020", "45", "90", "12"]
-          ]
-        },
-        {
-          "type": "accordion",
-          "heading": "Model answer 1, with the reasoning shown",
-          "items": [
-            {
-              "q": "Read the model answer (183 words)",
-              "a": [
-                "*The table shows how many visitors, in thousands, came from Europe, Asia and the Americas over the six years from 2015 to 2020.*",
-                "*Overall, arrivals from all three regions grew steadily until 2019 and then collapsed in 2020. Asia was the largest source throughout the period and also showed by far the greatest growth.*",
-                "*Asian arrivals rose from 200,000 in 2015 to 380,000 in 2019, an increase of 90 per cent and the steepest climb of the three. European numbers grew more modestly over the same years, from 120,000 to 170,000, while arrivals from the Americas increased only marginally, from 40,000 to 50,000.*",
-                "*In 2020 the pattern reversed sharply. Asian arrivals fell to 90,000, less than a quarter of the previous year's figure, and European visitors dropped to 45,000. The Americas, which had always contributed fewest, fell to 12,000. Despite this fall, the ranking of the three regions was unchanged: Asia remained the largest source and the Americas the smallest in every year shown.*"
-              ]
-            },
-            {
-              "q": "Why it would score well",
-              "a": [
-                "**The overview is separate and signalled.** *Overall* tells the examiner exactly where to find it. Two features only: growth then collapse, and Asia dominant.",
-                "**It selects.** Eighteen figures are available; twelve are used. The others add nothing.",
-                "**It compares rather than lists.** *by far the greatest growth*, *more modestly*, *only marginally*, *always contributed fewest*.",
-                "**It varies the grammar.** *rose from... to*, *an increase of 90 per cent*, *grew more modestly*, *dropped to*, *fell to* — both the verb+adverb and adjective+noun shapes appear.",
-                "**It ends with a comparison, not a new fact.** The ranking sentence pulls the whole thing together.",
-                "**Note what is absent:** no explanation of *why* 2020 fell. Task 1 never asks for reasons, and speculating wastes words you need elsewhere."
-              ]
-            }
-          ]
-        },
-        {
-          "type": "prose",
-          "heading": "Practice 2 — a bar chart, given as a table",
-          "text": [
-            "**The task:** *The chart below shows the percentage of households owning selected items in one country in 2005 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.*"
+            [
+              "rise / rose / risen",
+              "a rise",
+              "*Sales rose.* — no object. Never *sales rose the profit*."
+            ],
+            [
+              "increase",
+              "an increase",
+              "*Numbers increased **to** 500* (endpoint) · *increased **by** 200* (amount)."
+            ],
+            [
+              "grow / grew",
+              "growth",
+              "*growth* is uncountable — *a rapid growth* is wrong; write *rapid growth*."
+            ],
+            [
+              "fall / fell / fallen",
+              "a fall",
+              "*Prices fell **to** 40.* Never *fell down*."
+            ],
+            [
+              "decline",
+              "a decline",
+              "Slightly formal; good for gradual movement."
+            ],
+            [
+              "decrease",
+              "a decrease",
+              "*decreased **from** 90 **to** 60*."
+            ],
+            [
+              "drop",
+              "a drop",
+              "Suggests suddenness. *A sharp drop.*"
+            ],
+            [
+              "plummet",
+              "—",
+              "A very steep fall. Use once at most, or it sounds rehearsed."
+            ],
+            [
+              "fluctuate",
+              "a fluctuation",
+              "Up and down with no clear direction."
+            ],
+            [
+              "remain stable / level off / plateau",
+              "—",
+              "*Numbers levelled off at 200* — stopped changing after a period of change."
+            ],
+            [
+              "peak",
+              "a peak",
+              "*Sales peaked at 500 in 2018* — the highest point, with the year."
+            ],
+            [
+              "reach a low of",
+              "a low",
+              "*Figures reached a low of 12.*"
+            ],
+            [
+              "overtake",
+              "—",
+              "*Mobile phones overtook televisions in 2014* — passed another category."
+            ],
+            [
+              "double / triple",
+              "—",
+              "*The figure doubled* — no *by*. *Doubled by two* is wrong."
+            ]
           ]
         },
         {
           "type": "table",
-          "heading": "Households owning each item, per cent (practice data)",
-          "stacked": false,
-          "caption": "Invented by RCF English for practice. Not real statistics.",
-          "columns": ["Item", "2005", "2020"],
+          "heading": "Saying how much, and how fast",
+          "caption": "Pair one adjective with a noun, or one adverb with a verb. Both say the same thing — use each shape at least once.",
+          "columns": [
+            "Degree",
+            "Adjective + noun",
+            "Verb + adverb"
+          ],
           "rows": [
-            ["Mobile phone", "25", "95"],
-            ["Television", "60", "88"],
-            ["Refrigerator", "30", "72"],
-            ["Computer", "8", "45"],
-            ["Car", "5", "14"]
+            [
+              "Very large",
+              "a dramatic rise · a sharp increase",
+              "rose dramatically · increased sharply"
+            ],
+            [
+              "Large",
+              "a significant increase · a considerable fall",
+              "increased significantly · fell considerably"
+            ],
+            [
+              "Moderate",
+              "a steady rise · a gradual decline",
+              "rose steadily · declined gradually"
+            ],
+            [
+              "Small",
+              "a slight fall · a marginal increase",
+              "fell slightly · increased marginally"
+            ],
+            [
+              "Very small",
+              "a negligible change",
+              "barely changed"
+            ],
+            [
+              "Fast",
+              "a rapid increase",
+              "increased rapidly"
+            ],
+            [
+              "Slow",
+              "a slow decline",
+              "declined slowly"
+            ]
           ]
         },
         {
-          "type": "accordion",
-          "heading": "Model answer 2, with the reasoning shown",
-          "items": [
-            {
-              "q": "Read the model answer (176 words)",
-              "a": [
-                "*The chart compares the proportion of households owning five different items in 2005 and in 2020.*",
-                "*Overall, ownership of every item rose over the fifteen years. The most striking change was in mobile phones, which went from the third most common item to the most common of all, while cars remained by far the least widely owned in both years.*",
-                "*In 2005 the television was the item most households possessed, at 60 per cent, followed by the refrigerator at 30 per cent and the mobile phone at 25 per cent. By 2020 this order had changed completely: 95 per cent of households owned a mobile phone, overtaking the television, which had itself risen to 88 per cent.*",
-                "*The refrigerator and the computer both more than doubled, reaching 72 and 45 per cent respectively, with the computer showing the largest proportional increase of any item, from a very low base of 8 per cent. Car ownership grew least in absolute terms, from 5 to 14 per cent, and remained a minority in 2020.*"
-              ]
-            },
-            {
-              "q": "Why it would score well",
-              "a": [
-                "**It finds the story, not just the numbers.** The story is the mobile phone overtaking the television — a reader would notice that first, so it belongs in the overview.",
-                "**It distinguishes two kinds of *biggest*.** The mobile phone rose most in percentage points (70); the computer rose most proportionally (nearly six times over). Noticing that difference is a Band 7 move.",
-                "**It uses *respectively* correctly** — two items named in one order, two figures given in the same order. Used wrongly it is worse than not used at all.",
-                "**It groups.** Items are handled in sensible pairs, not one sentence each in chart order.",
-                "**It closes the comparison it opened.** Cars are mentioned in the overview and again at the end."
-              ]
-            }
+          "type": "table",
+          "heading": "Prepositions — the commonest errors we see",
+          "caption": "These four lines cost more marks than any vocabulary gap.",
+          "columns": [
+            "Write this",
+            "Not this",
+            "Why"
+          ],
+          "rows": [
+            [
+              "rose **by** 30",
+              "rose **with** 30",
+              "*by* = the size of the change. *with* is a first-language habit."
+            ],
+            [
+              "rose **to** 500",
+              "rose **until** 500",
+              "*to* = the endpoint reached."
+            ],
+            [
+              "**from** 2010 **to** 2020 · **between** 2010 **and** 2020",
+              "*from 2010 until 2020* · *between 2010 to 2020*",
+              "*from...to* and *between...and* are fixed pairs. Do not mix them."
+            ],
+            [
+              "**in** 2015 · **at** 40% · **at** its peak",
+              "*on 2015* · *in 40%*",
+              "Years take *in*; values take *at*."
+            ],
+            [
+              "**a** rise **of** 20%",
+              "*a rise of 20% points* (unless it truly is percentage points)",
+              "A rise *of* an amount; a rise *to* a level."
+            ]
           ]
         },
         {
-          "type": "accordion",
-          "heading": "Three more practice tasks — no model answers, so you have to decide",
-          "items": [
-            {
-              "q": "Practice 3 — two pie charts (household spending)",
-              "a": [
-                "**The task:** *The charts show how an average household divided its monthly spending in 2000 and in 2020.* Practice data, invented by RCF English:",
-                "**2000:** Food 45% · Housing 20% · Other 17% · Transport 10% · Education 8%",
-                "**2020:** Food 30% · Housing 28% · Transport 15% · Education 12% · Other 15%",
-                "**Before you write, decide:** which category changed most, and does *most* mean percentage points or proportion? Which is still the largest? Which overtook which? Your overview should answer the first and last of those.",
-                "**Pie-chart language:** *accounted for*, *made up*, *a share of*, *the largest proportion*, *by contrast*. Percentages in each chart must total 100 — check before you claim a trend."
-              ]
-            },
-            {
-              "q": "Practice 4 — a process diagram (no numbers)",
-              "a": [
-                "**The task:** *The diagram shows how black tea is produced.* Stages: **plucking → withering → rolling → oxidation → drying → grading → packing.**",
-                "**A process needs different language from a graph.** There is no overview of trends; instead say **how many stages** there are and **where the process begins and ends**.",
-                "**Use the passive:** *The leaves are withered for several hours*, not *workers wither the leaves*. The agent is rarely important.",
-                "**Sequence carefully:** *First · Next · Once this has been done · At this stage · Finally.* Do not write *Firstly, secondly, thirdly* down the whole answer.",
-                "**No figures, no comparisons, no opinion.** Candidates who have only practised graphs often panic here — the structure is simpler, not harder."
-              ]
-            },
-            {
-              "q": "Practice 5 — two maps (a town centre, then and now)",
-              "a": [
-                "**The task:** *The maps show a town centre in 1990 and today.* Changes: the factory by the river became apartments; the car park became a park; a footbridge was added; the primary school doubled in size; the row of small shops became a supermarket.",
-                "**Maps need location and change language together.** *to the north of · on the opposite bank · adjacent to · in the north-east corner · where the factory once stood.*",
-                "**Use the passive for change:** *The factory was demolished and replaced by apartment blocks.* · *A footbridge was constructed across the river.* · *The school was extended.*",
-                "**The overview should say how much changed overall** — for example that the area became more residential and less industrial. That single sentence is worth more than any individual detail."
-              ]
-            }
+          "type": "table",
+          "heading": "Which tense? Read the dates first",
+          "columns": [
+            "The visual shows",
+            "Use",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Past years only",
+              "Past simple",
+              "*Car ownership rose from 5 to 14 per cent.*"
+            ],
+            [
+              "Past years, with a change by a later date",
+              "Past perfect",
+              "*By 2020, the mobile phone had overtaken the television.*"
+            ],
+            [
+              "A future forecast",
+              "*is expected to*, *is predicted to*, *will*",
+              "*Solar power is predicted to rise to 20 per cent by 2025.*"
+            ],
+            [
+              "A process",
+              "Present simple passive",
+              "*The leaves are rolled and then dried.*"
+            ],
+            [
+              "A map from the past to today",
+              "Present perfect passive",
+              "*The factory has been replaced by apartments.*"
+            ],
+            [
+              "No time given",
+              "Present or past simple, consistently",
+              "*Television took up 16 hours a week among the oldest group.*"
+            ]
           ]
         },
         {
@@ -280,9 +460,3026 @@
           "eyebrow": "IELTS",
           "columns": "3",
           "items": [
-            { "title": "IELTS Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 letters and Task 2 essays, with original practice prompts."] },
-            { "title": "IELTS overview", "url": "practical-english/ielts/", "more": "Open", "text": ["The four modules, the nine bands, and how the score is worked out."] },
-            { "title": "Practical Writing", "url": "practical-english/writing/", "more": "Open", "text": ["General writing skills underneath the test."] }
+            {
+              "title": "IELTS Writing",
+              "url": "practical-english/ielts/writing/",
+              "more": "Open",
+              "text": [
+                "Task 1 letters and Task 2 essays, with original practice prompts."
+              ]
+            },
+            {
+              "title": "IELTS overview",
+              "url": "practical-english/ielts/",
+              "more": "Open",
+              "text": [
+                "The four modules, the nine bands, and how the score is worked out."
+              ]
+            },
+            {
+              "title": "Practical Writing",
+              "url": "practical-english/writing/",
+              "more": "Open",
+              "text": [
+                "General writing skills underneath the test."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/graphs/line-graph",
+      "title": "IELTS Task 1 Line Graph Tutorial",
+      "metaTitle": "IELTS Writing Task 1 Line Graph: Step-by-Step Tutorial with Model Answers | RCF English",
+      "description": "A complete IELTS Academic Writing Task 1 line graph tutorial: a drawn chart, a step-by-step method, key language, a model answer, Band 5 and Band 7 sentences compared, and a second task to practise with its own model answer.",
+      "keywords": "IELTS line graph, IELTS task 1 line graph model answer, describing trends IELTS, line graph vocabulary, IELTS academic writing task 1 band 7",
+      "kicker": "IELTS Task 1 tutorial 1 of 6",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Graphs and charts",
+          "url": "practical-english/ielts/graphs/"
+        }
+      ],
+      "backTo": {
+        "label": "Graphs and charts",
+        "url": "practical-english/ielts/graphs/"
+      },
+      "hero": {
+        "text": "Line graphs show change over time. The skill is not reading every point: it is seeing the shape of each line, grouping lines that move together, and describing the trend before the numbers.",
+        "buttons": [
+          {
+            "label": "Start with the task",
+            "url": "practical-english/ielts/graphs/line-graph/#task",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Try a new task",
+            "url": "practical-english/ielts/graphs/line-graph/#your-turn",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the figures on this page",
+          "text": [
+            "**Every figure, place and diagram on this page is invented by RCF English for practice.** Nothing here describes a real country, town or dataset, and it must not be quoted as fact. The language you learn is exactly what real Task 1 questions need."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "task",
+          "heading": "The task",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "The graph below shows the number of visitors, in thousands, arriving in one country from three regions between 2015 and 2020.",
+            "**Summarise the information by selecting and reporting the main features, and make comparisons where relevant.**",
+            "*Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "line",
+          "title": "Visitors arriving in one country from three regions, 2015 to 2020 (thousands)",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "categoryLabel": "Year",
+          "yLabel": "Visitors (thousands)",
+          "categories": [
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "series": [
+            {
+              "name": "Asia",
+              "values": [
+                200,
+                240,
+                300,
+                355,
+                380,
+                90
+              ]
+            },
+            {
+              "name": "Europe",
+              "values": [
+                120,
+                135,
+                150,
+                165,
+                170,
+                45
+              ]
+            },
+            {
+              "name": "Americas",
+              "values": [
+                40,
+                42,
+                45,
+                47,
+                50,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Step by step: how to answer this task",
+          "level": "h2",
+          "intro": "Spend the first five minutes on steps 1 to 3. Candidates who start writing straight away usually miss the overview.",
+          "items": [
+            {
+              "title": "Understand what the visual shows (1 minute)",
+              "bullets": [
+                "**What is measured?** Visitors, counted in thousands. So 200 on the axis means 200,000 people.",
+                "**How many lines?** Three: Asia, Europe and the Americas.",
+                "**What time period?** Six years, 2015 to 2020, all in the past: use the past simple."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "Ask what a person would notice from across the room. These become your overview and your body paragraphs."
+              ],
+              "bullets": [
+                "**Direction:** all three lines rise every year from 2015 to 2019.",
+                "**A sudden change:** all three fall sharply in 2020.",
+                "**Ranking:** Asia is highest and the Americas lowest in every single year.",
+                "**Biggest change:** Asia grows most, by 180,000 (90 per cent) between 2015 and 2019."
+              ]
+            },
+            {
+              "title": "Plan four paragraphs (2 minutes)",
+              "bullets": [
+                "**Introduction:** paraphrase the task in one sentence.",
+                "**Overview:** growth to 2019 then collapse in 2020; Asia always the largest source.",
+                "**Body 1:** the growth years, 2015 to 2019, with start and peak figures for each region.",
+                "**Body 2:** the fall in 2020, and the fact that the ranking did not change."
+              ]
+            },
+            {
+              "title": "Write, then check (15 minutes)",
+              "bullets": [
+                "Write about 170 to 190 words. Under 150 is penalised.",
+                "Start the overview with *Overall* so the examiner can find it.",
+                "Support each point with one or two figures, not every figure.",
+                "Leave three minutes to check tense, articles, prepositions and units."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Writing the introduction: paraphrase the question",
+          "level": "h2",
+          "intro": "Change the words, not the meaning. Language copied from the question is not counted in your word total.",
+          "columns": [
+            "In the question",
+            "In your introduction"
+          ],
+          "rows": [
+            [
+              "The graph below shows",
+              "The line graph illustrates"
+            ],
+            [
+              "the number of visitors",
+              "how many people visited"
+            ],
+            [
+              "arriving in one country from three regions",
+              "came to one country from Asia, Europe and the Americas"
+            ],
+            [
+              "between 2015 and 2020",
+              "over the six-year period from 2015 to 2020"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The language of trends, with examples from this graph",
+          "level": "h2",
+          "columns": [
+            "Movement",
+            "Verb + adverb",
+            "Adjective + noun",
+            "Example from this graph"
+          ],
+          "rows": [
+            [
+              "Steady rise",
+              "rose steadily, grew consistently",
+              "a steady rise, consistent growth",
+              "European arrivals rose steadily from 120,000 to 170,000."
+            ],
+            [
+              "Fast rise",
+              "climbed rapidly, surged",
+              "a rapid increase, a surge",
+              "There was a rapid increase in Asian arrivals between 2016 and 2018."
+            ],
+            [
+              "Small rise",
+              "increased slightly, edged up",
+              "a slight increase, a marginal rise",
+              "Arrivals from the Americas increased only marginally, from 40,000 to 50,000."
+            ],
+            [
+              "Highest point",
+              "peaked at, reached a high of",
+              "a peak of",
+              "Asian arrivals peaked at 380,000 in 2019."
+            ],
+            [
+              "Sudden fall",
+              "fell sharply, plummeted, collapsed",
+              "a sharp fall, a dramatic drop",
+              "In 2020 there was a dramatic drop in visitors from every region."
+            ],
+            [
+              "No change",
+              "remained stable, levelled off",
+              "a period of stability",
+              "Not in this graph. *Sales levelled off at around 50 units.*"
+            ]
+          ]
+        },
+        {
+          "type": "model",
+          "id": "model-answer",
+          "heading": "Model answer",
+          "level": "h2",
+          "variant": "tint",
+          "intro": "Read it once for meaning, then again to see how each paragraph does its job.",
+          "items": [
+            {
+              "label": "Model answer: line graph (171 words)",
+              "prompt": "The graph below shows the number of visitors, in thousands, arriving in one country from three regions between 2015 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+              "sample": [
+                "The line graph shows how many visitors, in thousands, arrived in one country from Asia, Europe and the Americas over the six years from 2015 to 2020.",
+                "Overall, arrivals from all three regions grew steadily until 2019 and then collapsed in 2020. Asia was the largest source throughout the period and also showed by far the greatest growth.",
+                "Asian arrivals rose from 200,000 in 2015 to a peak of 380,000 in 2019, an increase of 90 per cent and the steepest climb of the three. European numbers grew more modestly over the same years, from 120,000 to 170,000, while arrivals from the Americas increased only marginally, from 40,000 to 50,000.",
+                "In 2020 the pattern reversed sharply. Asian arrivals fell to 90,000, less than a quarter of the previous year's figure, and European visitors dropped to 45,000. The Americas, which had always contributed fewest, fell to 12,000. Despite this fall, the ranking of the three regions was unchanged: Asia remained the largest source and the Americas the smallest in every year shown."
+              ],
+              "notes": [
+                "**The overview is separate and signalled.** *Overall* tells the examiner exactly where to find it. It gives two features only: growth then collapse, and Asia dominant.",
+                "**It selects.** Eighteen figures are available; about twelve are used. The middle years add nothing, so they are left out.",
+                "**It compares rather than lists:** *by far the greatest growth*, *more modestly*, *only marginally*, *always contributed fewest*.",
+                "**It varies the grammar:** *rose from... to*, *a peak of*, *an increase of 90 per cent*, *grew more modestly*, *dropped to*.",
+                "**It gives no reasons.** The graph does not say why 2020 fell, so neither does the answer. Task 1 never asks why."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From Band 5 to Band 7: sentences compared",
+          "level": "h2",
+          "intro": "Each weak sentence below shows a common type of mistake. The Band 7 version says the same thing accurately.",
+          "columns": [
+            "Band 5 sentence",
+            "The problem",
+            "Band 7 version"
+          ],
+          "rows": [
+            [
+              "In 2015 Europe was 120, in 2016 135, in 2017 150, in 2018 165 and in 2019 170.",
+              "Lists every figure and never says what the trend is. *Europe was 120* is also not true: the number of visitors was.",
+              "European arrivals grew steadily, from 120,000 in 2015 to 170,000 in 2019."
+            ],
+            [
+              "The visitors from Asia increased with 180 thousands.",
+              "Wrong preposition (*by*, not *with*), and *thousand* takes no *s* after a number.",
+              "The number of visitors from Asia increased by 180,000."
+            ],
+            [
+              "In 2020 all numbers fell because of the pandemic.",
+              "Gives a reason that is not shown on the graph.",
+              "In 2020, arrivals from all three regions fell sharply."
+            ],
+            [
+              "Asia is the biggest.",
+              "Present tense for past data, and too vague to earn credit.",
+              "Asia was the largest source of visitors in every year shown."
+            ]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Common mistakes with line graph tasks",
+          "level": "h2",
+          "doTitle": "Do",
+          "do": [
+            "Describe the overall shape of each line before any figures",
+            "Give the start point, the highest or lowest point and the end point",
+            "Group lines that move in the same way into one sentence",
+            "Use the past simple for past years and *is expected to* for forecasts",
+            "Always give the unit: *380,000 visitors* or *380 thousand*"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Describe every year one after another",
+            "Confuse *increased by* (the size of the change) with *increased to* (the new figure)",
+            "Write *raised* when you mean *rose*: *raise* needs an object",
+            "Write *the number of visitors was increased*: the passive is wrong here",
+            "Explain why a line went up or down"
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "your-turn",
+          "heading": "Your turn: a new task to try",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Now write your own answer before you look at the model. Set a timer for 20 minutes.",
+            "**The task:** *The graph below shows the percentage of commuters in one city who travelled to work by car, by bus and by bicycle between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "line",
+          "title": "Commuters travelling to work by car, bus and bicycle in one city, 2000 to 2020 (%)",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "categoryLabel": "Year",
+          "yLabel": "Commuters (%)",
+          "unit": "%",
+          "yMax": 60,
+          "categories": [
+            "2000",
+            "2005",
+            "2010",
+            "2015",
+            "2020"
+          ],
+          "series": [
+            {
+              "name": "Car",
+              "values": [
+                52,
+                55,
+                50,
+                44,
+                38
+              ]
+            },
+            {
+              "name": "Bus",
+              "values": [
+                30,
+                26,
+                24,
+                25,
+                27
+              ]
+            },
+            {
+              "name": "Bicycle",
+              "values": [
+                6,
+                7,
+                10,
+                15,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Check your answer",
+          "level": "h2",
+          "items": [
+            {
+              "q": "1. The key features you should have found",
+              "a": [
+                "Your overview should contain the most important of these."
+              ],
+              "bullets": [
+                "The car was the most popular way to travel in every year, but after peaking in 2005 it fell steadily.",
+                "Cycling grew in every period and more than tripled, from 6 to 21 per cent.",
+                "The bus dipped to a low in 2010 and then recovered a little.",
+                "By 2020 the gap between the bus and the bicycle was only 6 percentage points."
+              ]
+            },
+            {
+              "q": "2. Model answer (191 words)",
+              "a": [
+                "*The line graph shows the proportion of workers in one city who commuted by car, bus and bicycle at five-year intervals between 2000 and 2020.*",
+                "*Overall, the car remained the most common way of getting to work throughout the period, although its popularity declined after 2005. Cycling, by contrast, grew steadily and more than tripled.*",
+                "*In 2000, just over half of commuters, 52 per cent, travelled by car. This figure rose slightly to a peak of 55 per cent in 2005, but then fell continuously, reaching 38 per cent by 2020. The bus was the second most popular option, used by 30 per cent of commuters at the start of the period. Its share dipped to a low of 24 per cent in 2010 before recovering slightly to 27 per cent.*",
+                "*The bicycle was by far the least used form of transport in 2000, at only 6 per cent. However, the figure climbed in every five-year period, gradually at first and then more rapidly after 2010, to reach 21 per cent in 2020. As a result, the gap between cycling and the bus narrowed from 24 to just 6 percentage points.*"
+              ]
+            },
+            {
+              "q": "3. Mark your own answer",
+              "a": [
+                "Answer yes or no to each question. Every *no* is a place to improve."
+              ],
+              "bullets": [
+                "Did you paraphrase the question rather than copy it?",
+                "Is there a separate overview paragraph starting with *Overall*?",
+                "Does the overview give the main features without figures?",
+                "Did you select the important figures instead of listing them all?",
+                "Did you compare, using words such as *whereas*, *while* and *by contrast*?",
+                "Is every tense right for the dates shown?",
+                "Did you avoid giving reasons and opinions?",
+                "Did you write at least 150 words?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More Task 1 tutorials",
+          "eyebrow": "IELTS Writing",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Bar chart",
+              "url": "practical-english/ielts/graphs/bar-chart/",
+              "more": "Open tutorial",
+              "text": [
+                "Comparing categories, and how they change."
+              ]
+            },
+            {
+              "title": "Pie charts",
+              "url": "practical-english/ielts/graphs/pie-charts/",
+              "more": "Open tutorial",
+              "text": [
+                "Shares of a whole, and how they change."
+              ]
+            },
+            {
+              "title": "Table",
+              "url": "practical-english/ielts/graphs/table/",
+              "more": "Open tutorial",
+              "text": [
+                "Many figures: select, group and compare."
+              ]
+            },
+            {
+              "title": "Process diagram",
+              "url": "practical-english/ielts/graphs/process-diagram/",
+              "more": "Open tutorial",
+              "text": [
+                "Stages in order, in the passive voice."
+              ]
+            },
+            {
+              "title": "Maps",
+              "url": "practical-english/ielts/graphs/maps/",
+              "more": "Open tutorial",
+              "text": [
+                "What has changed in a place, and where."
+              ]
+            },
+            {
+              "title": "Task 1 overview and language",
+              "url": "practical-english/ielts/graphs/",
+              "more": "Open",
+              "text": [
+                "The overview, the four-paragraph structure, tenses and the grammar of change."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/graphs/bar-chart",
+      "title": "IELTS Task 1 Bar Chart Tutorial",
+      "metaTitle": "IELTS Writing Task 1 Bar Chart: Step-by-Step Tutorial with Model Answers | RCF English",
+      "description": "A complete IELTS Academic Writing Task 1 bar chart tutorial: a drawn chart, a step-by-step method, key language, a model answer, Band 5 and Band 7 sentences compared, and a second task to practise with its own model answer.",
+      "keywords": "IELTS bar chart, IELTS task 1 bar chart model answer, comparing data IELTS, bar chart vocabulary, IELTS academic writing task 1",
+      "kicker": "IELTS Task 1 tutorial 2 of 6",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Graphs and charts",
+          "url": "practical-english/ielts/graphs/"
+        }
+      ],
+      "backTo": {
+        "label": "Graphs and charts",
+        "url": "practical-english/ielts/graphs/"
+      },
+      "hero": {
+        "text": "Bar charts compare categories. The best answers find the story in the bars: which changed most, which overtook which, and which stayed at the bottom.",
+        "buttons": [
+          {
+            "label": "Start with the task",
+            "url": "practical-english/ielts/graphs/bar-chart/#task",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Try a new task",
+            "url": "practical-english/ielts/graphs/bar-chart/#your-turn",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the figures on this page",
+          "text": [
+            "**Every figure, place and diagram on this page is invented by RCF English for practice.** Nothing here describes a real country, town or dataset, and it must not be quoted as fact. The language you learn is exactly what real Task 1 questions need."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "task",
+          "heading": "The task",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "The chart below shows the percentage of households owning selected items in one country in 2005 and 2020.",
+            "**Summarise the information by selecting and reporting the main features, and make comparisons where relevant.**",
+            "*Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "bar",
+          "title": "Households owning selected items in one country, 2005 and 2020 (%)",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "categoryLabel": "Item",
+          "yLabel": "Households (%)",
+          "unit": "%",
+          "yMax": 100,
+          "categories": [
+            "Mobile phone",
+            "Television",
+            "Refrigerator",
+            "Computer",
+            "Car"
+          ],
+          "series": [
+            {
+              "name": "2005",
+              "values": [
+                25,
+                60,
+                30,
+                8,
+                5
+              ]
+            },
+            {
+              "name": "2020",
+              "values": [
+                95,
+                88,
+                72,
+                45,
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Step by step: how to answer this task",
+          "level": "h2",
+          "intro": "Spend the first five minutes on steps 1 to 3. Candidates who start writing straight away usually miss the overview.",
+          "items": [
+            {
+              "title": "Understand what the visual shows (1 minute)",
+              "bullets": [
+                "**What is measured?** The percentage of households that owned each item, so the highest possible value is 100.",
+                "**What is compared?** Five items, each in two years.",
+                "**What time?** 2005 and 2020, both past: use the past simple, and the past perfect for *by 2020... had overtaken*."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "Ask what a person would notice from across the room. These become your overview and your body paragraphs."
+              ],
+              "bullets": [
+                "**Direction:** every item was owned by more households in 2020.",
+                "**Change of order:** the mobile phone went from third place to first, overtaking the television.",
+                "**Two kinds of biggest change:** the mobile phone rose most in percentage points (70); the computer rose most in proportion (more than five times).",
+                "**The bottom:** the car was the least owned item in both years."
+              ]
+            },
+            {
+              "title": "Plan four paragraphs (2 minutes)",
+              "bullets": [
+                "**Introduction:** paraphrase the task.",
+                "**Overview:** all items up; the mobile phone moves to the top; the car stays at the bottom.",
+                "**Body 1:** the most common items (mobile phone and television) and how their order changed.",
+                "**Body 2:** the refrigerator, computer and car, grouped by how they grew."
+              ]
+            },
+            {
+              "title": "Write, then check (15 minutes)",
+              "bullets": [
+                "Write about 170 to 190 words. Under 150 is penalised.",
+                "Start the overview with *Overall* so the examiner can find it.",
+                "Support each point with one or two figures, not every figure.",
+                "Leave three minutes to check tense, articles, prepositions and units."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Writing the introduction: paraphrase the question",
+          "level": "h2",
+          "intro": "Change the words, not the meaning. Language copied from the question is not counted in your word total.",
+          "columns": [
+            "In the question",
+            "In your introduction"
+          ],
+          "rows": [
+            [
+              "The chart below shows",
+              "The bar chart compares"
+            ],
+            [
+              "the percentage of households",
+              "the proportion of homes"
+            ],
+            [
+              "owning selected items",
+              "that had each of five possessions"
+            ],
+            [
+              "in 2005 and 2020",
+              "in two years fifteen years apart, 2005 and 2020"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The language of comparison, with examples from this chart",
+          "level": "h2",
+          "columns": [
+            "Purpose",
+            "Language",
+            "Example from this chart"
+          ],
+          "rows": [
+            [
+              "Ranking",
+              "the most common, the second most common, followed by",
+              "In 2005 the television was the most common item, followed by the refrigerator."
+            ],
+            [
+              "Overtaking",
+              "overtook, surpassed, moved ahead of",
+              "By 2020 the mobile phone had overtaken the television."
+            ],
+            [
+              "Multiples",
+              "doubled, tripled, rose more than fivefold",
+              "Computer ownership rose more than fivefold, from 8 to 45 per cent."
+            ],
+            [
+              "Differences",
+              "X percentage points higher than",
+              "In 2020, mobile phone ownership was seven percentage points higher than television ownership."
+            ],
+            [
+              "Two figures at once",
+              "respectively",
+              "The refrigerator and the computer reached 72 and 45 per cent respectively."
+            ],
+            [
+              "Contrast",
+              "whereas, while, by contrast",
+              "Almost all homes had a mobile phone by 2020, whereas only 14 per cent owned a car."
+            ]
+          ]
+        },
+        {
+          "type": "model",
+          "id": "model-answer",
+          "heading": "Model answer",
+          "level": "h2",
+          "variant": "tint",
+          "intro": "Read it once for meaning, then again to see how each paragraph does its job.",
+          "items": [
+            {
+              "label": "Model answer: bar chart (170 words)",
+              "prompt": "The chart below shows the percentage of households owning selected items in one country in 2005 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+              "sample": [
+                "The bar chart compares the proportion of households owning five different items in 2005 and in 2020.",
+                "Overall, ownership of every item rose over the fifteen years. The most striking change was in mobile phones, which went from the third most common item to the most common of all, while cars remained by far the least widely owned in both years.",
+                "In 2005 the television was the item most households possessed, at 60 per cent, followed by the refrigerator at 30 per cent and the mobile phone at 25 per cent. By 2020 this order had changed completely: 95 per cent of households owned a mobile phone, overtaking the television, which had itself risen to 88 per cent.",
+                "The refrigerator and the computer both more than doubled, reaching 72 and 45 per cent respectively, with the computer showing the largest proportional increase of any item, from a very low base of 8 per cent. Car ownership grew least, from 5 to 14 per cent, and remained a minority in 2020."
+              ],
+              "notes": [
+                "**It finds the story, not just the numbers.** The mobile phone overtaking the television is what a reader notices first, so it belongs in the overview.",
+                "**It separates two kinds of *biggest*.** The mobile phone rose most in percentage points; the computer rose most in proportion. Noticing that is a Band 7 skill.",
+                "**It uses *respectively* correctly:** two items in one order, two figures in the same order.",
+                "**It groups.** Items are handled in sensible pairs, not one sentence each in the order they are drawn.",
+                "**It closes the comparison it opened.** Cars appear in the overview and again at the end."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From Band 5 to Band 7: sentences compared",
+          "level": "h2",
+          "intro": "Each weak sentence below shows a common type of mistake. The Band 7 version says the same thing accurately.",
+          "columns": [
+            "Band 5 sentence",
+            "The problem",
+            "Band 7 version"
+          ],
+          "rows": [
+            [
+              "Mobile phone 25% and 95%, television 60% and 88%, refrigerator 30% and 72%.",
+              "A copy of the chart in words. No comparison and no trend.",
+              "Mobile phone ownership soared from 25 to 95 per cent, overtaking the television."
+            ],
+            [
+              "The percentage of computers increased.",
+              "Computers do not have a percentage; households do.",
+              "The percentage of households with a computer increased."
+            ],
+            [
+              "Car increased 9 percent.",
+              "Missing *by*, and a change between two percentages is measured in percentage points.",
+              "Car ownership rose by nine percentage points."
+            ],
+            [
+              "In 2020 people are richer so they buy more things.",
+              "An opinion and a reason, neither shown on the chart.",
+              "Ownership of every item was higher in 2020 than in 2005."
+            ]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Common mistakes with bar chart tasks",
+          "level": "h2",
+          "doTitle": "Do",
+          "do": [
+            "Say which bar is highest and lowest, and whether that changed",
+            "Group items that changed in a similar way",
+            "Use *percentage points* for the difference between two percentages",
+            "Use comparatives and superlatives accurately: *more widely owned*, *the least common*",
+            "Mention an item that overtakes another: examiners look for it"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Describe the bars from left to right just because they are drawn that way",
+            "Write *the percentage of cars* when you mean *the percentage of households with a car*",
+            "Mix up *doubled* (twice as many) and *increased by 2 per cent*",
+            "Use *respectively* when the items and figures are not in the same order",
+            "Describe every bar with its own sentence"
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "your-turn",
+          "heading": "Your turn: a new task to try",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Now write your own answer before you look at the model. Set a timer for 20 minutes.",
+            "**The task:** *The chart below shows the number of international students, in thousands, enrolled in four subject areas at universities in one country in 2010, 2015 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "bar",
+          "title": "International students by subject in one country, 2010, 2015 and 2020 (thousands)",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "categoryLabel": "Subject",
+          "yLabel": "Students (thousands)",
+          "yMax": 50,
+          "categories": [
+            "Business",
+            "Engineering",
+            "Medicine",
+            "Information technology"
+          ],
+          "series": [
+            {
+              "name": "2010",
+              "values": [
+                35,
+                22,
+                12,
+                9
+              ]
+            },
+            {
+              "name": "2015",
+              "values": [
+                38,
+                30,
+                14,
+                18
+              ]
+            },
+            {
+              "name": "2020",
+              "values": [
+                36,
+                41,
+                19,
+                33
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Check your answer",
+          "level": "h2",
+          "items": [
+            {
+              "q": "1. The key features you should have found",
+              "a": [
+                "Your overview should contain the most important of these."
+              ],
+              "bullets": [
+                "Engineering, medicine and information technology all grew; business hardly changed.",
+                "Engineering overtook business to become the largest subject in 2020.",
+                "Information technology grew fastest: from 9,000 to 33,000, almost four times as many.",
+                "Information technology overtook medicine by 2015 and was close behind business by 2020."
+              ]
+            },
+            {
+              "q": "2. Model answer (170 words)",
+              "a": [
+                "*The bar chart shows the number of international students, in thousands, enrolled in four subject areas at universities in one country in 2010, 2015 and 2020.*",
+                "*Overall, enrolments grew considerably in engineering, medicine and information technology, whereas numbers in business changed little. Information technology showed the most dramatic growth, while engineering replaced business as the most popular subject by the end of the period.*",
+                "*In 2010, business was the leading subject, with 35,000 international students, compared with 22,000 in engineering. Business numbers rose slightly to 38,000 in 2015 before falling back to 36,000 in 2020. Engineering, meanwhile, grew steadily to 41,000, overtaking business to become the largest field.*",
+                "*Medicine and information technology attracted the fewest students in 2010, at 12,000 and 9,000 respectively. Medicine grew gradually, to 19,000 in 2020, but information technology expanded rapidly, doubling to 18,000 in 2015 and then reaching 33,000, almost four times its original figure. As a result, it moved well ahead of medicine and was close behind business by the end of the period.*"
+              ]
+            },
+            {
+              "q": "3. Mark your own answer",
+              "a": [
+                "Answer yes or no to each question. Every *no* is a place to improve."
+              ],
+              "bullets": [
+                "Did you paraphrase the question rather than copy it?",
+                "Is there a separate overview paragraph starting with *Overall*?",
+                "Does the overview give the main features without figures?",
+                "Did you select the important figures instead of listing them all?",
+                "Did you compare, using words such as *whereas*, *while* and *by contrast*?",
+                "Is every tense right for the dates shown?",
+                "Did you avoid giving reasons and opinions?",
+                "Did you write at least 150 words?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More Task 1 tutorials",
+          "eyebrow": "IELTS Writing",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Line graph",
+              "url": "practical-english/ielts/graphs/line-graph/",
+              "more": "Open tutorial",
+              "text": [
+                "Change over time: trends, peaks and sudden falls."
+              ]
+            },
+            {
+              "title": "Pie charts",
+              "url": "practical-english/ielts/graphs/pie-charts/",
+              "more": "Open tutorial",
+              "text": [
+                "Shares of a whole, and how they change."
+              ]
+            },
+            {
+              "title": "Table",
+              "url": "practical-english/ielts/graphs/table/",
+              "more": "Open tutorial",
+              "text": [
+                "Many figures: select, group and compare."
+              ]
+            },
+            {
+              "title": "Process diagram",
+              "url": "practical-english/ielts/graphs/process-diagram/",
+              "more": "Open tutorial",
+              "text": [
+                "Stages in order, in the passive voice."
+              ]
+            },
+            {
+              "title": "Maps",
+              "url": "practical-english/ielts/graphs/maps/",
+              "more": "Open tutorial",
+              "text": [
+                "What has changed in a place, and where."
+              ]
+            },
+            {
+              "title": "Task 1 overview and language",
+              "url": "practical-english/ielts/graphs/",
+              "more": "Open",
+              "text": [
+                "The overview, the four-paragraph structure, tenses and the grammar of change."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/graphs/pie-charts",
+      "title": "IELTS Task 1 Pie Chart Tutorial",
+      "metaTitle": "IELTS Writing Task 1 Pie Charts: Step-by-Step Tutorial with Model Answers | RCF English",
+      "description": "A complete IELTS Academic Writing Task 1 pie charts tutorial: a drawn chart, a step-by-step method, key language, a model answer, Band 5 and Band 7 sentences compared, and a second task to practise with its own model answer.",
+      "keywords": "IELTS pie chart, IELTS task 1 pie chart model answer, describing proportions IELTS, pie chart vocabulary, fractions and percentages IELTS",
+      "kicker": "IELTS Task 1 tutorial 3 of 6",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Graphs and charts",
+          "url": "practical-english/ielts/graphs/"
+        }
+      ],
+      "backTo": {
+        "label": "Graphs and charts",
+        "url": "practical-english/ielts/graphs/"
+      },
+      "hero": {
+        "text": "Pie charts show shares of a whole. The trap is writing as if the amounts changed, when only the proportions did. This tutorial shows you the language of shares and fractions.",
+        "buttons": [
+          {
+            "label": "Start with the task",
+            "url": "practical-english/ielts/graphs/pie-charts/#task",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Try a new task",
+            "url": "practical-english/ielts/graphs/pie-charts/#your-turn",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the figures on this page",
+          "text": [
+            "**Every figure, place and diagram on this page is invented by RCF English for practice.** Nothing here describes a real country, town or dataset, and it must not be quoted as fact. The language you learn is exactly what real Task 1 questions need."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "task",
+          "heading": "The task",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "The pie charts below show how an average household in one country divided its monthly spending in 2000 and in 2020.",
+            "**Summarise the information by selecting and reporting the main features, and make comparisons where relevant.**",
+            "*Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "pie",
+          "title": "Average household spending by category in one country, 2000 and 2020 (%)",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "unit": "%",
+          "pies": [
+            {
+              "title": "2000",
+              "slices": [
+                {
+                  "label": "Food",
+                  "value": 45
+                },
+                {
+                  "label": "Housing",
+                  "value": 20
+                },
+                {
+                  "label": "Other",
+                  "value": 17
+                },
+                {
+                  "label": "Transport",
+                  "value": 10
+                },
+                {
+                  "label": "Education",
+                  "value": 8
+                }
+              ]
+            },
+            {
+              "title": "2020",
+              "slices": [
+                {
+                  "label": "Food",
+                  "value": 30
+                },
+                {
+                  "label": "Housing",
+                  "value": 28
+                },
+                {
+                  "label": "Transport",
+                  "value": 15
+                },
+                {
+                  "label": "Education",
+                  "value": 12
+                },
+                {
+                  "label": "Other",
+                  "value": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Step by step: how to answer this task",
+          "level": "h2",
+          "intro": "Spend the first five minutes on steps 1 to 3. Candidates who start writing straight away usually miss the overview.",
+          "items": [
+            {
+              "title": "Understand what the visual shows (1 minute)",
+              "bullets": [
+                "**What is measured?** The share of spending, in per cent. Each pie adds up to 100.",
+                "**What is not shown?** How much money was spent. You cannot say spending on food went down, only that its share did.",
+                "**What time?** 2000 and 2020, both past: use the past simple."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "Ask what a person would notice from across the room. These become your overview and your body paragraphs."
+              ],
+              "bullets": [
+                "**Largest slice:** food, in both years, but its share fell by 15 percentage points.",
+                "**Closing gap:** housing rose from 20 to 28 per cent, almost level with food.",
+                "**Same pattern:** transport and education each grew by half.",
+                "**Little change:** other expenses fell slightly, from 17 to 15 per cent."
+              ]
+            },
+            {
+              "title": "Plan four paragraphs (2 minutes)",
+              "bullets": [
+                "**Introduction:** paraphrase the task.",
+                "**Overview:** food stays largest but shrinks; housing, transport and education all take a bigger share.",
+                "**Body 1:** food and housing, the two largest slices, and the closing gap.",
+                "**Body 2:** transport and education together; other expenses as the contrast."
+              ]
+            },
+            {
+              "title": "Write, then check (15 minutes)",
+              "bullets": [
+                "Write about 170 to 190 words. Under 150 is penalised.",
+                "Start the overview with *Overall* so the examiner can find it.",
+                "Support each point with one or two figures, not every figure.",
+                "Leave three minutes to check tense, articles, prepositions and units."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Writing the introduction: paraphrase the question",
+          "level": "h2",
+          "intro": "Change the words, not the meaning. Language copied from the question is not counted in your word total.",
+          "columns": [
+            "In the question",
+            "In your introduction"
+          ],
+          "rows": [
+            [
+              "The pie charts below show",
+              "The two pie charts compare"
+            ],
+            [
+              "how an average household divided its monthly spending",
+              "the proportion of a typical family's monthly budget spent on five categories"
+            ],
+            [
+              "in 2000 and in 2020",
+              "at the beginning and end of a twenty-year period"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Percentages as fractions: say it two ways",
+          "level": "h2",
+          "columns": [
+            "Percentage",
+            "Fraction or phrase",
+            "Example"
+          ],
+          "rows": [
+            [
+              "50%",
+              "half",
+              "*Half of the budget went on food.*"
+            ],
+            [
+              "45 to 48%",
+              "almost half, just under half",
+              "*In 2000, food accounted for almost half of all spending.*"
+            ],
+            [
+              "33%",
+              "a third, one in three",
+              "*A third of the budget went on housing.*"
+            ],
+            [
+              "28 to 30%",
+              "just under a third, nearly a third",
+              "*By 2020, housing made up nearly a third of spending.*"
+            ],
+            [
+              "25%",
+              "a quarter, one in four",
+              "*A quarter of households owned a car.*"
+            ],
+            [
+              "20%",
+              "a fifth, one in five",
+              "*Housing accounted for a fifth of spending in 2000.*"
+            ],
+            [
+              "10%",
+              "a tenth, one in ten",
+              "*Transport took up a tenth of the budget.*"
+            ],
+            [
+              "65 to 70%",
+              "roughly two thirds",
+              "*Food and housing together made up roughly two thirds of spending in 2000.*"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Share language that keeps you accurate",
+          "level": "h2",
+          "columns": [
+            "Say this",
+            "Not this",
+            "Why"
+          ],
+          "rows": [
+            [
+              "*Food accounted for 45 per cent of spending.*",
+              "*Food was 45 per cent.*",
+              "Food is not a percentage; its share of spending is."
+            ],
+            [
+              "*The share of spending on food fell.*",
+              "*Spending on food fell.*",
+              "The total is not shown. The household may have spent more money on food."
+            ],
+            [
+              "*fell by 15 percentage points*",
+              "*fell by 15 per cent*",
+              "45 to 30 is a fall of 15 points, but a fall of a third in the share."
+            ],
+            [
+              "*made up, constituted, represented, took up*",
+              "*was, had*",
+              "Precise verbs raise your vocabulary score."
+            ]
+          ]
+        },
+        {
+          "type": "model",
+          "id": "model-answer",
+          "heading": "Model answer",
+          "level": "h2",
+          "variant": "tint",
+          "intro": "Read it once for meaning, then again to see how each paragraph does its job.",
+          "items": [
+            {
+              "label": "Model answer: pie charts (165 words)",
+              "prompt": "The pie charts below show how an average household in one country divided its monthly spending in 2000 and in 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+              "sample": [
+                "The pie charts compare how an average household's monthly spending was divided among five categories in 2000 and in 2020.",
+                "Overall, food remained the largest single expense in both years, but its share fell considerably, while housing, transport and education all took up a greater proportion of the budget.",
+                "In 2000, food accounted for almost half of all spending, at 45 per cent, more than twice the share of housing, which stood at 20 per cent. By 2020, however, the proportion spent on food had dropped by 15 percentage points to 30 per cent, while housing had risen to 28 per cent, leaving the two categories almost level.",
+                "Transport and education followed a similar upward pattern, each growing by half: transport from 10 to 15 per cent and education from 8 to 12 per cent. By contrast, the share of other expenses changed little, falling slightly from 17 to 15 per cent, so that by 2020 it was equal to the share spent on transport."
+              ],
+              "notes": [
+                "**The overview answers the two key questions:** did the largest slice change (no, food stayed largest) and which way did the other shares move.",
+                "**Share language is used throughout:** *accounted for*, *the share of*, *the proportion spent on*. Nothing suggests that the amount of money changed.",
+                "**Percentage points are used correctly** for the fall in food, and *by half* is correct for transport (10 to 15) and education (8 to 12).",
+                "**The categories are grouped:** food and housing together, transport and education together, and *other* as the contrast.",
+                "**No reasons are given.** The chart does not say why housing took a bigger share."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From Band 5 to Band 7: sentences compared",
+          "level": "h2",
+          "intro": "Each weak sentence below shows a common type of mistake. The Band 7 version says the same thing accurately.",
+          "columns": [
+            "Band 5 sentence",
+            "The problem",
+            "Band 7 version"
+          ],
+          "rows": [
+            [
+              "In 2000 food 45%, housing 20%, other 17%, transport 10%, education 8%.",
+              "A list with no comparison and no verb.",
+              "In 2000, food accounted for almost half of all spending, more than twice the share of housing."
+            ],
+            [
+              "Food spending decreased from 45% to 30%.",
+              "Suggests the amount of money fell. Only the share is shown.",
+              "The share of spending that went on food fell from 45 to 30 per cent."
+            ],
+            [
+              "Food decreased 15%.",
+              "A change between two percentages is measured in percentage points.",
+              "The proportion spent on food fell by 15 percentage points."
+            ],
+            [
+              "Education is 8% and in 2020 is 12%.",
+              "Wrong tense, and the change is not described.",
+              "The share spent on education rose by half, from 8 to 12 per cent."
+            ]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Common mistakes with pie charts tasks",
+          "level": "h2",
+          "doTitle": "Do",
+          "do": [
+            "Check that each pie adds up to 100 before you start",
+            "Compare the same slice across both pies",
+            "Say whether the largest and smallest slices changed",
+            "Use fractions as well as percentages to vary your language",
+            "Match slices by the legend: they may be in a different order in each pie"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Write as if the total amount changed",
+            "Describe one pie completely, then the other, with no comparison",
+            "Write *15 per cent* when you mean *15 percentage points*",
+            "Describe every slice with a separate sentence",
+            "Guess at reasons for the changes"
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "your-turn",
+          "heading": "Your turn: a new task to try",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Now write your own answer before you look at the model. Set a timer for 20 minutes.",
+            "**The task:** *The pie charts below show the sources of electricity in one country in 2010 and the proportions predicted for 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.*",
+            "**Watch the tense.** 2010 is past, but 2025 is a forecast: use *is expected to*, *is predicted to*, *is projected to* and *will*."
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "pie",
+          "title": "Sources of electricity in one country, 2010 and 2025 (predicted) (%)",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "unit": "%",
+          "pies": [
+            {
+              "title": "2010",
+              "slices": [
+                {
+                  "label": "Coal",
+                  "value": 48
+                },
+                {
+                  "label": "Oil",
+                  "value": 22
+                },
+                {
+                  "label": "Hydroelectric",
+                  "value": 20
+                },
+                {
+                  "label": "Wind",
+                  "value": 6
+                },
+                {
+                  "label": "Solar",
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "title": "2025 (predicted)",
+              "slices": [
+                {
+                  "label": "Coal",
+                  "value": 30
+                },
+                {
+                  "label": "Hydroelectric",
+                  "value": 22
+                },
+                {
+                  "label": "Solar",
+                  "value": 20
+                },
+                {
+                  "label": "Wind",
+                  "value": 16
+                },
+                {
+                  "label": "Oil",
+                  "value": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Check your answer",
+          "level": "h2",
+          "items": [
+            {
+              "q": "1. The key features you should have found",
+              "a": [
+                "Your overview should contain the most important of these."
+              ],
+              "bullets": [
+                "Coal is the largest source in both years, but its share is predicted to fall from 48 to 30 per cent.",
+                "Solar is predicted to grow fivefold, from 4 to 20 per cent, and wind from 6 to 16 per cent.",
+                "Oil's share is expected to fall by almost half, from 22 to 12 per cent.",
+                "Hydroelectric power hardly changes. Solar and wind together (36 per cent) are predicted to overtake coal (30 per cent)."
+              ]
+            },
+            {
+              "q": "2. Model answer (195 words)",
+              "a": [
+                "*The pie charts compare the sources used to generate electricity in one country in 2010 with the proportions predicted for 2025.*",
+                "*Overall, fossil fuels are expected to lose much of their share of electricity production to renewable sources, particularly solar and wind power, although coal is forecast to remain the single largest source.*",
+                "*In 2010, coal and oil together produced 70 per cent of the country's electricity, with coal alone accounting for almost half, at 48 per cent. By 2025, however, coal's share is predicted to drop to 30 per cent, and oil's is expected to fall by almost half, from 22 to 12 per cent. Hydroelectric power, which generated a fifth of all electricity in 2010, is likely to remain almost unchanged, at 22 per cent.*",
+                "*The most dramatic changes are forecast for solar and wind energy, which together made up only 10 per cent of production in 2010. Solar power is projected to rise fivefold, from 4 to 20 per cent, while wind is expected to grow from 6 to 16 per cent. As a result, these two sources combined are predicted to supply a larger share of electricity than coal by 2025.*"
+              ]
+            },
+            {
+              "q": "3. Mark your own answer",
+              "a": [
+                "Answer yes or no to each question. Every *no* is a place to improve."
+              ],
+              "bullets": [
+                "Did you paraphrase the question rather than copy it?",
+                "Is there a separate overview paragraph starting with *Overall*?",
+                "Does the overview give the main features without figures?",
+                "Did you select the important figures instead of listing them all?",
+                "Did you compare, using words such as *whereas*, *while* and *by contrast*?",
+                "Is every tense right for the dates shown?",
+                "Did you avoid giving reasons and opinions?",
+                "Did you write at least 150 words?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More Task 1 tutorials",
+          "eyebrow": "IELTS Writing",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Line graph",
+              "url": "practical-english/ielts/graphs/line-graph/",
+              "more": "Open tutorial",
+              "text": [
+                "Change over time: trends, peaks and sudden falls."
+              ]
+            },
+            {
+              "title": "Bar chart",
+              "url": "practical-english/ielts/graphs/bar-chart/",
+              "more": "Open tutorial",
+              "text": [
+                "Comparing categories, and how they change."
+              ]
+            },
+            {
+              "title": "Table",
+              "url": "practical-english/ielts/graphs/table/",
+              "more": "Open tutorial",
+              "text": [
+                "Many figures: select, group and compare."
+              ]
+            },
+            {
+              "title": "Process diagram",
+              "url": "practical-english/ielts/graphs/process-diagram/",
+              "more": "Open tutorial",
+              "text": [
+                "Stages in order, in the passive voice."
+              ]
+            },
+            {
+              "title": "Maps",
+              "url": "practical-english/ielts/graphs/maps/",
+              "more": "Open tutorial",
+              "text": [
+                "What has changed in a place, and where."
+              ]
+            },
+            {
+              "title": "Task 1 overview and language",
+              "url": "practical-english/ielts/graphs/",
+              "more": "Open",
+              "text": [
+                "The overview, the four-paragraph structure, tenses and the grammar of change."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/graphs/table",
+      "title": "IELTS Task 1 Table Tutorial",
+      "metaTitle": "IELTS Writing Task 1 Table: Step-by-Step Tutorial with Model Answers | RCF English",
+      "description": "A complete IELTS Academic Writing Task 1 table tutorial: a drawn chart, a step-by-step method, key language, a model answer, Band 5 and Band 7 sentences compared, and a second task to practise with its own model answer.",
+      "keywords": "IELTS table task 1, IELTS task 1 table model answer, describing a table IELTS, selecting key features, IELTS academic writing task 1",
+      "kicker": "IELTS Task 1 tutorial 4 of 6",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Graphs and charts",
+          "url": "practical-english/ielts/graphs/"
+        }
+      ],
+      "backTo": {
+        "label": "Graphs and charts",
+        "url": "practical-english/ielts/graphs/"
+      },
+      "hero": {
+        "text": "A table gives you more numbers than you can use, on purpose. The mark goes to the candidate who selects: who finds the patterns across the rows and down the columns, and leaves the rest out.",
+        "buttons": [
+          {
+            "label": "Start with the task",
+            "url": "practical-english/ielts/graphs/table/#task",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Try a new task",
+            "url": "practical-english/ielts/graphs/table/#your-turn",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the figures on this page",
+          "text": [
+            "**Every figure, place and diagram on this page is invented by RCF English for practice.** Nothing here describes a real country, town or dataset, and it must not be quoted as fact. The language you learn is exactly what real Task 1 questions need."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "task",
+          "heading": "The task",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "The table below shows the average number of hours a week that people in three age groups in one country spent on four leisure activities.",
+            "**Summarise the information by selecting and reporting the main features, and make comparisons where relevant.**",
+            "*Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Average hours a week spent on leisure activities, by age group",
+          "level": "h3",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "columns": [
+            "Activity",
+            "Aged 16-24",
+            "Aged 25-44",
+            "Aged 45-64"
+          ],
+          "rows": [
+            [
+              "Using social media",
+              "18",
+              "9",
+              "3"
+            ],
+            [
+              "Watching television",
+              "8",
+              "10",
+              "16"
+            ],
+            [
+              "Exercise",
+              "5",
+              "3",
+              "4"
+            ],
+            [
+              "Reading",
+              "3",
+              "4",
+              "7"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Step by step: how to answer this task",
+          "level": "h2",
+          "intro": "Spend the first five minutes on steps 1 to 3. Candidates who start writing straight away usually miss the overview.",
+          "items": [
+            {
+              "title": "Understand what the visual shows (1 minute)",
+              "bullets": [
+                "**What is measured?** Average hours per week.",
+                "**What is compared?** Four activities across three age groups: twelve figures.",
+                "**What time?** No year is given. Choose the past or the present simple and keep to it. The model uses the past."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "Ask what a person would notice from across the room. These become your overview and your body paragraphs."
+              ],
+              "bullets": [
+                "**Across the rows:** social media falls sharply with age; television and reading rise with age; exercise has no clear pattern.",
+                "**Down the columns:** the top activity is social media for 16 to 24, and television for both older groups.",
+                "**Extremes:** 18 hours of social media for the youngest group is the highest figure in the table.",
+                "**A quick method:** circle the highest figure in each column and the biggest difference in each row."
+              ]
+            },
+            {
+              "title": "Plan four paragraphs (2 minutes)",
+              "bullets": [
+                "**Introduction:** paraphrase the task.",
+                "**Overview:** social media dominates for the young, television for the older groups; exercise and reading take relatively little time.",
+                "**Body 1:** the two opposite patterns, social media and television.",
+                "**Body 2:** reading (rises with age) and exercise (no clear pattern)."
+              ]
+            },
+            {
+              "title": "Write, then check (15 minutes)",
+              "bullets": [
+                "Write about 170 to 190 words. Under 150 is penalised.",
+                "Start the overview with *Overall* so the examiner can find it.",
+                "Support each point with one or two figures, not every figure.",
+                "Leave three minutes to check tense, articles, prepositions and units."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Writing the introduction: paraphrase the question",
+          "level": "h2",
+          "intro": "Change the words, not the meaning. Language copied from the question is not counted in your word total.",
+          "columns": [
+            "In the question",
+            "In your introduction"
+          ],
+          "rows": [
+            [
+              "The table below shows",
+              "The table gives information about"
+            ],
+            [
+              "the average number of hours a week",
+              "how much time, on average, per week"
+            ],
+            [
+              "people in three age groups",
+              "people in three age bands between 16 and 64"
+            ],
+            [
+              "spent on four leisure activities",
+              "devoted to four free-time pursuits"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The language for comparing figures in a table",
+          "level": "h2",
+          "columns": [
+            "Purpose",
+            "Language",
+            "Example from this table"
+          ],
+          "rows": [
+            [
+              "Multiples",
+              "twice as long as, six times as much time as",
+              "The youngest group spent twice as long on social media as those aged 25 to 44."
+            ],
+            [
+              "Patterns with age",
+              "rose with age, declined with age, the older the group, the...",
+              "The older the age group, the more time was spent watching television."
+            ],
+            [
+              "Opposite patterns",
+              "the reverse was true, by contrast, conversely",
+              "For television, the reverse was true: viewing time rose with age."
+            ],
+            [
+              "Highest and lowest",
+              "the highest figure in the table, the least time",
+              "Social media among 16- to 24-year-olds was the highest figure in the table, at 18 hours."
+            ],
+            [
+              "Referring to a group",
+              "the figure for, among, those aged",
+              "Among those aged 45 to 64, television took up 16 hours a week."
+            ],
+            [
+              "Small differences",
+              "varied only slightly, between 3 and 5 hours",
+              "Time spent exercising varied only slightly, between 3 and 5 hours."
+            ]
+          ]
+        },
+        {
+          "type": "model",
+          "id": "model-answer",
+          "heading": "Model answer",
+          "level": "h2",
+          "variant": "tint",
+          "intro": "Read it once for meaning, then again to see how each paragraph does its job.",
+          "items": [
+            {
+              "label": "Model answer: table (169 words)",
+              "prompt": "The table below shows the average number of hours a week that people in three age groups in one country spent on four leisure activities. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+              "sample": [
+                "The table shows the average number of hours per week that people in three age groups in one country spent on four leisure activities.",
+                "Overall, social media dominated the leisure time of 16- to 24-year-olds, whereas television was the main activity for both older groups. Exercise and reading occupied comparatively little time at every age.",
+                "People aged 16 to 24 spent 18 hours a week on social media, twice as long as those aged 25 to 44 and six times as long as the oldest group, who spent only 3 hours. The pattern for television was the reverse: viewing time rose steadily with age, from 8 hours among the youngest to 16 hours among those aged 45 to 64, the highest figure for that group.",
+                "Reading also increased with age, although less dramatically, from 3 to 7 hours. Exercise, by contrast, showed no clear pattern, varying only between 3 and 5 hours a week, with the youngest group the most active and those aged 25 to 44 the least."
+              ],
+              "notes": [
+                "**It finds two opposite patterns** (social media down with age, television up with age) and builds the answer around them.",
+                "**It selects.** Twelve figures are available; the answer uses those that show the patterns.",
+                "**Comparisons replace lists:** *twice as long*, *six times as long*, *the reverse*, *less dramatically*, *by contrast*.",
+                "**It is honest about the data.** Where there is no clear pattern (exercise), it says so rather than inventing one.",
+                "**The tense is consistent.** No year is given, and the past simple is used throughout."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From Band 5 to Band 7: sentences compared",
+          "level": "h2",
+          "intro": "Each weak sentence below shows a common type of mistake. The Band 7 version says the same thing accurately.",
+          "columns": [
+            "Band 5 sentence",
+            "The problem",
+            "Band 7 version"
+          ],
+          "rows": [
+            [
+              "16-24 social media 18, TV 8, exercise 5, reading 3. 25-44 social media 9, TV 10...",
+              "The table copied into sentences. The examiner can already read the table.",
+              "Social media dominated the free time of the youngest group, at 18 hours a week."
+            ],
+            [
+              "Old people watch more TV.",
+              "Informal (*old people*, *TV*) and no figures to support it.",
+              "Viewing time rose steadily with age, from 8 to 16 hours a week."
+            ],
+            [
+              "Exercise is the least popular activity.",
+              "Not true for every group, so it is inaccurate.",
+              "Each group spent least time on something different: reading for the youngest, exercise for those aged 25 to 44, and social media for the oldest."
+            ],
+            [
+              "Social media is 18 hours and it is 9 hours and it is 3 hours.",
+              "Repetitive, with no comparison.",
+              "The youngest group spent twice as long on social media as those aged 25 to 44, and six times as long as the oldest."
+            ]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Common mistakes with table tasks",
+          "level": "h2",
+          "doTitle": "Do",
+          "do": [
+            "Read across every row and down every column before you write",
+            "Look for patterns you could sketch as a line: rising, falling, peaking",
+            "Use multiples: *twice as*, *three times as*",
+            "Refer to groups precisely: *those aged 25 to 44*",
+            "Choose one tense when no year is given, and keep to it"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Use every figure in the table",
+            "Describe the table row by row in order",
+            "Call a group *old people* or *youngsters*",
+            "Invent a pattern where the figures are mixed",
+            "Forget the unit: *18 hours a week*, not *18*"
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "your-turn",
+          "heading": "Your turn: a new task to try",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Now write your own answer before you look at the model. Set a timer for 20 minutes.",
+            "**The task:** *The table below shows the number of visitors, in thousands, to three museums in one city in each season of one year. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Visitors to three museums in one city, by season (thousands)",
+          "level": "h3",
+          "caption": "Practice data invented by RCF English. Not real statistics.",
+          "columns": [
+            "Museum",
+            "Spring",
+            "Summer",
+            "Autumn",
+            "Winter"
+          ],
+          "rows": [
+            [
+              "Science museum",
+              "45",
+              "80",
+              "40",
+              "35"
+            ],
+            [
+              "History museum",
+              "30",
+              "32",
+              "28",
+              "26"
+            ],
+            [
+              "Art gallery",
+              "20",
+              "25",
+              "24",
+              "30"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Check your answer",
+          "level": "h2",
+          "items": [
+            {
+              "q": "1. The key features you should have found",
+              "a": [
+                "Your overview should contain the most important of these."
+              ],
+              "bullets": [
+                "The science museum had the most visitors in every season, with a strong peak in summer.",
+                "The history museum was very stable across the year.",
+                "The art gallery was the only one busiest in winter, when it overtook the history museum.",
+                "Totals for the year: science 200,000; history 116,000; art 99,000."
+              ]
+            },
+            {
+              "q": "2. Model answer (183 words)",
+              "a": [
+                "*The table shows how many people, in thousands, visited three museums in one city during each season of a single year.*",
+                "*Overall, the science museum was by far the most popular of the three, with a pronounced peak in summer. Visitor numbers at the history museum remained relatively stable throughout the year, whereas the art gallery was the only museum to attract its largest number of visitors in winter.*",
+                "*The science museum received 45,000 visitors in spring, and this figure rose sharply to 80,000 in summer, the highest figure in the table. Numbers then fell back to 40,000 in autumn and 35,000 in winter. Over the year as a whole, it attracted 200,000 visitors, compared with 116,000 at the history museum and 99,000 at the art gallery.*",
+                "*Attendance at the history museum varied only slightly, from a high of 32,000 in summer to a low of 26,000 in winter. The art gallery, by contrast, was least busy in spring, with 20,000 visitors, but its numbers rose to 30,000 in winter, when it overtook the history museum for the only time in the year.*"
+              ]
+            },
+            {
+              "q": "3. Mark your own answer",
+              "a": [
+                "Answer yes or no to each question. Every *no* is a place to improve."
+              ],
+              "bullets": [
+                "Did you paraphrase the question rather than copy it?",
+                "Is there a separate overview paragraph starting with *Overall*?",
+                "Does the overview give the main features without figures?",
+                "Did you select the important figures instead of listing them all?",
+                "Did you compare, using words such as *whereas*, *while* and *by contrast*?",
+                "Is every tense right for the dates shown?",
+                "Did you avoid giving reasons and opinions?",
+                "Did you write at least 150 words?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More Task 1 tutorials",
+          "eyebrow": "IELTS Writing",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Line graph",
+              "url": "practical-english/ielts/graphs/line-graph/",
+              "more": "Open tutorial",
+              "text": [
+                "Change over time: trends, peaks and sudden falls."
+              ]
+            },
+            {
+              "title": "Bar chart",
+              "url": "practical-english/ielts/graphs/bar-chart/",
+              "more": "Open tutorial",
+              "text": [
+                "Comparing categories, and how they change."
+              ]
+            },
+            {
+              "title": "Pie charts",
+              "url": "practical-english/ielts/graphs/pie-charts/",
+              "more": "Open tutorial",
+              "text": [
+                "Shares of a whole, and how they change."
+              ]
+            },
+            {
+              "title": "Process diagram",
+              "url": "practical-english/ielts/graphs/process-diagram/",
+              "more": "Open tutorial",
+              "text": [
+                "Stages in order, in the passive voice."
+              ]
+            },
+            {
+              "title": "Maps",
+              "url": "practical-english/ielts/graphs/maps/",
+              "more": "Open tutorial",
+              "text": [
+                "What has changed in a place, and where."
+              ]
+            },
+            {
+              "title": "Task 1 overview and language",
+              "url": "practical-english/ielts/graphs/",
+              "more": "Open",
+              "text": [
+                "The overview, the four-paragraph structure, tenses and the grammar of change."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/graphs/process-diagram",
+      "title": "IELTS Task 1 Process Diagram Tutorial",
+      "metaTitle": "IELTS Writing Task 1 Process Diagram: Step-by-Step Tutorial with Model Answers | RCF English",
+      "description": "A complete IELTS Academic Writing Task 1 process diagram tutorial: a drawn chart, a step-by-step method, key language, a model answer, Band 5 and Band 7 sentences compared, and a second task to practise with its own model answer.",
+      "keywords": "IELTS process diagram, IELTS task 1 process model answer, passive voice IELTS, sequencing words, IELTS academic writing task 1 process",
+      "kicker": "IELTS Task 1 tutorial 5 of 6",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Graphs and charts",
+          "url": "practical-english/ielts/graphs/"
+        }
+      ],
+      "backTo": {
+        "label": "Graphs and charts",
+        "url": "practical-english/ielts/graphs/"
+      },
+      "hero": {
+        "text": "A process diagram has no numbers and no trends. It tests two things: the passive voice, and linking the stages in a clear order. Both can be learned in an afternoon.",
+        "buttons": [
+          {
+            "label": "Start with the task",
+            "url": "practical-english/ielts/graphs/process-diagram/#task",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Try a new task",
+            "url": "practical-english/ielts/graphs/process-diagram/#your-turn",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the figures on this page",
+          "text": [
+            "**Every figure, place and diagram on this page is invented by RCF English for practice.** Nothing here describes a real country, town or dataset, and it must not be quoted as fact. The language you learn is exactly what real Task 1 questions need."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "task",
+          "heading": "The task",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "The diagram below shows the stages in the production of black tea.",
+            "**Summarise the information by selecting and reporting the main features.**",
+            "*Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "process",
+          "title": "The production of black tea",
+          "caption": "A simplified diagram prepared by RCF English for practice.",
+          "perRow": 4,
+          "steps": [
+            {
+              "title": "Plucking",
+              "note": "Young leaves and buds are picked, usually by hand"
+            },
+            {
+              "title": "Withering",
+              "note": "Leaves are spread out to lose moisture and soften"
+            },
+            {
+              "title": "Rolling",
+              "note": "Leaves are rolled to break their surface"
+            },
+            {
+              "title": "Oxidation",
+              "note": "Leaves are exposed to air and turn copper-brown"
+            },
+            {
+              "title": "Drying",
+              "note": "Hot air dries the leaves and stops oxidation"
+            },
+            {
+              "title": "Grading",
+              "note": "The tea is sorted by the size of the pieces"
+            },
+            {
+              "title": "Packing",
+              "note": "Each grade is packed for sale"
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Step by step: how to answer this task",
+          "level": "h2",
+          "intro": "Spend the first five minutes on steps 1 to 3. Candidates who start writing straight away usually miss the overview.",
+          "items": [
+            {
+              "title": "Understand what the visual shows (1 minute)",
+              "bullets": [
+                "**What kind of process?** A manufacturing process with a start and an end. It is not a cycle.",
+                "**How many stages?** Seven. Count them and follow the arrows.",
+                "**What tense?** The present simple passive, because this is how tea is always made."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "Ask what a person would notice from across the room. These become your overview and your body paragraphs."
+              ],
+              "bullets": [
+                "**Start and end:** plucking the leaves; packing the finished tea.",
+                "**Number of stages:** seven.",
+                "**Natural groups:** preparing the leaves (stages 1 to 3), then changing, finishing and packing them (stages 4 to 7).",
+                "**Detail worth keeping:** the colour change in oxidation, and the fact that drying stops oxidation."
+              ]
+            },
+            {
+              "title": "Plan four paragraphs (2 minutes)",
+              "bullets": [
+                "**Introduction:** paraphrase the task.",
+                "**Overview:** seven stages, from plucking to packing. No figures, no trends.",
+                "**Body 1:** stages 1 to 3.",
+                "**Body 2:** stages 4 to 7."
+              ]
+            },
+            {
+              "title": "Write, then check (15 minutes)",
+              "bullets": [
+                "Write about 170 to 190 words. Under 150 is penalised.",
+                "Start the overview with *Overall* so the examiner can find it.",
+                "Support each point with one or two figures, not every figure.",
+                "Leave three minutes to check tense, articles, prepositions and units."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Writing the introduction: paraphrase the question",
+          "level": "h2",
+          "intro": "Change the words, not the meaning. Language copied from the question is not counted in your word total.",
+          "columns": [
+            "In the question",
+            "In your introduction"
+          ],
+          "rows": [
+            [
+              "The diagram below shows",
+              "The diagram illustrates"
+            ],
+            [
+              "the stages in",
+              "the process involved in"
+            ],
+            [
+              "the production of black tea",
+              "how black tea is made"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Sequencing and the passive, with examples from this diagram",
+          "level": "h2",
+          "columns": [
+            "Purpose",
+            "Language",
+            "Example from this diagram"
+          ],
+          "rows": [
+            [
+              "Beginning",
+              "The process begins with, First,",
+              "The process begins with the plucking of young leaves and buds."
+            ],
+            [
+              "Next stage",
+              "Next, Then, After that, At the following stage, Subsequently,",
+              "Next, the leaves are spread out to wither."
+            ],
+            [
+              "After a stage is complete",
+              "Once this has been done, After being + past participle",
+              "After being withered, the leaves are rolled."
+            ],
+            [
+              "During a stage",
+              "during which time, while, at this point",
+              "The leaves are exposed to the air, during which time they turn copper-brown."
+            ],
+            [
+              "Purpose",
+              "in order to, so that",
+              "Hot air is blown over the leaves in order to stop oxidation."
+            ],
+            [
+              "End",
+              "Finally, The process ends with, In the final stage,",
+              "Finally, each grade is packed for sale."
+            ],
+            [
+              "Noun to passive verb",
+              "plucking > are plucked; grading > is graded; packing > is packed",
+              "The tea is graded according to the size of the pieces."
+            ]
+          ]
+        },
+        {
+          "type": "model",
+          "id": "model-answer",
+          "heading": "Model answer",
+          "level": "h2",
+          "variant": "tint",
+          "intro": "Read it once for meaning, then again to see how each paragraph does its job.",
+          "items": [
+            {
+              "label": "Model answer: process diagram (163 words)",
+              "prompt": "The diagram below shows the stages in the production of black tea. Summarise the information by selecting and reporting the main features.",
+              "sample": [
+                "The diagram illustrates the stages involved in the production of black tea, from picking the leaves to packing the finished product.",
+                "Overall, there are seven stages in the process, which begins with leaves being plucked from the tea plants and ends with the finished tea being packed for sale. Along the way, the leaves are softened, broken, darkened and dried.",
+                "First, young leaves and buds are plucked from the tea plants, usually by hand. They are then spread out and withered, so that they lose some of their moisture and become soft. Once this has been done, the leaves are rolled, which breaks their surface.",
+                "At the following stage, the rolled leaves are exposed to the air to oxidise, during which time they turn a copper-brown colour. After that, they are dried with hot air, which stops the oxidation. Finally, the dried tea is graded according to the size of the pieces, and each grade is packed so that it can be sold."
+              ],
+              "notes": [
+                "**The overview gives the number of stages and the start and end points,** which is what a process overview needs.",
+                "**The passive is used consistently:** *are plucked*, *are withered*, *are rolled*, *is graded*, *is packed*.",
+                "**Sequencing words vary:** *First*, *then*, *Once this has been done*, *At the following stage*, *After that*, *Finally*.",
+                "**The notes are paraphrased and joined** with *so that*, *which* and *during which time*, showing a range of complex sentences.",
+                "**Nothing is added** from outside knowledge. Every fact is in the diagram."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From Band 5 to Band 7: sentences compared",
+          "level": "h2",
+          "intro": "Each weak sentence below shows a common type of mistake. The Band 7 version says the same thing accurately.",
+          "columns": [
+            "Band 5 sentence",
+            "The problem",
+            "Band 7 version"
+          ],
+          "rows": [
+            [
+              "First plucking. Second withering. Third rolling.",
+              "Notes, not sentences. Notes score very low.",
+              "First, young leaves are plucked, and they are then withered."
+            ],
+            [
+              "Workers pick the leaves and they dry them.",
+              "Active voice with an agent that is not in the diagram.",
+              "The leaves are picked and later dried."
+            ],
+            [
+              "The tea is oxidationed.",
+              "A noun has been turned into a verb that does not exist.",
+              "The leaves are left to oxidise."
+            ],
+            [
+              "Overall, tea is a popular drink all over the world.",
+              "Not an overview of the diagram. Outside knowledge earns nothing.",
+              "Overall, the process consists of seven stages, from plucking to packing."
+            ]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Common mistakes with process diagram tasks",
+          "level": "h2",
+          "doTitle": "Do",
+          "do": [
+            "Count the stages and say how many there are in the overview",
+            "Use the present simple passive throughout",
+            "Vary your sequencing words",
+            "Join short stages into longer sentences with *which*, *so that* and *once*",
+            "Say whether the process is a line or a cycle"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Use *Firstly, Secondly, Thirdly* for every stage",
+            "Invent people, machines or times that the diagram does not show",
+            "Copy the labels word for word as notes",
+            "Leave out a stage: every stage is a main feature",
+            "Write a conclusion that repeats the stages"
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "your-turn",
+          "heading": "Your turn: a new task to try",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Now write your own answer before you look at the model. Set a timer for 20 minutes.",
+            "**The task:** *The diagram below shows how used glass bottles are recycled. Summarise the information by selecting and reporting the main features. Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "process",
+          "title": "How glass bottles are recycled",
+          "caption": "A simplified diagram prepared by RCF English for practice. The last stage leads back to the first.",
+          "perRow": 4,
+          "steps": [
+            {
+              "title": "Collection",
+              "note": "Used bottles are collected from recycling bins"
+            },
+            {
+              "title": "Sorting",
+              "note": "Glass is separated by colour"
+            },
+            {
+              "title": "Cleaning",
+              "note": "Labels and dirt are removed"
+            },
+            {
+              "title": "Crushing",
+              "note": "Clean glass is broken into small pieces"
+            },
+            {
+              "title": "Melting",
+              "note": "Pieces are heated in a furnace with raw materials"
+            },
+            {
+              "title": "Moulding",
+              "note": "Liquid glass is shaped into new bottles"
+            },
+            {
+              "title": "Filling",
+              "note": "New bottles are filled, sold, used and recycled again"
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Check your answer",
+          "level": "h2",
+          "items": [
+            {
+              "q": "1. The key features you should have found",
+              "a": [
+                "Your overview should contain the most important of these."
+              ],
+              "bullets": [
+                "Seven stages, and the process is a cycle: new bottles are eventually recycled again.",
+                "Stages 1 to 4 prepare the used glass: collection, sorting, cleaning, crushing.",
+                "Stages 5 to 7 turn it into new bottles: melting, moulding, filling.",
+                "Use the present simple passive throughout."
+              ]
+            },
+            {
+              "q": "2. Model answer (151 words)",
+              "a": [
+                "*The diagram shows the process by which used glass bottles are recycled to make brand new ones.*",
+                "*Overall, the process is a cycle of seven stages, beginning with the collection of used bottles and ending with new bottles being filled and sold, after which they can eventually be recycled once again.*",
+                "*First, used bottles are collected from recycling bins and taken for sorting, where the glass is separated according to its colour. The bottles are then cleaned so that any labels and dirt are removed, and after this the clean glass is crushed into small pieces.*",
+                "*At the next stage, the crushed glass is heated in a furnace together with raw materials until it melts. The liquid glass is then shaped into new bottles, which are finally filled and sold to consumers. Once these bottles have been used, they can be placed in recycling bins, and the whole cycle begins again.*"
+              ]
+            },
+            {
+              "q": "3. Mark your own answer",
+              "a": [
+                "Answer yes or no to each question. Every *no* is a place to improve."
+              ],
+              "bullets": [
+                "Did you paraphrase the question rather than copy it?",
+                "Is there a separate overview paragraph starting with *Overall*?",
+                "Does the overview give the main features without figures?",
+                "Did you select the important figures instead of listing them all?",
+                "Did you compare, using words such as *whereas*, *while* and *by contrast*?",
+                "Is every tense right for the dates shown?",
+                "Did you avoid giving reasons and opinions?",
+                "Did you write at least 150 words?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More Task 1 tutorials",
+          "eyebrow": "IELTS Writing",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Line graph",
+              "url": "practical-english/ielts/graphs/line-graph/",
+              "more": "Open tutorial",
+              "text": [
+                "Change over time: trends, peaks and sudden falls."
+              ]
+            },
+            {
+              "title": "Bar chart",
+              "url": "practical-english/ielts/graphs/bar-chart/",
+              "more": "Open tutorial",
+              "text": [
+                "Comparing categories, and how they change."
+              ]
+            },
+            {
+              "title": "Pie charts",
+              "url": "practical-english/ielts/graphs/pie-charts/",
+              "more": "Open tutorial",
+              "text": [
+                "Shares of a whole, and how they change."
+              ]
+            },
+            {
+              "title": "Table",
+              "url": "practical-english/ielts/graphs/table/",
+              "more": "Open tutorial",
+              "text": [
+                "Many figures: select, group and compare."
+              ]
+            },
+            {
+              "title": "Maps",
+              "url": "practical-english/ielts/graphs/maps/",
+              "more": "Open tutorial",
+              "text": [
+                "What has changed in a place, and where."
+              ]
+            },
+            {
+              "title": "Task 1 overview and language",
+              "url": "practical-english/ielts/graphs/",
+              "more": "Open",
+              "text": [
+                "The overview, the four-paragraph structure, tenses and the grammar of change."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/graphs/maps",
+      "title": "IELTS Task 1 Maps Tutorial",
+      "metaTitle": "IELTS Writing Task 1 Maps: Step-by-Step Tutorial with Model Answers | RCF English",
+      "description": "A complete IELTS Academic Writing Task 1 maps tutorial: a drawn chart, a step-by-step method, key language, a model answer, Band 5 and Band 7 sentences compared, and a second task to practise with its own model answer.",
+      "keywords": "IELTS map task 1, IELTS task 1 maps model answer, describing changes to a place IELTS, map vocabulary, IELTS academic writing task 1 maps",
+      "kicker": "IELTS Task 1 tutorial 6 of 6",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Graphs and charts",
+          "url": "practical-english/ielts/graphs/"
+        }
+      ],
+      "backTo": {
+        "label": "Graphs and charts",
+        "url": "practical-english/ielts/graphs/"
+      },
+      "hero": {
+        "text": "Map tasks ask what has changed in a place and where. You need the language of location, the passive for changes, and the right tense for the dates on the maps.",
+        "buttons": [
+          {
+            "label": "Start with the task",
+            "url": "practical-english/ielts/graphs/maps/#task",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Try a new task",
+            "url": "practical-english/ielts/graphs/maps/#your-turn",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "About the figures on this page",
+          "text": [
+            "**Every figure, place and diagram on this page is invented by RCF English for practice.** Nothing here describes a real country, town or dataset, and it must not be quoted as fact. The language you learn is exactly what real Task 1 questions need."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "task",
+          "heading": "The task",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "The maps below show the centre of a small town in 1990 and today.",
+            "**Summarise the information by selecting and reporting the main features, and make comparisons where relevant.**",
+            "*Write at least 150 words.*"
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "map",
+          "title": "The centre of a small town in 1990 and today",
+          "caption": "An invented town, drawn by RCF English for practice. The brown strip across the river in today's map is a new footbridge.",
+          "panels": [
+            {
+              "title": "1990",
+              "items": [
+                {
+                  "shape": "water",
+                  "label": "River",
+                  "x": 86,
+                  "y": 0,
+                  "w": 14,
+                  "h": 70
+                },
+                {
+                  "shape": "road",
+                  "label": "Main road",
+                  "x": 0,
+                  "y": 31,
+                  "w": 86,
+                  "h": 7
+                },
+                {
+                  "shape": "building",
+                  "label": "Primary school",
+                  "x": 5,
+                  "y": 7,
+                  "w": 20,
+                  "h": 16
+                },
+                {
+                  "shape": "building",
+                  "label": "Factory",
+                  "x": 56,
+                  "y": 6,
+                  "w": 24,
+                  "h": 18
+                },
+                {
+                  "shape": "road",
+                  "label": "Car park",
+                  "x": 5,
+                  "y": 45,
+                  "w": 26,
+                  "h": 19
+                },
+                {
+                  "shape": "building",
+                  "label": "Small shops",
+                  "x": 40,
+                  "y": 46,
+                  "w": 38,
+                  "h": 12
+                }
+              ]
+            },
+            {
+              "title": "Today",
+              "items": [
+                {
+                  "shape": "water",
+                  "label": "River",
+                  "x": 86,
+                  "y": 0,
+                  "w": 14,
+                  "h": 70
+                },
+                {
+                  "shape": "road",
+                  "label": "Main road",
+                  "x": 0,
+                  "y": 31,
+                  "w": 86,
+                  "h": 7
+                },
+                {
+                  "shape": "building",
+                  "label": "Primary school (extended)",
+                  "x": 5,
+                  "y": 5,
+                  "w": 36,
+                  "h": 20
+                },
+                {
+                  "shape": "building",
+                  "label": "Apartments",
+                  "x": 56,
+                  "y": 6,
+                  "w": 24,
+                  "h": 18
+                },
+                {
+                  "shape": "bridge",
+                  "label": "",
+                  "x": 80,
+                  "y": 13,
+                  "w": 20,
+                  "h": 3
+                },
+                {
+                  "shape": "green",
+                  "label": "Park",
+                  "x": 5,
+                  "y": 45,
+                  "w": 26,
+                  "h": 19
+                },
+                {
+                  "shape": "building",
+                  "label": "Supermarket",
+                  "x": 40,
+                  "y": 44,
+                  "w": 38,
+                  "h": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Step by step: how to answer this task",
+          "level": "h2",
+          "intro": "Spend the first five minutes on steps 1 to 3. Candidates who start writing straight away usually miss the overview.",
+          "items": [
+            {
+              "title": "Understand what the visual shows (1 minute)",
+              "bullets": [
+                "**What is shown?** One place at two times, 1990 and today.",
+                "**What tense?** From a past date to now: the present perfect passive (*has been built*). Past to past: the past simple. Now to the future: *will be*.",
+                "**Which way is north?** Find the compass arrow. Here north is at the top."
+              ]
+            },
+            {
+              "title": "Find the key features (2 minutes)",
+              "text": [
+                "Ask what a person would notice from across the room. These become your overview and your body paragraphs."
+              ],
+              "bullets": [
+                "**Unchanged:** the river and the main road.",
+                "**North of the road:** the factory has become apartments, with a footbridge beside them; the school has been extended.",
+                "**South of the road:** the car park has become a park; the small shops have become a supermarket.",
+                "**Overall character:** more homes and green space, no industry or car parking."
+              ]
+            },
+            {
+              "title": "Plan four paragraphs (2 minutes)",
+              "bullets": [
+                "**Introduction:** paraphrase the task.",
+                "**Overview:** the centre has become more residential and greener; the river and road are unchanged.",
+                "**Body 1:** changes north of the main road.",
+                "**Body 2:** changes south of the main road."
+              ]
+            },
+            {
+              "title": "Write, then check (15 minutes)",
+              "bullets": [
+                "Write about 170 to 190 words. Under 150 is penalised.",
+                "Start the overview with *Overall* so the examiner can find it.",
+                "Support each point with one or two figures, not every figure.",
+                "Leave three minutes to check tense, articles, prepositions and units."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Writing the introduction: paraphrase the question",
+          "level": "h2",
+          "intro": "Change the words, not the meaning. Language copied from the question is not counted in your word total.",
+          "columns": [
+            "In the question",
+            "In your introduction"
+          ],
+          "rows": [
+            [
+              "The maps below show",
+              "The two maps illustrate"
+            ],
+            [
+              "the centre of a small town",
+              "how the central area of a small town"
+            ],
+            [
+              "in 1990 and today",
+              "has changed since 1990"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Location and change, with examples from these maps",
+          "level": "h2",
+          "columns": [
+            "Purpose",
+            "Language",
+            "Example from these maps"
+          ],
+          "rows": [
+            [
+              "Location",
+              "in the north-east, to the south of, beside, opposite, next to",
+              "The factory stood in the north-east, beside the river."
+            ],
+            [
+              "Replacement",
+              "was demolished and replaced by, has made way for",
+              "The factory has made way for apartments."
+            ],
+            [
+              "New features",
+              "has been built, has been constructed, a new ... has appeared",
+              "A footbridge has been built across the river."
+            ],
+            [
+              "Bigger",
+              "has been extended, has been enlarged, has expanded",
+              "The primary school has been extended considerably."
+            ],
+            [
+              "Change of use",
+              "has been converted into, has been turned into",
+              "The car park has been converted into a park."
+            ],
+            [
+              "No change",
+              "has remained unchanged, is still in the same place",
+              "The main road has remained unchanged."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Which tense for which maps?",
+          "level": "h2",
+          "columns": [
+            "The maps show",
+            "Tense",
+            "Example"
+          ],
+          "rows": [
+            [
+              "A past year and today",
+              "Present perfect passive",
+              "*The factory has been replaced by apartments.*"
+            ],
+            [
+              "Two past years",
+              "Past simple passive, or past perfect with *by*",
+              "*The factory was replaced by apartments. By 2010, a bridge had been built.*"
+            ],
+            [
+              "Today and a plan for the future",
+              "*will be* + past participle",
+              "*The car park will be converted into a visitor centre.*"
+            ]
+          ]
+        },
+        {
+          "type": "model",
+          "id": "model-answer",
+          "heading": "Model answer",
+          "level": "h2",
+          "variant": "tint",
+          "intro": "Read it once for meaning, then again to see how each paragraph does its job.",
+          "items": [
+            {
+              "label": "Model answer: maps (155 words)",
+              "prompt": "The maps below show the centre of a small town in 1990 and today. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+              "sample": [
+                "The maps show the changes that have taken place in the centre of a small town between 1990 and the present day.",
+                "Overall, the town centre has become more residential and greener, with its industrial and parking areas removed, although the main road and the river have remained unchanged.",
+                "The most noticeable changes have occurred to the north of the main road. In the north-east, beside the river, the factory has been demolished and replaced by apartments, and a footbridge has been built across the river next to them. In the north-west, the primary school has been extended considerably and is now more than twice its original size.",
+                "South of the main road, the car park in the south-west corner has been converted into a park. To the east of this, the row of small shops has been replaced by a single supermarket, which occupies roughly the same site but covers a noticeably larger area."
+              ],
+              "notes": [
+                "**The overview describes the overall character of the change** and names what stayed the same, which is exactly what a map overview needs.",
+                "**It moves around the map logically:** north of the road first, then south.",
+                "**The tense is right** for maps that end today: the present perfect passive.",
+                "**Location language is precise:** *beside the river*, *in the north-west*, *in the south-west corner*, *to the east of this*.",
+                "**It gives no opinion.** Whether the changes are good is not asked."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "From Band 5 to Band 7: sentences compared",
+          "level": "h2",
+          "intro": "Each weak sentence below shows a common type of mistake. The Band 7 version says the same thing accurately.",
+          "columns": [
+            "Band 5 sentence",
+            "The problem",
+            "Band 7 version"
+          ],
+          "rows": [
+            [
+              "In 1990 there was a factory. Today there are apartments.",
+              "Two separate facts with no link, and no location.",
+              "In the north-east, the factory has been demolished and replaced by apartments."
+            ],
+            [
+              "They built a park.",
+              "*They* is unclear, and the active voice hides the change.",
+              "A park has been created where the car park used to be."
+            ],
+            [
+              "The school is bigger in the up side.",
+              "*Up side* is not location language.",
+              "The school, in the north-west, has been extended."
+            ],
+            [
+              "The town is more modern and nicer now.",
+              "An opinion, not a description.",
+              "Overall, the town centre has become more residential, with industry and parking removed."
+            ]
+          ]
+        },
+        {
+          "type": "dodont",
+          "heading": "Common mistakes with maps tasks",
+          "level": "h2",
+          "doTitle": "Do",
+          "do": [
+            "Find what has not changed first: it gives you fixed points",
+            "Use compass directions and prepositions of place",
+            "Use the passive for every change",
+            "Move around the map in a logical order",
+            "Check the dates on both maps before choosing your tense"
+          ],
+          "dontTitle": "Avoid",
+          "dont": [
+            "Jump from one corner of the map to the opposite corner and back",
+            "Say *left* and *right* when a compass is given",
+            "Say whether the changes are an improvement",
+            "Describe the first map completely and then the second map completely",
+            "Forget to mention features that stayed the same"
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "your-turn",
+          "heading": "Your turn: a new task to try",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Now write your own answer before you look at the model. Set a timer for 20 minutes.",
+            "**The task:** *The maps below show a city park at present and the changes that are planned for it. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.*",
+            "**Watch the tense.** The second map is a plan, so the changes are in the future: *will be replaced*, *is planned to be built*."
+          ]
+        },
+        {
+          "type": "chart",
+          "kind": "map",
+          "title": "A city park now and planned",
+          "caption": "An invented park, drawn by RCF English for practice. The brown strip across the lake in the planned map is a new footbridge.",
+          "panels": [
+            {
+              "title": "Now",
+              "items": [
+                {
+                  "shape": "water",
+                  "label": "Lake",
+                  "x": 38,
+                  "y": 22,
+                  "w": 26,
+                  "h": 24
+                },
+                {
+                  "shape": "green",
+                  "label": "Open grass",
+                  "x": 4,
+                  "y": 4,
+                  "w": 30,
+                  "h": 28
+                },
+                {
+                  "shape": "building",
+                  "label": "Café",
+                  "x": 68,
+                  "y": 4,
+                  "w": 16,
+                  "h": 12
+                },
+                {
+                  "shape": "building",
+                  "label": "Tennis courts",
+                  "x": 4,
+                  "y": 44,
+                  "w": 26,
+                  "h": 20
+                },
+                {
+                  "shape": "road",
+                  "label": "Car park",
+                  "x": 70,
+                  "y": 48,
+                  "w": 26,
+                  "h": 18
+                }
+              ]
+            },
+            {
+              "title": "Planned",
+              "items": [
+                {
+                  "shape": "water",
+                  "label": "Lake",
+                  "x": 38,
+                  "y": 22,
+                  "w": 26,
+                  "h": 24
+                },
+                {
+                  "shape": "bridge",
+                  "label": "",
+                  "x": 36,
+                  "y": 40,
+                  "w": 30,
+                  "h": 3
+                },
+                {
+                  "shape": "green",
+                  "label": "Open grass",
+                  "x": 4,
+                  "y": 4,
+                  "w": 30,
+                  "h": 13
+                },
+                {
+                  "shape": "building",
+                  "label": "Playground",
+                  "x": 4,
+                  "y": 19,
+                  "w": 30,
+                  "h": 13
+                },
+                {
+                  "shape": "building",
+                  "label": "Restaurant",
+                  "x": 62,
+                  "y": 4,
+                  "w": 26,
+                  "h": 14
+                },
+                {
+                  "shape": "building",
+                  "label": "Sports hall",
+                  "x": 4,
+                  "y": 44,
+                  "w": 26,
+                  "h": 20
+                },
+                {
+                  "shape": "road",
+                  "label": "New car park",
+                  "x": 38,
+                  "y": 53,
+                  "w": 26,
+                  "h": 13
+                },
+                {
+                  "shape": "building",
+                  "label": "Visitor centre",
+                  "x": 70,
+                  "y": 48,
+                  "w": 26,
+                  "h": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Check your answer",
+          "level": "h2",
+          "items": [
+            {
+              "q": "1. The key features you should have found",
+              "a": [
+                "Your overview should contain the most important of these."
+              ],
+              "bullets": [
+                "The lake in the centre will stay the same, and a footbridge will be built across it.",
+                "North: the open grass will be halved to make room for a playground; the café will become a larger restaurant.",
+                "South: the tennis courts will be replaced by a sports hall; the car park will become a visitor centre, with a new car park to its west.",
+                "Overall: more buildings and facilities, less open space."
+              ]
+            },
+            {
+              "q": "2. Model answer (154 words)",
+              "a": [
+                "*The maps show a city park as it is at present and the changes that are planned for it.*",
+                "*Overall, the park will offer more facilities for visitors, with several areas redeveloped and less open space, but the lake at its centre will remain as it is.*",
+                "*In the northern half of the park, the area of open grass in the north-west will be reduced to about half its current size to make room for a children's playground to the south of it. In the north-east, the small café will be expanded into a much larger restaurant. A footbridge will also be built across the lake.*",
+                "*In the southern half, the tennis courts in the south-west will be replaced by a sports hall. The car park in the south-east will be converted into a visitor centre, and a new car park will be built to the west of it, just south of the lake.*"
+              ]
+            },
+            {
+              "q": "3. Mark your own answer",
+              "a": [
+                "Answer yes or no to each question. Every *no* is a place to improve."
+              ],
+              "bullets": [
+                "Did you paraphrase the question rather than copy it?",
+                "Is there a separate overview paragraph starting with *Overall*?",
+                "Does the overview give the main features without figures?",
+                "Did you select the important figures instead of listing them all?",
+                "Did you compare, using words such as *whereas*, *while* and *by contrast*?",
+                "Is every tense right for the dates shown?",
+                "Did you avoid giving reasons and opinions?",
+                "Did you write at least 150 words?"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More Task 1 tutorials",
+          "eyebrow": "IELTS Writing",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Line graph",
+              "url": "practical-english/ielts/graphs/line-graph/",
+              "more": "Open tutorial",
+              "text": [
+                "Change over time: trends, peaks and sudden falls."
+              ]
+            },
+            {
+              "title": "Bar chart",
+              "url": "practical-english/ielts/graphs/bar-chart/",
+              "more": "Open tutorial",
+              "text": [
+                "Comparing categories, and how they change."
+              ]
+            },
+            {
+              "title": "Pie charts",
+              "url": "practical-english/ielts/graphs/pie-charts/",
+              "more": "Open tutorial",
+              "text": [
+                "Shares of a whole, and how they change."
+              ]
+            },
+            {
+              "title": "Table",
+              "url": "practical-english/ielts/graphs/table/",
+              "more": "Open tutorial",
+              "text": [
+                "Many figures: select, group and compare."
+              ]
+            },
+            {
+              "title": "Process diagram",
+              "url": "practical-english/ielts/graphs/process-diagram/",
+              "more": "Open tutorial",
+              "text": [
+                "Stages in order, in the passive voice."
+              ]
+            },
+            {
+              "title": "Task 1 overview and language",
+              "url": "practical-english/ielts/graphs/",
+              "more": "Open",
+              "text": [
+                "The overview, the four-paragraph structure, tenses and the grammar of change."
+              ]
+            }
           ]
         }
       ]
