@@ -604,6 +604,11 @@ function Footer() {
 
 # ================================================================== blocks ==
 
+# Listening tests use grade 12 for A/L General English, which has its own page
+# rather than a grade page.
+function ListeningLabel($g) { if ([int]$g -ge 12) { return 'A/L General English' } return 'Grade ' + $g }
+function ListeningHome($g, $anchor) { if ([int]$g -ge 12) { return 'general-english/#al-listening' } return "grades/grade-$g/#$anchor" }
+
 function RenderBlocks($blocks) {
     $html = ''
     foreach ($block in (AsList $blocks)) {
@@ -1787,7 +1792,7 @@ function RenderBlock($block) {
                     if ($v.Count -eq 0) { continue }
                     $pairs = @()
                     foreach ($w in $v) { $pairs += , @([string](P $w 'word'), [string](P $w 'meaning')) }
-                    [void]$sets.Add(@{ id = [string](P $t 'id'); group = 'Listening Laboratory words'; label = 'Grade ' + [string](P $t 'grade') + ': ' + [string](P $t 'title'); pairs = $pairs })
+                    [void]$sets.Add(@{ id = [string](P $t 'id'); group = 'Listening Laboratory words'; label = (ListeningLabel (P $t 'grade')) + ': ' + [string](P $t 'title'); pairs = $pairs })
                 }
             }
 
@@ -1845,7 +1850,7 @@ function RenderBlock($block) {
             $html += '<div class="lab__filters" data-lab-filters hidden>'
             $html += '<div class="lab__chips" role="group" aria-label="Show tests for"><button type="button" class="lab__chip is-on" aria-pressed="true" data-lab-grade="">All grades</button>'
             foreach ($g in @($tests | ForEach-Object { [int](P $_ 'grade' 0) } | Sort-Object -Unique)) {
-                $html += '<button type="button" class="lab__chip" aria-pressed="false" data-lab-grade="' + $g + '">Grade ' + $g + '</button>'
+                $html += '<button type="button" class="lab__chip" aria-pressed="false" data-lab-grade="' + $g + '">' + (E (ListeningLabel $g)) + '</button>'
             }
             $html += '</div>'
             $html += '<p class="lab__count" role="status" aria-live="polite" data-lab-count></p></div>'
@@ -1853,7 +1858,7 @@ function RenderBlock($block) {
             # then the extra tests written by RCF English.
             $groups = @(
                 @{ key = 'textbook'; heading = "Pupil's Book Listening Tests"; note = 'The listening activities from the Grade 6 to 11 Pupil&#39;s Books and Workbooks. Each test names the unit and activity in the book.'; anchor = 'textbook-listening' },
-                @{ key = 'rcf'; heading = 'Extra Listening Tests'; note = 'More listening practice beyond the textbook, written by RCF English, each with words to learn before you listen.'; anchor = 'listening' }
+                @{ key = 'rcf'; heading = 'Extra Listening Tests'; note = 'More listening practice beyond the textbook, written by RCF English, each with words to learn before you listen, including tests for A/L General English.'; anchor = 'listening' }
             )
             $html += '<div class="lab__groups" data-lab-groups>'
             foreach ($grp in $groups) {
@@ -1872,13 +1877,13 @@ function RenderBlock($block) {
                 $words = (AsList (P $t 'vocabulary')).Count
                 $src = $(if ([string](P $t 'source') -eq 'textbook') { 'textbook' } else { 'rcf' })
                 $html += '<li class="lab__card" data-lab-card data-grade="' + $g + '" data-source="' + $src + '">'
-                $html += '<div class="tag-row"><span class="tag tag--level">Grade ' + $g + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span></div>'
+                $html += '<div class="tag-row"><span class="tag tag--level">' + (E (ListeningLabel $g)) + '</span><span class="tag listening__level listening__level--' + $lv[0] + '">' + $lv[1] + '</span></div>'
                 $html += '<h4 class="lab__title">' + (E (P $t 'title')) + '</h4>'
                 $meta = @("$qs questions")
                 if ($speakers) { $meta += $(if ($speakers -eq 1) { '1 speaker' } else { "$speakers speakers" }) }
                 if ($words) { $meta += "$words words to learn first" }
                 $html += '<p class="lab__meta">' + ($meta -join ' &middot; ') + '</p>'
-                $html += '<a class="btn btn--sm btn--accent" data-lab-open="' + (E $id) + '" href="' + (E (Url "grades/grade-$g/#$($grp.anchor)")) + '">Take this test<span class="visually-hidden">: ' + (E (P $t 'title')) + '</span></a>'
+                $html += '<a class="btn btn--sm btn--accent" data-lab-open="' + (E $id) + '" href="' + (E (Url (ListeningHome $g $grp.anchor))) + '">Take this test<span class="visually-hidden">: ' + (E (P $t 'title')) + '</span></a>'
                 $html += '</li>'
             }
             $html += '</ul>'
@@ -2291,15 +2296,15 @@ function FinderRecords() {
     foreach ($grp in ($tests | Group-Object { [string](P $_ 'grade') + '|' + $(if ([string](P $_ 'source') -eq 'textbook') { 'a-textbook' } else { 'b-extra' }) } | Sort-Object { [int]($_.Name.Split('|')[0]) }, { $_.Name.Split('|')[1] })) {
         $g = [int]($grp.Name.Split('|')[0])
         $isBook = $grp.Name.EndsWith('textbook')
-        $lTitle = $(if ($isBook) { "Grade $g Pupil's Book listening tests" } else { "Grade $g extra listening tests" })
+        $lTitle = $(if ($isBook) { "Grade $g Pupil's Book listening tests" } elseif ($g -ge 12) { 'A/L General English listening tests' } else { "Grade $g extra listening tests" })
         $lDesc = $(if ($isBook) { "$($grp.Count) listening activities from the Grade $g Pupil's Book and Workbook, read aloud on the page, with questions that mark themselves." } else { "$($grp.Count) extra listening tests written by RCF English, read aloud on the page, with words to learn first and questions that mark themselves." })
         $lAnchor = $(if ($isBook) { 'textbook-listening' } else { 'listening' })
         [void]$rows.Add((FinderRow @{
             title = $lTitle; desc = $lDesc
             grades = @($g); area = 'english'; term = ''
             group = 'listening'; typeLabel = 'Listening'; audience = 'student'; access = 'free'
-            year = ''; level = "Grade $g"
-            url = "grades/grade-$g/#$lAnchor"; download = ''; fileType = 'Interactive'
+            year = ''; level = (ListeningLabel $g)
+            url = (ListeningHome $g $lAnchor); download = ''; fileType = 'Interactive'
             size = ''; source = ''; labels = @()
             words = $(if ($isBook) { 'listening audio pupils book textbook workbook' } else { 'listening audio extra practice' })
         }))

@@ -60,6 +60,9 @@ const ACCENTS = [
 ];
 const ACCENT_KEY = "rcf-listening-accent";
 
+/* Grade 12 is used for A/L General English tests. */
+const gradeLabel = (grade) => (Number(grade) >= 12 ? "A/L General English" : `Grade ${grade}`);
+
 /* Difficulty follows the grade the test was written for. */
 function levelOf(grade) {
   const g = Number(grade);
@@ -259,7 +262,7 @@ function printWorksheet(test, withKey) {
     <header class="lw__head">
       <p class="lw__brand">RCF English · Listening worksheet</p>
       <h1>${esc(test.title)}</h1>
-      <p>Grade ${esc(test.grade)} · ${esc(level.label)}</p>
+      <p>${esc(gradeLabel(test.grade))} · ${esc(level.label)}</p>
       <p class="lw__who">Name ${`<span class="lw__line"></span>`} Date <span class="lw__line lw__line--short"></span></p>
     </header>
     <p><strong>What to do:</strong> ${esc(test.instructions)}</p>
@@ -454,7 +457,7 @@ function render(root, test) {
     <section class="listening" aria-labelledby="${esc(test.id)}-title">
       <h3 class="listening__title" id="${esc(test.id)}-title">${esc(test.title)}</h3>
       <div class="tag-row listening__tags">
-        <span class="tag tag--level">Grade ${esc(test.grade)}</span>
+        <span class="tag tag--level">${esc(gradeLabel(test.grade))}</span>
         <span class="tag listening__level listening__level--${level.n}">${esc(level.label)}</span>
         <span class="tag">${test.questions.length} questions</span>
         ${speakers ? `<span class="tag">${speakers === 1 ? "1 speaker" : `${speakers} speakers`}</span>` : ""}
