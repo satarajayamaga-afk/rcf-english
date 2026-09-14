@@ -618,9 +618,56 @@
         "url": "practical-english/ielts/"
       },
       "hero": {
-        "text": "Eleven to fourteen minutes with one examiner. They are not testing your opinions, your job, or whether you sound British. They are testing whether you can keep going."
+        "text": "Eleven to fourteen minutes with one examiner. They are not testing your opinions, your job, or whether you sound British. They are testing whether you can keep going.",
+        "buttons": [
+          {
+            "label": "Take the mock speaking test",
+            "url": "practical-english/ielts/mock-speaking-test/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Practise one question",
+            "url": "speaking-practice/?mode=part1",
+            "style": "btn--ghost-light"
+          }
+        ]
       },
       "blocks": [
+        {
+          "type": "cards",
+          "id": "speak-now",
+          "heading": "Practise speaking out loud",
+          "eyebrow": "New: speak with the website",
+          "columns": "3",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/",
+              "more": "Start the test",
+              "accent": true,
+              "text": [
+                "A full, hands-free test. An examiner voice asks Part 1, 2 and 3 questions, listens, follows up on short answers and times your cue card. You get a transcript and guidance at the end."
+              ]
+            },
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/?mode=part1",
+              "more": "Practise",
+              "text": [
+                "One question at a time for Part 1, Part 2 or Part 3. Speak, see what you said, and get feedback on length, speed, pauses, reasons, examples and vocabulary."
+              ]
+            },
+            {
+              "title": "Conversation Partner",
+              "url": "practical-english/conversation-partner/",
+              "more": "Talk",
+              "text": [
+                "Everyday conversations out loud, such as a job interview, where the other person answers what you say. Good warm-up practice for fluency."
+              ]
+            }
+          ]
+        },
         {
           "type": "prose",
           "heading": "How to extend an answer",
@@ -629,14 +676,6 @@
             "**Answer, then reason, then example.** Three sentences, every time, until it is automatic.",
             "*Do you enjoy cooking?* — **Answer:** *Not really, to be honest.* **Reason:** *I work late and I'm usually too tired to start.* **Example:** *Last night I just heated something from the fridge and ate it standing up.*",
             "That is a Band 7 shape. The vocabulary is ordinary; the structure is what earns the mark."
-          ]
-        },
-        {
-          "type": "callout",
-          "style": "tip",
-          "title": "Practise out loud",
-          "text": [
-            "[IELTS Mock Speaking Test](practical-english/ielts/mock-speaking-test/): a full, hands-free test with an examiner voice that asks, listens and follows up. [Speaking Practice](speaking-practice/): one question at a time, with feedback on length, speed, pauses, reasons, examples and vocabulary."
           ]
         },
         {

@@ -21,7 +21,6 @@
     "Facts that change - fees, exact session lengths, centre lists - are",
     "deliberately not stated. Readers are sent to ielts.org for those."
   ],
-
   "pages": [
     {
       "slug": "practical-english/ielts",
@@ -31,14 +30,44 @@
       "keywords": "IELTS Sri Lanka, IELTS preparation, IELTS bands, IELTS academic general training, IELTS speaking writing listening reading",
       "kicker": "Practical English",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
-      "backTo": { "label": "Practical English", "url": "practical-english/" },
-      "hero": { "text": "IELTS does not test how much English you know. It tests how well you use it under time pressure, in four fixed formats — which is a different skill, and one you can practise.",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Practical English",
+        "url": "practical-english/"
+      },
+      "hero": {
+        "text": "IELTS does not test how much English you know. It tests how well you use it under time pressure, in four fixed formats — which is a different skill, and one you can practise.",
         "buttons": [
-          { "label": "Which test do I need?", "url": "practical-english/ielts/test-types/", "style": "btn--accent" },
-          { "label": "Academic Practice Test", "url": "practical-english/ielts/practice-test-1/", "style": "btn--ghost-light" },
-          { "label": "General Training Practice Test", "url": "practical-english/ielts/general-training-test-1/", "style": "btn--ghost-light" },
-          { "label": "Quick Practice", "url": "practical-english/ielts/quick-practice/", "style": "btn--ghost-light" }
+          {
+            "label": "Which test do I need?",
+            "url": "practical-english/ielts/test-types/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Academic Practice Test",
+            "url": "practical-english/ielts/practice-test-1/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "General Training Practice Test",
+            "url": "practical-english/ielts/general-training-test-1/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Mock Speaking Test",
+            "url": "practical-english/ielts/mock-speaking-test/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Quick Practice",
+            "url": "practical-english/ielts/quick-practice/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -54,14 +83,42 @@
           "type": "table",
           "heading": "Academic or General Training?",
           "caption": "Listening and Speaking are identical in both. Only Reading and Writing differ. Choosing the wrong one is a wasted fee.",
-          "columns": ["", "Academic", "General Training"],
+          "columns": [
+            "",
+            "Academic",
+            "General Training"
+          ],
           "rows": [
-            ["Usually taken for", "University and professional registration", "Migration, work, and some secondary or vocational study"],
-            ["Listening", "The same test in both", "The same test in both"],
-            ["Reading", "Three long texts of the kind found in journals and serious newspapers", "Short workplace and everyday texts first, then one longer passage"],
-            ["Writing Task 1", "Describe a graph, chart, table, map or process in about 150 words", "Write a letter — formal, semi-formal or personal — in about 150 words"],
-            ["Writing Task 2", "An essay of about 250 words. The same task type in both.", "An essay of about 250 words, usually on a slightly more everyday topic"],
-            ["Speaking", "The same test in both", "The same test in both"]
+            [
+              "Usually taken for",
+              "University and professional registration",
+              "Migration, work, and some secondary or vocational study"
+            ],
+            [
+              "Listening",
+              "The same test in both",
+              "The same test in both"
+            ],
+            [
+              "Reading",
+              "Three long texts of the kind found in journals and serious newspapers",
+              "Short workplace and everyday texts first, then one longer passage"
+            ],
+            [
+              "Writing Task 1",
+              "Describe a graph, chart, table, map or process in about 150 words",
+              "Write a letter — formal, semi-formal or personal — in about 150 words"
+            ],
+            [
+              "Writing Task 2",
+              "An essay of about 250 words. The same task type in both.",
+              "An essay of about 250 words, usually on a slightly more everyday topic"
+            ],
+            [
+              "Speaking",
+              "The same test in both",
+              "The same test in both"
+            ]
           ]
         },
         {
@@ -116,18 +173,62 @@
           "type": "table",
           "heading": "The nine bands, in plain words",
           "caption": "You receive a band for each module and an overall band. Half bands are used.",
-          "columns": ["Band", "Official term", "What it means in practice"],
+          "columns": [
+            "Band",
+            "Official term",
+            "What it means in practice"
+          ],
           "rows": [
-            ["9", "Expert user", "Full command. Rare, and not required by most universities."],
-            ["8", "Very good user", "Occasional slips only. Handles complex argument well."],
-            ["7", "Good user", "Generally accurate, occasional errors. A common professional-registration requirement."],
-            ["6", "Competent user", "Effective command despite inaccuracies. A common undergraduate requirement."],
-            ["5", "Modest user", "Partial command; copes with overall meaning in familiar situations."],
-            ["4", "Limited user", "Basic competence in familiar situations only."],
-            ["3", "Extremely limited user", "Conveys and understands only general meaning in very familiar situations."],
-            ["2", "Intermittent user", "No real communication except the most basic information."],
-            ["1", "Non-user", "No ability beyond a few isolated words."],
-            ["0", "Did not attempt", "No answerable information provided."]
+            [
+              "9",
+              "Expert user",
+              "Full command. Rare, and not required by most universities."
+            ],
+            [
+              "8",
+              "Very good user",
+              "Occasional slips only. Handles complex argument well."
+            ],
+            [
+              "7",
+              "Good user",
+              "Generally accurate, occasional errors. A common professional-registration requirement."
+            ],
+            [
+              "6",
+              "Competent user",
+              "Effective command despite inaccuracies. A common undergraduate requirement."
+            ],
+            [
+              "5",
+              "Modest user",
+              "Partial command; copes with overall meaning in familiar situations."
+            ],
+            [
+              "4",
+              "Limited user",
+              "Basic competence in familiar situations only."
+            ],
+            [
+              "3",
+              "Extremely limited user",
+              "Conveys and understands only general meaning in very familiar situations."
+            ],
+            [
+              "2",
+              "Intermittent user",
+              "No real communication except the most basic information."
+            ],
+            [
+              "1",
+              "Non-user",
+              "No ability beyond a few isolated words."
+            ],
+            [
+              "0",
+              "Did not attempt",
+              "No answerable information provided."
+            ]
           ]
         },
         {
@@ -202,10 +303,38 @@
           "eyebrow": "IELTS practice",
           "columns": "4",
           "items": [
-            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the shape of the answer, and the traps that cost marks."] },
-            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, worked through, plus timing."] },
-            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] },
-            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Twelve original cue cards and Part 1 and 3 question banks."] }
+            {
+              "title": "Listening",
+              "url": "practical-english/ielts/listening/",
+              "more": "Open",
+              "text": [
+                "Predicting the shape of the answer, and the traps that cost marks."
+              ]
+            },
+            {
+              "title": "Reading",
+              "url": "practical-english/ielts/reading/",
+              "more": "Open",
+              "text": [
+                "True, False and Not Given, worked through, plus timing."
+              ]
+            },
+            {
+              "title": "Writing",
+              "url": "practical-english/ielts/writing/",
+              "more": "Open",
+              "text": [
+                "Task 1 and Task 2, with original practice prompts."
+              ]
+            },
+            {
+              "title": "Speaking",
+              "url": "practical-english/ielts/speaking/",
+              "more": "Open",
+              "text": [
+                "Twelve original cue cards and Part 1 and 3 question banks, plus a mock speaking test with an examiner voice."
+              ]
+            }
           ]
         },
         {
@@ -219,36 +348,79 @@
               "title": "IELTS Academic Practice Test 1",
               "url": "practical-english/ielts/practice-test-1/",
               "more": "Sit the test",
-              "text": ["A full original test: four Listening parts with transcripts, three Reading passages, both Writing tasks and the Speaking test - with a complete answer key, an indicative band conversion and model answers."],
-              "bullets": ["80 Listening and Reading answers, each explained", "Model answers for Task 1, Task 2 and all three Speaking parts", "Everything written by RCF English"]
+              "text": [
+                "A full original test: four Listening parts with transcripts, three Reading passages, both Writing tasks and the Speaking test - with a complete answer key, an indicative band conversion and model answers."
+              ],
+              "bullets": [
+                "80 Listening and Reading answers, each explained",
+                "Model answers for Task 1, Task 2 and all three Speaking parts",
+                "Everything written by RCF English"
+              ]
             },
             {
               "title": "IELTS General Training Practice Test 1",
               "url": "practical-english/ielts/general-training-test-1/",
               "more": "Sit the test",
-              "text": ["General Training Reading in three sections, a Task 1 letter and a Task 2 essay, with the shared Listening and Speaking papers, a full answer key, an indicative General Training band table and model answers."],
-              "bullets": ["40 Reading answers, each explained", "Model letter and model essay with notes", "Everything written by RCF English"]
+              "text": [
+                "General Training Reading in three sections, a Task 1 letter and a Task 2 essay, with the shared Listening and Speaking papers, a full answer key, an indicative General Training band table and model answers."
+              ],
+              "bullets": [
+                "40 Reading answers, each explained",
+                "Model letter and model essay with notes",
+                "Everything written by RCF English"
+              ]
+            },
+            {
+              "title": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/",
+              "more": "Start the test",
+              "text": [
+                "Speak to an examiner voice through all three parts of the Speaking test, hands-free, then read a transcript of your answers with practice guidance."
+              ],
+              "bullets": [
+                "Six tests, each with Part 1, a cue card and Part 3",
+                "Follow-up questions when an answer is too short",
+                "Works in Chrome, Edge and Safari"
+              ]
             },
             {
               "title": "IELTS Quick Practice",
               "url": "practical-english/ielts/quick-practice/",
               "more": "Practise now",
-              "text": ["Short activities that mark themselves: True/False/Not Given, matching headings, listening traps, letter register, graph language and Task 2 vocabulary."],
-              "bullets": ["Six activities, every answer explained", "Levels, retry and stars", "No sign-in"]
+              "text": [
+                "Short activities that mark themselves: True/False/Not Given, matching headings, listening traps, letter register, graph language and Task 2 vocabulary."
+              ],
+              "bullets": [
+                "Six activities, every answer explained",
+                "Levels, retry and stars",
+                "No sign-in"
+              ]
             },
             {
               "title": "Which IELTS test do you need?",
               "url": "practical-english/ielts/test-types/",
               "more": "Compare the tests",
-              "text": ["Academic, General Training, IELTS for UKVI and IELTS Life Skills, paper and computer delivery, and One Skill Retake."],
-              "bullets": ["What is the same and what differs", "UKVI and Life Skills explained", "Check before you book"]
+              "text": [
+                "Academic, General Training, IELTS for UKVI and IELTS Life Skills, paper and computer delivery, and One Skill Retake."
+              ],
+              "bullets": [
+                "What is the same and what differs",
+                "UKVI and Life Skills explained",
+                "Check before you book"
+              ]
             },
             {
               "title": "10 Task 2 model essays",
               "url": "practical-english/ielts/model-essays/",
               "more": "Open the essays",
-              "text": ["Ten original essays covering all five Task 2 question types, each with a plan, the full essay, notes on exactly what earns the marks, the language worth borrowing and a variation to try."],
-              "bullets": ["Opinion, discussion, advantages, problems, two-part", "No invented statistics in any model", "Written to be studied, not memorised"]
+              "text": [
+                "Ten original essays covering all five Task 2 question types, each with a plan, the full essay, notes on exactly what earns the marks, the language worth borrowing and a variation to try."
+              ],
+              "bullets": [
+                "Opinion, discussion, advantages, problems, two-part",
+                "No invented statistics in any model",
+                "Written to be studied, not memorised"
+              ]
             }
           ]
         },
@@ -258,13 +430,44 @@
           "eyebrow": "Elsewhere on this site",
           "columns": "4",
           "items": [
-            { "title": "Writing", "url": "practical-english/writing/", "more": "Open", "text": ["Paragraphs, structure and the habits that make Task 2 easier."] },
-            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open", "text": ["Extending an answer beyond one sentence."] },
-            { "title": "Listening", "url": "practical-english/listening/", "more": "Open", "text": ["Following English at natural speed."] },
-            { "title": "Reading", "url": "practical-english/reading/", "more": "Open", "text": ["Finding information quickly in a long text."] }
+            {
+              "title": "Writing",
+              "url": "practical-english/writing/",
+              "more": "Open",
+              "text": [
+                "Paragraphs, structure and the habits that make Task 2 easier."
+              ]
+            },
+            {
+              "title": "Speaking",
+              "url": "practical-english/speaking/",
+              "more": "Open",
+              "text": [
+                "Extending an answer beyond one sentence."
+              ]
+            },
+            {
+              "title": "Listening",
+              "url": "practical-english/listening/",
+              "more": "Open",
+              "text": [
+                "Following English at natural speed."
+              ]
+            },
+            {
+              "title": "Reading",
+              "url": "practical-english/reading/",
+              "more": "Open",
+              "text": [
+                "Finding information quickly in a long text."
+              ]
+            }
           ]
         },
-        { "type": "adslot", "placement": "between" }
+        {
+          "type": "adslot",
+          "placement": "between"
+        }
       ]
     }
   ]
