@@ -33,7 +33,14 @@
       "kind": "guidance",
       "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
       "backTo": { "label": "Practical English", "url": "practical-english/" },
-      "hero": { "text": "IELTS does not test how much English you know. It tests how well you use it under time pressure, in four fixed formats — which is a different skill, and one you can practise." },
+      "hero": { "text": "IELTS does not test how much English you know. It tests how well you use it under time pressure, in four fixed formats — which is a different skill, and one you can practise.",
+        "buttons": [
+          { "label": "Which test do I need?", "url": "practical-english/ielts/test-types/", "style": "btn--accent" },
+          { "label": "Academic Practice Test", "url": "practical-english/ielts/practice-test-1/", "style": "btn--ghost-light" },
+          { "label": "General Training Practice Test", "url": "practical-english/ielts/general-training-test-1/", "style": "btn--ghost-light" },
+          { "label": "Quick Practice", "url": "practical-english/ielts/quick-practice/", "style": "btn--ghost-light" }
+        ]
+      },
       "blocks": [
         {
           "type": "prose",
@@ -203,8 +210,8 @@
         },
         {
           "type": "cards",
-          "heading": "A complete test, and ten model essays",
-          "eyebrow": "New",
+          "heading": "Practice tests of every type, and ten model essays",
+          "eyebrow": "Practice tests",
           "columns": "2",
           "variant": "tint",
           "items": [
@@ -214,6 +221,27 @@
               "more": "Sit the test",
               "text": ["A full original test: four Listening parts with transcripts, three Reading passages, both Writing tasks and the Speaking test - with a complete answer key, an indicative band conversion and model answers."],
               "bullets": ["80 Listening and Reading answers, each explained", "Model answers for Task 1, Task 2 and all three Speaking parts", "Everything written by RCF English"]
+            },
+            {
+              "title": "IELTS General Training Practice Test 1",
+              "url": "practical-english/ielts/general-training-test-1/",
+              "more": "Sit the test",
+              "text": ["General Training Reading in three sections, a Task 1 letter and a Task 2 essay, with the shared Listening and Speaking papers, a full answer key, an indicative General Training band table and model answers."],
+              "bullets": ["40 Reading answers, each explained", "Model letter and model essay with notes", "Everything written by RCF English"]
+            },
+            {
+              "title": "IELTS Quick Practice",
+              "url": "practical-english/ielts/quick-practice/",
+              "more": "Practise now",
+              "text": ["Short activities that mark themselves: True/False/Not Given, matching headings, listening traps, letter register, graph language and Task 2 vocabulary."],
+              "bullets": ["Six activities, every answer explained", "Levels, retry and stars", "No sign-in"]
+            },
+            {
+              "title": "Which IELTS test do you need?",
+              "url": "practical-english/ielts/test-types/",
+              "more": "Compare the tests",
+              "text": ["Academic, General Training, IELTS for UKVI and IELTS Life Skills, paper and computer delivery, and One Skill Retake."],
+              "bullets": ["What is the same and what differs", "UKVI and Life Skills explained", "Check before you book"]
             },
             {
               "title": "10 Task 2 model essays",

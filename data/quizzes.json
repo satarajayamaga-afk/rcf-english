@@ -982,6 +982,402 @@
         { "prompt": "Choose the opposite of 'generous'.", "options": ["kind", "selfish", "quiet", "poor"], "answer": 1, "explanation": "A generous person gives freely; a selfish person does not. Poor is about money, not willingness." },
         { "prompt": "Which word completes the sentence best? The road was so ___ that only one car could pass at a time.", "options": ["long", "narrow", "busy", "old"], "answer": 1, "explanation": "Only one car being able to pass tells you the road was narrow. Read the whole sentence with your answer in it to check." }
       ]
+    },
+    {
+      "id": "ielts-tfng-1",
+      "type": "reading",
+      "title": "IELTS Reading: True, False or Not Given",
+      "description": "A short passage and eight statements. Decide whether each agrees with the passage, contradicts it, or is not mentioned.",
+      "page": "practical-english/ielts/quick-practice/",
+      "keywords": "ielts true false not given practice reading",
+      "passageTitle": "The Night Shift at the Botanical Garden",
+      "passage": [
+        "Most visitors to a botanical garden see it only in daylight, but for the staff of one city garden, some of the most important work begins after the gates close at six. Around a third of the plants in the tropical glasshouse flower at night, and the garden's scientists want to know which insects visit them.",
+        "Since 2019, volunteers have joined the scientists on two evenings a month between April and September. They set up soft lights and white sheets, which attract moths without harming them, and record every species they see. Photographs are uploaded to a public database the same night.",
+        "The results have surprised the team. More than two hundred moth species have been recorded, including several that had not been seen in the region for decades. The garden's director believes that the glasshouse may be acting as a refuge for insects that have disappeared from the surrounding farmland.",
+        "Not all the findings are welcome. Numbers of some common species have fallen each year since the survey began, and the scientists are cautious about drawing conclusions from only a few seasons of data."
+      ],
+      "questions": [
+        {
+          "prompt": "The garden closes to the public at six in the evening.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 0,
+          "explanation": "\"some of the most important work begins after the gates close at six.\""
+        },
+        {
+          "prompt": "Most of the plants in the tropical glasshouse flower at night.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 1,
+          "explanation": "Only \"around a third\" flower at night, so most do not. The statement contradicts the passage."
+        },
+        {
+          "prompt": "The volunteers are paid for their evening work.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 2,
+          "explanation": "The passage says volunteers join the scientists, but nothing about payment. Do not assume that volunteers are unpaid: the text simply does not say."
+        },
+        {
+          "prompt": "The survey takes place in every month of the year.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 1,
+          "explanation": "It runs \"between April and September\", not all year."
+        },
+        {
+          "prompt": "The method used to attract moths does not injure them.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 0,
+          "explanation": "Lights and sheets \"attract moths without harming them\"."
+        },
+        {
+          "prompt": "Some species found had not been recorded locally for many years.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 0,
+          "explanation": "\"several that had not been seen in the region for decades\"."
+        },
+        {
+          "prompt": "The director is certain that the glasshouse protects insects from farmland chemicals.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 1,
+          "explanation": "The director \"believes\" the glasshouse \"may be acting as a refuge\". Believing something may be true contradicts being certain. Chemicals are not mentioned at all, but the certainty is what makes this False."
+        },
+        {
+          "prompt": "The scientists expect the numbers of common species to recover.",
+          "options": [
+            "True",
+            "False",
+            "Not Given"
+          ],
+          "answer": 2,
+          "explanation": "The passage says numbers have fallen and the scientists are cautious, but nothing about what they expect to happen next."
+        }
+      ]
+    },
+    {
+      "id": "ielts-headings-1",
+      "type": "match",
+      "title": "IELTS Reading: Matching headings",
+      "description": "Six short paragraphs about school gardens. Choose the heading that fits each whole paragraph.",
+      "page": "practical-english/ielts/quick-practice/",
+      "keywords": "ielts matching headings practice",
+      "pairs": [
+        {
+          "term": "A. School gardens are not new. In the nineteenth century, many schools in Europe kept vegetable plots, and pupils were expected to work in them as part of their education.",
+          "meaning": "A practice with a long history"
+        },
+        {
+          "term": "B. Teachers report that pupils who grow vegetables are more willing to eat them. In one study, children were far more likely to try a vegetable they had planted themselves.",
+          "meaning": "An effect on what children eat"
+        },
+        {
+          "term": "C. Finding the money is the main obstacle. Tools, seeds and fencing cost little, but paying someone to look after the garden during the long holidays is often beyond a school's budget.",
+          "meaning": "The difficulty of paying for upkeep"
+        },
+        {
+          "term": "D. Some schools have solved this by inviting parents and retired neighbours to take turns watering in the summer, in exchange for a share of the harvest.",
+          "meaning": "A solution found in the local community"
+        },
+        {
+          "term": "E. The garden can also be used across the timetable: measuring plots in mathematics, recording growth in science and writing seed-packet descriptions in English lessons.",
+          "meaning": "A resource for many subjects"
+        },
+        {
+          "term": "F. Not every teacher is enthusiastic. Some argue that time spent outdoors is time taken away from preparing for examinations, and that results should come first.",
+          "meaning": "Concern about examination preparation"
+        }
+      ]
+    },
+    {
+      "id": "ielts-listening-traps-1",
+      "type": "mcq",
+      "title": "IELTS Listening: Spot the trap",
+      "description": "Each question gives a line of speech from a recording. Choose the answer you would write on the answer sheet.",
+      "page": "practical-english/ielts/quick-practice/",
+      "keywords": "ielts listening traps distractors practice",
+      "questions": [
+        {
+          "prompt": "Date of the appointment: \"Shall we say the ninth? Oh no, I'm away that week. Let's make it the sixteenth instead.\"",
+          "options": [
+            "9th",
+            "16th",
+            "Both are acceptable"
+          ],
+          "answer": 1,
+          "explanation": "The speaker corrects herself. When a speaker changes an answer, the final version is the one to write."
+        },
+        {
+          "prompt": "Number of people expected: \"We sent invitations to sixty, but we're only expecting about forty-five to come.\"",
+          "options": [
+            "60",
+            "45",
+            "105"
+          ],
+          "answer": 1,
+          "explanation": "The question asks how many are expected, not how many were invited."
+        },
+        {
+          "prompt": "Cost per night: \"It's normally ninety pounds a night, but in March there's a discount, so you'd pay seventy.\" (The stay is in March.)",
+          "options": [
+            "£90",
+            "£70",
+            "£20"
+          ],
+          "answer": 1,
+          "explanation": "The normal price is mentioned first as a distractor. The March price applies."
+        },
+        {
+          "prompt": "Surname: \"It's Gunawardena. That's G-U-N-A-W-A-R-D-E-N-A.\"",
+          "options": [
+            "Gunawardana",
+            "Gunawardena",
+            "Gunewardena"
+          ],
+          "answer": 1,
+          "explanation": "Spelled names must be copied exactly. One wrong letter loses the mark."
+        },
+        {
+          "prompt": "What the caller must bring: \"You don't need your passport. Just bring a utility bill with your address on it.\"",
+          "options": [
+            "passport",
+            "utility bill",
+            "passport and utility bill"
+          ],
+          "answer": 1,
+          "explanation": "The passport is mentioned only to be ruled out. Listen for negatives such as \"you don't need\"."
+        },
+        {
+          "prompt": "Which room: \"The lecture was going to be in Room 12, but it's been moved upstairs to Room 21.\"",
+          "options": [
+            "Room 12",
+            "Room 21",
+            "Room 12 or 21"
+          ],
+          "answer": 1,
+          "explanation": "\"Was going to be\" signals an old plan. \"It's been moved\" gives the current answer."
+        }
+      ]
+    },
+    {
+      "id": "ielts-gt-letters-1",
+      "type": "mcq",
+      "title": "IELTS General Training: Letter register",
+      "description": "Choose the most suitable opening, closing or sentence for each General Training letter situation.",
+      "page": "practical-english/ielts/quick-practice/",
+      "keywords": "ielts general training letter formal informal register practice",
+      "questions": [
+        {
+          "prompt": "You are writing to a hotel manager whose name you do not know. How should you end the letter?",
+          "options": [
+            "Yours faithfully,",
+            "Yours sincerely,",
+            "Best wishes,"
+          ],
+          "answer": 0,
+          "explanation": "A letter that begins \"Dear Sir or Madam\" ends \"Yours faithfully\". \"Yours sincerely\" is used when you have named the person."
+        },
+        {
+          "prompt": "You are writing to Mr Fernando, the manager of your local library. How should you end the letter?",
+          "options": [
+            "Yours faithfully,",
+            "Yours sincerely,",
+            "Love,"
+          ],
+          "answer": 1,
+          "explanation": "When you begin with the person's name (Dear Mr Fernando), end with \"Yours sincerely\"."
+        },
+        {
+          "prompt": "You are writing to a close friend to invite them to a party. Which opening is best?",
+          "options": [
+            "Dear Sir,",
+            "To whom it may concern,",
+            "Hi Kasun,"
+          ],
+          "answer": 2,
+          "explanation": "A personal letter to a friend uses a first name and a friendly tone."
+        },
+        {
+          "prompt": "Which sentence is best for a formal complaint to a company?",
+          "options": [
+            "Your product is rubbish and I want my money back now.",
+            "I am writing to express my dissatisfaction with a product I purchased from your store.",
+            "Hey, the kettle you sold me broke!"
+          ],
+          "answer": 1,
+          "explanation": "A formal complaint states its purpose politely and clearly in the first sentence, without emotional or informal language."
+        },
+        {
+          "prompt": "Which sentence is most suitable for asking your employer for a favour?",
+          "options": [
+            "I would be grateful if you could allow me to leave early on Friday.",
+            "Let me leave early on Friday.",
+            "I wanna go early on Friday, OK?"
+          ],
+          "answer": 0,
+          "explanation": "\"I would be grateful if you could...\" is a polite, formal way to make a request."
+        },
+        {
+          "prompt": "In a letter to a neighbour you know slightly, which is the best closing sentence?",
+          "options": [
+            "I look forward to hearing from you at your earliest convenience.",
+            "Thanks for your help, and I hope to see you soon.",
+            "Write back ASAP!!!"
+          ],
+          "answer": 1,
+          "explanation": "A semi-formal letter to someone you know is friendly but still polite. The first option is too formal and the third too informal."
+        }
+      ]
+    },
+    {
+      "id": "ielts-graph-language-1",
+      "type": "match",
+      "title": "IELTS Academic Task 1: The language of graphs",
+      "description": "Match each expression used in Writing Task 1 to what it tells the reader about the data.",
+      "page": "practical-english/ielts/quick-practice/",
+      "keywords": "ielts task 1 graph vocabulary rose sharply fluctuated plateau",
+      "pairs": [
+        {
+          "term": "rose sharply",
+          "meaning": "increased quickly by a large amount"
+        },
+        {
+          "term": "declined gradually",
+          "meaning": "fell slowly over a period"
+        },
+        {
+          "term": "fluctuated",
+          "meaning": "went up and down repeatedly"
+        },
+        {
+          "term": "levelled off",
+          "meaning": "stopped changing and stayed at about the same level"
+        },
+        {
+          "term": "peaked at",
+          "meaning": "reached its highest point at"
+        },
+        {
+          "term": "roughly doubled",
+          "meaning": "became about twice as large"
+        },
+        {
+          "term": "a slight dip",
+          "meaning": "a small, short fall"
+        },
+        {
+          "term": "accounted for",
+          "meaning": "made up a proportion of the total"
+        }
+      ]
+    },
+    {
+      "id": "ielts-task2-vocabulary-1",
+      "type": "gap",
+      "title": "IELTS Task 2: Precise vocabulary",
+      "description": "Type the more precise word that replaces the general words in brackets. The first letter is given as a hint.",
+      "page": "practical-english/ielts/quick-practice/",
+      "keywords": "ielts task 2 vocabulary academic words practice",
+      "questions": [
+        {
+          "sentence": "Governments should ____ public transport so that fares remain affordable. (give money to)",
+          "answer": [
+            "subsidise",
+            "subsidize"
+          ],
+          "hint": "s",
+          "explanation": "To subsidise is to give money to reduce the cost of something."
+        },
+        {
+          "sentence": "The rapid growth of cities has placed great ____ on housing and water supplies. (strong demand)",
+          "answer": [
+            "pressure",
+            "strain"
+          ],
+          "hint": "p",
+          "explanation": "\"Pressure on\" or \"strain on\" are natural collocations for demand on resources."
+        },
+        {
+          "sentence": "Many young people are ____ about their future career. (not sure)",
+          "answer": [
+            "uncertain",
+            "unsure"
+          ],
+          "hint": "u",
+          "explanation": "\"Uncertain\" is more precise and formal than \"not sure\"."
+        },
+        {
+          "sentence": "There is little ____ that banning advertising reduces sugar consumption. (proof)",
+          "answer": [
+            "evidence"
+          ],
+          "hint": "e",
+          "explanation": "\"Evidence that...\" is the natural academic phrase."
+        },
+        {
+          "sentence": "Online learning has made education more ____ to people in rural areas. (easy to reach)",
+          "answer": [
+            "accessible",
+            "available"
+          ],
+          "hint": "a",
+          "explanation": "\"Accessible to\" means easy to reach or use."
+        },
+        {
+          "sentence": "Stricter laws alone are unlikely to ____ crime; education is also needed. (make less)",
+          "answer": [
+            "reduce",
+            "decrease",
+            "lower"
+          ],
+          "hint": "r",
+          "explanation": "\"Reduce crime\" is a strong collocation."
+        },
+        {
+          "sentence": "The ____ of working from home include saving travel time and money. (good points)",
+          "answer": [
+            "advantages",
+            "benefits"
+          ],
+          "hint": "a",
+          "explanation": "\"Advantages\" or \"benefits\" replace the vague \"good points\"."
+        },
+        {
+          "sentence": "Parents have a ____ to teach their children good manners. (duty)",
+          "answer": [
+            "responsibility",
+            "duty",
+            "obligation"
+          ],
+          "hint": "r",
+          "explanation": "\"Have a responsibility to\" is a common formal phrase."
+        }
+      ]
     }
   ]
 }

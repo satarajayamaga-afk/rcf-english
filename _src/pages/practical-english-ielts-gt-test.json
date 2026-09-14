@@ -1,0 +1,750 @@
+{
+  "_comment": "IELTS test types page and IELTS General Training Practice Test 1 (Reading, Writing, Answers). All texts and questions are original RCF English compositions. Places, companies and colleges in Sections 1 and 2 are invented. Section 3 describes the real repair cafe movement and real right-to-repair rules in general terms only, naming no individual. Format follows the published IELTS General Training Reading format: three sections, 40 questions, 60 minutes, no transfer time. Listening and Speaking are the same for Academic and General Training, so this test links to Practice Test 1 for those papers. Band conversion is labelled INDICATIVE, as on the Academic answers page.",
+
+  "pages": [
+    {
+      "slug": "practical-english/ielts/test-types",
+      "title": "IELTS Test Types",
+      "metaTitle": "IELTS Test Types: Academic, General Training, UKVI, Life Skills and One Skill Retake | RCF English",
+      "description": "Which IELTS test do you need? Academic, General Training, IELTS for UKVI and IELTS Life Skills explained, with paper and computer delivery, One Skill Retake, and practice for each.",
+      "keywords": "IELTS test types, IELTS Academic vs General Training, IELTS for UKVI, IELTS Life Skills A1 B1, IELTS One Skill Retake, which IELTS test do I need Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "lesson",
+      "breadcrumbs": [
+        { "label": "Practical English", "url": "practical-english/" },
+        { "label": "IELTS", "url": "practical-english/ielts/" }
+      ],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": {
+        "text": "There is more than one IELTS test, and preparing for the wrong one is the costliest mistake a candidate can make. Find the one your university, employer or visa asks for, then practise that test.",
+        "buttons": [
+          { "label": "Academic Practice Test 1", "url": "practical-english/ielts/practice-test-1/", "style": "btn--accent" },
+          { "label": "General Training Practice Test 1", "url": "practical-english/ielts/general-training-test-1/", "style": "btn--ghost-light" },
+          { "label": "Quick practice", "url": "practical-english/ielts/quick-practice/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Check the official requirements",
+          "text": [
+            "RCF English is not connected with IELTS, the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment. Test formats, fees, dates and the tests accepted for a particular purpose can change. **Before you book, confirm which test you need with the organisation that asked for it, and check the details on [ielts.org](https://ielts.org).**"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The IELTS tests at a glance",
+          "level": "h2",
+          "stacked": true,
+          "columns": ["Test", "Usually needed for", "What it tests"],
+          "rows": [
+            ["**IELTS Academic**", "University study at undergraduate or postgraduate level, and professional registration (for example, some medical and nursing bodies)", "Listening, Reading, Writing and Speaking. Reading and Writing use academic-style material."],
+            ["**IELTS General Training**", "Work, training, secondary education and migration to some English-speaking countries", "Listening, Reading, Writing and Speaking. Reading and Writing use everyday and workplace material."],
+            ["**IELTS for UKVI** (Academic or General Training)", "Some UK visa and immigration applications that require a Secure English Language Test", "The same content and format as Academic or General Training, taken at an approved UKVI test centre."],
+            ["**IELTS Life Skills** (A1, A2, B1)", "Some UK visa applications, such as certain family, settlement and citizenship routes", "Speaking and Listening only, at one level, with a pass or fail result."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Academic and General Training: what is the same and what is different",
+          "level": "h2",
+          "caption": "The two tests share Listening and Speaking. The difference is in Reading and Writing.",
+          "columns": ["Paper", "IELTS Academic", "IELTS General Training"],
+          "rows": [
+            ["Listening", "30 minutes, 4 parts, 40 questions. **The same for both.**", "The same as Academic"],
+            ["Reading", "60 minutes, 3 long passages from books, journals and magazines, 40 questions", "60 minutes, 40 questions in 3 sections: everyday texts such as notices and advertisements, workplace texts, and one longer general-interest passage"],
+            ["Writing Task 1", "Describe a graph, table, chart, map or process in at least 150 words", "Write a letter (formal, semi-formal or personal) in at least 150 words"],
+            ["Writing Task 2", "An essay in at least 250 words on an academic-style topic", "An essay in at least 250 words on a topic of general interest"],
+            ["Speaking", "11 to 14 minutes, face to face with an examiner, 3 parts. **The same for both.**", "The same as Academic"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "IELTS for UKVI",
+          "text": [
+            "IELTS for UKVI is not a different kind of English test. It is the **Academic or General Training test with the same questions, format and marking**, taken at a test centre approved by UK Visas and Immigration, under extra identity and security checks, so that the result can be used for certain UK visa applications.",
+            "Prepare for it exactly as you would for Academic or General Training. What matters is booking the **UKVI** version when your visa route asks for a Secure English Language Test; an ordinary IELTS result may not be accepted for that purpose."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "IELTS Life Skills",
+          "variant": "tint",
+          "text": [
+            "IELTS Life Skills tests **only Speaking and Listening**, at one level of the Common European Framework: **A1**, **A2** or **B1**. It is taken with one examiner and one other candidate, and the result is simply **pass** or **fail**.",
+            "It is used for some UK visa routes where the Home Office asks for a particular level. The tasks are about everyday life: talking about yourself, your family and your routine, making arrangements, and understanding short spoken information.",
+            "Practise speaking in full sentences about familiar topics, asking the other candidate questions, and listening for specific details such as times, places and prices. The [IELTS Speaking](practical-english/ielts/speaking/) and [IELTS Listening](practical-english/ielts/listening/) pages on this site will help, as will [Everyday English](general-english/everyday-english/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Paper, computer and One Skill Retake",
+          "text": [
+            "**Paper-based and computer-delivered.** Academic and General Training can be taken on paper or on a computer at a test centre. The questions and the marking are the same. On computer, Listening gives a short time to check answers instead of ten minutes to transfer them to an answer sheet. **The Speaking test is always a live conversation with an examiner.**",
+            "**IELTS Online.** In some places an online version can be taken at home under remote supervision. Check whether the organisation you are applying to accepts it before choosing it.",
+            "**One Skill Retake.** In some locations, candidates who took the computer-delivered test can retake one of the four skills, within a set period, instead of the whole test. Availability depends on the country and test centre, and not every organisation accepts a retaken result, so check both before relying on it."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Practise the test you are taking",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            { "title": "IELTS Academic Practice Test 1", "url": "practical-english/ielts/practice-test-1/", "more": "Start the test", "text": ["A full Academic test: Listening, Reading, Writing and Speaking, with answers and model answers."] },
+            { "title": "IELTS General Training Practice Test 1", "url": "practical-english/ielts/general-training-test-1/", "more": "Start the test", "text": ["General Training Reading and Writing, with the shared Listening and Speaking papers, answers and model answers."] },
+            { "title": "IELTS Quick Practice", "url": "practical-english/ielts/quick-practice/", "more": "Practise", "text": ["Short activities that mark themselves: True/False/Not Given, matching headings, letter register, graph language and more."] },
+            { "title": "10 Task 2 model essays", "url": "practical-english/ielts/model-essays/", "more": "Read", "text": ["Model essays with plans and notes. Task 2 is the same kind of essay in both tests."] },
+            { "title": "Describing graphs and charts", "url": "practical-english/ielts/graphs/", "more": "Academic Task 1", "text": ["For Academic Writing Task 1 only."] },
+            { "title": "One-to-one IELTS classes", "url": "rcf-classes/ielts/", "more": "RCF Online Academy", "text": ["Individual preparation for all four skills, with personal feedback."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/general-training-test-1",
+      "title": "IELTS General Training Practice Test 1",
+      "metaTitle": "IELTS General Training Practice Test with Answers | RCF English",
+      "description": "An original IELTS General Training practice test: General Training Reading (three sections, 40 questions) and Writing (a letter and an essay), with the shared Listening and Speaking papers, a full answer key and model answers.",
+      "keywords": "IELTS General Training practice test, IELTS GT reading practice, IELTS GT letter writing practice, IELTS general training sample test Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "practice test",
+      "educationalLevel": "IELTS",
+      "breadcrumbs": [
+        { "label": "Practical English", "url": "practical-english/" },
+        { "label": "IELTS", "url": "practical-english/ielts/" }
+      ],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": {
+        "text": "A complete General Training test. Reading and Writing are written for General Training; Listening and Speaking are the same papers for both tests, so they are shared with Practice Test 1."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": [
+            "This test was written by RCF English. It is not an official IELTS test and is not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment. The organisations, places and people in Sections 1 and 2 are invented."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "Sit the four papers in order",
+          "items": [
+            { "title": "Listening: 30 minutes", "text": ["[Practice Test 1: Listening](practical-english/ielts/practice-test-1/listening/). The Listening paper is identical for Academic and General Training."] },
+            { "title": "Reading: 60 minutes", "text": ["[General Training Reading](practical-english/ielts/general-training-test-1/reading/): three sections, 40 questions, no extra transfer time."] },
+            { "title": "Writing: 60 minutes", "text": ["[General Training Writing](practical-english/ielts/general-training-test-1/writing/): a letter (about 20 minutes) and an essay (about 40 minutes)."] },
+            { "title": "Speaking: 11 to 14 minutes", "text": ["[Practice Test 1: Speaking](practical-english/ielts/practice-test-1/speaking/). The Speaking test is identical for Academic and General Training."] },
+            { "title": "Check your answers", "text": ["[Answers and model answers](practical-english/ielts/general-training-test-1/answers/), with an indicative General Training band table."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "General Training Reading is marked more strictly",
+          "text": [
+            "Because General Training texts are more familiar, you need **more correct answers for the same band** than in Academic Reading. Do not be misled by a high raw score: check it against the General Training table on the answers page."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/general-training-test-1/reading",
+      "title": "IELTS General Training Practice Test 1: Reading",
+      "metaTitle": "IELTS General Training Reading Practice Test with Answers | RCF English",
+      "description": "An original IELTS General Training Reading test: everyday notices and advertisements, workplace information and a longer passage, 40 questions in 60 minutes, with a full answer key.",
+      "keywords": "IELTS general training reading practice, IELTS GT reading section 1 2 3, true false not given practice, matching headings practice",
+      "kicker": "IELTS General Training Practice Test 1",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "practice test",
+      "educationalLevel": "IELTS",
+      "breadcrumbs": [
+        { "label": "Practical English", "url": "practical-english/" },
+        { "label": "IELTS", "url": "practical-english/ielts/" },
+        { "label": "General Training Test 1", "url": "practical-english/ielts/general-training-test-1/" }
+      ],
+      "backTo": { "label": "General Training Test 1", "url": "practical-english/ielts/general-training-test-1/" },
+      "hero": { "text": "Three sections. Forty questions. Sixty minutes, and no extra time to copy your answers." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": [
+            "All texts were written by RCF English. The leisure centre, college, company and people in Sections 1 and 2 are invented. Section 3 describes a real movement in general terms and names no individual."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Instructions",
+          "text": [
+            "You have **60 minutes** for all three sections and all 40 questions. Write your answers as you go: there is no transfer time.",
+            "Sections 1 and 2 are shorter and easier. Aim to finish them in about 35 minutes so that you have 25 minutes for Section 3."
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "Section 1",
+          "level": "h2",
+          "text": ["*Questions 1 to 14*"],
+          "parts": [
+            {
+              "heading": "Parkside Leisure Centre: Swimming Pool Information",
+              "level": "h3",
+              "text": [
+                "**Opening hours.** The pool is open from 6.30 a.m. to 9.30 p.m. Monday to Friday, and from 8.00 a.m. to 6.00 p.m. on Saturdays and Sundays. On the first Monday of every month the pool is closed until 2.00 p.m. for deep cleaning.",
+                "**Lane swimming.** Between 6.30 a.m. and 9.00 a.m. on weekdays the pool is divided into slow, medium and fast lanes. Please choose the lane that matches your speed and swim in a clockwise direction.",
+                "**Family sessions.** Family sessions run from 10.00 a.m. to 1.00 p.m. on Saturdays and Sundays. Inflatable toys are brought out on Sundays only.",
+                "**Children.** Children under eight must be accompanied in the water by an adult aged sixteen or over. One adult may supervise a maximum of two children under eight.",
+                "**What to wear.** Swimming caps are not compulsory, but long hair must be tied back. Please shower before entering the pool.",
+                "**Lockers.** Lockers take a returnable coin, which you get back when you open the locker again. The centre is not responsible for valuables left in changing areas.",
+                "**Lessons.** Classes for adult beginners are held on Tuesday and Thursday evenings. Places are limited and must be booked at reception at least one week in advance."
+              ]
+            },
+            {
+              "heading": "Questions 1-7",
+              "level": "h3",
+              "text": [
+                "*Do the following statements agree with the information in the text? Write* **TRUE** *if the statement agrees with the information,* **FALSE** *if the statement contradicts the information, or* **NOT GIVEN** *if there is no information on this.*"
+              ],
+              "numbered": [
+                "The pool opens at the same time every day of the week.",
+                "The pool is cleaned on the first Monday of every month.",
+                "Lane swimming is available on weekday mornings.",
+                "Inflatable toys can be used during both weekend family sessions.",
+                "An adult may take three children under eight into the pool.",
+                "Swimming caps can be bought at reception.",
+                "Adult beginners' lessons must be booked in advance."
+              ]
+            },
+            {
+              "heading": "Westbrook Adult Education College: Evening Courses",
+              "level": "h3",
+              "text": [
+                "**A &nbsp; Digital Photography.** Eight weeks, Monday evenings. Learn to compose better pictures and edit them. No experience is needed, and a phone camera is perfectly acceptable.",
+                "**B &nbsp; Conversational Spanish.** Ten weeks, Wednesday evenings. For learners who already know some basic Spanish and want to speak with more confidence. This course is not suitable for complete beginners.",
+                "**C &nbsp; Home Electrical Safety.** A single full-day workshop on a Saturday. Find out how to check wiring, replace plugs and fuses safely, and when to call a professional. Everyone who completes the workshop receives a certificate.",
+                "**D &nbsp; Creative Writing.** Six weeks. All sessions take place online by video call, so you can join from home. Participants share a short piece of writing each week.",
+                "**E &nbsp; Bread and Pastry Baking.** Five weeks, Thursday evenings. All ingredients are included in the course fee, and aprons are provided."
+              ]
+            },
+            {
+              "heading": "Questions 8-14",
+              "level": "h3",
+              "text": [
+                "*Look at the five course descriptions,* **A-E***. For which course are the following statements true? Write the correct letter,* **A-E***. You may use any letter more than once.*"
+              ],
+              "numbered": [
+                "It is held at the weekend.",
+                "It takes place entirely online.",
+                "The cost of materials is included in the price.",
+                "It is not suitable for people with no knowledge of the subject.",
+                "Participants receive a certificate.",
+                "Participants may use a mobile phone.",
+                "It is the longest course."
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "Section 2",
+          "level": "h2",
+          "variant": "tint",
+          "text": ["*Questions 15 to 27*"],
+          "parts": [
+            {
+              "heading": "Harbourline Logistics: A Guide for New Warehouse Staff",
+              "level": "h3",
+              "text": [
+                "**Your first day.** Please report to the security gate at 7.45 a.m. on your first day. Bring photographic identification and the completed form with your bank details, so that you can be added to the payroll. You will be given a high-visibility vest at the gate, which must be worn at all times on site.",
+                "**Induction.** The first two days are an induction programme covering health and safety, fire procedures and the warehouse layout. For your own safety, you may not operate any equipment, including pallet trucks, until you have completed the induction.",
+                "**Safety footwear.** Steel-toe boots must be worn in the warehouse at all times. The company provides every new member of staff with one pair free of charge. If your boots are damaged or wear out, replacement pairs are available from the stores office at half the normal price.",
+                "**Breaks and meals.** A full shift includes a thirty-minute lunch break and two fifteen-minute rest breaks. Hot meals are available in the staff canteen at a subsidised price.",
+                "**Parking.** Staff should use the car park at the rear of the building. Motorcycles and bicycles must be left in the covered bay beside the canteen, not in the car park.",
+                "**Changing shifts.** If you wish to swap a shift with a colleague, both of you must obtain the approval of your team leader at least 48 hours before the shift."
+              ]
+            },
+            {
+              "heading": "Questions 15-21",
+              "level": "h3",
+              "text": [
+                "*Complete the sentences below. Choose* **NO MORE THAN TWO WORDS** *from the text for each answer.*"
+              ],
+              "numbered": [
+                "On their first day, new staff should go to the ______ at 7.45 a.m.",
+                "New staff need to bring a form with their ______ on it.",
+                "Nobody may use a pallet truck until they have finished the ______.",
+                "Each new worker receives one free pair of ______.",
+                "Replacement footwear costs ______ the usual price.",
+                "Motorcycles must be parked in the covered bay next to the ______.",
+                "Swapping a shift requires the permission of the ______."
+              ]
+            },
+            {
+              "heading": "Annual Leave: How to Request Time Off",
+              "level": "h3",
+              "text": [
+                "**Entitlement.** Full-time staff are entitled to 21 days of paid annual leave each year, in addition to public holidays. After five years of continuous service, this rises to 25 days.",
+                "**Making a request.** All requests must be made through the online staff portal. Requests for more than five working days must be made at least four weeks in advance; requests for shorter periods need two weeks' notice.",
+                "**December.** Because December is the busiest month, no more than two members of any team may be on leave at the same time. Where more people ask for the same dates, leave is given in order of the date on which the requests were made.",
+                "**Unused leave.** Up to five days of unused leave may be carried over into the following year, but these days must be taken before the end of March.",
+                "**Illness during leave.** If you are ill while on annual leave, send a medical certificate to the human resources office within seven days of returning to work, and the days of illness will be returned to your leave balance."
+              ]
+            },
+            {
+              "heading": "Questions 22-27",
+              "level": "h3",
+              "text": [
+                "*Answer the questions below. Choose* **NO MORE THAN THREE WORDS AND/OR A NUMBER** *from the text for each answer.*"
+              ],
+              "numbered": [
+                "How many days of annual leave does a full-time worker have after five years?",
+                "Where must staff make their leave requests?",
+                "How much notice is needed for a two-week holiday?",
+                "In December, what decides who gets leave when too many people ask for the same dates?",
+                "By when must leave carried over from the previous year be used?",
+                "What must staff send if they were ill during their annual leave?"
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "prose",
+          "heading": "Section 3",
+          "level": "h2",
+          "text": ["*Questions 28 to 40*"],
+          "parts": [
+            {
+              "heading": "Mending the Throwaway Habit",
+              "level": "h3",
+              "text": [
+                "**A** &nbsp; It is ten o'clock on a Saturday morning, and a community hall is filling up. Along one wall, volunteers sit behind tables covered in screwdrivers, soldering irons, sewing machines and reels of thread. Opposite them, a queue has formed: a man with a table lamp that flickers, a woman carrying a jacket with a broken zip, a teenager holding a laptop that will not charge. Nobody is paying, and nobody is selling anything. This is a repair café, and the only rule on the poster by the door is that you must stay with the thing you have brought.",
+                "**B** &nbsp; The idea began in Amsterdam in 2009, when a single event was organised to see whether neighbours would bring broken belongings to be mended by other neighbours. They did, in numbers that surprised the organisers, and the model was simple enough to copy. Within a few years similar events were running in towns across Europe, and by the early 2020s there were more than two thousand repair cafés around the world, most of them meeting once a month in libraries, church halls and community centres.",
+                "**C** &nbsp; Behind their popularity lies a frustration that many people share. A generation ago, a broken radio or kettle was taken to a repair shop as a matter of course. Today, many products are designed in ways that make repair difficult: cases are glued together rather than held with screws, and the replacement parts that would allow a simple fix are often impossible to buy. Even when repair is technically possible, the cost of an hour's skilled labour can be greater than the price of a new item, so buying a replacement is frequently cheaper. The result is that objects which could work for years more are thrown away.",
+                "**D** &nbsp; The rule that owners stay beside their item is not a matter of convenience for the volunteers. Organisers explain that watching, and often helping, is the real purpose of the visit. A person who has seen a volunteer open a toaster, find a loose connection and fix it is far less likely to see such objects as mysterious, and far more likely to attempt a similar repair at home next time. Many visitors say that the confidence they take away is worth more to them than the repair itself.",
+                "**E** &nbsp; The cafés have also become meeting places. For people who live alone, a morning spent talking to a volunteer over a broken clock can be a rare opportunity for conversation. Many volunteers are retired, and the skills they spent a working life acquiring, from tailoring to electronics, are once again valued by others. It is common to see a volunteer in his seventies explaining a circuit to a student, while at the next table a young visitor shows an older one how to back up the photographs on a phone.",
+                "**F** &nbsp; Not everyone is convinced that the movement can achieve very much. Volunteers themselves admit that some items cannot be saved, and some cafés refuse to work on appliances connected to the mains because of safety concerns. Critics point out that the number of objects mended each month is tiny compared with the quantity of electrical waste a country produces, and argue that the responsibility for designing products that last should lie with manufacturers rather than with unpaid volunteers.",
+                "**G** &nbsp; There are signs that governments have been listening. In several places, including the European Union, rules introduced in recent years require the makers of certain household appliances to keep spare parts available for a number of years after a model is sold, and to make repair information available to professional repairers. Campaigners describe these laws as a first step rather than a solution, but they note that the question of whether a product can be mended is now being discussed in parliaments as well as in community halls."
+              ]
+            },
+            {
+              "heading": "Questions 28-33",
+              "level": "h3",
+              "text": [
+                "*The text has seven paragraphs,* **A-G***. Choose the correct heading for paragraphs* **B-G** *from the list of headings below. Write the correct number,* **i-ix***.*",
+                "**List of headings**",
+                "i &nbsp; The appeal of learning to do it yourself",
+                "ii &nbsp; A movement that spread from one city",
+                "iii &nbsp; Why repair has become uneconomic",
+                "iv &nbsp; Official action in support of repair",
+                "v &nbsp; More than mending objects",
+                "vi &nbsp; Doubts about the size of the effect",
+                "vii &nbsp; A typical Saturday morning",
+                "viii &nbsp; The cost of training volunteers",
+                "ix &nbsp; Manufacturers who welcome repair",
+                "*Example: Paragraph A - vii*"
+              ],
+              "numbered": [
+                "Paragraph B",
+                "Paragraph C",
+                "Paragraph D",
+                "Paragraph E",
+                "Paragraph F",
+                "Paragraph G"
+              ]
+            },
+            {
+              "heading": "Questions 34-36",
+              "level": "h3",
+              "text": [
+                "*Choose the correct letter,* **A, B, C** *or* **D***.*",
+                "**34** &nbsp; According to paragraph D, owners are asked to stay with their item mainly because",
+                "A &nbsp; volunteers need someone to hold the parts. &nbsp; B &nbsp; it helps them to attempt repairs themselves later. &nbsp; C &nbsp; the café is not insured for unattended items. &nbsp; D &nbsp; it reduces the time each repair takes.",
+                "**35** &nbsp; What does the writer say about retired volunteers in paragraph E?",
+                "A &nbsp; They find it hard to work with modern devices. &nbsp; B &nbsp; They are paid a small amount for their time. &nbsp; C &nbsp; Their skills are appreciated by other people. &nbsp; D &nbsp; They prefer to work with visitors of their own age.",
+                "**36** &nbsp; According to paragraph F, some critics believe that",
+                "A &nbsp; repair cafés are unsafe and should close. &nbsp; B &nbsp; volunteers should be paid for their work. &nbsp; C &nbsp; manufacturers should be responsible for making products last. &nbsp; D &nbsp; electrical waste is not a serious problem."
+              ]
+            },
+            {
+              "heading": "Questions 37-40",
+              "level": "h3",
+              "text": [
+                "*Complete the summary using the list of words below. Write the correct word for each answer.*",
+                "Many modern products are difficult to mend because their cases are **(37)** ______ together, and the replacement **(38)** ______ needed for a simple repair cannot be found. Because skilled labour is expensive, a new item is often **(39)** ______ than a repair. New rules in some places now require manufacturers to keep spare parts available for a number of **(40)** ______.",
+                "**Word list:** &nbsp; screwed &nbsp;·&nbsp; glued &nbsp;·&nbsp; parts &nbsp;·&nbsp; tools &nbsp;·&nbsp; cheaper &nbsp;·&nbsp; faster &nbsp;·&nbsp; months &nbsp;·&nbsp; years &nbsp;·&nbsp; instructions"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "End of the Reading test",
+          "text": [
+            "Check your answers on the [answers page](practical-english/ielts/general-training-test-1/answers/), then go on to [General Training Writing](practical-english/ielts/general-training-test-1/writing/)."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/general-training-test-1/writing",
+      "title": "IELTS General Training Practice Test 1: Writing",
+      "metaTitle": "IELTS General Training Writing Practice: Letter and Essay | RCF English",
+      "description": "An original IELTS General Training Writing test: a Task 1 letter to a hotel and a Task 2 essay on compulsory voluntary work, with what each task is marked on.",
+      "keywords": "IELTS general training writing task 1 letter practice, IELTS GT task 2 essay practice, IELTS letter to hotel",
+      "kicker": "IELTS General Training Practice Test 1",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "practice test",
+      "educationalLevel": "IELTS",
+      "breadcrumbs": [
+        { "label": "Practical English", "url": "practical-english/" },
+        { "label": "IELTS", "url": "practical-english/ielts/" },
+        { "label": "General Training Test 1", "url": "practical-english/ielts/general-training-test-1/" }
+      ],
+      "backTo": { "label": "General Training Test 1", "url": "practical-english/ielts/general-training-test-1/" },
+      "hero": { "text": "Sixty minutes for two tasks. Task 2 carries twice the weight of Task 1, so give it forty minutes." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": ["Both tasks were written by RCF English. This is not an official IELTS test."]
+        },
+        {
+          "type": "prose",
+          "heading": "Writing Task 1",
+          "level": "h2",
+          "text": [
+            "*You should spend about 20 minutes on this task.*",
+            "You recently stayed at a hotel while attending a two-day work conference. After you returned home, you realised that you had left something in your room.",
+            "**Write a letter to the manager of the hotel. In your letter:**"
+          ],
+          "bullets": [
+            "give the dates of your stay and explain why you were there",
+            "describe the item you left behind",
+            "say what you would like the hotel to do"
+          ],
+          "parts": [
+            { "text": ["*Write at least 150 words. You do* **NOT** *need to write any addresses. Begin your letter as follows:* **Dear Sir or Madam,**"] }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What Task 1 is marked on",
+          "columns": ["Criterion", "What the examiner looks for in a letter"],
+          "rows": [
+            ["Task Achievement", "All three bullet points covered and developed, the purpose clear from the start, and a tone that suits writing to a manager you have never met: polite and formal."],
+            ["Coherence and Cohesion", "One paragraph for each bullet point, in a logical order, joined with natural linking words."],
+            ["Lexical Resource", "Precise words for the item and the situation, used accurately and without repetition."],
+            ["Grammatical Range and Accuracy", "A mix of simple and complex sentences, with polite request forms such as *I would be grateful if you could...*"]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Writing Task 2",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "*You should spend about 40 minutes on this task. Write about the following topic:*",
+            "**In many countries, young people are encouraged to do unpaid voluntary work in their local community. Some people believe that this should be compulsory for all secondary school students.**",
+            "**To what extent do you agree or disagree?**",
+            "*Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words.*"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What Task 2 is marked on",
+          "columns": ["Criterion", "What the examiner looks for in the essay"],
+          "rows": [
+            ["Task Response", "A clear position on *compulsory* voluntary work, held throughout, with main ideas that are developed and supported. An essay about volunteering in general, which never deals with *compulsory*, is off the point."],
+            ["Coherence and Cohesion", "An introduction that states the position, body paragraphs with one central idea each, and a conclusion that follows from them."],
+            ["Lexical Resource", "Topic vocabulary used precisely: *civic responsibility, work experience, obligation, genuine commitment*."],
+            ["Grammatical Range and Accuracy", "Accurate complex sentences, including conditionals and concessions such as *Although...*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "End of the Writing test",
+          "text": [
+            "Compare your answers with the [model letter and model essay](practical-english/ielts/general-training-test-1/answers/#writing). For more essays, see the [10 Task 2 model essays](practical-english/ielts/model-essays/). Then sit [Practice Test 1: Speaking](practical-english/ielts/practice-test-1/speaking/), which is the same for both tests."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/general-training-test-1/answers",
+      "title": "IELTS General Training Practice Test 1: Answers",
+      "metaTitle": "IELTS General Training Practice Test Answers and Model Letter | RCF English",
+      "description": "Answer key for RCF IELTS General Training Practice Test 1: all 40 Reading answers explained, an indicative General Training band table, a model letter and a model essay with notes.",
+      "keywords": "IELTS general training reading answers, IELTS GT band score table, IELTS general training model letter, IELTS task 2 model essay voluntary work",
+      "kicker": "IELTS General Training Practice Test 1",
+      "kind": "page",
+      "schema": "LearningResource",
+      "resourceType": "answer key",
+      "educationalLevel": "IELTS",
+      "breadcrumbs": [
+        { "label": "Practical English", "url": "practical-english/" },
+        { "label": "IELTS", "url": "practical-english/ielts/" },
+        { "label": "General Training Test 1", "url": "practical-english/ielts/general-training-test-1/" }
+      ],
+      "backTo": { "label": "General Training Test 1", "url": "practical-english/ielts/general-training-test-1/" },
+      "hero": { "text": "Every answer with the words in the text that give it. Mark yourself strictly: a spelling mistake or a word over the limit loses the mark on test day." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": ["This answer key and the model answers were written by RCF English. The band table is indicative only."]
+        },
+        {
+          "type": "table",
+          "heading": "Section 1: Questions 1-14",
+          "level": "h2",
+          "columns": ["Q", "Answer", "Why"],
+          "rows": [
+            ["1", "FALSE", "Weekdays open at *6.30 a.m.*; weekends at *8.00 a.m.*"],
+            ["2", "TRUE", "*On the first Monday of every month the pool is closed until 2.00 p.m. for deep cleaning.* **Trap:** the pool is not closed all day, but the statement is only about cleaning, which does happen."],
+            ["3", "TRUE", "*Between 6.30 a.m. and 9.00 a.m. on weekdays the pool is divided into slow, medium and fast lanes.*"],
+            ["4", "FALSE", "*Inflatable toys are brought out on Sundays only.*"],
+            ["5", "FALSE", "*One adult may supervise a maximum of two children under eight.*"],
+            ["6", "NOT GIVEN", "Caps are *not compulsory*, but nothing is said about buying them anywhere."],
+            ["7", "TRUE", "*Places ... must be booked at reception at least one week in advance.*"],
+            ["8", "C", "*A single full-day workshop on a Saturday.*"],
+            ["9", "D", "*All sessions take place online by video call.*"],
+            ["10", "E", "*All ingredients are included in the course fee.*"],
+            ["11", "B", "*This course is not suitable for complete beginners.*"],
+            ["12", "C", "*Everyone who completes the workshop receives a certificate.* C is used twice, which the instructions allow."],
+            ["13", "A", "*A phone camera is perfectly acceptable.*"],
+            ["14", "B", "Ten weeks. **Trap:** Photography is eight weeks; the others are shorter."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Section 2: Questions 15-27",
+          "level": "h2",
+          "columns": ["Q", "Answer", "Why"],
+          "rows": [
+            ["15", "security gate", "*Please report to the security gate at 7.45 a.m.*"],
+            ["16", "bank details", "*the completed form with your bank details*"],
+            ["17", "induction", "*you may not operate any equipment, including pallet trucks, until you have completed the induction.* *Induction programme* is also accepted: two words."],
+            ["18", "(steel-toe) boots", "*one pair free of charge* of *steel-toe boots*. *Steel-toe boots* counts as two words because the hyphenated word is one."],
+            ["19", "half", "*at half the normal price*"],
+            ["20", "canteen", "*the covered bay beside the canteen*. **Trap:** not *car park*, where motorcycles must **not** be left."],
+            ["21", "team leader", "*obtain the approval of your team leader*"],
+            ["22", "25 / twenty-five (days)", "*After five years of continuous service, this rises to 25 days.*"],
+            ["23", "(online) staff portal", "*through the online staff portal*. Three words: within the limit."],
+            ["24", "four weeks", "A two-week holiday is more than five working days, so *at least four weeks in advance*. **Trap:** *two weeks' notice* is for shorter periods."],
+            ["25", "(the) date of request / order of request", "*leave is given in order of the date on which the requests were made*"],
+            ["26", "(before) (the) end of March", "*these days must be taken before the end of March*"],
+            ["27", "(a) medical certificate", "*send a medical certificate to the human resources office*"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Section 3: Questions 28-40",
+          "level": "h2",
+          "columns": ["Q", "Answer", "Why"],
+          "rows": [
+            ["28", "ii", "Paragraph B: the idea *began in Amsterdam* and spread across Europe and the world."],
+            ["29", "iii", "Paragraph C: glued cases, missing parts and labour costing more than a new item."],
+            ["30", "i", "Paragraph D: watching makes owners *far more likely to attempt a similar repair at home*."],
+            ["31", "v", "Paragraph E: *meeting places*, conversation, skills valued across generations."],
+            ["32", "vi", "Paragraph F: *the number of objects mended ... is tiny compared with* the waste produced. **Trap:** safety concerns are mentioned, but the paragraph as a whole is about doubts."],
+            ["33", "iv", "Paragraph G: *rules introduced in recent years require ... spare parts*."],
+            ["34", "B", "*far more likely to attempt a similar repair at home next time*. The paragraph begins by saying it is **not** for the volunteers' convenience, which rules out A and D."],
+            ["35", "C", "*the skills they spent a working life acquiring ... are once again valued by others*"],
+            ["36", "C", "*the responsibility for designing products that last should lie with manufacturers*"],
+            ["37", "glued", "*cases are glued together rather than held with screws*. **Trap:** *screwed* is the opposite."],
+            ["38", "parts", "*the replacement parts that would allow a simple fix are often impossible to buy*"],
+            ["39", "cheaper", "*buying a replacement is frequently cheaper*"],
+            ["40", "years", "*keep spare parts available for a number of years*"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Indicative band conversion: General Training Reading",
+          "level": "h2",
+          "caption": "Approximate only. IELTS sets the conversion for each live test. General Training Reading needs more correct answers for the same band than Academic Reading.",
+          "columns": ["Band", "General Training Reading (out of 40)"],
+          "rows": [
+            ["9", "40"],
+            ["8.5", "39"],
+            ["8", "37-38"],
+            ["7.5", "36"],
+            ["7", "34-35"],
+            ["6.5", "32-33"],
+            ["6", "30-31"],
+            ["5.5", "27-29"],
+            ["5", "23-26"],
+            ["4.5", "19-22"],
+            ["4", "15-18"]
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "writing",
+          "heading": "Model letter: Task 1",
+          "level": "h2",
+          "variant": "tint",
+          "text": [
+            "Dear Sir or Madam,",
+            "I stayed at your hotel from 12 to 14 March while attending the regional sales conference held in your conference suite, and I am writing because I believe I left a personal item in my room, number 318.",
+            "The item is a small black leather wallet containing my work identity card, two bank cards and a family photograph. I think I left it in the drawer of the bedside table on the morning I checked out, as I remember putting it there before I went to breakfast. Although the bank cards have now been cancelled, the photograph is of great sentimental value to me and cannot be replaced.",
+            "I would be very grateful if you could ask your housekeeping staff to check the room and your lost property records. If the wallet is found, could you please send it to me by registered post? I will, of course, pay any postage costs. Alternatively, I could arrange for a colleague who lives nearby to collect it.",
+            "Thank you in advance for your help. I look forward to hearing from you.",
+            "Yours faithfully,",
+            "Nadeesha Perera"
+          ],
+          "parts": [
+            {
+              "heading": "Why this letter works",
+              "level": "h3",
+              "bullets": [
+                "**The purpose is clear in the first sentence**, together with the dates and the reason for the stay: bullet point one is done immediately.",
+                "**The description is specific** (colour, material, contents, where it was left), and the photograph gives a reason why the matter still matters after the cards were cancelled.",
+                "**The request is polite and practical**, with an alternative, which develops bullet point three beyond a single sentence.",
+                "**Register is consistent:** *Dear Sir or Madam* is closed with *Yours faithfully*. About 180 words: comfortably over 150 without padding."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Model essay: Task 2",
+          "level": "h2",
+          "text": [
+            "Voluntary work in the community is widely praised, and it is tempting to conclude that something so beneficial should be required of every secondary school student. While I agree that schools should actively encourage volunteering, I believe that making it compulsory would undermine the very qualities that make it valuable.",
+            "Those in favour of compulsion make a strong case. Unpaid work can teach young people responsibility, introduce them to people from different backgrounds and give them practical experience that no classroom can provide. A requirement would also ensure that these benefits reach every student, not only those whose families already value community service. In countries where volunteering is part of the school curriculum, many students discover an interest they would never have found on their own.",
+            "However, the defining feature of voluntary work is that it is freely chosen. When it becomes an obligation, many students will treat it as one more box to tick, completing the minimum number of hours with little genuine commitment. Community organisations, which depend on reliable and willing helpers, may find themselves supervising reluctant teenagers rather than receiving real assistance. Furthermore, a compulsory scheme would fall hardest on students who already work part-time to support their families, adding to the pressure on those with the least free time.",
+            "A better approach, in my view, is for schools to make volunteering easy and attractive: arranging placements, recognising participation on school reports and allowing students to choose causes that matter to them. This keeps the benefits while preserving the element of choice.",
+            "In conclusion, although community service has clear value for young people, I disagree that it should be compulsory, because obligation tends to replace genuine commitment with reluctant compliance."
+          ],
+          "parts": [
+            {
+              "heading": "Why this essay works",
+              "level": "h3",
+              "bullets": [
+                "**The position is stated in the introduction and never changes:** encourage, but do not make compulsory.",
+                "**The opposing view is given properly** before being answered, which shows balance without sitting on the fence.",
+                "**Every body paragraph has one central idea**, supported with a reason and a consequence rather than a list.",
+                "**The fourth paragraph offers an alternative**, which strengthens the argument instead of simply rejecting the proposal. About 300 words."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Next",
+          "columns": "3",
+          "items": [
+            { "title": "IELTS Quick Practice", "url": "practical-english/ielts/quick-practice/", "more": "Practise", "text": ["Short activities for the question types that cost most marks."] },
+            { "title": "IELTS Writing guidance", "url": "practical-english/ielts/writing/", "more": "Read", "text": ["Letters, essays and what each band looks like."] },
+            { "title": "IELTS test types", "url": "practical-english/ielts/test-types/", "more": "Read", "text": ["Academic, General Training, UKVI and Life Skills."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "practical-english/ielts/quick-practice",
+      "title": "IELTS Quick Practice",
+      "metaTitle": "IELTS Quick Practice: True/False/Not Given, Matching Headings, Letters and Graph Language | RCF English",
+      "description": "Short IELTS practice activities that mark themselves and explain every answer: True/False/Not Given, matching headings, General Training letter register, Task 1 graph language, Task 2 vocabulary and listening traps.",
+      "keywords": "IELTS practice online free, IELTS true false not given practice, IELTS matching headings practice, IELTS letter register, IELTS graph vocabulary",
+      "kicker": "IELTS",
+      "kind": "page",
+      "scripts": ["quiz"],
+      "breadcrumbs": [
+        { "label": "Practical English", "url": "practical-english/" },
+        { "label": "IELTS", "url": "practical-english/ielts/" }
+      ],
+      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "hero": { "text": "Ten-minute activities for the IELTS question types that cost candidates the most marks. Each one marks itself and explains every answer." },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": ["All activities were written by RCF English. They are not official IELTS material."]
+        },
+        {
+          "type": "activities",
+          "heading": "Reading: True, False or Not Given",
+          "id": "tfng",
+          "eyebrow": "Academic and General Training",
+          "intro": ["The question type that separates Band 6 from Band 7. The skill is telling *contradicts* apart from *does not say*."],
+          "ids": ["ielts-tfng-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Reading: Matching headings",
+          "id": "headings",
+          "variant": "tint",
+          "eyebrow": "Academic and General Training",
+          "intro": ["Choose the heading that fits the whole paragraph, not one word in it."],
+          "ids": ["ielts-headings-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Listening: Spot the trap",
+          "id": "listening-traps",
+          "eyebrow": "Academic and General Training",
+          "intro": ["Speakers change their minds, correct themselves and mention wrong answers first. Read each line of speech and choose what you would write."],
+          "ids": ["ielts-listening-traps-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Writing Task 1: Letter register",
+          "id": "letters",
+          "variant": "tint",
+          "eyebrow": "General Training",
+          "intro": ["Formal, semi-formal or personal: the right register decides a large part of the Task 1 letter mark."],
+          "ids": ["ielts-gt-letters-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Writing Task 1: The language of graphs",
+          "id": "graphs",
+          "eyebrow": "Academic",
+          "intro": ["Match each expression to what it means about the data."],
+          "ids": ["ielts-graph-language-1"]
+        },
+        {
+          "type": "activities",
+          "heading": "Writing Task 2: Precise vocabulary",
+          "id": "vocabulary",
+          "variant": "tint",
+          "eyebrow": "Academic and General Training",
+          "intro": ["Replace general words with precise ones. Type the missing word."],
+          "ids": ["ielts-task2-vocabulary-1"]
+        },
+        {
+          "type": "cards",
+          "heading": "Full practice tests",
+          "columns": "3",
+          "items": [
+            { "title": "Academic Practice Test 1", "url": "practical-english/ielts/practice-test-1/", "more": "Start", "text": ["All four papers with answers."] },
+            { "title": "General Training Practice Test 1", "url": "practical-english/ielts/general-training-test-1/", "more": "Start", "text": ["General Training Reading and Writing, with answers."] },
+            { "title": "IELTS test types", "url": "practical-english/ielts/test-types/", "more": "Read", "text": ["Which IELTS test you need."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

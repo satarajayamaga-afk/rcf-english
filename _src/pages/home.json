@@ -156,7 +156,10 @@
           "url": "practical-english/ielts/",
           "more": "Go to IELTS Preparation",
           "links": [
-            { "label": "Full IELTS practice test with answers", "url": "practical-english/ielts/practice-test-1/" },
+            { "label": "Which IELTS test do I need?", "url": "practical-english/ielts/test-types/", "note": "Academic, General Training, UKVI, Life Skills" },
+            { "label": "Academic practice test with answers", "url": "practical-english/ielts/practice-test-1/" },
+            { "label": "General Training practice test with answers", "url": "practical-english/ielts/general-training-test-1/" },
+            { "label": "Quick practice that marks itself", "url": "practical-english/ielts/quick-practice/" },
             { "label": "Listening", "url": "practical-english/ielts/listening/" },
             { "label": "Reading", "url": "practical-english/ielts/reading/" },
             { "label": "Writing", "url": "practical-english/ielts/writing/" },
