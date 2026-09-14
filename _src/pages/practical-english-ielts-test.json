@@ -1,6 +1,5 @@
 {
   "_comment": "IELTS Academic Practice Test 1 - hub and Listening. RULES: every passage, transcript, question and answer is original RCF English work. Nothing is taken from Cambridge IELTS books, ielts.org materials, or any published practice test. IELTS is a registered trade mark of the British Council, IDP: IELTS Australia and Cambridge University Press & Assessment; RCF English is not affiliated with any of them and this is not an official test. Test format verified against the published IELTS Academic format: Listening 4 parts, 40 questions, about 30 minutes plus 10 minutes transfer; Reading 3 passages, 40 questions, 60 minutes with no extra transfer time; Writing Task 1 at least 150 words and Task 2 at least 250 words in 60 minutes; Speaking 11-14 minutes in three parts.",
-
   "pages": [
     {
       "slug": "practical-english/ielts/practice-test-1",
@@ -14,15 +13,32 @@
       "resourceType": "practice test",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
       ],
-      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "backTo": {
+        "label": "IELTS",
+        "url": "practical-english/ielts/"
+      },
       "hero": {
         "text": "Four papers, 2 hours 45 minutes of written test, and a Speaking test of 11 to 14 minutes. Everything here is original, and every answer is explained.",
         "buttons": [
-          { "label": "Start with Listening", "url": "practical-english/ielts/practice-test-1/listening/", "style": "btn--accent" },
-          { "label": "Answer key", "url": "practical-english/ielts/practice-test-1/answers/", "style": "btn--ghost-light" }
+          {
+            "label": "Start with Listening",
+            "url": "practical-english/ielts/practice-test-1/listening/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Answer key",
+            "url": "practical-english/ielts/practice-test-1/answers/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -41,13 +57,43 @@
           "heading": "What the test contains",
           "level": "h2",
           "caption": "The IELTS Academic format. Listening, Reading and Writing are taken on the same day with no break between them.",
-          "columns": ["Paper", "Time", "Questions or tasks", "Open"],
+          "columns": [
+            "Paper",
+            "Time",
+            "Questions or tasks",
+            "Open"
+          ],
           "rows": [
-            ["Listening", "About 30 minutes, plus 10 minutes to transfer answers on the paper test", "4 parts, 40 questions", "[Listening](practical-english/ielts/practice-test-1/listening/)"],
-            ["Reading (Academic)", "60 minutes, with no extra transfer time", "3 passages, 40 questions", "[Reading](practical-english/ielts/practice-test-1/reading/)"],
-            ["Writing (Academic)", "60 minutes", "Task 1 at least 150 words, Task 2 at least 250 words", "[Writing](practical-english/ielts/practice-test-1/writing/)"],
-            ["Speaking", "11 to 14 minutes", "3 parts, with a one-minute preparation before Part 2", "[Speaking](practical-english/ielts/practice-test-1/speaking/)"],
-            ["Answers and model answers", "-", "Full key, band conversion, model answers with examiner-style notes", "[Answers](practical-english/ielts/practice-test-1/answers/)"]
+            [
+              "Listening",
+              "About 30 minutes, plus 10 minutes to transfer answers on the paper test",
+              "4 parts, 40 questions",
+              "[Listening](practical-english/ielts/practice-test-1/listening/)"
+            ],
+            [
+              "Reading (Academic)",
+              "60 minutes, with no extra transfer time",
+              "3 passages, 40 questions",
+              "[Reading](practical-english/ielts/practice-test-1/reading/)"
+            ],
+            [
+              "Writing (Academic)",
+              "60 minutes",
+              "Task 1 at least 150 words, Task 2 at least 250 words",
+              "[Writing](practical-english/ielts/practice-test-1/writing/)"
+            ],
+            [
+              "Speaking",
+              "11 to 14 minutes",
+              "3 parts, with a one-minute preparation before Part 2",
+              "[Speaking](practical-english/ielts/practice-test-1/speaking/)"
+            ],
+            [
+              "Answers and model answers",
+              "-",
+              "Full key, band conversion, model answers with examiner-style notes",
+              "[Answers](practical-english/ielts/practice-test-1/answers/)"
+            ]
           ]
         },
         {
@@ -68,10 +114,30 @@
             "The Listening transcripts are printed in full so a teacher, parent or study partner can read them aloud. This is the one part of the test you cannot sit alone from this page."
           ],
           "items": [
-            { "title": "Give the candidate the questions only", "text": ["Print the Listening page and cut off or fold back the transcript section. The candidate must see the questions before the reading begins, exactly as in the real test."] },
-            { "title": "Read at a natural speaking pace", "text": ["About 150 words a minute. Do not slow down for the answers and do not stress them. Read each part **once only** - IELTS Listening is never repeated."] },
-            { "title": "Keep the pauses", "text": ["The transcript marks where to pause. These give the candidate time to read ahead, which is when most of the real work is done."] },
-            { "title": "Allow 10 minutes at the end", "text": ["On the paper test, candidates copy their answers onto an answer sheet in 10 extra minutes. Spelling and grammar are marked, so this time matters."] }
+            {
+              "title": "Give the candidate the questions only",
+              "text": [
+                "Print the Listening page and cut off or fold back the transcript section. The candidate must see the questions before the reading begins, exactly as in the real test."
+              ]
+            },
+            {
+              "title": "Read at a natural speaking pace",
+              "text": [
+                "About 150 words a minute. Do not slow down for the answers and do not stress them. Read each part **once only** - IELTS Listening is never repeated."
+              ]
+            },
+            {
+              "title": "Keep the pauses",
+              "text": [
+                "The transcript marks where to pause. These give the candidate time to read ahead, which is when most of the real work is done."
+              ]
+            },
+            {
+              "title": "Allow 10 minutes at the end",
+              "text": [
+                "On the paper test, candidates copy their answers onto an answer sheet in 10 extra minutes. Spelling and grammar are marked, so this time matters."
+              ]
+            }
           ]
         },
         {
@@ -90,15 +156,38 @@
           "heading": "Before you start",
           "level": "h2",
           "items": [
-            { "title": "IELTS overview", "url": "practical-english/ielts/", "text": ["What the test is, who needs it, and how bands work."] },
-            { "title": "IELTS Reading", "url": "practical-english/ielts/reading/", "text": ["The question types and how to handle each one."] },
-            { "title": "IELTS Writing", "url": "practical-english/ielts/writing/", "text": ["Both tasks, the four marking criteria and how they are weighted."] },
-            { "title": "10 model Task 2 essays", "url": "practical-english/ielts/model-essays/", "text": ["Every question type, with the reasoning behind each essay."] }
+            {
+              "title": "IELTS overview",
+              "url": "practical-english/ielts/",
+              "text": [
+                "What the test is, who needs it, and how bands work."
+              ]
+            },
+            {
+              "title": "IELTS Reading",
+              "url": "practical-english/ielts/reading/",
+              "text": [
+                "The question types and how to handle each one."
+              ]
+            },
+            {
+              "title": "IELTS Writing",
+              "url": "practical-english/ielts/writing/",
+              "text": [
+                "Both tasks, the four marking criteria and how they are weighted."
+              ]
+            },
+            {
+              "title": "10 model Task 2 essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "Every question type, with the reasoning behind each essay."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/practice-test-1/listening",
       "title": "IELTS Practice Test 1: Listening",
@@ -111,11 +200,23 @@
       "resourceType": "practice test",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Practice Test 1", "url": "practical-english/ielts/practice-test-1/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Practice Test 1",
+          "url": "practical-english/ielts/practice-test-1/"
+        }
       ],
-      "backTo": { "label": "Practice Test 1", "url": "practical-english/ielts/practice-test-1/" },
+      "backTo": {
+        "label": "Practice Test 1",
+        "url": "practical-english/ielts/practice-test-1/"
+      },
       "hero": {
         "text": "Four parts. Forty questions. About thirty minutes. You hear everything once."
       },
@@ -180,28 +281,44 @@
             {
               "heading": "Questions 11 to 14",
               "level": "h3",
-              "text": ["**Choose the correct letter, A, B or C.**"],
-              "parts": [
-                {
-                  "heading": "11. The reserve was originally",
-                  "level": "h4",
-                  "bullets": ["**A** farmland.", "**B** a quarry.", "**C** a railway yard."]
-                },
-                {
-                  "heading": "12. The warden says the biggest change in the last ten years has been",
-                  "level": "h4",
-                  "bullets": ["**A** the number of visitors.", "**B** the return of otters.", "**C** the loss of the reed beds."]
-                },
-                {
-                  "heading": "13. New volunteers are asked to",
-                  "level": "h4",
-                  "bullets": ["**A** work a fixed day each week.", "**B** attend a training weekend first.", "**C** sign in at the office on arrival."]
-                },
-                {
-                  "heading": "14. The warden is most concerned about volunteers",
-                  "level": "h4",
-                  "bullets": ["**A** disturbing nesting birds.", "**B** getting lost on the marsh.", "**C** leaving gates open."]
-                }
+              "text": [
+                "**Choose the correct letter, A, B or C.**"
+              ]
+            },
+            {
+              "heading": "11. The reserve was originally",
+              "level": "h4",
+              "bullets": [
+                "**A** farmland.",
+                "**B** a quarry.",
+                "**C** a railway yard."
+              ]
+            },
+            {
+              "heading": "12. The warden says the biggest change in the last ten years has been",
+              "level": "h4",
+              "bullets": [
+                "**A** the number of visitors.",
+                "**B** the return of otters.",
+                "**C** the loss of the reed beds."
+              ]
+            },
+            {
+              "heading": "13. New volunteers are asked to",
+              "level": "h4",
+              "bullets": [
+                "**A** work a fixed day each week.",
+                "**B** attend a training weekend first.",
+                "**C** sign in at the office on arrival."
+              ]
+            },
+            {
+              "heading": "14. The warden is most concerned about volunteers",
+              "level": "h4",
+              "bullets": [
+                "**A** disturbing nesting birds.",
+                "**B** getting lost on the marsh.",
+                "**C** leaving gates open."
               ]
             },
             {
@@ -213,13 +330,14 @@
                 "**A** a bird hide &nbsp; **B** a wildflower meadow &nbsp; **C** a boardwalk &nbsp; **D** a car park &nbsp; **E** a pond for schools &nbsp; **F** a tool store &nbsp; **G** a bat roost &nbsp; **H** a viewing tower"
               ],
               "numbered": [
-                "15. Kestrel Field: ............",
-                "16. The Old Quarry: ............",
-                "17. Fenwick Marsh: ............",
-                "18. Alder Wood: ............",
-                "19. The Long Bank: ............",
-                "20. Mill Corner: ............"
-              ]
+                "Kestrel Field: ............",
+                "The Old Quarry: ............",
+                "Fenwick Marsh: ............",
+                "Alder Wood: ............",
+                "The Long Bank: ............",
+                "Mill Corner: ............"
+              ],
+              "start": 15
             }
           ]
         },
@@ -234,28 +352,44 @@
             {
               "heading": "Questions 21 to 24",
               "level": "h3",
-              "text": ["**Choose the correct letter, A, B or C.**"],
-              "parts": [
-                {
-                  "heading": "21. Leo chose the topic of urban bees because",
-                  "level": "h4",
-                  "bullets": ["**A** he had read a recent study.", "**B** he noticed something on his route to college.", "**C** his tutor suggested it."]
-                },
-                {
-                  "heading": "22. Anya's main worry about the project is",
-                  "level": "h4",
-                  "bullets": ["**A** the amount of fieldwork required.", "**B** the reliability of the identification.", "**C** the cost of the equipment."]
-                },
-                {
-                  "heading": "23. The tutor thinks their sample size is",
-                  "level": "h4",
-                  "bullets": ["**A** too small to publish but fine for the assignment.", "**B** large enough for a journal article.", "**C** too large for the time they have."]
-                },
-                {
-                  "heading": "24. The students decide to change their method by",
-                  "level": "h4",
-                  "bullets": ["**A** visiting fewer sites more often.", "**B** photographing instead of collecting.", "**C** recruiting volunteers to help."]
-                }
+              "text": [
+                "**Choose the correct letter, A, B or C.**"
+              ]
+            },
+            {
+              "heading": "21. Leo chose the topic of urban bees because",
+              "level": "h4",
+              "bullets": [
+                "**A** he had read a recent study.",
+                "**B** he noticed something on his route to college.",
+                "**C** his tutor suggested it."
+              ]
+            },
+            {
+              "heading": "22. Anya's main worry about the project is",
+              "level": "h4",
+              "bullets": [
+                "**A** the amount of fieldwork required.",
+                "**B** the reliability of the identification.",
+                "**C** the cost of the equipment."
+              ]
+            },
+            {
+              "heading": "23. The tutor thinks their sample size is",
+              "level": "h4",
+              "bullets": [
+                "**A** too small to publish but fine for the assignment.",
+                "**B** large enough for a journal article.",
+                "**C** too large for the time they have."
+              ]
+            },
+            {
+              "heading": "24. The students decide to change their method by",
+              "level": "h4",
+              "bullets": [
+                "**A** visiting fewer sites more often.",
+                "**B** photographing instead of collecting.",
+                "**C** recruiting volunteers to help."
               ]
             },
             {
@@ -266,13 +400,14 @@
                 "**Write NO MORE THAN TWO WORDS for each answer.**"
               ],
               "numbered": [
-                "25. The students will survey each site once a ............................ .",
-                "26. Anya will be responsible for the ............................ .",
-                "27. The tutor warns that results may be affected by the ............................ .",
-                "28. Leo needs to apply for ............................ before entering the cemetery site.",
-                "29. The first draft must include a ............................ .",
-                "30. The tutor recommends reading a chapter on ............................ ."
-              ]
+                "The students will survey each site once a ............................ .",
+                "Anya will be responsible for the ............................ .",
+                "The tutor warns that results may be affected by the ............................ .",
+                "Leo needs to apply for ............................ before entering the cemetery site.",
+                "The first draft must include a ............................ .",
+                "The tutor recommends reading a chapter on ............................ ."
+              ],
+              "start": 25
             }
           ]
         },
@@ -289,33 +424,36 @@
             {
               "heading": "The history of window glass",
               "level": "h3",
-              "text": ["**Early glass**"],
-              "numbered": [
-                "31. The Romans were the first to use glass in windows, mainly to keep out the ............................ .",
-                "32. Roman window glass was usually ............................ in colour, because of impurities in the sand.",
-                "33. After the Roman period, a glazed window was almost always found in a ............................ ."
+              "text": [
+                "**Early glass**"
               ],
-              "parts": [
-                {
-                  "heading": "The crown glass method",
-                  "level": "h4",
-                  "numbered": [
-                    "34. The glassmaker spun a blob of glass into a flat ............................ .",
-                    "35. The thick centre was called a ............................ and was sold cheaply.",
-                    "36. This method limited the ............................ of a single pane."
-                  ]
-                },
-                {
-                  "heading": "Later developments",
-                  "level": "h4",
-                  "numbered": [
-                    "37. Cylinder glass allowed larger panes but the surface was often ............................ .",
-                    "38. Polishing plate glass by hand was extremely ............................ .",
-                    "39. The float process floats molten glass on a bath of liquid ............................ .",
-                    "40. The lecturer says that after 1959 glass became a ............................ rather than a luxury."
-                  ]
-                }
-              ]
+              "numbered": [
+                "The Romans were the first to use glass in windows, mainly to keep out the ............................ .",
+                "Roman window glass was usually ............................ in colour, because of impurities in the sand.",
+                "After the Roman period, a glazed window was almost always found in a ............................ ."
+              ],
+              "start": 31
+            },
+            {
+              "heading": "The crown glass method",
+              "level": "h4",
+              "numbered": [
+                "The glassmaker spun a blob of glass into a flat ............................ .",
+                "The thick centre was called a ............................ and was sold cheaply.",
+                "This method limited the ............................ of a single pane."
+              ],
+              "start": 34
+            },
+            {
+              "heading": "Later developments",
+              "level": "h4",
+              "numbered": [
+                "Cylinder glass allowed larger panes but the surface was often ............................ .",
+                "Polishing plate glass by hand was extremely ............................ .",
+                "The float process floats molten glass on a bath of liquid ............................ .",
+                "The lecturer says that after 1959 glass became a ............................ rather than a luxury."
+              ],
+              "start": 37
             }
           ]
         },
@@ -439,9 +577,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Reading", "url": "practical-english/ielts/practice-test-1/reading/", "text": ["Three passages, 40 questions, 60 minutes."] },
-            { "title": "Answer key", "url": "practical-english/ielts/practice-test-1/answers/", "text": ["All 40 Listening answers with the line that gives each one."] },
-            { "title": "IELTS Listening guidance", "url": "practical-english/ielts/listening/", "text": ["The question types and how to prepare for each."] }
+            {
+              "title": "Reading",
+              "url": "practical-english/ielts/practice-test-1/reading/",
+              "text": [
+                "Three passages, 40 questions, 60 minutes."
+              ]
+            },
+            {
+              "title": "Answer key",
+              "url": "practical-english/ielts/practice-test-1/answers/",
+              "text": [
+                "All 40 Listening answers with the line that gives each one."
+              ]
+            },
+            {
+              "title": "IELTS Listening guidance",
+              "url": "practical-english/ielts/listening/",
+              "text": [
+                "The question types and how to prepare for each."
+              ]
+            }
           ]
         }
       ]

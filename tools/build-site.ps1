@@ -187,11 +187,12 @@ function Paragraphs($items) {
     return $out
 }
 
-function Bullets($items, $ordered = $false) {
+function Bullets($items, $ordered = $false, $start = 0) {
     $list = AsList $items
     if ($list.Count -eq 0) { return '' }
     $tag = if ($ordered) { 'ol' } else { 'ul' }
     $out = "<$tag>"
+    if ($ordered -and $start -gt 1) { $out = "<ol start=`"$start`">" }
     foreach ($i in $list) { $out += '<li>' + (Inline $i) + '</li>' }
     return $out + "</$tag>"
 }
@@ -654,7 +655,11 @@ function RenderBlock($block) {
                 }
                 $html += Paragraphs (P $part 'text')
                 $html += Bullets (P $part 'bullets')
-                $html += Bullets (P $part 'numbered') $true
+                # Question lists under a heading such as "Questions 8-14" or
+                # "Questions 7 to 13" are numbered from that first number.
+                $qStart = [int](P $part 'start' 0)
+                if (-not $qStart -and ([string]$h) -match '^Questions\s+(\d+)') { $qStart = [int]$Matches[1] }
+                $html += Bullets (P $part 'numbered') $true $qStart
             }
             $html += Bullets (P $block 'bullets')
             $html += Bullets (P $block 'numbered') $true
