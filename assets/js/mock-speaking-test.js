@@ -14,18 +14,23 @@
 
 import { esc } from "./lib.js";
 import { Speech } from "./speech.js";
-import { PART1, PART2, PART3 } from "./speaking-data.js";
+import { PART1, PART2, PART3, TESTS as PLAN } from "./speaking-data.js";
 import { analyse } from "./speaking-analysis.js";
 import { SR, store, talk, listen, ensureConsent, langSelect, wireLangSelect, fmt, ERRORS } from "./voice.js";
 
 const root = document.querySelector("[data-mock-speaking]");
 const HISTORY_KEY = "rcf-speaking-history";
 
-const TESTS = PART2.map((card, i) => ({
+const find = (list, name) => {
+  const hit = list.find((x) => (Array.isArray(x) ? x[0] : x.title) === name);
+  if (!hit) throw new Error(`Mock speaking test: "${name}" is not in the question bank`);
+  return hit;
+};
+const TESTS = PLAN.map((p, i) => ({
   name: `Test ${i + 1}`,
-  part1: [PART1[(i * 2) % PART1.length], PART1[(i * 2 + 1) % PART1.length]],
-  card,
-  part3: PART3[i % PART3.length]
+  part1: p.part1.map((n) => find(PART1, n)),
+  card: find(PART2, p.card),
+  part3: find(PART3, p.part3)
 }));
 
 const FOLLOW1_WHY = ["Why?", "Why do you say that?", "Why is that?"];
