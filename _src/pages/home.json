@@ -147,6 +147,24 @@
             { "label": "Cambridge English: B1 Preliminary, B2 First, C1 Advanced", "url": "global-english/cambridge-english/" },
             { "label": "Pearson Edexcel iPrimary and iLowerSecondary", "url": "global-english/edexcel-international-curriculum/" }
           ]
+        },
+        {
+          "title": "I am Preparing for IELTS",
+          "sub": "Academic and General Training",
+          "icon": "✈️",
+          "style": "ielts",
+          "url": "practical-english/ielts/",
+          "more": "Go to IELTS Preparation",
+          "links": [
+            { "label": "Full IELTS practice test with answers", "url": "practical-english/ielts/practice-test-1/" },
+            { "label": "Listening", "url": "practical-english/ielts/listening/" },
+            { "label": "Reading", "url": "practical-english/ielts/reading/" },
+            { "label": "Writing", "url": "practical-english/ielts/writing/" },
+            { "label": "Task 1: describing graphs and charts", "url": "practical-english/ielts/graphs/" },
+            { "label": "10 Task 2 model essays", "url": "practical-english/ielts/model-essays/" },
+            { "label": "Speaking", "url": "practical-english/ielts/speaking/" },
+            { "label": "One-to-one IELTS classes", "url": "rcf-classes/ielts/", "note": "RCF Online Academy" }
+          ]
         }
       ]
     },
