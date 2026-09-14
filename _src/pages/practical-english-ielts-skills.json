@@ -16,7 +16,6 @@
     "The official sample tasks are LINKED, never copied. If a link breaks,",
     "replace it from ielts.org rather than hosting a copy."
   ],
-
   "pages": [
     {
       "slug": "practical-english/ielts/listening",
@@ -26,9 +25,23 @@
       "keywords": "IELTS listening practice, IELTS listening tips, IELTS listening answers, IELTS Sri Lanka",
       "kicker": "IELTS",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
-      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
-      "hero": { "text": "You hear it once. Everything that matters in IELTS Listening follows from that one fact." },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
+      ],
+      "backTo": {
+        "label": "IELTS",
+        "url": "practical-english/ielts/"
+      },
+      "hero": {
+        "text": "You hear it once. Everything that matters in IELTS Listening follows from that one fact."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -52,20 +65,59 @@
           "type": "table",
           "heading": "Practice: what shape of answer does each gap need?",
           "caption": "Written by RCF English. Cover the right column, decide the shape yourself, then check.",
-          "columns": ["The question says", "So the answer must be"],
+          "columns": [
+            "The question says",
+            "So the answer must be"
+          ],
           "rows": [
-            ["The class begins at ................", "A time. Listen for a clock time, and write it in one consistent format."],
-            ["Bring a ................ and a notebook.", "A singular countable noun — an object you can carry."],
-            ["The library closes on ................", "A day of the week, or a date."],
-            ["It costs ................ per person.", "An amount of money, with the currency."],
-            ["Ask for ................ at reception.", "A person's name. Expect it to be spelled out."],
-            ["The tour lasts ................", "A length of time — a number plus *minutes* or *hours*."],
-            ["Members receive a ................ discount.", "A percentage or a number."],
-            ["The room is on the ................ floor.", "An ordinal: *first, second, ground*."],
-            ["Complete the form in ................ letters.", "An adjective — almost certainly *capital* or *block*."],
-            ["The deposit is refunded within ................ days.", "A number."],
-            ["Students must not ................ in the laboratory.", "A verb in the base form."],
-            ["The equipment is kept in the ................", "A place or container — a noun, probably with *the* already given."]
+            [
+              "The class begins at ................",
+              "A time. Listen for a clock time, and write it in one consistent format."
+            ],
+            [
+              "Bring a ................ and a notebook.",
+              "A singular countable noun — an object you can carry."
+            ],
+            [
+              "The library closes on ................",
+              "A day of the week, or a date."
+            ],
+            [
+              "It costs ................ per person.",
+              "An amount of money, with the currency."
+            ],
+            [
+              "Ask for ................ at reception.",
+              "A person's name. Expect it to be spelled out."
+            ],
+            [
+              "The tour lasts ................",
+              "A length of time — a number plus *minutes* or *hours*."
+            ],
+            [
+              "Members receive a ................ discount.",
+              "A percentage or a number."
+            ],
+            [
+              "The room is on the ................ floor.",
+              "An ordinal: *first, second, ground*."
+            ],
+            [
+              "Complete the form in ................ letters.",
+              "An adjective — almost certainly *capital* or *block*."
+            ],
+            [
+              "The deposit is refunded within ................ days.",
+              "A number."
+            ],
+            [
+              "Students must not ................ in the laboratory.",
+              "A verb in the base form."
+            ],
+            [
+              "The equipment is kept in the ................",
+              "A place or container — a noun, probably with *the* already given."
+            ]
           ]
         },
         {
@@ -131,14 +183,34 @@
           "eyebrow": "IELTS",
           "columns": "3",
           "items": [
-            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, and the timing that decides your band."] },
-            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] },
-            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Cue cards and question banks written for practice."] }
+            {
+              "title": "Reading",
+              "url": "practical-english/ielts/reading/",
+              "more": "Open",
+              "text": [
+                "True, False and Not Given, and the timing that decides your band."
+              ]
+            },
+            {
+              "title": "Writing",
+              "url": "practical-english/ielts/writing/",
+              "more": "Open",
+              "text": [
+                "Task 1 and Task 2, with original practice prompts."
+              ]
+            },
+            {
+              "title": "Speaking",
+              "url": "practical-english/ielts/speaking/",
+              "more": "Open",
+              "text": [
+                "Cue cards and question banks written for practice."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/reading",
       "title": "IELTS Reading Practice",
@@ -147,9 +219,23 @@
       "keywords": "IELTS reading practice, true false not given, IELTS reading timing, IELTS Sri Lanka",
       "kicker": "IELTS",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
-      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
-      "hero": { "text": "Sixty minutes, forty questions, no transfer time at the end. Reading is not a test of reading — it is a test of finding." },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
+      ],
+      "backTo": {
+        "label": "IELTS",
+        "url": "practical-english/ielts/"
+      },
+      "hero": {
+        "text": "Sixty minutes, forty questions, no transfer time at the end. Reading is not a test of reading — it is a test of finding."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -171,11 +257,27 @@
           "type": "table",
           "heading": "The decision, in three lines",
           "caption": "Written by RCF English. Apply it mechanically. Your opinion and your general knowledge are irrelevant.",
-          "columns": ["Answer", "When to choose it", "The test to apply"],
+          "columns": [
+            "Answer",
+            "When to choose it",
+            "The test to apply"
+          ],
           "rows": [
-            ["TRUE", "The text states this, in different words.", "Can you point at the sentence that says it? Put your finger on it."],
-            ["FALSE", "The text states the **opposite**.", "Can you point at a sentence that contradicts it? Contradiction, not absence."],
-            ["NOT GIVEN", "The text neither says it nor contradicts it.", "You searched and it is simply not there. This is an answer, not a failure."]
+            [
+              "TRUE",
+              "The text states this, in different words.",
+              "Can you point at the sentence that says it? Put your finger on it."
+            ],
+            [
+              "FALSE",
+              "The text states the **opposite**.",
+              "Can you point at a sentence that contradicts it? Contradiction, not absence."
+            ],
+            [
+              "NOT GIVEN",
+              "The text neither says it nor contradicts it.",
+              "You searched and it is simply not there. This is an answer, not a failure."
+            ]
           ]
         },
         {
@@ -246,14 +348,34 @@
           "eyebrow": "IELTS",
           "columns": "3",
           "items": [
-            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the answer, and the traps in each section."] },
-            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] },
-            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Cue cards and question banks written for practice."] }
+            {
+              "title": "Listening",
+              "url": "practical-english/ielts/listening/",
+              "more": "Open",
+              "text": [
+                "Predicting the answer, and the traps in each section."
+              ]
+            },
+            {
+              "title": "Writing",
+              "url": "practical-english/ielts/writing/",
+              "more": "Open",
+              "text": [
+                "Task 1 and Task 2, with original practice prompts."
+              ]
+            },
+            {
+              "title": "Speaking",
+              "url": "practical-english/ielts/speaking/",
+              "more": "Open",
+              "text": [
+                "Cue cards and question banks written for practice."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/writing",
       "title": "IELTS Writing Practice",
@@ -262,18 +384,47 @@
       "keywords": "IELTS writing task 1, IELTS writing task 2, IELTS essay questions, IELTS letter writing, IELTS Sri Lanka",
       "kicker": "IELTS",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
-      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
-      "hero": { "text": "Two tasks, sixty minutes, and one of them is worth twice the other. Most candidates divide the time as though they were equal." },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
+      ],
+      "backTo": {
+        "label": "IELTS",
+        "url": "practical-english/ielts/"
+      },
+      "hero": {
+        "text": "Two tasks, sixty minutes, and one of them is worth twice the other. Most candidates divide the time as though they were equal."
+      },
       "blocks": [
         {
           "type": "table",
           "heading": "How the hour should divide",
           "caption": "Task 2 carries roughly twice the weight of Task 1. Plan accordingly.",
-          "columns": ["Task", "Minimum words", "Time to spend", "Worth"],
+          "columns": [
+            "Task",
+            "Minimum words",
+            "Time to spend",
+            "Worth"
+          ],
           "rows": [
-            ["Task 1 — Academic: describe a graph, chart, table, map or process. General Training: write a letter.", "150", "About 20 minutes", "One third"],
-            ["Task 2 — an essay answering a specific question.", "250", "About 40 minutes", "Two thirds"]
+            [
+              "Task 1 — Academic: describe a graph, chart, table, map or process. General Training: write a letter.",
+              "150",
+              "About 20 minutes",
+              "One third"
+            ],
+            [
+              "Task 2 — an essay answering a specific question.",
+              "250",
+              "About 40 minutes",
+              "Two thirds"
+            ]
           ]
         },
         {
@@ -296,7 +447,7 @@
                 "**3. Detail paragraph one.** The first group of data, with figures.",
                 "**4. Detail paragraph two.** The rest, with figures and comparisons.",
                 "Signal the overview so the examiner cannot miss it: *Overall, ...*",
-              "**The language of change — verbs, degree adverbs, prepositions and comparison — is set out with practice data and two full model answers on [Describing Graphs and Charts](practical-english/ielts/graphs/).**"
+                "**The language of change — verbs, degree adverbs, prepositions and comparison — is set out with practice data and two full model answers on [Describing Graphs and Charts](practical-english/ielts/graphs/).**"
               ]
             },
             {
@@ -416,14 +567,34 @@
           "eyebrow": "IELTS",
           "columns": "3",
           "items": [
-            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the answer, and the traps in each section."] },
-            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, and the timing that decides your band."] },
-            { "title": "Speaking", "url": "practical-english/ielts/speaking/", "more": "Open", "text": ["Cue cards and question banks written for practice."] }
+            {
+              "title": "Listening",
+              "url": "practical-english/ielts/listening/",
+              "more": "Open",
+              "text": [
+                "Predicting the answer, and the traps in each section."
+              ]
+            },
+            {
+              "title": "Reading",
+              "url": "practical-english/ielts/reading/",
+              "more": "Open",
+              "text": [
+                "True, False and Not Given, and the timing that decides your band."
+              ]
+            },
+            {
+              "title": "Speaking",
+              "url": "practical-english/ielts/speaking/",
+              "more": "Open",
+              "text": [
+                "Cue cards and question banks written for practice."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/speaking",
       "title": "IELTS Speaking Practice",
@@ -432,9 +603,23 @@
       "keywords": "IELTS speaking practice, IELTS cue cards, IELTS speaking part 2, IELTS speaking questions, IELTS Sri Lanka",
       "kicker": "IELTS",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }, { "label": "IELTS", "url": "practical-english/ielts/" }],
-      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
-      "hero": { "text": "Eleven to fourteen minutes with one examiner. They are not testing your opinions, your job, or whether you sound British. They are testing whether you can keep going." },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
+      ],
+      "backTo": {
+        "label": "IELTS",
+        "url": "practical-english/ielts/"
+      },
+      "hero": {
+        "text": "Eleven to fourteen minutes with one examiner. They are not testing your opinions, your job, or whether you sound British. They are testing whether you can keep going."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -444,6 +629,14 @@
             "**Answer, then reason, then example.** Three sentences, every time, until it is automatic.",
             "*Do you enjoy cooking?* — **Answer:** *Not really, to be honest.* **Reason:** *I work late and I'm usually too tired to start.* **Example:** *Last night I just heated something from the fridge and ate it standing up.*",
             "That is a Band 7 shape. The vocabulary is ordinary; the structure is what earns the mark."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Practise out loud",
+          "text": [
+            "[Speaking Practice](speaking-practice/) asks you Part 1, Part 2 and Part 3 questions, times you, shows what you said and gives feedback on length, speed, pauses, reasons, examples and vocabulary."
           ]
         },
         {
@@ -559,9 +752,30 @@
           "eyebrow": "IELTS",
           "columns": "3",
           "items": [
-            { "title": "Listening", "url": "practical-english/ielts/listening/", "more": "Open", "text": ["Predicting the answer, and the traps in each section."] },
-            { "title": "Reading", "url": "practical-english/ielts/reading/", "more": "Open", "text": ["True, False and Not Given, and the timing that decides your band."] },
-            { "title": "Writing", "url": "practical-english/ielts/writing/", "more": "Open", "text": ["Task 1 and Task 2, with original practice prompts."] }
+            {
+              "title": "Listening",
+              "url": "practical-english/ielts/listening/",
+              "more": "Open",
+              "text": [
+                "Predicting the answer, and the traps in each section."
+              ]
+            },
+            {
+              "title": "Reading",
+              "url": "practical-english/ielts/reading/",
+              "more": "Open",
+              "text": [
+                "True, False and Not Given, and the timing that decides your band."
+              ]
+            },
+            {
+              "title": "Writing",
+              "url": "practical-english/ielts/writing/",
+              "more": "Open",
+              "text": [
+                "Task 1 and Task 2, with original practice prompts."
+              ]
+            }
           ]
         }
       ]

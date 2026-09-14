@@ -4764,3 +4764,30 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
 .chart__data { margin-top: var(--sp-2); }
 .chart__data summary { cursor: pointer; font-weight: 650; color: var(--teal-700); min-height: 40px; display: flex; align-items: center; }
 @media print { .chart__data { display: none; } .chart { border: 0; padding: 0; } }
+
+/* Speaking practice */
+.sp { display: grid; gap: var(--sp-3); max-width: 56rem; }
+.sp__modes { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.sp__mode { font: inherit; font-weight: 650; padding: 0.55rem 0.95rem; min-height: 44px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface); color: var(--navy-700); cursor: pointer; }
+.sp__mode[aria-selected="true"] { background: var(--navy-800); border-color: var(--navy-800); color: #fff; }
+.sp__intro { margin: 0; color: var(--ink-700); }
+.sp__row { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
+.sp__row .field { margin: 0; flex: 1 1 16rem; }
+.sp__row select { width: 100%; }
+.sp__card { padding: var(--sp-3) var(--sp-4); border-left: 4px solid var(--teal-600); background: var(--teal-050); border-radius: var(--radius-sm); }
+.sp__card p { margin: 0 0 0.4rem; }
+.sp__card ul { margin: 0.2rem 0 0.5rem; }
+.sp__prompt { font-size: 1.15rem; font-weight: 650; color: var(--navy-800); }
+.sp__prompt--read { font-size: 1.35rem; line-height: 1.5; }
+.sp__controls { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; }
+.sp__clock { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--navy-700); }
+.sp__status { margin: 0; font-weight: 600; color: var(--navy-700); }
+.sp__status:empty { display: none; }
+.sp__live { padding: var(--sp-3) var(--sp-4); border: 2px dashed var(--teal-600); border-radius: var(--radius-md); font-size: 1.1rem; line-height: 1.6; min-height: 4rem; background: #fff; }
+.sp__result textarea { width: 100%; font: inherit; line-height: 1.6; padding: var(--sp-2); }
+.sp__stats { font-weight: 650; color: var(--navy-700); }
+.sp__align { font-size: 1.25rem; line-height: 2; margin: 0 0 0.25rem; }
+.sp__w { padding: 0.05rem 0.3rem; border-radius: 6px; }
+.sp__w--ok { background: #e3f4ec; color: #0b5e4c; }
+.sp__w--miss { font: inherit; border: 0; background: #fdf0d8; color: #7a4d00; text-decoration: underline dotted; cursor: pointer; }
+.sp__consent p { margin: 0 0 0.6rem; }

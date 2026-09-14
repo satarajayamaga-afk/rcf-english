@@ -253,6 +253,118 @@
       ]
     },
     {
+      "slug": "speaking-practice",
+      "title": "Speaking Practice",
+      "metaTitle": "IELTS Speaking and Spoken English Practice with Speech Recognition | RCF English",
+      "description": "Speak your answers to IELTS Speaking Part 1, 2 and 3 questions, read sentences aloud and handle everyday situations. Your browser turns your speech into text and the page gives feedback on length, speed, pauses, reasons, examples, linking phrases and vocabulary.",
+      "keywords": "IELTS speaking practice online, speaking practice speech recognition, IELTS cue card practice, spoken English practice Sri Lanka, pronunciation practice read aloud, English speaking test practice free",
+      "kicker": "Interactive learning",
+      "kind": "page",
+      "scripts": [
+        "speaking-practice"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Interactive Learning",
+          "url": "interactive/"
+        }
+      ],
+      "hero": {
+        "text": "Hear the question, speak your answer, and see what you said. The page checks the things a computer can hear in your words: how long and how fast you spoke, whether you gave reasons and examples, and how varied your vocabulary was."
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "mount": "speaking",
+          "heading": "Speak and check",
+          "noscript": "Speaking practice needs JavaScript. You can still read the guides to [IELTS Speaking](practical-english/ielts/speaking/) and [Spoken English](practical-english/spoken-english/)."
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Getting the best results",
+          "bullets": [
+            "Use **Chrome** or **Edge** on a computer or Android phone, or **Safari** on an iPhone or iPad. Firefox does not recognise speech; you can still use the timer and type your answer.",
+            "Find a quiet place and hold the phone about a hand-width from your mouth.",
+            "If the computer often mishears you, choose **English (India)** in the list. It is often better with Sri Lankan accents.",
+            "Speech recognition makes mistakes, especially with names. Correct the transcript, then press **Check again**.",
+            "Speak to the examiner, not the screen: answer, give a reason, add a detail."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "How the feedback works",
+          "items": [
+            {
+              "q": "Does it give me an IELTS band score?",
+              "a": [
+                "No. A band score depends on grammar, pronunciation and how well ideas are developed, judged by a trained examiner. A computer counting words cannot do that honestly, so this page does not pretend to. It gives practice guidance you can act on."
+              ]
+            },
+            {
+              "q": "What does it check?",
+              "a": [
+                "**All speaking tasks:** the number of words, speaking time and speed, long pauses, reasons (*because*, *so*), linking phrases, repeated words, over-used words such as *good* and *very*, and fillers.",
+                "**Part 2:** whether your words suggest you covered the four points on the cue card.",
+                "**Part 3:** whether you gave an example, looked at the other side, and used future language for questions about the future.",
+                "**Read aloud:** which words of the sentence were recognised. A missed word may be a sound to practise, or the computer may simply have misheard.",
+                "**Everyday situations:** whether you used the language the situation needs, such as an apology, a polite request or thanks."
+              ]
+            },
+            {
+              "q": "Can it check my pronunciation?",
+              "a": [
+                "Only roughly. If a word is not recognised when you read a sentence aloud, it is worth listening to that word and trying again. But speech recognition is built to guess what you meant, so it often accepts a word even when the sound was not quite right, and it cannot hear word stress or intonation. A teacher is still the best judge of pronunciation."
+              ]
+            },
+            {
+              "q": "Where does my voice go?",
+              "a": [
+                "The speech recognition belongs to your browser, not to RCF English. **Chrome and Edge send the sound to Google, and Safari sends it to Apple**, to turn it into text. RCF English never receives your voice or your words. A short summary of each attempt (the date, the question, the number of words) is kept in your own browser so you can see your progress, and you can clear it at any time. See the [privacy policy](privacy/)."
+              ]
+            },
+            {
+              "q": "Are these real IELTS questions?",
+              "a": [
+                "No. They are original questions written by RCF English in the style of the IELTS Speaking test. They are not official IELTS material and are not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Learn before you practise",
+          "columns": "3",
+          "items": [
+            {
+              "title": "IELTS Speaking",
+              "url": "practical-english/ielts/speaking/",
+              "more": "Open",
+              "text": [
+                "How to extend an answer, and what each part of the test is looking for."
+              ]
+            },
+            {
+              "title": "Spoken English",
+              "url": "practical-english/spoken-english/",
+              "more": "Open",
+              "text": [
+                "Why spoken English is different from written English, with conversations to hear."
+              ]
+            },
+            {
+              "title": "Pronunciation",
+              "url": "practical-english/pronunciation/",
+              "more": "Open",
+              "text": [
+                "The sounds that cause the most difficulty, and how to make them."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "interactive",
       "title": "Interactive Learning",
       "description": "Free interactive English practice: grammar quizzes, fill-in-the-blank, sentence ordering, vocabulary matching, reading comprehension, literature terms and error correction.",
@@ -286,6 +398,14 @@
           "title": "New: the Listening Laboratory",
           "text": [
             "Ninety-six listening tests for Grades 6 to 11, including the Pupil's Book listening activities, with words to learn first, a choice of accent, examination conditions and printable worksheets. [Open the Listening Laboratory](listening-lab/)."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "New: Speaking Practice",
+          "text": [
+            "Speak your answers to IELTS Speaking questions, read sentences aloud and handle everyday situations. Your browser turns your speech into text and the page gives you feedback. [Open Speaking Practice](speaking-practice/)"
           ]
         },
         {
@@ -1251,8 +1371,18 @@
           "heading": "Interactive activities and tools",
           "variant": "tint",
           "text": [
-            "The quizzes, listening tests, writing practice, worksheet generator, flashcard maker, study timetable and examination timer run entirely inside your own browser. What you type and how you answer are not transmitted anywhere. No one, including RCF English, can see your answers.",
+            "The quizzes, listening tests, writing practice, worksheet generator, flashcard maker, study timetable and examination timer run entirely inside your own browser. What you type and how you answer are not transmitted anywhere. The one exception is speech recognition on the Speaking Practice page, explained below. No one, including RCF English, can see your answers.",
             "Some of these tools keep your progress or your work on your device so that it is there when you come back, as described in the next section."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Speaking practice and speech recognition",
+          "text": [
+            "The [Speaking Practice](speaking-practice/) page uses your browser's own speech recognition to turn what you say into text. **This is the one part of the site where something you do leaves your device, and it goes to your browser's maker, not to RCF English.**",
+            "When you press Start speaking, your browser asks for permission to use the microphone. While you speak, **Chrome and Microsoft Edge send the sound of your voice to Google, and Safari sends it to Apple**, which send back the words. Their own privacy policies apply to that. RCF English never receives your voice, a recording or the words.",
+            "The page explains this and asks you to confirm before you use it for the first time. It keeps a short summary of your recent attempts (the date, the question, the number of words and the speaking speed) in your own browser so you can see your progress, and you can clear it on the page at any time. This site keeps no recording of your voice anywhere.",
+            "Nothing is heard unless you press Start speaking, and recognition stops when you press Stop, when the time limit is reached or when you leave the page."
           ]
         },
         {
