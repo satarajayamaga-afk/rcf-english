@@ -607,37 +607,52 @@ function Footer() {
 function RenderBlocks($blocks) {
     $html = ''
     foreach ($block in (AsList $blocks)) {
-        # A block can depend on whether visitor statistics are switched on, so
-        # the privacy policy always describes what the site actually does.
+        # A block can depend on the visitor statistics setting, so the privacy
+        # policy always describes what the site actually does:
+        #   false        only when statistics are off
+        #   true         when any statistics service is on
+        #   "cookieless" or "google"   only for that kind of service
         $when = P $block 'whenAnalytics'
-        if ($null -ne $when -and [bool]$when -ne [bool]$script:AnalyticsOn) { continue }
+        if ($null -ne $when) {
+            if ($when -is [bool]) { if ($when -ne $script:AnalyticsOn) { continue } }
+            elseif ([string]$when -ne $script:AnalyticsKind) { continue }
+        }
         $html += (RenderBlock $block)
     }
     return $html.Replace('[[analytics-service]]', $script:AnalyticsName)
 }
 
-# Visitor statistics. Both supported services are cookieless and record page
-# views only. Nothing is added to any page until an ID is set in config.json.
+# Visitor statistics. Nothing is added to any page until an ID is set in
+# config.json. Cloudflare and GoatCounter are cookieless; Google Analytics
+# sets cookies, and the privacy policy says so when it is chosen.
 $script:AnalyticsOn = $false
+$script:AnalyticsKind = ''
 $script:AnalyticsHtml = ''
 $script:AnalyticsName = ''
 $analyticsCfg = P $script:Config 'analytics'
 if ($analyticsCfg) {
     $aProvider = ([string](P $analyticsCfg 'provider' '')).ToLowerInvariant()
     $aId = ([string](P $analyticsCfg 'id' '')).Trim()
-    if ($aId -and $aProvider -eq 'cloudflare') {
+    if ($aId -and $aProvider -eq 'google') {
+        if ($aId -notmatch '^G-[A-Z0-9]+$') { throw "config.json analytics.id does not look like a Google Analytics measurement ID (G-...)" }
+        $script:AnalyticsHtml = '<script async src="https://www.googletagmanager.com/gtag/js?id=' + $aId + '"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","' + $aId + '");</script>'
+        $script:AnalyticsName = 'Google Analytics'
+        $script:AnalyticsKind = 'google'
+    }
+    elseif ($aId -and $aProvider -eq 'cloudflare') {
         if ($aId -notmatch '^[A-Za-z0-9]+$') { throw "config.json analytics.id does not look like a Cloudflare Web Analytics token" }
         $script:AnalyticsHtml = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=''{"token": "' + $aId + '"}''></script>'
         $script:AnalyticsName = 'Cloudflare Web Analytics'
-        $script:AnalyticsOn = $true
+        $script:AnalyticsKind = 'cookieless'
     }
     elseif ($aId -and $aProvider -eq 'goatcounter') {
         if ($aId -notmatch '^[a-z0-9-]+$') { throw "config.json analytics.id does not look like a GoatCounter site code" }
         $script:AnalyticsHtml = '<script data-goatcounter="https://' + $aId + '.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>'
         $script:AnalyticsName = 'GoatCounter'
-        $script:AnalyticsOn = $true
+        $script:AnalyticsKind = 'cookieless'
     }
-    elseif ($aId) { throw "config.json analytics.provider must be 'cloudflare' or 'goatcounter'" }
+    elseif ($aId) { throw "config.json analytics.provider must be google, cloudflare or goatcounter" }
+    $script:AnalyticsOn = [bool]$script:AnalyticsKind
 }
 
 function AnalyticsTag { return $script:AnalyticsHtml }

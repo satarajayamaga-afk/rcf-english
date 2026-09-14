@@ -1292,7 +1292,7 @@
     {
       "slug": "privacy",
       "title": "Privacy Policy",
-      "description": "What RCF English does and does not collect: no accounts and no advertising cookies; how visits are counted anonymously; what your own browser keeps on your device; and how details you give when buying from RCF Publications are used.",
+      "description": "What RCF English does and does not collect: no accounts and no advertising; how visits are counted; what your own browser keeps on your device; and how details you give when buying from RCF Publications are used.",
       "keywords": "privacy policy, cookies, data protection",
       "kicker": "Policy",
       "kind": "policy",
@@ -1313,7 +1313,7 @@
         {
           "type": "prose",
           "heading": "What this website collects",
-          "whenAnalytics": true,
+          "whenAnalytics": "cookieless",
           "text": [
             "**RCF English does not know who you are.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login and no database of visitors.",
             "This website does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you. It does count visits anonymously, as explained under *Visitor statistics* below.",
@@ -1322,13 +1322,36 @@
         },
         {
           "type": "prose",
+          "heading": "What this website collects",
+          "whenAnalytics": "google",
+          "text": [
+            "**RCF English does not know who you are.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login and no database of visitors.",
+            "This website does not use behavioural advertising, does not show adverts from an advertising network, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you. It does use **Google Analytics** to count visits, which sets cookies in your browser, as explained under *Visitor statistics* below.",
+            "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
+          ]
+        },
+        {
+          "type": "prose",
           "heading": "Visitor statistics",
-          "whenAnalytics": true,
+          "whenAnalytics": "cookieless",
           "text": [
             "To find out which lessons and resources are used, and which need improving, this site counts page visits with **[[analytics-service]]**, a statistics service that does not use cookies.",
             "**What is counted:** the page you viewed, the website that sent you (if any), the general type of device and browser, the approximate country, and how quickly the page loaded.",
             "**What is not collected:** no cookies are set and nothing is stored on your device for statistics. RCF English sees only totals, such as how many times a page was viewed. It never sees your IP address, your name or anything else that identifies you, and the statistics are not used to follow you across other websites or for advertising.",
             "If your browser or a content blocker stops the statistics script, nothing changes: every page works exactly the same."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Visitor statistics",
+          "whenAnalytics": "google",
+          "text": [
+            "To find out which lessons and resources are used, and which need improving, this site uses **Google Analytics**, a statistics service provided by Google.",
+            "**What it collects:** the pages you view and how long you stay, the website or search that brought you here, the general type of device, browser and screen, your approximate location (such as country and city), and a random identifier so that return visits can be counted. Google receives your IP address in order to work out the approximate location; Google Analytics 4 does not log or store IP addresses.",
+            "**Cookies:** Google Analytics stores cookies whose names begin with *_ga* in your browser. They do not contain your name or contact details. Unless you clear them, they last for up to two years.",
+            "**What RCF English sees:** reports of totals, such as how many people viewed a page or which countries visitors came from. RCF English cannot identify you from these reports, does not combine them with any other information about you, and does not use them for advertising.",
+            "Google's own use of this information is explained on its page [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites).",
+            "**If you prefer not to be counted:** block or delete cookies in your browser settings, use a content blocker, or install Google's [Analytics opt-out browser add-on](https://tools.google.com/dlpage/gaoptout). Every page works exactly the same without it."
           ]
         },
         {
@@ -1371,7 +1394,7 @@
           "heading": "Interactive activities and tools",
           "variant": "tint",
           "text": [
-            "The quizzes, listening tests, writing practice, worksheet generator, flashcard maker, study timetable and examination timer run entirely inside your own browser. What you type and how you answer are not transmitted anywhere. The one exception is speech recognition on the Speaking Practice page, explained below. No one, including RCF English, can see your answers.",
+            "The quizzes, listening tests, writing practice, worksheet generator, flashcard maker, study timetable and examination timer run entirely inside your own browser. What you type and how you answer are not transmitted anywhere, and visitor statistics do not record your answers. The one exception is speech recognition on the Speaking Practice page, explained below. No one, including RCF English, can see your answers.",
             "Some of these tools keep your progress or your work on your device so that it is there when you come back, as described in the next section."
           ]
         },
@@ -1379,7 +1402,7 @@
           "type": "prose",
           "heading": "Speaking practice and speech recognition",
           "text": [
-            "The [Speaking Practice](speaking-practice/) page uses your browser's own speech recognition to turn what you say into text. **This is the one part of the site where something you do leaves your device, and it goes to your browser's maker, not to RCF English.**",
+            "The [Speaking Practice](speaking-practice/) page uses your browser's own speech recognition to turn what you say into text. **Your voice goes to your browser's maker, not to RCF English.**",
             "When you press Start speaking, your browser asks for permission to use the microphone. While you speak, **Chrome and Microsoft Edge send the sound of your voice to Google, and Safari sends it to Apple**, which send back the words. Their own privacy policies apply to that. RCF English never receives your voice, a recording or the words.",
             "The page explains this and asks you to confirm before you use it for the first time. It keeps a short summary of your recent attempts (the date, the question, the number of words and the speaking speed) in your own browser so you can see your progress, and you can clear it on the page at any time. This site keeps no recording of your voice anywhere.",
             "Nothing is heard unless you press Start speaking, and recognition stops when you press Stop, when the time limit is reached or when you leave the page."
