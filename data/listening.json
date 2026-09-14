@@ -12350,6 +12350,286 @@
           "explanation": "Mr Fernando asks her to send a reference from the pharmacy before then."
         }
       ]
+    },
+    {
+      "id": "ge-7",
+      "grade": 12,
+      "rate": 1,
+      "title": "Two friends make up",
+      "description": "A/L General English, theme of Unit 3 (Relationships). Two friends talk through a misunderstanding about a birthday party and repair their friendship. Written by RCF English; the people are invented.",
+      "instructions": "Listen to the conversation. Answer the questions, then submit.",
+      "vocabulary": [
+        {
+          "word": "misunderstanding",
+          "meaning": "a situation where people understand something differently"
+        },
+        {
+          "word": "hurt",
+          "meaning": "upset by what someone did or said"
+        },
+        {
+          "word": "assume",
+          "meaning": "to believe something is true without checking"
+        },
+        {
+          "word": "trust",
+          "meaning": "the belief that someone is honest and will not let you down"
+        },
+        {
+          "word": "make up",
+          "meaning": "to become friends again after a disagreement"
+        }
+      ],
+      "script": [
+        {
+          "speaker": "Narrator",
+          "text": "Listen to two friends, Ishara and Nimasha, talking in the school library."
+        },
+        {
+          "speaker": "Ishara",
+          "text": "Nimasha, can we talk? You've hardly spoken to me for a week."
+        },
+        {
+          "speaker": "Nimasha",
+          "text": "Honestly? I was hurt. Everyone was at your birthday party except me. I saw the photos online the next morning."
+        },
+        {
+          "speaker": "Ishara",
+          "text": "But I invited you! I sent a message to the class group two weeks before."
+        },
+        {
+          "speaker": "Nimasha",
+          "text": "I left that group last month, when my phone was changed. I never saw it. And when nobody said anything, I assumed you didn't want me there."
+        },
+        {
+          "speaker": "Ishara",
+          "text": "Oh no. I thought you just didn't bother to reply. I was a bit upset too, to be honest, but I didn't want to make a fuss."
+        },
+        {
+          "speaker": "Nimasha",
+          "text": "So we were both upset, and neither of us said a word."
+        },
+        {
+          "speaker": "Ishara",
+          "text": "That's the silly part. If I had called you instead of sending a group message, none of this would have happened."
+        },
+        {
+          "speaker": "Nimasha",
+          "text": "And if I had asked you, instead of assuming the worst, I wouldn't have spent a week feeling left out. I'm sorry I went quiet on you."
+        },
+        {
+          "speaker": "Ishara",
+          "text": "I'm sorry too. Look, there's some cake left in our fridge. Come home with me after school and we'll have a party of two."
+        },
+        {
+          "speaker": "Nimasha",
+          "text": "Deal. And next time, just call me."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "Why was Nimasha upset?",
+          "options": [
+            "Ishara forgot her birthday",
+            "She thought she had not been invited to Ishara's party",
+            "Ishara posted photos of her",
+            "She was not allowed to go to the party"
+          ],
+          "answer": 1,
+          "explanation": "Everyone was at the party except her, and she thought Ishara did not want her there."
+        },
+        {
+          "kind": "short",
+          "prompt": "How did Ishara send the invitation?",
+          "answer": [
+            "a message to the class group",
+            "message to the class group",
+            "on the class group",
+            "class group",
+            "in the class group",
+            "group message",
+            "a group message"
+          ],
+          "explanation": "She sent a message to the class group two weeks before."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "Why did Nimasha not see the invitation?",
+          "options": [
+            "She was ill that week",
+            "She had left the class group",
+            "Her phone was broken on the day of the party",
+            "She ignores group messages"
+          ],
+          "answer": 1,
+          "explanation": "She left the group last month when her phone was changed."
+        },
+        {
+          "kind": "match",
+          "prompt": "Match each friend to what they did wrong, according to themselves.",
+          "pairs": [
+            {
+              "term": "Ishara",
+              "meaning": "Sent a group message instead of calling"
+            },
+            {
+              "term": "Nimasha",
+              "meaning": "Assumed the worst instead of asking"
+            }
+          ],
+          "explanation": "Ishara says she should have called; Nimasha says she should have asked instead of assuming."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "How do the friends decide to celebrate?",
+          "options": [
+            "By going to a restaurant",
+            "By planning a new party for the class",
+            "By sharing the leftover cake at Ishara's home",
+            "By posting new photos online"
+          ],
+          "answer": 2,
+          "explanation": "Ishara invites Nimasha home after school to share the leftover cake: a party of two."
+        }
+      ]
+    },
+    {
+      "id": "ge-8",
+      "grade": 12,
+      "rate": 0.95,
+      "title": "A lecture: English at home and in the world",
+      "description": "A/L General English, theme of Unit 4 (English as a Local and Global Language). A university lecturer talks about Sri Lankan English and English as a global language. Written by RCF English; the lecturer is invented and the content is general.",
+      "instructions": "Listen to the lecture and take notes. Answer the questions, then submit.",
+      "vocabulary": [
+        {
+          "word": "variety",
+          "meaning": "a form of a language used in a particular place"
+        },
+        {
+          "word": "feature",
+          "meaning": "a typical quality or part of something"
+        },
+        {
+          "word": "borrow",
+          "meaning": "here, to take a word from another language into your own"
+        },
+        {
+          "word": "correct",
+          "meaning": "right, with no mistakes"
+        },
+        {
+          "word": "confidence",
+          "meaning": "the feeling that you can do something well"
+        }
+      ],
+      "script": [
+        {
+          "speaker": "Narrator",
+          "text": "Listen to Dr Ramesh Sivakumar giving a short lecture to first-year university students."
+        },
+        {
+          "speaker": "Dr Sivakumar",
+          "text": "Good morning. Let me begin with a question. When you speak English, whose English are you speaking? Many of you would say British English, because that is what you were told at school. I would like to suggest a different answer."
+        },
+        {
+          "speaker": "Dr Sivakumar",
+          "text": "English today is not one language owned by one country. It is used by far more people as a second or foreign language than as a first language. As a result, it has many varieties: Indian English, Singaporean English, Nigerian English, and of course, Sri Lankan English."
+        },
+        {
+          "speaker": "Dr Sivakumar",
+          "text": "In Sri Lanka, Sinhala and Tamil are the official languages, and English is recognised as a link language. It allows people with different first languages to communicate, and it connects us with the rest of the world in education, business and technology."
+        },
+        {
+          "speaker": "Dr Sivakumar",
+          "text": "Sri Lankan English has its own features. We borrow words from Sinhala and Tamil, for example when we talk about food or family relationships, and we have our own expressions and ways of pronouncing words. These are not mistakes. They are part of a local variety, just as Australians have their own words and accents."
+        },
+        {
+          "speaker": "Dr Sivakumar",
+          "text": "Does this mean anything goes? No. In formal writing and in examinations, you still need standard grammar and spelling, so that readers anywhere can understand you. The skill is to know which kind of English suits which situation."
+        },
+        {
+          "speaker": "Dr Sivakumar",
+          "text": "So my message is this: stop worrying about sounding British. Aim to be clear, accurate and appropriate. Your confidence will grow when you accept that your English belongs to you."
+        }
+      ],
+      "questions": [
+        {
+          "kind": "mcq",
+          "prompt": "What answer to his question does the lecturer suggest students usually give?",
+          "options": [
+            "American English",
+            "Sri Lankan English",
+            "British English",
+            "Indian English"
+          ],
+          "answer": 2,
+          "explanation": "He says many would say British English, because that is what they were told at school."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "According to the lecturer, who uses English more?",
+          "options": [
+            "People who speak it as a first language",
+            "People who speak it as a second or foreign language",
+            "People in Britain",
+            "University students"
+          ],
+          "answer": 1,
+          "explanation": "He says far more people use it as a second or foreign language than as a first language."
+        },
+        {
+          "kind": "note",
+          "prompt": "Complete the notes on English in Sri Lanka.",
+          "lines": [
+            {
+              "label": "Official languages: Sinhala and",
+              "answer": [
+                "tamil"
+              ]
+            },
+            {
+              "label": "Role of English: a",
+              "answer": [
+                "link language",
+                "link"
+              ]
+            },
+            {
+              "label": "Sri Lankan English borrows words from Sinhala and Tamil, for example about food and family:",
+              "answer": [
+                "relationships",
+                "family relationships"
+              ]
+            }
+          ],
+          "explanation": "Sinhala and Tamil are official; English is a link language; borrowed words describe food and family relationships."
+        },
+        {
+          "kind": "mcq",
+          "prompt": "What does the lecturer say about formal writing and examinations?",
+          "options": [
+            "Any variety of English is acceptable",
+            "Standard grammar and spelling are still needed",
+            "Only British spelling is allowed",
+            "Borrowed words should always be used"
+          ],
+          "answer": 1,
+          "explanation": "He says you still need standard grammar and spelling so readers anywhere can understand you."
+        },
+        {
+          "kind": "sequence",
+          "prompt": "Put the main points of the lecture in the order he makes them.",
+          "items": [
+            "English has many varieties around the world",
+            "English is a link language in Sri Lanka",
+            "Local features are not mistakes",
+            "Formal situations still need standard English",
+            "Aim to be clear, accurate and appropriate"
+          ],
+          "explanation": "He moves from global varieties, to Sri Lanka, to local features, to formal English, and ends with his message."
+        }
+      ]
     }
   ]
 }
