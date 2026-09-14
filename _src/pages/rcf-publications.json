@@ -35,7 +35,8 @@
           "title": "Books, not resource packs",
           "text": [
             "This section lists **complete published titles**: books, ebooks, published study guides and teacher manuals published as books.",
-            "Downloadable collections of worksheets, lesson plans and model papers are a different thing, and they live in [Premium Resources](premium-resources/)."
+            "Downloadable collections of worksheets, lesson plans and model papers are a different thing, and they live in [Premium Resources](premium-resources/).",
+            "Before you buy, please read the [Terms and Conditions](rcf-publications/terms/) and the [Refund and Return Policy](rcf-publications/refund-policy/) of RCF Publications."
           ]
         },
         {
@@ -153,6 +154,181 @@
             { "title": "About RCF Publications", "text": "What the bookshop produces and how it relates to the free website.", "url": "about/rcf-publications/" },
             { "title": "Premium Resources", "text": "Downloadable worksheet, lesson-plan and model-paper collections.", "url": "premium-resources/" },
             { "title": "Free resources", "text": "Lessons, past papers and activities, free to use with no account.", "url": "resources/" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-publications/refund-policy",
+      "title": "Refund and Return Policy",
+      "metaTitle": "Refund and Return Policy | RCF Publications | RCF English",
+      "description": "The refund and return policy of RCF Publications for ebooks and other digital educational materials: when a refund or replacement may be given, and how to ask for one.",
+      "keywords": "RCF Publications refund policy, ebook refund, digital product returns",
+      "kicker": "RCF Publications",
+      "kind": "policy",
+      "breadcrumbs": [{ "label": "RCF Publications", "url": "rcf-publications/" }],
+      "backTo": { "label": "RCF Publications", "url": "rcf-publications/" },
+      "hero": { "text": "Effective date: 14 September 2026" },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this policy",
+          "text": [
+            "RCF Publications provides educational books, ebooks, learning resources and other digital educational materials to customers."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Digital products",
+          "text": [
+            "Due to the nature of digital products, purchases of ebooks and other downloadable digital materials are generally non-refundable once the product has been delivered or access has been provided.",
+            "Before purchasing, customers are encouraged to review the product description and confirm that the selected product is suitable for their requirements."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Exceptions",
+          "parts": [
+            {
+              "text": ["A refund or replacement may be considered in the following circumstances:"],
+              "bullets": [
+            "The customer was charged more than once for the same product due to a payment error.",
+            "The customer paid for a product but did not receive the purchased digital product because of a technical problem.",
+            "The delivered file is materially defective or corrupted and cannot be reasonably corrected or replaced.",
+            "RCF Publications makes an error in delivering a product different from the one purchased."
+              ]
+            },
+            { "text": ["Where appropriate, RCF Publications may provide a replacement copy or an alternative solution instead of a monetary refund."] }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Refund requests",
+          "text": [
+            "Customers should contact RCF Publications as soon as possible after identifying a problem and provide the payment details and relevant information about the purchase.",
+            "Each request will be reviewed individually. If a refund is approved, it will normally be processed through the original payment method, subject to the applicable payment provider's procedures."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Contact",
+          "variant": "tint",
+          "text": [
+            "For refund or purchase-related enquiries:",
+            "**RCF Publications**",
+            "Website: [rcfenglish.com](https://rcfenglish.com)",
+            "Email: [rcfdegreenotes@gmail.com](mailto:rcfdegreenotes@gmail.com)",
+            "Phone/WhatsApp: [070 439 5240](https://wa.me/94704395240)",
+            "See also the [Terms and Conditions](rcf-publications/terms/) of RCF Publications."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "rcf-publications/terms",
+      "title": "Terms and Conditions",
+      "metaTitle": "Terms and Conditions | RCF Publications | RCF English",
+      "description": "The terms and conditions for buying and using books, ebooks and digital educational materials from RCF Publications: payments, permitted use, copyright, refunds and privacy.",
+      "keywords": "RCF Publications terms and conditions, ebook licence, digital products terms",
+      "kicker": "RCF Publications",
+      "kind": "policy",
+      "breadcrumbs": [{ "label": "RCF Publications", "url": "rcf-publications/" }],
+      "backTo": { "label": "RCF Publications", "url": "rcf-publications/" },
+      "hero": { "text": "Effective date: 14 September 2026" },
+      "blocks": [
+        {
+          "type": "prose",
+          "text": [
+            "Welcome to RCF Publications. By purchasing or using products and services provided by RCF Publications, you agree to these Terms and Conditions."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "1. About RCF Publications",
+          "text": [
+            "RCF Publications provides educational books, ebooks, English language learning materials, grammar practice resources, teacher support materials and other educational content."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "2. Products and services",
+          "text": [
+            "Product descriptions, prices and availability may be changed or updated from time to time.",
+            "Digital products are supplied electronically. Customers are responsible for providing accurate contact information necessary to receive their purchased products."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "3. Payments",
+          "text": [
+            "Payments for products and services may be processed through third-party payment providers, including PayHere and other available payment methods.",
+            "A purchase is considered completed once the payment has been successfully received and confirmed."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "4. Digital products",
+          "text": [
+            "Unless otherwise stated, ebooks and other digital educational materials are supplied for the purchaser's personal educational use.",
+            "The purchaser must not reproduce, resell, redistribute, upload, share publicly or commercially exploit any RCF Publications material without prior written permission."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "5. Copyright",
+          "text": [
+            "All books, ebooks, text, graphics, designs and other original materials published by RCF Publications are protected by applicable copyright laws.",
+            "Purchasing a digital product does not transfer copyright ownership to the purchaser."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "6. Educational purpose",
+          "text": [
+            "Our educational materials are designed to support learning and teaching. They are provided as educational resources and should not be considered a guarantee of a particular examination result, qualification or academic outcome."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "7. Refunds",
+          "text": [
+            "Refunds and replacement requests are handled according to our [Refund and Return Policy](rcf-publications/refund-policy/).",
+            "Because digital products can be copied or accessed immediately after delivery, digital purchases are generally non-refundable once the product has been delivered, except where an eligible problem occurs."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "8. Website information",
+          "text": [
+            "We make reasonable efforts to ensure that information published on our website is accurate and up to date. However, errors or omissions may occasionally occur, and information may be corrected or updated without prior notice."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "9. Privacy",
+          "text": [
+            "Personal information submitted through our website or during purchases is handled in accordance with our [Privacy Policy](privacy/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "10. Changes to these terms",
+          "text": [
+            "RCF Publications reserves the right to update these Terms and Conditions when necessary. The latest version will be published on this website."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "11. Contact",
+          "variant": "tint",
+          "text": [
+            "For questions concerning these Terms and Conditions:",
+            "**RCF Publications**",
+            "Website: [rcfenglish.com](https://rcfenglish.com)",
+            "Email: [rcfdegreenotes@gmail.com](mailto:rcfdegreenotes@gmail.com)",
+            "Phone/WhatsApp: [070 439 5240](https://wa.me/94704395240)"
           ]
         }
       ]
