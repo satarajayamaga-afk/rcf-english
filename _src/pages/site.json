@@ -671,19 +671,21 @@
     {
       "slug": "privacy",
       "title": "Privacy Policy",
-      "description": "What RCF English does and does not collect. There are no accounts, no tracking scripts and no advertising cookies. Sponsored listings and bank-transfer payments are explained in full.",
+      "description": "What RCF English does and does not collect: no accounts, no tracking scripts and no advertising cookies; what your own browser keeps on your device; and how details you give when buying from RCF Publications are used.",
       "keywords": "privacy policy, cookies, data protection",
       "kicker": "Policy",
       "kind": "policy",
-      "hero": { "text": "The short version: this website does not collect anything about you. The longer version is below." },
+      "hero": {
+        "text": "Effective date: 14 September 2026. The short version: this website does not collect anything about you while you read and practise. Some choices are kept on your own device, and details you choose to send when buying are used only for that purchase. The longer version is below."
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "What this website collects",
           "text": [
-            "**Nothing.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login, no database and no server-side program that could record a visit.",
+            "**Nothing is sent to RCF English while you use the site.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login, no database and no server-side program that could record a visit.",
             "In particular, this website does not use analytics or tracking scripts, does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you.",
-            "The site does carry paid educational listings and sells books and resource collections. Neither of those changes the paragraph above, and both are explained in the two sections that follow."
+            "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
           ]
         },
         {
@@ -700,17 +702,64 @@
           "heading": "Buying books, resources and advertising",
           "variant": "tint",
           "text": [
-            "Books, resource collections, advertising and class fees are paid for by bank transfer, arranged directly with RCF. The site shows you the account details and what to write on the transfer; your bank handles the payment, not this website.",
-            "**No payment is processed here.** There is no checkout, no payment gateway and no card processing. You will never be asked on this site for a card number, an online-banking password, a PIN, a one-time code or an identity-document number, and you should never enter one anywhere on it.",
+            "Books, resource collections, advertising and class fees are at present paid for by bank transfer, arranged directly with RCF. The site shows you the account details and what to write on the transfer; your bank handles the payment, not this website.",
+            "**No payment is processed on this website at present.** There is no checkout, no payment gateway and no card processing. You will never be asked on this site for a card number, an online-banking password, a PIN, a one-time code or an identity-document number, and you should never enter one anywhere on it.",
             "Because a static website cannot verify a deposit, every payment is checked by a person. You send the receipt through WhatsApp, and what you send in that message reaches RCF through WhatsApp rather than through this site."
+          ],
+          "parts": [
+            {
+              "heading": "Information you give when you buy",
+              "text": [
+                "To confirm a payment and deliver a product, RCF Publications needs a few details from you, such as your name, the WhatsApp number or email address the product should be sent to, and your payment receipt or reference.",
+                "These details are used only to confirm your payment, deliver what you bought, answer questions about the purchase and handle any request under the [Refund and Return Policy](rcf-publications/refund-policy/). They are not sold, and they are not shared with anyone except where needed to complete the purchase, such as your bank or a payment provider."
+              ]
+            },
+            {
+              "heading": "Online payment providers",
+              "text": [
+                "If online payment through a provider such as PayHere is introduced, your card or account details will be entered on the provider's own secure payment page and processed by that provider under its own privacy terms. RCF Publications will not see or store your card details. This policy will be updated before any such payment method is made available.",
+                "Purchases are also covered by the [Terms and Conditions](rcf-publications/terms/) of RCF Publications."
+              ]
+            }
           ]
         },
         {
           "type": "prose",
-          "heading": "Interactive activities",
+          "heading": "Interactive activities and tools",
           "variant": "tint",
           "text": [
-            "The quizzes and practice activities run entirely inside your own browser. Your answers and your score stay on your device, are not transmitted anywhere, and disappear when you close or reload the page. No one — including RCF English — can see how you answered."
+            "The quizzes, listening tests, writing practice, worksheet generator, flashcard maker, study timetable and examination timer run entirely inside your own browser. What you type and how you answer are not transmitted anywhere. No one, including RCF English, can see your answers.",
+            "Some of these tools keep your progress or your work on your device so that it is there when you come back, as described in the next section."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What is kept on your device",
+          "text": [
+            "To remember your choices without an account, the site saves a small amount of information in your browser's own storage (known as local storage). **It stays on the device you are using. It is not sent to RCF English or to anyone else, and it is not shared with your other devices.** It can include:"
+          ],
+          "parts": [
+            {
+              "bullets": [
+                "the grade you chose on **My RCF English**, the pages you saved, and the pages you viewed recently",
+                "your stars and best scores in the interactive activities, and your chosen support level",
+                "drafts in **Writing Practice**, words typed into the flashcard maker, and your study timetable",
+                "an examination date you entered for the countdown",
+                "your reading options (text size, high contrast, spacing) and your preferred listening accent and sound settings"
+              ]
+            },
+            {
+              "heading": "Offline copies",
+              "text": [
+                "So that pages you have already opened can be read without a connection, your browser also keeps copies of those pages and of the site's style and script files. These are ordinary website files, not information about you, and they are replaced automatically when the site is updated."
+              ]
+            },
+            {
+              "heading": "Removing it",
+              "text": [
+                "You can remove everything the site has saved with the **Clear everything saved on this device** button on [My RCF English](my/), or by clearing this website's data in your browser settings. Using a private or incognito window means nothing is kept after you close it."
+              ]
+            }
           ]
         },
         {
@@ -735,7 +784,7 @@
           "type": "prose",
           "heading": "Children",
           "text": [
-            "Much of this material is intended for school students. Since nothing is collected from anybody, nothing is collected from children either. No account can be created, and no personal detail is requested anywhere on the site. Purchases and class registrations are arranged by an adult through WhatsApp and a bank transfer, away from this website."
+            "Much of this material is intended for school students. Since nothing is collected from anybody while they use the site, nothing is collected from children either. No account can be created, and no personal detail is requested anywhere on the site. Progress and choices a child makes are kept only on the device they are using. Purchases and class registrations are arranged by an adult through WhatsApp and a bank transfer, away from this website."
           ]
         },
         {
@@ -743,7 +792,8 @@
           "heading": "Changes and questions",
           "variant": "tint",
           "text": [
-            "If this policy ever changes, the new version replaces this page. If you have a question about privacy, or you would like a message you sent us to be deleted, please write to us through the [Contact](contact/) page."
+            "If this policy changes, the new version replaces this page and the effective date at the top is updated.",
+            "If you have a question about privacy, or would like details you sent when buying, or a message you sent us, to be deleted, please contact us through the [Contact](contact/) page, by email at [rcfdegreenotes@gmail.com](mailto:rcfdegreenotes@gmail.com), or on WhatsApp at [070 439 5240](https://wa.me/94704395240)."
           ]
         }
       ]
