@@ -243,11 +243,172 @@
         {
           "type": "callout",
           "style": "tip",
+          "title": "Plan your essay first",
+          "text": [
+            "The [Essay Writing Exercises](essay-writing-exercises/) help you build an essay step by step, from understanding the question to a finished draft, and then send it here to be checked."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
           "title": "How to use the checks well",
           "bullets": [
             "Write the whole answer first, without checking. Then check it once, fix what it shows, and read it through yourself.",
             "A tick from the website does not mean the answer is good. It means those simple things are in place.",
             "Print your answer with the checklist and give it to your teacher. Their marking is the one that counts."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "essay-writing-exercises",
+      "title": "Essay Writing Exercises",
+      "metaTitle": "Essay Writing Exercises: Essay Builder, Thesis, Topic Sentences and Linking Words | RCF English",
+      "description": "Interactive essay writing practice for O/L, A/L General English and IELTS: build an essay step by step with checks, improve weak paragraphs, choose the best thesis and topic sentences, practise linking words, and see how a model essay works.",
+      "keywords": "essay writing exercises, O/L English essay practice, A/L General English essay, IELTS Task 2 practice, thesis statement practice, topic sentence exercise, linking words exercise, paragraph writing practice",
+      "kicker": "Interactive learning",
+      "kind": "page",
+      "scripts": [
+        "essay-exercises"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Interactive Learning",
+          "url": "interactive/"
+        }
+      ],
+      "hero": {
+        "text": "Good essays are built, not just written. Plan and write an essay one step at a time, fix weak paragraphs, and learn what every sentence in a strong essay is for.",
+        "buttons": [
+          {
+            "label": "Start the essay builder",
+            "url": "essay-writing-exercises/?tab=builder",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Improve a paragraph",
+            "url": "essay-writing-exercises/?tab=improve",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "mount": "essays",
+          "heading": "Practise",
+          "noscript": "These exercises need JavaScript. You can still read the guide to [essay writing](ol-english/essay-writing/) and the [IELTS model essays](practical-english/ielts/model-essays/)."
+        },
+        {
+          "type": "table",
+          "heading": "Which level is right for me?",
+          "columns": [
+            "Level",
+            "Essay length",
+            "What is expected"
+          ],
+          "rows": [
+            [
+              "O/L",
+              "About 180 words",
+              "A clear opinion or both sides of a topic, in four short paragraphs, with simple, accurate language and a reason and an example for each point."
+            ],
+            [
+              "A/L General English",
+              "About 250 words",
+              "A developed argument that weighs both sides and reaches a judgement, in a formal register, with more precise vocabulary and linking."
+            ],
+            [
+              "IELTS",
+              "At least 250 words",
+              "Every part of the question answered, a clear position throughout, and a wide range of vocabulary and grammar."
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to use these exercises",
+          "items": [
+            {
+              "title": "Start with the model essays",
+              "text": [
+                "See the job every sentence does: background, thesis, topic sentence, explanation, example and conclusion."
+              ]
+            },
+            {
+              "title": "Practise the parts",
+              "text": [
+                "Choose the best thesis and topic sentences, then practise ordering a paragraph and choosing linking words."
+              ]
+            },
+            {
+              "title": "Fix weak paragraphs",
+              "text": [
+                "Rewrite a paragraph with a real problem, check it, and compare it with a model."
+              ]
+            },
+            {
+              "title": "Build a whole essay",
+              "text": [
+                "Plan and write an essay step by step, then send it to [Writing Practice](writing-practice/) for a final check and a printout for your teacher."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "About the checks",
+          "items": [
+            {
+              "q": "Is the feedback produced by artificial intelligence?",
+              "a": [
+                "No. The checks are rules written by RCF English. They look for things a computer can find reliably: whether a thesis states a position, whether a paragraph has an example, whether words are repeated, whether a conclusion adds new ideas, and so on.",
+                "They cannot judge how good your ideas are or correct every grammar mistake. Always compare your writing with the model, and ask a teacher to mark your finished essay."
+              ]
+            },
+            {
+              "q": "Is my work saved?",
+              "a": [
+                "Your essay builder work is saved in this browser only, so you can come back to it on the same device. Nothing is sent to RCF English."
+              ]
+            },
+            {
+              "q": "Are the IELTS questions real?",
+              "a": [
+                "No. They are original questions written by RCF English in the style of IELTS Writing Task 2. They are not official IELTS material."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More writing help",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Writing Practice",
+              "url": "writing-practice/",
+              "more": "Open",
+              "text": [
+                "Check a finished essay, letter or report, and print it for your teacher."
+              ]
+            },
+            {
+              "title": "O/L essay writing guide",
+              "url": "ol-english/essay-writing/",
+              "more": "Open",
+              "text": [
+                "Essay types, the five-paragraph shape and a correction checklist."
+              ]
+            },
+            {
+              "title": "IELTS model essays",
+              "url": "practical-english/ielts/model-essays/",
+              "more": "Open",
+              "text": [
+                "Ten full Task 2 essays with notes on why they work."
+              ]
+            }
           ]
         }
       ]
@@ -663,7 +824,8 @@
           "style": "tip",
           "title": "New: speak with the website",
           "text": [
-            "[Speaking Practice](speaking-practice/): answer IELTS questions and read aloud, with feedback. [IELTS Mock Speaking Test](practical-english/ielts/mock-speaking-test/): a full test with an examiner voice. [Conversation Partner](practical-english/conversation-partner/): everyday conversations out loud."
+            "[Speaking Practice](speaking-practice/): answer IELTS questions and read aloud, with feedback. [IELTS Mock Speaking Test](practical-english/ielts/mock-speaking-test/): a full test with an examiner voice. [Conversation Partner](practical-english/conversation-partner/): everyday conversations out loud.",
+            "[Essay Writing Exercises](essay-writing-exercises/): build an essay step by step, improve weak paragraphs and practise thesis statements, topic sentences and linking words."
           ]
         },
         {
@@ -1091,6 +1253,10 @@
             ],
             [
               "[Writing Practice](writing-practice/)",
+              "Complete"
+            ],
+            [
+              "[Essay Writing Exercises](essay-writing-exercises/)",
               "Complete"
             ],
             [

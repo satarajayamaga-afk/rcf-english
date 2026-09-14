@@ -270,6 +270,9 @@ function setUp() {
     setTimeout(() => document.addEventListener("pointerdown", done, { once: true }), 1000);
   });
 
+  // a link such as writing-practice/?task=free opens that task, for a draft sent from the essay builder
+  const wanted = new URLSearchParams(window.location.search).get("task");
+  if (wanted && TASKS.some((t) => t.id === wanted)) taskSel.value = wanted;
   showTask();
 }
 

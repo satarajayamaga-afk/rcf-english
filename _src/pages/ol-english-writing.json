@@ -9,14 +9,34 @@
       "kind": "lesson",
       "schema": "LearningResource",
       "educationalLevel": "Ordinary Level",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }],
-      "backTo": { "label": "O/L English", "url": "ol-english/" },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        }
+      ],
+      "backTo": {
+        "label": "O/L English",
+        "url": "ol-english/"
+      },
       "hero": {
         "text": "Read this page before any other writing page. Every writing lesson on RCF English follows these six steps, in this order, for a reason.",
         "buttons": [
-          { "label": "Emails", "url": "ol-english/emails/", "style": "btn--ghost-light" },
-          { "label": "Letters", "url": "ol-english/letters/", "style": "btn--ghost-light" },
-          { "label": "Essay Writing", "url": "ol-english/essay-writing/", "style": "btn--ghost-light" }
+          {
+            "label": "Emails",
+            "url": "ol-english/emails/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Letters",
+            "url": "ol-english/letters/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Essay Writing",
+            "url": "ol-english/essay-writing/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -33,20 +53,54 @@
           "type": "steps",
           "heading": "The six steps",
           "variant": "navy",
-          "intro": ["Every writing page on RCF English is arranged in these six sections. Work through them in order. Do not jump to step five."],
+          "intro": [
+            "Every writing page on RCF English is arranged in these six sections. Work through them in order. Do not jump to step five."
+          ],
           "items": [
-            { "title": "Understand the task", "text": ["What kind of writing is it? Who is the reader? What is it for? How long should it be? If you cannot say these four things in your own words, you are not ready to write. This step takes two minutes and saves twenty."] },
-            { "title": "Study a model", "text": ["Read a good example of the same task. Read it twice: once for what it says, once for how it is built. A model is not something to copy — it is something to take apart."] },
-            { "title": "Identify the structure", "text": ["Mark the parts of the model. Where does it open? Where does the main information sit? Where does it close? What does each paragraph do? The structure, not the words, is what you will reuse."] },
-            { "title": "Complete guided steps", "text": ["Now write, but with help. Fill in a framework, complete half-written sentences, or write one paragraph at a time to a given instruction. You are practising the structure, not yet the whole task."] },
-            { "title": "Write independently", "text": ["Now do the whole task alone, to time, without the model in front of you. This is the fifth step, not the first."] },
-            { "title": "Use a correction checklist", "text": ["Read your own work against a checklist and correct it yourself. This is the step most learners skip, and it is the step that produces the most improvement. Marking your own work is a skill, and it can be learnt."] }
+            {
+              "title": "Understand the task",
+              "text": [
+                "What kind of writing is it? Who is the reader? What is it for? How long should it be? If you cannot say these four things in your own words, you are not ready to write. This step takes two minutes and saves twenty."
+              ]
+            },
+            {
+              "title": "Study a model",
+              "text": [
+                "Read a good example of the same task. Read it twice: once for what it says, once for how it is built. A model is not something to copy — it is something to take apart."
+              ]
+            },
+            {
+              "title": "Identify the structure",
+              "text": [
+                "Mark the parts of the model. Where does it open? Where does the main information sit? Where does it close? What does each paragraph do? The structure, not the words, is what you will reuse."
+              ]
+            },
+            {
+              "title": "Complete guided steps",
+              "text": [
+                "Now write, but with help. Fill in a framework, complete half-written sentences, or write one paragraph at a time to a given instruction. You are practising the structure, not yet the whole task."
+              ]
+            },
+            {
+              "title": "Write independently",
+              "text": [
+                "Now do the whole task alone, to time, without the model in front of you. This is the fifth step, not the first."
+              ]
+            },
+            {
+              "title": "Use a correction checklist",
+              "text": [
+                "Read your own work against a checklist and correct it yourself. This is the step most learners skip, and it is the step that produces the most improvement. Marking your own work is a skill, and it can be learnt."
+              ]
+            }
           ]
         },
         {
           "type": "prose",
           "heading": "The four questions to ask before writing anything",
-          "text": ["Whatever the task — email, notice, letter, paragraph, essay, description, dialogue or speech — begin by answering these."],
+          "text": [
+            "Whatever the task — email, notice, letter, paragraph, essay, description, dialogue or speech — begin by answering these."
+          ],
           "numbered": [
             "**What form is it?** A notice looks nothing like an essay. The form is usually stated in the question, and it decides your layout.",
             "**Who is the reader?** A principal, a friend, a newspaper, a general audience. The reader decides how formal your language must be.",
@@ -59,11 +113,27 @@
           "heading": "Reader and purpose decide the language",
           "variant": "tint",
           "caption": "The same request, written for three different readers.",
-          "columns": ["Reader", "Register", "How you would write it"],
+          "columns": [
+            "Reader",
+            "Register",
+            "How you would write it"
+          ],
           "rows": [
-            ["A close friend", "Informal", "Can you send me the notes? Thanks!"],
-            ["A teacher you know", "Polite, semi-formal", "Could you please send me the notes for last week's lesson?"],
-            ["The principal, in writing", "Formal", "I should be grateful if you would arrange for the notes to be sent to me."]
+            [
+              "A close friend",
+              "Informal",
+              "Can you send me the notes? Thanks!"
+            ],
+            [
+              "A teacher you know",
+              "Polite, semi-formal",
+              "Could you please send me the notes for last week's lesson?"
+            ],
+            [
+              "The principal, in writing",
+              "Formal",
+              "I should be grateful if you would arrange for the notes to be sent to me."
+            ]
           ]
         },
         {
@@ -90,7 +160,9 @@
           "type": "checklist",
           "heading": "The general correction checklist",
           "variant": "tint",
-          "intro": ["Each writing page has its own checklist as well. Use this one for every piece of writing you do."],
+          "intro": [
+            "Each writing page has its own checklist as well. Use this one for every piece of writing you do."
+          ],
           "items": [
             "Have I written the **form** asked for — email, notice, letter, essay, speech, dialogue?",
             "Is the **tone** right for the reader?",
@@ -111,16 +183,50 @@
           "type": "cards",
           "heading": "Now apply the method",
           "columns": "4",
-          "intro": ["Each of these pages follows the six steps for one kind of writing."],
+          "intro": [
+            "Each of these pages follows the six steps for one kind of writing."
+          ],
           "items": [
-            { "title": "Emails", "url": "ol-english/emails/", "more": "Open" },
-            { "title": "Notices", "url": "ol-english/notices/", "more": "Open" },
-            { "title": "Letters", "url": "ol-english/letters/", "more": "Open" },
-            { "title": "Paragraph Writing", "url": "ol-english/paragraph-writing/", "more": "Open" },
-            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
-            { "title": "Picture Description", "url": "ol-english/picture-description/", "more": "Open" },
-            { "title": "Dialogue and Speech", "url": "ol-english/dialogue-and-speech-writing/", "more": "Open" },
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+            {
+              "title": "Emails",
+              "url": "ol-english/emails/",
+              "more": "Open"
+            },
+            {
+              "title": "Notices",
+              "url": "ol-english/notices/",
+              "more": "Open"
+            },
+            {
+              "title": "Letters",
+              "url": "ol-english/letters/",
+              "more": "Open"
+            },
+            {
+              "title": "Paragraph Writing",
+              "url": "ol-english/paragraph-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay Writing",
+              "url": "ol-english/essay-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Picture Description",
+              "url": "ol-english/picture-description/",
+              "more": "Open"
+            },
+            {
+              "title": "Dialogue and Speech",
+              "url": "ol-english/dialogue-and-speech-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            }
           ]
         },
         {
@@ -128,11 +234,12 @@
           "style": "tip",
           "variant": "tint",
           "title": "For teachers",
-          "text": ["The same six-step sequence is set out for classroom use, with guidance on how to withdraw the support gradually, on the [Guided Writing page for teachers](teacher-resources/guided-writing/)."]
+          "text": [
+            "The same six-step sequence is set out for classroom use, with guidance on how to withdraw the support gradually, on the [Guided Writing page for teachers](teacher-resources/guided-writing/)."
+          ]
         }
       ]
     },
-
     {
       "slug": "ol-english/emails",
       "title": "Writing Emails",
@@ -141,15 +248,31 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "An email is short, but it has a fixed shape. Learn the shape and this becomes one of the most reliable tasks on the paper." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "An email is short, but it has a fixed shape. Learn the shape and this becomes one of the most reliable tasks on the paper."
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "Step 1 — Understand the task",
           "eyebrow": "Step 1 of 6",
-          "text": ["Before writing a single word, answer the four questions."],
+          "text": [
+            "Before writing a single word, answer the four questions."
+          ],
           "bullets": [
             "**Form:** an email. It needs a subject line, a greeting, a body in short paragraphs and a closing.",
             "**Reader:** are you writing to a friend, or to someone in authority such as a principal, a manager or an official? This decides everything about your language.",
@@ -162,21 +285,51 @@
           "heading": "Formal or informal?",
           "variant": "tint",
           "caption": "Match your language to your reader. Mixing the two is one of the commonest faults.",
-          "columns": ["", "Formal email", "Informal email"],
+          "columns": [
+            "",
+            "Formal email",
+            "Informal email"
+          ],
           "rows": [
-            ["Greeting", "Dear Sir / Dear Madam / Dear Mr Perera,", "Dear Kamal, / Hi Kamal,"],
-            ["Opening", "I am writing to… / I should be grateful if…", "How are you? / I hope you are well."],
-            ["Language", "Full forms: I am, do not, cannot", "Short forms are fine: I'm, don't, can't"],
-            ["Requests", "Could you please… / I should be grateful if you would…", "Can you… / Could you…"],
-            ["Closing", "Yours faithfully (Dear Sir/Madam), Yours sincerely (named person)", "Best wishes, / Love, / See you soon,"],
-            ["Signature", "Your full name, and your position if relevant", "Your first name"]
+            [
+              "Greeting",
+              "Dear Sir / Dear Madam / Dear Mr Perera,",
+              "Dear Kamal, / Hi Kamal,"
+            ],
+            [
+              "Opening",
+              "I am writing to… / I should be grateful if…",
+              "How are you? / I hope you are well."
+            ],
+            [
+              "Language",
+              "Full forms: I am, do not, cannot",
+              "Short forms are fine: I'm, don't, can't"
+            ],
+            [
+              "Requests",
+              "Could you please… / I should be grateful if you would…",
+              "Can you… / Could you…"
+            ],
+            [
+              "Closing",
+              "Yours faithfully (Dear Sir/Madam), Yours sincerely (named person)",
+              "Best wishes, / Love, / See you soon,"
+            ],
+            [
+              "Signature",
+              "Your full name, and your position if relevant",
+              "Your first name"
+            ]
           ]
         },
         {
           "type": "model",
           "heading": "Step 2 — Study a model",
           "eyebrow": "Step 2 of 6",
-          "intro": ["Read it twice. The first time for what it says; the second time for how it is built."],
+          "intro": [
+            "Read it twice. The first time for what it says; the second time for how it is built."
+          ],
           "items": [
             {
               "label": "Formal email",
@@ -209,7 +362,9 @@
           "heading": "Step 3 — Identify the structure",
           "eyebrow": "Step 3 of 6",
           "variant": "tint",
-          "text": ["Strip the model down to its skeleton. This is what you will reuse, whatever the topic."],
+          "text": [
+            "Strip the model down to its skeleton. This is what you will reuse, whatever the topic."
+          ],
           "numbered": [
             "**Subject line** — the purpose in a few words.",
             "**Greeting** — matched to the reader.",
@@ -281,14 +436,34 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Letters", "url": "ol-english/letters/", "more": "Open", "text": ["The longer relative of the email, with addresses and a stricter layout."] },
-            { "title": "Notices", "url": "ol-english/notices/", "more": "Open", "text": ["Shorter still, and the marks are easy once you know the form."] },
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["More full answers with notes explaining why they work."] }
+            {
+              "title": "Letters",
+              "url": "ol-english/letters/",
+              "more": "Open",
+              "text": [
+                "The longer relative of the email, with addresses and a stricter layout."
+              ]
+            },
+            {
+              "title": "Notices",
+              "url": "ol-english/notices/",
+              "more": "Open",
+              "text": [
+                "Shorter still, and the marks are easy once you know the form."
+              ]
+            },
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open",
+              "text": [
+                "More full answers with notes explaining why they work."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "ol-english/notices",
       "title": "Writing Notices",
@@ -297,9 +472,23 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "A notice is the shortest writing task on the paper and one of the most reliable. Learn the five parts and you can write one in five minutes." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "A notice is the shortest writing task on the paper and one of the most reliable. Learn the five parts and you can write one in five minutes."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -320,7 +509,9 @@
           "type": "prose",
           "heading": "The five essential parts",
           "variant": "tint",
-          "text": ["A notice that is missing one of these is incomplete, however good the English is."],
+          "text": [
+            "A notice that is missing one of these is incomplete, however good the English is."
+          ],
           "numbered": [
             "**Name of the organisation or school** — at the top.",
             "**The word NOTICE**, or a clear heading in capitals.",
@@ -364,7 +555,9 @@
           "type": "prose",
           "heading": "Step 3 — Identify the structure",
           "eyebrow": "Step 3 of 6",
-          "text": ["Notice how little is decoration and how much is information. Copy the skeleton, not the words."],
+          "text": [
+            "Notice how little is decoration and how much is information. Copy the skeleton, not the words."
+          ],
           "bullets": [
             "**Line 1:** organisation",
             "**Line 2:** NOTICE",
@@ -378,7 +571,9 @@
           "type": "prose",
           "heading": "The language of notices",
           "variant": "tint",
-          "text": ["Notices use a particular kind of English. These are the phrases worth learning."],
+          "text": [
+            "Notices use a particular kind of English. These are the phrases worth learning."
+          ],
           "bullets": [
             "*A meeting will be held on…* / *A competition will be conducted…*",
             "*All members are requested to…* / *Students are kindly requested to…*",
@@ -392,7 +587,9 @@
           "type": "prose",
           "heading": "Step 4 — Guided practice",
           "eyebrow": "Step 4 of 6",
-          "text": ["**Task:** The school library will be closed for three days for stock-taking. Write a notice as the librarian."],
+          "text": [
+            "**Task:** The school library will be closed for three days for stock-taking. Write a notice as the librarian."
+          ],
           "numbered": [
             "Write the **organisation line** and the word NOTICE.",
             "Write today's **date**.",
@@ -407,7 +604,9 @@
           "heading": "Step 5 — Write independently",
           "eyebrow": "Step 5 of 6",
           "variant": "tint",
-          "text": ["Ten minutes, one sheet, no looking back at the model. Choose one."],
+          "text": [
+            "Ten minutes, one sheet, no looking back at the model. Choose one."
+          ],
           "bullets": [
             "A notice announcing a shramadana campaign to clean the school premises next Saturday.",
             "A notice inviting students to join the new English Speakers' Club, giving the day, time and place of the first meeting.",
@@ -437,14 +636,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Emails", "url": "ol-english/emails/", "more": "Open" },
-            { "title": "Letters", "url": "ol-english/letters/", "more": "Open" },
-            { "title": "Model Questions", "url": "ol-english/model-questions/", "more": "Open" }
+            {
+              "title": "Emails",
+              "url": "ol-english/emails/",
+              "more": "Open"
+            },
+            {
+              "title": "Letters",
+              "url": "ol-english/letters/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Questions",
+              "url": "ol-english/model-questions/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "ol-english/letters",
       "title": "Writing Letters",
@@ -453,9 +663,23 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "Letters carry a large share of the writing marks, and much of what is tested is layout — which means much of it can be learnt with certainty." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "Letters carry a large share of the writing marks, and much of what is tested is layout — which means much of it can be learnt with certainty."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -470,16 +694,52 @@
           "type": "table",
           "heading": "The two sets, side by side",
           "variant": "tint",
-          "columns": ["", "Formal letter", "Informal letter"],
+          "columns": [
+            "",
+            "Formal letter",
+            "Informal letter"
+          ],
           "rows": [
-            ["Your address", "Top right (or top left, used consistently)", "Top right"],
-            ["Date", "Below your address", "Below your address"],
-            ["Reader's address", "On the left, below the date", "Not needed"],
-            ["Greeting", "Dear Sir, / Dear Madam, / Dear Mr Silva,", "Dear Amali, / My dear Father,"],
-            ["Opening", "I am writing to…", "I hope this letter finds you well."],
-            ["Language", "Full forms, no slang, polite requests", "Natural, friendly, short forms allowed"],
-            ["Closing", "Yours faithfully (Sir/Madam) — Yours sincerely (named)", "With love, / Your loving friend, / Best wishes,"],
-            ["Signature", "Full name below the closing", "First name"]
+            [
+              "Your address",
+              "Top right (or top left, used consistently)",
+              "Top right"
+            ],
+            [
+              "Date",
+              "Below your address",
+              "Below your address"
+            ],
+            [
+              "Reader's address",
+              "On the left, below the date",
+              "Not needed"
+            ],
+            [
+              "Greeting",
+              "Dear Sir, / Dear Madam, / Dear Mr Silva,",
+              "Dear Amali, / My dear Father,"
+            ],
+            [
+              "Opening",
+              "I am writing to…",
+              "I hope this letter finds you well."
+            ],
+            [
+              "Language",
+              "Full forms, no slang, polite requests",
+              "Natural, friendly, short forms allowed"
+            ],
+            [
+              "Closing",
+              "Yours faithfully (Sir/Madam) — Yours sincerely (named)",
+              "With love, / Your loving friend, / Best wishes,"
+            ],
+            [
+              "Signature",
+              "Full name below the closing",
+              "First name"
+            ]
           ]
         },
         {
@@ -533,7 +793,9 @@
           "heading": "Step 3 — Identify the structure",
           "eyebrow": "Step 3 of 6",
           "variant": "tint",
-          "text": ["Every formal letter you write in the examination can use this skeleton."],
+          "text": [
+            "Every formal letter you write in the examination can use this skeleton."
+          ],
           "numbered": [
             "Your address, then the date.",
             "The reader's address.",
@@ -549,10 +811,42 @@
           "type": "prose",
           "heading": "Useful phrases worth learning",
           "parts": [
-            { "heading": "Formal openings", "bullets": ["I am writing to enquire about…", "I am writing to bring to your notice…", "I wish to apply for the post of…", "I should like to draw your attention to…"] },
-            { "heading": "Formal requests", "bullets": ["I should be grateful if you would kindly…", "I would request you to…", "Could you please arrange for…", "I look forward to hearing from you."] },
-            { "heading": "Informal openings", "bullets": ["I hope this letter finds you well.", "It was good to hear from you.", "I am sorry I did not write earlier.", "How are you and everyone at home?"] },
-            { "heading": "Informal closings", "bullets": ["Do write soon.", "Give my regards to your parents.", "I am looking forward to seeing you.", "Take care of yourself."] }
+            {
+              "heading": "Formal openings",
+              "bullets": [
+                "I am writing to enquire about…",
+                "I am writing to bring to your notice…",
+                "I wish to apply for the post of…",
+                "I should like to draw your attention to…"
+              ]
+            },
+            {
+              "heading": "Formal requests",
+              "bullets": [
+                "I should be grateful if you would kindly…",
+                "I would request you to…",
+                "Could you please arrange for…",
+                "I look forward to hearing from you."
+              ]
+            },
+            {
+              "heading": "Informal openings",
+              "bullets": [
+                "I hope this letter finds you well.",
+                "It was good to hear from you.",
+                "I am sorry I did not write earlier.",
+                "How are you and everyone at home?"
+              ]
+            },
+            {
+              "heading": "Informal closings",
+              "bullets": [
+                "Do write soon.",
+                "Give my regards to your parents.",
+                "I am looking forward to seeing you.",
+                "Take care of yourself."
+              ]
+            }
           ]
         },
         {
@@ -560,7 +854,9 @@
           "heading": "Step 4 — Guided practice",
           "eyebrow": "Step 4 of 6",
           "variant": "tint",
-          "text": ["**Task:** Write to the manager of a shop complaining that a bag you bought there tore within a week, and asking for a replacement."],
+          "text": [
+            "**Task:** Write to the manager of a shop complaining that a bag you bought there tore within a week, and asking for a replacement."
+          ],
           "numbered": [
             "Write **your address** and **the date** in the correct position.",
             "Write the **reader's address** and the **greeting**, and note down the closing that must go with it.",
@@ -575,7 +871,9 @@
           "type": "prose",
           "heading": "Step 5 — Write independently",
           "eyebrow": "Step 5 of 6",
-          "text": ["Twenty-five minutes, by hand, no model in front of you. Choose one."],
+          "text": [
+            "Twenty-five minutes, by hand, no model in front of you. Choose one."
+          ],
           "bullets": [
             "**Formal:** Write to the editor of a newspaper about the problem of rubbish being dumped near a school, suggesting what should be done.",
             "**Formal:** Write to the principal of your school requesting permission to start an English Speakers' Club, explaining how it would be run.",
@@ -608,14 +906,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" },
-            { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Open" }
+            {
+              "title": "Essay Writing",
+              "url": "ol-english/essay-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Common Student Mistakes",
+              "url": "ol-english/common-mistakes/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "ol-english/paragraph-writing",
       "title": "Paragraph Writing",
@@ -624,9 +933,23 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "Learn to write one good paragraph and you have learnt to write an essay, because an essay is a small number of good paragraphs in a sensible order." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "Learn to write one good paragraph and you have learnt to write an essay, because an essay is a small number of good paragraphs in a sensible order."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -642,10 +965,30 @@
           "heading": "The four parts of a paragraph",
           "variant": "tint",
           "items": [
-            { "title": "Topic sentence", "text": ["The first sentence states the idea of the paragraph. A reader who reads only this sentence should know what the paragraph is about."] },
-            { "title": "Supporting sentences", "text": ["Two or three sentences that explain, prove or expand the idea. This is where most marks are gained, and where weak paragraphs are thinnest."] },
-            { "title": "Example or detail", "text": ["One concrete instance. *Many students find it difficult* is vague; *In my class of forty, only six had a dictionary at home* is not. Detail is what makes writing convincing."] },
-            { "title": "Concluding sentence", "text": ["A closing sentence that completes the thought or links to what follows. Without it a paragraph stops rather than ends."] }
+            {
+              "title": "Topic sentence",
+              "text": [
+                "The first sentence states the idea of the paragraph. A reader who reads only this sentence should know what the paragraph is about."
+              ]
+            },
+            {
+              "title": "Supporting sentences",
+              "text": [
+                "Two or three sentences that explain, prove or expand the idea. This is where most marks are gained, and where weak paragraphs are thinnest."
+              ]
+            },
+            {
+              "title": "Example or detail",
+              "text": [
+                "One concrete instance. *Many students find it difficult* is vague; *In my class of forty, only six had a dictionary at home* is not. Detail is what makes writing convincing."
+              ]
+            },
+            {
+              "title": "Concluding sentence",
+              "text": [
+                "A closing sentence that completes the thought or links to what follows. Without it a paragraph stops rather than ends."
+              ]
+            }
           ]
         },
         {
@@ -673,13 +1016,17 @@
           "type": "prose",
           "heading": "Step 3 — Identify the structure",
           "eyebrow": "Step 3 of 6",
-          "text": ["Read the model again and label its sentences: **1** topic, **2–3** support, **4** detail, **5** conclusion. Do the same with any paragraph you meet in a comprehension passage. Once you can see the structure in other people's writing, it appears in your own."]
+          "text": [
+            "Read the model again and label its sentences: **1** topic, **2–3** support, **4** detail, **5** conclusion. Do the same with any paragraph you meet in a comprehension passage. Once you can see the structure in other people's writing, it appears in your own."
+          ]
         },
         {
           "type": "prose",
           "heading": "Joining sentences properly",
           "variant": "tint",
-          "text": ["The links between sentences are what make a paragraph read as one thought rather than a list. Use them, but do not use one in every sentence."],
+          "text": [
+            "The links between sentences are what make a paragraph read as one thought rather than a list. Use them, but do not use one in every sentence."
+          ],
           "bullets": [
             "**Adding:** also, in addition, moreover, furthermore",
             "**Giving an example:** for example, for instance, such as",
@@ -693,7 +1040,9 @@
           "type": "prose",
           "heading": "Step 4 — Guided practice",
           "eyebrow": "Step 4 of 6",
-          "text": ["**Topic:** The problem of plastic waste in our town."],
+          "text": [
+            "**Topic:** The problem of plastic waste in our town."
+          ],
           "numbered": [
             "Write **one topic sentence** naming the problem. Do not describe it yet.",
             "Write **two sentences** explaining why it is a problem.",
@@ -707,7 +1056,9 @@
           "heading": "Step 5 — Write independently",
           "eyebrow": "Step 5 of 6",
           "variant": "tint",
-          "text": ["Ten minutes for one paragraph. Choose a topic and write without a plan on paper — by now the four parts should be the plan."],
+          "text": [
+            "Ten minutes for one paragraph. Choose a topic and write without a plan on paper — by now the four parts should be the plan."
+          ],
           "bullets": [
             "The value of learning a second language",
             "A person who has influenced me",
@@ -736,14 +1087,28 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open", "text": ["Several paragraphs, organised."] },
-            { "title": "Picture Description", "url": "ol-english/picture-description/", "more": "Open" },
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+            {
+              "title": "Essay Writing",
+              "url": "ol-english/essay-writing/",
+              "more": "Open",
+              "text": [
+                "Several paragraphs, organised."
+              ]
+            },
+            {
+              "title": "Picture Description",
+              "url": "ol-english/picture-description/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "ol-english/essay-writing",
       "title": "Essay Writing",
@@ -752,27 +1117,67 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "An essay is not a long paragraph. It is a small number of paragraphs, each doing a different job, arranged in an order you decided before you began." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "An essay is not a long paragraph. It is a small number of paragraphs, each doing a different job, arranged in an order you decided before you began."
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "Step 1 — Understand the task",
           "eyebrow": "Step 1 of 6",
-          "text": ["Essay titles fall into a few types, and the type decides the shape of your answer. Identify it before you plan."]
+          "text": [
+            "Essay titles fall into a few types, and the type decides the shape of your answer. Identify it before you plan."
+          ]
         },
         {
           "type": "table",
           "heading": "Essay types and their shapes",
           "variant": "tint",
-          "columns": ["Type", "Example title", "Shape"],
+          "columns": [
+            "Type",
+            "Example title",
+            "Shape"
+          ],
           "rows": [
-            ["Descriptive", "A rainy day in my village", "Organised by place or by time, appealing to the senses"],
-            ["Narrative", "An experience I shall never forget", "Beginning, complication, climax, ending"],
-            ["Discursive", "The advantages and disadvantages of social media", "One side, the other side, then your judgement"],
-            ["Argumentative", "Should homework be abolished?", "Your position, your reasons, the opposing view answered, conclusion"],
-            ["Expository", "How a bill becomes a law", "Steps or aspects in a logical order"]
+            [
+              "Descriptive",
+              "A rainy day in my village",
+              "Organised by place or by time, appealing to the senses"
+            ],
+            [
+              "Narrative",
+              "An experience I shall never forget",
+              "Beginning, complication, climax, ending"
+            ],
+            [
+              "Discursive",
+              "The advantages and disadvantages of social media",
+              "One side, the other side, then your judgement"
+            ],
+            [
+              "Argumentative",
+              "Should homework be abolished?",
+              "Your position, your reasons, the opposing view answered, conclusion"
+            ],
+            [
+              "Expository",
+              "How a bill becomes a law",
+              "Steps or aspects in a logical order"
+            ]
           ]
         },
         {
@@ -825,10 +1230,20 @@
           ]
         },
         {
+          "type": "callout",
+          "style": "tip",
+          "title": "Practise online",
+          "text": [
+            "Build an essay step by step, improve weak paragraphs and practise topic sentences in the [Essay Writing Exercises](essay-writing-exercises/?level=O%2FL). The O/L essays there are about 180 words."
+          ]
+        },
+        {
           "type": "prose",
           "heading": "Step 4 — Guided practice",
           "eyebrow": "Step 4 of 6",
-          "text": ["**Title:** Should school uniforms be compulsory?"],
+          "text": [
+            "**Title:** Should school uniforms be compulsory?"
+          ],
           "numbered": [
             "Write a **four-line plan** — one line for each of the four paragraphs you will write. Nothing but the idea of each.",
             "Write the **introduction** only: one general sentence, one narrowing sentence, one sentence giving your position.",
@@ -842,7 +1257,9 @@
           "type": "prose",
           "heading": "Step 5 — Write independently",
           "eyebrow": "Step 5 of 6",
-          "text": ["Thirty-five minutes, by hand, with five minutes at the end reserved for checking. Choose one."],
+          "text": [
+            "Thirty-five minutes, by hand, with five minutes at the end reserved for checking. Choose one."
+          ],
           "bullets": [
             "The person I admire most",
             "Village life and city life",
@@ -876,14 +1293,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" },
-            { "title": "Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Open" },
-            { "title": "Paper II", "url": "ol-english/paper-ii/", "more": "Open" }
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination Techniques",
+              "url": "ol-english/examination-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "Paper II",
+              "url": "ol-english/paper-ii/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "ol-english/picture-description",
       "title": "Picture Description",
@@ -892,9 +1320,23 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "The mark is not for seeing the picture. It is for describing it in an order a reader can follow." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "The mark is not for seeing the picture. It is for describing it in an order a reader can follow."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -910,20 +1352,72 @@
           "heading": "An order that always works",
           "variant": "tint",
           "items": [
-            { "title": "General statement", "text": ["One sentence saying what the picture shows as a whole. *The picture shows a busy market in a small town in the early morning.*"] },
-            { "title": "Setting", "text": ["Where and when. Indoors or outdoors, town or village, time of day, weather, season."] },
-            { "title": "Foreground", "text": ["The people and objects nearest the viewer, and what they are doing. Use the present continuous."] },
-            { "title": "Background", "text": ["What is further away — buildings, hills, the road, the sky."] },
-            { "title": "Impression", "text": ["One closing sentence about the mood or what the picture suggests. *The scene gives an impression of cheerful confusion.*"] }
+            {
+              "title": "General statement",
+              "text": [
+                "One sentence saying what the picture shows as a whole. *The picture shows a busy market in a small town in the early morning.*"
+              ]
+            },
+            {
+              "title": "Setting",
+              "text": [
+                "Where and when. Indoors or outdoors, town or village, time of day, weather, season."
+              ]
+            },
+            {
+              "title": "Foreground",
+              "text": [
+                "The people and objects nearest the viewer, and what they are doing. Use the present continuous."
+              ]
+            },
+            {
+              "title": "Background",
+              "text": [
+                "What is further away — buildings, hills, the road, the sky."
+              ]
+            },
+            {
+              "title": "Impression",
+              "text": [
+                "One closing sentence about the mood or what the picture suggests. *The scene gives an impression of cheerful confusion.*"
+              ]
+            }
           ]
         },
         {
           "type": "prose",
           "heading": "The language you need",
           "parts": [
-            { "heading": "Position", "bullets": ["in the foreground / in the background / in the centre", "on the left / on the right / at the top / at the bottom", "next to, beside, behind, in front of, between, among, under, above", "in the distance / nearby"] },
-            { "heading": "Actions in progress", "bullets": ["A woman **is selling** vegetables.", "Two children **are running** towards the gate.", "Several people **are waiting** for the bus."] },
-            { "heading": "Careful guessing", "text": ["You cannot know what is happening, so do not state it as fact. Use language of appearance instead — this is often where the better marks lie."], "bullets": ["It appears to be early morning.", "The man seems to be a fisherman.", "They look as though they are waiting for someone.", "It is probably a school day, since the children are in uniform.", "Judging by the umbrellas, it may have rained earlier."] }
+            {
+              "heading": "Position",
+              "bullets": [
+                "in the foreground / in the background / in the centre",
+                "on the left / on the right / at the top / at the bottom",
+                "next to, beside, behind, in front of, between, among, under, above",
+                "in the distance / nearby"
+              ]
+            },
+            {
+              "heading": "Actions in progress",
+              "bullets": [
+                "A woman **is selling** vegetables.",
+                "Two children **are running** towards the gate.",
+                "Several people **are waiting** for the bus."
+              ]
+            },
+            {
+              "heading": "Careful guessing",
+              "text": [
+                "You cannot know what is happening, so do not state it as fact. Use language of appearance instead — this is often where the better marks lie."
+              ],
+              "bullets": [
+                "It appears to be early morning.",
+                "The man seems to be a fisherman.",
+                "They look as though they are waiting for someone.",
+                "It is probably a school day, since the children are in uniform.",
+                "Judging by the umbrellas, it may have rained earlier."
+              ]
+            }
           ]
         },
         {
@@ -955,14 +1449,18 @@
           "type": "prose",
           "heading": "Step 3 — Identify the structure",
           "eyebrow": "Step 3 of 6",
-          "text": ["Mark the model: sentence 1 is the general statement; the long middle paragraph moves setting → foreground → background; the last sentence gives the impression. Notice that the middle paragraph never jumps backwards. Once the description has moved to the background, it stays there."]
+          "text": [
+            "Mark the model: sentence 1 is the general statement; the long middle paragraph moves setting → foreground → background; the last sentence gives the impression. Notice that the middle paragraph never jumps backwards. Once the description has moved to the background, it stays there."
+          ]
         },
         {
           "type": "prose",
           "heading": "Step 4 — Guided practice",
           "eyebrow": "Step 4 of 6",
           "variant": "tint",
-          "text": ["Take any photograph — in a newspaper, in a textbook, or on a wall at home — and do this."],
+          "text": [
+            "Take any photograph — in a newspaper, in a textbook, or on a wall at home — and do this."
+          ],
           "numbered": [
             "Write **one general sentence** about what it shows.",
             "Write **two sentences** about the setting: where, when, what the weather is like.",
@@ -976,7 +1474,9 @@
           "type": "prose",
           "heading": "Step 5 — Write independently",
           "eyebrow": "Step 5 of 6",
-          "text": ["Fifteen minutes, about 100 words, on a picture you have not described before. Do it three times in a week, with three different pictures. This task improves faster with repetition than almost any other."]
+          "text": [
+            "Fifteen minutes, about 100 words, on a picture you have not described before. Do it three times in a week, with three different pictures. This task improves faster with repetition than almost any other."
+          ]
         },
         {
           "type": "checklist",
@@ -1000,14 +1500,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Paragraph Writing", "url": "ol-english/paragraph-writing/", "more": "Open" },
-            { "title": "Grammar: prepositions", "url": "ol-english/grammar/", "more": "Open" },
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+            {
+              "title": "Paragraph Writing",
+              "url": "ol-english/paragraph-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Grammar: prepositions",
+              "url": "ol-english/grammar/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "ol-english/dialogue-and-speech-writing",
       "title": "Dialogue and Speech Writing",
@@ -1016,9 +1527,23 @@
       "kicker": "O/L English writing",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "O/L English", "url": "ol-english/" }, { "label": "Guided Writing", "url": "ol-english/guided-writing/" }],
-      "backTo": { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-      "hero": { "text": "Two tasks, one page. Both are spoken English written down — and both are marked down when they sound like an essay read aloud." },
+      "breadcrumbs": [
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "Guided Writing",
+          "url": "ol-english/guided-writing/"
+        }
+      ],
+      "backTo": {
+        "label": "Guided Writing",
+        "url": "ol-english/guided-writing/"
+      },
+      "hero": {
+        "text": "Two tasks, one page. Both are spoken English written down — and both are marked down when they sound like an essay read aloud."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -1160,9 +1685,24 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Spoken English", "url": "practical-english/spoken-english/", "more": "Open", "text": ["Speaking practice for real situations."] },
-            { "title": "Essay Writing", "url": "ol-english/essay-writing/", "more": "Open" },
-            { "title": "Model Answers", "url": "ol-english/model-answers/", "more": "Open" }
+            {
+              "title": "Spoken English",
+              "url": "practical-english/spoken-english/",
+              "more": "Open",
+              "text": [
+                "Speaking practice for real situations."
+              ]
+            },
+            {
+              "title": "Essay Writing",
+              "url": "ol-english/essay-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]

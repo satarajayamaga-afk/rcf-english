@@ -16,7 +16,6 @@
     "cannot issue a 301, so each emits a canonical tag, a meta refresh and a",
     "visible link. They are excluded from the sitemap and the search index."
   ],
-
   "pages": [
     {
       "slug": "general-english",
@@ -27,7 +26,10 @@
       "kicker": "G.C.E. A/L",
       "kind": "page",
       "breadcrumbs": [],
-      "backTo": { "label": "Home", "url": "" },
+      "backTo": {
+        "label": "Home",
+        "url": ""
+      },
       "hero": {
         "text": "G.C.E. Advanced Level General English, Subject 13, taken in Grades 12 and 13. This is a separate subject from A/L English Literature, and separate again from the practical English pages."
       },
@@ -76,28 +78,146 @@
           "eyebrow": "Related sections",
           "columns": "3",
           "items": [
-            { "title": "A/L Literature", "url": "al-literature/", "more": "Open", "text": ["Subject 73, the other A/L English subject, with its own prescribed texts."] },
-            { "title": "Practical English", "url": "practical-english/", "more": "Open", "text": ["Everyday, spoken and workplace English for adults and independent learners."] },
-            { "title": "Past Papers", "url": "past-papers/", "more": "Open", "text": ["Papers already published across the site, with filters by year and type."] }
+            {
+              "title": "Essay Writing Exercises",
+              "url": "essay-writing-exercises/?level=A%2FL%20General%20English",
+              "more": "Practise",
+              "text": [
+                "A/L General English essays of about 250 words, built step by step, with paragraph and linking exercises."
+              ]
+            },
+            {
+              "title": "A/L Literature",
+              "url": "al-literature/",
+              "more": "Open",
+              "text": [
+                "Subject 73, the other A/L English subject, with its own prescribed texts."
+              ]
+            },
+            {
+              "title": "Practical English",
+              "url": "practical-english/",
+              "more": "Open",
+              "text": [
+                "Everyday, spoken and workplace English for adults and independent learners."
+              ]
+            },
+            {
+              "title": "Past Papers",
+              "url": "past-papers/",
+              "more": "Open",
+              "text": [
+                "Papers already published across the site, with filters by year and type."
+              ]
+            }
           ]
         }
       ]
     },
-
-    { "slug": "general-english/practical-grammar",     "title": "Practical Grammar",       "kind": "redirect", "noindex": true, "redirectTo": "practical-english/practical-grammar/" },
-    { "slug": "general-english/vocabulary",            "title": "Vocabulary",              "kind": "redirect", "noindex": true, "redirectTo": "practical-english/vocabulary/" },
-    { "slug": "general-english/pronunciation",         "title": "Pronunciation",           "kind": "redirect", "noindex": true, "redirectTo": "practical-english/pronunciation/" },
-    { "slug": "general-english/common-mistakes",       "title": "Common Mistakes",         "kind": "redirect", "noindex": true, "redirectTo": "practical-english/common-mistakes/" },
-    { "slug": "general-english/self-assessment",       "title": "Self-Assessment",         "kind": "redirect", "noindex": true, "redirectTo": "practical-english/self-assessment/" },
-    { "slug": "general-english/interactive-practice",  "title": "Interactive Practice",    "kind": "redirect", "noindex": true, "redirectTo": "practical-english/interactive-practice/" },
-    { "slug": "general-english/reading",               "title": "Reading",                 "kind": "redirect", "noindex": true, "redirectTo": "practical-english/reading/" },
-    { "slug": "general-english/writing",               "title": "Writing",                 "kind": "redirect", "noindex": true, "redirectTo": "practical-english/writing/" },
-    { "slug": "general-english/listening",             "title": "Listening",               "kind": "redirect", "noindex": true, "redirectTo": "practical-english/listening/" },
-    { "slug": "general-english/speaking",              "title": "Speaking",                "kind": "redirect", "noindex": true, "redirectTo": "practical-english/speaking/" },
-    { "slug": "general-english/everyday-english",      "title": "Everyday English",        "kind": "redirect", "noindex": true, "redirectTo": "practical-english/everyday-english/" },
-    { "slug": "general-english/spoken-english",        "title": "Spoken English",          "kind": "redirect", "noindex": true, "redirectTo": "practical-english/spoken-english/" },
-    { "slug": "general-english/workplace-english",     "title": "Workplace English",       "kind": "redirect", "noindex": true, "redirectTo": "practical-english/workplace-english/" },
-    { "slug": "general-english/english-for-adults",    "title": "English for Adults",      "kind": "redirect", "noindex": true, "redirectTo": "practical-english/english-for-adults/" },
-    { "slug": "general-english/practical-conversations","title": "Practical Conversations","kind": "redirect", "noindex": true, "redirectTo": "practical-english/practical-conversations/" }
+    {
+      "slug": "general-english/practical-grammar",
+      "title": "Practical Grammar",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/practical-grammar/"
+    },
+    {
+      "slug": "general-english/vocabulary",
+      "title": "Vocabulary",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/vocabulary/"
+    },
+    {
+      "slug": "general-english/pronunciation",
+      "title": "Pronunciation",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/pronunciation/"
+    },
+    {
+      "slug": "general-english/common-mistakes",
+      "title": "Common Mistakes",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/common-mistakes/"
+    },
+    {
+      "slug": "general-english/self-assessment",
+      "title": "Self-Assessment",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/self-assessment/"
+    },
+    {
+      "slug": "general-english/interactive-practice",
+      "title": "Interactive Practice",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/interactive-practice/"
+    },
+    {
+      "slug": "general-english/reading",
+      "title": "Reading",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/reading/"
+    },
+    {
+      "slug": "general-english/writing",
+      "title": "Writing",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/writing/"
+    },
+    {
+      "slug": "general-english/listening",
+      "title": "Listening",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/listening/"
+    },
+    {
+      "slug": "general-english/speaking",
+      "title": "Speaking",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/speaking/"
+    },
+    {
+      "slug": "general-english/everyday-english",
+      "title": "Everyday English",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/everyday-english/"
+    },
+    {
+      "slug": "general-english/spoken-english",
+      "title": "Spoken English",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/spoken-english/"
+    },
+    {
+      "slug": "general-english/workplace-english",
+      "title": "Workplace English",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/workplace-english/"
+    },
+    {
+      "slug": "general-english/english-for-adults",
+      "title": "English for Adults",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/english-for-adults/"
+    },
+    {
+      "slug": "general-english/practical-conversations",
+      "title": "Practical Conversations",
+      "kind": "redirect",
+      "noindex": true,
+      "redirectTo": "practical-english/practical-conversations/"
+    }
   ]
 }

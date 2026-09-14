@@ -4836,3 +4836,40 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
 .dlg__heard--ok { color: #0b5e4c; }
 .dlg__heard--miss { color: #7a4d00; }
 @media print { .mst__bar, .mst__room, .sp__controls, .cp__turn { display: none !important; } }
+
+/* Essay writing exercises */
+.ee { display: grid; gap: var(--sp-3); max-width: 56rem; }
+.ee__level, .ee__choose { margin: 0; max-width: 34rem; }
+.ee__level select, .ee__choose select { width: 100%; }
+.ee__steps { list-style: none; counter-reset: ee; display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; }
+.ee__steps li { counter-increment: ee; font-size: var(--step--1); padding: 0.3rem 0.7rem; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-600); }
+.ee__steps li::before { content: counter(ee) ". "; font-weight: 700; }
+.ee__steps li.is-current { background: var(--navy-800); border-color: var(--navy-800); color: #fff; }
+.ee__steps li.is-done { background: #e3f4ec; border-color: #b7e0cc; color: #0b5e4c; }
+.ee [data-step] h3 { margin-top: 0; }
+.ee textarea { width: 100%; font: inherit; line-height: 1.6; padding: var(--sp-2); }
+.ee__options { display: grid; gap: var(--sp-2); border: 0; margin: var(--sp-2) 0; padding: 0; }
+.ee__option { display: flex; gap: 0.6rem; align-items: flex-start; padding: var(--sp-2) var(--sp-3); border: 1px solid var(--line); border-radius: var(--radius-sm); cursor: pointer; }
+.ee__option input { margin-top: 0.3rem; }
+.ee__nav { margin-top: var(--sp-3); }
+.ee__thesis-preview { padding: var(--sp-2) var(--sp-3); background: var(--teal-050); border-radius: var(--radius-sm); }
+.ee__weak { margin: 0 0 var(--sp-3); padding: var(--sp-3); border-left: 4px solid #d99a2b; background: #fdf6e8; font-style: normal; }
+.ee__model { margin-top: var(--sp-3); padding: var(--sp-3); border-left: 4px solid var(--teal-600); background: var(--teal-050); border-radius: var(--radius-sm); }
+.ee__model h3 { margin-top: 0; }
+.ee__q p { margin: 0 0 var(--sp-2); }
+.ee__opt { font: inherit; text-align: left; padding: var(--sp-2) var(--sp-3); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: #fff; cursor: pointer; min-height: 44px; }
+.ee__opt:hover:not(:disabled) { border-color: var(--teal-600); background: var(--teal-050); }
+.ee__opt:disabled { cursor: default; color: inherit; }
+.ee__opt.is-right, .ee select.is-right { border-color: #0b5e4c; background: #e3f4ec; }
+.ee__opt.is-wrong, .ee select.is-wrong { border-color: #b54708; background: #fdf0d8; }
+.ee__order { list-style: none; margin: 0 0 var(--sp-2); padding: 0; display: grid; gap: var(--sp-2); }
+.ee__item { display: flex; gap: var(--sp-2); justify-content: space-between; align-items: center; padding: var(--sp-2) var(--sp-3); border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; }
+.ee__item.is-wrong { border-color: #d99a2b; background: #fdf6e8; }
+.ee__move { display: flex; gap: 0.3rem; flex: none; }
+.ee__gaptext { line-height: 2.4; }
+.ee__gap, .ee__roleselect { font: inherit; padding: 0.15rem 0.3rem; border: 1px solid var(--line-strong); border-radius: 6px; max-width: 100%; }
+.ee__essay p { line-height: 1.9; }
+.ee__sent { font: inherit; text-align: left; border: 0; padding: 0.05rem 0.15rem; border-radius: 4px; background: transparent; color: inherit; cursor: pointer; display: inline; }
+button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 0 0 0 2px #f0c94d; }
+.ee__roleselect { margin: 0 0.3rem 0 0.1rem; font-size: var(--step--1); }
+.ee__explain p { margin: 0; padding: var(--sp-2) var(--sp-3); background: #fff8dc; border-radius: var(--radius-sm); }
