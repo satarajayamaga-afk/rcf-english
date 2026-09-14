@@ -18,77 +18,14 @@
 
 import { esc } from "./lib.js";
 import { Speech } from "./speech.js";
+import { PART1, PART2, PART3, READ, SITUATIONS } from "./speaking-data.js";
+import { analyse } from "./speaking-analysis.js";
 
 const root = document.querySelector("[data-speaking]");
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 const CONSENT_KEY = "rcf-speaking-consent";
 const HISTORY_KEY = "rcf-speaking-history";
 const LANG_KEY = "rcf-speaking-lang";
-
-/* ------------------------------------------------------------------ tasks */
-
-const PART1 = [
-  ["Hometown", ["Where is your hometown?", "What do you like most about your hometown?", "Has your hometown changed much since you were a child?", "Would you like to live there in the future? Why or why not?"]],
-  ["Work or studies", ["Do you work, or are you a student?", "Why did you choose that subject or that job?", "What is the most difficult part of your studies or your work?", "What would you like to do in the future?"]],
-  ["Free time", ["What do you usually do in your free time?", "Do you prefer spending your free time alone or with other people?", "Is there a hobby you would like to try?", "How has the way you spend your free time changed over the years?"]],
-  ["Food", ["What kind of food do you enjoy eating?", "Do you often cook at home?", "Is there any food you disliked as a child but enjoy now?", "Do people in your country eat out more often than they used to?"]],
-  ["Weather", ["What is the weather usually like where you live?", "What kind of weather do you like best?", "Does the weather affect your mood?", "Do you prefer the rainy season or the dry season?"]],
-  ["Technology", ["How often do you use your mobile phone?", "What do you mainly use the internet for?", "Is there any piece of technology you could not live without?", "Do you think people spend too much time on their phones?"]],
-  ["Transport", ["How do you usually travel to school or work?", "What is public transport like in your area?", "Do you prefer travelling by bus or by train?", "How could transport in your town be improved?"]],
-  ["Reading", ["Do you enjoy reading?", "What kind of books did you read as a child?", "Do you prefer printed books or reading on a screen?", "Is reading popular among young people where you live?"]]
-];
-
-const PART2 = [
-  { title: "A teacher who influenced you", prompt: "Describe a teacher who has influenced you.",
-    points: [["who this teacher was", ["teacher", "sir", "madam", "miss", "mr", "mrs", "name"]], ["what subject they taught", ["subject", "taught", "teach", "lesson", "class"]], ["what was special about them", ["special", "different", "always", "never", "kind", "strict", "patient"]], ["how they influenced you", ["influence", "changed", "helped", "because of", "now i", "taught me", "learned", "learnt"]]] },
-  { title: "A place you would recommend to visitors", prompt: "Describe a place in your country that you would recommend to visitors.",
-    points: [["where it is", ["located", "near", "in the", "province", "district", "south", "north", "east", "west", "coast", "hill"]], ["how to get there", ["bus", "train", "car", "drive", "hours", "road", "get there", "travel"]], ["what visitors can do there", ["can", "visit", "see", "walk", "swim", "climb", "enjoy", "try"]], ["why you would recommend it", ["recommend", "because", "worth", "reason", "best"]]] },
-  { title: "A useful skill you learned", prompt: "Describe a skill you learned that has been useful to you.",
-    points: [["what the skill is", ["skill", "learn", "learned", "learnt", "how to"]], ["when and how you learned it", ["when i was", "years ago", "taught", "course", "class", "practised", "practiced", "myself", "youtube"]], ["how difficult it was", ["difficult", "hard", "easy", "challenge", "struggled", "mistakes"]], ["why it has been useful", ["useful", "helps", "helped", "because", "save", "now i can"]]] },
-  { title: "A memorable celebration", prompt: "Describe a memorable celebration you attended.",
-    points: [["what was celebrated", ["wedding", "birthday", "festival", "new year", "avurudu", "vesak", "christmas", "deepavali", "ramadan", "eid", "anniversary", "celebrat"]], ["where and when it was", ["last year", "ago", "held", "at the", "in the", "when"]], ["who was there", ["family", "friends", "relatives", "people", "guests", "everyone"]], ["why it was memorable", ["memorable", "remember", "never forget", "because", "special"]]] },
-  { title: "A useful piece of technology", prompt: "Describe a piece of technology you find useful.",
-    points: [["what it is", ["phone", "laptop", "computer", "app", "device", "machine", "tablet", "internet"]], ["how often you use it", ["every day", "daily", "often", "always", "hours", "times a"]], ["what you use it for", ["use it", "for", "to"]], ["why it is useful to you", ["useful", "because", "helps", "without it", "save"]]] },
-  { title: "A time you helped someone", prompt: "Describe a time when you helped someone.",
-    points: [["who you helped", ["friend", "neighbour", "neighbor", "stranger", "classmate", "old", "brother", "sister", "mother", "father"]], ["what their problem was", ["problem", "needed", "lost", "couldn't", "could not", "trouble", "difficult"]], ["how you helped", ["helped", "i gave", "i took", "i showed", "i called", "i explained"]], ["how you felt about it", ["felt", "happy", "proud", "glad", "good", "satisfied"]]] }
-].map((t) => ({ ...t, notes: "You will have one minute to prepare. You can make notes. Then speak for one to two minutes." }));
-
-const PART3 = [
-  ["Education and teachers", ["What makes a good teacher?", "Should students be allowed to choose what they study at school?", "How has technology changed the way students learn?", "Do you think computers will replace teachers in the future?"]],
-  ["Tourism", ["Why do people like travelling to other countries?", "What are the advantages and disadvantages of tourism for a local community?", "How can tourists be encouraged to respect local culture?", "Will people travel more or less in the future?"]],
-  ["Skills and learning", ["Which skills are most important for young people today?", "Is it better to learn a skill from a teacher or from the internet?", "Why do some adults stop learning new things?", "Should schools teach practical skills such as cooking?"]],
-  ["Traditions and celebrations", ["Why are traditional celebrations important?", "How have celebrations changed compared with the past?", "Do you think traditional festivals will disappear in the future?", "Should governments spend money on public celebrations?"]],
-  ["Technology and society", ["How has technology changed the way families communicate?", "Are there any dangers in children using technology?", "Should older people be taught to use new technology?", "Which technology do you think will change our lives most in the future?"]],
-  ["Helping others", ["Why do some people volunteer to help others?", "Should helping in the community be part of school life?", "Is it the government's responsibility to help people in need?", "Are people less willing to help strangers than in the past?"]]
-];
-
-const READ = [
-  ["V and W", "Keep your top teeth on your lower lip for V. Round your lips for W, with no teeth.", ["We visited the village every Wednesday.", "Vimal waited very patiently for the van.", "Would you like a vegetable wrap with your tea?"]],
-  ["TH", "Put the tip of your tongue lightly between your teeth. Do not say T or D.", ["I think these three things are worth thinking about.", "The weather this Thursday will be better than yesterday.", "Thank you both for the birthday gift."]],
-  ["F and P", "F is a long sound through your teeth and lip. P is a short puff of air from closed lips.", ["Please fill in the form before five o'clock.", "My father prefers fresh pineapple for breakfast.", "The price of paper has fallen a little."]],
-  ["S, SH and Z", "SH is softer and wider than S. Z has a buzz you can feel in your throat.", ["She sells fresh fish at the shop on Sunday.", "The zoo is closed on Tuesdays and Thursdays.", "Sheela usually uses sugar in her coffee."]],
-  ["Word endings", "Say the last sound of every word clearly: asked, fixed, desks, helped.", ["I asked him to fix the desk last week.", "She walked past the shops and helped her friends.", "They finished the tests and packed their bags."]],
-  ["Useful phrases", "Say each phrase as one smooth group of words, not word by word.", ["Could you tell me how to get to the railway station, please?", "I'm sorry, could you say that again a little more slowly?", "I'd like to make an appointment for Monday morning."]]
-];
-
-const SITUATIONS = [
-  { title: "At the pharmacy", prompt: "You are at a pharmacy. Ask for something for a headache, and ask how often you should take it.",
-    functions: [["a polite request", /\b(could i|can i|could you|i would like|i'd like|may i|do you have)\b/], ["a question about how often", /\b(how often|how many times|how many)\b/], ["thanks", /\bthank/]] },
-  { title: "Late for a meeting", prompt: "You arrive late for a meeting. Apologise and explain why you are late.",
-    functions: [["an apology", /\b(sorry|apologi[sz]e)\b/], ["a reason", /\b(because|the bus|traffic|since|as the|my train)\b/], ["a promise for next time", /\b(won't happen|will not happen|next time|make sure|it won't)\b/]] },
-  { title: "Booking a hotel room", prompt: "Telephone a hotel to book a room for two nights next weekend, and ask about the price.",
-    functions: [["a booking request", /\b(i'd like to (book|reserve)|i would like to (book|reserve)|could i (book|reserve)|can i (book|reserve)|book a room|reserve a room)\b/], ["the dates", /\b(nights?|weekend|friday|saturday|sunday)\b/], ["a question about the price", /\b(how much|price|cost|rate)\b/]] },
-  { title: "Declining an invitation", prompt: "A friend invites you to a party, but you cannot go. Say no politely and suggest another time.",
-    functions: [["thanks for the invitation", /\b(thank|that's kind|that is kind|sounds (great|lovely|fun)|i'd love to|i would love to)\b/], ["a polite refusal", /\b(afraid|can't|cannot|unfortunately|won't be able|will not be able)\b/], ["a reason", /\b(because|i have to|i've got to|i have got to)\b/], ["another suggestion", /\b(maybe|another time|next time|how about|what about|shall we)\b/]] },
-  { title: "Asking for directions", prompt: "Stop a stranger in the street and ask for directions to the nearest bank.",
-    functions: [["a polite opening", /\bexcuse me\b/], ["a question about the way", /\b(could you|can you|do you know|where is|where's|how do i get|how can i get)\b/], ["thanks", /\bthank/]] },
-  { title: "Introducing yourself at an interview", prompt: "You are at a job interview. Introduce yourself in about thirty seconds.",
-    functions: [["your name", /\b(my name is|i'm|i am)\b/], ["your studies or experience", /\b(studied|study|studying|worked|work|working|experience|graduated|qualification)\b/], ["why you want the job", /\b(interested|because|would like|i'd like|hope|keen|excited)\b/]] },
-  { title: "A polite complaint", prompt: "In a restaurant, your food has arrived cold. Complain politely to the waiter.",
-    functions: [["a polite opening", /\b(excuse me|sorry to)\b/], ["the problem", /\b(cold|not hot|isn't hot|is not hot|wrong)\b/], ["a request", /\b(could you|would you|can you|please)\b/]] },
-  { title: "A message for your teacher", prompt: "Leave a voice message for your teacher saying you are unwell and will miss class tomorrow.",
-    functions: [["a greeting and your name", /\b(hello|hi|good (morning|afternoon|evening)|this is)\b/], ["that you are unwell", /\b(ill|sick|fever|unwell|not well|not feeling well)\b/], ["that you will miss class", /\b(miss|can't come|cannot come|won't be|will not be|absent)\b/], ["a request about the work", /\b(homework|notes|work|let me know|could you|catch up)\b/]] }
-];
 
 const MODES = [
   { id: "part1", label: "IELTS Part 1", intro: "Short answers about familiar topics. Aim for two or three sentences: an answer, a reason and a detail. About 20 to 30 seconds each.",
@@ -102,133 +39,6 @@ const MODES = [
   { id: "talk", label: "Everyday situations", intro: "Practical Spoken English. Read the situation, then say what you would say. The check looks for the language the situation needs.",
     items: SITUATIONS.map((s, i) => ({ id: `sit-${i}`, group: "Situations", ...s })) }
 ];
-
-/* ------------------------------------------------------------- analysis */
-
-const STOP = new Set("the a an and or but of to in on at for with is are was were be been am it its it's this that these those i you he she we they my your his her our their me him us them as by from not no so do did does have has had will would can could should there here what which who when where why how all some any very more most also just than then into out up about over after before i'm don't i've it's that's there's".split(" "));
-const FILLERS = ["um", "umm", "uh", "er", "erm", "ah", "you know", "i mean", "basically", "actually", "kind of", "sort of"];
-const LINKS = ["because", "so", "although", "though", "however", "but", "also", "and then", "for example", "for instance", "such as", "on the other hand", "whereas", "while", "as a result", "that's why", "which means", "in my opinion", "i think", "i believe", "personally", "to be honest", "i'd say", "the main reason", "another reason", "first of all", "apart from that", "what's more", "overall"];
-const BASIC = { good: "enjoyable, useful, excellent, helpful", nice: "pleasant, attractive, friendly, lovely", bad: "unpleasant, harmful, disappointing, poor", big: "large, huge, enormous, major", very: "really, extremely, incredibly, quite", thing: "a more exact noun: activity, idea, item, problem", things: "a more exact noun: activities, ideas, items, problems", "a lot": "many, plenty of, a great deal of", happy: "delighted, pleased, glad, cheerful", interesting: "fascinating, absorbing, eye-opening" };
-
-const norm = (t) => t.toLowerCase().replace(/[’‘]/g, "'").replace(/[^a-z0-9' ]+/g, " ").replace(/\s+/g, " ").trim();
-const tokens = (t) => (norm(t) ? norm(t).split(" ") : []);
-const has = (text, phrase) => new RegExp(`(^|\\s)${phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(\\s|$)`).test(text);
-const countPhrase = (text, phrase) => (` ${text} `.match(new RegExp(` ${phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?= )`, "g")) || []).length;
-
-/* Longest common subsequence of words, so a read-aloud sentence can show
-   which of its words were heard, in order, even when others were missed. */
-function alignWords(target, spoken) {
-  const a = tokens(target), b = tokens(spoken);
-  const dp = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
-  for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--) {
-    dp[i][j] = a[i] === b[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
-  }
-  const hit = new Array(a.length).fill(false);
-  for (let i = 0, j = 0; i < a.length && j < b.length;) {
-    if (a[i] === b[j]) { hit[i] = true; i++; j++; } else if (dp[i + 1][j] >= dp[i][j + 1]) i++; else j++;
-  }
-  // map back onto the original words so punctuation and capitals are kept
-  const shown = target.split(/\s+/);
-  let k = 0;
-  const words = shown.map((w) => { const clean = norm(w); if (!clean) return { w, ok: true }; const ok = hit[k]; k++; return { w, ok, clean }; });
-  return { words, score: a.length ? hit.filter(Boolean).length / a.length : 0 };
-}
-
-function analyse(mode, item, text, timing) {
-  const out = [];
-  const add = (ok, msg) => out.push({ ok, msg });
-  const t = norm(text);
-  const words = tokens(text);
-  const n = words.length;
-  const result = { notes: out, words: n, wpm: 0, score: null, align: null };
-  if (!n) return result;
-
-  const secs = timing && timing.speaking ? timing.speaking / 1000 : 0;
-  if (secs >= 8 && n >= 12) {
-    result.wpm = Math.round(n / (secs / 60));
-    if (mode.id !== "read") {
-      if (result.wpm < 80) add(false, `About ${result.wpm} words a minute: quite slow. Try to speak in groups of words rather than one word at a time.`);
-      else if (result.wpm > 185) add(false, `About ${result.wpm} words a minute: fast. Slow down a little so every word is clear.`);
-      else add(true, `About ${result.wpm} words a minute: a comfortable speed for a listener.`);
-    }
-  }
-  if (timing && mode.id !== "read") {
-    if (timing.pauses >= 3) add(false, `${timing.pauses} long pauses of three seconds or more. Use a phrase such as "Let me think" or "What I mean is" to keep going while you think.`);
-    else if (secs >= 15) add(true, timing.pauses ? `Only ${timing.pauses} long ${timing.pauses === 1 ? "pause" : "pauses"}: you kept going well.` : "No long pauses: you kept going.");
-  }
-
-  if (mode.id === "read") {
-    const al = alignWords(item.prompt, text);
-    result.align = al;
-    result.score = Math.round(al.score * 100);
-    const missed = [...new Set(al.words.filter((w) => !w.ok).map((w) => w.clean))];
-    if (result.score >= 95) add(true, `${result.score}% of the words were recognised. Clear reading.`);
-    else if (result.score >= 75) add(false, `${result.score}% of the words were recognised. Listen to the missed words and try the sentence again.`);
-    else add(false, `${result.score}% of the words were recognised. Listen to the sentence again, then read it more slowly, word group by word group.`);
-    if (missed.length) add(false, `Not recognised: ${missed.join(", ")}. These may be sounds to practise, or the computer may simply have misheard.`);
-    return result;
-  }
-
-  // length
-  const range = { part1: [18, 70], part2: [150, 400], part3: [45, 160], talk: [12, 120] }[mode.id];
-  if (n < range[0]) {
-    const tip = { part1: "Add a reason and a detail: an answer of one sentence sounds unfinished.", part2: "Aim to speak for the full two minutes. Use the four points on the card, and add a story or an example to each.", part3: "Develop the idea: give a reason, an example, and if you can, the other side of the argument.", talk: "Say a little more, so the situation is fully handled." }[mode.id];
-    add(false, `${n} words. ${tip}`);
-  } else if (n > range[1] && mode.id === "part1") add(false, `${n} words. Part 1 answers can be shorter: two or three sentences is enough before the examiner moves on.`);
-  else add(true, `${n} words: a good length for this task.`);
-
-  if (mode.id === "part2" && secs && secs < 90) add(false, `You spoke for about ${Math.round(secs)} seconds. Try to keep going for at least a minute and a half.`);
-
-  // reasons, examples, linking
-  const reason = /\b(because|since|so|that's why|the reason|as a result|which means)\b/.test(t);
-  const example = /\b(for example|for instance|such as|like when|once|last year|last week|when i was)\b/.test(t);
-  if (mode.id === "part1" || mode.id === "part3") add(reason, reason ? "You gave a reason." : "No reason found. Add one with because, so, or the reason is.");
-  if (mode.id === "part3") {
-    add(example, example ? "You supported your answer with an example." : "No example found. Add one with for example or for instance.");
-    const balance = /\b(however|on the other hand|although|though|whereas|while|but some|but others|then again)\b/.test(t);
-    add(balance, balance ? "You looked at more than one side." : "Try to show the other side too, with on the other hand or however.");
-    if (/\b(future|will|going to)\b/i.test(item.prompt)) {
-      const spec = /\b(will|might|may|could|probably|likely|perhaps|i expect|i imagine)\b/.test(t);
-      add(spec, spec ? "You used language for the future, such as will or might." : "This question is about the future. Use will, might, probably or it is likely that.");
-    }
-  }
-  const links = LINKS.filter((l) => has(t, l));
-  if (n >= 30 && mode.id !== "talk") {
-    if (links.length < 3) add(false, "Few linking phrases. Phrases such as because, for example, on the other hand and what's more join ideas together.");
-    else add(true, `Linking phrases you used: ${links.slice(0, 6).join(", ")}.`);
-  }
-
-  // cue-card points and situation functions
-  if (mode.id === "part2") {
-    const missing = item.points.filter(([, keys]) => !keys.some((k) => has(t, k) || t.includes(k)));
-    if (missing.length) add(false, `You may not have covered: ${missing.map(([p]) => p).join("; ")}. This is a guess from your words, so check the card yourself.`);
-    else add(true, "You seem to have covered all four points on the card.");
-  }
-  if (mode.id === "talk") {
-    item.functions.forEach(([label, re]) => add(re.test(t), re.test(t) ? `You included ${label}.` : `Not found: ${label}.`));
-  }
-
-  // vocabulary
-  const freq = {};
-  words.filter((w) => w.length > 3 && !STOP.has(w)).forEach((w) => { freq[w] = (freq[w] || 0) + 1; });
-  // words from the question itself are expected to come back, singular or plural
-  const topic = new Set(tokens(item.prompt).map((w) => w.replace(/s$/, "")));
-  const repeated = Object.entries(freq).filter(([w, c]) => c >= Math.max(3, Math.round(n / 35)) && !topic.has(w.replace(/s$/, ""))).sort((a, b) => b[1] - a[1]).slice(0, 3);
-  if (repeated.length) add(false, `Repeated words: ${repeated.map(([w, c]) => `"${w}" (${c} times)`).join(", ")}. Could you use a different word for some of them?`);
-  const basic = Object.keys(BASIC).map((w) => [w, countPhrase(t, w)]).filter(([, c]) => c >= 2);
-  basic.slice(0, 3).forEach(([w, c]) => add(false, `"${w}" ${c} times. Instead, try: ${BASIC[w]}.`));
-  if (n >= 60) {
-    const distinct = Object.keys(freq).length;
-    add(distinct >= 25, distinct >= 25 ? `${distinct} different content words: a good range.` : `${distinct} different content words. Try to use more varied, topic-specific vocabulary.`);
-  }
-
-  // fillers
-  const fillers = FILLERS.map((f) => [f, countPhrase(t, f)]).filter(([, c]) => c);
-  const fillerTotal = fillers.reduce((s, [, c]) => s + c, 0);
-  if (fillerTotal >= Math.max(3, Math.round(n / 25))) add(false, `Fillers: ${fillers.map(([f, c]) => `"${f}" (${c})`).join(", ")}. A few are natural; this many can make you sound unsure. (Speech recognition often leaves fillers out, so there may be more.)`);
-
-  return result;
-}
 
 /* ---------------------------------------------------------------- storage */
 

@@ -333,9 +333,25 @@
         },
         {
           "type": "cards",
-          "heading": "Learn before you practise",
+          "heading": "More speaking practice",
           "columns": "3",
           "items": [
+            {
+              "title": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/",
+              "more": "Open",
+              "text": [
+                "A full, hands-free speaking test with an examiner voice."
+              ]
+            },
+            {
+              "title": "Conversation Partner",
+              "url": "practical-english/conversation-partner/",
+              "more": "Open",
+              "text": [
+                "Talk through everyday situations with the website."
+              ]
+            },
             {
               "title": "IELTS Speaking",
               "url": "practical-english/ielts/speaking/",
@@ -358,6 +374,248 @@
               "more": "Open",
               "text": [
                 "The sounds that cause the most difficulty, and how to make them."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/ielts/mock-speaking-test",
+      "title": "IELTS Mock Speaking Test",
+      "metaTitle": "Free IELTS Mock Speaking Test Online with a Speaking Examiner Voice | RCF English",
+      "description": "A hands-free IELTS Speaking practice test. The website plays the examiner: it asks Part 1, Part 2 and Part 3 questions aloud, listens to your answers, asks follow-up questions, times the cue card, and gives you a transcript with practice guidance.",
+      "keywords": "IELTS mock speaking test online, IELTS speaking test practice free, IELTS speaking examiner simulation, IELTS cue card practice with timer, IELTS speaking practice Sri Lanka",
+      "kicker": "IELTS",
+      "kind": "page",
+      "scripts": [
+        "mock-speaking-test"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
+      ],
+      "backTo": {
+        "label": "IELTS Speaking",
+        "url": "practical-english/ielts/speaking/"
+      },
+      "hero": {
+        "text": "Eleven to fourteen minutes with an examiner who asks, listens and moves on, just like the real test. Speak your answers; the examiner follows up if an answer is too short. At the end you get a transcript of the whole test and guidance on every answer."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial practice",
+          "text": [
+            "An original RCF English practice test in the format of the IELTS Speaking test. The questions are not official IELTS material, and the test is not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment. **It does not give a band score.**"
+          ]
+        },
+        {
+          "type": "app",
+          "mount": "mock-speaking",
+          "heading": "Your speaking test",
+          "noscript": "The mock speaking test needs JavaScript and a browser that can recognise speech. You can still read the guide to [IELTS Speaking](practical-english/ielts/speaking/)."
+        },
+        {
+          "type": "steps",
+          "heading": "What happens in the test",
+          "items": [
+            {
+              "title": "Part 1: introduction and interview (4 to 5 minutes)",
+              "text": [
+                "The examiner asks your name, then questions on two familiar topics. If an answer is very short, you will hear a follow-up such as *Why?*"
+              ]
+            },
+            {
+              "title": "Part 2: the long turn (3 to 4 minutes)",
+              "text": [
+                "The cue card appears on the screen and is read aloud. You have one minute to prepare. When the examiner asks you to begin, speak for up to two minutes; you will be stopped when the time is up."
+              ]
+            },
+            {
+              "title": "Part 3: discussion (4 to 5 minutes)",
+              "text": [
+                "More general questions linked to the Part 2 topic. Give opinions, reasons and examples, and look at both sides."
+              ]
+            },
+            {
+              "title": "Your report",
+              "text": [
+                "A transcript of every answer, how long and how fast you spoke, how often the examiner had to follow up, and practice guidance for each answer. You can print it for your teacher."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "For the best results",
+          "bullets": [
+            "Use **Chrome** or **Edge** on a computer or Android phone, or **Safari** on an iPhone or iPad.",
+            "Wear headphones if you can, and sit somewhere quiet.",
+            "The examiner moves on after you stop speaking for a few seconds. To move on sooner, press **I've finished my answer**.",
+            "If the microphone does not start by itself on your phone, an **Answer** button appears. Press it to speak.",
+            "Speech recognition is not perfect, especially with names and accents. If it often mishears you, choose **English (India)**."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Questions about the mock test",
+          "items": [
+            {
+              "q": "Is the examiner a real person or an AI?",
+              "a": [
+                "Neither. The examiner follows a fixed script, as real IELTS examiners do in Parts 1 and 2. The website listens for when you stop and for how much you said, which decides whether to ask a follow-up. It does not understand your ideas."
+              ]
+            },
+            {
+              "q": "Why is there no band score?",
+              "a": [
+                "A band depends on fluency and coherence, vocabulary, grammar and pronunciation, judged by a trained examiner. A computer counting words cannot do that honestly. The report shows what can be measured, so you know what to practise."
+              ]
+            },
+            {
+              "q": "Where does my voice go?",
+              "a": [
+                "Speech recognition is done by your browser. **Chrome and Edge send the audio to Google, and Safari sends it to Apple.** RCF English never receives your voice or your answers. See the [privacy policy](privacy/)."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More speaking practice",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/",
+              "more": "Open",
+              "text": [
+                "Practise one question at a time, with more detailed feedback."
+              ]
+            },
+            {
+              "title": "Conversation Partner",
+              "url": "practical-english/conversation-partner/",
+              "more": "Open",
+              "text": [
+                "Hold everyday conversations out loud: a café, a pharmacy, a job interview."
+              ]
+            },
+            {
+              "title": "IELTS Speaking guide",
+              "url": "practical-english/ielts/speaking/",
+              "more": "Open",
+              "text": [
+                "How to extend an answer in every part of the test."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "practical-english/conversation-partner",
+      "title": "Conversation Partner",
+      "metaTitle": "Spoken English Conversation Practice Online: Talk to the Website | RCF English",
+      "description": "Practise real conversations out loud. The website plays a barista, a pharmacist, a ticket clerk, a hotel receptionist or an interviewer, listens to what you say and answers you, with hints, examples and useful phrases.",
+      "keywords": "spoken English conversation practice online, practise speaking English with a computer, English role play speaking, job interview English practice, everyday English conversation Sri Lanka",
+      "kicker": "Practical English",
+      "kind": "page",
+      "scripts": [
+        "conversation-partner"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Spoken English",
+        "url": "practical-english/spoken-english/"
+      },
+      "hero": {
+        "text": "Choose a situation and talk. The website plays the other person: it listens to what you say and answers you. If it doesn't understand, it asks you to say it again, just as a real person would."
+      },
+      "blocks": [
+        {
+          "type": "app",
+          "mount": "conversation",
+          "heading": "Choose a conversation",
+          "noscript": "The conversation partner needs JavaScript. You can still read the conversations on the [Spoken English](practical-english/spoken-english/) and [Practical Conversations](practical-english/practical-conversations/) pages."
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to practise",
+          "bullets": [
+            "Open **Useful phrases** before you start, and read them aloud once.",
+            "Speak in full sentences, and be polite: *Could I...*, *I'd like...*, *please* and *thank you*.",
+            "If you get stuck, press **Show an example**.",
+            "When you can do a conversation easily, switch off **Show what to say at each turn** and try again.",
+            "Use **Chrome**, **Edge** or **Safari**. In other browsers you can type your replies instead."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "About the conversation partner",
+          "items": [
+            {
+              "q": "Does the website understand everything I say?",
+              "a": [
+                "No. Each conversation is a script written by RCF English that branches on the words you use: for example, if you ask for coffee, the barista gives you coffee. It covers the replies a learner is likely to give, but it does not understand free conversation and it does not correct your grammar."
+              ]
+            },
+            {
+              "q": "Can I practise playing a part in a written conversation?",
+              "a": [
+                "Yes. On the [Spoken English](practical-english/spoken-english/) page, each conversation has **Take a part and speak it** buttons: the website speaks the other person's lines and listens for yours."
+              ]
+            },
+            {
+              "q": "Where does my voice go?",
+              "a": [
+                "Speech recognition is done by your browser. **Chrome and Edge send the audio to Google, and Safari sends it to Apple.** RCF English never receives your voice or your words. See the [privacy policy](privacy/)."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "More speaking practice",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Spoken English",
+              "url": "practical-english/spoken-english/",
+              "more": "Open",
+              "text": [
+                "Conversations to hear, and to take a part in."
+              ]
+            },
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/",
+              "more": "Open",
+              "text": [
+                "Read aloud and everyday situations, with detailed feedback."
+              ]
+            },
+            {
+              "title": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/",
+              "more": "Open",
+              "text": [
+                "A full speaking test with an examiner voice."
               ]
             }
           ]
@@ -403,9 +661,9 @@
         {
           "type": "callout",
           "style": "tip",
-          "title": "New: Speaking Practice",
+          "title": "New: speak with the website",
           "text": [
-            "Speak your answers to IELTS Speaking questions, read sentences aloud and handle everyday situations. Your browser turns your speech into text and the page gives you feedback. [Open Speaking Practice](speaking-practice/)"
+            "[Speaking Practice](speaking-practice/): answer IELTS questions and read aloud, with feedback. [IELTS Mock Speaking Test](practical-english/ielts/mock-speaking-test/): a full test with an examiner voice. [Conversation Partner](practical-english/conversation-partner/): everyday conversations out loud."
           ]
         },
         {
@@ -1402,7 +1660,7 @@
           "type": "prose",
           "heading": "Speaking practice and speech recognition",
           "text": [
-            "The [Speaking Practice](speaking-practice/) page uses your browser's own speech recognition to turn what you say into text. **Your voice goes to your browser's maker, not to RCF English.**",
+            "The [Speaking Practice](speaking-practice/), [IELTS Mock Speaking Test](practical-english/ielts/mock-speaking-test/) and [Conversation Partner](practical-english/conversation-partner/) pages, and the role-play buttons on spoken English conversations, use your browser's own speech recognition to turn what you say into text. **Your voice goes to your browser's maker, not to RCF English.**",
             "When you press Start speaking, your browser asks for permission to use the microphone. While you speak, **Chrome and Microsoft Edge send the sound of your voice to Google, and Safari sends it to Apple**, which send back the words. Their own privacy policies apply to that. RCF English never receives your voice, a recording or the words.",
             "The page explains this and asks you to confirm before you use it for the first time. It keeps a short summary of your recent attempts (the date, the question, the number of words and the speaking speed) in your own browser so you can see your progress, and you can clear it on the page at any time. This site keeps no recording of your voice anywhere.",
             "Nothing is heard unless you press Start speaking, and recognition stops when you press Stop, when the time limit is reached or when you leave the page."

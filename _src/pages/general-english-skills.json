@@ -895,7 +895,8 @@
           "level": "h2",
           "intro": [
             "These are written the way people actually speak, hesitations included. Press **Play conversation** and each turn arrives in time, spoken aloud where your device has a voice for it - so you hear the rhythm, not just the words.",
-            "Every line is on the page already, so you can simply read them if you prefer."
+            "Every line is on the page already, so you can simply read them if you prefer.",
+            "To practise speaking, press **Be** and a name: the website speaks the other person's lines and listens for yours. Then try the [Conversation Partner](practical-english/conversation-partner/), where the other person answers what you actually say."
           ],
           "items": [
             {
@@ -1114,6 +1115,14 @@
           "variant": "tint",
           "columns": "3",
           "items": [
+            {
+              "title": "Conversation Partner",
+              "url": "practical-english/conversation-partner/",
+              "more": "Open",
+              "text": [
+                "Talk through everyday situations with the website."
+              ]
+            },
             {
               "title": "Speaking Practice",
               "url": "speaking-practice/?mode=talk",
