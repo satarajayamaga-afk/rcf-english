@@ -1629,6 +1629,34 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'site-status' {
+            # Counted from the pages the build is making right now, so the
+            # numbers are never out of date.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="table-wrap"><table class="data"><caption>Pages in each section of RCF English, counted when the site was last built.</caption><thead><tr><th scope="col">Section</th><th scope="col">Pages</th></tr></thead><tbody>'
+            $total = 0
+            foreach ($item in (AsList (P $nav 'items'))) {
+                $u = ([string](P $item 'url' '')).Trim('/')
+                if (-not $u) { continue }
+                $n = @($pages | Where-Object { $_._slug -eq $u -or $_._slug.StartsWith($u + '/') }).Count
+                if ($n -eq 0) { continue }
+                $total += $n
+                $html += '<tr><th scope="row"><a href="' + (E (Url ($u + '/'))) + '">' + (E (P $item 'label')) + '</a></th><td>' + $n + '</td></tr>'
+            }
+            $html += '</tbody><tfoot><tr><th scope="row">All pages on the site</th><td>' + @($pages).Count + '</td></tr></tfoot></table></div>'
+            $counts = @(
+                @('Listening tests', @($listening).Count),
+                @('Interactive activities', @(DataList 'quizzes' 'activities').Count),
+                @('Past, model and term-test papers', @($papers | Where-Object { (P $_ 'published' $true) -ne $false }).Count),
+                @('Question of the Week questions', @(DataList 'question-of-the-week' 'questions').Count)
+            )
+            $html += '<ul class="status-counts">'
+            foreach ($c in $counts) { $html += '<li><span class="status-counts__n">' + $c[1] + '</span> ' + (E $c[0]) + '</li>' }
+            $html += '</ul>'
+            $html += '<p class="text-small text-muted">Last built on ' + (Get-Date).ToString('d MMMM yyyy', [Globalization.CultureInfo]::InvariantCulture) + '.</p>'
+            return $html + '</div></section>'
+        }
+
         'exam-timer' {
             $html = (SectionOpen $block 'exam-timer') + (SectionHead $block)
             $html += '<div class="xtimer" data-xtimer><noscript><p>The timer needs JavaScript. A watch or a phone alarm set to the time printed on the paper works just as well.</p></noscript></div>'
@@ -2307,6 +2335,10 @@ function RenderFinder($block) {
             if ($r.download -match '^https?:') { $dlExt = ' target="_blank" rel="noopener"' }
             $html += '<a class="btn btn--sm btn--outline" href="' + (E (Url $r.download)) + '"' + $dlExt + '>Download<span class="visually-hidden">: ' + (E $r.title) + '</span></a>'
         }
+        # A broken link is reported on WhatsApp with the resource already named,
+        # so the report arrives with everything needed to find and fix it.
+        $report = "Hello, I would like to report a problem with this resource on RCF English: $($r.title) ($([string]$r.url)). The problem is: "
+        $html += '<a class="fres__report" href="https://wa.me/' + (E $script:Config.whatsappInternational) + '?text=' + (E ([uri]::EscapeDataString($report))) + '" target="_blank" rel="noopener">Report a problem<span class="visually-hidden"> with ' + (E $r.title) + '</span></a>'
         $html += '</div></li>'
     }
     $html += '</ul>'
@@ -3074,6 +3106,41 @@ function RenderClasses($block) {
             if ($f[1]) { $html += '<div><dt>' + (E $f[0]) + '</dt><dd>' + (E $f[1]) + '</dd></div>' }
         }
         $html += '</dl>'
+
+        # Places remaining: shown only when the number has been entered with the
+        # date it was counted, and only while that count is recent (30 days).
+        # An old number is worse than none, so it quietly disappears.
+        $left = [string](P $c 'placesRemaining' '')
+        $counted = [string](P $c 'placesUpdated' '')
+        if ($left -match '^\d+$' -and $counted) {
+            $countedDate = [datetime]::MinValue
+            if ([datetime]::TryParseExact($counted, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$countedDate)) {
+                $age = ((Get-Date).Date - $countedDate.Date).TotalDays
+                if ($age -ge 0 -and $age -le 30) {
+                    $n = [int]$left
+                    $when = $countedDate.ToString('d MMMM yyyy', [Globalization.CultureInfo]::InvariantCulture)
+                    if ($n -eq 0) { $html += '<p class="class-places class-places--full">This batch is full (as of ' + $when + '). Ask on WhatsApp about the next one.</p>' }
+                    elseif ($n -le 3) { $html += '<p class="class-places class-places--few">Only ' + $n + ' ' + $(if ($n -eq 1) { 'place' } else { 'places' }) + ' remaining <span>(as of ' + $when + ')</span></p>' }
+                    else { $html += '<p class="class-places">' + $n + ' places remaining <span>(as of ' + $when + ')</span></p>' }
+                }
+                else { [void]$script:Warnings.Add("classes.json: places for '$title' were counted on $counted, more than 30 days ago, so they are not shown") }
+            }
+        }
+
+        # Testimonials: only real ones, entered in classes.json with the
+        # person's permission. Nothing is shown when there are none.
+        $quotes = @(); foreach ($tq in (AsList (P $c 'testimonials'))) { if ([string](P $tq 'quote')) { $quotes += $tq } }
+        if ($quotes.Count) {
+            $html += '<div class="class-quotes">'
+            foreach ($q in $quotes) {
+                $who = [string](P $q 'name' '')
+                $detail = [string](P $q 'detail' '')
+                $html += '<blockquote class="class-quote"><p>' + (E (P $q 'quote')) + '</p>'
+                if ($who) { $html += '<footer>' + (E $who) + $(if ($detail) { ', ' + (E $detail) } else { '' }) + '</footer>' }
+                $html += '</blockquote>'
+            }
+            $html += '</div>'
+        }
         $msg = [string](P $c 'whatsappMessage' ("Hello, I would like information about $title. Please send me the schedule, fees and registration details."))
         $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<div class="btn-row"><a class="btn btn--sm btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask about this class</a>'
@@ -3084,7 +3151,12 @@ function RenderClasses($block) {
         $html += '</div>'
         if ($feature) { $html += '</div></article>' } else { $html += '</article>' }
     }
-    return $html + '</div></div></section>'
+    $html += '</div>'
+    # A single course page can be printed or saved as a PDF, as its brochure.
+    if ($filterCourse) {
+        $html += '<p class="print-page"><button type="button" class="btn btn--sm btn--outline" onclick="window.print()">Print or save these course details</button></p>'
+    }
+    return $html + '</div></section>'
 }
 
 function RenderTimetable($block) {

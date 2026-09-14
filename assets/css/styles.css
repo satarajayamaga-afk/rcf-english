@@ -4710,3 +4710,19 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
 .lab__group-title { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 var(--sp-1); font-size: var(--step-2); color: var(--navy-800); }
 .lab__group-count { font-size: 0.85rem; padding: 0.1rem 0.55rem; border-radius: 999px; background: var(--navy-050); color: var(--navy-700); font-weight: 700; }
 .lab__group-note { margin: 0 0 var(--sp-3); color: var(--ink-700); font-size: var(--step--1); }
+
+/* --- class cards: places remaining, testimonials, print */
+.class-places { margin: var(--sp-2) 0; font-weight: 700; color: var(--teal-700); }
+.class-places span { font-weight: 400; font-size: 0.85rem; color: var(--ink-700); }
+.class-places--few { color: #9a4b00; }
+.class-places--full { color: var(--err-700); }
+.class-quotes { display: grid; gap: var(--sp-2); margin: var(--sp-3) 0; }
+.class-quote { margin: 0; padding: var(--sp-3); border-left: 4px solid var(--gold-400, #e3b341); background: #fffdf6; border-radius: var(--radius-sm); }
+.class-quote p { margin: 0 0 0.3rem; font-style: italic; }
+.class-quote footer { font-size: 0.85rem; color: var(--ink-700); }
+.print-page { margin: var(--sp-3) 0 0; }
+@media print { .print-page, .btn--whatsapp { display: none !important; } }
+.fres__report { font-size: 0.78rem; color: var(--ink-700); text-decoration: underline; align-self: center; }
+.status-counts { list-style: none; margin: var(--sp-4) 0 var(--sp-2); padding: 0; display: grid; gap: var(--sp-2); grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
+.status-counts li { padding: var(--sp-3); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); }
+.status-counts__n { display: block; font-family: var(--font-head); font-size: 1.8rem; font-weight: 700; color: var(--navy-800); }
