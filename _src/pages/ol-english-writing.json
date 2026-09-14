@@ -36,6 +36,11 @@
             "label": "Essay Writing",
             "url": "ol-english/essay-writing/",
             "style": "btn--ghost-light"
+          },
+          {
+            "label": "Essay builder",
+            "url": "essay-writing-exercises/?level=O%2FL&tab=builder",
+            "style": "btn--accent"
           }
         ]
       },
@@ -961,6 +966,14 @@
           ]
         },
         {
+          "type": "callout",
+          "style": "tip",
+          "title": "Practise paragraphs online",
+          "text": [
+            "[Improve a paragraph](essay-writing-exercises/?level=O%2FL&tab=improve): rewrite weak O/L paragraphs and check them. [Linking and order](essay-writing-exercises/?level=O%2FL&tab=order): put sentences in the right order and choose the right linking words."
+          ]
+        },
+        {
           "type": "steps",
           "heading": "The four parts of a paragraph",
           "variant": "tint",
@@ -1132,9 +1145,58 @@
         "url": "ol-english/guided-writing/"
       },
       "hero": {
-        "text": "An essay is not a long paragraph. It is a small number of paragraphs, each doing a different job, arranged in an order you decided before you began."
+        "text": "An essay is not a long paragraph. It is a small number of paragraphs, each doing a different job, arranged in an order you decided before you began.",
+        "buttons": [
+          {
+            "label": "Build an essay step by step",
+            "url": "essay-writing-exercises/?level=O%2FL&tab=builder",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Improve a paragraph",
+            "url": "essay-writing-exercises/?level=O%2FL&tab=improve",
+            "style": "btn--ghost-light"
+          }
+        ]
       },
       "blocks": [
+        {
+          "type": "cards",
+          "heading": "Practise essay writing online",
+          "eyebrow": "Interactive",
+          "columns": "3",
+          "variant": "tint",
+          "intro": [
+            "Read this guide, then practise. The O/L exercises use essays of about 180 words, in simple, clear English."
+          ],
+          "items": [
+            {
+              "title": "Essay builder",
+              "url": "essay-writing-exercises/?level=O%2FL&tab=builder",
+              "more": "Start",
+              "accent": true,
+              "text": [
+                "Understand the question, write a thesis, plan two paragraphs, add an introduction and conclusion. Each step is checked."
+              ]
+            },
+            {
+              "title": "Improve a paragraph",
+              "url": "essay-writing-exercises/?level=O%2FL&tab=improve",
+              "more": "Start",
+              "text": [
+                "Rewrite weak paragraphs, check your version, and compare it with a model."
+              ]
+            },
+            {
+              "title": "How a model essay works",
+              "url": "essay-writing-exercises/?level=O%2FL&tab=models",
+              "more": "Start",
+              "text": [
+                "Tap each sentence of a model O/L essay to see the job it does."
+              ]
+            }
+          ]
+        },
         {
           "type": "prose",
           "heading": "Step 1 — Understand the task",
@@ -1227,14 +1289,6 @@
           "text": [
             "Take the model apart. The introduction does three things: a general opening, a narrowing to the question, a statement of position. The conclusion does three things: a summary judgement, a balancing of the two sides, a forward-looking closing sentence.",
             "Practise those two paragraphs on their own. Students who can write a good introduction and a good conclusion under pressure are rarely the ones who run out of time."
-          ]
-        },
-        {
-          "type": "callout",
-          "style": "tip",
-          "title": "Practise online",
-          "text": [
-            "Build an essay step by step, improve weak paragraphs and practise topic sentences in the [Essay Writing Exercises](essay-writing-exercises/?level=O%2FL). The O/L essays there are about 180 words."
           ]
         },
         {
