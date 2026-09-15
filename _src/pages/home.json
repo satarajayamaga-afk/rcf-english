@@ -574,12 +574,40 @@
         },
         {
           "title": "I Want English for University Studies",
-          "sub": "Brush up for higher education",
+          "sub": "Speaking first, for higher education",
           "icon": "🏛️",
           "style": "university",
           "url": "practical-english/english-for-university/",
           "more": "Start brushing up",
           "links": [
+            {
+              "label": "Introducing yourself",
+              "url": "practical-english/english-for-university/#introductions"
+            },
+            {
+              "label": "Asking questions in lectures",
+              "url": "practical-english/english-for-university/#lectures"
+            },
+            {
+              "label": "Talking to lecturers",
+              "url": "practical-english/english-for-university/#lecturers"
+            },
+            {
+              "label": "Speaking up in seminars",
+              "url": "practical-english/english-for-university/#seminars"
+            },
+            {
+              "label": "Group project meetings",
+              "url": "practical-english/english-for-university/#group-work"
+            },
+            {
+              "label": "Presentations and questions",
+              "url": "practical-english/english-for-university/#presentations"
+            },
+            {
+              "label": "Library and university offices",
+              "url": "practical-english/english-for-university/#university-offices"
+            },
             {
               "label": "Academic vocabulary",
               "url": "practical-english/english-for-university/#academic-vocabulary"
@@ -589,54 +617,22 @@
               "url": "practical-english/english-for-university/#instruction-words"
             },
             {
-              "label": "Lectures and notes",
-              "url": "practical-english/english-for-university/#lectures"
-            },
-            {
-              "label": "Reading academic texts",
-              "url": "practical-english/english-for-university/#reading"
-            },
-            {
-              "label": "Paraphrasing and summarising",
-              "url": "practical-english/english-for-university/#paraphrasing"
-            },
-            {
-              "label": "Referencing and plagiarism",
-              "url": "practical-english/english-for-university/#referencing"
-            },
-            {
-              "label": "Academic writing style",
-              "url": "practical-english/english-for-university/#academic-style"
-            },
-            {
-              "label": "Emails to lecturers",
-              "url": "practical-english/english-for-university/#emails"
-            },
-            {
-              "label": "Presentations",
-              "url": "practical-english/english-for-university/#presentations"
-            },
-            {
-              "label": "Seminars and discussions",
-              "url": "practical-english/english-for-university/#seminars"
+              "label": "Academic writing in brief",
+              "url": "practical-english/english-for-university/#academic-writing"
             }
           ]
         },
         {
           "title": "I Want English for a Job Abroad",
-          "sub": "Brush up for work overseas",
+          "sub": "Speaking first, for work overseas",
           "icon": "💼",
           "style": "work",
           "url": "practical-english/english-for-working-abroad/",
           "more": "Start brushing up",
           "links": [
             {
-              "label": "Writing a CV",
-              "url": "practical-english/english-for-working-abroad/#cv"
-            },
-            {
-              "label": "Cover letters",
-              "url": "practical-english/english-for-working-abroad/#cover-letter"
+              "label": "Introducing yourself",
+              "url": "practical-english/english-for-working-abroad/#introduce-yourself"
             },
             {
               "label": "Job interviews",
@@ -651,14 +647,6 @@
               "url": "practical-english/english-for-working-abroad/#instructions"
             },
             {
-              "label": "Safety signs",
-              "url": "practical-english/english-for-working-abroad/#safety"
-            },
-            {
-              "label": "Phone calls and messages",
-              "url": "practical-english/english-for-working-abroad/#phone-email"
-            },
-            {
               "label": "Serving customers",
               "url": "practical-english/english-for-working-abroad/#customers"
             },
@@ -667,8 +655,20 @@
               "url": "practical-english/english-for-working-abroad/#colleagues"
             },
             {
-              "label": "Contract and payslip words",
-              "url": "practical-english/english-for-working-abroad/#contract-words"
+              "label": "Calling in sick and messages",
+              "url": "practical-english/english-for-working-abroad/#telephone"
+            },
+            {
+              "label": "Safety and reporting problems",
+              "url": "practical-english/english-for-working-abroad/#safety"
+            },
+            {
+              "label": "Pay, hours and time off",
+              "url": "practical-english/english-for-working-abroad/#pay-and-time-off"
+            },
+            {
+              "label": "CV and cover letter",
+              "url": "practical-english/english-for-working-abroad/#cv"
             }
           ]
         }
