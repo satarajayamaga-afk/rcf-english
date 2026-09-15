@@ -201,6 +201,80 @@ const SCENES = [
         routes: [{ re: THANKS, next: "end" }], fallback: { next: "end" } },
       end: { say: "You're welcome. Have a good day!", end: true }
     }
+  },
+  {
+    id: "extension", title: "University: asking a lecturer for more time", other: "Lecturer", setting: "You have been ill and are behind with an assignment. You visit your lecturer during office hours.",
+    phrases: ["Good afternoon. Is this a good time?", "I'm in your first-year Economics class.", "I've been ill this week, so I'm behind with the assignment.", "Would it be possible to have a few extra days?", "Thank you, that's really helpful."],
+    start: "hello",
+    nodes: {
+      hello: { say: "Come in. How can I help you?", task: "Greet the lecturer and say who you are.", polite: true, model: "Good afternoon. I'm Nadeesha, from your first-year Economics class.",
+        routes: [{ re: /\b(i'm|i am|my name|class|course|student|year)\b/, next: "problem" }], retry: "Sorry, which class are you in?", fallback: { next: "problem" } },
+      problem: { say: "Nice to see you. What seems to be the problem?", task: "Explain why you are behind with the assignment.", model: "I've been ill this week, so I'm behind with the assignment.",
+        routes: [{ re: /\b(ill|sick|fever|unwell|hospital|family|problem|behind|haven't finished|not finished|couldn't)\b/, next: "request" }], retry: "I see. Could you tell me a little more?", fallback: { next: "request" } },
+      request: { say: "I'm sorry to hear that. Are you feeling better now?", task: "Answer, and ask politely for more time.", polite: true, model: "Yes, thank you. Would it be possible to have a few extra days?",
+        routes: [{ re: /\b(extension|extra|more time|few days|later|next week|submit)\b/, next: "certificate" }], retry: "Is there something you would like to ask me?", fallback: { next: "certificate" } },
+      certificate: { say: "That should be possible. Do you have a medical certificate?", task: "Answer the question.", model: "Yes, I have one. I can bring it tomorrow.",
+        routes: [{ re: /\b(no|don't|do not|haven't|didn't)\b/, next: "noCertificate" }, { re: /\b(yes|i have|i do|here|bring|tomorrow)\b/, next: "agreed" }], fallback: { next: "agreed" } },
+      noCertificate: { say: "Then please ask the doctor for one, or bring a letter from your parents. Once I have it, you can submit next Wednesday.", task: "Thank the lecturer.", model: "Thank you, that's really helpful.",
+        routes: [{ re: THANKS, next: "end" }], fallback: { next: "end" } },
+      agreed: { say: "Good. Bring it to my office, and you can submit the assignment next Wednesday.", task: "Thank the lecturer.", model: "Thank you, that's really helpful.",
+        routes: [{ re: THANKS, next: "end" }], fallback: { next: "end" } },
+      end: { say: "You're welcome. Take care of yourself.", end: true }
+    }
+  },
+  {
+    id: "library", title: "University: at the library desk", other: "Librarian", setting: "You need books for an assignment, and your student card is not working at the gate.",
+    phrases: ["Could you tell me where I can find books on statistics?", "How long can I borrow a book for?", "My student card isn't working.", "My student number is two zero two six, one two three."],
+    start: "hello",
+    nodes: {
+      hello: { say: "Hello. Can I help you?", task: "Ask where to find books on a subject.", polite: true, model: "Could you tell me where I can find books on statistics, please?",
+        routes: [{ re: /\b(books?|find|where|section|shelf)\b/, next: "where" }], retry: "Sorry, what are you looking for?", fallback: { next: "where" } },
+      where: { say: "Those books are on the second floor, near the windows. Anything else?", task: "Ask how long you can borrow a book for.", model: "How long can I borrow a book for?",
+        routes: [{ re: /\b(how long|borrow|keep|return|weeks?|days?)\b/, next: "loan" }, { re: /\b(card|gate|id)\b/, next: "card" }], fallback: { next: "loan" } },
+      loan: { say: "For two weeks. You can renew them online if nobody else has reserved them.", task: "Tell the librarian about the problem with your student card.", model: "Thank you. Also, my student card isn't working at the gate.",
+        routes: [{ re: /\b(card|gate|id|working|problem)\b/, next: "card" }, { re: THANKS, next: "end" }], fallback: { next: "card" } },
+      card: { say: "Let me check that for you. What's your student number?", task: "Give your student number.", model: "It's two zero two six, one two three.",
+        routes: [{ re: /[a-z0-9]/, next: "fixed" }], fallback: { next: "fixed" } },
+      fixed: { say: "Thank you. Your card had expired at the end of last semester. I've renewed it, so it will work now.", task: "Thank the librarian.", model: "Thank you very much for your help.",
+        routes: [{ re: THANKS, next: "end" }], fallback: { next: "end" } },
+      end: { say: "You're welcome. Good luck with your assignment.", end: true }
+    }
+  },
+  {
+    id: "first-day", title: "Work abroad: your first day", other: "Supervisor", setting: "It is your first morning at a warehouse job overseas. Your supervisor meets you at the door.",
+    phrases: ["Good morning. I'm Kamal. I'm starting today.", "What time is my break?", "Where can I leave my bag?", "Who should I ask if I have a problem?", "Could you show me how this works, please?"],
+    start: "hello",
+    nodes: {
+      hello: { say: "Morning! Are you the new starter?", task: "Say yes and introduce yourself.", model: "Yes. Good morning, I'm Kamal. I'm starting today.",
+        routes: [{ re: /\b(yes|i'm|i am|my name|new|starting|start)\b/, next: "hours" }], retry: "Sorry, are you here for the new job?", fallback: { next: "hours" } },
+      hours: { say: "Welcome. I'm Mark, the shift supervisor. Your shift is seven to four. Do you have any questions before we start?", task: "Ask about your break, or where to leave your things.", model: "What time is my break?",
+        routes: [{ re: /\b(break|lunch|rest)\b/, next: "break" }, { re: /\b(bag|things|locker|leave|put)\b/, next: "locker" }, { re: /\b(no|not now|nothing)\b/, next: "help" }], fallback: { next: "break" } },
+      break: { say: "You have a thirty-minute break at eleven. Lockers for your bag are over there, by the door.", task: "Ask who to talk to if you have a problem.", model: "Thank you. Who should I ask if I have a problem?",
+        routes: [{ re: /\b(problem|ask|help|who)\b/, next: "help" }], fallback: { next: "help" } },
+      locker: { say: "Lockers are over there, by the door. Your break is at eleven, for thirty minutes.", task: "Ask who to talk to if you have a problem.", model: "Thank you. Who should I ask if I have a problem?",
+        routes: [{ re: /\b(problem|ask|help|who)\b/, next: "help" }], fallback: { next: "help" } },
+      help: { say: "Ask me, or Priya on the next aisle. She has worked here for five years. Now, this is the scanner you will use.", task: "Ask the supervisor to show you how it works.", polite: true, model: "Could you show me how it works, please?",
+        routes: [{ re: /\b(show|how|explain|use|work)\b/, next: "scanner" }], fallback: { next: "scanner" } },
+      scanner: { say: "Of course. Point it at the barcode and press the green button. It beeps when the item is recorded.", task: "Repeat the instructions back to check.", model: "So I point it at the barcode, press the green button, and wait for the beep?",
+        routes: [{ re: /\b(barcode|green|button|beep|press|point)\b/, next: "end" }], retry: "Sorry, could you tell me what you need to do, to check you've got it?", fallback: { next: "end" } },
+      end: { say: "Exactly right. You're going to be fine here. Let's get started.", end: true }
+    }
+  },
+  {
+    id: "safety", title: "Work abroad: reporting a safety problem", other: "Site supervisor", setting: "You notice that a safety rail on the second floor of a building site is loose. Tell your supervisor.",
+    phrases: ["Excuse me, I need to report a safety problem.", "The safety rail on the second floor is loose.", "It's the side near the stairs.", "I think someone could fall.", "Yes, I'll put a warning sign there now."],
+    start: "report",
+    nodes: {
+      report: { say: "", task: "Get your supervisor's attention and report the problem.", polite: true, model: "Excuse me, I need to report a safety problem. The rail on the second floor is loose.",
+        routes: [{ re: /\b(rail|loose|broken|danger|dangerous|safety|unsafe|problem|fall)\b/, next: "where" }], retry: "Sorry? What's the problem?", fallback: { next: "where" } },
+      where: { say: "Thanks for telling me. Where exactly is it?", task: "Say exactly where the problem is.", model: "It's on the second floor, on the side near the stairs.",
+        routes: [{ re: /\b(floor|side|near|stairs|next to|by the|corner|left|right)\b/, next: "risk" }], retry: "Which part of the building?", fallback: { next: "risk" } },
+      risk: { say: "Is anyone working near it at the moment?", task: "Answer, and say what the danger is.", model: "Yes, two workers are there. I think someone could fall.",
+        routes: [{ re: ANY, next: "action" }], fallback: { next: "action" } },
+      action: { say: "Right. I'll stop work on that side now. Could you put a warning sign there while I call the maintenance team?", task: "Agree to help.", model: "Yes, of course. I'll do it now.",
+        routes: [{ re: /\b(yes|ok|okay|sure|of course|right away|now|will)\b/, next: "end" }], fallback: { next: "end" } },
+      end: { say: "Thank you. You did exactly the right thing. Always tell me straight away.", end: true }
+    }
   }
 ];
 
