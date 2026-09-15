@@ -87,10 +87,12 @@ jobs:
             --exclude '_publish' \
             --exclude '_src' \
             --exclude 'tools' \
+            --exclude '_scratch' \
+            --exclude '.claude' \
             --exclude '*.cmd' \
-            --exclude 'HOW-TO-UPDATE.md' \
-            --exclude 'FINAL-CHECKLIST.md' \
-            --exclude 'RESOURCE-PUBLISHING-POLICY.md'
+            --exclude '*.md' \
+            --exclude '.gitattributes' \
+            --exclude '.gitignore'
           touch _publish/.nojekyll
           echo "Files to publish:"
           find _publish -type f | wc -l

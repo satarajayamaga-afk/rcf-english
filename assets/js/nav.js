@@ -340,3 +340,10 @@
     Array.prototype.forEach.call(routes, function (d) { d.open = true; });
   }
 })();
+
+/* Print buttons. Handled here rather than with onclick="..." in the page, so
+   the Content Security Policy never has to allow inline JavaScript. */
+document.addEventListener("click", function (event) {
+  var target = event.target;
+  if (target && target.closest && target.closest("[data-print]")) window.print();
+});
