@@ -4892,3 +4892,7 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   .pathway__summary { padding: var(--sp-3); }
   .pathway__body { padding: 0 var(--sp-3) var(--sp-3); }
 }
+.pathway--ollit { --route: #3f6b2a; --route-tint: #eef5e9; }
+.pathway--allit { --route: #6d2f6b; --route-tint: #f6ecf5; }
+.pathway--university { --route: #1d5c63; --route-tint: #e8f3f4; }
+.pathway--work { --route: #74501b; --route-tint: #f7f0e4; }

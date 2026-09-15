@@ -1,0 +1,301 @@
+{
+  "_readme": [
+    "TWO ROUTES FROM THE HOME PAGE 'START HERE' SECTION",
+    "---------------------------------------------------------------------",
+    "English for University Studies and English for Working Abroad: ten",
+    "topics each, linked one by one from the 'I want to brush up my English'",
+    "routes on the home page (the #anchors must match the ids below).",
+    "",
+    "Everything is written by RCF English. All names, emails, letters and",
+    "examples are invented. The working-abroad page gives language help only;",
+    "it is not legal, visa or employment advice."
+  ],
+  "pages": [
+    {
+      "slug": "practical-english/english-for-university",
+      "title": "English for University Studies",
+      "metaTitle": "English for University Studies: Academic Vocabulary, Lectures, Reading, Referencing, Presentations | RCF English",
+      "description": "Brush up your English for university: academic vocabulary, assignment instruction words, taking notes in lectures, reading academic texts, paraphrasing and summarising, referencing, academic style, emails to lecturers, presentations and seminars.",
+      "keywords": "English for university students, academic English, academic vocabulary, note taking in lectures, paraphrasing, referencing and plagiarism, email to lecturer, academic presentation phrases, seminar discussion English",
+      "kicker": "Practical English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Practical English", "url": "practical-english/" },
+      "hero": {
+        "text": "University English is not harder English: it is English used for particular jobs, such as following a lecture, reading a research article or writing an assignment. Ten topics that make the first semester much easier.",
+        "buttons": [
+          { "label": "Start with academic vocabulary", "url": "practical-english/english-for-university/#academic-vocabulary", "style": "btn--accent" },
+          { "label": "Practise essay writing", "url": "essay-writing-exercises/?level=IELTS", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        { "type": "prose", "id": "academic-vocabulary", "heading": "1. Academic vocabulary", "variant": "tint", "text": ["A small group of words appears again and again in lectures, textbooks and assignments, whatever your subject. Learn these first."] },
+        { "type": "table", "columns": ["Word", "Meaning", "Example"], "rows": [
+          ["analyse", "to examine something in detail", "We analysed the survey results."],
+          ["evidence", "facts that show something is true", "There is little evidence for this claim."],
+          ["significant", "large or important enough to notice", "There was a significant increase in sales."],
+          ["approach", "a way of dealing with something", "This study uses a different approach."],
+          ["factor", "one of the things that causes a result", "Cost is a major factor."],
+          ["method", "a planned way of doing something", "Describe the method you used."],
+          ["assume", "to accept something as true without proof", "The model assumes that prices stay the same."],
+          ["conclude", "to decide after thinking about the evidence", "The authors conclude that more research is needed."]
+        ] },
+
+        { "type": "prose", "id": "instruction-words", "heading": "2. Understanding assignment instructions", "variant": "tint", "text": ["The first word of an assignment question tells you what to do. Students lose marks by describing when the question asks them to evaluate."] },
+        { "type": "table", "columns": ["Instruction word", "What you must do"], "rows": [
+          ["Describe", "Say what something is like, or what happened. No judgement is needed."],
+          ["Explain", "Say why or how something happens, with reasons."],
+          ["Compare", "Show the similarities and the differences."],
+          ["Analyse", "Break a topic into parts and show how they are connected."],
+          ["Discuss", "Look at different sides of an issue and reach a view."],
+          ["Evaluate", "Judge the strengths and weaknesses, and give a conclusion."],
+          ["Justify", "Give good reasons for a decision or opinion."],
+          ["Outline", "Give the main points only, briefly."]
+        ] },
+
+        { "type": "prose", "id": "lectures", "heading": "3. Following lectures and taking notes", "variant": "tint", "text": ["You cannot write everything a lecturer says. Listen for the signpost phrases that show what is important, and use short forms to write faster."],
+          "parts": [ { "heading": "Signposts to listen for", "bullets": [
+            "*The main point here is...* : write this down.",
+            "*There are three reasons...* : number your notes 1, 2, 3.",
+            "*For example...* : a short example helps you remember the idea.",
+            "*Moving on to...* : a new topic is starting.",
+            "*To sum up...* : the most important points are coming again."
+          ] } ] },
+        { "type": "table", "heading": "Short forms for faster notes", "level": "h3", "columns": ["Write", "Meaning"], "rows": [
+          ["→", "leads to, causes"],
+          ["∴", "therefore"],
+          ["=  /  ≠", "is the same as / is different from"],
+          ["e.g.  /  i.e.", "for example / that is"],
+          ["b/c  /  w/  /  w/o", "because / with / without"],
+          ["↑  /  ↓", "increase / decrease"],
+          ["imp.", "important"]
+        ] },
+
+        { "type": "prose", "id": "reading", "heading": "4. Reading academic texts efficiently", "variant": "tint", "text": ["Academic texts are not read like novels, from the first word to the last. Read with a purpose, and decide quickly whether a text is useful."],
+          "parts": [ { "heading": "A reading method", "numbered": [
+            "Before you read, write down what you want to find out.",
+            "Read the title, the abstract or introduction, and the conclusion first.",
+            "Look at the headings, tables and diagrams.",
+            "Now read the useful sections carefully, and make notes in your own words.",
+            "Write down the author, year and title straight away, for your references."
+          ] } ] },
+
+        { "type": "prose", "id": "paraphrasing", "heading": "5. Paraphrasing and summarising", "variant": "tint", "text": ["**Paraphrasing** means writing an idea in your own words and sentence structure. **Summarising** means giving only the main points, in fewer words. Both still need a reference to the original author."],
+          "parts": [
+            { "heading": "How to paraphrase", "numbered": [
+              "Read the passage until you understand it fully.",
+              "Cover it, and write the idea from memory in your own words.",
+              "Compare with the original: change any phrases that are too close.",
+              "Add the reference."
+            ] },
+            { "heading": "Example", "text": [
+              "**Original:** *Students who sleep for fewer than six hours a night tend to perform worse in examinations than those who sleep for eight hours.*",
+              "**Too close:** *Students who sleep fewer than six hours tend to do worse in exams than students sleeping eight hours.* (Only a few words have changed.)",
+              "**A good paraphrase:** *Getting too little sleep appears to be linked with lower examination results.* (Silva, 2022)",
+              "The example and the reference are invented for practice."
+            ] }
+          ] },
+
+        { "type": "prose", "id": "referencing", "heading": "6. Referencing and avoiding plagiarism", "variant": "tint", "text": ["**Plagiarism** is presenting someone else's words or ideas as your own, even by accident. Universities treat it very seriously. The solution is simple: whenever you use another person's idea, say where it came from."],
+          "parts": [
+            { "heading": "The rules", "bullets": [
+              "Exact words go inside quotation marks, with a reference.",
+              "Paraphrased or summarised ideas also need a reference.",
+              "Common knowledge, such as *Colombo is the commercial capital of Sri Lanka*, needs no reference.",
+              "Every in-text reference must also appear in your reference list at the end.",
+              "Your university or department tells you which referencing style to use, such as APA or Harvard. Follow it exactly."
+            ] },
+            { "heading": "What an in-text reference often looks like", "text": ["*Recent research suggests that group study improves memory (Fernando, 2021).*", "The name and year are invented for this example. Check the exact format in your department's guide."] }
+          ] },
+
+        { "type": "prose", "id": "academic-style", "heading": "7. Writing in an academic style", "variant": "tint", "text": ["Academic writing is formal, careful and precise. It avoids strong claims that cannot be proved."] },
+        { "type": "table", "columns": ["Instead of this", "Write this", "Why"], "rows": [
+          ["It's a big problem.", "It is a significant problem.", "No contractions; precise vocabulary"],
+          ["Lots of people think...", "Many researchers argue that...", "Specific and formal"],
+          ["This proves that...", "This suggests that...", "Careful, hedged claims"],
+          ["I think online learning is better.", "Online learning may offer several advantages.", "Less personal, more objective"],
+          ["Kids", "Children", "No informal words"],
+          ["And also, ...", "Furthermore, ...", "Formal linking words"]
+        ] },
+
+        { "type": "prose", "id": "emails", "heading": "8. Emails to lecturers", "variant": "tint", "text": ["A short, polite, clear email gets a faster reply. Use a clear subject line, a formal greeting, one purpose, and your name and course."],
+          "parts": [ { "heading": "Example email", "text": [
+            "**Subject:** Question about Assignment 2 (BIO 101)",
+            "*Dear Dr Perera,*",
+            "*I am a first-year student in your Introduction to Biology course. I have a question about Assignment 2. The instructions ask for 1,500 words: does this include the reference list?*",
+            "*Thank you for your time.*",
+            "*Kind regards,*",
+            "*Tharushi Jayawardena*",
+            "*Student number: 2026/BIO/0123*",
+            "The names, course and number are invented for this example."
+          ] } ] },
+
+        { "type": "prose", "id": "presentations", "heading": "9. Giving a presentation", "variant": "tint", "text": ["A good academic presentation tells the audience what is coming, delivers it clearly, and reminds them what they have heard."] },
+        { "type": "table", "columns": ["Stage", "Useful phrases"], "rows": [
+          ["Opening", "Good morning. Today I am going to talk about..."],
+          ["Outline", "My presentation has three parts. First..., then..., and finally..."],
+          ["Moving on", "Now let us look at... / This brings me to my second point."],
+          ["Showing a slide", "As you can see in this chart, ..."],
+          ["Concluding", "To sum up, ... / The key message is..."],
+          ["Questions", "Thank you for listening. I would be happy to answer any questions."]
+        ] },
+
+        { "type": "prose", "id": "seminars", "heading": "10. Seminars and group discussions", "variant": "tint", "text": ["In seminars you are expected to speak. You do not need a perfect idea: asking a good question or building on someone else's point also counts."] },
+        { "type": "table", "columns": ["Purpose", "Useful phrases"], "rows": [
+          ["Giving your view", "In my view, ... / It seems to me that..."],
+          ["Agreeing", "I agree with Nimal's point, because..."],
+          ["Disagreeing politely", "I see what you mean, but I wonder whether..."],
+          ["Adding a point", "Building on that, ... / I would also add that..."],
+          ["Asking for clarification", "Could you explain what you mean by...?"],
+          ["Bringing others in", "What do you think, Anusha?"]
+        ] },
+
+        { "type": "cards", "heading": "Practise these skills", "columns": "3", "items": [
+          { "title": "Essay Writing Exercises", "url": "essay-writing-exercises/?level=IELTS", "more": "Practise", "text": ["Thesis statements, paragraphs, linking words and a step-by-step essay builder."] },
+          { "title": "IELTS Academic Practice Test", "url": "practical-english/ielts/practice-test-1/", "more": "Start", "text": ["Useful even if you are not taking IELTS: academic reading, listening and writing."] },
+          { "title": "Listening Laboratory", "url": "listening-lab/", "more": "Listen", "text": ["Talks and lectures with note-taking questions, including A/L General English tests."] },
+          { "title": "Speaking Practice", "url": "speaking-practice/?mode=part3", "more": "Speak", "text": ["Discussion questions to practise giving and supporting opinions aloud."] },
+          { "title": "Writing Practice", "url": "writing-practice/", "more": "Write", "text": ["Check a piece of writing and print it for a teacher."] },
+          { "title": "IELTS graphs and charts", "url": "practical-english/ielts/graphs/", "more": "Learn", "text": ["Describing data, a skill needed in many university reports."] }
+        ] }
+      ]
+    },
+
+    {
+      "slug": "practical-english/english-for-working-abroad",
+      "title": "English for Working Abroad",
+      "metaTitle": "English for Working Abroad: CV, Cover Letter, Job Interview, Workplace and Safety English | RCF English",
+      "description": "Brush up your English for a job overseas: writing a CV and cover letter, job interviews, your first days at work, understanding instructions and safety signs, telephone and email, serving customers, working with colleagues, and the words in a contract and payslip.",
+      "keywords": "English for foreign job, English for working abroad, English for migrant workers Sri Lanka, job interview English, CV in English, workplace English phrases, safety signs English, contract vocabulary",
+      "kicker": "Practical English",
+      "kind": "lesson",
+      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
+      "backTo": { "label": "Workplace English", "url": "practical-english/workplace-english/" },
+      "hero": {
+        "text": "Getting a job abroad starts with English, and keeping it depends on English too. Ten practical topics, from your CV to your first payslip.",
+        "buttons": [
+          { "label": "Start with your CV", "url": "practical-english/english-for-working-abroad/#cv", "style": "btn--accent" },
+          { "label": "Practise a job interview", "url": "practical-english/conversation-partner/", "style": "btn--ghost-light" }
+        ]
+      },
+      "blocks": [
+        { "type": "callout", "style": "note", "title": "About this page", "text": ["This page helps with the English you need for work abroad. It is not legal, visa or employment advice. Before you accept a job or sign anything, check official guidance, for example from the Sri Lanka Bureau of Foreign Employment, and the rules of the country you are going to."] },
+
+        { "type": "prose", "id": "cv", "heading": "1. Writing a CV", "variant": "tint", "text": ["A CV (curriculum vitae) is a short record of your experience and skills. Employers often look at it for less than a minute, so make it clear and easy to scan."],
+          "parts": [
+            { "heading": "The usual sections", "numbered": [
+              "**Contact details:** name, phone number, email address.",
+              "**Personal profile:** two or three sentences about who you are and the job you want.",
+              "**Work experience:** most recent job first, with dates and what you did.",
+              "**Education and training:** qualifications and certificates.",
+              "**Skills:** languages, computer skills, driving licence, and so on."
+            ] },
+            { "heading": "Tips", "bullets": [
+              "Start each duty with an action verb: *managed*, *prepared*, *repaired*, *served*, *trained*.",
+              "Keep it to one or two pages, and check every spelling.",
+              "CVs are different in different countries (for example, whether to include a photograph). Check what employers expect where you are applying."
+            ] },
+            { "heading": "Example lines", "text": ["*Prepared meals for up to 200 guests a day in a busy hotel kitchen.*", "*Maintained and repaired air-conditioning units in office buildings.*"] }
+          ] },
+
+        { "type": "prose", "id": "cover-letter", "heading": "2. Writing a cover letter or email", "variant": "tint", "text": ["A cover letter introduces your CV. Keep it short: say which job you want, why you are suitable, and that you are available for an interview."],
+          "parts": [ { "heading": "Example", "text": [
+            "*Dear Sir or Madam,*",
+            "*I am writing to apply for the position of Hotel Kitchen Assistant advertised on your website.*",
+            "*I have three years' experience in a busy hotel kitchen in Galle, where I prepared food, kept the kitchen clean and followed food safety rules. I work well in a team and I am used to working long shifts.*",
+            "*I have attached my CV, and I would welcome the opportunity to attend an interview.*",
+            "*Yours faithfully,*",
+            "*Chaminda Rathnayake*",
+            "The name and details are invented for this example."
+          ] } ] },
+
+        { "type": "prose", "id": "interview", "heading": "3. The job interview", "variant": "tint", "text": ["Most interviews use similar questions. Prepare an answer to each, and practise saying it aloud, not just reading it."] },
+        { "type": "table", "columns": ["Question", "A good answer includes"], "rows": [
+          ["Tell me about yourself.", "Your experience and skills in two or three sentences, linked to this job."],
+          ["Why do you want this job?", "What interests you about the work, not only the salary."],
+          ["What experience do you have?", "One or two real examples of what you did."],
+          ["What are your strengths?", "A strength with a short example that proves it."],
+          ["Tell me about a problem you solved at work.", "The situation, what you did, and the result."],
+          ["Do you have any questions?", "Always ask one: for example, about training or working hours."]
+        ] },
+        { "type": "callout", "style": "tip", "title": "Practise out loud", "text": ["The [Conversation Partner](practical-english/conversation-partner/) has a job interview you can answer with your voice, and [Speaking Practice](speaking-practice/?mode=talk) lets you practise introducing yourself."] },
+
+        { "type": "prose", "id": "first-days", "heading": "4. Your first days at work", "variant": "tint", "text": ["In the first week, people will not expect you to know everything, but they will expect you to ask."] },
+        { "type": "table", "columns": ["Say this", "When"], "rows": [
+          ["Hello, I'm Kamal. I've just started in the stores department.", "Introducing yourself"],
+          ["What time do I start and finish?", "Asking about hours"],
+          ["Where should I put my things?", "Asking about the workplace"],
+          ["Who should I ask if I have a problem?", "Finding your supervisor"],
+          ["Could you show me how this works, please?", "Learning a task"]
+        ] },
+
+        { "type": "prose", "id": "instructions", "heading": "5. Understanding and checking instructions", "variant": "tint", "text": ["Doing a task wrongly because you were too shy to ask can cost money or cause accidents. Always check instructions you are not sure about. Repeating them back is the best way."] },
+        { "type": "table", "columns": ["Say this", "Why"], "rows": [
+          ["Sorry, could you say that again more slowly?", "You did not catch it"],
+          ["Just to check: you want me to clean the rooms on floor two first?", "Repeating back"],
+          ["What does *urgent* mean here? Today, or right now?", "Checking a word"],
+          ["Could you write that down for me, please?", "For numbers, names and times"],
+          ["I've finished. Is this correct?", "Checking your work"]
+        ] },
+
+        { "type": "prose", "id": "safety", "heading": "6. Safety signs and warnings", "variant": "tint", "text": ["Safety signs use short words that you must understand immediately. Learn these before your first day."] },
+        { "type": "table", "columns": ["Sign or warning", "Meaning"], "rows": [
+          ["DANGER", "Serious risk of injury or death"],
+          ["CAUTION / WARNING", "Be careful: there is a risk"],
+          ["WET FLOOR", "The floor is slippery"],
+          ["NO ENTRY / AUTHORISED PERSONNEL ONLY", "Do not go in unless you have permission"],
+          ["FIRE EXIT / EMERGENCY EXIT", "The way out in an emergency"],
+          ["WEAR PROTECTIVE EQUIPMENT", "Wear the gloves, helmet, glasses or boots provided"],
+          ["HIGH VOLTAGE", "Danger of electric shock"],
+          ["FIRST AID", "Where to find help and medical supplies"]
+        ] },
+        { "type": "callout", "style": "warn", "title": "Report a problem at once", "text": ["If something is unsafe, say so immediately: *Excuse me, this machine isn't working properly. I think it's dangerous.* You are never wrong to report a safety problem."] },
+
+        { "type": "prose", "id": "phone-email", "heading": "7. Telephone calls and work messages", "variant": "tint", "text": ["When you are ill or late, tell your supervisor as early as possible, clearly and politely."],
+          "parts": [
+            { "heading": "Calling in sick", "text": ["*Good morning, this is Sunil from the night shift. I'm sorry, but I'm ill today and I can't come to work. I'll let you know how I am tomorrow.*"] },
+            { "heading": "A short message about being late", "text": ["*Hello Ms Lee, my bus has broken down. I'm sorry, I will be about 30 minutes late. Sunil*", "The names are invented for these examples."] }
+          ] },
+
+        { "type": "prose", "id": "customers", "heading": "8. Serving customers and handling complaints", "variant": "tint", "text": ["In hotels, shops, restaurants and care work, your English is part of the service. When a customer complains, follow four steps: **listen, apologise, solve, thank.**"] },
+        { "type": "table", "columns": ["Step", "Useful phrases"], "rows": [
+          ["Greet", "Good afternoon. How can I help you?"],
+          ["Listen", "I understand. Could you tell me exactly what happened?"],
+          ["Apologise", "I'm very sorry about that."],
+          ["Solve", "Let me fix that for you right away. / I'll ask my manager."],
+          ["Thank", "Thank you for letting us know."]
+        ] },
+
+        { "type": "prose", "id": "colleagues", "heading": "9. Working with colleagues", "variant": "tint", "text": ["Friendly, polite English makes working together easier, especially in teams where people come from many countries."] },
+        { "type": "table", "columns": ["Say this", "When"], "rows": [
+          ["Could you give me a hand with this?", "Asking for help"],
+          ["No problem, I'll do it now.", "Agreeing to help"],
+          ["Sorry, I can't right now. I'm finishing this job.", "Saying no politely"],
+          ["Would it be possible to take Friday off?", "Asking for time off"],
+          ["Thanks for your help today.", "Thanking a colleague"]
+        ] },
+
+        { "type": "prose", "id": "contract-words", "heading": "10. Words in your contract and payslip", "variant": "tint", "text": ["Never sign a contract you do not fully understand. Ask for a copy, take your time, and ask someone you trust to read it with you."] },
+        { "type": "table", "columns": ["Word", "Meaning"], "rows": [
+          ["salary / wage", "the money you are paid, often monthly (salary) or hourly (wage)"],
+          ["basic pay", "your pay before extra money is added"],
+          ["overtime", "extra hours worked beyond your normal hours"],
+          ["shift", "a set period of work, such as a night shift"],
+          ["deductions", "money taken from your pay, for example for tax or accommodation"],
+          ["annual leave", "paid holiday days each year"],
+          ["probation period", "the first weeks or months, when your work is checked"],
+          ["notice period", "how long before leaving you must tell your employer"]
+        ] },
+
+        { "type": "cards", "heading": "Practise these skills", "columns": "3", "items": [
+          { "title": "IELTS General Training", "url": "practical-english/ielts/general-training-test-1/", "more": "Start", "text": ["The test many employers and countries ask for, with a practice test and answers."] },
+          { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Read", "text": ["More English for meetings, emails and everyday work."] },
+          { "title": "Conversation Partner", "url": "practical-english/conversation-partner/", "more": "Talk", "text": ["A job interview, a hotel check-in and more, answered with your voice."] },
+          { "title": "Spoken English Starter", "url": "practical-english/spoken-english-starter/", "more": "Start", "text": ["Ten everyday topics: greetings, shopping, directions and the telephone."] },
+          { "title": "Speaking Practice", "url": "speaking-practice/?mode=talk", "more": "Speak", "text": ["Everyday situations to answer aloud, with feedback."] },
+          { "title": "Writing Practice", "url": "writing-practice/", "more": "Write", "text": ["Check a letter or email before you send it."] }
+        ] }
+      ]
+    }
+  ]
+}

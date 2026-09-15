@@ -175,6 +175,56 @@
           ]
         },
         {
+          "title": "I am an O/L Literature Student",
+          "sub": "English Literature for O/L",
+          "icon": "📖",
+          "style": "ollit",
+          "url": "ol-literature/",
+          "more": "Go to O/L Literature",
+          "links": [
+            {
+              "label": "Syllabus",
+              "url": "ol-literature/syllabus/"
+            },
+            {
+              "label": "Prescribed texts",
+              "url": "ol-literature/texts/"
+            },
+            {
+              "label": "Poetry",
+              "url": "ol-literature/poetry/"
+            },
+            {
+              "label": "Short stories",
+              "url": "ol-literature/short-stories/"
+            },
+            {
+              "label": "Drama",
+              "url": "ol-literature/drama/"
+            },
+            {
+              "label": "Context questions",
+              "url": "ol-literature/context-questions/"
+            },
+            {
+              "label": "Essay questions",
+              "url": "ol-literature/essay-questions/"
+            },
+            {
+              "label": "Model answers",
+              "url": "ol-literature/model-answers/"
+            },
+            {
+              "label": "Literary techniques",
+              "url": "ol-literature/literary-techniques/"
+            },
+            {
+              "label": "Past papers",
+              "url": "past-papers/ol-literature/"
+            }
+          ]
+        },
+        {
           "title": "I am a Secondary Student",
           "sub": "Grades 6 to 11",
           "icon": "📘",
@@ -295,6 +345,56 @@
           ]
         },
         {
+          "title": "I am an A/L Literature Student",
+          "sub": "English Literature for A/L",
+          "icon": "🎭",
+          "style": "allit",
+          "url": "al-literature/",
+          "more": "Go to A/L Literature",
+          "links": [
+            {
+              "label": "Syllabus",
+              "url": "al-literature/syllabus/"
+            },
+            {
+              "label": "Prescribed texts",
+              "url": "al-literature/prescribed-texts/"
+            },
+            {
+              "label": "Poetry",
+              "url": "al-literature/poetry/"
+            },
+            {
+              "label": "Drama",
+              "url": "al-literature/drama/"
+            },
+            {
+              "label": "Fiction",
+              "url": "al-literature/fiction/"
+            },
+            {
+              "label": "Critical appreciation",
+              "url": "al-literature/critical-appreciation/"
+            },
+            {
+              "label": "Context questions",
+              "url": "al-literature/context-questions/"
+            },
+            {
+              "label": "Essay questions",
+              "url": "al-literature/essay-questions/"
+            },
+            {
+              "label": "Model answers",
+              "url": "al-literature/model-answers/"
+            },
+            {
+              "label": "Past papers",
+              "url": "past-papers/al-literature/"
+            }
+          ]
+        },
+        {
           "title": "I am Preparing for O/L or A/L",
           "sub": "Examination revision",
           "icon": "🎓",
@@ -330,6 +430,56 @@
             {
               "label": "Past papers",
               "url": "past-papers/"
+            }
+          ]
+        },
+        {
+          "title": "I am an Elocution Student",
+          "sub": "Clear, confident speech",
+          "icon": "🎤",
+          "style": "elocution",
+          "url": "practical-english/elocution-basics/",
+          "more": "Start practising",
+          "links": [
+            {
+              "label": "Posture",
+              "url": "practical-english/elocution-basics/#posture"
+            },
+            {
+              "label": "Breathing for speech",
+              "url": "practical-english/elocution-basics/#breathing"
+            },
+            {
+              "label": "Voice warm-ups",
+              "url": "practical-english/elocution-basics/#warm-up"
+            },
+            {
+              "label": "Tongue twisters",
+              "url": "practical-english/elocution-basics/#tongue-twisters"
+            },
+            {
+              "label": "Vowel sounds",
+              "url": "practical-english/elocution-basics/#vowel-sounds"
+            },
+            {
+              "label": "Word stress",
+              "url": "practical-english/elocution-basics/#word-stress"
+            },
+            {
+              "label": "Stress and intonation",
+              "url": "practical-english/elocution-basics/#intonation"
+            },
+            {
+              "label": "Pace and pausing",
+              "url": "practical-english/elocution-basics/#pace-and-pausing"
+            },
+            {
+              "label": "Reading aloud",
+              "url": "practical-english/elocution-basics/#reading-aloud"
+            },
+            {
+              "label": "Speaking to an audience",
+              "url": "practical-english/elocution-basics/#public-speaking"
             }
           ]
         },
@@ -423,52 +573,102 @@
           ]
         },
         {
-          "title": "I am an Elocution Student",
-          "sub": "Clear, confident speech",
-          "icon": "🎤",
-          "style": "elocution",
-          "url": "practical-english/elocution-basics/",
-          "more": "Start practising",
+          "title": "I Want English for University Studies",
+          "sub": "Brush up for higher education",
+          "icon": "🏛️",
+          "style": "university",
+          "url": "practical-english/english-for-university/",
+          "more": "Start brushing up",
           "links": [
             {
-              "label": "Posture",
-              "url": "practical-english/elocution-basics/#posture"
+              "label": "Academic vocabulary",
+              "url": "practical-english/english-for-university/#academic-vocabulary"
             },
             {
-              "label": "Breathing for speech",
-              "url": "practical-english/elocution-basics/#breathing"
+              "label": "Assignment instructions",
+              "url": "practical-english/english-for-university/#instruction-words"
             },
             {
-              "label": "Voice warm-ups",
-              "url": "practical-english/elocution-basics/#warm-up"
+              "label": "Lectures and notes",
+              "url": "practical-english/english-for-university/#lectures"
             },
             {
-              "label": "Tongue twisters",
-              "url": "practical-english/elocution-basics/#tongue-twisters"
+              "label": "Reading academic texts",
+              "url": "practical-english/english-for-university/#reading"
             },
             {
-              "label": "Vowel sounds",
-              "url": "practical-english/elocution-basics/#vowel-sounds"
+              "label": "Paraphrasing and summarising",
+              "url": "practical-english/english-for-university/#paraphrasing"
             },
             {
-              "label": "Word stress",
-              "url": "practical-english/elocution-basics/#word-stress"
+              "label": "Referencing and plagiarism",
+              "url": "practical-english/english-for-university/#referencing"
             },
             {
-              "label": "Stress and intonation",
-              "url": "practical-english/elocution-basics/#intonation"
+              "label": "Academic writing style",
+              "url": "practical-english/english-for-university/#academic-style"
             },
             {
-              "label": "Pace and pausing",
-              "url": "practical-english/elocution-basics/#pace-and-pausing"
+              "label": "Emails to lecturers",
+              "url": "practical-english/english-for-university/#emails"
             },
             {
-              "label": "Reading aloud",
-              "url": "practical-english/elocution-basics/#reading-aloud"
+              "label": "Presentations",
+              "url": "practical-english/english-for-university/#presentations"
             },
             {
-              "label": "Speaking to an audience",
-              "url": "practical-english/elocution-basics/#public-speaking"
+              "label": "Seminars and discussions",
+              "url": "practical-english/english-for-university/#seminars"
+            }
+          ]
+        },
+        {
+          "title": "I Want English for a Job Abroad",
+          "sub": "Brush up for work overseas",
+          "icon": "💼",
+          "style": "work",
+          "url": "practical-english/english-for-working-abroad/",
+          "more": "Start brushing up",
+          "links": [
+            {
+              "label": "Writing a CV",
+              "url": "practical-english/english-for-working-abroad/#cv"
+            },
+            {
+              "label": "Cover letters",
+              "url": "practical-english/english-for-working-abroad/#cover-letter"
+            },
+            {
+              "label": "Job interviews",
+              "url": "practical-english/english-for-working-abroad/#interview"
+            },
+            {
+              "label": "Your first days at work",
+              "url": "practical-english/english-for-working-abroad/#first-days"
+            },
+            {
+              "label": "Checking instructions",
+              "url": "practical-english/english-for-working-abroad/#instructions"
+            },
+            {
+              "label": "Safety signs",
+              "url": "practical-english/english-for-working-abroad/#safety"
+            },
+            {
+              "label": "Phone calls and messages",
+              "url": "practical-english/english-for-working-abroad/#phone-email"
+            },
+            {
+              "label": "Serving customers",
+              "url": "practical-english/english-for-working-abroad/#customers"
+            },
+            {
+              "label": "Working with colleagues",
+              "url": "practical-english/english-for-working-abroad/#colleagues"
+            },
+            {
+              "label": "Contract and payslip words",
+              "url": "practical-english/english-for-working-abroad/#contract-words"
             }
           ]
         }
