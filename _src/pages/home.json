@@ -6,22 +6,46 @@
   "keywords": "O/L English, O/L English Literature, A/L Literature, General English, past papers, model papers, guided writing, English teacher resources, Sri Lanka, online English classes",
   "kind": "page",
   "schema": "EducationalOrganization",
-
   "ogTitle": "RCF English | English Learning & Teaching Resources",
   "ogDescription": "RCF English brings together curriculum resources, O/L & A/L Literature, Practical English, past papers, teacher resources, interactive learning and RCF Publications. Free to read, no account required.",
-
-  "scripts": ["browse", "herobook"],
-
+  "scripts": [
+    "browse",
+    "herobook"
+  ],
   "hero": {
     "style": "home",
     "text": "Clear English lessons, practical revision resources and reliable teaching support for learners and teachers. Everything is organised by subject and by task, so you can find what you need and start work straight away.",
     "buttons": [
-      { "label": "Grade 6‑11 English Resources", "url": "grades/", "style": "btn--accent" },
-      { "label": "English Teacher Resources", "url": "teacher-resources/", "style": "btn--sea" },
-      { "label": "Browse Past Papers", "url": "past-papers/", "style": "btn--pine" },
-      { "label": "Explore Global English", "url": "global-english/", "style": "btn--petrol" },
-      { "label": "Explore RCF Online Academy", "url": "rcf-classes/", "style": "btn--slate" },
-      { "label": "Explore RCF Publications", "url": "rcf-publications/", "style": "btn--moss" }
+      {
+        "label": "Grade 6‑11 English Resources",
+        "url": "grades/",
+        "style": "btn--accent"
+      },
+      {
+        "label": "English Teacher Resources",
+        "url": "teacher-resources/",
+        "style": "btn--sea"
+      },
+      {
+        "label": "Browse Past Papers",
+        "url": "past-papers/",
+        "style": "btn--pine"
+      },
+      {
+        "label": "Explore Global English",
+        "url": "global-english/",
+        "style": "btn--petrol"
+      },
+      {
+        "label": "Explore RCF Online Academy",
+        "url": "rcf-classes/",
+        "style": "btn--slate"
+      },
+      {
+        "label": "Explore RCF Publications",
+        "url": "rcf-publications/",
+        "style": "btn--moss"
+      }
     ],
     "figure": {
       "type": "book",
@@ -38,14 +62,63 @@
         "at least four."
       ],
       "pages": [
-        { "title": "RCF English", "lines": ["Learn • Practise • Progress"] },
-        { "title": "For learners", "lines": ["Primary English", "O/L English", "General English"] },
-        { "title": "For examinations", "lines": ["O/L Literature", "A/L Literature", "Past Papers"] },
-        { "title": "Beyond the syllabus", "lines": ["Practical English", "Global English"] },
-        { "title": "For teachers", "lines": ["Teacher Resources"] },
-        { "title": "Classes and books", "lines": ["RCF Online Academy", "RCF Publications"] },
-        { "title": "Explore", "lines": ["Learn", "Practise", "Master"] },
-        { "title": "RCF English", "lines": ["Free to read.", "No account required."] }
+        {
+          "title": "RCF English",
+          "lines": [
+            "Learn • Practise • Progress"
+          ]
+        },
+        {
+          "title": "For learners",
+          "lines": [
+            "Primary English",
+            "O/L English",
+            "General English"
+          ]
+        },
+        {
+          "title": "For examinations",
+          "lines": [
+            "O/L Literature",
+            "A/L Literature",
+            "Past Papers"
+          ]
+        },
+        {
+          "title": "Beyond the syllabus",
+          "lines": [
+            "Practical English",
+            "Global English"
+          ]
+        },
+        {
+          "title": "For teachers",
+          "lines": [
+            "Teacher Resources"
+          ]
+        },
+        {
+          "title": "Classes and books",
+          "lines": [
+            "RCF Online Academy",
+            "RCF Publications"
+          ]
+        },
+        {
+          "title": "Explore",
+          "lines": [
+            "Learn",
+            "Practise",
+            "Master"
+          ]
+        },
+        {
+          "title": "RCF English",
+          "lines": [
+            "Free to read.",
+            "No account required."
+          ]
+        }
       ]
     },
     "aside": {
@@ -60,7 +133,6 @@
       "footnote": "Free to read, no account required. No advertising cookies and no behavioural advertising. Paid educational listings are clearly marked Sponsored."
     }
   },
-
   "blocks": [
     {
       "type": "pathways",
@@ -76,11 +148,30 @@
           "url": "primary-english/",
           "more": "Go to Primary English",
           "links": [
-            { "label": "Grade 1", "url": "primary-english/grade-1/", "note": "The themes of the Activity Based Oral English syllabus" },
-            { "label": "Watch and Write the alphabet", "url": "primary-english/alphabet/watch-and-write/", "note": "See each letter written, then trace it" },
-            { "label": "Songs for Grade 2", "url": "primary-english/songs/", "note": "Sing along with the words lighting up" },
-            { "label": "Grades 3, 4 and 5", "url": "primary-english/grade-3/", "note": "Following the NIE primary syllabus" },
-            { "label": "Games and activities", "url": "primary-english/games/" }
+            {
+              "label": "Grade 1",
+              "url": "primary-english/grade-1/",
+              "note": "The themes of the Activity Based Oral English syllabus"
+            },
+            {
+              "label": "Watch and Write the alphabet",
+              "url": "primary-english/alphabet/watch-and-write/",
+              "note": "See each letter written, then trace it"
+            },
+            {
+              "label": "Songs for Grade 2",
+              "url": "primary-english/songs/",
+              "note": "Sing along with the words lighting up"
+            },
+            {
+              "label": "Grades 3, 4 and 5",
+              "url": "primary-english/grade-3/",
+              "note": "Following the NIE primary syllabus"
+            },
+            {
+              "label": "Games and activities",
+              "url": "primary-english/games/"
+            }
           ]
         },
         {
@@ -91,13 +182,85 @@
           "url": "grades/",
           "more": "Choose your grade",
           "links": [
-            { "label": "Grade 6", "url": "grades/grade-6/" },
-            { "label": "Grade 7", "url": "grades/grade-7/" },
-            { "label": "Grade 8", "url": "grades/grade-8/" },
-            { "label": "Grade 9", "url": "grades/grade-9/" },
-            { "label": "Grade 10", "url": "grades/grade-10/" },
-            { "label": "Grade 11", "url": "grades/grade-11/" },
-            { "label": "Listening Laboratory", "url": "listening-lab/", "note": "96 listening tests that mark themselves" }
+            {
+              "label": "Grade 6",
+              "url": "grades/grade-6/"
+            },
+            {
+              "label": "Grade 7",
+              "url": "grades/grade-7/"
+            },
+            {
+              "label": "Grade 8",
+              "url": "grades/grade-8/"
+            },
+            {
+              "label": "Grade 9",
+              "url": "grades/grade-9/"
+            },
+            {
+              "label": "Grade 10",
+              "url": "grades/grade-10/"
+            },
+            {
+              "label": "Grade 11",
+              "url": "grades/grade-11/"
+            },
+            {
+              "label": "Listening Laboratory",
+              "url": "listening-lab/",
+              "note": "96 listening tests that mark themselves"
+            }
+          ]
+        },
+        {
+          "title": "I am Learning Spoken English",
+          "sub": "Everyday speaking, step by step",
+          "icon": "🗣️",
+          "style": "spoken",
+          "url": "practical-english/spoken-english-starter/",
+          "more": "Start speaking",
+          "links": [
+            {
+              "label": "Greetings and introductions",
+              "url": "practical-english/spoken-english-starter/#greetings"
+            },
+            {
+              "label": "Talking about family",
+              "url": "practical-english/spoken-english-starter/#family"
+            },
+            {
+              "label": "Daily routine",
+              "url": "practical-english/spoken-english-starter/#daily-routine"
+            },
+            {
+              "label": "Shopping",
+              "url": "practical-english/spoken-english-starter/#shopping"
+            },
+            {
+              "label": "Ordering food",
+              "url": "practical-english/spoken-english-starter/#ordering-food"
+            },
+            {
+              "label": "Asking for directions",
+              "url": "practical-english/spoken-english-starter/#directions"
+            },
+            {
+              "label": "On the telephone",
+              "url": "practical-english/spoken-english-starter/#telephone"
+            },
+            {
+              "label": "Asking politely",
+              "url": "practical-english/spoken-english-starter/#polite-requests"
+            },
+            {
+              "label": "Thanking and apologising",
+              "url": "practical-english/spoken-english-starter/#thanks-and-sorry"
+            },
+            {
+              "label": "Small talk",
+              "url": "practical-english/spoken-english-starter/#small-talk"
+            }
           ]
         },
         {
@@ -108,11 +271,27 @@
           "url": "teacher-resources/",
           "more": "Go to Teacher Resources",
           "links": [
-            { "label": "Lesson plans", "url": "teacher-resources/lesson-plans/" },
-            { "label": "Marking guides", "url": "teacher-resources/marking-guides/" },
-            { "label": "Remedial and slow-learner support", "url": "teacher-resources/remedial-english/" },
-            { "label": "Teacher resources in the finder", "url": "resources/?for=teacher", "note": "Guides, plans and papers by grade" },
-            { "label": "TKT preparation course", "url": "rcf-classes/tkt/" }
+            {
+              "label": "Lesson plans",
+              "url": "teacher-resources/lesson-plans/"
+            },
+            {
+              "label": "Marking guides",
+              "url": "teacher-resources/marking-guides/"
+            },
+            {
+              "label": "Remedial and slow-learner support",
+              "url": "teacher-resources/remedial-english/"
+            },
+            {
+              "label": "Teacher resources in the finder",
+              "url": "resources/?for=teacher",
+              "note": "Guides, plans and papers by grade"
+            },
+            {
+              "label": "TKT preparation course",
+              "url": "rcf-classes/tkt/"
+            }
           ]
         },
         {
@@ -123,13 +302,35 @@
           "url": "exam-centre/",
           "more": "Go to the Examination Centre",
           "links": [
-            { "label": "O/L Examination Centre", "url": "exam-centre/ol/", "note": "Countdown, weekly question, timed practice" },
-            { "label": "A/L Examination Centre", "url": "exam-centre/al/" },
-            { "label": "O/L English", "url": "ol-english/" },
-            { "label": "O/L Literature", "url": "ol-literature/" },
-            { "label": "A/L General English", "url": "general-english/" },
-            { "label": "A/L Literature", "url": "al-literature/" },
-            { "label": "Past papers", "url": "past-papers/" }
+            {
+              "label": "O/L Examination Centre",
+              "url": "exam-centre/ol/",
+              "note": "Countdown, weekly question, timed practice"
+            },
+            {
+              "label": "A/L Examination Centre",
+              "url": "exam-centre/al/"
+            },
+            {
+              "label": "O/L English",
+              "url": "ol-english/"
+            },
+            {
+              "label": "O/L Literature",
+              "url": "ol-literature/"
+            },
+            {
+              "label": "A/L General English",
+              "url": "general-english/"
+            },
+            {
+              "label": "A/L Literature",
+              "url": "al-literature/"
+            },
+            {
+              "label": "Past papers",
+              "url": "past-papers/"
+            }
           ]
         },
         {
@@ -140,12 +341,31 @@
           "url": "global-english/",
           "more": "Go to Global English",
           "links": [
-            { "label": "GCSE English Language", "url": "global-english/gcse/", "note": "AQA, Edexcel, OCR and Eduqas" },
-            { "label": "Edexcel GCSE English Language", "url": "global-english/gcse/edexcel/" },
-            { "label": "Cambridge IGCSE First Language English", "url": "global-english/igcse/first-language-english/" },
-            { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
-            { "label": "Cambridge English: B1 Preliminary, B2 First, C1 Advanced", "url": "global-english/cambridge-english/" },
-            { "label": "Pearson Edexcel iPrimary and iLowerSecondary", "url": "global-english/edexcel-international-curriculum/" }
+            {
+              "label": "GCSE English Language",
+              "url": "global-english/gcse/",
+              "note": "AQA, Edexcel, OCR and Eduqas"
+            },
+            {
+              "label": "Edexcel GCSE English Language",
+              "url": "global-english/gcse/edexcel/"
+            },
+            {
+              "label": "Cambridge IGCSE First Language English",
+              "url": "global-english/igcse/first-language-english/"
+            },
+            {
+              "label": "Cambridge IGCSE English as a Second Language",
+              "url": "global-english/igcse/english-as-a-second-language/"
+            },
+            {
+              "label": "Cambridge English: B1 Preliminary, B2 First, C1 Advanced",
+              "url": "global-english/cambridge-english/"
+            },
+            {
+              "label": "Pearson Edexcel iPrimary and iLowerSecondary",
+              "url": "global-english/edexcel-international-curriculum/"
+            }
           ]
         },
         {
@@ -156,27 +376,111 @@
           "url": "practical-english/ielts/",
           "more": "Go to IELTS Preparation",
           "links": [
-            { "label": "Which IELTS test do I need?", "url": "practical-english/ielts/test-types/", "note": "Academic, General Training, UKVI, Life Skills" },
-            { "label": "Academic practice test with answers", "url": "practical-english/ielts/practice-test-1/" },
-            { "label": "General Training practice test with answers", "url": "practical-english/ielts/general-training-test-1/" },
-            { "label": "Quick practice that marks itself", "url": "practical-english/ielts/quick-practice/" },
-            { "label": "Listening", "url": "practical-english/ielts/listening/" },
-            { "label": "Reading", "url": "practical-english/ielts/reading/" },
-            { "label": "Writing", "url": "practical-english/ielts/writing/" },
-            { "label": "Task 1: describing graphs and charts", "url": "practical-english/ielts/graphs/" },
-            { "label": "10 Task 2 model essays", "url": "practical-english/ielts/model-essays/" },
-            { "label": "Speaking", "url": "practical-english/ielts/speaking/" },
-            { "label": "One-to-one IELTS classes", "url": "rcf-classes/ielts/", "note": "RCF Online Academy" }
+            {
+              "label": "Which IELTS test do I need?",
+              "url": "practical-english/ielts/test-types/"
+            },
+            {
+              "label": "Academic practice test",
+              "url": "practical-english/ielts/practice-test-1/"
+            },
+            {
+              "label": "General Training practice test",
+              "url": "practical-english/ielts/general-training-test-1/"
+            },
+            {
+              "label": "Quick practice",
+              "url": "practical-english/ielts/quick-practice/"
+            },
+            {
+              "label": "Listening",
+              "url": "practical-english/ielts/listening/"
+            },
+            {
+              "label": "Reading",
+              "url": "practical-english/ielts/reading/"
+            },
+            {
+              "label": "Writing",
+              "url": "practical-english/ielts/writing/"
+            },
+            {
+              "label": "Task 1: graphs and charts",
+              "url": "practical-english/ielts/graphs/"
+            },
+            {
+              "label": "Task 2 model essays",
+              "url": "practical-english/ielts/model-essays/"
+            },
+            {
+              "label": "Speaking",
+              "url": "practical-english/ielts/speaking/"
+            },
+            {
+              "label": "One-to-one IELTS classes",
+              "url": "rcf-classes/ielts/"
+            }
+          ]
+        },
+        {
+          "title": "I am an Elocution Student",
+          "sub": "Clear, confident speech",
+          "icon": "🎤",
+          "style": "elocution",
+          "url": "practical-english/elocution-basics/",
+          "more": "Start practising",
+          "links": [
+            {
+              "label": "Posture",
+              "url": "practical-english/elocution-basics/#posture"
+            },
+            {
+              "label": "Breathing for speech",
+              "url": "practical-english/elocution-basics/#breathing"
+            },
+            {
+              "label": "Voice warm-ups",
+              "url": "practical-english/elocution-basics/#warm-up"
+            },
+            {
+              "label": "Tongue twisters",
+              "url": "practical-english/elocution-basics/#tongue-twisters"
+            },
+            {
+              "label": "Vowel sounds",
+              "url": "practical-english/elocution-basics/#vowel-sounds"
+            },
+            {
+              "label": "Word stress",
+              "url": "practical-english/elocution-basics/#word-stress"
+            },
+            {
+              "label": "Stress and intonation",
+              "url": "practical-english/elocution-basics/#intonation"
+            },
+            {
+              "label": "Pace and pausing",
+              "url": "practical-english/elocution-basics/#pace-and-pausing"
+            },
+            {
+              "label": "Reading aloud",
+              "url": "practical-english/elocution-basics/#reading-aloud"
+            },
+            {
+              "label": "Speaking to an audience",
+              "url": "practical-english/elocution-basics/#public-speaking"
+            }
           ]
         }
       ]
     },
-
     {
       "type": "destinations",
       "heading": "Paid materials and opportunities",
       "eyebrow": "Books, resources and offers",
-      "intro": ["The lessons, past papers and teacher resources on this website are free to read. These three are separate and paid: books published by RCF Publications, downloadable resource collections, and sponsored listings placed by other teachers and institutes."],
+      "intro": [
+        "The lessons, past papers and teacher resources on this website are free to read. These three are separate and paid: books published by RCF Publications, downloadable resource collections, and sponsored listings placed by other teachers and institutes."
+      ],
       "items": [
         {
           "title": "RCF Publications",
@@ -204,22 +508,21 @@
         }
       ]
     },
-
     {
       "type": "adslot",
       "placement": "between"
     },
-
     {
       "type": "updates",
       "heading": "What's New",
       "eyebrow": "Recently added",
-      "intro": ["The newest work on the site. The past-paper card below writes itself from the papers actually published, so it is never out of date."],
+      "intro": [
+        "The newest work on the site. The past-paper card below writes itself from the papers actually published, so it is never out of date."
+      ],
       "limit": 6,
       "allUrl": "updates/",
       "allLabel": "View all updates"
     },
-
     {
       "type": "cards",
       "id": "global-english",
@@ -237,7 +540,9 @@
           "url": "global-english/",
           "accent": true,
           "more": "Open Global English",
-          "text": ["GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, the Cambridge English Qualifications, and the four English skills."],
+          "text": [
+            "GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, the Cambridge English Qualifications, and the four English skills."
+          ],
           "bullets": [
             "AQA, Pearson Edexcel, OCR and Eduqas routes named separately",
             "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes",
@@ -249,7 +554,9 @@
           "icon": "ESL",
           "url": "global-english/igcse/english-as-a-second-language/",
           "more": "Open the guide",
-          "text": ["The first qualification developed in full: syllabuses 0510, 0511, 0991 and 0993, exercise by exercise, with model answers and practice."],
+          "text": [
+            "The first qualification developed in full: syllabuses 0510, 0511, 0991 and 0993, exercise by exercise, with model answers and practice."
+          ],
           "bullets": [
             "Reading and Writing paper, all six exercises",
             "Writing formats: email, article, report, review, essay",
@@ -258,97 +565,281 @@
         }
       ]
     },
-
     {
       "type": "cards",
       "heading": "Explore by category",
       "eyebrow": "Find your section",
-      "intro": ["Explore ten subject areas, each offering lessons, practice activities and revision resources."],
+      "intro": [
+        "Explore ten subject areas, each offering lessons, practice activities and revision resources."
+      ],
       "columns": "3",
       "variant": "tint",
       "items": [
-        { "title": "Primary English", "icon": "PE", "url": "primary-english/", "more": "Start here", "text": ["Alphabet practice, ten-minute activities, poems, short reading passages and games for younger children."] },
-        { "title": "O/L English", "icon": "OL", "url": "ol-english/", "more": "Start here", "text": ["Grammar, vocabulary, reading and every writing task in the Ordinary Level paper, taught step by step."] },
-        { "title": "O/L Literature", "icon": "LIT", "url": "ol-literature/", "more": "Start here", "text": ["Poetry, short stories, drama and novels, with a consistent method for context and essay answers."] },
-        { "title": "Practical English", "icon": "PE", "url": "practical-english/", "more": "Start here", "text": ["Practical English for daily life, work and study, for adults and independent learners developing their confidence."] },
-        { "title": "A/L Literature", "icon": "AL", "url": "al-literature/", "more": "Start here", "text": ["Critical appreciation, textual evidence and well-organised essay answers at Advanced Level."] },
-        { "title": "Past Papers", "icon": "PP", "url": "past-papers/", "more": "Search papers", "text": ["Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."] },
-        { "title": "Teacher Resources", "icon": "TR", "url": "teacher-resources/", "more": "For teachers", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."] },
-        { "title": "Interactive Learning", "icon": "IL", "url": "interactive/", "more": "Practise now", "text": ["Quizzes, gap-fill, matching, sentence ordering and error correction, with instant feedback."] },
-        { "title": "RCF Online Academy", "icon": "RC", "url": "rcf-classes/", "more": "See classes", "text": ["Online English and Literature classes conducted by Rohana Fernando. Ask about schedules on WhatsApp."] },
-        { "title": "RCF Publications", "icon": "BK", "url": "PUBLICATIONS_WEBSITE_URL", "text": ["Practical books, study guides and examination revision materials published by RCF Publications."] }
+        {
+          "title": "Primary English",
+          "icon": "PE",
+          "url": "primary-english/",
+          "more": "Start here",
+          "text": [
+            "Alphabet practice, ten-minute activities, poems, short reading passages and games for younger children."
+          ]
+        },
+        {
+          "title": "O/L English",
+          "icon": "OL",
+          "url": "ol-english/",
+          "more": "Start here",
+          "text": [
+            "Grammar, vocabulary, reading and every writing task in the Ordinary Level paper, taught step by step."
+          ]
+        },
+        {
+          "title": "O/L Literature",
+          "icon": "LIT",
+          "url": "ol-literature/",
+          "more": "Start here",
+          "text": [
+            "Poetry, short stories, drama and novels, with a consistent method for context and essay answers."
+          ]
+        },
+        {
+          "title": "Practical English",
+          "icon": "PE",
+          "url": "practical-english/",
+          "more": "Start here",
+          "text": [
+            "Practical English for daily life, work and study, for adults and independent learners developing their confidence."
+          ]
+        },
+        {
+          "title": "A/L Literature",
+          "icon": "AL",
+          "url": "al-literature/",
+          "more": "Start here",
+          "text": [
+            "Critical appreciation, textual evidence and well-organised essay answers at Advanced Level."
+          ]
+        },
+        {
+          "title": "Past Papers",
+          "icon": "PP",
+          "url": "past-papers/",
+          "more": "Search papers",
+          "text": [
+            "Past papers, model papers, marking schemes and revision papers, with filters for year, paper and type."
+          ]
+        },
+        {
+          "title": "Teacher Resources",
+          "icon": "TR",
+          "url": "teacher-resources/",
+          "more": "For teachers",
+          "text": [
+            "Lesson plans, worksheets, marking guides and support for mixed-ability and remedial teaching."
+          ]
+        },
+        {
+          "title": "Interactive Learning",
+          "icon": "IL",
+          "url": "interactive/",
+          "more": "Practise now",
+          "text": [
+            "Quizzes, gap-fill, matching, sentence ordering and error correction, with instant feedback."
+          ]
+        },
+        {
+          "title": "RCF Online Academy",
+          "icon": "RC",
+          "url": "rcf-classes/",
+          "more": "See classes",
+          "text": [
+            "Online English and Literature classes conducted by Rohana Fernando. Ask about schedules on WhatsApp."
+          ]
+        },
+        {
+          "title": "RCF Publications",
+          "icon": "BK",
+          "url": "PUBLICATIONS_WEBSITE_URL",
+          "text": [
+            "Practical books, study guides and examination revision materials published by RCF Publications."
+          ]
+        }
       ]
     },
-
     {
       "type": "cards",
       "heading": "Featured resources",
       "eyebrow": "A good place to begin",
-      "intro": ["If you are not sure where to start, these are the pages students and teachers use most."],
+      "intro": [
+        "If you are not sure where to start, these are the pages students and teachers use most."
+      ],
       "columns": "3",
       "items": [
-        { "title": "Guided Writing", "url": "ol-english/guided-writing/", "more": "Learn the method", "text": ["The six-step method used throughout this site: understand, study a model, find the structure, practise with guidance, write alone, then correct."] },
-        { "title": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/", "more": "Build better answers", "text": ["Turn a one-line response into a full paragraph: point, evidence, explanation, effect and link."] },
-        { "title": "Common Student Mistakes", "url": "ol-english/common-mistakes/", "more": "Check your work", "text": ["The errors that cost marks most often in O/L English, with the correct form beside each one."] },
-        { "title": "Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Plan your paper", "text": ["Reading the question, dividing your time, planning briefly and leaving time to check."] },
-        { "title": "Interactive Practice", "url": "interactive/", "more": "Try an activity", "text": ["Grammar, vocabulary, reading and error-correction activities that mark themselves and explain the answer."] },
-        { "title": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/", "more": "For teachers", "text": ["Practical classroom strategies for learners who need more time, smaller steps and more repetition."] }
+        {
+          "title": "Guided Writing",
+          "url": "ol-english/guided-writing/",
+          "more": "Learn the method",
+          "text": [
+            "The six-step method used throughout this site: understand, study a model, find the structure, practise with guidance, write alone, then correct."
+          ]
+        },
+        {
+          "title": "How to Develop an Answer",
+          "url": "ol-literature/developing-an-answer/",
+          "more": "Build better answers",
+          "text": [
+            "Turn a one-line response into a full paragraph: point, evidence, explanation, effect and link."
+          ]
+        },
+        {
+          "title": "Common Student Mistakes",
+          "url": "ol-english/common-mistakes/",
+          "more": "Check your work",
+          "text": [
+            "The errors that cost marks most often in O/L English, with the correct form beside each one."
+          ]
+        },
+        {
+          "title": "Examination Techniques",
+          "url": "ol-english/examination-techniques/",
+          "more": "Plan your paper",
+          "text": [
+            "Reading the question, dividing your time, planning briefly and leaving time to check."
+          ]
+        },
+        {
+          "title": "Interactive Practice",
+          "url": "interactive/",
+          "more": "Try an activity",
+          "text": [
+            "Grammar, vocabulary, reading and error-correction activities that mark themselves and explain the answer."
+          ]
+        },
+        {
+          "title": "Slow-Learner Support",
+          "url": "teacher-resources/slow-learner-support/",
+          "more": "For teachers",
+          "text": [
+            "Practical classroom strategies for learners who need more time, smaller steps and more repetition."
+          ]
+        }
       ]
     },
-
     {
       "type": "browse",
       "heading": "Latest resources",
       "eyebrow": "Recently added",
       "variant": "tint",
-      "intro": ["Worksheets, revision sheets and other files are listed here as they are approved for publication. Written lessons appear in the subject sections above."],
+      "intro": [
+        "Worksheets, revision sheets and other files are listed here as they are approved for publication. Written lessons appear in the subject sections above."
+      ],
       "source": "resources",
       "limit": 8,
       "allUrl": "resources/",
       "allLabel": "View all resources",
-      "filters": ["category", "type", "level", "skill"],
+      "filters": [
+        "category",
+        "type",
+        "level",
+        "skill"
+      ],
       "note": "Only resources RCF English created, may distribute with permission, or may link from an official source are listed."
     },
-
     {
       "type": "cards",
       "heading": "Interactive learning",
       "eyebrow": "Practise, do not only read",
-      "intro": ["Every activity marks itself at once, explains the answer, keeps a score and can be started again. No login, no accounts, nothing recorded."],
+      "intro": [
+        "Every activity marks itself at once, explains the answer, keeps a score and can be started again. No login, no accounts, nothing recorded."
+      ],
       "columns": "4",
       "items": [
-        { "title": "Grammar quiz", "url": "interactive/#grammar", "more": "Try it", "text": ["Multiple-choice questions on tenses, prepositions and sentence structure."] },
-        { "title": "Fill in the blank", "url": "interactive/#gap", "more": "Try it", "text": ["Articles and verb forms, typed into the space, marked as soon as you finish."] },
-        { "title": "Vocabulary matching", "url": "interactive/#match", "more": "Try it", "text": ["Match a word or a literary term to its meaning."] },
-        { "title": "Error correction", "url": "interactive/#error", "more": "Try it", "text": ["Find the one mistake in a sentence and rewrite it correctly."] }
+        {
+          "title": "Grammar quiz",
+          "url": "interactive/#grammar",
+          "more": "Try it",
+          "text": [
+            "Multiple-choice questions on tenses, prepositions and sentence structure."
+          ]
+        },
+        {
+          "title": "Fill in the blank",
+          "url": "interactive/#gap",
+          "more": "Try it",
+          "text": [
+            "Articles and verb forms, typed into the space, marked as soon as you finish."
+          ]
+        },
+        {
+          "title": "Vocabulary matching",
+          "url": "interactive/#match",
+          "more": "Try it",
+          "text": [
+            "Match a word or a literary term to its meaning."
+          ]
+        },
+        {
+          "title": "Error correction",
+          "url": "interactive/#error",
+          "more": "Try it",
+          "text": [
+            "Find the one mistake in a sentence and rewrite it correctly."
+          ]
+        }
       ]
     },
-
     {
       "type": "steps",
       "heading": "Our learning approach",
       "eyebrow": "Five stages",
       "variant": "navy",
-      "intro": ["Every lesson on RCF English follows the same progression. It is deliberately gradual, because most learners fail at writing not through lack of ability but through lack of preparation."],
+      "intro": [
+        "Every lesson on RCF English follows the same progression. It is deliberately gradual, because most learners fail at writing not through lack of ability but through lack of preparation."
+      ],
       "layout": "row",
       "items": [
-        { "title": "Understand", "text": ["Receive a clear explanation of the lesson or the task, in plain language."] },
-        { "title": "Observe", "text": ["Study a useful model and see exactly how it is put together."] },
-        { "title": "Practise", "text": ["Complete activities with guidance, one step at a time."] },
-        { "title": "Apply", "text": ["Use what you have learnt independently, without the model in front of you."] },
-        { "title": "Review", "text": ["Find your own mistakes with a checklist, correct them, and strengthen what you know."] }
+        {
+          "title": "Understand",
+          "text": [
+            "Receive a clear explanation of the lesson or the task, in plain language."
+          ]
+        },
+        {
+          "title": "Observe",
+          "text": [
+            "Study a useful model and see exactly how it is put together."
+          ]
+        },
+        {
+          "title": "Practise",
+          "text": [
+            "Complete activities with guidance, one step at a time."
+          ]
+        },
+        {
+          "title": "Apply",
+          "text": [
+            "Use what you have learnt independently, without the model in front of you."
+          ]
+        },
+        {
+          "title": "Review",
+          "text": [
+            "Find your own mistakes with a checklist, correct them, and strengthen what you know."
+          ]
+        }
       ]
     },
-
     {
       "type": "classes",
       "heading": "Featured courses",
       "eyebrow": "Learn with a teacher",
-      "intro": ["Online classes conducted by Rohana Fernando. Schedules, fees and available places are confirmed on WhatsApp, so the information you receive is always current."],
+      "intro": [
+        "Online classes conducted by Rohana Fernando. Schedules, fees and available places are confirmed on WhatsApp, so the information you receive is always current."
+      ],
       "featured": true,
       "limit": 3
     },
-
     {
       "type": "prose",
       "variant": "tint",
@@ -361,17 +852,44 @@
         "[Read the full About Us page](about/) or [meet the founder](about/founder/)."
       ]
     },
-
     {
       "type": "cards",
       "heading": "Where would you like to start?",
       "eyebrow": "Next step",
       "columns": "4",
       "items": [
-        { "title": "I am preparing for an examination", "url": "past-papers/how-to-use/", "more": "Use past papers well", "text": ["Begin with the paper structure, then work through past and model papers with a marking guide beside you."] },
-        { "title": "I want to improve my English", "url": "practical-english/", "more": "General English", "text": ["Start with practical grammar and everyday English, and practise speaking and writing a little each day."] },
-        { "title": "I teach English", "url": "teacher-resources/", "more": "Teacher resources", "text": ["Lesson plans, worksheets, marking guides and support for mixed-ability and remedial classes."] },
-        { "title": "I am helping my child", "url": "how-to-use/", "more": "How to use this site", "text": ["See what is examined, what a good answer looks like, and how to help at home without doing the work for them."] }
+        {
+          "title": "I am preparing for an examination",
+          "url": "past-papers/how-to-use/",
+          "more": "Use past papers well",
+          "text": [
+            "Begin with the paper structure, then work through past and model papers with a marking guide beside you."
+          ]
+        },
+        {
+          "title": "I want to improve my English",
+          "url": "practical-english/",
+          "more": "General English",
+          "text": [
+            "Start with practical grammar and everyday English, and practise speaking and writing a little each day."
+          ]
+        },
+        {
+          "title": "I teach English",
+          "url": "teacher-resources/",
+          "more": "Teacher resources",
+          "text": [
+            "Lesson plans, worksheets, marking guides and support for mixed-ability and remedial classes."
+          ]
+        },
+        {
+          "title": "I am helping my child",
+          "url": "how-to-use/",
+          "more": "How to use this site",
+          "text": [
+            "See what is examined, what a good answer looks like, and how to help at home without doing the work for them."
+          ]
+        }
       ]
     }
   ]

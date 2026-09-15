@@ -4873,3 +4873,22 @@ html.reading-contrast .site-header .btn, html.reading-contrast .site-header butt
 button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 0 0 0 2px #f0c94d; }
 .ee__roleselect { margin: 0 0.3rem 0 0.1rem; font-size: var(--step--1); }
 .ee__explain p { margin: 0; padding: var(--sp-2) var(--sp-3); background: #fff8dc; border-radius: var(--radius-sm); }
+
+/* Start here routes: eight routes, balanced on wide screens */
+.pathway--spoken { --route: #5b3f99; --route-tint: #f1ecfa; }
+.pathway--elocution { --route: #b3541e; --route-tint: #fbefe7; }
+@media (min-width: 900px) {
+  /* every route is open at this width, so rows line up: two columns, then four */
+  .pathways__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+  .pathways__grid > li { display: flex; }
+  .pathways__grid > li > .pathway { flex: 1; display: flex; flex-direction: column; }
+  .pathway[open] > .pathway__body { flex: 1; display: flex; flex-direction: column; }
+  .pathway[open] .pathway__links { flex: 1; }
+  .pathway__main { align-self: flex-start; margin-top: auto; }
+}
+@media (min-width: 1180px) {
+  .pathways__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pathway__title { font-size: var(--step-0); }
+  .pathway__summary { padding: var(--sp-3); }
+  .pathway__body { padding: 0 var(--sp-3) var(--sp-3); }
+}
