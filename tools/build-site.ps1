@@ -4138,6 +4138,9 @@ function BuildPage($page) {
     $head += '<meta name="twitter:image:alt" content="' + (E $ogImageAlt) + '">'
     $head += '<link rel="icon" href="' + (E ($script:Root + 'assets/img/icons/favicon.svg')) + '" type="image/svg+xml">'
     $head += '<link rel="apple-touch-icon" href="' + (E ($script:Root + 'assets/img/icons/apple-touch-icon.png')) + '">'
+    # The short label shown under the icon when an iPhone or iPad user chooses
+    # Share, then Add to Home Screen. Without it, iOS uses the long page title.
+    $head += '<meta name="apple-mobile-web-app-title" content="' + (E $script:Config.siteName) + '">'
     $head += '<link rel="manifest" href="' + (E ($script:Root + 'manifest.webmanifest')) + '">'
     # Styles and scripts carry ?v=<content hash>, so a changed file has a new
     # address and no browser or service worker can keep serving the old one.

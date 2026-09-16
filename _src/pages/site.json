@@ -1026,6 +1026,37 @@
           ]
         },
         {
+          "type": "steps",
+          "id": "home-screen",
+          "variant": "tint",
+          "heading": "Put RCF English on your phone’s home screen",
+          "intro": "Your phone can add an RCF English icon beside your other apps. Tapping it opens this website straight away. Nothing is downloaded and no app store is involved, so it uses almost no space on your phone.",
+          "items": [
+            {
+              "title": "On an Android phone (Chrome)",
+              "numbered": [
+                "Open rcfenglish.com in Chrome.",
+                "Tap the three dots in the top corner.",
+                "Choose **Add to Home screen**, then **Add**."
+              ]
+            },
+            {
+              "title": "On an iPhone or iPad (Safari)",
+              "numbered": [
+                "Open rcfenglish.com in Safari.",
+                "Tap the **Share** button (the square with an arrow).",
+                "Scroll down, choose **Add to Home Screen**, then **Add**."
+              ]
+            },
+            {
+              "title": "Afterwards",
+              "text": [
+                "The RCF English icon appears with your apps. Tap it any time to open the website. To remove it, press and hold the icon and choose delete or remove, exactly like any other icon."
+              ]
+            }
+          ]
+        },
+        {
           "type": "cards",
           "heading": "If you are a student",
           "columns": "3",
