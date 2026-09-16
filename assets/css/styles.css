@@ -4896,3 +4896,38 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
 .pathway--allit { --route: #6d2f6b; --route-tint: #f6ecf5; }
 .pathway--university { --route: #1d5c63; --route-tint: #e8f3f4; }
 .pathway--work { --route: #74501b; --route-tint: #f7f0e4; }
+
+/* "Add to home screen" offer. Sits above the two floating buttons and lifts
+   them while it is on screen, so nothing is covered. */
+.a2hs {
+  position: fixed;
+  left: 50%;
+  bottom: 0.75rem;
+  transform: translateX(-50%);
+  z-index: 95;
+  width: min(30rem, calc(100vw - 1.5rem));
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 10px 30px rgba(3, 12, 24, 0.25);
+}
+.a2hs__icon { flex: none; width: 44px; height: 44px; border-radius: 10px; }
+.a2hs__text { flex: 1; display: grid; gap: 0.15rem; min-width: 0; }
+.a2hs__text strong { color: var(--navy-800); line-height: 1.25; }
+.a2hs__text span { font-size: var(--step--1); color: var(--ink-700); }
+.a2hs__buttons { flex: none; display: grid; gap: 0.35rem; }
+.has-a2hs .to-top { bottom: calc(clamp(0.75rem, 2.5vw, 1.5rem) + 6.5rem); }
+.has-a2hs .reading-tools { bottom: 7.25rem; }
+.a2hs__buttons .btn { min-height: 44px; }
+@media (max-width: 30rem) {
+  .a2hs { gap: var(--sp-2); padding: var(--sp-2) var(--sp-3); }
+  .a2hs__icon { width: 36px; height: 36px; }
+  .a2hs__text strong { font-size: var(--step--1); }
+  .a2hs__text span { font-size: 0.78rem; }
+  .a2hs__buttons { grid-auto-flow: column; gap: var(--sp-2); }
+}
+@media print { .a2hs { display: none !important; } }

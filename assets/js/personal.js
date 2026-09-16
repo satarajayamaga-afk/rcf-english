@@ -220,3 +220,116 @@
     });
   }
 })();
+
+/* ---------------------------------------------------------------------------
+   "Add RCF English to your home screen".
+
+   No website is allowed to put an icon on a phone by itself: browsers only
+   allow it after the person agrees. What this does is make the offer appear
+   on its own, so nobody has to know where the browser menu is.
+
+   Android and Chrome give the site an event, so one tap opens the browser's
+   own Add dialog. Safari on an iPhone gives no such event, so the bar shows
+   the two steps instead. The bar appears once; if it is dismissed, or the
+   site is already opening from the home screen, it never appears again.
+--------------------------------------------------------------------------- */
+(function () {
+  "use strict";
+  var KEY = "rcf-home-screen";
+
+  function remember(value) {
+    try { window.localStorage.setItem(KEY, value); } catch (e) { /* not kept */ }
+  }
+  function remembered() {
+    try { return window.localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+
+  if (remembered()) return;
+
+  /* Already opened from the home screen: nothing to offer. */
+  var fromHomeScreen =
+    window.navigator.standalone === true ||
+    (window.matchMedia &&
+      (window.matchMedia("(display-mode: standalone)").matches ||
+        window.matchMedia("(display-mode: minimal-ui)").matches));
+  if (fromHomeScreen) { remember("added"); return; }
+
+  var bar = null;
+
+  function close(why) {
+    remember(why);
+    if (!bar) return;
+    bar.remove();
+    bar = null;
+    document.documentElement.classList.remove("has-a2hs");
+  }
+
+  function show(steps, onAdd) {
+    /* Chrome may offer again in the same visit: one answer is enough. */
+    if (bar || remembered() || !document.body) return;
+    bar = document.createElement("div");
+    bar.className = "a2hs";
+    bar.setAttribute("role", "dialog");
+    bar.setAttribute("aria-label", "Add RCF English to your home screen");
+
+    var icon = document.createElement("img");
+    icon.className = "a2hs__icon";
+    icon.src = (document.body.dataset.root || "") + "assets/img/icons/icon-192.png";
+    icon.alt = "";
+    icon.width = 44;
+    icon.height = 44;
+
+    var text = document.createElement("div");
+    text.className = "a2hs__text";
+    var title = document.createElement("strong");
+    title.textContent = "Add RCF English to your home screen";
+    var note = document.createElement("span");
+    note.textContent = steps;
+    text.appendChild(title);
+    text.appendChild(note);
+
+    var buttons = document.createElement("div");
+    buttons.className = "a2hs__buttons";
+    if (onAdd) {
+      var add = document.createElement("button");
+      add.type = "button";
+      add.className = "btn btn--sm btn--accent";
+      add.textContent = "Add";
+      add.addEventListener("click", function () { onAdd(); });
+      buttons.appendChild(add);
+    }
+    var no = document.createElement("button");
+    no.type = "button";
+    no.className = "btn btn--sm btn--outline";
+    no.textContent = onAdd ? "Not now" : "Got it";
+    no.addEventListener("click", function () { close("dismissed"); });
+    buttons.appendChild(no);
+
+    bar.appendChild(icon);
+    bar.appendChild(text);
+    bar.appendChild(buttons);
+    document.body.appendChild(bar);
+    document.documentElement.classList.add("has-a2hs");
+  }
+
+  /* Android, Chrome and Edge: the browser offers the dialog through this event. */
+  window.addEventListener("beforeinstallprompt", function (event) {
+    event.preventDefault();
+    show("One tap. Nothing is downloaded.", function () {
+      close("added");
+      event.prompt();
+    });
+  });
+  window.addEventListener("appinstalled", function () { close("added"); });
+
+  /* Safari on an iPhone or iPad: no event exists, so show the two steps. */
+  var ua = window.navigator.userAgent;
+  var iOS = /iPad|iPhone|iPod/.test(ua) ||
+    (window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
+  var safari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|Android/.test(ua);
+  if (iOS && safari) {
+    window.setTimeout(function () {
+      show("Tap Share, then Add to Home Screen.", null);
+    }, 2500);
+  }
+})();
