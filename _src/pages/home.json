@@ -395,37 +395,52 @@
           ]
         },
         {
-          "title": "I am Preparing for O/L or A/L",
-          "sub": "Examination revision",
+          "title": "I am an O/L English or A/L General English Student",
+          "sub": "The language papers, not Literature",
           "icon": "🎓",
           "style": "exam",
-          "url": "exam-centre/",
-          "more": "Go to the Examination Centre",
+          "url": "ol-english/",
+          "more": "Go to O/L English",
           "links": [
-            {
-              "label": "O/L Examination Centre",
-              "url": "exam-centre/ol/",
-              "note": "Countdown, weekly question, timed practice"
-            },
-            {
-              "label": "A/L Examination Centre",
-              "url": "exam-centre/al/"
-            },
             {
               "label": "O/L English",
               "url": "ol-english/"
-            },
-            {
-              "label": "O/L Literature",
-              "url": "ol-literature/"
             },
             {
               "label": "A/L General English",
               "url": "general-english/"
             },
             {
-              "label": "A/L Literature",
-              "url": "al-literature/"
+              "label": "Grammar",
+              "url": "ol-english/grammar/"
+            },
+            {
+              "label": "Guided writing",
+              "url": "ol-english/guided-writing/"
+            },
+            {
+              "label": "Essay Writing Exercises",
+              "url": "essay-writing-exercises/"
+            },
+            {
+              "label": "Reading comprehension",
+              "url": "ol-english/reading-comprehension/"
+            },
+            {
+              "label": "General English listening",
+              "url": "general-english/#al-listening"
+            },
+            {
+              "label": "Model questions and answers",
+              "url": "ol-english/model-questions/"
+            },
+            {
+              "label": "O/L Examination Centre",
+              "url": "exam-centre/ol/"
+            },
+            {
+              "label": "A/L Examination Centre",
+              "url": "exam-centre/al/"
             },
             {
               "label": "Past papers",
