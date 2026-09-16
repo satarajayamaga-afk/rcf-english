@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Downloads must never have their line endings changed
+*.pdf binary
+*.docx binary

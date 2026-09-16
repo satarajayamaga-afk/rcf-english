@@ -2,7 +2,7 @@
 // this folder. Usage: node tools/ppp/gen.js _src/pages/teacher-resources-ppp.json
 const fs = require("fs");
 const path = require("path");
-const OUT = process.argv[2];
+const OUT = process.argv[2] || path.join(__dirname, "../../_src/pages/teacher-resources-ppp.json");
 const D = __dirname;
 const L = Object.assign({}, require(D + "/g3-g6.js"), require(D + "/g7-g8.js"), require(D + "/g9-g11.js"), require(D + "/al.js"));
 const ORDER = ["g3", "g6", "g7", "g8", "g9", "g10", "g11", "al"];
@@ -13,7 +13,7 @@ const PREMIUM = {
   type: "callout", style: "info", title: "Complete lesson plan books are coming",
   text: ["These are simple sample plans. **Complete lesson plan books for every grade** will be part of **RCF Premium Resources**, which will be ready in the future. [See RCF Premium Resources](premium-resources/)"]
 };
-const OWN = "Every plan on this page was written by RCF English. The unit and activity names refer to the government Pupil's Book so that you can find the right page; no textbook text is reproduced here. Print the page or save it as a PDF from your browser's print option.";
+const OWN = "Every plan on this page was written by RCF English. The unit and activity names refer to the government Pupil's Book so that you can find the right page; no textbook text is reproduced here. Download it as an editable Word document or a print-ready PDF.";
 const join = (a) => a.join(" ");
 
 function planPage(key) {
@@ -203,58 +203,214 @@ const notes = {
 };
 
 // ---------- SBA samples ----------
-const sba = (heading, level, time, task, rows) => ({
-  type: "table", level: "h3", heading,
-  intro: [`**Level:** ${level}. **Time:** ${time}.`, `**Task:** ${task}`],
-  columns: ["Criterion", "Marks", "What earns full marks"], rows
-});
+// Laid out like the school's SBA assessment tool form: the details of the
+// tool, the instructions for teacher and students, the marking criteria, and
+// the signatures. One tool per printed page in the downloads.
+const BLANK = "______________________";
+let sbaCount = 0;
+function sbaTool(t) {
+  sbaCount++;
+  return [
+    {
+      type: "table", level: "h3", _pageBreak: true,
+      heading: `SBA plan ${sbaCount}: ${t.title}`,
+      columns: ["Item", "Details"],
+      rows: [
+        ["School name", BLANK],
+        ["Grade", t.grade],
+        ["Subject", t.subject],
+        ["Date", BLANK],
+        ["Term", t.term || "1st / 2nd / 3rd (as set in your school's SBA plan)"],
+        ["Selected evaluation", t.evaluation],
+        ["Time duration", t.time],
+        ["Competency", t.competency],
+        ["Competency level", t.level],
+        ["Subject content", t.content],
+        ["Nature of the tool", t.nature],
+        ["Learning outcome", t.outcome],
+        ["Teacher's activity", t.teacher],
+        ["Students' activity", t.students]
+      ]
+    },
+    {
+      type: "table", level: "h4",
+      heading: "Criteria for marking",
+      columns: ["Criteria", "Marks"],
+      rows: [...t.criteria.map((c) => [c, "05"]), ["**Total**", `**${String(t.criteria.length * 5).padStart(2, "0")}**`]]
+    },
+    { type: "prose", text: [`**In-charge teacher:** ${BLANK}`, `**Principal:** ${BLANK}`] }
+  ];
+}
+const ENG = "English";
+const sbaEnglish = [
+  { group: "Primary (Grades 2 to 5)", tools: [
+    { title: "Show and tell", grade: "2 / 3", subject: ENG, evaluation: "Oral presentation", time: "1 to 2 minutes per pupil (over two periods)",
+      competency: "Uses simple spoken English to talk about familiar things.", level: "Names and describes a familiar object in simple sentences.",
+      content: "Things at home and in school; colours and sizes", nature: "Individual oral presentation",
+      outcome: "Pupils will be able to say three simple sentences about an object they bring from home.",
+      teacher: "Models a short show-and-tell with an object, gives the sentence frames (This is my ... It is ... I like it because ...), and calls pupils one by one.",
+      students: "Bring an object from home and say at least three sentences about it to the class.",
+      criteria: ["Names the object in a full sentence", "Describes it (colour, size or use)", "Speaks clearly enough to be understood", "Speaks with confidence and little prompting"] },
+    { title: "Listen and do", grade: "2 / 3", subject: ENG, evaluation: "Listening test (practical)", time: "One period",
+      competency: "Listens to and follows simple spoken instructions.", level: "Responds correctly to one-step and two-step instructions.",
+      content: "Action words, classroom objects, colours", nature: "Whole-class practical listening task",
+      outcome: "Pupils will be able to carry out simple instructions given in English.",
+      teacher: "Gives instructions one at a time (Stand up. Touch your nose. Colour the ball red.), repeating each once, and records each pupil's responses on a checklist.",
+      students: "Listen and carry out each instruction, including drawing and colouring on a worksheet.",
+      criteria: ["Follows action instructions", "Follows instructions with objects", "Follows colouring and drawing instructions", "Follows two-step instructions"] },
+    { title: "My picture book", grade: "4 / 5", subject: ENG, evaluation: "Assignment (creative work)", time: "Two periods",
+      competency: "Writes simple sentences about familiar topics.", level: "Writes one or two sentences to match a picture.",
+      content: "My family / My school", nature: "Individual picture book",
+      outcome: "Pupils will be able to write simple, correctly punctuated sentences about their own pictures.",
+      teacher: "Shows a sample picture book, revises capital letters and full stops, and helps pupils plan four pages.",
+      students: "Draw four pictures about their family or school and write one or two sentences under each.",
+      criteria: ["Every picture has a matching sentence", "Sentences make sense", "Capital letters and full stops are correct", "Book is neat and complete"] },
+    { title: "Reading aloud", grade: "4 / 5", subject: ENG, evaluation: "Oral test (reading)", time: "2 minutes per pupil",
+      competency: "Reads short texts aloud with understanding.", level: "Reads a practised text accurately and fluently.",
+      content: "A short practised passage of about 60 words", nature: "Individual reading-aloud test",
+      outcome: "Pupils will be able to read a short passage aloud accurately, in phrases, with a clear voice.",
+      teacher: "Chooses and practises the passage with the class, then listens to each pupil and marks on a class sheet.",
+      students: "Read the practised passage aloud to the teacher.",
+      criteria: ["Reads the words accurately", "Reads in phrases, not word by word", "Pauses at full stops and commas", "Uses a clear, audible voice"] }
+  ] },
+  { group: "Junior secondary (Grades 6 to 9)", tools: [
+    { title: "Role play", grade: "6 / 7", subject: ENG, evaluation: "Role play", time: "One period for preparation, 3 minutes per pair",
+      competency: "Uses English to communicate in everyday situations.", level: "Takes part in a short conversation to get or give information.",
+      content: "Asking for and giving directions / shopping", nature: "Pair role play",
+      outcome: "Students will be able to complete an everyday conversation using the expressions from the unit.",
+      teacher: "Revises the useful expressions, gives each pair a situation card, and assesses each pair during the performance.",
+      students: "Prepare and act out the situation in pairs, with a clear start and end.",
+      criteria: ["Completes the task in the situation", "Uses the unit's expressions correctly", "Speaks fluently with few long pauses", "Pronounces clearly and responds to the partner"] },
+    { title: "Instruction poster", grade: "6 / 7", subject: ENG, evaluation: "Assignment (poster)", time: "Two periods",
+      competency: "Writes instructions for a practical purpose.", level: "Writes a set of instructions in the correct order.",
+      content: "Preventing dengue / making a cup of tea", nature: "Individual or pair poster",
+      outcome: "Students will be able to write at least six clear instructions using imperatives and sequence words.",
+      teacher: "Shows a model poster, revises imperatives and sequence words, and gives the topics.",
+      students: "Make a poster with a heading, pictures and at least six instructions in order.",
+      criteria: ["Relevant instructions in the right order", "Correct imperatives and sequence words", "Clear layout with heading and pictures", "Neat and readable from a distance"] },
+    { title: "Reading log", grade: "7 / 8 / 9", subject: ENG, evaluation: "Portfolio", time: "One term",
+      competency: "Reads for pleasure and responds to what is read.", level: "Summarises a story and gives a reasoned opinion.",
+      content: "Three short books or stories chosen by the student", nature: "Individual reading portfolio",
+      outcome: "Students will be able to summarise stories and give reasons for their opinions.",
+      teacher: "Explains the log format, helps students choose readers, and checks the log twice during the term.",
+      students: "Keep a log with a five-sentence summary and an opinion with reasons for each of three books or stories.",
+      criteria: ["Summaries give the main events", "Opinions are supported by reasons", "Sentences are mostly accurate", "Log is complete and regularly kept"] },
+    { title: "Class wall newspaper", grade: "8 / 9", subject: ENG, evaluation: "Group project", time: "Two weeks",
+      competency: "Writes different kinds of texts for a real audience.", level: "Produces a news report, a notice and a creative piece in the correct formats.",
+      content: "Newspaper writing: news report, notice, story or poem, puzzle", nature: "Group project",
+      outcome: "Students will be able to write in different formats and work together to publish them.",
+      teacher: "Forms groups, shows sample wall newspapers, sets deadlines, and monitors each member's contribution.",
+      students: "Plan, write, edit and display a wall newspaper with at least four items; each member writes one item.",
+      criteria: ["All items present and relevant", "Correct formats and accurate language", "Teamwork: each member's part is shown", "Attractive and readable presentation"] }
+  ] },
+  { group: "O/L (Grades 10 and 11)", tools: [
+    { title: "Formal letter under timed conditions", grade: "10 / 11", subject: ENG, evaluation: "Written test", time: "30 minutes",
+      competency: "Writes formal letters for a specific purpose.", level: "Writes a well-organised formal letter in the correct format.",
+      content: "Letter of complaint or request on a local issue", nature: "Individual timed writing",
+      outcome: "Students will be able to write a formal letter of about 150 words with the correct format and tone.",
+      teacher: "Sets the task with clear points to include, and supervises the timed writing.",
+      students: "Write a formal letter covering all the given points in 30 minutes.",
+      criteria: ["Correct format (addresses, date, salutation, subject, close)", "All points covered with detail", "Clear paragraphs", "Accurate grammar and a suitable formal tone"] },
+    { title: "Two-minute speech", grade: "10 / 11", subject: ENG, evaluation: "Speech", time: "2 minutes per student",
+      competency: "Speaks confidently on a topic to an audience.", level: "Delivers an organised speech with supporting points.",
+      content: "A topic from the textbook (for example healthy food or careers)", nature: "Individual speech",
+      outcome: "Students will be able to deliver an organised two-minute speech.",
+      teacher: "Gives topics a week ahead, shows how to open and close a speech, and marks each speech.",
+      students: "Prepare and deliver a two-minute speech with an opening, main points and a closing.",
+      criteria: ["Clear main idea with supporting points", "Opening, body and closing", "Accurate and varied language", "Audible delivery with eye contact"] },
+    { title: "Survey and report", grade: "10 / 11", subject: ENG, evaluation: "Assignment", time: "Two periods",
+      competency: "Collects and presents information in writing.", level: "Describes data from a chart using comparison language.",
+      content: "Class survey and bar chart", nature: "Individual or pair report",
+      outcome: "Students will be able to present survey results in a bar chart and a short report.",
+      teacher: "Explains how to conduct a survey and describe a chart, and gives useful phrases.",
+      students: "Conduct a class survey, draw a bar chart and write a short report on the findings.",
+      criteria: ["Accurate, labelled chart", "Main findings described", "Comparison language used correctly", "Accurate sentences"] }
+  ] },
+  { group: "A/L General English (Grades 12 and 13)", tools: [
+    { title: "Group presentation", grade: "12 / 13", subject: "General English", evaluation: "Presentation", time: "5 minutes per group",
+      competency: "Presents information clearly to an audience.", level: "Delivers a structured presentation with signposting.",
+      content: "A textbook topic (for example the cyber world or continuing education)", nature: "Group presentation",
+      outcome: "Students will be able to deliver a structured group presentation on a textbook topic.",
+      teacher: "Forms groups, assigns topics, teaches signposting language, and assesses the presentations.",
+      students: "Research, plan and deliver a five-minute presentation in which every member speaks.",
+      criteria: ["Relevant, well-researched content", "Introduction, signposting and conclusion", "Accurate, appropriate language", "Clear delivery and every member takes part"] },
+    { title: "Formal email", grade: "12 / 13", subject: "General English", evaluation: "Written test", time: "30 minutes",
+      competency: "Writes formal emails for a specific purpose.", level: "Writes a clear formal email with the correct structure and tone.",
+      content: "Email to the principal of another school about a joint event", nature: "Individual timed writing",
+      outcome: "Students will be able to write a formal email that covers all the required points.",
+      teacher: "Sets the task with the required points and supervises the writing.",
+      students: "Write the email in 30 minutes.",
+      criteria: ["Subject line, greeting and closing", "All required points covered", "Polite, formal tone", "Accurate language"] },
+    { title: "Discursive essay", grade: "12 / 13", subject: "General English", evaluation: "Written test", time: "45 minutes",
+      competency: "Writes an essay that discusses both sides of an issue.", level: "Organises a balanced argument with examples.",
+      content: "An issue from the textbook units", nature: "Individual essay",
+      outcome: "Students will be able to write a balanced essay of about 250 words.",
+      teacher: "Gives two or three questions, revises essay structure, and supervises the writing.",
+      students: "Choose one question and write an essay of about 250 words.",
+      criteria: ["Both sides discussed with examples", "Introduction, balanced body and conclusion", "Accurate and varied language", "Clear link between ideas"] },
+    { title: "Job application and interview", grade: "12 / 13", subject: "General English", evaluation: "Role play and written work", time: "One period for the letter, 5 minutes per interview",
+      competency: "Uses English for employment purposes.", level: "Writes a covering letter and answers interview questions appropriately.",
+      content: "Job advertisements and covering letters (Unit 8, Employment)", nature: "Individual written task and interview",
+      outcome: "Students will be able to apply for a job in writing and answer interview questions politely and clearly.",
+      teacher: "Provides advertisements, revises the covering-letter format, and conducts short interviews.",
+      students: "Write a covering letter for one advertisement and take part in a short interview for that job.",
+      criteria: ["Correct covering-letter format", "Relevant letter content", "Clear, relevant interview answers", "Polite and fluent manner"] }
+  ] }
+];
+const LIT = "English Literature";
+const sbaLiterature = [
+  { title: "Poetry (analysing theme and techniques)", grade: "11", subject: LIT, term: "2nd Term", evaluation: "Assignment / Creative Portfolio", time: "1 week (independent study + 40-minute presentation)",
+    competency: "Responds critically to poetry by identifying themes and poetic devices.", level: "Explores the underlying meanings, tone and imagery used by poets to convey central messages.",
+    content: "Selected O/L poems (for example To the Evening Star or Richard Cory)", nature: "Individual literary commentary portfolio",
+    outcome: "Students will be able to analyse poetic techniques such as metaphor, simile and personification and explain how they contribute to the poem's theme.",
+    teacher: "Introduces the poem, explains core poetic devices, provides a rubric, and guides students on how to structure a literary commentary.",
+    students: "Select one prescribed poem, analyse three major poetic devices used in it, write a 150-word commentary, and present their main findings to the class.",
+    criteria: ["Understanding of themes and central message", "Correct identification and analysis of poetic devices", "Structure, organisation and language accuracy", "Presentation / oral defence"] },
+  { title: "Short stories (character analysis)", grade: "10 / 11", subject: LIT, term: "1st / 2nd Term", evaluation: "Role play and character profile", time: "2 periods (preparation) + 1 period (execution)",
+    competency: "Analyses character traits, motives and relationships within a short story.", level: "Demonstrates empathy and critical understanding of characters by interpreting their actions and dialogue.",
+    content: "Prescribed short stories (for example The Lumber Room or The Fly)", nature: "Group role play and character sketch presentation",
+    outcome: "Students will be able to extract textual evidence to justify a character's behaviour and mindset.",
+    teacher: "Divides the class into small groups, assigns specific characters from a short story, and monitors the brainstorming sessions.",
+    students: "Collaborate to create a visual character profile poster and perform a short three-minute role play depicting a crucial scene from that character's perspective.",
+    criteria: ["Accurate depiction of character traits based on the text", "Use of textual evidence / references", "Teamwork and collaboration", "Creativity and expression (role play / poster)"] },
+  { title: "Novel: The Vendor of Sweets (theme exploration)", grade: "11", subject: LIT, term: "2nd Term", evaluation: "Open-book analytical essay / test", time: "80 minutes",
+    competency: "Evaluates major themes and cultural conflicts in an extended text.", level: "Examines the generation gap, the clash of East and West, and illusion versus reality in Malgudi.",
+    content: "Novel: The Vendor of Sweets by R. K. Narayan", nature: "Structured analytical essay",
+    outcome: "Students will write a coherent essay analysing how the conflict between Jagan and Mali represents the clash between traditional Indian values and Western modernisation.",
+    teacher: "Formulates analytical essay prompts, sets clear guidelines for thesis statements, and ensures students have access to their unmarked novels during the session.",
+    students: "Choose one prompt, formulate a thesis statement, select appropriate quotations from The Vendor of Sweets, and write a structured essay with an introduction, body paragraphs and a conclusion.",
+    criteria: ["Depth of thematic understanding", "Effective use of textual quotations and references", "Logical flow and argumentative strength", "Grammar, vocabulary and mechanics"] },
+  { title: "Drama (dramatised reading and stagecraft)", grade: "10 / 11", subject: LIT, evaluation: "Dramatised reading with director's notes", time: "2 periods (preparation) + 1 period (performance)",
+    competency: "Interprets drama through performance and an understanding of dramatic techniques.", level: "Conveys character, mood and conflict through voice, movement and staging choices.",
+    content: "Prescribed drama (The Bear or Twilight of a Crane)", nature: "Group dramatised reading with individual director's notes",
+    outcome: "Students will be able to perform a key scene and explain how stage directions, dialogue and action reveal character and conflict.",
+    teacher: "Selects key scenes, explains dramatic techniques (stage directions, dramatic irony, climax), forms groups and monitors rehearsals.",
+    students: "Rehearse and perform a key scene of about four minutes, and each write a short set of director's notes (about 100 words) explaining their staging choices.",
+    criteria: ["Understanding of character and conflict", "Voice, expression and movement", "Director's notes explain staging choices with reference to the text", "Teamwork and preparation"] },
+  { title: "Novel (reading journal)", grade: "10 / 11", subject: LIT, evaluation: "Reading journal (portfolio)", time: "Over one term, with journal checks every two weeks",
+    competency: "Responds personally and critically to an extended text.", level: "Tracks plot, character development and themes across a novel.",
+    content: "The novel your school has selected for SBA", nature: "Individual reading journal",
+    outcome: "Students will be able to record and reflect on plot, characters and themes as they read, supported by quotations.",
+    teacher: "Explains the journal format (chapter summary, character notes, key quotation, personal response), sets the reading schedule and checks journals regularly.",
+    students: "Keep a journal entry for each chapter or section with a short summary, notes on one character, one key quotation with a comment, and a personal response.",
+    criteria: ["Accurate summaries of plot", "Insight into character development and themes", "Well-chosen quotations with comments", "Regular, complete and neatly kept journal"] }
+];
 const sbaPage = {
   slug: "teacher-resources/sba-samples",
-  title: "Sample School Based Assessment (SBA) Tasks for English",
-  metaTitle: "Sample English SBA Tasks and Rubrics, Grades 2 to 13 | RCF English",
-  description: "Sample School Based Assessment (SBA) tasks for English from primary to A/L, each with instructions and a simple marking rubric.",
-  keywords: "SBA English, school based assessment Sri Lanka, English SBA tasks, English assessment rubric",
+  title: "Sample School Based Assessment (SBA) Tools for English and Literature",
+  metaTitle: "Sample English and Literature SBA Assessment Tools, Grades 2 to 13 | RCF English",
+  description: "Sample School Based Assessment (SBA) tools for English (Grades 2 to 13) and O/L English Literature, set out in the school assessment tool format with competency, activities and marking criteria.",
+  keywords: "SBA English, SBA English Literature, school based assessment tool, assessment tool template Sri Lanka, SBA marking criteria",
   kicker: "Teacher Resources", kind: "teacher-resource", schema: "LearningResource",
   breadcrumbs: [TR], backTo: TR,
-  hero: { text: "Ready-to-use sample tasks with clear marking, from a Grade 2 show-and-tell to an A/L presentation." },
+  hero: { text: "Ready-to-use assessment tools in the familiar school format: details, instructions, marking criteria and signatures." },
   blocks: [
     { type: "callout", style: "warn", title: "These are samples, not official instructions", text: [
-      "These tasks and rubrics were written by RCF English as examples. **Follow the SBA guidelines issued for your grade and year** for the number of tasks, their timing and how marks are recorded and reported. The marks below are suggestions; scale them to whatever total your guidelines require."
+      "Each tool is set out in the usual **School Based Assessment tool** format. Fill in your school's name and the date, and **replace the competency and competency level with the wording and numbers in your Teacher's Guide**. Follow the SBA plan and circulars for your grade and year for the number of tools, their timing and how marks are recorded. The terms shown in the Literature tools are suggestions; change them to suit your school's plan."
     ] },
-    { type: "prose", heading: "Primary (Grades 2 to 5)" },
-    sba("1. Show and tell", "Grades 2 and 3", "1 to 2 minutes per pupil", "Bring an object from home and say three sentences about it: what it is, its colour or size, and why you like it.",
-      [["Says what the object is", "3", "Names the object in a full sentence."], ["Adds detail", "3", "Gives colour, size or use."], ["Clarity", "2", "Can be heard and understood."], ["Confidence", "2", "Speaks without heavy prompting."]]),
-    sba("2. Listen and do", "Grades 2 and 3", "10 minutes", "The teacher gives ten simple instructions (Stand up. Touch your nose. Draw a red ball.). Pupils carry them out.",
-      [["Correct responses", "10", "One mark for each instruction followed correctly."]]),
-    sba("3. My picture book", "Grades 4 and 5", "Two periods", "Draw four pictures about your family or your school and write one or two sentences under each.",
-      [["Content", "4", "Every picture has a matching sentence."], ["Language", "4", "Simple sentences with correct capital letters and full stops."], ["Presentation", "2", "Neat and complete."]]),
-    sba("4. Reading aloud", "Grades 4 and 5", "2 minutes per pupil", "Read aloud a short passage of about 60 words that the class has practised.",
-      [["Accuracy", "4", "Reads almost every word correctly."], ["Fluency", "3", "Reads in phrases, not word by word."], ["Expression", "3", "Uses pauses and a clear voice."]]),
-    { type: "prose", heading: "Junior secondary (Grades 6 to 9)" },
-    sba("5. Role play", "Grades 6 and 7", "3 minutes per pair", "In pairs, act out a situation such as asking for directions or buying things at a shop.",
-      [["Task completion", "5", "The situation is completed with a clear start and end."], ["Language", "5", "Uses the unit's expressions correctly."], ["Fluency", "5", "Speaks with few long pauses."], ["Pronunciation and interaction", "5", "Clear, and responds to the partner."]]),
-    sba("6. Instruction poster", "Grades 6 and 7", "Two periods", "Make a poster that gives at least six instructions, for example how to prevent dengue or how to make a cup of tea.",
-      [["Content", "6", "At least six relevant instructions in order."], ["Language", "6", "Imperatives and sequence words used correctly."], ["Layout", "4", "Heading, pictures and clear order."], ["Neatness", "4", "Easy to read from a distance."]]),
-    sba("7. Reading log", "Grades 7 to 9", "Over one term", "Keep a record of three short books or stories read, with a five-sentence summary and an opinion for each.",
-      [["Summaries", "8", "Each summary gives the main events."], ["Opinion", "6", "Gives reasons for the opinion."], ["Language", "6", "Mostly accurate sentences."]]),
-    sba("8. Class wall newspaper", "Grades 8 and 9", "Group project over two weeks", "In groups, produce a wall newspaper with a news report, a notice, a poem or story, and a puzzle.",
-      [["Content", "8", "All four items present and relevant."], ["Language", "6", "Accurate, with correct formats."], ["Teamwork", "3", "Each member's part is shown."], ["Presentation", "3", "Attractive and readable."]]),
-    { type: "prose", heading: "O/L (Grades 10 and 11)" },
-    sba("9. Formal letter under timed conditions", "Grades 10 and 11", "30 minutes", "Write a formal letter of complaint or request on a given local issue (about 150 words).",
-      [["Format", "4", "Addresses, date, salutation, subject line and close."], ["Content", "6", "All points covered with detail."], ["Organisation", "4", "Clear paragraphs."], ["Language", "6", "Accurate grammar, suitable formal tone."]]),
-    sba("10. Two-minute speech", "Grades 10 and 11", "2 minutes per student", "Give a prepared speech on a topic from the textbook, such as healthy food or your future career.",
-      [["Content", "5", "Clear main idea with supporting points."], ["Organisation", "5", "Opening, body and closing."], ["Language", "5", "Accurate and varied."], ["Delivery", "5", "Audible, with eye contact."]]),
-    sba("11. Survey and report", "Grades 10 and 11", "Two periods", "Carry out a class survey, draw a bar chart and write a short report on the findings.",
-      [["Data and chart", "5", "Chart is accurate and labelled."], ["Report", "10", "Describes the main findings using comparison language."], ["Language", "5", "Accurate sentences."]]),
-    { type: "prose", heading: "A/L General English (Grades 12 and 13)" },
-    sba("12. Group presentation", "Grades 12 and 13", "5 minutes per group", "Give a presentation on a topic from the textbook, such as the cyber world or continuing education.",
-      [["Content", "5", "Well researched and relevant."], ["Structure", "5", "Introduction, signposting, conclusion."], ["Language", "5", "Accurate and appropriate."], ["Delivery and teamwork", "5", "Clear, confident, all members take part."]]),
-    sba("13. Formal email", "Grades 12 and 13", "30 minutes", "Write a formal email to a principal of another school about a joint event.",
-      [["Format", "4", "Subject line, greeting, closing."], ["Content", "6", "All required points."], ["Tone", "4", "Polite and formal."], ["Language", "6", "Accurate."]]),
-    sba("14. Discursive essay", "Grades 12 and 13", "45 minutes", "Write an essay of about 250 words discussing both sides of a question.",
-      [["Content", "6", "Both sides with examples."], ["Organisation", "6", "Introduction, balanced body, conclusion."], ["Language", "8", "Accurate and varied."]]),
-    sba("15. Job interview role play", "Grades 12 and 13", "5 minutes per student", "Respond to a job advertisement with a covering letter, then take part in a short interview.",
-      [["Letter", "8", "Correct format and relevant content."], ["Interview answers", "8", "Clear, relevant answers."], ["Language and manner", "4", "Polite, fluent."]]),
+    ...sbaEnglish.flatMap((g) => [{ type: "prose", heading: "English: " + g.group, text: [] }, ...g.tools.flatMap(sbaTool)]),
+    { type: "prose", heading: "English Literature (O/L)", text: ["One of the prescribed novels is assessed by the school as well as examined, and the school chooses which. The three novels on the list shown on our O/L Literature page are The Prince and the Pauper, Bringing Tony Home and The Vendor of Sweets; confirm the list for your examination year."] },
+    ...sbaLiterature.flatMap(sbaTool),
     PREMIUM
   ]
 };
@@ -355,13 +511,45 @@ const propPage = {
   ]
 };
 
-const out = {
-  _readme: [
-    "PPP LESSON PLANS, PLANNING TEMPLATES, SBA SAMPLES AND PROJECT PROPOSALS",
-    "Generated by a script from the RCF English plan data. All content is",
-    "written by RCF English; Pupil's Book units and activities are named, not copied."
-  ],
-  pages: [hub, ...ORDER.map(planPage), annual, notes, sbaPage, propPage]
-};
-fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
-console.log("pages:", out.pages.length, ORDER.map((k) => `${k}:${L[k].plans.length}`).join(" "));
+// ---------- downloads (made by downloads.js) ----------
+const DL = "assets/downloads/teacher/";
+const DOWNLOADS = [
+  ...ORDER.map((k) => ({ slug: `${HUB}/${L[k].slug}`, file: `rcf-english-${L[k].slug}-ppp-lesson-plans`, label: `${L[k].label} PPP lesson plans`, landscape: false })),
+  { slug: annual.slug, file: "rcf-english-annual-term-plan-templates", label: "Annual and term plan templates", landscape: true },
+  { slug: notes.slug, file: "rcf-english-daily-weekly-notes-templates", label: "Daily and weekly notes templates", landscape: true },
+  { slug: sbaPage.slug, file: "rcf-english-sample-sba-tasks", label: "Sample SBA tools (English and Literature)", landscape: false },
+  { slug: propPage.slug, file: "rcf-english-sample-project-proposals", label: "Sample project proposals", landscape: false }
+];
+const links = (d) => `[Word document (.docx)](${DL}${d.file}.docx) · [PDF](${DL}${d.file}.pdf)`;
+const pages = [hub, ...ORDER.map(planPage), annual, notes, sbaPage, propPage];
+for (const d of DOWNLOADS) {
+  pages.find((p) => p.slug === d.slug).blocks.unshift({
+    type: "callout", style: "note", _download: true, title: "Download this page",
+    text: [
+      `**${links(d)}**`,
+      "The Word file can be edited in Microsoft Word, Google Docs, WPS Office or LibreOffice, so you can add your school's name and change it for your class. The PDF is ready to print."
+    ]
+  });
+}
+hub.blocks.splice(2, 0, {
+  type: "table", heading: "Download everything", _download: true,
+  intro: ["Every page in this set as an editable Word document and a print-ready PDF. All of them are free to copy and adapt for teaching."],
+  columns: ["Resource", "Download"],
+  rows: DOWNLOADS.map((d) => [`[${d.label}](${d.slug}/)`, links(d)])
+});
+
+module.exports = { DOWNLOADS };
+
+if (require.main === module) {
+  const out = {
+    _readme: [
+      "PPP LESSON PLANS, PLANNING TEMPLATES, SBA SAMPLES AND PROJECT PROPOSALS",
+      "Generated by tools/ppp/gen.js from the RCF English plan data. All content is",
+      "written by RCF English; Pupil's Book units and activities are named, not copied.",
+      "The Word and PDF downloads are made by tools/ppp/downloads.js."
+    ],
+    pages
+  };
+  fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n");
+  console.log("pages:", out.pages.length, ORDER.map((k) => `${k}:${L[k].plans.length}`).join(" "));
+}

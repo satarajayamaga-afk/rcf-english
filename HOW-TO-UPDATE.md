@@ -631,6 +631,21 @@ picture instead, tell the build script — see the `BrandMarkup` section of
 
 ---
 
+## Task 10 — Change the PPP lesson plans, templates, SBA tasks or proposals
+
+These pages, and their Word and PDF downloads, are made by two small scripts.
+Do not edit `_src/pages/teacher-resources-ppp.json` by hand: it is rewritten.
+
+1. Edit the plans in `tools/ppp/g3-g6.js`, `g7-g8.js`, `g9-g11.js` or `al.js`,
+   or the templates, SBA tasks and proposals in `tools/ppp/gen.js`.
+2. In a terminal in the `RCF-English` folder, run:
+   `node tools/ppp/gen.js` (rewrites the page file), then
+   `node tools/ppp/downloads.js` (remakes the files in `assets/downloads/teacher/`;
+   the PDFs need Microsoft Edge).
+3. `check.cmd`, then `build.cmd`.
+
+---
+
 ## Publishing your changes
 
 1. `check.cmd`
