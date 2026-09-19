@@ -562,14 +562,9 @@ const booksPage = {
       "The department's server is often slow and frequently stops a large download half way, so where we hold a copy in the **RCF English Drive** that comes first. **Download** saves the PDF straight to your device; **read online** opens it in Google Drive without downloading; the official link is kept beside them. If one link will not open, use another.",
       `Every link here was checked and opened a PDF. The department's site has **no https**, so your browser may warn you that the book site is not secure before it opens the file. If a link stops working, use the department's [book download page](${BK.SEARCH}) or the NIE [Teachers' Guide page](${BK.TG_SEARCH}) and choose the grade yourself.`
     ] },
-    { type: "table", heading: "Pupil's Books, Workbooks and other books", intro: ["Published by the Educational Publications Department. Grades 1 and 2 follow Activity Based Oral English (ABOE), so they have an Activity Book and a Song Book instead of a Pupil's Book."],
+    { type: "table", heading: "Pupil's Books, Workbooks and other books", intro: ["Published by the Educational Publications Department. Every link here is a **whole book**: where the department only publishes a book one unit at a time, we leave it out rather than send you to fourteen separate files. Grades 1 and 2 follow Activity Based Oral English (ABOE), so they have an Activity Book and a Song Book instead of a Pupil's Book."],
       columns: ["Grade", "Book", "Download"],
       rows: BK.BOOKS.map(([g, t, p, d]) => [g, t, bkLink(t + " (PDF)", p, d)]) },
-    ...BK.BY_UNIT.map((b) => ({
-      type: "table", heading: b.title, level: "h3", intro: [b.note],
-      columns: ["Unit", "Download"],
-      rows: b.units.map(([t, p]) => [t, bkLink("PDF", p)])
-    })),
     { type: "table", heading: "Teachers' Guides", intro: ["Published by the National Institute of Education. Where a grade has two guides, the later one is the current guide and the earlier one is kept for reference."],
       columns: ["Grade", "Teachers' Guide", "Download"],
       rows: BK.GUIDES.map(([g, t, p, d]) => [g, t, tgLink(t + " (PDF)", p, d)]) },

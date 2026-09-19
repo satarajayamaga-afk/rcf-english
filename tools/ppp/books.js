@@ -40,8 +40,6 @@ exports.BOOKS = [
   ["Grade 4", "Workbook", "Administrator/English/4/english WB G-4/english WB G-4.pdf", null],
   ["Grade 5", "Pupil's Book", "Administrator/English/5/english pb G-5/English PB G-5.pdf", null],
   ["Grade 5", "Workbook", "Administrator/English/5/english WB G-5/english G-5 WB.pdf", null],
-  ["Grade 5", "Workbook Part I (earlier edition)", "Administrator/English/5/english wb G-5 P-I/English WB Gra.-5 Part-I.pdf", null],
-  ["Grade 5", "Workbook Part II (earlier edition)", "Administrator/English/5/english wb G-5 P-II/English WB Gra.-5 Part -II.pdf", null],
   ["Grade 6", "Pupil's Book", "Administrator/English/6/english PB G-6/english PB G-6.pdf", drive("1Ta5sHpYrp23ywq4HugdEG1BrqB8tWCdl")],
   ["Grade 6", "Workbook", "Administrator/English/6/english wb G-6/A94779_ENGLISH WORKBOOK - GRADE 06.pdf", null],
   ["Grade 7", "Workbook", "Administrator/English/7/en wb g-7/en WB G-7.pdf", null],
@@ -55,45 +53,10 @@ exports.BOOKS = [
   ["Grade 11", "Workbook", "Administrator/English/11/en wb g-11/english WBg-11.pdf", null]
 ];
 
-// Books the department publishes one unit at a time.
-exports.BY_UNIT = [
-  {
-    title: "Grade 7 English Reading Book",
-    note: "The department publishes this book one unit at a time.",
-    units: [
-      ["Unit 1: What You See", "Administrator/English/7/English Reading Book G7/Unit 1 - What You see - ok.pdf"],
-      ["Unit 2: Friends Indeed", "Administrator/English/7/English Reading Book G7/Unit 2 - Friends In Deed - ok.pdf"],
-      ["Unit 3: Pleasure", "Administrator/English/7/English Reading Book G7/Unit 3 - pleasure - ok.pdf"],
-      ["Unit 4: A Busy Day", "Administrator/English/7/English Reading Book G7/Unit 4 - A busy day - ok.pdf"],
-      ["Unit 5: Once Upon a Time", "Administrator/English/7/English Reading Book G7/Unit 5 - once upon a time - ok.pdf"],
-      ["Unit 6: Better Safe Than Sorry", "Administrator/English/7/English Reading Book G7/Unit 6 - Better be safe than sorry - ok.pdf"],
-      ["Unit 7: Around the Country", "Administrator/English/7/English Reading Book G7/Unit 7 - Around the country - ok.pdf"],
-      ["Unit 8: Wonders Around Us", "Administrator/English/7/English Reading Book G7/Unit 8 - Wonders Around Us - ok.pdf"],
-      ["Unit 9: Our Beautiful World", "Administrator/English/7/English Reading Book G7/Unit 9 - our beautiful world - ok.pdf"],
-      ["Unit 10: Future", "Administrator/English/7/English Reading Book G7/Unit 10 - Future - ok.pdf"]
-    ]
-  },
-  {
-    title: "Grade 10 English Pupil's Book",
-    note: "The department publishes this book one unit at a time.",
-    units: [
-      ["Unit 1: People", "Administrator/English/10/English Pupils Book G 10 - E/Unit 1 pdf People.pdf"],
-      ["Unit 2: On Your Way", "Administrator/English/10/English Pupils Book G 10 - E/Unit 2 pdf ok on your way.pdf"],
-      ["Unit 3: Travel", "Administrator/English/10/English Pupils Book G 10 - E/Unit 3 Travel.pdf"],
-      ["Unit 4: Let's Talk", "Administrator/English/10/English Pupils Book G 10 - E/Unit 4 Lets talk.pdf"],
-      ["Unit 5: Best Practices", "Administrator/English/10/English Pupils Book G 10 - E/Unit 5 Best Practices.pdf"],
-      ["Unit 6: Information", "Administrator/English/10/English Pupils Book G 10 - E/Unit 6 Information.pdf"],
-      ["Unit 7: Learning Is Fun", "Administrator/English/10/English Pupils Book G 10 - E/Unit 7 Learning is fun.pdf"],
-      ["Unit 8: Healthy Food", "Administrator/English/10/English Pupils Book G 10 - E/Unit 8 Healthy Food.pdf"],
-      ["Unit 9: Nature", "Administrator/English/10/English Pupils Book G 10 - E/Unit 9 Nature.pdf"],
-      ["Unit 10: Personality", "Administrator/English/10/English Pupils Book G 10 - E/Unit 10 Personality.pdf"],
-      ["Unit 11: The Right Career", "Administrator/English/10/English Pupils Book G 10 - E/Unit 11 The right career.pdf"],
-      ["Unit 12: Success", "Administrator/English/10/English Pupils Book G 10 - E/Unit 12 Success.pdf"],
-      ["Unit 13: Future", "Administrator/English/10/English Pupils Book G 10 - E/Unit 13 Future.pdf"],
-      ["Unit 14: Sports", "Administrator/English/10/English Pupils Book G 10 - E/Unit 14 Sports.pdf"]
-    ]
-  }
-];
+// We list whole books only. Where the department publishes a book one unit
+// at a time (the Grade 7 Reading Book and the Grade 10 Pupil's Book), we do
+// not list the parts at all; see MISSING below.
+exports.BY_UNIT = [];
 
 // [grades, guide title, path on nie.lk, RCF Drive link or null]
 exports.GUIDES = [
@@ -120,8 +83,8 @@ exports.GUIDES = [
 // Things a teacher may look for and not find on the official sites.
 exports.MISSING = [
   ["Grade 4 Teachers' Guide", "The NIE guide list has no English guide for Grade 4. Grades 3 and 5 are there."],
-  ["Grade 7 Pupil's Book (whole book)", "Only the Reading Book (unit by unit) and the Workbook are published."],
-  ["Grade 10 Pupil's Book (whole book)", "Published unit by unit; the fourteen units are listed below."],
+  ["Grade 7 Pupil's Book", "The department publishes it only one unit at a time, never as a whole book, so it is not listed here. The Workbook above is the complete book."],
+  ["Grade 10 Pupil's Book", "The department publishes it only one unit at a time (fourteen separate files), never as a whole book, so it is not listed here."],
   ["A/L General English textbook", "The department's download page has no books for Grades 12 and 13. The Teachers' Guide is above."],
   ["New 2026 Grade 6 book", "The Grade 6 book on the department's site has the same units as the 2014 to 2019 edition (Hello, Leisure Lesson, ... Eco Friends). The new 2026 book was not on the site when we checked."],
   ["Literature texts (O/L and A/L)", "Prescribed novels, plays and poems are copyright works and are not published free. Grade 10 Appreciation of English Literary Texts is the one exception, and it is listed above."]

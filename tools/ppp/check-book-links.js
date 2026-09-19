@@ -8,7 +8,6 @@ const BK = require("./books.js");
 const both = (name, d) => (d ? [[`${name} (Drive view)`, d.view], [`${name} (Drive download)`, d.dl]] : []);
 const links = [
   ...BK.BOOKS.flatMap(([g, t, p, d]) => [[`${g} ${t}`, BK.epdUrl(p)], ...both(`${g} ${t}`, d)]),
-  ...BK.BY_UNIT.flatMap((b) => b.units.map(([t, p]) => [`${b.title} ${t}`, BK.epdUrl(p)])),
   ...BK.GUIDES.flatMap(([g, t, p, d]) => [[`${g} TG ${t}`, BK.nieUrl(p)], ...both(`${g} TG ${t}`, d)]),
   ["EPD book download page", BK.SEARCH],
   ["NIE Teachers' Guide page", BK.TG_SEARCH]
