@@ -5,33 +5,40 @@ const http = require("http");
 const https = require("https");
 const BK = require("./books.js");
 
+const both = (name, d) => (d ? [[`${name} (Drive view)`, d.view], [`${name} (Drive download)`, d.dl]] : []);
 const links = [
-  ...BK.BOOKS.flatMap(([g, t, p, d]) => [[`${g} ${t}`, BK.epdUrl(p)], ...(d ? [[`${g} ${t} (Drive)`, d]] : [])]),
+  ...BK.BOOKS.flatMap(([g, t, p, d]) => [[`${g} ${t}`, BK.epdUrl(p)], ...both(`${g} ${t}`, d)]),
   ...BK.BY_UNIT.flatMap((b) => b.units.map(([t, p]) => [`${b.title} ${t}`, BK.epdUrl(p)])),
-  ...BK.GUIDES.flatMap(([g, t, p, d]) => [[`${g} TG ${t}`, BK.nieUrl(p)], ...(d ? [[`${g} TG ${t} (Drive)`, d]] : [])]),
+  ...BK.GUIDES.flatMap(([g, t, p, d]) => [[`${g} TG ${t}`, BK.nieUrl(p)], ...both(`${g} TG ${t}`, d)]),
   ["EPD book download page", BK.SEARCH],
   ["NIE Teachers' Guide page", BK.TG_SEARCH]
 ];
 
-function check(url) {
+function check(url, depth = 0) {
   return new Promise((resolve) => {
     const lib = url.startsWith("https") ? https : http;
-    const isDrive = url.includes("drive.google.com");
+    const isDrive = url.includes("google.com") || url.includes("googleusercontent.com");
     // A Drive file that is not shared with "anyone with the link" sends an
     // anonymous visitor to the Google sign-in page, so treat that as a failure
     // even though Google answers with a normal status code.
-    const req = lib.get(url, { headers: isDrive ? {} : { Range: "bytes=0-99" } }, (res) => {
+    const req = lib.get(url, { headers: isDrive ? { "User-Agent": "Mozilla/5.0" } : { Range: "bytes=0-99" } }, (res) => {
       const loc = res.headers.location || "";
-      if (isDrive && (/accounts\.google\.com/.test(loc) || res.statusCode === 404)) {
+      if (isDrive && /accounts\.google\.com/.test(loc)) {
         res.resume();
         return resolve({ status: "not shared", type: "" });
       }
+      // A download link redirects to Google's file server; follow it.
+      if (isDrive && loc && res.statusCode >= 300 && res.statusCode < 400 && depth < 3) {
+        res.resume();
+        return resolve(check(loc.startsWith("http") ? loc : "https://drive.google.com" + loc, depth + 1));
+      }
+      if (isDrive && res.statusCode === 404) { res.resume(); return resolve({ status: "not shared", type: "" }); }
       if (!isDrive) { res.resume(); return resolve({ status: res.statusCode, type: res.headers["content-type"] || "" }); }
       let body = "";
       res.setEncoding("utf8");
       res.on("data", (c) => { if (body.length < 40000) body += c; });
       res.on("end", () => {
-        const denied = /ServiceLogin|Request access|You need access/i.test(body);
+        const denied = /ServiceLogin|Request access|You need access/i.test(body) && !body.startsWith("%PDF");
         resolve({ status: denied ? "not shared" : res.statusCode, type: res.headers["content-type"] || "" });
       });
     });

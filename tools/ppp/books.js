@@ -21,7 +21,12 @@ exports.epdUrl = (p) => EPD + enc(p);
 exports.nieUrl = (p) => NIE + "/" + enc(p.replace(/^\//, ""));
 exports.SEARCH = "http://www.edupub.gov.lk/BooksDownload.php";
 exports.TG_SEARCH = "https://nie.lk/seletguide";
-const drive = (id, key) => `https://drive.google.com/file/d/${id}/view${key ? "?resourcekey=" + key : ""}`;
+// Two links per Drive file: a direct download (what most teachers want) and
+// the Drive page, which previews the book in the browser.
+const drive = (id, key) => ({
+  view: `https://drive.google.com/file/d/${id}/view${key ? "?resourcekey=" + key : ""}`,
+  dl: `https://drive.google.com/uc?export=download&id=${id}${key ? "&resourcekey=" + key : ""}`
+});
 
 exports.BOOKS = [
   ["Grade 1", "ABOE Activity Book", "Administrator/English/1/activity G1 E/ABOE Gr 1 Final Book 20.08.24.pdf", null],
