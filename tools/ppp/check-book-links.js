@@ -7,7 +7,9 @@ const BK = require("./books.js");
 
 const both = (name, d) => (d ? [[`${name} (Drive view)`, d.view], [`${name} (Drive download)`, d.dl]] : []);
 const links = [
-  ...BK.BOOKS.flatMap(([g, t, p, d]) => [[`${g} ${t}`, BK.epdUrl(p)], ...both(`${g} ${t}`, d)]),
+  // A book we hold only in the Drive (the department never published it as a
+  // whole book) has no department path to check.
+  ...BK.BOOKS.flatMap(([g, t, p, d]) => [...(p ? [[`${g} ${t}`, BK.epdUrl(p)]] : []), ...both(`${g} ${t}`, d)]),
   ...BK.GUIDES.flatMap(([g, t, p, d]) => [[`${g} TG ${t}`, BK.nieUrl(p)], ...both(`${g} TG ${t}`, d)]),
   ["EPD book download page", BK.SEARCH],
   ["NIE Teachers' Guide page", BK.TG_SEARCH]

@@ -32,8 +32,61 @@
     "",
     "After editing this file, run build.cmd."
   ],
-
   "items": [
+    {
+      "id": "competency-levels",
+      "date": "2026-09-19",
+      "title": "Every competency level, Grades 6 to 11",
+      "description": "The eight English Language competencies and all the competency levels for each grade, transcribed from the NIE Teachers' Guides, for your lesson plans, term plans and SBA tools.",
+      "url": "teacher-resources/competency-levels/",
+      "linkLabel": "Look them up",
+      "published": true
+    },
+    {
+      "id": "textbooks-and-guides",
+      "date": "2026-09-19",
+      "title": "Pupil's Books and Teachers' Guides, free to download",
+      "description": "Every English book and Teachers' Guide the government publishes free, Grades 1 to 13, with a direct download for each. Where the department's server is slow, the download comes from the RCF English Drive instead.",
+      "url": "teacher-resources/textbooks-and-teacher-guides/",
+      "linkLabel": "Download books",
+      "published": true
+    },
+    {
+      "id": "ppp-lesson-plans",
+      "date": "2026-09-16",
+      "title": "113 sample PPP lesson plans, Grades 3 to 13",
+      "description": "Ready-to-teach Presentation, Practice and Production lessons built on the unit activities of the government Pupil's Books, with timings for a 40-minute period. Each page can be downloaded as an editable Word document or a print-ready PDF.",
+      "url": "teacher-resources/ppp-lesson-plans/",
+      "linkLabel": "Open the plans",
+      "published": true
+    },
+    {
+      "id": "planning-templates",
+      "date": "2026-09-16",
+      "title": "Annual, term, daily and weekly planning templates",
+      "description": "A yearly scheme of work and a term plan with each grade's units already listed, and record-of-work forms with a filled-in example for every grade from 2 to 13.",
+      "url": "teacher-resources/annual-term-plan-templates/",
+      "linkLabel": "Get the templates",
+      "published": true
+    },
+    {
+      "id": "sba-tools",
+      "date": "2026-09-16",
+      "title": "Twenty sample SBA tools, with rubrics",
+      "description": "School Based Assessment tools for English from the primary grades to A/L, and five for O/L English Literature, each set out in the usual assessment tool format with its marking criteria and one tool to a page.",
+      "url": "teacher-resources/sba-samples/",
+      "linkLabel": "See the tools",
+      "published": true
+    },
+    {
+      "id": "project-proposals",
+      "date": "2026-09-16",
+      "title": "Six school project proposals you can adapt",
+      "description": "English Only Day, English Day, a class reading programme, a wall newspaper, an English Literary Association, and a spelling bee and quiz, each in the same simple format to hand to your principal.",
+      "url": "teacher-resources/school-project-proposals/",
+      "linkLabel": "Read the proposals",
+      "published": true
+    },
     {
       "id": "worksheets-by-grade",
       "date": "2026-08-28",

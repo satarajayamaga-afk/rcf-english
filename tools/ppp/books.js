@@ -42,11 +42,13 @@ exports.BOOKS = [
   ["Grade 5", "Workbook", "Administrator/English/5/english WB G-5/english G-5 WB.pdf", null],
   ["Grade 6", "Pupil's Book", "Administrator/English/6/english PB G-6/english PB G-6.pdf", drive("1Ta5sHpYrp23ywq4HugdEG1BrqB8tWCdl")],
   ["Grade 6", "Workbook", "Administrator/English/6/english wb G-6/A94779_ENGLISH WORKBOOK - GRADE 06.pdf", null],
+  ["Grade 7", "Pupil's Book", null, drive("12L0ScUF3RSINuvZdVrsK7hU7Ur8N9AlW")],
   ["Grade 7", "Workbook", "Administrator/English/7/en wb g-7/en WB G-7.pdf", null],
   ["Grade 8", "Pupil's Book", "Administrator/English/8/en pb g-8/en PB g-8.pdf", null],
   ["Grade 8", "Workbook", "Administrator/English/8/en wb g-8/english WB g-8.pdf", null],
   ["Grade 9", "Pupil's Book", "Administrator/English/9/en pb g-9/english pb G-9.pdf", drive("16q5Qcc5jNowFBg-u04rAAXIEE1IgnouF")],
   ["Grade 9", "Workbook", "Administrator/English/9/en wb g-9/en wb g-9.pdf", null],
+  ["Grade 10", "Pupil's Book (scanned copy)", null, drive("1H5WeTVEAtNjvfXpO6iupB9ei58z8TJrx")],
   ["Grade 10", "Workbook", "Administrator/English/10/English Work Book G 10 E/english WB G-10.pdf", null],
   ["Grade 10", "Appreciation of English Literary Texts", "Administrator/English/10/en ap g-10/English Literary texts.pdf", null],
   ["Grade 11", "Pupil's Book", "Administrator/English/11/english PB G-11/book.pdf", null],
@@ -83,8 +85,7 @@ exports.GUIDES = [
 // Things a teacher may look for and not find on the official sites.
 exports.MISSING = [
   ["Grade 4 Teachers' Guide", "The NIE guide list has no English guide for Grade 4. Grades 3 and 5 are there."],
-  ["Grade 7 Pupil's Book", "The department publishes it only one unit at a time, never as a whole book, so it is not listed here. The Workbook above is the complete book."],
-  ["Grade 10 Pupil's Book", "The department publishes it only one unit at a time (fourteen separate files), never as a whole book, so it is not listed here."],
+  ["Grade 7 and Grade 10 Pupil's Books on the department's site", "The department publishes these two only one unit at a time, never as a whole book. The complete books listed above are copies held in the RCF English Drive, which is why they have no department link beside them."],
   ["A/L General English textbook", "The department's download page has no books for Grades 12 and 13. The Teachers' Guide is above."],
   ["New 2026 Grade 6 book", "The Grade 6 book on the department's site has the same units as the 2014 to 2019 edition (Hello, Leisure Lesson, ... Eco Friends). The new 2026 book was not on the site when we checked."],
   ["Literature texts (O/L and A/L)", "Prescribed novels, plays and poems are copyright works and are not published free. Grade 10 Appreciation of English Literary Texts is the one exception, and it is listed above."]
