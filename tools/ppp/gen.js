@@ -120,7 +120,7 @@ function unitList(g) {
 }
 const annualBlocks = [
   { type: "callout", style: "tip", title: "How to use these templates", text: [
-    "Copy the headings into your record book or print this page. The units are listed in the order of each grade's Pupil's Book. **Fill in the term, weeks and dates from your own school calendar**; term dates and the number of English periods change from year to year and from school to school, so we have not filled them in for you.",
+    "Copy the headings into your record book or print this page. For the Competencies column, see [English Competencies and Competency Levels by Grade](teacher-resources/competency-levels/). The units are listed in the order of each grade's Pupil's Book. **Fill in the term, weeks and dates from your own school calendar**; term dates and the number of English periods change from year to year and from school to school, so we have not filled them in for you.",
     "These forms were written by RCF English and may be copied and adapted freely."
   ] },
   { type: "table", heading: "1. Annual plan (scheme of work)", caption: "Annual plan template. One row for each unit.",
@@ -224,7 +224,7 @@ function sbaTool(t) {
         ["Selected evaluation", t.evaluation],
         ["Time duration", t.time],
         ["Competency", t.competency],
-        ["Competency level", t.level],
+        ["Competency level", t.official ? t.level : t.level + " *(Sample wording: use the competency level in your Teacher's Guide.)*"],
         ["Subject content", t.content],
         ["Nature of the tool", t.nature],
         ["Learning outcome", t.outcome],
@@ -275,28 +275,28 @@ const sbaEnglish = [
   ] },
   { group: "Junior secondary (Grades 6 to 9)", tools: [
     { title: "Role play", grade: "6 / 7", subject: ENG, evaluation: "Role play", time: "One period for preparation, 3 minutes per pair",
-      competency: "Uses English to communicate in everyday situations.", level: "Takes part in a short conversation to get or give information.",
+      competency: "Competency 8: Communicates clearly, fluently and concisely", level: "8.13 Uses language in variety of contexts (Grades 6 and 7)", official: true,
       content: "Asking for and giving directions / shopping", nature: "Pair role play",
       outcome: "Students will be able to complete an everyday conversation using the expressions from the unit.",
       teacher: "Revises the useful expressions, gives each pair a situation card, and assesses each pair during the performance.",
       students: "Prepare and act out the situation in pairs, with a clear start and end.",
       criteria: ["Completes the task in the situation", "Uses the unit's expressions correctly", "Speaks fluently with few long pauses", "Pronounces clearly and responds to the partner"] },
     { title: "Instruction poster", grade: "6 / 7", subject: ENG, evaluation: "Assignment (poster)", time: "Two periods",
-      competency: "Writes instructions for a practical purpose.", level: "Writes a set of instructions in the correct order.",
+      competency: "Competency 7: Uses English creatively and innovatively in written communication", level: "7.4 Writes instructions (Grades 6 and 7)", official: true,
       content: "Preventing dengue / making a cup of tea", nature: "Individual or pair poster",
       outcome: "Students will be able to write at least six clear instructions using imperatives and sequence words.",
       teacher: "Shows a model poster, revises imperatives and sequence words, and gives the topics.",
       students: "Make a poster with a heading, pictures and at least six instructions in order.",
       criteria: ["Relevant instructions in the right order", "Correct imperatives and sequence words", "Clear layout with heading and pictures", "Neat and readable from a distance"] },
     { title: "Reading log", grade: "7 / 8 / 9", subject: ENG, evaluation: "Portfolio", time: "One term",
-      competency: "Reads for pleasure and responds to what is read.", level: "Summarises a story and gives a reasoned opinion.",
+      competency: "Competency 5: Extracts necessary information from various types of texts", level: "5.5 Reads and understands simple folk stories (Grade 7) / Reads and responds to simple folk stories / stories (Grade 8) / Reads and responds to simple folk tales (Grade 9); 5.6 Extracts the general idea of a text (Grades 7, 8 and 9)", official: true,
       content: "Three short books or stories chosen by the student", nature: "Individual reading portfolio",
       outcome: "Students will be able to summarise stories and give reasons for their opinions.",
       teacher: "Explains the log format, helps students choose readers, and checks the log twice during the term.",
       students: "Keep a log with a five-sentence summary and an opinion with reasons for each of three books or stories.",
       criteria: ["Summaries give the main events", "Opinions are supported by reasons", "Sentences are mostly accurate", "Log is complete and regularly kept"] },
     { title: "Class wall newspaper", grade: "8 / 9", subject: ENG, evaluation: "Group project", time: "Two weeks",
-      competency: "Writes different kinds of texts for a real audience.", level: "Produces a news report, a notice and a creative piece in the correct formats.",
+      competency: "Competency 7: Uses English creatively and innovatively in written communication", level: "7.5 Writes simple compositions on different types of topics (Grades 8 and 9)", official: true,
       content: "Newspaper writing: news report, notice, story or poem, puzzle", nature: "Group project",
       outcome: "Students will be able to write in different formats and work together to publish them.",
       teacher: "Forms groups, shows sample wall newspapers, sets deadlines, and monitors each member's contribution.",
@@ -305,21 +305,21 @@ const sbaEnglish = [
   ] },
   { group: "O/L (Grades 10 and 11)", tools: [
     { title: "Formal letter under timed conditions", grade: "10 / 11", subject: ENG, evaluation: "Written test", time: "30 minutes",
-      competency: "Writes formal letters for a specific purpose.", level: "Writes a well-organised formal letter in the correct format.",
+      competency: "Competency 7: Uses English creatively and innovatively in written communication", level: "7.7 Writes for official purposes (Grades 10 and 11)", official: true,
       content: "Letter of complaint or request on a local issue", nature: "Individual timed writing",
       outcome: "Students will be able to write a formal letter of about 150 words with the correct format and tone.",
       teacher: "Sets the task with clear points to include, and supervises the timed writing.",
       students: "Write a formal letter covering all the given points in 30 minutes.",
       criteria: ["Correct format (addresses, date, salutation, subject, close)", "All points covered with detail", "Clear paragraphs", "Accurate grammar and a suitable formal tone"] },
     { title: "Two-minute speech", grade: "10 / 11", subject: ENG, evaluation: "Speech", time: "2 minutes per student",
-      competency: "Speaks confidently on a topic to an audience.", level: "Delivers an organised speech with supporting points.",
+      competency: "Competency 8: Communicates clearly, fluently and concisely", level: "8.4 Speaks on familiar topics (Grades 10 and 11)", official: true,
       content: "A topic from the textbook (for example healthy food or careers)", nature: "Individual speech",
       outcome: "Students will be able to deliver an organised two-minute speech.",
       teacher: "Gives topics a week ahead, shows how to open and close a speech, and marks each speech.",
       students: "Prepare and deliver a two-minute speech with an opening, main points and a closing.",
       criteria: ["Clear main idea with supporting points", "Opening, body and closing", "Accurate and varied language", "Audible delivery with eye contact"] },
     { title: "Survey and report", grade: "10 / 11", subject: ENG, evaluation: "Assignment", time: "Two periods",
-      competency: "Collects and presents information in writing.", level: "Describes data from a chart using comparison language.",
+      competency: "Competency 5: Extracts necessary information from various types of texts", level: "5.3 Transfers information into other forms (Grades 10 and 11)", official: true,
       content: "Class survey and bar chart", nature: "Individual or pair report",
       outcome: "Students will be able to present survey results in a bar chart and a short report.",
       teacher: "Explains how to conduct a survey and describe a chart, and gives useful phrases.",
@@ -406,7 +406,7 @@ const sbaPage = {
   hero: { text: "Ready-to-use assessment tools in the familiar school format: details, instructions, marking criteria and signatures." },
   blocks: [
     { type: "callout", style: "warn", title: "These are samples, not official instructions", text: [
-      "Each tool is set out in the usual **School Based Assessment tool** format. Fill in your school's name and the date, and **replace the competency and competency level with the wording and numbers in your Teacher's Guide**. Follow the SBA plan and circulars for your grade and year for the number of tools, their timing and how marks are recorded. The terms shown in the Literature tools are suggestions; change them to suit your school's plan."
+      "Each tool is set out in the usual **School Based Assessment tool** format. Fill in your school's name and the date. **For Grades 6 to 11 English, the competency and competency level numbers are taken from the NIE English Language Teachers' Guides** for those grades (see [Competency Levels by Grade](teacher-resources/competency-levels/)). The Grade 6 guide used is the edition implemented from 2015, so schools on the new 2026 Grade 6 syllabus should use the numbers in the new guide. For primary grades, A/L General English and Literature we do not yet have the Teachers' Guides, so the competency wording there is a sample: copy the official competency and level from your guide. Follow the SBA plan and circulars for your grade and year for the number of tools, their timing and how marks are recorded. The terms shown in the Literature tools are suggestions; change them to suit your school's plan."
     ] },
     ...sbaEnglish.flatMap((g) => [{ type: "prose", heading: "English: " + g.group, text: [] }, ...g.tools.flatMap(sbaTool)]),
     { type: "prose", heading: "English Literature (O/L)", text: ["One of the prescribed novels is assessed by the school as well as examined, and the school chooses which. The three novels on the list shown on our O/L Literature page are The Prince and the Pauper, Bringing Tony Home and The Vendor of Sweets; confirm the list for your examination year."] },
@@ -511,17 +511,47 @@ const propPage = {
   ]
 };
 
+// ---------- Competencies and competency levels ----------
+const COMP = require(D + "/competencies.js");
+for (const g of COMP.GRADES) for (const [n, w] of g.levels) if (!w) throw new Error(`No wording for ${g.grade} ${n}`);
+const compPage = {
+  slug: "teacher-resources/competency-levels",
+  title: "English Competencies and Competency Levels by Grade",
+  metaTitle: "English Competencies and Competency Levels, Grades 6 to 11 | RCF English",
+  description: "The eight English Language competencies and the competency levels for each grade from 6 to 11, as listed in the NIE English Language Teachers' Guides.",
+  keywords: "English competency levels, competency levels grade 6 to 11, NIE teachers guide English competencies, SBA competency level",
+  kicker: "Teacher Resources", kind: "teacher-resource", schema: "LearningResource",
+  breadcrumbs: [TR], backTo: TR,
+  hero: { text: "Every competency level for Grades 6 to 11 in one place, for lesson plans, term plans and SBA tools." },
+  blocks: [
+    { type: "callout", style: "info", title: "Where these come from", text: [
+      "The competencies and competency levels below are taken from the **NIE English Language Teachers' Guides** for each grade. Each grade keeps its own guide's numbering and wording, because the guides do not always number the same level in the same way. Always check against the Teachers' Guide your school is using.",
+      "**Not included yet:** the primary grades, Grades 12 and 13 (A/L General English) and English Literature, because we do not have those Teachers' Guides. The **new 2026 Grade 6 syllabus** uses a different set of competencies; the Grade 6 table here follows the earlier syllabus."
+    ] },
+    { type: "table", heading: "The eight competencies (Grades 6 to 11)", columns: ["Competency", "Description"],
+      rows: Object.entries(COMP.NAMES).map(([n, t]) => [`Competency ${n}`, t]) },
+    ...COMP.GRADES.map((g) => ({
+      type: "table", heading: `${g.grade} competency levels`, _pageBreak: true,
+      intro: [`**Source:** ${g.source}`, ...(g.note ? [g.note] : [])],
+      columns: ["Competency", "Level", "Competency level"],
+      rows: g.levels.map(([n, w]) => [`Competency ${n.split(".")[0]}`, n, w])
+    })),
+    PREMIUM
+  ]
+};
+
 // ---------- downloads (made by downloads.js) ----------
 const DL = "assets/downloads/teacher/";
 const DOWNLOADS = [
   ...ORDER.map((k) => ({ slug: `${HUB}/${L[k].slug}`, file: `rcf-english-${L[k].slug}-ppp-lesson-plans`, label: `${L[k].label} PPP lesson plans`, landscape: false })),
   { slug: annual.slug, file: "rcf-english-annual-term-plan-templates", label: "Annual and term plan templates", landscape: true },
   { slug: notes.slug, file: "rcf-english-daily-weekly-notes-templates", label: "Daily and weekly notes templates", landscape: true },
+  { slug: compPage.slug, file: "rcf-english-competency-levels-grades-6-11", label: "Competencies and competency levels (Grades 6 to 11)", landscape: false },
   { slug: sbaPage.slug, file: "rcf-english-sample-sba-tasks", label: "Sample SBA tools (English and Literature)", landscape: false },
   { slug: propPage.slug, file: "rcf-english-sample-project-proposals", label: "Sample project proposals", landscape: false }
 ];
 const links = (d) => `[Word document (.docx)](${DL}${d.file}.docx) · [PDF](${DL}${d.file}.pdf)`;
-const pages = [hub, ...ORDER.map(planPage), annual, notes, sbaPage, propPage];
+const pages = [hub, ...ORDER.map(planPage), annual, notes, compPage, sbaPage, propPage];
 for (const d of DOWNLOADS) {
   pages.find((p) => p.slug === d.slug).blocks.unshift({
     type: "callout", style: "note", _download: true, title: "Download this page",
