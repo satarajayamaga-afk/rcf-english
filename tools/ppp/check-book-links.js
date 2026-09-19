@@ -6,9 +6,9 @@ const https = require("https");
 const BK = require("./books.js");
 
 const links = [
-  ...BK.BOOKS.map(([g, t, p]) => [`${g} ${t}`, BK.epdUrl(p)]),
+  ...BK.BOOKS.flatMap(([g, t, p, d]) => [[`${g} ${t}`, BK.epdUrl(p)], ...(d ? [[`${g} ${t} (Drive)`, d]] : [])]),
   ...BK.BY_UNIT.flatMap((b) => b.units.map(([t, p]) => [`${b.title} ${t}`, BK.epdUrl(p)])),
-  ...BK.GUIDES.map(([g, t, p]) => [`${g} TG ${t}`, BK.nieUrl(p)]),
+  ...BK.GUIDES.flatMap(([g, t, p, d]) => [[`${g} TG ${t}`, BK.nieUrl(p)], ...(d ? [[`${g} TG ${t} (Drive)`, d]] : [])]),
   ["EPD book download page", BK.SEARCH],
   ["NIE Teachers' Guide page", BK.TG_SEARCH]
 ];
@@ -16,9 +16,24 @@ const links = [
 function check(url) {
   return new Promise((resolve) => {
     const lib = url.startsWith("https") ? https : http;
-    const req = lib.get(url, { headers: { Range: "bytes=0-99" } }, (res) => {
-      res.resume();
-      resolve({ status: res.statusCode, type: res.headers["content-type"] || "" });
+    const isDrive = url.includes("drive.google.com");
+    // A Drive file that is not shared with "anyone with the link" sends an
+    // anonymous visitor to the Google sign-in page, so treat that as a failure
+    // even though Google answers with a normal status code.
+    const req = lib.get(url, { headers: isDrive ? {} : { Range: "bytes=0-99" } }, (res) => {
+      const loc = res.headers.location || "";
+      if (isDrive && (/accounts\.google\.com/.test(loc) || res.statusCode === 404)) {
+        res.resume();
+        return resolve({ status: "not shared", type: "" });
+      }
+      if (!isDrive) { res.resume(); return resolve({ status: res.statusCode, type: res.headers["content-type"] || "" }); }
+      let body = "";
+      res.setEncoding("utf8");
+      res.on("data", (c) => { if (body.length < 40000) body += c; });
+      res.on("end", () => {
+        const denied = /ServiceLogin|Request access|You need access/i.test(body);
+        resolve({ status: denied ? "not shared" : res.statusCode, type: res.headers["content-type"] || "" });
+      });
     });
     req.setTimeout(30000, () => { req.destroy(); resolve({ status: "timeout", type: "" }); });
     req.on("error", (e) => resolve({ status: "error: " + e.message, type: "" }));

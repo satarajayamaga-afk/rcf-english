@@ -541,7 +541,12 @@ const compPage = {
 
 // ---------- Official books and Teachers' Guides ----------
 const BK = require(D + "/books.js");
-const bkLink = (title, path) => `[${title}](${BK.epdUrl(path)})`;
+const bkLink = (title, path, driveUrl) => driveUrl
+  ? `[${title}](${driveUrl})${path ? ` · [department copy](${BK.epdUrl(path)})` : ""}`
+  : `[${title}](${BK.epdUrl(path)})`;
+const tgLink = (title, path, driveUrl) => driveUrl
+  ? `[${title}](${driveUrl}) · [NIE copy](${BK.nieUrl(path)})`
+  : `[${title}](${BK.nieUrl(path)})`;
 const booksPage = {
   slug: "teacher-resources/textbooks-and-teacher-guides",
   title: "English Pupil's Books, Workbooks and Teachers' Guides",
@@ -553,12 +558,13 @@ const booksPage = {
   hero: { text: "Every English book and guide the government publishes free, with a direct link to each one." },
   blocks: [
     { type: "callout", style: "info", title: "These are links to the official sites", text: [
-      "The books belong to the **Educational Publications Department** (edupub.gov.lk) and the guides to the **National Institute of Education** (nie.lk). We link to them; we do not keep copies here, and nothing on this page is an RCF publication.",
-      `Every link was checked on 19 September 2026 and opened a PDF. The department's site has **no https**, so your browser may warn you that the book site is not secure before it opens the file. If a link stops working, use the department's [book download page](${BK.SEARCH}) or the NIE [Teachers' Guide page](${BK.TG_SEARCH}) and choose the grade yourself.`
+      "These are the government's own books and guides. Where the link says **department copy** or **NIE copy**, it goes to the official site: the books belong to the **Educational Publications Department** (edupub.gov.lk) and the guides to the **National Institute of Education** (nie.lk). Nothing on this page is an RCF publication.",
+      "The department's server is often slow and frequently stops a large download half way, so where we hold a copy in the **RCF English Drive** that is the first link, and the official link is kept beside it. The Drive copies are shared as view-only; if one will not open, use the official link.",
+      `Every link here was checked and opened a PDF. The department's site has **no https**, so your browser may warn you that the book site is not secure before it opens the file. If a link stops working, use the department's [book download page](${BK.SEARCH}) or the NIE [Teachers' Guide page](${BK.TG_SEARCH}) and choose the grade yourself.`
     ] },
     { type: "table", heading: "Pupil's Books, Workbooks and other books", intro: ["Published by the Educational Publications Department. Grades 1 and 2 follow Activity Based Oral English (ABOE), so they have an Activity Book and a Song Book instead of a Pupil's Book."],
       columns: ["Grade", "Book", "Download"],
-      rows: BK.BOOKS.map(([g, t, p]) => [g, t, bkLink(t + " (PDF)", p)]) },
+      rows: BK.BOOKS.map(([g, t, p, d]) => [g, t, bkLink(t + " (PDF)", p, d)]) },
     ...BK.BY_UNIT.map((b) => ({
       type: "table", heading: b.title, level: "h3", intro: [b.note],
       columns: ["Unit", "Download"],
@@ -566,7 +572,7 @@ const booksPage = {
     })),
     { type: "table", heading: "Teachers' Guides", intro: ["Published by the National Institute of Education. Where a grade has two guides, the later one is the current guide and the earlier one is kept for reference."],
       columns: ["Grade", "Teachers' Guide", "Download"],
-      rows: BK.GUIDES.map(([g, t, p]) => [g, t, `[${t} (PDF)](${BK.nieUrl(p)})`]) },
+      rows: BK.GUIDES.map(([g, t, p, d]) => [g, t, tgLink(t + " (PDF)", p, d)]) },
     { type: "table", heading: "What is not on the official sites", intro: ["So that you do not spend an evening looking for them."],
       columns: ["What you may be looking for", "What we found"], rows: BK.MISSING },
     { type: "cards", heading: "What to do with these books", columns: "3", items: [
