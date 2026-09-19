@@ -4,8 +4,8 @@ const fs = require("fs");
 const path = require("path");
 const OUT = process.argv[2] || path.join(__dirname, "../../_src/pages/teacher-resources-ppp.json");
 const D = __dirname;
-const L = Object.assign({}, require(D + "/g3-g6.js"), require(D + "/g7-g8.js"), require(D + "/g9-g11.js"), require(D + "/al.js"));
-const ORDER = ["g3", "g6", "g7", "g8", "g9", "g10", "g11", "al"];
+const L = Object.assign({}, require(D + "/g3-g6.js"), require(D + "/g4.js"), require(D + "/g7-g8.js"), require(D + "/g9-g11.js"), require(D + "/al.js"));
+const ORDER = ["g3", "g4", "g6", "g7", "g8", "g9", "g10", "g11", "al"];
 
 const HUB = "teacher-resources/ppp-lesson-plans";
 const TR = { label: "English Teachers Resources", url: "teacher-resources/" };
@@ -67,7 +67,7 @@ const hub = {
   slug: HUB,
   title: "Sample PPP Lesson Plans, Grades 3 to 13",
   metaTitle: "Sample PPP English Lesson Plans for Grades 3 to 13 | RCF English",
-  description: "Free sample PPP (Presentation, Practice, Production) English lesson plans for Sri Lankan classrooms, linked to Pupil's Book units for Grades 3, 6 to 11 and A/L General English.",
+  description: "Free sample PPP (Presentation, Practice, Production) English lesson plans for Sri Lankan classrooms, linked to Pupil's Book units for Grades 3, 4, 6 to 11 and A/L General English.",
   keywords: "PPP lesson plan, English lesson plans Sri Lanka, presentation practice production, Grade 6 to 11 English lesson plans, A/L General English lesson plan",
   kicker: "Teacher Resources",
   kind: "teacher-resource",
@@ -85,7 +85,7 @@ const hub = {
       columns: ["Grade", "Why there are no plans yet"],
       rows: [
         ["Grade 2", "We do not have the Grade 2 book yet."],
-        ["Grades 4 and 5", "We do not have the Grade 4 and Grade 5 Pupil's Books yet."],
+        ["Grade 5", "We do not have the Grade 5 Pupil's Book yet."],
         ["Grade 6 (2026 book)", "The Grade 6 plans follow the 2014 to 2019 edition. We do not have the new 2026 Grade 6 book yet."],
         ["Grades 12 and 13", "There is one A/L General English textbook for both years, so the twenty A/L plans cover both grades together."]
       ] },
@@ -102,7 +102,7 @@ const hub = {
 const UNITS = {
   "Grade 2": null,
   "Grade 3": L.g3,
-  "Grade 4": null,
+  "Grade 4": L.g4,
   "Grade 5": null,
   "Grade 6": L.g6,
   "Grade 7": L.g7,
@@ -161,7 +161,6 @@ const annual = {
 // ---------- Daily and weekly notes ----------
 const sample = {
   "Grade 2": ["Topic from your Teacher's Guide (for example, greetings)", "Pupils listened to and sang a greeting song and greeted three friends.", "Most pupils greet confidently; four need more practice."],
-  "Grade 4": ["Unit and topic from your Pupil's Book", "Pupils read a short text aloud and answered oral questions.", "Group reading went well; revise new words next lesson."],
   "Grade 5": ["Unit and topic from your Pupil's Book", "Pupils wrote four sentences about a picture after oral practice.", "Six pupils need help with capital letters."]
 };
 function sampleRow(grade, g) {
@@ -540,18 +539,57 @@ const compPage = {
   ]
 };
 
+// ---------- Official books and Teachers' Guides ----------
+const BK = require(D + "/books.js");
+const bkLink = (title, path) => `[${title}](${BK.epdUrl(path)})`;
+const booksPage = {
+  slug: "teacher-resources/textbooks-and-teacher-guides",
+  title: "English Pupil's Books, Workbooks and Teachers' Guides",
+  metaTitle: "Download English Pupil's Books, Workbooks and Teachers' Guides, Grades 1 to 13 | RCF English",
+  description: "Direct links to every English Pupil's Book, Workbook and Teachers' Guide published free by the Educational Publications Department and the National Institute of Education, Grades 1 to 13.",
+  keywords: "English pupils book download, English teachers guide download, edupub English textbook, NIE English teachers guide, Sri Lanka English textbook PDF",
+  kicker: "Teacher Resources", kind: "teacher-resource", schema: "LearningResource",
+  breadcrumbs: [TR], backTo: TR,
+  hero: { text: "Every English book and guide the government publishes free, with a direct link to each one." },
+  blocks: [
+    { type: "callout", style: "info", title: "These are links to the official sites", text: [
+      "The books belong to the **Educational Publications Department** (edupub.gov.lk) and the guides to the **National Institute of Education** (nie.lk). We link to them; we do not keep copies here, and nothing on this page is an RCF publication.",
+      `Every link was checked on 19 September 2026 and opened a PDF. The department's site has **no https**, so your browser may warn you that the book site is not secure before it opens the file. If a link stops working, use the department's [book download page](${BK.SEARCH}) or the NIE [Teachers' Guide page](${BK.TG_SEARCH}) and choose the grade yourself.`
+    ] },
+    { type: "table", heading: "Pupil's Books, Workbooks and other books", intro: ["Published by the Educational Publications Department. Grades 1 and 2 follow Activity Based Oral English (ABOE), so they have an Activity Book and a Song Book instead of a Pupil's Book."],
+      columns: ["Grade", "Book", "Download"],
+      rows: BK.BOOKS.map(([g, t, p]) => [g, t, bkLink(t + " (PDF)", p)]) },
+    ...BK.BY_UNIT.map((b) => ({
+      type: "table", heading: b.title, level: "h3", intro: [b.note],
+      columns: ["Unit", "Download"],
+      rows: b.units.map(([t, p]) => [t, bkLink("PDF", p)])
+    })),
+    { type: "table", heading: "Teachers' Guides", intro: ["Published by the National Institute of Education. Where a grade has two guides, the later one is the current guide and the earlier one is kept for reference."],
+      columns: ["Grade", "Teachers' Guide", "Download"],
+      rows: BK.GUIDES.map(([g, t, p]) => [g, t, `[${t} (PDF)](${BK.nieUrl(p)})`]) },
+    { type: "table", heading: "What is not on the official sites", intro: ["So that you do not spend an evening looking for them."],
+      columns: ["What you may be looking for", "What we found"], rows: BK.MISSING },
+    { type: "cards", heading: "What to do with these books", columns: "3", items: [
+      { title: "Sample PPP Lesson Plans", url: HUB + "/", more: "113 plans", text: ["Ready lessons built on the unit activities in these books."] },
+      { title: "Annual and Term Plan Templates", url: "teacher-resources/annual-term-plan-templates/", more: "Open", text: ["Each grade's units, ready for your scheme of work."] },
+      { title: "Competency Levels by Grade", url: "teacher-resources/competency-levels/", more: "Grades 6 to 11", text: ["The competency levels these guides set out."] }
+    ] }
+  ]
+};
+
 // ---------- downloads (made by downloads.js) ----------
 const DL = "assets/downloads/teacher/";
 const DOWNLOADS = [
   ...ORDER.map((k) => ({ slug: `${HUB}/${L[k].slug}`, file: `rcf-english-${L[k].slug}-ppp-lesson-plans`, label: `${L[k].label} PPP lesson plans`, landscape: false })),
   { slug: annual.slug, file: "rcf-english-annual-term-plan-templates", label: "Annual and term plan templates", landscape: true },
   { slug: notes.slug, file: "rcf-english-daily-weekly-notes-templates", label: "Daily and weekly notes templates", landscape: true },
+  { slug: booksPage.slug, file: "rcf-english-textbooks-and-teacher-guides", label: "Pupil's Books, Workbooks and Teachers' Guides (link list)", landscape: false },
   { slug: compPage.slug, file: "rcf-english-competency-levels-grades-6-11", label: "Competencies and competency levels (Grades 6 to 11)", landscape: false },
   { slug: sbaPage.slug, file: "rcf-english-sample-sba-tasks", label: "Sample SBA tools (English and Literature)", landscape: false },
   { slug: propPage.slug, file: "rcf-english-sample-project-proposals", label: "Sample project proposals", landscape: false }
 ];
 const links = (d) => `[Word document (.docx)](${DL}${d.file}.docx) · [PDF](${DL}${d.file}.pdf)`;
-const pages = [hub, ...ORDER.map(planPage), annual, notes, compPage, sbaPage, propPage];
+const pages = [hub, ...ORDER.map(planPage), annual, notes, compPage, booksPage, sbaPage, propPage];
 for (const d of DOWNLOADS) {
   pages.find((p) => p.slug === d.slug).blocks.unshift({
     type: "callout", style: "note", _download: true, title: "Download this page",
