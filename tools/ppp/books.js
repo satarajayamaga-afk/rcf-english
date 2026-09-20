@@ -50,14 +50,14 @@ exports.BOOKS = [
   ["Grade 6", "Workbook", null, drive("1s-n0UJnVMJLJHZ44YgXFrJvWDSi7FwOg")],
   ["Grade 7", "Pupil's Book", null, drive("12L0ScUF3RSINuvZdVrsK7hU7Ur8N9AlW")],
   ["Grade 7", "Workbook", "Administrator/English/7/en wb g-7/en WB G-7.pdf", null],
-  ["Grade 8", "Pupil's Book", "Administrator/English/8/en pb g-8/en PB g-8.pdf", null],
+  ["Grade 8", "Pupil's Book", null, drive("1Tp65gVlBCRXABpcULpujXtc5UAT6Nqzr")],
   ["Grade 8", "Workbook", "Administrator/English/8/en wb g-8/english WB g-8.pdf", null],
   ["Grade 9", "Pupil's Book", "Administrator/English/9/en pb g-9/english pb G-9.pdf", drive("16q5Qcc5jNowFBg-u04rAAXIEE1IgnouF")],
   ["Grade 9", "Workbook", "Administrator/English/9/en wb g-9/en wb g-9.pdf", null],
   ["Grade 10", "Pupil's Book (scanned copy)", null, drive("1H5WeTVEAtNjvfXpO6iupB9ei58z8TJrx")],
   ["Grade 10", "Workbook", "Administrator/English/10/English Work Book G 10 E/english WB G-10.pdf", null],
   ["Grade 10", "Appreciation of English Literary Texts", null, drive("0B5Dat0QJWfuUN3U3ODRCLUNQVXc", "0-NzCvpFm0a0cgjv-0Ksr9Ow")],
-  ["Grade 11", "Pupil's Book", "Administrator/English/11/english PB G-11/book.pdf", null],
+  ["Grade 11", "Pupil's Book", null, drive("1Tzl1n6QFrK55gbzaSmQMfWvhYO_V_70B")],
   ["Grade 11", "Workbook", "Administrator/English/11/en wb g-11/english WBg-11.pdf", null]
 ];
 
