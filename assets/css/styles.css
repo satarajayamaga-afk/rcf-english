@@ -5017,3 +5017,7 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   .pick__box { transition: none; opacity: 1; transform: none; }
 }
 @media print { .pick { display: none !important; } }
+
+/* "I study or teach in the English medium" route: science green, so it reads
+   as a subject route rather than another English one. */
+.pathway--medium { --route: #1d6f8b; --route-tint: #e8f3f7; }

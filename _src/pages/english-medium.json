@@ -1,0 +1,183 @@
+{
+  "_readme": [
+    "ENGLISH MEDIUM SCIENCE AND MATHS",
+    "---------------------------------------------------------------------",
+    "For pupils who learn Science and Mathematics in English, and for the",
+    "teachers who teach them. This is deliberately smaller than the English",
+    "Language sections: it points at the official material rather than",
+    "repeating it, and adds the part nobody else covers, which is the",
+    "English a science or maths answer actually needs.",
+    "",
+    "Every external link was opened and checked before publishing. They are",
+    "on other people's sites and can change without warning, so check them",
+    "again before a new school year."
+  ],
+
+  "pages": [
+    {
+      "slug": "english-medium",
+      "title": "English Medium Science and Maths",
+      "metaTitle": "English Medium Science and Maths | Resources for students and teachers | RCF English",
+      "description": "Free resources for Sri Lankan students and teachers doing Science and Mathematics in the English medium: the official e-thaksalawa courses for Grades 6 to 11, Teachers' Guides, past papers, and the English that examination answers need.",
+      "keywords": "English medium science, English medium maths, O/L science English medium, O/L mathematics English medium, e-thaksalawa English medium, English medium teacher",
+      "kicker": "For English medium classes",
+      "kind": "page",
+      "schema": "LearningResource",
+      "hero": {
+        "text": "The subject is not the hard part. Saying it in English is. This page points to the official Science and Maths material in English, and teaches the English those answers need."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this page is, and is not",
+          "text": [
+            "RCF English is an English site, so this section is **deliberately small**. We do not teach Science or Maths, and we do not copy anyone's material. What we do is point you to the official English medium resources, and then teach the part that is genuinely an English problem: understanding what a question is asking, and writing an answer that earns the mark.",
+            "**Every link below was opened and checked.** They sit on other people's websites and can change without notice. If one stops working, tell us and we will fix it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why English medium is difficult, and what actually fixes it",
+          "text": [
+            "A pupil who could explain photosynthesis perfectly in Sinhala or Tamil can lose the mark in English for three reasons, and none of them is Science.",
+            "**The question word is misread.** *Describe* and *explain* are not the same instruction, and a pupil who describes when the paper says explain has answered a different question. **The sentence collapses under the technical words.** The vocabulary is known, but the grammar holding it together is not. **The answer is right but unreadable.** No units, no labels, no order.",
+            "All three are language problems with language solutions, and they are the fastest marks a teacher can win back. The tables further down deal with each one."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Official courses in English medium, Grades 6 to 11",
+          "intro": [
+            "The Ministry of Education's **e-thaksalawa** carries a full English medium branch. Each course holds the Smart Text Book, the Teacher's Instructional Manual and material arranged by competency. Some items open straight away; others ask you to log in with a free account."
+          ],
+          "columns": ["Grade", "Mathematics", "Science"],
+          "rows": [
+            ["Grade 6", "[Mathematics, Grade 6](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=288&lang=en)", "[Science, Grade 6](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=290&lang=en)"],
+            ["Grade 7", "[Mathematics, Grade 7](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=451&lang=en)", "[Science, Grade 7](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=454&lang=en)"],
+            ["Grade 8", "[Mathematics, Grade 8](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=531&lang=en)", "[Science, Grade 8](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=532&lang=en)"],
+            ["Grade 9", "[Mathematics, Grade 9](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=817&lang=en)", "[Science, Grade 9](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=819&lang=en)"],
+            ["Grade 10", "[Mathematics, Grade 10](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=842&lang=en)", "[Science, Grade 10](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=844&lang=en)"],
+            ["Grade 11 (O/L)", "[Mathematics, Grade 11](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=799&lang=en)", "[Science, Grade 11](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=800&lang=en)"]
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Past papers and Teachers' Guides",
+          "variant": "tint",
+          "columns": "3",
+          "items": [
+            {
+              "title": "O/L past papers",
+              "url": "https://doenets.lk/pastpapers",
+              "more": "Department of Examinations",
+              "text": ["The official source. Choose the year and the G.C.E. Ordinary Level examination, and take the English medium paper for Science or Mathematics."]
+            },
+            {
+              "title": "Grade 11 Teachers' Guides",
+              "url": "https://nie.lk/seletguide",
+              "more": "NIE, English medium",
+              "text": ["[Mathematics (2016)](https://nie.lk/pdffiles/tg/Grade%2011%20Mathematics%20Teacher%20Guide.pdf) and [Science (2016)](https://nie.lk/pdffiles/tg/e11tim169.pdf), both in English."]
+            },
+            {
+              "title": "Grade 10 Teachers' Guides",
+              "url": "https://nie.lk/seletguide",
+              "more": "NIE, English medium",
+              "text": ["[Mathematics (2015)](https://nie.lk/pdffiles/tg/e10tim109.pdf) and [Science (2015)](https://nie.lk/pdffiles/tg/e10tim110.pdf), both in English."]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What the question word is telling you to do",
+          "eyebrow": "The commonest lost mark",
+          "intro": [
+            "Examination papers use a small set of instruction words, and each one asks for a different shape of answer. Learn these and a pupil stops writing the wrong kind of answer to a question they actually understood."
+          ],
+          "columns": ["The paper says", "It wants", "So the answer begins"],
+          "rows": [
+            ["**State** / **Name** / **Write down**", "One fact. No reason, no sentence needed.", "*The boiling point is 100 °C.*"],
+            ["**List**", "Several facts, one after another. Still no reasons.", "*The three states are solid, liquid and gas.*"],
+            ["**Describe**", "What happens, in order. Still no reasons.", "*The water is heated. Bubbles form at the base, then rise ...*"],
+            ["**Explain** / **Why**", "The reason. This is where *because* belongs.", "*The water rises because the warm water is less dense.*"],
+            ["**Compare**", "Both things in one sentence, with a linking word.", "*Copper conducts heat well, whereas plastic does not.*"],
+            ["**Calculate** / **Find**", "The working, then the answer with its unit.", "*Area = 4 × 3 = 12 cm²*"],
+            ["**Show that**", "Every step, ending at the number you were given.", "*Since a = 2 and b = 3, a + b = 5, as required.*"],
+            ["**Define**", "A complete sentence naming the thing and its key feature.", "*Density is the mass of one unit of volume of a substance.*"],
+            ["**Draw** / **Label**", "A diagram with words on it. No sentence needed.", "A ruled diagram, each part named in English."]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Sentences that carry a science or maths answer",
+          "intro": [
+            "Most answers use a handful of sentence shapes. Give pupils these and they stop translating sentence by sentence from their first language."
+          ],
+          "columns": ["When you need to", "Use this shape", "Example"],
+          "rows": [
+            ["Give a reason", "... **because** ...", "*The bulb lights because the circuit is complete.*"],
+            ["Give a result", "**so** / **therefore** / **as a result**", "*The pressure falls, so the volume increases.*"],
+            ["Say what something does", "**is used to** / **allows** / **prevents**", "*The fuse prevents the wire from overheating.*"],
+            ["Say what a thing is made of", "**consists of** / **is made up of**", "*An atom consists of a nucleus and electrons.*"],
+            ["Describe a change", "**increases** / **decreases** / **remains constant**", "*As the temperature rises, the resistance increases.*"],
+            ["Describe a sequence", "**first** ... **then** ... **finally**", "*First the seed absorbs water, then the root appears.*"],
+            ["State a condition", "**if** ... **then** ...", "*If the triangle is equilateral, then all angles are 60°.*"],
+            ["Compare two things", "**whereas** / **while** / **than**", "*Iron rusts, whereas gold does not.*"],
+            ["Conclude", "**Therefore** / **Hence**", "*Therefore x = 7.*"]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Mistakes that cost marks in English medium answers",
+          "items": [
+            {
+              "q": "Writing the unit only at the end, or not at all",
+              "a": ["A number without a unit is not an answer in Science or Maths. Write the unit every time it appears, including in the working, and use the standard form: 12 cm², 5 m/s, 250 g. Teach pupils to check the units before they check the arithmetic."]
+            },
+            {
+              "q": "Using the everyday word instead of the technical one",
+              "a": ["*Melt*, *dissolve* and *evaporate* are three different things and pupils use them for each other because in conversation they feel the same. The same happens with *weight* and *mass*, *heat* and *temperature*, *speed* and *velocity*. Put the pair on the board together and make pupils say a sentence with each."]
+            },
+            {
+              "q": "Answering in the first language and translating word by word",
+              "a": ["This produces sentences that are grammatically strange and often lose the point. It is faster to teach the five or six sentence shapes in the table above than to correct translated sentences one at a time."]
+            },
+            {
+              "q": "Describing when the question says explain",
+              "a": ["The most expensive mistake on the paper. If the word *because* does not appear in an answer to an *explain* question, the answer is very likely incomplete."]
+            },
+            {
+              "q": "Diagram labels in the first language, or no labels",
+              "a": ["Labels are marks. Pupils should practise labelling the same standard diagrams in English until it is automatic: the human digestive system, a plant cell, a circuit, the parts of a flower, a ray diagram."]
+            },
+            {
+              "q": "Long sentences where three short ones were wanted",
+              "a": ["Science English is short and plain. One idea, one sentence. A pupil who writes three short correct sentences scores better than one who writes a long sentence that falls apart in the middle."]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "For the teacher: five minutes at the start of a lesson",
+          "text": [
+            "**Word pair of the day.** Put up two words pupils confuse (*mass* and *weight*) and make each pupil say one sentence with each.",
+            "**Read the question aloud.** Before pupils answer, ask what the instruction word is and what shape of answer it wants. Half the class will have been about to answer the wrong question.",
+            "**Label it in English.** Keep one diagram on the board through the week and have a different pupil label it each day.",
+            "**Say the number with its unit.** Insist that every answer spoken aloud includes the unit. It transfers to the written paper faster than any correction."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "English that helps in every subject",
+          "columns": "3",
+          "items": [
+            { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["The English paper itself, question type by question type."] },
+            { "title": "Speaking Practice", "url": "speaking-practice/", "more": "Practise", "text": ["Say it aloud and hear how you sound. Useful for oral work in any subject."] },
+            { "title": "Writing Practice", "url": "writing-practice/", "more": "Practise", "text": ["Guided writing with a model answer to compare against."] }
+          ]
+        }
+      ]
+    }
+  ]
+}
