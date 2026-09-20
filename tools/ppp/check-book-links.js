@@ -7,12 +7,9 @@ const BK = require("./books.js");
 
 const both = (name, d) => (d ? [[`${name} (Drive view)`, d.view], [`${name} (Drive download)`, d.dl]] : []);
 const links = [
-  // A book we hold only in the Drive (the department never published it as a
-  // whole book) has no department path to check.
-  ...BK.BOOKS.flatMap(([g, t, p, d]) => [...(p ? [[`${g} ${t}`, BK.epdUrl(p)]] : []), ...both(`${g} ${t}`, d)]),
-  ...BK.GUIDES.flatMap(([g, t, p, d]) => [[`${g} TG ${t}`, BK.nieUrl(p)], ...both(`${g} TG ${t}`, d)]),
-  ["EPD book download page", BK.SEARCH],
-  ["NIE Teachers' Guide page", BK.TG_SEARCH]
+  // Department links are never published, so there is nothing to check there.
+  ...BK.BOOKS.flatMap(([g, t, , d]) => both(`${g} ${t}`, d)),
+  ...BK.GUIDES.flatMap(([g, t, , d]) => both(`${g} TG ${t}`, d)),
 ];
 
 function check(url, depth = 0) {
@@ -35,12 +32,20 @@ function check(url, depth = 0) {
       }
       if (isDrive && res.statusCode === 404) { res.resume(); return resolve({ status: "not shared", type: "" }); }
       if (!isDrive) { res.resume(); return resolve({ status: res.statusCode, type: res.headers["content-type"] || "" }); }
-      let body = "";
-      res.setEncoding("utf8");
-      res.on("data", (c) => { if (body.length < 40000) body += c; });
+      // A download link must hand back the PDF itself. Google answers an
+      // error with a perfectly ordinary 200 and an HTML page, so the status
+      // alone proves nothing: look at the bytes.
+      const wantsFile = /export=download/.test(url) || /googleusercontent\.com/.test(url);
+      let body = Buffer.alloc(0);
+      res.on("data", (c) => { if (body.length < 40000) body = Buffer.concat([body, c]); });
       res.on("end", () => {
-        const denied = /ServiceLogin|Request access|You need access/i.test(body) && !body.startsWith("%PDF");
-        resolve({ status: denied ? "not shared" : res.statusCode, type: res.headers["content-type"] || "" });
+        const text = body.toString("utf8");
+        const isPdf = body.subarray(0, 4).toString() === "%PDF";
+        const denied = /ServiceLogin|Request access|You need access/i.test(text) && !isPdf;
+        const type = res.headers["content-type"] || "";
+        if (denied) return resolve({ status: "not shared", type });
+        if (wantsFile && !isPdf) return resolve({ status: "not a PDF", type });
+        resolve({ status: res.statusCode, type });
       });
     });
     req.setTimeout(30000, () => { req.destroy(); resolve({ status: "timeout", type: "" }); });

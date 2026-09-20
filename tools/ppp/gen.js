@@ -541,12 +541,8 @@ const compPage = {
 
 // ---------- Official books and Teachers' Guides ----------
 const BK = require(D + "/books.js");
-const bkLink = (title, path, d) => d
-  ? `[Download ${title}](${d.dl}) · [read online](${d.view})${path ? ` · [department copy](${BK.epdUrl(path)})` : ""}`
-  : `[${title}](${BK.epdUrl(path)})`;
-const tgLink = (title, path, d) => d
-  ? `[Download ${title}](${d.dl}) · [read online](${d.view}) · [NIE copy](${BK.nieUrl(path)})`
-  : `[${title}](${BK.nieUrl(path)})`;
+const bkLink = (title, path, d) => `[Download ${title}](${d.dl}) · [read online](${d.view})`;
+const tgLink = (title, path, d) => `[Download ${title}](${d.dl}) · [read online](${d.view})`;
 const booksPage = {
   slug: "teacher-resources/textbooks-and-teacher-guides",
   title: "English Pupil's Books, Workbooks and Teachers' Guides",
@@ -558,16 +554,24 @@ const booksPage = {
   hero: { text: "Every English book and guide the government publishes free, with a direct link to each one." },
   blocks: [
     { type: "callout", style: "info", title: "These are links to the official sites", text: [
-      "These are the government's own books and guides. Where the link says **department copy** or **NIE copy**, it goes to the official site: the books belong to the **Educational Publications Department** (edupub.gov.lk) and the guides to the **National Institute of Education** (nie.lk). Nothing on this page is an RCF publication.",
-      "The department's server is often slow and frequently stops a large download half way, so where we hold a copy in the **RCF English Drive** that comes first. **Download** saves the PDF straight to your device; **read online** opens it in Google Drive without downloading; the official link is kept beside them. If one link will not open, use another.",
-      `Every link here was checked and opened a PDF. The department's site has **no https**, so your browser may warn you that the book site is not secure before it opens the file. If a link stops working, use the department's [book download page](${BK.SEARCH}) or the NIE [Teachers' Guide page](${BK.TG_SEARCH}) and choose the grade yourself.`
+      "These are the government's own books and guides, published by the **Educational Publications Department** and the **National Institute of Education**. Nothing on this page is an RCF publication, and nothing here is sold.",
+      "Everything below is served from the **RCF English Drive**, because the government download sites fail too often to be worth sending you to. **Download** saves the PDF straight to your device; **read online** opens it in Google Drive without downloading.",
+      "Every link here was checked and opened a PDF. If one ever fails, tell us and we will replace it."
     ] },
     { type: "table", heading: "Pupil's Books, Workbooks and other books", intro: ["Published by the Educational Publications Department. Every link here is a **whole book**: where the department only publishes a book one unit at a time, we leave it out rather than send you to fourteen separate files. Grades 1 and 2 follow Activity Based Oral English (ABOE), so they have an Activity Book and a Song Book instead of a Pupil's Book."],
       columns: ["Grade", "Book", "Download"],
-      rows: BK.BOOKS.map(([g, t, p, d]) => [g, t, bkLink(t + " (PDF)", p, d)]) },
-    { type: "table", heading: "Teachers' Guides", intro: ["Published by the National Institute of Education. Where a grade has two guides, the later one is the current guide and the earlier one is kept for reference."],
+      rows: BK.BOOKS.filter(([, , , d]) => d).map(([g, t, p, d]) => [g, t, bkLink(t + " (PDF)", p, d)]) },
+    { type: "table", heading: "Books we do not have a copy of yet",
+      intro: ["These books exist, but we have no copy in the RCF English Drive, and we do not link the Educational Publications Department's own site because its downloads fail too often to be worth sending anyone to. They will appear above as copies are added."],
+      columns: ["Grade", "Book"],
+      rows: BK.BOOKS.filter(([, , , d]) => !d).map(([g, t]) => [g, t]) },
+    { type: "table", heading: "Teachers' Guides", intro: ["Written by the National Institute of Education. Where a grade has two guides, the later one is the current guide and the earlier one is kept for reference."],
       columns: ["Grade", "Teachers' Guide", "Download"],
-      rows: BK.GUIDES.map(([g, t, p, d]) => [g, t, tgLink(t + " (PDF)", p, d)]) },
+      rows: BK.GUIDES.filter(([, , , d]) => d).map(([g, t, p, d]) => [g, t, tgLink(t + " (PDF)", p, d)]) },
+    { type: "table", heading: "Teachers' Guides we do not have a copy of yet",
+      intro: ["These guides exist on the National Institute of Education's site, but we have no copy in the RCF English Drive yet. They will appear above as copies are added."],
+      columns: ["Grade", "Teachers' Guide"],
+      rows: BK.GUIDES.filter(([, , , d]) => !d).map(([g, t]) => [g, t]) },
     { type: "table", heading: "What is not on the official sites", intro: ["So that you do not spend an evening looking for them."],
       columns: ["What you may be looking for", "What we found"], rows: BK.MISSING },
     { type: "cards", heading: "What to do with these books", columns: "3", items: [
