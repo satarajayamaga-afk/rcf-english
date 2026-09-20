@@ -44,19 +44,53 @@
     "",
     "After editing this file, run build.cmd."
   ],
-
   "courses": [
-    { "id": "primary-elocution",   "title": "Primary Elocution Teachers' Diploma", "published": true },
-    { "id": "associate-diploma",   "title": "Associate Diploma (Higher Elocution Diploma)", "published": true },
-    { "id": "grade-9-literature",  "title": "Grade 9 Literature", "published": true },
-    { "id": "grade-10-literature", "title": "Grade 10 Literature", "published": true },
-    { "id": "ol-literature",       "title": "O/L Literature", "published": true },
-    { "id": "al-literature",       "title": "A/L Literature", "published": true },
-    { "id": "literature-orientation", "title": "Literature Orientation: One-Month Course for New Teachers", "published": true },
-    { "id": "ielts",              "title": "IELTS Training", "published": true },
-    { "id": "tkt",                "title": "TKT: Teaching Knowledge Test", "published": true }
+    {
+      "id": "primary-elocution",
+      "title": "Primary Elocution Teachers' Diploma",
+      "published": true
+    },
+    {
+      "id": "associate-diploma",
+      "title": "Associate Diploma (Higher Elocution Diploma)",
+      "published": true
+    },
+    {
+      "id": "grade-9-literature",
+      "title": "Grade 9 Literature",
+      "published": true
+    },
+    {
+      "id": "grade-10-literature",
+      "title": "Grade 10 Literature",
+      "published": true
+    },
+    {
+      "id": "ol-literature",
+      "title": "O/L Literature",
+      "published": true
+    },
+    {
+      "id": "al-literature",
+      "title": "A/L Literature",
+      "published": true
+    },
+    {
+      "id": "literature-orientation",
+      "title": "Literature Orientation: One-Month Course for New Teachers",
+      "published": true
+    },
+    {
+      "id": "ielts",
+      "title": "IELTS Training",
+      "published": true
+    },
+    {
+      "id": "tkt",
+      "title": "TKT: Teaching Knowledge Test",
+      "published": true
+    }
   ],
-
   "classes": [
     {
       "id": "primary-elocution-online",
@@ -119,7 +153,7 @@
       "title": "Grade 9 Literature",
       "subject": "English Literature",
       "level": "Grade 9",
-      "teacher": "Rohana Fernando",
+      "teacher": "Miss Wasana Kumarasinghe",
       "description": [
         "An introduction to reading literature closely: poetry, short stories and drama, with the habits that make the Ordinary Level years easier. Students learn to find evidence in a text, explain an effect and build an answer rather than retell a story."
       ],
@@ -131,8 +165,11 @@
       "registration": "soon",
       "language": "English",
       "materials": "The prescribed texts, a notebook and a device with an internet connection",
-      "whatsappMessage": "Hello, I would like information about the Grade 9 Literature course at RCF Online Academy. Please send me the schedule, fees and registration details.",
-      "published": true
+      "whatsappMessage": "Hello Miss Wasana, I would like information about the Grade 9 Literature class at RCF Online Academy. Please send me the schedule, fees and registration details.",
+      "published": true,
+      "teacherQualification": "a graduate in English",
+      "whatsappInternational": "94707191719",
+      "whatsappDisplay": "070 719 1719"
     },
     {
       "id": "grade-10-literature-online",

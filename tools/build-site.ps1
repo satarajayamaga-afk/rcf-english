@@ -1994,7 +1994,9 @@ function RenderBlock($block) {
             $html += '<div class="btn-row">'
             foreach ($b in (AsList (P $block 'buttons'))) {
                 $msg = [string](P $b 'message')
-                $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
+                # A class taught by another teacher uses that teacher's own number.
+        $waNumber = [string](P $c 'whatsappInternational' $script:Config.whatsappInternational)
+        $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
                 $html += '<a class="btn btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">' + (E (P $b 'label')) + '</a>'
             }
             $html += '</div><p class="text-small text-muted mt-4">WhatsApp opens with the message already written. Read it and press send yourself. Nothing is sent from this website.</p>'
@@ -3451,7 +3453,9 @@ function RenderClasses($block) {
         $html += '<div class="empty-state"><h3>No class of this kind is listed at the moment</h3>'
         $html += '<p>New classes are added to this page as they are arranged. Please ask on WhatsApp what is available.</p>'
         $msg = 'Hello, I would like to know which classes are running at the moment. Please send me the details.'
-        $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
+        # A class taught by another teacher uses that teacher's own number.
+        $waNumber = [string](P $c 'whatsappInternational' $script:Config.whatsappInternational)
+        $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<p class="mt-4"><a class="btn btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask which classes are running</a></p></div>'
         return $html + '</div></section>'
     }
@@ -3484,11 +3488,19 @@ function RenderClasses($block) {
         if (P $c 'groupFormat') { $html += '<span class="tag">' + (E ((Get-Culture).TextInfo.ToTitleCase([string](P $c 'groupFormat')))) + '</span>' }
         $html += '</div><h3>' + (E $title) + '</h3>'
         $html += Paragraphs (P $c 'description')
+
+        # A class may be taught by someone other than R. C. Fernando. Where a
+        # qualification is given it follows the name, and where the teacher
+        # has their own WhatsApp number that is the one shown for this class.
+        $teacherLine = [string](P $c 'teacher')
+        $teacherOf = [string](P $c 'teacherQualification' '')
+        if ($teacherLine -and $teacherOf) { $teacherLine = $teacherLine + ', ' + $teacherOf }
+
         $html += '<dl class="class-facts">'
         $facts = @(
             @('Subject', (P $c 'subject')),
             @('Learner level', (P $c 'level')),
-            @('Teacher', (P $c 'teacher')),
+            @('Teacher', $teacherLine),
             @('For', (P $c 'audience')),
             @('Day', (P $c 'day')),
             @('Time', (P $c 'time')),
@@ -3540,7 +3552,9 @@ function RenderClasses($block) {
             $html += '</div>'
         }
         $msg = [string](P $c 'whatsappMessage' ("Hello, I would like information about $title. Please send me the schedule, fees and registration details."))
-        $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
+        # A class taught by another teacher uses that teacher's own number.
+        $waNumber = [string](P $c 'whatsappInternational' $script:Config.whatsappInternational)
+        $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<div class="btn-row"><a class="btn btn--sm btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask about this class</a>'
         $page = [string](P $c 'page')
         if ($feature -and $page) {
@@ -3566,7 +3580,9 @@ function RenderTimetable($block) {
         $html += '<div class="callout callout--note"><p class="callout__title">Schedule to be announced</p>'
         $html += '<p class="mb-0">Class days and times have not been published yet. Ask on WhatsApp for the current timetable and you will be sent the details that apply to you.</p></div>'
         $msg = 'Hello, please send me the current class timetable.'
-        $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
+        # A class taught by another teacher uses that teacher's own number.
+        $waNumber = [string](P $c 'whatsappInternational' $script:Config.whatsappInternational)
+        $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<p class="mt-5"><a class="btn btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Request the timetable</a></p>'
         return $html + '</div></section>'
     }
@@ -3578,7 +3594,9 @@ function RenderTimetable($block) {
         $title = [string](P $c 'title')
         $status = ClassStatus (P $c 'registration')
         $msg = [string](P $c 'whatsappMessage' ("Hello, I would like information about $title. Please send me the schedule, fees and registration details."))
-        $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
+        # A class taught by another teacher uses that teacher's own number.
+        $waNumber = [string](P $c 'whatsappInternational' $script:Config.whatsappInternational)
+        $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<tr><th scope="row">' + (E $title) + '</th>'
         $html += '<td>' + (E (P $c 'day' 'To be announced')) + '</td>'
         $html += '<td>' + (E (P $c 'time' 'To be announced')) + '</td>'
@@ -3593,7 +3611,9 @@ function RenderTimetable($block) {
         $title = [string](P $c 'title')
         $status = ClassStatus (P $c 'registration')
         $msg = [string](P $c 'whatsappMessage' ("Hello, I would like information about $title. Please send me the schedule, fees and registration details."))
-        $href = 'https://wa.me/' + $script:Config.whatsappInternational + '?text=' + [uri]::EscapeDataString($msg)
+        # A class taught by another teacher uses that teacher's own number.
+        $waNumber = [string](P $c 'whatsappInternational' $script:Config.whatsappInternational)
+        $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<article class="card"><div class="tag-row"><span class="class-card__status" data-status="' + $status[0] + '">' + (E $status[1]) + '</span></div>'
         $html += '<h3>' + (E $title) + '</h3><dl class="class-facts">'
         $html += '<div><dt>Day</dt><dd>' + (E (P $c 'day' 'To be announced')) + '</dd></div>'
