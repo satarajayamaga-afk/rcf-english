@@ -689,32 +689,70 @@
           ]
         },
         {
-          "title": "I Study or Teach in the English Medium",
-          "sub": "Science and Maths",
-          "icon": "🔬",
+          "title": "I am an English Medium Maths Student or Teacher",
+          "sub": "Grades 6 to 11",
+          "icon": "📐",
           "style": "medium",
-          "url": "english-medium/",
-          "more": "Go to English Medium",
+          "url": "english-medium/mathematics/",
+          "more": "Go to English Medium Maths",
           "links": [
             {
-              "label": "Science and Maths, Grades 6 to 11",
-              "url": "english-medium/",
+              "label": "Maths courses, Grades 6 to 11",
+              "url": "english-medium/mathematics/",
               "note": "The official English medium courses, checked and linked"
             },
             {
-              "label": "What the question word wants",
-              "url": "english-medium/",
-              "note": "State, describe, explain and calculate are four different jobs"
+              "label": "Calculate, show that, prove, hence",
+              "url": "english-medium/mathematics/",
+              "note": "What each instruction wants, and how much working it needs"
             },
             {
-              "label": "Sentences a science answer needs",
-              "url": "english-medium/",
-              "note": "The shapes that carry a mark, instead of translating word by word"
+              "label": "Turning a word problem into a sum",
+              "url": "english-medium/mathematics/",
+              "note": "The phrases that decide the operation, and the ones pupils reverse"
             },
             {
-              "label": "For teachers: five minutes a lesson",
-              "url": "english-medium/",
-              "note": "Small habits that win back the language marks"
+              "label": "Saying maths aloud in English",
+              "url": "english-medium/mathematics/",
+              "note": "x squared, the ratio two to three, the square root of nine"
+            },
+            {
+              "label": "Past papers and Teachers' Guides",
+              "url": "english-medium/mathematics/"
+            }
+          ]
+        },
+        {
+          "title": "I am an English Medium Science Student or Teacher",
+          "sub": "Grades 6 to 11",
+          "icon": "🔬",
+          "style": "medium",
+          "url": "english-medium/science/",
+          "more": "Go to English Medium Science",
+          "links": [
+            {
+              "label": "Science courses, Grades 6 to 11",
+              "url": "english-medium/science/",
+              "note": "The official English medium courses, checked and linked"
+            },
+            {
+              "label": "State, describe, explain, suggest",
+              "url": "english-medium/science/",
+              "note": "Four different jobs, and the answer each one wants"
+            },
+            {
+              "label": "Writing up an experiment",
+              "url": "english-medium/science/",
+              "note": "Aim, apparatus, method, observation, conclusion"
+            },
+            {
+              "label": "Words pupils mix up",
+              "url": "english-medium/science/",
+              "note": "Mass and weight, heat and temperature, melt and dissolve"
+            },
+            {
+              "label": "Past papers and Teachers' Guides",
+              "url": "english-medium/science/"
             }
           ]
         }
