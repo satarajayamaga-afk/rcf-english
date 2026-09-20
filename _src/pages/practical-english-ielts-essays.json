@@ -1,11 +1,10 @@
 {
   "_comment": "IELTS Writing Task 2 - hub and model essays 1 to 5. Every question and every essay is original RCF English work. No essay is copied or adapted from any published source. The five IELTS Task 2 question types are covered across the ten essays. All essays are 260-300 words, the practical range for a 40-minute task. No fabricated statistics appear in any model - a deliberate teaching point, since invented figures earn no marks.",
-
   "pages": [
     {
       "slug": "practical-english/ielts/model-essays",
-      "title": "10 IELTS Task 2 Model Essays",
-      "metaTitle": "10 IELTS Writing Task 2 Model Essays with Plans and Notes | RCF English",
+      "title": "20 IELTS Task 2 Model Essays",
+      "metaTitle": "20 IELTS Task 2 Model Essays | Band 9 sample answers | RCF English",
       "description": "Ten original IELTS Task 2 model essays covering all five question types, each with a plan, the full essay, and notes explaining exactly what earns the marks.",
       "keywords": "IELTS task 2 model essays, IELTS band 9 essay, IELTS essay examples, IELTS writing task 2 samples with answers, IELTS essay structure",
       "kicker": "Unofficial original RCF practice material",
@@ -14,14 +13,27 @@
       "resourceType": "model answers",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        }
       ],
-      "backTo": { "label": "IELTS", "url": "practical-english/ielts/" },
+      "backTo": {
+        "label": "IELTS",
+        "url": "practical-english/ielts/"
+      },
       "hero": {
         "text": "Ten essays, all five question types, and - more useful than the essays themselves - the reasoning behind every paragraph.",
         "buttons": [
-          { "label": "Start with essay 1", "url": "practical-english/ielts/model-essays/technology-and-teachers/", "style": "btn--accent" }
+          {
+            "label": "Start with essay 1",
+            "url": "practical-english/ielts/model-essays/technology-and-teachers/",
+            "style": "btn--accent"
+          }
         ]
       },
       "blocks": [
@@ -37,21 +49,136 @@
         },
         {
           "type": "table",
-          "heading": "The ten essays",
+          "heading": "The 20 essays",
           "level": "h2",
           "caption": "Each essay page gives the question, the question type, a five-minute plan, the full essay, notes on what earns the marks, the language worth borrowing, and a variation to try yourself.",
-          "columns": ["#", "Topic", "Question type", "Open"],
+          "columns": [
+            "#",
+            "Topic",
+            "Question type",
+            "Open"
+          ],
           "rows": [
-            ["1", "Technology replacing teachers", "Opinion: to what extent do you agree?", "[Read](practical-english/ielts/model-essays/technology-and-teachers/)"],
-            ["2", "Free university education", "Discussion: both views and your opinion", "[Read](practical-english/ielts/model-essays/free-university-education/)"],
-            ["3", "Working from home", "Advantages and disadvantages: do the advantages outweigh?", "[Read](practical-english/ielts/model-essays/working-from-home/)"],
-            ["4", "Traffic congestion in cities", "Problem and solution", "[Read](practical-english/ielts/model-essays/traffic-congestion/)"],
-            ["5", "Children and screen time", "Two-part question", "[Read](practical-english/ielts/model-essays/children-and-screens/)"],
-            ["6", "Spending on space exploration", "Opinion: agree or disagree", "[Read](practical-english/ielts/model-essays/space-exploration/)"],
-            ["7", "Museums: visitors or local people?", "Discussion: both views and your opinion", "[Read](practical-english/ielts/model-essays/museums-and-tourism/)"],
-            ["8", "Plastic waste", "Causes and solutions", "[Read](practical-english/ielts/model-essays/plastic-waste/)"],
-            ["9", "Ageing populations", "Advantages and disadvantages", "[Read](practical-english/ielts/model-essays/ageing-populations/)"],
-            ["10", "Traditional skills disappearing", "Two-part question", "[Read](practical-english/ielts/model-essays/traditional-skills/)"]
+            [
+              "1",
+              "Technology replacing teachers",
+              "Opinion: to what extent do you agree?",
+              "[Read](practical-english/ielts/model-essays/technology-and-teachers/)"
+            ],
+            [
+              "2",
+              "Free university education",
+              "Discussion: both views and your opinion",
+              "[Read](practical-english/ielts/model-essays/free-university-education/)"
+            ],
+            [
+              "3",
+              "Working from home",
+              "Advantages and disadvantages: do the advantages outweigh?",
+              "[Read](practical-english/ielts/model-essays/working-from-home/)"
+            ],
+            [
+              "4",
+              "Traffic congestion in cities",
+              "Problem and solution",
+              "[Read](practical-english/ielts/model-essays/traffic-congestion/)"
+            ],
+            [
+              "5",
+              "Children and screen time",
+              "Two-part question",
+              "[Read](practical-english/ielts/model-essays/children-and-screens/)"
+            ],
+            [
+              "6",
+              "Spending on space exploration",
+              "Opinion: agree or disagree",
+              "[Read](practical-english/ielts/model-essays/space-exploration/)"
+            ],
+            [
+              "7",
+              "Museums: visitors or local people?",
+              "Discussion: both views and your opinion",
+              "[Read](practical-english/ielts/model-essays/museums-and-tourism/)"
+            ],
+            [
+              "8",
+              "Plastic waste",
+              "Causes and solutions",
+              "[Read](practical-english/ielts/model-essays/plastic-waste/)"
+            ],
+            [
+              "9",
+              "Ageing populations",
+              "Advantages and disadvantages",
+              "[Read](practical-english/ielts/model-essays/ageing-populations/)"
+            ],
+            [
+              "10",
+              "Traditional skills disappearing",
+              "Two-part question",
+              "[Read](practical-english/ielts/model-essays/traditional-skills/)"
+            ],
+            [
+              "11",
+              "Crime: prison or rehabilitation",
+              "Discussion: discuss both views",
+              "[Read](practical-english/ielts/model-essays/prison-or-rehabilitation/)"
+            ],
+            [
+              "12",
+              "Advertising and children",
+              "Opinion: to what extent do you agree?",
+              "[Read](practical-english/ielts/model-essays/advertising-and-children/)"
+            ],
+            [
+              "13",
+              "Online learning",
+              "Advantages and disadvantages: do the advantages outweigh them?",
+              "[Read](practical-english/ielts/model-essays/online-learning/)"
+            ],
+            [
+              "14",
+              "Diet and public health",
+              "Problem and solution: causes and what should be done",
+              "[Read](practical-english/ielts/model-essays/unhealthy-food/)"
+            ],
+            [
+              "15",
+              "Globalisation and local culture",
+              "Discussion: discuss both views",
+              "[Read](practical-english/ielts/model-essays/global-culture/)"
+            ],
+            [
+              "16",
+              "Government spending: sport or health",
+              "Opinion: to what extent do you agree?",
+              "[Read](practical-english/ielts/model-essays/sport-or-health-spending/)"
+            ],
+            [
+              "17",
+              "Work-life balance",
+              "Problem and solution: problems and what should be done",
+              "[Read](practical-english/ielts/model-essays/long-working-hours/)"
+            ],
+            [
+              "18",
+              "Education: science or arts",
+              "Discussion: discuss both views",
+              "[Read](practical-english/ielts/model-essays/science-or-arts/)"
+            ],
+            [
+              "19",
+              "Social media and regulation",
+              "Two-part question",
+              "[Read](practical-english/ielts/model-essays/social-media-rules/)"
+            ],
+            [
+              "20",
+              "Climate responsibility",
+              "Two-part question",
+              "[Read](practical-english/ielts/model-essays/climate-responsibility/)"
+            ]
           ]
         },
         {
@@ -69,26 +196,77 @@
           "heading": "The five question types and what each one demands",
           "level": "h2",
           "stacked": true,
-          "columns": ["Type", "How it is worded", "What the essay must contain"],
+          "columns": [
+            "Type",
+            "How it is worded",
+            "What the essay must contain"
+          ],
           "rows": [
-            ["Opinion", "*To what extent do you agree or disagree?* / *Do you agree or disagree?*", "A clear position held from introduction to conclusion. You may agree partly, but say so explicitly - 'partly' is a position, 'it depends' is not."],
-            ["Discussion", "*Discuss both these views and give your own opinion.*", "Genuine treatment of both views at similar length, **plus** a stated opinion. Two instructions, both marked."],
-            ["Advantages and disadvantages", "*Do the advantages outweigh the disadvantages?*", "A verdict. If the wording is only *discuss the advantages and disadvantages*, a balanced account is enough - read the wording carefully, because the two are marked differently."],
-            ["Problem and solution", "*What problems does this cause and what could be done?* / *What are the causes and what solutions can you suggest?*", "Roughly equal weight to both halves. Solutions must connect to the problems you named, not float free."],
-            ["Two-part question", "Two direct questions, often unrelated in grammar.", "Both questions answered, at similar length. Answering one well and the other in a sentence caps Task Response."]
+            [
+              "Opinion",
+              "*To what extent do you agree or disagree?* / *Do you agree or disagree?*",
+              "A clear position held from introduction to conclusion. You may agree partly, but say so explicitly - 'partly' is a position, 'it depends' is not."
+            ],
+            [
+              "Discussion",
+              "*Discuss both these views and give your own opinion.*",
+              "Genuine treatment of both views at similar length, **plus** a stated opinion. Two instructions, both marked."
+            ],
+            [
+              "Advantages and disadvantages",
+              "*Do the advantages outweigh the disadvantages?*",
+              "A verdict. If the wording is only *discuss the advantages and disadvantages*, a balanced account is enough - read the wording carefully, because the two are marked differently."
+            ],
+            [
+              "Problem and solution",
+              "*What problems does this cause and what could be done?* / *What are the causes and what solutions can you suggest?*",
+              "Roughly equal weight to both halves. Solutions must connect to the problems you named, not float free."
+            ],
+            [
+              "Two-part question",
+              "Two direct questions, often unrelated in grammar.",
+              "Both questions answered, at similar length. Answering one well and the other in a sentence caps Task Response."
+            ]
           ]
         },
         {
           "type": "steps",
           "heading": "The five minutes before you write",
           "level": "h2",
-          "intro": ["Forty minutes is the budget. Spending five of them planning is not a luxury; it is what prevents the paragraph that goes nowhere."],
+          "intro": [
+            "Forty minutes is the budget. Spending five of them planning is not a luxury; it is what prevents the paragraph that goes nowhere."
+          ],
           "items": [
-            { "title": "Identify the type and the instruction", "text": ["Underline the instruction words. Write down what you must produce - *both views + my opinion*, or *a verdict on which is greater*."] },
-            { "title": "Decide your position first", "text": ["Not after the second paragraph. If you do not know your position before you start, the essay will contradict itself, and Coherence suffers as much as Task Response."] },
-            { "title": "Write two body-paragraph topics only", "text": ["Two developed paragraphs beat three thin ones every time. Examiners reward *extension* - a point explained, illustrated and taken one step further."] },
-            { "title": "Check that your two points are genuinely different", "text": ["*It saves money* and *it is cheaper* is one point written twice. This is the commonest structural fault in Band 6 essays."] },
-            { "title": "Leave three minutes at the end", "text": ["Not to add ideas - to check articles, plurals, verb endings and spelling. Grammatical accuracy is 25% of the mark and this is the cheapest way to protect it."] }
+            {
+              "title": "Identify the type and the instruction",
+              "text": [
+                "Underline the instruction words. Write down what you must produce - *both views + my opinion*, or *a verdict on which is greater*."
+              ]
+            },
+            {
+              "title": "Decide your position first",
+              "text": [
+                "Not after the second paragraph. If you do not know your position before you start, the essay will contradict itself, and Coherence suffers as much as Task Response."
+              ]
+            },
+            {
+              "title": "Write two body-paragraph topics only",
+              "text": [
+                "Two developed paragraphs beat three thin ones every time. Examiners reward *extension* - a point explained, illustrated and taken one step further."
+              ]
+            },
+            {
+              "title": "Check that your two points are genuinely different",
+              "text": [
+                "*It saves money* and *it is cheaper* is one point written twice. This is the commonest structural fault in Band 6 essays."
+              ]
+            },
+            {
+              "title": "Leave three minutes at the end",
+              "text": [
+                "Not to add ideas - to check articles, plurals, verb endings and spelling. Grammatical accuracy is 25% of the mark and this is the cheapest way to protect it."
+              ]
+            }
           ]
         },
         {
@@ -115,14 +293,31 @@
           "heading": "Alongside these essays",
           "level": "h2",
           "items": [
-            { "title": "Full practice test", "url": "practical-english/ielts/practice-test-1/", "text": ["All four papers, with answers and model answers."] },
-            { "title": "IELTS Writing guidance", "url": "practical-english/ielts/writing/", "text": ["Both tasks and the four marking criteria in detail."] },
-            { "title": "IELTS graphs and charts", "url": "practical-english/ielts/graphs/", "text": ["Task 1 language for every visual type."] }
+            {
+              "title": "Full practice test",
+              "url": "practical-english/ielts/practice-test-1/",
+              "text": [
+                "All four papers, with answers and model answers."
+              ]
+            },
+            {
+              "title": "IELTS Writing guidance",
+              "url": "practical-english/ielts/writing/",
+              "text": [
+                "Both tasks and the four marking criteria in detail."
+              ]
+            },
+            {
+              "title": "IELTS graphs and charts",
+              "url": "practical-english/ielts/graphs/",
+              "text": [
+                "Task 1 language for every visual type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/technology-and-teachers",
       "title": "Model Essay 1: Technology and Teachers",
@@ -135,18 +330,34 @@
       "resourceType": "model answers",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: opinion. The instruction is *to what extent*, and that phrase is an invitation to agree partly - provided you say exactly how far." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: opinion. The instruction is *to what extent*, and that phrase is an invitation to agree partly - provided you say exactly how far."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -164,13 +375,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Rephrase the claim. Position: **largely disagree**, but concede that one part of teaching genuinely is being replaced."],
-            ["Body 1", "The concession. Delivery of information is being automated, and well. Say so honestly and in detail - this earns credibility."],
-            ["Body 2", "The main argument. What teaching actually consists of: diagnosing a specific misunderstanding, and supplying motivation. Neither is information delivery."],
-            ["Body 3 (short)", "The evidence from the last two decades: enormous investment, and the teacher-to-student ratio has barely moved."],
-            ["Conclusion", "Restate the position with the qualification intact. The role changes; it does not disappear."]
+            [
+              "Introduction",
+              "Rephrase the claim. Position: **largely disagree**, but concede that one part of teaching genuinely is being replaced."
+            ],
+            [
+              "Body 1",
+              "The concession. Delivery of information is being automated, and well. Say so honestly and in detail - this earns credibility."
+            ],
+            [
+              "Body 2",
+              "The main argument. What teaching actually consists of: diagnosing a specific misunderstanding, and supplying motivation. Neither is information delivery."
+            ],
+            [
+              "Body 3 (short)",
+              "The evidence from the last two decades: enormous investment, and the teacher-to-student ratio has barely moved."
+            ],
+            [
+              "Conclusion",
+              "Restate the position with the qualification intact. The role changes; it does not disappear."
+            ]
           ]
         },
         {
@@ -206,11 +435,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "I disagree with this view, although I accept that one part of it is true.", "def": "The standard shape for a partial position. It answers *to what extent* exactly, and it is easy to reuse." },
-            { "term": "If teaching were only about X, the prediction would probably be correct.", "def": "A second conditional used to concede. It shows a complex structure and generosity at the same time." },
-            { "term": "However, this is not what most of a teacher's work involves.", "def": "A clean pivot from the concession back to your own case." },
-            { "term": "It is also worth looking at the evidence of recent years.", "def": "Introduces supporting evidence without the heaviness of *Furthermore, it is important to note that*." },
-            { "term": "In my opinion, therefore,", "def": "Signals the conclusion and the opinion together. Examiners look for the opinion to be unmistakable." }
+            {
+              "term": "I disagree with this view, although I accept that one part of it is true.",
+              "def": "The standard shape for a partial position. It answers *to what extent* exactly, and it is easy to reuse."
+            },
+            {
+              "term": "If teaching were only about X, the prediction would probably be correct.",
+              "def": "A second conditional used to concede. It shows a complex structure and generosity at the same time."
+            },
+            {
+              "term": "However, this is not what most of a teacher's work involves.",
+              "def": "A clean pivot from the concession back to your own case."
+            },
+            {
+              "term": "It is also worth looking at the evidence of recent years.",
+              "def": "Introduces supporting evidence without the heaviness of *Furthermore, it is important to note that*."
+            },
+            {
+              "term": "In my opinion, therefore,",
+              "def": "Signals the conclusion and the opinion together. Examiners look for the opinion to be unmistakable."
+            }
           ]
         },
         {
@@ -240,13 +484,24 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 2: Free university education", "url": "practical-english/ielts/model-essays/free-university-education/", "text": ["Discussion type: both views and your opinion."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 2: Free university education",
+              "url": "practical-english/ielts/model-essays/free-university-education/",
+              "text": [
+                "Discussion type: both views and your opinion."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/free-university-education",
       "title": "Model Essay 2: Free University Education",
@@ -259,18 +514,34 @@
       "resourceType": "model answers",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: discussion. Two instructions - *discuss both views* **and** *give your own opinion* - and both are marked." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: discussion. Two instructions - *discuss both views* **and** *give your own opinion* - and both are marked."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -287,13 +558,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Frame the real disagreement: not whether education is valuable, but who benefits and therefore who should pay. Position: **free at the point of use, funded by later taxation** - a third position, which is allowed."],
-            ["Body 1", "The case for free education: access, and the public benefit of an educated population."],
-            ["Body 2", "The case for contribution: graduates earn more, and free provision is regressive because it is funded by everyone."],
-            ["Body 3", "My position, which takes the strongest part of each: no fees at entry, repayment through progressive taxation on graduate earnings."],
-            ["Conclusion", "Name the principle that resolves it: the cost should follow the benefit, but not at the moment of choosing."]
+            [
+              "Introduction",
+              "Frame the real disagreement: not whether education is valuable, but who benefits and therefore who should pay. Position: **free at the point of use, funded by later taxation** - a third position, which is allowed."
+            ],
+            [
+              "Body 1",
+              "The case for free education: access, and the public benefit of an educated population."
+            ],
+            [
+              "Body 2",
+              "The case for contribution: graduates earn more, and free provision is regressive because it is funded by everyone."
+            ],
+            [
+              "Body 3",
+              "My position, which takes the strongest part of each: no fees at entry, repayment through progressive taxation on graduate earnings."
+            ],
+            [
+              "Conclusion",
+              "Name the principle that resolves it: the cost should follow the benefit, but not at the moment of choosing."
+            ]
           ]
         },
         {
@@ -328,11 +617,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "Arguments about X are not really arguments about Y. They are arguments about Z.", "def": "A reframing opening. Far stronger than *This is a controversial topic nowadays.*" },
-            { "term": "The opposite view is also serious.", "def": "Signals genuine engagement with the other side, and is very hard to read as memorised." },
-            { "term": "sounds fair, but its effects are not always fair", "def": "Separates what something is meant to do from what it actually does." },
-            { "term": "My own view takes the strongest part of each argument.", "def": "The clean way to introduce a middle position in a discussion essay." },
-            { "term": "In short, the cost should follow the benefit.", "def": "A conclusion that gives a principle rather than a summary." }
+            {
+              "term": "Arguments about X are not really arguments about Y. They are arguments about Z.",
+              "def": "A reframing opening. Far stronger than *This is a controversial topic nowadays.*"
+            },
+            {
+              "term": "The opposite view is also serious.",
+              "def": "Signals genuine engagement with the other side, and is very hard to read as memorised."
+            },
+            {
+              "term": "sounds fair, but its effects are not always fair",
+              "def": "Separates what something is meant to do from what it actually does."
+            },
+            {
+              "term": "My own view takes the strongest part of each argument.",
+              "def": "The clean way to introduce a middle position in a discussion essay."
+            },
+            {
+              "term": "In short, the cost should follow the benefit.",
+              "def": "A conclusion that gives a principle rather than a summary."
+            }
           ]
         },
         {
@@ -361,13 +665,24 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 3: Working from home", "url": "practical-english/ielts/model-essays/working-from-home/", "text": ["Advantages and disadvantages, with a verdict."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 3: Working from home",
+              "url": "practical-english/ielts/model-essays/working-from-home/",
+              "text": [
+                "Advantages and disadvantages, with a verdict."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/working-from-home",
       "title": "Model Essay 3: Working from Home",
@@ -380,18 +695,34 @@
       "resourceType": "model answers",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: advantages and disadvantages. The wording asks whether the advantages *outweigh* - so a balanced list without a verdict cannot reach Band 7." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: advantages and disadvantages. The wording asks whether the advantages *outweigh* - so a balanced list without a verdict cannot reach Band 7."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -418,13 +749,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Verdict stated immediately: advantages outweigh, **but only for certain kinds of work and certain stages of a career**. A qualified verdict is still a verdict."],
-            ["Body 1", "Advantages: time recovered from commuting, and control over when concentrated work happens."],
-            ["Body 2", "Disadvantages: the loss of unplanned contact, which falls hardest on new and junior staff."],
-            ["Body 3", "Why the balance still favours home working - and why the disadvantage is fixable while the commute is not."],
-            ["Conclusion", "Restate the verdict with its condition attached."]
+            [
+              "Introduction",
+              "Verdict stated immediately: advantages outweigh, **but only for certain kinds of work and certain stages of a career**. A qualified verdict is still a verdict."
+            ],
+            [
+              "Body 1",
+              "Advantages: time recovered from commuting, and control over when concentrated work happens."
+            ],
+            [
+              "Body 2",
+              "Disadvantages: the loss of unplanned contact, which falls hardest on new and junior staff."
+            ],
+            [
+              "Body 3",
+              "Why the balance still favours home working - and why the disadvantage is fixable while the commute is not."
+            ],
+            [
+              "Conclusion",
+              "Restate the verdict with its condition attached."
+            ]
           ]
         },
         {
@@ -459,11 +808,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "In my view its advantages are greater, although this depends a great deal on", "def": "The verdict sentence. Learn the shape: verdict first, then the condition." },
-            { "term": "That time is not simply lost; it is also unpleasant", "def": "A semicolon used correctly to join two related statements - a cheap way to show range." },
-            { "term": "None of this happens in a calendar.", "def": "A short sentence after a long list. Rhythm is part of Coherence and Cohesion." },
-            { "term": "easier to solve than the alternative", "def": "Names the criterion you are weighing on, which is what turns a list into a verdict." },
-            { "term": "provided that", "def": "Attaches a condition to a verdict cleanly, and is more precise here than *if*." }
+            {
+              "term": "In my view its advantages are greater, although this depends a great deal on",
+              "def": "The verdict sentence. Learn the shape: verdict first, then the condition."
+            },
+            {
+              "term": "That time is not simply lost; it is also unpleasant",
+              "def": "A semicolon used correctly to join two related statements - a cheap way to show range."
+            },
+            {
+              "term": "None of this happens in a calendar.",
+              "def": "A short sentence after a long list. Rhythm is part of Coherence and Cohesion."
+            },
+            {
+              "term": "easier to solve than the alternative",
+              "def": "Names the criterion you are weighing on, which is what turns a list into a verdict."
+            },
+            {
+              "term": "provided that",
+              "def": "Attaches a condition to a verdict cleanly, and is more precise here than *if*."
+            }
           ]
         },
         {
@@ -492,13 +856,24 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 4: Traffic congestion", "url": "practical-english/ielts/model-essays/traffic-congestion/", "text": ["Problem and solution."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 4: Traffic congestion",
+              "url": "practical-english/ielts/model-essays/traffic-congestion/",
+              "text": [
+                "Problem and solution."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/traffic-congestion",
       "title": "Model Essay 4: Traffic Congestion",
@@ -511,18 +886,34 @@
       "resourceType": "model answers",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: problem and solution. Both halves are marked, and every solution must answer a problem you actually named." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: problem and solution. Both halves are marked, and every solution must answer a problem you actually named."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -539,13 +930,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Name the counter-intuitive fact that organises the essay: building more road capacity generates more traffic. Signal both halves."],
-            ["Body 1", "Problems: time lost from the economy; air quality; and the way congestion pushes people into cars by making buses unreliable."],
-            ["Body 2", "Solutions that address those problems: pricing the road space, and giving buses separate lanes so they escape the congestion they are stuck in."],
-            ["Body 3 (short)", "Why building more roads is not on the list - the induced-demand point, delivered as the essay's one real insight."],
-            ["Conclusion", "The general principle: congestion is a pricing problem, not an engineering one."]
+            [
+              "Introduction",
+              "Name the counter-intuitive fact that organises the essay: building more road capacity generates more traffic. Signal both halves."
+            ],
+            [
+              "Body 1",
+              "Problems: time lost from the economy; air quality; and the way congestion pushes people into cars by making buses unreliable."
+            ],
+            [
+              "Body 2",
+              "Solutions that address those problems: pricing the road space, and giving buses separate lanes so they escape the congestion they are stuck in."
+            ],
+            [
+              "Body 3 (short)",
+              "Why building more roads is not on the list - the induced-demand point, delivered as the essay's one real insight."
+            ],
+            [
+              "Conclusion",
+              "The general principle: congestion is a pricing problem, not an engineering one."
+            ]
           ]
         },
         {
@@ -579,11 +988,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "has a long record of failure", "def": "Dismisses an option with authority and without needing a statistic." },
-            { "term": "the cost is passed on in the price of almost everything a city buys", "def": "Follows a consequence one step further than the obvious. This is *extension*, and examiners reward it." },
-            { "term": "so the problem feeds itself", "def": "Names a feedback loop in four words." },
-            { "term": "The measures that work follow from these problems.", "def": "A transition that makes the second half depend on the first, instead of starting a new list." },
-            { "term": "journeys that were not worth making before", "def": "Explains induced demand in plain English, without needing the term." }
+            {
+              "term": "has a long record of failure",
+              "def": "Dismisses an option with authority and without needing a statistic."
+            },
+            {
+              "term": "the cost is passed on in the price of almost everything a city buys",
+              "def": "Follows a consequence one step further than the obvious. This is *extension*, and examiners reward it."
+            },
+            {
+              "term": "so the problem feeds itself",
+              "def": "Names a feedback loop in four words."
+            },
+            {
+              "term": "The measures that work follow from these problems.",
+              "def": "A transition that makes the second half depend on the first, instead of starting a new list."
+            },
+            {
+              "term": "journeys that were not worth making before",
+              "def": "Explains induced demand in plain English, without needing the term."
+            }
           ]
         },
         {
@@ -612,13 +1036,24 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 5: Children and screens", "url": "practical-english/ielts/model-essays/children-and-screens/", "text": ["The two-part question."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 5: Children and screens",
+              "url": "practical-english/ielts/model-essays/children-and-screens/",
+              "text": [
+                "The two-part question."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/children-and-screens",
       "title": "Model Essay 5: Children and Screen Time",
@@ -631,18 +1066,34 @@
       "resourceType": "model answers",
       "educationalLevel": "IELTS",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: two-part. Two direct questions, and the commonest failure is answering the first at length and the second in a sentence." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: two-part. Two direct questions, and the commonest failure is answering the first at length and the second in a sentence."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -668,13 +1119,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Answer both questions in one sentence each. Position on part two: **negative, but because of what it displaces rather than what it contains**."],
-            ["Body 1 (why)", "Two causes: devices are designed to hold attention, and the alternatives have quietly become less available."],
-            ["Body 2 (opinion)", "The displacement argument, developed - what the hours were previously spent on."],
-            ["Body 3 (qualification)", "The concession: not all screen time is equivalent, and a blanket judgement is lazy."],
-            ["Conclusion", "Restate: harmful in quantity rather than in kind."]
+            [
+              "Introduction",
+              "Answer both questions in one sentence each. Position on part two: **negative, but because of what it displaces rather than what it contains**."
+            ],
+            [
+              "Body 1 (why)",
+              "Two causes: devices are designed to hold attention, and the alternatives have quietly become less available."
+            ],
+            [
+              "Body 2 (opinion)",
+              "The displacement argument, developed - what the hours were previously spent on."
+            ],
+            [
+              "Body 3 (qualification)",
+              "The concession: not all screen time is equivalent, and a blanket judgement is lazy."
+            ],
+            [
+              "Conclusion",
+              "Restate: harmful in quantity rather than in kind."
+            ]
           ]
         },
         {
@@ -709,11 +1178,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "The reasons have as much to do with X as with Y.", "def": "Answers a *why* question and previews the structure in one clause." },
-            { "term": "though not for the reason people usually give", "def": "Promises the reader something they have not already thought of, and obliges you to deliver it." },
-            { "term": "The second cause is discussed far less.", "def": "Signals that you are ranking your own points rather than listing them." },
-            { "term": "A screen is what is left when the other choices have been closed off.", "def": "Summarises a whole paragraph in one image." },
-            { "term": "It would be unreasonable, though, to treat all X as the same.", "def": "The standard opener for a concession paragraph." }
+            {
+              "term": "The reasons have as much to do with X as with Y.",
+              "def": "Answers a *why* question and previews the structure in one clause."
+            },
+            {
+              "term": "though not for the reason people usually give",
+              "def": "Promises the reader something they have not already thought of, and obliges you to deliver it."
+            },
+            {
+              "term": "The second cause is discussed far less.",
+              "def": "Signals that you are ranking your own points rather than listing them."
+            },
+            {
+              "term": "A screen is what is left when the other choices have been closed off.",
+              "def": "Summarises a whole paragraph in one image."
+            },
+            {
+              "term": "It would be unreasonable, though, to treat all X as the same.",
+              "def": "The standard opener for a concession paragraph."
+            }
           ]
         },
         {
@@ -742,8 +1226,20 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 6: Space exploration", "url": "practical-english/ielts/model-essays/space-exploration/", "text": ["Opinion: agree or disagree."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 6: Space exploration",
+              "url": "practical-english/ielts/model-essays/space-exploration/",
+              "text": [
+                "Opinion: agree or disagree."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
       ]
