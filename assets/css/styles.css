@@ -4932,58 +4932,51 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
 }
 @media print { .a2hs { display: none !important; } }
 
-/* "Pick of the day". A small card, not a wall: it sits in the bottom corner
-   on a desktop and across the bottom on a phone, and never covers the page
-   content behind it. assets/js/pick-of-day.js shows it once a day. */
+/* "Pick of the day" and "What's new". A strip in the page, directly above
+   the main menu, so it covers nothing and traps no keyboard. Shown once a
+   day by assets/js/pick-of-day.js. */
 .pick {
-  position: fixed;
-  inset: 0;
-  z-index: 96;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: var(--sp-4);
-  background: transparent;
-  pointer-events: none;
-}
-.pick__box {
-  pointer-events: auto;
-  position: relative;
-  width: min(24rem, calc(100vw - 2rem));
-  padding: var(--sp-4);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--teal-600);
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: 0 14px 40px rgba(3, 12, 24, 0.28);
+  background: var(--navy-050);
+  border-top: 3px solid var(--teal-600);
+  border-bottom: 1px solid var(--line);
   opacity: 0;
-  transform: translateY(0.75rem);
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition: opacity 0.25s ease;
 }
-.pick--in .pick__box { opacity: 1; transform: none; }
-.pick__eyebrow {
-  margin: 0 0 var(--sp-1);
+.pick--in { opacity: 1; }
+.pick__inner {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: var(--sp-2);
-  font-size: var(--step--1);
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--sp-2) var(--sp-3);
+  padding-top: var(--sp-2);
+  padding-bottom: var(--sp-2);
+  padding-right: 2.75rem;
+}
+.pick__lead { margin: 0; flex: none; display: flex; align-items: baseline; gap: var(--sp-2); }
+.pick__eyebrow {
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--teal-800);
+  white-space: nowrap;
 }
 .pick__tag {
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0;
-  text-transform: none;
   color: var(--ink-700);
-  background: var(--navy-050);
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--radius-sm);
-  padding: 0.1rem 0.45rem;
+  padding: 0.05rem 0.4rem;
+  white-space: nowrap;
 }
-.pick__title { margin: 0 0 var(--sp-1); font-size: var(--step-1); line-height: 1.25; color: var(--navy-800); }
-.pick__text { margin: 0 0 var(--sp-3); color: var(--ink-700); font-size: var(--step--1); }
-.pick__actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: 0 0 var(--sp-2); }
+.pick__body { margin: 0; flex: 1 1 16rem; min-width: 0; font-size: var(--step--1); }
+.pick__title { font-weight: 700; color: var(--navy-800); }
+.pick__text { color: var(--ink-700); }
+.pick__text::before { content: " \2014 "; color: var(--ink-500); }
+.pick__actions { margin: 0; flex: none; display: flex; align-items: center; gap: var(--sp-3); }
 .pick__off {
   border: 0;
   background: none;
@@ -4993,31 +4986,36 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   color: var(--ink-500);
   text-decoration: underline;
   cursor: pointer;
+  white-space: nowrap;
 }
 .pick__off:hover { color: var(--ink-900); }
 .pick__x {
   position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   width: 44px;
   height: 44px;
   border: 0;
   background: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1;
   color: var(--ink-500);
   cursor: pointer;
 }
 .pick__x:hover { color: var(--ink-900); }
-@media (max-width: 640px) {
-  .pick { padding: var(--sp-3); justify-content: center; }
-  .pick__box { width: 100%; }
+@media (max-width: 720px) {
+  .pick__body { flex-basis: 100%; }
+  .pick__actions { flex-basis: 100%; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .pick__box { transition: none; opacity: 1; transform: none; }
-}
+@media (prefers-reduced-motion: reduce) { .pick { transition: none; opacity: 1; } }
 @media print { .pick { display: none !important; } }
 
 /* "I study or teach in the English medium" route: science green, so it reads
    as a subject route rather than another English one. */
 .pathway--medium { --route: #1d6f8b; --route-tint: #e8f3f7; }
+
+/* "What's new" is the other notice: same strip, gold rather than teal, so
+   the two are told apart at a glance. */
+.pick--new { background: var(--gold-100); border-top-color: var(--gold-600); }
+.pick--new .pick__eyebrow { color: var(--gold-800); }

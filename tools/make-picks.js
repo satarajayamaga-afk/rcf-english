@@ -59,6 +59,14 @@ const picks = PICKS.map(([url, text, tag]) => {
   return { title: entry.title, text, tag, url };
 });
 
+// Pinned picks are added by hand when something new is worth showing every
+// day for a while. They are not in the list above, so carry them across
+// instead of wiping them.
 const out = path.join(ROOT, "data/pick-of-the-day.json");
-fs.writeFileSync(out, JSON.stringify(picks, null, 2) + "\n");
-console.log(`${picks.length} picks written to data/pick-of-the-day.json`);
+let pinned = [];
+if (fs.existsSync(out)) {
+  const raw = fs.readFileSync(out, "utf8");
+  pinned = JSON.parse(raw.charCodeAt(0) === 0xFEFF ? raw.slice(1) : raw).filter((p) => p.pinned);
+}
+fs.writeFileSync(out, JSON.stringify([...pinned, ...picks], null, 2) + "\n");
+console.log(`${picks.length} picks written, ${pinned.length} pinned kept`);

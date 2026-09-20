@@ -1,18 +1,27 @@
-/* Pick of the Day.
+/* Two notices, shown as a strip directly above the main menu.
 
-   One resource from data/pick-of-the-day.json, shown on the home page once a
-   day. The pick is worked out from the date, so every visitor sees the same
-   one on the same day and it changes by itself at midnight. There is no
-   server and nothing is recorded: the only thing stored is the date the
-   visitor last saw it, in their own browser.
+   WHAT'S NEW is about the site: the newest entry in data/updates.json. It
+   appears when there is something the visitor has not been told about yet,
+   and stays until they close it or a newer thing replaces it. It is gold.
 
-   It never interrupts. It waits until the page has settled, it can be closed
-   with the button, the Escape key or a click outside it, and "Don't show this
-   again" stops it for good. A visitor who has closed it today will not see it
-   again today, even if they open ten pages. */
+   PICK OF THE DAY is about the resources: one item from
+   data/pick-of-the-day.json, chosen by the date so every visitor sees the
+   same one and it changes by itself at midnight. It is teal.
 
-const SEEN = "rcf-pick-seen";   // the date last shown, or "off"
-const DELAY = 1400;             // let the page settle first
+   They are separate notices with separate memories: closing one does not
+   close the other, and each has its own "don't show again". Only one is
+   shown at a time, so the page never opens with two strips. What's new goes
+   first when there is something new; otherwise the pick of the day appears.
+
+   There is no server and nothing is recorded. The only things stored are
+   the date the pick was last seen and the id of the last update announced,
+   both in the visitor's own browser.
+
+   Nothing is covered and no keyboard is trapped: the strip sits in the page
+   rather than over it. Escape closes it. */
+
+const SEEN_PICK = "rcf-pick-seen";  // the date last shown, or "off"
+const SEEN_NEW = "rcf-new-seen";    // the id of the last update shown, or "off"
 
 function today() {
   // Local date, so the pick turns over at midnight where the visitor is,
@@ -20,100 +29,121 @@ function today() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
-
 function store(key) {
   try { return localStorage.getItem(key); } catch (e) { return null; }
 }
 function remember(key, value) {
-  try { localStorage.setItem(key, value); } catch (e) { /* private window: just show it again tomorrow */ }
+  try { localStorage.setItem(key, value); } catch (e) { /* private window: show it again next time */ }
 }
+const json = async (path) => {
+  const res = await fetch(new URL(path, document.baseURI));
+  if (!res.ok) throw new Error(res.status);
+  return res.json();
+};
 
-// Same pick for everyone on a given day: the day number decides it.
-//
-// Stepping one place down the list each day would show three primary pages in
-// a row, because the list is grouped by subject. Stepping by a number that
-// shares no factor with the list length still reaches every item before
-// repeating, but lands somewhere different each day.
 function gcd(a, b) { return b ? gcd(b, a % b) : a; }
 function strideFor(n) {
   let s = Math.max(1, Math.round(n * 0.382));
   while (s < n && gcd(s, n) !== 1) s++;
   return gcd(s, n) === 1 ? s : 1;
 }
+
+// Same pick for everyone on a given day. Stepping one place down the list
+// each day would show three primary pages in a row, because the list is
+// grouped by subject. Stepping by a number that shares no factor with the
+// list length still reaches every item before repeating, but lands
+// somewhere different each day.
 function pickFor(list, date) {
   const days = Math.floor(Date.parse(date + "T00:00:00Z") / 86400000);
   const n = list.length;
   return list[(((days * strideFor(n)) % n) + n) % n];
 }
 
-function show(pick) {
-  const root = document.createElement("div");
-  root.className = "pick";
-  root.innerHTML = `
-    <div class="pick__box" role="dialog" aria-modal="true" aria-labelledby="pick-title">
-      <p class="pick__eyebrow">Pick of the day<span class="pick__tag">${pick.tag}</span></p>
-      <h2 class="pick__title" id="pick-title"></h2>
-      <p class="pick__text"></p>
-      <p class="pick__actions">
-        <a class="btn btn--accent pick__open" href="">Open this</a>
-        <button type="button" class="btn btn--ghost pick__later">Not now</button>
+/* kind: "new" or "pick". Each carries its own wording and its own memory. */
+function show(kind, item, onClose) {
+  const nav = document.querySelector("nav.main-nav");
+  if (!nav || document.querySelector(".pick")) return;
+
+  const isNew = kind === "new";
+  const strip = document.createElement("aside");
+  strip.className = "pick" + (isNew ? " pick--new" : "");
+  strip.setAttribute("aria-label", isNew ? "What's new" : "Pick of the day");
+  strip.innerHTML = `
+    <div class="container pick__inner">
+      <p class="pick__lead">
+        <span class="pick__eyebrow">${isNew ? "What's new" : "Pick of the day"}</span>
+        <span class="pick__tag"></span>
       </p>
-      <button type="button" class="pick__off">Don't show this again</button>
-      <button type="button" class="pick__x" aria-label="Close">&times;</button>
+      <p class="pick__body">
+        <a class="pick__title" href=""></a>
+        <span class="pick__text"></span>
+      </p>
+      <p class="pick__actions">
+        <a class="btn btn--sm btn--accent pick__open" href="">${isNew ? "See it" : "Open this"}</a>
+        <button type="button" class="pick__off">Don't show again</button>
+      </p>
+      <button type="button" class="pick__x" aria-label="Close this notice">&times;</button>
     </div>`;
-  // Titles and text come from our own data file, but set them as text rather
+
+  // The wording comes from our own data files, but it is set as text rather
   // than HTML so a stray character can never become markup.
-  root.querySelector(".pick__title").textContent = pick.title;
-  root.querySelector(".pick__text").textContent = pick.text;
-  const open = root.querySelector(".pick__open");
-  open.setAttribute("href", new URL(pick.url, document.baseURI).href);
+  const href = new URL(item.url, document.baseURI).href;
+  strip.querySelector(".pick__tag").textContent = item.tag;
+  const title = strip.querySelector(".pick__title");
+  title.textContent = item.title;
+  title.setAttribute("href", href);
+  strip.querySelector(".pick__text").textContent = item.text;
+  strip.querySelector(".pick__open").setAttribute("href", href);
 
-  const lastFocus = document.activeElement;
   const close = (forGood) => {
-    remember(SEEN, forGood ? "off" : today());
-    root.remove();
+    onClose(forGood);
+    strip.remove();
     document.removeEventListener("keydown", onKey);
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
   };
-  const onKey = (e) => {
-    if (e.key === "Escape") close(false);
-    if (e.key !== "Tab") return;
-    // Keep the keyboard inside the box while it is open.
-    const items = root.querySelectorAll("a[href], button");
-    const first = items[0], last = items[items.length - 1];
-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-  };
+  const onKey = (e) => { if (e.key === "Escape" && strip.isConnected) close(false); };
 
-  root.querySelector(".pick__x").addEventListener("click", () => close(false));
-  root.querySelector(".pick__later").addEventListener("click", () => close(false));
-  root.querySelector(".pick__off").addEventListener("click", () => close(true));
-  root.addEventListener("click", (e) => { if (e.target === root) close(false); });
-  open.addEventListener("click", () => close(false));
+  strip.querySelector(".pick__x").addEventListener("click", () => close(false));
+  strip.querySelector(".pick__off").addEventListener("click", () => close(true));
+  strip.querySelector(".pick__open").addEventListener("click", () => close(false));
+  title.addEventListener("click", () => close(false));
   document.addEventListener("keydown", onKey);
 
-  document.body.appendChild(root);
-  requestAnimationFrame(() => root.classList.add("pick--in"));
-  open.focus();
+  nav.parentNode.insertBefore(strip, nav);
+  requestAnimationFrame(() => strip.classList.add("pick--in"));
 }
 
-async function start() {
-  const seen = store(SEEN);
+const here = (url) => new URL(url, document.baseURI).pathname === location.pathname;
+
+async function whatsNew() {
+  const seen = store(SEEN_NEW);
+  if (seen === "off") return false;
+  let data;
+  try { data = await json("data/updates.json"); } catch (e) { return false; }
+  const items = (data.items || []).filter((i) => i.published !== false && i.url);
+  if (!items.length) return false;
+  const newest = items.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)))[0];
+  if (!newest || newest.id === seen || here(newest.url)) return false;
+  show("new", {
+    title: newest.title,
+    text: (newest.description || "").split(". ")[0] + ".",
+    tag: "Just added",
+    url: newest.url
+  }, (forGood) => remember(SEEN_NEW, forGood ? "off" : newest.id));
+  return true;
+}
+
+async function pickOfTheDay() {
+  const seen = store(SEEN_PICK);
   if (seen === "off" || seen === today()) return;
   let list;
-  try {
-    const res = await fetch(new URL("data/pick-of-the-day.json", document.baseURI));
-    if (!res.ok) return;
-    list = await res.json();
-  } catch (e) {
-    return; // offline or the file moved: simply no pick today
-  }
+  try { list = await json("data/pick-of-the-day.json"); } catch (e) { return; }
   if (!Array.isArray(list) || !list.length) return;
   const pick = pickFor(list, today());
-  // Do not advertise the page the visitor is already reading.
-  if (new URL(pick.url, document.baseURI).pathname === location.pathname) return;
-  show(pick);
+  if (here(pick.url)) return;   // do not advertise the page already open
+  show("pick", pick, (forGood) => remember(SEEN_PICK, forGood ? "off" : today()));
 }
 
-if (document.readyState === "complete") setTimeout(start, DELAY);
-else window.addEventListener("load", () => setTimeout(start, DELAY));
+(async () => {
+  const shown = await whatsNew();
+  if (!shown) await pickOfTheDay();
+})();
