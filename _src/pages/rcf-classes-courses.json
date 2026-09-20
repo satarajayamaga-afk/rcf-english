@@ -16,7 +16,6 @@
     "",
     "The page addresses stay under rcf-classes/ so links already shared keep working."
   ],
-
   "pages": [
     {
       "slug": "rcf-classes/primary-elocution-teachers-diploma",
@@ -27,13 +26,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "A six-month professional preparatory course for candidates sitting the Primary Elocution Teachers' Diploma examination of the Colombo Association of Language Skills and Dramatic Art.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -78,21 +93,55 @@
           "heading": "How the course is taught",
           "eyebrow": "The same method as the rest of the Academy",
           "variant": "tint",
-          "intro": ["Speech work improves the way writing does: by being shown, practised with guidance, then performed independently and corrected."],
+          "intro": [
+            "Speech work improves the way writing does: by being shown, practised with guidance, then performed independently and corrected."
+          ],
           "items": [
-            { "title": "Clear explanation", "text": ["Each element is explained plainly before it is practised, so a candidate knows what is being asked of them and why."] },
-            { "title": "Demonstration", "text": ["The teacher models the work aloud. Speech cannot be learnt from a page alone; it has to be heard."] },
-            { "title": "Guided practice", "text": ["Candidates practise with the teacher listening, and are corrected as they go rather than afterwards."] },
-            { "title": "Independent performance", "text": ["Candidates present prepared work without support, as they will have to in the examination."] },
-            { "title": "Individual correction", "text": ["Each candidate is corrected individually. This is the part of the course that does most of the work."] },
-            { "title": "Regular revision", "text": ["Earlier work is returned to deliberately through the six months, rather than covered once and left."] }
+            {
+              "title": "Clear explanation",
+              "text": [
+                "Each element is explained plainly before it is practised, so a candidate knows what is being asked of them and why."
+              ]
+            },
+            {
+              "title": "Demonstration",
+              "text": [
+                "The teacher models the work aloud. Speech cannot be learnt from a page alone; it has to be heard."
+              ]
+            },
+            {
+              "title": "Guided practice",
+              "text": [
+                "Candidates practise with the teacher listening, and are corrected as they go rather than afterwards."
+              ]
+            },
+            {
+              "title": "Independent performance",
+              "text": [
+                "Candidates present prepared work without support, as they will have to in the examination."
+              ]
+            },
+            {
+              "title": "Individual correction",
+              "text": [
+                "Each candidate is corrected individually. This is the part of the course that does most of the work."
+              ]
+            },
+            {
+              "title": "Regular revision",
+              "text": [
+                "Earlier work is returned to deliberately through the six months, rather than covered once and left."
+              ]
+            }
           ]
         },
         {
           "type": "classes",
           "heading": "This course",
           "course": "primary-elocution",
-          "intro": ["Where a day, time, fee or number of places has not been settled, the card says so rather than guessing. The current position is always available on WhatsApp."]
+          "intro": [
+            "Where a day, time, fee or number of places has not been settled, the card says so rather than guessing. The current position is always available on WhatsApp."
+          ]
         },
         {
           "type": "callout",
@@ -109,11 +158,22 @@
           "heading": "Ask about this course",
           "variant": "tint",
           "title": "WhatsApp",
-          "text": ["The message is written for you. Add anything you would like to ask before sending it."],
+          "text": [
+            "The message is written for you. Add anything you would like to ask before sending it."
+          ],
           "buttons": [
-            { "label": "Ask About This Course", "message": "Hello, I would like information about the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy. My name and contact details are: " }
+            {
+              "label": "Ask About This Course",
+              "message": "Hello, I would like information about the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy. My name and contact details are: "
+            }
           ]
         },
         {
@@ -121,14 +181,34 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Registration", "url": "rcf-classes/registration/", "more": "Register now", "text": ["The five steps, and the form that writes your message for you."] },
-            { "title": "Associate Diploma", "url": "rcf-classes/associate-diploma/", "more": "Open", "text": ["The higher elocution diploma, also prepared for over six months."] },
-            { "title": "Our Staff", "url": "rcf-classes/our-staff/", "more": "Open", "text": ["Who teaches at the Academy, and their qualifications."] }
+            {
+              "title": "Registration",
+              "url": "rcf-classes/registration/",
+              "more": "Register now",
+              "text": [
+                "The five steps, and the form that writes your message for you."
+              ]
+            },
+            {
+              "title": "Associate Diploma",
+              "url": "rcf-classes/associate-diploma/",
+              "more": "Open",
+              "text": [
+                "The higher elocution diploma, also prepared for over six months."
+              ]
+            },
+            {
+              "title": "Our Staff",
+              "url": "rcf-classes/our-staff/",
+              "more": "Open",
+              "text": [
+                "Who teaches at the Academy, and their qualifications."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/associate-diploma",
       "title": "Associate Diploma",
@@ -138,13 +218,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "A six-month professional preparatory course for candidates sitting the Associate Diploma, the higher elocution diploma examination of the Colombo Association of Language Skills and Dramatic Art.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -182,15 +278,39 @@
           "heading": "Fees and entry",
           "level": "h2",
           "stacked": true,
-          "columns": ["", "Detail"],
+          "columns": [
+            "",
+            "Detail"
+          ],
           "rows": [
-            ["Course length", "Six months, online"],
-            ["Who it is for", "Holders of the Primary Elocution Diploma"],
-            ["Tuition fee", "**Rs. 30,000** for the six-month course (Rs. 5,000 a month), payable to RCF Online Academy"],
-            ["Examination fee", "Rs. 15,000. This is **CALSDA's fee for the examination**, not the Academy's, and should be confirmed with CALSDA."],
-            ["Class day and time", "**Saturdays, 6.00 p.m. to 8.00 p.m.**, online"],
-            ["Start date", "Ask on WhatsApp - **070 439 5240** - for the start of the next batch."],
-            ["Places", "Limited"]
+            [
+              "Course length",
+              "Six months, online"
+            ],
+            [
+              "Who it is for",
+              "Holders of the Primary Elocution Diploma"
+            ],
+            [
+              "Tuition fee",
+              "**Rs. 30,000** for the six-month course (Rs. 5,000 a month), payable to RCF Online Academy"
+            ],
+            [
+              "Examination fee",
+              "Rs. 15,000. This is **CALSDA's fee for the examination**, not the Academy's, and should be confirmed with CALSDA."
+            ],
+            [
+              "Class day and time",
+              "**Saturdays, 6.00 p.m. to 8.00 p.m.**, online"
+            ],
+            [
+              "Start date",
+              "Ask on WhatsApp - **070 439 5240** - for the start of the next batch."
+            ],
+            [
+              "Places",
+              "Limited"
+            ]
           ]
         },
         {
@@ -232,10 +352,22 @@
           "variant": "tint",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Ask About This Course", "message": "Hello, I would like information about the Associate Diploma (Higher Elocution Diploma) preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Associate Diploma preparatory course at RCF Online Academy." },
-            { "label": "Which course suits me?", "message": "Hello, I would like advice on whether the Primary Elocution Teachers' Diploma course or the Associate Diploma course would suit me. What I have done so far is: " },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the Associate Diploma preparatory course at RCF Online Academy. My name and contact details are: " }
+            {
+              "label": "Ask About This Course",
+              "message": "Hello, I would like information about the Associate Diploma (Higher Elocution Diploma) preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the Associate Diploma preparatory course at RCF Online Academy."
+            },
+            {
+              "label": "Which course suits me?",
+              "message": "Hello, I would like advice on whether the Primary Elocution Teachers' Diploma course or the Associate Diploma course would suit me. What I have done so far is: "
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the Associate Diploma preparatory course at RCF Online Academy. My name and contact details are: "
+            }
           ]
         },
         {
@@ -243,14 +375,34 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Registration", "url": "rcf-classes/registration/", "more": "Register now", "text": ["The five steps, and the form that writes your message for you."] },
-            { "title": "Primary Elocution Teachers' Diploma", "url": "rcf-classes/primary-elocution-teachers-diploma/", "more": "Open", "text": ["The first of the two elocution diplomas prepared for at the Academy."] },
-            { "title": "Our Staff", "url": "rcf-classes/our-staff/", "more": "Open", "text": ["Who teaches at the Academy, and their qualifications."] }
+            {
+              "title": "Registration",
+              "url": "rcf-classes/registration/",
+              "more": "Register now",
+              "text": [
+                "The five steps, and the form that writes your message for you."
+              ]
+            },
+            {
+              "title": "Primary Elocution Teachers' Diploma",
+              "url": "rcf-classes/primary-elocution-teachers-diploma/",
+              "more": "Open",
+              "text": [
+                "The first of the two elocution diplomas prepared for at the Academy."
+              ]
+            },
+            {
+              "title": "Our Staff",
+              "url": "rcf-classes/our-staff/",
+              "more": "Open",
+              "text": [
+                "Who teaches at the Academy, and their qualifications."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/ielts",
       "title": "IELTS Training",
@@ -260,13 +412,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "A three-month IELTS course taught one to one, covering all four skills, with lessons arranged at times that suit you.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -305,7 +473,9 @@
           "type": "classes",
           "heading": "This course",
           "course": "ielts",
-          "intro": ["Where a time or fee has not been settled, the card says so rather than guessing. The current position is always available on WhatsApp."]
+          "intro": [
+            "Where a time or fee has not been settled, the card says so rather than guessing. The current position is always available on WhatsApp."
+          ]
         },
         {
           "type": "whatsapp",
@@ -319,9 +489,21 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "IELTS guidance", "url": "practical-english/ielts/", "text": "The test explained, band by band, free to read." },
-            { "title": "A full practice test", "url": "practical-english/ielts/practice-test-1/", "text": "A complete original practice test with answers." },
-            { "title": "Model essays", "url": "practical-english/ielts/model-essays/", "text": "Ten Task 2 essays written at band 7 to 7.5." }
+            {
+              "title": "IELTS guidance",
+              "url": "practical-english/ielts/",
+              "text": "The test explained, band by band, free to read."
+            },
+            {
+              "title": "A full practice test",
+              "url": "practical-english/ielts/practice-test-1/",
+              "text": "A complete original practice test with answers."
+            },
+            {
+              "title": "Model essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": "Ten Task 2 essays written at band 7 to 7.5."
+            }
           ]
         }
       ]
@@ -335,13 +517,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "A six-month course preparing English teachers for all three modules of the Cambridge Teaching Knowledge Test.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -377,7 +575,9 @@
           "type": "classes",
           "heading": "This course",
           "course": "tkt",
-          "intro": ["The starting date of each new batch is given on WhatsApp rather than fixed here, so this page never shows a date that has already passed."]
+          "intro": [
+            "The starting date of each new batch is given on WhatsApp rather than fixed here, so this page never shows a date that has already passed."
+          ]
         },
         {
           "type": "whatsapp",
@@ -391,9 +591,21 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Teacher resources", "url": "teacher-resources/", "text": "Lesson plans guidance, worksheets and classroom materials." },
-            { "title": "Literature Orientation", "url": "rcf-classes/literature-orientation/", "text": "The Academy's one-month course for new teachers." },
-            { "title": "RCF Online Academy", "url": "rcf-classes/", "text": "Every course the Academy runs." }
+            {
+              "title": "Teacher resources",
+              "url": "teacher-resources/",
+              "text": "Lesson plans guidance, worksheets and classroom materials."
+            },
+            {
+              "title": "Literature Orientation",
+              "url": "rcf-classes/literature-orientation/",
+              "text": "The Academy's one-month course for new teachers."
+            },
+            {
+              "title": "RCF Online Academy",
+              "url": "rcf-classes/",
+              "text": "Every course the Academy runs."
+            }
           ]
         }
       ]
@@ -407,20 +619,38 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "The year to build the habits that make the Ordinary Level course straightforward: reading closely, finding evidence, and explaining an effect.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
         {
           "type": "prose",
           "heading": "What the course covers",
-          "text": ["Grade 9 is where Literature is either enjoyed or given up on. The course is built to make it the first."],
+          "text": [
+            "Grade 9 is where Literature is either enjoyed or given up on. The course is built to make it the first."
+          ],
           "bullets": [
             "**Reading a poem** — who is speaking, what changes, and what the words are doing.",
             "**Reading a short story** — where it begins, where it turns, and what the ending leaves open.",
@@ -450,10 +680,21 @@
           "heading": "Ask about this course",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Ask About This Course", "message": "Hello, I would like information about the Grade 9 Literature course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Grade 9 Literature course at RCF Online Academy." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the Grade 9 Literature course at RCF Online Academy. The student's name and grade are: " }
-          ]
+            {
+              "label": "Ask About This Course",
+              "message": "Hello, I would like information about the Grade 9 Literature course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the Grade 9 Literature course at RCF Online Academy."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the Grade 9 Literature course at RCF Online Academy. The student's name and grade are: "
+            }
+          ],
+          "whatsappInternational": "94707191719",
+          "whatsappDisplay": "070 719 1719"
         },
         {
           "type": "cards",
@@ -461,15 +702,30 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
-            { "title": "Poetry", "url": "ol-literature/poetry/", "more": "Open" },
-            { "title": "Short stories", "url": "ol-literature/short-stories/", "more": "Open" },
-            { "title": "Literary techniques", "url": "ol-literature/literary-techniques/", "more": "Open" }
+            {
+              "title": "How to develop an answer",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Open"
+            },
+            {
+              "title": "Poetry",
+              "url": "ol-literature/poetry/",
+              "more": "Open"
+            },
+            {
+              "title": "Short stories",
+              "url": "ol-literature/short-stories/",
+              "more": "Open"
+            },
+            {
+              "title": "Literary techniques",
+              "url": "ol-literature/literary-techniques/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/grade-10-literature",
       "title": "Grade 10 Literature",
@@ -479,13 +735,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "The first year of the Ordinary Level course, taken at a pace that allows the texts to be studied properly rather than covered in a rush.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -521,10 +793,21 @@
           "heading": "Ask about this course",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Ask About This Course", "message": "Hello, I would like information about the Grade 10 Literature course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Grade 10 Literature course at RCF Online Academy." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the Grade 10 Literature course at RCF Online Academy. The student's name and grade are: " }
-          ]
+            {
+              "label": "Ask About This Course",
+              "message": "Hello, I would like information about the Grade 10 Literature course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the Grade 10 Literature course at RCF Online Academy."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the Grade 10 Literature course at RCF Online Academy. The student's name and grade are: "
+            }
+          ],
+          "whatsappInternational": "94707191719",
+          "whatsappDisplay": "070 719 1719"
         },
         {
           "type": "cards",
@@ -532,15 +815,30 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "O/L Literature section", "url": "ol-literature/", "more": "Open" },
-            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
-            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" },
-            { "title": "Important quotations", "url": "ol-literature/quotations/", "more": "Open" }
+            {
+              "title": "O/L Literature section",
+              "url": "ol-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Context questions",
+              "url": "ol-literature/context-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay questions",
+              "url": "ol-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Important quotations",
+              "url": "ol-literature/quotations/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/ol-literature",
       "title": "O/L Literature",
@@ -550,13 +848,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "Examination year. The texts studied in full, answers written under timed conditions, and every piece of work corrected individually.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -610,9 +924,18 @@
           "heading": "Ask about this course",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Ask About This Course", "message": "Hello, I would like information about the O/L Literature course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the O/L Literature course at RCF Online Academy." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the O/L Literature course at RCF Online Academy. The student's grade and examination year are: " }
+            {
+              "label": "Ask About This Course",
+              "message": "Hello, I would like information about the O/L Literature course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the O/L Literature course at RCF Online Academy."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the O/L Literature course at RCF Online Academy. The student's grade and examination year are: "
+            }
           ]
         },
         {
@@ -621,15 +944,30 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "O/L Literature section", "url": "ol-literature/", "more": "Open" },
-            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
-            { "title": "Model answers", "url": "ol-literature/model-answers/", "more": "Open" },
-            { "title": "Past papers", "url": "past-papers/ol-literature/", "more": "Open" }
+            {
+              "title": "O/L Literature section",
+              "url": "ol-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "How to develop an answer",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Open"
+            },
+            {
+              "title": "Model answers",
+              "url": "ol-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Past papers",
+              "url": "past-papers/ol-literature/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/al-literature",
       "title": "A/L Literature",
@@ -639,13 +977,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "Advanced Level Literature taught as a set of abilities to be built: close reading, evidence, effect, argument and essay organisation.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -699,9 +1053,18 @@
           "heading": "Ask about this course",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Ask About This Course", "message": "Hello, I would like information about the A/L Literature course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the A/L Literature course at RCF Online Academy." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the A/L Literature course at RCF Online Academy. My examination year is: " }
+            {
+              "label": "Ask About This Course",
+              "message": "Hello, I would like information about the A/L Literature course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the A/L Literature course at RCF Online Academy."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the A/L Literature course at RCF Online Academy. My examination year is: "
+            }
           ]
         },
         {
@@ -710,15 +1073,30 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "A/L Literature section", "url": "al-literature/", "more": "Open" },
-            { "title": "Critical appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Answer development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Examination guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+            {
+              "title": "A/L Literature section",
+              "url": "al-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Critical appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/literature-orientation",
       "title": "Literature Orientation: One-Month Course for New Teachers",
@@ -728,13 +1106,29 @@
       "kicker": "RCF Online Academy",
       "kind": "page",
       "schema": "Course",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "A one-month online course for teachers who are new to English Literature, or who have been asked to take a Literature class for the first time.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Enquire on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Enquire on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -775,7 +1169,9 @@
           "heading": "This course",
           "variant": "tint",
           "course": "literature-orientation",
-          "intro": ["The course is conducted online. Where a day, time or fee has not been settled, the card says so rather than guessing. Ask on WhatsApp and you will be told what currently applies."]
+          "intro": [
+            "The course is conducted online. Where a day, time or fee has not been settled, the card says so rather than guessing. Ask on WhatsApp and you will be told what currently applies."
+          ]
         },
         {
           "type": "callout",
@@ -791,11 +1187,22 @@
           "type": "whatsapp",
           "heading": "Ask about this course",
           "title": "WhatsApp",
-          "text": ["The message is written for you. Add anything you would like to ask before sending it."],
+          "text": [
+            "The message is written for you. Add anything you would like to ask before sending it."
+          ],
           "buttons": [
-            { "label": "Enquire on WhatsApp", "message": "Hello, I would like information about the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available in the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. My name and the school or class I teach are: " }
+            {
+              "label": "Enquire on WhatsApp",
+              "message": "Hello, I would like information about the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available in the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for the Literature Orientation: One-Month Course for New Teachers at RCF Online Academy. My name and the school or class I teach are: "
+            }
           ]
         },
         {
@@ -804,10 +1211,26 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Literature teaching", "url": "teacher-resources/literature-teaching/", "more": "Open" },
-            { "title": "Marking guides", "url": "teacher-resources/marking-guides/", "more": "Open" },
-            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
-            { "title": "How teachers can mark answers", "url": "ol-literature/marking-answers/", "more": "Open" }
+            {
+              "title": "Literature teaching",
+              "url": "teacher-resources/literature-teaching/",
+              "more": "Open"
+            },
+            {
+              "title": "Marking guides",
+              "url": "teacher-resources/marking-guides/",
+              "more": "Open"
+            },
+            {
+              "title": "How to develop an answer",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Open"
+            },
+            {
+              "title": "How teachers can mark answers",
+              "url": "ol-literature/marking-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
