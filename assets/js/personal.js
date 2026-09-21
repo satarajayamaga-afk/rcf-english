@@ -6,6 +6,8 @@
      Reading options   text size, high contrast, wider spacing, read aloud
      Offline           registers the service worker (sw.js) so pages already
                        opened can be read again without a connection
+     Started classes   takes down a "Starting soon" mark once the date has
+                       passed, using this browser's clock
 
    Everything is kept in this browser (localStorage). Nothing is sent
    anywhere and there is no account. "My RCF English" (my/) shows it all.
@@ -311,6 +313,43 @@
     document.body.appendChild(bar);
     document.documentElement.classList.add("has-a2hs");
   }
+
+  /* ------------------------------------------------ a class that has begun
+
+     The build marks a class "Starting soon" and lifts it to the top of the
+     page. This website is plain files: nothing runs at midnight to take the
+     mark down, and the deploy only publishes what was built here, so a class
+     that began last week would keep announcing itself until someone rebuilt
+     the site. The visitor's own clock finishes the job - the same way an
+     expired advertisement is retired in promotions.js.
+
+     Only the announcement goes. The course itself stays on the page, with
+     its real starting date still printed in the facts.                      */
+
+  (function retireStartedClasses() {
+    var cards = document.querySelectorAll("[data-starts-on]");
+    if (!cards.length) return;
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    for (var i = 0; i < cards.length; i++) {
+      var card = cards[i];
+      var starts = new Date(card.getAttribute("data-starts-on") + "T00:00:00");
+      if (isNaN(starts.getTime()) || starts >= today) continue;
+      var badge = card.querySelector(".tag--new");
+      if (badge && badge.parentNode) { badge.parentNode.removeChild(badge); }
+      // Inside the "Starting soon" section the whole card is the announcement.
+      if (card.closest && card.closest("[data-starting-soon]")) { card.hidden = true; }
+    }
+
+    var groups = document.querySelectorAll("[data-starting-soon]");
+    for (var g = 0; g < groups.length; g++) {
+      if (!groups[g].querySelector("article:not([hidden])")) {
+        var section = groups[g].closest ? groups[g].closest("section") : null;
+        if (section) { section.hidden = true; }
+      }
+    }
+  })();
 
   /* Android, Chrome and Edge: the browser offers the dialog through this event. */
   window.addEventListener("beforeinstallprompt", function (event) {

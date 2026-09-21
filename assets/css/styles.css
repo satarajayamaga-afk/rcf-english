@@ -2902,6 +2902,15 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   background: var(--surface-alt);
 }
 .class-feature__poster img { display: block; width: 100%; height: auto; }
+/* A standing poster - the shape made for WhatsApp - would be about one and a
+   half times the card's width in height, burying the course details below the
+   fold. It is capped and centred on the panel instead. */
+.class-feature__poster--portrait img {
+  width: auto;
+  max-width: 100%;
+  max-height: 560px;
+  margin-inline: auto;
+}
 /* The details card joins the poster above it into one piece. A course with no
    poster keeps the ordinary rounded card. */
 .class-feature__poster + .class-feature__body { border-top-left-radius: 0; border-top-right-radius: 0; }

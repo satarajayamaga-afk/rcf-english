@@ -3336,6 +3336,33 @@ function RenderPaperLibrary($block) {
     return $html
 }
 
+# A class with a real start date close at hand is marked and lifted to the top
+# of the list. The date is kept machine-readable, separately from the words
+# shown to a visitor, so the mark can expire by itself: an announcement for a
+# class that started last month is worse than no announcement at all.
+$script:ClassSoonDays = 60
+function ClassDaysToStart($c) {
+    $raw = [string](P $c 'startsOn' '')
+    if (-not $raw) { return $null }
+    $d = [datetime]::MinValue
+    $ok = [datetime]::TryParseExact($raw, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$d)
+    if (-not $ok) {
+        [void]$script:Warnings.Add("classes.json: startsOn '$raw' for '$([string](P $c 'title'))' is not a yyyy-MM-dd date, so the class is not marked as starting soon")
+        return $null
+    }
+    return [int]((($d.Date) - (Get-Date).Date).TotalDays)
+}
+function ClassIsStartingSoon($c) {
+    $days = ClassDaysToStart $c
+    if ($null -eq $days) { return $false }
+    # A date already past, on a class still taking registrations, is a page
+    # telling visitors something untrue. Say so at build time.
+    if ($days -lt 0 -and [string](P $c 'registration') -eq 'open') {
+        [void]$script:Warnings.Add("classes.json: '$([string](P $c 'title'))' started on $([string](P $c 'startsOn')) but registration is still 'open'")
+    }
+    return ($days -ge 0 -and $days -le $script:ClassSoonDays)
+}
+
 function ClassStatus($value) {
     $v = [string]$value
     switch ($v) {
@@ -3464,6 +3491,24 @@ function RenderClasses($block) {
     if ($filterFormat) { $list = @($list | Where-Object { [string](P $_ 'groupFormat') -eq [string]$filterFormat }) }
     if ($filterDelivery) { $list = @($list | Where-Object { [string](P $_ 'delivery') -eq [string]$filterDelivery }) }
     if ($featuredOnly) { $list = @($list | Where-Object { (P $_ 'featured') -eq $true }) }
+
+    # "starting" is the highlight at the top of the classes page: only the
+    # classes about to begin. When none are, the whole section disappears
+    # rather than announcing that there is nothing to announce.
+    $startingOnly = (P $block 'starting') -eq $true
+    if ($startingOnly) {
+        $list = @($list | Where-Object { ClassIsStartingSoon $_ })
+        if ($list.Count -eq 0) { return '' }
+    }
+
+    # A class about to begin is the one a visitor needs to see, so it comes
+    # first, soonest first. A page that names its courses in a deliberate order
+    # keeps that order: there the sequence is the point.
+    if (-not $filterCourses.Count) {
+        $soon = @($list | Where-Object { ClassIsStartingSoon $_ } | Sort-Object { ClassDaysToStart $_ })
+        if ($soon.Count) { $list = @($soon) + @($list | Where-Object { -not (ClassIsStartingSoon $_) }) }
+    }
+
     $limit = P $block 'limit'
     if ($limit) { $list = @($list | Select-Object -First ([int]$limit)) }
 
@@ -3478,29 +3523,47 @@ function RenderClasses($block) {
         return $html + '</div></section>'
     }
 
-    if ($feature) { $html += '<div class="class-features">' } else { $html += '<div class="grid grid--3">' }
+    $soonAttr = ''
+    if ($startingOnly) { $soonAttr = ' data-starting-soon' }
+    if ($feature) { $html += '<div class="class-features"' + $soonAttr + '>' } else { $html += '<div class="grid grid--3"' + $soonAttr + '>' }
     $shownPosters = @{}
     foreach ($c in $list) {
         $title = [string](P $c 'title')
         $status = ClassStatus (P $c 'registration')
         $img = [string](P $c 'image')
 
+        # The start date travels with the card so the browser can retire the
+        # mark on the right day. The site is plain files: nothing rebuilds it
+        # at midnight, and the deploy only publishes what was built here.
+        $startsAttr = ''
+        $startsOn = [string](P $c 'startsOn' '')
+        if ($startsOn) { $startsAttr = ' data-starts-on="' + (E $startsOn) + '"' }
+
         if ($feature) {
-            $html += '<article class="class-feature">'
+            $html += '<article class="class-feature"' + $startsAttr + '>'
             # Two courses can share one poster - O/L and A/L Literature do - and
             # the same poster twice in a row reads as a mistake, so it is shown
             # once, above the first course that uses it.
             if ($img -and -not $shownPosters.ContainsKey($img)) {
                 $shownPosters[$img] = $true
-                $html += '<figure class="class-feature__poster"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $c 'imageAlt'))) + '" width="1200" height="675" loading="lazy" decoding="async"></figure>'
+                # Most posters are 16:9 banners. A standing poster made for
+                # WhatsApp is taller than it is wide, and at the full width of
+                # the card it would push everything else off the screen, so it
+                # is capped and centred instead.
+                $imgW = [int](P $c 'imageWidth' 1200)
+                $imgH = [int](P $c 'imageHeight' 675)
+                $shape = ''
+                if ($imgH -gt $imgW) { $shape = ' class-feature__poster--portrait' }
+                $html += '<figure class="class-feature__poster' + $shape + '"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $c 'imageAlt'))) + '" width="' + $imgW + '" height="' + $imgH + '" loading="lazy" decoding="async"></figure>'
             }
             $html += '<div class="card class-card class-feature__body">'
         }
         else {
-            $html += '<article class="card class-card">'
+            $html += '<article class="card class-card"' + $startsAttr + '>'
         }
 
         $html += '<div class="tag-row">'
+        if (ClassIsStartingSoon $c) { $html += '<span class="tag tag--new">Starting soon</span>' }
         $html += '<span class="class-card__status" data-status="' + $status[0] + '">' + (E $status[1]) + '</span>'
         if (P $c 'delivery') { $html += '<span class="tag tag--type">' + (E ((Get-Culture).TextInfo.ToTitleCase([string](P $c 'delivery')))) + '</span>' }
         if (P $c 'groupFormat') { $html += '<span class="tag">' + (E ((Get-Culture).TextInfo.ToTitleCase([string](P $c 'groupFormat')))) + '</span>' }
@@ -3575,7 +3638,11 @@ function RenderClasses($block) {
         $href = 'https://wa.me/' + $waNumber + '?text=' + [uri]::EscapeDataString($msg)
         $html += '<div class="btn-row"><a class="btn btn--sm btn--whatsapp" href="' + (E $href) + '" target="_blank" rel="noopener">Ask about this class</a>'
         $page = [string](P $c 'page')
-        if ($feature -and $page) {
+        # The way through to the full details, shown wherever the card is not
+        # already standing on that very page - a link to here, from here, is
+        # only a dead end for whoever follows it.
+        $onOwnPage = $page -and (($page.TrimEnd('/')) -eq ([string]$script:PageSlug).TrimEnd('/'))
+        if ($page -and -not $onOwnPage) {
             $html += '<a class="btn btn--sm btn--outline" href="' + (E (Url $page)) + '">Full course page<span class="visually-hidden">: ' + (E $title) + '</span></a>'
         }
         $html += '</div>'

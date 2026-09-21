@@ -8,7 +8,6 @@
     "The two elocution diplomas are awarded by CALSDA, not by RCF Online Academy,",
     "and the Academy does not represent CALSDA. Keep that clear in any new wording."
   ],
-
   "pages": [
     {
       "slug": "rcf-classes",
@@ -22,13 +21,38 @@
       "hero": {
         "text": "Elocution diploma courses, Literature classes from Grade 9 to Advanced Level, IELTS and teacher training, all taught online by Rohana Fernando.",
         "buttons": [
-          { "label": "Our courses", "url": "rcf-classes/#courses", "style": "btn--accent" },
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--ghost-light" },
-          { "label": "Pay Class Fees", "url": "rcf-classes/#class-fees", "style": "btn--ghost-light" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Our courses",
+            "url": "rcf-classes/#courses",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Pay Class Fees",
+            "url": "rcf-classes/#class-fees",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
+        {
+          "type": "classes",
+          "heading": "Starting soon",
+          "variant": "tint",
+          "starting": true,
+          "intro": [
+            "Classes with a date fixed. The rest of the courses are below, and any of them can be arranged for a new group."
+          ]
+        },
         {
           "type": "prose",
           "heading": "About the Academy",
@@ -44,10 +68,14 @@
           "heading": "Elocution diplomas",
           "eyebrow": "Professional preparatory courses",
           "variant": "tint",
-          "intro": ["Two six-month courses preparing candidates for the diploma examinations of the Colombo Association of Language Skills and Dramatic Art (CALSDA)."],
-          "courses": ["primary-elocution", "associate-diploma"]
+          "intro": [
+            "Two six-month courses preparing candidates for the diploma examinations of the Colombo Association of Language Skills and Dramatic Art (CALSDA)."
+          ],
+          "courses": [
+            "primary-elocution",
+            "associate-diploma"
+          ]
         },
-
         {
           "type": "callout",
           "style": "legal",
@@ -59,98 +87,209 @@
             "Entry requirements, syllabus, examination dates and CALSDA's own fees are matters for CALSDA, and candidates should confirm them with CALSDA directly."
           ]
         },
-
         {
           "type": "classes",
           "layout": "feature",
           "heading": "Literature classes",
           "eyebrow": "Grade 9 to Advanced Level",
-          "intro": ["Courses following a student through school Literature, each taught the same way: read the text whole, study it closely, then practise answers and have them corrected individually."],
-          "courses": ["grade-9-literature", "grade-10-literature", "ol-literature", "al-literature"]
+          "intro": [
+            "Courses following a student through school Literature, each taught the same way: read the text whole, study it closely, then practise answers and have them corrected individually."
+          ],
+          "courses": [
+            "grade-9-literature",
+            "grade-10-literature",
+            "ol-literature",
+            "al-literature"
+          ]
         },
-
         {
           "type": "classes",
           "layout": "feature",
           "heading": "Examination preparation",
           "eyebrow": "International English tests",
           "variant": "tint",
-          "courses": ["ielts"]
+          "courses": [
+            "ielts"
+          ]
         },
-
         {
           "type": "classes",
           "layout": "feature",
           "heading": "Teacher training",
           "eyebrow": "For practising and new teachers",
-          "intro": ["Courses for teachers rather than students, conducted online in the same practical way as the rest of the Academy."],
-          "courses": ["tkt", "literature-orientation"]
+          "intro": [
+            "Courses for teachers rather than students, conducted online in the same practical way as the rest of the Academy."
+          ],
+          "courses": [
+            "tkt",
+            "literature-orientation"
+          ]
         },
-
         {
           "type": "steps",
           "heading": "How the courses are taught",
           "eyebrow": "The same method throughout",
           "variant": "navy",
-          "intro": ["Deliberately gradual, because most students fail at written answers and at prepared speech through lack of preparation rather than lack of ability."],
+          "intro": [
+            "Deliberately gradual, because most students fail at written answers and at prepared speech through lack of preparation rather than lack of ability."
+          ],
           "items": [
-            { "title": "Clear and systematic explanation", "text": ["One point at a time, in plain language, with the reason behind it and not only the rule."] },
-            { "title": "Guided practice before independent work", "text": ["Nothing is set cold. A model is studied, the structure identified, and support withdrawn step by step."] },
-            { "title": "Individual correction and feedback", "text": ["Written and spoken work is corrected individually, with one clear instruction rather than a page of red."] },
-            { "title": "Examination preparation where relevant", "text": ["Paper structure, timing, answer development and past-paper practice for those preparing for an examination."] },
-            { "title": "Regular revision", "text": ["Deliberate return to earlier work, spaced out, because that is what makes learning permanent."] },
-            { "title": "Confidence, and support for those in difficulty", "text": ["Extra help for students who are struggling, without singling them out in front of others."] }
+            {
+              "title": "Clear and systematic explanation",
+              "text": [
+                "One point at a time, in plain language, with the reason behind it and not only the rule."
+              ]
+            },
+            {
+              "title": "Guided practice before independent work",
+              "text": [
+                "Nothing is set cold. A model is studied, the structure identified, and support withdrawn step by step."
+              ]
+            },
+            {
+              "title": "Individual correction and feedback",
+              "text": [
+                "Written and spoken work is corrected individually, with one clear instruction rather than a page of red."
+              ]
+            },
+            {
+              "title": "Examination preparation where relevant",
+              "text": [
+                "Paper structure, timing, answer development and past-paper practice for those preparing for an examination."
+              ]
+            },
+            {
+              "title": "Regular revision",
+              "text": [
+                "Deliberate return to earlier work, spaced out, because that is what makes learning permanent."
+              ]
+            },
+            {
+              "title": "Confidence, and support for those in difficulty",
+              "text": [
+                "Extra help for students who are struggling, without singling them out in front of others."
+              ]
+            }
           ]
         },
-
         {
           "type": "steps",
           "heading": "How to register",
           "eyebrow": "Five steps",
           "items": [
-            { "title": "Choose a course", "text": ["Look through the courses above. If you are not sure which suits you, say what you have already done and you will be advised."] },
-            { "title": "Contact RCF Online Academy on WhatsApp", "text": ["Use the [registration page](rcf-classes/registration/) or any WhatsApp button. The message is written for you; you add your details and press send."] },
-            { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day, time and fee, and whether places are available."] },
-            { "title": "Confirm registration", "text": ["Registration is confirmed by the teacher after this exchange. It is not automatic, and nothing on this website registers you."] },
-            { "title": "Receive joining instructions", "text": ["Once your place is confirmed you are sent the joining details privately. These are never published on this website."] }
+            {
+              "title": "Choose a course",
+              "text": [
+                "Look through the courses above. If you are not sure which suits you, say what you have already done and you will be advised."
+              ]
+            },
+            {
+              "title": "Contact RCF Online Academy on WhatsApp",
+              "text": [
+                "Use the [registration page](rcf-classes/registration/) or any WhatsApp button. The message is written for you; you add your details and press send."
+              ]
+            },
+            {
+              "title": "Receive schedule, fee and availability information",
+              "text": [
+                "You will be told the current day, time and fee, and whether places are available."
+              ]
+            },
+            {
+              "title": "Confirm registration",
+              "text": [
+                "Registration is confirmed by the teacher after this exchange. It is not automatic, and nothing on this website registers you."
+              ]
+            },
+            {
+              "title": "Receive joining instructions",
+              "text": [
+                "Once your place is confirmed you are sent the joining details privately. These are never published on this website."
+              ]
+            }
           ]
         },
-
         {
           "type": "whatsapp",
           "heading": "Ask about the courses",
           "variant": "tint",
           "title": "WhatsApp",
-          "text": ["Each button opens WhatsApp with a message already written. Read it, add anything you wish, and press send yourself. Nothing is sent from this website."],
+          "text": [
+            "Each button opens WhatsApp with a message already written. Read it, add anything you wish, and press send yourself. Nothing is sent from this website."
+          ],
           "buttons": [
-            { "label": "Ask About a Course", "message": "Hello, I would like information about the courses at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: " },
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Online Academy timetable." },
-            { "label": "Register via WhatsApp", "message": "Hello, I would like to register for a course at RCF Online Academy. The course I would like to join is: " }
+            {
+              "label": "Ask About a Course",
+              "message": "Hello, I would like information about the courses at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: "
+            },
+            {
+              "label": "Request the Timetable",
+              "message": "Hello, please send me the current RCF Online Academy timetable."
+            },
+            {
+              "label": "Register via WhatsApp",
+              "message": "Hello, I would like to register for a course at RCF Online Academy. The course I would like to join is: "
+            }
           ]
         },
-
         {
           "type": "notices",
           "heading": "Notices",
           "eyebrow": "Announcements",
-          "intro": ["Changes of time, revision announcements and other messages appear here. Students already enrolled also receive them directly."]
+          "intro": [
+            "Changes of time, revision announcements and other messages appear here. Students already enrolled also receive them directly."
+          ]
         },
-
         {
           "type": "cards",
           "heading": "More about the Academy",
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Registration", "url": "rcf-classes/registration/", "more": "Open" },
-            { "title": "Our Staff", "url": "rcf-classes/our-staff/", "more": "Open" },
-            { "title": "Contact on WhatsApp", "url": "rcf-classes/contact/", "more": "Open" },
-            { "title": "Timetable", "url": "rcf-classes/timetable/", "more": "Open" },
-            { "title": "Notices", "url": "rcf-classes/notices/", "more": "Open" },
-            { "title": "Student Resources", "url": "rcf-classes/student-resources/", "more": "Open" },
-            { "title": "Questions", "url": "rcf-classes/faq/", "more": "Open" },
-            { "title": "About the founder", "url": "about/founder/", "more": "Open" }
+            {
+              "title": "Registration",
+              "url": "rcf-classes/registration/",
+              "more": "Open"
+            },
+            {
+              "title": "Our Staff",
+              "url": "rcf-classes/our-staff/",
+              "more": "Open"
+            },
+            {
+              "title": "Contact on WhatsApp",
+              "url": "rcf-classes/contact/",
+              "more": "Open"
+            },
+            {
+              "title": "Timetable",
+              "url": "rcf-classes/timetable/",
+              "more": "Open"
+            },
+            {
+              "title": "Notices",
+              "url": "rcf-classes/notices/",
+              "more": "Open"
+            },
+            {
+              "title": "Student Resources",
+              "url": "rcf-classes/student-resources/",
+              "more": "Open"
+            },
+            {
+              "title": "Questions",
+              "url": "rcf-classes/faq/",
+              "more": "Open"
+            },
+            {
+              "title": "About the founder",
+              "url": "about/founder/",
+              "more": "Open"
+            }
           ]
         },
         {
@@ -159,11 +298,12 @@
           "heading": "Class Fees",
           "eyebrow": "Paying for a course",
           "id": "class-fees",
-          "intro": ["Class fees are paid by bank transfer. Open the panel below for the account details and for what to send with your receipt. A place is confirmed by a person once the payment has been checked."]
+          "intro": [
+            "Class fees are paid by bank transfer. Open the panel below for the account details and for what to send with your receipt. A place is confirmed by a person once the payment has been checked."
+          ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/registration",
       "title": "Registration",
@@ -172,13 +312,27 @@
       "keywords": "registration, register, enrol, RCF Online Academy, elocution diploma, literature course",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "scripts": ["forms"],
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "scripts": [
+        "forms"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "Registration is a short conversation, not a form that disappears into a system. Nothing on this website registers you; a place is confirmed by the teacher.",
         "buttons": [
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -186,14 +340,38 @@
           "type": "steps",
           "heading": "The five steps",
           "items": [
-            { "title": "Choose a course", "text": ["Every course is listed on the [Academy overview](rcf-classes/), with its poster and details. If you are unsure which suits you, choose *Not sure, please advise* below and say what you have already done."] },
-            { "title": "Send the message", "text": ["Fill in the form below and it writes your message for you, then opens WhatsApp. Read it, then press send yourself."] },
-            { "title": "Receive schedule, fee and availability information", "text": ["You will be told the current day and time, the fee, and whether places are available. This is given directly rather than published, because it changes."] },
-            { "title": "Confirm registration", "text": ["If the course suits you, confirm. **Registration is confirmed by the teacher.** It is not automatic, and no place is reserved by visiting this website."] },
-            { "title": "Receive joining instructions", "text": ["Once your place is confirmed, joining details are sent to you privately. They are never published on this website."] }
+            {
+              "title": "Choose a course",
+              "text": [
+                "Every course is listed on the [Academy overview](rcf-classes/), with its poster and details. If you are unsure which suits you, choose *Not sure, please advise* below and say what you have already done."
+              ]
+            },
+            {
+              "title": "Send the message",
+              "text": [
+                "Fill in the form below and it writes your message for you, then opens WhatsApp. Read it, then press send yourself."
+              ]
+            },
+            {
+              "title": "Receive schedule, fee and availability information",
+              "text": [
+                "You will be told the current day and time, the fee, and whether places are available. This is given directly rather than published, because it changes."
+              ]
+            },
+            {
+              "title": "Confirm registration",
+              "text": [
+                "If the course suits you, confirm. **Registration is confirmed by the teacher.** It is not automatic, and no place is reserved by visiting this website."
+              ]
+            },
+            {
+              "title": "Receive joining instructions",
+              "text": [
+                "Once your place is confirmed, joining details are sent to you privately. They are never published on this website."
+              ]
+            }
           ]
         },
-
         {
           "type": "contactForm",
           "heading": "Registration enquiry",
@@ -201,7 +379,11 @@
           "subject": "RCF Online Academy - registration enquiry",
           "mode": "whatsapp",
           "fields": [
-            { "name": "Your name", "type": "text", "required": true },
+            {
+              "name": "Your name",
+              "type": "text",
+              "required": true
+            },
             {
               "name": "Course",
               "type": "select",
@@ -217,14 +399,38 @@
                 "Not sure, please advise"
               ]
             },
-            { "name": "You are", "type": "select", "required": true, "options": ["The student", "A parent or guardian", "A teacher", "Other"] },
-            { "name": "Telephone number", "type": "tel", "required": true, "hint": "So that the reply can reach you on WhatsApp." },
-            { "name": "Grade, level or examination year", "type": "text" },
-            { "name": "Days and times that would suit you", "type": "text" },
-            { "name": "Anything you would like us to know", "type": "textarea", "hint": "What the student finds difficult, or what you have already studied, is the most useful thing you can tell us." }
+            {
+              "name": "You are",
+              "type": "select",
+              "required": true,
+              "options": [
+                "The student",
+                "A parent or guardian",
+                "A teacher",
+                "Other"
+              ]
+            },
+            {
+              "name": "Telephone number",
+              "type": "tel",
+              "required": true,
+              "hint": "So that the reply can reach you on WhatsApp."
+            },
+            {
+              "name": "Grade, level or examination year",
+              "type": "text"
+            },
+            {
+              "name": "Days and times that would suit you",
+              "type": "text"
+            },
+            {
+              "name": "Anything you would like us to know",
+              "type": "textarea",
+              "hint": "What the student finds difficult, or what you have already studied, is the most useful thing you can tell us."
+            }
           ]
         },
-
         {
           "type": "callout",
           "style": "note",
@@ -235,7 +441,6 @@
             "If you would rather not use the form, the same information sent as an ordinary WhatsApp message is perfectly fine."
           ]
         },
-
         {
           "type": "callout",
           "style": "warn",
@@ -247,35 +452,71 @@
             "For the two elocution diplomas, entering the CALSDA examination itself is arranged by the candidate with CALSDA. Registering for the preparatory course does not enter you for the examination."
           ]
         },
-
         {
           "type": "whatsapp",
           "heading": "Or message directly",
           "variant": "tint",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Register Now", "message": "Hello, I would like to register for a course at RCF Online Academy. The course I would like to join is: " },
-            { "label": "Which course suits me?", "message": "Hello, I would like advice on which course at RCF Online Academy would suit me. What I have studied so far is: " },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: " }
+            {
+              "label": "Register Now",
+              "message": "Hello, I would like to register for a course at RCF Online Academy. The course I would like to join is: "
+            },
+            {
+              "label": "Which course suits me?",
+              "message": "Hello, I would like advice on which course at RCF Online Academy would suit me. What I have studied so far is: "
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: "
+            }
           ]
         },
-
         {
           "type": "accordion",
           "heading": "Questions about registering",
           "faq": true,
           "items": [
-            { "q": "Can I register on this website?", "a": ["No. This website has no server and no registration system. Registration is arranged directly with the teacher on WhatsApp, and a place is confirmed only by the teacher."] },
-            { "q": "Is any payment taken here?", "a": ["No payment is processed on this website. Class fees are paid by bank transfer arranged directly with the teacher and verified by a person. Never enter card details, passwords, PINs or one-time codes anywhere on this site."] },
-            { "q": "Does registering for an elocution course enter me for the CALSDA examination?", "a": ["No. The course prepares you for the examination. Entering the examination itself is arranged by you with CALSDA, and their entry requirements and dates are matters for them."] },
-            { "q": "Can I join after a course has started?", "a": ["It depends on the course and how far it has progressed. The two elocution courses run for six months as a sequence, so joining late is more difficult. Ask, and you will be told honestly whether it would work for you."] },
-            { "q": "Can my parent register for me?", "a": ["Of course. Please say who the student is, their grade or level, and what they need help with."] },
-            { "q": "How soon will I get a reply?", "a": ["Messages are answered as soon as possible. If you have not heard within a couple of days, please send a reminder - messages are occasionally missed."] }
+            {
+              "q": "Can I register on this website?",
+              "a": [
+                "No. This website has no server and no registration system. Registration is arranged directly with the teacher on WhatsApp, and a place is confirmed only by the teacher."
+              ]
+            },
+            {
+              "q": "Is any payment taken here?",
+              "a": [
+                "No payment is processed on this website. Class fees are paid by bank transfer arranged directly with the teacher and verified by a person. Never enter card details, passwords, PINs or one-time codes anywhere on this site."
+              ]
+            },
+            {
+              "q": "Does registering for an elocution course enter me for the CALSDA examination?",
+              "a": [
+                "No. The course prepares you for the examination. Entering the examination itself is arranged by you with CALSDA, and their entry requirements and dates are matters for them."
+              ]
+            },
+            {
+              "q": "Can I join after a course has started?",
+              "a": [
+                "It depends on the course and how far it has progressed. The two elocution courses run for six months as a sequence, so joining late is more difficult. Ask, and you will be told honestly whether it would work for you."
+              ]
+            },
+            {
+              "q": "Can my parent register for me?",
+              "a": [
+                "Of course. Please say who the student is, their grade or level, and what they need help with."
+              ]
+            },
+            {
+              "q": "How soon will I get a reply?",
+              "a": [
+                "Messages are answered as soon as possible. If you have not heard within a couple of days, please send a reminder - messages are occasionally missed."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/our-staff",
       "title": "Our Staff",
@@ -284,13 +525,29 @@
       "keywords": "our staff, teachers, Rohana Fernando, qualifications, CALSDA, RCF Online Academy",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "All courses at the Academy are currently taught by its founder. Who teaches you is not left vague.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" },
-          { "label": "Ask on WhatsApp", "url": "rcf-classes/contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Ask on WhatsApp",
+            "url": "rcf-classes/contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -303,7 +560,6 @@
             "His work extends beyond classroom teaching to teacher support, online learning communities, educational publishing and the preparation of practical learning materials. [More about the founder](about/founder/)."
           ]
         },
-
         {
           "type": "cards",
           "heading": "Qualifications",
@@ -311,23 +567,56 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Degree in English", "text": ["University of Peradeniya."] },
-            { "title": "Master of Arts in Linguistics", "text": ["University of Kelaniya."] },
-            { "title": "TESOL qualification", "text": ["University of Peradeniya."] },
-            { "title": "Associate Member, CALSDA", "text": ["Colombo Association of Language Skills and Dramatic Art."] }
+            {
+              "title": "Degree in English",
+              "text": [
+                "University of Peradeniya."
+              ]
+            },
+            {
+              "title": "Master of Arts in Linguistics",
+              "text": [
+                "University of Kelaniya."
+              ]
+            },
+            {
+              "title": "TESOL qualification",
+              "text": [
+                "University of Peradeniya."
+              ]
+            },
+            {
+              "title": "Associate Member, CALSDA",
+              "text": [
+                "Colombo Association of Language Skills and Dramatic Art."
+              ]
+            }
           ]
         },
-
         {
           "type": "prose",
           "heading": "What that means for each course",
           "parts": [
-            { "heading": "The elocution diploma courses", "text": ["Associate Membership of CALSDA reflects a professional connection with the association whose examinations these courses prepare candidates for. It is a membership, not an office: it does not make the Academy a representative of CALSDA, and the diplomas are awarded by CALSDA alone."] },
-            { "heading": "The Literature courses", "text": ["A degree in English supports the reading of poetry, drama and fiction, and the close attention to a text that a good Literature answer needs."] },
-            { "heading": "Every course", "text": ["Advanced study in linguistics supports an understanding of how English actually works rather than a list of rules; TESOL training supports teaching English to learners for whom it is not a first language; and several decades in classrooms supply what qualifications alone cannot — knowledge of where learners actually go wrong, and of what genuinely helps them."] }
+            {
+              "heading": "The elocution diploma courses",
+              "text": [
+                "Associate Membership of CALSDA reflects a professional connection with the association whose examinations these courses prepare candidates for. It is a membership, not an office: it does not make the Academy a representative of CALSDA, and the diplomas are awarded by CALSDA alone."
+              ]
+            },
+            {
+              "heading": "The Literature courses",
+              "text": [
+                "A degree in English supports the reading of poetry, drama and fiction, and the close attention to a text that a good Literature answer needs."
+              ]
+            },
+            {
+              "heading": "Every course",
+              "text": [
+                "Advanced study in linguistics supports an understanding of how English actually works rather than a list of rules; TESOL training supports teaching English to learners for whom it is not a first language; and several decades in classrooms supply what qualifications alone cannot — knowledge of where learners actually go wrong, and of what genuinely helps them."
+              ]
+            }
           ]
         },
-
         {
           "type": "callout",
           "style": "note",
@@ -338,20 +627,39 @@
             "At present the Academy has one teacher. If further teachers join, they will be named on this page with their own qualifications. This page will not list anyone who is not actually teaching."
           ]
         },
-
         {
           "type": "cards",
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Our courses", "url": "rcf-classes/", "more": "Academy overview", "text": ["Two elocution diplomas, four Literature courses and a one-month orientation course for new teachers."] },
-            { "title": "Registration", "url": "rcf-classes/registration/", "more": "Register now", "text": ["The five steps, and the form that writes your message."] },
-            { "title": "Our teaching approach", "url": "about/teaching-approach/", "more": "Open", "text": ["The method that runs through every course and every lesson on this site."] }
+            {
+              "title": "Our courses",
+              "url": "rcf-classes/",
+              "more": "Academy overview",
+              "text": [
+                "Two elocution diplomas, four Literature courses and a one-month orientation course for new teachers."
+              ]
+            },
+            {
+              "title": "Registration",
+              "url": "rcf-classes/registration/",
+              "more": "Register now",
+              "text": [
+                "The five steps, and the form that writes your message."
+              ]
+            },
+            {
+              "title": "Our teaching approach",
+              "url": "about/teaching-approach/",
+              "more": "Open",
+              "text": [
+                "The method that runs through every course and every lesson on this site."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/contact",
       "title": "Contact on WhatsApp",
@@ -360,13 +668,27 @@
       "keywords": "contact, WhatsApp, RCF Online Academy, enquiry, register",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "scripts": ["forms"],
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
+      "scripts": [
+        "forms"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
       "hero": {
         "text": "WhatsApp is the quickest way to reach the Academy. Say who you are, which course you are asking about, and what you need.",
         "buttons": [
-          { "label": "Register Now", "url": "rcf-classes/registration/", "style": "btn--accent" }
+          {
+            "label": "Register Now",
+            "url": "rcf-classes/registration/",
+            "style": "btn--accent"
+          }
         ]
       },
       "blocks": [
@@ -374,19 +696,44 @@
           "type": "whatsapp",
           "heading": "Message RCF Online Academy",
           "title": "WhatsApp",
-          "text": ["Each button opens WhatsApp with a message already written. Read it, add your details, and press send yourself. Nothing is sent from this website."],
+          "text": [
+            "Each button opens WhatsApp with a message already written. Read it, add your details, and press send yourself. Nothing is sent from this website."
+          ],
           "buttons": [
-            { "label": "Ask About a Course", "message": "Hello, I would like information about the courses at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Primary Elocution Teachers' Diploma", "message": "Hello, I would like information about the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Associate Diploma", "message": "Hello, I would like information about the Associate Diploma (Higher Elocution Diploma) preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Literature courses", "message": "Hello, I would like information about the Literature courses at RCF Online Academy. The grade or level I am asking about is: " },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: " },
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Online Academy timetable." },
-            { "label": "Register Now", "message": "Hello, I would like to register for a course at RCF Online Academy. The course I would like to join is: " },
-            { "label": "My child needs extra help", "message": "Hello, my child needs additional help with English. Their grade is: ___ and what they find most difficult is: " }
+            {
+              "label": "Ask About a Course",
+              "message": "Hello, I would like information about the courses at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Primary Elocution Teachers' Diploma",
+              "message": "Hello, I would like information about the Primary Elocution Teachers' Diploma preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Associate Diploma",
+              "message": "Hello, I would like information about the Associate Diploma (Higher Elocution Diploma) preparatory course at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Literature courses",
+              "message": "Hello, I would like information about the Literature courses at RCF Online Academy. The grade or level I am asking about is: "
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: "
+            },
+            {
+              "label": "Request the Timetable",
+              "message": "Hello, please send me the current RCF Online Academy timetable."
+            },
+            {
+              "label": "Register Now",
+              "message": "Hello, I would like to register for a course at RCF Online Academy. The course I would like to join is: "
+            },
+            {
+              "label": "My child needs extra help",
+              "message": "Hello, my child needs additional help with English. Their grade is: ___ and what they find most difficult is: "
+            }
           ]
         },
-
         {
           "type": "callout",
           "style": "tip",
@@ -400,16 +747,33 @@
             "What the student finds most difficult - this genuinely shapes the reply."
           ]
         },
-
         {
           "type": "contactForm",
           "heading": "Or write by email",
           "subject": "RCF Online Academy enquiry",
           "mode": "email",
           "fields": [
-            { "name": "Your name", "type": "text", "required": true },
-            { "name": "Your email address", "type": "email", "required": true },
-            { "name": "You are", "type": "select", "required": true, "options": ["The student", "A parent or guardian", "A teacher", "Other"] },
+            {
+              "name": "Your name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "Your email address",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "You are",
+              "type": "select",
+              "required": true,
+              "options": [
+                "The student",
+                "A parent or guardian",
+                "A teacher",
+                "Other"
+              ]
+            },
             {
               "name": "Course",
               "type": "select",
@@ -425,11 +789,17 @@
                 "Not sure, please advise"
               ]
             },
-            { "name": "Grade, level or examination year", "type": "text" },
-            { "name": "Your message", "type": "textarea", "required": true }
+            {
+              "name": "Grade, level or examination year",
+              "type": "text"
+            },
+            {
+              "name": "Your message",
+              "type": "textarea",
+              "required": true
+            }
           ]
         },
-
         {
           "type": "callout",
           "style": "warn",
@@ -442,7 +812,6 @@
         }
       ]
     },
-
     {
       "slug": "rcf-classes/timetable",
       "title": "Timetable",
@@ -451,14 +820,26 @@
       "keywords": "timetable, schedule, days and times, RCF Online Academy",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
-      "hero": { "text": "On a telephone the timetable appears as cards rather than a wide table, so nothing is squeezed off the edge of the screen." },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
+      "hero": {
+        "text": "On a telephone the timetable appears as cards rather than a wide table, so nothing is squeezed off the edge of the screen."
+      },
       "blocks": [
         {
           "type": "timetable",
           "heading": "Current timetable",
-          "intro": ["Only courses whose days and times have actually been settled appear here. Nothing is invented; where a schedule has not been fixed, this page says so."]
+          "intro": [
+            "Only courses whose days and times have actually been settled appear here. Nothing is invented; where a schedule has not been fixed, this page says so."
+          ]
         },
         {
           "type": "callout",
@@ -475,8 +856,14 @@
           "heading": "Get the current timetable",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Request the Timetable", "message": "Hello, please send me the current RCF Online Academy timetable." },
-            { "label": "Check Availability", "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: " }
+            {
+              "label": "Request the Timetable",
+              "message": "Hello, please send me the current RCF Online Academy timetable."
+            },
+            {
+              "label": "Check Availability",
+              "message": "Hello, I would like to know whether places are available at RCF Online Academy at the moment. The course I am interested in is: "
+            }
           ]
         },
         {
@@ -485,14 +872,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Our courses", "url": "rcf-classes/", "more": "Academy overview" },
-            { "title": "Registration", "url": "rcf-classes/registration/", "more": "Open" },
-            { "title": "Notices", "url": "rcf-classes/notices/", "more": "Open" }
+            {
+              "title": "Our courses",
+              "url": "rcf-classes/",
+              "more": "Academy overview"
+            },
+            {
+              "title": "Registration",
+              "url": "rcf-classes/registration/",
+              "more": "Open"
+            },
+            {
+              "title": "Notices",
+              "url": "rcf-classes/notices/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/notices",
       "title": "Notices",
@@ -501,11 +899,24 @@
       "keywords": "notices, announcements, changes of time, RCF Online Academy",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
-      "hero": { "text": "Public announcements for students. Anything private is sent directly and never published here." },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
+      "hero": {
+        "text": "Public announcements for students. Anything private is sent directly and never published here."
+      },
       "blocks": [
-        { "type": "notices", "heading": "Notices" },
+        {
+          "type": "notices",
+          "heading": "Notices"
+        },
         {
           "type": "callout",
           "style": "note",
@@ -522,14 +933,25 @@
           "heading": "Related",
           "columns": "3",
           "items": [
-            { "title": "Timetable", "url": "rcf-classes/timetable/", "more": "Open" },
-            { "title": "Student Resources", "url": "rcf-classes/student-resources/", "more": "Open" },
-            { "title": "Contact on WhatsApp", "url": "rcf-classes/contact/", "more": "Open" }
+            {
+              "title": "Timetable",
+              "url": "rcf-classes/timetable/",
+              "more": "Open"
+            },
+            {
+              "title": "Student Resources",
+              "url": "rcf-classes/student-resources/",
+              "more": "Open"
+            },
+            {
+              "title": "Contact on WhatsApp",
+              "url": "rcf-classes/contact/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/student-resources",
       "title": "Student Resources",
@@ -538,9 +960,19 @@
       "keywords": "student resources, course materials, recommended pages, free resources",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
-      "hero": { "text": "Everything on RCF English is free and open to everyone. These are the pages Academy students are pointed to most often." },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
+      "hero": {
+        "text": "Everything on RCF English is free and open to everyone. These are the pages Academy students are pointed to most often."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -557,14 +989,46 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
-            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
-            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" },
-            { "title": "Literary techniques", "url": "ol-literature/literary-techniques/", "more": "Open" },
-            { "title": "Themes", "url": "ol-literature/themes/", "more": "Open" },
-            { "title": "Important quotations", "url": "ol-literature/quotations/", "more": "Open" },
-            { "title": "Revision activities", "url": "ol-literature/revision-activities/", "more": "Open" },
-            { "title": "Model answers", "url": "ol-literature/model-answers/", "more": "Open" }
+            {
+              "title": "How to develop an answer",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Open"
+            },
+            {
+              "title": "Context questions",
+              "url": "ol-literature/context-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay questions",
+              "url": "ol-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Literary techniques",
+              "url": "ol-literature/literary-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "Themes",
+              "url": "ol-literature/themes/",
+              "more": "Open"
+            },
+            {
+              "title": "Important quotations",
+              "url": "ol-literature/quotations/",
+              "more": "Open"
+            },
+            {
+              "title": "Revision activities",
+              "url": "ol-literature/revision-activities/",
+              "more": "Open"
+            },
+            {
+              "title": "Model answers",
+              "url": "ol-literature/model-answers/",
+              "more": "Open"
+            }
           ]
         },
         {
@@ -572,10 +1036,26 @@
           "heading": "For Advanced Level students",
           "columns": "4",
           "items": [
-            { "title": "A/L Literature section", "url": "al-literature/", "more": "Open" },
-            { "title": "Critical appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Answer development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Examination guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+            {
+              "title": "A/L Literature section",
+              "url": "al-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Critical appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            }
           ]
         },
         {
@@ -584,20 +1064,37 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Spoken English", "url": "practical-english/spoken-english/", "more": "Open" },
-            { "title": "Pronunciation", "url": "practical-english/pronunciation/", "more": "Open" },
-            { "title": "Past papers", "url": "past-papers/", "more": "Open" },
-            { "title": "Interactive learning", "url": "interactive/", "more": "Open" }
+            {
+              "title": "Spoken English",
+              "url": "practical-english/spoken-english/",
+              "more": "Open"
+            },
+            {
+              "title": "Pronunciation",
+              "url": "practical-english/pronunciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Past papers",
+              "url": "past-papers/",
+              "more": "Open"
+            },
+            {
+              "title": "Interactive learning",
+              "url": "interactive/",
+              "more": "Open"
+            }
           ]
         },
         {
           "type": "relatedBooks",
           "heading": "Find related books",
-          "text": ["RCF Publications produces study guides, grammar resources and examination-revision materials that work alongside these free pages. It is a separate section of this website."]
+          "text": [
+            "RCF Publications produces study guides, grammar resources and examination-revision materials that work alongside these free pages. It is a separate section of this website."
+          ]
         }
       ]
     },
-
     {
       "slug": "rcf-classes/faq",
       "title": "Questions",
@@ -606,21 +1103,61 @@
       "keywords": "questions, FAQ, RCF Online Academy, CALSDA, registration, fees",
       "kicker": "RCF Online Academy",
       "kind": "page",
-      "breadcrumbs": [{ "label": "RCF Online Academy", "url": "rcf-classes/" }],
-      "backTo": { "label": "RCF Online Academy", "url": "rcf-classes/" },
-      "hero": { "text": "If your question is not answered here, ask on WhatsApp - the answer is usually quicker than the search." },
+      "breadcrumbs": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Online Academy",
+        "url": "rcf-classes/"
+      },
+      "hero": {
+        "text": "If your question is not answered here, ask on WhatsApp - the answer is usually quicker than the search."
+      },
       "blocks": [
         {
           "type": "accordion",
           "heading": "The elocution diplomas",
           "faq": true,
           "items": [
-            { "q": "Does RCF Online Academy award the elocution diplomas?", "a": ["No. The Primary Elocution Teachers' Diploma and the Associate Diploma are set, examined and awarded by CALSDA, the Colombo Association of Language Skills and Dramatic Art. RCF Online Academy conducts preparatory courses for those examinations."] },
-            { "q": "Is RCF Online Academy an official representative of CALSDA?", "a": ["No. It is not a representative, agent or branch of CALSDA and does not speak for it. Its founder is an Associate Member of CALSDA, which is a membership and not an office."] },
-            { "q": "How long are the courses?", "a": ["Both elocution courses run for six months."] },
-            { "q": "Does the course enter me for the CALSDA examination?", "a": ["No. The course prepares you for the examination. Entering it is arranged by you with CALSDA."] },
-            { "q": "What are the entry requirements?", "a": ["Entry requirements for the examinations are set by CALSDA, and candidates should confirm them with CALSDA directly. This website does not state them, because they are not ours to state."] },
-            { "q": "Which of the two courses should I take?", "a": ["Say what you have already done and you will be advised honestly. Being pointed at the right course matters more than filling a place in the wrong one."] }
+            {
+              "q": "Does RCF Online Academy award the elocution diplomas?",
+              "a": [
+                "No. The Primary Elocution Teachers' Diploma and the Associate Diploma are set, examined and awarded by CALSDA, the Colombo Association of Language Skills and Dramatic Art. RCF Online Academy conducts preparatory courses for those examinations."
+              ]
+            },
+            {
+              "q": "Is RCF Online Academy an official representative of CALSDA?",
+              "a": [
+                "No. It is not a representative, agent or branch of CALSDA and does not speak for it. Its founder is an Associate Member of CALSDA, which is a membership and not an office."
+              ]
+            },
+            {
+              "q": "How long are the courses?",
+              "a": [
+                "Both elocution courses run for six months."
+              ]
+            },
+            {
+              "q": "Does the course enter me for the CALSDA examination?",
+              "a": [
+                "No. The course prepares you for the examination. Entering it is arranged by you with CALSDA."
+              ]
+            },
+            {
+              "q": "What are the entry requirements?",
+              "a": [
+                "Entry requirements for the examinations are set by CALSDA, and candidates should confirm them with CALSDA directly. This website does not state them, because they are not ours to state."
+              ]
+            },
+            {
+              "q": "Which of the two courses should I take?",
+              "a": [
+                "Say what you have already done and you will be advised honestly. Being pointed at the right course matters more than filling a place in the wrong one."
+              ]
+            }
           ]
         },
         {
@@ -629,10 +1166,30 @@
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "Which grades are covered?", "a": ["Grade 9, Grade 10, Ordinary Level and Advanced Level."] },
-            { "q": "Do I need my own copies of the prescribed texts?", "a": ["Yes. Copyrighted literary texts are not reproduced on this website or supplied with a course."] },
-            { "q": "Is written work corrected?", "a": ["Yes. Individual correction of written work is one of the main emphases of every course."] },
-            { "q": "Why start Literature in Grade 9?", "a": ["Most students who struggle at Ordinary Level are not short of ability; they arrive having read texts but never having been shown how an answer is built. A year spent on those habits first makes the two that follow much easier."] }
+            {
+              "q": "Which grades are covered?",
+              "a": [
+                "Grade 9, Grade 10, Ordinary Level and Advanced Level."
+              ]
+            },
+            {
+              "q": "Do I need my own copies of the prescribed texts?",
+              "a": [
+                "Yes. Copyrighted literary texts are not reproduced on this website or supplied with a course."
+              ]
+            },
+            {
+              "q": "Is written work corrected?",
+              "a": [
+                "Yes. Individual correction of written work is one of the main emphases of every course."
+              ]
+            },
+            {
+              "q": "Why start Literature in Grade 9?",
+              "a": [
+                "Most students who struggle at Ordinary Level are not short of ability; they arrive having read texts but never having been shown how an answer is built. A year spent on those habits first makes the two that follow much easier."
+              ]
+            }
           ]
         },
         {
@@ -640,10 +1197,30 @@
           "heading": "Registering, schedules and fees",
           "faq": true,
           "items": [
-            { "q": "How do I register?", "a": ["Choose a course, then use the [registration page](rcf-classes/registration/) or a WhatsApp button. You will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."] },
-            { "q": "Why are the days, times and fees not published?", "a": ["Because they change, and an out-of-date timetable helps nobody. Times are also sometimes arranged around the students who want a particular course. Where nothing has been settled, this site says so rather than inventing a schedule."] },
-            { "q": "Is any payment taken on this website?", "a": ["No payment is processed on this website. Fees are paid by bank transfer using the instructions on the class-fees panel, and the receipt is sent through WhatsApp. Never enter card details, passwords, PINs or one-time codes anywhere on this site."] },
-            { "q": "Can I join in the middle of a course?", "a": ["It depends on the course and how far it has gone. The elocution courses run as a six-month sequence, so joining late is more difficult. Ask, and you will be told honestly."] }
+            {
+              "q": "How do I register?",
+              "a": [
+                "Choose a course, then use the [registration page](rcf-classes/registration/) or a WhatsApp button. You will be sent the schedule, fee and availability information. Registration is confirmed by the teacher; it is not automatic."
+              ]
+            },
+            {
+              "q": "Why are the days, times and fees not published?",
+              "a": [
+                "Because they change, and an out-of-date timetable helps nobody. Times are also sometimes arranged around the students who want a particular course. Where nothing has been settled, this site says so rather than inventing a schedule."
+              ]
+            },
+            {
+              "q": "Is any payment taken on this website?",
+              "a": [
+                "No payment is processed on this website. Fees are paid by bank transfer using the instructions on the class-fees panel, and the receipt is sent through WhatsApp. Never enter card details, passwords, PINs or one-time codes anywhere on this site."
+              ]
+            },
+            {
+              "q": "Can I join in the middle of a course?",
+              "a": [
+                "It depends on the course and how far it has gone. The elocution courses run as a six-month sequence, so joining late is more difficult. Ask, and you will be told honestly."
+              ]
+            }
           ]
         },
         {
@@ -652,12 +1229,42 @@
           "variant": "tint",
           "faq": true,
           "items": [
-            { "q": "Are the courses online?", "a": ["Yes. All courses are conducted online, which allows students anywhere in the country to attend."] },
-            { "q": "What do I need in order to attend?", "a": ["A device with an internet connection, a notebook and a pen. The elocution courses also need a working microphone, since the work is spoken. Literature courses need the prescribed texts."] },
-            { "q": "What if my internet connection is weak?", "a": ["Mention it when you enquire. It is a common situation and better discussed in advance than discovered in the first class."] },
-            { "q": "Will I be sent a meeting link?", "a": ["Joining instructions are sent privately once your place is confirmed. Links and passwords are never published on this website."] },
-            { "q": "Can examination results be guaranteed?", "a": ["No, and nobody honest will guarantee them. Results depend on the candidate's own work. What the courses provide is clear teaching, guided practice, individual correction and regular revision."] },
-            { "q": "Who teaches the courses?", "a": ["Every course is taught by Rohana Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."] }
+            {
+              "q": "Are the courses online?",
+              "a": [
+                "Yes. All courses are conducted online, which allows students anywhere in the country to attend."
+              ]
+            },
+            {
+              "q": "What do I need in order to attend?",
+              "a": [
+                "A device with an internet connection, a notebook and a pen. The elocution courses also need a working microphone, since the work is spoken. Literature courses need the prescribed texts."
+              ]
+            },
+            {
+              "q": "What if my internet connection is weak?",
+              "a": [
+                "Mention it when you enquire. It is a common situation and better discussed in advance than discovered in the first class."
+              ]
+            },
+            {
+              "q": "Will I be sent a meeting link?",
+              "a": [
+                "Joining instructions are sent privately once your place is confirmed. Links and passwords are never published on this website."
+              ]
+            },
+            {
+              "q": "Can examination results be guaranteed?",
+              "a": [
+                "No, and nobody honest will guarantee them. Results depend on the candidate's own work. What the courses provide is clear teaching, guided practice, individual correction and regular revision."
+              ]
+            },
+            {
+              "q": "Who teaches the courses?",
+              "a": [
+                "Every course is taught by Rohana Fernando. His qualifications are set out on the [Our Staff](rcf-classes/our-staff/) page."
+              ]
+            }
           ]
         },
         {
@@ -665,8 +1272,14 @@
           "heading": "Still have a question?",
           "title": "WhatsApp",
           "buttons": [
-            { "label": "Ask About a Course", "message": "Hello, I would like information about the courses at RCF Online Academy. Please send me the schedule, fees and registration details." },
-            { "label": "Ask something else", "message": "Hello, I have a question about RCF Online Academy. " }
+            {
+              "label": "Ask About a Course",
+              "message": "Hello, I would like information about the courses at RCF Online Academy. Please send me the schedule, fees and registration details."
+            },
+            {
+              "label": "Ask something else",
+              "message": "Hello, I have a question about RCF Online Academy. "
+            }
           ]
         }
       ]
