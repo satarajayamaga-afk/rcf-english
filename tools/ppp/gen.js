@@ -44,22 +44,23 @@ function planPage(key) {
   g.plans.forEach((p, i) => {
     const [unit, title, act, focus, outcome, materials, pres, prac, prod, close, hw] = p;
     blocks.push({
-      type: "table", level: "h2",
+      type: "plan", level: "h2",
+      eyebrow: `${g.label} · 40 minutes`,
       heading: `Plan ${i + 1}: Unit ${unit}, ${title}`,
-      intro: [
-        `**Book activity:** ${act}. **Focus:** ${focus}.`,
-        `**Learning outcome:** by the end of the lesson, ${who} will be able to ${outcome}`,
-        `**Materials:** ${materials}.`
+      facts: [
+        ["Book activity", act],
+        ["Focus", focus],
+        ["Learning outcome", `By the end of the lesson, ${who} will be able to ${outcome}`],
+        ["Materials", materials]
       ],
-      caption: `${g.label}, Unit ${unit}: ${focus}. A 40-minute PPP lesson.`,
-      columns: ["Stage", "Time", "What happens"],
-      rowStyles: STAGE_STYLES,
-      rows: [
-        ["Presentation", "10 min", join(pres)],
-        ["Practice", "12 min", join(prac)],
-        ["Production", "13 min", join(prod)],
-        ["Check and close", "5 min", `${close} **Homework:** ${hw}`]
-      ]
+      stages: [
+        { style: "presentation", name: "Presentation", time: "10 min", text: [join(pres)] },
+        { style: "practice", name: "Practice", time: "12 min", text: [join(prac)] },
+        { style: "production", name: "Production", time: "13 min", text: [join(prod)] },
+        { style: "close", name: "Check and close", time: "5 min", text: [close] }
+      ],
+      homework: hw,
+      caption: `${g.label}, Unit ${unit}: ${focus}. A 40-minute PPP lesson.`
     });
   });
   blocks.push(PREMIUM);

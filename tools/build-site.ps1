@@ -937,6 +937,49 @@ function RenderBlock($block) {
             return $html + '</tbody></table></div></div></section>'
         }
 
+        'plan' {
+            # A lesson plan as a card rather than a grid: a banner, an at-a-
+            # glance panel, then one panel for each stage in that stage's
+            # colour. A teacher glancing down a printed page finds the stage
+            # they are in by its colour, and reads it in words to be sure.
+            $html = (SectionOpen $block) + '<article class="plan">'
+            $html += '<header class="plan__banner">'
+            $eyebrow = [string](P $block 'eyebrow' '')
+            if ($eyebrow) { $html += '<p class="plan__eyebrow">' + (E $eyebrow) + '</p>' }
+            $level = [string](P $block 'level' 'h2')
+            $html += "<$level class=""plan__title"">" + (Inline (P $block 'heading')) + "</$level></header>"
+
+            $facts = AsList (P $block 'facts')
+            if ($facts.Count) {
+                $html += '<div class="plan__panel"><h3 class="plan__label">At a glance</h3><dl class="plan__facts">'
+                foreach ($f in $facts) {
+                    $pair = AsList $f
+                    if ($pair.Count -lt 2) { continue }
+                    $html += '<div><dt>' + (E $pair[0]) + '</dt><dd>' + (Inline $pair[1]) + '</dd></div>'
+                }
+                $html += '</dl></div>'
+            }
+
+            $allowed = @('presentation', 'practice', 'production', 'close')
+            foreach ($stage in (AsList (P $block 'stages'))) {
+                $style = [string](P $stage 'style' 'close')
+                if ($allowed -notcontains $style) {
+                    [void]$script:Warnings.Add("Plan stage style '$style' on '$($script:PageSlug)' is not one of: $($allowed -join ', ')")
+                }
+                $html += '<section class="plan__stage plan__stage--' + (E $style) + '">'
+                $html += '<h3 class="plan__stagehead"><span class="plan__stagename">' + (E (P $stage 'name')) + '</span>'
+                $time = [string](P $stage 'time' '')
+                if ($time) { $html += '<span class="plan__time">' + (E $time) + '</span>' }
+                $html += '</h3><div class="plan__stagebody">' + (Paragraphs (P $stage 'text')) + '</div></section>'
+            }
+
+            $homework = P $block 'homework'
+            if ($homework) { $html += '<p class="plan__homework"><span>Homework</span> ' + (Inline $homework) + '</p>' }
+            $caption = P $block 'caption'
+            if ($caption) { $html += '<p class="plan__caption">' + (Inline $caption) + '</p>' }
+            return $html + '</article></div></section>'
+        }
+
         'quote' {
             $html = (SectionOpen $block) + (SectionHead $block)
             $html += '<blockquote class="quote"><p>' + (Inline (P $block 'text')) + '</p>'
@@ -1212,8 +1255,13 @@ function RenderBlock($block) {
             $img = [string](P $block 'image')
             if (-not $img) { return '' }
             $html = (SectionOpen $block) + (SectionHead $block)
-            $html += '<figure class="banner">'
             $wAttr = [string](P $block 'width'); $hAttr = [string](P $block 'height')
+            # A standing poster - the shape made for WhatsApp - is capped and
+            # centred. At the full width of the page it would be taller than
+            # the screen and push the course details out of sight.
+            $shape = ''
+            if ($wAttr -and $hAttr -and ([int]$hAttr -gt [int]$wAttr)) { $shape = ' banner--portrait' }
+            $html += '<figure class="banner' + $shape + '">'
             $dims = ''
             if ($wAttr -and $hAttr) { $dims = ' width="' + (E $wAttr) + '" height="' + (E $hAttr) + '"' }
             $html += '<img class="banner__img" src="' + (E (Url $img)) + '" alt="' + (E ([string](P $block 'alt'))) + '"' + $dims + ' loading="lazy" decoding="async">'
@@ -3523,6 +3571,7 @@ function RenderClasses($block) {
         return $html + '</div></section>'
     }
 
+    $showPosters = (P $block 'posters') -eq $true
     $soonAttr = ''
     if ($startingOnly) { $soonAttr = ' data-starting-soon' }
     if ($feature) { $html += '<div class="class-features"' + $soonAttr + '>' } else { $html += '<div class="grid grid--3"' + $soonAttr + '>' }
@@ -3560,6 +3609,16 @@ function RenderClasses($block) {
         }
         else {
             $html += '<article class="card class-card"' + $startsAttr + '>'
+            # A compact card normally carries no artwork. Where a page asks for
+            # posters it shows one, because a poster is what the teacher made to
+            # be seen - a description of a poster is not the same thing.
+            if ($showPosters -and $img) {
+                $imgW = [int](P $c 'imageWidth' 1200)
+                $imgH = [int](P $c 'imageHeight' 675)
+                $shape = ''
+                if ($imgH -gt $imgW) { $shape = ' class-card__poster--portrait' }
+                $html += '<figure class="class-card__poster' + $shape + '"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $c 'imageAlt'))) + '" width="' + $imgW + '" height="' + $imgH + '" loading="lazy" decoding="async"></figure>'
+            }
         }
 
         $html += '<div class="tag-row">'

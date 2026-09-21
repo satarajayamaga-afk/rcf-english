@@ -2329,6 +2329,132 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   table.stacked td > .td__v { flex: 1 1 auto; min-width: 0; }
 }
 
+/* 10b. Lesson plan cards -------------------------------------------------
+   A plan is a card, not a grid: a banner, an at-a-glance panel, then one
+   panel for each stage in that stage's own colour. The four colours are the
+   same ones the coded tables use, and they are the site's own brand colours
+   rather than a new palette. Nothing is carried by colour alone - every
+   stage is named, and named again in the printed copy. */
+
+.plan {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+}
+.plan__banner {
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--navy-800);
+  border-bottom: 3px solid var(--gold-400);
+}
+.plan__eyebrow {
+  margin: 0 0 var(--sp-1);
+  color: var(--gold-400);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.plan__title { margin: 0; color: #fff; font-size: var(--step-2); }
+
+.plan__panel {
+  margin: var(--sp-5);
+  padding: var(--sp-4);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.plan__label {
+  margin: 0 0 var(--sp-3);
+  color: var(--ink-500);
+  font-size: var(--step--1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.plan__facts { display: grid; gap: var(--sp-3); margin: 0; }
+.plan__facts > div { display: flex; gap: var(--sp-3); }
+.plan__facts dt { flex: 0 0 32%; margin: 0; font-weight: 700; color: var(--navy-800); }
+.plan__facts dd { flex: 1 1 auto; min-width: 0; margin: 0; }
+
+.plan__stage {
+  --stage: var(--line-strong);
+  --stage-ink: var(--ink-700);
+  --stage-bg: var(--surface-alt);
+  margin: var(--sp-5);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--stage);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.plan__stage--presentation { --stage: var(--navy-600); --stage-ink: var(--navy-800); --stage-bg: #eff4fb; }
+.plan__stage--practice { --stage: var(--teal-600); --stage-ink: var(--teal-800); --stage-bg: #edf7f4; }
+.plan__stage--production { --stage: var(--gold-600); --stage-ink: var(--gold-800); --stage-bg: #fdf6e8; }
+.plan__stage--close { --stage: var(--ink-300); --stage-ink: var(--ink-700); --stage-bg: var(--surface-alt); }
+
+.plan__stagehead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin: 0;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--stage-bg);
+  border-bottom: 1px solid var(--line);
+  color: var(--stage-ink);
+  font-size: var(--step-0);
+}
+.plan__stagename { letter-spacing: 0.05em; text-transform: uppercase; }
+.plan__time { flex: 0 0 auto; font-size: var(--step--1); font-weight: 600; }
+.plan__stagebody { padding: var(--sp-4); }
+.plan__stagebody > :first-child { margin-top: 0; }
+.plan__stagebody > :last-child { margin-bottom: 0; }
+
+.plan__homework {
+  margin: var(--sp-5);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface-alt);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+}
+.plan__homework > span {
+  margin-right: var(--sp-2);
+  color: var(--navy-800);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.plan__caption {
+  margin: calc(var(--sp-5) * -1 + var(--sp-2)) var(--sp-5) var(--sp-5);
+  color: var(--ink-500);
+  font-size: var(--step--1);
+}
+
+@media (max-width: 719px) {
+  .plan__panel,
+  .plan__stage,
+  .plan__homework { margin: var(--sp-4) var(--sp-3); }
+  .plan__facts > div { display: block; }
+  .plan__facts dt { margin-bottom: var(--sp-1); }
+  .plan__stagehead { flex-wrap: wrap; }
+}
+
+@media print {
+  /* A stage split across two sheets is the one thing that must not happen:
+     a teacher reads these standing in front of a class. */
+  .plan { box-shadow: none; break-inside: auto; }
+  .plan__stage,
+  .plan__panel,
+  .plan__homework { break-inside: avoid; }
+  .plan__banner {
+    break-after: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
 /* 11. Filters, search and result lists ----------------------------------- */
 
 .toolbar {
@@ -2911,6 +3037,22 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   max-height: 560px;
   margin-inline: auto;
 }
+
+/* The same poster inside a compact card, where there is less room for it. */
+.class-card__poster {
+  margin: 0 0 var(--sp-4);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.class-card__poster img { display: block; width: 100%; height: auto; }
+.class-card__poster--portrait img {
+  width: auto;
+  max-width: 100%;
+  max-height: 420px;
+  margin-inline: auto;
+}
 /* The details card joins the poster above it into one piece. A course with no
    poster keeps the ordinary rounded card. */
 .class-feature__poster + .class-feature__body { border-top-left-radius: 0; border-top-right-radius: 0; }
@@ -3369,6 +3511,14 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   display: block;
   width: 100%;
   height: auto;
+}
+/* A standing poster is capped and centred: at the full width of the page it
+   would be taller than the screen. */
+.banner--portrait .banner__img {
+  width: auto;
+  max-width: 100%;
+  max-height: 620px;
+  margin-inline: auto;
 }
 .banner__caption {
   padding: var(--sp-3) var(--sp-4);

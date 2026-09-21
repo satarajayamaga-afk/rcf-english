@@ -44,7 +44,7 @@ function content(page) {
     if (prev && prev.type === "prose" && !(prev.text || []).length) { prev._pageBreak = true; b._pageBreak = false; }
   });
   // never break before the first content on the page
-  for (const b of list) { if (b._pageBreak && first) b._pageBreak = false; if (b._pageBreak) break; if (b.type === "table") first = false; }
+  for (const b of list) { if (b._pageBreak && first) b._pageBreak = false; if (b._pageBreak) break; if (b.type === "table" || b.type === "plan") first = false; }
   return list;
 }
 
@@ -99,6 +99,52 @@ function table(block, total) {
   const b = ["top", "left", "bottom", "right", "insideH", "insideV"].map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="8FA3BF"/>`).join("");
   return `<w:tbl><w:tblPr><w:tblW w:w="${total}" w:type="dxa"/><w:tblBorders>${b}</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${grid.map((g) => `<w:gridCol w:w="${g}"/>`).join("")}</w:tblGrid>${head}${rows}</w:tbl><w:p/>`;
 }
+// ---------- the plan card, in Word ----------
+// Word has no panels, so each panel is a one-column table: a shaded header
+// row for the stage and its time, and a plain row underneath for the text.
+const BORDERS = (colour) => ["top", "left", "bottom", "right", "insideH", "insideV"]
+  .map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="${colour}"/>`).join("");
+
+function tcell(text, w, o = {}) {
+  const shd = o.fill ? `<w:shd w:val="clear" w:color="auto" w:fill="${o.fill}"/>` : "";
+  const bar = o.bar ? `<w:tcBorders><w:left w:val="single" w:sz="24" w:space="0" w:color="${o.bar}"/></w:tcBorders>` : "";
+  return `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/>${shd}${bar}</w:tcPr>${para(String(text || ""), "TableText", { bold: o.bold, colour: o.colour })}</w:tc>`;
+}
+const trow = (cells) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${cells}</w:tr>`;
+const tbl = (rows, grid, border) =>
+  `<w:tbl><w:tblPr><w:tblW w:w="${grid.reduce((a, b) => a + b, 0)}" w:type="dxa"/><w:tblBorders>${BORDERS(border || "8FA3BF")}</w:tblBorders>` +
+  `<w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr>` +
+  `<w:tblGrid>${grid.map((g) => `<w:gridCol w:w="${g}"/>`).join("")}</w:tblGrid>${rows}</w:tbl>`;
+
+function planDocx(block, total) {
+  let out = "";
+  const banner = (block.eyebrow ? trow(tcell(block.eyebrow, total, { fill: "0F2647", colour: "C2913F", bold: true })) : "") +
+    trow(tcell(block.heading || "", total, { fill: "0F2647", colour: "FFFFFF", bold: true }));
+  out += tbl(banner, [total], "0F2647") + "<w:p/>";
+
+  if (block.facts && block.facts.length) {
+    const w1 = Math.round(total * 0.28);
+    const grid = [w1, total - w1];
+    const rows = block.facts
+      .map(([label, value]) => trow(tcell(label, grid[0], { bold: true, fill: "F2F5FA" }) + tcell(value, grid[1])))
+      .join("");
+    out += para("At a glance", "TableText", { bold: true, keep: true }) + tbl(rows, grid) + "<w:p/>";
+  }
+
+  for (const stage of block.stages || []) {
+    const c = STAGE_COLOURS[stage.style] || STAGE_COLOURS.close;
+    const head = [stage.name, stage.time].filter(Boolean).join("  ·  ");
+    out += tbl(
+      trow(tcell(head, total, { fill: c.fill, colour: c.ink, bold: true, bar: c.bar })) +
+      trow(tcell((stage.text || []).join(" "), total, { bar: c.bar })),
+      [total]) + "<w:p/>";
+  }
+
+  if (block.homework) { out += para("**Homework:** " + block.homework, "TableText") + "<w:p/>"; }
+  if (block.caption) { out += para("*" + block.caption + "*", "TableText") + "<w:p/>"; }
+  return out;
+}
+
 function docxBody(page, landscape) {
   const margin = 900;
   const total = (landscape ? 16838 : 11906) - 2 * margin;
@@ -118,6 +164,9 @@ function docxBody(page, landscape) {
       if (b.heading) body += para(b.heading, hs[b.level || "h2"], { keep: true });
       for (const t of b.intro || []) body += para(t, null, { keep: true });
       body += table(b, total);
+    } else if (b.type === "plan") {
+      if (b._pageBreak) body += PB;
+      body += planDocx(b, total);
     }
   }
   const pg = landscape ? '<w:pgSz w:w="16838" w:h="11906" w:orient="landscape"/>' : '<w:pgSz w:w="11906" w:h="16838"/>';
@@ -195,7 +244,22 @@ function printHtml(page, landscape) {
   for (const b of content(page)) {
     const tag = b.level === "h3" || b.level === "h4" ? b.level : "h2";
     const pb = b._pageBreak ? ' class="pb"' : "";
-    if (b.type === "callout") body += `<div class="note"><h4>${h(b.title)}</h4>${b.text.map((t) => `<p>${htmlInline(t)}</p>`).join("")}</div>`;
+    if (b.type === "plan") {
+      const facts = (b.facts || []).map(([k, v]) => `<div><dt>${h(k)}</dt><dd>${htmlInline(String(v))}</dd></div>`).join("");
+      const stages = (b.stages || []).map(function (s) {
+        return `<section class="pl-stage s-${h(s.style || "close")}">` +
+          `<h4><span>${h(s.name)}</span><em>${h(s.time || "")}</em></h4>` +
+          `<div class="pl-body"><p>${(s.text || []).map(htmlInline).join(" ")}</p></div></section>`;
+      }).join("");
+      body += `<article class="plan${b._pageBreak ? " pb" : ""}">` +
+        `<header class="pl-banner">${b.eyebrow ? `<p class="pl-eyebrow">${h(b.eyebrow)}</p>` : ""}<h2>${htmlInline(b.heading || "")}</h2></header>` +
+        (facts ? `<div class="pl-panel"><h4 class="pl-label">At a glance</h4><dl class="pl-facts">${facts}</dl></div>` : "") +
+        stages +
+        (b.homework ? `<p class="pl-hw"><span>Homework</span> ${htmlInline(b.homework)}</p>` : "") +
+        (b.caption ? `<p class="pl-cap">${htmlInline(b.caption)}</p>` : "") +
+        `</article>`;
+    }
+    else if (b.type === "callout") body += `<div class="note"><h4>${h(b.title)}</h4>${b.text.map((t) => `<p>${htmlInline(t)}</p>`).join("")}</div>`;
     else if (b.type === "prose") body += `<section${pb}>${b.heading ? `<${tag}>${htmlInline(b.heading)}</${tag}>` : ""}${(b.text || []).map((t) => `<p>${htmlInline(t)}</p>`).join("")}</section>`;
     else if (b.type === "table") {
       const blank = (r) => r.slice(1).every((c) => !c);
@@ -235,6 +299,34 @@ ${Object.entries(STAGE_COLOURS).map(([k, c]) =>
 tr.s-${k} td:first-child { border-left: 2.25pt solid #${c.bar}; color: #${c.ink}; font-weight: 700; }`).join("\n")}
 a { color: #1f3a5f; }
 .pb { break-before: page; }
+
+/* The plan card. Colours are forced: a PDF is not paper, and Edge drops
+   backgrounds when printing unless it is told to keep them. */
+.plan { border: 1px solid #c4cdd8; border-radius: 6px; overflow: hidden; margin: 10px 0 14px; break-inside: avoid; }
+.pl-banner { background: #0f2647; border-bottom: 2pt solid #c2913f; padding: 6px 10px;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; break-after: avoid; }
+.pl-banner h2 { color: #fff; margin: 0; font-size: 13pt; }
+.pl-eyebrow { color: #c2913f; margin: 0 0 1px; font-size: 8pt; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.pl-panel { margin: 8px; padding: 6px 8px; border: 1px solid #dde3ea; border-radius: 4px; background: #f7f9fb;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; break-inside: avoid; }
+.pl-label { margin: 0 0 4px; color: #56616f; font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; }
+.pl-facts { margin: 0; }
+.pl-facts div { display: flex; gap: 8px; margin-bottom: 2px; }
+.pl-facts dt { flex: 0 0 26%; margin: 0; font-weight: 700; color: #0f2647; }
+.pl-facts dd { flex: 1 1 auto; margin: 0; }
+.pl-stage { margin: 8px; border: 1px solid #dde3ea; border-radius: 4px; overflow: hidden; break-inside: avoid; }
+.pl-stage h4 { display: flex; justify-content: space-between; gap: 8px; margin: 0; padding: 4px 8px;
+  border-bottom: 1px solid #dde3ea; font-size: 10pt; letter-spacing: 0.04em; text-transform: uppercase;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.pl-stage h4 em { font-style: normal; font-size: 8.5pt; }
+.pl-body { padding: 5px 8px; }
+.pl-body p { margin: 0; }
+.pl-hw { margin: 8px; padding: 4px 8px; border: 1px dashed #c4cdd8; border-radius: 4px; break-inside: avoid; }
+.pl-hw span { color: #0f2647; font-weight: 700; font-size: 8pt; letter-spacing: 0.05em; text-transform: uppercase; margin-right: 4px; }
+.pl-cap { margin: 0 8px 8px; color: #56616f; font-size: 8pt; }
+${Object.entries(STAGE_COLOURS).map(([k, c]) =>
+  `.pl-stage.s-${k} { border-left: 3pt solid #${c.bar}; }
+.pl-stage.s-${k} h4 { background: #${c.fill}; color: #${c.ink}; }`).join("\n")}
 h4 { font-size: 10.5pt; margin: 8px 0 2px; color: #1f3a5f; break-after: avoid; }
 .foot { margin-top: 16px; color: #666; font-size: 8.5pt; }
 </style></head><body>${body}</body></html>`;
