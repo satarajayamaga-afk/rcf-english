@@ -2455,6 +2455,62 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   }
 }
 
+/* 10c. Topic tags, share row and article reader -------------------------- */
+
+/* Tags sit on the navy page hero, so they are pale outlines, not filled
+   chips that would compete with the buttons below them. */
+.page-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin: var(--sp-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.page-hero__tags li {
+  padding: 0.2rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  color: #e6ecf5;
+  font-size: var(--step--1);
+}
+
+.share__links { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: 0; padding: 0; list-style: none; }
+.share__tags { margin: var(--sp-4) 0 0; color: var(--ink-500); font-size: var(--step--1); overflow-wrap: anywhere; }
+.share__tags > span {
+  margin-right: var(--sp-2);
+  color: var(--navy-800);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.reader { border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; background: #fff; }
+.reader__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface-alt);
+  border-bottom: 1px solid var(--line);
+}
+.reader__src { margin: 0; color: var(--ink-700); font-size: var(--step--1); }
+.reader__frame { display: block; width: 100%; height: min(85vh, 1100px); border: 0; background: var(--surface-alt); }
+
+/* A phone or tablet cannot show a PDF inside a page - Android shows an empty
+   box. There the frame is dropped and the button above it does the job,
+   opening the phone's own PDF viewer. */
+@media (max-width: 719px), (hover: none) and (pointer: coarse) {
+  .reader__frame { display: none; }
+  .reader__bar { border-bottom: 0; }
+}
+
+@media print {
+  .share, .reader__frame { display: none !important; }
+}
+
 /* 11. Filters, search and result lists ----------------------------------- */
 
 .toolbar {

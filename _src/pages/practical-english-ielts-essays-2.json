@@ -1,6 +1,5 @@
 {
   "_comment": "IELTS Writing Task 2 - model essays 6 to 10. Original RCF English work throughout. Continues the five question types begun in practical-english-ielts-essays.json. No fabricated statistics in any model.",
-
   "pages": [
     {
       "slug": "practical-english/ielts/model-essays/space-exploration",
@@ -8,24 +7,40 @@
       "metaTitle": "IELTS Essay: Should Money Be Spent on Space Exploration? | RCF English",
       "description": "An original IELTS Task 2 opinion essay on government spending on space exploration, with a plan, the model answer and notes on disagreeing with a premise.",
       "keywords": "IELTS space exploration essay, IELTS agree or disagree essay, IELTS opinion essay model answer",
-      "kicker": "Model essay 6 of 10: opinion",
+      "kicker": "Model essay 6 of 20: opinion",
       "kind": "page",
       "schema": "LearningResource",
-      "resourceType": "model answers",
-      "educationalLevel": "IELTS",
+      "resourceType": "Model answer",
+      "educationalLevel": "IELTS Academic and General Training",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: opinion. This one rewards a candidate who is willing to attack the assumption buried in the question." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: opinion. This one rewards a candidate who is willing to attack the assumption buried in the question."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -51,13 +66,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "State the position: **disagree**, and flag that the statement rests on a false comparison."],
-            ["Body 1", "The strongest form of the opposing case, conceded properly: urgent needs, real opportunity cost."],
-            ["Body 2", "The scale objection: space budgets are small relative to the problems they are compared with, so the trade-off is largely illusory."],
-            ["Body 3", "The direct-benefit argument: much of what space programmes produce is used on Earth - weather, navigation, climate observation."],
-            ["Conclusion", "Reframe: the real question is not space versus Earth, but whether public money is spent well."]
+            [
+              "Introduction",
+              "State the position: **disagree**, and flag that the statement rests on a false comparison."
+            ],
+            [
+              "Body 1",
+              "The strongest form of the opposing case, conceded properly: urgent needs, real opportunity cost."
+            ],
+            [
+              "Body 2",
+              "The scale objection: space budgets are small relative to the problems they are compared with, so the trade-off is largely illusory."
+            ],
+            [
+              "Body 3",
+              "The direct-benefit argument: much of what space programmes produce is used on Earth - weather, navigation, climate observation."
+            ],
+            [
+              "Conclusion",
+              "Reframe: the real question is not space versus Earth, but whether public money is spent well."
+            ]
           ]
         },
         {
@@ -92,11 +125,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "The case deserves to be stated fairly first.", "def": "Announces a concession and commits you to making it properly." },
-            { "term": "the comparison it depends on is not a real one", "def": "Challenges a premise in nine words." },
-            { "term": "is a strange place to begin", "def": "Dismissive without being rude - a register that scores well." },
-            { "term": "it would have to be spent again under another name", "def": "Shows that an apparent saving is not one." },
-            { "term": "the question is put the wrong way round", "def": "Save this for a conclusion where you have earned it by arguing the point first." }
+            {
+              "term": "The case deserves to be stated fairly first.",
+              "def": "Announces a concession and commits you to making it properly."
+            },
+            {
+              "term": "the comparison it depends on is not a real one",
+              "def": "Challenges a premise in nine words."
+            },
+            {
+              "term": "is a strange place to begin",
+              "def": "Dismissive without being rude - a register that scores well."
+            },
+            {
+              "term": "it would have to be spent again under another name",
+              "def": "Shows that an apparent saving is not one."
+            },
+            {
+              "term": "the question is put the wrong way round",
+              "def": "Save this for a conclusion where you have earned it by arguing the point first."
+            }
           ]
         },
         {
@@ -121,41 +169,87 @@
           ]
         },
         {
+          "type": "share",
+          "heading": "Share this",
+          "level": "h2",
+          "text": "IELTS Writing Task 2 sample answer: Spending on Space Exploration, with the plan, useful language and how it meets the four criteria.",
+          "hashtags": [
+            "IELTS",
+            "IELTSWriting",
+            "IELTSTask2",
+            "IELTSEssay",
+            "IELTSPreparation"
+          ]
+        },
+        {
           "type": "related",
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 7: Museums and tourism", "url": "practical-english/ielts/model-essays/museums-and-tourism/", "text": ["Discussion: both views and your opinion."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 7: Museums and tourism",
+              "url": "practical-english/ielts/model-essays/museums-and-tourism/",
+              "text": [
+                "Discussion: both views and your opinion."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
+      ],
+      "tags": [
+        "IELTS Writing Task 2",
+        "Opinion essay",
+        "Science and space",
+        "Academic and General Training"
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/museums-and-tourism",
       "title": "Model Essay 7: Museums, Tourists and Local People",
       "metaTitle": "IELTS Essay: Should Museums Serve Tourists or Locals? | RCF English",
       "description": "An original IELTS Task 2 discussion essay on whether museums should serve tourists or local people, with a plan, model answer and marking notes.",
       "keywords": "IELTS museums essay, IELTS discuss both views model answer, IELTS tourism essay task 2",
-      "kicker": "Model essay 7 of 10: discussion",
+      "kicker": "Model essay 7 of 20: discussion",
       "kind": "page",
       "schema": "LearningResource",
-      "resourceType": "model answers",
-      "educationalLevel": "IELTS",
+      "resourceType": "Model answer",
+      "educationalLevel": "IELTS Academic and General Training",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: discussion. A narrow topic, which is harder than a broad one - there is nowhere to hide behind general statements." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: discussion. A narrow topic, which is harder than a broad one - there is nowhere to hide behind general statements."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -172,13 +266,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Note that the two aims conflict less often than the question implies, but that where they do conflict, one must win. Position: **local first**."],
-            ["Body 1", "The tourist case: revenue, and the fact that visitor income often funds everything else the museum does."],
-            ["Body 2", "The local case: a museum that no local person visits twice becomes a spectacle rather than an institution - and the difference shows in what it collects."],
-            ["Body 3", "My position and the practical test: who does the museum serve on a wet Tuesday in February?"],
-            ["Conclusion", "Serving locals well is what makes a museum worth travelling to."]
+            [
+              "Introduction",
+              "Note that the two aims conflict less often than the question implies, but that where they do conflict, one must win. Position: **local first**."
+            ],
+            [
+              "Body 1",
+              "The tourist case: revenue, and the fact that visitor income often funds everything else the museum does."
+            ],
+            [
+              "Body 2",
+              "The local case: a museum that no local person visits twice becomes a spectacle rather than an institution - and the difference shows in what it collects."
+            ],
+            [
+              "Body 3",
+              "My position and the practical test: who does the museum serve on a wet Tuesday in February?"
+            ],
+            [
+              "Conclusion",
+              "Serving locals well is what makes a museum worth travelling to."
+            ]
           ]
         },
         {
@@ -213,11 +325,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "The two aims do pull apart at the edges, however", "def": "Concedes that a conflict is limited while keeping it real enough to write about." },
-            { "term": "might be admirable in principle and unable to open on Mondays", "def": "Concession with a dry edge. Register like this is credited under Lexical Resource." },
-            { "term": "My own test is a simple one.", "def": "Introduces a concrete criterion rather than an abstract claim." },
-            { "term": "has become an attraction rather than a museum", "def": "Draws a distinction between two words the reader assumed were the same." },
-            { "term": "In the end the two aims are not really opposed.", "def": "Resolves a discussion essay without pretending the disagreement never existed." }
+            {
+              "term": "The two aims do pull apart at the edges, however",
+              "def": "Concedes that a conflict is limited while keeping it real enough to write about."
+            },
+            {
+              "term": "might be admirable in principle and unable to open on Mondays",
+              "def": "Concession with a dry edge. Register like this is credited under Lexical Resource."
+            },
+            {
+              "term": "My own test is a simple one.",
+              "def": "Introduces a concrete criterion rather than an abstract claim."
+            },
+            {
+              "term": "has become an attraction rather than a museum",
+              "def": "Draws a distinction between two words the reader assumed were the same."
+            },
+            {
+              "term": "In the end the two aims are not really opposed.",
+              "def": "Resolves a discussion essay without pretending the disagreement never existed."
+            }
           ]
         },
         {
@@ -242,41 +369,87 @@
           ]
         },
         {
+          "type": "share",
+          "heading": "Share this",
+          "level": "h2",
+          "text": "IELTS Writing Task 2 sample answer: Museums, Tourists and Local People, with the plan, useful language and how it meets the four criteria.",
+          "hashtags": [
+            "IELTS",
+            "IELTSWriting",
+            "IELTSTask2",
+            "IELTSEssay",
+            "IELTSPreparation"
+          ]
+        },
+        {
           "type": "related",
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 8: Plastic waste", "url": "practical-english/ielts/model-essays/plastic-waste/", "text": ["Causes and solutions."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 8: Plastic waste",
+              "url": "practical-english/ielts/model-essays/plastic-waste/",
+              "text": [
+                "Causes and solutions."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
+      ],
+      "tags": [
+        "IELTS Writing Task 2",
+        "Discussion essay",
+        "Tourism and culture",
+        "Academic and General Training"
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/plastic-waste",
       "title": "Model Essay 8: Plastic Waste",
       "metaTitle": "IELTS Essay: Plastic Waste Causes and Solutions | RCF English",
       "description": "An original IELTS Task 2 causes and solutions essay on plastic waste, with a plan, the model answer and notes on avoiding the recycling cliche.",
       "keywords": "IELTS plastic waste essay, IELTS causes and solutions essay, IELTS environment essay model answer",
-      "kicker": "Model essay 8 of 10: causes and solutions",
+      "kicker": "Model essay 8 of 20: causes and solutions",
       "kind": "page",
       "schema": "LearningResource",
-      "resourceType": "model answers",
-      "educationalLevel": "IELTS",
+      "resourceType": "Model answer",
+      "educationalLevel": "IELTS Academic and General Training",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: causes and solutions. Environment questions attract the most memorised writing of any topic, which makes an unexpected point unusually valuable here." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: causes and solutions. Environment questions attract the most memorised writing of any topic, which makes an unexpected point unusually valuable here."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -302,13 +475,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Signal both halves and preview the argument: plastic is cheap and its costs are paid by someone else."],
-            ["Body 1", "Causes: plastic is extraordinarily cheap to produce and the cost of disposal falls on no one who makes the decision. Plus the shift to single-use packaging."],
-            ["Body 2", "Why recycling has not solved it: much plastic is not economically recyclable, and the belief that it is has reduced pressure to use less."],
-            ["Body 3", "Solutions that follow: put disposal cost onto producers, and require reusable packaging where it is practical."],
-            ["Conclusion", "The principle: make the person who chooses the packaging pay for its disposal."]
+            [
+              "Introduction",
+              "Signal both halves and preview the argument: plastic is cheap and its costs are paid by someone else."
+            ],
+            [
+              "Body 1",
+              "Causes: plastic is extraordinarily cheap to produce and the cost of disposal falls on no one who makes the decision. Plus the shift to single-use packaging."
+            ],
+            [
+              "Body 2",
+              "Why recycling has not solved it: much plastic is not economically recyclable, and the belief that it is has reduced pressure to use less."
+            ],
+            [
+              "Body 3",
+              "Solutions that follow: put disposal cost onto producers, and require reusable packaging where it is practical."
+            ],
+            [
+              "Conclusion",
+              "The principle: make the person who chooses the packaging pay for its disposal."
+            ]
           ]
         },
         {
@@ -343,11 +534,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "almost none of the cost falls on the person who chooses to use it", "def": "States an externality in plain English. Transfers to pollution, traffic, water use and much else." },
-            { "term": "Any solution that does not change that will not work.", "def": "Sets a test your own solutions then have to pass - a useful discipline." },
-            { "term": "It is worth asking why X has not solved this", "def": "Introduces a paragraph that challenges an assumption the reader holds." },
-            { "term": "that reassurance is exactly what reduces the demand for change", "def": "A counter-intuitive causal claim in plain words." },
-            { "term": "should be required rather than merely encouraged", "def": "Distinguishes two strengths of policy - far more precise than *the government should take action*." }
+            {
+              "term": "almost none of the cost falls on the person who chooses to use it",
+              "def": "States an externality in plain English. Transfers to pollution, traffic, water use and much else."
+            },
+            {
+              "term": "Any solution that does not change that will not work.",
+              "def": "Sets a test your own solutions then have to pass - a useful discipline."
+            },
+            {
+              "term": "It is worth asking why X has not solved this",
+              "def": "Introduces a paragraph that challenges an assumption the reader holds."
+            },
+            {
+              "term": "that reassurance is exactly what reduces the demand for change",
+              "def": "A counter-intuitive causal claim in plain words."
+            },
+            {
+              "term": "should be required rather than merely encouraged",
+              "def": "Distinguishes two strengths of policy - far more precise than *the government should take action*."
+            }
           ]
         },
         {
@@ -372,41 +578,87 @@
           ]
         },
         {
+          "type": "share",
+          "heading": "Share this",
+          "level": "h2",
+          "text": "IELTS Writing Task 2 sample answer: Plastic Waste, with the plan, useful language and how it meets the four criteria.",
+          "hashtags": [
+            "IELTS",
+            "IELTSWriting",
+            "IELTSTask2",
+            "IELTSEssay",
+            "IELTSPreparation"
+          ]
+        },
+        {
           "type": "related",
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 9: Ageing populations", "url": "practical-english/ielts/model-essays/ageing-populations/", "text": ["Advantages and disadvantages."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 9: Ageing populations",
+              "url": "practical-english/ielts/model-essays/ageing-populations/",
+              "text": [
+                "Advantages and disadvantages."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
+      ],
+      "tags": [
+        "IELTS Writing Task 2",
+        "Causes and solutions essay",
+        "Environment",
+        "Academic and General Training"
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/ageing-populations",
       "title": "Model Essay 9: Ageing Populations",
       "metaTitle": "IELTS Essay: Ageing Populations Advantages and Disadvantages | RCF English",
       "description": "An original IELTS Task 2 advantages and disadvantages essay on ageing populations, with a plan, the model answer and notes on handling a topic you may know little about.",
       "keywords": "IELTS ageing population essay, IELTS advantages disadvantages model answer, IELTS task 2 society essay",
-      "kicker": "Model essay 9 of 10: advantages and disadvantages",
+      "kicker": "Model essay 9 of 20: advantages and disadvantages",
       "kind": "page",
       "schema": "LearningResource",
-      "resourceType": "model answers",
-      "educationalLevel": "IELTS",
+      "resourceType": "Model answer",
+      "educationalLevel": "IELTS Academic and General Training",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: advantages and disadvantages, without an *outweigh*. Read the instruction: this one asks you to discuss, not to decide." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: advantages and disadvantages, without an *outweigh*. Read the instruction: this one asks you to discuss, not to decide."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -433,13 +685,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Note that this is a symptom of success, which is the framing most essays miss. Signal both sides."],
-            ["Body 1", "Advantages: longer healthy working lives, accumulated skill, and unpaid work - especially childcare - that makes other people's employment possible."],
-            ["Body 2", "Disadvantages: the dependency arithmetic, and the concentration of healthcare cost in the final years."],
-            ["Body 3 (short)", "The observation that ties them together: which side dominates depends almost entirely on whether the added years are healthy ones."],
-            ["Conclusion", "Balanced, because the instruction is *discuss* - but with the healthy-years point restated as the thing that decides it."]
+            [
+              "Introduction",
+              "Note that this is a symptom of success, which is the framing most essays miss. Signal both sides."
+            ],
+            [
+              "Body 1",
+              "Advantages: longer healthy working lives, accumulated skill, and unpaid work - especially childcare - that makes other people's employment possible."
+            ],
+            [
+              "Body 2",
+              "Disadvantages: the dependency arithmetic, and the concentration of healthcare cost in the final years."
+            ],
+            [
+              "Body 3 (short)",
+              "The observation that ties them together: which side dominates depends almost entirely on whether the added years are healthy ones."
+            ],
+            [
+              "Conclusion",
+              "Balanced, because the instruction is *discuss* - but with the healthy-years point restated as the thing that decides it."
+            ]
           ]
         },
         {
@@ -474,11 +744,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "It is worth beginning by noticing what X actually shows.", "def": "Opens by reframing, and warns the reader that the obvious reading is about to be questioned." },
-            { "term": "a sign of success, even though it is almost always discussed as a crisis", "def": "Contrasts what something is with how it is described." },
-            { "term": "The advantages are easy to overlook.", "def": "A topic sentence that promises something non-obvious." },
-            { "term": "are, in effect, paying for", "def": "*In effect* lets you make a strong economic claim about something that involves no money." },
-            { "term": "depends far less on how long people live than on how healthy they are", "def": "A *less X than Y* construction to close on, at the point the examiner forms a final impression." }
+            {
+              "term": "It is worth beginning by noticing what X actually shows.",
+              "def": "Opens by reframing, and warns the reader that the obvious reading is about to be questioned."
+            },
+            {
+              "term": "a sign of success, even though it is almost always discussed as a crisis",
+              "def": "Contrasts what something is with how it is described."
+            },
+            {
+              "term": "The advantages are easy to overlook.",
+              "def": "A topic sentence that promises something non-obvious."
+            },
+            {
+              "term": "are, in effect, paying for",
+              "def": "*In effect* lets you make a strong economic claim about something that involves no money."
+            },
+            {
+              "term": "depends far less on how long people live than on how healthy they are",
+              "def": "A *less X than Y* construction to close on, at the point the examiner forms a final impression."
+            }
           ]
         },
         {
@@ -503,41 +788,87 @@
           ]
         },
         {
+          "type": "share",
+          "heading": "Share this",
+          "level": "h2",
+          "text": "IELTS Writing Task 2 sample answer: Ageing Populations, with the plan, useful language and how it meets the four criteria.",
+          "hashtags": [
+            "IELTS",
+            "IELTSWriting",
+            "IELTSTask2",
+            "IELTSEssay",
+            "IELTSPreparation"
+          ]
+        },
+        {
           "type": "related",
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Essay 10: Traditional skills", "url": "practical-english/ielts/model-essays/traditional-skills/", "text": ["The last of the ten: a two-part question."] },
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] }
+            {
+              "title": "Essay 10: Traditional skills",
+              "url": "practical-english/ielts/model-essays/traditional-skills/",
+              "text": [
+                "The last of the ten: a two-part question."
+              ]
+            },
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            }
           ]
         }
+      ],
+      "tags": [
+        "IELTS Writing Task 2",
+        "Advantages and disadvantages essay",
+        "Society",
+        "Academic and General Training"
       ]
     },
-
     {
       "slug": "practical-english/ielts/model-essays/traditional-skills",
       "title": "Model Essay 10: Traditional Skills",
       "metaTitle": "IELTS Essay: Why Are Traditional Skills Disappearing? | RCF English",
       "description": "An original IELTS Task 2 two-part question essay on disappearing traditional skills, with a plan, the model answer and notes on answering both parts.",
       "keywords": "IELTS traditional skills essay, IELTS two part question model answer, IELTS culture essay task 2",
-      "kicker": "Model essay 10 of 10: two-part question",
+      "kicker": "Model essay 10 of 20: two-part question",
       "kind": "page",
       "schema": "LearningResource",
-      "resourceType": "model answers",
-      "educationalLevel": "IELTS",
+      "resourceType": "Model answer",
+      "educationalLevel": "IELTS Academic and General Training",
       "breadcrumbs": [
-        { "label": "Practical English", "url": "practical-english/" },
-        { "label": "IELTS", "url": "practical-english/ielts/" },
-        { "label": "Model essays", "url": "practical-english/ielts/model-essays/" }
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "IELTS",
+          "url": "practical-english/ielts/"
+        },
+        {
+          "label": "Model essays",
+          "url": "practical-english/ielts/model-essays/"
+        }
       ],
-      "backTo": { "label": "Model essays", "url": "practical-english/ielts/model-essays/" },
-      "hero": { "text": "Question type: two-part. The second half asks what should be done - which means the essay has to commit to something specific." },
+      "backTo": {
+        "label": "Model essays",
+        "url": "practical-english/ielts/model-essays/"
+      },
+      "hero": {
+        "text": "Question type: two-part. The second half asks what should be done - which means the essay has to commit to something specific."
+      },
       "blocks": [
         {
           "type": "callout",
           "style": "legal",
           "title": "Unofficial original RCF practice material",
-          "text": ["Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."]
+          "text": [
+            "Original question and essay written by RCF English. Not endorsed by the British Council, IDP: IELTS Australia or Cambridge University Press & Assessment."
+          ]
         },
         {
           "type": "prose",
@@ -563,13 +894,31 @@
           "heading": "The plan",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paragraph", "Content"],
+          "columns": [
+            "Paragraph",
+            "Content"
+          ],
           "rows": [
-            ["Introduction", "Answer both halves in a sentence each. Position: save selectively, not comprehensively."],
-            ["Body 1 (why)", "Two causes: the economic one (machines make the product more cheaply), and the transmission one (these skills pass by apprenticeship, and one missed generation breaks the chain permanently)."],
-            ["Body 2 (what)", "The distinction that does the work: preserving a *product* is sentimental; preserving *knowledge that cannot be reconstructed* is not."],
-            ["Body 3", "Concretely: fund apprenticeships where the knowledge is genuinely irrecoverable; record the rest properly while people can still demonstrate it."],
-            ["Conclusion", "Restate the criterion - can it be relearned from a record, or only from a person?"]
+            [
+              "Introduction",
+              "Answer both halves in a sentence each. Position: save selectively, not comprehensively."
+            ],
+            [
+              "Body 1 (why)",
+              "Two causes: the economic one (machines make the product more cheaply), and the transmission one (these skills pass by apprenticeship, and one missed generation breaks the chain permanently)."
+            ],
+            [
+              "Body 2 (what)",
+              "The distinction that does the work: preserving a *product* is sentimental; preserving *knowledge that cannot be reconstructed* is not."
+            ],
+            [
+              "Body 3",
+              "Concretely: fund apprenticeships where the knowledge is genuinely irrecoverable; record the rest properly while people can still demonstrate it."
+            ],
+            [
+              "Conclusion",
+              "Restate the criterion - can it be relearned from a record, or only from a person?"
+            ]
           ]
         },
         {
@@ -604,11 +953,26 @@
           "heading": "Language worth borrowing",
           "level": "h2",
           "items": [
-            { "term": "The second cause matters more and is mentioned less.", "def": "Ranks your points explicitly. Costs five words and lifts the paragraph." },
-            { "term": "lives in people rather than in books", "def": "A short phrase carrying the paragraph's whole idea." },
-            { "term": "is sentimental and unlikely to survive once the funding stops", "def": "Rejects a position on two grounds at once - one about value, one about practicality." },
-            { "term": "a person is the only possible record", "def": "A metaphor that argues rather than decorates." },
-            { "term": "Could this be learned again from a record, or only from a person?", "def": "Ending on a question is risky, but effective when the question is the essay's actual criterion." }
+            {
+              "term": "The second cause matters more and is mentioned less.",
+              "def": "Ranks your points explicitly. Costs five words and lifts the paragraph."
+            },
+            {
+              "term": "lives in people rather than in books",
+              "def": "A short phrase carrying the paragraph's whole idea."
+            },
+            {
+              "term": "is sentimental and unlikely to survive once the funding stops",
+              "def": "Rejects a position on two grounds at once - one about value, one about practicality."
+            },
+            {
+              "term": "a person is the only possible record",
+              "def": "A metaphor that argues rather than decorates."
+            },
+            {
+              "term": "Could this be learned again from a record, or only from a person?",
+              "def": "Ending on a question is risky, but effective when the question is the essay's actual criterion."
+            }
           ]
         },
         {
@@ -633,15 +997,52 @@
           ]
         },
         {
+          "type": "share",
+          "heading": "Share this",
+          "level": "h2",
+          "text": "IELTS Writing Task 2 sample answer: Traditional Skills, with the plan, useful language and how it meets the four criteria.",
+          "hashtags": [
+            "IELTS",
+            "IELTSWriting",
+            "IELTSTask2",
+            "IELTSEssay",
+            "IELTSPreparation"
+          ]
+        },
+        {
           "type": "related",
           "heading": "Where to go next",
           "level": "h2",
           "items": [
-            { "title": "All ten essays", "url": "practical-english/ielts/model-essays/", "text": ["The full list by question type."] },
-            { "title": "Full practice test", "url": "practical-english/ielts/practice-test-1/", "text": ["Four papers with answers and model answers."] },
-            { "title": "IELTS Writing guidance", "url": "practical-english/ielts/writing/", "text": ["Both tasks and the marking criteria."] }
+            {
+              "title": "All ten essays",
+              "url": "practical-english/ielts/model-essays/",
+              "text": [
+                "The full list by question type."
+              ]
+            },
+            {
+              "title": "Full practice test",
+              "url": "practical-english/ielts/practice-test-1/",
+              "text": [
+                "Four papers with answers and model answers."
+              ]
+            },
+            {
+              "title": "IELTS Writing guidance",
+              "url": "practical-english/ielts/writing/",
+              "text": [
+                "Both tasks and the marking criteria."
+              ]
+            }
           ]
         }
+      ],
+      "tags": [
+        "IELTS Writing Task 2",
+        "Two-part question",
+        "Culture",
+        "Academic and General Training"
       ]
     }
   ]

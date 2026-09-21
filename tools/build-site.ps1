@@ -1271,6 +1271,52 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'share' {
+            # Plain links to each network's own share page. No buttons from
+            # the networks themselves: those load their scripts on every visit,
+            # slow the page and follow the reader around the web.
+            $slug = ([string]$script:PageSlug).Trim('/')
+            $pageUrl = $script:Config.siteUrl.TrimEnd('/') + '/' + $(if ($slug) { $slug + '/' } else { '' })
+            $text = [string](P $block 'text' '')
+            $tagWords = @(); foreach ($t in (AsList (P $block 'hashtags'))) { $tagWords += ([string]$t).TrimStart('#') }
+            $hashLine = ($tagWords | ForEach-Object { '#' + $_ }) -join ' '
+            $u = [uri]::EscapeDataString($pageUrl)
+            $withTags = $text + $(if ($hashLine) { ' ' + $hashLine } else { '' })
+            $links = @(
+                @('WhatsApp', 'https://wa.me/?text=' + [uri]::EscapeDataString($withTags + ' ' + $pageUrl)),
+                @('Facebook', 'https://www.facebook.com/sharer/sharer.php?u=' + $u),
+                @('X', 'https://twitter.com/intent/tweet?text=' + [uri]::EscapeDataString($text) + '&url=' + $u + $(if ($tagWords.Count) { '&hashtags=' + [uri]::EscapeDataString($tagWords -join ',') } else { '' })),
+                @('LinkedIn', 'https://www.linkedin.com/sharing/share-offsite/?url=' + $u),
+                @('Telegram', 'https://t.me/share/url?url=' + $u + '&text=' + [uri]::EscapeDataString($withTags))
+            )
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="share"><ul class="share__links">'
+            foreach ($l in $links) {
+                $html += '<li><a class="btn btn--sm btn--outline" href="' + (E $l[1]) + '" target="_blank" rel="noopener">' + (E $l[0]) + '<span class="visually-hidden"> (opens in a new tab)</span></a></li>'
+            }
+            $html += '</ul>'
+            if ($hashLine) { $html += '<p class="share__tags"><span>Hashtags</span> ' + (E $hashLine) + '</p>' }
+            return $html + '</div></div></section>'
+        }
+
+        'pdfReader' {
+            # Someone else's article, read on this page but served from its
+            # publisher. Nothing is copied: the file stays on their server,
+            # credited to them, and they can take it down whenever they like.
+            # A phone cannot show a PDF inside a page, so there the reader is
+            # swapped for one button that opens the phone's own PDF viewer.
+            $src = [string](P $block 'src')
+            if (-not $src) { return '' }
+            $title = [string](P $block 'title' 'Article')
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="reader">'
+            $html += '<div class="reader__bar"><p class="reader__src">' + (Inline (P $block 'credit' '')) + '</p>'
+            $html += '<a class="btn btn--sm btn--primary" href="' + (E $src) + '" target="_blank" rel="noopener">Open the article<span class="visually-hidden">: ' + (E $title) + ' (PDF, opens in a new tab)</span></a></div>'
+            $html += '<iframe class="reader__frame" src="' + (E ($src + '#view=FitH')) + '" title="' + (E ($title + ' (PDF)')) + '" loading="lazy"></iframe>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'portrait' {
             # A photograph beside a short introduction. Two columns on a
             # desktop, stacked and centred on a phone. The image keeps its
@@ -4094,6 +4140,15 @@ function HeroSection($page) {
     $html += '<h1>' + (E (P $page 'title')) + '</h1>'
     $text = P $hero 'text'
     if ($text) { $html += '<p>' + (Inline $text) + '</p>' }
+    # Topic tags: what the page is about, in the words people search with.
+    # They are shown, not hidden - a tag nobody can see is keyword stuffing -
+    # and the same words go into the structured data below.
+    $tags = AsList (P $page 'tags')
+    if ($tags.Count) {
+        $html += '<ul class="page-hero__tags" aria-label="Topics">'
+        foreach ($t in $tags) { $html += '<li>' + (E $t) + '</li>' }
+        $html += '</ul>'
+    }
     $buttons = AsList (P $hero 'buttons')
     if ($buttons.Count) {
         $html += '<div class="btn-row">'
@@ -4134,8 +4189,21 @@ function StructuredData($page, $canonical) {
     }
     elseif ($kind -eq 'LearningResource') {
         $level = [string](P $page 'educationalLevel' '')
+        # The page's visible topic tags, and - for a page that summarises
+        # someone else's article - the article it is based on, credited to
+        # its real author and publisher.
+        $extra = ''
+        $tagList = @(); foreach ($t in (AsList (P $page 'tags'))) { $tagList += [string]$t }
+        if ($tagList.Count) { $extra += ',"keywords":' + (JsonString ($tagList -join ', ')) }
+        $basis = P $page 'basedOn'
+        if ($basis) {
+            $authors = @(); foreach ($a in (AsList (P $basis 'authors'))) { $authors += '{"@type":"Person","name":' + (JsonString ([string]$a)) + '}' }
+            $extra += ',"isBasedOn":{"@type":"ScholarlyArticle","name":' + (JsonString ([string](P $basis 'title'))) + ',"url":' + (JsonString ([string](P $basis 'url')))
+            if ($authors.Count) { $extra += ',"author":[' + ($authors -join ',') + ']' }
+            $extra += ',"isPartOf":{"@type":"Periodical","name":' + (JsonString ([string](P $basis 'journal'))) + '},"publisher":{"@type":"GovernmentOrganization","name":' + (JsonString ([string](P $basis 'publisher'))) + '},"datePublished":' + (JsonString ([string](P $basis 'year'))) + '}'
+        }
         $blocks += @"
-{"@context":"https://schema.org","@type":"LearningResource","name":$(JsonString $name),"description":$(JsonString $desc),"url":$(JsonString $canonical),"inLanguage":"en","learningResourceType":$(JsonString (P $page 'resourceType' 'lesson')),"educationalLevel":$(JsonString $level),"isAccessibleForFree":true,"provider":{"@type":"EducationalOrganization","name":$(JsonString $script:Config.siteName),"url":$(JsonString $siteUrl)}}
+{"@context":"https://schema.org","@type":"LearningResource","name":$(JsonString $name),"description":$(JsonString $desc),"url":$(JsonString $canonical),"inLanguage":"en","learningResourceType":$(JsonString (P $page 'resourceType' 'lesson')),"educationalLevel":$(JsonString $level),"isAccessibleForFree":true$extra,"provider":{"@type":"EducationalOrganization","name":$(JsonString $script:Config.siteName),"url":$(JsonString $siteUrl)}}
 "@
     }
     elseif ($kind -eq 'Course') {
@@ -4443,7 +4511,10 @@ elseif ($script:AnalyticsName -eq 'GoatCounter') {
     $cspConnect += " https://$gcId.goatcounter.com"
     $cspImg += " https://$gcId.goatcounter.com"
 }
-$script:CspContent = "default-src 'self'; script-src $cspScript; style-src 'self' 'unsafe-inline'; img-src $cspImg; connect-src $cspConnect; media-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'"
+# frame-src names one publisher and nothing else: English Teaching Forum's
+# PDFs, shown on the ELT Articles pages from the U.S. Department of State's
+# own server. Any other frame is still refused.
+$script:CspContent = "default-src 'self'; script-src $cspScript; style-src 'self' 'unsafe-inline'; img-src $cspImg; connect-src $cspConnect; media-src 'self'; font-src 'self'; frame-src https://americanenglish.state.gov; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'"
 
 # ------------------------------------------------------------------ build --
 

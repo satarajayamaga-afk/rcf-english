@@ -6,6 +6,7 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "../..");
 const essays = [...require("./essays-a.js").essays, ...require("./essays-b.js").essays];
+const seo = require("./seo.js");
 const BASE = "practical-english/ielts/model-essays";
 const total = 10 + essays.length;
 
@@ -20,9 +21,12 @@ const page = (e, i) => {
   return {
     slug: `${BASE}/${e.slug}`,
     title: `Model Essay ${e.number}: ${e.title}`,
-    metaTitle: `IELTS Task 2 Model Essay: ${e.title} | Band 9 sample answer | RCF English`,
+    // No band score in the title: no examiner has marked these essays.
+    metaTitle: `IELTS Writing Task 2 Sample Answer: ${e.title} | RCF English`,
     description: `A full IELTS Writing Task 2 model answer on ${e.topic.toLowerCase()}, with the plan behind it, the language worth borrowing and how it meets the four band criteria. Written by RCF English.`,
-    keywords: `IELTS task 2 model essay, ${e.topic.toLowerCase()} IELTS essay, band 9 sample answer, ${e.type.split(":")[0].toLowerCase()} IELTS essay`,
+    keywords: `IELTS writing task 2 sample answer, IELTS ${e.topic.toLowerCase()} essay, ${seo.typeTag(e.type).toLowerCase()} IELTS, IELTS model essay, IELTS essay example`,
+    tags: seo.essayTags(e.slug, e.type),
+    ...seo.ESSAY_SCHEMA,
     kicker: `Model essay ${e.number} of ${total}: ${e.type.split(":")[0].toLowerCase()}`,
     kind: "page",
     breadcrumbs: crumbs,
@@ -77,7 +81,11 @@ const out = {
     "taken from Cambridge IELTS or any other published test, and no page",
     "claims to answer one."
   ],
-  pages: essays.map(page)
+  pages: essays.map((e, i) => {
+    const p = page(e, i);
+    p.blocks = seo.withShare(p.blocks, seo.shareBlock(`IELTS Writing Task 2 sample answer: ${e.title}, with the plan, useful language and how it meets the four criteria.`, seo.HASHTAGS_TASK2));
+    return p;
+  })
 };
 fs.writeFileSync(path.join(ROOT, "_src/pages/practical-english-ielts-essays-3.json"), JSON.stringify(out, null, 2) + "\n");
 
@@ -90,7 +98,10 @@ table.rows = table.rows.filter((r) => Number(String(r[0])) <= 10);
 for (const e of essays) table.rows.push([String(e.number), e.topic, e.type, `[Read](${BASE}/${e.slug}/)`]);
 table.heading = `The ${total} essays`;
 hubPage.title = `${total} IELTS Task 2 Model Essays`;
-hubPage.metaTitle = `${total} IELTS Task 2 Model Essays | Band 9 sample answers | RCF English`;
+hubPage.metaTitle = `${total} IELTS Writing Task 2 Sample Answers, with plans and analysis | RCF English`;
+hubPage.keywords = "IELTS writing task 2 sample answers, IELTS model essays, IELTS essay examples, IELTS writing task 2 samples with answers, IELTS essay structure";
+hubPage.tags = ["IELTS Writing Task 2", "Sample answers", "Opinion essays", "Discussion essays", "Problem and solution", "Academic and General Training"];
+hubPage.blocks = seo.withShare(hubPage.blocks, seo.shareBlock(`${total} IELTS Writing Task 2 sample answers, each with a plan, useful language and how it meets the four criteria.`, seo.HASHTAGS_TASK2));
 fs.writeFileSync(hubFile, JSON.stringify(hub, null, 2) + "\n");
 
 console.log(`${essays.length} new essays written; hub now lists ${table.rows.length}`);
