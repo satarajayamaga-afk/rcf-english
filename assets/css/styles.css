@@ -2247,6 +2247,35 @@ table.data thead th {
 }
 table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
 
+/* Colour-coded rows, added by a table block with a "rowStyles" list. Used by
+   the PPP lesson plans, where every row is one stage of the lesson. The stage
+   is named in words in the first cell, so the colour is a second cue and never
+   the only one: a mono print, a screen reader and forced-colours mode all
+   still tell a teacher which stage they are looking at.
+
+   Each row sets two custom properties - a strong colour for the bar and a
+   darker one for the text - so the rules below do not have to be repeated
+   four times over. The text colour is a step darker than the bar because the
+   bar only has to be seen, while the words have to be read on a tint. */
+table.data.coded tbody tr { --stage: var(--line-strong); --stage-ink: var(--ink-700); --stage-bg: var(--surface-alt); }
+table.data.coded tbody tr.row--presentation { --stage: var(--navy-600); --stage-ink: var(--navy-800); --stage-bg: #eff4fb; }
+table.data.coded tbody tr.row--practice { --stage: var(--teal-600); --stage-ink: var(--teal-800); --stage-bg: #edf7f4; }
+table.data.coded tbody tr.row--production { --stage: var(--gold-600); --stage-ink: var(--gold-800); --stage-bg: #fdf6e8; }
+table.data.coded tbody tr.row--close { --stage: var(--ink-300); --stage-ink: var(--ink-700); --stage-bg: var(--surface-alt); }
+
+/* These must come after the striping rule above, which has equal specificity. */
+table.data.coded tbody tr,
+table.data.coded tbody tr:nth-child(even) { background: var(--stage-bg); }
+table.data.coded tbody td:first-child {
+  border-left: 4px solid var(--stage);
+  font-weight: 700;
+  color: var(--stage-ink);
+}
+/* Borders collapse, so the header's left edge has to match the 4px bar below
+   it or the table gets a ragged left side. It is tinted, not coloured, because
+   the header belongs to no single stage. */
+table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); }
+
 @media (max-width: 719px) {
   table.stacked,
   table.stacked thead,
@@ -2271,6 +2300,15 @@ table.data tbody tr:nth-child(even) { background: var(--surface-alt); }
     background: #fff;
   }
   table.stacked tbody tr:nth-child(even) { background: #fff; }
+  /* Each row is now a card, so the stage bar moves to the card's own left
+     edge and the accent inside the first cell is dropped. */
+  table.stacked.coded tbody tr,
+  table.stacked.coded tbody tr:nth-child(even) {
+    background: var(--stage-bg);
+    border-left: 4px solid var(--stage);
+  }
+  table.stacked.coded tbody td:first-child { border-left: 0; }
+  table.stacked.coded td::before { color: var(--stage-ink); }
   table.stacked td {
     border: 0;
     border-bottom: 1px solid var(--line);

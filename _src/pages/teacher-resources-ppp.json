@@ -308,10 +308,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -328,6 +360,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -367,6 +405,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -404,6 +448,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -443,6 +493,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -480,6 +536,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -519,6 +581,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -556,6 +624,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -595,6 +669,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -632,6 +712,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -671,6 +757,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -708,6 +800,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -836,10 +934,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -856,6 +986,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -895,6 +1031,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -932,6 +1074,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -971,6 +1119,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1008,6 +1162,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1047,6 +1207,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1084,6 +1250,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1123,6 +1295,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1160,6 +1338,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1199,6 +1383,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1236,6 +1426,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1275,6 +1471,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1312,6 +1514,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1351,6 +1559,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1388,6 +1602,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1516,10 +1736,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -1536,6 +1788,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1575,6 +1833,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1612,6 +1876,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1651,6 +1921,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1688,6 +1964,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1727,6 +2009,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1764,6 +2052,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1803,6 +2097,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1840,6 +2140,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -1879,6 +2185,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -1916,6 +2228,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2044,10 +2362,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -2064,6 +2414,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2103,6 +2459,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2140,6 +2502,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2179,6 +2547,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2216,6 +2590,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2255,6 +2635,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2292,6 +2678,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2331,6 +2723,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2369,6 +2767,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2406,6 +2810,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2534,10 +2944,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -2554,6 +2996,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2593,6 +3041,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2630,6 +3084,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2669,6 +3129,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2706,6 +3172,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2745,6 +3217,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2782,6 +3260,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2821,6 +3305,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2858,6 +3348,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -2897,6 +3393,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2935,6 +3437,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -2972,6 +3480,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3100,10 +3614,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -3120,6 +3666,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3159,6 +3711,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3196,6 +3754,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3235,6 +3799,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3272,6 +3842,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3311,6 +3887,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3348,6 +3930,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3387,6 +3975,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3425,6 +4019,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3462,6 +4062,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3590,10 +4196,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -3610,6 +4248,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3649,6 +4293,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3686,6 +4336,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3725,6 +4381,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3762,6 +4424,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3801,6 +4469,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3838,6 +4512,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3877,6 +4557,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3914,6 +4600,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -3953,6 +4645,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -3990,6 +4688,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4029,6 +4733,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4067,6 +4777,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4104,6 +4820,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4232,10 +4954,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** pupils use it in controlled tasks, usually from the Pupil's Book. **Production:** pupils use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Pupils use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Pupils use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -4252,6 +5006,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4291,6 +5051,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4328,6 +5094,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4367,6 +5139,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4404,6 +5182,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4443,6 +5227,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4480,6 +5270,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4519,6 +5315,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4557,6 +5359,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4594,6 +5402,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4722,10 +5536,42 @@
           ]
         },
         {
-          "type": "prose",
-          "heading": "The PPP stages in one line each",
-          "text": [
-            "**Presentation:** the teacher shows the new language in a clear context. **Practice:** students use it in controlled tasks, usually from the Pupil's Book. **Production:** students use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
+          "type": "table",
+          "heading": "The four stages, and the colour each one uses",
+          "level": "h2",
+          "caption": "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+          "columns": [
+            "Stage",
+            "Time",
+            "What the teacher does"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
+          "rows": [
+            [
+              "Presentation",
+              "10 min",
+              "Shows the new language in a clear context."
+            ],
+            [
+              "Practice",
+              "12 min",
+              "Students use it in controlled tasks, usually from the Pupil's Book."
+            ],
+            [
+              "Production",
+              "13 min",
+              "Students use it more freely, for a purpose of their own."
+            ],
+            [
+              "Check and close",
+              "5 min",
+              "A quick check of learning, then homework."
+            ]
           ]
         },
         {
@@ -4742,6 +5588,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4781,6 +5633,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4818,6 +5676,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4857,6 +5721,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4894,6 +5764,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -4933,6 +5809,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -4970,6 +5852,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -5009,6 +5897,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5046,6 +5940,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -5085,6 +5985,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5122,6 +6028,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -5161,6 +6073,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5198,6 +6116,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -5237,6 +6161,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5274,6 +6204,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -5313,6 +6249,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5350,6 +6292,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [
@@ -5389,6 +6337,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5427,6 +6381,12 @@
             "Time",
             "What happens"
           ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
+          ],
           "rows": [
             [
               "Presentation",
@@ -5464,6 +6424,12 @@
             "Stage",
             "Time",
             "What happens"
+          ],
+          "rowStyles": [
+            "presentation",
+            "practice",
+            "production",
+            "close"
           ],
           "rows": [
             [

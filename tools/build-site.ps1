@@ -891,17 +891,36 @@ function RenderBlock($block) {
             $stacked = ''
             if ((P $block 'stacked' $true) -eq $true) { $stacked = ' stacked' }
             $cols = AsList (P $block 'columns')
+            # Optional colour coding, one name per row. The colour only repeats
+            # what the row already says in words, so a black-and-white print or
+            # a screen reader loses nothing by ignoring it.
+            $rowStyles = AsList (P $block 'rowStyles')
+            $coded = ''
+            if ($rowStyles.Count -gt 0) { $coded = ' coded' }
             # The stacked mobile layout sets display:block on the table elements,
             # which strips the table role from the accessibility tree. Explicit
             # ARIA roles keep the headers and cells related for screen readers.
-            $html += '<div class="table-wrap"><table role="table" class="data' + $stacked + '">'
+            $html += '<div class="table-wrap"><table role="table" class="data' + $stacked + $coded + '">'
             $caption = P $block 'caption'
             if ($caption) { $html += '<caption>' + (Inline $caption) + '</caption>' }
             $html += '<thead role="rowgroup"><tr role="row">'
             foreach ($c in $cols) { $html += '<th role="columnheader" scope="col">' + (E $c) + '</th>' }
             $html += '</tr></thead><tbody role="rowgroup">'
+            $allowed = @('presentation', 'practice', 'production', 'close')
+            $ri = 0
             foreach ($row in (AsList (P $block 'rows'))) {
-                $html += '<tr role="row">'
+                $rowClass = ''
+                if ($ri -lt $rowStyles.Count) {
+                    $rs = [string]$rowStyles[$ri]
+                    if ($rs) {
+                        if ($allowed -notcontains $rs) {
+                            [void]$script:Warnings.Add("Table row style '$rs' on '$($script:PageSlug)' is not one of: $($allowed -join ', ')")
+                        }
+                        $rowClass = ' class="row--' + (E $rs) + '"'
+                    }
+                }
+                $html += '<tr role="row"' + $rowClass + '>'
+                $ri++
                 $i = 0
                 foreach ($cell in (AsList $row)) {
                     $label = ''

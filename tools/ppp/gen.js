@@ -13,6 +13,10 @@ const PREMIUM = {
   type: "callout", style: "info", title: "Complete lesson plan books are coming",
   text: ["These are simple sample plans. **Complete lesson plan books for every grade** will be part of **RCF Premium Resources**, which will be ready in the future. [See RCF Premium Resources](premium-resources/)"]
 };
+// One name per row, in row order. build-site.ps1 turns these into colours on
+// the page, and tools/ppp/downloads.js into shading in the Word and PDF copies.
+const STAGE_STYLES = ["presentation", "practice", "production", "close"];
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const OWN = "Every plan on this page was written by RCF English. The unit and activity names refer to the government Pupil's Book so that you can find the right page; no textbook text is reproduced here. Download it as an editable Word document or a print-ready PDF.";
 const join = (a) => a.join(" ");
 
@@ -21,9 +25,21 @@ function planPage(key) {
   const who = key === "al" ? "students" : "pupils";
   const blocks = [
     { type: "callout", style: "tip", title: "About these plans", text: [g.note, OWN] },
-    { type: "prose", heading: "The PPP stages in one line each", text: [
-      "**Presentation:** the teacher shows the new language in a clear context. **Practice:** " + who + " use it in controlled tasks, usually from the Pupil's Book. **Production:** " + who + " use it more freely for their own purpose. **Check and close:** a quick check of learning, then homework."
-    ] }
+    // The same four colours run down every plan on the page, so the legend is
+    // worth one table at the top. It replaces a paragraph that ran the four
+    // stages together and was hard to read at a glance.
+    {
+      type: "table", heading: "The four stages, and the colour each one uses", level: "h2",
+      caption: "The colour is a reminder only. Every stage is also named in the plans below, so the plans work in black and white.",
+      columns: ["Stage", "Time", "What the teacher does"],
+      rowStyles: STAGE_STYLES,
+      rows: [
+        ["Presentation", "10 min", "Shows the new language in a clear context."],
+        ["Practice", "12 min", `${cap(who)} use it in controlled tasks, usually from the Pupil's Book.`],
+        ["Production", "13 min", `${cap(who)} use it more freely, for a purpose of their own.`],
+        ["Check and close", "5 min", "A quick check of learning, then homework."]
+      ]
+    }
   ];
   g.plans.forEach((p, i) => {
     const [unit, title, act, focus, outcome, materials, pres, prac, prod, close, hw] = p;
@@ -37,6 +53,7 @@ function planPage(key) {
       ],
       caption: `${g.label}, Unit ${unit}: ${focus}. A 40-minute PPP lesson.`,
       columns: ["Stage", "Time", "What happens"],
+      rowStyles: STAGE_STYLES,
       rows: [
         ["Presentation", "10 min", join(pres)],
         ["Practice", "12 min", join(prac)],

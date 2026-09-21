@@ -53,7 +53,8 @@ const x = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(
 const wr = (r, extra = "") => `<w:r>${r.b || extra ? `<w:rPr>${r.b ? "<w:b/>" : ""}${extra}</w:rPr>` : ""}<w:t xml:space="preserve">${x(r.t)}</w:t></w:r>`;
 function para(text, style, opts = {}) {
   const ppr = [style ? `<w:pStyle w:val="${style}"/>` : "", opts.keep ? "<w:keepNext/>" : ""].join("");
-  const body = runs(text).map((r) => r.url ? wr(r) + wr({ t: ` (${r.url})` }, '<w:sz w:val="18"/>') : wr(r, opts.bold ? "<w:b/>" : "")).join("");
+  const extra = (opts.bold ? "<w:b/>" : "") + (opts.colour ? `<w:color w:val="${opts.colour}"/>` : "");
+  const body = runs(text).map((r) => r.url ? wr(r) + wr({ t: ` (${r.url})` }, '<w:sz w:val="18"/>') : wr(r, extra)).join("");
   return `<w:p>${ppr ? `<w:pPr>${ppr}</w:pPr>` : ""}${body}</w:p>`;
 }
 function widths(block, total) {
@@ -66,13 +67,34 @@ function widths(block, total) {
   const sum = w.reduce((a, b) => a + b, 0);
   return w.map((v) => Math.floor((total * v) / sum)).map((v, i, a) => (i === cols - 1 ? total - a.slice(0, -1).reduce((p, q) => p + q, 0) : v));
 }
+// The colour code, kept in one place because the Word file, the PDF and the
+// web page all have to agree. Each entry is a pale row fill and a darker ink
+// for the stage name, matching the CSS in assets/css/styles.css.
+const STAGE_COLOURS = {
+  presentation: { fill: "EFF4FB", ink: "0F2647", bar: "1E4276" },
+  practice: { fill: "EDF7F4", ink: "08503F", bar: "0E7C66" },
+  production: { fill: "FDF6E8", ink: "7D5205", bar: "B07C12" },
+  close: { fill: "F7F9FB", ink: "33404F", bar: "8E98A4" }
+};
 function table(block, total) {
   const grid = widths(block, total);
-  const cell = (text, i, head) => `<w:tc><w:tcPr><w:tcW w:w="${grid[i]}" w:type="dxa"/>${head ? '<w:shd w:val="clear" w:color="auto" w:fill="DCE6F2"/>' : ""}</w:tcPr>${para(String(text || ""), "TableText", { bold: head })}</w:tc>`;
+  const styles = block.rowStyles || [];
+  const cell = (text, i, head, stage) => {
+    const c = stage ? STAGE_COLOURS[stage] : null;
+    const fill = head ? "DCE6F2" : c && c.fill;
+    // Only the stage name takes the colour, so the plan still reads as a plan
+    // rather than as coloured text.
+    const ink = c && i === 0 ? c.ink : null;
+    // sz is in eighths of a point, so 18 is the 2.25pt bar down the left edge.
+    const bar = ink ? `<w:tcBorders><w:left w:val="single" w:sz="18" w:space="0" w:color="${c.bar}"/></w:tcBorders>` : "";
+    const tcPr = `<w:tcW w:w="${grid[i]}" w:type="dxa"/>${fill ? `<w:shd w:val="clear" w:color="auto" w:fill="${fill}"/>` : ""}${bar}`;
+    return `<w:tc><w:tcPr>${tcPr}</w:tcPr>${para(String(text || ""), "TableText", { bold: head || Boolean(ink), colour: ink })}</w:tc>`;
+  };
   const head = `<w:tr><w:trPr><w:tblHeader/><w:cantSplit/></w:trPr>${block.columns.map((c, i) => cell(c, i, true)).join("")}</w:tr>`;
-  const rows = block.rows.map((r) => {
+  const rows = block.rows.map((r, ri) => {
     const blank = r.slice(1).every((c) => !c);
-    return `<w:tr><w:trPr><w:cantSplit/>${blank ? '<w:trHeight w:val="700"/>' : ""}</w:trPr>${block.columns.map((c, i) => cell(r[i], i, false)).join("")}</w:tr>`;
+    const stage = STAGE_COLOURS[styles[ri]] ? styles[ri] : null;
+    return `<w:tr><w:trPr><w:cantSplit/>${blank ? '<w:trHeight w:val="700"/>' : ""}</w:trPr>${block.columns.map((c, i) => cell(r[i], i, false, stage)).join("")}</w:tr>`;
   }).join("");
   const b = ["top", "left", "bottom", "right", "insideH", "insideV"].map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="8FA3BF"/>`).join("");
   return `<w:tbl><w:tblPr><w:tblW w:w="${total}" w:type="dxa"/><w:tblBorders>${b}</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${grid.map((g) => `<w:gridCol w:w="${g}"/>`).join("")}</w:tblGrid>${head}${rows}</w:tbl><w:p/>`;
@@ -177,7 +199,12 @@ function printHtml(page, landscape) {
     else if (b.type === "prose") body += `<section${pb}>${b.heading ? `<${tag}>${htmlInline(b.heading)}</${tag}>` : ""}${(b.text || []).map((t) => `<p>${htmlInline(t)}</p>`).join("")}</section>`;
     else if (b.type === "table") {
       const blank = (r) => r.slice(1).every((c) => !c);
-      body += `<section class="t${b._pageBreak ? " pb" : ""}">${b.heading ? `<${tag}>${htmlInline(b.heading)}</${tag}>` : ""}${(b.intro || []).map((t) => `<p>${htmlInline(t)}</p>`).join("")}<table><thead><tr>${b.columns.map((c) => `<th>${h(c)}</th>`).join("")}</tr></thead><tbody>${b.rows.map((r) => `<tr${blank(r) ? ' class="blank"' : ""}>${b.columns.map((c, i) => `<td>${htmlInline(String(r[i] || ""))}</td>`).join("")}</tr>`).join("")}</tbody></table></section>`;
+      const styles = b.rowStyles || [];
+      const cls = (r, ri) => {
+        const c = [blank(r) ? "blank" : "", STAGE_COLOURS[styles[ri]] ? "s-" + styles[ri] : ""].filter(Boolean);
+        return c.length ? ` class="${c.join(" ")}"` : "";
+      };
+      body += `<section class="t${b._pageBreak ? " pb" : ""}">${b.heading ? `<${tag}>${htmlInline(b.heading)}</${tag}>` : ""}${(b.intro || []).map((t) => `<p>${htmlInline(t)}</p>`).join("")}<table><thead><tr>${b.columns.map((c) => `<th>${h(c)}</th>`).join("")}</tr></thead><tbody>${b.rows.map((r, ri) => `<tr${cls(r, ri)}>${b.columns.map((c, i) => `<td>${htmlInline(String(r[i] || ""))}</td>`).join("")}</tr>`).join("")}</tbody></table></section>`;
     }
   }
   body += `<p class="foot">Written by RCF English. Free to copy and adapt for teaching. The latest version is at ${h(SITE + page.slug + "/")}</p>`;
@@ -200,6 +227,12 @@ th { background: #dce6f2; }
 thead { display: table-header-group; }
 tr { break-inside: avoid; }
 tr.blank td { height: 34px; }
+/* The stage colours, from the one table above so the PDF, the Word file and
+   the web page cannot drift apart. A PDF is not paper, so the fills have to
+   be forced: Edge drops backgrounds when printing unless told otherwise. */
+${Object.entries(STAGE_COLOURS).map(([k, c]) =>
+  `tr.s-${k} td { background: #${c.fill}; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+tr.s-${k} td:first-child { border-left: 2.25pt solid #${c.bar}; color: #${c.ink}; font-weight: 700; }`).join("\n")}
 a { color: #1f3a5f; }
 .pb { break-before: page; }
 h4 { font-size: 10.5pt; margin: 8px 0 2px; color: #1f3a5f; break-after: avoid; }
