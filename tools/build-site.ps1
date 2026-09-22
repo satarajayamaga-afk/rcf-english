@@ -1271,6 +1271,44 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'planFinder' {
+            # Lesson plans as a grid of small cards, grouped by grade, like the
+            # thumbnails in a Drive folder. Each card is a miniature of the plan
+            # itself - the navy banner and the four stage colours - over its
+            # number, unit, title and focus. The whole list is in the page, so it
+            # works and is searchable without JavaScript; plan-finder.js adds the
+            # grade choice and the search box on top.
+            $groups = AsList (P $block 'groups')
+            $many = $groups.Count -gt 1
+            $total = 0
+            foreach ($g in $groups) { $total += (AsList (P $g 'items')).Count }
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="planfind" data-planfind data-total="' + $total + '">'
+            foreach ($g in $groups) {
+                $items = AsList (P $g 'items')
+                $html += '<div class="planfind__group" data-group="' + (E (P $g 'key')) + '" data-label="' + (E (P $g 'label')) + '">'
+                if ($many) {
+                    $html += '<h3 class="planfind__grade"><a href="' + (E (Url (P $g 'url'))) + '">' + (E (P $g 'label')) + '</a>'
+                    $html += ' <span class="planfind__count">' + $items.Count + ' plans</span></h3>'
+                }
+                $html += '<ul class="planfind__grid">'
+                foreach ($it in $items) {
+                    $html += '<li class="pthumb" data-search="' + (E (P $it 'search')) + '">'
+                    $html += '<a class="pthumb__link" href="' + (E (Url (P $it 'url'))) + '">'
+                    $html += '<span class="pthumb__sheet" aria-hidden="true"><span class="pthumb__band"></span>'
+                    $html += '<span class="pthumb__s pthumb__s--p"></span><span class="pthumb__s pthumb__s--pr"></span><span class="pthumb__s pthumb__s--pd"></span><span class="pthumb__s pthumb__s--c"></span></span>'
+                    $html += '<span class="pthumb__meta">Plan ' + (E (P $it 'n')) + ' &middot; Unit ' + (E (P $it 'unit')) + '</span>'
+                    $html += '<span class="pthumb__title">' + (E (P $it 'title')) + '</span>'
+                    $html += '<span class="pthumb__focus">' + (E (P $it 'focus')) + '</span>'
+                    $html += '</a></li>'
+                }
+                $html += '</ul></div>'
+            }
+            $html += '<p class="planfind__empty" hidden>No plan matches that. Try a shorter word, or choose All grades.</p>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'share' {
             # Plain links to each network's own share page. No buttons from
             # the networks themselves: those load their scripts on every visit,
@@ -2643,6 +2681,18 @@ function StaticList($source, $fixed, $limit = 0) {
 # section - Grade 1 to Grade 13, O/L Literature or A/L Literature - the whole
 # section is shown as soon as it is chosen, and the only filter inside a
 # section is the year. Nothing has to be typed to see papers.
+
+# The script each interactive block needs, loaded automatically on any page
+# that uses the block (see the module list in BuildPage).
+$script:BlockScripts = @{
+    'browse'       = 'browse'
+    'finder'       = 'finder'
+    'paperLibrary' = 'paper-library'
+    'search'       = 'search'
+    'activities'   = 'quiz'
+    'listening'    = 'listening'
+    'planFinder'   = 'plan-finder'
+}
 
 $script:PaperSectionOrder = @(
     @{ key = 'grade-1';       label = 'Grade 1';         short = '1' },
@@ -4389,7 +4439,22 @@ function BuildPage($page) {
 
     $scripts = '<script src="' + (E (AssetUrl 'assets/js/nav.js')) + '" defer></script>'
     $scripts += '<script src="' + (E (AssetUrl 'assets/js/personal.js')) + '" defer></script>'
-    foreach ($m in (AsList (P $page 'scripts'))) {
+    # A block that needs a script now brings it with it. The script used to be
+    # listed by hand in each page's "scripts", and a page that forgot got a
+    # block that never came to life: the Study Packs filters said "Filters
+    # load in a moment..." for ever, and the Grade 5 Scholarship, Alphabet and
+    # Reading activities never got past "Loading activity...". A page's own
+    # list is still honoured, and nothing is loaded twice.
+    $modules = New-Object System.Collections.ArrayList
+    foreach ($m in (AsList (P $page 'scripts'))) { if (-not $modules.Contains([string]$m)) { [void]$modules.Add([string]$m) } }
+    foreach ($b in (AsList (P $page 'blocks'))) {
+        $need = $script:BlockScripts[[string](P $b 'type')]
+        if (-not $need) { continue }
+        # An activities block with no activities in it has nothing to run.
+        if ([string](P $b 'type') -eq 'activities' -and (AsList (P $b 'ids')).Count -eq 0) { continue }
+        if (-not $modules.Contains($need)) { [void]$modules.Add($need) }
+    }
+    foreach ($m in $modules) {
         $scripts += '<script type="module" src="' + (E (AssetUrl ('assets/js/' + $m + '.js'))) + '"></script>'
     }
 

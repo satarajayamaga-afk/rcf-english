@@ -36,7 +36,11 @@ const plain = (text) => runs(text).map((r) => r.t).join("");
 // The printable content of a page: everything except the navigation cards
 // and the download box itself.
 function content(page) {
-  const list = page.blocks.filter((b) => b.type !== "cards" && !b._download).map((b) => ({ ...b }));
+  // A grade page shows its plans on the web as a grid of cards, one per plan
+  // page. The printed copy needs the plans themselves, so the grid is
+  // replaced by the full plans that gen.js keeps in printBlocks.
+  const blocks = page.blocks.flatMap((b) => (b.type === "planFinder" ? page.printBlocks || [] : [b]));
+  const list = blocks.filter((b) => b.type !== "cards" && !b._download).map((b) => ({ ...b }));
   let first = true;
   list.forEach((b, i) => {
     if (!b._pageBreak) return;

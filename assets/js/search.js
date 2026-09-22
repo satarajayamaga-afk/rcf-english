@@ -78,15 +78,67 @@ function wordMatches(queryWord, words) {
   return words.some((w) => w === queryWord || w.startsWith(queryWord));
 }
 
+/* Words that help a result when present but may be missing: people say "past
+   tense" where a page says "simple past". Requiring "tense" hid the very page
+   that answered the question. */
+const OPTIONAL = new Set(["tense", "tenses"]);
+
+/* "grade 8" is one thing, not two words. Scored as two, "Grade 10 Lesson Plan
+   8" matched "lesson plan grade 8" as well as any Grade 8 plan did, and came
+   first because its title sorts first. The grades asked for are taken out of
+   the words and matched as a pair instead. */
+function gradesAsked(words) {
+  const grades = [];
+  const rest = [];
+  for (let i = 0; i < words.length; i++) {
+    if ((words[i] === "grade" || words[i] === "grades") && /^\d{1,2}$/.test(words[i + 1] || "")) {
+      grades.push(words[i + 1]);
+      i++;
+    } else rest.push(words[i]);
+  }
+  return { grades, rest };
+}
+
+/** True when the entry is about grade n: "Grade 8", "Grades 8 and 9", "Grades 12 and 13". */
+function isForGrade(entry, n) {
+  if (String(entry.grade || "") === n) return true;
+  const w = entryWords(entry);
+  for (let i = 0; i < w.length; i++) {
+    if (w[i] !== n) continue;
+    const a = w[i - 1], b = w[i - 2], c = w[i - 3];
+    if (a === "grade" || a === "grades") return true;
+    if ((a === "and" || a === "or" || a === "to") && /^\d{1,2}$/.test(b || "") && (c === "grade" || c === "grades")) return true;
+  }
+  return false;
+}
+
 function score(entry, words) {
   const all = entryWords(entry);
   const titleWords = entry._titleWords || [];
+  const { grades, rest } = gradesAsked(words);
   let total = 0;
+  for (const n of grades) {
+    if (!isForGrade(entry, n)) return 0;
+    total += 40;
+  }
+  words = rest;
+  if (!words.length) return total + ((entry.grade || entry.term || entry.year) ? 12 : 0);
   for (const word of words) {
-    if (!wordMatches(word, all)) return 0;          // every word must be present
+    if (!wordMatches(word, all)) {
+      if (OPTIONAL.has(word)) continue;
+      return 0;                                      // every other word must be present
+    }
     if (titleWords.includes(word)) total += 30;
     else if (titleWords.some((w) => w.startsWith(word))) total += 18;
     else total += 6;
+  }
+  // Words typed together and found together - "past tense", "present
+  // continuous" - mean far more than the same words found apart. Without this
+  // every past paper matched "past tense grade 6" through its "Past Papers"
+  // heading and outranked the one lesson on the past tense.
+  const joined = " " + all.join(" ") + " ";
+  for (let i = 0; i < words.length - 1; i++) {
+    if (joined.includes(` ${words[i]} ${words[i + 1]}`)) total += 25;
   }
   // A paper answering a structured question should outrank a page that merely
   // mentions the words.

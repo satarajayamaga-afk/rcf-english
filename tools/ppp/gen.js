@@ -20,6 +20,119 @@ const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const OWN = "Every plan on this page was written by RCF English. The unit and activity names refer to the government Pupil's Book so that you can find the right page; no textbook text is reproduced here. Download it as an editable Word document or a print-ready PDF.";
 const join = (a) => a.join(" ");
 
+// ---------- one plan ----------
+const planUrl = (key, i) => `${HUB}/${L[key].slug}/plan-${i + 1}`;
+const whoFor = (key) => (key === "al" ? "students" : "pupils");
+
+// The coloured plan card, used on the plan's own page and in the grade's
+// Word and PDF downloads.
+function planBlock(key, i) {
+  const g = L[key];
+  const who = whoFor(key);
+  const [unit, title, act, focus, outcome, materials, pres, prac, prod, close, hw] = g.plans[i];
+  return {
+    type: "plan", level: "h2",
+    eyebrow: `${g.label} · 40 minutes`,
+    heading: `Plan ${i + 1}: Unit ${unit}, ${title}`,
+    facts: [
+      ["Book activity", act],
+      ["Focus", focus],
+      ["Learning outcome", `By the end of the lesson, ${who} will be able to ${outcome}`],
+      ["Materials", materials]
+    ],
+    stages: [
+      { style: "presentation", name: "Presentation", time: "10 min", text: [join(pres)] },
+      { style: "practice", name: "Practice", time: "12 min", text: [join(prac)] },
+      { style: "production", name: "Production", time: "13 min", text: [join(prod)] },
+      { style: "close", name: "Check and close", time: "5 min", text: [close] }
+    ],
+    homework: hw,
+    caption: `${g.label}, Unit ${unit}: ${focus}. A 40-minute PPP lesson.`
+  };
+}
+
+// The thumbnail grid: one group per grade, one small card per plan. Every
+// word a teacher might search for - unit, title, focus, book activity - goes
+// into the card's search text, so the filter box finds a plan by any of them.
+function planFinder(keys, opts) {
+  return {
+    type: "planFinder", level: "h2", heading: opts.heading, intro: opts.intro,
+    groups: keys.map((k) => ({
+      key: L[k].slug,
+      label: L[k].label,
+      url: `${HUB}/${L[k].slug}/`,
+      items: L[k].plans.map((p, i) => {
+        const [unit, title, act, focus] = p;
+        return {
+          n: i + 1, unit: String(unit), title, focus,
+          url: planUrl(k, i) + "/",
+          search: [L[k].label, `unit ${unit}`, title, focus, act].join(" ").toLowerCase()
+        };
+      })
+    }))
+  };
+}
+
+// The names teachers use for a grammar point, which are often not the names
+// the plans use: a plan says "the simple past", a teacher searches for "past
+// tense". Added to the plan's search keywords only; the plan's wording stays.
+const GRAMMAR_ALIASES = [
+  [/\b(simple past|past simple)\b/i, "past tense, simple past tense, past simple tense"],
+  [/\bpast continuous\b/i, "past continuous tense, past progressive"],
+  [/\bpresent continuous\b/i, "present continuous tense, present progressive"],
+  [/\b(present simple|simple present)\b/i, "present tense, simple present tense"],
+  [/\bpresent perfect\b/i, "present perfect tense"],
+  [/\bpast perfect\b/i, "past perfect tense"],
+  [/\bfuture|\bwill\b|going to\b/i, "future tense"],
+  [/\bpassive\b/i, "passive voice"],
+  [/\b(comparative|superlative)/i, "comparatives and superlatives, degrees of comparison"],
+  [/\breported speech|indirect speech\b/i, "reported speech, indirect speech, direct and indirect speech"],
+  [/\bprepositions?\b/i, "prepositions"],
+  [/\barticles?\b/i, "articles, a an the"],
+  [/\bmodals?\b|\bcan\b|\bmust\b|\bshould\b/i, "modal verbs"],
+  [/\bconditional|\bif\b/i, "conditionals, if clauses"]
+];
+const aliasesFor = (text) => GRAMMAR_ALIASES.filter(([re]) => re.test(text)).map(([, a]) => a);
+
+// A page for one plan: it can be linked to, bookmarked and found by search.
+function planOnlyPage(key, i) {
+  const g = L[key];
+  const [unit, title, act, focus] = g.plans[i];
+  const prev = i > 0 ? { title: `Plan ${i}: ${g.plans[i - 1][1]}`, url: planUrl(key, i - 1) + "/" } : null;
+  const next = i < g.plans.length - 1 ? { title: `Plan ${i + 2}: ${g.plans[i + 1][1]}`, url: planUrl(key, i + 1) + "/" } : null;
+  return {
+    slug: planUrl(key, i),
+    title: `${g.label} Lesson Plan ${i + 1}: ${title}`,
+    metaTitle: `${g.label} English Lesson Plan: Unit ${unit}, ${title} (PPP, 40 minutes) | RCF English`,
+    description: `A free 40-minute PPP English lesson plan for ${g.label}, Unit ${unit} (${title}): ${focus}. Presentation, practice and production with timings, materials and homework.`,
+    keywords: [`${g.label} English lesson plan`, `${g.label} unit ${unit} lesson plan`, `${title} lesson plan`, focus, ...aliasesFor(focus), "PPP lesson plan", "Sri Lanka English lesson plan"].join(", "),
+    kicker: `${g.label} · Plan ${i + 1} of ${g.plans.length}`,
+    kind: "teacher-resource",
+    schema: "LearningResource",
+    educationalLevel: g.label,
+    resourceType: "Lesson plan",
+    tags: [g.label, `Unit ${unit}`, "PPP lesson plan", "40 minutes"],
+    breadcrumbs: [TR, { label: "PPP Lesson Plans", url: HUB + "/" }, { label: g.label, url: `${HUB}/${g.slug}/` }],
+    backTo: { label: `${g.label} plans`, url: `${HUB}/${g.slug}/` },
+    hero: { text: `${focus}. Built on ${act} in the ${g.book}.` },
+    blocks: [
+      planBlock(key, i),
+      {
+        type: "callout", style: "note", title: "Print or edit it",
+        text: [`Every ${g.label} plan is in one Word document and one PDF: [open the ${g.label} plans](${HUB}/${g.slug}/) and use the download box at the top.`, OWN.replace("Every plan on this page", "This plan").replace(/ Download it as .*$/, "")]
+      },
+      {
+        type: "related", heading: "More plans", level: "h2",
+        items: [
+          ...(prev ? [{ title: prev.title, url: prev.url, text: ["The plan before this one."] }] : []),
+          ...(next ? [{ title: next.title, url: next.url, text: ["The next plan."] }] : []),
+          { title: `All ${g.plans.length} ${g.label} plans`, url: `${HUB}/${g.slug}/`, text: ["Back to the grade."] }
+        ]
+      }
+    ]
+  };
+}
+
 function planPage(key) {
   const g = L[key];
   const who = key === "al" ? "students" : "pupils";
@@ -41,28 +154,14 @@ function planPage(key) {
       ]
     }
   ];
-  g.plans.forEach((p, i) => {
-    const [unit, title, act, focus, outcome, materials, pres, prac, prod, close, hw] = p;
-    blocks.push({
-      type: "plan", level: "h2",
-      eyebrow: `${g.label} · 40 minutes`,
-      heading: `Plan ${i + 1}: Unit ${unit}, ${title}`,
-      facts: [
-        ["Book activity", act],
-        ["Focus", focus],
-        ["Learning outcome", `By the end of the lesson, ${who} will be able to ${outcome}`],
-        ["Materials", materials]
-      ],
-      stages: [
-        { style: "presentation", name: "Presentation", time: "10 min", text: [join(pres)] },
-        { style: "practice", name: "Practice", time: "12 min", text: [join(prac)] },
-        { style: "production", name: "Production", time: "13 min", text: [join(prod)] },
-        { style: "close", name: "Check and close", time: "5 min", text: [close] }
-      ],
-      homework: hw,
-      caption: `${g.label}, Unit ${unit}: ${focus}. A 40-minute PPP lesson.`
-    });
-  });
+  // The grade page shows the plans as a grid of small cards, one per plan,
+  // each opening the plan on its own page. A long page of eleven to twenty
+  // full plans was hard to find anything in, and a plan could not be linked
+  // to, bookmarked or found by the site search.
+  blocks.push(planFinder([key], {
+    heading: `The ${g.plans.length} plans`,
+    intro: ["Each card opens one plan. Type a unit, a grammar point or a word from the book to narrow the list."]
+  }));
   blocks.push(PREMIUM);
   blocks.push({ type: "cards", heading: "Plans for other grades", columns: "4", items: ORDER.filter((k) => k !== key).map((k) => ({ title: L[k].label, url: `${HUB}/${L[k].slug}/`, more: `${L[k].plans.length} plans` })) });
   return {
@@ -77,7 +176,10 @@ function planPage(key) {
     breadcrumbs: [TR, { label: "PPP Lesson Plans", url: HUB + "/" }],
     backTo: { label: "PPP Lesson Plans", url: HUB + "/" },
     hero: { text: `${g.plans.length} ready-to-teach sample plans that follow the ${g.book}.` },
-    blocks
+    blocks,
+    // Not shown on the web page, which has the grid instead: these are the
+    // full plans that tools/ppp/downloads.js puts in the grade's Word and PDF.
+    printBlocks: g.plans.map((p, i) => planBlock(key, i))
   };
 }
 
@@ -98,7 +200,10 @@ const hub = {
       "PPP stands for **Presentation, Practice and Production**. The teacher first presents a small piece of language in a clear situation. Pupils then practise it in controlled tasks, and finally use it for a purpose of their own. It suits large classes because each stage has a clear start and end, and it fits the activity sequence of the Sri Lankan Pupil's Books well.",
       "Each plan below gives the book unit and activity, the learning outcome, the materials, and what happens in each stage with timings for a 40-minute period. Adapt the timings to your own timetable."
     ] },
-    { type: "cards", heading: "Choose a grade", variant: "tint", columns: "4", items: ORDER.map((k) => ({ title: L[k].label, url: `${HUB}/${L[k].slug}/`, more: `${L[k].plans.length} plans`, text: [L[k].book + "."] })) },
+    planFinder(ORDER, {
+      heading: "Every plan, grade by grade",
+      intro: ["Each card opens one plan. Choose a grade, or type a unit, a grammar point or a word from the book - \"past tense\", \"Unit 4\", \"letter\" - to find a plan across every grade."]
+    }),
     { type: "table", heading: "Grades without sample plans yet", intro: ["These plans are built on the Pupil's Books we have. We do not yet have the books below, so we have not written plans for them rather than guess their contents."],
       columns: ["Grade", "Why there are no plans yet"],
       rows: [
@@ -612,7 +717,8 @@ const DOWNLOADS = [
   { slug: propPage.slug, file: "rcf-english-sample-project-proposals", label: "Sample project proposals", landscape: false }
 ];
 const links = (d) => `[Word document (.docx)](${DL}${d.file}.docx) · [PDF](${DL}${d.file}.pdf)`;
-const pages = [hub, ...ORDER.map(planPage), annual, notes, compPage, booksPage, sbaPage, propPage];
+const planPages = ORDER.flatMap((k) => L[k].plans.map((p, i) => planOnlyPage(k, i)));
+const pages = [hub, ...ORDER.map(planPage), ...planPages, annual, notes, compPage, booksPage, sbaPage, propPage];
 for (const d of DOWNLOADS) {
   pages.find((p) => p.slug === d.slug).blocks.unshift({
     type: "callout", style: "note", _download: true, title: "Download this page",

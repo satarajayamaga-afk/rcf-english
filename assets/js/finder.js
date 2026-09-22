@@ -134,6 +134,48 @@ function setUp(root) {
     return s;
   }
 
+  /* What the list is actually filtered by. Typed words used to be matched
+     literally while the reader typed, and only understood when Enter was
+     pressed - so the box's own example, "Grade 8 second term papers with
+     marking schemes", showed "0 resources found" on every keystroke, and on
+     a phone, where nobody presses Enter, it never recovered. Now the words
+     are understood as they are typed. A dropdown the reader set still wins;
+     the typed words only fill the ones left on "All". */
+  function liveState() {
+    const s = readState();
+    const raw = s.q.trim();
+    if (!raw) { showLive([], ""); return s; }
+    const { set, rest } = interpret(raw);
+    const labels = [];
+    Object.keys(set).forEach((k) => {
+      const sel = selects[k];
+      if (!sel || s[k]) return;
+      const opt = Array.from(sel.options).find((o) => o.value === set[k]);
+      if (!opt) return;
+      s[k] = set[k];
+      labels.push(opt.text);
+    });
+    if (labels.length) s.q = rest;
+    showLive(labels, labels.length ? rest : "");
+    return s;
+  }
+
+  /* The live reading of the query, shown under the box so the reader can see
+     why the list changed. Once Enter is pressed the same choices move into
+     the dropdowns, with an Undo, exactly as before. */
+  function showLive(labels, rest) {
+    if (understood.dataset.committed === "yes") return;
+    if (!labels.length) { understood.hidden = true; return; }
+    understood.textContent = "";
+    understood.append("Showing: ");
+    const strong = document.createElement("strong");
+    strong.textContent = labels.join(" · ");
+    understood.append(strong);
+    if (rest) understood.append(` with the keywords “${rest}”`);
+    understood.append(". Press Enter to set these filters.");
+    understood.hidden = false;
+  }
+
   function writeUrl(state) {
     const url = new URL(window.location.href);
     ["q", ...FACETS.map((f) => f.key)].forEach((k) => {
@@ -200,7 +242,7 @@ function setUp(root) {
 
   function applyInterpretation() {
     const raw = qInput.value.trim();
-    if (raw.split(/\s+/).length < 2) { understood.hidden = true; return false; }
+    if (!raw) { understood.hidden = true; return false; }
     const { set, rest } = interpret(raw);
     const labels = [];
     Object.keys(set).forEach((k) => {
@@ -213,11 +255,13 @@ function setUp(root) {
     qInput.value = rest;
     understood.innerHTML = `Understood as: <strong>${labels.map((l) => l.replace(/[<>&]/g, "")).join(" · ")}</strong>${rest ? ` with the keywords “${rest.replace(/[<>&"]/g, "")}”` : ""}. <button type="button" class="finder__undo">Undo</button>`;
     understood.hidden = false;
+    understood.dataset.committed = "yes";
     const before = raw;
     understood.querySelector("button").addEventListener("click", () => {
       Object.keys(selects).forEach((k) => { selects[k].value = ""; });
       qInput.value = before;
       understood.hidden = true;
+      understood.dataset.committed = "";
       apply();
       qInput.focus();
     });
@@ -242,7 +286,7 @@ function setUp(root) {
 
   function apply(resetPaging = true) {
     if (resetPaging) shown = pageSize;
-    const s = readState();
+    const s = liveState();
     const hits = records.filter((r) => matches(r, s));
     records.forEach((r) => { r.li.hidden = true; });
     hits.slice(0, shown).forEach((r) => { r.li.hidden = false; });
@@ -254,7 +298,7 @@ function setUp(root) {
     empty.hidden = n !== 0;
     more.hidden = n <= shown;
     if (!more.hidden) more.textContent = `Show more (${n - shown} more)`;
-    writeUrl(s);
+    writeUrl(readState());
   }
 
   /* ------------------------------------------------------------- restore */
@@ -269,16 +313,21 @@ function setUp(root) {
   /* ---------------------------------------------------------------- wire */
 
   let typing;
-  qInput.addEventListener("input", () => { clearTimeout(typing); typing = setTimeout(() => apply(), 180); });
+  qInput.addEventListener("input", () => {
+    understood.dataset.committed = "";
+    clearTimeout(typing);
+    typing = setTimeout(() => apply(), 180);
+  });
   Object.values(selects).forEach((sel) => sel.addEventListener("change", () => apply()));
   reset.addEventListener("click", () => {
+    understood.dataset.committed = "";
     qInput.value = "";
     Object.values(selects).forEach((sel) => { sel.value = ""; });
     apply();
     qInput.focus();
   });
   more.addEventListener("click", () => {
-    const firstNew = records.filter((r) => matches(r, readState()))[shown];
+    const firstNew = records.filter((r) => matches(r, liveState()))[shown];
     shown += pageSize;
     apply(false);
     /* Move focus to the first newly shown result so keyboard users continue

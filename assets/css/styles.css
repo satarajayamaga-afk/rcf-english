@@ -2455,6 +2455,117 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   }
 }
 
+/* 10b-ii. Lesson plan grid ------------------------------------------------
+   Small cards in a grid, grouped by grade, like the thumbnails in a Drive
+   folder. The top of each card is a miniature of the plan itself: the navy
+   banner, then the four stage bands in their stage colours. */
+
+.planfind__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--sp-3) var(--sp-4);
+  margin-bottom: var(--sp-5);
+  padding: var(--sp-4);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.planfind__bar .field { margin: 0; }
+.planfind__q { flex: 1 1 18rem; }
+.planfind__g { flex: 0 1 14rem; }
+.planfind__q input, .planfind__g select { width: 100%; }
+.planfind__total { margin: 0 0 0.55rem; color: var(--ink-500); font-size: var(--step--1); }
+.planfind__clear { margin-bottom: 0.3rem; }
+
+.planfind__group + .planfind__group { margin-top: var(--sp-6); }
+.planfind__grade {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  margin: 0 0 var(--sp-3);
+  padding-bottom: var(--sp-2);
+  border-bottom: 2px solid var(--navy-100);
+  font-size: var(--step-1);
+}
+.planfind__grade a { color: var(--navy-800); text-decoration: none; }
+.planfind__grade a:hover { text-decoration: underline; }
+.planfind__count { color: var(--ink-500); font-family: var(--font-body); font-size: var(--step--1); font-weight: 400; }
+
+.planfind__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: var(--sp-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pthumb[hidden], .planfind__group[hidden] { display: none; }
+
+.pthumb__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--sp-2) var(--sp-2) var(--sp-3);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink-900);
+  text-decoration: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.pthumb__link:hover,
+.pthumb__link:focus-visible {
+  border-color: var(--navy-600);
+  box-shadow: var(--shadow-2);
+  transform: translateY(-1px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pthumb__link { transition: none; }
+  .pthumb__link:hover, .pthumb__link:focus-visible { transform: none; }
+}
+
+/* The miniature page. */
+.pthumb__sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: var(--sp-3);
+  padding: 5px 5px 6px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.pthumb__band { height: 9px; background: var(--navy-800); border-bottom: 2px solid var(--gold-400); border-radius: 2px; }
+.pthumb__s { height: 7px; border-left: 3px solid; border-radius: 2px; }
+.pthumb__s--p { background: #eff4fb; border-color: var(--navy-600); }
+.pthumb__s--pr { background: #edf7f4; border-color: var(--teal-600); }
+.pthumb__s--pd { background: #fdf6e8; border-color: var(--gold-600); }
+.pthumb__s--c { background: #f2f5fa; border-color: var(--ink-300); width: 70%; }
+
+.pthumb__meta { color: var(--ink-500); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; }
+.pthumb__title { margin: 2px 0 4px; color: var(--navy-800); font-family: var(--font-head); font-size: 1rem; line-height: 1.25; }
+.pthumb__focus {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--ink-700);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+.planfind__empty { margin: var(--sp-4) 0 0; color: var(--ink-700); }
+
+@media (max-width: 719px) {
+  .planfind__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-2); }
+  .planfind__bar { padding: var(--sp-3); }
+}
+
+@media print {
+  .planfind__bar { display: none !important; }
+  .pthumb__link { box-shadow: none; }
+}
+
 /* 10c. Topic tags, share row and article reader -------------------------- */
 
 /* Tags sit on the navy page hero, so they are pale outlines, not filled
