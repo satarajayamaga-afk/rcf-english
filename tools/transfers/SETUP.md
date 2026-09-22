@@ -1,4 +1,4 @@
-# Mutual Transfers for English Teachers: setting it up
+# Mutual Transfers for Teachers: setting it up
 
 About 20 minutes, once. Everything runs in your own Google account: a Form
 that teachers fill in, a private Sheet that holds the answers, and a small
@@ -11,12 +11,12 @@ to the website except one ordinary page with a link to the form.
 
 Go to forms.google.com and start a blank form.
 
-**Title:** Mutual Transfers for English Teachers - RCF English
+**Title:** Mutual Transfers for Teachers - RCF English
 
 **Description** (paste as it is):
 
-> For English teachers in Sri Lankan government schools who are looking for
-> a teacher to exchange places with. When another teacher's request matches
+> For teachers in Sri Lankan government schools who are looking for a
+> teacher of the same subject to exchange places with. When another teacher's request matches
 > yours, RCF English emails you both each other's contact details. Your
 > details are sent only to a teacher whose request matches yours, and are
 > never published.
@@ -44,17 +44,58 @@ The script finds each answer by its question title, so type the titles
 |---|---|---|---|---|
 | 1 | `Full name` | Short answer | Yes | |
 | 2 | `WhatsApp number (optional)` | Short answer | No | |
-| 3 | `District you teach in now` | Dropdown | Yes | the 25 districts, list below |
-| 4 | `Type of school you teach in now` | Multiple choice | Yes | `National school` / `Provincial school` |
-| 5 | `Level you teach` | Multiple choice | Yes | `Primary (Grades 1 to 5)` / `Secondary (Grades 6 to 13)` |
-| 6 | `Medium of your school` | Multiple choice | Yes | `Sinhala` / `Tamil` / `English` / `Bilingual` |
-| 7 | `Your service and grade (optional)` | Short answer | No | |
-| 8 | `Districts you would accept` | Checkboxes | Yes | the 25 districts, list below |
-| 9 | `Anything a matching teacher should know (optional)` | Paragraph | No | |
-| 10 | `Is your request still open?` | Multiple choice | Yes | `Yes - keep looking` / `No - remove my request` |
-| 11 | `Consent` | Checkboxes | Yes | one box, text below |
+| 3 | `Subject you teach` | Dropdown | Yes | the subjects, list below |
+| 4 | `District you teach in now` | Dropdown | Yes | the 25 districts, list below |
+| 5 | `Type of school you teach in now` | Multiple choice | Yes | `National school` / `Provincial school` |
+| 6 | `Level you teach` | Multiple choice | Yes | `Primary (Grades 1 to 5)` / `Secondary (Grades 6 to 13)` |
+| 7 | `Medium of your school` | Multiple choice | Yes | `Sinhala` / `Tamil` / `English` / `Bilingual` |
+| 8 | `Your service and grade (optional)` | Short answer | No | |
+| 9 | `Districts you would accept` | Checkboxes | Yes | the 25 districts, list below |
+| 10 | `Anything a matching teacher should know (optional)` | Paragraph | No | |
+| 11 | `Is your request still open?` | Multiple choice | Yes | `Yes - keep looking` / `No - remove my request` |
+| 12 | `Consent` | Checkboxes | Yes | one box, text below |
 
-**The 25 districts**, for questions 3 and 8. Paste them in one go - Google
+**The subjects**, for question 3. Teachers are matched only with a teacher of
+exactly the same subject, so every subject needs its own line. Add or remove
+lines to suit; keep `Other` last. A teacher who chooses `Other` is never
+matched, because two teachers who both chose it may teach different subjects -
+if several teachers write in with the same missing subject, add it to the list.
+
+```
+English
+English Literature
+Sinhala
+Tamil
+Mathematics
+Science
+History
+Geography
+Civic Education
+Buddhism
+Hinduism
+Islam
+Christianity
+Information and Communication Technology
+Health and Physical Education
+Art
+Music
+Dancing
+Drama and Theatre
+Business and Accounting Studies
+Agriculture
+Home Economics
+Design and Technology
+Physics
+Chemistry
+Biology
+Combined Mathematics
+Economics
+Political Science
+Primary class teacher (all subjects)
+Other
+```
+
+**The 25 districts**, for questions 4 and 9. Paste them in one go - Google
 Forms makes one option per line:
 
 ```
@@ -85,10 +126,10 @@ Trincomalee
 Vavuniya
 ```
 
-**The consent box** (question 11), one option:
+**The consent box** (question 12), one option:
 
 > I agree that RCF English may send my name, email address, WhatsApp number,
-> district, school type, level, medium, service and note to a teacher whose
+> subject, district, school type, level, medium, service and note to a teacher whose
 > request matches mine, and send theirs to me. I understand this is not a
 > transfer application.
 
@@ -125,7 +166,7 @@ The script now runs by itself each time a teacher submits or edits the form.
 
 Submit the form twice more with made-up answers that match - for example one
 entry teaching in Kandy that accepts Galle, and one in Galle that accepts
-Kandy, both "Provincial school" and "Secondary", using two email addresses you
+Kandy, both "English", "Provincial school" and "Secondary", using two email addresses you
 can read. Both addresses should receive "A possible mutual transfer for you"
 within a minute, and a new tab called **Matches sent** appears in the sheet.
 Then delete the test rows.
@@ -144,7 +185,7 @@ to RCF English; it goes on the website page.
 - **Who can see the answers:** only you, in the sheet. Teachers see only the
   contact details of a teacher they are matched with.
 - **Two teachers are matched only if** each teaches in a district the other
-  would accept, and their school type and level are the same. Medium and
+  would accept, and their subject, school type and level are the same. Medium and
   service are shown in the email for them to judge. To change what must
   match, edit `MUST_MATCH` near the top of the script.
 - **Three-way swaps** are found too: A to B's district, B to C's, C to A's.

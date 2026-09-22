@@ -1,5 +1,5 @@
 /**
- * RCF English - Mutual Transfers for English Teachers
+ * RCF English - Mutual Transfers for Teachers (matched by subject)
  * Matching script for the Google Sheet that collects the form's responses.
  *
  * This runs in Google's servers, attached to the owner's private sheet. It is
@@ -27,6 +27,7 @@
 var Q = {
   name: "Full name",
   whatsapp: "WhatsApp number (optional)",
+  subject: "Subject you teach",
   district: "District you teach in now",
   schoolType: "Type of school you teach in now",
   level: "Level you teach",
@@ -42,10 +43,14 @@ var TIMESTAMP = "Timestamp";
 var EMAIL = "Email Address";
 
 // Two teachers are only matched if these answers are the same for both. A
-// primary teacher is not a swap for a secondary one, and a national school
-// post is not a provincial one. Remove a question from this list to stop
-// requiring it to match.
-var MUST_MATCH = [Q.schoolType, Q.level];
+// Maths teacher is not a swap for an English one, a primary teacher is not a
+// swap for a secondary one, and a national school post is not a provincial
+// one. Remove a question from this list to stop requiring it to match.
+var MUST_MATCH = [Q.subject, Q.schoolType, Q.level];
+
+// "Other" is never matched with "Other": two teachers who both chose it may
+// teach entirely different subjects. Add the subject to the form instead.
+var UNMATCHABLE_SUBJECT = "Other";
 
 // Entries older than this are ignored until the teacher renews them by
 // editing their response. An old request is usually no longer wanted.
@@ -174,6 +179,7 @@ function compatible(group) {
   for (var i = 0; i < group.length; i++) {
     if (emails[group[i].email]) return false;
     emails[group[i].email] = true;
+    if (group[i][Q.subject] === UNMATCHABLE_SUBJECT) return false;
   }
   return MUST_MATCH.every(function (q) {
     return group.every(function (t) { return t[q] && t[q] === group[0][q]; });
@@ -232,6 +238,7 @@ function describe(t) {
     "  Email: " + t.email
   ];
   if (t[Q.whatsapp]) lines.push("  WhatsApp: " + t[Q.whatsapp]);
+  lines.push("  Subject: " + t[Q.subject]);
   lines.push("  Teaches now in: " + t.district + " (" + t[Q.schoolType] + ", " + t[Q.level] + ", " + t[Q.medium] + " medium)");
   if (t[Q.service]) lines.push("  Service and grade: " + t[Q.service]);
   if (t[Q.note]) lines.push("  Note: " + t[Q.note]);

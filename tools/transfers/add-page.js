@@ -19,17 +19,17 @@ const TR = { label: "English Teachers Resources", url: "teacher-resources/" };
 
 const page = {
   slug: SLUG,
-  title: "Mutual Transfers for English Teachers",
-  metaTitle: "Mutual Transfers for English Teachers in Sri Lanka: find a teacher to swap with | RCF English",
-  description: "A free, private matching service for English teachers in Sri Lankan government schools who want to exchange places. Tell us where you teach and where you would go; when another request matches, we introduce you both.",
-  keywords: "mutual transfer English teachers Sri Lanka, teacher mutual transfer, teacher transfer swap, English teacher transfer district",
+  title: "Mutual Transfers for Teachers",
+  metaTitle: "Mutual Transfers for Teachers in Sri Lanka: find a teacher of your subject to swap with | RCF English",
+  description: "A free, private matching service for teachers in Sri Lankan government schools who want to exchange places with a teacher of the same subject. Tell us your subject, where you teach and where you would go; when another request matches, we introduce you both.",
+  keywords: "teacher mutual transfer Sri Lanka, mutual transfer by subject, teacher transfer swap, English teacher mutual transfer, teacher transfer district",
   kicker: "English Teachers Resources",
   kind: "teacher-resource",
-  tags: ["Mutual transfers", "English teachers", "Sri Lanka", "All 25 districts"],
+  tags: ["Mutual transfers", "Matched by subject", "Sri Lanka", "All 25 districts"],
   breadcrumbs: [TR],
   backTo: TR,
   hero: {
-    text: "Looking for a teacher to exchange places with? Tell us where you teach and where you would go. When another teacher's request matches yours, we introduce you both - privately.",
+    text: "Looking for a teacher of your subject to exchange places with? Tell us what you teach, where you teach and where you would go. When another teacher's request matches yours, we introduce you both - privately.",
     buttons: [{ label: "Enter your request", url, style: "btn--accent" }]
   },
   blocks: [
@@ -42,8 +42,8 @@ const page = {
     {
       type: "steps", heading: "How it works", level: "h2",
       items: [
-        { title: "Enter your request", text: ["The district and type of school you teach in now, the level you teach, and the districts you would accept. It takes about three minutes and needs a Google account, so nobody can enter a request in your name."] },
-        { title: "We look for a match", text: ["Every new request is compared with every open one. A match is two teachers who each teach in a district the other would accept, in the same type of school and at the same level. Three-way exchanges are found too: A to B's district, B to C's, C to A's."] },
+        { title: "Enter your request", text: ["Your subject, the district and type of school you teach in now, the level you teach, and the districts you would accept. It takes about three minutes and needs a Google account, so nobody can enter a request in your name."] },
+        { title: "We look for a match", text: ["Every new request is compared with every open one. A match is two teachers of the same subject who each teach in a district the other would accept, in the same type of school and at the same level. Three-way exchanges are found too: A to B's district, B to C's, C to A's."] },
         { title: "You are introduced by email", text: ["When there is a match, each teacher receives the others' names and contact details. That is the only time your details are shared."] },
         { title: "You talk it over and apply", text: ["If you agree, you each apply through the official channel. Close your request once you no longer need it."] }
       ]
@@ -52,7 +52,7 @@ const page = {
       type: "prose", heading: "What is shared, and with whom", level: "h2",
       bullets: [
         "**Nothing is published.** There is no public list of teachers. Your request is kept in a private sheet that only RCF English can open.",
-        "**Your details go only to a matching teacher:** your name, email address, WhatsApp number if you give one, district, school type, level, medium, service and any note you add.",
+        "**Your details go only to a matching teacher:** your name, email address, WhatsApp number if you give one, subject, district, school type, level, medium, service and any note you add.",
         "**Nothing else is asked for.** The form does not ask for your school's name, your NIC number or your address.",
         "**Requests close after six months** unless you renew them, so an old request cannot introduce you to someone long after you stopped looking."
       ]
@@ -65,15 +65,15 @@ const page = {
     },
     {
       type: "share", heading: "Tell a colleague", level: "h2",
-      text: "A free, private way for English teachers in Sri Lanka to find a teacher to exchange places with.",
-      hashtags: ["SriLanka", "EnglishTeachers", "TeacherTransfers"]
+      text: "A free, private way for teachers in Sri Lanka to find a teacher of the same subject to exchange places with.",
+      hashtags: ["SriLanka", "Teachers", "TeacherTransfers", "EnglishTeachers"]
     }
   ]
 };
 
 const out = {
   _readme: [
-    "MUTUAL TRANSFERS FOR ENGLISH TEACHERS",
+    "MUTUAL TRANSFERS FOR TEACHERS (MATCHED BY SUBJECT)",
     "Generated by tools/transfers/add-page.js. Do not edit by hand: change the",
     "script and run it again with the form's link. The matching itself runs in",
     "the owner's Google account (tools/transfers/Code.gs, SETUP.md), not here."
@@ -90,7 +90,7 @@ const tr = JSON.parse(bom ? raw.slice(1) : raw);
 const hub = tr.pages.find((p) => p.slug === "teacher-resources");
 const more = hub.blocks.find((b) => b.type === "cards" && b.heading === "More for teachers");
 if (!more) throw new Error('"More for teachers" cards not found on the teacher resources hub');
-const card = { title: "Mutual Transfers", url: SLUG + "/", more: "Open", text: ["Find an English teacher to exchange places with. Private: your details go only to a teacher whose request matches yours."] };
+const card = { title: "Mutual Transfers", url: SLUG + "/", more: "Open", text: ["Find a teacher of your subject to exchange places with. Private: your details go only to a teacher whose request matches yours."] };
 const at = more.items.findIndex((c) => c.url === card.url);
 if (at === -1) more.items.push(card); else more.items[at] = card;
 fs.writeFileSync(hubFile, bom + JSON.stringify(tr, null, 2) + "\n");
