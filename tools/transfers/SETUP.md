@@ -1,4 +1,4 @@
-# Mutual Transfers for Teachers: setting it up
+# Mutual Transfers for English, Mathematics and Science Teachers: setting it up
 
 About 20 minutes, once. Everything runs in your own Google account: a Form
 that teachers fill in, a private Sheet that holds the answers, and a small
@@ -11,12 +11,13 @@ to the website except one ordinary page with a link to the form.
 
 Go to forms.google.com and start a blank form.
 
-**Title:** Mutual Transfers for Teachers - RCF English
+**Title:** Mutual Transfers for English, Mathematics and Science Teachers - RCF English
 
 **Description** (paste as it is):
 
-> For teachers in Sri Lankan government schools who are looking for a
-> teacher of the same subject to exchange places with. When another teacher's request matches
+> For English, Mathematics and Science teachers in Sri Lankan government
+> schools who are looking for a teacher of the same subject to exchange
+> places with. When another teacher's request matches
 > yours, RCF English emails you both each other's contact details. Your
 > details are sent only to a teacher whose request matches yours, and are
 > never published.
@@ -44,7 +45,7 @@ The script finds each answer by its question title, so type the titles
 |---|---|---|---|---|
 | 1 | `Full name` | Short answer | Yes | |
 | 2 | `WhatsApp number (optional)` | Short answer | No | |
-| 3 | `Subject you teach` | Dropdown | Yes | the subjects, list below |
+| 3 | `Subject you teach` | Multiple choice | Yes | `English` / `Mathematics` / `Science` |
 | 4 | `District you teach in now` | Dropdown | Yes | the 25 districts, list below |
 | 5 | `Type of school you teach in now` | Multiple choice | Yes | `National school` / `Provincial school` |
 | 6 | `Level you teach` | Multiple choice | Yes | `Primary (Grades 1 to 5)` / `Secondary (Grades 6 to 13)` |
@@ -55,45 +56,10 @@ The script finds each answer by its question title, so type the titles
 | 11 | `Is your request still open?` | Multiple choice | Yes | `Yes - keep looking` / `No - remove my request` |
 | 12 | `Consent` | Checkboxes | Yes | one box, text below |
 
-**The subjects**, for question 3. Teachers are matched only with a teacher of
-exactly the same subject, so every subject needs its own line. Add or remove
-lines to suit; keep `Other` last. A teacher who chooses `Other` is never
-matched, because two teachers who both chose it may teach different subjects -
-if several teachers write in with the same missing subject, add it to the list.
-
-```
-English
-English Literature
-Sinhala
-Tamil
-Mathematics
-Science
-History
-Geography
-Civic Education
-Buddhism
-Hinduism
-Islam
-Christianity
-Information and Communication Technology
-Health and Physical Education
-Art
-Music
-Dancing
-Drama and Theatre
-Business and Accounting Studies
-Agriculture
-Home Economics
-Design and Technology
-Physics
-Chemistry
-Biology
-Combined Mathematics
-Economics
-Political Science
-Primary class teacher (all subjects)
-Other
-```
+**The subject** (question 3) offers exactly three choices, spelled as shown:
+`English`, `Mathematics`, `Science`. Teachers are matched only with a teacher
+of the same subject. The script accepts only these three, so if you ever add
+a subject to the form, add it to `SUBJECTS` near the top of the script too.
 
 **The 25 districts**, for questions 4 and 9. Paste them in one go - Google
 Forms makes one option per line:

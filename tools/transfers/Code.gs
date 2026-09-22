@@ -1,5 +1,5 @@
 /**
- * RCF English - Mutual Transfers for Teachers (matched by subject)
+ * RCF English - Mutual Transfers for English, Mathematics and Science Teachers
  * Matching script for the Google Sheet that collects the form's responses.
  *
  * This runs in Google's servers, attached to the owner's private sheet. It is
@@ -42,15 +42,16 @@ var Q = {
 var TIMESTAMP = "Timestamp";
 var EMAIL = "Email Address";
 
+// The service covers these subjects only; the form offers exactly these. An
+// answer outside the list - if the form were changed without this - is
+// never matched, rather than matched on a guess.
+var SUBJECTS = ["English", "Mathematics", "Science"];
+
 // Two teachers are only matched if these answers are the same for both. A
 // Maths teacher is not a swap for an English one, a primary teacher is not a
 // swap for a secondary one, and a national school post is not a provincial
 // one. Remove a question from this list to stop requiring it to match.
 var MUST_MATCH = [Q.subject, Q.schoolType, Q.level];
-
-// "Other" is never matched with "Other": two teachers who both chose it may
-// teach entirely different subjects. Add the subject to the form instead.
-var UNMATCHABLE_SUBJECT = "Other";
 
 // Entries older than this are ignored until the teacher renews them by
 // editing their response. An old request is usually no longer wanted.
@@ -179,7 +180,7 @@ function compatible(group) {
   for (var i = 0; i < group.length; i++) {
     if (emails[group[i].email]) return false;
     emails[group[i].email] = true;
-    if (group[i][Q.subject] === UNMATCHABLE_SUBJECT) return false;
+    if (SUBJECTS.indexOf(group[i][Q.subject]) === -1) return false;
   }
   return MUST_MATCH.every(function (q) {
     return group.every(function (t) { return t[q] && t[q] === group[0][q]; });
