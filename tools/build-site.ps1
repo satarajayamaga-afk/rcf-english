@@ -960,7 +960,9 @@ function RenderBlock($block) {
                 $html += '</dl></div>'
             }
 
-            $allowed = @('presentation', 'practice', 'production', 'close')
+            # "warmer" is the lead-in that opens an international lesson; it
+            # shares the quiet grey of "close", which ends it.
+            $allowed = @('warmer', 'presentation', 'practice', 'production', 'close')
             foreach ($stage in (AsList (P $block 'stages'))) {
                 $style = [string](P $stage 'style' 'close')
                 if ($allowed -notcontains $style) {
@@ -1269,6 +1271,18 @@ function RenderBlock($block) {
             if ($cap) { $html += '<figcaption class="banner__caption">' + (Inline $cap) + '</figcaption>' }
             $html += '</figure>'
             return $html + '</div></section>'
+        }
+
+        'print' {
+            # A print button. nav.js prints any [data-print] on every page, and
+            # .print-page hides itself on paper, along with the site's header,
+            # footer and advertisement slots, so what prints is the material.
+            $label = [string](P $block 'label' 'Print this page')
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<p class="print-page"><button type="button" class="btn btn--primary" data-print>' + (E $label) + '</button>'
+            $note = [string](P $block 'note' '')
+            if ($note) { $html += ' <span class="text-small text-muted">' + (Inline $note) + '</span>' }
+            return $html + '</p></div></section>'
         }
 
         'planFinder' {
@@ -4245,6 +4259,20 @@ function StructuredData($page, $canonical) {
         $extra = ''
         $tagList = @(); foreach ($t in (AsList (P $page 'tags'))) { $tagList += [string]$t }
         if ($tagList.Count) { $extra += ',"keywords":' + (JsonString ($tagList -join ', ')) }
+        # International teaching material: the CEFR level as an educational
+        # alignment, the lesson's length, what it teaches and who it is for -
+        # the fields teachers' search tools and Google read for learning
+        # resources. Each is written only when the page states it.
+        $cefr = [string](P $page 'cefr' '')
+        if ($cefr) {
+            $extra += ',"educationalAlignment":{"@type":"AlignmentObject","alignmentType":"educationalLevel","educationalFramework":"Common European Framework of Reference for Languages (CEFR)","targetName":' + (JsonString $cefr) + '}'
+        }
+        $timeRequired = [string](P $page 'timeRequired' '')
+        if ($timeRequired) { $extra += ',"timeRequired":' + (JsonString $timeRequired) }
+        $teaches = [string](P $page 'teaches' '')
+        if ($teaches) { $extra += ',"teaches":' + (JsonString $teaches) }
+        $role = [string](P $page 'audienceRole' '')
+        if ($role) { $extra += ',"audience":{"@type":"EducationalAudience","educationalRole":' + (JsonString $role) + '}' }
         $basis = P $page 'basedOn'
         if ($basis) {
             $authors = @(); foreach ($a in (AsList (P $basis 'authors'))) { $authors += '{"@type":"Person","name":' + (JsonString ([string]$a)) + '}' }

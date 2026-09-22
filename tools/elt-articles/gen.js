@@ -83,7 +83,7 @@ function articlePage(a, i) {
         text: ["This article is by a Sri Lankan teacher educator, about Sri Lankan classrooms, published in an international journal distributed to English teachers in more than a hundred countries."]
       }] : []),
       { type: "prose", heading: "In brief", level: "h2", text: a.brief },
-      { type: "terms", heading: "About the article", level: "h2", items: facts.map(([term, def]) => ({ term, def })) },
+      { type: "terms", heading: "About the article", level: "h2", items: facts.map(([term, definition]) => ({ term, definition })) },
       { type: "prose", heading: "How it works", level: "h2", numbered: a.steps },
       { type: "prose", heading: "In a Sri Lankan classroom", level: "h2", text: a.lanka },
       { type: "checklist", heading: "Try this tomorrow", level: "h2", items: a.tomorrow },

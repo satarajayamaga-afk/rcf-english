@@ -1,6 +1,5 @@
 {
   "_comment": "Global English - English qualifications taken outside Sri Lanka. Every factual claim here (board, syllabus or specification code, paper name, duration, marks, weighting, validity years) was read from the examination board's own published specification. Nothing on these pages reproduces specification text, question papers or mark schemes: they are summarised, and the official source is linked. If you update a code or a paper structure, check the board's site first and change the 'checked' wording in the same edit.",
-
   "pages": [
     {
       "slug": "global-english",
@@ -16,8 +15,16 @@
       "hero": {
         "text": "English qualifications taken outside Sri Lanka, explained by an English teacher rather than by a marketing page. Choose your qualification, check the board and the code, and work through the papers one exercise at a time.",
         "buttons": [
-          { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/", "style": "btn--accent" },
-          { "label": "GCSE English", "url": "global-english/gcse/", "style": "btn--ghost-light" }
+          {
+            "label": "Cambridge IGCSE English as a Second Language",
+            "url": "global-english/igcse/english-as-a-second-language/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "GCSE English",
+            "url": "global-english/gcse/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -47,30 +54,120 @@
           "heading": "The main English qualifications at a glance",
           "level": "h2",
           "caption": "Board names and codes as published by each board. Follow the links for the full specification.",
-          "columns": ["Qualification", "Board", "Code", "Where it is usually taken"],
+          "columns": [
+            "Qualification",
+            "Board",
+            "Code",
+            "Where it is usually taken"
+          ],
           "rows": [
-            ["GCSE English Language", "AQA", "8700", "Schools in England"],
-            ["GCSE English Literature", "AQA", "8702", "Schools in England"],
-            ["GCSE English Language", "Pearson Edexcel", "1EN0", "Schools in England"],
-            ["GCSE English Literature", "Pearson Edexcel", "1ET0", "Schools in England"],
-            ["GCSE English Language", "OCR", "J351", "Schools in England"],
-            ["GCSE English Literature", "OCR", "J352", "Schools in England"],
-            ["GCSE English Language", "Eduqas (WJEC)", "C700QS", "England and Wales"],
-            ["GCSE English Literature", "Eduqas (WJEC)", "C720QS", "England and Wales"],
-            ["IGCSE First Language English", "Cambridge International", "0500 / 0990", "International schools worldwide"],
-            ["IGCSE English as a Second Language", "Cambridge International", "0510 / 0511 / 0991 / 0993", "International schools worldwide"],
-            ["IGCSE Literature in English", "Cambridge International", "0475 / 0992", "International schools worldwide"],
-            ["International GCSE English Language A", "Pearson Edexcel", "4EA1", "International schools worldwide"],
-            ["International GCSE English Language B", "Pearson Edexcel", "4EB1", "International schools worldwide"],
-            ["International GCSE English Literature", "Pearson Edexcel", "4ET1", "International schools worldwide"],
-            ["International GCSE English Language", "OxfordAQA", "9270", "International schools worldwide"],
-            ["International GCSE English Literature", "OxfordAQA", "9275", "International schools worldwide"],
-            ["International GCSE English as a Second Language", "OxfordAQA", "9280", "International schools worldwide"]
+            [
+              "GCSE English Language",
+              "AQA",
+              "8700",
+              "Schools in England"
+            ],
+            [
+              "GCSE English Literature",
+              "AQA",
+              "8702",
+              "Schools in England"
+            ],
+            [
+              "GCSE English Language",
+              "Pearson Edexcel",
+              "1EN0",
+              "Schools in England"
+            ],
+            [
+              "GCSE English Literature",
+              "Pearson Edexcel",
+              "1ET0",
+              "Schools in England"
+            ],
+            [
+              "GCSE English Language",
+              "OCR",
+              "J351",
+              "Schools in England"
+            ],
+            [
+              "GCSE English Literature",
+              "OCR",
+              "J352",
+              "Schools in England"
+            ],
+            [
+              "GCSE English Language",
+              "Eduqas (WJEC)",
+              "C700QS",
+              "England and Wales"
+            ],
+            [
+              "GCSE English Literature",
+              "Eduqas (WJEC)",
+              "C720QS",
+              "England and Wales"
+            ],
+            [
+              "IGCSE First Language English",
+              "Cambridge International",
+              "0500 / 0990",
+              "International schools worldwide"
+            ],
+            [
+              "IGCSE English as a Second Language",
+              "Cambridge International",
+              "0510 / 0511 / 0991 / 0993",
+              "International schools worldwide"
+            ],
+            [
+              "IGCSE Literature in English",
+              "Cambridge International",
+              "0475 / 0992",
+              "International schools worldwide"
+            ],
+            [
+              "International GCSE English Language A",
+              "Pearson Edexcel",
+              "4EA1",
+              "International schools worldwide"
+            ],
+            [
+              "International GCSE English Language B",
+              "Pearson Edexcel",
+              "4EB1",
+              "International schools worldwide"
+            ],
+            [
+              "International GCSE English Literature",
+              "Pearson Edexcel",
+              "4ET1",
+              "International schools worldwide"
+            ],
+            [
+              "International GCSE English Language",
+              "OxfordAQA",
+              "9270",
+              "International schools worldwide"
+            ],
+            [
+              "International GCSE English Literature",
+              "OxfordAQA",
+              "9275",
+              "International schools worldwide"
+            ],
+            [
+              "International GCSE English as a Second Language",
+              "OxfordAQA",
+              "9280",
+              "International schools worldwide"
+            ]
           ]
         },
         {
           "type": "cards",
-          "heading": "The four areas",
+          "heading": "Choose an area",
           "level": "h2",
           "columns": "2",
           "variant": "tint",
@@ -80,35 +177,52 @@
               "icon": "GCSE",
               "url": "global-english/gcse/",
               "more": "Open GCSE English",
-              "text": ["GCSE English Language and GCSE English Literature, with the AQA, Pearson Edexcel, OCR and Eduqas routes kept separate because their papers differ."]
+              "text": [
+                "GCSE English Language and GCSE English Literature, with the AQA, Pearson Edexcel, OCR and Eduqas routes kept separate because their papers differ."
+              ]
             },
             {
               "title": "International GCSE (IGCSE)",
               "icon": "IGCSE",
               "url": "global-english/igcse/",
               "more": "Open IGCSE English",
-              "text": ["Cambridge International, Pearson Edexcel and OxfordAQA International GCSE English. The two Cambridge syllabuses - First Language English and English as a Second Language - are developed in full."]
+              "text": [
+                "Cambridge International, Pearson Edexcel and OxfordAQA International GCSE English. The two Cambridge syllabuses - First Language English and English as a Second Language - are developed in full."
+              ]
             },
             {
               "title": "Cambridge English Qualifications",
               "icon": "CAM",
               "url": "global-english/cambridge-english/",
               "more": "Open Cambridge English",
-              "text": ["The graded ladder from Pre A1 Starters through A2 Key, B1 Preliminary, B2 First and C1 Advanced to C2 Proficiency."]
+              "text": [
+                "The graded ladder from Pre A1 Starters through A2 Key, B1 Preliminary, B2 First and C1 Advanced to C2 Proficiency."
+              ]
             },
             {
               "title": "English Skills",
               "icon": "SKILL",
               "url": "global-english/skills/",
               "more": "Open English Skills",
-              "text": ["Reading, writing, grammar and vocabulary, speaking and listening, taught in a way that transfers between examinations."]
+              "text": [
+                "Reading, writing, grammar and vocabulary, speaking and listening, taught in a way that transfers between examinations."
+              ]
             },
             {
               "title": "Edexcel graded curriculum",
               "icon": "Y1-9",
               "url": "global-english/edexcel-international-curriculum/",
               "more": "Open the Edexcel curriculum",
-              "text": ["Pearson's year-by-year English curriculum for international schools, Years 1 to 9, with the Year 6 and Year 9 Achievement Tests. Taught in school rather than examined at the end of two years - and often confused with International GCSE."]
+              "text": [
+                "Pearson's year-by-year English curriculum for international schools, Years 1 to 9, with the Year 6 and Year 9 Achievement Tests. Taught in school rather than examined at the end of two years - and often confused with International GCSE."
+              ]
+            },
+            {
+              "title": "ESL Teaching Resources",
+              "url": "global-english/esl/",
+              "text": [
+                "Free ESL lesson plans and printable worksheets for teachers of English in any country, levelled by the CEFR."
+              ]
             }
           ]
         },
@@ -176,14 +290,31 @@
           "heading": "Also on RCF English",
           "level": "h2",
           "items": [
-            { "title": "Practical English", "url": "practical-english/", "text": ["Everyday, spoken and workplace English for adults and independent learners."] },
-            { "title": "IELTS preparation", "url": "practical-english/ielts/", "text": ["Listening, reading, writing, speaking and the graph task, explained step by step."] },
-            { "title": "Interactive practice", "url": "interactive/", "text": ["Quizzes, gap-fill, matching and error correction with instant feedback."] }
+            {
+              "title": "Practical English",
+              "url": "practical-english/",
+              "text": [
+                "Everyday, spoken and workplace English for adults and independent learners."
+              ]
+            },
+            {
+              "title": "IELTS preparation",
+              "url": "practical-english/ielts/",
+              "text": [
+                "Listening, reading, writing, speaking and the graph task, explained step by step."
+              ]
+            },
+            {
+              "title": "Interactive practice",
+              "url": "interactive/",
+              "text": [
+                "Quizzes, gap-fill, matching and error correction with instant feedback."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse",
       "title": "GCSE English",
@@ -195,8 +326,16 @@
       "schema": "LearningResource",
       "resourceType": "guide",
       "educationalLevel": "GCSE",
-      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
-      "backTo": { "label": "Global English", "url": "global-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Global English",
+        "url": "global-english/"
+      },
       "hero": {
         "text": "GCSE English is two separate qualifications, English Language and English Literature, and four boards set them differently. Find your board first, then the paper structure follows."
       },
@@ -223,12 +362,37 @@
           "heading": "GCSE English specification codes",
           "level": "h2",
           "caption": "Codes as published by each board. Check your statement of entry to confirm which one you are sitting.",
-          "columns": ["Board", "English Language", "English Literature", "Official specification"],
+          "columns": [
+            "Board",
+            "English Language",
+            "English Literature",
+            "Official specification"
+          ],
           "rows": [
-            ["AQA", "8700", "8702", "[Language](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification) and [Literature](https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification)"],
-            ["Pearson Edexcel", "1EN0", "1ET0", "[Language](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html) and [Literature](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-literature-2015.html)"],
-            ["OCR", "J351", "J352", "[Language](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/) and [Literature](https://www.ocr.org.uk/qualifications/gcse/english-literature-j352-from-2015/)"],
-            ["Eduqas (WJEC)", "C700QS", "C720QS", "[Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/) and [Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"]
+            [
+              "AQA",
+              "8700",
+              "8702",
+              "[Language](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification) and [Literature](https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification)"
+            ],
+            [
+              "Pearson Edexcel",
+              "1EN0",
+              "1ET0",
+              "[Language](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html) and [Literature](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-literature-2015.html)"
+            ],
+            [
+              "OCR",
+              "J351",
+              "J352",
+              "[Language](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/) and [Literature](https://www.ocr.org.uk/qualifications/gcse/english-literature-j352-from-2015/)"
+            ],
+            [
+              "Eduqas (WJEC)",
+              "C700QS",
+              "C720QS",
+              "[Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/) and [Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"
+            ]
           ]
         },
         {
@@ -236,11 +400,35 @@
           "heading": "AQA GCSE English Language (8700): the papers",
           "level": "h2",
           "caption": "Summarised from the AQA specification at a glance for 8700. Confirm against the [official specification](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/specification-at-a-glance) before relying on it.",
-          "columns": ["Paper", "Title", "Time", "Marks", "Weighting"],
+          "columns": [
+            "Paper",
+            "Title",
+            "Time",
+            "Marks",
+            "Weighting"
+          ],
           "rows": [
-            ["Paper 1", "Explorations in Creative Reading and Writing", "1 hour 45 minutes", "80", "50% of the GCSE"],
-            ["Paper 2", "Writers' Viewpoints and Perspectives", "1 hour 45 minutes", "80", "50% of the GCSE"],
-            ["Non-examination assessment", "Spoken Language", "Set and marked by the teacher during the course", "Not applicable", "Separate endorsement, 0% of the GCSE"]
+            [
+              "Paper 1",
+              "Explorations in Creative Reading and Writing",
+              "1 hour 45 minutes",
+              "80",
+              "50% of the GCSE"
+            ],
+            [
+              "Paper 2",
+              "Writers' Viewpoints and Perspectives",
+              "1 hour 45 minutes",
+              "80",
+              "50% of the GCSE"
+            ],
+            [
+              "Non-examination assessment",
+              "Spoken Language",
+              "Set and marked by the teacher during the course",
+              "Not applicable",
+              "Separate endorsement, 0% of the GCSE"
+            ]
           ]
         },
         {
@@ -274,20 +462,118 @@
             "AQA is the first board developed here, one qualification at a time. Every figure on these pages was read from AQA's own specification and specimen materials."
           ],
           "items": [
-            { "title": "AQA English Language overview", "url": "global-english/gcse/aqa/", "more": "Start here", "text": ["Both papers, all ten questions, the marks, the assessment objectives and the timings printed on the paper."] },
-            { "title": "Paper 1", "url": "global-english/gcse/aqa/paper-1/", "more": "Open", "text": ["Explorations in Creative Reading and Writing: one fiction source, four reading questions and a creative writing task."] },
-            { "title": "Paper 1 question by question", "url": "global-english/gcse/aqa/paper-1/questions/", "more": "Open", "text": ["Questions 1 to 4 with an original extract, worked examples and practice."] },
-            { "title": "Paper 1 creative writing", "url": "global-english/gcse/aqa/paper-1/creative-writing/", "more": "Open", "text": ["Question 5: description and narrative, and how 24 plus 16 marks are earned."] },
-            { "title": "Paper 2", "url": "global-english/gcse/aqa/paper-2/", "more": "Open", "text": ["Writers' Viewpoints and Perspectives: two sources from different centuries."] },
-            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "more": "Open", "text": ["Questions 1 to 4, including the 12-mark language question and the 16-mark comparison."] },
-            { "title": "Paper 2 viewpoint writing", "url": "global-english/gcse/aqa/paper-2/writing/", "more": "Open", "text": ["Question 5: articles, letters, speeches and essays that argue a case."] },
-            { "title": "Language analysis", "url": "global-english/gcse/aqa/language-analysis/", "more": "Open", "text": ["What to notice, what to name, and how to write about effect."] },
-            { "title": "Comparing viewpoints", "url": "global-english/gcse/aqa/comparing-viewpoints/", "more": "Open", "text": ["The paragraph shape for the 16-mark comparison question."] },
-            { "title": "Planning answers", "url": "global-english/gcse/aqa/planning-answers/", "more": "Open", "text": ["Which paragraph shape each of the ten questions wants."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "more": "Open", "text": ["The habits that cost the most marks, and the fixes."] },
-            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "more": "Open", "text": ["How to revise an examination with no set texts, with a six-week plan."] },
-            { "title": "Past papers and model papers", "url": "global-english/gcse/aqa/papers/", "more": "Open", "text": ["Official AQA papers, mark schemes and examiner reports, plus the RCF model paper."] },
-            { "title": "Practice and model answers", "url": "global-english/gcse/aqa/practice/", "more": "Open", "text": ["Original tasks with model answers, indexed by question."] }
+            {
+              "title": "AQA English Language overview",
+              "url": "global-english/gcse/aqa/",
+              "more": "Start here",
+              "text": [
+                "Both papers, all ten questions, the marks, the assessment objectives and the timings printed on the paper."
+              ]
+            },
+            {
+              "title": "Paper 1",
+              "url": "global-english/gcse/aqa/paper-1/",
+              "more": "Open",
+              "text": [
+                "Explorations in Creative Reading and Writing: one fiction source, four reading questions and a creative writing task."
+              ]
+            },
+            {
+              "title": "Paper 1 question by question",
+              "url": "global-english/gcse/aqa/paper-1/questions/",
+              "more": "Open",
+              "text": [
+                "Questions 1 to 4 with an original extract, worked examples and practice."
+              ]
+            },
+            {
+              "title": "Paper 1 creative writing",
+              "url": "global-english/gcse/aqa/paper-1/creative-writing/",
+              "more": "Open",
+              "text": [
+                "Question 5: description and narrative, and how 24 plus 16 marks are earned."
+              ]
+            },
+            {
+              "title": "Paper 2",
+              "url": "global-english/gcse/aqa/paper-2/",
+              "more": "Open",
+              "text": [
+                "Writers' Viewpoints and Perspectives: two sources from different centuries."
+              ]
+            },
+            {
+              "title": "Paper 2 question by question",
+              "url": "global-english/gcse/aqa/paper-2/questions/",
+              "more": "Open",
+              "text": [
+                "Questions 1 to 4, including the 12-mark language question and the 16-mark comparison."
+              ]
+            },
+            {
+              "title": "Paper 2 viewpoint writing",
+              "url": "global-english/gcse/aqa/paper-2/writing/",
+              "more": "Open",
+              "text": [
+                "Question 5: articles, letters, speeches and essays that argue a case."
+              ]
+            },
+            {
+              "title": "Language analysis",
+              "url": "global-english/gcse/aqa/language-analysis/",
+              "more": "Open",
+              "text": [
+                "What to notice, what to name, and how to write about effect."
+              ]
+            },
+            {
+              "title": "Comparing viewpoints",
+              "url": "global-english/gcse/aqa/comparing-viewpoints/",
+              "more": "Open",
+              "text": [
+                "The paragraph shape for the 16-mark comparison question."
+              ]
+            },
+            {
+              "title": "Planning answers",
+              "url": "global-english/gcse/aqa/planning-answers/",
+              "more": "Open",
+              "text": [
+                "Which paragraph shape each of the ten questions wants."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "more": "Open",
+              "text": [
+                "The habits that cost the most marks, and the fixes."
+              ]
+            },
+            {
+              "title": "Revision strategies",
+              "url": "global-english/gcse/aqa/revision/",
+              "more": "Open",
+              "text": [
+                "How to revise an examination with no set texts, with a six-week plan."
+              ]
+            },
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "more": "Open",
+              "text": [
+                "Official AQA papers, mark schemes and examiner reports, plus the RCF model paper."
+              ]
+            },
+            {
+              "title": "Practice and model answers",
+              "url": "global-english/gcse/aqa/practice/",
+              "more": "Open",
+              "text": [
+                "Original tasks with model answers, indexed by question."
+              ]
+            }
           ]
         },
         {
@@ -300,10 +586,38 @@
             "The second board. Edexcel divides the subject differently from AQA: the nineteenth-century text sits on Paper 1 with the fiction, and Paper 2 pairs a twentieth-century non-fiction text with a twenty-first-century one. Every figure below was read from the Edexcel specification, Issue 6."
           ],
           "items": [
-            { "title": "Edexcel English Language overview", "url": "global-english/gcse/edexcel/", "more": "Start here", "text": ["Both written papers, the spoken language endorsement, the assessment objectives and how 1EN0 differs from International GCSE 4EA1."] },
-            { "title": "Paper 1: Fiction and Imaginative Writing", "url": "global-english/gcse/edexcel/paper-1/", "more": "Open", "text": ["1EN0/01: a nineteenth-century fiction extract, four reading questions worth 24 marks, and imaginative writing worth 40."] },
-            { "title": "Paper 2: Non-fiction and Transactional Writing", "url": "global-english/gcse/edexcel/paper-2/", "more": "Open", "text": ["1EN0/02: two unseen non-fiction texts, seven reading questions worth 56 marks, and transactional writing worth 40."] },
-            { "title": "Past papers and model papers", "url": "global-english/gcse/edexcel/papers/", "more": "Open", "text": ["Official Pearson papers, mark schemes and exemplar scripts, plus the original RCF Paper 2 model paper."] }
+            {
+              "title": "Edexcel English Language overview",
+              "url": "global-english/gcse/edexcel/",
+              "more": "Start here",
+              "text": [
+                "Both written papers, the spoken language endorsement, the assessment objectives and how 1EN0 differs from International GCSE 4EA1."
+              ]
+            },
+            {
+              "title": "Paper 1: Fiction and Imaginative Writing",
+              "url": "global-english/gcse/edexcel/paper-1/",
+              "more": "Open",
+              "text": [
+                "1EN0/01: a nineteenth-century fiction extract, four reading questions worth 24 marks, and imaginative writing worth 40."
+              ]
+            },
+            {
+              "title": "Paper 2: Non-fiction and Transactional Writing",
+              "url": "global-english/gcse/edexcel/paper-2/",
+              "more": "Open",
+              "text": [
+                "1EN0/02: two unseen non-fiction texts, seven reading questions worth 56 marks, and transactional writing worth 40."
+              ]
+            },
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/gcse/edexcel/papers/",
+              "more": "Open",
+              "text": [
+                "Official Pearson papers, mark schemes and exemplar scripts, plus the original RCF Paper 2 model paper."
+              ]
+            }
           ]
         },
         {
@@ -316,10 +630,38 @@
             "The third board. OCR's distinctive feature is symmetry: both components run to the same question shape - 2, 2, 6, 12 and 18 marks of reading, then a 40-mark writing task - so preparation for one transfers directly to the other. Figures read from OCR's specification and mark schemes."
           ],
           "items": [
-            { "title": "OCR English Language overview", "url": "global-english/gcse/ocr/", "more": "Start here", "text": ["Both components, the complete assessment-objective grid with exact weightings, and the spoken language endorsement."] },
-            { "title": "Component 01: Communicating information and ideas", "url": "global-english/gcse/ocr/component-1/", "more": "Open", "text": ["J351/01: two unseen non-fiction texts, one 19th century, plus a 40-mark non-fiction writing task."] },
-            { "title": "Component 02: Exploring effects and impact", "url": "global-english/gcse/ocr/component-2/", "more": "Open", "text": ["J351/02: two unseen modern literary texts, and a 40-mark creative writing task."] },
-            { "title": "Past papers", "url": "global-english/gcse/ocr/papers/", "more": "Open", "text": ["Official OCR papers, mark schemes, sample assessment materials and schemes of work."] }
+            {
+              "title": "OCR English Language overview",
+              "url": "global-english/gcse/ocr/",
+              "more": "Start here",
+              "text": [
+                "Both components, the complete assessment-objective grid with exact weightings, and the spoken language endorsement."
+              ]
+            },
+            {
+              "title": "Component 01: Communicating information and ideas",
+              "url": "global-english/gcse/ocr/component-1/",
+              "more": "Open",
+              "text": [
+                "J351/01: two unseen non-fiction texts, one 19th century, plus a 40-mark non-fiction writing task."
+              ]
+            },
+            {
+              "title": "Component 02: Exploring effects and impact",
+              "url": "global-english/gcse/ocr/component-2/",
+              "more": "Open",
+              "text": [
+                "J351/02: two unseen modern literary texts, and a 40-mark creative writing task."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "more": "Open",
+              "text": [
+                "Official OCR papers, mark schemes, sample assessment materials and schemes of work."
+              ]
+            }
           ]
         },
         {
@@ -332,10 +674,38 @@
             "The fourth board, and the only one that divides its papers by **century** rather than by kind of text. Component 1 is twentieth-century literature; Component 2 pairs a nineteenth-century non-fiction text with a twenty-first-century one. Figures read from the Summary of Assessment table in the Eduqas specification."
           ],
           "items": [
-            { "title": "Eduqas English Language overview", "url": "global-english/gcse/eduqas/", "more": "Start here", "text": ["Both components with their durations and weightings, the reading and writing split, and the spoken language endorsement."] },
-            { "title": "Component 1: 20th Century Literature and Creative Prose", "url": "global-english/gcse/eduqas/component-1/", "more": "Open", "text": ["One unseen 20th-century prose extract and a creative writing task. 1 hour 45 minutes, 40%."] },
-            { "title": "Component 2: 19th and 21st Century Non-Fiction", "url": "global-english/gcse/eduqas/component-2/", "more": "Open", "text": ["Two non-fiction texts two centuries apart, and transactional writing. 2 hours, 60%."] },
-            { "title": "Past papers", "url": "global-english/gcse/eduqas/papers/", "more": "Open", "text": ["Official Eduqas papers, mark schemes and annotated exemplar answers."] }
+            {
+              "title": "Eduqas English Language overview",
+              "url": "global-english/gcse/eduqas/",
+              "more": "Start here",
+              "text": [
+                "Both components with their durations and weightings, the reading and writing split, and the spoken language endorsement."
+              ]
+            },
+            {
+              "title": "Component 1: 20th Century Literature and Creative Prose",
+              "url": "global-english/gcse/eduqas/component-1/",
+              "more": "Open",
+              "text": [
+                "One unseen 20th-century prose extract and a creative writing task. 1 hour 45 minutes, 40%."
+              ]
+            },
+            {
+              "title": "Component 2: 19th and 21st Century Non-Fiction",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "more": "Open",
+              "text": [
+                "Two non-fiction texts two centuries apart, and transactional writing. 2 hours, 60%."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "more": "Open",
+              "text": [
+                "Official Eduqas papers, mark schemes and annotated exemplar answers."
+              ]
+            }
           ]
         },
         {
@@ -344,16 +714,61 @@
           "heading": "GCSE English past papers and mark schemes",
           "level": "h2",
           "caption": "Every link goes to the examination board's own past-paper page. Papers and mark schemes belong to the boards; this site links to them and does not host copies. Older series are often restricted to registered centres.",
-          "columns": ["Board", "Qualification", "Code", "Official past papers and mark schemes"],
+          "columns": [
+            "Board",
+            "Qualification",
+            "Code",
+            "Official past papers and mark schemes"
+          ],
           "rows": [
-            ["AQA", "GCSE English Language", "8700", "[AQA 8700 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8700/assessment-resources)"],
-            ["AQA", "GCSE English Literature", "8702", "[AQA 8702 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8702/assessment-resources)"],
-            ["Pearson Edexcel", "GCSE English Language", "1EN0", "[Edexcel English Language](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html)"],
-            ["Pearson Edexcel", "GCSE English Literature", "1ET0", "[Edexcel English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-literature-2015.html)"],
-            ["OCR", "GCSE English Language", "J351", "[OCR J351](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/)"],
-            ["OCR", "GCSE English Literature", "J352", "[OCR J352](https://www.ocr.org.uk/qualifications/gcse/english-literature-j352-from-2015/)"],
-            ["Eduqas (WJEC)", "GCSE English Language", "C700QS", "[Eduqas English Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/)"],
-            ["Eduqas (WJEC)", "GCSE English Literature", "C720QS", "[Eduqas English Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"]
+            [
+              "AQA",
+              "GCSE English Language",
+              "8700",
+              "[AQA 8700 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8700/assessment-resources)"
+            ],
+            [
+              "AQA",
+              "GCSE English Literature",
+              "8702",
+              "[AQA 8702 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8702/assessment-resources)"
+            ],
+            [
+              "Pearson Edexcel",
+              "GCSE English Language",
+              "1EN0",
+              "[Edexcel English Language](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html)"
+            ],
+            [
+              "Pearson Edexcel",
+              "GCSE English Literature",
+              "1ET0",
+              "[Edexcel English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-literature-2015.html)"
+            ],
+            [
+              "OCR",
+              "GCSE English Language",
+              "J351",
+              "[OCR J351](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/)"
+            ],
+            [
+              "OCR",
+              "GCSE English Literature",
+              "J352",
+              "[OCR J352](https://www.ocr.org.uk/qualifications/gcse/english-literature-j352-from-2015/)"
+            ],
+            [
+              "Eduqas (WJEC)",
+              "GCSE English Language",
+              "C700QS",
+              "[Eduqas English Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/)"
+            ],
+            [
+              "Eduqas (WJEC)",
+              "GCSE English Literature",
+              "C720QS",
+              "[Eduqas English Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"
+            ]
           ]
         },
         {
@@ -412,14 +827,31 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
-            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes."] },
-            { "title": "English skills", "url": "global-english/skills/", "text": ["Reading, writing, grammar and vocabulary, speaking and listening."] }
+            {
+              "title": "Global English overview",
+              "url": "global-english/",
+              "text": [
+                "All the international qualifications covered on this site."
+              ]
+            },
+            {
+              "title": "International GCSE English",
+              "url": "global-english/igcse/",
+              "text": [
+                "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes."
+              ]
+            },
+            {
+              "title": "English skills",
+              "url": "global-english/skills/",
+              "text": [
+                "Reading, writing, grammar and vocabulary, speaking and listening."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse",
       "title": "International GCSE English",
@@ -431,12 +863,24 @@
       "schema": "LearningResource",
       "resourceType": "guide",
       "educationalLevel": "International GCSE",
-      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
-      "backTo": { "label": "Global English", "url": "global-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Global English",
+        "url": "global-english/"
+      },
       "hero": {
         "text": "Three boards offer International GCSE English, and Cambridge alone offers four different English syllabuses. This page tells you which one you are taking before you revise for the wrong paper.",
         "buttons": [
-          { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/", "style": "btn--accent" }
+          {
+            "label": "Cambridge IGCSE English as a Second Language",
+            "url": "global-english/igcse/english-as-a-second-language/",
+            "style": "btn--accent"
+          }
         ]
       },
       "blocks": [
@@ -482,21 +926,91 @@
           "heading": "International GCSE English syllabus and specification codes",
           "level": "h2",
           "caption": "Codes as published by each board. Follow the link for the official page and the current specification document.",
-          "columns": ["Board", "Qualification", "Code", "Official page"],
+          "columns": [
+            "Board",
+            "Qualification",
+            "Code",
+            "Official page"
+          ],
           "rows": [
-            ["Cambridge International", "IGCSE English as a Second Language (Speaking Endorsement)", "0510", "[Cambridge 0510](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-oral-endorsement-0510/)"],
-            ["Cambridge International", "IGCSE English as a Second Language (Count-in Speaking)", "0511", "[Cambridge 0511](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-count-in-oral-0511/)"],
-            ["Cambridge International", "IGCSE (9-1) English as a Second Language (Count-in Speaking)", "0991", "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
-            ["Cambridge International", "IGCSE (9-1) English as a Second Language (Speaking Endorsement)", "0993", "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
-            ["Cambridge International", "IGCSE First Language English", "0500 / 0990", "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
-            ["Cambridge International", "IGCSE Literature in English", "0475", "[Cambridge 0475](https://www.cambridgeinternational.org/programmes-and-qualifications/english-literature-0475/)"],
-            ["Cambridge International", "IGCSE (9-1) Literature in English", "0992", "[Cambridge 0992](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-literature-0992/)"],
-            ["Pearson Edexcel", "International GCSE English Language A", "4EA1", "[Edexcel English Language A](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-language-a-2016.html)"],
-            ["Pearson Edexcel", "International GCSE English Language B", "4EB1", "[Edexcel International GCSEs](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses.html)"],
-            ["Pearson Edexcel", "International GCSE English Literature", "4ET1", "[Edexcel English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-literature-2016.html)"],
-            ["OxfordAQA", "International GCSE English Language", "9270", "[OxfordAQA 9270](https://www.oxfordaqa.com/qualifications/international-gcse-english-language/)"],
-            ["OxfordAQA", "International GCSE English Literature", "9275", "[OxfordAQA English](https://www.oxfordaqa.com/subjects/english/)"],
-            ["OxfordAQA", "International GCSE English as a Second Language", "9280", "[OxfordAQA 9280](https://www.oxfordaqa.com/qualifications/international-gcse-english-as-a-second-language/)"]
+            [
+              "Cambridge International",
+              "IGCSE English as a Second Language (Speaking Endorsement)",
+              "0510",
+              "[Cambridge 0510](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-oral-endorsement-0510/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE English as a Second Language (Count-in Speaking)",
+              "0511",
+              "[Cambridge 0511](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-count-in-oral-0511/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE (9-1) English as a Second Language (Count-in Speaking)",
+              "0991",
+              "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE (9-1) English as a Second Language (Speaking Endorsement)",
+              "0993",
+              "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE First Language English",
+              "0500 / 0990",
+              "[Cambridge programmes](https://www.cambridgeinternational.org/programmes-and-qualifications/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE Literature in English",
+              "0475",
+              "[Cambridge 0475](https://www.cambridgeinternational.org/programmes-and-qualifications/english-literature-0475/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE (9-1) Literature in English",
+              "0992",
+              "[Cambridge 0992](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-literature-0992/)"
+            ],
+            [
+              "Pearson Edexcel",
+              "International GCSE English Language A",
+              "4EA1",
+              "[Edexcel English Language A](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-language-a-2016.html)"
+            ],
+            [
+              "Pearson Edexcel",
+              "International GCSE English Language B",
+              "4EB1",
+              "[Edexcel International GCSEs](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses.html)"
+            ],
+            [
+              "Pearson Edexcel",
+              "International GCSE English Literature",
+              "4ET1",
+              "[Edexcel English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-literature-2016.html)"
+            ],
+            [
+              "OxfordAQA",
+              "International GCSE English Language",
+              "9270",
+              "[OxfordAQA 9270](https://www.oxfordaqa.com/qualifications/international-gcse-english-language/)"
+            ],
+            [
+              "OxfordAQA",
+              "International GCSE English Literature",
+              "9275",
+              "[OxfordAQA English](https://www.oxfordaqa.com/subjects/english/)"
+            ],
+            [
+              "OxfordAQA",
+              "International GCSE English as a Second Language",
+              "9280",
+              "[OxfordAQA 9280](https://www.oxfordaqa.com/qualifications/international-gcse-english-as-a-second-language/)"
+            ]
           ]
         },
         {
@@ -506,11 +1020,46 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Qualification guide", "url": "global-english/igcse/english-as-a-second-language/", "more": "Start here", "text": ["Codes, components, durations, marks, assessment objectives and grading, with the 2027-2029 changes set out separately."] },
-            { "title": "Reading and Writing paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/", "more": "Open", "text": ["All six exercises, what each one asks, how the marks are split, and how to work through the paper in two hours."] },
-            { "title": "Writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "more": "Open", "text": ["Informal email, article, report, review and essay: structure, register and openings that work."] },
-            { "title": "Model answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/", "more": "Open", "text": ["Original RCF answers at full marks and at middle marks, with the examiner's reasoning written out."] },
-            { "title": "Speaking test", "url": "global-english/igcse/english-as-a-second-language/speaking-test/", "more": "Open", "text": ["The interview, short talk and discussion, how long each part lasts, and the topics that come up."] }
+            {
+              "title": "Qualification guide",
+              "url": "global-english/igcse/english-as-a-second-language/",
+              "more": "Start here",
+              "text": [
+                "Codes, components, durations, marks, assessment objectives and grading, with the 2027-2029 changes set out separately."
+              ]
+            },
+            {
+              "title": "Reading and Writing paper",
+              "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/",
+              "more": "Open",
+              "text": [
+                "All six exercises, what each one asks, how the marks are split, and how to work through the paper in two hours."
+              ]
+            },
+            {
+              "title": "Writing formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/",
+              "more": "Open",
+              "text": [
+                "Informal email, article, report, review and essay: structure, register and openings that work."
+              ]
+            },
+            {
+              "title": "Model answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/",
+              "more": "Open",
+              "text": [
+                "Original RCF answers at full marks and at middle marks, with the examiner's reasoning written out."
+              ]
+            },
+            {
+              "title": "Speaking test",
+              "url": "global-english/igcse/english-as-a-second-language/speaking-test/",
+              "more": "Open",
+              "text": [
+                "The interview, short talk and discussion, how long each part lasts, and the topics that come up."
+              ]
+            }
           ]
         },
         {
@@ -519,17 +1068,67 @@
           "heading": "International GCSE English past papers and specimen materials",
           "level": "h2",
           "caption": "Every link goes to the board's own page. Cambridge publishes a selection of recent papers, mark schemes and examiner reports openly; the full archive is on the School Support Hub for registered Cambridge schools. This site links and never hosts copies.",
-          "columns": ["Board", "Qualification", "Code", "Official papers"],
+          "columns": [
+            "Board",
+            "Qualification",
+            "Code",
+            "Official papers"
+          ],
           "rows": [
-            ["Cambridge International", "IGCSE English as a Second Language (Speaking Endorsement)", "0510", "[0510 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-oral-endorsement-0510/past-papers/)"],
-            ["Cambridge International", "IGCSE English as a Second Language (Count-in Speaking)", "0511", "[0511 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-count-in-oral-0511/past-papers/)"],
-            ["Cambridge International", "IGCSE Literature in English", "0475", "[0475 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/english-literature-0475/past-papers/)"],
-            ["Cambridge International", "IGCSE (9-1) Literature in English", "0992", "[0992 qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-literature-0992/)"],
-            ["Cambridge International", "IGCSE First Language English", "0500 / 0990", "[Cambridge programmes and qualifications](https://www.cambridgeinternational.org/programmes-and-qualifications/)"],
-            ["Pearson Edexcel", "International GCSE English Language A", "4EA1", "[English Language A](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-language-a-2016.html)"],
-            ["Pearson Edexcel", "International GCSE English Literature", "4ET1", "[English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-literature-2016.html)"],
-            ["OxfordAQA", "International GCSE English Language", "9270", "[OxfordAQA 9270](https://www.oxfordaqa.com/qualifications/international-gcse-english-language/)"],
-            ["OxfordAQA", "International GCSE English as a Second Language", "9280", "[OxfordAQA 9280](https://www.oxfordaqa.com/qualifications/international-gcse-english-as-a-second-language/)"]
+            [
+              "Cambridge International",
+              "IGCSE English as a Second Language (Speaking Endorsement)",
+              "0510",
+              "[0510 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-oral-endorsement-0510/past-papers/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE English as a Second Language (Count-in Speaking)",
+              "0511",
+              "[0511 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-second-language-count-in-oral-0511/past-papers/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE Literature in English",
+              "0475",
+              "[0475 past papers](https://www.cambridgeinternational.org/programmes-and-qualifications/english-literature-0475/past-papers/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE (9-1) Literature in English",
+              "0992",
+              "[0992 qualification page](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-literature-0992/)"
+            ],
+            [
+              "Cambridge International",
+              "IGCSE First Language English",
+              "0500 / 0990",
+              "[Cambridge programmes and qualifications](https://www.cambridgeinternational.org/programmes-and-qualifications/)"
+            ],
+            [
+              "Pearson Edexcel",
+              "International GCSE English Language A",
+              "4EA1",
+              "[English Language A](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-language-a-2016.html)"
+            ],
+            [
+              "Pearson Edexcel",
+              "International GCSE English Literature",
+              "4ET1",
+              "[English Literature](https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-english-literature-2016.html)"
+            ],
+            [
+              "OxfordAQA",
+              "International GCSE English Language",
+              "9270",
+              "[OxfordAQA 9270](https://www.oxfordaqa.com/qualifications/international-gcse-english-language/)"
+            ],
+            [
+              "OxfordAQA",
+              "International GCSE English as a Second Language",
+              "9280",
+              "[OxfordAQA 9280](https://www.oxfordaqa.com/qualifications/international-gcse-english-as-a-second-language/)"
+            ]
           ]
         },
         {
@@ -543,13 +1142,17 @@
               "title": "Official papers, specimen papers and mark schemes",
               "url": "global-english/igcse/english-as-a-second-language/papers/",
               "more": "Open the paper library",
-              "text": ["Cambridge past papers, mark schemes, examiner reports, specimen papers and both current syllabuses, each linked to its official source and labelled with the syllabus, component and years."]
+              "text": [
+                "Cambridge past papers, mark schemes, examiner reports, specimen papers and both current syllabuses, each linked to its official source and labelled with the syllabus, component and years."
+              ]
             },
             {
               "title": "RCF Model Paper 1 and marking guide",
               "url": "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/",
               "more": "Open the model paper",
-              "text": ["A complete original practice paper in the current format: six exercises, 60 marks, two hours, with a full marking guide and model answers. Unofficial RCF practice material, clearly labelled."]
+              "text": [
+                "A complete original practice paper in the current format: six exercises, 60 marks, two hours, with a full marking guide and model answers. Unofficial RCF practice material, clearly labelled."
+              ]
             }
           ]
         },
@@ -600,14 +1203,31 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
-            { "title": "GCSE English", "url": "global-english/gcse/", "text": ["The four English boards and their paper structures."] },
-            { "title": "English skills", "url": "global-english/skills/", "text": ["Reading, writing, grammar and vocabulary, speaking and listening."] }
+            {
+              "title": "Global English overview",
+              "url": "global-english/",
+              "text": [
+                "All the international qualifications covered on this site."
+              ]
+            },
+            {
+              "title": "GCSE English",
+              "url": "global-english/gcse/",
+              "text": [
+                "The four English boards and their paper structures."
+              ]
+            },
+            {
+              "title": "English skills",
+              "url": "global-english/skills/",
+              "text": [
+                "Reading, writing, grammar and vocabulary, speaking and listening."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/cambridge-english",
       "title": "Cambridge English Qualifications",
@@ -619,14 +1239,34 @@
       "schema": "LearningResource",
       "resourceType": "guide",
       "educationalLevel": "A1 to C2",
-      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
-      "backTo": { "label": "Global English", "url": "global-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Global English",
+        "url": "global-english/"
+      },
       "hero": {
         "text": "A ladder of examinations rather than a single test. Each one certifies a level of the Common European Framework, and the certificate does not expire.",
         "buttons": [
-          { "label": "B2 First", "url": "global-english/cambridge-english/b2-first/", "style": "btn--accent" },
-          { "label": "C1 Advanced", "url": "global-english/cambridge-english/c1-advanced/", "style": "btn--ghost-light" },
-          { "label": "B1 Preliminary", "url": "global-english/cambridge-english/b1-preliminary/", "style": "btn--ghost-light" }
+          {
+            "label": "B2 First",
+            "url": "global-english/cambridge-english/b2-first/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "C1 Advanced",
+            "url": "global-english/cambridge-english/c1-advanced/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "B1 Preliminary",
+            "url": "global-english/cambridge-english/b1-preliminary/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -639,16 +1279,52 @@
           "heading": "The qualifications and their levels",
           "level": "h2",
           "caption": "Levels as published by Cambridge English. See the [official exams and tests pages](https://www.cambridgeenglish.org/exams-and-tests/) for entry details, fees and dates.",
-          "columns": ["Qualification", "CEFR level", "Usually taken by"],
+          "columns": [
+            "Qualification",
+            "CEFR level",
+            "Usually taken by"
+          ],
           "rows": [
-            ["Pre A1 Starters", "Pre A1", "Young learners meeting written English for the first time"],
-            ["A1 Movers", "A1", "Young learners after Starters"],
-            ["A2 Flyers", "A2", "Young learners completing the Young Learners ladder"],
-            ["A2 Key", "A2", "Learners proving everyday basic English"],
-            ["B1 Preliminary", "B1", "Learners working or studying in everyday English"],
-            ["B2 First", "B2", "Learners needing English for work or study at upper-intermediate level"],
-            ["C1 Advanced", "C1", "Learners applying to universities or professional roles"],
-            ["C2 Proficiency", "C2", "Learners demonstrating English at the highest level"]
+            [
+              "Pre A1 Starters",
+              "Pre A1",
+              "Young learners meeting written English for the first time"
+            ],
+            [
+              "A1 Movers",
+              "A1",
+              "Young learners after Starters"
+            ],
+            [
+              "A2 Flyers",
+              "A2",
+              "Young learners completing the Young Learners ladder"
+            ],
+            [
+              "A2 Key",
+              "A2",
+              "Learners proving everyday basic English"
+            ],
+            [
+              "B1 Preliminary",
+              "B1",
+              "Learners working or studying in everyday English"
+            ],
+            [
+              "B2 First",
+              "B2",
+              "Learners needing English for work or study at upper-intermediate level"
+            ],
+            [
+              "C1 Advanced",
+              "C1",
+              "Learners applying to universities or professional roles"
+            ],
+            [
+              "C2 Proficiency",
+              "C2",
+              "Learners demonstrating English at the highest level"
+            ]
           ]
         },
         {
@@ -677,22 +1353,40 @@
               "title": "B1 Preliminary",
               "url": "global-english/cambridge-english/b1-preliminary/",
               "more": "Open B1 Preliminary",
-              "text": ["Four papers, each worth exactly a quarter. The cleanest arithmetic on the ladder."],
-              "bullets": ["Reading, Writing, Listening, Speaking", "25% each", "Grade A certifies B2"]
+              "text": [
+                "Four papers, each worth exactly a quarter. The cleanest arithmetic on the ladder."
+              ],
+              "bullets": [
+                "Reading, Writing, Listening, Speaking",
+                "25% each",
+                "Grade A certifies B2"
+              ]
             },
             {
               "title": "B2 First",
               "url": "global-english/cambridge-english/b2-first/",
               "more": "Open B2 First",
-              "text": ["Four papers but five scored components, because Use of English is counted separately."],
-              "bullets": ["Reading and Use of English is 40%", "Five components at 20% each", "Grade A certifies C1"]
+              "text": [
+                "Four papers but five scored components, because Use of English is counted separately."
+              ],
+              "bullets": [
+                "Reading and Use of English is 40%",
+                "Five components at 20% each",
+                "Grade A certifies C1"
+              ]
             },
             {
               "title": "C1 Advanced",
               "url": "global-english/cambridge-english/c1-advanced/",
               "more": "Open C1 Advanced",
-              "text": ["Eight parts in the Reading and Use of English paper, and the first level where a score can earn no certificate."],
-              "bullets": ["Five components at 20% each", "Grade A certifies C2", "142-159 earns no certificate"]
+              "text": [
+                "Eight parts in the Reading and Use of English paper, and the first level where a score can earn no certificate."
+              ],
+              "bullets": [
+                "Five components at 20% each",
+                "Grade A certifies C2",
+                "142-159 earns no certificate"
+              ]
             }
           ]
         },
@@ -701,13 +1395,49 @@
           "heading": "Grades across the ladder",
           "level": "h2",
           "caption": "Scores and levels as published by Cambridge English on its [results page](https://www.cambridgeenglish.org/exams-and-tests/qualifications/results/). Every examination certifies a level above its own at Grade A, and most certify the level below at the lowest band.",
-          "columns": ["Qualification", "Grade A", "Grade B", "Grade C", "Lowest certificated band"],
+          "columns": [
+            "Qualification",
+            "Grade A",
+            "Grade B",
+            "Grade C",
+            "Lowest certificated band"
+          ],
           "rows": [
-            ["**A2 Key**", "140-150 (B1)", "133-139 (A2)", "120-132 (A2)", "100-119 - Level A1"],
-            ["**B1 Preliminary**", "160-170 (B2)", "153-159 (B1)", "140-152 (B1)", "120-139 - Level A2"],
-            ["**B2 First**", "180-190 (C1)", "173-179 (B2)", "160-172 (B2)", "140-159 - Level B1"],
-            ["**C1 Advanced**", "200-210 (C2)", "193-199 (C1)", "180-192 (C1)", "160-179 - Level B2"],
-            ["**C2 Proficiency**", "220-230 (C2)", "213-219 (C2)", "200-212 (C2)", "180-199 - Level C1"]
+            [
+              "**A2 Key**",
+              "140-150 (B1)",
+              "133-139 (A2)",
+              "120-132 (A2)",
+              "100-119 - Level A1"
+            ],
+            [
+              "**B1 Preliminary**",
+              "160-170 (B2)",
+              "153-159 (B1)",
+              "140-152 (B1)",
+              "120-139 - Level A2"
+            ],
+            [
+              "**B2 First**",
+              "180-190 (C1)",
+              "173-179 (B2)",
+              "160-172 (B2)",
+              "140-159 - Level B1"
+            ],
+            [
+              "**C1 Advanced**",
+              "200-210 (C2)",
+              "193-199 (C1)",
+              "180-192 (C1)",
+              "160-179 - Level B2"
+            ],
+            [
+              "**C2 Proficiency**",
+              "220-230 (C2)",
+              "213-219 (C2)",
+              "200-212 (C2)",
+              "180-199 - Level C1"
+            ]
           ]
         },
         {
@@ -760,14 +1490,31 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Cambridge exams in Practical English", "url": "practical-english/cambridge-exams/", "text": ["Existing RCF material on TKT, YLE and FCE preparation."] },
-            { "title": "IELTS preparation", "url": "practical-english/ielts/", "text": ["The other route many international learners take."] },
-            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] }
+            {
+              "title": "Cambridge exams in Practical English",
+              "url": "practical-english/cambridge-exams/",
+              "text": [
+                "Existing RCF material on TKT, YLE and FCE preparation."
+              ]
+            },
+            {
+              "title": "IELTS preparation",
+              "url": "practical-english/ielts/",
+              "text": [
+                "The other route many international learners take."
+              ]
+            },
+            {
+              "title": "Global English overview",
+              "url": "global-english/",
+              "text": [
+                "All the international qualifications covered on this site."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/skills",
       "title": "English Skills",
@@ -779,8 +1526,16 @@
       "schema": "LearningResource",
       "resourceType": "guide",
       "educationalLevel": "Secondary",
-      "breadcrumbs": [{ "label": "Global English", "url": "global-english/" }],
-      "backTo": { "label": "Global English", "url": "global-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Global English",
+        "url": "global-english/"
+      },
       "hero": {
         "text": "Examinations change; the skills underneath them do not. What you learn about finding implied meaning, or about opening a formal letter, is worth marks on every board."
       },
@@ -796,12 +1551,54 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Reading", "url": "practical-english/reading/", "more": "Open", "text": ["Reading for gist, for detail and for the writer's attitude, with practice passages."] },
-            { "title": "Writing", "url": "practical-english/writing/", "more": "Open", "text": ["Planning, paragraphing and the formats examiners expect."] },
-            { "title": "Grammar", "url": "practical-english/practical-grammar/", "more": "Open", "text": ["The grammar that changes marks: tenses, articles, agreement and sentence variety."] },
-            { "title": "Vocabulary", "url": "practical-english/vocabulary/", "more": "Open", "text": ["Building a usable range rather than memorising word lists."] },
-            { "title": "Speaking", "url": "practical-english/speaking/", "more": "Open", "text": ["Developing answers, keeping a conversation going and controlling pronunciation."] },
-            { "title": "Listening", "url": "practical-english/listening/", "more": "Open", "text": ["Listening for specific information, opinion and implication."] }
+            {
+              "title": "Reading",
+              "url": "practical-english/reading/",
+              "more": "Open",
+              "text": [
+                "Reading for gist, for detail and for the writer's attitude, with practice passages."
+              ]
+            },
+            {
+              "title": "Writing",
+              "url": "practical-english/writing/",
+              "more": "Open",
+              "text": [
+                "Planning, paragraphing and the formats examiners expect."
+              ]
+            },
+            {
+              "title": "Grammar",
+              "url": "practical-english/practical-grammar/",
+              "more": "Open",
+              "text": [
+                "The grammar that changes marks: tenses, articles, agreement and sentence variety."
+              ]
+            },
+            {
+              "title": "Vocabulary",
+              "url": "practical-english/vocabulary/",
+              "more": "Open",
+              "text": [
+                "Building a usable range rather than memorising word lists."
+              ]
+            },
+            {
+              "title": "Speaking",
+              "url": "practical-english/speaking/",
+              "more": "Open",
+              "text": [
+                "Developing answers, keeping a conversation going and controlling pronunciation."
+              ]
+            },
+            {
+              "title": "Listening",
+              "url": "practical-english/listening/",
+              "more": "Open",
+              "text": [
+                "Listening for specific information, opinion and implication."
+              ]
+            }
           ]
         },
         {
@@ -812,17 +1609,23 @@
             {
               "heading": "Reading",
               "level": "h3",
-              "text": ["Almost every reading question falls into one of four types: find a stated fact, follow an idea across a text, select detail for a purpose, or work out what is implied but not said. Cambridge names these R1 to R4 in the IGCSE English as a Second Language syllabus. Once you can name the type of question in front of you, you know what kind of answer earns the mark."]
+              "text": [
+                "Almost every reading question falls into one of four types: find a stated fact, follow an idea across a text, select detail for a purpose, or work out what is implied but not said. Cambridge names these R1 to R4 in the IGCSE English as a Second Language syllabus. Once you can name the type of question in front of you, you know what kind of answer earns the mark."
+              ]
             },
             {
               "heading": "Writing",
               "level": "h3",
-              "text": ["Marks divide into content and language on almost every board. Content is task fulfilment and the development of ideas; language is range, accuracy and organisation. A candidate who answers only the prompts, without developing them, caps their own content mark however clean the grammar is."]
+              "text": [
+                "Marks divide into content and language on almost every board. Content is task fulfilment and the development of ideas; language is range, accuracy and organisation. A candidate who answers only the prompts, without developing them, caps their own content mark however clean the grammar is."
+              ]
             },
             {
               "heading": "Speaking and listening",
               "level": "h3",
-              "text": ["Both reward development. A one-sentence answer in a speaking test, or a single-word note in a listening exercise, is usually not wrong - it is simply not enough. The [IGCSE speaking test guide](global-english/igcse/english-as-a-second-language/speaking-test/) shows what developing an answer looks like in practice."]
+              "text": [
+                "Both reward development. A one-sentence answer in a speaking test, or a single-word note in a listening exercise, is usually not wrong - it is simply not enough. The [IGCSE speaking test guide](global-english/igcse/english-as-a-second-language/speaking-test/) shows what developing an answer looks like in practice."
+              ]
             }
           ]
         },
@@ -831,12 +1634,37 @@
           "heading": "The same skill, examined four ways",
           "level": "h2",
           "caption": "Where a skill is tested in each qualification. Practising the skill once serves all of them; practising the format has to be done separately.",
-          "columns": ["Skill", "GCSE English Language", "Cambridge IGCSE ESL", "Cambridge English Qualifications"],
+          "columns": [
+            "Skill",
+            "GCSE English Language",
+            "Cambridge IGCSE ESL",
+            "Cambridge English Qualifications"
+          ],
           "rows": [
-            ["Reading", "Both papers, on unseen fiction and non-fiction", "Four exercises in Component 1", "A reading paper at every level"],
-            ["Writing", "Both papers: descriptive or narrative, and viewpoint writing", "Two exercises in Component 1, 120-160 words each", "A writing paper at every level"],
-            ["Speaking", "A separate endorsement, not part of the 9-1 grade", "Component 3, 10-15 minutes, recorded", "A speaking test at every level, usually in pairs"],
-            ["Listening", "Not assessed", "Component 2, about 50 minutes", "A listening paper at every level"]
+            [
+              "Reading",
+              "Both papers, on unseen fiction and non-fiction",
+              "Four exercises in Component 1",
+              "A reading paper at every level"
+            ],
+            [
+              "Writing",
+              "Both papers: descriptive or narrative, and viewpoint writing",
+              "Two exercises in Component 1, 120-160 words each",
+              "A writing paper at every level"
+            ],
+            [
+              "Speaking",
+              "A separate endorsement, not part of the 9-1 grade",
+              "Component 3, 10-15 minutes, recorded",
+              "A speaking test at every level, usually in pairs"
+            ],
+            [
+              "Listening",
+              "Not assessed",
+              "Component 2, about 50 minutes",
+              "A listening paper at every level"
+            ]
           ]
         },
         {
@@ -900,9 +1728,27 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Global English overview", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
-            { "title": "IGCSE ESL writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "text": ["Email, article, report, review and essay, with model openings."] },
-            { "title": "Interactive practice", "url": "interactive/", "text": ["Quizzes and activities with instant feedback."] }
+            {
+              "title": "Global English overview",
+              "url": "global-english/",
+              "text": [
+                "All the international qualifications covered on this site."
+              ]
+            },
+            {
+              "title": "IGCSE ESL writing formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/",
+              "text": [
+                "Email, article, report, review and essay, with model openings."
+              ]
+            },
+            {
+              "title": "Interactive practice",
+              "url": "interactive/",
+              "text": [
+                "Quizzes and activities with instant feedback."
+              ]
+            }
           ]
         }
       ]

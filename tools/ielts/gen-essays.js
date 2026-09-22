@@ -49,7 +49,7 @@ const page = (e, i) => {
           sample: e.model
         }]
       },
-      { type: "terms", heading: "Language worth borrowing", level: "h2", items: e.terms.map(([term, def]) => ({ term, def })) },
+      { type: "terms", heading: "Language worth borrowing", level: "h2", items: e.terms.map(([term, definition]) => ({ term, definition })) },
       {
         type: "table", heading: "Why this would score well", level: "h2", stacked: true,
         intro: ["The four things an examiner marks, and what this essay does about each. The wording of the criteria is IELTS's own and is published for candidates; the comments are ours."],

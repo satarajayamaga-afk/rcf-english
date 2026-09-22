@@ -2391,7 +2391,8 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
 .plan__stage--presentation { --stage: var(--navy-600); --stage-ink: var(--navy-800); --stage-bg: #eff4fb; }
 .plan__stage--practice { --stage: var(--teal-600); --stage-ink: var(--teal-800); --stage-bg: #edf7f4; }
 .plan__stage--production { --stage: var(--gold-600); --stage-ink: var(--gold-800); --stage-bg: #fdf6e8; }
-.plan__stage--close { --stage: var(--ink-300); --stage-ink: var(--ink-700); --stage-bg: var(--surface-alt); }
+.plan__stage--close,
+.plan__stage--warmer { --stage: var(--ink-300); --stage-ink: var(--ink-700); --stage-bg: var(--surface-alt); }
 
 .plan__stagehead {
   display: flex;
