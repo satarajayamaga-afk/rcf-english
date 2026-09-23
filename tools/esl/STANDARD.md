@@ -93,6 +93,32 @@ download button. The printable copy is an extra.
   text.
 - Nothing depends on colour: every worksheet prints in black and white.
 
+## 3b. The activity collection
+
+A page such as "20 speaking activities for beginners" is a collection, not a
+lesson. It earns its place only if a teacher can run any activity on it
+straight from the page, so each activity carries its own working detail.
+
+**Every activity has**
+- A name, the CEFR level it suits, how long it takes, and how learners work
+  (pairs, groups, whole class, mingle).
+- What the teacher must prepare, and what it costs: an activity needing
+  photocopies, cards or a projector says so, and an activity needing nothing
+  says that too.
+- The language it practises: the question forms, structures or vocabulary
+  learners will actually use.
+- Numbered steps a teacher can follow while holding the page.
+- A variation, and a note for a class of 40 or more.
+
+**Every collection has**
+- Activities grouped by what they are for - warmers, pair work, mingles,
+  longer tasks - not one undivided list.
+- A short section on running speaking with beginners: what to do about
+  silence, first language and correction.
+- A count in the title that matches the number of activities on the page.
+- No filler. Fifteen activities that work beat twenty where five are the
+  same activity renamed.
+
 ## 4. Content that suits classrooms everywhere
 
 - **Written by RCF English, all of it.** No text, exercise or illustration

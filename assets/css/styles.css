@@ -2567,6 +2567,71 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   .pthumb__link { box-shadow: none; }
 }
 
+/* 10b-iii. Classroom activity cards --------------------------------------
+   One activity in a collection. The three things a teacher decides by -
+   how long, how learners work, what must be prepared - sit at the top in
+   their own row, not inside a paragraph. */
+
+.act {
+  margin: 0;
+  padding: var(--sp-4) var(--sp-5);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--teal-600);
+  border-radius: var(--radius);
+}
+.act + .act, .section + .section > .container > .act { margin-top: var(--sp-4); }
+.act__name { margin: 0 0 var(--sp-3); font-size: var(--step-1); color: var(--navy-800); }
+.act__n {
+  display: inline-block;
+  min-width: 1.6em;
+  margin-right: 0.15em;
+  padding: 0 0.35em;
+  background: var(--teal-050);
+  border-radius: var(--radius-sm);
+  color: var(--teal-800);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  text-align: center;
+}
+.act__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-4);
+  margin: 0 0 var(--sp-3);
+  padding: 0;
+  list-style: none;
+  font-size: var(--step--1);
+}
+.act__meta li { color: var(--ink-700); }
+.act__meta span, .act__lang > span, .act__extra > span {
+  color: var(--navy-800);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-right: 0.35em;
+}
+.act__lang {
+  margin: 0 0 var(--sp-3);
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--teal-050);
+  border-radius: var(--radius-sm);
+  font-size: var(--step--1);
+}
+.act__steps { margin: 0 0 var(--sp-3); padding-left: 1.25rem; }
+.act__steps li { margin-bottom: var(--sp-2); }
+.act__extra { margin: 0 0 var(--sp-2); font-size: var(--step--1); color: var(--ink-700); }
+.act__extra:last-child { margin-bottom: 0; }
+
+@media (max-width: 719px) {
+  .act { padding: var(--sp-3) var(--sp-4); }
+  .act__meta { gap: var(--sp-1) var(--sp-3); }
+}
+@media print {
+  .act { break-inside: avoid; border-left-width: 3pt; }
+}
+
 /* 10c. Topic tags, share row and article reader -------------------------- */
 
 /* Tags sit on the navy page hero, so they are pale outlines, not filled

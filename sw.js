@@ -16,7 +16,7 @@
    VERSION changes with each deploy (the build writes it), which clears old
    caches and lets the page offer "Show the new version". */
 
-const VERSION = "rcf-f08958742e86";
+const VERSION = "rcf-c6e354c959be";
 const PAGES = `pages-${VERSION}`;
 const ASSETS = `assets-${VERSION}`;
 const CORE = [

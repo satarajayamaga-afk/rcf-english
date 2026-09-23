@@ -1273,6 +1273,37 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'activity' {
+            # One classroom activity in a collection: what it costs a teacher to
+            # run, at the top, then the steps. A teacher scanning the page
+            # decides by time, grouping and what they must prepare, so those
+            # three are never buried in a paragraph.
+            $html = (SectionOpen $block)
+            $level = [string](P $block 'level' 'h3')
+            $n = [string](P $block 'n' '')
+            $html += '<article class="act">'
+            $html += "<$level class=""act__name"">"
+            if ($n) { $html += '<span class="act__n">' + (E $n) + '</span> ' }
+            $html += (E (P $block 'name')) + "</$level>"
+            $html += '<ul class="act__meta">'
+            foreach ($pair in @(@('Time', (P $block 'time')), @('Learners work', (P $block 'grouping')), @('You need', (P $block 'prep')))) {
+                if ($pair[1]) { $html += '<li><span>' + (E $pair[0]) + '</span> ' + (E $pair[1]) + '</li>' }
+            }
+            $html += '</ul>'
+            $lang = P $block 'language'
+            if ($lang) { $html += '<p class="act__lang"><span>Language</span> ' + (Inline $lang) + '</p>' }
+            $steps = AsList (P $block 'steps')
+            if ($steps.Count) {
+                $html += '<ol class="act__steps">'
+                foreach ($s in $steps) { $html += '<li>' + (Inline $s) + '</li>' }
+                $html += '</ol>'
+            }
+            foreach ($extra in @(@('Variation', (P $block 'variation')), @('Large class', (P $block 'bigClass')))) {
+                if ($extra[1]) { $html += '<p class="act__extra"><span>' + (E $extra[0]) + '</span> ' + (Inline $extra[1]) + '</p>' }
+            }
+            return $html + '</article></div></section>'
+        }
+
         'print' {
             # A print button. nav.js prints any [data-print] on every page, and
             # .print-page hides itself on paper, along with the site's header,

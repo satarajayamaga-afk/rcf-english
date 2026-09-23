@@ -6,9 +6,12 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "../..");
 const BASE = "global-english/esl";
-const LESSONS = fs.readdirSync(path.join(__dirname, "lessons"))
-  .filter((f) => f.endsWith(".js"))
-  .map((f) => require(path.join(__dirname, "lessons", f)));
+const load = (dir) => fs.existsSync(path.join(__dirname, dir))
+  ? fs.readdirSync(path.join(__dirname, dir)).filter((f) => f.endsWith(".js")).map((f) => require(path.join(__dirname, dir, f)))
+  : [];
+const LESSONS = load("lessons");
+const COLLECTIONS = load("collections");
+const GUIDES = load("guides");
 const REVIEWED = "22 September 2026";
 
 const GE = { label: "Global English", url: "global-english/" };
@@ -169,6 +172,125 @@ function worksheetPage(mod) {
   };
 }
 
+// ------------------------------------------------------- activity collection
+function checkCollection(C) {
+  ["slug", "path", "title", "cefr", "intro", "running", "groups"].forEach((k) => { if (!C[k]) throw new Error(`${C.slug}: collection is missing "${k}" (STANDARD.md, section 3b)`); });
+  const acts = C.groups.flatMap((g) => g.activities);
+  const claimed = parseInt(C.title, 10);
+  // The number in the title is a promise to the reader.
+  if (claimed && claimed !== acts.length) throw new Error(`${C.slug}: the title says ${claimed} activities but the page has ${acts.length}`);
+  acts.forEach((a) => {
+    ["name", "time", "grouping", "prep", "language", "steps", "variation", "bigClass"].forEach((k) => {
+      if (!a[k]) throw new Error(`${C.slug}: activity "${a.name || "?"}" is missing "${k}"`);
+    });
+    if (a.steps.length < 3) throw new Error(`${C.slug}: activity "${a.name}" needs at least three steps`);
+  });
+  const names = acts.map((a) => a.name.toLowerCase());
+  const twice = names.find((n, i) => names.indexOf(n) !== i);
+  if (twice) throw new Error(`${C.slug}: "${twice}" appears twice`);
+  // And not on another collection either: the same activity under two names,
+  // or the same name on two pages, is the near-duplicate content the standard
+  // forbids and Google penalises.
+  names.forEach((n) => {
+    const already = seenActivities.get(n);
+    if (already && already !== C.slug) throw new Error(`${C.slug}: "${n}" is already on the ${already} page. Write a different activity or link to that page.`);
+    seenActivities.set(n, C.slug);
+  });
+}
+const seenActivities = new Map();
+
+function collectionPage(mod) {
+  const C = mod.collection;
+  checkCollection(C);
+  const acts = C.groups.flatMap((g) => g.activities);
+  let n = 0;
+  const groupBlocks = C.groups.flatMap((g, gi) => [
+    { type: "prose", heading: g.label, level: "h2", text: [g.blurb] },
+    ...g.activities.map((a) => ({
+      type: "activity", level: "h3", n: String(++n),
+      name: a.name, time: a.time, grouping: a.grouping, prep: a.prep,
+      language: a.language, steps: a.steps, variation: a.variation, bigClass: a.bigClass
+    })),
+    ...(gi === 1 ? [AD] : [])
+  ]);
+  return {
+    slug: `${BASE}/${C.path}`,
+    title: C.title,
+    metaTitle: `${C.title} (${C.cefr}): Free, with Steps and Large-Class Notes | RCF English`,
+    description: `${acts.length} speaking activities for ${C.cefr} ESL classes, each with the language it practises, numbered steps, a variation and a note for classes of 40 or more. Most need no materials.`,
+    keywords: "ESL speaking activities, speaking activities for beginners, EFL speaking games, English speaking activities for large classes, A1 A2 speaking practice",
+    kicker: `ESL Speaking Activities · CEFR ${C.cefr}`,
+    kind: "teacher-resource",
+    schema: "LearningResource",
+    educationalLevel: `CEFR ${C.cefr}`,
+    cefr: C.cefr,
+    timeRequired: iso(C.minutes),
+    teaches: C.teaches,
+    audienceRole: "teacher",
+    resourceType: "Activity collection",
+    tags: [`CEFR ${C.cefr}`, "Speaking", "No materials needed", "Large classes", `${acts.length} activities`],
+    breadcrumbs: [GE, ESL],
+    backTo: ESL,
+    hero: { text: C.intro[0] },
+    blocks: [
+      { type: "prose", heading: "About these activities", level: "h2", text: C.intro.slice(1) },
+      { type: "prose", heading: C.running.heading, level: "h2", bullets: C.running.items },
+      AD,
+      ...groupBlocks,
+      { type: "accordion", heading: "Questions teachers ask", level: "h2", faq: true, items: C.faq.map(([q, a]) => ({ title: q, text: [a] })) },
+      { type: "print", label: "Print these activities", note: "Prints without the site's menus or advertisements." },
+      byline("collection"),
+      { type: "share", heading: "Share these activities", level: "h2", text: `${C.title}: free, with steps and notes for large classes.`, hashtags: ["ESL", "EFL", "TEFL", "SpeakingActivities", "EnglishTeachers"] },
+      { type: "related", heading: "More for your classroom", level: "h2", items: [{ title: "ESL lesson plans", url: LP.url, text: ["Complete, timed lessons with worksheets."] }, { title: "ESL worksheets", url: WS.url, text: ["Printable, with answer keys."] }] }
+    ]
+  };
+}
+
+// ---------------------------------------------------------- teaching guide
+function checkGuide(G) {
+  ["slug", "path", "title", "intro", "steps", "mistakes", "faq"].forEach((k) => { if (!G[k]) throw new Error(`${G.slug}: guide is missing "${k}"`); });
+  G.steps.forEach((s) => { if (!s.name || !s.body || !s.body.length) throw new Error(`${G.slug}: step "${s.name || "?"}" needs a name and a body`); });
+}
+
+function guidePage(mod) {
+  const G = mod.guide;
+  checkGuide(G);
+  return {
+    slug: `${BASE}/${G.path}`,
+    title: G.title,
+    metaTitle: `${G.title}: A Step-by-Step Guide for Teachers | RCF English`,
+    description: `${G.intro[0]} A practical guide for English teachers, with the wording to use, the mistakes to avoid and a blank plan to copy.`,
+    keywords: "how to make an ESL lesson plan, ESL lesson planning, lesson plan template ESL, how to plan an English lesson, aims for ESL lessons",
+    kicker: "ESL Teaching Guide",
+    kind: "teacher-resource",
+    schema: "LearningResource",
+    educationalLevel: G.cefr || "Any level",
+    timeRequired: iso(G.minutes || 10),
+    teaches: G.teaches,
+    audienceRole: "teacher",
+    resourceType: "Teaching guide",
+    tags: ["Lesson planning", "Teacher development", "For any level", "Large classes"],
+    breadcrumbs: [GE, ESL],
+    backTo: ESL,
+    hero: { text: G.intro[0] },
+    blocks: [
+      { type: "prose", heading: "Why bother", level: "h2", text: G.intro.slice(1) },
+      AD,
+      ...G.steps.flatMap((s, i) => [
+        { type: "prose", heading: `${i + 1}. ${s.name}`, level: "h2", text: s.body },
+        ...(s.tip ? [{ type: "callout", style: "tip", title: "In practice", text: [s.tip] }] : [])
+      ]),
+      { type: "table", heading: "A blank plan to copy", level: "h2", intro: ["Everything below fits on one side of paper. A plan you cannot see at a glance is a plan you will not look at while teaching."], columns: ["Part", "What goes in it"], rows: G.blankPlan },
+      AD,
+      { type: "table", heading: "Five mistakes that weaken a lesson", level: "h2", columns: ["The mistake", "What it looks like, and the fix"], rows: G.mistakes },
+      { type: "accordion", heading: "Questions teachers ask", level: "h2", faq: true, items: G.faq.map(([q, a]) => ({ title: q, text: [a] })) },
+      byline("guide"),
+      { type: "share", heading: "Share this guide", level: "h2", text: `${G.title}: a practical guide for English teachers.`, hashtags: ["ESL", "EFL", "TEFL", "LessonPlanning", "EnglishTeachers"] },
+      { type: "related", heading: "See it done", level: "h2", items: [{ title: "ESL lesson plans", url: LP.url, text: ["Complete plans built exactly this way, free to take and adapt."] }, { title: "Our standard", url: BASE + "/our-standards/", text: ["What every plan on this site must contain."] }] }
+    ]
+  };
+}
+
 // -------------------------------------------------------------------- hubs
 const plans = LESSONS.filter((m) => m.lesson);
 const sheets = LESSONS.filter((m) => m.worksheet);
@@ -198,6 +320,8 @@ const hub = {
       items: [
         { title: "ESL lesson plans", url: LP.url, more: `${plans.length} ${plans.length === 1 ? "plan" : "plans"}`, text: ["Complete, timed lessons, by CEFR level."] },
         { title: "ESL worksheets", url: WS.url, more: `${sheets.length} ${sheets.length === 1 ? "worksheet" : "worksheets"}`, text: ["Printable, graded tasks with answer keys."] },
+        ...COLLECTIONS.map((m) => ({ title: m.collection.title, url: `${BASE}/${m.collection.path}/`, more: `${m.collection.groups.flatMap((g) => g.activities).length} activities`, text: ["Steps, variations and notes for large classes. No materials needed for most."] })),
+        ...GUIDES.map((m) => ({ title: m.guide.title, url: `${BASE}/${m.guide.path}/`, more: "Guide", text: ["How to do it, step by step, for any class."] })),
         { title: "Our standard", url: BASE + "/our-standards/", more: "Read it", text: ["What every plan and worksheet on this site must have."] }
       ]
     },
@@ -286,7 +410,7 @@ const standards = {
   ]
 };
 
-const pages = [hub, planHub, sheetHub, standards, ...plans.map(lessonPage), ...sheets.map(worksheetPage)];
+const pages = [hub, planHub, sheetHub, standards, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)];
 fs.writeFileSync(path.join(ROOT, "_src/pages/global-english-esl.json"), JSON.stringify({
   _readme: [
     "INTERNATIONAL ESL SECTION",
@@ -314,4 +438,4 @@ const at = areas.items.findIndex((c) => c.url === card.url);
 if (at === -1) areas.items.push(card); else areas.items[at] = card;
 fs.writeFileSync(geFile, bom + JSON.stringify(ge, null, 2) + "\n");
 
-console.log(`${pages.length} ESL pages written (${plans.length} lesson plans, ${sheets.length} worksheets); Global English card ${at === -1 ? "added" : "updated"}`);
+console.log(`${pages.length} ESL pages written (${plans.length} lesson plans, ${sheets.length} worksheets, ${COLLECTIONS.length} collections, ${GUIDES.length} guides); Global English card ${at === -1 ? "added" : "updated"}`);
