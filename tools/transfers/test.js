@@ -215,6 +215,30 @@ check("a missing optional column does not stop the script", () => {
   eq(r.sent.length, 2, "emails");
 });
 
+// Renaming a question leaves the sheet's column header as it was, so the
+// sheet may spell an optional question either way. Both must work.
+check("a column that still says (optional) is still found", () => {
+  const head = HEAD.map((h) => h === "WhatsApp number" ? "WhatsApp number (optional)" : h);
+  const r = run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], whatsapp: "0771234567", head }),
+    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"] })
+  ], { head });
+  eq(r.sent.length, 2, "emails");
+  const toB = r.sent.find((m) => m.to === "b@x.com");
+  if (!toB.body.includes("0771234567")) throw new Error("the number was not passed on");
+});
+
+check("a required column that lost (optional) is still found", () => {
+  const head = HEAD.map((h) => h === "Your service and grade (optional)" ? "Your service and grade" : h);
+  const r = run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], service: "SLTS 2-II" }),
+    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"] })
+  ], { head });
+  eq(r.sent.length, 2, "emails");
+  const toB = r.sent.find((m) => m.to === "b@x.com");
+  if (!toB.body.includes("SLTS 2-II")) throw new Error("the service and grade was not passed on");
+});
+
 check("a missing required column fails loudly, naming the columns", () => {
   const head = HEAD.map((h) => h === "Subject you teach" ? "Subject" : h);
   let message = "";

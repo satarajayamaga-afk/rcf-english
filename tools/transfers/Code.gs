@@ -50,6 +50,18 @@ var EMAIL_TITLES = ["Email Address", "Email address", "Email", "Username"];
 // depends on them, so a missing one should fail loudly.
 var OPTIONAL = ["whatsapp", "service", "note"];
 
+// Renaming a question in the form does NOT rename the column already in the
+// sheet, so a question whose title once ended in " (optional)" can leave a
+// column that still says so, or the other way round. Both spellings are
+// accepted, and the one actually in the sheet is used.
+var SUFFIX = " (optional)";
+function titlesFor(title) {
+  var other = title.slice(-SUFFIX.length) === SUFFIX
+    ? title.slice(0, -SUFFIX.length)
+    : title + SUFFIX;
+  return [title, other];
+}
+
 // The service covers these subjects only; the form offers exactly these. An
 // answer outside the list - if the form were changed without this - is
 // never matched, rather than matched on a guess.
@@ -141,12 +153,16 @@ function activeTeachers() {
   if (values.length < 2) return [];
   var head = values[0].map(function (h) { return String(h).trim(); });
   var col = function (title, optional) {
-    var at = head.indexOf(title);
-    if (at === -1 && !optional) {
+    var accepted = titlesFor(title);
+    for (var i = 0; i < accepted.length; i++) {
+      var at = head.indexOf(accepted[i]);
+      if (at !== -1) return at;
+    }
+    if (!optional) {
       throw new Error('Column "' + title + '" not found in the sheet. The columns are: ' + head.join(" | ") +
         '. Change the matching title in Q at the top of this script so it is spelt exactly as the sheet spells it.');
     }
-    return at;
+    return -1;
   };
   var c = {};
   c[TIMESTAMP] = col(TIMESTAMP);
