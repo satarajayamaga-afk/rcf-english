@@ -9,6 +9,11 @@ exports.collection = {
   audience: "Teenagers, 13 to 17",
   teaches: "Speaking fluency with teenage classes",
   minutes: 15,
+  category: "ESL Speaking Activities",
+  noun: "speaking activities",
+  keywords: "ESL speaking activities for teenagers, speaking activities for teens English class, EFL activities for secondary school, discussion activities for teenagers, B1 speaking activities",
+  hashtags: ["ESL","EFL","TEFL","TeachingTeens","EnglishTeachers"],
+  cardText: "Topics teenagers will actually talk about, with clear outcomes.",
 
   intro: [
     "Twenty speaking activities that work with teenagers: competitive where competition helps, safe where a teenager would rather die than look foolish, and short enough to hold a class that has already had five lessons that day.",

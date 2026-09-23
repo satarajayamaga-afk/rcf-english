@@ -10,6 +10,12 @@ exports.collection = {
   audience: "Teenagers and adults",
   teaches: "Conversation practice by topic",
   minutes: 20,
+  category: "ESL Conversation Questions",
+  noun: "sets of conversation questions",
+  tags: ["Speaking","Conversation"],
+  keywords: "ESL conversation questions, English conversation questions by topic, speaking questions for English class, discussion questions ESL, conversation topics for adults learning English",
+  hashtags: ["ESL","EFL","TEFL","ConversationClass","EnglishTeachers"],
+  cardText: "Graded question sets by topic, with follow-ups that keep talk going.",
 
   intro: [
     "Twelve sets of conversation questions, graded from A2 to B2, with the language each topic needs and a way to run it that keeps everyone talking rather than one confident learner answering everything.",

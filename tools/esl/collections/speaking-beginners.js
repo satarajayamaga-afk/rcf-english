@@ -9,6 +9,11 @@ exports.collection = {
   audience: "Teenagers and adults; most work with young learners too",
   teaches: "Speaking fluency at beginner level",
   minutes: 15,
+  category: "ESL Speaking Activities",
+  noun: "speaking activities",
+  keywords: "ESL speaking activities for beginners, A1 speaking activities, A2 speaking practice, EFL speaking activities for large classes, getting beginners to speak English",
+  hashtags: ["ESL","EFL","TEFL","SpeakingActivities","EnglishTeachers"],
+  cardText: "Speaking that works at A1 and A2, with the phrases on the board.",
 
   intro: [
     "Twenty speaking activities for A1 and A2 classes, each with the language it practises, numbered steps, a variation and a note for large classes. Most need nothing but the learners themselves.",

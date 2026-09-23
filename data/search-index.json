@@ -457,7 +457,7 @@
     },
     {
         "title":  "ESL Teaching Resources",
-        "description":  "Free ESL lesson plans and printable worksheets for teachers of English in any country: levelled A1 to C2 by the CEFR, written to one published standard, with answer keys and adaptations for large and online classes.",
+        "description":  "Free ESL lesson plans and printable worksheets for teachers anywhere: levelled A1 to C2 by the CEFR, with answer keys and notes for large classes.",
         "url":  "global-english/esl/",
         "kind":  "teacher-resource",
         "section":  "Global English",
@@ -473,7 +473,7 @@
     },
     {
         "title":  "Free Printable ESL Worksheets",
-        "description":  "Free printable ESL worksheets by CEFR level, each with graded tasks, a full answer key and teacher\u0027s notes, and a matching lesson plan.",
+        "description":  "Free printable ESL worksheets by CEFR level and skill: grammar, vocabulary, reading and writing, each with graded tasks, a full answer key and teacher\u0027s notes.",
         "url":  "global-english/esl/worksheets/",
         "kind":  "teacher-resource",
         "section":  "ESL Teaching Resources",
@@ -481,15 +481,31 @@
     },
     {
         "title":  "Our Standard for Lesson Plans and Worksheets",
-        "description":  "What every RCF English ESL lesson plan and worksheet must have before it is published: CEFR levels, learner-outcome aims, language analysis, staged procedures, graded worksheets with answer keys, and material suitable for any classroom.",
+        "description":  "What every ESL lesson plan and worksheet here must have before it is published: CEFR levels, aims as learner outcomes, and answer keys on every sheet.",
         "url":  "global-english/esl/our-standards/",
         "kind":  "page",
         "section":  "ESL Teaching Resources",
         "keywords":  "ESL lesson plan standard, CEFR lesson plan, what makes a good ESL worksheet, lesson plan components"
     },
     {
+        "title":  "First and Second Conditionals ESL Lesson Plan (B1, 60 Minutes)",
+        "description":  "Free 60-minute first and second conditionals lesson plan for B1 ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.",
+        "url":  "global-english/esl/lesson-plans/conditionals/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Lesson Plan · CEFR B1",
+        "keywords":  "first and second conditionals lesson plan, first and second conditionals ESL lesson, teaching conditionals, B1 ESL lesson plan, free ESL lesson plans, EFL lesson plan"
+    },
+    {
+        "title":  "Passive Voice ESL Lesson Plan (B1, 60 Minutes)",
+        "description":  "Free 60-minute passive voice lesson plan for B1 ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.",
+        "url":  "global-english/esl/lesson-plans/passive-voice/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Lesson Plan · CEFR B1",
+        "keywords":  "passive voice lesson plan, passive voice ESL lesson, teaching the passive voice, B1 ESL lesson plan, free ESL lesson plans, EFL lesson plan"
+    },
+    {
         "title":  "Past Simple ESL Lesson Plan (A2, 60 Minutes)",
-        "description":  "A free 60-minute past simple lesson plan for A2 ESL learners: aims, language analysis, a staged procedure with timings, adaptations for large and online classes, and a printable worksheet with answers.",
+        "description":  "Free 60-minute past simple lesson plan for A2 ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.",
         "url":  "global-english/esl/lesson-plans/past-simple/",
         "kind":  "teacher-resource",
         "section":  "ESL Lesson Plan · CEFR A2",
@@ -497,7 +513,7 @@
     },
     {
         "title":  "Present Perfect ESL Lesson Plan (B1, 60 Minutes)",
-        "description":  "A free 60-minute present perfect lesson plan for B1 ESL learners: aims, language analysis, a staged procedure with timings, adaptations for large and online classes, and a printable worksheet with answers.",
+        "description":  "Free 60-minute present perfect lesson plan for B1 ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.",
         "url":  "global-english/esl/lesson-plans/present-perfect/",
         "kind":  "teacher-resource",
         "section":  "ESL Lesson Plan · CEFR B1",
@@ -505,7 +521,7 @@
     },
     {
         "title":  "Present Simple ESL Lesson Plan (A1, 60 Minutes)",
-        "description":  "A free 60-minute present simple lesson plan for A1 ESL learners: aims, language analysis, a staged procedure with timings, adaptations for large and online classes, and a printable worksheet with answers.",
+        "description":  "Free 60-minute present simple lesson plan for A1 ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.",
         "url":  "global-english/esl/lesson-plans/present-simple/",
         "kind":  "teacher-resource",
         "section":  "ESL Lesson Plan · CEFR A1",
@@ -513,15 +529,31 @@
     },
     {
         "title":  "Reported Speech ESL Lesson Plan (B1, 60 Minutes)",
-        "description":  "A free 60-minute reported speech lesson plan for B1 ESL learners: aims, language analysis, a staged procedure with timings, adaptations for large and online classes, and a printable worksheet with answers.",
+        "description":  "Free 60-minute reported speech lesson plan for B1 ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.",
         "url":  "global-english/esl/lesson-plans/reported-speech/",
         "kind":  "teacher-resource",
         "section":  "ESL Lesson Plan · CEFR B1",
-        "keywords":  "reported speech lesson plan, reported speech ESL lesson, teaching the reported speech, B1 ESL lesson plan, free ESL lesson plans, EFL lesson plan"
+        "keywords":  "reported speech lesson plan, reported speech ESL lesson, teaching reported speech, B1 ESL lesson plan, free ESL lesson plans, EFL lesson plan"
+    },
+    {
+        "title":  "First and Second Conditionals Worksheet (B1)",
+        "description":  "Free B1 worksheet on the first and second conditional: gap-fill, matching, error correction and free writing, with a full answer key and notes.",
+        "url":  "global-english/esl/worksheets/conditionals/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Worksheet · CEFR B1",
+        "keywords":  "conditionals worksheet, conditionals exercises, conditionals worksheet with answers, printable ESL worksheet B1, ESL grammar worksheet"
+    },
+    {
+        "title":  "Passive Voice Worksheet (B1)",
+        "description":  "Free printable passive voice worksheet for B1 ESL learners: five graded tasks, from recognition to free writing, with answers and teacher\u0027s notes.",
+        "url":  "global-english/esl/worksheets/passive-voice/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Worksheet · CEFR B1",
+        "keywords":  "passive voice worksheet, passive voice exercises, passive voice worksheet with answers, printable ESL worksheet B1, ESL grammar worksheet"
     },
     {
         "title":  "Past Simple Worksheet (A2)",
-        "description":  "A free printable past simple worksheet for A2 ESL learners: five graded tasks from verb forms to writing about their own day, with a full answer key and teacher\u0027s notes.",
+        "description":  "Free printable past simple worksheet for A2 ESL learners: five graded tasks, from recognition to free writing, with answers and teacher\u0027s notes.",
         "url":  "global-english/esl/worksheets/past-simple/",
         "kind":  "teacher-resource",
         "section":  "ESL Worksheet · CEFR A2",
@@ -529,7 +561,7 @@
     },
     {
         "title":  "Present Perfect Worksheet (B1)",
-        "description":  "A free printable present perfect worksheet for B1 ESL learners: five graded tasks from verb forms to writing about their own day, with a full answer key and teacher\u0027s notes.",
+        "description":  "Free printable present perfect worksheet for B1 ESL learners: five graded tasks, from recognition to free writing, with answers and teacher\u0027s notes.",
         "url":  "global-english/esl/worksheets/present-perfect/",
         "kind":  "teacher-resource",
         "section":  "ESL Worksheet · CEFR B1",
@@ -537,7 +569,7 @@
     },
     {
         "title":  "Present Simple Worksheet (A1)",
-        "description":  "A free printable present simple worksheet for A1 ESL learners: five graded tasks from verb forms to writing about their own day, with a full answer key and teacher\u0027s notes.",
+        "description":  "Free printable present simple worksheet for A1 ESL learners: five graded tasks, from recognition to free writing, with answers and teacher\u0027s notes.",
         "url":  "global-english/esl/worksheets/present-simple/",
         "kind":  "teacher-resource",
         "section":  "ESL Worksheet · CEFR A1",
@@ -545,47 +577,111 @@
     },
     {
         "title":  "Reported Speech Worksheet (B1)",
-        "description":  "A free printable reported speech worksheet for B1 ESL learners: five graded tasks from verb forms to writing about their own day, with a full answer key and teacher\u0027s notes.",
+        "description":  "Free printable reported speech worksheet for B1 ESL learners: five graded tasks, from recognition to free writing, with answers and teacher\u0027s notes.",
         "url":  "global-english/esl/worksheets/reported-speech/",
         "kind":  "teacher-resource",
         "section":  "ESL Worksheet · CEFR B1",
         "keywords":  "reported speech worksheet, reported speech exercises, reported speech worksheet with answers, printable ESL worksheet B1, ESL grammar worksheet"
     },
     {
+        "title":  "Grammar: Prepositions of Time and Place Worksheet (A2)",
+        "description":  "Free printable A2 worksheet on in, on and at for time and place: sorting, two gap-fills, error correction and a writing task, with a full answer key.",
+        "url":  "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Worksheet · CEFR A2",
+        "keywords":  "prepositions of time and place worksheet, in on at worksheet, prepositions exercises with answers, A2 grammar worksheet printable, ESL prepositions practice"
+    },
+    {
+        "title":  "Reading Comprehension: The Night Market Worksheet (A2)",
+        "description":  "Free A2 reading comprehension worksheet on an original 220-word text: true or false, multiple choice, vocabulary from context, with a full answer key.",
+        "url":  "global-english/esl/worksheets/reading-comprehension-a2-the-night-market/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Worksheet · CEFR A2",
+        "keywords":  "A2 reading comprehension worksheet, ESL reading comprehension with answers, printable English reading worksheet, reading comprehension questions ESL, elementary reading passage English"
+    },
+    {
+        "title":  "Vocabulary: Word Formation Worksheet (B1)",
+        "description":  "Free B1 word-formation worksheet: word families, the endings that build nouns and adverbs, the prefixes that make opposites, with a full answer key.",
+        "url":  "global-english/esl/worksheets/vocabulary-word-formation-b1/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Worksheet · CEFR B1",
+        "keywords":  "word formation worksheet, word families worksheet ESL, suffixes and prefixes exercises, B1 vocabulary worksheet with answers, word building English exercises"
+    },
+    {
+        "title":  "Writing: An Informal Email Worksheet (B1)",
+        "description":  "Free B1 worksheet on writing an informal email: the four parts, formal phrases swapped for natural ones, a model to study, and a marking checklist.",
+        "url":  "global-english/esl/worksheets/writing-an-informal-email-b1/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Worksheet · CEFR B1",
+        "keywords":  "informal email worksheet ESL, how to write an informal email B1, email writing practice English, informal letter phrases worksheet, B1 writing worksheet with model"
+    },
+    {
+        "title":  "18 ESL Classroom Games That Teach Something",
+        "description":  "18 free ESL classroom games for A1 to B2: the language point each one practises, numbered steps, a variation, and a note for classes of 40 or more.",
+        "url":  "global-english/esl/games/esl-classroom-games/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Classroom Games · CEFR A1-B2",
+        "keywords":  "ESL classroom games, English games for the classroom, EFL games for adults, vocabulary games for English class, grammar games ESL, games for large English classes, no-materials ESL games"
+    },
+    {
         "title":  "12 Sets of English Conversation Questions, by Topic",
-        "description":  "12 speaking activities for A2-B2 ESL classes, each with the language it practises, numbered steps, a variation and a note for classes of 40 or more. Most need no materials.",
+        "description":  "12 sets of conversation questions for A2-B2 ESL classes: the language each one practises, numbered steps, a variation, and a note for classes of 40 or more.",
         "url":  "global-english/esl/speaking-activities/conversation-questions/",
         "kind":  "teacher-resource",
-        "section":  "ESL Speaking Activities · CEFR A2-B2",
-        "keywords":  "ESL speaking activities, speaking activities for beginners, EFL speaking games, English speaking activities for large classes, A1 A2 speaking practice"
+        "section":  "ESL Conversation Questions · CEFR A2-B2",
+        "keywords":  "ESL conversation questions, English conversation questions by topic, speaking questions for English class, discussion questions ESL, conversation topics for adults learning English"
+    },
+    {
+        "title":  "15 ESL Listening Activities With No Recording Needed",
+        "description":  "15 free ESL listening activities needing no recording or speakers: gist, detail, listening and doing, and listening to each other, with steps for each.",
+        "url":  "global-english/esl/listening/esl-listening-activities/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Listening Activities · CEFR A1-B2",
+        "keywords":  "ESL listening activities, listening activities without audio, teaching listening ESL, EFL listening tasks, dictogloss, picture dictation, listening for gist and detail"
+    },
+    {
+        "title":  "15 ESL Role-Play Activities With Role Cards",
+        "description":  "15 free ESL role-plays with both roles written out: shops, work, problems to solve and disagreements, each with the language it needs and a class note.",
+        "url":  "global-english/esl/speaking/esl-role-play-activities/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Role-Play Activities · CEFR A1-B2",
+        "keywords":  "ESL role play activities, role play cards ESL, English role plays for adults, functional language role play, ESL speaking role plays, role play ideas for English class"
     },
     {
         "title":  "20 ESL Speaking Activities for Beginners",
-        "description":  "20 speaking activities for A1-A2 ESL classes, each with the language it practises, numbered steps, a variation and a note for classes of 40 or more. Most need no materials.",
+        "description":  "20 speaking activities for A1-A2 ESL classes: the language each one practises, numbered steps, a variation, and a note for classes of 40 or more.",
         "url":  "global-english/esl/speaking-activities/beginners/",
         "kind":  "teacher-resource",
         "section":  "ESL Speaking Activities · CEFR A1-A2",
-        "keywords":  "ESL speaking activities, speaking activities for beginners, EFL speaking games, English speaking activities for large classes, A1 A2 speaking practice"
+        "keywords":  "ESL speaking activities for beginners, A1 speaking activities, A2 speaking practice, EFL speaking activities for large classes, getting beginners to speak English"
     },
     {
         "title":  "20 ESL Speaking Activities for Teenagers",
-        "description":  "20 speaking activities for A2-B1 ESL classes, each with the language it practises, numbered steps, a variation and a note for classes of 40 or more. Most need no materials.",
+        "description":  "20 speaking activities for A2-B1 ESL classes: the language each one practises, numbered steps, a variation, and a note for classes of 40 or more.",
         "url":  "global-english/esl/speaking-activities/teenagers/",
         "kind":  "teacher-resource",
         "section":  "ESL Speaking Activities · CEFR A2-B1",
-        "keywords":  "ESL speaking activities, speaking activities for beginners, EFL speaking games, English speaking activities for large classes, A1 A2 speaking practice"
+        "keywords":  "ESL speaking activities for teenagers, speaking activities for teens English class, EFL activities for secondary school, discussion activities for teenagers, B1 speaking activities"
     },
     {
         "title":  "How to Make an ESL Lesson Plan",
-        "description":  "A lesson plan is not a form to fill in for an inspector. It is the set of decisions you make before the lesson so that you do not have to make them in front of thirty people. A practical guide for English teachers, with the wording to use, the mistakes to avoid and a blank plan to copy.",
+        "description":  "How to make an ESL lesson plan: aims as learner outcomes, a staged procedure with timings, and a blank plan to copy. A practical guide for teachers.",
         "url":  "global-english/esl/teaching-guides/how-to-make-an-esl-lesson-plan/",
         "kind":  "teacher-resource",
         "section":  "ESL Teaching Guide",
         "keywords":  "how to make an ESL lesson plan, ESL lesson planning, lesson plan template ESL, how to plan an English lesson, aims for ESL lessons"
     },
     {
+        "title":  "How to Teach Reported Speech",
+        "description":  "How to teach reported speech at B1 and B2: start from a real message, teach said and told first, and treat backshift as a choice, not a law.",
+        "url":  "global-english/esl/teaching-guides/how-to-teach-reported-speech/",
+        "kind":  "teacher-resource",
+        "section":  "ESL Teaching Guide",
+        "keywords":  "how to teach reported speech, teaching reported speech, reported speech lesson, backshift, indirect speech teaching tips, reported questions"
+    },
+    {
         "title":  "How to Teach English Speaking",
-        "description":  "Most learners who have studied English for years still cannot speak it. That is not usually because they lack vocabulary or grammar: it is because they have spent those years not speaking. A practical guide for English teachers, with the wording to use, the mistakes to avoid and a blank plan to copy.",
+        "description":  "How to teach English speaking in an ordinary class: more talking time, the language on the board, thinking time, and what to do about correction.",
         "url":  "global-english/esl/teaching-guides/how-to-teach-english-speaking/",
         "kind":  "teacher-resource",
         "section":  "ESL Teaching Guide",

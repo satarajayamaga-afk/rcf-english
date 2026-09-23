@@ -4787,13 +4787,49 @@ Say "  Search index entries: $($script:SearchIndex.Count)" 'Green'
 
 $siteUrl = $script:Config.siteUrl.TrimEnd('/') + '/'
 $today = (Get-Date).ToString('yyyy-MM-dd')
+
+# A page's lastmod is the day that page last changed, not the day the site
+# was built. Telling Google that 500 pages changed every build makes it
+# ignore lastmod altogether, so we keep a small record of each page's
+# content and only move its date when the content actually differs.
+$lastmodPath = Join-Path $ProjectRoot '_src/lastmod.json'
+$seen = @{}
+if (Test-Path $lastmodPath) {
+    try {
+        $old = ((Get-Content $lastmodPath -Raw) -replace "^﻿", '') | ConvertFrom-Json
+        foreach ($prop in $old.PSObject.Properties) { $seen[$prop.Name] = $prop.Value }
+    } catch { Say "  Could not read _src/lastmod.json; every page gets today's date." 'Yellow' }
+}
+$sha = [System.Security.Cryptography.SHA256]::Create()
+$fresh = @{}
+$changed = 0
+
 $sm = '<?xml version="1.0" encoding="UTF-8"?>' + "`n" + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "`n"
 foreach ($page in $pages) {
     if ((P $page 'noindex') -eq $true) { continue }
     $loc = $siteUrl
     if ($page._slug -ne '') { $loc += $page._slug + '/' }
     $priority = if ($page._slug -eq '') { '1.0' } elseif ((Depth $page._slug) -eq 1) { '0.8' } else { '0.6' }
-    $sm += "  <url><loc>$(E $loc)</loc><lastmod>$today</lastmod><changefreq>monthly</changefreq><priority>$priority</priority></url>`n"
+
+    $key = if ($page._slug -eq '') { '(home)' } else { $page._slug }
+    $hash = ''
+    try {
+        $json = $page | ConvertTo-Json -Depth 30 -Compress -WarningAction SilentlyContinue
+        $hash = [System.BitConverter]::ToString($sha.ComputeHash($utf8.GetBytes($json))).Replace('-', '').Substring(0, 16)
+    } catch { $hash = '' }
+    $date = $today
+    $before = $seen[$key]
+    if ($hash -ne '' -and $before -and $before.hash -eq $hash -and $before.date) { $date = $before.date } else { $changed++ }
+    if ($hash -ne '') { $fresh[$key] = @{ hash = $hash; date = $date } }
+
+    $sm += "  <url><loc>$(E $loc)</loc><lastmod>$date</lastmod><changefreq>monthly</changefreq><priority>$priority</priority></url>`n"
+}
+if ($fresh.Count -gt 0) {
+    # Written in slug order so the file's diff shows only real changes.
+    $ordered = [ordered]@{}
+    foreach ($k in ($fresh.Keys | Sort-Object)) { $ordered[$k] = $fresh[$k] }
+    [System.IO.File]::WriteAllText($lastmodPath, ($ordered | ConvertTo-Json -Depth 4) + "`n", $utf8)
+    Say "  Sitemap: $changed of $($fresh.Count) pages changed since the last build." 'Green'
 }
 $sm += '</urlset>' + "`n"
 [System.IO.File]::WriteAllText((Join-Path $ProjectRoot 'sitemap.xml'), $sm, $utf8)

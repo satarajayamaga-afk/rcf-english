@@ -12,6 +12,8 @@ const load = (dir) => fs.existsSync(path.join(__dirname, dir))
 const LESSONS = load("lessons");
 const COLLECTIONS = load("collections");
 const GUIDES = load("guides");
+// A worksheet may stand on its own, with no lesson plan behind it.
+const EXTRA_WORKSHEETS = load("worksheets");
 const REVIEWED = "22 September 2026";
 
 const GE = { label: "Global English", url: "global-english/" };
@@ -20,6 +22,45 @@ const LP = { label: "Lesson plans", url: BASE + "/lesson-plans/" };
 const WS = { label: "Worksheets", url: BASE + "/worksheets/" };
 const AD = { type: "adslot", placement: "between" };
 const iso = (min) => `PT${min}M`;
+const P = (obj, key, fallback) => (obj[key] === undefined ? fallback : obj[key]);
+// The sections of the worksheets index, in the order they appear.
+const SKILLS = [
+  ["grammar", "Grammar worksheets", "One structure each, practised from controlled tasks to free writing. Most have a full lesson plan behind them."],
+  ["vocabulary", "Vocabulary worksheets", "Words in context, not lists: word families, collocation and working a meaning out from the text around it."],
+  ["reading", "Reading worksheets", "An original text with graded comprehension tasks, including the questions examinations actually ask."],
+  ["writing", "Writing worksheets", "A model to study, the phrases that carry the text type, and a writing task with a checklist to mark against."]
+];
+const numberWord = (n) => ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"][n] || String(n);
+
+// ---------------------------------------------------------------- the SEO
+// Google shows about 60 characters of a title and about 155 of a
+// description, and writes its own when ours do not fit. These two rules are
+// worth more than any keyword list, so the generator refuses a page that
+// breaks them.
+const TITLE_MAX = 60;
+const DESC_MIN = 140;
+const DESC_MAX = 160;
+
+// Picks the first title that fits, so a page keeps the fullest version of
+// its title that Google will actually show.
+const fitTitle = (...candidates) => {
+  const ok = candidates.find((t) => t && t.length <= TITLE_MAX);
+  return ok || candidates[candidates.length - 1];
+};
+const titleCase = (s) => s.replace(/\b[a-z]/g, (c) => c.toUpperCase());
+
+// With --audit, every problem is listed at once instead of the run stopping
+// at the first one: node tools/esl/gen.js --audit
+const AUDIT = process.argv.includes("--audit");
+const seoProblems = [];
+function checkSeo(page) {
+  const t = page.metaTitle || page.title;
+  const d = page.description || "";
+  const fail = (msg) => { if (AUDIT) seoProblems.push(msg); else throw new Error(msg); };
+  if (t.length > TITLE_MAX) fail(`${page.slug}: title is ${t.length} characters, over ${TITLE_MAX}.\n  "${t}"`);
+  if (d.length < DESC_MIN || d.length > DESC_MAX) fail(`${page.slug}: description is ${d.length} characters, not ${DESC_MIN}-${DESC_MAX}.\n  "${d}"`);
+  return page;
+}
 
 // The last line of every page: who wrote it and when it was last checked.
 const byline = (what) => ({
@@ -44,6 +85,24 @@ function checkWorksheet(W) {
   if (W.tasks.length < 3 || W.tasks.length > 5) throw new Error(`${W.slug}: a worksheet has three to five tasks`);
 }
 
+// Every page links to three to five related pages, which is how a reader
+// and a crawler both find the rest of the section. Siblings are chosen by
+// what a teacher looking at this page would want next: the same skill
+// first, then the same level.
+const allSheets = () => [...LESSONS.filter((m) => m.worksheet), ...EXTRA_WORKSHEETS.filter((m) => m.worksheet)].map((m) => m.worksheet);
+function siblingSheets(W, n = 2) {
+  const others = allSheets().filter((o) => o.slug !== W.slug);
+  const score = (o) => ((o.skill || "grammar") === (W.skill || "grammar") ? 2 : 0) + (o.cefr === W.cefr ? 1 : 0);
+  return others.sort((a, b) => score(b) - score(a) || a.topic.localeCompare(b.topic)).slice(0, n);
+}
+function siblingCollections(C, n = 2) {
+  const others = COLLECTIONS.map((m) => m.collection).filter((o) => o.slug !== C.slug);
+  return others.slice(0, n);
+}
+function siblingGuides(G, n = 2) {
+  return GUIDES.map((m) => m.guide).filter((o) => o.slug !== G.slug).slice(0, n);
+}
+
 // ------------------------------------------------------------ lesson plan
 function lessonPage(mod) {
   const L = mod.lesson;
@@ -53,16 +112,20 @@ function lessonPage(mod) {
   return {
     slug: `${BASE}/lesson-plans/${L.slug}`,
     title,
-    metaTitle: `${L.topic} ESL Lesson Plan: ${L.cefr}, ${L.minutes} Minutes, Free with Worksheet | RCF English`,
-    description: `A free ${L.minutes}-minute ${L.topic.toLowerCase()} lesson plan for ${L.cefr} ESL learners: aims, language analysis, a staged procedure with timings, adaptations for large and online classes, and a printable worksheet with answers.`,
-    keywords: `${L.topic.toLowerCase()} lesson plan, ${L.topic.toLowerCase()} ESL lesson, teaching the ${L.topic.toLowerCase()}, ${L.cefr} ESL lesson plan, free ESL lesson plans, EFL lesson plan`,
+    metaTitle: P(L, "metaTitle", fitTitle(
+      `Free ${L.topic} ESL Lesson Plan (${L.cefr}, ${L.minutes} Min)`,
+      `${L.topic} ESL Lesson Plan (${L.cefr}, ${L.minutes} Minutes)`,
+      `${L.topic} ESL Lesson Plan (${L.cefr})`
+    )),
+    description: P(L, "description", `Free ${L.minutes}-minute ${L.topic.toLowerCase()} lesson plan for ${L.cefr} ESL classes: aims, language analysis, timed stages, large-class notes and a printable worksheet.`),
+    keywords: P(L, "keywords", `${L.topic.toLowerCase()} lesson plan, ${L.topic.toLowerCase()} ESL lesson, ${P(L, "teachPhrase", `teaching the ${L.topic.toLowerCase()}`)}, ${L.cefr} ESL lesson plan, free ESL lesson plans, EFL lesson plan`),
     kicker: `ESL Lesson Plan · CEFR ${L.cefr}`,
     kind: "teacher-resource",
     schema: "LearningResource",
     educationalLevel: `CEFR ${L.cefr}`,
     cefr: L.cefr,
     timeRequired: iso(L.minutes),
-    teaches: `The ${L.topic.toLowerCase()} (English grammar)`,
+    teaches: P(L, "teaches", `The ${L.topic.toLowerCase()} (English grammar)`),
     audienceRole: "teacher",
     resourceType: "Lesson plan",
     tags: [`CEFR ${L.cefr}`, `${L.minutes} minutes`, L.learners, "Grammar", L.topic],
@@ -141,19 +204,23 @@ function worksheetPage(mod) {
   return {
     slug: `${BASE}/worksheets/${W.slug}`,
     title: `${W.topic} Worksheet (${W.cefr})`,
-    metaTitle: `${W.topic} Worksheet for ESL Learners (${W.cefr}), Free and Printable, with Answers | RCF English`,
-    description: `A free printable ${W.topic.toLowerCase()} worksheet for ${W.cefr} ESL learners: five graded tasks from verb forms to writing about their own day, with a full answer key and teacher's notes.`,
-    keywords: `${W.topic.toLowerCase()} worksheet, ${W.topic.toLowerCase()} exercises, ${W.topic.toLowerCase()} worksheet with answers, printable ESL worksheet ${W.cefr}, ESL grammar worksheet`,
+    metaTitle: P(W, "metaTitle", fitTitle(
+      `Free ${titleCase(P(W, "searchTerm", W.topic))} Worksheet (${W.cefr}) with Answers`,
+      `Free ${titleCase(P(W, "searchTerm", W.topic))} Worksheet (${W.cefr})`,
+      `${titleCase(P(W, "searchTerm", W.topic))} Worksheet (${W.cefr})`
+    )),
+    description: P(W, "description", `Free printable ${P(W, "searchTerm", W.topic).toLowerCase()} worksheet for ${W.cefr} ESL learners: ${numberWord(W.tasks.length).toLowerCase()} graded tasks, from recognition to free writing, with answers and teacher's notes.`),
+    keywords: P(W, "keywords", `${P(W, "searchTerm", W.topic).toLowerCase()} worksheet, ${P(W, "searchTerm", W.topic).toLowerCase()} exercises, ${P(W, "searchTerm", W.topic).toLowerCase()} worksheet with answers, printable ESL worksheet ${W.cefr}, ESL ${W.skill || "grammar"} worksheet`),
     kicker: `ESL Worksheet · CEFR ${W.cefr}`,
     kind: "teacher-resource",
     schema: "LearningResource",
     educationalLevel: `CEFR ${W.cefr}`,
     cefr: W.cefr,
     timeRequired: iso(W.minutes),
-    teaches: `The ${W.topic.toLowerCase()} (English grammar)`,
+    teaches: P(W, "teaches", `The ${W.topic.toLowerCase()} (English ${W.skill || "grammar"})`),
     audienceRole: "teacher",
     resourceType: "Worksheet",
-    tags: [`CEFR ${W.cefr}`, `About ${W.minutes} minutes`, "Printable", "Answer key", W.topic],
+    tags: [`CEFR ${W.cefr}`, `About ${W.minutes} minutes`, "Printable", "Answer key", ...P(W, "tags", [W.topic])],
     breadcrumbs: [GE, ESL, WS],
     backTo: WS,
     hero: { text: W.intro[0] },
@@ -161,20 +228,28 @@ function worksheetPage(mod) {
       { type: "prose", heading: "About this worksheet", level: "h2", text: W.intro.slice(1) },
       { type: "print", label: "Print this worksheet", note: "Prints without the site's menus or advertisements." },
       { type: "callout", style: "note", title: `${W.topic} · Level ${W.cefr} · About ${W.minutes} minutes`, text: ["Name: ______________________________    Date: ______________"] },
+      ...(W.text ? [{ type: "callout", style: "tip", title: W.text.title, text: Array.isArray(W.text.body) ? W.text.body : [W.text.body] }] : []),
       ...taskBlocks,
       AD,
       { type: "table", heading: "For the teacher: answer key", level: "h2", columns: ["Task", "Answers"], rows: W.answers },
       { type: "prose", heading: "Teacher's notes", level: "h2", bullets: W.notes },
-      ...(L ? [{ type: "related", heading: "The lesson plan for this worksheet", level: "h2", items: [{ title: `${L.topic} ESL Lesson Plan (${L.cefr}, ${L.minutes} Minutes)`, url: `${BASE}/lesson-plans/${L.slug}/`, text: ["The full lesson this worksheet belongs to."] }] }] : []),
+      {
+        type: "related", heading: L ? "The lesson plan, and more like this" : "More like this", level: "h2",
+        items: [
+          ...(L ? [{ title: `${L.topic} ESL Lesson Plan (${L.cefr}, ${L.minutes} Minutes)`, url: `${BASE}/lesson-plans/${L.slug}/`, text: ["The full lesson this worksheet belongs to."] }] : []),
+          ...siblingSheets(W).map((o) => ({ title: `${o.topic} Worksheet (${o.cefr})`, url: `${BASE}/worksheets/${o.slug}/`, text: [`${o.tasks.length} tasks with an answer key. ${o.skill ? titleCase(o.skill) : "Grammar"}, ${o.cefr}.`] })),
+          { title: "All ESL worksheets", url: WS.url, text: ["Grammar, vocabulary, reading and writing, by CEFR level."] }
+        ]
+      },
       byline("worksheet"),
-      { type: "share", heading: "Share this worksheet", level: "h2", text: `Free printable ${W.topic.toLowerCase()} worksheet (${W.cefr}) with answers.`, hashtags: ["ESL", "EFL", "ESLWorksheets", "EnglishTeachers"] }
+      { type: "share", heading: "Share this worksheet", level: "h2", text: `Free printable ${W.topic.toLowerCase()} worksheet (${W.cefr}) with answers.`, hashtags: P(W, "hashtags", ["ESL", "EFL", "ESLWorksheets", "EnglishTeachers"]) }
     ]
   };
 }
 
 // ------------------------------------------------------- activity collection
 function checkCollection(C) {
-  ["slug", "path", "title", "cefr", "intro", "running", "groups"].forEach((k) => { if (!C[k]) throw new Error(`${C.slug}: collection is missing "${k}" (STANDARD.md, section 3b)`); });
+  ["slug", "path", "title", "cefr", "intro", "running", "groups", "faq"].forEach((k) => { if (!C[k]) throw new Error(`${C.slug}: collection is missing "${k}" (STANDARD.md, section 3b)`); });
   const acts = C.groups.flatMap((g) => g.activities);
   const claimed = parseInt(C.title, 10);
   // The number in the title is a promise to the reader.
@@ -216,10 +291,10 @@ function collectionPage(mod) {
   return {
     slug: `${BASE}/${C.path}`,
     title: C.title,
-    metaTitle: `${C.title} (${C.cefr}): Free, with Steps and Large-Class Notes | RCF English`,
-    description: `${acts.length} speaking activities for ${C.cefr} ESL classes, each with the language it practises, numbered steps, a variation and a note for classes of 40 or more. Most need no materials.`,
-    keywords: "ESL speaking activities, speaking activities for beginners, EFL speaking games, English speaking activities for large classes, A1 A2 speaking practice",
-    kicker: `ESL Speaking Activities · CEFR ${C.cefr}`,
+    metaTitle: P(C, "metaTitle", fitTitle(`${C.title} (${C.cefr})`, C.title)),
+    description: P(C, "description", `${acts.length} ${P(C, "noun", "speaking activities")} for ${C.cefr} ESL classes: the language each one practises, numbered steps, a variation, and a note for classes of 40 or more.`),
+    keywords: P(C, "keywords", "ESL speaking activities, speaking activities for beginners, EFL speaking games, English speaking activities for large classes, A1 A2 speaking practice"),
+    kicker: `${P(C, "category", "ESL Speaking Activities")} · CEFR ${C.cefr}`,
     kind: "teacher-resource",
     schema: "LearningResource",
     educationalLevel: `CEFR ${C.cefr}`,
@@ -228,7 +303,7 @@ function collectionPage(mod) {
     teaches: C.teaches,
     audienceRole: "teacher",
     resourceType: "Activity collection",
-    tags: [`CEFR ${C.cefr}`, "Speaking", "No materials needed", "Large classes", `${acts.length} activities`],
+    tags: [`CEFR ${C.cefr}`, ...P(C, "tags", ["Speaking", "No materials needed"]), "Large classes", `${acts.length} activities`],
     breadcrumbs: [GE, ESL],
     backTo: ESL,
     hero: { text: C.intro[0] },
@@ -237,11 +312,19 @@ function collectionPage(mod) {
       { type: "prose", heading: C.running.heading, level: "h2", bullets: C.running.items },
       AD,
       ...groupBlocks,
+      ...(C.closing ? [{ type: "prose", heading: "In short", level: "h2", text: C.closing }] : []),
       { type: "accordion", heading: "Questions teachers ask", level: "h2", faq: true, items: C.faq.map(([q, a]) => ({ title: q, text: [a] })) },
       { type: "print", label: "Print these activities", note: "Prints without the site's menus or advertisements." },
       byline("collection"),
-      { type: "share", heading: "Share these activities", level: "h2", text: `${C.title}: free, with steps and notes for large classes.`, hashtags: ["ESL", "EFL", "TEFL", "SpeakingActivities", "EnglishTeachers"] },
-      { type: "related", heading: "More for your classroom", level: "h2", items: [{ title: "ESL lesson plans", url: LP.url, text: ["Complete, timed lessons with worksheets."] }, { title: "ESL worksheets", url: WS.url, text: ["Printable, with answer keys."] }] }
+      { type: "share", heading: "Share these activities", level: "h2", text: `${C.title}: free, with steps and notes for large classes.`, hashtags: P(C, "hashtags", ["ESL", "EFL", "TEFL", "SpeakingActivities", "EnglishTeachers"]) },
+      {
+        type: "related", heading: "More for your classroom", level: "h2",
+        items: [
+          ...siblingCollections(C).map((o) => ({ title: o.title, url: `${BASE}/${o.path}/`, text: [P(o, "cardText", "Steps, variations and notes for large classes.")] })),
+          { title: "ESL lesson plans", url: LP.url, text: ["Complete, timed lessons with worksheets."] },
+          { title: "ESL worksheets", url: WS.url, text: ["Printable, with answer keys."] }
+        ]
+      }
     ]
   };
 }
@@ -258,9 +341,9 @@ function guidePage(mod) {
   return {
     slug: `${BASE}/${G.path}`,
     title: G.title,
-    metaTitle: `${G.title}: A Step-by-Step Guide for Teachers | RCF English`,
-    description: `${G.intro[0]} A practical guide for English teachers, with the wording to use, the mistakes to avoid and a blank plan to copy.`,
-    keywords: "how to make an ESL lesson plan, ESL lesson planning, lesson plan template ESL, how to plan an English lesson, aims for ESL lessons",
+    metaTitle: P(G, "metaTitle", fitTitle(`${G.title}: A Practical Guide`, G.title)),
+    description: P(G, "description", `${G.intro[0]} A practical guide for English teachers, with the wording to use, the mistakes to avoid and a blank plan to copy.`),
+    keywords: G.keywords || "how to make an ESL lesson plan, ESL lesson planning, lesson plan template ESL, how to plan an English lesson, aims for ESL lessons",
     kicker: "ESL Teaching Guide",
     kind: "teacher-resource",
     schema: "LearningResource",
@@ -269,7 +352,7 @@ function guidePage(mod) {
     teaches: G.teaches,
     audienceRole: "teacher",
     resourceType: "Teaching guide",
-    tags: ["Lesson planning", "Teacher development", "For any level", "Large classes"],
+    tags: G.tags || ["Lesson planning", "Teacher development", "For any level", "Large classes"],
     breadcrumbs: [GE, ESL],
     backTo: ESL,
     hero: { text: G.intro[0] },
@@ -280,26 +363,39 @@ function guidePage(mod) {
         { type: "prose", heading: `${i + 1}. ${s.name}`, level: "h2", text: s.body },
         ...(s.tip ? [{ type: "callout", style: "tip", title: "In practice", text: [s.tip] }] : [])
       ]),
-      { type: "table", heading: "A blank plan to copy", level: "h2", intro: ["Everything below fits on one side of paper. A plan you cannot see at a glance is a plan you will not look at while teaching."], columns: ["Part", "What goes in it"], rows: G.blankPlan },
+      {
+        type: "table", level: "h2",
+        heading: P(G, "blankPlanHeading", "A blank plan to copy"),
+        intro: [P(G, "blankPlanIntro", "Everything below fits on one side of paper. A plan you cannot see at a glance is a plan you will not look at while teaching.")].flat(),
+        columns: P(G, "blankPlanColumns", ["Part", "What goes in it"]), rows: G.blankPlan
+      },
       AD,
-      { type: "table", heading: "Five mistakes that weaken a lesson", level: "h2", columns: ["The mistake", "What it looks like, and the fix"], rows: G.mistakes },
+      { type: "table", heading: P(G, "mistakesHeading", `${numberWord(G.mistakes.length)} mistakes that weaken a lesson`), level: "h2", columns: ["The mistake", "What it looks like, and the fix"], rows: G.mistakes },
       { type: "accordion", heading: "Questions teachers ask", level: "h2", faq: true, items: G.faq.map(([q, a]) => ({ title: q, text: [a] })) },
       byline("guide"),
-      { type: "share", heading: "Share this guide", level: "h2", text: `${G.title}: a practical guide for English teachers.`, hashtags: ["ESL", "EFL", "TEFL", "LessonPlanning", "EnglishTeachers"] },
-      { type: "related", heading: "See it done", level: "h2", items: [{ title: "ESL lesson plans", url: LP.url, text: ["Complete plans built exactly this way, free to take and adapt."] }, { title: "Our standard", url: BASE + "/our-standards/", text: ["What every plan on this site must contain."] }] }
+      { type: "share", heading: "Share this guide", level: "h2", text: `${G.title}: a practical guide for English teachers.`, hashtags: P(G, "hashtags", ["ESL", "EFL", "TEFL", "LessonPlanning", "EnglishTeachers"]) },
+      {
+        type: "related", heading: "See it done", level: "h2",
+        items: [
+          ...(G.related || []).map((r) => ({ title: r.title, url: `${BASE}/${r.path}/`, text: [r.text] })),
+          ...siblingGuides(G).map((o) => ({ title: o.title, url: `${BASE}/${o.path}/`, text: [`A practical guide: ${o.teaches.toLowerCase()}.`] })),
+          { title: "ESL lesson plans", url: LP.url, text: ["Complete plans built exactly this way, free to take and adapt."] },
+          { title: "Our standard", url: BASE + "/our-standards/", text: ["What every plan on this site must contain."] }
+        ]
+      }
     ]
   };
 }
 
 // -------------------------------------------------------------------- hubs
 const plans = LESSONS.filter((m) => m.lesson);
-const sheets = LESSONS.filter((m) => m.worksheet);
+const sheets = [...LESSONS.filter((m) => m.worksheet), ...EXTRA_WORKSHEETS.filter((m) => m.worksheet)];
 
 const hub = {
   slug: BASE,
   title: "ESL Teaching Resources",
-  metaTitle: "Free ESL Lesson Plans and Worksheets, Levelled by the CEFR | RCF English",
-  description: "Free ESL lesson plans and printable worksheets for teachers of English in any country: levelled A1 to C2 by the CEFR, written to one published standard, with answer keys and adaptations for large and online classes.",
+  metaTitle: "Free ESL Lesson Plans and Worksheets by CEFR Level",
+  description: "Free ESL lesson plans and printable worksheets for teachers anywhere: levelled A1 to C2 by the CEFR, with answer keys and notes for large classes.",
   keywords: "free ESL lesson plans, ESL worksheets, EFL teaching resources, English teaching resources, CEFR lesson plans, printable ESL worksheets",
   kicker: "Global English",
   kind: "teacher-resource",
@@ -320,7 +416,7 @@ const hub = {
       items: [
         { title: "ESL lesson plans", url: LP.url, more: `${plans.length} ${plans.length === 1 ? "plan" : "plans"}`, text: ["Complete, timed lessons, by CEFR level."] },
         { title: "ESL worksheets", url: WS.url, more: `${sheets.length} ${sheets.length === 1 ? "worksheet" : "worksheets"}`, text: ["Printable, graded tasks with answer keys."] },
-        ...COLLECTIONS.map((m) => ({ title: m.collection.title, url: `${BASE}/${m.collection.path}/`, more: `${m.collection.groups.flatMap((g) => g.activities).length} activities`, text: ["Steps, variations and notes for large classes. No materials needed for most."] })),
+        ...COLLECTIONS.map((m) => ({ title: m.collection.title, url: `${BASE}/${m.collection.path}/`, more: `${m.collection.groups.flatMap((g) => g.activities).length} activities`, text: [P(m.collection, "cardText", "Steps, variations and notes for large classes. No materials needed for most.")] })),
         ...GUIDES.map((m) => ({ title: m.guide.title, url: `${BASE}/${m.guide.path}/`, more: "Guide", text: ["How to do it, step by step, for any class."] })),
         { title: "Our standard", url: BASE + "/our-standards/", more: "Read it", text: ["What every plan and worksheet on this site must have."] }
       ]
@@ -333,7 +429,7 @@ const hub = {
 const planHub = {
   slug: `${BASE}/lesson-plans`,
   title: "Free ESL Lesson Plans",
-  metaTitle: "Free ESL Lesson Plans by CEFR Level, with Worksheets | RCF English",
+  metaTitle: "Free ESL Lesson Plans by CEFR Level, with Worksheets",
   description: "Free, complete ESL lesson plans by CEFR level: aims, language analysis, timed stages with interaction patterns, adaptations and a printable worksheet for each.",
   keywords: "free ESL lesson plans, ESL grammar lesson plans, EFL lesson plans, CEFR A2 lesson plans, English lesson plans for teachers",
   kicker: "ESL Teaching Resources",
@@ -354,20 +450,33 @@ const planHub = {
 const sheetHub = {
   slug: `${BASE}/worksheets`,
   title: "Free Printable ESL Worksheets",
-  metaTitle: "Free Printable ESL Worksheets with Answer Keys, by CEFR Level | RCF English",
-  description: "Free printable ESL worksheets by CEFR level, each with graded tasks, a full answer key and teacher's notes, and a matching lesson plan.",
+  metaTitle: "Free Printable ESL Worksheets with Answer Keys",
+  description: "Free printable ESL worksheets by CEFR level and skill: grammar, vocabulary, reading and writing, each with graded tasks, a full answer key and teacher's notes.",
   keywords: "free ESL worksheets, printable ESL worksheets, ESL grammar worksheets with answers, EFL worksheets, CEFR A2 worksheets",
   kicker: "ESL Teaching Resources",
   kind: "teacher-resource",
   tags: ["ESL worksheets", "Printable", "Answer keys"],
   breadcrumbs: [GE, ESL],
   backTo: ESL,
-  hero: { text: "Graded, printable worksheets with answer keys and teacher's notes, each matched to a lesson plan." },
+  hero: { text: "Graded, printable worksheets with answer keys and teacher's notes. Each card says whether the worksheet comes with a full lesson plan." },
   blocks: [
-    {
-      type: "cards", heading: "Worksheets", level: "h2", columns: "3",
-      items: sheets.map((m) => ({ title: `${m.worksheet.topic} (${m.worksheet.cefr})`, url: `${BASE}/worksheets/${m.worksheet.slug}/`, more: `About ${m.worksheet.minutes} minutes`, text: [`${m.worksheet.tasks.length} tasks, answer key and teacher's notes.`] }))
-    },
+    ...SKILLS.flatMap(([skill, label, blurb], i) => {
+      const forSkill = sheets.filter((m) => (m.worksheet.skill || "grammar") === skill);
+      if (!forSkill.length) return [];
+      return [
+        {
+          type: "cards", heading: label, level: "h2", columns: "3", intro: [blurb],
+          items: forSkill.map((m) => ({
+            // Inside "Grammar worksheets", a card need not repeat "Grammar:".
+            title: `${m.worksheet.topic.replace(new RegExp(`^${skill}: `, "i"), "")} (${m.worksheet.cefr})`,
+            url: `${BASE}/worksheets/${m.worksheet.slug}/`,
+            more: `About ${m.worksheet.minutes} minutes`,
+            text: [`${m.worksheet.tasks.length} tasks, answer key and teacher's notes.${m.lesson ? " With a full lesson plan." : ""}`]
+          }))
+        },
+        ...(i === 0 ? [AD] : [])
+      ];
+    }),
     AD
   ]
 };
@@ -375,8 +484,8 @@ const sheetHub = {
 const standards = {
   slug: `${BASE}/our-standards`,
   title: "Our Standard for Lesson Plans and Worksheets",
-  metaTitle: "Our Standard for ESL Lesson Plans and Worksheets | RCF English",
-  description: "What every RCF English ESL lesson plan and worksheet must have before it is published: CEFR levels, learner-outcome aims, language analysis, staged procedures, graded worksheets with answer keys, and material suitable for any classroom.",
+  metaTitle: "Our Standard for ESL Lesson Plans and Worksheets",
+  description: "What every ESL lesson plan and worksheet here must have before it is published: CEFR levels, aims as learner outcomes, and answer keys on every sheet.",
   keywords: "ESL lesson plan standard, CEFR lesson plan, what makes a good ESL worksheet, lesson plan components",
   kicker: "ESL Teaching Resources",
   kind: "page",
@@ -406,11 +515,19 @@ const standards = {
     ] },
     { type: "prose", heading: "Quality before quantity", level: "h2", text: ["Each page is written for one real teaching purpose and read through in full before it is published. New material goes up in small, finished batches, and each page shows the date it was last reviewed."] },
     { type: "prose", heading: "Free and premium", level: "h2", text: ["Every free lesson and worksheet is complete enough to teach from. Premium packs, when they are available, add convenience - editable files, slides and whole-unit bundles - never the part of a lesson that makes it work."] },
-    { type: "prose", heading: "Advertising", level: "h2", text: ["Where advertising appears, it is labelled, it sits only between sections, and it never appears inside a lesson, inside a worksheet or beside a button. It does not print."] }
+    { type: "prose", heading: "Advertising", level: "h2", text: ["Where advertising appears, it is labelled, it sits only between sections, and it never appears inside a lesson, inside a worksheet or beside a button. It does not print."] },
+    {
+      type: "related", heading: "See the standard at work", level: "h2",
+      items: [
+        { title: "ESL lesson plans", url: LP.url, text: ["Complete, timed lessons, every one built to this standard."] },
+        { title: "ESL worksheets", url: WS.url, text: ["Printable, with answer keys and teacher's notes."] },
+        { title: "ESL teaching resources", url: ESL.url, text: ["The whole section: plans, worksheets, activities and guides."] }
+      ]
+    }
   ]
 };
 
-const pages = [hub, planHub, sheetHub, standards, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)];
+const pages = [hub, planHub, sheetHub, standards, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)].map(checkSeo);
 fs.writeFileSync(path.join(ROOT, "_src/pages/global-english-esl.json"), JSON.stringify({
   _readme: [
     "INTERNATIONAL ESL SECTION",
@@ -439,3 +556,7 @@ if (at === -1) areas.items.push(card); else areas.items[at] = card;
 fs.writeFileSync(geFile, bom + JSON.stringify(ge, null, 2) + "\n");
 
 console.log(`${pages.length} ESL pages written (${plans.length} lesson plans, ${sheets.length} worksheets, ${COLLECTIONS.length} collections, ${GUIDES.length} guides); Global English card ${at === -1 ? "added" : "updated"}`);
+if (seoProblems.length) {
+  console.log(`\n${seoProblems.length} SEO problems:\n`);
+  seoProblems.forEach((p) => console.log("  " + p));
+}

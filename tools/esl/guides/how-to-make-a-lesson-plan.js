@@ -8,6 +8,7 @@ exports.guide = {
   cefr: "Any level",
   teaches: "Lesson planning for English language teachers",
   minutes: 12,
+  description: "How to make an ESL lesson plan: aims as learner outcomes, a staged procedure with timings, and a blank plan to copy. A practical guide for teachers.",
   audience: "New and experienced teachers of English",
 
   intro: [

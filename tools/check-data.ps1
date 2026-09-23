@@ -34,6 +34,7 @@ $files += Get-ChildItem (Join-Path $ProjectRoot 'data') -Filter *.json -ErrorAct
 
 foreach ($file in $files) {
     if ($file.Name -eq 'search-index.json') { continue }   # written by the build
+    if ($file.Name -eq 'lastmod.json') { continue }         # written by the build
     $checked++
     $relative = $file.FullName.Substring($ProjectRoot.Length + 1)
     $text = [System.IO.File]::ReadAllText($file.FullName, [System.Text.Encoding]::UTF8)

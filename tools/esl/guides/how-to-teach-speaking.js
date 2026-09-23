@@ -8,6 +8,7 @@ exports.guide = {
   cefr: "Any level",
   teaches: "Teaching speaking to English language learners",
   minutes: 12,
+  description: "How to teach English speaking in an ordinary class: more talking time, the language on the board, thinking time, and what to do about correction.",
   audience: "Teachers of English, including large and low-resource classes",
 
   intro: [

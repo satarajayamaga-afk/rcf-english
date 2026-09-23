@@ -93,6 +93,22 @@ download button. The printable copy is an extra.
   text.
 - Nothing depends on colour: every worksheet prints in black and white.
 
+**A worksheet may stand on its own.** Most grammar worksheets belong to a
+lesson plan, but a reading, vocabulary or writing worksheet is a complete
+piece of work without one. A standalone worksheet lives in
+`tools/esl/worksheets/`, and everything above still applies to it, with two
+additions:
+
+- It carries its own `text` block - the reading passage, the model letter, or
+  the box explaining the pattern - because there is no lesson to supply it.
+  The text is RCF English's own, and its length and language suit the stated
+  CEFR level.
+- It declares a `skill`: `grammar`, `vocabulary`, `reading` or `writing`.
+  That is what groups it on the worksheets index, so a teacher looking for
+  reading practice is not made to read through grammar sheets first.
+
+Nothing on the index may claim a lesson plan for a worksheet that has none.
+
 ## 3b. The activity collection
 
 A page such as "20 speaking activities for beginners" is a collection, not a
@@ -118,6 +134,12 @@ straight from the page, so each activity carries its own working detail.
 - A count in the title that matches the number of activities on the page.
 - No filler. Fifteen activities that work beat twenty where five are the
   same activity renamed.
+- Questions teachers ask (the `faq`), and a closing paragraph saying what
+  the whole collection has in common, so the page ends with something to
+  take away rather than with the last activity.
+- **No activity appears on two collections,** and no two activities share a
+  name close enough to be confused. The generator refuses an exact repeat;
+  near-repeats are the writer's job to catch.
 
 ## 4. Content that suits classrooms everywhere
 
@@ -137,8 +159,21 @@ straight from the page, so each activity carries its own working detail.
 ## 5. The page
 
 **Title** says what it is, for whom and at what level, the way teachers
-search: "Past Simple ESL Lesson Plan (A2, 60 Minutes)". Never a Sri Lankan
-grade name on an international page.
+search: "Free Past Simple ESL Lesson Plan (A2, 60 Min)". Never a Sri Lankan
+grade name on an international page. **At most 60 characters**, because that
+is roughly all a search result shows, and the search phrase comes first, not
+the site's name. The generator refuses a longer one.
+
+**Description**: **140 to 160 characters**, written for a person deciding
+whether to click - what the page gives them, and what is in it. Not a
+keyword list, and not a sentence cut off in the middle. The generator
+refuses one outside those limits.
+
+**What does not count as search work.** The `keywords` meta tag is ignored by
+Google, and hashtags do nothing for a page's ranking; they are there for a
+human who shares the page. The work that counts is the title, the
+description, one clear H1, the internal links, the structured data, and a
+sitemap whose dates are honest.
 
 **Opening**: two sentences that tell the visitor what the page is, who it
 is for and what they will be able to do with it.
@@ -149,7 +184,10 @@ is for and what they will be able to do with it.
 learner). The data describes only what is on the page.
 
 **Links**: every plan links to its worksheet and its worksheet to its plan,
-and each links on to the next topic and back to its hub.
+and each links on to the next topic and back to its hub. **Three to five
+related pages on every page**, chosen by what a teacher would want next -
+the same skill first, then the same level - and no page may be reachable
+only from the sitemap: everything is linked from a category page.
 
 **Accessible**: real headings in order, alternative text for every image,
 enough contrast, usable by keyboard. The site's accessibility checks apply.
@@ -190,6 +228,9 @@ A page goes live only when every line is true.
 - [ ] Worksheet readable: font, spacing, line length; works in black and white
 - [ ] Original throughout; names and places from many countries; PARSNIP-safe
 - [ ] Title, opening and structured data describe the page accurately
+- [ ] Title at most 60 characters, with the search phrase first
+- [ ] Description 140 to 160 characters, written for a person, not a crawler
+- [ ] Three to five related links, and the page is linked from a category page
 - [ ] Plan and worksheet link to each other and to the hub
 - [ ] At most three ad slots, between sections only
 - [ ] Read through in full; review date set

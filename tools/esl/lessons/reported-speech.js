@@ -8,6 +8,8 @@ exports.lesson = {
   cefrNote: "B1, with a B2 extension in the notes",
   learners: "Teenagers and adults",
   minutes: 60,
+  teachPhrase: "teaching reported speech",
+  teaches: "Reported speech in English (indirect speech, backshift and reported questions)",
   shortRoute: "For a 45-minute lesson, teach statements only and leave reported questions for a second lesson.",
   skills: "Speaking, listening and writing",
   focus: "Reported speech: statements with said and told, reported questions with asked, and the changes to tense, pronouns and time words",
