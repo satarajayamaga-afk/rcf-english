@@ -61,7 +61,7 @@
             {
               "title": "ESL worksheets",
               "url": "global-english/esl/worksheets/",
-              "more": "10 worksheets",
+              "more": "16 worksheets",
               "text": [
                 "Printable, graded tasks with answer keys."
               ]
@@ -348,9 +348,33 @@
               ]
             },
             {
+              "title": "Present Continuous (A1)",
+              "url": "global-english/esl/worksheets/present-continuous-a1/",
+              "more": "About 35 minutes",
+              "text": [
+                "5 tasks, answer key and teacher's notes."
+              ]
+            },
+            {
+              "title": "Comparatives and Superlatives (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
+              "more": "About 40 minutes",
+              "text": [
+                "5 tasks, answer key and teacher's notes."
+              ]
+            },
+            {
               "title": "Prepositions of Time and Place (A2)",
               "url": "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
               "more": "About 40 minutes",
+              "text": [
+                "5 tasks, answer key and teacher's notes."
+              ]
+            },
+            {
+              "title": "Relative Clauses (B2)",
+              "url": "global-english/esl/worksheets/relative-clauses-b2/",
+              "more": "About 50 minutes",
               "text": [
                 "5 tasks, answer key and teacher's notes."
               ]
@@ -370,6 +394,14 @@
             "Words in context, not lists: word families, collocation and working a meaning out from the text around it."
           ],
           "items": [
+            {
+              "title": "Everyday Collocations (A2)",
+              "url": "global-english/esl/worksheets/everyday-collocations-a2/",
+              "more": "About 40 minutes",
+              "text": [
+                "5 tasks, answer key and teacher's notes."
+              ]
+            },
             {
               "title": "Word Formation (B1)",
               "url": "global-english/esl/worksheets/vocabulary-word-formation-b1/",
@@ -396,6 +428,14 @@
               "text": [
                 "5 tasks, answer key and teacher's notes."
               ]
+            },
+            {
+              "title": "Reading Comprehension: The Repair Shop (B1)",
+              "url": "global-english/esl/worksheets/reading-comprehension-b1-the-repair-shop/",
+              "more": "About 45 minutes",
+              "text": [
+                "5 tasks, answer key and teacher's notes."
+              ]
             }
           ]
         },
@@ -408,6 +448,14 @@
             "A model to study, the phrases that carry the text type, and a writing task with a checklist to mark against."
           ],
           "items": [
+            {
+              "title": "A Short Message (A2)",
+              "url": "global-english/esl/worksheets/writing-a-short-message-a2/",
+              "more": "About 40 minutes",
+              "text": [
+                "5 tasks, answer key and teacher's notes."
+              ]
+            },
             {
               "title": "An Informal Email (B1)",
               "url": "global-english/esl/worksheets/writing-an-informal-email-b1/",
@@ -3917,17 +3965,17 @@
               ]
             },
             {
-              "title": "Grammar: Prepositions of Time and Place Worksheet (A2)",
-              "url": "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
+              "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
               "text": [
                 "5 tasks with an answer key. Grammar, A2."
               ]
             },
             {
-              "title": "First and Second Conditionals Worksheet (B1)",
-              "url": "global-english/esl/worksheets/conditionals/",
+              "title": "Grammar: Prepositions of Time and Place Worksheet (A2)",
+              "url": "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
               "text": [
-                "5 tasks with an answer key. Grammar, B1."
+                "5 tasks with an answer key. Grammar, A2."
               ]
             },
             {
@@ -4427,17 +4475,17 @@
               ]
             },
             {
+              "title": "Grammar: Present Continuous Worksheet (A1)",
+              "url": "global-english/esl/worksheets/present-continuous-a1/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A1."
+              ]
+            },
+            {
               "title": "First and Second Conditionals Worksheet (B1)",
               "url": "global-english/esl/worksheets/conditionals/",
               "text": [
                 "5 tasks with an answer key. Grammar, B1."
-              ]
-            },
-            {
-              "title": "Grammar: Prepositions of Time and Place Worksheet (A2)",
-              "url": "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
-              "text": [
-                "5 tasks with an answer key. Grammar, A2."
               ]
             },
             {
@@ -4719,6 +4767,523 @@
       ]
     },
     {
+      "slug": "global-english/esl/worksheets/present-continuous-a1",
+      "title": "Grammar: Present Continuous Worksheet (A1)",
+      "metaTitle": "Free Present Continuous Worksheet (A1) with Answers",
+      "description": "Free A1 present continuous worksheet: am, is and are with -ing, spelling, questions and negatives, and a writing task, with a full answer key.",
+      "keywords": "present continuous worksheet, present progressive exercises, am is are ing worksheet, A1 grammar worksheet with answers, present continuous for beginners",
+      "kicker": "ESL Worksheet · CEFR A1",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "educationalLevel": "CEFR A1",
+      "cefr": "A1",
+      "timeRequired": "PT35M",
+      "teaches": "The present continuous tense in English",
+      "audienceRole": "teacher",
+      "resourceType": "Worksheet",
+      "tags": [
+        "CEFR A1",
+        "About 35 minutes",
+        "Printable",
+        "Answer key",
+        "Present continuous",
+        "Grammar",
+        "Beginners"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "ESL Teaching Resources",
+          "url": "global-english/esl/"
+        },
+        {
+          "label": "Worksheets",
+          "url": "global-english/esl/worksheets/"
+        }
+      ],
+      "backTo": {
+        "label": "Worksheets",
+        "url": "global-english/esl/worksheets/"
+      },
+      "hero": {
+        "text": "A printable A1 grammar worksheet on the present continuous: building the form, the spelling of *-ing*, negatives and questions, and choosing between the present simple and the present continuous. Five tasks, a full answer key and teacher's notes."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this worksheet",
+          "level": "h2",
+          "text": [
+            "This is the tense for what is happening now, in front of the learner, which makes it the easiest tense to teach and the easiest to practise: everything in the room is available as an example."
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this worksheet",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Grammar: Present Continuous · Level A1 · About 35 minutes",
+          "text": [
+            "Name: ______________________________    Date: ______________"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How to build it",
+          "text": [
+            "**The form is two parts:** *am*, *is* or *are*, then the verb with **-ing**. *I am working. He is reading. They are waiting.* Both parts are needed - **He reading** and **He is read** are both wrong.",
+            "**Short forms are normal in speech:** *I'm working, he's reading, they're waiting, we aren't listening, she isn't coming.*",
+            "**Negatives** put *not* in the middle: *I am not working. She is not (isn't) coming. We are not (aren't) listening.*",
+            "**Questions** turn the first two words round: *Are you working? Is he reading? What are they doing?* Answer short: *Yes, I am. No, he isn't.*",
+            "**Spelling of -ing:** most verbs just add it - *work - working*. Verbs ending in one **-e** drop it: *write - writing, make - making*. One short vowel and one consonant at the end doubles the consonant: *sit - sitting, run - running, swim - swimming*.",
+            "**Now, not always.** Use the present continuous for what is happening at this moment, and the present simple for what happens every day: *I am eating rice* (now) but *I eat rice every day* (always)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 1. Write the -ing form",
+          "level": "h2",
+          "text": [
+            "Write the -ing form of each verb. Be careful with the spelling.",
+            "Example: work → **working**"
+          ],
+          "bullets": [
+            "read → ________    ·    write → ________    ·    sit → ________",
+            "run → ________    ·    make → ________    ·    play → ________",
+            "swim → ________    ·    come → ________    ·    study → ________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 2. Am, is or are?",
+          "level": "h2",
+          "text": [
+            "Complete each sentence with am, is or are and the verb in brackets.",
+            "Example: She **is reading** a book. (read)"
+          ],
+          "bullets": [
+            "I ________ to the radio. (listen)",
+            "They ________ football in the garden. (play)",
+            "My mother ________ dinner. (cook)",
+            "We ________ for the bus. (wait)",
+            "The baby ________ . (sleep)",
+            "You ________ very fast! (write)"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 3. Negatives and questions",
+          "level": "h2",
+          "text": [
+            "Make each sentence negative, then make a question from it.",
+            "Example: He is watching television. → Negative: **He isn't watching television.** Question: **Is he watching television?**"
+          ],
+          "bullets": [
+            "They are studying English. → ________________________ / ________________________",
+            "She is wearing a red dress. → ________________________ / ________________________",
+            "I am sitting in the right seat. → ________________________ / ________________________",
+            "The children are playing outside. → ________________________ / ________________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 4. Now or every day?",
+          "level": "h2",
+          "text": [
+            "Choose the right form: present simple or present continuous.",
+            "Example: Look! It **is raining**. (rain)"
+          ],
+          "bullets": [
+            "I ________ to school every morning. (walk)",
+            "Be quiet - the baby ________ . (sleep)",
+            "My father ________ in a bank. (work)",
+            "What ________ you ________ at the moment? (do)",
+            "We usually ________ dinner at seven. (have)",
+            "She can't come to the phone. She ________ a shower. (have)"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 5. Your turn",
+          "level": "h2",
+          "text": [
+            "Look around you. Write six sentences about what people near you are doing right now. Use a different verb each time."
+          ],
+          "bullets": [
+            "____________________________________________",
+            "____________________________________________",
+            "____________________________________________",
+            "____________________________________________",
+            "____________________________________________",
+            "____________________________________________"
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "table",
+          "heading": "For the teacher: answer key",
+          "level": "h2",
+          "columns": [
+            "Task",
+            "Answers"
+          ],
+          "rows": [
+            [
+              "Task 1",
+              "reading; writing; sitting. running; making; playing. swimming; coming; studying."
+            ],
+            [
+              "Task 2",
+              "1 am listening  2 are playing  3 is cooking  4 are waiting  5 is sleeping  6 are writing"
+            ],
+            [
+              "Task 3",
+              "1 They aren't studying English. / Are they studying English?  2 She isn't wearing a red dress. / Is she wearing a red dress?  3 I'm not sitting in the right seat. / Am I sitting in the right seat?  4 The children aren't playing outside. / Are the children playing outside?"
+            ],
+            [
+              "Task 4",
+              "1 walk  2 is sleeping  3 works  4 are ... doing  5 have  6 is having"
+            ],
+            [
+              "Task 5",
+              "Answers will vary. Check both parts of the form - *is* or *are* plus *-ing* - and the spelling of any doubled consonant."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teacher's notes",
+          "level": "h2",
+          "bullets": [
+            "**Timing:** Tasks 1 to 4 take about 25 minutes; Task 5 about 10.",
+            "**Teach it standing up.** Mime an action and ask *What am I doing?* Four or five actions and the whole class has the form before any writing. This tense does not need a text.",
+            "**The missing verb to be is the error to watch.** *He reading* is what learners produce for months, because many languages need no equivalent. Insist on both parts from the first lesson, and point at the two parts on the board every time.",
+            "**Spelling is half the marks lost.** *Siting*, *runing*, *writeing*: do Task 1 before anything else and check it as a class.",
+            "**Task 4 is the hard one, and it is worth the time.** The question to ask each item is *now, or always?* Learners who ask that question get it right; learners who look for a keyword do not.",
+            "**Extension:** one learner mimes, the class writes the sentence. Ten actions, ten sentences, and every one is a real answer about something they can see."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More like this",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Present Simple Worksheet (A1)",
+              "url": "global-english/esl/worksheets/present-simple/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A1."
+              ]
+            },
+            {
+              "title": "First and Second Conditionals Worksheet (B1)",
+              "url": "global-english/esl/worksheets/conditionals/",
+              "text": [
+                "5 tasks with an answer key. Grammar, B1."
+              ]
+            },
+            {
+              "title": "All ESL worksheets",
+              "url": "global-english/esl/worksheets/",
+              "text": [
+                "Grammar, vocabulary, reading and writing, by CEFR level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this worksheet",
+          "text": [
+            "Written by RCF English to the [RCF English international standard](global-english/esl/our-standards/): levelled by the CEFR, original throughout, and suitable for classrooms in any country. Last reviewed 22 September 2026."
+          ]
+        },
+        {
+          "type": "share",
+          "heading": "Share this worksheet",
+          "level": "h2",
+          "text": "Free printable grammar: present continuous worksheet (A1) with answers.",
+          "hashtags": [
+            "ESL",
+            "EFL",
+            "Grammar",
+            "ESLWorksheets",
+            "EnglishTeachers"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "global-english/esl/worksheets/comparatives-and-superlatives-a2",
+      "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+      "metaTitle": "Free Comparatives And Superlatives Worksheet (A2)",
+      "description": "Free printable A2 worksheet on comparative and superlative adjectives: form, gap-fill, error correction and a writing task, with a full answer key.",
+      "keywords": "comparatives and superlatives worksheet, comparative adjectives exercises, superlative worksheet ESL, A2 grammar worksheet with answers, than and the -est practice",
+      "kicker": "ESL Worksheet · CEFR A2",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "educationalLevel": "CEFR A2",
+      "cefr": "A2",
+      "timeRequired": "PT40M",
+      "teaches": "Comparative and superlative adjectives in English",
+      "audienceRole": "teacher",
+      "resourceType": "Worksheet",
+      "tags": [
+        "CEFR A2",
+        "About 40 minutes",
+        "Printable",
+        "Answer key",
+        "Comparatives",
+        "Superlatives",
+        "Grammar"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "ESL Teaching Resources",
+          "url": "global-english/esl/"
+        },
+        {
+          "label": "Worksheets",
+          "url": "global-english/esl/worksheets/"
+        }
+      ],
+      "backTo": {
+        "label": "Worksheets",
+        "url": "global-english/esl/worksheets/"
+      },
+      "hero": {
+        "text": "A printable A2 grammar worksheet on comparatives and superlatives: building the forms, using *than* and *the*, the irregular ones, and the mistakes that survive longest. Five tasks, a full answer key and teacher's notes."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this worksheet",
+          "level": "h2",
+          "text": [
+            "Comparing is one of the first genuinely useful things a learner can do with English: cheaper, faster, the best one in the shop. The forms are simple; the errors are predictable, and this sheet targets them."
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this worksheet",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Grammar: Comparatives and Superlatives · Level A2 · About 40 minutes",
+          "text": [
+            "Name: ______________________________    Date: ______________"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "How the two forms are built",
+          "text": [
+            "**Short adjectives (one syllable)** add **-er** and **-est**: *cheap - cheaper - the cheapest*. If the word ends in one vowel and one consonant, double the consonant: *big - bigger - the biggest*. If it ends in **-y**, change it to **i**: *easy - easier - the easiest*. Two-syllable words ending in -y follow this too: *happy - happier - the happiest*.",
+            "**Long adjectives (two syllables or more)** use **more** and **the most**: *expensive - more expensive - the most expensive*. Never both at once: **more cheaper** is wrong.",
+            "**Four common words are irregular:** *good - better - the best*, *bad - worse - the worst*, *far - further - the furthest*, *little - less - the least*.",
+            "**The two small words that carry the meaning.** Use **than** after a comparative - *This bag is cheaper than that one* - and **the** before a superlative - *It is the cheapest in the shop*. For things that are equal, use **as ... as**: *My bag is as heavy as yours*."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 1. Build the forms",
+          "level": "h2",
+          "text": [
+            "Write the comparative and the superlative of each adjective.",
+            "Example: cheap → **cheaper** · **the cheapest**"
+          ],
+          "bullets": [
+            "hot → ____________ · ____________",
+            "heavy → ____________ · ____________",
+            "careful → ____________ · ____________",
+            "good → ____________ · ____________",
+            "far → ____________ · ____________",
+            "interesting → ____________ · ____________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 2. Comparative or superlative?",
+          "level": "h2",
+          "text": [
+            "Put the adjective in brackets into the right form. Add than or the where you need them.",
+            "Example: A bicycle is **cheaper than** a motorbike. (cheap)"
+          ],
+          "bullets": [
+            "My brother is ________ me, but my sister is ________ in the family. (tall / tall)",
+            "This is ________ book I have ever read. (interesting)",
+            "The bus is ________ the train, but it takes longer. (cheap)",
+            "Yesterday was ________ day of the year. (hot)",
+            "Her handwriting is ________ mine. (bad)",
+            "Which is ________ way to the station, the road or the path? (short)"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 3. Say it another way",
+          "level": "h2",
+          "text": [
+            "Rewrite each sentence using the word in brackets, so it means the same.",
+            "Example: My bag is heavier than yours. (lighter) → **Your bag is lighter than mine.**"
+          ],
+          "bullets": [
+            "The red shirt is cheaper than the blue one. (expensive) → ____________________",
+            "No mountain in the country is higher than this one. (highest) → ____________________",
+            "My father is 45. My mother is 45. (as ... as) → ____________________",
+            "The film was not as good as the book. (better) → ____________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 4. Find and correct the mistake",
+          "level": "h2",
+          "text": [
+            "Each sentence has one mistake. Cross it out and write the correct form.",
+            "Example: This is ~~the most cheapest~~ **the cheapest** one in the shop."
+          ],
+          "bullets": [
+            "My new phone is more better than the old one. ____________",
+            "She is the most tall girl in the class. ____________",
+            "This exercise is more easy than the last one. ____________",
+            "Colombo is bigger that Kandy. ____________",
+            "He is the worse driver I know. ____________",
+            "My house is as big than yours. ____________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 5. Your turn",
+          "level": "h2",
+          "text": [
+            "Write six sentences comparing things you know: two places, two kinds of food, two ways of travelling, two subjects at school. Use three comparatives and three superlatives, and underline them."
+          ],
+          "bullets": [
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________"
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "table",
+          "heading": "For the teacher: answer key",
+          "level": "h2",
+          "columns": [
+            "Task",
+            "Answers"
+          ],
+          "rows": [
+            [
+              "Task 1",
+              "1 hotter / the hottest.  2 heavier / the heaviest.  3 more careful / the most careful.  4 better / the best.  5 further (or farther) / the furthest.  6 more interesting / the most interesting."
+            ],
+            [
+              "Task 2",
+              "1 taller than ... the tallest  2 the most interesting  3 cheaper than  4 the hottest  5 worse than  6 the shortest"
+            ],
+            [
+              "Task 3",
+              "Suggested answers. 1 The blue shirt is more expensive than the red one. 2 This is the highest mountain in the country. 3 My father is as old as my mother. 4 The book was better than the film."
+            ],
+            [
+              "Task 4",
+              "1 better than (not *more better*)  2 the tallest  3 easier  4 bigger than  5 the worst  6 as big as"
+            ],
+            [
+              "Task 5",
+              "Answers will vary. Check for *than* after every comparative, *the* before every superlative, and no *more* beside an -er form."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teacher's notes",
+          "level": "h2",
+          "bullets": [
+            "**Timing:** Tasks 1 to 4 take about 30 minutes; Task 5 about 10, or set it as homework.",
+            "**Count the syllables out loud.** Learners who clap the syllables choose between *-er* and *more* correctly far more often than learners given the rule in writing. Two syllables is the hard case: *careful* takes *more*, but *happy* takes *-er*.",
+            "**The double mistake is the one to name:** *more better*, *more easier*, *the most cheapest*. One form or the other, never both. Write two on the board wrong and let the class repair them.",
+            "**Than and that** sound almost the same in fast speech, which is why *bigger that Kandy* appears in writing. Drill the sentence aloud, then write it.",
+            "**Do Task 3 in pairs.** Saying the same idea from the other side - *heavier* to *lighter* - is what shows whether learners have the meaning or only the ending.",
+            "**Extension:** learners write three true and three false comparisons about the class or the town, swap, and correct their partner's false ones with a full sentence."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More like this",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Grammar: Prepositions of Time and Place Worksheet (A2)",
+              "url": "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A2."
+              ]
+            },
+            {
+              "title": "Past Simple Worksheet (A2)",
+              "url": "global-english/esl/worksheets/past-simple/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A2."
+              ]
+            },
+            {
+              "title": "All ESL worksheets",
+              "url": "global-english/esl/worksheets/",
+              "text": [
+                "Grammar, vocabulary, reading and writing, by CEFR level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this worksheet",
+          "text": [
+            "Written by RCF English to the [RCF English international standard](global-english/esl/our-standards/): levelled by the CEFR, original throughout, and suitable for classrooms in any country. Last reviewed 22 September 2026."
+          ]
+        },
+        {
+          "type": "share",
+          "heading": "Share this worksheet",
+          "level": "h2",
+          "text": "Free printable grammar: comparatives and superlatives worksheet (A2) with answers.",
+          "hashtags": [
+            "ESL",
+            "EFL",
+            "Grammar",
+            "ESLWorksheets",
+            "EnglishTeachers"
+          ]
+        }
+      ]
+    },
+    {
       "slug": "global-english/esl/worksheets/prepositions-of-time-and-place-a2",
       "title": "Grammar: Prepositions of Time and Place Worksheet (A2)",
       "metaTitle": "Free Prepositions Of Time And Place Worksheet (A2)",
@@ -4932,17 +5497,17 @@
           "level": "h2",
           "items": [
             {
-              "title": "Past Simple Worksheet (A2)",
-              "url": "global-english/esl/worksheets/past-simple/",
+              "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
               "text": [
                 "5 tasks with an answer key. Grammar, A2."
               ]
             },
             {
-              "title": "First and Second Conditionals Worksheet (B1)",
-              "url": "global-english/esl/worksheets/conditionals/",
+              "title": "Past Simple Worksheet (A2)",
+              "url": "global-english/esl/worksheets/past-simple/",
               "text": [
-                "5 tasks with an answer key. Grammar, B1."
+                "5 tasks with an answer key. Grammar, A2."
               ]
             },
             {
@@ -4967,6 +5532,266 @@
           "heading": "Share this worksheet",
           "level": "h2",
           "text": "Free printable grammar: prepositions of time and place worksheet (A2) with answers.",
+          "hashtags": [
+            "ESL",
+            "EFL",
+            "Grammar",
+            "ESLWorksheets",
+            "EnglishTeachers"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "global-english/esl/worksheets/relative-clauses-b2",
+      "title": "Grammar: Relative Clauses Worksheet (B2)",
+      "metaTitle": "Free Relative Clauses Worksheet (B2) with Answers",
+      "description": "Free B2 worksheet on defining and non-defining relative clauses: commas, omitting the pronoun, sentence combining and error correction, with answers.",
+      "keywords": "relative clauses worksheet, defining and non-defining relative clauses exercises, who which that whose worksheet, B2 grammar worksheet with answers, relative pronouns practice",
+      "kicker": "ESL Worksheet · CEFR B2",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "educationalLevel": "CEFR B2",
+      "cefr": "B2",
+      "timeRequired": "PT50M",
+      "teaches": "Defining and non-defining relative clauses in English",
+      "audienceRole": "teacher",
+      "resourceType": "Worksheet",
+      "tags": [
+        "CEFR B2",
+        "About 50 minutes",
+        "Printable",
+        "Answer key",
+        "Relative clauses",
+        "Defining and non-defining",
+        "Grammar"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "ESL Teaching Resources",
+          "url": "global-english/esl/"
+        },
+        {
+          "label": "Worksheets",
+          "url": "global-english/esl/worksheets/"
+        }
+      ],
+      "backTo": {
+        "label": "Worksheets",
+        "url": "global-english/esl/worksheets/"
+      },
+      "hero": {
+        "text": "A printable B2 grammar worksheet on relative clauses: which pronoun to use, when the commas change the meaning, when the pronoun can be left out, and combining short sentences into one. Five tasks, a full answer key and teacher's notes."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this worksheet",
+          "level": "h2",
+          "text": [
+            "Relative clauses are what let a writer put two ideas in one sentence instead of two, which is most of the difference between B1 writing and B2 writing. The grammar is not hard; the comma rule carries real meaning and is worth the time."
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this worksheet",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Grammar: Relative Clauses · Level B2 · About 50 minutes",
+          "text": [
+            "Name: ______________________________    Date: ______________"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Defining, non-defining, and the commas that separate them",
+          "text": [
+            "**A defining clause** says which one you mean, and the sentence loses its sense without it. No commas: *The teacher who taught me French has retired.* (Which teacher? That one.) Use *who* for people, *which* for things, *that* for either, *whose* for possession, *where* for places and *when* for times.",
+            "**A non-defining clause** adds extra information about something already identified. Commas, always: *Mrs Perera, who taught me French, has retired.* We already know who she is; the clause is an aside. **That** is not used here, and the commas are not optional.",
+            "**The commas change the meaning.** *The students who failed must retake the paper* means only some failed. *The students, who failed, must retake the paper* means all of them did. Read both aloud and the pause does the same work as the commas.",
+            "**You can leave the pronoun out** when it is the object of a defining clause: *The book (which) I read last week*. You cannot leave it out when it is the subject - *The man who lives next door* keeps its *who* - and never in a non-defining clause.",
+            "**Which can also refer to a whole clause**, in writing: *He arrived two hours late, which annoyed everybody.* Here *which* means the whole of what went before, not one noun."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 1. Choose the pronoun",
+          "level": "h2",
+          "text": [
+            "Write who, which, that, whose, where or when. Where more than one is possible, write both.",
+            "Example: That is the shop **which / that** sells the best bread."
+          ],
+          "bullets": [
+            "The woman ________ car was stolen has gone to the police.",
+            "This is the village ________ my mother grew up.",
+            "Is that the man ________ you were telling me about?",
+            "2019 was the year ________ the factory closed.",
+            "My neighbour, ________ works nights, sleeps until two.",
+            "He failed the examination, ________ surprised nobody."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 2. Commas or no commas?",
+          "level": "h2",
+          "text": [
+            "Add commas where they are needed. Two sentences need none. Then say what each sentence means.",
+            "Example: My sister who lives in Galle is a nurse. → **My sister, who lives in Galle, is a nurse.** (I have one sister.) Without commas it would mean I have more than one."
+          ],
+          "bullets": [
+            "The bus which leaves at six is always full. ____________",
+            "Our head teacher who has been here for twenty years is retiring. ____________",
+            "The parcel that arrived this morning was not for us. ____________",
+            "Kandy which is in the hills is much cooler than Colombo. ____________",
+            "The people who complained have been given their money back. ____________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 3. Make one sentence",
+          "level": "h2",
+          "text": [
+            "Join each pair using a relative clause. Use commas where the extra information is not needed to identify anything.",
+            "Example: I met a woman. She had lived in five countries. → **I met a woman who had lived in five countries.**"
+          ],
+          "bullets": [
+            "The film was three hours long. We saw it on Friday. → ____________________",
+            "My uncle has sold his shop. He is seventy next month. → ____________________",
+            "I still use the dictionary. My father gave it to me. → ____________________",
+            "The hotel was fully booked. We wanted to stay there. → ____________________",
+            "She missed the train. This meant she missed the interview. → ____________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 4. Find and correct the mistake",
+          "level": "h2",
+          "text": [
+            "Each sentence has one mistake. Cross it out and write the correction.",
+            "Example: My brother, ~~that~~ **who** lives in Jaffna, is a doctor."
+          ],
+          "bullets": [
+            "The man which repaired my laptop was very quick. ____________",
+            "The house where I was born in has been pulled down. ____________",
+            "Students who they arrive late will not be admitted. ____________",
+            "Ella, that is famous for its views, is two hours away. ____________",
+            "This is the book I told you about it. ____________",
+            "My best friend who I have known since we were six is getting married. ____________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 5. Your turn",
+          "level": "h2",
+          "text": [
+            "Write six sentences about people and places you know, using six different relative pronouns. At least two must be non-defining, with commas, and at least one must use which to refer to a whole clause."
+          ],
+          "bullets": [
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________"
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "table",
+          "heading": "For the teacher: answer key",
+          "level": "h2",
+          "columns": [
+            "Task",
+            "Answers"
+          ],
+          "rows": [
+            [
+              "Task 1",
+              "1 whose  2 where  3 who / that (or no pronoun: *the man you were telling me about*)  4 when  5 who (non-defining, so not *that*)  6 which"
+            ],
+            [
+              "Task 2",
+              "1 No commas: it says which bus. 2 Commas: *Our head teacher, who has been here for twenty years, is retiring* - a school has one head teacher. 3 No commas: it says which parcel. 4 Commas: *Kandy, which is in the hills, ...* - there is only one Kandy. 5 No commas: only the people who complained, not everyone."
+            ],
+            [
+              "Task 3",
+              "Suggested answers. 1 The film (which/that) we saw on Friday was three hours long. 2 My uncle, who is seventy next month, has sold his shop. 3 I still use the dictionary (which/that) my father gave me. 4 The hotel (which/that) we wanted to stay at was fully booked. 5 She missed the train, which meant she missed the interview."
+            ],
+            [
+              "Task 4",
+              "1 who/that repaired my laptop  2 the house where I was born (or *which I was born in*) - not both  3 Students who arrive late (no *they*)  4 Ella, which is famous ... (*that* is not used in non-defining clauses)  5 the book I told you about (no *it*)  6 My best friend, who I have known since we were six, is getting married (commas: you have one best friend)"
+            ],
+            [
+              "Task 5",
+              "Answers will vary. Check three things: no *that* in a non-defining clause, commas at both ends or neither, and no repeated object - *the book which I read it* is the commonest error at this level."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teacher's notes",
+          "level": "h2",
+          "bullets": [
+            "**Timing:** Tasks 1 to 4 take about 35 minutes; Task 5 about 15, or set it as homework.",
+            "**Teach the commas as meaning, not as punctuation.** Put *My sister who lives in Galle* and *My sister, who lives in Galle* on the board and ask how many sisters the writer has. Learners who see that the commas change the facts stop treating them as decoration.",
+            "**Read the pairs aloud.** A non-defining clause has a pause and a drop in pitch at each comma; a defining clause runs straight through. Hearing it is faster than any rule.",
+            "**The repeated object is the error to hunt.** *The book which I read it*, *the man who I spoke to him*: most learners' first languages allow this, so it survives long after the pronouns are secure.",
+            "**Task 3 is where B2 writing is built.** Ask for the joined sentence aloud first, then written. Learners who can join two sentences aloud write noticeably longer, better-linked paragraphs within a few weeks.",
+            "**Extension:** learners take a paragraph from their own recent writing and combine every pair of short sentences that share a noun. They usually find three or four, and the paragraph improves visibly."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More like this",
+          "level": "h2",
+          "items": [
+            {
+              "title": "First and Second Conditionals Worksheet (B1)",
+              "url": "global-english/esl/worksheets/conditionals/",
+              "text": [
+                "5 tasks with an answer key. Grammar, B1."
+              ]
+            },
+            {
+              "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A2."
+              ]
+            },
+            {
+              "title": "All ESL worksheets",
+              "url": "global-english/esl/worksheets/",
+              "text": [
+                "Grammar, vocabulary, reading and writing, by CEFR level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this worksheet",
+          "text": [
+            "Written by RCF English to the [RCF English international standard](global-english/esl/our-standards/): levelled by the CEFR, original throughout, and suitable for classrooms in any country. Last reviewed 22 September 2026."
+          ]
+        },
+        {
+          "type": "share",
+          "heading": "Share this worksheet",
+          "level": "h2",
+          "text": "Free printable grammar: relative clauses worksheet (B2) with answers.",
           "hashtags": [
             "ESL",
             "EFL",
@@ -5186,15 +6011,15 @@
           "level": "h2",
           "items": [
             {
-              "title": "Grammar: Prepositions of Time and Place Worksheet (A2)",
-              "url": "global-english/esl/worksheets/prepositions-of-time-and-place-a2/",
+              "title": "Reading Comprehension: The Repair Shop Worksheet (B1)",
+              "url": "global-english/esl/worksheets/reading-comprehension-b1-the-repair-shop/",
               "text": [
-                "5 tasks with an answer key. Grammar, A2."
+                "5 tasks with an answer key. Reading, B1."
               ]
             },
             {
-              "title": "Past Simple Worksheet (A2)",
-              "url": "global-english/esl/worksheets/past-simple/",
+              "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
               "text": [
                 "5 tasks with an answer key. Grammar, A2."
               ]
@@ -5225,6 +6050,521 @@
             "ESL",
             "EFL",
             "ReadingComprehension",
+            "ESLWorksheets",
+            "EnglishTeachers"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "global-english/esl/worksheets/reading-comprehension-b1-the-repair-shop",
+      "title": "Reading Comprehension: The Repair Shop Worksheet (B1)",
+      "metaTitle": "Free B1 Reading Comprehension Worksheet (B1) with Answers",
+      "description": "Free B1 reading comprehension worksheet on an original 320-word text: main idea, detail, inference, vocabulary in context and opinion, with an answer key.",
+      "keywords": "B1 reading comprehension worksheet, intermediate reading comprehension ESL, English reading passage with questions, reading worksheet with answers, inference questions ESL",
+      "kicker": "ESL Worksheet · CEFR B1",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "educationalLevel": "CEFR B1",
+      "cefr": "B1",
+      "timeRequired": "PT45M",
+      "teaches": "Reading comprehension in English at CEFR B1",
+      "audienceRole": "teacher",
+      "resourceType": "Worksheet",
+      "tags": [
+        "CEFR B1",
+        "About 45 minutes",
+        "Printable",
+        "Answer key",
+        "Reading",
+        "Comprehension",
+        "B1 reading"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "ESL Teaching Resources",
+          "url": "global-english/esl/"
+        },
+        {
+          "label": "Worksheets",
+          "url": "global-english/esl/worksheets/"
+        }
+      ],
+      "backTo": {
+        "label": "Worksheets",
+        "url": "global-english/esl/worksheets/"
+      },
+      "hero": {
+        "text": "A printable B1 reading comprehension worksheet built on an original 320-word text about a repair shop: finding the main idea, reading for detail, working out what is implied but not stated, vocabulary from context, and a short written response. Full answer key and teacher's notes."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this worksheet",
+          "level": "h2",
+          "text": [
+            "The step from A2 to B1 reading is the step from *what does it say* to *what does it mean*. Three of the five tasks here ask for something the text does not state in so many words, which is exactly where intermediate learners lose marks."
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this worksheet",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Reading Comprehension: The Repair Shop · Level B1 · About 45 minutes",
+          "text": [
+            "Name: ______________________________    Date: ______________"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The repair shop",
+          "text": [
+            "**1** When Nadika's kettle stopped working, she did what most people do: she looked at the price of a new one. It was 4,200 rupees. Then a neighbour told her about the repair shop at the end of the market, and she carried the kettle there instead, feeling slightly foolish.",
+            "**2** The shop is not much more than a table under a roof. Behind it sits Piyal, who has been mending things for thirty-one years - radios at first, then televisions, and now, he says, \"mostly kettles, fans and the machines that nobody makes parts for any more.\" He charged Nadika 600 rupees and told her the kettle would outlive the new one she had been about to buy.",
+            "**3** She did not believe him at the time. Two years later the kettle is still boiling water every morning, and she has sent four people to the shop.",
+            "**4** Piyal is careful about which jobs he takes. He turns away perhaps one machine in three, usually the newest ones. \"They are built so that nobody can open them,\" he says. \"Sometimes there is no screw at all - the case is glued. I can open it, but I cannot close it again, and then the customer blames me.\" He also refuses anything where the part he needs costs more than half the price of a new machine, which he says is a decision the customer should not have to make twice.",
+            "**5** Younger repairers are rare. Piyal trained two, and both now work in phone shops, where the money is better and the work is faster. He does not blame them. But he points out that the market has three shops selling new kettles and one table mending them, and that thirty years ago the numbers were the other way round."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 1. The main idea",
+          "level": "h2",
+          "text": [
+            "Choose the sentence that best describes what the whole text is about. Then say in one sentence why the other three are wrong."
+          ],
+          "bullets": [
+            "a) A woman's kettle broke and she had it repaired.",
+            "b) Repairing things is often cheaper than replacing them, but the trade is disappearing.",
+            "c) Modern machines are badly made.",
+            "d) Piyal has worked as a repairer for thirty-one years.",
+            "Why the others are wrong: ______________________________________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 2. Reading for detail",
+          "level": "h2",
+          "text": [
+            "Answer in a full sentence. Each answer is stated in the text.",
+            "Example: How much did the repair cost? → **It cost 600 rupees.**"
+          ],
+          "bullets": [
+            "What did Nadika do before she heard about the repair shop? ______________________",
+            "What kinds of machine does Piyal mend most often now? ______________________",
+            "How many machines does he turn away? ______________________",
+            "What happened to the two repairers he trained? ______________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 3. What the text suggests",
+          "level": "h2",
+          "text": [
+            "The text does not say these things directly. Decide whether each one is probably true or probably false, and write the words from the text that made you decide.",
+            "Example: Nadika was embarrassed to take an old kettle to be mended. → **Probably true: \"feeling slightly foolish\".**"
+          ],
+          "bullets": [
+            "Piyal thinks some machines are designed to be impossible to repair. ______________________",
+            "Nadika regrets having the kettle repaired. ______________________",
+            "Piyal believes repairing pays as well as working in a phone shop. ______________________",
+            "Repair work in the market was more common in the past. ______________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 4. Vocabulary in context",
+          "level": "h2",
+          "text": [
+            "Find the word or phrase in the text that means the same as each of these. The paragraph is in brackets.",
+            "Example: repairing (paragraph 2) → **mending**"
+          ],
+          "bullets": [
+            "live longer than (paragraph 2) → ____________",
+            "refuses to accept (paragraph 4) → ____________",
+            "stuck together, with no screws (paragraph 4) → ____________",
+            "not many, hard to find (paragraph 5) → ____________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 5. Your turn",
+          "level": "h2",
+          "text": [
+            "Write 80 to 100 words. Would you repair a machine or replace it? Give two reasons, and mention one thing from the text that you agree or disagree with."
+          ],
+          "bullets": [
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________"
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "table",
+          "heading": "For the teacher: answer key",
+          "level": "h2",
+          "columns": [
+            "Task",
+            "Answers"
+          ],
+          "rows": [
+            [
+              "Task 1",
+              "**b.** (a) and (d) are true but are only details, not what the whole text is about; (c) is an opinion the text does not make - Piyal says new machines are hard to open, which is not the same as badly made."
+            ],
+            [
+              "Task 2",
+              "1 She looked at the price of a new kettle (4,200 rupees). 2 Kettles, fans, and machines nobody makes parts for any more. 3 About one in three. 4 They both went to work in phone shops."
+            ],
+            [
+              "Task 3",
+              "1 Probably true: \"They are built so that nobody can open them ... the case is glued.\" 2 Probably false: the kettle still works and she has sent four people to the shop. 3 Probably false: he says the money is better in phone shops and does not blame them for going. 4 Probably true: \"thirty years ago the numbers were the other way round.\""
+            ],
+            [
+              "Task 4",
+              "outlive; turns away; glued; rare."
+            ],
+            [
+              "Task 5",
+              "Answers will vary. Mark on three things: a clear position, two reasons, and one specific reference to the text. At B1, expect *because*, *however* and *for example* to appear; expect and accept simple sentences."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teacher's notes",
+          "level": "h2",
+          "bullets": [
+            "**Timing:** Tasks 1 to 4 take about 30 minutes; Task 5 about 15, or set it as homework.",
+            "**Do Task 1 before anything else, with the books closed after one minute of reading.** Main idea is a skimming skill, and learners cannot practise it once they have read every word four times.",
+            "**Task 3 is the B1 task.** Inference questions are where intermediate learners lose most marks, and the fix is the second half of the instruction: name the words that made you decide. A guess with no evidence is the habit to break.",
+            "**Do not pre-teach the vocabulary in Task 4.** The task is working a meaning out from the words around it. Pre-teaching removes the exercise.",
+            "**Expect an argument about question 3 in Task 3.** Learners often say Piyal thinks repairing pays badly *and* that he resents it. The text supports the first and not the second, and that distinction is worth five minutes.",
+            "**Extension:** learners write two more inference questions on the text, with the evidence, and swap with a partner."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More like this",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Reading Comprehension: The Night Market Worksheet (A2)",
+              "url": "global-english/esl/worksheets/reading-comprehension-a2-the-night-market/",
+              "text": [
+                "5 tasks with an answer key. Reading, A2."
+              ]
+            },
+            {
+              "title": "First and Second Conditionals Worksheet (B1)",
+              "url": "global-english/esl/worksheets/conditionals/",
+              "text": [
+                "5 tasks with an answer key. Grammar, B1."
+              ]
+            },
+            {
+              "title": "All ESL worksheets",
+              "url": "global-english/esl/worksheets/",
+              "text": [
+                "Grammar, vocabulary, reading and writing, by CEFR level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this worksheet",
+          "text": [
+            "Written by RCF English to the [RCF English international standard](global-english/esl/our-standards/): levelled by the CEFR, original throughout, and suitable for classrooms in any country. Last reviewed 22 September 2026."
+          ]
+        },
+        {
+          "type": "share",
+          "heading": "Share this worksheet",
+          "level": "h2",
+          "text": "Free printable reading comprehension: the repair shop worksheet (B1) with answers.",
+          "hashtags": [
+            "ESL",
+            "EFL",
+            "ReadingComprehension",
+            "ESLWorksheets",
+            "EnglishTeachers"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "global-english/esl/worksheets/everyday-collocations-a2",
+      "title": "Vocabulary: Everyday Collocations Worksheet (A2)",
+      "metaTitle": "Free Collocations Worksheet (A2) with Answers",
+      "description": "Free A2 collocations worksheet on make, do, take, have and get: sorting, gap-fill, error correction and a writing task, with a full answer key.",
+      "keywords": "collocations worksheet, make and do worksheet ESL, have take get collocations, A2 vocabulary worksheet with answers, common English word partners",
+      "kicker": "ESL Worksheet · CEFR A2",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "educationalLevel": "CEFR A2",
+      "cefr": "A2",
+      "timeRequired": "PT40M",
+      "teaches": "Common English collocations: make, do, take, have and get",
+      "audienceRole": "teacher",
+      "resourceType": "Worksheet",
+      "tags": [
+        "CEFR A2",
+        "About 40 minutes",
+        "Printable",
+        "Answer key",
+        "Vocabulary",
+        "Collocations",
+        "Make and do"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "ESL Teaching Resources",
+          "url": "global-english/esl/"
+        },
+        {
+          "label": "Worksheets",
+          "url": "global-english/esl/worksheets/"
+        }
+      ],
+      "backTo": {
+        "label": "Worksheets",
+        "url": "global-english/esl/worksheets/"
+      },
+      "hero": {
+        "text": "A printable A2 vocabulary worksheet on the words that go together: *make a mistake*, *do the shopping*, *take a photograph*, *have breakfast*, *get better*. Five tasks, a full answer key and teacher's notes."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this worksheet",
+          "level": "h2",
+          "text": [
+            "Collocation is the difference between correct English and natural English. A learner who says *do a mistake* has broken no grammar rule, and every listener notices. These are learnt as pairs, which is what this sheet practises."
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this worksheet",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Vocabulary: Everyday Collocations · Level A2 · About 40 minutes",
+          "text": [
+            "Name: ______________________________    Date: ______________"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Five verbs that take their own partners",
+          "text": [
+            "**Make** is for things you produce or create: *make a cake, make a noise, make a mistake, make a decision, make friends, make money, make the bed*.",
+            "**Do** is for work, jobs and activities in general: *do your homework, do the shopping, do the washing-up, do exercise, do your best, do nothing*.",
+            "**Take** is for things you pick up, use or spend: *take a photograph, take a bus, take a shower, take medicine, take an examination, take time*.",
+            "**Have** is for meals, experiences and things you possess for a while: *have breakfast, have a shower, have a good time, have a look, have a headache, have a baby*. Note that *have a shower* and *take a shower* are both correct.",
+            "**Get** is for changes and for receiving: *get better, get dark, get married, get a letter, get home, get angry, get dressed*.",
+            "There is no rule that explains why we say *make a mistake* and *do the shopping*. Learn the two words together - write *make a mistake*, never just *mistake* - and the pairs stay."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 1. Which verb?",
+          "level": "h2",
+          "text": [
+            "Write make, do, take, have or get in front of each phrase. Some take more than one - write both.",
+            "Example: ____ the shopping → **do** the shopping"
+          ],
+          "bullets": [
+            "____ a photograph    ·    ____ a mistake    ·    ____ your homework",
+            "____ breakfast    ·    ____ a shower    ·    ____ the bed",
+            "____ better    ·    ____ a decision    ·    ____ the bus",
+            "____ a headache    ·    ____ the washing-up    ·    ____ married",
+            "____ friends    ·    ____ dressed    ·    ____ your best"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 2. Complete the sentences",
+          "level": "h2",
+          "text": [
+            "Use the right form of make, do, take, have or get. Watch the tense.",
+            "Example: I always **have** breakfast at seven."
+          ],
+          "bullets": [
+            "Sorry - I ________ a mistake. Let me start again.",
+            "It ________ dark very early in December.",
+            "She ________ a photograph of the whole class.",
+            "Could you ________ the washing-up tonight?",
+            "We ________ a really good time at the wedding.",
+            "He ________ the bus to work every morning.",
+            "Have you ________ your homework yet?"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 3. Find and correct the mistake",
+          "level": "h2",
+          "text": [
+            "Each sentence has one wrong verb. Cross it out and write the right one.",
+            "Example: I ~~did~~ **made** a mistake in the second question."
+          ],
+          "bullets": [
+            "She makes her homework every evening. ____________",
+            "Can I take a look at your dictionary? ____________",
+            "We must do a decision before Friday. ____________",
+            "He took a bad cold last week. ____________",
+            "I need to do a shower before we go out. ____________",
+            "They did friends very quickly. ____________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 4. Match and use",
+          "level": "h2",
+          "text": [
+            "Match each beginning on the left with an ending on the right, then write two of the complete phrases in sentences of your own."
+          ],
+          "bullets": [
+            "make · do · take · have · get",
+            "Endings: a) your best  b) a noise  c) angry  d) medicine  e) a look",
+            "make ____    do ____    take ____    have ____    get ____",
+            "My sentence 1: ____________________________________________",
+            "My sentence 2: ____________________________________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 5. Your turn",
+          "level": "h2",
+          "text": [
+            "Write six sentences about yesterday and today using six different collocations from this worksheet. Underline the two words that go together."
+          ],
+          "bullets": [
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________",
+            "____________________________________________________"
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "table",
+          "heading": "For the teacher: answer key",
+          "level": "h2",
+          "columns": [
+            "Task",
+            "Answers"
+          ],
+          "rows": [
+            [
+              "Task 1",
+              "take a photograph; make a mistake; do your homework. have breakfast; have/take a shower; make the bed. get better; make a decision; take the bus. have a headache; do the washing-up; get married. make friends; get dressed; do your best."
+            ],
+            [
+              "Task 2",
+              "1 made  2 gets  3 took  4 do  5 had  6 takes  7 done"
+            ],
+            [
+              "Task 3",
+              "1 does her homework  2 correct as written - *have a look* and *take a look* are both right, so accept it and say why  3 make a decision  4 caught/got a bad cold  5 have (or take) a shower  6 made friends"
+            ],
+            [
+              "Task 4",
+              "make b) a noise; do a) your best; take d) medicine; have e) a look; get c) angry. Sentences will vary."
+            ],
+            [
+              "Task 5",
+              "Answers will vary. Check that both words of the pair are right, and that the tense fits: *I made a mistake*, not *I make a mistake*, about yesterday."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teacher's notes",
+          "level": "h2",
+          "bullets": [
+            "**Timing:** Tasks 1 to 4 take about 30 minutes; Task 5 about 10, or set it as homework.",
+            "**Task 3 has a trap, deliberately.** Sentence 2 is already correct, and the class will change it anyway because the instruction says every sentence has a mistake. When they do, tell them the instruction was the trap: they must check the sentence, not obey the heading. That lesson transfers to every examination they sit.",
+            "**Record pairs, never single words.** Insist that notebooks show *make a mistake*, not *mistake*. This is the whole method, and five minutes spent enforcing it saves a year of *do a mistake*.",
+            "**The first language is the cause.** Most learners' languages use one verb where English uses two or three. Ask what *make* and *do* both translate to in their language - the answer explains their errors and makes them easier to accept.",
+            "**Drill aloud before writing.** *Make a mistake, do the shopping, take a photo* - said three times each, quickly, is worth more than a written exercise for phrases this fixed.",
+            "**Extension:** a collocation wall. One verb a week; learners add a phrase whenever they meet one, and wrong pairs come down with the class deciding why."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More like this",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Vocabulary: Word Formation Worksheet (B1)",
+              "url": "global-english/esl/worksheets/vocabulary-word-formation-b1/",
+              "text": [
+                "5 tasks with an answer key. Vocabulary, B1."
+              ]
+            },
+            {
+              "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A2."
+              ]
+            },
+            {
+              "title": "All ESL worksheets",
+              "url": "global-english/esl/worksheets/",
+              "text": [
+                "Grammar, vocabulary, reading and writing, by CEFR level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this worksheet",
+          "text": [
+            "Written by RCF English to the [RCF English international standard](global-english/esl/our-standards/): levelled by the CEFR, original throughout, and suitable for classrooms in any country. Last reviewed 22 September 2026."
+          ]
+        },
+        {
+          "type": "share",
+          "heading": "Share this worksheet",
+          "level": "h2",
+          "text": "Free printable vocabulary: everyday collocations worksheet (A2) with answers.",
+          "hashtags": [
+            "ESL",
+            "EFL",
+            "Vocabulary",
             "ESLWorksheets",
             "EnglishTeachers"
           ]
@@ -5449,15 +6789,15 @@
           "level": "h2",
           "items": [
             {
-              "title": "First and Second Conditionals Worksheet (B1)",
-              "url": "global-english/esl/worksheets/conditionals/",
+              "title": "Vocabulary: Everyday Collocations Worksheet (A2)",
+              "url": "global-english/esl/worksheets/everyday-collocations-a2/",
               "text": [
-                "5 tasks with an answer key. Grammar, B1."
+                "5 tasks with an answer key. Vocabulary, A2."
               ]
             },
             {
-              "title": "Passive Voice Worksheet (B1)",
-              "url": "global-english/esl/worksheets/passive-voice/",
+              "title": "First and Second Conditionals Worksheet (B1)",
+              "url": "global-english/esl/worksheets/conditionals/",
               "text": [
                 "5 tasks with an answer key. Grammar, B1."
               ]
@@ -5488,6 +6828,255 @@
             "ESL",
             "EFL",
             "Vocabulary",
+            "ESLWorksheets",
+            "EnglishTeachers"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "global-english/esl/worksheets/writing-a-short-message-a2",
+      "title": "Writing: A Short Message Worksheet (A2)",
+      "metaTitle": "Free Short Message Writing Worksheet (A2) with Answers",
+      "description": "Free A2 writing worksheet on short messages and notes: the three parts, useful phrases, two models to study and three writing tasks, with an answer key.",
+      "keywords": "A2 writing worksheet, short message writing ESL, writing a note in English worksheet, elementary writing practice with model, invitation and apology message",
+      "kicker": "ESL Worksheet · CEFR A2",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "educationalLevel": "CEFR A2",
+      "cefr": "A2",
+      "timeRequired": "PT40M",
+      "teaches": "Writing short messages and notes in English at CEFR A2",
+      "audienceRole": "teacher",
+      "resourceType": "Worksheet",
+      "tags": [
+        "CEFR A2",
+        "About 40 minutes",
+        "Printable",
+        "Answer key",
+        "Writing",
+        "Notes and messages",
+        "A2 writing"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "ESL Teaching Resources",
+          "url": "global-english/esl/"
+        },
+        {
+          "label": "Worksheets",
+          "url": "global-english/esl/worksheets/"
+        }
+      ],
+      "backTo": {
+        "label": "Worksheets",
+        "url": "global-english/esl/worksheets/"
+      },
+      "hero": {
+        "text": "A printable A2 writing worksheet on the short message: the three parts every note needs, the phrases that carry them, two models to study, and three short writing tasks with a checklist. Full answer key and teacher's notes."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "About this worksheet",
+          "level": "h2",
+          "text": [
+            "A short message is the first piece of real writing most learners will ever send in English, and it is what A2 examinations ask for: 35 to 45 words, three things to say, and nothing else."
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this worksheet",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Writing: A Short Message · Level A2 · About 40 minutes",
+          "text": [
+            "Name: ______________________________    Date: ______________"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "The three parts of a short message",
+          "text": [
+            "A note or message has three parts and about 35 to 45 words. Say who it is to, say your three things, and sign it.",
+            "**1. Who it is to.** *Hi Ama, / Dear Mr Silva, / To everyone in the class,*",
+            "**2. The three things.** An A2 task nearly always tells you exactly what to include - *say why you cannot come, suggest another day, and ask about the homework*. Write one sentence for each, in that order. Three sentences is enough; the mark is for covering all three, not for length.",
+            "**3. The ending.** *See you soon. / Thanks! / Let me know.* Then your name.",
+            "**Useful phrases.** Apologising: *I'm sorry, but ... / I'm afraid I can't ...* Inviting: *Would you like to ...? / Do you want to come ...?* Suggesting: *How about Friday? / Shall we meet at six?* Asking: *Could you tell me ...? / Can you bring ...?* Thanking: *Thanks for ... / It was very kind of you.*"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 1. Find the three things",
+          "level": "h2",
+          "text": [
+            "Read the task, then underline the three things the message must include. Write them as a short list."
+          ],
+          "bullets": [
+            "**Task A:** *Write a message to your friend Ravi. Tell him you cannot come to his party, explain why, and invite him to your house next week.* → Three things: **1 cannot come  2 why  3 invitation**",
+            "**Task B:** *Write a message to your teacher. Say you were absent yesterday, say why, and ask what homework you missed.* → 1 ________ 2 ________ 3 ________",
+            "**Task C:** *Write a message to a neighbour. Thank her for looking after your cat, say what you brought her from your trip, and invite her for tea on Sunday.* → 1 ________ 2 ________ 3 ________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 2. Study the models",
+          "level": "h2",
+          "text": [
+            "Read the two models. Write A, B or C beside each one to show which task above it answers. Then count the words, and underline one useful phrase in each."
+          ],
+          "bullets": [
+            "*Hi Ravi, I'm really sorry, but I can't come to your party on Saturday. My aunt is arriving from Jaffna that day and I have to meet her at the station. Would you like to come to my house next Friday instead? Let me know! Nimali* → Task ____  Words: ____",
+            "*Dear Mr Silva, I'm sorry I was absent yesterday. I had a high fever and my mother took me to the doctor. Could you tell me what homework I missed, please? Thank you. Dinesh* → Task ____  Words: ____"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 3. Make it shorter",
+          "level": "h2",
+          "text": [
+            "This message is too long and one sentence is not needed. Cross out the sentence that does not answer the task, then rewrite the message in 40 words or fewer."
+          ],
+          "bullets": [
+            "**The task:** *Write to your friend. Say you found her umbrella, say where it is now, and arrange to give it back.*",
+            "*Hi Sanduni, How are you? I hope your family is well. I have some good news for you. After the class on Monday I was walking to the bus stop and I saw an umbrella under the desk in Room 4, and I think it is yours because it is blue with white flowers, and you had one like that last week. I have got it at my house now and it is safe. My brother says the handle is broken but I do not think so. Shall we meet at the library on Saturday at ten o'clock? I can bring it then. Malithi*",
+            "Your shorter version: ____________________________________________________",
+            "____________________________________________________________________",
+            "____________________________________________________________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 4. Your turn",
+          "level": "h2",
+          "text": [
+            "Write a message for Task C above, in 35 to 45 words. Use one phrase for thanking and one for inviting."
+          ],
+          "bullets": [
+            "To: ________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "____________________________________________________________",
+            "From: ______________________________________________________"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Task 5. Check your work",
+          "level": "h2",
+          "text": [
+            "Tick each line. Then swap with a partner and check theirs."
+          ],
+          "bullets": [
+            "Did I say who it is to, and sign my name? ____",
+            "Did I include all three things the task asked for? ____",
+            "Is it between 35 and 45 words? (Count them.) ____",
+            "Did I use at least one phrase from the box? ____",
+            "Is every sentence about something the task asked for? ____",
+            "Capital letters and full stops in the right places? ____"
+          ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
+          "type": "table",
+          "heading": "For the teacher: answer key",
+          "level": "h2",
+          "columns": [
+            "Task",
+            "Answers"
+          ],
+          "rows": [
+            [
+              "Task 1",
+              "Task B: 1 say you were absent yesterday, 2 say why, 3 ask what homework you missed. Task C: 1 thank her for looking after the cat, 2 say what you brought her, 3 invite her for tea on Sunday."
+            ],
+            [
+              "Task 2",
+              "Model 1 = Task A, 44 words. Model 2 = Task B, 38 words. Useful phrases: *I'm really sorry, but ... / Would you like to ...?* and *I'm sorry I was ... / Could you tell me ...?*"
+            ],
+            [
+              "Task 3",
+              "The unnecessary sentence is about the broken handle - the task did not ask about it. A model answer of 38 words: *Hi Sanduni, I found your blue umbrella under a desk in Room 4 after Monday's class. It's at my house now. Shall we meet at the library on Saturday at ten? I can bring it then. Malithi*"
+            ],
+            [
+              "Task 4",
+              "Answers will vary. A model of 41 words: *Dear Mrs Fernando, Thank you very much for looking after our cat while we were away. It was very kind of you. I brought you some tea from Nuwara Eliya. Would you like to come for tea on Sunday? Anjali*"
+            ],
+            [
+              "Task 5",
+              "Self-check. The three most commonly missed are the third point of the task, the word count, and the signature."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Teacher's notes",
+          "level": "h2",
+          "bullets": [
+            "**Timing:** Tasks 1 to 3 take about 25 minutes; Tasks 4 and 5 about 15.",
+            "**Task 1 is the one that earns the marks.** Learners lose more at A2 for missing one of the three points than for any grammar mistake. Underlining the three things before writing takes thirty seconds and fixes most of it.",
+            "**Task 3 teaches what to leave out,** which is harder at A2 than what to put in. Learners write *How are you? I hope your family is well* out of politeness and then run out of words for the third point.",
+            "**Teach word counting properly:** count the words of one line, multiply by the number of lines. Learners will actually do this; counting to 45 one by one, they will not.",
+            "**Let them write the second one by hand on a real slip of paper** and deliver it to the person it is addressed to. A message with a reader is a different task from a message with a marker.",
+            "**Extension:** each learner writes a task (three things) for a partner, swaps, and marks the reply against the Task 5 checklist. Writing the task teaches the structure as well as answering one."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More like this",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Writing: An Informal Email Worksheet (B1)",
+              "url": "global-english/esl/worksheets/writing-an-informal-email-b1/",
+              "text": [
+                "5 tasks with an answer key. Writing, B1."
+              ]
+            },
+            {
+              "title": "Grammar: Comparatives and Superlatives Worksheet (A2)",
+              "url": "global-english/esl/worksheets/comparatives-and-superlatives-a2/",
+              "text": [
+                "5 tasks with an answer key. Grammar, A2."
+              ]
+            },
+            {
+              "title": "All ESL worksheets",
+              "url": "global-english/esl/worksheets/",
+              "text": [
+                "Grammar, vocabulary, reading and writing, by CEFR level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this worksheet",
+          "text": [
+            "Written by RCF English to the [RCF English international standard](global-english/esl/our-standards/): levelled by the CEFR, original throughout, and suitable for classrooms in any country. Last reviewed 22 September 2026."
+          ]
+        },
+        {
+          "type": "share",
+          "heading": "Share this worksheet",
+          "level": "h2",
+          "text": "Free printable writing: a short message worksheet (A2) with answers.",
+          "hashtags": [
+            "ESL",
+            "EFL",
+            "WritingSkills",
             "ESLWorksheets",
             "EnglishTeachers"
           ]
@@ -5707,15 +7296,15 @@
           "level": "h2",
           "items": [
             {
-              "title": "First and Second Conditionals Worksheet (B1)",
-              "url": "global-english/esl/worksheets/conditionals/",
+              "title": "Writing: A Short Message Worksheet (A2)",
+              "url": "global-english/esl/worksheets/writing-a-short-message-a2/",
               "text": [
-                "5 tasks with an answer key. Grammar, B1."
+                "5 tasks with an answer key. Writing, A2."
               ]
             },
             {
-              "title": "Passive Voice Worksheet (B1)",
-              "url": "global-english/esl/worksheets/passive-voice/",
+              "title": "First and Second Conditionals Worksheet (B1)",
+              "url": "global-english/esl/worksheets/conditionals/",
               "text": [
                 "5 tasks with an answer key. Grammar, B1."
               ]
