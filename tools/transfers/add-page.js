@@ -20,8 +20,10 @@ const TR = { label: "English Teachers Resources", url: "teacher-resources/" };
 const page = {
   slug: SLUG,
   title: "Mutual Transfers for English, Mathematics and Science Teachers",
-  metaTitle: "Mutual Transfers for English, Maths and Science Teachers in Sri Lanka | RCF English",
-  description: "A free, private matching service for English, Mathematics and Science teachers in Sri Lankan government schools who want to exchange places with a teacher of the same subject. Tell us your subject, where you teach and where you would go; when another request matches, we introduce you both.",
+  // The title fits in the 60 characters a search result shows, and the
+  // description in the 140 to 160 Google displays whole.
+  metaTitle: "Teacher Mutual Transfers in Sri Lanka | RCF English",
+  description: "Free, private matching for English, Mathematics and Science teachers in Sri Lankan government schools who want to exchange posts with each other.",
   keywords: "teacher mutual transfer Sri Lanka, English teacher mutual transfer, maths teacher mutual transfer, science teacher mutual transfer, teacher transfer district",
   kicker: "English Teachers Resources",
   kind: "teacher-resource",

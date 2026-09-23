@@ -26,7 +26,7 @@
 // question's wording in the form, change it here too.
 var Q = {
   name: "Full name",
-  whatsapp: "WhatsApp number (optional)",
+  whatsapp: "WhatsApp number",
   subject: "Subject you teach",
   district: "District you teach in now",
   schoolType: "Type of school you teach in now",
@@ -38,9 +38,17 @@ var Q = {
   status: "Is your request still open?",
   consent: "Consent"
 };
-// Google Forms adds these columns itself.
+// Google Forms adds these columns itself. Which name it gives the email
+// column has changed over the years, so every likely spelling is listed and
+// the first one present in the sheet is used.
 var TIMESTAMP = "Timestamp";
-var EMAIL = "Email Address";
+var EMAIL_TITLES = ["Email Address", "Email address", "Email", "Username"];
+
+// The questions that may be left blank. If one of these is missing from the
+// sheet - because the form words it differently - the answer is read as
+// empty rather than stopping the script. The rest must be found: matching
+// depends on them, so a missing one should fail loudly.
+var OPTIONAL = ["whatsapp", "service", "note"];
 
 // The service covers these subjects only; the form offers exactly these. An
 // answer outside the list - if the form were changed without this - is
@@ -132,13 +140,24 @@ function activeTeachers() {
   var values = sheet.getDataRange().getValues();
   if (values.length < 2) return [];
   var head = values[0].map(function (h) { return String(h).trim(); });
-  var col = function (title) {
+  var col = function (title, optional) {
     var at = head.indexOf(title);
-    if (at === -1) throw new Error('Column "' + title + '" not found. Check the question titles in Q match the form exactly.');
+    if (at === -1 && !optional) {
+      throw new Error('Column "' + title + '" not found in the sheet. The columns are: ' + head.join(" | ") +
+        '. Change the matching title in Q at the top of this script so it is spelt exactly as the sheet spells it.');
+    }
     return at;
   };
   var c = {};
-  [TIMESTAMP, EMAIL].concat(Object.keys(Q).map(function (k) { return Q[k]; })).forEach(function (t) { c[t] = col(t); });
+  c[TIMESTAMP] = col(TIMESTAMP);
+  // The email column, whichever name this form gave it.
+  var emailAt = -1;
+  for (var e = 0; e < EMAIL_TITLES.length && emailAt === -1; e++) emailAt = head.indexOf(EMAIL_TITLES[e]);
+  if (emailAt === -1) {
+    throw new Error('No email column found. The columns are: ' + head.join(" | ") +
+      '. Switch on "Collect email addresses: Verified" in the form, or add the column\'s name to EMAIL_TITLES.');
+  }
+  Object.keys(Q).forEach(function (k) { c[Q[k]] = col(Q[k], OPTIONAL.indexOf(k) !== -1); });
 
   var cutoff = new Date(Date.now() - EXPIRY_DAYS * 24 * 60 * 60 * 1000);
   var seenEmail = {};
@@ -146,24 +165,41 @@ function activeTeachers() {
   // Newest first, so if a teacher somehow has two rows the newer one wins.
   for (var r = values.length - 1; r >= 1; r--) {
     var v = values[r];
-    var email = String(v[c[EMAIL]] || "").trim().toLowerCase();
+    var email = String(v[emailAt] || "").trim().toLowerCase();
     if (!email || seenEmail[email]) continue;
     seenEmail[email] = true;
     if (String(v[c[Q.status]]).trim() === CLOSED) continue;
     if (!String(v[c[Q.consent]]).trim()) continue;
-    var when = v[c[TIMESTAMP]];
-    if (!(when instanceof Date) || when < cutoff) continue;
+    var when = toDate(v[c[TIMESTAMP]]);
+    if (!when || when < cutoff) continue;
     var t = {
       row: r + 1,
       email: email,
       when: when,
       wants: splitList(v[c[Q.wants]])
     };
-    Object.keys(Q).forEach(function (k) { t[Q[k]] = String(v[c[Q[k]]] || "").trim(); });
+    Object.keys(Q).forEach(function (k) {
+      var at = c[Q[k]];
+      t[Q[k]] = at === -1 ? "" : String(v[at] || "").trim();
+    });
     t.district = t[Q.district];
     out.push(t);
   }
   return out;
+}
+
+// The sheet normally gives a real date here. A row typed or pasted in by hand
+// gives text, so that is accepted too rather than silently ignored.
+function toDate(value) {
+  if (value && typeof value.getTime === "function") {
+    var ms = value.getTime();
+    return isNaN(ms) ? null : value;
+  }
+  if (typeof value === "string" && value) {
+    var parsed = new Date(value);
+    return isNaN(parsed.getTime()) ? null : parsed;
+  }
+  return null;
 }
 
 function splitList(cell) {
