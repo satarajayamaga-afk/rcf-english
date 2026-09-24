@@ -8,12 +8,22 @@
       "keywords": "grade 6 english, grade 7 english, grade 8 english, grade 9 english, grade 10 english, grade 11 english, competency levels, syllabus practice, Sri Lanka",
       "kicker": "By grade",
       "kind": "page",
-      "scripts": ["quiz"],
+      "scripts": [
+        "quiz"
+      ],
       "hero": {
         "text": "Interactive English practice for Grades 6 to 11. Each grade provides three interactive language activities and five complete listening tests, every one of them aligned with a numbered competency level from the syllabus that grade actually follows. Everything marks itself and explains the answer.",
         "buttons": [
-          { "label": "Browse past papers", "url": "past-papers/", "style": "btn--accent" },
-          { "label": "All interactive activities", "url": "interactive/", "style": "btn--ghost-light" }
+          {
+            "label": "Browse past papers",
+            "url": "past-papers/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "All interactive activities",
+            "url": "interactive/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -34,12 +44,36 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 6", "text": "Reading a timetable, filling in a form, and a simple poem. Listening: conversations, an announcement and a story. New 2026 syllabus.", "url": "grades/grade-6/" },
-            { "title": "Grade 7", "text": "Past and future continuous, modals, and joining words. Listening: directions, announcements and spoken instructions.", "url": "grades/grade-7/" },
-            { "title": "Grade 8", "text": "The past perfect, the passive voice, and reflexive pronouns. Listening: a weather forecast, a process and a spoken report.", "url": "grades/grade-8/" },
-            { "title": "Grade 9", "text": "Passive past and future, reported statements, and reading between the lines. Listening: interviews, and inferring what is implied.", "url": "grades/grade-9/" },
-            { "title": "Grade 10", "text": "The passive in perfect and continuous forms, If Type 3, and discourse markers. Listening: presentations, a discussion and note-taking.", "url": "grades/grade-10/" },
-            { "title": "Grade 11", "text": "All three conditionals, reported questions and commands, and word class. Listening: a debate, a committee meeting and an interview.", "url": "grades/grade-11/" }
+            {
+              "title": "Grade 6",
+              "text": "Reading a timetable, filling in a form, and a simple poem. Listening: conversations, an announcement and a story. New 2026 syllabus.",
+              "url": "grades/grade-6/"
+            },
+            {
+              "title": "Grade 7",
+              "text": "Past and future continuous, modals, and joining words. Listening: directions, announcements and spoken instructions.",
+              "url": "grades/grade-7/"
+            },
+            {
+              "title": "Grade 8",
+              "text": "The past perfect, the passive voice, and reflexive pronouns. Listening: a weather forecast, a process and a spoken report.",
+              "url": "grades/grade-8/"
+            },
+            {
+              "title": "Grade 9",
+              "text": "Passive past and future, reported statements, and reading between the lines. Listening: interviews, and inferring what is implied.",
+              "url": "grades/grade-9/"
+            },
+            {
+              "title": "Grade 10",
+              "text": "The passive in perfect and continuous forms, If Type 3, and discourse markers. Listening: presentations, a discussion and note-taking.",
+              "url": "grades/grade-10/"
+            },
+            {
+              "title": "Grade 11",
+              "text": "All three conditionals, reported questions and commands, and word class. Listening: a debate, a committee meeting and an interview.",
+              "url": "grades/grade-11/"
+            }
           ]
         },
         {
@@ -47,9 +81,21 @@
           "heading": "When you have finished practising",
           "columns": "3",
           "items": [
-            { "title": "Sit a real paper", "text": "Term test papers from provincial departments and zonal offices, by grade.", "url": "past-papers/" },
-            { "title": "O/L English lessons", "text": "Every writing task and grammar area taught in guided steps.", "url": "ol-english/" },
-            { "title": "More activities", "text": "The whole set of self-marking activities on the site.", "url": "interactive/" }
+            {
+              "title": "Sit a real paper",
+              "text": "Term test papers from provincial departments and zonal offices, by grade.",
+              "url": "past-papers/"
+            },
+            {
+              "title": "O/L English lessons",
+              "text": "Every writing task and grammar area taught in guided steps.",
+              "url": "ol-english/"
+            },
+            {
+              "title": "More activities",
+              "text": "The whole set of self-marking activities on the site.",
+              "url": "interactive/"
+            }
           ]
         }
       ]
@@ -62,12 +108,28 @@
       "keywords": "grade 6 english, new 2026 syllabus, functional text, form filling, simple poem, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
-      "scripts": ["quiz", "listening"],
-      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
-      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
-      "hero": { "text": "Grade 6 follows the new 2026 syllabus, which is organised by skill rather than by grammar topic. These activities cover listening, reading a functional text, writing in an official context, and reading a literary text. Each one names the competency level it practises." },
+      "scripts": [
+        "quiz",
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6-11 Resources",
+        "url": "grades/"
+      },
+      "hero": {
+        "text": "Grade 6 follows the new 2026 syllabus, which is organised by skill rather than by grammar topic. These activities cover listening, reading a functional text, writing in an official context, and reading a literary text. Each one names the competency level it practises."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 6 },
+        {
+          "type": "grade-dashboard",
+          "grade": 6
+        },
         {
           "type": "callout",
           "style": "info",
@@ -80,8 +142,14 @@
           "type": "activities",
           "id": "practice",
           "heading": "Grade 6 English practice",
-          "intro": ["Reading a timetable, filling in a form, and reading a simple poem. These follow competency levels 3.1, 3.2, 3.5, 3.6 and 4.1 of the 2026 syllabus."],
-          "ids": ["g06-functional-texts", "g06-forms-and-lists", "g06-poems"]
+          "intro": [
+            "Reading a timetable, filling in a form, and reading a simple poem. These follow competency levels 3.1, 3.2, 3.5, 3.6 and 4.1 of the 2026 syllabus."
+          ],
+          "ids": [
+            "g06-functional-texts",
+            "g06-forms-and-lists",
+            "g06-poems"
+          ]
         },
         {
           "type": "listening",
@@ -93,7 +161,16 @@
             "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
             "The activities follow the Grade 6 English Pupil's Book printed from 2014 to 2019, and one Workbook activity. If your class uses a newer book, the unit and activity numbers may differ."
           ],
-          "ids": ["pb06-u03-a08", "pb06-u04-a07", "pb06-u04-a08", "pb06-u06-a03", "pb06-u07-a03", "pb06-u10-a03", "pb06-u11-a08", "wb06-u06-a04"]
+          "ids": [
+            "pb06-u03-a08",
+            "pb06-u04-a07",
+            "pb06-u04-a08",
+            "pb06-u06-a03",
+            "pb06-u07-a03",
+            "pb06-u10-a03",
+            "pb06-u11-a08",
+            "wb06-u06-a04"
+          ]
         },
         {
           "type": "listening",
@@ -104,14 +181,22 @@
             "Five extra listening tests written by RCF English, for practice beyond the textbook: short conversations, an announcement, a description and a story. The passage is read aloud by your own browser, so there is nothing to download.",
             "Choose **Practice** to replay as often as you like, or **Formal test** for examination conditions, where the recording plays twice only. You can change the reading speed, and there are five words to learn before you listen. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test can be printed as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 1.1 to 1.6 of the 2026 syllabus."
           ],
-          "ids": ["l06-1", "l06-2", "l06-3", "l06-4", "l06-5"]
+          "ids": [
+            "l06-1",
+            "l06-2",
+            "l06-3",
+            "l06-4",
+            "l06-5"
+          ]
         },
         {
           "type": "grade-resources",
           "heading": "Grade 6 resources to download",
           "eyebrow": "Downloads",
           "grade": "Grade 6",
-          "intro": ["Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."]
+          "intro": [
+            "Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."
+          ]
         },
         {
           "type": "cards",
@@ -119,16 +204,40 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 7", "text": "Continuous tenses and modals.", "url": "grades/grade-7/" },
-            { "title": "Grade 6 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
-            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+            {
+              "title": "Grade 7",
+              "text": "Continuous tenses and modals.",
+              "url": "grades/grade-7/"
+            },
+            {
+              "title": "Grade 6 papers",
+              "text": "Real term test papers for this grade.",
+              "url": "past-papers/"
+            },
+            {
+              "title": "More activities",
+              "text": "Everything else on the site.",
+              "url": "interactive/"
+            },
+            {
+              "title": "Grade 6 past papers",
+              "url": "past-papers/grade-6/",
+              "more": "16 papers",
+              "text": [
+                "Every Grade 6 term test paper on the site, with what to revise before you sit one."
+              ]
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["grade-6-english-made-easy"],
+          "books": [
+            "grade-6-english-made-easy"
+          ],
           "heading": "If your English is behind the class",
-          "text": ["RCF Publications produces a Grade 6 support book for pupils who need to rebuild the basics without falling further behind."]
+          "text": [
+            "RCF Publications produces a Grade 6 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
         }
       ]
     },
@@ -140,18 +249,40 @@
       "keywords": "grade 7 english grammar, past continuous, future continuous, modals, conjunctions, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
-      "scripts": ["quiz", "listening"],
-      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
-      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
-      "hero": { "text": "Three areas the Grade 7 syllabus sets for Term 2: the continuous tenses, the four modals, and the joining words. There are also five listening tests. Each activity marks itself and explains why an answer is right." },
+      "scripts": [
+        "quiz",
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6-11 Resources",
+        "url": "grades/"
+      },
+      "hero": {
+        "text": "Three areas the Grade 7 syllabus sets for Term 2: the continuous tenses, the four modals, and the joining words. There are also five listening tests. Each activity marks itself and explains why an answer is right."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 7 },
+        {
+          "type": "grade-dashboard",
+          "grade": 7
+        },
         {
           "type": "activities",
           "id": "practice",
           "heading": "Grade 7 grammar practice",
-          "intro": ["Past and future continuous, the modals can, would, must and should, and the joining words. These follow competency levels 6.1, 6.3 and 6.8."],
-          "ids": ["g07-past-continuous", "g07-modals", "g07-conjunctions"]
+          "intro": [
+            "Past and future continuous, the modals can, would, must and should, and the joining words. These follow competency levels 6.1, 6.3 and 6.8."
+          ],
+          "ids": [
+            "g07-past-continuous",
+            "g07-modals",
+            "g07-conjunctions"
+          ]
         },
         {
           "type": "listening",
@@ -163,7 +294,21 @@
             "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
             "Each test names the unit, activity and page in the Grade 7 Pupil's Book or Workbook."
           ],
-          "ids": ["pb07-u01-a02", "pb07-u02-a08", "pb07-u03-a07", "pb07-u03-a16", "pb07-u04-a10", "pb07-u05-a09", "pb07-u06-a05", "pb07-u06-a12", "pb07-u07-a13", "pb07-u09-a15", "pb07-u10-a09", "wb07-u03-a14", "wb07-u05-a04"]
+          "ids": [
+            "pb07-u01-a02",
+            "pb07-u02-a08",
+            "pb07-u03-a07",
+            "pb07-u03-a16",
+            "pb07-u04-a10",
+            "pb07-u05-a09",
+            "pb07-u06-a05",
+            "pb07-u06-a12",
+            "pb07-u07-a13",
+            "pb07-u09-a15",
+            "pb07-u10-a09",
+            "wb07-u03-a14",
+            "wb07-u05-a04"
+          ]
         },
         {
           "type": "listening",
@@ -174,14 +319,22 @@
             "Five extra listening tests written by RCF English, for practice beyond the textbook: directions, a station announcement, spoken instructions, a telephone call and a set of library rules.",
             "Choose **Practice** to replay freely, or **Formal test** for examination conditions, where the recording plays twice only. Each test starts with five words to learn. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test prints as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 3.1 to 3.4."
           ],
-          "ids": ["l07-1", "l07-2", "l07-3", "l07-4", "l07-5"]
+          "ids": [
+            "l07-1",
+            "l07-2",
+            "l07-3",
+            "l07-4",
+            "l07-5"
+          ]
         },
         {
           "type": "grade-resources",
           "heading": "Grade 7 resources to download",
           "eyebrow": "Downloads",
           "grade": "Grade 7",
-          "intro": ["Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."]
+          "intro": [
+            "Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."
+          ]
         },
         {
           "type": "cards",
@@ -189,16 +342,40 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 8", "text": "The past perfect and the passive voice.", "url": "grades/grade-8/" },
-            { "title": "Grade 7 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
-            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+            {
+              "title": "Grade 8",
+              "text": "The past perfect and the passive voice.",
+              "url": "grades/grade-8/"
+            },
+            {
+              "title": "Grade 7 papers",
+              "text": "Real term test papers for this grade.",
+              "url": "past-papers/"
+            },
+            {
+              "title": "More activities",
+              "text": "Everything else on the site.",
+              "url": "interactive/"
+            },
+            {
+              "title": "Grade 7 past papers",
+              "url": "past-papers/grade-7/",
+              "more": "17 papers",
+              "text": [
+                "Every Grade 7 term test paper on the site, with what to revise before you sit one."
+              ]
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["slow-learners-g7"],
+          "books": [
+            "slow-learners-g7"
+          ],
           "heading": "If your English is behind the class",
-          "text": ["RCF Publications produces a Grade 7 support book for pupils who need to rebuild the basics without falling further behind."]
+          "text": [
+            "RCF Publications produces a Grade 7 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
         }
       ]
     },
@@ -210,18 +387,40 @@
       "keywords": "grade 8 english grammar, past perfect, passive voice, reflexive pronouns, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
-      "scripts": ["quiz", "listening"],
-      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
-      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
-      "hero": { "text": "Grade 8 is where the passive voice is introduced. The syllabus sets it in the simple present, simple past and simple future across Terms 2 and 3, alongside the past perfect. Get these right here and Grades 9 and 10 become much easier." },
+      "scripts": [
+        "quiz",
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6-11 Resources",
+        "url": "grades/"
+      },
+      "hero": {
+        "text": "Grade 8 is where the passive voice is introduced. The syllabus sets it in the simple present, simple past and simple future across Terms 2 and 3, alongside the past perfect. Get these right here and Grades 9 and 10 become much easier."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 8 },
+        {
+          "type": "grade-dashboard",
+          "grade": 8
+        },
         {
           "type": "activities",
           "id": "practice",
           "heading": "Grade 8 grammar practice",
-          "intro": ["The past perfect tense, the passive voice in the simple tenses, and reflexive pronouns. These follow competency levels 6.1 and 6.2."],
-          "ids": ["g08-past-perfect", "g08-passive-simple", "g08-reflexive-pronouns"]
+          "intro": [
+            "The past perfect tense, the passive voice in the simple tenses, and reflexive pronouns. These follow competency levels 6.1 and 6.2."
+          ],
+          "ids": [
+            "g08-past-perfect",
+            "g08-passive-simple",
+            "g08-reflexive-pronouns"
+          ]
         },
         {
           "type": "listening",
@@ -233,7 +432,24 @@
             "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
             "Each test names the unit and activity in the Grade 8 Pupil's Book or Workbook."
           ],
-          "ids": ["pb08-u01-a05", "pb08-u02-a08", "pb08-u04-a07", "pb08-u05-a09", "pb08-u06-a08", "pb08-u08-a12", "wb08-u01-a05", "wb08-u02-a03", "wb08-u02-a05", "wb08-u03-a09", "wb08-u03-a11", "wb08-u07-a10", "wb08-u07-a12", "wb08-u08-a05", "wb08-u09-a04", "wb08-u10-a04"]
+          "ids": [
+            "pb08-u01-a05",
+            "pb08-u02-a08",
+            "pb08-u04-a07",
+            "pb08-u05-a09",
+            "pb08-u06-a08",
+            "pb08-u08-a12",
+            "wb08-u01-a05",
+            "wb08-u02-a03",
+            "wb08-u02-a05",
+            "wb08-u03-a09",
+            "wb08-u03-a11",
+            "wb08-u07-a10",
+            "wb08-u07-a12",
+            "wb08-u08-a05",
+            "wb08-u09-a04",
+            "wb08-u10-a04"
+          ]
         },
         {
           "type": "listening",
@@ -244,14 +460,22 @@
             "Five extra listening tests written by RCF English, for practice beyond the textbook: a weather forecast, advice at a dental clinic, an explanation of how paper is made, a project report and a booking made by telephone.",
             "Choose **Practice** to replay freely, or **Formal test** for examination conditions. Each test starts with five words to learn. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test prints as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 3.2 to 3.4, and the paper-making test also practises the passive voice from competency level 6.1."
           ],
-          "ids": ["l08-1", "l08-2", "l08-3", "l08-4", "l08-5"]
+          "ids": [
+            "l08-1",
+            "l08-2",
+            "l08-3",
+            "l08-4",
+            "l08-5"
+          ]
         },
         {
           "type": "grade-resources",
           "heading": "Grade 8 resources to download",
           "eyebrow": "Downloads",
           "grade": "Grade 8",
-          "intro": ["Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."]
+          "intro": [
+            "Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."
+          ]
         },
         {
           "type": "cards",
@@ -259,16 +483,40 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 9", "text": "The passive extended, and reported speech.", "url": "grades/grade-9/" },
-            { "title": "Grade 8 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
-            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+            {
+              "title": "Grade 9",
+              "text": "The passive extended, and reported speech.",
+              "url": "grades/grade-9/"
+            },
+            {
+              "title": "Grade 8 papers",
+              "text": "Real term test papers for this grade.",
+              "url": "past-papers/"
+            },
+            {
+              "title": "More activities",
+              "text": "Everything else on the site.",
+              "url": "interactive/"
+            },
+            {
+              "title": "Grade 8 past papers",
+              "url": "past-papers/grade-8/",
+              "more": "18 papers",
+              "text": [
+                "Every Grade 8 term test paper on the site, with what to revise before you sit one."
+              ]
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["slow-learners-g8"],
+          "books": [
+            "slow-learners-g8"
+          ],
           "heading": "If your English is behind the class",
-          "text": ["RCF Publications produces a Grade 8 support book for pupils who need to rebuild the basics without falling further behind."]
+          "text": [
+            "RCF Publications produces a Grade 8 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
         }
       ]
     },
@@ -280,18 +528,40 @@
       "keywords": "grade 9 english grammar, passive voice, reported speech, inference, implied information, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
-      "scripts": ["quiz", "listening"],
-      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
-      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
-      "hero": { "text": "Grade 9 extends the passive voice and introduces reported speech. It also asks something new of readers: working out what a text implies but never actually says. That last skill carries marks right through to O/L." },
+      "scripts": [
+        "quiz",
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6-11 Resources",
+        "url": "grades/"
+      },
+      "hero": {
+        "text": "Grade 9 extends the passive voice and introduces reported speech. It also asks something new of readers: working out what a text implies but never actually says. That last skill carries marks right through to O/L."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 9 },
+        {
+          "type": "grade-dashboard",
+          "grade": 9
+        },
         {
           "type": "activities",
           "id": "practice",
           "heading": "Grade 9 English practice",
-          "intro": ["The passive voice in past and future, reported statements, and reading between the lines. These follow competency levels 6.1, 6.11, 5.7 and 5.8."],
-          "ids": ["g09-passive-past-future", "g09-reported-speech", "g09-inference"]
+          "intro": [
+            "The passive voice in past and future, reported statements, and reading between the lines. These follow competency levels 6.1, 6.11, 5.7 and 5.8."
+          ],
+          "ids": [
+            "g09-passive-past-future",
+            "g09-reported-speech",
+            "g09-inference"
+          ]
         },
         {
           "type": "listening",
@@ -303,7 +573,16 @@
             "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
             "Each test names the unit and activity in the Grade 9 Pupil's Book, and the Workbook activity where the answers are written."
           ],
-          "ids": ["pb09-u01-a09", "pb09-u02-a06", "pb09-u03-a04", "pb09-u05-a15", "pb09-u07-a05", "pb09-u08-a06", "pb09-u09-a13", "pb09-u10-a04"]
+          "ids": [
+            "pb09-u01-a09",
+            "pb09-u02-a06",
+            "pb09-u03-a04",
+            "pb09-u05-a15",
+            "pb09-u07-a05",
+            "pb09-u08-a06",
+            "pb09-u09-a13",
+            "pb09-u10-a04"
+          ]
         },
         {
           "type": "listening",
@@ -314,14 +593,22 @@
             "Five extra listening tests written by RCF English, for practice beyond the textbook: two interviews, a talk, and two conversations in which the speakers' feelings are suggested rather than stated.",
             "Choose **Practice** to replay freely, or **Formal test** for examination conditions. Each test starts with five words to learn. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test prints as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 3.3, 3.4 and 3.6, and the two conversations practise inference at competency levels 5.7 and 5.8."
           ],
-          "ids": ["l09-1", "l09-2", "l09-3", "l09-4", "l09-5"]
+          "ids": [
+            "l09-1",
+            "l09-2",
+            "l09-3",
+            "l09-4",
+            "l09-5"
+          ]
         },
         {
           "type": "grade-resources",
           "heading": "Grade 9 resources to download",
           "eyebrow": "Downloads",
           "grade": "Grade 9",
-          "intro": ["Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."]
+          "intro": [
+            "Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."
+          ]
         },
         {
           "type": "cards",
@@ -329,16 +616,40 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 10", "text": "The passive completed, and If Type 3.", "url": "grades/grade-10/" },
-            { "title": "Grade 9 papers", "text": "Real term test papers for this grade.", "url": "past-papers/" },
-            { "title": "More activities", "text": "Everything else on the site.", "url": "interactive/" }
+            {
+              "title": "Grade 10",
+              "text": "The passive completed, and If Type 3.",
+              "url": "grades/grade-10/"
+            },
+            {
+              "title": "Grade 9 papers",
+              "text": "Real term test papers for this grade.",
+              "url": "past-papers/"
+            },
+            {
+              "title": "More activities",
+              "text": "Everything else on the site.",
+              "url": "interactive/"
+            },
+            {
+              "title": "Grade 9 past papers",
+              "url": "past-papers/grade-9/",
+              "more": "16 papers",
+              "text": [
+                "Every Grade 9 term test paper on the site, with what to revise before you sit one."
+              ]
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["slow-learners-g9"],
+          "books": [
+            "slow-learners-g9"
+          ],
           "heading": "If your English is behind the class",
-          "text": ["RCF Publications produces a Grade 9 support book for pupils who need to rebuild the basics without falling further behind."]
+          "text": [
+            "RCF Publications produces a Grade 9 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
         }
       ]
     },
@@ -350,18 +661,40 @@
       "keywords": "grade 10 english grammar, passive voice perfect continuous, if type 3, third conditional, discourse markers, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
-      "scripts": ["quiz", "listening"],
-      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
-      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
-      "hero": { "text": "Grade 10 completes the passive voice. Having met it in the simple tenses at Grade 8 and the past and future at Grade 9, the syllabus now works through every perfect and continuous form. O/L preparation begins here in earnest." },
+      "scripts": [
+        "quiz",
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6-11 Resources",
+        "url": "grades/"
+      },
+      "hero": {
+        "text": "Grade 10 completes the passive voice. Having met it in the simple tenses at Grade 8 and the past and future at Grade 9, the syllabus now works through every perfect and continuous form. O/L preparation begins here in earnest."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 10 },
+        {
+          "type": "grade-dashboard",
+          "grade": 10
+        },
         {
           "type": "activities",
           "id": "practice",
           "heading": "Grade 10 grammar practice",
-          "intro": ["The passive voice in perfect and continuous forms, If Type 3, and discourse markers. These follow competency levels 6.1, 6.10 and 3.7."],
-          "ids": ["g10-passive-perfect", "g10-if-type-3", "g10-discourse-markers"]
+          "intro": [
+            "The passive voice in perfect and continuous forms, If Type 3, and discourse markers. These follow competency levels 6.1, 6.10 and 3.7."
+          ],
+          "ids": [
+            "g10-passive-perfect",
+            "g10-if-type-3",
+            "g10-discourse-markers"
+          ]
         },
         {
           "type": "listening",
@@ -373,7 +706,19 @@
             "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
             "Each test names the unit and activity in the Grade 10 Pupil's Book or Workbook. For the Workbook activities, the questions are RCF English's."
           ],
-          "ids": ["pb10-u01-a03", "pb10-u03-a02", "pb10-u06-a07", "pb10-u08-a07", "pb10-u09-a06", "pb10-u11-a08", "wb10-u01-a05", "wb10-u03-a05", "wb10-u04-a02", "wb10-u05-a02", "wb10-u05-a06"]
+          "ids": [
+            "pb10-u01-a03",
+            "pb10-u03-a02",
+            "pb10-u06-a07",
+            "pb10-u08-a07",
+            "pb10-u09-a06",
+            "pb10-u11-a08",
+            "wb10-u01-a05",
+            "wb10-u03-a05",
+            "wb10-u04-a02",
+            "wb10-u05-a02",
+            "wb10-u05-a06"
+          ]
         },
         {
           "type": "listening",
@@ -384,14 +729,22 @@
             "Five extra listening tests written by RCF English, for practice beyond the textbook: a presentation to be summarised in notes, a three-way discussion, a news bulletin, a talk built on signal words, and a staff room conversation.",
             "Choose **Practice** to replay freely, or **Formal test** for examination conditions. Each test starts with five words to learn. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test prints as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 3.4, 3.6, 3.7 and 3.8."
           ],
-          "ids": ["l10-1", "l10-2", "l10-3", "l10-4", "l10-5"]
+          "ids": [
+            "l10-1",
+            "l10-2",
+            "l10-3",
+            "l10-4",
+            "l10-5"
+          ]
         },
         {
           "type": "grade-resources",
           "heading": "Grade 10 resources to download",
           "eyebrow": "Downloads",
           "grade": "Grade 10",
-          "intro": ["Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."]
+          "intro": [
+            "Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."
+          ]
         },
         {
           "type": "cards",
@@ -399,16 +752,32 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 11", "text": "All three conditionals, and reported questions.", "url": "grades/grade-11/" },
-            { "title": "Grade 10 papers", "text": "Term test papers for this grade, by province and term.", "url": "past-papers/grade-10/" },
-            { "title": "O/L English", "text": "The full O/L course, task by task.", "url": "ol-english/" }
+            {
+              "title": "Grade 11",
+              "text": "All three conditionals, and reported questions.",
+              "url": "grades/grade-11/"
+            },
+            {
+              "title": "Grade 10 papers",
+              "text": "Term test papers for this grade, by province and term.",
+              "url": "past-papers/grade-10/"
+            },
+            {
+              "title": "O/L English",
+              "text": "The full O/L course, task by task.",
+              "url": "ol-english/"
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["slow-learners-g10"],
+          "books": [
+            "slow-learners-g10"
+          ],
           "heading": "If your English is behind the class",
-          "text": ["RCF Publications produces a Grade 10 support book for pupils who need to rebuild the basics without falling further behind."]
+          "text": [
+            "RCF Publications produces a Grade 10 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
         }
       ]
     },
@@ -420,18 +789,40 @@
       "keywords": "grade 11 english grammar, conditionals, reported speech questions commands, affixes word class, O/L English, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
-      "scripts": ["quiz", "listening"],
-      "breadcrumbs": [{ "label": "Grade 6-11 Resources", "url": "grades/" }],
-      "backTo": { "label": "Grade 6-11 Resources", "url": "grades/" },
-      "hero": { "text": "The O/L year. Grade 11 consolidates rather than introduces: the conditionals are brought together, reported speech is extended to questions and commands, and word building is revisited. All three are areas where marks are thrown away by habit rather than by difficulty." },
+      "scripts": [
+        "quiz",
+        "listening"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6-11 Resources",
+        "url": "grades/"
+      },
+      "hero": {
+        "text": "The O/L year. Grade 11 consolidates rather than introduces: the conditionals are brought together, reported speech is extended to questions and commands, and word building is revisited. All three are areas where marks are thrown away by habit rather than by difficulty."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 11 },
+        {
+          "type": "grade-dashboard",
+          "grade": 11
+        },
         {
           "type": "activities",
           "id": "practice",
           "heading": "Grade 11 grammar practice",
-          "intro": ["Conditional clauses of all types, reported questions and commands, and changing the class of a word. These follow competency levels 6.10, 6.11, 4.4 and 4.7."],
-          "ids": ["g11-conditionals", "g11-reported-speech", "g11-word-class"]
+          "intro": [
+            "Conditional clauses of all types, reported questions and commands, and changing the class of a word. These follow competency levels 6.10, 6.11, 4.4 and 4.7."
+          ],
+          "ids": [
+            "g11-conditionals",
+            "g11-reported-speech",
+            "g11-word-class"
+          ]
         },
         {
           "type": "listening",
@@ -443,7 +834,18 @@
             "The listening activities from your English textbook, as tests you can do on your own. Your teacher usually reads these texts aloud in class; here your device reads them, so you can listen again at home, check your answers and see the text afterwards.",
             "Each test names the chapter and activity in the Grade 11 Pupil's Book or Workbook. The two stress activities (Pupil's Book Chapter 8 and Workbook Chapter 4) are not here, because a device voice cannot stress a chosen word."
           ],
-          "ids": ["pb11-c01-a09", "pb11-c02-a07", "pb11-c03-a02", "pb11-c04-a09", "pb11-c05-a04", "pb11-c06-a13", "pb11-c07-a02", "pb11-c09-a04", "pb11-c10-a12", "wb11-c02-a06"]
+          "ids": [
+            "pb11-c01-a09",
+            "pb11-c02-a07",
+            "pb11-c03-a02",
+            "pb11-c04-a09",
+            "pb11-c05-a04",
+            "pb11-c06-a13",
+            "pb11-c07-a02",
+            "pb11-c09-a04",
+            "pb11-c10-a12",
+            "wb11-c02-a06"
+          ]
         },
         {
           "type": "listening",
@@ -454,14 +856,22 @@
             "Five extra listening tests written by RCF English, at the hardest level on the site: a formal debate, a careers talk, an interview in which much is implied, a committee meeting, and examination advice.",
             "Choose **Practice** to replay freely, or **Formal test** for examination conditions. Each test starts with five words to learn. In Practice you can open the transcript if you are stuck; in a Formal test it appears only after you submit. Every test prints as a worksheet, and all of them, with the Pupil's Book activities, are together in the [Listening Laboratory](listening-lab/). These follow competency levels 3.6, 3.7 and 3.8, with inference at 5.7 and 5.8."
           ],
-          "ids": ["l11-1", "l11-2", "l11-3", "l11-4", "l11-5"]
+          "ids": [
+            "l11-1",
+            "l11-2",
+            "l11-3",
+            "l11-4",
+            "l11-5"
+          ]
         },
         {
           "type": "grade-resources",
           "heading": "Grade 11 resources to download",
           "eyebrow": "Downloads",
           "grade": "Grade 11",
-          "intro": ["Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."]
+          "intro": [
+            "Books, guides and planning documents for this grade. Each one shows where it comes from and opens on the publisher's own site or the source it was shared from. This list builds itself from the resource catalogue, so newly approved material appears here automatically."
+          ]
         },
         {
           "type": "cards",
@@ -469,16 +879,40 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "O/L English", "text": "Syllabus, Paper I and II, and every writing task.", "url": "ol-english/" },
-            { "title": "Past papers", "text": "Sit a real paper under timed conditions.", "url": "past-papers/" },
-            { "title": "Common mistakes", "text": "The errors examiners see most often.", "url": "ol-english/common-mistakes/" }
+            {
+              "title": "O/L English",
+              "text": "Syllabus, Paper I and II, and every writing task.",
+              "url": "ol-english/"
+            },
+            {
+              "title": "Past papers",
+              "text": "Sit a real paper under timed conditions.",
+              "url": "past-papers/"
+            },
+            {
+              "title": "Common mistakes",
+              "text": "The errors examiners see most often.",
+              "url": "ol-english/common-mistakes/"
+            },
+            {
+              "title": "Grade 11 past papers",
+              "url": "past-papers/grade-11/",
+              "more": "21 papers",
+              "text": [
+                "Every Grade 11 term test paper on the site, with what to revise before you sit one."
+              ]
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["slow-learners-g11"],
+          "books": [
+            "slow-learners-g11"
+          ],
           "heading": "If your English is behind the class",
-          "text": ["RCF Publications produces a Grade 11 support book for pupils who need to rebuild the basics without falling further behind."]
+          "text": [
+            "RCF Publications produces a Grade 11 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
         }
       ]
     }

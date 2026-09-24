@@ -56,6 +56,65 @@
         },
         {
           "type": "cards",
+          "heading": "Browse by grade",
+          "variant": "tint",
+          "columns": "3",
+          "intro": [
+            "Each grade page lists every paper for that grade and says what to revise before sitting one."
+          ],
+          "items": [
+            {
+              "title": "Grade 6",
+              "url": "past-papers/grade-6/",
+              "more": "16 papers",
+              "text": [
+                "English Language term test papers."
+              ]
+            },
+            {
+              "title": "Grade 7",
+              "url": "past-papers/grade-7/",
+              "more": "17 papers",
+              "text": [
+                "English Language term test papers."
+              ]
+            },
+            {
+              "title": "Grade 8",
+              "url": "past-papers/grade-8/",
+              "more": "18 papers",
+              "text": [
+                "English Language term test papers."
+              ]
+            },
+            {
+              "title": "Grade 9",
+              "url": "past-papers/grade-9/",
+              "more": "16 papers",
+              "text": [
+                "English Language term test papers."
+              ]
+            },
+            {
+              "title": "Grade 10",
+              "url": "past-papers/grade-10/",
+              "more": "44 papers",
+              "text": [
+                "English Language and English Literature."
+              ]
+            },
+            {
+              "title": "Grade 11",
+              "url": "past-papers/grade-11/",
+              "more": "21 papers",
+              "text": [
+                "English Language and English Literature."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
           "heading": "Browse by subject",
           "variant": "tint",
           "columns": "3",
@@ -238,6 +297,551 @@
               "title": "Reading comprehension",
               "text": "How to work through the reading passages under time.",
               "url": "ol-english/reading-comprehension/"
+            },
+            {
+              "title": "How to use past papers",
+              "text": "Getting real value from a paper instead of just finishing it.",
+              "url": "past-papers/how-to-use/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-papers/grade-11",
+      "title": "Grade 11 Papers",
+      "metaTitle": "Grade 11 English Past Papers and Term Tests",
+      "description": "21 Grade 11 English term test papers from provincial departments, zonal offices and schools, newest first, with what to revise before you sit one.",
+      "keywords": "grade 11 english papers, grade 11 term test paper, grade 11 english past paper sri lanka, term test papers, provincial papers",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Grade 11 English term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
+        "buttons": [
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this collection actually contains",
+          "text": [
+            "**21 papers,** from 2017, 2018, 2019, 2022, 2023, 2025 and 2026: fifteen from provincial departments, two from zonal offices and two written by RCF English. By term, that is two first-term, four second-term and twelve third-term papers, and there are also a model paper and a model answer.",
+            "**The files are not stored on this website.** Each paper opens in Google Drive. *View the paper* reads it in your browser; *Download PDF* saves it. Nothing is copied onto this site.",
+            "**More papers are still being checked.** A paper is added only after somebody has opened the file and confirmed what is in it, so this list grows slowly and will keep growing."
+          ]
+        },
+        {
+          "type": "paperLibrary",
+          "heading": "Grade 11 papers",
+          "fixed": {
+            "grade": "11"
+          },
+          "chooser": false,
+          "sectionLabel": "Grade 11",
+          "sectionNote": "Every Grade 11 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "prose",
+          "heading": "Using a Grade 11 paper well",
+          "level": "h2",
+          "text": [
+            "Grade 11 is the O/L year: these papers are the closest practice available to the examination itself, and sixteen of the twenty-one are English Language with five English Literature."
+          ],
+          "bullets": [
+            "**Third-term papers are the most useful here** - twelve of the twenty-one - because they are written to cover the whole syllabus, which is what the examination does.",
+            "**Do at least three complete papers under full time,** in one sitting, with no phone. Writing a whole paper is a physical skill, and the examination should not be the first time you have done it in a month.",
+            "**Literature and Language need separate practice.** A Literature paper can only be answered on the texts you have studied, so check the prescribed texts before using an older paper.",
+            "**Keep two papers unopened until the last fortnight.** Practice papers you have already seen cannot tell you whether you are ready."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who set these papers",
+          "text": [
+            "These papers were set by **provincial departments of education, zonal and divisional offices, and schools**. The body printed on each paper is recorded on its card. **RCF English did not create any of them** and does not claim to.",
+            "Papers produced by private institutes, academies, tuition classes and publishers are deliberately **not** listed. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare before you practise",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "O/L English grammar",
+              "text": "The structures the paper tests, with practice.",
+              "url": "ol-english/grammar/"
+            },
+            {
+              "title": "Guided writing",
+              "text": "Every writing task in the paper, taught in six steps.",
+              "url": "ol-english/guided-writing/"
+            },
+            {
+              "title": "O/L Literature papers",
+              "text": "The Literature papers, and what to check before using an old one.",
+              "url": "past-papers/ol-literature/"
+            },
+            {
+              "title": "How to use past papers",
+              "text": "Getting real value from a paper instead of just finishing it.",
+              "url": "past-papers/how-to-use/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-papers/grade-9",
+      "title": "Grade 9 Papers",
+      "metaTitle": "Grade 9 English Past Papers and Term Tests",
+      "description": "16 Grade 9 English term test papers from provincial departments, zonal offices and schools, newest first, with what to revise before you sit one.",
+      "keywords": "grade 9 english papers, grade 9 term test paper, grade 9 english past paper sri lanka, term test papers, provincial papers",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Grade 9 English term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
+        "buttons": [
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this collection actually contains",
+          "text": [
+            "**16 papers,** from 2017, 2018, 2019, 2023, 2024 and 2025: eight from provincial departments, three from zonal offices and two from schools. By term, that is two first-term, four second-term and nine third-term papers, and there are no marking schemes yet.",
+            "**The files are not stored on this website.** Each paper opens in Google Drive. *View the paper* reads it in your browser; *Download PDF* saves it. Nothing is copied onto this site.",
+            "**More papers are still being checked.** A paper is added only after somebody has opened the file and confirmed what is in it, so this list grows slowly and will keep growing."
+          ]
+        },
+        {
+          "type": "paperLibrary",
+          "heading": "Grade 9 papers",
+          "fixed": {
+            "grade": "9"
+          },
+          "chooser": false,
+          "sectionLabel": "Grade 9",
+          "sectionNote": "Every Grade 9 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "prose",
+          "heading": "Using a Grade 9 paper well",
+          "level": "h2",
+          "text": [
+            "Grade 9 papers begin to look like O/L papers: longer reading passages, more writing, and questions that ask for a reason rather than a fact."
+          ],
+          "bullets": [
+            "**Start timing the paper this year.** Grade 9 is early enough that running out of time is a lesson rather than a disaster, and late enough that the habit will still be there at O/L.",
+            "**Most of these are third-term papers** - nine of the sixteen - so they suit the end of the year. Earlier in the year, use the second-term papers and the Grade 8 collection.",
+            "**Answer the question that was asked.** From this grade on, the commonest loss of marks is a well-written answer to a slightly different question. Underline the words in the question that limit it.",
+            "**There are no marking schemes in this collection yet.** Mark against the [Grade 10 and 11 schemes](past-papers/marking-schemes/) for the equivalent question types, which are close enough to keep your standard honest."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who set these papers",
+          "text": [
+            "These papers were set by **provincial departments of education, zonal and divisional offices, and schools**. The body printed on each paper is recorded on its card. **RCF English did not create any of them** and does not claim to.",
+            "Papers produced by private institutes, academies, tuition classes and publishers are deliberately **not** listed. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare before you practise",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Grade 9 lesson plans",
+              "text": "Ten PPP plans tied to the Pupil's Book units.",
+              "url": "teacher-resources/ppp-lesson-plans/grade-9/"
+            },
+            {
+              "title": "Grammar",
+              "text": "Revise the structures these papers test.",
+              "url": "ol-english/grammar/"
+            },
+            {
+              "title": "Reading comprehension",
+              "text": "How to work through a reading passage under time.",
+              "url": "ol-english/reading-comprehension/"
+            },
+            {
+              "title": "How to use past papers",
+              "text": "Getting real value from a paper instead of just finishing it.",
+              "url": "past-papers/how-to-use/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-papers/grade-8",
+      "title": "Grade 8 Papers",
+      "metaTitle": "Grade 8 English Past Papers and Term Tests",
+      "description": "18 Grade 8 English term test papers from provincial departments, zonal offices and schools, newest first, with what to revise before you sit one.",
+      "keywords": "grade 8 english papers, grade 8 term test paper, grade 8 english past paper sri lanka, term test papers, provincial papers",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Grade 8 English term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
+        "buttons": [
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this collection actually contains",
+          "text": [
+            "**18 papers,** from 2018, 2019, 2021, 2024, 2025 and 2026: ten from provincial departments, six from zonal offices and two from schools. By term, that is five first-term, seven second-term and two third-term papers, and there are also a marking scheme, a model answer and a question bank.",
+            "**The files are not stored on this website.** Each paper opens in Google Drive. *View the paper* reads it in your browser; *Download PDF* saves it. Nothing is copied onto this site.",
+            "**More papers are still being checked.** A paper is added only after somebody has opened the file and confirmed what is in it, so this list grows slowly and will keep growing."
+          ]
+        },
+        {
+          "type": "paperLibrary",
+          "heading": "Grade 8 papers",
+          "fixed": {
+            "grade": "8"
+          },
+          "chooser": false,
+          "sectionLabel": "Grade 8",
+          "sectionNote": "Every Grade 8 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "prose",
+          "heading": "Using a Grade 8 paper well",
+          "level": "h2",
+          "text": [
+            "Grade 8 is the last year before the two that lead directly to the O/L examination, and it is the best year to fix habits that are expensive to fix later."
+          ],
+          "bullets": [
+            "**Find the weakness, then use the question bank** rather than another whole paper. Ten questions of the type that is costing marks are worth more than a fourth complete paper.",
+            "**Read the model answer after attempting the question, never before.** Compare the shape of the answer with your own: where the point is made, how much detail is given, how long the introduction really is.",
+            "**Write to the length asked for.** Grade 8 is where students start writing too much and losing marks for it. If a question says a paragraph, a page is not generous, it is off the point.",
+            "**Sit one paper under proper time each term.** Not more: the information from a timed paper is only useful if there is time to act on it before the next one."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who set these papers",
+          "text": [
+            "These papers were set by **provincial departments of education, zonal and divisional offices, and schools**. The body printed on each paper is recorded on its card. **RCF English did not create any of them** and does not claim to.",
+            "Papers produced by private institutes, academies, tuition classes and publishers are deliberately **not** listed. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare before you practise",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Grade 8 lesson plans",
+              "text": "Twelve PPP plans tied to the Pupil's Book units.",
+              "url": "teacher-resources/ppp-lesson-plans/grade-8/"
+            },
+            {
+              "title": "Question banks",
+              "text": "Ten of the same question type, for repairing one weakness.",
+              "url": "past-papers/question-banks/"
+            },
+            {
+              "title": "Model answers",
+              "text": "What a full answer looks like, and how to use one.",
+              "url": "past-papers/model-answers/"
+            },
+            {
+              "title": "How to use past papers",
+              "text": "Getting real value from a paper instead of just finishing it.",
+              "url": "past-papers/how-to-use/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-papers/grade-7",
+      "title": "Grade 7 Papers",
+      "metaTitle": "Grade 7 English Past Papers and Term Tests",
+      "description": "17 Grade 7 English term test papers from provincial departments, zonal offices and schools, newest first, with what to revise before you sit one.",
+      "keywords": "grade 7 english papers, grade 7 term test paper, grade 7 english past paper sri lanka, term test papers, provincial papers",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Grade 7 English term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
+        "buttons": [
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this collection actually contains",
+          "text": [
+            "**17 papers,** from 2018, 2019, 2022, 2024, 2025 and 2026: nine from provincial departments, five from zonal offices and one from a school. By term, that is five first-term, seven second-term and three third-term papers, and there are also two marking schemes and one model paper.",
+            "**The files are not stored on this website.** Each paper opens in Google Drive. *View the paper* reads it in your browser; *Download PDF* saves it. Nothing is copied onto this site.",
+            "**More papers are still being checked.** A paper is added only after somebody has opened the file and confirmed what is in it, so this list grows slowly and will keep growing."
+          ]
+        },
+        {
+          "type": "paperLibrary",
+          "heading": "Grade 7 papers",
+          "fixed": {
+            "grade": "7"
+          },
+          "chooser": false,
+          "sectionLabel": "Grade 7",
+          "sectionNote": "Every Grade 7 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "prose",
+          "heading": "Using a Grade 7 paper well",
+          "level": "h2",
+          "text": [
+            "Grade 7 papers ask for more writing than Grade 6 ones, and that is where most of the marks move."
+          ],
+          "bullets": [
+            "**Watch the writing question, not the grammar section.** Grammar marks are usually held; writing marks are usually lost. If time is short, practise the writing.",
+            "**Insist on planning, even for a short answer.** Two or three words of plan before a paragraph is the habit that separates a Grade 7 writer from a Grade 10 one, and it is far easier to build now.",
+            "**Use a paper from a different province** once the local ones feel familiar. The syllabus is the same; the phrasing is not, and meeting an unfamiliar wording in practice is better than meeting it in an examination.",
+            "**Keep the marking schemes.** There are two here. Marking a paper against a real scheme, rather than a guess, is what makes practice honest."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who set these papers",
+          "text": [
+            "These papers were set by **provincial departments of education, zonal and divisional offices, and schools**. The body printed on each paper is recorded on its card. **RCF English did not create any of them** and does not claim to.",
+            "Papers produced by private institutes, academies, tuition classes and publishers are deliberately **not** listed. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare before you practise",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Grade 7 lesson plans",
+              "text": "Ten PPP plans tied to the Pupil's Book units.",
+              "url": "teacher-resources/ppp-lesson-plans/grade-7/"
+            },
+            {
+              "title": "Worksheets by grade",
+              "text": "Printable practice for the same topics.",
+              "url": "teacher-resources/worksheets-by-grade/"
+            },
+            {
+              "title": "Marking schemes",
+              "text": "Mark against the scheme, not against your feelings.",
+              "url": "past-papers/marking-schemes/"
+            },
+            {
+              "title": "How to use past papers",
+              "text": "Getting real value from a paper instead of just finishing it.",
+              "url": "past-papers/how-to-use/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-papers/grade-6",
+      "title": "Grade 6 Papers",
+      "metaTitle": "Grade 6 English Past Papers and Term Tests",
+      "description": "16 Grade 6 English term test papers from provincial departments, zonal offices and schools, newest first, with what to revise before you sit one.",
+      "keywords": "grade 6 english papers, grade 6 term test paper, grade 6 english past paper sri lanka, term test papers, provincial papers",
+      "kicker": "Past Papers",
+      "kind": "page",
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Grade 6 English term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
+        "buttons": [
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "What this collection actually contains",
+          "text": [
+            "**16 papers,** from 2018, 2019, 2022, 2024 and 2025: ten from provincial departments and five from zonal offices. By term, that is three first-term, seven second-term and six third-term papers, and there are also one marking scheme and one revision paper.",
+            "**The files are not stored on this website.** Each paper opens in Google Drive. *View the paper* reads it in your browser; *Download PDF* saves it. Nothing is copied onto this site.",
+            "**More papers are still being checked.** A paper is added only after somebody has opened the file and confirmed what is in it, so this list grows slowly and will keep growing."
+          ]
+        },
+        {
+          "type": "paperLibrary",
+          "heading": "Grade 6 papers",
+          "fixed": {
+            "grade": "6"
+          },
+          "chooser": false,
+          "sectionLabel": "Grade 6",
+          "sectionNote": "Every Grade 6 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "prose",
+          "heading": "Using a Grade 6 paper well",
+          "level": "h2",
+          "text": [
+            "Grade 6 is the year English becomes a subject with a formal paper for most children, and the first term tests are often the first English examination they have sat."
+          ],
+          "bullets": [
+            "**Use the term, not just the grade.** A third-term paper in February will ask about a year's work that has not happened yet. Match the paper to where the class actually is.",
+            "**Expect the first paper to be a shock.** Children who can speak and read English often lose marks on instructions - *underline*, *match*, *fill in the blanks*, *write in full sentences* - rather than on the English itself. Teach the instructions once, explicitly, and much of that loss disappears.",
+            "**Do one section at a time.** A whole paper in one sitting is too long for most eleven-year-olds and teaches them that English examinations are exhausting.",
+            "**Mark it together, aloud.** At this grade the marking is the lesson. A child who hears why an answer was wrong learns more than one who sees a number at the top of the page."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Who set these papers",
+          "text": [
+            "These papers were set by **provincial departments of education, zonal and divisional offices, and schools**. The body printed on each paper is recorded on its card. **RCF English did not create any of them** and does not claim to.",
+            "Papers produced by private institutes, academies, tuition classes and publishers are deliberately **not** listed. Read the [Copyright and Resource Policy](copyright-policy/)."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Prepare before you practise",
+          "variant": "tint",
+          "items": [
+            {
+              "title": "Grade 6 lesson plans",
+              "text": "Eleven PPP plans tied to the Pupil's Book units.",
+              "url": "teacher-resources/ppp-lesson-plans/grade-6/"
+            },
+            {
+              "title": "Worksheets by grade",
+              "text": "Printable practice for the same topics.",
+              "url": "teacher-resources/worksheets-by-grade/"
+            },
+            {
+              "title": "Competency levels",
+              "text": "What Grade 6 is expected to cover this year.",
+              "url": "teacher-resources/competency-levels/"
             },
             {
               "title": "How to use past papers",

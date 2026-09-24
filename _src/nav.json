@@ -1,9 +1,10 @@
 {
   "_comment": "RCF English main navigation. 'url' values are folder paths relative to the site root. The build script checks that every link here points at a page that really exists, so the menu can never contain a broken link.",
-
   "items": [
-    { "label": "Home", "url": "" },
-
+    {
+      "label": "Home",
+      "url": ""
+    },
     {
       "label": "Global English",
       "url": "global-english/",
@@ -13,53 +14,166 @@
       "headerStyle": "global",
       "summary": "English qualifications taken outside Sri Lanka: GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, and the Cambridge English Qualifications.",
       "groups": [
-        { "title": "Start here", "links": [
-          { "label": "Global English Overview", "url": "global-english/" }
-        ]},
-        { "title": "GCSE (United Kingdom)", "links": [
-          { "label": "GCSE English", "url": "global-english/gcse/" },
-          { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
-          { "label": "AQA Paper 1", "url": "global-english/gcse/aqa/paper-1/" },
-          { "label": "AQA Paper 2", "url": "global-english/gcse/aqa/paper-2/" },
-          { "label": "AQA Past Papers and Model Papers", "url": "global-english/gcse/aqa/papers/" },
-          { "label": "AQA Revision Strategies", "url": "global-english/gcse/aqa/revision/" },
-          { "label": "Edexcel English Language (1EN0)", "url": "global-english/gcse/edexcel/" },
-          { "label": "Edexcel Paper 1", "url": "global-english/gcse/edexcel/paper-1/" },
-          { "label": "Edexcel Paper 2", "url": "global-english/gcse/edexcel/paper-2/" },
-          { "label": "Edexcel Past Papers and Model Papers", "url": "global-english/gcse/edexcel/papers/" },
-          { "label": "Edexcel Model Paper 1", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/" },
-          { "label": "Edexcel Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/" },
-          { "label": "OCR English Language (J351)", "url": "global-english/gcse/ocr/" },
-          { "label": "OCR Component 01", "url": "global-english/gcse/ocr/component-1/" },
-          { "label": "OCR Component 02", "url": "global-english/gcse/ocr/component-2/" },
-          { "label": "OCR Past Papers", "url": "global-english/gcse/ocr/papers/" },
-          { "label": "Eduqas English Language (C700QS)", "url": "global-english/gcse/eduqas/" },
-          { "label": "Eduqas Component 1", "url": "global-english/gcse/eduqas/component-1/" },
-          { "label": "Eduqas Component 2", "url": "global-english/gcse/eduqas/component-2/" },
-          { "label": "Eduqas Past Papers", "url": "global-english/gcse/eduqas/papers/" }
-        ]},
-        { "title": "International GCSE", "links": [
-          { "label": "IGCSE English", "url": "global-english/igcse/" },
-          { "label": "Cambridge IGCSE English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
-          { "label": "IGCSE ESL Reading and Writing Paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/" },
-          { "label": "IGCSE ESL Writing Formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/" },
-          { "label": "IGCSE ESL Model Answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/" },
-          { "label": "IGCSE ESL Speaking Test", "url": "global-english/igcse/english-as-a-second-language/speaking-test/" }
-        ]},
-        { "title": "Cambridge English", "links": [
-          { "label": "Cambridge English Qualifications", "url": "global-english/cambridge-english/" }
-        ]},
-        { "title": "Edexcel graded curriculum", "links": [
-          { "label": "iPrimary and iLowerSecondary", "url": "global-english/edexcel-international-curriculum/" },
-          { "label": "iPrimary English (Years 1-6)", "url": "global-english/edexcel-international-curriculum/iprimary/" },
-          { "label": "iLowerSecondary English (Years 7-9)", "url": "global-english/edexcel-international-curriculum/ilowersecondary/" }
-        ]},
-        { "title": "Skills", "links": [
-          { "label": "English Skills", "url": "global-english/skills/" }
-        ]}
+        {
+          "title": "Start here",
+          "links": [
+            {
+              "label": "Global English Overview",
+              "url": "global-english/"
+            }
+          ]
+        },
+        {
+          "title": "GCSE (United Kingdom)",
+          "links": [
+            {
+              "label": "GCSE English",
+              "url": "global-english/gcse/"
+            },
+            {
+              "label": "AQA English Language",
+              "url": "global-english/gcse/aqa/"
+            },
+            {
+              "label": "AQA Paper 1",
+              "url": "global-english/gcse/aqa/paper-1/"
+            },
+            {
+              "label": "AQA Paper 2",
+              "url": "global-english/gcse/aqa/paper-2/"
+            },
+            {
+              "label": "AQA Past Papers and Model Papers",
+              "url": "global-english/gcse/aqa/papers/"
+            },
+            {
+              "label": "AQA Revision Strategies",
+              "url": "global-english/gcse/aqa/revision/"
+            },
+            {
+              "label": "Edexcel English Language (1EN0)",
+              "url": "global-english/gcse/edexcel/"
+            },
+            {
+              "label": "Edexcel Paper 1",
+              "url": "global-english/gcse/edexcel/paper-1/"
+            },
+            {
+              "label": "Edexcel Paper 2",
+              "url": "global-english/gcse/edexcel/paper-2/"
+            },
+            {
+              "label": "Edexcel Past Papers and Model Papers",
+              "url": "global-english/gcse/edexcel/papers/"
+            },
+            {
+              "label": "Edexcel Model Paper 1",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/"
+            },
+            {
+              "label": "Edexcel Model Paper 2",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/"
+            },
+            {
+              "label": "OCR English Language (J351)",
+              "url": "global-english/gcse/ocr/"
+            },
+            {
+              "label": "OCR Component 01",
+              "url": "global-english/gcse/ocr/component-1/"
+            },
+            {
+              "label": "OCR Component 02",
+              "url": "global-english/gcse/ocr/component-2/"
+            },
+            {
+              "label": "OCR Past Papers",
+              "url": "global-english/gcse/ocr/papers/"
+            },
+            {
+              "label": "Eduqas English Language (C700QS)",
+              "url": "global-english/gcse/eduqas/"
+            },
+            {
+              "label": "Eduqas Component 1",
+              "url": "global-english/gcse/eduqas/component-1/"
+            },
+            {
+              "label": "Eduqas Component 2",
+              "url": "global-english/gcse/eduqas/component-2/"
+            },
+            {
+              "label": "Eduqas Past Papers",
+              "url": "global-english/gcse/eduqas/papers/"
+            }
+          ]
+        },
+        {
+          "title": "International GCSE",
+          "links": [
+            {
+              "label": "IGCSE English",
+              "url": "global-english/igcse/"
+            },
+            {
+              "label": "Cambridge IGCSE English as a Second Language",
+              "url": "global-english/igcse/english-as-a-second-language/"
+            },
+            {
+              "label": "IGCSE ESL Reading and Writing Paper",
+              "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/"
+            },
+            {
+              "label": "IGCSE ESL Writing Formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/"
+            },
+            {
+              "label": "IGCSE ESL Model Answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/"
+            },
+            {
+              "label": "IGCSE ESL Speaking Test",
+              "url": "global-english/igcse/english-as-a-second-language/speaking-test/"
+            }
+          ]
+        },
+        {
+          "title": "Cambridge English",
+          "links": [
+            {
+              "label": "Cambridge English Qualifications",
+              "url": "global-english/cambridge-english/"
+            }
+          ]
+        },
+        {
+          "title": "Edexcel graded curriculum",
+          "links": [
+            {
+              "label": "iPrimary and iLowerSecondary",
+              "url": "global-english/edexcel-international-curriculum/"
+            },
+            {
+              "label": "iPrimary English (Years 1-6)",
+              "url": "global-english/edexcel-international-curriculum/iprimary/"
+            },
+            {
+              "label": "iLowerSecondary English (Years 7-9)",
+              "url": "global-english/edexcel-international-curriculum/ilowersecondary/"
+            }
+          ]
+        },
+        {
+          "title": "Skills",
+          "links": [
+            {
+              "label": "English Skills",
+              "url": "global-english/skills/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "RCF Publications",
       "url": "rcf-publications/",
@@ -68,174 +182,505 @@
       "_headerOnly": "On a desktop this lives as its own button in the header bar, so it is left out of the row of sections below to keep those on one line. On a telephone the header button is hidden, so it does appear in the slide-out menu. Either way there is exactly one route to it.",
       "headerOnly": true
     },
-
     {
       "label": "Primary English",
       "url": "primary-english/",
       "summary": "English for younger children: the alphabet, first words, poems, short reading passages, games, and Grade 5 Scholarship language practice.",
       "groups": [
-        { "title": "By grade", "links": [
-          { "label": "Overview", "url": "primary-english/" },
-          { "label": "Grade 1", "url": "primary-english/grade-1/" },
-          { "label": "Grade 3", "url": "primary-english/grade-3/" },
-          { "label": "Grade 4", "url": "primary-english/grade-4/" },
-          { "label": "Grade 5", "url": "primary-english/grade-5/" }
-        ]},
-        { "title": "By activity", "links": [
-          { "label": "Alphabet Practice", "url": "primary-english/alphabet/" },
-          { "label": "Watch and Write the Alphabet", "url": "primary-english/alphabet/watch-and-write/" },
-          { "label": "Songs for Grade 2", "url": "primary-english/songs/" }
-        ]},
-        { "title": "Practice and play", "links": [
-          { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-          { "label": "Free English Games for Kids", "url": "english-games/" },
-          { "label": "Primary Activities", "url": "primary-english/activities/" },
-          { "label": "Poems", "url": "primary-english/poems/" },
-          { "label": "Short Reading Comprehensions", "url": "primary-english/reading/" },
-          { "label": "Interactive Activities and Games", "url": "primary-english/games/" }
-        ]},
-        { "title": "Examinations", "links": [
-          { "label": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/" }
-        ]}
+        {
+          "title": "By grade",
+          "links": [
+            {
+              "label": "Overview",
+              "url": "primary-english/"
+            },
+            {
+              "label": "Grade 1",
+              "url": "primary-english/grade-1/"
+            },
+            {
+              "label": "Grade 3",
+              "url": "primary-english/grade-3/"
+            },
+            {
+              "label": "Grade 4",
+              "url": "primary-english/grade-4/"
+            },
+            {
+              "label": "Grade 5",
+              "url": "primary-english/grade-5/"
+            }
+          ]
+        },
+        {
+          "title": "By activity",
+          "links": [
+            {
+              "label": "Alphabet Practice",
+              "url": "primary-english/alphabet/"
+            },
+            {
+              "label": "Watch and Write the Alphabet",
+              "url": "primary-english/alphabet/watch-and-write/"
+            },
+            {
+              "label": "Songs for Grade 2",
+              "url": "primary-english/songs/"
+            }
+          ]
+        },
+        {
+          "title": "Practice and play",
+          "links": [
+            {
+              "label": "Primary Game Zone",
+              "url": "primary-english/game-zone/"
+            },
+            {
+              "label": "Free English Games for Kids",
+              "url": "english-games/"
+            },
+            {
+              "label": "Primary Activities",
+              "url": "primary-english/activities/"
+            },
+            {
+              "label": "Poems",
+              "url": "primary-english/poems/"
+            },
+            {
+              "label": "Short Reading Comprehensions",
+              "url": "primary-english/reading/"
+            },
+            {
+              "label": "Interactive Activities and Games",
+              "url": "primary-english/games/"
+            }
+          ]
+        },
+        {
+          "title": "Examinations",
+          "links": [
+            {
+              "label": "Grade 5 Scholarship",
+              "url": "primary-english/grade-5-scholarship/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "O/L English",
       "url": "ol-english/",
       "summary": "Grammar, vocabulary, reading and step-by-step guided writing for the Ordinary Level English examination.",
       "groups": [
-        { "title": "Start here", "links": [
-          { "label": "Overview", "url": "ol-english/" },
-          { "label": "Syllabus and Examination Structure", "url": "ol-english/syllabus/" },
-          { "label": "Paper I", "url": "ol-english/paper-i/" },
-          { "label": "Paper II", "url": "ol-english/paper-ii/" }
-        ]},
-        { "title": "Language skills", "links": [
-          { "label": "Grammar", "url": "ol-english/grammar/" },
-          { "label": "Vocabulary", "url": "ol-english/vocabulary/" },
-          { "label": "Reading Comprehension", "url": "ol-english/reading-comprehension/" }
-        ]},
-        { "title": "Writing", "links": [
-          { "label": "Guided Writing", "url": "ol-english/guided-writing/" },
-          { "label": "Emails", "url": "ol-english/emails/" },
-          { "label": "Notices", "url": "ol-english/notices/" },
-          { "label": "Letters", "url": "ol-english/letters/" },
-          { "label": "Paragraph Writing", "url": "ol-english/paragraph-writing/" },
-          { "label": "Essay Writing", "url": "ol-english/essay-writing/" },
-          { "label": "Essay Builder (practise online)", "url": "essay-writing-exercises/?level=O%2FL" },
-          { "label": "Picture Description", "url": "ol-english/picture-description/" },
-          { "label": "Dialogue and Speech Writing", "url": "ol-english/dialogue-and-speech-writing/" }
-        ]},
-        { "title": "Practice and revision", "links": [
-          { "label": "Model Questions", "url": "ol-english/model-questions/" },
-          { "label": "Model Answers", "url": "ol-english/model-answers/" },
-          { "label": "Examination Techniques", "url": "ol-english/examination-techniques/" },
-          { "label": "Common Student Mistakes", "url": "ol-english/common-mistakes/" },
-          { "label": "Interactive Revision", "url": "ol-english/interactive-revision/" },
-          { "label": "O/L English Past Papers", "url": "past-papers/ol-english/" }
-        ]}
+        {
+          "title": "Start here",
+          "links": [
+            {
+              "label": "Overview",
+              "url": "ol-english/"
+            },
+            {
+              "label": "Syllabus and Examination Structure",
+              "url": "ol-english/syllabus/"
+            },
+            {
+              "label": "Paper I",
+              "url": "ol-english/paper-i/"
+            },
+            {
+              "label": "Paper II",
+              "url": "ol-english/paper-ii/"
+            }
+          ]
+        },
+        {
+          "title": "Language skills",
+          "links": [
+            {
+              "label": "Grammar",
+              "url": "ol-english/grammar/"
+            },
+            {
+              "label": "Vocabulary",
+              "url": "ol-english/vocabulary/"
+            },
+            {
+              "label": "Reading Comprehension",
+              "url": "ol-english/reading-comprehension/"
+            }
+          ]
+        },
+        {
+          "title": "Writing",
+          "links": [
+            {
+              "label": "Guided Writing",
+              "url": "ol-english/guided-writing/"
+            },
+            {
+              "label": "Emails",
+              "url": "ol-english/emails/"
+            },
+            {
+              "label": "Notices",
+              "url": "ol-english/notices/"
+            },
+            {
+              "label": "Letters",
+              "url": "ol-english/letters/"
+            },
+            {
+              "label": "Paragraph Writing",
+              "url": "ol-english/paragraph-writing/"
+            },
+            {
+              "label": "Essay Writing",
+              "url": "ol-english/essay-writing/"
+            },
+            {
+              "label": "Essay Builder (practise online)",
+              "url": "essay-writing-exercises/?level=O%2FL"
+            },
+            {
+              "label": "Picture Description",
+              "url": "ol-english/picture-description/"
+            },
+            {
+              "label": "Dialogue and Speech Writing",
+              "url": "ol-english/dialogue-and-speech-writing/"
+            }
+          ]
+        },
+        {
+          "title": "Practice and revision",
+          "links": [
+            {
+              "label": "Model Questions",
+              "url": "ol-english/model-questions/"
+            },
+            {
+              "label": "Model Answers",
+              "url": "ol-english/model-answers/"
+            },
+            {
+              "label": "Examination Techniques",
+              "url": "ol-english/examination-techniques/"
+            },
+            {
+              "label": "Common Student Mistakes",
+              "url": "ol-english/common-mistakes/"
+            },
+            {
+              "label": "Interactive Revision",
+              "url": "ol-english/interactive-revision/"
+            },
+            {
+              "label": "O/L English Past Papers",
+              "url": "past-papers/ol-english/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "O/L Literature",
       "url": "ol-literature/",
       "summary": "A consistent way to study every poem, short story, play and novel, and a clear method for building full answers.",
       "groups": [
-        { "title": "Start here", "links": [
-          { "label": "Overview", "url": "ol-literature/" },
-          { "label": "Syllabus", "url": "ol-literature/syllabus/" },
-          { "label": "Prescribed Texts", "url": "ol-literature/texts/" }
-        ]},
-        { "title": "Genres", "links": [
-          { "label": "Poetry", "url": "ol-literature/poetry/" },
-          { "label": "Short Stories", "url": "ol-literature/short-stories/" },
-          { "label": "Drama", "url": "ol-literature/drama/" },
-          { "label": "Novels", "url": "ol-literature/novels/" }
-        ]},
-        { "title": "Answering questions", "links": [
-          { "label": "Context Questions", "url": "ol-literature/context-questions/" },
-          { "label": "Essay Questions", "url": "ol-literature/essay-questions/" },
-          { "label": "Model Answers", "url": "ol-literature/model-answers/" },
-          { "label": "How to Develop an Answer", "url": "ol-literature/developing-an-answer/" },
-          { "label": "How Teachers Can Mark Answers", "url": "ol-literature/marking-answers/" }
-        ]},
-        { "title": "Study tools", "links": [
-          { "label": "Themes", "url": "ol-literature/themes/" },
-          { "label": "Characters", "url": "ol-literature/characters/" },
-          { "label": "Literary Techniques", "url": "ol-literature/literary-techniques/" },
-          { "label": "Important Quotations", "url": "ol-literature/quotations/" },
-          { "label": "Common Student Mistakes", "url": "ol-literature/common-mistakes/" },
-          { "label": "Revision Activities", "url": "ol-literature/revision-activities/" },
-          { "label": "O/L Literature Past Papers", "url": "past-papers/ol-literature/" }
-        ]}
+        {
+          "title": "Start here",
+          "links": [
+            {
+              "label": "Overview",
+              "url": "ol-literature/"
+            },
+            {
+              "label": "Syllabus",
+              "url": "ol-literature/syllabus/"
+            },
+            {
+              "label": "Prescribed Texts",
+              "url": "ol-literature/texts/"
+            }
+          ]
+        },
+        {
+          "title": "Genres",
+          "links": [
+            {
+              "label": "Poetry",
+              "url": "ol-literature/poetry/"
+            },
+            {
+              "label": "Short Stories",
+              "url": "ol-literature/short-stories/"
+            },
+            {
+              "label": "Drama",
+              "url": "ol-literature/drama/"
+            },
+            {
+              "label": "Novels",
+              "url": "ol-literature/novels/"
+            }
+          ]
+        },
+        {
+          "title": "Answering questions",
+          "links": [
+            {
+              "label": "Context Questions",
+              "url": "ol-literature/context-questions/"
+            },
+            {
+              "label": "Essay Questions",
+              "url": "ol-literature/essay-questions/"
+            },
+            {
+              "label": "Model Answers",
+              "url": "ol-literature/model-answers/"
+            },
+            {
+              "label": "How to Develop an Answer",
+              "url": "ol-literature/developing-an-answer/"
+            },
+            {
+              "label": "How Teachers Can Mark Answers",
+              "url": "ol-literature/marking-answers/"
+            }
+          ]
+        },
+        {
+          "title": "Study tools",
+          "links": [
+            {
+              "label": "Themes",
+              "url": "ol-literature/themes/"
+            },
+            {
+              "label": "Characters",
+              "url": "ol-literature/characters/"
+            },
+            {
+              "label": "Literary Techniques",
+              "url": "ol-literature/literary-techniques/"
+            },
+            {
+              "label": "Important Quotations",
+              "url": "ol-literature/quotations/"
+            },
+            {
+              "label": "Common Student Mistakes",
+              "url": "ol-literature/common-mistakes/"
+            },
+            {
+              "label": "Revision Activities",
+              "url": "ol-literature/revision-activities/"
+            },
+            {
+              "label": "O/L Literature Past Papers",
+              "url": "past-papers/ol-literature/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "General English",
       "url": "general-english/",
       "summary": "G.C.E. A/L General English, Subject 13, taken in Grades 12 and 13 alongside your main subjects.",
       "groups": [
-        { "title": "Subject 13", "links": [
-          { "label": "Overview, papers and marking schemes", "url": "general-english/" }
-        ]},
-        { "title": "Not this subject", "links": [
-          { "label": "A/L Literature (Subject 73)", "url": "al-literature/" },
-          { "label": "Practical English", "url": "practical-english/" }
-        ]}
+        {
+          "title": "Subject 13",
+          "links": [
+            {
+              "label": "Overview, papers and marking schemes",
+              "url": "general-english/"
+            }
+          ]
+        },
+        {
+          "title": "Not this subject",
+          "links": [
+            {
+              "label": "A/L Literature (Subject 73)",
+              "url": "al-literature/"
+            },
+            {
+              "label": "Practical English",
+              "url": "practical-english/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "Practical English",
       "url": "practical-english/",
       "summary": "Everyday, spoken and workplace English for adults and independent learners. Not an examination subject.",
       "groups": [
-        { "title": "Foundations", "links": [
-          { "label": "Overview", "url": "practical-english/" },
-          { "label": "Practical Grammar", "url": "practical-english/practical-grammar/" },
-          { "label": "Vocabulary", "url": "practical-english/vocabulary/" },
-          { "label": "Pronunciation", "url": "practical-english/pronunciation/" },
-          { "label": "Common Mistakes", "url": "practical-english/common-mistakes/" }
-        ]},
-        { "title": "The four skills", "links": [
-          { "label": "Reading", "url": "practical-english/reading/" },
-          { "label": "Writing", "url": "practical-english/writing/" },
-          { "label": "Listening", "url": "practical-english/listening/" },
-          { "label": "Listening Laboratory", "url": "listening-lab/" },
-          { "label": "Writing Practice", "url": "writing-practice/" },
-          { "label": "Essay Writing Exercises", "url": "essay-writing-exercises/" },
-          { "label": "Speaking Practice", "url": "speaking-practice/" },
-          { "label": "Conversation Partner", "url": "practical-english/conversation-partner/" },
-          { "label": "Speaking", "url": "practical-english/speaking/" }
-        ]},
-        { "title": "English in use", "links": [
-          { "label": "Everyday English", "url": "practical-english/everyday-english/" },
-          { "label": "Spoken English", "url": "practical-english/spoken-english/" },
-          { "label": "Practical Conversations", "url": "practical-english/practical-conversations/" },
-          { "label": "Workplace English", "url": "practical-english/workplace-english/" },
-          { "label": "English for Adults", "url": "practical-english/english-for-adults/" }
-        ]},
-        { "title": "Practice", "links": [
-          { "label": "Self-Assessment", "url": "practical-english/self-assessment/" },
-          { "label": "Interactive Practice", "url": "practical-english/interactive-practice/" },
-          { "label": "Cambridge Exams (TKT, YLE, FCE)", "url": "practical-english/cambridge-exams/" },
-          { "label": "IELTS", "url": "practical-english/ielts/" },
-          { "label": "IELTS Test Types", "url": "practical-english/ielts/test-types/" },
-          { "label": "IELTS Listening", "url": "practical-english/ielts/listening/" },
-          { "label": "IELTS Reading", "url": "practical-english/ielts/reading/" },
-          { "label": "IELTS Writing", "url": "practical-english/ielts/writing/" },
-          { "label": "IELTS Graphs and Charts", "url": "practical-english/ielts/graphs/" },
-          { "label": "IELTS Speaking", "url": "practical-english/ielts/speaking/" },
-          { "label": "IELTS Mock Speaking Test", "url": "practical-english/ielts/mock-speaking-test/" },
-          { "label": "IELTS Academic Practice Test", "url": "practical-english/ielts/practice-test-1/" },
-          { "label": "IELTS Practice Test Answers", "url": "practical-english/ielts/practice-test-1/answers/" },
-          { "label": "IELTS General Training Practice Test", "url": "practical-english/ielts/general-training-test-1/" },
-          { "label": "IELTS Quick Practice", "url": "practical-english/ielts/quick-practice/" },
-          { "label": "10 IELTS Model Essays", "url": "practical-english/ielts/model-essays/" }
-        ]}
+        {
+          "title": "Foundations",
+          "links": [
+            {
+              "label": "Overview",
+              "url": "practical-english/"
+            },
+            {
+              "label": "Practical Grammar",
+              "url": "practical-english/practical-grammar/"
+            },
+            {
+              "label": "Vocabulary",
+              "url": "practical-english/vocabulary/"
+            },
+            {
+              "label": "Pronunciation",
+              "url": "practical-english/pronunciation/"
+            },
+            {
+              "label": "Common Mistakes",
+              "url": "practical-english/common-mistakes/"
+            }
+          ]
+        },
+        {
+          "title": "The four skills",
+          "links": [
+            {
+              "label": "Reading",
+              "url": "practical-english/reading/"
+            },
+            {
+              "label": "Writing",
+              "url": "practical-english/writing/"
+            },
+            {
+              "label": "Listening",
+              "url": "practical-english/listening/"
+            },
+            {
+              "label": "Listening Laboratory",
+              "url": "listening-lab/"
+            },
+            {
+              "label": "Writing Practice",
+              "url": "writing-practice/"
+            },
+            {
+              "label": "Essay Writing Exercises",
+              "url": "essay-writing-exercises/"
+            },
+            {
+              "label": "Speaking Practice",
+              "url": "speaking-practice/"
+            },
+            {
+              "label": "Conversation Partner",
+              "url": "practical-english/conversation-partner/"
+            },
+            {
+              "label": "Speaking",
+              "url": "practical-english/speaking/"
+            }
+          ]
+        },
+        {
+          "title": "English in use",
+          "links": [
+            {
+              "label": "Everyday English",
+              "url": "practical-english/everyday-english/"
+            },
+            {
+              "label": "Spoken English",
+              "url": "practical-english/spoken-english/"
+            },
+            {
+              "label": "Practical Conversations",
+              "url": "practical-english/practical-conversations/"
+            },
+            {
+              "label": "Workplace English",
+              "url": "practical-english/workplace-english/"
+            },
+            {
+              "label": "English for Adults",
+              "url": "practical-english/english-for-adults/"
+            }
+          ]
+        },
+        {
+          "title": "Practice",
+          "links": [
+            {
+              "label": "Self-Assessment",
+              "url": "practical-english/self-assessment/"
+            },
+            {
+              "label": "Interactive Practice",
+              "url": "practical-english/interactive-practice/"
+            },
+            {
+              "label": "Cambridge Exams (TKT, YLE, FCE)",
+              "url": "practical-english/cambridge-exams/"
+            },
+            {
+              "label": "IELTS",
+              "url": "practical-english/ielts/"
+            },
+            {
+              "label": "IELTS Test Types",
+              "url": "practical-english/ielts/test-types/"
+            },
+            {
+              "label": "IELTS Listening",
+              "url": "practical-english/ielts/listening/"
+            },
+            {
+              "label": "IELTS Reading",
+              "url": "practical-english/ielts/reading/"
+            },
+            {
+              "label": "IELTS Writing",
+              "url": "practical-english/ielts/writing/"
+            },
+            {
+              "label": "IELTS Graphs and Charts",
+              "url": "practical-english/ielts/graphs/"
+            },
+            {
+              "label": "IELTS Speaking",
+              "url": "practical-english/ielts/speaking/"
+            },
+            {
+              "label": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/"
+            },
+            {
+              "label": "IELTS Academic Practice Test",
+              "url": "practical-english/ielts/practice-test-1/"
+            },
+            {
+              "label": "IELTS Practice Test Answers",
+              "url": "practical-english/ielts/practice-test-1/answers/"
+            },
+            {
+              "label": "IELTS General Training Practice Test",
+              "url": "practical-english/ielts/general-training-test-1/"
+            },
+            {
+              "label": "IELTS Quick Practice",
+              "url": "practical-english/ielts/quick-practice/"
+            },
+            {
+              "label": "10 IELTS Model Essays",
+              "url": "practical-english/ielts/model-essays/"
+            }
+          ]
+        }
       ]
     },
     {
@@ -243,221 +688,714 @@
       "url": "al-literature/",
       "summary": "Advanced Level English Literature: close reading, critical appreciation and well-organised essay answers.",
       "groups": [
-        { "title": "Start here", "links": [
-          { "label": "Overview", "url": "al-literature/" },
-          { "label": "Syllabus", "url": "al-literature/syllabus/" },
-          { "label": "Prescribed Texts", "url": "al-literature/prescribed-texts/" }
-        ]},
-        { "title": "Genres", "links": [
-          { "label": "Poetry", "url": "al-literature/poetry/" },
-          { "label": "Drama", "url": "al-literature/drama/" },
-          { "label": "Fiction", "url": "al-literature/fiction/" },
-          { "label": "Prose", "url": "al-literature/prose/" }
-        ]},
-        { "title": "Writing answers", "links": [
-          { "label": "Context Questions", "url": "al-literature/context-questions/" },
-          { "label": "Essay Questions", "url": "al-literature/essay-questions/" },
-          { "label": "Critical Appreciation", "url": "al-literature/critical-appreciation/" },
-          { "label": "Model Answers", "url": "al-literature/model-answers/" },
-          { "label": "Answer Development", "url": "al-literature/answer-development/" }
-        ]},
-        { "title": "Study and revision", "links": [
-          { "label": "Literary Theory", "url": "al-literature/literary-theory/" },
-          { "label": "Literary Techniques", "url": "al-literature/literary-techniques/" },
-          { "label": "Examination Guidance", "url": "al-literature/examination-guidance/" },
-          { "label": "Common Student Mistakes", "url": "al-literature/common-mistakes/" },
-          { "label": "A/L Literature Past Papers", "url": "past-papers/al-literature/" }
-        ]}
+        {
+          "title": "Start here",
+          "links": [
+            {
+              "label": "Overview",
+              "url": "al-literature/"
+            },
+            {
+              "label": "Syllabus",
+              "url": "al-literature/syllabus/"
+            },
+            {
+              "label": "Prescribed Texts",
+              "url": "al-literature/prescribed-texts/"
+            }
+          ]
+        },
+        {
+          "title": "Genres",
+          "links": [
+            {
+              "label": "Poetry",
+              "url": "al-literature/poetry/"
+            },
+            {
+              "label": "Drama",
+              "url": "al-literature/drama/"
+            },
+            {
+              "label": "Fiction",
+              "url": "al-literature/fiction/"
+            },
+            {
+              "label": "Prose",
+              "url": "al-literature/prose/"
+            }
+          ]
+        },
+        {
+          "title": "Writing answers",
+          "links": [
+            {
+              "label": "Context Questions",
+              "url": "al-literature/context-questions/"
+            },
+            {
+              "label": "Essay Questions",
+              "url": "al-literature/essay-questions/"
+            },
+            {
+              "label": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/"
+            },
+            {
+              "label": "Model Answers",
+              "url": "al-literature/model-answers/"
+            },
+            {
+              "label": "Answer Development",
+              "url": "al-literature/answer-development/"
+            }
+          ]
+        },
+        {
+          "title": "Study and revision",
+          "links": [
+            {
+              "label": "Literary Theory",
+              "url": "al-literature/literary-theory/"
+            },
+            {
+              "label": "Literary Techniques",
+              "url": "al-literature/literary-techniques/"
+            },
+            {
+              "label": "Examination Guidance",
+              "url": "al-literature/examination-guidance/"
+            },
+            {
+              "label": "Common Student Mistakes",
+              "url": "al-literature/common-mistakes/"
+            },
+            {
+              "label": "A/L Literature Past Papers",
+              "url": "past-papers/al-literature/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "Past Papers",
       "url": "past-papers/",
       "summary": "A searchable centre for past papers, model papers, marking schemes and revision papers.",
       "groups": [
-        { "title": "By subject", "links": [
-          { "label": "Grade 6‑11 Resources", "url": "grades/" },
-          { "label": "All Papers and Filters", "url": "past-papers/" },
-          { "label": "Examination Centre (O/L and A/L)", "url": "exam-centre/" },
-          { "label": "Grade 10 Papers", "url": "past-papers/grade-10/" },
-          { "label": "O/L English Papers", "url": "past-papers/ol-english/" },
-          { "label": "O/L Literature Papers", "url": "past-papers/ol-literature/" },
-          { "label": "A/L Literature Papers", "url": "past-papers/al-literature/" }
-        ]},
-        { "title": "By paper type", "links": [
-          { "label": "Model Papers", "url": "past-papers/model-papers/" },
-          { "label": "School Term-Test Papers", "url": "past-papers/term-test-papers/" },
-          { "label": "Provincial Papers", "url": "past-papers/provincial-papers/" },
-          { "label": "Revision Papers", "url": "past-papers/revision-papers/" },
-          { "label": "Question Banks", "url": "past-papers/question-banks/" }
-        ]},
-        { "title": "Answers and guidance", "links": [
-          { "label": "Marking Schemes", "url": "past-papers/marking-schemes/" },
-          { "label": "Model Answers", "url": "past-papers/model-answers/" },
-          { "label": "Exam Timetables and Official Links", "url": "past-papers/examination-links/" },
-          { "label": "How to Use Past Papers", "url": "past-papers/how-to-use/" },
-          { "label": "Copyright and Resource Policy", "url": "copyright-policy/" }
-        ]}
+        {
+          "title": "By subject",
+          "links": [
+            {
+              "label": "Grade 6‑11 Resources",
+              "url": "grades/"
+            },
+            {
+              "label": "All Papers and Filters",
+              "url": "past-papers/"
+            },
+            {
+              "label": "Examination Centre (O/L and A/L)",
+              "url": "exam-centre/"
+            },
+            {
+              "label": "O/L English Papers",
+              "url": "past-papers/ol-english/"
+            },
+            {
+              "label": "O/L Literature Papers",
+              "url": "past-papers/ol-literature/"
+            },
+            {
+              "label": "A/L Literature Papers",
+              "url": "past-papers/al-literature/"
+            }
+          ]
+        },
+        {
+          "title": "By grade",
+          "links": [
+            {
+              "label": "Grade 6 Papers",
+              "url": "past-papers/grade-6/",
+              "note": "16 papers"
+            },
+            {
+              "label": "Grade 7 Papers",
+              "url": "past-papers/grade-7/",
+              "note": "17 papers"
+            },
+            {
+              "label": "Grade 8 Papers",
+              "url": "past-papers/grade-8/",
+              "note": "18 papers"
+            },
+            {
+              "label": "Grade 9 Papers",
+              "url": "past-papers/grade-9/",
+              "note": "16 papers"
+            },
+            {
+              "label": "Grade 10 Papers",
+              "url": "past-papers/grade-10/",
+              "note": "44 papers"
+            },
+            {
+              "label": "Grade 11 Papers",
+              "url": "past-papers/grade-11/",
+              "note": "21 papers"
+            }
+          ]
+        },
+        {
+          "title": "By paper type",
+          "links": [
+            {
+              "label": "Model Papers",
+              "url": "past-papers/model-papers/"
+            },
+            {
+              "label": "School Term-Test Papers",
+              "url": "past-papers/term-test-papers/"
+            },
+            {
+              "label": "Provincial Papers",
+              "url": "past-papers/provincial-papers/"
+            },
+            {
+              "label": "Revision Papers",
+              "url": "past-papers/revision-papers/"
+            },
+            {
+              "label": "Question Banks",
+              "url": "past-papers/question-banks/"
+            }
+          ]
+        },
+        {
+          "title": "Answers and guidance",
+          "links": [
+            {
+              "label": "Marking Schemes",
+              "url": "past-papers/marking-schemes/"
+            },
+            {
+              "label": "Model Answers",
+              "url": "past-papers/model-answers/"
+            },
+            {
+              "label": "Exam Timetables and Official Links",
+              "url": "past-papers/examination-links/"
+            },
+            {
+              "label": "How to Use Past Papers",
+              "url": "past-papers/how-to-use/"
+            },
+            {
+              "label": "Copyright and Resource Policy",
+              "url": "copyright-policy/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "Teacher Resources",
       "url": "teacher-resources/",
       "summary": "Lesson plans, worksheets, marking guides and practical support for classroom and tuition teachers.",
       "groups": [
-        { "title": "Planning and teaching", "links": [
-          { "label": "Overview", "url": "teacher-resources/" },
-          { "label": "Classroom Management", "url": "teacher-resources/classroom-management/" },
-          { "label": "Lesson Plan Guidance", "url": "teacher-resources/lesson-plans/" },
-          { "label": "Sample PPP Lesson Plans", "url": "teacher-resources/ppp-lesson-plans/" },
-          { "label": "Annual and Term Plan Templates", "url": "teacher-resources/annual-term-plan-templates/" },
-          { "label": "Daily and Weekly Notes Templates", "url": "teacher-resources/daily-weekly-notes-templates/" },
-          { "label": "Pupil's Books and Teachers' Guides", "url": "teacher-resources/textbooks-and-teacher-guides/" },
-          { "label": "Competency Levels by Grade", "url": "teacher-resources/competency-levels/" },
-          { "label": "Sample SBA Tools", "url": "teacher-resources/sba-samples/" },
-          { "label": "Sample Project Proposals", "url": "teacher-resources/school-project-proposals/" },
-          { "label": "Worksheets", "url": "teacher-resources/worksheets/" },
-          { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
-          { "label": "English Medium: Maths", "url": "english-medium/mathematics/" },
-          { "label": "English Medium: Science", "url": "english-medium/science/" },
-          { "label": "Teaching Guides", "url": "teacher-resources/teaching-guides/" },
-          { "label": "Classroom Activities", "url": "teacher-resources/classroom-activities/" },
-          { "label": "Flashcards and Games", "url": "teacher-resources/flashcards-and-games/" },
-          { "label": "Worksheet and Test Generator", "url": "teacher-resources/worksheet-generator/" }
-        ]},
-        { "title": "Supporting every learner", "links": [
-          { "label": "Remedial English", "url": "teacher-resources/remedial-english/" },
-          { "label": "Slow-Learner Support", "url": "teacher-resources/slow-learner-support/" },
-          { "label": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/" },
-          { "label": "Guided Writing", "url": "teacher-resources/guided-writing/" }
-        ]},
-        { "title": "Literature and assessment", "links": [
-          { "label": "Literature Teaching", "url": "teacher-resources/literature-teaching/" },
-          { "label": "Assessment", "url": "teacher-resources/assessment/" },
-          { "label": "Marking Guides", "url": "teacher-resources/marking-guides/" },
-          { "label": "Assessment Rubrics", "url": "teacher-resources/rubrics/" },
-          { "label": "Term-Test Preparation Plans", "url": "teacher-resources/term-test-plans/" },
-          { "label": "Answer Development", "url": "teacher-resources/answer-development/" },
-          { "label": "Revision Strategies", "url": "teacher-resources/revision-strategies/" },
-          { "label": "Professional Development and TKT", "url": "teacher-resources/professional-development/" }
-        ]},
-        { "title": "More for teachers", "links": [
-          { "label": "Mutual Transfers", "url": "teacher-resources/mutual-transfers/", "note": "English, Maths and Science; all 25 districts" },
-          { "label": "Government Circulars", "url": "teacher-resources/circulars/" },
-          { "label": "Important Links for Teachers", "url": "teacher-resources/official-links/" },
-          { "label": "Study Packs", "url": "teacher-resources/study-packs/" },
-          { "label": "Professional Reading", "url": "teacher-resources/professional-reading/" },
-          { "label": "Teacher Downloads", "url": "teacher-resources/downloads/" },
-          { "label": "RCF Publications for Teachers", "url": "teacher-resources/rcf-publications-for-teachers/" }
-        ]}
+        {
+          "title": "Planning and teaching",
+          "links": [
+            {
+              "label": "Overview",
+              "url": "teacher-resources/"
+            },
+            {
+              "label": "Classroom Management",
+              "url": "teacher-resources/classroom-management/"
+            },
+            {
+              "label": "Lesson Plan Guidance",
+              "url": "teacher-resources/lesson-plans/"
+            },
+            {
+              "label": "Sample PPP Lesson Plans",
+              "url": "teacher-resources/ppp-lesson-plans/"
+            },
+            {
+              "label": "Annual and Term Plan Templates",
+              "url": "teacher-resources/annual-term-plan-templates/"
+            },
+            {
+              "label": "Daily and Weekly Notes Templates",
+              "url": "teacher-resources/daily-weekly-notes-templates/"
+            },
+            {
+              "label": "Pupil's Books and Teachers' Guides",
+              "url": "teacher-resources/textbooks-and-teacher-guides/"
+            },
+            {
+              "label": "Competency Levels by Grade",
+              "url": "teacher-resources/competency-levels/"
+            },
+            {
+              "label": "Sample SBA Tools",
+              "url": "teacher-resources/sba-samples/"
+            },
+            {
+              "label": "Sample Project Proposals",
+              "url": "teacher-resources/school-project-proposals/"
+            },
+            {
+              "label": "Worksheets",
+              "url": "teacher-resources/worksheets/"
+            },
+            {
+              "label": "Worksheets by Grade",
+              "url": "teacher-resources/worksheets-by-grade/"
+            },
+            {
+              "label": "English Medium: Maths",
+              "url": "english-medium/mathematics/"
+            },
+            {
+              "label": "English Medium: Science",
+              "url": "english-medium/science/"
+            },
+            {
+              "label": "Teaching Guides",
+              "url": "teacher-resources/teaching-guides/"
+            },
+            {
+              "label": "Classroom Activities",
+              "url": "teacher-resources/classroom-activities/"
+            },
+            {
+              "label": "Flashcards and Games",
+              "url": "teacher-resources/flashcards-and-games/"
+            },
+            {
+              "label": "Worksheet and Test Generator",
+              "url": "teacher-resources/worksheet-generator/"
+            }
+          ]
+        },
+        {
+          "title": "Supporting every learner",
+          "links": [
+            {
+              "label": "Remedial English",
+              "url": "teacher-resources/remedial-english/"
+            },
+            {
+              "label": "Slow-Learner Support",
+              "url": "teacher-resources/slow-learner-support/"
+            },
+            {
+              "label": "Mixed-Ability Teaching",
+              "url": "teacher-resources/mixed-ability-teaching/"
+            },
+            {
+              "label": "Guided Writing",
+              "url": "teacher-resources/guided-writing/"
+            }
+          ]
+        },
+        {
+          "title": "Literature and assessment",
+          "links": [
+            {
+              "label": "Literature Teaching",
+              "url": "teacher-resources/literature-teaching/"
+            },
+            {
+              "label": "Assessment",
+              "url": "teacher-resources/assessment/"
+            },
+            {
+              "label": "Marking Guides",
+              "url": "teacher-resources/marking-guides/"
+            },
+            {
+              "label": "Assessment Rubrics",
+              "url": "teacher-resources/rubrics/"
+            },
+            {
+              "label": "Term-Test Preparation Plans",
+              "url": "teacher-resources/term-test-plans/"
+            },
+            {
+              "label": "Answer Development",
+              "url": "teacher-resources/answer-development/"
+            },
+            {
+              "label": "Revision Strategies",
+              "url": "teacher-resources/revision-strategies/"
+            },
+            {
+              "label": "Professional Development and TKT",
+              "url": "teacher-resources/professional-development/"
+            }
+          ]
+        },
+        {
+          "title": "More for teachers",
+          "links": [
+            {
+              "label": "Mutual Transfers",
+              "url": "teacher-resources/mutual-transfers/",
+              "note": "English, Maths and Science; all 25 districts"
+            },
+            {
+              "label": "Government Circulars",
+              "url": "teacher-resources/circulars/"
+            },
+            {
+              "label": "Important Links for Teachers",
+              "url": "teacher-resources/official-links/"
+            },
+            {
+              "label": "Study Packs",
+              "url": "teacher-resources/study-packs/"
+            },
+            {
+              "label": "Professional Reading",
+              "url": "teacher-resources/professional-reading/"
+            },
+            {
+              "label": "Teacher Downloads",
+              "url": "teacher-resources/downloads/"
+            },
+            {
+              "label": "RCF Publications for Teachers",
+              "url": "teacher-resources/rcf-publications-for-teachers/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "RCF Online Academy",
       "url": "rcf-classes/",
       "summary": "Elocution diploma courses for the CALSDA examinations, Literature classes from Grade 9 to Advanced Level, one-to-one IELTS training, and teacher training including TKT, conducted online by Rohana Fernando.",
       "_urlNote": "The addresses stay under rcf-classes/ so that links already shared do not break.",
       "groups": [
-        { "title": "Start here", "links": [
-          { "label": "Academy Overview", "url": "rcf-classes/" }
-        ]},
-        { "title": "Elocution diplomas", "links": [
-          { "label": "Primary Elocution Teachers' Diploma", "url": "rcf-classes/primary-elocution-teachers-diploma/", "course": "primary-elocution" },
-          { "label": "Associate Diploma", "url": "rcf-classes/associate-diploma/", "course": "associate-diploma" }
-        ]},
-        { "title": "Student Classes", "links": [
-          { "label": "Grade 9 Literature", "url": "rcf-classes/grade-9-literature/", "course": "grade-9-literature" },
-          { "label": "Grade 10 Literature", "url": "rcf-classes/grade-10-literature/", "course": "grade-10-literature" },
-          { "label": "O/L Literature", "url": "rcf-classes/ol-literature/", "course": "ol-literature" },
-          { "label": "A/L Literature", "url": "rcf-classes/al-literature/", "course": "al-literature" }
-        ]},
-        { "title": "Examination preparation", "links": [
-          { "label": "IELTS Training", "url": "rcf-classes/ielts/", "course": "ielts" }
-        ]},
-        { "title": "Teacher Training", "links": [
-          { "label": "Literature Orientation for New Teachers", "url": "rcf-classes/literature-orientation/", "course": "literature-orientation" },
-          { "label": "TKT: Teaching Knowledge Test", "url": "rcf-classes/tkt/", "course": "tkt" }
-        ]},
-        { "title": "Joining", "links": [
-          { "label": "Registration", "url": "rcf-classes/registration/" },
-          { "label": "Our Staff", "url": "rcf-classes/our-staff/" },
-          { "label": "Contact on WhatsApp", "url": "rcf-classes/contact/" }
-        ]}
+        {
+          "title": "Start here",
+          "links": [
+            {
+              "label": "Academy Overview",
+              "url": "rcf-classes/"
+            }
+          ]
+        },
+        {
+          "title": "Elocution diplomas",
+          "links": [
+            {
+              "label": "Primary Elocution Teachers' Diploma",
+              "url": "rcf-classes/primary-elocution-teachers-diploma/",
+              "course": "primary-elocution"
+            },
+            {
+              "label": "Associate Diploma",
+              "url": "rcf-classes/associate-diploma/",
+              "course": "associate-diploma"
+            }
+          ]
+        },
+        {
+          "title": "Student Classes",
+          "links": [
+            {
+              "label": "Grade 9 Literature",
+              "url": "rcf-classes/grade-9-literature/",
+              "course": "grade-9-literature"
+            },
+            {
+              "label": "Grade 10 Literature",
+              "url": "rcf-classes/grade-10-literature/",
+              "course": "grade-10-literature"
+            },
+            {
+              "label": "O/L Literature",
+              "url": "rcf-classes/ol-literature/",
+              "course": "ol-literature"
+            },
+            {
+              "label": "A/L Literature",
+              "url": "rcf-classes/al-literature/",
+              "course": "al-literature"
+            }
+          ]
+        },
+        {
+          "title": "Examination preparation",
+          "links": [
+            {
+              "label": "IELTS Training",
+              "url": "rcf-classes/ielts/",
+              "course": "ielts"
+            }
+          ]
+        },
+        {
+          "title": "Teacher Training",
+          "links": [
+            {
+              "label": "Literature Orientation for New Teachers",
+              "url": "rcf-classes/literature-orientation/",
+              "course": "literature-orientation"
+            },
+            {
+              "label": "TKT: Teaching Knowledge Test",
+              "url": "rcf-classes/tkt/",
+              "course": "tkt"
+            }
+          ]
+        },
+        {
+          "title": "Joining",
+          "links": [
+            {
+              "label": "Registration",
+              "url": "rcf-classes/registration/"
+            },
+            {
+              "label": "Our Staff",
+              "url": "rcf-classes/our-staff/"
+            },
+            {
+              "label": "Contact on WhatsApp",
+              "url": "rcf-classes/contact/"
+            }
+          ]
+        }
       ]
     },
-
     {
       "label": "More",
       "url": "premium-resources/",
       "summary": "Books published by RCF Publications, paid downloadable resource collections, and advertisements for tuition classes and courses offered by others.",
       "groups": [
-        { "title": "Books and ebooks", "links": [
-          { "label": "RCF Publications", "url": "rcf-publications/" },
-          { "label": "About RCF Publications", "url": "about/rcf-publications/" }
-        ]},
-        { "title": "Premium Resources", "links": [
-          { "label": "All Premium Resources", "url": "premium-resources/" },
-          { "label": "Student Resources", "url": "premium-resources/student/" },
-          { "label": "English Teacher Resources", "url": "premium-resources/teachers/" }
-        ]},
-        { "title": "Advertising", "links": [
-          { "label": "Special Offers", "url": "promotions/", "note": "Sponsored tuition and course listings" }
-        ]},
-        { "title": "About RCF English", "links": [
-          { "label": "About RCF English", "url": "about/" },
-          { "label": "Our Educational Mission", "url": "about/mission/" },
-          { "label": "Our Teaching Approach", "url": "about/teaching-approach/" },
-          { "label": "Our Founder", "url": "about/founder/" },
-          { "label": "Academic and Professional Background", "url": "about/background/" },
-          { "label": "Our Online Communities", "url": "about/online-communities/" }
-        ]},
-        { "title": "Get in touch", "links": [
-          { "label": "Contact Us", "url": "contact/" }
-        ]}
+        {
+          "title": "Books and ebooks",
+          "links": [
+            {
+              "label": "RCF Publications",
+              "url": "rcf-publications/"
+            },
+            {
+              "label": "About RCF Publications",
+              "url": "about/rcf-publications/"
+            }
+          ]
+        },
+        {
+          "title": "Premium Resources",
+          "links": [
+            {
+              "label": "All Premium Resources",
+              "url": "premium-resources/"
+            },
+            {
+              "label": "Student Resources",
+              "url": "premium-resources/student/"
+            },
+            {
+              "label": "English Teacher Resources",
+              "url": "premium-resources/teachers/"
+            }
+          ]
+        },
+        {
+          "title": "Advertising",
+          "links": [
+            {
+              "label": "Special Offers",
+              "url": "promotions/",
+              "note": "Sponsored tuition and course listings"
+            }
+          ]
+        },
+        {
+          "title": "About RCF English",
+          "links": [
+            {
+              "label": "About RCF English",
+              "url": "about/"
+            },
+            {
+              "label": "Our Educational Mission",
+              "url": "about/mission/"
+            },
+            {
+              "label": "Our Teaching Approach",
+              "url": "about/teaching-approach/"
+            },
+            {
+              "label": "Our Founder",
+              "url": "about/founder/"
+            },
+            {
+              "label": "Academic and Professional Background",
+              "url": "about/background/"
+            },
+            {
+              "label": "Our Online Communities",
+              "url": "about/online-communities/"
+            }
+          ]
+        },
+        {
+          "title": "Get in touch",
+          "links": [
+            {
+              "label": "Contact Us",
+              "url": "contact/"
+            }
+          ]
+        }
       ]
     }
   ],
-
   "footer": [
-    { "title": "Learn", "links": [
-      { "label": "Primary English", "url": "primary-english/" },
-      { "label": "O/L English", "url": "ol-english/" },
-      { "label": "O/L Literature", "url": "ol-literature/" },
-      { "label": "General English", "url": "general-english/" },
-      { "label": "A/L Literature", "url": "al-literature/" },
-      { "label": "Interactive Learning", "url": "interactive/" },
-      { "label": "Listening Laboratory", "url": "listening-lab/" },
-      { "label": "Writing Practice", "url": "writing-practice/" },
-      { "label": "Essay Writing Exercises", "url": "essay-writing-exercises/" },
-      { "label": "Speaking Practice", "url": "speaking-practice/" }
-    ]},
-    { "title": "Resources", "links": [
-      { "label": "Past Papers", "url": "past-papers/" },
-      { "label": "Examination Centre", "url": "exam-centre/" },
-      { "label": "All Resources", "url": "resources/" },
-      { "label": "Teacher Resources", "url": "teacher-resources/" },
-      { "label": "Search the Site", "url": "search/" },
-      { "label": "How to Use This Site", "url": "how-to-use/" },
-      { "label": "My RCF English", "url": "my/" },
-      { "label": "Site Status", "url": "site-status/" }
-    ]},
-    { "title": "RCF", "links": [
-      { "label": "RCF Online Academy", "url": "rcf-classes/" },
-      { "label": "About Us", "url": "about/" },
-      { "label": "Contact", "url": "contact/" },
-      { "label": "Frequently Asked Questions", "url": "faq/" }
-    ]},
-    { "title": "Policies", "links": [
-      { "label": "Copyright and Resource Policy", "url": "copyright-policy/" },
-      { "label": "Corrections and Takedown Requests", "url": "corrections/" },
-      { "label": "Privacy Policy", "url": "privacy/" },
-      { "label": "Terms of Use", "url": "terms/" },
-      { "label": "RCF Publications Terms and Conditions", "url": "rcf-publications/terms/" },
-      { "label": "RCF Publications Refund Policy", "url": "rcf-publications/refund-policy/" },
-      { "label": "Accessibility Statement", "url": "accessibility/" }
-    ]}
+    {
+      "title": "Learn",
+      "links": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "O/L English",
+          "url": "ol-english/"
+        },
+        {
+          "label": "O/L Literature",
+          "url": "ol-literature/"
+        },
+        {
+          "label": "General English",
+          "url": "general-english/"
+        },
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        },
+        {
+          "label": "Interactive Learning",
+          "url": "interactive/"
+        },
+        {
+          "label": "Listening Laboratory",
+          "url": "listening-lab/"
+        },
+        {
+          "label": "Writing Practice",
+          "url": "writing-practice/"
+        },
+        {
+          "label": "Essay Writing Exercises",
+          "url": "essay-writing-exercises/"
+        },
+        {
+          "label": "Speaking Practice",
+          "url": "speaking-practice/"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        },
+        {
+          "label": "Examination Centre",
+          "url": "exam-centre/"
+        },
+        {
+          "label": "All Resources",
+          "url": "resources/"
+        },
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Search the Site",
+          "url": "search/"
+        },
+        {
+          "label": "How to Use This Site",
+          "url": "how-to-use/"
+        },
+        {
+          "label": "My RCF English",
+          "url": "my/"
+        },
+        {
+          "label": "Site Status",
+          "url": "site-status/"
+        }
+      ]
+    },
+    {
+      "title": "RCF",
+      "links": [
+        {
+          "label": "RCF Online Academy",
+          "url": "rcf-classes/"
+        },
+        {
+          "label": "About Us",
+          "url": "about/"
+        },
+        {
+          "label": "Contact",
+          "url": "contact/"
+        },
+        {
+          "label": "Frequently Asked Questions",
+          "url": "faq/"
+        }
+      ]
+    },
+    {
+      "title": "Policies",
+      "links": [
+        {
+          "label": "Copyright and Resource Policy",
+          "url": "copyright-policy/"
+        },
+        {
+          "label": "Corrections and Takedown Requests",
+          "url": "corrections/"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "privacy/"
+        },
+        {
+          "label": "Terms of Use",
+          "url": "terms/"
+        },
+        {
+          "label": "RCF Publications Terms and Conditions",
+          "url": "rcf-publications/terms/"
+        },
+        {
+          "label": "RCF Publications Refund Policy",
+          "url": "rcf-publications/refund-policy/"
+        },
+        {
+          "label": "Accessibility Statement",
+          "url": "accessibility/"
+        }
+      ]
+    }
   ]
 }
