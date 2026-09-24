@@ -15,7 +15,6 @@
     "data/games/global-*.json and uses exactly the same six engines, the",
     "same illustrations and the same scoring as the Pupil's Book games."
   ],
-
   "pages": [
     {
       "slug": "english-games",
@@ -25,19 +24,41 @@
       "keywords": "free english games for kids, esl games for children, english vocabulary games, phonics games, english grammar games for kids, learn english games online free",
       "kicker": "Global English Games",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "hero": { "text": "Free English games for children learning English anywhere in the world. Vocabulary, phonics, spelling, grammar and sentence building, in four levels. Every game takes three to five minutes and works on a phone." },
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "hero": {
+        "text": "Free English games for children learning English anywhere in the world. Vocabulary, phonics, spelling, grammar and sentence building, in four levels. Every game takes three to five minutes and works on a phone."
+      },
       "blocks": [
-        { "type": "game-zone", "mode": "global-hub", "theme": "sky" },
+        {
+          "type": "game-zone",
+          "mode": "global-hub",
+          "theme": "sky"
+        },
         {
           "type": "cards",
           "heading": "How these games work",
           "columns": "3",
           "items": [
-            { "title": "Choose a level", "icon": "1", "text": "Beginner for first words and pictures, then Early Learner, Elementary and Pre-Intermediate. Each level tells you its CEFR band if you want it." },
-            { "title": "Choose a topic", "icon": "2", "text": "Animals, family, food, colours, clothes, weather, jobs, feelings, phonics, spelling, grammar, sentence building and more." },
-            { "title": "Play and collect stars", "icon": "3", "text": "Up to three stars a game. Stars stay on your own device: nothing is sent anywhere and no account is needed." }
+            {
+              "title": "Choose a level",
+              "icon": "1",
+              "text": "Beginner for first words and pictures, then Early Learner, Elementary and Pre-Intermediate. Each level tells you its CEFR band if you want it."
+            },
+            {
+              "title": "Choose a topic",
+              "icon": "2",
+              "text": "Animals, family, food, colours, clothes, weather, jobs, feelings, phonics, spelling, grammar, sentence building and more."
+            },
+            {
+              "title": "Play and collect stars",
+              "icon": "3",
+              "text": "Up to three stars a game. Stars stay on your own device: nothing is sent anywhere and no account is needed."
+            }
           ]
         },
         {
@@ -50,12 +71,26 @@
           "type": "cards",
           "columns": "1",
           "items": [
-            { "title": "Primary Game Zone (Sri Lankan syllabus)", "icon": "★", "url": "primary-english/game-zone/", "accent": "yes", "text": "Games built unit by unit from the official Grade 1 to Grade 5 Pupil's Books." }
+            {
+              "title": "Primary Game Zone (Sri Lankan syllabus)",
+              "icon": "★",
+              "url": "primary-english/game-zone/",
+              "accent": "yes",
+              "text": "Games built unit by unit from the official Grade 1 to Grade 5 Pupil's Books."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Which level to start on",
+          "level": "h2",
+          "text": [
+            "Start below where you think the learner is. A level that feels easy for the first few games builds the willingness to carry on; a level that is too hard ends the session and often the habit.",
+            "**Beginner** needs no reading at all. **Early learner** puts words into very short sentences. **Elementary** begins grammar - articles, pronouns, prepositions. **Pre-intermediate** works on the past tense, longer sentences and reading. Move up when a whole topic is finished without a wrong answer."
           ]
         }
       ]
     },
-
     {
       "slug": "english-games/beginner",
       "title": "Beginner English Games",
@@ -64,16 +99,71 @@
       "keywords": "beginner english games for kids, first english words game, pre-a1 english games, english games for 4 year olds, picture word games english",
       "kicker": "Global English Games",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
-      "backTo": { "label": "English Games", "url": "english-games/" },
-      "hero": { "text": "First words and pictures. Nothing here needs reading, so a child can play before they can read. CEFR Pre-A1." },
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "English Games",
+          "url": "english-games/"
+        }
+      ],
+      "backTo": {
+        "label": "English Games",
+        "url": "english-games/"
+      },
+      "hero": {
+        "text": "First words and pictures. Nothing here needs reading, so a child can play before they can read. CEFR Pre-A1."
+      },
       "blocks": [
-        { "type": "game-zone", "mode": "global-level", "pack": "global-beginner", "theme": "sunshine" }
+        {
+          "type": "game-zone",
+          "mode": "global-level",
+          "pack": "global-beginner",
+          "theme": "sunshine"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 27 games here across 8 topics, about 1.5 hours of play in all, covering eight topics for a learner meeting English for the first time: animals and pets, colours and shapes, numbers to ten, family, the body, food and drink, toys, and the alphabet with first sounds.",
+            "The level is **CEFR Pre-A1**. Everything is free, needs no account, and works on a phone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**No reading is required.** Every word appears as a picture first. A learner who cannot yet read the Roman alphabet can play every game here.",
+            "**The first two hundred words,** which carry more everyday English than any grammar rule at this stage.",
+            "**Letters and their sounds,** in the alphabet and phonics topic - the bridge to reading anything at all."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Short and often. Twenty minutes once a week teaches a beginner less than five minutes on five days, and this level is built for the five-minute version."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What comes after this level",
+          "level": "h2",
+          "text": [
+            "When the alphabet and phonics topic is comfortable and most words are recognised without the picture, move to [early learner](english-games/early-learner/), where the same kind of words appear inside short sentences.",
+            "There is no hurry. A learner who repeats this level until it is genuinely easy makes faster progress afterwards than one who moves up while still guessing."
+          ]
+        }
       ]
     },
-
     {
       "slug": "english-games/early-learner",
       "title": "Early Learner English Games",
@@ -82,16 +172,71 @@
       "keywords": "easy english games for children, a1 english games, esl games beginners, english vocabulary games kids, opposites game english",
       "kicker": "Global English Games",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
-      "backTo": { "label": "English Games", "url": "english-games/" },
-      "hero": { "text": "Everyday words and very short sentences, for children who know their first English words. CEFR A1." },
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "English Games",
+          "url": "english-games/"
+        }
+      ],
+      "backTo": {
+        "label": "English Games",
+        "url": "english-games/"
+      },
+      "hero": {
+        "text": "Everyday words and very short sentences, for children who know their first English words. CEFR A1."
+      },
       "blocks": [
-        { "type": "game-zone", "mode": "global-level", "pack": "global-early-learner", "theme": "meadow" }
+        {
+          "type": "game-zone",
+          "mode": "global-level",
+          "pack": "global-early-learner",
+          "theme": "meadow"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 27 games here across 10 topics, about 1.5 hours of play in all, covering ten topics for a learner who knows some words and is starting to put them together: home, school, clothes, weather, transport, action words, feelings, opposites, singular and plural, and rhyme.",
+            "The level is **CEFR A1**. Everything is free, needs no account, and works on a phone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**Very short sentences,** not just words: this is the level where *a cat* becomes *the cat is sleeping*.",
+            "**Opposites and plurals,** the two patterns that let a learner double their vocabulary without learning new words.",
+            "**Rhyme,** which sounds like a game and is really pronunciation practice: a learner who hears that *cat* and *hat* end the same is hearing English sounds properly."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "If a learner finds a topic easy, skip it. The topics do not have to be played in order, and time spent on words already known is time not spent on the next set."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What comes after this level",
+          "level": "h2",
+          "text": [
+            "Next is [elementary](english-games/elementary/), which introduces the small grammar words - *a*, *an*, *the*, pronouns and prepositions - that decide whether a sentence sounds like English.",
+            "If singular and plural or opposites are still being guessed at, stay here: those two patterns are worth more than a new set of words."
+          ]
+        }
       ]
     },
-
     {
       "slug": "english-games/elementary",
       "title": "Elementary English Games",
@@ -100,16 +245,71 @@
       "keywords": "elementary english games, english grammar games for kids, prepositions game english, question words game, english spelling games free",
       "kicker": "Global English Games",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
-      "backTo": { "label": "English Games", "url": "english-games/" },
-      "hero": { "text": "Longer sentences, spelling and first grammar, for children who can read simple English. CEFR A1 to A2." },
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "English Games",
+          "url": "english-games/"
+        }
+      ],
+      "backTo": {
+        "label": "English Games",
+        "url": "english-games/"
+      },
+      "hero": {
+        "text": "Longer sentences, spelling and first grammar, for children who can read simple English. CEFR A1 to A2."
+      },
       "blocks": [
-        { "type": "game-zone", "mode": "global-level", "pack": "global-elementary", "theme": "sky" }
+        {
+          "type": "game-zone",
+          "mode": "global-level",
+          "pack": "global-elementary",
+          "theme": "sky"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 25 games here across 10 topics, about 1.6 hours of play in all, covering ten topics for a learner who can already say simple things: jobs, places in town, daily routines, hobbies and sport, prepositions, a/an/the, pronouns, question words, spelling and the simple present.",
+            "The level is **CEFR A1-A2**. Everything is free, needs no account, and works on a phone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**First grammar, as games rather than rules.** Articles, pronouns and prepositions are met here as choices to be made, not as tables to be memorised.",
+            "**Question words** - *who, what, where, when, why, how* - which are what let a learner start a conversation instead of only answering one.",
+            "**Spelling,** which at this level is where most of a learner's written mistakes actually live."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Nine of the twenty-five games at this level ask a learner to supply a missing word rather than choose one. Those are the hard ones and the useful ones: leave them until the topic's easier games are comfortable."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What comes after this level",
+          "level": "h2",
+          "text": [
+            "[Pre-intermediate](english-games/pre-intermediate/) follows: the simple past, sentence building and short reading passages.",
+            "This is also the point where games alone stop being enough. A learner at this level should be writing something, however short, and the [ESL worksheets](global-english/esl/worksheets/) are free, printable and have answer keys."
+          ]
+        }
       ]
     },
-
     {
       "slug": "english-games/pre-intermediate",
       "title": "Pre-Intermediate English Games",
@@ -118,13 +318,69 @@
       "keywords": "pre-intermediate english games, english sentence building games, simple past game english, reading comprehension games kids, british english vocabulary",
       "kicker": "Global English Games",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [{ "label": "English Games", "url": "english-games/" }],
-      "backTo": { "label": "English Games", "url": "english-games/" },
-      "hero": { "text": "Building sentences, reading short texts and holding real conversations. CEFR A2." },
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "English Games",
+          "url": "english-games/"
+        }
+      ],
+      "backTo": {
+        "label": "English Games",
+        "url": "english-games/"
+      },
+      "hero": {
+        "text": "Building sentences, reading short texts and holding real conversations. CEFR A2."
+      },
       "blocks": [
-        { "type": "game-zone", "mode": "global-level", "pack": "global-pre-intermediate", "theme": "berry" }
+        {
+          "type": "game-zone",
+          "mode": "global-level",
+          "pack": "global-pre-intermediate",
+          "theme": "berry"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 19 games here across 7 topics, about 1.3 hours of play in all, covering seven topics for a learner ready for real sentences: nature and the environment, adjectives, the simple past, sentence building, reading comprehension, everyday conversations and British English vocabulary.",
+            "The level is **CEFR A2**. Everything is free, needs no account, and works on a phone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**The simple past,** which is where a learner stops describing only the present and can tell somebody what happened.",
+            "**Building whole sentences,** and reading a short text for meaning rather than for single words.",
+            "**Everyday conversations** - the exchanges that actually occur, rather than the ones textbooks invent."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "This level is the bridge to the [ESL worksheets](global-english/esl/worksheets/), which carry the same content on paper with answer keys. A learner who finds these games easy is ready for those."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where to go after the games",
+          "level": "h2",
+          "text": [
+            "This is the highest level in the game zone, and a learner who finds it easy has outgrown games as their main practice. What helps next is reading and writing with feedback.",
+            "The free [ESL worksheets](global-english/esl/worksheets/) carry the same grammar on paper with answer keys, and the [ESL lesson plans](global-english/esl/lesson-plans/) give a teacher a full lesson around each point. For an adult learner working alone, the [writing practice](writing-practice/) pages are the natural next step."
+          ]
+        }
       ]
     }
   ]

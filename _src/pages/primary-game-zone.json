@@ -14,7 +14,6 @@
     "0.6 KB each. Any picture named in a data file can be swapped for a",
     "better one by replacing that file."
   ],
-
   "pages": [
     {
       "slug": "primary-english/game-zone",
@@ -24,21 +23,51 @@
       "keywords": "English games for children Sri Lanka, primary English games, grade 1 english game, grade 5 english game, free english games for kids",
       "kicker": "Primary English",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
-      "hero": { "text": "Six kinds of English game for Grades 1 to 5. Every game takes three to five minutes, works on a phone, and keeps your stars when you come back." },
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
+      "hero": {
+        "text": "Six kinds of English game for Grades 1 to 5. Every game takes three to five minutes, works on a phone, and keeps your stars when you come back."
+      },
       "blocks": [
-        { "type": "game-zone", "mode": "hub", "theme": "sunshine" },
+        {
+          "type": "game-zone",
+          "mode": "hub",
+          "theme": "sunshine"
+        },
         {
           "type": "cards",
           "heading": "How the Game Zone works",
           "columns": "3",
           "items": [
-            { "title": "Pick your grade", "icon": "1", "text": "Each grade has its own colour and its own games, from first words in Grade 1 to Scholarship-style challenges in Grade 5." },
-            { "title": "Play for a few minutes", "icon": "2", "text": "Every game is short. Wrong answers cost nothing: you simply try again until the sentence is right." },
-            { "title": "Collect your stars", "icon": "3", "text": "Finish a game to earn up to three stars. Your stars stay on your own device. Nothing is sent anywhere and no account is needed." }
+            {
+              "title": "Pick your grade",
+              "icon": "1",
+              "text": "Each grade has its own colour and its own games, from first words in Grade 1 to Scholarship-style challenges in Grade 5."
+            },
+            {
+              "title": "Play for a few minutes",
+              "icon": "2",
+              "text": "Every game is short. Wrong answers cost nothing: you simply try again until the sentence is right."
+            },
+            {
+              "title": "Collect your stars",
+              "icon": "3",
+              "text": "Finish a game to earn up to three stars. Your stars stay on your own device. Nothing is sent anywhere and no account is needed."
+            }
           ]
         },
         {
@@ -62,10 +91,18 @@
               "more": "Open Teacher Mode"
             }
           ]
+        },
+        {
+          "type": "prose",
+          "heading": "Which grade to choose",
+          "level": "h2",
+          "text": [
+            "Choose the grade the child is in now, not the grade of the words they already know. The games follow the Pupil's Book themes for each grade, so a child playing their own grade meets the words their class is using that term.",
+            "If the games for their grade are too hard, go down one: the themes repeat from year to year, so nothing is missed. **There is no advertising anywhere in the Game Zone,** and no account is needed."
+          ]
         }
       ]
     },
-
     {
       "slug": "primary-english/game-zone/grade-1",
       "title": "Grade 1 Games",
@@ -73,17 +110,67 @@
       "description": "Grade 1 English games: match animals and colours to their words, find memory pairs, and name shapes and first sounds.",
       "kicker": "Primary Game Zone",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      "styles": [
+        "games"
       ],
-      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-      "hero": { "text": "Pictures, first words and sounds. Tap a game to start." },
-      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "1", "theme": "sunshine" }]
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "Pictures, first words and sounds. Tap a game to start."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "grade",
+          "grade": "1",
+          "theme": "sunshine"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 66 games here across 16 themed units, about 3.6 hours of play in all, covering the sixteen themes of the Grade 1 year - the school, the home, animals in the garden, water, the sky, food and drink, transport, light, and the people who help us.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**",
+            "The games follow the themes of the Sri Lankan Pupil's Book for the grade, so a child plays the words they are meeting in class that term."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**First words, with pictures.** Every word is shown as a picture before it is shown as writing, so a child who cannot yet read can still play.",
+            "**Greeting and naming.** *Hello, I'm ... What's your name? Thank you. Good morning.* - said, heard and matched, not written.",
+            "**Colours, shapes and first sounds,** which are what Grade 1 spends its year on."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "A six-year-old works best in one short go. One topic, five minutes, then stop while it is still fun. Coming back tomorrow teaches far more than pushing on today."
+          ]
+        }
+      ]
     },
-
     {
       "slug": "primary-english/game-zone/grade-2",
       "title": "Grade 2 Games",
@@ -91,17 +178,67 @@
       "description": "Grade 2 English games: match everyday things to their words, find memory pairs, finish short sentences and build them word by word.",
       "kicker": "Primary Game Zone",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      "styles": [
+        "games"
       ],
-      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-      "hero": { "text": "Pictures and short sentences you can read. Tap a game to start." },
-      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "2", "theme": "sky" }]
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "Pictures and short sentences you can read. Tap a game to start."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "grade",
+          "grade": "2",
+          "theme": "sky"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 75 games here across 16 themed units, about 4.2 hours of play in all, covering the sixteen Grade 2 themes, which revisit the Grade 1 topics and take each one further.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**",
+            "The games follow the themes of the Sri Lankan Pupil's Book for the grade, so a child plays the words they are meeting in class that term."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**The same themes, a year on.** School, home, animals, water, the sky, food, transport: the words a child met in Grade 1 come back with more of them, and in short sentences rather than single words.",
+            "**Polite English:** *Good morning, sir. Excuse me. Here are ... I'm from ...*",
+            "**Putting words in order,** which is new this year - eleven of the games ask a child to build a sentence rather than only recognise a word."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Grade 2 children will play longer than Grade 1 children, but ten minutes is still the right length. If a game is too easy, it is: move to the next theme rather than finishing every game in order."
+          ]
+        }
+      ]
     },
-
     {
       "slug": "primary-english/game-zone/grade-3",
       "title": "Grade 3 Games",
@@ -109,17 +246,76 @@
       "description": "Grade 3 English games: singular and plural, sorting animals into groups, and putting sentences in the right order.",
       "kicker": "Primary Game Zone",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      "styles": [
+        "games"
       ],
-      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-      "hero": { "text": "More words, plurals and sentences that grow. Tap a game to start." },
-      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "3", "theme": "meadow" }]
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "More words, plurals and sentences that grow. Tap a game to start."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "grade",
+          "grade": "3",
+          "theme": "meadow"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 46 games here across 8 themed units, about 2.6 hours of play in all, covering the eight Grade 3 themes - yourself, your home, your school, food, animals, clothes, play, and the world around you.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**",
+            "The games follow the themes of the Sri Lankan Pupil's Book for the grade, so a child plays the words they are meeting in class that term."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**Talking about yourself:** *I'm ... I'm seven. I live in ... This is my ...* - the questions a child is asked first, and often cannot answer.",
+            "**He and she,** which Sinhala and Tamil speakers mix up for years unless it is practised early.",
+            "**Numbers, and reading short written words** rather than only matching pictures."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Grade 3 is where reading starts to matter. Let the child read the word aloud before tapping, even when tapping the picture would be quicker. The extra two seconds are the whole point."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What comes next",
+          "level": "h2",
+          "text": [
+            "Grade 3 is the year reading begins to carry the weight. When a child can read the words in these games without looking at the pictures, they are ready for [Grade 4](primary-english/game-zone/grade-4/), where sentences have to be built rather than chosen.",
+            "For written practice alongside the games, the [primary English pages](primary-english/) have worksheets for the same themes."
+          ]
+        }
+      ]
     },
-
     {
       "slug": "primary-english/game-zone/grade-4",
       "title": "Grade 4 Games",
@@ -127,17 +323,67 @@
       "description": "Grade 4 English games: naming, doing and describing words, choosing the right verb, opposites, and rebuilding longer sentences.",
       "kicker": "Primary Game Zone",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      "styles": [
+        "games"
       ],
-      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-      "hero": { "text": "Word classes, verbs and longer sentences. Tap a game to start." },
-      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "4", "theme": "berry" }]
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "Word classes, verbs and longer sentences. Tap a game to start."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "grade",
+          "grade": "4",
+          "theme": "berry"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 47 games here across 10 themed units, about 2.8 hours of play in all, covering the ten Grade 4 themes - family and friends, the garden, places around you, work, festivals, shopping, the calendar, games, good practices and happy days.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**",
+            "The games follow the themes of the Sri Lankan Pupil's Book for the grade, so a child plays the words they are meeting in class that term."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**There is and there are,** and **this, that, these and those** - small words that decide whether a sentence sounds right.",
+            "**Describing:** parts of the body, what a plant has, what a place looks like. Grade 4 is the year a child stops naming things and starts describing them.",
+            "**Days, months and dates,** which are needed for everything afterwards and are learnt fastest by repetition."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Eight of the games at this grade ask for word order. Those are the ones worth repeating: understanding a sentence is easier than building one, and only building it proves the child can use it."
+          ]
+        }
+      ]
     },
-
     {
       "slug": "primary-english/game-zone/grade-5",
       "title": "Grade 5 Games",
@@ -145,17 +391,67 @@
       "description": "Grade 5 English games: reading comprehension, prepositions and tenses, word groups, vocabulary pairs and long sentence building.",
       "kicker": "Primary Game Zone",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      "styles": [
+        "games"
       ],
-      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-      "hero": { "text": "Reading, grammar and Scholarship-style challenges. Tap a game to start." },
-      "blocks": [{ "type": "game-zone", "mode": "grade", "grade": "5", "theme": "sunset" }]
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "Reading, grammar and Scholarship-style challenges. Tap a game to start."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "grade",
+          "grade": "5",
+          "theme": "sunset"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 43 games here across 10 themed units, about 2.7 hours of play in all, covering the ten Grade 5 themes - Sri Lanka, nature, caring and sharing, celebrations, sport, healthy living, the fair, safety, the wider world and the future.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**",
+            "The games follow the themes of the Sri Lankan Pupil's Book for the grade, so a child plays the words they are meeting in class that term."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**A, an and the,** which have no equivalent in Sinhala or Tamil and are the commonest mistake in Sri Lankan English writing at every later grade.",
+            "**Talking about where you are from:** province, town, country - the questions a Grade 5 child meets in the scholarship examination and in any conversation with a stranger.",
+            "**Longer sentences,** built rather than chosen: fourteen of the games at this level are quizzes on meaning rather than matching on pictures."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Grade 5 is a scholarship year for many children and the temptation is to use screen time for past papers. Ten minutes of these games is still worth it: vocabulary is the one thing no amount of paper practice supplies."
+          ]
+        }
+      ]
     },
-
     {
       "slug": "primary-english/game-zone/teacher",
       "title": "Teacher Mode",
@@ -163,15 +459,64 @@
       "description": "Choose a grade, a topic and a game, and open it large on a classroom screen. No login and no connection needed once the page has loaded.",
       "kicker": "Primary Game Zone",
       "kind": "page",
-      "styles": ["games"],
-      "scripts": ["game-zone"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Primary Game Zone", "url": "primary-english/game-zone/" }
+      "styles": [
+        "games"
       ],
-      "backTo": { "label": "Primary Game Zone", "url": "primary-english/game-zone/" },
-      "hero": { "text": "Choose a grade, then a topic, then a game. It opens large enough for the back of the room. Press Escape to come back." },
-      "blocks": [{ "type": "game-zone", "mode": "teacher", "theme": "meadow" }]
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "Choose a grade, then a topic, then a game. It opens large enough for the back of the room. Press Escape to come back."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "teacher",
+          "theme": "meadow"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "This page gathers every game in the Primary Game Zone, in one place, arranged so a teacher can find one quickly.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**Choose by grade or by theme.** If today's lesson is about food, the food games from every grade are two taps away.",
+            "**Project it, or pass a phone round.** The games are built for a phone screen, so they work on a classroom projector and on the one device in the room.",
+            "**No sound is needed.** Every game can be played silently, which matters in a classroom of forty."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Use a game to start a lesson rather than to end it. Five minutes of a matching game on the words you are about to teach puts those words in front of the class before the lesson needs them - which is worth more than the same five minutes spent as a reward at the end."
+          ]
+        }
+      ]
     }
   ]
 }
