@@ -84,17 +84,34 @@ const out = {
 };
 fs.writeFileSync(path.join(ROOT, "_src/pages/teacher-resources-transfers.json"), JSON.stringify(out, null, 2) + "\n");
 
-// A card on the English Teachers Resources hub, once.
+// A button in the hero and a card lower down, both on the English Teachers
+// Resources hub. Written here rather than by hand so that they stay in step
+// with the page, and so running this script twice changes nothing.
 const hubFile = path.join(ROOT, "_src/pages/teacher-resources.json");
 const raw = fs.readFileSync(hubFile, "utf8");
 const bom = raw.charCodeAt(0) === 0xFEFF ? "﻿" : "";
 const tr = JSON.parse(bom ? raw.slice(1) : raw);
 const hub = tr.pages.find((p) => p.slug === "teacher-resources");
+
 const more = hub.blocks.find((b) => b.type === "cards" && b.heading === "More for teachers");
 if (!more) throw new Error('"More for teachers" cards not found on the teacher resources hub');
 const card = { title: "Mutual Transfers", url: SLUG + "/", more: "Open", text: ["For English, Maths and Science teachers: find a teacher of your subject to exchange places with. Private: your details go only to a teacher whose request matches yours."] };
 const at = more.items.findIndex((c) => c.url === card.url);
 if (at === -1) more.items.push(card); else more.items[at] = card;
+
+// The button goes first in the hero, because a teacher looking for a transfer
+// is not browsing for lesson plans.
+const button = { label: "Mutual transfers", url: SLUG + "/", style: "btn--accent" };
+hub.hero.buttons = hub.hero.buttons || [];
+const buttonAt = hub.hero.buttons.findIndex((b) => b.url === button.url);
+if (buttonAt === -1) {
+  // The hero holds three buttons comfortably; the one it already led with
+  // becomes an outline button so that only one is highlighted.
+  hub.hero.buttons.forEach((b) => { if (b.style === "btn--accent") b.style = "btn--ghost-light"; });
+  hub.hero.buttons.unshift(button);
+} else {
+  hub.hero.buttons[buttonAt] = button;
+}
 fs.writeFileSync(hubFile, bom + JSON.stringify(tr, null, 2) + "\n");
 
-console.log(`Mutual Transfers page written, linking to ${url}; hub card ${at === -1 ? "added" : "updated"}. Now run the build.`);
+console.log(`Mutual Transfers page written, linking to ${url}; hub button and card ${at === -1 ? "added" : "updated"}. Now run the build.`);

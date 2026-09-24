@@ -17,9 +17,14 @@
         "text": "Material you can take into a classroom without rewriting it first, written by a teacher who has had to teach the same lessons to thirty-eight students at four different levels.",
         "buttons": [
           {
+            "label": "Mutual transfers",
+            "url": "teacher-resources/mutual-transfers/",
+            "style": "btn--accent"
+          },
+          {
             "label": "Lesson plans",
             "url": "teacher-resources/lesson-plans/",
-            "style": "btn--accent"
+            "style": "btn--ghost-light"
           },
           {
             "label": "Slow-learner support",

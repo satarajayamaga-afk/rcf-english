@@ -8,12 +8,22 @@
       "keywords": "past papers, model papers, marking schemes, O/L English papers, A/L Literature papers, revision papers",
       "kicker": "Resource centre",
       "kind": "page",
-      "scripts": ["paper-library"],
+      "scripts": [
+        "paper-library"
+      ],
       "hero": {
         "text": "Choose your grade or literature section and every paper in it appears at once. There is no long title to type. If you want one year only, enter it — for example 2024.",
         "buttons": [
-          { "label": "How to use past papers well", "url": "past-papers/how-to-use/", "style": "btn--accent" },
-          { "label": "Copyright policy", "url": "copyright-policy/", "style": "btn--ghost-light" }
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -50,9 +60,30 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "O/L English Papers", "url": "past-papers/ol-english/", "more": "Open", "text": ["Papers, model papers and revision material for the Ordinary Level English Language examination."] },
-            { "title": "O/L Literature Papers", "url": "past-papers/ol-literature/", "more": "Open", "text": ["Papers for O/L English Literature, with context and essay questions."] },
-            { "title": "A/L Literature Papers", "url": "past-papers/al-literature/", "more": "Open", "text": ["Advanced Level English Literature papers, including unseen appreciation."] }
+            {
+              "title": "O/L English Papers",
+              "url": "past-papers/ol-english/",
+              "more": "Open",
+              "text": [
+                "Papers, model papers and revision material for the Ordinary Level English Language examination."
+              ]
+            },
+            {
+              "title": "O/L Literature Papers",
+              "url": "past-papers/ol-literature/",
+              "more": "Open",
+              "text": [
+                "Papers for O/L English Literature, with context and essay questions."
+              ]
+            },
+            {
+              "title": "A/L Literature Papers",
+              "url": "past-papers/al-literature/",
+              "more": "Open",
+              "text": [
+                "Advanced Level English Literature papers, including unseen appreciation."
+              ]
+            }
           ]
         },
         {
@@ -60,12 +91,54 @@
           "heading": "Browse by paper type",
           "columns": "3",
           "items": [
-            { "title": "Model Papers", "url": "past-papers/model-papers/", "more": "Open", "text": ["Papers written in the style of the examination for practice."] },
-            { "title": "School Term-Test Papers", "url": "past-papers/term-test-papers/", "more": "Open", "text": ["First, second and third term papers set by schools."] },
-            { "title": "Provincial Papers", "url": "past-papers/provincial-papers/", "more": "Open", "text": ["Papers set at provincial level."] },
-            { "title": "Revision Papers", "url": "past-papers/revision-papers/", "more": "Open", "text": ["Shorter papers focused on particular skills or sections."] },
-            { "title": "Question Banks", "url": "past-papers/question-banks/", "more": "Open", "text": ["Collections of questions grouped by task or topic rather than by paper."] },
-            { "title": "Marking Schemes", "url": "past-papers/marking-schemes/", "more": "Open", "text": ["Marking guidance, where it may lawfully be published or linked."] }
+            {
+              "title": "Model Papers",
+              "url": "past-papers/model-papers/",
+              "more": "Open",
+              "text": [
+                "Papers written in the style of the examination for practice."
+              ]
+            },
+            {
+              "title": "School Term-Test Papers",
+              "url": "past-papers/term-test-papers/",
+              "more": "Open",
+              "text": [
+                "First, second and third term papers set by schools."
+              ]
+            },
+            {
+              "title": "Provincial Papers",
+              "url": "past-papers/provincial-papers/",
+              "more": "Open",
+              "text": [
+                "Papers set at provincial level."
+              ]
+            },
+            {
+              "title": "Revision Papers",
+              "url": "past-papers/revision-papers/",
+              "more": "Open",
+              "text": [
+                "Shorter papers focused on particular skills or sections."
+              ]
+            },
+            {
+              "title": "Question Banks",
+              "url": "past-papers/question-banks/",
+              "more": "Open",
+              "text": [
+                "Collections of questions grouped by task or topic rather than by paper."
+              ]
+            },
+            {
+              "title": "Marking Schemes",
+              "url": "past-papers/marking-schemes/",
+              "more": "Open",
+              "text": [
+                "Marking guidance, where it may lawfully be published or linked."
+              ]
+            }
           ]
         },
         {
@@ -80,7 +153,6 @@
         }
       ]
     },
-
     {
       "slug": "past-papers/grade-10",
       "title": "Grade 10 Papers",
@@ -89,14 +161,32 @@
       "keywords": "grade 10 english papers, grade 10 literature papers, term test papers, provincial papers, marking schemes",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
       "hero": {
         "text": "Grade 10 English Language and English Literature term test papers. Every paper here has been opened and checked: the grade, subject and term match, the source printed on the paper has been recorded, and no paper carrying student information is listed.",
         "buttons": [
-          { "label": "How to use past papers well", "url": "past-papers/how-to-use/", "style": "btn--accent" },
-          { "label": "Copyright policy", "url": "copyright-policy/", "style": "btn--ghost-light" }
+          {
+            "label": "How to use past papers well",
+            "url": "past-papers/how-to-use/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Copyright policy",
+            "url": "copyright-policy/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -113,7 +203,9 @@
         {
           "type": "paperLibrary",
           "heading": "Grade 10 papers",
-          "fixed": { "grade": "10" },
+          "fixed": {
+            "grade": "10"
+          },
           "chooser": false,
           "sectionLabel": "Grade 10",
           "sectionNote": "Every Grade 10 paper on the site, English Language and English Literature together, newest year first. Enter a year to see only that year."
@@ -132,10 +224,26 @@
           "heading": "Prepare before you practise",
           "variant": "tint",
           "items": [
-            { "title": "Grammar", "text": "Revise the structures these papers test before you sit one.", "url": "ol-english/grammar/" },
-            { "title": "Writing tasks", "text": "Every writing task in the paper, taught in six guided steps.", "url": "ol-english/guided-writing/" },
-            { "title": "Reading comprehension", "text": "How to work through the reading passages under time.", "url": "ol-english/reading-comprehension/" },
-            { "title": "How to use past papers", "text": "Getting real value from a paper instead of just finishing it.", "url": "past-papers/how-to-use/" }
+            {
+              "title": "Grammar",
+              "text": "Revise the structures these papers test before you sit one.",
+              "url": "ol-english/grammar/"
+            },
+            {
+              "title": "Writing tasks",
+              "text": "Every writing task in the paper, taught in six guided steps.",
+              "url": "ol-english/guided-writing/"
+            },
+            {
+              "title": "Reading comprehension",
+              "text": "How to work through the reading passages under time.",
+              "url": "ol-english/reading-comprehension/"
+            },
+            {
+              "title": "How to use past papers",
+              "text": "Getting real value from a paper instead of just finishing it.",
+              "url": "past-papers/how-to-use/"
+            }
           ]
         }
       ]
@@ -147,9 +255,19 @@
       "keywords": "how to use past papers, timed practice, self marking, revision method",
       "kicker": "Past Papers",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Most students do past papers wrongly: too late, untimed, and without marking them. All three faults are easy to correct." },
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Most students do past papers wrongly: too late, untimed, and without marking them. All three faults are easy to correct."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -163,14 +281,46 @@
           "type": "steps",
           "heading": "How to use one paper properly",
           "variant": "tint",
-          "intro": ["This takes about three hours in total for a full paper. Three papers used this way are worth more than fifteen worked through carelessly."],
+          "intro": [
+            "This takes about three hours in total for a full paper. Three papers used this way are worth more than fifteen worked through carelessly."
+          ],
           "items": [
-            { "title": "Work it under real conditions", "text": ["By hand, to time, in one sitting, without notes and without your telephone. Anything else measures something other than what the examination measures."] },
-            { "title": "Stop when the time stops", "text": ["Draw a line where you were when the time ran out, then, if you wish, continue in a different colour. The line tells you the truth about your timing, which is information you badly need."] },
-            { "title": "Leave it for a day", "text": ["You cannot see your own errors an hour after writing. A day's gap makes you a much better marker of your own work."] },
-            { "title": "Mark it yourself, with the guidance beside you", "text": ["Use a marking scheme if one is lawfully available, or the checklists in the lessons on this site. Give yourself a mark, honestly. Being generous to yourself now is expensive later."] },
-            { "title": "Write down your three biggest losses", "text": ["Not every error — the three that cost the most marks. *Ran out of time on the essay. Wrote a notice without a date. Answered only half of question 4.*"] },
-            { "title": "Rewrite one answer properly", "text": ["Only one. The weakest one. This single step is where nearly all the improvement happens, and it is the step almost everybody skips."] }
+            {
+              "title": "Work it under real conditions",
+              "text": [
+                "By hand, to time, in one sitting, without notes and without your telephone. Anything else measures something other than what the examination measures."
+              ]
+            },
+            {
+              "title": "Stop when the time stops",
+              "text": [
+                "Draw a line where you were when the time ran out, then, if you wish, continue in a different colour. The line tells you the truth about your timing, which is information you badly need."
+              ]
+            },
+            {
+              "title": "Leave it for a day",
+              "text": [
+                "You cannot see your own errors an hour after writing. A day's gap makes you a much better marker of your own work."
+              ]
+            },
+            {
+              "title": "Mark it yourself, with the guidance beside you",
+              "text": [
+                "Use a marking scheme if one is lawfully available, or the checklists in the lessons on this site. Give yourself a mark, honestly. Being generous to yourself now is expensive later."
+              ]
+            },
+            {
+              "title": "Write down your three biggest losses",
+              "text": [
+                "Not every error — the three that cost the most marks. *Ran out of time on the essay. Wrote a notice without a date. Answered only half of question 4.*"
+              ]
+            },
+            {
+              "title": "Rewrite one answer properly",
+              "text": [
+                "Only one. The weakest one. This single step is where nearly all the improvement happens, and it is the step almost everybody skips."
+              ]
+            }
           ]
         },
         {
@@ -186,19 +336,39 @@
           "type": "table",
           "heading": "A term-by-term plan",
           "variant": "tint",
-          "columns": ["When", "What to do with past papers"],
+          "columns": [
+            "When",
+            "What to do with past papers"
+          ],
           "rows": [
-            ["Early in the year", "Single questions on task types you have just studied. Untimed at first, then timed."],
-            ["Mid-year", "Half papers, timed. Mark them yourself. Begin keeping a list of your recurring errors."],
-            ["Two months before", "One complete paper a fortnight, under full conditions. Mark, note three losses, rewrite one answer."],
-            ["Final month", "One complete paper a week. Revise your own marked scripts, not new material."],
-            ["Final week", "No new papers. Reread your own error list and your best answers. Sleep."]
+            [
+              "Early in the year",
+              "Single questions on task types you have just studied. Untimed at first, then timed."
+            ],
+            [
+              "Mid-year",
+              "Half papers, timed. Mark them yourself. Begin keeping a list of your recurring errors."
+            ],
+            [
+              "Two months before",
+              "One complete paper a fortnight, under full conditions. Mark, note three losses, rewrite one answer."
+            ],
+            [
+              "Final month",
+              "One complete paper a week. Revise your own marked scripts, not new material."
+            ],
+            [
+              "Final week",
+              "No new papers. Reread your own error list and your best answers. Sleep."
+            ]
           ]
         },
         {
           "type": "prose",
           "heading": "Marking your own script honestly",
-          "text": ["Self-marking is a skill, and it can be learnt. Ask these questions of each answer in turn."],
+          "text": [
+            "Self-marking is a skill, and it can be learnt. Ask these questions of each answer in turn."
+          ],
           "bullets": [
             "**Did I answer the question that was asked**, or one close to it?",
             "**Did I answer every part** of a multi-part question?",
@@ -224,14 +394,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "O/L Examination Techniques", "url": "ol-english/examination-techniques/", "more": "Open" },
-            { "title": "A/L Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" },
-            { "title": "All papers", "url": "past-papers/", "more": "Open" }
+            {
+              "title": "O/L Examination Techniques",
+              "url": "ol-english/examination-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "A/L Examination Guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            },
+            {
+              "title": "All papers",
+              "url": "past-papers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/ol-english",
       "title": "O/L English Past Papers",
@@ -239,18 +420,64 @@
       "keywords": "O/L English past papers, Ordinary Level English papers, model papers, Grade 11",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Papers for the Ordinary Level English Language examination. Study the task before you attempt the paper — the lessons are linked below." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Papers for the Ordinary Level English Language examination. Study the task before you attempt the paper — the lessons are linked below."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What these papers are",
+          "level": "h2",
+          "text": [
+            "Every paper here is for the Ordinary Level English Language examination or for the grades that lead to it, arranged by grade with the newest year first. Grade 11 holds the O/L papers themselves, because the examination is sat at the end of Grade 11; the lower grades hold school and zonal papers that use the same question types at an easier level.",
+            "They are linked from where they are published, not copied onto this site. If a link ever fails, please [tell us](corrections/) and it will be checked."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use a past paper properly",
+          "level": "h2",
+          "text": [
+            "Most students use past papers too early and too fast. A paper is a measuring instrument, and measuring is useless before there is something to measure."
+          ],
+          "bullets": [
+            "**Learn the task before you attempt it.** Read the [Paper I guide](ol-english/paper-i/) and the [Paper II guide](ol-english/paper-ii/) first, so you know what each section is asking for. A student who does not know what a task wants cannot practise it.",
+            "**Do one section at a time, untimed, at the start.** Accuracy first. Speed is a separate skill and comes later.",
+            "**Then do whole papers under time,** in one sitting, with no dictionary and no phone. This is the only way to find out what happens to your handwriting and your planning in the last twenty minutes.",
+            "**Mark it against the [marking schemes](past-papers/marking-schemes/), not against your feelings.** A paper you marked generously has taught you nothing.",
+            "**Write down what you lost marks for, not the score.** Three sittings later, check whether the same three things are still costing you marks. That list is your revision plan."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The mistake to avoid",
+          "level": "h2",
+          "text": [
+            "Reading a paper and its answers together, without attempting it, feels productive and is nearly worthless. The learning is in the attempt: the moment when you do not know what to write is the moment that teaches you something. Keep the answers closed until your own attempt is finished, however uncomfortable that is."
+          ]
+        },
         {
           "type": "paperLibrary",
           "heading": "O/L English papers",
           "intro": [
             "Choose a grade to see every English Language paper for it. Grade 11 holds the O/L examination papers themselves, because O/L is sat at the end of Grade 11."
           ],
-          "fixed": { "subject": "ol-english" }
+          "fixed": {
+            "subject": "ol-english"
+          }
         },
         {
           "type": "cards",
@@ -258,19 +485,50 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Syllabus and structure", "url": "ol-english/syllabus/", "more": "Open" },
-            { "title": "Paper I", "url": "ol-english/paper-i/", "more": "Open" },
-            { "title": "Paper II", "url": "ol-english/paper-ii/", "more": "Open" },
-            { "title": "Examination techniques", "url": "ol-english/examination-techniques/", "more": "Open" },
-            { "title": "Guided writing", "url": "ol-english/guided-writing/", "more": "Open" },
-            { "title": "Model questions", "url": "ol-english/model-questions/", "more": "Open" },
-            { "title": "Model answers", "url": "ol-english/model-answers/", "more": "Open" },
-            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" }
+            {
+              "title": "Syllabus and structure",
+              "url": "ol-english/syllabus/",
+              "more": "Open"
+            },
+            {
+              "title": "Paper I",
+              "url": "ol-english/paper-i/",
+              "more": "Open"
+            },
+            {
+              "title": "Paper II",
+              "url": "ol-english/paper-ii/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination techniques",
+              "url": "ol-english/examination-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "Guided writing",
+              "url": "ol-english/guided-writing/",
+              "more": "Open"
+            },
+            {
+              "title": "Model questions",
+              "url": "ol-english/model-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Model answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "How to use past papers",
+              "url": "past-papers/how-to-use/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/ol-literature",
       "title": "O/L Literature Past Papers",
@@ -278,16 +536,54 @@
       "keywords": "O/L Literature past papers, English Literature papers, context questions, essay questions",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Papers for O/L English Literature. Remember that a Literature paper depends on the prescribed texts of its year — check which texts a paper was set on before using it." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Papers for O/L English Literature. Remember that a Literature paper depends on the prescribed texts of its year — check which texts a paper was set on before using it."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What these papers are, and one thing to check first",
+          "level": "h2",
+          "text": [
+            "These are O/L English Literature papers, arranged by grade with the newest first. Unlike a language paper, a Literature paper can only be answered by somebody who has studied the particular texts it asks about.",
+            "**So check the texts before you use an older paper.** Prescribed texts change from time to time. A paper on a poem or play you are not studying is still useful for practising *how* to answer, but you cannot practise the content. The [prescribed texts page](ol-literature/texts/) lists what is set now."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use a Literature paper",
+          "level": "h2",
+          "text": [
+            "A Literature answer is marked on what you notice in the text and how well you argue it, not on how much you remember about the author."
+          ],
+          "bullets": [
+            "**Plan before you write.** Three or four lines: your argument, and the two or three moments in the text that prove it. Answers that begin without a plan retell the story, and retelling earns very little.",
+            "**Answer the question that was asked.** The commonest loss of marks in Literature is a good essay about the wrong thing. Underline the words in the question that limit it, and check them again when you finish.",
+            "**Quote short and quote from memory.** One well-chosen phrase, used to make a point, is worth more than four lines copied out. Practise with the book closed, because in the examination it will be.",
+            "**Practise the context questions separately** from the essays: they reward precision rather than length. See [context questions](ol-literature/context-questions/) and [essay questions](ol-literature/essay-questions/).",
+            "**Time the questions against their marks.** Running out of time on the last question is a planning failure, not a knowledge failure, and it is the easiest kind to fix."
+          ]
+        },
         {
           "type": "callout",
           "style": "warn",
           "title": "Prescribed texts change between years",
-          "text": ["A past Literature paper may be set on texts that are no longer prescribed. The **questions** remain useful — they show you the kinds of question asked and how they are worded — even when the texts differ. Check the current official syllabus for your own year."]
+          "text": [
+            "A past Literature paper may be set on texts that are no longer prescribed. The **questions** remain useful — they show you the kinds of question asked and how they are worded — even when the texts differ. Check the current official syllabus for your own year."
+          ]
         },
         {
           "type": "grade-resources",
@@ -299,7 +595,9 @@
         {
           "type": "paperLibrary",
           "heading": "O/L Literature papers",
-          "fixed": { "subject": "ol-literature" },
+          "fixed": {
+            "subject": "ol-literature"
+          },
           "sectionNote": "Every O/L English Literature paper on the site, for Grades 10 and 11 and for the examination itself, newest year first."
         },
         {
@@ -308,19 +606,50 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Syllabus", "url": "ol-literature/syllabus/", "more": "Open" },
-            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open" },
-            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open" },
-            { "title": "How to develop an answer", "url": "ol-literature/developing-an-answer/", "more": "Open" },
-            { "title": "Model answers", "url": "ol-literature/model-answers/", "more": "Open" },
-            { "title": "Prescribed texts", "url": "ol-literature/texts/", "more": "Open" },
-            { "title": "Revision activities", "url": "ol-literature/revision-activities/", "more": "Open" },
-            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" }
+            {
+              "title": "Syllabus",
+              "url": "ol-literature/syllabus/",
+              "more": "Open"
+            },
+            {
+              "title": "Context questions",
+              "url": "ol-literature/context-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay questions",
+              "url": "ol-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "How to develop an answer",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Open"
+            },
+            {
+              "title": "Model answers",
+              "url": "ol-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Prescribed texts",
+              "url": "ol-literature/texts/",
+              "more": "Open"
+            },
+            {
+              "title": "Revision activities",
+              "url": "ol-literature/revision-activities/",
+              "more": "Open"
+            },
+            {
+              "title": "How to use past papers",
+              "url": "past-papers/how-to-use/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/al-literature",
       "title": "A/L Literature Past Papers",
@@ -328,11 +657,48 @@
       "keywords": "A/L Literature past papers, Advanced Level Literature, critical appreciation papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Papers for Advanced Level English Literature. Unseen appreciation questions from any year are useful, whatever the prescribed texts were." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Papers for Advanced Level English Literature. Unseen appreciation questions from any year are useful, whatever the prescribed texts were."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What these papers are, and which years still apply",
+          "level": "h2",
+          "text": [
+            "These are A/L English Literature papers, newest first. Two things are worth knowing before you download one.",
+            "**Papers from earlier years may test texts that are no longer prescribed.** The set texts have changed over the years, so an older paper can ask about a novel or play nobody now studies. Such a paper is still useful for practising the *form* of an answer - the wording of the questions, the balance between argument and evidence - but not for revising content. Check the [prescribed texts page](al-literature/prescribed-texts/) for what is set now.",
+            "**Some official marking material is marked confidential and is not reproduced here.** Where that is the case the paper is linked without it, and the [answer development](al-literature/answer-development/) pages explain what a strong answer contains instead."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to work with an A/L Literature paper",
+          "level": "h2",
+          "text": [
+            "At this level the examiner is looking for an argument that could only have been written by somebody who had read the text closely and thought about it."
+          ],
+          "bullets": [
+            "**Read the whole paper before choosing.** The question that looks easiest at first glance is often the one with the least to say about it.",
+            "**Spend the first five minutes planning, not writing.** An A/L essay lives or dies on its structure: a position, three developed points, and a conclusion that does more than repeat the introduction.",
+            "**Build your own quotation bank** as you study - eight to ten short quotations for each text, each attached to an idea rather than to a plot event.",
+            "**Write at least three full essays under time before the examination.** Writing a complete essay in the time allowed is a physical skill as much as an intellectual one.",
+            "**Compare your answer with the [critical appreciation](al-literature/critical-appreciation/) and [essay question](al-literature/essay-questions/) guidance** rather than with a memorised model. Examiners recognise a memorised essay immediately."
+          ]
+        },
         {
           "type": "callout",
           "style": "tip",
@@ -352,7 +718,9 @@
         {
           "type": "paperLibrary",
           "heading": "A/L Literature papers",
-          "fixed": { "subject": "al-literature" },
+          "fixed": {
+            "subject": "al-literature"
+          },
           "sectionNote": "Every Advanced Level English Literature paper on the site, newest year first."
         },
         {
@@ -361,19 +729,50 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Syllabus", "url": "al-literature/syllabus/", "more": "Open" },
-            { "title": "Critical appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Essay questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Answer development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Model answers", "url": "al-literature/model-answers/", "more": "Open" },
-            { "title": "Examination guidance", "url": "al-literature/examination-guidance/", "more": "Open" },
-            { "title": "Prescribed texts", "url": "al-literature/prescribed-texts/", "more": "Open" },
-            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" }
+            {
+              "title": "Syllabus",
+              "url": "al-literature/syllabus/",
+              "more": "Open"
+            },
+            {
+              "title": "Critical appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Model answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            },
+            {
+              "title": "Prescribed texts",
+              "url": "al-literature/prescribed-texts/",
+              "more": "Open"
+            },
+            {
+              "title": "How to use past papers",
+              "url": "past-papers/how-to-use/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/model-papers",
       "title": "Model Papers",
@@ -381,11 +780,46 @@
       "keywords": "model papers, practice papers, mock papers, English, Literature",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Papers written in the style of the examination. Useful when you have exhausted the real papers, or want practice on a specific format." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Papers written in the style of the examination. Useful when you have exhausted the real papers, or want practice on a specific format."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a model paper is - and what it is not",
+          "level": "h2",
+          "text": [
+            "A model paper is written by a teacher, a publisher or a school to resemble the real examination. It is not set by the Department of Examinations, and no model paper can promise to predict what will be asked.",
+            "That makes model papers useful for one thing in particular: **volume**. There are only so many real past papers, and a student who needs twenty attempts at a task type will run out of them. Model papers fill that gap."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use them without being misled",
+          "level": "h2",
+          "text": [
+            "The danger of model papers is calibration. Some are noticeably harder than the real examination and some noticeably easier, so a mark from a model paper is not a reliable measure of where you stand."
+          ],
+          "bullets": [
+            "**Practise on model papers; measure on real past papers.** Keep two or three genuine papers unopened until the last few weeks, and use those to judge your readiness.",
+            "**Treat an odd question as an opportunity, not an error.** If a model paper asks something in an unfamiliar way, that is useful: the real examination will also phrase something in a way you did not expect.",
+            "**Check the syllabus, not the year.** A model paper written for an earlier syllabus may test content that has since moved or gone.",
+            "**Mark to the real standard.** Use the official [marking schemes](past-papers/marking-schemes/) for the closest real paper rather than the model paper's own answers, which are often more generous."
+          ]
+        },
         {
           "type": "callout",
           "style": "note",
@@ -398,7 +832,9 @@
         {
           "type": "paperLibrary",
           "heading": "Model papers",
-          "fixed": { "type": "model-paper" },
+          "fixed": {
+            "type": "model-paper"
+          },
           "chooser": false,
           "sectionLabel": "Model papers",
           "sectionNote": "Every model paper on the site, from Grade 1 to O/L, newest year first. The grade each one is for is printed on its card."
@@ -409,14 +845,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "How to use past papers", "url": "past-papers/how-to-use/", "more": "Open" },
-            { "title": "O/L model questions", "url": "ol-english/model-questions/", "more": "Open" },
-            { "title": "Revision papers", "url": "past-papers/revision-papers/", "more": "Open" }
+            {
+              "title": "How to use past papers",
+              "url": "past-papers/how-to-use/",
+              "more": "Open"
+            },
+            {
+              "title": "O/L model questions",
+              "url": "ol-english/model-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Revision papers",
+              "url": "past-papers/revision-papers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/term-test-papers",
       "title": "School Term-Test Papers",
@@ -424,18 +871,55 @@
       "keywords": "term test papers, school papers, first term, second term, third term",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Term-test papers are shorter than the examination and are often better graded for practice during the year." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Term-test papers are shorter than the examination and are often better graded for practice during the year."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What term test papers are good for",
+          "level": "h2",
+          "text": [
+            "These are the papers schools and zones set for the first, second and third terms. They differ from examination papers in one way that makes them valuable: **a term test only covers what has been taught by that point in the year.**",
+            "That makes them the right practice for the middle of a school year, when a full examination paper would mostly ask about material a class has not reached yet - which discourages students for no good reason."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use them",
+          "level": "h2",
+          "text": [
+            "Expect variation. Different schools and zones write to different levels of difficulty and set out their papers differently, and that variation is itself worth meeting before the real examination."
+          ],
+          "bullets": [
+            "**Match the term, not just the grade.** A third-term paper used in the first term will look impossible; the same paper in November is a fair test.",
+            "**Use them to find gaps early.** A term test that exposes a weakness in September can still be fixed. The same weakness found in a past paper in December cannot.",
+            "**Do not compare marks between schools.** Two papers marked in two schools are not the same measurement. Compare your own performance across two papers from the same source instead.",
+            "**Keep the papers your own school sets.** Your teachers' papers tell you how your teachers ask questions, which no downloaded paper can."
+          ]
+        },
         {
           "type": "paperLibrary",
           "heading": "Term-test papers",
           "intro": [
             "Choose a grade or literature section to see every first, second and third term paper for it."
           ],
-          "fixed": { "examination": "school-term-test" }
+          "fixed": {
+            "examination": "school-term-test"
+          }
         },
         {
           "type": "callout",
@@ -449,7 +933,6 @@
         }
       ]
     },
-
     {
       "slug": "past-papers/provincial-papers",
       "title": "Provincial Papers",
@@ -457,29 +940,67 @@
       "keywords": "provincial papers, provincial examination, English papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Provincial papers are usually closer to the national examination in style and standard than school papers, which makes them valuable practice." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Provincial papers are usually closer to the national examination in style and standard than school papers, which makes them valuable practice."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "Why provincial papers are worth using",
+          "level": "h2",
+          "text": [
+            "These papers are set by provincial departments of education. They follow the same national syllabus as the examination, but they are written by different people - and that is exactly what makes them useful.",
+            "A student who has only ever practised on papers from one source learns that source's habits: its favourite question types, its phrasing, the order it puts things in. The examination will not share those habits. Meeting the same content asked differently, several times, is what makes a student steady on the day."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use them",
+          "level": "h2",
+          "text": [
+            "Papers from a province other than your own are not harder or easier in any systematic way; they are simply written by another hand."
+          ],
+          "bullets": [
+            "**Use them for unfamiliar phrasing.** When a question you know the answer to is worded in a way you have not seen, that discomfort is the practice. Note the wording rather than the answer.",
+            "**Work across provinces deliberately** in the last two months, one paper from each, rather than three from the same province.",
+            "**Check the year against your syllabus** before using an older provincial paper, as with any paper on this site.",
+            "**Mark against the official [marking schemes](past-papers/marking-schemes/) where one exists** for the equivalent national paper, so your standard does not drift."
+          ]
+        },
         {
           "type": "paperLibrary",
           "heading": "Provincial papers",
           "intro": [
             "Choose a grade or literature section to see every paper set at provincial level for it. The province is named on each card."
           ],
-          "fixed": { "examination": "provincial" }
+          "fixed": {
+            "examination": "provincial"
+          }
         },
         {
           "type": "callout",
           "style": "legal",
           "variant": "tint",
           "title": "Copyright",
-          "text": ["Where a provincial paper is published by an official body on its own website, RCF English links to it there rather than copying it. Where a paper is reproduced here, it is because permission has been given. See the [Copyright and Resource Policy](copyright-policy/)."]
+          "text": [
+            "Where a provincial paper is published by an official body on its own website, RCF English links to it there rather than copying it. Where a paper is reproduced here, it is because permission has been given. See the [Copyright and Resource Policy](copyright-policy/)."
+          ]
         }
       ]
     },
-
     {
       "slug": "past-papers/revision-papers",
       "title": "Revision Papers",
@@ -487,11 +1008,46 @@
       "keywords": "revision papers, practice papers, skill practice, short papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "A full paper takes three hours and a whole afternoon to use properly. A revision paper takes thirty minutes, which means you will actually do it." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "A full paper takes three hours and a whole afternoon to use properly. A revision paper takes thirty minutes, which means you will actually do it."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What revision papers are",
+          "level": "h2",
+          "text": [
+            "Revision papers are shorter and more focused than full examination papers. They are meant for the weeks when there is no longer time to sit a complete paper every day, but there is still time to repair particular weaknesses.",
+            "A full paper takes a long sitting and a long marking session. A revision paper takes a fraction of that, which means it can actually be done - and a short paper that gets done beats a long one that does not."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where they fit in the last weeks",
+          "level": "h2",
+          "text": [
+            "The last month before an examination is not the time to meet new material. It is the time to make what you already know reliable under pressure."
+          ],
+          "bullets": [
+            "**Use one every second day, marked the same day.** Practice you have not marked is only writing.",
+            "**Alternate the skill.** Reading one day, writing the next, so that no single weakness swallows the whole week.",
+            "**Keep two full past papers for the final fortnight,** done in one sitting at the real length, so the examination is not the first long paper you have written in a month.",
+            "**Stop adding new material in the last ten days** and use revision papers only to rehearse what is already there. Anxiety in the final week comes mostly from trying to learn something new too late."
+          ]
+        },
         {
           "type": "callout",
           "style": "tip",
@@ -504,7 +1060,9 @@
         {
           "type": "paperLibrary",
           "heading": "Revision papers",
-          "fixed": { "type": "revision-paper" },
+          "fixed": {
+            "type": "revision-paper"
+          },
           "chooser": false,
           "sectionLabel": "Revision papers",
           "sectionNote": "Every revision paper on the site. The grade each one is for is printed on its card."
@@ -515,14 +1073,28 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Interactive learning", "url": "interactive/", "more": "Open", "text": ["Ten activities that mark themselves and explain every answer."] },
-            { "title": "O/L interactive revision", "url": "ol-english/interactive-revision/", "more": "Open" },
-            { "title": "Literature revision activities", "url": "ol-literature/revision-activities/", "more": "Open" }
+            {
+              "title": "Interactive learning",
+              "url": "interactive/",
+              "more": "Open",
+              "text": [
+                "Ten activities that mark themselves and explain every answer."
+              ]
+            },
+            {
+              "title": "O/L interactive revision",
+              "url": "ol-english/interactive-revision/",
+              "more": "Open"
+            },
+            {
+              "title": "Literature revision activities",
+              "url": "ol-literature/revision-activities/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/question-banks",
       "title": "Question Banks",
@@ -530,15 +1102,52 @@
       "keywords": "question bank, practice questions, task questions, topic questions",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "When you have just learnt how a task works, you do not want a whole paper. You want ten questions on that one task." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "When you have just learnt how a task works, you do not want a whole paper. You want ten questions on that one task."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a question bank is for",
+          "level": "h2",
+          "text": [
+            "A question bank is not a paper. It is a set of questions of the **same kind**, collected together, so that a student can practise one thing repeatedly instead of meeting it once every few weeks.",
+            "That is the difference that matters. A whole paper gives one attempt at each task type; a question bank gives ten attempts at the one task type that is costing you marks."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use a question bank",
+          "level": "h2",
+          "text": [
+            "Use it to repair a specific weakness that you have already identified from a marked paper. Working through a bank at random is much less useful than working through the one your own errors point at."
+          ],
+          "bullets": [
+            "**Find the weakness first.** Mark two past papers, list what you lost marks for, and choose the bank that matches the top item on the list.",
+            "**Do ten in a row, then stop and look for the pattern.** Ten answers of the same type make an error visible that one answer hides - always mishearing the same word, always forgetting the same tense, always writing past the word limit.",
+            "**Say the rule out loud before the next ten.** Learners who can state what they were getting wrong fix it; learners who just do more questions usually repeat it.",
+            "**Come back a week later, not the next day.** Practising the same task type twice in one sitting flatters your memory. A week's gap tests whether you actually learnt it."
+          ]
+        },
         {
           "type": "paperLibrary",
           "heading": "Question banks",
-          "fixed": { "type": "question-bank" },
+          "fixed": {
+            "type": "question-bank"
+          },
           "chooser": false,
           "sectionLabel": "Question banks",
           "sectionNote": "Every question bank on the site. The grade each one is for is printed on its card."
@@ -549,14 +1158,34 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "O/L English model questions", "url": "ol-english/model-questions/", "more": "Open", "text": ["Notices, emails, letters, paragraphs, essays, picture description, dialogue and speech — grouped by task, with dozens of questions in each."] },
-            { "title": "Literature revision activities", "url": "ol-literature/revision-activities/", "more": "Open", "text": ["Activities and exercises for individual and group revision."] },
-            { "title": "Interactive activities", "url": "interactive/", "more": "Open", "text": ["Ten self-marking activities across grammar, vocabulary, reading and error correction."] }
+            {
+              "title": "O/L English model questions",
+              "url": "ol-english/model-questions/",
+              "more": "Open",
+              "text": [
+                "Notices, emails, letters, paragraphs, essays, picture description, dialogue and speech — grouped by task, with dozens of questions in each."
+              ]
+            },
+            {
+              "title": "Literature revision activities",
+              "url": "ol-literature/revision-activities/",
+              "more": "Open",
+              "text": [
+                "Activities and exercises for individual and group revision."
+              ]
+            },
+            {
+              "title": "Interactive activities",
+              "url": "interactive/",
+              "more": "Open",
+              "text": [
+                "Ten self-marking activities across grammar, vocabulary, reading and error correction."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/marking-schemes",
       "title": "Marking Schemes",
@@ -564,10 +1193,22 @@
       "keywords": "marking schemes, marking guidance, answer schemes, how to mark",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "A marking scheme is the most useful document in revision — and the most misused." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "A marking scheme is the most useful document in revision — and the most misused."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -581,7 +1222,9 @@
         {
           "type": "paperLibrary",
           "heading": "Marking schemes and guidance",
-          "fixed": { "type": "marking-scheme" },
+          "fixed": {
+            "type": "marking-scheme"
+          },
           "chooser": false,
           "sectionLabel": "Marking schemes",
           "sectionNote": "Every marking scheme on the site that may lawfully be published or linked, newest year first. The grade and subject are printed on each card."
@@ -603,14 +1246,25 @@
           "heading": "Marking guidance on this site",
           "columns": "3",
           "items": [
-            { "title": "How teachers can mark Literature answers", "url": "ol-literature/marking-answers/", "more": "Open" },
-            { "title": "Marking guides for teachers", "url": "teacher-resources/marking-guides/", "more": "Open" },
-            { "title": "Model answers", "url": "past-papers/model-answers/", "more": "Open" }
+            {
+              "title": "How teachers can mark Literature answers",
+              "url": "ol-literature/marking-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Marking guides for teachers",
+              "url": "teacher-resources/marking-guides/",
+              "more": "Open"
+            },
+            {
+              "title": "Model answers",
+              "url": "past-papers/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "past-papers/model-answers",
       "title": "Model Answers",
@@ -618,11 +1272,47 @@
       "keywords": "model answers, sample answers, worked answers, past papers",
       "kicker": "Past Papers",
       "kind": "page",
-      "scripts": ["paper-library"],
-      "breadcrumbs": [{ "label": "Past Papers", "url": "past-papers/" }],
-      "backTo": { "label": "Past Papers", "url": "past-papers/" },
-      "hero": { "text": "Answers to compare your own against — for structure, not for wording." },
+      "scripts": [
+        "paper-library"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Past Papers",
+          "url": "past-papers/"
+        }
+      ],
+      "backTo": {
+        "label": "Past Papers",
+        "url": "past-papers/"
+      },
+      "hero": {
+        "text": "Answers to compare your own against — for structure, not for wording."
+      },
       "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a model answer is for",
+          "level": "h2",
+          "text": [
+            "A model answer shows what a full answer to a question looks like: how it is organised, how much detail it gives, and where it puts the point it is making. It is a demonstration, not something to be learnt by heart.",
+            "Used well, one model answer can change how a student writes every answer afterwards. Used badly - memorised and reproduced - it costs marks, because examiners recognise a memorised answer at once and because the question in front of you is never quite the question it answered."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to use one",
+          "level": "h2",
+          "text": [
+            "The order matters more than anything else on this page: **attempt, then compare.** A model answer read before your own attempt replaces your thinking instead of improving it."
+          ],
+          "bullets": [
+            "**Write your own answer first,** even a poor one, even an incomplete one. The gaps in your attempt are what the model is going to explain.",
+            "**Then compare structure, not wording.** Where does the model make its point? What does it do with evidence? How long is the introduction really? Those are transferable; its sentences are not.",
+            "**Mark the difference in one line.** *Mine retold the story; the model argued a point.* That line is worth more than rewriting the model out.",
+            "**Answer the same question again a week later,** without looking at either. What survives is what you learnt.",
+            "**Never learn an answer by heart for an essay question.** Learn the shape, the evidence and the argument, and write it fresh."
+          ]
+        },
         {
           "type": "callout",
           "style": "warn",
@@ -637,7 +1327,9 @@
         {
           "type": "paperLibrary",
           "heading": "Model answers by paper",
-          "fixed": { "type": "model-answer" },
+          "fixed": {
+            "type": "model-answer"
+          },
           "chooser": false,
           "sectionLabel": "Model answers",
           "sectionNote": "Every model answer document on the site, newest year first. The paper each one belongs to is named on its card."
@@ -648,9 +1340,30 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "O/L English model answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["Notice, formal email, paragraph and full essay, each with notes."] },
-            { "title": "O/L Literature model answers", "url": "ol-literature/model-answers/", "more": "Open", "text": ["A context answer and a full essay answer, dismantled."] },
-            { "title": "A/L Literature model answers", "url": "al-literature/model-answers/", "more": "Open", "text": ["An introduction, a developed body paragraph and a conclusion that judges."] }
+            {
+              "title": "O/L English model answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open",
+              "text": [
+                "Notice, formal email, paragraph and full essay, each with notes."
+              ]
+            },
+            {
+              "title": "O/L Literature model answers",
+              "url": "ol-literature/model-answers/",
+              "more": "Open",
+              "text": [
+                "A context answer and a full essay answer, dismantled."
+              ]
+            },
+            {
+              "title": "A/L Literature model answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open",
+              "text": [
+                "An introduction, a developed body paragraph and a conclusion that judges."
+              ]
+            }
           ]
         }
       ]
