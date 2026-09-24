@@ -14,18 +14,25 @@
     "",
     "After editing, run build.cmd."
   ],
-
   "pages": [
     {
       "slug": "teacher-resources/worksheets-by-grade",
       "title": "Worksheets by Grade",
-      "metaTitle": "Worksheets by Grade | English Teachers Resources | RCF English",
+      "metaTitle": "Worksheets by Grade | English Teachers Resources",
       "description": "Sixty printable English worksheets for Grades 6 to 11, ten per grade, covering reading, writing and grammar, each with an answer key. Written by RCF English and free to copy for teaching.",
       "keywords": "English worksheets, grade 6 worksheets, grade 11 worksheets, grammar worksheets, reading comprehension worksheets, writing worksheets, Sri Lanka",
       "kicker": "English Teachers Resources",
       "kind": "page",
-      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "English Teachers Resources",
+        "url": "teacher-resources/"
+      },
       "hero": {
         "text": "Sixty worksheets, ten for each grade from 6 to 11. Four grammar, three reading and three writing per grade, each with an answer key."
       },
@@ -53,12 +60,54 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 6", "url": "teacher-resources/worksheets-by-grade/grade-6/", "more": "10 worksheets", "text": ["Nouns, verbs, articles and prepositions; short passages; sentences and simple paragraphs."] },
-            { "title": "Grade 7", "url": "teacher-resources/worksheets-by-grade/grade-7/", "more": "10 worksheets", "text": ["Tenses, adjectives, plurals and conjunctions; longer passages; descriptions and instructions."] },
-            { "title": "Grade 8", "url": "teacher-resources/worksheets-by-grade/grade-8/", "more": "10 worksheets", "text": ["Modals, passive voice, prefixes and punctuation; inference; letters and reports."] },
-            { "title": "Grade 9", "url": "teacher-resources/worksheets-by-grade/grade-9/", "more": "10 worksheets", "text": ["Reported speech, relative clauses, conditionals; attitude in a text; formal writing."] },
-            { "title": "Grade 10", "url": "teacher-resources/worksheets-by-grade/grade-10/", "more": "10 worksheets", "text": ["Complex sentences, participles, articles at speed; examination-style comprehension; essays."] },
-            { "title": "Grade 11", "url": "teacher-resources/worksheets-by-grade/grade-11/", "more": "10 worksheets", "text": ["Error correction under pressure, register, cohesion; timed comprehension; full examination tasks."] }
+            {
+              "title": "Grade 6",
+              "url": "teacher-resources/worksheets-by-grade/grade-6/",
+              "more": "10 worksheets",
+              "text": [
+                "Nouns, verbs, articles and prepositions; short passages; sentences and simple paragraphs."
+              ]
+            },
+            {
+              "title": "Grade 7",
+              "url": "teacher-resources/worksheets-by-grade/grade-7/",
+              "more": "10 worksheets",
+              "text": [
+                "Tenses, adjectives, plurals and conjunctions; longer passages; descriptions and instructions."
+              ]
+            },
+            {
+              "title": "Grade 8",
+              "url": "teacher-resources/worksheets-by-grade/grade-8/",
+              "more": "10 worksheets",
+              "text": [
+                "Modals, passive voice, prefixes and punctuation; inference; letters and reports."
+              ]
+            },
+            {
+              "title": "Grade 9",
+              "url": "teacher-resources/worksheets-by-grade/grade-9/",
+              "more": "10 worksheets",
+              "text": [
+                "Reported speech, relative clauses, conditionals; attitude in a text; formal writing."
+              ]
+            },
+            {
+              "title": "Grade 10",
+              "url": "teacher-resources/worksheets-by-grade/grade-10/",
+              "more": "10 worksheets",
+              "text": [
+                "Complex sentences, participles, articles at speed; examination-style comprehension; essays."
+              ]
+            },
+            {
+              "title": "Grade 11",
+              "url": "teacher-resources/worksheets-by-grade/grade-11/",
+              "more": "10 worksheets",
+              "text": [
+                "Error correction under pressure, register, cohesion; timed comprehension; full examination tasks."
+              ]
+            }
           ]
         },
         {
@@ -66,28 +115,52 @@
           "heading": "More for teachers",
           "columns": "4",
           "items": [
-            { "title": "Lesson Plan Guidance", "url": "teacher-resources/lesson-plans/", "more": "Open" },
-            { "title": "Worksheets", "url": "teacher-resources/worksheets/", "more": "Open" },
-            { "title": "Marking Guides", "url": "teacher-resources/marking-guides/", "more": "Open" },
-            { "title": "Assessment", "url": "teacher-resources/assessment/", "more": "Open" }
+            {
+              "title": "Lesson Plan Guidance",
+              "url": "teacher-resources/lesson-plans/",
+              "more": "Open"
+            },
+            {
+              "title": "Worksheets",
+              "url": "teacher-resources/worksheets/",
+              "more": "Open"
+            },
+            {
+              "title": "Marking Guides",
+              "url": "teacher-resources/marking-guides/",
+              "more": "Open"
+            },
+            {
+              "title": "Assessment",
+              "url": "teacher-resources/assessment/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/worksheets-by-grade/grade-6",
       "title": "Grade 6 Worksheets",
-      "metaTitle": "Grade 6 English Worksheets | English Teachers Resources | RCF English",
+      "metaTitle": "Grade 6 English Worksheets | English Teachers Resources",
       "description": "Ten printable Grade 6 English worksheets with answer keys: nouns, verbs, articles, prepositions, three reading passages and three writing tasks. Written by RCF English.",
       "keywords": "grade 6 English worksheets, nouns verbs worksheet, grade 6 comprehension, grade 6 writing, answer key",
       "kicker": "Worksheets by Grade",
       "kind": "page",
       "breadcrumbs": [
-        { "label": "English Teachers Resources", "url": "teacher-resources/" },
-        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        }
       ],
-      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "backTo": {
+        "label": "Worksheets by Grade",
+        "url": "teacher-resources/worksheets-by-grade/"
+      },
       "hero": {
         "text": "Ten worksheets for Grade 6: four grammar, three reading and three writing, each with the answers."
       },
@@ -229,27 +302,47 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 7 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-7/", "more": "Open" },
-            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" },
-            { "title": "Marking Guides", "url": "teacher-resources/marking-guides/", "more": "Open" }
+            {
+              "title": "Grade 7 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-7/",
+              "more": "Open"
+            },
+            {
+              "title": "All grades",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "Open"
+            },
+            {
+              "title": "Marking Guides",
+              "url": "teacher-resources/marking-guides/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/worksheets-by-grade/grade-7",
       "title": "Grade 7 Worksheets",
-      "metaTitle": "Grade 7 English Worksheets | English Teachers Resources | RCF English",
+      "metaTitle": "Grade 7 English Worksheets | English Teachers Resources",
       "description": "Ten printable Grade 7 English worksheets with answer keys: tenses, adjectives, plurals, conjunctions, three reading passages and three writing tasks. Written by RCF English.",
       "keywords": "grade 7 English worksheets, tenses worksheet, adjectives worksheet, grade 7 comprehension, grade 7 writing",
       "kicker": "Worksheets by Grade",
       "kind": "page",
       "breadcrumbs": [
-        { "label": "English Teachers Resources", "url": "teacher-resources/" },
-        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        }
       ],
-      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "backTo": {
+        "label": "Worksheets by Grade",
+        "url": "teacher-resources/worksheets-by-grade/"
+      },
       "hero": {
         "text": "Ten worksheets for Grade 7: four grammar, three reading and three writing, each with the answers."
       },
@@ -392,9 +485,21 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 8 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-8/", "more": "Open" },
-            { "title": "Grade 6 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-6/", "more": "Open" },
-            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+            {
+              "title": "Grade 8 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-8/",
+              "more": "Open"
+            },
+            {
+              "title": "Grade 6 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-6/",
+              "more": "Open"
+            },
+            {
+              "title": "All grades",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "Open"
+            }
           ]
         }
       ]

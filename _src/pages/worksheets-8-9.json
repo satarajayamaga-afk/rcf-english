@@ -8,21 +8,29 @@
     "",
     "After editing, run build.cmd."
   ],
-
   "pages": [
     {
       "slug": "teacher-resources/worksheets-by-grade/grade-8",
       "title": "Grade 8 Worksheets",
-      "metaTitle": "Grade 8 English Worksheets | English Teachers Resources | RCF English",
+      "metaTitle": "Grade 8 English Worksheets | English Teachers Resources",
       "description": "Ten printable Grade 8 English worksheets with answer keys: modals, passive voice, word building, punctuation, three reading passages and three writing tasks. Written by RCF English.",
       "keywords": "grade 8 English worksheets, modals worksheet, passive voice worksheet, grade 8 comprehension, grade 8 writing",
       "kicker": "Worksheets by Grade",
       "kind": "page",
       "breadcrumbs": [
-        { "label": "English Teachers Resources", "url": "teacher-resources/" },
-        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        }
       ],
-      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "backTo": {
+        "label": "Worksheets by Grade",
+        "url": "teacher-resources/worksheets-by-grade/"
+      },
       "hero": {
         "text": "Ten worksheets for Grade 8: four grammar, three reading and three writing, each with the answers."
       },
@@ -174,27 +182,47 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 9 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-9/", "more": "Open" },
-            { "title": "Grade 7 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-7/", "more": "Open" },
-            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+            {
+              "title": "Grade 9 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-9/",
+              "more": "Open"
+            },
+            {
+              "title": "Grade 7 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-7/",
+              "more": "Open"
+            },
+            {
+              "title": "All grades",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/worksheets-by-grade/grade-9",
       "title": "Grade 9 Worksheets",
-      "metaTitle": "Grade 9 English Worksheets | English Teachers Resources | RCF English",
+      "metaTitle": "Grade 9 English Worksheets | English Teachers Resources",
       "description": "Ten printable Grade 9 English worksheets with answer keys: reported speech, relative clauses, conditionals, linking words, three reading passages and three writing tasks.",
       "keywords": "grade 9 English worksheets, reported speech worksheet, relative clauses, conditionals, grade 9 comprehension, grade 9 writing",
       "kicker": "Worksheets by Grade",
       "kind": "page",
       "breadcrumbs": [
-        { "label": "English Teachers Resources", "url": "teacher-resources/" },
-        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        }
       ],
-      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "backTo": {
+        "label": "Worksheets by Grade",
+        "url": "teacher-resources/worksheets-by-grade/"
+      },
       "hero": {
         "text": "Ten worksheets for Grade 9: four grammar, three reading and three writing, each with the answers."
       },
@@ -354,9 +382,21 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 10 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-10/", "more": "Open" },
-            { "title": "Grade 8 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-8/", "more": "Open" },
-            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+            {
+              "title": "Grade 10 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-10/",
+              "more": "Open"
+            },
+            {
+              "title": "Grade 8 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-8/",
+              "more": "Open"
+            },
+            {
+              "title": "All grades",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "Open"
+            }
           ]
         }
       ]

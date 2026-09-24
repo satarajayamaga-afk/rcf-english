@@ -1,11 +1,10 @@
 {
   "_comment": "AQA 8700 Section B writing guidance, both papers. The 40-mark total and the 24 content-and-organisation / 16 technical-accuracy split are printed on AQA's specimen question papers for 8700/1 and 8700/2; the AO5 and AO6 descriptions come from AQA's scheme of assessment. Section timings are AQA's; any per-task minute split is an RCF recommendation and says so. All prompts, examples and model answers are original RCF English work.",
-
   "pages": [
     {
       "slug": "global-english/gcse/aqa/paper-1/creative-writing",
       "title": "AQA Paper 1 Creative Writing",
-      "metaTitle": "AQA English Language Paper 1 Question 5: Creative Writing | RCF English",
+      "metaTitle": "AQA English Language Paper 1 Question 5: Creative Writing",
       "description": "AQA English Language Paper 1 Question 5 explained: description or narrative, 40 marks, and how the 24 content and 16 accuracy marks are actually earned.",
       "keywords": "AQA paper 1 question 5, GCSE creative writing, AQA descriptive writing, AQA narrative writing, GCSE English Language creative writing model answer",
       "kicker": "AQA GCSE English Language",
@@ -14,12 +13,27 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
-        { "label": "Paper 1", "url": "global-english/gcse/aqa/paper-1/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        },
+        {
+          "label": "Paper 1",
+          "url": "global-english/gcse/aqa/paper-1/"
+        }
       ],
-      "backTo": { "label": "Paper 1", "url": "global-english/gcse/aqa/paper-1/" },
+      "backTo": {
+        "label": "Paper 1",
+        "url": "global-english/gcse/aqa/paper-1/"
+      },
       "hero": {
         "text": "Forty marks - a quarter of the whole qualification - for one piece of writing in about forty-five minutes. It is the most improvable question on either paper, and the one most often left the least time."
       },
@@ -41,10 +55,22 @@
           "heading": "What the 40 marks are for",
           "level": "h2",
           "caption": "The split is printed on the specimen question paper; the objective wording is summarised from AQA's scheme of assessment.",
-          "columns": ["Marks", "Objective", "What it rewards"],
+          "columns": [
+            "Marks",
+            "Objective",
+            "What it rewards"
+          ],
           "rows": [
-            ["24", "AO5 - content and organisation", "Communicating clearly and imaginatively; choosing tone, style and register to suit form, purpose and audience; organising the whole piece so it holds together"],
-            ["16", "AO6 - technical accuracy", "A range of vocabulary and sentence structures used for effect, with accurate spelling and punctuation"]
+            [
+              "24",
+              "AO5 - content and organisation",
+              "Communicating clearly and imaginatively; choosing tone, style and register to suit form, purpose and audience; organising the whole piece so it holds together"
+            ],
+            [
+              "16",
+              "AO6 - technical accuracy",
+              "A range of vocabulary and sentence structures used for effect, with accurate spelling and punctuation"
+            ]
           ]
         },
         {
@@ -62,19 +88,27 @@
           "items": [
             {
               "title": "Choose in 60 seconds (RCF recommendation)",
-              "text": ["Description or narrative. Choose the one you have practised, not the one that looks easier. If you cannot picture an ending, do not choose the story."]
+              "text": [
+                "Description or narrative. Choose the one you have practised, not the one that looks easier. If you cannot picture an ending, do not choose the story."
+              ]
             },
             {
               "title": "Plan for 5 minutes",
-              "text": ["For a description: five things you will describe, in a deliberate order. For a narrative: the situation, the change, and the last line. Knowing the last line before you start is what keeps a story from wandering."]
+              "text": [
+                "For a description: five things you will describe, in a deliberate order. For a narrative: the situation, the change, and the last line. Knowing the last line before you start is what keeps a story from wandering."
+              ]
             },
             {
               "title": "Write for 35 minutes",
-              "text": ["Aim for four to six paragraphs and roughly one and a half to two sides. Vary paragraph length deliberately: a one-sentence paragraph after three long ones lands hard."]
+              "text": [
+                "Aim for four to six paragraphs and roughly one and a half to two sides. Vary paragraph length deliberately: a one-sentence paragraph after three long ones lands hard."
+              ]
             },
             {
               "title": "Check for 5 minutes",
-              "text": ["Not for better words - for accuracy. Sentence boundaries, verb tenses, apostrophes, spelling of the words you used most. This is the AO6 sweep."]
+              "text": [
+                "Not for better words - for accuracy. Sentence boundaries, verb tenses, apostrophes, spelling of the words you used most. This is the AO6 sweep."
+              ]
             }
           ]
         },
@@ -219,18 +253,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Paper 1 question by question", "url": "global-english/gcse/aqa/paper-1/questions/", "text": ["Questions 1 to 4 with methods and worked examples."] },
-            { "title": "Paper 2 viewpoint writing", "url": "global-english/gcse/aqa/paper-2/writing/", "text": ["The other 40-mark writing task."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "text": ["What costs the most marks on both papers."] }
+            {
+              "title": "Paper 1 question by question",
+              "url": "global-english/gcse/aqa/paper-1/questions/",
+              "text": [
+                "Questions 1 to 4 with methods and worked examples."
+              ]
+            },
+            {
+              "title": "Paper 2 viewpoint writing",
+              "url": "global-english/gcse/aqa/paper-2/writing/",
+              "text": [
+                "The other 40-mark writing task."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "text": [
+                "What costs the most marks on both papers."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/paper-2/writing",
       "title": "AQA Paper 2 Transactional Writing",
-      "metaTitle": "AQA English Language Paper 2 Question 5: Viewpoint Writing | RCF English",
+      "metaTitle": "AQA English Language Paper 2 Question 5: Viewpoint Writing",
       "description": "AQA English Language Paper 2 Question 5 explained: writing to present a point of view in articles, letters, speeches and essays, with a model answer and practice.",
       "keywords": "AQA paper 2 question 5, transactional writing GCSE, GCSE writing to argue, AQA viewpoint writing, GCSE article writing model answer",
       "kicker": "AQA GCSE English Language",
@@ -239,12 +290,27 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
-        { "label": "Paper 2", "url": "global-english/gcse/aqa/paper-2/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        },
+        {
+          "label": "Paper 2",
+          "url": "global-english/gcse/aqa/paper-2/"
+        }
       ],
-      "backTo": { "label": "Paper 2", "url": "global-english/gcse/aqa/paper-2/" },
+      "backTo": {
+        "label": "Paper 2",
+        "url": "global-english/gcse/aqa/paper-2/"
+      },
       "hero": {
         "text": "Forty marks for one piece of writing that argues a case. The form is named for you, the audience is named for you, and both are marked."
       },
@@ -266,13 +332,43 @@
           "heading": "The forms, and what gives each one away",
           "level": "h2",
           "caption": "Form is part of the content and organisation mark. An examiner should be able to name the form from the first three lines.",
-          "columns": ["Form", "Opening signal", "Voice", "Closing signal"],
+          "columns": [
+            "Form",
+            "Opening signal",
+            "Voice",
+            "Closing signal"
+          ],
           "rows": [
-            ["Article", "A headline, then a hook - a question, a scene, a surprising fact", "Semi-formal, aware of readers", "A thought, not a summary"],
-            ["Letter", "Dear Sir or Madam / Dear Mrs Bhatt, then your reason for writing", "Formal, courteous, direct", "Yours faithfully or Yours sincerely, and a request"],
-            ["Speech", "Address the audience: Good morning, everyone", "Spoken rhythm, direct address, rhetorical questions", "A call to action"],
-            ["Essay", "The issue stated without repeating the question", "Formal, balanced, impersonal", "Your view, stated once, at the end"],
-            ["Leaflet or text for a website", "A heading and short sections", "Clear, practical, second person", "What the reader should do next"]
+            [
+              "Article",
+              "A headline, then a hook - a question, a scene, a surprising fact",
+              "Semi-formal, aware of readers",
+              "A thought, not a summary"
+            ],
+            [
+              "Letter",
+              "Dear Sir or Madam / Dear Mrs Bhatt, then your reason for writing",
+              "Formal, courteous, direct",
+              "Yours faithfully or Yours sincerely, and a request"
+            ],
+            [
+              "Speech",
+              "Address the audience: Good morning, everyone",
+              "Spoken rhythm, direct address, rhetorical questions",
+              "A call to action"
+            ],
+            [
+              "Essay",
+              "The issue stated without repeating the question",
+              "Formal, balanced, impersonal",
+              "Your view, stated once, at the end"
+            ],
+            [
+              "Leaflet or text for a website",
+              "A heading and short sections",
+              "Clear, practical, second person",
+              "What the reader should do next"
+            ]
           ]
         },
         {
@@ -282,19 +378,27 @@
           "items": [
             {
               "title": "Decide your line in 2 minutes",
-              "text": ["Agree, disagree, or agree with a limit. Any of the three earns full marks; changing your mind in paragraph four does not. Write your position at the top of the page and keep looking at it."]
+              "text": [
+                "Agree, disagree, or agree with a limit. Any of the three earns full marks; changing your mind in paragraph four does not. Write your position at the top of the page and keep looking at it."
+              ]
             },
             {
               "title": "Plan three arguments in 3 minutes (RCF recommendation)",
-              "text": ["Three reasons, each with one example. Order them weakest to strongest, so the piece gains force. Add one counter-argument you will concede and answer."]
+              "text": [
+                "Three reasons, each with one example. Order them weakest to strongest, so the piece gains force. Add one counter-argument you will concede and answer."
+              ]
             },
             {
               "title": "Write for 35 minutes",
-              "text": ["Introduction, three argument paragraphs, one counter-argument paragraph, conclusion. Six paragraphs is a comfortable shape for the time."]
+              "text": [
+                "Introduction, three argument paragraphs, one counter-argument paragraph, conclusion. Six paragraphs is a comfortable shape for the time."
+              ]
             },
             {
               "title": "Check for 5 minutes",
-              "text": ["Accuracy only. Sixteen marks are waiting here."]
+              "text": [
+                "Accuracy only. Sixteen marks are waiting here."
+              ]
             }
           ]
         },
@@ -342,7 +446,9 @@
           "type": "checklist",
           "heading": "Practice, then check your own",
           "level": "h2",
-          "text": ["**Original RCF practice task.** \"Every school should abolish homework for students under fourteen and replace it with reading.\" Write a speech for your school's governing body in which you explain your point of view. 45 minutes. Then work through this list."],
+          "text": [
+            "**Original RCF practice task.** \"Every school should abolish homework for students under fourteen and replace it with reading.\" Write a speech for your school's governing body in which you explain your point of view. 45 minutes. Then work through this list."
+          ],
           "items": [
             "Can a reader name the form from my first three lines?",
             "Have I addressed the audience the task named, not a general reader?",
@@ -390,10 +496,34 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "text": ["Questions 1 to 4 with methods and worked examples."] },
-            { "title": "Planning and structuring answers", "url": "global-english/gcse/aqa/planning-answers/", "text": ["Paragraph shapes for every question on both papers."] },
-            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "text": ["How to revise an examination with no set texts."] },
-            { "title": "RCF Model Paper 2", "url": "global-english/gcse/aqa/papers/rcf-model-paper-2/", "text": ["A Question 5 viewpoint task in a full paper, with a model article."] }
+            {
+              "title": "Paper 2 question by question",
+              "url": "global-english/gcse/aqa/paper-2/questions/",
+              "text": [
+                "Questions 1 to 4 with methods and worked examples."
+              ]
+            },
+            {
+              "title": "Planning and structuring answers",
+              "url": "global-english/gcse/aqa/planning-answers/",
+              "text": [
+                "Paragraph shapes for every question on both papers."
+              ]
+            },
+            {
+              "title": "Revision strategies",
+              "url": "global-english/gcse/aqa/revision/",
+              "text": [
+                "How to revise an examination with no set texts."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 2",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-2/",
+              "text": [
+                "A Question 5 viewpoint task in a full paper, with a model article."
+              ]
+            }
           ]
         }
       ]

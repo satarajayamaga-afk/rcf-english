@@ -10,6 +10,18 @@ const seo = require("./seo.js");
 const BASE = "practical-english/ielts/model-essays";
 const total = 10 + essays.length;
 
+// A search result shows about 60 characters of a title and about 155 of a
+// description, so the first wording that fits is used.
+const TITLE_MAX = 60;
+const DESC_MIN = 140;
+const DESC_MAX = 160;
+const fitTitle = (...candidates) =>
+  candidates.find((t) => t.length <= TITLE_MAX) || candidates[candidates.length - 1];
+const fitDescription = (...candidates) =>
+  candidates.find((d) => d.length >= DESC_MIN && d.length <= DESC_MAX) ||
+  candidates.filter((d) => d.length <= DESC_MAX).sort((a, b) => b.length - a.length)[0] ||
+  candidates[candidates.length - 1];
+
 const crumbs = [
   { label: "Practical English", url: "practical-english/" },
   { label: "IELTS", url: "practical-english/ielts/" },
@@ -22,8 +34,22 @@ const page = (e, i) => {
     slug: `${BASE}/${e.slug}`,
     title: `Model Essay ${e.number}: ${e.title}`,
     // No band score in the title: no examiner has marked these essays.
-    metaTitle: `IELTS Writing Task 2 Sample Answer: ${e.title} | RCF English`,
-    description: `A full IELTS Writing Task 2 model answer on ${e.topic.toLowerCase()}, with the plan behind it, the language worth borrowing and how it meets the four band criteria. Written by RCF English.`,
+    // "IELTS Task 2" is what candidates type, and the brand is appended by
+    // Google itself. The essay's subject has to survive in 60 characters.
+    metaTitle: fitTitle(
+      `IELTS Writing Task 2 Sample Answer: ${e.title}`,
+      `IELTS Task 2 Sample Answer: ${e.title}`,
+      `IELTS Task 2 Essay: ${e.title}`,
+      `IELTS Task 2: ${e.title}`,
+      `IELTS Essay: ${e.title}`
+    ),
+    description: fitDescription(
+      `A full IELTS Writing Task 2 model answer on ${e.topic.toLowerCase()}, with the plan behind it, the language worth borrowing, and how it meets each band criterion.`,
+      `A full IELTS Writing Task 2 model answer on ${e.topic.toLowerCase()}, with the plan behind it, the language worth borrowing and how it meets the band criteria.`,
+      `An IELTS Writing Task 2 model answer on ${e.topic.toLowerCase()}, with the plan behind it, the language worth borrowing and how it meets the band criteria.`,
+      `An IELTS Task 2 model answer on ${e.topic.toLowerCase()}, with the plan behind it and the language worth borrowing.`,
+      `An IELTS Task 2 model answer on ${e.topic.toLowerCase()}, with its plan and the language to borrow.`
+    ),
     keywords: `IELTS writing task 2 sample answer, IELTS ${e.topic.toLowerCase()} essay, ${seo.typeTag(e.type).toLowerCase()} IELTS, IELTS model essay, IELTS essay example`,
     tags: seo.essayTags(e.slug, e.type),
     ...seo.ESSAY_SCHEMA,
@@ -98,7 +124,7 @@ table.rows = table.rows.filter((r) => Number(String(r[0])) <= 10);
 for (const e of essays) table.rows.push([String(e.number), e.topic, e.type, `[Read](${BASE}/${e.slug}/)`]);
 table.heading = `The ${total} essays`;
 hubPage.title = `${total} IELTS Task 2 Model Essays`;
-hubPage.metaTitle = `${total} IELTS Writing Task 2 Sample Answers, with plans and analysis | RCF English`;
+hubPage.metaTitle = `${total} IELTS Writing Task 2 Sample Answers, with Plans`;
 hubPage.keywords = "IELTS writing task 2 sample answers, IELTS model essays, IELTS essay examples, IELTS writing task 2 samples with answers, IELTS essay structure";
 hubPage.tags = ["IELTS Writing Task 2", "Sample answers", "Opinion essays", "Discussion essays", "Problem and solution", "Academic and General Training"];
 hubPage.blocks = seo.withShare(hubPage.blocks, seo.shareBlock(`${total} IELTS Writing Task 2 sample answers, each with a plan, useful language and how it meets the four criteria.`, seo.HASHTAGS_TASK2));

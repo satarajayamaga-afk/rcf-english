@@ -1,11 +1,10 @@
 {
   "_comment": "Cambridge IGCSE First Language English 0500. EVERY figure verified from Cambridge's own syllabus PDFs: the 2027-2029 syllabus (cambridgeinternational.org/Images/718783-2027-2029-syllabus.pdf) and the 2024-2026 syllabus (Images/635230-2024-2026-syllabus.pdf). Component table, durations, weightings and mark totals were read from the 'All candidates take' table in both, which are identical at that level. The question-by-question detail - Paper 1 Q1 to Q4 at 20 marks each, Paper 2 Section A 40 and Section B 40, and the reading/writing splits inside each - is taken from the 2027-2029 syllabus ONLY, because Paper 1 was restructured for 2027 and Paper 2 Section A was divided into two parts. Every page says so. Assessment objective wording R1-R5 and W1-W5 is quoted from the syllabus as short factual phrases. Nothing of Cambridge's is reproduced beyond that: no question, passage or mark-scheme descriptor is copied.",
-
   "pages": [
     {
       "slug": "global-english/igcse/first-language-english",
       "title": "Cambridge IGCSE First Language English",
-      "metaTitle": "Cambridge IGCSE First Language English 0500: Papers and Structure | RCF English",
+      "metaTitle": "Cambridge IGCSE First Language English 0500: Papers and Structure",
       "description": "Cambridge IGCSE First Language English 0500 explained: Paper 1 Reading, Paper 2 Directed Writing and Composition, the Coursework Portfolio alternative, the Speaking and Listening Test, and what changes for 2027.",
       "keywords": "IGCSE First Language English 0500, Cambridge 0500 syllabus, 0990 First Language English, IGCSE English Paper 1 Reading, IGCSE Directed Writing and Composition, 0500 2027 changes",
       "kicker": "Cambridge International",
@@ -14,15 +13,32 @@
       "resourceType": "guidance",
       "educationalLevel": "IGCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        }
       ],
-      "backTo": { "label": "IGCSE English", "url": "global-english/igcse/" },
+      "backTo": {
+        "label": "IGCSE English",
+        "url": "global-english/igcse/"
+      },
       "hero": {
         "text": "Two papers of two hours, eighty marks each, weighted fifty-fifty. One tests reading, the other tests writing, and the second can be replaced by coursework.",
         "buttons": [
-          { "label": "Paper 1: Reading", "url": "global-english/igcse/first-language-english/paper-1/", "style": "btn--ghost-light" },
-          { "label": "Paper 2: Writing", "url": "global-english/igcse/first-language-english/paper-2/", "style": "btn--ghost-light" }
+          {
+            "label": "Paper 1: Reading",
+            "url": "global-english/igcse/first-language-english/paper-1/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Paper 2: Writing",
+            "url": "global-english/igcse/first-language-english/paper-2/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -52,12 +68,42 @@
           "level": "h2",
           "stacked": true,
           "caption": "All candidates take Paper 1, and then either Paper 2 or Component 3. The school decides which. Component 4 is optional and does not count towards the grade.",
-          "columns": ["Component", "Time", "Marks", "Weighting", "What it is"],
+          "columns": [
+            "Component",
+            "Time",
+            "Marks",
+            "Weighting",
+            "What it is"
+          ],
           "rows": [
-            ["**Paper 1: Reading**", "2 hours", "80", "50%", "Structured and extended writing questions on **three reading texts**. Externally assessed. Every candidate takes this."],
-            ["**Paper 2: Directed Writing and Composition**", "2 hours", "80", "50%", "An extended writing question and a composition task. Externally assessed."],
-            ["**or Component 3: Coursework Portfolio**", "-", "80", "50%", "Three extended writing assignments. Internally assessed, externally moderated."],
-            ["**Component 4: Speaking and Listening Test**", "About 10-12 minutes", "-", "Separately endorsed", "Optional. Marks do **not** contribute to the overall grade; achievement is reported as grades 1 (high) to 5 (low) on the certificate."]
+            [
+              "**Paper 1: Reading**",
+              "2 hours",
+              "80",
+              "50%",
+              "Structured and extended writing questions on **three reading texts**. Externally assessed. Every candidate takes this."
+            ],
+            [
+              "**Paper 2: Directed Writing and Composition**",
+              "2 hours",
+              "80",
+              "50%",
+              "An extended writing question and a composition task. Externally assessed."
+            ],
+            [
+              "**or Component 3: Coursework Portfolio**",
+              "-",
+              "80",
+              "50%",
+              "Three extended writing assignments. Internally assessed, externally moderated."
+            ],
+            [
+              "**Component 4: Speaking and Listening Test**",
+              "About 10-12 minutes",
+              "-",
+              "Separately endorsed",
+              "Optional. Marks do **not** contribute to the overall grade; achievement is reported as grades 1 (high) to 5 (low) on the certificate."
+            ]
           ]
         },
         {
@@ -120,15 +166,27 @@
               "title": "Paper 1: Reading",
               "url": "global-english/igcse/first-language-english/paper-1/",
               "more": "Open Paper 1",
-              "text": ["Four questions of twenty marks each, on three texts. Comprehension, summary, a language task and an extended response."],
-              "bullets": ["2 hours, 80 marks, 50%", "Three reading texts: A, B and C", "Two of the four questions include writing marks"]
+              "text": [
+                "Four questions of twenty marks each, on three texts. Comprehension, summary, a language task and an extended response."
+              ],
+              "bullets": [
+                "2 hours, 80 marks, 50%",
+                "Three reading texts: A, B and C",
+                "Two of the four questions include writing marks"
+              ]
             },
             {
               "title": "Paper 2: Directed Writing and Composition",
               "url": "global-english/igcse/first-language-english/paper-2/",
               "more": "Open Paper 2",
-              "text": ["A directed writing task built on one or two short texts, and a composition chosen from four titles."],
-              "bullets": ["2 hours, 80 marks, 50%", "Section A 40 marks, Section B 40 marks", "Two descriptive and two narrative titles"]
+              "text": [
+                "A directed writing task built on one or two short texts, and a composition chosen from four titles."
+              ],
+              "bullets": [
+                "2 hours, 80 marks, 50%",
+                "Section A 40 marks, Section B 40 marks",
+                "Two descriptive and two narrative titles"
+              ]
             }
           ]
         },
@@ -220,20 +278,39 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "Paper 1: Reading", "url": "global-english/igcse/first-language-english/paper-1/", "text": "The four questions, what each is buying, and how long to spend." },
-            { "title": "Paper 2: Directed Writing and Composition", "url": "global-english/igcse/first-language-english/paper-2/", "text": "Section A, Section B, and the four composition titles." },
-            { "title": "Past papers and official links", "url": "global-english/igcse/first-language-english/papers/", "text": "Where the official syllabus, specimen papers and past papers are." },
-            { "title": "IGCSE English overview", "url": "global-english/igcse/", "text": "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes." },
-            { "title": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/", "text": "The other Cambridge IGCSE English syllabus, developed in full." }
+            {
+              "title": "Paper 1: Reading",
+              "url": "global-english/igcse/first-language-english/paper-1/",
+              "text": "The four questions, what each is buying, and how long to spend."
+            },
+            {
+              "title": "Paper 2: Directed Writing and Composition",
+              "url": "global-english/igcse/first-language-english/paper-2/",
+              "text": "Section A, Section B, and the four composition titles."
+            },
+            {
+              "title": "Past papers and official links",
+              "url": "global-english/igcse/first-language-english/papers/",
+              "text": "Where the official syllabus, specimen papers and past papers are."
+            },
+            {
+              "title": "IGCSE English overview",
+              "url": "global-english/igcse/",
+              "text": "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes."
+            },
+            {
+              "title": "English as a Second Language",
+              "url": "global-english/igcse/english-as-a-second-language/",
+              "text": "The other Cambridge IGCSE English syllabus, developed in full."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/first-language-english/paper-1",
       "title": "IGCSE First Language English Paper 1: Reading",
-      "metaTitle": "Cambridge 0500 Paper 1 Reading: Question by Question | RCF English",
+      "metaTitle": "Cambridge 0500 Paper 1 Reading: Question by Question",
       "description": "Cambridge IGCSE First Language English 0500 Paper 1 Reading explained question by question: comprehension, summary, the language task and the extended response, with timing.",
       "keywords": "0500 Paper 1 Reading, IGCSE summary question 120 words, IGCSE language task 200-250 words, IGCSE extended response to reading, Cambridge 0500 question 4",
       "kicker": "Cambridge IGCSE First Language English",
@@ -242,11 +319,23 @@
       "resourceType": "guidance",
       "educationalLevel": "IGCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "First Language English", "url": "global-english/igcse/first-language-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "First Language English",
+          "url": "global-english/igcse/first-language-english/"
+        }
       ],
-      "backTo": { "label": "First Language English", "url": "global-english/igcse/first-language-english/" },
+      "backTo": {
+        "label": "First Language English",
+        "url": "global-english/igcse/first-language-english/"
+      },
       "hero": {
         "text": "Three texts, four questions, twenty marks each. Two hours. Every candidate takes this paper."
       },
@@ -265,13 +354,43 @@
           "heading": "Where the 80 marks sit",
           "level": "h2",
           "stacked": true,
-          "columns": ["Question", "Text", "Marks", "Split"],
+          "columns": [
+            "Question",
+            "Text",
+            "Marks",
+            "Split"
+          ],
           "rows": [
-            ["**Q1** Comprehension", "Text A", "20", "20 reading"],
-            ["**Q2** Summary task", "Text B", "20", "2(a) 10 reading + 5 writing; 2(b) 5 reading"],
-            ["**Q3** Short-answer questions and language task", "Text C", "20", "10 reading + 10 reading"],
-            ["**Q4** Extended response to reading", "Text C", "20", "10 reading + 10 writing"],
-            ["**Total**", "Three texts", "**80**", "50% of the qualification"]
+            [
+              "**Q1** Comprehension",
+              "Text A",
+              "20",
+              "20 reading"
+            ],
+            [
+              "**Q2** Summary task",
+              "Text B",
+              "20",
+              "2(a) 10 reading + 5 writing; 2(b) 5 reading"
+            ],
+            [
+              "**Q3** Short-answer questions and language task",
+              "Text C",
+              "20",
+              "10 reading + 10 reading"
+            ],
+            [
+              "**Q4** Extended response to reading",
+              "Text C",
+              "20",
+              "10 reading + 10 writing"
+            ],
+            [
+              "**Total**",
+              "Three texts",
+              "**80**",
+              "50% of the qualification"
+            ]
           ]
         },
         {
@@ -378,18 +497,29 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "Paper 2: Directed Writing and Composition", "url": "global-english/igcse/first-language-english/paper-2/", "text": "The other half of the qualification." },
-            { "title": "First Language English overview", "url": "global-english/igcse/first-language-english/", "text": "All the components, the assessment objectives and what changes for 2027." },
-            { "title": "Past papers and official links", "url": "global-english/igcse/first-language-english/papers/", "text": "Where the syllabus and specimen papers are." }
+            {
+              "title": "Paper 2: Directed Writing and Composition",
+              "url": "global-english/igcse/first-language-english/paper-2/",
+              "text": "The other half of the qualification."
+            },
+            {
+              "title": "First Language English overview",
+              "url": "global-english/igcse/first-language-english/",
+              "text": "All the components, the assessment objectives and what changes for 2027."
+            },
+            {
+              "title": "Past papers and official links",
+              "url": "global-english/igcse/first-language-english/papers/",
+              "text": "Where the syllabus and specimen papers are."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/first-language-english/paper-2",
       "title": "IGCSE First Language English Paper 2: Directed Writing and Composition",
-      "metaTitle": "Cambridge 0500 Paper 2: Directed Writing and Composition | RCF English",
+      "metaTitle": "Cambridge 0500 Paper 2: Directed Writing and Composition",
       "description": "Cambridge IGCSE First Language English 0500 Paper 2 explained: Section A directed writing in two parts, Section B composition from four titles, with mark splits and timing.",
       "keywords": "0500 Paper 2, IGCSE directed writing, IGCSE composition descriptive narrative, Cambridge 0500 section A section B, 250-350 words directed writing",
       "kicker": "Cambridge IGCSE First Language English",
@@ -398,11 +528,23 @@
       "resourceType": "guidance",
       "educationalLevel": "IGCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "First Language English", "url": "global-english/igcse/first-language-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "First Language English",
+          "url": "global-english/igcse/first-language-english/"
+        }
       ],
-      "backTo": { "label": "First Language English", "url": "global-english/igcse/first-language-english/" },
+      "backTo": {
+        "label": "First Language English",
+        "url": "global-english/igcse/first-language-english/"
+      },
       "hero": {
         "text": "Two sections of forty marks. One builds on a text you are given; the other is yours from a title. Two hours."
       },
@@ -421,12 +563,37 @@
           "heading": "Where the 80 marks sit",
           "level": "h2",
           "stacked": true,
-          "columns": ["Section", "Task", "Marks", "Split"],
+          "columns": [
+            "Section",
+            "Task",
+            "Marks",
+            "Split"
+          ],
           "rows": [
-            ["**A: Directed Writing**", "Question 1(a), a structured question on the text(s)", "5", "5 reading (R3, R4)"],
-            ["**A: Directed Writing**", "Question 1(b), the directed writing task, about 250-350 words", "35", "10 reading (R1, R2, R3, R5) + 25 writing (W1-W5)"],
-            ["**B: Composition**", "One from four titles, about 350-450 words", "40", "40 writing (W1-W5)"],
-            ["**Total**", "", "**80**", "50% of the qualification"]
+            [
+              "**A: Directed Writing**",
+              "Question 1(a), a structured question on the text(s)",
+              "5",
+              "5 reading (R3, R4)"
+            ],
+            [
+              "**A: Directed Writing**",
+              "Question 1(b), the directed writing task, about 250-350 words",
+              "35",
+              "10 reading (R1, R2, R3, R5) + 25 writing (W1-W5)"
+            ],
+            [
+              "**B: Composition**",
+              "One from four titles, about 350-450 words",
+              "40",
+              "40 writing (W1-W5)"
+            ],
+            [
+              "**Total**",
+              "",
+              "**80**",
+              "50% of the qualification"
+            ]
           ]
         },
         {
@@ -528,18 +695,29 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "Paper 1: Reading", "url": "global-english/igcse/first-language-english/paper-1/", "text": "The other half of the qualification." },
-            { "title": "First Language English overview", "url": "global-english/igcse/first-language-english/", "text": "All the components, the assessment objectives and the Coursework Portfolio alternative." },
-            { "title": "Past papers and official links", "url": "global-english/igcse/first-language-english/papers/", "text": "Where the syllabus and specimen papers are." }
+            {
+              "title": "Paper 1: Reading",
+              "url": "global-english/igcse/first-language-english/paper-1/",
+              "text": "The other half of the qualification."
+            },
+            {
+              "title": "First Language English overview",
+              "url": "global-english/igcse/first-language-english/",
+              "text": "All the components, the assessment objectives and the Coursework Portfolio alternative."
+            },
+            {
+              "title": "Past papers and official links",
+              "url": "global-english/igcse/first-language-english/papers/",
+              "text": "Where the syllabus and specimen papers are."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/first-language-english/papers",
       "title": "IGCSE First Language English: Past Papers and Official Links",
-      "metaTitle": "Cambridge 0500 Past Papers and Syllabus: Official Links | RCF English",
+      "metaTitle": "Cambridge 0500 Past Papers and Syllabus: Official Links",
       "description": "Where to find the official Cambridge IGCSE First Language English 0500 syllabus, specimen papers and past papers, and what is and is not published openly.",
       "keywords": "0500 past papers, Cambridge IGCSE First Language English syllabus PDF, 0500 specimen paper 2027, Cambridge School Support Hub",
       "kicker": "Cambridge IGCSE First Language English",
@@ -548,11 +726,23 @@
       "resourceType": "paper library",
       "educationalLevel": "IGCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "First Language English", "url": "global-english/igcse/first-language-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "First Language English",
+          "url": "global-english/igcse/first-language-english/"
+        }
       ],
-      "backTo": { "label": "First Language English", "url": "global-english/igcse/first-language-english/" },
+      "backTo": {
+        "label": "First Language English",
+        "url": "global-english/igcse/first-language-english/"
+      },
       "hero": {
         "text": "The official documents, linked to their source. Cambridge decides what is published openly, and much of it reaches you through your school."
       },
@@ -571,13 +761,37 @@
           "heading": "Official Cambridge materials",
           "level": "h2",
           "caption": "Every link opens an official Cambridge page or document. Cambridge decides what is published openly and may move items; the qualification page is the reliable starting point.",
-          "columns": ["Item", "Years", "Official source"],
+          "columns": [
+            "Item",
+            "Years",
+            "Official source"
+          ],
           "rows": [
-            ["Qualification page: syllabus, specimen materials and resources", "All", "[Cambridge IGCSE English - First Language (0500)](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-first-language-0500/)"],
-            ["Syllabus", "2027, 2028, 2029", "[0500 syllabus for 2027-2029 (PDF)](https://www.cambridgeinternational.org/Images/718783-2027-2029-syllabus.pdf)"],
-            ["Syllabus", "2024, 2025, 2026", "[0500 syllabus for 2024-2026 (PDF)](https://www.cambridgeinternational.org/Images/635230-2024-2026-syllabus.pdf)"],
-            ["Specimen Paper 1 Reading", "From 2027", "[0500/01 specimen paper (PDF)](https://www.cambridgeinternational.org/Images/718842-2027-specimen-paper-1.pdf)"],
-            ["All Cambridge programmes and qualifications", "All", "[Programmes and qualifications](https://www.cambridgeinternational.org/programmes-and-qualifications/)"]
+            [
+              "Qualification page: syllabus, specimen materials and resources",
+              "All",
+              "[Cambridge IGCSE English - First Language (0500)](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-english-first-language-0500/)"
+            ],
+            [
+              "Syllabus",
+              "2027, 2028, 2029",
+              "[0500 syllabus for 2027-2029 (PDF)](https://www.cambridgeinternational.org/Images/718783-2027-2029-syllabus.pdf)"
+            ],
+            [
+              "Syllabus",
+              "2024, 2025, 2026",
+              "[0500 syllabus for 2024-2026 (PDF)](https://www.cambridgeinternational.org/Images/635230-2024-2026-syllabus.pdf)"
+            ],
+            [
+              "Specimen Paper 1 Reading",
+              "From 2027",
+              "[0500/01 specimen paper (PDF)](https://www.cambridgeinternational.org/Images/718842-2027-specimen-paper-1.pdf)"
+            ],
+            [
+              "All Cambridge programmes and qualifications",
+              "All",
+              "[Programmes and qualifications](https://www.cambridgeinternational.org/programmes-and-qualifications/)"
+            ]
           ]
         },
         {
@@ -612,10 +826,26 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "First Language English overview", "url": "global-english/igcse/first-language-english/", "text": "All the components, the assessment objectives and what changes for 2027." },
-            { "title": "Paper 1: Reading", "url": "global-english/igcse/first-language-english/paper-1/", "text": "The four questions, question by question." },
-            { "title": "Paper 2: Directed Writing and Composition", "url": "global-english/igcse/first-language-english/paper-2/", "text": "Both sections, with the mark splits." },
-            { "title": "IGCSE English overview", "url": "global-english/igcse/", "text": "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes." }
+            {
+              "title": "First Language English overview",
+              "url": "global-english/igcse/first-language-english/",
+              "text": "All the components, the assessment objectives and what changes for 2027."
+            },
+            {
+              "title": "Paper 1: Reading",
+              "url": "global-english/igcse/first-language-english/paper-1/",
+              "text": "The four questions, question by question."
+            },
+            {
+              "title": "Paper 2: Directed Writing and Composition",
+              "url": "global-english/igcse/first-language-english/paper-2/",
+              "text": "Both sections, with the mark splits."
+            },
+            {
+              "title": "IGCSE English overview",
+              "url": "global-english/igcse/",
+              "text": "Cambridge, Pearson Edexcel and OxfordAQA International GCSE routes."
+            }
           ]
         }
       ]

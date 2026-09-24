@@ -17,400 +17,1669 @@
     {
       "slug": "practical-english/english-for-university",
       "title": "English for University Studies",
-      "metaTitle": "Spoken English for University: Orientation, Lectures, Lecturers, Seminars, Group Work, Presentations | RCF English",
+      "metaTitle": "Spoken English for University: Orientation, Lectures, Lecturers, Seminars, Group Work, Presentations",
       "description": "Brush up your spoken English for university: introducing yourself, asking questions in lectures, talking to lecturers, seminars, group projects, presentations and university offices, with conversations to hear and practise aloud, plus academic vocabulary, assignment instructions and referencing in brief.",
       "keywords": "spoken English for university students, academic speaking, English for seminars, talking to lecturers in English, group project English, presentation phrases, academic vocabulary, English for undergraduates Sri Lanka",
       "kicker": "Practical English",
       "kind": "lesson",
-      "scripts": ["dialogue"],
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
-      "backTo": { "label": "Practical English", "url": "practical-english/" },
+      "scripts": [
+        "dialogue"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Practical English",
+        "url": "practical-english/"
+      },
       "hero": {
         "text": "At university, the first test of your English is not an essay: it is introducing yourself, asking a question in a lecture, and speaking up in a seminar. Seven speaking topics come first, each with a conversation you can hear and take a part in.",
         "buttons": [
-          { "label": "Start speaking", "url": "practical-english/english-for-university/#introductions", "style": "btn--accent" },
-          { "label": "Speaking Practice", "url": "speaking-practice/?mode=part3", "style": "btn--ghost-light" }
+          {
+            "label": "Start speaking",
+            "url": "practical-english/english-for-university/#introductions",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Speaking Practice",
+            "url": "speaking-practice/?mode=part3",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
-        { "type": "steps", "heading": "How to practise each topic", "layout": "row", "items": [
-          { "title": "Say the phrases", "text": ["Read each phrase aloud twice."] },
-          { "title": "Play the conversation", "text": ["Listen for the phrases in use."] },
-          { "title": "Take a part", "text": ["Press a name and speak that person's lines."] },
-          { "title": "Make it yours", "text": ["Change the details to match your own course."] }
-        ] },
-
-        { "type": "prose", "id": "introductions", "heading": "1. Introducing yourself at orientation", "variant": "tint", "text": ["In your first week you will introduce yourself dozens of times. Prepare two or three sentences: your name, your course, and one thing about you."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Hi, I'm Dilshan. I'm doing a degree in Computer Science.", "Introducing yourself"],
-          ["Which course are you on?", "Asking someone else"],
-          ["I'm from Matara, so this is my first time living away from home.", "Adding something about you"],
-          ["Are you in the same tutorial group?", "Finding classmates"],
-          ["Shall we swap numbers, in case one of us misses a lecture?", "Keeping in touch"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "The first morning", "setting": "Two new students are waiting outside the lecture hall.", "speakers": ["Dilshan", "Anjali"], "lines": [
-          { "speaker": "Dilshan", "text": "Hi, is this the room for the Introduction to Programming lecture?" },
-          { "speaker": "Anjali", "text": "I think so. I'm waiting for the same one. I'm Anjali, by the way." },
-          { "speaker": "Dilshan", "text": "Nice to meet you. I'm Dilshan. Which course are you on?" },
-          { "speaker": "Anjali", "text": "Computer Science. I'm from Jaffna. What about you?" },
-          { "speaker": "Dilshan", "text": "Same course! I'm from Matara. It's a bit strange being so far from home." },
-          { "speaker": "Anjali", "text": "I know what you mean. Shall we swap numbers, in case one of us misses something?" },
-          { "speaker": "Dilshan", "text": "Good idea." }
-        ] } ] },
-
-        { "type": "prose", "id": "lectures", "heading": "2. Asking questions in and after lectures", "variant": "tint", "text": ["Many students never ask a question because they worry about their English. Lecturers are glad to be asked. A short, polite question is all you need."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Excuse me, could you repeat the last point, please?", "You missed something"],
-          ["Could you explain what you mean by *variable*?", "A word or idea is unclear"],
-          ["Sorry, could you speak a little more slowly?", "The lecture is too fast"],
-          ["Will these slides be available online?", "Asking about materials"],
-          ["Is this topic likely to be in the examination?", "Asking about assessment"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "After the lecture", "setting": "A student waits to speak to the lecturer at the end of a lecture.", "speakers": ["Student", "Dr Wijesinghe"], "lines": [
-          { "speaker": "Student", "text": "Excuse me, Dr Wijesinghe. Do you have a minute?" },
-          { "speaker": "Dr Wijesinghe", "text": "Of course. What can I do for you?" },
-          { "speaker": "Student", "text": "I didn't quite understand the difference between a sample and a population. Could you explain it again?" },
-          { "speaker": "Dr Wijesinghe", "text": "Certainly. The population is the whole group you are interested in, and the sample is the smaller group you actually study." },
-          { "speaker": "Student", "text": "I see. So if we survey fifty students, they are the sample?" },
-          { "speaker": "Dr Wijesinghe", "text": "Exactly. Good question." },
-          { "speaker": "Student", "text": "Thank you. And will the slides be available online?" },
-          { "speaker": "Dr Wijesinghe", "text": "Yes, I'll put them up this evening." }
-        ] } ] },
-
-        { "type": "prose", "id": "lecturers", "heading": "3. Talking to your lecturer during office hours", "variant": "tint", "text": ["Office hours are times when lecturers are available to help students. Go prepared: know exactly what you want to ask, and bring your notes or draft."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Good afternoon. Is this a good time?", "Arriving"],
-          ["I'm in your second-year Economics class.", "Saying who you are"],
-          ["I'm having trouble with...", "Explaining the problem"],
-          ["Would it be possible to have an extension?", "Asking for more time"],
-          ["Thank you, that's really helpful.", "Leaving"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Asking for an extension", "setting": "A student visits a lecturer during office hours.", "speakers": ["Nadeesha", "Prof. Silva"], "lines": [
-          { "speaker": "Nadeesha", "text": "Good afternoon, Professor Silva. Is this a good time?" },
-          { "speaker": "Prof. Silva", "text": "Yes, come in. How can I help?" },
-          { "speaker": "Nadeesha", "text": "I'm Nadeesha, from your second-year Economics class. I've been ill this week, and I'm behind with the essay." },
-          { "speaker": "Prof. Silva", "text": "I'm sorry to hear that. Are you feeling better now?" },
-          { "speaker": "Nadeesha", "text": "Yes, thank you. Would it be possible to have a few extra days?" },
-          { "speaker": "Prof. Silva", "text": "Can you bring a medical certificate? If so, you can submit it next Wednesday." },
-          { "speaker": "Nadeesha", "text": "Yes, I have one. Thank you, that's really helpful." }
-        ] } ] },
-
-        { "type": "prose", "id": "seminars", "heading": "4. Speaking up in seminars", "variant": "tint", "text": ["In seminars, you are expected to speak. You do not need a perfect idea: agreeing with a reason, asking a question or adding an example all count."] },
-        { "type": "table", "columns": ["Purpose", "Say this"], "rows": [
-          ["Giving your view", "In my view, ... / It seems to me that..."],
-          ["Agreeing with a reason", "I agree with Kasun, because..."],
-          ["Disagreeing politely", "I see your point, but I'm not sure that..."],
-          ["Adding an example", "Just to add an example, in my village..."],
-          ["Asking for clarification", "Could you explain what you mean by...?"],
-          ["Getting into the discussion", "Could I just come in here?"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A seminar on social media", "setting": "A tutor leads a small discussion group.", "speakers": ["Tutor", "Kasun", "Fathima"], "lines": [
-          { "speaker": "Tutor", "text": "So, does social media help students learn? Kasun, what do you think?" },
-          { "speaker": "Kasun", "text": "In my view, it can help, because students share notes and ask each other questions in groups." },
-          { "speaker": "Fathima", "text": "Could I just come in here? I see your point, but I'm not sure it helps most students. It can also be very distracting." },
-          { "speaker": "Kasun", "text": "That's true. Maybe it depends on how it's used." },
-          { "speaker": "Tutor", "text": "Good. Fathima, could you give an example?" },
-          { "speaker": "Fathima", "text": "Well, I often start checking a study group and end up watching videos for an hour." }
-        ] } ] },
-
-        { "type": "prose", "id": "group-work", "heading": "5. Group project meetings", "variant": "tint", "text": ["Group projects succeed when everyone knows what to do and by when. Clear, polite English stops misunderstandings."] },
-        { "type": "table", "columns": ["Purpose", "Say this"], "rows": [
-          ["Starting", "Shall we start? Let's decide who does what."],
-          ["Offering", "I can do the survey, if that's OK."],
-          ["Suggesting", "How about meeting again on Thursday?"],
-          ["Checking", "So, just to confirm, you're writing the introduction?"],
-          ["Deadlines", "Can we all finish our parts by Monday?"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Dividing the work", "setting": "Three students plan a group presentation.", "speakers": ["Ravi", "Hasini", "Imran"], "lines": [
-          { "speaker": "Ravi", "text": "Shall we start? We need to decide who does what for the presentation." },
-          { "speaker": "Hasini", "text": "I can do the survey and the charts, if that's OK." },
-          { "speaker": "Imran", "text": "Great. I'll write the introduction and the conclusion." },
-          { "speaker": "Ravi", "text": "Then I'll prepare the slides. Can we all finish our parts by Monday?" },
-          { "speaker": "Hasini", "text": "Monday is fine. How about meeting on Tuesday to practise?" },
-          { "speaker": "Imran", "text": "So, just to confirm: survey and charts, Hasini; introduction and conclusion, me; slides, Ravi; practice on Tuesday." },
-          { "speaker": "Ravi", "text": "Perfect." }
-        ] } ] },
-
-        { "type": "prose", "id": "presentations", "heading": "6. Giving a presentation and answering questions", "variant": "tint", "text": ["Tell the audience what is coming, deliver it clearly, and remind them what they heard. The hardest part for many students is the questions at the end: it is fine to take a moment to think."] },
-        { "type": "table", "columns": ["Stage", "Say this"], "rows": [
-          ["Opening", "Good morning. Today I'm going to talk about..."],
-          ["Outline", "My presentation has three parts. First..., then..., and finally..."],
-          ["Moving on", "This brings me to my second point."],
-          ["Concluding", "To sum up, the key message is..."],
-          ["A difficult question", "That's a good question. Let me think for a moment."],
-          ["If you don't know", "I'm not sure, but I'll find out and let you know."]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Questions after a presentation", "setting": "A student has just finished presenting a survey on how students travel to campus.", "speakers": ["Hasini", "Lecturer"], "lines": [
-          { "speaker": "Hasini", "text": "To sum up, most students travel by bus, but many would cycle if there were safe cycle lanes. Thank you for listening. Are there any questions?" },
-          { "speaker": "Lecturer", "text": "Thank you, Hasini. How many students did you survey?" },
-          { "speaker": "Hasini", "text": "We surveyed eighty students from three faculties." },
-          { "speaker": "Lecturer", "text": "And do you think the results would be the same at other universities?" },
-          { "speaker": "Hasini", "text": "That's a good question. Let me think for a moment. Probably not, because our campus is close to the town centre." }
-        ] } ] },
-
-        { "type": "prose", "id": "university-offices", "heading": "7. The library and university offices", "variant": "tint", "text": ["Registering, borrowing books and sorting out problems all mean speaking to staff. Explain the problem clearly and have your student number ready."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["I'd like to register for the second semester.", "Registration"],
-          ["Could you tell me where I can find books on statistics?", "In the library"],
-          ["How long can I borrow this for?", "Borrowing books"],
-          ["My student ID card isn't working.", "Reporting a problem"],
-          ["Here is my student number.", "Giving your details"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "At the library desk", "setting": "A student needs help finding a book.", "speakers": ["Student", "Librarian"], "lines": [
-          { "speaker": "Student", "text": "Excuse me, could you tell me where I can find books on statistics?" },
-          { "speaker": "Librarian", "text": "Yes, they're on the second floor, in the mathematics section." },
-          { "speaker": "Student", "text": "Thank you. How long can I borrow a book for?" },
-          { "speaker": "Librarian", "text": "Two weeks, and you can renew it online if nobody else has reserved it." },
-          { "speaker": "Student", "text": "Great. And my student card isn't working at the entrance gate." },
-          { "speaker": "Librarian", "text": "Let me check. What's your student number?" }
-        ] } ] },
-
-        { "type": "prose", "id": "academic-vocabulary", "heading": "8. Academic vocabulary, said correctly", "variant": "tint", "text": ["These words appear in every subject. Learn the meaning, and practise the stress too: the stressed part is in capitals. A word said with the wrong stress can be hard for a lecturer to understand."] },
-        { "type": "table", "columns": ["Word", "Say it", "Meaning"], "rows": [
-          ["analyse", "A-na-lyse", "to examine something in detail"],
-          ["evidence", "E-vi-dence", "facts that show something is true"],
-          ["significant", "sig-NI-fi-cant", "large or important enough to notice"],
-          ["approach", "a-PPROACH", "a way of dealing with something"],
-          ["method", "ME-thod", "a planned way of doing something"],
-          ["hypothesis", "hy-PO-the-sis", "an idea that a study tests"],
-          ["conclude", "con-CLUDE", "to decide after looking at the evidence"],
-          ["research", "re-SEARCH or RE-search", "careful study to discover facts (both are heard)"]
-        ] },
-
-        { "type": "prose", "id": "instruction-words", "heading": "9. Understanding assignment instructions", "variant": "tint", "text": ["The first word of an assignment question tells you what to do. Students lose marks by describing when the question asks them to evaluate."] },
-        { "type": "table", "columns": ["Instruction word", "What you must do"], "rows": [
-          ["Describe", "Say what something is like, or what happened."],
-          ["Explain", "Say why or how something happens, with reasons."],
-          ["Compare", "Show the similarities and the differences."],
-          ["Discuss", "Look at different sides of an issue and reach a view."],
-          ["Evaluate", "Judge the strengths and weaknesses, and conclude."],
-          ["Justify", "Give good reasons for a decision or opinion."]
-        ] },
-
-        { "type": "prose", "id": "academic-writing", "heading": "10. Academic writing in brief: style, paraphrasing and referencing", "variant": "tint",
-          "text": ["Your department will teach academic writing in detail. These four rules will keep you safe from the start."],
-          "parts": [ { "heading": "The essentials", "bullets": [
-            "**Formal style:** no contractions (*it is*, not *it's*) and no informal words (*children*, not *kids*).",
-            "**Careful claims:** write *this suggests*, not *this proves*.",
-            "**Paraphrase properly:** understand the idea, cover the original, and write it in your own words and sentence structure.",
-            "**Always reference:** any idea or words from another writer need a reference, in the style your department asks for (such as APA or Harvard). Using them without one is plagiarism, even by accident."
-          ] } ] },
-
-        { "type": "cards", "heading": "Practise speaking out loud", "columns": "3", "items": [
-          { "title": "Speaking Practice", "url": "speaking-practice/?mode=part3", "more": "Speak", "text": ["Discussion questions to answer aloud, with feedback on reasons, examples and linking."] },
-          { "title": "IELTS Mock Speaking Test", "url": "practical-english/ielts/mock-speaking-test/", "more": "Start", "text": ["A full speaking test with an examiner voice: excellent practice for seminars."] },
-          { "title": "Elocution Basics", "url": "practical-english/elocution-basics/", "more": "Practise", "text": ["Posture, pace, pausing and speaking to an audience, for presentations."] },
-          { "title": "Listening Laboratory", "url": "listening-lab/", "more": "Listen", "text": ["Talks and lectures with note-taking questions."] },
-          { "title": "Essay Writing Exercises", "url": "essay-writing-exercises/?level=IELTS", "more": "Write", "text": ["When you are ready for writing: thesis statements, paragraphs and linking."] },
-          { "title": "IELTS Academic Practice Test", "url": "practical-english/ielts/practice-test-1/", "more": "Start", "text": ["Academic listening, reading, writing and speaking together."] }
-        ] }
+        {
+          "type": "steps",
+          "heading": "How to practise each topic",
+          "layout": "row",
+          "items": [
+            {
+              "title": "Say the phrases",
+              "text": [
+                "Read each phrase aloud twice."
+              ]
+            },
+            {
+              "title": "Play the conversation",
+              "text": [
+                "Listen for the phrases in use."
+              ]
+            },
+            {
+              "title": "Take a part",
+              "text": [
+                "Press a name and speak that person's lines."
+              ]
+            },
+            {
+              "title": "Make it yours",
+              "text": [
+                "Change the details to match your own course."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "introductions",
+          "heading": "1. Introducing yourself at orientation",
+          "variant": "tint",
+          "text": [
+            "In your first week you will introduce yourself dozens of times. Prepare two or three sentences: your name, your course, and one thing about you."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Hi, I'm Dilshan. I'm doing a degree in Computer Science.",
+              "Introducing yourself"
+            ],
+            [
+              "Which course are you on?",
+              "Asking someone else"
+            ],
+            [
+              "I'm from Matara, so this is my first time living away from home.",
+              "Adding something about you"
+            ],
+            [
+              "Are you in the same tutorial group?",
+              "Finding classmates"
+            ],
+            [
+              "Shall we swap numbers, in case one of us misses a lecture?",
+              "Keeping in touch"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "The first morning",
+              "setting": "Two new students are waiting outside the lecture hall.",
+              "speakers": [
+                "Dilshan",
+                "Anjali"
+              ],
+              "lines": [
+                {
+                  "speaker": "Dilshan",
+                  "text": "Hi, is this the room for the Introduction to Programming lecture?"
+                },
+                {
+                  "speaker": "Anjali",
+                  "text": "I think so. I'm waiting for the same one. I'm Anjali, by the way."
+                },
+                {
+                  "speaker": "Dilshan",
+                  "text": "Nice to meet you. I'm Dilshan. Which course are you on?"
+                },
+                {
+                  "speaker": "Anjali",
+                  "text": "Computer Science. I'm from Jaffna. What about you?"
+                },
+                {
+                  "speaker": "Dilshan",
+                  "text": "Same course! I'm from Matara. It's a bit strange being so far from home."
+                },
+                {
+                  "speaker": "Anjali",
+                  "text": "I know what you mean. Shall we swap numbers, in case one of us misses something?"
+                },
+                {
+                  "speaker": "Dilshan",
+                  "text": "Good idea."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "lectures",
+          "heading": "2. Asking questions in and after lectures",
+          "variant": "tint",
+          "text": [
+            "Many students never ask a question because they worry about their English. Lecturers are glad to be asked. A short, polite question is all you need."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Excuse me, could you repeat the last point, please?",
+              "You missed something"
+            ],
+            [
+              "Could you explain what you mean by *variable*?",
+              "A word or idea is unclear"
+            ],
+            [
+              "Sorry, could you speak a little more slowly?",
+              "The lecture is too fast"
+            ],
+            [
+              "Will these slides be available online?",
+              "Asking about materials"
+            ],
+            [
+              "Is this topic likely to be in the examination?",
+              "Asking about assessment"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "After the lecture",
+              "setting": "A student waits to speak to the lecturer at the end of a lecture.",
+              "speakers": [
+                "Student",
+                "Dr Wijesinghe"
+              ],
+              "lines": [
+                {
+                  "speaker": "Student",
+                  "text": "Excuse me, Dr Wijesinghe. Do you have a minute?"
+                },
+                {
+                  "speaker": "Dr Wijesinghe",
+                  "text": "Of course. What can I do for you?"
+                },
+                {
+                  "speaker": "Student",
+                  "text": "I didn't quite understand the difference between a sample and a population. Could you explain it again?"
+                },
+                {
+                  "speaker": "Dr Wijesinghe",
+                  "text": "Certainly. The population is the whole group you are interested in, and the sample is the smaller group you actually study."
+                },
+                {
+                  "speaker": "Student",
+                  "text": "I see. So if we survey fifty students, they are the sample?"
+                },
+                {
+                  "speaker": "Dr Wijesinghe",
+                  "text": "Exactly. Good question."
+                },
+                {
+                  "speaker": "Student",
+                  "text": "Thank you. And will the slides be available online?"
+                },
+                {
+                  "speaker": "Dr Wijesinghe",
+                  "text": "Yes, I'll put them up this evening."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "lecturers",
+          "heading": "3. Talking to your lecturer during office hours",
+          "variant": "tint",
+          "text": [
+            "Office hours are times when lecturers are available to help students. Go prepared: know exactly what you want to ask, and bring your notes or draft."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Good afternoon. Is this a good time?",
+              "Arriving"
+            ],
+            [
+              "I'm in your second-year Economics class.",
+              "Saying who you are"
+            ],
+            [
+              "I'm having trouble with...",
+              "Explaining the problem"
+            ],
+            [
+              "Would it be possible to have an extension?",
+              "Asking for more time"
+            ],
+            [
+              "Thank you, that's really helpful.",
+              "Leaving"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Asking for an extension",
+              "setting": "A student visits a lecturer during office hours.",
+              "speakers": [
+                "Nadeesha",
+                "Prof. Silva"
+              ],
+              "lines": [
+                {
+                  "speaker": "Nadeesha",
+                  "text": "Good afternoon, Professor Silva. Is this a good time?"
+                },
+                {
+                  "speaker": "Prof. Silva",
+                  "text": "Yes, come in. How can I help?"
+                },
+                {
+                  "speaker": "Nadeesha",
+                  "text": "I'm Nadeesha, from your second-year Economics class. I've been ill this week, and I'm behind with the essay."
+                },
+                {
+                  "speaker": "Prof. Silva",
+                  "text": "I'm sorry to hear that. Are you feeling better now?"
+                },
+                {
+                  "speaker": "Nadeesha",
+                  "text": "Yes, thank you. Would it be possible to have a few extra days?"
+                },
+                {
+                  "speaker": "Prof. Silva",
+                  "text": "Can you bring a medical certificate? If so, you can submit it next Wednesday."
+                },
+                {
+                  "speaker": "Nadeesha",
+                  "text": "Yes, I have one. Thank you, that's really helpful."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "seminars",
+          "heading": "4. Speaking up in seminars",
+          "variant": "tint",
+          "text": [
+            "In seminars, you are expected to speak. You do not need a perfect idea: agreeing with a reason, asking a question or adding an example all count."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Purpose",
+            "Say this"
+          ],
+          "rows": [
+            [
+              "Giving your view",
+              "In my view, ... / It seems to me that..."
+            ],
+            [
+              "Agreeing with a reason",
+              "I agree with Kasun, because..."
+            ],
+            [
+              "Disagreeing politely",
+              "I see your point, but I'm not sure that..."
+            ],
+            [
+              "Adding an example",
+              "Just to add an example, in my village..."
+            ],
+            [
+              "Asking for clarification",
+              "Could you explain what you mean by...?"
+            ],
+            [
+              "Getting into the discussion",
+              "Could I just come in here?"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A seminar on social media",
+              "setting": "A tutor leads a small discussion group.",
+              "speakers": [
+                "Tutor",
+                "Kasun",
+                "Fathima"
+              ],
+              "lines": [
+                {
+                  "speaker": "Tutor",
+                  "text": "So, does social media help students learn? Kasun, what do you think?"
+                },
+                {
+                  "speaker": "Kasun",
+                  "text": "In my view, it can help, because students share notes and ask each other questions in groups."
+                },
+                {
+                  "speaker": "Fathima",
+                  "text": "Could I just come in here? I see your point, but I'm not sure it helps most students. It can also be very distracting."
+                },
+                {
+                  "speaker": "Kasun",
+                  "text": "That's true. Maybe it depends on how it's used."
+                },
+                {
+                  "speaker": "Tutor",
+                  "text": "Good. Fathima, could you give an example?"
+                },
+                {
+                  "speaker": "Fathima",
+                  "text": "Well, I often start checking a study group and end up watching videos for an hour."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "group-work",
+          "heading": "5. Group project meetings",
+          "variant": "tint",
+          "text": [
+            "Group projects succeed when everyone knows what to do and by when. Clear, polite English stops misunderstandings."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Purpose",
+            "Say this"
+          ],
+          "rows": [
+            [
+              "Starting",
+              "Shall we start? Let's decide who does what."
+            ],
+            [
+              "Offering",
+              "I can do the survey, if that's OK."
+            ],
+            [
+              "Suggesting",
+              "How about meeting again on Thursday?"
+            ],
+            [
+              "Checking",
+              "So, just to confirm, you're writing the introduction?"
+            ],
+            [
+              "Deadlines",
+              "Can we all finish our parts by Monday?"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Dividing the work",
+              "setting": "Three students plan a group presentation.",
+              "speakers": [
+                "Ravi",
+                "Hasini",
+                "Imran"
+              ],
+              "lines": [
+                {
+                  "speaker": "Ravi",
+                  "text": "Shall we start? We need to decide who does what for the presentation."
+                },
+                {
+                  "speaker": "Hasini",
+                  "text": "I can do the survey and the charts, if that's OK."
+                },
+                {
+                  "speaker": "Imran",
+                  "text": "Great. I'll write the introduction and the conclusion."
+                },
+                {
+                  "speaker": "Ravi",
+                  "text": "Then I'll prepare the slides. Can we all finish our parts by Monday?"
+                },
+                {
+                  "speaker": "Hasini",
+                  "text": "Monday is fine. How about meeting on Tuesday to practise?"
+                },
+                {
+                  "speaker": "Imran",
+                  "text": "So, just to confirm: survey and charts, Hasini; introduction and conclusion, me; slides, Ravi; practice on Tuesday."
+                },
+                {
+                  "speaker": "Ravi",
+                  "text": "Perfect."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "presentations",
+          "heading": "6. Giving a presentation and answering questions",
+          "variant": "tint",
+          "text": [
+            "Tell the audience what is coming, deliver it clearly, and remind them what they heard. The hardest part for many students is the questions at the end: it is fine to take a moment to think."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Stage",
+            "Say this"
+          ],
+          "rows": [
+            [
+              "Opening",
+              "Good morning. Today I'm going to talk about..."
+            ],
+            [
+              "Outline",
+              "My presentation has three parts. First..., then..., and finally..."
+            ],
+            [
+              "Moving on",
+              "This brings me to my second point."
+            ],
+            [
+              "Concluding",
+              "To sum up, the key message is..."
+            ],
+            [
+              "A difficult question",
+              "That's a good question. Let me think for a moment."
+            ],
+            [
+              "If you don't know",
+              "I'm not sure, but I'll find out and let you know."
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Questions after a presentation",
+              "setting": "A student has just finished presenting a survey on how students travel to campus.",
+              "speakers": [
+                "Hasini",
+                "Lecturer"
+              ],
+              "lines": [
+                {
+                  "speaker": "Hasini",
+                  "text": "To sum up, most students travel by bus, but many would cycle if there were safe cycle lanes. Thank you for listening. Are there any questions?"
+                },
+                {
+                  "speaker": "Lecturer",
+                  "text": "Thank you, Hasini. How many students did you survey?"
+                },
+                {
+                  "speaker": "Hasini",
+                  "text": "We surveyed eighty students from three faculties."
+                },
+                {
+                  "speaker": "Lecturer",
+                  "text": "And do you think the results would be the same at other universities?"
+                },
+                {
+                  "speaker": "Hasini",
+                  "text": "That's a good question. Let me think for a moment. Probably not, because our campus is close to the town centre."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "university-offices",
+          "heading": "7. The library and university offices",
+          "variant": "tint",
+          "text": [
+            "Registering, borrowing books and sorting out problems all mean speaking to staff. Explain the problem clearly and have your student number ready."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "I'd like to register for the second semester.",
+              "Registration"
+            ],
+            [
+              "Could you tell me where I can find books on statistics?",
+              "In the library"
+            ],
+            [
+              "How long can I borrow this for?",
+              "Borrowing books"
+            ],
+            [
+              "My student ID card isn't working.",
+              "Reporting a problem"
+            ],
+            [
+              "Here is my student number.",
+              "Giving your details"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "At the library desk",
+              "setting": "A student needs help finding a book.",
+              "speakers": [
+                "Student",
+                "Librarian"
+              ],
+              "lines": [
+                {
+                  "speaker": "Student",
+                  "text": "Excuse me, could you tell me where I can find books on statistics?"
+                },
+                {
+                  "speaker": "Librarian",
+                  "text": "Yes, they're on the second floor, in the mathematics section."
+                },
+                {
+                  "speaker": "Student",
+                  "text": "Thank you. How long can I borrow a book for?"
+                },
+                {
+                  "speaker": "Librarian",
+                  "text": "Two weeks, and you can renew it online if nobody else has reserved it."
+                },
+                {
+                  "speaker": "Student",
+                  "text": "Great. And my student card isn't working at the entrance gate."
+                },
+                {
+                  "speaker": "Librarian",
+                  "text": "Let me check. What's your student number?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "academic-vocabulary",
+          "heading": "8. Academic vocabulary, said correctly",
+          "variant": "tint",
+          "text": [
+            "These words appear in every subject. Learn the meaning, and practise the stress too: the stressed part is in capitals. A word said with the wrong stress can be hard for a lecturer to understand."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Word",
+            "Say it",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "analyse",
+              "A-na-lyse",
+              "to examine something in detail"
+            ],
+            [
+              "evidence",
+              "E-vi-dence",
+              "facts that show something is true"
+            ],
+            [
+              "significant",
+              "sig-NI-fi-cant",
+              "large or important enough to notice"
+            ],
+            [
+              "approach",
+              "a-PPROACH",
+              "a way of dealing with something"
+            ],
+            [
+              "method",
+              "ME-thod",
+              "a planned way of doing something"
+            ],
+            [
+              "hypothesis",
+              "hy-PO-the-sis",
+              "an idea that a study tests"
+            ],
+            [
+              "conclude",
+              "con-CLUDE",
+              "to decide after looking at the evidence"
+            ],
+            [
+              "research",
+              "re-SEARCH or RE-search",
+              "careful study to discover facts (both are heard)"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "instruction-words",
+          "heading": "9. Understanding assignment instructions",
+          "variant": "tint",
+          "text": [
+            "The first word of an assignment question tells you what to do. Students lose marks by describing when the question asks them to evaluate."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Instruction word",
+            "What you must do"
+          ],
+          "rows": [
+            [
+              "Describe",
+              "Say what something is like, or what happened."
+            ],
+            [
+              "Explain",
+              "Say why or how something happens, with reasons."
+            ],
+            [
+              "Compare",
+              "Show the similarities and the differences."
+            ],
+            [
+              "Discuss",
+              "Look at different sides of an issue and reach a view."
+            ],
+            [
+              "Evaluate",
+              "Judge the strengths and weaknesses, and conclude."
+            ],
+            [
+              "Justify",
+              "Give good reasons for a decision or opinion."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "academic-writing",
+          "heading": "10. Academic writing in brief: style, paraphrasing and referencing",
+          "variant": "tint",
+          "text": [
+            "Your department will teach academic writing in detail. These four rules will keep you safe from the start."
+          ],
+          "parts": [
+            {
+              "heading": "The essentials",
+              "bullets": [
+                "**Formal style:** no contractions (*it is*, not *it's*) and no informal words (*children*, not *kids*).",
+                "**Careful claims:** write *this suggests*, not *this proves*.",
+                "**Paraphrase properly:** understand the idea, cover the original, and write it in your own words and sentence structure.",
+                "**Always reference:** any idea or words from another writer need a reference, in the style your department asks for (such as APA or Harvard). Using them without one is plagiarism, even by accident."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Practise speaking out loud",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/?mode=part3",
+              "more": "Speak",
+              "text": [
+                "Discussion questions to answer aloud, with feedback on reasons, examples and linking."
+              ]
+            },
+            {
+              "title": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/",
+              "more": "Start",
+              "text": [
+                "A full speaking test with an examiner voice: excellent practice for seminars."
+              ]
+            },
+            {
+              "title": "Elocution Basics",
+              "url": "practical-english/elocution-basics/",
+              "more": "Practise",
+              "text": [
+                "Posture, pace, pausing and speaking to an audience, for presentations."
+              ]
+            },
+            {
+              "title": "Listening Laboratory",
+              "url": "listening-lab/",
+              "more": "Listen",
+              "text": [
+                "Talks and lectures with note-taking questions."
+              ]
+            },
+            {
+              "title": "Essay Writing Exercises",
+              "url": "essay-writing-exercises/?level=IELTS",
+              "more": "Write",
+              "text": [
+                "When you are ready for writing: thesis statements, paragraphs and linking."
+              ]
+            },
+            {
+              "title": "IELTS Academic Practice Test",
+              "url": "practical-english/ielts/practice-test-1/",
+              "more": "Start",
+              "text": [
+                "Academic listening, reading, writing and speaking together."
+              ]
+            }
+          ]
+        }
       ]
     },
-
     {
       "slug": "practical-english/english-for-working-abroad",
       "title": "English for Working Abroad",
-      "metaTitle": "Spoken English for Working Abroad: Job Interviews, Workplace, Customers, Safety, Telephone | RCF English",
+      "metaTitle": "Spoken English for Working Abroad: Job Interviews, Workplace, Customers, Safety, Telephone",
       "description": "Brush up your spoken English for a job overseas: introducing yourself, job interviews, your first days, checking instructions, customers, colleagues, the telephone, reporting safety problems and talking about pay and time off, with conversations to hear and practise aloud, plus CVs and cover letters in brief.",
       "keywords": "spoken English for foreign job, English for working abroad, job interview English speaking, workplace English conversation, English for migrant workers Sri Lanka, customer service English, safety English at work",
       "kicker": "Practical English",
       "kind": "lesson",
-      "scripts": ["dialogue"],
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
-      "backTo": { "label": "Workplace English", "url": "practical-english/workplace-english/" },
+      "scripts": [
+        "dialogue"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Workplace English",
+        "url": "practical-english/workplace-english/"
+      },
       "hero": {
         "text": "Abroad, your English is tested every day out loud: in the interview, with your supervisor, with customers and on the phone. Nine speaking topics come first, each with a conversation you can hear and take a part in.",
         "buttons": [
-          { "label": "Start speaking", "url": "practical-english/english-for-working-abroad/#introduce-yourself", "style": "btn--accent" },
-          { "label": "Practise a job interview", "url": "practical-english/conversation-partner/", "style": "btn--ghost-light" }
+          {
+            "label": "Start speaking",
+            "url": "practical-english/english-for-working-abroad/#introduce-yourself",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Practise a job interview",
+            "url": "practical-english/conversation-partner/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
-        { "type": "callout", "style": "note", "title": "About this page", "text": ["This page helps with the English you need for work abroad. It is not legal, visa or employment advice. Before you accept a job or sign anything, check official guidance, for example from the Sri Lanka Bureau of Foreign Employment, and the rules of the country you are going to."] },
-        { "type": "steps", "heading": "How to practise each topic", "layout": "row", "items": [
-          { "title": "Say the phrases", "text": ["Read each phrase aloud twice."] },
-          { "title": "Play the conversation", "text": ["Listen for the phrases in use."] },
-          { "title": "Take a part", "text": ["Press a name and speak that person's lines."] },
-          { "title": "Make it yours", "text": ["Change the details to match your own job."] }
-        ] },
-
-        { "type": "prose", "id": "introduce-yourself", "heading": "1. Introducing yourself and your experience", "variant": "tint", "text": ["*Tell me about yourself* is the first question in almost every interview, and you will introduce yourself again on your first day. Prepare 30 seconds: who you are, your experience, and why you want this work."] },
-        { "type": "table", "columns": ["Say this", "Why"], "rows": [
-          ["My name is Chaminda, and I'm from Galle in Sri Lanka.", "Who you are"],
-          ["I've worked as a cook for three years.", "Your experience"],
-          ["In my last job, I prepared meals for up to two hundred guests a day.", "A real detail"],
-          ["I'm hardworking, and I learn new tasks quickly.", "Your strengths"],
-          ["I'd like to develop my career in a large hotel.", "Your aim"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Tell me about yourself", "setting": "The first question in an online interview for a hotel kitchen job.", "speakers": ["Interviewer", "Chaminda"], "lines": [
-          { "speaker": "Interviewer", "text": "Good morning, Chaminda. Can you hear me clearly?" },
-          { "speaker": "Chaminda", "text": "Yes, very clearly, thank you. Good morning." },
-          { "speaker": "Interviewer", "text": "Great. Let's begin. Could you tell me a little about yourself?" },
-          { "speaker": "Chaminda", "text": "Of course. I'm from Galle in Sri Lanka, and I've worked as a cook for three years in a busy tourist hotel. I prepare meals for up to two hundred guests a day, and I always follow food safety rules. I'd like to develop my career in a large international hotel." }
-        ] } ] },
-
-        { "type": "prose", "id": "interview", "heading": "2. The job interview", "variant": "tint", "text": ["Prepare answers to the common questions and practise saying them aloud. For experience questions, tell a short story: the situation, what you did, and the result."] },
-        { "type": "table", "columns": ["Question", "A good answer includes"], "rows": [
-          ["Why do you want this job?", "What interests you about the work, not only the pay"],
-          ["Tell me about a problem you solved at work.", "The situation, what you did, and the result"],
-          ["Can you work night shifts?", "A clear, honest answer"],
-          ["What are your strengths?", "A strength with a short example"],
-          ["Do you have any questions?", "Always ask one, about training or working hours"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A problem you solved", "setting": "Later in the same interview.", "speakers": ["Interviewer", "Chaminda"], "lines": [
-          { "speaker": "Interviewer", "text": "Tell me about a problem you solved at work." },
-          { "speaker": "Chaminda", "text": "Once, a large group arrived an hour early for dinner, and half of our kitchen staff had not started their shift." },
-          { "speaker": "Interviewer", "text": "What did you do?" },
-          { "speaker": "Chaminda", "text": "I spoke to my supervisor, and we started with the dishes that were quickest to prepare. I also called two colleagues, who came in early." },
-          { "speaker": "Interviewer", "text": "And the result?" },
-          { "speaker": "Chaminda", "text": "All the guests were served within thirty minutes, and the manager thanked the team the next day." },
-          { "speaker": "Interviewer", "text": "Very good. Do you have any questions for us?" },
-          { "speaker": "Chaminda", "text": "Yes. Is there any training for new staff when they arrive?" }
-        ] } ] },
-
-        { "type": "prose", "id": "first-days", "heading": "3. Your first days at work", "variant": "tint", "text": ["In the first week, nobody expects you to know everything, but they do expect you to ask."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Hello, I'm Kamal. I've just started in the stores department.", "Introducing yourself"],
-          ["What time do I start and finish?", "Asking about hours"],
-          ["Where can I leave my bag?", "Finding your way"],
-          ["Who should I ask if I have a problem?", "Finding your supervisor"],
-          ["Could you show me how this works, please?", "Learning a task"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Day one in the warehouse", "setting": "Kamal meets his supervisor on his first morning.", "speakers": ["Supervisor", "Kamal"], "lines": [
-          { "speaker": "Supervisor", "text": "Morning! You must be Kamal. I'm Mark, the shift supervisor." },
-          { "speaker": "Kamal", "text": "Good morning, Mark. Nice to meet you." },
-          { "speaker": "Supervisor", "text": "Your shift is seven to four, with a break at eleven. Lockers are over there." },
-          { "speaker": "Kamal", "text": "Thank you. Who should I ask if I have a problem?" },
-          { "speaker": "Supervisor", "text": "Ask me, or Priya on the next aisle. She's been here five years." },
-          { "speaker": "Kamal", "text": "Great. Could you show me how the scanner works, please?" }
-        ] } ] },
-
-        { "type": "prose", "id": "instructions", "heading": "4. Understanding and checking instructions", "variant": "tint", "text": ["Doing a task wrongly because you were too shy to ask can cost money or cause an accident. When you are not sure, repeat the instruction back."] },
-        { "type": "table", "columns": ["Say this", "Why"], "rows": [
-          ["Sorry, could you say that again more slowly?", "You did not catch it"],
-          ["Just to check: you want me to clean floor two first?", "Repeating back"],
-          ["When you say *urgent*, do you mean today, or right now?", "Checking a word"],
-          ["Could you show me once, please?", "Seeing it done"],
-          ["I've finished. Could you check it's right?", "Checking your work"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Checking a task", "setting": "A housekeeping supervisor gives instructions in a hotel.", "speakers": ["Supervisor", "Sunitha"], "lines": [
-          { "speaker": "Supervisor", "text": "Sunitha, rooms two-fourteen to two-twenty are checking out early, so do those first, then the rest of floor three." },
-          { "speaker": "Sunitha", "text": "Sorry, could you say the room numbers again, a little more slowly?" },
-          { "speaker": "Supervisor", "text": "Two-fourteen to two-twenty." },
-          { "speaker": "Sunitha", "text": "Just to check: rooms two-fourteen to two-twenty first, and then floor three?" },
-          { "speaker": "Supervisor", "text": "That's right. Thank you for checking." }
-        ] } ] },
-
-        { "type": "prose", "id": "customers", "heading": "5. Serving customers and handling complaints", "variant": "tint", "text": ["When a customer complains, follow four steps: **listen, apologise, solve, thank.** Stay calm, and never argue."] },
-        { "type": "table", "columns": ["Step", "Say this"], "rows": [
-          ["Greet", "Good evening. How can I help you?"],
-          ["Listen", "I understand. Could you tell me what happened?"],
-          ["Apologise", "I'm very sorry about that."],
-          ["Solve", "Let me change that for you right away."],
-          ["Thank", "Thank you for telling us."]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "The wrong order", "setting": "A customer in a restaurant has received the wrong meal.", "speakers": ["Customer", "Waiter"], "lines": [
-          { "speaker": "Customer", "text": "Excuse me, I ordered the grilled fish, but this is chicken." },
-          { "speaker": "Waiter", "text": "I'm very sorry about that. Let me check your order." },
-          { "speaker": "Customer", "text": "And we've been waiting almost forty minutes." },
-          { "speaker": "Waiter", "text": "I understand, and I apologise for the wait. I'll ask the kitchen to prepare your fish right away." },
-          { "speaker": "Customer", "text": "Thank you." },
-          { "speaker": "Waiter", "text": "Thank you for telling me. I'll bring you a drink while you wait." }
-        ] } ] },
-
-        { "type": "prose", "id": "colleagues", "heading": "6. Working with colleagues", "variant": "tint", "text": ["Friendly, polite English makes teamwork easier, especially in teams where people come from many countries."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Could you give me a hand with this?", "Asking for help"],
-          ["No problem, I'll do it now.", "Agreeing to help"],
-          ["Sorry, I can't right now. I'm finishing this job.", "Saying no politely"],
-          ["Do you want to have lunch together?", "Being friendly"],
-          ["Thanks for your help today.", "Thanking a colleague"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A heavy delivery", "setting": "Two colleagues at a supermarket.", "speakers": ["Kamal", "Priya"], "lines": [
-          { "speaker": "Kamal", "text": "Priya, could you give me a hand with these boxes? They're really heavy." },
-          { "speaker": "Priya", "text": "Sorry, I can't right now. I'm finishing the price labels. Can you wait five minutes?" },
-          { "speaker": "Kamal", "text": "Sure, no problem." },
-          { "speaker": "Priya", "text": "OK, I'm done. Let's lift them together." },
-          { "speaker": "Kamal", "text": "Thanks. Do you want to have lunch together later?" },
-          { "speaker": "Priya", "text": "Good idea. See you at one." }
-        ] } ] },
-
-        { "type": "prose", "id": "telephone", "heading": "7. The telephone: calling in sick and taking messages", "variant": "tint", "text": ["On the phone, say who you are first, and speak a little more slowly than usual. If you are ill or late, call as early as you can."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Hello, this is Sunil from the night shift.", "Saying who you are"],
-          ["I'm sorry, but I'm ill and I can't come in today.", "Calling in sick"],
-          ["She isn't here at the moment. Can I take a message?", "Taking a message"],
-          ["Could you spell your name, please?", "Checking a name"],
-          ["Could you repeat the number, please?", "Checking a number"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Calling in sick", "setting": "Sunil telephones his workplace early in the morning.", "speakers": ["Sunil", "Manager"], "lines": [
-          { "speaker": "Manager", "text": "Good morning, Harbour Logistics." },
-          { "speaker": "Sunil", "text": "Good morning. This is Sunil Perera from the night shift." },
-          { "speaker": "Manager", "text": "Hello, Sunil. What's the problem?" },
-          { "speaker": "Sunil", "text": "I'm sorry, but I have a high fever and I can't come to work tonight." },
-          { "speaker": "Manager", "text": "Thanks for letting me know early. Will you see a doctor?" },
-          { "speaker": "Sunil", "text": "Yes, this morning. I'll call you tomorrow to say how I am." },
-          { "speaker": "Manager", "text": "OK. Get well soon." }
-        ] } ] },
-
-        { "type": "prose", "id": "safety", "heading": "8. Safety: signs and reporting problems", "variant": "tint", "text": ["Learn the key safety words before your first day. And if something is unsafe, say so at once: you are never wrong to report a safety problem."] },
-        { "type": "table", "columns": ["Sign or warning", "Meaning"], "rows": [
-          ["DANGER", "Serious risk of injury or death"],
-          ["CAUTION / WARNING", "Be careful: there is a risk"],
-          ["WET FLOOR", "The floor is slippery"],
-          ["NO ENTRY / AUTHORISED PERSONNEL ONLY", "Do not go in without permission"],
-          ["FIRE EXIT / EMERGENCY EXIT", "The way out in an emergency"],
-          ["WEAR PROTECTIVE EQUIPMENT", "Wear the gloves, helmet, glasses or boots provided"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Reporting a hazard", "setting": "A worker notices a problem on a building site.", "speakers": ["Nimal", "Site supervisor"], "lines": [
-          { "speaker": "Nimal", "text": "Excuse me, the safety rail on the second floor is loose. I think it's dangerous." },
-          { "speaker": "Site supervisor", "text": "Thanks, Nimal. Which side exactly?" },
-          { "speaker": "Nimal", "text": "The side near the stairs. Someone could fall." },
-          { "speaker": "Site supervisor", "text": "Right. Nobody works on that side until it's fixed. Could you put a warning sign there?" },
-          { "speaker": "Nimal", "text": "Yes, I'll do it now." },
-          { "speaker": "Site supervisor", "text": "Good work. Always tell me straight away, like this." }
-        ] } ] },
-
-        { "type": "prose", "id": "pay-and-time-off", "heading": "9. Talking about pay, hours and time off", "variant": "tint", "text": ["It is normal to ask about your pay and hours, politely. Know these words, and never sign a contract you do not fully understand: ask for a copy and take your time."] },
-        { "type": "table", "columns": ["Word", "Meaning"], "rows": [
-          ["salary / wage", "your pay, often monthly (salary) or hourly (wage)"],
-          ["overtime", "extra hours beyond your normal hours"],
-          ["deductions", "money taken from your pay, for example for tax or accommodation"],
-          ["annual leave", "paid holiday days each year"],
-          ["notice period", "how long before leaving you must tell your employer"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A question about the payslip", "setting": "A worker speaks to the office manager.", "speakers": ["Sunitha", "Office manager"], "lines": [
-          { "speaker": "Sunitha", "text": "Excuse me, could I ask a question about my payslip?" },
-          { "speaker": "Office manager", "text": "Of course. What's the problem?" },
-          { "speaker": "Sunitha", "text": "I worked six hours of overtime last week, but I can't see it here." },
-          { "speaker": "Office manager", "text": "Let me look. Ah, the overtime is paid next month." },
-          { "speaker": "Sunitha", "text": "I see, thank you. And would it be possible to take two days of annual leave in December?" },
-          { "speaker": "Office manager", "text": "Please fill in a leave form, and I'll ask your supervisor." }
-        ] } ] },
-
-        { "type": "prose", "id": "cv", "heading": "10. Your CV and cover letter in brief", "variant": "tint",
-          "text": ["Your CV gets you the interview; your speaking gets you the job. Keep the writing short and clear."],
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this page",
+          "text": [
+            "This page helps with the English you need for work abroad. It is not legal, visa or employment advice. Before you accept a job or sign anything, check official guidance, for example from the Sri Lanka Bureau of Foreign Employment, and the rules of the country you are going to."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to practise each topic",
+          "layout": "row",
+          "items": [
+            {
+              "title": "Say the phrases",
+              "text": [
+                "Read each phrase aloud twice."
+              ]
+            },
+            {
+              "title": "Play the conversation",
+              "text": [
+                "Listen for the phrases in use."
+              ]
+            },
+            {
+              "title": "Take a part",
+              "text": [
+                "Press a name and speak that person's lines."
+              ]
+            },
+            {
+              "title": "Make it yours",
+              "text": [
+                "Change the details to match your own job."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "introduce-yourself",
+          "heading": "1. Introducing yourself and your experience",
+          "variant": "tint",
+          "text": [
+            "*Tell me about yourself* is the first question in almost every interview, and you will introduce yourself again on your first day. Prepare 30 seconds: who you are, your experience, and why you want this work."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "Why"
+          ],
+          "rows": [
+            [
+              "My name is Chaminda, and I'm from Galle in Sri Lanka.",
+              "Who you are"
+            ],
+            [
+              "I've worked as a cook for three years.",
+              "Your experience"
+            ],
+            [
+              "In my last job, I prepared meals for up to two hundred guests a day.",
+              "A real detail"
+            ],
+            [
+              "I'm hardworking, and I learn new tasks quickly.",
+              "Your strengths"
+            ],
+            [
+              "I'd like to develop my career in a large hotel.",
+              "Your aim"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Tell me about yourself",
+              "setting": "The first question in an online interview for a hotel kitchen job.",
+              "speakers": [
+                "Interviewer",
+                "Chaminda"
+              ],
+              "lines": [
+                {
+                  "speaker": "Interviewer",
+                  "text": "Good morning, Chaminda. Can you hear me clearly?"
+                },
+                {
+                  "speaker": "Chaminda",
+                  "text": "Yes, very clearly, thank you. Good morning."
+                },
+                {
+                  "speaker": "Interviewer",
+                  "text": "Great. Let's begin. Could you tell me a little about yourself?"
+                },
+                {
+                  "speaker": "Chaminda",
+                  "text": "Of course. I'm from Galle in Sri Lanka, and I've worked as a cook for three years in a busy tourist hotel. I prepare meals for up to two hundred guests a day, and I always follow food safety rules. I'd like to develop my career in a large international hotel."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "interview",
+          "heading": "2. The job interview",
+          "variant": "tint",
+          "text": [
+            "Prepare answers to the common questions and practise saying them aloud. For experience questions, tell a short story: the situation, what you did, and the result."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Question",
+            "A good answer includes"
+          ],
+          "rows": [
+            [
+              "Why do you want this job?",
+              "What interests you about the work, not only the pay"
+            ],
+            [
+              "Tell me about a problem you solved at work.",
+              "The situation, what you did, and the result"
+            ],
+            [
+              "Can you work night shifts?",
+              "A clear, honest answer"
+            ],
+            [
+              "What are your strengths?",
+              "A strength with a short example"
+            ],
+            [
+              "Do you have any questions?",
+              "Always ask one, about training or working hours"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A problem you solved",
+              "setting": "Later in the same interview.",
+              "speakers": [
+                "Interviewer",
+                "Chaminda"
+              ],
+              "lines": [
+                {
+                  "speaker": "Interviewer",
+                  "text": "Tell me about a problem you solved at work."
+                },
+                {
+                  "speaker": "Chaminda",
+                  "text": "Once, a large group arrived an hour early for dinner, and half of our kitchen staff had not started their shift."
+                },
+                {
+                  "speaker": "Interviewer",
+                  "text": "What did you do?"
+                },
+                {
+                  "speaker": "Chaminda",
+                  "text": "I spoke to my supervisor, and we started with the dishes that were quickest to prepare. I also called two colleagues, who came in early."
+                },
+                {
+                  "speaker": "Interviewer",
+                  "text": "And the result?"
+                },
+                {
+                  "speaker": "Chaminda",
+                  "text": "All the guests were served within thirty minutes, and the manager thanked the team the next day."
+                },
+                {
+                  "speaker": "Interviewer",
+                  "text": "Very good. Do you have any questions for us?"
+                },
+                {
+                  "speaker": "Chaminda",
+                  "text": "Yes. Is there any training for new staff when they arrive?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "first-days",
+          "heading": "3. Your first days at work",
+          "variant": "tint",
+          "text": [
+            "In the first week, nobody expects you to know everything, but they do expect you to ask."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Hello, I'm Kamal. I've just started in the stores department.",
+              "Introducing yourself"
+            ],
+            [
+              "What time do I start and finish?",
+              "Asking about hours"
+            ],
+            [
+              "Where can I leave my bag?",
+              "Finding your way"
+            ],
+            [
+              "Who should I ask if I have a problem?",
+              "Finding your supervisor"
+            ],
+            [
+              "Could you show me how this works, please?",
+              "Learning a task"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Day one in the warehouse",
+              "setting": "Kamal meets his supervisor on his first morning.",
+              "speakers": [
+                "Supervisor",
+                "Kamal"
+              ],
+              "lines": [
+                {
+                  "speaker": "Supervisor",
+                  "text": "Morning! You must be Kamal. I'm Mark, the shift supervisor."
+                },
+                {
+                  "speaker": "Kamal",
+                  "text": "Good morning, Mark. Nice to meet you."
+                },
+                {
+                  "speaker": "Supervisor",
+                  "text": "Your shift is seven to four, with a break at eleven. Lockers are over there."
+                },
+                {
+                  "speaker": "Kamal",
+                  "text": "Thank you. Who should I ask if I have a problem?"
+                },
+                {
+                  "speaker": "Supervisor",
+                  "text": "Ask me, or Priya on the next aisle. She's been here five years."
+                },
+                {
+                  "speaker": "Kamal",
+                  "text": "Great. Could you show me how the scanner works, please?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "instructions",
+          "heading": "4. Understanding and checking instructions",
+          "variant": "tint",
+          "text": [
+            "Doing a task wrongly because you were too shy to ask can cost money or cause an accident. When you are not sure, repeat the instruction back."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Sorry, could you say that again more slowly?",
+              "You did not catch it"
+            ],
+            [
+              "Just to check: you want me to clean floor two first?",
+              "Repeating back"
+            ],
+            [
+              "When you say *urgent*, do you mean today, or right now?",
+              "Checking a word"
+            ],
+            [
+              "Could you show me once, please?",
+              "Seeing it done"
+            ],
+            [
+              "I've finished. Could you check it's right?",
+              "Checking your work"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Checking a task",
+              "setting": "A housekeeping supervisor gives instructions in a hotel.",
+              "speakers": [
+                "Supervisor",
+                "Sunitha"
+              ],
+              "lines": [
+                {
+                  "speaker": "Supervisor",
+                  "text": "Sunitha, rooms two-fourteen to two-twenty are checking out early, so do those first, then the rest of floor three."
+                },
+                {
+                  "speaker": "Sunitha",
+                  "text": "Sorry, could you say the room numbers again, a little more slowly?"
+                },
+                {
+                  "speaker": "Supervisor",
+                  "text": "Two-fourteen to two-twenty."
+                },
+                {
+                  "speaker": "Sunitha",
+                  "text": "Just to check: rooms two-fourteen to two-twenty first, and then floor three?"
+                },
+                {
+                  "speaker": "Supervisor",
+                  "text": "That's right. Thank you for checking."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "customers",
+          "heading": "5. Serving customers and handling complaints",
+          "variant": "tint",
+          "text": [
+            "When a customer complains, follow four steps: **listen, apologise, solve, thank.** Stay calm, and never argue."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Step",
+            "Say this"
+          ],
+          "rows": [
+            [
+              "Greet",
+              "Good evening. How can I help you?"
+            ],
+            [
+              "Listen",
+              "I understand. Could you tell me what happened?"
+            ],
+            [
+              "Apologise",
+              "I'm very sorry about that."
+            ],
+            [
+              "Solve",
+              "Let me change that for you right away."
+            ],
+            [
+              "Thank",
+              "Thank you for telling us."
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "The wrong order",
+              "setting": "A customer in a restaurant has received the wrong meal.",
+              "speakers": [
+                "Customer",
+                "Waiter"
+              ],
+              "lines": [
+                {
+                  "speaker": "Customer",
+                  "text": "Excuse me, I ordered the grilled fish, but this is chicken."
+                },
+                {
+                  "speaker": "Waiter",
+                  "text": "I'm very sorry about that. Let me check your order."
+                },
+                {
+                  "speaker": "Customer",
+                  "text": "And we've been waiting almost forty minutes."
+                },
+                {
+                  "speaker": "Waiter",
+                  "text": "I understand, and I apologise for the wait. I'll ask the kitchen to prepare your fish right away."
+                },
+                {
+                  "speaker": "Customer",
+                  "text": "Thank you."
+                },
+                {
+                  "speaker": "Waiter",
+                  "text": "Thank you for telling me. I'll bring you a drink while you wait."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "colleagues",
+          "heading": "6. Working with colleagues",
+          "variant": "tint",
+          "text": [
+            "Friendly, polite English makes teamwork easier, especially in teams where people come from many countries."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Could you give me a hand with this?",
+              "Asking for help"
+            ],
+            [
+              "No problem, I'll do it now.",
+              "Agreeing to help"
+            ],
+            [
+              "Sorry, I can't right now. I'm finishing this job.",
+              "Saying no politely"
+            ],
+            [
+              "Do you want to have lunch together?",
+              "Being friendly"
+            ],
+            [
+              "Thanks for your help today.",
+              "Thanking a colleague"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A heavy delivery",
+              "setting": "Two colleagues at a supermarket.",
+              "speakers": [
+                "Kamal",
+                "Priya"
+              ],
+              "lines": [
+                {
+                  "speaker": "Kamal",
+                  "text": "Priya, could you give me a hand with these boxes? They're really heavy."
+                },
+                {
+                  "speaker": "Priya",
+                  "text": "Sorry, I can't right now. I'm finishing the price labels. Can you wait five minutes?"
+                },
+                {
+                  "speaker": "Kamal",
+                  "text": "Sure, no problem."
+                },
+                {
+                  "speaker": "Priya",
+                  "text": "OK, I'm done. Let's lift them together."
+                },
+                {
+                  "speaker": "Kamal",
+                  "text": "Thanks. Do you want to have lunch together later?"
+                },
+                {
+                  "speaker": "Priya",
+                  "text": "Good idea. See you at one."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "telephone",
+          "heading": "7. The telephone: calling in sick and taking messages",
+          "variant": "tint",
+          "text": [
+            "On the phone, say who you are first, and speak a little more slowly than usual. If you are ill or late, call as early as you can."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Hello, this is Sunil from the night shift.",
+              "Saying who you are"
+            ],
+            [
+              "I'm sorry, but I'm ill and I can't come in today.",
+              "Calling in sick"
+            ],
+            [
+              "She isn't here at the moment. Can I take a message?",
+              "Taking a message"
+            ],
+            [
+              "Could you spell your name, please?",
+              "Checking a name"
+            ],
+            [
+              "Could you repeat the number, please?",
+              "Checking a number"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Calling in sick",
+              "setting": "Sunil telephones his workplace early in the morning.",
+              "speakers": [
+                "Sunil",
+                "Manager"
+              ],
+              "lines": [
+                {
+                  "speaker": "Manager",
+                  "text": "Good morning, Harbour Logistics."
+                },
+                {
+                  "speaker": "Sunil",
+                  "text": "Good morning. This is Sunil Perera from the night shift."
+                },
+                {
+                  "speaker": "Manager",
+                  "text": "Hello, Sunil. What's the problem?"
+                },
+                {
+                  "speaker": "Sunil",
+                  "text": "I'm sorry, but I have a high fever and I can't come to work tonight."
+                },
+                {
+                  "speaker": "Manager",
+                  "text": "Thanks for letting me know early. Will you see a doctor?"
+                },
+                {
+                  "speaker": "Sunil",
+                  "text": "Yes, this morning. I'll call you tomorrow to say how I am."
+                },
+                {
+                  "speaker": "Manager",
+                  "text": "OK. Get well soon."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "safety",
+          "heading": "8. Safety: signs and reporting problems",
+          "variant": "tint",
+          "text": [
+            "Learn the key safety words before your first day. And if something is unsafe, say so at once: you are never wrong to report a safety problem."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Sign or warning",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "DANGER",
+              "Serious risk of injury or death"
+            ],
+            [
+              "CAUTION / WARNING",
+              "Be careful: there is a risk"
+            ],
+            [
+              "WET FLOOR",
+              "The floor is slippery"
+            ],
+            [
+              "NO ENTRY / AUTHORISED PERSONNEL ONLY",
+              "Do not go in without permission"
+            ],
+            [
+              "FIRE EXIT / EMERGENCY EXIT",
+              "The way out in an emergency"
+            ],
+            [
+              "WEAR PROTECTIVE EQUIPMENT",
+              "Wear the gloves, helmet, glasses or boots provided"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Reporting a hazard",
+              "setting": "A worker notices a problem on a building site.",
+              "speakers": [
+                "Nimal",
+                "Site supervisor"
+              ],
+              "lines": [
+                {
+                  "speaker": "Nimal",
+                  "text": "Excuse me, the safety rail on the second floor is loose. I think it's dangerous."
+                },
+                {
+                  "speaker": "Site supervisor",
+                  "text": "Thanks, Nimal. Which side exactly?"
+                },
+                {
+                  "speaker": "Nimal",
+                  "text": "The side near the stairs. Someone could fall."
+                },
+                {
+                  "speaker": "Site supervisor",
+                  "text": "Right. Nobody works on that side until it's fixed. Could you put a warning sign there?"
+                },
+                {
+                  "speaker": "Nimal",
+                  "text": "Yes, I'll do it now."
+                },
+                {
+                  "speaker": "Site supervisor",
+                  "text": "Good work. Always tell me straight away, like this."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "pay-and-time-off",
+          "heading": "9. Talking about pay, hours and time off",
+          "variant": "tint",
+          "text": [
+            "It is normal to ask about your pay and hours, politely. Know these words, and never sign a contract you do not fully understand: ask for a copy and take your time."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Word",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "salary / wage",
+              "your pay, often monthly (salary) or hourly (wage)"
+            ],
+            [
+              "overtime",
+              "extra hours beyond your normal hours"
+            ],
+            [
+              "deductions",
+              "money taken from your pay, for example for tax or accommodation"
+            ],
+            [
+              "annual leave",
+              "paid holiday days each year"
+            ],
+            [
+              "notice period",
+              "how long before leaving you must tell your employer"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A question about the payslip",
+              "setting": "A worker speaks to the office manager.",
+              "speakers": [
+                "Sunitha",
+                "Office manager"
+              ],
+              "lines": [
+                {
+                  "speaker": "Sunitha",
+                  "text": "Excuse me, could I ask a question about my payslip?"
+                },
+                {
+                  "speaker": "Office manager",
+                  "text": "Of course. What's the problem?"
+                },
+                {
+                  "speaker": "Sunitha",
+                  "text": "I worked six hours of overtime last week, but I can't see it here."
+                },
+                {
+                  "speaker": "Office manager",
+                  "text": "Let me look. Ah, the overtime is paid next month."
+                },
+                {
+                  "speaker": "Sunitha",
+                  "text": "I see, thank you. And would it be possible to take two days of annual leave in December?"
+                },
+                {
+                  "speaker": "Office manager",
+                  "text": "Please fill in a leave form, and I'll ask your supervisor."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "cv",
+          "heading": "10. Your CV and cover letter in brief",
+          "variant": "tint",
+          "text": [
+            "Your CV gets you the interview; your speaking gets you the job. Keep the writing short and clear."
+          ],
           "parts": [
-            { "heading": "CV", "bullets": [
-              "Sections: contact details, a two-sentence profile, work experience (most recent first), training, and skills such as languages and a driving licence.",
-              "Begin each duty with an action verb: *prepared*, *repaired*, *served*, *managed*.",
-              "One or two pages. Check what employers in that country expect, for example whether to include a photograph."
-            ] },
-            { "heading": "Cover letter or email", "bullets": [
-              "Say which job you are applying for.",
-              "Give two or three reasons you are suitable, with real details.",
-              "Say that your CV is attached and that you are available for an interview."
-            ] }
-          ] },
-
-        { "type": "cards", "heading": "Practise speaking out loud", "columns": "3", "items": [
-          { "title": "Conversation Partner", "url": "practical-english/conversation-partner/", "more": "Talk", "text": ["A job interview, a hotel check-in and more, answered with your own voice."] },
-          { "title": "Speaking Practice", "url": "speaking-practice/?mode=talk", "more": "Speak", "text": ["Everyday situations to answer aloud, with feedback."] },
-          { "title": "Spoken English Starter", "url": "practical-english/spoken-english-starter/", "more": "Start", "text": ["Greetings, shopping, directions and the telephone, with conversations."] },
-          { "title": "IELTS General Training", "url": "practical-english/ielts/general-training-test-1/", "more": "Start", "text": ["The test many employers and countries ask for."] },
-          { "title": "IELTS Mock Speaking Test", "url": "practical-english/ielts/mock-speaking-test/", "more": "Start", "text": ["A full speaking test with an examiner voice."] },
-          { "title": "Workplace English", "url": "practical-english/workplace-english/", "more": "Read", "text": ["More English for meetings, emails and everyday work."] }
-        ] }
+            {
+              "heading": "CV",
+              "bullets": [
+                "Sections: contact details, a two-sentence profile, work experience (most recent first), training, and skills such as languages and a driving licence.",
+                "Begin each duty with an action verb: *prepared*, *repaired*, *served*, *managed*.",
+                "One or two pages. Check what employers in that country expect, for example whether to include a photograph."
+              ]
+            },
+            {
+              "heading": "Cover letter or email",
+              "bullets": [
+                "Say which job you are applying for.",
+                "Give two or three reasons you are suitable, with real details.",
+                "Say that your CV is attached and that you are available for an interview."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Practise speaking out loud",
+          "columns": "3",
+          "items": [
+            {
+              "title": "Conversation Partner",
+              "url": "practical-english/conversation-partner/",
+              "more": "Talk",
+              "text": [
+                "A job interview, a hotel check-in and more, answered with your own voice."
+              ]
+            },
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/?mode=talk",
+              "more": "Speak",
+              "text": [
+                "Everyday situations to answer aloud, with feedback."
+              ]
+            },
+            {
+              "title": "Spoken English Starter",
+              "url": "practical-english/spoken-english-starter/",
+              "more": "Start",
+              "text": [
+                "Greetings, shopping, directions and the telephone, with conversations."
+              ]
+            },
+            {
+              "title": "IELTS General Training",
+              "url": "practical-english/ielts/general-training-test-1/",
+              "more": "Start",
+              "text": [
+                "The test many employers and countries ask for."
+              ]
+            },
+            {
+              "title": "IELTS Mock Speaking Test",
+              "url": "practical-english/ielts/mock-speaking-test/",
+              "more": "Start",
+              "text": [
+                "A full speaking test with an examiner voice."
+              ]
+            },
+            {
+              "title": "Workplace English",
+              "url": "practical-english/workplace-english/",
+              "more": "Read",
+              "text": [
+                "More English for meetings, emails and everyday work."
+              ]
+            }
+          ]
+        }
       ]
     }
   ]

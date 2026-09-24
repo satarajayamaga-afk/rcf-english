@@ -1,6 +1,5 @@
 {
   "_comment": "Eduqas C700QS Component 2 model paper and marking guide. Question structure verified from Eduqas's own GCSE English Language Component 2 additional assessment materials (eduqas.co.uk/media/fkopbmoc/5-component-2-additional-assessment-materials.pdf), which prints the six Section A questions with their tariffs - A1 (a)(b)(c) at 1 mark each, A2 at 10, A3 (a)(b)(c) at 1 mark each, A4 at 10, A5 at 4 and A6 at 10, totalling 40 - and whose front cover states 'Section A (Reading): 40 marks', 'Section B (Writing): 40 marks' and 'Section B spend 30 minutes on each question - about 5 minutes planning - about 25 minutes writing'. The 20-mark figure for each writing task is NOT stated in that document; it is RCF's inference from two equally timed tasks sharing 40 marks, and the page says so. Duration and weighting come from the Summary of Assessment table in the specification. BOTH TEXTS ARE ORIGINAL RCF ENGLISH COMPOSITIONS. Text 2 is written in a nineteenth-century voice; it is not the work of any nineteenth-century writer and is not an extract from any real diary or publication. No Eduqas question, passage or mark-scheme wording is reproduced: the question shapes are followed, the words are RCF's own.",
-
   "pages": [
     {
       "slug": "global-english/gcse/eduqas/papers/rcf-model-component-2",
@@ -14,12 +13,27 @@
       "resourceType": "practice paper",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" },
-        { "label": "Past papers", "url": "global-english/gcse/eduqas/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Eduqas English Language",
+          "url": "global-english/gcse/eduqas/"
+        },
+        {
+          "label": "Past papers",
+          "url": "global-english/gcse/eduqas/papers/"
+        }
       ],
-      "backTo": { "label": "Past papers", "url": "global-english/gcse/eduqas/papers/" },
+      "backTo": {
+        "label": "Past papers",
+        "url": "global-english/gcse/eduqas/papers/"
+      },
       "hero": {
         "text": "Two people describing a fire, a hundred and fifty-six years apart. Six reading questions, two writing tasks, eighty marks, two hours."
       },
@@ -49,18 +63,51 @@
           "heading": "Paper details",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Written by", "RCF English (original practice material)"],
-            ["Modelled on", "Eduqas GCSE English Language, specification C700QS, Component 2"],
-            ["Component title it follows", "19th and 21st Century Non-Fiction Reading and Transactional/Persuasive Writing"],
-            ["Time allowed", "2 hours"],
-            ["Maximum mark", "80"],
-            ["Sections", "Section A Reading, 40 marks. Section B Writing, 40 marks."],
-            ["Texts", "Text 1, twenty-first century. Text 2, nineteenth century. Both non-fiction, both original RCF compositions."],
-            ["Theme linking the texts", "Fighting a fire, and being frightened while doing it"],
-            ["Section B", "Answer **both** questions. About 30 minutes each."],
-            ["Advice", "About 1 hour on Section A and 1 hour on Section B."]
+            [
+              "Written by",
+              "RCF English (original practice material)"
+            ],
+            [
+              "Modelled on",
+              "Eduqas GCSE English Language, specification C700QS, Component 2"
+            ],
+            [
+              "Component title it follows",
+              "19th and 21st Century Non-Fiction Reading and Transactional/Persuasive Writing"
+            ],
+            [
+              "Time allowed",
+              "2 hours"
+            ],
+            [
+              "Maximum mark",
+              "80"
+            ],
+            [
+              "Sections",
+              "Section A Reading, 40 marks. Section B Writing, 40 marks."
+            ],
+            [
+              "Texts",
+              "Text 1, twenty-first century. Text 2, nineteenth century. Both non-fiction, both original RCF compositions."
+            ],
+            [
+              "Theme linking the texts",
+              "Fighting a fire, and being frightened while doing it"
+            ],
+            [
+              "Section B",
+              "Answer **both** questions. About 30 minutes each."
+            ],
+            [
+              "Advice",
+              "About 1 hour on Section A and 1 hour on Section B."
+            ]
           ]
         },
         {
@@ -244,18 +291,29 @@
           "type": "related",
           "heading": "Next",
           "items": [
-            { "title": "Marking guide for this paper", "url": "global-english/gcse/eduqas/papers/rcf-model-component-2-mark-scheme/", "text": "Answers, band descriptions in plain English, and full model answers for A4, A6 and B1." },
-            { "title": "Component 2 method", "url": "global-english/gcse/eduqas/component-2/", "text": "How to approach each question type on this paper." },
-            { "title": "Official Eduqas papers", "url": "global-english/gcse/eduqas/papers/", "text": "Eduqas's own past papers, mark schemes and exemplar material." }
+            {
+              "title": "Marking guide for this paper",
+              "url": "global-english/gcse/eduqas/papers/rcf-model-component-2-mark-scheme/",
+              "text": "Answers, band descriptions in plain English, and full model answers for A4, A6 and B1."
+            },
+            {
+              "title": "Component 2 method",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "text": "How to approach each question type on this paper."
+            },
+            {
+              "title": "Official Eduqas papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "text": "Eduqas's own past papers, mark schemes and exemplar material."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/eduqas/papers/rcf-model-component-2-mark-scheme",
       "title": "RCF Model Paper: Eduqas Component 2 Marking Guide",
-      "metaTitle": "Eduqas Component 2 Practice Paper: Answers and Marking Guide | RCF English",
+      "metaTitle": "Eduqas Component 2 Practice Paper: Answers and Marking Guide",
       "description": "Answers, indicative content, plain-English band descriptions and full model answers for the RCF original Eduqas GCSE English Language Component 2 practice paper.",
       "keywords": "Eduqas component 2 answers, Eduqas comparison model answer, Eduqas 10 mark question model answer, Eduqas transactional writing model answer",
       "kicker": "Unofficial original RCF practice material",
@@ -264,12 +322,27 @@
       "resourceType": "marking guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" },
-        { "label": "Past papers", "url": "global-english/gcse/eduqas/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Eduqas English Language",
+          "url": "global-english/gcse/eduqas/"
+        },
+        {
+          "label": "Past papers",
+          "url": "global-english/gcse/eduqas/papers/"
+        }
       ],
-      "backTo": { "label": "RCF Model Paper: Eduqas Component 2", "url": "global-english/gcse/eduqas/papers/rcf-model-component-2/" },
+      "backTo": {
+        "label": "RCF Model Paper: Eduqas Component 2",
+        "url": "global-english/gcse/eduqas/papers/rcf-model-component-2/"
+      },
       "hero": {
         "text": "Answers for all six reading questions, what separates a good answer from a middling one, and full model answers for the evaluation question, the comparison and the letter."
       },
@@ -584,10 +657,26 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "The paper itself", "url": "global-english/gcse/eduqas/papers/rcf-model-component-2/", "text": "Both texts and all eight questions, for working under timed conditions." },
-            { "title": "Component 2 method", "url": "global-english/gcse/eduqas/component-2/", "text": "How to approach each question type on this paper." },
-            { "title": "Official Eduqas papers", "url": "global-english/gcse/eduqas/papers/", "text": "Eduqas's own past papers, mark schemes and annotated exemplars." },
-            { "title": "Eduqas overview", "url": "global-english/gcse/eduqas/", "text": "Both components, the weightings and what the specification actually says." }
+            {
+              "title": "The paper itself",
+              "url": "global-english/gcse/eduqas/papers/rcf-model-component-2/",
+              "text": "Both texts and all eight questions, for working under timed conditions."
+            },
+            {
+              "title": "Component 2 method",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "text": "How to approach each question type on this paper."
+            },
+            {
+              "title": "Official Eduqas papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "text": "Eduqas's own past papers, mark schemes and annotated exemplars."
+            },
+            {
+              "title": "Eduqas overview",
+              "url": "global-english/gcse/eduqas/",
+              "text": "Both components, the weightings and what the specification actually says."
+            }
           ]
         }
       ]

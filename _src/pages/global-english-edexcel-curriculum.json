@@ -1,11 +1,10 @@
 {
   "_comment": "Pearson Edexcel iPrimary and iLowerSecondary English. EVERY figure here was read from primary sources: the Pearson Edexcel International Award in Primary English specification (JEH11), Issue 1, May 2018, for the iPrimary structure, timings and AO percentages; and the official LEH11/01 question paper P67630A (Summer 2022) for the iLowerSecondary structure, timings and section marks. Curriculum strands come from Pearson's own published iPrimary and iLowerSecondary English Curriculum Overview documents. Nothing is copied from Pearson: figures are facts, and all practice material is original RCF work. Detailed curriculum objectives are released only to subscribing centres and are NOT reproduced here.",
-
   "pages": [
     {
       "slug": "global-english/edexcel-international-curriculum",
       "title": "Edexcel iPrimary and iLowerSecondary English",
-      "metaTitle": "Edexcel iPrimary and iLowerSecondary English: Years 1 to 9 Guide | RCF English",
+      "metaTitle": "Edexcel iPrimary and iLowerSecondary English: Years 1 to 9 Guide",
       "description": "A guide to Pearson Edexcel iPrimary English (JEH11) and iLowerSecondary English (LEH11): the year-by-year curriculum, the Year 6 and Year 9 Achievement Tests, and how to prepare.",
       "keywords": "Edexcel iPrimary English, iLowerSecondary English, JEH11, LEH11, Edexcel Year 6 Achievement Test, Edexcel Year 9 English test, Edexcel international primary curriculum",
       "kicker": "Global English",
@@ -14,14 +13,28 @@
       "resourceType": "guide",
       "educationalLevel": "Primary and lower secondary",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        }
       ],
-      "backTo": { "label": "Global English", "url": "global-english/" },
+      "backTo": {
+        "label": "Global English",
+        "url": "global-english/"
+      },
       "hero": {
         "text": "Pearson's year-by-year English curriculum for international schools, from Year 1 to Year 9, and the two external tests that sit at the end of each stage.",
         "buttons": [
-          { "label": "iPrimary: Years 1 to 6", "url": "global-english/edexcel-international-curriculum/iprimary/", "style": "btn--accent" },
-          { "label": "iLowerSecondary: Years 7 to 9", "url": "global-english/edexcel-international-curriculum/ilowersecondary/", "style": "btn--ghost-light" }
+          {
+            "label": "iPrimary: Years 1 to 6",
+            "url": "global-english/edexcel-international-curriculum/iprimary/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "iLowerSecondary: Years 7 to 9",
+            "url": "global-english/edexcel-international-curriculum/ilowersecondary/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -39,21 +52,77 @@
           "heading": "The two stages at a glance",
           "level": "h2",
           "caption": "All figures read from the Pearson Edexcel International Award in Primary English specification (JEH11, Issue 1, May 2018) and from the official LEH11/01 question paper (Summer 2022).",
-          "columns": ["", "iPrimary English", "iLowerSecondary English"],
+          "columns": [
+            "",
+            "iPrimary English",
+            "iLowerSecondary English"
+          ],
           "rows": [
-            ["Full qualification title", "Pearson Edexcel International Award in Primary English", "Pearson Edexcel International Award in Lower Secondary English"],
-            ["Specification code", "**JEH11**", "**LEH11**"],
-            ["Paper code", "JEH11/01", "LEH11/01"],
-            ["Year groups", "Years 1 to 6", "Years 7 to 9"],
-            ["First teaching / first assessment", "2018 / June 2019", "2018 / 2019"],
-            ["External test taken at the end of", "Year 6", "Year 9"],
-            ["Time allowed", "1 hour 30 minutes", "1 hour 45 minutes"],
-            ["Total marks", "60", "70"],
-            ["Texts", "Two, on a theme: one non-fiction, one fiction. **Pre-released** at least four weeks before the test.", "Three, on a theme: two non-fiction, one fiction. **Unseen**, in a Source Booklet with the paper."],
-            ["Dictionaries", "Not allowed", "Not allowed"],
-            ["Curriculum strands", "Three: Spoken Language, Reading, Writing", "Two: Reading and Writing, with Speaking and Listening woven through both"],
-            ["Progresses to", "iLowerSecondary English", "International GCSE English, from Year 10"],
-            ["Full guide", "[iPrimary English](global-english/edexcel-international-curriculum/iprimary/)", "[iLowerSecondary English](global-english/edexcel-international-curriculum/ilowersecondary/)"]
+            [
+              "Full qualification title",
+              "Pearson Edexcel International Award in Primary English",
+              "Pearson Edexcel International Award in Lower Secondary English"
+            ],
+            [
+              "Specification code",
+              "**JEH11**",
+              "**LEH11**"
+            ],
+            [
+              "Paper code",
+              "JEH11/01",
+              "LEH11/01"
+            ],
+            [
+              "Year groups",
+              "Years 1 to 6",
+              "Years 7 to 9"
+            ],
+            [
+              "First teaching / first assessment",
+              "2018 / June 2019",
+              "2018 / 2019"
+            ],
+            [
+              "External test taken at the end of",
+              "Year 6",
+              "Year 9"
+            ],
+            [
+              "Time allowed",
+              "1 hour 30 minutes",
+              "1 hour 45 minutes"
+            ],
+            [
+              "Total marks",
+              "60",
+              "70"
+            ],
+            [
+              "Texts",
+              "Two, on a theme: one non-fiction, one fiction. **Pre-released** at least four weeks before the test.",
+              "Three, on a theme: two non-fiction, one fiction. **Unseen**, in a Source Booklet with the paper."
+            ],
+            [
+              "Dictionaries",
+              "Not allowed",
+              "Not allowed"
+            ],
+            [
+              "Curriculum strands",
+              "Three: Spoken Language, Reading, Writing",
+              "Two: Reading and Writing, with Speaking and Listening woven through both"
+            ],
+            [
+              "Progresses to",
+              "iLowerSecondary English",
+              "International GCSE English, from Year 10"
+            ],
+            [
+              "Full guide",
+              "[iPrimary English](global-english/edexcel-international-curriculum/iprimary/)",
+              "[iLowerSecondary English](global-english/edexcel-international-curriculum/ilowersecondary/)"
+            ]
           ]
         },
         {
@@ -81,13 +150,31 @@
           "heading": "Official Pearson pages",
           "level": "h2",
           "caption": "Every link opens an official Pearson page. Past papers and mark schemes for both tests are published on the qualification pages.",
-          "columns": ["What", "Official source"],
+          "columns": [
+            "What",
+            "Official source"
+          ],
           "rows": [
-            ["iPrimary curriculum, all subjects", "[Pearson Edexcel iPrimary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum.html)"],
-            ["iPrimary English (2018), JEH11 - specification and materials", "[iPrimary Curriculum English (2018)](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/english-2018.html)"],
-            ["iLowerSecondary curriculum, all subjects", "[Pearson Edexcel iLowerSecondary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum.html)"],
-            ["iLowerSecondary English (2018), LEH11 - specification and materials", "[International Lower Secondary Curriculum - English](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum/english-2018.html)"],
-            ["About the international primary curriculum", "[About the Edexcel International Primary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/about.html)"]
+            [
+              "iPrimary curriculum, all subjects",
+              "[Pearson Edexcel iPrimary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum.html)"
+            ],
+            [
+              "iPrimary English (2018), JEH11 - specification and materials",
+              "[iPrimary Curriculum English (2018)](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/english-2018.html)"
+            ],
+            [
+              "iLowerSecondary curriculum, all subjects",
+              "[Pearson Edexcel iLowerSecondary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum.html)"
+            ],
+            [
+              "iLowerSecondary English (2018), LEH11 - specification and materials",
+              "[International Lower Secondary Curriculum - English](https://qualifications.pearson.com/en/qualifications/edexcel-international-lower-secondary-curriculum/english-2018.html)"
+            ],
+            [
+              "About the international primary curriculum",
+              "[About the Edexcel International Primary Curriculum](https://qualifications.pearson.com/en/qualifications/edexcel-international-primary-curriculum/about.html)"
+            ]
           ]
         },
         {
@@ -101,15 +188,27 @@
               "title": "iPrimary English: Years 1 to 6",
               "url": "global-english/edexcel-international-curriculum/iprimary/",
               "more": "Open the guide",
-              "text": ["The three strands and all fourteen sub-strands, the JEH11/01 test section by section, the assessment objectives with their exact weightings, and how to use the pre-release properly."],
-              "bullets": ["60 marks in 1 hour 30 minutes", "Reading 30, Grammar and punctuation 15, Writing 15", "Original RCF practice material"]
+              "text": [
+                "The three strands and all fourteen sub-strands, the JEH11/01 test section by section, the assessment objectives with their exact weightings, and how to use the pre-release properly."
+              ],
+              "bullets": [
+                "60 marks in 1 hour 30 minutes",
+                "Reading 30, Grammar and punctuation 15, Writing 15",
+                "Original RCF practice material"
+              ]
             },
             {
               "title": "iLowerSecondary English: Years 7 to 9",
               "url": "global-english/edexcel-international-curriculum/ilowersecondary/",
               "more": "Open the guide",
-              "text": ["The two strands and their sub-strands, the LEH11/01 test verified from an official paper, and a method for handling three unseen texts in seventy minutes."],
-              "bullets": ["70 marks in 1 hour 45 minutes", "Reading 40, Writing 30", "Original RCF practice material"]
+              "text": [
+                "The two strands and their sub-strands, the LEH11/01 test verified from an official paper, and a method for handling three unseen texts in seventy minutes."
+              ],
+              "bullets": [
+                "70 marks in 1 hour 45 minutes",
+                "Reading 40, Writing 30",
+                "Original RCF practice material"
+              ]
             }
           ]
         },
@@ -161,19 +260,42 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "iPrimary English", "url": "global-english/edexcel-international-curriculum/iprimary/", "text": ["Years 1 to 6 in full."] },
-            { "title": "iLowerSecondary English", "url": "global-english/edexcel-international-curriculum/ilowersecondary/", "text": ["Years 7 to 9 in full."] },
-            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["What comes next, from Year 10."] },
-            { "title": "Global English overview", "url": "global-english/", "text": ["Every international English qualification covered here."] }
+            {
+              "title": "iPrimary English",
+              "url": "global-english/edexcel-international-curriculum/iprimary/",
+              "text": [
+                "Years 1 to 6 in full."
+              ]
+            },
+            {
+              "title": "iLowerSecondary English",
+              "url": "global-english/edexcel-international-curriculum/ilowersecondary/",
+              "text": [
+                "Years 7 to 9 in full."
+              ]
+            },
+            {
+              "title": "International GCSE English",
+              "url": "global-english/igcse/",
+              "text": [
+                "What comes next, from Year 10."
+              ]
+            },
+            {
+              "title": "Global English overview",
+              "url": "global-english/",
+              "text": [
+                "Every international English qualification covered here."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/edexcel-international-curriculum/iprimary",
       "title": "Edexcel iPrimary English: Years 1 to 6",
-      "metaTitle": "Edexcel iPrimary English JEH11: Curriculum and Year 6 Test | RCF English",
+      "metaTitle": "Edexcel iPrimary English JEH11: Curriculum and Year 6 Test",
       "description": "Pearson Edexcel iPrimary English (JEH11) explained: the three curriculum strands, the Year 6 Achievement Test section by section, assessment objectives and practice material.",
       "keywords": "iPrimary English JEH11, Edexcel Year 6 Achievement Test English, iPrimary English curriculum strands, Edexcel primary English pre-release texts",
       "kicker": "Edexcel graded curriculum",
@@ -182,10 +304,19 @@
       "resourceType": "guide",
       "educationalLevel": "Primary",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "Edexcel curriculum",
+          "url": "global-english/edexcel-international-curriculum/"
+        }
       ],
-      "backTo": { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" },
+      "backTo": {
+        "label": "Edexcel curriculum",
+        "url": "global-english/edexcel-international-curriculum/"
+      },
       "hero": {
         "text": "Six years of curriculum, three strands, and one external test at the end of it - taken on two texts the school has already had for a month."
       },
@@ -205,18 +336,51 @@
           "heading": "The qualification at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Full title", "Pearson Edexcel International Award in Primary English"],
-            ["Specification code", "JEH11"],
-            ["Paper code", "JEH11/01"],
-            ["Assessment", "One externally-set achievement test"],
-            ["Time allowed", "1 hour 30 minutes"],
-            ["Total marks", "60"],
-            ["Availability", "June"],
-            ["First teaching / first assessment", "September 2018 / June 2019"],
-            ["Dictionaries", "Not allowed"],
-            ["Year groups taught", "Years 1 to 6"]
+            [
+              "Full title",
+              "Pearson Edexcel International Award in Primary English"
+            ],
+            [
+              "Specification code",
+              "JEH11"
+            ],
+            [
+              "Paper code",
+              "JEH11/01"
+            ],
+            [
+              "Assessment",
+              "One externally-set achievement test"
+            ],
+            [
+              "Time allowed",
+              "1 hour 30 minutes"
+            ],
+            [
+              "Total marks",
+              "60"
+            ],
+            [
+              "Availability",
+              "June"
+            ],
+            [
+              "First teaching / first assessment",
+              "September 2018 / June 2019"
+            ],
+            [
+              "Dictionaries",
+              "Not allowed"
+            ],
+            [
+              "Year groups taught",
+              "Years 1 to 6"
+            ]
           ]
         },
         {
@@ -230,7 +394,9 @@
             {
               "heading": "1. Spoken Language",
               "level": "h3",
-              "text": ["Two sub-strands. This strand is not directly examined in the Year 6 test, which is written - but it underpins both of the others, and schools that treat it as optional tend to produce children who read accurately and write thinly."],
+              "text": [
+                "Two sub-strands. This strand is not directly examined in the Year 6 test, which is written - but it underpins both of the others, and schools that treat it as optional tend to produce children who read accurately and write thinly."
+              ],
               "bullets": [
                 "**Receptive Language** - listening, following and understanding.",
                 "**Expressive Language** - speaking, explaining, discussing and presenting."
@@ -239,7 +405,9 @@
             {
               "heading": "2. Reading",
               "level": "h3",
-              "text": ["Six sub-strands, one of which stops after Year 3. This is the largest strand and it carries half of the marks in the Year 6 test."],
+              "text": [
+                "Six sub-strands, one of which stops after Year 3. This is the largest strand and it carries half of the marks in the Year 6 test."
+              ],
               "bullets": [
                 "**Word Reading and Phonics** (up to Year 3) - decoding, letter-sound relationships, blending.",
                 "**Word Reading and Accuracy** - reading unfamiliar words correctly and fluently.",
@@ -252,7 +420,9 @@
             {
               "heading": "3. Writing",
               "level": "h3",
-              "text": ["Six sub-strands. Note how much of this strand is technical accuracy rather than composition - which matches the test, where grammar, punctuation and spelling carry a quarter of the total mark on their own."],
+              "text": [
+                "Six sub-strands. Note how much of this strand is technical accuracy rather than composition - which matches the test, where grammar, punctuation and spelling carry a quarter of the total mark on their own."
+              ],
               "bullets": [
                 "**Transcription and Phonics** - spelling and the sound-to-letter knowledge behind it.",
                 "**Vocabulary** - the range of words available and choosing between them.",
@@ -269,13 +439,49 @@
           "heading": "The Year 6 Achievement Test: JEH11/01",
           "level": "h2",
           "caption": "Section marks, assessment objectives and recommended timings, all from the JEH11 specification. The recommended timings total 90 minutes exactly.",
-          "columns": ["Section", "Marks", "Assessment objectives", "Recommended time", "What it contains"],
+          "columns": [
+            "Section",
+            "Marks",
+            "Assessment objectives",
+            "Recommended time",
+            "What it contains"
+          ],
           "rows": [
-            ["A: Reading (non-fiction)", "part of 30", "RAO1 to RAO5", "20 minutes", "Questions on the pre-released non-fiction text. Closed and short-open response."],
-            ["A: Reading (fiction)", "part of 30", "RAO1 to RAO5", "30 minutes", "Questions on the pre-released fiction text. Closed and short-open response."],
-            ["B: Grammar and punctuation", "15", "GAO1", "15 minutes", "Short-response questions, all based on the **fiction** text from Section A."],
-            ["C: Writing", "15", "WAO1, WAO2, WAO3", "25 minutes", "A single extended writing task, related to the theme of the Section A texts."],
-            ["**Total**", "**60**", "-", "**90 minutes**", "All questions in every section are compulsory."]
+            [
+              "A: Reading (non-fiction)",
+              "part of 30",
+              "RAO1 to RAO5",
+              "20 minutes",
+              "Questions on the pre-released non-fiction text. Closed and short-open response."
+            ],
+            [
+              "A: Reading (fiction)",
+              "part of 30",
+              "RAO1 to RAO5",
+              "30 minutes",
+              "Questions on the pre-released fiction text. Closed and short-open response."
+            ],
+            [
+              "B: Grammar and punctuation",
+              "15",
+              "GAO1",
+              "15 minutes",
+              "Short-response questions, all based on the **fiction** text from Section A."
+            ],
+            [
+              "C: Writing",
+              "15",
+              "WAO1, WAO2, WAO3",
+              "25 minutes",
+              "A single extended writing task, related to the theme of the Section A texts."
+            ],
+            [
+              "**Total**",
+              "**60**",
+              "-",
+              "**90 minutes**",
+              "All questions in every section are compulsory."
+            ]
           ]
         },
         {
@@ -283,17 +489,57 @@
           "heading": "Assessment objectives and their exact weightings",
           "level": "h2",
           "caption": "Percentages of the whole qualification, from the JEH11 specification. Reading accounts for 50%, grammar and punctuation for 25%, and writing for 25%.",
-          "columns": ["Code", "Objective", "% of the qualification"],
+          "columns": [
+            "Code",
+            "Objective",
+            "% of the qualification"
+          ],
           "rows": [
-            ["RAO1", "Retrieve information, events or ideas from texts", "8%"],
-            ["RAO2", "Deduce, infer or interpret information, events or ideas from texts", "**15%**"],
-            ["RAO3", "Identify and comment on the structure and organisation of texts", "5%"],
-            ["RAO4", "Explore the writers' use of language, at word and sentence level", "8%"],
-            ["RAO5", "Consider the writers' purposes and viewpoints, and the overall effect of the text on the reader", "14%"],
-            ["GAO1", "Demonstrate how accurate use of grammar, punctuation and spelling contribute to meaning", "**25%**"],
-            ["WAO1", "Write a response appropriate to task, audience and purpose", "8%"],
-            ["WAO2", "Organise writing by sequencing and structuring information appropriately and coherently", "7%"],
-            ["WAO3", "Communicate meaning in writing through the use of accurate grammar, punctuation and spelling", "10%"]
+            [
+              "RAO1",
+              "Retrieve information, events or ideas from texts",
+              "8%"
+            ],
+            [
+              "RAO2",
+              "Deduce, infer or interpret information, events or ideas from texts",
+              "**15%**"
+            ],
+            [
+              "RAO3",
+              "Identify and comment on the structure and organisation of texts",
+              "5%"
+            ],
+            [
+              "RAO4",
+              "Explore the writers' use of language, at word and sentence level",
+              "8%"
+            ],
+            [
+              "RAO5",
+              "Consider the writers' purposes and viewpoints, and the overall effect of the text on the reader",
+              "14%"
+            ],
+            [
+              "GAO1",
+              "Demonstrate how accurate use of grammar, punctuation and spelling contribute to meaning",
+              "**25%**"
+            ],
+            [
+              "WAO1",
+              "Write a response appropriate to task, audience and purpose",
+              "8%"
+            ],
+            [
+              "WAO2",
+              "Organise writing by sequencing and structuring information appropriately and coherently",
+              "7%"
+            ],
+            [
+              "WAO3",
+              "Communicate meaning in writing through the use of accurate grammar, punctuation and spelling",
+              "10%"
+            ]
           ]
         },
         {
@@ -314,13 +560,48 @@
             "The two Section A texts are published by Pearson at least **four weeks** before the test. Pearson's own guidance recommends that schools give the pre-release around **two weeks of lesson time, eight to ten hours**. The following sequence follows that guidance."
           ],
           "items": [
-            { "title": "Get the texts and read them yourself first", "text": ["Before any lesson. You cannot direct a child's attention to what matters in a text you met the same morning."] },
-            { "title": "Read them aloud, with expression", "text": ["Pearson recommends this explicitly. Children who have heard a text read well understand its tone, and tone is what RAO5 - 14% of the qualification - asks about."] },
-            { "title": "Work on vocabulary in context and in isolation", "text": ["Both. A child should know what a word means in the sentence where it appears **and** be able to say what it means on its own, because the test asks both ways."] },
-            { "title": "Interrogate the writer's language and purpose", "text": ["Why this word and not a plainer one? Who was this written for? What does the writer want the reader to feel? That is RAO4 and RAO5, 22% between them."] },
-            { "title": "Look at the non-fiction text for audience, purpose and presentation", "text": ["Headings, captions, images, layout - what each is doing and why it was put there."] },
-            { "title": "Make sure every child has their own copy", "text": ["To annotate, argue with and take home."] },
-            { "title": "Be clear about what happens on the day", "text": ["A clean **Source Booklet** containing both texts is supplied with the paper. **Marked-up copies of the pre-release are not permitted in the examination room.** Children who have relied on their annotations rather than on knowing the text can be badly caught out, so practise at least once with clean copies."] }
+            {
+              "title": "Get the texts and read them yourself first",
+              "text": [
+                "Before any lesson. You cannot direct a child's attention to what matters in a text you met the same morning."
+              ]
+            },
+            {
+              "title": "Read them aloud, with expression",
+              "text": [
+                "Pearson recommends this explicitly. Children who have heard a text read well understand its tone, and tone is what RAO5 - 14% of the qualification - asks about."
+              ]
+            },
+            {
+              "title": "Work on vocabulary in context and in isolation",
+              "text": [
+                "Both. A child should know what a word means in the sentence where it appears **and** be able to say what it means on its own, because the test asks both ways."
+              ]
+            },
+            {
+              "title": "Interrogate the writer's language and purpose",
+              "text": [
+                "Why this word and not a plainer one? Who was this written for? What does the writer want the reader to feel? That is RAO4 and RAO5, 22% between them."
+              ]
+            },
+            {
+              "title": "Look at the non-fiction text for audience, purpose and presentation",
+              "text": [
+                "Headings, captions, images, layout - what each is doing and why it was put there."
+              ]
+            },
+            {
+              "title": "Make sure every child has their own copy",
+              "text": [
+                "To annotate, argue with and take home."
+              ]
+            },
+            {
+              "title": "Be clear about what happens on the day",
+              "text": [
+                "A clean **Source Booklet** containing both texts is supplied with the paper. **Marked-up copies of the pre-release are not permitted in the examination room.** Children who have relied on their annotations rather than on knowing the text can be badly caught out, so practise at least once with clean copies."
+              ]
+            }
           ]
         },
         {
@@ -336,7 +617,9 @@
           "type": "activities",
           "heading": "Original RCF practice: the four skills the test rewards most",
           "level": "h2",
-          "intro": ["Four short activities, each aimed at one of the heaviest assessment objectives. They can be used with any text, including the pre-release."],
+          "intro": [
+            "Four short activities, each aimed at one of the heaviest assessment objectives. They can be used with any text, including the pre-release."
+          ],
           "items": [
             {
               "title": "Inference ladder (RAO2, 15%)",
@@ -399,18 +682,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "iLowerSecondary English", "url": "global-english/edexcel-international-curriculum/ilowersecondary/", "text": ["Years 7 to 9, and the Year 9 test."] },
-            { "title": "Edexcel curriculum overview", "url": "global-english/edexcel-international-curriculum/", "text": ["Both stages compared."] },
-            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["Where this leads from Year 10."] }
+            {
+              "title": "iLowerSecondary English",
+              "url": "global-english/edexcel-international-curriculum/ilowersecondary/",
+              "text": [
+                "Years 7 to 9, and the Year 9 test."
+              ]
+            },
+            {
+              "title": "Edexcel curriculum overview",
+              "url": "global-english/edexcel-international-curriculum/",
+              "text": [
+                "Both stages compared."
+              ]
+            },
+            {
+              "title": "International GCSE English",
+              "url": "global-english/igcse/",
+              "text": [
+                "Where this leads from Year 10."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/edexcel-international-curriculum/ilowersecondary",
       "title": "Edexcel iLowerSecondary English: Years 7 to 9",
-      "metaTitle": "Edexcel iLowerSecondary English LEH11: Curriculum and Year 9 Test | RCF English",
+      "metaTitle": "Edexcel iLowerSecondary English LEH11: Curriculum and Year 9 Test",
       "description": "Pearson Edexcel iLowerSecondary English (LEH11) explained: the two curriculum strands, the Year 9 Achievement Test verified from an official paper, and practice material.",
       "keywords": "iLowerSecondary English LEH11, Edexcel Year 9 English test, LEH11/01, iLowerSecondary English curriculum, Edexcel lower secondary English",
       "kicker": "Edexcel graded curriculum",
@@ -419,10 +719,19 @@
       "resourceType": "guide",
       "educationalLevel": "Lower secondary",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "Edexcel curriculum",
+          "url": "global-english/edexcel-international-curriculum/"
+        }
       ],
-      "backTo": { "label": "Edexcel curriculum", "url": "global-english/edexcel-international-curriculum/" },
+      "backTo": {
+        "label": "Edexcel curriculum",
+        "url": "global-english/edexcel-international-curriculum/"
+      },
       "hero": {
         "text": "Three years, two strands, and a Year 9 test that puts three unseen texts in front of a student and gives them seventy minutes."
       },
@@ -442,19 +751,55 @@
           "heading": "The qualification at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Full title", "Pearson Edexcel International Award in Lower Secondary English"],
-            ["Specification code", "LEH11"],
-            ["Paper code", "LEH11/01"],
-            ["Assessment", "One externally-set achievement test, taken at the end of Year 9"],
-            ["Time allowed", "1 hour 45 minutes"],
-            ["Total marks", "70"],
-            ["Sections", "Section A Reading, 40 marks. Section B Writing, 30 marks. Both compulsory."],
-            ["Texts", "Three, linked by a theme, supplied **unseen** in a Source Booklet with the paper"],
-            ["Dictionaries", "Not allowed"],
-            ["First teaching / first assessment", "2018 / 2019"],
-            ["Year groups taught", "Years 7 to 9"]
+            [
+              "Full title",
+              "Pearson Edexcel International Award in Lower Secondary English"
+            ],
+            [
+              "Specification code",
+              "LEH11"
+            ],
+            [
+              "Paper code",
+              "LEH11/01"
+            ],
+            [
+              "Assessment",
+              "One externally-set achievement test, taken at the end of Year 9"
+            ],
+            [
+              "Time allowed",
+              "1 hour 45 minutes"
+            ],
+            [
+              "Total marks",
+              "70"
+            ],
+            [
+              "Sections",
+              "Section A Reading, 40 marks. Section B Writing, 30 marks. Both compulsory."
+            ],
+            [
+              "Texts",
+              "Three, linked by a theme, supplied **unseen** in a Source Booklet with the paper"
+            ],
+            [
+              "Dictionaries",
+              "Not allowed"
+            ],
+            [
+              "First teaching / first assessment",
+              "2018 / 2019"
+            ],
+            [
+              "Year groups taught",
+              "Years 7 to 9"
+            ]
           ]
         },
         {
@@ -468,7 +813,9 @@
             {
               "heading": "1. Reading",
               "level": "h3",
-              "text": ["Four sub-strands, carrying 40 of the 70 marks in the Year 9 test."],
+              "text": [
+                "Four sub-strands, carrying 40 of the 70 marks in the Year 9 test."
+              ],
               "bullets": [
                 "**Reading for Meaning** - understanding what a text says and implies.",
                 "**Responding to Texts** - forming and supporting a personal and then a critical response.",
@@ -479,7 +826,9 @@
             {
               "heading": "2. Writing",
               "level": "h3",
-              "text": ["Three sub-strands, carrying 30 marks in a single extended task."],
+              "text": [
+                "Three sub-strands, carrying 30 marks in a single extended task."
+              ],
               "bullets": [
                 "**Writing Processes** - planning, drafting, revising and proofreading.",
                 "**Whole Text** - shape, structure, paragraphing and coherence across a whole piece.",
@@ -505,11 +854,31 @@
           "heading": "The Year 9 Achievement Test: LEH11/01",
           "level": "h2",
           "caption": "Verified from the official Summer 2022 paper. The recommended timings printed on the paper total 105 minutes exactly.",
-          "columns": ["Section", "Marks", "Recommended time", "What it contains"],
+          "columns": [
+            "Section",
+            "Marks",
+            "Recommended time",
+            "What it contains"
+          ],
           "rows": [
-            ["A: Reading", "40", "1 hour 10 minutes", "Questions on three unseen texts linked by a theme - typically two non-fiction and one fiction - supplied in a Source Booklet. Question types include multiple choice answered with a cross in a box, short response and extended response."],
-            ["B: Writing", "30", "35 minutes", "One extended writing task, with bullet points to guide content."],
-            ["**Total**", "**70**", "**1 hour 45 minutes**", "All questions in both sections are compulsory."]
+            [
+              "A: Reading",
+              "40",
+              "1 hour 10 minutes",
+              "Questions on three unseen texts linked by a theme - typically two non-fiction and one fiction - supplied in a Source Booklet. Question types include multiple choice answered with a cross in a box, short response and extended response."
+            ],
+            [
+              "B: Writing",
+              "30",
+              "35 minutes",
+              "One extended writing task, with bullet points to guide content."
+            ],
+            [
+              "**Total**",
+              "**70**",
+              "**1 hour 45 minutes**",
+              "All questions in both sections are compulsory."
+            ]
           ]
         },
         {
@@ -536,7 +905,9 @@
           "type": "activities",
           "heading": "Original RCF practice: preparing for three unseen texts",
           "level": "h2",
-          "intro": ["The Year 9 texts are unseen, so preparation cannot be about content. It has to be about a method that works on any text put in front of you."],
+          "intro": [
+            "The Year 9 texts are unseen, so preparation cannot be about content. It has to be about a method that works on any text put in front of you."
+          ],
           "items": [
             {
               "title": "The four-minute first read",
@@ -588,10 +959,34 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "iPrimary English", "url": "global-english/edexcel-international-curriculum/iprimary/", "text": ["Years 1 to 6, and the Year 6 test."] },
-            { "title": "Edexcel curriculum overview", "url": "global-english/edexcel-international-curriculum/", "text": ["Both stages compared."] },
-            { "title": "International GCSE English", "url": "global-english/igcse/", "text": ["What Year 10 leads to."] },
-            { "title": "Edexcel GCSE English Language", "url": "global-english/gcse/edexcel/", "text": ["The United Kingdom route, for comparison."] }
+            {
+              "title": "iPrimary English",
+              "url": "global-english/edexcel-international-curriculum/iprimary/",
+              "text": [
+                "Years 1 to 6, and the Year 6 test."
+              ]
+            },
+            {
+              "title": "Edexcel curriculum overview",
+              "url": "global-english/edexcel-international-curriculum/",
+              "text": [
+                "Both stages compared."
+              ]
+            },
+            {
+              "title": "International GCSE English",
+              "url": "global-english/igcse/",
+              "text": [
+                "What Year 10 leads to."
+              ]
+            },
+            {
+              "title": "Edexcel GCSE English Language",
+              "url": "global-english/gcse/edexcel/",
+              "text": [
+                "The United Kingdom route, for comparison."
+              ]
+            }
           ]
         }
       ]

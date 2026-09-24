@@ -1,11 +1,10 @@
 {
   "_comment": "Cambridge IGCSE English as a Second Language (0510 / 0511 / 0991 / 0993). SOURCE OF FACTS: the component names, durations, mark totals, weightings, exercise descriptions, assessment objectives and grading on these pages were read from the official Cambridge International syllabus for 0510 covering examinations in 2027, 2028 and 2029 (document 721337). Where a page states a figure, that is where it came from. The 2024-2026 syllabus differs and is described as a separate arrangement, never blended with the new one. Nothing here reproduces Cambridge text, question papers or mark schemes. All practice material is original RCF English work and is labelled as such on every page that carries it.",
-
   "pages": [
     {
       "slug": "global-english/igcse/english-as-a-second-language",
       "title": "Cambridge IGCSE English as a Second Language",
-      "metaTitle": "Cambridge IGCSE English as a Second Language (0510): Complete Guide | RCF English",
+      "metaTitle": "Cambridge IGCSE English as a Second Language (0510): Complete Guide",
       "description": "Cambridge IGCSE English as a Second Language (0510, 0511, 0991, 0993): the three components, their durations, marks and assessment objectives, explained in full.",
       "keywords": "IGCSE English as a Second Language, Cambridge IGCSE ESL 0510, 0511, 0991, 0993, IGCSE ESL papers, IGCSE ESL syllabus, IGCSE English second language revision",
       "kicker": "International GCSE",
@@ -14,15 +13,32 @@
       "resourceType": "guide",
       "educationalLevel": "International GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        }
       ],
-      "backTo": { "label": "IGCSE English", "url": "global-english/igcse/" },
+      "backTo": {
+        "label": "IGCSE English",
+        "url": "global-english/igcse/"
+      },
       "hero": {
         "text": "Three components, six written exercises, five listening exercises and a recorded speaking test. This guide takes each of them apart, states where every figure comes from, and gives you original practice with answers.",
         "buttons": [
-          { "label": "Past papers and model papers", "url": "global-english/igcse/english-as-a-second-language/papers/", "style": "btn--accent" },
-          { "label": "Reading and Writing paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/", "style": "btn--ghost-light" }
+          {
+            "label": "Past papers and model papers",
+            "url": "global-english/igcse/english-as-a-second-language/papers/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Reading and Writing paper",
+            "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -53,12 +69,37 @@
           "heading": "0510, 0511, 0991 and 0993 compared",
           "level": "h3",
           "caption": "The speaking arrangement and grade scale are the only differences. The taught content is the same.",
-          "columns": ["Code", "Full title", "Speaking mark", "Grade scale"],
+          "columns": [
+            "Code",
+            "Full title",
+            "Speaking mark",
+            "Grade scale"
+          ],
           "rows": [
-            ["0510", "IGCSE English as a Second Language (Speaking Endorsement)", "Reported separately, graded 1 (high) to 5 (low). Does not count towards the written grade.", "A* to G"],
-            ["0511", "IGCSE English as a Second Language (Count-in Speaking)", "Counts towards the overall grade.", "A* to G"],
-            ["0991", "IGCSE (9-1) English as a Second Language (Count-in Speaking)", "Counts towards the overall grade.", "9 to 1"],
-            ["0993", "IGCSE (9-1) English as a Second Language (Speaking Endorsement)", "Reported separately.", "9 to 1"]
+            [
+              "0510",
+              "IGCSE English as a Second Language (Speaking Endorsement)",
+              "Reported separately, graded 1 (high) to 5 (low). Does not count towards the written grade.",
+              "A* to G"
+            ],
+            [
+              "0511",
+              "IGCSE English as a Second Language (Count-in Speaking)",
+              "Counts towards the overall grade.",
+              "A* to G"
+            ],
+            [
+              "0991",
+              "IGCSE (9-1) English as a Second Language (Count-in Speaking)",
+              "Counts towards the overall grade.",
+              "9 to 1"
+            ],
+            [
+              "0993",
+              "IGCSE (9-1) English as a Second Language (Speaking Endorsement)",
+              "Reported separately.",
+              "9 to 1"
+            ]
           ]
         },
         {
@@ -74,11 +115,35 @@
           "heading": "Assessment overview: the three components",
           "level": "h2",
           "caption": "From the Cambridge 0510 syllabus for examinations in 2027, 2028 and 2029. All candidates take all three components.",
-          "columns": ["Component", "Name", "Duration", "Marks", "Weighting"],
+          "columns": [
+            "Component",
+            "Name",
+            "Duration",
+            "Marks",
+            "Weighting"
+          ],
           "rows": [
-            ["Component 1", "Reading and Writing", "2 hours", "60", "70%"],
-            ["Component 2", "Listening", "Approximately 50 minutes, including 6 minutes to transfer answers", "40", "30%"],
-            ["Component 3", "Speaking", "Approximately 10 to 15 minutes", "40", "Separately endorsed for 0510 and 0993; counts towards the grade for 0511 and 0991"]
+            [
+              "Component 1",
+              "Reading and Writing",
+              "2 hours",
+              "60",
+              "70%"
+            ],
+            [
+              "Component 2",
+              "Listening",
+              "Approximately 50 minutes, including 6 minutes to transfer answers",
+              "40",
+              "30%"
+            ],
+            [
+              "Component 3",
+              "Speaking",
+              "Approximately 10 to 15 minutes",
+              "40",
+              "Separately endorsed for 0510 and 0993; counts towards the grade for 0511 and 0991"
+            ]
           ]
         },
         {
@@ -118,12 +183,32 @@
           "heading": "Assessment objectives and their weightings",
           "level": "h2",
           "caption": "Approximate weightings for the qualification, from the Cambridge 0510 syllabus for 2027-2029. Descriptions here are summarised, not quoted.",
-          "columns": ["Objective", "What it assesses", "Weighting"],
+          "columns": [
+            "Objective",
+            "What it assesses",
+            "Weighting"
+          ],
           "rows": [
-            ["AO1 Reading", "Understanding stated facts; following ideas, opinions and attitudes across a text; selecting detail for a purpose; understanding what is implied", "35%"],
-            ["AO2 Writing", "Communicating information, ideas and opinions; organising with linking devices; range and accuracy of grammar and vocabulary; register and style for the purpose and audience", "35%"],
-            ["AO3 Listening", "Understanding specific information, speakers' ideas and attitudes, connections between them, and what is implied", "30%"],
-            ["AO4 Speaking", "Communicating ideas, facts and opinions; range and control of vocabulary and structures; developing responses and maintaining communication; pronunciation and intonation", "Separately endorsed for 0510 and 0993"]
+            [
+              "AO1 Reading",
+              "Understanding stated facts; following ideas, opinions and attitudes across a text; selecting detail for a purpose; understanding what is implied",
+              "35%"
+            ],
+            [
+              "AO2 Writing",
+              "Communicating information, ideas and opinions; organising with linking devices; range and accuracy of grammar and vocabulary; register and style for the purpose and audience",
+              "35%"
+            ],
+            [
+              "AO3 Listening",
+              "Understanding specific information, speakers' ideas and attitudes, connections between them, and what is implied",
+              "30%"
+            ],
+            [
+              "AO4 Speaking",
+              "Communicating ideas, facts and opinions; range and control of vocabulary and structures; developing responses and maintaining communication; pronunciation and intonation",
+              "Separately endorsed for 0510 and 0993"
+            ]
           ]
         },
         {
@@ -141,12 +226,54 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Reading and Writing paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/", "more": "Open", "text": ["All six exercises, the marks for each, and how to spend the two hours."] },
-            { "title": "Writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "more": "Open", "text": ["Informal email, article, report, review and essay, with openings that work."] },
-            { "title": "Model answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/", "more": "Open", "text": ["Original RCF answers at top marks and at middle marks, with the reasoning."] },
-            { "title": "Speaking test", "url": "global-english/igcse/english-as-a-second-language/speaking-test/", "more": "Open", "text": ["Interview, short talk and discussion, with topic areas and practice cards."] },
-            { "title": "Past papers and model papers", "url": "global-english/igcse/english-as-a-second-language/papers/", "more": "Open", "text": ["Official Cambridge papers and specimen materials, plus the original RCF model paper."] },
-            { "title": "IGCSE English overview", "url": "global-english/igcse/", "more": "Open", "text": ["How this syllabus compares with First Language English and Literature in English."] }
+            {
+              "title": "Reading and Writing paper",
+              "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/",
+              "more": "Open",
+              "text": [
+                "All six exercises, the marks for each, and how to spend the two hours."
+              ]
+            },
+            {
+              "title": "Writing formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/",
+              "more": "Open",
+              "text": [
+                "Informal email, article, report, review and essay, with openings that work."
+              ]
+            },
+            {
+              "title": "Model answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/",
+              "more": "Open",
+              "text": [
+                "Original RCF answers at top marks and at middle marks, with the reasoning."
+              ]
+            },
+            {
+              "title": "Speaking test",
+              "url": "global-english/igcse/english-as-a-second-language/speaking-test/",
+              "more": "Open",
+              "text": [
+                "Interview, short talk and discussion, with topic areas and practice cards."
+              ]
+            },
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/igcse/english-as-a-second-language/papers/",
+              "more": "Open",
+              "text": [
+                "Official Cambridge papers and specimen materials, plus the original RCF model paper."
+              ]
+            },
+            {
+              "title": "IGCSE English overview",
+              "url": "global-english/igcse/",
+              "more": "Open",
+              "text": [
+                "How this syllabus compares with First Language English and Literature in English."
+              ]
+            }
           ]
         },
         {
@@ -198,18 +325,35 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "IGCSE English overview", "url": "global-english/igcse/", "text": ["Cambridge, Edexcel and OxfordAQA International GCSE English."] },
-            { "title": "Global English", "url": "global-english/", "text": ["All the international qualifications covered on this site."] },
-            { "title": "English skills", "url": "global-english/skills/", "text": ["Reading, writing, grammar, speaking and listening."] }
+            {
+              "title": "IGCSE English overview",
+              "url": "global-english/igcse/",
+              "text": [
+                "Cambridge, Edexcel and OxfordAQA International GCSE English."
+              ]
+            },
+            {
+              "title": "Global English",
+              "url": "global-english/",
+              "text": [
+                "All the international qualifications covered on this site."
+              ]
+            },
+            {
+              "title": "English skills",
+              "url": "global-english/skills/",
+              "text": [
+                "Reading, writing, grammar, speaking and listening."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/english-as-a-second-language/reading-and-writing",
       "title": "IGCSE ESL Reading and Writing Paper",
-      "metaTitle": "IGCSE ESL Reading and Writing Paper: All Six Exercises Explained | RCF English",
+      "metaTitle": "IGCSE ESL Reading and Writing Paper: All Six Exercises Explained",
       "description": "What each of the six exercises in the IGCSE ESL Reading and Writing paper asks, the marks it carries, and how to spend the two hours.",
       "keywords": "IGCSE ESL reading and writing, IGCSE English question types, how to answer IGCSE English questions, Cambridge IGCSE 0510 paper 1, IGCSE ESL exercise 3 notes, IGCSE ESL multiple matching",
       "kicker": "Cambridge IGCSE ESL",
@@ -218,11 +362,23 @@
       "resourceType": "lesson",
       "educationalLevel": "International GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "English as a Second Language",
+          "url": "global-english/igcse/english-as-a-second-language/"
+        }
       ],
-      "backTo": { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
+      "backTo": {
+        "label": "English as a Second Language",
+        "url": "global-english/igcse/english-as-a-second-language/"
+      },
       "hero": {
         "text": "Two hours, six exercises, sixty marks. Thirty of those marks are reading and thirty are writing, and most lost marks come from mistaking which kind of answer an exercise wants."
       },
@@ -236,14 +392,49 @@
           "heading": "The six exercises at a glance",
           "level": "h2",
           "caption": "From the Cambridge 0510 syllabus for examinations in 2027, 2028 and 2029.",
-          "columns": ["Exercise", "What you do", "Text length", "Marks"],
+          "columns": [
+            "Exercise",
+            "What you do",
+            "Text length",
+            "Marks"
+          ],
           "rows": [
-            ["1", "Read one text and answer six questions with short answers. The first five need one answer each; the last needs three.", "About 400-450 words", "8"],
-            ["2", "Multiple matching. Read one text in up to five sections, or up to five short related texts, and match nine questions to the right one.", "About 600-650 words", "9"],
-            ["3", "Read a text and complete a set of brief notes.", "About 400-500 words", "7"],
-            ["4", "Read a text and answer six multiple-choice questions with three options each.", "About 550-600 words", "6"],
-            ["5", "Write an informal email of 120-160 words.", "Not applicable", "15"],
-            ["6", "Write a formal or semi-formal article, report, essay or review of 120-160 words.", "Not applicable", "15"]
+            [
+              "1",
+              "Read one text and answer six questions with short answers. The first five need one answer each; the last needs three.",
+              "About 400-450 words",
+              "8"
+            ],
+            [
+              "2",
+              "Multiple matching. Read one text in up to five sections, or up to five short related texts, and match nine questions to the right one.",
+              "About 600-650 words",
+              "9"
+            ],
+            [
+              "3",
+              "Read a text and complete a set of brief notes.",
+              "About 400-500 words",
+              "7"
+            ],
+            [
+              "4",
+              "Read a text and answer six multiple-choice questions with three options each.",
+              "About 550-600 words",
+              "6"
+            ],
+            [
+              "5",
+              "Write an informal email of 120-160 words.",
+              "Not applicable",
+              "15"
+            ],
+            [
+              "6",
+              "Write a formal or semi-formal article, report, essay or review of 120-160 words.",
+              "Not applicable",
+              "15"
+            ]
           ]
         },
         {
@@ -253,19 +444,27 @@
           "items": [
             {
               "title": "Reading exercises 1 to 4: about 55 minutes",
-              "text": ["Thirty marks in under an hour. That is roughly two minutes a mark, which is comfortable if you do not re-read whole texts. Read the questions before the text for Exercises 1 and 3, so you know what you are hunting for."]
+              "text": [
+                "Thirty marks in under an hour. That is roughly two minutes a mark, which is comfortable if you do not re-read whole texts. Read the questions before the text for Exercises 1 and 3, so you know what you are hunting for."
+              ]
             },
             {
               "title": "Exercise 5, the informal email: about 25 minutes",
-              "text": ["Five minutes planning against the prompts, fifteen writing, five checking. The plan is what protects your content mark."]
+              "text": [
+                "Five minutes planning against the prompts, fifteen writing, five checking. The plan is what protects your content mark."
+              ]
             },
             {
               "title": "Exercise 6, the formal task: about 30 minutes",
-              "text": ["Slightly longer, because the register is harder to hold and the format has to be right. Decide in the first minute whether you are writing an article, a report, an essay or a review - the rubric tells you."]
+              "text": [
+                "Slightly longer, because the register is harder to hold and the format has to be right. Decide in the first minute whether you are writing an article, a report, an essay or a review - the rubric tells you."
+              ]
             },
             {
               "title": "Final check: about 10 minutes",
-              "text": ["Check the two writing answers only. Read for verb tenses, for plural agreement and for whether every prompt has actually been answered. Do not spend this time changing reading answers on a feeling."]
+              "text": [
+                "Check the two writing answers only. Read for verb tenses, for plural agreement and for whether every prompt has actually been answered. Do not spend this time changing reading answers on a feeling."
+              ]
             }
           ]
         },
@@ -398,18 +597,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "text": ["Email, article, report, review and essay, format by format."] },
-            { "title": "Model answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/", "text": ["Full-mark and middle-mark answers with the reasoning."] },
-            { "title": "Past papers and model papers", "url": "global-english/igcse/english-as-a-second-language/papers/", "text": ["Official Cambridge materials and the RCF model paper."] }
+            {
+              "title": "Writing formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/",
+              "text": [
+                "Email, article, report, review and essay, format by format."
+              ]
+            },
+            {
+              "title": "Model answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/",
+              "text": [
+                "Full-mark and middle-mark answers with the reasoning."
+              ]
+            },
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/igcse/english-as-a-second-language/papers/",
+              "text": [
+                "Official Cambridge materials and the RCF model paper."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/english-as-a-second-language/writing-formats",
       "title": "IGCSE ESL Writing Formats",
-      "metaTitle": "IGCSE English Writing Formats: Email, Article, Report, Review, Essay | RCF English",
+      "metaTitle": "IGCSE English Writing Formats: Email, Article, Report, Review, Essay",
       "description": "Informal email, article, report, review and essay for IGCSE ESL: the shape each one needs, model openings, and original practice tasks.",
       "keywords": "IGCSE English writing formats, informal email writing IGCSE, IGCSE article writing, IGCSE report writing, IGCSE review writing, formal letter report article review email writing",
       "kicker": "Cambridge IGCSE ESL",
@@ -418,11 +634,23 @@
       "resourceType": "lesson",
       "educationalLevel": "International GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "English as a Second Language",
+          "url": "global-english/igcse/english-as-a-second-language/"
+        }
       ],
-      "backTo": { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
+      "backTo": {
+        "label": "English as a Second Language",
+        "url": "global-english/igcse/english-as-a-second-language/"
+      },
       "hero": {
         "text": "Five formats, one paper. The rubric names the format, the purpose and the audience, and getting those three right is worth more than any phrase you have memorised."
       },
@@ -436,13 +664,43 @@
           "heading": "The five formats compared",
           "level": "h2",
           "caption": "All five are written in 120-160 words and marked out of 6 for content and 9 for language.",
-          "columns": ["Format", "Register", "Shape the reader expects", "Gives itself away by"],
+          "columns": [
+            "Format",
+            "Register",
+            "Shape the reader expects",
+            "Gives itself away by"
+          ],
           "rows": [
-            ["Informal email", "Friendly, contracted forms, direct questions", "Greeting, reason for writing, two developed points, sign-off", "Asking the reader a question back"],
-            ["Article", "Semi-formal, lively, addressed to readers", "Title, hook, two developed points, closing thought", "A title and a direct appeal to the reader"],
-            ["Report", "Formal, neutral, factual", "Title, purpose, findings under headings, recommendation", "Sub-headings and a recommendation at the end"],
-            ["Review", "Semi-formal, personal but reasoned", "What it is, what was good, what was less good, recommendation", "A clear verdict, not just description"],
-            ["Essay", "Formal, balanced", "Introduction, argument for, argument against, conclusion", "Discourse markers and a stated opinion at the end"]
+            [
+              "Informal email",
+              "Friendly, contracted forms, direct questions",
+              "Greeting, reason for writing, two developed points, sign-off",
+              "Asking the reader a question back"
+            ],
+            [
+              "Article",
+              "Semi-formal, lively, addressed to readers",
+              "Title, hook, two developed points, closing thought",
+              "A title and a direct appeal to the reader"
+            ],
+            [
+              "Report",
+              "Formal, neutral, factual",
+              "Title, purpose, findings under headings, recommendation",
+              "Sub-headings and a recommendation at the end"
+            ],
+            [
+              "Review",
+              "Semi-formal, personal but reasoned",
+              "What it is, what was good, what was less good, recommendation",
+              "A clear verdict, not just description"
+            ],
+            [
+              "Essay",
+              "Formal, balanced",
+              "Introduction, argument for, argument against, conclusion",
+              "Discourse markers and a stated opinion at the end"
+            ]
           ]
         },
         {
@@ -557,7 +815,9 @@
           "type": "checklist",
           "heading": "Practice: five original RCF tasks",
           "level": "h2",
-          "text": ["Each is written in the style of the examination by RCF English. They are not Cambridge questions. Write 120-160 words for each and check against the [model answers](global-english/igcse/english-as-a-second-language/model-answers/)."],
+          "text": [
+            "Each is written in the style of the examination by RCF English. They are not Cambridge questions. Write 120-160 words for each and check against the [model answers](global-english/igcse/english-as-a-second-language/model-answers/)."
+          ],
           "items": [
             "**Informal email.** A cousin is visiting your town next month and has asked what to bring and what to see. Write an email replying.",
             "**Article.** Your school magazine is running a series called *One change I would make*. Write an article about one change you would make to the school day.",
@@ -603,18 +863,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Model answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/", "text": ["Complete answers at full marks and at middle marks."] },
-            { "title": "Reading and Writing paper", "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/", "text": ["All six exercises and how to spend the two hours."] },
-            { "title": "RCF Model Paper 1", "url": "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/", "text": ["A full original practice paper in the current format."] }
+            {
+              "title": "Model answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/",
+              "text": [
+                "Complete answers at full marks and at middle marks."
+              ]
+            },
+            {
+              "title": "Reading and Writing paper",
+              "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/",
+              "text": [
+                "All six exercises and how to spend the two hours."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 1",
+              "url": "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/",
+              "text": [
+                "A full original practice paper in the current format."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/english-as-a-second-language/model-answers",
       "title": "IGCSE ESL Model Answers",
-      "metaTitle": "IGCSE English Model Answers: Writing Exercises 5 and 6 | RCF English",
+      "metaTitle": "IGCSE English Model Answers: Writing Exercises 5 and 6",
       "description": "Original RCF model answers for the Cambridge IGCSE English as a Second Language writing exercises, written at full marks and at middle marks, with the examiner's reasoning set out beside each one.",
       "keywords": "IGCSE English model answers, IGCSE ESL sample answers, IGCSE English writing example answers, IGCSE email model answer, IGCSE report model answer",
       "kicker": "Cambridge IGCSE ESL",
@@ -623,11 +900,23 @@
       "resourceType": "model answers",
       "educationalLevel": "International GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "English as a Second Language",
+          "url": "global-english/igcse/english-as-a-second-language/"
+        }
       ],
-      "backTo": { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
+      "backTo": {
+        "label": "English as a Second Language",
+        "url": "global-english/igcse/english-as-a-second-language/"
+      },
       "hero": {
         "text": "Two answers to the same task: one that would reach the top band, and one that would sit in the middle. The difference between them is easier to see than to describe."
       },
@@ -733,7 +1022,9 @@
           "type": "checklist",
           "heading": "Mark your own writing honestly",
           "level": "h2",
-          "text": ["Work through these before you look at a model answer. Most of the marks lost in this paper are found by the fourth question."],
+          "text": [
+            "Work through these before you look at a model answer. Most of the marks lost in this paper are found by the fourth question."
+          ],
           "items": [
             "Have I answered **every** prompt in the rubric?",
             "Have I developed at least two of them with a reason or an example?",
@@ -775,18 +1066,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Writing formats", "url": "global-english/igcse/english-as-a-second-language/writing-formats/", "text": ["The shape each format needs."] },
-            { "title": "RCF Model Paper 1", "url": "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/", "text": ["A full original practice paper."] },
-            { "title": "Speaking test", "url": "global-english/igcse/english-as-a-second-language/speaking-test/", "text": ["Interview, short talk and discussion."] }
+            {
+              "title": "Writing formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/",
+              "text": [
+                "The shape each format needs."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 1",
+              "url": "global-english/igcse/english-as-a-second-language/papers/rcf-model-paper-1/",
+              "text": [
+                "A full original practice paper."
+              ]
+            },
+            {
+              "title": "Speaking test",
+              "url": "global-english/igcse/english-as-a-second-language/speaking-test/",
+              "text": [
+                "Interview, short talk and discussion."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/igcse/english-as-a-second-language/speaking-test",
       "title": "IGCSE ESL Speaking Test",
-      "metaTitle": "IGCSE English Speaking Test: Structure, Topics and Marks | RCF English",
+      "metaTitle": "IGCSE English Speaking Test: Structure, Topics and Marks",
       "description": "The Cambridge IGCSE English as a Second Language speaking test explained: the five stages, how long each lasts, which parts are assessed, the topics that come up, and original RCF practice cards.",
       "keywords": "IGCSE English speaking topics, IGCSE ESL speaking test, Cambridge IGCSE speaking exam, IGCSE speaking short talk, IGCSE speaking test marks",
       "kicker": "Cambridge IGCSE ESL",
@@ -795,11 +1103,23 @@
       "resourceType": "lesson",
       "educationalLevel": "International GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "IGCSE English", "url": "global-english/igcse/" },
-        { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "IGCSE English",
+          "url": "global-english/igcse/"
+        },
+        {
+          "label": "English as a Second Language",
+          "url": "global-english/igcse/english-as-a-second-language/"
+        }
       ],
-      "backTo": { "label": "English as a Second Language", "url": "global-english/igcse/english-as-a-second-language/" },
+      "backTo": {
+        "label": "English as a Second Language",
+        "url": "global-english/igcse/english-as-a-second-language/"
+      },
       "hero": {
         "text": "Ten to fifteen minutes with your own teacher, recorded from start to finish. Two of the five stages are not assessed at all, which surprises most candidates."
       },
@@ -813,13 +1133,43 @@
           "heading": "The five stages",
           "level": "h2",
           "caption": "From the Cambridge 0510 syllabus for examinations in 2027, 2028 and 2029. The whole test runs 10-15 minutes and is recorded from the introduction onwards.",
-          "columns": ["Stage", "Approximate length", "Assessed?", "What happens"],
+          "columns": [
+            "Stage",
+            "Approximate length",
+            "Assessed?",
+            "What happens"
+          ],
           "rows": [
-            ["Introduction", "About 1 minute", "Not assessed", "The teacher starts the recording and states the names, the candidate number and the date."],
-            ["Warm-up", "About 1-2 minutes", "Not assessed", "A short settling conversation using set questions."],
-            ["Part 1: Interview", "About 2-3 minutes", "Assessed", "The teacher introduces the topic and asks questions about it."],
-            ["Part 2: Short talk", "About 3-4 minutes, including 1 minute to prepare", "Assessed", "You read an assessment card, prepare for up to a minute, then talk on your own about the topic."],
-            ["Part 3: Discussion", "About 3-4 minutes", "Assessed", "A discussion of the same topic, led by the teacher's questions."]
+            [
+              "Introduction",
+              "About 1 minute",
+              "Not assessed",
+              "The teacher starts the recording and states the names, the candidate number and the date."
+            ],
+            [
+              "Warm-up",
+              "About 1-2 minutes",
+              "Not assessed",
+              "A short settling conversation using set questions."
+            ],
+            [
+              "Part 1: Interview",
+              "About 2-3 minutes",
+              "Assessed",
+              "The teacher introduces the topic and asks questions about it."
+            ],
+            [
+              "Part 2: Short talk",
+              "About 3-4 minutes, including 1 minute to prepare",
+              "Assessed",
+              "You read an assessment card, prepare for up to a minute, then talk on your own about the topic."
+            ],
+            [
+              "Part 3: Discussion",
+              "About 3-4 minutes",
+              "Assessed",
+              "A discussion of the same topic, led by the teacher's questions."
+            ]
           ]
         },
         {
@@ -865,17 +1215,35 @@
           "heading": "Phrases that buy you thinking time",
           "level": "h2",
           "items": [
-            { "term": "That is an interesting question.", "definition": "Buys two seconds and sounds engaged rather than stalling.", "example": "Use it once, not four times." },
-            { "term": "I had not thought about it that way before, but...", "definition": "Signals that you are about to develop an idea rather than repeat one.", "example": "Useful in Part 3, where the teacher may challenge you." },
-            { "term": "It depends, really.", "definition": "Opens a balanced answer, which shows range.", "example": "*It depends, really. At home I would say yes, but at school it is different because...*" },
-            { "term": "Sorry, do you mean ... ?", "definition": "Asking for clarification is not a loss of marks. Maintaining communication is one of the objectives.", "example": "Far better than answering a question you did not understand." }
+            {
+              "term": "That is an interesting question.",
+              "definition": "Buys two seconds and sounds engaged rather than stalling.",
+              "example": "Use it once, not four times."
+            },
+            {
+              "term": "I had not thought about it that way before, but...",
+              "definition": "Signals that you are about to develop an idea rather than repeat one.",
+              "example": "Useful in Part 3, where the teacher may challenge you."
+            },
+            {
+              "term": "It depends, really.",
+              "definition": "Opens a balanced answer, which shows range.",
+              "example": "*It depends, really. At home I would say yes, but at school it is different because...*"
+            },
+            {
+              "term": "Sorry, do you mean ... ?",
+              "definition": "Asking for clarification is not a loss of marks. Maintaining communication is one of the objectives.",
+              "example": "Far better than answering a question you did not understand."
+            }
           ]
         },
         {
           "type": "checklist",
           "heading": "Original RCF practice cards",
           "level": "h2",
-          "text": ["Five practice topics written by RCF English in the style of the assessment cards. They are not Cambridge cards. Give yourself one minute to prepare and then speak for three minutes without stopping."],
+          "text": [
+            "Five practice topics written by RCF English in the style of the assessment cards. They are not Cambridge cards. Give yourself one minute to prepare and then speak for three minutes without stopping."
+          ],
           "items": [
             "**Learning outside the classroom.** Talk about something useful you have learned that was not taught at school - who taught you, how, and whether school could teach it.",
             "**Living in a city or in a village.** Talk about where you would choose to live at twenty-five years old, and what you would miss about the other.",
@@ -948,9 +1316,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Qualification guide", "url": "global-english/igcse/english-as-a-second-language/", "text": ["All three components and the four syllabus codes."] },
-            { "title": "Model answers", "url": "global-english/igcse/english-as-a-second-language/model-answers/", "text": ["Written answers at full marks and at middle marks."] },
-            { "title": "Speaking in Practical English", "url": "practical-english/speaking/", "text": ["General speaking practice for any examination."] }
+            {
+              "title": "Qualification guide",
+              "url": "global-english/igcse/english-as-a-second-language/",
+              "text": [
+                "All three components and the four syllabus codes."
+              ]
+            },
+            {
+              "title": "Model answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/",
+              "text": [
+                "Written answers at full marks and at middle marks."
+              ]
+            },
+            {
+              "title": "Speaking in Practical English",
+              "url": "practical-english/speaking/",
+              "text": [
+                "General speaking practice for any examination."
+              ]
+            }
           ]
         }
       ]

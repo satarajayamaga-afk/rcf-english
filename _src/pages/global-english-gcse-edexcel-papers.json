@@ -1,11 +1,10 @@
 {
   "_comment": "Edexcel 1EN0 papers. RULES: official Edexcel papers and mark schemes are LINKED to qualifications.pearson.com, never copied; no paper-sharing site is linked. Everything RCF writes is labelled 'Unofficial original RCF practice material', never called an Edexcel paper, and carries no Pearson or Edexcel logo or wording implying endorsement. RCF Model Paper 2 follows the verified structure of Edexcel 1EN0/02: 2h05, 96 marks, Section A 56 marks in seven questions worth 2, 2, 15, 1, 1, 15 and 20 (6+14), Section B 40 marks from a choice of two. Both source texts are original RCF work: Text 1 is 20th-century in setting and voice, Text 2 is 21st-century literary non-fiction, about 1000 words across the two, linked by theme, as the specification requires.",
-
   "pages": [
     {
       "slug": "global-english/gcse/edexcel/papers",
       "title": "Edexcel English Language Past Papers",
-      "metaTitle": "Edexcel GCSE English Language Past Papers and Mark Schemes | RCF English",
+      "metaTitle": "Edexcel GCSE English Language Past Papers and Mark Schemes",
       "description": "Official Pearson Edexcel GCSE English Language past papers, mark schemes and examiners' reports, linked to their source, plus an original RCF model paper.",
       "keywords": "Edexcel English Language past papers, 1EN0 mark scheme, Edexcel paper 2 past paper, Edexcel English Language practice paper, Edexcel examiners report",
       "kicker": "Edexcel GCSE English Language",
@@ -14,16 +13,36 @@
       "resourceType": "past papers",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        }
       ],
-      "backTo": { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
+      "backTo": {
+        "label": "Edexcel English Language",
+        "url": "global-english/gcse/edexcel/"
+      },
       "hero": {
         "text": "Pearson publishes its past papers, mark schemes and examiners' reports free of charge. Those are linked here as they are. Beside them is an original RCF practice paper, clearly labelled.",
         "buttons": [
-          { "label": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/", "style": "btn--accent" },
-          { "label": "Marking guide", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2-mark-scheme/", "style": "btn--ghost-light" }
+          {
+            "label": "RCF Model Paper 2",
+            "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Marking guide",
+            "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2-mark-scheme/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -42,15 +61,47 @@
           "heading": "Official Pearson Edexcel materials",
           "level": "h2",
           "caption": "Every link opens an official Pearson page or document. Pearson decides what is published openly and may move items; the qualification page is the reliable starting point.",
-          "columns": ["Type", "Paper", "Official source"],
+          "columns": [
+            "Type",
+            "Paper",
+            "Official source"
+          ],
           "rows": [
-            ["Qualification page: specification, past papers, mark schemes and examiners' reports", "Both papers", "[Edexcel GCSE English Language (2015)](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html)"],
-            ["Specification, Issue 6", "Both papers", "[1EN0 specification PDF](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/specification-and-sample-assesment/gcse-2015-englang-spec.pdf)"],
-            ["Question paper", "Paper 1: Fiction and Imaginative Writing", "[1EN0/01 question paper](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/Exam-materials/1EN0_01_que_20171101.pdf)"],
-            ["Question paper", "Paper 2: Non-fiction and Transactional Writing", "[1EN0/02 question paper](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/Exam-materials/1EN0_02_que_20211104.pdf)"],
-            ["Exemplar scripts with examiner commentary", "Paper 1", "[Paper 1 exemplars](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/teaching-and-learning-materials/Exemplars%20final%201EN0%2001.pdf)"],
-            ["Exemplar scripts with examiner commentary", "Paper 2", "[Paper 2 exemplars](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/teaching-and-learning-materials/Exemplars%20final%201EN0%2002.pdf)"],
-            ["Examiners' report", "Paper 2", "[1EN0/02 examiners' report](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/Exam-materials/1EN0_02_pef_20180822.pdf)"]
+            [
+              "Qualification page: specification, past papers, mark schemes and examiners' reports",
+              "Both papers",
+              "[Edexcel GCSE English Language (2015)](https://qualifications.pearson.com/en/qualifications/edexcel-gcses/english-language-2015.html)"
+            ],
+            [
+              "Specification, Issue 6",
+              "Both papers",
+              "[1EN0 specification PDF](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/specification-and-sample-assesment/gcse-2015-englang-spec.pdf)"
+            ],
+            [
+              "Question paper",
+              "Paper 1: Fiction and Imaginative Writing",
+              "[1EN0/01 question paper](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/Exam-materials/1EN0_01_que_20171101.pdf)"
+            ],
+            [
+              "Question paper",
+              "Paper 2: Non-fiction and Transactional Writing",
+              "[1EN0/02 question paper](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/Exam-materials/1EN0_02_que_20211104.pdf)"
+            ],
+            [
+              "Exemplar scripts with examiner commentary",
+              "Paper 1",
+              "[Paper 1 exemplars](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/teaching-and-learning-materials/Exemplars%20final%201EN0%2001.pdf)"
+            ],
+            [
+              "Exemplar scripts with examiner commentary",
+              "Paper 2",
+              "[Paper 2 exemplars](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/teaching-and-learning-materials/Exemplars%20final%201EN0%2002.pdf)"
+            ],
+            [
+              "Examiners' report",
+              "Paper 2",
+              "[1EN0/02 examiners' report](https://qualifications.pearson.com/content/dam/pdf/GCSE/English%20Language/2015/Exam-materials/1EN0_02_pef_20180822.pdf)"
+            ]
           ]
         },
         {
@@ -67,10 +118,28 @@
           "heading": "Original RCF model papers",
           "level": "h2",
           "caption": "Unofficial original RCF practice material, written in the format of the current specification. Not examination papers.",
-          "columns": ["Paper", "Type", "Modelled on", "Format", "Open"],
+          "columns": [
+            "Paper",
+            "Type",
+            "Modelled on",
+            "Format",
+            "Open"
+          ],
           "rows": [
-            ["RCF Model Paper 1", "RCF original model paper", "Pearson Edexcel GCSE English Language 1EN0, Paper 1", "1 hour 45 minutes, 64 marks, one 19th-century fiction extract and an imaginative writing task", "[Question paper](global-english/gcse/edexcel/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/edexcel/papers/rcf-model-paper-1-mark-scheme/)"],
-            ["RCF Model Paper 2", "RCF original model paper", "Pearson Edexcel GCSE English Language 1EN0, Paper 2", "2 hours 5 minutes, 96 marks, two unseen non-fiction texts and a transactional writing task", "[Question paper](global-english/gcse/edexcel/papers/rcf-model-paper-2/) and [marking guide](global-english/gcse/edexcel/papers/rcf-model-paper-2-mark-scheme/)"]
+            [
+              "RCF Model Paper 1",
+              "RCF original model paper",
+              "Pearson Edexcel GCSE English Language 1EN0, Paper 1",
+              "1 hour 45 minutes, 64 marks, one 19th-century fiction extract and an imaginative writing task",
+              "[Question paper](global-english/gcse/edexcel/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/edexcel/papers/rcf-model-paper-1-mark-scheme/)"
+            ],
+            [
+              "RCF Model Paper 2",
+              "RCF original model paper",
+              "Pearson Edexcel GCSE English Language 1EN0, Paper 2",
+              "2 hours 5 minutes, 96 marks, two unseen non-fiction texts and a transactional writing task",
+              "[Question paper](global-english/gcse/edexcel/papers/rcf-model-paper-2/) and [marking guide](global-english/gcse/edexcel/papers/rcf-model-paper-2-mark-scheme/)"
+            ]
           ]
         },
         {
@@ -114,18 +183,35 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Edexcel Paper 2", "url": "global-english/gcse/edexcel/paper-2/", "text": ["Question by question, with methods."] },
-            { "title": "Edexcel overview", "url": "global-english/gcse/edexcel/", "text": ["Both papers, marks and assessment objectives."] },
-            { "title": "AQA past papers", "url": "global-english/gcse/aqa/papers/", "text": ["The other board developed in full."] }
+            {
+              "title": "Edexcel Paper 2",
+              "url": "global-english/gcse/edexcel/paper-2/",
+              "text": [
+                "Question by question, with methods."
+              ]
+            },
+            {
+              "title": "Edexcel overview",
+              "url": "global-english/gcse/edexcel/",
+              "text": [
+                "Both papers, marks and assessment objectives."
+              ]
+            },
+            {
+              "title": "AQA past papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "text": [
+                "The other board developed in full."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/edexcel/papers/rcf-model-paper-2",
       "title": "RCF Model Paper 2: Edexcel English Language",
-      "metaTitle": "Edexcel English Language Paper 2 Practice Paper with Answers | RCF English",
+      "metaTitle": "Edexcel English Language Paper 2 Practice Paper with Answers",
       "description": "A complete original Edexcel GCSE English Language Paper 2 practice paper: two unseen non-fiction texts, nine questions, 96 marks, 2 hours 5 minutes.",
       "keywords": "Edexcel paper 2 practice paper, Edexcel English Language mock paper, 1EN0/02 practice, Edexcel non-fiction practice paper",
       "kicker": "Unofficial original RCF practice material",
@@ -134,12 +220,27 @@
       "resourceType": "practice paper",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
-        { "label": "Papers", "url": "global-english/gcse/edexcel/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        },
+        {
+          "label": "Papers",
+          "url": "global-english/gcse/edexcel/papers/"
+        }
       ],
-      "backTo": { "label": "Papers", "url": "global-english/gcse/edexcel/papers/" },
+      "backTo": {
+        "label": "Papers",
+        "url": "global-english/gcse/edexcel/papers/"
+      },
       "hero": {
         "text": "Two unseen non-fiction texts. Nine questions. Ninety-six marks. Two hours and five minutes. Both texts were written for this paper and have never appeared in an examination."
       },
@@ -159,16 +260,43 @@
           "heading": "Paper details",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Written by", "RCF English (original practice material)"],
-            ["Modelled on", "Pearson Edexcel GCSE (9-1) English Language, specification 1EN0"],
-            ["Paper it follows", "Paper 2: Non-fiction and Transactional Writing (1EN0/02)"],
-            ["Time allowed", "2 hours 5 minutes"],
-            ["Total marks", "96"],
-            ["Sections", "Section A Reading, 56 marks, all questions. Section B Writing, 40 marks, one question."],
-            ["Theme linking the texts", "Working away from home"],
-            ["Advice", "Spend about 1 hour 20 minutes on Section A and about 45 minutes on Section B."]
+            [
+              "Written by",
+              "RCF English (original practice material)"
+            ],
+            [
+              "Modelled on",
+              "Pearson Edexcel GCSE (9-1) English Language, specification 1EN0"
+            ],
+            [
+              "Paper it follows",
+              "Paper 2: Non-fiction and Transactional Writing (1EN0/02)"
+            ],
+            [
+              "Time allowed",
+              "2 hours 5 minutes"
+            ],
+            [
+              "Total marks",
+              "96"
+            ],
+            [
+              "Sections",
+              "Section A Reading, 56 marks, all questions. Section B Writing, 40 marks, one question."
+            ],
+            [
+              "Theme linking the texts",
+              "Working away from home"
+            ],
+            [
+              "Advice",
+              "Spend about 1 hour 20 minutes on Section A and about 45 minutes on Section B."
+            ]
           ]
         },
         {
@@ -237,17 +365,25 @@
             {
               "heading": "Question 1",
               "level": "h3",
-              "text": ["From lines 1 to 4, identify **two** things that happened on the writer's journey to Leeds. **(Total for Question 1 = 2 marks)**"]
+              "text": [
+                "From lines 1 to 4, identify **two** things that happened on the writer's journey to Leeds. **(Total for Question 1 = 2 marks)**"
+              ]
             },
             {
               "heading": "Question 2",
               "level": "h3",
-              "text": ["From lines 5 to 10, give **two** things Mr Cowan said to the writer on the first morning.", "You may use your own words or quotations from the text. **(Total for Question 2 = 2 marks)**"]
+              "text": [
+                "From lines 5 to 10, give **two** things Mr Cowan said to the writer on the first morning.",
+                "You may use your own words or quotations from the text. **(Total for Question 2 = 2 marks)**"
+              ]
             },
             {
               "heading": "Question 3",
               "level": "h3",
-              "text": ["Analyse how the writer uses language and structure to interest and engage the reader. **(Total for Question 3 = 15 marks)**", "In your answer you should write about:"],
+              "text": [
+                "Analyse how the writer uses language and structure to interest and engage the reader. **(Total for Question 3 = 15 marks)**",
+                "In your answer you should write about:"
+              ],
               "bullets": [
                 "language features and techniques",
                 "structure and organisation",
@@ -257,17 +393,23 @@
             {
               "heading": "Text 2",
               "level": "h3",
-              "text": ["**Read Text 2. Then answer Questions 4 to 6.**"]
+              "text": [
+                "**Read Text 2. Then answer Questions 4 to 6.**"
+              ]
             },
             {
               "heading": "Question 4",
               "level": "h3",
-              "text": ["From lines 6 to 13, identify **one** thing the writer did on the same day each week. **(Total for Question 4 = 1 mark)**"]
+              "text": [
+                "From lines 6 to 13, identify **one** thing the writer did on the same day each week. **(Total for Question 4 = 1 mark)**"
+              ]
             },
             {
               "heading": "Question 5",
               "level": "h3",
-              "text": ["From lines 14 to 20, identify **one** thing the writer had assumed before going to the headland. **(Total for Question 5 = 1 mark)**"]
+              "text": [
+                "From lines 14 to 20, identify **one** thing the writer had assumed before going to the headland. **(Total for Question 5 = 1 mark)**"
+              ]
             },
             {
               "heading": "Question 6",
@@ -281,7 +423,9 @@
             {
               "heading": "Question 7",
               "level": "h3",
-              "text": ["**Question 7 is about Text 1 and Text 2. Answer both parts of the question.**"]
+              "text": [
+                "**Question 7 is about Text 1 and Text 2. Answer both parts of the question.**"
+              ]
             },
             {
               "heading": "Question 7 (a)",
@@ -295,7 +439,10 @@
             {
               "heading": "Question 7 (b)",
               "level": "h3",
-              "text": ["Compare how the writers of Text 1 and Text 2 present ideas and perspectives about what work gave them. Support your answer with detailed references to both texts. **(14 marks)**", "You should write about:"],
+              "text": [
+                "Compare how the writers of Text 1 and Text 2 present ideas and perspectives about what work gave them. Support your answer with detailed references to both texts. **(14 marks)**",
+                "You should write about:"
+              ],
               "bullets": [
                 "the ideas and perspectives",
                 "how they are presented",
@@ -305,7 +452,10 @@
             {
               "heading": "End of Section A",
               "level": "h3",
-              "text": ["**(Total for Question 7 = 20 marks)**", "**TOTAL FOR SECTION A = 56 MARKS**"]
+              "text": [
+                "**(Total for Question 7 = 20 marks)**",
+                "**TOTAL FOR SECTION A = 56 MARKS**"
+              ]
             }
           ]
         },
@@ -337,7 +487,10 @@
             {
               "heading": "",
               "level": "h3",
-              "text": ["**TOTAL FOR SECTION B = 40 MARKS**", "**TOTAL FOR PAPER = 96 MARKS**"]
+              "text": [
+                "**TOTAL FOR SECTION B = 40 MARKS**",
+                "**TOTAL FOR PAPER = 96 MARKS**"
+              ]
             }
           ]
         },
@@ -352,11 +505,10 @@
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/edexcel/papers/rcf-model-paper-2-mark-scheme",
       "title": "RCF Model Paper 2: Edexcel Marking Guide",
-      "metaTitle": "Edexcel Paper 2 Practice Paper: Answers and Marking Guide | RCF English",
+      "metaTitle": "Edexcel Paper 2 Practice Paper: Answers and Marking Guide",
       "description": "Answers, indicative content, band descriptions and a full model answer for RCF Model Paper 2, an original Edexcel GCSE English Language Paper 2 practice paper.",
       "keywords": "Edexcel paper 2 answers, Edexcel English Language marking guide, 1EN0/02 model answers, Edexcel question 7b model answer",
       "kicker": "Unofficial original RCF practice material",
@@ -365,12 +517,27 @@
       "resourceType": "marking guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
-        { "label": "Papers", "url": "global-english/gcse/edexcel/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        },
+        {
+          "label": "Papers",
+          "url": "global-english/gcse/edexcel/papers/"
+        }
       ],
-      "backTo": { "label": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/" },
+      "backTo": {
+        "label": "RCF Model Paper 2",
+        "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/"
+      },
       "hero": {
         "text": "Answers for the six short marks, indicative content for the three big questions, and a full model answer for Question 7(b) and the writing task."
       },
@@ -390,19 +557,41 @@
           "heading": "The short questions",
           "level": "h2",
           "caption": "Six marks in total. One mark per acceptable point; do not credit more than the number asked for.",
-          "columns": ["Q", "Marks", "Acceptable answers"],
+          "columns": [
+            "Q",
+            "Marks",
+            "Acceptable answers"
+          ],
           "rows": [
-            ["1", "2", "Any two: her mother packed for her; three of everything was packed; a jar of damson jam was included; the jam jar broke; the jam stained the whole case; she stood on the platform holding it"],
-            ["2", "2", "That she would start at four o'clock; that if she was late he would not shout but would give the job to somebody else"],
-            ["4", "1", "Baked bread (on Tuesdays), or took the long walk (on Sundays). Either is acceptable; only one is required."],
-            ["5", "1", "That the hard part would be the silence"]
+            [
+              "1",
+              "2",
+              "Any two: her mother packed for her; three of everything was packed; a jar of damson jam was included; the jam jar broke; the jam stained the whole case; she stood on the platform holding it"
+            ],
+            [
+              "2",
+              "2",
+              "That she would start at four o'clock; that if she was late he would not shout but would give the job to somebody else"
+            ],
+            [
+              "4",
+              "1",
+              "Baked bread (on Tuesdays), or took the long walk (on Sundays). Either is acceptable; only one is required."
+            ],
+            [
+              "5",
+              "1",
+              "That the hard part would be the silence"
+            ]
           ]
         },
         {
           "type": "prose",
           "heading": "Question 3: language and structure in Text 1 (15 marks)",
           "level": "h2",
-          "text": ["AO2. Reward analysis of effect, supported by short quotations. Both language **and** structure must be covered for the higher bands."],
+          "text": [
+            "AO2. Reward analysis of effect, supported by short quotations. Both language **and** structure must be covered for the higher bands."
+          ],
           "parts": [
             {
               "heading": "Indicative content: language",
@@ -445,7 +634,9 @@
           "type": "prose",
           "heading": "Question 6: evaluation of Text 2 (15 marks)",
           "level": "h2",
-          "text": ["AO4. Reward judgement supported by reference. A candidate who only analyses method, without saying how successfully the writer achieves the stated purpose, cannot reach the higher bands."],
+          "text": [
+            "AO4. Reward judgement supported by reference. A candidate who only analyses method, without saying how successfully the writer achieves the stated purpose, cannot reach the higher bands."
+          ],
           "parts": [
             {
               "heading": "Indicative content: agreeing that it is successful",
@@ -485,7 +676,9 @@
           "type": "prose",
           "heading": "Question 7(a): synthesis (6 marks)",
           "level": "h2",
-          "text": ["AO1. Similarities of content, with evidence from both texts. Do not reward analysis of method here - that belongs to 7(b)."],
+          "text": [
+            "AO1. Similarities of content, with evidence from both texts. Do not reward analysis of method here - that belongs to 7(b)."
+          ],
           "bullets": [
             "**Both found the work harder emotionally than practically.** Text 1: homesickness \"came at odd hours\". Text 2: \"the hard part was that nothing I did mattered to anyone\".",
             "**Both were changed by being needed, or not needed, by the work itself.** Text 1: comfort in being needed by something \"so entirely indifferent\". Text 2: \"I had never in my life done work that nobody was waiting for\".",
@@ -522,7 +715,9 @@
           "type": "prose",
           "heading": "Section B: transactional writing (40 marks)",
           "level": "h2",
-          "text": ["Mark communication and organisation separately from vocabulary, sentence structure, spelling and punctuation. Mark content first - it is the mark most often given too generously."],
+          "text": [
+            "Mark communication and organisation separately from vocabulary, sentence structure, spelling and punctuation. Mark content first - it is the mark most often given too generously."
+          ],
           "parts": [
             {
               "heading": "Communication and organisation",
@@ -583,19 +778,55 @@
           "heading": "Total marks",
           "level": "h2",
           "stacked": true,
-          "columns": ["Section", "Marks"],
+          "columns": [
+            "Section",
+            "Marks"
+          ],
           "rows": [
-            ["Question 1", "2"],
-            ["Question 2", "2"],
-            ["Question 3 (language and structure, Text 1)", "15"],
-            ["Question 4", "1"],
-            ["Question 5", "1"],
-            ["Question 6 (evaluation, Text 2)", "15"],
-            ["Question 7(a) (synthesis)", "6"],
-            ["Question 7(b) (comparison)", "14"],
-            ["**Section A total**", "**56**"],
-            ["Question 8 or 9 (transactional writing)", "40"],
-            ["**Total for paper**", "**96**"]
+            [
+              "Question 1",
+              "2"
+            ],
+            [
+              "Question 2",
+              "2"
+            ],
+            [
+              "Question 3 (language and structure, Text 1)",
+              "15"
+            ],
+            [
+              "Question 4",
+              "1"
+            ],
+            [
+              "Question 5",
+              "1"
+            ],
+            [
+              "Question 6 (evaluation, Text 2)",
+              "15"
+            ],
+            [
+              "Question 7(a) (synthesis)",
+              "6"
+            ],
+            [
+              "Question 7(b) (comparison)",
+              "14"
+            ],
+            [
+              "**Section A total**",
+              "**56**"
+            ],
+            [
+              "Question 8 or 9 (transactional writing)",
+              "40"
+            ],
+            [
+              "**Total for paper**",
+              "**96**"
+            ]
           ]
         },
         {
@@ -603,9 +834,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/", "text": ["The question paper itself."] },
-            { "title": "Edexcel Paper 2 guidance", "url": "global-english/gcse/edexcel/paper-2/", "text": ["Question by question, with methods."] },
-            { "title": "Official Edexcel papers", "url": "global-english/gcse/edexcel/papers/", "text": ["Past papers, mark schemes and exemplar scripts."] }
+            {
+              "title": "RCF Model Paper 2",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/",
+              "text": [
+                "The question paper itself."
+              ]
+            },
+            {
+              "title": "Edexcel Paper 2 guidance",
+              "url": "global-english/gcse/edexcel/paper-2/",
+              "text": [
+                "Question by question, with methods."
+              ]
+            },
+            {
+              "title": "Official Edexcel papers",
+              "url": "global-english/gcse/edexcel/papers/",
+              "text": [
+                "Past papers, mark schemes and exemplar scripts."
+              ]
+            }
           ]
         }
       ]

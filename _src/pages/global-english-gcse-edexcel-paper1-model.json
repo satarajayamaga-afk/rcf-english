@@ -1,11 +1,10 @@
 {
   "_comment": "Edexcel 1EN0/01 model paper. Structure verified against the OFFICIAL Pearson question paper 1EN0/01, November 2017 (P57310A): 1h45, 64 marks, Reading Text Insert enclosed, answer all in Section A and ONE in Section B, about 1 hour on Section A and 45 minutes on Section B, asterisked questions assess quality of written communication. Section A = 24 marks in four questions worth 1, 2, 6 and 15. Section B = 40 marks from a choice of two, Q5 image-based and Q6 written prompt. Section B mark split of 24 AO5 + 16 AO6 follows from the specification's AO weightings (AO5 30% and AO6 20% of 160 total marks = 48 and 32 across the two 40-mark writing sections). The source text is an ORIGINAL RCF composition written in a nineteenth-century voice - not the work of any nineteenth-century author and not an extract from any real publication. Nothing of Pearson's is reproduced.",
-
   "pages": [
     {
       "slug": "global-english/gcse/edexcel/papers/rcf-model-paper-1",
       "title": "RCF Model Paper 1: Edexcel English Language",
-      "metaTitle": "Edexcel English Language Paper 1 Practice Paper with Answers | RCF English",
+      "metaTitle": "Edexcel English Language Paper 1 Practice Paper with Answers",
       "description": "A complete original Edexcel GCSE English Language Paper 1 practice paper: an original 19th-century fiction extract, four reading questions and imaginative writing.",
       "keywords": "Edexcel paper 1 practice paper, 1EN0/01 practice, Edexcel fiction and imaginative writing, Edexcel 19th century extract practice, Edexcel question 4 evaluate",
       "kicker": "Unofficial original RCF practice material",
@@ -14,12 +13,27 @@
       "resourceType": "practice paper",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
-        { "label": "Papers", "url": "global-english/gcse/edexcel/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        },
+        {
+          "label": "Papers",
+          "url": "global-english/gcse/edexcel/papers/"
+        }
       ],
-      "backTo": { "label": "Papers", "url": "global-english/gcse/edexcel/papers/" },
+      "backTo": {
+        "label": "Papers",
+        "url": "global-english/gcse/edexcel/papers/"
+      },
       "hero": {
         "text": "One nineteenth-century fiction extract, four questions worth twenty-four marks, and forty marks for a piece of your own. One hour and forty-five minutes."
       },
@@ -40,18 +54,51 @@
           "heading": "Paper details",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Written by", "RCF English (original practice material)"],
-            ["Modelled on", "Pearson Edexcel GCSE English Language 1EN0, Paper 1"],
-            ["Paper title it follows", "Fiction and Imaginative Writing"],
-            ["Time allowed", "1 hour 45 minutes"],
-            ["Maximum mark", "64"],
-            ["Sections", "Section A Reading, 24 marks. Section B Imaginative Writing, 40 marks."],
-            ["Instructions", "Answer **all** questions in Section A and **one** in Section B."],
-            ["Source", "One unseen 19th-century fiction extract. An original RCF composition."],
-            ["Advice", "Spend about **1 hour** on Section A and about **45 minutes** on Section B."],
-            ["Asterisked questions", "Questions marked with an asterisk (*) also assess the quality of written communication - take particular care with spelling, punctuation and grammar."]
+            [
+              "Written by",
+              "RCF English (original practice material)"
+            ],
+            [
+              "Modelled on",
+              "Pearson Edexcel GCSE English Language 1EN0, Paper 1"
+            ],
+            [
+              "Paper title it follows",
+              "Fiction and Imaginative Writing"
+            ],
+            [
+              "Time allowed",
+              "1 hour 45 minutes"
+            ],
+            [
+              "Maximum mark",
+              "64"
+            ],
+            [
+              "Sections",
+              "Section A Reading, 24 marks. Section B Imaginative Writing, 40 marks."
+            ],
+            [
+              "Instructions",
+              "Answer **all** questions in Section A and **one** in Section B."
+            ],
+            [
+              "Source",
+              "One unseen 19th-century fiction extract. An original RCF composition."
+            ],
+            [
+              "Advice",
+              "Spend about **1 hour** on Section A and about **45 minutes** on Section B."
+            ],
+            [
+              "Asterisked questions",
+              "Questions marked with an asterisk (*) also assess the quality of written communication - take particular care with spelling, punctuation and grammar."
+            ]
           ]
         },
         {
@@ -200,18 +247,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Marking guide", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1-mark-scheme/", "text": ["Answers, bands and model answers."] },
-            { "title": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/", "text": ["The non-fiction paper, 96 marks."] },
-            { "title": "Edexcel Paper 1 guidance", "url": "global-english/gcse/edexcel/paper-1/", "text": ["The questions and the method for each."] }
+            {
+              "title": "Marking guide",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1-mark-scheme/",
+              "text": [
+                "Answers, bands and model answers."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 2",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/",
+              "text": [
+                "The non-fiction paper, 96 marks."
+              ]
+            },
+            {
+              "title": "Edexcel Paper 1 guidance",
+              "url": "global-english/gcse/edexcel/paper-1/",
+              "text": [
+                "The questions and the method for each."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/edexcel/papers/rcf-model-paper-1-mark-scheme",
       "title": "RCF Model Paper 1: Edexcel Marking Guide",
-      "metaTitle": "Edexcel Paper 1 Practice Paper: Answers and Marking Guide | RCF English",
+      "metaTitle": "Edexcel Paper 1 Practice Paper: Answers and Marking Guide",
       "description": "Answers, indicative content, band descriptions and full model answers for RCF Model Paper 1, an original Edexcel GCSE English Language Paper 1 practice paper.",
       "keywords": "Edexcel paper 1 answers, Edexcel question 4 model answer, Edexcel imaginative writing model answer, 1EN0/01 marking guide",
       "kicker": "Unofficial original RCF practice material",
@@ -220,12 +284,27 @@
       "resourceType": "marking guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
-        { "label": "Papers", "url": "global-english/gcse/edexcel/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        },
+        {
+          "label": "Papers",
+          "url": "global-english/gcse/edexcel/papers/"
+        }
       ],
-      "backTo": { "label": "RCF Model Paper 1", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/" },
+      "backTo": {
+        "label": "RCF Model Paper 1",
+        "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/"
+      },
       "hero": {
         "text": "Answers for all four reading questions, bands in plain English, and full model answers for the 15-mark evaluation and the 40-mark writing task."
       },
@@ -245,17 +324,31 @@
           "heading": "Questions 1 and 2: the short answers",
           "level": "h2",
           "stacked": true,
-          "columns": ["Q", "Answer", "Marking"],
+          "columns": [
+            "Q",
+            "Answer",
+            "Marking"
+          ],
           "rows": [
-            ["1 (1 mark)", "*every Sunday evening after chapel*", "One mark for the phrase. Accept it with or without *every*. Do **not** accept a whole sentence copied out - the question asks for **the phrase**, and an answer that quotes lines 3 to 5 entire has not identified anything. Do not accept *on a Sunday* alone, which is not the phrase in the text."],
-            ["2 (2 marks)", "One mark each, for any two of the following", "**(a)** He asks *\"Is he in the back?\"* - he expects Hannah's father to be there. **(b)** He behaves entirely as usual, shaking his hat over the mat as he *\"had always done\"*. **(c)** He is described as *\"entirely happy\"*. **(d)** He waits *\"for her to fetch her father as she had fetched him a hundred times before\"*. **(e)** His greeting is cheerful small talk - *\"Filthy morning\"*. Accept own words or quotation, as the question allows. Award no more than two."]
+            [
+              "1 (1 mark)",
+              "*every Sunday evening after chapel*",
+              "One mark for the phrase. Accept it with or without *every*. Do **not** accept a whole sentence copied out - the question asks for **the phrase**, and an answer that quotes lines 3 to 5 entire has not identified anything. Do not accept *on a Sunday* alone, which is not the phrase in the text."
+            ],
+            [
+              "2 (2 marks)",
+              "One mark each, for any two of the following",
+              "**(a)** He asks *\"Is he in the back?\"* - he expects Hannah's father to be there. **(b)** He behaves entirely as usual, shaking his hat over the mat as he *\"had always done\"*. **(c)** He is described as *\"entirely happy\"*. **(d)** He waits *\"for her to fetch her father as she had fetched him a hundred times before\"*. **(e)** His greeting is cheerful small talk - *\"Filthy morning\"*. Accept own words or quotation, as the question allows. Award no more than two."
+            ]
           ]
         },
         {
           "type": "prose",
           "heading": "Question 3: language and structure (6 marks)",
           "level": "h2",
-          "text": ["Lines 25 to 43 only. Reward comment on **both** language and structure, supported by reference to the text. An answer that only discusses word choice is working at half the question."],
+          "text": [
+            "Lines 25 to 43 only. Reward comment on **both** language and structure, supported by reference to the text. An answer that only discusses word choice is working at half the question."
+          ],
           "parts": [
             {
               "heading": "Indicative content",
@@ -312,7 +405,9 @@
           "type": "prose",
           "heading": "Questions 5 and 6: imaginative writing (40 marks)",
           "level": "h2",
-          "text": ["Marked as **24 marks for AO5** (communication and organisation) and **16 marks for AO6** (vocabulary, sentence structure, spelling and punctuation). Mark the two separately, and mark AO5 first."],
+          "text": [
+            "Marked as **24 marks for AO5** (communication and organisation) and **16 marks for AO6** (vocabulary, sentence structure, spelling and punctuation). Mark the two separately, and mark AO5 first."
+          ],
           "parts": [
             {
               "heading": "AO5, 24 marks - communication and organisation",
@@ -379,15 +474,39 @@
           "heading": "Total marks",
           "level": "h2",
           "stacked": true,
-          "columns": ["Section", "Marks"],
+          "columns": [
+            "Section",
+            "Marks"
+          ],
           "rows": [
-            ["Question 1 (identify the phrase)", "1"],
-            ["Question 2 (two ways)", "2"],
-            ["Question 3 (language and structure)", "6"],
-            ["Question 4 (evaluation)", "15"],
-            ["**Section A total**", "**24**"],
-            ["Question 5 or 6 (imaginative writing)", "40"],
-            ["**Total for paper**", "**64**"]
+            [
+              "Question 1 (identify the phrase)",
+              "1"
+            ],
+            [
+              "Question 2 (two ways)",
+              "2"
+            ],
+            [
+              "Question 3 (language and structure)",
+              "6"
+            ],
+            [
+              "Question 4 (evaluation)",
+              "15"
+            ],
+            [
+              "**Section A total**",
+              "**24**"
+            ],
+            [
+              "Question 5 or 6 (imaginative writing)",
+              "40"
+            ],
+            [
+              "**Total for paper**",
+              "**64**"
+            ]
           ]
         },
         {
@@ -395,9 +514,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "RCF Model Paper 1", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/", "text": ["The question paper itself."] },
-            { "title": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/", "text": ["The non-fiction paper, 96 marks."] },
-            { "title": "Edexcel Paper 1 guidance", "url": "global-english/gcse/edexcel/paper-1/", "text": ["The questions and the method for each."] }
+            {
+              "title": "RCF Model Paper 1",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/",
+              "text": [
+                "The question paper itself."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 2",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/",
+              "text": [
+                "The non-fiction paper, 96 marks."
+              ]
+            },
+            {
+              "title": "Edexcel Paper 1 guidance",
+              "url": "global-english/gcse/edexcel/paper-1/",
+              "text": [
+                "The questions and the method for each."
+              ]
+            }
           ]
         }
       ]

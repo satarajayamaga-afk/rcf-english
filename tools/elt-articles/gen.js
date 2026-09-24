@@ -12,6 +12,45 @@ const FILES = "https://americanenglish.state.gov/files/ae/resource_files/";
 const JOURNAL = "English Teaching Forum";
 const PUBLISHER = "U.S. Department of State";
 
+// A search result shows about 60 characters of a title and about 155 of a
+// description. An article's own name is the title; where the name is longer
+// than that, the part before its colon is used, and failing that it is cut at
+// a word boundary rather than mid-word.
+const TITLE_MAX = 60;
+const DESC_MIN = 140;
+const DESC_MAX = 160;
+function fitTitle(name) {
+  if (name.length <= TITLE_MAX) return name;
+  const beforeColon = name.split(":")[0].trim();
+  if (beforeColon.length >= 20 && beforeColon.length <= TITLE_MAX) return beforeColon;
+  const words = name.split(" ");
+  let out = "";
+  for (const w of words) {
+    if ((out + " " + w).trim().length > TITLE_MAX) break;
+    out = (out + " " + w).trim();
+  }
+  return out;
+}
+function fitDescription(name) {
+  // The name is quoted at whatever length fits; the sentence around it is
+  // then chosen to bring the whole into the window.
+  const short = fitTitle(name);
+  const candidates = [
+    `A summary for English teachers of "${name}" from ${JOURNAL}, with notes on using it in large classes in Sri Lanka and elsewhere, and the full article, free.`,
+    `A summary for English teachers of "${name}" from ${JOURNAL}, with notes for large classes in Sri Lanka and elsewhere, and the full article free.`,
+    `A summary for English teachers of "${short}" from ${JOURNAL}, with notes for large classes in Sri Lanka and elsewhere, and the full article free.`,
+    `A summary for English teachers of "${short}" from ${JOURNAL}, with notes for large classes and a link to the full article.`,
+    `A summary for English teachers of "${short}" from ${JOURNAL}, with notes for large classes and the full article, free to read.`,
+    `A summary for English teachers of "${short}", with notes for large classes and a link to the full article, free to read.`,
+    `A summary for English teachers of "${short}", with notes for large classes and a link to the full article.`
+  ];
+  const fits = candidates.find((c) => c.length >= DESC_MIN && c.length <= DESC_MAX);
+  if (fits) return fits;
+  // Nothing landed in the window: take the longest that is not over it.
+  const under = candidates.filter((c) => c.length <= DESC_MAX).sort((a, b) => b.length - a.length);
+  return under[0] || candidates[candidates.length - 1];
+}
+
 // The order the sections appear in on the hub, and what each is called.
 const THEMES = [
   ["classes", "Large classes and classroom management", "For crowded rooms, mixed-ability groups and very few materials."],
@@ -64,8 +103,11 @@ function articlePage(a, i) {
   return {
     slug: `${BASE}/${a.slug}`,
     title: a.title,
-    metaTitle: `${a.title} (${JOURNAL}, ${a.year}): summary and full article | RCF English`,
-    description: `A summary for English teachers of "${a.title}" from ${JOURNAL} (${a.year}), with notes for large classes in Sri Lanka and elsewhere, and the full article to read free.`,
+    // Teachers search for the article's own name, so that is the title. The
+    // journal and the year are on the page; in a search result they only cost
+    // characters, and the old title ran to 149.
+    metaTitle: fitTitle(a.title),
+    description: fitDescription(a.title),
     keywords: [...a.tags, JOURNAL, "ELT article", "teaching English", "EFL teachers"].join(", "),
     kicker: `ELT Articles · ${theme}`,
     kind: "teacher-resource",
@@ -118,8 +160,8 @@ const sriLankan = articles.find((a) => a.sriLankan);
 const hub = {
   slug: BASE,
   title: "ELT Articles for Teachers",
-  metaTitle: "ELT Articles for English Teachers: summaries and free full articles | RCF English",
-  description: `Practical articles on teaching English from ${JOURNAL}, chosen for large classes and few resources - speaking, reading, writing, feedback and exams - each with a summary and the full article to read free.`,
+  metaTitle: "ELT Articles for English Teachers, Free to Read",
+  description: `Practical articles on teaching English from ${JOURNAL}, chosen for large classes and few resources, each with a summary and the full article, free.`,
   keywords: "ELT articles, English Teaching Forum, teaching English articles, EFL teaching ideas, large classes, teaching speaking, Sri Lanka English teachers",
   kicker: "English Teachers Resources",
   kind: "teacher-resource",

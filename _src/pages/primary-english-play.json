@@ -10,12 +10,11 @@
     "",
     "The generator reads page files as UTF-8, so emoji and accented letters are written directly."
   ],
-
   "pages": [
     {
       "slug": "primary-english/alphabet/watch-and-write",
       "title": "Watch and Write: the Alphabet",
-      "metaTitle": "Watch and Write the Alphabet: Letter Formation for Grade 1 | RCF English",
+      "metaTitle": "Watch and Write the Alphabet: Letter Formation for Grade 1",
       "description": "An animated alphabet for Grade 1: watch each capital and small letter drawn stroke by stroke on copy-book lines, hear its name and a word for it, then trace it yourself.",
       "keywords": "alphabet letter formation, how to write letters Grade 1, animated alphabet writing, trace the alphabet, capital and small letters, Sri Lanka Grade 1 English",
       "kicker": "Primary English - Grade 1",
@@ -23,13 +22,26 @@
       "schema": "LearningResource",
       "resourceType": "interactive activity",
       "educationalLevel": "Grade 1",
-      "styles": ["primary-play"],
-      "scripts": ["alphabet-writer"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Alphabet Practice", "url": "primary-english/alphabet/" }
+      "styles": [
+        "primary-play"
       ],
-      "backTo": { "label": "Alphabet Practice", "url": "primary-english/alphabet/" },
+      "scripts": [
+        "alphabet-writer"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Alphabet Practice",
+          "url": "primary-english/alphabet/"
+        }
+      ],
+      "backTo": {
+        "label": "Alphabet Practice",
+        "url": "primary-english/alphabet/"
+      },
       "hero": {
         "text": "Watch each letter being written, one stroke at a time, on the same four lines as a copy book. Then have a go yourself."
       },
@@ -50,32 +62,162 @@
           "heading": "Watch and write",
           "level": "h2",
           "letters": [
-            { "letter": "A", "name": "ay", "word": "apple", "emoji": "🍎" },
-            { "letter": "B", "name": "bee", "word": "ball", "emoji": "⚽" },
-            { "letter": "C", "name": "see", "word": "cat", "emoji": "🐈" },
-            { "letter": "D", "name": "dee", "word": "dog", "emoji": "🐕" },
-            { "letter": "E", "name": "ee", "word": "egg", "emoji": "🥚" },
-            { "letter": "F", "name": "ef", "word": "fish", "emoji": "🐟" },
-            { "letter": "G", "name": "jee", "word": "goat", "emoji": "🐐" },
-            { "letter": "H", "name": "aitch", "word": "hat", "emoji": "👒" },
-            { "letter": "I", "name": "eye", "word": "insect", "emoji": "🐞" },
-            { "letter": "J", "name": "jay", "word": "juice", "emoji": "🧃" },
-            { "letter": "K", "name": "kay", "word": "kite", "emoji": "🪁" },
-            { "letter": "L", "name": "el", "word": "lion", "emoji": "🦁" },
-            { "letter": "M", "name": "em", "word": "mango", "emoji": "🥭" },
-            { "letter": "N", "name": "en", "word": "nose", "emoji": "👃" },
-            { "letter": "O", "name": "oh", "word": "orange", "emoji": "🍊" },
-            { "letter": "P", "name": "pee", "word": "parrot", "emoji": "🦜" },
-            { "letter": "Q", "name": "cue", "word": "queen", "emoji": "👑" },
-            { "letter": "R", "name": "ar", "word": "rabbit", "emoji": "🐇" },
-            { "letter": "S", "name": "es", "word": "sun", "emoji": "☀️" },
-            { "letter": "T", "name": "tee", "word": "tree", "emoji": "🌳" },
-            { "letter": "U", "name": "you", "word": "umbrella", "emoji": "☂️" },
-            { "letter": "V", "name": "vee", "word": "van", "emoji": "🚐" },
-            { "letter": "W", "name": "double you", "word": "water", "emoji": "💧" },
-            { "letter": "X", "name": "ex", "word": "fox", "emoji": "🦊" },
-            { "letter": "Y", "name": "why", "word": "yellow", "emoji": "🟡" },
-            { "letter": "Z", "name": "zed", "word": "zebra", "emoji": "🦓" }
+            {
+              "letter": "A",
+              "name": "ay",
+              "word": "apple",
+              "emoji": "🍎"
+            },
+            {
+              "letter": "B",
+              "name": "bee",
+              "word": "ball",
+              "emoji": "⚽"
+            },
+            {
+              "letter": "C",
+              "name": "see",
+              "word": "cat",
+              "emoji": "🐈"
+            },
+            {
+              "letter": "D",
+              "name": "dee",
+              "word": "dog",
+              "emoji": "🐕"
+            },
+            {
+              "letter": "E",
+              "name": "ee",
+              "word": "egg",
+              "emoji": "🥚"
+            },
+            {
+              "letter": "F",
+              "name": "ef",
+              "word": "fish",
+              "emoji": "🐟"
+            },
+            {
+              "letter": "G",
+              "name": "jee",
+              "word": "goat",
+              "emoji": "🐐"
+            },
+            {
+              "letter": "H",
+              "name": "aitch",
+              "word": "hat",
+              "emoji": "👒"
+            },
+            {
+              "letter": "I",
+              "name": "eye",
+              "word": "insect",
+              "emoji": "🐞"
+            },
+            {
+              "letter": "J",
+              "name": "jay",
+              "word": "juice",
+              "emoji": "🧃"
+            },
+            {
+              "letter": "K",
+              "name": "kay",
+              "word": "kite",
+              "emoji": "🪁"
+            },
+            {
+              "letter": "L",
+              "name": "el",
+              "word": "lion",
+              "emoji": "🦁"
+            },
+            {
+              "letter": "M",
+              "name": "em",
+              "word": "mango",
+              "emoji": "🥭"
+            },
+            {
+              "letter": "N",
+              "name": "en",
+              "word": "nose",
+              "emoji": "👃"
+            },
+            {
+              "letter": "O",
+              "name": "oh",
+              "word": "orange",
+              "emoji": "🍊"
+            },
+            {
+              "letter": "P",
+              "name": "pee",
+              "word": "parrot",
+              "emoji": "🦜"
+            },
+            {
+              "letter": "Q",
+              "name": "cue",
+              "word": "queen",
+              "emoji": "👑"
+            },
+            {
+              "letter": "R",
+              "name": "ar",
+              "word": "rabbit",
+              "emoji": "🐇"
+            },
+            {
+              "letter": "S",
+              "name": "es",
+              "word": "sun",
+              "emoji": "☀️"
+            },
+            {
+              "letter": "T",
+              "name": "tee",
+              "word": "tree",
+              "emoji": "🌳"
+            },
+            {
+              "letter": "U",
+              "name": "you",
+              "word": "umbrella",
+              "emoji": "☂️"
+            },
+            {
+              "letter": "V",
+              "name": "vee",
+              "word": "van",
+              "emoji": "🚐"
+            },
+            {
+              "letter": "W",
+              "name": "double you",
+              "word": "water",
+              "emoji": "💧"
+            },
+            {
+              "letter": "X",
+              "name": "ex",
+              "word": "fox",
+              "emoji": "🦊"
+            },
+            {
+              "letter": "Y",
+              "name": "why",
+              "word": "yellow",
+              "emoji": "🟡"
+            },
+            {
+              "letter": "Z",
+              "name": "zed",
+              "word": "zebra",
+              "emoji": "🦓"
+            }
           ]
         },
         {
@@ -106,14 +248,34 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Alphabet Practice", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter names, letter sounds, and the letters children mix up."] },
-            { "title": "Sing and Learn: Songs for Grade 2", "url": "primary-english/songs/", "more": "Open", "text": ["Five short songs to sing, with the words lighting up in time."] },
-            { "title": "Grade 1", "url": "primary-english/grade-1/", "more": "Open", "text": ["The 16 themes of Activity Based Oral English."] }
+            {
+              "title": "Alphabet Practice",
+              "url": "primary-english/alphabet/",
+              "more": "Open",
+              "text": [
+                "Letter names, letter sounds, and the letters children mix up."
+              ]
+            },
+            {
+              "title": "Sing and Learn: Songs for Grade 2",
+              "url": "primary-english/songs/",
+              "more": "Open",
+              "text": [
+                "Five short songs to sing, with the words lighting up in time."
+              ]
+            },
+            {
+              "title": "Grade 1",
+              "url": "primary-english/grade-1/",
+              "more": "Open",
+              "text": [
+                "The 16 themes of Activity Based Oral English."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/songs",
       "title": "Sing and Learn: Songs for Grade 2",
@@ -125,10 +287,22 @@
       "schema": "LearningResource",
       "resourceType": "interactive activity",
       "educationalLevel": "Grade 2",
-      "styles": ["primary-play"],
-      "scripts": ["songs"],
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "styles": [
+        "primary-play"
+      ],
+      "scripts": [
+        "songs"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Five short songs to sing together. Press play, follow the words as they light up, and sing along."
       },
@@ -318,11 +492,36 @@
           "eyebrow": "Five short steps",
           "variant": "tint",
           "items": [
-            { "title": "Listen first", "text": ["Play the tune once while the children just listen and watch the words light up."] },
-            { "title": "Say the words", "text": ["Press *Say the words*, or say them yourself, slowly, a line at a time. Children repeat each line."] },
-            { "title": "Sing slowly", "text": ["Tick *Slower* and sing along. Point to the words as they light up."] },
-            { "title": "Add actions", "text": ["Wave for *hello*, wiggle fingers for *twinkle*, rub hands for *wash*. Actions help children remember the words."] },
-            { "title": "Sing it again", "text": ["Untick *Slower* once the song is known. Children love singing a song they know well - repeat it on later days."] }
+            {
+              "title": "Listen first",
+              "text": [
+                "Play the tune once while the children just listen and watch the words light up."
+              ]
+            },
+            {
+              "title": "Say the words",
+              "text": [
+                "Press *Say the words*, or say them yourself, slowly, a line at a time. Children repeat each line."
+              ]
+            },
+            {
+              "title": "Sing slowly",
+              "text": [
+                "Tick *Slower* and sing along. Point to the words as they light up."
+              ]
+            },
+            {
+              "title": "Add actions",
+              "text": [
+                "Wave for *hello*, wiggle fingers for *twinkle*, rub hands for *wash*. Actions help children remember the words."
+              ]
+            },
+            {
+              "title": "Sing it again",
+              "text": [
+                "Untick *Slower* once the song is known. Children love singing a song they know well - repeat it on later days."
+              ]
+            }
           ]
         },
         {
@@ -339,9 +538,30 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Watch and Write: the Alphabet", "url": "primary-english/alphabet/watch-and-write/", "more": "Open", "text": ["Every letter drawn stroke by stroke, then traced."] },
-            { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Short rhymes to say aloud and learn by heart."] },
-            { "title": "Primary Game Zone", "url": "primary-english/game-zone/", "more": "Open", "text": ["Games for Grades 1 to 5."] }
+            {
+              "title": "Watch and Write: the Alphabet",
+              "url": "primary-english/alphabet/watch-and-write/",
+              "more": "Open",
+              "text": [
+                "Every letter drawn stroke by stroke, then traced."
+              ]
+            },
+            {
+              "title": "Poems",
+              "url": "primary-english/poems/",
+              "more": "Open",
+              "text": [
+                "Short rhymes to say aloud and learn by heart."
+              ]
+            },
+            {
+              "title": "Primary Game Zone",
+              "url": "primary-english/game-zone/",
+              "more": "Open",
+              "text": [
+                "Games for Grades 1 to 5."
+              ]
+            }
           ]
         }
       ]

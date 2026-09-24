@@ -3,7 +3,7 @@
     {
       "slug": "al-literature",
       "title": "A/L Literature",
-      "metaTitle": "A/L English Literature | Critical appreciation and essay answers | RCF English",
+      "metaTitle": "A/L English Literature | Critical appreciation and essay answers",
       "description": "Advanced Level English Literature: close reading, selecting textual evidence, explaining technique, analysing effects, developing arguments and organising complete essays.",
       "keywords": "A/L English Literature, Advanced Level Literature, critical appreciation, literary theory, essay answers",
       "kicker": "Advanced Level",
@@ -13,9 +13,21 @@
       "hero": {
         "text": "At Advanced Level the question is no longer whether you have understood the text. It is whether you can argue about it, with evidence, in an essay that holds together.",
         "buttons": [
-          { "label": "Answer development", "url": "al-literature/answer-development/", "style": "btn--accent" },
-          { "label": "Critical appreciation", "url": "al-literature/critical-appreciation/", "style": "btn--ghost-light" },
-          { "label": "Past papers", "url": "past-papers/al-literature/", "style": "btn--ghost-light" }
+          {
+            "label": "Answer development",
+            "url": "al-literature/answer-development/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Critical appreciation",
+            "url": "al-literature/critical-appreciation/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Past papers",
+            "url": "past-papers/al-literature/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -23,14 +35,46 @@
           "type": "steps",
           "heading": "The six abilities A/L Literature asks for",
           "variant": "navy",
-          "intro": ["Everything in this section is built to take you through these six, in order. Most students are strong at the first and weak at the last three, which is where the marks are decided."],
+          "intro": [
+            "Everything in this section is built to take you through these six, in order. Most students are strong at the first and weak at the last three, which is where the marks are decided."
+          ],
           "items": [
-            { "title": "Understanding", "text": ["Knowing what the text says, what happens, and what a passage means in its place in the whole work."] },
-            { "title": "Selecting evidence", "text": ["Given a question, going straight to the two or three moments that answer it — and leaving out the many that do not."] },
-            { "title": "Explaining technique", "text": ["Saying how the writing works: the choice of word, image, structure, form, voice."] },
-            { "title": "Analysing effects", "text": ["Saying what that technique does to a reader, and why the writer wanted that effect there."] },
-            { "title": "Developing arguments", "text": ["Building a case that moves, qualifies itself, meets the obvious objection, and arrives somewhere."] },
-            { "title": "Organising a complete essay", "text": ["An introduction that takes a position, paragraphs that each do one job, and a conclusion that judges."] }
+            {
+              "title": "Understanding",
+              "text": [
+                "Knowing what the text says, what happens, and what a passage means in its place in the whole work."
+              ]
+            },
+            {
+              "title": "Selecting evidence",
+              "text": [
+                "Given a question, going straight to the two or three moments that answer it — and leaving out the many that do not."
+              ]
+            },
+            {
+              "title": "Explaining technique",
+              "text": [
+                "Saying how the writing works: the choice of word, image, structure, form, voice."
+              ]
+            },
+            {
+              "title": "Analysing effects",
+              "text": [
+                "Saying what that technique does to a reader, and why the writer wanted that effect there."
+              ]
+            },
+            {
+              "title": "Developing arguments",
+              "text": [
+                "Building a case that moves, qualifies itself, meets the obvious objection, and arrives somewhere."
+              ]
+            },
+            {
+              "title": "Organising a complete essay",
+              "text": [
+                "An introduction that takes a position, paragraphs that each do one job, and a conclusion that judges."
+              ]
+            }
           ]
         },
         {
@@ -38,9 +82,30 @@
           "heading": "Start here",
           "columns": "3",
           "items": [
-            { "title": "Overview and Syllabus", "url": "al-literature/syllabus/", "more": "Open", "text": ["What the examination tests and how to plan two years of reading."] },
-            { "title": "Prescribed Texts", "url": "al-literature/prescribed-texts/", "more": "Open", "text": ["The texts on this site, and how to check the list for your own year."] },
-            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open", "text": ["Timing, choosing questions, and what examiners reward."] }
+            {
+              "title": "Overview and Syllabus",
+              "url": "al-literature/syllabus/",
+              "more": "Open",
+              "text": [
+                "What the examination tests and how to plan two years of reading."
+              ]
+            },
+            {
+              "title": "Prescribed Texts",
+              "url": "al-literature/prescribed-texts/",
+              "more": "Open",
+              "text": [
+                "The texts on this site, and how to check the list for your own year."
+              ]
+            },
+            {
+              "title": "Examination Guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open",
+              "text": [
+                "Timing, choosing questions, and what examiners reward."
+              ]
+            }
           ]
         },
         {
@@ -49,10 +114,38 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Poetry", "url": "al-literature/poetry/", "more": "Open", "text": ["Form, voice, and reading a poem closely enough to argue about it."] },
-            { "title": "Drama", "url": "al-literature/drama/", "more": "Open", "text": ["Text and performance, structure, and the audience's knowledge."] },
-            { "title": "Fiction", "url": "al-literature/fiction/", "more": "Open", "text": ["Narration, focalisation, time and the shaping of sympathy."] },
-            { "title": "Prose", "url": "al-literature/prose/", "more": "Open", "text": ["Non-fictional and expository prose: argument, tone and rhetoric."] }
+            {
+              "title": "Poetry",
+              "url": "al-literature/poetry/",
+              "more": "Open",
+              "text": [
+                "Form, voice, and reading a poem closely enough to argue about it."
+              ]
+            },
+            {
+              "title": "Drama",
+              "url": "al-literature/drama/",
+              "more": "Open",
+              "text": [
+                "Text and performance, structure, and the audience's knowledge."
+              ]
+            },
+            {
+              "title": "Fiction",
+              "url": "al-literature/fiction/",
+              "more": "Open",
+              "text": [
+                "Narration, focalisation, time and the shaping of sympathy."
+              ]
+            },
+            {
+              "title": "Prose",
+              "url": "al-literature/prose/",
+              "more": "Open",
+              "text": [
+                "Non-fictional and expository prose: argument, tone and rhetoric."
+              ]
+            }
           ]
         },
         {
@@ -60,12 +153,36 @@
           "heading": "Writing answers",
           "columns": "3",
           "items": [
-            { "title": "Context Questions", "url": "al-literature/context-questions/", "more": "Open" },
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" },
-            { "title": "Common Student Mistakes", "url": "al-literature/common-mistakes/", "more": "Open" }
+            {
+              "title": "Context Questions",
+              "url": "al-literature/context-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay Questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Common Student Mistakes",
+              "url": "al-literature/common-mistakes/",
+              "more": "Open"
+            }
           ]
         },
         {
@@ -74,9 +191,30 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Literary Theory", "url": "al-literature/literary-theory/", "more": "Open", "text": ["Critical approaches, used carefully and without jargon."] },
-            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open", "text": ["The advanced vocabulary of analysis, each term tied to its effect."] },
-            { "title": "A/L Literature Past Papers", "url": "past-papers/al-literature/", "more": "Open", "text": ["Past and model papers for timed practice."] }
+            {
+              "title": "Literary Theory",
+              "url": "al-literature/literary-theory/",
+              "more": "Open",
+              "text": [
+                "Critical approaches, used carefully and without jargon."
+              ]
+            },
+            {
+              "title": "Literary Techniques",
+              "url": "al-literature/literary-techniques/",
+              "more": "Open",
+              "text": [
+                "The advanced vocabulary of analysis, each term tied to its effect."
+              ]
+            },
+            {
+              "title": "A/L Literature Past Papers",
+              "url": "past-papers/al-literature/",
+              "more": "Open",
+              "text": [
+                "Past and model papers for timed practice."
+              ]
+            }
           ]
         },
         {
@@ -85,7 +223,8 @@
           "eyebrow": "Downloads",
           "subject": "English Literature",
           "examination": "al"
-        },        {
+        },
+        {
           "type": "callout",
           "style": "legal",
           "title": "Copyright and accuracy",
@@ -97,7 +236,6 @@
         }
       ]
     },
-
     {
       "slug": "al-literature/syllabus",
       "title": "Syllabus",
@@ -105,9 +243,19 @@
       "keywords": "A/L Literature syllabus, examination structure, planning revision, Advanced Level",
       "kicker": "A/L Literature",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Two years is long enough to read everything twice and write two dozen essays. It is not long enough to leave either until the final term." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Two years is long enough to read everything twice and write two dozen essays. It is not long enough to leave either until the final term."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -130,11 +278,27 @@
         {
           "type": "table",
           "heading": "How the teaching time is divided",
-          "columns": ["Part", "Periods", "What it covers"],
+          "columns": [
+            "Part",
+            "Periods",
+            "What it covers"
+          ],
           "rows": [
-            ["Part 1", "220", "The main body of the course: the prescribed poetry, drama, fiction and prose, and the competencies built on them."],
-            ["Part 2", "80", "The remaining competencies, taken alongside and after Part 1."],
-            ["Total", "300", "The full two-year allocation across Grades 12 and 13."]
+            [
+              "Part 1",
+              "220",
+              "The main body of the course: the prescribed poetry, drama, fiction and prose, and the competencies built on them."
+            ],
+            [
+              "Part 2",
+              "80",
+              "The remaining competencies, taken alongside and after Part 1."
+            ],
+            [
+              "Total",
+              "300",
+              "The full two-year allocation across Grades 12 and 13."
+            ]
           ]
         },
         {
@@ -158,7 +322,9 @@
         {
           "type": "prose",
           "heading": "What the examination is testing",
-          "text": ["Whatever the exact format, an Advanced Level Literature paper tests these things, and it is worth knowing which of them you are weak at."],
+          "text": [
+            "Whatever the exact format, an Advanced Level Literature paper tests these things, and it is worth knowing which of them you are weak at."
+          ],
           "numbered": [
             "**Knowledge of the prescribed texts** — accurate, detailed and available under pressure.",
             "**Close reading** — the ability to say what a particular passage is doing, at the level of the sentence and the word.",
@@ -174,16 +340,47 @@
           "subject": "English Literature",
           "examination": "al"
         },
-        {          "type": "steps",
+        {
+          "type": "steps",
           "heading": "A two-year plan",
           "variant": "tint",
           "items": [
-            { "title": "First term: read everything once", "text": ["Every prescribed text, straight through, without notes. You cannot analyse a book whose ending you do not know. Reading everything early also tells you which texts you will find hard."] },
-            { "title": "First year: second readings and notes", "text": ["Reread with a pencil. Build your own notes for each text — not copied notes. Twelve to fifteen quotations per text, each chosen because it serves more than one question."] },
-            { "title": "First year: begin unseen practice", "text": ["One unseen poem or passage a fortnight, written in forty minutes. Unseen appreciation improves only with repetition and cannot be crammed."] },
-            { "title": "Second year: essays", "text": ["One full essay a fortnight, timed, on a real question. Correct each one properly and rewrite one paragraph. Twenty well-corrected essays are worth more than a hundred read study guides."] },
-            { "title": "Second year: comparison and criticism", "text": ["Start putting texts beside one another, and start reading what critics have said. Note where you disagree — a disagreement you can defend is worth more in an essay than a critic's name."] },
-            { "title": "Final term: your own work", "text": ["Revise your own corrected essays and your own notes. Do not begin new study guides in the last month; they cause anxiety and teach nothing you can use in time."] }
+            {
+              "title": "First term: read everything once",
+              "text": [
+                "Every prescribed text, straight through, without notes. You cannot analyse a book whose ending you do not know. Reading everything early also tells you which texts you will find hard."
+              ]
+            },
+            {
+              "title": "First year: second readings and notes",
+              "text": [
+                "Reread with a pencil. Build your own notes for each text — not copied notes. Twelve to fifteen quotations per text, each chosen because it serves more than one question."
+              ]
+            },
+            {
+              "title": "First year: begin unseen practice",
+              "text": [
+                "One unseen poem or passage a fortnight, written in forty minutes. Unseen appreciation improves only with repetition and cannot be crammed."
+              ]
+            },
+            {
+              "title": "Second year: essays",
+              "text": [
+                "One full essay a fortnight, timed, on a real question. Correct each one properly and rewrite one paragraph. Twenty well-corrected essays are worth more than a hundred read study guides."
+              ]
+            },
+            {
+              "title": "Second year: comparison and criticism",
+              "text": [
+                "Start putting texts beside one another, and start reading what critics have said. Note where you disagree — a disagreement you can defend is worth more in an essay than a critic's name."
+              ]
+            },
+            {
+              "title": "Final term: your own work",
+              "text": [
+                "Revise your own corrected essays and your own notes. Do not begin new study guides in the last month; they cause anxiety and teach nothing you can use in time."
+              ]
+            }
           ]
         },
         {
@@ -203,14 +400,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Prescribed Texts", "url": "al-literature/prescribed-texts/", "more": "Open" },
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+            {
+              "title": "Prescribed Texts",
+              "url": "al-literature/prescribed-texts/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination Guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/prescribed-texts",
       "title": "Prescribed Texts",
@@ -218,9 +426,19 @@
       "keywords": "A/L Literature prescribed texts, set texts, syllabus texts",
       "kicker": "A/L Literature",
       "kind": "page",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Prescribed texts change. This page is built so that texts can be added and removed without disturbing anything else on the site." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Prescribed texts change. This page is built so that texts can be added and removed without disturbing anything else on the site."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -235,7 +453,9 @@
           "type": "literature",
           "heading": "Texts on RCF English",
           "level": "A/L",
-          "intro": ["Each text page follows the same fifteen-section structure used throughout the site, so that everything belonging to one text stays together."]
+          "intro": [
+            "Each text page follows the same fifteen-section structure used throughout the site, so that everything belonging to one text stays together."
+          ]
         },
         {
           "type": "prose",
@@ -271,40 +491,142 @@
           "type": "table",
           "heading": "The twenty-four prescribed poems",
           "caption": "Compiled from the contents of the official NIE Anthology of Poetry, G.C.E. (A/L) English, to be implemented from 2017. A list of titles is a fact, not a reproduction.",
-          "columns": ["#", "Poem", "Poet"],
+          "columns": [
+            "#",
+            "Poem",
+            "Poet"
+          ],
           "rows": [
-            ["1", "Sonnet 73 — *That time of year thou mayst in me behold*", "William Shakespeare"],
-            ["2", "Sonnet 141 — *In faith, I do not love thee with mine eyes*", "William Shakespeare"],
-            ["3", "Batter My Heart (Holy Sonnet 14)", "John Donne"],
-            ["4", "Song: Go and Catch a Falling Star", "John Donne"],
-            ["5", "To the Memory of Mr Oldham", "John Dryden"],
-            ["6", "Extract from Canto 3, The Rape of the Lock", "Alexander Pope"],
-            ["7", "The Chimney Sweeper (Songs of Innocence)", "William Blake"],
-            ["8", "Ode to a Nightingale", "John Keats"],
-            ["9", "A Slumber Did My Spirit Seal", "William Wordsworth"],
-            ["10", "To a Snowdrop", "William Wordsworth"],
-            ["11", "Remember", "Christina Rossetti"],
-            ["12", "Among School Children", "W. B. Yeats"],
-            ["13", "Spring and Fall (To a Young Child)", "Gerard Manley Hopkins"],
-            ["14", "Design", "Robert Frost"],
-            ["15", "Suicide in the Trenches", "Siegfried Sassoon"],
-            ["16", "Morning at the Window", "T. S. Eliot"],
-            ["17", "Money", "Philip Larkin"],
-            ["18", "The Cathedral Builders", "John Ormond"],
-            ["19", "An Introduction", "Kamala Das"],
-            ["20", "An Unknown Girl", "Moniza Alvi"],
-            ["21", "Phenomenal Woman", "Maya Angelou"],
-            ["22", "The Fisherman Mourned by His Wife", "Patrick Fernando"],
-            ["23", "Animal Crackers", "Richard de Zoysa"],
-            ["24", "Explosion", "Vivimarie Vanderpoorten"]
+            [
+              "1",
+              "Sonnet 73 — *That time of year thou mayst in me behold*",
+              "William Shakespeare"
+            ],
+            [
+              "2",
+              "Sonnet 141 — *In faith, I do not love thee with mine eyes*",
+              "William Shakespeare"
+            ],
+            [
+              "3",
+              "Batter My Heart (Holy Sonnet 14)",
+              "John Donne"
+            ],
+            [
+              "4",
+              "Song: Go and Catch a Falling Star",
+              "John Donne"
+            ],
+            [
+              "5",
+              "To the Memory of Mr Oldham",
+              "John Dryden"
+            ],
+            [
+              "6",
+              "Extract from Canto 3, The Rape of the Lock",
+              "Alexander Pope"
+            ],
+            [
+              "7",
+              "The Chimney Sweeper (Songs of Innocence)",
+              "William Blake"
+            ],
+            [
+              "8",
+              "Ode to a Nightingale",
+              "John Keats"
+            ],
+            [
+              "9",
+              "A Slumber Did My Spirit Seal",
+              "William Wordsworth"
+            ],
+            [
+              "10",
+              "To a Snowdrop",
+              "William Wordsworth"
+            ],
+            [
+              "11",
+              "Remember",
+              "Christina Rossetti"
+            ],
+            [
+              "12",
+              "Among School Children",
+              "W. B. Yeats"
+            ],
+            [
+              "13",
+              "Spring and Fall (To a Young Child)",
+              "Gerard Manley Hopkins"
+            ],
+            [
+              "14",
+              "Design",
+              "Robert Frost"
+            ],
+            [
+              "15",
+              "Suicide in the Trenches",
+              "Siegfried Sassoon"
+            ],
+            [
+              "16",
+              "Morning at the Window",
+              "T. S. Eliot"
+            ],
+            [
+              "17",
+              "Money",
+              "Philip Larkin"
+            ],
+            [
+              "18",
+              "The Cathedral Builders",
+              "John Ormond"
+            ],
+            [
+              "19",
+              "An Introduction",
+              "Kamala Das"
+            ],
+            [
+              "20",
+              "An Unknown Girl",
+              "Moniza Alvi"
+            ],
+            [
+              "21",
+              "Phenomenal Woman",
+              "Maya Angelou"
+            ],
+            [
+              "22",
+              "The Fisherman Mourned by His Wife",
+              "Patrick Fernando"
+            ],
+            [
+              "23",
+              "Animal Crackers",
+              "Richard de Zoysa"
+            ],
+            [
+              "24",
+              "Explosion",
+              "Vivimarie Vanderpoorten"
+            ]
           ]
         },
-        {          "type": "grade-resources",
+        {
+          "type": "grade-resources",
           "heading": "The NIE resource book",
           "eyebrow": "Downloads",
           "subject": "English Literature",
           "examination": "al"
-        },        {
+        },
+        {
           "type": "callout",
           "style": "tip",
           "title": "Preparing a text that is not yet on this site",
@@ -315,7 +637,6 @@
         }
       ]
     },
-
     {
       "slug": "al-literature/poetry",
       "title": "Poetry",
@@ -323,9 +644,19 @@
       "keywords": "A/L poetry, close reading, form, voice, prosody, poetic analysis",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "At this level, saying what a poem means is the beginning of the answer. The answer is about how the poem makes that meaning." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "At this level, saying what a poem means is the beginning of the answer. The answer is about how the poem makes that meaning."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -352,14 +683,46 @@
           "type": "terms",
           "heading": "Vocabulary you are expected to use accurately",
           "items": [
-            { "term": "Speaker and persona", "definition": "The voice of the poem, which may be a constructed character distinct from the poet.", "example": "A dramatic monologue depends entirely on the reader seeing more than the speaker does." },
-            { "term": "Volta", "definition": "The turn in a poem, especially in a sonnet, where the argument changes direction.", "example": "Locating the volta accurately is one of the quickest ways to show real reading." },
-            { "term": "Enjambment and end-stopping", "definition": "Whether a sentence runs past the line ending or stops with it.", "example": "Sustained enjambment can create urgency or breathlessness; a sudden end-stop after it lands heavily." },
-            { "term": "Caesura", "definition": "A strong pause within a line.", "example": "It can enact hesitation, interruption or a break in composure." },
-            { "term": "Metre", "definition": "The underlying rhythmic pattern — iambic, trochaic, and so on.", "example": "You are not usually required to scan formally, but you are expected to notice where the metre is disturbed and to say what the disturbance does." },
-            { "term": "Diction and register", "definition": "The kind of words chosen — plain or elaborate, formal or colloquial, abstract or concrete.", "example": "A shift in register mid-poem is always deliberate. Ask what it signals." },
-            { "term": "Tone", "definition": "The speaker's attitude to the subject.", "example": "Be precise. Not \"sad\" but elegiac, or bitter, or resigned, or wry — and show which words establish it." },
-            { "term": "Ambiguity", "definition": "A word or phrase that sustains more than one meaning at once.", "example": "At A/L, an ambiguity is not a problem to be resolved. Holding both meanings and showing why the poem wants both is precisely the skill being tested." }
+            {
+              "term": "Speaker and persona",
+              "definition": "The voice of the poem, which may be a constructed character distinct from the poet.",
+              "example": "A dramatic monologue depends entirely on the reader seeing more than the speaker does."
+            },
+            {
+              "term": "Volta",
+              "definition": "The turn in a poem, especially in a sonnet, where the argument changes direction.",
+              "example": "Locating the volta accurately is one of the quickest ways to show real reading."
+            },
+            {
+              "term": "Enjambment and end-stopping",
+              "definition": "Whether a sentence runs past the line ending or stops with it.",
+              "example": "Sustained enjambment can create urgency or breathlessness; a sudden end-stop after it lands heavily."
+            },
+            {
+              "term": "Caesura",
+              "definition": "A strong pause within a line.",
+              "example": "It can enact hesitation, interruption or a break in composure."
+            },
+            {
+              "term": "Metre",
+              "definition": "The underlying rhythmic pattern — iambic, trochaic, and so on.",
+              "example": "You are not usually required to scan formally, but you are expected to notice where the metre is disturbed and to say what the disturbance does."
+            },
+            {
+              "term": "Diction and register",
+              "definition": "The kind of words chosen — plain or elaborate, formal or colloquial, abstract or concrete.",
+              "example": "A shift in register mid-poem is always deliberate. Ask what it signals."
+            },
+            {
+              "term": "Tone",
+              "definition": "The speaker's attitude to the subject.",
+              "example": "Be precise. Not \"sad\" but elegiac, or bitter, or resigned, or wry — and show which words establish it."
+            },
+            {
+              "term": "Ambiguity",
+              "definition": "A word or phrase that sustains more than one meaning at once.",
+              "example": "At A/L, an ambiguity is not a problem to be resolved. Holding both meanings and showing why the poem wants both is precisely the skill being tested."
+            }
           ]
         },
         {
@@ -377,14 +740,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open" },
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" }
+            {
+              "title": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Literary Techniques",
+              "url": "al-literature/literary-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/drama",
       "title": "Drama",
@@ -392,9 +766,19 @@
       "keywords": "A/L drama, play analysis, stagecraft, dramatic structure, performance",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "A play is a score, not a novel. The best answers keep asking what an audience in a theatre would see, hear and know." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "A play is a score, not a novel. The best answers keep asking what an audience in a theatre would see, hear and know."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -425,14 +809,46 @@
           "type": "terms",
           "heading": "Terms to use precisely",
           "items": [
-            { "term": "Dramatic irony", "definition": "The audience knows what a character does not.", "example": "Do not stop at naming it. Say what it makes the audience feel, and what the dramatist gains from producing that feeling at that moment." },
-            { "term": "Soliloquy and aside", "definition": "Direct access to a mind; a remark heard only by the audience.", "example": "Ask whether the soliloquy is honest. A character alone may still be deceiving themselves." },
-            { "term": "Exposition", "definition": "How the necessary background reaches the audience.", "example": "Clumsy exposition is a fault; skilful exposition — information delivered while something else is happening — is worth praising specifically." },
-            { "term": "Peripeteia", "definition": "A reversal of fortune or situation.", "example": "Locate it exactly. Much of a tragedy's meaning depends on what causes the reversal and whether the character sees it coming." },
-            { "term": "Catharsis", "definition": "The purging of pity and fear that tragedy is traditionally said to produce.", "example": "Use it only if you can say something about how this play produces it, or fails or refuses to." },
-            { "term": "Stagecraft", "definition": "The dramatist's use of the physical resources of the theatre — space, movement, entrances, properties, light, silence.", "example": "Stage directions are part of the text and may be quoted." },
-            { "term": "Subtext", "definition": "What is meant but not said.", "example": "Look for characters who answer a question with another question, change the subject, or fall silent." },
-            { "term": "Register and idiolect", "definition": "How individual characters speak differently from one another.", "example": "A character whose vocabulary changes across a play is being shown to change." }
+            {
+              "term": "Dramatic irony",
+              "definition": "The audience knows what a character does not.",
+              "example": "Do not stop at naming it. Say what it makes the audience feel, and what the dramatist gains from producing that feeling at that moment."
+            },
+            {
+              "term": "Soliloquy and aside",
+              "definition": "Direct access to a mind; a remark heard only by the audience.",
+              "example": "Ask whether the soliloquy is honest. A character alone may still be deceiving themselves."
+            },
+            {
+              "term": "Exposition",
+              "definition": "How the necessary background reaches the audience.",
+              "example": "Clumsy exposition is a fault; skilful exposition — information delivered while something else is happening — is worth praising specifically."
+            },
+            {
+              "term": "Peripeteia",
+              "definition": "A reversal of fortune or situation.",
+              "example": "Locate it exactly. Much of a tragedy's meaning depends on what causes the reversal and whether the character sees it coming."
+            },
+            {
+              "term": "Catharsis",
+              "definition": "The purging of pity and fear that tragedy is traditionally said to produce.",
+              "example": "Use it only if you can say something about how this play produces it, or fails or refuses to."
+            },
+            {
+              "term": "Stagecraft",
+              "definition": "The dramatist's use of the physical resources of the theatre — space, movement, entrances, properties, light, silence.",
+              "example": "Stage directions are part of the text and may be quoted."
+            },
+            {
+              "term": "Subtext",
+              "definition": "What is meant but not said.",
+              "example": "Look for characters who answer a question with another question, change the subject, or fall silent."
+            },
+            {
+              "term": "Register and idiolect",
+              "definition": "How individual characters speak differently from one another.",
+              "example": "A character whose vocabulary changes across a play is being shown to change."
+            }
           ]
         },
         {
@@ -450,14 +866,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open" },
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" }
+            {
+              "title": "Literary Techniques",
+              "url": "al-literature/literary-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay Questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/fiction",
       "title": "Fiction",
@@ -465,19 +892,51 @@
       "keywords": "A/L fiction, novel analysis, narrator, focalisation, free indirect style, structure",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "The most useful question you can ask of any novel: who is telling me this, how much do they know, and how much do I trust them?" },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "The most useful question you can ask of any novel: who is telling me this, how much do they know, and how much do I trust them?"
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "Narration: the central question",
-          "text": ["Everything you are told in a novel comes through somebody. Identifying who, and with what limitations, is the foundation of nearly every fiction answer."],
+          "text": [
+            "Everything you are told in a novel comes through somebody. Identifying who, and with what limitations, is the foundation of nearly every fiction answer."
+          ],
           "parts": [
-            { "heading": "First person", "text": ["The narrator is a character. You know only what they know, and you are exposed to their bias. Always ask: **is this narrator reliable?** Where the reader can see more than the narrator does, that gap is the novel's chief instrument."] },
-            { "heading": "Third person limited", "text": ["The narration follows one character's perspective. Other characters are seen from outside, which shapes sympathy powerfully. Ask whose mind you are inside, and — just as important — whose you are kept out of."] },
-            { "heading": "Third person omniscient", "text": ["The narrator may enter any mind and comment freely. Ask what the narrating voice is like: sympathetic, ironic, detached, judging. An omniscient narrator is a character too."] },
-            { "heading": "Shifting narration", "text": ["Where a novel changes narrator or perspective, that change is an argument. Ask what each perspective can see that the others cannot."] }
+            {
+              "heading": "First person",
+              "text": [
+                "The narrator is a character. You know only what they know, and you are exposed to their bias. Always ask: **is this narrator reliable?** Where the reader can see more than the narrator does, that gap is the novel's chief instrument."
+              ]
+            },
+            {
+              "heading": "Third person limited",
+              "text": [
+                "The narration follows one character's perspective. Other characters are seen from outside, which shapes sympathy powerfully. Ask whose mind you are inside, and — just as important — whose you are kept out of."
+              ]
+            },
+            {
+              "heading": "Third person omniscient",
+              "text": [
+                "The narrator may enter any mind and comment freely. Ask what the narrating voice is like: sympathetic, ironic, detached, judging. An omniscient narrator is a character too."
+              ]
+            },
+            {
+              "heading": "Shifting narration",
+              "text": [
+                "Where a novel changes narrator or perspective, that change is an argument. Ask what each perspective can see that the others cannot."
+              ]
+            }
           ]
         },
         {
@@ -485,13 +944,41 @@
           "heading": "Terms worth having",
           "variant": "tint",
           "items": [
-            { "term": "Focalisation", "definition": "Whose perspective the narration adopts at a given moment, which may differ from who is speaking.", "example": "A third-person narrator may focalise through a child, so that the reader understands what the child does not." },
-            { "term": "Free indirect style", "definition": "Third-person narration that takes on a character's own words and idiom without quotation marks.", "example": "It lets a narrator be inside and outside a character at once, and is often the vehicle for irony. Being able to identify it accurately is a genuine mark of advanced reading." },
-            { "term": "Unreliable narrator", "definition": "A narrator whose account the reader is invited to doubt.", "example": "The evidence is usually internal: contradictions, over-insistence, gaps, or a version of events that the other characters' behaviour does not support." },
-            { "term": "Analepsis and prolepsis", "definition": "Flashback and flash-forward.", "example": "Ask why the information is placed here rather than in chronological order. Usually the answer is irony or suspense." },
-            { "term": "Duration and pace", "definition": "How much text is given to how much time.", "example": "Ten pages on one afternoon and one sentence on ten years is a statement about what matters in this novel." },
-            { "term": "Setting as meaning", "definition": "Place and period doing argumentative work, not scene-setting.", "example": "A house that becomes harder to heat as the family's fortunes fall is not description; it is the theme, made physical." },
-            { "term": "Motif", "definition": "A recurring image, object or phrase that accumulates meaning through repetition.", "example": "Trace where a motif appears. Its meaning at the end is rarely its meaning at the start." }
+            {
+              "term": "Focalisation",
+              "definition": "Whose perspective the narration adopts at a given moment, which may differ from who is speaking.",
+              "example": "A third-person narrator may focalise through a child, so that the reader understands what the child does not."
+            },
+            {
+              "term": "Free indirect style",
+              "definition": "Third-person narration that takes on a character's own words and idiom without quotation marks.",
+              "example": "It lets a narrator be inside and outside a character at once, and is often the vehicle for irony. Being able to identify it accurately is a genuine mark of advanced reading."
+            },
+            {
+              "term": "Unreliable narrator",
+              "definition": "A narrator whose account the reader is invited to doubt.",
+              "example": "The evidence is usually internal: contradictions, over-insistence, gaps, or a version of events that the other characters' behaviour does not support."
+            },
+            {
+              "term": "Analepsis and prolepsis",
+              "definition": "Flashback and flash-forward.",
+              "example": "Ask why the information is placed here rather than in chronological order. Usually the answer is irony or suspense."
+            },
+            {
+              "term": "Duration and pace",
+              "definition": "How much text is given to how much time.",
+              "example": "Ten pages on one afternoon and one sentence on ten years is a statement about what matters in this novel."
+            },
+            {
+              "term": "Setting as meaning",
+              "definition": "Place and period doing argumentative work, not scene-setting.",
+              "example": "A house that becomes harder to heat as the family's fortunes fall is not description; it is the theme, made physical."
+            },
+            {
+              "term": "Motif",
+              "definition": "A recurring image, object or phrase that accumulates meaning through repetition.",
+              "example": "Trace where a motif appears. Its meaning at the end is rarely its meaning at the start."
+            }
           ]
         },
         {
@@ -518,14 +1005,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Literary Theory", "url": "al-literature/literary-theory/", "more": "Open" },
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" }
+            {
+              "title": "Literary Theory",
+              "url": "al-literature/literary-theory/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay Questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/prose",
       "title": "Prose",
@@ -533,9 +1031,19 @@
       "keywords": "A/L prose, non-fiction, essay analysis, rhetoric, tone, argument",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Non-fictional prose is written to persuade, explain or record. Analysing it means showing how it does that — and whether it is fair." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Non-fictional prose is written to persuade, explain or record. Analysing it means showing how it does that — and whether it is fair."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -554,13 +1062,41 @@
           "heading": "Rhetorical devices, and what they achieve",
           "variant": "tint",
           "items": [
-            { "term": "Rhetorical question", "definition": "A question asked for effect, not for an answer.", "example": "It makes the reader supply the conclusion themselves, which is more persuasive than being told it." },
-            { "term": "Tricolon", "definition": "A group of three.", "example": "Three sounds complete and memorable in English. Notice when a writer sets up a three and then breaks it — the break is emphatic." },
-            { "term": "Anaphora", "definition": "Repeating the same opening words in successive clauses.", "example": "It builds rhythm and insistence, and marks a passage as public and spoken in character." },
-            { "term": "Antithesis", "definition": "Balanced opposition within a sentence.", "example": "It makes a claim sound reasoned and inevitable, whether or not it is." },
-            { "term": "Concession", "definition": "Admitting part of the opposing case.", "example": "It purchases the reader's trust cheaply, and makes the writer seem fair. Ask what is conceded and, more revealingly, what is not." },
-            { "term": "Understatement and irony", "definition": "Saying less than is meant, or the opposite.", "example": "Both invite the reader into complicity — the reader who understands feels clever, and an agreeing reader is a persuaded reader." },
-            { "term": "Appeal to authority, emotion and reason", "definition": "The three classical means of persuasion.", "example": "Identify which the passage relies on most, and whether the reliance is honest." }
+            {
+              "term": "Rhetorical question",
+              "definition": "A question asked for effect, not for an answer.",
+              "example": "It makes the reader supply the conclusion themselves, which is more persuasive than being told it."
+            },
+            {
+              "term": "Tricolon",
+              "definition": "A group of three.",
+              "example": "Three sounds complete and memorable in English. Notice when a writer sets up a three and then breaks it — the break is emphatic."
+            },
+            {
+              "term": "Anaphora",
+              "definition": "Repeating the same opening words in successive clauses.",
+              "example": "It builds rhythm and insistence, and marks a passage as public and spoken in character."
+            },
+            {
+              "term": "Antithesis",
+              "definition": "Balanced opposition within a sentence.",
+              "example": "It makes a claim sound reasoned and inevitable, whether or not it is."
+            },
+            {
+              "term": "Concession",
+              "definition": "Admitting part of the opposing case.",
+              "example": "It purchases the reader's trust cheaply, and makes the writer seem fair. Ask what is conceded and, more revealingly, what is not."
+            },
+            {
+              "term": "Understatement and irony",
+              "definition": "Saying less than is meant, or the opposite.",
+              "example": "Both invite the reader into complicity — the reader who understands feels clever, and an agreeing reader is a persuaded reader."
+            },
+            {
+              "term": "Appeal to authority, emotion and reason",
+              "definition": "The three classical means of persuasion.",
+              "example": "Identify which the passage relies on most, and whether the reliance is honest."
+            }
           ]
         },
         {
@@ -577,9 +1113,21 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Literary Techniques", "url": "al-literature/literary-techniques/", "more": "Open" },
-            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+            {
+              "title": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Literary Techniques",
+              "url": "al-literature/literary-techniques/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination Guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            }
           ]
         }
       ]

@@ -20,19 +20,28 @@
     "Fees, session dates and centre lists are deliberately NOT stated -",
     "they change, and in Sri Lanka they are set by the British Council."
   ],
-
   "pages": [
     {
       "slug": "practical-english/cambridge-exams",
       "title": "Cambridge English Exams",
-      "metaTitle": "Cambridge English Exams: YLE, KET to CPE, TKT and CELTA | RCF English",
+      "metaTitle": "Cambridge English Exams: YLE, KET to CPE, TKT and CELTA",
       "description": "A plain guide to the Cambridge English exams for Sri Lankan learners and teachers: Young Learners Starters, Movers and Flyers; A2 Key to C2 Proficiency; and the teaching qualifications TKT, CELTA and DELTA.",
       "keywords": "Cambridge English exams Sri Lanka, TKT, YLE starters movers flyers, KET PET FCE, CELTA, Cambridge English Scale",
       "kicker": "Practical English",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
-      "backTo": { "label": "Practical English", "url": "practical-english/" },
-      "hero": { "text": "Cambridge runs two quite separate families of examination: one that tests how good your English is, and one that tests whether you know how to teach it. Confusing the two wastes a great deal of money." },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Practical English",
+        "url": "practical-english/"
+      },
+      "hero": {
+        "text": "Cambridge runs two quite separate families of examination: one that tests how good your English is, and one that tests whether you know how to teach it. Confusing the two wastes a great deal of money."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -66,11 +75,31 @@
           "type": "table",
           "heading": "The three Young Learners levels",
           "caption": "Written by RCF English. Ages are typical, not rules — the level should match the child's English, not the birth certificate.",
-          "columns": ["Test", "CEFR level", "Typical age", "What the child can do"],
+          "columns": [
+            "Test",
+            "CEFR level",
+            "Typical age",
+            "What the child can do"
+          ],
           "rows": [
-            ["Pre A1 Starters", "Pre A1", "7–8", "Understands very simple spoken and written English: colours, numbers, family, classroom objects, simple instructions."],
-            ["A1 Movers", "A1", "8–11", "Handles simple everyday English: describing pictures, short conversations, reading a short story and answering about it."],
-            ["A2 Flyers", "A2", "9–12", "Around the level of a strong Sri Lankan Grade 6 or 7 pupil: simple past and future, short written answers, a longer spoken exchange."]
+            [
+              "Pre A1 Starters",
+              "Pre A1",
+              "7–8",
+              "Understands very simple spoken and written English: colours, numbers, family, classroom objects, simple instructions."
+            ],
+            [
+              "A1 Movers",
+              "A1",
+              "8–11",
+              "Handles simple everyday English: describing pictures, short conversations, reading a short story and answering about it."
+            ],
+            [
+              "A2 Flyers",
+              "A2",
+              "9–12",
+              "Around the level of a strong Sri Lankan Grade 6 or 7 pupil: simple past and future, short written answers, a longer spoken exchange."
+            ]
           ]
         },
         {
@@ -111,13 +140,43 @@
           "type": "table",
           "heading": "The five levels, and who each one suits",
           "caption": "Written by RCF English. The right exam is the one you would pass comfortably today, not the one that sounds most impressive.",
-          "columns": ["Exam (old name)", "CEFR", "Roughly", "Typically taken for"],
+          "columns": [
+            "Exam (old name)",
+            "CEFR",
+            "Roughly",
+            "Typically taken for"
+          ],
           "rows": [
-            ["A2 Key (KET)", "A2", "Confident Grade 8 to 9 school English", "A first certificate; proof of basic competence for a school leaver."],
-            ["B1 Preliminary (PET)", "B1", "A good O/L pass, used actively", "Vocational courses; a stepping stone; junior office work."],
-            ["B2 First (FCE)", "B2", "Comfortable A/L English and beyond", "The most widely taken. Many employers and some universities accept it; a common target for Sri Lankan teachers."],
-            ["C1 Advanced (CAE)", "C1", "Able to study a degree in English", "University entry, professional work, senior teaching posts."],
-            ["C2 Proficiency (CPE)", "C2", "Near the range of an educated native speaker", "Academic and professional work at the highest level. Rarely required; occasionally decisive."]
+            [
+              "A2 Key (KET)",
+              "A2",
+              "Confident Grade 8 to 9 school English",
+              "A first certificate; proof of basic competence for a school leaver."
+            ],
+            [
+              "B1 Preliminary (PET)",
+              "B1",
+              "A good O/L pass, used actively",
+              "Vocational courses; a stepping stone; junior office work."
+            ],
+            [
+              "B2 First (FCE)",
+              "B2",
+              "Comfortable A/L English and beyond",
+              "The most widely taken. Many employers and some universities accept it; a common target for Sri Lankan teachers."
+            ],
+            [
+              "C1 Advanced (CAE)",
+              "C1",
+              "Able to study a degree in English",
+              "University entry, professional work, senior teaching posts."
+            ],
+            [
+              "C2 Proficiency (CPE)",
+              "C2",
+              "Near the range of an educated native speaker",
+              "Academic and professional work at the highest level. Rarely required; occasionally decisive."
+            ]
           ]
         },
         {
@@ -158,13 +217,31 @@
           "type": "table",
           "heading": "The TKT modules",
           "caption": "Written by RCF English. The three core modules may be taken in any order and in any combination.",
-          "columns": ["Module", "What it covers"],
+          "columns": [
+            "Module",
+            "What it covers"
+          ],
           "rows": [
-            ["Module 1 — Language and background to language learning and teaching", "Grammatical terms, language functions, how learners acquire a language, and the reasons behind common learner errors."],
-            ["Module 2 — Lesson planning and use of resources", "Planning a lesson and a sequence of lessons, choosing aims and materials, and using coursebooks and aids."],
-            ["Module 3 — Managing the teaching and learning process", "Classroom language, grouping learners, giving feedback, correcting errors and managing the classroom."],
-            ["TKT: CLIL (specialist)", "Teaching a subject such as science or mathematics through English."],
-            ["TKT: Young Learners (specialist)", "Teaching English to children, including how young learners differ from adults."]
+            [
+              "Module 1 — Language and background to language learning and teaching",
+              "Grammatical terms, language functions, how learners acquire a language, and the reasons behind common learner errors."
+            ],
+            [
+              "Module 2 — Lesson planning and use of resources",
+              "Planning a lesson and a sequence of lessons, choosing aims and materials, and using coursebooks and aids."
+            ],
+            [
+              "Module 3 — Managing the teaching and learning process",
+              "Classroom language, grouping learners, giving feedback, correcting errors and managing the classroom."
+            ],
+            [
+              "TKT: CLIL (specialist)",
+              "Teaching a subject such as science or mathematics through English."
+            ],
+            [
+              "TKT: Young Learners (specialist)",
+              "Teaching English to children, including how young learners differ from adults."
+            ]
           ]
         },
         {
@@ -188,14 +265,49 @@
           "type": "table",
           "heading": "TKT, CELTA and DELTA compared",
           "caption": "Written by RCF English. All three are Cambridge teaching qualifications; they are not alternatives to one another.",
-          "columns": ["", "TKT", "CELTA", "DELTA"],
+          "columns": [
+            "",
+            "TKT",
+            "CELTA",
+            "DELTA"
+          ],
           "rows": [
-            ["For", "Any teacher, including those with no formal training", "Those entering English language teaching, or teachers wanting a practical qualification", "Experienced teachers, usually with two years or more"],
-            ["Observed teaching?", "No", "Yes — assessed teaching practice with real learners", "Yes, and at a considerably higher standard"],
-            ["Format", "Written test, one module at a time", "An intensive or part-time course with assessment throughout", "Three modules, including a written examination and assessed teaching"],
-            ["Result", "Band 1 to 4, no pass or fail", "Pass, Pass B, Pass A or fail", "Pass, Merit, Distinction or fail"],
-            ["Can you do it while teaching full time?", "Yes, comfortably", "Part-time yes; the intensive course is not compatible with full-time work", "Usually yes, part time"],
-            ["Realistic first step for a Sri Lankan school teacher", "**Usually this one**", "If you can secure the time and cost", "Later, after experience"]
+            [
+              "For",
+              "Any teacher, including those with no formal training",
+              "Those entering English language teaching, or teachers wanting a practical qualification",
+              "Experienced teachers, usually with two years or more"
+            ],
+            [
+              "Observed teaching?",
+              "No",
+              "Yes — assessed teaching practice with real learners",
+              "Yes, and at a considerably higher standard"
+            ],
+            [
+              "Format",
+              "Written test, one module at a time",
+              "An intensive or part-time course with assessment throughout",
+              "Three modules, including a written examination and assessed teaching"
+            ],
+            [
+              "Result",
+              "Band 1 to 4, no pass or fail",
+              "Pass, Pass B, Pass A or fail",
+              "Pass, Merit, Distinction or fail"
+            ],
+            [
+              "Can you do it while teaching full time?",
+              "Yes, comfortably",
+              "Part-time yes; the intensive course is not compatible with full-time work",
+              "Usually yes, part time"
+            ],
+            [
+              "Realistic first step for a Sri Lankan school teacher",
+              "**Usually this one**",
+              "If you can secure the time and cost",
+              "Later, after experience"
+            ]
           ]
         },
         {
@@ -247,12 +359,36 @@
           "eyebrow": "Elsewhere on this site",
           "columns": "3",
           "items": [
-            { "title": "IELTS", "url": "practical-english/ielts/", "more": "Open", "text": ["The other major international test, co-owned by Cambridge, with its own practice pages."] },
-            { "title": "Self-Assessment", "url": "practical-english/self-assessment/", "more": "Open", "text": ["Work out roughly where your English is before choosing a level."] },
-            { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open", "text": ["Classroom management, lesson planning and free printable templates."] }
+            {
+              "title": "IELTS",
+              "url": "practical-english/ielts/",
+              "more": "Open",
+              "text": [
+                "The other major international test, co-owned by Cambridge, with its own practice pages."
+              ]
+            },
+            {
+              "title": "Self-Assessment",
+              "url": "practical-english/self-assessment/",
+              "more": "Open",
+              "text": [
+                "Work out roughly where your English is before choosing a level."
+              ]
+            },
+            {
+              "title": "Teacher Resources",
+              "url": "teacher-resources/",
+              "more": "Open",
+              "text": [
+                "Classroom management, lesson planning and free printable templates."
+              ]
+            }
           ]
         },
-        { "type": "adslot", "placement": "between" }
+        {
+          "type": "adslot",
+          "placement": "between"
+        }
       ]
     }
   ]

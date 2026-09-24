@@ -18,7 +18,6 @@
     "",
     "After editing this file, run build.cmd."
   ],
-
   "pages": [
     {
       "slug": "primary-english",
@@ -33,10 +32,26 @@
       "hero": {
         "text": "English for children who are still building it: the letters, the sounds, the first words, the first sentences, and the first whole page read without help.",
         "buttons": [
-          { "label": "Open the Primary Game Zone", "url": "primary-english/game-zone/", "style": "btn--accent" },
-          { "label": "Start with the alphabet", "url": "primary-english/alphabet/", "style": "btn--ghost-light" },
-          { "label": "More activities and games", "url": "primary-english/games/", "style": "btn--ghost-light" },
-          { "label": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "style": "btn--ghost-light" }
+          {
+            "label": "Open the Primary Game Zone",
+            "url": "primary-english/game-zone/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Start with the alphabet",
+            "url": "primary-english/alphabet/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "More activities and games",
+            "url": "primary-english/games/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Grade 5 Scholarship",
+            "url": "primary-english/grade-5-scholarship/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -45,7 +60,9 @@
           "heading": "Play the games",
           "eyebrow": "New",
           "columns": "1",
-          "intro": ["Six kinds of English game for Grades 1 to 5. Each one takes three to five minutes, works on a phone, and keeps your stars when you come back."],
+          "intro": [
+            "Six kinds of English game for Grades 1 to 5. Each one takes three to five minutes, works on a phone, and keeps your stars when you come back."
+          ],
           "items": [
             {
               "title": "Primary Game Zone",
@@ -77,14 +94,57 @@
           "type": "cards",
           "heading": "Choose a grade",
           "eyebrow": "Grade 1 to Grade 5",
-          "intro": ["Each grade follows the primary English syllabus. If you would rather browse by activity, the section below does that instead - both routes reach the same material."],
+          "intro": [
+            "Each grade follows the primary English syllabus. If you would rather browse by activity, the section below does that instead - both routes reach the same material."
+          ],
           "columns": "3",
           "items": [
-            { "title": "Grade 1", "icon": "G1", "url": "primary-english/grade-1/", "more": "Open", "text": ["Oral English through 16 themes, with an activity book and model papers."] },
-            { "title": "Grade 2", "icon": "G2", "url": "primary-english/songs/", "more": "Sing the songs", "text": ["Songs to sing along with, following the Activity Based Oral English themes.", "**Full Grade 2 resources in preparation.**"] },
-            { "title": "Grade 3", "url": "primary-english/grade-3/", "icon": "G3", "more": "Open", "text": ["Alphabet sounds, words of three or four letters, and sentences of up to five words."] },
-            { "title": "Grade 4", "url": "primary-english/grade-4/", "icon": "G4", "more": "Open", "text": ["Pronouns, numbers to 50, and writing with capital letters and full stops."] },
-            { "title": "Grade 5", "url": "primary-english/grade-5/", "icon": "G5", "more": "Open", "text": ["Three tenses, everyday texts, and writing accurate simple sentences."] }
+            {
+              "title": "Grade 1",
+              "icon": "G1",
+              "url": "primary-english/grade-1/",
+              "more": "Open",
+              "text": [
+                "Oral English through 16 themes, with an activity book and model papers."
+              ]
+            },
+            {
+              "title": "Grade 2",
+              "icon": "G2",
+              "url": "primary-english/songs/",
+              "more": "Sing the songs",
+              "text": [
+                "Songs to sing along with, following the Activity Based Oral English themes.",
+                "**Full Grade 2 resources in preparation.**"
+              ]
+            },
+            {
+              "title": "Grade 3",
+              "url": "primary-english/grade-3/",
+              "icon": "G3",
+              "more": "Open",
+              "text": [
+                "Alphabet sounds, words of three or four letters, and sentences of up to five words."
+              ]
+            },
+            {
+              "title": "Grade 4",
+              "url": "primary-english/grade-4/",
+              "icon": "G4",
+              "more": "Open",
+              "text": [
+                "Pronouns, numbers to 50, and writing with capital letters and full stops."
+              ]
+            },
+            {
+              "title": "Grade 5",
+              "url": "primary-english/grade-5/",
+              "icon": "G5",
+              "more": "Open",
+              "text": [
+                "Three tenses, everyday texts, and writing accurate simple sentences."
+              ]
+            }
           ]
         },
         {
@@ -98,12 +158,54 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Alphabet Practice", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter shapes, letter sounds, capitals and small letters, and how to hold a pencil."] },
-            { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Things to do with a child: no materials, little preparation, ten minutes each."] },
-            { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Traditional rhymes and verses written for this site, with what to do with each."] },
-            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["Short passages with questions, getting longer a little at a time."] },
-            { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["Activities that mark themselves and say why an answer was wrong."] },
-            { "title": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "more": "Open", "text": ["The English-medium language work, practised honestly and without pressure."] }
+            {
+              "title": "Alphabet Practice",
+              "url": "primary-english/alphabet/",
+              "more": "Open",
+              "text": [
+                "Letter shapes, letter sounds, capitals and small letters, and how to hold a pencil."
+              ]
+            },
+            {
+              "title": "Primary Activities",
+              "url": "primary-english/activities/",
+              "more": "Open",
+              "text": [
+                "Things to do with a child: no materials, little preparation, ten minutes each."
+              ]
+            },
+            {
+              "title": "Poems",
+              "url": "primary-english/poems/",
+              "more": "Open",
+              "text": [
+                "Traditional rhymes and verses written for this site, with what to do with each."
+              ]
+            },
+            {
+              "title": "Short Reading Comprehensions",
+              "url": "primary-english/reading/",
+              "more": "Open",
+              "text": [
+                "Short passages with questions, getting longer a little at a time."
+              ]
+            },
+            {
+              "title": "Interactive Activities and Games",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "Activities that mark themselves and say why an answer was wrong."
+              ]
+            },
+            {
+              "title": "Grade 5 Scholarship",
+              "url": "primary-english/grade-5-scholarship/",
+              "more": "Open",
+              "text": [
+                "The English-medium language work, practised honestly and without pressure."
+              ]
+            }
           ]
         },
         {
@@ -111,14 +213,46 @@
           "heading": "The order we teach in",
           "eyebrow": "Why the pages are arranged this way",
           "variant": "navy",
-          "intro": ["Nothing here is new or clever. It is the ordinary order, followed properly, which is rarer than it sounds."],
+          "intro": [
+            "Nothing here is new or clever. It is the ordinary order, followed properly, which is rarer than it sounds."
+          ],
           "items": [
-            { "title": "The letter shapes", "text": ["A child must be able to see the difference between b and d, and between capital and small letters, before spelling means anything."] },
-            { "title": "The letter sounds", "text": ["The sound a letter makes, not only its name. A child who knows only names cannot sound out a new word."] },
-            { "title": "Blending sounds into words", "text": ["c-a-t said slowly, then quickly, then as one word. This is the single step that turns a child into a reader."] },
-            { "title": "Whole words by sight", "text": ["The common words that do not sound out neatly - the, was, said, one - learnt as shapes."] },
-            { "title": "Sentences", "text": ["Capital letter, words in order, full stop. Read first, then written."] },
-            { "title": "Short passages", "text": ["Four or five sentences, then a question that cannot be answered without reading them."] }
+            {
+              "title": "The letter shapes",
+              "text": [
+                "A child must be able to see the difference between b and d, and between capital and small letters, before spelling means anything."
+              ]
+            },
+            {
+              "title": "The letter sounds",
+              "text": [
+                "The sound a letter makes, not only its name. A child who knows only names cannot sound out a new word."
+              ]
+            },
+            {
+              "title": "Blending sounds into words",
+              "text": [
+                "c-a-t said slowly, then quickly, then as one word. This is the single step that turns a child into a reader."
+              ]
+            },
+            {
+              "title": "Whole words by sight",
+              "text": [
+                "The common words that do not sound out neatly - the, was, said, one - learnt as shapes."
+              ]
+            },
+            {
+              "title": "Sentences",
+              "text": [
+                "Capital letter, words in order, full stop. Read first, then written."
+              ]
+            },
+            {
+              "title": "Short passages",
+              "text": [
+                "Four or five sentences, then a question that cannot be answered without reading them."
+              ]
+            }
           ]
         },
         {
@@ -136,21 +270,52 @@
           "heading": "Where to go next",
           "columns": "4",
           "items": [
-            { "title": "Interactive Learning", "url": "interactive/", "more": "Open", "text": ["Activities across the whole site, for every level."] },
-            { "title": "Teacher Resources", "url": "teacher-resources/", "more": "Open", "text": ["Lesson plans, worksheets and marking guidance."] },
-            { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["Where a child is heading after the primary years."] },
-            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open", "text": ["Classes taught online by Rohana Fernando."] }
+            {
+              "title": "Interactive Learning",
+              "url": "interactive/",
+              "more": "Open",
+              "text": [
+                "Activities across the whole site, for every level."
+              ]
+            },
+            {
+              "title": "Teacher Resources",
+              "url": "teacher-resources/",
+              "more": "Open",
+              "text": [
+                "Lesson plans, worksheets and marking guidance."
+              ]
+            },
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open",
+              "text": [
+                "Where a child is heading after the primary years."
+              ]
+            },
+            {
+              "title": "RCF Online Academy",
+              "url": "rcf-classes/",
+              "more": "Open",
+              "text": [
+                "Classes taught online by Rohana Fernando."
+              ]
+            }
           ]
         },
         {
           "type": "relatedBooks",
-          "books": ["lets-talk-primary"],
+          "books": [
+            "lets-talk-primary"
+          ],
           "heading": "A book of spoken English lessons for the primary classroom",
-          "text": ["Forty ready-to-run lessons for teachers of the primary grades, each planned to fit a single period."]
+          "text": [
+            "Forty ready-to-run lessons for teachers of the primary grades, each planned to fit a single period."
+          ]
         }
       ]
     },
-
     {
       "slug": "primary-english/alphabet",
       "title": "Alphabet Practice",
@@ -159,8 +324,16 @@
       "keywords": "alphabet practice, letter sounds, phonics, capital and small letters, handwriting for children, primary English",
       "kicker": "Primary English",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Twenty-six letters, each with a shape, a name and a sound. Get these firm and everything after them is easier."
       },
@@ -177,28 +350,85 @@
           "type": "table",
           "heading": "The letters children confuse most",
           "variant": "tint",
-          "intro": ["These six cause most of the trouble. They are worth extra practice on their own, away from the rest of the alphabet."],
-          "columns": ["Pair", "Why it is confusing", "What helps"],
+          "intro": [
+            "These six cause most of the trouble. They are worth extra practice on their own, away from the rest of the alphabet."
+          ],
+          "columns": [
+            "Pair",
+            "Why it is confusing",
+            "What helps"
+          ],
           "rows": [
-            ["b and d", "The same shape, facing opposite ways.", "Make a fist with each hand, thumbs up. The left hand makes a b, the right makes a d. The word 'bed' has a b at one end and a d at the other, like a bed with a headboard at each end."],
-            ["p and q", "Again the same shape reversed, below the line this time.", "Practise them in words rather than alone: pen, put, queen, quick. A q in English is almost always followed by u."],
-            ["m and n", "Same shape, different number of humps.", "m has two humps and two sounds in 'mmm'. Count the humps aloud."],
-            ["i and j", "Both have a dot; j goes below the line.", "Write them side by side. The j has a tail that hangs down, like a hook."],
-            ["u and v", "Curved bottom against pointed bottom.", "u is a cup you could drink from. v has a sharp point and would spill."],
-            ["Capital I and small l", "In many typefaces they look identical.", "Show them inside words: I am, a little lamp. Context settles it, and children learn to use context."]
+            [
+              "b and d",
+              "The same shape, facing opposite ways.",
+              "Make a fist with each hand, thumbs up. The left hand makes a b, the right makes a d. The word 'bed' has a b at one end and a d at the other, like a bed with a headboard at each end."
+            ],
+            [
+              "p and q",
+              "Again the same shape reversed, below the line this time.",
+              "Practise them in words rather than alone: pen, put, queen, quick. A q in English is almost always followed by u."
+            ],
+            [
+              "m and n",
+              "Same shape, different number of humps.",
+              "m has two humps and two sounds in 'mmm'. Count the humps aloud."
+            ],
+            [
+              "i and j",
+              "Both have a dot; j goes below the line.",
+              "Write them side by side. The j has a tail that hangs down, like a hook."
+            ],
+            [
+              "u and v",
+              "Curved bottom against pointed bottom.",
+              "u is a cup you could drink from. v has a sharp point and would spill."
+            ],
+            [
+              "Capital I and small l",
+              "In many typefaces they look identical.",
+              "Show them inside words: I am, a little lamp. Context settles it, and children learn to use context."
+            ]
           ]
         },
         {
           "type": "steps",
           "heading": "How to practise one letter",
           "eyebrow": "About ten minutes",
-          "intro": ["The same five steps work for every letter. Do one letter at a time and do not move on until the child can do step five without help."],
+          "intro": [
+            "The same five steps work for every letter. Do one letter at a time and do not move on until the child can do step five without help."
+          ],
           "items": [
-            { "title": "Look at it", "text": ["Show the capital and the small letter together: **A a**. Say the name. Say the sound."] },
-            { "title": "Find it", "text": ["Look for the letter on a page, a packet, a signboard, anywhere. Finding it in the real world matters more than finding it on a worksheet."] },
-            { "title": "Trace it", "text": ["Draw it large with a finger in the air, then on the table, then on paper. Big movements first, small ones later."] },
-            { "title": "Write it", "text": ["Three or four times, no more. A whole page of the same letter teaches nothing after the fourth one and makes the child hate it."] },
-            { "title": "Use it", "text": ["Say three words beginning with that sound. Then let the child say three. If they can do this, the letter is learnt."] }
+            {
+              "title": "Look at it",
+              "text": [
+                "Show the capital and the small letter together: **A a**. Say the name. Say the sound."
+              ]
+            },
+            {
+              "title": "Find it",
+              "text": [
+                "Look for the letter on a page, a packet, a signboard, anywhere. Finding it in the real world matters more than finding it on a worksheet."
+              ]
+            },
+            {
+              "title": "Trace it",
+              "text": [
+                "Draw it large with a finger in the air, then on the table, then on paper. Big movements first, small ones later."
+              ]
+            },
+            {
+              "title": "Write it",
+              "text": [
+                "Three or four times, no more. A whole page of the same letter teaches nothing after the fourth one and makes the child hate it."
+              ]
+            },
+            {
+              "title": "Use it",
+              "text": [
+                "Say three words beginning with that sound. Then let the child say three. If they can do this, the letter is learnt."
+              ]
+            }
           ]
         },
         {
@@ -238,32 +468,70 @@
           "heading": "Practise the letters",
           "eyebrow": "Marks itself",
           "variant": "tint",
-          "ids": ["primary-letter-sounds", "primary-first-words"]
+          "ids": [
+            "primary-letter-sounds",
+            "primary-first-words"
+          ]
         },
         {
           "type": "cards",
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Watch and Write: the Alphabet", "url": "primary-english/alphabet/watch-and-write/", "more": "Open", "text": ["Watch every letter drawn stroke by stroke, then trace it."] },
-            { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Ten-minute things to do once the letters are steady."] },
-            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["The first short passages, with questions."] },
-            { "title": "Poems", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme makes sounds easier to hear."] }
+            {
+              "title": "Watch and Write: the Alphabet",
+              "url": "primary-english/alphabet/watch-and-write/",
+              "more": "Open",
+              "text": [
+                "Watch every letter drawn stroke by stroke, then trace it."
+              ]
+            },
+            {
+              "title": "Primary Activities",
+              "url": "primary-english/activities/",
+              "more": "Open",
+              "text": [
+                "Ten-minute things to do once the letters are steady."
+              ]
+            },
+            {
+              "title": "Short Reading Comprehensions",
+              "url": "primary-english/reading/",
+              "more": "Open",
+              "text": [
+                "The first short passages, with questions."
+              ]
+            },
+            {
+              "title": "Poems",
+              "url": "primary-english/poems/",
+              "more": "Open",
+              "text": [
+                "Rhyme makes sounds easier to hear."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/activities",
       "title": "Primary Activities",
-      "metaTitle": "Primary English Activities | Ten-minute activities for children | RCF English",
+      "metaTitle": "Primary English Activities | Ten-minute activities for children",
       "description": "Practical English activities for children aged roughly six to eleven: speaking, listening, vocabulary, reading and writing games needing no materials and little preparation.",
       "keywords": "primary English activities, classroom activities for children, English games no materials, vocabulary activities, speaking activities primary",
       "kicker": "Primary English",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Fifteen activities that need no materials beyond a pencil and paper, take about ten minutes each, and work with one child or thirty."
       },
@@ -434,7 +702,6 @@
         }
       ]
     },
-
     {
       "slug": "primary-english/poems",
       "title": "Poems",
@@ -443,8 +710,16 @@
       "keywords": "poems for children, nursery rhymes, traditional rhymes, rhyming words, primary English poems, poetry for kids",
       "kicker": "Primary English",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Rhyme teaches a child to hear the inside of a word. That is why poems come before paragraphs."
       },
@@ -523,12 +798,34 @@
           "type": "steps",
           "heading": "Learning a poem by heart",
           "eyebrow": "Four short sessions, not one long one",
-          "intro": ["Learning a few lines by heart gives a child a store of English they own outright. Spread it over four days."],
+          "intro": [
+            "Learning a few lines by heart gives a child a store of English they own outright. Spread it over four days."
+          ],
           "items": [
-            { "title": "Day one: hear it", "text": ["You say the whole poem three or four times. The child only listens. No pressure to join in."] },
-            { "title": "Day two: join in", "text": ["Say it together. Stop before the last word of each line and let the child supply it. The rhyme will help them."] },
-            { "title": "Day three: take turns", "text": ["You say one line, the child says the next. Then swap, so they get the lines they did not have yesterday."] },
-            { "title": "Day four: say it alone", "text": ["The child says the whole poem. Prompt with the first word of a line if they stop; do not say the line for them."] }
+            {
+              "title": "Day one: hear it",
+              "text": [
+                "You say the whole poem three or four times. The child only listens. No pressure to join in."
+              ]
+            },
+            {
+              "title": "Day two: join in",
+              "text": [
+                "Say it together. Stop before the last word of each line and let the child supply it. The rhyme will help them."
+              ]
+            },
+            {
+              "title": "Day three: take turns",
+              "text": [
+                "You say one line, the child says the next. Then swap, so they get the lines they did not have yesterday."
+              ]
+            },
+            {
+              "title": "Day four: say it alone",
+              "text": [
+                "The child says the whole poem. Prompt with the first word of a line if they stop; do not say the line for them."
+              ]
+            }
           ]
         },
         {
@@ -545,15 +842,42 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Sing and Learn: Songs for Grade 2", "url": "primary-english/songs/", "more": "Open", "text": ["Five short songs with the words lighting up in time to the tune."] },
-            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["From four lines of verse to four lines of prose."] },
-            { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["Rhyme and sound activities that mark themselves."] },
-            { "title": "O/L Literature", "url": "ol-literature/", "more": "Open", "text": ["Where this leads, several years from now."] }
+            {
+              "title": "Sing and Learn: Songs for Grade 2",
+              "url": "primary-english/songs/",
+              "more": "Open",
+              "text": [
+                "Five short songs with the words lighting up in time to the tune."
+              ]
+            },
+            {
+              "title": "Short Reading Comprehensions",
+              "url": "primary-english/reading/",
+              "more": "Open",
+              "text": [
+                "From four lines of verse to four lines of prose."
+              ]
+            },
+            {
+              "title": "Interactive Activities and Games",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "Rhyme and sound activities that mark themselves."
+              ]
+            },
+            {
+              "title": "O/L Literature",
+              "url": "ol-literature/",
+              "more": "Open",
+              "text": [
+                "Where this leads, several years from now."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/reading",
       "title": "Short Reading Comprehensions",
@@ -562,8 +886,16 @@
       "keywords": "reading comprehension for children, short passages, primary reading, comprehension questions, English reading practice kids",
       "kicker": "Primary English",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Four passages, getting a little longer each time. Every passage and every question here was written for this site."
       },
@@ -643,12 +975,34 @@
           "heading": "Helping without giving the answer",
           "eyebrow": "For a parent or teacher",
           "variant": "tint",
-          "intro": ["When a child is stuck, the temptation is to tell them. Four questions will nearly always get them there themselves."],
+          "intro": [
+            "When a child is stuck, the temptation is to tell them. Four questions will nearly always get them there themselves."
+          ],
           "items": [
-            { "title": "Where in the passage would we look?", "text": ["Not the answer, but the place. Most wrong answers come from answering out of memory instead of looking."] },
-            { "title": "Read that sentence again, aloud.", "text": ["Reading aloud slows a child down enough to notice what is actually written."] },
-            { "title": "What does the question word want?", "text": ["*Why* wants a reason. *Where* wants a place. *How many* wants a number. Half of all lost marks are answers to a different question."] },
-            { "title": "Now say it as a whole sentence.", "text": ["Once they have the answer in their head, make them say it properly before they write it."] }
+            {
+              "title": "Where in the passage would we look?",
+              "text": [
+                "Not the answer, but the place. Most wrong answers come from answering out of memory instead of looking."
+              ]
+            },
+            {
+              "title": "Read that sentence again, aloud.",
+              "text": [
+                "Reading aloud slows a child down enough to notice what is actually written."
+              ]
+            },
+            {
+              "title": "What does the question word want?",
+              "text": [
+                "*Why* wants a reason. *Where* wants a place. *How many* wants a number. Half of all lost marks are answers to a different question."
+              ]
+            },
+            {
+              "title": "Now say it as a whole sentence.",
+              "text": [
+                "Once they have the answer in their head, make them say it properly before they write it."
+              ]
+            }
           ]
         },
         {
@@ -663,22 +1017,33 @@
         {
           "type": "activities",
           "heading": "A passage that marks itself",
-          "ids": ["primary-reading-1"]
+          "ids": [
+            "primary-reading-1"
+          ]
         }
       ]
     },
-
     {
       "slug": "primary-english/games",
       "title": "Interactive Activities and Games",
-      "metaTitle": "Interactive English Activities and Games | Primary English | RCF English",
+      "metaTitle": "Interactive English Activities and Games | Primary English",
       "description": "Interactive English activities for primary children: letter sounds, first words, rhyming, word order and a short reading passage. Each one marks itself and explains the answer.",
       "keywords": "interactive English games children, primary English activities online, letter sounds game, rhyming game, English quiz for kids",
       "kicker": "Primary English",
       "kind": "page",
-      "scripts": ["quiz"],
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "scripts": [
+        "quiz"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Activities that mark themselves, say why an answer was wrong, and can be started again as often as a child likes."
       },
@@ -696,18 +1061,27 @@
           "type": "activities",
           "heading": "Letters and sounds",
           "eyebrow": "Start here",
-          "ids": ["primary-letter-sounds", "primary-first-words"]
+          "ids": [
+            "primary-letter-sounds",
+            "primary-first-words"
+          ]
         },
         {
           "type": "activities",
           "heading": "Words and rhyme",
           "variant": "tint",
-          "ids": ["primary-rhyming-words", "primary-word-meanings"]
+          "ids": [
+            "primary-rhyming-words",
+            "primary-word-meanings"
+          ]
         },
         {
           "type": "activities",
           "heading": "Sentences and reading",
-          "ids": ["primary-sentence-order", "primary-reading-1"]
+          "ids": [
+            "primary-sentence-order",
+            "primary-reading-1"
+          ]
         },
         {
           "type": "callout",
@@ -723,24 +1097,52 @@
           "heading": "More activities",
           "columns": "3",
           "items": [
-            { "title": "Interactive Learning", "url": "interactive/", "more": "Open", "text": ["Every activity on the site, for every level."] },
-            { "title": "Primary Activities", "url": "primary-english/activities/", "more": "Open", "text": ["Away from the screen: fifteen things to do with paper and a pencil."] },
-            { "title": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "more": "Open", "text": ["English-medium practice for scholarship candidates."] }
+            {
+              "title": "Interactive Learning",
+              "url": "interactive/",
+              "more": "Open",
+              "text": [
+                "Every activity on the site, for every level."
+              ]
+            },
+            {
+              "title": "Primary Activities",
+              "url": "primary-english/activities/",
+              "more": "Open",
+              "text": [
+                "Away from the screen: fifteen things to do with paper and a pencil."
+              ]
+            },
+            {
+              "title": "Grade 5 Scholarship",
+              "url": "primary-english/grade-5-scholarship/",
+              "more": "Open",
+              "text": [
+                "English-medium practice for scholarship candidates."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/grade-5-scholarship",
       "title": "Grade 5 Scholarship",
-      "metaTitle": "Grade 5 Scholarship English | English-medium practice | RCF English",
+      "metaTitle": "Grade 5 Scholarship English | English-medium practice",
       "description": "English-medium language practice for Grade 5 Scholarship candidates: vocabulary, grammar, short comprehension and verbal reasoning, with an honest account of what this site does and does not cover.",
       "keywords": "grade 5 scholarship English, shishyathwa English medium, scholarship exam practice, verbal reasoning primary, grade 5 English practice Sri Lanka",
       "kicker": "Primary English",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "English-medium language practice for children preparing for the Grade 5 Scholarship Examination — and a clear account of the part of it this site can actually help with."
       },
@@ -786,10 +1188,30 @@
           "eyebrow": "Four habits",
           "variant": "tint",
           "items": [
-            { "title": "Read something every day", "text": ["Ten minutes of anything in English. A story, a newspaper page, the back of a packet. Reading widely does more for vocabulary than any word list."] },
-            { "title": "Practise reading the question", "text": ["Most lost marks at this age are answers to a question the child did not read properly. Ask them to say what the question wants before they answer it."] },
-            { "title": "Work to time, but only sometimes", "text": ["Once a week, do a short set against a clock so the feeling is familiar. The rest of the week, work slowly and carefully."] },
-            { "title": "Go back over the wrong ones", "text": ["Doing a hundred new questions teaches less than understanding ten wrong ones. Keep a page of the mistakes that keep coming back."] }
+            {
+              "title": "Read something every day",
+              "text": [
+                "Ten minutes of anything in English. A story, a newspaper page, the back of a packet. Reading widely does more for vocabulary than any word list."
+              ]
+            },
+            {
+              "title": "Practise reading the question",
+              "text": [
+                "Most lost marks at this age are answers to a question the child did not read properly. Ask them to say what the question wants before they answer it."
+              ]
+            },
+            {
+              "title": "Work to time, but only sometimes",
+              "text": [
+                "Once a week, do a short set against a clock so the feeling is familiar. The rest of the week, work slowly and carefully."
+              ]
+            },
+            {
+              "title": "Go back over the wrong ones",
+              "text": [
+                "Doing a hundred new questions teaches less than understanding ten wrong ones. Keep a page of the mistakes that keep coming back."
+              ]
+            }
           ]
         },
         {
@@ -809,16 +1231,40 @@
           "type": "activities",
           "heading": "Practise the English work",
           "eyebrow": "Marks itself and explains each answer",
-          "ids": ["scholarship-english-practice", "primary-word-meanings"]
+          "ids": [
+            "scholarship-english-practice",
+            "primary-word-meanings"
+          ]
         },
         {
           "type": "cards",
           "heading": "Related pages",
           "columns": "3",
           "items": [
-            { "title": "Short Reading Comprehensions", "url": "primary-english/reading/", "more": "Open", "text": ["Four passages with questions, getting longer."] },
-            { "title": "Interactive Activities and Games", "url": "primary-english/games/", "more": "Open", "text": ["All the primary activities in one place."] },
-            { "title": "Past Papers", "url": "past-papers/", "more": "Open", "text": ["Papers for the later examinations, from Grade 10 upwards."] }
+            {
+              "title": "Short Reading Comprehensions",
+              "url": "primary-english/reading/",
+              "more": "Open",
+              "text": [
+                "Four passages with questions, getting longer."
+              ]
+            },
+            {
+              "title": "Interactive Activities and Games",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "All the primary activities in one place."
+              ]
+            },
+            {
+              "title": "Past Papers",
+              "url": "past-papers/",
+              "more": "Open",
+              "text": [
+                "Papers for the later examinations, from Grade 10 upwards."
+              ]
+            }
           ]
         },
         {

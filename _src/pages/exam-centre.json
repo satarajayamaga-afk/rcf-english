@@ -14,17 +14,27 @@
     {
       "slug": "exam-centre",
       "title": "Examination Centre",
-      "metaTitle": "O/L and A/L English Examination Centre: Countdown, Study Timetable, Timer and Weekly Question | RCF English",
+      "metaTitle": "O/L and A/L English Examination Centre: Countdown, Study Timetable, Timer and Weekly Question",
       "description": "Everything for the G.C.E. O/L and A/L English and Literature examinations in one place: syllabus and paper guides, answering technique, common mistakes, model answers, timed practice, a study timetable maker and a weekly question.",
       "keywords": "O/L English exam preparation, A/L General English exam, O/L Literature revision, A/L Literature revision, study timetable, exam countdown Sri Lanka",
       "kicker": "Examination preparation",
       "kind": "page",
-      "scripts": ["exam-tools"],
+      "scripts": [
+        "exam-tools"
+      ],
       "hero": {
         "text": "Choose your examination. Each centre brings together the syllabus, the paper, how to answer, the mistakes that cost marks, model answers and timed practice.",
         "buttons": [
-          { "label": "O/L Examination Centre", "url": "exam-centre/ol/", "style": "btn--accent" },
-          { "label": "A/L Examination Centre", "url": "exam-centre/al/", "style": "btn--ghost-light" }
+          {
+            "label": "O/L Examination Centre",
+            "url": "exam-centre/ol/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "A/L Examination Centre",
+            "url": "exam-centre/al/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -33,8 +43,32 @@
           "heading": "Choose your examination",
           "columns": "2",
           "items": [
-            { "title": "O/L Examination Centre", "url": "exam-centre/ol/", "more": "Open", "text": ["For G.C.E. Ordinary Level English and English Literature candidates, in Grades 10 and 11 and private candidates."], "bullets": ["Paper I and Paper II guides", "Literature answering technique", "Past papers, model answers and a weekly question"] },
-            { "title": "A/L Examination Centre", "url": "exam-centre/al/", "more": "Open", "text": ["For G.C.E. Advanced Level General English and English Literature candidates."], "bullets": ["General English writing and reading", "Critical appreciation and essays", "Past papers, model answers and a weekly question"] }
+            {
+              "title": "O/L Examination Centre",
+              "url": "exam-centre/ol/",
+              "more": "Open",
+              "text": [
+                "For G.C.E. Ordinary Level English and English Literature candidates, in Grades 10 and 11 and private candidates."
+              ],
+              "bullets": [
+                "Paper I and Paper II guides",
+                "Literature answering technique",
+                "Past papers, model answers and a weekly question"
+              ]
+            },
+            {
+              "title": "A/L Examination Centre",
+              "url": "exam-centre/al/",
+              "more": "Open",
+              "text": [
+                "For G.C.E. Advanced Level General English and English Literature candidates."
+              ],
+              "bullets": [
+                "General English writing and reading",
+                "Critical appreciation and essays",
+                "Past papers, model answers and a weekly question"
+              ]
+            }
           ]
         },
         {
@@ -42,19 +76,30 @@
           "id": "timetable",
           "heading": "Make a weekly study timetable",
           "eyebrow": "For any examination",
-          "intro": ["Type your subjects, mark the ones that need extra time, and choose how many sessions you can manage. The timetable gives weaker subjects more sessions and avoids the same subject twice in a day. Your choices stay on this device."],
-          "subjects": ["English", "English Literature", "Mathematics", "Science", "First language", "History", "Religion"]
+          "intro": [
+            "Type your subjects, mark the ones that need extra time, and choose how many sessions you can manage. The timetable gives weaker subjects more sessions and avoids the same subject twice in a day. Your choices stay on this device."
+          ],
+          "subjects": [
+            "English",
+            "English Literature",
+            "Mathematics",
+            "Science",
+            "First language",
+            "History",
+            "Religion"
+          ]
         },
         {
           "type": "exam-timer",
           "id": "timer",
           "heading": "Sit a past paper under time",
           "eyebrow": "Examination timer",
-          "intro": ["Set the time printed on the paper, start the timer, and work without stopping. You will be told at halfway and with ten minutes left, and the clock turns red for the last ten minutes."]
+          "intro": [
+            "Set the time printed on the paper, start the timer, and work without stopping. You will be told at halfway and with ten minutes left, and the clock turns red for the last ten minutes."
+          ]
         }
       ]
     },
-
     {
       "slug": "exam-centre/ol",
       "title": "O/L Examination Centre",
@@ -63,18 +108,41 @@
       "keywords": "O/L English exam preparation, O/L English Paper I, O/L English Paper II, O/L Literature exam, O/L past papers, O/L model answers, O/L study timetable",
       "kicker": "Examination Centre",
       "kind": "page",
-      "scripts": ["exam-tools"],
-      "breadcrumbs": [{ "label": "Examination Centre", "url": "exam-centre/" }],
-      "backTo": { "label": "Examination Centre", "url": "exam-centre/" },
+      "scripts": [
+        "exam-tools"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Examination Centre",
+          "url": "exam-centre/"
+        }
+      ],
+      "backTo": {
+        "label": "Examination Centre",
+        "url": "exam-centre/"
+      },
       "hero": {
         "text": "For Ordinary Level English and English Literature candidates. Work down this page: know the paper, learn how answers are credited, avoid the common mistakes, then practise under time.",
         "buttons": [
-          { "label": "O/L English past papers", "url": "past-papers/?section=grade-11", "style": "btn--accent" },
-          { "label": "Make my timetable", "url": "exam-centre/ol/#timetable", "style": "btn--ghost-light" }
+          {
+            "label": "O/L English past papers",
+            "url": "past-papers/?section=grade-11",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Make my timetable",
+            "url": "exam-centre/ol/#timetable",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
-        { "type": "exam-countdown", "id": "countdown", "heading": "Countdown", "exam": "ol" },
+        {
+          "type": "exam-countdown",
+          "id": "countdown",
+          "heading": "Countdown",
+          "exam": "ol"
+        },
         {
           "type": "question-week",
           "id": "question",
@@ -89,14 +157,70 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "O/L English syllabus", "url": "ol-english/syllabus/", "more": "Open", "text": ["What is examined and how the subject is organised."] },
-            { "title": "Paper I", "url": "ol-english/paper-i/", "more": "Open", "text": ["The shorter tasks: how to approach each section."] },
-            { "title": "Paper II", "url": "ol-english/paper-ii/", "more": "Open", "text": ["The longer writing and reading tasks, and how to plan your time."] },
-            { "title": "O/L Literature syllabus", "url": "ol-literature/syllabus/", "more": "Open", "text": ["The Literature syllabus and the kinds of question set."] },
-            { "title": "Literature texts", "url": "ol-literature/texts/", "more": "Open", "text": ["The texts section, with guides to poetry, short stories, drama and novels."] },
-            { "title": "Grade 10 by term", "url": "resources/?grade=10", "more": "Resource finder", "text": ["Everything for Grade 10, filterable by first, second and third term."] },
-            { "title": "Grade 11 by term", "url": "resources/?grade=11", "more": "Resource finder", "text": ["Everything for Grade 11, filterable by term."] },
-            { "title": "Grade 11 page", "url": "grades/grade-11/", "more": "Open", "text": ["The Grade 11 dashboard, practice activities and listening tests."] }
+            {
+              "title": "O/L English syllabus",
+              "url": "ol-english/syllabus/",
+              "more": "Open",
+              "text": [
+                "What is examined and how the subject is organised."
+              ]
+            },
+            {
+              "title": "Paper I",
+              "url": "ol-english/paper-i/",
+              "more": "Open",
+              "text": [
+                "The shorter tasks: how to approach each section."
+              ]
+            },
+            {
+              "title": "Paper II",
+              "url": "ol-english/paper-ii/",
+              "more": "Open",
+              "text": [
+                "The longer writing and reading tasks, and how to plan your time."
+              ]
+            },
+            {
+              "title": "O/L Literature syllabus",
+              "url": "ol-literature/syllabus/",
+              "more": "Open",
+              "text": [
+                "The Literature syllabus and the kinds of question set."
+              ]
+            },
+            {
+              "title": "Literature texts",
+              "url": "ol-literature/texts/",
+              "more": "Open",
+              "text": [
+                "The texts section, with guides to poetry, short stories, drama and novels."
+              ]
+            },
+            {
+              "title": "Grade 10 by term",
+              "url": "resources/?grade=10",
+              "more": "Resource finder",
+              "text": [
+                "Everything for Grade 10, filterable by first, second and third term."
+              ]
+            },
+            {
+              "title": "Grade 11 by term",
+              "url": "resources/?grade=11",
+              "more": "Resource finder",
+              "text": [
+                "Everything for Grade 11, filterable by term."
+              ]
+            },
+            {
+              "title": "Grade 11 page",
+              "url": "grades/grade-11/",
+              "more": "Open",
+              "text": [
+                "The Grade 11 dashboard, practice activities and listening tests."
+              ]
+            }
           ]
         },
         {
@@ -105,12 +229,54 @@
           "heading": "2. Answering technique",
           "columns": "3",
           "items": [
-            { "title": "Examination techniques", "url": "ol-english/examination-techniques/", "more": "Open", "text": ["Reading the paper, dividing your time, and checking at the end."] },
-            { "title": "Guided writing", "url": "ol-english/guided-writing/", "more": "Open", "text": ["Notices, letters, emails, descriptions and the formats each needs."] },
-            { "title": "Reading comprehension", "url": "ol-english/reading-comprehension/", "more": "Open", "text": ["Finding information, word questions and answers that need evidence."] },
-            { "title": "Context questions", "url": "ol-literature/context-questions/", "more": "Open", "text": ["Who said it, to whom, when, and what it shows."] },
-            { "title": "Developing an answer", "url": "ol-literature/developing-an-answer/", "more": "Open", "text": ["Turning a one-line answer into a full, credited one."] },
-            { "title": "Essay questions", "url": "ol-literature/essay-questions/", "more": "Open", "text": ["Planning and writing a Literature essay under time."] }
+            {
+              "title": "Examination techniques",
+              "url": "ol-english/examination-techniques/",
+              "more": "Open",
+              "text": [
+                "Reading the paper, dividing your time, and checking at the end."
+              ]
+            },
+            {
+              "title": "Guided writing",
+              "url": "ol-english/guided-writing/",
+              "more": "Open",
+              "text": [
+                "Notices, letters, emails, descriptions and the formats each needs."
+              ]
+            },
+            {
+              "title": "Reading comprehension",
+              "url": "ol-english/reading-comprehension/",
+              "more": "Open",
+              "text": [
+                "Finding information, word questions and answers that need evidence."
+              ]
+            },
+            {
+              "title": "Context questions",
+              "url": "ol-literature/context-questions/",
+              "more": "Open",
+              "text": [
+                "Who said it, to whom, when, and what it shows."
+              ]
+            },
+            {
+              "title": "Developing an answer",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Open",
+              "text": [
+                "Turning a one-line answer into a full, credited one."
+              ]
+            },
+            {
+              "title": "Essay questions",
+              "url": "ol-literature/essay-questions/",
+              "more": "Open",
+              "text": [
+                "Planning and writing a Literature essay under time."
+              ]
+            }
           ]
         },
         {
@@ -120,8 +286,22 @@
           "variant": "tint",
           "columns": "2",
           "items": [
-            { "title": "O/L English: common mistakes", "url": "ol-english/common-mistakes/", "more": "Open", "text": ["The errors that cost the most marks in O/L English, and how to fix them."] },
-            { "title": "O/L Literature: common mistakes", "url": "ol-literature/common-mistakes/", "more": "Open", "text": ["Retelling instead of answering, missing evidence, and other costly habits."] }
+            {
+              "title": "O/L English: common mistakes",
+              "url": "ol-english/common-mistakes/",
+              "more": "Open",
+              "text": [
+                "The errors that cost the most marks in O/L English, and how to fix them."
+              ]
+            },
+            {
+              "title": "O/L Literature: common mistakes",
+              "url": "ol-literature/common-mistakes/",
+              "more": "Open",
+              "text": [
+                "Retelling instead of answering, missing evidence, and other costly habits."
+              ]
+            }
           ]
         },
         {
@@ -130,10 +310,38 @@
           "heading": "4. Model answers and how they are credited",
           "columns": "4",
           "items": [
-            { "title": "O/L English model answers", "url": "ol-english/model-answers/", "more": "Open", "text": ["Worked answers to O/L English tasks."] },
-            { "title": "O/L English model questions", "url": "ol-english/model-questions/", "more": "Open", "text": ["Practice questions in the style of the paper."] },
-            { "title": "O/L Literature model answers", "url": "ol-literature/model-answers/", "more": "Open", "text": ["Worked Literature answers."] },
-            { "title": "How Literature answers are marked", "url": "ol-literature/marking-answers/", "more": "Open", "text": ["What earns credit in a Literature answer."] }
+            {
+              "title": "O/L English model answers",
+              "url": "ol-english/model-answers/",
+              "more": "Open",
+              "text": [
+                "Worked answers to O/L English tasks."
+              ]
+            },
+            {
+              "title": "O/L English model questions",
+              "url": "ol-english/model-questions/",
+              "more": "Open",
+              "text": [
+                "Practice questions in the style of the paper."
+              ]
+            },
+            {
+              "title": "O/L Literature model answers",
+              "url": "ol-literature/model-answers/",
+              "more": "Open",
+              "text": [
+                "Worked Literature answers."
+              ]
+            },
+            {
+              "title": "How Literature answers are marked",
+              "url": "ol-literature/marking-answers/",
+              "more": "Open",
+              "text": [
+                "What earns credit in a Literature answer."
+              ]
+            }
           ]
         },
         {
@@ -143,10 +351,38 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Grade 11 past papers", "url": "past-papers/?section=grade-11", "more": "Browse", "text": ["Filter by term, kind of paper and province."] },
-            { "title": "O/L Literature papers", "url": "past-papers/?section=ol-literature", "more": "Browse", "text": ["Literature papers in the paper library."] },
-            { "title": "Listening under test conditions", "url": "listening-lab/?grade=11", "more": "Listening Laboratory", "text": ["Choose Formal test: the passage plays twice only."] },
-            { "title": "Interactive revision", "url": "ol-english/interactive-revision/", "more": "Practise", "text": ["Practice that marks itself and explains each answer."] }
+            {
+              "title": "Grade 11 past papers",
+              "url": "past-papers/?section=grade-11",
+              "more": "Browse",
+              "text": [
+                "Filter by term, kind of paper and province."
+              ]
+            },
+            {
+              "title": "O/L Literature papers",
+              "url": "past-papers/?section=ol-literature",
+              "more": "Browse",
+              "text": [
+                "Literature papers in the paper library."
+              ]
+            },
+            {
+              "title": "Listening under test conditions",
+              "url": "listening-lab/?grade=11",
+              "more": "Listening Laboratory",
+              "text": [
+                "Choose Formal test: the passage plays twice only."
+              ]
+            },
+            {
+              "title": "Interactive revision",
+              "url": "ol-english/interactive-revision/",
+              "more": "Practise",
+              "text": [
+                "Practice that marks itself and explains each answer."
+              ]
+            }
           ]
         },
         {
@@ -154,39 +390,73 @@
           "id": "timer",
           "heading": "Examination timer",
           "eyebrow": "Use with any past paper",
-          "intro": ["Open a past paper, set the time printed on it, and start. You will be told at halfway and with ten minutes left."]
+          "intro": [
+            "Open a past paper, set the time printed on it, and start. You will be told at halfway and with ten minutes left."
+          ]
         },
         {
           "type": "study-timetable",
           "id": "timetable",
           "heading": "My O/L study timetable",
           "eyebrow": "Plan your week",
-          "intro": ["Edit the list to match your own subjects, mark the ones that need extra time, and print the result. Your choices stay on this device."],
-          "subjects": ["English", "English Literature", "Mathematics", "Science", "First language", "History", "Religion"]
+          "intro": [
+            "Edit the list to match your own subjects, mark the ones that need extra time, and print the result. Your choices stay on this device."
+          ],
+          "subjects": [
+            "English",
+            "English Literature",
+            "Mathematics",
+            "Science",
+            "First language",
+            "History",
+            "Religion"
+          ]
         }
       ]
     },
-
     {
       "slug": "exam-centre/al",
       "title": "A/L Examination Centre",
-      "metaTitle": "A/L General English and Literature Examination Centre | RCF English",
+      "metaTitle": "A/L General English and Literature Examination Centre",
       "description": "G.C.E. A/L General English and English Literature preparation in one place: countdown, syllabus and examination guidance, answering technique, common mistakes, model answers, past papers, timed practice and a Question of the Week.",
       "keywords": "A/L General English exam preparation, A/L English Literature exam, critical appreciation, A/L past papers, A/L model answers, A/L study timetable",
       "kicker": "Examination Centre",
       "kind": "page",
-      "scripts": ["exam-tools"],
-      "breadcrumbs": [{ "label": "Examination Centre", "url": "exam-centre/" }],
-      "backTo": { "label": "Examination Centre", "url": "exam-centre/" },
+      "scripts": [
+        "exam-tools"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Examination Centre",
+          "url": "exam-centre/"
+        }
+      ],
+      "backTo": {
+        "label": "Examination Centre",
+        "url": "exam-centre/"
+      },
       "hero": {
         "text": "For Advanced Level General English and English Literature candidates. Know what is examined, learn how answers earn credit, avoid the common mistakes, then practise under time.",
         "buttons": [
-          { "label": "A/L Literature papers", "url": "past-papers/?section=al-literature", "style": "btn--accent" },
-          { "label": "Make my timetable", "url": "exam-centre/al/#timetable", "style": "btn--ghost-light" }
+          {
+            "label": "A/L Literature papers",
+            "url": "past-papers/?section=al-literature",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Make my timetable",
+            "url": "exam-centre/al/#timetable",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
-        { "type": "exam-countdown", "id": "countdown", "heading": "Countdown", "exam": "al" },
+        {
+          "type": "exam-countdown",
+          "id": "countdown",
+          "heading": "Countdown",
+          "exam": "al"
+        },
         {
           "type": "question-week",
           "id": "question",
@@ -201,10 +471,38 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "A/L General English", "url": "general-english/", "more": "Open", "text": ["What the subject is, what it examines, and where to start."] },
-            { "title": "A/L Literature syllabus", "url": "al-literature/syllabus/", "more": "Open", "text": ["The syllabus and how the papers are organised."] },
-            { "title": "Prescribed texts", "url": "al-literature/prescribed-texts/", "more": "Open", "text": ["The texts section for A/L Literature."] },
-            { "title": "Examination guidance", "url": "al-literature/examination-guidance/", "more": "Open", "text": ["How the Literature examination works and what examiners look for."] }
+            {
+              "title": "A/L General English",
+              "url": "general-english/",
+              "more": "Open",
+              "text": [
+                "What the subject is, what it examines, and where to start."
+              ]
+            },
+            {
+              "title": "A/L Literature syllabus",
+              "url": "al-literature/syllabus/",
+              "more": "Open",
+              "text": [
+                "The syllabus and how the papers are organised."
+              ]
+            },
+            {
+              "title": "Prescribed texts",
+              "url": "al-literature/prescribed-texts/",
+              "more": "Open",
+              "text": [
+                "The texts section for A/L Literature."
+              ]
+            },
+            {
+              "title": "Examination guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open",
+              "text": [
+                "How the Literature examination works and what examiners look for."
+              ]
+            }
           ]
         },
         {
@@ -213,12 +511,54 @@
           "heading": "2. Answering technique",
           "columns": "3",
           "items": [
-            { "title": "General English writing", "url": "general-english/writing/", "more": "Open", "text": ["Letters, essays, reports and summaries."] },
-            { "title": "General English reading", "url": "general-english/reading/", "more": "Open", "text": ["Comprehension, inference and vocabulary in context."] },
-            { "title": "Critical appreciation", "url": "al-literature/critical-appreciation/", "more": "Open", "text": ["Writing about an unseen poem or passage."] },
-            { "title": "Answer development", "url": "al-literature/answer-development/", "more": "Open", "text": ["Building a point into analysis that earns credit."] },
-            { "title": "Essay questions", "url": "al-literature/essay-questions/", "more": "Open", "text": ["Planning and arguing a Literature essay."] },
-            { "title": "Context questions", "url": "al-literature/context-questions/", "more": "Open", "text": ["Placing an extract and explaining its significance."] }
+            {
+              "title": "General English writing",
+              "url": "general-english/writing/",
+              "more": "Open",
+              "text": [
+                "Letters, essays, reports and summaries."
+              ]
+            },
+            {
+              "title": "General English reading",
+              "url": "general-english/reading/",
+              "more": "Open",
+              "text": [
+                "Comprehension, inference and vocabulary in context."
+              ]
+            },
+            {
+              "title": "Critical appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open",
+              "text": [
+                "Writing about an unseen poem or passage."
+              ]
+            },
+            {
+              "title": "Answer development",
+              "url": "al-literature/answer-development/",
+              "more": "Open",
+              "text": [
+                "Building a point into analysis that earns credit."
+              ]
+            },
+            {
+              "title": "Essay questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open",
+              "text": [
+                "Planning and arguing a Literature essay."
+              ]
+            },
+            {
+              "title": "Context questions",
+              "url": "al-literature/context-questions/",
+              "more": "Open",
+              "text": [
+                "Placing an extract and explaining its significance."
+              ]
+            }
           ]
         },
         {
@@ -228,8 +568,22 @@
           "variant": "tint",
           "columns": "2",
           "items": [
-            { "title": "General English: common mistakes", "url": "general-english/common-mistakes/", "more": "Open", "text": ["The grammar and usage errors that recur most often."] },
-            { "title": "A/L Literature: common mistakes", "url": "al-literature/common-mistakes/", "more": "Open", "text": ["Narration instead of analysis, unsupported claims and other costly habits."] }
+            {
+              "title": "General English: common mistakes",
+              "url": "general-english/common-mistakes/",
+              "more": "Open",
+              "text": [
+                "The grammar and usage errors that recur most often."
+              ]
+            },
+            {
+              "title": "A/L Literature: common mistakes",
+              "url": "al-literature/common-mistakes/",
+              "more": "Open",
+              "text": [
+                "Narration instead of analysis, unsupported claims and other costly habits."
+              ]
+            }
           ]
         },
         {
@@ -238,9 +592,30 @@
           "heading": "4. Model answers and self-assessment",
           "columns": "3",
           "items": [
-            { "title": "A/L Literature model answers", "url": "al-literature/model-answers/", "more": "Open", "text": ["Worked Literature answers with commentary."] },
-            { "title": "General English self-assessment", "url": "general-english/self-assessment/", "more": "Open", "text": ["Check where you stand before you plan revision."] },
-            { "title": "Assessment rubrics", "url": "teacher-resources/rubrics/", "more": "Open", "text": ["Classroom rubrics for writing and Literature answers you can use to check your own work."] }
+            {
+              "title": "A/L Literature model answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open",
+              "text": [
+                "Worked Literature answers with commentary."
+              ]
+            },
+            {
+              "title": "General English self-assessment",
+              "url": "general-english/self-assessment/",
+              "more": "Open",
+              "text": [
+                "Check where you stand before you plan revision."
+              ]
+            },
+            {
+              "title": "Assessment rubrics",
+              "url": "teacher-resources/rubrics/",
+              "more": "Open",
+              "text": [
+                "Classroom rubrics for writing and Literature answers you can use to check your own work."
+              ]
+            }
           ]
         },
         {
@@ -250,9 +625,30 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "A/L Literature papers", "url": "past-papers/?section=al-literature", "more": "Browse", "text": ["Past papers and marking material in the paper library."] },
-            { "title": "General English practice", "url": "general-english/interactive-practice/", "more": "Practise", "text": ["Practice that marks itself and explains each answer."] },
-            { "title": "All papers", "url": "past-papers/", "more": "Paper library", "text": ["Browse the full library by section, term, province and year."] }
+            {
+              "title": "A/L Literature papers",
+              "url": "past-papers/?section=al-literature",
+              "more": "Browse",
+              "text": [
+                "Past papers and marking material in the paper library."
+              ]
+            },
+            {
+              "title": "General English practice",
+              "url": "general-english/interactive-practice/",
+              "more": "Practise",
+              "text": [
+                "Practice that marks itself and explains each answer."
+              ]
+            },
+            {
+              "title": "All papers",
+              "url": "past-papers/",
+              "more": "Paper library",
+              "text": [
+                "Browse the full library by section, term, province and year."
+              ]
+            }
           ]
         },
         {
@@ -260,15 +656,24 @@
           "id": "timer",
           "heading": "Examination timer",
           "eyebrow": "Use with any past paper",
-          "intro": ["Open a past paper, set the time printed on it, and start. You will be told at halfway and with ten minutes left."]
+          "intro": [
+            "Open a past paper, set the time printed on it, and start. You will be told at halfway and with ten minutes left."
+          ]
         },
         {
           "type": "study-timetable",
           "id": "timetable",
           "heading": "My A/L study timetable",
           "eyebrow": "Plan your week",
-          "intro": ["Replace the list with your own subjects, mark the ones that need extra time, and print the result. Your choices stay on this device."],
-          "subjects": ["General English", "English Literature", "My second subject", "My third subject"]
+          "intro": [
+            "Replace the list with your own subjects, mark the ones that need extra time, and print the result. Your choices stay on this device."
+          ],
+          "subjects": [
+            "General English",
+            "English Literature",
+            "My second subject",
+            "My third subject"
+          ]
         }
       ]
     }

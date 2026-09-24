@@ -1,11 +1,10 @@
 {
   "_comment": "AQA GCSE English Language 8700. SOURCE OF FACTS: paper titles, durations, section marks, per-question marks, AO mapping and the timing advice printed on the paper were read from AQA's own published documents - the specification at a glance and scheme of assessment pages on aqa.org.uk, and the specimen question papers and specimen mark schemes AQA-87001-SQP-CR, AQA-87001-SMS, AQA-87002-SQP and AQA-87002-SMS on filestore.aqa.org.uk. Per-question marks were confirmed from the top mark band of each level-marked question in the specimen mark schemes, and cross-checked against the section totals: Paper 1 is 4+8+8+20=40, Paper 2 is 4+8+12+16=40. AQA publishes reading and section timings on the paper itself; it does NOT publish a per-question time, so any per-question split on these pages is described as an RCF recommendation, never as AQA's. No AQA question, source text or mark scheme wording is reproduced.",
-
   "pages": [
     {
       "slug": "global-english/gcse/aqa",
       "title": "AQA GCSE English Language",
-      "metaTitle": "AQA GCSE English Language 8700: Papers, Marks and Revision | RCF English",
+      "metaTitle": "AQA GCSE English Language 8700: Papers, Marks and Revision",
       "description": "AQA GCSE English Language 8700 explained: both papers, every question, the marks, the timings printed on the paper, and how to revise for each one.",
       "keywords": "AQA English Language, AQA GCSE English Language 8700, AQA English Language paper 1, AQA English Language paper 2, GCSE English Language revision",
       "kicker": "GCSE English",
@@ -14,15 +13,32 @@
       "resourceType": "guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        }
       ],
-      "backTo": { "label": "GCSE English", "url": "global-english/gcse/" },
+      "backTo": {
+        "label": "GCSE English",
+        "url": "global-english/gcse/"
+      },
       "hero": {
         "text": "Two papers, ten questions, 160 marks. No coursework and no set texts to learn - every source is unseen. That makes this a skills examination, and skills can be practised.",
         "buttons": [
-          { "label": "Paper 1", "url": "global-english/gcse/aqa/paper-1/", "style": "btn--accent" },
-          { "label": "Paper 2", "url": "global-english/gcse/aqa/paper-2/", "style": "btn--ghost-light" }
+          {
+            "label": "Paper 1",
+            "url": "global-english/gcse/aqa/paper-1/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Paper 2",
+            "url": "global-english/gcse/aqa/paper-2/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -45,18 +61,62 @@
           "heading": "The two papers at a glance",
           "level": "h2",
           "caption": "From AQA's specification at a glance for 8700 and the specimen question papers.",
-          "columns": ["", "Paper 1", "Paper 2"],
+          "columns": [
+            "",
+            "Paper 1",
+            "Paper 2"
+          ],
           "rows": [
-            ["Title", "Explorations in Creative Reading and Writing", "Writers' Viewpoints and Perspectives"],
-            ["Time", "1 hour 45 minutes", "1 hour 45 minutes"],
-            ["Marks", "80", "80"],
-            ["Weighting", "50% of the GCSE", "50% of the GCSE"],
-            ["Reading sources", "One literature fiction text, 20th or 21st century", "Two linked sources from different centuries: one 19th century, one 20th or 21st century, non-fiction and literary non-fiction"],
-            ["Section A: Reading", "40 marks, four questions", "40 marks, four questions"],
-            ["Section B: Writing", "40 marks, one question", "40 marks, one question"],
-            ["Writing task", "Descriptive or narrative, from a choice", "Present a point of view, in a stated form"],
-            ["Reading AOs", "AO1, AO2, AO4", "AO1, AO2, AO3"],
-            ["Writing AOs", "AO5, AO6", "AO5, AO6"]
+            [
+              "Title",
+              "Explorations in Creative Reading and Writing",
+              "Writers' Viewpoints and Perspectives"
+            ],
+            [
+              "Time",
+              "1 hour 45 minutes",
+              "1 hour 45 minutes"
+            ],
+            [
+              "Marks",
+              "80",
+              "80"
+            ],
+            [
+              "Weighting",
+              "50% of the GCSE",
+              "50% of the GCSE"
+            ],
+            [
+              "Reading sources",
+              "One literature fiction text, 20th or 21st century",
+              "Two linked sources from different centuries: one 19th century, one 20th or 21st century, non-fiction and literary non-fiction"
+            ],
+            [
+              "Section A: Reading",
+              "40 marks, four questions",
+              "40 marks, four questions"
+            ],
+            [
+              "Section B: Writing",
+              "40 marks, one question",
+              "40 marks, one question"
+            ],
+            [
+              "Writing task",
+              "Descriptive or narrative, from a choice",
+              "Present a point of view, in a stated form"
+            ],
+            [
+              "Reading AOs",
+              "AO1, AO2, AO4",
+              "AO1, AO2, AO3"
+            ],
+            [
+              "Writing AOs",
+              "AO5, AO6",
+              "AO5, AO6"
+            ]
           ]
         },
         {
@@ -64,13 +124,49 @@
           "heading": "Every question and what it is worth",
           "level": "h2",
           "caption": "Marks confirmed from the top band of each question in AQA's specimen mark schemes. Section A totals 40 on both papers.",
-          "columns": ["Q", "Paper 1", "Marks", "Paper 2", "Marks"],
+          "columns": [
+            "Q",
+            "Paper 1",
+            "Marks",
+            "Paper 2",
+            "Marks"
+          ],
           "rows": [
-            ["1", "List four things from a short section of the source", "4", "Choose four true statements from a list of eight", "4"],
-            ["2", "How the writer uses language in a given extract", "8", "Summary of differences or similarities, using both sources", "8"],
-            ["3", "How the writer has structured the whole text", "8", "How the writer of one source uses language", "12"],
-            ["4", "Evaluate: to what extent do you agree with a statement", "20", "Compare how the two writers convey their attitudes", "16"],
-            ["5", "Descriptive or narrative writing", "40", "Write to present a point of view", "40"]
+            [
+              "1",
+              "List four things from a short section of the source",
+              "4",
+              "Choose four true statements from a list of eight",
+              "4"
+            ],
+            [
+              "2",
+              "How the writer uses language in a given extract",
+              "8",
+              "Summary of differences or similarities, using both sources",
+              "8"
+            ],
+            [
+              "3",
+              "How the writer has structured the whole text",
+              "8",
+              "How the writer of one source uses language",
+              "12"
+            ],
+            [
+              "4",
+              "Evaluate: to what extent do you agree with a statement",
+              "20",
+              "Compare how the two writers convey their attitudes",
+              "16"
+            ],
+            [
+              "5",
+              "Descriptive or narrative writing",
+              "40",
+              "Write to present a point of view",
+              "40"
+            ]
           ]
         },
         {
@@ -134,18 +230,102 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Paper 1 overview", "url": "global-english/gcse/aqa/paper-1/", "more": "Open", "text": ["The fiction reading paper and the creative writing task, section by section."] },
-            { "title": "Paper 1 question by question", "url": "global-english/gcse/aqa/paper-1/questions/", "more": "Open", "text": ["Questions 1 to 4: purpose, marks, method, worked example and practice."] },
-            { "title": "Paper 1 creative writing", "url": "global-english/gcse/aqa/paper-1/creative-writing/", "more": "Open", "text": ["Question 5: description and narrative, and how the 24 and 16 marks are earned."] },
-            { "title": "Paper 2 overview", "url": "global-english/gcse/aqa/paper-2/", "more": "Open", "text": ["Two non-fiction sources from different centuries, and the viewpoint writing task."] },
-            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "more": "Open", "text": ["Questions 1 to 4, including the 12-mark language question and the 16-mark comparison."] },
-            { "title": "Paper 2 viewpoint writing", "url": "global-english/gcse/aqa/paper-2/writing/", "more": "Open", "text": ["Question 5: articles, letters, speeches and essays that argue a case."] },
-            { "title": "Language analysis techniques", "url": "global-english/gcse/aqa/language-analysis/", "more": "Open", "text": ["What to notice, what to name, and how to write about effect."] },
-            { "title": "Comparing writers' viewpoints", "url": "global-english/gcse/aqa/comparing-viewpoints/", "more": "Open", "text": ["The method for the 16-mark comparison question."] },
-            { "title": "Planning and structuring answers", "url": "global-english/gcse/aqa/planning-answers/", "more": "Open", "text": ["Paragraph shapes that work for each question type."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "more": "Open", "text": ["The errors that cost the most marks, and how to stop making them."] },
-            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "more": "Open", "text": ["How to revise a skills examination with no set texts."] },
-            { "title": "Past papers and model papers", "url": "global-english/gcse/aqa/papers/", "more": "Open", "text": ["Official AQA papers and mark schemes, plus the original RCF model paper."] }
+            {
+              "title": "Paper 1 overview",
+              "url": "global-english/gcse/aqa/paper-1/",
+              "more": "Open",
+              "text": [
+                "The fiction reading paper and the creative writing task, section by section."
+              ]
+            },
+            {
+              "title": "Paper 1 question by question",
+              "url": "global-english/gcse/aqa/paper-1/questions/",
+              "more": "Open",
+              "text": [
+                "Questions 1 to 4: purpose, marks, method, worked example and practice."
+              ]
+            },
+            {
+              "title": "Paper 1 creative writing",
+              "url": "global-english/gcse/aqa/paper-1/creative-writing/",
+              "more": "Open",
+              "text": [
+                "Question 5: description and narrative, and how the 24 and 16 marks are earned."
+              ]
+            },
+            {
+              "title": "Paper 2 overview",
+              "url": "global-english/gcse/aqa/paper-2/",
+              "more": "Open",
+              "text": [
+                "Two non-fiction sources from different centuries, and the viewpoint writing task."
+              ]
+            },
+            {
+              "title": "Paper 2 question by question",
+              "url": "global-english/gcse/aqa/paper-2/questions/",
+              "more": "Open",
+              "text": [
+                "Questions 1 to 4, including the 12-mark language question and the 16-mark comparison."
+              ]
+            },
+            {
+              "title": "Paper 2 viewpoint writing",
+              "url": "global-english/gcse/aqa/paper-2/writing/",
+              "more": "Open",
+              "text": [
+                "Question 5: articles, letters, speeches and essays that argue a case."
+              ]
+            },
+            {
+              "title": "Language analysis techniques",
+              "url": "global-english/gcse/aqa/language-analysis/",
+              "more": "Open",
+              "text": [
+                "What to notice, what to name, and how to write about effect."
+              ]
+            },
+            {
+              "title": "Comparing writers' viewpoints",
+              "url": "global-english/gcse/aqa/comparing-viewpoints/",
+              "more": "Open",
+              "text": [
+                "The method for the 16-mark comparison question."
+              ]
+            },
+            {
+              "title": "Planning and structuring answers",
+              "url": "global-english/gcse/aqa/planning-answers/",
+              "more": "Open",
+              "text": [
+                "Paragraph shapes that work for each question type."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "more": "Open",
+              "text": [
+                "The errors that cost the most marks, and how to stop making them."
+              ]
+            },
+            {
+              "title": "Revision strategies",
+              "url": "global-english/gcse/aqa/revision/",
+              "more": "Open",
+              "text": [
+                "How to revise a skills examination with no set texts."
+              ]
+            },
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "more": "Open",
+              "text": [
+                "Official AQA papers and mark schemes, plus the original RCF model paper."
+              ]
+            }
           ]
         },
         {
@@ -197,18 +377,35 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards and their specification codes."] },
-            { "title": "AQA past papers and model papers", "url": "global-english/gcse/aqa/papers/", "text": ["Official AQA materials and the RCF practice paper."] },
-            { "title": "Global English", "url": "global-english/", "text": ["Every international qualification covered on this site."] }
+            {
+              "title": "GCSE English overview",
+              "url": "global-english/gcse/",
+              "text": [
+                "All four boards and their specification codes."
+              ]
+            },
+            {
+              "title": "AQA past papers and model papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "text": [
+                "Official AQA materials and the RCF practice paper."
+              ]
+            },
+            {
+              "title": "Global English",
+              "url": "global-english/",
+              "text": [
+                "Every international qualification covered on this site."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/paper-1",
       "title": "AQA English Language Paper 1",
-      "metaTitle": "AQA English Language Paper 1: Structure, Marks and Timing | RCF English",
+      "metaTitle": "AQA English Language Paper 1: Structure, Marks and Timing",
       "description": "AQA GCSE English Language Paper 1 explained: the fiction source, the four reading questions, the creative writing task, and how to use the 1 hour 45 minutes.",
       "keywords": "AQA English Language Paper 1, AQA paper 1 structure, explorations in creative reading and writing, AQA paper 1 timing, AQA paper 1 marks",
       "kicker": "AQA GCSE English Language",
@@ -217,11 +414,23 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "One unseen fiction extract, four reading questions worth 40 marks, and one piece of your own writing worth another 40. The reading half rewards noticing; the writing half rewards planning."
       },
@@ -235,13 +444,43 @@
           "heading": "What the paper looks like",
           "level": "h2",
           "caption": "Marks confirmed from the top band of each question in AQA's specimen mark scheme for 8700/1.",
-          "columns": ["Question", "What it asks", "AO", "Marks"],
+          "columns": [
+            "Question",
+            "What it asks",
+            "AO",
+            "Marks"
+          ],
           "rows": [
-            ["1", "List four things about a stated topic, from a short numbered section of the source", "AO1", "4"],
-            ["2", "How does the writer use language here to achieve a particular effect?", "AO2", "8"],
-            ["3", "How has the writer structured the text to interest you as a reader?", "AO2", "8"],
-            ["4", "A statement about the second part of the source. To what extent do you agree?", "AO4", "20"],
-            ["5", "Write a description suggested by a picture, or the opening of a story", "AO5, AO6", "40"]
+            [
+              "1",
+              "List four things about a stated topic, from a short numbered section of the source",
+              "AO1",
+              "4"
+            ],
+            [
+              "2",
+              "How does the writer use language here to achieve a particular effect?",
+              "AO2",
+              "8"
+            ],
+            [
+              "3",
+              "How has the writer structured the text to interest you as a reader?",
+              "AO2",
+              "8"
+            ],
+            [
+              "4",
+              "A statement about the second part of the source. To what extent do you agree?",
+              "AO4",
+              "20"
+            ],
+            [
+              "5",
+              "Write a description suggested by a picture, or the opening of a story",
+              "AO5, AO6",
+              "40"
+            ]
           ]
         },
         {
@@ -251,15 +490,21 @@
           "items": [
             {
               "title": "First 15 minutes: read (AQA's advice)",
-              "text": ["The paper tells you to spend about 15 minutes reading the source and all five questions. Read the questions first, then the source. You will read it differently once you know that Question 4 is about the second half."]
+              "text": [
+                "The paper tells you to spend about 15 minutes reading the source and all five questions. Read the questions first, then the source. You will read it differently once you know that Question 4 is about the second half."
+              ]
             },
             {
               "title": "Next 45 minutes: Section A (AQA's advice)",
-              "text": ["Forty marks. An RCF suggestion for splitting it: about 5 minutes on Question 1, 10 on Question 2, 10 on Question 3 and 20 on Question 4. AQA does not publish per-question times, so treat this as a guide, not a rule."]
+              "text": [
+                "Forty marks. An RCF suggestion for splitting it: about 5 minutes on Question 1, 10 on Question 2, 10 on Question 3 and 20 on Question 4. AQA does not publish per-question times, so treat this as a guide, not a rule."
+              ]
             },
             {
               "title": "Last 45 minutes: Section B (AQA's advice)",
-              "text": ["Forty marks for one piece of writing. Plan for five minutes, write for thirty-five, and keep five to check. The plan is what protects the 24 content and organisation marks."]
+              "text": [
+                "Forty marks for one piece of writing. Plan for five minutes, write for thirty-five, and keep five to check. The plan is what protects the 24 content and organisation marks."
+              ]
             }
           ]
         },
@@ -286,7 +531,9 @@
           "type": "checklist",
           "heading": "Before you turn over",
           "level": "h2",
-          "text": ["Four habits that cost nothing and protect marks."],
+          "text": [
+            "Four habits that cost nothing and protect marks."
+          ],
           "items": [
             "Read the questions before the source, so you know what to look for.",
             "Underline the **line numbers** in each question. Questions 1 and 2 send you to specific lines, and answering from the wrong part of the text earns nothing.",
@@ -299,18 +546,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Paper 1 question by question", "url": "global-english/gcse/aqa/paper-1/questions/", "text": ["Questions 1 to 4 with methods, worked examples and practice."] },
-            { "title": "Paper 1 creative writing", "url": "global-english/gcse/aqa/paper-1/creative-writing/", "text": ["Question 5, and the 24 plus 16 mark split."] },
-            { "title": "RCF Model Paper 1", "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/", "text": ["An original practice paper in the Paper 1 format."] }
+            {
+              "title": "Paper 1 question by question",
+              "url": "global-english/gcse/aqa/paper-1/questions/",
+              "text": [
+                "Questions 1 to 4 with methods, worked examples and practice."
+              ]
+            },
+            {
+              "title": "Paper 1 creative writing",
+              "url": "global-english/gcse/aqa/paper-1/creative-writing/",
+              "text": [
+                "Question 5, and the 24 plus 16 mark split."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 1",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/",
+              "text": [
+                "An original practice paper in the Paper 1 format."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/paper-2",
       "title": "AQA English Language Paper 2",
-      "metaTitle": "AQA English Language Paper 2: Structure, Marks and Timing | RCF English",
+      "metaTitle": "AQA English Language Paper 2: Structure, Marks and Timing",
       "description": "AQA GCSE English Language Paper 2 explained: two non-fiction sources from different centuries, the four reading questions, and the viewpoint writing task.",
       "keywords": "AQA English Language Paper 2, writers viewpoints and perspectives, AQA paper 2 structure, AQA paper 2 question 4, AQA paper 2 marks",
       "kicker": "AQA GCSE English Language",
@@ -319,11 +583,23 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "Two sources, written a century or more apart, on the same broad subject. Three of the four reading questions ask you to hold both in your head at once."
       },
@@ -337,13 +613,43 @@
           "heading": "What the paper looks like",
           "level": "h2",
           "caption": "Marks confirmed from the top band of each question in AQA's specimen mark scheme for 8700/2.",
-          "columns": ["Question", "What it asks", "AO", "Marks"],
+          "columns": [
+            "Question",
+            "What it asks",
+            "AO",
+            "Marks"
+          ],
           "rows": [
-            ["1", "Choose four true statements from a list of eight, about a numbered section of Source A", "AO1", "4"],
-            ["2", "Write a summary of the differences or similarities, using details from both sources", "AO1", "8"],
-            ["3", "How does the writer of one named source use language for a stated purpose?", "AO2", "12"],
-            ["4", "Compare how the two writers convey their different attitudes", "AO3", "16"],
-            ["5", "Write to present your point of view, in a stated form", "AO5, AO6", "40"]
+            [
+              "1",
+              "Choose four true statements from a list of eight, about a numbered section of Source A",
+              "AO1",
+              "4"
+            ],
+            [
+              "2",
+              "Write a summary of the differences or similarities, using details from both sources",
+              "AO1",
+              "8"
+            ],
+            [
+              "3",
+              "How does the writer of one named source use language for a stated purpose?",
+              "AO2",
+              "12"
+            ],
+            [
+              "4",
+              "Compare how the two writers convey their different attitudes",
+              "AO3",
+              "16"
+            ],
+            [
+              "5",
+              "Write to present your point of view, in a stated form",
+              "AO5, AO6",
+              "40"
+            ]
           ]
         },
         {
@@ -363,15 +669,21 @@
           "items": [
             {
               "title": "First 15 minutes: read both sources (AQA's advice)",
-              "text": ["The paper advises about 15 minutes reading the sources and all five questions. With two sources this matters more than on Paper 1. As you read the second, note where it agrees and disagrees with the first - that is Question 4 already half planned."]
+              "text": [
+                "The paper advises about 15 minutes reading the sources and all five questions. With two sources this matters more than on Paper 1. As you read the second, note where it agrees and disagrees with the first - that is Question 4 already half planned."
+              ]
             },
             {
               "title": "Next 45 minutes: Section A (AQA's advice)",
-              "text": ["An RCF suggestion for the split: about 5 minutes on Question 1, 8 on Question 2, 12 on Question 3 and 20 on Question 4. AQA gives the section time and leaves the division to you."]
+              "text": [
+                "An RCF suggestion for the split: about 5 minutes on Question 1, 8 on Question 2, 12 on Question 3 and 20 on Question 4. AQA gives the section time and leaves the division to you."
+              ]
             },
             {
               "title": "Last 45 minutes: Section B (AQA's advice)",
-              "text": ["Forty marks. Five minutes planning your argument, thirty-five writing, five checking. Decide your line of argument before you start - a piece that changes its mind halfway loses organisation marks."]
+              "text": [
+                "Forty marks. Five minutes planning your argument, thirty-five writing, five checking. Decide your line of argument before you start - a piece that changes its mind halfway loses organisation marks."
+              ]
             }
           ]
         },
@@ -404,9 +716,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "text": ["Questions 1 to 4 with methods, worked examples and practice."] },
-            { "title": "Paper 2 viewpoint writing", "url": "global-english/gcse/aqa/paper-2/writing/", "text": ["Question 5: articles, letters, speeches and essays."] },
-            { "title": "Comparing writers' viewpoints", "url": "global-english/gcse/aqa/comparing-viewpoints/", "text": ["The method for the 16-mark comparison."] }
+            {
+              "title": "Paper 2 question by question",
+              "url": "global-english/gcse/aqa/paper-2/questions/",
+              "text": [
+                "Questions 1 to 4 with methods, worked examples and practice."
+              ]
+            },
+            {
+              "title": "Paper 2 viewpoint writing",
+              "url": "global-english/gcse/aqa/paper-2/writing/",
+              "text": [
+                "Question 5: articles, letters, speeches and essays."
+              ]
+            },
+            {
+              "title": "Comparing writers' viewpoints",
+              "url": "global-english/gcse/aqa/comparing-viewpoints/",
+              "text": [
+                "The method for the 16-mark comparison."
+              ]
+            }
           ]
         }
       ]

@@ -1,11 +1,10 @@
 {
   "_comment": "AQA 8700 skills pages: language analysis, comparing viewpoints, planning, common mistakes, revision. Marks and AO references verified from AQA's specification, scheme of assessment and specimen mark schemes. All extracts, practice tasks and model answers are original RCF English work.",
-
   "pages": [
     {
       "slug": "global-english/gcse/aqa/language-analysis",
       "title": "Language Analysis Techniques",
-      "metaTitle": "GCSE Language Analysis: How to Write About Effect | RCF English",
+      "metaTitle": "GCSE Language Analysis: How to Write About Effect",
       "description": "How to analyse language for AQA GCSE English Language: what to notice, which terms to use, and how to write about effect instead of spotting techniques.",
       "keywords": "GCSE language analysis, how to analyse language GCSE, language techniques GCSE English, AQA language question, writing about effect GCSE",
       "kicker": "AQA GCSE English Language",
@@ -14,11 +13,23 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "The mark is not for naming the technique. It is for explaining what the technique does to a reader - which is why a student who knows twenty terms can still be stuck in the middle band."
       },
@@ -53,27 +64,37 @@
             {
               "heading": "1. Verbs",
               "level": "h3",
-              "text": ["The most under-used evidence at GCSE. Verbs carry force, speed and intention. *The frost had taken the field* makes the frost an invader; *the frost had covered the field* makes it weather."]
+              "text": [
+                "The most under-used evidence at GCSE. Verbs carry force, speed and intention. *The frost had taken the field* makes the frost an invader; *the frost had covered the field* makes it weather."
+              ]
             },
             {
               "heading": "2. Unexpected pairings",
               "level": "h3",
-              "text": ["A word that does not usually belong with its neighbour is always deliberate. *A resentful relationship with rain* attaches an emotion to weather and a grudge to the writer, in four words."]
+              "text": [
+                "A word that does not usually belong with its neighbour is always deliberate. *A resentful relationship with rain* attaches an emotion to weather and a grudge to the writer, in four words."
+              ]
             },
             {
               "heading": "3. Sentence length and shape",
               "level": "h3",
-              "text": ["A short sentence after long ones lands. A very long sentence can enact tiredness, accumulation or panic. Sentence forms are one of the three bullet prompts AQA prints under its Paper 1 language question, so they are explicitly invited."]
+              "text": [
+                "A short sentence after long ones lands. A very long sentence can enact tiredness, accumulation or panic. Sentence forms are one of the three bullet prompts AQA prints under its Paper 1 language question, so they are explicitly invited."
+              ]
             },
             {
               "heading": "4. What is repeated",
               "level": "h3",
-              "text": ["Repetition is easy to spot and easy to explain: it tells you what the writer will not let you forget."]
+              "text": [
+                "Repetition is easy to spot and easy to explain: it tells you what the writer will not let you forget."
+              ]
             },
             {
               "heading": "5. What is withheld",
               "level": "h3",
-              "text": ["Absence is evidence. A description with no colour in it, a narrator who never names a feeling, a passage where nobody speaks - all are choices."]
+              "text": [
+                "Absence is evidence. A description with no colour in it, a narrator who never names a feeling, a passage where nobody speaks - all are choices."
+              ]
             }
           ]
         },
@@ -82,20 +103,50 @@
           "heading": "Terms worth knowing, and what to say about each",
           "level": "h2",
           "items": [
-            { "term": "Simile", "definition": "A comparison using like or as. Say what quality is being transferred, and whether it is a surprising choice.", "example": "\"pale as bone\" transfers not only colour but hardness and death." },
-            { "term": "Metaphor", "definition": "A comparison stated as fact. Ask what the writer gains by not saying like.", "example": "Calling silence a weight makes it something the character carries." },
-            { "term": "Personification", "definition": "Giving human qualities to something that is not human. Say what relationship it creates.", "example": "A barn that is nearer \"than it had any right to be\" is being accused of misbehaving." },
-            { "term": "Semantic field", "definition": "A group of words from the same area of meaning running through a passage. Useful because it is about the whole extract, not one word.", "example": "Words of measurement and distance running through a passage about disorientation." },
-            { "term": "Sibilance", "definition": "Repeated s sounds. Only worth naming if you can say what it does here - it is not automatically soothing or sinister.", "example": "Say why the softness suits this moment, or do not mention it." },
-            { "term": "Declarative", "definition": "A flat statement. Naming the sentence type is worth a mark only with the effect attached.", "example": "\"The distances were wrong.\" Four words, no hedging, so the reader accepts it as Martha does." },
-            { "term": "Juxtaposition", "definition": "Two contrasting things placed side by side. Say what the contrast exposes.", "example": "Better calves set beside a resentful relationship with rain, so the physical gain looks small." }
+            {
+              "term": "Simile",
+              "definition": "A comparison using like or as. Say what quality is being transferred, and whether it is a surprising choice.",
+              "example": "\"pale as bone\" transfers not only colour but hardness and death."
+            },
+            {
+              "term": "Metaphor",
+              "definition": "A comparison stated as fact. Ask what the writer gains by not saying like.",
+              "example": "Calling silence a weight makes it something the character carries."
+            },
+            {
+              "term": "Personification",
+              "definition": "Giving human qualities to something that is not human. Say what relationship it creates.",
+              "example": "A barn that is nearer \"than it had any right to be\" is being accused of misbehaving."
+            },
+            {
+              "term": "Semantic field",
+              "definition": "A group of words from the same area of meaning running through a passage. Useful because it is about the whole extract, not one word.",
+              "example": "Words of measurement and distance running through a passage about disorientation."
+            },
+            {
+              "term": "Sibilance",
+              "definition": "Repeated s sounds. Only worth naming if you can say what it does here - it is not automatically soothing or sinister.",
+              "example": "Say why the softness suits this moment, or do not mention it."
+            },
+            {
+              "term": "Declarative",
+              "definition": "A flat statement. Naming the sentence type is worth a mark only with the effect attached.",
+              "example": "\"The distances were wrong.\" Four words, no hedging, so the reader accepts it as Martha does."
+            },
+            {
+              "term": "Juxtaposition",
+              "definition": "Two contrasting things placed side by side. Say what the contrast exposes.",
+              "example": "Better calves set beside a resentful relationship with rain, so the physical gain looks small."
+            }
           ]
         },
         {
           "type": "prose",
           "heading": "The four-move paragraph",
           "level": "h2",
-          "text": ["Every language paragraph that reaches the top band does these four things, in this order. The fourth is the one most answers stop before."],
+          "text": [
+            "Every language paragraph that reaches the top band does these four things, in this order. The fourth is the one most answers stop before."
+          ],
           "numbered": [
             "**Quote** briefly, embedded in your own sentence.",
             "**Identify** what the writer is doing - with a term if you are sure of it, in plain words if not.",
@@ -128,7 +179,9 @@
           "type": "checklist",
           "heading": "Practice, and mark your own",
           "level": "h2",
-          "text": ["**Original RCF practice task.** Take any paragraph of description from a novel you own. Write one four-move paragraph about a single verb in it. Then check:"],
+          "text": [
+            "**Original RCF practice task.** Take any paragraph of description from a novel you own. Write one four-move paragraph about a single verb in it. Then check:"
+          ],
           "items": [
             "Is my quotation short enough to sit inside my own sentence?",
             "Have I said what the effect is on a **reader**, not what the word means?",
@@ -168,18 +221,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Paper 1 question by question", "url": "global-english/gcse/aqa/paper-1/questions/", "text": ["Where the 8-mark language question sits."] },
-            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "text": ["Where the 12-mark language question sits."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "text": ["Including the technique-spotting trap."] }
+            {
+              "title": "Paper 1 question by question",
+              "url": "global-english/gcse/aqa/paper-1/questions/",
+              "text": [
+                "Where the 8-mark language question sits."
+              ]
+            },
+            {
+              "title": "Paper 2 question by question",
+              "url": "global-english/gcse/aqa/paper-2/questions/",
+              "text": [
+                "Where the 12-mark language question sits."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "text": [
+                "Including the technique-spotting trap."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/comparing-viewpoints",
       "title": "Comparing Writers' Viewpoints",
-      "metaTitle": "GCSE Comparing Writers' Viewpoints: AQA Paper 2 Question 4 | RCF English",
+      "metaTitle": "GCSE Comparing Writers' Viewpoints: AQA Paper 2 Question 4",
       "description": "How to compare writers' viewpoints for AQA English Language Paper 2 Question 4: the paragraph shape, the connectives, and a worked comparison worth 16 marks.",
       "keywords": "comparing writers viewpoints, AQA paper 2 question 4, GCSE comparison question, how to compare two sources GCSE, AO3 GCSE English",
       "kicker": "AQA GCSE English Language",
@@ -188,11 +258,23 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "Sixteen marks, one question, and one rule that fixes most answers: never write a paragraph about only one of the two writers."
       },
@@ -228,19 +310,27 @@
           "items": [
             {
               "title": "Name the difference",
-              "text": ["Open with the point of difference itself, not with a writer. *The two writers differ most in how certain they allow themselves to sound.*"]
+              "text": [
+                "Open with the point of difference itself, not with a writer. *The two writers differ most in how certain they allow themselves to sound.*"
+              ]
             },
             {
               "title": "Writer A: attitude, then method",
-              "text": ["A short quotation, what it shows about the attitude, and how the writing conveys it."]
+              "text": [
+                "A short quotation, what it shows about the attitude, and how the writing conveys it."
+              ]
             },
             {
               "title": "Writer B: attitude, then method",
-              "text": ["The same, connected explicitly - *where the first writer asserts, the second concedes*."]
+              "text": [
+                "The same, connected explicitly - *where the first writer asserts, the second concedes*."
+              ]
             },
             {
               "title": "Weigh them",
-              "text": ["One sentence judging the effect: which is more forceful, more convincing, more honest, and why. This is the sentence that separates the top band."]
+              "text": [
+                "One sentence judging the effect: which is more forceful, more convincing, more honest, and why. This is the sentence that separates the top band."
+              ]
             }
           ]
         },
@@ -249,11 +339,31 @@
           "heading": "Connectives that force real comparison",
           "level": "h2",
           "items": [
-            { "term": "Where ... , ... ", "definition": "Puts both writers in one sentence and makes the contrast structural.", "example": "Where the first writer states, the second admits." },
-            { "term": "By contrast", "definition": "Simple, clear, and signals a genuine turn.", "example": "By contrast, the modern writer refuses the claim entirely." },
-            { "term": "Both ... , but ...", "definition": "Useful when the attitudes agree and only the methods differ.", "example": "Both value solitude, but one commands and the other confides." },
-            { "term": "Whereas", "definition": "Best used mid-sentence, joining two clauses of equal weight.", "example": "The 1871 writer measures thinking in miles, whereas the columnist measures it in interruptions avoided." },
-            { "term": "This is more persuasive because", "definition": "The weighing move. Rarely used and always rewarded.", "example": "This is more persuasive because she has already conceded her case is small." }
+            {
+              "term": "Where ... , ... ",
+              "definition": "Puts both writers in one sentence and makes the contrast structural.",
+              "example": "Where the first writer states, the second admits."
+            },
+            {
+              "term": "By contrast",
+              "definition": "Simple, clear, and signals a genuine turn.",
+              "example": "By contrast, the modern writer refuses the claim entirely."
+            },
+            {
+              "term": "Both ... , but ...",
+              "definition": "Useful when the attitudes agree and only the methods differ.",
+              "example": "Both value solitude, but one commands and the other confides."
+            },
+            {
+              "term": "Whereas",
+              "definition": "Best used mid-sentence, joining two clauses of equal weight.",
+              "example": "The 1871 writer measures thinking in miles, whereas the columnist measures it in interruptions avoided."
+            },
+            {
+              "term": "This is more persuasive because",
+              "definition": "The weighing move. Rarely used and always rewarded.",
+              "example": "This is more persuasive because she has already conceded her case is small."
+            }
           ]
         },
         {
@@ -282,7 +392,9 @@
           "type": "checklist",
           "heading": "Practice, then check",
           "level": "h2",
-          "text": ["**Original RCF practice task.** Using the same two sources, compare how the two writers convey their different attitudes to the opinions of other people. Three paragraphs, about 20 minutes. Then check:"],
+          "text": [
+            "**Original RCF practice task.** Using the same two sources, compare how the two writers convey their different attitudes to the opinions of other people. Three paragraphs, about 20 minutes. Then check:"
+          ],
           "items": [
             "Does every paragraph contain both writers?",
             "Have I named an attitude before analysing any method?",
@@ -323,15 +435,38 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Paper 2 question by question", "url": "global-english/gcse/aqa/paper-2/questions/", "text": ["The full Section A method, with the two sources."] },
-            { "title": "Language analysis techniques", "url": "global-english/gcse/aqa/language-analysis/", "text": ["The method behind the second half of every comparison."] },
-            { "title": "Planning and structuring answers", "url": "global-english/gcse/aqa/planning-answers/", "text": ["Paragraph shapes for every question."] },
-            { "title": "RCF Model Paper 2", "url": "global-english/gcse/aqa/papers/rcf-model-paper-2/", "text": ["A 16-mark comparison to attempt, with a full model answer."] }
+            {
+              "title": "Paper 2 question by question",
+              "url": "global-english/gcse/aqa/paper-2/questions/",
+              "text": [
+                "The full Section A method, with the two sources."
+              ]
+            },
+            {
+              "title": "Language analysis techniques",
+              "url": "global-english/gcse/aqa/language-analysis/",
+              "text": [
+                "The method behind the second half of every comparison."
+              ]
+            },
+            {
+              "title": "Planning and structuring answers",
+              "url": "global-english/gcse/aqa/planning-answers/",
+              "text": [
+                "Paragraph shapes for every question."
+              ]
+            },
+            {
+              "title": "RCF Model Paper 2",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-2/",
+              "text": [
+                "A 16-mark comparison to attempt, with a full model answer."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/planning-answers",
       "title": "Planning and Structuring Answers",
@@ -344,11 +479,23 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "Ten questions across two papers, and five different paragraph shapes between them. Knowing which shape a question wants is worth more than any amount of extra reading."
       },
@@ -370,16 +517,61 @@
           "heading": "Which shape for which question",
           "level": "h2",
           "caption": "Planning times are RCF recommendations within AQA's published section timings.",
-          "columns": ["Question", "Marks", "Shape", "Plan for"],
+          "columns": [
+            "Question",
+            "Marks",
+            "Shape",
+            "Plan for"
+          ],
           "rows": [
-            ["P1 Q1 · P2 Q1", "4", "Four short answers. No paragraphs at all.", "No planning"],
-            ["P1 Q2", "8", "Three paragraphs: quote, identify, explain, develop", "30 seconds"],
-            ["P1 Q3", "8", "Beginning, shift, end, plus one running feature", "1 minute"],
-            ["P2 Q2", "8", "Difference, quote A, quote B, inference - repeated", "1 minute"],
-            ["P2 Q3", "12", "Four paragraphs: quote, identify, explain, develop twice", "1 minute"],
-            ["P1 Q4", "20", "Position, then four paragraphs, one of them a qualification", "2-3 minutes"],
-            ["P2 Q4", "16", "Three paragraphs, both writers in each, weighing at the end", "2-3 minutes"],
-            ["P1 Q5 · P2 Q5", "40", "Five or six paragraphs with a deliberate shape and a chosen ending", "5 minutes"]
+            [
+              "P1 Q1 · P2 Q1",
+              "4",
+              "Four short answers. No paragraphs at all.",
+              "No planning"
+            ],
+            [
+              "P1 Q2",
+              "8",
+              "Three paragraphs: quote, identify, explain, develop",
+              "30 seconds"
+            ],
+            [
+              "P1 Q3",
+              "8",
+              "Beginning, shift, end, plus one running feature",
+              "1 minute"
+            ],
+            [
+              "P2 Q2",
+              "8",
+              "Difference, quote A, quote B, inference - repeated",
+              "1 minute"
+            ],
+            [
+              "P2 Q3",
+              "12",
+              "Four paragraphs: quote, identify, explain, develop twice",
+              "1 minute"
+            ],
+            [
+              "P1 Q4",
+              "20",
+              "Position, then four paragraphs, one of them a qualification",
+              "2-3 minutes"
+            ],
+            [
+              "P2 Q4",
+              "16",
+              "Three paragraphs, both writers in each, weighing at the end",
+              "2-3 minutes"
+            ],
+            [
+              "P1 Q5 · P2 Q5",
+              "40",
+              "Five or six paragraphs with a deliberate shape and a chosen ending",
+              "5 minutes"
+            ]
           ]
         },
         {
@@ -393,12 +585,16 @@
             {
               "heading": "For a reading question",
               "level": "h3",
-              "text": ["Three or four quotations, listed in the order you will use them, with one word beside each saying what it is for. That is the whole plan. It takes under a minute and it stops you writing three paragraphs about your best quotation and none about the rest of the extract."]
+              "text": [
+                "Three or four quotations, listed in the order you will use them, with one word beside each saying what it is for. That is the whole plan. It takes under a minute and it stops you writing three paragraphs about your best quotation and none about the rest of the extract."
+              ]
             },
             {
               "heading": "For a writing question",
               "level": "h3",
-              "text": ["Your last line, written first. Then three or four things that must happen before it. Knowing the destination is what prevents the drift that costs organisation marks in the fourth paragraph."]
+              "text": [
+                "Your last line, written first. Then three or four things that must happen before it. Knowing the destination is what prevents the drift that costs organisation marks in the fourth paragraph."
+              ]
             }
           ]
         },
@@ -452,18 +648,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "text": ["What actually costs marks, question by question."] },
-            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "text": ["How to practise these shapes."] },
-            { "title": "RCF practice questions", "url": "global-english/gcse/aqa/practice/", "text": ["Original tasks with model answers."] }
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "text": [
+                "What actually costs marks, question by question."
+              ]
+            },
+            {
+              "title": "Revision strategies",
+              "url": "global-english/gcse/aqa/revision/",
+              "text": [
+                "How to practise these shapes."
+              ]
+            },
+            {
+              "title": "RCF practice questions",
+              "url": "global-english/gcse/aqa/practice/",
+              "text": [
+                "Original tasks with model answers."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/common-mistakes",
       "title": "Common Student Mistakes",
-      "metaTitle": "AQA GCSE English Language: Common Mistakes to Avoid | RCF English",
+      "metaTitle": "AQA GCSE English Language: Common Mistakes to Avoid",
       "description": "The mistakes that cost the most marks on AQA GCSE English Language, question by question, and what to do instead.",
       "keywords": "GCSE English Language common mistakes, AQA English Language mistakes, why students lose marks GCSE English, GCSE English exam errors",
       "kicker": "AQA GCSE English Language",
@@ -472,11 +685,23 @@
       "resourceType": "guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "Almost none of these are mistakes of knowledge. They are mistakes of habit, which means they can be fixed in a fortnight."
       },
@@ -493,22 +718,30 @@
             {
               "heading": "Answering from the wrong lines",
               "level": "h3",
-              "text": ["Paper 1 Questions 1 and 2 and Paper 2 Question 1 all name specific lines. Material from elsewhere in the source earns nothing, however good it is. **Fix:** underline the line numbers before reading the question again."]
+              "text": [
+                "Paper 1 Questions 1 and 2 and Paper 2 Question 1 all name specific lines. Material from elsewhere in the source earns nothing, however good it is. **Fix:** underline the line numbers before reading the question again."
+              ]
             },
             {
               "heading": "Analysing the wrong source",
               "level": "h3",
-              "text": ["Paper 2 Question 3 names one source. Students who have just spent Question 2 working across both sometimes carry on. **Fix:** circle the source letter in the question."]
+              "text": [
+                "Paper 2 Question 3 names one source. Students who have just spent Question 2 working across both sometimes carry on. **Fix:** circle the source letter in the question."
+              ]
             },
             {
               "heading": "Writing the wrong form",
               "level": "h3",
-              "text": ["A speech submitted where a letter was asked for loses part of AO5, which covers adapting to form, purpose and audience. **Fix:** write the form and the audience at the top of your planning space before you plan anything else."]
+              "text": [
+                "A speech submitted where a letter was asked for loses part of AO5, which covers adapting to form, purpose and audience. **Fix:** write the form and the audience at the top of your planning space before you plan anything else."
+              ]
             },
             {
               "heading": "Running out of time for Section B",
               "level": "h3",
-              "text": ["Section B is 40 marks, exactly as many as the whole reading section. A student who gives it twenty minutes has capped their grade before writing a word. **Fix:** treat 45 minutes for Section A as a hard stop, even mid-sentence."]
+              "text": [
+                "Section B is 40 marks, exactly as many as the whole reading section. A student who gives it twenty minutes has capped their grade before writing a word. **Fix:** treat 45 minutes for Section A as a hard stop, even mid-sentence."
+              ]
             }
           ]
         },
@@ -581,14 +814,31 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "text": ["How to practise, with no set texts to learn."] },
-            { "title": "RCF practice questions", "url": "global-english/gcse/aqa/practice/", "text": ["Original tasks with model answers."] },
-            { "title": "Planning and structuring answers", "url": "global-english/gcse/aqa/planning-answers/", "text": ["The paragraph shapes for each question."] }
+            {
+              "title": "Revision strategies",
+              "url": "global-english/gcse/aqa/revision/",
+              "text": [
+                "How to practise, with no set texts to learn."
+              ]
+            },
+            {
+              "title": "RCF practice questions",
+              "url": "global-english/gcse/aqa/practice/",
+              "text": [
+                "Original tasks with model answers."
+              ]
+            },
+            {
+              "title": "Planning and structuring answers",
+              "url": "global-english/gcse/aqa/planning-answers/",
+              "text": [
+                "The paragraph shapes for each question."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/revision",
       "title": "Revision Strategies",
@@ -601,11 +851,23 @@
       "resourceType": "guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "There is nothing to memorise, which is why students find this the hardest subject to revise and the easiest to neglect. What you are practising is a set of moves."
       },
@@ -622,27 +884,37 @@
             {
               "heading": "1. The four-move paragraph, five minutes at a time",
               "level": "h3",
-              "text": ["Open any book. Take one sentence. Write one paragraph: quote, identify, explain, develop. Five minutes, three or four times a week, does more for the language questions than an hour of reading revision notes."]
+              "text": [
+                "Open any book. Take one sentence. Write one paragraph: quote, identify, explain, develop. Five minutes, three or four times a week, does more for the language questions than an hour of reading revision notes."
+              ]
             },
             {
               "heading": "2. Timed single questions",
               "level": "h3",
-              "text": ["Do not always do whole papers. A single 20-minute Question 4 is easier to fit into an evening, and it is the question worth the most reading marks. Whole papers are for the last fortnight."]
+              "text": [
+                "Do not always do whole papers. A single 20-minute Question 4 is easier to fit into an evening, and it is the question worth the most reading marks. Whole papers are for the last fortnight."
+              ]
             },
             {
               "heading": "3. Openings, over and over",
               "level": "h3",
-              "text": ["Write the first 150 words of a description or a story twice a week. Not the whole thing - the opening. Openings are what the examiner meets first, and they are the part most improved by repetition."]
+              "text": [
+                "Write the first 150 words of a description or a story twice a week. Not the whole thing - the opening. Openings are what the examiner meets first, and they are the part most improved by repetition."
+              ]
             },
             {
               "heading": "4. Reading non-fiction with a pen",
               "level": "h3",
-              "text": ["For Paper 2, read one opinion column a week and write two sentences: what the writer's attitude is, and one thing in the writing that conveys it. That is the whole of Question 3 and half of Question 4, practised in five minutes."]
+              "text": [
+                "For Paper 2, read one opinion column a week and write two sentences: what the writer's attitude is, and one thing in the writing that conveys it. That is the whole of Question 3 and half of Question 4, practised in five minutes."
+              ]
             },
             {
               "heading": "5. Accuracy drills",
               "level": "h3",
-              "text": ["Sixteen of the forty writing marks are technical accuracy. Take a piece you have written, and check it for one thing only - sentence boundaries this time, apostrophes next time. Checking for everything at once finds nothing."]
+              "text": [
+                "Sixteen of the forty writing marks are technical accuracy. Take a piece you have written, and check it for one thing only - sentence boundaries this time, apostrophes next time. Checking for everything at once finds nothing."
+              ]
             }
           ]
         },
@@ -651,14 +923,49 @@
           "heading": "A six-week plan",
           "level": "h2",
           "caption": "About three hours a week. Adjust the balance towards whichever paper you find harder.",
-          "columns": ["Week", "Reading focus", "Writing focus", "Timed practice"],
+          "columns": [
+            "Week",
+            "Reading focus",
+            "Writing focus",
+            "Timed practice"
+          ],
           "rows": [
-            ["1", "P1 Q2: the four-move paragraph", "Descriptive openings", "One 10-minute Q2"],
-            ["2", "P1 Q3: beginning, shift, end", "Narrative openings", "One 10-minute Q3"],
-            ["3", "P1 Q4: taking a position and qualifying", "Description, full 45 minutes", "One 20-minute Q4"],
-            ["4", "P2 Q2 and Q3: summary and the 12-mark language question", "Article and letter forms", "One 20-minute pair"],
-            ["5", "P2 Q4: both writers in every paragraph", "Speech and essay forms", "One 20-minute Q4"],
-            ["6", "Whole papers", "Whole papers", "One full Paper 1 and one full Paper 2, to time"]
+            [
+              "1",
+              "P1 Q2: the four-move paragraph",
+              "Descriptive openings",
+              "One 10-minute Q2"
+            ],
+            [
+              "2",
+              "P1 Q3: beginning, shift, end",
+              "Narrative openings",
+              "One 10-minute Q3"
+            ],
+            [
+              "3",
+              "P1 Q4: taking a position and qualifying",
+              "Description, full 45 minutes",
+              "One 20-minute Q4"
+            ],
+            [
+              "4",
+              "P2 Q2 and Q3: summary and the 12-mark language question",
+              "Article and letter forms",
+              "One 20-minute pair"
+            ],
+            [
+              "5",
+              "P2 Q4: both writers in every paragraph",
+              "Speech and essay forms",
+              "One 20-minute Q4"
+            ],
+            [
+              "6",
+              "Whole papers",
+              "Whole papers",
+              "One full Paper 1 and one full Paper 2, to time"
+            ]
           ]
         },
         {
@@ -720,9 +1027,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Past papers and model papers", "url": "global-english/gcse/aqa/papers/", "text": ["Official AQA papers, mark schemes and examiner reports."] },
-            { "title": "RCF practice questions", "url": "global-english/gcse/aqa/practice/", "text": ["Original tasks with model answers."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "text": ["What to stop doing first."] }
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "text": [
+                "Official AQA papers, mark schemes and examiner reports."
+              ]
+            },
+            {
+              "title": "RCF practice questions",
+              "url": "global-english/gcse/aqa/practice/",
+              "text": [
+                "Original tasks with model answers."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "text": [
+                "What to stop doing first."
+              ]
+            }
           ]
         }
       ]

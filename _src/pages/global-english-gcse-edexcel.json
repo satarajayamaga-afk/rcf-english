@@ -1,11 +1,10 @@
 {
   "_comment": "Pearson Edexcel GCSE (9-1) English Language 1EN0. SOURCE OF FACTS: component titles, paper codes, durations, mark totals, weightings, text centuries, word counts and the AO weightings were read from the official Pearson specification (Issue 6, August 2024). The per-question marks and the section timings were read from real Edexcel question papers: 1EN0/01 November 2017 and 1EN0/02 November 2021. Paper 1 Section A is 1+2+6+15=24 and Section B is 40, giving 64. Paper 2 Section A is 2+2+15+1+1+6+14=56 and Section B is 40, giving 96. Both totals match the figures printed on the papers. No Edexcel question, source text or mark scheme wording is reproduced; all examples and practice are original RCF English work.",
-
   "pages": [
     {
       "slug": "global-english/gcse/edexcel",
       "title": "Edexcel GCSE English Language",
-      "metaTitle": "Edexcel GCSE English Language 1EN0: Papers, Marks and Revision | RCF English",
+      "metaTitle": "Edexcel GCSE English Language 1EN0: Papers, Marks and Revision",
       "description": "Pearson Edexcel GCSE English Language 1EN0 explained: both papers, every question, the marks and the timings printed on the papers.",
       "keywords": "Edexcel English Language, Edexcel GCSE English Language 1EN0, Edexcel paper 1, Edexcel paper 2, Edexcel English Language revision",
       "kicker": "GCSE English",
@@ -14,15 +13,32 @@
       "resourceType": "guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        }
       ],
-      "backTo": { "label": "GCSE English", "url": "global-english/gcse/" },
+      "backTo": {
+        "label": "GCSE English",
+        "url": "global-english/gcse/"
+      },
       "hero": {
         "text": "Two papers of very different length and weight. Paper 2 is worth 60% of the qualification and runs for two hours and five minutes, which surprises students who have been revising both papers equally.",
         "buttons": [
-          { "label": "Paper 2", "url": "global-english/gcse/edexcel/paper-2/", "style": "btn--accent" },
-          { "label": "Paper 1", "url": "global-english/gcse/edexcel/paper-1/", "style": "btn--ghost-light" }
+          {
+            "label": "Paper 2",
+            "url": "global-english/gcse/edexcel/paper-2/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Paper 1",
+            "url": "global-english/gcse/edexcel/paper-1/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -54,18 +70,62 @@
           "heading": "The two papers at a glance",
           "level": "h2",
           "caption": "From the Pearson 1EN0 specification, Issue 6, and the question papers themselves.",
-          "columns": ["", "Paper 1", "Paper 2"],
+          "columns": [
+            "",
+            "Paper 1",
+            "Paper 2"
+          ],
           "rows": [
-            ["Full title", "Fiction and Imaginative Writing", "Non-fiction and Transactional Writing"],
-            ["Paper code", "1EN0/01", "1EN0/02"],
-            ["Time", "1 hour 45 minutes", "2 hours 5 minutes"],
-            ["Marks", "64", "96"],
-            ["Weighting", "40% of the GCSE", "60% of the GCSE"],
-            ["Reading text(s)", "One 19th-century fiction extract, about 650 words", "Two unseen non-fiction extracts from the 20th and 21st centuries, about 1,000 words in total, one of them literary non-fiction"],
-            ["Section A: Reading", "24 marks, four questions", "56 marks, seven questions"],
-            ["Section B: Writing", "40 marks, choose one of two", "40 marks, choose one of two"],
-            ["Section timings on the paper", "About 1 hour on Section A, about 45 minutes on Section B", "About 1 hour 20 minutes on Section A, about 45 minutes on Section B"],
-            ["Are the sections linked?", "Yes - the writing tasks are linked by a theme to the reading extract", "Yes - the writing tasks are linked by a theme to the reading extracts"]
+            [
+              "Full title",
+              "Fiction and Imaginative Writing",
+              "Non-fiction and Transactional Writing"
+            ],
+            [
+              "Paper code",
+              "1EN0/01",
+              "1EN0/02"
+            ],
+            [
+              "Time",
+              "1 hour 45 minutes",
+              "2 hours 5 minutes"
+            ],
+            [
+              "Marks",
+              "64",
+              "96"
+            ],
+            [
+              "Weighting",
+              "40% of the GCSE",
+              "60% of the GCSE"
+            ],
+            [
+              "Reading text(s)",
+              "One 19th-century fiction extract, about 650 words",
+              "Two unseen non-fiction extracts from the 20th and 21st centuries, about 1,000 words in total, one of them literary non-fiction"
+            ],
+            [
+              "Section A: Reading",
+              "24 marks, four questions",
+              "56 marks, seven questions"
+            ],
+            [
+              "Section B: Writing",
+              "40 marks, choose one of two",
+              "40 marks, choose one of two"
+            ],
+            [
+              "Section timings on the paper",
+              "About 1 hour on Section A, about 45 minutes on Section B",
+              "About 1 hour 20 minutes on Section A, about 45 minutes on Section B"
+            ],
+            [
+              "Are the sections linked?",
+              "Yes - the writing tasks are linked by a theme to the reading extract",
+              "Yes - the writing tasks are linked by a theme to the reading extracts"
+            ]
           ]
         },
         {
@@ -82,17 +142,77 @@
           "heading": "Every question and what it is worth",
           "level": "h2",
           "caption": "Read from real Edexcel question papers. Paper 1 Section A totals 24; Paper 2 Section A totals 56.",
-          "columns": ["Q", "Paper 1 (1EN0/01)", "Marks", "Paper 2 (1EN0/02)", "Marks"],
+          "columns": [
+            "Q",
+            "Paper 1 (1EN0/01)",
+            "Marks",
+            "Paper 2 (1EN0/02)",
+            "Marks"
+          ],
           "rows": [
-            ["1", "Identify a phrase from named lines", "1", "From named lines, identify two things", "2"],
-            ["2", "From named lines, give two things", "2", "From named lines, give two things", "2"],
-            ["3", "How the writer uses language and structure", "6", "Analyse how the writer of Text 1 uses language and structure", "15"],
-            ["4", "Evaluate how successfully something is achieved", "15", "From named lines in Text 2, identify one thing", "1"],
-            ["5", "Imaginative writing, using images (choose one)", "40", "From named lines in Text 2, identify one thing", "1"],
-            ["6", "Imaginative writing, alternative task", "40", "Evaluate how successfully the writer of Text 2 achieves something", "15"],
-            ["7(a)", "-", "-", "Synthesis: what similarities do the two texts share?", "6"],
-            ["7(b)", "-", "-", "Compare how the writers present ideas and perspectives", "14"],
-            ["8 or 9", "-", "-", "Transactional writing (choose one)", "40"]
+            [
+              "1",
+              "Identify a phrase from named lines",
+              "1",
+              "From named lines, identify two things",
+              "2"
+            ],
+            [
+              "2",
+              "From named lines, give two things",
+              "2",
+              "From named lines, give two things",
+              "2"
+            ],
+            [
+              "3",
+              "How the writer uses language and structure",
+              "6",
+              "Analyse how the writer of Text 1 uses language and structure",
+              "15"
+            ],
+            [
+              "4",
+              "Evaluate how successfully something is achieved",
+              "15",
+              "From named lines in Text 2, identify one thing",
+              "1"
+            ],
+            [
+              "5",
+              "Imaginative writing, using images (choose one)",
+              "40",
+              "From named lines in Text 2, identify one thing",
+              "1"
+            ],
+            [
+              "6",
+              "Imaginative writing, alternative task",
+              "40",
+              "Evaluate how successfully the writer of Text 2 achieves something",
+              "15"
+            ],
+            [
+              "7(a)",
+              "-",
+              "-",
+              "Synthesis: what similarities do the two texts share?",
+              "6"
+            ],
+            [
+              "7(b)",
+              "-",
+              "-",
+              "Compare how the writers present ideas and perspectives",
+              "14"
+            ],
+            [
+              "8 or 9",
+              "-",
+              "-",
+              "Transactional writing (choose one)",
+              "40"
+            ]
           ]
         },
         {
@@ -135,9 +255,30 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Paper 1", "url": "global-english/gcse/edexcel/paper-1/", "more": "Open", "text": ["Fiction and Imaginative Writing: a 19th-century extract, four reading questions and a choice of writing task."] },
-            { "title": "Paper 2", "url": "global-english/gcse/edexcel/paper-2/", "more": "Open", "text": ["Non-fiction and Transactional Writing: two texts, seven reading questions and 60% of the qualification."] },
-            { "title": "Past papers and model papers", "url": "global-english/gcse/edexcel/papers/", "more": "Open", "text": ["Official Edexcel papers and mark schemes, plus the original RCF model paper."] }
+            {
+              "title": "Paper 1",
+              "url": "global-english/gcse/edexcel/paper-1/",
+              "more": "Open",
+              "text": [
+                "Fiction and Imaginative Writing: a 19th-century extract, four reading questions and a choice of writing task."
+              ]
+            },
+            {
+              "title": "Paper 2",
+              "url": "global-english/gcse/edexcel/paper-2/",
+              "more": "Open",
+              "text": [
+                "Non-fiction and Transactional Writing: two texts, seven reading questions and 60% of the qualification."
+              ]
+            },
+            {
+              "title": "Past papers and model papers",
+              "url": "global-english/gcse/edexcel/papers/",
+              "more": "Open",
+              "text": [
+                "Official Edexcel papers and mark schemes, plus the original RCF model paper."
+              ]
+            }
           ]
         },
         {
@@ -189,18 +330,35 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards and their specification codes."] },
-            { "title": "AQA English Language", "url": "global-english/gcse/aqa/", "text": ["The other board developed in full, for comparison."] },
-            { "title": "Language analysis techniques", "url": "global-english/gcse/aqa/language-analysis/", "text": ["Method that transfers between boards."] }
+            {
+              "title": "GCSE English overview",
+              "url": "global-english/gcse/",
+              "text": [
+                "All four boards and their specification codes."
+              ]
+            },
+            {
+              "title": "AQA English Language",
+              "url": "global-english/gcse/aqa/",
+              "text": [
+                "The other board developed in full, for comparison."
+              ]
+            },
+            {
+              "title": "Language analysis techniques",
+              "url": "global-english/gcse/aqa/language-analysis/",
+              "text": [
+                "Method that transfers between boards."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/edexcel/paper-1",
       "title": "Edexcel English Language Paper 1",
-      "metaTitle": "Edexcel English Language Paper 1: Questions, Marks and Timing | RCF English",
+      "metaTitle": "Edexcel English Language Paper 1: Questions, Marks and Timing",
       "description": "Edexcel GCSE English Language Paper 1 explained: the 19th-century fiction extract, the four reading questions with their marks, and the imaginative writing task.",
       "keywords": "Edexcel paper 1, fiction and imaginative writing, Edexcel 1EN0/01, Edexcel English Language question 4, Edexcel imaginative writing",
       "kicker": "Edexcel GCSE English Language",
@@ -209,11 +367,23 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        }
       ],
-      "backTo": { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
+      "backTo": {
+        "label": "Edexcel English Language",
+        "url": "global-english/gcse/edexcel/"
+      },
       "hero": {
         "text": "A 19th-century fiction extract, four reading questions worth 24 marks between them, and one piece of your own writing worth 40. The writing is worth more than all the reading put together."
       },
@@ -236,13 +406,43 @@
           "heading": "The questions",
           "level": "h2",
           "caption": "Marks read from a real Edexcel 1EN0/01 question paper. Section A totals 24 marks.",
-          "columns": ["Question", "What it asks", "Marks", "RCF suggested time"],
+          "columns": [
+            "Question",
+            "What it asks",
+            "Marks",
+            "RCF suggested time"
+          ],
           "rows": [
-            ["1", "Identify a phrase from named lines", "1", "1-2 minutes"],
-            ["2", "From named lines, give two things", "2", "3 minutes"],
-            ["3", "How the writer uses language and structure to achieve a stated effect", "6", "12 minutes"],
-            ["4", "Evaluate how successfully something is achieved in the extract", "15", "25 minutes"],
-            ["5 or 6", "Imaginative writing - choose one task only", "40", "45 minutes"]
+            [
+              "1",
+              "Identify a phrase from named lines",
+              "1",
+              "1-2 minutes"
+            ],
+            [
+              "2",
+              "From named lines, give two things",
+              "2",
+              "3 minutes"
+            ],
+            [
+              "3",
+              "How the writer uses language and structure to achieve a stated effect",
+              "6",
+              "12 minutes"
+            ],
+            [
+              "4",
+              "Evaluate how successfully something is achieved in the extract",
+              "15",
+              "25 minutes"
+            ],
+            [
+              "5 or 6",
+              "Imaginative writing - choose one task only",
+              "40",
+              "45 minutes"
+            ]
           ]
         },
         {
@@ -359,18 +559,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Edexcel Paper 2", "url": "global-english/gcse/edexcel/paper-2/", "text": ["The longer paper, worth 60% of the qualification."] },
-            { "title": "Edexcel papers and model papers", "url": "global-english/gcse/edexcel/papers/", "text": ["Official papers plus an original RCF practice paper."] },
-            { "title": "Creative writing method", "url": "global-english/gcse/aqa/paper-1/creative-writing/", "text": ["Written for AQA, but the method transfers."] }
+            {
+              "title": "Edexcel Paper 2",
+              "url": "global-english/gcse/edexcel/paper-2/",
+              "text": [
+                "The longer paper, worth 60% of the qualification."
+              ]
+            },
+            {
+              "title": "Edexcel papers and model papers",
+              "url": "global-english/gcse/edexcel/papers/",
+              "text": [
+                "Official papers plus an original RCF practice paper."
+              ]
+            },
+            {
+              "title": "Creative writing method",
+              "url": "global-english/gcse/aqa/paper-1/creative-writing/",
+              "text": [
+                "Written for AQA, but the method transfers."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/edexcel/paper-2",
       "title": "Edexcel English Language Paper 2",
-      "metaTitle": "Edexcel English Language Paper 2: Questions 1-9 Explained | RCF English",
+      "metaTitle": "Edexcel English Language Paper 2: Questions 1-9 Explained",
       "description": "Edexcel GCSE English Language Paper 2 explained question by question: two non-fiction texts, the 15-mark analysis and evaluation questions, and Question 7a and 7b.",
       "keywords": "Edexcel paper 2, non-fiction and transactional writing, Edexcel question 7a 7b, Edexcel 1EN0/02, Edexcel paper 2 marks, Edexcel transactional writing",
       "kicker": "Edexcel GCSE English Language",
@@ -379,15 +596,31 @@
       "resourceType": "lesson",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Edexcel English Language",
+          "url": "global-english/gcse/edexcel/"
+        }
       ],
-      "backTo": { "label": "Edexcel English Language", "url": "global-english/gcse/edexcel/" },
+      "backTo": {
+        "label": "Edexcel English Language",
+        "url": "global-english/gcse/edexcel/"
+      },
       "hero": {
         "text": "Two hours and five minutes, ninety-six marks, sixty per cent of the qualification. Nine questions, of which you answer eight. This is the paper that decides the grade.",
         "buttons": [
-          { "label": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/", "style": "btn--accent" }
+          {
+            "label": "RCF Model Paper 2",
+            "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/",
+            "style": "btn--accent"
+          }
         ]
       },
       "blocks": [
@@ -408,17 +641,77 @@
           "heading": "The questions",
           "level": "h2",
           "caption": "Marks read from a real Edexcel 1EN0/02 question paper. Section A totals 56 marks; Section B adds 40.",
-          "columns": ["Question", "Text", "What it asks", "Marks", "RCF suggested time"],
+          "columns": [
+            "Question",
+            "Text",
+            "What it asks",
+            "Marks",
+            "RCF suggested time"
+          ],
           "rows": [
-            ["1", "Text 1", "From named lines, identify two things", "2", "3 minutes"],
-            ["2", "Text 1", "From named lines, give two things - own words or quotation", "2", "3 minutes"],
-            ["3", "Text 1", "Analyse how the writer uses language and structure to interest and engage the reader", "15", "22 minutes"],
-            ["4", "Text 2", "From named lines, identify one thing", "1", "2 minutes"],
-            ["5", "Text 2", "From named lines, identify one thing", "1", "2 minutes"],
-            ["6", "Text 2", "Evaluate how successfully the writer achieves a stated purpose", "15", "22 minutes"],
-            ["7(a)", "Both", "What similarities do the two texts share? Use evidence from both", "6", "10 minutes"],
-            ["7(b)", "Both", "Compare how the writers present ideas and perspectives", "14", "18 minutes"],
-            ["8 or 9", "-", "Transactional writing - choose one task only", "40", "45 minutes"]
+            [
+              "1",
+              "Text 1",
+              "From named lines, identify two things",
+              "2",
+              "3 minutes"
+            ],
+            [
+              "2",
+              "Text 1",
+              "From named lines, give two things - own words or quotation",
+              "2",
+              "3 minutes"
+            ],
+            [
+              "3",
+              "Text 1",
+              "Analyse how the writer uses language and structure to interest and engage the reader",
+              "15",
+              "22 minutes"
+            ],
+            [
+              "4",
+              "Text 2",
+              "From named lines, identify one thing",
+              "1",
+              "2 minutes"
+            ],
+            [
+              "5",
+              "Text 2",
+              "From named lines, identify one thing",
+              "1",
+              "2 minutes"
+            ],
+            [
+              "6",
+              "Text 2",
+              "Evaluate how successfully the writer achieves a stated purpose",
+              "15",
+              "22 minutes"
+            ],
+            [
+              "7(a)",
+              "Both",
+              "What similarities do the two texts share? Use evidence from both",
+              "6",
+              "10 minutes"
+            ],
+            [
+              "7(b)",
+              "Both",
+              "Compare how the writers present ideas and perspectives",
+              "14",
+              "18 minutes"
+            ],
+            [
+              "8 or 9",
+              "-",
+              "Transactional writing - choose one task only",
+              "40",
+              "45 minutes"
+            ]
           ]
         },
         {
@@ -593,9 +886,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "RCF Model Paper 2", "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/", "text": ["A complete original practice paper in this format."] },
-            { "title": "Edexcel papers", "url": "global-english/gcse/edexcel/papers/", "text": ["Official Edexcel papers and mark schemes."] },
-            { "title": "Comparing writers' viewpoints", "url": "global-english/gcse/aqa/comparing-viewpoints/", "text": ["The method for Question 7(b)."] }
+            {
+              "title": "RCF Model Paper 2",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/",
+              "text": [
+                "A complete original practice paper in this format."
+              ]
+            },
+            {
+              "title": "Edexcel papers",
+              "url": "global-english/gcse/edexcel/papers/",
+              "text": [
+                "Official Edexcel papers and mark schemes."
+              ]
+            },
+            {
+              "title": "Comparing writers' viewpoints",
+              "url": "global-english/gcse/aqa/comparing-viewpoints/",
+              "text": [
+                "The method for Question 7(b)."
+              ]
+            }
           ]
         }
       ]

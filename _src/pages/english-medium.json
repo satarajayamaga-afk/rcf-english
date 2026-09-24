@@ -13,12 +13,11 @@
     "Every external link was opened and checked before publishing. They are",
     "on other people's sites and can change, so check them again each year."
   ],
-
   "pages": [
     {
       "slug": "english-medium",
       "title": "Studying in the English Medium",
-      "metaTitle": "Studying Science and Maths in the English Medium | RCF English",
+      "metaTitle": "Studying Science and Maths in the English Medium",
       "description": "The English that Science and Mathematics answers need: what each question word asks for, the sentence shapes that carry a mark, and the mistakes that cost marks in English medium answers.",
       "keywords": "English medium, English medium science, English medium maths, English medium answers, Sri Lanka English medium",
       "kicker": "For English medium classes",
@@ -34,8 +33,22 @@
           "variant": "tint",
           "columns": "2",
           "items": [
-            { "title": "English Medium Mathematics", "url": "english-medium/mathematics/", "more": "Grades 6 to 11", "text": ["The official Maths courses in English, Teachers' Guides, past papers, and the English a maths answer needs."] },
-            { "title": "English Medium Science", "url": "english-medium/science/", "more": "Grades 6 to 11", "text": ["The official Science courses in English, Teachers' Guides, past papers, and how to write up an experiment."] }
+            {
+              "title": "English Medium Mathematics",
+              "url": "english-medium/mathematics/",
+              "more": "Grades 6 to 11",
+              "text": [
+                "The official Maths courses in English, Teachers' Guides, past papers, and the English a maths answer needs."
+              ]
+            },
+            {
+              "title": "English Medium Science",
+              "url": "english-medium/science/",
+              "more": "Grades 6 to 11",
+              "text": [
+                "The official Science courses in English, Teachers' Guides, past papers, and how to write up an experiment."
+              ]
+            }
           ]
         },
         {
@@ -62,17 +75,57 @@
           "intro": [
             "Most answers in either subject use a handful of sentence shapes. Give pupils these and they stop translating sentence by sentence from their first language."
           ],
-          "columns": ["When you need to", "Use this shape", "Example"],
+          "columns": [
+            "When you need to",
+            "Use this shape",
+            "Example"
+          ],
           "rows": [
-            ["Give a reason", "... **because** ...", "*The bulb lights because the circuit is complete.*"],
-            ["Give a result", "**so** / **therefore** / **as a result**", "*The pressure falls, so the volume increases.*"],
-            ["Say what something does", "**is used to** / **allows** / **prevents**", "*The fuse prevents the wire from overheating.*"],
-            ["Say what a thing is made of", "**consists of** / **is made up of**", "*An atom consists of a nucleus and electrons.*"],
-            ["Describe a change", "**increases** / **decreases** / **remains constant**", "*As the temperature rises, the resistance increases.*"],
-            ["Describe a sequence", "**first** ... **then** ... **finally**", "*First the seed absorbs water, then the root appears.*"],
-            ["State a condition", "**if** ... **then** ...", "*If the triangle is equilateral, then all angles are 60°.*"],
-            ["Compare two things", "**whereas** / **while** / **than**", "*Iron rusts, whereas gold does not.*"],
-            ["Conclude", "**Therefore** / **Hence**", "*Therefore x = 7.*"]
+            [
+              "Give a reason",
+              "... **because** ...",
+              "*The bulb lights because the circuit is complete.*"
+            ],
+            [
+              "Give a result",
+              "**so** / **therefore** / **as a result**",
+              "*The pressure falls, so the volume increases.*"
+            ],
+            [
+              "Say what something does",
+              "**is used to** / **allows** / **prevents**",
+              "*The fuse prevents the wire from overheating.*"
+            ],
+            [
+              "Say what a thing is made of",
+              "**consists of** / **is made up of**",
+              "*An atom consists of a nucleus and electrons.*"
+            ],
+            [
+              "Describe a change",
+              "**increases** / **decreases** / **remains constant**",
+              "*As the temperature rises, the resistance increases.*"
+            ],
+            [
+              "Describe a sequence",
+              "**first** ... **then** ... **finally**",
+              "*First the seed absorbs water, then the root appears.*"
+            ],
+            [
+              "State a condition",
+              "**if** ... **then** ...",
+              "*If the triangle is equilateral, then all angles are 60°.*"
+            ],
+            [
+              "Compare two things",
+              "**whereas** / **while** / **than**",
+              "*Iron rusts, whereas gold does not.*"
+            ],
+            [
+              "Conclude",
+              "**Therefore** / **Hence**",
+              "*Therefore x = 7.*"
+            ]
           ]
         },
         {
@@ -81,27 +134,39 @@
           "items": [
             {
               "q": "Writing the unit only at the end, or not at all",
-              "a": ["A number without a unit is not an answer in Science or Maths. Write the unit every time it appears, including in the working, and use the standard form: 12 cm², 5 m/s, 250 g. Teach pupils to check the units before they check the arithmetic."]
+              "a": [
+                "A number without a unit is not an answer in Science or Maths. Write the unit every time it appears, including in the working, and use the standard form: 12 cm², 5 m/s, 250 g. Teach pupils to check the units before they check the arithmetic."
+              ]
             },
             {
               "q": "Using the everyday word instead of the technical one",
-              "a": ["*Melt*, *dissolve* and *evaporate* are three different things, and pupils use them for each other because in conversation they feel the same. The same happens with *weight* and *mass*, *heat* and *temperature*, *speed* and *velocity*. Put the pair on the board together and make pupils say a sentence with each."]
+              "a": [
+                "*Melt*, *dissolve* and *evaporate* are three different things, and pupils use them for each other because in conversation they feel the same. The same happens with *weight* and *mass*, *heat* and *temperature*, *speed* and *velocity*. Put the pair on the board together and make pupils say a sentence with each."
+              ]
             },
             {
               "q": "Answering in the first language and translating word by word",
-              "a": ["This produces sentences that are grammatically strange and often lose the point. It is faster to teach the sentence shapes above than to correct translated sentences one at a time."]
+              "a": [
+                "This produces sentences that are grammatically strange and often lose the point. It is faster to teach the sentence shapes above than to correct translated sentences one at a time."
+              ]
             },
             {
               "q": "Describing when the question says explain",
-              "a": ["The most expensive mistake on the paper. If the word *because* does not appear in an answer to an *explain* question, the answer is very likely incomplete."]
+              "a": [
+                "The most expensive mistake on the paper. If the word *because* does not appear in an answer to an *explain* question, the answer is very likely incomplete."
+              ]
             },
             {
               "q": "Diagram labels in the first language, or no labels",
-              "a": ["Labels are marks. Pupils should practise labelling the same standard diagrams in English until it is automatic: the digestive system, a plant cell, a circuit, the parts of a flower, a ray diagram, a triangle with its vertices named."]
+              "a": [
+                "Labels are marks. Pupils should practise labelling the same standard diagrams in English until it is automatic: the digestive system, a plant cell, a circuit, the parts of a flower, a ray diagram, a triangle with its vertices named."
+              ]
             },
             {
               "q": "Long sentences where three short ones were wanted",
-              "a": ["Science and maths English is short and plain. One idea, one sentence. A pupil who writes three short correct sentences scores better than one who writes a long sentence that falls apart in the middle."]
+              "a": [
+                "Science and maths English is short and plain. One idea, one sentence. A pupil who writes three short correct sentences scores better than one who writes a long sentence that falls apart in the middle."
+              ]
             }
           ]
         },
@@ -121,25 +186,53 @@
           "heading": "English that helps in every subject",
           "columns": "3",
           "items": [
-            { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["The English paper itself, question type by question type."] },
-            { "title": "Speaking Practice", "url": "speaking-practice/", "more": "Practise", "text": ["Say it aloud and hear how you sound. Useful for oral work in any subject."] },
-            { "title": "Writing Practice", "url": "writing-practice/", "more": "Practise", "text": ["Guided writing with a model answer to compare against."] }
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open",
+              "text": [
+                "The English paper itself, question type by question type."
+              ]
+            },
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/",
+              "more": "Practise",
+              "text": [
+                "Say it aloud and hear how you sound. Useful for oral work in any subject."
+              ]
+            },
+            {
+              "title": "Writing Practice",
+              "url": "writing-practice/",
+              "more": "Practise",
+              "text": [
+                "Guided writing with a model answer to compare against."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "english-medium/mathematics",
       "title": "English Medium Mathematics",
-      "metaTitle": "English Medium Mathematics, Grades 6 to 11 | Resources and exam English | RCF English",
+      "metaTitle": "English Medium Mathematics, Grades 6 to 11 | Resources and exam English",
       "description": "Free resources for Sri Lankan students and teachers doing Mathematics in the English medium: the official e-thaksalawa courses for Grades 6 to 11, Teachers' Guides, past papers, and the English a maths answer needs.",
       "keywords": "English medium mathematics, O/L maths English medium, English medium maths teacher, maths word problems English, e-thaksalawa mathematics English",
       "kicker": "English Medium",
       "kind": "page",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "Studying in the English Medium", "url": "english-medium/" }],
-      "backTo": { "label": "Studying in the English Medium", "url": "english-medium/" },
+      "breadcrumbs": [
+        {
+          "label": "Studying in the English Medium",
+          "url": "english-medium/"
+        }
+      ],
+      "backTo": {
+        "label": "Studying in the English Medium",
+        "url": "english-medium/"
+      },
       "hero": {
         "text": "The sums are not the problem. Reading the question and writing the working in English is. Here is the official material, and the English that goes with it."
       },
@@ -150,14 +243,35 @@
           "intro": [
             "The Ministry of Education's **e-thaksalawa** carries a full English medium branch. Each course holds the Smart Text Book, the Teacher's Instructional Manual and material arranged by competency. Some items open straight away; others ask you to log in with a free account."
           ],
-          "columns": ["Grade", "Mathematics course"],
+          "columns": [
+            "Grade",
+            "Mathematics course"
+          ],
           "rows": [
-            ["Grade 6", "[Mathematics, Grade 6](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=288&lang=en)"],
-            ["Grade 7", "[Mathematics, Grade 7](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=451&lang=en)"],
-            ["Grade 8", "[Mathematics, Grade 8](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=531&lang=en)"],
-            ["Grade 9", "[Mathematics, Grade 9](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=817&lang=en)"],
-            ["Grade 10", "[Mathematics, Grade 10](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=842&lang=en)"],
-            ["Grade 11 (O/L)", "[Mathematics, Grade 11](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=799&lang=en)"]
+            [
+              "Grade 6",
+              "[Mathematics, Grade 6](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=288&lang=en)"
+            ],
+            [
+              "Grade 7",
+              "[Mathematics, Grade 7](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=451&lang=en)"
+            ],
+            [
+              "Grade 8",
+              "[Mathematics, Grade 8](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=531&lang=en)"
+            ],
+            [
+              "Grade 9",
+              "[Mathematics, Grade 9](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=817&lang=en)"
+            ],
+            [
+              "Grade 10",
+              "[Mathematics, Grade 10](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=842&lang=en)"
+            ],
+            [
+              "Grade 11 (O/L)",
+              "[Mathematics, Grade 11](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=799&lang=en)"
+            ]
           ]
         },
         {
@@ -170,19 +284,25 @@
               "title": "O/L past papers",
               "url": "https://doenets.lk/pastpapers",
               "more": "Department of Examinations",
-              "text": ["The official source. Choose the year and the G.C.E. Ordinary Level examination, then take the English medium Mathematics paper."]
+              "text": [
+                "The official source. Choose the year and the G.C.E. Ordinary Level examination, then take the English medium Mathematics paper."
+              ]
             },
             {
               "title": "Grade 11 Mathematics Guide",
               "url": "https://nie.lk/pdffiles/tg/Grade%2011%20Mathematics%20Teacher%20Guide.pdf",
               "more": "NIE, 2016, PDF",
-              "text": ["The Teachers' Guide for Grade 11 Mathematics, in English."]
+              "text": [
+                "The Teachers' Guide for Grade 11 Mathematics, in English."
+              ]
             },
             {
               "title": "Grade 10 Mathematics Guide",
               "url": "https://nie.lk/pdffiles/tg/e10tim109.pdf",
               "more": "NIE, 2015, PDF",
-              "text": ["The Teachers' Guide for Grade 10 Mathematics, in English."]
+              "text": [
+                "The Teachers' Guide for Grade 10 Mathematics, in English."
+              ]
             }
           ]
         },
@@ -193,19 +313,67 @@
           "intro": [
             "Each instruction asks for a different amount of working. A pupil who writes the answer alone where the paper said *show that* has thrown away most of the marks."
           ],
-          "columns": ["The paper says", "It wants", "So the answer looks like"],
+          "columns": [
+            "The paper says",
+            "It wants",
+            "So the answer looks like"
+          ],
           "rows": [
-            ["**Calculate** / **Find**", "The working, then the answer with its unit.", "*Area = 4 × 3 = 12 cm²*"],
-            ["**Show that**", "Every step, ending exactly at the value you were given.", "*Since a = 2 and b = 3, a + b = 5, as required.*"],
-            ["**Prove**", "A reason beside each step, ending in the statement asked for.", "*∠ABC = ∠ADC (angles in the same segment)*"],
-            ["**Solve**", "The value or values of the unknown.", "*x = 4 or x = −1*"],
-            ["**Simplify**", "One expression, as short as it will go. No equals-sign chain to a number.", "*3a + 2a = 5a*"],
-            ["**Evaluate**", "A single number, with its unit if it has one.", "*= 36*"],
-            ["**Factorise**", "The expression written as a product of brackets.", "*x² + 5x + 6 = (x + 2)(x + 3)*"],
-            ["**Construct**", "A drawing made with compasses and a straight edge, arcs left showing.", "A construction with its arcs still visible."],
-            ["**Draw** / **Measure**", "An accurate drawing, then the measurement written with its unit.", "*AB = 6.4 cm*"],
-            ["**Hence**", "Use the answer you just found. Do not start again.", "*Hence x = 7.*"],
-            ["**Estimate**", "A rounded value, with the rounding shown.", "*≈ 200 (to the nearest hundred)*"]
+            [
+              "**Calculate** / **Find**",
+              "The working, then the answer with its unit.",
+              "*Area = 4 × 3 = 12 cm²*"
+            ],
+            [
+              "**Show that**",
+              "Every step, ending exactly at the value you were given.",
+              "*Since a = 2 and b = 3, a + b = 5, as required.*"
+            ],
+            [
+              "**Prove**",
+              "A reason beside each step, ending in the statement asked for.",
+              "*∠ABC = ∠ADC (angles in the same segment)*"
+            ],
+            [
+              "**Solve**",
+              "The value or values of the unknown.",
+              "*x = 4 or x = −1*"
+            ],
+            [
+              "**Simplify**",
+              "One expression, as short as it will go. No equals-sign chain to a number.",
+              "*3a + 2a = 5a*"
+            ],
+            [
+              "**Evaluate**",
+              "A single number, with its unit if it has one.",
+              "*= 36*"
+            ],
+            [
+              "**Factorise**",
+              "The expression written as a product of brackets.",
+              "*x² + 5x + 6 = (x + 2)(x + 3)*"
+            ],
+            [
+              "**Construct**",
+              "A drawing made with compasses and a straight edge, arcs left showing.",
+              "A construction with its arcs still visible."
+            ],
+            [
+              "**Draw** / **Measure**",
+              "An accurate drawing, then the measurement written with its unit.",
+              "*AB = 6.4 cm*"
+            ],
+            [
+              "**Hence**",
+              "Use the answer you just found. Do not start again.",
+              "*Hence x = 7.*"
+            ],
+            [
+              "**Estimate**",
+              "A rounded value, with the rounding shown.",
+              "*≈ 200 (to the nearest hundred)*"
+            ]
           ]
         },
         {
@@ -214,18 +382,62 @@
           "intro": [
             "Word problems are a reading test as much as a maths test. These are the phrases that decide the operation, and the ones pupils reverse most often."
           ],
-          "columns": ["The words say", "It means", "Watch out for"],
+          "columns": [
+            "The words say",
+            "It means",
+            "Watch out for"
+          ],
           "rows": [
-            ["the **sum** of, **altogether**, **total**", "Add", "—"],
-            ["**more than**, **increased by**", "Add", "*8 more than x* is x + 8, not 8 + x reversed in meaning"],
-            ["**less than**, **decreased by**", "Subtract", "*5 less than x* is x − 5, **not** 5 − x. Pupils reverse this constantly."],
-            ["the **difference** between", "Subtract", "Take the smaller from the larger unless the question says otherwise"],
-            ["**twice**, **double**, **thrice**, **of**", "Multiply", "*half of x* is x ÷ 2, written x/2"],
-            ["**per**, **each**, **every**", "Multiply or divide, by the rate", "*60 km per hour* for 3 hours is 60 × 3"],
-            ["**shared equally**, **divided among**", "Divide", "Check who gets the remainder"],
-            ["**let x be** ...", "Name the unknown before you start", "Always write this line down; it earns marks"],
-            ["**consecutive** numbers", "x, x + 1, x + 2", "Even or odd consecutive numbers go up in twos"],
-            ["**at least** / **at most**", "≥ / ≤", "These are inequalities, not equations"]
+            [
+              "the **sum** of, **altogether**, **total**",
+              "Add",
+              "—"
+            ],
+            [
+              "**more than**, **increased by**",
+              "Add",
+              "*8 more than x* is x + 8, not 8 + x reversed in meaning"
+            ],
+            [
+              "**less than**, **decreased by**",
+              "Subtract",
+              "*5 less than x* is x − 5, **not** 5 − x. Pupils reverse this constantly."
+            ],
+            [
+              "the **difference** between",
+              "Subtract",
+              "Take the smaller from the larger unless the question says otherwise"
+            ],
+            [
+              "**twice**, **double**, **thrice**, **of**",
+              "Multiply",
+              "*half of x* is x ÷ 2, written x/2"
+            ],
+            [
+              "**per**, **each**, **every**",
+              "Multiply or divide, by the rate",
+              "*60 km per hour* for 3 hours is 60 × 3"
+            ],
+            [
+              "**shared equally**, **divided among**",
+              "Divide",
+              "Check who gets the remainder"
+            ],
+            [
+              "**let x be** ...",
+              "Name the unknown before you start",
+              "Always write this line down; it earns marks"
+            ],
+            [
+              "**consecutive** numbers",
+              "x, x + 1, x + 2",
+              "Even or odd consecutive numbers go up in twos"
+            ],
+            [
+              "**at least** / **at most**",
+              "≥ / ≤",
+              "These are inequalities, not equations"
+            ]
           ]
         },
         {
@@ -234,7 +446,9 @@
           "items": [
             {
               "q": "How do I read these aloud?",
-              "a": ["Pupils who cannot say it often cannot write it either."],
+              "a": [
+                "Pupils who cannot say it often cannot write it either."
+              ],
               "bullets": [
                 "**x²** - x squared. **x³** - x cubed. **x⁴** - x to the power of four",
                 "**√9** - the square root of nine",
@@ -248,7 +462,9 @@
             },
             {
               "q": "The lines that earn method marks",
-              "a": ["Marks are given for the working, not only the answer. These lines cost seconds and are worth marks."],
+              "a": [
+                "Marks are given for the working, not only the answer. These lines cost seconds and are worth marks."
+              ],
               "bullets": [
                 "*Let x be the number of books.*",
                 "*Let the two angles be x and 2x.*",
@@ -260,7 +476,9 @@
             },
             {
               "q": "Words pupils mix up in maths",
-              "a": ["Teach each pair together, in one sentence each."],
+              "a": [
+                "Teach each pair together, in one sentence each."
+              ],
               "bullets": [
                 "**Area** and **perimeter** - one is the space inside, one is the distance around",
                 "**Volume** and **capacity** - the space a solid takes up, and how much it holds",
@@ -277,25 +495,53 @@
           "heading": "More help",
           "columns": "3",
           "items": [
-            { "title": "The English both subjects need", "url": "english-medium/", "more": "Open", "text": ["Sentence shapes, the mistakes that cost marks, and five minutes for teachers."] },
-            { "title": "English Medium Science", "url": "english-medium/science/", "more": "Open", "text": ["The same again for Science, with experiment write-ups."] },
-            { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["The English paper itself, question type by question type."] }
+            {
+              "title": "The English both subjects need",
+              "url": "english-medium/",
+              "more": "Open",
+              "text": [
+                "Sentence shapes, the mistakes that cost marks, and five minutes for teachers."
+              ]
+            },
+            {
+              "title": "English Medium Science",
+              "url": "english-medium/science/",
+              "more": "Open",
+              "text": [
+                "The same again for Science, with experiment write-ups."
+              ]
+            },
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open",
+              "text": [
+                "The English paper itself, question type by question type."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "english-medium/science",
       "title": "English Medium Science",
-      "metaTitle": "English Medium Science, Grades 6 to 11 | Resources and exam English | RCF English",
+      "metaTitle": "English Medium Science, Grades 6 to 11 | Resources and exam English",
       "description": "Free resources for Sri Lankan students and teachers doing Science in the English medium: the official e-thaksalawa courses for Grades 6 to 11, Teachers' Guides, past papers, experiment write-ups and the English a science answer needs.",
       "keywords": "English medium science, O/L science English medium, English medium science teacher, experiment write up English, e-thaksalawa science English",
       "kicker": "English Medium",
       "kind": "page",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "Studying in the English Medium", "url": "english-medium/" }],
-      "backTo": { "label": "Studying in the English Medium", "url": "english-medium/" },
+      "breadcrumbs": [
+        {
+          "label": "Studying in the English Medium",
+          "url": "english-medium/"
+        }
+      ],
+      "backTo": {
+        "label": "Studying in the English Medium",
+        "url": "english-medium/"
+      },
       "hero": {
         "text": "A pupil who understands the experiment can still lose the marks in the write-up. Here is the official material, and the English that goes with it."
       },
@@ -306,14 +552,35 @@
           "intro": [
             "The Ministry of Education's **e-thaksalawa** carries a full English medium branch. Each course holds the Smart Text Book, the Teacher's Instructional Manual and material arranged by competency. Some items open straight away; others ask you to log in with a free account."
           ],
-          "columns": ["Grade", "Science course"],
+          "columns": [
+            "Grade",
+            "Science course"
+          ],
           "rows": [
-            ["Grade 6", "[Science, Grade 6](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=290&lang=en)"],
-            ["Grade 7", "[Science, Grade 7](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=454&lang=en)"],
-            ["Grade 8", "[Science, Grade 8](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=532&lang=en)"],
-            ["Grade 9", "[Science, Grade 9](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=819&lang=en)"],
-            ["Grade 10", "[Science, Grade 10](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=844&lang=en)"],
-            ["Grade 11 (O/L)", "[Science, Grade 11](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=800&lang=en)"]
+            [
+              "Grade 6",
+              "[Science, Grade 6](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=290&lang=en)"
+            ],
+            [
+              "Grade 7",
+              "[Science, Grade 7](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=454&lang=en)"
+            ],
+            [
+              "Grade 8",
+              "[Science, Grade 8](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=532&lang=en)"
+            ],
+            [
+              "Grade 9",
+              "[Science, Grade 9](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=819&lang=en)"
+            ],
+            [
+              "Grade 10",
+              "[Science, Grade 10](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=844&lang=en)"
+            ],
+            [
+              "Grade 11 (O/L)",
+              "[Science, Grade 11](https://e-thaksalawa.moe.gov.lk/lcms/course/view.php?id=800&lang=en)"
+            ]
           ]
         },
         {
@@ -326,19 +593,25 @@
               "title": "O/L past papers",
               "url": "https://doenets.lk/pastpapers",
               "more": "Department of Examinations",
-              "text": ["The official source. Choose the year and the G.C.E. Ordinary Level examination, then take the English medium Science paper."]
+              "text": [
+                "The official source. Choose the year and the G.C.E. Ordinary Level examination, then take the English medium Science paper."
+              ]
             },
             {
               "title": "Grade 11 Science Guide",
               "url": "https://nie.lk/pdffiles/tg/e11tim169.pdf",
               "more": "NIE, 2016, PDF",
-              "text": ["The Teachers' Guide for Grade 11 Science, in English."]
+              "text": [
+                "The Teachers' Guide for Grade 11 Science, in English."
+              ]
             },
             {
               "title": "Grade 10 Science Guide",
               "url": "https://nie.lk/pdffiles/tg/e10tim110.pdf",
               "more": "NIE, 2015, PDF",
-              "text": ["The Teachers' Guide for Grade 10 Science, in English."]
+              "text": [
+                "The Teachers' Guide for Grade 10 Science, in English."
+              ]
             }
           ]
         },
@@ -349,17 +622,57 @@
           "intro": [
             "Each instruction asks for a different shape of answer. Learn these and a pupil stops writing the wrong kind of answer to a question they actually understood."
           ],
-          "columns": ["The paper says", "It wants", "So the answer begins"],
+          "columns": [
+            "The paper says",
+            "It wants",
+            "So the answer begins"
+          ],
           "rows": [
-            ["**State** / **Name** / **Write down**", "One fact. No reason, no sentence needed.", "*The boiling point is 100 °C.*"],
-            ["**List**", "Several facts, one after another. Still no reasons.", "*The three states are solid, liquid and gas.*"],
-            ["**Describe**", "What happens, in order. Still no reasons.", "*The water is heated. Bubbles form at the base, then rise ...*"],
-            ["**Explain** / **Why**", "The reason. This is where *because* belongs.", "*The warm water rises because it is less dense.*"],
-            ["**Compare**", "Both things in one sentence, with a linking word.", "*Copper conducts heat well, whereas plastic does not.*"],
-            ["**Define**", "A complete sentence naming the thing and its key feature.", "*Density is the mass of one unit of volume of a substance.*"],
-            ["**Give a reason for**", "One sentence with *because*.", "*...because the gas expands when heated.*"],
-            ["**Draw** / **Label**", "A diagram with words on it. No sentence needed.", "A ruled diagram, each part named in English."],
-            ["**Suggest**", "A sensible answer using what you know, even if not in the book.", "*The plant may have received too little light.*"]
+            [
+              "**State** / **Name** / **Write down**",
+              "One fact. No reason, no sentence needed.",
+              "*The boiling point is 100 °C.*"
+            ],
+            [
+              "**List**",
+              "Several facts, one after another. Still no reasons.",
+              "*The three states are solid, liquid and gas.*"
+            ],
+            [
+              "**Describe**",
+              "What happens, in order. Still no reasons.",
+              "*The water is heated. Bubbles form at the base, then rise ...*"
+            ],
+            [
+              "**Explain** / **Why**",
+              "The reason. This is where *because* belongs.",
+              "*The warm water rises because it is less dense.*"
+            ],
+            [
+              "**Compare**",
+              "Both things in one sentence, with a linking word.",
+              "*Copper conducts heat well, whereas plastic does not.*"
+            ],
+            [
+              "**Define**",
+              "A complete sentence naming the thing and its key feature.",
+              "*Density is the mass of one unit of volume of a substance.*"
+            ],
+            [
+              "**Give a reason for**",
+              "One sentence with *because*.",
+              "*...because the gas expands when heated.*"
+            ],
+            [
+              "**Draw** / **Label**",
+              "A diagram with words on it. No sentence needed.",
+              "A ruled diagram, each part named in English."
+            ],
+            [
+              "**Suggest**",
+              "A sensible answer using what you know, even if not in the book.",
+              "*The plant may have received too little light.*"
+            ]
           ]
         },
         {
@@ -368,13 +681,37 @@
           "intro": [
             "The write-up has the same five parts every time, and each part has its own grammar. The method is written in the **passive**: nobody's name appears in it."
           ],
-          "columns": ["Part", "What goes in it", "The English it uses"],
+          "columns": [
+            "Part",
+            "What goes in it",
+            "The English it uses"
+          ],
           "rows": [
-            ["**Aim**", "One sentence saying what you are finding out.", "*To find out how temperature affects the rate of dissolving.*"],
-            ["**Apparatus**", "A list. No sentences.", "*Beaker, thermometer, stopwatch, stirring rod*"],
-            ["**Method**", "The steps, in order, in the passive and the past tense.", "*The water **was heated** to 40 °C. The salt **was added** and the time **was recorded**.*"],
-            ["**Observation**", "What you saw or measured. A table if there are numbers.", "*The salt dissolved in 25 seconds.*"],
-            ["**Conclusion**", "What it shows, linked back to the aim.", "*Therefore the salt dissolves faster at a higher temperature.*"]
+            [
+              "**Aim**",
+              "One sentence saying what you are finding out.",
+              "*To find out how temperature affects the rate of dissolving.*"
+            ],
+            [
+              "**Apparatus**",
+              "A list. No sentences.",
+              "*Beaker, thermometer, stopwatch, stirring rod*"
+            ],
+            [
+              "**Method**",
+              "The steps, in order, in the passive and the past tense.",
+              "*The water **was heated** to 40 °C. The salt **was added** and the time **was recorded**.*"
+            ],
+            [
+              "**Observation**",
+              "What you saw or measured. A table if there are numbers.",
+              "*The salt dissolved in 25 seconds.*"
+            ],
+            [
+              "**Conclusion**",
+              "What it shows, linked back to the aim.",
+              "*Therefore the salt dissolves faster at a higher temperature.*"
+            ]
           ]
         },
         {
@@ -383,7 +720,9 @@
           "items": [
             {
               "q": "Pairs to teach together, never apart",
-              "a": ["Each pair feels the same in conversation and means something different in Science. Put both on the board and make pupils say one sentence with each."],
+              "a": [
+                "Each pair feels the same in conversation and means something different in Science. Put both on the board and make pupils say one sentence with each."
+              ],
               "bullets": [
                 "**Mass** and **weight** - how much matter, and the pull of gravity on it",
                 "**Heat** and **temperature** - the energy, and how hot something is",
@@ -397,7 +736,9 @@
             },
             {
               "q": "Diagrams worth labelling in English until it is automatic",
-              "a": ["Labels are marks, and they are the easiest marks on the paper to practise."],
+              "a": [
+                "Labels are marks, and they are the easiest marks on the paper to practise."
+              ],
               "bullets": [
                 "The human digestive system and the heart",
                 "A plant cell and an animal cell",
@@ -409,7 +750,9 @@
             },
             {
               "q": "Units, and where marks are lost",
-              "a": ["A number without a unit is not an answer. Write the unit every time, including in the working."],
+              "a": [
+                "A number without a unit is not an answer. Write the unit every time, including in the working."
+              ],
               "bullets": [
                 "Length **cm, m, km**; mass **g, kg**; time **s, min**",
                 "Area **cm²**; volume **cm³**; capacity **ml, l**",
@@ -424,9 +767,30 @@
           "heading": "More help",
           "columns": "3",
           "items": [
-            { "title": "The English both subjects need", "url": "english-medium/", "more": "Open", "text": ["Sentence shapes, the mistakes that cost marks, and five minutes for teachers."] },
-            { "title": "English Medium Mathematics", "url": "english-medium/mathematics/", "more": "Open", "text": ["The same again for Maths, with word problems."] },
-            { "title": "O/L English", "url": "ol-english/", "more": "Open", "text": ["The English paper itself, question type by question type."] }
+            {
+              "title": "The English both subjects need",
+              "url": "english-medium/",
+              "more": "Open",
+              "text": [
+                "Sentence shapes, the mistakes that cost marks, and five minutes for teachers."
+              ]
+            },
+            {
+              "title": "English Medium Mathematics",
+              "url": "english-medium/mathematics/",
+              "more": "Open",
+              "text": [
+                "The same again for Maths, with word problems."
+              ]
+            },
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open",
+              "text": [
+                "The English paper itself, question type by question type."
+              ]
+            }
           ]
         }
       ]

@@ -13,21 +13,29 @@
     "",
     "After editing, run build.cmd."
   ],
-
   "pages": [
     {
       "slug": "teacher-resources/worksheets-by-grade/grade-10",
       "title": "Grade 10 Worksheets",
-      "metaTitle": "Grade 10 English Worksheets | English Teachers Resources | RCF English",
+      "metaTitle": "Grade 10 English Worksheets | English Teachers Resources",
       "description": "Ten printable Grade 10 English worksheets with answer keys: complex sentences, participles, articles, subject-verb agreement, three reading passages and three writing tasks.",
       "keywords": "grade 10 English worksheets, complex sentences, participle phrases, subject verb agreement, grade 10 comprehension, O/L English writing",
       "kicker": "Worksheets by Grade",
       "kind": "page",
       "breadcrumbs": [
-        { "label": "English Teachers Resources", "url": "teacher-resources/" },
-        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        }
       ],
-      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "backTo": {
+        "label": "Worksheets by Grade",
+        "url": "teacher-resources/worksheets-by-grade/"
+      },
       "hero": {
         "text": "Ten worksheets for Grade 10: four grammar, three reading and three writing, each with the answers."
       },
@@ -192,27 +200,47 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Grade 11 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-11/", "more": "Open" },
-            { "title": "Grade 9 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-9/", "more": "Open" },
-            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" }
+            {
+              "title": "Grade 11 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-11/",
+              "more": "Open"
+            },
+            {
+              "title": "Grade 9 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-9/",
+              "more": "Open"
+            },
+            {
+              "title": "All grades",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/worksheets-by-grade/grade-11",
       "title": "Grade 11 Worksheets",
-      "metaTitle": "Grade 11 English Worksheets | English Teachers Resources | RCF English",
+      "metaTitle": "Grade 11 English Worksheets | English Teachers Resources",
       "description": "Ten printable Grade 11 English worksheets with answer keys: error correction, register, cohesion, mixed grammar revision, examination-style comprehension and full writing tasks.",
       "keywords": "grade 11 English worksheets, O/L English revision, error correction worksheet, register, cohesion, O/L comprehension practice",
       "kicker": "Worksheets by Grade",
       "kind": "page",
       "breadcrumbs": [
-        { "label": "English Teachers Resources", "url": "teacher-resources/" },
-        { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" }
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        },
+        {
+          "label": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        }
       ],
-      "backTo": { "label": "Worksheets by Grade", "url": "teacher-resources/worksheets-by-grade/" },
+      "backTo": {
+        "label": "Worksheets by Grade",
+        "url": "teacher-resources/worksheets-by-grade/"
+      },
       "hero": {
         "text": "Ten worksheets for Grade 11, the examination year: four grammar, three reading and three writing, each with the answers."
       },
@@ -371,9 +399,21 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "All grades", "url": "teacher-resources/worksheets-by-grade/", "more": "Open" },
-            { "title": "Grade 10 Worksheets", "url": "teacher-resources/worksheets-by-grade/grade-10/", "more": "Open" },
-            { "title": "O/L English", "url": "ol-english/", "more": "Open" }
+            {
+              "title": "All grades",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "Open"
+            },
+            {
+              "title": "Grade 10 Worksheets",
+              "url": "teacher-resources/worksheets-by-grade/grade-10/",
+              "more": "Open"
+            },
+            {
+              "title": "O/L English",
+              "url": "ol-english/",
+              "more": "Open"
+            }
           ]
         }
       ]

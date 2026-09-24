@@ -17,15 +17,27 @@
     {
       "slug": "teacher-resources/worksheet-generator",
       "title": "Worksheet and Test Generator",
-      "metaTitle": "English Worksheet and Test Generator with Answer Key | RCF English",
+      "metaTitle": "English Worksheet and Test Generator with Answer Key",
       "description": "Make a printable English worksheet or short test in a minute: choose the grade, topics and competency levels, question types and number of questions, and print it with a separate answer key.",
       "keywords": "English worksheet generator, test generator with answer key, printable grammar worksheet, Grade 6 to 11 English test maker, Sri Lanka English teacher",
       "kicker": "Teacher Resources",
       "kind": "page",
-      "scripts": ["worksheet-generator"],
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
-      "hero": { "text": "Choose a level, the topics and the kinds of question, and the generator builds a printable worksheet or short test with a separate answer key. Make it again for a different mix of the same questions." },
+      "scripts": [
+        "worksheet-generator"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Teacher Resources",
+        "url": "teacher-resources/"
+      },
+      "hero": {
+        "text": "Choose a level, the topics and the kinds of question, and the generator builds a printable worksheet or short test with a separate answer key. Make it again for a different mix of the same questions."
+      },
       "blocks": [
         {
           "type": "app",
@@ -44,18 +56,27 @@
         }
       ]
     },
-
     {
       "slug": "teacher-resources/rubrics",
       "title": "Assessment Rubrics for English",
-      "metaTitle": "Printable English Assessment Rubrics: Writing, Speaking, Reading Aloud, Literature | RCF English",
+      "metaTitle": "Printable English Assessment Rubrics: Writing, Speaking, Reading Aloud, Literature",
       "description": "Four printable classroom rubrics written by RCF English: guided and free writing, speaking, reading aloud, and literature answers, with four clear bands and advice on using them for feedback.",
       "keywords": "English writing rubric, speaking rubric, reading aloud rubric, literature answer rubric, assessment rubric Sri Lanka, classroom assessment English",
       "kicker": "Teacher Resources",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Assessment", "url": "teacher-resources/assessment/" },
-      "hero": { "text": "A rubric tells a student what the next band looks like. That is its whole job, and it only does it if the words in each box are plain enough for the student to read." },
+      "breadcrumbs": [
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Assessment",
+        "url": "teacher-resources/assessment/"
+      },
+      "hero": {
+        "text": "A rubric tells a student what the next band looks like. That is its whole job, and it only does it if the words in each box are plain enough for the student to read."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -70,92 +91,276 @@
           "type": "steps",
           "heading": "Using a rubric so that it teaches",
           "items": [
-            { "title": "Show it before the task, not after", "text": ["Read the Band 3 column aloud with the class before they write or speak. A rubric first seen on the returned script is a verdict, not a guide."] },
-            { "title": "Mark one or two rows, not all four", "text": ["For a class set, choose the row the lesson was about. Marking every row on every script takes four times as long and gives the student four things to fix at once."] },
-            { "title": "Circle the box, then write one line", "text": ["Circle the band the work reached, and write one sentence saying what would move it to the next box. *To reach Band 3: give a reason for each point.*"] },
-            { "title": "Let students use it on each other", "text": ["Pairs mark each other's work on one row only. They will be harsher than you, and they will learn the criteria faster than from any explanation."] }
+            {
+              "title": "Show it before the task, not after",
+              "text": [
+                "Read the Band 3 column aloud with the class before they write or speak. A rubric first seen on the returned script is a verdict, not a guide."
+              ]
+            },
+            {
+              "title": "Mark one or two rows, not all four",
+              "text": [
+                "For a class set, choose the row the lesson was about. Marking every row on every script takes four times as long and gives the student four things to fix at once."
+              ]
+            },
+            {
+              "title": "Circle the box, then write one line",
+              "text": [
+                "Circle the band the work reached, and write one sentence saying what would move it to the next box. *To reach Band 3: give a reason for each point.*"
+              ]
+            },
+            {
+              "title": "Let students use it on each other",
+              "text": [
+                "Pairs mark each other's work on one row only. They will be harsher than you, and they will learn the criteria faster than from any explanation."
+              ]
+            }
           ]
         },
         {
           "type": "table",
           "heading": "1. Writing rubric (guided and free writing)",
           "caption": "RCF English writing rubric. Band 4 is the highest. Use for letters, descriptions, stories, reports and essays.",
-          "columns": ["Criterion", "Band 1", "Band 2", "Band 3", "Band 4"],
+          "columns": [
+            "Criterion",
+            "Band 1",
+            "Band 2",
+            "Band 3",
+            "Band 4"
+          ],
           "rows": [
-            ["Task", "Much of the task is missing or off the topic.", "The main point is there, but one or more required parts are missing.", "All required parts are covered.", "All parts are covered, with detail that suits the reader and purpose."],
-            ["Organisation", "No clear order; ideas are hard to follow.", "Some order, but paragraphs or linking are missing.", "Clear beginning, middle and end, with paragraphs.", "Well ordered throughout; linking words guide the reader smoothly."],
-            ["Language", "Frequent errors make the meaning unclear.", "Errors are common but the meaning is mostly clear.", "Some errors, but they rarely affect meaning.", "Few errors; a range of sentence types is used accurately."],
-            ["Vocabulary", "Very limited; words are often wrong or repeated.", "Simple words, some repetition.", "Suitable words, with some variety.", "Precise, varied words chosen for effect."],
-            ["Format and mechanics", "Format ignored; punctuation and spelling weak.", "Format partly correct; frequent punctuation or spelling errors.", "Correct format; mostly accurate punctuation and spelling.", "Correct format; punctuation and spelling almost always accurate."]
+            [
+              "Task",
+              "Much of the task is missing or off the topic.",
+              "The main point is there, but one or more required parts are missing.",
+              "All required parts are covered.",
+              "All parts are covered, with detail that suits the reader and purpose."
+            ],
+            [
+              "Organisation",
+              "No clear order; ideas are hard to follow.",
+              "Some order, but paragraphs or linking are missing.",
+              "Clear beginning, middle and end, with paragraphs.",
+              "Well ordered throughout; linking words guide the reader smoothly."
+            ],
+            [
+              "Language",
+              "Frequent errors make the meaning unclear.",
+              "Errors are common but the meaning is mostly clear.",
+              "Some errors, but they rarely affect meaning.",
+              "Few errors; a range of sentence types is used accurately."
+            ],
+            [
+              "Vocabulary",
+              "Very limited; words are often wrong or repeated.",
+              "Simple words, some repetition.",
+              "Suitable words, with some variety.",
+              "Precise, varied words chosen for effect."
+            ],
+            [
+              "Format and mechanics",
+              "Format ignored; punctuation and spelling weak.",
+              "Format partly correct; frequent punctuation or spelling errors.",
+              "Correct format; mostly accurate punctuation and spelling.",
+              "Correct format; punctuation and spelling almost always accurate."
+            ]
           ]
         },
         {
           "type": "table",
           "heading": "2. Speaking rubric",
           "caption": "RCF English speaking rubric, for short talks, role plays, interviews and discussions.",
-          "columns": ["Criterion", "Band 1", "Band 2", "Band 3", "Band 4"],
+          "columns": [
+            "Criterion",
+            "Band 1",
+            "Band 2",
+            "Band 3",
+            "Band 4"
+          ],
           "rows": [
-            ["Content", "Says very little about the topic.", "Makes one or two simple points.", "Makes several relevant points.", "Develops points with reasons or examples."],
-            ["Fluency", "Long pauses; often stops.", "Frequent hesitation, but keeps going with help.", "Some hesitation; continues without help.", "Speaks smoothly at a natural pace."],
-            ["Accuracy", "Errors make meaning unclear.", "Many errors; meaning mostly clear.", "Some errors that do not block meaning.", "Few errors, even in longer sentences."],
-            ["Pronunciation", "Hard to understand.", "Understandable with effort.", "Clear, with occasional unclear words.", "Clear throughout, with natural stress."],
-            ["Interaction", "Does not respond to the listener.", "Responds briefly when asked.", "Responds and sometimes asks questions.", "Listens, responds and keeps the conversation going."]
+            [
+              "Content",
+              "Says very little about the topic.",
+              "Makes one or two simple points.",
+              "Makes several relevant points.",
+              "Develops points with reasons or examples."
+            ],
+            [
+              "Fluency",
+              "Long pauses; often stops.",
+              "Frequent hesitation, but keeps going with help.",
+              "Some hesitation; continues without help.",
+              "Speaks smoothly at a natural pace."
+            ],
+            [
+              "Accuracy",
+              "Errors make meaning unclear.",
+              "Many errors; meaning mostly clear.",
+              "Some errors that do not block meaning.",
+              "Few errors, even in longer sentences."
+            ],
+            [
+              "Pronunciation",
+              "Hard to understand.",
+              "Understandable with effort.",
+              "Clear, with occasional unclear words.",
+              "Clear throughout, with natural stress."
+            ],
+            [
+              "Interaction",
+              "Does not respond to the listener.",
+              "Responds briefly when asked.",
+              "Responds and sometimes asks questions.",
+              "Listens, responds and keeps the conversation going."
+            ]
           ]
         },
         {
           "type": "table",
           "heading": "3. Reading aloud rubric",
           "caption": "RCF English reading aloud rubric, for primary and lower secondary classes.",
-          "columns": ["Criterion", "Band 1", "Band 2", "Band 3", "Band 4"],
+          "columns": [
+            "Criterion",
+            "Band 1",
+            "Band 2",
+            "Band 3",
+            "Band 4"
+          ],
           "rows": [
-            ["Word reading", "Many words cannot be read.", "Several words need help.", "Most words read correctly.", "Almost all words read correctly, including new ones."],
-            ["Phrasing", "Word by word.", "Short groups of words, often broken.", "Mostly in sensible phrases.", "Smooth phrases that follow the punctuation."],
-            ["Expression", "Flat throughout.", "Some change of voice.", "Voice changes for questions and speech.", "Expression shows the meaning and mood."],
-            ["Understanding", "Cannot say what the text was about.", "Recalls one detail.", "Retells the main events or points.", "Retells and explains why something happened."]
+            [
+              "Word reading",
+              "Many words cannot be read.",
+              "Several words need help.",
+              "Most words read correctly.",
+              "Almost all words read correctly, including new ones."
+            ],
+            [
+              "Phrasing",
+              "Word by word.",
+              "Short groups of words, often broken.",
+              "Mostly in sensible phrases.",
+              "Smooth phrases that follow the punctuation."
+            ],
+            [
+              "Expression",
+              "Flat throughout.",
+              "Some change of voice.",
+              "Voice changes for questions and speech.",
+              "Expression shows the meaning and mood."
+            ],
+            [
+              "Understanding",
+              "Cannot say what the text was about.",
+              "Recalls one detail.",
+              "Retells the main events or points.",
+              "Retells and explains why something happened."
+            ]
           ]
         },
         {
           "type": "table",
           "heading": "4. Literature answer rubric",
           "caption": "RCF English classroom rubric for O/L and A/L Literature paragraph and essay answers.",
-          "columns": ["Criterion", "Band 1", "Band 2", "Band 3", "Band 4"],
+          "columns": [
+            "Criterion",
+            "Band 1",
+            "Band 2",
+            "Band 3",
+            "Band 4"
+          ],
           "rows": [
-            ["Answering the question", "Retells the text without answering.", "Touches on the question now and then.", "Answers the question throughout.", "Answers the exact question, including every part of it."],
-            ["Evidence", "No reference to the text.", "General references, no quotation.", "Relevant quotation or close reference.", "Short, well-chosen quotations placed exactly where needed."],
-            ["Analysis", "No comment on language or technique.", "Names a device but does not explain it.", "Explains what the language shows.", "Explains the effect on the reader and links it to the writer's purpose."],
-            ["Structure and expression", "Unclear and unorganised.", "Some order; ideas run together.", "Clear paragraphs, each with one point.", "A developed argument with a clear conclusion."]
+            [
+              "Answering the question",
+              "Retells the text without answering.",
+              "Touches on the question now and then.",
+              "Answers the question throughout.",
+              "Answers the exact question, including every part of it."
+            ],
+            [
+              "Evidence",
+              "No reference to the text.",
+              "General references, no quotation.",
+              "Relevant quotation or close reference.",
+              "Short, well-chosen quotations placed exactly where needed."
+            ],
+            [
+              "Analysis",
+              "No comment on language or technique.",
+              "Names a device but does not explain it.",
+              "Explains what the language shows.",
+              "Explains the effect on the reader and links it to the writer's purpose."
+            ],
+            [
+              "Structure and expression",
+              "Unclear and unorganised.",
+              "Some order; ideas run together.",
+              "Clear paragraphs, each with one point.",
+              "A developed argument with a clear conclusion."
+            ]
           ]
         },
         {
           "type": "callout",
           "style": "tip",
           "title": "To print a rubric",
-          "text": ["Use your browser's print option and choose *Save as PDF* or print directly. Each table prints with its heading. To print only one, select it on screen and choose *Print selection* where your browser offers it."]
+          "text": [
+            "Use your browser's print option and choose *Save as PDF* or print directly. Each table prints with its heading. To print only one, select it on screen and choose *Print selection* where your browser offers it."
+          ]
         },
         {
           "type": "cards",
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Marking guides", "url": "teacher-resources/marking-guides/", "more": "Open", "text": ["How to mark a class set so that students improve, in reasonable time."] },
-            { "title": "Assessment", "url": "teacher-resources/assessment/", "more": "Open", "text": ["What to assess, how often, and two-minute checks."] },
-            { "title": "Term-test preparation plans", "url": "teacher-resources/term-test-plans/", "more": "Open", "text": ["A six-week plan leading up to the term test, and what to do afterwards."] }
+            {
+              "title": "Marking guides",
+              "url": "teacher-resources/marking-guides/",
+              "more": "Open",
+              "text": [
+                "How to mark a class set so that students improve, in reasonable time."
+              ]
+            },
+            {
+              "title": "Assessment",
+              "url": "teacher-resources/assessment/",
+              "more": "Open",
+              "text": [
+                "What to assess, how often, and two-minute checks."
+              ]
+            },
+            {
+              "title": "Term-test preparation plans",
+              "url": "teacher-resources/term-test-plans/",
+              "more": "Open",
+              "text": [
+                "A six-week plan leading up to the term test, and what to do afterwards."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/term-test-plans",
       "title": "Term-Test Preparation Plans",
-      "metaTitle": "English Term-Test Preparation Plan: Six Weeks, Final Week and After the Test | RCF English",
+      "metaTitle": "English Term-Test Preparation Plan: Six Weeks, Final Week and After the Test",
       "description": "A practical six-week plan for preparing an English class for the term test, a lesson-by-lesson final week, and a simple way to analyse the results so the next term starts in the right place.",
       "keywords": "term test preparation plan, English term test revision, first term test, second term test, third term test, revision plan Sri Lanka",
       "kicker": "Teacher Resources",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Revision Strategies", "url": "teacher-resources/revision-strategies/" },
-      "hero": { "text": "A term test is most useful as information for the teacher. The plan below prepares students properly and makes sure the results tell you something you can act on." },
+      "breadcrumbs": [
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Revision Strategies",
+        "url": "teacher-resources/revision-strategies/"
+      },
+      "hero": {
+        "text": "A term test is most useful as information for the teacher. The plan below prepares students properly and makes sure the results tell you something you can act on."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -169,110 +374,340 @@
           "type": "table",
           "heading": "Six-week preparation plan",
           "caption": "RCF English six-week term-test plan. Weeks count backwards from the test.",
-          "columns": ["Week", "Focus", "In class", "Homework"],
+          "columns": [
+            "Week",
+            "Focus",
+            "In class",
+            "Homework"
+          ],
           "rows": [
-            ["6 weeks before", "Find the gaps", "A short diagnostic: one question of each kind from a past paper, 20 minutes. Tally which kinds most students got wrong.", "Students list the three topics they find hardest."],
-            ["5 weeks before", "Hardest topic 1", "Re-teach the topic most students got wrong, with guided practice.", "Ten short practice items on that topic."],
-            ["4 weeks before", "Hardest topic 2 and writing", "Re-teach the second topic. One guided writing task using the task type in the paper.", "Complete the writing task at home."],
-            ["3 weeks before", "Reading and vocabulary", "Timed reading passage with questions. Build a class word list from the unit texts.", "Learn ten words from the list."],
-            ["2 weeks before", "Full practice paper", "A complete past paper under test conditions. Mark it together the next lesson.", "Correct their own mistakes in a different colour."],
-            ["Final week", "Consolidate, not add", "See the final-week plan below. No new content.", "Short daily review, and sleep."]
+            [
+              "6 weeks before",
+              "Find the gaps",
+              "A short diagnostic: one question of each kind from a past paper, 20 minutes. Tally which kinds most students got wrong.",
+              "Students list the three topics they find hardest."
+            ],
+            [
+              "5 weeks before",
+              "Hardest topic 1",
+              "Re-teach the topic most students got wrong, with guided practice.",
+              "Ten short practice items on that topic."
+            ],
+            [
+              "4 weeks before",
+              "Hardest topic 2 and writing",
+              "Re-teach the second topic. One guided writing task using the task type in the paper.",
+              "Complete the writing task at home."
+            ],
+            [
+              "3 weeks before",
+              "Reading and vocabulary",
+              "Timed reading passage with questions. Build a class word list from the unit texts.",
+              "Learn ten words from the list."
+            ],
+            [
+              "2 weeks before",
+              "Full practice paper",
+              "A complete past paper under test conditions. Mark it together the next lesson.",
+              "Correct their own mistakes in a different colour."
+            ],
+            [
+              "Final week",
+              "Consolidate, not add",
+              "See the final-week plan below. No new content.",
+              "Short daily review, and sleep."
+            ]
           ]
         },
         {
           "type": "accordion",
           "heading": "The final week, lesson by lesson",
           "items": [
-            { "q": "Lesson 1: the paper, section by section", "a": ["Walk through the paper layout on the board: each section, its marks and a suggested time. Students write the timing on the inside cover of their exercise book.", "Point out where marks are most often lost: unanswered questions, ignored word limits, and questions that ask for two things."] },
-            { "q": "Lesson 2: the commonest mistakes", "a": ["Show five real mistakes from the practice paper, anonymously. Students correct them in pairs. Choose the mistakes that the most students made, not the funniest."] },
-            { "q": "Lesson 3: writing under time", "a": ["One writing task in exactly the time the paper allows. Stop them at the time, even if unfinished. The lesson is about finishing, not perfection."] },
-            { "q": "Lesson 4: quick-fire review", "a": ["A ten-question oral quiz on grammar and vocabulary, then students choose one topic they still fear and work on it with a partner who is confident in it."] },
-            { "q": "Lesson 5: calm and confidence", "a": ["Answer questions about the test. Remind them to read the whole paper first, answer the questions they know, and come back to the others. End early and on something they can do."] }
+            {
+              "q": "Lesson 1: the paper, section by section",
+              "a": [
+                "Walk through the paper layout on the board: each section, its marks and a suggested time. Students write the timing on the inside cover of their exercise book.",
+                "Point out where marks are most often lost: unanswered questions, ignored word limits, and questions that ask for two things."
+              ]
+            },
+            {
+              "q": "Lesson 2: the commonest mistakes",
+              "a": [
+                "Show five real mistakes from the practice paper, anonymously. Students correct them in pairs. Choose the mistakes that the most students made, not the funniest."
+              ]
+            },
+            {
+              "q": "Lesson 3: writing under time",
+              "a": [
+                "One writing task in exactly the time the paper allows. Stop them at the time, even if unfinished. The lesson is about finishing, not perfection."
+              ]
+            },
+            {
+              "q": "Lesson 4: quick-fire review",
+              "a": [
+                "A ten-question oral quiz on grammar and vocabulary, then students choose one topic they still fear and work on it with a partner who is confident in it."
+              ]
+            },
+            {
+              "q": "Lesson 5: calm and confidence",
+              "a": [
+                "Answer questions about the test. Remind them to read the whole paper first, answer the questions they know, and come back to the others. End early and on something they can do."
+              ]
+            }
           ]
         },
         {
           "type": "table",
           "heading": "After the test: a results tally",
           "caption": "Copy this into your record book. Count how many students lost most of the marks on each part of the paper.",
-          "columns": ["Part of the paper", "Marks available", "Students who scored under half", "What to re-teach first"],
+          "columns": [
+            "Part of the paper",
+            "Marks available",
+            "Students who scored under half",
+            "What to re-teach first"
+          ],
           "rows": [
-            ["Grammar", "", "", ""],
-            ["Vocabulary", "", "", ""],
-            ["Reading comprehension", "", "", ""],
-            ["Guided writing", "", "", ""],
-            ["Free writing", "", "", ""],
-            ["Listening (if tested)", "", "", ""]
+            [
+              "Grammar",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Vocabulary",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Reading comprehension",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Guided writing",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Free writing",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Listening (if tested)",
+              "",
+              "",
+              ""
+            ]
           ]
         },
         {
           "type": "callout",
           "style": "tip",
           "title": "Use the tally before you return the scripts",
-          "text": ["The part with the most students under half is where the first week of next term goes. Tell the class what you found and what you will do about it. Students take the next test more seriously when they see the last one changed the lessons."]
+          "text": [
+            "The part with the most students under half is where the first week of next term goes. Tell the class what you found and what you will do about it. Students take the next test more seriously when they see the last one changed the lessons."
+          ]
         },
         {
           "type": "cards",
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Revision strategies", "url": "teacher-resources/revision-strategies/", "more": "Open", "text": ["Spacing, retrieval practice and the final month."] },
-            { "title": "Past papers by grade and term", "url": "past-papers/", "more": "Browse", "text": ["Term-test papers you can filter by term, province and year."] },
-            { "title": "Assessment rubrics", "url": "teacher-resources/rubrics/", "more": "Open", "text": ["Printable rubrics for writing, speaking, reading aloud and literature."] }
+            {
+              "title": "Revision strategies",
+              "url": "teacher-resources/revision-strategies/",
+              "more": "Open",
+              "text": [
+                "Spacing, retrieval practice and the final month."
+              ]
+            },
+            {
+              "title": "Past papers by grade and term",
+              "url": "past-papers/",
+              "more": "Browse",
+              "text": [
+                "Term-test papers you can filter by term, province and year."
+              ]
+            },
+            {
+              "title": "Assessment rubrics",
+              "url": "teacher-resources/rubrics/",
+              "more": "Open",
+              "text": [
+                "Printable rubrics for writing, speaking, reading aloud and literature."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/flashcards-and-games",
       "title": "Printable Flashcards and Classroom Games",
-      "metaTitle": "Printable English Flashcard Maker and Classroom Vocabulary Games | RCF English",
+      "metaTitle": "Printable English Flashcard Maker and Classroom Vocabulary Games",
       "description": "Make and print English flashcards in a minute: ready-made word sets or your own words, word-and-meaning fold cards or large word cards, plus eight classroom games that use them.",
       "keywords": "printable English flashcards, flashcard maker, vocabulary games classroom, irregular verbs flashcards, linking words cards, ESL games Sri Lanka",
       "kicker": "Teacher Resources",
       "kind": "guidance",
-      "scripts": ["flashcards"],
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Classroom Activities", "url": "teacher-resources/classroom-activities/" },
-      "hero": { "text": "Choose a word set or type your own, pick a card style, and print. Every card set below was written by RCF English and is free to copy." },
+      "scripts": [
+        "flashcards"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Classroom Activities",
+        "url": "teacher-resources/classroom-activities/"
+      },
+      "hero": {
+        "text": "Choose a word set or type your own, pick a card style, and print. Every card set below was written by RCF English and is free to copy."
+      },
       "blocks": [
         {
           "type": "flashcards",
           "id": "maker",
           "heading": "Flashcard maker",
           "eyebrow": "Print, cut and fold",
-          "intro": ["The word-and-meaning cards fold in half, with the meaning printed upside down on the lower half so it reads the right way once folded. Typed words stay on your own device."],
+          "intro": [
+            "The word-and-meaning cards fold in half, with the meaning printed upside down on the lower half so it reads the right way once folded. Typed words stay on your own device."
+          ],
           "listeningSets": true,
           "sets": [
             {
               "id": "classroom-language",
               "label": "Classroom language",
-              "items": ["Open your books = start at the page the teacher gives", "Work in pairs = work with one partner", "Take turns = one person, then the other", "Put up your hand = raise your hand to speak", "May I go out? = asking to leave the room", "Could you repeat that? = asking to hear it again", "How do you spell it? = asking for the letters", "What does it mean? = asking for the meaning", "I have finished = the work is done", "Check your answers = look again for mistakes"]
+              "items": [
+                "Open your books = start at the page the teacher gives",
+                "Work in pairs = work with one partner",
+                "Take turns = one person, then the other",
+                "Put up your hand = raise your hand to speak",
+                "May I go out? = asking to leave the room",
+                "Could you repeat that? = asking to hear it again",
+                "How do you spell it? = asking for the letters",
+                "What does it mean? = asking for the meaning",
+                "I have finished = the work is done",
+                "Check your answers = look again for mistakes"
+              ]
             },
             {
               "id": "question-words",
               "label": "Question words",
-              "items": ["who = asks about a person", "what = asks about a thing or an action", "where = asks about a place", "when = asks about a time", "why = asks for a reason", "how = asks about the way something is done", "which = asks for a choice", "whose = asks who owns something", "how many = asks about a number", "how much = asks about an amount or a price"]
+              "items": [
+                "who = asks about a person",
+                "what = asks about a thing or an action",
+                "where = asks about a place",
+                "when = asks about a time",
+                "why = asks for a reason",
+                "how = asks about the way something is done",
+                "which = asks for a choice",
+                "whose = asks who owns something",
+                "how many = asks about a number",
+                "how much = asks about an amount or a price"
+              ]
             },
             {
               "id": "irregular-verbs",
               "label": "Irregular verbs: base form and past",
-              "items": ["go = went", "come = came", "see = saw", "take = took", "give = gave", "make = made", "write = wrote", "read = read (said 'red')", "eat = ate", "drink = drank", "buy = bought", "bring = brought", "think = thought", "teach = taught", "catch = caught", "run = ran", "swim = swam", "sing = sang", "begin = began", "break = broke", "choose = chose", "speak = spoke", "wake = woke", "leave = left", "feel = felt", "keep = kept", "sleep = slept", "find = found", "tell = told", "sell = sold"]
+              "items": [
+                "go = went",
+                "come = came",
+                "see = saw",
+                "take = took",
+                "give = gave",
+                "make = made",
+                "write = wrote",
+                "read = read (said 'red')",
+                "eat = ate",
+                "drink = drank",
+                "buy = bought",
+                "bring = brought",
+                "think = thought",
+                "teach = taught",
+                "catch = caught",
+                "run = ran",
+                "swim = swam",
+                "sing = sang",
+                "begin = began",
+                "break = broke",
+                "choose = chose",
+                "speak = spoke",
+                "wake = woke",
+                "leave = left",
+                "feel = felt",
+                "keep = kept",
+                "sleep = slept",
+                "find = found",
+                "tell = told",
+                "sell = sold"
+              ]
             },
             {
               "id": "linking-words",
               "label": "Linking words for writing",
-              "items": ["and = adds an idea", "also = adds another point", "moreover = adds a stronger point", "but = shows a contrast", "however = shows a contrast between sentences", "although = contrast inside one sentence", "because = gives a reason", "so = gives a result", "therefore = gives a result, formally", "first = the first step or point", "then = the next step", "finally = the last step or point", "for example = introduces an example", "in conclusion = begins the ending"]
+              "items": [
+                "and = adds an idea",
+                "also = adds another point",
+                "moreover = adds a stronger point",
+                "but = shows a contrast",
+                "however = shows a contrast between sentences",
+                "although = contrast inside one sentence",
+                "because = gives a reason",
+                "so = gives a result",
+                "therefore = gives a result, formally",
+                "first = the first step or point",
+                "then = the next step",
+                "finally = the last step or point",
+                "for example = introduces an example",
+                "in conclusion = begins the ending"
+              ]
             },
             {
               "id": "feelings",
               "label": "Feelings",
-              "items": ["happy = feeling good", "sad = feeling unhappy", "angry = very annoyed", "afraid = feeling fear", "excited = very happy about something coming", "tired = needing rest", "bored = not interested", "proud = pleased with what you did", "worried = thinking something bad may happen", "surprised = feeling something unexpected happened", "nervous = a little afraid before something", "calm = quiet and not worried"]
+              "items": [
+                "happy = feeling good",
+                "sad = feeling unhappy",
+                "angry = very annoyed",
+                "afraid = feeling fear",
+                "excited = very happy about something coming",
+                "tired = needing rest",
+                "bored = not interested",
+                "proud = pleased with what you did",
+                "worried = thinking something bad may happen",
+                "surprised = feeling something unexpected happened",
+                "nervous = a little afraid before something",
+                "calm = quiet and not worried"
+              ]
             },
             {
               "id": "opposites",
               "label": "Opposite adjectives",
-              "items": ["big = small", "tall = short", "hot = cold", "fast = slow", "old = new", "young = old", "heavy = light", "rich = poor", "strong = weak", "easy = difficult", "early = late", "cheap = expensive", "clean = dirty", "wide = narrow", "loud = quiet", "full = empty"]
+              "items": [
+                "big = small",
+                "tall = short",
+                "hot = cold",
+                "fast = slow",
+                "old = new",
+                "young = old",
+                "heavy = light",
+                "rich = poor",
+                "strong = weak",
+                "easy = difficult",
+                "early = late",
+                "cheap = expensive",
+                "clean = dirty",
+                "wide = narrow",
+                "loud = quiet",
+                "full = empty"
+              ]
             }
           ]
         },
@@ -280,14 +715,54 @@
           "type": "accordion",
           "heading": "Eight games that use the cards",
           "items": [
-            { "q": "1. Flash and say (whole class, 5 minutes)", "a": ["Hold up a word card for one second, then hide it. The class says the word together. Speed up as they improve. Use large word-only cards."] },
-            { "q": "2. Meaning race (teams, 10 minutes)", "a": ["Read a meaning aloud. The first team to hold up or say the matching word scores. With fold cards, the meaning side faces you and the word faces the class, so you never need a list."] },
-            { "q": "3. Pairs (groups of four, 10 minutes)", "a": ["Print a set twice, once word-only and once as fold cards cut into two halves. Cards face down; students turn two over and keep them if the word matches its meaning."] },
-            { "q": "4. Missing card (whole class, 5 minutes)", "a": ["Stick eight cards on the board. Students close their eyes; remove one. The first to name the missing word comes out and removes the next one."] },
-            { "q": "5. Stand up if (whole class, 5 minutes)", "a": ["Give every student a card. Call a category: *stand up if your word is a feeling* or *stand up if your verb is irregular*. Those standing say their word."] },
-            { "q": "6. Sentence builder (pairs, 10 minutes)", "a": ["Each pair draws three cards and writes one sentence using all three words. The best sentences are read aloud. Works well with linking words."] },
-            { "q": "7. Hot seat (teams, 10 minutes)", "a": ["One student sits facing the class with their back to the board. A card is shown to the class, who explain the word without saying it. The student in the seat guesses."] },
-            { "q": "8. Line up (groups, 5 minutes)", "a": ["For irregular verbs or linking words, give each student a card and have groups arrange themselves: base form next to past form, or first, then, finally in order."] }
+            {
+              "q": "1. Flash and say (whole class, 5 minutes)",
+              "a": [
+                "Hold up a word card for one second, then hide it. The class says the word together. Speed up as they improve. Use large word-only cards."
+              ]
+            },
+            {
+              "q": "2. Meaning race (teams, 10 minutes)",
+              "a": [
+                "Read a meaning aloud. The first team to hold up or say the matching word scores. With fold cards, the meaning side faces you and the word faces the class, so you never need a list."
+              ]
+            },
+            {
+              "q": "3. Pairs (groups of four, 10 minutes)",
+              "a": [
+                "Print a set twice, once word-only and once as fold cards cut into two halves. Cards face down; students turn two over and keep them if the word matches its meaning."
+              ]
+            },
+            {
+              "q": "4. Missing card (whole class, 5 minutes)",
+              "a": [
+                "Stick eight cards on the board. Students close their eyes; remove one. The first to name the missing word comes out and removes the next one."
+              ]
+            },
+            {
+              "q": "5. Stand up if (whole class, 5 minutes)",
+              "a": [
+                "Give every student a card. Call a category: *stand up if your word is a feeling* or *stand up if your verb is irregular*. Those standing say their word."
+              ]
+            },
+            {
+              "q": "6. Sentence builder (pairs, 10 minutes)",
+              "a": [
+                "Each pair draws three cards and writes one sentence using all three words. The best sentences are read aloud. Works well with linking words."
+              ]
+            },
+            {
+              "q": "7. Hot seat (teams, 10 minutes)",
+              "a": [
+                "One student sits facing the class with their back to the board. A card is shown to the class, who explain the word without saying it. The student in the seat guesses."
+              ]
+            },
+            {
+              "q": "8. Line up (groups, 5 minutes)",
+              "a": [
+                "For irregular verbs or linking words, give each student a card and have groups arrange themselves: base form next to past form, or first, then, finally in order."
+              ]
+            }
           ]
         },
         {
@@ -295,29 +770,65 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Classroom activities", "url": "teacher-resources/classroom-activities/", "more": "Open", "text": ["Speaking, writing and reading activities needing no materials."] },
-            { "title": "Listening Laboratory", "url": "listening-lab/", "more": "Open", "text": ["Ninety-six listening tests with printable worksheets, including the Pupil's Book activities. Their word lists are in the flashcard maker."] },
-            { "title": "Worksheets by grade", "url": "teacher-resources/worksheets-by-grade/", "more": "60 worksheets", "text": ["Ten worksheets for each grade from 6 to 11, with answer keys."] }
+            {
+              "title": "Classroom activities",
+              "url": "teacher-resources/classroom-activities/",
+              "more": "Open",
+              "text": [
+                "Speaking, writing and reading activities needing no materials."
+              ]
+            },
+            {
+              "title": "Listening Laboratory",
+              "url": "listening-lab/",
+              "more": "Open",
+              "text": [
+                "Ninety-six listening tests with printable worksheets, including the Pupil's Book activities. Their word lists are in the flashcard maker."
+              ]
+            },
+            {
+              "title": "Worksheets by grade",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "60 worksheets",
+              "text": [
+                "Ten worksheets for each grade from 6 to 11, with answer keys."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "teacher-resources/professional-development",
       "title": "Professional Development for English Teachers",
-      "metaTitle": "Professional Development for English Teachers: A Year Plan, TKT and Teacher Training | RCF English",
+      "metaTitle": "Professional Development for English Teachers: A Year Plan, TKT and Teacher Training",
       "description": "A practical professional development plan for English teachers in Sri Lanka: one improvement a term, peer observation, reading, teacher communities, and what the Cambridge TKT involves and how to prepare for it.",
       "keywords": "professional development English teachers, TKT Sri Lanka, Teaching Knowledge Test modules, teacher training Sri Lanka, peer observation, CPD English teacher",
       "kicker": "Teacher Resources",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "breadcrumbs": [
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Teacher Resources",
+        "url": "teacher-resources/"
+      },
       "hero": {
         "text": "Professional development is not a certificate collected once. It is one deliberate change a term, tried in a real classroom and kept if it works.",
         "buttons": [
-          { "label": "TKT preparation course", "url": "rcf-classes/tkt/", "style": "btn--accent" },
-          { "label": "Professional reading", "url": "teacher-resources/professional-reading/", "style": "btn--ghost-light" }
+          {
+            "label": "TKT preparation course",
+            "url": "rcf-classes/tkt/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Professional reading",
+            "url": "teacher-resources/professional-reading/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -325,11 +836,36 @@
           "type": "steps",
           "heading": "A plan for one school year",
           "items": [
-            { "title": "First term: choose one problem", "text": ["Pick the single thing that costs your lessons most, such as students not speaking, weak paragraph writing, or losing the class in the last ten minutes. Write it at the front of your record book."] },
-            { "title": "Try one change for six weeks", "text": ["Read about the problem (see [Professional Reading](teacher-resources/professional-reading/)), choose one technique, and use it in every relevant lesson for six weeks. Note in one line after each lesson what happened."] },
-            { "title": "Second term: be observed", "text": ["Ask a colleague to watch twenty minutes of a lesson with only your chosen problem in mind. Use the [observation checklist](teacher-resources/lesson-plan-template/). Offer to do the same for them."] },
-            { "title": "Share what worked", "text": ["Tell your department, or the [teacher groups](about/online-communities/), what you tried and what happened, including what did not work. Explaining it is how it becomes part of your teaching."] },
-            { "title": "Third term: look at the evidence", "text": ["Compare student work from the start and the end of the year on your chosen problem. Keep the change if the work improved. Then choose next year's problem."] }
+            {
+              "title": "First term: choose one problem",
+              "text": [
+                "Pick the single thing that costs your lessons most, such as students not speaking, weak paragraph writing, or losing the class in the last ten minutes. Write it at the front of your record book."
+              ]
+            },
+            {
+              "title": "Try one change for six weeks",
+              "text": [
+                "Read about the problem (see [Professional Reading](teacher-resources/professional-reading/)), choose one technique, and use it in every relevant lesson for six weeks. Note in one line after each lesson what happened."
+              ]
+            },
+            {
+              "title": "Second term: be observed",
+              "text": [
+                "Ask a colleague to watch twenty minutes of a lesson with only your chosen problem in mind. Use the [observation checklist](teacher-resources/lesson-plan-template/). Offer to do the same for them."
+              ]
+            },
+            {
+              "title": "Share what worked",
+              "text": [
+                "Tell your department, or the [teacher groups](about/online-communities/), what you tried and what happened, including what did not work. Explaining it is how it becomes part of your teaching."
+              ]
+            },
+            {
+              "title": "Third term: look at the evidence",
+              "text": [
+                "Compare student work from the start and the end of the year on your chosen problem. Keep the change if the work improved. Then choose next year's problem."
+              ]
+            }
           ]
         },
         {
@@ -357,12 +893,54 @@
           "heading": "Training and support",
           "columns": "3",
           "items": [
-            { "title": "TKT preparation course", "url": "rcf-classes/tkt/", "more": "Course details", "text": ["A six-month online course at RCF Online Academy covering all three TKT modules."] },
-            { "title": "Teacher groups", "url": "about/online-communities/", "more": "Join", "text": ["Telegram and WhatsApp groups for English teachers, with questions answered by Rohana Fernando."] },
-            { "title": "Official training information", "url": "teacher-resources/official-links/", "more": "Open", "text": ["Teacher service, Efficiency Bar modules, NIE and the Regional English Support Centres."] },
-            { "title": "Lesson observation and self-evaluation", "url": "teacher-resources/lesson-plan-template/", "more": "Print the forms", "text": ["An observation checklist and a self-evaluation form to use with a colleague."] },
-            { "title": "Professional reading", "url": "teacher-resources/professional-reading/", "more": "Open", "text": ["What is worth reading and how to find it without a library."] },
-            { "title": "Elocution diplomas", "url": "rcf-classes/", "more": "RCF Online Academy", "text": ["Preparation courses for the CALSDA elocution diplomas. The diplomas are awarded by CALSDA, not by RCF Online Academy."] }
+            {
+              "title": "TKT preparation course",
+              "url": "rcf-classes/tkt/",
+              "more": "Course details",
+              "text": [
+                "A six-month online course at RCF Online Academy covering all three TKT modules."
+              ]
+            },
+            {
+              "title": "Teacher groups",
+              "url": "about/online-communities/",
+              "more": "Join",
+              "text": [
+                "Telegram and WhatsApp groups for English teachers, with questions answered by Rohana Fernando."
+              ]
+            },
+            {
+              "title": "Official training information",
+              "url": "teacher-resources/official-links/",
+              "more": "Open",
+              "text": [
+                "Teacher service, Efficiency Bar modules, NIE and the Regional English Support Centres."
+              ]
+            },
+            {
+              "title": "Lesson observation and self-evaluation",
+              "url": "teacher-resources/lesson-plan-template/",
+              "more": "Print the forms",
+              "text": [
+                "An observation checklist and a self-evaluation form to use with a colleague."
+              ]
+            },
+            {
+              "title": "Professional reading",
+              "url": "teacher-resources/professional-reading/",
+              "more": "Open",
+              "text": [
+                "What is worth reading and how to find it without a library."
+              ]
+            },
+            {
+              "title": "Elocution diplomas",
+              "url": "rcf-classes/",
+              "more": "RCF Online Academy",
+              "text": [
+                "Preparation courses for the CALSDA elocution diplomas. The diplomas are awarded by CALSDA, not by RCF Online Academy."
+              ]
+            }
           ]
         }
       ]

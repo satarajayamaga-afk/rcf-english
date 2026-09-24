@@ -1,11 +1,10 @@
 {
   "_comment": "AQA 8700 papers. RULES: official AQA papers, mark schemes and examiner reports are LINKED to aqa.org.uk and filestore.aqa.org.uk, never copied or re-hosted, and no unauthorised paper-sharing site is linked. Everything RCF writes is labelled 'Unofficial original RCF practice material', never called an AQA paper, and carries no AQA logo or wording implying endorsement. RCF Model Paper 1 follows the verified structure of AQA 8700 Paper 1: 1h45, 80 marks, Section A 40 marks in four questions worth 4, 8, 8 and 20, Section B 40 marks split 24 content and organisation plus 16 technical accuracy. Every source, question and prompt in it is original.",
-
   "pages": [
     {
       "slug": "global-english/gcse/aqa/papers",
       "title": "AQA English Language Past Papers",
-      "metaTitle": "AQA GCSE English Language Past Papers and Mark Schemes | RCF English",
+      "metaTitle": "AQA GCSE English Language Past Papers and Mark Schemes",
       "description": "Official AQA GCSE English Language past papers, specimen papers, mark schemes and examiner reports, linked to their source, plus an original RCF model paper.",
       "keywords": "AQA English Language past papers, AQA 8700 mark scheme, AQA English Language specimen paper, AQA paper 1 past paper, GCSE English Language practice paper",
       "kicker": "AQA GCSE English Language",
@@ -14,16 +13,36 @@
       "resourceType": "past papers",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "AQA publishes its specimen papers, mark schemes and examiner reports free of charge. Those are linked here as they are. Beside them is an original RCF practice paper, clearly labelled as practice material.",
         "buttons": [
-          { "label": "RCF Model Paper 1", "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/", "style": "btn--accent" },
-          { "label": "Marking guide", "url": "global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/", "style": "btn--ghost-light" }
+          {
+            "label": "RCF Model Paper 1",
+            "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Marking guide",
+            "url": "global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -42,16 +61,61 @@
           "heading": "Official AQA materials",
           "level": "h2",
           "caption": "Every link opens an official AQA page or document. AQA decides what is published openly and may move or withdraw items; the assessment resources page is the reliable starting point.",
-          "columns": ["Type", "Paper", "Series", "Official source"],
+          "columns": [
+            "Type",
+            "Paper",
+            "Series",
+            "Official source"
+          ],
           "rows": [
-            ["All past papers and mark schemes", "Papers 1 and 2", "Every published series", "[AQA 8700 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8700/assessment-resources)"],
-            ["Specimen question paper", "Paper 1: Explorations in Creative Reading and Writing", "Specimen", "[8700/1 specimen paper](https://filestore.aqa.org.uk/resources/english/AQA-87001-SQP-CR.PDF)"],
-            ["Specimen mark scheme", "Paper 1", "Specimen", "[8700/1 specimen mark scheme](https://filestore.aqa.org.uk/resources/english/AQA-87001-SMS.PDF)"],
-            ["Specimen question paper", "Paper 2: Writers' Viewpoints and Perspectives", "Specimen", "[8700/2 specimen paper](https://filestore.aqa.org.uk/resources/english/AQA-87002-SQP.PDF)"],
-            ["Specimen mark scheme", "Paper 2", "Specimen", "[8700/2 specimen mark scheme](https://filestore.aqa.org.uk/resources/english/AQA-87002-SMS.PDF)"],
-            ["Specification", "Both papers", "Current", "[AQA 8700 specification](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification)"],
-            ["Scheme of assessment", "Both papers", "Current", "[Assessment objectives and paper structure](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/scheme-of-assessment)"],
-            ["Specification at a glance", "Both papers", "Current", "[Papers, durations, marks and weightings](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/specification-at-a-glance)"]
+            [
+              "All past papers and mark schemes",
+              "Papers 1 and 2",
+              "Every published series",
+              "[AQA 8700 assessment resources](https://www.aqa.org.uk/subjects/english/gcse/english-8700/assessment-resources)"
+            ],
+            [
+              "Specimen question paper",
+              "Paper 1: Explorations in Creative Reading and Writing",
+              "Specimen",
+              "[8700/1 specimen paper](https://filestore.aqa.org.uk/resources/english/AQA-87001-SQP-CR.PDF)"
+            ],
+            [
+              "Specimen mark scheme",
+              "Paper 1",
+              "Specimen",
+              "[8700/1 specimen mark scheme](https://filestore.aqa.org.uk/resources/english/AQA-87001-SMS.PDF)"
+            ],
+            [
+              "Specimen question paper",
+              "Paper 2: Writers' Viewpoints and Perspectives",
+              "Specimen",
+              "[8700/2 specimen paper](https://filestore.aqa.org.uk/resources/english/AQA-87002-SQP.PDF)"
+            ],
+            [
+              "Specimen mark scheme",
+              "Paper 2",
+              "Specimen",
+              "[8700/2 specimen mark scheme](https://filestore.aqa.org.uk/resources/english/AQA-87002-SMS.PDF)"
+            ],
+            [
+              "Specification",
+              "Both papers",
+              "Current",
+              "[AQA 8700 specification](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification)"
+            ],
+            [
+              "Scheme of assessment",
+              "Both papers",
+              "Current",
+              "[Assessment objectives and paper structure](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/scheme-of-assessment)"
+            ],
+            [
+              "Specification at a glance",
+              "Both papers",
+              "Current",
+              "[Papers, durations, marks and weightings](https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/specification-at-a-glance)"
+            ]
           ]
         },
         {
@@ -68,10 +132,28 @@
           "heading": "Original RCF model papers",
           "level": "h2",
           "caption": "Unofficial original RCF practice material, written in the format of the current AQA specification. Not examination papers.",
-          "columns": ["Paper", "Type", "Modelled on", "Format", "Open"],
+          "columns": [
+            "Paper",
+            "Type",
+            "Modelled on",
+            "Format",
+            "Open"
+          ],
           "rows": [
-            ["RCF Model Paper 1", "RCF original model paper", "AQA GCSE English Language 8700, Paper 1", "1 hour 45 minutes, 80 marks, four reading questions and one writing task", "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/)"],
-            ["RCF Model Paper 2", "RCF original model paper", "AQA GCSE English Language 8700, Paper 2", "1 hour 45 minutes, 80 marks, two linked non-fiction sources from the 19th and 21st centuries", "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-2/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-2-mark-scheme/)"]
+            [
+              "RCF Model Paper 1",
+              "RCF original model paper",
+              "AQA GCSE English Language 8700, Paper 1",
+              "1 hour 45 minutes, 80 marks, four reading questions and one writing task",
+              "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-1/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/)"
+            ],
+            [
+              "RCF Model Paper 2",
+              "RCF original model paper",
+              "AQA GCSE English Language 8700, Paper 2",
+              "1 hour 45 minutes, 80 marks, two linked non-fiction sources from the 19th and 21st centuries",
+              "[Question paper](global-english/gcse/aqa/papers/rcf-model-paper-2/) and [marking guide](global-english/gcse/aqa/papers/rcf-model-paper-2-mark-scheme/)"
+            ]
           ]
         },
         {
@@ -85,15 +167,27 @@
               "title": "Question paper",
               "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/",
               "more": "Open the paper",
-              "text": ["An original unseen fiction source and five questions in the AQA Paper 1 structure, with the same marks and the same timing advice."],
-              "bullets": ["Section A: 4, 8, 8 and 20 marks", "Section B: 40 marks, description or narrative", "Prints cleanly on paper"]
+              "text": [
+                "An original unseen fiction source and five questions in the AQA Paper 1 structure, with the same marks and the same timing advice."
+              ],
+              "bullets": [
+                "Section A: 4, 8, 8 and 20 marks",
+                "Section B: 40 marks, description or narrative",
+                "Prints cleanly on paper"
+              ]
             },
             {
               "title": "Marking guide",
               "url": "global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme/",
               "more": "Open the marking guide",
-              "text": ["Indicative content for every reading question, band descriptions in plain English, and a full model answer for the writing task."],
-              "bullets": ["Written by RCF English, not by AQA", "Bands described, not reproduced", "Model answer with the reasoning explained"]
+              "text": [
+                "Indicative content for every reading question, band descriptions in plain English, and a full model answer for the writing task."
+              ],
+              "bullets": [
+                "Written by RCF English, not by AQA",
+                "Bands described, not reproduced",
+                "Model answer with the reasoning explained"
+              ]
             }
           ]
         },
@@ -108,15 +202,27 @@
               "title": "Question paper",
               "url": "global-english/gcse/aqa/papers/rcf-model-paper-2/",
               "more": "Open the paper",
-              "text": ["Two linked original non-fiction sources on cold-water swimming - one written in a nineteenth-century voice, one a 2023 column - and five questions in the AQA Paper 2 structure."],
-              "bullets": ["Section A: 4, 8, 12 and 16 marks", "Section B: 40 marks, viewpoint article", "Prints cleanly on paper"]
+              "text": [
+                "Two linked original non-fiction sources on cold-water swimming - one written in a nineteenth-century voice, one a 2023 column - and five questions in the AQA Paper 2 structure."
+              ],
+              "bullets": [
+                "Section A: 4, 8, 12 and 16 marks",
+                "Section B: 40 marks, viewpoint article",
+                "Prints cleanly on paper"
+              ]
             },
             {
               "title": "Marking guide",
               "url": "global-english/gcse/aqa/papers/rcf-model-paper-2-mark-scheme/",
               "more": "Open the marking guide",
-              "text": ["Answers to Question 1, indicative content for Questions 2 to 4, band descriptions in plain English, and full model answers for the comparison and the article."],
-              "bullets": ["Written by RCF English, not by AQA", "Bands described, not reproduced", "Model answers with the reasoning explained"]
+              "text": [
+                "Answers to Question 1, indicative content for Questions 2 to 4, band descriptions in plain English, and full model answers for the comparison and the article."
+              ],
+              "bullets": [
+                "Written by RCF English, not by AQA",
+                "Bands described, not reproduced",
+                "Model answers with the reasoning explained"
+              ]
             }
           ]
         },
@@ -166,18 +272,35 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "RCF practice questions", "url": "global-english/gcse/aqa/practice/", "text": ["Shorter original tasks with model answers."] },
-            { "title": "Revision strategies", "url": "global-english/gcse/aqa/revision/", "text": ["How to use papers in a revision plan."] },
-            { "title": "AQA English Language overview", "url": "global-english/gcse/aqa/", "text": ["Both papers, all ten questions."] }
+            {
+              "title": "RCF practice questions",
+              "url": "global-english/gcse/aqa/practice/",
+              "text": [
+                "Shorter original tasks with model answers."
+              ]
+            },
+            {
+              "title": "Revision strategies",
+              "url": "global-english/gcse/aqa/revision/",
+              "text": [
+                "How to use papers in a revision plan."
+              ]
+            },
+            {
+              "title": "AQA English Language overview",
+              "url": "global-english/gcse/aqa/",
+              "text": [
+                "Both papers, all ten questions."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/practice",
       "title": "RCF Practice Questions and Model Answers",
-      "metaTitle": "GCSE English Language Practice Questions and Model Answers | RCF English",
+      "metaTitle": "GCSE English Language Practice Questions and Model Answers",
       "description": "Original practice questions for AQA GCSE English Language with model answers and indicative content, covering every question on both papers.",
       "keywords": "GCSE English Language practice questions, AQA English Language model answers, GCSE English practice with answers, AQA English Language example answers",
       "kicker": "AQA GCSE English Language",
@@ -186,11 +309,23 @@
       "resourceType": "practice",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        }
       ],
-      "backTo": { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
+      "backTo": {
+        "label": "AQA English Language",
+        "url": "global-english/gcse/aqa/"
+      },
       "hero": {
         "text": "Every task here was written for this site. Work each one to time, then read the model answer - not before."
       },
@@ -213,16 +348,61 @@
           "heading": "Practice by question",
           "level": "h2",
           "caption": "Each task is original RCF material with an indicative answer or a full model answer.",
-          "columns": ["Question", "Marks", "What the practice gives you", "Open"],
+          "columns": [
+            "Question",
+            "Marks",
+            "What the practice gives you",
+            "Open"
+          ],
           "rows": [
-            ["Paper 1 Q1-Q4", "4, 8, 8, 20", "An original fiction extract, a worked example for each question, and practice tasks with indicative content", "[Paper 1 question by question](global-english/gcse/aqa/paper-1/questions/)"],
-            ["Paper 1 Q5", "40", "A full original model answer for a narrative opening, with the reasoning explained", "[Creative writing](global-english/gcse/aqa/paper-1/creative-writing/)"],
-            ["Paper 2 Q1-Q4", "4, 8, 12, 16", "Two original linked sources, a worked example for each question, and practice tasks", "[Paper 2 question by question](global-english/gcse/aqa/paper-2/questions/)"],
-            ["Paper 2 Q5", "40", "A full original model article with the reasoning explained, and a practice speech task", "[Viewpoint writing](global-english/gcse/aqa/paper-2/writing/)"],
-            ["Language analysis", "8 and 12", "The same quotation answered at three levels, so you can see what separates the bands", "[Language analysis](global-english/gcse/aqa/language-analysis/)"],
-            ["Comparison", "16", "A full worked comparison across two sources, with the weighing sentences marked", "[Comparing viewpoints](global-english/gcse/aqa/comparing-viewpoints/)"],
-            ["A whole paper", "80", "A complete original paper in the Paper 1 format, with a marking guide", "[RCF Model Paper 1](global-english/gcse/aqa/papers/rcf-model-paper-1/)"],
-            ["A whole paper", "80", "A complete original paper in the Paper 2 format, with two linked sources and a marking guide", "[RCF Model Paper 2](global-english/gcse/aqa/papers/rcf-model-paper-2/)"]
+            [
+              "Paper 1 Q1-Q4",
+              "4, 8, 8, 20",
+              "An original fiction extract, a worked example for each question, and practice tasks with indicative content",
+              "[Paper 1 question by question](global-english/gcse/aqa/paper-1/questions/)"
+            ],
+            [
+              "Paper 1 Q5",
+              "40",
+              "A full original model answer for a narrative opening, with the reasoning explained",
+              "[Creative writing](global-english/gcse/aqa/paper-1/creative-writing/)"
+            ],
+            [
+              "Paper 2 Q1-Q4",
+              "4, 8, 12, 16",
+              "Two original linked sources, a worked example for each question, and practice tasks",
+              "[Paper 2 question by question](global-english/gcse/aqa/paper-2/questions/)"
+            ],
+            [
+              "Paper 2 Q5",
+              "40",
+              "A full original model article with the reasoning explained, and a practice speech task",
+              "[Viewpoint writing](global-english/gcse/aqa/paper-2/writing/)"
+            ],
+            [
+              "Language analysis",
+              "8 and 12",
+              "The same quotation answered at three levels, so you can see what separates the bands",
+              "[Language analysis](global-english/gcse/aqa/language-analysis/)"
+            ],
+            [
+              "Comparison",
+              "16",
+              "A full worked comparison across two sources, with the weighing sentences marked",
+              "[Comparing viewpoints](global-english/gcse/aqa/comparing-viewpoints/)"
+            ],
+            [
+              "A whole paper",
+              "80",
+              "A complete original paper in the Paper 1 format, with a marking guide",
+              "[RCF Model Paper 1](global-english/gcse/aqa/papers/rcf-model-paper-1/)"
+            ],
+            [
+              "A whole paper",
+              "80",
+              "A complete original paper in the Paper 2 format, with two linked sources and a marking guide",
+              "[RCF Model Paper 2](global-english/gcse/aqa/papers/rcf-model-paper-2/)"
+            ]
           ]
         },
         {
@@ -232,19 +412,27 @@
           "items": [
             {
               "title": "Time it, even when it is short",
-              "text": ["A 10-minute question answered in 25 minutes tells you nothing about what you can do in the examination. Set a timer and stop when it goes."]
+              "text": [
+                "A 10-minute question answered in 25 minutes tells you nothing about what you can do in the examination. Set a timer and stop when it goes."
+              ]
             },
             {
               "title": "Do not read the model answer first",
-              "text": ["Reading a model answer before attempting the question feels like learning and is not. You will recognise the moves without being able to make them."]
+              "text": [
+                "Reading a model answer before attempting the question feels like learning and is not. You will recognise the moves without being able to make them."
+              ]
             },
             {
               "title": "Mark against the moves, not the content",
-              "text": ["Your answer will not match the model, and it should not. Ask instead: did I quote briefly, name an effect, and develop past the explanation? Those are the transferable parts."]
+              "text": [
+                "Your answer will not match the model, and it should not. Ask instead: did I quote briefly, name an effect, and develop past the explanation? Those are the transferable parts."
+              ]
             },
             {
               "title": "Redo one paragraph",
-              "text": ["Not the whole answer - one paragraph, rewritten with the missing move added. Ten minutes of that is worth more than a second full attempt."]
+              "text": [
+                "Not the whole answer - one paragraph, rewritten with the missing move added. Ten minutes of that is worth more than a second full attempt."
+              ]
             }
           ]
         },
@@ -266,18 +454,35 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "RCF Model Paper 1", "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/", "text": ["A complete original practice paper."] },
-            { "title": "Official AQA papers", "url": "global-english/gcse/aqa/papers/", "text": ["Specimen papers, mark schemes and examiner reports."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "text": ["What to check for when you mark your own work."] }
+            {
+              "title": "RCF Model Paper 1",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/",
+              "text": [
+                "A complete original practice paper."
+              ]
+            },
+            {
+              "title": "Official AQA papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "text": [
+                "Specimen papers, mark schemes and examiner reports."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "text": [
+                "What to check for when you mark your own work."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/papers/rcf-model-paper-1",
       "title": "RCF Model Paper 1: GCSE English Language",
-      "metaTitle": "GCSE English Language Practice Paper 1 with Answers | RCF English",
+      "metaTitle": "GCSE English Language Practice Paper 1 with Answers",
       "description": "A complete original GCSE English Language practice paper in the AQA Paper 1 format: an unseen fiction source, five questions, 80 marks, 1 hour 45 minutes.",
       "keywords": "GCSE English Language practice paper, AQA paper 1 practice paper, GCSE English mock paper, English Language practice paper with answers",
       "kicker": "Unofficial original RCF practice material",
@@ -286,12 +491,27 @@
       "resourceType": "practice paper",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
-        { "label": "Papers", "url": "global-english/gcse/aqa/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        },
+        {
+          "label": "Papers",
+          "url": "global-english/gcse/aqa/papers/"
+        }
       ],
-      "backTo": { "label": "Papers", "url": "global-english/gcse/aqa/papers/" },
+      "backTo": {
+        "label": "Papers",
+        "url": "global-english/gcse/aqa/papers/"
+      },
       "hero": {
         "text": "One unseen source. Five questions. Eighty marks. One hour and forty-five minutes. Everything below was written for this paper and has never appeared in an examination."
       },
@@ -311,16 +531,43 @@
           "heading": "Paper details",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Written by", "RCF English (original practice material)"],
-            ["Modelled on", "AQA GCSE English Language, specification 8700, Paper 1"],
-            ["Paper title it follows", "Explorations in Creative Reading and Writing"],
-            ["Time allowed", "1 hour 45 minutes"],
-            ["Maximum mark", "80"],
-            ["Sections", "Section A Reading, 40 marks. Section B Writing, 40 marks."],
-            ["Materials", "No dictionary. Write your answers in a separate answer book."],
-            ["Advice", "Spend about 15 minutes reading the source and all five questions. Spend about 45 minutes on each section."]
+            [
+              "Written by",
+              "RCF English (original practice material)"
+            ],
+            [
+              "Modelled on",
+              "AQA GCSE English Language, specification 8700, Paper 1"
+            ],
+            [
+              "Paper title it follows",
+              "Explorations in Creative Reading and Writing"
+            ],
+            [
+              "Time allowed",
+              "1 hour 45 minutes"
+            ],
+            [
+              "Maximum mark",
+              "80"
+            ],
+            [
+              "Sections",
+              "Section A Reading, 40 marks. Section B Writing, 40 marks."
+            ],
+            [
+              "Materials",
+              "No dictionary. Write your answers in a separate answer book."
+            ],
+            [
+              "Advice",
+              "Spend about 15 minutes reading the source and all five questions. Spend about 45 minutes on each section."
+            ]
           ]
         },
         {
@@ -365,7 +612,10 @@
             {
               "heading": "Question 1",
               "level": "h3",
-              "text": ["Read again the first part of the source, **lines 1 to 7**.", "List **four** things from this part of the text about the harbour. **[4 marks]**"]
+              "text": [
+                "Read again the first part of the source, **lines 1 to 7**.",
+                "List **four** things from this part of the text about the harbour. **[4 marks]**"
+              ]
             },
             {
               "heading": "Question 2",
@@ -437,11 +687,10 @@
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/aqa/papers/rcf-model-paper-1-mark-scheme",
       "title": "RCF Model Paper 1: Marking Guide",
-      "metaTitle": "GCSE English Language Practice Paper 1: Answers and Marking | RCF English",
+      "metaTitle": "GCSE English Language Practice Paper 1: Answers and Marking",
       "description": "Indicative content, band descriptions and a full model answer for RCF Model Paper 1, an original GCSE English Language practice paper in the AQA Paper 1 format.",
       "keywords": "GCSE English Language practice paper answers, AQA paper 1 model answers, GCSE English marking guide, English Language indicative content",
       "kicker": "Unofficial original RCF practice material",
@@ -450,12 +699,27 @@
       "resourceType": "marking guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "AQA English Language", "url": "global-english/gcse/aqa/" },
-        { "label": "Papers", "url": "global-english/gcse/aqa/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "AQA English Language",
+          "url": "global-english/gcse/aqa/"
+        },
+        {
+          "label": "Papers",
+          "url": "global-english/gcse/aqa/papers/"
+        }
       ],
-      "backTo": { "label": "RCF Model Paper 1", "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/" },
+      "backTo": {
+        "label": "RCF Model Paper 1",
+        "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/"
+      },
       "hero": {
         "text": "Indicative content for the four reading questions, band descriptions in plain English, and a full model answer for the 40-mark writing task."
       },
@@ -474,7 +738,9 @@
           "type": "prose",
           "heading": "Question 1: four things about the harbour (4 marks)",
           "level": "h2",
-          "text": ["One mark each, to a maximum of four. Accept any four separate points drawn from lines 1 to 7. Do not credit a fifth answer, and do not credit material from later in the source."],
+          "text": [
+            "One mark each, to a maximum of four. Accept any four separate points drawn from lines 1 to 7. Do not credit a fifth answer, and do not credit material from later in the source."
+          ],
           "bullets": [
             "There were two cranes.",
             "There was a yellow chandlery.",
@@ -490,7 +756,9 @@
           "type": "prose",
           "heading": "Question 2: language, lines 8 to 14 (8 marks)",
           "level": "h2",
-          "text": ["AO2. Reward what a candidate says about the effect of the writer's choices, not the number of features named. A top-band answer analyses effects, selects a judicious range of short quotations and uses terminology accurately."],
+          "text": [
+            "AO2. Reward what a candidate says about the effect of the writer's choices, not the number of features named. A top-band answer analyses effects, selects a judicious range of short quotations and uses terminology accurately."
+          ],
           "parts": [
             {
               "heading": "Indicative content",
@@ -521,7 +789,9 @@
           "type": "prose",
           "heading": "Question 3: structure (8 marks)",
           "level": "h2",
-          "text": ["AO2, structure only. Do not reward language analysis here, however good. Reward what a candidate says about the order and shape of the whole extract."],
+          "text": [
+            "AO2, structure only. Do not reward language analysis here, however good. Reward what a candidate says about the order and shape of the whole extract."
+          ],
           "parts": [
             {
               "heading": "Indicative content",
@@ -553,7 +823,9 @@
           "type": "prose",
           "heading": "Question 4: evaluation, line 15 to the end (20 marks)",
           "level": "h2",
-          "text": ["AO4. Reward a clear position, developed judgements about how the writer creates the impressions, and references that support them. Agreement, disagreement and a qualified position are all equally acceptable."],
+          "text": [
+            "AO4. Reward a clear position, developed judgements about how the writer creates the impressions, and references that support them. Agreement, disagreement and a qualified position are all equally acceptable."
+          ],
           "parts": [
             {
               "heading": "Indicative content: agreeing with the student",
@@ -592,7 +864,9 @@
           "type": "prose",
           "heading": "Question 5: writing (40 marks)",
           "level": "h2",
-          "text": ["24 marks for content and organisation (AO5) and 16 for technical accuracy (AO6). Mark the two separately, and mark content first."],
+          "text": [
+            "24 marks for content and organisation (AO5) and 16 for technical accuracy (AO6). Mark the two separately, and mark content first."
+          ],
           "parts": [
             {
               "heading": "Content and organisation, 24 marks",
@@ -650,14 +924,35 @@
           "heading": "Total marks",
           "level": "h2",
           "stacked": true,
-          "columns": ["Section", "Marks"],
+          "columns": [
+            "Section",
+            "Marks"
+          ],
           "rows": [
-            ["Question 1 (reading, retrieval)", "4"],
-            ["Question 2 (reading, language)", "8"],
-            ["Question 3 (reading, structure)", "8"],
-            ["Question 4 (reading, evaluation)", "20"],
-            ["Question 5 (writing)", "40"],
-            ["**Total**", "**80**"]
+            [
+              "Question 1 (reading, retrieval)",
+              "4"
+            ],
+            [
+              "Question 2 (reading, language)",
+              "8"
+            ],
+            [
+              "Question 3 (reading, structure)",
+              "8"
+            ],
+            [
+              "Question 4 (reading, evaluation)",
+              "20"
+            ],
+            [
+              "Question 5 (writing)",
+              "40"
+            ],
+            [
+              "**Total**",
+              "**80**"
+            ]
           ]
         },
         {
@@ -665,9 +960,27 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "RCF Model Paper 1", "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/", "text": ["The question paper itself."] },
-            { "title": "Official AQA papers", "url": "global-english/gcse/aqa/papers/", "text": ["Specimen papers, mark schemes and examiner reports."] },
-            { "title": "Common mistakes", "url": "global-english/gcse/aqa/common-mistakes/", "text": ["What to check when you mark your own work."] }
+            {
+              "title": "RCF Model Paper 1",
+              "url": "global-english/gcse/aqa/papers/rcf-model-paper-1/",
+              "text": [
+                "The question paper itself."
+              ]
+            },
+            {
+              "title": "Official AQA papers",
+              "url": "global-english/gcse/aqa/papers/",
+              "text": [
+                "Specimen papers, mark schemes and examiner reports."
+              ]
+            },
+            {
+              "title": "Common mistakes",
+              "url": "global-english/gcse/aqa/common-mistakes/",
+              "text": [
+                "What to check when you mark your own work."
+              ]
+            }
           ]
         }
       ]

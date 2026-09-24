@@ -1,11 +1,10 @@
 {
   "_comment": "OCR GCSE (9-1) English Language J351. EVERY figure verified from OCR's own documents: the specification-at-a-glance page and PDF (322620) for component structure, text types and section content; the J351/01 and J351/02 mark schemes for per-question marks, level bands and the complete AO weighting grid; the J351/02 sample assessment material for the paper's front-cover instructions. AO wording is quoted from OCR's mark schemes. Nothing of OCR's is reproduced beyond short factual phrases: no question, passage or mark-scheme descriptor is copied. Practice material is original RCF work and labelled as such.",
-
   "pages": [
     {
       "slug": "global-english/gcse/ocr",
       "title": "OCR GCSE English Language",
-      "metaTitle": "OCR GCSE English Language J351: Components, Marks and Timing | RCF English",
+      "metaTitle": "OCR GCSE English Language J351: Components, Marks and Timing",
       "description": "OCR GCSE English Language J351 explained: both components, every question and its marks, the assessment objective weightings, and the spoken language endorsement.",
       "keywords": "OCR GCSE English Language, J351, OCR English Language components, OCR J351/01, OCR J351/02, OCR English Language assessment objectives",
       "kicker": "GCSE English Language",
@@ -14,15 +13,32 @@
       "resourceType": "guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        }
       ],
-      "backTo": { "label": "GCSE English", "url": "global-english/gcse/" },
+      "backTo": {
+        "label": "GCSE English",
+        "url": "global-english/gcse/"
+      },
       "hero": {
         "text": "Two papers of exactly the same shape, two hours each, eighty marks each. Once you see the pattern, OCR is the most predictable of the four boards.",
         "buttons": [
-          { "label": "Component 01", "url": "global-english/gcse/ocr/component-1/", "style": "btn--accent" },
-          { "label": "Component 02", "url": "global-english/gcse/ocr/component-2/", "style": "btn--ghost-light" }
+          {
+            "label": "Component 01",
+            "url": "global-english/gcse/ocr/component-1/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Component 02",
+            "url": "global-english/gcse/ocr/component-2/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -48,18 +64,51 @@
           "heading": "The qualification at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Board and specification", "OCR GCSE (9-1) English Language, **J351**"],
-            ["Total assessment time", "4 hours"],
-            ["Component 01", "Communicating information and ideas. 2 hours, 80 marks, 50%"],
-            ["Component 02", "Exploring effects and impact. 2 hours, 80 marks, 50%"],
-            ["Spoken language", "**J351/03 or J351/04**. Non-exam assessment, separately endorsed."],
-            ["Texts in Component 01", "Two unseen **non-fiction** texts: one 19th century, one 20th or 21st century"],
-            ["Texts in Component 02", "Two unseen **prose or literary non-fiction** texts, 20th and/or 21st century"],
-            ["Where the texts are", "In an Insert supplied with the paper. Both papers are entirely unseen."],
-            ["Extended response", "Questions marked with an **asterisk (*)** also assess the quality of extended response."],
-            ["Guided learning hours", "140"]
+            [
+              "Board and specification",
+              "OCR GCSE (9-1) English Language, **J351**"
+            ],
+            [
+              "Total assessment time",
+              "4 hours"
+            ],
+            [
+              "Component 01",
+              "Communicating information and ideas. 2 hours, 80 marks, 50%"
+            ],
+            [
+              "Component 02",
+              "Exploring effects and impact. 2 hours, 80 marks, 50%"
+            ],
+            [
+              "Spoken language",
+              "**J351/03 or J351/04**. Non-exam assessment, separately endorsed."
+            ],
+            [
+              "Texts in Component 01",
+              "Two unseen **non-fiction** texts: one 19th century, one 20th or 21st century"
+            ],
+            [
+              "Texts in Component 02",
+              "Two unseen **prose or literary non-fiction** texts, 20th and/or 21st century"
+            ],
+            [
+              "Where the texts are",
+              "In an Insert supplied with the paper. Both papers are entirely unseen."
+            ],
+            [
+              "Extended response",
+              "Questions marked with an **asterisk (*)** also assess the quality of extended response."
+            ],
+            [
+              "Guided learning hours",
+              "140"
+            ]
           ]
         },
         {
@@ -76,19 +125,67 @@
           "heading": "How the two papers mirror each other",
           "level": "h2",
           "caption": "Marks read from the J351/01 and J351/02 mark schemes. Both Section A totals are 40 and both Section B totals are 40.",
-          "columns": ["", "Component 01", "Component 02"],
+          "columns": [
+            "",
+            "Component 01",
+            "Component 02"
+          ],
           "rows": [
-            ["Section A title", "Reading meaning and effects", "Reading meaning and effects"],
-            ["Section A time and marks", "About 1 hour, 40 marks (25%)", "About 1 hour, 40 marks (25%)"],
-            ["Short-answer questions", "2 + 2 marks", "2 + 2 marks"],
-            ["Six-mark question", "Synthesising information from **both** texts", "Language and structure in **Text 1**"],
-            ["Twelve-mark question", "Language and structure in **one** text", "Language and structure in **Text 2**"],
-            ["Eighteen-mark question", "Comparison, critically evaluating both texts (12 AO4 + 6 AO3)", "Comparison, critically evaluating both texts (12 AO4 + 6 AO3)"],
-            ["Section B title", "Writing for audience, impact and purpose", "Writing imaginatively and creatively"],
-            ["Section B time and marks", "About 1 hour, 40 marks (25%)", "About 1 hour, 40 marks (25%)"],
-            ["Section B task", "**One** non-fiction task from a choice of two", "**One** creative task from a choice of two"],
-            ["Section B mark split", "24 marks AO5 + 16 marks AO6", "24 marks AO5 + 16 marks AO6"],
-            ["Full guide", "[Component 01](global-english/gcse/ocr/component-1/)", "[Component 02](global-english/gcse/ocr/component-2/)"]
+            [
+              "Section A title",
+              "Reading meaning and effects",
+              "Reading meaning and effects"
+            ],
+            [
+              "Section A time and marks",
+              "About 1 hour, 40 marks (25%)",
+              "About 1 hour, 40 marks (25%)"
+            ],
+            [
+              "Short-answer questions",
+              "2 + 2 marks",
+              "2 + 2 marks"
+            ],
+            [
+              "Six-mark question",
+              "Synthesising information from **both** texts",
+              "Language and structure in **Text 1**"
+            ],
+            [
+              "Twelve-mark question",
+              "Language and structure in **one** text",
+              "Language and structure in **Text 2**"
+            ],
+            [
+              "Eighteen-mark question",
+              "Comparison, critically evaluating both texts (12 AO4 + 6 AO3)",
+              "Comparison, critically evaluating both texts (12 AO4 + 6 AO3)"
+            ],
+            [
+              "Section B title",
+              "Writing for audience, impact and purpose",
+              "Writing imaginatively and creatively"
+            ],
+            [
+              "Section B time and marks",
+              "About 1 hour, 40 marks (25%)",
+              "About 1 hour, 40 marks (25%)"
+            ],
+            [
+              "Section B task",
+              "**One** non-fiction task from a choice of two",
+              "**One** creative task from a choice of two"
+            ],
+            [
+              "Section B mark split",
+              "24 marks AO5 + 16 marks AO6",
+              "24 marks AO5 + 16 marks AO6"
+            ],
+            [
+              "Full guide",
+              "[Component 01](global-english/gcse/ocr/component-1/)",
+              "[Component 02](global-english/gcse/ocr/component-2/)"
+            ]
           ]
         },
         {
@@ -96,15 +193,63 @@
           "heading": "Assessment objectives and their exact weightings",
           "level": "h2",
           "caption": "The complete AO grid, read from OCR's mark schemes. Percentages are of the whole qualification and each column totals 50%.",
-          "columns": ["AO", "What it asks for", "Component 01", "Component 02", "Total"],
+          "columns": [
+            "AO",
+            "What it asks for",
+            "Component 01",
+            "Component 02",
+            "Total"
+          ],
           "rows": [
-            ["AO1", "Identify and interpret explicit and implicit information and ideas; select and synthesise evidence from different texts", "6.25%", "2.5%", "8.75%"],
-            ["AO2", "Explain, comment on and analyse how writers use language and structure to achieve effects and influence readers, using relevant subject terminology", "7.5%", "11.25%", "**18.75%**"],
-            ["AO3", "Compare writers' ideas and perspectives, and how these are conveyed, across two or more texts", "3.75%", "3.75%", "7.5%"],
-            ["AO4", "Evaluate texts critically and support this with appropriate textual references", "7.5%", "7.5%", "15%"],
-            ["AO5", "Communicate clearly, effectively and imaginatively, adapting tone, style and register; organise information and ideas using structural and grammatical features", "15%", "15%", "**30%**"],
-            ["AO6", "Use a range of vocabulary and sentence structures for clarity, purpose and effect, with accurate spelling and punctuation", "10%", "10%", "20%"],
-            ["**Total**", "-", "**50%**", "**50%**", "**100%**"]
+            [
+              "AO1",
+              "Identify and interpret explicit and implicit information and ideas; select and synthesise evidence from different texts",
+              "6.25%",
+              "2.5%",
+              "8.75%"
+            ],
+            [
+              "AO2",
+              "Explain, comment on and analyse how writers use language and structure to achieve effects and influence readers, using relevant subject terminology",
+              "7.5%",
+              "11.25%",
+              "**18.75%**"
+            ],
+            [
+              "AO3",
+              "Compare writers' ideas and perspectives, and how these are conveyed, across two or more texts",
+              "3.75%",
+              "3.75%",
+              "7.5%"
+            ],
+            [
+              "AO4",
+              "Evaluate texts critically and support this with appropriate textual references",
+              "7.5%",
+              "7.5%",
+              "15%"
+            ],
+            [
+              "AO5",
+              "Communicate clearly, effectively and imaginatively, adapting tone, style and register; organise information and ideas using structural and grammatical features",
+              "15%",
+              "15%",
+              "**30%**"
+            ],
+            [
+              "AO6",
+              "Use a range of vocabulary and sentence structures for clarity, purpose and effect, with accurate spelling and punctuation",
+              "10%",
+              "10%",
+              "20%"
+            ],
+            [
+              "**Total**",
+              "-",
+              "**50%**",
+              "**50%**",
+              "**100%**"
+            ]
           ]
         },
         {
@@ -140,9 +285,30 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "more": "Open", "text": ["Communicating information and ideas: two non-fiction texts across two centuries, and non-fiction writing."] },
-            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "more": "Open", "text": ["Exploring effects and impact: modern literary texts, and creative writing."] },
-            { "title": "Past papers", "url": "global-english/gcse/ocr/papers/", "more": "Open", "text": ["Official OCR papers, mark schemes and examiners' reports, linked to source."] }
+            {
+              "title": "Component 01",
+              "url": "global-english/gcse/ocr/component-1/",
+              "more": "Open",
+              "text": [
+                "Communicating information and ideas: two non-fiction texts across two centuries, and non-fiction writing."
+              ]
+            },
+            {
+              "title": "Component 02",
+              "url": "global-english/gcse/ocr/component-2/",
+              "more": "Open",
+              "text": [
+                "Exploring effects and impact: modern literary texts, and creative writing."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "more": "Open",
+              "text": [
+                "Official OCR papers, mark schemes and examiners' reports, linked to source."
+              ]
+            }
           ]
         },
         {
@@ -200,19 +366,42 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "text": ["Question by question, with methods."] },
-            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "text": ["Question by question, with methods."] },
-            { "title": "Past papers", "url": "global-english/gcse/ocr/papers/", "text": ["Official OCR materials."] },
-            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards compared."] }
+            {
+              "title": "Component 01",
+              "url": "global-english/gcse/ocr/component-1/",
+              "text": [
+                "Question by question, with methods."
+              ]
+            },
+            {
+              "title": "Component 02",
+              "url": "global-english/gcse/ocr/component-2/",
+              "text": [
+                "Question by question, with methods."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "text": [
+                "Official OCR materials."
+              ]
+            },
+            {
+              "title": "GCSE English overview",
+              "url": "global-english/gcse/",
+              "text": [
+                "All four boards compared."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/ocr/component-1",
       "title": "OCR Component 01: Communicating Information and Ideas",
-      "metaTitle": "OCR J351/01 Communicating Information and Ideas: Questions and Marks | RCF English",
+      "metaTitle": "OCR J351/01 Communicating Information and Ideas: Questions and Marks",
       "description": "OCR GCSE English Language Component 01 (J351/01) explained: every question with its marks, the 19th-century text, and how to handle the synthesis and comparison questions.",
       "keywords": "OCR J351/01, OCR component 1 English Language, OCR synthesis question, OCR 19th century non-fiction, OCR English Language paper 1",
       "kicker": "OCR GCSE English Language",
@@ -221,11 +410,23 @@
       "resourceType": "guidance",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "OCR English Language",
+          "url": "global-english/gcse/ocr/"
+        }
       ],
-      "backTo": { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+      "backTo": {
+        "label": "OCR English Language",
+        "url": "global-english/gcse/ocr/"
+      },
       "hero": {
         "text": "Two non-fiction texts a century or more apart, forty marks of reading, and forty marks for one piece of your own non-fiction. Two hours."
       },
@@ -243,17 +444,47 @@
           "heading": "Component 01 at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Paper code", "J351/01"],
-            ["Title", "Communicating information and ideas"],
-            ["Time", "2 hours"],
-            ["Marks", "80"],
-            ["Weighting", "50% of the GCSE"],
-            ["Texts", "Two unseen **non-fiction** texts: one 19th century, one 20th or 21st century, in an Insert"],
-            ["Section A", "Reading meaning and effects. About 1 hour, 40 marks."],
-            ["Section B", "Writing for audience, impact and purpose. About 1 hour, 40 marks."],
-            ["Section B choice", "One task from a choice of two"]
+            [
+              "Paper code",
+              "J351/01"
+            ],
+            [
+              "Title",
+              "Communicating information and ideas"
+            ],
+            [
+              "Time",
+              "2 hours"
+            ],
+            [
+              "Marks",
+              "80"
+            ],
+            [
+              "Weighting",
+              "50% of the GCSE"
+            ],
+            [
+              "Texts",
+              "Two unseen **non-fiction** texts: one 19th century, one 20th or 21st century, in an Insert"
+            ],
+            [
+              "Section A",
+              "Reading meaning and effects. About 1 hour, 40 marks."
+            ],
+            [
+              "Section B",
+              "Writing for audience, impact and purpose. About 1 hour, 40 marks."
+            ],
+            [
+              "Section B choice",
+              "One task from a choice of two"
+            ]
           ]
         },
         {
@@ -370,18 +601,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "text": ["The literary paper, and creative writing."] },
-            { "title": "OCR past papers", "url": "global-english/gcse/ocr/papers/", "text": ["Official papers, mark schemes and examiners' reports."] },
-            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": ["Both components and the AO grid."] }
+            {
+              "title": "Component 02",
+              "url": "global-english/gcse/ocr/component-2/",
+              "text": [
+                "The literary paper, and creative writing."
+              ]
+            },
+            {
+              "title": "OCR past papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "text": [
+                "Official papers, mark schemes and examiners' reports."
+              ]
+            },
+            {
+              "title": "OCR overview",
+              "url": "global-english/gcse/ocr/",
+              "text": [
+                "Both components and the AO grid."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/ocr/component-2",
       "title": "OCR Component 02: Exploring Effects and Impact",
-      "metaTitle": "OCR J351/02 Exploring Effects and Impact: Questions and Marks | RCF English",
+      "metaTitle": "OCR J351/02 Exploring Effects and Impact: Questions and Marks",
       "description": "OCR GCSE English Language Component 02 (J351/02) explained: every question with its marks, the two literary texts, and the 40-mark creative writing task.",
       "keywords": "OCR J351/02, OCR component 2 English Language, OCR creative writing task, OCR English Language paper 2, OCR literary texts",
       "kicker": "OCR GCSE English Language",
@@ -390,11 +638,23 @@
       "resourceType": "guidance",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "OCR English Language",
+          "url": "global-english/gcse/ocr/"
+        }
       ],
-      "backTo": { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+      "backTo": {
+        "label": "OCR English Language",
+        "url": "global-english/gcse/ocr/"
+      },
       "hero": {
         "text": "The same skeleton as Component 01, but the language question is asked twice - once on each text - and the writing is your own."
       },
@@ -412,17 +672,47 @@
           "heading": "Component 02 at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Paper code", "J351/02"],
-            ["Title", "Exploring effects and impact"],
-            ["Time", "2 hours"],
-            ["Marks", "80"],
-            ["Weighting", "50% of the GCSE"],
-            ["Texts", "Two unseen **prose or literary non-fiction** texts, 20th and/or 21st century, in an Insert"],
-            ["Section A", "Reading meaning and effects. About 1 hour, 40 marks. **All** questions compulsory."],
-            ["Section B", "Writing imaginatively and creatively. About 1 hour, 40 marks. **One** task from a choice of two."],
-            ["Extended response", "Questions marked with an asterisk (*) also assess quality of extended response"]
+            [
+              "Paper code",
+              "J351/02"
+            ],
+            [
+              "Title",
+              "Exploring effects and impact"
+            ],
+            [
+              "Time",
+              "2 hours"
+            ],
+            [
+              "Marks",
+              "80"
+            ],
+            [
+              "Weighting",
+              "50% of the GCSE"
+            ],
+            [
+              "Texts",
+              "Two unseen **prose or literary non-fiction** texts, 20th and/or 21st century, in an Insert"
+            ],
+            [
+              "Section A",
+              "Reading meaning and effects. About 1 hour, 40 marks. **All** questions compulsory."
+            ],
+            [
+              "Section B",
+              "Writing imaginatively and creatively. About 1 hour, 40 marks. **One** task from a choice of two."
+            ],
+            [
+              "Extended response",
+              "Questions marked with an asterisk (*) also assess quality of extended response"
+            ]
           ]
         },
         {
@@ -550,18 +840,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "text": ["The non-fiction paper, with the 19th-century text."] },
-            { "title": "OCR past papers", "url": "global-english/gcse/ocr/papers/", "text": ["Official papers, mark schemes and examiners' reports."] },
-            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": ["Both components and the AO grid."] }
+            {
+              "title": "Component 01",
+              "url": "global-english/gcse/ocr/component-1/",
+              "text": [
+                "The non-fiction paper, with the 19th-century text."
+              ]
+            },
+            {
+              "title": "OCR past papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "text": [
+                "Official papers, mark schemes and examiners' reports."
+              ]
+            },
+            {
+              "title": "OCR overview",
+              "url": "global-english/gcse/ocr/",
+              "text": [
+                "Both components and the AO grid."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/ocr/papers",
       "title": "OCR English Language Past Papers",
-      "metaTitle": "OCR GCSE English Language J351 Past Papers and Mark Schemes | RCF English",
+      "metaTitle": "OCR GCSE English Language J351 Past Papers and Mark Schemes",
       "description": "Official OCR GCSE English Language J351 past papers, mark schemes and sample assessment materials, linked to their source on ocr.org.uk.",
       "keywords": "OCR J351 past papers, OCR English Language mark scheme, OCR GCSE English past papers, J351/01 past paper, J351/02 mark scheme",
       "kicker": "OCR GCSE English Language",
@@ -570,11 +877,23 @@
       "resourceType": "past papers",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "OCR English Language",
+          "url": "global-english/gcse/ocr/"
+        }
       ],
-      "backTo": { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
+      "backTo": {
+        "label": "OCR English Language",
+        "url": "global-english/gcse/ocr/"
+      },
       "hero": {
         "text": "OCR publishes its specification, sample assessment materials and mark schemes openly. They are linked here as they are."
       },
@@ -593,16 +912,52 @@
           "heading": "Official OCR materials",
           "level": "h2",
           "caption": "Every link opens an official OCR page or document. OCR decides what is published openly and may move items; the qualification page is the reliable starting point.",
-          "columns": ["Type", "Component", "Official source"],
+          "columns": [
+            "Type",
+            "Component",
+            "Official source"
+          ],
           "rows": [
-            ["Qualification page: specification, past papers, mark schemes and reports", "Both", "[OCR GCSE English Language J351](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/)"],
-            ["Specification at a glance", "Both", "[Specification at a glance](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/specification-at-a-glance/)"],
-            ["Full accredited specification", "Both", "[J351 specification PDF](https://www.ocr.org.uk/Images/168996-specification-accredited-gcse-english-language-j351.pdf)"],
-            ["One-page summary of both components", "Both", "[English Language at a glance PDF](https://www.ocr.org.uk/Images/322620-gcse-english-language-at-a-glance-.pdf)"],
-            ["Sample assessment material", "Component 02", "[J351/02 sample assessment material](https://www.ocr.org.uk/images/169264-unit-j351-02-exploring-effects-and-impact-sample-assessment-material.pdf)"],
-            ["Mark scheme", "Component 01", "[J351/01 mark scheme](https://www.ocr.org.uk/Images/515790-j351-01-markscheme.pdf)"],
-            ["Administration, entry codes and deadlines", "Both", "[Administration](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/administration/)"],
-            ["Schemes of work", "Both", "[Scheme of work](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/scheme-of-work/)"]
+            [
+              "Qualification page: specification, past papers, mark schemes and reports",
+              "Both",
+              "[OCR GCSE English Language J351](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/)"
+            ],
+            [
+              "Specification at a glance",
+              "Both",
+              "[Specification at a glance](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/specification-at-a-glance/)"
+            ],
+            [
+              "Full accredited specification",
+              "Both",
+              "[J351 specification PDF](https://www.ocr.org.uk/Images/168996-specification-accredited-gcse-english-language-j351.pdf)"
+            ],
+            [
+              "One-page summary of both components",
+              "Both",
+              "[English Language at a glance PDF](https://www.ocr.org.uk/Images/322620-gcse-english-language-at-a-glance-.pdf)"
+            ],
+            [
+              "Sample assessment material",
+              "Component 02",
+              "[J351/02 sample assessment material](https://www.ocr.org.uk/images/169264-unit-j351-02-exploring-effects-and-impact-sample-assessment-material.pdf)"
+            ],
+            [
+              "Mark scheme",
+              "Component 01",
+              "[J351/01 mark scheme](https://www.ocr.org.uk/Images/515790-j351-01-markscheme.pdf)"
+            ],
+            [
+              "Administration, entry codes and deadlines",
+              "Both",
+              "[Administration](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/administration/)"
+            ],
+            [
+              "Schemes of work",
+              "Both",
+              "[Scheme of work](https://www.ocr.org.uk/qualifications/gcse/english-language-j351-from-2015/scheme-of-work/)"
+            ]
           ]
         },
         {
@@ -629,15 +984,27 @@
               "title": "Question paper",
               "url": "global-english/gcse/ocr/papers/rcf-model-component-1/",
               "more": "Open the paper",
-              "text": ["Both texts and all seven questions, in the J351/01 structure, for working under timed conditions."],
-              "bullets": ["Section A: 2, 2, 6, 12 and 18 marks", "Section B: 40 marks, a choice of two", "Prints cleanly on paper"]
+              "text": [
+                "Both texts and all seven questions, in the J351/01 structure, for working under timed conditions."
+              ],
+              "bullets": [
+                "Section A: 2, 2, 6, 12 and 18 marks",
+                "Section B: 40 marks, a choice of two",
+                "Prints cleanly on paper"
+              ]
             },
             {
               "title": "Marking guide",
               "url": "global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme/",
               "more": "Open the marking guide",
-              "text": ["Answers for all five reading questions, plain-English band descriptions and full model answers for the 12-mark, the 18-mark and the speech."],
-              "bullets": ["What separates the bands, per question", "Why each model answer works", "The faults that cost most marks"]
+              "text": [
+                "Answers for all five reading questions, plain-English band descriptions and full model answers for the 12-mark, the 18-mark and the speech."
+              ],
+              "bullets": [
+                "What separates the bands, per question",
+                "Why each model answer works",
+                "The faults that cost most marks"
+              ]
             }
           ]
         },
@@ -684,10 +1051,34 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": ["Both components and the AO grid."] },
-            { "title": "Component 01", "url": "global-english/gcse/ocr/component-1/", "text": ["Question by question."] },
-            { "title": "Component 02", "url": "global-english/gcse/ocr/component-2/", "text": ["Question by question."] },
-            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards compared."] }
+            {
+              "title": "OCR overview",
+              "url": "global-english/gcse/ocr/",
+              "text": [
+                "Both components and the AO grid."
+              ]
+            },
+            {
+              "title": "Component 01",
+              "url": "global-english/gcse/ocr/component-1/",
+              "text": [
+                "Question by question."
+              ]
+            },
+            {
+              "title": "Component 02",
+              "url": "global-english/gcse/ocr/component-2/",
+              "text": [
+                "Question by question."
+              ]
+            },
+            {
+              "title": "GCSE English overview",
+              "url": "global-english/gcse/",
+              "text": [
+                "All four boards compared."
+              ]
+            }
           ]
         }
       ]

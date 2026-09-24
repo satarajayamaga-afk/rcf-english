@@ -8,39 +8,87 @@
       "kicker": "A/L Literature",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "The gap between a competent A/L answer and a strong one is almost always the same gap: the strong one says what the writing does to a reader, and why." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "The gap between a competent A/L answer and a strong one is almost always the same gap: the strong one says what the writing does to a reader, and why."
+      },
       "blocks": [
         {
           "type": "steps",
           "heading": "The six stages, applied to a single paragraph",
           "variant": "navy",
           "items": [
-            { "title": "Understanding", "text": ["Be sure you know what the passage says before you say what it does. Misreading is fatal and no amount of technical vocabulary conceals it."] },
-            { "title": "Selecting evidence", "text": ["Choose two or three short pieces, not eight. The choice itself is being assessed: a candidate who quotes the obvious line and the unexpected one shows more than a candidate who quotes four obvious ones."] },
-            { "title": "Explaining technique", "text": ["Name what the writer has done — a word choice, an image, a syntactic arrangement, a structural placement. Be specific enough that it could not apply to another text."] },
-            { "title": "Analysing effect", "text": ["Say what it does to the reader, and why it is placed there. This is the sentence that distinguishes analysis from description."] },
-            { "title": "Developing the argument", "text": ["Qualify, complicate, or meet an objection. An argument that never encounters resistance reads as unconsidered."] },
-            { "title": "Linking", "text": ["Connect the paragraph to your overall thesis and to the question. One sentence."] }
+            {
+              "title": "Understanding",
+              "text": [
+                "Be sure you know what the passage says before you say what it does. Misreading is fatal and no amount of technical vocabulary conceals it."
+              ]
+            },
+            {
+              "title": "Selecting evidence",
+              "text": [
+                "Choose two or three short pieces, not eight. The choice itself is being assessed: a candidate who quotes the obvious line and the unexpected one shows more than a candidate who quotes four obvious ones."
+              ]
+            },
+            {
+              "title": "Explaining technique",
+              "text": [
+                "Name what the writer has done — a word choice, an image, a syntactic arrangement, a structural placement. Be specific enough that it could not apply to another text."
+              ]
+            },
+            {
+              "title": "Analysing effect",
+              "text": [
+                "Say what it does to the reader, and why it is placed there. This is the sentence that distinguishes analysis from description."
+              ]
+            },
+            {
+              "title": "Developing the argument",
+              "text": [
+                "Qualify, complicate, or meet an objection. An argument that never encounters resistance reads as unconsidered."
+              ]
+            },
+            {
+              "title": "Linking",
+              "text": [
+                "Connect the paragraph to your overall thesis and to the question. One sentence."
+              ]
+            }
           ]
         },
         {
           "type": "model",
           "heading": "The same paragraph, developed three times",
-          "intro": ["The example uses an invented text so that the method can be shown without reproducing a copyrighted work."],
+          "intro": [
+            "The example uses an invented text so that the method can be shown without reproducing a copyrighted work."
+          ],
           "items": [
             {
               "label": "Level 1 — Understanding only",
-              "sample": ["The narrator describes the house in great detail. This shows that the house is important to the family and that they have lived there a long time."],
-              "notes": ["Accurate, and entirely descriptive. There is no evidence, no technique and no effect. This is O/L work presented at A/L."]
+              "sample": [
+                "The narrator describes the house in great detail. This shows that the house is important to the family and that they have lived there a long time."
+              ],
+              "notes": [
+                "Accurate, and entirely descriptive. There is no evidence, no technique and no effect. This is O/L work presented at A/L."
+              ]
             },
             {
               "label": "Level 2 — Evidence and technique",
               "sample": [
                 "The narrator's description of the house works largely through accumulation: the \"third stair that had never been mended\", the \"door that opened only if lifted\". The listing of small defects rather than of features suggests a house known through inconvenience rather than through affection."
               ],
-              "notes": ["Now there is evidence and a technique named — accumulation, and specifically the choice to list defects. But the paragraph stops before saying what this does to a reader."]
+              "notes": [
+                "Now there is evidence and a technique named — accumulation, and specifically the choice to list defects. But the paragraph stops before saying what this does to a reader."
+              ]
             },
             {
               "label": "Level 3 — With effect and argument",
@@ -63,7 +111,9 @@
           "type": "prose",
           "heading": "Phrases that force development",
           "variant": "tint",
-          "text": ["Use these until the habit is automatic. Each one obliges you to write a further sentence."],
+          "text": [
+            "Use these until the habit is automatic. Each one obliges you to write a further sentence."
+          ],
           "bullets": [
             "*The effect of this is…* / *The reader is therefore…*",
             "*What makes this striking is that…*",
@@ -89,14 +139,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" },
-            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" }
+            {
+              "title": "Essay Questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/critical-appreciation",
       "title": "Critical Appreciation",
@@ -105,9 +166,19 @@
       "kicker": "A/L Literature",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "You cannot revise for an unseen. You can, however, practise a method until it works under pressure — and that is exactly what candidates who do well have done." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "You cannot revise for an unseen. You can, however, practise a method until it works under pressure — and that is exactly what candidates who do well have done."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -122,27 +193,93 @@
           "heading": "A method for the first ten minutes",
           "variant": "tint",
           "items": [
-            { "title": "Read twice, the second time slowly", "text": ["The first reading is for the whole; the second for the parts. Never begin writing after one reading — first impressions of an unseen are frequently wrong, and a misread passage cannot be rescued by good prose."] },
-            { "title": "Establish the situation", "text": ["Who speaks? To whom? About what? When? A single sentence answering these settles the ground. If you genuinely cannot tell, say so and give the possibilities — an honest uncertainty, argued, is better than a confident error."] },
-            { "title": "Find the movement", "text": ["Where does the passage change — in tone, in tense, in address, in pace? Mark it. The movement is almost always what your essay should be organised around."] },
-            { "title": "Mark three or four striking details", "text": ["Not the whole text: three or four places where the writing does something you can describe. Underline them. These become your evidence."] },
-            { "title": "Decide your thesis in one sentence", "text": ["*This poem does X by means of Y.* If you cannot write that sentence, read again — do not start writing and hope it emerges. It will not."] },
-            { "title": "Plan three paragraphs by idea", "text": ["Not by stanza, not by line order. Three effects, each with its evidence."] }
+            {
+              "title": "Read twice, the second time slowly",
+              "text": [
+                "The first reading is for the whole; the second for the parts. Never begin writing after one reading — first impressions of an unseen are frequently wrong, and a misread passage cannot be rescued by good prose."
+              ]
+            },
+            {
+              "title": "Establish the situation",
+              "text": [
+                "Who speaks? To whom? About what? When? A single sentence answering these settles the ground. If you genuinely cannot tell, say so and give the possibilities — an honest uncertainty, argued, is better than a confident error."
+              ]
+            },
+            {
+              "title": "Find the movement",
+              "text": [
+                "Where does the passage change — in tone, in tense, in address, in pace? Mark it. The movement is almost always what your essay should be organised around."
+              ]
+            },
+            {
+              "title": "Mark three or four striking details",
+              "text": [
+                "Not the whole text: three or four places where the writing does something you can describe. Underline them. These become your evidence."
+              ]
+            },
+            {
+              "title": "Decide your thesis in one sentence",
+              "text": [
+                "*This poem does X by means of Y.* If you cannot write that sentence, read again — do not start writing and hope it emerges. It will not."
+              ]
+            },
+            {
+              "title": "Plan three paragraphs by idea",
+              "text": [
+                "Not by stanza, not by line order. Three effects, each with its evidence."
+              ]
+            }
           ]
         },
         {
           "type": "table",
           "heading": "What to look for, and what to say about it",
-          "columns": ["Notice", "Then ask", "Which produces"],
+          "columns": [
+            "Notice",
+            "Then ask",
+            "Which produces"
+          ],
           "rows": [
-            ["Situation and speaker", "Who is speaking, and does the reader see more than they do?", "Comment on voice and irony"],
-            ["Tone, and any change in it", "Where exactly does it shift, and what causes the shift?", "The structural spine of your answer"],
-            ["Recurring images", "Do they belong to one family — natural, mechanical, religious, domestic?", "A pattern to argue from, not isolated devices"],
-            ["Diction and register", "Plain or elaborate? Formal or colloquial? Any word out of place?", "The single word out of place is usually the most rewarding detail in the passage"],
-            ["Syntax", "Long or short sentences? Do they match the lines or fight them?", "Comment on pace and control"],
-            ["Sound", "Is it smooth or harsh? Where is it disturbed?", "Comment on effect rather than mere identification"],
-            ["Form and layout", "Regular or irregular? Where is the pattern broken?", "Comment on form as meaning"],
-            ["The ending", "Does it resolve, refuse to resolve, or undercut what came before?", "Your conclusion"]
+            [
+              "Situation and speaker",
+              "Who is speaking, and does the reader see more than they do?",
+              "Comment on voice and irony"
+            ],
+            [
+              "Tone, and any change in it",
+              "Where exactly does it shift, and what causes the shift?",
+              "The structural spine of your answer"
+            ],
+            [
+              "Recurring images",
+              "Do they belong to one family — natural, mechanical, religious, domestic?",
+              "A pattern to argue from, not isolated devices"
+            ],
+            [
+              "Diction and register",
+              "Plain or elaborate? Formal or colloquial? Any word out of place?",
+              "The single word out of place is usually the most rewarding detail in the passage"
+            ],
+            [
+              "Syntax",
+              "Long or short sentences? Do they match the lines or fight them?",
+              "Comment on pace and control"
+            ],
+            [
+              "Sound",
+              "Is it smooth or harsh? Where is it disturbed?",
+              "Comment on effect rather than mere identification"
+            ],
+            [
+              "Form and layout",
+              "Regular or irregular? Where is the pattern broken?",
+              "Comment on form as meaning"
+            ],
+            [
+              "The ending",
+              "Does it resolve, refuse to resolve, or undercut what came before?",
+              "Your conclusion"
+            ]
           ]
         },
         {
@@ -180,14 +317,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Poetry", "url": "al-literature/poetry/", "more": "Open" },
-            { "title": "Prose", "url": "al-literature/prose/", "more": "Open" },
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" }
+            {
+              "title": "Poetry",
+              "url": "al-literature/poetry/",
+              "more": "Open"
+            },
+            {
+              "title": "Prose",
+              "url": "al-literature/prose/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/context-questions",
       "title": "Context Questions",
@@ -195,9 +343,19 @@
       "keywords": "context questions, extract, A/L Literature, passage questions",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "A context question is a small essay question. It wants precision, not volume — but at this level it also wants significance." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "A context question is a small essay question. It wants precision, not volume — but at this level it also wants significance."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -211,14 +369,42 @@
           "type": "table",
           "heading": "Question types and what they want",
           "variant": "tint",
-          "columns": ["Question", "What it wants", "Length"],
+          "columns": [
+            "Question",
+            "What it wants",
+            "Length"
+          ],
           "rows": [
-            ["Place this passage in the work", "The stage of the action and what has just occurred", "One or two sentences"],
-            ["What is the significance of this moment?", "Its consequence, and what it changes", "Three or four sentences"],
-            ["Comment on the language of the underlined phrase", "The technique, the effect, and its appropriateness here", "Three or four sentences"],
-            ["What does this reveal about the speaker?", "A quality, the evidence, and any gap between what they say and what we see", "Three or four sentences"],
-            ["How does this passage contribute to a theme?", "The theme as a sentence, the evidence, and the stage of its development", "A short paragraph"],
-            ["What is the dramatic effect of this moment?", "What an audience knows, feels and expects at this point", "A short paragraph"]
+            [
+              "Place this passage in the work",
+              "The stage of the action and what has just occurred",
+              "One or two sentences"
+            ],
+            [
+              "What is the significance of this moment?",
+              "Its consequence, and what it changes",
+              "Three or four sentences"
+            ],
+            [
+              "Comment on the language of the underlined phrase",
+              "The technique, the effect, and its appropriateness here",
+              "Three or four sentences"
+            ],
+            [
+              "What does this reveal about the speaker?",
+              "A quality, the evidence, and any gap between what they say and what we see",
+              "Three or four sentences"
+            ],
+            [
+              "How does this passage contribute to a theme?",
+              "The theme as a sentence, the evidence, and the stage of its development",
+              "A short paragraph"
+            ],
+            [
+              "What is the dramatic effect of this moment?",
+              "What an audience knows, feels and expects at this point",
+              "A short paragraph"
+            ]
           ]
         },
         {
@@ -260,14 +446,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Essay Questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination Guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/essay-questions",
       "title": "Essay Questions",
@@ -276,18 +473,48 @@
       "kicker": "A/L Literature",
       "kind": "lesson",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "The essay is where A/L Literature is won and lost. Almost everything depends on the ten minutes before you write." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "The essay is where A/L Literature is won and lost. Almost everything depends on the ten minutes before you write."
+      },
       "blocks": [
         {
           "type": "steps",
           "heading": "Reading the question",
           "items": [
-            { "title": "Identify the claim inside the question", "text": ["Most A/L questions contain a proposition, often in a quotation. Rewrite it as a plain statement. *\"Tragedy in this play arises from character, not circumstance.\" Discuss.* becomes: *the tragedy is caused by character rather than circumstance — how far is that true?*"] },
-            { "title": "Notice the loaded word", "text": ["*Merely*, *primarily*, *always*, *never*, *only*. These are the questions' hinges. A question saying tragedy arises *only* from character can be answered by finding one clear instance where it does not."] },
-            { "title": "Decide where you stand — including partly", "text": ["The best A/L answers usually agree in part. *This is true of the first three acts but not of the fourth* is a stronger thesis than wholesale agreement or wholesale rejection."] },
-            { "title": "Check the scope", "text": ["Is the question about the whole work, one character, one relationship, one act? An answer that ranges beyond its scope loses focus and marks."] }
+            {
+              "title": "Identify the claim inside the question",
+              "text": [
+                "Most A/L questions contain a proposition, often in a quotation. Rewrite it as a plain statement. *\"Tragedy in this play arises from character, not circumstance.\" Discuss.* becomes: *the tragedy is caused by character rather than circumstance — how far is that true?*"
+              ]
+            },
+            {
+              "title": "Notice the loaded word",
+              "text": [
+                "*Merely*, *primarily*, *always*, *never*, *only*. These are the questions' hinges. A question saying tragedy arises *only* from character can be answered by finding one clear instance where it does not."
+              ]
+            },
+            {
+              "title": "Decide where you stand — including partly",
+              "text": [
+                "The best A/L answers usually agree in part. *This is true of the first three acts but not of the fourth* is a stronger thesis than wholesale agreement or wholesale rejection."
+              ]
+            },
+            {
+              "title": "Check the scope",
+              "text": [
+                "Is the question about the whole work, one character, one relationship, one act? An answer that ranges beyond its scope loses focus and marks."
+              ]
+            }
           ]
         },
         {
@@ -304,11 +531,40 @@
         {
           "type": "prose",
           "heading": "Structuring the argument",
-          "text": ["A strong A/L essay moves. Each of these shapes moves; a list of points does not."],
+          "text": [
+            "A strong A/L essay moves. Each of these shapes moves; a list of points does not."
+          ],
           "parts": [
-            { "heading": "The qualification shape", "bullets": ["Para 1: the case for the proposition, put fairly and strongly.", "Para 2: where it holds, with evidence.", "Para 3: where it does not hold — the complication.", "Para 4: the resolution — a more precise version of the proposition.", "**Best for:** *how far do you agree* questions."] },
-            { "heading": "The development shape", "bullets": ["Para 1: how the matter stands early in the work.", "Para 2: what changes it.", "Para 3: how it stands at the end.", "Para 4: what the change means.", "**Best for:** questions about a character, a theme or a relationship over a whole work."] },
-            { "heading": "The competing readings shape", "bullets": ["Para 1: the conventional reading, stated fairly.", "Para 2: the evidence that supports it.", "Para 3: the evidence it cannot accommodate.", "Para 4: your reading, and why it accounts for more.", "**Best for:** questions quoting a critical opinion."] }
+            {
+              "heading": "The qualification shape",
+              "bullets": [
+                "Para 1: the case for the proposition, put fairly and strongly.",
+                "Para 2: where it holds, with evidence.",
+                "Para 3: where it does not hold — the complication.",
+                "Para 4: the resolution — a more precise version of the proposition.",
+                "**Best for:** *how far do you agree* questions."
+              ]
+            },
+            {
+              "heading": "The development shape",
+              "bullets": [
+                "Para 1: how the matter stands early in the work.",
+                "Para 2: what changes it.",
+                "Para 3: how it stands at the end.",
+                "Para 4: what the change means.",
+                "**Best for:** questions about a character, a theme or a relationship over a whole work."
+              ]
+            },
+            {
+              "heading": "The competing readings shape",
+              "bullets": [
+                "Para 1: the conventional reading, stated fairly.",
+                "Para 2: the evidence that supports it.",
+                "Para 3: the evidence it cannot accommodate.",
+                "Para 4: your reading, and why it accounts for more.",
+                "**Best for:** questions quoting a critical opinion."
+              ]
+            }
           ]
         },
         {
@@ -344,26 +600,47 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" },
-            { "title": "Literary Theory", "url": "al-literature/literary-theory/", "more": "Open" },
-            { "title": "Common Student Mistakes", "url": "al-literature/common-mistakes/", "more": "Open" }
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Literary Theory",
+              "url": "al-literature/literary-theory/",
+              "more": "Open"
+            },
+            {
+              "title": "Common Student Mistakes",
+              "url": "al-literature/common-mistakes/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/model-answers",
       "title": "Model Answers",
-      "metaTitle": "A/L English Literature Model Answers: Context and Essay Format | RCF English",
+      "metaTitle": "A/L English Literature Model Answers: Context and Essay Format",
       "description": "A/L English model answers built on the marking grid: identification, relevance to plot, character and theme, literary features and language, with four context answers and four essays.",
       "keywords": "A/L English literature model answers, context question 8 marks, A/L literature essay, marking scheme format, Othello Tess context answer",
       "kicker": "A/L Literature",
       "kind": "guidance",
       "schema": "LearningResource",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Eight model answers - one context and one essay for poetry, the short story, the novel and drama - built on the four criteria the marking grid actually uses." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Eight model answers - one context and one essay for poetry, the short story, the novel and drama - built on the four criteria the marking grid actually uses."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -382,13 +659,37 @@
           "level": "h2",
           "caption": "Part A of Paper 1 carries four context questions of 8 marks each. All four criteria are assessed on the same answer at the same time.",
           "stacked": true,
-          "columns": ["Criterion", "Marks", "What earns them"],
+          "columns": [
+            "Criterion",
+            "Marks",
+            "What earns them"
+          ],
           "rows": [
-            ["Identification of text, author, context", "**1**", "The work, the writer, the speaker, the listener, and where the passage falls. The scheme states this basic identification is **required before the other categories can be considered at all**."],
-            ["Relevance to text, theme, plot, character", "**3**", "The largest block. What the passage reveals, what it turns, what it sets up."],
-            ["Literary features", "**1**", "Style, vocabulary, tone and devices - **integrated into the argument**, not listed."],
-            ["Language", "**3**", "Your own English: accuracy, coherence, persuasiveness. Equal in weight to relevance."],
-            ["**Total**", "**8**", "Four questions of 8 marks each in Part A."]
+            [
+              "Identification of text, author, context",
+              "**1**",
+              "The work, the writer, the speaker, the listener, and where the passage falls. The scheme states this basic identification is **required before the other categories can be considered at all**."
+            ],
+            [
+              "Relevance to text, theme, plot, character",
+              "**3**",
+              "The largest block. What the passage reveals, what it turns, what it sets up."
+            ],
+            [
+              "Literary features",
+              "**1**",
+              "Style, vocabulary, tone and devices - **integrated into the argument**, not listed."
+            ],
+            [
+              "Language",
+              "**3**",
+              "Your own English: accuracy, coherence, persuasiveness. Equal in weight to relevance."
+            ],
+            [
+              "**Total**",
+              "**8**",
+              "Four questions of 8 marks each in Part A."
+            ]
           ]
         },
         {
@@ -413,7 +714,6 @@
             "Aim for **250 to 350 words**. That is enough writing for the language mark to be judged, and it fits the time you have for four of them."
           ]
         },
-
         {
           "type": "model",
           "heading": "Context 1 - Poetry",
@@ -513,7 +813,6 @@
             }
           ]
         },
-
         {
           "type": "prose",
           "heading": "The essay questions",
@@ -616,7 +915,6 @@
             }
           ]
         },
-
         {
           "type": "dodont",
           "heading": "Common pitfalls",
@@ -640,7 +938,9 @@
           "type": "prose",
           "heading": "Language tips",
           "level": "h2",
-          "text": ["Three of the eight marks on every context question are for your own English, and the essays are judged the same way. These are the habits that protect them."],
+          "text": [
+            "Three of the eight marks on every context question are for your own English, and the essays are judged the same way. These are the habits that protect them."
+          ],
           "bullets": [
             "**Use the present tense for the text and the past for its composition.** *Emilia argues that...*, but *Shakespeare wrote Othello in...*.",
             "**Vary your sentence length deliberately.** A short sentence after two long ones reads as control, and control is what *coherent and persuasive* means in the grid.",
@@ -669,14 +969,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Context Questions", "url": "al-literature/context-questions/", "more": "Open" },
-            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" }
+            {
+              "title": "Context Questions",
+              "url": "al-literature/context-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/literary-theory",
       "title": "Literary Theory",
@@ -684,9 +995,19 @@
       "keywords": "literary theory, critical approaches, feminist criticism, Marxist criticism, postcolonial, reader response",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Theory is a set of questions to ask a text, not a set of labels to attach to it. Used well it opens a reading; used badly it replaces one." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Theory is a set of questions to ask a text, not a set of labels to attach to it. Used well it opens a reading; used badly it replaces one."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -702,13 +1023,69 @@
           "heading": "The approaches, and the questions each one asks",
           "variant": "tint",
           "items": [
-            { "q": "Close reading (formalist criticism)", "a": ["Attends to the text itself — its language, structure, imagery and form — largely independently of the author's life or the historical moment.", "**Questions it asks:** How is this made? What does this word do that a synonym would not? Where is the pattern, and where is it broken? What does the form contribute?", "**Its strength:** it is the foundation of all the others, and the one skill no A/L candidate can do without.", "**Its limit:** treated as the only approach, it can make a text seem to exist outside history and society."] },
-            { "q": "Historical and contextual criticism", "a": ["Reads a work in relation to the period that produced it, and to the conditions in which it was written and first received.", "**Questions it asks:** What did this word, this idea or this behaviour mean at the time? What could and could not be said? What was the writer arguing against?", "**Its strength:** it prevents anachronism — judging a past text by present assumptions without noticing that you are doing so.", "**Its limit:** context can be used to excuse a text from criticism, or to swamp the text with information about its period."] },
-            { "q": "Psychological criticism", "a": ["Attends to motive, desire, memory and the unconscious, in characters and sometimes in the reader.", "**Questions it asks:** What does this character want that they cannot admit to wanting? What is repeated, avoided or forgotten? What is the significance of what is *not* said?", "**Its strength:** it is very productive on characters whose stated reasons do not match their behaviour.", "**Its limit:** it slides easily into diagnosing invented people. Keep the analysis tied to the text's own evidence."] },
-            { "q": "Feminist criticism", "a": ["Attends to the representation of women and men, to gender as something constructed rather than given, and to whose experience a text treats as central.", "**Questions it asks:** Who is allowed to speak, and at what length? Whose inner life is shown? What options are available to female and male characters, and who decides them? Does the text endorse the arrangement it depicts, or expose it?", "**Its strength:** it frequently reveals structures so familiar that they had become invisible.", "**Its limit:** a text that depicts inequality is not necessarily endorsing it. That distinction has to be argued from evidence, not assumed."] },
-            { "q": "Marxist and materialist criticism", "a": ["Attends to class, work, money and power, and to the economic conditions inside and behind a text.", "**Questions it asks:** Who works and who does not? Where does the money come from? Whose labour is invisible? Does the text present its social arrangements as natural or as made?", "**Its strength:** it is often startlingly productive on novels, which are full of unexamined money.", "**Its limit:** reducing every text to economics flattens works whose interests genuinely lie elsewhere."] },
-            { "q": "Postcolonial criticism", "a": ["Attends to empire and its aftermath: to who is represented and by whom, to language and power, and to the position of the colonised in a text's assumptions.", "**Questions it asks:** Who is given a voice and who is described? Whose land, whose language, whose history? What does the text take for granted about the centre and the margin?", "**Its strength:** it is often directly relevant to texts studied in Sri Lanka, both to works written here and to works about places like it.", "**Its limit:** as with all these approaches, the reading must come from the text, not be imposed upon it."] },
-            { "q": "Reader-response criticism", "a": ["Attends to the reader's part in making meaning: what the text withholds, what it makes us expect, and how it manages our sympathy.", "**Questions it asks:** What am I made to expect here, and is the expectation met? When am I given information, and what difference does the timing make? Whose side does the text put me on, and how?", "**Its strength:** it produces exactly the comments about **effect** that A/L answers most often lack.", "**Its limit:** \"what it means to me\" is not criticism. The response must be shown to be produced by the text."] }
+            {
+              "q": "Close reading (formalist criticism)",
+              "a": [
+                "Attends to the text itself — its language, structure, imagery and form — largely independently of the author's life or the historical moment.",
+                "**Questions it asks:** How is this made? What does this word do that a synonym would not? Where is the pattern, and where is it broken? What does the form contribute?",
+                "**Its strength:** it is the foundation of all the others, and the one skill no A/L candidate can do without.",
+                "**Its limit:** treated as the only approach, it can make a text seem to exist outside history and society."
+              ]
+            },
+            {
+              "q": "Historical and contextual criticism",
+              "a": [
+                "Reads a work in relation to the period that produced it, and to the conditions in which it was written and first received.",
+                "**Questions it asks:** What did this word, this idea or this behaviour mean at the time? What could and could not be said? What was the writer arguing against?",
+                "**Its strength:** it prevents anachronism — judging a past text by present assumptions without noticing that you are doing so.",
+                "**Its limit:** context can be used to excuse a text from criticism, or to swamp the text with information about its period."
+              ]
+            },
+            {
+              "q": "Psychological criticism",
+              "a": [
+                "Attends to motive, desire, memory and the unconscious, in characters and sometimes in the reader.",
+                "**Questions it asks:** What does this character want that they cannot admit to wanting? What is repeated, avoided or forgotten? What is the significance of what is *not* said?",
+                "**Its strength:** it is very productive on characters whose stated reasons do not match their behaviour.",
+                "**Its limit:** it slides easily into diagnosing invented people. Keep the analysis tied to the text's own evidence."
+              ]
+            },
+            {
+              "q": "Feminist criticism",
+              "a": [
+                "Attends to the representation of women and men, to gender as something constructed rather than given, and to whose experience a text treats as central.",
+                "**Questions it asks:** Who is allowed to speak, and at what length? Whose inner life is shown? What options are available to female and male characters, and who decides them? Does the text endorse the arrangement it depicts, or expose it?",
+                "**Its strength:** it frequently reveals structures so familiar that they had become invisible.",
+                "**Its limit:** a text that depicts inequality is not necessarily endorsing it. That distinction has to be argued from evidence, not assumed."
+              ]
+            },
+            {
+              "q": "Marxist and materialist criticism",
+              "a": [
+                "Attends to class, work, money and power, and to the economic conditions inside and behind a text.",
+                "**Questions it asks:** Who works and who does not? Where does the money come from? Whose labour is invisible? Does the text present its social arrangements as natural or as made?",
+                "**Its strength:** it is often startlingly productive on novels, which are full of unexamined money.",
+                "**Its limit:** reducing every text to economics flattens works whose interests genuinely lie elsewhere."
+              ]
+            },
+            {
+              "q": "Postcolonial criticism",
+              "a": [
+                "Attends to empire and its aftermath: to who is represented and by whom, to language and power, and to the position of the colonised in a text's assumptions.",
+                "**Questions it asks:** Who is given a voice and who is described? Whose land, whose language, whose history? What does the text take for granted about the centre and the margin?",
+                "**Its strength:** it is often directly relevant to texts studied in Sri Lanka, both to works written here and to works about places like it.",
+                "**Its limit:** as with all these approaches, the reading must come from the text, not be imposed upon it."
+              ]
+            },
+            {
+              "q": "Reader-response criticism",
+              "a": [
+                "Attends to the reader's part in making meaning: what the text withholds, what it makes us expect, and how it manages our sympathy.",
+                "**Questions it asks:** What am I made to expect here, and is the expectation met? When am I given information, and what difference does the timing make? Whose side does the text put me on, and how?",
+                "**Its strength:** it produces exactly the comments about **effect** that A/L answers most often lack.",
+                "**Its limit:** \"what it means to me\" is not criticism. The response must be shown to be produced by the text."
+              ]
+            }
           ]
         },
         {
@@ -728,14 +1105,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Essay Questions", "url": "al-literature/essay-questions/", "more": "Open" },
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Fiction", "url": "al-literature/fiction/", "more": "Open" }
+            {
+              "title": "Essay Questions",
+              "url": "al-literature/essay-questions/",
+              "more": "Open"
+            },
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Fiction",
+              "url": "al-literature/fiction/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/literary-techniques",
       "title": "Literary Techniques",
@@ -743,21 +1131,57 @@
       "keywords": "literary techniques, literary terms, A/L Literature, narrative technique, prosody",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "scripts": ["quiz"],
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Precision of vocabulary is worth having — but only because it lets you be precise about effect. A term used without an effect attached is a wasted line." },
+      "scripts": [
+        "quiz"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Precision of vocabulary is worth having — but only because it lets you be precise about effect. A term used without an effect attached is a wasted line."
+      },
       "blocks": [
         {
           "type": "terms",
           "heading": "Narrative technique",
           "items": [
-            { "term": "Focalisation", "definition": "Whose perspective the narration adopts, which may differ from who narrates.", "example": "A narrator recalling childhood may focalise through the child, so that the reader understands what the child cannot." },
-            { "term": "Free indirect style", "definition": "Third-person narration inhabiting a character's own words and idiom without quotation marks.", "example": "It allows sympathy and irony simultaneously, and identifying it accurately is a real mark of advanced reading." },
-            { "term": "Unreliable narration", "definition": "An account the reader is invited to doubt.", "example": "Look for contradictions, over-insistence, and behaviour by others that the narrator's version cannot explain." },
-            { "term": "Analepsis / prolepsis", "definition": "Flashback and flash-forward.", "example": "Ask why the information appears here rather than in sequence. The answer is usually irony or suspense." },
-            { "term": "Frame narrative", "definition": "A story contained within another story.", "example": "Ask what the frame does — it usually establishes distance, or raises a question about who is authorised to tell." },
-            { "term": "Duration and ellipsis", "definition": "The proportion of text to time, and what is skipped entirely.", "example": "What a novel omits is as expressive as what it narrates." }
+            {
+              "term": "Focalisation",
+              "definition": "Whose perspective the narration adopts, which may differ from who narrates.",
+              "example": "A narrator recalling childhood may focalise through the child, so that the reader understands what the child cannot."
+            },
+            {
+              "term": "Free indirect style",
+              "definition": "Third-person narration inhabiting a character's own words and idiom without quotation marks.",
+              "example": "It allows sympathy and irony simultaneously, and identifying it accurately is a real mark of advanced reading."
+            },
+            {
+              "term": "Unreliable narration",
+              "definition": "An account the reader is invited to doubt.",
+              "example": "Look for contradictions, over-insistence, and behaviour by others that the narrator's version cannot explain."
+            },
+            {
+              "term": "Analepsis / prolepsis",
+              "definition": "Flashback and flash-forward.",
+              "example": "Ask why the information appears here rather than in sequence. The answer is usually irony or suspense."
+            },
+            {
+              "term": "Frame narrative",
+              "definition": "A story contained within another story.",
+              "example": "Ask what the frame does — it usually establishes distance, or raises a question about who is authorised to tell."
+            },
+            {
+              "term": "Duration and ellipsis",
+              "definition": "The proportion of text to time, and what is skipped entirely.",
+              "example": "What a novel omits is as expressive as what it narrates."
+            }
           ]
         },
         {
@@ -765,49 +1189,125 @@
           "heading": "Poetic technique",
           "variant": "tint",
           "items": [
-            { "term": "Volta", "definition": "The turn in a poem's argument.", "example": "Locating it precisely often organises the whole answer." },
-            { "term": "Enjambment / end-stopping", "definition": "Whether syntax runs past the line ending.", "example": "Sustained enjambment can create urgency; a sudden end-stop after it lands with weight." },
-            { "term": "Caesura", "definition": "A strong pause within a line.", "example": "It can enact hesitation, interruption, or a break in composure." },
-            { "term": "Metre and substitution", "definition": "The underlying rhythm, and departures from it.", "example": "You need not scan formally; you must notice where the rhythm is disturbed and say what the disturbance does." },
-            { "term": "Half-rhyme", "definition": "Rhyme that is nearly but not quite exact.", "example": "It can produce unease, or a refusal of the neatness that full rhyme promises." },
-            { "term": "Conceit", "definition": "An extended, elaborate comparison sustained through a passage.", "example": "Ask whether the comparison is strained deliberately — a strained conceit may be part of the point." },
-            { "term": "Apostrophe", "definition": "Direct address to someone absent, dead, or to an abstraction.", "example": "It creates urgency, and often exposes the speaker's isolation." }
+            {
+              "term": "Volta",
+              "definition": "The turn in a poem's argument.",
+              "example": "Locating it precisely often organises the whole answer."
+            },
+            {
+              "term": "Enjambment / end-stopping",
+              "definition": "Whether syntax runs past the line ending.",
+              "example": "Sustained enjambment can create urgency; a sudden end-stop after it lands with weight."
+            },
+            {
+              "term": "Caesura",
+              "definition": "A strong pause within a line.",
+              "example": "It can enact hesitation, interruption, or a break in composure."
+            },
+            {
+              "term": "Metre and substitution",
+              "definition": "The underlying rhythm, and departures from it.",
+              "example": "You need not scan formally; you must notice where the rhythm is disturbed and say what the disturbance does."
+            },
+            {
+              "term": "Half-rhyme",
+              "definition": "Rhyme that is nearly but not quite exact.",
+              "example": "It can produce unease, or a refusal of the neatness that full rhyme promises."
+            },
+            {
+              "term": "Conceit",
+              "definition": "An extended, elaborate comparison sustained through a passage.",
+              "example": "Ask whether the comparison is strained deliberately — a strained conceit may be part of the point."
+            },
+            {
+              "term": "Apostrophe",
+              "definition": "Direct address to someone absent, dead, or to an abstraction.",
+              "example": "It creates urgency, and often exposes the speaker's isolation."
+            }
           ]
         },
         {
           "type": "terms",
           "heading": "Dramatic and rhetorical technique",
           "items": [
-            { "term": "Dramatic irony", "definition": "The audience knows what a character does not.", "example": "Always say what it makes the audience feel and why the dramatist wants that feeling here." },
-            { "term": "Peripeteia and anagnorisis", "definition": "Reversal of fortune, and the moment of recognition.", "example": "In many tragedies the two are separated deliberately, and the gap between them is where the suffering lies." },
-            { "term": "Stagecraft", "definition": "Use of the physical theatre — space, movement, entrances, objects, light, silence.", "example": "Stage directions are text and may be quoted." },
-            { "term": "Subtext", "definition": "What is meant but not said.", "example": "Evasions, changes of subject and silences are evidence." },
-            { "term": "Anaphora", "definition": "Repeated opening words across successive clauses.", "example": "Builds insistence and rhythm; marks language as public and oratorical." },
-            { "term": "Antithesis", "definition": "Balanced opposition within a sentence.", "example": "Makes a claim sound reasoned and inevitable — which is worth interrogating." },
-            { "term": "Bathos", "definition": "An unintended or deliberate fall from the elevated to the trivial.", "example": "Deliberate bathos is a powerful deflating device; ask whether the deflation is aimed at the subject or the speaker." },
-            { "term": "Litotes", "definition": "Affirming by denying the opposite — *not unkind*.", "example": "Often produces restraint or dry humour, and can suggest emotion held deliberately in check." }
+            {
+              "term": "Dramatic irony",
+              "definition": "The audience knows what a character does not.",
+              "example": "Always say what it makes the audience feel and why the dramatist wants that feeling here."
+            },
+            {
+              "term": "Peripeteia and anagnorisis",
+              "definition": "Reversal of fortune, and the moment of recognition.",
+              "example": "In many tragedies the two are separated deliberately, and the gap between them is where the suffering lies."
+            },
+            {
+              "term": "Stagecraft",
+              "definition": "Use of the physical theatre — space, movement, entrances, objects, light, silence.",
+              "example": "Stage directions are text and may be quoted."
+            },
+            {
+              "term": "Subtext",
+              "definition": "What is meant but not said.",
+              "example": "Evasions, changes of subject and silences are evidence."
+            },
+            {
+              "term": "Anaphora",
+              "definition": "Repeated opening words across successive clauses.",
+              "example": "Builds insistence and rhythm; marks language as public and oratorical."
+            },
+            {
+              "term": "Antithesis",
+              "definition": "Balanced opposition within a sentence.",
+              "example": "Makes a claim sound reasoned and inevitable — which is worth interrogating."
+            },
+            {
+              "term": "Bathos",
+              "definition": "An unintended or deliberate fall from the elevated to the trivial.",
+              "example": "Deliberate bathos is a powerful deflating device; ask whether the deflation is aimed at the subject or the speaker."
+            },
+            {
+              "term": "Litotes",
+              "definition": "Affirming by denying the opposite — *not unkind*.",
+              "example": "Often produces restraint or dry humour, and can suggest emotion held deliberately in check."
+            }
           ]
         },
         {
           "type": "activities",
           "heading": "Check the foundations",
           "variant": "tint",
-          "intro": ["These two activities cover the core terms. Advanced work is built on getting these right automatically."],
-          "ids": ["literature-terms-1", "vocab-match-literature-1"]
+          "intro": [
+            "These two activities cover the core terms. Advanced work is built on getting these right automatically."
+          ],
+          "ids": [
+            "literature-terms-1",
+            "vocab-match-literature-1"
+          ]
         },
         {
           "type": "cards",
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Critical Appreciation", "url": "al-literature/critical-appreciation/", "more": "Open" },
-            { "title": "Poetry", "url": "al-literature/poetry/", "more": "Open" },
-            { "title": "Fiction", "url": "al-literature/fiction/", "more": "Open" }
+            {
+              "title": "Critical Appreciation",
+              "url": "al-literature/critical-appreciation/",
+              "more": "Open"
+            },
+            {
+              "title": "Poetry",
+              "url": "al-literature/poetry/",
+              "more": "Open"
+            },
+            {
+              "title": "Fiction",
+              "url": "al-literature/fiction/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/examination-guidance",
       "title": "Examination Guidance",
@@ -815,19 +1315,54 @@
       "keywords": "A/L Literature exam guidance, timing, choosing questions, examiners, technique",
       "kicker": "A/L Literature",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Candidates rarely fail A/L Literature for lack of reading. They fail for choosing the wrong question, or for running out of time on the right one." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Candidates rarely fail A/L Literature for lack of reading. They fail for choosing the wrong question, or for running out of time on the right one."
+      },
       "blocks": [
         {
           "type": "steps",
           "heading": "The first ten minutes",
           "items": [
-            { "title": "Read every question before choosing", "text": ["All of them. The question you would have answered best is often not the one that catches your eye first."] },
-            { "title": "Choose for evidence, not for enthusiasm", "text": ["Ask of each candidate question: *can I name three specific moments in the text that bear on this?* If you cannot, do not choose it, however interesting it looks. Enthusiasm without evidence produces a thin essay."] },
-            { "title": "Beware the question that flatters your prepared material", "text": ["If a question looks like your revision notes, read it twice more. It is usually asking something slightly different, and answering the prepared question instead of the set one is the single most expensive error at this level."] },
-            { "title": "Write your finishing times in the margin", "text": ["Actual clock times, not durations. Divide the working time in proportion to the marks, and reserve ten minutes at the end."] },
-            { "title": "Plan each essay in five lines", "text": ["Thesis, then one line per paragraph. Do this for **all** your essays before writing any of them if the paper allows — later planning is always rushed."] }
+            {
+              "title": "Read every question before choosing",
+              "text": [
+                "All of them. The question you would have answered best is often not the one that catches your eye first."
+              ]
+            },
+            {
+              "title": "Choose for evidence, not for enthusiasm",
+              "text": [
+                "Ask of each candidate question: *can I name three specific moments in the text that bear on this?* If you cannot, do not choose it, however interesting it looks. Enthusiasm without evidence produces a thin essay."
+              ]
+            },
+            {
+              "title": "Beware the question that flatters your prepared material",
+              "text": [
+                "If a question looks like your revision notes, read it twice more. It is usually asking something slightly different, and answering the prepared question instead of the set one is the single most expensive error at this level."
+              ]
+            },
+            {
+              "title": "Write your finishing times in the margin",
+              "text": [
+                "Actual clock times, not durations. Divide the working time in proportion to the marks, and reserve ten minutes at the end."
+              ]
+            },
+            {
+              "title": "Plan each essay in five lines",
+              "text": [
+                "Thesis, then one line per paragraph. Do this for **all** your essays before writing any of them if the paper allows — later planning is always rushed."
+              ]
+            }
           ]
         },
         {
@@ -860,7 +1395,9 @@
           "type": "checklist",
           "heading": "The last ten minutes",
           "variant": "tint",
-          "text": ["Do not write more. Check, in this order."],
+          "text": [
+            "Do not write more. Check, in this order."
+          ],
           "items": [
             "Have I written the **required number** of answers?",
             "Does each essay have an **introduction with a position** and a **conclusion that judges**?",
@@ -889,14 +1426,25 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Common Student Mistakes", "url": "al-literature/common-mistakes/", "more": "Open" },
-            { "title": "Past Papers", "url": "past-papers/al-literature/", "more": "Open" },
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" }
+            {
+              "title": "Common Student Mistakes",
+              "url": "al-literature/common-mistakes/",
+              "more": "Open"
+            },
+            {
+              "title": "Past Papers",
+              "url": "past-papers/al-literature/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "al-literature/common-mistakes",
       "title": "Common Student Mistakes",
@@ -904,24 +1452,98 @@
       "keywords": "A/L Literature mistakes, common faults, essay errors, remedies",
       "kicker": "A/L Literature",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "A/L Literature", "url": "al-literature/" }],
-      "backTo": { "label": "A/L Literature", "url": "al-literature/" },
-      "hero": { "text": "Ten faults, each with a remedy you can apply to your next essay rather than to your next year." },
+      "breadcrumbs": [
+        {
+          "label": "A/L Literature",
+          "url": "al-literature/"
+        }
+      ],
+      "backTo": {
+        "label": "A/L Literature",
+        "url": "al-literature/"
+      },
+      "hero": {
+        "text": "Ten faults, each with a remedy you can apply to your next essay rather than to your next year."
+      },
       "blocks": [
         {
           "type": "accordion",
           "heading": "The ten faults",
           "items": [
-            { "q": "1. Narrative instead of argument", "a": ["**The fault:** paragraphs that report what happens.", "**The test:** does each paragraph open with a claim or with an event?", "**The remedy:** rewrite only the first sentence of each paragraph so that it makes a claim. Everything after it usually improves on its own."] },
-            { "q": "2. Device-spotting", "a": ["**The fault:** a technique named, quoted, and then abandoned.", "**The remedy:** after every technique you name, write a sentence beginning **\"The effect of this is…\"**. Do it every time until the habit forms."] },
-            { "q": "3. No thesis", "a": ["**The fault:** an introduction that announces a topic rather than taking a position.", "**The test:** could an intelligent reader who knows the text disagree with your opening claim? If not, it is not a thesis.", "**The remedy:** write the answer to the question as one sentence before you begin, and make it the last line of your introduction."] },
-            { "q": "4. The prepared essay", "a": ["**The fault:** a memorised answer delivered whatever is asked.", "**The remedy:** after each paragraph, glance at the question. If the paragraph does not serve it, it is costing you marks even if it is good.", "**Note:** examiners recognise prepared material immediately, and it is penalised more heavily at A/L than at O/L."] },
-            { "q": "5. No engagement with objections", "a": ["**The fault:** an argument that never meets resistance and therefore reads as unconsidered.", "**The remedy:** one paragraph, or one sentence per paragraph, beginning **\"It would be possible to read this as… but…\"**"] },
-            { "q": "6. Invented material", "a": ["**The fault:** a half-remembered quotation written as exact; a critic's name attached to a view; a date or biographical fact supplied from nowhere.", "**Why it matters more than you think:** an examiner who catches one invented detail doubts everything else you have written.", "**The remedy:** if you cannot recall a quotation exactly, refer to the moment instead. *When she refuses the money at the station* is honest and gains credit. And *it has often been argued that…* is always safer than a name you are not sure of."] },
-            { "q": "7. Theory instead of reading", "a": ["**The fault:** announcing a critical approach and fitting the text to it.", "**The remedy:** start from something you noticed in the text, then ask which questions explain it. Theory earns its place by opening a reading, never by replacing one. See [Literary Theory](al-literature/literary-theory/)."] },
-            { "q": "8. Quoting too much", "a": ["**The fault:** long quotations filling the page with someone else's words.", "**The remedy:** cut every quotation to ten words or fewer. If a point needs more, it usually needs two short quotations rather than one long one."] },
-            { "q": "9. Ignoring structure", "a": ["**The fault:** treating every part of a text as equally weighted, and never mentioning where something occurs.", "**The remedy:** include at least one observation per essay about placing, order, proportion or form. *That this occurs before we have met the daughter means that…* Structural comments are rare and disproportionately rewarded."] },
-            { "q": "10. Conclusions that summarise", "a": ["**The fault:** *In conclusion, I have discussed the points above.*", "**The remedy:** a conclusion must contain something the introduction did not — the judgement you reached by writing the essay. If your conclusion could have been written before the essay, rewrite it."] }
+            {
+              "q": "1. Narrative instead of argument",
+              "a": [
+                "**The fault:** paragraphs that report what happens.",
+                "**The test:** does each paragraph open with a claim or with an event?",
+                "**The remedy:** rewrite only the first sentence of each paragraph so that it makes a claim. Everything after it usually improves on its own."
+              ]
+            },
+            {
+              "q": "2. Device-spotting",
+              "a": [
+                "**The fault:** a technique named, quoted, and then abandoned.",
+                "**The remedy:** after every technique you name, write a sentence beginning **\"The effect of this is…\"**. Do it every time until the habit forms."
+              ]
+            },
+            {
+              "q": "3. No thesis",
+              "a": [
+                "**The fault:** an introduction that announces a topic rather than taking a position.",
+                "**The test:** could an intelligent reader who knows the text disagree with your opening claim? If not, it is not a thesis.",
+                "**The remedy:** write the answer to the question as one sentence before you begin, and make it the last line of your introduction."
+              ]
+            },
+            {
+              "q": "4. The prepared essay",
+              "a": [
+                "**The fault:** a memorised answer delivered whatever is asked.",
+                "**The remedy:** after each paragraph, glance at the question. If the paragraph does not serve it, it is costing you marks even if it is good.",
+                "**Note:** examiners recognise prepared material immediately, and it is penalised more heavily at A/L than at O/L."
+              ]
+            },
+            {
+              "q": "5. No engagement with objections",
+              "a": [
+                "**The fault:** an argument that never meets resistance and therefore reads as unconsidered.",
+                "**The remedy:** one paragraph, or one sentence per paragraph, beginning **\"It would be possible to read this as… but…\"**"
+              ]
+            },
+            {
+              "q": "6. Invented material",
+              "a": [
+                "**The fault:** a half-remembered quotation written as exact; a critic's name attached to a view; a date or biographical fact supplied from nowhere.",
+                "**Why it matters more than you think:** an examiner who catches one invented detail doubts everything else you have written.",
+                "**The remedy:** if you cannot recall a quotation exactly, refer to the moment instead. *When she refuses the money at the station* is honest and gains credit. And *it has often been argued that…* is always safer than a name you are not sure of."
+              ]
+            },
+            {
+              "q": "7. Theory instead of reading",
+              "a": [
+                "**The fault:** announcing a critical approach and fitting the text to it.",
+                "**The remedy:** start from something you noticed in the text, then ask which questions explain it. Theory earns its place by opening a reading, never by replacing one. See [Literary Theory](al-literature/literary-theory/)."
+              ]
+            },
+            {
+              "q": "8. Quoting too much",
+              "a": [
+                "**The fault:** long quotations filling the page with someone else's words.",
+                "**The remedy:** cut every quotation to ten words or fewer. If a point needs more, it usually needs two short quotations rather than one long one."
+              ]
+            },
+            {
+              "q": "9. Ignoring structure",
+              "a": [
+                "**The fault:** treating every part of a text as equally weighted, and never mentioning where something occurs.",
+                "**The remedy:** include at least one observation per essay about placing, order, proportion or form. *That this occurs before we have met the daughter means that…* Structural comments are rare and disproportionately rewarded."
+              ]
+            },
+            {
+              "q": "10. Conclusions that summarise",
+              "a": [
+                "**The fault:** *In conclusion, I have discussed the points above.*",
+                "**The remedy:** a conclusion must contain something the introduction did not — the judgement you reached by writing the essay. If your conclusion could have been written before the essay, rewrite it."
+              ]
+            }
           ]
         },
         {
@@ -943,9 +1565,21 @@
           "heading": "Next",
           "columns": "3",
           "items": [
-            { "title": "Answer Development", "url": "al-literature/answer-development/", "more": "Open" },
-            { "title": "Model Answers", "url": "al-literature/model-answers/", "more": "Open" },
-            { "title": "Examination Guidance", "url": "al-literature/examination-guidance/", "more": "Open" }
+            {
+              "title": "Answer Development",
+              "url": "al-literature/answer-development/",
+              "more": "Open"
+            },
+            {
+              "title": "Model Answers",
+              "url": "al-literature/model-answers/",
+              "more": "Open"
+            },
+            {
+              "title": "Examination Guidance",
+              "url": "al-literature/examination-guidance/",
+              "more": "Open"
+            }
           ]
         }
       ]

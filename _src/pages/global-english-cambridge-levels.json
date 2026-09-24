@@ -1,11 +1,10 @@
 {
   "_comment": "Cambridge English Qualifications: B1 Preliminary, B2 First and C1 Advanced. EVERY figure verified from Cambridge English's own pages: the exam-format page for each qualification (cambridgeenglish.org/exams-and-tests/<name>/exam-format/) for papers, durations, parts, questions and any printed weighting, and the shared results page (cambridgeenglish.org/exams-and-tests/qualifications/results/) for the grade tables. NOTE ON WEIGHTINGS: the B1 Preliminary format page prints 25% against each of its four papers. The B2 First format page prints 40% against Reading and Use of English and 20% against Writing, and prints NO weighting against Listening or Speaking; the C1 Advanced format page prints no weightings at all. The five-component averaging model - Reading, Use of English, Writing, Listening and Speaking equally weighted at 20% each - is Cambridge's own published scoring model, and is what reconciles the 40%. Pages say which figure came from where. Nothing of Cambridge's is reproduced beyond short factual phrases: no question, task or mark-scheme wording is copied, and all method is RCF English's own.",
-
   "pages": [
     {
       "slug": "global-english/cambridge-english/b1-preliminary",
       "title": "B1 Preliminary",
-      "metaTitle": "Cambridge B1 Preliminary: Exam Format, Papers and Grades | RCF English",
+      "metaTitle": "Cambridge B1 Preliminary: Exam Format, Papers and Grades",
       "description": "Cambridge English B1 Preliminary explained: the four papers, their durations and weightings, the grade boundaries on the Cambridge English Scale, and how to prepare for each paper.",
       "keywords": "B1 Preliminary, Cambridge PET, B1 Preliminary exam format, B1 Preliminary grades, Cambridge English Scale B1, B1 Preliminary reading writing listening speaking",
       "kicker": "Cambridge English Qualifications",
@@ -14,10 +13,19 @@
       "resourceType": "guidance",
       "educationalLevel": "B1",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "Cambridge English", "url": "global-english/cambridge-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "Cambridge English",
+          "url": "global-english/cambridge-english/"
+        }
       ],
-      "backTo": { "label": "Cambridge English", "url": "global-english/cambridge-english/" },
+      "backTo": {
+        "label": "Cambridge English",
+        "url": "global-english/cambridge-english/"
+      },
       "hero": {
         "text": "Four papers, four equal quarters. The cleanest arithmetic on the whole Cambridge ladder, and the level at which everyday English becomes a certificate."
       },
@@ -36,12 +44,37 @@
           "heading": "The four papers",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paper", "Time", "Parts and questions", "Weighting"],
+          "columns": [
+            "Paper",
+            "Time",
+            "Parts and questions",
+            "Weighting"
+          ],
           "rows": [
-            ["**Reading**", "45 minutes", "6 parts / 32 questions", "25%"],
-            ["**Writing**", "45 minutes", "2 parts / 2 questions", "25%"],
-            ["**Listening**", "30 minutes, including 6 minutes' transfer time", "4 parts / 25 questions", "25%"],
-            ["**Speaking**", "10-12 minutes per pair of candidates; 15-17 minutes per group of three", "4 parts", "25%"]
+            [
+              "**Reading**",
+              "45 minutes",
+              "6 parts / 32 questions",
+              "25%"
+            ],
+            [
+              "**Writing**",
+              "45 minutes",
+              "2 parts / 2 questions",
+              "25%"
+            ],
+            [
+              "**Listening**",
+              "30 minutes, including 6 minutes' transfer time",
+              "4 parts / 25 questions",
+              "25%"
+            ],
+            [
+              "**Speaking**",
+              "10-12 minutes per pair of candidates; 15-17 minutes per group of three",
+              "4 parts",
+              "25%"
+            ]
           ]
         },
         {
@@ -60,12 +93,32 @@
           "level": "h2",
           "stacked": true,
           "caption": "Scores as published by Cambridge English. B1 Preliminary is a B1 examination, so Grade A certifies a level above the one you entered for, and a score in the lowest band certifies the level below.",
-          "columns": ["Cambridge English Scale score", "Grade", "CEFR level certified"],
+          "columns": [
+            "Cambridge English Scale score",
+            "Grade",
+            "CEFR level certified"
+          ],
           "rows": [
-            ["160-170", "Grade A", "**B2**"],
-            ["153-159", "Grade B", "B1"],
-            ["140-152", "Grade C", "B1"],
-            ["120-139", "Level A2", "A2"]
+            [
+              "160-170",
+              "Grade A",
+              "**B2**"
+            ],
+            [
+              "153-159",
+              "Grade B",
+              "B1"
+            ],
+            [
+              "140-152",
+              "Grade C",
+              "B1"
+            ],
+            [
+              "120-139",
+              "Level A2",
+              "A2"
+            ]
           ]
         },
         {
@@ -129,18 +182,29 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "B2 First", "url": "global-english/cambridge-english/b2-first/", "text": "The next level up, and the one most often asked for by universities and employers." },
-            { "title": "Cambridge English overview", "url": "global-english/cambridge-english/", "text": "The whole ladder from Pre A1 Starters to C2 Proficiency, with every grade table." },
-            { "title": "Practical English: the four skills", "url": "practical-english/", "text": "Reading, writing, listening and speaking practice that transfers to any of these levels." }
+            {
+              "title": "B2 First",
+              "url": "global-english/cambridge-english/b2-first/",
+              "text": "The next level up, and the one most often asked for by universities and employers."
+            },
+            {
+              "title": "Cambridge English overview",
+              "url": "global-english/cambridge-english/",
+              "text": "The whole ladder from Pre A1 Starters to C2 Proficiency, with every grade table."
+            },
+            {
+              "title": "Practical English: the four skills",
+              "url": "practical-english/",
+              "text": "Reading, writing, listening and speaking practice that transfers to any of these levels."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/cambridge-english/b2-first",
       "title": "B2 First",
-      "metaTitle": "Cambridge B2 First (FCE): Exam Format, Papers and Grades | RCF English",
+      "metaTitle": "Cambridge B2 First (FCE): Exam Format, Papers and Grades",
       "description": "Cambridge English B2 First explained: the four papers, the five scored components, the grade boundaries on the Cambridge English Scale, and how to prepare for each paper.",
       "keywords": "B2 First, Cambridge FCE, B2 First exam format, B2 First grades, Reading and Use of English, Cambridge English Scale B2, B2 First writing part 1",
       "kicker": "Cambridge English Qualifications",
@@ -149,10 +213,19 @@
       "resourceType": "guidance",
       "educationalLevel": "B2",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "Cambridge English", "url": "global-english/cambridge-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "Cambridge English",
+          "url": "global-english/cambridge-english/"
+        }
       ],
-      "backTo": { "label": "Cambridge English", "url": "global-english/cambridge-english/" },
+      "backTo": {
+        "label": "Cambridge English",
+        "url": "global-english/cambridge-english/"
+      },
       "hero": {
         "text": "Four papers, but five scored components. The one arithmetic fact that changes how you should revise for this examination."
       },
@@ -172,12 +245,37 @@
           "heading": "The four papers",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paper", "Time", "Parts and questions", "Weighting as printed"],
+          "columns": [
+            "Paper",
+            "Time",
+            "Parts and questions",
+            "Weighting as printed"
+          ],
           "rows": [
-            ["**Reading and Use of English**", "1 hour 15 minutes", "7 parts / 52 questions", "40%"],
-            ["**Writing**", "1 hour 20 minutes", "2 parts - Part 1 one compulsory question, Part 2 one question from a choice of four", "20%"],
-            ["**Listening**", "about 40 minutes", "4 parts / 30 questions", "not printed"],
-            ["**Speaking**", "14 minutes per pair of candidates", "4 parts", "not printed"]
+            [
+              "**Reading and Use of English**",
+              "1 hour 15 minutes",
+              "7 parts / 52 questions",
+              "40%"
+            ],
+            [
+              "**Writing**",
+              "1 hour 20 minutes",
+              "2 parts - Part 1 one compulsory question, Part 2 one question from a choice of four",
+              "20%"
+            ],
+            [
+              "**Listening**",
+              "about 40 minutes",
+              "4 parts / 30 questions",
+              "not printed"
+            ],
+            [
+              "**Speaking**",
+              "14 minutes per pair of candidates",
+              "4 parts",
+              "not printed"
+            ]
           ]
         },
         {
@@ -196,12 +294,32 @@
           "level": "h2",
           "stacked": true,
           "caption": "Scores as published by Cambridge English. B2 First is a B2 examination, so Grade A certifies C1 and the lowest band certifies B1.",
-          "columns": ["Cambridge English Scale score", "Grade", "CEFR level certified"],
+          "columns": [
+            "Cambridge English Scale score",
+            "Grade",
+            "CEFR level certified"
+          ],
           "rows": [
-            ["180-190", "Grade A", "**C1**"],
-            ["173-179", "Grade B", "B2"],
-            ["160-172", "Grade C", "B2"],
-            ["140-159", "Level B1", "B1"]
+            [
+              "180-190",
+              "Grade A",
+              "**C1**"
+            ],
+            [
+              "173-179",
+              "Grade B",
+              "B2"
+            ],
+            [
+              "160-172",
+              "Grade C",
+              "B2"
+            ],
+            [
+              "140-159",
+              "Level B1",
+              "B1"
+            ]
           ]
         },
         {
@@ -269,19 +387,34 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "C1 Advanced", "url": "global-english/cambridge-english/c1-advanced/", "text": "The next level up, with eight parts in the Reading and Use of English paper." },
-            { "title": "B1 Preliminary", "url": "global-english/cambridge-english/b1-preliminary/", "text": "The level below, with four equally weighted papers." },
-            { "title": "Cambridge English overview", "url": "global-english/cambridge-english/", "text": "The whole ladder, with every grade table." },
-            { "title": "IELTS", "url": "practical-english/ielts/", "text": "The other route, if your university asks for a band score rather than a level." }
+            {
+              "title": "C1 Advanced",
+              "url": "global-english/cambridge-english/c1-advanced/",
+              "text": "The next level up, with eight parts in the Reading and Use of English paper."
+            },
+            {
+              "title": "B1 Preliminary",
+              "url": "global-english/cambridge-english/b1-preliminary/",
+              "text": "The level below, with four equally weighted papers."
+            },
+            {
+              "title": "Cambridge English overview",
+              "url": "global-english/cambridge-english/",
+              "text": "The whole ladder, with every grade table."
+            },
+            {
+              "title": "IELTS",
+              "url": "practical-english/ielts/",
+              "text": "The other route, if your university asks for a band score rather than a level."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/cambridge-english/c1-advanced",
       "title": "C1 Advanced",
-      "metaTitle": "Cambridge C1 Advanced (CAE): Exam Format, Papers and Grades | RCF English",
+      "metaTitle": "Cambridge C1 Advanced (CAE): Exam Format, Papers and Grades",
       "description": "Cambridge English C1 Advanced explained: the four papers, the five scored components, the grade boundaries on the Cambridge English Scale, and how to prepare for each paper.",
       "keywords": "C1 Advanced, Cambridge CAE, C1 Advanced exam format, C1 Advanced grades, Reading and Use of English 8 parts, Cambridge English Scale C1",
       "kicker": "Cambridge English Qualifications",
@@ -290,10 +423,19 @@
       "resourceType": "guidance",
       "educationalLevel": "C1",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "Cambridge English", "url": "global-english/cambridge-english/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "Cambridge English",
+          "url": "global-english/cambridge-english/"
+        }
       ],
-      "backTo": { "label": "Cambridge English", "url": "global-english/cambridge-english/" },
+      "backTo": {
+        "label": "Cambridge English",
+        "url": "global-english/cambridge-english/"
+      },
       "hero": {
         "text": "The level most universities mean when they ask for proof of academic English. Four papers, five scored components, and no weighting printed beside any of them."
       },
@@ -313,12 +455,32 @@
           "heading": "The four papers",
           "level": "h2",
           "stacked": true,
-          "columns": ["Paper", "Time", "Parts and questions"],
+          "columns": [
+            "Paper",
+            "Time",
+            "Parts and questions"
+          ],
           "rows": [
-            ["**Reading and Use of English**", "1 hour 30 minutes", "8 parts / 56 questions"],
-            ["**Writing**", "1 hour 30 minutes", "2 parts"],
-            ["**Listening**", "about 40 minutes", "4 parts / 30 questions"],
-            ["**Speaking**", "15 minutes per pair of candidates; 23 minutes per group of three", "4 parts"]
+            [
+              "**Reading and Use of English**",
+              "1 hour 30 minutes",
+              "8 parts / 56 questions"
+            ],
+            [
+              "**Writing**",
+              "1 hour 30 minutes",
+              "2 parts"
+            ],
+            [
+              "**Listening**",
+              "about 40 minutes",
+              "4 parts / 30 questions"
+            ],
+            [
+              "**Speaking**",
+              "15 minutes per pair of candidates; 23 minutes per group of three",
+              "4 parts"
+            ]
           ]
         },
         {
@@ -337,13 +499,37 @@
           "level": "h2",
           "stacked": true,
           "caption": "Scores as published by Cambridge English. C1 Advanced is a C1 examination, so Grade A certifies C2 and the lowest certificated band certifies B2.",
-          "columns": ["Cambridge English Scale score", "Grade", "CEFR level certified"],
+          "columns": [
+            "Cambridge English Scale score",
+            "Grade",
+            "CEFR level certified"
+          ],
           "rows": [
-            ["200-210", "Grade A", "**C2**"],
-            ["193-199", "Grade B", "C1"],
-            ["180-192", "Grade C", "C1"],
-            ["160-179", "Level B2", "B2"],
-            ["142-159", "No certificate", "Reported on the Statement of Results only"]
+            [
+              "200-210",
+              "Grade A",
+              "**C2**"
+            ],
+            [
+              "193-199",
+              "Grade B",
+              "C1"
+            ],
+            [
+              "180-192",
+              "Grade C",
+              "C1"
+            ],
+            [
+              "160-179",
+              "Level B2",
+              "B2"
+            ],
+            [
+              "142-159",
+              "No certificate",
+              "Reported on the Statement of Results only"
+            ]
           ]
         },
         {
@@ -409,10 +595,26 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "B2 First", "url": "global-english/cambridge-english/b2-first/", "text": "The level below - and a Grade A there also certifies C1." },
-            { "title": "Cambridge English overview", "url": "global-english/cambridge-english/", "text": "The whole ladder, with every grade table." },
-            { "title": "IELTS", "url": "practical-english/ielts/", "text": "The other route, if your university asks for a band score rather than a level." },
-            { "title": "Practical English: the four skills", "url": "practical-english/", "text": "Reading, writing, listening and speaking practice." }
+            {
+              "title": "B2 First",
+              "url": "global-english/cambridge-english/b2-first/",
+              "text": "The level below - and a Grade A there also certifies C1."
+            },
+            {
+              "title": "Cambridge English overview",
+              "url": "global-english/cambridge-english/",
+              "text": "The whole ladder, with every grade table."
+            },
+            {
+              "title": "IELTS",
+              "url": "practical-english/ielts/",
+              "text": "The other route, if your university asks for a band score rather than a level."
+            },
+            {
+              "title": "Practical English: the four skills",
+              "url": "practical-english/",
+              "text": "Reading, writing, listening and speaking practice."
+            }
           ]
         }
       ]

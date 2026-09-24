@@ -15,19 +15,37 @@
     {
       "slug": "practical-english/spoken-english-starter",
       "title": "Spoken English Starter",
-      "metaTitle": "Spoken English for Beginners: 10 Everyday Topics with Phrases and Conversations | RCF English",
+      "metaTitle": "Spoken English for Beginners: 10 Everyday Topics with Phrases and Conversations",
       "description": "Start speaking English with ten simple, everyday topics: greetings, family, daily routine, shopping, ordering food, directions, the telephone, polite requests, thanking and apologising, and small talk. Each has useful phrases and a short conversation to hear and practise.",
       "keywords": "spoken English for beginners, everyday English phrases, basic English conversation, spoken English Sri Lanka, English greetings, English for shopping, telephone English",
       "kicker": "Practical English",
       "kind": "lesson",
-      "scripts": ["dialogue"],
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
-      "backTo": { "label": "Spoken English", "url": "practical-english/spoken-english/" },
+      "scripts": [
+        "dialogue"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Spoken English",
+        "url": "practical-english/spoken-english/"
+      },
       "hero": {
         "text": "Ten everyday topics, one at a time. Learn a few phrases, hear them in a short conversation, then take a part and say it yourself.",
         "buttons": [
-          { "label": "Start with greetings", "url": "practical-english/spoken-english-starter/#greetings", "style": "btn--accent" },
-          { "label": "Talk to the Conversation Partner", "url": "practical-english/conversation-partner/", "style": "btn--ghost-light" }
+          {
+            "label": "Start with greetings",
+            "url": "practical-english/spoken-english-starter/#greetings",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Talk to the Conversation Partner",
+            "url": "practical-english/conversation-partner/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -36,364 +54,1271 @@
           "heading": "How to use this page",
           "layout": "row",
           "items": [
-            { "title": "Read the phrases", "text": ["Say each one aloud twice."] },
-            { "title": "Play the conversation", "text": ["Listen for the phrases you have just read."] },
-            { "title": "Take a part", "text": ["Press a name, and speak that person's lines."] },
-            { "title": "Use it today", "text": ["Try one phrase in real life before tomorrow."] }
+            {
+              "title": "Read the phrases",
+              "text": [
+                "Say each one aloud twice."
+              ]
+            },
+            {
+              "title": "Play the conversation",
+              "text": [
+                "Listen for the phrases you have just read."
+              ]
+            },
+            {
+              "title": "Take a part",
+              "text": [
+                "Press a name, and speak that person's lines."
+              ]
+            },
+            {
+              "title": "Use it today",
+              "text": [
+                "Try one phrase in real life before tomorrow."
+              ]
+            }
           ]
         },
-
-        { "type": "prose", "id": "greetings", "heading": "1. Greetings and introducing yourself", "variant": "tint", "text": ["The first few words of a conversation matter most. Keep them short, smile, and use the other person's name if you know it."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Good morning. How are you?", "A polite greeting, with anyone"],
-          ["Hi! How's it going?", "An informal greeting, with friends"],
-          ["I'm fine, thank you. And you?", "Answering, and asking back"],
-          ["Hello, I'm Ruwan. Nice to meet you.", "Introducing yourself"],
-          ["Nice to meet you too.", "Replying to an introduction"],
-          ["See you later. / Take care.", "Saying goodbye"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A new neighbour", "setting": "Ruwan has just moved into a new house and meets his neighbour.", "speakers": ["Ruwan", "Mrs Perera"], "lines": [
-          { "speaker": "Ruwan", "text": "Good morning! I'm Ruwan. I've just moved in next door." },
-          { "speaker": "Mrs Perera", "text": "Oh, hello, Ruwan. I'm Mrs Perera. Nice to meet you." },
-          { "speaker": "Ruwan", "text": "Nice to meet you too." },
-          { "speaker": "Mrs Perera", "text": "Welcome to the street. If you need anything, just ask." },
-          { "speaker": "Ruwan", "text": "Thank you, that's very kind of you." }
-        ] } ] },
-
-        { "type": "prose", "id": "family", "heading": "2. Talking about your family", "variant": "tint", "text": ["Family is one of the first things people ask about. Use *have*, *is* and *live* to describe who is in your family."] },
-        { "type": "table", "columns": ["Say this", "Meaning"], "rows": [
-          ["I have one brother and two sisters.", "The people in your family"],
-          ["I'm the eldest. / I'm the youngest.", "Your place in the family"],
-          ["My father is a farmer, and my mother is a nurse.", "Their jobs"],
-          ["We live with my grandmother.", "Who lives in your home"],
-          ["Do you have any brothers or sisters?", "Asking someone else"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "At a friend's house", "setting": "Two classmates are talking while they wait for lunch.", "speakers": ["Sachini", "Amal"], "lines": [
-          { "speaker": "Sachini", "text": "Do you have any brothers or sisters, Amal?" },
-          { "speaker": "Amal", "text": "Yes, I have one older brother. He works in Colombo. What about you?" },
-          { "speaker": "Sachini", "text": "I have two younger sisters, so I'm the eldest." },
-          { "speaker": "Amal", "text": "That must be busy! Do you all live together?" },
-          { "speaker": "Sachini", "text": "Yes, and my grandmother lives with us too." }
-        ] } ] },
-
-        { "type": "prose", "id": "daily-routine", "heading": "3. Your daily routine", "variant": "tint", "text": ["Use the present simple for things you do every day, with words such as *usually*, *always* and *on Sundays*."] },
-        { "type": "table", "columns": ["Say this", "Tip"], "rows": [
-          ["I usually get up at six o'clock.", "*Usually* goes before the verb"],
-          ["I go to work by bus.", "*By* bus, *by* train, but *on* foot"],
-          ["I have lunch at one.", "We *have* meals"],
-          ["After dinner, I watch the news.", "*After* + a time or an activity"],
-          ["On Sundays, I relax at home.", "*On* + a day"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A busy day", "setting": "Two colleagues are talking during a tea break.", "speakers": ["Dinesh", "Harsha"], "lines": [
-          { "speaker": "Dinesh", "text": "You always look so fresh in the morning. What time do you get up?" },
-          { "speaker": "Harsha", "text": "At half past five. I go for a short walk before work." },
-          { "speaker": "Dinesh", "text": "Half past five! I usually get up at seven." },
-          { "speaker": "Harsha", "text": "But you go to bed late, don't you?" },
-          { "speaker": "Dinesh", "text": "Yes. I usually watch television until midnight." }
-        ] } ] },
-
-        { "type": "prose", "id": "shopping", "heading": "4. Shopping", "variant": "tint", "text": ["In a shop, a few polite questions will get you everything you need."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["How much is this?", "Asking the price"],
-          ["Do you have this in a bigger size?", "Asking for a different size"],
-          ["Can I try it on?", "Clothes and shoes"],
-          ["I'm just looking, thank you.", "When you don't need help yet"],
-          ["Can I pay by card?", "Paying"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Buying a shirt", "setting": "Nuwan is in a clothes shop.", "speakers": ["Shop assistant", "Nuwan"], "lines": [
-          { "speaker": "Shop assistant", "text": "Good afternoon. Can I help you?" },
-          { "speaker": "Nuwan", "text": "Yes, please. How much is this blue shirt?" },
-          { "speaker": "Shop assistant", "text": "It's two thousand five hundred rupees." },
-          { "speaker": "Nuwan", "text": "Do you have it in a bigger size?" },
-          { "speaker": "Shop assistant", "text": "Yes, here's a large. The changing room is over there." },
-          { "speaker": "Nuwan", "text": "Thank you. Can I pay by card?" },
-          { "speaker": "Shop assistant", "text": "Of course." }
-        ] } ] },
-
-        { "type": "prose", "id": "ordering-food", "heading": "5. Ordering food", "variant": "tint", "text": ["*I'd like...* is the most useful phrase in any restaurant. It is polite, and it works for everything on the menu."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Could we see the menu, please?", "When you sit down"],
-          ["I'd like rice and curry, please.", "Ordering"],
-          ["Is it very spicy?", "Asking about a dish"],
-          ["Could I have a glass of water, please?", "Asking for something extra"],
-          ["Could we have the bill, please?", "When you have finished"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Lunch at a restaurant", "setting": "Thilini orders lunch.", "speakers": ["Waiter", "Thilini"], "lines": [
-          { "speaker": "Waiter", "text": "Are you ready to order?" },
-          { "speaker": "Thilini", "text": "Yes. Is the chicken curry very spicy?" },
-          { "speaker": "Waiter", "text": "A little. The vegetable curry is milder." },
-          { "speaker": "Thilini", "text": "Then I'd like rice with vegetable curry, please." },
-          { "speaker": "Waiter", "text": "And to drink?" },
-          { "speaker": "Thilini", "text": "Could I have a lime juice, please?" }
-        ] } ] },
-
-        { "type": "prose", "id": "directions", "heading": "6. Asking for directions", "variant": "tint", "text": ["Start with *Excuse me*, and do not be afraid to ask the person to repeat. Repeating the directions back is the best way to be sure."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Excuse me, where is the bus stand?", "Asking the way"],
-          ["Is it far from here?", "Asking the distance"],
-          ["Go straight on, then turn left.", "Giving directions"],
-          ["It's next to the bank. / It's opposite the school.", "Saying where something is"],
-          ["Sorry, could you say that again?", "When you did not understand"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Finding the post office", "setting": "Kumari is visiting a new town.", "speakers": ["Kumari", "Passer-by"], "lines": [
-          { "speaker": "Kumari", "text": "Excuse me, is there a post office near here?" },
-          { "speaker": "Passer-by", "text": "Yes. Go straight on and take the second road on the right. It's opposite the school." },
-          { "speaker": "Kumari", "text": "Sorry, could you say that again?" },
-          { "speaker": "Passer-by", "text": "Straight on, second on the right. It's opposite the school." },
-          { "speaker": "Kumari", "text": "Second on the right. Thank you very much!" }
-        ] } ] },
-
-        { "type": "prose", "id": "telephone", "heading": "7. On the telephone", "variant": "tint", "text": ["On the phone, nobody can see you, so say who you are and speak a little more slowly than usual."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Hello, this is Nimal speaking.", "Saying who you are"],
-          ["May I speak to Ms Fernando, please?", "Asking for someone"],
-          ["Could you hold on a moment, please?", "Asking the caller to wait"],
-          ["She isn't here. Can I take a message?", "When the person is not there"],
-          ["Could you speak a little louder, please?", "When you cannot hear well"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Calling an office", "setting": "Nimal telephones a company.", "speakers": ["Receptionist", "Nimal"], "lines": [
-          { "speaker": "Receptionist", "text": "Good morning, Lanka Traders. How can I help you?" },
-          { "speaker": "Nimal", "text": "Hello, this is Nimal Silva speaking. May I speak to Ms Fernando, please?" },
-          { "speaker": "Receptionist", "text": "I'm sorry, she's in a meeting. Can I take a message?" },
-          { "speaker": "Nimal", "text": "Yes, please. Could you ask her to call me back this afternoon?" },
-          { "speaker": "Receptionist", "text": "Of course. Could I have your number, please?" },
-          { "speaker": "Nimal", "text": "It's zero seven seven, one two three, four five six seven." }
-        ] } ] },
-
-        { "type": "prose", "id": "polite-requests", "heading": "8. Asking politely", "variant": "tint", "text": ["*Could you...?* and *Would you mind...?* turn an order into a request. In English, politeness is often in the question, not just in *please*."] },
-        { "type": "table", "columns": ["Say this", "Not this"], "rows": [
-          ["Could you help me, please?", "Help me."],
-          ["Would you mind closing the window?", "Close the window."],
-          ["Can I borrow your pen?", "Give me your pen."],
-          ["Of course. / Sure, here you are.", "Saying yes"],
-          ["Sorry, I'm using it right now.", "Saying no politely"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "In the classroom", "setting": "Two students are sitting together in a lesson.", "speakers": ["Pradeep", "Anusha"], "lines": [
-          { "speaker": "Pradeep", "text": "Anusha, can I borrow your ruler, please?" },
-          { "speaker": "Anusha", "text": "Sure, here you are." },
-          { "speaker": "Pradeep", "text": "Thanks. And would you mind explaining question three? I don't understand it." },
-          { "speaker": "Anusha", "text": "Not at all. Look, you need to find the area first." },
-          { "speaker": "Pradeep", "text": "Oh, I see now. Thank you!" }
-        ] } ] },
-
-        { "type": "prose", "id": "thanks-and-sorry", "heading": "9. Thanking and apologising", "variant": "tint", "text": ["*Thank you* and *sorry* are small words that make a big difference. Learn the replies too, so the conversation can move on."] },
-        { "type": "table", "columns": ["Say this", "Reply"], "rows": [
-          ["Thank you very much.", "You're welcome. / No problem."],
-          ["Thanks for your help.", "It was a pleasure."],
-          ["I'm sorry I'm late.", "That's all right. / Don't worry."],
-          ["Sorry, my mistake.", "No problem at all."],
-          ["I'm really sorry about that.", "It's OK, these things happen."]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "A late arrival", "setting": "Kasun arrives late to meet a friend.", "speakers": ["Kasun", "Dilani"], "lines": [
-          { "speaker": "Kasun", "text": "I'm so sorry I'm late. The bus was very slow." },
-          { "speaker": "Dilani", "text": "That's all right. I only got here ten minutes ago." },
-          { "speaker": "Kasun", "text": "Thanks for waiting. Let me buy you a cup of tea." },
-          { "speaker": "Dilani", "text": "Oh, thank you! That's kind of you." },
-          { "speaker": "Kasun", "text": "It's the least I can do." }
-        ] } ] },
-
-        { "type": "prose", "id": "small-talk", "heading": "10. Small talk: the weather and weekend plans", "variant": "tint", "text": ["Small talk is friendly conversation about easy topics. It fills a silence, and it often starts a real conversation."] },
-        { "type": "table", "columns": ["Say this", "When"], "rows": [
-          ["Lovely day, isn't it?", "Starting a conversation"],
-          ["It's really hot today.", "Talking about the weather"],
-          ["Any plans for the weekend?", "Asking about plans"],
-          ["I'm going to visit my cousins.", "Talking about your plans"],
-          ["Have a nice weekend! / You too.", "Ending the conversation"]
-        ] },
-        { "type": "dialogue", "items": [ { "title": "Friday afternoon", "setting": "Two colleagues are leaving work.", "speakers": ["Roshan", "Priya"], "lines": [
-          { "speaker": "Roshan", "text": "It's really hot today, isn't it?" },
-          { "speaker": "Priya", "text": "Yes, I think it's going to rain later." },
-          { "speaker": "Roshan", "text": "Any plans for the weekend?" },
-          { "speaker": "Priya", "text": "I'm going to visit my cousins in Kandy. What about you?" },
-          { "speaker": "Roshan", "text": "Nothing special. I'm just going to relax at home." },
-          { "speaker": "Priya", "text": "Sounds good. Have a nice weekend!" },
-          { "speaker": "Roshan", "text": "You too!" }
-        ] } ] },
-
+        {
+          "type": "prose",
+          "id": "greetings",
+          "heading": "1. Greetings and introducing yourself",
+          "variant": "tint",
+          "text": [
+            "The first few words of a conversation matter most. Keep them short, smile, and use the other person's name if you know it."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Good morning. How are you?",
+              "A polite greeting, with anyone"
+            ],
+            [
+              "Hi! How's it going?",
+              "An informal greeting, with friends"
+            ],
+            [
+              "I'm fine, thank you. And you?",
+              "Answering, and asking back"
+            ],
+            [
+              "Hello, I'm Ruwan. Nice to meet you.",
+              "Introducing yourself"
+            ],
+            [
+              "Nice to meet you too.",
+              "Replying to an introduction"
+            ],
+            [
+              "See you later. / Take care.",
+              "Saying goodbye"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A new neighbour",
+              "setting": "Ruwan has just moved into a new house and meets his neighbour.",
+              "speakers": [
+                "Ruwan",
+                "Mrs Perera"
+              ],
+              "lines": [
+                {
+                  "speaker": "Ruwan",
+                  "text": "Good morning! I'm Ruwan. I've just moved in next door."
+                },
+                {
+                  "speaker": "Mrs Perera",
+                  "text": "Oh, hello, Ruwan. I'm Mrs Perera. Nice to meet you."
+                },
+                {
+                  "speaker": "Ruwan",
+                  "text": "Nice to meet you too."
+                },
+                {
+                  "speaker": "Mrs Perera",
+                  "text": "Welcome to the street. If you need anything, just ask."
+                },
+                {
+                  "speaker": "Ruwan",
+                  "text": "Thank you, that's very kind of you."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "family",
+          "heading": "2. Talking about your family",
+          "variant": "tint",
+          "text": [
+            "Family is one of the first things people ask about. Use *have*, *is* and *live* to describe who is in your family."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "I have one brother and two sisters.",
+              "The people in your family"
+            ],
+            [
+              "I'm the eldest. / I'm the youngest.",
+              "Your place in the family"
+            ],
+            [
+              "My father is a farmer, and my mother is a nurse.",
+              "Their jobs"
+            ],
+            [
+              "We live with my grandmother.",
+              "Who lives in your home"
+            ],
+            [
+              "Do you have any brothers or sisters?",
+              "Asking someone else"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "At a friend's house",
+              "setting": "Two classmates are talking while they wait for lunch.",
+              "speakers": [
+                "Sachini",
+                "Amal"
+              ],
+              "lines": [
+                {
+                  "speaker": "Sachini",
+                  "text": "Do you have any brothers or sisters, Amal?"
+                },
+                {
+                  "speaker": "Amal",
+                  "text": "Yes, I have one older brother. He works in Colombo. What about you?"
+                },
+                {
+                  "speaker": "Sachini",
+                  "text": "I have two younger sisters, so I'm the eldest."
+                },
+                {
+                  "speaker": "Amal",
+                  "text": "That must be busy! Do you all live together?"
+                },
+                {
+                  "speaker": "Sachini",
+                  "text": "Yes, and my grandmother lives with us too."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "daily-routine",
+          "heading": "3. Your daily routine",
+          "variant": "tint",
+          "text": [
+            "Use the present simple for things you do every day, with words such as *usually*, *always* and *on Sundays*."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "Tip"
+          ],
+          "rows": [
+            [
+              "I usually get up at six o'clock.",
+              "*Usually* goes before the verb"
+            ],
+            [
+              "I go to work by bus.",
+              "*By* bus, *by* train, but *on* foot"
+            ],
+            [
+              "I have lunch at one.",
+              "We *have* meals"
+            ],
+            [
+              "After dinner, I watch the news.",
+              "*After* + a time or an activity"
+            ],
+            [
+              "On Sundays, I relax at home.",
+              "*On* + a day"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A busy day",
+              "setting": "Two colleagues are talking during a tea break.",
+              "speakers": [
+                "Dinesh",
+                "Harsha"
+              ],
+              "lines": [
+                {
+                  "speaker": "Dinesh",
+                  "text": "You always look so fresh in the morning. What time do you get up?"
+                },
+                {
+                  "speaker": "Harsha",
+                  "text": "At half past five. I go for a short walk before work."
+                },
+                {
+                  "speaker": "Dinesh",
+                  "text": "Half past five! I usually get up at seven."
+                },
+                {
+                  "speaker": "Harsha",
+                  "text": "But you go to bed late, don't you?"
+                },
+                {
+                  "speaker": "Dinesh",
+                  "text": "Yes. I usually watch television until midnight."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "shopping",
+          "heading": "4. Shopping",
+          "variant": "tint",
+          "text": [
+            "In a shop, a few polite questions will get you everything you need."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "How much is this?",
+              "Asking the price"
+            ],
+            [
+              "Do you have this in a bigger size?",
+              "Asking for a different size"
+            ],
+            [
+              "Can I try it on?",
+              "Clothes and shoes"
+            ],
+            [
+              "I'm just looking, thank you.",
+              "When you don't need help yet"
+            ],
+            [
+              "Can I pay by card?",
+              "Paying"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Buying a shirt",
+              "setting": "Nuwan is in a clothes shop.",
+              "speakers": [
+                "Shop assistant",
+                "Nuwan"
+              ],
+              "lines": [
+                {
+                  "speaker": "Shop assistant",
+                  "text": "Good afternoon. Can I help you?"
+                },
+                {
+                  "speaker": "Nuwan",
+                  "text": "Yes, please. How much is this blue shirt?"
+                },
+                {
+                  "speaker": "Shop assistant",
+                  "text": "It's two thousand five hundred rupees."
+                },
+                {
+                  "speaker": "Nuwan",
+                  "text": "Do you have it in a bigger size?"
+                },
+                {
+                  "speaker": "Shop assistant",
+                  "text": "Yes, here's a large. The changing room is over there."
+                },
+                {
+                  "speaker": "Nuwan",
+                  "text": "Thank you. Can I pay by card?"
+                },
+                {
+                  "speaker": "Shop assistant",
+                  "text": "Of course."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "ordering-food",
+          "heading": "5. Ordering food",
+          "variant": "tint",
+          "text": [
+            "*I'd like...* is the most useful phrase in any restaurant. It is polite, and it works for everything on the menu."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Could we see the menu, please?",
+              "When you sit down"
+            ],
+            [
+              "I'd like rice and curry, please.",
+              "Ordering"
+            ],
+            [
+              "Is it very spicy?",
+              "Asking about a dish"
+            ],
+            [
+              "Could I have a glass of water, please?",
+              "Asking for something extra"
+            ],
+            [
+              "Could we have the bill, please?",
+              "When you have finished"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Lunch at a restaurant",
+              "setting": "Thilini orders lunch.",
+              "speakers": [
+                "Waiter",
+                "Thilini"
+              ],
+              "lines": [
+                {
+                  "speaker": "Waiter",
+                  "text": "Are you ready to order?"
+                },
+                {
+                  "speaker": "Thilini",
+                  "text": "Yes. Is the chicken curry very spicy?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "text": "A little. The vegetable curry is milder."
+                },
+                {
+                  "speaker": "Thilini",
+                  "text": "Then I'd like rice with vegetable curry, please."
+                },
+                {
+                  "speaker": "Waiter",
+                  "text": "And to drink?"
+                },
+                {
+                  "speaker": "Thilini",
+                  "text": "Could I have a lime juice, please?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "directions",
+          "heading": "6. Asking for directions",
+          "variant": "tint",
+          "text": [
+            "Start with *Excuse me*, and do not be afraid to ask the person to repeat. Repeating the directions back is the best way to be sure."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Excuse me, where is the bus stand?",
+              "Asking the way"
+            ],
+            [
+              "Is it far from here?",
+              "Asking the distance"
+            ],
+            [
+              "Go straight on, then turn left.",
+              "Giving directions"
+            ],
+            [
+              "It's next to the bank. / It's opposite the school.",
+              "Saying where something is"
+            ],
+            [
+              "Sorry, could you say that again?",
+              "When you did not understand"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Finding the post office",
+              "setting": "Kumari is visiting a new town.",
+              "speakers": [
+                "Kumari",
+                "Passer-by"
+              ],
+              "lines": [
+                {
+                  "speaker": "Kumari",
+                  "text": "Excuse me, is there a post office near here?"
+                },
+                {
+                  "speaker": "Passer-by",
+                  "text": "Yes. Go straight on and take the second road on the right. It's opposite the school."
+                },
+                {
+                  "speaker": "Kumari",
+                  "text": "Sorry, could you say that again?"
+                },
+                {
+                  "speaker": "Passer-by",
+                  "text": "Straight on, second on the right. It's opposite the school."
+                },
+                {
+                  "speaker": "Kumari",
+                  "text": "Second on the right. Thank you very much!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "telephone",
+          "heading": "7. On the telephone",
+          "variant": "tint",
+          "text": [
+            "On the phone, nobody can see you, so say who you are and speak a little more slowly than usual."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Hello, this is Nimal speaking.",
+              "Saying who you are"
+            ],
+            [
+              "May I speak to Ms Fernando, please?",
+              "Asking for someone"
+            ],
+            [
+              "Could you hold on a moment, please?",
+              "Asking the caller to wait"
+            ],
+            [
+              "She isn't here. Can I take a message?",
+              "When the person is not there"
+            ],
+            [
+              "Could you speak a little louder, please?",
+              "When you cannot hear well"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Calling an office",
+              "setting": "Nimal telephones a company.",
+              "speakers": [
+                "Receptionist",
+                "Nimal"
+              ],
+              "lines": [
+                {
+                  "speaker": "Receptionist",
+                  "text": "Good morning, Lanka Traders. How can I help you?"
+                },
+                {
+                  "speaker": "Nimal",
+                  "text": "Hello, this is Nimal Silva speaking. May I speak to Ms Fernando, please?"
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "I'm sorry, she's in a meeting. Can I take a message?"
+                },
+                {
+                  "speaker": "Nimal",
+                  "text": "Yes, please. Could you ask her to call me back this afternoon?"
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "Of course. Could I have your number, please?"
+                },
+                {
+                  "speaker": "Nimal",
+                  "text": "It's zero seven seven, one two three, four five six seven."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "polite-requests",
+          "heading": "8. Asking politely",
+          "variant": "tint",
+          "text": [
+            "*Could you...?* and *Would you mind...?* turn an order into a request. In English, politeness is often in the question, not just in *please*."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "Not this"
+          ],
+          "rows": [
+            [
+              "Could you help me, please?",
+              "Help me."
+            ],
+            [
+              "Would you mind closing the window?",
+              "Close the window."
+            ],
+            [
+              "Can I borrow your pen?",
+              "Give me your pen."
+            ],
+            [
+              "Of course. / Sure, here you are.",
+              "Saying yes"
+            ],
+            [
+              "Sorry, I'm using it right now.",
+              "Saying no politely"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "In the classroom",
+              "setting": "Two students are sitting together in a lesson.",
+              "speakers": [
+                "Pradeep",
+                "Anusha"
+              ],
+              "lines": [
+                {
+                  "speaker": "Pradeep",
+                  "text": "Anusha, can I borrow your ruler, please?"
+                },
+                {
+                  "speaker": "Anusha",
+                  "text": "Sure, here you are."
+                },
+                {
+                  "speaker": "Pradeep",
+                  "text": "Thanks. And would you mind explaining question three? I don't understand it."
+                },
+                {
+                  "speaker": "Anusha",
+                  "text": "Not at all. Look, you need to find the area first."
+                },
+                {
+                  "speaker": "Pradeep",
+                  "text": "Oh, I see now. Thank you!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "thanks-and-sorry",
+          "heading": "9. Thanking and apologising",
+          "variant": "tint",
+          "text": [
+            "*Thank you* and *sorry* are small words that make a big difference. Learn the replies too, so the conversation can move on."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "Reply"
+          ],
+          "rows": [
+            [
+              "Thank you very much.",
+              "You're welcome. / No problem."
+            ],
+            [
+              "Thanks for your help.",
+              "It was a pleasure."
+            ],
+            [
+              "I'm sorry I'm late.",
+              "That's all right. / Don't worry."
+            ],
+            [
+              "Sorry, my mistake.",
+              "No problem at all."
+            ],
+            [
+              "I'm really sorry about that.",
+              "It's OK, these things happen."
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "A late arrival",
+              "setting": "Kasun arrives late to meet a friend.",
+              "speakers": [
+                "Kasun",
+                "Dilani"
+              ],
+              "lines": [
+                {
+                  "speaker": "Kasun",
+                  "text": "I'm so sorry I'm late. The bus was very slow."
+                },
+                {
+                  "speaker": "Dilani",
+                  "text": "That's all right. I only got here ten minutes ago."
+                },
+                {
+                  "speaker": "Kasun",
+                  "text": "Thanks for waiting. Let me buy you a cup of tea."
+                },
+                {
+                  "speaker": "Dilani",
+                  "text": "Oh, thank you! That's kind of you."
+                },
+                {
+                  "speaker": "Kasun",
+                  "text": "It's the least I can do."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "small-talk",
+          "heading": "10. Small talk: the weather and weekend plans",
+          "variant": "tint",
+          "text": [
+            "Small talk is friendly conversation about easy topics. It fills a silence, and it often starts a real conversation."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Say this",
+            "When"
+          ],
+          "rows": [
+            [
+              "Lovely day, isn't it?",
+              "Starting a conversation"
+            ],
+            [
+              "It's really hot today.",
+              "Talking about the weather"
+            ],
+            [
+              "Any plans for the weekend?",
+              "Asking about plans"
+            ],
+            [
+              "I'm going to visit my cousins.",
+              "Talking about your plans"
+            ],
+            [
+              "Have a nice weekend! / You too.",
+              "Ending the conversation"
+            ]
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "title": "Friday afternoon",
+              "setting": "Two colleagues are leaving work.",
+              "speakers": [
+                "Roshan",
+                "Priya"
+              ],
+              "lines": [
+                {
+                  "speaker": "Roshan",
+                  "text": "It's really hot today, isn't it?"
+                },
+                {
+                  "speaker": "Priya",
+                  "text": "Yes, I think it's going to rain later."
+                },
+                {
+                  "speaker": "Roshan",
+                  "text": "Any plans for the weekend?"
+                },
+                {
+                  "speaker": "Priya",
+                  "text": "I'm going to visit my cousins in Kandy. What about you?"
+                },
+                {
+                  "speaker": "Roshan",
+                  "text": "Nothing special. I'm just going to relax at home."
+                },
+                {
+                  "speaker": "Priya",
+                  "text": "Sounds good. Have a nice weekend!"
+                },
+                {
+                  "speaker": "Roshan",
+                  "text": "You too!"
+                }
+              ]
+            }
+          ]
+        },
         {
           "type": "cards",
           "heading": "Keep practising",
           "columns": "3",
           "items": [
-            { "title": "Conversation Partner", "url": "practical-english/conversation-partner/", "more": "Talk", "text": ["Order at a café, buy a ticket or ask for directions, and the website answers what you say."] },
-            { "title": "Speaking Practice", "url": "speaking-practice/?mode=talk", "more": "Practise", "text": ["Say what you would say in everyday situations, and get feedback."] },
-            { "title": "Spoken English", "url": "practical-english/spoken-english/", "more": "Read", "text": ["Why spoken English sounds different from written English."] }
+            {
+              "title": "Conversation Partner",
+              "url": "practical-english/conversation-partner/",
+              "more": "Talk",
+              "text": [
+                "Order at a café, buy a ticket or ask for directions, and the website answers what you say."
+              ]
+            },
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/?mode=talk",
+              "more": "Practise",
+              "text": [
+                "Say what you would say in everyday situations, and get feedback."
+              ]
+            },
+            {
+              "title": "Spoken English",
+              "url": "practical-english/spoken-english/",
+              "more": "Read",
+              "text": [
+                "Why spoken English sounds different from written English."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "practical-english/elocution-basics",
       "title": "Elocution Basics",
-      "metaTitle": "Elocution Basics: Posture, Breathing, Tongue Twisters, Reading Aloud and Speaking with Confidence | RCF English",
+      "metaTitle": "Elocution Basics: Posture, Breathing, Tongue Twisters, Reading Aloud and Speaking with Confidence",
       "description": "Ten simple elocution topics with exercises: posture, breathing, voice warm-ups, tongue twisters, vowel sounds, word stress, intonation, pace and pausing, reading a poem aloud, and speaking to an audience.",
       "keywords": "elocution for beginners, elocution exercises, tongue twisters for clear speech, reading aloud practice, voice projection, public speaking for students, elocution Sri Lanka",
       "kicker": "Practical English",
       "kind": "lesson",
-      "breadcrumbs": [{ "label": "Practical English", "url": "practical-english/" }],
-      "backTo": { "label": "Pronunciation", "url": "practical-english/pronunciation/" },
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Pronunciation",
+        "url": "practical-english/pronunciation/"
+      },
       "hero": {
         "text": "Elocution is the art of speaking clearly, expressively and with confidence. Ten short topics, each with an exercise you can do in five minutes.",
         "buttons": [
-          { "label": "Start with posture", "url": "practical-english/elocution-basics/#posture", "style": "btn--accent" },
-          { "label": "Tongue twisters", "url": "practical-english/elocution-basics/#tongue-twisters", "style": "btn--ghost-light" },
-          { "label": "Reading aloud", "url": "practical-english/elocution-basics/#reading-aloud", "style": "btn--ghost-light" }
+          {
+            "label": "Start with posture",
+            "url": "practical-english/elocution-basics/#posture",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Tongue twisters",
+            "url": "practical-english/elocution-basics/#tongue-twisters",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Reading aloud",
+            "url": "practical-english/elocution-basics/#reading-aloud",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
-        { "type": "callout", "style": "note", "title": "About this page", "text": ["These are general exercises in clear, confident speaking, written by RCF English. They are not the syllabus of any elocution examination. If you are preparing for an examination, follow the syllabus your teacher gives you."] },
-
-        { "type": "prose", "id": "posture", "heading": "1. Posture: stand well to speak well", "variant": "tint",
-          "text": ["Your voice comes from your whole body. If you slump, your chest cannot fill with air and your voice sounds weak."],
-          "parts": [ { "heading": "Exercise", "numbered": [
-            "Stand with your feet a little apart, your weight even on both feet.",
-            "Let your arms hang loosely. Roll your shoulders back and down twice.",
-            "Imagine a string pulling the top of your head gently up towards the ceiling.",
-            "Keep your chin level: not up in the air, not down on your chest.",
-            "Say *Good morning, everyone* in this position. Then slump and say it again. Hear the difference."
-          ] } ] },
-
-        { "type": "prose", "id": "breathing", "heading": "2. Breathing for speech", "variant": "tint",
-          "text": ["Good speakers breathe low, from the stomach, not high in the shoulders. Low breathing gives you more air and a steadier voice."],
-          "parts": [ { "heading": "Exercise", "numbered": [
-            "Put one hand on your stomach, just below your ribs.",
-            "Breathe in slowly through your nose. Your hand should move out; your shoulders should not rise.",
-            "Breathe out slowly on a long *ssss* sound, as if letting air out of a tyre.",
-            "Now breathe in, and count aloud from one to ten on a single breath.",
-            "Each day, try to count one number further, without rushing or straining."
-          ] } ] },
-
-        { "type": "prose", "id": "warm-up", "heading": "3. Warming up your voice", "variant": "tint",
-          "text": ["Singers warm up before they sing, and speakers should too. Two minutes is enough."],
-          "parts": [ { "heading": "Exercise", "numbered": [
-            "Yawn widely, then sigh out gently on *haaa*. This relaxes your throat.",
-            "Hum *mmmm* with your lips closed. Feel the buzz on your lips and nose.",
-            "Blow air through loose lips so they flutter, like a motorbike: *brrrr*.",
-            "Move your jaw gently from side to side, then open and close it slowly.",
-            "Say *ma, me, mi, mo, mu*, opening your mouth clearly for each sound."
-          ] } ] },
-
-        { "type": "prose", "id": "tongue-twisters", "heading": "4. Tongue twisters for clear speech", "variant": "tint",
-          "text": ["Tongue twisters train your lips, tongue and teeth to move quickly and precisely. Say each one **slowly and clearly three times first**, then a little faster. Clarity always matters more than speed."] },
-        { "type": "table", "heading": "Ten tongue twisters to practise", "level": "h3", "caption": "Written by RCF English.", "columns": ["Sound", "Tongue twister"], "rows": [
-          ["b", "Big black buses bring back busy boys."],
-          ["p", "Priya put plenty of pink paper plates in a plastic box."],
-          ["t and d", "Tall Tom tied ten tidy knots today."],
-          ["s", "Seven silver spoons sit safely on the shelf."],
-          ["sh and s", "Shanthi's shiny shoes slipped on the shop's smooth steps."],
-          ["th", "Three thin thinkers thought through thirty things."],
-          ["v and w", "Vimal's van waited while Wimal washed the windows."],
-          ["f", "Five friendly farmers fed fresh fruit to fifty foxes."],
-          ["r and l", "Red roses rarely grow along long lonely lanes."],
-          ["k and g", "Good cooks cook great cakes quickly."]
-        ] },
-        { "type": "callout", "style": "tip", "title": "Check yourself", "text": ["Record yourself on your phone and listen back. Can you hear every sound? The [Speaking Practice read-aloud exercises](speaking-practice/?mode=read) also show which words were recognised."] },
-
-        { "type": "prose", "id": "vowel-sounds", "heading": "5. Short and long vowel sounds", "variant": "tint",
-          "text": ["Many words change their meaning when a vowel is short or long. Say each pair aloud, making the difference clear. Keep the long sound long, without rushing it."] },
-        { "type": "table", "columns": ["Short sound", "Long sound", "Practise in a sentence"], "rows": [
-          ["ship", "sheep", "The sheep are on the ship."],
-          ["full", "fool", "Don't be a fool: the bus is full."],
-          ["cot", "caught", "The baby was caught climbing out of the cot."],
-          ["fill", "feel", "Fill the glass and feel how cold it is."],
-          ["pull", "pool", "Pull the child out of the pool."],
-          ["cap", "carp", "He dropped his cap into the carp pond."]
-        ] },
-
-        { "type": "prose", "id": "word-stress", "heading": "6. Word stress", "variant": "tint",
-          "text": ["In English, one part of a longer word is said more strongly: a little louder, longer and higher. Stress in the wrong place can make a word hard to understand. The stressed part is in capital letters below."] },
-        { "type": "table", "columns": ["Word", "Say it like this"], "rows": [
-          ["photograph", "PHO-to-graph"],
-          ["photographer", "pho-TO-gra-pher"],
-          ["photographic", "pho-to-GRA-phic"],
-          ["record (a noun: a record of marks)", "RE-cord"],
-          ["record (a verb: to record a song)", "re-CORD"],
-          ["important", "im-POR-tant"],
-          ["education", "e-du-CA-tion"],
-          ["comfortable", "COM-for-ta-ble"]
-        ] },
-
-        { "type": "prose", "id": "intonation", "heading": "7. Stress and intonation in sentences", "variant": "tint",
-          "text": ["In a sentence, we stress the words that carry the meaning, and our voice rises and falls. This is what makes speech sound alive rather than flat."],
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "About this page",
+          "text": [
+            "These are general exercises in clear, confident speaking, written by RCF English. They are not the syllabus of any elocution examination. If you are preparing for an examination, follow the syllabus your teacher gives you."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "posture",
+          "heading": "1. Posture: stand well to speak well",
+          "variant": "tint",
+          "text": [
+            "Your voice comes from your whole body. If you slump, your chest cannot fill with air and your voice sounds weak."
+          ],
           "parts": [
-            { "heading": "The tune of a sentence", "bullets": [
-              "**Statements fall at the end:** I live in Galle. ↘",
-              "**Yes/no questions usually rise:** Do you live in Galle? ↗",
-              "**Wh- questions usually fall:** Where do you live? ↘",
-              "**Lists rise, rise, then fall:** I bought rice ↗, dhal ↗ and onions. ↘"
-            ] },
-            { "heading": "Exercise: move the stress, change the meaning", "text": ["Say this sentence five times, stressing a different word each time. Notice how the meaning changes."], "numbered": [
-              "**SHE** gave me the red book. (not someone else)",
-              "She **GAVE** me the red book. (it was a gift, not a loan)",
-              "She gave **ME** the red book. (not you)",
-              "She gave me the **RED** book. (not the blue one)",
-              "She gave me the red **BOOK**. (not the red pen)"
-            ] }
-          ] },
-
-        { "type": "prose", "id": "pace-and-pausing", "heading": "8. Pace and pausing", "variant": "tint",
-          "text": ["Nervous speakers rush. A pause gives your listeners time to understand, and gives you time to breathe. In the passage below, **/** means a short pause and **//** means a longer pause. Read it aloud slowly, then read it again without the marks, keeping the pauses."],
+            {
+              "heading": "Exercise",
+              "numbered": [
+                "Stand with your feet a little apart, your weight even on both feet.",
+                "Let your arms hang loosely. Roll your shoulders back and down twice.",
+                "Imagine a string pulling the top of your head gently up towards the ceiling.",
+                "Keep your chin level: not up in the air, not down on your chest.",
+                "Say *Good morning, everyone* in this position. Then slump and say it again. Hear the difference."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "breathing",
+          "heading": "2. Breathing for speech",
+          "variant": "tint",
+          "text": [
+            "Good speakers breathe low, from the stomach, not high in the shoulders. Low breathing gives you more air and a steadier voice."
+          ],
           "parts": [
-            { "heading": "Practice passage", "text": ["*Every morning / before the town wakes up / an old man walks along the beach. // He carries a small bag / and a long stick. // He is not looking for shells. / He is picking up plastic. // When people ask him why, / he smiles / and says, / \"Somebody has to start.\" //*"] },
-            { "heading": "Tips", "bullets": [
-              "Pause at full stops and commas, and before an important word.",
-              "Slow down for names, numbers and the most important sentence.",
-              "A pause that feels long to you usually sounds natural to your audience."
-            ] }
-          ] },
-
-        { "type": "prose", "id": "reading-aloud", "heading": "9. Reading aloud with expression", "variant": "tint",
-          "text": ["Reading aloud well means understanding the words first, then letting your voice show their meaning. Read the poem silently, decide how it should sound, and then read it aloud."],
+            {
+              "heading": "Exercise",
+              "numbered": [
+                "Put one hand on your stomach, just below your ribs.",
+                "Breathe in slowly through your nose. Your hand should move out; your shoulders should not rise.",
+                "Breathe out slowly on a long *ssss* sound, as if letting air out of a tyre.",
+                "Now breathe in, and count aloud from one to ten on a single breath.",
+                "Each day, try to count one number further, without rushing or straining."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "warm-up",
+          "heading": "3. Warming up your voice",
+          "variant": "tint",
+          "text": [
+            "Singers warm up before they sing, and speakers should too. Two minutes is enough."
+          ],
           "parts": [
-            { "heading": "Before you read", "numbered": [
-              "Read the whole piece silently, and make sure you understand every word.",
-              "Decide the mood: happy, sad, calm, excited or funny?",
-              "Pause at punctuation, not at the end of every line.",
-              "Choose one or two words in each line to stress.",
-              "Look up from the page now and then, to connect with your listeners."
-            ] },
-            { "heading": "Practise with this poem: The Monsoon Comes", "text": ["*All morning the sky was heavy and grey,*", "*the crows were quiet, the dogs would not play.*", "*Then one cool wind ran over the hill,*", "*the palm trees shivered, and then stood still.*", "*A drop on a leaf. A drop on my hand.*", "*A drumming of rain on the thirsty land.*", "*And down by the river, loud and free,*", "*the frogs began singing their thanks with me.*", "Poem written by RCF English."] },
-            { "heading": "How to read it", "bullets": [
-              "**Lines 1 and 2:** slow and low, to show the heavy, waiting sky.",
-              "**Lines 3 and 4:** a little faster, as the wind arrives; pause after *shivered*.",
-              "**Line 5:** short pauses after each sentence, like single raindrops.",
-              "**Line 6:** pick up speed and volume for the drumming rain.",
-              "**Lines 7 and 8:** bright and joyful, ending with a warm smile in your voice."
-            ] }
-          ] },
-
-        { "type": "prose", "id": "public-speaking", "heading": "10. Speaking to an audience", "variant": "tint",
-          "text": ["Everyone feels nervous before speaking in front of people. Good speakers are not free of nerves; they have simply learned what to do with them."],
+            {
+              "heading": "Exercise",
+              "numbered": [
+                "Yawn widely, then sigh out gently on *haaa*. This relaxes your throat.",
+                "Hum *mmmm* with your lips closed. Feel the buzz on your lips and nose.",
+                "Blow air through loose lips so they flutter, like a motorbike: *brrrr*.",
+                "Move your jaw gently from side to side, then open and close it slowly.",
+                "Say *ma, me, mi, mo, mu*, opening your mouth clearly for each sound."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "tongue-twisters",
+          "heading": "4. Tongue twisters for clear speech",
+          "variant": "tint",
+          "text": [
+            "Tongue twisters train your lips, tongue and teeth to move quickly and precisely. Say each one **slowly and clearly three times first**, then a little faster. Clarity always matters more than speed."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Ten tongue twisters to practise",
+          "level": "h3",
+          "caption": "Written by RCF English.",
+          "columns": [
+            "Sound",
+            "Tongue twister"
+          ],
+          "rows": [
+            [
+              "b",
+              "Big black buses bring back busy boys."
+            ],
+            [
+              "p",
+              "Priya put plenty of pink paper plates in a plastic box."
+            ],
+            [
+              "t and d",
+              "Tall Tom tied ten tidy knots today."
+            ],
+            [
+              "s",
+              "Seven silver spoons sit safely on the shelf."
+            ],
+            [
+              "sh and s",
+              "Shanthi's shiny shoes slipped on the shop's smooth steps."
+            ],
+            [
+              "th",
+              "Three thin thinkers thought through thirty things."
+            ],
+            [
+              "v and w",
+              "Vimal's van waited while Wimal washed the windows."
+            ],
+            [
+              "f",
+              "Five friendly farmers fed fresh fruit to fifty foxes."
+            ],
+            [
+              "r and l",
+              "Red roses rarely grow along long lonely lanes."
+            ],
+            [
+              "k and g",
+              "Good cooks cook great cakes quickly."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Check yourself",
+          "text": [
+            "Record yourself on your phone and listen back. Can you hear every sound? The [Speaking Practice read-aloud exercises](speaking-practice/?mode=read) also show which words were recognised."
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "vowel-sounds",
+          "heading": "5. Short and long vowel sounds",
+          "variant": "tint",
+          "text": [
+            "Many words change their meaning when a vowel is short or long. Say each pair aloud, making the difference clear. Keep the long sound long, without rushing it."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Short sound",
+            "Long sound",
+            "Practise in a sentence"
+          ],
+          "rows": [
+            [
+              "ship",
+              "sheep",
+              "The sheep are on the ship."
+            ],
+            [
+              "full",
+              "fool",
+              "Don't be a fool: the bus is full."
+            ],
+            [
+              "cot",
+              "caught",
+              "The baby was caught climbing out of the cot."
+            ],
+            [
+              "fill",
+              "feel",
+              "Fill the glass and feel how cold it is."
+            ],
+            [
+              "pull",
+              "pool",
+              "Pull the child out of the pool."
+            ],
+            [
+              "cap",
+              "carp",
+              "He dropped his cap into the carp pond."
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "word-stress",
+          "heading": "6. Word stress",
+          "variant": "tint",
+          "text": [
+            "In English, one part of a longer word is said more strongly: a little louder, longer and higher. Stress in the wrong place can make a word hard to understand. The stressed part is in capital letters below."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Word",
+            "Say it like this"
+          ],
+          "rows": [
+            [
+              "photograph",
+              "PHO-to-graph"
+            ],
+            [
+              "photographer",
+              "pho-TO-gra-pher"
+            ],
+            [
+              "photographic",
+              "pho-to-GRA-phic"
+            ],
+            [
+              "record (a noun: a record of marks)",
+              "RE-cord"
+            ],
+            [
+              "record (a verb: to record a song)",
+              "re-CORD"
+            ],
+            [
+              "important",
+              "im-POR-tant"
+            ],
+            [
+              "education",
+              "e-du-CA-tion"
+            ],
+            [
+              "comfortable",
+              "COM-for-ta-ble"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "intonation",
+          "heading": "7. Stress and intonation in sentences",
+          "variant": "tint",
+          "text": [
+            "In a sentence, we stress the words that carry the meaning, and our voice rises and falls. This is what makes speech sound alive rather than flat."
+          ],
           "parts": [
-            { "heading": "Before you speak", "bullets": [
-              "Practise aloud at least three times, once in front of a friend or a mirror.",
-              "Take two slow, low breaths before you begin.",
-              "Stand still with your weight on both feet, and smile."
-            ] },
-            { "heading": "While you speak", "bullets": [
-              "Look at different people in the audience, a few seconds each.",
-              "Use your hands naturally, to show size, number or feeling.",
-              "Speak a little more slowly and loudly than in conversation.",
-              "If you forget a word, pause, breathe, and carry on. The audience rarely notices."
-            ] },
-            { "heading": "A one-minute speech plan", "numbered": [
-              "**Greeting:** *Good morning, teachers and friends.*",
-              "**Topic:** *Today I would like to talk about...*",
-              "**Point one, with an example.**",
-              "**Point two, with an example.**",
-              "**Ending:** *So, let us all... Thank you for listening.*"
-            ] }
-          ] },
-
+            {
+              "heading": "The tune of a sentence",
+              "bullets": [
+                "**Statements fall at the end:** I live in Galle. ↘",
+                "**Yes/no questions usually rise:** Do you live in Galle? ↗",
+                "**Wh- questions usually fall:** Where do you live? ↘",
+                "**Lists rise, rise, then fall:** I bought rice ↗, dhal ↗ and onions. ↘"
+              ]
+            },
+            {
+              "heading": "Exercise: move the stress, change the meaning",
+              "text": [
+                "Say this sentence five times, stressing a different word each time. Notice how the meaning changes."
+              ],
+              "numbered": [
+                "**SHE** gave me the red book. (not someone else)",
+                "She **GAVE** me the red book. (it was a gift, not a loan)",
+                "She gave **ME** the red book. (not you)",
+                "She gave me the **RED** book. (not the blue one)",
+                "She gave me the red **BOOK**. (not the red pen)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "pace-and-pausing",
+          "heading": "8. Pace and pausing",
+          "variant": "tint",
+          "text": [
+            "Nervous speakers rush. A pause gives your listeners time to understand, and gives you time to breathe. In the passage below, **/** means a short pause and **//** means a longer pause. Read it aloud slowly, then read it again without the marks, keeping the pauses."
+          ],
+          "parts": [
+            {
+              "heading": "Practice passage",
+              "text": [
+                "*Every morning / before the town wakes up / an old man walks along the beach. // He carries a small bag / and a long stick. // He is not looking for shells. / He is picking up plastic. // When people ask him why, / he smiles / and says, / \"Somebody has to start.\" //*"
+              ]
+            },
+            {
+              "heading": "Tips",
+              "bullets": [
+                "Pause at full stops and commas, and before an important word.",
+                "Slow down for names, numbers and the most important sentence.",
+                "A pause that feels long to you usually sounds natural to your audience."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "reading-aloud",
+          "heading": "9. Reading aloud with expression",
+          "variant": "tint",
+          "text": [
+            "Reading aloud well means understanding the words first, then letting your voice show their meaning. Read the poem silently, decide how it should sound, and then read it aloud."
+          ],
+          "parts": [
+            {
+              "heading": "Before you read",
+              "numbered": [
+                "Read the whole piece silently, and make sure you understand every word.",
+                "Decide the mood: happy, sad, calm, excited or funny?",
+                "Pause at punctuation, not at the end of every line.",
+                "Choose one or two words in each line to stress.",
+                "Look up from the page now and then, to connect with your listeners."
+              ]
+            },
+            {
+              "heading": "Practise with this poem: The Monsoon Comes",
+              "text": [
+                "*All morning the sky was heavy and grey,*",
+                "*the crows were quiet, the dogs would not play.*",
+                "*Then one cool wind ran over the hill,*",
+                "*the palm trees shivered, and then stood still.*",
+                "*A drop on a leaf. A drop on my hand.*",
+                "*A drumming of rain on the thirsty land.*",
+                "*And down by the river, loud and free,*",
+                "*the frogs began singing their thanks with me.*",
+                "Poem written by RCF English."
+              ]
+            },
+            {
+              "heading": "How to read it",
+              "bullets": [
+                "**Lines 1 and 2:** slow and low, to show the heavy, waiting sky.",
+                "**Lines 3 and 4:** a little faster, as the wind arrives; pause after *shivered*.",
+                "**Line 5:** short pauses after each sentence, like single raindrops.",
+                "**Line 6:** pick up speed and volume for the drumming rain.",
+                "**Lines 7 and 8:** bright and joyful, ending with a warm smile in your voice."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "id": "public-speaking",
+          "heading": "10. Speaking to an audience",
+          "variant": "tint",
+          "text": [
+            "Everyone feels nervous before speaking in front of people. Good speakers are not free of nerves; they have simply learned what to do with them."
+          ],
+          "parts": [
+            {
+              "heading": "Before you speak",
+              "bullets": [
+                "Practise aloud at least three times, once in front of a friend or a mirror.",
+                "Take two slow, low breaths before you begin.",
+                "Stand still with your weight on both feet, and smile."
+              ]
+            },
+            {
+              "heading": "While you speak",
+              "bullets": [
+                "Look at different people in the audience, a few seconds each.",
+                "Use your hands naturally, to show size, number or feeling.",
+                "Speak a little more slowly and loudly than in conversation.",
+                "If you forget a word, pause, breathe, and carry on. The audience rarely notices."
+              ]
+            },
+            {
+              "heading": "A one-minute speech plan",
+              "numbered": [
+                "**Greeting:** *Good morning, teachers and friends.*",
+                "**Topic:** *Today I would like to talk about...*",
+                "**Point one, with an example.**",
+                "**Point two, with an example.**",
+                "**Ending:** *So, let us all... Thank you for listening.*"
+              ]
+            }
+          ]
+        },
         {
           "type": "cards",
           "heading": "Keep practising",
           "columns": "3",
           "items": [
-            { "title": "Speaking Practice: read aloud", "url": "speaking-practice/?mode=read", "more": "Practise", "text": ["Read sentences aloud and see which words were recognised."] },
-            { "title": "Pronunciation", "url": "practical-english/pronunciation/", "more": "Read", "text": ["The sounds that cause the most difficulty, and how to make them."] },
-            { "title": "Elocution courses", "url": "rcf-classes/", "more": "See courses", "text": ["Elocution diploma courses taught online by RCF Online Academy."] }
+            {
+              "title": "Speaking Practice: read aloud",
+              "url": "speaking-practice/?mode=read",
+              "more": "Practise",
+              "text": [
+                "Read sentences aloud and see which words were recognised."
+              ]
+            },
+            {
+              "title": "Pronunciation",
+              "url": "practical-english/pronunciation/",
+              "more": "Read",
+              "text": [
+                "The sounds that cause the most difficulty, and how to make them."
+              ]
+            },
+            {
+              "title": "Elocution courses",
+              "url": "rcf-classes/",
+              "more": "See courses",
+              "text": [
+                "Elocution diploma courses taught online by RCF Online Academy."
+              ]
+            }
           ]
         }
       ]

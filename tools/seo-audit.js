@@ -51,6 +51,20 @@ for (const file of fs.readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   (doc.pages || []).forEach((p) => pages.push({ file, page: p }));
 }
 
+// The build writes the <title> the same way (build-site.ps1, around line
+// 4405): a page's own metaTitle is used as it stands, and a page without one
+// gets its title, its kicker and the site's name appended. Measuring the raw
+// title instead would understate the length and report duplicates that do not
+// exist in the HTML.
+const SITE = "RCF English";
+const renderedTitle = (page) => {
+  if (page.metaTitle) return page.metaTitle;
+  const kicker = page.kicker || "";
+  return kicker && kicker !== page.title
+    ? `${page.title} | ${kicker} | ${SITE}`
+    : `${page.title} | ${SITE}`;
+};
+
 const titles = new Map();
 const descs = new Map();
 const problems = { dupTitle: [], dupDesc: [], noDesc: [], longTitle: [], badDesc: [], thin: [], noindex: 0 };
@@ -58,7 +72,7 @@ const problems = { dupTitle: [], dupDesc: [], noDesc: [], longTitle: [], badDesc
 for (const { file, page } of pages) {
   if (page.noindex === true) { problems.noindex++; continue; }
   const slug = page.slug || "(home)";
-  const title = page.metaTitle || page.title || "";
+  const title = renderedTitle(page);
   const desc = page.description || "";
 
   (titles.get(title) || titles.set(title, []).get(title)).push(slug);

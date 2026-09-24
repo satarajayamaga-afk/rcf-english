@@ -1,11 +1,10 @@
 {
   "_comment": "Eduqas GCSE English Language C700QS. Component titles, durations and weightings were read from the SUMMARY OF ASSESSMENT table in the WJEC Eduqas GCSE English Language specification (teaching from 2015), extracted from the PDF: Component 1, 1 hour 45 minutes, 40%; Component 2, 2 hours, 60%; Component 3 Spoken Language, non-exam assessment, unweighted. Reading 50% / Writing 50% and 'Spoken Language (Unweighted)' come from the ASSESSMENT OBJECTIVES AND WEIGHTINGS section of the same document. The 20% SPaG figure and the 10-mark long tariff questions come from the Eduqas qualification page. Per-question mark allocations were NOT verified and are deliberately not stated. Nothing of Eduqas's is reproduced; the specification and papers are linked.",
-
   "pages": [
     {
       "slug": "global-english/gcse/eduqas",
       "title": "Eduqas GCSE English Language",
-      "metaTitle": "Eduqas GCSE English Language C700QS: Components and Weightings | RCF English",
+      "metaTitle": "Eduqas GCSE English Language C700QS: Components and Weightings",
       "description": "Eduqas GCSE English Language C700QS explained: both components with their durations and weightings, the assessment objectives, and the spoken language endorsement.",
       "keywords": "Eduqas GCSE English Language, C700QS, Eduqas component 1, Eduqas component 2, WJEC Eduqas English Language",
       "kicker": "GCSE English Language",
@@ -14,15 +13,32 @@
       "resourceType": "guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        }
       ],
-      "backTo": { "label": "GCSE English", "url": "global-english/gcse/" },
+      "backTo": {
+        "label": "GCSE English",
+        "url": "global-english/gcse/"
+      },
       "hero": {
         "text": "The one board that splits its papers by century rather than by skill. Twentieth-century literature on one paper, nineteenth and twenty-first century non-fiction on the other.",
         "buttons": [
-          { "label": "Component 1", "url": "global-english/gcse/eduqas/component-1/", "style": "btn--accent" },
-          { "label": "Component 2", "url": "global-english/gcse/eduqas/component-2/", "style": "btn--ghost-light" }
+          {
+            "label": "Component 1",
+            "url": "global-english/gcse/eduqas/component-1/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Component 2",
+            "url": "global-english/gcse/eduqas/component-2/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -48,17 +64,47 @@
           "heading": "The qualification at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Board and specification", "WJEC Eduqas GCSE English Language, **C700QS**"],
-            ["Qualification number", "601/4505/5"],
-            ["Component 1", "20th Century Literature Reading and Creative Prose Writing. Written examination, **1 hour 45 minutes**, **40% of the qualification**."],
-            ["Component 2", "19th and 21st Century Non-Fiction Reading and Transactional/Persuasive Writing. Written examination, **2 hours**, **60% of the qualification**."],
-            ["Component 3", "Spoken Language. **Non-exam assessment, unweighted.**"],
-            ["Reading and writing", "**Reading 50%, Writing 50%** of the assessed qualification."],
-            ["Spelling, punctuation and grammar", "Eduqas states that SPaG makes up **20%** of the qualification."],
-            ["Extended questions", "Eduqas describes its **long tariff questions as worth 10 marks**."],
-            ["Set texts", "None. Both components use unseen material."]
+            [
+              "Board and specification",
+              "WJEC Eduqas GCSE English Language, **C700QS**"
+            ],
+            [
+              "Qualification number",
+              "601/4505/5"
+            ],
+            [
+              "Component 1",
+              "20th Century Literature Reading and Creative Prose Writing. Written examination, **1 hour 45 minutes**, **40% of the qualification**."
+            ],
+            [
+              "Component 2",
+              "19th and 21st Century Non-Fiction Reading and Transactional/Persuasive Writing. Written examination, **2 hours**, **60% of the qualification**."
+            ],
+            [
+              "Component 3",
+              "Spoken Language. **Non-exam assessment, unweighted.**"
+            ],
+            [
+              "Reading and writing",
+              "**Reading 50%, Writing 50%** of the assessed qualification."
+            ],
+            [
+              "Spelling, punctuation and grammar",
+              "Eduqas states that SPaG makes up **20%** of the qualification."
+            ],
+            [
+              "Extended questions",
+              "Eduqas describes its **long tariff questions as worth 10 marks**."
+            ],
+            [
+              "Set texts",
+              "None. Both components use unseen material."
+            ]
           ]
         },
         {
@@ -77,11 +123,27 @@
           "level": "h2",
           "caption": "From the specification's Assessment Objectives and Weightings section. Eduqas groups them under reading and writing rather than listing per-component percentages on the summary table.",
           "stacked": true,
-          "columns": ["Area", "Weighting", "What it covers"],
+          "columns": [
+            "Area",
+            "Weighting",
+            "What it covers"
+          ],
           "rows": [
-            ["**Reading**", "**50%**", "Reading and understanding a range of texts: identifying and interpreting information and ideas, explaining and analysing how writers use language and structure, comparing writers' ideas and perspectives, and evaluating texts critically with textual reference."],
-            ["**Writing**", "**50%**", "Communicating clearly, effectively and imaginatively, adapting tone, style and register for form, purpose and audience; organising information and ideas; and using a range of vocabulary and sentence structures with accurate spelling and punctuation."],
-            ["**Spoken Language**", "**Unweighted**", "Assessed and reported separately. It does not contribute to the overall GCSE grade."]
+            [
+              "**Reading**",
+              "**50%**",
+              "Reading and understanding a range of texts: identifying and interpreting information and ideas, explaining and analysing how writers use language and structure, comparing writers' ideas and perspectives, and evaluating texts critically with textual reference."
+            ],
+            [
+              "**Writing**",
+              "**50%**",
+              "Communicating clearly, effectively and imaginatively, adapting tone, style and register for form, purpose and audience; organising information and ideas; and using a range of vocabulary and sentence structures with accurate spelling and punctuation."
+            ],
+            [
+              "**Spoken Language**",
+              "**Unweighted**",
+              "Assessed and reported separately. It does not contribute to the overall GCSE grade."
+            ]
           ]
         },
         {
@@ -105,9 +167,30 @@
           "columns": "3",
           "variant": "tint",
           "items": [
-            { "title": "Component 1", "url": "global-english/gcse/eduqas/component-1/", "more": "Open", "text": ["20th century literature reading and creative prose writing: 1 hour 45 minutes, 40%."] },
-            { "title": "Component 2", "url": "global-english/gcse/eduqas/component-2/", "more": "Open", "text": ["19th and 21st century non-fiction and transactional writing: 2 hours, 60%."] },
-            { "title": "Past papers", "url": "global-english/gcse/eduqas/papers/", "more": "Open", "text": ["Official Eduqas papers, mark schemes, exemplars and the specification."] }
+            {
+              "title": "Component 1",
+              "url": "global-english/gcse/eduqas/component-1/",
+              "more": "Open",
+              "text": [
+                "20th century literature reading and creative prose writing: 1 hour 45 minutes, 40%."
+              ]
+            },
+            {
+              "title": "Component 2",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "more": "Open",
+              "text": [
+                "19th and 21st century non-fiction and transactional writing: 2 hours, 60%."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "more": "Open",
+              "text": [
+                "Official Eduqas papers, mark schemes, exemplars and the specification."
+              ]
+            }
           ]
         },
         {
@@ -158,19 +241,42 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Component 1", "url": "global-english/gcse/eduqas/component-1/", "text": ["Literature reading and creative writing."] },
-            { "title": "Component 2", "url": "global-english/gcse/eduqas/component-2/", "text": ["Non-fiction reading and transactional writing."] },
-            { "title": "Past papers", "url": "global-english/gcse/eduqas/papers/", "text": ["Official Eduqas materials."] },
-            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards compared."] }
+            {
+              "title": "Component 1",
+              "url": "global-english/gcse/eduqas/component-1/",
+              "text": [
+                "Literature reading and creative writing."
+              ]
+            },
+            {
+              "title": "Component 2",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "text": [
+                "Non-fiction reading and transactional writing."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "text": [
+                "Official Eduqas materials."
+              ]
+            },
+            {
+              "title": "GCSE English overview",
+              "url": "global-english/gcse/",
+              "text": [
+                "All four boards compared."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/eduqas/component-1",
       "title": "Eduqas Component 1: 20th Century Literature and Creative Prose",
-      "metaTitle": "Eduqas GCSE English Language Component 1: Structure and Method | RCF English",
+      "metaTitle": "Eduqas GCSE English Language Component 1: Structure and Method",
       "description": "Eduqas GCSE English Language Component 1 explained: a 20th century literature extract, the reading questions, and the creative prose writing task. 1 hour 45 minutes, 40%.",
       "keywords": "Eduqas component 1, 20th century literature reading, Eduqas creative prose writing, C700QS component 1",
       "kicker": "Eduqas GCSE English Language",
@@ -179,12 +285,26 @@
       "resourceType": "guidance",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Eduqas English Language",
+          "url": "global-english/gcse/eduqas/"
+        }
       ],
-      "backTo": { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" },
-      "hero": { "text": "One unseen twentieth-century prose extract, a set of reading questions, and a piece of creative prose of your own. One hour and forty-five minutes." },
+      "backTo": {
+        "label": "Eduqas English Language",
+        "url": "global-english/gcse/eduqas/"
+      },
+      "hero": {
+        "text": "One unseen twentieth-century prose extract, a set of reading questions, and a piece of creative prose of your own. One hour and forty-five minutes."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -200,15 +320,39 @@
           "heading": "Component 1 at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Title", "20th Century Literature Reading and Creative Prose Writing"],
-            ["Assessment", "Written examination"],
-            ["Time", "**1 hour 45 minutes**"],
-            ["Weighting", "**40% of the qualification**"],
-            ["Reading section", "One unseen prose extract from the twentieth century, with a series of questions"],
-            ["Writing section", "One piece of creative prose writing, from a choice"],
-            ["Set texts", "None. The extract is unseen."]
+            [
+              "Title",
+              "20th Century Literature Reading and Creative Prose Writing"
+            ],
+            [
+              "Assessment",
+              "Written examination"
+            ],
+            [
+              "Time",
+              "**1 hour 45 minutes**"
+            ],
+            [
+              "Weighting",
+              "**40% of the qualification**"
+            ],
+            [
+              "Reading section",
+              "One unseen prose extract from the twentieth century, with a series of questions"
+            ],
+            [
+              "Writing section",
+              "One piece of creative prose writing, from a choice"
+            ],
+            [
+              "Set texts",
+              "None. The extract is unseen."
+            ]
           ]
         },
         {
@@ -257,18 +401,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Component 2", "url": "global-english/gcse/eduqas/component-2/", "text": ["The non-fiction paper, worth 60%."] },
-            { "title": "Past papers", "url": "global-english/gcse/eduqas/papers/", "text": ["Official papers and mark schemes."] },
-            { "title": "Eduqas overview", "url": "global-english/gcse/eduqas/", "text": ["Both components and the weightings."] }
+            {
+              "title": "Component 2",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "text": [
+                "The non-fiction paper, worth 60%."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "text": [
+                "Official papers and mark schemes."
+              ]
+            },
+            {
+              "title": "Eduqas overview",
+              "url": "global-english/gcse/eduqas/",
+              "text": [
+                "Both components and the weightings."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/eduqas/component-2",
       "title": "Eduqas Component 2: 19th and 21st Century Non-Fiction",
-      "metaTitle": "Eduqas GCSE English Language Component 2: Structure and Method | RCF English",
+      "metaTitle": "Eduqas GCSE English Language Component 2: Structure and Method",
       "description": "Eduqas GCSE English Language Component 2 explained: 19th and 21st century non-fiction reading and transactional or persuasive writing. 2 hours, 60% of the qualification.",
       "keywords": "Eduqas component 2, 19th and 21st century non-fiction, Eduqas transactional writing, persuasive writing Eduqas",
       "kicker": "Eduqas GCSE English Language",
@@ -277,12 +438,26 @@
       "resourceType": "guidance",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Eduqas English Language",
+          "url": "global-english/gcse/eduqas/"
+        }
       ],
-      "backTo": { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" },
-      "hero": { "text": "Two non-fiction texts written roughly two hundred years apart, and two pieces of transactional writing. Two hours, and sixty per cent of the qualification." },
+      "backTo": {
+        "label": "Eduqas English Language",
+        "url": "global-english/gcse/eduqas/"
+      },
+      "hero": {
+        "text": "Two non-fiction texts written roughly two hundred years apart, and two pieces of transactional writing. Two hours, and sixty per cent of the qualification."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -298,15 +473,39 @@
           "heading": "Component 2 at a glance",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Title", "19th and 21st Century Non-Fiction Reading and Transactional/Persuasive Writing"],
-            ["Assessment", "Written examination"],
-            ["Time", "**2 hours**"],
-            ["Weighting", "**60% of the qualification** - the larger of the two papers"],
-            ["Reading section", "Unseen non-fiction: one nineteenth-century text and one twenty-first-century text"],
-            ["Writing section", "Transactional and persuasive writing"],
-            ["Set texts", "None. Both texts are unseen."]
+            [
+              "Title",
+              "19th and 21st Century Non-Fiction Reading and Transactional/Persuasive Writing"
+            ],
+            [
+              "Assessment",
+              "Written examination"
+            ],
+            [
+              "Time",
+              "**2 hours**"
+            ],
+            [
+              "Weighting",
+              "**60% of the qualification** - the larger of the two papers"
+            ],
+            [
+              "Reading section",
+              "Unseen non-fiction: one nineteenth-century text and one twenty-first-century text"
+            ],
+            [
+              "Writing section",
+              "Transactional and persuasive writing"
+            ],
+            [
+              "Set texts",
+              "None. Both texts are unseen."
+            ]
           ]
         },
         {
@@ -325,16 +524,52 @@
           "level": "h2",
           "stacked": true,
           "caption": "The reading tariffs are the shape Eduqas prints in its own Component 2 assessment materials. The 20 marks against each writing task is an inference from two equally timed tasks sharing 40 marks, not a published figure.",
-          "columns": ["Question", "Marks", "What it asks for"],
+          "columns": [
+            "Question",
+            "Marks",
+            "What it asks for"
+          ],
           "rows": [
-            ["A1 (a) (b) (c)", "1 + 1 + 1", "Retrieval from the first text. One fact each, written plainly."],
-            ["A2", "10", "How the writer shows something about the first text. The question names *what he says* and *language, tone and structure*, and both halves must be answered."],
-            ["A3 (a) (b) (c)", "1 + 1 + 1", "Retrieval from the second text."],
-            ["A4", "10", "**Evaluation.** *How well* does the text convey the writer's feelings? Not what the feelings are, but how successfully they are conveyed."],
-            ["A5", "4", "Short synthesis across **both** texts. Information, not analysis - there are no marks for method here."],
-            ["A6", "10", "Comparison across **both** texts: the subject itself, and how each writer gets their feelings across."],
-            ["Section A total", "40", "About one hour."],
-            ["B1 and B2", "40 (about 20 each)", "Two transactional or persuasive tasks, about 30 minutes each: five minutes planning, twenty-five writing."]
+            [
+              "A1 (a) (b) (c)",
+              "1 + 1 + 1",
+              "Retrieval from the first text. One fact each, written plainly."
+            ],
+            [
+              "A2",
+              "10",
+              "How the writer shows something about the first text. The question names *what he says* and *language, tone and structure*, and both halves must be answered."
+            ],
+            [
+              "A3 (a) (b) (c)",
+              "1 + 1 + 1",
+              "Retrieval from the second text."
+            ],
+            [
+              "A4",
+              "10",
+              "**Evaluation.** *How well* does the text convey the writer's feelings? Not what the feelings are, but how successfully they are conveyed."
+            ],
+            [
+              "A5",
+              "4",
+              "Short synthesis across **both** texts. Information, not analysis - there are no marks for method here."
+            ],
+            [
+              "A6",
+              "10",
+              "Comparison across **both** texts: the subject itself, and how each writer gets their feelings across."
+            ],
+            [
+              "Section A total",
+              "40",
+              "About one hour."
+            ],
+            [
+              "B1 and B2",
+              "40 (about 20 each)",
+              "Two transactional or persuasive tasks, about 30 minutes each: five minutes planning, twenty-five writing."
+            ]
           ]
         },
         {
@@ -391,18 +626,35 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Component 1", "url": "global-english/gcse/eduqas/component-1/", "text": ["The literature and creative writing paper."] },
-            { "title": "Past papers", "url": "global-english/gcse/eduqas/papers/", "text": ["Official papers and mark schemes."] },
-            { "title": "Eduqas overview", "url": "global-english/gcse/eduqas/", "text": ["Both components and the weightings."] }
+            {
+              "title": "Component 1",
+              "url": "global-english/gcse/eduqas/component-1/",
+              "text": [
+                "The literature and creative writing paper."
+              ]
+            },
+            {
+              "title": "Past papers",
+              "url": "global-english/gcse/eduqas/papers/",
+              "text": [
+                "Official papers and mark schemes."
+              ]
+            },
+            {
+              "title": "Eduqas overview",
+              "url": "global-english/gcse/eduqas/",
+              "text": [
+                "Both components and the weightings."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/eduqas/papers",
       "title": "Eduqas English Language Past Papers",
-      "metaTitle": "Eduqas GCSE English Language Past Papers and Mark Schemes | RCF English",
+      "metaTitle": "Eduqas GCSE English Language Past Papers and Mark Schemes",
       "description": "Official Eduqas GCSE English Language past papers, mark schemes, annotated exemplars and the specification, linked to their source on eduqas.co.uk.",
       "keywords": "Eduqas past papers, Eduqas English Language mark scheme, C700QS past paper, Eduqas exemplars",
       "kicker": "Eduqas GCSE English Language",
@@ -411,12 +663,26 @@
       "resourceType": "past papers",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "Eduqas English Language",
+          "url": "global-english/gcse/eduqas/"
+        }
       ],
-      "backTo": { "label": "Eduqas English Language", "url": "global-english/gcse/eduqas/" },
-      "hero": { "text": "Eduqas publishes its specification, past papers, mark schemes and annotated exemplar answers openly. They are linked here as they are." },
+      "backTo": {
+        "label": "Eduqas English Language",
+        "url": "global-english/gcse/eduqas/"
+      },
+      "hero": {
+        "text": "Eduqas publishes its specification, past papers, mark schemes and annotated exemplar answers openly. They are linked here as they are."
+      },
       "blocks": [
         {
           "type": "callout",
@@ -432,16 +698,52 @@
           "heading": "Official Eduqas materials",
           "level": "h2",
           "caption": "Every link opens an official Eduqas page or document. Eduqas decides what is published openly and may move items; the qualification page is the reliable starting point.",
-          "columns": ["Type", "Component", "Official source"],
+          "columns": [
+            "Type",
+            "Component",
+            "Official source"
+          ],
           "rows": [
-            ["Qualification page: specification, papers, mark schemes and resources", "Both", "[Eduqas GCSE English Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/)"],
-            ["Full specification, teaching from 2015", "Both", "[C700QS specification PDF](https://www.eduqas.co.uk/media/10ea1en0/eduqas-gcse-english-language-from-2015-e.pdf)"],
-            ["Past papers and mark schemes portal", "Both", "[Past papers and mark schemes](https://www.eduqas.co.uk/home/past-papers-and-mark-schemes/)"],
-            ["Additional assessment materials", "Component 1", "[Component 1 additional assessment materials](https://www.eduqas.co.uk/media/qxlndvmn/gcse-english-language-additional-assessment-materials-component-1.pdf)"],
-            ["Annotated exemplar answers", "Component 2", "[Component 2 annotated exemplars](https://www.eduqas.co.uk/media/ojnpc5xu/6a-gcse-eng-lang-component-2-exemplars-annotated.pdf)"],
-            ["Exam guide", "Both", "[English Language exam guide](https://www.eduqas.co.uk/articles/english-language-exam-guide/)"],
-            ["Exam walk-through", "Both", "[Exam walk-through resource](https://resources.eduqas.co.uk/pages/ResourceSingle.aspx?rIid=1533)"],
-            ["English Literature, for comparison", "-", "[Eduqas GCSE English Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"]
+            [
+              "Qualification page: specification, papers, mark schemes and resources",
+              "Both",
+              "[Eduqas GCSE English Language](https://www.eduqas.co.uk/qualifications/english-language-gcse/)"
+            ],
+            [
+              "Full specification, teaching from 2015",
+              "Both",
+              "[C700QS specification PDF](https://www.eduqas.co.uk/media/10ea1en0/eduqas-gcse-english-language-from-2015-e.pdf)"
+            ],
+            [
+              "Past papers and mark schemes portal",
+              "Both",
+              "[Past papers and mark schemes](https://www.eduqas.co.uk/home/past-papers-and-mark-schemes/)"
+            ],
+            [
+              "Additional assessment materials",
+              "Component 1",
+              "[Component 1 additional assessment materials](https://www.eduqas.co.uk/media/qxlndvmn/gcse-english-language-additional-assessment-materials-component-1.pdf)"
+            ],
+            [
+              "Annotated exemplar answers",
+              "Component 2",
+              "[Component 2 annotated exemplars](https://www.eduqas.co.uk/media/ojnpc5xu/6a-gcse-eng-lang-component-2-exemplars-annotated.pdf)"
+            ],
+            [
+              "Exam guide",
+              "Both",
+              "[English Language exam guide](https://www.eduqas.co.uk/articles/english-language-exam-guide/)"
+            ],
+            [
+              "Exam walk-through",
+              "Both",
+              "[Exam walk-through resource](https://resources.eduqas.co.uk/pages/ResourceSingle.aspx?rIid=1533)"
+            ],
+            [
+              "English Literature, for comparison",
+              "-",
+              "[Eduqas GCSE English Literature](https://www.eduqas.co.uk/qualifications/english-literature-gcse/)"
+            ]
           ]
         },
         {
@@ -468,15 +770,27 @@
               "title": "Question paper",
               "url": "global-english/gcse/eduqas/papers/rcf-model-component-2/",
               "more": "Open the paper",
-              "text": ["Both texts and all eight questions, in the Component 2 structure, for working under timed conditions."],
-              "bullets": ["Section A: 1+1+1, 10, 1+1+1, 10, 4 and 10", "Section B: two tasks, 40 marks", "Prints cleanly on paper"]
+              "text": [
+                "Both texts and all eight questions, in the Component 2 structure, for working under timed conditions."
+              ],
+              "bullets": [
+                "Section A: 1+1+1, 10, 1+1+1, 10, 4 and 10",
+                "Section B: two tasks, 40 marks",
+                "Prints cleanly on paper"
+              ]
             },
             {
               "title": "Marking guide",
               "url": "global-english/gcse/eduqas/papers/rcf-model-component-2-mark-scheme/",
               "more": "Open the marking guide",
-              "text": ["Answers for all six reading questions, plain-English band descriptions, and full model answers for the evaluation question, the comparison and the letter."],
-              "bullets": ["What separates the bands, per question", "Why each model answer works", "The faults that cost most marks"]
+              "text": [
+                "Answers for all six reading questions, plain-English band descriptions, and full model answers for the evaluation question, the comparison and the letter."
+              ],
+              "bullets": [
+                "What separates the bands, per question",
+                "Why each model answer works",
+                "The faults that cost most marks"
+              ]
             }
           ]
         },
@@ -523,10 +837,34 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Eduqas overview", "url": "global-english/gcse/eduqas/", "text": ["Both components and the weightings."] },
-            { "title": "Component 1", "url": "global-english/gcse/eduqas/component-1/", "text": ["Literature and creative writing."] },
-            { "title": "Component 2", "url": "global-english/gcse/eduqas/component-2/", "text": ["Non-fiction and transactional writing."] },
-            { "title": "GCSE English overview", "url": "global-english/gcse/", "text": ["All four boards compared."] }
+            {
+              "title": "Eduqas overview",
+              "url": "global-english/gcse/eduqas/",
+              "text": [
+                "Both components and the weightings."
+              ]
+            },
+            {
+              "title": "Component 1",
+              "url": "global-english/gcse/eduqas/component-1/",
+              "text": [
+                "Literature and creative writing."
+              ]
+            },
+            {
+              "title": "Component 2",
+              "url": "global-english/gcse/eduqas/component-2/",
+              "text": [
+                "Non-fiction and transactional writing."
+              ]
+            },
+            {
+              "title": "GCSE English overview",
+              "url": "global-english/gcse/",
+              "text": [
+                "All four boards compared."
+              ]
+            }
           ]
         }
       ]

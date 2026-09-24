@@ -1,6 +1,5 @@
 {
   "_comment": "OCR J351 Component 01 model paper and marking guide. The structure follows the figures already established and sourced on global-english/gcse/ocr/component-1/: 2 hours, 80 marks, two unseen non-fiction texts in an Insert (one 19th century, one 20th or 21st), Section A reading 40 marks in five questions worth 2, 2, 6, 12 and 18, the 18-mark question marked as 12 AO4 plus 6 AO3, and Section B writing 40 marks from a choice of two, split 24 AO5 and 16 AO6. BOTH TEXTS ARE ORIGINAL RCF ENGLISH COMPOSITIONS. Text 1 is written in a nineteenth-century voice; it is not the work of any nineteenth-century writer and is not an extract from any real speech, pamphlet or newspaper. No OCR question, passage or mark-scheme descriptor is reproduced anywhere on these two pages.",
-
   "pages": [
     {
       "slug": "global-english/gcse/ocr/papers/rcf-model-component-1",
@@ -14,12 +13,27 @@
       "resourceType": "practice paper",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
-        { "label": "Past papers", "url": "global-english/gcse/ocr/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "OCR English Language",
+          "url": "global-english/gcse/ocr/"
+        },
+        {
+          "label": "Past papers",
+          "url": "global-english/gcse/ocr/papers/"
+        }
       ],
-      "backTo": { "label": "Past papers", "url": "global-english/gcse/ocr/papers/" },
+      "backTo": {
+        "label": "Past papers",
+        "url": "global-english/gcse/ocr/papers/"
+      },
       "hero": {
         "text": "Two texts about the same building, written a hundred and sixty years apart. Five reading questions, one writing task, eighty marks, two hours."
       },
@@ -40,18 +54,51 @@
           "heading": "Paper details",
           "level": "h2",
           "stacked": true,
-          "columns": ["Field", "Detail"],
+          "columns": [
+            "Field",
+            "Detail"
+          ],
           "rows": [
-            ["Written by", "RCF English (original practice material)"],
-            ["Modelled on", "OCR GCSE (9-1) English Language, specification J351, Component 01"],
-            ["Component title it follows", "Communicating information and ideas"],
-            ["Time allowed", "2 hours"],
-            ["Maximum mark", "80"],
-            ["Sections", "Section A Reading, 40 marks. Section B Writing, 40 marks."],
-            ["Texts", "Text 1, nineteenth century. Text 2, twenty-first century. Both non-fiction, both original RCF compositions."],
-            ["Theme linking the texts", "The public library, and what people actually use it for"],
-            ["Section B", "One task from a choice of two"],
-            ["Advice", "About one hour on each section. Read both texts and all the questions before you begin."]
+            [
+              "Written by",
+              "RCF English (original practice material)"
+            ],
+            [
+              "Modelled on",
+              "OCR GCSE (9-1) English Language, specification J351, Component 01"
+            ],
+            [
+              "Component title it follows",
+              "Communicating information and ideas"
+            ],
+            [
+              "Time allowed",
+              "2 hours"
+            ],
+            [
+              "Maximum mark",
+              "80"
+            ],
+            [
+              "Sections",
+              "Section A Reading, 40 marks. Section B Writing, 40 marks."
+            ],
+            [
+              "Texts",
+              "Text 1, nineteenth century. Text 2, twenty-first century. Both non-fiction, both original RCF compositions."
+            ],
+            [
+              "Theme linking the texts",
+              "The public library, and what people actually use it for"
+            ],
+            [
+              "Section B",
+              "One task from a choice of two"
+            ],
+            [
+              "Advice",
+              "About one hour on each section. Read both texts and all the questions before you begin."
+            ]
           ]
         },
         {
@@ -248,18 +295,29 @@
           "type": "related",
           "heading": "Next",
           "items": [
-            { "title": "Marking guide for this paper", "url": "global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme/", "text": "Answers, band descriptions in plain English, and full model answers for Questions 4, 5 and 6." },
-            { "title": "Component 01 method", "url": "global-english/gcse/ocr/component-1/", "text": "How to approach each question type, and where the marks actually sit." },
-            { "title": "Official OCR papers", "url": "global-english/gcse/ocr/papers/", "text": "OCR's own past papers, mark schemes and examiners' reports." }
+            {
+              "title": "Marking guide for this paper",
+              "url": "global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme/",
+              "text": "Answers, band descriptions in plain English, and full model answers for Questions 4, 5 and 6."
+            },
+            {
+              "title": "Component 01 method",
+              "url": "global-english/gcse/ocr/component-1/",
+              "text": "How to approach each question type, and where the marks actually sit."
+            },
+            {
+              "title": "Official OCR papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "text": "OCR's own past papers, mark schemes and examiners' reports."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "global-english/gcse/ocr/papers/rcf-model-component-1-mark-scheme",
       "title": "RCF Model Paper: OCR Component 01 Marking Guide",
-      "metaTitle": "OCR J351/01 Practice Paper: Answers and Marking Guide | RCF English",
+      "metaTitle": "OCR J351/01 Practice Paper: Answers and Marking Guide",
       "description": "Answers, indicative content, plain-English band descriptions and full model answers for the RCF original OCR GCSE English Language Component 01 practice paper.",
       "keywords": "OCR J351 answers, OCR synthesis model answer, OCR 18 mark question model answer, OCR component 01 marking guide",
       "kicker": "Unofficial original RCF practice material",
@@ -268,12 +326,27 @@
       "resourceType": "marking guide",
       "educationalLevel": "GCSE",
       "breadcrumbs": [
-        { "label": "Global English", "url": "global-english/" },
-        { "label": "GCSE English", "url": "global-english/gcse/" },
-        { "label": "OCR English Language", "url": "global-english/gcse/ocr/" },
-        { "label": "Past papers", "url": "global-english/gcse/ocr/papers/" }
+        {
+          "label": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "label": "GCSE English",
+          "url": "global-english/gcse/"
+        },
+        {
+          "label": "OCR English Language",
+          "url": "global-english/gcse/ocr/"
+        },
+        {
+          "label": "Past papers",
+          "url": "global-english/gcse/ocr/papers/"
+        }
       ],
-      "backTo": { "label": "RCF Model Paper: OCR Component 01", "url": "global-english/gcse/ocr/papers/rcf-model-component-1/" },
+      "backTo": {
+        "label": "RCF Model Paper: OCR Component 01",
+        "url": "global-english/gcse/ocr/papers/rcf-model-component-1/"
+      },
       "hero": {
         "text": "Answers for all five reading questions, what separates a good answer from a middling one, and full model answers for the twelve-mark, the eighteen-mark and the speech."
       },
@@ -599,10 +672,26 @@
           "type": "related",
           "heading": "Related pages",
           "items": [
-            { "title": "The paper itself", "url": "global-english/gcse/ocr/papers/rcf-model-component-1/", "text": "Both texts and all seven questions, for working under timed conditions." },
-            { "title": "Component 01 method", "url": "global-english/gcse/ocr/component-1/", "text": "How to approach each question type, and where the marks actually sit." },
-            { "title": "Official OCR papers", "url": "global-english/gcse/ocr/papers/", "text": "OCR's own past papers, mark schemes and examiners' reports." },
-            { "title": "OCR overview", "url": "global-english/gcse/ocr/", "text": "Both components and the full assessment objective grid." }
+            {
+              "title": "The paper itself",
+              "url": "global-english/gcse/ocr/papers/rcf-model-component-1/",
+              "text": "Both texts and all seven questions, for working under timed conditions."
+            },
+            {
+              "title": "Component 01 method",
+              "url": "global-english/gcse/ocr/component-1/",
+              "text": "How to approach each question type, and where the marks actually sit."
+            },
+            {
+              "title": "Official OCR papers",
+              "url": "global-english/gcse/ocr/papers/",
+              "text": "OCR's own past papers, mark schemes and examiners' reports."
+            },
+            {
+              "title": "OCR overview",
+              "url": "global-english/gcse/ocr/",
+              "text": "Both components and the full assessment objective grid."
+            }
           ]
         }
       ]
