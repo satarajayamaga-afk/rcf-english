@@ -94,6 +94,65 @@ const GRAMMAR_ALIASES = [
 ];
 const aliasesFor = (text) => GRAMMAR_ALIASES.filter(([re]) => re.test(text)).map(([, a]) => a);
 
+// Teachers search for the language point - "grade 9 lesson plan collective
+// nouns" - not for the unit's name in the textbook. So the title leads with
+// the point, and fits in the 60 characters a search result shows.
+const TITLE_MAX = 60;
+const DESC_MIN = 140;
+const DESC_MAX = 160;
+// The first half of "Collective nouns and subject-verb agreement": enough to
+// be searched for, short enough to fit.
+const shortPoint = (point) => point.split(/\s+and\s+|[;,]/)[0].trim();
+// "Grades 12 and 13 (A/L General English)" is the honest label for the page,
+// but it eats most of a search result. A/L is what teachers type.
+const shortLabel = (label) => (/A\/L/.test(label) ? "A/L General English" : label);
+const usedTitles = new Set();
+function planTitle(fullLabel, point, unit, index) {
+  const label = shortLabel(fullLabel);
+  const candidates = [
+    `${label} English Lesson Plan: ${point}`,
+    `${label} Lesson Plan: ${point}`,
+    `${label} English Lesson Plan: ${shortPoint(point)}`,
+    `${label} Lesson Plan: ${shortPoint(point)}`,
+    `${label} Lesson Plan ${index} (Unit ${unit})`
+  ];
+  let title = candidates.find((t) => t.length <= TITLE_MAX) || candidates[candidates.length - 1];
+  // Two units in a grade can share a language point. Keep every title unique.
+  if (usedTitles.has(title)) {
+    const withUnit = `${title} (Unit ${unit})`;
+    title = withUnit.length <= TITLE_MAX ? withUnit : `${label} Lesson Plan ${index} (Unit ${unit})`;
+  }
+  usedTitles.add(title);
+  return title;
+}
+// Google shows about 155 characters of a description, so the clauses are
+// added while they fit and dropped when they do not.
+function planDescription(label, unit, name, point) {
+  const core = `Free 40-minute PPP English lesson plan for ${label}: ${point}.`;
+  // Tried longest first, then shorter ones, so a short language point still
+  // reaches the window instead of stopping just below it.
+  const clauses = [
+    " Presentation, practice and production, with timings, materials and homework.",
+    ` Unit ${unit}, ${name}.`,
+    " Printable and free to adapt.",
+    " Printable."
+  ];
+  let text = core;
+  for (const clause of clauses) {
+    if (text.length >= DESC_MIN) break;
+    if ((text + clause).length <= DESC_MAX) text += clause;
+  }
+  return text;
+}
+// The same rule for a grade's hub page: try each ending and keep the first
+// that lands inside the window, rather than guessing at the length.
+planDescription.hub = (label, count) => {
+  const core = `${count} free PPP English lesson plans for ${label}, each with presentation, practice and production stages, timings and materials.`;
+  const endings = [" Printable, and free to adapt for your own class.", " Printable and free to adapt.", " Free to adapt.", ""];
+  const fits = endings.map((e) => core + e).find((t) => t.length >= DESC_MIN && t.length <= DESC_MAX);
+  return fits || core;
+};
+
 // A page for one plan: it can be linked to, bookmarked and found by search.
 function planOnlyPage(key, i) {
   const g = L[key];
@@ -102,9 +161,11 @@ function planOnlyPage(key, i) {
   const next = i < g.plans.length - 1 ? { title: `Plan ${i + 2}: ${g.plans[i + 1][1]}`, url: planUrl(key, i + 1) + "/" } : null;
   return {
     slug: planUrl(key, i),
-    title: `${g.label} Lesson Plan ${i + 1}: ${title}`,
-    metaTitle: `${g.label} English Lesson Plan: Unit ${unit}, ${title} (PPP, 40 minutes) | RCF English`,
-    description: `A free 40-minute PPP English lesson plan for ${g.label}, Unit ${unit} (${title}): ${focus}. Presentation, practice and production with timings, materials and homework.`,
+    // The heading names the point too, so a teacher who arrives from a search
+    // can see at once that the page is the one they wanted.
+    title: `${g.label} Lesson Plan ${i + 1}: ${focus}`,
+    metaTitle: planTitle(g.label, focus, unit, i + 1),
+    description: planDescription(g.label, unit, title, focus),
     keywords: [`${g.label} English lesson plan`, `${g.label} unit ${unit} lesson plan`, `${title} lesson plan`, focus, ...aliasesFor(focus), "PPP lesson plan", "Sri Lanka English lesson plan"].join(", "),
     kicker: `${g.label} · Plan ${i + 1} of ${g.plans.length}`,
     kind: "teacher-resource",
@@ -167,8 +228,8 @@ function planPage(key) {
   return {
     slug: `${HUB}/${g.slug}`,
     title: `${g.label} PPP Lesson Plans`,
-    metaTitle: `${g.label} English PPP Lesson Plans (sample) | RCF English`,
-    description: `${g.plans.length} free sample PPP (Presentation, Practice, Production) English lesson plans for ${g.label}, each linked to a unit and activity in the ${g.book}.`,
+    metaTitle: `${shortLabel(g.label)} English Lesson Plans (${g.plans.length} Free PPP Plans)`,
+    description: planDescription.hub(shortLabel(g.label), g.plans.length),
     keywords: `${g.label} English lesson plans, PPP lesson plan, Sri Lanka English lesson plan, ${g.label} English Pupil's Book`,
     kicker: "Teacher Resources",
     kind: "teacher-resource",
@@ -186,8 +247,8 @@ function planPage(key) {
 const hub = {
   slug: HUB,
   title: "Sample PPP Lesson Plans, Grades 3 to 13",
-  metaTitle: "Sample PPP English Lesson Plans for Grades 3 to 13 | RCF English",
-  description: "Free sample PPP (Presentation, Practice, Production) English lesson plans for Sri Lankan classrooms, linked to Pupil's Book units for Grades 3, 4, 6 to 11 and A/L General English.",
+  metaTitle: "Free PPP English Lesson Plans, Grades 3 to 13",
+  description: "Free PPP English lesson plans for Sri Lankan classrooms, linked to Pupil's Book units for Grades 3, 4, 6 to 11 and A/L General English. Printable.",
   keywords: "PPP lesson plan, English lesson plans Sri Lanka, presentation practice production, Grade 6 to 11 English lesson plans, A/L General English lesson plan",
   kicker: "Teacher Resources",
   kind: "teacher-resource",
