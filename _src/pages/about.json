@@ -12,9 +12,21 @@
       "hero": {
         "text": "One platform bringing together English-language learning, literature education, examination support, teacher resources, online classes and educational publications.",
         "buttons": [
-          { "label": "Our Founder", "url": "about/founder/", "style": "btn--accent" },
-          { "label": "Academic Background", "url": "about/background/", "style": "btn--ghost-light" },
-          { "label": "Contact Us", "url": "contact/", "style": "btn--ghost-light" }
+          {
+            "label": "Our Founder",
+            "url": "about/founder/",
+            "style": "btn--accent"
+          },
+          {
+            "label": "Academic Background",
+            "url": "about/background/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Contact Us",
+            "url": "contact/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "breadcrumbs": [],
@@ -28,21 +40,42 @@
             "RCF English is guided by a simple principle: English should be explained clearly, practised systematically and applied confidently. Its resources therefore combine straightforward explanations, relevant models, guided activities, independent practice and opportunities for revision and self-correction."
           ]
         },
-
         {
           "type": "cards",
           "heading": "How the parts fit together",
           "eyebrow": "The umbrella platform",
           "variant": "tint",
-          "intro": ["RCF English is the main platform. RCF Online Academy provides the teaching programmes. RCF Publications is the publishing and bookshop section of this website."],
+          "intro": [
+            "RCF English is the main platform. RCF Online Academy provides the teaching programmes. RCF Publications is the publishing and bookshop section of this website."
+          ],
           "columns": "3",
           "items": [
-            { "title": "RCF English", "text": ["The umbrella educational platform: lessons, past papers, revision material, teacher resources and interactive learning, free to use."], "url": "how-to-use/", "more": "How to use this site" },
-            { "title": "RCF Online Academy", "text": ["The teaching programmes: mainly online classes in English and Literature, conducted by Rohana Fernando."], "url": "rcf-classes/", "more": "See the classes" },
-            { "title": "RCF Publications", "text": ["The publishing and bookshop section: books, study guides, grammar resources and revision materials."], "url": "about/rcf-publications/", "more": "About the bookshop" }
+            {
+              "title": "RCF English",
+              "text": [
+                "The umbrella educational platform: lessons, past papers, revision material, teacher resources and interactive learning, free to use."
+              ],
+              "url": "how-to-use/",
+              "more": "How to use this site"
+            },
+            {
+              "title": "RCF Online Academy",
+              "text": [
+                "The teaching programmes: mainly online classes in English and Literature, conducted by Rohana Fernando."
+              ],
+              "url": "rcf-classes/",
+              "more": "See the classes"
+            },
+            {
+              "title": "RCF Publications",
+              "text": [
+                "The publishing and bookshop section: books, study guides, grammar resources and revision materials."
+              ],
+              "url": "about/rcf-publications/",
+              "more": "About the bookshop"
+            }
           ]
         },
-
         {
           "type": "portrait",
           "heading": "Our Founder",
@@ -60,7 +93,6 @@
             "[Read more about our founder](about/founder/) or [see his academic and professional background in full](about/background/)."
           ]
         },
-
         {
           "type": "steps",
           "heading": "Our Educational Approach",
@@ -71,14 +103,38 @@
           ],
           "layout": "row",
           "items": [
-            { "title": "Understand", "text": ["Receive a clear explanation of the lesson or task."] },
-            { "title": "Observe", "text": ["Study useful examples and models."] },
-            { "title": "Practise", "text": ["Complete activities with appropriate guidance."] },
-            { "title": "Apply", "text": ["Use the knowledge independently."] },
-            { "title": "Review", "text": ["Identify mistakes, make corrections and strengthen understanding."] }
+            {
+              "title": "Understand",
+              "text": [
+                "Receive a clear explanation of the lesson or task."
+              ]
+            },
+            {
+              "title": "Observe",
+              "text": [
+                "Study useful examples and models."
+              ]
+            },
+            {
+              "title": "Practise",
+              "text": [
+                "Complete activities with appropriate guidance."
+              ]
+            },
+            {
+              "title": "Apply",
+              "text": [
+                "Use the knowledge independently."
+              ]
+            },
+            {
+              "title": "Review",
+              "text": [
+                "Identify mistakes, make corrections and strengthen understanding."
+              ]
+            }
           ]
         },
-
         {
           "type": "prose",
           "text": [
@@ -86,7 +142,6 @@
             "[Read more about our teaching approach](about/teaching-approach/)."
           ]
         },
-
         {
           "type": "prose",
           "heading": "Bringing Our Services Together",
@@ -107,7 +162,6 @@
             "RCF Publications"
           ]
         },
-
         {
           "type": "prose",
           "variant": "tint",
@@ -117,37 +171,74 @@
             "[Read about our online communities](about/online-communities/)."
           ]
         },
-
         {
           "type": "cards",
           "heading": "Read more",
           "columns": "4",
           "items": [
-            { "title": "Our Founder", "url": "about/founder/", "more": "Open" },
-            { "title": "Academic and Professional Background", "url": "about/background/", "more": "Open" },
-            { "title": "Our Educational Mission", "url": "about/mission/", "more": "Open" },
-            { "title": "Our Teaching Approach", "url": "about/teaching-approach/", "more": "Open" },
-            { "title": "Our Online Communities", "url": "about/online-communities/", "more": "Open" },
-            { "title": "RCF Online Academy", "url": "rcf-classes/", "more": "Open" },
-            { "title": "RCF Publications", "url": "about/rcf-publications/", "more": "Open" },
-            { "title": "Contact Us", "url": "contact/", "more": "Open" }
+            {
+              "title": "Our Founder",
+              "url": "about/founder/",
+              "more": "Open"
+            },
+            {
+              "title": "Academic and Professional Background",
+              "url": "about/background/",
+              "more": "Open"
+            },
+            {
+              "title": "Our Educational Mission",
+              "url": "about/mission/",
+              "more": "Open"
+            },
+            {
+              "title": "Our Teaching Approach",
+              "url": "about/teaching-approach/",
+              "more": "Open"
+            },
+            {
+              "title": "Our Online Communities",
+              "url": "about/online-communities/",
+              "more": "Open"
+            },
+            {
+              "title": "RCF Online Academy",
+              "url": "rcf-classes/",
+              "more": "Open"
+            },
+            {
+              "title": "RCF Publications",
+              "url": "about/rcf-publications/",
+              "more": "Open"
+            },
+            {
+              "title": "Contact Us",
+              "url": "contact/",
+              "more": "Open"
+            }
           ]
         },
-
         {
           "type": "whatsapp",
           "heading": "Talk to us",
           "variant": "tint",
           "title": "WhatsApp",
-          "text": ["Questions about the platform, the classes or the resources are welcome from students, teachers and parents alike."],
+          "text": [
+            "Questions about the platform, the classes or the resources are welcome from students, teachers and parents alike."
+          ],
           "buttons": [
-            { "label": "Ask a question", "message": "Hello, I have a question about RCF English. " },
-            { "label": "Ask about classes", "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details." }
+            {
+              "label": "Ask a question",
+              "message": "Hello, I have a question about RCF English. "
+            },
+            {
+              "label": "Ask about classes",
+              "message": "Hello, I would like information about RCF Online Academy. Please send me the schedule, fees and registration details."
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "about/founder",
       "title": "Our Founder",
@@ -156,9 +247,19 @@
       "kicker": "About Us",
       "kind": "page",
       "schema": "Article",
-      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
-      "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer." },
+      "breadcrumbs": [
+        {
+          "label": "About Us",
+          "url": "about/"
+        }
+      ],
+      "backTo": {
+        "label": "About Us",
+        "url": "about/"
+      },
+      "hero": {
+        "text": "RCF English was founded by Rohana Fernando, an experienced English teacher and lecturer."
+      },
       "blocks": [
         {
           "type": "portrait",
@@ -174,7 +275,10 @@
             "He teaches mainly online today, and writes the books and study guides published through RCF Publications."
           ],
           "buttons": [
-            { "label": "Full academic and professional background", "url": "about/background/" }
+            {
+              "label": "Full academic and professional background",
+              "url": "about/background/"
+            }
           ]
         },
         {
@@ -191,10 +295,36 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Classroom teaching", "text": ["Several decades of work as a teacher and lecturer, in English language and in English Literature."] },
-            { "title": "Teacher support", "text": ["Resources, guidance and professional communities for English teachers."], "url": "about/online-communities/", "more": "Online communities" },
-            { "title": "Educational publishing", "text": ["Practical books, study guides and revision materials through RCF Publications."], "url": "about/rcf-publications/", "more": "RCF Publications" },
-            { "title": "Learning materials", "text": ["Explanations, models, guided activities and practice material prepared for learners at every level."], "url": "resources/", "more": "Resources" }
+            {
+              "title": "Classroom teaching",
+              "text": [
+                "Several decades of work as a teacher and lecturer, in English language and in English Literature."
+              ]
+            },
+            {
+              "title": "Teacher support",
+              "text": [
+                "Resources, guidance and professional communities for English teachers."
+              ],
+              "url": "about/online-communities/",
+              "more": "Online communities"
+            },
+            {
+              "title": "Educational publishing",
+              "text": [
+                "Practical books, study guides and revision materials through RCF Publications."
+              ],
+              "url": "about/rcf-publications/",
+              "more": "RCF Publications"
+            },
+            {
+              "title": "Learning materials",
+              "text": [
+                "Explanations, models, guided activities and practice material prepared for learners at every level."
+              ],
+              "url": "resources/",
+              "more": "Resources"
+            }
           ]
         },
         {
@@ -216,18 +346,27 @@
         }
       ]
     },
-
     {
       "slug": "about/background",
       "title": "Academic and Professional Background",
-      "description": "The academic qualifications and professional preparation behind RCF English: a degree in English from the University of Peradeniya, an MA in Linguistics from the University of Kelaniya and a TESOL qualification.",
+      "description": "The qualifications behind RCF English: a degree in English from Peradeniya, an MA in Linguistics from Kelaniya and a TESOL qualification, and what each meant.",
       "keywords": "University of Peradeniya, University of Kelaniya, MA Linguistics, TESOL, CALSDA, qualifications",
       "kicker": "About Us",
       "kind": "page",
       "schema": "Article",
-      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
-      "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "Academic scholarship in English and linguistics, professional training in language teaching, and several decades of classroom experience." },
+      "breadcrumbs": [
+        {
+          "label": "About Us",
+          "url": "about/"
+        }
+      ],
+      "backTo": {
+        "label": "About Us",
+        "url": "about/"
+      },
+      "hero": {
+        "text": "Academic scholarship in English and linguistics, professional training in language teaching, and several decades of classroom experience."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -245,10 +384,30 @@
           "variant": "tint",
           "columns": "4",
           "items": [
-            { "title": "Degree in English", "text": ["University of Peradeniya."] },
-            { "title": "Master of Arts in Linguistics", "text": ["University of Kelaniya."] },
-            { "title": "TESOL qualification", "text": ["University of Peradeniya."] },
-            { "title": "Associate Member, CALSDA", "text": ["Colombo Association of Language Skills and Dramatic Art."] }
+            {
+              "title": "Degree in English",
+              "text": [
+                "University of Peradeniya."
+              ]
+            },
+            {
+              "title": "Master of Arts in Linguistics",
+              "text": [
+                "University of Kelaniya."
+              ]
+            },
+            {
+              "title": "TESOL qualification",
+              "text": [
+                "University of Peradeniya."
+              ]
+            },
+            {
+              "title": "Associate Member, CALSDA",
+              "text": [
+                "Colombo Association of Language Skills and Dramatic Art."
+              ]
+            }
           ]
         },
         {
@@ -272,7 +431,6 @@
         }
       ]
     },
-
     {
       "slug": "about/mission",
       "title": "Our Educational Mission",
@@ -280,14 +438,26 @@
       "keywords": "educational mission, aims, English education, accessible learning",
       "kicker": "About Us",
       "kind": "page",
-      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
-      "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "What this platform is for, stated plainly." },
+      "breadcrumbs": [
+        {
+          "label": "About Us",
+          "url": "about/"
+        }
+      ],
+      "backTo": {
+        "label": "About Us",
+        "url": "about/"
+      },
+      "hero": {
+        "text": "What this platform is for, stated plainly."
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "Our Mission",
-          "text": ["The mission of RCF English is to:"],
+          "text": [
+            "The mission of RCF English is to:"
+          ],
           "bullets": [
             "make English learning clear, practical and accessible;",
             "provide dependable resources for students and teachers;",
@@ -306,12 +476,48 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Clear before clever", "text": ["An explanation that a struggling learner can follow is worth more than one that impresses a strong learner. Every lesson here is written for the student who has not understood it yet."] },
-            { "title": "Guided before independent", "text": ["No writing task is set without preparation. A learner is shown the task, given a model, walked through the structure, and only then asked to write alone."], "url": "ol-english/guided-writing/", "more": "Guided writing" },
-            { "title": "Free at the point of use", "text": ["Every lesson, past paper and activity on this site is free. A learner in a rural school should not be shut out of good material because of what it costs."] },
-            { "title": "Teachers as well as students", "text": ["A teacher who is supported teaches better. Lesson plans, marking guides and assessment material are given the same care as the student material."], "url": "teacher-resources/", "more": "Teacher resources" },
-            { "title": "Honest about what is known", "text": ["Where a fact is not certain, this site says so. Where a schedule or a fee has not been decided, it says that too, rather than inventing a figure."] },
-            { "title": "Built to reach people", "text": ["Pages are light, work on slow connections and old devices, and can be used with a keyboard or a screen reader."], "url": "accessibility/", "more": "Accessibility" }
+            {
+              "title": "Clear before clever",
+              "text": [
+                "An explanation that a struggling learner can follow is worth more than one that impresses a strong learner. Every lesson here is written for the student who has not understood it yet."
+              ]
+            },
+            {
+              "title": "Guided before independent",
+              "text": [
+                "No writing task is set without preparation. A learner is shown the task, given a model, walked through the structure, and only then asked to write alone."
+              ],
+              "url": "ol-english/guided-writing/",
+              "more": "Guided writing"
+            },
+            {
+              "title": "Free at the point of use",
+              "text": [
+                "Every lesson, past paper and activity on this site is free. A learner in a rural school should not be shut out of good material because of what it costs."
+              ]
+            },
+            {
+              "title": "Teachers as well as students",
+              "text": [
+                "A teacher who is supported teaches better. Lesson plans, marking guides and assessment material are given the same care as the student material."
+              ],
+              "url": "teacher-resources/",
+              "more": "Teacher resources"
+            },
+            {
+              "title": "Honest about what is known",
+              "text": [
+                "Where a fact is not certain, this site says so. Where a schedule or a fee has not been decided, it says that too, rather than inventing a figure."
+              ]
+            },
+            {
+              "title": "Built to reach people",
+              "text": [
+                "Pages are light, work on slow connections and old devices, and can be used with a keyboard or a screen reader."
+              ],
+              "url": "accessibility/",
+              "more": "Accessibility"
+            }
           ]
         },
         {
@@ -326,7 +532,6 @@
         }
       ]
     },
-
     {
       "slug": "about/teaching-approach",
       "title": "Our Teaching Approach",
@@ -334,14 +539,26 @@
       "keywords": "teaching approach, guided practice, individual correction, learner confidence",
       "kicker": "About Us",
       "kind": "page",
-      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
-      "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "The same approach runs through the lessons on this site and the teaching in RCF Online Academy." },
+      "breadcrumbs": [
+        {
+          "label": "About Us",
+          "url": "about/"
+        }
+      ],
+      "backTo": {
+        "label": "About Us",
+        "url": "about/"
+      },
+      "hero": {
+        "text": "The same approach runs through the lessons on this site and the teaching in RCF Online Academy."
+      },
       "blocks": [
         {
           "type": "prose",
           "heading": "What the teaching emphasises",
-          "text": ["His teaching approach emphasises:"],
+          "text": [
+            "His teaching approach emphasises:"
+          ],
           "bullets": [
             "clear and systematic explanation;",
             "guided practice before independent work;",
@@ -357,13 +574,40 @@
           "type": "steps",
           "heading": "The five stages, in detail",
           "variant": "tint",
-          "intro": ["RCF English believes that successful learning requires more than presenting information. Learners should be shown how to understand a task, study an effective model, practise with guidance, work independently and identify their own mistakes."],
+          "intro": [
+            "RCF English believes that successful learning requires more than presenting information. Learners should be shown how to understand a task, study an effective model, practise with guidance, work independently and identify their own mistakes."
+          ],
           "items": [
-            { "title": "Understand", "text": ["Receive a clear explanation of the lesson or task. If a learner cannot say in their own words what the task is asking for, no amount of writing practice will help. This stage is not skipped, even when it seems obvious."] },
-            { "title": "Observe", "text": ["Study useful examples and models. A model is not something to copy; it is something to take apart. The learner is shown *why* each part of the model is there before being asked to produce anything similar."] },
-            { "title": "Practise", "text": ["Complete activities with appropriate guidance. The support is real at first — a structure, a set of prompts, a partly written answer — and is reduced deliberately as the learner becomes able to work without it."] },
-            { "title": "Apply", "text": ["Use the knowledge independently, without the model in front of you. This is the stage at which many courses begin. Here it is the fourth stage, not the first."] },
-            { "title": "Review", "text": ["Identify mistakes, make corrections and strengthen understanding. A checklist is provided for each kind of writing, so that self-correction becomes a habit rather than something only a teacher can do."] }
+            {
+              "title": "Understand",
+              "text": [
+                "Receive a clear explanation of the lesson or task. If a learner cannot say in their own words what the task is asking for, no amount of writing practice will help. This stage is not skipped, even when it seems obvious."
+              ]
+            },
+            {
+              "title": "Observe",
+              "text": [
+                "Study useful examples and models. A model is not something to copy; it is something to take apart. The learner is shown *why* each part of the model is there before being asked to produce anything similar."
+              ]
+            },
+            {
+              "title": "Practise",
+              "text": [
+                "Complete activities with appropriate guidance. The support is real at first — a structure, a set of prompts, a partly written answer — and is reduced deliberately as the learner becomes able to work without it."
+              ]
+            },
+            {
+              "title": "Apply",
+              "text": [
+                "Use the knowledge independently, without the model in front of you. This is the stage at which many courses begin. Here it is the fourth stage, not the first."
+              ]
+            },
+            {
+              "title": "Review",
+              "text": [
+                "Identify mistakes, make corrections and strengthen understanding. A checklist is provided for each kind of writing, so that self-correction becomes a habit rather than something only a teacher can do."
+              ]
+            }
           ]
         },
         {
@@ -381,14 +625,34 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "In O/L English", "url": "ol-english/guided-writing/", "more": "Guided writing", "text": ["Every writing form — emails, notices, letters, paragraphs, essays, picture description, dialogue and speeches — follows the six-step method."] },
-            { "title": "In Literature", "url": "ol-literature/developing-an-answer/", "more": "Developing an answer", "text": ["Point, evidence, explanation, effect and link: a structure a learner can use even when the text is difficult."] },
-            { "title": "In the classes", "url": "rcf-classes/", "more": "RCF Online Academy", "text": ["Explanation, guided practice, individual correction and regular revision, with extra support for learners in difficulty."] }
+            {
+              "title": "In O/L English",
+              "url": "ol-english/guided-writing/",
+              "more": "Guided writing",
+              "text": [
+                "Every writing form — emails, notices, letters, paragraphs, essays, picture description, dialogue and speeches — follows the six-step method."
+              ]
+            },
+            {
+              "title": "In Literature",
+              "url": "ol-literature/developing-an-answer/",
+              "more": "Developing an answer",
+              "text": [
+                "Point, evidence, explanation, effect and link: a structure a learner can use even when the text is difficult."
+              ]
+            },
+            {
+              "title": "In the classes",
+              "url": "rcf-classes/",
+              "more": "RCF Online Academy",
+              "text": [
+                "Explanation, guided practice, individual correction and regular revision, with extra support for learners in difficulty."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "about/online-communities",
       "title": "Our Online Communities",
@@ -397,9 +661,19 @@
       "kicker": "About Us",
       "kind": "page",
       "schema": "Article",
-      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
-      "backTo": { "label": "About Us", "url": "about/" },
-      "hero": { "text": "This platform did not begin with a website. It began with teachers helping one another online, roughly a decade ago." },
+      "breadcrumbs": [
+        {
+          "label": "About Us",
+          "url": "about/"
+        }
+      ],
+      "backTo": {
+        "label": "About Us",
+        "url": "about/"
+      },
+      "hero": {
+        "text": "This platform did not begin with a website. It began with teachers helping one another online, roughly a decade ago."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -417,9 +691,26 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Facebook groups", "text": ["Open communities for English learning and teaching, where materials, guidance and questions are shared between teachers and learners."] },
-            { "title": "Telegram and WhatsApp groups", "text": ["Exclusive resource groups for English teachers, for materials and timely professional guidance on teaching, lesson preparation and assessment."] },
-            { "title": "RCF English", "text": ["This website is the continuation of that work: the same materials and guidance, organised so that they can be found again rather than scrolled past."], "url": "teacher-resources/", "more": "Teacher resources" }
+            {
+              "title": "Facebook groups",
+              "text": [
+                "Open communities for English learning and teaching, where materials, guidance and questions are shared between teachers and learners."
+              ]
+            },
+            {
+              "title": "Telegram and WhatsApp groups",
+              "text": [
+                "Exclusive resource groups for English teachers, for materials and timely professional guidance on teaching, lesson preparation and assessment."
+              ]
+            },
+            {
+              "title": "RCF English",
+              "text": [
+                "This website is the continuation of that work: the same materials and guidance, organised so that they can be found again rather than scrolled past."
+              ],
+              "url": "teacher-resources/",
+              "more": "Teacher resources"
+            }
           ]
         },
         {
@@ -449,7 +740,11 @@
                 "**The WhatsApp group is full at present.** WhatsApp limits how many members a group may hold, so places open only when someone leaves.",
                 "To ask for a place, send a WhatsApp message to **070 439 5240** saying that you teach English, and where. You will be added when a place becomes free."
               ],
-              "bullets": ["Send a WhatsApp message to 070 439 5240", "Say that you teach English, and where", "Places open as members leave"]
+              "bullets": [
+                "Send a WhatsApp message to 070 439 5240",
+                "Say that you teach English, and where",
+                "Places open as members leave"
+              ]
             },
             {
               "title": "Telegram group",
@@ -458,7 +753,11 @@
                 "Telegram has no practical limit on group size, so this is the group to ask for if the WhatsApp one is full.",
                 "To request membership, contact **Miss Sankapali** or **Miss Dinu Samadhi** through Messenger."
               ],
-              "bullets": ["Contact Miss Sankapali through Messenger", "or Miss Dinu Samadhi through Messenger", "No waiting list"]
+              "bullets": [
+                "Contact Miss Sankapali through Messenger",
+                "or Miss Dinu Samadhi through Messenger",
+                "No waiting list"
+              ]
             }
           ]
         },
@@ -478,14 +777,18 @@
           "heading": "Teachers: ask about the resource groups",
           "variant": "tint",
           "title": "WhatsApp",
-          "text": ["The Telegram and WhatsApp groups for English teachers are professional communities. If you teach English and would like to know more about them, send a message saying where and what you teach."],
+          "text": [
+            "The Telegram and WhatsApp groups for English teachers are professional communities. If you teach English and would like to know more about them, send a message saying where and what you teach."
+          ],
           "buttons": [
-            { "label": "Ask about the teacher groups", "message": "Hello, I am an English teacher and I would like to know about the RCF teacher resource groups on Telegram and WhatsApp. I teach: " }
+            {
+              "label": "Ask about the teacher groups",
+              "message": "Hello, I am an English teacher and I would like to know about the RCF teacher resource groups on Telegram and WhatsApp. I teach: "
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "about/rcf-publications",
       "title": "RCF Publications",
@@ -493,16 +796,30 @@
       "keywords": "RCF Publications, books, study guides, English books, bookshop",
       "kicker": "About Us",
       "kind": "page",
-      "breadcrumbs": [{ "label": "About Us", "url": "about/" }],
-      "backTo": { "label": "About Us", "url": "about/" },
+      "breadcrumbs": [
+        {
+          "label": "About Us",
+          "url": "about/"
+        }
+      ],
+      "backTo": {
+        "label": "About Us",
+        "url": "about/"
+      },
       "hero": {
         "text": "RCF Publications is a separate section of this website. This page explains what it publishes and how it relates to RCF English.",
         "buttons": [
-          { "label": "Visit RCF Publications", "url": "PUBLICATIONS_WEBSITE_URL", "style": "btn--accent" }
+          {
+            "label": "Visit RCF Publications",
+            "url": "PUBLICATIONS_WEBSITE_URL",
+            "style": "btn--accent"
+          }
         ]
       },
       "blocks": [
-        { "type": "publicationsStatus" },
+        {
+          "type": "publicationsStatus"
+        },
         {
           "type": "prose",
           "heading": "About RCF Publications",
@@ -545,9 +862,28 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "For classroom teaching", "text": ["Material a teacher can build a scheme of work around, used together with the free lesson plans and worksheets on this site."], "url": "teacher-resources/rcf-publications-for-teachers/", "more": "Books for teachers" },
-            { "title": "For tuition and home study", "text": ["Structured books for a learner working through a subject in order, rather than dipping into separate pages."] },
-            { "title": "For struggling learners", "text": ["Simplified explanations, guided writing and practical exercises, prepared for learners who need smaller steps."], "url": "teacher-resources/slow-learner-support/", "more": "Slow-learner support" }
+            {
+              "title": "For classroom teaching",
+              "text": [
+                "Material a teacher can build a scheme of work around, used together with the free lesson plans and worksheets on this site."
+              ],
+              "url": "teacher-resources/rcf-publications-for-teachers/",
+              "more": "Books for teachers"
+            },
+            {
+              "title": "For tuition and home study",
+              "text": [
+                "Structured books for a learner working through a subject in order, rather than dipping into separate pages."
+              ]
+            },
+            {
+              "title": "For struggling learners",
+              "text": [
+                "Simplified explanations, guided writing and practical exercises, prepared for learners who need smaller steps."
+              ],
+              "url": "teacher-resources/slow-learner-support/",
+              "more": "Slow-learner support"
+            }
           ]
         }
       ]

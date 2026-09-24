@@ -11,19 +11,28 @@
     "Because it is our own writing it carries no copyright restriction and",
     "may be printed and used freely by any teacher."
   ],
-
   "pages": [
     {
       "slug": "teacher-resources/classroom-management",
       "title": "Classroom Management",
       "metaTitle": "Classroom Management for English Teachers | RCF English",
-      "description": "Practical classroom management for Sri Lankan English teachers: rules and routines, large classes, attention, disruptive behaviour, pair and group work, mixed ability, using English in class, shy learners, time and transitions, and an inclusive classroom.",
+      "description": "Classroom management for Sri Lankan English teachers: routines, large classes, attention, disruption, pair work, mixed ability and getting English spoken.",
       "keywords": "classroom management English teachers Sri Lanka, large classes, pair work, group work, disruptive behaviour, shy learners, classroom routines",
       "kicker": "Teacher Resources",
       "kind": "guidance",
-      "breadcrumbs": [{ "label": "Teacher Resources", "url": "teacher-resources/" }],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
-      "hero": { "text": "A quiet class is not the goal. A class where thirty-eight children are all doing something useful in English is the goal, and that is a matter of organisation rather than authority." },
+      "breadcrumbs": [
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Teacher Resources",
+        "url": "teacher-resources/"
+      },
+      "hero": {
+        "text": "A quiet class is not the goal. A class where thirty-eight children are all doing something useful in English is the goal, and that is a matter of organisation rather than authority."
+      },
       "blocks": [
         {
           "type": "prose",
@@ -159,14 +168,42 @@
           "type": "table",
           "heading": "A forty-minute lesson, managed",
           "caption": "Where the time actually goes, and what stops it leaking. Adjust the middle; protect the first and last five minutes.",
-          "columns": ["Minutes", "What happens", "The management point"],
+          "columns": [
+            "Minutes",
+            "What happens",
+            "The management point"
+          ],
           "rows": [
-            ["0–3", "Entry task already on the board; you take the register.", "The class is working before you have spoken. This is the single biggest time saving available."],
-            ["3–8", "Review of yesterday, orally, whole class.", "Fast, loud, safe. Everyone participates before anyone is exposed."],
-            ["8–18", "New language presented and practised chorally, then by rows.", "Loud to quiet, group to individual. Nobody is asked to speak alone until they have said it three times together."],
-            ["18–30", "Pair or group task with one product per pair.", "Time announced aloud. You walk the fixed route. Fast finishers already know what to do."],
-            ["30–36", "Feedback: two or three pairs report; you correct the pattern, not every error.", "Correct the thing you taught. Leave the rest."],
-            ["36–40", "Exit task: one sentence each, checked at the door or held up.", "You leave knowing who understood. Never let the bell be the plan."]
+            [
+              "0–3",
+              "Entry task already on the board; you take the register.",
+              "The class is working before you have spoken. This is the single biggest time saving available."
+            ],
+            [
+              "3–8",
+              "Review of yesterday, orally, whole class.",
+              "Fast, loud, safe. Everyone participates before anyone is exposed."
+            ],
+            [
+              "8–18",
+              "New language presented and practised chorally, then by rows.",
+              "Loud to quiet, group to individual. Nobody is asked to speak alone until they have said it three times together."
+            ],
+            [
+              "18–30",
+              "Pair or group task with one product per pair.",
+              "Time announced aloud. You walk the fixed route. Fast finishers already know what to do."
+            ],
+            [
+              "30–36",
+              "Feedback: two or three pairs report; you correct the pattern, not every error.",
+              "Correct the thing you taught. Leave the rest."
+            ],
+            [
+              "36–40",
+              "Exit task: one sentence each, checked at the door or held up.",
+              "You leave knowing who understood. Never let the bell be the plan."
+            ]
           ]
         },
         {
@@ -209,9 +246,30 @@
           "eyebrow": "Related pages",
           "columns": "3",
           "items": [
-            { "title": "Lesson Planning", "url": "teacher-resources/lesson-plans/", "more": "Open", "text": ["Lesson structure, timing, learning outcomes, and blank templates you can print."] },
-            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "more": "Open", "text": ["Speaking, reading and writing activities that need no materials."] },
-            { "title": "Mixed-Ability Teaching", "url": "teacher-resources/mixed-ability-teaching/", "more": "Open", "text": ["Teaching a class where the range runs from fluent to barely writing."] }
+            {
+              "title": "Lesson Planning",
+              "url": "teacher-resources/lesson-plans/",
+              "more": "Open",
+              "text": [
+                "Lesson structure, timing, learning outcomes, and blank templates you can print."
+              ]
+            },
+            {
+              "title": "Classroom Activities",
+              "url": "teacher-resources/classroom-activities/",
+              "more": "Open",
+              "text": [
+                "Speaking, reading and writing activities that need no materials."
+              ]
+            },
+            {
+              "title": "Mixed-Ability Teaching",
+              "url": "teacher-resources/mixed-ability-teaching/",
+              "more": "Open",
+              "text": [
+                "Teaching a class where the range runs from fluent to barely writing."
+              ]
+            }
           ]
         }
       ]
