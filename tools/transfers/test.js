@@ -222,6 +222,27 @@ check("a closed request is ignored", () => {
   ]).sent.length, 0, "emails");
 });
 
+// The form's "Other" box lets a teacher type their own answer to "is your
+// request still open?". Only the exact closing phrase used to stop the
+// matching, so anything typed left the request open for six months.
+check("a typed 'no' closes a request as surely as the option does", () => {
+  ["No", "no thanks", "No, I have found someone", "NO - found a partner"].forEach((answer) => {
+    eq(run([
+      row({ email: "a@x.com", district: "Kandy", wants: ["Galle"] }),
+      row({ email: "b@x.com", district: "Galle", wants: ["Kandy"], status: answer })
+    ]).sent.length, 0, 'answer "' + answer + '"');
+  });
+});
+
+check("an answer that is not a refusal leaves the request open", () => {
+  ["Yes - keep looking", "yes please", "still looking", "Not decided yet"].forEach((answer) => {
+    eq(run([
+      row({ email: "a@x.com", district: "Kandy", wants: ["Galle"] }),
+      row({ email: "b@x.com", district: "Galle", wants: ["Kandy"], status: answer })
+    ]).sent.length, 2, 'answer "' + answer + '"');
+  });
+});
+
 check("a request with no consent is ignored", () => {
   eq(run([
     row({ email: "a@x.com", district: "Kandy", wants: ["Galle"] }),

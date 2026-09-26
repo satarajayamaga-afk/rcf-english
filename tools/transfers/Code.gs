@@ -115,6 +115,19 @@ var EXPIRY_DAYS = 180;
 // The answer to Q.status that closes a request.
 var CLOSED = "No - remove my request";
 
+// A request counts as closed if the teacher chose the closing option, or if
+// they typed anything beginning with "no" - which the form's "Other" box
+// lets them do. Somebody who writes "no, I have found someone" plainly means
+// to stop, and matching only the exact phrase would keep sending them
+// introductions for six months. Switching "Other" off in the form is still
+// the tidier fix; this makes the script right either way.
+function isClosed(answer) {
+  var said = String(answer || "").trim().toLowerCase();
+  if (!said) return false;
+  if (said === CLOSED.toLowerCase()) return true;
+  return /^no\b/.test(said);
+}
+
 // Where teachers can ask about the service: the Google account that runs this
 // script, read when it runs. It is deliberately not typed in here - this file
 // is published with the website, and an address written in it would be
@@ -222,7 +235,7 @@ function activeTeachers() {
     var email = String(v[emailAt] || "").trim().toLowerCase();
     if (!email || seenEmail[email]) continue;
     seenEmail[email] = true;
-    if (String(v[c[Q.status]]).trim() === CLOSED) continue;
+    if (isClosed(v[c[Q.status]])) continue;
     if (!String(v[c[Q.consent]]).trim()) continue;
     var when = toDate(v[c[TIMESTAMP]]);
     if (!when || when < cutoff) continue;
