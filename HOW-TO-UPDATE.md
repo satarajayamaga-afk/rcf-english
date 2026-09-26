@@ -604,6 +604,79 @@ entry — keeping it means you can run the same offer again later.
 
 ---
 
+## Task 8b — Google advertisements (AdSense)
+
+This is different from Task 8. Task 8 is our own page of offers and paid
+listings, typed in by us. This is Google's advertising network, which chooses
+the advertisements itself and pays per view and per click.
+
+### ⚠ The four rules, and why each one matters
+
+1. **Never click an advertisement on your own site. Ever.** Not to see where it
+   goes, not to check it works, not by accident on your phone. Google detects
+   clicks from the publisher's own devices and this is the commonest reason an
+   AdSense account is closed. It is not reversible, and the site cannot carry
+   advertising again afterwards.
+2. **Never ask anyone else to click.** Not family, not students, not a WhatsApp
+   group, not "please support the site". Those clicks are counted against us
+   exactly as our own are, and asking is itself a breach.
+3. **Never mention advertisements anywhere on the site.** Not "please support
+   us", and **not "please do not click" either.** Any mention draws attention
+   to the advertisements, and somebody always clicks out of curiosity. A
+   curiosity click is invalid traffic and it lands on our account. The only
+   place advertising is described is the privacy policy, which explains what
+   Google does with cookies. That text is generated and needs no editing.
+4. **Never switch on Auto Ads in the AdSense account.** Auto Ads place
+   advertisements wherever Google likes: inside a worksheet, in the middle of
+   a lesson, and on the Primary Game Zone pages made for small children. The
+   spaces in `_src/config.json` are the only places advertising is allowed.
+
+### Browsing your own site safely
+
+Add `?noads=1` to any address on the site once — for example
+`https://rcfenglish.com/?noads=1` — and that browser will never show an
+advertisement again. Do this on your telephone and on your computer. You can
+then read every page as often as you like with no risk of a click, and your
+own visits will not be counted as views.
+
+To undo it on a device, visit any page with `?noads=0`.
+
+### Switching advertising on and off
+
+Everything lives in the `ads` block of **`_src/config.json`**:
+
+```json
+"ads": {
+  "provider": "adsense",
+  "client": "ca-pub-5600707937611761",
+  "slots": {}
+}
+```
+
+- **To stop all advertising:** empty the `client` value and build. The script
+  disappears from every page, `ads.txt` is deleted, the reserved spaces vanish,
+  and the privacy policy goes back to saying the site carries no advertising.
+- **To show advertisements:** create a display ad unit in AdSense, copy the
+  `data-ad-slot` number, and put it in `slots` against the placement it is for:
+
+```json
+"slots": { "between": "1234567890" }
+```
+
+Until a number is there the spaces draw **nothing at all**. That is deliberate:
+an empty box labelled "Advertisement" helps nobody and looks broken.
+
+### If advertisements never appear on the live site
+
+The first thing to check is the Content-Security-Policy, which the build
+writes into every page. It lists the exact addresses a browser is allowed to
+load scripts from. A missing address means the browser refuses Google's
+script **silently** — no error a visitor would see, and AdSense simply reports
+no advertisements. The addresses are set in `tools/build-site.ps1`, in the
+section that begins "Advertising needs more of the policy opened".
+
+---
+
 ## Task 9 — Change how the site looks
 
 Open **`assets/css/styles.css`**. The colours are all at the very top:
