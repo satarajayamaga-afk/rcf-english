@@ -1763,7 +1763,8 @@
             "In particular, this website does not use analytics or tracking scripts, does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you.",
             "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
           ],
-          "whenAnalytics": false
+          "whenAnalytics": false,
+          "whenAds": false
         },
         {
           "type": "prose",
@@ -1773,7 +1774,8 @@
             "**RCF English does not know who you are.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login and no database of visitors.",
             "This website does not use behavioural advertising, does not set advertising cookies or cookies of its own, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you. It does count visits anonymously, as explained under *Visitor statistics* below.",
             "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
-          ]
+          ],
+          "whenAds": false
         },
         {
           "type": "prose",
@@ -1783,7 +1785,41 @@
             "**RCF English does not know who you are.** RCF English is a set of ordinary files served to your browser. It has no accounts, no login and no database of visitors.",
             "This website does not use behavioural advertising, does not show adverts from an advertising network, does not ask for your name, email address or telephone number in order to read anything, and does not build a profile of you. It does use **Google Analytics** to count visits, which sets cookies in your browser, as explained under *Visitor statistics* below.",
             "Some features remember your choices by saving them **in your own browser, on your own device**. That is explained under *What is kept on your device* below. The site also carries paid educational listings and sells books and resource collections; both are explained in their own sections."
-          ]
+          ],
+          "whenAds": false
+        },
+        {
+          "type": "prose",
+          "heading": "What this website collects",
+          "whenAds": true,
+          "text": [
+            "You can read every lesson, worksheet and past paper on this site without giving your name, your email address or your telephone number, and without creating an account.",
+            "This site **does carry advertising**, supplied by Google AdSense, and advertising involves cookies and information about your device. What that means is set out under *Advertising* below, including how to turn personalised advertising off.",
+            "It does use **Google Analytics** to count visits, which sets cookies in your browser, as explained under *Visitor statistics* below."
+          ],
+          "whenAnalytics": "google"
+        },
+        {
+          "type": "prose",
+          "heading": "What this website collects",
+          "whenAds": true,
+          "text": [
+            "You can read every lesson, worksheet and past paper on this site without giving your name, your email address or your telephone number, and without creating an account.",
+            "This site **does carry advertising**, supplied by Google AdSense, and advertising involves cookies and information about your device. What that means is set out under *Advertising* below, including how to turn personalised advertising off.",
+            "It counts visits with a service that sets no cookies, as explained under *Visitor statistics* below."
+          ],
+          "whenAnalytics": "cookieless"
+        },
+        {
+          "type": "prose",
+          "heading": "What this website collects",
+          "whenAds": true,
+          "text": [
+            "You can read every lesson, worksheet and past paper on this site without giving your name, your email address or your telephone number, and without creating an account.",
+            "This site **does carry advertising**, supplied by Google AdSense, and advertising involves cookies and information about your device. What that means is set out under *Advertising* below, including how to turn personalised advertising off.",
+            "Visits are not counted at all at present."
+          ],
+          "whenAnalytics": false
         },
         {
           "type": "prose",
@@ -1816,6 +1852,28 @@
             "Tuition classes and courses run by other people can be advertised on this site as paid listings. Every one of them is clearly marked **Sponsored**, and paid listings are kept in their own section, never mixed into the free lessons or resources.",
             "These listings are plain text and pictures written into the site. They are not served by an advertising network. Nothing about you is sent to an advertiser, no advertising cookie is set, and what you see does not change according to who you are or what you have looked at before.",
             "RCF English does not endorse an advertiser by accepting a listing. Anything you arrange with one is between you and them."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Advertising",
+          "whenAds": true,
+          "text": [
+            "Advertisements on this site are supplied by **Google AdSense**. They appear only in the spaces marked *Advertisement*, between sections of a page. They never appear inside a lesson, inside a worksheet, beside a download button, or on the pages made for young children.",
+            "**What Google does.** Google and its partners use cookies and similar technology to serve advertisements and, where you have allowed it, to make them relevant to you based on your previous visits to this and other websites. RCF English does not receive your browsing history and cannot identify you from anything an advertiser does."
+          ],
+          "bullets": [
+            "**Turning personalised advertising off:** visit [Google's Ads Settings](https://adssettings.google.com/) or, in Europe and the United Kingdom, use the consent choice you are shown on this site. You will still see advertisements, but they will not be based on your interests.",
+            "**Third-party cookies:** your browser can refuse them. Every part of this site keeps working without advertising cookies.",
+            "**More detail:** [how Google uses information from sites that use its services](https://policies.google.com/technologies/partner-sites)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Advertising and children",
+          "whenAds": true,
+          "text": [
+            "The **Primary Game Zone** and the other pages written for young children carry **no advertising at all**. That is a deliberate choice, not an accident of what happened to fill: the advertising spaces are placed page by page, and none are placed there."
           ]
         },
         {

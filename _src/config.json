@@ -24,6 +24,13 @@
     "provider": "google",
     "id": "G-637Y6VXYZ0"
   },
+  "ads": {
+    "provider": "adsense",
+    "client": "ca-pub-5600707937611761",
+    "slots": {}
+  },
+  "_adsNote": "Advertising. Leave client empty and no advertising code is added to any page, and no advertisement space is reserved. With a client set, the AdSense script is added to the head of every page and ads.txt is written at the site root. The labelled advertisement spaces stay EMPTY until you add an ad unit here: create a display ad unit in AdSense, copy the data-ad-slot number, and put it in slots against the placement it is for, for example \"between\": \"1234567890\". Do NOT switch on Auto Ads in the AdSense account: ads would be injected into the Primary Game Zone and the other pages made for children, and into the middle of worksheets. The slots below are the only places advertising is allowed.",
+
   "_analyticsNote": "Visitor statistics. Leave id empty and no statistics script is added to any page. Providers: google (Google Analytics 4: set id to the measurement ID, G-...; sets cookies), cloudflare or goatcounter (no cookies). For Cloudflare Web Analytics: sign in at dash.cloudflare.com, open Analytics & Logs > Web Analytics, add the site rcfenglish.com, choose the JavaScript snippet, and copy only the token value from it into id. For GoatCounter instead, set provider to goatcounter and id to your site code (the xxx in xxx.goatcounter.com). Then run build.cmd. The privacy policy switches its wording automatically.",
 
   "founderName": "Rohana Fernando",

@@ -622,9 +622,34 @@ function RenderBlocks($blocks) {
             if ($when -is [bool]) { if ($when -ne $script:AnalyticsOn) { continue } }
             elseif ([string]$when -ne $script:AnalyticsKind) { continue }
         }
+        # The same for advertising, so the policy can never promise that the
+        # site carries no advertisements while it is carrying them.
+        $whenAds = P $block 'whenAds'
+        if ($null -ne $whenAds) {
+            $adsOn = [bool]$script:AdsClient
+            if ([bool]$whenAds -ne $adsOn) { continue }
+        }
         $html += (RenderBlock $block)
     }
     return $html.Replace('[[analytics-service]]', $script:AnalyticsName)
+}
+
+# Advertising. Nothing is added to any page until a client ID is set in
+# config.json, and even then an advertisement space stays empty - and is not
+# drawn at all - until an ad unit is named for that placement. An empty box
+# labelled "Advertisement" helps nobody.
+$script:AdsClient = ''
+$script:AdsHtml = ''
+$script:AdsSlots = $null
+$adsCfg = P $script:Config 'ads'
+if ($adsCfg) {
+    $adClient = ([string](P $adsCfg 'client' '')).Trim()
+    if ($adClient) {
+        if ($adClient -notmatch '^ca-pub-[0-9]+$') { throw "config.json ads.client does not look like an AdSense publisher ID (ca-pub-...)" }
+        $script:AdsClient = $adClient
+        $script:AdsSlots = P $adsCfg 'slots'
+        $script:AdsHtml = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + $adClient + '" crossorigin="anonymous"></script>'
+    }
 }
 
 # Visitor statistics. Nothing is added to any page until an ID is set in
@@ -661,6 +686,15 @@ if ($analyticsCfg) {
 }
 
 function AnalyticsTag { return $script:AnalyticsHtml }
+
+# The ad unit for a placement, or empty if advertising is switched off or no
+# unit has been named for it. Used both when drawing the space and when
+# deciding whether the page needs the script that fills it.
+function AdSlotId($placement) {
+    if (-not $script:AdsClient) { return '' }
+    if (-not $script:AdsSlots) { return '' }
+    return ([string](P $script:AdsSlots $placement '')).Trim()
+}
 
 function SectionOpen($block, $extraClass = '') {
     $variant = [string](P $block 'variant' '')
@@ -1053,16 +1087,24 @@ function RenderBlock($block) {
         }
 
         'adslot' {
-            # A reserved, clearly labelled advertising space. It carries no
-            # advertising code of any kind: it is an empty styled box, and it
-            # is deliberately unlike a learning card - dashed, uncoloured, not
-            # clickable - so it can never be mistaken for a resource or a
-            # navigation button. Sits between major sections, never inside a
-            # card grid and never beside a download button.
+            # A clearly labelled advertising space, deliberately unlike a
+            # learning card - dashed, uncoloured, not clickable - so it can
+            # never be mistaken for a resource or a navigation button. Sits
+            # between major sections, never inside a card grid and never
+            # beside a download button.
+            #
+            # Nothing is drawn at all unless advertising is switched on in
+            # config.json AND an ad unit is named for this placement. A box
+            # labelled "Advertisement" with no advertisement in it is noise
+            # for a reader and odd for a reviewer.
             $place = [string](P $block 'placement' 'between')
-            $html = '<div class="adslot adslot--' + (E $place) + '" role="complementary" aria-label="Advertisement space">'
+            $slotId = AdSlotId $place
+            if (-not $slotId) { return '' }
+            $html = '<div class="adslot adslot--' + (E $place) + '" role="complementary" aria-label="Advertisement">'
             $html += '<span class="adslot__label">Advertisement</span>'
+            $html += '<ins class="adsbygoogle" style="display:block" data-ad-client="' + (E $script:AdsClient) + '" data-ad-slot="' + (E $slotId) + '" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             $html += '</div>'
+            $script:PageNeedsAdPush = $true
             return $html
         }
 
@@ -4495,6 +4537,9 @@ function BuildPage($page) {
     $head += '<script>' + $script:ReadingScript + '</script>'
     $head += StructuredData $page $canonical
     $head += AnalyticsTag
+    # The advertising script loads on every page, as Google asks, but an ad
+    # only ever appears where the page itself reserves a space for one.
+    $head += $script:AdsHtml
 
     $scripts = '<script src="' + (E (AssetUrl 'assets/js/nav.js')) + '" defer></script>'
     $scripts += '<script src="' + (E (AssetUrl 'assets/js/personal.js')) + '" defer></script>'
@@ -4507,6 +4552,14 @@ function BuildPage($page) {
     $modules = New-Object System.Collections.ArrayList
     foreach ($m in (AsList (P $page 'scripts'))) { if (-not $modules.Contains([string]$m)) { [void]$modules.Add([string]$m) } }
     foreach ($b in (AsList (P $page 'blocks'))) {
+        # An advertisement space brings the small script that fills it, but
+        # only when it is going to draw one.
+        if ([string](P $b 'type') -eq 'adslot') {
+            if (AdSlotId ([string](P $b 'placement' 'between'))) {
+                if (-not $modules.Contains('ads')) { [void]$modules.Add('ads') }
+            }
+            continue
+        }
         $need = $script:BlockScripts[[string](P $b 'type')]
         if (-not $need) { continue }
         # An activities block with no activities in it has nothing to run.
@@ -4618,6 +4671,18 @@ function ScriptHash($js) {
 $cspScript = "'self' " + (ScriptHash $script:ReadingScript)
 $cspConnect = "'self'"
 $cspImg = "'self' data:"
+$cspFrame = "https://americanenglish.state.gov"
+if ($script:AdsClient) {
+    # Advertising needs more of the policy opened than anything else on the
+    # site: the script, the frames each ad renders in, the images inside them
+    # and the calls they make. These are the hosts Google documents for
+    # AdSense; if an ad ever fails to appear, this list is the first place to
+    # look, because the browser refuses it silently.
+    $cspScript += ' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://partner.googleadservices.com https://www.googletagservices.com https://adservice.google.com'
+    $cspFrame += ' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com'
+    $cspImg += ' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net'
+    $cspConnect += ' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://csi.gstatic.com'
+}
 if ($script:AnalyticsKind -eq 'google') {
     $m = [regex]::Match($script:AnalyticsHtml, '<script>(.*?)</script>')
     if ($m.Success) { $cspScript += ' ' + (ScriptHash $m.Groups[1].Value) }
@@ -4635,10 +4700,11 @@ elseif ($script:AnalyticsName -eq 'GoatCounter') {
     $cspConnect += " https://$gcId.goatcounter.com"
     $cspImg += " https://$gcId.goatcounter.com"
 }
-# frame-src names one publisher and nothing else: English Teaching Forum's
-# PDFs, shown on the ELT Articles pages from the U.S. Department of State's
-# own server. Any other frame is still refused.
-$script:CspContent = "default-src 'self'; script-src $cspScript; style-src 'self' 'unsafe-inline'; img-src $cspImg; connect-src $cspConnect; media-src 'self'; font-src 'self'; frame-src https://americanenglish.state.gov; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'"
+# frame-src names English Teaching Forum's PDFs, shown on the ELT Articles
+# pages from the U.S. Department of State's own server, and - only when
+# advertising is switched on - the frames Google's ads render in. Any other
+# frame is still refused.
+$script:CspContent = "default-src 'self'; script-src $cspScript; style-src 'self' 'unsafe-inline'; img-src $cspImg; connect-src $cspConnect; media-src 'self'; font-src 'self'; frame-src $cspFrame; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'"
 
 # ------------------------------------------------------------------ build --
 
@@ -4836,6 +4902,22 @@ $sm += '</urlset>' + "`n"
 
 $robots = "User-agent: *`nAllow: /`n`n# Source folders are not content`nDisallow: /_src/`nDisallow: /tools/`n`nSitemap: ${siteUrl}sitemap.xml`n"
 [System.IO.File]::WriteAllText((Join-Path $ProjectRoot 'robots.txt'), $robots, $utf8)
+
+# ads.txt says which companies may sell advertising on this domain. Without
+# it AdSense reports earnings at risk, and a buyer cannot tell a genuine
+# listing from somebody selling space they do not own. The last field is
+# Google's own certification authority ID, the same for every publisher.
+$adsTxtPath = Join-Path $ProjectRoot 'ads.txt'
+if ($script:AdsClient) {
+    $pubId = $script:AdsClient -replace '^ca-', ''
+    $adsTxt = "# Who may sell advertising on rcfenglish.com. See https://iabtechlab.com/ads-txt/`n"
+    $adsTxt += "google.com, $pubId, DIRECT, f08c47fec0942fa0`n"
+    [System.IO.File]::WriteAllText($adsTxtPath, $adsTxt, $utf8)
+}
+elseif (Test-Path $adsTxtPath) {
+    # Advertising switched off: an ads.txt naming a seller would be a lie.
+    Remove-Item $adsTxtPath -Force
+}
 
 [System.IO.File]::WriteAllText((Join-Path $ProjectRoot '.nojekyll'), '', $utf8)
 
