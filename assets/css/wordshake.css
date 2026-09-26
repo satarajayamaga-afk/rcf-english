@@ -1,0 +1,203 @@
+/* Wordshake - the letter-grid vocabulary game.
+ *
+ * The version this came from styled the page itself: a global * reset, rules
+ * on <body>, and a web font fetched from Google. None of that can be used
+ * here. The reset and the body rules would have broken every other part of
+ * the page, and the font would have been refused by the site's
+ * Content-Security-Policy, which allows fonts from this site only.
+ *
+ * So everything below is scoped inside .wordshake and uses the site's own
+ * colours and typography. The game looks like the rest of RCF English
+ * rather than like a different website embedded in it.
+ */
+
+.wordshake {
+  max-width: 34rem;
+  margin: 0 auto;
+  background: var(--navy-800);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  color: #fff;
+}
+
+.wordshake__board {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--ink-900);
+}
+
+.wordshake__stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--navy-050);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.wordshake__time { color: var(--gold-800); }
+.wordshake__points { color: var(--teal-700); }
+
+/* The word being built. aria-live, so a screen reader hears it change. */
+.wordshake__word {
+  background: var(--navy-050);
+  border: 2px dashed var(--navy-600);
+  min-height: 3.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--navy-800);
+  margin-bottom: 0.75rem;
+  padding: 0.25rem;
+  word-break: break-all;
+}
+
+.wordshake__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.wordshake__actions .btn { flex: 1; }
+
+.wordshake__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Real buttons, not clickable boxes: they can be reached with the Tab key
+ * and pressed with the keyboard, which a <div> cannot. */
+.wordshake__tile {
+  background: var(--navy-700);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: inherit;
+  aspect-ratio: 1 / 1;
+  min-height: 3.25rem;
+  border: 2px solid transparent;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.wordshake__tile:hover { background: var(--navy-600); }
+.wordshake__tile:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.wordshake__tile[aria-pressed="true"] {
+  background: var(--teal-600);
+  transform: scale(0.94);
+}
+
+.wordshake__found {
+  text-align: left;
+  background: var(--navy-050);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  min-height: 4.5rem;
+  max-height: 7rem;
+  overflow-y: auto;
+  margin-bottom: 0.75rem;
+}
+
+.wordshake__found-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ink-700);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.35rem;
+}
+
+.wordshake__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wordshake__tag {
+  background: var(--teal-100);
+  color: var(--teal-800);
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.wordshake__empty {
+  color: var(--ink-700);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Said aloud to a screen reader and shown to everybody: whether the last
+ * word was accepted, and why not when it was refused. The original game
+ * only made a noise, which tells a deaf player nothing. */
+.wordshake__message {
+  min-height: 1.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.wordshake__message--good { color: var(--teal-700); }
+.wordshake__message--bad { color: var(--gold-800); }
+
+.wordshake__panel {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  color: var(--ink-900);
+}
+
+.wordshake__panel h3 {
+  margin: 0 0 0.5rem;
+  color: var(--navy-800);
+}
+
+.wordshake__panel p { margin: 0 0 1rem; }
+
+.wordshake__final {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--teal-700);
+  margin-bottom: 1rem;
+}
+
+.wordshake[hidden],
+.wordshake__panel[hidden],
+.wordshake__board[hidden] { display: none; }
+
+@media (max-width: 26rem) {
+  .wordshake { padding: 0.75rem; }
+  .wordshake__board { padding: 0.9rem; }
+  .wordshake__tile { font-size: 1.25rem; min-height: 2.75rem; }
+  .wordshake__grid { gap: 0.4rem; }
+}
+
+/* A player who has asked their device for less movement gets none. */
+@media (prefers-reduced-motion: reduce) {
+  .wordshake__tile { transition: none; }
+  .wordshake__tile[aria-pressed="true"] { transform: none; }
+}
+
+@media print {
+  .wordshake { display: none; }
+}

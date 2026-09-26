@@ -4682,7 +4682,22 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   min-height: 100px;
 }
 @media (min-width: 720px) {
-  .adslot--between { min-height: 90px; }
+  /* The space an advertisement will occupy is reserved before it arrives, so
+ * the words a reader is part-way through do not jump down the page when it
+ * loads. A responsive unit is usually 250 to 280 pixels tall on a telephone,
+ * which is where most of our readers are; 90 pixels reserved for a 280 pixel
+ * advertisement moves the page almost as much as reserving nothing. */
+.adslot--between { min-height: 280px; }
+
+@media (min-width: 48rem) {
+  /* Wider screens take a shorter, wider unit. */
+  .adslot--between { min-height: 180px; }
+}
+
+/* Google marks a space it could not fill. Left alone it would be 280 pixels
+ * of empty hatching in the middle of a lesson, so the whole space goes. */
+.adslot:has(ins[data-ad-status="unfilled"]) { display: none; }
+.adslot ins[data-ad-status="unfilled"] { display: none; }
 }
 .adslot__label {
   font-size: 0.62rem;

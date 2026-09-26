@@ -421,7 +421,8 @@ const hub = {
         { title: "Our standard", url: BASE + "/our-standards/", more: "Read it", text: ["What every plan and worksheet on this site must have."] }
       ]
     },
-    AD,
+    // No advertisement immediately before the share buttons: the two sit
+    // close together and a thumb aiming for WhatsApp would land on the ad.
     { type: "share", heading: "Share", level: "h2", text: "Free ESL lesson plans and worksheets, levelled by the CEFR.", hashtags: ["ESL", "EFL", "TEFL", "EnglishTeachers"] }
   ]
 };
@@ -442,8 +443,9 @@ const planHub = {
     {
       type: "cards", heading: "Lesson plans", level: "h2", columns: "3",
       items: plans.map((m) => ({ title: `${m.lesson.topic} (${m.lesson.cefr})`, url: `${BASE}/lesson-plans/${m.lesson.slug}/`, more: `${m.lesson.minutes} minutes`, text: [m.lesson.focus.split(":")[0] + ". " + m.lesson.learners + "."] }))
-    },
-    AD
+    }
+    // No advertisement here. This is a list of links with barely a hundred
+    // words of its own; an advertisement on it would be most of the page.
   ]
 };
 
@@ -474,10 +476,12 @@ const sheetHub = {
             text: [`${m.worksheet.tasks.length} tasks, answer key and teacher's notes.${m.lesson ? " With a full lesson plan." : ""}`]
           }))
         },
+        // One advertisement, after the first group of cards, and nothing
+        // further down: this page is a list of links, not an article, and two
+        // advertisements would outweigh what it actually says.
         ...(i === 0 ? [AD] : [])
       ];
-    }),
-    AD
+    })
   ]
 };
 

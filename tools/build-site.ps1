@@ -1108,6 +1108,48 @@ function RenderBlock($block) {
             return $html
         }
 
+        'wordshake' {
+            # The Wordshake letter grid. The markup is written here rather
+            # than in the page's JSON because it is fixed: the game's own
+            # script fills the grid, the clock and the word list. A page asks
+            # for it with { "type": "wordshake" } and carries the wordshake
+            # style and script.
+            $html = '<div class="wordshake" data-wordshake>'
+
+            $html += '<div class="wordshake__panel" data-start-panel>'
+            $html += '<h3>Wordshake</h3>'
+            $html += '<p>Make as many three and four letter words as you can in sixty seconds. Tap the letters in order, then send the word. A three-letter word is worth 30 points and a four-letter word 40.</p>'
+            $html += '<button type="button" class="btn btn--primary" data-start>Start the game</button>'
+            $html += '</div>'
+
+            $html += '<div class="wordshake__board" data-board hidden>'
+            $html += '<p class="wordshake__stats">'
+            $html += '<span>Time left <strong class="wordshake__time" data-time>60</strong> seconds</span>'
+            $html += '<span>Score <strong class="wordshake__points" data-score>0</strong></span>'
+            $html += '</p>'
+            $html += '<p class="wordshake__word" data-word aria-live="polite" aria-label="The word you are building"></p>'
+            $html += '<p class="wordshake__message" data-message role="status" aria-live="polite"></p>'
+            $html += '<div class="wordshake__actions">'
+            $html += '<button type="button" class="btn btn--outline" data-clear>Clear</button>'
+            $html += '<button type="button" class="btn btn--primary" data-submit>Send the word</button>'
+            $html += '</div>'
+            $html += '<div class="wordshake__grid" data-grid role="group" aria-label="Letter grid"></div>'
+            $html += '<div class="wordshake__found">'
+            $html += '<p class="wordshake__found-title">Words you have found</p>'
+            $html += '<ul class="wordshake__tags" data-tags><li class="wordshake__empty">No words yet.</li></ul>'
+            $html += '</div>'
+            $html += '</div>'
+
+            $html += '<div class="wordshake__panel" data-over-panel hidden>'
+            $html += '<h3>Time is up</h3>'
+            $html += '<p class="wordshake__final">Score: <span data-final-score>0</span> points from <span data-final-count>0</span> words</p>'
+            $html += '<button type="button" class="btn btn--primary" data-again>Play again</button>'
+            $html += '</div>'
+
+            $html += '</div>'
+            return $html
+        }
+
         'countdown' {
             # The pre-launch countdown band that sits above the homepage hero.
             # The four numbers are written by assets/js/countdown.js from the
@@ -4678,10 +4720,16 @@ if ($script:AdsClient) {
     # and the calls they make. These are the hosts Google documents for
     # AdSense; if an ad ever fails to appear, this list is the first place to
     # look, because the browser refuses it silently.
-    $cspScript += ' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://partner.googleadservices.com https://www.googletagservices.com https://adservice.google.com'
-    $cspFrame += ' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com'
-    $cspImg += ' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net'
-    $cspConnect += ' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://csi.gstatic.com'
+    # ep1/ep2.adtrafficquality.google is Google's own invalid-traffic check.
+    # It was left out at first and the browser blocked it on every page: found
+    # in the console before any of this went live, which is the only way such
+    # a fault is ever found, because a blocked advertisement says nothing.
+    # fundingchoicesmessages.google.com serves Google's consent message, which
+    # is needed before personalised ads may be shown to readers in Europe.
+    $cspScript += ' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://partner.googleadservices.com https://www.googletagservices.com https://adservice.google.com https://ep2.adtrafficquality.google https://fundingchoicesmessages.google.com'
+    $cspFrame += ' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://ep2.adtrafficquality.google https://fundingchoicesmessages.google.com'
+    $cspImg += ' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://googleads.g.doubleclick.net https://ep1.adtrafficquality.google'
+    $cspConnect += ' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://csi.gstatic.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://fundingchoicesmessages.google.com'
 }
 if ($script:AnalyticsKind -eq 'google') {
     $m = [regex]::Match($script:AnalyticsHtml, '<script>(.*?)</script>')

@@ -159,8 +159,15 @@
           "intro": [
             "Short drag-and-drop and word-order games for the grammar focuses Grade 6 still needs: nouns, *is / are / was / were*, articles and prepositions. They sit beside the practice activities above — not instead of them."
           ],
-          "columns": "2",
+          "columns": "3",
           "items": [
+            {
+              "title": "Wordshake",
+              "icon": "WS",
+              "text": "Sixty seconds to make as many three and four letter words as you can from sixteen letters. Builds vocabulary and spelling together.",
+              "url": "grades/grade-6/wordshake/",
+              "more": "Play Wordshake"
+            },
             {
               "title": "Open Grade 6 Game Zone",
               "icon": "GZ",
@@ -268,6 +275,118 @@
           "heading": "If your English is behind the class",
           "text": [
             "RCF Publications produces a Grade 6 support book for pupils who need to rebuild the basics without falling further behind."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grades/grade-6/wordshake",
+      "title": "Wordshake: the Grade 6 Vocabulary Game",
+      "metaTitle": "Wordshake: Free Grade 6 English Vocabulary Game",
+      "description": "A free word game for Grade 6 English: make three and four letter words from sixteen letters in sixty seconds. Works on a phone, and needs no account.",
+      "keywords": "grade 6 english game, vocabulary game, english word game for students, word building game, spelling game grade 6",
+      "kicker": "Grade 6 English",
+      "kind": "page",
+      "schema": "LearningResource",
+      "educationalLevel": "Grade 6",
+      "resourceType": "Game",
+      "tags": [
+        "Grade 6",
+        "Vocabulary",
+        "Spelling",
+        "Free",
+        "Works on a phone"
+      ],
+      "styles": [
+        "wordshake"
+      ],
+      "scripts": [
+        "wordshake"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Grade 6-11 Resources",
+          "url": "grades/"
+        },
+        {
+          "label": "Grade 6 English",
+          "url": "grades/grade-6/"
+        }
+      ],
+      "backTo": {
+        "label": "Grade 6 English",
+        "url": "grades/grade-6/"
+      },
+      "hero": {
+        "text": "Sixteen letters, sixty seconds. Make as many three and four letter words as you can - the longer the word, the more it scores."
+      },
+      "blocks": [
+        {
+          "type": "wordshake"
+        },
+        {
+          "type": "prose",
+          "heading": "How to play",
+          "level": "h2",
+          "text": [
+            "Tap the letters one after another to build a word, then send it. If it is a real English word you get ten points for every letter. If it is not, nothing is lost - try another."
+          ],
+          "bullets": [
+            "**Three letters score 30, four letters score 40.** Longer words are always worth more, so look for a fourth letter before you send a three-letter word.",
+            "**A letter can only be taken back from the end.** Tap the last letter again to remove it, or use *Clear* to start the word afresh.",
+            "**The same word only counts once.** After that, the game tells you that you already have it.",
+            "**You can play with the keyboard.** Move between the letters with the Tab key, choose one with Enter or the space bar, and press Enter anywhere else to send the word."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting better at it",
+          "level": "h2",
+          "text": [
+            "The score comes from noticing patterns, not from typing quickly."
+          ],
+          "bullets": [
+            "**Start with the vowels.** Five of the sixteen letters are vowels. Find them first, then look for consonants that sit either side.",
+            "**Work in families.** If AT is there, try BAT, CAT, FAT, HAT, MAT, PAT, RAT, SAT. One pattern often gives four or five words.",
+            "**Add a letter to a word you already have.** CAR becomes CARD or CART; EAT becomes HEAT, MEAT, NEAT, SEAT.",
+            "**Do not stare at one word.** When nothing comes, clear it and look somewhere else on the grid. The clock does not stop."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "For teachers",
+          "text": [
+            "This works well on a classroom screen with the class calling out words, and as a five-minute warmer at the start of a lesson. It needs no preparation, no login and no internet connection once the page has loaded.",
+            "The word list holds about 1,200 three and four letter words. A word the class knows may occasionally be missing - if you find one, [tell us](corrections/) and it will be added."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "More Grade 6 English",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Grade 6 English",
+              "url": "grades/grade-6/",
+              "text": [
+                "Practice activities, listening tests, papers and resources for the whole year."
+              ]
+            },
+            {
+              "title": "Grade 6 Game Zone",
+              "url": "primary-english/game-zone/grade-6/",
+              "text": [
+                "Twelve grammar games: sorting, missing words and sentence puzzles."
+              ]
+            },
+            {
+              "title": "Grade 6 past papers",
+              "url": "past-papers/grade-6/",
+              "text": [
+                "Sixteen term test papers, with what to revise before you sit one."
+              ]
+            }
           ]
         }
       ]
