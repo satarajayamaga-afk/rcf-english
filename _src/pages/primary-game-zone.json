@@ -2,8 +2,8 @@
   "_readme": [
     "PRIMARY GAME ZONE",
     "---------------------------------------------------------------------",
-    "Seven pages: a hub, one per grade, and Teacher Mode. Each carries an",
-    "empty themed container; assets/js/game-zone.js fills it from the JSON",
+    "Eight pages: a hub, one per grade (1-6), and Teacher Mode. Each carries",
+    "an empty themed container; assets/js/game-zone.js fills it from the JSON",
     "in data/games/. Adding a game means editing data/games/grade-N.json —",
     "no page here changes, and no JavaScript changes.",
     "",
@@ -18,9 +18,9 @@
     {
       "slug": "primary-english/game-zone",
       "title": "Primary Game Zone",
-      "metaTitle": "Primary Game Zone | Games for Grades 1-5 | RCF English",
-      "description": "Colourful English games for Grades 1 to 5: picture matching, memory pairs, quizzes, sorting, sentence building and missing words. Free, and they work on a phone.",
-      "keywords": "English games for children Sri Lanka, primary English games, grade 1 english game, grade 5 english game, free english games for kids",
+      "metaTitle": "Primary Game Zone | Games for Grades 1-6 | RCF English",
+      "description": "Colourful English games for Grades 1 to 6: picture matching, memory pairs, quizzes, sorting, sentence building and missing words. Free, and they work on a phone.",
+      "keywords": "English games for children Sri Lanka, primary English games, grade 1 english game, grade 6 english game, free english games for kids",
       "kicker": "Primary English",
       "kind": "page",
       "styles": [
@@ -40,7 +40,7 @@
         "url": "primary-english/"
       },
       "hero": {
-        "text": "Six kinds of English game for Grades 1 to 5. Every game takes three to five minutes, works on a phone, and keeps your stars when you come back."
+        "text": "Six kinds of English game for Grades 1 to 6. Every game takes three to five minutes, works on a phone, and keeps your stars when you come back."
       },
       "blocks": [
         {
@@ -56,7 +56,7 @@
             {
               "title": "Pick your grade",
               "icon": "1",
-              "text": "Each grade has its own colour and its own games, from first words in Grade 1 to Scholarship-style challenges in Grade 5."
+              "text": "Each grade has its own colour and its own games, from first words in Grade 1 to grammar puzzles in Grade 6."
             },
             {
               "title": "Play for a few minutes",
@@ -448,6 +448,76 @@
           "level": "h2",
           "text": [
             "Grade 5 is a scholarship year for many children and the temptation is to use screen time for past papers. Ten minutes of these games is still worth it: vocabulary is the one thing no amount of paper practice supplies."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "primary-english/game-zone/grade-6",
+      "title": "Grade 6 Games",
+      "metaTitle": "Grade 6 English Games | Grammar Game Zone | RCF English",
+      "description": "Free Grade 6 English grammar games: sort common and proper nouns, choose is/are/was/were, pick a/an/the, place and time prepositions, and rebuild sentences. Drag-and-drop and word-order puzzles, ad-free.",
+      "keywords": "grade 6 english games, grade 6 grammar games, nouns verbs articles prepositions, drag and drop english, sentence building grade 6",
+      "kicker": "Primary Game Zone",
+      "kind": "page",
+      "styles": [
+        "games"
+      ],
+      "scripts": [
+        "game-zone"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary Game Zone",
+        "url": "primary-english/game-zone/"
+      },
+      "hero": {
+        "text": "Grammar puzzles for Grade 6: nouns, be-verbs, articles, prepositions and sentence order. Tap a game to start."
+      },
+      "blocks": [
+        {
+          "type": "game-zone",
+          "mode": "grade",
+          "grade": "6",
+          "theme": "ocean"
+        },
+        {
+          "type": "prose",
+          "heading": "What is in here",
+          "level": "h2",
+          "text": [
+            "There are 12 short grammar games across five topics — about an hour of play in all — covering the same focuses as the Grade 6 grammar worksheets: common and proper nouns, *is / are / was / were*, *a / an / the*, and prepositions of place and time.",
+            "Everything is free, needs no account, and works on a phone. **There is no advertising anywhere in the Game Zone.**",
+            "Pupil's Book unit games for Grade 6 will be added when the 2026 book units are mapped. Until then, these practice games sit beside the skill activities on the [Grade 6 English page](grades/grade-6/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it practises",
+          "level": "h2",
+          "text": null,
+          "bullets": [
+            "**Sorting and drag-and-drop.** Nouns into common or proper; phrases into place or time; *a* versus *an* by sound.",
+            "**Missing-word gaps** for *is / are / was / were* and for articles and prepositions — the same choices children meet on paper.",
+            "**Sentence order puzzles**, so a child builds the sentence rather than only recognising it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting the most from it",
+          "level": "h2",
+          "text": [
+            "Use one topic after the matching worksheet, or before a term test. Ten minutes of sorting nouns or rebuilding sentences is enough for one sitting; stars stay on the device so coming back tomorrow continues the same progress.",
+            "For reading a timetable, filling in a form, and the poem activities on the 2026 syllabus, open the [Grade 6 practice page](grades/grade-6/#practice)."
           ]
         }
       ]

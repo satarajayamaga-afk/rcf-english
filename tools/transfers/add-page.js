@@ -45,9 +45,19 @@ const page = {
       type: "steps", heading: "How it works", level: "h2",
       items: [
         { title: "Enter your request", text: ["Your subject, the district and type of school you teach in now, the level you teach, and the districts you would accept. It takes about three minutes and needs a Google account, so nobody can enter a request in your name."] },
-        { title: "We look for a match", text: ["Every new request is compared with every open one. A match is two teachers of the same subject who each teach in a district the other would accept, in the same type of school and at the same level. Three-way exchanges are found too: A to B's district, B to C's, C to A's."] },
+        { title: "We look for a match", text: ["Every new request is compared with every open one. The subject must be the same - a Mathematics post is not a swap for an English one. Everything else is weighed rather than demanded, because insisting on a perfect fit means almost nobody is ever introduced. Three-way exchanges are found too: A to B's district, B to C's, C to A's."] },
         { title: "You are introduced by email", text: ["When there is a match, each teacher receives the others' names and contact details. That is the only time your details are shared."] },
         { title: "You talk it over and apply", text: ["If you agree, you each apply through the official channel. Close your request once you no longer need it."] }
+      ]
+    },
+    {
+      type: "prose", heading: "How close a match has to be", level: "h2",
+      text: ["Exact matches are rare. There are 25 districts, three subjects, two types of school and two levels, so waiting for a perfect fit means waiting for a long time. Every introduction therefore says how close it actually is, and what is not the same, so that you can judge it yourself."],
+      bullets: [
+        "**Exact.** Same subject, same type of school, same level, and each of you named the other's district.",
+        "**Close.** Each of you named the other's district, but the type of school or the level differs. The email says which.",
+        "**Possible.** One of you asked for a different district in the same province - Galle when the post is in Matara, for instance. Worth a look, not a fit. The email says so plainly.",
+        "**Never.** A different subject. An English post is not a swap for a Mathematics one, so those are never put together."
       ]
     },
     {

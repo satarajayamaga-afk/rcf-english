@@ -4,7 +4,7 @@ Nothing here is code. Every activity is a small block of JSON, and the game
 engines read it. To add a game you write a block; you never touch the
 JavaScript, and you never touch a page.
 
-1. Open the grade file — `grade-1.json` … `grade-5.json`.
+1. Open the grade file — `grade-1.json` … `grade-6.json`.
 2. Find the topic you want, or add a new one.
 3. Copy an existing activity of the type you want and change its content.
 4. Give it an **`id` nobody else has**. Stars are saved against the id, so an id

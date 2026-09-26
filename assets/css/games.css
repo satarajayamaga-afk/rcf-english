@@ -68,6 +68,7 @@ body.gz-playing .gz-page { padding-top: var(--sp-4); }
 [data-theme="meadow"]   { --gz-1: #70e000; --gz-2: #2d9d5c; }
 [data-theme="berry"]    { --gz-1: #f72585; --gz-2: #7209b7; }
 [data-theme="sunset"]   { --gz-1: #ff8c42; --gz-2: #e5383b; }
+[data-theme="ocean"]    { --gz-1: #00b4d8; --gz-2: #0077b6; }
 
 /* Pictures ---------------------------------------------------------------- */
 

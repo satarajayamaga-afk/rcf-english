@@ -1,0 +1,227 @@
+{
+  "_readme": [
+    "GRADE 6 MINI-GAMES",
+    "---------------------------------------------------------------------",
+    "The three games on primary-english/game-zone/grade-6/mini-games/.",
+    "assets/js/grade-6-mini-games.js reads this file, draws one card per",
+    "game, and plays each one with the shared Game Zone engine.",
+    "",
+    "Card fields:  slug, title, skill, blurb, facts, minutes, theme",
+    "Game fields:  id (used to remember stars), type, instructions, and",
+    "              the content for that type:",
+    "",
+    "  vocab-drop   pairs: [{ word, meaning, example? }], perRound?",
+    "  adventure    intro?, scenes: [{ place, story, sentence (with ___),",
+    "               options, answer, tip, explain }]",
+    "  sequence     stories: [{ title, clue?, sentences (in the RIGHT",
+    "               order - the game shuffles them), after? }]",
+    "",
+    "To add words, scenes or stories, add entries here and run build.cmd.",
+    "No JavaScript changes are needed."
+  ],
+  "schemaVersion": 1,
+  "title": "Grade 6 Mini-Games",
+  "theme": "ocean",
+  "games": [
+    {
+      "id": "g6mg-word-drop",
+      "slug": "word-drop",
+      "type": "vocab-drop",
+      "title": "Word Drop",
+      "skill": "Vocabulary",
+      "theme": "ocean",
+      "minutes": 6,
+      "blurb": "Drag each word onto its meaning. Match it and you see the word used in a real sentence.",
+      "facts": ["18 words", "3 rounds", "Drag or tap"],
+      "instructions": "Drag a word onto its meaning - or tap the word, then tap the meaning.",
+      "perRound": 6,
+      "pairs": [
+        { "word": "ancient", "meaning": "very old; from a long time ago", "example": "Sigiriya is an ancient rock fortress." },
+        { "word": "brave", "meaning": "ready to face danger without showing fear", "example": "The brave firefighter carried the kitten to safety." },
+        { "word": "curious", "meaning": "wanting to know or learn about something", "example": "The curious boy asked the guide a hundred questions." },
+        { "word": "enormous", "meaning": "very, very big", "example": "An elephant is an enormous animal." },
+        { "word": "fragile", "meaning": "easily broken or damaged", "example": "Carry the glass vase carefully - it is fragile." },
+        { "word": "generous", "meaning": "happy to give and share with others", "example": "Our generous neighbour shared her mangoes with the whole lane." },
+        { "word": "harvest", "meaning": "the time when crops are cut and gathered", "example": "The farmers celebrated after the paddy harvest." },
+        { "word": "journey", "meaning": "a trip from one place to another", "example": "The train journey to Ella took seven hours." },
+        { "word": "narrow", "meaning": "not wide; with little space from side to side", "example": "The path up the mountain was steep and narrow." },
+        { "word": "protect", "meaning": "to keep someone or something safe from harm", "example": "A helmet protects your head when you ride a bicycle." },
+        { "word": "rapid", "meaning": "happening or moving very fast", "example": "After the heavy rain, the river became rapid and brown." },
+        { "word": "scarce", "meaning": "hard to find because there is not enough", "example": "Water becomes scarce in the dry season." },
+        { "word": "timid", "meaning": "shy and easily frightened", "example": "The timid deer ran back into the forest." },
+        { "word": "vanish", "meaning": "to disappear suddenly", "example": "The sun vanished behind the dark clouds." },
+        { "word": "wander", "meaning": "to walk around slowly, without a plan", "example": "We wandered along Galle Face Green in the evening." },
+        { "word": "delicious", "meaning": "tasting or smelling very good", "example": "Amma's kiribath is delicious." },
+        { "word": "festival", "meaning": "a special time when people celebrate", "example": "Vesak is a festival of lanterns and lights." },
+        { "word": "gloomy", "meaning": "dark, dull and a little sad", "example": "It was a gloomy, rainy afternoon." }
+      ]
+    },
+    {
+      "id": "g6mg-grammar-adventure",
+      "slug": "grammar-adventure",
+      "type": "adventure",
+      "title": "The Lost Temple Bell",
+      "skill": "Grammar",
+      "theme": "berry",
+      "minutes": 7,
+      "blurb": "Help Nimal and Sita follow an old map. Choose the right word at every stop to move along the trail.",
+      "facts": ["10 stops", "Multiple choice", "A tip for every mistake"],
+      "instructions": "Read each part of the story, then choose the word that fits the gap.",
+      "intro": "Nimal and his sister Sita love mysteries. One rainy afternoon, something in Grandfather's cupboard starts a real adventure.",
+      "scenes": [
+        {
+          "place": "Grandfather's cupboard",
+          "story": "Behind a pile of books, Sita notices a roll of yellow paper tied with string.",
+          "sentence": "Inside the roll, the children find ___ old map.",
+          "options": ["a", "an", "the"],
+          "answer": "an",
+          "tip": "Say the next word aloud. Does 'old' begin with a vowel sound or a consonant sound?",
+          "explain": "We use 'an' before a vowel sound: an old map, an egg, an umbrella."
+        },
+        {
+          "place": "The old map",
+          "story": "The paper is thin and the ink has faded to brown.",
+          "sentence": "The map ___ very old, and its edges are torn.",
+          "options": ["is", "are", "am"],
+          "answer": "is",
+          "tip": "'The map' is one thing. Which verb goes with one thing?",
+          "explain": "'The map' is singular, so we use 'is'. We use 'are' with plurals: the maps are old."
+        },
+        {
+          "place": "School",
+          "story": "Nimal and Sita want an adult to help them read the map.",
+          "sentence": "Yesterday, they ___ the map to their teacher, Mr Perera.",
+          "options": ["show", "shows", "showed"],
+          "answer": "showed",
+          "tip": "Look at the first word. 'Yesterday' tells you the action is already finished.",
+          "explain": "'Yesterday' shows the past, so we use the past tense: show becomes showed."
+        },
+        {
+          "place": "The waterfall",
+          "story": "Mr Perera studies the map carefully and points to a tiny drawing of falling water.",
+          "sentence": "\"Look! There is a secret cave ___ the waterfall,\" he says.",
+          "options": ["behind", "during", "since"],
+          "answer": "behind",
+          "tip": "We need a word that tells us WHERE the cave is.",
+          "explain": "'Behind' is a preposition of place. 'During' and 'since' are about time."
+        },
+        {
+          "place": "Packing up",
+          "story": "On Saturday morning, the children get ready for the long walk.",
+          "sentence": "They pack two ___: one for water and one for food.",
+          "options": ["bag", "bags", "bag's"],
+          "answer": "bags",
+          "tip": "'Two' means more than one. How do we show more than one bag?",
+          "explain": "After 'two' we need a plural noun. Most nouns just add -s: one bag, two bags."
+        },
+        {
+          "place": "The jungle path",
+          "story": "Soon the wide village road turns into a jungle track.",
+          "sentence": "The jungle path is ___ than the village road.",
+          "options": ["narrow", "narrower", "narrowest"],
+          "answer": "narrower",
+          "tip": "The sentence compares TWO things, and it uses the word 'than'.",
+          "explain": "To compare two things we use the comparative form with 'than': narrow becomes narrower than."
+        },
+        {
+          "place": "A strange noise",
+          "story": "Suddenly, the leaves shake and a branch cracks above them.",
+          "sentence": "\"Listen!\" whispers Sita. \"Somebody ___ coming!\"",
+          "options": ["is", "are", "were"],
+          "answer": "is",
+          "tip": "'Somebody' means one person, and the noise is happening right now.",
+          "explain": "'Somebody' is singular and the action is happening now, so we say 'Somebody is coming'. (It was only a friendly monkey!)"
+        },
+        {
+          "place": "Tired legs",
+          "story": "Nimal's legs ache after the long climb, but the cave is close now.",
+          "sentence": "Nimal is tired, ___ he keeps walking.",
+          "options": ["but", "because", "so"],
+          "answer": "but",
+          "tip": "The two ideas are opposites: feeling tired, and still walking. Which word joins opposite ideas?",
+          "explain": "'But' joins two ideas that contrast: tired, but still walking."
+        },
+        {
+          "place": "The secret cave",
+          "story": "Behind the curtain of water, the cave is dark and cool.",
+          "sentence": "Inside the cave, ___ find a bronze bell covered in dust.",
+          "options": ["they", "them", "their"],
+          "answer": "they",
+          "tip": "We need a word for the people DOING the action - the subject of the sentence.",
+          "explain": "'They' is a subject pronoun: it does the action. 'Them' is an object pronoun, and 'their' shows belonging."
+        },
+        {
+          "place": "The museum",
+          "story": "The children carry the heavy bell carefully back down the mountain.",
+          "sentence": "The next day, the children ___ the bell to the museum, and everyone cheered.",
+          "options": ["take", "took", "taken"],
+          "answer": "took",
+          "tip": "'Cheered' tells you the story is in the past. Which form is the simple past?",
+          "explain": "'Take' is an irregular verb: take becomes took. ('Taken' needs a helper, as in 'have taken'.) You found the lost temple bell!"
+        }
+      ]
+    },
+    {
+      "id": "g6mg-story-scramble",
+      "slug": "story-scramble",
+      "type": "sequence",
+      "title": "Story Scramble",
+      "skill": "Reading",
+      "theme": "meadow",
+      "minutes": 6,
+      "blurb": "The sentences of four short texts are mixed up. Drag them back into the right order.",
+      "facts": ["4 texts", "Drag or use arrows", "Time and order words"],
+      "instructions": "Drag the sentences into the right order, or use the arrow buttons. Then press Check my order.",
+      "stories": [
+        {
+          "title": "The Thirsty Crow",
+          "clue": "Look for time words such as 'One hot day' and 'At last'.",
+          "sentences": [
+            "One hot day, a crow was very thirsty.",
+            "He flew from place to place looking for water.",
+            "At last he found a pot with a little water at the bottom.",
+            "He dropped pebbles into the pot, one by one.",
+            "The water rose to the top, and the crow drank happily."
+          ],
+          "after": "Moral: where there is a will, there is a way."
+        },
+        {
+          "title": "Sunil's Sports Day",
+          "clue": "Follow the day from morning to afternoon.",
+          "sentences": [
+            "On Friday morning, Sunil woke up early and put on his house T-shirt.",
+            "At school, the teacher called the runners to the starting line.",
+            "When the whistle blew, Sunil ran as fast as he could.",
+            "He crossed the finishing line just before his friend Kavin.",
+            "In the afternoon, the principal gave him a gold medal."
+          ],
+          "after": "Words like 'On Friday morning', 'When' and 'In the afternoon' show the reader the order of events."
+        },
+        {
+          "title": "How to Plant a Seed",
+          "clue": "Instructions use order words: First, Next, Then, After that, Finally.",
+          "sentences": [
+            "First, fill a small pot with soil.",
+            "Next, make a hole in the soil with your finger.",
+            "Then, put the seed in the hole and cover it.",
+            "After that, water the soil gently.",
+            "Finally, keep the pot in a sunny place and watch it grow."
+          ],
+          "after": "Order words make instructions easy to follow. Try using them in your own writing."
+        },
+        {
+          "title": "The Lion and the Mouse",
+          "clue": "Think about cause and effect: each event makes the next one happen.",
+          "sentences": [
+            "A lion was sleeping under a tree when a little mouse ran across his nose.",
+            "The angry lion caught the mouse, but she begged him to let her go.",
+            "The lion laughed and set the tiny mouse free.",
+            "A few days later, the lion was trapped in a hunter's net.",
+            "The mouse heard him roar and chewed through the ropes to save him."
+          ],
+          "after": "Moral: even the smallest friend can be a great help."
+        }
+      ]
+    }
+  ]
+}

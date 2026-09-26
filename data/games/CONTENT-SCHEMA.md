@@ -24,7 +24,7 @@ every game in it plays with no connection.
 | File | What it is |
 |---|---|
 | `index.json` | the catalogue: which packs exist, where they are, the theme colours |
-| `grade-1.json` … `grade-5.json` | the Pupil's Book packs |
+| `grade-1.json` … `grade-6.json` | the Pupil's Book / syllabus packs |
 | `global-beginner.json` … `global-pre-intermediate.json` | the Global English packs |
 | `../../assets/img/games/*.svg` | the illustration set, about 0.6 KB each |
 

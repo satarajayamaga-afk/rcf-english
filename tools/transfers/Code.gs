@@ -67,11 +67,46 @@ function titlesFor(title) {
 // never matched, rather than matched on a guess.
 var SUBJECTS = ["English", "Mathematics", "Science"];
 
-// Two teachers are only matched if these answers are the same for both. A
-// Maths teacher is not a swap for an English one, a primary teacher is not a
-// swap for a secondary one, and a national school post is not a provincial
-// one. Remove a question from this list to stop requiring it to match.
-var MUST_MATCH = [Q.subject, Q.schoolType, Q.level];
+// ------------------------------------------------------- how strict to be
+//
+// Only the subject is ever required. A Mathematics teacher is not a swap for
+// an English one and never can be, so that stays absolute.
+//
+// Everything else is scored rather than required. Insisting on the same
+// school type AND the same level AND a district each side had listed meant
+// almost nobody matched: with a few hundred teachers spread over 25
+// districts, an exact four-way coincidence is rare. A near match that two
+// teachers can look at and reject costs them one email; a match that is
+// never reported costs them the transfer.
+var MUST_MATCH = [Q.subject];
+
+// What a reported match is called, and how good it has to be to be sent.
+// A group scores by what its members have in common; the worst pair in the
+// group decides the grade.
+var GRADE_EXACT = "exact";       // same school type and level, districts each asked for
+var GRADE_CLOSE = "close";       // districts each asked for, but type or level differs
+var GRADE_POSSIBLE = "possible"; // districts are in a province the other asked for
+
+// The 25 districts by province. A teacher who would accept Galle will often
+// accept Matara, and would rather be asked than not told. Used only to
+// widen the search - the email always names the real district.
+var PROVINCES = {
+  "Western": ["Colombo", "Gampaha", "Kalutara"],
+  "Central": ["Kandy", "Matale", "Nuwara Eliya"],
+  "Southern": ["Galle", "Matara", "Hambantota"],
+  "Northern": ["Jaffna", "Kilinochchi", "Mannar", "Vavuniya", "Mullaitivu"],
+  "Eastern": ["Batticaloa", "Ampara", "Trincomalee"],
+  "North Western": ["Kurunegala", "Puttalam"],
+  "North Central": ["Anuradhapura", "Polonnaruwa"],
+  "Uva": ["Badulla", "Monaragala"],
+  "Sabaragamuwa": ["Ratnapura", "Kegalle"]
+};
+function provinceOf(district) {
+  for (var name in PROVINCES) {
+    if (PROVINCES[name].indexOf(district) !== -1) return name;
+  }
+  return "";
+}
 
 // Entries older than this are ignored until the teacher renews them by
 // editing their response. An old request is usually no longer wanted.
@@ -113,10 +148,9 @@ function findAndReportMatches() {
 
   for (var i = 0; i < teachers.length; i++) {
     for (var j = i + 1; j < teachers.length; j++) {
-      var a = teachers[i], b = teachers[j];
-      if (compatible([a, b]) && wantsPlaceOf(a, b) && wantsPlaceOf(b, a)) {
-        found.push([a, b]);
-      }
+      var pair = [teachers[i], teachers[j]];
+      var graded = gradeGroup(pair);
+      if (graded) found.push({ group: pair, grade: graded.grade, differences: graded.differences });
     }
   }
   // Three-way swaps too. A teacher can be in a pair and in a cycle at the same
@@ -125,22 +159,26 @@ function findAndReportMatches() {
     for (var y = 0; y < teachers.length; y++) {
       for (var z = 0; z < teachers.length; z++) {
         if (x === y || y === z || x === z) continue;
-        var A = teachers[x], B = teachers[y], C = teachers[z];
+        var ring = [teachers[x], teachers[y], teachers[z]];
         // Report each three-way cycle once: start it at the earliest row.
-        if (!(A.row < B.row && A.row < C.row)) continue;
-        if (!compatible([A, B, C])) continue;
-        if (wantsPlaceOf(A, B) && wantsPlaceOf(B, C) && wantsPlaceOf(C, A)) {
-          found.push([A, B, C]);
-        }
+        if (!(ring[0].row < ring[1].row && ring[0].row < ring[2].row)) continue;
+        var gradedRing = gradeGroup(ring);
+        if (gradedRing) found.push({ group: ring, grade: gradedRing.grade, differences: gradedRing.differences });
       }
     }
   }
 
-  found.forEach(function (group) {
-    var key = matchKey(group);
+  // Best first, so that if a teacher is in several groups the exact one
+  // arrives before the maybes.
+  var order = {};
+  order[GRADE_EXACT] = 0; order[GRADE_CLOSE] = 1; order[GRADE_POSSIBLE] = 2;
+  found.sort(function (a, b) { return order[a.grade] - order[b.grade]; });
+
+  found.forEach(function (match) {
+    var key = matchKey(match.group);
     if (sent[key]) return;
-    sendMatchEmail(group);
-    recordMatch(key, group);
+    sendMatchEmail(match.group, match.grade, match.differences);
+    recordMatch(key, match.group, match.grade);
     sent[key] = true;
   });
 }
@@ -222,9 +260,18 @@ function splitList(cell) {
   return String(cell || "").split(",").map(function (s) { return s.trim(); }).filter(String);
 }
 
+// How well the holder's district suits the mover: "district" if the mover
+// listed it, "province" if the mover listed somewhere else in the same
+// province, and "" if neither. A teacher never "wants" their own district.
 function wantsPlaceOf(mover, holder) {
-  // A teacher never "wants" the district they are already in.
-  return holder.district !== mover.district && mover.wants.indexOf(holder.district) !== -1;
+  if (!holder.district || holder.district === mover.district) return "";
+  if (mover.wants.indexOf(holder.district) !== -1) return "district";
+  var province = provinceOf(holder.district);
+  if (!province) return "";
+  for (var i = 0; i < mover.wants.length; i++) {
+    if (provinceOf(mover.wants[i]) === province) return "province";
+  }
+  return "";
 }
 
 function compatible(group) {
@@ -237,6 +284,39 @@ function compatible(group) {
   return MUST_MATCH.every(function (q) {
     return group.every(function (t) { return t[q] && t[q] === group[0][q]; });
   });
+}
+
+// Grades a ring of teachers - A moves to B's district, B to C's, C to A's -
+// and returns null if it is not a match at all. The weakest link decides:
+// one teacher who only reaches the province, or one difference of level,
+// grades the whole group down, because all of them have to agree to it.
+function gradeGroup(group) {
+  if (!compatible(group)) return null;
+  var grade = GRADE_EXACT;
+  var differences = [];
+  for (var i = 0; i < group.length; i++) {
+    var me = group[i];
+    var next = group[(i + 1) % group.length];
+    var fit = wantsPlaceOf(me, next);
+    if (!fit) return null;
+    if (fit === "province") {
+      grade = GRADE_POSSIBLE;
+      differences.push(me[Q.name] + " did not list " + next.district + ", but asked for " +
+        provinceOf(next.district) + " Province");
+    }
+  }
+  // School type and level are no longer required, but a difference in either
+  // is something both teachers must see before they waste a telephone call.
+  [[Q.schoolType, "school type"], [Q.level, "level taught"]].forEach(function (pair) {
+    var values = group.map(function (t) { return t[pair[0]]; });
+    var same = values.every(function (v) { return v && v === values[0]; });
+    if (!same) {
+      if (grade === GRADE_EXACT) grade = GRADE_CLOSE;
+      differences.push("The " + pair[1] + " is not the same for everybody: " +
+        group.map(function (t) { return t[Q.name] + " (" + (t[pair[0]] || "not given") + ")"; }).join(", "));
+    }
+  });
+  return { grade: grade, differences: differences };
 }
 
 // --------------------------------------------------------------- recording
@@ -274,12 +354,13 @@ function sentMatches() {
   return sent;
 }
 
-function recordMatch(key, group) {
+function recordMatch(key, group, grade) {
   matchSheet().appendRow([
     new Date(),
     key,
     group.map(function (t) { return t[Q.name]; }).join(", "),
-    group.map(function (t) { return t.district; }).join(" -> ")
+    group.map(function (t) { return t.district; }).join(" -> "),
+    grade || ""
   ]);
 }
 
@@ -298,24 +379,41 @@ function describe(t) {
   return lines.join("\n");
 }
 
-function sendMatchEmail(group) {
+function sendMatchEmail(group, grade, differences) {
   var three = group.length === 3;
   var route = group.map(function (t, i) {
     var next = group[(i + 1) % group.length];
     return t[Q.name] + " (" + t.district + ") would move to " + next.district;
   }).join("\n");
 
+  // Said plainly at the top, because a teacher deciding whether to telephone
+  // a stranger needs to know how close this actually is.
+  var headline = {};
+  headline[GRADE_EXACT] = "This is an exact match: the same subject, the same type of school and the same level, and each of you asked for the other's district.";
+  headline[GRADE_CLOSE] = "This is a close match, not an exact one. Each of you asked for the other's district, but something else differs - please read the notes below before you decide.";
+  headline[GRADE_POSSIBLE] = "This is a possible match rather than a close one. It is being sent because it is worth a look, not because it fits exactly. Please read the notes below.";
+  var notes = (differences && differences.length)
+    ? ["WHAT IS NOT THE SAME", differences.map(function (d) { return "- " + d; }).join("\n"), ""]
+    : [];
+
   group.forEach(function (me) {
     var others = group.filter(function (t) { return t !== me; });
     var body = [
       "Dear " + me[Q.name] + ",",
       "",
-      three
-        ? "RCF English has found a possible three-way transfer that includes you:"
-        : "RCF English has found a teacher whose transfer request matches yours:",
+      grade === GRADE_EXACT
+        ? (three
+          ? "RCF English has found a three-way transfer that matches your request:"
+          : "RCF English has found a teacher whose transfer request matches yours:")
+        : (three
+          ? "RCF English has found a three-way transfer that may suit you:"
+          : "RCF English has found a teacher whose request may suit yours:"),
       "",
       route,
       "",
+      headline[grade] || headline[GRADE_POSSIBLE],
+      ""
+    ].concat(notes).concat([
       "Contact details of the other " + (three ? "teachers" : "teacher") + ":",
       "",
       others.map(describe).join("\n\n"),
@@ -333,11 +431,14 @@ function sendMatchEmail(group) {
       SITE_PAGE,
       "",
       "RCF English"
-    ].join("\n");
+    ]).join("\n");
 
+    var kind = grade === GRADE_EXACT ? "" : (grade === GRADE_CLOSE ? "A close match" : "A possible match");
     MailApp.sendEmail({
       to: me.email,
-      subject: three ? "A possible three-way transfer for you - RCF English" : "A possible mutual transfer for you - RCF English",
+      subject: kind
+        ? kind + (three ? " - three-way transfer" : " for your transfer request") + " - RCF English"
+        : (three ? "A three-way transfer that matches yours - RCF English" : "A teacher whose request matches yours - RCF English"),
       body: body,
       name: "RCF English Mutual Transfers",
       replyTo: contactAddress()

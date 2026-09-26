@@ -125,23 +125,76 @@ check("a WhatsApp number is passed on when given", () => {
   if (!toB.body.includes("0771234567")) throw new Error("the number was not included");
 });
 
+// ---- matching is graded, not all-or-nothing ---------------------------
+check("an exact match says so, and lists no differences", () => {
+  const r = run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"] }),
+    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"] })
+  ]);
+  eq(r.sent.length, 2, "emails");
+  if (!/exact match/.test(r.sent[0].body)) throw new Error("not described as exact");
+  if (/WHAT IS NOT THE SAME/.test(r.sent[0].body)) throw new Error("differences listed on an exact match");
+  eq(r.matches[0][4], "exact", "grade recorded");
+});
+
+check("a different school type is now matched, and the difference is named", () => {
+  const r = run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], schoolType: "National school" }),
+    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"], schoolType: "Provincial school" })
+  ]);
+  eq(r.sent.length, 2, "emails");
+  eq(r.matches[0][4], "close", "grade");
+  if (!/school type is not the same/.test(r.sent[0].body)) throw new Error("the difference was not named");
+  if (!/National school/.test(r.sent[0].body)) throw new Error("the actual school types are not shown");
+});
+
+check("a different level is now matched, and the difference is named", () => {
+  const r = run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], level: "Primary (Grades 1 to 5)" }),
+    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"] })
+  ]);
+  eq(r.sent.length, 2, "emails");
+  eq(r.matches[0][4], "close", "grade");
+  if (!/level taught is not the same/.test(r.sent[0].body)) throw new Error("the difference was not named");
+});
+
+check("a district in a province the other asked for is a possible match", () => {
+  // Galle and Matara are both Southern Province. A asked for Galle; B is in
+  // Matara and asked for Kandy.
+  const r = run([
+    row({ email: "a@x.com", name: "Anoma", district: "Kandy", wants: ["Galle"] }),
+    row({ email: "b@x.com", name: "Bimal", district: "Matara", wants: ["Kandy"] })
+  ]);
+  eq(r.sent.length, 2, "emails");
+  eq(r.matches[0][4], "possible", "grade");
+  if (!/possible match/.test(r.sent[0].body)) throw new Error("not described as possible");
+  if (!/did not list Matara/.test(r.sent[0].body)) throw new Error("the province reason was not explained");
+  if (!/Southern Province/.test(r.sent[0].body)) throw new Error("the province was not named");
+});
+
+check("a district in another province is still not a match", () => {
+  // A asked only for Galle (Southern); B is in Jaffna (Northern).
+  eq(run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"] }),
+    row({ email: "b@x.com", district: "Jaffna", wants: ["Kandy"] })
+  ]).sent.length, 0, "emails");
+});
+
+check("the weakest link grades the whole group", () => {
+  const r = run([
+    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], schoolType: "National school" }),
+    row({ email: "b@x.com", district: "Matara", wants: ["Kandy"] })
+  ]);
+  // Province-level reach AND a school-type difference: the worse one wins.
+  eq(r.matches[0][4], "possible", "grade");
+});
+
 check("a different subject is never matched", () => {
   const r = run([
     row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], subject: "English" }),
     row({ email: "b@x.com", district: "Galle", wants: ["Kandy"], subject: "Mathematics" })
   ]);
   eq(r.sent.length, 0, "emails");
-});
-
-check("a different school type or level is never matched", () => {
-  eq(run([
-    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], schoolType: "National school" }),
-    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"], schoolType: "Provincial school" })
-  ]).sent.length, 0, "school type");
-  eq(run([
-    row({ email: "a@x.com", district: "Kandy", wants: ["Galle"], level: "Primary (Grades 1 to 5)" }),
-    row({ email: "b@x.com", district: "Galle", wants: ["Kandy"] })
-  ]).sent.length, 0, "level");
 });
 
 check("one-sided interest is not a match", () => {

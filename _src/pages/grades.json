@@ -104,7 +104,7 @@
       "slug": "grades/grade-6",
       "title": "Grade 6 English",
       "metaTitle": "Grade 6 English practice, new 2026 syllabus | RCF English",
-      "description": "Three interactive Grade 6 English activities built from the new 2026 syllabus: reading a functional text, filling in a form, and reading a simple poem.",
+      "description": "Three interactive Grade 6 English activities from the 2026 syllabus, plus a Game Zone of grammar sorting and sentence puzzles for nouns, be-verbs, articles and prepositions.",
       "keywords": "grade 6 english, new 2026 syllabus, functional text, form filling, simple poem, competency levels",
       "kicker": "Grade 6-11 Resources",
       "kind": "page",
@@ -149,6 +149,32 @@
             "g06-functional-texts",
             "g06-forms-and-lists",
             "g06-poems"
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "game-zone",
+          "heading": "Grade 6 Game Zone",
+          "eyebrow": "Grammar games",
+          "intro": [
+            "Short drag-and-drop and word-order games for the grammar focuses Grade 6 still needs: nouns, *is / are / was / were*, articles and prepositions. They sit beside the practice activities above — not instead of them."
+          ],
+          "columns": "2",
+          "items": [
+            {
+              "title": "Open Grade 6 Game Zone",
+              "icon": "GZ",
+              "text": "Twelve grammar games: sorting, missing words and sentence puzzles. Free, on a phone, and stars stay on your device.",
+              "url": "primary-english/game-zone/grade-6/",
+              "more": "Play the games"
+            },
+            {
+              "title": "Teacher Mode",
+              "icon": "TM",
+              "text": "Open any Grade 6 game large on a classroom screen. Choose the topic, then the game.",
+              "url": "primary-english/game-zone/teacher/",
+              "more": "Open Teacher Mode"
+            }
           ]
         },
         {
@@ -204,6 +230,11 @@
           "variant": "tint",
           "columns": "3",
           "items": [
+            {
+              "title": "Grade 6 Game Zone",
+              "text": "Grammar sorting and sentence puzzles.",
+              "url": "primary-english/game-zone/grade-6/"
+            },
             {
               "title": "Grade 7",
               "text": "Continuous tenses and modals.",

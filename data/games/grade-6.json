@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "grade": 6,
+  "title": "Grade 6",
+  "theme": "ocean",
+  "blurb": "Grammar puzzles: nouns, verbs, articles, prepositions and sentence order.",
+  "icon": "icon-puzzle.svg",
+  "book": {
+    "title": "Grade 6 English (2026 syllabus)",
+    "publisher": "National Institute of Education / Educational Publications Department",
+    "note": "Practice games follow Grade 6 grammar focuses used in RCF worksheets (nouns, be-verbs, articles, prepositions). Pupil's Book unit games will be added when the 2026 book units are mapped."
+  },
+  "unitsStatus": "awaiting-source",
+  "units": [],
+  "topics": [
+    {
+      "id": "grammar-nouns",
+      "title": "Common and Proper Nouns",
+      "icon": "icon-abc.svg",
+      "activities": [
+        {
+          "id": "g6-nouns-sort",
+          "type": "sort",
+          "title": "Sort the Nouns",
+          "instructions": "Tap or drag each word into Common noun or Proper noun.",
+          "minutes": 5,
+          "buckets": [
+            { "id": "common", "title": "Common noun", "icon": "book.svg" },
+            { "id": "proper", "title": "Proper noun", "icon": "map-srilanka.svg" }
+          ],
+          "items": [
+            { "text": "rabbit", "picture": "rabbit.svg", "bucket": "common" },
+            { "text": "teacher", "picture": "teacher.svg", "bucket": "common" },
+            { "text": "window", "picture": "window.svg", "bucket": "common" },
+            { "text": "river", "picture": "water.svg", "bucket": "common" },
+            { "text": "Kamal", "picture": "boy.svg", "bucket": "proper" },
+            { "text": "Kandy", "picture": "temple.svg", "bucket": "proper" },
+            { "text": "Monday", "picture": "calendar.svg", "bucket": "proper" },
+            { "text": "Sri Lanka", "picture": "map-srilanka.svg", "bucket": "proper" },
+            { "text": "Nimali", "picture": "girl.svg", "bucket": "proper" },
+            { "text": "school", "picture": "school.svg", "bucket": "common" }
+          ]
+        },
+        {
+          "id": "g6-capitals-order",
+          "type": "order",
+          "title": "Fix the Capitals",
+          "instructions": "Tap the words in order to rebuild each sentence with the right capitals.",
+          "minutes": 5,
+          "sentences": [
+            { "words": ["We", "visited", "Galle", "in", "April."], "hint": "Names of places and months need capitals." },
+            { "words": ["My", "brother", "studies", "at", "Ananda", "College."], "hint": "School names are proper nouns." },
+            { "words": ["Sri", "Lanka", "is", "an", "island."], "hint": "Start with Sri." },
+            { "words": ["Mrs", "Perera", "teaches", "English."], "hint": "People's names and titles need capitals." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-verbs",
+      "title": "is, are, was, were",
+      "icon": "icon-target.svg",
+      "activities": [
+        {
+          "id": "g6-be-present-missing",
+          "type": "missing",
+          "title": "is or are?",
+          "instructions": "Tap the verb that fits the gap.",
+          "minutes": 4,
+          "items": [
+            { "picture": "boy.svg", "sentence": "The boy ___ hungry.", "options": ["is", "are"], "answer": 0 },
+            { "picture": "shoes.svg", "sentence": "My shoes ___ new.", "options": ["is", "are"], "answer": 1 },
+            { "picture": "bird.svg", "sentence": "There ___ a bird on the roof.", "options": ["is", "are"], "answer": 0 },
+            { "picture": "playground.svg", "sentence": "The children ___ in the garden.", "options": ["is", "are"], "answer": 1 },
+            { "picture": "rice.svg", "sentence": "Rice and curry ___ my favourite meal.", "options": ["is", "are"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "g6-be-past-missing",
+          "type": "missing",
+          "title": "was or were?",
+          "instructions": "Tap the verb that fits the gap.",
+          "minutes": 4,
+          "items": [
+            { "picture": "market.svg", "sentence": "The market ___ crowded yesterday.", "options": ["was", "were"], "answer": 0 },
+            { "picture": "school.svg", "sentence": "We ___ late for school.", "options": ["was", "were"], "answer": 1 },
+            { "picture": "girl.svg", "sentence": "She ___ very kind to me.", "options": ["was", "were"], "answer": 0 },
+            { "picture": "book.svg", "sentence": "The books ___ on the shelf.", "options": ["was", "were"], "answer": 1 },
+            { "picture": "rain.svg", "sentence": "It ___ raining all night.", "options": ["was", "were"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "g6-be-sentence-order",
+          "type": "order",
+          "title": "Build with is / are",
+          "instructions": "Tap the words in the right order.",
+          "minutes": 4,
+          "sentences": [
+            { "words": ["The", "boy", "is", "hungry."], "hint": "Start with The." },
+            { "words": ["My", "shoes", "are", "new."], "hint": "Start with My." },
+            { "words": ["There", "is", "a", "bird", "on", "the", "roof."], "hint": "Start with There." },
+            { "words": ["The", "children", "are", "in", "the", "garden."], "hint": "Start with The." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-articles",
+      "title": "a, an and the",
+      "icon": "icon-brain.svg",
+      "activities": [
+        {
+          "id": "g6-articles-missing",
+          "type": "missing",
+          "title": "a, an or the?",
+          "instructions": "Tap the article that fits. Listen for the sound, not only the letter.",
+          "minutes": 5,
+          "items": [
+            { "picture": "elephant.svg", "sentence": "I saw ___ elephant at the zoo.", "options": ["a", "an", "the"], "answer": 1 },
+            { "picture": "book.svg", "sentence": "She bought ___ book yesterday.", "options": ["a", "an", "the"], "answer": 0 },
+            { "picture": "clock.svg", "sentence": "We waited for ___ hour.", "options": ["a", "an", "the"], "answer": 1 },
+            { "picture": "school.svg", "sentence": "He goes to ___ university in Colombo.", "options": ["a", "an", "the"], "answer": 0 },
+            { "picture": "orange.svg", "sentence": "Please give me ___ orange.", "options": ["a", "an", "the"], "answer": 1 },
+            { "picture": "cat.svg", "sentence": "I saw a cat. ___ cat was black.", "options": ["A", "An", "The"], "answer": 2 },
+            { "picture": "door.svg", "sentence": "Please shut ___ door.", "options": ["a", "an", "the"], "answer": 2 },
+            { "picture": "bicycle.svg", "sentence": "My father bought ___ old bicycle.", "options": ["a", "an", "the"], "answer": 1 }
+          ]
+        },
+        {
+          "id": "g6-articles-sort",
+          "type": "sort",
+          "title": "a or an?",
+          "instructions": "Tap or drag each noun phrase into a or an.",
+          "minutes": 4,
+          "buckets": [
+            { "id": "a", "title": "a …", "icon": "book.svg" },
+            { "id": "an", "title": "an …", "icon": "apple.svg" }
+          ],
+          "items": [
+            { "text": "book", "picture": "book.svg", "bucket": "a" },
+            { "text": "house", "picture": "house.svg", "bucket": "a" },
+            { "text": "university", "picture": "school.svg", "bucket": "a" },
+            { "text": "elephant", "picture": "elephant.svg", "bucket": "an" },
+            { "text": "umbrella", "picture": "rain.svg", "bucket": "an" },
+            { "text": "orange", "picture": "orange.svg", "bucket": "an" },
+            { "text": "hour", "picture": "clock.svg", "bucket": "an" },
+            { "text": "honest man", "picture": "father.svg", "bucket": "an" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-prepositions",
+      "title": "Prepositions of Place and Time",
+      "icon": "prep-on.svg",
+      "activities": [
+        {
+          "id": "g6-prep-place-missing",
+          "type": "missing",
+          "title": "Where Is It?",
+          "instructions": "Tap the preposition of place that fits.",
+          "minutes": 4,
+          "items": [
+            { "picture": "prep-under.svg", "sentence": "The cat is ___ the table.", "options": ["under", "on", "between"], "answer": 0 },
+            { "picture": "prep-on.svg", "sentence": "The picture hangs ___ the wall.", "options": ["in", "on", "at"], "answer": 1 },
+            { "picture": "boy.svg", "sentence": "She sat ___ Amal and Nimal.", "options": ["behind", "under", "between"], "answer": 2 },
+            { "picture": "schoolbag.svg", "sentence": "The keys are ___ my bag.", "options": ["in", "on", "at"], "answer": 0 },
+            { "picture": "door.svg", "sentence": "He hid ___ the door.", "options": ["between", "behind", "under"], "answer": 1 }
+          ]
+        },
+        {
+          "id": "g6-prep-time-missing",
+          "type": "missing",
+          "title": "in, on or at?",
+          "instructions": "Tap the time preposition that fits. Remember: at a clock time, on a day, in a month.",
+          "minutes": 4,
+          "items": [
+            { "picture": "clock.svg", "sentence": "School starts ___ 7.30.", "options": ["in", "on", "at"], "answer": 2 },
+            { "picture": "temple.svg", "sentence": "We go to the temple ___ Sunday.", "options": ["in", "on", "at"], "answer": 1 },
+            { "picture": "calendar.svg", "sentence": "My birthday is ___ May.", "options": ["in", "on", "at"], "answer": 0 },
+            { "picture": "sun.svg", "sentence": "It is cold ___ the morning.", "options": ["in", "on", "at"], "answer": 0 },
+            { "picture": "bus.svg", "sentence": "The bus leaves ___ night.", "options": ["in", "on", "at"], "answer": 2 }
+          ]
+        },
+        {
+          "id": "g6-prep-sort",
+          "type": "sort",
+          "title": "Place or Time?",
+          "instructions": "Tap or drag each phrase into Place or Time.",
+          "minutes": 4,
+          "buckets": [
+            { "id": "place", "title": "Place", "icon": "house.svg" },
+            { "id": "time", "title": "Time", "icon": "clock.svg" }
+          ],
+          "items": [
+            { "text": "under the table", "picture": "prep-under.svg", "bucket": "place" },
+            { "text": "on the wall", "picture": "prep-on.svg", "bucket": "place" },
+            { "text": "behind the door", "picture": "door.svg", "bucket": "place" },
+            { "text": "in my bag", "picture": "schoolbag.svg", "bucket": "place" },
+            { "text": "at 7.30", "picture": "clock.svg", "bucket": "time" },
+            { "text": "on Sunday", "picture": "calendar.svg", "bucket": "time" },
+            { "text": "in May", "picture": "calendar.svg", "bucket": "time" },
+            { "text": "at night", "picture": "moon.svg", "bucket": "time" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentence-building",
+      "title": "Sentence Building",
+      "icon": "icon-blocks.svg",
+      "activities": [
+        {
+          "id": "g6-sentence-order",
+          "type": "order",
+          "title": "Rebuild the Sentence",
+          "instructions": "Tap the words in order. Read it back to check it sounds right.",
+          "minutes": 5,
+          "sentences": [
+            { "words": ["A", "new", "pupil", "joined", "our", "class", "on", "Tuesday."], "hint": "Start with A." },
+            { "words": ["The", "lights", "went", "out", "just", "as", "we", "sat", "down."], "hint": "Start with The." },
+            { "words": ["Please", "shut", "the", "door."], "hint": "Start with Please." },
+            { "words": ["We", "ate", "by", "candlelight", "for", "an", "hour."], "hint": "Start with We." },
+            { "words": ["She", "sat", "beside", "me", "because", "the", "seat", "was", "empty."], "hint": "Start with She." }
+          ]
+        },
+        {
+          "id": "g6-grammar-quiz",
+          "type": "quiz",
+          "title": "Quick Grammar Check",
+          "instructions": "Read the question. Tap the right answer.",
+          "minutes": 4,
+          "questions": [
+            { "picture": "map-srilanka.svg", "ask": "Which word is a proper noun?", "options": ["island", "Sri Lanka", "river"], "answer": 1 },
+            { "picture": "shoes.svg", "ask": "Choose the correct sentence.", "options": ["My shoes is new.", "My shoes are new.", "My shoes was new."], "answer": 1 },
+            { "picture": "elephant.svg", "ask": "Which article fits before 'elephant'?", "options": ["a", "an", "the (always)"], "answer": 1 },
+            { "picture": "clock.svg", "ask": "School starts ___ 7.30.", "options": ["in", "on", "at"], "answer": 2 },
+            { "picture": "calendar.svg", "ask": "My birthday is ___ May.", "options": ["in", "on", "at"], "answer": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

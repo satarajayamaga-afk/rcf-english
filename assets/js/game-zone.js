@@ -3,7 +3,7 @@
 
    Three jobs, decided by a data attribute the build script writes:
 
-     data-game-zone="hub"      the five grade doors
+     data-game-zone="hub"      the grade doors
      data-game-zone="grade"    one grade: its topics, its games, and the player
      data-game-zone="teacher"  Teacher Mode: grade, then topic, then game,
                                opened large for a classroom screen
@@ -113,7 +113,7 @@ function unitActivities(unit) {
 
 async function renderHub(mount) {
   const grades = [];
-  for (let n = 1; n <= 5; n++) {
+  for (let n = 1; n <= 6; n++) {
     const g = await loadGrade(n);
     if (g) grades.push(g);
   }
@@ -331,7 +331,7 @@ async function renderPack(mount, packId) {
 
 async function renderTeacher(mount) {
   const grades = [];
-  for (let n = 1; n <= 5; n++) {
+  for (let n = 1; n <= 6; n++) {
     const g = await loadGrade(n);
     if (g) grades.push(g);
   }

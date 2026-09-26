@@ -150,10 +150,22 @@ to RCF English; it goes on the website page.
 
 - **Who can see the answers:** only you, in the sheet. Teachers see only the
   contact details of a teacher they are matched with.
-- **Two teachers are matched only if** each teaches in a district the other
-  would accept, and their subject, school type and level are the same. Medium and
-  service are shown in the email for them to judge. To change what must
-  match, edit `MUST_MATCH` near the top of the script.
+- **How strict the matching is.** Only the **subject** must be the same: an
+  English post is never offered as a swap for a Mathematics one. Everything
+  else is weighed, because demanding a perfect fit across 25 districts, two
+  school types and two levels means almost nobody is ever introduced. Each
+  introduction is graded, and the email says which it is and what differs:
+  - **exact** - same school type and level, and each teacher named the
+    other's district;
+  - **close** - each named the other's district, but the school type or the
+    level differs;
+  - **possible** - one of them asked for another district in the same
+    province, such as Galle when the post is in Matara.
+
+  The grade is recorded in the **Matches sent** tab. To go back to strict
+  matching, put `Q.schoolType` and `Q.level` back into `MUST_MATCH` near the
+  top of the script; to stop province-level suggestions, make
+  `wantsPlaceOf` return `""` instead of `"province"`.
 - **Three-way swaps** are found too: A to B's district, B to C's, C to A's.
 - **Requests expire after 180 days.** A teacher renews by editing and
   resubmitting their response. Change `EXPIRY_DAYS` to alter this.
