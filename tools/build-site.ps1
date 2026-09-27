@@ -1614,12 +1614,16 @@ function RenderBlock($block) {
             # invented: when the list is empty the section says so plainly
             # instead of showing pretend products.
             # 'category' limits the list to student or teacher resources.
-            # Leave it out to show every published resource.
+            # 'resourceType' limits it to one kind, such as Presentations, so
+            # a page can hold a library of just those. Leave both out to show
+            # every published resource.
             $wantCat = [string](P $block 'category')
+            $wantKind = [string](P $block 'resourceType')
             $items = @()
             foreach ($p in $premiumProducts) {
                 if ((P $p 'published' $true) -ne $true) { continue }
                 if ($wantCat -and ([string](P $p 'category') -ne $wantCat)) { continue }
+                if ($wantKind -and ([string](P $p 'resourceType') -ne $wantKind)) { continue }
                 $items += $p
             }
 

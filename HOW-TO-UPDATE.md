@@ -604,6 +604,67 @@ entry — keeping it means you can run the same offer again later.
 
 ---
 
+## Task 8a — Add a presentation pack
+
+Presentation packs are made in Canva, kept in Google Drive, and listed on
+**Premium Resources → Classroom Presentations**. The slides never go into this
+website: the page is the shop window, and the Drive link is sent to the buyer
+after payment.
+
+### Making the deck
+
+1. Build it in Canva. One deck for one lesson or one unit.
+2. Export it **twice**: once as **PDF** (so it opens on any classroom
+   computer, with no font surprises) and once as **PowerPoint (.pptx)** if you
+   want teachers to be able to edit it.
+3. Put both files in a folder in your Drive, one folder per pack.
+4. **Check the sharing before you sell it.** Right-click the folder →
+   Share → *Anyone with the link* → **Viewer**, never Editor. A pack shared
+   as Editor can be altered or deleted by any buyer.
+
+### Listing it on the site
+
+Add an entry to **`data/premium-products.json`**, inside `products`:
+
+```json
+{
+  "id": "grade-6-present-continuous-slides",
+  "code": "TCH-P01",
+  "category": "teacher",
+  "resourceType": "Presentations",
+  "title": "Grade 6: Present Continuous, presentation pack",
+  "grade": "Grades 6-9",
+  "skill": "Grammar",
+  "purpose": "Teaching",
+  "quantity": "24 slides",
+  "audience": "Grade 6 English teachers",
+  "description": "Two or three plain sentences about what the deck covers.",
+  "format": "PDF and PowerPoint",
+  "price": "Contact us for the current price",
+  "source": "RCF English",
+  "published": true
+}
+```
+
+`resourceType` must read exactly **`Presentations`** — that is what puts it on
+the presentations page rather than only in the general teacher list.
+
+Then `check.cmd`, then `build.cmd`. Leave `price` as it stands until you have
+decided a figure: nothing on this site invents a price.
+
+### ⚠ Two things to check before selling a Canva deck
+
+- **Canva's licence.** Canva's Content Licence Agreement limits reselling
+  designs whose value lies mainly in Canva's own stock photographs, icons or
+  templates. Slides you have written the content for are normally fine;
+  a lightly edited template is not. Read the licence yourself before pricing
+  anything - this is a commercial risk, not a technical one.
+- **Nothing copied.** A deck that reproduces pages from a Pupil's Book, a past
+  paper or a published coursebook cannot be sold, or given away, whatever the
+  licence says about Canva's own elements.
+
+---
+
 ## Task 8b — Google advertisements (AdSense)
 
 This is different from Task 8. Task 8 is our own page of offers and paid

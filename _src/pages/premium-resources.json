@@ -13,7 +13,6 @@
     "Note that teacher-resources/ is the FREE teacher area and is a",
     "different thing from premium-resources/teachers/. Both pages say so."
   ],
-
   "pages": [
     {
       "slug": "premium-resources",
@@ -23,12 +22,23 @@
       "keywords": "premium english resources, worksheet collections, lesson plan collections, model papers, revision packs, Sri Lanka",
       "kicker": "Paid resources",
       "kind": "page",
-      "backTo": { "label": "Home", "url": "" },
+      "backTo": {
+        "label": "Home",
+        "url": ""
+      },
       "hero": {
         "text": "Download carefully prepared resource collections for classroom teaching, independent practice, revision and assessment.",
         "buttons": [
-          { "label": "Browse free resources", "url": "resources/", "style": "btn--ghost-light" },
-          { "label": "RCF Publications", "url": "rcf-publications/", "style": "btn--ghost-light" }
+          {
+            "label": "Browse free resources",
+            "url": "resources/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "RCF Publications",
+            "url": "rcf-publications/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -36,7 +46,9 @@
           "type": "destinations",
           "heading": "Choose a category",
           "eyebrow": "Two collections",
-          "intro": ["Resources are grouped by who they are for. Both categories are paid, and both are separate from the free material on this website."],
+          "intro": [
+            "Resources are grouped by who they are for. Both categories are paid, and both are separate from the free material on this website."
+          ],
           "items": [
             {
               "title": "Student Resources",
@@ -59,6 +71,14 @@
               "imageAlt": "An English teacher laying out lesson materials and worksheets across a desk while planning a lesson",
               "imageWidth": "1448",
               "imageHeight": "1086"
+            },
+            {
+              "title": "Classroom Presentations",
+              "url": "premium-resources/presentations/",
+              "text": [
+                "Ready-to-teach slide packs: one deck a lesson, with the board work and tasks already laid out."
+              ],
+              "more": "See the packs"
             }
           ]
         },
@@ -76,11 +96,12 @@
           "purpose": "premium",
           "heading": "How to pay",
           "eyebrow": "Bank transfer",
-          "intro": ["Open the panel below when you are ready to buy. Include the resource's product code so we know exactly what you have paid for."]
+          "intro": [
+            "Open the panel below when you are ready to buy. Include the resource's product code so we know exactly what you have paid for."
+          ]
         }
       ]
     },
-
     {
       "slug": "premium-resources/student",
       "title": "Student Resources",
@@ -89,8 +110,16 @@
       "keywords": "student english resources, worksheet packs, revision packs, model papers, examination practice, grade 6 to 11",
       "kicker": "Premium Resources",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Premium Resources", "url": "premium-resources/" }],
-      "backTo": { "label": "Premium Resources", "url": "premium-resources/" },
+      "breadcrumbs": [
+        {
+          "label": "Premium Resources",
+          "url": "premium-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Premium Resources",
+        "url": "premium-resources/"
+      },
       "hero": {
         "text": "Practice, revision and examination resources arranged by grade and skill. These are paid downloads, separate from the free material on this website."
       },
@@ -100,14 +129,18 @@
           "category": "student",
           "heading": "Student resource collections",
           "eyebrow": "Catalogue",
-          "intro": ["Grade groups run from Primary through Grades 6 to 9, G.C.E. O/L and G.C.E. A/L. Skills covered include reading, writing, grammar, vocabulary, listening, speaking, literature and examination practice."]
+          "intro": [
+            "Grade groups run from Primary through Grades 6 to 9, G.C.E. O/L and G.C.E. A/L. Skills covered include reading, writing, grammar, vocabulary, listening, speaking, literature and examination practice."
+          ]
         },
         {
           "type": "payment-instructions",
           "purpose": "premium",
           "heading": "How to pay",
           "eyebrow": "Bank transfer",
-          "intro": ["Include the resource title and its product code so we can identify your purchase."]
+          "intro": [
+            "Include the resource title and its product code so we can identify your purchase."
+          ]
         },
         {
           "type": "cards",
@@ -115,14 +148,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "English Teacher Resources", "text": "The paid collections for teachers.", "url": "premium-resources/teachers/" },
-            { "title": "Free Grade 6-11 resources", "text": "Activities, listening tests and downloads, free to use.", "url": "grades/" },
-            { "title": "RCF Publications", "text": "Complete books and ebooks.", "url": "rcf-publications/" }
+            {
+              "title": "English Teacher Resources",
+              "text": "The paid collections for teachers.",
+              "url": "premium-resources/teachers/"
+            },
+            {
+              "title": "Free Grade 6-11 resources",
+              "text": "Activities, listening tests and downloads, free to use.",
+              "url": "grades/"
+            },
+            {
+              "title": "RCF Publications",
+              "text": "Complete books and ebooks.",
+              "url": "rcf-publications/"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "premium-resources/teachers",
       "title": "English Teacher Resources",
@@ -131,8 +175,16 @@
       "keywords": "english teacher resources, lesson plan collections, competency based worksheets, assessment packs, classroom activities, marking guides",
       "kicker": "Premium Resources",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Premium Resources", "url": "premium-resources/" }],
-      "backTo": { "label": "Premium Resources", "url": "premium-resources/" },
+      "breadcrumbs": [
+        {
+          "label": "Premium Resources",
+          "url": "premium-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Premium Resources",
+        "url": "premium-resources/"
+      },
       "hero": {
         "text": "Ready-to-use lesson plans, worksheets, assessments and classroom resource collections. These are paid downloads."
       },
@@ -151,14 +203,18 @@
           "category": "teacher",
           "heading": "Teacher resource collections",
           "eyebrow": "Catalogue",
-          "intro": ["Collections are grouped by grade, competency, skill and classroom purpose: teaching, practice, assessment, remedial support, revision and teacher development."]
+          "intro": [
+            "Collections are grouped by grade, competency, skill and classroom purpose: teaching, practice, assessment, remedial support, revision and teacher development."
+          ]
         },
         {
           "type": "payment-instructions",
           "purpose": "premium",
           "heading": "How to pay",
           "eyebrow": "Bank transfer",
-          "intro": ["Include the resource title and its product code so we can identify your purchase."]
+          "intro": [
+            "Include the resource title and its product code so we can identify your purchase."
+          ]
         },
         {
           "type": "cards",
@@ -166,9 +222,154 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "Free Teacher Resources", "text": "The free teaching area: lesson plans, worksheets and marking guides.", "url": "teacher-resources/" },
-            { "title": "Student Resources", "text": "The paid collections for students.", "url": "premium-resources/student/" },
-            { "title": "RCF Publications", "text": "Complete books and ebooks.", "url": "rcf-publications/" }
+            {
+              "title": "Free Teacher Resources",
+              "text": "The free teaching area: lesson plans, worksheets and marking guides.",
+              "url": "teacher-resources/"
+            },
+            {
+              "title": "Student Resources",
+              "text": "The paid collections for students.",
+              "url": "premium-resources/student/"
+            },
+            {
+              "title": "RCF Publications",
+              "text": "Complete books and ebooks.",
+              "url": "rcf-publications/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "premium-resources/presentations",
+      "title": "Classroom Presentations",
+      "metaTitle": "Classroom Presentation Packs for English Teachers",
+      "description": "Ready-to-teach English presentation packs for the classroom projector: one deck a lesson, with the board work, examples and tasks already laid out.",
+      "keywords": "english lesson presentations, classroom slides for english teachers, powerpoint english lessons sri lanka, teaching slides, presentation packs",
+      "kicker": "Premium Resources",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "resourceType": "Presentation",
+      "audienceRole": "teacher",
+      "tags": [
+        "Presentations",
+        "Classroom projector",
+        "Editable",
+        "For teachers"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Premium Resources",
+          "url": "premium-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "Premium Resources",
+        "url": "premium-resources/"
+      },
+      "hero": {
+        "text": "Slides you can teach from without rebuilding them first: the board work, the examples and the tasks already laid out, in the order a lesson actually runs."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What a presentation pack is",
+          "level": "h2",
+          "text": [
+            "Each pack is a set of slides for one lesson or one unit, made to be shown on a classroom projector or a screen at home. The slides carry what you would otherwise write on the board: the target language, the examples, the questions, and the tasks in the order you will set them.",
+            "They are not a lesson plan with pictures added. A plan tells you what to do; a deck is what the class looks at while you do it. The two work together, and the free [lesson plans](teacher-resources/ppp-lesson-plans/) on this site tell you what a plan should contain."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What is in every pack",
+          "level": "h2",
+          "bullets": [
+            "**A title slide and an aim slide,** so the class can see what the lesson is for.",
+            "**The language, presented once and clearly** - the structure, its form, and two or three examples, on slides a child at the back can read.",
+            "**Practice slides in order,** from recognising to producing, with the answers on the slide that follows rather than in a separate file.",
+            "**A task the class can do** while the slide stays up, so nobody has to remember the instruction.",
+            "**A closing slide** with the homework written out."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How they reach you",
+          "level": "h2",
+          "text": [
+            "Packs are delivered as a link to the file in Google Drive, sent after payment. Nothing is downloaded from this website, and the site never asks for a card number: payment is by bank transfer, arranged directly, with the product code so we know exactly what you have paid for.",
+            "You may use a pack with your own classes for as long as you teach, print the slides as handouts, and adapt them. You may not resell it, upload it to a sharing site, or pass the Drive link to another teacher - one purchase is for one teacher."
+          ]
+        },
+        {
+          "type": "premium-products",
+          "category": "teacher",
+          "resourceType": "Presentations",
+          "heading": "Presentation packs",
+          "eyebrow": "Catalogue",
+          "intro": [
+            "Each pack says how many slides it holds, the grade it suits and what it covers."
+          ]
+        },
+        {
+          "type": "payment-instructions",
+          "purpose": "premium",
+          "heading": "How to pay",
+          "eyebrow": "Bank transfer",
+          "intro": [
+            "Open the panel when you are ready. Include the product code so we know which pack you have bought."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Using slides well in a crowded classroom",
+          "level": "h2",
+          "text": [
+            "A projector changes what a lesson can do, and it changes what can go wrong. These are worth knowing whether the slides are ours or your own."
+          ],
+          "bullets": [
+            "**Do not read the slide aloud.** The class can read it. Say the thing the slide does not say.",
+            "**One idea to a slide.** A slide holding four points is a slide nobody finishes reading before you move on.",
+            "**Leave the task slide up** while the class works. The commonest reason a pupil sits doing nothing is that the instruction has gone from the screen.",
+            "**Check the back row can read it** before the lesson, not during it. If you cannot read a slide from the back of your own classroom, neither can they.",
+            "**Have a paper plan too.** Electricity fails, and a lesson that only exists on a screen stops with it."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "Free first",
+          "text": [
+            "Everything in the free sections of this website stays free. The [lesson plans](teacher-resources/ppp-lesson-plans/), [worksheets](teacher-resources/worksheets/) and [ESL resources](global-english/esl/) are complete as they are - a presentation pack saves preparation time, it does not unlock anything that was being held back."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Elsewhere",
+          "level": "h2",
+          "items": [
+            {
+              "title": "All premium resources",
+              "url": "premium-resources/",
+              "text": [
+                "Every paid collection, for students and for teachers."
+              ]
+            },
+            {
+              "title": "Free lesson plans",
+              "url": "teacher-resources/ppp-lesson-plans/",
+              "text": [
+                "Complete PPP plans for Grades 3 to 13, free to take and adapt."
+              ]
+            },
+            {
+              "title": "English Teachers Resources",
+              "url": "teacher-resources/",
+              "text": [
+                "Worksheets, marking guides, classroom activities and more."
+              ]
+            }
           ]
         }
       ]

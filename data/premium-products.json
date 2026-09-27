@@ -67,6 +67,10 @@
     "              Used by the skill filter.",
     "resourceType  Lesson Plans | Worksheets | Model Papers | Revision Packs",
     "              | Classroom Activities | Assessment Resources |",
+    "              | Presentations | Teacher Resources. Used by the type filter.",
+    "              Presentations are listed on their own page as well; see",
+    "              Task 8a in HOW-TO-UPDATE.md.",
+    "              | Classroom Activities | Assessment Resources |",
     "              Teacher Resources. Used by the type filter.",
     "purpose       Teacher resources only. Teaching | Practice | Assessment",
     "              | Remedial Support | Revision | Teacher Development.",
@@ -91,6 +95,5 @@
     "              earn a commission.",
     "published     false hides the product without deleting it."
   ],
-
   "products": []
 }
