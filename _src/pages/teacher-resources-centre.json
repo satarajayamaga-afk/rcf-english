@@ -944,6 +944,184 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "teacher-resources/english-day",
+      "title": "English Day Resources",
+      "metaTitle": "English Day Resources for Sri Lankan Schools",
+      "description": "The English Day circulars, the amended oratory and storytelling rules, and material for the competitions: story skeletons, prompts and play scripts.",
+      "keywords": "english day sri lanka, english day circular, english day competitions, oratory competition, storytelling competition, english day play script, school english day",
+      "kicker": "English Teachers Resources",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "resourceType": "Teacher resource",
+      "audienceRole": "teacher",
+      "tags": [
+        "English Day",
+        "Competitions",
+        "Circulars",
+        "Play scripts",
+        "Free"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "English Teachers Resources",
+          "url": "teacher-resources/"
+        }
+      ],
+      "backTo": {
+        "label": "English Teachers Resources",
+        "url": "teacher-resources/"
+      },
+      "hero": {
+        "text": "Everything a teacher needs to run an English Day: the circulars that set the rules, and material the pupils can actually work from."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "Read the circular before you plan anything",
+          "text": [
+            "English Day events change from year to year, and the **oratory and storytelling rules were amended** after the main circular was issued. A pupil who prepares to the old rules loses marks for something that is not their fault.",
+            "The circulars below are the Ministry's own documents. Where a zonal or provincial office issues its own instructions as well, those apply too - ask your office rather than assuming the national circular is the whole story."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How an English Day is usually organised",
+          "level": "h2",
+          "text": [
+            "The shape is much the same in most schools, and the work divides into three parts that can be done by different people."
+          ],
+          "bullets": [
+            "**Before the day.** Read the circular, decide which events the school will enter, and put up the list with closing dates. Most schools lose entries here rather than on the day: a child who does not know the competition exists cannot enter it.",
+            "**Preparing the pupils.** Two or three weeks of short practices beats one long rehearsal. Speeches need to be heard by somebody other than the teacher who wrote them; plays need the cast to be off-book well before the day.",
+            "**On the day.** Judges need the criteria in writing before the first performance, a timekeeper is worth more than an extra judge, and somebody must be responsible for the results sheet from the start."
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Circulars and guidelines",
+          "subcategory": "english-day",
+          "resourceType": "circular",
+          "intro": [
+            "The Ministry's own documents. The file size is on each card - four of these are large scans, which matters if you are opening one on mobile data."
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "How an English Day is organised",
+          "subcategory": "english-day",
+          "resourceType": "guidelines",
+          "intro": [
+            "A presentation that goes through the events one by one. Useful for briefing a staff meeting or a group of student organisers."
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Creative writing material",
+          "subcategory": "english-day",
+          "resourceType": "activity-pack",
+          "intro": [
+            "Story skeletons and opening lines, ready to print. These suit O/L story writing as well as the competition."
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Play scripts",
+          "subcategory": "english-day",
+          "resourceType": "script",
+          "intro": [
+            "Traditional stories written for a class to perform, each with a cast list and a narrator."
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Model compositions, grade by grade",
+          "level": "h2",
+          "columns": "2",
+          "intro": [
+            "Eighty compositions written by RCF English, ten for each grade from 6 to 13, at the length each grade is expected to manage - about a hundred words at Grade 6, rising to two hundred and fifty at Advanced Level. Each one carries a note on the single thing it shows.",
+            "They are written for learners of English as a second language. A model a pupil cannot imagine writing is not a model."
+          ],
+          "items": [
+            {
+              "title": "All grades: 6 to 13",
+              "url": "teacher-resources/english-day/creative-writing/",
+              "more": "Open",
+              "text": [
+                "The hub, with the word count for every grade and advice on using a model without the class simply copying it."
+              ]
+            },
+            {
+              "title": "Grades 6 to 8",
+              "url": "teacher-resources/english-day/creative-writing/grade-6/",
+              "more": "From Grade 6",
+              "text": [
+                "Simple narratives of 100 to 120 words: a rainy day, a lost book, the power cut, the flood."
+              ]
+            },
+            {
+              "title": "Grades 9 to 11",
+              "url": "teacher-resources/english-day/creative-writing/grade-11/",
+              "more": "O/L standard",
+              "text": [
+                "130 to 165 words, and at Grade 11 a mixture of narrative, description and opinion, as the O/L paper asks."
+              ]
+            },
+            {
+              "title": "Grades 12 and 13",
+              "url": "teacher-resources/english-day/creative-writing/grade-13/",
+              "more": "A/L General English",
+              "text": [
+                "Essays of about 250 words, mostly discursive, with no invented statistics anywhere in them."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Getting more entries, and better ones",
+          "level": "h2",
+          "text": [
+            "The commonest English Day problem is not standard but participation: the same confident dozen enter everything, and everybody else watches."
+          ],
+          "bullets": [
+            "**Run a class round first.** Every class does a two-minute version in an ordinary lesson, and the class chooses who goes forward. It takes one period and it doubles the field.",
+            "**Give the shy pupils a written event.** Creative writing and essay events need no stage, and a child who will never speak in a hall may well write the best entry in the school.",
+            "**Cast plays wide.** A play with twelve speaking parts involves twelve children; a play with three involves three. The scripts on this page are written with a narrator precisely so that a nervous pupil can hold a script and still take part.",
+            "**Tell them what the judges want** before they prepare, not afterwards. The criteria are in the circular; putting them on the noticeboard in plain words is five minutes' work."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Related",
+          "level": "h2",
+          "items": [
+            {
+              "title": "Government Circulars",
+              "url": "teacher-resources/circulars/",
+              "text": [
+                "How Ministry circular numbering works, and how to find the version that applies now."
+              ]
+            },
+            {
+              "title": "Classroom Activities",
+              "url": "teacher-resources/classroom-activities/",
+              "text": [
+                "Short activities for ordinary lessons, useful for preparing an event."
+              ]
+            },
+            {
+              "title": "Speaking Practice",
+              "url": "speaking-practice/",
+              "text": [
+                "Speak an answer aloud and get feedback on length, pace and range - useful before an oratory event."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

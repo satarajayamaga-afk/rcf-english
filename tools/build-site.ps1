@@ -1851,6 +1851,8 @@ function RenderBlock($block) {
                 'worksheet' = 'Worksheet'; 'lesson-plan' = 'Lesson plan'
                 'anthology' = 'Anthology'; 'seminar' = 'Seminar handout'
                 'practice-paper' = 'Practice papers'; 'past-paper' = 'Past paper'
+                'circular' = 'Official circular'; 'activity-pack' = 'Activity pack'
+                'script' = 'Play script'; 'guidelines' = 'Guidelines'
             }
             $html = (SectionOpen $block) + (SectionHead $block)
             $html += '<ul class="gres">'
@@ -1868,6 +1870,10 @@ function RenderBlock($block) {
                 $yr = [string](P $r 'year'); $tm = [string](P $r 'term')
                 if ($yr -and $tm) { $meta += (E ($tm.Substring(0,1).ToUpper() + $tm.Substring(1) + ' term ' + $yr)) }
                 elseif ($yr) { $meta += (E $yr) }
+                # The file size goes on the card because it is a real decision for a
+                # teacher on mobile data: several of these scans are over 40 MB.
+                $fsz = [string](P $r 'fileSize')
+                if ($fsz) { $meta += ('<span class="gres__size">' + (E $fsz) + '</span>') }
                 if ($meta.Count) { $html += '<p class="gres__meta">' + ($meta -join ' &middot; ') + '</p>' }
                 $src = [string](P $r 'author')
                 if ($src) { $html += '<p class="gres__source">' + (E $src) + '</p>' }
