@@ -125,6 +125,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Question 2: language (8 marks)",
           "level": "h2",
@@ -303,6 +307,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "accordion",
           "heading": "Questions students ask about Paper 1 Section A",
           "level": "h2",
@@ -474,6 +482,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",
@@ -655,6 +667,10 @@
             "Do not summarise the sources - the summary was Question 2.",
             "Do not run out of time; this is 16 marks and it comes last in the section."
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "accordion",

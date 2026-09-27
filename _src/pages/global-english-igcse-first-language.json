@@ -156,6 +156,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "cards",
           "heading": "The two written papers",
           "level": "h2",

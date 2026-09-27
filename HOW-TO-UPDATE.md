@@ -692,6 +692,18 @@ the advertisements itself and pays per view and per click.
    a lesson, and on the Primary Game Zone pages made for small children. The
    spaces in `_src/config.json` are the only places advertising is allowed.
 
+### ⚠ Block the categories that do not belong beside schoolwork
+
+Do this in the AdSense account once, before advertising goes live:
+**Brand safety → Blocking controls → Sensitive categories.** Block at least
+gambling and betting, dating, "get rich quick", sensationalist news, cosmetic
+procedures and weight loss.
+
+Google chooses which advertisements appear; we choose which kinds may not.
+The readers here are schoolchildren and their teachers, so this matters more
+than it would on most sites, and nobody will complain to Google about it -
+they will complain to us.
+
 ### Browsing your own site safely
 
 Add `?noads=1` to any address on the site once — for example

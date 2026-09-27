@@ -103,6 +103,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "accordion",
           "heading": "Reading",
           "eyebrow": "Worksheets 5 to 7",
@@ -336,6 +340,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "accordion",

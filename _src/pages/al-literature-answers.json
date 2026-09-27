@@ -789,6 +789,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "model",
           "heading": "Context 4 - Drama",
           "level": "h2",
@@ -914,6 +918,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "dodont",

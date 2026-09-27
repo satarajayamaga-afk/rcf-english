@@ -376,6 +376,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "model",
           "heading": "Question 4: evaluation (15 marks) - model answer",
           "level": "h2",
@@ -468,6 +472,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "table",

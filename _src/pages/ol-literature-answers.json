@@ -747,6 +747,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "model",
           "heading": "Context 4 - Section B, the novel extract",
           "level": "h2",
@@ -889,6 +893,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "dodont",

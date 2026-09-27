@@ -499,6 +499,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "accordion",
           "heading": "Task 2 — the essay",
           "items": [
@@ -704,6 +708,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "accordion",

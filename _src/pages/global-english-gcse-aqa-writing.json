@@ -113,6 +113,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Description: the structure that stops it drifting",
           "level": "h2",
@@ -401,6 +405,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",

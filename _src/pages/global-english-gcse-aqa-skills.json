@@ -99,6 +99,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "terms",
           "heading": "Terms worth knowing, and what to say about each",
           "level": "h2",
@@ -333,6 +337,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "terms",

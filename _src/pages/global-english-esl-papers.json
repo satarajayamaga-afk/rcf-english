@@ -779,6 +779,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "Exercise 3: answers",
           "level": "h2",

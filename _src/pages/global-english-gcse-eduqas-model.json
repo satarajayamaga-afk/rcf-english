@@ -461,6 +461,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "model",
           "heading": "A4: model answer",
           "level": "h2",
@@ -601,6 +605,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "model",

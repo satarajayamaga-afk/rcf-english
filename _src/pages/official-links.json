@@ -341,6 +341,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "The Efficiency Bar modules, all ten",
           "level": "h2",

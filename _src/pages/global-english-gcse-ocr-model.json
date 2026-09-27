@@ -459,6 +459,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Question 4: language and structure (12 marks)",
           "level": "h2",
@@ -617,6 +621,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "model",

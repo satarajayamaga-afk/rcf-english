@@ -111,6 +111,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "Assessment overview: the three components",
           "level": "h2",
@@ -469,6 +473,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Exercise by exercise",
           "level": "h2",
@@ -776,6 +784,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "model",
           "heading": "Original RCF model openings",
           "level": "h2",
@@ -984,6 +996,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "model",
@@ -1209,6 +1225,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "terms",

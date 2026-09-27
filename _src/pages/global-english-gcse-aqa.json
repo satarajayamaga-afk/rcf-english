@@ -170,6 +170,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "The timings AQA prints on the paper",
           "level": "h2",

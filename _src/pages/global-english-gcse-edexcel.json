@@ -138,6 +138,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "Every question and what it is worth",
           "level": "h2",

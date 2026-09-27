@@ -157,6 +157,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "cards",
           "heading": "RCF Model Paper 1",
           "level": "h2",
@@ -818,6 +822,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",

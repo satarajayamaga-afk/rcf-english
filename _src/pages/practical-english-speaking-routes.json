@@ -394,6 +394,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "columns": [
             "Say this",
@@ -1049,6 +1053,10 @@
           "text": [
             "Record yourself on your phone and listen back. Can you hear every sound? The [Speaking Practice read-aloud exercises](speaking-practice/?mode=read) also show which words were recognised."
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",

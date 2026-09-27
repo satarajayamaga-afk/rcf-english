@@ -851,6 +851,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "accordion",
           "heading": "Prepositions",
           "variant": "tint",

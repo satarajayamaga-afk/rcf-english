@@ -258,6 +258,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "accordion",
           "heading": "Writing",
           "eyebrow": "Worksheets 8 to 10",
@@ -440,6 +444,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "accordion",

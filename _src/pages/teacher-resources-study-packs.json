@@ -1,6 +1,5 @@
 {
   "_comment": "Study Packs page under Teacher Resources. Every pack listed comes from data/resources.json with subcategory 'study-packs'. All 17 packs added from the Drive 'packs' folder on 5 September 2026 had their sharing checked individually with the Drive permissions call and were all 'anyone / reader' - recorded as anonymousAccess: verified. Three files in that folder were exact byte-for-byte duplicates of others and were not catalogued. Grades 1, 2, 12 and 13 have no pack in the folder and are shown honestly as having none rather than being padded with unrelated material.",
-
   "pages": [
     {
       "slug": "teacher-resources/study-packs",
@@ -14,9 +13,15 @@
       "resourceType": "study packs",
       "educationalLevel": "Grade 1 to Grade 13",
       "breadcrumbs": [
-        { "label": "Teacher Resources", "url": "teacher-resources/" }
+        {
+          "label": "Teacher Resources",
+          "url": "teacher-resources/"
+        }
       ],
-      "backTo": { "label": "Teacher Resources", "url": "teacher-resources/" },
+      "backTo": {
+        "label": "Teacher Resources",
+        "url": "teacher-resources/"
+      },
       "hero": {
         "text": "Complete English study packs, free to download. Self-learning material issued by provincial education departments and the Ministry, collected here grade by grade."
       },
@@ -43,22 +48,82 @@
           "heading": "What is available, grade by grade",
           "level": "h2",
           "caption": "Honest coverage. Where a grade has no pack, it is listed as having none rather than being filled with unrelated material.",
-          "columns": ["Grade", "Packs available", "What they contain"],
+          "columns": [
+            "Grade",
+            "Packs available",
+            "What they contain"
+          ],
           "rows": [
-            ["Grade 1", "**None yet**", "No Grade 1 pack has been supplied. Primary English lessons and activities are on the [Primary English](primary-english/) pages."],
-            ["Grade 2", "**None yet**", "No Grade 2 pack has been supplied. See [Primary English](primary-english/) for lessons and activities."],
-            ["Grade 3", "2", "A full self-learning activities pack, and a shorter Southern Province pack. Picture tasks, first reading passages, handwriting and sentence work."],
-            ["Grade 4", "1", "Self-learning activities: vocabulary, short reading passages, guided writing and grammar."],
-            ["Grade 5", "1", "Self-learning activities for the Scholarship year: comprehension, vocabulary and structured writing."],
-            ["Grade 6", "2", "Way Forward packs for the first and third terms, keyed to the pupil's book by competency level."],
-            ["Grade 7", "4", "Way Forward first and third term packs, a Ministry self-study pack, and a general Grade 7 pack."],
-            ["Grade 8", "3", "Way Forward first and third term packs, and a separate self-learning pack."],
-            ["Grade 9", "3", "Way Forward first-term and 2021 packs, and a general Grade 9 pack."],
-            ["Grade 10", "2", "Way Forward first and third term packs for the first Ordinary Level year."],
-            ["Grade 11", "7", "The largest group: Way Forward first and third term packs, an O/L study pack, an acceleration kit, a Sabaragamuwa self-learning pack, and two literature packs."],
-            ["Grade 12", "**None yet**", "No pack has been supplied. For A/L General English see [General English](general-english/); for Literature see [A/L Literature](al-literature/)."],
-            ["Grade 13", "**None yet**", "No pack has been supplied. See [General English](general-english/) and [A/L Literature](al-literature/)."]
+            [
+              "Grade 1",
+              "**None yet**",
+              "No Grade 1 pack has been supplied. Primary English lessons and activities are on the [Primary English](primary-english/) pages."
+            ],
+            [
+              "Grade 2",
+              "**None yet**",
+              "No Grade 2 pack has been supplied. See [Primary English](primary-english/) for lessons and activities."
+            ],
+            [
+              "Grade 3",
+              "2",
+              "A full self-learning activities pack, and a shorter Southern Province pack. Picture tasks, first reading passages, handwriting and sentence work."
+            ],
+            [
+              "Grade 4",
+              "1",
+              "Self-learning activities: vocabulary, short reading passages, guided writing and grammar."
+            ],
+            [
+              "Grade 5",
+              "1",
+              "Self-learning activities for the Scholarship year: comprehension, vocabulary and structured writing."
+            ],
+            [
+              "Grade 6",
+              "2",
+              "Way Forward packs for the first and third terms, keyed to the pupil's book by competency level."
+            ],
+            [
+              "Grade 7",
+              "4",
+              "Way Forward first and third term packs, a Ministry self-study pack, and a general Grade 7 pack."
+            ],
+            [
+              "Grade 8",
+              "3",
+              "Way Forward first and third term packs, and a separate self-learning pack."
+            ],
+            [
+              "Grade 9",
+              "3",
+              "Way Forward first-term and 2021 packs, and a general Grade 9 pack."
+            ],
+            [
+              "Grade 10",
+              "2",
+              "Way Forward first and third term packs for the first Ordinary Level year."
+            ],
+            [
+              "Grade 11",
+              "7",
+              "The largest group: Way Forward first and third term packs, an O/L study pack, an acceleration kit, a Sabaragamuwa self-learning pack, and two literature packs."
+            ],
+            [
+              "Grade 12",
+              "**None yet**",
+              "No pack has been supplied. For A/L General English see [General English](general-english/); for Literature see [A/L Literature](al-literature/)."
+            ],
+            [
+              "Grade 13",
+              "**None yet**",
+              "No pack has been supplied. See [General English](general-english/) and [A/L Literature](al-literature/)."
+            ]
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "callout",
@@ -74,8 +139,15 @@
           "heading": "All study packs",
           "level": "h2",
           "source": "resources",
-          "fixed": { "subcategory": "study-packs" },
-          "filters": ["level", "subject", "term", "year"],
+          "fixed": {
+            "subcategory": "study-packs"
+          },
+          "filters": [
+            "level",
+            "subject",
+            "term",
+            "year"
+          ],
           "note": "Every pack listed here has had its sharing checked and opens for any visitor.",
           "intro": [
             "Filter by grade, subject or term. Each entry opens the pack at its own source; nothing is re-hosted on this site."
@@ -85,14 +157,46 @@
           "type": "steps",
           "heading": "Getting the most out of a study pack",
           "level": "h2",
-          "intro": ["These are long documents, and working straight through one from page one is the least effective way to use it."],
+          "intro": [
+            "These are long documents, and working straight through one from page one is the least effective way to use it."
+          ],
           "items": [
-            { "title": "Find the contents page first", "text": ["Almost every pack has one. Decide which two or three units the child actually needs before printing or reading anything."] },
-            { "title": "Use them to fill a specific gap", "text": ["A pack is at its best when a child has missed a topic or never understood one. Work the unit that covers it, not the whole book."] },
-            { "title": "Do the exercises on paper", "text": ["The packs were written to be worked through with a pen. Reading the explanations without doing the tasks teaches very little."] },
-            { "title": "Check whether the pack contains answers", "text": ["Some do and some do not. Where a separate answer key exists it is listed as its own entry in the list above."] },
-            { "title": "Match the term to the time of year", "text": ["First-term and third-term packs cover different units. Using the wrong one will not match what the class is doing."] },
-            { "title": "Print only what you need", "text": ["Several packs are over 10 MB and run to a hundred pages or more. File sizes are shown on every entry so you can judge before downloading on a phone."] }
+            {
+              "title": "Find the contents page first",
+              "text": [
+                "Almost every pack has one. Decide which two or three units the child actually needs before printing or reading anything."
+              ]
+            },
+            {
+              "title": "Use them to fill a specific gap",
+              "text": [
+                "A pack is at its best when a child has missed a topic or never understood one. Work the unit that covers it, not the whole book."
+              ]
+            },
+            {
+              "title": "Do the exercises on paper",
+              "text": [
+                "The packs were written to be worked through with a pen. Reading the explanations without doing the tasks teaches very little."
+              ]
+            },
+            {
+              "title": "Check whether the pack contains answers",
+              "text": [
+                "Some do and some do not. Where a separate answer key exists it is listed as its own entry in the list above."
+              ]
+            },
+            {
+              "title": "Match the term to the time of year",
+              "text": [
+                "First-term and third-term packs cover different units. Using the wrong one will not match what the class is doing."
+              ]
+            },
+            {
+              "title": "Print only what you need",
+              "text": [
+                "Several packs are over 10 MB and run to a hundred pages or more. File sizes are shown on every entry so you can judge before downloading on a phone."
+              ]
+            }
           ]
         },
         {
@@ -150,10 +254,34 @@
           "heading": "Related pages",
           "level": "h2",
           "items": [
-            { "title": "Teacher Downloads", "url": "teacher-resources/downloads/", "text": ["Everything downloadable, in one filterable list."] },
-            { "title": "Worksheets by grade", "url": "teacher-resources/worksheets-by-grade/", "text": ["Shorter printable material, grade by grade."] },
-            { "title": "Past Papers", "url": "past-papers/", "text": ["Papers, marking schemes and model answers."] },
-            { "title": "Teacher Resources", "url": "teacher-resources/", "text": ["Lesson plans, guides and classroom support."] }
+            {
+              "title": "Teacher Downloads",
+              "url": "teacher-resources/downloads/",
+              "text": [
+                "Everything downloadable, in one filterable list."
+              ]
+            },
+            {
+              "title": "Worksheets by grade",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "text": [
+                "Shorter printable material, grade by grade."
+              ]
+            },
+            {
+              "title": "Past Papers",
+              "url": "past-papers/",
+              "text": [
+                "Papers, marking schemes and model answers."
+              ]
+            },
+            {
+              "title": "Teacher Resources",
+              "url": "teacher-resources/",
+              "text": [
+                "Lesson plans, guides and classroom support."
+              ]
+            }
           ]
         }
       ]

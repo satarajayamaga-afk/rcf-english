@@ -381,6 +381,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Step 4 — Guided practice",
           "eyebrow": "Step 4 of 6",
@@ -792,6 +796,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",
@@ -1666,6 +1674,10 @@
             "Have I avoided a long polite opening that wastes exchanges?",
             "Are the **question forms** correct? (*Do you know…?* not *You know…?*)"
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",

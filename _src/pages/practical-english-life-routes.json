@@ -372,6 +372,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "dialogue",
           "items": [
             {
@@ -1169,6 +1173,10 @@
               "Checking your work"
             ]
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "dialogue",

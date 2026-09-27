@@ -595,6 +595,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "callout",
           "style": "info",
           "title": "Blank template, observation checklist and self-evaluation form",

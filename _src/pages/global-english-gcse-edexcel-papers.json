@@ -673,6 +673,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Question 7(a): synthesis (6 marks)",
           "level": "h2",
@@ -772,6 +776,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "table",

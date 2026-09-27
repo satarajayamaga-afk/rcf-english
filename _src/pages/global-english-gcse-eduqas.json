@@ -118,6 +118,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "Assessment objectives",
           "level": "h2",
@@ -571,6 +575,10 @@
               "Two transactional or persuasive tasks, about 30 minutes each: five minutes planning, twenty-five writing."
             ]
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "callout",

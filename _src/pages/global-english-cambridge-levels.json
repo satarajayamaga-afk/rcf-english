@@ -289,6 +289,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "Grades and what they certify",
           "level": "h2",
