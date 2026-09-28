@@ -946,3 +946,79 @@ Mark work, write an essay, or answer anything not on this site. If you want
 those, that needs the real thing - see Task 8b on advertising for why cost
 matters here, and note that a genuine assistant would need an Anthropic
 account and a server-side proxy before a single line of it could be written.
+
+---
+
+## Task 11: Partner links and click tracking
+
+Sponsored links live at `/go/<partner>/`. The page says "Sponsored link",
+records the click, and sends the reader to the advertiser with your referral
+code on the address.
+
+**Setting it up once:** `tools/partners/SETUP.md`. Fifteen minutes.
+
+### Adding a partner
+
+One entry in `data/partners.json`:
+
+```json
+{
+  "id": "example-college",
+  "name": "Example College",
+  "url": "https://example.com/apply",
+  "refCode": "RCF2026",
+  "disclosure": "RCF English is paid a commission if you enrol through this link. It costs you nothing extra.",
+  "active": true
+}
+```
+
+Then `node tools/partners/gen.js` and rebuild. The link is
+`https://rcfenglish.com/go/example-college/`.
+
+Set `"active": false` to park one without deleting the record.
+
+### Rules the generator enforces
+
+It refuses to build if a partner has no `refCode` (the advertiser could not
+credit you), no `disclosure` (a paid link must say so), a non-https `url`, or
+a field named `password`, `apiKey`, `token`, `fee`, `rate` or `commission` —
+**`data/partners.json` is published with the site and anyone can read it.**
+
+### Why disclosure is not optional
+
+Google's link spam policy treats undisclosed paid links as manipulation, and
+the penalty applies to the whole domain — including the AdSense income the
+partnership was meant to add to. Every partner link carries
+`rel="sponsored"`, every `/go/` page is `noindex`, and `/go/` is disallowed
+in robots.txt, because indexed redirect pages are doorway pages.
+
+### Where the numbers are
+
+In the Google Sheet, not on the website. There is no admin page and there
+should not be: a static site has no login, so any dashboard at a web address
+would be readable by anyone who found it — including each advertiser seeing
+their rivals' figures. The Sheet is private to your Google account.
+
+### What to tell an advertiser, in writing, at the start
+
+1. These are **clicks, not enrolments**. Commission is paid on enrolments
+   they confirm against the referral code.
+2. The endpoint is **public**, as every browser endpoint is, so counts could
+   in principle be inflated.
+3. Some clicks are **missed** (script blockers), so the true figure is at or
+   above the recorded one, never below.
+4. The country is **approximate** — from the browser's timezone, not an IP
+   lookup. No IP address, cookie or personal identifier is ever recorded.
+
+### Before the first real partner goes live
+
+Add a line to the privacy policy saying that clicks on sponsored links are
+counted, what is recorded (partner, time, approximate country from timezone,
+referring page) and what is not (no IP, no cookie, nothing identifying).
+
+### A trap worth knowing
+
+Do not set `"kind": "redirect"` on these pages. That is an existing feature
+meaning "this page has moved", and it silently replaces the whole page with
+a stub pointing at the homepage — a clean build, no warning, and every
+partner link quietly broken. These pages use `"kind": "sponsored-link"`.

@@ -5621,3 +5621,29 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   .ask__go { width: 100%; }
 }
 @media print { .ask__form, .ask__chips, .ask__status { display: none !important; } }
+
+/* ---------------------------------------------------------------------------
+   SPONSORED LINK REDIRECT (/go/<partner>/)
+
+   Deliberately plain and deliberately honest: it says "Sponsored link" before
+   it says anything else. The continue link is always present, so the page
+   works with no JavaScript and nobody is ever stranded on a blank redirect.
+   --------------------------------------------------------------------------- */
+.pgo {
+  max-width: 34rem;
+  margin: clamp(2rem, 8vh, 5rem) auto;
+  padding: var(--sp-4, 1.5rem);
+  text-align: center;
+}
+.pgo__kicker {
+  margin: 0 0 0.5rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-800);
+}
+.pgo__title { margin: 0 0 0.75rem; }
+.pgo__disc { margin: 0 0 1.5rem; color: var(--ink-700); }
+.pgo__go { margin: 0 0 1rem; }
+.pgo__back { margin: 0; font-size: var(--step--1); }

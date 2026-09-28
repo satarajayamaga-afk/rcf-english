@@ -296,6 +296,15 @@ $literature = @(DataList 'literature' 'texts')
 $notices = @(DataList 'notices' 'notices')
 $updates = @(DataList 'updates' 'items')
 
+# Where a partner click is recorded. This is a Google Apps Script web app
+# address: public by nature, like any endpoint a browser can reach, so it
+# is configuration rather than a secret. With no endpoint set, the /go/
+# pages still redirect correctly and simply count nothing.
+$script:PartnerEndpoint = ''
+if ($script:Config.PSObject.Properties.Name -contains 'partners') {
+    $script:PartnerEndpoint = [string](P $script:Config.partners 'endpoint' '')
+}
+
 # THE UPDATE NOTICE
 # The newest published update, worked out once and shown in a corner card on
 # every page. Deliberately not a modal over the content: Google treats a
@@ -1122,6 +1131,29 @@ function RenderBlock($block) {
             $html += '<ins class="adsbygoogle" style="display:block" data-ad-client="' + (E $script:AdsClient) + '" data-ad-slot="' + (E $slotId) + '" data-ad-format="auto" data-full-width-responsive="true"></ins>'
             $html += '</div>'
             $script:PageNeedsAdPush = $true
+            return $html
+        }
+
+        'partnerGo' {
+            # A sponsored link. The page tells the reader plainly where they
+            # are going and that it is sponsored, and assets/js/go.js records
+            # the click and sends them on. The link is always present, so the
+            # page works with no JavaScript at all.
+            $pUrl = [string](P $block 'url')
+            $pName = [string](P $block 'name')
+            $html = '<div class="pgo" id="partner-go"'
+            $html += ' data-partner="' + (E ([string](P $block 'partner'))) + '"'
+            $html += ' data-url="' + (E $pUrl) + '"'
+            $html += ' data-endpoint="' + (E $script:PartnerEndpoint) + '">'
+            $html += '<p class="pgo__kicker">Sponsored link</p>'
+            $html += '<h1 class="pgo__title">Taking you to ' + (E $pName) + '</h1>'
+            $html += '<p class="pgo__disc">' + (Inline ([string](P $block 'disclosure'))) + '</p>'
+            # rel: sponsored says this is a paid link, which Google's link spam
+            # policy requires; noopener and noreferrer hand the destination
+            # nothing about the visitor or this window.
+            $html += '<p class="pgo__go"><a class="btn" href="' + (E $pUrl) + '" rel="sponsored noopener noreferrer">Continue to ' + (E $pName) + '</a></p>'
+            $html += '<p class="pgo__back"><a href="' + (E (Url '')) + '">No thanks, back to RCF English</a></p>'
+            $html += '</div>'
             return $html
         }
 
@@ -2862,6 +2894,7 @@ function StaticList($source, $fixed, $limit = 0) {
 # The script each interactive block needs, loaded automatically on any page
 # that uses the block (see the module list in BuildPage).
 $script:BlockScripts = @{
+    'partnerGo'    = 'go'
     'ask'          = 'ask'
     'browse'       = 'browse'
     'finder'       = 'finder'
@@ -5019,7 +5052,12 @@ if ($fresh.Count -gt 0) {
 $sm += '</urlset>' + "`n"
 [System.IO.File]::WriteAllText((Join-Path $ProjectRoot 'sitemap.xml'), $sm, $utf8)
 
-$robots = "User-agent: *`nAllow: /`n`n# Source folders are not content`nDisallow: /_src/`nDisallow: /tools/`n`nSitemap: ${siteUrl}sitemap.xml`n"
+# robots.txt is generated here, so editing the file by hand achieves
+# nothing - the next build overwrites it.
+# /go/ holds the sponsored redirects. They are doorways, not content, and
+# an indexed doorway page is a Google spam-policy problem as well as
+# useless to a reader arriving from a search result.
+$robots = "User-agent: *`nAllow: /`n`n# Source folders are not content`nDisallow: /_src/`nDisallow: /tools/`n`n# Sponsored redirects are doorways, not content`nDisallow: /go/`n`nSitemap: ${siteUrl}sitemap.xml`n"
 [System.IO.File]::WriteAllText((Join-Path $ProjectRoot 'robots.txt'), $robots, $utf8)
 
 # ads.txt says which companies may sell advertising on this domain. Without

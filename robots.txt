@@ -5,4 +5,7 @@ Allow: /
 Disallow: /_src/
 Disallow: /tools/
 
+# Sponsored redirects are doorways, not content
+Disallow: /go/
+
 Sitemap: https://rcfenglish.com/sitemap.xml

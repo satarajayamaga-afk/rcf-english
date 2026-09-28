@@ -1,25 +1,19 @@
 {
   "_comment": "RCF English - single source of truth for site-wide settings. Edit the values below, then run build.cmd. See HOW-TO-UPDATE.md.",
-
   "siteName": "RCF English",
   "tagline": "Learn clearly. Practise confidently. Progress steadily.",
   "shortDescription": "Clear English lessons, practical revision resources and reliable teaching support for learners and teachers.",
   "locale": "en_LK",
   "lang": "en",
   "themeColor": "#0f2647",
-
   "siteUrl": "https://rcfenglish.com",
   "_siteUrlNote": "The custom domain. Used for canonical URLs, Open Graph tags and sitemap.xml. Page-to-page links are relative, so the site still works at any address, but search engines are told this is the real one. The CNAME file in the project root must hold the same domain - GitHub Pages reads it from there.",
-
   "PUBLICATIONS_WEBSITE_URL": "rcf-publications/",
   "_publicationsNote": "Replace the placeholder above with the published address of the RCF Publications bookshop, for example https://satarajayamaga-afk.github.io/rcf-ebook-publications/ . Nothing else needs to change - every publications link on the site reads this one value.",
   "publicationsName": "RCF Publications",
-
   "whatsappDisplay": "070 439 5240",
   "whatsappInternational": "94704395240",
-
   "email": "rcfdegreenotes@gmail.com",
-
   "analytics": {
     "provider": "google",
     "id": "G-637Y6VXYZ0"
@@ -30,12 +24,21 @@
     "slots": {}
   },
   "_adsNote": "Advertising. Leave client empty and no advertising code is added to any page, and no advertisement space is reserved. With a client set, the AdSense script is added to the head of every page and ads.txt is written at the site root. The labelled advertisement spaces stay EMPTY until you add an ad unit here: create a display ad unit in AdSense, copy the data-ad-slot number, and put it in slots against the placement it is for, for example \"between\": \"1234567890\". Do NOT switch on Auto Ads in the AdSense account: ads would be injected into the Primary Game Zone and the other pages made for children, and into the middle of worksheets. The slots below are the only places advertising is allowed.",
-
   "_analyticsNote": "Visitor statistics. Leave id empty and no statistics script is added to any page. Providers: google (Google Analytics 4: set id to the measurement ID, G-...; sets cookies), cloudflare or goatcounter (no cookies). For Cloudflare Web Analytics: sign in at dash.cloudflare.com, open Analytics & Logs > Web Analytics, add the site rcfenglish.com, choose the JavaScript snippet, and copy only the token value from it into id. For GoatCounter instead, set provider to goatcounter and id to your site code (the xxx in xxx.goatcounter.com). Then run build.cmd. The privacy policy switches its wording automatically.",
-
   "founderName": "Rohana Fernando",
   "country": "Sri Lanka",
   "countryCode": "LK",
-
-  "buildNote": "Generated files are written to the project root by tools/build-site.ps1. Do not edit generated .html files by hand - your changes would be overwritten on the next build."
+  "buildNote": "Generated files are written to the project root by tools/build-site.ps1. Do not edit generated .html files by hand - your changes would be overwritten on the next build.",
+  "partners": {
+    "endpoint": ""
+  },
+  "_partnersNote": [
+    "PARTNER CLICK TRACKING.",
+    "'endpoint' is the Google Apps Script web app address from",
+    "tools/partners/SETUP.md. It is PUBLIC by nature - every address a",
+    "browser can reach is - so it belongs here and not in a secret store.",
+    "Never put a password, an API key or a contract value in this file:",
+    "config is published with the site.",
+    "Left empty, the /go/ pages still redirect correctly and count nothing."
+  ]
 }
