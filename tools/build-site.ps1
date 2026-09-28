@@ -296,6 +296,23 @@ $literature = @(DataList 'literature' 'texts')
 $notices = @(DataList 'notices' 'notices')
 $updates = @(DataList 'updates' 'items')
 
+# THE UPDATE NOTICE
+# The newest published update, worked out once and shown in a corner card on
+# every page. Deliberately not a modal over the content: Google treats a
+# content-blocking interstitial soon after arrival from search as a mobile
+# usability fault, and an advertisement inside one would breach AdSense
+# policy. The card covers nothing and is dismissed for good once read.
+$script:NewestUpdate = $null
+foreach ($u in $updates) {
+    if ((P $u 'published' $false) -ne $true) { continue }
+    $d = [string](P $u 'date')
+    if (-not $d) { continue }
+    # A date in the future is a scheduling mistake, not an update; never
+    # announce something that has not happened.
+    if ($d -gt (Get-Date -Format 'yyyy-MM-dd')) { continue }
+    if (-not $script:NewestUpdate -or $d -gt [string](P $script:NewestUpdate 'date')) { $script:NewestUpdate = $u }
+}
+
 $publishedCourseIds = @()
 foreach ($c in $courses) { if ((P $c 'published' $true) -eq $true) { $publishedCourseIds += [string](P $c 'id') } }
 
@@ -4618,6 +4635,11 @@ function BuildPage($page) {
         if ([string](P $b 'type') -eq 'activities' -and (AsList (P $b 'ids')).Count -eq 0) { continue }
         if (-not $modules.Contains($need)) { [void]$modules.Add($need) }
     }
+    # The update notice appears on every indexed page, so its module is not
+    # tied to a block type.
+    if ($script:NewestUpdate -and (P $page 'noindex') -ne $true) {
+        if (-not $modules.Contains('update-note')) { [void]$modules.Add('update-note') }
+    }
     foreach ($m in $modules) {
         $scripts += '<script type="module" src="' + (E (AssetUrl ('assets/js/' + $m + '.js'))) + '"></script>'
     }
@@ -4634,6 +4656,23 @@ function BuildPage($page) {
     $html += Header $slug + "`n"
     $html += '<main id="main" tabindex="-1">' + "`n" + $body + "`n</main>`n"
     $html += Footer + "`n"
+    # The update notice. It ships hidden and the script reveals it once, so a
+    # visitor without JavaScript is never shown a card they cannot dismiss.
+    if ($script:NewestUpdate -and (P $page 'noindex') -ne $true) {
+        $un = $script:NewestUpdate
+        $unUrl = [string](P $un 'url')
+        $unLabel = [string](P $un 'linkLabel' 'Have a look')
+        $html += '<aside id="update-note" class="unote" hidden aria-live="polite"'
+        $html += ' data-update-id="' + (E ([string](P $un 'id'))) + '"'
+        $html += ' data-update-date="' + (E ([string](P $un 'date'))) + '">'
+        $html += '<p class="unote__kicker">Latest update</p>'
+        $html += '<h2 class="unote__title">' + (E ([string](P $un 'title'))) + '</h2>'
+        $html += '<p class="unote__text">' + (E ([string](P $un 'description'))) + '</p>'
+        $html += '<p class="unote__actions">'
+        if ($unUrl) { $html += '<a class="btn btn--sm unote__go" href="' + (E (Url $unUrl)) + '">' + (E $unLabel) + '</a>' }
+        $html += '<button class="unote__close" type="button">Dismiss</button>'
+        $html += '</p></aside>' + "`n"
+    }
     # The floating control. It is an enhancement: it ships hidden and the script
     # reveals it once there is something to scroll back from, so a visitor
     # without JavaScript is never shown a control. The footer link above is the

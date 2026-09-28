@@ -833,3 +833,51 @@ in its name. If anything goes badly wrong you can go back to it.
 
 If you are using Git, `git status` shows what you have changed, and
 `git checkout -- .` undoes everything since your last commit.
+
+---
+
+## Task 9: The update notice (the pop-up)
+
+Every page shows a small card in the bottom corner announcing the newest
+update, once per visitor per update. It is driven entirely by
+`data/updates.json` - the entry with the most recent date that is
+`"published": true` and not in the future.
+
+**To announce something new**, add an entry to the top of `data/updates.json`:
+
+```json
+{
+  "id": "something-short-and-unique",
+  "date": "2026-10-05",
+  "title": "What it is, in a few words",
+  "description": "One or two sentences. Only the first four lines are shown.",
+  "url": "where-it-lives/",
+  "linkLabel": "Open it",
+  "published": true
+}
+```
+
+Then rebuild. That is all - no code change is needed.
+
+Four things worth knowing.
+
+**It is not a modal, on purpose.** A pop-up that covers the page shortly after
+somebody arrives from a Google result is what Google calls an intrusive
+interstitial, and it costs mobile rankings. An advertisement inside one would
+breach AdSense policy outright. So this card covers nothing, blocks no
+scrolling, and never carries an advertisement. Do not change it into a
+centre-screen box.
+
+**Each visitor sees each update once.** The dismissal is stored in the
+browser under `rcf-update-seen`, by id. A *new* id produces a new card, so
+every update gets its moment. Changing an existing entry's text without
+changing its id will not show it again.
+
+**If two entries share the same date**, the one nearer the top of the file
+wins. That is how to choose which of several same-day updates is announced.
+
+**A future date is ignored.** An entry dated next week will not appear until
+that day, so updates can be written in advance.
+
+To test it yourself, open the site, and in the browser console run
+`localStorage.removeItem('rcf-update-seen')` and reload.

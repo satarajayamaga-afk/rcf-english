@@ -48,13 +48,36 @@
           ]
         },
         {
+          "type": "prose",
+          "heading": "How this section is arranged",
+          "level": "h2",
+          "text": [
+            "The groups below follow the order of the work rather than the alphabet: the official matters first, then planning, then material for a lesson, then the class itself, then assessment. Events, your own development and the download list come last."
+          ],
+          "bullets": [
+            "**Looking for a file rather than guidance?** The full download list is at the foot of this page, with filters for type, subject, grade and skill.",
+            "**Looking for English Day?** It has its own group, with the circulars, the amended oratory and storytelling rules, and eighty model compositions.",
+            "**Looking for a transfer?** Mutual Transfers is in the first group, and the matching runs on the form itself."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "title": "Ask a question and get an answer the same day",
+          "text": [
+            "Rohana Fernando runs a **Telegram group** and a **WhatsApp group** for English teachers, and answers questions in them personally. If you need a worksheet, a past paper, a marking scheme or a straight answer about a text or an examination requirement, you can ask for it and usually have it the same day.",
+            "**The WhatsApp group is full at present**, because WhatsApp limits group size. To ask for a place when one opens, send a message to **070 439 5240** saying that you teach English and where.",
+            "**The Telegram group has room.** To request membership, contact **Miss Sankapali** or **Miss Dinu Samadhi** through Messenger.",
+            "[More about the teacher groups](about/online-communities/)"
+          ]
+        },
+        {
           "type": "cards",
-          "heading": "Circulars, service and official information",
-          "eyebrow": "For your service, not your classroom",
-          "variant": "tint",
-          "columns": "2",
+          "heading": "Official and service matters",
+          "level": "h2",
+          "columns": "3",
           "intro": [
-            "Circulars decide transfers, promotions and salary steps, and most of what teachers need is published on government sites that are hard to search. These two pages are signposts to the official sources, with every link checked."
+            "Circulars, the offices you may have to deal with, and the transfer system."
           ],
           "items": [
             {
@@ -82,25 +105,25 @@
                 "The two documents that govern your service",
                 "NIE, EPD and the 30 RESCs"
               ]
+            },
+            {
+              "title": "Mutual Transfers",
+              "url": "teacher-resources/mutual-transfers/",
+              "more": "Open",
+              "text": [
+                "For English, Maths and Science teachers: find a teacher of your subject to exchange places with. Private: your details go only to a teacher whose request matches yours."
+              ]
             }
           ]
         },
         {
-          "type": "callout",
-          "style": "tip",
-          "title": "Ask a question and get an answer the same day",
-          "text": [
-            "Rohana Fernando runs a **Telegram group** and a **WhatsApp group** for English teachers, and answers questions in them personally. If you need a worksheet, a past paper, a marking scheme or a straight answer about a text or an examination requirement, you can ask for it and usually have it the same day.",
-            "**The WhatsApp group is full at present**, because WhatsApp limits group size. To ask for a place when one opens, send a message to **070 439 5240** saying that you teach English and where.",
-            "**The Telegram group has room.** To request membership, contact **Miss Sankapali** or **Miss Dinu Samadhi** through Messenger.",
-            "[More about the teacher groups](about/online-communities/)"
-          ]
-        },
-        {
           "type": "cards",
-          "heading": "Planning and teaching",
-          "variant": "tint",
-          "columns": "4",
+          "heading": "Planning and preparation",
+          "level": "h2",
+          "columns": "3",
+          "intro": [
+            "Templates and worked examples for the paperwork a teacher has to produce before teaching anything: year plans, term plans, daily notes and individual lessons."
+          ],
           "items": [
             {
               "title": "Lesson Plan Guidance",
@@ -111,14 +134,6 @@
               ]
             },
             {
-              "title": "Classroom Management",
-              "url": "teacher-resources/classroom-management/",
-              "more": "Open",
-              "text": [
-                "Rules and routines, classes of forty, attention, behaviour, pair work and transitions."
-              ]
-            },
-            {
               "title": "Lesson Plan Template",
               "url": "teacher-resources/lesson-plan-template/",
               "more": "Open",
@@ -126,70 +141,6 @@
                 "A blank plan, an observation checklist and a self-evaluation form, free to print."
               ]
             },
-            {
-              "title": "Worksheets",
-              "url": "teacher-resources/worksheets/",
-              "more": "Open",
-              "text": [
-                "Printable practice, and how to design your own."
-              ]
-            },
-            {
-              "title": "Worksheets by Grade",
-              "url": "teacher-resources/worksheets-by-grade/",
-              "more": "60 worksheets",
-              "text": [
-                "Ten worksheets for each grade from 6 to 11, covering reading, writing and grammar, each with an answer key."
-              ]
-            },
-            {
-              "title": "Teaching Guides",
-              "url": "teacher-resources/teaching-guides/",
-              "more": "Open",
-              "text": [
-                "How to teach the difficult topics: tenses, articles, writing."
-              ]
-            },
-            {
-              "title": "Classroom Activities",
-              "url": "teacher-resources/classroom-activities/",
-              "more": "Open",
-              "text": [
-                "Activities needing no materials and little preparation."
-              ]
-            },
-            {
-              "title": "Flashcards and Games",
-              "url": "teacher-resources/flashcards-and-games/",
-              "more": "Make cards",
-              "text": [
-                "Print flashcards from ready-made word sets or your own words, with eight games to play."
-              ]
-            },
-            {
-              "title": "Worksheet and Test Generator",
-              "url": "teacher-resources/worksheet-generator/",
-              "more": "Make a worksheet",
-              "text": [
-                "Choose grade, topics and question types, and print a worksheet or test with an answer key."
-              ]
-            },
-            {
-              "title": "ELT Articles",
-              "url": "teacher-resources/elt-articles/",
-              "more": "12 articles",
-              "text": [
-                "Practical articles from English Teaching Forum for large classes: speaking, reading, writing, feedback and exams, each with a summary and the full article."
-              ]
-            }
-          ]
-        },
-        {
-          "type": "cards",
-          "heading": "Plans, records and school projects",
-          "eyebrow": "New",
-          "columns": "3",
-          "items": [
             {
               "title": "Sample PPP Lesson Plans",
               "url": "teacher-resources/ppp-lesson-plans/",
@@ -215,6 +166,89 @@
               ]
             },
             {
+              "title": "Competency Levels by Grade",
+              "url": "teacher-resources/competency-levels/",
+              "more": "Grades 6 to 11",
+              "text": [
+                "The eight competencies and every competency level from the NIE Teachers' Guides."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Material to use in a lesson",
+          "level": "h2",
+          "columns": "4",
+          "intro": [
+            "Things that can be printed, projected or read out. The generator makes a worksheet or a short test to your own specification."
+          ],
+          "items": [
+            {
+              "title": "Study Packs",
+              "url": "teacher-resources/study-packs/",
+              "more": "26 packs",
+              "text": [
+                "Ready-made study and self-learning packs for Grades 3 to 11, including the Way Forward term packs and the O/L packs, with answer keys where they were published."
+              ]
+            },
+            {
+              "title": "English Classroom Games",
+              "url": "teacher-resources/classroom-games/",
+              "more": "88 games",
+              "text": [
+                "Eight games for every grade from 1 to 11, tied to what that grade is learning. No equipment, and each one says what to do in a class of forty-five."
+              ]
+            },
+            {
+              "title": "Worksheets",
+              "url": "teacher-resources/worksheets/",
+              "more": "Open",
+              "text": [
+                "Printable practice, and how to design your own."
+              ]
+            },
+            {
+              "title": "Worksheets by Grade",
+              "url": "teacher-resources/worksheets-by-grade/",
+              "more": "60 worksheets",
+              "text": [
+                "Ten worksheets for each grade from 6 to 11, covering reading, writing and grammar, each with an answer key."
+              ]
+            },
+            {
+              "title": "Worksheet and Test Generator",
+              "url": "teacher-resources/worksheet-generator/",
+              "more": "Make a worksheet",
+              "text": [
+                "Choose grade, topics and question types, and print a worksheet or test with an answer key."
+              ]
+            },
+            {
+              "title": "Classroom Activities",
+              "url": "teacher-resources/classroom-activities/",
+              "more": "Open",
+              "text": [
+                "Activities needing no materials and little preparation."
+              ]
+            },
+            {
+              "title": "Flashcards and Games",
+              "url": "teacher-resources/flashcards-and-games/",
+              "more": "Make cards",
+              "text": [
+                "Print flashcards from ready-made word sets or your own words, with eight games to play."
+              ]
+            },
+            {
+              "title": "Teaching Guides",
+              "url": "teacher-resources/teaching-guides/",
+              "more": "Open",
+              "text": [
+                "How to teach the difficult topics: tenses, articles, writing."
+              ]
+            },
+            {
               "title": "Pupil's Books and Teachers' Guides",
               "url": "teacher-resources/textbooks-and-teacher-guides/",
               "more": "Grades 1 to 13",
@@ -223,36 +257,37 @@
               ]
             },
             {
-              "title": "Competency Levels by Grade",
-              "url": "teacher-resources/competency-levels/",
-              "more": "Grades 6 to 11",
-              "text": [
-                "The eight competencies and every competency level from the NIE Teachers' Guides."
-              ]
-            },
-            {
-              "title": "Sample SBA Tools",
-              "url": "teacher-resources/sba-samples/",
-              "more": "20 tools",
-              "text": [
-                "School Based Assessment tools for English (Grades 2 to 13) and O/L Literature, in the school assessment tool format."
-              ]
-            },
-            {
-              "title": "Sample Project Proposals",
-              "url": "teacher-resources/school-project-proposals/",
-              "more": "6 proposals",
-              "text": [
-                "English Only Day, English Day, a reading programme, a wall newspaper and more."
-              ]
+              "title": "Literature Teaching",
+              "url": "teacher-resources/literature-teaching/",
+              "more": "Open"
             }
           ]
         },
         {
           "type": "cards",
-          "heading": "Supporting every learner",
-          "columns": "4",
+          "heading": "Teaching the class in front of you",
+          "level": "h2",
+          "columns": "3",
+          "intro": [
+            "For the class as it actually is: large, mixed in ability, and containing pupils who are several years behind."
+          ],
           "items": [
+            {
+              "title": "Classroom Management",
+              "url": "teacher-resources/classroom-management/",
+              "more": "Open",
+              "text": [
+                "Rules and routines, classes of forty, attention, behaviour, pair work and transitions."
+              ]
+            },
+            {
+              "title": "Mixed-Ability Teaching",
+              "url": "teacher-resources/mixed-ability-teaching/",
+              "more": "Open",
+              "text": [
+                "One class, six levels, one teacher: what actually works."
+              ]
+            },
             {
               "title": "Remedial English",
               "url": "teacher-resources/remedial-english/",
@@ -270,14 +305,6 @@
               ]
             },
             {
-              "title": "Mixed-Ability Teaching",
-              "url": "teacher-resources/mixed-ability-teaching/",
-              "more": "Open",
-              "text": [
-                "One class, six levels, one teacher: what actually works."
-              ]
-            },
-            {
               "title": "Guided Writing",
               "url": "teacher-resources/guided-writing/",
               "more": "Open",
@@ -289,15 +316,13 @@
         },
         {
           "type": "cards",
-          "heading": "Literature and assessment",
-          "variant": "tint",
+          "heading": "Assessment and marking",
+          "level": "h2",
           "columns": "3",
+          "intro": [
+            "Setting the paper, marking it consistently, and using what the marks tell you."
+          ],
           "items": [
-            {
-              "title": "Literature Teaching",
-              "url": "teacher-resources/literature-teaching/",
-              "more": "Open"
-            },
             {
               "title": "Assessment",
               "url": "teacher-resources/assessment/",
@@ -314,6 +339,14 @@
               "more": "Print"
             },
             {
+              "title": "Sample SBA Tools",
+              "url": "teacher-resources/sba-samples/",
+              "more": "20 tools",
+              "text": [
+                "School Based Assessment tools for English (Grades 2 to 13) and O/L Literature, in the school assessment tool format."
+              ]
+            },
+            {
               "title": "Term-Test Preparation Plans",
               "url": "teacher-resources/term-test-plans/",
               "more": "Open"
@@ -327,6 +360,60 @@
               "title": "Revision Strategies",
               "url": "teacher-resources/revision-strategies/",
               "more": "Open"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "English Day and school events",
+          "level": "h2",
+          "columns": "3",
+          "intro": [
+            "The circulars that set the rules, material the pupils can work from, and the model compositions written for the writing events."
+          ],
+          "items": [
+            {
+              "title": "English Day Resources",
+              "url": "teacher-resources/english-day/",
+              "more": "Open",
+              "text": [
+                "The circulars, the amended oratory and storytelling rules, and material for the competitions: story skeletons, writing prompts and play scripts."
+              ]
+            },
+            {
+              "title": "Creative Writing: Model Compositions",
+              "url": "teacher-resources/english-day/creative-writing/",
+              "more": "Grades 6 to 13",
+              "text": [
+                "Eighty compositions, ten for each grade, at the length each grade is expected to manage - 100 words at Grade 6 rising to 250 at A/L. Each carries a note on the one thing it shows."
+              ]
+            },
+            {
+              "title": "Sample Project Proposals",
+              "url": "teacher-resources/school-project-proposals/",
+              "more": "6 proposals",
+              "text": [
+                "English Only Day, English Day, a reading programme, a wall newspaper and more."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Your own reading and development",
+          "level": "h2",
+          "columns": "4",
+          "intro": [
+            "For the teacher rather than the class: articles, professional reading, qualifications, and the groups where questions get answered the same day."
+          ],
+          "items": [
+            {
+              "title": "ELT Articles",
+              "url": "teacher-resources/elt-articles/",
+              "more": "12 articles",
+              "text": [
+                "Practical articles from English Teaching Forum for large classes: speaking, reading, writing, feedback and exams, each with a summary and the full article."
+              ]
             },
             {
               "title": "Professional Reading",
@@ -337,6 +424,41 @@
               "title": "Professional Development and TKT",
               "url": "teacher-resources/professional-development/",
               "more": "Open"
+            },
+            {
+              "title": "The teacher resource groups",
+              "url": "about/online-communities/",
+              "more": "How to join",
+              "text": [
+                "Telegram and WhatsApp groups where English teachers' questions are answered promptly and requested resources are shared the same day."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Downloads and publications",
+          "level": "h2",
+          "columns": "2",
+          "intro": [
+            "Files to keep, and the books RCF publishes for teachers. The full download list, with every filter, is at the foot of this page."
+          ],
+          "items": [
+            {
+              "title": "Teacher Downloads",
+              "url": "teacher-resources/downloads/",
+              "more": "Open",
+              "text": [
+                "Everything downloadable, in one filterable list."
+              ]
+            },
+            {
+              "title": "RCF Publications for Teachers",
+              "url": "teacher-resources/rcf-publications-for-teachers/",
+              "more": "Open",
+              "text": [
+                "Books written for classroom and tuition teaching."
+              ]
             }
           ]
         },
@@ -357,53 +479,6 @@
           ],
           "intro": [
             "Files are listed here as they are prepared and approved. The written guidance in the pages above is available now, in full."
-          ]
-        },
-        {
-          "type": "cards",
-          "heading": "More for teachers",
-          "columns": "3",
-          "items": [
-            {
-              "title": "English Day Resources",
-              "url": "teacher-resources/english-day/",
-              "more": "Open",
-              "text": [
-                "The circulars, the amended oratory and storytelling rules, and material for the competitions: story skeletons, writing prompts and play scripts."
-              ]
-            },
-            {
-              "title": "Teacher Downloads",
-              "url": "teacher-resources/downloads/",
-              "more": "Open",
-              "text": [
-                "Everything downloadable, in one filterable list."
-              ]
-            },
-            {
-              "title": "RCF Publications for Teachers",
-              "url": "teacher-resources/rcf-publications-for-teachers/",
-              "more": "Open",
-              "text": [
-                "Books written for classroom and tuition teaching."
-              ]
-            },
-            {
-              "title": "The teacher resource groups",
-              "url": "about/online-communities/",
-              "more": "How to join",
-              "text": [
-                "Telegram and WhatsApp groups where English teachers' questions are answered promptly and requested resources are shared the same day."
-              ]
-            },
-            {
-              "title": "Mutual Transfers",
-              "url": "teacher-resources/mutual-transfers/",
-              "more": "Open",
-              "text": [
-                "For English, Maths and Science teachers: find a teacher of your subject to exchange places with. Private: your details go only to a teacher whose request matches yours."
-              ]
-            }
           ]
         },
         {

@@ -5467,3 +5467,93 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
    the two are told apart at a glance. */
 .pick--new { background: var(--gold-100); border-top-color: var(--gold-600); }
 .pick--new .pick__eyebrow { color: var(--gold-800); }
+
+/* ---------------------------------------------------------------------------
+   THE UPDATE NOTICE
+
+   A corner card announcing the newest update, shown once per update per
+   visitor. Deliberately NOT a modal: an interstitial that covers the content
+   shortly after a visitor arrives from a search result is treated by Google
+   as a mobile usability fault, and it would be the wrong place for an
+   advertisement under AdSense policy. So this covers nothing, blocks no
+   scrolling and traps no focus.
+
+   position: fixed, so revealing it shifts no layout and costs nothing in CLS.
+   --------------------------------------------------------------------------- */
+.unote {
+  position: fixed;
+  z-index: 60;
+  right: 1rem;
+  /* 5rem, not 1rem: this keeps the card clear of the back-to-top control,
+     which sits in the same corner with a higher z-index and would
+     otherwise be drawn over the Dismiss button. */
+  bottom: 5rem;
+  width: min(23rem, calc(100vw - 2rem));
+  padding: 0.95rem 1.05rem 1.05rem;
+  background: var(--paper, #fff);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--teal-600);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-3);
+  /* Starts slightly down and transparent; the script adds .is-in. */
+  opacity: 0;
+  transform: translateY(0.75rem);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+.unote.is-in { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .unote { transition: none; transform: none; }
+}
+.unote__kicker {
+  margin: 0 0 0.15rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--teal-700);
+}
+.unote__title { margin: 0 0 0.35rem; font-size: var(--step-1); line-height: 1.25; }
+/* Four lines at most. An update description written at full length made this
+   card 316px tall, which is more of a telephone screen than a corner notice
+   should ever take over. */
+.unote__text {
+  margin: 0 0 0.75rem;
+  font-size: var(--step--1);
+  color: var(--ink-700);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+.unote__actions { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+/* The dismiss control is a real button with a word in it, not a bare glyph:
+   an icon-only close is the commonest accessibility fault in a notice. */
+.unote__close {
+  padding: 0.3rem 0.55rem;
+  font: inherit;
+  font-size: var(--step--1);
+  color: var(--ink-700);
+  background: none;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.unote__close:hover { background: var(--teal-050); border-color: var(--teal-600); color: var(--teal-800); }
+/* The notice sits above the back-to-top control on a telephone, so the two
+   never overlap. */
+@media (max-width: 40rem) {
+  /* Full width on a telephone, so it must also clear the reading-tools
+     button in the bottom left corner. */
+  .unote { right: 0.75rem; left: 0.75rem; bottom: 5rem; width: auto; padding: 0.8rem 0.9rem 0.9rem; }
+  /* Two lines on a telephone rather than four. At four the card took 32% of
+     a 375x812 screen, which is more than a notice should ever occupy even
+     when it blocks nothing. */
+  .unote__text { -webkit-line-clamp: 2; line-clamp: 2; margin-bottom: 0.6rem; }
+  .unote__title { font-size: 1rem; }
+}
+@media print { .unote { display: none !important; } }
+
+/* The add-to-home-screen bar pushes the reading-tools button up to 7.25rem,
+   so the notice clears that instead. */
+.has-a2hs .unote { bottom: 11.25rem; }
