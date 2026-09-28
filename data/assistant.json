@@ -328,6 +328,72 @@
       ]
     },
     {
+      "id": "foreign-leave",
+      "must": [
+        "foreign leave",
+        "no pay",
+        "no-pay",
+        "nopay",
+        "leave abroad",
+        "going abroad"
+      ],
+      "any": [
+        "leave",
+        "foreign",
+        "abroad",
+        "pension",
+        "increment",
+        "teacher"
+      ],
+      "answer": "Foreign leave must be approved in writing before you travel - going first and asking afterwards is treated as absence. The rules are in the Establishments Code and Public Administration circulars rather than only in Education documents. The register lists where they are, and what to get answered in writing before you go.",
+      "links": [
+        {
+          "title": "Teacher Administrative Documents",
+          "url": "teacher-resources/administrative-documents/"
+        },
+        {
+          "title": "Important Links for Teachers",
+          "url": "teacher-resources/official-links/"
+        }
+      ]
+    },
+    {
+      "id": "admin-documents",
+      "must": [
+        "service minute",
+        "establishments code",
+        "efficiency bar",
+        "promotion",
+        "appointment",
+        "increment",
+        "salary"
+      ],
+      "any": [
+        "document",
+        "circular",
+        "grade",
+        "service",
+        "teacher",
+        "form",
+        "where"
+      ],
+      "answer": "The register lists where the official documents governing a teacher's service live - the Service Minute, transfers, promotions, the Efficiency Bar, leave, pay and the Establishments Code. It links to the official source rather than holding copies, so nothing on it can quietly go out of date.",
+      "links": [
+        {
+          "title": "Teacher Administrative Documents",
+          "url": "teacher-resources/administrative-documents/"
+        },
+        {
+          "title": "Government Circulars",
+          "url": "teacher-resources/circulars/"
+        },
+        {
+          "title": "Important Links for Teachers",
+          "url": "teacher-resources/official-links/"
+        }
+      ]
+    },
+    {
       "id": "circulars",
       "must": [
         "circular",

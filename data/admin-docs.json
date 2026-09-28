@@ -1,0 +1,665 @@
+{
+  "_readme": [
+    "TEACHER ADMINISTRATIVE DOCUMENTS - the register.",
+    "",
+    "THIS IS A REGISTER, NOT A REPOSITORY. Every entry points at the official",
+    "source. We do not host copies of government documents, and the generator",
+    "refuses an entry that tries to.",
+    "",
+    "WHY, IN ONE PARAGRAPH",
+    "A copy of a circular on rcfenglish.com would outrank the Ministry's own",
+    "page in Google, because this site is better structured and better linked.",
+    "When that circular is superseded our copy would stay up, and a teacher",
+    "arriving from a search result would apply to a dead deadline. Linking",
+    "cannot go stale that way: the official page either updates or disappears,",
+    "and both are honest. Marking a hosted copy 'superseded' does not help -",
+    "the person who needed the warning already trusted the page.",
+    "",
+    "WHAT AN ENTRY NEEDS",
+    "  id           unique slug",
+    "  category     one of the category ids below",
+    "  title        what the document is called",
+    "  officialUrl  https, on an official domain. The generator checks.",
+    "  issuedBy     which body issued it",
+    "  status       index | current | superseded | historical",
+    "                 index      - a landing page listing many documents",
+    "                 current    - in force as far as we knew on 'checked'",
+    "                 superseded - replaced, kept because teachers still cite it",
+    "                 historical - of record only",
+    "  checked      yyyy-mm-dd, the day somebody last opened the link",
+    "",
+    "OPTIONAL",
+    "  docNumber    circular or gazette number, EXACTLY as printed",
+    "  issued       yyyy-mm-dd, or a year",
+    "  note         a sentence of plain help for a teacher",
+    "",
+    "NEVER INVENT A CIRCULAR NUMBER OR A DATE.",
+    "An invented number looks exactly like a real one, and a teacher will quote",
+    "it to an office. If the number is not in front of you, leave it out.",
+    "",
+    "The seed below is the set of official sources already published on this",
+    "site, which is why every one is 'index'. Individual documents get added as",
+    "somebody actually opens them and records the real number and date."
+  ],
+  "categories": [
+    {
+      "id": "teachers-service",
+      "name": "Sri Lanka Teachers' Service",
+      "blurb": "The service you were appointed to: its grades, the Service Minute that created it, and the regulations behind what you may be asked to do.",
+      "help": [
+        "Almost every argument about grade, salary point or entitlement is settled by the Service Minute, and most teachers have never opened it. It is worth reading once, slowly, before you need it.",
+        "The Minute is amended by gazette. When somebody quotes a rule at you, the useful question is which amendment they are working from."
+      ]
+    },
+    {
+      "id": "transfers",
+      "name": "Transfers",
+      "blurb": "The annual transfer scheme, applications, appeals, and the separate routes for national and provincial schools.",
+      "help": [
+        "Transfers run to a calendar and the calendar is unforgiving. The application window, the appeal window and the release date are all fixed, and a day late is a year lost.",
+        "National schools and provincial schools are different systems with different authorities. Establish which one you are in before reading anything else: the two sets of instructions look similar and are not interchangeable.",
+        "Our own mutual transfer matching is separate from the official scheme and does not replace any part of it."
+      ]
+    },
+    {
+      "id": "promotions",
+      "name": "Promotions",
+      "blurb": "Grade III to II, Grade II to I, what gates each step, and the salary conversion that follows.",
+      "help": [
+        "Promotion is gated by years of service, the Efficiency Bar examination and a satisfactory record together. Missing any one of the three stops the whole thing, and the Efficiency Bar is the one people leave too late.",
+        "A promotion that is approved still has to be converted onto the right salary step. Check the conversion when it arrives rather than assuming it is right."
+      ]
+    },
+    {
+      "id": "appointments",
+      "name": "Appointments and assumption of duty",
+      "blurb": "Letters of appointment, assumption of duty, absorption and confirmation in post.",
+      "help": [
+        "Assumption of duty has a deadline, and the date you assume duty is the date your service starts counting. It follows you for thirty years through every increment and into your pension, so keep the paperwork.",
+        "Confirmation in post is a separate event from appointment. If nobody has told you that you are confirmed, ask: it is not automatic, and it affects what else you may apply for."
+      ]
+    },
+    {
+      "id": "efficiency-bar",
+      "name": "Efficiency Bar examinations",
+      "blurb": "The examinations that gate promotion and increments, their modules, notices and results.",
+      "help": [
+        "The Efficiency Bar is not optional and not safe to postpone. Failing to pass it by the due date stops your increment, and the stopped money is not repaid when you eventually pass.",
+        "There are ten modules across the three examinations and the syllabus for each is published. Teachers who fail have usually never seen the syllabus."
+      ]
+    },
+    {
+      "id": "foreign-leave",
+      "name": "Foreign leave and no-pay leave",
+      "blurb": "Leave to go abroad, what it does to your service and your pension, and the approvals it needs before you go.",
+      "help": [
+        "This is the one that goes wrong most often and the one with the least written about it in plain language. **Foreign leave must be approved before you travel.** Going first and asking afterwards is treated as absence, and it is very hard to undo.",
+        "The rules that decide it are in the Establishments Code and in Public Administration circulars rather than only in Ministry of Education documents, because leave applies across the whole public service.",
+        "**The rules live in Chapter XII of the Establishments Code.** The circulars found in the Ministry index cite it directly, so if an officer refers you to \"Chapter XII\" that is what they mean. Note also that the two circulars dealing squarely with teachers going abroad - 08/2017 and 24/2017 - were listed in Sinhala and Tamil only. If you read neither comfortably, ask your office for the position in writing in English rather than working from a translation somebody sends you.",
+        "**Get these four answered in writing by your own Department before you go** - not by a colleague, and not by somebody who did it last year:",
+        "- How long the leave may run, and whether it can be extended from abroad.",
+        "- Whether the period counts for increments, for promotion, and for your pension. These three can be answered differently from each other.",
+        "- What happens to your post while you are away, and whether it is held.",
+        "- Exactly what you must do to resume duty, and by when.",
+        "**Keep the written approval somewhere you will still find it in five years.** A verbal assurance is worth nothing later, when the officer who gave it has been transferred and nobody remembers the conversation."
+      ]
+    },
+    {
+      "id": "salaries-leave",
+      "name": "Salaries, allowances and leave",
+      "blurb": "Salary circulars, allowances, increments and ordinary leave entitlements.",
+      "help": [
+        "These are public administration matters applying across the public service, so the governing documents usually come from the Ministry of Public Administration rather than from Education.",
+        "An increment that fails to arrive is nearly always a paperwork problem rather than a decision. Ask early: the longer it runs, the harder it is to put right."
+      ]
+    },
+    {
+      "id": "establishments-code",
+      "name": "Establishments Code",
+      "blurb": "The master reference for public service conduct, leave, discipline and procedure.",
+      "help": [
+        "Volumes I and II between them answer most questions beginning \"am I allowed to...\". It is dry, and it is the authority: where a circular and a rumour disagree, this is what settles it."
+      ]
+    },
+    {
+      "id": "circulars",
+      "name": "Circulars",
+      "blurb": "The Ministry and Public Administration circular indexes, and how to tell which version is in force.",
+      "help": [
+        "A circular is only as good as its amendments. Our guide to circular numbering explains how to tell whether the one in your hand is still the operative version."
+      ]
+    },
+    {
+      "id": "provincial",
+      "name": "Provincial and zonal",
+      "blurb": "Where provincial and zonal instructions differ from the national position.",
+      "help": [
+        "Provincial departments issue their own instructions, and on transfers, leave and appointments those can differ from the national circular in ways that matter to you.",
+        "There is no single national index of provincial documents, and this register does not pretend otherwise. Your zonal or provincial office is the source, and asking them directly is faster than searching for an index that does not exist."
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "slts-service-page",
+      "category": "teachers-service",
+      "title": "Sri Lanka Teachers' Service",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/sri-lanka-teacher-service/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The service's own landing page, with its regulations and notices."
+    },
+    {
+      "id": "slts-service-minute",
+      "category": "teachers-service",
+      "title": "Sri Lanka Teachers' Service Minute",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/sri-lanka-teacher-service/sri-lanka-teacher-service-service-minute/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The regulation creating the service, its grades and its promotion conditions. Read it before arguing about any of them."
+    },
+    {
+      "id": "teacher-educators-service",
+      "category": "teachers-service",
+      "title": "Sri Lanka Teacher Educators' Service",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/sri-lanka-teacher-educators-service/",
+      "status": "index",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "principals-service",
+      "category": "teachers-service",
+      "title": "Sri Lanka Principals' Service",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/sri-lanka-principals-service/",
+      "status": "index",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "teacher-transfers",
+      "category": "transfers",
+      "title": "Teachers Transfer Unit (branch page)",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/establishment/teacher-transfers-branch/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The unit's own page. Checked on this date, it was still an unedited template - placeholder telephone numbers and no documents - so use the circular index above instead. Listed here only so you know it exists and why it is not the place to look."
+    },
+    {
+      "id": "promotions-page",
+      "category": "promotions",
+      "title": "Promotions",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/promotions/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "Grade promotions, the conditions and the procedure."
+    },
+    {
+      "id": "efficiency-bar",
+      "category": "efficiency-bar",
+      "title": "Efficiency Bar Examination for officers of the Sri Lanka Teachers' Service",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/the-efficiency-bar-examination-for-officers-of-sri-lanka-teachers-service/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The examinations and their modules. Our own guide lists all ten."
+    },
+    {
+      "id": "moe-circulars",
+      "category": "circulars",
+      "title": "Ministry of Education circulars",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/circulars/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The index. Check for amendments before relying on any circular you find in it."
+    },
+    {
+      "id": "pubad-circulars",
+      "category": "circulars",
+      "title": "Public Administration circulars",
+      "issuedBy": "Ministry of Public Administration",
+      "officialUrl": "https://pubad.gov.lk/web/index.php?option=com_circular&view=circular&Itemid=176&lang=en",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "Salaries, pensions, leave and allowances across the whole public service, teachers included."
+    },
+    {
+      "id": "pubad-leave-circulars",
+      "category": "salaries-leave",
+      "title": "Public Administration circulars: salaries, allowances and leave",
+      "issuedBy": "Ministry of Public Administration",
+      "officialUrl": "https://pubad.gov.lk/web/index.php?option=com_circular&view=circular&Itemid=176&lang=en",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The same index. Leave and allowance rules for teachers are public service rules and live here."
+    },
+    {
+      "id": "establishments-code",
+      "category": "establishments-code",
+      "title": "Establishments Code, Volumes I and II",
+      "issuedBy": "Ministry of Public Administration",
+      "officialUrl": "https://pubad.gov.lk/web/index.php?option=com_content&view=article&id=45&Itemid=192&lang=en",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "The authority on conduct, leave, discipline and procedure."
+    },
+    {
+      "id": "estcode-foreign-leave",
+      "category": "foreign-leave",
+      "title": "Establishments Code: the leave chapters",
+      "issuedBy": "Ministry of Public Administration",
+      "officialUrl": "https://pubad.gov.lk/web/index.php?option=com_content&view=article&id=45&Itemid=192&lang=en",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "Foreign and no-pay leave are governed here and by Public Administration circulars. No circular number is quoted on this page because none has been verified - ask your Department for the one in force rather than relying on a number a colleague gives you."
+    },
+    {
+      "id": "pubad-home",
+      "category": "salaries-leave",
+      "title": "Ministry of Public Administration",
+      "issuedBy": "Ministry of Public Administration",
+      "officialUrl": "https://pubad.gov.lk/",
+      "status": "index",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "eb-module-1",
+      "category": "efficiency-bar",
+      "title": "Module 1: National Teacher Competency Framework and Teacher Professionalism",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-1-content-English.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "First Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-2",
+      "category": "efficiency-bar",
+      "title": "Module 2: Teaching Methodology",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-2-content-English.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "First Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-3",
+      "category": "efficiency-bar",
+      "title": "Module 3: Digital Technology in Education",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-3-content-English.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "First Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-4",
+      "category": "efficiency-bar",
+      "title": "Module 4: Educational Law",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-4-content-ENGLISH.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "First Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-5",
+      "category": "efficiency-bar",
+      "title": "Module 5: Leadership Development and Educational Management",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-5-content-ENGLISH.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "Second Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-6",
+      "category": "efficiency-bar",
+      "title": "Module 6: Preparing an effective learning activity plan",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-6-content-ENGLISH.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "Second Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-7",
+      "category": "efficiency-bar",
+      "title": "Module 7: Classroom Management and Inclusive Education",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-7-content-ENGLISH.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "Second Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-8",
+      "category": "efficiency-bar",
+      "title": "Module 8: Physical and mental well-being, co-curricular, career guidance and counselling",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/Module-8-content-ENGLISH.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "Third Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-9",
+      "category": "efficiency-bar",
+      "title": "Module 9: Twenty-First Century School",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/module-9-content-ENGLISH.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "Third Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-module-10",
+      "category": "efficiency-bar",
+      "title": "Module 10: Action Research",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/wp-content/uploads/2026/07/Module-10-content-English.pdf",
+      "issued": "2026",
+      "status": "current",
+      "checked": "2026-09-28",
+      "note": "Third Efficiency Bar. The English module, published by the Ministry."
+    },
+    {
+      "id": "eb-relief-31-2023-i",
+      "category": "efficiency-bar",
+      "title": "Relief for teachers in respect of Efficiency Bars (Sinhala, English and Tamil)",
+      "docNumber": "31/2023(I)",
+      "issued": "2026-09-18",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Efficiency",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Found in the Ministry circular index. Open the index and look for this number to get the current version in your language."
+    },
+    {
+      "id": "eb-teacher-advisor-32-2025i",
+      "category": "efficiency-bar",
+      "title": "Regarding the First Efficiency Bar of the Teacher Advisor Service",
+      "docNumber": "32/2025(i)",
+      "issued": "2026-06-22",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Efficiency",
+      "status": "listed",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "eb-search",
+      "category": "efficiency-bar",
+      "title": "Search the circular index for Efficiency Bar circulars",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Efficiency",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "A live search of all 532 Ministry circulars. This link keeps working as new circulars are issued, which a fixed list does not."
+    },
+    {
+      "id": "transfers-search",
+      "category": "transfers",
+      "title": "Search the circular index for transfer circulars",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Transfer",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "26 transfer circulars were listed here on the date checked. This is the place to look first, because it stays current as circulars are issued."
+    },
+    {
+      "id": "transfers-teacher-educators-35-2025",
+      "category": "transfers",
+      "title": "Annual Transfer Procedure, Officers of the Sri Lanka Teacher Educators' Service - 2026",
+      "docNumber": "35/2025",
+      "issued": "2025-11-20",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Transfer",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "English, Sinhala and Tamil versions are linked from the index entry."
+    },
+    {
+      "id": "transfers-principals-18-2015",
+      "category": "transfers",
+      "title": "Transfer Procedure of the Sri Lanka Principals' Service (National Schools)",
+      "docNumber": "18/2015",
+      "issued": "2015-06-09",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Transfer",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "An older procedure that is still listed. Circular 26/2017 covers the 2018 procedure - check which applies before relying on either."
+    },
+    {
+      "id": "transfers-principals-26-2017",
+      "category": "transfers",
+      "title": "Sri Lanka Principals' Service (National Schools) Transfer Procedure - 2018",
+      "docNumber": "26/2017",
+      "issued": "2017-06-30",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Transfer",
+      "status": "listed",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "transfers-school-classification-01i-2024",
+      "category": "transfers",
+      "title": "School classification for regularising the recruitment, placing and transferring of academic staff to schools",
+      "docNumber": "01(i)/2024",
+      "issued": "2025-09-10",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Transfer",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "School classification decides a great deal about where you can be placed and moved."
+    },
+    {
+      "id": "transfers-national-policy-01-2005",
+      "category": "transfers",
+      "title": "Classification of schools based on facilities, for the Sri Lanka Teacher Service Management Code and the National Teacher Transfer Policy",
+      "docNumber": "01/2005",
+      "issued": "2005-01-18",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Transfer",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Names the National Teacher Transfer Policy. Older, and still the reference people cite."
+    },
+    {
+      "id": "moe-circular-index-searchable",
+      "category": "circulars",
+      "title": "Ministry circular index, searchable by name, number and date",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "532 circulars on the date checked, most with English, Sinhala and Tamil versions. Searching by circular number is the fastest way to confirm you are holding the current version."
+    },
+    {
+      "id": "promotions-search",
+      "category": "promotions",
+      "title": "Search the circular index for promotion circulars",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Promotion",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "13 results on the date checked. Start here: the Ministry's own promotions page was an empty stub when last opened."
+    },
+    {
+      "id": "promotions-code-09-2019",
+      "category": "promotions",
+      "title": "Code of General Instructions for the implementation of recruitment, promotion and salary revisions in the Sri Lanka Teaching Service",
+      "docNumber": "09/2019",
+      "issued": "2019-03-06",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Promotion",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "The most substantial promotion document in the index. Listed in Sinhala and Tamil; no English version was shown."
+    },
+    {
+      "id": "promotions-slts-30-2011",
+      "category": "promotions",
+      "title": "Promotions in the Sri Lanka Teachers' Service",
+      "docNumber": "30/2011",
+      "issued": "2011-11-11",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Promotion",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Sinhala only in the index. An earlier circular of the same title is 04/2009."
+    },
+    {
+      "id": "promotions-slts-04-2009",
+      "category": "promotions",
+      "title": "Promotions in the Sri Lanka Teachers' Service",
+      "docNumber": "04/2009",
+      "issued": "2009-02-27",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Promotion",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Sinhala only. Check against 30/2011, which carries the same title."
+    },
+    {
+      "id": "promotions-recruitment-04-2005",
+      "category": "promotions",
+      "title": "Revision of the recruitment process and promotion procedure in the Sri Lanka Teacher Service",
+      "docNumber": "04/2005",
+      "issued": "2005-05-19",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Promotion",
+      "status": "listed",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "appointments-search",
+      "category": "appointments",
+      "title": "Search the circular index for appointment circulars",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Appointment",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "6 results on the date checked."
+    },
+    {
+      "id": "appointments-change-subject-07-2019",
+      "category": "appointments",
+      "title": "Changing the subject of teaching appointments",
+      "docNumber": "07/2019",
+      "issued": "2019-02-23",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Appointment",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "The one on this list most likely to concern an English teacher: it governs changing the subject you were appointed to teach. English, Sinhala and Tamil versions are all listed."
+    },
+    {
+      "id": "appointments-permanent-25-2014",
+      "category": "appointments",
+      "title": "Granting permanent appointments to employees hired on temporary, casual, substitute or contract terms",
+      "docNumber": "25/2014",
+      "issued": "2014-11-12",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Appointment",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Sinhala only in the index."
+    },
+    {
+      "id": "appointments-principals-24-2014",
+      "category": "appointments",
+      "title": "Appointment of Grade III officers of the Sri Lanka Principals' Service to national schools",
+      "docNumber": "24-2014",
+      "issued": "2014-08-06",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Appointment",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "The number is printed as 24-2014 in the index, with a hyphen rather than a slash."
+    },
+    {
+      "id": "leave-search",
+      "category": "foreign-leave",
+      "title": "Search the circular index for leave circulars",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Leave",
+      "status": "index",
+      "checked": "2026-09-28",
+      "note": "21 results on the date checked, covering foreign leave, study leave and compulsory leave."
+    },
+    {
+      "id": "leave-off-island-08-2017",
+      "category": "foreign-leave",
+      "title": "Provision of off-island leave for officers of the Sri Lanka Teaching Service under Chapter XII of the Establishments Code",
+      "docNumber": "08/2017",
+      "issued": "2017-01-25",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Leave",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "**This is the circular to ask your Department about first.** It is the one that deals with teachers going abroad. Listed in Sinhala and Tamil only - no English version was shown, so an English-medium teacher will need help reading it or a written summary from their office."
+    },
+    {
+      "id": "leave-unpaid-abroad-24-2017",
+      "category": "foreign-leave",
+      "title": "Provision of unpaid leave abroad for work or study under Section 16 of Chapter XII of the Establishments Code, for teachers with diplomas in education",
+      "docNumber": "24/2017",
+      "issued": "2017-07-11",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Leave",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "No-pay leave to work or study abroad. Sinhala only in the index."
+    },
+    {
+      "id": "leave-office-hours-09-1993",
+      "category": "foreign-leave",
+      "title": "Office hours and leave of public officers",
+      "docNumber": "09/1993",
+      "issued": "1993-05-20",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Leave",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Older, and listed in all three languages, which is more than can be said for the recent ones."
+    },
+    {
+      "id": "leave-interdiction-24-2022",
+      "category": "foreign-leave",
+      "title": "Interdiction, sending on compulsory leave, and reinstatement in the service",
+      "docNumber": "24/2022",
+      "issued": "2022-11-24",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Leave",
+      "status": "listed",
+      "checked": "2026-09-28",
+      "note": "Not foreign leave, but the circular that matters if leave becomes a disciplinary question. English, Sinhala and Tamil."
+    },
+    {
+      "id": "leave-study-local-26-2013",
+      "category": "salaries-leave",
+      "title": "Grant of study leave for local courses at Sri Lankan universities and recognised tertiary institutions",
+      "docNumber": "26/2013",
+      "issued": "2013-06-07",
+      "issuedBy": "Ministry of Education",
+      "officialUrl": "https://moe.gov.lk/en/circulars/?_s=Leave",
+      "status": "listed",
+      "checked": "2026-09-28"
+    }
+  ]
+}
