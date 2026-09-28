@@ -1,0 +1,166 @@
+{
+  "_readme": [
+    "AI TOOLS FOR ENGLISH TEACHERS",
+    "",
+    "Written to be useful rather than excited. Two rules were followed:",
+    "no claims about what a particular product costs or can do, because those",
+    "change monthly and a wrong one makes the page worthless; and the privacy",
+    "section is not optional padding - typing a pupil's name and marks into a",
+    "chatbot is the one thing on this page that can actually harm somebody."
+  ],
+  "pages": [
+    {
+      "slug": "teacher-resources/ai-tools-for-teachers",
+      "title": "AI Tools for English Teachers",
+      "metaTitle": "AI for English Teachers: Prompts That Save Time",
+      "description": "How to use AI for lesson planning, worksheets and marking, with ready prompts, what it gets wrong about a syllabus, and what must never be typed into it.",
+      "keywords": "ai for english teachers, chatgpt for teachers, ai lesson planning, ai worksheet generator, ai prompts for teachers, using ai in the classroom",
+      "kicker": "English Teachers Resources",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "resourceType": "Teacher guide",
+      "audienceRole": "teacher",
+      "tags": ["AI", "Lesson planning", "Prompts", "Free", "Time-saving"],
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
+      "hero": {
+        "text": "What these tools are genuinely good at, what they are confidently wrong about, and the one thing you must never type into them."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What AI is actually good at, and what it is not",
+          "level": "h2",
+          "text": [
+            "An AI chatbot is very good at producing a first draft of something formulaic, and very bad at knowing anything specific about your syllabus, your pupils or your examination. Almost every disappointment teachers report comes from asking it to do the second thing.",
+            "The useful division is this. Ask it for **raw material you will then check** - a passage at a certain level, twenty gap-fill items, six comprehension questions, a rubric - and it will save you thirty minutes. Ask it **what the Grade 9 syllabus requires**, or **what came in last year's paper**, and it will produce something that sounds authoritative and may be entirely invented."
+          ],
+          "bullets": [
+            "**Good at:** drafting a passage to a word count and level, generating many similar items, rewriting something at an easier level, producing a first rubric, listing ideas you will choose from.",
+            "**Poor at:** anything about a specific national syllabus, a real examination paper, a circular, or what a particular textbook contains.",
+            "**Dangerous at:** stating facts with confidence. It does not know when it is wrong, and it never sounds unsure."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "Never type a pupil's name, marks or photograph into an AI tool",
+          "text": [
+            "This is the one rule on this page that matters more than saving time. Anything typed into a public AI tool leaves your control, and depending on the service and its settings it may be stored, reviewed by staff, or used to train future versions.",
+            "That means **no pupil names, no admission numbers, no marks lists, no medical or family circumstances, and no photographs of children**. If you want help writing a report comment, describe the pupil without identifying them - *a Grade 9 boy who works hard but writes very short answers* - and put the name in yourself afterwards.",
+            "The same applies to anything confidential from your school: unreleased papers, staff matters, or a document marked confidential."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How to write a prompt that works",
+          "level": "h2",
+          "text": ["Most weak results come from a prompt that leaves out the four things the tool cannot guess. Put all four in and the first answer is usually usable."],
+          "bullets": [
+            "**Who it is for.** *Grade 7 learners of English as a second language in Sri Lanka* produces something quite different from *students*.",
+            "**How long.** Give a word count. Without one you will get something twice the length you wanted.",
+            "**What language it must contain.** *Use only the past simple and words a Grade 7 pupil would know* is the instruction that makes the output usable.",
+            "**What it must not do.** *Do not use idioms. Do not use contractions. Do not include a title.* Negative instructions are the ones teachers forget and they are often the most useful.",
+            "**Then ask for a second version.** The second attempt, after you say what was wrong with the first, is almost always the one you keep."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Prompts that save real time",
+          "columns": ["When you need", "Ask for it like this", "Then check"],
+          "rows": [
+            ["A reading passage at a set level", "Write a 150-word passage for Grade 7 learners of English as a second language. Past simple only. No idioms. Everyday vocabulary. Set it in a village.", "That the vocabulary really is at that level - it usually drifts upward"],
+            ["Comprehension questions", "Write six comprehension questions on this passage: two literal, two inferential, two that ask for an opinion. Do not give the answers yet.", "That the inferential ones are answerable from the text"],
+            ["Gap-fill items", "Make 15 gap-fill sentences practising the past simple of irregular verbs, one gap each, with an answer key at the end.", "For two gaps that have more than one correct answer"],
+            ["An easier version of a text", "Rewrite this passage so a pupil two years younger could read it. Keep the same events. Shorter sentences. Replace any word above Grade 6.", "That nothing important was quietly dropped"],
+            ["A marking rubric", "Write a 5-band rubric out of 10 for a 150-word narrative by a Grade 9 second-language learner. Bands for content, organisation, language accuracy.", "Against the criteria your examination actually uses"],
+            ["Differentiated versions", "Give me this worksheet at three levels: one for pupils who are two years behind, one on level, one for the strongest four in the class.", "That the easiest version is genuinely easier, not just shorter"],
+            ["Dialogue for speaking practice", "Write an 8-line dialogue between a shopkeeper and a customer for Grade 6, using only present simple and numbers up to 100.", "That both speakers get a fair share of lines"],
+            ["Ideas when you are stuck", "Give me 10 ways to practise the present perfect with 45 pupils and no equipment. One line each.", "Most will be unusable - you want the two that are not"],
+            ["A report comment, anonymously", "Write three report comments for a Grade 8 pupil who participates well orally but does not complete written work. Warm but honest. 25 words each.", "Rewrite in your own words before it goes anywhere"],
+            ["Letters and notices as models", "Write a model formal letter from a pupil to a principal requesting a leaving certificate. 120 words. Sri Lankan school conventions.", "The format against what your paper requires"]
+          ]
+        },
+        { "type": "adslot", "placement": "between" },
+        {
+          "type": "prose",
+          "heading": "Where it will be confidently wrong",
+          "level": "h2",
+          "text": ["These are the failures worth knowing in advance, because each one looks completely convincing on the page."],
+          "bullets": [
+            "**It will invent syllabus content.** Asked what Grade 9 covers, it will produce a plausible list that is not your syllabus. Use the Teachers' Guide for that, never a chatbot.",
+            "**It will invent examination questions and claim they are real.** If it says something came in a past paper, assume it did not until you have seen the paper.",
+            "**It will invent circular numbers, dates and references.** These look exactly like real ones. Check every one against the actual circular.",
+            "**It drifts above the level you asked for.** A passage requested at Grade 6 will creep to Grade 8 by the third paragraph. Ask it to list any word above the level and it will usually catch its own drift.",
+            "**It writes in a register that is not ours.** Output often reads as American, informal, or full of idioms a second-language learner has never met. Say so in the prompt.",
+            "**It cannot tell you what is in a book it has not been given.** If you want work on a specific text, paste the passage in - as long as doing so does not breach the publisher's copyright."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "On copyright, and on pupils using it",
+          "text": [
+            "Do not paste in substantial parts of a copyrighted textbook or a commercial workbook to have material generated from it. A short extract for a classroom purpose is one thing; feeding in whole units is another, and it is not yours to feed in.",
+            "As for pupils using AI: the honest position is that a ban you cannot enforce teaches nothing. What works better is deciding, task by task, whether the work exists to produce a document or to change the pupil - and telling the class which it is. A pupil who knows why an essay is set will mostly write it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A realistic weekly use",
+          "level": "h2",
+          "text": ["Teachers who get value from these tools tend to use them in the same narrow way rather than for everything."],
+          "bullets": [
+            "**Sunday evening:** draft the week's reading passage and its questions, then spend the saved half-hour checking the level rather than writing from nothing.",
+            "**Before a test:** generate twenty extra practice items of a type your class keeps getting wrong.",
+            "**When differentiating:** produce the easier version of a worksheet you have already made, which is the job that otherwise never gets done.",
+            "**Never:** for anything you will hand out without reading in full. That is where the embarrassing errors come from."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Questions teachers ask",
+          "level": "h2",
+          "items": [
+            {
+              "q": "Do I need to pay for one of these?",
+              "a": ["The major tools all have a free tier that is enough for the uses on this page, and the free tiers change often enough that any figure printed here would be wrong within months. Start with a free one and only consider paying if you find yourself hitting a limit every week."]
+            },
+            {
+              "q": "Will it replace teachers?",
+              "a": ["It cannot do the part of the job that is actually hard. It does not know which child stopped trying in March, it cannot get forty-five pupils to produce language in a period, and it has never had to teach with no photocopier. It drafts material. That is a real saving and it is not the job."]
+            },
+            {
+              "q": "Is it cheating to use it for lesson preparation?",
+              "a": ["No more than using a published resource book is. The professional question is whether you checked what it produced before putting it in front of a class - and that question applies equally to a workbook you bought."]
+            },
+            {
+              "q": "Does RCF English use AI to write its material?",
+              "a": ["The material on this site is written and checked by people, and where a page was generated from a data file the page says so. The site guide on this website is not an AI either - it is a keyword search over these pages, and it says that on its own page rather than pretending otherwise."]
+            },
+            {
+              "q": "My school has no policy on this. What should I do?",
+              "a": ["Follow the rule at the top of this page about pupil data regardless of whether anybody has written a policy, because that is the part that can cause real harm. For everything else, the safe position is that material given to pupils is your professional responsibility whoever or whatever drafted it."]
+            }
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this guide",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "related",
+          "heading": "Related",
+          "level": "h2",
+          "items": [
+            { "title": "Ask RCF English", "url": "ask/", "text": ["The site guide. It searches these pages and answers common questions - and it is a search, not an AI."] },
+            { "title": "Worksheet and Test Generator", "url": "teacher-resources/worksheet-generator/", "text": ["Makes a worksheet to your specification here on the site, with no AI involved."] },
+            { "title": "Lesson Plan Guidance", "url": "teacher-resources/lesson-plans/", "text": ["What a plan has to contain, with a blank template."] },
+            { "title": "English Classroom Games", "url": "teacher-resources/classroom-games/", "text": ["Eighty-eight games by grade - the kind of thing AI produces badly and a teacher produces well."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

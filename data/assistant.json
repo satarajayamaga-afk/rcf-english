@@ -1,0 +1,785 @@
+{
+  "_readme": [
+    "ASK RCF ENGLISH - the answers the site guide gives.",
+    "",
+    "This is NOT an AI. It is a keyword matcher over these written answers,",
+    "with the site search index behind it as a fallback. That is deliberate:",
+    "a real AI assistant needs an API key, and a key shipped in a static site",
+    "is public the moment it is published.",
+    "",
+    "Every 'url' below must be a real page. Run tools/check-assistant.js after",
+    "editing - it checks every link against the built search index and fails",
+    "if one does not exist. A broken link here is invisible to the build's own",
+    "link checker, because these links are written by JavaScript at run time.",
+    "",
+    "'must' = at least one of these words has to be in the question.",
+    "'any'  = each of these that matches adds to the score.",
+    "Keep answers short. The links do the work."
+  ],
+  "intents": [
+    {
+      "id": "past-papers",
+      "must": [
+        "paper",
+        "papers",
+        "pastpaper",
+        "past"
+      ],
+      "any": [
+        "past",
+        "term",
+        "test",
+        "model",
+        "exam",
+        "question",
+        "download"
+      ],
+      "answer": "Past papers are in the Paper Library, sorted by grade and by examination. Marking schemes are included where they were published.",
+      "links": [
+        {
+          "title": "Paper Library",
+          "url": "past-papers/"
+        },
+        {
+          "title": "O/L English papers",
+          "url": "past-papers/ol-english/"
+        },
+        {
+          "title": "Exam Centre",
+          "url": "exam-centre/"
+        }
+      ]
+    },
+    {
+      "id": "marking-schemes",
+      "must": [
+        "marking",
+        "scheme",
+        "schemes",
+        "answers",
+        "answer"
+      ],
+      "any": [
+        "marking",
+        "scheme",
+        "key",
+        "correct",
+        "model"
+      ],
+      "answer": "Marking schemes are published beside the papers they belong to, in the Paper Library. Where a scheme was never released, the paper is listed without one rather than with an invented answer key.",
+      "links": [
+        {
+          "title": "Paper Library",
+          "url": "past-papers/"
+        },
+        {
+          "title": "Marking Guides",
+          "url": "teacher-resources/marking-guides/"
+        }
+      ]
+    },
+    {
+      "id": "classroom-games",
+      "must": [
+        "game",
+        "games",
+        "play",
+        "activity",
+        "activities"
+      ],
+      "any": [
+        "classroom",
+        "class",
+        "fun",
+        "grade",
+        "large",
+        "teach"
+      ],
+      "answer": "There are eighty-eight classroom games, eight for every grade from 1 to 11. Each one says what language it practises, how long it takes, and what to do when the class has forty-five pupils in it. None of them needs equipment.",
+      "links": [
+        {
+          "title": "English Classroom Games by grade",
+          "url": "teacher-resources/classroom-games/"
+        },
+        {
+          "title": "Printable flashcards and games",
+          "url": "teacher-resources/flashcards-and-games/"
+        },
+        {
+          "title": "Classroom Activities",
+          "url": "teacher-resources/classroom-activities/"
+        }
+      ]
+    },
+    {
+      "id": "creative-writing",
+      "must": [
+        "essay",
+        "essays",
+        "composition",
+        "compositions",
+        "creative",
+        "story",
+        "stories",
+        "writing"
+      ],
+      "any": [
+        "sample",
+        "samples",
+        "model",
+        "example",
+        "examples",
+        "creative",
+        "write"
+      ],
+      "answer": "There are eighty model compositions, ten for each grade from 6 to 13, written at the length each grade is expected to manage - about a hundred words at Grade 6 rising to two hundred and fifty at Advanced Level. Each one has a note on the single thing it shows.",
+      "links": [
+        {
+          "title": "Creative writing model compositions",
+          "url": "teacher-resources/english-day/creative-writing/"
+        },
+        {
+          "title": "Writing Practice",
+          "url": "writing-practice/"
+        },
+        {
+          "title": "Essay Writing Exercises",
+          "url": "essay-writing-exercises/"
+        }
+      ]
+    },
+    {
+      "id": "english-camp",
+      "must": [
+        "camp",
+        "camps"
+      ],
+      "any": [
+        "english",
+        "activity",
+        "activities",
+        "day",
+        "run",
+        "group",
+        "outdoor"
+      ],
+      "answer": "English Camp Activities covers running a one-day camp: the timetable, the oath and ground rules, and five activity sessions. The Central Province English Unit's guide is there to download, and grade-wise activity packs are being added.",
+      "links": [
+        {
+          "title": "English Camp Activities",
+          "url": "teacher-resources/english-camp/"
+        },
+        {
+          "title": "English Classroom Games",
+          "url": "teacher-resources/classroom-games/"
+        }
+      ]
+    },
+    {
+      "id": "english-day",
+      "must": [
+        "english day",
+        "englishday",
+        "oratory",
+        "storytelling",
+        "competition",
+        "competitions"
+      ],
+      "any": [
+        "day",
+        "circular",
+        "rules",
+        "event",
+        "events",
+        "play",
+        "script"
+      ],
+      "answer": "English Day Resources has the circulars, including the amended oratory and storytelling rules, and material the pupils can work from: story skeletons, writing prompts and play scripts with a narrator so nervous pupils can still take part.",
+      "links": [
+        {
+          "title": "English Day Resources",
+          "url": "teacher-resources/english-day/"
+        },
+        {
+          "title": "Model compositions for the writing events",
+          "url": "teacher-resources/english-day/creative-writing/"
+        },
+        {
+          "title": "Speaking Practice",
+          "url": "speaking-practice/"
+        }
+      ]
+    },
+    {
+      "id": "worksheets",
+      "must": [
+        "worksheet",
+        "worksheets",
+        "handout",
+        "handouts"
+      ],
+      "any": [
+        "print",
+        "printable",
+        "grade",
+        "make",
+        "generator",
+        "free"
+      ],
+      "answer": "Worksheets are listed by skill and by grade, and there is a generator that makes a worksheet or a short test to your own specification.",
+      "links": [
+        {
+          "title": "Worksheets",
+          "url": "teacher-resources/worksheets/"
+        },
+        {
+          "title": "Worksheets by Grade",
+          "url": "teacher-resources/worksheets-by-grade/"
+        },
+        {
+          "title": "Worksheet and Test Generator",
+          "url": "teacher-resources/worksheet-generator/"
+        }
+      ]
+    },
+    {
+      "id": "study-packs",
+      "must": [
+        "study pack",
+        "pack",
+        "packs",
+        "self learning",
+        "selflearning"
+      ],
+      "any": [
+        "study",
+        "self",
+        "learning",
+        "grade",
+        "way forward"
+      ],
+      "answer": "There are twenty-six study and self-learning packs for Grades 3 to 11, including the Way Forward term packs and the O/L packs, with answer keys where they were published.",
+      "links": [
+        {
+          "title": "Study Packs",
+          "url": "teacher-resources/study-packs/"
+        },
+        {
+          "title": "Teacher Downloads",
+          "url": "teacher-resources/downloads/"
+        }
+      ]
+    },
+    {
+      "id": "lesson-plans",
+      "must": [
+        "lesson plan",
+        "lessonplan",
+        "plan",
+        "plans",
+        "planning"
+      ],
+      "any": [
+        "lesson",
+        "template",
+        "ppp",
+        "annual",
+        "term",
+        "write",
+        "format"
+      ],
+      "answer": "There is guidance on writing a lesson plan, a blank template, and a set of worked PPP plans built from the Pupil's Book units. Annual and term plan templates are there too.",
+      "links": [
+        {
+          "title": "Lesson Plan Guidance",
+          "url": "teacher-resources/lesson-plans/"
+        },
+        {
+          "title": "Lesson Plan Template",
+          "url": "teacher-resources/lesson-plan-template/"
+        },
+        {
+          "title": "Sample PPP Lesson Plans",
+          "url": "teacher-resources/ppp-lesson-plans/"
+        }
+      ]
+    },
+    {
+      "id": "transfers",
+      "must": [
+        "transfer",
+        "transfers",
+        "mutual"
+      ],
+      "any": [
+        "mutual",
+        "teacher",
+        "school",
+        "move",
+        "station",
+        "district"
+      ],
+      "answer": "The mutual transfer system matches teachers who want to swap schools. It uses a graded match rather than an exact one - subject must match, and grade and place are scored as close or possible - because exact matches are rare.",
+      "links": [
+        {
+          "title": "Mutual Transfers",
+          "url": "teacher-resources/mutual-transfers/"
+        }
+      ]
+    },
+    {
+      "id": "circulars",
+      "must": [
+        "circular",
+        "circulars",
+        "ministry",
+        "official"
+      ],
+      "any": [
+        "circular",
+        "ministry",
+        "government",
+        "rule",
+        "regulation",
+        "official"
+      ],
+      "answer": "Government circulars are listed with an explanation of how Ministry circular numbering works, so you can tell which version applies now. Where a zonal or provincial office issues its own instructions, those apply as well - ask your office.",
+      "links": [
+        {
+          "title": "Government Circulars",
+          "url": "teacher-resources/circulars/"
+        },
+        {
+          "title": "Important Links for Teachers",
+          "url": "teacher-resources/official-links/"
+        }
+      ]
+    },
+    {
+      "id": "textbooks",
+      "must": [
+        "textbook",
+        "textbooks",
+        "pupils book",
+        "pupil's book",
+        "teachers guide",
+        "teacher's guide",
+        "guide"
+      ],
+      "any": [
+        "book",
+        "books",
+        "guide",
+        "download",
+        "grade",
+        "free",
+        "pdf"
+      ],
+      "answer": "The Pupil's Books and Teachers' Guides are listed by grade, with the file size on each one - several are large scans, which matters on mobile data.",
+      "links": [
+        {
+          "title": "Pupil's Books and Teachers' Guides",
+          "url": "teacher-resources/textbooks-and-teacher-guides/"
+        },
+        {
+          "title": "Competency Levels by Grade",
+          "url": "teacher-resources/competency-levels/"
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "must": [
+        "literature",
+        "poem",
+        "poems",
+        "poetry",
+        "drama",
+        "novel",
+        "prose"
+      ],
+      "any": [
+        "literature",
+        "text",
+        "texts",
+        "prescribed",
+        "appreciation",
+        "ol",
+        "al"
+      ],
+      "answer": "Literature is split between Ordinary Level and Advanced Level, each with the prescribed texts, model answers and guidance on the kinds of question the paper asks.",
+      "links": [
+        {
+          "title": "O/L Literature",
+          "url": "ol-literature/"
+        },
+        {
+          "title": "A/L Literature",
+          "url": "al-literature/"
+        },
+        {
+          "title": "Literature Teaching",
+          "url": "teacher-resources/literature-teaching/"
+        }
+      ]
+    },
+    {
+      "id": "general-english",
+      "must": [
+        "general english",
+        "generalenglish",
+        "al english",
+        "advanced level english"
+      ],
+      "any": [
+        "general",
+        "advanced",
+        "al",
+        "paper",
+        "essay",
+        "answers"
+      ],
+      "answer": "A/L General English has the papers, the answers RCF English has written for them, and guidance on the writing questions.",
+      "links": [
+        {
+          "title": "General English",
+          "url": "general-english/"
+        },
+        {
+          "title": "Essay Writing Exercises",
+          "url": "essay-writing-exercises/"
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "must": [
+        "class",
+        "classes",
+        "join",
+        "enrol",
+        "enroll",
+        "tuition",
+        "online class"
+      ],
+      "any": [
+        "join",
+        "class",
+        "online",
+        "fee",
+        "time",
+        "register",
+        "start"
+      ],
+      "answer": "The online classes, their levels and how to join are on the classes page. Timings and any fees are stated there rather than here, so you are reading them from the source.",
+      "links": [
+        {
+          "title": "RCF Online Academy",
+          "url": "rcf-classes/"
+        },
+        {
+          "title": "Contact",
+          "url": "contact/"
+        }
+      ]
+    },
+    {
+      "id": "teacher-groups",
+      "must": [
+        "group",
+        "groups",
+        "whatsapp",
+        "telegram",
+        "community"
+      ],
+      "any": [
+        "join",
+        "group",
+        "teacher",
+        "ask",
+        "question",
+        "help"
+      ],
+      "answer": "Rohana Fernando runs a Telegram group and a WhatsApp group for English teachers and answers questions in them personally. The WhatsApp group is often full because of WhatsApp's size limit; the Telegram group usually has room.",
+      "links": [
+        {
+          "title": "The teacher groups",
+          "url": "about/online-communities/"
+        },
+        {
+          "title": "English Teachers Resources",
+          "url": "teacher-resources/"
+        }
+      ]
+    },
+    {
+      "id": "primary",
+      "must": [
+        "primary",
+        "grade 1",
+        "grade 2",
+        "grade 3",
+        "grade 4",
+        "grade 5",
+        "small children",
+        "young learners"
+      ],
+      "any": [
+        "primary",
+        "young",
+        "child",
+        "children",
+        "kids",
+        "game",
+        "activity"
+      ],
+      "answer": "Primary English has activities and games for the younger grades, including games the pupils play themselves on a screen. For games a teacher runs in the room, use the classroom games pages instead.",
+      "links": [
+        {
+          "title": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "title": "Primary Game Zone",
+          "url": "primary-english/game-zone/"
+        },
+        {
+          "title": "Classroom games for Grades 1 to 5",
+          "url": "teacher-resources/classroom-games/"
+        }
+      ]
+    },
+    {
+      "id": "speaking",
+      "must": [
+        "speak",
+        "speaking",
+        "pronunciation",
+        "oral",
+        "talk"
+      ],
+      "any": [
+        "speak",
+        "practice",
+        "practise",
+        "fluency",
+        "accent",
+        "interview"
+      ],
+      "answer": "Speaking Practice lets you say an answer aloud and gives feedback on length, pace and range. There is also a mock speaking test.",
+      "links": [
+        {
+          "title": "Speaking Practice",
+          "url": "speaking-practice/"
+        },
+        {
+          "title": "Practical English",
+          "url": "practical-english/"
+        }
+      ]
+    },
+    {
+      "id": "writing-help",
+      "must": [
+        "letter",
+        "notice",
+        "dialogue",
+        "guided writing",
+        "format",
+        "formats"
+      ],
+      "any": [
+        "write",
+        "writing",
+        "letter",
+        "notice",
+        "format",
+        "ol",
+        "paper"
+      ],
+      "answer": "The writing formats the examination asks for - letters, notices, dialogues, forms - are covered in Guided Writing, and Writing Practice will check a piece you type for word count, paragraphs and linking words.",
+      "links": [
+        {
+          "title": "Guided Writing",
+          "url": "teacher-resources/guided-writing/"
+        },
+        {
+          "title": "Writing Practice",
+          "url": "writing-practice/"
+        },
+        {
+          "title": "Classroom games for Grade 10",
+          "url": "teacher-resources/classroom-games/grade-10/"
+        }
+      ]
+    },
+    {
+      "id": "slow-learners",
+      "must": [
+        "slow",
+        "weak",
+        "remedial",
+        "mixed ability",
+        "mixedability",
+        "behind"
+      ],
+      "any": [
+        "slow",
+        "weak",
+        "remedial",
+        "mixed",
+        "support",
+        "help",
+        "struggling"
+      ],
+      "answer": "There are separate pages for remedial English, slow-learner support and mixed-ability teaching, all written for large classes rather than small ones.",
+      "links": [
+        {
+          "title": "Remedial English",
+          "url": "teacher-resources/remedial-english/"
+        },
+        {
+          "title": "Slow-Learner Support",
+          "url": "teacher-resources/slow-learner-support/"
+        },
+        {
+          "title": "Mixed-Ability Teaching",
+          "url": "teacher-resources/mixed-ability-teaching/"
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "must": [
+        "assessment",
+        "sba",
+        "rubric",
+        "rubrics",
+        "mark",
+        "marks",
+        "grading"
+      ],
+      "any": [
+        "assess",
+        "sba",
+        "rubric",
+        "mark",
+        "test",
+        "term"
+      ],
+      "answer": "Assessment covers marking consistently, rubrics, SBA tools and term-test preparation plans.",
+      "links": [
+        {
+          "title": "Assessment",
+          "url": "teacher-resources/assessment/"
+        },
+        {
+          "title": "Assessment Rubrics",
+          "url": "teacher-resources/rubrics/"
+        },
+        {
+          "title": "Sample SBA Tools",
+          "url": "teacher-resources/sba-samples/"
+        }
+      ]
+    },
+    {
+      "id": "ai-tools",
+      "must": [
+        "ai",
+        "chatgpt",
+        "chat gpt",
+        "claude",
+        "gemini",
+        "artificial intelligence"
+      ],
+      "any": [
+        "ai",
+        "use",
+        "tool",
+        "tools",
+        "prompt",
+        "prompts",
+        "teacher"
+      ],
+      "answer": "There is a guide to using AI tools for teaching - what they are genuinely good at, what they get wrong about a Sri Lankan syllabus, and what must never be typed into them. This site guide is not itself an AI: it is a keyword search over the pages here.",
+      "links": [
+        {
+          "title": "AI Tools for English Teachers",
+          "url": "teacher-resources/ai-tools-for-teachers/"
+        }
+      ]
+    },
+    {
+      "id": "esl-international",
+      "must": [
+        "esl",
+        "ielts",
+        "igcse",
+        "cefr",
+        "international",
+        "tefl"
+      ],
+      "any": [
+        "esl",
+        "ielts",
+        "igcse",
+        "international",
+        "level",
+        "b1",
+        "b2"
+      ],
+      "answer": "The Global English section is written for teachers and learners outside Sri Lanka: ESL lesson plans, worksheets by CEFR level, IGCSE material and IELTS practice.",
+      "links": [
+        {
+          "title": "Global English",
+          "url": "global-english/"
+        },
+        {
+          "title": "ESL classroom games",
+          "url": "global-english/esl/games/esl-classroom-games/"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "must": [
+        "contact",
+        "email",
+        "phone",
+        "reach",
+        "who runs"
+      ],
+      "any": [
+        "contact",
+        "email",
+        "message",
+        "ask",
+        "about"
+      ],
+      "answer": "Contact details are on the contact page. For a teaching question, the Telegram and WhatsApp groups usually get an answer the same day.",
+      "links": [
+        {
+          "title": "Contact",
+          "url": "contact/"
+        },
+        {
+          "title": "About RCF English",
+          "url": "about/"
+        },
+        {
+          "title": "The teacher groups",
+          "url": "about/online-communities/"
+        }
+      ]
+    }
+  ],
+  "suggestions": [
+    "Where are the O/L past papers?",
+    "Classroom games for Grade 6",
+    "Creative writing samples",
+    "English Day circular",
+    "How do I use AI for lesson planning?",
+    "Mutual transfers"
+  ]
+}

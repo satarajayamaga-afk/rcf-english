@@ -5557,3 +5557,67 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
 /* The add-to-home-screen bar pushes the reading-tools button up to 7.25rem,
    so the notice clears that instead. */
 .has-a2hs .unote { bottom: 11.25rem; }
+
+/* ---------------------------------------------------------------------------
+   ASK RCF ENGLISH - the site guide
+
+   A question box and a thread of answers. Not a floating chat bubble: the
+   bottom corners of this site already hold the reading-tools button, the
+   back-to-top control and the update notice, and a fourth floating thing
+   would be clutter. It lives on its own page, which also means it can rank.
+   --------------------------------------------------------------------------- */
+.ask { margin-block: var(--sp-3); }
+.ask__label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
+.ask__row { display: flex; gap: 0.5rem; }
+.ask__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+  color: var(--ink-900);
+  background: var(--paper, #fff);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius);
+}
+.ask__input:focus-visible { outline: 3px solid var(--teal-600); outline-offset: 1px; border-color: var(--teal-600); }
+.ask__go { flex: 0 0 auto; }
+.ask__chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
+.ask__chip {
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: var(--step--1);
+  color: var(--teal-800);
+  background: var(--teal-050);
+  border: 1px solid var(--teal-100);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.ask__chip:hover { background: var(--teal-100); border-color: var(--teal-600); }
+.ask__status { margin: 0.6rem 0 0; font-size: var(--step--1); color: var(--ink-700); }
+.ask__thread { margin-top: var(--sp-3); display: grid; gap: var(--sp-3); }
+.ask__turn { border-top: 1px solid var(--line); padding-top: var(--sp-3); }
+.ask__q { margin: 0 0 0.6rem; font-weight: 600; }
+.ask__qlabel {
+  display: block;
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-700);
+}
+.ask__answer {
+  padding: 0.9rem 1rem;
+  background: var(--teal-050);
+  border-left: 4px solid var(--teal-600);
+  border-radius: var(--radius-sm);
+}
+.ask__text { margin: 0 0 0.6rem; }
+.ask__more { margin: 0.9rem 0 0.4rem; font-size: var(--step--1); font-weight: 600; color: var(--ink-700); }
+.ask__links { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.3rem; }
+.ask__desc { color: var(--ink-700); font-size: var(--step--1); }
+.ask__noscript { margin-top: 0.8rem; }
+@media (max-width: 30rem) {
+  .ask__row { flex-wrap: wrap; }
+  .ask__go { width: 100%; }
+}
+@media print { .ask__form, .ask__chips, .ask__status { display: none !important; } }

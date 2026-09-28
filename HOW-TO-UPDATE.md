@@ -881,3 +881,68 @@ that day, so updates can be written in advance.
 
 To test it yourself, open the site, and in the browser console run
 `localStorage.removeItem('rcf-update-seen')` and reload.
+
+---
+
+## Task 10: Ask RCF English (the site guide)
+
+The page at `/ask/` lets a visitor type a question in plain English and get
+the right page. **It is not an artificial intelligence, and the page says so
+plainly.** It is a keyword matcher over written answers plus the site's own
+search index, and it runs entirely in the visitor's browser - nothing typed
+into it is sent anywhere.
+
+### Why it is not an AI
+
+A real AI assistant needs an API key. A static site has nowhere to hide one:
+anything in the page can be read by anybody who opens the developer tools,
+and a leaked key gets scraped and billed to you within days. Until there is
+somewhere server-side to hold a key, an honest search beats a chatbot that
+guesses. Do not "improve" this by putting a key in the JavaScript.
+
+### To add or change an answer
+
+Edit `data/assistant.json`. Each answer looks like this:
+
+```json
+{
+  "id": "study-packs",
+  "must": ["study pack", "pack", "packs"],
+  "any": ["study", "self", "grade"],
+  "answer": "One or two sentences. Keep it short.",
+  "links": [{ "title": "Study Packs", "url": "teacher-resources/study-packs/" }]
+}
+```
+
+- `must` - at least one of these has to appear in the question, or the answer
+  never fires. A phrase with a space is matched as a phrase.
+- `any` - each one that matches raises the score. Use these to beat a
+  competing answer that also matches.
+- Keep `answer` under 400 characters. The links do the work.
+
+**Then run the checker:**
+
+```bash
+node tools/check-assistant.js
+```
+
+This matters more than it looks. These links are written into the page by
+JavaScript at run time, so the build's own link checker cannot see them - a
+wrong slug here produces a 404 that nothing would ever report. The checker
+tests every link against the built search index and fails if a page does not
+exist. Run it after editing the answers, and after anything that renames or
+moves a page.
+
+Because it checks against the **built** index, build first and then run it.
+
+### The starter suggestions
+
+The chips under the box come from `"suggestions"` at the foot of the same
+file. Keep three to six, and make them real questions somebody would type.
+
+### What it deliberately cannot do
+
+Mark work, write an essay, or answer anything not on this site. If you want
+those, that needs the real thing - see Task 8b on advertising for why cost
+matters here, and note that a genuine assistant would need an Anthropic
+account and a server-side proxy before a single line of it could be written.

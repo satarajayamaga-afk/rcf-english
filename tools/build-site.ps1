@@ -1125,6 +1125,27 @@ function RenderBlock($block) {
             return $html
         }
 
+        'ask' {
+            # ASK RCF ENGLISH - the site guide.
+            # The markup ships complete and inert; assets/js/ask.js brings it to
+            # life. A visitor without JavaScript gets the form and the honest
+            # message below it rather than a broken box.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="ask">'
+            $html += '<form class="ask__form" id="ask-form" role="search">'
+            $html += '<label class="ask__label" for="ask-input">Ask a question about this site</label>'
+            $html += '<div class="ask__row">'
+            $html += '<input class="ask__input" id="ask-input" type="text" autocomplete="off" placeholder="Where are the Grade 9 past papers?">'
+            $html += '<button class="btn ask__go" type="submit">Ask</button>'
+            $html += '</div></form>'
+            $html += '<div class="ask__chips" id="ask-suggestions" hidden></div>'
+            $html += '<p class="ask__status" id="ask-status" role="status" aria-live="polite"></p>'
+            $html += '<div class="ask__thread" id="ask-thread"></div>'
+            $html += '<noscript><p class="ask__noscript">This guide needs JavaScript. The <a href="' + (E (Url 'search/')) + '">full site search</a> works without it.</p></noscript>'
+            $html += '</div>'
+            return $html + '</div></section>'
+        }
+
         'wordshake' {
             # The Wordshake letter grid. The markup is written here rather
             # than in the page's JSON because it is fixed: the game's own
@@ -2841,6 +2862,7 @@ function StaticList($source, $fixed, $limit = 0) {
 # The script each interactive block needs, loaded automatically on any page
 # that uses the block (see the module list in BuildPage).
 $script:BlockScripts = @{
+    'ask'          = 'ask'
     'browse'       = 'browse'
     'finder'       = 'finder'
     'paperLibrary' = 'paper-library'

@@ -1,0 +1,66 @@
+{
+  "_readme": [
+    "ASK RCF ENGLISH - the site guide.",
+    "",
+    "The page is deliberately honest that this is not an AI. A static site",
+    "cannot hold an API key safely, so what runs here is a keyword search over",
+    "data/assistant.json and the site's search index, entirely in the browser.",
+    "",
+    "Edit the answers in data/assistant.json, then run tools/check-assistant.js",
+    "- it verifies every link points at a page that exists, which the build's",
+    "own link checker cannot do for links written by JavaScript."
+  ],
+  "pages": [
+    {
+      "slug": "ask",
+      "title": "Ask RCF English",
+      "metaTitle": "Ask RCF English: Find Anything on This Site",
+      "description": "Ask a question in plain English and get the page you need, with common ones answered directly. It runs in your browser and sends nothing anywhere.",
+      "keywords": "ask rcf english, find english resources, sri lanka english teacher help, site guide, english resources search",
+      "kind": "page",
+      "tags": ["Site guide", "Search", "Free"],
+      "hero": {
+        "text": "Type a question the way you would say it. It will point you at the right page, and answer the common ones directly."
+      },
+      "blocks": [
+        {
+          "type": "ask"
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "This is a search, not an artificial intelligence",
+          "text": [
+            "It matches the words in your question against written answers and the titles of all 800-odd pages on this site. It does not think, it will not write your essay, and it cannot answer a question about something that is not on this site.",
+            "That is a deliberate choice. A genuine AI assistant needs a paid key held on a server, and a key put inside a web page can be read and used by anybody. Until there is somewhere safe to keep one, an honest search is better than a chatbot that guesses.",
+            "**Nothing you type is sent anywhere.** It all runs in your own browser, so no question you ask here is recorded, transmitted or seen by anybody."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What it can and cannot do",
+          "level": "h2",
+          "text": ["Worth knowing before you try it, so you are not disappointed by the wrong expectation."],
+          "bullets": [
+            "**It can find a page** from a plain question - *where are the Grade 9 past papers*, *games for grade 6*, *English Day circular*.",
+            "**It understands grades.** Put a grade in your question and it will prefer that grade's pages.",
+            "**It answers common questions directly** - about the transfer system, the teacher groups, study packs, marking schemes - in a sentence or two, with the links.",
+            "**It cannot mark your work,** write an essay, or explain a grammar point it has not been given an answer for.",
+            "**It only knows this site.** For anything else, use the full site search or a search engine."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "If this does not find it",
+          "level": "h2",
+          "items": [
+            { "title": "Search the whole site", "url": "search/", "text": ["Looks inside the pages rather than only at their titles and headings."] },
+            { "title": "English Teachers Resources", "url": "teacher-resources/", "text": ["Everything for teachers, arranged in groups by the order of the work."] },
+            { "title": "The teacher groups", "url": "about/online-communities/", "text": ["A Telegram group and a WhatsApp group where questions are usually answered the same day."] },
+            { "title": "AI Tools for English Teachers", "url": "teacher-resources/ai-tools-for-teachers/", "text": ["If you are looking for a real AI to help with planning, this is what they are good at and what they get wrong."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

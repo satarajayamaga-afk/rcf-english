@@ -1,0 +1,156 @@
+{
+  "_readme": [
+    "ENGLISH CAMP ACTIVITIES",
+    "",
+    "The guide itself is the Central Province English Unit's document, listed",
+    "from data/resources.json with subcategory 'english-camp'.",
+    "",
+    "The grade-wise activity packs are not here yet. The block that will hold",
+    "them is already on the page, filtered to type 'activity-pack' - a",
+    "grade-resources block with no matching files renders nothing at all, so",
+    "the page is correct now and will grow when the files are added. Add them",
+    "to data/resources.json with subcategory 'english-camp' and type",
+    "'activity-pack' and they will appear with no change to this file.",
+    "",
+    "No date is promised anywhere on this page for those files, because none",
+    "has been given."
+  ],
+  "pages": [
+    {
+      "slug": "teacher-resources/english-camp",
+      "title": "English Camp Activities",
+      "metaTitle": "English Camp Activities: Run a One-Day Camp",
+      "description": "How to run a one-day English camp: the timetable, ground rules, oath and five activity sessions, with the Central Province guide free to download.",
+      "keywords": "english camp, english camp activities, english day camp sri lanka, language camp, english camp timetable, english camp games, school english camp",
+      "kicker": "English Teachers Resources",
+      "kind": "teacher-resource",
+      "schema": "LearningResource",
+      "resourceType": "Teacher resource",
+      "audienceRole": "teacher",
+      "tags": ["English Camp", "Activities", "Whole day", "Free", "Printable"],
+      "breadcrumbs": [{ "label": "English Teachers Resources", "url": "teacher-resources/" }],
+      "backTo": { "label": "English Teachers Resources", "url": "teacher-resources/" },
+      "hero": {
+        "text": "A day where the whole point is that children speak English and enjoy it. Here is how the day is shaped, and the guide that sets it out session by session."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "What an English camp is for",
+          "level": "h2",
+          "text": [
+            "An English camp is a single day given over to using the language rather than studying it. The children are in mixed groups, they move between short activity sessions, and almost everything is spoken. It is not a lesson in a field: it is a day built so that a child who never speaks in class finds themselves speaking for four hours without noticing.",
+            "That is also why it works for the pupils who are furthest behind. In an ordinary period the same confident dozen answer everything. In a camp, the group cannot complete the activity unless everybody in it says something, so the quiet children are carried into speaking by the task rather than by the teacher."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The shape of the day",
+          "level": "h2",
+          "text": ["The Central Province guide below sets out a full day, and the shape is worth knowing before you read it - most of the work is in the first forty-five minutes, before a single activity begins."],
+          "bullets": [
+            "**Registration, then the oath.** The oath matters more than it sounds. The children promise to join in, to collaborate and to enjoy it, and having said so out loud they behave differently for the rest of the day.",
+            "**Grouping, then the ground rules.** The groups are mixed on purpose, and the rules are agreed with the children rather than announced at them. Safety first, listen, take part, share, be polite, have fun - and speak.",
+            "**Warm-up activities,** then the sessions. Short, physical, and noisy enough that the quiet children stop being conspicuous.",
+            "**Five activity sessions** with a tea break after the second. Each one in the guide gives the materials needed and the procedure, so another teacher can run it without you.",
+            "**A common wind-up session and a group cheer.** Ending together matters: a camp that simply stops leaves the day feeling like an interrupted lesson."
+          ]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "The guide",
+          "subcategory": "english-camp",
+          "resourceType": "guidelines",
+          "intro": ["The English Unit of the Central Province Department of Education's own document, free to download. The file size is on the card."]
+        },
+        {
+          "type": "grade-resources",
+          "heading": "Activity packs by grade",
+          "subcategory": "english-camp",
+          "resourceType": "activity-pack",
+          "intro": ["Activity packs for particular grades. Each one is listed with its grade and its file size."]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "More grade-wise activities are being added",
+          "text": [
+            "Grade-wise activity packs are being collected and will be listed on this page as they are supplied and their sharing is checked. There is no date for them yet, so none is given here.",
+            "In the meantime, the classroom games pages carry eighty-eight activities arranged by grade, and a good many of them work outdoors with a large group exactly as they do in a room."
+          ]
+        },
+        { "type": "adslot", "placement": "between" },
+        {
+          "type": "prose",
+          "heading": "Running one in a real school",
+          "level": "h2",
+          "text": ["The guide gives the programme. These are the practical things that decide whether the day works, and they are the parts usually learned the hard way."],
+          "bullets": [
+            "**Mix the groups across classes and grades.** A group of friends from one class will speak Sinhala or Tamil to each other all day. A group of strangers has to use the language they have in common, which is the one you want.",
+            "**Give every group a name and a cheer in the first ten minutes.** It sounds trivial. It is the single cheapest thing you can do to make a group of strangers behave like a team.",
+            "**One teacher stays with a group; one teacher stays with a station.** Decide which model you are using before the day. Mixing the two is how children end up unsupervised between sessions.",
+            "**Plan the tea break like a session.** It is the point at which a badly organised camp falls apart, and forty-five children with nothing to do for twenty minutes is not a break, it is a risk.",
+            "**Have a wet-weather version of every outdoor activity.** Write it down beforehand. Deciding in the rain, with the children already outside, never goes well.",
+            "**Tell the parents what it is.** A letter saying the children will be at school for a day of English activities, with the times and what to bring, prevents most of the misunderstandings a camp generates."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Before the day: the part nobody enjoys",
+          "level": "h2",
+          "text": ["Permission, supervision and safety are the school's responsibility and they are not covered by any activity guide. Settle them in writing before you plan a single session."],
+          "bullets": [
+            "**Written permission from the principal,** and whatever your zonal or provincial office requires. Ask rather than assume - requirements differ between zones.",
+            "**Parental consent in writing** for every child, kept by the school, especially if any part of the day is away from the school premises.",
+            "**A named teacher responsible for first aid,** and a note of who to telephone for each child. One person, named, not everybody vaguely.",
+            "**A head count at every transition,** and a written list of which child is in which group. This is the whole of camp safety in one line.",
+            "**Drinking water for a day of talking outdoors.** Children will not ask, and a hot day plus four hours of shouting is exactly how a camp ends early."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "Questions teachers ask",
+          "level": "h2",
+          "items": [
+            {
+              "q": "How many children can one camp take?",
+              "a": ["Work from the number of adults rather than the number of children. Groups of ten to twelve with a teacher for each group is comfortable; groups of twenty with one teacher is not a camp, it is crowd control. If you have four teachers, take forty to fifty children and run it well rather than taking a hundred and running it badly."]
+            },
+            {
+              "q": "Do we need a budget?",
+              "a": ["Very little. The activities in the guide use paper, cards and posters you can make. The real costs are tea and drinking water. A camp that needs money to work has been designed wrongly for most of our schools."]
+            },
+            {
+              "q": "What about the children with almost no English?",
+              "a": ["They are the reason to run one. Put them in mixed groups rather than together, choose activities where a contribution can be one word or an action, and tell your teachers plainly that a child who says three words in English that day has succeeded. Do not correct anybody's grammar in a camp - it is the fastest way to make the silent children silent again."]
+            },
+            {
+              "q": "Can this be done for a single grade?",
+              "a": ["Yes, and it is easier to organise. Mixed grades give the younger children more to copy and the older ones something to lead, which is worth the extra planning if you can manage it."]
+            },
+            {
+              "q": "Is it the same as an English Day?",
+              "a": ["No. An English Day is a competition with judges, winners and an audience. A camp has no winners and nobody watches - everybody takes part. Schools often run both, and the camp is usually the better one for the children who would never enter a competition."]
+            }
+          ]
+        },
+        {
+          "type": "print",
+          "label": "Print this page",
+          "note": "Prints without the site's menus or advertisements."
+        },
+        {
+          "type": "related",
+          "heading": "Related",
+          "level": "h2",
+          "items": [
+            { "title": "English Classroom Games", "url": "teacher-resources/classroom-games/", "text": ["Eighty-eight games by grade, most of which work outdoors with a large group."] },
+            { "title": "English Day Resources", "url": "teacher-resources/english-day/", "text": ["The competition side: circulars, the amended oratory and storytelling rules, and play scripts."] },
+            { "title": "Classroom Activities", "url": "teacher-resources/classroom-activities/", "text": ["Shorter activities for an ordinary lesson."] },
+            { "title": "Speaking Practice", "url": "speaking-practice/", "text": ["Say an answer aloud and get feedback on length, pace and range."] }
+          ]
+        }
+      ]
+    }
+  ]
+}
