@@ -2448,7 +2448,19 @@ function RenderBlock($block) {
                         $html += '<li class="minibook">'
                         $bimg = [string](P $b 'image')
                         if ($bimg) {
-                            $html += '<img class="minibook__cover" src="' + (E (Url $bimg)) + '" alt="' + (E ([string](P $b 'imageAlt'))) + '" loading="lazy" decoding="async">'
+                            # Use the thumbnail when one has been generated,
+                            # falling back to the full cover when it has not.
+                            $thumbRel = $bimg -replace '^assets/img/publications/', 'assets/img/thumbs/'
+                            # Forward slashes, deliberately: Test-Path accepts them,
+                            # and a backslash here does not survive being written
+                            # through a shell heredoc.
+                            $thumbAbs = Join-Path $ProjectRoot $thumbRel
+                            $useImg = $bimg
+                            if ($thumbRel -ne $bimg -and (Test-Path $thumbAbs)) { $useImg = $thumbRel }
+                            # width and height so the row does not jump when the
+                            # picture arrives: the box is 56px and the covers are
+                            # portrait, so 56x84 reserves the right space.
+                            $html += '<img class="minibook__cover" src="' + (E (Url $useImg)) + '" alt="' + (E ([string](P $b 'imageAlt'))) + '" width="56" height="84" loading="lazy" decoding="async">'
                         }
                         else {
                             $html += '<span class="minibook__cover minibook__cover--placeholder" aria-hidden="true"></span>'
@@ -2812,6 +2824,7 @@ function StaticList($source, $fixed, $limit = 0) {
         if (P $r 'level') { $html += '<span class="tag tag--level">' + (E (P $r 'level')) + '</span>' }
         if (P $r 'term')  { $html += '<span class="tag">' + (E (P $r 'term')) + ' term</span>' }
         if (P $r 'year')  { $html += '<span class="tag tag--year">' + (E (P $r 'year')) + '</span>' }
+        if ([string](P $r 'new') -eq 'yes') { $html += '<span class="tag tag--new">New</span>' }
         if ((P $r 'answers') -eq 'yes') { $html += '<span class="tag tag--answers">Answers included</span>' }
         # Only set on papers whose first page somebody has actually looked at.
         # edupub.gov.lk serves no HTTPS at all, so the link has to stay
@@ -3098,6 +3111,12 @@ function PaperCard($r) {
 
     # Tag row - the year first, because that is what a visitor scans for.
     $html += '<div class="tag-row">'
+    # "New" comes before the year: it is the one thing a returning visitor is
+    # scanning for, and these cards are also sorted to the top of their
+    # section. Set new:"yes" in data/papers.json and remove it when the paper
+    # is no longer new - nothing expires it automatically, because a date
+    # cutoff would quietly un-flag things nobody had looked at yet.
+    if ([string](P $r 'new') -eq 'yes') { $html += '<span class="tag tag--new">New</span>' }
     if ($year) { $html += '<span class="tag tag--year">' + (E $year) + '</span>' }
     else { $html += '<span class="tag tag--undated">Year not specified</span>' }
     $html += '<span class="tag tag--type">' + (E (TypeLabel (P $r 'type'))) + '</span>'
@@ -3592,6 +3611,21 @@ function RenderPaperLibrary($block) {
             continue
         }
         [void]$buckets[$key].Add($r)
+    }
+
+    # Anything flagged new:"yes" rises to the top of its section, keeping the
+    # order it was written in otherwise. A stable partition rather than a sort,
+    # so the existing order of everything else is untouched.
+    foreach ($k in @($buckets.Keys)) {
+        $b = $buckets[$k]
+        if ($b.Count -lt 2) { continue }
+        $fresh = @($b | Where-Object { [string](P $_ 'new') -eq 'yes' })
+        if ($fresh.Count -eq 0 -or $fresh.Count -eq $b.Count) { continue }
+        $rest = @($b | Where-Object { [string](P $_ 'new') -ne 'yes' })
+        $merged = New-Object System.Collections.ArrayList
+        foreach ($x in $fresh) { [void]$merged.Add($x) }
+        foreach ($x in $rest) { [void]$merged.Add($x) }
+        $buckets[$k] = $merged
     }
 
     $total = 0
