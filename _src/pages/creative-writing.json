@@ -49,6 +49,39 @@
           ]
         },
         {
+          "type": "chart",
+          "kind": "bar",
+          "title": "How long a composition should be, by grade",
+          "unit": " words",
+          "yLabel": "Words",
+          "categories": [
+            "Grade 6",
+            "Grade 7",
+            "Grade 8",
+            "Grade 9",
+            "Grade 10",
+            "Grade 11",
+            "Grade 12",
+            "Grade 13"
+          ],
+          "series": [
+            {
+              "name": "Target length",
+              "values": [
+                100,
+                110,
+                120,
+                130,
+                140,
+                165,
+                250,
+                250
+              ]
+            }
+          ],
+          "note": "About a hundred words at Grade 6 and ten more each year, a larger step at Grade 11 where the O/L work is judged, then 250 across both Advanced Level years."
+        },
+        {
           "type": "cards",
           "heading": "Choose a grade",
           "level": "h2",

@@ -144,6 +144,16 @@ const hub = {
       ]
     },
     {
+      type: "chart",
+      kind: "bar",
+      title: "How long a composition should be, by grade",
+      unit: " words",
+      yLabel: "Words",
+      categories: grades.map((x) => "Grade " + x.number),
+      series: [{ name: "Target length", values: grades.map((x) => TARGET[x.number]) }],
+      note: "About a hundred words at Grade 6 and ten more each year, a larger step at Grade 11 where the O/L work is judged, then 250 across both Advanced Level years."
+    },
+    {
       type: "cards", heading: "Choose a grade", level: "h2", columns: "4",
       items: grades.map((g) => ({
         title: `Grade ${g.number}`,

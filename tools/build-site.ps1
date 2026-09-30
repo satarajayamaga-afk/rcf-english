@@ -3178,7 +3178,21 @@ function PaperCard($r) {
 # numbers can be checked and are available to screen readers.
 # ---------------------------------------------------------------------------
 
-$script:ChartColours = @('#1f5fa8', '#d9822b', '#2a9d8f', '#8e5ea2', '#c0392b', '#6b7a8f')
+# CHART COLOURS - validated, not chosen by eye.
+#
+# Checked with the palette validator against this site's white surface. The
+# previous six had two real faults: '#6b7a8f' fell below the chroma floor, so
+# it read as grey and looked like a disabled series rather than a real one,
+# and '#d9822b' sat at 2.85:1 against white, below the 3:1 minimum.
+#
+# Four, not six. Six distinguishable hues could not be found for this set:
+# every sixth candidate collided with the red or the gold for a colour-blind
+# reader once ALL pairs were checked rather than only neighbouring ones. Four
+# pass every check, and no chart on this site uses more than three series.
+# A fifth series folds into 'Other' or becomes a second chart - it is never
+# given an invented colour, which is how palettes quietly become unreadable.
+$script:ChartColours = @('#1f5fa8', '#b07c12', '#2a9d8f', '#c0392b')
+$script:ChartPieRamp = @('#0a4c42', '#11705f', '#2a9d8f', '#62bfb2', '#9bd8cf')
 $script:ChartMarkers = @('circle', 'square', 'triangle', 'diamond', 'circle', 'square')
 
 function Num($n) { return ([double]$n).ToString('0.##', [Globalization.CultureInfo]::InvariantCulture) }
@@ -3315,13 +3329,13 @@ function RenderChartSvg($block) {
             $si = 0
             $ends = @()
             foreach ($s in $series) {
-                $c = $script:ChartColours[$si % 6]
+                $c = $script:ChartColours[$si % $script:ChartColours.Count]
                 $vals = (AsList (P $s 'values'))
                 $pts = @()
                 for ($i = 0; $i -lt $vals.Count; $i++) { $pts += (Num ($L + $step * $i)) + ',' + (Num ($T + $plotH - $plotH * (ChartValue $vals[$i]) / $yMax)) }
                 $dash = $(if ($si % 3 -eq 1) { ' stroke-dasharray="8 5"' } elseif ($si % 3 -eq 2) { ' stroke-dasharray="2 4"' } else { '' })
                 $svg += '<polyline points="' + ($pts -join ' ') + '" fill="none" stroke="' + $c + '" stroke-width="3"' + $dash + ' stroke-linejoin="round"/>'
-                for ($i = 0; $i -lt $vals.Count; $i++) { $svg += Marker $script:ChartMarkers[$si % 6] ($L + $step * $i) ($T + $plotH - $plotH * (ChartValue $vals[$i]) / $yMax) $c }
+                for ($i = 0; $i -lt $vals.Count; $i++) { $svg += Marker $script:ChartMarkers[$si % $script:ChartMarkers.Count] ($L + $step * $i) ($T + $plotH - $plotH * (ChartValue $vals[$i]) / $yMax) $c }
                 $ends += @{ y = ($T + $plotH - $plotH * (ChartValue $vals[$vals.Count - 1]) / $yMax); name = [string](P $s 'name'); c = $c }
                 $si++
             }
@@ -3340,7 +3354,7 @@ function RenderChartSvg($block) {
                     $v = ChartValue ((AsList (P $s 'values'))[$i])
                     $h = $plotH * $v / $yMax
                     $x = $gx + $barW * $si
-                    $svg += '<rect x="' + (Num $x) + '" y="' + (Num ($T + $plotH - $h)) + '" width="' + (Num ($barW - 2)) + '" height="' + (Num $h) + '" fill="' + $script:ChartColours[$si % 6] + '"><title>' + (E (P $s 'name')) + ', ' + (E $cats[$i]) + ': ' + (E ((AsList (P $s 'values'))[$i])) + $unit + '</title></rect>'
+                    $svg += '<rect x="' + (Num $x) + '" y="' + (Num ($T + $plotH - $h)) + '" width="' + (Num ($barW - 2)) + '" height="' + (Num $h) + '" fill="' + $script:ChartColours[$si % $script:ChartColours.Count] + '"><title>' + (E (P $s 'name')) + ', ' + (E $cats[$i]) + ': ' + (E ((AsList (P $s 'values'))[$i])) + $unit + '</title></rect>'
                     if ($barW -ge 18) { $svg += SvgText ($x + ($barW - 2) / 2) ($T + $plotH - $h - 5) (Figure $v) ' class="chart__value" text-anchor="middle"' }
                     $si++
                 }
@@ -3352,7 +3366,7 @@ function RenderChartSvg($block) {
             $lx = $L
             $si = 0
             foreach ($s in $series) {
-                $svg += '<rect x="' + (Num $lx) + '" y="16" width="14" height="14" fill="' + $script:ChartColours[$si % 6] + '"/>'
+                $svg += '<rect x="' + (Num $lx) + '" y="16" width="14" height="14" fill="' + $script:ChartColours[$si % $script:ChartColours.Count] + '"/>'
                 $svg += SvgText ($lx + 20) 28 (P $s 'name') ' class="chart__legend"'
                 $lx += 34 + ([string](P $s 'name')).Length * 7.5
                 $si++
@@ -3364,7 +3378,7 @@ function RenderChartSvg($block) {
         $pies = (AsList (P $block 'pies'))
         $colourOf = @{}
         $ci = 0
-        foreach ($p in $pies) { foreach ($sl in (AsList (P $p 'slices'))) { $lab = [string](P $sl 'label'); if (-not $colourOf.ContainsKey($lab)) { $colourOf[$lab] = $script:ChartColours[$ci % 6]; $ci++ } } }
+        foreach ($p in $pies) { foreach ($sl in (AsList (P $p 'slices'))) { $lab = [string](P $sl 'label'); if (-not $colourOf.ContainsKey($lab)) { $colourOf[$lab] = $script:ChartPieRamp[$ci % $script:ChartPieRamp.Count]; $ci++ } } }
         $cellW = 320; $W = $cellW * $pies.Count; $H = 420; $r = 110
         $svg += '<svg class="chart__svg" viewBox="0 0 ' + $W + ' ' + $H + '" role="img" aria-labelledby="{ID}-t">'
         $svg += '<title id="{ID}-t">' + (E $title) + '</title>'

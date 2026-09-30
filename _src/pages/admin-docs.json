@@ -64,6 +64,27 @@
           ]
         },
         {
+          "type": "chart",
+          "kind": "process",
+          "perRow": 3,
+          "title": "The three Efficiency Bars and the ten modules",
+          "steps": [
+            {
+              "title": "First Efficiency Bar",
+              "note": "Modules 1 to 4: competency framework and professionalism, teaching methodology, digital technology, educational law."
+            },
+            {
+              "title": "Second Efficiency Bar",
+              "note": "Modules 5 to 7: leadership and management, planning a learning activity, classroom management and inclusive education."
+            },
+            {
+              "title": "Third Efficiency Bar",
+              "note": "Modules 8 to 10: well-being and career guidance, the twenty-first century school, action research."
+            }
+          ],
+          "note": "Verified against the Ministry's Efficiency Bar page. Which Bar is required for which promotion is set by the Service Minute and is not stated here, because it was not verified - ask your office or read the Minute."
+        },
+        {
           "type": "prose",
           "heading": "Sri Lanka Teachers' Service",
           "level": "h2",
