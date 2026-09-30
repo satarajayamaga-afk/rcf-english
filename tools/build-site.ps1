@@ -4663,13 +4663,27 @@ function BuildPage($page) {
     $head += '<link rel="manifest" href="' + (E ($script:Root + 'manifest.webmanifest')) + '">'
     # Styles and scripts carry ?v=<content hash>, so a changed file has a new
     # address and no browser or service worker can keep serving the old one.
+    # Third-party origins are connected to early rather than when the parser
+    # reaches their script tag; on a phone that saves the DNS, TCP and TLS
+    # round trips, which is most of the delay before an advert can appear.
+    if ($script:AnalyticsHtml) {
+        $head += '<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>'
+    }
+    if ($script:AdsHtml) {
+        $head += '<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>'
+        $head += '<link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>'
+    }
     $head += '<link rel="stylesheet" href="' + (E (AssetUrl 'assets/css/styles.css')) + '">'
     # A page may ask for an extra stylesheet of its own, so a big section like
     # the Game Zone does not put its weight on the other 190 pages.
     foreach ($sheet in (AsList (P $page 'styles'))) {
         $head += '<link rel="stylesheet" href="' + (E (AssetUrl ('assets/css/' + $sheet + '.css'))) + '">'
     }
-    $head += '<script src="' + (E (AssetUrl 'assets/js/site-config.js')) + '"></script>'
+    # Deferred, not blocking. Nothing that runs before the first paint needs
+    # RCF_CONFIG: the reading script below does not use it, and lib.js, which
+    # does, is a module and therefore runs after parsing. defer keeps document
+    # order, so this still executes before nav.js and personal.js.
+    $head += '<script src="' + (E (AssetUrl 'assets/js/site-config.js')) + '" defer></script>'
     # Reading options are applied before the page paints, so a visitor who
     # chose large text never sees the page jump from small to large.
     $head += '<script>' + $script:ReadingScript + '</script>'
