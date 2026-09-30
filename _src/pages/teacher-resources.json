@@ -86,7 +86,8 @@
               "more": "Register",
               "text": [
                 "Where the documents governing your service live: transfers, promotions, the Efficiency Bar, foreign leave, pay and the Establishments Code. Linked to the official source, never copied."
-              ]
+              ],
+              "icon": "folder"
             },
             {
               "title": "Government Circulars",
@@ -99,7 +100,8 @@
                 "Links the always-current official index",
                 "Explains amendments and year-in-title traps",
                 "Why there is no English-teachers' circular series"
-              ]
+              ],
+              "icon": "paper"
             },
             {
               "title": "Important Links for Teachers",
@@ -112,7 +114,8 @@
                 "Every link tested before publication",
                 "The two documents that govern your service",
                 "NIE, EPD and the 30 RESCs"
-              ]
+              ],
+              "icon": "link"
             },
             {
               "title": "Mutual Transfers",
@@ -120,7 +123,8 @@
               "more": "Open",
               "text": [
                 "For English, Maths and Science teachers: find a teacher of your subject to exchange places with. Private: your details go only to a teacher whose request matches yours."
-              ]
+              ],
+              "icon": "people"
             }
           ]
         },
@@ -139,7 +143,8 @@
               "more": "Open",
               "text": [
                 "A workable lesson structure, and plans you can adapt."
-              ]
+              ],
+              "icon": "list"
             },
             {
               "title": "Lesson Plan Template",
@@ -147,7 +152,8 @@
               "more": "Open",
               "text": [
                 "A blank plan, an observation checklist and a self-evaluation form, free to print."
-              ]
+              ],
+              "icon": "paper"
             },
             {
               "title": "Sample PPP Lesson Plans",
@@ -155,7 +161,8 @@
               "more": "113 plans",
               "text": [
                 "Presentation, Practice and Production lessons built on Pupil's Book unit activities, for Grades 3, 4, 6 to 11 and A/L General English."
-              ]
+              ],
+              "icon": "list"
             },
             {
               "title": "Annual and Term Plan Templates",
@@ -163,7 +170,8 @@
               "more": "Grades 2 to 13",
               "text": [
                 "A yearly scheme and a term plan, with each grade's units listed."
-              ]
+              ],
+              "icon": "calendar"
             },
             {
               "title": "Daily and Weekly Notes Templates",
@@ -171,7 +179,8 @@
               "more": "Grades 2 to 13",
               "text": [
                 "Record-of-work forms with a sample entry for each grade."
-              ]
+              ],
+              "icon": "calendar"
             },
             {
               "title": "Competency Levels by Grade",
@@ -179,7 +188,8 @@
               "more": "Grades 6 to 11",
               "text": [
                 "The eight competencies and every competency level from the NIE Teachers' Guides."
-              ]
+              ],
+              "icon": "chart"
             }
           ]
         },
@@ -198,7 +208,8 @@
               "more": "26 packs",
               "text": [
                 "Ready-made study and self-learning packs for Grades 3 to 11, including the Way Forward term packs and the O/L packs, with answer keys where they were published."
-              ]
+              ],
+              "icon": "book"
             },
             {
               "title": "English Classroom Games",
@@ -206,7 +217,8 @@
               "more": "88 games",
               "text": [
                 "Eight games for every grade from 1 to 11, tied to what that grade is learning. No equipment, and each one says what to do in a class of forty-five."
-              ]
+              ],
+              "icon": "game"
             },
             {
               "title": "Worksheets",
@@ -214,7 +226,8 @@
               "more": "Open",
               "text": [
                 "Printable practice, and how to design your own."
-              ]
+              ],
+              "icon": "paper"
             },
             {
               "title": "Worksheets by Grade",
@@ -222,7 +235,8 @@
               "more": "60 worksheets",
               "text": [
                 "Ten worksheets for each grade from 6 to 11, covering reading, writing and grammar, each with an answer key."
-              ]
+              ],
+              "icon": "paper"
             },
             {
               "title": "Worksheet and Test Generator",
@@ -230,7 +244,8 @@
               "more": "Make a worksheet",
               "text": [
                 "Choose grade, topics and question types, and print a worksheet or test with an answer key."
-              ]
+              ],
+              "icon": "pencil"
             },
             {
               "title": "Classroom Activities",
@@ -238,7 +253,8 @@
               "more": "Open",
               "text": [
                 "Activities needing no materials and little preparation."
-              ]
+              ],
+              "icon": "game"
             },
             {
               "title": "Flashcards and Games",
@@ -246,7 +262,8 @@
               "more": "Make cards",
               "text": [
                 "Print flashcards from ready-made word sets or your own words, with eight games to play."
-              ]
+              ],
+              "icon": "game"
             },
             {
               "title": "Teaching Guides",
@@ -254,7 +271,8 @@
               "more": "Open",
               "text": [
                 "How to teach the difficult topics: tenses, articles, writing."
-              ]
+              ],
+              "icon": "book"
             },
             {
               "title": "Pupil's Books and Teachers' Guides",
@@ -262,12 +280,14 @@
               "more": "Grades 1 to 13",
               "text": [
                 "Direct links to every English book and guide the government publishes free."
-              ]
+              ],
+              "icon": "book"
             },
             {
               "title": "Literature Teaching",
               "url": "teacher-resources/literature-teaching/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "book"
             }
           ]
         },
@@ -286,7 +306,8 @@
               "more": "Open",
               "text": [
                 "Rules and routines, classes of forty, attention, behaviour, pair work and transitions."
-              ]
+              ],
+              "icon": "school"
             },
             {
               "title": "Mixed-Ability Teaching",
@@ -294,7 +315,8 @@
               "more": "Open",
               "text": [
                 "One class, six levels, one teacher: what actually works."
-              ]
+              ],
+              "icon": "people"
             },
             {
               "title": "Remedial English",
@@ -302,7 +324,8 @@
               "more": "Open",
               "text": [
                 "Where to start with a student who has fallen far behind."
-              ]
+              ],
+              "icon": "people"
             },
             {
               "title": "Slow-Learner Support",
@@ -310,7 +333,8 @@
               "more": "Open",
               "text": [
                 "Smaller steps, more models, more repetition — done deliberately."
-              ]
+              ],
+              "icon": "people"
             },
             {
               "title": "Guided Writing",
@@ -318,7 +342,8 @@
               "more": "Open",
               "text": [
                 "Teaching writing so that weak learners can succeed at it."
-              ]
+              ],
+              "icon": "pencil"
             }
           ]
         },
@@ -334,17 +359,20 @@
             {
               "title": "Assessment",
               "url": "teacher-resources/assessment/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "chart"
             },
             {
               "title": "Marking Guides",
               "url": "teacher-resources/marking-guides/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "award"
             },
             {
               "title": "Assessment Rubrics",
               "url": "teacher-resources/rubrics/",
-              "more": "Print"
+              "more": "Print",
+              "icon": "list"
             },
             {
               "title": "Sample SBA Tools",
@@ -352,22 +380,26 @@
               "more": "20 tools",
               "text": [
                 "School Based Assessment tools for English (Grades 2 to 13) and O/L Literature, in the school assessment tool format."
-              ]
+              ],
+              "icon": "clock"
             },
             {
               "title": "Term-Test Preparation Plans",
               "url": "teacher-resources/term-test-plans/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "calendar"
             },
             {
               "title": "Answer Development",
               "url": "teacher-resources/answer-development/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "pencil"
             },
             {
               "title": "Revision Strategies",
               "url": "teacher-resources/revision-strategies/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "clock"
             }
           ]
         },
@@ -386,7 +418,8 @@
               "more": "Open",
               "text": [
                 "The circulars, the amended oratory and storytelling rules, and material for the competitions: story skeletons, writing prompts and play scripts."
-              ]
+              ],
+              "icon": "award"
             },
             {
               "title": "English Camp Activities",
@@ -394,7 +427,8 @@
               "more": "Whole day",
               "text": [
                 "Running a one-day camp: the timetable, the oath and ground rules, and five activity sessions, with the Central Province guide to download."
-              ]
+              ],
+              "icon": "camp"
             },
             {
               "title": "Creative Writing: Model Compositions",
@@ -402,7 +436,8 @@
               "more": "Grades 6 to 13",
               "text": [
                 "Eighty compositions, ten for each grade, at the length each grade is expected to manage - 100 words at Grade 6 rising to 250 at A/L. Each carries a note on the one thing it shows."
-              ]
+              ],
+              "icon": "pencil"
             },
             {
               "title": "Sample Project Proposals",
@@ -410,7 +445,8 @@
               "more": "6 proposals",
               "text": [
                 "English Only Day, English Day, a reading programme, a wall newspaper and more."
-              ]
+              ],
+              "icon": "folder"
             }
           ]
         },
@@ -429,7 +465,8 @@
               "more": "Guide",
               "text": [
                 "Ready prompts for passages, questions and rubrics, what AI gets confidently wrong about a syllabus, and the one thing never to type into it."
-              ]
+              ],
+              "icon": "chat"
             },
             {
               "title": "ELT Articles",
@@ -437,17 +474,20 @@
               "more": "12 articles",
               "text": [
                 "Practical articles from English Teaching Forum for large classes: speaking, reading, writing, feedback and exams, each with a summary and the full article."
-              ]
+              ],
+              "icon": "paper"
             },
             {
               "title": "Professional Reading",
               "url": "teacher-resources/professional-reading/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "book"
             },
             {
               "title": "Professional Development and TKT",
               "url": "teacher-resources/professional-development/",
-              "more": "Open"
+              "more": "Open",
+              "icon": "award"
             },
             {
               "title": "The teacher resource groups",
@@ -455,7 +495,8 @@
               "more": "How to join",
               "text": [
                 "Telegram and WhatsApp groups where English teachers' questions are answered promptly and requested resources are shared the same day."
-              ]
+              ],
+              "icon": "chat"
             }
           ]
         },
@@ -474,7 +515,8 @@
               "more": "Open",
               "text": [
                 "Everything downloadable, in one filterable list."
-              ]
+              ],
+              "icon": "download"
             },
             {
               "title": "RCF Publications for Teachers",
@@ -482,7 +524,8 @@
               "more": "Open",
               "text": [
                 "Books written for classroom and tuition teaching."
-              ]
+              ],
+              "icon": "book"
             }
           ]
         },

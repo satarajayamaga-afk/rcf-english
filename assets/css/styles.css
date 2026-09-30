@@ -5647,3 +5647,9 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
 .pgo__disc { margin: 0 0 1.5rem; color: var(--ink-700); }
 .pgo__go { margin: 0 0 1rem; }
 .pgo__back { margin: 0; font-size: var(--step--1); }
+
+/* A drawn icon rather than a text badge. It inherits the tile's colour, so
+   there is one copy of each path and no second file for any theme. */
+.card__icon--svg { color: var(--teal-700); }
+.card__icon--svg svg { display: block; }
+@media print { .card__icon { display: none; } }

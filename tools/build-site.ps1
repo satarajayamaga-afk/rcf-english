@@ -813,7 +813,15 @@ function RenderBlock($block) {
                 if (P $item 'accent') { $cardCls += ' card--accent' }
                 $html += '<div class="' + $cardCls + '">'
                 $icon = P $item 'icon'
-                if ($icon) { $html += '<span class="card__icon" aria-hidden="true">' + (E $icon) + '</span>' }
+                if ($icon) {
+                    $iconKey = [string]$icon
+                    if ($script:Icons.ContainsKey($iconKey)) {
+                        # A named icon is drawn. aria-hidden because the card's
+                        # heading already says what it is: the icon is decoration.
+                        $html += '<span class="card__icon card__icon--svg" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="' + $script:Icons[$iconKey] + '"/></svg></span>'
+                    }
+                    else { $html += '<span class="card__icon" aria-hidden="true">' + (E $icon) + '</span>' }
+                }
                 $title = E (P $item 'title')
                 if ($target) {
                     $e = ''
@@ -3192,6 +3200,32 @@ function PaperCard($r) {
 # A fifth series folds into 'Other' or becomes a second chart - it is never
 # given an invented colour, which is how palettes quietly become unreadable.
 $script:ChartColours = @('#1f5fa8', '#b07c12', '#2a9d8f', '#c0392b')
+# CARD ICONS - line drawings, inlined where used.
+# Each is a 24x24 stroke path in currentColor, so it takes the card's own
+# colour and needs no file and no request. Roughly 200 bytes each; a raster
+# set would be tens of kilobytes and still look wrong at another size.
+$script:Icons = @{
+    'book' = 'M4 4h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4zM20 4h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z'
+    'paper' = 'M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4'
+    'pencil' = 'M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z'
+    'game' = 'M5 5h14v14H5zM9 9h.01M15 15h.01M12 12h.01'
+    'download' = 'M12 3v12M7 11l5 5 5-5M5 19h14'
+    'school' = 'M3 10l9-5 9 5-9 5zM6 12v5c0 1.2 2.9 3 6 3s6-1.8 6-3v-5'
+    'people' = 'M17 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9.5 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M22 20v-2a4 4 0 0 0-3-3.9'
+    'calendar' = 'M7 3v4M17 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z'
+    'chart' = 'M4 20V10M10 20V4M16 20v-7M2 20h20'
+    'search' = 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.3-4.3'
+    'chat' = 'M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z'
+    'globe' = 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9S9.5 5.5 12 3z'
+    'award' = 'M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8.2 13.9 7 22l5-3 5 3-1.2-8.1'
+    'clock' = 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2'
+    'list' = 'M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01'
+    'folder' = 'M4 5h5l2 3h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z'
+    'question' = 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM9.5 9.2a2.5 2.5 0 0 1 5 .3c0 1.7-2.5 2-2.5 3.5M12 17h.01'
+    'camp' = 'M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4'
+    'play' = 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM10 8.5l6 3.5-6 3.5z'
+    'link' = 'M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7'
+}
 $script:ChartPieRamp = @('#0a4c42', '#11705f', '#2a9d8f', '#62bfb2', '#9bd8cf')
 $script:ChartMarkers = @('circle', 'square', 'triangle', 'diamond', 'circle', 'square')
 
