@@ -45,6 +45,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "callout",
           "style": "info",
           "title": "What the “Clear scan” label means",
@@ -270,6 +274,10 @@
           "sectionNote": "Every Grade 10 paper on the site, English Language and English Literature together, newest year first. Enter a year to see only that year."
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "callout",
           "style": "legal",
           "title": "Who set these papers",
@@ -363,6 +371,10 @@
           "chooser": false,
           "sectionLabel": "Grade 11",
           "sectionNote": "Every Grade 11 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",
@@ -474,6 +486,10 @@
           "sectionNote": "Every Grade 9 paper on the site, newest year first. Enter a year to see only that year."
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Using a Grade 9 paper well",
           "level": "h2",
@@ -581,6 +597,10 @@
           "chooser": false,
           "sectionLabel": "Grade 8",
           "sectionNote": "Every Grade 8 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",
@@ -692,6 +712,10 @@
           "sectionNote": "Every Grade 7 paper on the site, newest year first. Enter a year to see only that year."
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "prose",
           "heading": "Using a Grade 7 paper well",
           "level": "h2",
@@ -799,6 +823,10 @@
           "chooser": false,
           "sectionLabel": "Grade 6",
           "sectionNote": "Every Grade 6 paper on the site, newest year first. Enter a year to see only that year."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",
@@ -994,6 +1022,10 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "cards",
           "heading": "Next",
           "columns": "3",
@@ -1082,6 +1114,10 @@
           "fixed": {
             "subject": "ol-english"
           }
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "cards",
@@ -1203,6 +1239,10 @@
             "subject": "ol-literature"
           },
           "sectionNote": "Every O/L English Literature paper on the site, for Grades 10 and 11 and for the examination itself, newest year first."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "cards",
@@ -1328,6 +1368,10 @@
           "sectionNote": "Every Advanced Level English Literature paper on the site, newest year first."
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "cards",
           "heading": "Prepare before you practise",
           "variant": "tint",
@@ -1444,6 +1488,10 @@
           "sectionNote": "Every model paper on the site, from Grade 1 to O/L, newest year first. The grade each one is for is printed on its card."
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "cards",
           "heading": "Related",
           "variant": "tint",
@@ -1526,6 +1574,10 @@
           }
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "callout",
           "style": "legal",
           "variant": "tint",
@@ -1593,6 +1645,10 @@
           "fixed": {
             "examination": "provincial"
           }
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "callout",
@@ -1670,6 +1726,10 @@
           "chooser": false,
           "sectionLabel": "Revision papers",
           "sectionNote": "Every revision paper on the site. The grade each one is for is printed on its card."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "cards",
@@ -1757,6 +1817,10 @@
           "sectionNote": "Every question bank on the site. The grade each one is for is printed on its card."
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "cards",
           "heading": "Question banks already on this site",
           "variant": "tint",
@@ -1832,6 +1896,10 @@
           "chooser": false,
           "sectionLabel": "Marking schemes",
           "sectionNote": "Every marking scheme on the site that may lawfully be published or linked, newest year first. The grade and subject are printed on each card."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "prose",
@@ -1937,6 +2005,10 @@
           "chooser": false,
           "sectionLabel": "Model answers",
           "sectionNote": "Every model answer document on the site, newest year first. The paper each one belongs to is named on its card."
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "cards",
