@@ -19,7 +19,6 @@
     "level 'Grade 1' and subcategory. Adding a new approved file there makes",
     "it appear here automatically."
   ],
-
   "pages": [
     {
       "slug": "primary-english/grade-1",
@@ -29,11 +28,24 @@
       "keywords": "Grade 1 English Sri Lanka, primary English grade 1, activity based oral English, grade 1 model paper, grade 1 activity book",
       "kicker": "Primary English",
       "kind": "page",
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
-      "hero": { "text": "Grade 1 English: the first words, the first sounds, and the first time a child hears that English is something you can play with." },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
+      "hero": {
+        "text": "Grade 1 English: the first words, the first sounds, and the first time a child hears that English is something you can play with."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 1 },
+        {
+          "type": "grade-dashboard",
+          "grade": 1
+        },
         {
           "type": "prose",
           "heading": "What Grade 1 covers",
@@ -55,24 +67,75 @@
           "type": "table",
           "heading": "The 16 themes, in syllabus order",
           "caption": "From the Activity Based Oral English syllabus outline. Grade 1 and Grade 2 cover the same themes at different depths.",
-          "columns": ["Theme", "What the child learns to say"],
+          "columns": [
+            "Theme",
+            "What the child learns to say"
+          ],
           "rows": [
-            ["1. We and the school", "Greetings, and asking and giving a name: *Good morning*, *What's your name?*, *I'm ...*"],
-            ["2. Our home", "Family words, and the polite phrases: *Thank you*, *You're welcome*, *Good night*."],
-            ["3. Animals that come into the garden", "Animal and colour words, and *Do you have a pet?* with *yes* and *no*."],
-            ["4. Play with water", "Verbs for what we do with water: *I wash*, *I drink*, *I eat*."],
-            ["5. Sinhala and Hindu New Year period", "Words for clothes, sweets and cleaning, and *Mother has ...*, *I like ...*"],
-            ["6. The sky we see", "Sun, moon, stars, clouds and colours, with *What colour is the ...?*"],
-            ["7. Things we eat and drink", "Food words, and expressing likes: *I like ... and ...*"],
-            ["8. How information is received", "Polite forms and personal information: *My name is ...*, *I'm sorry*."],
-            ["9. Changes in the environment", "Weather and tidiness words, with *It's ...* and the articles *a* and *an*."],
-            ["10. Likes and dislikes", "Places and foods, with *I like ...*"],
-            ["11. How we get our needs", "Asking politely: *Please give me ...*, *Can I have ...*, *Here you are*."],
-            ["12. Transport", "Vehicles and traffic lights, with *I see ...*, *I come by ...*"],
-            ["13. Play with light", "Light and dark words, with *It's ...* and *Is it ...?*"],
-            ["14. Places where people work", "Jobs and workplaces, with *He is ...*, *She is ...*, *What is she?*"],
-            ["15. Different places in the environment", "Garden and field words, with *There's ...* and *There are ...*"],
-            ["16. People who help us", "Simple commands and polite requests: *Can you help me?*, *Thank you very much*."]
+            [
+              "1. We and the school",
+              "Greetings, and asking and giving a name: *Good morning*, *What's your name?*, *I'm ...*"
+            ],
+            [
+              "2. Our home",
+              "Family words, and the polite phrases: *Thank you*, *You're welcome*, *Good night*."
+            ],
+            [
+              "3. Animals that come into the garden",
+              "Animal and colour words, and *Do you have a pet?* with *yes* and *no*."
+            ],
+            [
+              "4. Play with water",
+              "Verbs for what we do with water: *I wash*, *I drink*, *I eat*."
+            ],
+            [
+              "5. Sinhala and Hindu New Year period",
+              "Words for clothes, sweets and cleaning, and *Mother has ...*, *I like ...*"
+            ],
+            [
+              "6. The sky we see",
+              "Sun, moon, stars, clouds and colours, with *What colour is the ...?*"
+            ],
+            [
+              "7. Things we eat and drink",
+              "Food words, and expressing likes: *I like ... and ...*"
+            ],
+            [
+              "8. How information is received",
+              "Polite forms and personal information: *My name is ...*, *I'm sorry*."
+            ],
+            [
+              "9. Changes in the environment",
+              "Weather and tidiness words, with *It's ...* and the articles *a* and *an*."
+            ],
+            [
+              "10. Likes and dislikes",
+              "Places and foods, with *I like ...*"
+            ],
+            [
+              "11. How we get our needs",
+              "Asking politely: *Please give me ...*, *Can I have ...*, *Here you are*."
+            ],
+            [
+              "12. Transport",
+              "Vehicles and traffic lights, with *I see ...*, *I come by ...*"
+            ],
+            [
+              "13. Play with light",
+              "Light and dark words, with *It's ...* and *Is it ...?*"
+            ],
+            [
+              "14. Places where people work",
+              "Jobs and workplaces, with *He is ...*, *She is ...*, *What is she?*"
+            ],
+            [
+              "15. Different places in the environment",
+              "Garden and field words, with *There's ...* and *There are ...*"
+            ],
+            [
+              "16. People who help us",
+              "Simple commands and polite requests: *Can you help me?*, *Thank you very much*."
+            ]
           ]
         },
         {
@@ -119,14 +182,48 @@
           "eyebrow": "Elsewhere on this site",
           "columns": "3",
           "items": [
-            { "title": "Watch and Write: the Alphabet", "url": "primary-english/alphabet/watch-and-write/", "more": "Open", "text": ["Every capital and small letter drawn stroke by stroke on copy-book lines, then traced."] },
-            { "title": "Sing and Learn: Songs", "url": "primary-english/songs/", "more": "Open", "text": ["Songs for the Activity Based Oral English themes, with the words lighting up in time."] },
-            { "title": "Alphabet Practice", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter shapes, letter sounds, capitals and small letters, and how to hold a pencil."] },
-            { "title": "Poems and rhymes", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme is how the sounds of English are learned before the spelling is."] },
-            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Short activities that mark themselves and explain every answer."] }
+            {
+              "title": "Watch and Write: the Alphabet",
+              "url": "primary-english/alphabet/watch-and-write/",
+              "more": "Open",
+              "text": [
+                "Every capital and small letter drawn stroke by stroke on copy-book lines, then traced."
+              ]
+            },
+            {
+              "title": "Sing and Learn: Songs",
+              "url": "primary-english/songs/",
+              "more": "Open",
+              "text": [
+                "Songs for the Activity Based Oral English themes, with the words lighting up in time."
+              ]
+            },
+            {
+              "title": "Alphabet Practice",
+              "url": "primary-english/alphabet/",
+              "more": "Open",
+              "text": [
+                "Letter shapes, letter sounds, capitals and small letters, and how to hold a pencil."
+              ]
+            },
+            {
+              "title": "Poems and rhymes",
+              "url": "primary-english/poems/",
+              "more": "Open",
+              "text": [
+                "Rhyme is how the sounds of English are learned before the spelling is."
+              ]
+            },
+            {
+              "title": "Games and practice",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "Short activities that mark themselves and explain every answer."
+              ]
+            }
           ]
-        },
-        { "type": "adslot", "placement": "between" }
+        }
       ]
     }
   ]

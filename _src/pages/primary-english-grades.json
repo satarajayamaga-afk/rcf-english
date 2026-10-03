@@ -24,7 +24,6 @@
     "Grade 5 Scholarship stays at primary-english/grade-5-scholarship/ and",
     "is linked from Grade 5, never merged into ordinary syllabus work."
   ],
-
   "pages": [
     {
       "slug": "primary-english/grade-3",
@@ -34,9 +33,14 @@
       "keywords": "Grade 3 English Sri Lanka, primary English grade 3, alphabet sounds, this that, capital letters",
       "kicker": "Primary English",
       "kind": "page",
-      "hero": { "text": "Grade 3 English: the year the letters become words, and the words become short sentences." },
+      "hero": {
+        "text": "Grade 3 English: the year the letters become words, and the words become short sentences."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 3 },
+        {
+          "type": "grade-dashboard",
+          "grade": 3
+        },
         {
           "type": "prose",
           "heading": "What Grade 3 covers",
@@ -48,12 +52,27 @@
         {
           "type": "table",
           "heading": "The four competencies in Grade 3",
-          "columns": ["Skill", "What the syllabus asks for at this grade"],
+          "columns": [
+            "Skill",
+            "What the syllabus asks for at this grade"
+          ],
           "rows": [
-            ["Listening", "Identifying the sound each letter of the alphabet makes, and matching letters to sounds aloud."],
-            ["Speaking", "Verbally matching the letters of the alphabet; naming nouns and verbs from the child's immediate surroundings."],
-            ["Reading", "Reading a list of five to ten known words. Reading and understanding **this** and **that** in context. Simple texts with sentences of no more than five words."],
-            ["Writing", "Writing the letters of the alphabet independently. Beginning a sentence with a capital letter, writing a name with a capital first letter, and ending with a full stop."]
+            [
+              "Listening",
+              "Identifying the sound each letter of the alphabet makes, and matching letters to sounds aloud."
+            ],
+            [
+              "Speaking",
+              "Verbally matching the letters of the alphabet; naming nouns and verbs from the child's immediate surroundings."
+            ],
+            [
+              "Reading",
+              "Reading a list of five to ten known words. Reading and understanding **this** and **that** in context. Simple texts with sentences of no more than five words."
+            ],
+            [
+              "Writing",
+              "Writing the letters of the alphabet independently. Beginning a sentence with a capital letter, writing a name with a capital first letter, and ending with a full stop."
+            ]
           ]
         },
         {
@@ -70,9 +89,30 @@
           "eyebrow": "What we already have",
           "columns": "3",
           "items": [
-            { "title": "Alphabet and phonics", "url": "primary-english/alphabet/", "more": "Open", "text": ["Letter names against letter sounds, and blending sounds into words — the Grade 3 starting point."] },
-            { "title": "Poems and rhymes", "url": "primary-english/poems/", "more": "Open", "text": ["Rhyme makes the sounds of English easier to hear, which is what listening asks for here."] },
-            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Letter, word and sentence activities that mark themselves."] }
+            {
+              "title": "Alphabet and phonics",
+              "url": "primary-english/alphabet/",
+              "more": "Open",
+              "text": [
+                "Letter names against letter sounds, and blending sounds into words — the Grade 3 starting point."
+              ]
+            },
+            {
+              "title": "Poems and rhymes",
+              "url": "primary-english/poems/",
+              "more": "Open",
+              "text": [
+                "Rhyme makes the sounds of English easier to hear, which is what listening asks for here."
+              ]
+            },
+            {
+              "title": "Games and practice",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "Letter, word and sentence activities that mark themselves."
+              ]
+            }
           ]
         },
         {
@@ -82,11 +122,9 @@
           "text": [
             "Graded word lists of five to ten words, **this/that** practice, and writing exercises for capital letters and full stops are being prepared against the Grade 3 Teacher's Guide. They will appear here as each is checked."
           ]
-        },
-        { "type": "adslot", "placement": "between" }
+        }
       ]
     },
-
     {
       "slug": "primary-english/grade-4",
       "title": "Grade 4 English",
@@ -95,9 +133,14 @@
       "keywords": "Grade 4 English Sri Lanka, primary English grade 4, pronouns, vowel sounds, ordinals",
       "kicker": "Primary English",
       "kind": "page",
-      "hero": { "text": "Grade 4 English: longer sentences, pronouns used accurately, and writing that is properly punctuated." },
+      "hero": {
+        "text": "Grade 4 English: longer sentences, pronouns used accurately, and writing that is properly punctuated."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 4 },
+        {
+          "type": "grade-dashboard",
+          "grade": 4
+        },
         {
           "type": "prose",
           "heading": "What Grade 4 covers",
@@ -108,12 +151,27 @@
         {
           "type": "table",
           "heading": "The four competencies in Grade 4",
-          "columns": ["Skill", "What the syllabus asks for at this grade"],
+          "columns": [
+            "Skill",
+            "What the syllabus asks for at this grade"
+          ],
           "rows": [
-            ["Listening", "Understanding questions about personal information, likes and dislikes, abilities, polite offers and requests, and simple instructions and directions. Recognising cardinal numbers 0–50 and ordinals to 31st."],
-            ["Speaking", "Pronouncing short and long vowel sounds correctly. Using personal, possessive and object pronouns. Introducing others, describing animals and places, expressing feelings, asking and answering about likes and abilities."],
-            ["Reading", "Reading aloud words with short and long vowel sounds. Extracting specific information — names, things, places, numbers — from texts of five to eight sentences."],
-            ["Writing", "Copying words with correct letter formation, size and spacing. Using the **period and the question mark** appropriately. Writing simple sentences with correct spacing between words."]
+            [
+              "Listening",
+              "Understanding questions about personal information, likes and dislikes, abilities, polite offers and requests, and simple instructions and directions. Recognising cardinal numbers 0–50 and ordinals to 31st."
+            ],
+            [
+              "Speaking",
+              "Pronouncing short and long vowel sounds correctly. Using personal, possessive and object pronouns. Introducing others, describing animals and places, expressing feelings, asking and answering about likes and abilities."
+            ],
+            [
+              "Reading",
+              "Reading aloud words with short and long vowel sounds. Extracting specific information — names, things, places, numbers — from texts of five to eight sentences."
+            ],
+            [
+              "Writing",
+              "Copying words with correct letter formation, size and spacing. Using the **period and the question mark** appropriately. Writing simple sentences with correct spacing between words."
+            ]
           ]
         },
         {
@@ -130,9 +188,30 @@
           "eyebrow": "What we already have",
           "columns": "3",
           "items": [
-            { "title": "Reading", "url": "primary-english/reading/", "more": "Open", "text": ["Short passages with questions — the five-to-eight sentence length Grade 4 expects."] },
-            { "title": "Listening and speaking", "url": "primary-english/activities/", "more": "Open", "text": ["Ten-minute speaking and listening activities needing no materials."] },
-            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Word and sentence activities that explain every answer."] }
+            {
+              "title": "Reading",
+              "url": "primary-english/reading/",
+              "more": "Open",
+              "text": [
+                "Short passages with questions — the five-to-eight sentence length Grade 4 expects."
+              ]
+            },
+            {
+              "title": "Listening and speaking",
+              "url": "primary-english/activities/",
+              "more": "Open",
+              "text": [
+                "Ten-minute speaking and listening activities needing no materials."
+              ]
+            },
+            {
+              "title": "Games and practice",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "Word and sentence activities that explain every answer."
+              ]
+            }
           ]
         },
         {
@@ -142,11 +221,9 @@
           "text": [
             "Pronoun practice, short and long vowel work, and number and ordinal exercises are being prepared against the Grade 4 Teacher's Guide."
           ]
-        },
-        { "type": "adslot", "placement": "between" }
+        }
       ]
     },
-
     {
       "slug": "primary-english/grade-5",
       "title": "Grade 5 English",
@@ -155,9 +232,14 @@
       "keywords": "Grade 5 English Sri Lanka, primary English grade 5, simple present past continuous, notices timetables",
       "kicker": "Primary English",
       "kind": "page",
-      "hero": { "text": "Grade 5 English: three tenses, the texts of everyday life, and writing that is accurate on its own." },
+      "hero": {
+        "text": "Grade 5 English: three tenses, the texts of everyday life, and writing that is accurate on its own."
+      },
       "blocks": [
-        { "type": "grade-dashboard", "grade": 5 },
+        {
+          "type": "grade-dashboard",
+          "grade": 5
+        },
         {
           "type": "prose",
           "heading": "What Grade 5 covers",
@@ -168,12 +250,27 @@
         {
           "type": "table",
           "heading": "The four competencies in Grade 5",
-          "columns": ["Skill", "What the syllabus asks for at this grade"],
+          "columns": [
+            "Skill",
+            "What the syllabus asks for at this grade"
+          ],
           "rows": [
-            ["Listening", "Responding to questions on familiar topics, both information and confirmation questions, using **Who, When, What** and **Where**. Following announcements, dialogues, verbal messages and instructions."],
-            ["Speaking", "Pronouncing words, phrases and sentences properly, including the vowel rules — silent **e** as in *cake*, and two vowel letters making one sound. Using personal pronouns in sentences."],
-            ["Reading", "Reading the texts of daily life: **notices, leaflets, train and bus timetables, brochures, restaurant menus, advertisements and recipes**, as well as posters and labels."],
-            ["Writing", "Writing simple sentences on a given topic accurately, with correct **spelling, spacing between words and punctuation**. Copying addresses, lists of names and shopping lists."]
+            [
+              "Listening",
+              "Responding to questions on familiar topics, both information and confirmation questions, using **Who, When, What** and **Where**. Following announcements, dialogues, verbal messages and instructions."
+            ],
+            [
+              "Speaking",
+              "Pronouncing words, phrases and sentences properly, including the vowel rules — silent **e** as in *cake*, and two vowel letters making one sound. Using personal pronouns in sentences."
+            ],
+            [
+              "Reading",
+              "Reading the texts of daily life: **notices, leaflets, train and bus timetables, brochures, restaurant menus, advertisements and recipes**, as well as posters and labels."
+            ],
+            [
+              "Writing",
+              "Writing simple sentences on a given topic accurately, with correct **spelling, spacing between words and punctuation**. Copying addresses, lists of names and shopping lists."
+            ]
           ]
         },
         {
@@ -198,11 +295,46 @@
           "eyebrow": "What we already have",
           "columns": "3",
           "items": [
-            { "title": "Reading", "url": "primary-english/reading/", "more": "Open", "text": ["Passages with questions, at the length expected by the end of primary."] },
-            { "title": "Listening and speaking", "url": "primary-english/activities/", "more": "Open", "text": ["Speaking and listening activities for a class or a single child."] },
-            { "title": "Poems and rhymes", "url": "primary-english/poems/", "more": "Open", "text": ["Poems to read, learn and talk about."] },
-            { "title": "Games and practice", "url": "primary-english/games/", "more": "Open", "text": ["Self-marking practice across the primary skills."] },
-            { "title": "Grade 5 Scholarship", "url": "primary-english/grade-5-scholarship/", "more": "Separate", "text": ["The scholarship English work, kept apart from the ordinary syllabus."] }
+            {
+              "title": "Reading",
+              "url": "primary-english/reading/",
+              "more": "Open",
+              "text": [
+                "Passages with questions, at the length expected by the end of primary."
+              ]
+            },
+            {
+              "title": "Listening and speaking",
+              "url": "primary-english/activities/",
+              "more": "Open",
+              "text": [
+                "Speaking and listening activities for a class or a single child."
+              ]
+            },
+            {
+              "title": "Poems and rhymes",
+              "url": "primary-english/poems/",
+              "more": "Open",
+              "text": [
+                "Poems to read, learn and talk about."
+              ]
+            },
+            {
+              "title": "Games and practice",
+              "url": "primary-english/games/",
+              "more": "Open",
+              "text": [
+                "Self-marking practice across the primary skills."
+              ]
+            },
+            {
+              "title": "Grade 5 Scholarship",
+              "url": "primary-english/grade-5-scholarship/",
+              "more": "Separate",
+              "text": [
+                "The scholarship English work, kept apart from the ordinary syllabus."
+              ]
+            }
           ]
         },
         {
@@ -212,8 +344,7 @@
           "text": [
             "Practice on the three tenses, and reading work built on notices, timetables, menus and recipes, are being prepared against the Grade 5 Teacher's Guide."
           ]
-        },
-        { "type": "adslot", "placement": "between" }
+        }
       ]
     }
   ]
