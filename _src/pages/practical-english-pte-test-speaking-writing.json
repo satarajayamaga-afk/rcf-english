@@ -15,9 +15,20 @@
       "title": "PTE Practice Test 1: Speaking and Writing",
       "metaTitle": "PTE Academic Speaking and Writing Practice Test | RCF English",
       "description": "An original PTE Academic Speaking and Writing practice test covering all ten task types, with a self-assessment checklist and model answers for both writing tasks.",
-      "keywords": ["PTE speaking practice", "PTE write essay", "PTE summarize written text"],
+      "keywords": [
+        "PTE speaking practice",
+        "PTE write essay",
+        "PTE summarize written text"
+      ],
       "kicker": "PTE Practice Test 1",
       "kind": "guidance",
+      "tags": [
+        "PTE Academic",
+        "Speaking",
+        "Writing",
+        "Test preparation",
+        "Free"
+      ],
       "breadcrumbs": [
         {
           "label": "Practical English",
@@ -105,11 +116,23 @@
           "title": "Average daily water use per person, five cities, 2025",
           "unit": " litres",
           "yLabel": "Litres per person per day",
-          "categories": ["Alvaro", "Benside", "Castermill", "Dunrea", "Elmford"],
+          "categories": [
+            "Alvaro",
+            "Benside",
+            "Castermill",
+            "Dunrea",
+            "Elmford"
+          ],
           "series": [
             {
               "name": "Litres per person per day",
-              "values": [95, 142, 210, 118, 76]
+              "values": [
+                95,
+                142,
+                210,
+                118,
+                76
+              ]
             }
           ],
           "note": "Invented data for practice. Castermill is the highest at 210 litres, Elmford the lowest at 76 - a difference of nearly three times between the two."

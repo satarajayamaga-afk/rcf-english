@@ -12,9 +12,19 @@
       "title": "PTE Academic Practice Test 1",
       "metaTitle": "Free PTE Academic Practice Test 1 with Answers | RCF English",
       "description": "A complete original PTE Academic practice test: Speaking and Writing, Reading and Listening, in the real format and timings, with a full answer key and model answers.",
-      "keywords": ["PTE practice test", "PTE Academic practice", "free PTE test with answers"],
+      "keywords": [
+        "PTE practice test",
+        "PTE Academic practice",
+        "free PTE test with answers"
+      ],
       "kicker": "PTE Academic",
       "kind": "guidance",
+      "tags": [
+        "PTE Academic",
+        "Test preparation",
+        "Teenagers and adults",
+        "Free"
+      ],
       "breadcrumbs": [
         {
           "label": "Practical English",
@@ -60,12 +70,37 @@
           "heading": "The three parts",
           "level": "h2",
           "caption": "Take them in this order and in one sitting if you want a realistic result. Timings follow the published ranges for the real test.",
-          "columns": ["Part", "Time", "Task types", "Open"],
+          "columns": [
+            "Part",
+            "Time",
+            "Task types",
+            "Open"
+          ],
           "rows": [
-            ["Part 1: Speaking and Writing", "76 to 84 minutes", "10", "[Speaking and Writing](practical-english/pte/practice-test-1/speaking-writing/)"],
-            ["Part 2: Reading", "23 to 30 minutes", "5", "[Reading](practical-english/pte/practice-test-1/reading/)"],
-            ["Part 3: Listening", "31 to 39 minutes", "8", "[Listening](practical-english/pte/practice-test-1/listening/)"],
-            ["Answer key and model answers", "-", "-", "[Answers](practical-english/pte/practice-test-1/answers/)"]
+            [
+              "Part 1: Speaking and Writing",
+              "76 to 84 minutes",
+              "10",
+              "[Speaking and Writing](practical-english/pte/practice-test-1/speaking-writing/)"
+            ],
+            [
+              "Part 2: Reading",
+              "23 to 30 minutes",
+              "5",
+              "[Reading](practical-english/pte/practice-test-1/reading/)"
+            ],
+            [
+              "Part 3: Listening",
+              "31 to 39 minutes",
+              "8",
+              "[Listening](practical-english/pte/practice-test-1/listening/)"
+            ],
+            [
+              "Answer key and model answers",
+              "-",
+              "-",
+              "[Answers](practical-english/pte/practice-test-1/answers/)"
+            ]
           ]
         },
         {
@@ -107,6 +142,10 @@
               ]
             }
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "callout",

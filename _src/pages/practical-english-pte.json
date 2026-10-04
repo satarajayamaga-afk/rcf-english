@@ -17,9 +17,21 @@
       "title": "PTE Academic",
       "metaTitle": "PTE Academic: Format, Scoring and Free Practice Tests | RCF English",
       "description": "What PTE Academic is, the three PTE tests and who each one is for, the full test format with timings, how the 10-90 score works, and how PTE compares with IELTS.",
-      "keywords": ["PTE Academic", "PTE test format", "PTE vs IELTS", "PTE practice test"],
+      "keywords": [
+        "PTE Academic",
+        "PTE test format",
+        "PTE vs IELTS",
+        "PTE practice test"
+      ],
       "kicker": "Practical English",
       "kind": "guidance",
+      "tags": [
+        "PTE Academic",
+        "Test preparation",
+        "Examinations",
+        "Teenagers and adults",
+        "Free"
+      ],
       "breadcrumbs": [
         {
           "label": "Practical English",
@@ -58,11 +70,23 @@
           "heading": "There is more than one PTE",
           "level": "h2",
           "caption": "People often say 'PTE' meaning PTE Academic, but Pearson runs three different tests. Taking the wrong one wastes the fee, so check what the university or visa route actually asks for before you book.",
-          "columns": ["Test", "What it is for"],
+          "columns": [
+            "Test",
+            "What it is for"
+          ],
           "rows": [
-            ["PTE Academic", "University and college study worldwide, visa applications to Australia and New Zealand, and professional registration."],
-            ["PTE Core", "A general English test, recognised by the Canadian government for immigration and citizenship applications."],
-            ["PTE Home and PTE Academic UKVI", "UK visa applications - to work, to join family, and to settle."]
+            [
+              "PTE Academic",
+              "University and college study worldwide, visa applications to Australia and New Zealand, and professional registration."
+            ],
+            [
+              "PTE Core",
+              "A general English test, recognised by the Canadian government for immigration and citizenship applications."
+            ],
+            [
+              "PTE Home and PTE Academic UKVI",
+              "UK visa applications - to work, to join family, and to settle."
+            ]
           ]
         },
         {
@@ -75,16 +99,40 @@
           ]
         },
         {
+          "type": "adslot",
+          "placement": "between"
+        },
+        {
           "type": "table",
           "heading": "What PTE Academic contains",
           "level": "h2",
           "caption": "The test takes about two hours in three parts, taken in one sitting. Timings vary a little between test versions, which is why Pearson publishes them as ranges. Checked against pearsonpte.com on 4 October 2026.",
-          "columns": ["Part", "Time", "Task types"],
+          "columns": [
+            "Part",
+            "Time",
+            "Task types"
+          ],
           "rows": [
-            ["Part 1: Speaking and Writing", "76 to 84 minutes", "10"],
-            ["Part 2: Reading", "23 to 30 minutes", "5"],
-            ["Part 3: Listening", "31 to 39 minutes", "8"],
-            ["**Whole test**", "**About 2 hours**", "**23**"]
+            [
+              "Part 1: Speaking and Writing",
+              "76 to 84 minutes",
+              "10"
+            ],
+            [
+              "Part 2: Reading",
+              "23 to 30 minutes",
+              "5"
+            ],
+            [
+              "Part 3: Listening",
+              "31 to 39 minutes",
+              "8"
+            ],
+            [
+              "**Whole test**",
+              "**About 2 hours**",
+              "**23**"
+            ]
           ]
         },
         {
@@ -144,6 +192,10 @@
             "Two things about the marking matter for how you prepare. First, **every item is machine scored** - some on whether the answer is right, others also on the form and quality of the response. Second, many tasks feed more than one skill score: repeating a sentence tests listening as well as speaking, so a weak score in one skill can come from a problem somewhere you did not expect.",
             "Minimum scores are set by the university, regulator or visa route - not by Pearson. Check the number you need with them directly, and read the official explanation of scoring at [pearsonpte.com](https://www.pearsonpte.com/pte-academic/scoring/)."
           ]
+        },
+        {
+          "type": "adslot",
+          "placement": "between"
         },
         {
           "type": "accordion",
