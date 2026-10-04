@@ -1,0 +1,218 @@
+{
+  "_readme": [
+    "PTE section hub. Sits under Practical English beside IELTS, because PTE does the same job",
+    "as IELTS - university admission, professional registration and visas - and is not a school",
+    "board qualification, which is what Global English covers.",
+    "",
+    "RULE FOR THIS SECTION: PTE is Pearson's test. Nothing from Pearson is reproduced here.",
+    "Every passage, question and model answer in the practice tests is written by RCF English.",
+    "Facts about the test format, fees, dates and scoring are LINKED to pearsonpte.com, never",
+    "copied, and must be re-checked against that site before any edit - Pearson changes the",
+    "format (Summarize Group Discussion and Respond to a Situation are recent additions).",
+    "Format and scoring below were checked against pearsonpte.com on 2026-10-04."
+  ],
+  "pages": [
+    {
+      "slug": "practical-english/pte",
+      "title": "PTE Academic",
+      "metaTitle": "PTE Academic: Format, Scoring and Free Practice Tests | RCF English",
+      "description": "What PTE Academic is, the three PTE tests and who each one is for, the full test format with timings, how the 10-90 score works, and how PTE compares with IELTS.",
+      "keywords": ["PTE Academic", "PTE test format", "PTE vs IELTS", "PTE practice test"],
+      "kicker": "Practical English",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Practical English",
+        "url": "practical-english/"
+      },
+      "hero": {
+        "text": "A computer-based English test used for university entry, professional registration and visas. This page explains what it contains, how it is scored, and how it differs from IELTS."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial - RCF English is not connected to Pearson",
+          "text": [
+            "PTE and PTE Academic are Pearson's tests and Pearson's trademarks. RCF English is **not** connected to Pearson, and nothing here is produced, approved or endorsed by them.",
+            "The practice tests in this section are **original material written by RCF English**. They follow the published format of the test. They are not past papers and no Pearson question, passage or answer appears anywhere on this site.",
+            "For fees, test dates, booking, score validity and anything official, go to **[pearsonpte.com](https://www.pearsonpte.com/)**. Always confirm the current format there before you book - Pearson changes it, and this page was last checked on 4 October 2026."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What PTE is",
+          "level": "h2",
+          "text": [
+            "PTE is a computer-based English test. You sit it at a test centre, you speak into a headset rather than to a person, and **every answer is marked by computer** - there is no human examiner. That single fact explains most of what is strange about the test, and most of how you should prepare for it.",
+            "Because a machine marks it, the test rewards things a machine can measure: clear pronunciation at a natural speed, fluency without long pauses, and answers that keep to the word limit and the task. It is less forgiving of hesitation than a human examiner would be, and more forgiving of a dull answer that is clearly said. That is not a trick - it is simply what the scoring measures."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "There is more than one PTE",
+          "level": "h2",
+          "caption": "People often say 'PTE' meaning PTE Academic, but Pearson runs three different tests. Taking the wrong one wastes the fee, so check what the university or visa route actually asks for before you book.",
+          "columns": ["Test", "What it is for"],
+          "rows": [
+            ["PTE Academic", "University and college study worldwide, visa applications to Australia and New Zealand, and professional registration."],
+            ["PTE Core", "A general English test, recognised by the Canadian government for immigration and citizenship applications."],
+            ["PTE Home and PTE Academic UKVI", "UK visa applications - to work, to join family, and to settle."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warn",
+          "title": "Check what you actually need before paying",
+          "text": [
+            "The three tests are not interchangeable and the fee is not refunded because you sat the wrong one. The university, the regulator or the visa route tells you which test and which minimum score it accepts - that requirement, not a general impression, is what you book against.",
+            "Requirements also change. Confirm yours directly with the institution you are applying to, and confirm the test details at [pearsonpte.com](https://www.pearsonpte.com/), on the day you book."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What PTE Academic contains",
+          "level": "h2",
+          "caption": "The test takes about two hours in three parts, taken in one sitting. Timings vary a little between test versions, which is why Pearson publishes them as ranges. Checked against pearsonpte.com on 4 October 2026.",
+          "columns": ["Part", "Time", "Task types"],
+          "rows": [
+            ["Part 1: Speaking and Writing", "76 to 84 minutes", "10"],
+            ["Part 2: Reading", "23 to 30 minutes", "5"],
+            ["Part 3: Listening", "31 to 39 minutes", "8"],
+            ["**Whole test**", "**About 2 hours**", "**23**"]
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "The task types, part by part",
+          "level": "h2",
+          "intro": [
+            "Twenty-three task types is a lot to meet for the first time on test day. Read these once now, then again after your first practice test, when they will mean something."
+          ],
+          "items": [
+            {
+              "q": "Part 1: Speaking and Writing",
+              "a": [
+                "**Personal Introduction** - not scored. It is sent to institutions with your result, but it does not affect your score.",
+                "**Read Aloud** - a text of up to 60 words appears and you read it aloud.",
+                "**Repeat Sentence** - you hear a sentence and repeat it. You get about 15 seconds.",
+                "**Describe Image** - an image appears and you describe it. About 40 seconds.",
+                "**Retell Lecture** - you hear a lecture of up to 90 seconds, then retell it in about 40 seconds.",
+                "**Answer Short Question** - a short question, answered in one word or a few. About 10 seconds.",
+                "**Summarize Group Discussion** - you hear a discussion of about three minutes and summarise it in two.",
+                "**Respond to a Situation** - a situation is described; you have about 10 seconds to think and 40 to speak.",
+                "**Summarize Written Text** - a text of up to 300 words, summarised in **one sentence**, in 10 minutes.",
+                "**Write Essay** - an argument essay of 200 to 300 words in 20 minutes."
+              ]
+            },
+            {
+              "q": "Part 2: Reading",
+              "a": [
+                "**Fill in the Blanks (Dropdown)** - choose the right word for each gap from a dropdown list.",
+                "**Multiple Choice, Multiple Answers** - more than one option is correct, and wrong choices cost you.",
+                "**Reorder Paragraph** - sentences appear out of order and you put them back.",
+                "**Fill in the Blanks (Drag and Drop)** - drag words from a bank into the gaps.",
+                "**Multiple Choice, Single Answer** - one correct option."
+              ]
+            },
+            {
+              "q": "Part 3: Listening",
+              "a": [
+                "**Summarize Spoken Text** - listen, then write a short summary.",
+                "**Multiple Choice, Multiple Answers** - as in Reading, but on a recording.",
+                "**Fill in the Blanks** - the transcript appears with gaps, and you type the missing words as you hear them.",
+                "**Highlight Correct Summary** - choose the paragraph that best summarises what you heard.",
+                "**Multiple Choice, Single Answer** - one correct option.",
+                "**Select Missing Word** - the recording cuts off and you choose what completes it.",
+                "**Highlight Incorrect Words** - the transcript differs from the recording; click the words that do not match.",
+                "**Write from Dictation** - you hear a sentence once and type it exactly."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How the score works",
+          "level": "h2",
+          "text": [
+            "PTE reports an **overall score from 10 to 90** on Pearson's Global Scale of English, where 90 is the highest. You also get four skill scores - speaking, listening, reading and writing - each on that same 10 to 90 range. The scale is aligned to the CEFR levels, which is how a PTE score can be compared with other English qualifications.",
+            "Two things about the marking matter for how you prepare. First, **every item is machine scored** - some on whether the answer is right, others also on the form and quality of the response. Second, many tasks feed more than one skill score: repeating a sentence tests listening as well as speaking, so a weak score in one skill can come from a problem somewhere you did not expect.",
+            "Minimum scores are set by the university, regulator or visa route - not by Pearson. Check the number you need with them directly, and read the official explanation of scoring at [pearsonpte.com](https://www.pearsonpte.com/pte-academic/scoring/)."
+          ]
+        },
+        {
+          "type": "accordion",
+          "heading": "PTE or IELTS?",
+          "level": "h2",
+          "intro": [
+            "Both are accepted very widely, so for most people this is not a question of which test is better but of which one suits how you work. If you are deciding, these are the differences that actually change the answer."
+          ],
+          "items": [
+            {
+              "q": "Who marks it?",
+              "a": [
+                "PTE is marked entirely by computer. IELTS Speaking is a conversation with a human examiner, and IELTS Writing is marked by a person.",
+                "If a face-to-face interview makes you freeze, PTE removes it. If you rely on a listener reacting to you, PTE takes that away - the headset gives you nothing back."
+              ]
+            },
+            {
+              "q": "How quickly do results come?",
+              "a": [
+                "PTE results are typically much faster than IELTS, because nothing waits for a human marker. If you are close to a visa or admission deadline, that gap is often the deciding factor.",
+                "Do not rely on a remembered turnaround time, including this one. Both change their service times - check the current figure with each test on the day you plan."
+              ]
+            },
+            {
+              "q": "Which is easier?",
+              "a": [
+                "Neither, and anyone promising you an easier test is selling something. They are both pitched at the same levels and both report onto the CEFR.",
+                "What differs is where the difficulty sits. PTE punishes hesitation and unclear pronunciation harder than a human examiner would. IELTS asks you to hold a real conversation and to handle a marker who is listening for range and accuracy, not just clarity.",
+                "The honest test is to try one practice test of each under time. Whichever leaves you less rattled is your test."
+              ]
+            },
+            {
+              "q": "Can I prepare for both at once?",
+              "a": [
+                "Largely, yes. Reading quickly, planning an argument essay in two minutes, and summarising a lecture you heard once are the same skills in both tests.",
+                "The task formats are not the same, though, and they are unusual enough that meeting them cold costs marks. Build the underlying English with whichever material you like, then spend the last stretch on the specific task types of the test you have actually booked."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Where to go next",
+          "level": "h2",
+          "items": [
+            {
+              "title": "PTE Academic Practice Test 1",
+              "url": "practical-english/pte/practice-test-1/",
+              "text": [
+                "A full original practice test in the PTE format, with a complete answer key and model answers."
+              ]
+            },
+            {
+              "title": "IELTS",
+              "url": "practical-english/ielts/",
+              "text": [
+                "The other route. Overview, skills guides and full practice tests, if you are still deciding between the two."
+              ]
+            },
+            {
+              "title": "Practical English",
+              "url": "practical-english/",
+              "text": [
+                "Everything in this section - the English you need for study, work and life rather than for a school exam."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "_readme": [
+    "PTE Academic Practice Test 1 - overview page. Links to the three part pages and the answers.",
+    "",
+    "All material is original RCF English writing. Nothing is taken from Pearson. The legal",
+    "callout must stay on every page of this test. Format checked against pearsonpte.com",
+    "on 2026-10-04."
+  ],
+  "pages": [
+    {
+      "slug": "practical-english/pte/practice-test-1",
+      "title": "PTE Academic Practice Test 1",
+      "metaTitle": "Free PTE Academic Practice Test 1 with Answers | RCF English",
+      "description": "A complete original PTE Academic practice test: Speaking and Writing, Reading and Listening, in the real format and timings, with a full answer key and model answers.",
+      "keywords": ["PTE practice test", "PTE Academic practice", "free PTE test with answers"],
+      "kicker": "PTE Academic",
+      "kind": "guidance",
+      "breadcrumbs": [
+        {
+          "label": "Practical English",
+          "url": "practical-english/"
+        },
+        {
+          "label": "PTE Academic",
+          "url": "practical-english/pte/"
+        }
+      ],
+      "backTo": {
+        "label": "PTE Academic",
+        "url": "practical-english/pte/"
+      },
+      "hero": {
+        "text": "A full practice test in the PTE Academic format. Written by RCF English, free, and with every answer explained."
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "legal",
+          "title": "Unofficial original RCF practice material",
+          "text": [
+            "This is **not** an official PTE test and is not a past paper. Every text, transcript, question, answer and model answer in this test was written by RCF English.",
+            "It follows the **published format of PTE Academic**. It is not produced, approved or endorsed by Pearson. PTE and PTE Academic are Pearson's trademarks.",
+            "For the official format, fees and booking, see **[pearsonpte.com](https://www.pearsonpte.com/)**. Format checked on 4 October 2026."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What this test can and cannot do",
+          "level": "h2",
+          "text": [
+            "The real test is taken at a centre on a computer that records your voice and marks everything by machine. A website cannot reproduce that, and it would be dishonest to pretend otherwise. So here is exactly what you get and what you have to arrange yourself.",
+            "**Reading works fully on this page.** Every Reading task type is here, in the real format, and you can mark it yourself from the answer key.",
+            "**Writing works fully.** Both tasks are here with model answers and the marking points, so you can see what a strong response contains.",
+            "**Speaking gives you the prompts, not a score.** No website can score your pronunciation and fluency the way Pearson's system does. Record yourself on your phone, then use the checklist on the Speaking page to judge what you hear.",
+            "**Listening needs one other person.** The transcripts are printed in full so a teacher, parent or study partner can read them aloud. This is the one part you cannot sit alone from this page."
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The three parts",
+          "level": "h2",
+          "caption": "Take them in this order and in one sitting if you want a realistic result. Timings follow the published ranges for the real test.",
+          "columns": ["Part", "Time", "Task types", "Open"],
+          "rows": [
+            ["Part 1: Speaking and Writing", "76 to 84 minutes", "10", "[Speaking and Writing](practical-english/pte/practice-test-1/speaking-writing/)"],
+            ["Part 2: Reading", "23 to 30 minutes", "5", "[Reading](practical-english/pte/practice-test-1/reading/)"],
+            ["Part 3: Listening", "31 to 39 minutes", "8", "[Listening](practical-english/pte/practice-test-1/listening/)"],
+            ["Answer key and model answers", "-", "-", "[Answers](practical-english/pte/practice-test-1/answers/)"]
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to sit this test properly",
+          "level": "h2",
+          "intro": [
+            "A practice test taken casually tells you almost nothing. The value is in sitting it under the real conditions, because the thing most candidates lose marks to is time, not English."
+          ],
+          "items": [
+            {
+              "title": "Set a timer for each part and obey it",
+              "text": [
+                "Stop when the timer stops, even mid-sentence. Finishing in your own time turns a diagnostic into an exercise, and it will tell you that you are ready when you are not."
+              ]
+            },
+            {
+              "title": "Do not look at the answers until the whole part is done",
+              "text": [
+                "Checking as you go quietly teaches you the answers rather than the skill. Keep the answer page closed."
+              ]
+            },
+            {
+              "title": "Record the Speaking tasks on your phone",
+              "text": [
+                "One recording per task, started before the prompt and stopped after. You will not judge your own fluency from memory - you have to hear it."
+              ]
+            },
+            {
+              "title": "Get someone to read the Listening transcripts aloud",
+              "text": [
+                "Once only, at a normal speaking speed, with no repeats. Print the questions for yourself and let them keep the transcript. Reading it yourself first makes the part worthless."
+              ]
+            },
+            {
+              "title": "Mark it honestly, then look at where the marks went",
+              "text": [
+                "Count the marks by skill, not just the total. PTE reports four skill scores, and the useful information is which one is dragging - not the number itself."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "If you are short of time, start with Reading",
+          "text": [
+            "The Reading part takes under half an hour, works completely on this page without anyone else, and is the quickest honest read on where your English actually sits.",
+            "It is also the part where practice pays back fastest, because three of the five task types are unusual enough that simply knowing how they behave is worth marks."
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Before you start",
+          "level": "h2",
+          "items": [
+            {
+              "title": "PTE Academic overview",
+              "url": "practical-english/pte/",
+              "text": [
+                "What the test is, the three different PTE tests, how the 10 to 90 score works, and PTE compared with IELTS."
+              ]
+            },
+            {
+              "title": "IELTS",
+              "url": "practical-english/ielts/",
+              "text": [
+                "Full IELTS practice tests and skills guides, if you have not finally settled on which test to take."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
