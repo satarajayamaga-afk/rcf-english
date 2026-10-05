@@ -2,11 +2,11 @@
   "pages": [
     {
       "slug": "promotions",
-      "title": "Special Offers",
-      "metaTitle": "Special Offers | Tuition, Courses and Promotions",
-      "description": "Discover tuition classes, educational courses, sponsored opportunities and current promotions. Paid advertisements are clearly labelled Sponsored.",
-      "keywords": "special offers, tuition classes Sri Lanka, English classes, online tutors, teacher training courses, examination preparation, educational programmes, book offers, course discounts",
-      "kicker": "Offers and promotions",
+      "title": "Paid Advertisements",
+      "metaTitle": "Paid Advertisements | Advertise a Class from Rs. 500 a Week | RCF English",
+      "description": "Advertise your class, course or institute on RCF English from Rs. 500 a week, poster included, booked one week at a time. Current tuition and course advertisements, all clearly labelled Sponsored.",
+      "keywords": "advertise tuition class Sri Lanka, tuition class advertisement, English classes, teacher training courses, educational advertising Sri Lanka",
+      "kicker": "Advertising",
       "kind": "page",
       "scripts": [
         "promotions",
@@ -18,10 +18,10 @@
         "url": ""
       },
       "hero": {
-        "text": "Discover tuition classes, educational courses, sponsored opportunities and current promotions. Offers on our own books, resources and courses are listed separately from paid advertisements placed by other teachers and institutes.",
+        "text": "You can advertise your class, course or institute here. Rs. 500 a week, your poster included, booked one week at a time. Paid advertisements are always labelled Sponsored and kept separate from our own offers.",
         "buttons": [
           {
-            "label": "Advertise with us",
+            "label": "See the rates and apply",
             "url": "promotions/#advertise",
             "style": "btn--accent"
           }
@@ -37,64 +37,22 @@
           ]
         },
         {
+          "type": "promo-packages",
+          "heading": "Advertise Your Class or Course",
+          "eyebrow": "Packages",
+          "id": "advertise",
+          "intro": [
+            "One price, and it includes your poster: **Rs. 500/= per week**. A booking runs for one week at a time - when the week is up, book another if you want to keep running.",
+            "Your advertisement is seen by the teachers, parents and students who use this site for English every day. Everything paid for is labelled **Sponsored**, so readers always know what they are looking at."
+          ]
+        },
+        {
           "type": "promotions",
           "heading": "Tuition & Course Promotions",
           "eyebrow": "Paid advertisements",
           "id": "tuition-promotions",
           "intro": [
             "Every listing here is a paid advertisement and carries a **Sponsored** label. A listing marked **Featured** has paid for a more prominent position; it does not mean RCF English recommends it above the others."
-          ]
-        },
-        {
-          "type": "offers",
-          "category": "publications",
-          "heading": "RCF Publications Offers",
-          "eyebrow": "Books and ebooks",
-          "id": "publications-offers",
-          "intro": [
-            "Offers on books and ebooks published by RCF Publications. These are our own offers, not paid advertisements."
-          ],
-          "emptyTitle": "No book offers at the moment",
-          "emptyText": "There is no offer running on RCF Publications titles just now. Any offer will be published here with its own dates and conditions.",
-          "emptyLinkUrl": "rcf-publications/",
-          "emptyLinkLabel": "Browse RCF Publications"
-        },
-        {
-          "type": "offers",
-          "category": "premium",
-          "heading": "Premium Resource Offers",
-          "eyebrow": "Resource collections",
-          "id": "premium-offers",
-          "variant": "tint",
-          "intro": [
-            "Offers on downloadable resource collections for students and for English teachers."
-          ],
-          "emptyTitle": "No resource offers at the moment",
-          "emptyText": "There is no offer running on Premium Resource collections just now. Any offer will be published here with its own dates and conditions.",
-          "emptyLinkUrl": "premium-resources/",
-          "emptyLinkLabel": "Browse Premium Resources"
-        },
-        {
-          "type": "offers",
-          "category": "academy",
-          "heading": "RCF Online Academy Offers",
-          "eyebrow": "Classes and courses",
-          "id": "academy-offers",
-          "intro": [
-            "Offers on English and Literature courses taught by Rohana Fernando through RCF Online Academy."
-          ],
-          "emptyTitle": "No course offers at the moment",
-          "emptyText": "There is no offer running on RCF Online Academy courses just now. Schedules, fees and available places are always confirmed on WhatsApp.",
-          "emptyLinkUrl": "rcf-classes/",
-          "emptyLinkLabel": "See the courses"
-        },
-        {
-          "type": "promo-packages",
-          "heading": "Advertise Your Class or Course",
-          "eyebrow": "Packages",
-          "id": "advertise",
-          "intro": [
-            "Three options are available. Rates are not published here because they are reviewed from time to time, so please ask for the current figure before you plan."
           ]
         },
         {

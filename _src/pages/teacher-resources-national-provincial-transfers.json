@@ -21,10 +21,15 @@
       "title": "Moving Between Provincial and National Schools",
       "metaTitle": "Provincial to National School Transfers for Teachers | RCF English",
       "description": "How teacher transfers work between provincial schools and national schools in Sri Lanka: who administers each system, which officers an application goes through, and what the Ministry has and has not published.",
-      "keywords": ["national school transfer", "provincial school transfer", "teacher transfer Sri Lanka"],
+      "keywords": "national school transfer, provincial school transfer, teacher transfer Sri Lanka",
       "kicker": "Teacher Resources",
       "kind": "guidance",
-      "tags": ["Transfers", "Official and service matters", "Sri Lanka Teachers' Service", "All 25 districts"],
+      "tags": [
+        "Transfers",
+        "Official and service matters",
+        "Sri Lanka Teachers' Service",
+        "All 25 districts"
+      ],
       "breadcrumbs": [
         {
           "label": "Teacher Resources",
@@ -64,11 +69,27 @@
           "heading": "Who runs which system",
           "level": "h2",
           "caption": "Checked against the Ministry of Education and Southern Provincial Ministry of Education websites on 5 October 2026.",
-          "columns": ["", "National schools", "Provincial schools"],
+          "columns": [
+            "",
+            "National schools",
+            "Provincial schools"
+          ],
           "rows": [
-            ["Administered by", "Ministry of Education, centrally", "The Provincial Ministry or Department of Education"],
-            ["Transfers within the system", "Annual and compulsory rounds, applied for online through the National School Teacher Transfer portal", "Application passes from the teacher to the principal, then the Zonal Director of Education, then the Provincial Director of Education, then the Provincial Ministry"],
-            ["Who finally approves", "The Ministry of Education", "The Provincial Public Service Commission, on the Ministry's recommendation"]
+            [
+              "Administered by",
+              "Ministry of Education, centrally",
+              "The Provincial Ministry or Department of Education"
+            ],
+            [
+              "Transfers within the system",
+              "Annual and compulsory rounds, applied for online through the National School Teacher Transfer portal",
+              "Application passes from the teacher to the principal, then the Zonal Director of Education, then the Provincial Director of Education, then the Provincial Ministry"
+            ],
+            [
+              "Who finally approves",
+              "The Ministry of Education",
+              "The Provincial Public Service Commission, on the Ministry's recommendation"
+            ]
           ]
         },
         {
@@ -169,12 +190,32 @@
           "heading": "The official sources",
           "level": "h2",
           "caption": "Go to these rather than to a summary, including this one. All checked on 5 October 2026.",
-          "columns": ["Source", "What it is for", "Open"],
+          "columns": [
+            "Source",
+            "What it is for",
+            "Open"
+          ],
           "rows": [
-            ["National School Teacher Transfer portal", "Transfers within national schools: applications, instructions, criteria, the national schools list", "[nstt.moe.gov.lk](https://nstt.moe.gov.lk/indexteacher.php)"],
-            ["Ministry of Education circulars", "Every circular, in Sinhala, Tamil and English. Where a new transfer policy would appear", "[moe.gov.lk circulars](https://moe.gov.lk/en/circulars/)"],
-            ["Ministry of Education", "The department pages and contact details", "[moe.gov.lk](https://moe.gov.lk/)"],
-            ["Your Provincial Ministry of Education", "The provincial transfer procedure and document list, which differs by province", "Search for your own province"]
+            [
+              "National School Teacher Transfer portal",
+              "Transfers within national schools: applications, instructions, criteria, the national schools list",
+              "[nstt.moe.gov.lk](https://nstt.moe.gov.lk/indexteacher.php)"
+            ],
+            [
+              "Ministry of Education circulars",
+              "Every circular, in Sinhala, Tamil and English. Where a new transfer policy would appear",
+              "[moe.gov.lk circulars](https://moe.gov.lk/en/circulars/)"
+            ],
+            [
+              "Ministry of Education",
+              "The department pages and contact details",
+              "[moe.gov.lk](https://moe.gov.lk/)"
+            ],
+            [
+              "Your Provincial Ministry of Education",
+              "The provincial transfer procedure and document list, which differs by province",
+              "Search for your own province"
+            ]
           ]
         },
         {

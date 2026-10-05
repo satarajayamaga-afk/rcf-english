@@ -87,34 +87,43 @@
     "the \"price\" value on each one. Leave it as it is to keep showing",
     "'Contact us for current rates'."
   ],
-
   "packages": [
     {
       "id": "weekly",
-      "name": "Weekly Listing",
-      "duration": "Displayed for 7 days",
-      "price": "Contact us for current rates",
-      "summary": "A standard listing in the main directory for one week. Suitable for a short course, a workshop or a single intake."
-    },
-    {
-      "id": "monthly",
-      "name": "Monthly Listing",
-      "duration": "Displayed for 30 days",
-      "price": "Contact us for current rates",
-      "summary": "A standard listing for a full month. Suitable for regular weekly classes and term-long courses."
+      "name": "Standard Listing",
+      "duration": "One week at a time",
+      "price": "Rs. 500/= per week",
+      "summary": "Your class or course in the directory, with your poster if you have one. The poster costs nothing extra. A booking runs for one week - when the week is up, book another if you want to keep running."
     },
     {
       "id": "featured",
       "name": "Featured Promotion",
-      "duration": "Displayed for the agreed period",
-      "price": "Contact us for current rates",
-      "summary": "A more prominent position at the top of the directory, with a Featured label, for the period agreed with you."
+      "duration": "For the period agreed with you",
+      "price": "Quoted on request",
+      "summary": "A more prominent position at the top of the directory with a Featured label. Tell us how long you want it for and we will quote you before you pay anything."
     }
   ],
-
   "ads": [],
-
   "_offersReadme": [
+    "!! NOTHING IN THE \"offers\" LIST IS DISPLAYED ANYWHERE AT PRESENT. !!",
+    "",
+    "The three offer sections were removed from the Paid Advertisements page",
+    "on 2026-10-05, because that page is now about third-party paid listings",
+    "and RCF's own discounts did not belong under that title.",
+    "",
+    "The data and the build support below are untouched, so an offer added",
+    "here is still valid - it simply has no page to appear on. Before using",
+    "this list again, add an \"offers\" block to whichever page should carry",
+    "it, for example:",
+    "",
+    "    { \"type\": \"offers\", \"heading\": \"RCF Publications Offers\",",
+    "      \"category\": \"publications\", \"level\": \"h2\" }",
+    "",
+    "Without that block, an offer entered below will appear nowhere and no",
+    "warning will be given.",
+    "",
+    "---------------------------------------------------------------------",
+    "",
     "RCF's OWN OFFERS - not third-party advertisements",
     "---------------------------------------------------------------------",
     "The \"offers\" list below holds discounts and promotions on RCF's own",
@@ -147,6 +156,5 @@
     "  \"linkLabel\": \"Browse the catalogue\"",
     "}"
   ],
-
   "offers": []
 }
