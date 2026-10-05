@@ -4066,6 +4066,15 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
 .ad__poster img { display: block; width: 100%; height: auto; }
 .ad__body { padding: var(--sp-4); flex: 1 1 auto; }
 .ad__labels { margin: 0 0 var(--sp-2); display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+/* An unpaid listing RCF has chosen to run. Deliberately styled apart from
+   .ad__sponsored so the two can never be mistaken for one another: a reader
+   has to be able to tell at a glance which listings were paid for. */
+.ad__free {
+  display: inline-block; padding: 0.12rem 0.5rem; border-radius: 999px;
+  font-size: var(--step--1); font-weight: 700;
+  background: var(--navy-100); color: var(--navy-800);
+  border: 1px solid var(--navy-600);
+}
 .ad__sponsored, .ad__featured {
   display: inline-block; padding: 0.12rem 0.5rem; border-radius: 999px;
   font-size: var(--step--1); font-weight: 700;

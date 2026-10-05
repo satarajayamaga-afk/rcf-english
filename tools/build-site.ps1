@@ -1838,10 +1838,16 @@ function RenderBlock($block) {
             # start and expiry dates. The expiry date is also written into
             # the page so the visitor's own browser can hide a listing that
             # has run out since the site was last built.
+            # A block shows either the paid listings or the unpaid ones, never
+            # both mixed together, so a reader is never left guessing which is
+            # which. An advertisement is paid unless it says "paid": false, so
+            # every existing listing keeps its Sponsored label untouched.
+            $wantPaid = ((P $block 'paid') -ne $false)
             $today = [datetime]::Today
             $live = @()
             foreach ($a in $promoAds) {
                 if ([string](P $a 'status') -ne 'active') { continue }
+                if ((((P $a 'paid') -ne $false)) -ne $wantPaid) { continue }
                 $sd = $null; $ed = $null
                 $sdRaw = [string](P $a 'startDate')
                 $edRaw = [string](P $a 'expiryDate')
@@ -1856,9 +1862,15 @@ function RenderBlock($block) {
 
             $html = (SectionOpen $block) + (SectionHead $block)
             if ($ordered.Count -eq 0) {
-                $html += '<div class="callout callout--note"><p class="callout__title">No listings at the moment</p>'
-                $html += '<p>There are no advertisements running just now. When teachers and institutes book a listing it will appear here.</p>'
-                $html += '<p class="mb-0">If you teach, you are welcome to advertise. The packages and the steps are further down this page.</p></div>'
+                # The paid section invites bookings; a section nobody pays for
+                # must not, so both lines can be overridden by the block.
+                $et = [string](P $block 'emptyTitle' 'No listings at the moment')
+                $ex = [string](P $block 'emptyText' 'There are no advertisements running just now. When teachers and institutes book a listing it will appear here.')
+                $ec = [string](P $block 'emptyCta' 'If you teach, you are welcome to advertise. The packages and the steps are further down this page.')
+                $html += '<div class="callout callout--note"><p class="callout__title">' + (E $et) + '</p>'
+                $html += '<p' + $(if ($ec) { '' } else { ' class="mb-0"' }) + '>' + (E $ex) + '</p>'
+                if ($ec) { $html += '<p class="mb-0">' + (E $ec) + '</p>' }
+                $html += '</div>'
                 return $html + '</div></section>'
             }
 
@@ -1872,7 +1884,15 @@ function RenderBlock($block) {
                     $html += '<div class="ad__poster"><img src="' + (E (Url $img)) + '" alt="' + (E ([string](P $a 'imageAlt'))) + '" loading="lazy" decoding="async"></div>'
                 }
                 $html += '<div class="ad__body"><p class="ad__labels">'
-                $html += '<span class="ad__sponsored">Sponsored<span class="visually-hidden"> listing, this is a paid advertisement</span></span>'
+                # Only a listing somebody paid for is called Sponsored. An
+                # unpaid one still has to be marked as an advertisement, but
+                # calling it Sponsored would be untrue.
+                if ((P $a 'paid') -ne $false) {
+                    $html += '<span class="ad__sponsored">Sponsored<span class="visually-hidden"> listing, this is a paid advertisement</span></span>'
+                }
+                else {
+                    $html += '<span class="ad__free">Special ad<span class="visually-hidden">, placed by RCF English and not paid for</span></span>'
+                }
                 if ($feat) { $html += '<span class="ad__featured">Featured</span>' }
                 $html += '</p>'
                 $html += '<h3 class="ad__title">' + (E ([string](P $a 'courseTitle'))) + '</h3>'

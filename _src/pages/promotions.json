@@ -56,6 +56,20 @@
           ]
         },
         {
+          "type": "promotions",
+          "paid": false,
+          "heading": "Special Ads",
+          "eyebrow": "Not paid for",
+          "id": "special-ads",
+          "intro": [
+            "Listings we have chosen to run without charge. Nobody has paid for a place here, which is why these are marked **Special ad** rather than Sponsored.",
+            "Everything in the directory above was paid for. The difference is deliberate, and it is the reason the two are kept in separate sections."
+          ],
+          "emptyTitle": "Nothing here at the moment",
+          "emptyText": "There are no special listings running just now.",
+          "emptyCta": ""
+        },
+        {
           "type": "steps",
           "heading": "How an advertisement is published",
           "eyebrow": "Five steps",
