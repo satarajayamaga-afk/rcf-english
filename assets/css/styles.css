@@ -5653,3 +5653,49 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
 .card__icon--svg { color: var(--teal-700); }
 .card__icon--svg svg { display: block; }
 @media print { .card__icon { display: none; } }
+
+/* ---------------------------------------------------------- hero scroll cue --
+   A quiet "there is more below" nudge under the hero. It sits in normal flow
+   rather than being positioned, so it can never overlap the hero text on a
+   narrow screen, and it is a real link to the anchor after the hero, so it
+   works with no JavaScript. The script only hides it once the reader has
+   started scrolling, or when the page is too short to scroll at all. */
+.hero-scroll {
+  display: grid;
+  place-items: center;
+  /* 2.75rem is 44px, the smallest comfortable touch target. */
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: var(--sp-5) auto 0;
+  border-radius: 50%;
+  color: var(--gold-400);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.hero-scroll:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+.hero-scroll:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.hero-scroll__icon {
+  display: block;
+  animation: hero-scroll-nudge 2.4s ease-in-out infinite;
+}
+.hero-scroll.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+}
+/* The landing point. Zero height so it adds nothing to the layout. */
+.hero-anchor { display: block; height: 0; scroll-margin-top: var(--sp-4); }
+
+@keyframes hero-scroll-nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll { transition: none; }
+  .hero-scroll__icon { animation: none; }
+}

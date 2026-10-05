@@ -4514,7 +4514,15 @@ function HeroSection($page) {
         }
         $html += '</div>'
     }
-    return $html + '</div></section>'
+    # The scroll cue under the hero. A plain link to the anchor that follows the
+    # hero, so it works with no JavaScript at all; the script only hides it once
+    # the reader has started scrolling, or when the page is too short to scroll.
+    $cue = '<a class="hero-scroll" href="#start" data-hero-scroll>'
+    $cue += '<span class="visually-hidden">Skip to the content below</span>'
+    $cue += '<svg class="hero-scroll__icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">'
+    $cue += '<path d="M12 5v13M6 12l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'
+    $cue += '</svg></a>'
+    return $html + '</div>' + $cue + '</section><span id="start" class="hero-anchor" tabindex="-1"></span>'
 }
 
 function StructuredData($page, $canonical) {

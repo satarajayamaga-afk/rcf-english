@@ -347,3 +347,66 @@ document.addEventListener("click", function (event) {
   var target = event.target;
   if (target && target.closest && target.closest("[data-print]")) window.print();
 });
+
+/* The hero scroll cue. It ships visible and is a real link to #start, so a
+   visitor with no JavaScript gets a working control rather than nothing. All
+   this does is take it away once it has served its purpose: when the reader
+   has started scrolling, or when the page is too short to scroll at all. */
+(function () {
+  "use strict";
+
+  var cue = document.querySelector("[data-hero-scroll]");
+  if (!cue) return;
+
+  var target = document.getElementById("start");
+  var HIDE_AFTER = 80;
+  var hidden = false;
+  var ticking = false;
+
+  function reduced() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  /* Nothing to scroll to is the same as having already scrolled: in both
+     cases the cue is pointing at nothing useful. A small margin stops it
+     flickering on a page that is only a few pixels over the viewport. */
+  function scrollable() {
+    var doc = document.documentElement;
+    return (doc.scrollHeight - window.innerHeight) > 120;
+  }
+
+  function apply() {
+    ticking = false;
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var want = y > HIDE_AFTER || !scrollable();
+    if (want === hidden) return;
+    hidden = want;
+    cue.classList.toggle("is-hidden", want);
+    /* Out of the tab order once invisible, back in when it returns. */
+    if (want) cue.setAttribute("tabindex", "-1");
+    else cue.removeAttribute("tabindex");
+  }
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(apply);
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  apply();
+
+  cue.addEventListener("click", function (event) {
+    /* Let a modified click (new tab, new window) behave normally. */
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: reduced() ? "auto" : "smooth", block: "start" });
+    if (target.focus) target.focus({ preventScroll: true });
+    /* Drop the fragment rather than leaving #start in the address bar. */
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  });
+})();
