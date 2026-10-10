@@ -153,13 +153,36 @@ planDescription.hub = (label, count) => {
   return fits || core;
 };
 
+// A plan page below this many words is kept out of Google's index.
+//
+// Why: on 2026-10-10 AdSense refused rcfenglish.com for "low value content".
+// Measured at the time, 113 of the 123 plan pages were under 400 words and
+// they made up 23% of the indexable site, so a reviewer sampling the site
+// kept landing on short pages built to one template. The long-form pages
+// were outnumbered.
+//
+// A plan under the threshold still works perfectly for a teacher who opens
+// it: nothing is hidden or removed. It simply stops being one of the pages
+// Google weighs when judging the site. Raise the threshold and more plans
+// drop out of search; lower it and more are judged.
+const NOINDEX_BELOW = 400;
+
+// The words a reader actually sees, counted over whatever the page is made
+// of - strings, lists of strings, and the nested objects inside a block.
+function wordsIn(value) {
+  if (typeof value === "string") return value.split(/\s+/).filter(Boolean).length;
+  if (Array.isArray(value)) return value.reduce((n, v) => n + wordsIn(v), 0);
+  if (value && typeof value === "object") return Object.values(value).reduce((n, v) => n + wordsIn(v), 0);
+  return 0;
+}
+
 // A page for one plan: it can be linked to, bookmarked and found by search.
 function planOnlyPage(key, i) {
   const g = L[key];
   const [unit, title, act, focus] = g.plans[i];
   const prev = i > 0 ? { title: `Plan ${i}: ${g.plans[i - 1][1]}`, url: planUrl(key, i - 1) + "/" } : null;
   const next = i < g.plans.length - 1 ? { title: `Plan ${i + 2}: ${g.plans[i + 1][1]}`, url: planUrl(key, i + 1) + "/" } : null;
-  return {
+  const page = {
     slug: planUrl(key, i),
     // The heading names the point too, so a teacher who arrives from a search
     // can see at once that the page is the one they wanted.
@@ -192,6 +215,11 @@ function planOnlyPage(key, i) {
       }
     ]
   };
+  // Judged on the hero and the blocks, which is what a reader sees. The
+  // grade pages and the hub are never hidden - only the individual plans,
+  // and only the slight ones.
+  if (wordsIn(page.hero) + wordsIn(page.blocks) < NOINDEX_BELOW) page.noindex = true;
+  return page;
 }
 
 function planPage(key) {
