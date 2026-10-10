@@ -5708,3 +5708,40 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   .hero-scroll { transition: none; }
   .hero-scroll__icon { animation: none; }
 }
+
+/* ---------------------------------------------------------------- people --
+   A grid of photographs with a name under each. The photographs arrive
+   already cropped square and all the same size, so the CSS only has to lay
+   them out - it never crops, because a CSS crop would cut a different part
+   of each face. */
+.people {
+  list-style: none;
+  margin: var(--sp-4) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-4) var(--sp-3);
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+}
+.person { text-align: center; }
+.person__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface-tint);
+  border: 2px solid var(--line-strong);
+}
+.person__name {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--navy-800);
+  line-height: 1.3;
+}
+.person__note {
+  margin: 0.15rem 0 0;
+  font-size: var(--step--2);
+  color: var(--ink-500);
+}

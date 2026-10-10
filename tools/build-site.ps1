@@ -1592,6 +1592,39 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'people' {
+            # A grid of photographs with a name under each: diploma holders,
+            # a teaching team, a committee. Use 'portrait' instead for one
+            # person beside a paragraph.
+            #
+            # Every photograph must already be square and the same size as
+            # the others. The CSS does not crop, so an odd one out shows as
+            # an odd one out.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $items = AsList (P $block 'items')
+            if ($items.Count) {
+                $html += '<ul class="people">'
+                foreach ($p in $items) {
+                    $nm = [string](P $p 'name')
+                    $html += '<li class="person">'
+                    $im = [string](P $p 'image')
+                    if ($im) {
+                        # A photograph of a person always needs a real alt:
+                        # the name is what a screen reader should hear.
+                        $alt = [string](P $p 'alt')
+                        if (-not $alt) { $alt = $nm }
+                        $html += '<img class="person__photo" src="' + (E (Url $im)) + '" alt="' + (E $alt) + '" width="400" height="400" loading="lazy" decoding="async">'
+                    }
+                    if ($nm) { $html += '<p class="person__name">' + (E $nm) + '</p>' }
+                    $note = [string](P $p 'note')
+                    if ($note) { $html += '<p class="person__note">' + (E $note) + '</p>' }
+                    $html += '</li>'
+                }
+                $html += '</ul>'
+            }
+            return $html + '</div></section>'
+        }
+
         'publications-catalogue' {
             # Complete books and ebooks from data/publications.json. This is
             # a different section from Premium Resources and reads a
