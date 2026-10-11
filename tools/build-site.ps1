@@ -1592,6 +1592,65 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'rebus' {
+            # A rebus reader: a story in which some words are shown as a small
+            # picture instead. The child reads the sentence and supplies the
+            # word, which is what makes the vocabulary stick.
+            #
+            # Write a line as:  This is my {ball}.
+            # and {ball} becomes assets/img/games/ball.svg, the same drawings
+            # the Game Zone uses - about 550 bytes each, so a whole story
+            # costs less than one photograph.
+            #
+            # The word itself is the picture's alt text, so a screen reader
+            # reads the sentence as ordinary prose and a child who cannot see
+            # the pictures loses nothing. 'Show the words' turns the pictures
+            # back into text for checking afterwards.
+            $html = (SectionOpen $block) + (SectionHead $block)
+            foreach ($story in (AsList (P $block 'stories'))) {
+                $title = [string](P $story 'title')
+                $html += '<article class="rebus" data-rebus>'
+                if ($title) { $html += '<h3 class="rebus__title">' + (E $title) + '</h3>' }
+                $words = [string](P $story 'words')
+                if ($words) { $html += '<p class="rebus__words">New words: ' + (E $words) + '</p>' }
+                $html += '<div class="rebus__story">'
+                foreach ($line in (AsList (P $story 'lines'))) {
+                    $text = [string]$line
+                    $out = ''
+                    # Walk the line, swapping each {word} for its drawing.
+                    foreach ($piece in ([regex]::Split($text, '(\{[a-z0-9-]+\})'))) {
+                        if ($piece -match '^\{([a-z0-9-]+)\}$') {
+                            $pic = $Matches[1]
+                            $file = 'assets/img/games/' + $pic + '.svg'
+                            if (-not (Test-Path (Join-Path $ProjectRoot ($file -replace '/', '\')))) {
+                                [void]$script:Warnings.Add("Rebus picture '$pic' on '$($script:PageSlug)' has no drawing at $file")
+                                $out += (E $pic)
+                                continue
+                            }
+                            # The readable word travels with the picture, so
+                            # 'Show the words' needs no second copy of the story.
+                            $label = ($pic -replace '-', ' ')
+                            $out += '<span class="rebus__swap" data-word="' + (E $label) + '">'
+                            $out += '<img class="rebus__pic" src="' + (E (Url $file)) + '" alt="' + (E $label) + '" width="40" height="40" loading="lazy" decoding="async">'
+                            $out += '</span>'
+                        }
+                        else { $out += (Inline $piece) }
+                    }
+                    $html += '<p class="rebus__line">' + $out + '</p>'
+                }
+                $html += '</div>'
+                $html += '<p class="rebus__tools"><button class="btn btn--sm btn--outline" type="button" data-rebus-toggle>Show the words</button></p>'
+                $ask = AsList (P $story 'questions')
+                if ($ask.Count) {
+                    $html += '<div class="rebus__ask"><p class="rebus__ask-head">Talk about it</p><ol>'
+                    foreach ($q in $ask) { $html += '<li>' + (Inline ([string]$q)) + '</li>' }
+                    $html += '</ol></div>'
+                }
+                $html += '</article>'
+            }
+            return $html + '</div></section>'
+        }
+
         'people' {
             # A grid of photographs with a name under each: diploma holders,
             # a teaching team, a committee. Use 'portrait' instead for one
@@ -2968,6 +3027,7 @@ function StaticList($source, $fixed, $limit = 0) {
 # The script each interactive block needs, loaded automatically on any page
 # that uses the block (see the module list in BuildPage).
 $script:BlockScripts = @{
+    'rebus'        = 'rebus'
     'partnerGo'    = 'go'
     'ask'          = 'ask'
     'browse'       = 'browse'

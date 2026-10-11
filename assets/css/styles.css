@@ -5745,3 +5745,64 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   font-size: var(--step--2);
   color: var(--ink-500);
 }
+
+/* ------------------------------------------------------------ rebus readers --
+   A story where some words are a small picture. Written for children who
+   find the textbook hard, so the type is larger and the lines are further
+   apart than ordinary prose: a struggling reader loses their place easily,
+   and crowded text is the commonest reason. */
+.rebus {
+  margin: var(--sp-5) 0 0;
+  padding: var(--sp-4);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface-tint);
+}
+.rebus__title { margin: 0 0 var(--sp-2); font-size: var(--step-1); color: var(--navy-800); }
+.rebus__words {
+  margin: 0 0 var(--sp-3);
+  font-size: var(--step--1);
+  color: var(--ink-500);
+}
+.rebus__line {
+  margin: 0 0 var(--sp-2);
+  font-size: var(--step-1);
+  line-height: 2.1;          /* room for the pictures to sit on the line */
+}
+/* The picture sits on the text baseline so the sentence still reads as a
+   sentence rather than as words with images dropped between them. */
+.rebus__pic {
+  display: inline-block;
+  width: 1.9em;
+  height: 1.9em;
+  vertical-align: -0.55em;
+  /* Almost no side margin on purpose. The sentence already has real spaces
+     around each picture, so a margin here adds a second one - and before a
+     full stop it reads as "my ball ." which is exactly the wrong thing to
+     model on a page teaching children to read. */
+  margin: 0 0.03em;
+}
+.rebus__word { display: none; }
+.rebus--words .rebus__pic { display: none; }
+.rebus--words .rebus__word {
+  display: inline;
+  font-weight: 700;
+  color: var(--navy-800);
+  background: var(--gold-100);
+  border-radius: 0.2rem;
+  padding: 0 0.25em;
+}
+.rebus__tools { margin: var(--sp-3) 0 0; }
+.rebus__ask {
+  margin: var(--sp-3) 0 0;
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--line);
+}
+.rebus__ask-head { margin: 0 0 var(--sp-1); font-weight: 700; color: var(--navy-800); }
+.rebus__ask ol { margin: 0; padding-left: 1.2rem; }
+.rebus__ask li { margin: 0 0 0.2rem; }
+
+@media print {
+  .rebus__tools { display: none; }
+  .rebus { break-inside: avoid; background: none; }
+}

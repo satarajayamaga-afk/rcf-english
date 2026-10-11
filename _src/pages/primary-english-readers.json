@@ -1,0 +1,579 @@
+{
+  "_readme": [
+    "REBUS READERS - Grades 3 to 6.",
+    "",
+    "WHO THEY ARE FOR: children who find the textbook hard. The owner asked for",
+    "them to sit a little BELOW textbook level on purpose. The rule used here is:",
+    "structures from the grade below, vocabulary at grade level, with the pictures",
+    "carrying the new words so the child is never stuck mid-sentence.",
+    "",
+    "Levels were taken from data/games/grade-3..6.json, which records the units and",
+    "outcomes of the Sri Lankan Pupil's Books. Grade 6 is marked 'awaiting-source'",
+    "there and has only grammar topics, so the Grade 6 stories follow those topics",
+    "and the natural step up from Grade 5 rather than named units.",
+    "",
+    "AGE, NOT ABILITY: a Grade 6 pupil reading below level must not be handed",
+    "something babyish. The language gets simpler down the grades; the situations",
+    "stay age-appropriate - the market, a cricket match, the last bus home.",
+    "",
+    "PICTURES: write {word} in a line and the build swaps in",
+    "assets/img/games/<word>.svg, the Game Zone drawings - about 550 bytes each.",
+    "Only words that have a drawing may be used; the build warns if one is missing.",
+    "Run: ls assets/img/games to see what exists."
+  ],
+  "pages": [
+    {
+      "slug": "primary-english/readers",
+      "title": "Picture Readers",
+      "metaTitle": "Free Picture Readers for Sri Lankan Children, Grades 3 to 6 | RCF English",
+      "description": "Twenty free rebus stories for Grades 3 to 6, where pictures stand in for words. Written below textbook level for children who find English reading hard.",
+      "keywords": "rebus stories, picture readers, easy English reading Sri Lanka, graded readers for children",
+      "kicker": "Primary English",
+      "kind": "guidance",
+      "tags": ["Reading", "Grades 3 to 6", "Free", "Printable"],
+      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
+      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "hero": {
+        "text": "Stories where a picture stands in for a word. The child reads the sentence and says the word aloud - which is how the word is remembered."
+      },
+      "blocks": [
+        {
+          "type": "prose",
+          "heading": "Who these are for",
+          "level": "h2",
+          "text": [
+            "These are for the child who can decode English words but reads so slowly that the meaning is lost by the end of the sentence. Every teacher knows the one: careful, willing, and three pages behind.",
+            "The language here sits **a little below** the textbook for the grade on purpose. A reader is not a lesson. Its job is to be finished, and to be finished comfortably, because a child who completes a whole story in English thinks something different about themselves afterwards.",
+            "What makes a rebus story work is that the child is never stranded. When an unfamiliar word arrives it is a picture, so the sentence keeps moving. The word is learned in the middle of a story rather than in a list."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How to use one",
+          "level": "h2",
+          "intro": [
+            "Ten minutes is enough. These are not a lesson and should not become one."
+          ],
+          "items": [
+            {
+              "title": "Let the child read it aloud, pictures and all",
+              "text": [
+                "When they reach a picture they say the word. If they do not know it, tell them at once and move on - do not make them guess at length, which is the fastest way to turn reading into a test."
+              ]
+            },
+            {
+              "title": "Read it a second time",
+              "text": [
+                "The second reading is where fluency comes from. It will be noticeably faster than the first, and the child will hear the difference themselves."
+              ]
+            },
+            {
+              "title": "Then press Show the words",
+              "text": [
+                "The pictures turn into the written words. Read it once more. The child has now met each new word in a sentence they already understand, which is the whole point."
+              ]
+            },
+            {
+              "title": "Talk about it",
+              "text": [
+                "Each story has two or three questions at the end. Ask them in English if the child can manage, in the first language if not. Understanding the story matters more than answering in English."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "heading": "Choose a grade",
+          "level": "h2",
+          "columns": "2",
+          "intro": [
+            "Five stories in each. If a child struggles with their own grade, drop down one - nothing here says which grade it is on the page itself."
+          ],
+          "items": [
+            {
+              "title": "Grade 3",
+              "url": "primary-english/readers/grade-3/",
+              "more": "Five stories",
+              "text": ["Three to six words a sentence. *This is my… It is… I like…* My ball, my garden, my school bag, the market, my family."],
+              "icon": "book"
+            },
+            {
+              "title": "Grade 4",
+              "url": "primary-english/readers/grade-4/",
+              "more": "Five stories",
+              "text": ["*There is… There are…* and *I am going…* A rainy day, helping father, the bus to school, our classroom, the kite."],
+              "icon": "book"
+            },
+            {
+              "title": "Grade 5",
+              "url": "primary-english/readers/grade-5/",
+              "more": "Five stories",
+              "text": ["The past tense arrives. The dry well, the temple lamp, the cricket match, the peacock, grandmother's medicine."],
+              "icon": "book"
+            },
+            {
+              "title": "Grade 6",
+              "url": "primary-english/readers/grade-6/",
+              "more": "Five stories",
+              "text": ["Longer sentences and some conversation. The last bus, the tailor's shop, saving the pond, the solar lamp, the postman."],
+              "icon": "book"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "title": "For teachers: why the pictures are not decoration",
+          "text": [
+            "A picture in place of a word does something a picture beside the text cannot. It sits in the grammar of the sentence, so the child has to work out what kind of word belongs there before they name it - and that is reading, not guessing from a picture.",
+            "It also keeps the sentence moving. A second-language reader who stops at an unknown word usually loses the whole sentence; here there is nothing to stop at."
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/readers/grade-3",
+      "title": "Picture Readers: Grade 3",
+      "metaTitle": "Five Easy Picture Stories for Grade 3 English | RCF English",
+      "description": "Five free rebus stories for Grade 3: My Red Ball, In My Garden, My School Bag, At the Market and My Family. Short sentences with pictures for the new words.",
+      "keywords": "Grade 3 English reading, easy stories for children, rebus story, picture reading",
+      "kicker": "Picture Readers",
+      "kind": "guidance",
+      "tags": ["Reading", "Grade 3", "Free", "Printable"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      ],
+      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
+      "hero": { "text": "Five short stories. Say the word when you see the picture." },
+      "blocks": [
+        {
+          "type": "rebus",
+          "heading": "Five stories",
+          "level": "h2",
+          "stories": [
+            {
+              "title": "1. My Red Ball",
+              "words": "ball, dog, pond",
+              "lines": [
+                "This is my {ball}.",
+                "My {ball} is red.",
+                "I play with my {dog}.",
+                "My {dog} is black.",
+                "The {ball} is in the {pond}!",
+                "My {dog} is in the {pond}.",
+                "My {dog} has the {ball}.",
+                "I like my {dog}."
+              ],
+              "questions": ["What colour is the ball?", "Who gets the ball out of the pond?", "Do you have a dog at home?"]
+            },
+            {
+              "title": "2. In My Garden",
+              "words": "tree, bird, butterfly, flower, cat",
+              "lines": [
+                "I have a {tree}.",
+                "My {tree} is big.",
+                "I see a {bird}.",
+                "The {bird} is on the {tree}.",
+                "I see a {butterfly}.",
+                "The {butterfly} is on a {flower}.",
+                "I see a {cat}.",
+                "The {cat} is under the {tree}.",
+                "I like my garden."
+              ],
+              "questions": ["Where is the bird?", "Where is the cat?", "What is on the flower?"]
+            },
+            {
+              "title": "3. My School Bag",
+              "words": "schoolbag, book, pen, pencil, ruler, lunchbox",
+              "lines": [
+                "This is my {schoolbag}.",
+                "It is big.",
+                "I have a {book}.",
+                "I have a {pen}.",
+                "I have a {pencil} and a {ruler}.",
+                "I have my {lunchbox}.",
+                "My {lunchbox} has {rice}.",
+                "Now I go to {school}."
+              ],
+              "questions": ["What is in the lunchbox?", "How many things are in the bag?", "What do you take to school?"]
+            },
+            {
+              "title": "4. At the Market",
+              "words": "market, mango, banana, orange",
+              "lines": [
+                "I go to the {market}.",
+                "My {mother} is with me.",
+                "I see a {mango}.",
+                "I see a {banana}.",
+                "I see an {orange}.",
+                "I like {mango}.",
+                "My {mother} has a {banknote}.",
+                "We take the {mango} home."
+              ],
+              "questions": ["Who goes to the market?", "What does the child like?", "What fruit do you like?"]
+            },
+            {
+              "title": "5. My Family",
+              "words": "house, father, mother, sister, brother",
+              "lines": [
+                "This is my {house}.",
+                "This is my {father}.",
+                "This is my {mother}.",
+                "This is my {sister}.",
+                "She is small.",
+                "This is my {brother}.",
+                "He is big.",
+                "I like my family."
+              ],
+              "questions": ["How many people are in this family?", "Who is small?", "Who is in your family?"]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "Grade 4 stories", "url": "primary-english/readers/grade-4/", "text": ["A little longer, when these feel easy."] },
+            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/readers/grade-4",
+      "title": "Picture Readers: Grade 4",
+      "metaTitle": "Five Easy Picture Stories for Grade 4 English | RCF English",
+      "description": "Five free rebus stories for Grade 4: A Rainy Day, Helping Father, The Bus to School, Our Classroom and The Kite. Pictures stand in for the new words.",
+      "keywords": "Grade 4 English reading, easy stories for children, rebus story, picture reading",
+      "kicker": "Picture Readers",
+      "kind": "guidance",
+      "tags": ["Reading", "Grade 4", "Free", "Printable"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      ],
+      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
+      "hero": { "text": "Five stories. Say the word when you see the picture." },
+      "blocks": [
+        {
+          "type": "rebus",
+          "heading": "Five stories",
+          "level": "h2",
+          "stories": [
+            {
+              "title": "1. A Rainy Day",
+              "words": "cloud, rain, window, umbrella, shoes",
+              "lines": [
+                "There is a big {cloud} in the sky.",
+                "Now there is {rain}.",
+                "My {cat} is at the {window}.",
+                "She is looking at the {rain}.",
+                "I take my {umbrella}.",
+                "I am going to {school}.",
+                "My {shoes} are wet!",
+                "Then the {rain} stops and the {sun} comes out."
+              ],
+              "questions": ["What is the cat doing?", "Why are the shoes wet?", "What do you take when it rains?"]
+            },
+            {
+              "title": "2. Helping Father",
+              "words": "wheelbarrow, fence, seed, water",
+              "lines": [
+                "My {father} is in the garden.",
+                "There is a {wheelbarrow} near the {fence}.",
+                "He is putting a {seed} in the ground.",
+                "I am giving {water} to the {seed}.",
+                "\"A {tree} will grow here,\" says my {father}.",
+                "There is a {bird} on the {fence}.",
+                "It is watching us.",
+                "We are working together."
+              ],
+              "questions": ["What is father putting in the ground?", "Who is giving the water?", "What will grow there?"]
+            },
+            {
+              "title": "3. The Bus to School",
+              "words": "clock, bus-stop, schoolbag, bus",
+              "lines": [
+                "It is seven o'clock. {clock}",
+                "I am standing at the {bus-stop}.",
+                "My {schoolbag} is heavy today.",
+                "There are three children with me.",
+                "Now the {bus} is coming.",
+                "We are going to {school}.",
+                "There is a {dog} near the road.",
+                "It is sleeping in the sun. {sun}"
+              ],
+              "questions": ["What time is it?", "How many children are waiting?", "What is the dog doing?"]
+            },
+            {
+              "title": "4. Our Classroom",
+              "words": "classroom, blackboard, chalk, duster, noticeboard",
+              "lines": [
+                "This is our {classroom}.",
+                "There is a big {blackboard} and a {table}.",
+                "Our {teacher} is writing with {chalk}.",
+                "I am cleaning the board with the {duster}.",
+                "There is a {noticeboard} near the {door}.",
+                "There are pictures on it.",
+                "My friend is opening the {window}.",
+                "Our {classroom} is clean and bright."
+              ],
+              "questions": ["What is the teacher writing with?", "What is near the door?", "Who is opening the window?"]
+            },
+            {
+              "title": "5. The Kite",
+              "words": "kite, playground, crow",
+              "lines": [
+                "It is a windy day.",
+                "My {brother} has a new {kite}.",
+                "We are going to the {playground}.",
+                "He is running with the {kite}.",
+                "Now the {kite} is going up and up.",
+                "A {crow} is flying near it.",
+                "Oh no - the {kite} is in a {tree}!",
+                "A tall man is helping us.",
+                "Now the {kite} is flying again."
+              ],
+              "questions": ["Where do they go?", "What happens to the kite?", "Who helps them?"]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "Grade 5 stories", "url": "primary-english/readers/grade-5/", "text": ["Where the past tense begins."] },
+            { "title": "Grade 3 stories", "url": "primary-english/readers/grade-3/", "text": ["Shorter, if these feel hard."] },
+            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/readers/grade-5",
+      "title": "Picture Readers: Grade 5",
+      "metaTitle": "Five Easy Picture Stories for Grade 5 English | RCF English",
+      "description": "Five free rebus stories for Grade 5: The Dry Well, The Temple Lamp, The Cricket Match, The Peacock and Grandmother's Medicine. Written in the past tense.",
+      "keywords": "Grade 5 English reading, easy stories for children, rebus story, past tense reading",
+      "kicker": "Picture Readers",
+      "kind": "guidance",
+      "tags": ["Reading", "Grade 5", "Free", "Printable"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      ],
+      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
+      "hero": { "text": "Five stories, all of them about something that already happened." },
+      "blocks": [
+        {
+          "type": "rebus",
+          "heading": "Five stories",
+          "level": "h2",
+          "stories": [
+            {
+              "title": "1. The Dry Well",
+              "words": "well, bucket, cloud",
+              "lines": [
+                "Last year there was no {rain} for many weeks.",
+                "The {well} in our garden was almost dry.",
+                "My {father} took a {bucket} and went to the {well}.",
+                "There was only a little {water} at the bottom.",
+                "We used it carefully for the {flower} plants.",
+                "Then one evening a big black {cloud} came over the hills.",
+                "The {rain} fell all night.",
+                "In the morning the {well} was full again."
+              ],
+              "questions": ["Why was the well nearly dry?", "What did they use the last water for?", "What happened in the night?"]
+            },
+            {
+              "title": "2. The Temple Lamp",
+              "words": "temple, oil-lamp, moon",
+              "lines": [
+                "On Poya day my {grandmother} took me to the {temple}.",
+                "She carried a white {flower} in her hand.",
+                "I carried a small {oil-lamp}.",
+                "There were many people there.",
+                "An old man gave us a {cup} of {tea}.",
+                "My {grandmother} lit the {oil-lamp} and closed her {eyes}.",
+                "The light was very beautiful.",
+                "We walked home when the {moon} came up."
+              ],
+              "questions": ["What did each of them carry?", "Who gave them tea?", "When did they walk home?"]
+            },
+            {
+              "title": "3. The Cricket Match",
+              "words": "cricket, fence",
+              "lines": [
+                "Our school had a {cricket} match on Saturday.",
+                "I was the last batsman.",
+                "We needed four runs to win.",
+                "The {ball} came very fast.",
+                "I hit it as hard as I could.",
+                "It went over the {fence}!",
+                "All my friends were shouting my name.",
+                "Our {teacher} gave me a {book} as a prize."
+              ],
+              "questions": ["How many runs did they need?", "Where did the ball go?", "What was the prize?"]
+            },
+            {
+              "title": "4. The Peacock",
+              "words": "paddyfield, peacock, feather, crow",
+              "lines": [
+                "Early one morning I went to the {paddyfield} with my {uncle}.",
+                "The {sun} was just coming up.",
+                "Suddenly we saw a {peacock} near the water.",
+                "It was standing very still.",
+                "Its long {feather}s were blue and green.",
+                "Then a {crow} made a loud noise.",
+                "The {peacock} opened its tail and ran into the trees.",
+                "My {uncle} said it was good luck to see one."
+              ],
+              "questions": ["Where did they go, and when?", "What colours were the feathers?", "Why did the peacock run?"]
+            },
+            {
+              "title": "5. Grandmother's Medicine",
+              "words": "hospital, doctor, medicine",
+              "lines": [
+                "My {grandmother} was not well last week.",
+                "She could not eat her {rice}.",
+                "My {mother} took her to the {hospital} by {bus}.",
+                "A {doctor} looked at her for a long time.",
+                "He gave her some {medicine}.",
+                "\"Drink plenty of {water},\" he said.",
+                "After three days she was much better.",
+                "She made {sweets} for all of us."
+              ],
+              "questions": ["How did they go to the hospital?", "What did the doctor say?", "How do we know she got better?"]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "Grade 6 stories", "url": "primary-english/readers/grade-6/", "text": ["Longer, with some conversation."] },
+            { "title": "Grade 4 stories", "url": "primary-english/readers/grade-4/", "text": ["Shorter, if these feel hard."] },
+            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slug": "primary-english/readers/grade-6",
+      "title": "Picture Readers: Grade 6",
+      "metaTitle": "Five Easy Picture Stories for Grade 6 English | RCF English",
+      "description": "Five free rebus stories for Grade 6: The Last Bus, The Tailor's Shop, Saving the Pond, The Solar Lamp and The Postman. Longer sentences with some conversation.",
+      "keywords": "Grade 6 English reading, easy stories, rebus story, reading practice Sri Lanka",
+      "kicker": "Picture Readers",
+      "kind": "guidance",
+      "tags": ["Reading", "Grade 6", "Free", "Printable"],
+      "breadcrumbs": [
+        { "label": "Primary English", "url": "primary-english/" },
+        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      ],
+      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
+      "hero": { "text": "Five stories with longer sentences and some conversation." },
+      "blocks": [
+        {
+          "type": "rebus",
+          "heading": "Five stories",
+          "level": "h2",
+          "stories": [
+            {
+              "title": "1. The Last Bus",
+              "words": "bus-stop, umbrella, van",
+              "lines": [
+                "It was raining hard when school finished. {rain}",
+                "I waited at the {bus-stop} with my friend Kamal.",
+                "The {clock} on the shop wall showed half past five.",
+                "\"The last {bus} comes at six,\" Kamal said.",
+                "We stood under one {umbrella} and watched the water run down the road.",
+                "A {van} went past and splashed us both.",
+                "At last the {bus} came, and it was almost empty.",
+                "We sat near the {window} and talked all the way home."
+              ],
+              "questions": ["What time did the last bus come?", "Why did they get wet twice?", "How do you know they were not in a hurry at the end?"]
+            },
+            {
+              "title": "2. The Tailor's Shop",
+              "words": "tailor, mirror, banknote",
+              "lines": [
+                "My {mother} took my old {shirt} to the {tailor} near the {market}.",
+                "His shop was small and there was cloth on every {table}.",
+                "\"Can you make this bigger?\" my {mother} asked him.",
+                "The {tailor} looked at the {shirt} and smiled.",
+                "\"He is growing too fast,\" he said.",
+                "I stood in front of the {mirror} while he measured my arms.",
+                "My {mother} gave him a {banknote} and we walked home.",
+                "On Friday the {shirt} fitted me perfectly."
+              ],
+              "questions": ["Why did they go to the tailor?", "What did the tailor mean?", "How long did the work take?"]
+            },
+            {
+              "title": "3. Saving the Pond",
+              "words": "pond, fish, dustbin, recycle",
+              "lines": [
+                "There is a small {pond} behind our {school}.",
+                "Last term the {water} was dirty and there were no {fish} in it.",
+                "People threw things in instead of using the {dustbin}.",
+                "Our class decided to clean it.",
+                "We worked there every Friday afternoon for a month.",
+                "Then we put up a board beside it. {recycle}",
+                "By November the {water} was clear again.",
+                "Last week somebody saw a small {fish}."
+              ],
+              "questions": ["Why were there no fish?", "How long did the class work?", "What is the last sentence telling us?"]
+            },
+            {
+              "title": "4. The Solar Lamp",
+              "words": "solar-panel, roof, bulb",
+              "lines": [
+                "Our village had no electricity until last year.",
+                "I used to do my homework beside an {oil-lamp}.",
+                "The light was weak and my {eyes} hurt after an hour.",
+                "Then men came and put a {solar-panel} on our {roof}.",
+                "Now one {bulb} burns in every room after dark.",
+                "My {father} says the {sun} works for us all day and asks for nothing.",
+                "I can read my {book} until nine o'clock.",
+                "My marks are better this term."
+              ],
+              "questions": ["What did he use before?", "What did father mean about the sun?", "Why are his marks better?"]
+            },
+            {
+              "title": "5. The Postman",
+              "words": "postman, bicycle",
+              "lines": [
+                "Every morning at ten the {postman} comes down our lane on his {bicycle}.",
+                "His bag is always full and he never stops to rest.",
+                "Last Monday he brought a letter for my {sister}.",
+                "It was from the university in Colombo.",
+                "She read it twice and then she began to cry.",
+                "\"I passed,\" she said. {face-happy}",
+                "My {mother} ran to the {temple} with a {flower}.",
+                "My {father} went to the {market} and bought {sweets} for the whole lane."
+              ],
+              "questions": ["Why did his sister cry?", "What did each parent do?", "What does the last sentence tell us about the family?"]
+            }
+          ]
+        },
+        {
+          "type": "related",
+          "heading": "Next",
+          "level": "h2",
+          "items": [
+            { "title": "Grade 5 stories", "url": "primary-english/readers/grade-5/", "text": ["Shorter, if these feel hard."] },
+            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+          ]
+        }
+      ]
+    }
+  ]
+}
