@@ -33,7 +33,9 @@
           "style": "warn",
           "title": "Please read before contacting an advertiser",
           "text": [
-            "Advertisements on this page are paid promotional listings. RCF English provides advertising space but does not guarantee enrolment, examination results or the quality of services offered. Students and parents should verify course details directly with the advertiser before making a payment."
+            "This page carries two kinds of listing. **Sponsored** listings are paid advertisements. **Special ad** listings are ones we have chosen to run without charge, and may be for a project of our own or for somebody we know - which is why they are labelled differently.",
+            "RCF English provides the space. It does not guarantee enrolment, examination results, or the quality of any service advertised here, whether paid for or not.",
+            "Check details directly with the advertiser before you pay anybody anything."
           ]
         },
         {
@@ -228,45 +230,41 @@
           "eyebrow": "The rules we follow",
           "items": [
             {
-              "title": "Advertisements must relate to education",
-              "text": [
-                "Classes, courses, workshops, tuition and educational programmes. Anything unrelated to education is declined."
-              ]
-            },
-            {
-              "title": "Information must be truthful and current",
-              "text": [
+              "q": "Information must be truthful and current",
+              "a": [
                 "Qualifications, schedules, fees and contact details are the advertiser's responsibility, and they must be accurate on the day the advertisement runs."
               ]
             },
             {
-              "title": "We may decline an advertisement",
-              "text": [
-                "RCF English may reject an advertisement that is misleading, inappropriate or of poor quality. We would rather run fewer advertisements than run bad ones."
+              "q": "We may decline an advertisement",
+              "a": [
+                "RCF English may reject an advertisement that is misleading, of poor quality, or unsuitable for the people who use this site - which includes children, parents and teachers. We would rather run fewer advertisements than run bad ones.",
+                "Advertisements do not have to be about education. Anything lawful and decently presented will be considered. If you are unsure whether yours fits, ask before you pay."
               ]
             },
             {
-              "title": "Payment comes before publication",
-              "text": [
+              "q": "Payment comes before publication",
+              "a": [
                 "The advertising fee is paid in advance. The fee pays for the listing to be displayed. It does not buy students, and it does not guarantee that anyone will enrol."
               ]
             },
             {
-              "title": "Listings end when the period ends",
-              "text": [
+              "q": "Listings end when the period ends",
+              "a": [
                 "At the end of the paid period the advertisement is removed or marked expired. Renewing requires another payment and a confirmation from you."
               ]
             },
             {
-              "title": "We may remove an advertisement early",
-              "text": [
+              "q": "We may remove an advertisement early",
+              "a": [
                 "If a serious inaccuracy comes to light, or complaints are received, RCF English may take a listing down before its period ends."
               ]
             },
             {
-              "title": "No implied endorsement",
-              "text": [
-                "An advertisement must not suggest that RCF English endorses, recommends or is associated with the advertiser. Sponsored and Featured listings are always labelled so readers can tell what they are looking at."
+              "q": "No implied endorsement",
+              "a": [
+                "A **paid** advertisement must not suggest that RCF English endorses, recommends or is associated with the advertiser. Paying for space buys the space and nothing else.",
+                "A **Special ad** is the other case. We take no money for those, and one may be a project of our own or something from family or a friend. They carry a different label for that reason, and the note at the top of this page says so plainly."
               ]
             }
           ]

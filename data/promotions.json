@@ -119,7 +119,29 @@
       "summary": "A more prominent position at the top of the directory with a Featured label. Tell us how long you want it for and we will quote you before you pay anything."
     }
   ],
-  "ads": [],
+  "ads": [
+    {
+      "id": "saubhagya",
+      "status": "active",
+      "paid": false,
+      "featured": false,
+      "startDate": "",
+      "expiryDate": "",
+      "advertiser": "Saubhagya",
+      "courseTitle": "Saubhagya - Sri Lanka's matrimony platform for professionals",
+      "subject": "Matrimony",
+      "audience": "Professionals and their families, in Sri Lanka and overseas",
+      "mode": "Online",
+      "location": "Online",
+      "schedule": "",
+      "description": "A matrimony service for Sri Lankan professionals at home and overseas, and for parents arranging on their behalf. Every profile is checked by hand, and phone numbers stay hidden until both families agree to connect. Registering, creating a profile and browsing are free; contacting a match needs a paid upgrade.",
+      "phone": "",
+      "whatsapp": "",
+      "link": "https://subagya.com",
+      "image": "",
+      "imageAlt": ""
+    }
+  ],
   "_offersReadme": [
     "!! NOTHING IN THE \"offers\" LIST IS DISPLAYED ANYWHERE AT PRESENT. !!",
     "",
