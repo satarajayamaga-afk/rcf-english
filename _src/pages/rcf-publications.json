@@ -10,7 +10,6 @@
     "is a separate, older page and is left exactly as it was. This section",
     "sits alongside it and links to it."
   ],
-
   "pages": [
     {
       "slug": "rcf-publications",
@@ -20,12 +19,23 @@
       "keywords": "RCF Publications, English books Sri Lanka, ebooks, study guides, teacher manuals, spoken English books, literature books",
       "kicker": "Books and ebooks",
       "kind": "page",
-      "backTo": { "label": "Home", "url": "" },
+      "backTo": {
+        "label": "Home",
+        "url": ""
+      },
       "hero": {
         "text": "Explore complete books and ebooks published by RCF Publications for students, teachers and English learners.",
         "buttons": [
-          { "label": "About RCF Publications", "url": "about/rcf-publications/", "style": "btn--ghost-light" },
-          { "label": "Premium Resources", "url": "premium-resources/", "style": "btn--ghost-light" }
+          {
+            "label": "About RCF Publications",
+            "url": "about/rcf-publications/",
+            "style": "btn--ghost-light"
+          },
+          {
+            "label": "Premium Resources",
+            "url": "premium-resources/",
+            "style": "btn--ghost-light"
+          }
         ]
       },
       "blocks": [
@@ -52,33 +62,69 @@
           "items": [
             {
               "title": "Clickable contents",
-              "text": ["The contents page is live. Click a poem, a topic or a sub-topic and you are taken straight to it - no page-turning, no index at the back."],
-              "bullets": ["Every entry is a link", "A Home button on each page returns you to the contents", "Find any section in one tap"]
+              "text": [
+                "The contents page is live. Click a poem, a topic or a sub-topic and you are taken straight to it - no page-turning, no index at the back."
+              ],
+              "bullets": [
+                "Every entry is a link",
+                "A Home button on each page returns you to the contents",
+                "Find any section in one tap"
+              ]
             },
             {
               "title": "No watermark",
-              "text": ["The pages are supplied clean. Nothing is stamped across the text, so the book is comfortable to read on screen and clear to print."],
-              "bullets": ["Readable on a phone", "Prints without a grey wash", "Comfortable for long study sessions"]
+              "text": [
+                "The pages are supplied clean. Nothing is stamped across the text, so the book is comfortable to read on screen and clear to print."
+              ],
+              "bullets": [
+                "Readable on a phone",
+                "Prints without a grey wash",
+                "Comfortable for long study sessions"
+              ]
             },
             {
               "title": "Print only what you need",
-              "text": ["Print or photocopy the pages for a particular lesson rather than carrying a whole book, subject to the copyright terms."],
-              "bullets": ["Useful for lesson preparation", "One poem or one section at a time", "No need to buy multiple copies"]
+              "text": [
+                "Print or photocopy the pages for a particular lesson rather than carrying a whole book, subject to the copyright terms."
+              ],
+              "bullets": [
+                "Useful for lesson preparation",
+                "One poem or one section at a time",
+                "No need to buy multiple copies"
+              ]
             },
             {
               "title": "Affordable",
-              "text": ["A printed book of the same depth would cost several times as much. Most titles here are **Rs. 500/=**."],
-              "bullets": ["No printing or delivery cost", "Same material, lower price", "Buy more than one for the price of a single printed book"]
+              "text": [
+                "A printed book of the same depth would cost several times as much. Most titles here are **Rs. 500/=**."
+              ],
+              "bullets": [
+                "No printing or delivery cost",
+                "Same material, lower price",
+                "Buy more than one for the price of a single printed book"
+              ]
             },
             {
               "title": "Delivered immediately",
-              "text": ["There is no waiting for a courier and nothing to collect. The file arrives and you can start using it the same day."],
-              "bullets": ["Useful when a lesson is tomorrow", "Nothing to go out of stock", "Keep a copy on every device you use"]
+              "text": [
+                "There is no waiting for a courier and nothing to collect. The file arrives and you can start using it the same day."
+              ],
+              "bullets": [
+                "Useful when a lesson is tomorrow",
+                "Nothing to go out of stock",
+                "Keep a copy on every device you use"
+              ]
             },
             {
               "title": "Searchable",
-              "text": ["Use your reader's search to find a quotation, a technique or a poet's name anywhere in the book in a moment."],
-              "bullets": ["Search the whole book at once", "Jump between related sections", "Nothing to flick through"]
+              "text": [
+                "Use your reader's search to find a quotation, a technique or a poet's name anywhere in the book in a moment."
+              ],
+              "bullets": [
+                "Search the whole book at once",
+                "Jump between related sections",
+                "Nothing to flick through"
+              ]
             }
           ]
         },
@@ -86,64 +132,91 @@
           "type": "publications-catalogue",
           "heading": "School English support books",
           "eyebrow": "Catalogue",
-          "text": ["Grade-by-grade companions for pupils who have fallen behind and need to rebuild English without falling further behind."],
-          "bookCategory": "School English support books"
+          "bookCategory": "School English support books",
+          "intro": [
+            "Grade-by-grade companions for pupils who have fallen behind and need to rebuild English without falling further behind."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Grammar and examination support",
           "eyebrow": "Catalogue",
-          "text": ["Grammar practice and quick reference for the Ordinary Level."],
-          "bookCategory": "Grammar and examination support"
+          "bookCategory": "Grammar and examination support",
+          "intro": [
+            "Grammar practice and quick reference for the Ordinary Level."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Advanced Level General English",
           "eyebrow": "Catalogue",
-          "text": ["General English for the G.C.E. Advanced Level: Paper I and Paper II, worked through question by question."],
-          "bookCategory": "Advanced Level General English"
+          "bookCategory": "Advanced Level General English",
+          "intro": [
+            "General English for the G.C.E. Advanced Level: Paper I and Paper II, worked through question by question."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Spoken English",
           "eyebrow": "Catalogue",
-          "text": ["Ready-to-run spoken English lessons for the primary classroom."],
-          "bookCategory": "Spoken English"
+          "bookCategory": "Spoken English",
+          "intro": [
+            "Ready-to-run spoken English lessons for the primary classroom."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Literature study guides",
           "eyebrow": "Catalogue",
-          "text": ["Full study guides to prescribed texts, with examination guidance and model answers."],
-          "bookCategory": "Literature study guides"
+          "bookCategory": "Literature study guides",
+          "intro": [
+            "Full study guides to prescribed texts, with examination guidance and model answers."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Professional and workplace English",
           "eyebrow": "Catalogue",
-          "text": ["English for particular kinds of work, for adults already in a job or preparing for one."],
-          "bookCategory": "Professional and workplace English"
+          "bookCategory": "Professional and workplace English",
+          "intro": [
+            "English for particular kinds of work, for adults already in a job or preparing for one."
+          ]
+        },
+        {
+          "type": "publications-catalogue",
+          "heading": "Teacher lesson plan books",
+          "eyebrow": "Catalogue",
+          "bookCategory": "Teacher lesson plan books",
+          "intro": [
+            "One complete forty-minute plan for every activity in the Pupil's Book, in book order, for Grades 6 to 11. Each is an independent companion to the Educational Publications Department textbook, not an official publication."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Teacher-development books",
           "eyebrow": "Catalogue",
-          "text": ["Books written for teachers rather than pupils."],
-          "bookCategory": "Teacher-development books"
+          "bookCategory": "Teacher-development books",
+          "intro": [
+            "Books written for teachers rather than pupils."
+          ]
         },
         {
           "type": "publications-catalogue",
           "heading": "Kindle and paperback publications",
           "eyebrow": "Sold through Amazon",
-          "text": ["The titles below also appear above under their own subject. They are listed again here because they are sold through Amazon rather than by us: they carry no local price, and a View on Amazon button will appear on each as soon as its product link is supplied."],
-          "bookChannel": "kindle"
+          "bookChannel": "kindle",
+          "intro": [
+            "The titles below also appear above under their own subject. They are listed again here because they are sold through Amazon rather than by us: they carry no local price, and a View on Amazon button will appear on each as soon as its product link is supplied."
+          ]
         },
         {
           "type": "payment-instructions",
           "purpose": "publication",
           "heading": "How to pay for a book",
           "eyebrow": "Bank transfer",
-          "intro": ["Open the panel below when you are ready to buy a title. Include the book's product code so we know which one you have paid for."]
+          "intro": [
+            "Open the panel below when you are ready to buy a title. Include the book's product code so we know which one you have paid for."
+          ]
         },
         {
           "type": "cards",
@@ -151,14 +224,25 @@
           "variant": "tint",
           "columns": "3",
           "items": [
-            { "title": "About RCF Publications", "text": "What the bookshop produces and how it relates to the free website.", "url": "about/rcf-publications/" },
-            { "title": "Premium Resources", "text": "Downloadable worksheet, lesson-plan and model-paper collections.", "url": "premium-resources/" },
-            { "title": "Free resources", "text": "Lessons, past papers and activities, free to use with no account.", "url": "resources/" }
+            {
+              "title": "About RCF Publications",
+              "text": "What the bookshop produces and how it relates to the free website.",
+              "url": "about/rcf-publications/"
+            },
+            {
+              "title": "Premium Resources",
+              "text": "Downloadable worksheet, lesson-plan and model-paper collections.",
+              "url": "premium-resources/"
+            },
+            {
+              "title": "Free resources",
+              "text": "Lessons, past papers and activities, free to use with no account.",
+              "url": "resources/"
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "rcf-publications/refund-policy",
       "title": "Refund and Return Policy",
@@ -167,9 +251,19 @@
       "keywords": "RCF Publications refund policy, ebook refund, digital product returns",
       "kicker": "RCF Publications",
       "kind": "policy",
-      "breadcrumbs": [{ "label": "RCF Publications", "url": "rcf-publications/" }],
-      "backTo": { "label": "RCF Publications", "url": "rcf-publications/" },
-      "hero": { "text": "Effective date: 14 September 2026" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Publications",
+          "url": "rcf-publications/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Publications",
+        "url": "rcf-publications/"
+      },
+      "hero": {
+        "text": "Effective date: 14 September 2026"
+      },
       "blocks": [
         {
           "type": "prose",
@@ -191,15 +285,21 @@
           "heading": "Exceptions",
           "parts": [
             {
-              "text": ["A refund or replacement may be considered in the following circumstances:"],
+              "text": [
+                "A refund or replacement may be considered in the following circumstances:"
+              ],
               "bullets": [
-            "The customer was charged more than once for the same product due to a payment error.",
-            "The customer paid for a product but did not receive the purchased digital product because of a technical problem.",
-            "The delivered file is materially defective or corrupted and cannot be reasonably corrected or replaced.",
-            "RCF Publications makes an error in delivering a product different from the one purchased."
+                "The customer was charged more than once for the same product due to a payment error.",
+                "The customer paid for a product but did not receive the purchased digital product because of a technical problem.",
+                "The delivered file is materially defective or corrupted and cannot be reasonably corrected or replaced.",
+                "RCF Publications makes an error in delivering a product different from the one purchased."
               ]
             },
-            { "text": ["Where appropriate, RCF Publications may provide a replacement copy or an alternative solution instead of a monetary refund."] }
+            {
+              "text": [
+                "Where appropriate, RCF Publications may provide a replacement copy or an alternative solution instead of a monetary refund."
+              ]
+            }
           ]
         },
         {
@@ -225,7 +325,6 @@
         }
       ]
     },
-
     {
       "slug": "rcf-publications/terms",
       "title": "Terms and Conditions",
@@ -234,9 +333,19 @@
       "keywords": "RCF Publications terms and conditions, ebook licence, digital products terms",
       "kicker": "RCF Publications",
       "kind": "policy",
-      "breadcrumbs": [{ "label": "RCF Publications", "url": "rcf-publications/" }],
-      "backTo": { "label": "RCF Publications", "url": "rcf-publications/" },
-      "hero": { "text": "Effective date: 14 September 2026" },
+      "breadcrumbs": [
+        {
+          "label": "RCF Publications",
+          "url": "rcf-publications/"
+        }
+      ],
+      "backTo": {
+        "label": "RCF Publications",
+        "url": "rcf-publications/"
+      },
+      "hero": {
+        "text": "Effective date: 14 September 2026"
+      },
       "blocks": [
         {
           "type": "prose",
