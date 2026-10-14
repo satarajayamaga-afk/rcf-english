@@ -1,0 +1,255 @@
+{
+  "_readme": [
+    "DAILY ENGLISH - the rotating tip shown by the 'tip' block.",
+    "",
+    "One item is picked per day from the whole list, by date, so every visitor",
+    "sees the same one on the same day and it changes without a rebuild. The",
+    "build also writes one item into the page as ordinary HTML, so a reader with",
+    "no JavaScript still sees a real tip rather than an empty box.",
+    "",
+    "WHY THIS IS NOT A POP-UP: it sits in the page where a reader naturally",
+    "pauses. It interrupts nothing, blocks nothing, and needs no dismissing.",
+    "A timed pop-up would be a content-blocking interstitial, which Google",
+    "treats as a mobile usability fault, and which would be a poor idea while",
+    "the site is under AdSense review.",
+    "",
+    "KINDS",
+    "  quote     A short quotation. Attribution must be certain - see below.",
+    "  grammar   One point, stated plainly, with an example.",
+    "  teaching  Something a teacher can use in the next lesson.",
+    "  exam      IELTS, PTE or O/L technique.",
+    "",
+    "QUOTATIONS: only well-attested ones. A great many language quotations",
+    "circulate with the wrong name attached - 'to have another language is to",
+    "possess a second soul' is not Charlemagne's, and 'tell me and I forget' is",
+    "not Franklin's. If the source cannot be named with confidence, leave it out.",
+    "Keep each quotation short.",
+    "",
+    "FIELDS",
+    "  kind    quote | grammar | teaching | exam",
+    "  text    The tip itself. One or two sentences.",
+    "  source  For a quotation, who said or wrote it. Empty otherwise.",
+    "  note    Optional second line - an example, or what to do with it."
+  ],
+  "tips": [
+    {
+      "kind": "quote",
+      "text": "The limits of my language mean the limits of my world.",
+      "source": "Ludwig Wittgenstein, Tractatus Logico-Philosophicus",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart.",
+      "source": "Nelson Mandela",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "Education is the most powerful weapon which you can use to change the world.",
+      "source": "Nelson Mandela",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "Language is the dress of thought.",
+      "source": "Samuel Johnson, Lives of the Poets",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "Grammar is the logic of speech, even as logic is the grammar of reason.",
+      "source": "Richard Chenevix Trench, On the Study of Words",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "The beautiful thing about learning is that no one can take it away from you.",
+      "source": "B. B. King",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "A word after a word after a word is power.",
+      "source": "Margaret Atwood, Spelling",
+      "note": ""
+    },
+    {
+      "kind": "quote",
+      "text": "Words are, of course, the most powerful drug used by mankind.",
+      "source": "Rudyard Kipling",
+      "note": ""
+    },
+
+    {
+      "kind": "grammar",
+      "text": "Use the present perfect when the time is not finished or not stated: I have taught here for ten years. Use the past simple when the time is over: I taught there in 2019.",
+      "source": "",
+      "note": "If the sentence names a finished time, the present perfect is wrong."
+    },
+    {
+      "kind": "grammar",
+      "text": "Since marks a point in time; for marks a length of time. Since 2019, for six years.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "grammar",
+      "text": "Few and a few are not the same. A few friends came means some came. Few friends came means almost nobody did.",
+      "source": "",
+      "note": "The same holds for little and a little."
+    },
+    {
+      "kind": "grammar",
+      "text": "Each and every take a singular verb: Every student has a book, not have.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "grammar",
+      "text": "Used to describes a past habit that has stopped: I used to walk to school. Be used to means accustomed, and takes -ing: I am used to walking.",
+      "source": "",
+      "note": "Two different structures that look alike. Teach them apart, not together."
+    },
+    {
+      "kind": "grammar",
+      "text": "In reported speech, say takes no person: She said that she was tired. Tell needs one: She told me that she was tired.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "grammar",
+      "text": "The passive is not a way of being polite. Use it when the doer is unknown, obvious, or not the point: The road was widened last year.",
+      "source": "",
+      "note": "If the doer matters, the active is clearer."
+    },
+    {
+      "kind": "grammar",
+      "text": "Its is the possessive; it's is it is or it has. The apostrophe never makes a possessive pronoun.",
+      "source": "",
+      "note": "Nor do hers, theirs or yours take one."
+    },
+    {
+      "kind": "grammar",
+      "text": "Adjective order in English is fixed and nobody is taught it: opinion, size, age, shape, colour, origin, material. A lovely little old round brown Sri Lankan wooden box.",
+      "source": "",
+      "note": "Learners get this wrong and cannot say why. Give them the order."
+    },
+    {
+      "kind": "grammar",
+      "text": "Neither and either take a singular verb when both items are singular: Neither answer is correct.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "grammar",
+      "text": "The second conditional uses the past form for an unreal present: If I had the money, I would buy it. The past form here is not past time.",
+      "source": "",
+      "note": "Were is correct for all persons: If I were you."
+    },
+    {
+      "kind": "grammar",
+      "text": "Some words are uncountable in English although they are countable in Sinhala and Tamil: information, advice, furniture, luggage, equipment. Not informations.",
+      "source": "",
+      "note": "Use a piece of information, two items of furniture."
+    },
+
+    {
+      "kind": "teaching",
+      "text": "Ask the question before you name the pupil. Name first and the rest of the class stops listening.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "teaching",
+      "text": "Wait three seconds after asking a question. Most teachers wait less than one, and the pupils who need longest never answer at all.",
+      "source": "",
+      "note": "Count it silently. Three seconds is longer than it feels."
+    },
+    {
+      "kind": "teaching",
+      "text": "Correct the error, not the child. Repeat the sentence correctly and move on; a pupil corrected in front of forty others stops volunteering.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "teaching",
+      "text": "In a class of forty, pair work gives every pupil twenty minutes of speaking in a forty-minute lesson. Whole-class questioning gives most of them none.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "teaching",
+      "text": "Write the lesson's one new structure on the board before you begin, and leave it there. A pupil who loses the thread can find it again without asking.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "teaching",
+      "text": "A game is worth the period only if it produces more language per pupil than the alternative. Judge it by that, not by how lively the room is.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "teaching",
+      "text": "Set the task before handing out the paper. Once a pupil has the sheet, they are reading it and not listening to you.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "teaching",
+      "text": "Give the weakest reader the sentence you know they can manage. Success is what makes a child read again; difficulty is what stops them.",
+      "source": "",
+      "note": ""
+    },
+
+    {
+      "kind": "exam",
+      "text": "In IELTS Writing Task 2, plan for two minutes before you write. Forty minutes is enough for a planned essay and not enough for an unplanned one.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "exam",
+      "text": "In IELTS Writing Task 1, do not explain why the figures changed. You are asked to report what the data shows, and guessing at causes earns nothing.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "exam",
+      "text": "In PTE Summarize Written Text the answer must be one sentence. Two sentences score zero for form however good the content is.",
+      "source": "",
+      "note": "Join with although, while or because rather than starting again."
+    },
+    {
+      "kind": "exam",
+      "text": "PTE is marked by machine, so hesitation costs more than a plain word choice. Say the ordinary word and keep going.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "exam",
+      "text": "In the O/L paper, answer the question that was asked. A good essay on a slightly different question earns the marks of a weak essay on the right one.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "exam",
+      "text": "Read the instruction for the word limit and obey it. Examiners stop reading where the limit ends, and the best sentence after it is not read.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "exam",
+      "text": "In a listening test, read the questions before the recording starts. You cannot listen for an answer you have not yet seen.",
+      "source": "",
+      "note": ""
+    },
+    {
+      "kind": "exam",
+      "text": "Leave nothing blank in a multiple-choice paper where wrong answers cost nothing. An unanswered question is certainly wrong; a guess sometimes is not.",
+      "source": "",
+      "note": "Check the rule first: PTE's multiple-answer questions do penalise wrong choices."
+    }
+  ]
+}

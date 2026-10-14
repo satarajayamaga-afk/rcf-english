@@ -5813,3 +5813,43 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
   .rebus__tools { display: none; }
   .rebus { break-inside: avoid; background: none; }
 }
+
+/* ------------------------------------------------------------- daily tip --
+   One short thing worth knowing, sitting in the page where a reader pauses.
+   Deliberately quiet: it is not an advertisement and must not look like one,
+   or readers learn to skip the shape. */
+.tip {
+  margin: var(--sp-5) 0 0;
+  padding: var(--sp-4);
+  border-left: 4px solid var(--gold-400);
+  background: var(--surface-tint);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.tip__kind {
+  margin: 0 0 var(--sp-2);
+  font-size: var(--step--2);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+.tip__text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--navy-800);
+}
+.tip__source {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-500);
+  font-style: italic;
+}
+.tip__note {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-700);
+}
+.tip__source[hidden], .tip__note[hidden] { display: none; }

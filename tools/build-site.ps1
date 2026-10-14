@@ -282,6 +282,9 @@ $listening = @(DataList 'listening' 'tests')
 $premiumProducts = @(DataList 'premium-products' 'products')
 # Books and resource collections are two separate catalogues, deliberately.
 $publicationBooks = @(DataList 'publications' 'books')
+# The rotating daily tip. The build writes one into the page so a reader with
+# no JavaScript sees a real tip; the script then picks the one for today.
+$dailyTips = @(DataList 'tips' 'tips')
 $promoAds = @(DataList 'promotions' 'ads')
 $promoPackages = @(DataList 'promotions' 'packages')
 # RCF's own offers, kept apart from the third-party ads above because
@@ -1589,6 +1592,46 @@ function RenderBlock($block) {
                 $html += '<p class="portrait__go"><a class="btn btn--sm btn--outline" href="' + (E (Url ([string](P $b 'url')))) + '">' + (E ([string](P $b 'label'))) + '</a></p>'
             }
             $html += '</div></div>'
+            return $html + '</div></section>'
+        }
+
+        'tip' {
+            # One short thing worth knowing - a quotation, a grammar point, a
+            # teaching note or an examination technique - sitting in the page
+            # where a reader naturally pauses.
+            #
+            # It is NOT a pop-up, on purpose. A timed interstitial is treated
+            # by Google as a mobile usability fault and would be a poor thing
+            # to add while the site is under AdSense review. This interrupts
+            # nothing and needs no dismissing.
+            #
+            # The build writes one tip in as ordinary HTML so the block is
+            # never empty without JavaScript. assets/js/tip.js then swaps in
+            # the one for today, so it changes daily without a rebuild.
+            if ($dailyTips.Count -eq 0) { return '' }
+            $wantKind = [string](P $block 'kind')
+            $pool = @($dailyTips)
+            if ($wantKind) { $pool = @($dailyTips | Where-Object { [string](P $_ 'kind') -eq $wantKind }) }
+            if ($pool.Count -eq 0) {
+                [void]$script:Warnings.Add("Tip block on '$($script:PageSlug)' asks for kind '$wantKind', which no tip in data/tips.json has")
+                return ''
+            }
+            # Chosen by the day of the year so the built page and the script
+            # agree on any given day.
+            $pick = $pool[([int](Get-Date).DayOfYear) % $pool.Count]
+
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<figure class="tip" data-tip' + $(if ($wantKind) { ' data-tip-kind="' + (E $wantKind) + '"' } else { '' }) + '>'
+            $kind = [string](P $pick 'kind')
+            $labels = @{ quote = 'Worth remembering'; grammar = 'Grammar point'; teaching = 'For the classroom'; exam = 'Examination technique' }
+            $label = if ($labels.ContainsKey($kind)) { $labels[$kind] } else { 'Worth knowing' }
+            $html += '<p class="tip__kind" data-tip-label>' + (E $label) + '</p>'
+            $html += '<blockquote class="tip__text" data-tip-text>' + (Inline ([string](P $pick 'text'))) + '</blockquote>'
+            $src = [string](P $pick 'source')
+            $html += '<figcaption class="tip__source" data-tip-source' + $(if ($src) { '' } else { ' hidden' }) + '>' + (E $src) + '</figcaption>'
+            $note = [string](P $pick 'note')
+            $html += '<p class="tip__note" data-tip-note' + $(if ($note) { '' } else { ' hidden' }) + '>' + (Inline $note) + '</p>'
+            $html += '</figure>'
             return $html + '</div></section>'
         }
 
@@ -3027,6 +3070,7 @@ function StaticList($source, $fixed, $limit = 0) {
 # The script each interactive block needs, loaded automatically on any page
 # that uses the block (see the module list in BuildPage).
 $script:BlockScripts = @{
+    'tip'          = 'tip'
     'rebus'        = 'rebus'
     'partnerGo'    = 'go'
     'ask'          = 'ask'
