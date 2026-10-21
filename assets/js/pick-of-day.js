@@ -9,9 +9,13 @@
    same one and it changes by itself at midnight. It is teal.
 
    They are separate notices with separate memories: closing one does not
-   close the other, and each has its own "don't show again". Only one is
-   shown at a time, so the page never opens with two strips. What's new goes
-   first when there is something new; otherwise the pick of the day appears.
+   close the other. Only one is shown at a time, so the page never opens
+   with two strips. What's new goes first when there is something new;
+   otherwise the pick of the day appears.
+
+   Closing is the only control. There is no "don't show again": a notice
+   that is easy to close does not need a permanent switch, and the switch
+   was the part that made the strip feel like an advertisement.
 
    There is no server and nothing is recorded. The only things stored are
    the date the pick was last seen and the id of the last update announced,
@@ -20,8 +24,8 @@
    Nothing is covered and no keyboard is trapped: the strip sits in the page
    rather than over it. Escape closes it. */
 
-const SEEN_PICK = "rcf-pick-seen";  // the date last shown, or "off"
-const SEEN_NEW = "rcf-new-seen";    // the id of the last update shown, or "off"
+const SEEN_PICK = "rcf-pick-seen";  // the date the pick was last shown
+const SEEN_NEW = "rcf-new-seen";    // the id of the last update announced
 
 function today() {
   // Local date, so the pick turns over at midnight where the visitor is,
@@ -80,7 +84,6 @@ function show(kind, item, onClose) {
       </p>
       <p class="pick__actions">
         <a class="btn btn--sm btn--accent pick__open" href="">${isNew ? "See it" : "Open this"}</a>
-        <button type="button" class="pick__off">Don't show again</button>
       </p>
       <button type="button" class="pick__x" aria-label="Close this notice">&times;</button>
     </div>`;
@@ -95,17 +98,16 @@ function show(kind, item, onClose) {
   strip.querySelector(".pick__text").textContent = item.text;
   strip.querySelector(".pick__open").setAttribute("href", href);
 
-  const close = (forGood) => {
-    onClose(forGood);
+  const close = () => {
+    onClose();
     strip.remove();
     document.removeEventListener("keydown", onKey);
   };
-  const onKey = (e) => { if (e.key === "Escape" && strip.isConnected) close(false); };
+  const onKey = (e) => { if (e.key === "Escape" && strip.isConnected) close(); };
 
-  strip.querySelector(".pick__x").addEventListener("click", () => close(false));
-  strip.querySelector(".pick__off").addEventListener("click", () => close(true));
-  strip.querySelector(".pick__open").addEventListener("click", () => close(false));
-  title.addEventListener("click", () => close(false));
+  strip.querySelector(".pick__x").addEventListener("click", close);
+  strip.querySelector(".pick__open").addEventListener("click", close);
+  title.addEventListener("click", close);
   document.addEventListener("keydown", onKey);
 
   nav.parentNode.insertBefore(strip, nav);
@@ -114,9 +116,20 @@ function show(kind, item, onClose) {
 
 const here = (url) => new URL(url, document.baseURI).pathname === location.pathname;
 
+// The opening sentence of a description, with exactly one full stop at the
+// end. Splitting on ". " and adding a stop gave "hard.." whenever the
+// description was a single sentence that already ended in one.
+function firstSentence(text) {
+  const first = String(text || "").split(". ")[0].trim();
+  if (!first) return "";
+  return /[.!?]$/.test(first) ? first : first + ".";
+}
+
 async function whatsNew() {
+  // A visitor who once clicked "don't show again" has "off" stored here. That
+  // never matches an update id, so they simply start seeing notices again -
+  // which is the point: one mis-click should not silence the site for good.
   const seen = store(SEEN_NEW);
-  if (seen === "off") return false;
   let data;
   try { data = await json("data/updates.json"); } catch (e) { return false; }
   const items = (data.items || []).filter((i) => i.published !== false && i.url);
@@ -125,22 +138,23 @@ async function whatsNew() {
   if (!newest || newest.id === seen || here(newest.url)) return false;
   show("new", {
     title: newest.title,
-    text: (newest.description || "").split(". ")[0] + ".",
+    text: firstSentence(newest.description),
     tag: "Just added",
     url: newest.url
-  }, (forGood) => remember(SEEN_NEW, forGood ? "off" : newest.id));
+  }, () => remember(SEEN_NEW, newest.id));
   return true;
 }
 
 async function pickOfTheDay() {
+  // As above: a stored "off" is not today's date, so the pick comes back.
   const seen = store(SEEN_PICK);
-  if (seen === "off" || seen === today()) return;
+  if (seen === today()) return;
   let list;
   try { list = await json("data/pick-of-the-day.json"); } catch (e) { return; }
   if (!Array.isArray(list) || !list.length) return;
   const pick = pickFor(list, today());
   if (here(pick.url)) return;   // do not advertise the page already open
-  show("pick", pick, (forGood) => remember(SEEN_PICK, forGood ? "off" : today()));
+  show("pick", pick, () => remember(SEEN_PICK, today()));
 }
 
 (async () => {

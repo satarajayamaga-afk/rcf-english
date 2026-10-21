@@ -5441,18 +5441,6 @@ button.ee__sent:hover, button.ee__sent.is-on { background: #fff3c4; box-shadow: 
 .pick__text { color: var(--ink-700); }
 .pick__text::before { content: " \2014 "; color: var(--ink-500); }
 .pick__actions { margin: 0; flex: none; display: flex; align-items: center; gap: var(--sp-3); }
-.pick__off {
-  border: 0;
-  background: none;
-  padding: 0;
-  font: inherit;
-  font-size: 0.78rem;
-  color: var(--ink-500);
-  text-decoration: underline;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.pick__off:hover { color: var(--ink-900); }
 .pick__x {
   position: absolute;
   top: 50%;
