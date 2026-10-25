@@ -3115,6 +3115,7 @@ function StaticList($source, $fixed, $limit = 0) {
 # The script each interactive block needs, loaded automatically on any page
 # that uses the block (see the module list in BuildPage).
 $script:BlockScripts = @{
+    'publications-catalogue' = 'sample'
     'tip'          = 'tip'
     'rebus'        = 'rebus'
     'partnerGo'    = 'go'
