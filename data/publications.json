@@ -104,6 +104,10 @@
         {
           "thumb": "assets/img/samples/sample-sl6-t-41.webp",
           "full": "assets/img/samples/sample-sl6-41.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl6-t-64.webp",
+          "full": "assets/img/samples/sample-sl6-64.webp"
         }
       ]
     },
@@ -125,7 +129,33 @@
       "buttonLabel": "",
       "image": "assets/img/publications/grade-7-english-support-book.jpg",
       "imageAlt": "Front cover of the Grade 7 Support Book for Slow Learners, RCF Publications",
-      "published": true
+      "published": true,
+      "sample": [
+        {
+          "thumb": "assets/img/samples/sample-sl7-t-5.webp",
+          "full": "assets/img/samples/sample-sl7-5.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl7-t-12.webp",
+          "full": "assets/img/samples/sample-sl7-12.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl7-t-13.webp",
+          "full": "assets/img/samples/sample-sl7-13.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl7-t-37.webp",
+          "full": "assets/img/samples/sample-sl7-37.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl7-t-61.webp",
+          "full": "assets/img/samples/sample-sl7-61.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl7-t-83.webp",
+          "full": "assets/img/samples/sample-sl7-83.webp"
+        }
+      ]
     },
     {
       "id": "slow-learners-g8",
@@ -166,6 +196,10 @@
         {
           "thumb": "assets/img/samples/sample-sl8-t-40.webp",
           "full": "assets/img/samples/sample-sl8-40.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl8-t-64.webp",
+          "full": "assets/img/samples/sample-sl8-64.webp"
         }
       ]
     },
@@ -209,6 +243,10 @@
         {
           "thumb": "assets/img/samples/sample-sl9-t-36.webp",
           "full": "assets/img/samples/sample-sl9-36.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl9-t-57.webp",
+          "full": "assets/img/samples/sample-sl9-57.webp"
         }
       ]
     },
@@ -230,7 +268,33 @@
       "buttonLabel": "",
       "image": "assets/img/publications/grade-10-english-support-book.jpg",
       "imageAlt": "Front cover of the Grade 10 English Support Book for Slow Learners by R. C. Fernando",
-      "published": true
+      "published": true,
+      "sample": [
+        {
+          "thumb": "assets/img/samples/sample-sl10-t-4.webp",
+          "full": "assets/img/samples/sample-sl10-4.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl10-t-10.webp",
+          "full": "assets/img/samples/sample-sl10-10.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl10-t-25.webp",
+          "full": "assets/img/samples/sample-sl10-25.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl10-t-40.webp",
+          "full": "assets/img/samples/sample-sl10-40.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl10-t-55.webp",
+          "full": "assets/img/samples/sample-sl10-55.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl10-t-70.webp",
+          "full": "assets/img/samples/sample-sl10-70.webp"
+        }
+      ]
     },
     {
       "id": "slow-learners-g11",
@@ -271,6 +335,10 @@
         {
           "thumb": "assets/img/samples/sample-sl11-t-65.webp",
           "full": "assets/img/samples/sample-sl11-65.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-sl11-t-106.webp",
+          "full": "assets/img/samples/sample-sl11-106.webp"
         }
       ]
     },
@@ -285,19 +353,45 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
       "buttonLabel": "",
       "image": "assets/img/publications/ol-english-grammar-practice-book.jpg",
       "imageAlt": "Front cover of the O/L English Grammar Practice Book by R. C. Fernando",
-      "published": true
+      "published": true,
+      "sample": [
+        {
+          "thumb": "assets/img/samples/sample-gram2-t-6.webp",
+          "full": "assets/img/samples/sample-gram2-6.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram2-t-10.webp",
+          "full": "assets/img/samples/sample-gram2-10.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram2-t-23.webp",
+          "full": "assets/img/samples/sample-gram2-23.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram2-t-36.webp",
+          "full": "assets/img/samples/sample-gram2-36.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram2-t-49.webp",
+          "full": "assets/img/samples/sample-gram2-49.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram2-t-63.webp",
+          "full": "assets/img/samples/sample-gram2-63.webp"
+        }
+      ]
     },
     {
       "id": "grammar-quick-reference",
       "code": "PUB-202",
-      "title": "The Complete O/L English Grammar Quick Reference Book",
+      "title": "The Complete O/L English Grammar Quick Reference Book (O/L English Mastery: Grammar Foundations for Reading and Writing)",
       "author": "R. C. Fernando",
       "audience": "Ordinary Level",
       "category": "Grammar and examination support",
@@ -305,7 +399,7 @@
       "format": "Bilingual PDF book",
       "availability": "available",
       "channel": "pdf",
-      "price": "",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
@@ -313,7 +407,33 @@
       "image": "assets/img/publications/ol-english-grammar-quick-reference-promotional-image.jpg",
       "imageAlt": "Promotional graphic for The Complete O/L English Grammar Quick Reference Book by R. C. Fernando",
       "coverNote": "This is the promotional graphic, not a plain front cover. It is shown until a catalogue cover is chosen.",
-      "published": true
+      "published": true,
+      "sample": [
+        {
+          "thumb": "assets/img/samples/sample-gram1-t-9.webp",
+          "full": "assets/img/samples/sample-gram1-9.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram1-t-11.webp",
+          "full": "assets/img/samples/sample-gram1-11.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram1-t-26.webp",
+          "full": "assets/img/samples/sample-gram1-26.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram1-t-41.webp",
+          "full": "assets/img/samples/sample-gram1-41.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram1-t-56.webp",
+          "full": "assets/img/samples/sample-gram1-56.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-gram1-t-71.webp",
+          "full": "assets/img/samples/sample-gram1-71.webp"
+        }
+      ]
     },
     {
       "id": "lets-talk-primary",
@@ -326,7 +446,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
@@ -354,6 +474,10 @@
         {
           "thumb": "assets/img/samples/sample-spoken-t-64.webp",
           "full": "assets/img/samples/sample-spoken-64.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-spoken-t-94.webp",
+          "full": "assets/img/samples/sample-spoken-94.webp"
         }
       ]
     },
@@ -396,6 +520,10 @@
         {
           "thumb": "assets/img/samples/sample-poetry-t-73.webp",
           "full": "assets/img/samples/sample-poetry-73.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-poetry-t-111.webp",
+          "full": "assets/img/samples/sample-poetry-111.webp"
         }
       ]
     },
@@ -438,6 +566,10 @@
         {
           "thumb": "assets/img/samples/sample-prosedrama-t-89.webp",
           "full": "assets/img/samples/sample-prosedrama-89.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-prosedrama-t-133.webp",
+          "full": "assets/img/samples/sample-prosedrama-133.webp"
         }
       ]
     },
@@ -449,10 +581,10 @@
       "audience": "O/L Literature students and teachers",
       "category": "Literature study guides",
       "description": "A comprehensive secondary-level study guide to Junji Kinoshita's play Twilight of a Crane. It supports close study of the text through clear literary discussion, examination guidance and model answers.",
-      "format": "Kindle edition",
+      "format": "PDF eBook",
       "availability": "available",
-      "channel": "kindle",
-      "price": "",
+      "channel": "pdf",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
@@ -472,7 +604,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -500,6 +632,10 @@
         {
           "thumb": "assets/img/samples/sample-vendor-t-125.webp",
           "full": "assets/img/samples/sample-vendor-125.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-vendor-t-188.webp",
+          "full": "assets/img/samples/sample-vendor-188.webp"
         }
       ]
     },
@@ -514,7 +650,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -542,6 +678,10 @@
         {
           "thumb": "assets/img/samples/sample-tony-t-42.webp",
           "full": "assets/img/samples/sample-tony-42.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-tony-t-54.webp",
+          "full": "assets/img/samples/sample-tony-54.webp"
         }
       ]
     },
@@ -553,10 +693,10 @@
       "audience": "Teachers of Grade 6 and above",
       "category": "Teacher-development books",
       "description": "A practical guide to using artificial intelligence to solve real classroom problems, prepare useful prompts and develop lessons teachers can use immediately. It emphasises classroom application rather than technical theory.",
-      "format": "Kindle edition",
+      "format": "PDF eBook",
       "availability": "available",
-      "channel": "kindle",
-      "price": "",
+      "channel": "pdf",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
@@ -573,10 +713,10 @@
       "audience": "Adult and professional learners",
       "category": "Professional and workplace English",
       "description": "A practical manual of professional communication for learners and employees who need English at work. It develops language for collaboration, customer service, meetings and other everyday professional situations. Expanded Practical International Edition.",
-      "format": "Kindle edition",
+      "format": "PDF eBook",
       "availability": "available",
-      "channel": "kindle",
-      "price": "",
+      "channel": "pdf",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
@@ -604,6 +744,10 @@
         {
           "thumb": "assets/img/samples/sample-workplace-t-130.webp",
           "full": "assets/img/samples/sample-workplace-130.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-workplace-t-190.webp",
+          "full": "assets/img/samples/sample-workplace-190.webp"
         }
       ]
     },
@@ -615,10 +759,10 @@
       "audience": "Adult and professional learners",
       "category": "Professional and workplace English",
       "description": "A hands-on training guide for front-desk and reception work. It supports learners and new employees with the communication, customer-care and workplace skills needed to manage common reception duties professionally.",
-      "format": "Kindle edition",
+      "format": "PDF eBook",
       "availability": "available",
-      "channel": "kindle",
-      "price": "",
+      "channel": "pdf",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "",
       "url": "",
@@ -667,6 +811,10 @@
         {
           "thumb": "assets/img/samples/sample-geworkbook-t-77.webp",
           "full": "assets/img/samples/sample-geworkbook-77.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-geworkbook-t-114.webp",
+          "full": "assets/img/samples/sample-geworkbook-114.webp"
         }
       ]
     },
@@ -678,11 +826,11 @@
       "audience": "Adult learners",
       "category": "Professional and workplace English",
       "description": "A practical communication and workplace training manual for aged-care and home-care workers. It covers the language of daily care, the vocabulary a carer meets on the job, and speaking with residents, families and employers. International Edition.",
-      "format": "PDF eBook",
+      "format": "Kindle edition",
       "availability": "available",
-      "channel": "pdf",
-      "price": "PDF eBook — Rs. 500/=",
-      "amazonUrl": "",
+      "channel": "kindle",
+      "price": "",
+      "amazonUrl": "https://www.amazon.com/dp/B0HGB9TNLD",
       "badge": "",
       "url": "",
       "buttonLabel": "",
@@ -729,6 +877,10 @@
         {
           "thumb": "assets/img/samples/sample-mastering1-t-47.webp",
           "full": "assets/img/samples/sample-mastering1-47.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-mastering1-t-64.webp",
+          "full": "assets/img/samples/sample-mastering1-64.webp"
         }
       ]
     },
@@ -771,6 +923,10 @@
         {
           "thumb": "assets/img/samples/sample-mastering11-t-65.webp",
           "full": "assets/img/samples/sample-mastering11-65.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-mastering11-t-99.webp",
+          "full": "assets/img/samples/sample-mastering11-99.webp"
         }
       ]
     },
@@ -785,7 +941,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -805,6 +961,10 @@
         {
           "thumb": "assets/img/samples/sample-lp3-t-47.webp",
           "full": "assets/img/samples/sample-lp3-47.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp3-t-77.webp",
+          "full": "assets/img/samples/sample-lp3-77.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp3-t-107.webp",
@@ -827,7 +987,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -847,6 +1007,10 @@
         {
           "thumb": "assets/img/samples/sample-lp4-t-38.webp",
           "full": "assets/img/samples/sample-lp4-38.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp4-t-59.webp",
+          "full": "assets/img/samples/sample-lp4-59.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp4-t-81.webp",
@@ -869,7 +1033,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -889,6 +1053,10 @@
         {
           "thumb": "assets/img/samples/sample-lp5-t-38.webp",
           "full": "assets/img/samples/sample-lp5-38.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp5-t-59.webp",
+          "full": "assets/img/samples/sample-lp5-59.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp5-t-79.webp",
@@ -911,7 +1079,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -931,6 +1099,10 @@
         {
           "thumb": "assets/img/samples/sample-lp6-t-51.webp",
           "full": "assets/img/samples/sample-lp6-51.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp6-t-83.webp",
+          "full": "assets/img/samples/sample-lp6-83.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp6-t-115.webp",
@@ -953,7 +1125,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -973,6 +1145,10 @@
         {
           "thumb": "assets/img/samples/sample-lp7-t-49.webp",
           "full": "assets/img/samples/sample-lp7-49.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp7-t-80.webp",
+          "full": "assets/img/samples/sample-lp7-80.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp7-t-113.webp",
@@ -995,7 +1171,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -1015,6 +1191,10 @@
         {
           "thumb": "assets/img/samples/sample-lp8-t-39.webp",
           "full": "assets/img/samples/sample-lp8-39.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp8-t-62.webp",
+          "full": "assets/img/samples/sample-lp8-62.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp8-t-84.webp",
@@ -1037,7 +1217,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -1057,6 +1237,10 @@
         {
           "thumb": "assets/img/samples/sample-lp9-t-48.webp",
           "full": "assets/img/samples/sample-lp9-48.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp9-t-79.webp",
+          "full": "assets/img/samples/sample-lp9-79.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp9-t-109.webp",
@@ -1079,7 +1263,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -1099,6 +1283,10 @@
         {
           "thumb": "assets/img/samples/sample-lp10-t-60.webp",
           "full": "assets/img/samples/sample-lp10-60.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp10-t-100.webp",
+          "full": "assets/img/samples/sample-lp10-100.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp10-t-140.webp",
@@ -1121,7 +1309,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -1141,6 +1329,10 @@
         {
           "thumb": "assets/img/samples/sample-lp11-t-51.webp",
           "full": "assets/img/samples/sample-lp11-51.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp11-t-83.webp",
+          "full": "assets/img/samples/sample-lp11-83.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp11-t-115.webp",
@@ -1163,7 +1355,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -1191,6 +1383,10 @@
         {
           "thumb": "assets/img/samples/sample-lp12-t-50.webp",
           "full": "assets/img/samples/sample-lp12-50.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp12-t-69.webp",
+          "full": "assets/img/samples/sample-lp12-69.webp"
         }
       ]
     },
@@ -1205,7 +1401,7 @@
       "format": "PDF eBook",
       "availability": "available",
       "channel": "pdf",
-      "price": "PDF eBook - Rs. 500/=",
+      "price": "PDF eBook — Rs. 500/=",
       "amazonUrl": "",
       "badge": "New",
       "url": "",
@@ -1225,6 +1421,10 @@
         {
           "thumb": "assets/img/samples/sample-lp13-t-41.webp",
           "full": "assets/img/samples/sample-lp13-41.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-lp13-t-63.webp",
+          "full": "assets/img/samples/sample-lp13-63.webp"
         },
         {
           "thumb": "assets/img/samples/sample-lp13-t-85.webp",
