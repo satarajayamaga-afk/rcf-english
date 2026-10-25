@@ -872,7 +872,12 @@ function RenderBlock($block) {
             # script hides the lines and adds the controls only once it runs.
             $html = (SectionOpen $block) + (SectionHead $block)
             foreach ($item in (AsList (P $block 'items'))) {
-                $speakers = @(AsList (P $item 'speakers'))
+                # Not @(AsList ...): AsList returns the array intact, and
+                # wrapping it again gives a one-element array holding the
+                # array. IndexOf then never found a speaker, every line fell
+                # back to index 0, and both sides of every conversation were
+                # drawn on the same side.
+                $speakers = AsList (P $item 'speakers')
                 $html += '<div class="dlg" data-dialogue>'
                 $html += '<div class="dlg__head"><h3 class="dlg__title">' + (E (P $item 'title' 'Conversation')) + '</h3>'
                 $setting = [string](P $item 'setting' '')
@@ -1778,6 +1783,46 @@ function RenderBlock($block) {
                 $d = [string](P $b 'description'); if ($d) { $html += '<p class="pcard__text">' + (E $d) + '</p>' }
                 $cn = [string](P $b 'coverNote')
                 if ($cn) { $html += '<p class="pcard__covernote">' + (E $cn) + '</p>' }
+                # ---- see inside ----------------------------------------------
+                # Sample pages shown on the card, not hidden behind a click: a
+                # buyer should be able to see that there is something real
+                # inside without having to ask for it.
+                #
+                # They are small pictures that link to the full-size page, so
+                # the thumbnails cost little, the images are lazy, and the
+                # enlargement needs no JavaScript and no lightbox. Pictures
+                # rather than a PDF extract: a downloadable sample of a book
+                # that IS a PDF hands over a free copy in the same form, while
+                # a picture is something to look at, not to pass on.
+                # Each entry carries two files: a small 'thumb' for the card and
+                # the readable 'full' page behind it. One file for both would
+                # mean every card downloading a 90 KB page to paint a 72-pixel
+                # picture, which on a shelf of thirty books is most of a
+                # megabyte nobody asked for.
+                # AsList already returns the array intact (it uses the comma
+                # operator to stop PowerShell unrolling it). Wrapping that in
+                # @( ) again makes a one-element array holding the array, so
+                # the loop below ran once and rendered nothing.
+                $samples = AsList (P $b 'sample')
+                if ($samples.Count) {
+                    $bt = [string](P $b 'title')
+                    $html += '<div class="psample"><p class="psample__label">Want to see inside?</p>'
+                    $html += '<ul class="psample__pages">'
+                    $sn = 0
+                    foreach ($sp in $samples) {
+                        $sn++
+                        $full  = [string](P $sp 'full')
+                        $thumb = [string](P $sp 'thumb')
+                        if (-not $full) { continue }
+                        if (-not $thumb) { $thumb = $full }
+                        $html += '<li><a class="psample__link" href="' + (E (Url $full)) + '" target="_blank" rel="noopener noreferrer">'
+                        $html += '<img class="psample__page" src="' + (E (Url $thumb)) + '" alt="Sample page ' + $sn + ' from ' + (E $bt) + '" loading="lazy" decoding="async">'
+                        $html += '<span class="visually-hidden">, opens the full-size page in a new tab</span></a></li>'
+                    }
+                    $html += '</ul>'
+                    $html += '<p class="psample__note">' + $samples.Count + ' sample page' + $(if ($samples.Count -ne 1) { 's' }) + ' from the book. Tap one to read it.</p>'
+                    $html += '</div>'
+                }
                 $code = [string](P $b 'code')
                 if ($code) { $html += '<p class="pcard__code">Product code: <strong>' + (E $code) + '</strong></p>' }
                 # ---- availability and purchase -------------------------------

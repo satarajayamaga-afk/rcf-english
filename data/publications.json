@@ -285,7 +285,29 @@
       "buttonLabel": "",
       "image": "assets/img/publications/ol-prose-drama-made-easy.webp",
       "imageAlt": "Front cover of O/L Prose & Drama Made Easy by R. C. Fernando",
-      "published": true
+      "published": true,
+      "sample": [
+        {
+          "thumb": "assets/img/samples/sample-prose-drama-t-10.webp",
+          "full": "assets/img/samples/sample-prose-drama-10.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-prose-drama-t-20.webp",
+          "full": "assets/img/samples/sample-prose-drama-20.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-prose-drama-t-45.webp",
+          "full": "assets/img/samples/sample-prose-drama-45.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-prose-drama-t-100.webp",
+          "full": "assets/img/samples/sample-prose-drama-100.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-prose-drama-t-140.webp",
+          "full": "assets/img/samples/sample-prose-drama-140.webp"
+        }
+      ]
     },
     {
       "id": "twilight-crane-guide",
@@ -385,7 +407,29 @@
       "buttonLabel": "",
       "image": "assets/img/publications/english-for-the-workplace-kindle.jpg",
       "imageAlt": "Kindle cover of English for the Workplace, Expanded Practical International Edition",
-      "published": true
+      "published": true,
+      "sample": [
+        {
+          "thumb": "assets/img/samples/sample-workplace-t-2.webp",
+          "full": "assets/img/samples/sample-workplace-2.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-workplace-t-20.webp",
+          "full": "assets/img/samples/sample-workplace-20.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-workplace-t-45.webp",
+          "full": "assets/img/samples/sample-workplace-45.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-workplace-t-100.webp",
+          "full": "assets/img/samples/sample-workplace-100.webp"
+        },
+        {
+          "thumb": "assets/img/samples/sample-workplace-t-180.webp",
+          "full": "assets/img/samples/sample-workplace-180.webp"
+        }
+      ]
     },
     {
       "id": "receptionists-manual",

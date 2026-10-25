@@ -3981,6 +3981,50 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   font-size: var(--step--1); font-weight: 600;
 }
 .pcard__author { margin: 0 0 var(--sp-2); font-size: var(--step--1); color: var(--ink-700); font-style: italic; }
+/* Sample pages ------------------------------------------------------------ */
+
+/* A row of small pages under the description. They are deliberately visible
+   rather than folded away: the point is that a buyer sees there is real
+   content inside before deciding. Each one links to the full-size page. */
+.psample { margin: var(--sp-3) 0 0; }
+.psample__label {
+  margin: 0 0 var(--sp-1);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--ink-900);
+}
+.psample__pages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+.psample__link {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface-alt);
+  line-height: 0;
+}
+.psample__link:hover,
+.psample__link:focus-visible { border-color: var(--navy-800); }
+.psample__page {
+  display: block;
+  width: 72px;
+  height: 102px;
+  object-fit: cover;
+  /* The top of a page carries the heading, which is what identifies it. */
+  object-position: top center;
+}
+.psample__note {
+  margin: var(--sp-1) 0 0;
+  font-size: 0.78rem;
+  color: var(--ink-500);
+}
+
 .pcard__code { margin: var(--sp-2) 0 0; font-size: var(--step--1); color: var(--ink-500); }
 .pcard__code strong { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--ink-900); }
 
