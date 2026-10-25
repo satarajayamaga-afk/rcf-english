@@ -4214,6 +4214,10 @@ function RenderClasses($block) {
         }
 
         $html += '<div class="tag-row">'
+        # An explicit label the owner can set on a class, such as "New". It
+        # comes before the automatic marks so it reads first.
+        $cBadge = [string](P $c 'badge' '')
+        if ($cBadge) { $html += '<span class="tag tag--badge">' + (E $cBadge) + '</span>' }
         if (ClassIsStartingSoon $c) { $html += '<span class="tag tag--new">Starting soon</span>' }
         $html += '<span class="class-card__status" data-status="' + $status[0] + '">' + (E $status[1]) + '</span>'
         if (P $c 'delivery') { $html += '<span class="tag tag--type">' + (E ((Get-Culture).TextInfo.ToTitleCase([string](P $c 'delivery')))) + '</span>' }
