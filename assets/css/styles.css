@@ -933,14 +933,12 @@ a:hover { color: var(--teal-700); }
     background: var(--navy-900);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
-  /* The bar gets a wider container than the body text. Twelve sections do
-     not fit inside the 1220px reading measure, and from about 1363px up
-     that space was sitting unused on either side of the row. Widening the
-     container is the fix; squeezing the font or the padding is not. */
-  .main-nav > .container {
-    max-width: 1600px;
-    padding-inline: var(--sp-4);
-  }
+  /* The bar uses the same container as the header above it, so the row
+     starts under the logo and ends under the Publications button. It was
+     widened to 1600px once to fit twelve sections, which bought the width
+     at the cost of alignment: the row began 50px left of the logo and
+     stopped 116px short of it on the right, leaving the bar visibly
+     lop-sided. The sections now fit the reading measure, so they align. */
   /* Twelve top-level sections on one row, and they must stay on one row.
      Wrapping is switched off deliberately: below the breakpoint above the
      bar is hidden altogether and the drawer takes over, so a second row
@@ -953,6 +951,10 @@ a:hover { color: var(--teal-700); }
     margin: 0;
     padding: 0;
     gap: 0;
+    /* The row fills the container end to end, so the last section lands
+       under the Publications button instead of trailing off with a gap of
+       dead space to its right. */
+    justify-content: space-between;
   }
   .main-nav__item { position: relative; margin: 0; }
 
@@ -963,10 +965,12 @@ a:hover { color: var(--teal-700); }
     gap: 0.3rem;
     height: 100%;
     min-height: 46px;
-    /* Comfortable spacing, affordable because the bar is no longer confined
-       to the body container. Check the row still fits at 1240px, the width
-       at which this bar replaces the drawer, before loosening it further. */
-    padding: 0.5rem 0.4rem;
+    /* The eleven sections have to fit the 1220px reading measure so the row
+       lines up with the header above it. At 0.4rem they needed 1208px and
+       the measure gives 1172px, so the 36px comes off the side padding
+       rather than out of a section. Anything looser pushes the row wider
+       than the header again, which is what made it look lop-sided. */
+    padding: 0.5rem 0.22rem;
     background: none;
     border: 0;
     border-bottom: 3px solid transparent;

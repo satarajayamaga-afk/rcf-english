@@ -391,6 +391,11 @@ function DesktopNav($slug) {
         # so they are left out of this row. Eleven sections did not fit on one
         # line at ordinary laptop widths; nine fit with room to spare.
         if ((P $item 'headerOnly') -eq $true) { continue }
+        # Items with drawerOnly keep their place in the slide-out menu and in
+        # the footer, but give up their seat in this row. "More" was a vague
+        # label spending 57 pixels of a row that has none to spare, and the
+        # room it freed went to Global English, which names a real section.
+        if ((P $item 'drawerOnly') -eq $true) { continue }
         $label = [string](P $item 'label')
         $url = [string](P $item 'url' '')
         $groups = AsList (P $item 'groups')

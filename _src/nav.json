@@ -6,175 +6,6 @@
       "url": ""
     },
     {
-      "label": "Global English",
-      "url": "global-english/",
-      "note": "GCSE, IGCSE and Cambridge English",
-      "_headerOnly": "Sits as its own button in the header bar rather than in the section row below. Eleven sections do not fit on one line at ordinary laptop widths, so adding this one to the row would have wrapped the menu. On a telephone the header buttons are hidden and this appears in the slide-out menu with all its pages.",
-      "headerOnly": true,
-      "headerStyle": "global",
-      "summary": "English qualifications taken outside Sri Lanka: GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, and the Cambridge English Qualifications.",
-      "groups": [
-        {
-          "title": "Start here",
-          "links": [
-            {
-              "label": "Global English Overview",
-              "url": "global-english/"
-            }
-          ]
-        },
-        {
-          "title": "GCSE (United Kingdom)",
-          "links": [
-            {
-              "label": "GCSE English",
-              "url": "global-english/gcse/"
-            },
-            {
-              "label": "AQA English Language",
-              "url": "global-english/gcse/aqa/"
-            },
-            {
-              "label": "AQA Paper 1",
-              "url": "global-english/gcse/aqa/paper-1/"
-            },
-            {
-              "label": "AQA Paper 2",
-              "url": "global-english/gcse/aqa/paper-2/"
-            },
-            {
-              "label": "AQA Past Papers and Model Papers",
-              "url": "global-english/gcse/aqa/papers/"
-            },
-            {
-              "label": "AQA Revision Strategies",
-              "url": "global-english/gcse/aqa/revision/"
-            },
-            {
-              "label": "Edexcel English Language (1EN0)",
-              "url": "global-english/gcse/edexcel/"
-            },
-            {
-              "label": "Edexcel Paper 1",
-              "url": "global-english/gcse/edexcel/paper-1/"
-            },
-            {
-              "label": "Edexcel Paper 2",
-              "url": "global-english/gcse/edexcel/paper-2/"
-            },
-            {
-              "label": "Edexcel Past Papers and Model Papers",
-              "url": "global-english/gcse/edexcel/papers/"
-            },
-            {
-              "label": "Edexcel Model Paper 1",
-              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/"
-            },
-            {
-              "label": "Edexcel Model Paper 2",
-              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/"
-            },
-            {
-              "label": "OCR English Language (J351)",
-              "url": "global-english/gcse/ocr/"
-            },
-            {
-              "label": "OCR Component 01",
-              "url": "global-english/gcse/ocr/component-1/"
-            },
-            {
-              "label": "OCR Component 02",
-              "url": "global-english/gcse/ocr/component-2/"
-            },
-            {
-              "label": "OCR Past Papers",
-              "url": "global-english/gcse/ocr/papers/"
-            },
-            {
-              "label": "Eduqas English Language (C700QS)",
-              "url": "global-english/gcse/eduqas/"
-            },
-            {
-              "label": "Eduqas Component 1",
-              "url": "global-english/gcse/eduqas/component-1/"
-            },
-            {
-              "label": "Eduqas Component 2",
-              "url": "global-english/gcse/eduqas/component-2/"
-            },
-            {
-              "label": "Eduqas Past Papers",
-              "url": "global-english/gcse/eduqas/papers/"
-            }
-          ]
-        },
-        {
-          "title": "International GCSE",
-          "links": [
-            {
-              "label": "IGCSE English",
-              "url": "global-english/igcse/"
-            },
-            {
-              "label": "Cambridge IGCSE English as a Second Language",
-              "url": "global-english/igcse/english-as-a-second-language/"
-            },
-            {
-              "label": "IGCSE ESL Reading and Writing Paper",
-              "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/"
-            },
-            {
-              "label": "IGCSE ESL Writing Formats",
-              "url": "global-english/igcse/english-as-a-second-language/writing-formats/"
-            },
-            {
-              "label": "IGCSE ESL Model Answers",
-              "url": "global-english/igcse/english-as-a-second-language/model-answers/"
-            },
-            {
-              "label": "IGCSE ESL Speaking Test",
-              "url": "global-english/igcse/english-as-a-second-language/speaking-test/"
-            }
-          ]
-        },
-        {
-          "title": "Cambridge English",
-          "links": [
-            {
-              "label": "Cambridge English Qualifications",
-              "url": "global-english/cambridge-english/"
-            }
-          ]
-        },
-        {
-          "title": "Edexcel graded curriculum",
-          "links": [
-            {
-              "label": "iPrimary and iLowerSecondary",
-              "url": "global-english/edexcel-international-curriculum/"
-            },
-            {
-              "label": "iPrimary English (Years 1-6)",
-              "url": "global-english/edexcel-international-curriculum/iprimary/"
-            },
-            {
-              "label": "iLowerSecondary English (Years 7-9)",
-              "url": "global-english/edexcel-international-curriculum/ilowersecondary/"
-            }
-          ]
-        },
-        {
-          "title": "Skills",
-          "links": [
-            {
-              "label": "English Skills",
-              "url": "global-english/skills/"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "label": "RCF Publications",
       "url": "rcf-publications/",
       "external": false,
@@ -1197,6 +1028,173 @@
       ]
     },
     {
+      "label": "Global English",
+      "url": "global-english/",
+      "note": "GCSE, IGCSE and Cambridge English",
+      "summary": "English qualifications taken outside Sri Lanka: GCSE and International GCSE English Language and Literature, Cambridge IGCSE English as a Second Language, and the Cambridge English Qualifications.",
+      "groups": [
+        {
+          "title": "Start here",
+          "links": [
+            {
+              "label": "Global English Overview",
+              "url": "global-english/"
+            }
+          ]
+        },
+        {
+          "title": "GCSE (United Kingdom)",
+          "links": [
+            {
+              "label": "GCSE English",
+              "url": "global-english/gcse/"
+            },
+            {
+              "label": "AQA English Language",
+              "url": "global-english/gcse/aqa/"
+            },
+            {
+              "label": "AQA Paper 1",
+              "url": "global-english/gcse/aqa/paper-1/"
+            },
+            {
+              "label": "AQA Paper 2",
+              "url": "global-english/gcse/aqa/paper-2/"
+            },
+            {
+              "label": "AQA Past Papers and Model Papers",
+              "url": "global-english/gcse/aqa/papers/"
+            },
+            {
+              "label": "AQA Revision Strategies",
+              "url": "global-english/gcse/aqa/revision/"
+            },
+            {
+              "label": "Edexcel English Language (1EN0)",
+              "url": "global-english/gcse/edexcel/"
+            },
+            {
+              "label": "Edexcel Paper 1",
+              "url": "global-english/gcse/edexcel/paper-1/"
+            },
+            {
+              "label": "Edexcel Paper 2",
+              "url": "global-english/gcse/edexcel/paper-2/"
+            },
+            {
+              "label": "Edexcel Past Papers and Model Papers",
+              "url": "global-english/gcse/edexcel/papers/"
+            },
+            {
+              "label": "Edexcel Model Paper 1",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-1/"
+            },
+            {
+              "label": "Edexcel Model Paper 2",
+              "url": "global-english/gcse/edexcel/papers/rcf-model-paper-2/"
+            },
+            {
+              "label": "OCR English Language (J351)",
+              "url": "global-english/gcse/ocr/"
+            },
+            {
+              "label": "OCR Component 01",
+              "url": "global-english/gcse/ocr/component-1/"
+            },
+            {
+              "label": "OCR Component 02",
+              "url": "global-english/gcse/ocr/component-2/"
+            },
+            {
+              "label": "OCR Past Papers",
+              "url": "global-english/gcse/ocr/papers/"
+            },
+            {
+              "label": "Eduqas English Language (C700QS)",
+              "url": "global-english/gcse/eduqas/"
+            },
+            {
+              "label": "Eduqas Component 1",
+              "url": "global-english/gcse/eduqas/component-1/"
+            },
+            {
+              "label": "Eduqas Component 2",
+              "url": "global-english/gcse/eduqas/component-2/"
+            },
+            {
+              "label": "Eduqas Past Papers",
+              "url": "global-english/gcse/eduqas/papers/"
+            }
+          ]
+        },
+        {
+          "title": "International GCSE",
+          "links": [
+            {
+              "label": "IGCSE English",
+              "url": "global-english/igcse/"
+            },
+            {
+              "label": "Cambridge IGCSE English as a Second Language",
+              "url": "global-english/igcse/english-as-a-second-language/"
+            },
+            {
+              "label": "IGCSE ESL Reading and Writing Paper",
+              "url": "global-english/igcse/english-as-a-second-language/reading-and-writing/"
+            },
+            {
+              "label": "IGCSE ESL Writing Formats",
+              "url": "global-english/igcse/english-as-a-second-language/writing-formats/"
+            },
+            {
+              "label": "IGCSE ESL Model Answers",
+              "url": "global-english/igcse/english-as-a-second-language/model-answers/"
+            },
+            {
+              "label": "IGCSE ESL Speaking Test",
+              "url": "global-english/igcse/english-as-a-second-language/speaking-test/"
+            }
+          ]
+        },
+        {
+          "title": "Cambridge English",
+          "links": [
+            {
+              "label": "Cambridge English Qualifications",
+              "url": "global-english/cambridge-english/"
+            }
+          ]
+        },
+        {
+          "title": "Edexcel graded curriculum",
+          "links": [
+            {
+              "label": "iPrimary and iLowerSecondary",
+              "url": "global-english/edexcel-international-curriculum/"
+            },
+            {
+              "label": "iPrimary English (Years 1-6)",
+              "url": "global-english/edexcel-international-curriculum/iprimary/"
+            },
+            {
+              "label": "iLowerSecondary English (Years 7-9)",
+              "url": "global-english/edexcel-international-curriculum/ilowersecondary/"
+            }
+          ]
+        },
+        {
+          "title": "Skills",
+          "links": [
+            {
+              "label": "English Skills",
+              "url": "global-english/skills/"
+            }
+          ]
+        }
+      ],
+      "_rowNote": "Sits in the section row like every other section. It was a button in the header bar, which read as an advertisement rather than a menu item; the row made room by dropping the vague \"More\"."
+    },
+    {
       "label": "More",
       "url": "premium-resources/",
       "summary": "Books published by RCF Publications, paid downloadable resource collections, and advertisements for tuition classes and courses offered by others.",
@@ -1279,7 +1277,9 @@
             }
           ]
         }
-      ]
+      ],
+      "drawerOnly": true,
+      "_drawerOnly": "Kept in the slide-out menu and the footer, out of the desktop row. \"More\" told a visitor nothing and the row has no spare width."
     }
   ],
   "footer": [
