@@ -10,6 +10,10 @@ const load = (dir) => fs.existsSync(path.join(__dirname, dir))
   ? fs.readdirSync(path.join(__dirname, dir)).filter((f) => f.endsWith(".js")).map((f) => require(path.join(__dirname, dir, f)))
   : [];
 const LESSONS = load("lessons");
+// The CEFR grammar plans, parsed from Markdown rather than written as modules.
+// They are grouped into units (Present Tenses, Past Tenses, ...) with one plan
+// per level, so each unit gets its own hub under lesson-plans/.
+const GRAMMAR = fs.existsSync(path.join(__dirname, "grammar/index.js")) ? require("./grammar") : [];
 const COLLECTIONS = load("collections");
 const GUIDES = load("guides");
 // A worksheet may stand on its own, with no lesson plan behind it.
@@ -71,14 +75,25 @@ const byline = (what) => ({
 // Checked before anything is written - a page is only built if it has every
 // part the standard requires.
 function checkLesson(L) {
-  const need = ["slug", "topic", "cefr", "learners", "minutes", "skills", "focus", "materials", "prep", "framework", "intro", "aims", "analysis", "stages", "support", "stretch", "adaptations", "check", "homework"];
+  const need = ["slug", "topic", "cefr", "learners", "minutes", "skills", "focus", "materials", "prep", "framework", "intro", "aims", "stages", "support", "stretch", "adaptations", "check", "homework"];
   need.forEach((k) => { if (!L[k]) throw new Error(`${L.slug}: lesson is missing "${k}" (STANDARD.md, section 2)`); });
+  // A lesson supplies its language analysis either as the fixed set of parts
+  // or, where the framework analyses the language under its own headings, as
+  // ready-made blocks in the plan's own order.
+  if (!L.analysis && !L.analysisBlocks) throw new Error(`${L.slug}: lesson is missing "analysis" (STANDARD.md, section 2)`);
   const minutes = L.stages.reduce((a, s) => a + parseInt(s.time, 10), 0);
   if (minutes !== L.minutes) throw new Error(`${L.slug}: the stages add up to ${minutes} minutes, not ${L.minutes}`);
   L.stages.forEach((s) => { if (!s.aim || !s.pattern) throw new Error(`${L.slug}: stage "${s.name}" needs an aim and an interaction pattern`); });
-  const firstFree = L.stages.findIndex((s) => s.style === "production");
-  const lastControlled = L.stages.map((s) => s.style).lastIndexOf("practice");
-  if (firstFree !== -1 && lastControlled > firstFree) throw new Error(`${L.slug}: controlled practice must come before freer practice`);
+  // PPP and guided discovery put controlled practice before freer practice.
+  // The ESA boomerang and a task cycle deliberately do not: learners attempt
+  // the task with the language they have, study what they turned out to need,
+  // then try again. A lesson built that way sets freerFirst and names the
+  // framework that requires it. See STANDARD.md, section 2.
+  if (!L.freerFirst) {
+    const firstFree = L.stages.findIndex((s) => s.style === "production");
+    const lastControlled = L.stages.map((s) => s.style).lastIndexOf("practice");
+    if (firstFree !== -1 && lastControlled > firstFree) throw new Error(`${L.slug}: controlled practice must come before freer practice, unless the lesson sets freerFirst for a framework that inverts them`);
+  }
 }
 function checkWorksheet(W) {
   ["slug", "topic", "cefr", "minutes", "intro", "tasks", "answers", "notes"].forEach((k) => { if (!W[k]) throw new Error(`${W.slug}: worksheet is missing "${k}" (STANDARD.md, section 3)`); });
@@ -101,6 +116,17 @@ function siblingCollections(C, n = 2) {
 }
 function siblingGuides(G, n = 2) {
   return GUIDES.map((m) => m.guide).filter((o) => o.slug !== G.slug).slice(0, n);
+}
+// The hub for a grammar unit: one topic, A1 to C1.
+const unitCrumb = (L) => ({ label: L.unit, url: `${BASE}/lesson-plans/${L.unitSlug}/` });
+// The same grammar point at the other levels, which is what a teacher who has
+// found one of these plans most often wants next.
+function siblingLevels(L, n = 3) {
+  return GRAMMAR
+    .map((m) => m.lesson)
+    .filter((o) => o.unit === L.unit && o.slug !== L.slug)
+    .sort((a, b) => a.cefr.localeCompare(b.cefr))
+    .slice(0, n);
 }
 
 // ------------------------------------------------------------ lesson plan
@@ -128,9 +154,11 @@ function lessonPage(mod) {
     teaches: P(L, "teaches", `The ${L.topic.toLowerCase()} (English grammar)`),
     audienceRole: "teacher",
     resourceType: "Lesson plan",
-    tags: [`CEFR ${L.cefr}`, `${L.minutes} minutes`, L.learners, "Grammar", L.topic],
-    breadcrumbs: [GE, ESL, LP],
-    backTo: LP,
+    tags: [`CEFR ${L.cefr}`, `${L.minutes} minutes`, L.learners, "Grammar", ...(L.unit ? [L.unit] : []), L.topic],
+    // A plan that belongs to a grammar unit sits under that unit's hub, so a
+    // teacher can walk A1 to C1 on one topic without going back to the top.
+    breadcrumbs: L.unit ? [GE, ESL, LP, unitCrumb(L)] : [GE, ESL, LP],
+    backTo: L.unit ? unitCrumb(L) : LP,
     hero: { text: L.intro[0] },
     blocks: [
       { type: "prose", heading: "About this lesson", level: "h2", text: L.intro.slice(1) },
@@ -145,21 +173,25 @@ function lessonPage(mod) {
       },
       {
         type: "prose", heading: "Aims", level: "h2",
-        text: [`**Main aim.** ${L.aims.main}`],
+        text: [`**Main aim.** ${L.aims.main}`, ...(L.aims.outcome ? [`**Learning outcome.** ${L.aims.outcome}`] : [])],
         bullets: L.aims.subsidiary.map((s) => `**Subsidiary aim.** ${s}`)
       },
       AD,
-      {
+      // A lesson built round one text shows it here. A lesson whose texts are
+      // its handouts shows them at the end instead.
+      ...(L.text ? [{
         type: "callout", style: "tip", title: `The text: "${L.text.title}"`,
         text: [L.text.body, `**Gist question:** ${L.text.gist}`, `**Detail questions:** ${L.text.detail.map((q, i) => `(${i + 1}) ${q}`).join(" ")}`]
-      },
+      }] : []),
       { type: "prose", heading: "Language analysis", level: "h2", text: ["What to know before the lesson: the meaning, form and pronunciation of the target language, and the problems learners usually have with it."] },
-      { type: "prose", heading: "Meaning", level: "h3", text: A.meaning },
-      { type: "table", heading: "Concept-checking questions", level: "h3", columns: ["Ask", "Answer"], rows: A.ccqs },
-      { type: "table", heading: "Form", level: "h3", columns: ["Sentence type", "Pattern", "Example"], rows: A.form },
-      { type: "prose", heading: "Spelling", level: "h3", text: [A.spelling] },
-      { type: "prose", heading: "Pronunciation", level: "h3", bullets: A.pronunciation },
-      { type: "table", heading: "Anticipated problems and solutions", level: "h3", columns: ["Problem", "Solution"], rows: A.problems },
+      ...(L.analysisBlocks || [
+        { type: "prose", heading: "Meaning", level: "h3", text: A.meaning },
+        { type: "table", heading: "Concept-checking questions", level: "h3", columns: ["Ask", "Answer"], rows: A.ccqs },
+        { type: "table", heading: "Form", level: "h3", columns: ["Sentence type", "Pattern", "Example"], rows: A.form },
+        { type: "prose", heading: "Spelling", level: "h3", text: [A.spelling] },
+        { type: "prose", heading: "Pronunciation", level: "h3", bullets: A.pronunciation },
+        { type: "table", heading: "Anticipated problems and solutions", level: "h3", columns: ["Problem", "Solution"], rows: A.problems }
+      ]),
       {
         type: "plan", level: "h2",
         eyebrow: `CEFR ${L.cefr} · ${L.minutes} minutes · ${L.learners}`,
@@ -174,14 +206,27 @@ function lessonPage(mod) {
       { type: "terms", heading: "Differentiation", level: "h2", items: [{ term: "Support", definition: L.support }, { term: "Stretch", definition: L.stretch }] },
       { type: "table", heading: "Adapting the lesson", level: "h2", columns: ["For", "What to change"], rows: L.adaptations },
       { type: "prose", heading: "Checking learning", level: "h2", text: [L.check] },
-      {
+      ...(L.reflection ? [{ type: "prose", heading: "Teacher's reflection", level: "h2", text: [L.reflection] }] : []),
+      // The photocopiable pages: reading texts, practice exercises, cards to
+      // cut up and the answer key, so the whole lesson prints from one page.
+      ...(L.handoutBlocks || []),
+      ...(L.handoutBlocks ? [{ type: "print", label: "Print this lesson and its handouts", note: "Prints without the site's menus or advertisements." }] : []),
+      ...(L.worksheetSlug ? [{
         type: "related", heading: "The worksheet for this lesson", level: "h2",
         items: [{ title: `${L.topic} Worksheet (${L.cefr})`, url: `${BASE}/worksheets/${L.worksheetSlug}/`, text: ["Five graded tasks with an answer key and teacher's notes. Printable."] }]
-      },
+      }] : []),
       AD,
       byline("lesson plan"),
       { type: "share", heading: "Share this lesson plan", level: "h2", text: `Free ${L.topic.toLowerCase()} ESL lesson plan (${L.cefr}, ${L.minutes} minutes) with a worksheet.`, hashtags: ["ESL", "EFL", "TEFL", "ESLTeachers", "EnglishTeachers"] },
-      { type: "related", heading: "More", level: "h2", items: [{ title: "All ESL lesson plans", url: LP.url, text: ["Every plan, by level."] }, { title: "ESL worksheets", url: WS.url, text: ["Printable worksheets with answer keys."] }] }
+      {
+        type: "related", heading: L.unit ? `More ${L.unit.toLowerCase()} plans` : "More", level: "h2",
+        items: [
+          ...siblingLevels(L).map((o) => ({ title: `${o.topic} (${o.cefr})`, url: `${BASE}/lesson-plans/${o.slug}/`, text: [`${o.fwShort}, ${o.minutes} minutes. The same unit at ${o.cefr}.`] })),
+          ...(L.unit ? [{ title: `All ${L.unit.toLowerCase()} plans`, url: unitCrumb(L).url, text: ["Every level on this topic, A1 to C1."] }] : []),
+          { title: "All ESL lesson plans", url: LP.url, text: ["Every plan, by level."] },
+          { title: "ESL worksheets", url: WS.url, text: ["Printable worksheets with answer keys."] }
+        ]
+      }
     ]
   };
 }
@@ -388,7 +433,67 @@ function guidePage(mod) {
 }
 
 // -------------------------------------------------------------------- hubs
-const plans = LESSONS.filter((m) => m.lesson);
+const plans = [...LESSONS.filter((m) => m.lesson), ...GRAMMAR];
+
+// One hub per grammar unit, listing that unit's levels in order. Without it
+// the plans would be reachable only from a single page of a hundred cards.
+const CEFR_ORDER = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const units = [];
+for (const m of GRAMMAR) {
+  let u = units.find((x) => x.unit === m.lesson.unit);
+  if (!u) { u = { unit: m.lesson.unit, unitSlug: m.lesson.unitSlug, lessons: [] }; units.push(u); }
+  u.lessons.push(m.lesson);
+}
+units.forEach((u) => u.lessons.sort((a, b) => CEFR_ORDER.indexOf(a.cefr) - CEFR_ORDER.indexOf(b.cefr)));
+
+const unitHubs = units.map((u) => {
+  const levels = u.lessons.map((l) => l.cefr);
+  const span = levels.length > 1 ? `${levels[0]} to ${levels[levels.length - 1]}` : levels[0];
+  const low = u.unit.toLowerCase();
+  return {
+    slug: `${BASE}/lesson-plans/${u.unitSlug}`,
+    title: `${u.unit} ESL Lesson Plans`,
+    metaTitle: fitTitle(`Free ${u.unit} ESL Lesson Plans (${span})`, `${u.unit} ESL Lesson Plans`),
+    description: `Free ESL lesson plans on the ${low}, one for each level from ${span}: aims, language analysis, timed stages, handouts and an answer key.`,
+    keywords: `${low} lesson plan, ${low} ESL lesson plans, teaching the ${low}, CEFR ${span} grammar lesson plans, free ESL grammar lesson plans`,
+    kicker: "ESL Lesson Plans",
+    kind: "teacher-resource",
+    tags: [`CEFR ${span}`, "Grammar", `${u.lessons.length} plans`, "With handouts"],
+    breadcrumbs: [GE, ESL, LP],
+    backTo: LP,
+    hero: { text: `The ${low}, taught level by level from ${span}. Each plan is a complete ${u.lessons[0].minutes}-minute lesson with its own handouts and answer key.` },
+    blocks: [
+      {
+        type: "prose", heading: "One topic, every level", level: "h2",
+        text: [
+          `These plans take the ${low} from the first encounter at ${levels[0]} through to ${levels[levels.length - 1]}, where the same forms are used for effect rather than for basic meaning. Each is written on the framework that suits the stage learners are at, so the method changes as the level does.`,
+          "Every plan stands on its own: take the one that matches your class and teach it tomorrow. Read down the list to see how the topic develops if you teach the same learners over a year."
+        ]
+      },
+      {
+        type: "cards", heading: `${u.unit} plans`, level: "h2", columns: "3",
+        items: u.lessons.map((l) => ({
+          title: `${l.topic} (${l.cefr})`,
+          url: `${BASE}/lesson-plans/${l.slug}/`,
+          more: `${l.minutes} minutes · ${l.fwShort}`,
+          text: [`${l.focus.charAt(0).toUpperCase() + l.focus.slice(1)}.`]
+        }))
+      },
+      {
+        type: "related", heading: "More", level: "h2",
+        items: [
+          ...units.filter((o) => o.unitSlug !== u.unitSlug).slice(0, 3).map((o) => ({
+            title: `${o.unit} lesson plans`, url: `${BASE}/lesson-plans/${o.unitSlug}/`,
+            text: [`${o.lessons.length} plans, ${o.lessons[0].cefr} to ${o.lessons[o.lessons.length - 1].cefr}.`]
+          })),
+          { title: "All ESL lesson plans", url: LP.url, text: ["Every plan, by level."] },
+          { title: "ESL worksheets", url: WS.url, text: ["Printable, with answer keys."] }
+        ]
+      },
+      { type: "share", heading: "Share", level: "h2", text: `Free ${low} ESL lesson plans, ${span}, with handouts and answer keys.`, hashtags: ["ESL", "EFL", "TEFL", "EnglishTeachers"] }
+    ]
+  };
+});
 const sheets = [...LESSONS.filter((m) => m.worksheet), ...EXTRA_WORKSHEETS.filter((m) => m.worksheet)];
 
 const hub = {
@@ -440,9 +545,21 @@ const planHub = {
   backTo: ESL,
   hero: { text: "Complete lessons, each with aims, a language analysis, a timed procedure and a printable worksheet." },
   blocks: [
+    // The grammar units first: a teacher looking for a tense wants the topic,
+    // then the level, and each unit card leads to five plans rather than one.
+    ...(units.length ? [{
+      type: "cards", heading: "Grammar, level by level", level: "h2", columns: "3",
+      intro: ["Each unit takes one area of grammar from A1 to C1, with a separate plan at every level and the framework that suits it."],
+      items: units.map((u) => ({
+        title: `${u.unit} (${u.lessons[0].cefr} to ${u.lessons[u.lessons.length - 1].cefr})`,
+        url: `${BASE}/lesson-plans/${u.unitSlug}/`,
+        more: `${u.lessons.length} plans`,
+        text: [`${u.lessons.map((l) => l.topic).join(", ")}.`]
+      }))
+    }] : []),
     {
-      type: "cards", heading: "Lesson plans", level: "h2", columns: "3",
-      items: plans.map((m) => ({ title: `${m.lesson.topic} (${m.lesson.cefr})`, url: `${BASE}/lesson-plans/${m.lesson.slug}/`, more: `${m.lesson.minutes} minutes`, text: [m.lesson.focus.split(":")[0] + ". " + m.lesson.learners + "."] }))
+      type: "cards", heading: "Single lessons", level: "h2", columns: "3",
+      items: LESSONS.filter((m) => m.lesson).map((m) => ({ title: `${m.lesson.topic} (${m.lesson.cefr})`, url: `${BASE}/lesson-plans/${m.lesson.slug}/`, more: `${m.lesson.minutes} minutes`, text: [m.lesson.focus.split(":")[0] + ". " + m.lesson.learners + "."] }))
     }
     // No advertisement here. This is a list of links with barely a hundred
     // words of its own; an advertisement on it would be most of the page.
@@ -531,7 +648,7 @@ const standards = {
   ]
 };
 
-const pages = [hub, planHub, sheetHub, standards, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)].map(checkSeo);
+const pages = [hub, planHub, sheetHub, standards, ...unitHubs, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)].map(checkSeo);
 fs.writeFileSync(path.join(ROOT, "_src/pages/global-english-esl.json"), JSON.stringify({
   _readme: [
     "INTERNATIONAL ESL SECTION",

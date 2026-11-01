@@ -60,7 +60,13 @@ plan, and the major commercial resource sites.
   cycle. The stages are coloured the same way across the site.
 - The teacher's key instructions written out, with instruction-checking
   questions (ICQs) where a task could be misunderstood.
-- Controlled practice always comes before freer practice.
+- Controlled practice comes before freer practice, **except where the chosen
+  framework inverts them on purpose**. The ESA boomerang (Harmer) and a task
+  cycle (Willis) both begin with a free attempt: learners try the task with
+  the language they have, study what they turned out to need, then try again.
+  That ordering is the method, not a mistake, so a plan built on one of those
+  frameworks declares it and names the framework. Every other plan keeps
+  controlled practice first.
 
 **Around the lesson**
 - Differentiation: support for weaker learners and stretch for stronger.
@@ -69,7 +75,12 @@ plan, and the major commercial resource sites.
 - Checking learning: how the teacher knows the main aim was met; an exit
   task.
 - Homework or follow-up.
-- A link to the matching worksheet.
+- **The learner material, reachable from the plan.** Usually that is a link to
+  the matching worksheet, which is its own page (section 3). A plan whose
+  material is a set of handouts - a reading text, a practice exercise, cards
+  to cut up, an answer key - may instead carry those handouts on the plan page
+  itself, printable, with the answer key last. What is not allowed is a plan
+  whose practice material exists only as a promise.
 
 ## 3. The worksheet
 
@@ -222,7 +233,8 @@ A page goes live only when every line is true.
 - [ ] Aims written as learner outcomes
 - [ ] Language analysis: meaning with CCQs, form, pronunciation, problems
 - [ ] Every stage has an aim, a time and an interaction pattern
-- [ ] Controlled practice before freer practice
+- [ ] Controlled practice before freer practice, or a framework that inverts
+      them on purpose, declared as such
 - [ ] Support, stretch, and large-class, no-photocopier and online adaptations
 - [ ] Worksheet: graded tasks, example item, answer key, teacher notes
 - [ ] Worksheet readable: font, spacing, line length; works in black and white
@@ -231,7 +243,8 @@ A page goes live only when every line is true.
 - [ ] Title at most 60 characters, with the search phrase first
 - [ ] Description 140 to 160 characters, written for a person, not a crawler
 - [ ] Three to five related links, and the page is linked from a category page
-- [ ] Plan and worksheet link to each other and to the hub
+- [ ] Plan and worksheet link to each other and to the hub, or the plan
+      carries its own printable handouts and answer key
 - [ ] At most three ad slots, between sections only
 - [ ] Read through in full; review date set
 

@@ -1,0 +1,290 @@
+---
+unit: Past Tenses
+topic: Past Simple
+title: Past Simple
+level: A1 (Beginner)
+framework: PPP (Presentation, Practice, Production)
+time: 60 minutes
+---
+
+# Past Simple
+
+*Lesson theme: Last Weekend*
+
+## Lesson overview
+
+| | |
+|---|---|
+| **Grammar topic** | Past Tenses |
+| **Grammar point** | Past Simple |
+| **Level** | A1 (Beginner) |
+| **Duration** | 60 minutes |
+| **Framework** | PPP: Presentation, Practice, Production |
+| **Class profile** | Beginners who can use the present simple for routines and know common activity verbs. They have heard *was/were* and some past forms but cannot yet form past simple sentences, negatives or questions. |
+| **Main aim** | To present and practise the past simple of *be* and of regular and common irregular verbs to talk about last weekend. |
+| **Subsidiary aims** | To practise the pronunciation of *-ed* endings; to develop speaking (asking and answering about past activities). |
+| **Learning outcome** | By the end of the lesson, students can say and write 6 sentences about their last weekend and ask a classmate *Did you ...?* questions. |
+| **Materials** | Handout 1 (Sunil's diary), Handout 2 (practice), Handout 3 (Find someone who ...), irregular verb flashcards (go/went, have/had, see/saw, eat/ate, get/got, buy/bought, make/made, do/did). |
+
+## Language analysis
+
+### Form: be
+
+| | Positive | Negative | Question |
+|---|---|---|---|
+| I / He / She / It | I **was** at home. | She **wasn't** tired. | **Was** he happy? Yes, he was. / No, he wasn't. |
+| You / We / They | They **were** at the beach. | We **weren't** late. | **Were** you at school? Yes, I was. / No, I wasn't. |
+
+### Form: other verbs (the same for all persons)
+
+| | Example |
+|---|---|
+| Regular positive | I **played** cricket. She **visited** her aunt. |
+| Irregular positive | We **went** to Galle. He **had** lunch. They **saw** a film. |
+| Negative | I **didn't** (did not) **go** out. He **didn't watch** TV. |
+| Question | **Did** you **go** out? Yes, I did. / No, I didn't. |
+| Wh- question | Where **did** you **go**? What **did** you **do**? |
+
+Spelling of regular verbs:
+- Most verbs add *-ed*: play → played, watch → watched.
+- Verbs ending in *-e* add *-d*: like → liked, dance → danced.
+- Consonant + *y* → *-ied*: study → studied (but play → played).
+- One vowel + one consonant: double it: stop → stopped, plan → planned.
+
+### Meaning and use
+We use the past simple for finished actions at a finished time in the past: *last weekend, yesterday, on Saturday, last night, two days ago*.
+
+### Pronunciation of -ed
+- /t/ after voiceless sounds: walked, watched, cooked, danced
+- /d/ after voiced sounds: played, cleaned, listened, stayed
+- /ɪd/ after /t/ or /d/: visited, wanted, needed, started
+
+### Concept checking questions
+For *I played cricket on Saturday.*
+1. Is Saturday now or in the past? (In the past.)
+2. Is it finished? (Yes.)
+For *I didn't go out.*
+1. Did I go out? (No.)
+2. After *didn't*, is the verb *go* or *went*? (Go.)
+
+## Anticipated problems and solutions
+
+| Problem | Solution |
+|---|---|
+| Regularising irregular verbs (*goed, eated*). | Flashcard drill in the presentation; irregular verb list on Handout 2. |
+| Past form after *didn't* or *did* (*Did you went?*). | Board: did + base verb. Gesture: hold up one finger for "only one past". |
+| Pronouncing every *-ed* as /ɪd/ (*play-id*). | Three-column sound sort; drill minimal examples. |
+| Using *was* with other verbs (*I was go*). | Contrast *I was at home* (place/feeling) with *I went home* (action). |
+
+## Board plan
+
+| Left: time words | Centre: grammar | Right: sounds |
+|---|---|---|
+| yesterday · last night · last weekend · on Saturday · two days ago | I **was** at home. They **were** tired. · I play**ed** / **went** / **had**. · I **didn't** go. · **Did** you go? Yes, I did. | /t/ walked, watched · /d/ played, cleaned · /ɪd/ visited, wanted |
+
+## Procedure
+
+### Stage 1: Lead-in (5 minutes)
+**Stage aim:** To engage students and set the context of last weekend.
+**Interaction:** T → Ss, whole class
+
+1. Write *Saturday* and *Sunday* on the board and draw an arrow pointing backwards. Say: *"Last weekend. Not this weekend. Last weekend."*
+2. Tell the class three things you did, with mime: *"On Saturday, I cleaned my house. I went to the market. On Sunday, I watched a film."*
+3. Ask: *"Did I watch a film?"* (Yes.) *"Did I go to the beach?"* (No.) Students just answer *yes* or *no*.
+
+**Transition:** *"Now read about Sunil's weekend."*
+
+### Stage 2: Presentation, context (8 minutes)
+**Stage aim:** To present the language in context.
+**Interaction:** Individual, pairs, whole class
+
+1. Give out Handout 1. Say: *"Read Sunil's diary. Tick the things he did. Three minutes."*
+   - ICQs: *"Do you tick things he did or didn't do?"* (Did.)
+2. Students read and tick. Pairs compare. Check answers by asking *"Did Sunil go to the beach?"* and modelling *"Yes, he did."*
+3. Students answer the three comprehension questions.
+
+### Stage 3: Presentation, language clarification (12 minutes)
+**Stage aim:** To clarify meaning, form and pronunciation.
+**Interaction:** Whole class
+
+1. **was/were.** Board from the text: *I was very tired. The beach was beautiful. My cousins were there.* Elicit: was for I/he/she/it; were for you/we/they.
+2. **Regular verbs.** Students underline verbs ending in *-ed* in the diary. Board: *visited, played, walked, cooked, watched, stayed*. Elicit the rule: add *-ed*. Show the spelling rules.
+3. **Irregular verbs.** Ask: *"Is there an -ed on went?"* (No.) Board *go → went*. Use flashcards: show the base form; students call out the past form. Repeat quickly three times.
+4. **Negatives.** Board *I didn't go to the cinema.* CCQ: *"Did he go?"* (No.) *"Is it went or go after didn't?"* (Go.)
+5. **Questions.** Board *Did you have a good weekend? Yes, I did.* and *Where did you go?* Highlight did + subject + base verb.
+6. **Pronunciation.** Say *walked, played, visited*. Ask: *"Are the endings the same?"* Draw three columns. Students sort the six verbs from the text. Drill chorally and individually.
+
+### Stage 4: Practice, controlled (10 minutes)
+**Stage aim:** To practise the form accurately.
+**Interaction:** Individual, then pairs
+
+1. Students complete Handout 2, Exercise A (gap fill) and Exercise B (irregular verbs) alone (6 minutes).
+2. Pairs check. Nominate students to read sentences aloud; correct pronunciation of *-ed* as you go.
+3. **Oral drill:** say a sentence; students make it negative. T: *"I went to the beach."* Ss: *"I didn't go to the beach."* Then: T: *"You / go out?"* Ss: *"Did you go out?"*
+
+### Stage 5: Production, freer speaking (18 minutes)
+**Stage aim:** To use the language in a personalised speaking task.
+**Interaction:** Mingle, then whole class, then individual
+
+1. Give out Handout 3. Model the first item with a strong student: *"Did you watch a film last weekend?" "Yes, I did." "What did you watch?"* Write the name in the box.
+2. Say: *"Stand up. Ask your classmates. Find one name for each box. Ask one more question. You have eight minutes."*
+   - ICQs: *"Do you ask one person or many people?"* (Many.) *"What do you write?"* (Names.)
+3. Students mingle. Monitor and note errors with *Did you ...?* and past forms.
+4. Students sit down. Ask several students to report: *"Kasun watched a film. He watched an action film."* (4 minutes.)
+5. **Writing:** students write 6 sentences about their own weekend at the bottom of Handout 3 (4 minutes).
+
+### Stage 6: Feedback and wrap-up (7 minutes)
+**Stage aim:** To give feedback and consolidate.
+**Interaction:** Whole class
+
+1. Board four sentences from your notes, two correct and two incorrect. Students correct them in pairs.
+2. Quick irregular verb review with the flashcards.
+3. Set homework.
+
+## Differentiation
+
+**Support**
+- Give weaker students the verb list with past forms during the mingle.
+- Allow them to answer *Yes, I did / No, I didn't* without follow-up questions.
+
+**Stretch**
+- Stronger students add time phrases (*in the morning, after lunch, at night*).
+- They ask two follow-up questions with *Where? / Who with? / What?*
+
+## Assessment and success criteria
+- Students use correct past forms in 5 of 6 written sentences.
+- Students form *Did you ...?* questions correctly during the mingle.
+- Students pronounce at least the /ɪd/ endings correctly.
+
+## Homework
+Write 6 sentences about your last weekend. Include one sentence with *was/were*, two irregular verbs and one negative.
+
+## Teacher's reflection
+- Which irregular verbs caused the most problems?
+- Did the mingle give enough speaking practice for everyone?
+
+===PAGE===
+
+# Handout 1: Sunil's Diary
+
+Name: ___________________________ Date: _____________
+
+**Read Sunil's diary. Tick (✓) the things he did last weekend.**
+
+> **Saturday**
+> In the morning, I visited my grandmother in Galle. We had lunch together: she cooked my favourite fish curry. In the afternoon, my cousins and I went to the beach. The beach was beautiful, and the water was warm. We played volleyball and walked along the beach. I was very tired in the evening, so I stayed at home and watched TV.
+>
+> **Sunday**
+> I got up late, at 10 o'clock! I didn't have breakfast. I studied English for two hours, and then I helped my father in the garden. In the evening, my friends wanted to go to the cinema, but I didn't go. I finished my homework and went to bed at 9.
+
+| Activity | ✓ / ✗ |
+|---|---|
+| visit his grandmother | |
+| go to the cinema | |
+| play volleyball | |
+| have breakfast on Sunday | |
+| study English | |
+| help his father | |
+
+**Answer the questions.**
+1. Where did Sunil go on Saturday morning? ___________________________
+2. What did he and his cousins do at the beach? ___________________________
+3. What time did he get up on Sunday? ___________________________
+
+===PAGE===
+
+# Handout 2: Practice
+
+Name: ___________________________ Date: _____________
+
+**A. Complete the sentences with the past simple of the verb in brackets.**
+
+1. I ____________ (visit) my grandmother on Saturday.
+2. We ____________ (go) to the beach.
+3. She ____________ (not / watch) TV.
+4. ____________ you ____________ (have) a good weekend?
+5. They ____________ (be) very happy.
+6. My brother ____________ (study) for his exam.
+7. I ____________ (be) tired on Sunday.
+8. We ____________ (not / go) to the cinema.
+9. What ____________ you ____________ (eat) for dinner?
+10. He ____________ (stop) the car and ____________ (get) out.
+
+**B. Write the past simple form.**
+
+| Verb | Past | Verb | Past |
+|---|---|---|---|
+| go | | buy | |
+| have | | make | |
+| see | | do | |
+| eat | | get | |
+| come | | write | |
+
+**C. Put the verbs in the correct sound column: walked · played · visited · cooked · cleaned · wanted · watched · stayed · needed**
+
+| /t/ | /d/ | /ɪd/ |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+
+===PAGE===
+
+# Handout 3: Find Someone Who ...
+
+Name: ___________________________ Date: _____________
+
+**Ask your classmates: "Did you ... last weekend?" Write a name. Ask one more question.**
+
+| Find someone who ... last weekend | Name | Extra information |
+|---|---|---|
+| watched a film | | |
+| went shopping | | |
+| played a sport | | |
+| visited family | | |
+| cooked a meal | | |
+| didn't get up early | | |
+| saw a friend | | |
+| studied English | | |
+
+**Now write 6 sentences about your weekend.**
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+____________________________________________________________________
+
+===PAGE===
+
+# Answer Key
+
+**Handout 1**
+- ✓ visit his grandmother · ✗ go to the cinema · ✓ play volleyball · ✗ have breakfast on Sunday · ✓ study English · ✓ help his father
+- 1. He went to Galle / visited his grandmother. 2. They played volleyball and walked along the beach. 3. At 10 o'clock.
+
+**Handout 2, Exercise A**
+1. visited · 2. went · 3. didn't watch · 4. Did ... have · 5. were · 6. studied · 7. was · 8. didn't go · 9. did ... eat · 10. stopped ... got
+
+**Handout 2, Exercise B**
+went · had · saw · ate · came · bought · made · did · got · wrote
+
+**Handout 2, Exercise C**
+- /t/: walked, cooked, watched
+- /d/: played, cleaned, stayed
+- /ɪd/: visited, wanted, needed
+
+**Common errors to watch for**
+
+| Error | Correction |
+|---|---|
+| I goed to the shop. | I went to the shop. |
+| Did you went out? | Did you go out? |
+| I no played football. | I didn't play football. |
+| I was go to Galle. | I went to Galle. |
