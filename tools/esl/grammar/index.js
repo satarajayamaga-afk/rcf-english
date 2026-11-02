@@ -352,9 +352,13 @@ function buildLesson(file) {
     // The boomerang and a task cycle put a free attempt before any study, by
     // design. The ordering check in gen.js is written for PPP.
     freerFirst: /boomerang|task-based|TBL/i.test(framework) || undefined,
+    // The framework leads, because it is what tells these apart from the
+    // single lessons: "Present Simple (A1)" exists as both a PPP unit plan
+    // here and a standalone lesson, and two pages sharing one title compete
+    // with each other for the same search.
     metaTitle: fit([
-      `Free ${topic} ESL Lesson Plan (${cefr}, ${minutes} Min)`,
       `${topic} Lesson Plan ${cefr} (${fwShort}) - Free ESL`,
+      `Free ${topic} ESL Lesson Plan (${cefr}, ${minutes} Min)`,
       `${topic} ESL Lesson Plan (${cefr}, ${minutes} Minutes)`,
       `${topic} ESL Lesson Plan (${cefr})`,
       `${topic} Lesson Plan ${cefr}`,

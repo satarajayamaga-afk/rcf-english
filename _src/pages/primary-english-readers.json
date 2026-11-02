@@ -25,14 +25,27 @@
     {
       "slug": "primary-english/readers",
       "title": "Picture Readers",
-      "metaTitle": "Free Picture Readers for Sri Lankan Children, Grades 3 to 6 | RCF English",
+      "metaTitle": "Free Picture Readers for Sri Lankan Children, Grades 3 to 6",
       "description": "Twenty free rebus stories for Grades 3 to 6, where pictures stand in for words. Written below textbook level for children who find English reading hard.",
       "keywords": "rebus stories, picture readers, easy English reading Sri Lanka, graded readers for children",
       "kicker": "Primary English",
       "kind": "guidance",
-      "tags": ["Reading", "Grades 3 to 6", "Free", "Printable"],
-      "breadcrumbs": [{ "label": "Primary English", "url": "primary-english/" }],
-      "backTo": { "label": "Primary English", "url": "primary-english/" },
+      "tags": [
+        "Reading",
+        "Grades 3 to 6",
+        "Free",
+        "Printable"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        }
+      ],
+      "backTo": {
+        "label": "Primary English",
+        "url": "primary-english/"
+      },
       "hero": {
         "text": "Stories where a picture stands in for a word. The child reads the sentence and says the word aloud - which is how the word is remembered."
       },
@@ -94,28 +107,36 @@
               "title": "Grade 3",
               "url": "primary-english/readers/grade-3/",
               "more": "Five stories",
-              "text": ["Three to six words a sentence. *This is my… It is… I like…* My ball, my garden, my school bag, the market, my family."],
+              "text": [
+                "Three to six words a sentence. *This is my… It is… I like…* My ball, my garden, my school bag, the market, my family."
+              ],
               "icon": "book"
             },
             {
               "title": "Grade 4",
               "url": "primary-english/readers/grade-4/",
               "more": "Five stories",
-              "text": ["*There is… There are…* and *I am going…* A rainy day, helping father, the bus to school, our classroom, the kite."],
+              "text": [
+                "*There is… There are…* and *I am going…* A rainy day, helping father, the bus to school, our classroom, the kite."
+              ],
               "icon": "book"
             },
             {
               "title": "Grade 5",
               "url": "primary-english/readers/grade-5/",
               "more": "Five stories",
-              "text": ["The past tense arrives. The dry well, the temple lamp, the cricket match, the peacock, grandmother's medicine."],
+              "text": [
+                "The past tense arrives. The dry well, the temple lamp, the cricket match, the peacock, grandmother's medicine."
+              ],
               "icon": "book"
             },
             {
               "title": "Grade 6",
               "url": "primary-english/readers/grade-6/",
               "more": "Five stories",
-              "text": ["Longer sentences and some conversation. The last bus, the tailor's shop, saving the pond, the solar lamp, the postman."],
+              "text": [
+                "Longer sentences and some conversation. The last bus, the tailor's shop, saving the pond, the solar lamp, the postman."
+              ],
               "icon": "book"
             }
           ]
@@ -131,7 +152,6 @@
         }
       ]
     },
-
     {
       "slug": "primary-english/readers/grade-3",
       "title": "Picture Readers: Grade 3",
@@ -140,13 +160,29 @@
       "keywords": "Grade 3 English reading, easy stories for children, rebus story, picture reading",
       "kicker": "Picture Readers",
       "kind": "guidance",
-      "tags": ["Reading", "Grade 3", "Free", "Printable"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      "tags": [
+        "Reading",
+        "Grade 3",
+        "Free",
+        "Printable"
       ],
-      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
-      "hero": { "text": "Five short stories. Say the word when you see the picture." },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Picture Readers",
+          "url": "primary-english/readers/"
+        }
+      ],
+      "backTo": {
+        "label": "Picture Readers",
+        "url": "primary-english/readers/"
+      },
+      "hero": {
+        "text": "Five short stories. Say the word when you see the picture."
+      },
       "blocks": [
         {
           "type": "rebus",
@@ -166,7 +202,11 @@
                 "My {dog} has the {ball}.",
                 "I like my {dog}."
               ],
-              "questions": ["What colour is the ball?", "Who gets the ball out of the pond?", "Do you have a dog at home?"]
+              "questions": [
+                "What colour is the ball?",
+                "Who gets the ball out of the pond?",
+                "Do you have a dog at home?"
+              ]
             },
             {
               "title": "2. In My Garden",
@@ -182,7 +222,11 @@
                 "The {cat} is under the {tree}.",
                 "I like my garden."
               ],
-              "questions": ["Where is the bird?", "Where is the cat?", "What is on the flower?"]
+              "questions": [
+                "Where is the bird?",
+                "Where is the cat?",
+                "What is on the flower?"
+              ]
             },
             {
               "title": "3. My School Bag",
@@ -197,7 +241,11 @@
                 "My {lunchbox} has {rice}.",
                 "Now I go to {school}."
               ],
-              "questions": ["What is in the lunchbox?", "How many things are in the bag?", "What do you take to school?"]
+              "questions": [
+                "What is in the lunchbox?",
+                "How many things are in the bag?",
+                "What do you take to school?"
+              ]
             },
             {
               "title": "4. At the Market",
@@ -212,7 +260,11 @@
                 "My {mother} has a {banknote}.",
                 "We take the {mango} home."
               ],
-              "questions": ["Who goes to the market?", "What does the child like?", "What fruit do you like?"]
+              "questions": [
+                "Who goes to the market?",
+                "What does the child like?",
+                "What fruit do you like?"
+              ]
             },
             {
               "title": "5. My Family",
@@ -227,7 +279,11 @@
                 "He is big.",
                 "I like my family."
               ],
-              "questions": ["How many people are in this family?", "Who is small?", "Who is in your family?"]
+              "questions": [
+                "How many people are in this family?",
+                "Who is small?",
+                "Who is in your family?"
+              ]
             }
           ]
         },
@@ -236,13 +292,24 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Grade 4 stories", "url": "primary-english/readers/grade-4/", "text": ["A little longer, when these feel easy."] },
-            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+            {
+              "title": "Grade 4 stories",
+              "url": "primary-english/readers/grade-4/",
+              "text": [
+                "A little longer, when these feel easy."
+              ]
+            },
+            {
+              "title": "All the picture readers",
+              "url": "primary-english/readers/",
+              "text": [
+                "How to use them, and the other grades."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/readers/grade-4",
       "title": "Picture Readers: Grade 4",
@@ -251,13 +318,29 @@
       "keywords": "Grade 4 English reading, easy stories for children, rebus story, picture reading",
       "kicker": "Picture Readers",
       "kind": "guidance",
-      "tags": ["Reading", "Grade 4", "Free", "Printable"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      "tags": [
+        "Reading",
+        "Grade 4",
+        "Free",
+        "Printable"
       ],
-      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
-      "hero": { "text": "Five stories. Say the word when you see the picture." },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Picture Readers",
+          "url": "primary-english/readers/"
+        }
+      ],
+      "backTo": {
+        "label": "Picture Readers",
+        "url": "primary-english/readers/"
+      },
+      "hero": {
+        "text": "Five stories. Say the word when you see the picture."
+      },
       "blocks": [
         {
           "type": "rebus",
@@ -277,7 +360,11 @@
                 "My {shoes} are wet!",
                 "Then the {rain} stops and the {sun} comes out."
               ],
-              "questions": ["What is the cat doing?", "Why are the shoes wet?", "What do you take when it rains?"]
+              "questions": [
+                "What is the cat doing?",
+                "Why are the shoes wet?",
+                "What do you take when it rains?"
+              ]
             },
             {
               "title": "2. Helping Father",
@@ -292,7 +379,11 @@
                 "It is watching us.",
                 "We are working together."
               ],
-              "questions": ["What is father putting in the ground?", "Who is giving the water?", "What will grow there?"]
+              "questions": [
+                "What is father putting in the ground?",
+                "Who is giving the water?",
+                "What will grow there?"
+              ]
             },
             {
               "title": "3. The Bus to School",
@@ -307,7 +398,11 @@
                 "There is a {dog} near the road.",
                 "It is sleeping in the sun. {sun}"
               ],
-              "questions": ["What time is it?", "How many children are waiting?", "What is the dog doing?"]
+              "questions": [
+                "What time is it?",
+                "How many children are waiting?",
+                "What is the dog doing?"
+              ]
             },
             {
               "title": "4. Our Classroom",
@@ -322,7 +417,11 @@
                 "My friend is opening the {window}.",
                 "Our {classroom} is clean and bright."
               ],
-              "questions": ["What is the teacher writing with?", "What is near the door?", "Who is opening the window?"]
+              "questions": [
+                "What is the teacher writing with?",
+                "What is near the door?",
+                "Who is opening the window?"
+              ]
             },
             {
               "title": "5. The Kite",
@@ -338,7 +437,11 @@
                 "A tall man is helping us.",
                 "Now the {kite} is flying again."
               ],
-              "questions": ["Where do they go?", "What happens to the kite?", "Who helps them?"]
+              "questions": [
+                "Where do they go?",
+                "What happens to the kite?",
+                "Who helps them?"
+              ]
             }
           ]
         },
@@ -347,14 +450,31 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Grade 5 stories", "url": "primary-english/readers/grade-5/", "text": ["Where the past tense begins."] },
-            { "title": "Grade 3 stories", "url": "primary-english/readers/grade-3/", "text": ["Shorter, if these feel hard."] },
-            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+            {
+              "title": "Grade 5 stories",
+              "url": "primary-english/readers/grade-5/",
+              "text": [
+                "Where the past tense begins."
+              ]
+            },
+            {
+              "title": "Grade 3 stories",
+              "url": "primary-english/readers/grade-3/",
+              "text": [
+                "Shorter, if these feel hard."
+              ]
+            },
+            {
+              "title": "All the picture readers",
+              "url": "primary-english/readers/",
+              "text": [
+                "How to use them, and the other grades."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/readers/grade-5",
       "title": "Picture Readers: Grade 5",
@@ -363,13 +483,29 @@
       "keywords": "Grade 5 English reading, easy stories for children, rebus story, past tense reading",
       "kicker": "Picture Readers",
       "kind": "guidance",
-      "tags": ["Reading", "Grade 5", "Free", "Printable"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      "tags": [
+        "Reading",
+        "Grade 5",
+        "Free",
+        "Printable"
       ],
-      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
-      "hero": { "text": "Five stories, all of them about something that already happened." },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Picture Readers",
+          "url": "primary-english/readers/"
+        }
+      ],
+      "backTo": {
+        "label": "Picture Readers",
+        "url": "primary-english/readers/"
+      },
+      "hero": {
+        "text": "Five stories, all of them about something that already happened."
+      },
       "blocks": [
         {
           "type": "rebus",
@@ -389,7 +525,11 @@
                 "The {rain} fell all night.",
                 "In the morning the {well} was full again."
               ],
-              "questions": ["Why was the well nearly dry?", "What did they use the last water for?", "What happened in the night?"]
+              "questions": [
+                "Why was the well nearly dry?",
+                "What did they use the last water for?",
+                "What happened in the night?"
+              ]
             },
             {
               "title": "2. The Temple Lamp",
@@ -404,7 +544,11 @@
                 "The light was very beautiful.",
                 "We walked home when the {moon} came up."
               ],
-              "questions": ["What did each of them carry?", "Who gave them tea?", "When did they walk home?"]
+              "questions": [
+                "What did each of them carry?",
+                "Who gave them tea?",
+                "When did they walk home?"
+              ]
             },
             {
               "title": "3. The Cricket Match",
@@ -419,7 +563,11 @@
                 "All my friends were shouting my name.",
                 "Our {teacher} gave me a {book} as a prize."
               ],
-              "questions": ["How many runs did they need?", "Where did the ball go?", "What was the prize?"]
+              "questions": [
+                "How many runs did they need?",
+                "Where did the ball go?",
+                "What was the prize?"
+              ]
             },
             {
               "title": "4. The Peacock",
@@ -434,7 +582,11 @@
                 "The {peacock} opened its tail and ran into the trees.",
                 "My {uncle} said it was good luck to see one."
               ],
-              "questions": ["Where did they go, and when?", "What colours were the feathers?", "Why did the peacock run?"]
+              "questions": [
+                "Where did they go, and when?",
+                "What colours were the feathers?",
+                "Why did the peacock run?"
+              ]
             },
             {
               "title": "5. Grandmother's Medicine",
@@ -449,7 +601,11 @@
                 "After three days she was much better.",
                 "She made {sweets} for all of us."
               ],
-              "questions": ["How did they go to the hospital?", "What did the doctor say?", "How do we know she got better?"]
+              "questions": [
+                "How did they go to the hospital?",
+                "What did the doctor say?",
+                "How do we know she got better?"
+              ]
             }
           ]
         },
@@ -458,14 +614,31 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Grade 6 stories", "url": "primary-english/readers/grade-6/", "text": ["Longer, with some conversation."] },
-            { "title": "Grade 4 stories", "url": "primary-english/readers/grade-4/", "text": ["Shorter, if these feel hard."] },
-            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+            {
+              "title": "Grade 6 stories",
+              "url": "primary-english/readers/grade-6/",
+              "text": [
+                "Longer, with some conversation."
+              ]
+            },
+            {
+              "title": "Grade 4 stories",
+              "url": "primary-english/readers/grade-4/",
+              "text": [
+                "Shorter, if these feel hard."
+              ]
+            },
+            {
+              "title": "All the picture readers",
+              "url": "primary-english/readers/",
+              "text": [
+                "How to use them, and the other grades."
+              ]
+            }
           ]
         }
       ]
     },
-
     {
       "slug": "primary-english/readers/grade-6",
       "title": "Picture Readers: Grade 6",
@@ -474,13 +647,29 @@
       "keywords": "Grade 6 English reading, easy stories, rebus story, reading practice Sri Lanka",
       "kicker": "Picture Readers",
       "kind": "guidance",
-      "tags": ["Reading", "Grade 6", "Free", "Printable"],
-      "breadcrumbs": [
-        { "label": "Primary English", "url": "primary-english/" },
-        { "label": "Picture Readers", "url": "primary-english/readers/" }
+      "tags": [
+        "Reading",
+        "Grade 6",
+        "Free",
+        "Printable"
       ],
-      "backTo": { "label": "Picture Readers", "url": "primary-english/readers/" },
-      "hero": { "text": "Five stories with longer sentences and some conversation." },
+      "breadcrumbs": [
+        {
+          "label": "Primary English",
+          "url": "primary-english/"
+        },
+        {
+          "label": "Picture Readers",
+          "url": "primary-english/readers/"
+        }
+      ],
+      "backTo": {
+        "label": "Picture Readers",
+        "url": "primary-english/readers/"
+      },
+      "hero": {
+        "text": "Five stories with longer sentences and some conversation."
+      },
       "blocks": [
         {
           "type": "rebus",
@@ -500,7 +689,11 @@
                 "At last the {bus} came, and it was almost empty.",
                 "We sat near the {window} and talked all the way home."
               ],
-              "questions": ["What time did the last bus come?", "Why did they get wet twice?", "How do you know they were not in a hurry at the end?"]
+              "questions": [
+                "What time did the last bus come?",
+                "Why did they get wet twice?",
+                "How do you know they were not in a hurry at the end?"
+              ]
             },
             {
               "title": "2. The Tailor's Shop",
@@ -515,7 +708,11 @@
                 "My {mother} gave him a {banknote} and we walked home.",
                 "On Friday the {shirt} fitted me perfectly."
               ],
-              "questions": ["Why did they go to the tailor?", "What did the tailor mean?", "How long did the work take?"]
+              "questions": [
+                "Why did they go to the tailor?",
+                "What did the tailor mean?",
+                "How long did the work take?"
+              ]
             },
             {
               "title": "3. Saving the Pond",
@@ -530,7 +727,11 @@
                 "By November the {water} was clear again.",
                 "Last week somebody saw a small {fish}."
               ],
-              "questions": ["Why were there no fish?", "How long did the class work?", "What is the last sentence telling us?"]
+              "questions": [
+                "Why were there no fish?",
+                "How long did the class work?",
+                "What is the last sentence telling us?"
+              ]
             },
             {
               "title": "4. The Solar Lamp",
@@ -545,7 +746,11 @@
                 "I can read my {book} until nine o'clock.",
                 "My marks are better this term."
               ],
-              "questions": ["What did he use before?", "What did father mean about the sun?", "Why are his marks better?"]
+              "questions": [
+                "What did he use before?",
+                "What did father mean about the sun?",
+                "Why are his marks better?"
+              ]
             },
             {
               "title": "5. The Postman",
@@ -560,7 +765,11 @@
                 "My {mother} ran to the {temple} with a {flower}.",
                 "My {father} went to the {market} and bought {sweets} for the whole lane."
               ],
-              "questions": ["Why did his sister cry?", "What did each parent do?", "What does the last sentence tell us about the family?"]
+              "questions": [
+                "Why did his sister cry?",
+                "What did each parent do?",
+                "What does the last sentence tell us about the family?"
+              ]
             }
           ]
         },
@@ -569,8 +778,20 @@
           "heading": "Next",
           "level": "h2",
           "items": [
-            { "title": "Grade 5 stories", "url": "primary-english/readers/grade-5/", "text": ["Shorter, if these feel hard."] },
-            { "title": "All the picture readers", "url": "primary-english/readers/", "text": ["How to use them, and the other grades."] }
+            {
+              "title": "Grade 5 stories",
+              "url": "primary-english/readers/grade-5/",
+              "text": [
+                "Shorter, if these feel hard."
+              ]
+            },
+            {
+              "title": "All the picture readers",
+              "url": "primary-english/readers/",
+              "text": [
+                "How to use them, and the other grades."
+              ]
+            }
           ]
         }
       ]
