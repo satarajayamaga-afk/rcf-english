@@ -2,7 +2,10 @@
 // built to tools/esl/STANDARD.md. All content is RCF English's own.
 
 exports.lesson = {
-  slug: "reported-speech",
+  // "reported-speech" is now the hub for the five reported speech plans, A1
+  // to C1; this is one B1 plan on statements and questions. The old address
+  // serves that hub, which links here.
+  slug: "reported-speech-statements-and-questions",
   topic: "Reported Speech",
   cefr: "B1",
   cefrNote: "B1, with a B2 extension in the notes",

@@ -101,7 +101,7 @@ exports.guide = {
   ],
 
   related: [
-    { title: "Reported Speech ESL Lesson Plan (B1, 60 minutes)", path: "lesson-plans/reported-speech", text: "The lesson this guide describes, timed and ready to teach, with a printable worksheet." }
+    { title: "Reported Speech ESL Lesson Plan (B1, 60 minutes)", path: "lesson-plans/reported-speech-statements-and-questions", text: "The lesson this guide describes, timed and ready to teach, with a printable worksheet." }
   ],
 
   faq: [

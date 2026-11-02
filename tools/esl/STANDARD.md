@@ -72,6 +72,13 @@ plan, and the major commercial resource sites.
 - Differentiation: support for weaker learners and stretch for stronger.
 - Adaptations: a large class (40 or more), a class with no photocopier, an
   online class, and a different age group.
+  **Where the source document does not carry them**, as the graded grammar
+  unit plans do not, they are composed from that plan's own handouts and stage
+  names, so each one names the real materials and the real tasks. Nothing in
+  an adaptation may say anything the plan does not already contain. The same
+  applies to the 45-minute short route. This is a floor, not a target: a
+  hand-written adaptation beats a composed one, and if a later batch of
+  documents carries them, they are read from the document instead.
 - Checking learning: how the teacher knows the main aim was met; an exit
   task.
 - Homework or follow-up.

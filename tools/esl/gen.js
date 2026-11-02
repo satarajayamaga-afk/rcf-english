@@ -14,6 +14,7 @@ const LESSONS = load("lessons");
 // They are grouped into units (Present Tenses, Past Tenses, ...) with one plan
 // per level, so each unit gets its own hub under lesson-plans/.
 const GRAMMAR = fs.existsSync(path.join(__dirname, "grammar/index.js")) ? require("./grammar") : [];
+const { withThe, sentenceCase, padTo, PLAN_TAILS } = require("./text");
 const COLLECTIONS = load("collections");
 const GUIDES = load("guides");
 // A worksheet may stand on its own, with no lesson plan behind it.
@@ -211,6 +212,15 @@ function lessonPage(mod) {
       // cut up and the answer key, so the whole lesson prints from one page.
       ...(L.handoutBlocks || []),
       ...(L.handoutBlocks ? [{ type: "print", label: "Print this lesson and its handouts", note: "Prints without the site's menus or advertisements." }] : []),
+      // The editable original, for a teacher who wants to adapt the plan
+      // rather than print it. We link the document; we never host a copy.
+      ...(L.driveUrl ? [{
+        type: "callout", style: "note", title: "The editable original",
+        text: [
+          `This plan is also a Google Doc: [open it in Google Docs](${L.driveUrl}).`,
+          "To change it for your own class, open it and choose File, then Make a copy. Your copy is yours; the original stays as it is."
+        ]
+      }] : []),
       ...(L.worksheetSlug ? [{
         type: "related", heading: "The worksheet for this lesson", level: "h2",
         items: [{ title: `${L.topic} Worksheet (${L.cefr})`, url: `${BASE}/worksheets/${L.worksheetSlug}/`, text: ["Five graded tasks with an answer key and teacher's notes. Printable."] }]
@@ -437,6 +447,22 @@ const plans = [...LESSONS.filter((m) => m.lesson), ...GRAMMAR];
 
 // One hub per grammar unit, listing that unit's levels in order. Without it
 // the plans would be reachable only from a single page of a hundred cards.
+// The single lessons that predate the graded units each belong to one of them,
+// so the unit hub lists it after its own five. Mapped explicitly: a topic name
+// is not a reliable key, and two of these lessons gave up their old address to
+// a hub, so the hub had better lead to them.
+const UNIT_SINGLES = {
+  "present-tenses": ["present-simple"],
+  "past-tenses": ["past-simple"],
+  "perfect-tenses": ["present-perfect"],
+  "conditionals": ["first-and-second-conditionals"],
+  "the-passive": ["passive-voice"],
+  "reported-speech": ["reported-speech-statements-and-questions"]
+};
+const singlesFor = (unitSlug) => (UNIT_SINGLES[unitSlug] || [])
+  .map((s) => LESSONS.map((m) => m.lesson).find((l) => l && l.slug === s))
+  .filter(Boolean);
+
 const CEFR_ORDER = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const units = [];
 for (const m of GRAMMAR) {
@@ -454,28 +480,28 @@ const unitHubs = units.map((u) => {
     slug: `${BASE}/lesson-plans/${u.unitSlug}`,
     title: `${u.unit} ESL Lesson Plans`,
     metaTitle: fitTitle(`Free ${u.unit} ESL Lesson Plans (${span})`, `${u.unit} ESL Lesson Plans`),
-    description: `Free ESL lesson plans on the ${low}, one for each level from ${span}: aims, language analysis, timed stages, handouts and an answer key.`,
-    keywords: `${low} lesson plan, ${low} ESL lesson plans, teaching the ${low}, CEFR ${span} grammar lesson plans, free ESL grammar lesson plans`,
+    description: padTo(`Free ESL lesson plans on ${low}, one for each level from ${span}.`, PLAN_TAILS, 140, 160),
+    keywords: `${low} lesson plan, ${low} ESL lesson plans, teaching ${withThe(low)}, CEFR ${span} grammar lesson plans, free ESL grammar lesson plans`,
     kicker: "ESL Lesson Plans",
     kind: "teacher-resource",
     tags: [`CEFR ${span}`, "Grammar", `${u.lessons.length} plans`, "With handouts"],
     breadcrumbs: [GE, ESL, LP],
     backTo: LP,
-    hero: { text: `The ${low}, taught level by level from ${span}. Each plan is a complete ${u.lessons[0].minutes}-minute lesson with its own handouts and answer key.` },
+    hero: { text: `${sentenceCase(low)}, taught level by level from ${span}. Each plan is a complete ${u.lessons[0].minutes}-minute lesson with its own handouts and answer key.` },
     blocks: [
       {
         type: "prose", heading: "One topic, every level", level: "h2",
         text: [
-          `These plans take the ${low} from the first encounter at ${levels[0]} through to ${levels[levels.length - 1]}, where the same forms are used for effect rather than for basic meaning. Each is written on the framework that suits the stage learners are at, so the method changes as the level does.`,
+          `These plans take ${low} from the first encounter at ${levels[0]} through to ${levels[levels.length - 1]}, where the same forms are used for effect rather than for basic meaning. Each is written on the framework that suits the stage learners are at, so the method changes as the level does.`,
           "Every plan stands on its own: take the one that matches your class and teach it tomorrow. Read down the list to see how the topic develops if you teach the same learners over a year."
         ]
       },
       {
         type: "cards", heading: `${u.unit} plans`, level: "h2", columns: "3",
-        items: u.lessons.map((l) => ({
+        items: [...u.lessons, ...singlesFor(u.unitSlug)].map((l) => ({
           title: `${l.topic} (${l.cefr})`,
           url: `${BASE}/lesson-plans/${l.slug}/`,
-          more: `${l.minutes} minutes · ${l.fwShort}`,
+          more: `${l.minutes} minutes · ${l.fwShort || l.framework}`,
           text: [`${l.focus.charAt(0).toUpperCase() + l.focus.slice(1)}.`]
         }))
       },

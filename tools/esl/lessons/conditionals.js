@@ -2,7 +2,11 @@
 // tools/esl/STANDARD.md. All content is RCF English's own.
 
 exports.lesson = {
-  slug: "conditionals",
+  // Named for what it teaches, because "conditionals" is now the hub for the
+  // five conditionals plans, A1 to C1, and this is one plan covering two of
+  // them. A teacher who had the old address lands on that hub, which lists
+  // this plan among the others.
+  slug: "first-and-second-conditionals",
   topic: "First and Second Conditionals",
   cefr: "B1",
   cefrNote: "B1; the zero conditional is revised in the lead-in",
