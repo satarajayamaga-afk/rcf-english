@@ -1,21 +1,23 @@
-// The Google Doc behind each lesson plan, so a page can link a teacher to the
-// editable original instead of carrying a copy of the file.
+// The Google Doc behind each lesson plan. Every plan page previews its own
+// document and offers it as a PDF to print, a Word file to edit, or a copy in
+// the teacher's own Drive. The document is the author's own formatting, which
+// is what a teacher wants to hand round; the web version of the plan is for
+// reading and for Google. Nothing is copied onto the site.
 //
-// IMPORTANT - read "shared" before turning this on.
+// IMPORTANT - "shared" assumes the folder is link-viewable.
 //
-// On 2 November 2026 the folder "Grammar Lesson Plans New Batch 1" and all
-// sixty documents in it were private: the only permission on each was the
-// owner's. A link published while that is true sends every visitor to a
-// "You need access" page, which is worse than no link at all.
-//
-// So the links are off until the documents are shared as
+// The sixty documents live in the Drive folder "Grammar Lesson Plans New
+// Batch 1" (id 1khAQj4RRXIjn1WanqNXDU9Aqu0tswtSQ). They were created private,
+// and a private file turns every download button into a "You need access"
+// page. The folder must therefore be shared as
 //   Anyone with the link - Viewer
-// and never as Editor: an Editor link lets any visitor rewrite the plan.
+// and never as Editor, which would let any visitor rewrite the plan. Sharing
+// the folder is enough: the documents inherit it.
 //
-// Set shared to true once that is done, and every plan page picks up its link
-// on the next build. Nothing else needs changing.
+// Check it with the Drive connector before trusting this flag: a file's
+// permissions should list "anyoneWithLink" as reader, not just the owner.
 module.exports = {
-  shared: false,
+  shared: true,
 
   // Plan key (the file name in ./plans, without .md) -> Google Doc file id.
   docs: {
@@ -89,6 +91,26 @@ module.exports = {
     "12-A2": "1RFJZnzFFiYDrmqE7ULRLkfe3cmKMGcFCR3tLJa-D75I",
     "12-B1": "17LRS1OK8E36MM5k_VHfShdGP8jDXc6_kl1uTzwuhu9o",
     "12-B2": "13nJABLtX_lWyXdPYAWhstO1NlIwVv6R4mfE_-RFCntY",
-    "12-C1": "1WCI0zl8ca0wQrNAsESAka0o1DG88gsXU0OnWB3UYSQc"
+    "12-C1": "1WCI0zl8ca0wQrNAsESAka0o1DG88gsXU0OnWB3UYSQc",
+
+    "13-A1": "1AS4UsxGvaYXislSxQdIocPwKwHJ3isHo4QE1s5ARy-Y",
+    "13-A2": "1ySWLMznyZMc6SaR4VRbm2GG89wsp1PxmryBy_2U73ZA",
+    "13-B1": "1VYV0mW-JVSByFVhiQNoLmov6lVJx_jsRDRm3p0d8dk4",
+    "13-B2": "10zo9daDvgsKRPb2tdhTlQSHgliKapcR-ZnAvqtgdMXk",
+    "13-C1": "17nFGO9vAw0O2Ry6IVXBOAzuxNovJnSDhUQuT5U7OQmg",
+
+    "14-A1": "1T7XZy1c5Ubo5DBPZ8InLa2Y_ceURY-il15HKPuTs-Ok",
+    "14-A2": "14IfYE2vR3lzHMiKXcUtr_bwaVF9WJMi44s8XFQW8GzE",
+    "14-B1": "1pci5IjD3VD5yglXB1t_pSvUgXabG67Z9aJVFzMB-_h4",
+    "14-B2": "1ZuuSuVYW-A4MMb0gaxm7IwuUt7_Cy1jPaRBsoN4NLgY",
+    "14-C1": "1F4Xg2OK0hV2r59FYr-WMMsORxzosTSFl3e9ta6zb5QQ",
+
+    "15-A1": "1l9MjyNEj6U7LRZFrd9qMUme4JovEN9wYwz8N2ipZt5s",
+    "15-A2": "1Im1epdKu622uXr4uKvfCEsxSOMAKpVKLgBqq7TfikKs",
+    "15-B1": "1tuDat66K4n7XKIYz-HQKNB3WfKhXMRfbIrc3e0YmoXI",
+    "15-B2": "1Bbgie9SkkSdgjXH99sZKzC0hQ_ewwCowEehnGfDzDFQ",
+    "15-C1": "1b0mnaGyaTyE-BRMQ_HksYheL6U5XfAX_cas5WqwPORM",
+
+    "16-A1": "13EE8CCqeRhSLpwFAiwDN-DBAxsLSSdNrmrgmuSTKKRI"
   }
 };

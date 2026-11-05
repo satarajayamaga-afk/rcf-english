@@ -425,9 +425,9 @@ function buildLesson(file) {
   // The overview table names the topic in sentence case ("Comparatives and
   // Superlatives"); the header line shouts it. Title-casing is only for the
   // fallback, because it would capitalise the "and".
-  const unitName = O["grammar topic"]
+  const unitName = X.unit || (O["grammar topic"]
     ? O["grammar topic"].trim()
-    : header.split("·")[0].trim().toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+    : header.split("·")[0].trim().toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase()));
   const topic = X.topic || shortName(O["grammar point"] || point);
   const levelRaw = O.level || (header.match(/\b[ABC][12]\b.*$/) || [])[0] || "A1";
   const cefr = (levelRaw.match(/\b([ABC][12])\b/) || [])[1] || "A1";
@@ -484,6 +484,7 @@ function buildLesson(file) {
   return {
     slug: `${slugify(unitName)}/${cefr.toLowerCase()}-${slugify(topic)}`,
     driveUrl,
+    docId,
     unit: unitName,
     unitSlug: slugify(unitName),
     topic,

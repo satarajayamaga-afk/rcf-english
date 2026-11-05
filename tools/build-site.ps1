@@ -1575,6 +1575,38 @@ function RenderBlock($block) {
             return $html + '</div></section>'
         }
 
+        'docPreview' {
+            # The plan as its own document, previewed and downloaded from Google
+            # Drive. Nothing is copied onto this site: the file stays in the
+            # owner's Drive, so a correction made there is what a teacher
+            # downloads the next minute, and the formatting is the document's
+            # own rather than something rebuilt in HTML.
+            #
+            # A phone cannot usefully show the Google viewer, so the stylesheet
+            # hides the frame there (and when printing) and the buttons do the
+            # work. The frame is lazy: it costs nothing until it is scrolled to.
+            $docId = [string](P $block 'docId')
+            if (-not $docId) { return '' }
+            $title = [string](P $block 'title' 'Lesson plan')
+            $base = 'https://docs.google.com/document/d/' + $docId
+            # A second copy of the block at the foot of a long page repeats the
+            # buttons without a second viewer: one framed preview per page is
+            # enough, and the frame is the only heavy part.
+            $withFrame = (P $block 'frame' $true) -ne $false
+            $html = (SectionOpen $block) + (SectionHead $block)
+            $html += '<div class="reader' + $(if ($withFrame) { '' } else { ' reader--bare' }) + '">'
+            $html += '<div class="reader__bar"><p class="reader__src">' + (Inline (P $block 'credit' 'Google Docs')) + '</p><span class="reader__acts">'
+            $html += '<a class="btn btn--sm btn--primary" href="' + (E ($base + '/export?format=pdf')) + '">Download the PDF<span class="visually-hidden">: ' + (E $title) + '</span></a>'
+            $html += '<a class="btn btn--sm btn--outline" href="' + (E ($base + '/export?format=docx')) + '">Word<span class="visually-hidden"> version of ' + (E $title) + ' (.docx)</span></a>'
+            $html += '<a class="btn btn--sm btn--outline" href="' + (E ($base + '/copy')) + '" target="_blank" rel="noopener">Make a copy<span class="visually-hidden"> of ' + (E $title) + ' in your own Google Drive (opens in a new tab)</span></a>'
+            $html += '</span></div>'
+            if ($withFrame) { $html += '<iframe class="reader__frame" src="' + (E ($base + '/preview')) + '" title="' + (E ($title + ' (preview)')) + '" loading="lazy"></iframe>' }
+            $html += '</div>'
+            $note = [string](P $block 'note')
+            if ($note) { $html += '<p class="reader__note">' + (Inline $note) + '</p>' }
+            return $html + '</div></section>'
+        }
+
         'portrait' {
             # A photograph beside a short introduction. Two columns on a
             # desktop, stacked and centred on a phone. The image keeps its
@@ -4001,9 +4033,25 @@ function ClassIsStartingSoon($c) {
     $days = ClassDaysToStart $c
     if ($null -eq $days) { return $false }
     # A date already past, on a class still taking registrations, is a page
-    # telling visitors something untrue. Say so at build time.
+    # telling visitors something untrue. Say so at build time - unless the
+    # class is being held open on purpose for late joiners, which is what
+    # "registrationUntil" records: the last day the open badge stays true.
+    # Once that day has gone, say so plainly instead.
     if ($days -lt 0 -and [string](P $c 'registration') -eq 'open') {
-        [void]$script:Warnings.Add("classes.json: '$([string](P $c 'title'))' started on $([string](P $c 'startsOn')) but registration is still 'open'")
+        $title = [string](P $c 'title')
+        $until = [string](P $c 'registrationUntil' '')
+        $u = [datetime]::MinValue
+        $parsed = $until -and [datetime]::TryParseExact($until, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$u)
+        if ($until -and -not $parsed) {
+            [void]$script:Warnings.Add("classes.json: registrationUntil '$until' for '$title' is not a yyyy-MM-dd date, so it is ignored")
+        }
+        if ($parsed -and (Get-Date).Date -le $u.Date) {
+            # Held open deliberately, and the day has not passed. Nothing to say.
+        } elseif ($parsed) {
+            [void]$script:Warnings.Add("classes.json: '$title' was to stay open only until $until, which has passed - close its registration or unpublish it")
+        } else {
+            [void]$script:Warnings.Add("classes.json: '$title' started on $([string](P $c 'startsOn')) but registration is still 'open'")
+        }
     }
     return ($days -ge 0 -and $days -le $script:ClassSoonDays)
 }
@@ -5133,7 +5181,7 @@ function ScriptHash($js) {
 $cspScript = "'self' " + (ScriptHash $script:ReadingScript)
 $cspConnect = "'self'"
 $cspImg = "'self' data:"
-$cspFrame = "https://americanenglish.state.gov"
+$cspFrame = "https://americanenglish.state.gov https://docs.google.com"
 if ($script:AdsClient) {
     # Advertising needs more of the policy opened than anything else on the
     # site: the script, the frames each ad renders in, the images inside them
@@ -5168,7 +5216,8 @@ elseif ($script:AnalyticsName -eq 'GoatCounter') {
     $cspConnect += " https://$gcId.goatcounter.com"
     $cspImg += " https://$gcId.goatcounter.com"
 }
-# frame-src names English Teaching Forum's PDFs, shown on the ELT Articles
+# frame-src names the Google Docs viewer, which previews the lesson-plan
+# documents, and English Teaching Forum's PDFs, shown on the ELT Articles
 # pages from the U.S. Department of State's own server, and - only when
 # advertising is switched on - the frames Google's ads render in. Any other
 # frame is still refused.

@@ -2681,6 +2681,9 @@ table.data.coded thead th:first-child { border-left: 4px solid var(--navy-100); 
   border-bottom: 1px solid var(--line);
 }
 .reader__src { margin: 0; color: var(--ink-700); font-size: var(--step--1); }
+.reader__acts { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.reader--bare .reader__bar { border-bottom: 0; }
+.reader__note { margin: var(--sp-2) 0 0; color: var(--ink-700); font-size: var(--step--1); }
 .reader__frame { display: block; width: 100%; height: min(85vh, 1100px); border: 0; background: var(--surface-alt); }
 
 /* A phone or tablet cannot show a PDF inside a page - Android shows an empty

@@ -32,5 +32,26 @@ module.exports = {
 
   // "Who and That / Which for Describing People and Things". Cutting the list
   // at the slash would drop "which", which is half the lesson.
-  "12-A1": { topic: "Who, That and Which" }
+  "12-A1": { topic: "Who, That and Which" },
+
+  // The document names the unit "Countable and Uncountable Nouns and
+  // Quantifiers", which leaves no room for "ESL Lesson Plans" in a 60-character
+  // title. Every plan in the unit must carry the same short name, or they land
+  // under two different hubs.
+  "15-A1": { unit: "Quantifiers and Uncountable Nouns" },
+  "15-A2": { unit: "Quantifiers and Uncountable Nouns" },
+  "15-B1": { unit: "Quantifiers and Uncountable Nouns" },
+  "15-B2": { unit: "Quantifiers and Uncountable Nouns" },
+  "15-C1": {
+    unit: "Quantifiers and Uncountable Nouns",
+    // "Formal Quantity Expressions and Agreement in Report Writing".
+    topic: "Formal Quantity Expressions and Agreement"
+  },
+
+  // "Past Simple Questions and Subject vs Object Questions" - the "vs" is the
+  // part a teacher would not search for.
+  "14-A2": { topic: "Past Simple Subject and Object Questions" },
+
+  // "... in Persuasive Speech" is where the plan uses them, not what they are.
+  "14-C1": { topic: "Rhetorical and Emphatic Questions" }
 };

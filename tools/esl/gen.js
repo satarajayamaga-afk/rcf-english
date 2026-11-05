@@ -130,6 +130,62 @@ function siblingLevels(L, n = 3) {
     .slice(0, n);
 }
 
+// ------------------------------------------------ cross-links to the section
+// A lesson plan is one page of a larger section, so it points at the parts of
+// Global English that help with the same lesson: the guide to its own grammar
+// point, the guide to planning itself, and the activity collections that suit
+// its level and the way its stages are run.
+//
+// Relevance is read from the plan, not from the topic word: a plan whose
+// stages are a mingle gets the speaking collections, a plan with a game gets
+// the games. A reader who follows one link that does not help stops following
+// links, so four is the ceiling and no link is added just to fill the list.
+function crossLinks(L) {
+  const cols = COLLECTIONS.map((m) => m.collection);
+  const guides = GUIDES.map((m) => m.guide);
+  const col = (slug) => cols.find((c) => c.slug === slug);
+  const gui = (slug) => guides.find((g) => g.slug === slug);
+  const stageText = (L.stages || [])
+    .map((s) => `${s.name} ${s.pattern} ${s.aim} ${s.steps.join(" ")}`).join(" ").toLowerCase();
+  const beginner = L.cefr === "A1" || L.cefr === "A2";
+  const skills = (L.skills || "").toLowerCase();
+  const out = [];
+  const add = (item, text) => {
+    if (item && out.length < 4 && !out.some((o) => o.url.endsWith(`${item.path}/`))) {
+      out.push({ title: item.title, url: `${BASE}/${item.path}/`, text: [text] });
+    }
+  };
+
+  // The guide to this plan's own grammar point, where one exists.
+  if (/reported speech/i.test(`${L.unit} ${L.topic}`)) {
+    add(gui("how-to-teach-reported-speech"), "The thinking behind this plan: what to teach first, and why backshift is a choice rather than a law.");
+  }
+  // How the plan is built, for a teacher adapting it or writing their own.
+  add(gui("how-to-make-an-esl-lesson-plan"), `How a plan like this is put together, including the ${L.fwShort || L.framework} shape it uses.`);
+  // Speaking help, when the lesson leans on talk.
+  if (/mingle|role.?play|interview|survey|discussion|debate/.test(stageText)) {
+    add(gui("how-to-teach-english-speaking"), "Getting a quiet class talking, and what to do about the pair that finishes early.");
+  }
+  if (/role.?play|in role|act out/.test(stageText)) {
+    add(col("role-plays"), "Fifteen role-plays with cards to cut up, if you want a longer production stage.");
+  }
+  if (beginner) {
+    add(col("speaking-activities-beginners"), "Twenty speaking activities that work with very little language, for the practice stages.");
+  } else if (/teenager/i.test(L.learners || "")) {
+    add(col("speaking-activities-teenagers"), "Twenty speaking activities that teenagers will actually do.");
+  }
+  if (/game|team|compete|points|race/.test(stageText)) {
+    add(col("classroom-games"), "Eighteen games that each teach something, for the practice stage or the last five minutes.");
+  }
+  if (!beginner) {
+    add(col("conversation-questions"), "Twelve sets of questions by topic, for a freer stage or a lesson that finishes early.");
+  }
+  if (/listen/.test(skills) || /listen/.test(stageText)) {
+    add(col("listening-activities"), "Fifteen listening activities that need no recording and no equipment.");
+  }
+  return out;
+}
+
 // ------------------------------------------------------------ lesson plan
 function lessonPage(mod) {
   const L = mod.lesson;
@@ -172,6 +228,18 @@ function lessonPage(mod) {
           ["Materials", L.materials], ["Preparation", L.prep]
         ].map(([term, definition]) => ({ term, definition }))
       },
+      // The plan's own document: previewed here, and downloaded as a PDF that
+      // prints with the author's formatting or as a Word file to edit. The web
+      // version below it is for reading, searching and Google; the document is
+      // what most teachers will actually take away, so it sits above the plan
+      // rather than at the foot of the page. We link it; we host no copy.
+      ...(L.docId && L.driveUrl ? [{
+        type: "docPreview", heading: "Download this lesson plan", level: "h2",
+        docId: L.docId,
+        title: `${L.topic} ESL lesson plan (${L.cefr})`,
+        credit: `Google Docs · ${L.minutes} minutes · ${L.framework}`,
+        note: "The PDF prints as it stands. The Word file and **Make a copy** are for adapting it: your copy is yours to change, and the original stays as it is."
+      }] : []),
       {
         type: "prose", heading: "Aims", level: "h2",
         text: [`**Main aim.** ${L.aims.main}`, ...(L.aims.outcome ? [`**Learning outcome.** ${L.aims.outcome}`] : [])],
@@ -212,18 +280,27 @@ function lessonPage(mod) {
       // cut up and the answer key, so the whole lesson prints from one page.
       ...(L.handoutBlocks || []),
       ...(L.handoutBlocks ? [{ type: "print", label: "Print this lesson and its handouts", note: "Prints without the site's menus or advertisements." }] : []),
-      // The editable original, for a teacher who wants to adapt the plan
-      // rather than print it. We link the document; we never host a copy.
-      ...(L.driveUrl ? [{
-        type: "callout", style: "note", title: "The editable original",
-        text: [
-          `This plan is also a Google Doc: [open it in Google Docs](${L.driveUrl}).`,
-          "To change it for your own class, open it and choose File, then Make a copy. Your copy is yours; the original stays as it is."
-        ]
+      // The same buttons again at the foot of the plan, grouped exactly as
+      // they are at the top but without a second viewer: one framed preview a
+      // page is enough, and the frame is the only heavy part of the block. A
+      // teacher who has read the whole plan should not have to scroll back up
+      // to take the file away.
+      ...(L.docId && L.driveUrl ? [{
+        type: "docPreview", heading: "Download this plan", level: "h2", frame: false,
+        docId: L.docId,
+        title: `${L.topic} ESL lesson plan (${L.cefr})`,
+        credit: `Google Docs · ${L.minutes} minutes`,
+        note: "The same document as the one at the top of the page."
       }] : []),
       ...(L.worksheetSlug ? [{
         type: "related", heading: "The worksheet for this lesson", level: "h2",
         items: [{ title: `${L.topic} Worksheet (${L.cefr})`, url: `${BASE}/worksheets/${L.worksheetSlug}/`, text: ["Five graded tasks with an answer key and teacher's notes. Printable."] }]
+      }] : []),
+      // The rest of the section, where it bears on this lesson.
+      ...(crossLinks(L).length ? [{
+        type: "related", heading: "Elsewhere in Global English", level: "h2",
+        intro: ["Pages that help with this lesson in particular, rather than everything we have."],
+        items: crossLinks(L)
       }] : []),
       AD,
       byline("lesson plan"),
@@ -475,19 +552,25 @@ units.forEach((u) => u.lessons.sort((a, b) => CEFR_ORDER.indexOf(a.cefr) - CEFR_
 const unitHubs = units.map((u) => {
   const levels = u.lessons.map((l) => l.cefr);
   const span = levels.length > 1 ? `${levels[0]} to ${levels[levels.length - 1]}` : levels[0];
+  // A unit arrives level by level, so it can be published with only one or
+  // two of its five plans. The wording has to stay true at that point: "one
+  // for each level from A1" and "level by level from A1" are not English.
+  const many = levels.length > 1;
   const low = u.unit.toLowerCase();
   return {
     slug: `${BASE}/lesson-plans/${u.unitSlug}`,
-    title: `${u.unit} ESL Lesson Plans`,
-    metaTitle: fitTitle(`Free ${u.unit} ESL Lesson Plans (${span})`, `${u.unit} ESL Lesson Plans`),
-    description: padTo(`Free ESL lesson plans on ${low}, one for each level from ${span}.`, PLAN_TAILS, 140, 160),
+    title: `${u.unit} ESL Lesson Plan${many ? "s" : ""}`,
+    metaTitle: fitTitle(`Free ${u.unit} ESL Lesson Plan${many ? "s" : ""} (${span})`, `${u.unit} ESL Lesson Plan${many ? "s" : ""}`),
+    description: padTo(many
+      ? `Free ESL lesson plans on ${low}, one for each level from ${span}.`
+      : `A free ${span} ESL lesson plan on ${low}, with everything needed to teach it.`, PLAN_TAILS, 140, 160),
     keywords: `${low} lesson plan, ${low} ESL lesson plans, teaching ${withThe(low)}, CEFR ${span} grammar lesson plans, free ESL grammar lesson plans`,
     kicker: "ESL Lesson Plans",
     kind: "teacher-resource",
-    tags: [`CEFR ${span}`, "Grammar", `${u.lessons.length} plans`, "With handouts"],
+    tags: [`CEFR ${span}`, "Grammar", `${u.lessons.length} plan${many ? "s" : ""}`, "With handouts"],
     breadcrumbs: [GE, ESL, LP],
     backTo: LP,
-    hero: { text: `${sentenceCase(low)}, taught level by level from ${span}. Each plan is a complete ${u.lessons[0].minutes}-minute lesson with its own handouts and answer key.` },
+    hero: { text: `${sentenceCase(low)}, ${many ? `taught level by level from ${span}` : `taught at ${span}`}. ${many ? "Each plan is" : "The plan is"} a complete ${u.lessons[0].minutes}-minute lesson with its own handouts and answer key.` },
     blocks: [
       {
         type: "prose", heading: "One topic, every level", level: "h2",
