@@ -485,6 +485,9 @@ function buildLesson(file) {
     slug: `${slugify(unitName)}/${cefr.toLowerCase()}-${slugify(topic)}`,
     driveUrl,
     docId,
+    // Set only where a single lesson this plan supersedes left a worksheet
+    // behind (see SUPERSEDED in gen.js).
+    worksheetSlug: X.worksheetSlug,
     unit: unitName,
     unitSlug: slugify(unitName),
     topic,

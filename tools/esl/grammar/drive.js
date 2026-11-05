@@ -111,6 +111,27 @@ module.exports = {
     "15-B2": "1Bbgie9SkkSdgjXH99sZKzC0hQ_ewwCowEehnGfDzDFQ",
     "15-C1": "1b0mnaGyaTyE-BRMQ_HksYheL6U5XfAX_cas5WqwPORM",
 
-    "16-A1": "13EE8CCqeRhSLpwFAiwDN-DBAxsLSSdNrmrgmuSTKKRI"
+    "16-A1": "13EE8CCqeRhSLpwFAiwDN-DBAxsLSSdNrmrgmuSTKKRI",
+    "16-A2": "1NJSXlm_5tWkB8wmQpFy1_klUeaMkkUiRptFxiuyq-bs",
+    "16-B1": "1T67buLwu31uW8KtKkpPJCgUU9ny39aUMXyg9-DRFAaI",
+    "16-B2": "1q-Yzz7ZiJqKFJkeHx_i4CFWQcqEKDkBByx-nSZoHiBw",
+    "16-C1": "1IoKjeSupy3RMiy-_Duz4f_VwQ2LZF-gWED8CfmXOVF4",
+
+    "17-A1": "12M-uOlQ4kzqBOBfKenKkwsUR-rQMggXyOXXmNFR1n3w",
+    "17-A2": "1MLt-2GMdhgntSJKiGq0H-oSHvgFuojpzhOV_lL8XVAU",
+    "17-B1": "1syJHroZkAg8hBHweEuOwR-Eq64pcOTYPNW05P3m64Ic",
+    "17-B2": "15yYSL3gYyWu28Fbm4QWXJglbVa5CA3URoVbPjQqX9ZU",
+    "17-C1": "1cr87trKVOCAWma36RLnxwgvPZ5Za8vQbI6Yg2vg3bnI",
+
+    "18-A1": "1rmdvvaB9skylC8A-HV-5AbPjkzaNLcceClEP1RwBKqc",
+    "18-A2": "19O6uL-4Cg9aEEoP-ULHAvrsR4T_Qp5UHDs9ZkpAvEmE",
+    "18-B1": "1RYm5fwaDt_9SZOrRLhAsFCxV5gfe0r5DNMM1YoPIpN8",
+    "18-B2": "1bMprPtXPC1RDn7cmShrcDNuUzwOGsom_YrWIU96nD6k",
+    "18-C1": "1VfyJP-W99b47NonyfKwGTdsLfSP6qqCCb_erLLFA_oI",
+
+    "19-A1": "1e8b8r9d6nSi5GvCqoevNcoh5kRF-nUZvlCAdGESgW_4",
+    "19-A2": "1QZD2SV3sNZczl7c9aA65pMrKv-IKhoopc3XKlRaDBN0",
+    "19-B1": "1cigxjh2FSULeD8fwsrYxNpdN9CkpFDhSTGLhF_R7a1o",
+    "19-B2": "15Fz0wg0DC4jxVFmGxwoXfY2PKEuY0uP3JcaC5K6VRpg"
   }
 };

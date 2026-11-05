@@ -53,5 +53,15 @@ module.exports = {
   "14-A2": { topic: "Past Simple Subject and Object Questions" },
 
   // "... in Persuasive Speech" is where the plan uses them, not what they are.
-  "14-C1": { topic: "Rhetorical and Emphatic Questions" }
+  "14-C1": { topic: "Rhetorical and Emphatic Questions" },
+
+  // "Order of Adjectives and Gradable vs Ungradable Adjectives" - the phrase
+  // teachers search for is "order of adjectives".
+  "17-B2": { topic: "Order of Adjectives and Gradability" },
+
+  // "Stance Adverbs and Adverb + Adjective Collocations in Opinion Writing".
+  "17-C1": { topic: "Stance Adverbs and Collocations" },
+
+  // "Advanced Linkers and Cohesion in Academic Writing".
+  "18-C1": { topic: "Advanced Linkers and Cohesion" }
 };

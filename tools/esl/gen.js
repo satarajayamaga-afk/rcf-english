@@ -368,7 +368,7 @@ function worksheetPage(mod) {
       {
         type: "related", heading: L ? "The lesson plan, and more like this" : "More like this", level: "h2",
         items: [
-          ...(L ? [{ title: `${L.topic} ESL Lesson Plan (${L.cefr}, ${L.minutes} Minutes)`, url: `${BASE}/lesson-plans/${L.slug}/`, text: ["The full lesson this worksheet belongs to."] }] : []),
+          ...(L ? [{ title: `${L.topic} ESL Lesson Plan (${L.cefr}, ${L.minutes} Minutes)`, url: `${BASE}/lesson-plans/${SUPERSEDED[L.slug] || L.slug}/`, text: ["The full lesson this worksheet belongs to."] }] : []),
           ...siblingSheets(W).map((o) => ({ title: `${o.topic} Worksheet (${o.cefr})`, url: `${BASE}/worksheets/${o.slug}/`, text: [`${o.tasks.length} tasks with an answer key. ${o.skill ? titleCase(o.skill) : "Grammar"}, ${o.cefr}.`] })),
           { title: "All ESL worksheets", url: WS.url, text: ["Grammar, vocabulary, reading and writing, by CEFR level."] }
         ]
@@ -519,8 +519,40 @@ function guidePage(mod) {
   };
 }
 
-// -------------------------------------------------------------------- hubs
-const plans = [...LESSONS.filter((m) => m.lesson), ...GRAMMAR];
+// A single lesson a graded unit has overtaken can be retired here: the plan is
+// dropped and its address becomes a redirect, so nothing linking to it breaks.
+// Nothing is retired at present. The A1 Present Simple is the one case that
+// came up, and the owner chose to keep both pages (5 November 2026): the single
+// lesson is reading-led and comes with a printable worksheet, the unit plan is
+// theme-led with four handouts and the editable document. They are told apart
+// by their titles and descriptions, and KNOWN_PAIRS below lets the duplicate
+// check pass them.
+const SUPERSEDED = {};
+const redirects = Object.entries(SUPERSEDED).map(([from, to]) => ({
+  slug: `${BASE}/lesson-plans/${from}`,
+  title: "Lesson plan",
+  kind: "redirect",
+  noindex: true,
+  redirectTo: `${BASE}/lesson-plans/${to}/`
+}));
+const plans = [...LESSONS.filter((m) => m.lesson && !SUPERSEDED[m.lesson.slug]), ...GRAMMAR];
+
+// Two plans on the same grammar point at the same level are usually a
+// duplicate, and a batch can introduce one without anybody noticing: the slugs
+// differ, so the slug check does not catch it. Fail here rather than publish
+// both - unless the pair is listed as deliberate.
+const KNOWN_PAIRS = new Set(["present simple @ A1"]);
+{
+  const seen = new Map();
+  for (const m of plans) {
+    const L = m.lesson;
+    const key = `${L.topic.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} @ ${L.cefr}`;
+    if (seen.has(key) && !KNOWN_PAIRS.has(key)) {
+      throw new Error(`duplicate plan: "${L.topic}" at ${L.cefr} is both ${seen.get(key)} and ${L.slug}. Retire one through SUPERSEDED, give it its own name in grammar/extras.js, or add it to KNOWN_PAIRS if both are wanted.`);
+    }
+    seen.set(key, L.slug);
+  }
+}
 
 // One hub per grammar unit, listing that unit's levels in order. Without it
 // the plans would be reachable only from a single page of a hundred cards.
@@ -529,6 +561,8 @@ const plans = [...LESSONS.filter((m) => m.lesson), ...GRAMMAR];
 // is not a reliable key, and two of these lessons gave up their old address to
 // a hub, so the hub had better lead to them.
 const UNIT_SINGLES = {
+  // The single Present Simple lesson is kept beside the unit plan on purpose;
+  // the hub lists it after the unit's own five.
   "present-tenses": ["present-simple"],
   "past-tenses": ["past-simple"],
   "perfect-tenses": ["present-perfect"],
@@ -538,7 +572,7 @@ const UNIT_SINGLES = {
 };
 const singlesFor = (unitSlug) => (UNIT_SINGLES[unitSlug] || [])
   .map((s) => LESSONS.map((m) => m.lesson).find((l) => l && l.slug === s))
-  .filter(Boolean);
+  .filter((l) => l && !SUPERSEDED[l.slug]);
 
 const CEFR_ORDER = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const units = [];
@@ -581,8 +615,11 @@ const unitHubs = units.map((u) => {
       },
       {
         type: "cards", heading: `${u.unit} plans`, level: "h2", columns: "3",
-        items: [...u.lessons, ...singlesFor(u.unitSlug)].map((l) => ({
-          title: `${l.topic} (${l.cefr})`,
+        // The single lessons that predate the units carry a worksheet, and one
+        // of them shares a topic and a level with a unit plan. Say which is
+        // which on the card, or the hub shows the same name twice.
+        items: [...u.lessons.map((l) => ({ l, single: false })), ...singlesFor(u.unitSlug).map((l) => ({ l, single: true }))].map(({ l, single }) => ({
+          title: single ? `${l.topic} with a Worksheet (${l.cefr})` : `${l.topic} (${l.cefr})`,
           url: `${BASE}/lesson-plans/${l.slug}/`,
           more: `${l.minutes} minutes · ${l.fwShort || l.framework}`,
           text: [`${l.focus.charAt(0).toUpperCase() + l.focus.slice(1)}.`]
@@ -668,7 +705,7 @@ const planHub = {
     }] : []),
     {
       type: "cards", heading: "Single lessons", level: "h2", columns: "3",
-      items: LESSONS.filter((m) => m.lesson).map((m) => ({ title: `${m.lesson.topic} (${m.lesson.cefr})`, url: `${BASE}/lesson-plans/${m.lesson.slug}/`, more: `${m.lesson.minutes} minutes`, text: [m.lesson.focus.split(":")[0] + ". " + m.lesson.learners + "."] }))
+      items: LESSONS.filter((m) => m.lesson && !SUPERSEDED[m.lesson.slug]).map((m) => ({ title: `${m.lesson.topic} (${m.lesson.cefr})`, url: `${BASE}/lesson-plans/${m.lesson.slug}/`, more: `${m.lesson.minutes} minutes`, text: [m.lesson.focus.split(":")[0] + ". " + m.lesson.learners + "."] }))
     }
     // No advertisement here. This is a list of links with barely a hundred
     // words of its own; an advertisement on it would be most of the page.
@@ -757,7 +794,7 @@ const standards = {
   ]
 };
 
-const pages = [hub, planHub, sheetHub, standards, ...unitHubs, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)].map(checkSeo);
+const pages = [hub, planHub, sheetHub, standards, ...unitHubs, ...plans.map(lessonPage), ...sheets.map(worksheetPage), ...COLLECTIONS.map(collectionPage), ...GUIDES.map(guidePage)].map(checkSeo).concat(redirects);
 fs.writeFileSync(path.join(ROOT, "_src/pages/global-english-esl.json"), JSON.stringify({
   _readme: [
     "INTERNATIONAL ESL SECTION",

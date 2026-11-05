@@ -15,6 +15,12 @@ exports.lesson = {
   prep: "10 minutes",
   framework: "PPP (presentation, practice, production), with the language met first in a short text",
 
+  // The graded Present Tenses unit also has an A1 present simple plan, kept
+  // deliberately beside this one. They must not read as the same page: this is
+  // the reading-led lesson that comes with a printable worksheet.
+  metaTitle: "Present Simple Lesson Plan with Worksheet (A1) - Free",
+  description: "Free 60-minute A1 lesson plan on the present simple for daily routines: a short reading text, a class survey and a printable worksheet with answers.",
+
   intro: [
     "A complete 60-minute lesson on the present simple for daily routines: learners meet it in a short text about two very different mornings, work out the third-person -s themselves, practise the question and negative forms, and finish by finding out who in the class has the earliest start.",
     "The lesson gives proper time to the two things beginners always drop - the -s on he, she and it, and do or does in the question - and every stage has a note for large classes."
